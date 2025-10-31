@@ -390,18 +390,34 @@ const notaBloque = `
     const cur = (ix===CURRENT.i) ? 'cur' : '';
     return `<button class="side-btn ${cls} ${cur}" onclick="jump(${ix})">${ix+1}</button>`;
   }).join('');
-  const side = `
-    <div id="sidebar" class="sidebar ${open?'':'closed'}">
-      <div class="side-header">
-        <div class="side-title">Índice</div>
-        <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
-      </div>
-      <div class="small" style="margin:4px 0 6px;text-align:center;">
-        Progreso: ${CURRENT.i+1} de ${CURRENT.list.length} (${Math.round((CURRENT.i+1)*100/CURRENT.list.length)}%)
-      </div>
-      <div class="side-grid">${sideBtns}</div>
-    </div>`;
+  const notaGuardada = JSON.parse(localStorage.getItem("mebank_notes") || "{}")[q.id]?.text || "";
+const showNotes = ans != null; // solo mostrar si ya respondió
 
+const side = `
+  <div id="sidebar" class="sidebar ${open ? '' : 'closed'}">
+    <div class="side-header">
+      <div class="side-title">Índice</div>
+      <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
+    </div>
+    <div class="small" style="margin:4px 0 6px;text-align:center;">
+      Progreso: ${CURRENT.i + 1} de ${CURRENT.list.length} (${Math.round((CURRENT.i + 1) * 100 / CURRENT.list.length)}%)
+    </div>
+    <div class="side-grid">${sideBtns}</div>
+
+    ${showNotes ? `
+      <div class="notes-panel" style="margin-top:14px;border-top:1px solid var(--line);padding-top:10px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;">
+          <b style="font-size:13px;color:var(--brand-dark)">📝 Notas</b>
+          <button class="btn-small" onclick="toggleSideNote('${q.id}')">${notaGuardada ? '✏️' : '➕'}</button>
+        </div>
+        <div id="sideNoteArea-${q.id}" class="hidden" style="margin-top:6px;">
+          <textarea id="sideNoteText-${q.id}" rows="3" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:6px;font-family:inherit;">${notaGuardada}</textarea>
+          <button class="btn-small" style="margin-top:6px;width:100%;" onclick="saveSideNote('${q.id}')">Guardar</button>
+        </div>
+        ${notaGuardada ? `<div id="sideNoteDisplay-${q.id}" style="background:var(--soft);padding:6px;border-radius:8px;font-size:13px;color:var(--muted);margin-top:6px;white-space:pre-wrap;">${notaGuardada}</div>` : ''}
+      </div>
+    ` : ''}
+  </div>`;
   app.innerHTML = `
     <div class="q-layout fade">
       <div>
