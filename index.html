@@ -218,10 +218,9 @@ function renderHome(){
       <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
       <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
       <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
-    </div>`
-    <button class="btn-primary" onclick="renderExamenGeneralSetup()">Modo Examen – Creá el tuyo</button>;
+      <button class="btn-main" style="background:#1e40af;color:white" onclick="renderExamenGeneralSetup()">Modo Examen – Creá el tuyo</button>
+    </div>`;
 }
-renderHome();
 
 function renderOld(){
   app.innerHTML=`<div class="card" style="text-align:center">📄 Esta sección estará disponible próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
