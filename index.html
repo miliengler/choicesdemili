@@ -90,11 +90,11 @@ const starter = {
 };
 
 /*** ---------- Estado ---------- ***/
-const LS_BANK = "mebank_bank_v2";
-const LS_PROGRESS = "mebank_prog_v2";
-const LS_ADMIN = "mebank_admin_hash_v2";
+const LS_BANK = "mebank_bank_v3";
+const LS_PROGRESS = "mebank_prog_v3";
+const LS_ADMIN = "mebank_admin_hash_v3";
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || starter;
-const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); // {materia:{qid:'ok'|'bad'}}
+const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); // {materia:{qid:{chosen,status}}}
 function saveAll(){ localStorage.setItem(LS_BANK, JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG)); }
 
 /*** ---------- Acordeón ---------- ***/
@@ -128,23 +128,25 @@ window.toggleAcc = (slug)=>{ openSlug = (openSlug===slug? null : slug); renderHo
 renderHome();
 
 /*** ---------- Motor de práctica ---------- ***/
-let CURRENT = { list:[], i:0, materia:'' };
+let CURRENT = { list:[], i:0, materia:'', sessionAnswers:{} };
 function startPractica(slug){
   const list = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
   if(!list.length){ app.innerHTML = `<div class="card">No hay preguntas cargadas en <b>${slug}</b>. Entrá en modo admin (?admin=1) y usá <b>Importar</b>.</div>`; return; }
-  CURRENT = { list, i:0, materia:slug };
+  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // 👈 arranca limpio SIEMPRE
   renderQuestion();
 }
 function renderQuestion(){
   const q = CURRENT.list[CURRENT.i];
-  const prog = PROG[CURRENT.materia]||{};
-  const answered = prog[q.id];
+  const ans = CURRENT.sessionAnswers[q.id]; // 👈 solo usamos la respuesta de ESTA sesión
   const opts = q.opciones.map((txt, idx)=>{
     let cls='';
-    if(answered){ if(idx===q.correcta) cls='correct'; else if(idx===answered?.chosen) cls='wrong'; }
+    if(ans!=null){
+      if(idx===q.correcta) cls='correct';
+      else if(idx===ans) cls='wrong';
+    }
     return `<label class="option ${cls}" onclick="answer(${idx})"><input type="radio" name="opt"> <div>${String.fromCharCode(97+idx)}) ${txt}</div></label>`;
   }).join('');
-  const explain = answered? `<div class="explain">${q.explicacion||''}</div>` : '';
+  const explain = (ans!=null)? `<div class="explain">${q.explicacion||''}</div>` : '';
   const nav = `<div class="nav-row">
     <button class="btn" onclick="prevQ()">Anterior</button>
     <button class="btn" onclick="nextQ()">Siguiente</button>
@@ -164,8 +166,10 @@ window.nextQ = ()=>{ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; renderQue
 
 window.answer = (idx)=>{
   const q = CURRENT.list[CURRENT.i];
+  if(CURRENT.sessionAnswers[q.id]!=null) return; // no permitir cambiar en la sesión
+  CURRENT.sessionAnswers[q.id] = idx;           // guarda solo en la sesión para las marcas
+  // Actualiza estadísticas persistentes sin mostrar marcas previas en futuras sesiones
   PROG[CURRENT.materia] = PROG[CURRENT.materia]||{};
-  if(PROG[CURRENT.materia][q.id]?.chosen!=null) return; // ya respondida
   PROG[CURRENT.materia][q.id] = { chosen: idx, status: (idx===q.correcta?'ok':'bad') };
   saveAll();
   renderQuestion();
@@ -182,8 +186,19 @@ window.showStats = (slug)=>{
     <h3>Estadísticas · ${slug.toUpperCase()}</h3>
     <p>Total de preguntas: <b>${total}</b></p>
     <p>Correctas: <b style="color:#16a34a">${ok}</b> · Incorrectas: <b style="color:#ef4444">${bad}</b></p>
-    <div class="nav-row"><button class="btn" onclick="backHome()">Volver</button></div>
+    <div class="nav-row">
+      <button class="btn" onclick="backHome()">Volver</button>
+      <button class="btn" onclick="resetStats('${slug}')">Reestablecer estadísticas</button>
+    </div>
   </div>`;
+};
+window.resetStats = (slug)=>{
+  if(confirm(`¿Seguro que querés borrar tus estadísticas de ${slug.toUpperCase()}? Esto no elimina las preguntas.`)){
+    delete PROG[slug];
+    saveAll();
+    alert("Estadísticas reestablecidas ✅");
+    showStats(slug);
+  }
 };
 
 /*** ---------- Admin: PIN local + Import ---------- ***/
@@ -229,7 +244,7 @@ if(adminActive){
         if(!Array.isArray(q.opciones)||q.opciones.length!==4) errors.push(`Item ${i}: 'opciones' debe tener 4 strings`);
         if(typeof q.correcta!=='number' || q.correcta<0 || q.correcta>3) errors.push(`Item ${i}: 'correcta' debe ser 0..3`);
       });
-      if(errors.length){ alert("Errores:\\n"+errors.slice(0,12).join("\\n")); return; }
+      if(errors.length){ alert("Errores:\n"+errors.slice(0,12).join("\n")); return; }
 
       // Merge materias
       const subMap = new Map(subjectsFromBank().map(s=>[s.slug,s]));
