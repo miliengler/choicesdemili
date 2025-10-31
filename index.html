@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MEbank Choice – Examen Único</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--soft:#f1f5f9;--line:#e2e8f0;--brand:#2563eb;--brand-dark:#1e40af;--accent:#22c55e;--danger:#ef4444;--card:#ffffff}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.header{position:sticky;top:0;z-index:20;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.wrap{max-width:1100px;margin:0 auto;padding:14px 16px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{margin:0;font-size:clamp(18px,3vw,22px);font-weight:700}
+.small{font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button,select,input[type="number"],input[type="text"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
+select,input{background:var(--card)}
+button{cursor:pointer;transition:.15s transform ease,.15s background ease}
+button:hover{transform:translateY(-1px)}
+.btn{background:var(--soft)}.btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.icon-btn{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:900px){.grid{grid-template-columns:1.2fr .8fr}}
+.tiles{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:680px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{padding:18px;border-radius:16px;border:1px solid var(--line);background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.tile h3{margin:0 0 6px}.tile p{margin:0;color:var(--muted);font-size:14px}
+.progress{height:8px;background:var(--soft);border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:8px;width:0;background:linear-gradient(90deg,var(--brand),var(--accent))}
+.question-stem{font-size:18px;line-height:1.45;white-space:pre-wrap}
+.options{margin-top:12px;display:grid;gap:10px}
+.option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer;transition:box-shadow .15s ease,border-color .15s ease}
+.option.correct{border-color:rgba(34,197,94,.9);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
+.option.wrong{border-color:rgba(239,68,68,.9);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
+.explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
+.index-fab{position:fixed;right:18px;bottom:18px;z-index:50}
+.index-panel{position:fixed;right:18px;bottom:72px;width:320px;max-height:65vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,.12);padding:12px;display:none}
+.idx-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.idx-btn{border:1px solid var(--line);background:var(--soft);font-size:12px;border-radius:8px;padding:6px;text-align:center;cursor:pointer}
+.idx-btn.ans{background:#dcfce7;border-color:#86efac}.idx-btn.wr{background:#fee2e2;border-color:#fca5a5}
+.footer{color:var(--muted);text-align:center;font-size:12px;padding:14px}
+.logo-heart{width:26px;height:26px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="wrap row" style="justify-content:space-between">
+      <div class="brand">
+        <svg class="logo-heart" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+          <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z" stroke="#B91C1C" stroke-width="2" fill="none" />
+        </svg>
+        <div>
+          <h1>MEbank Choice – Examen Único</h1>
+          <div class="small">Práctica / Examen / Repaso general · Importá bancos con PIN.</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="navHome" class="btn">Inicio</button>
+        <select id="materiaSelect"></select>
+        <select id="modoSelect">
+          <option value="practica">Práctica</option>
+          <option value="examen">Examen</option>
+          <option value="repaso">Repaso (solo incorrectas)</option>
+          <option value="general">Examen general (aleatorio)</option>
+        </select>
+        <input id="desde" type="number" min="1" value="1" title="Empezar desde #"/>
+        <button id="comenzar" class="btn-primary">Comenzar</button>
+        <input id="search" type="text" placeholder="Buscar ID o texto…" style="min-width:220px"/>
+        <button id="btnStats" class="btn">Estadísticas</button>
+        <button id="btnReset" class="btn">Reiniciar</button>
+        <button id="gear" class="icon-btn" title="Modo edición (PIN)">⚙️</button>
+        <button id="btnImport" class="btn hidden">Importar</button>
+        <label id="owWrap" class="btn hidden" style="display:none"><input type="checkbox" id="overwrite"> Sobrescribir duplicados</label>
+        <input id="fileInput" type="file" accept="application/json" class="hidden"/>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap" id="app"></main>
+
+  <!-- Índice flotante -->
+  <div class="index-fab"><button id="openIndex" class="btn-primary icon-btn" title="Índice">#</button></div>
+  <div class="index-panel" id="indexPanel">
+    <div class="row" style="justify-content:space-between; margin-bottom:6px">
+      <b>Índice de preguntas</b>
+      <button id="closeIndex" class="icon-btn">✖️</button>
+    </div>
+    <div class="idx-grid" id="idxGrid"></div>
+  </div>
+
+  <div class="footer">Hecho con ❤️ · MEbank</div>
+
+<script>
+/*** ---------- Datos de arranque ---------- ***/
+const starter = {
+  subjects: [
+    { slug:"obstetricia", name:"Obstetricia", desc:"MSAL / SOGIBA – estilo Examen Único." },
+    { slug:"pediatria", name:"Pediatría", desc:"Cargá tu banco JSON cuando quieras." },
+    { slug:"infectologia", name:"Infectología", desc:"Cargá tu banco JSON cuando quieras." }
+  ],
+  questions: [
+    {id:"OB-PN-001",materia:"obstetricia",subtema:"Controles prenatales",enunciado:"Gestante de 12 semanas, ¿qué estudio NO corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia en ayunas","VDRL/RPR","Urocultivo de control a las 28 semanas"],correcta:3,explicacion:"El urocultivo de control a las 28 semanas no corresponde al primer control; se solicita urocultivo inicial y repetir según riesgo."},
+    {id:"OB-HTA-001",materia:"obstetricia",subtema:"HTA en el embarazo",enunciado:"30 semanas, TA 152/96 mmHg, asintomática, proteinuria negativa. Conducta inicial:",opciones:["Reposo absoluto","Metildopa VO","Inducir parto","Sulfato de magnesio profiláctico"],correcta:1,explicacion:"HTA gestacional sin severidad: manejo ambulatorio y antihipertensivo oral; MgSO4 no corresponde sin criterios de severidad."},
+    {id:"OB-DM-001",materia:"obstetricia",subtema:"Diabetes y embarazo",enunciado:"PTOG 75 g: 0h 92, 1h 185, 2h 149 mg/dL. Diagnóstico:",opciones:["Normal","Intolerancia","Diabetes gestacional","Diabetes preexistente"],correcta:2,explicacion:"DG si ≥1 valor ≥ (0h 92, 1h 180, 2h 153)."},
+    {id:"OB-HEM-001",materia:"obstetricia",subtema:"Hemorragias",enunciado:"35 semanas, sangrado indoloro y TA normal. Sospecha:",opciones:["DPP","Placenta previa","Rotura uterina","Cérvix friable"],correcta:1,explicacion:"Indoloro → placenta previa; DPP suele cursar con dolor e hipertonía."},
+    {id:"OB-TP-001",materia:"obstetricia",subtema:"Trabajo de parto",enunciado:"Fase activa estancada 2 h con dinámica adecuada. Conducta:",opciones:["Amniotomía y reevaluar","Cesárea inmediata","Oxitocina alta","Esperar 4 h"],correcta:0,explicacion:"Si membranas íntegras, amniotomía y reevaluación."},
+    {id:"OB-PP-001",materia:"obstetricia",subtema:"Puerperio y lactancia",enunciado:"Puerpera con fiebre y eritema mamario. Dx:",opciones:["Ingurgitación","Mastitis","Absceso","Galactocele"],correcta:1,explicacion:"Fiebre + eritema + dolor -> mastitis; si no responde o hay fluctuación, pensar absceso."},
+    {id:"OB-INF-001",materia:"obstetricia",subtema:"Inmunoprofilaxis",enunciado:"Gestante Rh–, pareja Rh+, Coombs indirecto negativo. A las 28 semanas:",opciones:["Nada","Ig anti-D","Inducción","Corticoides"],correcta:1,explicacion:"Profilaxis anti-D a las 28 semanas."},
+    {id:"OB-VAC-001",materia:"obstetricia",subtema:"Vacunación",enunciado:"Vacuna sistemática en cada embarazo (ideal 27–36 sem):",opciones:["Hep A","Tdap","Varicela","HPV"],correcta:1,explicacion:"Tdap en cada embarazo para protección de coqueluche."}
+  ]
+};
+
+/*** ---------- Estado / storage ---------- ***/
+const LS_BANK = "mebank_bank_v1";
+const LS_PROGRESS = "mebank_prog_v1";
+const LS_ADMIN = "mebank_admin_hash_v1"; // almacena hash del PIN
+let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || starter;
+const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); // {materia: {qid: 'ok'|'bad'}}
+
+/*** Helpers de hash (SHA-256) ***/
+async function sha256Hex(str){
+  const enc = new TextEncoder().encode(str);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function saveAll(){ localStorage.setItem(LS_BANK, JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG)); }
+
+/*** ---------- UI helpers ---------- ***/
+const app = document.getElementById('app');
+const materiaSelect = document.getElementById('materiaSelect');
+const modoSelect = document.getElementById('modoSelect');
+const desdeInput = document.getElementById('desde');
+const searchInput = document.getElementById('search');
+const openIndexBtn = document.getElementById('openIndex');
+const indexPanel = document.getElementById('indexPanel');
+const idxGrid = document.getElementById('idxGrid');
+document.getElementById('navHome').onclick = renderHome;
+document.getElementById('closeIndex').onclick = ()=> indexPanel.style.display='none';
+openIndexBtn.onclick = ()=> indexPanel.style.display = indexPanel.style.display==='block'?'none':'block';
+
+function subjectsFromBank(){
+  const known = new Map(BANK.subjects.map(s=>[s.slug,s]));
+  BANK.questions.forEach(q=>{
+    if(!known.has(q.materia)){
+      known.set(q.materia,{slug:q.materia,name:q.materia.charAt(0).toUpperCase()+q.materia.slice(1),desc:""});
+    }
+  });
+  return Array.from(known.values());
+}
+
+function fillSelectors(){
+  const subs = subjectsFromBank();
+  materiaSelect.innerHTML = subs.map(s=>`<option value="${s.slug}">${s.name}</option>`).join('');
+}
+fillSelectors();
+
+/*** ---------- Render Home ---------- ***/
+function renderHome(){
+  const subs = subjectsFromBank();
+  const tiles = subs.map(s=>{
+    const total = BANK.questions.filter(q=>q.materia===s.slug).length;
+    const prog = PROG[s.slug]||{};
+    const ok = Object.values(prog).filter(v=>v==='ok').length;
+    const pct = total? Math.round(ok*100/total):0;
+    return `
+      <div class="tile">
+        <h3>${s.name}</h3>
+        <p>${s.desc||''}</p>
+        <div class="progress" style="margin:8px 0 10px"><div class="bar" style="width:${pct}%"></div></div>
+        <div class="small">${ok}/${total} correctas</div>
+        <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap">
+          <button class="btn" onclick="goMateria('${s.slug}','practica')">Práctica</button>
+          <button class="btn" onclick="goMateria('${s.slug}','examen')">Examen</button>
+          <button class="btn" onclick="goMateria('${s.slug}','repaso')">Repaso</button>
+        </div>
+      </div>
+    `;
+  }).join('');
+  app.innerHTML = `
+    <div class="grid">
+      <div class="card">
+        <div class="question-stem" style="margin:0 0 8px"><b>¡Hola!</b> Elegí una materia o usá los selectores de arriba para arrancar.</div>
+        <div class="tiles">${tiles}</div>
+      </div>
+      <div class="card">
+        <b>Cómo importar bancos (solo vos)</b>
+        <ol style="margin-top:8px">
+          <li>Tocá ⚙️ (configurá tu <b>PIN</b> la primera vez).</li>
+          <li>Presioná <b>Importar</b> y elegí tu <code>.json</code> (IDs únicos, 4 opciones, <code>correcta 0..3</code>).</li>
+          <li>Si querés actualizar preguntas existentes, activá <b>Sobrescribir duplicados</b>.</li>
+        </ol>
+        <p class="small">El PIN se guarda solo en este dispositivo (local). Para editar desde otro, configurá un PIN allí también.</p>
+      </div>
+    </div>`;
+}
+renderHome();
+
+/*** ---------- Navegación y modos ---------- ***/
+document.getElementById('comenzar').onclick = ()=>{
+  const m = materiaSelect.value;
+  const modo = modoSelect.value;
+  if(modo==='general') renderGeneral(); else renderMateria(m, modo);
+};
+function goMateria(slug, modo){ materiaSelect.value = slug; modoSelect.value = modo; desdeInput.value = 1; renderMateria(slug, modo); }
+
+/*** ---------- Motor de preguntas ---------- ***/
+let CURRENT = { list:[], i:0, modo:'practica', materia:'', answers:{} };
+
+function renderMateria(slug, modo='practica'){
+  const listAll = BANK.questions.filter(q=>q.materia===slug);
+  let list = listAll.slice();
+  if(modo==='repaso'){
+    const prog = PROG[slug]||{};
+    list = listAll.filter(q=>prog[q.id]==='bad');
+    if(!list.length){ app.innerHTML = `<div class="card">No tenés incorrectas para repasar en <b>${slug}</b>. Hacé primero algunas preguntas en práctica o examen.</div>`; return; }
+  }
+  const start = Math.max(1, parseInt(desdeInput.value||'1',10));
+  list = list.sort((a,b)=> a.id.localeCompare(b.id));
+  list = list.slice(start-1);
+  CURRENT = { list, i:0, modo, materia:slug, answers:{} };
+
+  renderQuestion();
+  buildIndex();
+}
+
+function renderGeneral(){
+  // Aleatorio combinando todas las materias (toma 30 por defecto)
+  const pool = BANK.questions.slice();
+  const take = Math.min(30, pool.length);
+  pool.sort(()=>Math.random()-0.5);
+  CURRENT = { list: pool.slice(0,take), i:0, modo:'examen', materia:'(general)', answers:{} };
+  renderQuestion();
+  buildIndex();
+}
+
+function buildIndex(){
+  idxGrid.innerHTML = CURRENT.list.map((_,ix)=>`<button class="idx-btn" onclick="jump(${ix})">${ix+1}</button>`).join('');
+}
+window.jump = (ix)=>{ CURRENT.i = ix; renderQuestion(); };
+
+function renderQuestion(){
+  if(!CURRENT.list.length){ app.innerHTML = `<div class="card">No hay preguntas en este modo.</div>`; return; }
+  const q = CURRENT.list[CURRENT.i];
+  const answered = CURRENT.answers[q.id];
+  const header = `
+    <div class="row" style="justify-content:space-between">
+      <div><b>${CURRENT.materia.toUpperCase()}</b> · <span class="small">${CURRENT.modo.toUpperCase()}</span></div>
+      <div class="small">Pregunta ${CURRENT.i+1} de ${CURRENT.list.length}</div>
+    </div>`;
+  const opts = q.opciones.map((txt, idx)=>{
+    let cls='';
+    if(answered){
+      if(idx===q.correcta) cls='correct';
+      else if(idx===answered) cls='wrong';
+    }
+    return `<label class="option ${cls}" onclick="answer(${idx})"><input type="radio" name="opt"> <div>${String.fromCharCode(97+idx)}) ${txt}</div></label>`;
+  }).join('');
+  const explain = (answered && (CURRENT.modo!=='examen'))
+      ? `<div class="explain">${q.explicacion||''}</div>` : '';
+  const nav = `
+    <div class="row" style="gap:8px; margin-top:12px">
+      <button class="btn" onclick="prevQ()">Anterior</button>
+      <button class="btn" onclick="nextQ()">Siguiente</button>
+    </div>`;
+
+  app.innerHTML = `<div class="card">
+    ${header}
+    <div class="question-stem" style="margin-top:8px">${q.enunciado}</div>
+    <div class="options">${opts}</div>
+    ${explain}
+    ${nav}
+  </div>`;
+}
+
+window.prevQ = ()=>{ if(CURRENT.i>0){ CURRENT.i--; renderQuestion(); } };
+window.nextQ = ()=>{ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; renderQuestion(); } };
+
+window.answer = (idx)=>{
+  const q = CURRENT.list[CURRENT.i];
+  if(CURRENT.answers[q.id]!=null) return; // no permitir cambiar
+  CURRENT.answers[q.id] = idx;
+  // guardar progreso por materia (no en general)
+  if(CURRENT.materia!=='(general)'){
+    PROG[CURRENT.materia] = PROG[CURRENT.materia]||{};
+    PROG[CURRENT.materia][q.id] = (idx===q.correcta)? 'ok':'bad';
+    saveAll();
+  }
+  renderQuestion(); buildIndex();
+};
+
+/*** ---------- Búsqueda ---------- ***/
+const searchInput = document.getElementById('search');
+searchInput.addEventListener('input', ()=>{
+  const term = searchInput.value.trim().toLowerCase();
+  if(!term){ return; }
+  const pool = CURRENT.list.length? CURRENT.list : BANK.questions.filter(q=>q.materia===materiaSelect.value);
+  const ix = pool.findIndex(q=> q.id.toLowerCase().includes(term) || q.enunciado.toLowerCase().includes(term));
+  if(ix>=0){ if(CURRENT.list!==pool){ CURRENT.list = pool; CURRENT.i = ix; CURRENT.modo='practica'; CURRENT.materia=materiaSelect.value; } else { CURRENT.i = ix; } renderQuestion(); buildIndex(); }
+});
+
+/*** ---------- Stats y reset ---------- ***/
+document.getElementById('btnStats').onclick = ()=>{
+  const s = materiaSelect.value;
+  const total = BANK.questions.filter(q=>q.materia===s).length;
+  const prog = PROG[s]||{};
+  const ok = Object.values(prog).filter(v=>v==='ok').length;
+  const bad = Object.values(prog).filter(v=>v==='bad').length;
+  app.innerHTML = `<div class="card">
+    <h3>Estadísticas · ${s.toUpperCase()}</h3>
+    <p>Total de preguntas: <b>${total}</b></p>
+    <p>Correctas: <b style="color:#16a34a">${ok}</b> · Incorrectas: <b style="color:#ef4444">${bad}</b></p>
+    <div class="progress" style="margin-top:10px"><div class="bar" style="width:${ total? Math.round(ok*100/total):0 }%"></div></div>
+    <p class="small" style="margin-top:8px">El progreso se guarda en este dispositivo.</p>
+  </div>`;
+};
+document.getElementById('btnReset').onclick = ()=>{
+  const s = materiaSelect.value;
+  if(confirm(`¿Reiniciar estadísticas de ${s}?`)){
+    delete PROG[s]; saveAll(); alert("Estadísticas reiniciadas"); renderHome();
+  }
+};
+
+/*** ---------- Editar / Importar bancos (con PIN local) ---------- ***/
+const gear = document.getElementById('gear');
+const btnImport = document.getElementById('btnImport');
+const owWrap = document.getElementById('owWrap');
+const overwrite = document.getElementById('overwrite');
+const fileInput = document.getElementById('fileInput');
+
+let edit = false;
+gear.onclick = async ()=>{
+  const savedHash = localStorage.getItem(LS_ADMIN);
+  if(!savedHash){
+    // Configurar PIN (solo una vez por dispositivo)
+    const p1 = prompt("Configurá tu PIN de edición (4–10 dígitos/letras):");
+    if(!p1) return;
+    const p2 = prompt("Repetí tu PIN:");
+    if(p1 !== p2){ alert("No coinciden. Probá otra vez."); return; }
+    const hash = await sha256Hex(p1);
+    localStorage.setItem(LS_ADMIN, hash);
+    alert("PIN guardado en este dispositivo ✅");
+    edit = true;
+  }else{
+    const pin = prompt("Ingresá tu PIN para activar el modo edición:");
+    if(!pin) return;
+    const h = await sha256Hex(pin);
+    if(h !== savedHash){ alert("PIN incorrecto"); return; }
+    edit = true;
+  }
+  [btnImport, owWrap].forEach(el=>{el.classList.remove('hidden'); el.style.display='';});
+  alert("Modo edición activado ✅");
+};
+btnImport.onclick = ()=> fileInput.click();
+fileInput.addEventListener('change', async (e)=>{
+  const f = e.target.files[0]; if(!f) return;
+  try{
+    const text = await f.text();
+    const data = JSON.parse(text);
+    const arr = Array.isArray(data)? data : (data.questions||[]);
+    if(!Array.isArray(arr) || !arr.length) throw new Error("JSON inválido: se esperaba un array de preguntas o {questions:[...] }");
+
+    // Validación simple
+    const errors=[];
+    arr.forEach((q,i)=>{
+      if(!q.id) errors.push(`Item ${i}: falta 'id'`);
+      if(!q.materia) errors.push(`Item ${i}: falta 'materia'`);
+      if(!Array.isArray(q.opciones)||q.opciones.length!==4) errors.push(`Item ${i}: 'opciones' debe tener 4 strings`);
+      if(typeof q.correcta!=='number' || q.correcta<0 || q.correcta>3) errors.push(`Item ${i}: 'correcta' debe ser 0..3`);
+    });
+    if(errors.length){ alert("Errores:\n"+errors.slice(0,10).join("\n") + (errors.length>10?`\n… (${errors.length-10} más)`:'')); return; }
+
+    // Merge materias a subjects
+    const subMap = new Map(subjectsFromBank().map(s=>[s.slug,s]));
+    arr.forEach(q=>{ if(!subMap.has(q.materia)) subMap.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1),desc:""}); });
+    BANK.subjects = Array.from(subMap.values());
+
+    // Merge preguntas (con overwrite opcional)
+    const byId = new Map(BANK.questions.map(q=>[q.id,q]));
+    arr.forEach(q=>{
+      if(byId.has(q.id)){
+        if(overwrite.checked){ byId.set(q.id, q); }
+      } else { byId.set(q.id, q); }
+    });
+    BANK.questions = Array.from(byId.values());
+    saveAll();
+    alert(`Importadas ${arr.length} preguntas ✅`);
+    fillSelectors(); renderHome();
+  }catch(err){ alert("No se pudo importar: "+err.message); }
+  finally{ e.target.value=""; }
+});
+</script>
+</body>
+</html>
