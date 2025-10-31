@@ -480,8 +480,10 @@ function renderStatsGlobal(){
   const weekList = days.map(d=>{
     const dd = d.date.slice(8,10);
     const mm = d.date.slice(5,7);
-    return `<div>${dd}/${mm} – <b>${d.count}</b> preguntas respondidas correctamente ✅</div>`;
-  }).join("");
+    return `<div style="display:flex;justify-content:space-between;">
+  <span style="color:var(--muted)">${dd}/${mm}</span>
+  <span><b style="color:#16a34a">${d.count}</b> correctas ✅</span>
+</div>`;
 
   let suggestion = "";
   const now = Date.now();
