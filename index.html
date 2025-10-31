@@ -367,11 +367,16 @@ function renderQuestionWithSidebar(open=true){
     const st = prog[qq.id]?.status;
     return st==='ok' ? 'ok' : st==='bad' ? 'bad' : 'none';
   });
-  const sideBtns = states.map((st,ix)=>{
-    const cls = (st==='ok'?'ok': st==='bad'?'bad':'');
-    const cur = (ix===CURRENT.i) ? 'cur' : '';
-    return `<button class="side-btn ${cls} ${cur}" onclick="jump(${ix})">${ix+1}</button>`;
-  }).join('');
+  
+  const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+const sideBtns = states.map((st,ix)=>{
+  const qq = CURRENT.list[ix];
+  const hasNote = !!NOTES[qq.id];
+  const cls = (st==='ok'?'ok': st==='bad'?'bad':'');
+  const cur = (ix===CURRENT.i) ? 'cur' : '';
+  const icon = hasNote ? '📎' : '';
+  return `<button class="side-btn ${cls} ${cur}" onclick="jump(${ix})">${ix+1}${icon}</button>`;
+}).join('');
   const notaGuardada = JSON.parse(localStorage.getItem("mebank_notes") || "{}")[q.id]?.text || "";
 const showNotes = ans != null; // solo mostrar si ya respondió
 
@@ -796,7 +801,7 @@ window.saveNote = (qid)=>{
   renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
 };
   /* ---------- MIS NOTAS (visor general) ---------- */
-function renderNotesList(){
+function renderNotesList(filterMateria = "todas"){
   const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const keys = Object.keys(NOTES);
   if(!keys.length){
@@ -808,33 +813,53 @@ function renderNotesList(){
     return;
   }
 
-  // Arma la lista de notas
-  const list = keys.map(k=>{
-    const n = NOTES[k];
-    const q = (BANK.questions||[]).find(x=>x.id===k);
-    const title = q ? `${q.materia.toUpperCase()} – ${q.enunciado.slice(0,80)}...` : k;
-    const date = new Date(n.date).toLocaleDateString("es-AR");
-    return `
-      <div class='card' style='margin-bottom:10px;'>
-        <b>${title}</b><br>
-        <div style='color:var(--muted);font-size:13px;margin:4px 0;'>${date}</div>
-        <div style='white-space:pre-wrap;margin-top:6px;'>${n.text}</div>
-        <div style='text-align:right;margin-top:8px;'>
-          <button class='btn-small' onclick='deleteNote("${k}")'>🗑️ Borrar</button>
-        </div>
-      </div>`;
-  }).join("");
+  // Obtener materias únicas con notas
+  const materias = [...new Set(
+    keys.map(k => (BANK.questions.find(q => q.id===k)?.materia) || "sin_materia")
+  )].sort();
+
+  // Selector de filtro
+  const selector = `
+    <div style='margin-bottom:12px;text-align:center;'>
+      <label for='selMateria'>Filtrar por materia:</label>
+      <select id='selMateria' onchange='renderNotesList(this.value)' style='margin-left:6px;padding:4px 6px;border-radius:6px;'>
+        <option value='todas' ${filterMateria==="todas"?"selected":""}>Todas</option>
+        ${materias.map(m => `<option value='${m}' ${filterMateria===m?"selected":""}>${m.toUpperCase()}</option>`).join("")}
+      </select>
+    </div>`;
+
+  // Construir lista filtrada
+  const list = keys
+    .map(k => {
+      const n = NOTES[k];
+      const q = (BANK.questions||[]).find(x => x.id===k);
+      const materia = q?.materia || "sin_materia";
+      if(filterMateria !== "todas" && materia !== filterMateria) return "";
+      const title = q ? `${materia.toUpperCase()} – ${q.enunciado.slice(0,80)}...` : k;
+      const date = new Date(n.date).toLocaleDateString("es-AR");
+      return `
+        <div class='card' style='margin-bottom:10px;'>
+          <b>${title}</b><br>
+          <div style='color:var(--muted);font-size:13px;margin:4px 0;'>${date}</div>
+          <div style='white-space:pre-wrap;margin-top:6px;'>${n.text}</div>
+          <div style='text-align:right;margin-top:8px;display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;'>
+            <button class='btn-small' onclick='goToNote("${k}")'>📖 Ir a pregunta</button>
+            <button class='btn-small' onclick='deleteNote("${k}")'>🗑️ Borrar</button>
+          </div>
+        </div>`;
+    })
+    .join("");
 
   app.innerHTML = `
     <div class='fade'>
       <h3 style='text-align:center;'>📔 Mis notas (${keys.length})</h3>
-      ${list}
+      ${selector}
+      ${list || "<p style='text-align:center;color:var(--muted)'>No hay notas en esta materia.</p>"}
       <div style='text-align:center;margin-top:16px;'>
         <button class='btn-main' onclick='renderHome()'>Volver al inicio</button>
       </div>
     </div>`;
 }
-
 function deleteNote(id){
   if(confirm("¿Eliminar esta nota?")){
     const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
@@ -842,6 +867,17 @@ function deleteNote(id){
     localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
     renderNotesList();
   }
+}
+  function goToNote(id){
+  const q = (BANK.questions||[]).find(x=>x.id===id);
+  if(!q){ alert("Pregunta no encontrada."); return; }
+  CURRENT = {
+    list: BANK.questions.filter(qq=>qq.materia===q.materia).sort((a,b)=>a.id.localeCompare(b.id)),
+    i: BANK.questions.filter(qq=>qq.materia===q.materia).findIndex(qq=>qq.id===q.id),
+    materia: q.materia,
+    session: {}
+  };
+  renderQuestionWithSidebar(true);
 }
 </script>
 </body>
