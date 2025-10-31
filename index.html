@@ -73,9 +73,9 @@ input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--li
   border:1px solid var(--line); background:var(--soft); border-radius:8px; padding:8px;
   font-size:12px; text-align:center; cursor:pointer; user-select:none;
 }
-.side-btn.ok{ background:#dcfce7; border-color:#86efac }
-.side-btn.bad{ background:#fee2e2; border-color:#fca5a5 }
-.side-btn.cur{ outline:2px solid var(--brand) }
+.side-btn.ok{ background:rgba(34,197,94,.25); border-color:#22c55e; color:#22c55e; }
+.side-btn.bad{ background:rgba(239,68,68,.25); border-color:#ef4444; color:#ef4444; }
+.side-btn.cur{ outline:2px solid var(--brand); background:rgba(37,99,235,.15); }
 .side-toggle{border-radius:10px; width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center}
 .sidebar.closed{ transform: translateX(14px); opacity:.0; pointer-events:none }
 
@@ -343,7 +343,27 @@ function renderQuestionWithSidebar(open=true){
 window.toggleSidebar = ()=>{
   const el = document.getElementById('sidebar');
   if(!el) return;
-  el.classList.toggle('closed');
+  const closed = el.classList.toggle('closed');
+
+  // Mostrar flechita lateral cuando está cerrado
+  let arrow = document.getElementById('sideArrow');
+  if (closed) {
+    if (!arrow) {
+      arrow = document.createElement('button');
+      arrow.id = 'sideArrow';
+      arrow.textContent = '⮜';
+      arrow.title = 'Mostrar índice';
+      Object.assign(arrow.style, {
+        position:'fixed', right:'0', top:'50%', transform:'translateY(-50%)',
+        border:'1px solid var(--line)', borderRadius:'8px 0 0 8px',
+        background:'var(--brand)', color:'#fff', padding:'8px', zIndex:'60', cursor:'pointer'
+      });
+      arrow.onclick = ()=>{ el.classList.remove('closed'); arrow.remove(); };
+      document.body.appendChild(arrow);
+    }
+  } else if (arrow) {
+    arrow.remove();
+  }
 };
 
 window.jump = (ix)=>{ CURRENT.i = ix; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); };
