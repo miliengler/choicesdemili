@@ -405,6 +405,7 @@ function answer(i){
     PROG[materiaKey]._lastIndex = CURRENT.i;
   }
   saveAll();
+  recordDailyActivity();
   renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
 }
 
@@ -431,20 +432,86 @@ function resetStats(slug){
   }
 }
 function renderStatsGlobal(){
+  /* ---------- Estadísticas globales con resumen semanal ---------- */
+function renderStatsGlobal(){
   const subs = subjectsFromBank();
-  let total=0, ok=0, bad=0;
-  subs.forEach(m=>{
+  let total = 0, ok = 0, bad = 0;
+
+  subs.forEach(m => {
     total += BANK.questions.filter(q=>q.materia===m.slug).length;
-    const vals=Object.values(PROG[m.slug]||{}).filter(x=>x && typeof x==='object' && 'status' in x);
+    const vals = Object.values(PROG[m.slug]||{}).filter(x => x && typeof x==='object' && 'status' in x);
     ok += vals.filter(v=>v.status==='ok').length;
     bad += vals.filter(v=>v.status==='bad').length;
   });
-  app.innerHTML=`<div class='card'><h3>Estadísticas generales</h3>
-    <p>Total preguntas: ${total}</p>
-    <p style='color:#16a34a'>✔ ${ok}</p>
-    <p style='color:#ef4444'>✖ ${bad}</p>
-    <div class='nav-row'><button class='btn-main' onclick='renderHome()'>Volver</button></div>
-  </div>`;
+
+  const totalResp = ok + bad;
+  const porc = totalResp ? Math.round(ok*100/totalResp) : 0;
+
+  // 📅 Datos diarios guardados
+  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  const today = new Date();
+  const days = Array.from({length:7}).map((_,i)=>{
+    const d = new Date(today); d.setDate(today.getDate()-i);
+    const key = d.toISOString().slice(0,10);
+    return {date: key, count: STATS_DAILY[key] || 0};
+  }).reverse();
+
+  const weekList = days.map(d=>{
+    const nice = d.date.slice(5).replace("-","/");
+    return `<div>${nice}: <b>${d.count}</b> preguntas</div>`;
+  }).join("");
+
+  // 💡 Sugerencia
+  let suggestion = "";
+  const now = Date.now();
+  let oldest = null;
+  subs.forEach(m=>{
+    const last = PROG[m.slug]?._lastDate;
+    if(last && (!oldest || last<oldest.time)) oldest = {materia:m.name,time:last};
+  });
+  if(oldest){
+    const diffDays = Math.floor((now - oldest.time)/(1000*60*60*24));
+    if(diffDays>2) suggestion = `💡 Hace ${diffDays} días que no practicás <b>${oldest.materia}</b>. ¡Podrías repasar esa!`;
+  } else {
+    suggestion = "💡 Aún no hay datos suficientes para sugerencias.";
+  }
+
+  app.innerHTML = `
+    <div class='card fade' style='text-align:center'>
+      <h3>📊 Estadísticas generales</h3>
+      <p><b>Total de preguntas:</b> ${total}</p>
+      <p style='color:#16a34a'>✔ Correctas: ${ok}</p>
+      <p style='color:#ef4444'>✖ Incorrectas: ${bad}</p>
+      <p><b>Precisión global:</b> ${porc}%</p>
+
+      <hr style='margin:18px 0'>
+      <h4>📆 Actividad semanal</h4>
+      <div style='text-align:left;max-width:300px;margin:auto;font-size:14px;'>${weekList}</div>
+
+      <hr style='margin:18px 0'>
+      <div style='color:var(--brand-dark);font-size:15px;margin-bottom:10px;'>${suggestion}</div>
+
+      <div class='nav-row' style='justify-content:center'>
+        <button class='btn-small' onclick='resetGlobalStats()'>Reiniciar global</button>
+        <button class='btn-small' onclick='renderHome()'>Volver</button>
+      </div>
+    </div>
+  `;
+}
+
+/* --- Guardar actividad diaria cada vez que se responde una pregunta --- */
+function recordDailyActivity(){
+  const key = new Date().toISOString().slice(0,10);
+  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  STATS_DAILY[key] = (STATS_DAILY[key] || 0) + 1;
+  localStorage.setItem("mebank_stats_daily", JSON.stringify(STATS_DAILY));
+}
+
+function resetGlobalStats(){
+  if(confirm("¿Borrar TODAS las estadísticas globales? (No afectará tus materias)")){
+    localStorage.removeItem("mebank_stats_daily");
+    alert("Estadísticas globales reiniciadas ✅");
+    renderStatsGlobal();
 }
 
 /* ---------- Admin (PIN + importar JSON) ---------- */
