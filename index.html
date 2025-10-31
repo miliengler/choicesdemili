@@ -307,20 +307,25 @@ function renderGeneral(){
 
 function renderQuestionWithSidebar(open=true){
   const q = CURRENT.list[CURRENT.i];
-  if(!q){ app.innerHTML=`<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`; return; }
+  if(!q){ 
+    app.innerHTML=`<div class='card fade'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`; 
+    return; 
+  }
 
-  // Estado persistente (solo por materia real, no “general”)
   const prog = PROG[CURRENT.materia]||{};
-
-  // Construcción opciones con marcas de respuesta si existiera
   const ans = prog[q.id]?.chosen;
+
   const opts = q.opciones.map((t,i)=>{
-    let cls=''; if(ans!=null){ if(i===q.correcta) cls='correct'; else if(i===ans) cls='wrong'; }
+    let cls='';
+    if(ans!=null){
+      if(i===q.correcta) cls='correct';
+      else if(i===ans) cls='wrong';
+    }
     return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;
   }).join('');
+
   const exp = (ans!=null)? `<div class='explain'>${q.explicacion||''}</div>` : '';
 
-  // Sidebar índice (coloreado por estado)
   const states = CURRENT.list.map(qq=>{
     const st = prog[qq.id]?.status;
     return st==='ok' ? 'ok' : st==='bad' ? 'bad' : 'none';
@@ -336,13 +341,14 @@ function renderQuestionWithSidebar(open=true){
         <div class="side-title">Índice</div>
         <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
       </div>
+      <div class="small" style="margin:4px 0 6px;text-align:center;">Progreso: ${CURRENT.i+1}/${CURRENT.list.length}</div>
       <div class="side-grid">${sideBtns}</div>
     </div>`;
 
   app.innerHTML = `
-    <div class="q-layout">
+    <div class="q-layout fade">
       <div>
-        <div class='card'>
+        <div class='card fade'>
           <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
           <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
           <div class='options'>${opts}</div>
@@ -356,6 +362,8 @@ function renderQuestionWithSidebar(open=true){
       </div>
       ${side}
     </div>`;
+
+  if(open) buildSidebar();
 }
 
 window.toggleSidebar = ()=>{
