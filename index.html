@@ -469,6 +469,7 @@ function renderStatsGlobal(){
   const totalResp = ok + bad;
   const porc = totalResp ? Math.round(ok*100/totalResp) : 0;
 
+  // ---- Actividad semanal ----
   const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
   const today = new Date();
   const days = Array.from({length:7}).map((_,i)=>{
@@ -477,14 +478,17 @@ function renderStatsGlobal(){
     return {date: key, count: STATS_DAILY[key] || 0};
   }).reverse();
 
-    const weekList = days.map(d=>{
+  const weekList = days.map(d=>{
     const dd = d.date.slice(8,10);
     const mm = d.date.slice(5,7);
-    return `<div style="display:flex;justify-content:space-between;">
-      <span style="color:var(--muted)">${dd}/${mm}</span>
-      <span><b style="color:#16a34a">${d.count}</b> correctas ✅</span>
-    </div>`;
+    return `
+      <div style="display:flex;justify-content:space-between;align-items:center;margin:3px 0;">
+        <span style="color:var(--muted)">➤ ${dd}/${mm}</span>
+        <span><b style="color:#16a34a">${d.count}</b> correctas ✅</span>
+      </div>`;
   }).join("");
+
+  // ---- Sugerencia de práctica ----
   let suggestion = "";
   const now = Date.now();
   let oldest = null;
@@ -499,6 +503,7 @@ function renderStatsGlobal(){
     suggestion = "💡 Aún no hay datos suficientes para sugerencias.";
   }
 
+  // ---- Render final ----
   app.innerHTML = `
     <div class='card fade' style='text-align:center'>
       <h3>📊 Estadísticas generales</h3>
