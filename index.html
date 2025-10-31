@@ -125,6 +125,7 @@ const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="meba
 
 let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
   subjects:[
+ BANK.subjects = [
   {slug:"neumonologia", name:"Neumonología"},
   {slug:"psiquiatria", name:"Psiquiatría"},
   {slug:"cardiologia", name:"Cardiología"},
