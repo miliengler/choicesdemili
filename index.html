@@ -225,6 +225,7 @@ function renderOld(){
 /* ---------- SUBJECTS (acordeón) ---------- */
 function renderSubjects(){
   const subs=subjectsFromBank();
+  const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
   const list=subs.map(s=>{
     const count=BANK.questions.filter(q=>q.materia===s.slug).length;
     // Detectar si hay “reanudar”
@@ -247,7 +248,11 @@ function renderSubjects(){
       </div>
     </li>`;
   }).join("");
-  app.innerHTML=`<ul class='accordion'>${list}</ul>`;
+  app.innerHTML=`
+  <div class='card'>
+    ${backBtn}
+    <ul class='accordion'>${list}</ul>
+  </div>`;
 }
 window.toggleAcc=(slug)=>{
   const el=document.getElementById(`acc-${slug}`);const cnt=document.getElementById(`count-${slug}`);
