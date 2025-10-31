@@ -341,7 +341,9 @@ function renderQuestionWithSidebar(open=true){
         <div class="side-title">Índice</div>
         <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
       </div>
-      <div class="small" style="margin:4px 0 6px;text-align:center;">Progreso: ${CURRENT.i+1}/${CURRENT.list.length}</div>
+      <div class="small" style="margin:4px 0 6px;text-align:center;">
+  Progreso: ${CURRENT.i+1} de ${CURRENT.list.length} (${Math.round((CURRENT.i+1)*100/CURRENT.list.length)}%)
+</div>
       <div class="side-grid">${sideBtns}</div>
     </div>`;
 
