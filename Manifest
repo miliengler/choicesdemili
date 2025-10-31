@@ -1,0 +1,17 @@
+{
+  "name": "MEbank Choice – Examen Único",
+  "short_name": "MEbank",
+  "description": "Practicá choices del Examen Único .",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/10349/10349960.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
