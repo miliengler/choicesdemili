@@ -540,6 +540,85 @@ if ('serviceWorker' in navigator) {
 if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
   history.replaceState(null, "", "/");
 }
+  /* ==========================================================
+   MODO EXAMEN – CREÁ EL TUYO (v7.0)
+   ========================================================== */
+function renderExamenGeneralSetup(){
+  // 1️⃣ Tomar materias y calcular totales
+  const subs = subjectsFromBank();
+  const counts = subs.map(s=>{
+    const qCount = BANK.questions.filter(q=>q.materia===s.slug).length;
+    return {...s, total:qCount};
+  });
+  const totalAll = counts.reduce((a,b)=>a+b.total,0);
+
+  // 2️⃣ Generar lista de checkboxes
+  const checks = counts.map(s=>`
+    <label class="chk-mat" style="display:block; margin:4px 0;">
+      <input type="checkbox" class="mat-check" value="${s.slug}" data-count="${s.total}" checked>
+      ${s.name} (${s.total})
+    </label>`).join("");
+
+  // 3️⃣ Estructura HTML principal
+  app.innerHTML = `
+    <div class="card" style="max-width:700px; margin:auto;">
+      <h2 style="margin-top:0;">Modo Examen – Creá el tuyo</h2>
+      <p>Tenés <b>${totalAll}</b> preguntas disponibles en total.</p>
+
+      <div id="matList">${checks}</div>
+
+      <div style="margin-top:10px;">
+        <label for="numPreg" class="small">Número de preguntas:</label>
+        <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:80px; margin-left:6px;">
+      </div>
+
+      <div style="margin-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn-primary" onclick="startExamenGeneral()">Comenzar examen</button>
+        <button class="btn" onclick="renderHome()">⬅️ Volver al inicio</button>
+      </div>
+    </div>
+  `;
+
+  // 4️⃣ Escuchar cambios en los checkboxes
+  document.querySelectorAll('.mat-check').forEach(chk=>{
+    chk.addEventListener('change', updateExamenCount);
+  });
+}
+
+function updateExamenCount(){
+  const chks = Array.from(document.querySelectorAll('.mat-check'));
+  const selected = chks.filter(c=>c.checked);
+  const total = selected.reduce((a,c)=>a+parseInt(c.dataset.count),0);
+  const numInput = document.getElementById('numPreg');
+  if(!numInput._manual){  // solo si el usuario no editó
+    numInput.value = total;
+    numInput.max = total;
+  }
+}
+
+document.addEventListener('input', e=>{
+  if(e.target.id==='numPreg'){
+    e.target._manual = true; // marca que fue editado manualmente
+  }
+});
+
+function startExamenGeneral(){
+  const chks = Array.from(document.querySelectorAll('.mat-check'));
+  const selected = chks.filter(c=>c.checked).map(c=>c.value);
+  const num = parseInt(document.getElementById('numPreg').value,10);
+
+  // Filtrar preguntas de materias seleccionadas
+  let pool = BANK.questions.filter(q=> selected.includes(q.materia));
+  if(pool.length===0){ alert("Seleccioná al menos una materia"); return; }
+
+  // Aleatorizar y cortar al número elegido
+  pool.sort(()=>Math.random()-0.5);
+  const chosen = pool.slice(0, Math.min(num, pool.length));
+
+  // Configurar CURRENT y comenzar
+  CURRENT = { list: chosen, i: 0, modo: 'examen', materia: '(general)', answers: {} };
+  renderQuestionWithSidebar(true);
+}
 </script>
 </body>
 </html>
