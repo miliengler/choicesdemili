@@ -211,8 +211,7 @@ function subjectsFromBank(){
 
 /* ---------- HOME ---------- */
 const app=document.getElementById("app");
-
-  function renderHome(){
+function renderHome(){
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s">
       <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
@@ -222,6 +221,7 @@ const app=document.getElementById("app");
       <button class="btn-main" style="background:#1e40af;color:white" onclick="renderExamenGeneralSetup()">Modo Examen – Creá el tuyo</button>
     </div>
   `;
+
 }
 function renderOld(){
   app.innerHTML=`<div class="card" style="text-align:center">📄 Esta sección estará disponible próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
