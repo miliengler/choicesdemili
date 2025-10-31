@@ -95,6 +95,7 @@ body[data-theme="dark"]{
 }
 .theme-toggle:hover{ background:var(--brand-dark) }
 
+/* Checkboxes en “Creá tu examen” */
 .chk-mat input[type="checkbox"] {
   transform: scale(1.2);
   margin-right: 6px;
@@ -120,16 +121,21 @@ body[data-theme="dark"]{
 
 <script>
 /* ---------- Persistencia ---------- */
-const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="mebank_theme";
+const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="mebank_theme", LS_ADMIN="mebank_admin_hash_v6_2";
+
 let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
-  subjects:[{slug:"infectologia",name:"Infectología"},{slug:"obstetricia",name:"Obstetricia"},{slug:"pediatria",name:"Pediatría"}],
+  subjects:[
+    {slug:"infectologia",name:"Infectología"},
+    {slug:"obstetricia",name:"Obstetricia"},
+    {slug:"pediatria",name:"Pediatría"}
+  ],
   questions:[
-    {id:"OB-001",materia:"obstetricia",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
-    {id:"PE-001",materia:"pediatria",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."},
-    {id:"IN-001",materia:"infectologia",enunciado:"Varón con fiebre y odinofagia, test rápido positivo para estreptococo. Conducta:",opciones:["Macrólido empírico","Amoxicilina 10 días","Ceftriaxona IM","No tratar"],correcta:1,explicacion:"Penicilina/Amoxi 10 días es primera línea."}
+    {id:"OB-001",materia:"obstetricia",subtema:"Controles prenatales",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
+    {id:"PE-001",materia:"pediatria",subtema:"Bronquiolitis",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."},
+    {id:"IN-001",materia:"infectologia",subtema:"Faringitis",enunciado:"Test rápido positivo para estreptococo. Conducta:",opciones:["Macrólido empírico","Amoxicilina 10 días","Ceftriaxona IM","No tratar"],correcta:1,explicacion:"Penicilina/Amoxi 10 días es primera línea."}
   ]
 };
-const PROG=JSON.parse(localStorage.getItem(LS_PROGRESS)||"{}");
+const PROG=JSON.parse(localStorage.getItem(LS_PROGRESS)||"{}"); // {materia:{qid:{chosen,status}, _lastIndex:number}, general:{...}}
 function saveAll(){ localStorage.setItem(LS_BANK,JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS,JSON.stringify(PROG)); }
 
 /* ---------- Tema ---------- */
@@ -145,8 +151,53 @@ document.getElementById("themeBtn").onclick = ()=>{
   document.getElementById("themeBtn").textContent = cur==="dark" ? "☀️" : "🌙";
 };
 
-/* ---------- HOME ---------- */
+/* ---------- Admin por URL (?admin=1) ---------- */
+const adminActive = new URLSearchParams(location.search).get('admin') === '1';
+let gear, btnImport, owWrap, overwrite, fileInput;
+function setupAdminControls(){
+  if(!adminActive) return;
+  const panel = document.createElement('div');
+  panel.className = 'card';
+  panel.style = 'position:fixed; right:16px; top:76px; z-index:40; width:280px';
+  panel.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <b>Modo admin</b>
+      <button id="admGear" class="btn-small" title="PIN">⚙️</button>
+    </div>
+    <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center">
+      <button id="btnImport" class="btn-small">Importar</button>
+      <label id="owWrap" class="btn-small" style="display:none"><input type="checkbox" id="overwrite"> Sobrescribir</label>
+      <input id="fileInput" type="file" accept="application/json" class="hidden"/>
+    </div>`;
+  document.body.appendChild(panel);
+  gear = document.getElementById('admGear');
+  btnImport = document.getElementById('btnImport');
+  owWrap = document.getElementById('owWrap');
+  overwrite = document.getElementById('overwrite');
+  fileInput = document.getElementById('fileInput');
+  hookAdmin();
+}
+setupAdminControls();
+
+async function sha256Hex(str){
+  const enc = new TextEncoder().encode(str);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+/* ---------- Utilidades ---------- */
+function subjectsFromBank(){
+  const known = new Map((BANK.subjects||[]).map(s=>[s.slug,s]));
+  (BANK.questions||[]).forEach(q=>{
+    if(q && q.materia && !known.has(q.materia)){
+      known.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1)});
+    }
+  });
+  return Array.from(known.values()).sort((a,b)=>a.name.localeCompare(b.name));
+}
 const app=document.getElementById("app");
+
+/* ---------- HOME ---------- */
 function renderHome(){
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s">
@@ -154,48 +205,346 @@ function renderHome(){
       <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
       <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
       <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
-      <button class="btn-main" style="background:#1e40af;color:white" onclick="renderExamenGeneralSetup()">Modo Examen – Creá el tuyo</button>
     </div>
   `;
 }
 renderHome();
 
-/* ---------- Funciones de muestra ---------- */
 function renderOld(){
-  app.innerHTML = `<div class="card" style="text-align:center">📄 Próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
-}
-function renderSubjects(){
-  app.innerHTML = `<div class='card' style='text-align:center'>Aca irán las materias.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
-}
-function renderStatsGlobal(){
-  app.innerHTML = `<div class='card' style='text-align:center'>Estadísticas globales.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
-}
-function renderGeneral(){
-  app.innerHTML = `<div class='card' style='text-align:center'>Modo práctica.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
+  app.innerHTML=`<div class="card" style="text-align:center">📄 Próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
 }
 
-/* ---------- NUEVO: Modo Examen – Creá el tuyo ---------- */
+/* ---------- SUBJECTS (acordeón) ---------- */
+function renderSubjects(){
+  const subs=subjectsFromBank();
+  const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
+  const list=subs.map(s=>{
+    const count=BANK.questions.filter(q=>q.materia===s.slug).length;
+    const last = (PROG[s.slug] && PROG[s.slug]._lastIndex!=null) ? (PROG[s.slug]._lastIndex+1) : null;
+    const reanudarBtn = last? `<button class='btn-small' onclick='resume("${s.slug}")'>Reanudar (${last})</button>` : ``;
+    return `<li class='acc-item'>
+      <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
+        <div class='acc-title'>${s.name}</div>
+        <div class='acc-count hidden' id='count-${s.slug}'>${count} preguntas cargadas</div>
+      </div>
+      <div class='acc-content' id='acc-${s.slug}'>
+        <div class='acc-actions'>
+          <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
+          <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
+          <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
+          <button class='btn-small' onclick='showStats("${s.slug}")'>Estadísticas</button>
+          ${reanudarBtn}
+          <button class='btn-small' onclick='renderHome()'>Inicio</button>
+        </div>
+      </div>
+    </li>`;
+  }).join("");
+  app.innerHTML=`
+  <div class='card'>
+    ${backBtn}
+    <ul class='accordion'>${list}</ul>
+  </div>`;
+}
+window.toggleAcc=(slug)=>{
+  const el=document.getElementById(`acc-${slug}`);const cnt=document.getElementById(`count-${slug}`);
+  const open=el.style.display==="block";document.querySelectorAll(".acc-content").forEach(e=>e.style.display="none");
+  document.querySelectorAll(".acc-count").forEach(c=>c.classList.add("hidden"));
+  if(!open){el.style.display="block";cnt.classList.remove("hidden");}
+};
+
+/* ---------- Helpers ---------- */
+function getStart(slug,total){
+  const el = document.getElementById(`start-${slug}`);
+  let v = parseInt((el && el.value) ? el.value : "1", 10);
+  if(isNaN(v) || v<1) v = 1;
+  if(v>total) v = total;
+  return v;
+}
+
+/* ---------- Motor preguntas + sidebar índice ---------- */
+let CURRENT={list:[],i:0,materia:"", session:{}};
+
+function resume(slug){
+  const last = (PROG[slug] && PROG[slug]._lastIndex!=null) ? PROG[slug]._lastIndex : 0;
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  if(!listAll.length){ alert("No hay preguntas en esta materia."); return; }
+  CURRENT = { list:listAll, i:Math.min(last, listAll.length-1), materia:slug, session:{} };
+  renderQuestionWithSidebar(true);
+}
+
+function startPractica(slug){
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  if(!listAll.length){ app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>. Importá un banco en modo admin.</div>`; return; }
+  const start = getStart(slug, listAll.length);
+  CURRENT = { list:listAll.slice(start-1), i:0, materia:slug, session:{} };
+  PROG[slug] = PROG[slug] || {};
+  PROG[slug]._lastIndex = 0;
+  saveAll();
+  renderQuestionWithSidebar(true);
+}
+
+function startRepaso(slug){
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  const prog = PROG[slug]||{};
+  const list = listAll.filter(q=> prog[q.id]?.status==='bad');
+  if(!list.length){ app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`; return; }
+  CURRENT = { list, i:0, materia:slug, session:{} };
+  renderQuestionWithSidebar(true);
+}
+
+function renderGeneral(){
+  // Entra al configurador de “Creá tu examen”
+  renderExamenGeneralSetup();
+}
+
+/* ---------- Render de pregunta + sidebar ---------- */
+function renderQuestionWithSidebar(open=true){
+  const q = CURRENT.list[CURRENT.i];
+  if(!q){ 
+    app.innerHTML=`<div class='card fade'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`; 
+    return; 
+  }
+
+  const prog = PROG[CURRENT.materia]||{};
+  const ans = prog[q.id]?.chosen;
+
+  const opts = q.opciones.map((t,i)=>{
+    let cls='';
+    if(ans!=null){
+      if(i===q.correcta) cls='correct';
+      else if(i===ans) cls='wrong';
+    }
+    return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;
+  }).join('');
+
+  const exp = (ans!=null)? `<div class='explain'>${q.explicacion||''}</div>` : '';
+
+  const states = CURRENT.list.map(qq=>{
+    const st = prog[qq.id]?.status;
+    return st==='ok' ? 'ok' : st==='bad' ? 'bad' : 'none';
+  });
+  const sideBtns = states.map((st,ix)=>{
+    const cls = (st==='ok'?'ok': st==='bad'?'bad':'');
+    const cur = (ix===CURRENT.i) ? 'cur' : '';
+    return `<button class="side-btn ${cls} ${cur}" onclick="jump(${ix})">${ix+1}</button>`;
+  }).join('');
+  const side = `
+    <div id="sidebar" class="sidebar ${open?'':'closed'}">
+      <div class="side-header">
+        <div class="side-title">Índice</div>
+        <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
+      </div>
+      <div class="small" style="margin:4px 0 6px;text-align:center;">
+        Progreso: ${CURRENT.i+1} de ${CURRENT.list.length} (${Math.round((CURRENT.i+1)*100/CURRENT.list.length)}%)
+      </div>
+      <div class="side-grid">${sideBtns}</div>
+    </div>`;
+
+  app.innerHTML = `
+    <div class="q-layout fade">
+      <div>
+        <div class='card fade'>
+          <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
+          <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
+          <div class='options'>${opts}</div>
+          ${exp}
+          <div class='nav-row'>
+            <button class='btn-small' onclick='prevQ()'>Anterior</button>
+            <button class='btn-small' onclick='nextQ()'>Siguiente</button>
+            <button class='btn-small' onclick='renderHome()'>Inicio</button>
+          </div>
+        </div>
+      </div>
+      ${side}
+    </div>`;
+}
+
+window.toggleSidebar = ()=>{
+  const el = document.getElementById('sidebar');
+  if(!el) return;
+  const closed = el.classList.toggle('closed');
+  let arrow = document.getElementById('sideArrow');
+  if (closed) {
+    if (!arrow) {
+      arrow = document.createElement('button');
+      arrow.id = 'sideArrow';
+      arrow.textContent = '⮜';
+      arrow.title = 'Mostrar índice';
+      Object.assign(arrow.style, {
+        position:'fixed', right:'0', top:'50%', transform:'translateY(-50%)',
+        border:'1px solid var(--line)', borderRadius:'8px 0 0 8px',
+        background:'var(--brand)', color:'#fff', padding:'8px', zIndex:'60', cursor:'pointer'
+      });
+      arrow.onclick = ()=>{ el.classList.remove('closed'); arrow.remove(); };
+      document.body.appendChild(arrow);
+    }
+  } else if (arrow) {
+    arrow.remove();
+  }
+};
+
+window.jump = (ix)=>{ CURRENT.i = ix; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); };
+function prevQ(){ if(CURRENT.i>0){ CURRENT.i--; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); } }
+function nextQ(){ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); } }
+
+function updateLastIndex(){
+  if(CURRENT.materia && CURRENT.materia!=="general"){
+    PROG[CURRENT.materia] = PROG[CURRENT.materia] || {};
+    PROG[CURRENT.materia]._lastIndex = Math.max(PROG[CURRENT.materia]._lastIndex ?? 0, CURRENT.i);
+    saveAll();
+  }
+}
+
+function answer(i){
+  const q=CURRENT.list[CURRENT.i];
+  const materiaKey = CURRENT.materia || 'general';
+  PROG[materiaKey]=PROG[materiaKey]||{};
+  if(PROG[materiaKey][q.id]) return; // no permitir cambiar una vez respondida
+  PROG[materiaKey][q.id]={chosen:i,status:(i===q.correcta?'ok':'bad')};
+  if(materiaKey!=='general'){
+    PROG[materiaKey]._lastIndex = CURRENT.i;
+  }
+  saveAll();
+  renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
+}
+
+/* ---------- Estadísticas ---------- */
+function showStats(slug){
+  const total=BANK.questions.filter(q=>q.materia===slug).length;
+  const vals=Object.values(PROG[slug]||{}).filter(x=>x && typeof x==='object' && 'status' in x);
+  const ok=vals.filter(v=>v.status==='ok').length;
+  const bad=vals.filter(v=>v.status==='bad').length;
+  app.innerHTML=`<div class='card'><h3>${slug.toUpperCase()}</h3>
+    <p>Total: ${total}</p>
+    <p style='color:#16a34a'>✔ ${ok}</p>
+    <p style='color:#ef4444'>✖ ${bad}</p>
+    <div class='nav-row'>
+      <button class='btn-small' onclick='renderSubjects()'>Volver</button>
+      <button class='btn-small' onclick='resetStats("${slug}")'>Reestablecer</button>
+    </div>
+  </div>`;
+}
+function resetStats(slug){
+  if(confirm(`¿Borrar estadísticas de ${slug}?`)){
+    delete PROG[slug]; saveAll(); alert("Reiniciado");
+    showStats(slug);
+  }
+}
+function renderStatsGlobal(){
+  const subs = subjectsFromBank();
+  let total=0, ok=0, bad=0;
+  subs.forEach(m=>{
+    total += BANK.questions.filter(q=>q.materia===m.slug).length;
+    const vals=Object.values(PROG[m.slug]||{}).filter(x=>x && typeof x==='object' && 'status' in x);
+    ok += vals.filter(v=>v.status==='ok').length;
+    bad += vals.filter(v=>v.status==='bad').length;
+  });
+  app.innerHTML=`<div class='card'><h3>Estadísticas generales</h3>
+    <p>Total preguntas: ${total}</p>
+    <p style='color:#16a34a'>✔ ${ok}</p>
+    <p style='color:#ef4444'>✖ ${bad}</p>
+    <div class='nav-row'><button class='btn-main' onclick='renderHome()'>Volver</button></div>
+  </div>`;
+}
+
+/* ---------- Admin (PIN + importar JSON) ---------- */
+function hookAdmin(){
+  if(!adminActive) return;
+  gear.onclick = async ()=>{
+    const saved = localStorage.getItem(LS_ADMIN);
+    if(!saved){
+      const p1 = prompt("Configurá tu PIN (4–10 dígitos/letras):"); if(!p1) return;
+      const p2 = prompt("Repetí el PIN:"); if(p1!==p2){ alert("No coinciden."); return; }
+      localStorage.setItem(LS_ADMIN, await sha256Hex(p1));
+      alert("PIN guardado ✅");
+    }else{
+      const pin = prompt("Ingresá tu PIN:"); if(!pin) return;
+      const ok = (await sha256Hex(pin))===saved; if(!ok){ alert("PIN incorrecto"); return; }
+    }
+    [btnImport, owWrap].forEach(el=>{el.style.display='';});
+    alert("Modo edición activado ✅");
+  };
+  btnImport.onclick = ()=> fileInput.click();
+  fileInput.addEventListener('change', async (e)=>{
+    const f = e.target.files[0]; if(!f) return;
+    try{
+      const text = await f.text();
+      const data = JSON.parse(text);
+      const arr = Array.isArray(data)? data : (data.questions||[]);
+      if(!Array.isArray(arr) || !arr.length) throw new Error("JSON inválido: se esperaba un array de preguntas o {questions:[...]}");
+      const errors=[];
+      arr.forEach((q,i)=>{
+        if(!q.id) errors.push(`Item ${i}: falta 'id'`);
+        if(!q.materia) errors.push(`Item ${i}: falta 'materia'`);
+        if(!Array.isArray(q.opciones)||q.opciones.length!==4) errors.push(`Item ${i}: 'opciones' debe tener 4 strings`);
+        if(typeof q.correcta!=='number' || q.correcta<0 || q.correcta>3) errors.push(`Item ${i}: 'correcta' debe ser 0..3`);
+      });
+      if(errors.length){ alert("Errores:\n"+errors.slice(0,12).join("\n")); return; }
+
+      // Merge materias visibles
+      const subMap = new Map(subjectsFromBank().map(s=>[s.slug,s]));
+      arr.forEach(q=>{ if(!subMap.has(q.materia)) subMap.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1)}); });
+      BANK.subjects = Array.from(subMap.values());
+
+      // Merge preguntas (con overwrite opcional)
+      const byId = new Map((BANK.questions||[]).map(q=>[q.id,q]));
+      arr.forEach(q=>{
+        if(byId.has(q.id)){
+          if(overwrite && overwrite.checked){ byId.set(q.id,q); }
+        } else { byId.set(q.id,q); }
+      });
+      BANK.questions = Array.from(byId.values());
+      saveAll();
+      alert(`Importadas ${arr.length} preguntas ✅`);
+      renderSubjects();
+    }catch(err){
+      alert("No se pudo importar: "+err.message);
+    } finally {
+      e.target.value="";
+    }
+  });
+}
+
+/* ---------- PWA: registrar SW ---------- */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').then(reg => {
+      console.log('✅ ServiceWorker registrado:', reg.scope);
+    }).catch(err => {
+      console.log('❌ Error ServiceWorker:', err);
+    });
+  });
+}
+
+/* ---------- Fallback rutas en Vercel estático ---------- */
+if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
+  history.replaceState(null, "", "/");
+}
+
+/* ==========================================================
+   MODO EXAMEN – CREÁ EL TUYO (dentro de “Modo práctica”)
+   ========================================================== */
 function renderExamenGeneralSetup(){
-  const subs = BANK.subjects;
+  const subs = subjectsFromBank();
   const counts = subs.map(s=>{
-    const total = BANK.questions.filter(q=>q.materia===s.slug).length;
+    const total = (BANK.questions||[]).filter(q=>q.materia===s.slug).length;
     return {...s, total};
   });
   const totalAll = counts.reduce((a,b)=>a+b.total,0);
   const checks = counts.map(s=>`
     <label class="chk-mat" style="display:block;margin:4px 0;">
-      <input type="checkbox" class="mat-check" value="${s.slug}" data-count="${s.total}" checked>
+      <input type="checkbox" class="mat-check" value="${s.slug}" data-count="${s.total}" ${s.total?'checked':''}>
       ${s.name} (${s.total})
     </label>`).join("");
 
   app.innerHTML = `
     <div class="card" style="max-width:700px;margin:auto;">
       <h2>Modo Examen – Creá el tuyo</h2>
-      <p>Tenés <b>${totalAll}</b> preguntas disponibles.</p>
-      <div id="matList">${checks}</div>
+      <p>Tenés <b>${totalAll}</b> preguntas disponibles en total.</p>
+      <div id="matList">${checks || "<div class='small'>No hay materias cargadas.</div>"}</div>
       <div style="margin-top:10px;">
-        <label for="numPreg">Número de preguntas:</label>
-        <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:80px;margin-left:6px;">
+        <label for="numPreg" class="small">Número de preguntas:</label>
+        <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
       </div>
       <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
         <button class="btn-main" onclick="startExamenGeneral()">Comenzar examen</button>
@@ -203,24 +552,29 @@ function renderExamenGeneralSetup(){
       </div>
     </div>
   `;
-  document.querySelectorAll('.mat-check').forEach(chk=>{
-    chk.addEventListener('change', updateExamenCount);
-  });
+  document.querySelectorAll('.mat-check').forEach(chk=>{ chk.addEventListener('change', updateExamenCount); });
 }
+
 function updateExamenCount(){
   const chks = Array.from(document.querySelectorAll('.mat-check'));
   const total = chks.filter(c=>c.checked).reduce((a,c)=>a+parseInt(c.dataset.count),0);
   const numInput=document.getElementById('numPreg');
-  if(!numInput._manual){
-    numInput.value=total;
-    numInput.max=total;
-  }
+  if(!numInput) return;
+  if(!numInput._manual){ numInput.value= Math.max(1,total||1); numInput.max = Math.max(1,total||1); }
 }
-document.addEventListener('input',e=>{
-  if(e.target.id==='numPreg') e.target._manual=true;
-});
+document.addEventListener('input',e=>{ if(e.target && e.target.id==='numPreg') e.target._manual=true; });
+
 function startExamenGeneral(){
-  alert("Arrancaría el examen general 😄");
+  const chks = Array.from(document.querySelectorAll('.mat-check'));
+  const selected = chks.filter(c=>c.checked).map(c=>c.value);
+  const numEl = document.getElementById('numPreg');
+  const num = Math.max(1, parseInt(numEl?.value||'1',10));
+  let pool = (BANK.questions||[]).filter(q=> selected.includes(q.materia));
+  if(pool.length===0){ alert("Seleccioná al menos una materia con preguntas."); return; }
+  pool.sort(()=>Math.random()-0.5);
+  const chosen = pool.slice(0, Math.min(num, pool.length));
+  CURRENT = { list: chosen, i: 0, modo: 'examen', materia: 'general', session: {} };
+  renderQuestionWithSidebar(true);
 }
 </script>
 </body>
