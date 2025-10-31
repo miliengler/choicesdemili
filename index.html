@@ -361,6 +361,25 @@ function renderQuestionWithSidebar(open=true){
   }).join('');
 
   const exp = (ans!=null)? `<div class='explain'>${q.explicacion||''}</div>` : '';
+  // --- Notas personales ---
+const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+const notaActual = NOTES[q.id]?.text || "";
+const notaBloque = `
+  <div class="notes-block" style="margin-top:14px;border-top:1px solid var(--line);padding-top:10px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+      <b style="font-size:14px;color:var(--brand-dark)">📝 Nota personal</b>
+      <button class="btn-small" onclick="toggleNote('${q.id}')">
+        ${notaActual ? '✏️ Editar' : '📝 Agregar'}
+      </button>
+    </div>
+    <div id="noteArea-${q.id}" class="hidden">
+      <textarea id="noteText-${q.id}" rows="3" style="width:100%;border:1px solid var(--line);border-radius:8px;padding:6px;font-family:inherit;">${notaActual}</textarea>
+      <div style="margin-top:6px;text-align:right;">
+        <button class="btn-small" onclick="saveNote('${q.id}')">Guardar nota</button>
+      </div>
+    </div>
+    ${notaActual ? `<div id="noteDisplay-${q.id}" style="background:var(--soft);padding:8px;border-radius:8px;font-size:14px;color:var(--muted);white-space:pre-wrap;">${notaActual}</div>` : ''}
+  </div>`;
 
   const states = CURRENT.list.map(qq=>{
     const st = prog[qq.id]?.status;
@@ -391,6 +410,7 @@ function renderQuestionWithSidebar(open=true){
           <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
           <div class='options'>${opts}</div>
           ${exp}
+          ${notaBloque}
           <div class='nav-row'>
             <button class='btn-small' onclick='prevQ()'>Anterior</button>
             <button class='btn-small' onclick='nextQ()'>Siguiente</button>
@@ -708,6 +728,33 @@ function startExamenGeneral(){
   CURRENT = { list: chosen, i: 0, modo: 'examen', materia: 'general', session: {} };
   renderQuestionWithSidebar(true);
 }
+  // ---------- Notas personales ----------
+window.toggleNote = (qid)=>{
+  const area = document.getElementById(`noteArea-${qid}`);
+  const disp = document.getElementById(`noteDisplay-${qid}`);
+  if(!area) return;
+  const visible = !area.classList.contains("hidden");
+  if(visible){
+    area.classList.add("hidden");
+    if(disp) disp.style.display = "";
+  } else {
+    area.classList.remove("hidden");
+    if(disp) disp.style.display = "none";
+  }
+};
+
+window.saveNote = (qid)=>{
+  const txt = document.getElementById(`noteText-${qid}`)?.value.trim();
+  const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  if(txt){
+    NOTES[qid] = { text: txt, date: new Date().toISOString() };
+  } else {
+    delete NOTES[qid];
+  }
+  localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
+  alert("✅ Nota guardada");
+  renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
+};
 </script>
 </body>
 </html>
