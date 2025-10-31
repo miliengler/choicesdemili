@@ -125,10 +125,35 @@ const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="meba
 
 let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
   subjects:[
-    {slug:"infectologia",name:"Infectología"},
-    {slug:"obstetricia",name:"Obstetricia"},
-    {slug:"pediatria",name:"Pediatría"}
-  ],
+  {slug:"neumonologia", name:"Neumonología"},
+  {slug:"psiquiatria", name:"Psiquiatría"},
+  {slug:"cardiologia", name:"Cardiología"},
+  {slug:"nutricion", name:"Nutrición"},
+  {slug:"nefrologia", name:"Nefrología"},
+  {slug:"gastroenterologia", name:"Gastroenterología"},
+  {slug:"dermatologia", name:"Dermatología"},
+  {slug:"infectologia", name:"Infectología"},
+  {slug:"reumatologia", name:"Reumatología"},
+  {slug:"hematologia", name:"Hematología"},
+  {slug:"neurologia", name:"Neurología"},
+  {slug:"endocrinologia", name:"Endocrinología"},
+  {slug:"pediatria", name:"Pediatría"},
+  {slug:"oncologia", name:"Oncología"},
+  {slug:"medicinafamiliar", name:"Medicina Familiar"},
+  {slug:"ginecologia", name:"Ginecología"},
+  {slug:"obstetricia", name:"Obstetricia"},
+  {slug:"cirugiageneral", name:"Cirugía General"},
+  {slug:"traumatologia", name:"Traumatología"},
+  {slug:"urologia", name:"Urología"},
+  {slug:"oftalmologia", name:"Oftalmología"},
+  {slug:"otorrinolaringologia", name:"Otorrinolaringología"},
+  {slug:"neurocirugia", name:"Neurocirugía"},
+  {slug:"toxicologia", name:"Toxicología"},
+  {slug:"saludpublica", name:"Salud Pública"},
+  {slug:"medicinalegal", name:"Medicina Legal"},
+  {slug:"imagenes", name:"Diagnóstico por Imágenes"},
+  {slug:"otras", name:"Otras"}
+];
   questions:[
     {id:"OB-001",materia:"obstetricia",subtema:"Controles prenatales",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
     {id:"PE-001",materia:"pediatria",subtema:"Bronquiolitis",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."},
