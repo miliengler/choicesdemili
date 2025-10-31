@@ -3,317 +3,165 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MEbank Choice – Examen Único</title>
-<link rel="manifest" href="manifest.json">
+<title>ME banco de preguntas – Choices Examen Residencia</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta name="theme-color" content="#ffffff">
 <style>
-:root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--soft:#f1f5f9;--line:#e2e8f0;--brand:#2563eb;--accent:#22c55e;--danger:#ef4444;--card:#ffffff}
-*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
+:root {
+  --bg:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --soft:#f1f5f9;
+  --line:#e2e8f0;
+  --brand:#2563eb;
+  --brand-dark:#1e40af;
+  --accent:#22c55e;
+  --danger:#ef4444;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);animation:fadeIn .6s ease}
 a{color:inherit;text-decoration:none}
-.header{position:sticky;top:0;z-index:20;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.wrap{max-width:900px;margin:0 auto;padding:14px 16px}
-.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:12px}
-.brand h1{margin:0;font-size:clamp(18px,3vw,22px);font-weight:700}
-.small{font-size:12px;color:var(--muted)}
-.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-button{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px;cursor:pointer;transition:.15s transform ease}
-button:hover{transform:translateY(-1px)}
-.btn{background:var(--soft)}.btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}
-.icon-btn{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.footer{color:var(--muted);text-align:center;font-size:12px;padding:14px}
-.logo-heart{width:26px;height:26px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+button{cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:14px 20px;font-size:16px;font-weight:500;transition:.2s background,.2s transform}
+button:hover{background:var(--brand-dark);transform:translateY(-2px)}
+.btn-main{background:var(--brand);color:#fff;width:100%;max-width:320px;margin:8px auto;display:block;text-align:center}
+.btn-small{padding:10px 14px;font-size:14px}
 .hidden{display:none}
-
-/* Acordeón minimalista */
-.accordion{list-style:none;margin:0;padding:0;max-width:700px}
+.header{position:sticky;top:0;z-index:10;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+.brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:14px 0}
+.brand h1{margin:0;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--brand-dark)}
+.footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
+.accordion{list-style:none;margin:0;padding:0;max-width:700px;margin:auto}
 .acc-item{border-bottom:1px solid var(--line);padding:10px 4px}
-.acc-header{display:flex;gap:10px;align-items:center;cursor:pointer}
-.acc-title{font-weight:600}
+.acc-header{display:flex;flex-direction:column;cursor:pointer}
+.acc-title{font-weight:600;font-size:16px}
+.acc-count{font-size:12px;color:var(--muted);margin-top:4px}
 .acc-content{padding:10px 0 14px 24px;display:none}
-.acc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.inline{display:inline-flex;gap:6px;align-items:center}
+.acc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
 input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:110px}
-
-/* Preguntas */
-.question-stem{font-size:18px;line-height:1.45;white-space:pre-wrap}
-.options{margin-top:12px;display:grid;gap:10px}
-.option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer}
+.option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer;transition:.15s border-color,.15s box-shadow}
 .option.correct{border-color:rgba(34,197,94,.9);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
 .option.wrong{border-color:rgba(239,68,68,.9);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
 .explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
 .nav-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.badge{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:999px;font-size:11px;color:#7c3aed;background:#faf5ff}
 </style>
 </head>
 <body>
   <div class="header">
-    <div class="wrap row" style="justify-content:space-between">
-      <div class="brand">
-        <svg class="logo-heart" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-          <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z" stroke="#B91C1C" stroke-width="2" fill="none" />
-        </svg>
-        <div>
-          <h1>MEbank Choice – Examen Único</h1>
-          <div class="small">Choices Examen Unico </div>
-        </div>
-      </div>
-      <div class="controls">
-        <span id="adminBadge" class="badge hidden">Modo admin</span>
-        <button id="gear" class="icon-btn hidden" title="Modo edición (PIN)">⚙️</button>
-        <button id="btnImport" class="btn hidden">Importar</button>
-        <label id="owWrap" class="btn hidden" style="display:none"><input type="checkbox" id="overwrite"> Sobrescribir duplicados</label>
-        <input id="fileInput" type="file" accept="application/json" class="hidden"/>
-      </div>
+    <div class="wrap brand">
+      <svg width="26" height="26" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+        <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z" stroke="#B91C1C" stroke-width="2" fill="none" />
+      </svg>
+      <h1>ME banco de preguntas – Choices Examen Residencia</h1>
     </div>
   </div>
 
   <main class="wrap" id="app"></main>
 
-  <div class="footer">Vos podes ❤️ · MEbank · <span id="verTag">v5.3</span></div>
+  <div class="footer">Vos podés ❤️</div>
 
 <script>
-/*** ---------- Admin por URL ---------- ***/
-const adminActive = new URLSearchParams(location.search).get('admin') === '1';
-if(adminActive){ document.getElementById('gear').classList.remove('hidden'); document.getElementById('adminBadge').classList.remove('hidden'); }
+const LS_BANK="mebank_bank_v6",LS_PROGRESS="mebank_prog_v6";
+let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
+subjects:[{slug:"obstetricia",name:"Obstetricia"},{slug:"pediatria",name:"Pediatría"}],
+questions:[
+{id:"OB-001",materia:"obstetricia",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
+{id:"PE-001",materia:"pediatria",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."}
+]};
+const PROG=JSON.parse(localStorage.getItem(LS_PROGRESS)||"{}");
+function saveAll(){localStorage.setItem(LS_BANK,JSON.stringify(BANK));localStorage.setItem(LS_PROGRESS,JSON.stringify(PROG));}
 
-/*** ---------- Datos de ejemplo ---------- ***/
-const starter = {
-  subjects: [
-    { slug:"obstetricia", name:"Obstetricia", desc:"MSAL / SOGIBA – estilo Examen Único." },
-    { slug:"pediatria", name:"Pediatría", desc:"Guías SAP." },
-    { slug:"infectologia", name:"Infectología", desc:"MSAL." }
-  ],
-  questions: [
-    {id:"OB-PN-001",materia:"obstetricia",subtema:"Controles prenatales",enunciado:"Gestante de 12 semanas, ¿qué estudio NO corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia en ayunas","VDRL/RPR","Urocultivo de control a las 28 semanas"],correcta:3,explicacion:"El urocultivo de control a las 28 semanas no corresponde al primer control; se solicita urocultivo inicial y repetir según riesgo."},
-    {id:"OB-HTA-001",materia:"obstetricia",subtema:"HTA en el embarazo",enunciado:"30 semanas, TA 152/96 mmHg, asintomática, proteinuria negativa. Conducta inicial:",opciones:["Reposo absoluto","Metildopa VO","Inducir parto","Sulfato de magnesio profiláctico"],correcta:1,explicacion:"HTA gestacional sin severidad: manejo ambulatorio y antihipertensivo oral; MgSO4 no corresponde sin criterios de severidad."},
-    {id:"PE-BRN-001",materia:"pediatria",subtema:"Bronquiolitis",enunciado:"Lactante con dificultad respiratoria, tiraje subcostal y sibilancias. Tratamiento inicial:",opciones:["Antibiótico empírico","Salbutamol en MDI con aerocámara","Corticoides sistémicos","Oxígeno según SatO2"],correcta:3,explicacion:"Soporte: oxígeno si SatO2 baja; broncodilatadores no de rutina."}
-  ]
-};
-
-/*** ---------- Estado ---------- ***/
-const LS_BANK = "mebank_bank_v5";
-const LS_PROGRESS = "mebank_prog_v5";
-const LS_ADMIN = "mebank_admin_hash_v5";
-let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || starter;
-const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); // {materia:{qid:{chosen,status}}}
-function saveAll(){ localStorage.setItem(LS_BANK, JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG)); }
-
-/*** ---------- Acordeón ---------- ***/
-const app = document.getElementById('app');
-function subjectsFromBank(){
-  const known = new Map((BANK.subjects||[]).map(s=>[s.slug,s]));
-  (BANK.questions||[]).forEach(q=>{ if(q && q.materia && !known.has(q.materia)){ known.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1),desc:""}); } });
-  return Array.from(known.values()).sort((a,b)=>a.name.localeCompare(b.name));
-}
-
-let openSlug = null;
+const app=document.getElementById("app");
 function renderHome(){
-  const subs = subjectsFromBank();
-  const list = subs.map(s=>{
-    const open = s.slug===openSlug;
-    return `<li class="acc-item">
-      <div class="acc-header" onclick="toggleAcc('${s.slug}')">
-        <div class="acc-title">${s.name}</div>
-      </div>
-      <div class="acc-content" id="acc-${s.slug}" style="display:${open?'block':'none'}">
-        <div class="acc-actions">
-          <span class="inline">
-            <label for="start-${s.slug}" class="small">Empezar desde #</label>
-            <input type="number" id="start-${s.slug}" min="1" value="1" />
-          </span>
-          <button class="btn" onclick="startPractica('${s.slug}')">Práctica</button>
-          <button class="btn" onclick="startRepaso('${s.slug}')">Repaso</button>
-          <button class="btn" onclick="showStats('${s.slug}')">Estadísticas</button>
-        </div>
-      </div>
-    </li>`;
-  }).join('');
-  app.innerHTML = `<ul class="accordion">${list}</ul>`;
+app.innerHTML=`
+  <div style="text-align:center;animation:fadeIn .5s">
+    <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
+    <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
+    <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
+    <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
+  </div>`;
 }
-window.toggleAcc = (slug)=>{ openSlug = (openSlug===slug? null : slug); renderHome(); };
 renderHome();
 
-/*** ---------- Helpers ---------- ***/
-function getStartIndex(slug, total){
-  const el = document.getElementById(`start-${slug}`);
-  let v = parseInt((el && el.value) ? el.value : "1", 10);
-  if(isNaN(v) || v<1) v = 1;
-  if(v>total) v = total;
-  return v;
-}
-
-/*** ---------- Motor de práctica y repaso ---------- ***/
-let CURRENT = { list:[], i:0, materia:'', sessionAnswers:{} };
-function startPractica(slug){
-  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
-  if(!listAll.length){ app.innerHTML = `<div class="card">No hay preguntas cargadas en <b>${slug}</b>. Entrá en modo admin (?admin=1) y usá <b>Importar</b>.</div>`; return; }
-  const start = getStartIndex(slug, listAll.length);
-  const list = listAll.slice(start-1);
-  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // limpio por sesión
-  renderQuestion();
-}
-
-function startRepaso(slug){
-  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
-  const prog = PROG[slug]||{};
-  const list = listAll.filter(q=> prog[q.id]?.status==='bad');
-  if(!list.length){ app.innerHTML = `<div class="card">No tenés incorrectas para repasar en <b>${slug}</b>. Hacé primero algunas preguntas en práctica.</div>`; return; }
-  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // limpio por sesión
-  renderQuestion();
-}
-
-function renderQuestion(){
-  const q = CURRENT.list[CURRENT.i];
-  const ans = CURRENT.sessionAnswers[q.id]; // solo esta SESIÓN
-  const opts = q.opciones.map((txt, idx)=>{
-    let cls='';
-    if(ans!=null){
-      if(idx===q.correcta) cls='correct';
-      else if(idx===ans) cls='wrong';
-    }
-    return `<label class="option ${cls}" onclick="answer(${idx})"><input type="radio" name="opt"> <div>${String.fromCharCode(97+idx)}) ${txt}</div></label>`;
-  }).join('');
-  const explain = (ans!=null)? `<div class="explain">${q.explicacion||''}</div>` : '';
-  const nav = `<div class="nav-row">
-    <button class="btn" onclick="prevQ()">Anterior</button>
-    <button class="btn" onclick="nextQ()">Siguiente</button>
-    <button class="btn" onclick="backHome()">Volver</button>
-  </div>`;
-  app.innerHTML = `<div class="card">
-    <div class="row" style="justify-content:space-between"><div><b>${CURRENT.materia.toUpperCase()}</b> · <span class="small">Pregunta ${CURRENT.i+1} de ${CURRENT.list.length}</span></div></div>
-    <div class="question-stem" style="margin-top:8px">${q.enunciado}</div>
-    <div class="options">${opts}</div>
-    ${explain}
-    ${nav}
-  </div>`;
-}
-window.backHome = ()=> renderHome();
-window.prevQ = ()=>{ if(CURRENT.i>0){ CURRENT.i--; renderQuestion(); } };
-window.nextQ = ()=>{ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; renderQuestion(); } };
-
-window.answer = (idx)=>{
-  const q = CURRENT.list[CURRENT.i];
-  if(CURRENT.sessionAnswers[q.id]!=null) return; // no permitir cambiar en la sesión
-  CURRENT.sessionAnswers[q.id] = idx;           // guarda solo en la sesión para las marcas
-  // Actualiza estadísticas persistentes
-  PROG[CURRENT.materia] = PROG[CURRENT.materia]||{};
-  PROG[CURRENT.materia][q.id] = { chosen: idx, status: (idx===q.correcta?'ok':'bad') };
-  saveAll();
-  renderQuestion();
-};
-
-/*** ---------- Estadísticas por materia ---------- ***/
-window.showStats = (slug)=>{
-  const total = (BANK.questions||[]).filter(q=>q.materia===slug).length;
-  const prog = PROG[slug]||{};
-  const vals = Object.values(prog);
-  const ok = vals.filter(v=>v.status==='ok').length;
-  const bad = vals.filter(v=>v.status==='bad').length;
-  app.innerHTML = `<div class="card">
-    <h3>Estadísticas · ${slug.toUpperCase()}</h3>
-    <p>Total de preguntas: <b>${total}</b></p>
-    <p>Correctas: <b style="color:#16a34a">${ok}</b> · Incorrectas: <b style="color:#ef4444">${bad}</b></p>
-    <div class="nav-row">
-      <button class="btn" onclick="backHome()">Volver</button>
-      <button class="btn" onclick="resetStats('${slug}')">Reestablecer estadísticas</button>
+function renderOld(){app.innerHTML=`<div class="card" style="text-align:center">📄 Esta sección estará disponible próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;}
+function renderSubjects(){
+const subs=[...new Map(BANK.subjects.map(s=>[s.slug,s])).values()].sort((a,b)=>a.name.localeCompare(b.name));
+const list=subs.map(s=>{
+const count=BANK.questions.filter(q=>q.materia===s.slug).length;
+return `<li class='acc-item'>
+  <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
+    <div class='acc-title'>${s.name}</div>
+    <div class='acc-count hidden' id='count-${s.slug}'>${count} preguntas cargadas</div>
+  </div>
+  <div class='acc-content' id='acc-${s.slug}'>
+    <div class='acc-actions'>
+      <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
+      <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
+      <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
+      <button class='btn-small' onclick='showStats("${s.slug}")'>Estadísticas</button>
+      <button class='btn-small' onclick='renderHome()'>Volver</button>
     </div>
-  </div>`;
+  </div>
+</li>`;}).join("");
+app.innerHTML=`<ul class='accordion'>${list}</ul>`;
+}
+window.toggleAcc=(slug)=>{
+const el=document.getElementById(`acc-${slug}`);const cnt=document.getElementById(`count-${slug}`);
+const open=el.style.display==="block";document.querySelectorAll(".acc-content").forEach(e=>e.style.display="none");
+document.querySelectorAll(".acc-count").forEach(c=>c.classList.add("hidden"));
+if(!open){el.style.display="block";cnt.classList.remove("hidden");}
 };
-window.resetStats = (slug)=>{
-  if(confirm(`¿Seguro que querés borrar tus estadísticas de ${slug.toUpperCase()}? Esto no elimina las preguntas.`)){
-    delete PROG[slug];
-    saveAll();
-    alert("Estadísticas reestablecidas ✅");
-    showStats(slug);
-  }
-};
 
-/*** ---------- Admin: PIN local + Import ---------- ***/
-const gear = document.getElementById('gear');
-const btnImport = document.getElementById('btnImport');
-const owWrap = document.getElementById('owWrap');
-const overwrite = document.getElementById('overwrite');
-const fileInput = document.getElementById('fileInput');
-
-async function sha256Hex(str){
-  const enc = new TextEncoder().encode(str);
-  const buf = await crypto.subtle.digest('SHA-256', enc);
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
-}
-
-if(adminActive){
-  gear.onclick = async ()=>{
-    const saved = localStorage.getItem(LS_ADMIN);
-    if(!saved){
-      const p1 = prompt("Configurá tu PIN de edición (4–10 dígitos/letras):"); if(!p1) return;
-      const p2 = prompt("Repetí tu PIN:"); if(p1!==p2){ alert("No coinciden."); return; }
-      localStorage.setItem(LS_ADMIN, await sha256Hex(p1));
-      alert("PIN guardado ✅");
-    }else{
-      const pin = prompt("Ingresá tu PIN:"); if(!pin) return;
-      const ok = (await sha256Hex(pin))===saved; if(!ok){ alert("PIN incorrecto"); return; }
-    }
-    [btnImport, owWrap].forEach(el=>{el.classList.remove('hidden'); el.style.display='';});
-    alert("Modo edición activado ✅");
-  };
-  btnImport.onclick = ()=> fileInput.click();
-  fileInput.addEventListener('change', async (e)=>{
-    const f = e.target.files[0]; if(!f) return;
-    try{
-      const text = await f.text();
-      const data = JSON.parse(text);
-      const arr = Array.isArray(data)? data : (data.questions||[]);
-      if(!Array.isArray(arr) || !arr.length) throw new Error("JSON inválido: se esperaba un array de preguntas o {questions:[...]}");
-      const errors=[];
-      arr.forEach((q,i)=>{
-        if(!q.id) errors.push(`Item ${i}: falta 'id'`);
-        if(!q.materia) errors.push(`Item ${i}: falta 'materia'`);
-        if(!Array.isArray(q.opciones)||q.opciones.length!==4) errors.push(`Item ${i}: 'opciones' debe tener 4 strings`);
-        if(typeof q.correcta!=='number' || q.correcta<0 || q.correcta>3) errors.push(`Item ${i}: 'correcta' debe ser 0..3`);
-      });
-      if(errors.length){ alert("Errores:\n"+errors.slice(0,12).join("\n")); return; }
-
-      // Merge materias
-      const subMap = new Map(subjectsFromBank().map(s=>[s.slug,s]));
-      arr.forEach(q=>{ if(!subMap.has(q.materia)) subMap.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1),desc:""}); });
-      BANK.subjects = Array.from(subMap.values());
-
-      // Merge preguntas
-      const byId = new Map((BANK.questions||[]).map(q=>[q.id,q]));
-      arr.forEach(q=>{
-        if(byId.has(q.id)){
-          if(overwrite && overwrite.checked){ byId.set(q.id,q); }
-        } else {
-          byId.set(q.id,q);
-        }
-      });
-      BANK.questions = Array.from(byId.values());
-      saveAll();
-      alert(`Importadas ${arr.length} preguntas ✅`);
-      renderHome();
-    }catch(err){
-      alert("No se pudo importar: "+err.message);
-    } finally {
-      e.target.value="";
-    }
-  });
-}
-
-/*** ---------- (Opcional) Fallback para rutas internas en Vercel estático ---------- ***/
-if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
-  history.replaceState(null, "", "/");
-}
-</script>
-  <script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js").then(() => {
-    console.log("✅ Service Worker registrado");
-  }).catch(err => console.log("SW fallo", err));
-}
+function getStart(slug){const v=parseInt(document.getElementById(`start-${slug}`).value||"1",10);return isNaN(v)||v<1?1:v;}
+function startPractica(slug){
+const qs=BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+const start=getStart(slug);CURRENT={list:qs.slice(start-1),i:0,materia:slug};renderQ();}
+function startRepaso(slug){
+const prog=PROG[slug]||{};const list=BANK.questions.filter(q=>q.materia===slug&&prog[q.id]?.status==='bad');
+if(!list.length){app.innerHTML=`<div class='card'>No hay incorrectas.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;return;}
+CURRENT={list,i:0,materia:slug};renderQ();}
+function renderGeneral(){
+const pool=[...BANK.questions];pool.sort(()=>Math.random()-0.5);const sel=pool.slice(0,30);
+CURRENT={list:sel,i:0,materia:"general"};renderQ();}
+function renderQ(){
+const q=CURRENT.list[CURRENT.i];if(!q){app.innerHTML=`<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;return;}
+const prog=PROG[CURRENT.materia]||{};const ans=prog[q.id]?.chosen;
+const opts=q.opciones.map((t,i)=>{let cls='';if(ans!=null){if(i===q.correcta)cls='correct';else if(i===ans)cls='wrong';}
+return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;}).join('');
+const exp=(ans!=null)?`<div class='explain'>${q.explicacion||''}</div>`:'';app.innerHTML=`
+  <div class='card'>
+  <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
+  <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
+  <div class='options'>${opts}</div>${exp}
+  <div class='nav-row'>
+    <button class='btn-small' onclick='prevQ()'>Anterior</button>
+    <button class='btn-small' onclick='nextQ()'>Siguiente</button>
+    <button class='btn-small' onclick='renderHome()'>Inicio</button>
+  </div></div>`;}
+function answer(i){
+const q=CURRENT.list[CURRENT.i];PROG[CURRENT.materia]=PROG[CURRENT.materia]||{};
+if(PROG[CURRENT.materia][q.id])return;PROG[CURRENT.materia][q.id]={chosen:i,status:(i===q.correcta?'ok':'bad')};saveAll();renderQ();}
+function prevQ(){if(CURRENT.i>0){CURRENT.i--;renderQ();}}
+function nextQ(){if(CURRENT.i<CURRENT.list.length-1){CURRENT.i++;renderQ();}}
+function showStats(slug){
+const total=BANK.questions.filter(q=>q.materia===slug).length;const vals=Object.values(PROG[slug]||{});
+const ok=vals.filter(v=>v.status==='ok').length;const bad=vals.filter(v=>v.status==='bad').length;
+app.innerHTML=`<div class='card'><h3>${slug.toUpperCase()}</h3>
+<p>Total: ${total}</p><p style='color:#16a34a'>✔ ${ok}</p><p style='color:#ef4444'>✖ ${bad}</p>
+<div class='nav-row'><button class='btn-small' onclick='renderSubjects()'>Volver</button>
+<button class='btn-small' onclick='resetStats("${slug}")'>Reestablecer</button></div></div>`;}
+function resetStats(slug){if(confirm(`¿Borrar estadísticas de ${slug}?`)){delete PROG[slug];saveAll();alert("Reiniciado");showStats(slug);}}
+function renderStatsGlobal(){
+let total=0,ok=0,bad=0;
+for(const m of BANK.subjects){const vals=Object.values(PROG[m.slug]||{});total+=BANK.questions.filter(q=>q.materia===m.slug).length;
+ok+=vals.filter(v=>v.status==='ok').length;bad+=vals.filter(v=>v.status==='bad').length;}
+app.innerHTML=`<div class='card'><h3>Estadísticas generales</h3>
+<p>Total preguntas: ${total}</p><p style='color:#16a34a'>✔ ${ok}</p><p style='color:#ef4444'>✖ ${bad}</p>
+<div class='nav-row'><button class='btn-main' onclick='renderHome()'>Volver</button></div></div>`;}
+let CURRENT={list:[],i:0,materia:""};
 </script>
 </body>
 </html>
