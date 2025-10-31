@@ -6,35 +6,41 @@
 <title>ME banco de preguntas – Choices Examen Residencia</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#ffffff">
 <style>
-:root {
-  --bg:#ffffff;
-  --text:#0f172a;
-  --muted:#475569;
-  --soft:#f1f5f9;
-  --line:#e2e8f0;
-  --brand:#2563eb;
-  --brand-dark:#1e40af;
-  --accent:#22c55e;
-  --danger:#ef4444;
-  --card:#ffffff;
+:root{
+  --bg:#ffffff; --text:#0f172a; --muted:#475569; --soft:#f1f5f9; --line:#e2e8f0; --brand:#2563eb; --brand-dark:#1e40af; --accent:#22c55e; --danger:#ef4444; --card:#ffffff;
+  --option-correct: rgba(34,197,94,.9);
+  --option-wrong:   rgba(239,68,68,.9);
 }
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);animation:fadeIn .6s ease}
+html,body{height:100%}
+body{
+  margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  background:var(--bg);color:var(--text);
+  animation:fadeIn .5s ease;
+  transition: background-color .25s ease, color .25s ease;
+}
 a{color:inherit;text-decoration:none}
 @keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
 button{cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:14px 20px;font-size:16px;font-weight:500;transition:.2s background,.2s transform}
-button:hover{background:var(--brand-dark);transform:translateY(-2px)}
-.btn-main{background:var(--brand);color:#fff;width:100%;max-width:320px;margin:8px auto;display:block;text-align:center}
+button:hover{transform:translateY(-2px)}
+.btn-main{background:var(--brand);color:#fff;width:100%;max-width:360px;margin:8px auto;display:block;text-align:center;border-color:var(--brand)}
+.btn-main:hover{background:var(--brand-dark)}
 .btn-small{padding:10px 14px;font-size:14px}
 .hidden{display:none}
+
 .header{position:sticky;top:0;z-index:10;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.wrap{max-width:900px;margin:0 auto;padding:16px}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}
 .brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:14px 0}
 .brand h1{margin:0;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--brand-dark)}
+
 .footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
-.accordion{list-style:none;margin:0;padding:0;max-width:700px;margin:auto}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.accordion{list-style:none;margin:0;padding:0;max-width:760px;margin:auto}
 .acc-item{border-bottom:1px solid var(--line);padding:10px 4px}
 .acc-header{display:flex;flex-direction:column;cursor:pointer}
 .acc-title{font-weight:600;font-size:16px}
@@ -42,11 +48,53 @@ button:hover{background:var(--brand-dark);transform:translateY(-2px)}
 .acc-content{padding:10px 0 14px 24px;display:none}
 .acc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
 input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:110px}
+
+.options{margin-top:12px;display:grid;gap:10px}
 .option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer;transition:.15s border-color,.15s box-shadow}
-.option.correct{border-color:rgba(34,197,94,.9);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
-.option.wrong{border-color:rgba(239,68,68,.9);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
+.option.correct{border-color:var(--option-correct);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
+.option.wrong{border-color:var(--option-wrong);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
 .explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
 .nav-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+
+/* Layout pregunta + sidebar índice */
+.q-layout{display:grid;grid-template-columns: 1fr 220px; gap:18px; align-items:start}
+@media(max-width:900px){ .q-layout{grid-template-columns:1fr} }
+
+/* Sidebar índice */
+.sidebar{
+  position:sticky; top:82px; align-self:start;
+  border:1px solid var(--line); background:var(--card); border-radius:14px; padding:12px;
+  box-shadow:0 6px 24px rgba(2,6,23,.08); transition: transform .2s ease, opacity .2s ease;
+}
+.side-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.side-title{font-weight:600;font-size:14px}
+.side-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.side-btn{
+  border:1px solid var(--line); background:var(--soft); border-radius:8px; padding:8px;
+  font-size:12px; text-align:center; cursor:pointer; user-select:none;
+}
+.side-btn.ok{ background:#dcfce7; border-color:#86efac }
+.side-btn.bad{ background:#fee2e2; border-color:#fca5a5 }
+.side-btn.cur{ outline:2px solid var(--brand) }
+.side-toggle{border-radius:10px; width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center}
+.sidebar.closed{ transform: translateX(14px); opacity:.0; pointer-events:none }
+
+/* Modo oscuro suave */
+body[data-theme="dark"]{
+  --bg:#1e293b; --text:#e2e8f0; --muted:#cbd5e1; --soft:#0f172a; --line:#334155; --card:#0b1624;
+  --brand:#6ea8ff; --brand-dark:#4a7fd6;
+  --option-correct: rgba(34,197,94,.9);
+  --option-wrong:   rgba(239,68,68,.9);
+}
+
+/* Toggle tema */
+.theme-toggle{
+  position:fixed; right:16px; bottom:16px; z-index:50;
+  width:46px; height:46px; border-radius:999px; background:var(--brand); color:#fff; border:1px solid var(--brand);
+  display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(2,6,23,.18);
+}
+.theme-toggle:hover{ background:var(--brand-dark) }
+.theme-toggle[title]{ position:fixed }
 </style>
 </head>
 <body>
@@ -63,105 +111,382 @@ input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--li
 
   <div class="footer">Vos podés ❤️</div>
 
-<script>
-const LS_BANK="mebank_bank_v6",LS_PROGRESS="mebank_prog_v6";
-let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
-subjects:[{slug:"obstetricia",name:"Obstetricia"},{slug:"pediatria",name:"Pediatría"}],
-questions:[
-{id:"OB-001",materia:"obstetricia",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
-{id:"PE-001",materia:"pediatria",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."}
-]};
-const PROG=JSON.parse(localStorage.getItem(LS_PROGRESS)||"{}");
-function saveAll(){localStorage.setItem(LS_BANK,JSON.stringify(BANK));localStorage.setItem(LS_PROGRESS,JSON.stringify(PROG));}
+  <!-- Toggle modo oscuro -->
+  <button id="themeBtn" class="theme-toggle" title="Cambiar tema">🌙</button>
 
+<script>
+/* ---------- Persistencia ---------- */
+const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="mebank_theme", LS_ADMIN="mebank_admin_hash_v6_2";
+let BANK=JSON.parse(localStorage.getItem(LS_BANK)||"null")||{
+  subjects:[{slug:"infectologia",name:"Infectología"},{slug:"obstetricia",name:"Obstetricia"},{slug:"pediatria",name:"Pediatría"}],
+  questions:[
+    {id:"OB-001",materia:"obstetricia",enunciado:"Gestante 12 semanas, ¿qué estudio no corresponde al primer control?",opciones:["Grupo y factor Rh","Glucemia","VDRL","Urocultivo 28 sem"],correcta:3,explicacion:"El urocultivo a las 28 semanas no es del primer control."},
+    {id:"PE-001",materia:"pediatria",enunciado:"Lactante con bronquiolitis leve, manejo:",opciones:["Broncodilatador","Corticoides","Oxígeno según SatO2","Antibióticos"],correcta:2,explicacion:"Soporte con oxígeno si SatO2 baja."},
+    {id:"IN-001",materia:"infectologia",enunciado:"Varón con fiebre y odinofagia, test rápido positivo para estreptococo. Conducta:",opciones:["Macrólido empírico","Amoxicilina 10 días","Ceftriaxona IM","No tratar"],correcta:1,explicacion:"Penicilina/Amoxi 10 días es primera línea."}
+  ]
+};
+const PROG=JSON.parse(localStorage.getItem(LS_PROGRESS)||"{}"); // {materia:{qid:{chosen,status}}, general:{...}}
+function saveAll(){ localStorage.setItem(LS_BANK,JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS,JSON.stringify(PROG)); }
+
+/* ---------- Tema (modo oscuro suave) ---------- */
+(function initTheme(){
+  const saved = localStorage.getItem(LS_THEME) || "light";
+  document.body.setAttribute("data-theme", saved);
+  document.getElementById("themeBtn").textContent = saved==="dark" ? "☀️" : "🌙";
+})();
+document.getElementById("themeBtn").onclick = ()=>{
+  const cur = document.body.getAttribute("data-theme")==="dark" ? "light":"dark";
+  document.body.setAttribute("data-theme", cur);
+  localStorage.setItem(LS_THEME, cur);
+  document.getElementById("themeBtn").textContent = cur==="dark" ? "☀️" : "🌙";
+};
+
+/* ---------- Admin por URL ---------- */
+const adminActive = new URLSearchParams(location.search).get('admin') === '1';
+/* Controles admin */
+let gear, btnImport, owWrap, overwrite, fileInput;
+function setupAdminControls(){
+  // Como ahora el header es minimalista, dejamos admin solo por diálogo cuando ?admin=1
+  if(!adminActive) return;
+  // Creamos controles flotantes discretos cuando admin activo
+  const panel = document.createElement('div');
+  panel.className = 'card';
+  panel.style = 'position:fixed; right:16px; top:76px; z-index:40; width:280px';
+  panel.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
+      <b>Modo admin</b>
+      <button id="admGear" class="btn-small" title="PIN">⚙️</button>
+    </div>
+    <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center">
+      <button id="btnImport" class="btn-small">Importar</button>
+      <label id="owWrap" class="btn-small" style="display:none"><input type="checkbox" id="overwrite"> Sobrescribir</label>
+      <input id="fileInput" type="file" accept="application/json" class="hidden"/>
+    </div>`;
+  document.body.appendChild(panel);
+  gear = document.getElementById('admGear');
+  btnImport = document.getElementById('btnImport');
+  owWrap = document.getElementById('owWrap');
+  overwrite = document.getElementById('overwrite');
+  fileInput = document.getElementById('fileInput');
+  hookAdmin();
+}
+setupAdminControls();
+
+async function sha256Hex(str){
+  const enc = new TextEncoder().encode(str);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function subjectsFromBank(){
+  const known = new Map((BANK.subjects||[]).map(s=>[s.slug,s]));
+  (BANK.questions||[]).forEach(q=>{
+    if(q && q.materia && !known.has(q.materia)){
+      known.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1)});
+    }
+  });
+  return Array.from(known.values()).sort((a,b)=>a.name.localeCompare(b.name));
+}
+
+/* ---------- HOME ---------- */
 const app=document.getElementById("app");
 function renderHome(){
-app.innerHTML=`
-  <div style="text-align:center;animation:fadeIn .5s">
-    <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
-    <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
-    <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
-    <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
-  </div>`;
+  app.innerHTML=`
+    <div style="text-align:center;animation:fadeIn .5s">
+      <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
+      <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
+      <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
+      <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
+    </div>`;
 }
 renderHome();
 
-function renderOld(){app.innerHTML=`<div class="card" style="text-align:center">📄 Esta sección estará disponible próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;}
+function renderOld(){
+  app.innerHTML=`<div class="card" style="text-align:center">📄 Esta sección estará disponible próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
+}
+
+/* ---------- SUBJECTS (acordeón) ---------- */
 function renderSubjects(){
-const subs=[...new Map(BANK.subjects.map(s=>[s.slug,s])).values()].sort((a,b)=>a.name.localeCompare(b.name));
-const list=subs.map(s=>{
-const count=BANK.questions.filter(q=>q.materia===s.slug).length;
-return `<li class='acc-item'>
-  <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
-    <div class='acc-title'>${s.name}</div>
-    <div class='acc-count hidden' id='count-${s.slug}'>${count} preguntas cargadas</div>
-  </div>
-  <div class='acc-content' id='acc-${s.slug}'>
-    <div class='acc-actions'>
-      <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
-      <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
-      <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
-      <button class='btn-small' onclick='showStats("${s.slug}")'>Estadísticas</button>
-      <button class='btn-small' onclick='renderHome()'>Volver</button>
-    </div>
-  </div>
-</li>`;}).join("");
-app.innerHTML=`<ul class='accordion'>${list}</ul>`;
+  const subs=subjectsFromBank();
+  const list=subs.map(s=>{
+    const count=BANK.questions.filter(q=>q.materia===s.slug).length;
+    // Detectar si hay “reanudar”
+    const last = (PROG[s.slug] && PROG[s.slug]._lastIndex!=null) ? (PROG[s.slug]._lastIndex+1) : null;
+    const reanudarBtn = last? `<button class='btn-small' onclick='resume("${s.slug}")'>Reanudar (${last})</button>` : ``;
+    return `<li class='acc-item'>
+      <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
+        <div class='acc-title'>${s.name}</div>
+        <div class='acc-count hidden' id='count-${s.slug}'>${count} preguntas cargadas</div>
+      </div>
+      <div class='acc-content' id='acc-${s.slug}'>
+        <div class='acc-actions'>
+          <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
+          <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
+          <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
+          <button class='btn-small' onclick='showStats("${s.slug}")'>Estadísticas</button>
+          ${reanudarBtn}
+          <button class='btn-small' onclick='renderHome()'>Inicio</button>
+        </div>
+      </div>
+    </li>`;
+  }).join("");
+  app.innerHTML=`<ul class='accordion'>${list}</ul>`;
 }
 window.toggleAcc=(slug)=>{
-const el=document.getElementById(`acc-${slug}`);const cnt=document.getElementById(`count-${slug}`);
-const open=el.style.display==="block";document.querySelectorAll(".acc-content").forEach(e=>e.style.display="none");
-document.querySelectorAll(".acc-count").forEach(c=>c.classList.add("hidden"));
-if(!open){el.style.display="block";cnt.classList.remove("hidden");}
+  const el=document.getElementById(`acc-${slug}`);const cnt=document.getElementById(`count-${slug}`);
+  const open=el.style.display==="block";document.querySelectorAll(".acc-content").forEach(e=>e.style.display="none");
+  document.querySelectorAll(".acc-count").forEach(c=>c.classList.add("hidden"));
+  if(!open){el.style.display="block";cnt.classList.remove("hidden");}
 };
 
-function getStart(slug){const v=parseInt(document.getElementById(`start-${slug}`).value||"1",10);return isNaN(v)||v<1?1:v;}
+/* ---------- Helpers ---------- */
+function getStart(slug,total){
+  const el = document.getElementById(`start-${slug}`);
+  let v = parseInt((el && el.value) ? el.value : "1", 10);
+  if(isNaN(v) || v<1) v = 1;
+  if(v>total) v = total;
+  return v;
+}
+
+/* ---------- Motor preguntas + sidebar índice ---------- */
+let CURRENT={list:[],i:0,materia:"", session:{}};
+
+function resume(slug){
+  const last = (PROG[slug] && PROG[slug]._lastIndex!=null) ? PROG[slug]._lastIndex : 0;
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  if(!listAll.length){ alert("No hay preguntas en esta materia."); return; }
+  CURRENT = { list:listAll, i:Math.min(last, listAll.length-1), materia:slug, session:{} };
+  renderQuestionWithSidebar(true); // sidebar abierto
+}
+
 function startPractica(slug){
-const qs=BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
-const start=getStart(slug);CURRENT={list:qs.slice(start-1),i:0,materia:slug};renderQ();}
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  if(!listAll.length){ app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>. Importá un banco en modo admin.</div>`; return; }
+  const start = getStart(slug, listAll.length);
+  CURRENT = { list:listAll.slice(start-1), i:0, materia:slug, session:{} };
+  // reset _lastIndex para esta materia al comienzo de una nueva sesión desde un punto
+  PROG[slug] = PROG[slug] || {};
+  PROG[slug]._lastIndex = 0;
+  saveAll();
+  renderQuestionWithSidebar(true);
+}
+
 function startRepaso(slug){
-const prog=PROG[slug]||{};const list=BANK.questions.filter(q=>q.materia===slug&&prog[q.id]?.status==='bad');
-if(!list.length){app.innerHTML=`<div class='card'>No hay incorrectas.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;return;}
-CURRENT={list,i:0,materia:slug};renderQ();}
+  const listAll = BANK.questions.filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
+  const prog = PROG[slug]||{};
+  const list = listAll.filter(q=> prog[q.id]?.status==='bad');
+  if(!list.length){ app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`; return; }
+  CURRENT = { list, i:0, materia:slug, session:{} };
+  renderQuestionWithSidebar(true);
+}
+
 function renderGeneral(){
-const pool=[...BANK.questions];pool.sort(()=>Math.random()-0.5);const sel=pool.slice(0,30);
-CURRENT={list:sel,i:0,materia:"general"};renderQ();}
-function renderQ(){
-const q=CURRENT.list[CURRENT.i];if(!q){app.innerHTML=`<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;return;}
-const prog=PROG[CURRENT.materia]||{};const ans=prog[q.id]?.chosen;
-const opts=q.opciones.map((t,i)=>{let cls='';if(ans!=null){if(i===q.correcta)cls='correct';else if(i===ans)cls='wrong';}
-return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;}).join('');
-const exp=(ans!=null)?`<div class='explain'>${q.explicacion||''}</div>`:'';app.innerHTML=`
-  <div class='card'>
-  <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
-  <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
-  <div class='options'>${opts}</div>${exp}
-  <div class='nav-row'>
-    <button class='btn-small' onclick='prevQ()'>Anterior</button>
-    <button class='btn-small' onclick='nextQ()'>Siguiente</button>
-    <button class='btn-small' onclick='renderHome()'>Inicio</button>
-  </div></div>`;}
+  const pool=[...BANK.questions]; if(!pool.length){ alert("No hay preguntas cargadas."); return; }
+  pool.sort(()=>Math.random()-0.5);
+  const sel=pool.slice(0,30);
+  CURRENT={list:sel,i:0,materia:"general",session:{}};
+  renderQuestionWithSidebar(true);
+}
+
+function renderQuestionWithSidebar(open=true){
+  const q = CURRENT.list[CURRENT.i];
+  if(!q){ app.innerHTML=`<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`; return; }
+
+  // Estado persistente (solo por materia real, no “general”)
+  const prog = PROG[CURRENT.materia]||{};
+
+  // Construcción opciones con marcas de respuesta si existiera
+  const ans = prog[q.id]?.chosen;
+  const opts = q.opciones.map((t,i)=>{
+    let cls=''; if(ans!=null){ if(i===q.correcta) cls='correct'; else if(i===ans) cls='wrong'; }
+    return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;
+  }).join('');
+  const exp = (ans!=null)? `<div class='explain'>${q.explicacion||''}</div>` : '';
+
+  // Sidebar índice (coloreado por estado)
+  const states = CURRENT.list.map(qq=>{
+    const st = prog[qq.id]?.status;
+    return st==='ok' ? 'ok' : st==='bad' ? 'bad' : 'none';
+  });
+  const sideBtns = states.map((st,ix)=>{
+    const cls = (st==='ok'?'ok': st==='bad'?'bad':'');
+    const cur = (ix===CURRENT.i) ? 'cur' : '';
+    return `<button class="side-btn ${cls} ${cur}" onclick="jump(${ix})">${ix+1}</button>`;
+  }).join('');
+  const side = `
+    <div id="sidebar" class="sidebar ${open?'':'closed'}">
+      <div class="side-header">
+        <div class="side-title">Índice</div>
+        <button class="side-toggle" title="Mostrar/ocultar índice" onclick="toggleSidebar()">📑</button>
+      </div>
+      <div class="side-grid">${sideBtns}</div>
+    </div>`;
+
+  app.innerHTML = `
+    <div class="q-layout">
+      <div>
+        <div class='card'>
+          <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
+          <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
+          <div class='options'>${opts}</div>
+          ${exp}
+          <div class='nav-row'>
+            <button class='btn-small' onclick='prevQ()'>Anterior</button>
+            <button class='btn-small' onclick='nextQ()'>Siguiente</button>
+            <button class='btn-small' onclick='renderHome()'>Inicio</button>
+          </div>
+        </div>
+      </div>
+      ${side}
+    </div>`;
+}
+
+window.toggleSidebar = ()=>{
+  const el = document.getElementById('sidebar');
+  if(!el) return;
+  el.classList.toggle('closed');
+};
+
+window.jump = (ix)=>{ CURRENT.i = ix; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); };
+function prevQ(){ if(CURRENT.i>0){ CURRENT.i--; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); } }
+function nextQ(){ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; updateLastIndex(); renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed')); } }
+
+function updateLastIndex(){
+  if(CURRENT.materia && CURRENT.materia!=="general"){
+    PROG[CURRENT.materia] = PROG[CURRENT.materia] || {};
+    // Guardamos índice absoluto relativo a la lista completa de la materia:
+    // Si la sesión es un slice (ej. empezar desde #), usamos el índice dentro de la sesión.
+    PROG[CURRENT.materia]._lastIndex = (PROG[CURRENT.materia]._lastIndex ?? 0);
+    PROG[CURRENT.materia]._lastIndex = Math.max(PROG[CURRENT.materia]._lastIndex, CURRENT.i);
+    saveAll();
+  }
+}
+
 function answer(i){
-const q=CURRENT.list[CURRENT.i];PROG[CURRENT.materia]=PROG[CURRENT.materia]||{};
-if(PROG[CURRENT.materia][q.id])return;PROG[CURRENT.materia][q.id]={chosen:i,status:(i===q.correcta?'ok':'bad')};saveAll();renderQ();}
-function prevQ(){if(CURRENT.i>0){CURRENT.i--;renderQ();}}
-function nextQ(){if(CURRENT.i<CURRENT.list.length-1){CURRENT.i++;renderQ();}}
+  const q=CURRENT.list[CURRENT.i];
+  const materiaKey = CURRENT.materia || 'general';
+  PROG[materiaKey]=PROG[materiaKey]||{};
+  if(PROG[materiaKey][q.id]) return; // no permitir cambiar una vez respondida
+  PROG[materiaKey][q.id]={chosen:i,status:(i===q.correcta?'ok':'bad')};
+  // Actualizar “última vista” si es materia real
+  if(materiaKey!=='general'){
+    PROG[materiaKey]._lastIndex = CURRENT.i;
+  }
+  saveAll();
+  renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
+}
+
+/* ---------- Estadísticas ---------- */
 function showStats(slug){
-const total=BANK.questions.filter(q=>q.materia===slug).length;const vals=Object.values(PROG[slug]||{});
-const ok=vals.filter(v=>v.status==='ok').length;const bad=vals.filter(v=>v.status==='bad').length;
-app.innerHTML=`<div class='card'><h3>${slug.toUpperCase()}</h3>
-<p>Total: ${total}</p><p style='color:#16a34a'>✔ ${ok}</p><p style='color:#ef4444'>✖ ${bad}</p>
-<div class='nav-row'><button class='btn-small' onclick='renderSubjects()'>Volver</button>
-<button class='btn-small' onclick='resetStats("${slug}")'>Reestablecer</button></div></div>`;}
-function resetStats(slug){if(confirm(`¿Borrar estadísticas de ${slug}?`)){delete PROG[slug];saveAll();alert("Reiniciado");showStats(slug);}}
+  const total=BANK.questions.filter(q=>q.materia===slug).length;
+  const vals=Object.values(PROG[slug]||{}).filter(x=>x && typeof x==='object' && 'status' in x);
+  const ok=vals.filter(v=>v.status==='ok').length;
+  const bad=vals.filter(v=>v.status==='bad').length;
+  app.innerHTML=`<div class='card'><h3>${slug.toUpperCase()}</h3>
+    <p>Total: ${total}</p>
+    <p style='color:#16a34a'>✔ ${ok}</p>
+    <p style='color:#ef4444'>✖ ${bad}</p>
+    <div class='nav-row'>
+      <button class='btn-small' onclick='renderSubjects()'>Volver</button>
+      <button class='btn-small' onclick='resetStats("${slug}")'>Reestablecer</button>
+    </div>
+  </div>`;
+}
+function resetStats(slug){
+  if(confirm(`¿Borrar estadísticas de ${slug}?`)){
+    delete PROG[slug]; saveAll(); alert("Reiniciado");
+    showStats(slug);
+  }
+}
 function renderStatsGlobal(){
-let total=0,ok=0,bad=0;
-for(const m of BANK.subjects){const vals=Object.values(PROG[m.slug]||{});total+=BANK.questions.filter(q=>q.materia===m.slug).length;
-ok+=vals.filter(v=>v.status==='ok').length;bad+=vals.filter(v=>v.status==='bad').length;}
-app.innerHTML=`<div class='card'><h3>Estadísticas generales</h3>
-<p>Total preguntas: ${total}</p><p style='color:#16a34a'>✔ ${ok}</p><p style='color:#ef4444'>✖ ${bad}</p>
-<div class='nav-row'><button class='btn-main' onclick='renderHome()'>Volver</button></div></div>`;}
-let CURRENT={list:[],i:0,materia:""};
+  const subs = subjectsFromBank();
+  let total=0, ok=0, bad=0;
+  subs.forEach(m=>{
+    total += BANK.questions.filter(q=>q.materia===m.slug).length;
+    const vals=Object.values(PROG[m.slug]||{}).filter(x=>x && typeof x==='object' && 'status' in x);
+    ok += vals.filter(v=>v.status==='ok').length;
+    bad += vals.filter(v=>v.status==='bad').length;
+  });
+  app.innerHTML=`<div class='card'><h3>Estadísticas generales</h3>
+    <p>Total preguntas: ${total}</p>
+    <p style='color:#16a34a'>✔ ${ok}</p>
+    <p style='color:#ef4444'>✖ ${bad}</p>
+    <div class='nav-row'><button class='btn-main' onclick='renderHome()'>Volver</button></div>
+  </div>`;
+}
+
+/* ---------- Admin (PIN + importar) ---------- */
+function hookAdmin(){
+  if(!adminActive) return;
+  gear.onclick = async ()=>{
+    const saved = localStorage.getItem(LS_ADMIN);
+    if(!saved){
+      const p1 = prompt("Configurá tu PIN (4–10 dígitos/letras):"); if(!p1) return;
+      const p2 = prompt("Repetí el PIN:"); if(p1!==p2){ alert("No coinciden."); return; }
+      localStorage.setItem(LS_ADMIN, await sha256Hex(p1));
+      alert("PIN guardado ✅");
+    }else{
+      const pin = prompt("Ingresá tu PIN:"); if(!pin) return;
+      const ok = (await sha256Hex(pin))===saved; if(!ok){ alert("PIN incorrecto"); return; }
+    }
+    [btnImport, owWrap].forEach(el=>{el.style.display='';});
+    alert("Modo edición activado ✅");
+  };
+  btnImport.onclick = ()=> fileInput.click();
+  fileInput.addEventListener('change', async (e)=>{
+    const f = e.target.files[0]; if(!f) return;
+    try{
+      const text = await f.text();
+      const data = JSON.parse(text);
+      const arr = Array.isArray(data)? data : (data.questions||[]);
+      if(!Array.isArray(arr) || !arr.length) throw new Error("JSON inválido: se esperaba un array de preguntas o {questions:[...]}");
+      const errors=[];
+      arr.forEach((q,i)=>{
+        if(!q.id) errors.push(`Item ${i}: falta 'id'`);
+        if(!q.materia) errors.push(`Item ${i}: falta 'materia'`);
+        if(!Array.isArray(q.opciones)||q.opciones.length!==4) errors.push(`Item ${i}: 'opciones' debe tener 4 strings`);
+        if(typeof q.correcta!=='number' || q.correcta<0 || q.correcta>3) errors.push(`Item ${i}: 'correcta' debe ser 0..3`);
+      });
+      if(errors.length){ alert("Errores:\n"+errors.slice(0,12).join("\n")); return; }
+
+      // Merge materias
+      const subMap = new Map(subjectsFromBank().map(s=>[s.slug,s]));
+      arr.forEach(q=>{ if(!subMap.has(q.materia)) subMap.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1)}); });
+      BANK.subjects = Array.from(subMap.values());
+
+      // Merge preguntas
+      const byId = new Map((BANK.questions||[]).map(q=>[q.id,q]));
+      arr.forEach(q=>{
+        if(byId.has(q.id)){
+          if(overwrite && overwrite.checked){ byId.set(q.id,q); }
+        } else { byId.set(q.id,q); }
+      });
+      BANK.questions = Array.from(byId.values());
+      saveAll();
+      alert(`Importadas ${arr.length} preguntas ✅`);
+      renderSubjects();
+    }catch(err){
+      alert("No se pudo importar: "+err.message);
+    } finally {
+      e.target.value="";
+    }
+  });
+}
+
+/* ---------- PWA: registrar SW ---------- */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').then(reg => {
+      console.log('✅ ServiceWorker registrado:', reg.scope);
+    }).catch(err => {
+      console.log('❌ Error ServiceWorker:', err);
+    });
+  });
+}
+
+/* ---------- Fallback rutas en Vercel estático ---------- */
+if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
+  history.replaceState(null, "", "/");
+}
 </script>
 </body>
 </html>
