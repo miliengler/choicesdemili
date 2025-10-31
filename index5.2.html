@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>MEbank Choice – Examen Único</title>
+<link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <meta name="theme-color" content="#ffffff">
@@ -55,7 +56,7 @@ input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--li
         </svg>
         <div>
           <h1>MEbank Choice – Examen Único</h1>
-          <div class="small">Lista simple por materia · Práctica / Repaso / Estadísticas</div>
+          <div class="small"> CHOICES EXAMEN UNICO </div>
         </div>
       </div>
       <div class="controls">
@@ -70,7 +71,7 @@ input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--li
 
   <main class="wrap" id="app"></main>
 
-  <div class="footer">Hecho con ❤️ · MEbank · <span id="verTag">v5.2</span></div>
+  <div class="footer"> Vos podes ❤️ · MEbank · <span id="verTag">v5.2</span></div>
 
 <script>
 /*** ---------- Admin por URL ---------- ***/
@@ -298,6 +299,13 @@ if(adminActive){
       e.target.value="";
     }
   });
+}
+</script>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js").then(() => {
+    console.log("✅ Service Worker registrado");
+  }).catch(err => console.log("SW fallo", err));
 }
 </script>
 </body>
