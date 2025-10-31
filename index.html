@@ -231,7 +231,7 @@ const app=document.getElementById("app");
       <button class="btn-main" onclick="renderOld()">${String.fromCodePoint(0x1F4C4)} Exámenes anteriores</button>
       <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenGeneralSetup()">${String.fromCodePoint(0x1F9E0)} Modo Examen – Creá el tuyo</button>
       <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">${String.fromCodePoint(0x1F4CA)} Estadísticas generales</button>
-
+      <button class="btn-main" onclick="renderNotesList()">${String.fromCodePoint(0x1F4D4)} Mis notas</button>
       <!-- 🔹 Botón temporal para resetear el banco -->
       <button class="btn-main" style="background:#64748b;border-color:#64748b;" onclick="resetBanco()">
         🧹 Reset banco (temporal)
@@ -796,6 +796,54 @@ window.saveNote = (qid)=>{
   alert("✅ Nota guardada");
   renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
 };
+  /* ---------- MIS NOTAS (visor general) ---------- */
+function renderNotesList(){
+  const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  const keys = Object.keys(NOTES);
+  if(!keys.length){
+    app.innerHTML = `<div class='card' style='text-align:center'>
+      <h3>📔 Mis notas</h3>
+      <p>No tenés notas guardadas todavía.</p>
+      <button class='btn-main' onclick='renderHome()'>Volver</button>
+    </div>`;
+    return;
+  }
+
+  // Arma la lista de notas
+  const list = keys.map(k=>{
+    const n = NOTES[k];
+    const q = (BANK.questions||[]).find(x=>x.id===k);
+    const title = q ? `${q.materia.toUpperCase()} – ${q.enunciado.slice(0,80)}...` : k;
+    const date = new Date(n.date).toLocaleDateString("es-AR");
+    return `
+      <div class='card' style='margin-bottom:10px;'>
+        <b>${title}</b><br>
+        <div style='color:var(--muted);font-size:13px;margin:4px 0;'>${date}</div>
+        <div style='white-space:pre-wrap;margin-top:6px;'>${n.text}</div>
+        <div style='text-align:right;margin-top:8px;'>
+          <button class='btn-small' onclick='deleteNote("${k}")'>🗑️ Borrar</button>
+        </div>
+      </div>`;
+  }).join("");
+
+  app.innerHTML = `
+    <div class='fade'>
+      <h3 style='text-align:center;'>📔 Mis notas (${keys.length})</h3>
+      ${list}
+      <div style='text-align:center;margin-top:16px;'>
+        <button class='btn-main' onclick='renderHome()'>Volver al inicio</button>
+      </div>
+    </div>`;
+}
+
+function deleteNote(id){
+  if(confirm("¿Eliminar esta nota?")){
+    const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    delete NOTES[id];
+    localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
+    renderNotesList();
+  }
+}
 </script>
 </body>
 </html>
