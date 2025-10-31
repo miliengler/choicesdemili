@@ -645,31 +645,40 @@ function renderExamenGeneralSetup(){
     const total = (BANK.questions||[]).filter(q=>q.materia===s.slug).length;
     return {...s, total};
   });
+
   const totalAll = counts.reduce((a,b)=>a+b.total,0);
+
+  // Lista de materias con emoji (viene incluido en s.name)
   const checks = counts.map(s=>`
     <label class="chk-mat" style="display:block;margin:4px 0;">
       <input type="checkbox" class="mat-check" value="${s.slug}" data-count="${s.total}" ${s.total?'checked':''}>
-      ${s.name} (${s.total})
-    </label>`).join("");
+      ${s.name} <span style="color:var(--muted)">(${s.total})</span>
+    </label>
+  `).join("");
 
   app.innerHTML = `
     <div class="card" style="max-width:700px;margin:auto;">
-      <h2>Modo Examen – Creá el tuyo</h2>
+      <h2>${String.fromCodePoint(0x1F9E0)} Modo Examen – Creá el tuyo</h2>
       <p>Tenés <b>${totalAll}</b> preguntas disponibles en total.</p>
       <div id="matList">${checks || "<div class='small'>No hay materias cargadas.</div>"}</div>
+
       <div style="margin-top:10px;">
         <label for="numPreg" class="small">Número de preguntas:</label>
         <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
       </div>
-      <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
-        <button class="btn-main" onclick="startExamenGeneral()">Comenzar examen</button>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver al inicio</button>
+
+      <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+        <button class="btn-main" onclick="startExamenGeneral()">${String.fromCodePoint(0x1F3AF)} Comenzar examen</button>
+        <button class="btn-small" onclick="renderHome()">${String.fromCodePoint(0x2B05)} Volver al inicio</button>
       </div>
     </div>
   `;
-  document.querySelectorAll('.mat-check').forEach(chk=>{ chk.addEventListener('change', updateExamenCount); });
-}
 
+  // Detecta cambios de selección de materias y actualiza número total automáticamente
+  document.querySelectorAll('.mat-check').forEach(chk=>{
+    chk.addEventListener('change', updateExamenCount);
+  });
+}
 function updateExamenCount(){
   const chks = Array.from(document.querySelectorAll('.mat-check'));
   const total = chks.filter(c=>c.checked).reduce((a,c)=>a+parseInt(c.dataset.count),0);
