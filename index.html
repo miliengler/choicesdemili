@@ -473,7 +473,32 @@ function updateLastIndex(){
     saveAll();
   }
 }
+// ---------- Notas en barra lateral ----------
+window.toggleSideNote = (qid) => {
+  const area = document.getElementById(`sideNoteArea-${qid}`);
+  const disp = document.getElementById(`sideNoteDisplay-${qid}`);
+  if (!area) return;
+  const visible = !area.classList.contains("hidden");
+  if (visible) {
+    area.classList.add("hidden");
+    if (disp) disp.style.display = "";
+  } else {
+    area.classList.remove("hidden");
+    if (disp) disp.style.display = "none";
+  }
+};
 
+window.saveSideNote = (qid) => {
+  const txt = document.getElementById(`sideNoteText-${qid}`)?.value.trim();
+  const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  if (txt) {
+    NOTES[qid] = { text: txt, date: new Date().toISOString() };
+  } else {
+    delete NOTES[qid];
+  }
+  localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
+  renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
+};
 function answer(i){
   const q=CURRENT.list[CURRENT.i];
   const materiaKey = CURRENT.materia || 'general';
