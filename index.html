@@ -477,14 +477,14 @@ function renderStatsGlobal(){
     return {date: key, count: STATS_DAILY[key] || 0};
   }).reverse();
 
-  const weekList = days.map(d=>{
+    const weekList = days.map(d=>{
     const dd = d.date.slice(8,10);
     const mm = d.date.slice(5,7);
     return `<div style="display:flex;justify-content:space-between;">
-  <span style="color:var(--muted)">${dd}/${mm}</span>
-  <span><b style="color:#16a34a">${d.count}</b> correctas ✅</span>
-</div>`;
-
+      <span style="color:var(--muted)">${dd}/${mm}</span>
+      <span><b style="color:#16a34a">${d.count}</b> correctas ✅</span>
+    </div>`;
+  }).join("");
   let suggestion = "";
   const now = Date.now();
   let oldest = null;
