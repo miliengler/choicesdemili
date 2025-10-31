@@ -201,10 +201,11 @@ const app=document.getElementById("app");
 function renderHome(){
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s">
-      <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
-      <button class="btn-main" onclick="renderGeneral()">Modo práctica (Examen general)</button>
-      <button class="btn-main" onclick="renderStatsGlobal()">Estadísticas generales</button>
       <button class="btn-main" onclick="renderSubjects()">Choice por materia</button>
+      <button class="btn-main" onclick="renderOld()">Exámenes anteriores</button>
+
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenGeneralSetup()">Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">Estadísticas generales</button>
     </div>
   `;
 }
