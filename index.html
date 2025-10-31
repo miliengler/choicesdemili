@@ -198,14 +198,13 @@ function subjectsFromBank(){
 const app=document.getElementById("app");
 
 /* ---------- HOME ---------- */
-
-  function renderHome(){
+function renderHome(){
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
-      <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
-      <button class="btn-main" onclick="renderOld()">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenGeneralSetup()">🧠 Modo Examen – Creá el tuyo</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
+      <button class="btn-main" onclick="renderSubjects()">${String.fromCodePoint(0x1F9E9)} Choice por materia</button>
+      <button class="btn-main" onclick="renderOld()">${String.fromCodePoint(0x1F4C4)} Exámenes anteriores</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenGeneralSetup()">${String.fromCodePoint(0x1F9E0)} Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">${String.fromCodePoint(0x1F4CA)} Estadísticas generales</button>
     </div>
   `;
 }
