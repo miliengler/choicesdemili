@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MEbank Choice – Examen Único</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#ffffff">
+<style>
+:root{--bg:#ffffff;--text:#0f172a;--muted:#475569;--soft:#f1f5f9;--line:#e2e8f0;--brand:#2563eb;--brand-dark:#1e40af;--accent:#22c55e;--danger:#ef4444;--card:#ffffff}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
+a{color:inherit;text-decoration:none}
+.header{position:sticky;top:0;z-index:20;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.wrap{max-width:1100px;margin:0 auto;padding:14px 16px}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand h1{margin:0;font-size:clamp(18px,3vw,22px);font-weight:700}
+.small{font-size:12px;color:var(--muted)}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button,select,input[type="number"],input[type="text"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
+select,input{background:var(--card)}
+button{cursor:pointer;transition:.15s transform ease,.15s background ease}
+button:hover{transform:translateY(-1px)}
+.btn{background:var(--soft)}.btn-primary{background:var(--brand);color:#fff;border-color:var(--brand)}
+.icon-btn{width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.grid{display:grid;gap:18px;grid-template-columns:1fr}
+@media(min-width:900px){.grid{grid-template-columns:1.2fr .8fr}}
+.tiles{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:680px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{padding:18px;border-radius:16px;border:1px solid var(--line);background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.tile h3{margin:0 0 6px}.tile p{margin:0;color:var(--muted);font-size:14px}
+.progress{height:8px;background:var(--soft);border-radius:999px;overflow:hidden;border:1px solid var(--line)}.bar{height:8px;width:0;background:linear-gradient(90deg,var(--brand),var(--accent))}
+.question-stem{font-size:18px;line-height:1.45;white-space:pre-wrap}
+.options{margin-top:12px;display:grid;gap:10px}
+.option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer;transition:box-shadow .15s ease,border-color .15s ease}
+.option.correct{border-color:rgba(34,197,94,.9);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
+.option.wrong{border-color:rgba(239,68,68,.9);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
+.explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
+.index-fab{position:fixed;right:18px;bottom:18px;z-index:50}
+.index-panel{position:fixed;right:18px;bottom:72px;width:320px;max-height:65vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 24px rgba(2,6,23,.12);padding:12px;display:none}
+.idx-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.idx-btn{border:1px solid var(--line);background:var(--soft);font-size:12px;border-radius:8px;padding:6px;text-align:center;cursor:pointer}
+.idx-btn.ans{background:#dcfce7;border-color:#86efac}.idx-btn.wr{background:#fee2e2;border-color:#fca5a5}
+.footer{color:var(--muted);text-align:center;font-size:12px;padding:14px}
+.logo-heart{width:26px;height:26px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+  <div class="header"><h1>MEbank Choice – Examen Único</h1></div>
+  <main class="wrap"><p>Interfaz inicial cargada correctamente.</p></main>
+  <div class="footer">Hecho con ❤️ · MEbank</div>
+</body>
+</html>
