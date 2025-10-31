@@ -431,8 +431,9 @@ function resetStats(slug){
     showStats(slug);
   }
 }
+
+ /* ---------- Estadísticas globales con resumen semanal ---------- */
 function renderStatsGlobal(){
-  /* ---------- Estadísticas globales con resumen semanal ---------- */
   const subs = subjectsFromBank();
   let total = 0, ok = 0, bad = 0;
 
@@ -446,7 +447,6 @@ function renderStatsGlobal(){
   const totalResp = ok + bad;
   const porc = totalResp ? Math.round(ok*100/totalResp) : 0;
 
-  // 📅 Datos diarios guardados
   const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
   const today = new Date();
   const days = Array.from({length:7}).map((_,i)=>{
@@ -460,7 +460,6 @@ function renderStatsGlobal(){
     return `<div>${nice}: <b>${d.count}</b> preguntas</div>`;
   }).join("");
 
-  // 💡 Sugerencia
   let suggestion = "";
   const now = Date.now();
   let oldest = null;
@@ -482,14 +481,11 @@ function renderStatsGlobal(){
       <p style='color:#16a34a'>✔ Correctas: ${ok}</p>
       <p style='color:#ef4444'>✖ Incorrectas: ${bad}</p>
       <p><b>Precisión global:</b> ${porc}%</p>
-
       <hr style='margin:18px 0'>
       <h4>📆 Actividad semanal</h4>
       <div style='text-align:left;max-width:300px;margin:auto;font-size:14px;'>${weekList}</div>
-
       <hr style='margin:18px 0'>
       <div style='color:var(--brand-dark);font-size:15px;margin-bottom:10px;'>${suggestion}</div>
-
       <div class='nav-row' style='justify-content:center'>
         <button class='btn-small' onclick='resetGlobalStats()'>Reiniciar global</button>
         <button class='btn-small' onclick='renderHome()'>Volver</button>
@@ -506,13 +502,14 @@ function recordDailyActivity(){
   localStorage.setItem("mebank_stats_daily", JSON.stringify(STATS_DAILY));
 }
 
+/* --- Reset de estadísticas globales --- */
 function resetGlobalStats(){
   if(confirm("¿Borrar TODAS las estadísticas globales? (No afectará tus materias)")){
     localStorage.removeItem("mebank_stats_daily");
     alert("Estadísticas globales reiniciadas ✅");
     renderStatsGlobal();
+  }
 }
-
 /* ---------- Admin (PIN + importar JSON) ---------- */
 function hookAdmin(){
   if(!adminActive) return;
