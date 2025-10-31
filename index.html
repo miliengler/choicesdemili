@@ -255,7 +255,7 @@ function renderOld(){
 
 /* ---------- SUBJECTS (acordeón) ---------- */
 function renderSubjects(){
-  const subs=subjectsFromBank();
+  const subs = subjectsFromBank().sort((a,b)=>a.name.localeCompare(b.name, 'es'));
   const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
   const list=subs.map(s=>{
     const count=BANK.questions.filter(q=>q.materia===s.slug).length;
@@ -640,7 +640,7 @@ if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
    MODO EXAMEN – CREÁ EL TUYO (dentro de “Modo práctica”)
    ========================================================== */
 function renderExamenGeneralSetup(){
-  const subs = subjectsFromBank();
+  const subs = subjectsFromBank().sort((a,b)=>a.name.localeCompare(b.name, 'es'));
   const counts = subs.map(s=>{
     const total = (BANK.questions||[]).filter(q=>q.materia===s.slug).length;
     return {...s, total};
