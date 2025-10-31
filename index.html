@@ -499,6 +499,13 @@ window.saveSideNote = (qid) => {
   localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
   renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
 };
+  window.deleteSideNote = (qid) => {
+  if(!confirm("¿Eliminar esta nota?")) return;
+  const NOTES = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  delete NOTES[qid];
+  localStorage.setItem("mebank_notes", JSON.stringify(NOTES));
+  renderQuestionWithSidebar(!document.getElementById('sidebar')?.classList.contains('closed'));
+};
 function answer(i){
   const q=CURRENT.list[CURRENT.i];
   const materiaKey = CURRENT.materia || 'general';
