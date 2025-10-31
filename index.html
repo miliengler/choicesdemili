@@ -95,6 +95,24 @@ body[data-theme="dark"]{
 }
 .theme-toggle:hover{ background:var(--brand-dark) }
 .theme-toggle[title]{ position:fixed }
+  /* --- PATCH v6.3 visual tweaks --- */
+@keyframes fadeIn { from {opacity:0; transform:translateY(5px);} to {opacity:1; transform:translateY(0);} }
+.fade { animation: fadeIn 0.25s ease; }
+
+/* hover suave en opciones */
+.option:hover:not(.correct):not(.wrong) {
+  background: var(--soft);
+  box-shadow: 0 0 0 2px rgba(37,99,235,.15);
+}
+
+/* animación de la flechita */
+#sideArrow {
+  transition: all .25s ease;
+}
+#sideArrow:hover {
+  background: var(--brand-dark);
+  transform: translateY(-50%) translateX(-3px);
+}
 </style>
 </head>
 <body>
