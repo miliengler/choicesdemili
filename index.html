@@ -644,7 +644,11 @@ if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
    MODO EXAMEN – CREÁ EL TUYO (dentro de “Modo práctica”)
    ========================================================== */
 function renderExamenGeneralSetup(){
-  const subs = subjectsFromBank().sort((a,b)=>a.name.localeCompare(b.name, 'es'));
+const subs = subjectsFromBank().sort((a, b) => 
+  a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
+    b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
+  )
+);
   const counts = subs.map(s=>{
     const total = (BANK.questions||[]).filter(q=>q.materia===s.slug).length;
     return {...s, total};
