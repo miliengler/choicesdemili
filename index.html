@@ -26,13 +26,17 @@ button:hover{transform:translateY(-1px)}
 .footer{color:var(--muted);text-align:center;font-size:12px;padding:14px}
 .logo-heart{width:26px;height:26px}
 .hidden{display:none}
+
 /* Acordeón minimalista */
 .accordion{list-style:none;margin:0;padding:0;max-width:700px}
 .acc-item{border-bottom:1px solid var(--line);padding:10px 4px}
 .acc-header{display:flex;gap:10px;align-items:center;cursor:pointer}
 .acc-title{font-weight:600}
-.acc-content{padding:10px 0 8px 24px;display:none}
-.acc-actions{display:flex;gap:8px}
+.acc-content{padding:10px 0 14px 24px;display:none}
+.acc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.inline{display:inline-flex;gap:6px;align-items:center}
+input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:110px}
+
 /* Preguntas */
 .question-stem{font-size:18px;line-height:1.45;white-space:pre-wrap}
 .options{margin-top:12px;display:grid;gap:10px}
@@ -40,7 +44,7 @@ button:hover{transform:translateY(-1px)}
 .option.correct{border-color:rgba(34,197,94,.9);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
 .option.wrong{border-color:rgba(239,68,68,.9);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
 .explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
-.nav-row{display:flex;gap:8px;margin-top:12px}
+.nav-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
 .badge{display:inline-block;padding:3px 8px;border:1px solid var(--line);border-radius:999px;font-size:11px;color:#7c3aed;background:#faf5ff}
 </style>
 </head>
@@ -53,7 +57,7 @@ button:hover{transform:translateY(-1px)}
         </svg>
         <div>
           <h1>MEbank Choice – Examen Único</h1>
-          <div class="small">Lista simple por materia · Práctica y Estadísticas</div>
+          <div class="small">Lista simple por materia · Práctica / Repaso / Estadísticas</div>
         </div>
       </div>
       <div class="controls">
@@ -68,7 +72,7 @@ button:hover{transform:translateY(-1px)}
 
   <main class="wrap" id="app"></main>
 
-  <div class="footer">Hecho con ❤️ · MEbank</div>
+  <div class="footer">Hecho con ❤️ · MEbank · <span id="verTag">v5.3</span></div>
 
 <script>
 /*** ---------- Admin por URL ---------- ***/
@@ -90,9 +94,9 @@ const starter = {
 };
 
 /*** ---------- Estado ---------- ***/
-const LS_BANK = "mebank_bank_v3";
-const LS_PROGRESS = "mebank_prog_v3";
-const LS_ADMIN = "mebank_admin_hash_v3";
+const LS_BANK = "mebank_bank_v5";
+const LS_PROGRESS = "mebank_prog_v5";
+const LS_ADMIN = "mebank_admin_hash_v5";
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || starter;
 const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); // {materia:{qid:{chosen,status}}}
 function saveAll(){ localStorage.setItem(LS_BANK, JSON.stringify(BANK)); localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG)); }
@@ -101,7 +105,7 @@ function saveAll(){ localStorage.setItem(LS_BANK, JSON.stringify(BANK)); localSt
 const app = document.getElementById('app');
 function subjectsFromBank(){
   const known = new Map((BANK.subjects||[]).map(s=>[s.slug,s]));
-  (BANK.questions||[]).forEach(q=>{ if(q && q.materia && !known.has(q.materia)){ known.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1),desc:""});} });
+  (BANK.questions||[]).forEach(q=>{ if(q && q.materia && !known.has(q.materia)){ known.set(q.materia,{slug:q.materia,name:q.materia[0].toUpperCase()+q.materia.slice(1),desc:""}); } });
   return Array.from(known.values()).sort((a,b)=>a.name.localeCompare(b.name));
 }
 
@@ -116,7 +120,12 @@ function renderHome(){
       </div>
       <div class="acc-content" id="acc-${s.slug}" style="display:${open?'block':'none'}">
         <div class="acc-actions">
+          <span class="inline">
+            <label for="start-${s.slug}" class="small">Empezar desde #</label>
+            <input type="number" id="start-${s.slug}" min="1" value="1" />
+          </span>
           <button class="btn" onclick="startPractica('${s.slug}')">Práctica</button>
+          <button class="btn" onclick="startRepaso('${s.slug}')">Repaso</button>
           <button class="btn" onclick="showStats('${s.slug}')">Estadísticas</button>
         </div>
       </div>
@@ -127,17 +136,38 @@ function renderHome(){
 window.toggleAcc = (slug)=>{ openSlug = (openSlug===slug? null : slug); renderHome(); };
 renderHome();
 
-/*** ---------- Motor de práctica ---------- ***/
+/*** ---------- Helpers ---------- ***/
+function getStartIndex(slug, total){
+  const el = document.getElementById(`start-${slug}`);
+  let v = parseInt((el && el.value) ? el.value : "1", 10);
+  if(isNaN(v) || v<1) v = 1;
+  if(v>total) v = total;
+  return v;
+}
+
+/*** ---------- Motor de práctica y repaso ---------- ***/
 let CURRENT = { list:[], i:0, materia:'', sessionAnswers:{} };
 function startPractica(slug){
-  const list = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
-  if(!list.length){ app.innerHTML = `<div class="card">No hay preguntas cargadas en <b>${slug}</b>. Entrá en modo admin (?admin=1) y usá <b>Importar</b>.</div>`; return; }
-  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // 👈 arranca limpio SIEMPRE
+  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
+  if(!listAll.length){ app.innerHTML = `<div class="card">No hay preguntas cargadas en <b>${slug}</b>. Entrá en modo admin (?admin=1) y usá <b>Importar</b>.</div>`; return; }
+  const start = getStartIndex(slug, listAll.length);
+  const list = listAll.slice(start-1);
+  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // limpio por sesión
   renderQuestion();
 }
+
+function startRepaso(slug){
+  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=> a.id.localeCompare(b.id));
+  const prog = PROG[slug]||{};
+  const list = listAll.filter(q=> prog[q.id]?.status==='bad');
+  if(!list.length){ app.innerHTML = `<div class="card">No tenés incorrectas para repasar en <b>${slug}</b>. Hacé primero algunas preguntas en práctica.</div>`; return; }
+  CURRENT = { list, i:0, materia:slug, sessionAnswers:{} }; // limpio por sesión
+  renderQuestion();
+}
+
 function renderQuestion(){
   const q = CURRENT.list[CURRENT.i];
-  const ans = CURRENT.sessionAnswers[q.id]; // 👈 solo usamos la respuesta de ESTA sesión
+  const ans = CURRENT.sessionAnswers[q.id]; // solo esta SESIÓN
   const opts = q.opciones.map((txt, idx)=>{
     let cls='';
     if(ans!=null){
@@ -168,7 +198,7 @@ window.answer = (idx)=>{
   const q = CURRENT.list[CURRENT.i];
   if(CURRENT.sessionAnswers[q.id]!=null) return; // no permitir cambiar en la sesión
   CURRENT.sessionAnswers[q.id] = idx;           // guarda solo en la sesión para las marcas
-  // Actualiza estadísticas persistentes sin mostrar marcas previas en futuras sesiones
+  // Actualiza estadísticas persistentes
   PROG[CURRENT.materia] = PROG[CURRENT.materia]||{};
   PROG[CURRENT.materia][q.id] = { chosen: idx, status: (idx===q.correcta?'ok':'bad') };
   saveAll();
@@ -254,16 +284,27 @@ if(adminActive){
       // Merge preguntas
       const byId = new Map((BANK.questions||[]).map(q=>[q.id,q]));
       arr.forEach(q=>{
-        if(byId.has(q.id)){ if(overwrite.checked){ byId.set(q.id,q); } }
-        else byId.set(q.id,q);
+        if(byId.has(q.id)){
+          if(overwrite && overwrite.checked){ byId.set(q.id,q); }
+        } else {
+          byId.set(q.id,q);
+        }
       });
       BANK.questions = Array.from(byId.values());
       saveAll();
       alert(`Importadas ${arr.length} preguntas ✅`);
       renderHome();
-    }catch(err){ alert("No se pudo importar: "+err.message); }
-    finally{ e.target.value=""; }
+    }catch(err){
+      alert("No se pudo importar: "+err.message);
+    } finally {
+      e.target.value="";
+    }
   });
+}
+
+/*** ---------- (Opcional) Fallback para rutas internas en Vercel estático ---------- ***/
+if (location.pathname !== "/" && !location.pathname.endsWith("index.html")) {
+  history.replaceState(null, "", "/");
 }
 </script>
 </body>
