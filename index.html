@@ -375,9 +375,8 @@ function renderQuestionWithSidebar(open=true){
   const notaGuardada = JSON.parse(localStorage.getItem("mebank_notes") || "{}")[q.id]?.text || "";
 const showNotes = ans != null; // solo mostrar si ya respondió
 
-const notaGuardada = JSON.parse(localStorage.getItem("mebank_notes") || "{}")[q.id]?.text || "";
-const showNotes = ans != null; // solo mostrar si ya respondió
 
+  
 const side = `
   <div id="sidebar" class="sidebar ${open ? '' : 'closed'}">
     <div class="side-header">
