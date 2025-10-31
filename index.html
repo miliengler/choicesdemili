@@ -255,7 +255,11 @@ function renderOld(){
 
 /* ---------- SUBJECTS (acordeón) ---------- */
 function renderSubjects(){
-  const subs = subjectsFromBank().sort((a,b)=>a.name.localeCompare(b.name, 'es'));
+  const subs = subjectsFromBank().sort((a, b) => 
+  a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
+    b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
+  )
+);
   const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
   const list=subs.map(s=>{
     const count=BANK.questions.filter(q=>q.materia===s.slug).length;
