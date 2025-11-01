@@ -1,6 +1,6 @@
 /* ==========================================================
    🧠 MODO EXAMEN – CREÁ EL TUYO
-   Etapa 1: base funcional (sin cronómetro)
+   Con cronómetro opcional (timer.js)
    ========================================================== */
 
 /* ---------- Render del configurador ---------- */
@@ -35,6 +35,11 @@ function renderExamenSetup(){
         <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
       </div>
 
+      <label style="display:flex;align-items:center;gap:8px;margin-top:14px;">
+        <input type="checkbox" id="chkTimer">
+        <span>⏱️ Activar cronómetro</span>
+      </label>
+
       <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
         <button class="btn-main" onclick="startExamen()">🎯 Comenzar examen</button>
         <button class="btn-small" onclick="renderHome()">⬅️ Volver al inicio</button>
@@ -42,7 +47,6 @@ function renderExamenSetup(){
     </div>
   `;
 
-  // autoactualiza cantidad según selección
   document.querySelectorAll('.mat-check').forEach(chk=>{
     chk.addEventListener('change', updateExamenCount);
   });
@@ -69,6 +73,7 @@ function startExamen(){
   const selected = chks.filter(c=>c.checked).map(c=>c.value);
   const numEl = document.getElementById('numPreg');
   const num = Math.max(1, parseInt(numEl?.value||'1',10));
+  const useTimer = document.getElementById('chkTimer')?.checked; // ✅ NUEVO
 
   let pool = (BANK.questions||[]).filter(q=> selected.includes(q.materia));
   if(pool.length===0){
@@ -79,7 +84,11 @@ function startExamen(){
   const chosen = pool.slice(0, Math.min(num, pool.length));
 
   CURRENT = { list: chosen, i: 0, materia: 'general', modo: 'examen', session: {} };
+
   renderExamenPregunta();
+
+  // ✅ Si se activó el cronómetro
+  if(useTimer) initTimer("app");
 }
 
 /* ---------- Render de una pregunta en modo examen ---------- */
@@ -106,7 +115,7 @@ function renderExamenPregunta(){
       <div class="nav-row">
         <button class="btn-small" onclick="prevExamen()" ${CURRENT.i===0?"disabled":""}>⬅️ Anterior</button>
         <button class="btn-small" onclick="nextExamen()" ${CURRENT.i===CURRENT.list.length-1?"disabled":""}>Siguiente ➡️</button>
-        <button class="btn-small" style="background:#64748b;border-color:#64748b" onclick="if(confirm('¿Salir del examen?'))renderHome()">🏠 Salir</button>
+        <button class="btn-small" style="background:#64748b;border-color:#64748b" onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
       </div>
     </div>
   `;
@@ -141,6 +150,7 @@ function prevExamen(){
 
 /* ---------- Fin del examen ---------- */
 function renderExamenFin(){
+  stopTimer(); // ✅ Detiene el cronómetro al terminar
   const prog = PROG.general||{};
   const answered = CURRENT.list.filter(q=>prog[q.id]);
   const ok = answered.filter(q=>prog[q.id]?.status==='ok').length;
