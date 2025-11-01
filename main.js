@@ -1,8 +1,8 @@
-/* ===== Config básica ===== */
+/* ========== CONFIG BÁSICA ========== */
 const app = document.getElementById("app");
 const THEME_KEY = "mebank_theme";
 
-/* Tema */
+/* --- Tema claro/oscuro --- */
 (function initTheme(){
   const saved = localStorage.getItem(THEME_KEY) || "light";
   document.body.setAttribute("data-theme", saved);
@@ -18,23 +18,41 @@ const THEME_KEY = "mebank_theme";
   }
 })();
 
-/* Materias disponibles (podemos sumar más luego) */
+/* --- Materias disponibles --- */
 const MATERIAS = [
   { slug: "obstetricia", name: "🤰 Obstetricia" }
-  // después agregamos gineco, pediatría, etc.
+  // 🔹 después agregamos más materias (ginecología, pediatría, etc.)
 ];
 
-/* Home */
+/* ========== HOME ========== */
 function renderHome(){
   app.innerHTML = `
-    <div class="card" style="text-align:center">
-      <p class="small">Elegí una materia para cargar sus preguntas (se cargan a demanda, livianito).</p>
-      ${MATERIAS.map(m => `<button class="btn-main" onclick="loadMateria('${m.slug}')">${m.name}</button>`).join("")}
+    <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
+      <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
+      <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('🧠 Modo examen en desarrollo')">🧠 Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
+      <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
     </div>
   `;
 }
 
-/* Cargar JSON de la materia bajo demanda */
+/* ========== LISTA DE MATERIAS ========== */
+function renderSubjects(){
+  const list = MATERIAS.map(m => `
+    <button class="btn-main" onclick="loadMateria('${m.slug}')">${m.name}</button>
+  `).join("");
+
+  app.innerHTML = `
+    <div class="card" style="text-align:center">
+      <button class="btn-small" style="margin-bottom:10px" onclick="renderHome()">⬅️ Volver</button>
+      <p class="small">Seleccioná una materia para cargar sus preguntas (bajo demanda).</p>
+      ${list}
+    </div>
+  `;
+}
+
+/* ========== CARGA JSON DE MATERIA ========== */
 async function loadMateria(slug){
   try{
     app.innerHTML = `<div class="card">Cargando ${slug}…</div>`;
@@ -43,23 +61,23 @@ async function loadMateria(slug){
     const preguntas = await res.json();
 
     if(!Array.isArray(preguntas) || preguntas.length===0){
-      app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b> todavía.<br><br><button class="btn-main" onclick="renderHome()">Volver</button></div>`;
+      app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b> todavía.<br><br><button class="btn-main" onclick="renderSubjects()">Volver</button></div>`;
       return;
     }
 
     renderMateria(slug, preguntas);
   }catch(err){
     console.error(err);
-    app.innerHTML = `<div class="card">Error al cargar <b>${slug}</b>.<br><span class="small">${String(err.message||err)}</span><br><br><button class="btn-main" onclick="renderHome()">Volver</button></div>`;
+    app.innerHTML = `<div class="card">Error al cargar <b>${slug}</b>.<br><span class="small">${String(err.message||err)}</span><br><br><button class="btn-main" onclick="renderSubjects()">Volver</button></div>`;
   }
 }
 
-/* Render simple de lista + primera pregunta (MVP) */
+/* ========== MUESTRA PRIMERA PREGUNTA ========== */
 function renderMateria(slug, preguntas){
   const primera = preguntas[0];
   app.innerHTML = `
     <div class="card">
-      <button class="btn-main" style="max-width:200px;background:#64748b;border-color:#64748b" onclick="renderHome()">⬅️ Inicio</button>
+      <button class="btn-main" style="max-width:200px;background:#64748b;border-color:#64748b" onclick="renderSubjects()">⬅️ Materias</button>
       <h3 style="margin-top:10px">${slug.toUpperCase()}</h3>
       <p class="small">${preguntas.length} preguntas cargadas desde <code>bancos/${slug}.json</code></p>
 
@@ -77,5 +95,5 @@ function renderMateria(slug, preguntas){
   `;
 }
 
-/* Inicio */
+/* ========== INICIO ========== */
 document.addEventListener("DOMContentLoaded", renderHome);
