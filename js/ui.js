@@ -13,7 +13,11 @@ function renderHome(){
 
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
-  const subs = subjectsFromBank();
+  const subs = subjectsFromBank().sort((a, b) => 
+  a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
+    b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
+  )
+);
   const list = subs.map(s => `
     <li class='acc-item'>
       <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
@@ -22,7 +26,7 @@ function renderSubjects(){
           ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
         </div>
       </div>
-      <div class='acc-content' id='acc-${s.slug}'>
+      <div class='acc-content' id='acc-${s.slug}' style='display:none'>
         <div class='acc-actions'>
           <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
           <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
