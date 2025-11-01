@@ -21,7 +21,6 @@ const THEME_KEY = "mebank_theme";
 /* --- Materias disponibles --- */
 const MATERIAS = [
   { slug: "obstetricia", name: "🤰 Obstetricia" }
-  // 🔹 después agregamos más materias (ginecología, pediatría, etc.)
 ];
 
 /* ========== HOME ========== */
@@ -52,6 +51,13 @@ function renderSubjects(){
   `;
 }
 
+/* ========== VARIABLES DE SESIÓN ========== */
+let CURRENT = {
+  materia: "",
+  preguntas: [],
+  index: 0
+};
+
 /* ========== CARGA JSON DE MATERIA ========== */
 async function loadMateria(slug){
   try{
@@ -65,34 +71,61 @@ async function loadMateria(slug){
       return;
     }
 
-    renderMateria(slug, preguntas);
+    CURRENT = { materia: slug, preguntas, index: 0 };
+    renderPregunta();
   }catch(err){
     console.error(err);
     app.innerHTML = `<div class="card">Error al cargar <b>${slug}</b>.<br><span class="small">${String(err.message||err)}</span><br><br><button class="btn-main" onclick="renderSubjects()">Volver</button></div>`;
   }
 }
 
-/* ========== MUESTRA PRIMERA PREGUNTA ========== */
-function renderMateria(slug, preguntas){
-  const primera = preguntas[0];
+/* ========== RENDER DE UNA PREGUNTA ========== */
+function renderPregunta(){
+  const q = CURRENT.preguntas[CURRENT.index];
+  if(!q){
+    app.innerHTML = `<div class="card">No hay pregunta.<br><button class="btn-main" onclick="renderSubjects()">Volver</button></div>`;
+    return;
+  }
+
+  const num = CURRENT.index + 1;
+  const total = CURRENT.preguntas.length;
+
   app.innerHTML = `
     <div class="card">
-      <button class="btn-main" style="max-width:200px;background:#64748b;border-color:#64748b" onclick="renderSubjects()">⬅️ Materias</button>
-      <h3 style="margin-top:10px">${slug.toUpperCase()}</h3>
-      <p class="small">${preguntas.length} preguntas cargadas desde <code>bancos/${slug}.json</code></p>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+        <b>${CURRENT.materia.toUpperCase()}</b>
+        <span class="small">${num}/${total}</span>
+      </div>
 
-      <hr style="margin:12px 0">
-
-      <div><b>Ejemplo (1° pregunta):</b></div>
-      <div style="margin-top:8px;font-size:18px">${primera.enunciado}</div>
+      <div style="margin-top:8px;font-size:18px">${q.enunciado}</div>
       <div style="margin-top:10px;display:grid;gap:8px">
-        ${primera.opciones.map((op,i)=>`
-          <label style="border:1px solid var(--line);border-radius:12px;padding:12px;display:block">
+        ${q.opciones.map((op,i)=>`
+          <label style="border:1px solid var(--line);border-radius:12px;padding:12px;display:block;cursor:pointer">
             ${String.fromCharCode(97+i)}) ${op}
           </label>`).join("")}
       </div>
+
+      <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+        <button class="btn-small" ${CURRENT.index===0?"disabled":""} onclick="prevPregunta()">⬅️ Anterior</button>
+        <button class="btn-small" ${CURRENT.index===total-1?"disabled":""} onclick="nextPregunta()">Siguiente ➡️</button>
+        <button class="btn-small" style="background:#64748b;border-color:#64748b" onclick="renderSubjects()">🏠 Volver</button>
+      </div>
     </div>
   `;
+}
+
+/* ========== NAVEGACIÓN ========== */
+function nextPregunta(){
+  if(CURRENT.index < CURRENT.preguntas.length-1){
+    CURRENT.index++;
+    renderPregunta();
+  }
+}
+function prevPregunta(){
+  if(CURRENT.index > 0){
+    CURRENT.index--;
+    renderPregunta();
+  }
 }
 
 /* ========== INICIO ========== */
