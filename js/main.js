@@ -25,7 +25,7 @@ function renderHome() {
   `;
 }
 
-/* ========== LISTA DE MATERIAS ========== */
+/* ========== LISTA DE MATERIAS (versión con botones blancos) ========== */
 function renderSubjects() {
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -34,29 +34,27 @@ function renderSubjects() {
   );
 
   const list = subs.map(s => `
-    <li class='acc-item'>
-      <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
-        <div class='acc-title'>${s.name}</div>
-        <div class='acc-count hidden' id='count-${s.slug}'>
-          ${(BANK.questions || []).filter(q => q.materia === s.slug).length} preguntas
-        </div>
-      </div>
-      <div class='acc-content' id='acc-${s.slug}' style='display:none'>
-        <div class='acc-actions'>
-          <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
-          <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
-          <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
-          <button class='btn-small' onclick='renderHome()'>Inicio</button>
-        </div>
-      </div>
-    </li>
+    <button class="btn-main" 
+            style="background:#fff;color:var(--text);border:1px solid var(--line);text-align:left;max-width:500px;"
+            onclick="startPractica('${s.slug}')">
+      ${s.name}
+      <span style="float:right;color:var(--muted);font-size:13px;">
+        ${(BANK.questions || []).filter(q => q.materia === s.slug).length} preg.
+      </span>
+    </button>
   `).join("");
 
   app.innerHTML = `
-    <div class='card'>
-      <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
-      <ul class='accordion'>${list}</ul>
-    </div>`;
+    <div class="card" style="text-align:center">
+      <button class="btn-small" style="margin-bottom:10px" onclick="renderHome()">⬅️ Volver</button>
+      <p class="small" style="margin-bottom:8px;color:var(--muted)">
+        Seleccioná una materia para comenzar a practicar
+      </p>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin:auto;max-width:500px;">
+        ${list}
+      </div>
+    </div>
+  `;
 }
 
 /* ========== ACCORDION ========== */
