@@ -1,4 +1,4 @@
-/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo A (barra superior discreta) ========== */
+/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B (barra inferior del card) ========== */
 let TIMER = {
   interval: null,
   startTime: 0,
@@ -18,27 +18,21 @@ function initTimer(containerId = "app") {
   TIMER.running = false;
   clearInterval(TIMER.interval);
 
-  // 🔹 Crear UI del cronómetro (versión minimalista superior)
+  // 🔹 Crear UI del cronómetro (en la parte inferior del card)
   const timerBox = document.createElement("div");
   timerBox.id = "timerBox";
   timerBox.style = `
-    position:absolute;
-    top:10px;
-    right:20px;
+    text-align:center;
+    margin-top:14px;
+    color:var(--muted);
     font-size:14px;
-    color:#1e40af;
-    background:rgba(30,64,175,0.08);
-    padding:4px 10px;
-    border-radius:8px;
     font-weight:600;
-    z-index:100;
   `;
+  timerBox.innerHTML = `⏱️ <span id="timerDisplay">00:00:00</span>`;
 
-  timerBox.innerHTML = `
-    ⏱️ <span id="timerDisplay">00:00:00</span>
-  `;
+  // se agrega al final del contenedor principal
+  container.append(timerBox);
 
-  container.prepend(timerBox);
   startTimer();
 }
 
