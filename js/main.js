@@ -12,9 +12,9 @@ function renderHome() {
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
       <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('🧠 Modo examen en desarrollo')">
-        🧠 Modo Examen – Creá el tuyo
-      </button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">
+  🧠 Modo Examen – Creá el tuyo
+</button>
       <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">
         📊 Estadísticas generales
       </button>
