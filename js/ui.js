@@ -18,15 +18,25 @@ function renderSubjects(){
     b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
   )
 );
-  const list = subs.map(s => `
-    <li class='acc-item'>
-      <div class='acc-header' onclick='toggleAcc("${s.slug}")'>
-        <div class='acc-title'>${s.name}</div>
-        <div class='acc-count hidden' id='count-${s.slug}'>
-          ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
-        </div>
+  const list = subs.map((s,i) => `
+  <li class='acc-item'>
+    <button class='btn-main' style='width:100%;text-align:left;justify-content:space-between;display:flex;align-items:center;'
+            onclick='toggleAcc("${s.slug}")'>
+      <span>${i+1}. ${s.name}</span>
+      <span id='count-${s.slug}' class='hidden' style='font-size:13px;color:var(--muted)'>
+        ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
+      </span>
+    </button>
+    <div class='acc-content' id='acc-${s.slug}' style='display:none;padding-left:10px;margin-top:6px'>
+      <div class='acc-actions'>
+        <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
+        <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
+        <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
+        <button class='btn-small' onclick='renderHome()'>Inicio</button>
       </div>
-      <div class='acc-content' id='acc-${s.slug}' style='display:none'>
+    </div>
+  </li>
+`);
         <div class='acc-actions'>
           <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
           <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
