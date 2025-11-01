@@ -94,7 +94,23 @@ body[data-theme="dark"]{
   display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(2,6,23,.18);
 }
 .theme-toggle:hover{ background:var(--brand-dark) }
-
+  
+/* Cronómetro flotante */
+.timer-toggle {
+  position: fixed;
+  right: 16px;
+  bottom: 72px; /* un poco arriba del botón 🌙 */
+  z-index: 50;
+  width: 110px;
+  height: 46px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  border: 1px solid var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: cen
+  
 /* Checkboxes en “Creá tu examen” */
 .chk-mat input[type="checkbox"] {
   transform: scale(1.2);
