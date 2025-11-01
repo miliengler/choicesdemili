@@ -249,6 +249,8 @@ const app=document.getElementById("app");
 /* ---------- HOME ---------- */
 
   function renderHome(){
+  clearExamTimer(); // Apaga cronómetro si estaba activo
+
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">${String.fromCodePoint(0x1F9E9)} Choice por materia</button>
@@ -260,6 +262,9 @@ const app=document.getElementById("app");
       <button class="btn-main" style="background:#64748b;border-color:#64748b;" onclick="resetBanco()">
         🧹 Reset banco (temporal)
       </button>
+    </div>
+  `;
+}
     
 
 function resetBanco(){
