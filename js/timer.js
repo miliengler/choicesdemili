@@ -33,12 +33,12 @@ function initTimer(containerId = "app") {
     flex-wrap:wrap;
   `;
 
-  timerBox.innerHTML = `
-    <span id="timerDisplay">00:00:00</span> –
-    <button class="btn-mini" id="pauseBtn" title="Pausar o reanudar">Pausar</button>
-    <button class="btn-mini" id="resetBtn" title="Reiniciar tiempo">Reiniciar</button>
-    <button class="btn-mini" id="stopBtn" title="Detener y finalizar">Detener</button>
-  `;
+timerBox.innerHTML = `
+  <span id="timerDisplay">00:00:00</span> –
+  <button class="btn-mini" id="pauseBtn" title="Pausar / Reanudar">⏯</button>
+  <button class="btn-mini" id="resetBtn" title="Reiniciar">↺</button>
+  <button class="btn-mini" id="stopBtn" title="Detener">■</button>
+`;
 
   container.append(timerBox);
   startTimer();
