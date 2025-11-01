@@ -1,115 +1,24 @@
 :root{
-  --bg:#ffffff; --text:#0f172a; --muted:#475569; --soft:#f1f5f9; --line:#e2e8f0; --brand:#2563eb; --brand-dark:#1e40af; --accent:#22c55e; --danger:#ef4444; --card:#ffffff;
-  --option-correct: rgba(34,197,94,.9);
-  --option-wrong:   rgba(239,68,68,.9);
+  --bg:#ffffff; --text:#0f172a; --muted:#475569; --soft:#f1f5f9;
+  --line:#e2e8f0; --brand:#2563eb; --brand-dark:#1e40af; --card:#ffffff;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
-body{
-  margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-  background:var(--bg);color:var(--text);
-  animation:fadeIn .5s ease;
-  transition: background-color .25s ease, color .25s ease;
-}
-a{color:inherit;text-decoration:none}
-@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-
+body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
+.wrap{max-width:1100px;margin:0 auto;padding:16px}
+.header{position:sticky;top:0;z-index:10;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
+.brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:14px 0}
+.brand h1{margin:0;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--brand-dark)}
+.footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
 button{cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:14px 20px;font-size:16px;font-weight:500;transition:.2s background,.2s transform}
 button:hover{transform:translateY(-2px)}
 .btn-main{background:var(--brand);color:#fff;width:100%;max-width:360px;margin:8px auto;display:block;text-align:center;border-color:var(--brand)}
 .btn-main:hover{background:var(--brand-dark)}
-.btn-small{padding:10px 14px;font-size:14px}
-.hidden{display:none}
-
-.header{position:sticky;top:0;z-index:10;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.wrap{max-width:1100px;margin:0 auto;padding:16px}
-.brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:14px 0}
-.brand h1{margin:0;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--brand-dark)}
-
-.footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
-
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.accordion{list-style:none;margin:0;padding:0;max-width:760px;margin:auto}
-.acc-item{border-bottom:1px solid var(--line);padding:10px 4px}
-.acc-header{display:flex;flex-direction:column;cursor:pointer}
-.acc-title{font-weight:600;font-size:16px}
-.acc-count{font-size:12px;color:var(--muted);margin-top:4px}
-.acc-content{padding:10px 0 14px 24px;display:none}
-.acc-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
-input[type="number"]{background:#fff;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:110px}
-
-.options{margin-top:12px;display:grid;gap:10px}
-.option{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--card);cursor:pointer;transition:.15s border-color,.15s box-shadow}
-.option.correct{border-color:var(--option-correct);box-shadow:inset 0 0 0 1px rgba(34,197,94,.35)}
-.option.wrong{border-color:var(--option-wrong);box-shadow:inset 0 0 0 1px rgba(239,68,68,.35)}
-.explain{margin-top:12px;color:var(--muted);font-size:14px;white-space:pre-wrap}
-.nav-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-
-/* Layout pregunta + sidebar índice */
-.q-layout{display:grid;grid-template-columns: 1fr 220px; gap:18px; align-items:start}
-@media(max-width:900px){ .q-layout{grid-template-columns:1fr} }
-
-/* Sidebar índice */
-.sidebar{
-  position:sticky; top:82px; align-self:start;
-  border:1px solid var(--line); background:var(--card); border-radius:14px; padding:12px;
-  box-shadow:0 6px 24px rgba(2,6,23,.08); transition: transform .2s ease, opacity .2s ease;
-}
-.side-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
-.side-title{font-weight:600;font-size:14px}
-.side-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
-.side-btn{
-  border:1px solid var(--line); background:var(--soft); border-radius:8px; padding:8px;
-  font-size:12px; text-align:center; cursor:pointer; user-select:none;
-}
-.side-btn.ok{ background:rgba(34,197,94,.25); border-color:#22c55e; color:#22c55e; }
-.side-btn.bad{ background:rgba(239,68,68,.25); border-color:#ef4444; color:#ef4444; }
-.side-btn.cur{ outline:2px solid var(--brand); background:rgba(37,99,235,.15); }
-.side-toggle{border-radius:10px; width:36px; height:36px; display:inline-flex; align-items:center; justify-content:center}
-.sidebar.closed{ transform: translateX(14px); opacity:.0; pointer-events:none }
-
-/* Modo oscuro suave */
-body[data-theme="dark"]{
-  --bg:#1e293b; --text:#e2e8f0; --muted:#cbd5e1; --soft:#0f172a; --line:#334155; --card:#0b1624;
-  --brand:#6ea8ff; --brand-dark:#4a7fd6;
-  --option-correct: rgba(34,197,94,.9);
-  --option-wrong:   rgba(239,68,68,.9);
-}
-
-/* Toggle tema */
+.small{font-size:13px;color:var(--muted)}
 .theme-toggle{
   position:fixed; right:16px; bottom:16px; z-index:50;
   width:46px; height:46px; border-radius:999px; background:var(--brand); color:#fff; border:1px solid var(--brand);
   display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(2,6,23,.18);
 }
 .theme-toggle:hover{ background:var(--brand-dark) }
-
-/* Cronómetro flotante */
-.timer-toggle {
-  position: fixed;
-  right: 16px;
-  bottom: 72px; /* un poco arriba del botón 🌙 */
-  z-index: 50;
-  width: 110px;
-  height: 46px;
-  border-radius: 999px;
-  background: var(--brand);
-  color: #fff;
-  border: 1px solid var(--brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 500;
-  box-shadow: 0 6px 24px rgba(2,6,23,.18);
-  transition: background 0.2s ease;
-}
-.timer-toggle:hover {
-  background: var(--brand-dark);
-}
-
-/* Checkboxes en “Creá tu examen” */
-.chk-mat input[type="checkbox"] {
-  transform: scale(1.2);
-  margin-right: 6px;
-}
