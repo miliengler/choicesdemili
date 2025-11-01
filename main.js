@@ -1,5 +1,6 @@
 /* ========== CONFIG BÁSICA ========== */
 const app = document.getElementById("app");
+
 /* ---------- Cargar bancos externos ---------- */
 async function loadExternalBanks() {
   const materias = [
@@ -18,8 +19,11 @@ async function loadExternalBanks() {
       const data = await res.json();
       if (Array.isArray(data)) {
         console.log(`✅ Cargado banco: ${mat} (${data.length} preguntas)`);
+        // Si existe BANK.questions, la usamos; si no, la creamos
+        if (!window.BANK) window.BANK = { questions: [], subjects: [] };
         BANK.questions.push(...data);
-        // Asegurar que aparezca la materia
+
+        // Asegurar que aparezca la materia en la lista
         if (!BANK.subjects.find(s => s.slug === mat)) {
           BANK.subjects.push({ slug: mat, name: mat[0].toUpperCase() + mat.slice(1) });
         }
@@ -28,12 +32,10 @@ async function loadExternalBanks() {
       console.warn(`⚠️ No se pudo cargar ${mat}.json`, err);
     }
   }
-
-  saveAll();
 }
-const THEME_KEY = "mebank_theme";
 
-/* --- Tema claro/oscuro --- */
+/* ---------- Tema claro/oscuro ---------- */
+const THEME_KEY = "mebank_theme";
 (function initTheme(){
   const saved = localStorage.getItem(THEME_KEY) || "light";
   document.body.setAttribute("data-theme", saved);
@@ -49,7 +51,7 @@ const THEME_KEY = "mebank_theme";
   }
 })();
 
-/* --- Materias disponibles --- */
+/* ========== LISTA DE MATERIAS (inicial mínima) ========== */
 const MATERIAS = [
   { slug: "obstetricia", name: "🤰 Obstetricia" }
 ];
@@ -69,7 +71,7 @@ function renderHome(){
 
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
-  const list = MATERIAS.map(m => `
+  const list = (BANK?.subjects?.length ? BANK.subjects : MATERIAS).map(m => `
     <button class="btn-main" onclick="loadMateria('${m.slug}')">${m.name}</button>
   `).join("");
 
@@ -161,6 +163,6 @@ function prevPregunta(){
 
 /* ========== INICIO ========== */
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadExternalBanks(); // Carga automática de bancos JSON
-  renderHome(); // Luego muestra la pantalla principal
+  await loadExternalBanks(); // carga los JSON al abrir la app
+  renderHome();
 });
