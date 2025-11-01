@@ -1,4 +1,11 @@
-const app = document.getElementById("app");
+/* ========== INICIO AUTOMÁTICO ========== */
+// Espera a que el DOM esté cargado antes de buscar #app
+document.addEventListener("DOMContentLoaded", () => {
+  const app = document.getElementById("app");
+  window.app = app; // la hace global para el resto del código
+  renderHome();
+});
+
 /* ========== HOME ========== */
 function renderHome() {
   app.innerHTML = `
@@ -20,9 +27,9 @@ function renderHome() {
 
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects() {
-  const subs = subjectsFromBank().sort((a, b) => 
+  const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity: 'base'}
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' }
     )
   );
 
@@ -169,8 +176,3 @@ function answer(i) {
   saveAll();
   renderPregunta();
 }
-
-/* ========== INICIO AUTOMÁTICO ========== */
-document.addEventListener("DOMContentLoaded", () => {
-  renderHome();
-});
