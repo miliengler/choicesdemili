@@ -31,15 +31,16 @@ function renderExamenSetup(){
       <div id="matList">${checks || "<p class='small'>No hay materias cargadas.</p>"}</div>
 
       <div style="margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
-        <div>
-          <label for="numPreg" class="small">Número de preguntas:</label>
-          <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
-        </div>
-        <label style="display:flex;align-items:center;gap:6px;">
-          <input type="checkbox" id="chkTimer">
-          <span>⏱️ Activar cronómetro</span>
-        </label>
-      </div>
+  <div style="display:flex;align-items:center;gap:8px;">
+    <label for="numPreg" class="small">Número de preguntas:</label>
+    <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:80px;">
+  </div>
+
+  <div style="display:flex;align-items:center;gap:6px;">
+    <input type="checkbox" id="chkTimer">
+    <label for="chkTimer" style="font-size:14px;">⏱️ Activar cronómetro</label>
+  </div>
+</div>
 
       <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
         <button class="btn-main" onclick="startExamen()">🎯 Comenzar examen</button>
