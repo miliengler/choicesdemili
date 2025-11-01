@@ -14,31 +14,26 @@ function renderHome(){
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
-  a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
-    b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
-  )
-);
+    a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
+    )
+  );
+
   const list = subs.map((s,i) => `
-  <li class='acc-item'>
-    <button class='btn-main' style='width:100%;text-align:left;justify-content:space-between;display:flex;align-items:center;'
-            onclick='toggleAcc("${s.slug}")'>
-      <span>${i+1}. ${s.name}</span>
-      <span id='count-${s.slug}' class='hidden' style='font-size:13px;color:var(--muted)'>
-        ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
-      </span>
-    </button>
-    <div class='acc-content' id='acc-${s.slug}' style='display:none;padding-left:10px;margin-top:6px'>
-      <div class='acc-actions'>
-        <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
-        <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
-        <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
-        <button class='btn-small' onclick='renderHome()'>Inicio</button>
-      </div>
-    </div>
-  </li>
-`);
+    <li class='acc-item' style="list-style:none;margin-bottom:10px;">
+      <button class='btn-main' style='width:100%;text-align:left;justify-content:space-between;display:flex;align-items:center;'
+              onclick='toggleAcc("${s.slug}")'>
+        <span>${i+1}. ${s.name}</span>
+        <span id='count-${s.slug}' class='hidden' style='font-size:13px;color:var(--muted)'>
+          ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
+        </span>
+      </button>
+
+      <div class='acc-content' id='acc-${s.slug}' style='display:none;padding-left:10px;margin-top:6px'>
         <div class='acc-actions'>
-          <label class='small'>Desde # <input type='number' id='start-${s.slug}' min='1' value='1'></label>
+          <label class='small'>Desde # 
+            <input type='number' id='start-${s.slug}' min='1' value='1'>
+          </label>
           <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
           <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
           <button class='btn-small' onclick='renderHome()'>Inicio</button>
@@ -50,20 +45,21 @@ function renderSubjects(){
   app.innerHTML = `
     <div class='card'>
       <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
-      <ul class='accordion'>${list}</ul>
+      <ul class='accordion' style="padding:0;margin-top:10px;">${list}</ul>
     </div>`;
 }
 
+/* ---------- Alternar acordeón ---------- */
 window.toggleAcc = (slug)=>{
   const el = document.getElementById(`acc-${slug}`);
   const cnt = document.getElementById(`count-${slug}`);
   const open = el.style.display === "block";
 
-  // cerrar todos los demás
+  // cerrar todas
   document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
   document.querySelectorAll("[id^='count-']").forEach(c => c.classList.add("hidden"));
 
-  // abrir solo la seleccionada
+  // abrir solo la elegida
   if (!open) {
     el.style.display = "block";
     if (cnt) cnt.classList.remove("hidden");
