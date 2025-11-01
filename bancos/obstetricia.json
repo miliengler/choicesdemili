@@ -1,0 +1,20 @@
+[
+  {
+    "id": "OB-001",
+    "materia": "obstetricia",
+    "subtema": "Controles prenatales",
+    "enunciado": "Gestante de 12 semanas, ¿qué estudio no corresponde al primer control?",
+    "opciones": ["Grupo y factor Rh", "Glucemia", "VDRL", "Urocultivo a las 28 semanas"],
+    "correcta": 3,
+    "explicacion": "El urocultivo a las 28 semanas no forma parte del primer control prenatal."
+  },
+  {
+    "id": "OB-002",
+    "materia": "obstetricia",
+    "subtema": "Trabajo de parto",
+    "enunciado": "En una primigesta en trabajo de parto activo, ¿cuál es el rango normal de dilatación cervical por hora?",
+    "opciones": ["0.5 cm/h", "1 cm/h", "2 cm/h", "3 cm/h"],
+    "correcta": 1,
+    "explicacion": "En nulíparas, la dilatación progresa en promedio 1 cm/h durante la fase activa."
+  }
+]
