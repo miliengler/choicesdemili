@@ -55,12 +55,19 @@ function renderSubjects(){
 }
 
 window.toggleAcc = (slug)=>{
-  const el=document.getElementById(`acc-${slug}`);
-  const cnt=document.getElementById(`count-${slug}`);
-  const open=el.style.display==="block";
-  document.querySelectorAll(".acc-content").forEach(e=>e.style.display="none");
-  document.querySelectorAll(".acc-count").forEach(c=>c.classList.add("hidden"));
-  if(!open){ el.style.display="block"; cnt.classList.remove("hidden"); }
+  const el = document.getElementById(`acc-${slug}`);
+  const cnt = document.getElementById(`count-${slug}`);
+  const open = el.style.display === "block";
+
+  // cerrar todos los demás
+  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
+  document.querySelectorAll("[id^='count-']").forEach(c => c.classList.add("hidden"));
+
+  // abrir solo la seleccionada
+  if (!open) {
+    el.style.display = "block";
+    if (cnt) cnt.classList.remove("hidden");
+  }
 };
 
 function getStart(slug,total){
