@@ -30,15 +30,16 @@ function renderExamenSetup(){
 
       <div id="matList">${checks || "<p class='small'>No hay materias cargadas.</p>"}</div>
 
-      <div style="margin-top:10px;">
-        <label for="numPreg" class="small">Número de preguntas:</label>
-        <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
+      <div style="margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+        <div>
+          <label for="numPreg" class="small">Número de preguntas:</label>
+          <input id="numPreg" type="number" min="1" value="${totalAll}" max="${totalAll}" style="width:90px;margin-left:6px;">
+        </div>
+        <label style="display:flex;align-items:center;gap:6px;">
+          <input type="checkbox" id="chkTimer">
+          <span>⏱️ Activar cronómetro</span>
+        </label>
       </div>
-
-      <label style="display:flex;align-items:center;gap:8px;margin-top:14px;">
-        <input type="checkbox" id="chkTimer">
-        <span>⏱️ Activar cronómetro</span>
-      </label>
 
       <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
         <button class="btn-main" onclick="startExamen()">🎯 Comenzar examen</button>
@@ -73,7 +74,7 @@ function startExamen(){
   const selected = chks.filter(c=>c.checked).map(c=>c.value);
   const numEl = document.getElementById('numPreg');
   const num = Math.max(1, parseInt(numEl?.value||'1',10));
-  const useTimer = document.getElementById('chkTimer')?.checked; // ✅ NUEVO
+  const useTimer = document.getElementById('chkTimer')?.checked;
 
   let pool = (BANK.questions||[]).filter(q=> selected.includes(q.materia));
   if(pool.length===0){
@@ -87,8 +88,11 @@ function startExamen(){
 
   renderExamenPregunta();
 
-  // ✅ Si se activó el cronómetro
-  if(useTimer) initTimer("app");
+  if(useTimer) {
+    initTimer("app");
+  } else {
+    TIMER.elapsed = 0; // reinicia por si quedó de antes
+  }
 }
 
 /* ---------- Render de una pregunta en modo examen ---------- */
@@ -150,12 +154,13 @@ function prevExamen(){
 
 /* ---------- Fin del examen ---------- */
 function renderExamenFin(){
-  stopTimer(); // ✅ Detiene el cronómetro al terminar
+  stopTimer();
   const prog = PROG.general||{};
   const answered = CURRENT.list.filter(q=>prog[q.id]);
   const ok = answered.filter(q=>prog[q.id]?.status==='ok').length;
   const bad = answered.filter(q=>prog[q.id]?.status==='bad').length;
   const porc = answered.length ? Math.round((ok/answered.length)*100) : 0;
+  const tiempo = TIMER.elapsed ? formatTime(TIMER.elapsed) : null;
 
   app.innerHTML = `
     <div class="card fade" style="text-align:center;">
@@ -164,6 +169,7 @@ function renderExamenFin(){
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
       <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
       <p><b>Precisión:</b> ${porc}%</p>
+      ${tiempo ? `<p><b>⏱️ Tiempo total:</b> ${tiempo}</p>` : ""}
       <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
         <button class="btn-main" onclick="renderExamenSetup()">🧠 Nuevo examen</button>
         <button class="btn-small" onclick="renderHome()">🏠 Volver al inicio</button>
