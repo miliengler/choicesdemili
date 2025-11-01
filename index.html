@@ -795,19 +795,26 @@ function startExamenGeneral(){
   const num = Math.max(1, parseInt(numEl?.value||'1',10));
 
   let pool = (BANK.questions||[]).filter(q=> selected.includes(q.materia));
-  if(pool.length===0){ alert("Seleccioná al menos una materia con preguntas."); return; }
+  if(pool.length===0){ 
+    alert("Seleccioná al menos una materia con preguntas."); 
+    return; 
+  }
 
   pool.sort(()=>Math.random()-0.5);
   const chosen = pool.slice(0, Math.min(num, pool.length));
 
   CURRENT = { list: chosen, i: 0, modo: 'examen', materia: 'general', session: {} };
 
-  // 🕒 Mostrar botón del cronómetro solo en modo examen
-  clearExamTimer();   // por si hay uno previo
-  initExamTimer();    // crea el botón flotante ⏱️
+  // 🧹 Limpiamos cualquier cronómetro previo
+  clearExamTimer();
 
+  // 🖼️ Renderizamos la primera pregunta
   renderQuestionWithSidebar(true);
+
+  // 🕒 Ahora sí creamos el botón flotante del cronómetro
+  initExamTimer();
 }
+  
   // ---------- Notas personales ----------
 window.toggleNote = (qid)=>{
   const area = document.getElementById(`noteArea-${qid}`);
