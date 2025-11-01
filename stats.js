@@ -57,3 +57,59 @@ function resetGlobalStats(){
     renderStatsGlobal();
   }
 }
+/* === 🔹 Sugerencias inteligentes de repaso === */
+const sugerencias = [];
+
+// Buscar materias con datos de progreso
+Object.keys(PROG).forEach(slug => {
+  const datos = PROG[slug];
+  const mat = subjectsFromBank().find(s => s.slug === slug);
+  if (!mat || !datos) return;
+
+  // Calcular fecha del último intento
+  const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000 * 60 * 60 * 24)) : null;
+
+  // Calcular porcentaje de aciertos
+  const tot = Object.keys(datos).filter(k => !k.startsWith("_")).length;
+  const ok = Object.values(datos).filter(v => v.status === "ok").length;
+  const pct = tot > 0 ? Math.round((ok / tot) * 100) : null;
+
+  sugerencias.push({ slug, materia: mat.name, dias, pct });
+});
+
+// Filtrar y ordenar
+const conDatos = sugerencias.filter(s => s.dias !== null || s.pct !== null);
+conDatos.sort((a, b) => {
+  if (a.pct !== b.pct) return a.pct - b.pct;
+  if (a.dias !== b.dias) return b.dias - a.dias;
+  return 0;
+});
+
+// Hasta 3 sugerencias
+const topSug = conDatos.slice(0, 3);
+
+let sugHTML = "";
+if (topSug.length) {
+  sugHTML = `
+    <div class="card" style="margin-top:24px;">
+      <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+      <ul style="list-style:none;padding:0;margin:0;">
+        ${topSug.map(s => {
+          const repaso = s.pct !== null && s.pct < 70
+            ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
+            : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
+
+          return `
+            <li style="margin:10px 0;">
+              ${repaso}<br>
+              <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;">
+                <button class="btn-small" onclick="startPractica('${s.slug}')">▶️ Practicar ahora</button>
+                <button class="btn-small" style="background:#1e40af;border-color:#1e40af;" onclick="openMateria('${s.slug}')">🧩 Ver materia</button>
+              </div>
+            </li>`;
+        }).join("")}
+      </ul>
+    </div>`;
+}
+
+app.innerHTML += sugHTML;
