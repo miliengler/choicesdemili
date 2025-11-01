@@ -160,4 +160,7 @@ function prevPregunta(){
 }
 
 /* ========== INICIO ========== */
-document.addEventListener("DOMContentLoaded", renderHome);
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadExternalBanks(); // Carga automática de bancos JSON
+  renderHome(); // Luego muestra la pantalla principal
+});
