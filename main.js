@@ -12,6 +12,8 @@ async function loadExternalBanks() {
     "saludpublica"
   ];
 
+  window.BANK = { questions: [], subjects: [] };
+
   for (const mat of materias) {
     try {
       const res = await fetch(`bancos/${mat}.json`);
@@ -19,19 +21,15 @@ async function loadExternalBanks() {
       const data = await res.json();
       if (Array.isArray(data)) {
         console.log(`✅ Cargado banco: ${mat} (${data.length} preguntas)`);
-        // Si existe BANK.questions, la usamos; si no, la creamos
-        if (!window.BANK) window.BANK = { questions: [], subjects: [] };
         BANK.questions.push(...data);
-
-        // Asegurar que aparezca la materia en la lista
-        if (!BANK.subjects.find(s => s.slug === mat)) {
-          BANK.subjects.push({ slug: mat, name: mat[0].toUpperCase() + mat.slice(1) });
-        }
+        BANK.subjects.push({ slug: mat, name: mat[0].toUpperCase() + mat.slice(1) });
       }
     } catch (err) {
       console.warn(`⚠️ No se pudo cargar ${mat}.json`, err);
     }
   }
+
+  console.log("📚 Total de preguntas cargadas:", BANK.questions.length);
 }
 
 /* ---------- Tema claro/oscuro ---------- */
@@ -51,34 +49,30 @@ const THEME_KEY = "mebank_theme";
   }
 })();
 
-/* ========== LISTA DE MATERIAS (inicial mínima) ========== */
-const MATERIAS = [
-  { slug: "obstetricia", name: "🤰 Obstetricia" }
-];
-
 /* ========== HOME ========== */
 function renderHome(){
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
-      <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('🧠 Modo examen en desarrollo')">🧠 Modo Examen – Creá el tuyo</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
-      <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
     </div>
   `;
 }
 
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
-  const list = (BANK?.subjects?.length ? BANK.subjects : MATERIAS).map(m => `
+  if(!BANK || BANK.subjects.length === 0){
+    app.innerHTML = `<div class="card">⚠️ No se cargaron bancos.<br><br><button class="btn-main" onclick="renderHome()">Volver</button></div>`;
+    return;
+  }
+
+  const list = BANK.subjects.map(m => `
     <button class="btn-main" onclick="loadMateria('${m.slug}')">${m.name}</button>
   `).join("");
 
   app.innerHTML = `
     <div class="card" style="text-align:center">
       <button class="btn-small" style="margin-bottom:10px" onclick="renderHome()">⬅️ Volver</button>
-      <p class="small">Seleccioná una materia para cargar sus preguntas (bajo demanda).</p>
+      <p class="small">Seleccioná una materia para ver sus preguntas.</p>
       ${list}
     </div>
   `;
@@ -163,6 +157,6 @@ function prevPregunta(){
 
 /* ========== INICIO ========== */
 document.addEventListener("DOMContentLoaded", async () => {
-  await loadExternalBanks(); // carga los JSON al abrir la app
+  await loadExternalBanks(); // carga los JSON desde /bancos/
   renderHome();
 });
