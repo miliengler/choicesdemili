@@ -1,3 +1,4 @@
+alert("✅ El script está funcionando correctamente");
 /* ---------- Persistencia ---------- */
 const LS_BANK="mebank_bank_v6_2", LS_PROGRESS="mebank_prog_v6_2", LS_THEME="mebank_theme", LS_ADMIN="mebank_admin_hash_v6_2";
 
