@@ -11,7 +11,7 @@ function renderHome(){
   `;
 }
 
-/* ========== LISTA DE MATERIAS ========== */
+/* ========== LISTA DE MATERIAS (ESTILO ORIGINAL SIN NUMERACIÓN) ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -19,18 +19,23 @@ function renderSubjects(){
     )
   );
 
-  const list = subs.map((s,i) => `
-    <li class='acc-item' style="list-style:none;margin-bottom:10px;">
-      <button class='btn-main' style='width:100%;text-align:left;justify-content:space-between;display:flex;align-items:center;'
-              onclick='toggleAcc("${s.slug}")'>
-        <span>${i+1}. ${s.name}</span>
-        <span id='count-${s.slug}' class='hidden' style='font-size:13px;color:var(--muted)'>
+  const list = subs.map((s) => `
+    <li class='acc-item' style="list-style:none;margin:8px 0;">
+      <div class='acc-header' 
+           style="background:var(--card);border:1px solid var(--line);border-radius:10px;
+                  padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
+                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);"
+           onclick='toggleAcc("${s.slug}")'>
+        <div style="font-weight:500;">${s.name}</div>
+        <div id='count-${s.slug}' class='hidden' 
+             style="font-size:13px;color:var(--muted);">
           ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
-        </span>
-      </button>
+        </div>
+      </div>
 
-      <div class='acc-content' id='acc-${s.slug}' style='display:none;padding-left:10px;margin-top:6px'>
-        <div class='acc-actions'>
+      <div class='acc-content' id='acc-${s.slug}' 
+           style='display:none;padding-left:12px;margin-top:8px'>
+        <div class='acc-actions' style="display:flex;gap:8px;flex-wrap:wrap;">
           <label class='small'>Desde # 
             <input type='number' id='start-${s.slug}' min='1' value='1'>
           </label>
@@ -65,7 +70,6 @@ window.toggleAcc = (slug)=>{
     if (cnt) cnt.classList.remove("hidden");
   }
 };
-
 function getStart(slug,total){
   const el = document.getElementById(`start-${slug}`);
   let v = parseInt((el && el.value) ? el.value : "1", 10);
