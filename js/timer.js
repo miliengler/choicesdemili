@@ -34,12 +34,12 @@ function initTimer(containerId = "app") {
   `;
 
 timerBox.innerHTML = `
-  <span id="timerDisplay">00:00:00</span> –
-  <button class="btn-mini" id="pauseBtn" title="Pausar / Reanudar">⏯</button>
-  <button class="btn-mini" id="resetBtn" title="Reiniciar">↺</button>
-  <button class="btn-mini" id="stopBtn" title="Detener">■</button>
+  ⏱️ <span id="timerDisplay">00:00:00</span> –
+  <button class="btn-mini" id="pauseBtn" title="Pausar / Reanudar">Pausar</button>
+  <button class="btn-mini" id="resetBtn" title="Reiniciar">Reiniciar</button>
+  <button class="btn-mini" id="stopBtn" title="Detener">Detener</button>
 `;
-
+  
   container.append(timerBox);
   startTimer();
 
