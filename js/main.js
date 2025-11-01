@@ -174,3 +174,14 @@ function answer(i) {
   saveAll();
   renderPregunta();
 }
+function openMateria(slug) {
+  renderSubjects(); // muestra el menú de materias
+  setTimeout(() => {
+    const el = document.getElementById(`acc-${slug}`);
+    if (el) {
+      el.style.display = "block";
+      const head = document.querySelector(`[onclick="toggleAcc('${slug}')"]`);
+      if (head) head.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, 100);
+}
