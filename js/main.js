@@ -162,15 +162,21 @@ function updateLastIndex() {
     saveAll();
   }
 }
-
-/* ========== RESPUESTA ========== */
 function answer(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = CURRENT.materia || 'general';
   PROG[slug] = PROG[slug] || {};
+
+  // Evitar cambiar respuestas ya registradas
   if (PROG[slug][q.id]) return;
+
+  // Guardar resultado
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
   PROG[slug]._lastIndex = CURRENT.i;
+
+  // 🕒 Guardar fecha del último intento
+  PROG[slug]._lastDate = Date.now();
+
   saveAll();
   renderPregunta();
 }
