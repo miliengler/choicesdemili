@@ -275,8 +275,14 @@ function resetBanco(){
   }
 }
   console.log("✅ Script llegó hasta renderHome()");
-alert("✅ Script llegó hasta renderHome()");
-renderHome();
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("🚀 Ejecutando renderHome después de cargar DOM");
+  try {
+    renderHome();
+  } catch(e) {
+    console.error("❌ Error al renderizar home:", e);
+  }
+});
 
 function renderOld(){
   app.innerHTML=`<div class="card" style="text-align:center">📄 Próximamente.<br><br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
