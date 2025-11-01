@@ -1,4 +1,4 @@
-/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B (barra inferior del card) ========== */
+/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo C (flotante circular) ========== */
 let TIMER = {
   interval: null,
   startTime: 0,
@@ -7,8 +7,7 @@ let TIMER = {
 };
 
 /**
- * Inicia un cronómetro visible dentro del contenedor indicado (por defecto "app").
- * @param {string} containerId - ID del contenedor donde insertar el cronómetro.
+ * Inicia un cronómetro visible, flotante arriba a la derecha.
  */
 function initTimer(containerId = "app") {
   const container = document.getElementById(containerId);
@@ -18,22 +17,44 @@ function initTimer(containerId = "app") {
   TIMER.running = false;
   clearInterval(TIMER.interval);
 
-  // 🔹 Crear UI del cronómetro (en la parte inferior del card)
-  const timerBox = document.createElement("div");
-  timerBox.id = "timerBox";
-  timerBox.style = `
-    text-align:center;
-    margin-top:14px;
-    color:var(--muted);
-    font-size:14px;
+  // 🔹 Crear el círculo flotante
+  const timerCircle = document.createElement("div");
+  timerCircle.id = "timerCircle";
+  timerCircle.style = `
+    position:fixed;
+    top:12px;
+    right:16px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#1e3a8a;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     font-weight:600;
+    font-size:13px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.25);
+    z-index:999;
+    cursor:pointer;
+    transition:opacity 0.3s;
   `;
-  timerBox.innerHTML = `⏱️ <span id="timerDisplay">00:00:00</span>`;
+  timerCircle.innerHTML = `<span id="timerDisplay">00:00</span>`;
 
-  // se agrega al final del contenedor principal
-  container.append(timerBox);
-
+  document.body.append(timerCircle);
   startTimer();
+
+  // 🔸 Toque para pausar/reanudar
+  timerCircle.onclick = () => {
+    if (TIMER.running) {
+      clearInterval(TIMER.interval);
+      TIMER.running = false;
+      timerCircle.style.opacity = 0.5;
+    } else {
+      startTimer();
+      timerCircle.style.opacity = 1;
+    }
+  };
 }
 
 /* ========== Lógica interna ========== */
@@ -46,18 +67,19 @@ function startTimer() {
 function stopTimer() {
   clearInterval(TIMER.interval);
   TIMER.running = false;
+  const el = document.getElementById("timerCircle");
+  if (el) el.remove(); // elimina el círculo al terminar
 }
 
 function updateTimer() {
   TIMER.elapsed = Date.now() - TIMER.startTime;
   const el = document.getElementById("timerDisplay");
-  if (el) el.textContent = formatTime(TIMER.elapsed);
+  if (el) el.textContent = formatTimeShort(TIMER.elapsed);
 }
 
-function formatTime(ms) {
+function formatTimeShort(ms) {
   const total = Math.floor(ms / 1000);
-  const h = String(Math.floor(total / 3600)).padStart(2, "0");
-  const m = String(Math.floor((total % 3600) / 60)).padStart(2, "0");
+  const m = String(Math.floor(total / 60)).padStart(2, "0");
   const s = String(total % 60).padStart(2, "0");
-  return `${h}:${m}:${s}`;
+  return `${m}:${s}`;
 }
