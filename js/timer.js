@@ -1,4 +1,4 @@
-/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B+ (inferior, con control minimalista) ========== */
+/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B (texto limpio) ========== */
 let TIMER = {
   interval: null,
   startTime: 0,
@@ -7,7 +7,7 @@ let TIMER = {
 };
 
 /**
- * Inicia un cronómetro centrado abajo con controles discretos.
+ * Inicia un cronómetro centrado abajo con controles discretos (texto).
  */
 function initTimer(containerId = "app") {
   const container = document.getElementById(containerId);
@@ -17,7 +17,7 @@ function initTimer(containerId = "app") {
   TIMER.running = false;
   clearInterval(TIMER.interval);
 
-  // 🔹 Crear UI del cronómetro (parte inferior, con botones en línea)
+  // 🔹 Crear UI del cronómetro
   const timerBox = document.createElement("div");
   timerBox.id = "timerBox";
   timerBox.style = `
@@ -34,10 +34,10 @@ function initTimer(containerId = "app") {
   `;
 
   timerBox.innerHTML = `
-    ⏱️ <span id="timerDisplay">00:00:00</span> —
-    <button class="btn-mini" id="pauseBtn" title="Pausar / Reanudar">⏸️</button>
-    <button class="btn-mini" id="resetBtn" title="Reiniciar">🔄</button>
-    <button class="btn-mini" id="stopBtn" title="Detener">✖️</button>
+    <span id="timerDisplay">00:00:00</span> –
+    <button class="btn-mini" id="pauseBtn" title="Pausar o reanudar">Pausar</button>
+    <button class="btn-mini" id="resetBtn" title="Reiniciar tiempo">Reiniciar</button>
+    <button class="btn-mini" id="stopBtn" title="Detener y finalizar">Detener</button>
   `;
 
   container.append(timerBox);
@@ -54,7 +54,7 @@ function startTimer() {
   TIMER.running = true;
   TIMER.interval = setInterval(updateTimer, 1000);
   const btn = document.getElementById("pauseBtn");
-  if (btn) btn.textContent = "⏸️";
+  if (btn) btn.textContent = "Pausar";
 }
 
 function togglePause() {
@@ -64,7 +64,7 @@ function togglePause() {
   if (TIMER.running) {
     clearInterval(TIMER.interval);
     TIMER.running = false;
-    btn.textContent = "▶️";
+    btn.textContent = "Reanudar";
   } else {
     startTimer();
   }
@@ -80,7 +80,7 @@ function stopTimer() {
   clearInterval(TIMER.interval);
   TIMER.running = false;
   const el = document.getElementById("timerDisplay");
-  if (el) el.textContent = `✅ ${formatTime(TIMER.elapsed)}`;
+  if (el) el.textContent = `Finalizado (${formatTime(TIMER.elapsed)})`;
   document.getElementById("pauseBtn").disabled = true;
   document.getElementById("resetBtn").disabled = true;
   document.getElementById("stopBtn").disabled = true;
@@ -106,14 +106,16 @@ style.textContent = `
   .btn-mini {
     background:none;
     border:none;
-    font-size:15px;
+    font-size:13px;
+    color:var(--muted);
     cursor:pointer;
-    padding:2px 5px;
+    padding:2px 6px;
     border-radius:6px;
-    transition:background 0.2s;
+    transition:background 0.2s, color 0.2s;
   }
   .btn-mini:hover {
     background:var(--soft);
+    color:var(--text);
   }
   .btn-mini:disabled {
     opacity:0.4;
