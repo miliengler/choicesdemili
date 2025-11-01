@@ -979,6 +979,10 @@ function clearExamTimer() {
   const btn = document.getElementById("timerBtn");
   if (btn) btn.remove();
 }
+  // 🔧 Fix: aseguramos que renderHome se ejecute siempre
+if (typeof renderHome === "function") {
+  renderHome();
+}
 </script>
 </body>
 </html>
