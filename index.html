@@ -805,15 +805,14 @@ function startExamenGeneral(){
 
   CURRENT = { list: chosen, i: 0, modo: 'examen', materia: 'general', session: {} };
 
-  // 🧹 Limpiamos cualquier cronómetro previo
+    // 🧹 Limpiamos cualquier cronómetro previo
   clearExamTimer();
 
   // 🖼️ Renderizamos la primera pregunta
   renderQuestionWithSidebar(true);
 
-  // 🕒 Ahora sí creamos el botón flotante del cronómetro
-  initExamTimer();
-}
+  // 🕒 Crear el botón del cronómetro justo después del render
+  setTimeout(initExamTimer, 50);
   
   // ---------- Notas personales ----------
 window.toggleNote = (qid)=>{
