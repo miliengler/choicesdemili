@@ -1,5 +1,36 @@
 /* ========== CONFIG BÁSICA ========== */
 const app = document.getElementById("app");
+/* ---------- Cargar bancos externos ---------- */
+async function loadExternalBanks() {
+  const materias = [
+    "obstetricia",
+    "ginecologia",
+    "pediatria",
+    "medicinainterna",
+    "cirugiageneral",
+    "saludpublica"
+  ];
+
+  for (const mat of materias) {
+    try {
+      const res = await fetch(`bancos/${mat}.json`);
+      if (!res.ok) continue;
+      const data = await res.json();
+      if (Array.isArray(data)) {
+        console.log(`✅ Cargado banco: ${mat} (${data.length} preguntas)`);
+        BANK.questions.push(...data);
+        // Asegurar que aparezca la materia
+        if (!BANK.subjects.find(s => s.slug === mat)) {
+          BANK.subjects.push({ slug: mat, name: mat[0].toUpperCase() + mat.slice(1) });
+        }
+      }
+    } catch (err) {
+      console.warn(`⚠️ No se pudo cargar ${mat}.json`, err);
+    }
+  }
+
+  saveAll();
+}
 const THEME_KEY = "mebank_theme";
 
 /* --- Tema claro/oscuro --- */
