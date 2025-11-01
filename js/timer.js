@@ -1,4 +1,4 @@
-/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo C (flotante circular) ========== */
+/* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B+ (inferior, con control minimalista) ========== */
 let TIMER = {
   interval: null,
   startTime: 0,
@@ -7,7 +7,7 @@ let TIMER = {
 };
 
 /**
- * Inicia un cronómetro visible, flotante arriba a la derecha.
+ * Inicia un cronómetro centrado abajo con controles discretos.
  */
 function initTimer(containerId = "app") {
   const container = document.getElementById(containerId);
@@ -17,44 +17,35 @@ function initTimer(containerId = "app") {
   TIMER.running = false;
   clearInterval(TIMER.interval);
 
-  // 🔹 Crear el círculo flotante
-  const timerCircle = document.createElement("div");
-  timerCircle.id = "timerCircle";
-  timerCircle.style = `
-    position:fixed;
-    top:12px;
-    right:16px;
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    background:#1e3a8a;
-    color:#fff;
+  // 🔹 Crear UI del cronómetro (parte inferior, con botones en línea)
+  const timerBox = document.createElement("div");
+  timerBox.id = "timerBox";
+  timerBox.style = `
+    text-align:center;
+    margin-top:14px;
+    color:var(--muted);
+    font-size:14px;
+    font-weight:600;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-weight:600;
-    font-size:13px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.25);
-    z-index:999;
-    cursor:pointer;
-    transition:opacity 0.3s;
+    gap:8px;
+    flex-wrap:wrap;
   `;
-  timerCircle.innerHTML = `<span id="timerDisplay">00:00</span>`;
 
-  document.body.append(timerCircle);
+  timerBox.innerHTML = `
+    ⏱️ <span id="timerDisplay">00:00:00</span> —
+    <button class="btn-mini" id="pauseBtn" title="Pausar / Reanudar">⏸️</button>
+    <button class="btn-mini" id="resetBtn" title="Reiniciar">🔄</button>
+    <button class="btn-mini" id="stopBtn" title="Detener">✖️</button>
+  `;
+
+  container.append(timerBox);
   startTimer();
 
-  // 🔸 Toque para pausar/reanudar
-  timerCircle.onclick = () => {
-    if (TIMER.running) {
-      clearInterval(TIMER.interval);
-      TIMER.running = false;
-      timerCircle.style.opacity = 0.5;
-    } else {
-      startTimer();
-      timerCircle.style.opacity = 1;
-    }
-  };
+  document.getElementById("pauseBtn").onclick = togglePause;
+  document.getElementById("resetBtn").onclick = resetTimer;
+  document.getElementById("stopBtn").onclick = stopTimer;
 }
 
 /* ========== Lógica interna ========== */
@@ -62,24 +53,71 @@ function startTimer() {
   TIMER.startTime = Date.now() - TIMER.elapsed;
   TIMER.running = true;
   TIMER.interval = setInterval(updateTimer, 1000);
+  const btn = document.getElementById("pauseBtn");
+  if (btn) btn.textContent = "⏸️";
+}
+
+function togglePause() {
+  const btn = document.getElementById("pauseBtn");
+  if (!btn) return;
+
+  if (TIMER.running) {
+    clearInterval(TIMER.interval);
+    TIMER.running = false;
+    btn.textContent = "▶️";
+  } else {
+    startTimer();
+  }
+}
+
+function resetTimer() {
+  TIMER.elapsed = 0;
+  TIMER.startTime = Date.now();
+  updateTimer();
 }
 
 function stopTimer() {
   clearInterval(TIMER.interval);
   TIMER.running = false;
-  const el = document.getElementById("timerCircle");
-  if (el) el.remove(); // elimina el círculo al terminar
+  const el = document.getElementById("timerDisplay");
+  if (el) el.textContent = `✅ ${formatTime(TIMER.elapsed)}`;
+  document.getElementById("pauseBtn").disabled = true;
+  document.getElementById("resetBtn").disabled = true;
+  document.getElementById("stopBtn").disabled = true;
 }
 
 function updateTimer() {
   TIMER.elapsed = Date.now() - TIMER.startTime;
   const el = document.getElementById("timerDisplay");
-  if (el) el.textContent = formatTimeShort(TIMER.elapsed);
+  if (el) el.textContent = formatTime(TIMER.elapsed);
 }
 
-function formatTimeShort(ms) {
+function formatTime(ms) {
   const total = Math.floor(ms / 1000);
-  const m = String(Math.floor(total / 60)).padStart(2, "0");
+  const h = String(Math.floor(total / 3600)).padStart(2, "0");
+  const m = String(Math.floor((total % 3600) / 60)).padStart(2, "0");
   const s = String(total % 60).padStart(2, "0");
-  return `${m}:${s}`;
+  return `${h}:${m}:${s}`;
 }
+
+/* --- Botón mini minimalista (usa estilos base del sitio) --- */
+const style = document.createElement("style");
+style.textContent = `
+  .btn-mini {
+    background:none;
+    border:none;
+    font-size:15px;
+    cursor:pointer;
+    padding:2px 5px;
+    border-radius:6px;
+    transition:background 0.2s;
+  }
+  .btn-mini:hover {
+    background:var(--soft);
+  }
+  .btn-mini:disabled {
+    opacity:0.4;
+    cursor:default;
+  }
+`;
+document.head.appendChild(style);
