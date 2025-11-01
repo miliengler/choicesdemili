@@ -252,9 +252,7 @@ const app=document.getElementById("app");
       <button class="btn-main" style="background:#64748b;border-color:#64748b;" onclick="resetBanco()">
         🧹 Reset banco (temporal)
       </button>
-    </div>
-  `;
-}
+    
 
 function resetBanco(){
   if(confirm("¿Querés borrar el banco actual y recargar las materias nuevas?")){
@@ -787,6 +785,7 @@ function startExamenGeneral(){
   pool.sort(()=>Math.random()-0.5);
   const chosen = pool.slice(0, Math.min(num, pool.length));
   CURRENT = { list: chosen, i: 0, modo: 'examen', materia: 'general', session: {} };
+  initExamTimer();
   renderQuestionWithSidebar(true);
 }
   // ---------- Notas personales ----------
