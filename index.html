@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ME banco de preguntas – Choices Examen Residencia</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ME banco de preguntas – Choices Examen Residencia</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <div class="header">
     <div class="wrap brand">
@@ -23,8 +25,9 @@
 
   <div class="footer">Vos podés ❤️</div>
 
-  <button id="themeBtn" class="theme-toggle" title="Cambiar tema">🌙</button>
-
-  <script src="main.js"></script>
+  <!-- JS en orden: data → UI → bootstrap -->
+  <script src="js/bank.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
