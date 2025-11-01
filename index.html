@@ -895,6 +895,63 @@ function deleteNote(id){
   };
   renderQuestionWithSidebar(true);
 }
+  /* ---------- Cronómetro modo examen ---------- */
+let examTimer = null;
+let examSeconds = 0;
+
+function initExamTimer() {
+  // Crea el botón flotante si no existe
+  if (document.getElementById("timerBtn")) return;
+
+  const btn = document.createElement("button");
+  btn.id = "timerBtn";
+  btn.className = "timer-toggle";
+  btn.textContent = "⏱️ Encender";
+  btn.onclick = toggleExamTimer;
+  document.body.appendChild(btn);
+}
+
+function toggleExamTimer() {
+  const btn = document.getElementById("timerBtn");
+  if (!btn) return;
+
+  if (examTimer) {
+    // 🔴 Detener
+    clearInterval(examTimer);
+    examTimer = null;
+    localStorage.setItem("mebank_exam_timer", examSeconds);
+    btn.textContent = "⏱️ Encender";
+  } else {
+    // 🟢 Iniciar
+    const saved = parseInt(localStorage.getItem("mebank_exam_timer") || "0", 10);
+    examSeconds = isNaN(saved) ? 0 : saved;
+    updateExamTimerDisplay();
+    examTimer = setInterval(() => {
+      examSeconds++;
+      updateExamTimerDisplay();
+      localStorage.setItem("mebank_exam_timer", examSeconds);
+    }, 1000);
+  }
+}
+
+function updateExamTimerDisplay() {
+  const btn = document.getElementById("timerBtn");
+  if (!btn) return;
+  const h = String(Math.floor(examSeconds / 3600)).padStart(2, "0");
+  const m = String(Math.floor((examSeconds % 3600) / 60)).padStart(2, "0");
+  const s = String(examSeconds % 60).padStart(2, "0");
+  btn.textContent = `⏱️ ${h}:${m}:${s}`;
+}
+
+function clearExamTimer() {
+  // Borra el temporizador y su almacenamiento
+  clearInterval(examTimer);
+  examTimer = null;
+  examSeconds = 0;
+  localStorage.removeItem("mebank_exam_timer");
+  const btn = document.getElementById("timerBtn");
+  if (btn) btn.remove();
+}
 </script>
 </body>
 </html>
