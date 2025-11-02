@@ -223,23 +223,35 @@ setTimeout(() => {
     document.getElementById("matsList").innerHTML = listHTML;
   }
 
-  const matsHTML = `
-    <div class="card fade" style="margin-top:24px;text-align:center;">
-      <h3>📈 Estadísticas por materia</h3>
-      <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
+const matsHTML = `
+  <div class="card fade" style="margin-top:24px;text-align:center;">
+    <h3>📈 Estadísticas por materia</h3>
+    <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
 
-      <div style="display:flex;gap:10px;justify-content:center;margin:10px 0 20px;">
-        <button class="btn-small" 
-                style="background:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'}"
-                onclick="setOrder('alpha')">🔠 Ordenar alfabéticamente</button>
-        <button class="btn-small" 
-                style="background:${currentOrder === 'progress' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'progress' ? '#1e40af' : '#64748b'}"
-                onclick="setOrder('progress')">📊 Ordenar por progreso</button>
-      </div>
+    <div style="display:flex;gap:10px;justify-content:center;margin:14px 0 22px;">
+      <button class="btn-small" 
+              style="background:#f8fafc;color:#1e40af;border:1px solid #cbd5e1;
+                     font-weight:600;padding:10px 18px;border-radius:10px;
+                     transition:all .2s ease;
+                     ${currentOrder === 'alpha' ? 'box-shadow:0 0 0 2px #1e40af40' : ''}"
+              onmouseover="this.style.background='#e0e7ff'"
+              onmouseout="this.style.background='#f8fafc'"
+              onclick="setOrder('alpha')">🔠 Ordenar alfabéticamente</button>
 
-      <ul id="matsList" style="list-style:none;padding:0;margin:0;"></ul>
+      <button class="btn-small" 
+              style="background:#f8fafc;color:#1e40af;border:1px solid #cbd5e1;
+                     font-weight:600;padding:10px 18px;border-radius:10px;
+                     transition:all .2s ease;
+                     ${currentOrder === 'progress' ? 'box-shadow:0 0 0 2px #1e40af40' : ''}"
+              onmouseover="this.style.background='#e0e7ff'"
+              onmouseout="this.style.background='#f8fafc'"
+              onclick="setOrder('progress')">📊 Ordenar por progreso</button>
     </div>
-  `;
+
+    <ul id="matsList" style="list-style:none;padding:0;margin:0;"></ul>
+  </div>
+`;
+  
   app.innerHTML += matsHTML;
   renderMatsList();
 }
