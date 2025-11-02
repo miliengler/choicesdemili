@@ -212,6 +212,11 @@ function prevExamen() {
 /* ---------- Fin del examen ---------- */
 function renderExamenFin() {
   stopTimer();
+
+  // 🔹 eliminar el cronómetro flotante si existe
+  const timerEl = document.getElementById("exam-timer");
+  if (timerEl) timerEl.remove();
+
   const prog = PROG.general || {};
   const answered = CURRENT.list.filter(q => prog[q.id]);
   const ok = answered.filter(q => prog[q.id]?.status === "ok").length;
