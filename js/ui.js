@@ -77,7 +77,46 @@ function getStart(slug,total){
   if(v>total) v = total;
   return v;
 }
+function openSubject(slug) {
+  const subject = BANK.subjects.find(s => s.slug === slug);
+  const preguntas = BANK.questions.filter(q => q.materia === slug);
+  const progreso = PROG[slug] || {};
+  const total = preguntas.length;
+  const tieneProgreso = progreso._lastIndex !== undefined;
 
+  app.innerHTML = `
+    <div class="subject-screen">
+      <h2>${subject.name}</h2>
+      <p>${total} preguntas disponibles</p>
+      <button id="btnFrom">📘 Desde #</button>
+      <button id="btnPractice">🧩 Práctica</button>
+      <button id="btnReview">📖 Repasar (solo incorrectas)</button>
+      ${tieneProgreso 
+        ? `<button id="btnResume">🔄 Reanudar (desde la #${progreso._lastIndex + 1})</button>` 
+        : ""}
+      <button id="btnStats">📊 Estadísticas</button>
+      <button id="btnNotes">🗒️ Notas</button>
+      <button id="btnBack">⬅️ Volver</button>
+    </div>
+  `;
+
+  // --- Asignación de botones ---
+  document.getElementById("btnFrom").onclick = () => {
+    const start = parseInt(prompt(`¿Desde qué número querés comenzar? (1–${total})`)) || 1;
+    startExam(slug, start - 1, {modo:"practica"});
+  };
+
+  document.getElementById("btnPractice").onclick = () => startExam(slug, 0, {modo:"practica"});
+  document.getElementById("btnReview").onclick = () => startExam(slug, 0, {modo:"repaso"});
+
+  const btnResume = document.getElementById("btnResume");
+  if (btnResume) btnResume.onclick = () => startExam(slug, progreso._lastIndex || 0, {modo:"reanudar"});
+
+  // Botones de futuro desarrollo
+  document.getElementById("btnStats").onclick = () => alert("📊 Próximamente: estadísticas visuales");
+  document.getElementById("btnNotes").onclick = () => alert("🗒️ Aún no hay notas guardadas");
+  document.getElementById("btnBack").onclick = renderMainMenu;
+}
 /* ========== MOTOR DE PREGUNTAS ========== */
 let CURRENT = { list:[], i:0, materia:"" };
 
