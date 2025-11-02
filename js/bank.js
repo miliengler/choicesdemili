@@ -94,3 +94,29 @@ function subjectsFromBank() {
     console.log("ℹ️ No se encontraron nuevos bancos o ya estaban cargados.");
   }
 })();
+/* ---------- Botón temporal para recargar bancos ---------- */
+function addUpdateButton() {
+  const btn = document.createElement("button");
+  btn.textContent = "🔄 Actualizar bancos manualmente";
+  btn.style = `
+    position:fixed;bottom:15px;right:15px;
+    background:#1e40af;color:white;border:none;
+    padding:10px 14px;border-radius:8px;
+    font-size:14px;z-index:9999;cursor:pointer;
+    box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  `;
+  btn.onclick = async () => {
+    btn.textContent = "⏳ Actualizando...";
+    btn.disabled = true;
+    await loadAllBanks(); // vuelve a ejecutar la carga completa
+    btn.textContent = "✅ Bancos actualizados";
+    setTimeout(() => {
+      btn.textContent = "🔄 Actualizar bancos manualmente";
+      btn.disabled = false;
+    }, 2000);
+  };
+  document.body.appendChild(btn);
+}
+
+// Esperar a que el DOM cargue y agregar botón
+window.addEventListener("DOMContentLoaded", addUpdateButton);
