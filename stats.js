@@ -52,33 +52,34 @@ function renderStatsGlobal(){
   `;
 
   /* === 🔹 Sugerencias inteligentes de repaso === */
-  const sugerencias = [];
-  Object.keys(PROG).forEach(slug => {
-    const datos = PROG[slug];
-    const mat = subs.find(s => s.slug === slug);
-    if (!mat || !datos) return;
+const sugerencias = [];
 
-    const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000*60*60*24)) : null;
-    const tot = Object.keys(datos).filter(k => !k.startsWith("_")).length;
-    const okM = Object.values(datos).filter(v => v && typeof v==='object' && v.status === "ok").length;
-    const pct = tot > 0 ? Math.round((okM / tot) * 100) : null;
+Object.keys(PROG).forEach(slug => {
+  const datos = PROG[slug];
+  const mat = subs.find(s => s.slug === slug);
+  if (!mat || !datos) return;
 
-    sugerencias.push({ slug, materia: mat.name, dias, pct });
-  });
+  const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000 * 60 * 60 * 24)) : null;
+  const tot = Object.keys(datos).filter(k => !k.startsWith("_")).length;
+  const okM = Object.values(datos).filter(v => v && typeof v === 'object' && v.status === "ok").length;
+  const pct = tot > 0 ? Math.round((okM / tot) * 100) : null;
 
-  const conDatos = sugerencias.filter(s => s.dias !== null || s.pct !== null);
-  conDatos.sort((a, b) => {
-    if (a.pct !== b.pct) return (a.pct ?? 101) - (b.pct ?? 101);
-    if (a.dias !== b.dias) return (b.dias ?? -1) - (a.dias ?? -1);
-    return 0;
-  });
+  sugerencias.push({ slug, materia: mat.name, dias, pct });
+});
 
-  const topSug = conDatos.slice(0, 3);
+const conDatos = sugerencias.filter(s => s.dias !== null || s.pct !== null);
+conDatos.sort((a, b) => {
+  if (a.pct !== b.pct) return (a.pct ?? 101) - (b.pct ?? 101);
+  if (a.dias !== b.dias) return (b.dias ?? -1) - (a.dias ?? -1);
+  return 0;
+});
+
+const topSug = conDatos.slice(0, 3);
 
 let sugHTML = "";
 if (topSug.length) {
   sugHTML = `
-    <div class="card" style="margin-top:24px;text-align:center;">
+    <div class="card fade" style="margin-top:24px;text-align:center;">
       <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
       <p style="font-size:14px;color:var(--muted)">
         Basadas en tu actividad reciente y precisión por materia.
@@ -90,11 +91,15 @@ if (topSug.length) {
             : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
 
           return `
-            <li style="margin:10px 0;">
+            <li style="margin:14px 0;">
               ${repaso}<br>
-              <div style="margin-top:8px;display:flex;justify-content:center;">
+              <div style="margin-top:10px;display:flex;justify-content:center;">
                 <button class="btn-small"
-                        style="background:#1e40af;border-color:#1e40af;"
+                        style="background:#f8fafc;color:#1e40af;border:1px solid #cbd5e1;
+                               font-weight:600;padding:10px 18px;border-radius:10px;
+                               transition:all .2s ease;"
+                        onmouseover="this.style.background='#e0e7ff'"
+                        onmouseout="this.style.background='#f8fafc'"
                         onclick="openMateriaAuto('${s.slug}')">
                   Ir a practicar
                 </button>
@@ -105,7 +110,7 @@ if (topSug.length) {
     </div>`;
 } else {
   sugHTML = `
-    <div class="card" style="margin-top:24px;text-align:center;">
+    <div class="card fade" style="margin-top:24px;text-align:center;">
       <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
       <p style="color:var(--muted);font-size:14px;">
         Aún no hay datos suficientes para sugerencias.
@@ -113,6 +118,7 @@ if (topSug.length) {
     </div>`;
 }
 
+app.innerHTML += sugHTML;
   /* === 🔜 Progreso total del curso === */
 let totalChoices = 0, totalOk = 0;
 subs.forEach(m => {
