@@ -76,7 +76,7 @@ function renderStatsGlobal(){
     return 0;
   });
 
-  const topSug = conDatos.slice(0, 3);
+   const topSug = conDatos.slice(0, 3);
 
   let sugHTML = "";
   if (topSug.length) {
@@ -87,22 +87,21 @@ function renderStatsGlobal(){
         <ul style="list-style:none;padding:0;margin:0;">
           ${topSug.map(s => {
             const repaso = s.pct !== null && s.pct < 70
-              ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
-              : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
+              ? `📚 Tu promedio más bajo es <b class="link" onclick="openMateria('${s.slug}')">${s.materia}</b> (${s.pct}% correctas).`
+              : `💡 No practicás <b class="link" onclick="openMateria('${s.slug}')">${s.materia}</b> hace ${s.dias} días.`;
 
             return `
               <li style="margin:10px 0;">
                 ${repaso}<br>
                 <div style="margin-top:4px;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;">
-                  <button class="btn-small" onclick="startPractica('${s.slug}')">▶️ Practicar ahora</button>
-                  <button class="btn-small" style="background:#1e40af;border-color:#1e40af;" onclick="openMateria('${s.slug}')">🧩 Ver materia</button>
+                  <button class="btn-small" onclick="openMateria('${s.slug}')">🧩 Ver materia</button>
+                  <button class="btn-small" style="background:#1e40af;border-color:#1e40af;" onclick="startPractica('${s.slug}')">▶️ Practicar</button>
                 </div>
               </li>`;
           }).join("")}
         </ul>
       </div>`;
   } else {
-    // 🟢 Mensaje si no hay datos
     sugHTML = `
       <div class="card" style="margin-top:24px;">
         <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
@@ -112,7 +111,6 @@ function renderStatsGlobal(){
 
   app.innerHTML += sugHTML;
 }
-
 /* ---------- RESET ---------- */
 function resetGlobalStats(){
   if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
