@@ -16,7 +16,8 @@ function renderStatsGlobal(){
   const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
   const today = new Date();
   const days = Array.from({length:7}).map((_,i)=>{
-    const d = new Date(today); d.setDate(today.getDate()-i);
+    const d = new Date(today); 
+    d.setDate(today.getDate()-i);
     const key = d.toISOString().slice(0,10);
     return {date: key, count: STATS_DAILY[key] || 0};
   }).reverse();
@@ -78,40 +79,41 @@ function renderStatsGlobal(){
 
   const topSug = conDatos.slice(0, 3);
 
-let sugHTML = "";
-if (topSug.length) {
-  sugHTML = `
-    <div class="card" style="margin-top:24px;">
-      <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
-      <p style="font-size:14px;color:var(--muted)">Basadas en tu actividad reciente y precisión por materia.</p>
-      <ul style="list-style:none;padding:0;margin:0;">
-        ${topSug.map(s => {
-          const repaso = s.pct !== null && s.pct < 70
-            ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
-            : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
+  let sugHTML = "";
+  if (topSug.length) {
+    sugHTML = `
+      <div class="card" style="margin-top:24px;">
+        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+        <p style="font-size:14px;color:var(--muted)">Basadas en tu actividad reciente y precisión por materia.</p>
+        <ul style="list-style:none;padding:0;margin:0;">
+          ${topSug.map(s => {
+            const repaso = s.pct !== null && s.pct < 70
+              ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
+              : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
 
-          return `
-            <li style="margin:10px 0;">
-              ${repaso}<br>
-              <div style="margin-top:8px;display:flex;justify-content:center;">
-                <button class="btn-small" 
-                        style="background:#1e40af;border-color:#1e40af;"
-                        onclick="openMateriaAuto('${s.slug}')">👉 Ir a practicar</button>
-              </div>
-            </li>`;
-        }).join("")}
-      </ul>
-    </div>`;
-} else {
-  sugHTML = `
-    <div class="card" style="margin-top:24px;">
-      <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
-      <p style="color:var(--muted);font-size:14px;">Aún no hay datos suficientes para sugerencias.</p>
-    </div>`;
+            return `
+              <li style="margin:10px 0;">
+                ${repaso}<br>
+                <div style="margin-top:8px;display:flex;justify-content:center;">
+                  <button class="btn-small" 
+                          style="background:#1e40af;border-color:#1e40af;"
+                          onclick="openMateriaAuto('${s.slug}')">👉 Ir a practicar</button>
+                </div>
+              </li>`;
+          }).join("")}
+        </ul>
+      </div>`;
+  } else {
+    sugHTML = `
+      <div class="card" style="margin-top:24px;">
+        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+        <p style="color:var(--muted);font-size:14px;">Aún no hay datos suficientes para sugerencias.</p>
+      </div>`;
+  }
+
+  app.innerHTML += sugHTML;
 }
 
-app.innerHTML += sugHTML;
-  
 /* ---------- RESET ---------- */
 function resetGlobalStats(){
   if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
@@ -133,7 +135,8 @@ function openMateria(slug) {
     }
   }, 100);
 }
-  function openMateriaAuto(slug) {
+
+function openMateriaAuto(slug) {
   renderSubjects();
   setTimeout(() => {
     const acc = document.getElementById(`acc-${slug}`);
