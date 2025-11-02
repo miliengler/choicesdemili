@@ -10,7 +10,8 @@ function renderHome(){
     </div>
   `;
 }
-/* ========== LISTA DE MATERIAS ========== */
+
+/* ========== LISTA DE MATERIAS (compat iPad) ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -18,16 +19,14 @@ function renderSubjects(){
     )
   );
 
-  const list = subs.map((s) => `
-    <li class='acc-item' style="list-style:none;margin:8px 0;">
-      <div class='acc-header' 
+  // Generamos la lista HTML
+  const list = subs.map((s, i) => `
+    <li class="acc-item" style="list-style:none;margin:8px 0;">
+      <div class="acc-header" data-slug="${s.slug}" 
            style="background:var(--card);border:1px solid var(--line);border-radius:10px;
                   padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
                   align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);
-                  transition:background 0.2s ease;"
-           onclick='openSubject("${s.slug}")'
-           onmouseover="this.style.background='var(--soft)';" 
-           onmouseout="this.style.background='var(--card)';">
+                  transition:background 0.2s ease;">
         <div style="font-weight:500;">${s.name}</div>
         <div style="font-size:13px;color:var(--muted);">
           ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
@@ -37,12 +36,25 @@ function renderSubjects(){
   `).join("");
 
   app.innerHTML = `
-    <div class='card'>
-      <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
-      <ul class='accordion' style="padding:0;margin-top:10px;">${list}</ul>
+    <div class="card">
+      <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
+      <ul class="accordion" style="padding:0;margin-top:10px;">${list}</ul>
     </div>`;
-}
 
+  // 👇 Importante: agregar listeners manuales (funciona en iOS/iPad)
+  document.querySelectorAll(".acc-header").forEach(el => {
+    el.addEventListener("click", () => {
+      const slug = el.getAttribute("data-slug");
+      openSubject(slug);
+    });
+    el.addEventListener("touchstart", () => {
+      el.style.background = "var(--soft)";
+    });
+    el.addEventListener("touchend", () => {
+      el.style.background = "var(--card)";
+    });
+  });
+}
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
   const subject = BANK.subjects.find(s => s.slug === slug);
