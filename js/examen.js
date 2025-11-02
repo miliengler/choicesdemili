@@ -126,7 +126,7 @@ function renderExamenPregunta() {
     return;
   }
 
-  // Si el cronómetro no existe todavía, lo agregamos al DOM arriba de todo
+  // 🕒 Cronómetro (solo se crea una vez)
   if (!document.getElementById("exam-timer")) {
     const timerEl = document.createElement("div");
     timerEl.id = "exam-timer";
@@ -141,29 +141,54 @@ function renderExamenPregunta() {
       padding:8px 12px;
       border-radius:8px;
       box-shadow:0 4px 12px rgba(0,0,0,0.2);
-      z-index:50;
+      z-index:90;
     `;
     timerEl.textContent = "⏱️ 00:00";
     document.body.appendChild(timerEl);
   }
 
+  // Opciones
   const opts = q.opciones.map((t, i) => `
-    <label class="option" onclick='answerExamen(${i})'>
-      <input type='radio' name='opt'> ${String.fromCharCode(97 + i)}) ${t}
+    <label class="option" onclick="answerExamen(${i})">
+      <input type="radio" name="opt"> ${String.fromCharCode(97 + i)}) ${t}
     </label>`).join("");
 
+  // Render principal con layout limpio
   app.innerHTML = `
-    <div class="card fade">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <b>Pregunta ${CURRENT.i + 1}/${CURRENT.list.length}</b>
-        <span class="small">${q.materia?.toUpperCase() || ""}</span>
+    <div class="q-layout">
+      <div class="q-card fade">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <b>Pregunta ${CURRENT.i + 1}/${CURRENT.list.length}</b>
+          <span class="small">${q.materia?.toUpperCase() || ""}</span>
+        </div>
+
+        <div class="enunciado">${q.enunciado}</div>
+
+        <div class="options">${opts}</div>
+
+        <div class="nav-row">
+          <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
+          <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
+          <button class="btn-small" style="background:#64748b;border-color:#64748b"
+            onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
+        </div>
       </div>
-      <div style="margin-top:8px;font-size:18px">${q.enunciado}</div>
-      <div class="options">${opts}</div>
-      <div class="nav-row">
-        <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
-        <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
-        <button class="btn-small" style="background:#64748b;border-color:#64748b" onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
+
+      <!-- Barra lateral del examen -->
+      <div class="sidebar">
+        <div style="font-weight:600;margin-bottom:8px;">Índice</div>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;">
+          ${CURRENT.list.map((_, ix) => `
+            <button class="btn-small"
+              style="
+                font-size:12px;
+                padding:6px;
+                border-radius:8px;
+                ${ix === CURRENT.i ? 'background:#e0ecff;border-color:#1e40af' : ''}
+              "
+              onclick="CURRENT.i=${ix}; renderExamenPregunta();">${ix + 1}</button>
+          `).join('')}
+        </div>
       </div>
     </div>
   `;
