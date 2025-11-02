@@ -34,3 +34,13 @@ button:hover{transform:translateY(-2px)}
 .link:hover {
   color: var(--brand);
 }
+/* === Layout para modo examen con barra lateral === */
+#app.with-sidebar {
+  margin-right: 220px; /* deja espacio para la barra de 200px + margen */
+  transition: margin-right 0.3s ease;
+}
+
+#app.fullwidth {
+  margin-right: 0;
+  transition: margin-right 0.3s ease;
+}
