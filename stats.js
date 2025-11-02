@@ -113,7 +113,86 @@ function renderStatsGlobal(){
 
   app.innerHTML += sugHTML;
 }
+/* === 📈 Estadísticas por materia === */
+const matsData = subs.map(m => {
+  const total = BANK.questions.filter(q => q.materia === m.slug).length;
+  const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
+  const resp = vals.length;
+  const ok = vals.filter(v => v.status === 'ok').length;
+  const bad = vals.filter(v => v.status === 'bad').length;
+  const noresp = total - resp;
+  const pct = total ? Math.round((ok / total) * 100) : 0;
+  return { ...m, total, resp, ok, bad, noresp, pct };
+}).filter(m => m.total > 0);
 
+let matsHTML = `
+  <div class="card fade" style="margin-top:24px;text-align:center;">
+    <h3>📈 Estadísticas por materia</h3>
+    <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
+    <ul style="list-style:none;padding:0;margin:0;">
+      ${matsData.map(m => `
+        <li class="acc-item" style="margin:8px 0;">
+          <div class="acc-header" onclick="toggleStatsAcc('${m.slug}')"
+               style="background:var(--card);border:1px solid var(--line);border-radius:10px;
+                      padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
+                      align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+            <div class="acc-title">${m.name}</div>
+            <div style="font-size:14px;color:var(--muted)">${m.pct}% correctas</div>
+          </div>
+          <div class="acc-content" id="stat-${m.slug}" style="display:none;padding:10px;border-left:3px solid var(--brand);background:var(--soft);border-radius:6px;margin-top:4px;">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+              <canvas id="chart-${m.slug}" width="160" height="160"></canvas>
+              <div style="font-size:14px;margin-top:4px;">
+                <p><b>Total:</b> ${m.total}</p>
+                <p style="color:#16a34a;">✔ Correctas: ${m.ok}</p>
+                <p style="color:#ef4444;">✖ Incorrectas: ${m.bad}</p>
+                <p style="color:#64748b;">⚪ No respondidas: ${m.noresp}</p>
+                <button class="btn-small" style="background:#1e40af;border-color:#1e40af;" onclick="openMateriaAuto('${m.slug}')">👉 Ir a practicar</button>
+              </div>
+            </div>
+          </div>
+        </li>`).join("")}
+    </ul>
+  </div>
+`;
+
+app.innerHTML += matsHTML;
+
+/* === 🧮 Funciones de interacción === */
+window.toggleStatsAcc = slug => {
+  const el = document.getElementById(`stat-${slug}`);
+  const open = el.style.display === "block";
+  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
+  if (!open) {
+    el.style.display = "block";
+    drawPieChart(slug);
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+};
+
+/* === 🎨 Función para dibujar gráfico circular === */
+window.drawPieChart = slug => {
+  const m = matsData.find(x => x.slug === slug);
+  if (!m) return;
+  const ctx = document.getElementById(`chart-${slug}`).getContext("2d");
+  const total = m.total || 1;
+  const slices = [
+    { value: m.ok, color: "#16a34a" }, // verde
+    { value: m.bad, color: "#ef4444" }, // rojo
+    { value: m.noresp, color: "#cbd5e1" } // gris
+  ];
+  let start = -0.5 * Math.PI;
+  slices.forEach(s => {
+    const angle = (s.value / total) * 2 * Math.PI;
+    ctx.beginPath();
+    ctx.moveTo(80, 80);
+    ctx.arc(80, 80, 70, start, start + angle);
+    ctx.closePath();
+    ctx.fillStyle = s.color;
+    ctx.fill();
+    start += angle;
+  });
+};
 /* ---------- RESET ---------- */
 function resetGlobalStats(){
   if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
