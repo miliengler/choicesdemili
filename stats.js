@@ -200,7 +200,7 @@ setTimeout(() => {
               <button class="btn-small" 
                       style="margin-top:6px;background:#1e40af;border-color:#1e40af;" 
                       onclick="openMateriaAuto('${m.slug}')">
-                👉 Ir a practicar
+                 Ir a practicar
               </button>
             </div>
 
