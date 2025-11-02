@@ -88,6 +88,14 @@ function stopTimer() {
 
 function updateTimer() {
   TIMER.elapsed = Date.now() - TIMER.startTime;
+  
+  // Actualizar cronómetro del modo examen (flotante) si existe
+  const examTimer = document.getElementById("exam-timer");
+  if (examTimer) {
+    examTimer.textContent = "⏱️ " + formatTime(TIMER.elapsed);
+  }
+
+  // Actualizar el cronómetro de práctica (centrado) si existe
   const el = document.getElementById("timerDisplay");
   if (el) el.textContent = formatTime(TIMER.elapsed);
 }
