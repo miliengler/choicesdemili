@@ -1,5 +1,3 @@
-A ver chequea aca
-
 /* ==========================================================
    🧠 MODO EXAMEN – CREÁ EL TUYO
    Con cronómetro opcional (timer.js)
