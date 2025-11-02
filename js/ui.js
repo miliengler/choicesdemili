@@ -10,8 +10,6 @@ function renderHome(){
     </div>
   `;
 }
-
-/* ========== LISTA DE MATERIAS (compat iPad) ========== */
 /* ========== LISTA DE MATERIAS (iPad-safe) ========== */
 function renderSubjects(){
   console.log("🧩 renderSubjects() ejecutado");
