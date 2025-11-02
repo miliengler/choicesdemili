@@ -5,7 +5,7 @@ const LS_BANK = "mebank_bank_v6_full",
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
     {slug:"neumonologia", name:"🫁 Neumonología"},
-    {slug:"psiquiatria", name:"🧠💭 Psiquiatría"},
+    {slug:"psiquiatria", name:"💭 Psiquiatría"},
     {slug:"cardiologia", name:"🫀 Cardiología"},
     {slug:"nutricion", name:"🍏 Nutrición"},
     {slug:"nefrologia", name:"🫘 Nefrología"},
