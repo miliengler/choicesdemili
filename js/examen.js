@@ -143,17 +143,25 @@ function renderExamenPregunta() {
   `;
 }
 
-/* ---------- Registro de respuestas ---------- */
+
+/* ---------- Registro de respuestas (actualizado con _lastDate) ---------- */
 function answerExamen(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = "general";
   PROG[slug] = PROG[slug] || {};
+
+  // Evita sobrescribir si ya respondió
   if (PROG[slug][q.id]) return;
+
+  // Guarda respuesta y estado
   PROG[slug][q.id] = { chosen: i, status: i === q.correcta ? "ok" : "bad" };
+
+  // 🔹 Guarda la fecha del último intento (para sugerencias globales)
+  PROG[slug]._lastDate = Date.now();
+
   saveAll();
   nextExamen();
 }
-
 /* ---------- Navegación ---------- */
 function nextExamen() {
   if (CURRENT.i < CURRENT.list.length - 1) {
