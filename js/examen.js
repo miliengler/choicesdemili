@@ -181,6 +181,9 @@ function answerExamen(i) {
   // Guarda respuesta y estado
   const correcta = i === q.correcta;
   PROG[slug][q.id] = { chosen: i, status: correcta ? "ok" : "bad" };
+     // 🔹 Guardar estado en la sesión actual (para la barra lateral)
+  CURRENT.session[CURRENT.i] = correcta ? "ok" : "bad";
+  renderSidebarPage();
 
   // 🔹 Guarda la fecha del último intento
   PROG[slug]._lastDate = Date.now();
