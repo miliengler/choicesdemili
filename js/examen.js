@@ -113,12 +113,33 @@ function startExamen() {
   }
 }
 
-/* ---------- Render de una pregunta en modo examen ---------- */
+/* ---------- Render de una pregunta en modo examen (cronómetro persistente) ---------- */
 function renderExamenPregunta() {
   const q = CURRENT.list[CURRENT.i];
   if (!q) {
     renderExamenFin();
     return;
+  }
+
+  // Si el cronómetro no existe todavía, lo agregamos al DOM arriba de todo
+  if (!document.getElementById("exam-timer")) {
+    const timerEl = document.createElement("div");
+    timerEl.id = "exam-timer";
+    timerEl.style = `
+      position:fixed;
+      top:12px;
+      right:12px;
+      background:#1e3a8a;
+      color:white;
+      font-weight:600;
+      font-size:14px;
+      padding:8px 12px;
+      border-radius:8px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
+      z-index:50;
+    `;
+    timerEl.textContent = "⏱️ 00:00";
+    document.body.appendChild(timerEl);
   }
 
   const opts = q.opciones.map((t, i) => `
@@ -142,7 +163,6 @@ function renderExamenPregunta() {
     </div>
   `;
 }
-
 /* ---------- Registro de respuestas (mejorado) ---------- */
 function answerExamen(i) {
   const q = CURRENT.list[CURRENT.i];
