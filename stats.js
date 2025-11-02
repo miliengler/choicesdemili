@@ -212,7 +212,7 @@ function renderStatsGlobal(){
     }
   };
 
-/* === 🎨 Función para dibujar gráfico circular con profundidad === */
+/* === 🎨 Función para dibujar gráfico circular con efecto 3D === */
 window.drawPieChart = slug => {
   const subs = subjectsFromBank();
   const matsData = subs.map(m => {
@@ -226,6 +226,7 @@ window.drawPieChart = slug => {
 
   const m = matsData.find(x => x.slug === slug);
   if (!m) return;
+
   const canvas = document.getElementById(`chart-${slug}`);
   const ctx = canvas.getContext("2d");
   const total = m.total || 1;
@@ -236,10 +237,10 @@ window.drawPieChart = slug => {
     { value: m.noresp, color: "#cbd5e1"} // gris
   ];
 
-  let start = -0.5 * Math.PI;
   const cx = 80, cy = 80, r = 70;
+  let start = -0.5 * Math.PI;
 
-  // --- Efecto base sombra (profundidad) ---
+  // --- sombra sutil debajo (efecto flotante) ---
   ctx.save();
   ctx.beginPath();
   ctx.arc(cx, cy + 3, r, 0, 2 * Math.PI);
@@ -247,13 +248,13 @@ window.drawPieChart = slug => {
   ctx.fill();
   ctx.restore();
 
-  // --- Capa principal con degradado radial (efecto 3D) ---
+  // --- círculos con degradado radial (efecto 3D) ---
   slices.forEach(s => {
     const angle = (s.value / total) * 2 * Math.PI;
-    const grad = ctx.createRadialGradient(cx - 10, cy - 10, 20, cx, cy, r);
-    grad.addColorStop(0, "#ffffff");
+    const grad = ctx.createRadialGradient(cx - 10, cy - 10, 15, cx, cy, r);
+    grad.addColorStop(0, "#fff");
     grad.addColorStop(0.4, s.color);
-    grad.addColorStop(1, darkenColor(s.color, 0.2));
+    grad.addColorStop(1, darkenColor(s.color, 0.25));
 
     ctx.beginPath();
     ctx.moveTo(cx, cy);
@@ -265,7 +266,7 @@ window.drawPieChart = slug => {
   });
 };
 
-/* === 💡 Función auxiliar para oscurecer color (da efecto de profundidad) === */
+/* === 💡 Función auxiliar para oscurecer color (profundidad) === */
 function darkenColor(hex, amt = 0.2) {
   let col = hex.replace("#", "");
   if (col.length === 3) col = col.split("").map(c => c + c).join("");
