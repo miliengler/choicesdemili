@@ -1,33 +1,13 @@
 /* ========== INICIO AUTOMÁTICO ========== */
-// Espera a que el DOM esté cargado antes de buscar #app
+// Carga inicial de la app
 document.addEventListener("DOMContentLoaded", () => {
-  debugLog("✅ DOM cargado");
   const app = document.getElementById("app");
-  window.app = app; // la hace global para el resto del código
+  window.app = app; // la hace global
   renderHome();
 });
 
-// --- DEBUG VISUAL ---
-// Esto crea un pequeño panel en pantalla para mostrar errores o mensajes en iPad
-window.debugLog = function(msg){
-  const el = document.getElementById("debugLog") || (() => {
-    const div = document.createElement("div");
-    div.id = "debugLog";
-    div.style = "position:fixed;bottom:0;left:0;width:100%;max-height:120px;overflow:auto;font-size:12px;background:#000;color:#0f0;padding:6px;font-family:monospace;z-index:9999;";
-    document.body.appendChild(div);
-    return div;
-  })();
-  el.innerHTML += msg + "<br>";
-};
-
-// Capturar errores globales
-window.onerror = function(msg, src, line, col, err){
-  debugLog("❌ ERROR: " + msg + " en " + src + ":" + line);
-};
-
 /* ========== HOME ========== */
 function renderHome() {
-  debugLog("🏠 renderHome ejecutado");
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
@@ -71,24 +51,6 @@ function renderSubjects() {
   `;
 }
 
-/* ========== ACCORDION ========== */
-window.toggleAcc = (slug) => {
-  const el = document.getElementById(`acc-${slug}`);
-  const cnt = document.getElementById(`count-${slug}`);
-  const open = el.style.display === "block";
-  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
-  document.querySelectorAll(".acc-count").forEach(c => c.classList.add("hidden"));
-  if (!open) { el.style.display = "block"; cnt.classList.remove("hidden"); }
-};
-
-function getStart(slug, total) {
-  const el = document.getElementById(`start-${slug}`);
-  let v = parseInt((el && el.value) ? el.value : "1", 10);
-  if (isNaN(v) || v < 1) v = 1;
-  if (v > total) v = total;
-  return v;
-}
-
 /* ========== MOTOR DE PREGUNTAS ========== */
 let CURRENT_SESSION = { list: [], i: 0, materia: "" };
 
@@ -98,8 +60,7 @@ function startPractica(slug) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
     return;
   }
-  const start = getStart(slug, listAll.length);
-  CURRENT_SESSION = { list: listAll.slice(start - 1), i: 0, materia: slug };
+  CURRENT_SESSION = { list: listAll, i: 0, materia: slug };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = 0;
   saveAll();
@@ -107,7 +68,7 @@ function startPractica(slug) {
 }
 
 function startRepaso(slug) {
-  const listAll = (BANK.questions || []).filter(q => q.materia === slug).sort((a, b) => a.id.localeCompare(b.id));
+  const listAll = (BANK.questions || []).filter(q => q.materia === slug);
   const prog = PROG[slug] || {};
   const list = listAll.filter(q => prog[q.id]?.status === 'bad');
   if (!list.length) {
@@ -176,11 +137,11 @@ function updateLastIndex() {
     saveAll();
   }
 }
+
 function answer(i) {
   const q = CURRENT_SESSION.list[CURRENT_SESSION.i];
   const slug = CURRENT_SESSION.materia || 'general';
   PROG[slug] = PROG[slug] || {};
-
   if (PROG[slug][q.id]) return;
 
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
@@ -189,15 +150,4 @@ function answer(i) {
 
   saveAll();
   renderPregunta();
-}
-function openMateria(slug) {
-  renderSubjects();
-  setTimeout(() => {
-    const el = document.getElementById(`acc-${slug}`);
-    if (el) {
-      el.style.display = "block";
-      const head = document.querySelector(`[onclick="toggleAcc('${slug}')"]`);
-      if (head) head.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }, 100);
 }
