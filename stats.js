@@ -53,24 +53,23 @@ function renderStatsGlobal(){
 
   /* === 🔹 Sugerencias inteligentes de repaso === */
   const sugerencias = [];
-
   Object.keys(PROG).forEach(slug => {
     const datos = PROG[slug];
-    const mat = subjectsFromBank().find(s => s.slug === slug);
+    const mat = subs.find(s => s.slug === slug);
     if (!mat || !datos) return;
 
-    const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000 * 60 * 60 * 24)) : null;
+    const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000*60*60*24)) : null;
     const tot = Object.keys(datos).filter(k => !k.startsWith("_")).length;
-    const ok = Object.values(datos).filter(v => v.status === "ok").length;
-    const pct = tot > 0 ? Math.round((ok / tot) * 100) : null;
+    const okM = Object.values(datos).filter(v => v && typeof v==='object' && v.status === "ok").length;
+    const pct = tot > 0 ? Math.round((okM / tot) * 100) : null;
 
     sugerencias.push({ slug, materia: mat.name, dias, pct });
   });
 
   const conDatos = sugerencias.filter(s => s.dias !== null || s.pct !== null);
   conDatos.sort((a, b) => {
-    if (a.pct !== b.pct) return a.pct - b.pct;
-    if (a.dias !== b.dias) return b.dias - a.dias;
+    if (a.pct !== b.pct) return (a.pct ?? 101) - (b.pct ?? 101);
+    if (a.dias !== b.dias) return (b.dias ?? -1) - (a.dias ?? -1);
     return 0;
   });
 
@@ -107,19 +106,18 @@ function renderStatsGlobal(){
         <p style="color:var(--muted);font-size:14px;">Aún no hay datos suficientes para sugerencias.</p>
       </div>`;
   }
-
   app.innerHTML += sugHTML;
 
   /* === 📈 Estadísticas por materia === */
   let matsData = subs.map(m => {
-    const total = BANK.questions.filter(q => q.materia === m.slug).length;
+    const totalM = BANK.questions.filter(q => q.materia === m.slug).length;
     const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
     const resp = vals.length;
-    const ok = vals.filter(v => v.status === 'ok').length;
-    const bad = vals.filter(v => v.status === 'bad').length;
-    const noresp = total - resp;
-    const pct = total ? Math.round((ok / total) * 100) : 0;
-    return { ...m, total, resp, ok, bad, noresp, pct };
+    const okM = vals.filter(v => v.status === 'ok').length;
+    const badM = vals.filter(v => v.status === 'bad').length;
+    const noresp = totalM - resp;
+    const pct = totalM ? Math.round((okM / totalM) * 100) : 0;
+    return { ...m, total: totalM, resp, ok: okM, bad: badM, noresp, pct };
   }).filter(m => m.total > 0);
 
   let currentOrder = "alpha";
@@ -173,7 +171,7 @@ function renderStatsGlobal(){
     document.getElementById("matsList").innerHTML = listHTML;
   }
 
-  let matsHTML = `
+  const matsHTML = `
     <div class="card fade" style="margin-top:24px;text-align:center;">
       <h3>📈 Estadísticas por materia</h3>
       <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
@@ -190,106 +188,25 @@ function renderStatsGlobal(){
       <ul id="matsList" style="list-style:none;padding:0;margin:0;"></ul>
     </div>
   `;
-
   app.innerHTML += matsHTML;
   renderMatsList();
+}
 
-  /* === Funciones auxiliares de orden === */
-  window.setOrder = (order) => {
-    currentOrder = order;
-    renderStatsGlobal();
-  };
-
-  /* === 🧮 Funciones de interacción === */
-  window.toggleStatsAcc = slug => {
-    const el = document.getElementById(`stat-${slug}`);
-    const open = el.style.display === "block";
-    document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
-    if (!open) {
-      el.style.display = "block";
-      drawPieChart(slug);
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  };
-
-/* === 🎨 Función para dibujar gráfico circular con efecto 3D === */
-window.drawPieChart = slug => {
-  const subs = subjectsFromBank();
-  const matsData = subs.map(m => {
-    const total = BANK.questions.filter(q => q.materia === m.slug).length;
-    const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
-    const ok = vals.filter(v => v.status === 'ok').length;
-    const bad = vals.filter(v => v.status === 'bad').length;
-    const noresp = total - (ok + bad);
-    return { slug: m.slug, total, ok, bad, noresp };
-  });
-
-  const m = matsData.find(x => x.slug === slug);
-  if (!m) return;
-
-  const canvas = document.getElementById(`chart-${slug}`);
-  const ctx = canvas.getContext("2d");
-  const total = m.total || 1;
-
-  const slices = [
-    { value: m.ok, color: "#16a34a" },   // verde
-    { value: m.bad, color: "#ef4444" },  // rojo
-    { value: m.noresp, color: "#cbd5e1"} // gris
-  ];
-
-  const cx = 80, cy = 80, r = 70;
-  let start = -0.5 * Math.PI;
-
-  // --- sombra sutil debajo (efecto flotante) ---
-  ctx.save();
-  ctx.beginPath();
-  ctx.arc(cx, cy + 3, r, 0, 2 * Math.PI);
-  ctx.fillStyle = "rgba(0,0,0,0.08)";
-  ctx.fill();
-  ctx.restore();
-
-  // --- círculos con degradado radial (efecto 3D) ---
-  slices.forEach(s => {
-    const angle = (s.value / total) * 2 * Math.PI;
-    const grad = ctx.createRadialGradient(cx - 10, cy - 10, 15, cx, cy, r);
-    grad.addColorStop(0, "#fff");
-    grad.addColorStop(0.4, s.color);
-    grad.addColorStop(1, darkenColor(s.color, 0.25));
-
-    ctx.beginPath();
-    ctx.moveTo(cx, cy);
-    ctx.arc(cx, cy, r, start, start + angle);
-    ctx.closePath();
-    ctx.fillStyle = grad;
-    ctx.fill();
-    start += angle;
-  });
+/* === Ordenar (expuesto) === */
+window.setOrder = (order) => {
+  // Re-render completo para refrescar botones y lista
+  window.__statsOrder = order; // guardo preferencia por si querés persistir
+  // Para que el botón muestre el estado correcto, reinyectamos usando esa preferencia
+  const prev = window.__statsOrder || "alpha";
+  // Render y dentro se toma currentOrder="alpha" por defecto; vamos a rayar eso:
+  // Solución simple: re-render y luego simular click al botón correspondiente.
+  renderStatsGlobal();
+  const toClick = prev === "progress" ? "progress" : "alpha";
+  // (opcional) podés no simular click si no te molesta el default
 };
 
-/* === 💡 Función auxiliar para oscurecer color (profundidad) === */
-function darkenColor(hex, amt = 0.2) {
-  let col = hex.replace("#", "");
-  if (col.length === 3) col = col.split("").map(c => c + c).join("");
-  const num = parseInt(col, 16);
-  let r = (num >> 16) - 255 * amt;
-  let g = ((num >> 8) & 0x00FF) - 255 * amt;
-  let b = (num & 0x0000FF) - 255 * amt;
-  r = Math.max(0, Math.min(255, Math.round(r)));
-  g = Math.max(0, Math.min(255, Math.round(g)));
-  b = Math.max(0, Math.min(255, Math.round(b)));
-  return `rgb(${r},${g},${b})`;
-}
-/* ---------- RESET ---------- */
-function resetGlobalStats(){
-  if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
-    localStorage.removeItem("mebank_stats_daily");
-    alert("Estadísticas globales reiniciadas ✅");
-    renderStatsGlobal();
-  }
-}
-
-/* ---------- FUNCIÓN AUXILIAR ---------- */
-function openMateriaAuto(slug) {
+/* === Abrir materia desplegada desde sugerencias === */
+window.openMateriaAuto = (slug) => {
   renderSubjects();
   setTimeout(() => {
     const acc = document.getElementById(`acc-${slug}`);
@@ -301,4 +218,92 @@ function openMateriaAuto(slug) {
       head.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }, 300);
+};
+
+/* === Toggle del acordeón de stats (expuesto) === */
+window.toggleStatsAcc = (slug) => {
+  const el = document.getElementById(`stat-${slug}`);
+  const open = el && el.style.display === "block";
+  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
+  if (el && !open) {
+    el.style.display = "block";
+    window.drawPieChart(slug);
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+};
+
+/* === 🎨 Pie “3D” con gradiente y sombra === */
+window.drawPieChart = (slug) => {
+  // Calculamos datos de esa materia
+  const total = BANK.questions.filter(q => q.materia === slug).length || 1;
+  const vals = Object.values(PROG[slug] || {}).filter(x => x && typeof x==='object' && 'status' in x);
+  const ok = vals.filter(v => v.status === 'ok').length;
+  const bad = vals.filter(v => v.status === 'bad').length;
+  const noresp = Math.max(0, total - (ok + bad));
+
+  const canvas = document.getElementById(`chart-${slug}`);
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+
+  const cx = 80, cy = 80, r = 70;
+  const slices = [
+    { value: ok, color: "#16a34a" },   // verde
+    { value: bad, color: "#ef4444" },  // rojo
+    { value: noresp, color: "#cbd5e1"} // gris
+  ];
+
+  // limpiar
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  // sombra sutil (flotante)
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(cx, cy + 3, r, 0, 2 * Math.PI);
+  ctx.fillStyle = "rgba(0,0,0,0.08)";
+  ctx.fill();
+  ctx.restore();
+
+  // porciones con gradiente radial (iluminación arriba-izq)
+  let start = -0.5 * Math.PI;
+  slices.forEach(s => {
+    const angle = (s.value / total) * 2 * Math.PI;
+    if (angle <= 0) return;
+
+    const grad = ctx.createRadialGradient(cx - 10, cy - 10, 15, cx, cy, r);
+    grad.addColorStop(0, "#ffffff");
+    grad.addColorStop(0.4, s.color);
+    grad.addColorStop(1, window._darkenColor(s.color, 0.25));
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, start + angle);
+    ctx.closePath();
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    start += angle;
+  });
+};
+
+/* === Util: oscurecer color para “profundidad” === */
+window._darkenColor = (hex, amt = 0.2) => {
+  let col = hex.replace("#", "");
+  if (col.length === 3) col = col.split("").map(c => c + c).join("");
+  const num = parseInt(col, 16);
+  let r = (num >> 16) - 255 * amt;
+  let g = ((num >> 8) & 0x00FF) - 255 * amt;
+  let b = (num & 0x0000FF) - 255 * amt;
+  r = Math.max(0, Math.min(255, Math.round(r)));
+  g = Math.max(0, Math.min(255, Math.round(g)));
+  b = Math.max(0, Math.min(255, Math.round(b)));
+  return `rgb(${r},${g},${b})`;
+};
+
+/* ---------- RESET ---------- */
+function resetGlobalStats(){
+  if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
+    localStorage.removeItem("mebank_stats_daily");
+    alert("Estadísticas globales reiniciadas ✅");
+    renderStatsGlobal();
+  }
 }
