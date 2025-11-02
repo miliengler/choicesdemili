@@ -1,5 +1,5 @@
 /* ========== HOME ========== */
-function renderHome(){
+function renderHome() {
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
@@ -10,20 +10,34 @@ function renderHome(){
     </div>
   `;
 }
-/* ---------- SUBJECTS (acordeón funcional) ---------- */
+
+/* ========== FUNCIONES AUXILIARES ========== */
+const normalize = str =>
+  str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
+
+/* ---------- SUBJECTS (acordeón funcional, corregido) ---------- */
 function renderSubjects() {
   console.log("🧩 renderSubjects ejecutado");
 
-  const subs = subjectsFromBank().sort((a, b) => 
-    a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity: 'base'}
+  const subs = subjectsFromBank().sort((a, b) =>
+    a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ""),
+      "es",
+      { sensitivity: "base" }
     )
   );
+
+  const resumen = BANK.questions.reduce((acc, q) => {
+    const key = normalize(q.materia);
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
 
   const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
 
   const list = subs.map(s => {
-    const count = (BANK.questions || []).filter(q => q.materia === s.slug).length;
+    const key = normalize(s.slug);
+    const count = resumen[key] || 0;
     const prog = PROG[s.slug] || {};
     const last = prog._lastIndex != null ? prog._lastIndex + 1 : null;
     const reanudarBtn = last ? `<button class='btn-small' onclick='resumeSubject("${s.slug}")'>🔄 Reanudar (${last})</button>` : ``;
@@ -91,17 +105,18 @@ function resumeSubject(slug) {
 function showStats(slug) {
   alert(`📊 Próximamente estadísticas para ${slug}`);
 }
+
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
-  const subject = BANK.subjects.find(s => s.slug === slug);
-  const preguntas = BANK.questions.filter(q => q.materia === slug);
+  const subject = BANK.subjects.find(s => normalize(s.slug) === normalize(slug));
+  const preguntas = BANK.questions.filter(q => normalize(q.materia) === normalize(slug));
   const progreso = PROG[slug] || {};
   const total = preguntas.length;
   const tieneProgreso = progreso._lastIndex !== undefined;
 
   app.innerHTML = `
     <div class="subject-screen" style="text-align:center;animation:fadeIn .5s;">
-      <h2>${subject.name}</h2>
+      <h2>${subject ? subject.name : slug}</h2>
       <p>${total} preguntas disponibles</p>
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:10px;">
         <button id="btnFrom" class="btn-main">📘 Desde #</button>
@@ -117,7 +132,6 @@ function openSubject(slug) {
     </div>
   `;
 
-  // --- Asignación de botones ---
   document.getElementById("btnFrom").onclick = () => {
     const start = parseInt(prompt(`¿Desde qué número querés comenzar? (1–${total})`)) || 1;
     startPractica(slug, start - 1);
@@ -128,71 +142,80 @@ function openSubject(slug) {
   const btnResume = document.getElementById("btnResume");
   if (btnResume) btnResume.onclick = () => startPractica(slug, progreso._lastIndex || 0);
 
-  // Botones informativos
   document.getElementById("btnStats").onclick = () => alert("📊 Próximamente: estadísticas visuales");
   document.getElementById("btnNotes").onclick = () => alert("🗒️ Aún no hay notas guardadas");
   document.getElementById("btnBack").onclick = renderSubjects;
 }
 
-/* ========== MOTOR DE PREGUNTAS ========== */
-let CURRENT = { list:[], i:0, materia:"" };
+/* ========== MOTOR DE PREGUNTAS (normalizado) ========== */
+let CURRENT = { list: [], i: 0, materia: "" };
 
-function startPractica(slug, startIndex=0){
-  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
-  if(!listAll.length){
+function startPractica(slug, startIndex = 0) {
+  const listAll = (BANK.questions || [])
+    .filter(q => normalize(q.materia) === normalize(slug))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+  if (!listAll.length) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
     return;
   }
-  CURRENT = { list:listAll.slice(startIndex), i:0, materia:slug };
+
+  CURRENT = { list: listAll.slice(startIndex), i: 0, materia: slug };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = startIndex;
   saveAll();
   renderPregunta();
 }
 
-function startRepaso(slug){
-  const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
-  const prog = PROG[slug]||{};
-  const list = listAll.filter(q=> prog[q.id]?.status==='bad');
-  if(!list.length){
+function startRepaso(slug) {
+  const listAll = (BANK.questions || [])
+    .filter(q => normalize(q.materia) === normalize(slug))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+  const prog = PROG[slug] || {};
+  const list = listAll.filter(q => prog[q.id]?.status === "bad");
+
+  if (!list.length) {
     app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='openSubject("${slug}")'>Volver</button></div>`;
     return;
   }
-  CURRENT = { list, i:0, materia:slug };
+
+  CURRENT = { list, i: 0, materia: slug };
   renderPregunta();
 }
 
-function renderPregunta(){
+/* ---------- Pregunta ---------- */
+function renderPregunta() {
   const q = CURRENT.list[CURRENT.i];
-  if(!q){
+  if (!q) {
     app.innerHTML = `<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;
     return;
   }
-  const prog = PROG[CURRENT.materia]||{};
+  const prog = PROG[CURRENT.materia] || {};
   const ans = prog[q.id]?.chosen;
 
-  const opts = q.opciones.map((t,i)=>{
-    let cls='';
-    if(ans!=null){
-      if(i===q.correcta) cls='correct';
-      else if(i===ans) cls='wrong';
+  const opts = q.opciones.map((t, i) => {
+    let cls = "";
+    if (ans != null) {
+      if (i === q.correcta) cls = "correct";
+      else if (i === ans) cls = "wrong";
     }
-    return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97+i)}) ${t}</label>`;
-  }).join('');
+    return `<label class='option ${cls}' onclick='answer(${i})'><input type='radio' name='opt'> ${String.fromCharCode(97 + i)}) ${t}</label>`;
+  }).join("");
 
-  const exp = (ans!=null)? `<div class='explain'>${q.explicacion||''}</div>` : '';
+  const exp = ans != null ? `<div class='explain'>${q.explicacion || ""}</div>` : "";
 
   app.innerHTML = `
     <div class="q-layout">
       <div>
         <div class='card'>
-          <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i+1}/${CURRENT.list.length}</div>
+          <div><b>${CURRENT.materia.toUpperCase()}</b> · ${CURRENT.i + 1}/${CURRENT.list.length}</div>
           <div style='margin-top:8px;font-size:18px'>${q.enunciado}</div>
           <div class='options'>${opts}</div>
           ${exp}
           <div class='nav-row'>
-            <button class='btn-small' onclick='prevQ()' ${CURRENT.i===0?'disabled':''}>Anterior</button>
-            <button class='btn-small' onclick='nextQ()' ${CURRENT.i===CURRENT.list.length-1?'disabled':''}>Siguiente</button>
+            <button class='btn-small' onclick='prevQ()' ${CURRENT.i === 0 ? "disabled" : ""}>Anterior</button>
+            <button class='btn-small' onclick='nextQ()' ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente</button>
             <button class='btn-small' onclick='openSubject("${CURRENT.materia}")'>Volver</button>
           </div>
         </div>
@@ -200,32 +223,34 @@ function renderPregunta(){
       <div class="sidebar">
         <div style="font-weight:600;margin-bottom:8px">Índice</div>
         <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;">
-          ${CURRENT.list.map((_,ix)=>`
-            <button class="btn-small" style="font-size:12px;padding:6px;border-radius:8px;${ix===CURRENT.i?'background:#e0ecff;border-color:#1e40af':''}" onclick="jump(${ix})">${ix+1}</button>
-          `).join('')}
+          ${CURRENT.list.map((_, ix) =>
+            `<button class="btn-small" style="font-size:12px;padding:6px;border-radius:8px;${
+              ix === CURRENT.i ? "background:#e0ecff;border-color:#1e40af" : ""
+            }" onclick="jump(${ix})">${ix + 1}</button>`
+          ).join("")}
         </div>
       </div>
     </div>`;
 }
 
-window.jump = (ix)=>{ CURRENT.i = ix; updateLastIndex(); renderPregunta(); };
-function prevQ(){ if(CURRENT.i>0){ CURRENT.i--; updateLastIndex(); renderPregunta(); } }
-function nextQ(){ if(CURRENT.i<CURRENT.list.length-1){ CURRENT.i++; updateLastIndex(); renderPregunta(); } }
+window.jump = (ix) => { CURRENT.i = ix; updateLastIndex(); renderPregunta(); };
+function prevQ() { if (CURRENT.i > 0) { CURRENT.i--; updateLastIndex(); renderPregunta(); } }
+function nextQ() { if (CURRENT.i < CURRENT.list.length - 1) { CURRENT.i++; updateLastIndex(); renderPregunta(); } }
 
-function updateLastIndex(){
-  if(CURRENT.materia){
+function updateLastIndex() {
+  if (CURRENT.materia) {
     PROG[CURRENT.materia] = PROG[CURRENT.materia] || {};
     PROG[CURRENT.materia]._lastIndex = Math.max(PROG[CURRENT.materia]._lastIndex ?? 0, CURRENT.i);
     saveAll();
   }
 }
 
-function answer(i){
+function answer(i) {
   const q = CURRENT.list[CURRENT.i];
-  const slug = CURRENT.materia || 'general';
+  const slug = CURRENT.materia || "general";
   PROG[slug] = PROG[slug] || {};
-  if(PROG[slug][q.id]) return; // no cambiar respuesta
-  PROG[slug][q.id] = { chosen:i, status:(i===q.correcta?'ok':'bad') };
+  if (PROG[slug][q.id]) return;
+  PROG[slug][q.id] = { chosen: i, status: i === q.correcta ? "ok" : "bad" };
   PROG[slug]._lastIndex = CURRENT.i;
   saveAll();
   renderPregunta();
