@@ -89,7 +89,7 @@ function startExamen() {
   const numEl = document.getElementById("numPreg");
   const num = Math.max(1, parseInt(numEl?.value || "1", 10));
   const useTimer = document.getElementById("chkTimer")?.checked;
-
+initSidebar();
   // Normalizar coincidencias
   const selectedNorm = selected.map(s => normalize(s));
   let pool = (BANK.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
