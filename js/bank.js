@@ -157,3 +157,27 @@ function addUpdateButton() {
 
 // Esperar a que el DOM cargue y agregar botón
 window.addEventListener("DOMContentLoaded", addUpdateButton);
+/* ---------- 🔍 Verificación visual de carga ---------- */
+window.addEventListener("load", async () => {
+  await loadAllBanks();
+
+  const resumen = BANK.questions.reduce((acc, q) => {
+    acc[q.materia] = (acc[q.materia] || 0) + 1;
+    return acc;
+  }, {});
+
+  // 🔹 Mostrar cartelito en pantalla
+  const div = document.createElement("div");
+  div.style = `
+    position:fixed;bottom:60px;left:10px;
+    background:#16a34a;color:white;padding:8px 12px;
+    border-radius:6px;font-size:13px;z-index:9999;
+    box-shadow:0 2px 4px rgba(0,0,0,0.3);
+  `;
+  div.innerHTML = Object.entries(resumen)
+    .map(([mat, n]) => `📘 ${mat}: ${n} preguntas`)
+    .join("<br>");
+  document.body.appendChild(div);
+
+  setTimeout(() => div.remove(), 6000);
+});
