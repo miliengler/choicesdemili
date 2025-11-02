@@ -212,41 +212,72 @@ function renderStatsGlobal(){
     }
   };
 
-  /* === 🎨 Función para dibujar gráfico circular === */
-  window.drawPieChart = slug => {
-    const subs = subjectsFromBank();
-    const matsData = subs.map(m => {
-      const total = BANK.questions.filter(q => q.materia === m.slug).length;
-      const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
-      const ok = vals.filter(v => v.status === 'ok').length;
-      const bad = vals.filter(v => v.status === 'bad').length;
-      const noresp = total - (ok + bad);
-      return { slug: m.slug, total, ok, bad, noresp };
-    });
+/* === 🎨 Función para dibujar gráfico circular con profundidad === */
+window.drawPieChart = slug => {
+  const subs = subjectsFromBank();
+  const matsData = subs.map(m => {
+    const total = BANK.questions.filter(q => q.materia === m.slug).length;
+    const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
+    const ok = vals.filter(v => v.status === 'ok').length;
+    const bad = vals.filter(v => v.status === 'bad').length;
+    const noresp = total - (ok + bad);
+    return { slug: m.slug, total, ok, bad, noresp };
+  });
 
-    const m = matsData.find(x => x.slug === slug);
-    if (!m) return;
-    const ctx = document.getElementById(`chart-${slug}`).getContext("2d");
-    const total = m.total || 1;
-    const slices = [
-      { value: m.ok, color: "#16a34a" },
-      { value: m.bad, color: "#ef4444" },
-      { value: m.noresp, color: "#cbd5e1" }
-    ];
-    let start = -0.5 * Math.PI;
-    slices.forEach(s => {
-      const angle = (s.value / total) * 2 * Math.PI;
-      ctx.beginPath();
-      ctx.moveTo(80, 80);
-      ctx.arc(80, 80, 70, start, start + angle);
-      ctx.closePath();
-      ctx.fillStyle = s.color;
-      ctx.fill();
-      start += angle;
-    });
-  };
+  const m = matsData.find(x => x.slug === slug);
+  if (!m) return;
+  const canvas = document.getElementById(`chart-${slug}`);
+  const ctx = canvas.getContext("2d");
+  const total = m.total || 1;
+
+  const slices = [
+    { value: m.ok, color: "#16a34a" },   // verde
+    { value: m.bad, color: "#ef4444" },  // rojo
+    { value: m.noresp, color: "#cbd5e1"} // gris
+  ];
+
+  let start = -0.5 * Math.PI;
+  const cx = 80, cy = 80, r = 70;
+
+  // --- Efecto base sombra (profundidad) ---
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(cx, cy + 3, r, 0, 2 * Math.PI);
+  ctx.fillStyle = "rgba(0,0,0,0.08)";
+  ctx.fill();
+  ctx.restore();
+
+  // --- Capa principal con degradado radial (efecto 3D) ---
+  slices.forEach(s => {
+    const angle = (s.value / total) * 2 * Math.PI;
+    const grad = ctx.createRadialGradient(cx - 10, cy - 10, 20, cx, cy, r);
+    grad.addColorStop(0, "#ffffff");
+    grad.addColorStop(0.4, s.color);
+    grad.addColorStop(1, darkenColor(s.color, 0.2));
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.arc(cx, cy, r, start, start + angle);
+    ctx.closePath();
+    ctx.fillStyle = grad;
+    ctx.fill();
+    start += angle;
+  });
+};
+
+/* === 💡 Función auxiliar para oscurecer color (da efecto de profundidad) === */
+function darkenColor(hex, amt = 0.2) {
+  let col = hex.replace("#", "");
+  if (col.length === 3) col = col.split("").map(c => c + c).join("");
+  const num = parseInt(col, 16);
+  let r = (num >> 16) - 255 * amt;
+  let g = ((num >> 8) & 0x00FF) - 255 * amt;
+  let b = (num & 0x0000FF) - 255 * amt;
+  r = Math.max(0, Math.min(255, Math.round(r)));
+  g = Math.max(0, Math.min(255, Math.round(g)));
+  b = Math.max(0, Math.min(255, Math.round(b)));
+  return `rgb(${r},${g},${b})`;
 }
-
 /* ---------- RESET ---------- */
 function resetGlobalStats(){
   if(confirm("¿Borrar TODAS las estadísticas globales? (No afecta tus materias)")){
