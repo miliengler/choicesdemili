@@ -12,17 +12,19 @@ function renderHome(){
 }
 
 /* ========== LISTA DE MATERIAS (compat iPad) ========== */
+/* ========== LISTA DE MATERIAS (iPad-safe) ========== */
 function renderSubjects(){
+  console.log("🧩 renderSubjects() ejecutado");
+
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
     )
   );
 
-  // Generamos la lista HTML
-  const list = subs.map((s, i) => `
-    <li class="acc-item" style="list-style:none;margin:8px 0;">
-      <div class="acc-header" data-slug="${s.slug}" 
+  const list = subs.map((s) => `
+    <li class='acc-item' style="list-style:none;margin:8px 0;">
+      <div class='acc-header' data-slug="${s.slug}"
            style="background:var(--card);border:1px solid var(--line);border-radius:10px;
                   padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
                   align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);
@@ -36,31 +38,22 @@ function renderSubjects(){
   `).join("");
 
   app.innerHTML = `
-    <div class="card">
-      <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
-      <ul class="accordion" style="padding:0;margin-top:10px;">${list}</ul>
+    <div class='card'>
+      <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
+      <ul class='accordion' style="padding:0;margin-top:10px;">${list}</ul>
     </div>`;
 
-  // 👇 Importante: agregar listeners manuales (funciona en iOS/iPad)
-  document.querySelectorAll(".acc-header").forEach(el => {
-    el.addEventListener("click", () => {
-      const slug = el.getAttribute("data-slug");
-      openSubject(slug);
-    });
-    el.addEventListener("touchstart", () => {
-      el.style.background = "var(--soft)";
-    });
-    el.addEventListener("touchend", () => {
-      el.style.background = "var(--card)";
-    });
-  });
+  // ✅ Forzamos un pequeño delay para asegurar que el DOM esté listo (iPad fix)
+  setTimeout(() => {
     document.querySelectorAll(".acc-header").forEach(el => {
-    el.addEventListener("click", () => {
-      console.log("Click detectado en:", el.getAttribute("data-slug"));
-      alert("Click detectado en " + el.getAttribute("data-slug"));
-      openSubject(el.getAttribute("data-slug"));
+      el.addEventListener("click", () => {
+        const slug = el.getAttribute("data-slug");
+        console.log("✅ Click detectado en:", slug);
+        alert("Click detectado en " + slug);
+        openSubject(slug);
+      });
     });
-  });
+  }, 100); // 100 ms es suficiente en Safari iOS
 }
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
