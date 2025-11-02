@@ -12,6 +12,8 @@ function renderHome(){
 }
 
 /* ========== LISTA DE MATERIAS ========== */
+
+/* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -24,8 +26,11 @@ function renderSubjects(){
       <div class='acc-header' 
            style="background:var(--card);border:1px solid var(--line);border-radius:10px;
                   padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
-                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);"
-           onclick='openSubject("${s.slug}")'>
+                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);
+                  transition:background 0.2s ease;"
+           onclick='openSubject("${s.slug}")'
+           onmouseover="this.style.background='var(--soft)';" 
+           onmouseout="this.style.background='var(--card)';">
         <div style="font-weight:500;">${s.name}</div>
         <div style="font-size:13px;color:var(--muted);">
           ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
