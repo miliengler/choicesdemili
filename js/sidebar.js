@@ -72,6 +72,7 @@ function initSidebar() {
   document.getElementById("nextPage").onclick = nextSidebarPage;
 
   renderSidebarPage();
+  document.getElementById("app")?.classList.add("with-sidebar");
 }
 
 /* ---------- Render de página ---------- */
@@ -141,15 +142,21 @@ function prevSidebarPage() {
 function hideSidebar() {
   const sidebar = document.getElementById("exam-sidebar");
   const toggleBtn = document.getElementById("openSidebarBtn");
+  const app = document.getElementById("app");
   if (!sidebar || !toggleBtn) return;
   sidebar.style.right = "-210px";
   toggleBtn.style.display = "block";
+  app?.classList.remove("with-sidebar");
+  app?.classList.add("fullwidth");
 }
 
 function showSidebar() {
   const sidebar = document.getElementById("exam-sidebar");
   const toggleBtn = document.getElementById("openSidebarBtn");
+  const app = document.getElementById("app");
   if (!sidebar || !toggleBtn) return;
   sidebar.style.right = "0";
   toggleBtn.style.display = "none";
+  app?.classList.add("with-sidebar");
+  app?.classList.remove("fullwidth");
 }
