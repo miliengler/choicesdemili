@@ -108,6 +108,47 @@ function renderStatsGlobal(){
   }
   app.innerHTML += sugHTML;
 
+  /* === 🔜 Progreso total del curso === */
+let totalChoices = 0, totalOk = 0;
+subs.forEach(m => {
+  const bankM = BANK.questions.filter(q => q.materia === m.slug);
+  totalChoices += bankM.length;
+
+  const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
+  totalOk += vals.filter(v => v.status === 'ok').length;
+});
+
+const globalPct = totalChoices ? Math.round((totalOk / totalChoices) * 100) : 0;
+
+const progresoHTML = `
+  <div class="card" style="margin-top:24px;text-align:center;">
+    <h3 style="margin-bottom:10px;">🔜 Progreso total</h3>
+    <div style="position:relative;width:90%;max-width:400px;height:22px;background:#e2e8f0;
+                border-radius:12px;margin:10px auto;overflow:hidden;">
+      <div id="bar-progreso-total"
+           style="height:100%;width:0;background:linear-gradient(90deg,#16a34a,#22c55e);
+                  border-radius:12px;transition:width 1s ease;">
+      </div>
+      <div style="position:absolute;top:0;left:0;width:100%;height:100%;
+                  display:flex;align-items:center;justify-content:center;
+                  font-weight:600;color:#0f172a;font-size:13px;">
+        ${globalPct}%
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--muted);margin-top:6px;">
+      ${totalOk} de ${totalChoices} choices respondidos correctamente
+    </p>
+  </div>
+`;
+
+app.innerHTML += progresoHTML;
+
+// --- animación de llenado de barra ---
+setTimeout(() => {
+  const bar = document.getElementById("bar-progreso-total");
+  if (bar) bar.style.width = globalPct + "%";
+}, 100);
+  
   /* === 📈 Estadísticas por materia === */
   let matsData = subs.map(m => {
     const totalM = BANK.questions.filter(q => q.materia === m.slug).length;
