@@ -165,3 +165,38 @@ async function manualBankReload() {
   await loadAllBanks(); // función ya definida en bank.js
   alert("✅ Bancos actualizados correctamente");
 }
+/* ==========================================================
+   🔍 TEST DE DIAGNÓSTICO – CARGA DE FUNCIONES
+   ========================================================== */
+window.addEventListener("load", () => {
+  const diag = document.createElement("div");
+  diag.id = "diag-box";
+  diag.style = `
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    background:#1e3a8a;
+    color:white;
+    padding:8px 12px;
+    font-size:13px;
+    border-radius:8px;
+    z-index:9999;
+    font-family:monospace;
+  `;
+
+  const tests = [
+    ["renderExamenSetup", typeof renderExamenSetup],
+    ["renderStatsGlobal", typeof renderStatsGlobal],
+    ["subjectsFromBank", typeof subjectsFromBank],
+    ["BANK", typeof BANK],
+    ["initSidebar", typeof initSidebar],
+  ];
+
+  let html = "🩺 Diagnóstico:\n";
+  tests.forEach(([name, type]) => {
+    html += `${name.padEnd(20)} → ${type}\n`;
+  });
+
+  diag.textContent = html;
+  document.body.appendChild(diag);
+});
