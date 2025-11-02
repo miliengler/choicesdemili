@@ -43,7 +43,7 @@ function initSidebar() {
 
   document.body.appendChild(sidebar);
 
-  // Botón para volver a abrir
+  // 🔹 Botón para volver a abrir
   const toggleBtn = document.createElement("button");
   toggleBtn.id = "openSidebarBtn";
   toggleBtn.innerHTML = "📑";
@@ -71,8 +71,10 @@ function initSidebar() {
   document.getElementById("prevPage").onclick = prevSidebarPage;
   document.getElementById("nextPage").onclick = nextSidebarPage;
 
-  renderSidebarPage();
+  // 🔹 Añadir margen al contenido principal
   document.getElementById("app")?.classList.add("with-sidebar");
+
+  renderSidebarPage();
 }
 
 /* ---------- Render de página ---------- */
@@ -101,12 +103,37 @@ function renderSidebarPage() {
       cursor: pointer;
       transition: all 0.2s ease;
     `;
-    if (i === CURRENT.i) btn.style.border = "2px solid var(--brand)";
+
+    // 🔹 Estado de respuesta (color)
+    const q = CURRENT.list[i];
+    const prog = PROG.general?.[q.id];
+    if (prog?.status === "ok") btn.style.background = "#dcfce7";     // verde claro
+    else if (prog?.status === "bad") btn.style.background = "#fee2e2"; // rojo claro
+    else if (prog) btn.style.background = "#e2e8f0"; // gris si respondió sin estado
+
+    // 🔹 Clip de nota (placeholder)
+    if (prog?.note) {
+      const clip = document.createElement("span");
+      clip.textContent = "📎";
+      clip.style.fontSize = "11px";
+      clip.style.marginLeft = "2px";
+      btn.appendChild(clip);
+    }
+
+    // 🔹 Borde de pregunta activa
+    if (i === CURRENT.i) btn.style.border = "2px solid #1e3a8a";
+
+    // 🔹 Hover suave
+    btn.onmouseenter = () => (btn.style.boxShadow = "0 2px 6px rgba(0,0,0,0.1)");
+    btn.onmouseleave = () => (btn.style.boxShadow = "none");
+
+    // 🔹 Click → cambiar pregunta
     btn.onclick = () => {
       CURRENT.i = i;
       renderExamenPregunta();
       renderSidebarPage();
     };
+
     grid.appendChild(btn);
   }
 
