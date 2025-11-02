@@ -16,7 +16,7 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     {slug:"hematologia", name:"🩸 Hematología"},
     {slug:"neurologia", name:"🧠 Neurología"},
     {slug:"endocrinologia", name:"🧪 Endocrinología"},
-    {slug:"pediatria", name:"🧸 Pediatría"},
+    {slug:"pediatria", name:"🧸 Pediatria"},
     {slug:"oncologia", name:"🎗️ Oncología"},
     {slug:"medicinafamiliar", name:"👨‍👩‍👧‍👦 Medicina Familiar"},
     {slug:"ginecologia", name:"🌸 Ginecología"},
