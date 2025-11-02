@@ -1,14 +1,5 @@
-/* ========== INICIO AUTOMÁTICO ========== */
-// Espera a que el DOM esté cargado antes de buscar #app
-document.addEventListener("DOMContentLoaded", () => {
-  debugLog("✅ DOM cargado");
-  const app = document.getElementById("app");
-  window.app = app; // la hace global para el resto del código
-  renderHome();
-});
-
-// --- DEBUG VISUAL ---
-// Esto crea un pequeño panel en pantalla para mostrar errores o mensajes en iPad
+/* ========== DEBUG VISUAL (para iPad) ========== */
+// Panel visual para mostrar errores o mensajes sin consola
 window.debugLog = function(msg){
   const el = document.getElementById("debugLog") || (() => {
     const div = document.createElement("div");
@@ -24,6 +15,16 @@ window.debugLog = function(msg){
 window.onerror = function(msg, src, line, col, err){
   debugLog("❌ ERROR: " + msg + " en " + src + ":" + line);
 };
+
+/* ========== INICIO AUTOMÁTICO ========== */
+// Espera a que el DOM esté cargado antes de buscar #app
+document.addEventListener("DOMContentLoaded", () => {
+  debugLog("✅ DOM cargado");
+  const app = document.getElementById("app");
+  window.app = app; // la hace global para el resto del código
+  renderHome();
+});
+
 /* ========== HOME ========== */
 function renderHome() {
   debugLog("🏠 renderHome ejecutado");
@@ -38,8 +39,10 @@ function renderHome() {
   `;
 }
 
-/* ========== LISTA DE MATERIAS (versión con botones blancos) ========== */
+/* ========== LISTA DE MATERIAS ========== */
 function renderSubjects() {
+  debugLog("📘 renderSubjects ejecutado");
+  
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' }
@@ -70,50 +73,21 @@ function renderSubjects() {
   `;
 }
 
-/* ========== ACCORDION ========== */
-window.toggleAcc = (slug) => {
-  const el = document.getElementById(`acc-${slug}`);
-  const cnt = document.getElementById(`count-${slug}`);
-  const open = el.style.display === "block";
-  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
-  document.querySelectorAll(".acc-count").forEach(c => c.classList.add("hidden"));
-  if (!open) { el.style.display = "block"; cnt.classList.remove("hidden"); }
-};
-
-function getStart(slug, total) {
-  const el = document.getElementById(`start-${slug}`);
-  let v = parseInt((el && el.value) ? el.value : "1", 10);
-  if (isNaN(v) || v < 1) v = 1;
-  if (v > total) v = total;
-  return v;
-}
-
 /* ========== MOTOR DE PREGUNTAS ========== */
 let CURRENT = { list: [], i: 0, materia: "" };
 
 function startPractica(slug) {
+  debugLog("▶️ startPractica ejecutado para " + slug);
   const listAll = (BANK.questions || []).filter(q => q.materia === slug).sort((a, b) => a.id.localeCompare(b.id));
   if (!listAll.length) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
+    debugLog("⚠️ No hay preguntas en " + slug);
     return;
   }
-  const start = getStart(slug, listAll.length);
-  CURRENT = { list: listAll.slice(start - 1), i: 0, materia: slug };
+  CURRENT = { list: listAll, i: 0, materia: slug };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = 0;
   saveAll();
-  renderPregunta();
-}
-
-function startRepaso(slug) {
-  const listAll = (BANK.questions || []).filter(q => q.materia === slug).sort((a, b) => a.id.localeCompare(b.id));
-  const prog = PROG[slug] || {};
-  const list = listAll.filter(q => prog[q.id]?.status === 'bad');
-  if (!list.length) {
-    app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;
-    return;
-  }
-  CURRENT = { list, i: 0, materia: slug };
   renderPregunta();
 }
 
@@ -121,6 +95,7 @@ function renderPregunta() {
   const q = CURRENT.list[CURRENT.i];
   if (!q) {
     app.innerHTML = `<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
+    debugLog("⚠️ Sin preguntas para mostrar");
     return;
   }
   const prog = PROG[CURRENT.materia] || {};
@@ -175,6 +150,7 @@ function updateLastIndex() {
     saveAll();
   }
 }
+
 function answer(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = CURRENT.materia || 'general';
@@ -186,21 +162,8 @@ function answer(i) {
   // Guardar resultado
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
   PROG[slug]._lastIndex = CURRENT.i;
-
-  // 🕒 Guardar fecha del último intento
   PROG[slug]._lastDate = Date.now();
 
   saveAll();
   renderPregunta();
-}
-function openMateria(slug) {
-  renderSubjects(); // muestra el menú de materias
-  setTimeout(() => {
-    const el = document.getElementById(`acc-${slug}`);
-    if (el) {
-      el.style.display = "block";
-      const head = document.querySelector(`[onclick="toggleAcc('${slug}')"]`);
-      if (head) head.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }, 100);
 }
