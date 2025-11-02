@@ -20,20 +20,20 @@ function renderSubjects(){
   );
 
   const list = subs.map((s) => `
-    <li class='acc-item' style="list-style:none;margin:8px 0;">
-      <div class='acc-header' 
-           style="background:var(--card);border:1px solid var(--line);border-radius:10px;
-                  padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
-                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);"
-           onclick='openSubject("${s.slug}")'>
-        <div style="font-weight:500;">${s.name}</div>
-        <div style="font-size:13px;color:var(--muted);">
-          ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
-        </div>
+  <li class='acc-item' style="list-style:none;margin:8px 0;">
+    <div class='acc-header' 
+         style="background:var(--card);border:1px solid var(--line);border-radius:10px;
+                padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
+                align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);"
+         onclick='openSubject("${s.slug}")'>
+      <div style="font-weight:500;">${s.name}</div>
+      <div style="font-size:13px;color:var(--muted);">
+        ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
       </div>
-    </li>
-  `).join("");
-
+    </div>
+  </li>
+`).join("");
+  
   app.innerHTML = `
     <div class='card'>
       <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
