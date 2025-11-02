@@ -10,48 +10,86 @@ function renderHome(){
     </div>
   `;
 }
-/* ========== LISTA DE MATERIAS (iPad-safe) ========== */
-function renderSubjects(){
-  console.log("🧩 renderSubjects() ejecutado");
+/* ---------- SUBJECTS (acordeón funcional) ---------- */
+function renderSubjects() {
+  console.log("🧩 renderSubjects ejecutado");
 
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity:'base'}
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', {sensitivity: 'base'}
     )
   );
 
-  const list = subs.map((s) => `
-    <li class='acc-item' style="list-style:none;margin:8px 0;">
-      <div class='acc-header' data-slug="${s.slug}"
-           style="background:var(--card);border:1px solid var(--line);border-radius:10px;
-                  padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
-                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);
-                  transition:background 0.2s ease;">
-        <div style="font-weight:500;">${s.name}</div>
-        <div style="font-size:13px;color:var(--muted);">
-          ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
+  const backBtn = `<button class='btn-small' onclick='renderHome()'>⬅️ Volver al inicio</button>`;
+
+  const list = subs.map(s => {
+    const count = (BANK.questions || []).filter(q => q.materia === s.slug).length;
+    const prog = PROG[s.slug] || {};
+    const last = prog._lastIndex != null ? prog._lastIndex + 1 : null;
+    const reanudarBtn = last ? `<button class='btn-small' onclick='resumeSubject("${s.slug}")'>🔄 Reanudar (${last})</button>` : ``;
+
+    return `
+      <li class='acc-item' style="margin:8px 0;">
+        <div class='acc-header' onclick='toggleAcc("${s.slug}")'
+             style="background:var(--card);border:1px solid var(--line);border-radius:10px;
+                    padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
+                    align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+          <div class='acc-title'>${s.name}</div>
+          <div class='acc-count hidden' id='count-${s.slug}'>${count} preguntas cargadas</div>
         </div>
-      </div>
-    </li>
-  `).join("");
+        <div class='acc-content' id='acc-${s.slug}' style="display:none;padding:10px;border-left:3px solid var(--brand);background:var(--soft);border-radius:6px;margin-top:4px;">
+          <div class='acc-actions' style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
+            <label class='small'>📘 Desde # <input type='number' id='start-${s.slug}' min='1' max='${count}' value='1' style='width:60px;text-align:center;'></label>
+            <button class='btn-small' onclick='startPractica("${s.slug}", getStart("${s.slug}", ${count})-1)'>🧩 Práctica</button>
+            <button class='btn-small' onclick='startRepaso("${s.slug}")'>📖 Repasar</button>
+            ${reanudarBtn}
+            <button class='btn-small' onclick='showStats("${s.slug}")'>📊 Estadísticas</button>
+            <button class='btn-small' onclick='alert("🗒️ Notas aún no disponibles")'>🗒️ Notas</button>
+          </div>
+        </div>
+      </li>`;
+  }).join("");
 
   app.innerHTML = `
     <div class='card'>
-      <button class='btn-small' onclick='renderHome()'>⬅️ Volver</button>
+      ${backBtn}
       <ul class='accordion' style="padding:0;margin-top:10px;">${list}</ul>
-    </div>`;
+    </div>
+  `;
+}
 
-  // ✅ Forzamos un pequeño delay para asegurar que el DOM esté listo (iPad fix)
-  setTimeout(() => {
-    document.querySelectorAll(".acc-header").forEach(el => {
-      el.addEventListener("click", () => {
-        const slug = el.getAttribute("data-slug");
-        console.log("✅ Click detectado en:", slug);
-        alert("Click detectado en " + slug);
-        openSubject(slug);
-      });
-    });
-  }, 100); // 100 ms es suficiente en Safari iOS
+/* ---------- Toggle acordeón ---------- */
+window.toggleAcc = (slug) => {
+  const el = document.getElementById(`acc-${slug}`);
+  const cnt = document.getElementById(`count-${slug}`);
+  const open = el.style.display === "block";
+  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
+  document.querySelectorAll(".acc-count").forEach(c => c.classList.add("hidden"));
+  if (!open) {
+    el.style.display = "block";
+    cnt.classList.remove("hidden");
+  }
+};
+
+/* ---------- Helpers ---------- */
+function getStart(slug, total) {
+  const el = document.getElementById(`start-${slug}`);
+  let v = parseInt((el && el.value) ? el.value : "1", 10);
+  if (isNaN(v) || v < 1) v = 1;
+  if (v > total) v = total;
+  return v;
+}
+
+/* ---------- Reanudar ---------- */
+function resumeSubject(slug) {
+  const progreso = PROG[slug] || {};
+  const start = progreso._lastIndex || 0;
+  startPractica(slug, start);
+}
+
+/* ---------- Estadísticas placeholder ---------- */
+function showStats(slug) {
+  alert(`📊 Próximamente estadísticas para ${slug}`);
 }
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
