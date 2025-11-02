@@ -1,195 +1,155 @@
-/* =======================================================
-   📚 BARRA LATERAL DE PREGUNTAS (MEbank Choice)
-   ======================================================= */
+/* ==========================================================
+   📊 Barra lateral de progreso (modo examen)
+   ========================================================== */
 
-const QUESTIONS_PER_PAGE = 50;
-let currentSidebarPage = 0;
-let sidebarOpen = false;
+let sidebarPage = 0;
+const PAGE_SIZE = 50;
 
 /* ---------- Inicialización ---------- */
 function initSidebar() {
-  // Evitar duplicados
-  if (document.getElementById("sidebar")) return;
+  if (document.getElementById("exam-sidebar")) return;
 
-  const sb = document.createElement("div");
-  sb.id = "sidebar";
-  sb.innerHTML = `
-    <div id="sidebar-toggle" onclick="toggleSidebar()">
-      <span id="sidebar-icon">📋</span>
+  const sidebar = document.createElement("div");
+  sidebar.id = "exam-sidebar";
+  sidebar.style = `
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 200px;
+    max-height: 90vh;
+    background: #ffffff;
+    border-left: 2px solid var(--line);
+    box-shadow: -2px 0 10px rgba(0,0,0,0.08);
+    border-radius: 12px 0 0 12px;
+    padding: 12px;
+    overflow-y: auto;
+    z-index: 60;
+    transition: right 0.3s ease;
+  `;
+
+  sidebar.innerHTML = `
+    <div id="sidebar-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <b style="font-size:14px;">Preguntas</b>
+      <button id="closeSidebar" style="border:none;background:none;font-size:16px;cursor:pointer;color:var(--muted)">✖</button>
     </div>
-    <div id="sidebar-content">
-      <h4>Preguntas</h4>
-      <div id="sidebar-list"></div>
-      <div id="sidebar-pagination">
-        <button id="prevPageBtn" class="sb-page-btn" onclick="changeSidebarPage(-1)">⟨</button>
-        <span id="pageIndicator"></span>
-        <button id="nextPageBtn" class="sb-page-btn" onclick="changeSidebarPage(1)">⟩</button>
-      </div>
+    <div id="sidebar-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;"></div>
+    <div id="sidebar-pagination" style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;">
+      <button id="prevPage" class="btn-mini" disabled>⬅️</button>
+      <span id="pageInfo" style="font-size:13px;color:var(--muted)">1</span>
+      <button id="nextPage" class="btn-mini">➡️</button>
     </div>
   `;
-  document.body.appendChild(sb);
-  renderSidebar();
+
+  document.body.appendChild(sidebar);
+
+  // Botón para volver a abrir
+  const toggleBtn = document.createElement("button");
+  toggleBtn.id = "openSidebarBtn";
+  toggleBtn.innerHTML = "📑";
+  toggleBtn.title = "Mostrar barra lateral";
+  toggleBtn.style = `
+    position: fixed;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    background: #1e40af;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 8px;
+    cursor: pointer;
+    z-index: 61;
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+  `;
+  toggleBtn.onclick = showSidebar;
+  document.body.appendChild(toggleBtn);
+
+  document.getElementById("closeSidebar").onclick = hideSidebar;
+  document.getElementById("prevPage").onclick = prevSidebarPage;
+  document.getElementById("nextPage").onclick = nextSidebarPage;
+
+  renderSidebarPage();
 }
 
-/* ---------- Render principal ---------- */
-function renderSidebar() {
-  const total = BANK.questions.length;
-  const start = currentSidebarPage * QUESTIONS_PER_PAGE;
-  const end = Math.min(start + QUESTIONS_PER_PAGE, total);
+/* ---------- Render de página ---------- */
+function renderSidebarPage() {
+  const total = CURRENT?.list?.length || 0;
+  const start = sidebarPage * PAGE_SIZE;
+  const end = Math.min(start + PAGE_SIZE, total);
+  const grid = document.getElementById("sidebar-grid");
+  if (!grid) return;
 
-  let html = "";
+  grid.innerHTML = "";
+
   for (let i = start; i < end; i++) {
-    const n = i + 1;
-    html += `<button class="sidebar-q" data-q="${n}" onclick="goToQuestion(${n})">${n}</button>`;
+    const btn = document.createElement("div");
+    btn.textContent = i + 1;
+    btn.className = "sidebar-cell";
+    btn.style = `
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--soft);
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    `;
+    if (i === CURRENT.i) btn.style.border = "2px solid var(--brand)";
+    btn.onclick = () => {
+      CURRENT.i = i;
+      renderExamenPregunta();
+      renderSidebarPage();
+    };
+    grid.appendChild(btn);
   }
 
-  const list = document.getElementById("sidebar-list");
-  if (list) list.innerHTML = html;
+  // Actualizar paginación
+  const prevBtn = document.getElementById("prevPage");
+  const nextBtn = document.getElementById("nextPage");
+  const pageInfo = document.getElementById("pageInfo");
+  const totalPages = Math.ceil(total / PAGE_SIZE);
 
-  const indicator = document.getElementById("pageIndicator");
-  if (indicator)
-    indicator.textContent = `Página ${currentSidebarPage + 1} de ${Math.ceil(total / QUESTIONS_PER_PAGE)}`;
-
-  updateSidebarStatus();
+  prevBtn.disabled = sidebarPage === 0;
+  nextBtn.disabled = sidebarPage >= totalPages - 1;
+  pageInfo.textContent = `${sidebarPage + 1}/${totalPages}`;
 }
 
-/* ---------- Cambiar página ---------- */
-function changeSidebarPage(dir) {
-  const totalPages = Math.ceil(BANK.questions.length / QUESTIONS_PER_PAGE);
-  currentSidebarPage = Math.max(0, Math.min(currentSidebarPage + dir, totalPages - 1));
-  renderSidebar();
-}
-
-/* ---------- Toggle lateral ---------- */
-function toggleSidebar(force) {
-  sidebarOpen = force !== undefined ? force : !sidebarOpen;
-  const sb = document.getElementById("sidebar");
-  if (!sb) return;
-
-  if (sidebarOpen) {
-    sb.style.transform = "translateX(0)";
-    document.getElementById("sidebar-icon").textContent = "❮";
-  } else {
-    sb.style.transform = "translateX(100%)";
-    document.getElementById("sidebar-icon").textContent = "📋";
+/* ---------- Navegación entre páginas ---------- */
+function nextSidebarPage() {
+  const total = CURRENT?.list?.length || 0;
+  const totalPages = Math.ceil(total / PAGE_SIZE);
+  if (sidebarPage < totalPages - 1) {
+    sidebarPage++;
+    renderSidebarPage();
   }
 }
 
-/* ---------- Colorear estado ---------- */
-function updateSidebarStatus() {
-  document.querySelectorAll(".sidebar-q").forEach(btn => {
-    const n = parseInt(btn.dataset.q);
-    const data = PROG[currentMateria]?.[n];
-
-    btn.classList.remove("ok", "bad", "none", "note");
-    if (!data) btn.classList.add("none");
-    else if (data.status === "ok") btn.classList.add("ok");
-    else if (data.status === "bad") btn.classList.add("bad");
-    if (data?.note) btn.classList.add("note");
-  });
+function prevSidebarPage() {
+  if (sidebarPage > 0) {
+    sidebarPage--;
+    renderSidebarPage();
+  }
 }
 
-/* ---------- Estilos ---------- */
-const style = document.createElement("style");
-style.textContent = `
-#sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  background: var(--card);
-  border-left: 1px solid var(--line);
-  box-shadow: -4px 0 10px rgba(0,0,0,0.1);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 1000;
-  display:flex;
-  flex-direction:column;
+/* ---------- Mostrar / ocultar ---------- */
+function hideSidebar() {
+  const sidebar = document.getElementById("exam-sidebar");
+  const toggleBtn = document.getElementById("openSidebarBtn");
+  if (!sidebar || !toggleBtn) return;
+  sidebar.style.right = "-210px";
+  toggleBtn.style.display = "block";
 }
 
-#sidebar-toggle {
-  position: absolute;
-  top: 50%;
-  left: -32px;
-  transform: translateY(-50%);
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-right:none;
-  border-radius: 10px 0 0 10px;
-  box-shadow: -2px 0 6px rgba(0,0,0,0.05);
-  padding: 6px 8px;
-  cursor: pointer;
+function showSidebar() {
+  const sidebar = document.getElementById("exam-sidebar");
+  const toggleBtn = document.getElementById("openSidebarBtn");
+  if (!sidebar || !toggleBtn) return;
+  sidebar.style.right = "0";
+  toggleBtn.style.display = "none";
 }
-
-#sidebar-content {
-  flex:1;
-  overflow-y:auto;
-  padding: 16px;
-  text-align:center;
-}
-
-#sidebar-list {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:6px;
-  margin-top:8px;
-}
-
-.sidebar-q {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: var(--soft);
-  cursor:pointer;
-  font-size:14px;
-  transition: all 0.2s;
-}
-.sidebar-q:hover {
-  background: var(--brand);
-  color:#fff;
-}
-.sidebar-q.ok {
-  background:#dcfce7;
-  border-color:#16a34a;
-  color:#166534;
-}
-.sidebar-q.bad {
-  background:#fee2e2;
-  border-color:#dc2626;
-  color:#7f1d1d;
-}
-.sidebar-q.none {
-  background:#f8fafc;
-  color:#475569;
-}
-.sidebar-q.note::after {
-  content:"📎";
-  font-size:11px;
-  position:relative;
-  top:-3px;
-  left:2px;
-}
-
-#sidebar-pagination {
-  margin-top:10px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:10px;
-}
-.sb-page-btn {
-  background:var(--soft);
-  border:none;
-  border-radius:6px;
-  padding:4px 8px;
-  cursor:pointer;
-}
-.sb-page-btn:hover {
-  background:var(--brand);
-  color:#fff;
-}
-`;
-document.head.appendChild(style);
