@@ -232,8 +232,7 @@ const matsHTML = `
       <button class="btn-small" 
               style="background:#f8fafc;color:#1e40af;border:1px solid #cbd5e1;
                      font-weight:600;padding:10px 18px;border-radius:10px;
-                     transition:all .2s ease;
-                     ${currentOrder === 'alpha' ? 'box-shadow:0 0 0 2px #1e40af40' : ''}"
+                     transition:all .2s ease;"
               onmouseover="this.style.background='#e0e7ff'"
               onmouseout="this.style.background='#f8fafc'"
               onclick="setOrder('alpha')">🔠 Ordenar alfabéticamente</button>
@@ -241,8 +240,7 @@ const matsHTML = `
       <button class="btn-small" 
               style="background:#f8fafc;color:#1e40af;border:1px solid #cbd5e1;
                      font-weight:600;padding:10px 18px;border-radius:10px;
-                     transition:all .2s ease;
-                     ${currentOrder === 'progress' ? 'box-shadow:0 0 0 2px #1e40af40' : ''}"
+                     transition:all .2s ease;"
               onmouseover="this.style.background='#e0e7ff'"
               onmouseout="this.style.background='#f8fafc'"
               onclick="setOrder('progress')">📊 Ordenar por progreso</button>
