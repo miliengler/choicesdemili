@@ -1,26 +1,39 @@
 /* ========== INICIO AUTOMÁTICO ========== */
 // Espera a que el DOM esté cargado antes de buscar #app
 document.addEventListener("DOMContentLoaded", () => {
+  debugLog("✅ DOM cargado");
   const app = document.getElementById("app");
   window.app = app; // la hace global para el resto del código
   renderHome();
 });
 
+// --- DEBUG VISUAL ---
+// Esto crea un pequeño panel en pantalla para mostrar errores o mensajes en iPad
+window.debugLog = function(msg){
+  const el = document.getElementById("debugLog") || (() => {
+    const div = document.createElement("div");
+    div.id = "debugLog";
+    div.style = "position:fixed;bottom:0;left:0;width:100%;max-height:120px;overflow:auto;font-size:12px;background:#000;color:#0f0;padding:6px;font-family:monospace;z-index:9999;";
+    document.body.appendChild(div);
+    return div;
+  })();
+  el.innerHTML += msg + "<br>";
+};
+
+// Capturar errores globales
+window.onerror = function(msg, src, line, col, err){
+  debugLog("❌ ERROR: " + msg + " en " + src + ":" + line);
+};
 /* ========== HOME ========== */
 function renderHome() {
+  debugLog("🏠 renderHome ejecutado");
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
       <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">
-  🧠 Modo Examen – Creá el tuyo
-</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">
-        📊 Estadísticas generales
-      </button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderNotesList()">
-        📔 Mis notas
-      </button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('🧠 Modo examen en desarrollo')">🧠 Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
+      <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
     </div>
   `;
 }
