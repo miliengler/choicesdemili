@@ -75,38 +75,43 @@ function renderStatsGlobal(){
 
   const topSug = conDatos.slice(0, 3);
 
-  let sugHTML = "";
-  if (topSug.length) {
-    sugHTML = `
-      <div class="card" style="margin-top:24px;">
-        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
-        <p style="font-size:14px;color:var(--muted)">Basadas en tu actividad reciente y precisión por materia.</p>
-        <ul style="list-style:none;padding:0;margin:0;">
-          ${topSug.map(s => {
-            const repaso = s.pct !== null && s.pct < 70
-              ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
-              : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
+let sugHTML = "";
+if (topSug.length) {
+  sugHTML = `
+    <div class="card" style="margin-top:24px;text-align:center;">
+      <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+      <p style="font-size:14px;color:var(--muted)">
+        Basadas en tu actividad reciente y precisión por materia.
+      </p>
+      <ul style="list-style:none;padding:0;margin:0;">
+        ${topSug.map(s => {
+          const repaso = s.pct !== null && s.pct < 70
+            ? `📚 Tu promedio más bajo es <b>${s.materia}</b> (${s.pct}% correctas).`
+            : `💡 No practicás <b>${s.materia}</b> hace ${s.dias} días.`;
 
-            return `
-              <li style="margin:10px 0;">
-                ${repaso}<br>
-                <div style="margin-top:8px;display:flex;justify-content:center;">
-                  <button class="btn-small" 
-                          style="background:#1e40af;border-color:#1e40af;"
-                          onclick="openMateriaAuto('${s.slug}')">👉 Ir a practicar</button>
-                </div>
-              </li>`;
-          }).join("")}
-        </ul>
-      </div>`;
-  } else {
-    sugHTML = `
-      <div class="card" style="margin-top:24px;">
-        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
-        <p style="color:var(--muted);font-size:14px;">Aún no hay datos suficientes para sugerencias.</p>
-      </div>`;
-  }
-  app.innerHTML += sugHTML;
+          return `
+            <li style="margin:10px 0;">
+              ${repaso}<br>
+              <div style="margin-top:8px;display:flex;justify-content:center;">
+                <button class="btn-small"
+                        style="background:#1e40af;border-color:#1e40af;"
+                        onclick="openMateriaAuto('${s.slug}')">
+                  Ir a practicar
+                </button>
+              </div>
+            </li>`;
+        }).join("")}
+      </ul>
+    </div>`;
+} else {
+  sugHTML = `
+    <div class="card" style="margin-top:24px;text-align:center;">
+      <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+      <p style="color:var(--muted);font-size:14px;">
+        Aún no hay datos suficientes para sugerencias.
+      </p>
+    </div>`;
+}
 
   /* === 🔜 Progreso total del curso === */
 let totalChoices = 0, totalOk = 0;
