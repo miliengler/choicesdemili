@@ -11,8 +11,8 @@ function renderHome() {
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
       <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">  🧠 Modo Examen – Creá el tuyo </button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">  📊 Estadísticas generales </button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
       <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
       <hr style="width:60%;margin:20px 0;border:0;border-top:1px solid var(--line)">
       <button class="btn-small" style="background:#475569;color:white;" onclick="manualBankReload()">🔄 Actualizar bancos</button>
@@ -139,15 +139,21 @@ function updateLastIndex() {
   }
 }
 
+/* ========== 🔹 REGISTRO DE RESPUESTA (actualizado) ========== */
 function answer(i) {
   const q = CURRENT_SESSION.list[CURRENT_SESSION.i];
   const slug = CURRENT_SESSION.materia || 'general';
   PROG[slug] = PROG[slug] || {};
+
+  // Evita sobrescribir si ya respondió
   if (PROG[slug][q.id]) return;
 
+  // Guarda respuesta y estado
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
+
+  // Guarda índice y fecha del último intento
   PROG[slug]._lastIndex = CURRENT_SESSION.i;
-  PROG[slug]._lastDate = Date.now();
+  PROG[slug]._lastDate = Date.now();   // 🟢 Marca la fecha para sugerencias
 
   saveAll();
   renderPregunta();
