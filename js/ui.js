@@ -54,6 +54,13 @@ function renderSubjects(){
       el.style.background = "var(--card)";
     });
   });
+    document.querySelectorAll(".acc-header").forEach(el => {
+    el.addEventListener("click", () => {
+      console.log("Click detectado en:", el.getAttribute("data-slug"));
+      alert("Click detectado en " + el.getAttribute("data-slug"));
+      openSubject(el.getAttribute("data-slug"));
+    });
+  });
 }
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
