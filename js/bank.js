@@ -16,7 +16,7 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     {slug:"hematologia", name:"🩸 Hematología"},
     {slug:"neurologia", name:"🧠 Neurología"},
     {slug:"endocrinologia", name:"🧪 Endocrinología"},
-    {slug:"pediatria", name:"🧸 Pediatria"},
+    {slug:"pediatría", name:"🧸 Pediatría"},
     {slug:"oncologia", name:"🎗️ Oncología"},
     {slug:"medicinafamiliar", name:"👨‍👩‍👧‍👦 Medicina Familiar"},
     {slug:"ginecologia", name:"🌸 Ginecología"},
@@ -64,7 +64,7 @@ function subjectsFromBank() {
 /* ---------- Carga automática de bancos (optimizada) ---------- */
 async function loadAllBanks() {
   // 💡 Solo buscar en las materias que tengas cargadas realmente
-  const materias = ["pediatria"]; // agregá más cuando tengas más carpetas (ej: "obstetricia")
+  const materias = ["pediatría"]; // agregá más cuando tengas más carpetas (ej: "obstetricia")
 
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
