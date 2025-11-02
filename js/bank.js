@@ -61,11 +61,23 @@ function subjectsFromBank() {
   return Array.from(known.values()).sort((a, b) => a.name.localeCompare(b.name));
 }
 
-/* ---------- Carga automática de bancos ---------- */
-(async function loadAllBanks() {
-  const materias = BANK.subjects.map(s => s.slug);
+/* ---------- Carga automática de bancos (optimizada) ---------- */
+async function loadAllBanks() {
+  // 💡 Solo buscar en las materias que tengas cargadas realmente
+  const materias = ["pediatria"]; // agregá más cuando tengas más carpetas (ej: "obstetricia")
+
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
+
+  // 🔢 Mostrar contador visual en pantalla (útil en iPad)
+  let loader = document.getElementById("bankLoader");
+  if (!loader) {
+    loader = document.createElement("div");
+    loader.id = "bankLoader";
+    loader.style = "position:fixed;bottom:10px;left:10px;background:#1e40af;color:white;padding:8px 12px;border-radius:6px;font-size:13px;z-index:9999;";
+    loader.textContent = "⏳ Cargando bancos...";
+    document.body.appendChild(loader);
+  }
 
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
@@ -82,18 +94,21 @@ function subjectsFromBank() {
           console.log(`📘 Cargado ${ruta} (${nuevas.length} nuevas en ${materia})`);
         }
       } catch (err) {
-        // No mostrar error si el archivo no existe
+        console.warn(`⚠️ No se pudo cargar ${ruta}`);
       }
     }
   }
 
+  loader.textContent = totalNuevas > 0
+    ? `✅ ${totalNuevas} preguntas nuevas cargadas`
+    : "ℹ️ No hay nuevas preguntas";
+  setTimeout(() => loader.remove(), 2500);
+
   if (totalNuevas > 0) {
     saveAll();
-    console.log(`✅ Bancos actualizados (${totalNuevas} preguntas nuevas en total)`);
-  } else {
-    console.log("ℹ️ No se encontraron nuevos bancos o ya estaban cargados.");
   }
-})();
+}
+
 /* ---------- Botón temporal para recargar bancos ---------- */
 function addUpdateButton() {
   const btn = document.createElement("button");
