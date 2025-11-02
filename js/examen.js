@@ -8,6 +8,9 @@ const PAGE_SIZE = 50;
 
 /* ---------- Inicialización ---------- */
 function initSidebar() {
+   if (!CURRENT || !CURRENT.list) {
+  console.warn("🔸 Sidebar: no hay examen activo todavía.");
+  return;
   // Evita duplicar si ya existe
   if (document.getElementById("exam-sidebar")) return;
 
