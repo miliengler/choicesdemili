@@ -83,13 +83,13 @@ function renderSidebarPage() {
   const start = sidebarPage * PAGE_SIZE;
   const end = Math.min(start + PAGE_SIZE, total);
   const grid = document.getElementById("sidebar-grid");
-  if (!grid) return;
+  if (!grid || !CURRENT?.session) return;
 
   grid.innerHTML = "";
 
   for (let i = start; i < end; i++) {
     const btn = document.createElement("div");
-    btn.textContent = i + 1;
+    btn.textContent = i + 1; // numeración local del examen (1, 2, 3...)
     btn.className = "sidebar-cell";
     btn.style = `
       width: 32px;
@@ -104,21 +104,11 @@ function renderSidebarPage() {
       transition: all 0.2s ease;
     `;
 
-    // 🔹 Estado de respuesta (color)
-    const q = CURRENT.list[i];
-    const prog = PROG.general?.[q.id];
-    if (prog?.status === "ok") btn.style.background = "#dcfce7";     // verde claro
-    else if (prog?.status === "bad") btn.style.background = "#fee2e2"; // rojo claro
-    else if (prog) btn.style.background = "#e2e8f0"; // gris si respondió sin estado
-
-    // 🔹 Clip de nota (placeholder)
-    if (prog?.note) {
-      const clip = document.createElement("span");
-      clip.textContent = "📎";
-      clip.style.fontSize = "11px";
-      clip.style.marginLeft = "2px";
-      btn.appendChild(clip);
-    }
+    // 🔹 Estado de respuesta dentro de la sesión actual
+    const estado = CURRENT.session[i]; // 'ok' | 'bad' | undefined
+    if (estado === "ok") btn.style.background = "#dcfce7";
+    else if (estado === "bad") btn.style.background = "#fee2e2";
+    else btn.style.background = "var(--soft)";
 
     // 🔹 Borde de pregunta activa
     if (i === CURRENT.i) btn.style.border = "2px solid #1e3a8a";
@@ -147,7 +137,6 @@ function renderSidebarPage() {
   nextBtn.disabled = sidebarPage >= totalPages - 1;
   pageInfo.textContent = `${sidebarPage + 1}/${totalPages}`;
 }
-
 /* ---------- Navegación entre páginas ---------- */
 function nextSidebarPage() {
   const total = CURRENT?.list?.length || 0;
