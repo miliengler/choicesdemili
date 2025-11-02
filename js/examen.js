@@ -108,7 +108,7 @@ function startExamen() {
   renderExamenPregunta();
 
   // ✅ Luego inicializamos la barra lateral (ya existe #app)
-  initSidebar();
+  // initSidebar();  // ❌ desactivado porque el examen ya tiene su propio índice
 
   // ✅ Cronómetro opcional
   if (useTimer) {
