@@ -16,7 +16,7 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     {slug:"hematologia", name:"🩸 Hematología"},
     {slug:"neurologia", name:"🧠 Neurología"},
     {slug:"endocrinologia", name:"🧪 Endocrinología"},
-    {slug:"pediatría", name:"🧸 Pediatría"},
+    {slug:"pediatria", name:"🧸 Pediatría"},
     {slug:"oncologia", name:"🎗️ Oncología"},
     {slug:"medicinafamiliar", name:"👨‍👩‍👧‍👦 Medicina Familiar"},
     {slug:"ginecologia", name:"🌸 Ginecología"},
@@ -33,7 +33,7 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     {slug:"imagenes", name:"🩻 Diagnóstico por Imágenes"},
     {slug:"otras", name:"📚 Otras"}
   ],
-  questions: [] // se cargan automáticamente desde /bancos/
+  questions: []
 };
 
 const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
@@ -49,27 +49,40 @@ const app = document.getElementById("app");
 
 /* ---------- Utilidades ---------- */
 function subjectsFromBank() {
-  const known = new Map((BANK.subjects || []).map(s => [s.slug, s]));
+  // 🧹 Normalizador universal (quita emojis, tildes y deja minúsculas)
+  const normalizeSlug = str =>
+    str
+      ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim()
+      : "";
+
+  const known = new Map((BANK.subjects || []).map(s => [normalizeSlug(s.slug), s]));
+
   (BANK.questions || []).forEach(q => {
-    if (q && q.materia && !known.has(q.materia)) {
-      known.set(q.materia, {
-        slug: q.materia,
-        name: q.materia[0].toUpperCase() + q.materia.slice(1)
-      });
+    if (q && q.materia) {
+      const slug = normalizeSlug(q.materia);
+      if (!known.has(slug)) {
+        known.set(slug, {
+          slug: slug,
+          name: q.materia
+        });
+      }
     }
   });
-  return Array.from(known.values()).sort((a, b) => a.name.localeCompare(b.name));
+
+  return Array.from(known.values()).sort((a, b) =>
+    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+  );
 }
 
-/* ---------- Carga automática de bancos (optimizada) ---------- */
+/* ---------- Carga automática de bancos (todas las materias) ---------- */
 async function loadAllBanks() {
-  // 💡 Solo buscar en las materias que tengas cargadas realmente
-  const materias = ["pediatría"]; // agregá más cuando tengas más carpetas (ej: "obstetricia")
+  // 🧩 Usa todos los slugs definidos en BANK.subjects
+  const materias = BANK.subjects.map(s => s.slug);
 
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
 
-  // 🔢 Mostrar contador visual en pantalla (útil en iPad)
+  // 🔢 Indicador visual
   let loader = document.getElementById("bankLoader");
   if (!loader) {
     loader = document.createElement("div");
@@ -79,6 +92,11 @@ async function loadAllBanks() {
     document.body.appendChild(loader);
   }
 
+  const normalizeMateria = str =>
+    str
+      ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim()
+      : "";
+
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
       const ruta = `../bancos/${materia}/${materia}${i}.json`;
@@ -86,6 +104,12 @@ async function loadAllBanks() {
         const resp = await fetch(ruta);
         if (!resp.ok) continue;
         const data = await resp.json();
+
+        // 🔹 Normaliza materia de cada pregunta
+        data.forEach(q => {
+          if (q.materia) q.materia = normalizeMateria(q.materia);
+        });
+
         const nuevas = data.filter(q => !existingIds.has(q.id));
         if (nuevas.length > 0) {
           nuevas.forEach(q => existingIds.add(q.id));
@@ -104,9 +128,7 @@ async function loadAllBanks() {
     : "ℹ️ No hay nuevas preguntas";
   setTimeout(() => loader.remove(), 2500);
 
-  if (totalNuevas > 0) {
-    saveAll();
-  }
+  if (totalNuevas > 0) saveAll();
 }
 
 /* ---------- Botón temporal para recargar bancos ---------- */
@@ -123,7 +145,7 @@ function addUpdateButton() {
   btn.onclick = async () => {
     btn.textContent = "⏳ Actualizando...";
     btn.disabled = true;
-    await loadAllBanks(); // vuelve a ejecutar la carga completa
+    await loadAllBanks();
     btn.textContent = "✅ Bancos actualizados";
     setTimeout(() => {
       btn.textContent = "🔄 Actualizar bancos manualmente";
