@@ -143,8 +143,7 @@ function renderExamenPregunta() {
   `;
 }
 
-
-/* ---------- Registro de respuestas (actualizado con _lastDate) ---------- */
+/* ---------- Registro de respuestas (mejorado) ---------- */
 function answerExamen(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = "general";
@@ -154,14 +153,26 @@ function answerExamen(i) {
   if (PROG[slug][q.id]) return;
 
   // Guarda respuesta y estado
-  PROG[slug][q.id] = { chosen: i, status: i === q.correcta ? "ok" : "bad" };
+  const correcta = i === q.correcta;
+  PROG[slug][q.id] = { chosen: i, status: correcta ? "ok" : "bad" };
 
   // 🔹 Guarda la fecha del último intento (para sugerencias globales)
   PROG[slug]._lastDate = Date.now();
 
   saveAll();
-  nextExamen();
+
+  // 🎨 Mostrar corrección visual
+  const options = document.querySelectorAll(".option");
+  options.forEach((opt, idx) => {
+    if (idx === q.correcta) opt.classList.add("correct");
+    else if (idx === i) opt.classList.add("wrong");
+    opt.style.pointerEvents = "none"; // desactiva clics
+  });
+
+  // ⏳ Espera 1.2 segundos y pasa a la siguiente
+  setTimeout(() => nextExamen(), 1200);
 }
+
 /* ---------- Navegación ---------- */
 function nextExamen() {
   if (CURRENT.i < CURRENT.list.length - 1) {
