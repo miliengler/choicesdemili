@@ -11,7 +11,7 @@ function renderHome(){
   `;
 }
 
-/* ========== LISTA DE MATERIAS (ESTILO ORIGINAL SIN NUMERACIÓN) ========== */
+/* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -25,23 +25,10 @@ function renderSubjects(){
            style="background:var(--card);border:1px solid var(--line);border-radius:10px;
                   padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
                   align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);"
-           onclick='toggleAcc("${s.slug}")'>
+           onclick='openSubject("${s.slug}")'>
         <div style="font-weight:500;">${s.name}</div>
-        <div id='count-${s.slug}' class='hidden' 
-             style="font-size:13px;color:var(--muted);">
+        <div style="font-size:13px;color:var(--muted);">
           ${(BANK.questions||[]).filter(q=>q.materia===s.slug).length} preguntas
-        </div>
-      </div>
-
-      <div class='acc-content' id='acc-${s.slug}' 
-           style='display:none;padding-left:12px;margin-top:8px'>
-        <div class='acc-actions' style="display:flex;gap:8px;flex-wrap:wrap;">
-          <label class='small'>Desde # 
-            <input type='number' id='start-${s.slug}' min='1' value='1'>
-          </label>
-          <button class='btn-small' onclick='startPractica("${s.slug}")'>Práctica</button>
-          <button class='btn-small' onclick='startRepaso("${s.slug}")'>Repaso</button>
-          <button class='btn-small' onclick='renderHome()'>Inicio</button>
         </div>
       </div>
     </li>
@@ -54,29 +41,7 @@ function renderSubjects(){
     </div>`;
 }
 
-/* ---------- Alternar acordeón ---------- */
-window.toggleAcc = (slug)=>{
-  const el = document.getElementById(`acc-${slug}`);
-  const cnt = document.getElementById(`count-${slug}`);
-  const open = el.style.display === "block";
-
-  // cerrar todas
-  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
-  document.querySelectorAll("[id^='count-']").forEach(c => c.classList.add("hidden"));
-
-  // abrir solo la elegida
-  if (!open) {
-    el.style.display = "block";
-    if (cnt) cnt.classList.remove("hidden");
-  }
-};
-function getStart(slug,total){
-  const el = document.getElementById(`start-${slug}`);
-  let v = parseInt((el && el.value) ? el.value : "1", 10);
-  if(isNaN(v) || v<1) v = 1;
-  if(v>total) v = total;
-  return v;
-}
+/* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
   const subject = BANK.subjects.find(s => s.slug === slug);
   const preguntas = BANK.questions.filter(q => q.materia === slug);
@@ -85,51 +50,52 @@ function openSubject(slug) {
   const tieneProgreso = progreso._lastIndex !== undefined;
 
   app.innerHTML = `
-    <div class="subject-screen">
+    <div class="subject-screen" style="text-align:center;animation:fadeIn .5s;">
       <h2>${subject.name}</h2>
       <p>${total} preguntas disponibles</p>
-      <button id="btnFrom">📘 Desde #</button>
-      <button id="btnPractice">🧩 Práctica</button>
-      <button id="btnReview">📖 Repasar (solo incorrectas)</button>
-      ${tieneProgreso 
-        ? `<button id="btnResume">🔄 Reanudar (desde la #${progreso._lastIndex + 1})</button>` 
-        : ""}
-      <button id="btnStats">📊 Estadísticas</button>
-      <button id="btnNotes">🗒️ Notas</button>
-      <button id="btnBack">⬅️ Volver</button>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:10px;">
+        <button id="btnFrom" class="btn-main">📘 Desde #</button>
+        <button id="btnPractice" class="btn-main">🧩 Práctica</button>
+        <button id="btnReview" class="btn-main">📖 Repasar (solo incorrectas)</button>
+        ${tieneProgreso 
+          ? `<button id="btnResume" class="btn-main">🔄 Reanudar (desde la #${progreso._lastIndex + 1})</button>` 
+          : ""}
+        <button id="btnStats" class="btn-main">📊 Estadísticas</button>
+        <button id="btnNotes" class="btn-main">🗒️ Notas</button>
+        <button id="btnBack" class="btn-main" style="background:#475569;">⬅️ Volver</button>
+      </div>
     </div>
   `;
 
   // --- Asignación de botones ---
   document.getElementById("btnFrom").onclick = () => {
     const start = parseInt(prompt(`¿Desde qué número querés comenzar? (1–${total})`)) || 1;
-    startExam(slug, start - 1, {modo:"practica"});
+    startPractica(slug, start - 1);
   };
-
-  document.getElementById("btnPractice").onclick = () => startExam(slug, 0, {modo:"practica"});
-  document.getElementById("btnReview").onclick = () => startExam(slug, 0, {modo:"repaso"});
+  document.getElementById("btnPractice").onclick = () => startPractica(slug, 0);
+  document.getElementById("btnReview").onclick = () => startRepaso(slug);
 
   const btnResume = document.getElementById("btnResume");
-  if (btnResume) btnResume.onclick = () => startExam(slug, progreso._lastIndex || 0, {modo:"reanudar"});
+  if (btnResume) btnResume.onclick = () => startPractica(slug, progreso._lastIndex || 0);
 
-  // Botones de futuro desarrollo
+  // Botones informativos
   document.getElementById("btnStats").onclick = () => alert("📊 Próximamente: estadísticas visuales");
   document.getElementById("btnNotes").onclick = () => alert("🗒️ Aún no hay notas guardadas");
-  document.getElementById("btnBack").onclick = renderMainMenu;
+  document.getElementById("btnBack").onclick = renderSubjects;
 }
+
 /* ========== MOTOR DE PREGUNTAS ========== */
 let CURRENT = { list:[], i:0, materia:"" };
 
-function startPractica(slug){
+function startPractica(slug, startIndex=0){
   const listAll = (BANK.questions||[]).filter(q=>q.materia===slug).sort((a,b)=>a.id.localeCompare(b.id));
   if(!listAll.length){
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
     return;
   }
-  const start = getStart(slug, listAll.length);
-  CURRENT = { list:listAll.slice(start-1), i:0, materia:slug };
+  CURRENT = { list:listAll.slice(startIndex), i:0, materia:slug };
   PROG[slug] = PROG[slug] || {};
-  PROG[slug]._lastIndex = 0;
+  PROG[slug]._lastIndex = startIndex;
   saveAll();
   renderPregunta();
 }
@@ -139,7 +105,7 @@ function startRepaso(slug){
   const prog = PROG[slug]||{};
   const list = listAll.filter(q=> prog[q.id]?.status==='bad');
   if(!list.length){
-    app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;
+    app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='openSubject("${slug}")'>Volver</button></div>`;
     return;
   }
   CURRENT = { list, i:0, materia:slug };
@@ -149,7 +115,7 @@ function startRepaso(slug){
 function renderPregunta(){
   const q = CURRENT.list[CURRENT.i];
   if(!q){
-    app.innerHTML = `<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderHome()'>Volver</button></div>`;
+    app.innerHTML = `<div class='card'>Sin preguntas.<br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;
     return;
   }
   const prog = PROG[CURRENT.materia]||{};
@@ -177,7 +143,7 @@ function renderPregunta(){
           <div class='nav-row'>
             <button class='btn-small' onclick='prevQ()' ${CURRENT.i===0?'disabled':''}>Anterior</button>
             <button class='btn-small' onclick='nextQ()' ${CURRENT.i===CURRENT.list.length-1?'disabled':''}>Siguiente</button>
-            <button class='btn-small' onclick='renderSubjects()'>Inicio</button>
+            <button class='btn-small' onclick='openSubject("${CURRENT.materia}")'>Volver</button>
           </div>
         </div>
       </div>
