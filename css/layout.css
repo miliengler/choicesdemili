@@ -1,0 +1,102 @@
+/* ==========================================================
+   🎨 Layout general para preguntas + barra lateral
+   (Modo Examen / Choice / Anteriores)
+   ========================================================== */
+
+/* Contenedor principal */
+.q-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  margin-right: 250px; /* deja espacio para la barra lateral */
+  transition: margin 0.3s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+/* En pantallas pequeñas: barra se oculta, sin margen */
+@media (max-width: 900px) {
+  .q-layout {
+    flex-direction: column;
+    margin-right: 0;
+    gap: 16px;
+  }
+}
+
+/* ---------- Caja de la pregunta ---------- */
+.q-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 750px;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+/* Título de materia + numeración */
+.q-card b {
+  color: #0f172a;
+  font-size: 15px;
+}
+
+/* Enunciado */
+.q-card .enunciado {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---------- Opciones ---------- */
+.q-card .options label {
+  display: block;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.q-card .options label:hover {
+  background: #f1f5f9;
+}
+
+.q-card .options label.correct {
+  background: #dcfce7;
+  border-color: #22c55e;
+}
+
+.q-card .options label.wrong {
+  background: #fee2e2;
+  border-color: #ef4444;
+}
+
+/* ---------- Explicación ---------- */
+.q-card .explain {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ---------- Botonera inferior ---------- */
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* ---------- Animación suave ---------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
