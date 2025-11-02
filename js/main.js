@@ -1,8 +1,7 @@
 /* ========== INICIO AUTOMÁTICO ========== */
-// Carga inicial de la app
 document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
-  window.app = app; // la hace global
+  window.app = app;
   renderHome();
 });
 
@@ -15,11 +14,13 @@ function renderHome() {
       <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('🧠 Modo examen en desarrollo')">🧠 Modo Examen – Creá el tuyo</button>
       <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
       <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
+      <hr style="width:60%;margin:20px 0;border:0;border-top:1px solid var(--line)">
+      <button class="btn-small" style="background:#475569;color:white;" onclick="manualBankReload()">🔄 Actualizar bancos</button>
     </div>
   `;
 }
 
-/* ========== LISTA DE MATERIAS (versión con botones blancos) ========== */
+/* ========== LISTA DE MATERIAS ========== */
 function renderSubjects() {
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -125,7 +126,7 @@ function renderPregunta() {
     </div>`;
 }
 
-/* ========== NAVEGACIÓN DE PREGUNTAS ========== */
+/* ========== NAVEGACIÓN ========== */
 window.jump = (ix) => { CURRENT_SESSION.i = ix; updateLastIndex(); renderPregunta(); };
 function prevQ() { if (CURRENT_SESSION.i > 0) { CURRENT_SESSION.i--; updateLastIndex(); renderPregunta(); } }
 function nextQ() { if (CURRENT_SESSION.i < CURRENT_SESSION.list.length - 1) { CURRENT_SESSION.i++; updateLastIndex(); renderPregunta(); } }
@@ -150,4 +151,11 @@ function answer(i) {
 
   saveAll();
   renderPregunta();
+}
+
+/* ========== RECARGA MANUAL DE BANCOS ========== */
+async function manualBankReload() {
+  alert("⏳ Actualizando bancos...");
+  await loadAllBanks(); // función ya definida en bank.js
+  alert("✅ Bancos actualizados correctamente");
 }
