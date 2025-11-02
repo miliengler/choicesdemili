@@ -10,9 +10,6 @@ function renderHome(){
     </div>
   `;
 }
-
-/* ========== LISTA DE MATERIAS ========== */
-
 /* ========== LISTA DE MATERIAS ========== */
 function renderSubjects(){
   const subs = subjectsFromBank().sort((a, b) => 
@@ -45,6 +42,7 @@ function renderSubjects(){
       <ul class='accordion' style="padding:0;margin-top:10px;">${list}</ul>
     </div>`;
 }
+
 /* ========== MENÚ POR MATERIA ========== */
 function openSubject(slug) {
   const subject = BANK.subjects.find(s => s.slug === slug);
