@@ -1,45 +1,50 @@
 /* ---------- Persistencia ---------- */
-const LS_BANK = "mebank_bank_v6_2", 
-      LS_PROGRESS = "mebank_prog_v6_2";
+const LS_BANK = "mebank_bank_v6_full",
+      LS_PROGRESS = "mebank_prog_v6_full";
 
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
-    { slug: "pediatria", name: "🧸 Pediatría" },
-    { slug: "obstetricia", name: "🤰 Obstetricia" },
-    { slug: "infectologia", name: "🦠 Infectología" }
+    {slug:"neumonologia", name:"🫁 Neumonología"},
+    {slug:"psiquiatria", name:"🧠💭 Psiquiatría"},
+    {slug:"cardiologia", name:"🫀 Cardiología"},
+    {slug:"nutricion", name:"🍏 Nutrición"},
+    {slug:"nefrologia", name:"🫘 Nefrología"},
+    {slug:"gastroenterologia", name:"💩 Gastroenterología"},
+    {slug:"dermatologia", name:"🧴 Dermatología"},
+    {slug:"infectologia", name:"🦠 Infectología"},
+    {slug:"reumatologia", name:"💪 Reumatología"},
+    {slug:"hematologia", name:"🩸 Hematología"},
+    {slug:"neurologia", name:"🧠 Neurología"},
+    {slug:"endocrinologia", name:"🧪 Endocrinología"},
+    {slug:"pediatria", name:"🧸 Pediatría"},
+    {slug:"oncologia", name:"🎗️ Oncología"},
+    {slug:"medicinafamiliar", name:"👨‍👩‍👧‍👦 Medicina Familiar"},
+    {slug:"ginecologia", name:"🌸 Ginecología"},
+    {slug:"obstetricia", name:"🤰 Obstetricia"},
+    {slug:"cirugiageneral", name:"🔪 Cirugía General"},
+    {slug:"traumatologia", name:"🦴 Traumatología"},
+    {slug:"urologia", name:"🚽 Urología"},
+    {slug:"oftalmologia", name:"👁️ Oftalmología"},
+    {slug:"otorrinolaringologia", name:"👂 Otorrinolaringología"},
+    {slug:"neurocirugia", name:"🧠 Neurocirugía"},
+    {slug:"toxicologia", name:"☠️ Toxicología"},
+    {slug:"saludpublica", name:"🏥 Salud Pública"},
+    {slug:"medicinalegal", name:"⚖️ Medicina Legal"},
+    {slug:"imagenes", name:"🩻 Diagnóstico por Imágenes"},
+    {slug:"otras", name:"📚 Otras"}
   ],
-  questions: [
-    // 👇 ejemplos iniciales; luego se agregan los JSON externos
-    {
-      id: "PE-001",
-      materia: "pediatria",
-      subtema: "Bronquiolitis",
-      enunciado: "Lactante con bronquiolitis leve. Conducta inicial:",
-      opciones: ["Broncodilatador", "Corticoides", "Oxígeno según SatO2", "Antibióticos"],
-      correcta: 2,
-      explicacion: "Soporte: O2 si SatO2 baja; no corticoides de rutina."
-    },
-    {
-      id: "OB-001",
-      materia: "obstetricia",
-      subtema: "Controles prenatales",
-      enunciado: "Gestante 12 semanas: ¿qué NO es del primer control?",
-      opciones: ["Grupo y factor Rh", "Glucemia", "VDRL", "Urocultivo a las 28 semanas"],
-      correcta: 3,
-      explicacion: "El urocultivo de 28s no corresponde al primer control."
-    }
-  ]
+  questions: [] // se cargan automáticamente desde /bancos/
 };
 
-const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}"); 
-// estructura: {materia:{qid:{chosen,status}, _lastIndex:number}}
+const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
 
+/* ---------- Guardado ---------- */
 function saveAll() {
   localStorage.setItem(LS_BANK, JSON.stringify(BANK));
   localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG));
 }
 
-/* ---------- DOM raíz de la app ---------- */
+/* ---------- DOM raíz ---------- */
 const app = document.getElementById("app");
 
 /* ---------- Utilidades ---------- */
@@ -56,24 +61,36 @@ function subjectsFromBank() {
   return Array.from(known.values()).sort((a, b) => a.name.localeCompare(b.name));
 }
 
-/* ---------- Importar banco externo (Pediatría) ---------- */
-(async function loadExternalBanks() {
-  try {
-    // Importa el JSON desde la carpeta bancos/pediatria
-    const resp = await fetch("../bancos/pediatria/pediatria1.json");
-    if (!resp.ok) throw new Error("No se pudo cargar pediatria1.json");
-    const data = await resp.json();
+/* ---------- Carga automática de bancos ---------- */
+(async function loadAllBanks() {
+  const materias = BANK.subjects.map(s => s.slug);
+  const existingIds = new Set(BANK.questions.map(q => q.id));
+  let totalNuevas = 0;
 
-    // Mezcla con las preguntas ya existentes, evitando duplicadas
-    const existingIds = new Set(BANK.questions.map(q => q.id));
-    const nuevas = data.filter(q => !existingIds.has(q.id));
+  for (const materia of materias) {
+    for (let i = 1; i <= 4; i++) {
+      const ruta = `../bancos/${materia}/${materia}${i}.json`;
+      try {
+        const resp = await fetch(ruta);
+        if (!resp.ok) continue;
+        const data = await resp.json();
+        const nuevas = data.filter(q => !existingIds.has(q.id));
+        if (nuevas.length > 0) {
+          nuevas.forEach(q => existingIds.add(q.id));
+          BANK.questions.push(...nuevas);
+          totalNuevas += nuevas.length;
+          console.log(`📘 Cargado ${ruta} (${nuevas.length} nuevas en ${materia})`);
+        }
+      } catch (err) {
+        // No mostrar error si el archivo no existe
+      }
+    }
+  }
 
-    BANK.questions.push(...nuevas);
-    console.log(`✅ Banco Pediatría cargado (${nuevas.length} preguntas nuevas)`);
-
-    // Guarda y refresca materias visibles
+  if (totalNuevas > 0) {
     saveAll();
-  } catch (err) {
-    console.error("Error cargando banco de Pediatría:", err);
+    console.log(`✅ Bancos actualizados (${totalNuevas} preguntas nuevas en total)`);
+  } else {
+    console.log("ℹ️ No se encontraron nuevos bancos o ya estaban cargados.");
   }
 })();
