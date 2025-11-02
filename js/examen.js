@@ -89,7 +89,7 @@ function startExamen() {
   const numEl = document.getElementById("numPreg");
   const num = Math.max(1, parseInt(numEl?.value || "1", 10));
   const useTimer = document.getElementById("chkTimer")?.checked;
-initSidebar();
+
   // Normalizar coincidencias
   const selectedNorm = selected.map(s => normalize(s));
   let pool = (BANK.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
@@ -104,8 +104,13 @@ initSidebar();
 
   CURRENT = { list: chosen, i: 0, materia: "general", modo: "examen", session: {} };
 
+  // ✅ Renderizamos la primera pregunta
   renderExamenPregunta();
 
+  // ✅ Luego inicializamos la barra lateral (ya existe #app)
+  initSidebar();
+
+  // ✅ Cronómetro opcional
   if (useTimer) {
     initTimer("app");
   } else {
@@ -163,7 +168,8 @@ function renderExamenPregunta() {
     </div>
   `;
 }
-/* ---------- Registro de respuestas (mejorado) ---------- */
+
+/* ---------- Registro de respuestas ---------- */
 function answerExamen(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = "general";
@@ -176,7 +182,7 @@ function answerExamen(i) {
   const correcta = i === q.correcta;
   PROG[slug][q.id] = { chosen: i, status: correcta ? "ok" : "bad" };
 
-  // 🔹 Guarda la fecha del último intento (para sugerencias globales)
+  // 🔹 Guarda la fecha del último intento
   PROG[slug]._lastDate = Date.now();
 
   saveAll();
@@ -186,7 +192,7 @@ function answerExamen(i) {
   options.forEach((opt, idx) => {
     if (idx === q.correcta) opt.classList.add("correct");
     else if (idx === i) opt.classList.add("wrong");
-    opt.style.pointerEvents = "none"; // desactiva clics
+    opt.style.pointerEvents = "none";
   });
 
   // ⏳ Espera 1.2 segundos y pasa a la siguiente
@@ -202,6 +208,7 @@ function nextExamen() {
     renderExamenFin();
   }
 }
+
 function prevExamen() {
   if (CURRENT.i > 0) {
     CURRENT.i--;
