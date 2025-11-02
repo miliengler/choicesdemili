@@ -59,10 +59,7 @@ function renderStatsGlobal(){
     const mat = subjectsFromBank().find(s => s.slug === slug);
     if (!mat || !datos) return;
 
-    // Fecha del último intento (si no existe, no se muestra)
     const dias = datos._lastDate ? Math.floor((Date.now() - datos._lastDate) / (1000 * 60 * 60 * 24)) : null;
-
-    // Porcentaje de aciertos
     const tot = Object.keys(datos).filter(k => !k.startsWith("_")).length;
     const ok = Object.values(datos).filter(v => v.status === "ok").length;
     const pct = tot > 0 ? Math.round((ok / tot) * 100) : null;
@@ -113,138 +110,142 @@ function renderStatsGlobal(){
 
   app.innerHTML += sugHTML;
 
-/* === 📈 Estadísticas por materia === */
-let matsData = subs.map(m => {
-  const total = BANK.questions.filter(q => q.materia === m.slug).length;
-  const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
-  const resp = vals.length;
-  const ok = vals.filter(v => v.status === 'ok').length;
-  const bad = vals.filter(v => v.status === 'bad').length;
-  const noresp = total - resp;
-  const pct = total ? Math.round((ok / total) * 100) : 0;
-  return { ...m, total, resp, ok, bad, noresp, pct };
-}).filter(m => m.total > 0);
-
-let currentOrder = "alpha"; // estado actual de orden
-
-function sortMatsData(order) {
-  if (order === "alpha") {
-    matsData.sort((a, b) => 
-      a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
-        b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' })
-    );
-  } else if (order === "progress") {
-    matsData.sort((a, b) => b.resp - a.resp);
-  }
-}
-
-/* --- función para renderizar la lista --- */
-function renderMatsList() {
-  sortMatsData(currentOrder);
-  const listHTML = matsData.map(m => `
-    <li class="acc-item" style="margin:8px 0;">
-      <div class="acc-header" onclick="toggleStatsAcc('${m.slug}')"
-           style="background:var(--card);border:1px solid var(--line);border-radius:10px;
-                  padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
-                  align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-        <div class="acc-title">${m.name}</div>
-        <div style="font-size:14px;color:var(--muted)">${m.pct}% correctas</div>
-      </div>
-      <div class="acc-content" id="stat-${m.slug}" style="display:none;padding:10px;border-left:3px solid var(--brand);background:var(--soft);border-radius:6px;margin-top:4px;">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
-          <canvas id="chart-${m.slug}" width="160" height="160"></canvas>
-        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;">
-  <div style="flex:1;min-width:180px;text-align:left;font-size:14px;">
-    <p><b>Total:</b> ${m.total}</p>
-    <p style="color:#16a34a;">✔ Correctas: ${m.ok}</p>
-    <p style="color:#ef4444;">✖ Incorrectas: ${m.bad}</p>
-    <p style="color:#64748b;">⚪ No respondidas: ${m.noresp}</p>
-    <button class="btn-small" style="margin-top:6px;background:#1e40af;border-color:#1e40af;" onclick="openMateriaAuto('${m.slug}')">
-      👉 Ir a practicar
-    </button>
-  </div>
-
-  <div style="flex:0 0 160px;text-align:center;">
-    <canvas id="chart-${m.slug}" width="160" height="160"></canvas>
-  </div>
-</div>
-      </div>
-    </li>`).join("");
-  document.getElementById("matsList").innerHTML = listHTML;
-}
-
-let matsHTML = `
-  <div class="card fade" style="margin-top:24px;text-align:center;">
-    <h3>📈 Estadísticas por materia</h3>
-    <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
-
-    <div style="display:flex;gap:10px;justify-content:center;margin:10px 0 20px;">
-      <button class="btn-small" 
-              style="background:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'}"
-              onclick="setOrder('alpha')">🔠 Ordenar alfabéticamente</button>
-      <button class="btn-small" 
-              style="background:${currentOrder === 'progress' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'progress' ? '#1e40af' : '#64748b'}"
-              onclick="setOrder('progress')">📊 Ordenar por progreso</button>
-    </div>
-
-    <ul id="matsList" style="list-style:none;padding:0;margin:0;"></ul>
-  </div>
-`;
-
-app.innerHTML += matsHTML;
-renderMatsList();
-
-/* === Funciones auxiliares de orden === */
-window.setOrder = (order) => {
-  currentOrder = order;
-  renderStatsGlobal(); // recarga completa para actualizar botones y lista
-};
-
-/* === 🧮 Funciones de interacción === */
-window.toggleStatsAcc = slug => {
-  const el = document.getElementById(`stat-${slug}`);
-  const open = el.style.display === "block";
-  document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
-  if (!open) {
-    el.style.display = "block";
-    drawPieChart(slug);
-    el.scrollIntoView({ behavior: "smooth", block: "center" });
-  }
-};
-
-/* === 🎨 Función para dibujar gráfico circular === */
-window.drawPieChart = slug => {
-  const subs = subjectsFromBank();
-  const matsData = subs.map(m => {
+  /* === 📈 Estadísticas por materia === */
+  let matsData = subs.map(m => {
     const total = BANK.questions.filter(q => q.materia === m.slug).length;
     const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
+    const resp = vals.length;
     const ok = vals.filter(v => v.status === 'ok').length;
     const bad = vals.filter(v => v.status === 'bad').length;
-    const noresp = total - (ok + bad);
-    return { slug: m.slug, total, ok, bad, noresp };
-  });
+    const noresp = total - resp;
+    const pct = total ? Math.round((ok / total) * 100) : 0;
+    return { ...m, total, resp, ok, bad, noresp, pct };
+  }).filter(m => m.total > 0);
 
-  const m = matsData.find(x => x.slug === slug);
-  if (!m) return;
-  const ctx = document.getElementById(`chart-${slug}`).getContext("2d");
-  const total = m.total || 1;
-  const slices = [
-    { value: m.ok, color: "#16a34a" },   // verde
-    { value: m.bad, color: "#ef4444" },  // rojo
-    { value: m.noresp, color: "#cbd5e1"} // gris
-  ];
-  let start = -0.5 * Math.PI;
-  slices.forEach(s => {
-    const angle = (s.value / total) * 2 * Math.PI;
-    ctx.beginPath();
-    ctx.moveTo(80, 80);
-    ctx.arc(80, 80, 70, start, start + angle);
-    ctx.closePath();
-    ctx.fillStyle = s.color;
-    ctx.fill();
-    start += angle;
-  });
-};
+  let currentOrder = "alpha";
+
+  function sortMatsData(order) {
+    if (order === "alpha") {
+      matsData.sort((a, b) =>
+        a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
+          b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' })
+      );
+    } else if (order === "progress") {
+      matsData.sort((a, b) => b.resp - a.resp);
+    }
+  }
+
+  function renderMatsList() {
+    sortMatsData(currentOrder);
+    const listHTML = matsData.map(m => `
+      <li class="acc-item" style="margin:8px 0;">
+        <div class="acc-header" onclick="toggleStatsAcc('${m.slug}')"
+             style="background:var(--card);border:1px solid var(--line);border-radius:10px;
+                    padding:12px 16px;cursor:pointer;display:flex;justify-content:space-between;
+                    align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+          <div class="acc-title">${m.name}</div>
+          <div style="font-size:14px;color:var(--muted)">${m.pct}% correctas</div>
+        </div>
+        <div class="acc-content" id="stat-${m.slug}" style="display:none;padding:10px;border-left:3px solid var(--brand);background:var(--soft);border-radius:6px;margin-top:4px;">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;">
+            <div style="flex:1;min-width:180px;text-align:left;font-size:14px;">
+              <p><b>Total:</b> ${m.total}</p>
+              <p style="color:#16a34a;">✔ Correctas: ${m.ok}</p>
+              <p style="color:#ef4444;">✖ Incorrectas: ${m.bad}</p>
+              <p style="color:#64748b;">⚪ No respondidas: ${m.noresp}</p>
+              <button class="btn-small" 
+                      style="margin-top:6px;background:#1e40af;border-color:#1e40af;" 
+                      onclick="openMateriaAuto('${m.slug}')">
+                👉 Ir a practicar
+              </button>
+            </div>
+
+            <div style="flex:0 0 160px;text-align:center;position:relative;">
+              <canvas id="chart-${m.slug}" width="160" height="160"></canvas>
+              <div id="pct-${m.slug}" style="position:absolute;top:50%;left:50%;
+                   transform:translate(-50%,-50%);font-weight:600;font-size:18px;color:#0f172a;">
+                ${m.pct}%
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>`).join("");
+    document.getElementById("matsList").innerHTML = listHTML;
+  }
+
+  let matsHTML = `
+    <div class="card fade" style="margin-top:24px;text-align:center;">
+      <h3>📈 Estadísticas por materia</h3>
+      <p style="font-size:14px;color:var(--muted)">Tocá una materia para ver el detalle.</p>
+
+      <div style="display:flex;gap:10px;justify-content:center;margin:10px 0 20px;">
+        <button class="btn-small" 
+                style="background:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'alpha' ? '#1e40af' : '#64748b'}"
+                onclick="setOrder('alpha')">🔠 Ordenar alfabéticamente</button>
+        <button class="btn-small" 
+                style="background:${currentOrder === 'progress' ? '#1e40af' : '#64748b'};border-color:${currentOrder === 'progress' ? '#1e40af' : '#64748b'}"
+                onclick="setOrder('progress')">📊 Ordenar por progreso</button>
+      </div>
+
+      <ul id="matsList" style="list-style:none;padding:0;margin:0;"></ul>
+    </div>
+  `;
+
+  app.innerHTML += matsHTML;
+  renderMatsList();
+
+  /* === Funciones auxiliares de orden === */
+  window.setOrder = (order) => {
+    currentOrder = order;
+    renderStatsGlobal();
+  };
+
+  /* === 🧮 Funciones de interacción === */
+  window.toggleStatsAcc = slug => {
+    const el = document.getElementById(`stat-${slug}`);
+    const open = el.style.display === "block";
+    document.querySelectorAll(".acc-content").forEach(e => e.style.display = "none");
+    if (!open) {
+      el.style.display = "block";
+      drawPieChart(slug);
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
+  /* === 🎨 Función para dibujar gráfico circular === */
+  window.drawPieChart = slug => {
+    const subs = subjectsFromBank();
+    const matsData = subs.map(m => {
+      const total = BANK.questions.filter(q => q.materia === m.slug).length;
+      const vals = Object.values(PROG[m.slug] || {}).filter(x => x && typeof x === 'object' && 'status' in x);
+      const ok = vals.filter(v => v.status === 'ok').length;
+      const bad = vals.filter(v => v.status === 'bad').length;
+      const noresp = total - (ok + bad);
+      return { slug: m.slug, total, ok, bad, noresp };
+    });
+
+    const m = matsData.find(x => x.slug === slug);
+    if (!m) return;
+    const ctx = document.getElementById(`chart-${slug}`).getContext("2d");
+    const total = m.total || 1;
+    const slices = [
+      { value: m.ok, color: "#16a34a" },
+      { value: m.bad, color: "#ef4444" },
+      { value: m.noresp, color: "#cbd5e1" }
+    ];
+    let start = -0.5 * Math.PI;
+    slices.forEach(s => {
+      const angle = (s.value / total) * 2 * Math.PI;
+      ctx.beginPath();
+      ctx.moveTo(80, 80);
+      ctx.arc(80, 80, 70, start, start + angle);
+      ctx.closePath();
+      ctx.fillStyle = s.color;
+      ctx.fill();
+      start += angle;
+    });
+  };
+}
 
 /* ---------- RESET ---------- */
 function resetGlobalStats(){
@@ -256,25 +257,13 @@ function resetGlobalStats(){
 }
 
 /* ---------- FUNCIÓN AUXILIAR ---------- */
-function openMateria(slug) {
-  renderSubjects();
-  setTimeout(() => {
-    const el = document.getElementById(`acc-${slug}`);
-    if (el) {
-      el.style.display = "block";
-      const head = document.querySelector(`[onclick="toggleAcc('${slug}')"]`);
-      if (head) head.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  }, 100);
-}
-
 function openMateriaAuto(slug) {
   renderSubjects();
   setTimeout(() => {
     const acc = document.getElementById(`acc-${slug}`);
     const head = document.querySelector(`[onclick="toggleAcc('${slug}')"]`);
     if (acc && head) {
-      acc.style.display = "block"; // abre el acordeón
+      acc.style.display = "block";
       const cnt = document.getElementById(`count-${slug}`);
       if (cnt) cnt.classList.remove("hidden");
       head.scrollIntoView({ behavior: "smooth", block: "center" });
