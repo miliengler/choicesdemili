@@ -1,176 +1,61 @@
-/* ==========================================================
-   📊 Barra lateral de progreso (modo examen)
-   ========================================================== */
-
-let sidebarPage = 0;
-const PAGE_SIZE = 50;
-
-/* ---------- Inicialización segura ---------- */
-function initSidebar() {
+/* ---------- Inicia el examen (versión segura) ---------- */
+function startExamen() {
   try {
-    console.log("✅ initSidebar ejecutado");
+    const chks = Array.from(document.querySelectorAll(".mat-check"));
+    const selected = chks.filter(c => c.checked).map(c => c.value);
+    const numEl = document.getElementById("numPreg");
+    const num = Math.max(1, parseInt(numEl?.value || "1", 10));
+    const useTimer = document.getElementById("chkTimer")?.checked;
 
-    // Si no existe CURRENT o no hay preguntas, no seguir
-    if (!window.CURRENT || !CURRENT.list) {
-      console.warn("⚠️ No hay examen activo, sidebar cancelada.");
+    // Normalizar coincidencias
+    const selectedNorm = selected.map(s => normalize(s));
+    let pool = (BANK.questions || []).filter(q =>
+      selectedNorm.includes(normalize(q.materia))
+    );
+
+    if (pool.length === 0) {
+      alert("Seleccioná al menos una materia con preguntas.");
       return;
     }
 
-    // eliminar si ya existe
-    const old = document.getElementById("exam-sidebar");
-    if (old) old.remove();
+    pool.sort(() => Math.random() - 0.5);
+    const chosen = pool.slice(0, Math.min(num, pool.length));
 
-    const sidebar = document.createElement("div");
-    sidebar.id = "exam-sidebar";
-    sidebar.style = `
-      position: fixed;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-      width: 220px;
-      max-height: 90vh;
-      background: #ffffff;
-      border: 1px solid var(--line);
-      box-shadow: 0 4px 18px rgba(0,0,0,0.1);
-      border-radius: 12px;
-      padding: 12px;
-      overflow-y: auto;
-      z-index: 9999;
-      transition: all 0.3s ease;
-    `;
-
-    sidebar.innerHTML = `
-      <div id="sidebar-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
-        <b style="font-size:14px;">Preguntas</b>
-        <button id="closeSidebar" style="border:none;background:none;font-size:16px;cursor:pointer;color:var(--muted)">✖</button>
-      </div>
-      <div id="sidebar-grid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;"></div>
-      <div id="sidebar-pagination" style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;">
-        <button id="prevPage" class="btn-mini" disabled>⬅️</button>
-        <span id="pageInfo" style="font-size:13px;color:var(--muted)">1</span>
-        <button id="nextPage" class="btn-mini">➡️</button>
-      </div>
-    `;
-
-    document.body.appendChild(sidebar);
-
-    // Botón flotante para volver a abrir
-    let toggleBtn = document.getElementById("openSidebarBtn");
-    if (!toggleBtn) {
-      toggleBtn = document.createElement("button");
-      toggleBtn.id = "openSidebarBtn";
-      toggleBtn.innerHTML = "📑";
-      toggleBtn.title = "Mostrar barra lateral";
-      toggleBtn.style = `
-        position: fixed;
-        top: 50%;
-        right: 8px;
-        transform: translateY(-50%);
-        background: #1e40af;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 6px 8px;
-        cursor: pointer;
-        z-index: 10000;
-        font-size: 16px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        display: none;
-      `;
-      toggleBtn.onclick = showSidebar;
-      document.body.appendChild(toggleBtn);
-    }
-
-    document.getElementById("closeSidebar").onclick = hideSidebar;
-    document.getElementById("prevPage").onclick = prevSidebarPage;
-    document.getElementById("nextPage").onclick = nextSidebarPage;
-
-    renderSidebarPage();
-  } catch (err) {
-    console.error("❌ Error al inicializar barra lateral:", err);
-  }
-}
-
-/* ---------- Render de página ---------- */
-function renderSidebarPage() {
-  if (!window.CURRENT || !CURRENT.list) return;
-
-  const total = CURRENT.list.length;
-  const start = sidebarPage * PAGE_SIZE;
-  const end = Math.min(start + PAGE_SIZE, total);
-  const grid = document.getElementById("sidebar-grid");
-  if (!grid) return;
-
-  grid.innerHTML = "";
-
-  for (let i = start; i < end; i++) {
-    const btn = document.createElement("div");
-    btn.textContent = i + 1;
-    btn.className = "sidebar-cell";
-    btn.style = `
-      width: 34px;
-      height: 34px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--soft);
-      border-radius: 8px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    `;
-    if (i === CURRENT.i) {
-      btn.style.border = "2px solid var(--brand)";
-      btn.style.background = "#e0e7ff";
-    }
-    btn.onclick = () => {
-      CURRENT.i = i;
-      renderExamenPregunta();
-      renderSidebarPage();
+    window.CURRENT = {
+      list: chosen,
+      i: 0,
+      materia: "general",
+      modo: "examen",
+      session: {}
     };
-    grid.appendChild(btn);
+
+    console.log("✅ Examen iniciado con", chosen.length, "preguntas");
+
+    // Render inicial
+    if (typeof renderExamenPregunta === "function") {
+      renderExamenPregunta();
+    } else {
+      console.error("❌ No se encuentra renderExamenPregunta");
+      alert("Error: renderExamenPregunta no encontrada");
+      return;
+    }
+
+    // Barra lateral si existe
+    if (typeof initSidebar === "function") {
+      initSidebar();
+    } else {
+      console.warn("⚠️ initSidebar no encontrada");
+    }
+
+    // Cronómetro opcional
+    if (useTimer && typeof initTimer === "function") {
+      initTimer("app");
+    } else {
+      console.log("⏱️ Cronómetro desactivado o initTimer no cargado");
+      window.TIMER = window.TIMER || { elapsed: 0 };
+    }
+  } catch (err) {
+    console.error("❌ Error en startExamen:", err);
+    alert("Error al iniciar el examen. Revisá la consola.");
   }
-
-  const prevBtn = document.getElementById("prevPage");
-  const nextBtn = document.getElementById("nextPage");
-  const pageInfo = document.getElementById("pageInfo");
-  const totalPages = Math.ceil(total / PAGE_SIZE);
-
-  prevBtn.disabled = sidebarPage === 0;
-  nextBtn.disabled = sidebarPage >= totalPages - 1;
-  pageInfo.textContent = `${sidebarPage + 1}/${totalPages}`;
-}
-
-/* ---------- Navegación entre páginas ---------- */
-function nextSidebarPage() {
-  const total = CURRENT?.list?.length || 0;
-  const totalPages = Math.ceil(total / PAGE_SIZE);
-  if (sidebarPage < totalPages - 1) {
-    sidebarPage++;
-    renderSidebarPage();
-  }
-}
-
-function prevSidebarPage() {
-  if (sidebarPage > 0) {
-    sidebarPage--;
-    renderSidebarPage();
-  }
-}
-
-/* ---------- Mostrar / ocultar ---------- */
-function hideSidebar() {
-  const sidebar = document.getElementById("exam-sidebar");
-  const toggleBtn = document.getElementById("openSidebarBtn");
-  if (!sidebar || !toggleBtn) return;
-  sidebar.style.right = "-260px";
-  toggleBtn.style.display = "block";
-}
-
-function showSidebar() {
-  const sidebar = document.getElementById("exam-sidebar");
-  const toggleBtn = document.getElementById("openSidebarBtn");
-  if (!sidebar || !toggleBtn) return;
-  sidebar.style.right = "20px";
-  toggleBtn.style.display = "none";
 }
