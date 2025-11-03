@@ -6,11 +6,11 @@
 function renderHome() {
   app.innerHTML = `
     <div class="home-menu fade">
-      <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
-      <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
+      <button class="btn-main btn-blue" onclick="renderSubjects()">🧩 Choice por materia</button>
+      <button class="btn-main btn-blue" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
       <button class="btn-main btn-blue" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
       <button class="btn-main btn-blue" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
-<button class="btn-main btn-blue" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
+      <button class="btn-main btn-blue" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
       <hr class="divider">
       <button class="btn-small btn-grey" onclick="manualBankReload()">🔄 Actualizar bancos</button>
     </div>
@@ -54,7 +54,9 @@ function renderSubjects() {
         </div>
         <div class="acc-content" id="acc-${s.slug}">
           <div class="acc-actions">
-            <label class="small">📘 Desde # <input type="number" id="start-${s.slug}" min="1" max="${count}" value="1"></label>
+            <label class="small">📘 Desde # 
+              <input type="number" id="start-${s.slug}" min="1" max="${count}" value="1">
+            </label>
             <button class="btn-small" onclick='startPractica("${s.slug}", getStart("${s.slug}", ${count})-1)'>🧩 Práctica</button>
             <button class="btn-small" onclick='startRepaso("${s.slug}")'>📖 Repasar</button>
             ${reanudarBtn}
@@ -191,12 +193,16 @@ function renderPregunta() {
   }
 }
 
-/* ---------- Navegación ---------- */
+/* ==========================================================
+   🧭 NAVEGACIÓN Y RESPUESTAS
+   ========================================================== */
+
 window.jump = (ix) => {
   CURRENT.i = ix;
   updateLastIndex();
   renderPregunta();
 };
+
 function prevQ() {
   if (CURRENT.i > 0) {
     CURRENT.i--;
@@ -204,6 +210,7 @@ function prevQ() {
     renderPregunta();
   }
 }
+
 function nextQ() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
@@ -211,6 +218,7 @@ function nextQ() {
     renderPregunta();
   }
 }
+
 function updateLastIndex() {
   if (CURRENT.materia) {
     PROG[CURRENT.materia] = PROG[CURRENT.materia] || {};
@@ -219,7 +227,6 @@ function updateLastIndex() {
   }
 }
 
-/* ---------- Responder ---------- */
 function answer(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = CURRENT.materia || "general";
