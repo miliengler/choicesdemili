@@ -87,10 +87,18 @@ button:hover { transform: translateY(-2px); }
 }
 .btn-main:hover { background: var(--brand-dark); }
 
+/* ---------- Variante azul oscuro ---------- */
 .btn-main.btn-blue {
-  background: #1e40af;
-  border-color: #1e3a8a;
+  background: #1e40af !important;
+  border-color: #1e3a8a !important;
+  color: #fff !important;
+  transition: background 0.25s ease;
 }
+.btn-main.btn-blue:hover {
+  background: #1e3a8a !important;
+}
+
+/* ---------- Variante gris ---------- */
 .btn-main.btn-grey {
   background: #475569;
   border-color: #334155;
@@ -132,7 +140,6 @@ button:hover { transform: translateY(-2px); }
 /* ==========================================================
    🌓 BOTÓN DE MODO OSCURO (si se activa en el futuro)
    ========================================================== */
-/* ---------- Botón flotante dinámico (modo claro/oscuro) ---------- */
 .theme-toggle {
   position: fixed;
   right: 16px;
@@ -152,25 +159,19 @@ button:hover { transform: translateY(-2px); }
   transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
-
 .theme-toggle:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
-
-/* ☀️ En modo oscuro: cambia a amarillo */
 body.dark .theme-toggle {
-  background: #facc15; /* amarillo suave */
+  background: #facc15;
   color: #000;
   border-color: #facc15;
 }
-
-body.dark .theme-toggle:hover {
-  background: #fde047;
-}
+body.dark .theme-toggle:hover { background: #fde047; }
 
 /* ==========================================================
-   🔗 LINKS CLICKEABLES EN SUGERENCIAS
+   🔗 LINKS CLICKEABLES
    ========================================================== */
 .link {
   color: var(--brand-dark);
@@ -185,7 +186,7 @@ body.dark .theme-toggle:hover {
    🧱 APP LAYOUT (sidebar, examen, choice)
    ========================================================== */
 #app.with-sidebar {
-  padding-right: 240px; /* sincronizado con sidebar */
+  padding-right: 240px;
   transition: padding-right 0.3s ease;
 }
 #app.fullwidth {
@@ -194,7 +195,7 @@ body.dark .theme-toggle:hover {
 }
 
 /* ==========================================================
-   🎨 INTEGRACIÓN CON layout.css
+   🎨 PREGUNTAS Y LAYOUT
    ========================================================== */
 .q-layout {
   display: flex;
@@ -269,15 +270,11 @@ body.dark .theme-toggle:hover {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.fade {
-  animation: fadeIn 0.3s ease;
-}
+.fade { animation: fadeIn 0.3s ease; }
 
 /* ==========================================================
-   🌙 MODO OSCURO AUTOMÁTICO + TOGGLE MANUAL
+   🌙 MODO OSCURO
    ========================================================== */
-
-/* ---------- Tema oscuro ---------- */
 body.dark {
   --bg: #0f172a;
   --text: #f8fafc;
@@ -288,62 +285,28 @@ body.dark {
   --brand-dark: #1d4ed8;
   --card: #1e293b;
 }
-
-/* Ajustes visuales específicos */
 body.dark .card,
 body.dark .q-card {
   background: var(--card);
   color: var(--text);
   box-shadow: 0 4px 14px rgba(0,0,0,0.4);
 }
-
-body.dark button {
-  border-color: var(--line);
-}
-
+body.dark button { border-color: var(--line); }
 body.dark .btn-main {
   background: var(--brand);
   border-color: var(--brand-dark);
 }
-
 body.dark .btn-main:hover {
   background: var(--brand-dark);
 }
-
 body.dark .q-card .options label {
   background: #1e293b;
   border-color: var(--line);
 }
-
 body.dark .q-card .options label:hover {
   background: #334155;
 }
-
 body.dark .q-card .explain {
   background: #0f172a;
   color: #cbd5e1;
-}
-
-/* ---------- Botón flotante ---------- */
-.theme-toggle {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 100;
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  background: var(--brand);
-  color: #fff;
-  border: 1px solid var(--brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  box-shadow: 0 6px 24px rgba(2,6,23,.18);
-  transition: background .3s, transform .2s;
-}
-.theme-toggle:hover {
-  background: var(--brand-dark);
-  transform: translateY(-2px);
 }
