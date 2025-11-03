@@ -1,6 +1,6 @@
 /* ==========================================================
    🧠 MODO EXAMEN – CREÁ EL TUYO
-   Con cronómetro opcional (timer.js)
+   Con cronómetro opcional (timer.js) y barra lateral moderna
    ========================================================== */
 
 const normalize = str =>
@@ -10,9 +10,7 @@ const normalize = str =>
 function renderExamenSetup() {
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ""),
-      "es",
-      { sensitivity: "base" }
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
     )
   );
 
@@ -67,7 +65,7 @@ function renderExamenSetup() {
   });
 }
 
-/* ---------- Actualiza contador de preguntas ---------- */
+/* ---------- Actualiza contador ---------- */
 function updateExamenCount() {
   const chks = Array.from(document.querySelectorAll(".mat-check"));
   const total = chks.filter(c => c.checked)
@@ -82,7 +80,7 @@ document.addEventListener("input", e => {
   if (e.target && e.target.id === "numPreg") e.target._manual = true;
 });
 
-/* ---------- Inicia el examen ---------- */
+/* ---------- Inicia examen ---------- */
 function startExamen() {
   const chks = Array.from(document.querySelectorAll(".mat-check"));
   const selected = chks.filter(c => c.checked).map(c => c.value);
@@ -90,7 +88,6 @@ function startExamen() {
   const num = Math.max(1, parseInt(numEl?.value || "1", 10));
   const useTimer = document.getElementById("chkTimer")?.checked;
 
-  // Normalizar coincidencias
   const selectedNorm = selected.map(s => normalize(s));
   let pool = (BANK.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
 
@@ -104,21 +101,13 @@ function startExamen() {
 
   CURRENT = { list: chosen, i: 0, materia: "general", modo: "examen", session: {} };
 
-  // ✅ Renderizamos la primera pregunta
   renderExamenPregunta();
 
-  // ✅ Luego inicializamos la barra lateral (ya existe #app)
-  // initSidebar();  
-
-  // ✅ Cronómetro opcional
-  if (useTimer) {
-    initTimer("app");
-  } else {
-    TIMER.elapsed = 0;
-  }
+  if (useTimer) initTimer("app");
+  else TIMER.elapsed = 0;
 }
 
-/* ---------- Render de una pregunta en modo examen (cronómetro persistente) ---------- */
+/* ---------- Render de pregunta ---------- */
 function renderExamenPregunta() {
   const q = CURRENT.list[CURRENT.i];
   if (!q) {
@@ -126,7 +115,7 @@ function renderExamenPregunta() {
     return;
   }
 
-  // 🕒 Cronómetro (solo se crea una vez)
+  // 🕒 Cronómetro flotante
   if (!document.getElementById("exam-timer")) {
     const timerEl = document.createElement("div");
     timerEl.id = "exam-timer";
@@ -147,13 +136,11 @@ function renderExamenPregunta() {
     document.body.appendChild(timerEl);
   }
 
-  // Opciones
   const opts = q.opciones.map((t, i) => `
     <label class="option" onclick="answerExamen(${i})">
       <input type="radio" name="opt"> ${String.fromCharCode(97 + i)}) ${t}
     </label>`).join("");
 
-  // Render principal con layout limpio
   app.innerHTML = `
     <div class="q-layout">
       <div class="q-card fade">
@@ -161,66 +148,8 @@ function renderExamenPregunta() {
           <b>Pregunta ${CURRENT.i + 1}/${CURRENT.list.length}</b>
           <span class="small">${q.materia?.toUpperCase() || ""}</span>
         </div>
-
         <div class="enunciado">${q.enunciado}</div>
-
         <div class="options">${opts}</div>
-
-        <div class="nav-row">
-          <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
-          <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
-          <button class="btn-small" style="background:#64748b;border-color:#64748b"
-            onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
-        </div>
-      </div>
-
-      function renderExamenPregunta() {
-  const q = CURRENT.list[CURRENT.i];
-  if (!q) {
-    renderExamenFin();
-    return;
-  }
-
-  // 🕒 Cronómetro (solo se crea una vez)
-  if (!document.getElementById("exam-timer")) {
-    const timerEl = document.createElement("div");
-    timerEl.id = "exam-timer";
-    timerEl.style = `
-      position:fixed;
-      top:12px;
-      right:12px;
-      background:#1e3a8a;
-      color:white;
-      font-weight:600;
-      font-size:14px;
-      padding:8px 12px;
-      border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-      z-index:90;
-    `;
-    timerEl.textContent = "⏱️ 00:00";
-    document.body.appendChild(timerEl);
-  }
-
-  // Opciones
-  const opts = q.opciones.map((t, i) => `
-    <label class="option" onclick="answerExamen(${i})">
-      <input type="radio" name="opt"> ${String.fromCharCode(97 + i)}) ${t}
-    </label>`).join("");
-
-  // Render principal limpio (sin índice interno)
-  app.innerHTML = `
-    <div class="q-layout">
-      <div class="q-card fade">
-        <div style="display:flex;justify-content:space-between;align-items:center;">
-          <b>Pregunta ${CURRENT.i + 1}/${CURRENT.list.length}</b>
-          <span class="small">${q.materia?.toUpperCase() || ""}</span>
-        </div>
-
-        <div class="enunciado">${q.enunciado}</div>
-
-        <div class="options">${opts}</div>
-
         <div class="nav-row">
           <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
           <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
@@ -231,34 +160,28 @@ function renderExamenPregunta() {
     </div>
   `;
 
-  // 🔹 Mostrar la barra lateral moderna (sidebar.js)
+  // 🔹 Barra lateral moderna
   if (!document.getElementById("exam-sidebar")) {
     initSidebar();
   } else {
     renderSidebarPage();
   }
 }
-}
 
-/* ---------- Registro de respuestas ---------- */
+/* ---------- Respuesta ---------- */
 function answerExamen(i) {
   const q = CURRENT.list[CURRENT.i];
   const slug = "general";
   PROG[slug] = PROG[slug] || {};
 
-  // Evita sobrescribir si ya respondió
   if (PROG[slug][q.id]) return;
 
-  // Guarda respuesta y estado
   const correcta = i === q.correcta;
   PROG[slug][q.id] = { chosen: i, status: correcta ? "ok" : "bad" };
-
-  // 🔹 Guarda la fecha del último intento
   PROG[slug]._lastDate = Date.now();
 
   saveAll();
 
-  // 🎨 Mostrar corrección visual
   const options = document.querySelectorAll(".option");
   options.forEach((opt, idx) => {
     if (idx === q.correcta) opt.classList.add("correct");
@@ -266,7 +189,6 @@ function answerExamen(i) {
     opt.style.pointerEvents = "none";
   });
 
-  // ⏳ Espera 1.2 segundos y pasa a la siguiente
   setTimeout(() => nextExamen(), 1200);
 }
 
@@ -275,9 +197,7 @@ function nextExamen() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
     renderExamenPregunta();
-  } else {
-    renderExamenFin();
-  }
+  } else renderExamenFin();
 }
 
 function prevExamen() {
@@ -290,8 +210,6 @@ function prevExamen() {
 /* ---------- Fin del examen ---------- */
 function renderExamenFin() {
   stopTimer();
-
-  // 🔹 eliminar el cronómetro flotante si existe
   const timerEl = document.getElementById("exam-timer");
   if (timerEl) timerEl.remove();
 
