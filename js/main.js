@@ -128,26 +128,7 @@ function renderPregunta() {
         </div>
       </div>
 
-      <!-- Barra lateral -->
-      <div class="sidebar">
-        <div style="font-weight:600;margin-bottom:8px">Índice</div>
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;">
-          ${CURRENT_SESSION.list.map((_, ix) => `
-            <button
-              class="btn-small"
-              style="
-                font-size:12px;
-                padding:6px;
-                border-radius:8px;
-                ${ix === CURRENT_SESSION.i ? 'background:#e0ecff;border-color:#1e40af' : ''}
-              "
-              onclick="jump(${ix})">${ix + 1}</button>
-          `).join('')}
-        </div>
-      </div>
-    </div>
-  `;
-}
+      
 /* ========== NAVEGACIÓN ========== */
 window.jump = (ix) => { CURRENT_SESSION.i = ix; updateLastIndex(); renderPregunta(); };
 function prevQ() { if (CURRENT_SESSION.i > 0) { CURRENT_SESSION.i--; updateLastIndex(); renderPregunta(); } }
