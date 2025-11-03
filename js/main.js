@@ -1,11 +1,15 @@
-/* ========== INICIO AUTOMÁTICO ========== */
+/* ==========================================================
+   🧩 MAIN.JS – NAVEGACIÓN PRINCIPAL Y PRÁCTICA POR MATERIA
+   ========================================================== */
+
+/* ---------- INICIO AUTOMÁTICO ---------- */
 document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
   window.app = app;
   renderHome();
 });
 
-/* ========== HOME ========== */
+/* ---------- PANTALLA PRINCIPAL ---------- */
 function renderHome() {
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
@@ -20,7 +24,7 @@ function renderHome() {
   `;
 }
 
-/* ========== LISTA DE MATERIAS ========== */
+/* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
@@ -52,15 +56,19 @@ function renderSubjects() {
   `;
 }
 
-/* ========== MOTOR DE PREGUNTAS ========== */
+/* ---------- MOTOR DE PREGUNTAS ---------- */
 let CURRENT_SESSION = { list: [], i: 0, materia: "" };
 
 function startPractica(slug) {
-  const listAll = (BANK.questions || []).filter(q => q.materia === slug).sort((a, b) => a.id.localeCompare(b.id));
+  const listAll = (BANK.questions || [])
+    .filter(q => q.materia === slug)
+    .sort((a, b) => a.id.localeCompare(b.id));
+
   if (!listAll.length) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
     return;
   }
+
   CURRENT_SESSION = { list: listAll, i: 0, materia: slug };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = 0;
@@ -72,15 +80,21 @@ function startRepaso(slug) {
   const listAll = (BANK.questions || []).filter(q => q.materia === slug);
   const prog = PROG[slug] || {};
   const list = listAll.filter(q => prog[q.id]?.status === 'bad');
+
   if (!list.length) {
-    app.innerHTML = `<div class='card'>No tenés incorrectas para repasar en <b>${slug}</b>.<br><br><button class='btn-main' onclick='renderSubjects()'>Volver</button></div>`;
+    app.innerHTML = `
+      <div class='card'>
+        No tenés incorrectas para repasar en <b>${slug}</b>.<br><br>
+        <button class='btn-main' onclick='renderSubjects()'>Volver</button>
+      </div>`;
     return;
   }
+
   CURRENT_SESSION = { list, i: 0, materia: slug };
   renderPregunta();
 }
 
-/* ========== RENDER DE PREGUNTA (sin índice duplicado) ========== */
+/* ---------- RENDER DE PREGUNTA ---------- */
 function renderPregunta() {
   const q = CURRENT_SESSION.list[CURRENT_SESSION.i];
   if (!q) {
@@ -95,7 +109,7 @@ function renderPregunta() {
   const prog = PROG[CURRENT_SESSION.materia] || {};
   const ans = prog[q.id]?.chosen;
 
-  // Opciones
+  // Opciones de respuesta
   const opts = q.opciones.map((t, i) => {
     let cls = '';
     if (ans != null) {
@@ -109,12 +123,12 @@ function renderPregunta() {
       </label>`;
   }).join('');
 
-  // Explicación si ya respondió
+  // Explicación (solo si ya respondió)
   const exp = (ans != null)
     ? `<div class='explain'>${q.explicacion || ''}</div>`
     : '';
 
-  // Render principal
+  // Layout principal
   app.innerHTML = `
     <div class="q-layout">
       <div class="q-card fade">
@@ -131,20 +145,37 @@ function renderPregunta() {
     </div>`;
 }
 
-/* ========== NAVEGACIÓN ========== */
+/* ---------- NAVEGACIÓN ---------- */
 window.jump = (ix) => { CURRENT_SESSION.i = ix; updateLastIndex(); renderPregunta(); };
-function prevQ() { if (CURRENT_SESSION.i > 0) { CURRENT_SESSION.i--; updateLastIndex(); renderPregunta(); } }
-function nextQ() { if (CURRENT_SESSION.i < CURRENT_SESSION.list.length - 1) { CURRENT_SESSION.i++; updateLastIndex(); renderPregunta(); } }
+
+function prevQ() {
+  if (CURRENT_SESSION.i > 0) {
+    CURRENT_SESSION.i--;
+    updateLastIndex();
+    renderPregunta();
+  }
+}
+
+function nextQ() {
+  if (CURRENT_SESSION.i < CURRENT_SESSION.list.length - 1) {
+    CURRENT_SESSION.i++;
+    updateLastIndex();
+    renderPregunta();
+  }
+}
 
 function updateLastIndex() {
   if (CURRENT_SESSION.materia) {
     PROG[CURRENT_SESSION.materia] = PROG[CURRENT_SESSION.materia] || {};
-    PROG[CURRENT_SESSION.materia]._lastIndex = Math.max(PROG[CURRENT_SESSION.materia]._lastIndex ?? 0, CURRENT_SESSION.i);
+    PROG[CURRENT_SESSION.materia]._lastIndex = Math.max(
+      PROG[CURRENT_SESSION.materia]._lastIndex ?? 0,
+      CURRENT_SESSION.i
+    );
     saveAll();
   }
 }
 
-/* ========== 🔹 REGISTRO DE RESPUESTA (actualizado) ========== */
+/* ---------- REGISTRO DE RESPUESTA ---------- */
 function answer(i) {
   const q = CURRENT_SESSION.list[CURRENT_SESSION.i];
   const slug = CURRENT_SESSION.materia || 'general';
@@ -158,15 +189,15 @@ function answer(i) {
 
   // Guarda índice y fecha del último intento
   PROG[slug]._lastIndex = CURRENT_SESSION.i;
-  PROG[slug]._lastDate = Date.now();   // 🟢 Marca la fecha para sugerencias
+  PROG[slug]._lastDate = Date.now();
 
   saveAll();
   renderPregunta();
 }
 
-/* ========== RECARGA MANUAL DE BANCOS ========== */
+/* ---------- RECARGA MANUAL DE BANCOS ---------- */
 async function manualBankReload() {
   alert("⏳ Actualizando bancos...");
-  await loadAllBanks(); // función ya definida en bank.js
+  await loadAllBanks(); // definida en bank.js
   alert("✅ Bancos actualizados correctamente");
 }
