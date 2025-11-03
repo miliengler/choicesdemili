@@ -1,29 +1,158 @@
-:root{
-  --bg:#ffffff; --text:#0f172a; --muted:#475569; --soft:#f1f5f9;
-  --line:#e2e8f0; --brand:#2563eb; --brand-dark:#1e40af; --card:#ffffff;
+/* ==========================================================
+   🌈 VARIABLES DE COLOR Y CONFIGURACIÓN GLOBAL
+   ========================================================== */
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --soft: #f1f5f9;
+  --line: #e2e8f0;
+  --brand: #2563eb;
+  --brand-dark: #1e40af;
+  --accent: #22c55e;
+  --danger: #ef4444;
+  --card: #ffffff;
 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text)}
-.wrap{max-width:1100px;margin:0 auto;padding:16px}
-.header{position:sticky;top:0;z-index:10;background:var(--card);box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.brand{display:flex;align-items:center;gap:12px;justify-content:center;padding:14px 0}
-.brand h1{margin:0;font-size:clamp(20px,3vw,26px);font-weight:700;color:var(--brand-dark)}
-.footer{text-align:center;color:var(--muted);font-size:14px;padding:20px}
-button{cursor:pointer;border:1px solid var(--line);border-radius:12px;padding:14px 20px;font-size:16px;font-weight:500;transition:.2s background,.2s transform}
-button:hover{transform:translateY(-2px)}
-.btn-main{background:var(--brand);color:#fff;width:100%;max-width:360px;margin:8px auto;display:block;text-align:center;border-color:var(--brand)}
-.btn-main:hover{background:var(--brand-dark)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(2,6,23,.08)}
-.small{font-size:13px;color:var(--muted)}
-.theme-toggle{
-  position:fixed; right:16px; bottom:16px; z-index:50;
-  width:46px; height:46px; border-radius:999px; background:var(--brand); color:#fff; border:1px solid var(--brand);
-  display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(2,6,23,.18);
-}
-.theme-toggle:hover{ background:var(--brand-dark) }
 
-/* ---------- LINKS CLICKEABLES EN SUGERENCIAS ---------- */
+/* ==========================================================
+   🧱 RESET + BASE STRUCTURE
+   ========================================================== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ---------- CONTENEDORES ---------- */
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ---------- CABECERA Y PIE ---------- */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--card);
+  box-shadow: 0 6px 24px rgba(2,6,23,.08);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  padding: 14px 0;
+}
+.brand h1 {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 700;
+  color: var(--brand-dark);
+}
+.footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* ==========================================================
+   🧭 BOTONES
+   ========================================================== */
+button {
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .2s background, .2s transform;
+}
+button:hover { transform: translateY(-2px); }
+
+.btn-main {
+  background: var(--brand);
+  color: #fff;
+  width: 100%;
+  max-width: 360px;
+  margin: 8px auto;
+  display: block;
+  text-align: center;
+  border-color: var(--brand);
+}
+.btn-main:hover { background: var(--brand-dark); }
+
+.btn-main.btn-blue {
+  background: #1e40af;
+  border-color: #1e3a8a;
+}
+.btn-main.btn-grey {
+  background: #475569;
+  border-color: #334155;
+}
+
+.btn-small {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-small:hover {
+  background: #f1f5f9;
+}
+
+/* ==========================================================
+   🧩 TARJETAS Y TEXTO
+   ========================================================== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 24px rgba(2,6,23,.08);
+}
+
+.small { font-size: 13px; color: var(--muted); }
+
+.divider {
+  width: 60%;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+/* ==========================================================
+   🌓 BOTÓN DE MODO OSCURO (si se activa en el futuro)
+   ========================================================== */
+.theme-toggle {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: var(--brand);
+  color: #fff;
+  border: 1px solid var(--brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 24px rgba(2,6,23,.18);
+}
+.theme-toggle:hover { background: var(--brand-dark); }
+
+/* ==========================================================
+   🔗 LINKS CLICKEABLES EN SUGERENCIAS
+   ========================================================== */
 .link {
   color: var(--brand-dark);
   cursor: pointer;
@@ -31,16 +160,96 @@ button:hover{transform:translateY(-2px)}
   font-weight: 500;
   transition: color .2s;
 }
-.link:hover {
-  color: var(--brand);
-}
-/* === Layout para modo examen con barra lateral === */
+.link:hover { color: var(--brand); }
+
+/* ==========================================================
+   🧱 APP LAYOUT (sidebar, examen, choice)
+   ========================================================== */
 #app.with-sidebar {
-  margin-right: 220px; /* deja espacio para la barra de 200px + margen */
-  transition: margin-right 0.3s ease;
+  padding-right: 240px; /* sincronizado con sidebar */
+  transition: padding-right 0.3s ease;
+}
+#app.fullwidth {
+  padding-right: 0;
+  transition: padding-right 0.3s ease;
 }
 
-#app.fullwidth {
-  margin-right: 0;
-  transition: margin-right 0.3s ease;
+/* ==========================================================
+   🎨 INTEGRACIÓN CON layout.css
+   ========================================================== */
+.q-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding-right: 240px;
+  transition: padding-right 0.3s ease;
+  animation: fadeIn 0.3s ease;
+  box-sizing: border-box;
+}
+@media (max-width: 900px) {
+  .q-layout {
+    flex-direction: column;
+    padding-right: 0;
+    gap: 16px;
+  }
+}
+.q-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 750px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.q-card .enunciado {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.q-card .options label {
+  display: block;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.q-card .options label:hover { background: #f1f5f9; }
+.q-card .options label.correct {
+  background: #dcfce7;
+  border-color: var(--accent);
+}
+.q-card .options label.wrong {
+  background: #fee2e2;
+  border-color: var(--danger);
+}
+.q-card .explain {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.nav-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* ==========================================================
+   ✨ ANIMACIONES
+   ========================================================== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade {
+  animation: fadeIn 0.3s ease;
 }
