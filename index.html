@@ -46,7 +46,7 @@
   <script src="js/examen.js"></script>
   <script src="js/ui.js"></script>
   <script src="stats.js"></script>
-    <!-- 🌗 Toggle de modo oscuro -->
+    <!-- 🌗 Toggle de modo oscuro (mejorado con color dinámico) -->
   <script>
     (function() {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -55,19 +55,22 @@
 
       if (isDark) document.body.classList.add('dark');
 
-      // Crear botón
+      // Crear botón flotante
       const btn = document.createElement('button');
       btn.className = 'theme-toggle';
-      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
       btn.title = 'Cambiar tema';
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      
       btn.onclick = () => {
         document.body.classList.toggle('dark');
         const darkMode = document.body.classList.contains('dark');
         localStorage.setItem('theme', darkMode ? 'dark' : 'light');
         btn.textContent = darkMode ? '☀️' : '🌙';
       };
+
       document.body.appendChild(btn);
     })();
+  </script>
   </script>
 </body>
 </html>
