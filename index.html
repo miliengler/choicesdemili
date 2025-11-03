@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ME banco de preguntas – Choices Examen Residencia</title>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ME banco de preguntas – Choices Examen Residencia</title>
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Progressive Web App -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 🎨 Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/layout-mobile.css">
 </head>
 
 <body>
+  <!-- Encabezado -->
   <div class="header">
     <div class="wrap brand">
-      <svg width="26" height="26" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-        <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z" stroke="#B91C1C" stroke-width="2" fill="none" />
+      <svg width="26" height="26" viewBox="0 0 64 64" fill="none"
+           xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+        <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z"
+              stroke="#B91C1C" stroke-width="2" fill="none" />
       </svg>
       <h1>ME banco de preguntas – Choices Examen Residencia</h1>
     </div>
   </div>
 
+  <!-- Contenedor principal -->
   <main class="wrap" id="app"></main>
 
+  <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- JS en orden: data → lógica → UI → estadísticas -->
+  <!-- 📜 Scripts en orden lógico -->
   <script src="js/bank.js"></script>
   <script src="js/main.js"></script>
   <script src="js/timer.js"></script>
