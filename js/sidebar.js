@@ -1,6 +1,6 @@
 /* ==========================================================
-   📊 ÍNDICE DE PREGUNTAS (modo examen, choice, anteriores)
-   Estilo moderno, limpio, con soporte para paginación y notas
+   📊 ÍNDICE DE PREGUNTAS – Modo examen, choice y anteriores
+   Estilo moderno con soporte para paginación y notas
    ========================================================== */
 
 let sidebarPage = 0;
@@ -8,16 +8,14 @@ const PAGE_SIZE = 50;
 
 /* ---------- Inicialización ---------- */
 function initSidebar() {
-  // 🛡️ Si no hay examen activo, no se inicializa
   if (!CURRENT || !CURRENT.list) {
     console.warn("🔸 Sidebar: no hay examen activo todavía.");
     return;
   }
 
-  // Evita duplicar si ya existe
   if (document.getElementById("exam-sidebar")) return;
 
-  // === Crea la barra lateral ===
+  // === Crear sidebar ===
   const sidebar = document.createElement("div");
   sidebar.id = "exam-sidebar";
   sidebar.style = `
@@ -64,7 +62,7 @@ function initSidebar() {
 
   document.body.appendChild(sidebar);
 
-  // === Botón flotante para reabrir ===
+  // === Botón flotante ===
   const toggleBtn = document.createElement("button");
   toggleBtn.id = "openSidebarBtn";
   toggleBtn.innerHTML = "📋";
@@ -92,6 +90,9 @@ function initSidebar() {
   document.getElementById("closeSidebar").onclick = hideSidebar;
   document.getElementById("prevPage").onclick = prevSidebarPage;
   document.getElementById("nextPage").onclick = nextSidebarPage;
+
+  // ✅ Ajustar layout principal para dejar espacio
+  adjustMainPadding(true);
 
   renderSidebarPage();
 }
@@ -160,7 +161,7 @@ function renderSidebarPage() {
   pageInfo.textContent = `${sidebarPage + 1}/${totalPages}`;
 }
 
-/* ---------- Navegación entre páginas ---------- */
+/* ---------- Navegación ---------- */
 function nextSidebarPage() {
   const total = CURRENT?.list?.length || 0;
   const totalPages = Math.ceil(total / PAGE_SIZE);
@@ -183,11 +184,22 @@ function hideSidebar() {
   if (!sidebar || !toggleBtn) return;
   sidebar.style.right = "-230px";
   toggleBtn.style.display = "block";
+  adjustMainPadding(false);
 }
+
 function showSidebar() {
   const sidebar = document.getElementById("exam-sidebar");
   const toggleBtn = document.getElementById("openSidebarBtn");
   if (!sidebar || !toggleBtn) return;
   sidebar.style.right = "0";
   toggleBtn.style.display = "none";
+  adjustMainPadding(true);
+}
+
+/* ---------- Ajuste del contenido principal ---------- */
+function adjustMainPadding(open) {
+  const app = document.getElementById("app");
+  if (!app) return;
+  app.style.transition = "padding-right 0.3s ease";
+  app.style.paddingRight = open ? "240px" : "0";
 }
