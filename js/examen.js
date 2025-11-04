@@ -215,3 +215,4 @@ function renderExamenFin() {
     </div>
   `;
 }
+window.renderExamenSetup = renderExamenSetup;
