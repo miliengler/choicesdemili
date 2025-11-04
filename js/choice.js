@@ -1,11 +1,37 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – con progreso circular modular
+   🧩 MODO CHOICE POR MATERIA – con progreso circular + orden elegante
    ========================================================== */
 
+let currentChoiceSort = "az";
+
 function renderChoicePorMateria() {
-  const subs = subjectsFromBank().sort((a, b) =>
-    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-  );
+  let subs = subjectsFromBank();
+
+  // 🔢 Orden dinámico según el selector
+  if (currentChoiceSort === "az") {
+    subs = subs.sort((a, b) =>
+      a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+    );
+  } else if (currentChoiceSort === "progress") {
+    subs = subs.sort((a, b) => {
+      const keyA = normalize(a.slug);
+      const keyB = normalize(b.slug);
+
+      const totalA = BANK.questions.filter(q => normalize(q.materia) === keyA).length;
+      const totalB = BANK.questions.filter(q => normalize(q.materia) === keyB).length;
+
+      const progA = PROG[keyA] || {};
+      const progB = PROG[keyB] || {};
+
+      const goodA = Object.values(progA).filter(p => p.status === "good").length;
+      const goodB = Object.values(progB).filter(p => p.status === "good").length;
+
+      const pctA = totalA ? (goodA / totalA) : 0;
+      const pctB = totalB ? (goodB / totalB) : 0;
+
+      return pctB - pctA; // mayor progreso primero
+    });
+  }
 
   const resumen = BANK.questions.reduce((acc, q) => {
     const key = normalize(q.materia);
@@ -37,9 +63,11 @@ function renderChoicePorMateria() {
         </div>
 
         <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
-          <p class="choice-count"><strong style="color:#64748b;font-size:13px;">
-            ${total} preguntas cargadas
-          </strong></p>
+          <p class="choice-count">
+            <strong style="color:#64748b;font-size:13px;">
+              ${total} preguntas cargadas
+            </strong>
+          </p>
 
           <div class="choice-row" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
             <label style="font-size:14px;">Desde #</label>
@@ -68,11 +96,27 @@ function renderChoicePorMateria() {
       <div class="choice-header-global">
         <span>🧩</span>
         <h2>Practicá por materia</h2>
+
+        <!-- 🔽 Selector elegante de orden -->
+        <div class="sort-control">
+          <label for="sort-choice">Ordenar:</label>
+          <select id="sort-choice" onchange="changeChoiceSort(this.value)">
+            <option value="az" ${currentChoiceSort === "az" ? "selected" : ""}>A–Z</option>
+            <option value="progress" ${currentChoiceSort === "progress" ? "selected" : ""}>Por progreso</option>
+          </select>
+        </div>
       </div>
+
       <p class="choice-subtitle">Elegí una materia para comenzar tu práctica.</p>
       <div id="choice-list">${list}</div>
     </div>
   `;
+}
+
+/* ---------- Cambio de orden ---------- */
+function changeChoiceSort(mode) {
+  currentChoiceSort = mode;
+  renderChoicePorMateria();
 }
 
 /* ---------- Toggle materia ---------- */
