@@ -98,6 +98,7 @@ if (currentChoiceSort === "az") {
   }).join("");
 
   app.innerHTML = `
+  <div id="choice-list" class="animated-list">${list}</div>
     <div class="choice-container fade">
       <div class="choice-header-global">
         <span>🧩</span>
