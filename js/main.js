@@ -15,17 +15,27 @@ function renderHome() {
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
+
       <button class="btn-main" onclick="renderExamenesAnteriores()">📄 Exámenes anteriores</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
+
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;"
+              onclick="(window.renderExamenSetup ? renderExamenSetup() : alert('⚠️ Módulo de examen no está disponible o tiene un error'))">
+        🧠 Modo Examen – Creá el tuyo
+      </button>
+
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;"
+              onclick="(window.renderStatsGlobal ? renderStatsGlobal() : alert('⚠️ Módulo de estadísticas generales no está disponible o tiene un error'))">
+        📊 Estadísticas generales
+      </button>
+
       <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
+
       <hr style="width:60%;margin:20px 0;border:0;border-top:1px solid var(--line)">
       <button class="btn-small" style="background:#475569;color:white;" onclick="manualBankReload()">🔄 Actualizar bancos</button>
       <button class="btn-small btn-grey" onclick="forceReloadBank()">♻️ Recarga completa</button>
     </div>
   `;
 }
-
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
   // 🔹 Ahora usamos directamente las materias desde MEbank
