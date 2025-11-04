@@ -276,6 +276,6 @@ button:hover { transform: translateY(-2px); }
 .choice-count {
   color: var(--muted);
   font-weight: 600;      /* negrita */
-  font-size: 13px;       /* un poco más chico que “Desde” */
+  font-size: 11px;       /* un poco más chico que “Desde” */
   margin: 2px 0 6px 2px;
 }
