@@ -164,3 +164,30 @@ async function forceReloadBank() {
   alert(`✅ Banco recargado con ${MEbank.questions.length} preguntas`);
   renderHome();
 }
+/* ==========================================================
+   🚀 ARRANQUE VISUAL AUTOMÁTICO
+   ========================================================== */
+window.addEventListener("load", () => {
+  const appEl = document.getElementById("app");
+
+  if (appEl) {
+    window.app = appEl;
+
+    if (typeof renderHome === "function") {
+      renderHome();
+      console.log("✅ Interfaz principal iniciada correctamente.");
+    } else {
+      console.warn("⚠️ renderHome no está definido todavía. Intentando de nuevo en 300 ms...");
+      setTimeout(() => {
+        if (typeof renderHome === "function") {
+          renderHome();
+          console.log("✅ Interfaz principal iniciada correctamente (reintento).");
+        } else {
+          console.error("❌ No se pudo iniciar la interfaz principal: renderHome no existe.");
+        }
+      }, 300);
+    }
+  } else {
+    console.error("❌ No se encontró el elemento #app en el DOM.");
+  }
+});
