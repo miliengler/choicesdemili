@@ -24,21 +24,18 @@ const normalize = str =>
 
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
-  // 🔹 Materias desde MEbank
   const subs = (MEbank.subjects || []).sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
     )
   );
 
-  // 🔹 Contador de preguntas por materia
   const resumen = (MEbank.questions || []).reduce((acc, q) => {
     const key = normalize(q.materia);
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
 
-  // 🔹 Render de materias
   const list = subs.map(s => {
     const key = normalize(s.slug);
     const count = resumen[key] || 0;
@@ -105,18 +102,17 @@ function resumeSubject(slug) {
   startPractica(slug, start);
 }
 
-/* ---------- Estadísticas placeholder ---------- */
+/* ---------- Estadísticas ---------- */
 function showStats(slug) {
-  alert(`📊 Próximamente estadísticas para ${slug}`);
+  renderStatsGlobal(slug);
 }
 
 /* ==========================================================
    🔹 MOTOR DE PREGUNTAS
    ========================================================== */
-let CURRENT = { list: [], i: 0, materia: "" };
+let CURRENT = { list: [], i: 0, materia: "", session: {} };
 
 function startPractica(slug, startIndex = 0) {
-  // 🔹 Ahora usamos directamente MEbank.byMateria
   const listAll = (MEbank.byMateria?.[slug] || [])
     .sort((a, b) => a.id.localeCompare(b.id));
 
@@ -125,7 +121,7 @@ function startPractica(slug, startIndex = 0) {
     return;
   }
 
-  CURRENT = { list: listAll.slice(startIndex), i: 0, materia: slug };
+  CURRENT = { list: listAll.slice(startIndex), i: 0, materia: slug, session: {} };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = startIndex;
   saveAll();
@@ -144,7 +140,7 @@ function startRepaso(slug) {
     return;
   }
 
-  CURRENT = { list, i: 0, materia: slug };
+  CURRENT = { list, i: 0, materia: slug, session: {} };
   renderPregunta();
 }
 
@@ -158,6 +154,11 @@ function renderPregunta() {
 
   const prog = PROG[CURRENT.materia] || {};
   const ans = prog[q.id]?.chosen;
+
+  // Registrar estado en sesión para sidebar
+  if (ans != null) {
+    CURRENT.session[CURRENT.i] = (ans === q.correcta ? "ok" : "bad");
+  }
 
   const opts = q.opciones.map((t, i) => {
     let cls = "";
@@ -186,7 +187,7 @@ function renderPregunta() {
     </div>
   `;
 
-  // 🧭 Sidebar moderna
+  // Sidebar
   if (!document.getElementById("exam-sidebar")) {
     initSidebar();
   } else {
@@ -233,11 +234,18 @@ function answer(i) {
   const slug = CURRENT.materia || "general";
   PROG[slug] = PROG[slug] || {};
   if (PROG[slug][q.id]) return;
+
   PROG[slug][q.id] = { chosen: i, status: i === q.correcta ? "ok" : "bad" };
   PROG[slug]._lastIndex = CURRENT.i;
+  PROG[slug]._lastDate = Date.now();
   saveAll();
+
+  // Actualizar estado para sidebar
+  CURRENT.session[CURRENT.i] = (i === q.correcta ? "ok" : "bad");
+
   renderPregunta();
 }
+
 /* ==========================================================
    🚀 ARRANQUE AUTOMÁTICO DE LA APP
    ========================================================== */
