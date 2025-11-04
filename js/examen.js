@@ -1,6 +1,6 @@
 /* ==========================================================
    🧠 MODO EXAMEN – CREÁ EL TUYO
-   Con cronómetro opcional (timer.js) y barra lateral moderna
+   Unificado con MEbank y layout moderno
    ========================================================== */
 
 /* ---------- Normalizador local ---------- */
@@ -9,14 +9,12 @@ const normalize = str =>
 
 /* ---------- Render del configurador ---------- */
 function renderExamenSetup() {
-  // 🔹 Ahora usamos MEbank.subjects directamente
   const subs = (MEbank.subjects || []).sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
     )
   );
 
-  // 🔹 Resumen de cantidad de preguntas por materia
   const resumen = (MEbank.questions || []).reduce((acc, q) => {
     const key = normalize(q.materia);
     acc[key] = (acc[key] || 0) + 1;
@@ -57,8 +55,8 @@ function renderExamenSetup() {
       </div>
 
       <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
-        <button class="btn-main" onclick="startExamen()">🎯 Comenzar examen</button>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver al inicio</button>
+        <button class="btn-main" onclick="startExamen()">Comenzar examen</button>
+        <button class="btn-small" onclick="renderHome()">Volver al inicio</button>
       </div>
     </div>
   `;
@@ -92,7 +90,6 @@ function startExamen() {
   const useTimer = document.getElementById("chkTimer")?.checked;
 
   const selectedNorm = selected.map(s => normalize(s));
-  // 🔹 Ahora usamos MEbank.questions
   let pool = (MEbank.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
 
   if (pool.length === 0) {
@@ -119,26 +116,8 @@ function renderExamenPregunta() {
     return;
   }
 
-  // 🕒 Cronómetro flotante (lo eliminaremos en la fase visual)
-  if (!document.getElementById("exam-timer")) {
-    const timerEl = document.createElement("div");
-    timerEl.id = "exam-timer";
-    timerEl.style = `
-      position:fixed;
-      top:12px;
-      right:12px;
-      background:#1e3a8a;
-      color:white;
-      font-weight:600;
-      font-size:14px;
-      padding:8px 12px;
-      border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-      z-index:90;
-    `;
-    timerEl.textContent = "⏱️ 00:00";
-    document.body.appendChild(timerEl);
-  }
+  // 🕒 Cronómetro flotante eliminado (ahora usamos solo el minimalista de timer.js)
+  // TODO: en fase visual, mover el cronómetro inferior a posición fija bajo el contenedor principal
 
   const opts = q.opciones.map((t, i) => `
     <label class="option" onclick="answerExamen(${i})">
@@ -155,10 +134,9 @@ function renderExamenPregunta() {
         <div class="enunciado">${q.enunciado}</div>
         <div class="options">${opts}</div>
         <div class="nav-row">
-          <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
-          <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
-          <button class="btn-small" style="background:#64748b;border-color:#64748b"
-            onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
+          <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>Anterior</button>
+          <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente</button>
+          <button class="btn-small btn-grey" onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">Salir</button>
         </div>
       </div>
     </div>
@@ -192,8 +170,8 @@ function answerExamen(i) {
     opt.style.pointerEvents = "none";
   });
 
-  // ⏸️ De momento dejamos el autoavance, lo quitamos en fase 3
-  setTimeout(() => nextExamen(), 1200);
+  // ⏸️ Autoavance desactivado: ahora el usuario debe avanzar manualmente
+  // TODO: si se activa modo “examen cronometrado oficial”, podría volver a activarse
 }
 
 /* ---------- Navegación ---------- */
@@ -214,8 +192,6 @@ function prevExamen() {
 /* ---------- Fin del examen ---------- */
 function renderExamenFin() {
   stopTimer();
-  const timerEl = document.getElementById("exam-timer");
-  if (timerEl) timerEl.remove();
 
   const prog = PROG.general || {};
   const answered = CURRENT.list.filter(q => prog[q.id]);
@@ -226,15 +202,15 @@ function renderExamenFin() {
 
   app.innerHTML = `
     <div class="card fade" style="text-align:center;">
-      <h2>🎯 Examen finalizado</h2>
+      <h2>Examen finalizado</h2>
       <p>Respondiste ${answered.length} de ${CURRENT.list.length} preguntas.</p>
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
       <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
       <p><b>Precisión:</b> ${porc}%</p>
-      ${tiempo ? `<p><b>⏱️ Tiempo total:</b> ${tiempo}</p>` : ""}
+      ${tiempo ? `<p><b>Tiempo total:</b> ${tiempo}</p>` : ""}
       <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-        <button class="btn-main" onclick="renderExamenSetup()">🧠 Nuevo examen</button>
-        <button class="btn-small" onclick="renderHome()">🏠 Volver al inicio</button>
+        <button class="btn-main" onclick="renderExamenSetup()">Nuevo examen</button>
+        <button class="btn-small btn-grey" onclick="renderHome()">Volver al inicio</button>
       </div>
     </div>
   `;
