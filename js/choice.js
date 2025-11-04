@@ -125,9 +125,18 @@ function renderChoicePorMateria() {
 function changeChoiceSort(mode) {
   currentChoiceSort = mode;
   localStorage.setItem("choiceSort", mode); // 💾 guardar elección
-  renderChoicePorMateria();
-}
 
+  // 🌀 Animación de transición suave al reordenar
+  const listContainer = document.getElementById("choice-list");
+  if (listContainer) {
+    listContainer.classList.add("fade-out");
+    setTimeout(() => {
+      renderChoicePorMateria();
+    }, 200);
+  } else {
+    renderChoicePorMateria();
+  }
+}
 /* ---------- Toggle materia ---------- */
 function toggleChoiceMateria(slug, total) {
   document.querySelectorAll(".choice-body").forEach(el => {
