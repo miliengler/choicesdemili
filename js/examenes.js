@@ -1,9 +1,12 @@
 /* ==========================================================
-   📄 EXÁMENES ANTERIORES – Interfaz unificada (lista para futuro)
+   📄 EXÁMENES ANTERIORES – Unificado con sistema MEbank
    ========================================================== */
 
 /* ---------- Render principal ---------- */
-function renderExamenesAnteriores() {
+async function renderExamenesAnteriores() {
+  // Asegura que los exámenes estén cargados
+  await loadExamenesAnteriores();
+
   const exKeys = Object.keys(MEbank.byExamen || {}).filter(k => k !== "oculto");
   const exList = exKeys.map(key => {
     const grupo = MEbank.byExamen[key];
@@ -46,6 +49,46 @@ window.toggleAcc = (slug) => {
   }
 };
 
+/* ---------- Cargar exámenes automáticamente ---------- */
+async function loadExamenesAnteriores() {
+  const carpeta = "../bancos/examenes_anteriores/";
+  const examenes = ["examen2025"]; // podés ir sumando otros después
+  let nuevas = 0;
+
+  for (const nombre of examenes) {
+    const ruta = `${carpeta}${nombre}.json`;
+    try {
+      const resp = await fetch(ruta);
+      if (!resp.ok) continue;
+      const data = await resp.json();
+
+      // Normaliza cada pregunta
+      const normalizadas = data.map(q => ({
+        ...q,
+        examen: q.examen || nombre,
+        materia: q.materia || "general",
+        fuente: q.fuente || "MEbank",
+        oficial: q.oficial ?? false
+      }));
+
+      const existentes = new Set(MEbank.questions.map(q => q.id));
+      const nuevasPreg = normalizadas.filter(q => !existentes.has(q.id));
+      if (nuevasPreg.length > 0) {
+        MEbank.questions.push(...nuevasPreg);
+        nuevas += nuevasPreg.length;
+      }
+    } catch {
+      console.warn(`⚠️ No se pudo cargar ${nombre}.json`);
+    }
+  }
+
+  if (nuevas > 0) {
+    rebuildIndexes();
+    saveAll();
+    console.log(`✅ ${nuevas} nuevas preguntas de exámenes anteriores cargadas`);
+  }
+}
+
 /* ---------- Iniciar examen ---------- */
 function startExamenAnterior(slug) {
   const list = MEbank.byExamen[slug] || [];
@@ -62,7 +105,7 @@ function startExamenAnterior(slug) {
     session: {}
   };
 
-  renderExamenPregunta(); // usa el motor unificado ya existente
+  renderExamenPregunta(); // Usa el motor unificado
 }
 
 /* ---------- Placeholder para estadísticas ---------- */
@@ -70,7 +113,7 @@ function showExamStats(slug) {
   alert(`📊 Próximamente estadísticas para ${slug}`);
 }
 
-/* ---------- Carga inicial (si se entra directo al módulo) ---------- */
+/* ---------- Carga directa (si entra con hash) ---------- */
 window.addEventListener("DOMContentLoaded", () => {
   if (location.hash === "#examenes") renderExamenesAnteriores();
 });
