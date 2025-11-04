@@ -8,9 +8,9 @@ function renderHome() {
   app.innerHTML = `
     <div class="home-menu fade">
       <button class="btn-main btn-blue" onclick="renderSubjects()">🧩 Choice por materia</button>
-      <button class="btn-main btn-blue" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
+      <button class="btn-main btn-blue" onclick="renderExamenesAnteriores()">📄 Exámenes anteriores</button>
       <button class="btn-main btn-blue" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
-      <button class="btn-main btn-blue" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
+      <button class="btn-main btn-blue" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
       <button class="btn-main btn-blue" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
       <hr class="divider">
       <button class="btn-small btn-grey" onclick="manualBankReload()">🔄 Actualizar bancos</button>
