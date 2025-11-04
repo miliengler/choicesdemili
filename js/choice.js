@@ -1,8 +1,9 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – con progreso circular + orden elegante
+   🧩 MODO CHOICE POR MATERIA – con progreso circular + orden elegante persistente
    ========================================================== */
 
-let currentChoiceSort = "az";
+// 🔹 Cargar el orden guardado o iniciar en "az"
+let currentChoiceSort = localStorage.getItem("choiceSort") || "az";
 
 function renderChoicePorMateria() {
   let subs = subjectsFromBank();
@@ -116,6 +117,7 @@ function renderChoicePorMateria() {
 /* ---------- Cambio de orden ---------- */
 function changeChoiceSort(mode) {
   currentChoiceSort = mode;
+  localStorage.setItem("choiceSort", mode); // 💾 guardar elección
   renderChoicePorMateria();
 }
 
