@@ -1,5 +1,5 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – Versión clásica ajustada
+   🧩 MODO CHOICE POR MATERIA – Versión limpia (fondo blanco)
    ========================================================== */
 
 function renderChoicePorMateria() {
@@ -29,7 +29,7 @@ function renderChoicePorMateria() {
           <span class="choice-count">${total} preguntas</span>
         </div>
 
-        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
+        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;background:#fff;border:1px solid #e2e8f0;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
             <label style="font-size:14px;">Desde #</label>
             <input 
@@ -38,8 +38,8 @@ function renderChoicePorMateria() {
               value="1" 
               min="1" 
               max="${total || 1}"
-              style="width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;text-align:center;"
-            >
+              style="width:70px;padding:4px 6px;border:1px solid var(--line);
+                     border-radius:6px;text-align:center;background:#fff;">
           </div>
 
           <div class="choice-buttons">
