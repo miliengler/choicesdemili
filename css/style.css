@@ -310,43 +310,136 @@ body.dark .q-card .explain {
   background: #0f172a;
   color: #cbd5e1;
 }
-/* === LISTA DE CHOICE POR MATERIA === */
+/* ==========================================================
+   🧩 CHOICE POR MATERIA – ESTILO NUEVO (como la captura)
+   ========================================================== */
+
+.choice-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.choice-header-global {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.choice-header-global h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--brand-dark);
+}
+
+.choice-subtitle {
+  color: var(--muted);
+  font-size: 15px;
+  margin: 0 0 18px 32px;
+}
+
+/* ---------- Cada materia ---------- */
 .choice-item {
-  border-bottom: 1px solid var(--line);
-  padding: 12px 8px;
-  transition: background 0.2s ease;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition: all 0.2s ease;
 }
 .choice-item:hover {
-  background: #f8fafc;
+  background: var(--soft);
 }
-.choice-header {
+
+.choice-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
+
 .choice-title {
   font-weight: 600;
   font-size: 16px;
-  color: var(--text);
 }
+
+.choice-count {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- Cuerpo desplegable ---------- */
 .choice-body {
-  background: #f1f5f9;
-  border-radius: 10px;
+  display: none;
+  background: #f8fafc;
+  border-radius: 8px;
   margin-top: 10px;
-  padding: 12px 14px;
+  padding: 12px;
   animation: fadeIn 0.2s ease;
 }
-.choice-btns {
+
+.choice-body label {
+  font-size: 14px;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.choice-body input {
+  width: 60px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+/* ---------- Botones ---------- */
+.choice-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 10px;
 }
-.choice-btns .btn-small {
+
+.choice-buttons button {
+  background: #f1f5f9;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.choice-buttons button:hover {
   background: #e2e8f0;
-  border-color: #cbd5e1;
-  color: #0f172a;
 }
-.choice-btns .btn-small:hover {
-  background: #cbd5e1;
+
+.choice-buttons .btn-practica {
+  background: #2563eb;
+  border-color: #1e3a8a;
+  color: #fff;
+}
+.choice-buttons .btn-practica:hover {
+  background: #1e3a8a;
+}
+
+.choice-buttons .btn-repaso {
+  background: #f8fafc;
+  color: #1e3a8a;
+  border: 1px solid #cbd5e1;
+}
+.choice-buttons .btn-repaso:hover {
+  background: #e0e7ff;
+}
+
+.choice-buttons .btn-notas {
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+.choice-buttons .btn-notas:hover {
+  background: #e2e8f0;
 }
