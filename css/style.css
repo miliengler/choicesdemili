@@ -310,34 +310,43 @@ body.dark .q-card .explain {
   background: #0f172a;
   color: #cbd5e1;
 }
-/* === Estilo Choice por materia === */
-.mat-card {
-  background: white;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  margin: 10px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-  cursor: pointer;
-  transition: all 0.2s ease;
+/* === LISTA DE CHOICE POR MATERIA === */
+.choice-item {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 8px;
+  transition: background 0.2s ease;
 }
-.mat-card:hover {
-  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+.choice-item:hover {
+  background: #f8fafc;
 }
-.mat-header {
+.choice-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 16px;
-  font-size: 16px;
+  cursor: pointer;
 }
-.mat-body {
-  background: #f8fafc;
-  border-top: 1px solid var(--line);
-  padding: 12px 16px;
+.choice-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+}
+.choice-body {
+  background: #f1f5f9;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 12px 14px;
   animation: fadeIn 0.2s ease;
 }
-.mat-btns {
+.choice-btns {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+.choice-btns .btn-small {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+.choice-btns .btn-small:hover {
+  background: #cbd5e1;
 }
