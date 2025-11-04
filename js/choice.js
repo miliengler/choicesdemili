@@ -1,8 +1,8 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – FASE 1 (Diseño + despliegue)
+   🧩 MODO CHOICE POR MATERIA – Diseño igual a captura
    ========================================================== */
 
-function renderSubjects() {
+function renderChoicePorMateria() {
   const subs = subjectsFromBank().sort((a, b) =>
     a.name.localeCompare(b.name, "es", { sensitivity: "base" })
   );
@@ -16,25 +16,33 @@ function renderSubjects() {
   const list = subs.map(s => {
     const key = normalize(s.slug);
     const total = resumen[key] || 0;
+
+    // si hay progreso guardado, detecto el último respondido
+    const prog = PROG[key] || {};
+    const answered = Object.keys(prog).filter(k => !k.startsWith("_"));
+    const lastIndex = answered.length ? answered.length : null;
+
     return `
-      <div class="mat-card" onclick="toggleMateria('${s.slug}', ${total})">
-        <div class="mat-header">
-          <div class="mat-title">${s.name}</div>
-          <div class="mat-count">${total} preguntas</div>
+      <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
+        <div class="choice-header">
+          <div class="choice-title">${s.name}</div>
         </div>
-        <div id="mat-body-${s.slug}" class="mat-body" style="display:none;">
-          <div class="mat-options">
-            <div style="display:flex;align-items:center;gap:6px;margin-bottom:10px;">
-              <label>Desde #</label>
-              <input type="number" id="start-${s.slug}" value="1" min="1" max="${total || 1}"
-                     style="width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;">
-            </div>
-            <div class="mat-btns">
-              <button class="btn-small" onclick="startChoice('${s.slug}')">🎯 Práctica</button>
-              <button class="btn-small" onclick="startRepaso('${s.slug}')">📘 Repaso (incorrectas)</button>
-              <button class="btn-small" onclick="openStats('${s.slug}')">📊 Estadísticas</button>
-              <button class="btn-small" onclick="openNotas('${s.slug}')">🗒️ Notas</button>
-            </div>
+        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
+          <p style="color:var(--muted);margin-bottom:8px;">
+            ${total} preguntas disponibles
+          </p>
+
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <label style="font-size:14px;">Desde</label>
+            <input type="number" id="start-${s.slug}" value="1" min="1" max="${total || 1}"
+                   style="width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;">
+          </div>
+
+          <div class="choice-btns">
+            <button class="btn-small" onclick="startChoice('${s.slug}', event)">Práctica</button>
+            <button class="btn-small" onclick="startRepaso('${s.slug}', event)">Repaso (incorrectas)</button>
+            ${lastIndex ? `<button class="btn-small" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
+            <button class="btn-small" onclick="openNotas('${s.slug}', event)">Notas</button>
           </div>
         </div>
       </div>`;
@@ -42,47 +50,74 @@ function renderSubjects() {
 
   app.innerHTML = `
     <div class="card fade" style="max-width:750px;margin:auto;">
-      <h2>🧩 Practicá por materia</h2>
-      <p>Elegí una materia para practicar o repasar tus preguntas.</p>
-      <div id="materias-list">${list}</div>
-      <div class="nav-row">
+      <h2 style="text-align:center;">Práctica por materia</h2>
+      <p style="text-align:center;color:var(--muted);margin-bottom:20px;">
+        Elegí una materia para comenzar tu práctica.
+      </p>
+      <div id="choice-list">${list}</div>
+      <div class="nav-row" style="margin-top:20px;">
         <button class="btn-small" onclick="renderHome()">⬅️ Volver al inicio</button>
       </div>
     </div>
   `;
 }
 
-/* ---------- Toggle materia desplegable ---------- */
-function toggleMateria(slug, total) {
-  document.querySelectorAll(".mat-body").forEach(el => {
-    if (el.id !== `mat-body-${slug}`) el.style.display = "none";
+/* ---------- Toggle materia ---------- */
+function toggleChoiceMateria(slug, total) {
+  document.querySelectorAll(".choice-body").forEach(el => {
+    if (el.id !== `choice-body-${slug}`) el.style.display = "none";
   });
 
-  const body = document.getElementById(`mat-body-${slug}`);
+  const body = document.getElementById(`choice-body-${slug}`);
   if (!body) return;
+  body.style.display = body.style.display === "block" ? "none" : "block";
 
-  const visible = body.style.display === "block";
-  body.style.display = visible ? "none" : "block";
-
-  if (!visible) {
-    const input = document.getElementById(`start-${slug}`);
-    if (input) input.max = total;
-  }
+  const input = document.getElementById(`start-${slug}`);
+  if (input) input.max = total;
 }
 
-/* ---------- Placeholder funciones ---------- */
-function startChoice(slug) {
-  alert(`Práctica iniciada en ${slug}`);
+/* ---------- Funciones ---------- */
+function startChoice(slug, e) {
+  e.stopPropagation();
+  const input = document.getElementById(`start-${slug}`);
+  const desde = parseInt(input?.value || "1", 10);
+
+  const pool = BANK.questions.filter(q => normalize(q.materia) === normalize(slug));
+  const list = pool.slice(desde - 1);
+  if (!list.length) return alert("No hay preguntas disponibles.");
+
+  CURRENT = { list, i: 0, materia: slug, modo: "choice" };
+  renderResolverPregunta();
 }
 
-function startRepaso(slug) {
-  alert(`Modo repaso (incorrectas) para ${slug}`);
+function startRepaso(slug, e) {
+  e.stopPropagation();
+  const prog = PROG[slug] || {};
+  const incorrectas = Object.entries(prog)
+    .filter(([id, data]) => data && data.status === "bad")
+    .map(([id]) => id);
+
+  const pool = BANK.questions.filter(q => incorrectas.includes(q.id));
+  if (!pool.length) return alert("No tenés incorrectas para repasar.");
+
+  CURRENT = { list: pool, i: 0, materia: slug, modo: "repaso" };
+  renderResolverPregunta();
 }
 
-function openStats(slug) {
-  alert(`Estadísticas de ${slug}`);
+function resumeChoice(slug, e) {
+  e.stopPropagation();
+  const prog = PROG[slug] || {};
+  const answered = Object.keys(prog).filter(k => !k.startsWith("_"));
+  const resumeIndex = answered.length;
+
+  const pool = BANK.questions.filter(q => normalize(q.materia) === normalize(slug));
+  if (!pool.length) return alert("No hay preguntas disponibles.");
+
+  CURRENT = { list: pool, i: resumeIndex, materia: slug, modo: "choice" };
+  renderResolverPregunta();
 }
 
-function openNotas(slug) {
-  alert(`Notas de ${slug}`);
+function openNotas(slug, e) {
+  e.stopPropagation();
+  alert(`Abrir notas de ${slug}`);
 }
