@@ -1,6 +1,5 @@
 /* ==========================================================
-   🧠 MODO EXAMEN – CREÁ EL TUYO
-   Con cronómetro opcional (timer.js) y barra lateral moderna
+   🧠 MODO EXAMEN – Configuración y conexión con resolver.js
    ========================================================== */
 
 const normalize = str =>
@@ -99,139 +98,13 @@ function startExamen() {
   pool.sort(() => Math.random() - 0.5);
   const chosen = pool.slice(0, Math.min(num, pool.length));
 
-  CURRENT = { list: chosen, i: 0, materia: "general", modo: "examen", session: {} };
-
-  renderExamenPregunta();
-
-  if (useTimer) initTimer("app");
-  else TIMER.elapsed = 0;
-}
-
-/* ---------- Render de pregunta ---------- */
-function renderExamenPregunta() {
-  const q = CURRENT.list[CURRENT.i];
-  if (!q) {
-    renderExamenFin();
-    return;
-  }
-
-  // 🕒 Cronómetro flotante
-  if (!document.getElementById("exam-timer")) {
-    const timerEl = document.createElement("div");
-    timerEl.id = "exam-timer";
-    timerEl.style = `
-      position:fixed;
-      top:12px;
-      right:12px;
-      background:#1e3a8a;
-      color:white;
-      font-weight:600;
-      font-size:14px;
-      padding:8px 12px;
-      border-radius:8px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.2);
-      z-index:90;
-    `;
-    timerEl.textContent = "⏱️ 00:00";
-    document.body.appendChild(timerEl);
-  }
-
-  const opts = q.opciones.map((t, i) => `
-    <label class="option" onclick="answerExamen(${i})">
-      <input type="radio" name="opt"> ${String.fromCharCode(97 + i)}) ${t}
-    </label>`).join("");
-
-  app.innerHTML = `
-    <div class="q-layout">
-      <div class="q-card fade">
-        <div style="display:flex;justify-content:space-between;align-items:center;">
-          <b>Pregunta ${CURRENT.i + 1}/${CURRENT.list.length}</b>
-          <span class="small">${q.materia?.toUpperCase() || ""}</span>
-        </div>
-        <div class="enunciado">${q.enunciado}</div>
-        <div class="options">${opts}</div>
-        <div class="nav-row">
-          <button class="btn-small" onclick="prevExamen()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅️ Anterior</button>
-          <button class="btn-small" onclick="nextExamen()" ${CURRENT.i === CURRENT.list.length - 1 ? "disabled" : ""}>Siguiente ➡️</button>
-          <button class="btn-small" style="background:#64748b;border-color:#64748b"
-            onclick="stopTimer(); if(confirm('¿Salir del examen?')) renderHome()">🏠 Salir</button>
-        </div>
-      </div>
-    </div>
-  `;
-
-  // 🔹 Barra lateral moderna
-  if (!document.getElementById("exam-sidebar")) {
-    initSidebar();
-  } else {
-    renderSidebarPage();
-  }
-}
-
-/* ---------- Respuesta ---------- */
-function answerExamen(i) {
-  const q = CURRENT.list[CURRENT.i];
-  const slug = "general";
-  PROG[slug] = PROG[slug] || {};
-
-  if (PROG[slug][q.id]) return;
-
-  const correcta = i === q.correcta;
-  PROG[slug][q.id] = { chosen: i, status: correcta ? "ok" : "bad" };
-  PROG[slug]._lastDate = Date.now();
-
-  saveAll();
-
-  const options = document.querySelectorAll(".option");
-  options.forEach((opt, idx) => {
-    if (idx === q.correcta) opt.classList.add("correct");
-    else if (idx === i) opt.classList.add("wrong");
-    opt.style.pointerEvents = "none";
+  // ✅ Llama al motor universal de resolución
+  iniciarResolucion({
+    modo: "examen",
+    preguntas: chosen,
+    usarTimer: useTimer,
+    mostrarNotas: true,
+    permitirRetroceso: true,
+    titulo: "🧠 Modo Examen",
   });
-
-  setTimeout(() => nextExamen(), 1200);
-}
-
-/* ---------- Navegación ---------- */
-function nextExamen() {
-  if (CURRENT.i < CURRENT.list.length - 1) {
-    CURRENT.i++;
-    renderExamenPregunta();
-  } else renderExamenFin();
-}
-
-function prevExamen() {
-  if (CURRENT.i > 0) {
-    CURRENT.i--;
-    renderExamenPregunta();
-  }
-}
-
-/* ---------- Fin del examen ---------- */
-function renderExamenFin() {
-  stopTimer();
-  const timerEl = document.getElementById("exam-timer");
-  if (timerEl) timerEl.remove();
-
-  const prog = PROG.general || {};
-  const answered = CURRENT.list.filter(q => prog[q.id]);
-  const ok = answered.filter(q => prog[q.id]?.status === "ok").length;
-  const bad = answered.filter(q => prog[q.id]?.status === "bad").length;
-  const porc = answered.length ? Math.round((ok / answered.length) * 100) : 0;
-  const tiempo = TIMER.elapsed ? formatTime(TIMER.elapsed) : null;
-
-  app.innerHTML = `
-    <div class="card fade" style="text-align:center;">
-      <h2>🎯 Examen finalizado</h2>
-      <p>Respondiste ${answered.length} de ${CURRENT.list.length} preguntas.</p>
-      <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
-      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
-      <p><b>Precisión:</b> ${porc}%</p>
-      ${tiempo ? `<p><b>⏱️ Tiempo total:</b> ${tiempo}</p>` : ""}
-      <div style="margin-top:16px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-        <button class="btn-main" onclick="renderExamenSetup()">🧠 Nuevo examen</button>
-        <button class="btn-small" onclick="renderHome()">🏠 Volver al inicio</button>
-      </div>
-    </div>
-  `;
 }
