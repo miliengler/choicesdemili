@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderHome() {
   app.innerHTML = `
     <div class="home-menu fade" style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;">
-      <button class="btn-main btn-blue" onclick="renderChoice()">🧩 Choice por materia</button>
+      <button class="btn-main btn-blue" onclick="renderSubjects()">🧩 Choice por materia</button>
       <button class="btn-main btn-blue" onclick="renderExamenes()">📄 Exámenes anteriores</button>
       <button class="btn-main btn-blue" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
       <button class="btn-main btn-blue" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
