@@ -1,5 +1,5 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – Versión limpia con info dentro del desplegable
+   🧩 MODO CHOICE POR MATERIA – con progreso circular modular
    ========================================================== */
 
 function renderChoicePorMateria() {
@@ -19,38 +19,48 @@ function renderChoicePorMateria() {
 
     // progreso guardado
     const prog = PROG[key] || {};
-    const answered = Object.keys(prog).filter(k => !k.startsWith("_"));
+    const answered = Object.entries(prog).filter(([k]) => !k.startsWith("_"));
+    const correctas = answered.filter(([k, data]) => data?.status === "good").length;
+    const porcentaje = total ? Math.round((correctas / total) * 100) : 0;
+
+    // usamos el nuevo componente modular
+    const progressCircle = renderProgressCircle(porcentaje);
+
+    // último punto guardado
     const lastIndex = answered.length ? answered.length : null;
 
     return `
-  <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
-    <div class="choice-top">
-      <span class="choice-title">${s.name}</span>
-    </div>
+      <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
+        <div class="choice-top">
+          <span class="choice-title">${s.name}</span>
+          ${progressCircle}
+        </div>
 
-    <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
-      <p class="choice-count">${total} preguntas cargadas</p>
+        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
+          <p class="choice-count"><strong style="color:#64748b;font-size:13px;">
+            ${total} preguntas cargadas
+          </strong></p>
 
-      <div class="choice-row">
-        <label>Desde #</label>
-        <input 
-          type="number" 
-          id="start-${s.slug}" 
-          value="1" 
-          min="1" 
-          max="${total || 1}"
-        >
-
-        <div class="choice-buttons">
-          <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
-          <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso</button>
-          ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
-          <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
+          <div class="choice-row" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+            <label style="font-size:14px;">Desde #</label>
+            <input 
+              type="number" 
+              id="start-${s.slug}" 
+              value="1" 
+              min="1" 
+              max="${total || 1}"
+              style="width:70px;padding:4px 6px;border:1px solid var(--line);
+                     border-radius:6px;text-align:center;background:#fff;">
+            <div class="choice-buttons" style="margin-top:0;">
+              <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
+              <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso</button>
+              ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
+              <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-`;
+    `;
   }).join("");
 
   app.innerHTML = `
