@@ -453,3 +453,21 @@ body.dark .q-card .explain {
 .choice-body {
   background: #fff !important;
 }
+/* ==========================================================
+   🎨 Unificación de botones de práctica / repaso / notas
+   ========================================================== */
+.choice-buttons button,
+.btn-practica,
+.btn-repaso,
+.btn-notas {
+  background: #f1f5f9 !important; /* gris claro */
+  color: #0f172a !important;      /* texto negro */
+  border: 1px solid #cbd5e1 !important;
+}
+
+.choice-buttons button:hover,
+.btn-practica:hover,
+.btn-repaso:hover,
+.btn-notas:hover {
+  background: #e2e8f0 !important; /* gris un poco más oscuro al pasar */
+}
