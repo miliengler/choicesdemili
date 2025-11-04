@@ -238,3 +238,15 @@ function answer(i) {
   saveAll();
   renderPregunta();
 }
+/* ==========================================================
+   🚀 ARRANQUE AUTOMÁTICO DE LA APP
+   ========================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+  const appEl = document.getElementById("app");
+  if (appEl && typeof renderHome === "function") {
+    window.app = appEl;
+    renderHome();
+  } else {
+    console.warn("⚠️ No se pudo iniciar la interfaz principal (renderHome no encontrado)");
+  }
+});
