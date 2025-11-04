@@ -2,6 +2,11 @@
    📊 ESTADÍSTICAS GLOBALES – Compatible con MEbank
    ========================================================== */
 
+/* ---------- Normalizador local (para evitar conflictos globales) ---------- */
+const normalizeSt = str =>
+  str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
+
+/* ---------- Render principal ---------- */
 function renderStatsGlobal() {
   if (!MEbank || !MEbank.questions || MEbank.questions.length === 0) {
     app.innerHTML = `
@@ -13,32 +18,37 @@ function renderStatsGlobal() {
     return;
   }
 
+  // Totales globales
   const totalPregs = MEbank.questions.length;
+
   const totalRespondidas = Object.values(PROG)
     .flatMap(obj => Object.keys(obj))
     .filter(k => !k.startsWith("_")).length;
 
+  // Estructura por materia
   const porMateria = {};
 
   MEbank.questions.forEach(q => {
-    const mat = q.materia || "general";
-    if (!porMateria[mat]) porMateria[mat] = { ok: 0, bad: 0, total: 0 };
-    porMateria[mat].total++;
-    const p = PROG[mat]?.[q.id];
+    const matKey = normalizeSt(q.materia || "general");
+    if (!porMateria[matKey]) porMateria[matKey] = { ok: 0, bad: 0, total: 0, name: q.materia || "General" };
+    porMateria[matKey].total++;
+
+    const p = PROG[matKey]?.[q.id];
     if (p) {
-      if (p.status === "ok") porMateria[mat].ok++;
-      if (p.status === "bad") porMateria[mat].bad++;
+      if (p.status === "ok") porMateria[matKey].ok++;
+      else if (p.status === "bad") porMateria[matKey].bad++;
     }
   });
 
-  const filas = Object.entries(porMateria)
-    .sort((a, b) => a[0].localeCompare(b[0], "es"))
-    .map(([mat, d]) => {
+  // Tabla de resultados
+  const filas = Object.values(porMateria)
+    .sort((a, b) => a.name.localeCompare(b.name, "es"))
+    .map(d => {
       const porc = d.total ? Math.round((d.ok / d.total) * 100) : 0;
       const color = porc >= 80 ? "#16a34a" : porc >= 50 ? "#facc15" : "#ef4444";
       return `
         <tr>
-          <td>${mat.toUpperCase()}</td>
+          <td>${d.name.toUpperCase()}</td>
           <td>${d.total}</td>
           <td>${d.ok}</td>
           <td>${d.bad}</td>
@@ -46,6 +56,7 @@ function renderStatsGlobal() {
         </tr>`;
     }).join("");
 
+  // Render final
   app.innerHTML = `
     <div class="card fade" style="text-align:center;max-width:800px;margin:auto;">
       <h2>📊 Estadísticas generales</h2>
@@ -61,7 +72,7 @@ function renderStatsGlobal() {
             <th>Precisión</th>
           </tr>
         </thead>
-        <tbody>${filas}</tbody>
+        <tbody>${filas || "<tr><td colspan='5'>Sin datos</td></tr>"}</tbody>
       </table>
       <div style="margin-top:20px;">
         <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
@@ -69,4 +80,6 @@ function renderStatsGlobal() {
     </div>
   `;
 }
+
+/* ---------- Export global ---------- */
 window.renderStatsGlobal = renderStatsGlobal;
