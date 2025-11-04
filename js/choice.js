@@ -1,5 +1,5 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – Diseño igual a captura
+   🧩 MODO CHOICE POR MATERIA – Versión clásica ajustada
    ========================================================== */
 
 function renderChoicePorMateria() {
@@ -28,10 +28,18 @@ function renderChoicePorMateria() {
           <span class="choice-title">${s.name}</span>
           <span class="choice-count">${total} preguntas</span>
         </div>
+
         <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-            <label>Desde #</label>
-            <input type="number" id="start-${s.slug}" value="1" min="1" max="${total || 1}">
+            <label style="font-size:14px;">Desde #</label>
+            <input 
+              type="number" 
+              id="start-${s.slug}" 
+              value="1" 
+              min="1" 
+              max="${total || 1}"
+              style="width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;text-align:center;"
+            >
           </div>
 
           <div class="choice-buttons">
@@ -41,13 +49,14 @@ function renderChoicePorMateria() {
             <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
           </div>
         </div>
-      </div>`;
+      </div>
+    `;
   }).join("");
 
   app.innerHTML = `
     <div class="choice-container fade">
       <div class="choice-header-global">
-        <span style="font-size:22px;">🧩</span>
+        <span>🧩</span>
         <h2>Practicá por materia</h2>
       </div>
       <p class="choice-subtitle">Elegí una materia para comenzar tu práctica.</p>
