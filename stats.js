@@ -69,3 +69,4 @@ function renderStatsGlobal() {
     </div>
   `;
 }
+window.renderStatsGlobal = renderStatsGlobal;
