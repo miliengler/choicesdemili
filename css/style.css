@@ -270,3 +270,12 @@ button:hover { transform: translateY(-2px); }
   border-radius: 6px;
   text-align: center;
 }
+/* ==========================================================
+   📊 Estilo de contador de preguntas
+   ========================================================== */
+.choice-count {
+  color: var(--muted);
+  font-weight: 600;      /* negrita */
+  font-size: 13px;       /* un poco más chico que “Desde” */
+  margin: 2px 0 6px 2px;
+}
