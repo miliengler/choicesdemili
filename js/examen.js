@@ -3,18 +3,21 @@
    Con cronómetro opcional (timer.js) y barra lateral moderna
    ========================================================== */
 
+/* ---------- Normalizador local ---------- */
 const normalize = str =>
   str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
 
 /* ---------- Render del configurador ---------- */
 function renderExamenSetup() {
-  const subs = subjectsFromBank().sort((a, b) =>
+  // 🔹 Ahora usamos MEbank.subjects directamente
+  const subs = (MEbank.subjects || []).sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
     )
   );
 
-  const resumen = BANK.questions.reduce((acc, q) => {
+  // 🔹 Resumen de cantidad de preguntas por materia
+  const resumen = (MEbank.questions || []).reduce((acc, q) => {
     const key = normalize(q.materia);
     acc[key] = (acc[key] || 0) + 1;
     return acc;
@@ -89,7 +92,8 @@ function startExamen() {
   const useTimer = document.getElementById("chkTimer")?.checked;
 
   const selectedNorm = selected.map(s => normalize(s));
-  let pool = (BANK.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
+  // 🔹 Ahora usamos MEbank.questions
+  let pool = (MEbank.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
 
   if (pool.length === 0) {
     alert("Seleccioná al menos una materia con preguntas.");
@@ -115,7 +119,7 @@ function renderExamenPregunta() {
     return;
   }
 
-  // 🕒 Cronómetro flotante
+  // 🕒 Cronómetro flotante (lo eliminaremos en la fase visual)
   if (!document.getElementById("exam-timer")) {
     const timerEl = document.createElement("div");
     timerEl.id = "exam-timer";
@@ -160,7 +164,6 @@ function renderExamenPregunta() {
     </div>
   `;
 
-  // 🔹 Barra lateral moderna
   if (!document.getElementById("exam-sidebar")) {
     initSidebar();
   } else {
@@ -189,6 +192,7 @@ function answerExamen(i) {
     opt.style.pointerEvents = "none";
   });
 
+  // ⏸️ De momento dejamos el autoavance, lo quitamos en fase 3
   setTimeout(() => nextExamen(), 1200);
 }
 
