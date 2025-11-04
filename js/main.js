@@ -201,16 +201,26 @@ async function manualBankReload() {
   alert("✅ Bancos actualizados correctamente");
 }
 /* ==========================================================
-   🌍 EXPOSE GLOBAL FUNCTIONS (para que los botones del Home funcionen)
+   🌍 EXPOSICIÓN GLOBAL DE FUNCIONES – HOME BUTTONS
    ========================================================== */
-window.renderExamenesAnteriores = window.renderExamenesAnteriores || function() {
-  alert("📄 Módulo de exámenes anteriores no cargado");
-};
 
-window.renderExamenSetup = window.renderExamenSetup || function() {
-  alert("🧠 Modo examen próximamente disponible");
-};
+// 📄 Exámenes anteriores
+if (typeof window.renderExamenesAnteriores !== "function") {
+  window.renderExamenesAnteriores = function() {
+    alert("📄 Módulo de exámenes anteriores no está cargado o tiene un error.");
+  };
+}
 
-window.renderStatsGlobal = window.renderStatsGlobal || function() {
-  alert("📊 Módulo de estadísticas no cargado");
-};
+// 🧠 Modo examen
+if (typeof window.renderExamenSetup !== "function") {
+  window.renderExamenSetup = function() {
+    alert("🧠 Módulo de modo examen no está disponible todavía.");
+  };
+}
+
+// 📊 Estadísticas globales
+if (typeof window.renderStatsGlobal !== "function") {
+  window.renderStatsGlobal = function() {
+    alert("📊 Módulo de estadísticas generales no está cargado o tiene un error.");
+  };
+}
