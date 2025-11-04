@@ -200,3 +200,17 @@ async function manualBankReload() {
   await loadAllBanks(); // definida en core-bank.js
   alert("✅ Bancos actualizados correctamente");
 }
+/* ==========================================================
+   🌍 EXPOSE GLOBAL FUNCTIONS (para que los botones del Home funcionen)
+   ========================================================== */
+window.renderExamenesAnteriores = window.renderExamenesAnteriores || function() {
+  alert("📄 Módulo de exámenes anteriores no cargado");
+};
+
+window.renderExamenSetup = window.renderExamenSetup || function() {
+  alert("🧠 Modo examen próximamente disponible");
+};
+
+window.renderStatsGlobal = window.renderStatsGlobal || function() {
+  alert("📊 Módulo de estadísticas no cargado");
+};
