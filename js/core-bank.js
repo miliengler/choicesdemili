@@ -1,13 +1,12 @@
 /* ==========================================================
-   🧩 CORE-BANK.JS – Módulo unificado de banco, progreso y normalización
+   💾 CORE-BANK.JS – Banco de preguntas unificado (MEbank)
    ========================================================== */
 
-const LS_BANK = "mebank_bank_v7";
-const LS_PROGRESS = "mebank_prog_v7";
+const LS_BANK = "mebank_v7_unificado";
+const LS_PROGRESS = "mebank_prog_v7_unificado";
 
-const HIDDEN_EXAMS = ["inmunomatrix", "general", "base", "practice", "test"];
-
-let MEbank = {
+/* ---------- Estado global ---------- */
+let MEbank = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
     { slug: "neumonologia", name: "🫁 Neumonología" },
     { slug: "psiquiatria", name: "💭 Psiquiatría" },
@@ -43,67 +42,63 @@ let MEbank = {
   byExamen: {}
 };
 
-/* ---------- Normalización general ---------- */
-function normalizeString(str) {
-  return str
-    ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim()
-    : "";
-}
-
-function normalizeMateria(name) {
-  const limpio = normalizeString(name || "");
-  if (!limpio) return "";
-  const match = MEbank.subjects.find(s => normalizeString(s.slug) === limpio);
-  return match ? match.slug : limpio;
-}
-
-/* ---------- Carga desde localStorage ---------- */
+/* ---------- Progreso ---------- */
 let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
-let BANK_LOCAL = JSON.parse(localStorage.getItem(LS_BANK) || "null");
 
-if (BANK_LOCAL && BANK_LOCAL.questions?.length) {
-  MEbank.questions = BANK_LOCAL.questions;
+/* ---------- Normalizador universal ---------- */
+function normalize(str) {
+  return str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
 }
 
-/* ---------- Guardar ---------- */
+/* ---------- Guardado ---------- */
 function saveAll() {
   localStorage.setItem(LS_BANK, JSON.stringify(MEbank));
   localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG));
 }
 
-/* ==========================================================
-   🔹 CARGA AUTOMÁTICA DESDE /BANCOS/
-   Incluye tanto bancos temáticos como exámenes oficiales
-   ========================================================== */
+/* ---------- Índices dinámicos ---------- */
+function rebuildIndexes() {
+  MEbank.byMateria = {};
+  MEbank.byExamen = {};
+
+  (MEbank.questions || []).forEach(q => {
+    if (!q || !q.id) return;
+
+    const mKey = normalize(q.materia);
+    const eKey = normalize(q.examen || "oculto");
+
+    if (!MEbank.byMateria[mKey]) MEbank.byMateria[mKey] = [];
+    if (!MEbank.byExamen[eKey]) MEbank.byExamen[eKey] = [];
+
+    MEbank.byMateria[mKey].push(q);
+    MEbank.byExamen[eKey].push(q);
+  });
+}
+
+/* ---------- Carga de bancos ---------- */
 async function loadAllBanks() {
+  const materias = MEbank.subjects.map(s => s.slug);
   const existingIds = new Set(MEbank.questions.map(q => q.id));
   let totalNuevas = 0;
+
   const loader = showLoader("⏳ Cargando bancos...");
 
-  // Materias + exámenes oficiales
-  const sources = [
-    ...MEbank.subjects.map(s => s.slug),
-    "examen_unico_2025", "examen_unico_2024", "examen_unico_2023"
-  ];
-
-  for (const src of sources) {
+  for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
-      const ruta = `../bancos/${src}/${src}${i}.json`;
+      const ruta = `../bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
         if (!resp.ok) continue;
         const data = await resp.json();
 
-        const nuevas = data
-          .filter(q => q?.id && !existingIds.has(q.id))
-          .map(q => ({
-            ...q,
-            materia: normalizeMateria(q.materia),
-            examen: q.examen || null,
-            anio: q.anio || null
-          }));
+        data.forEach(q => {
+          if (!q || !q.id) return;
+          q.materia = normalize(q.materia || materia);
+          q.examen = q.examen || "oculto"; // 📄 Si no tiene examen, no se muestra en “Exámenes anteriores”
+        });
 
-        if (nuevas.length) {
+        const nuevas = data.filter(q => !existingIds.has(q.id));
+        if (nuevas.length > 0) {
           nuevas.forEach(q => existingIds.add(q.id));
           MEbank.questions.push(...nuevas);
           totalNuevas += nuevas.length;
@@ -115,52 +110,12 @@ async function loadAllBanks() {
     }
   }
 
-  indexQuestions();
+  rebuildIndexes();
   hideLoader(loader, totalNuevas);
   if (totalNuevas > 0) saveAll();
 }
 
-/* ---------- Indexado por materia y examen ---------- */
-function indexQuestions() {
-  MEbank.byMateria = {};
-  MEbank.byExamen = {};
-
-  (MEbank.questions || []).forEach(q => {
-    const mat = normalizeMateria(q.materia);
-    if (!mat) return;
-
-    // 📚 Por materia
-    if (!MEbank.byMateria[mat]) MEbank.byMateria[mat] = [];
-    MEbank.byMateria[mat].push(q);
-
-    // 🧾 Por examen
-    if (q.examen && !HIDDEN_EXAMS.includes(normalizeString(q.examen))) {
-      const key = q.anio ? `${q.examen}_${q.anio}` : normalizeString(q.examen);
-      if (!MEbank.byExamen[key]) MEbank.byExamen[key] = [];
-      MEbank.byExamen[key].push(q);
-    }
-  });
-}
-
-/* ==========================================================
-   🔄 RECARGA COMPLETA
-   ========================================================== */
-async function forceReloadBank() {
-  if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
-  localStorage.removeItem(LS_BANK);
-  localStorage.removeItem(LS_PROGRESS);
-  MEbank.questions = [];
-  PROG = {};
-  alert("♻️ Banco borrado. Se recargará completo...");
-  await loadAllBanks();
-  saveAll();
-  alert(`✅ Banco recargado con ${MEbank.questions.length} preguntas`);
-  if (typeof renderHome === "function") renderHome();
-}
-
-/* ==========================================================
-   💾 UTILIDADES VISUALES
-   ========================================================== */
+/* ---------- Indicadores visuales ---------- */
 function showLoader(text) {
   const el = document.createElement("div");
   el.id = "bankLoader";
@@ -182,13 +137,30 @@ function hideLoader(el, total) {
   setTimeout(() => el.remove(), 2500);
 }
 
-/* ==========================================================
-   ⚙️ INICIALIZACIÓN
-   ========================================================== */
+/* ---------- Carga inicial ---------- */
 window.addEventListener("DOMContentLoaded", async () => {
   if (!(MEbank.questions && MEbank.questions.length)) {
     await loadAllBanks();
   } else {
-    indexQuestions();
+    rebuildIndexes();
   }
 });
+
+/* ---------- 🔄 Recarga completa ---------- */
+async function forceReloadBank() {
+  if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
+
+  localStorage.removeItem(LS_BANK);
+  localStorage.removeItem(LS_PROGRESS);
+
+  MEbank = { subjects: MEbank.subjects, questions: [], byMateria: {}, byExamen: {} };
+  PROG = {};
+
+  alert("♻️ Banco borrado. Ahora se recargará completo...");
+
+  await loadAllBanks();
+  saveAll();
+
+  alert(`✅ Banco recargado con ${MEbank.questions.length} preguntas`);
+  renderHome();
+}
