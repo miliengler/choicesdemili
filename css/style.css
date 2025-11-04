@@ -241,3 +241,32 @@ button:hover { transform: translateY(-2px); }
   background: #e2e8f0 !important;
   transform: translateY(-1px);
 }
+/* ==========================================================
+   📐 Estilo limpio dentro del desplegable
+   ========================================================== */
+.choice-count {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 2px 0 8px 2px;
+}
+
+.choice-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.choice-row label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.choice-row input {
+  width: 70px;
+  padding: 4px 6px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  text-align: center;
+}
