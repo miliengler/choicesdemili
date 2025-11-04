@@ -17,47 +17,41 @@ function renderChoicePorMateria() {
     const key = normalize(s.slug);
     const total = resumen[key] || 0;
 
-    // si hay progreso guardado, detecto el último respondido
+    // progreso guardado
     const prog = PROG[key] || {};
     const answered = Object.keys(prog).filter(k => !k.startsWith("_"));
     const lastIndex = answered.length ? answered.length : null;
 
     return `
       <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
-        <div class="choice-header">
-          <div class="choice-title">${s.name}</div>
+        <div class="choice-top">
+          <span class="choice-title">${s.name}</span>
+          <span class="choice-count">${total} preguntas</span>
         </div>
         <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
-          <p style="color:var(--muted);margin-bottom:8px;">
-            ${total} preguntas disponibles
-          </p>
-
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
-            <label style="font-size:14px;">Desde</label>
-            <input type="number" id="start-${s.slug}" value="1" min="1" max="${total || 1}"
-                   style="width:70px;padding:4px 6px;border:1px solid var(--line);border-radius:6px;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+            <label>Desde #</label>
+            <input type="number" id="start-${s.slug}" value="1" min="1" max="${total || 1}">
           </div>
 
-          <div class="choice-btns">
-            <button class="btn-small" onclick="startChoice('${s.slug}', event)">Práctica</button>
-            <button class="btn-small" onclick="startRepaso('${s.slug}', event)">Repaso (incorrectas)</button>
-            ${lastIndex ? `<button class="btn-small" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
-            <button class="btn-small" onclick="openNotas('${s.slug}', event)">Notas</button>
+          <div class="choice-buttons">
+            <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
+            <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso (incorrectas)</button>
+            ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
+            <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
           </div>
         </div>
       </div>`;
   }).join("");
 
   app.innerHTML = `
-    <div class="card fade" style="max-width:750px;margin:auto;">
-      <h2 style="text-align:center;">Práctica por materia</h2>
-      <p style="text-align:center;color:var(--muted);margin-bottom:20px;">
-        Elegí una materia para comenzar tu práctica.
-      </p>
-      <div id="choice-list">${list}</div>
-      <div class="nav-row" style="margin-top:20px;">
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver al inicio</button>
+    <div class="choice-container fade">
+      <div class="choice-header-global">
+        <span style="font-size:22px;">🧩</span>
+        <h2>Practicá por materia</h2>
       </div>
+      <p class="choice-subtitle">Elegí una materia para comenzar tu práctica.</p>
+      <div id="choice-list">${list}</div>
     </div>
   `;
 }
@@ -119,5 +113,5 @@ function resumeChoice(slug, e) {
 
 function openNotas(slug, e) {
   e.stopPropagation();
-  alert(`Abrir notas de ${slug}`);
+  alert(`📘 Abrir notas de ${slug}`);
 }
