@@ -1,5 +1,3 @@
-Examen.js 
-
 /* ==========================================================
    🧠 MODO EXAMEN – CREÁ EL TUYO
    Con cronómetro opcional (timer.js) y barra lateral moderna
