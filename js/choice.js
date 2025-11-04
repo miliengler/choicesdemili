@@ -23,34 +23,34 @@ function renderChoicePorMateria() {
     const lastIndex = answered.length ? answered.length : null;
 
     return `
-      <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
-        <div class="choice-top">
-          <span class="choice-title">${s.name}</span>
-        </div>
+  <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
+    <div class="choice-top">
+      <span class="choice-title">${s.name}</span>
+    </div>
 
-        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
-          <p class="choice-count">${total} preguntas</p>
+    <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
+      <p class="choice-count">${total} preguntas cargadas</p>
 
-          <div class="choice-row">
-            <label>Desde #</label>
-            <input 
-              type="number" 
-              id="start-${s.slug}" 
-              value="1" 
-              min="1" 
-              max="${total || 1}"
-            >
+      <div class="choice-row">
+        <label>Desde #</label>
+        <input 
+          type="number" 
+          id="start-${s.slug}" 
+          value="1" 
+          min="1" 
+          max="${total || 1}"
+        >
 
-            <div class="choice-buttons">
-              <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
-              <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso</button>
-              ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
-              <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
-            </div>
-          </div>
+        <div class="choice-buttons">
+          <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
+          <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso</button>
+          ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
+          <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
         </div>
       </div>
-    `;
+    </div>
+  </div>
+`;
   }).join("");
 
   app.innerHTML = `
