@@ -1,5 +1,5 @@
 /* ==========================================================
-   🧩 MODO CHOICE POR MATERIA – Versión limpia (fondo blanco)
+   🧩 MODO CHOICE POR MATERIA – Versión limpia con info dentro del desplegable
    ========================================================== */
 
 function renderChoicePorMateria() {
@@ -26,27 +26,27 @@ function renderChoicePorMateria() {
       <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
         <div class="choice-top">
           <span class="choice-title">${s.name}</span>
-          <span class="choice-count">${total} preguntas</span>
         </div>
 
-        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;background:#fff;border:1px solid #e2e8f0;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-            <label style="font-size:14px;">Desde #</label>
+        <div id="choice-body-${s.slug}" class="choice-body" style="display:none;">
+          <p class="choice-count">${total} preguntas</p>
+
+          <div class="choice-row">
+            <label>Desde #</label>
             <input 
               type="number" 
               id="start-${s.slug}" 
               value="1" 
               min="1" 
               max="${total || 1}"
-              style="width:70px;padding:4px 6px;border:1px solid var(--line);
-                     border-radius:6px;text-align:center;background:#fff;">
-          </div>
+            >
 
-          <div class="choice-buttons">
-            <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
-            <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso (incorrectas)</button>
-            ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
-            <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
+            <div class="choice-buttons">
+              <button class="btn-practica" onclick="startChoice('${s.slug}', event)">Práctica</button>
+              <button class="btn-repaso" onclick="startRepaso('${s.slug}', event)">Repaso</button>
+              ${lastIndex ? `<button class="btn-repaso" onclick="resumeChoice('${s.slug}', event)">Reanudar (${lastIndex})</button>` : ""}
+              <button class="btn-notas" onclick="openNotas('${s.slug}', event)">Notas</button>
+            </div>
           </div>
         </div>
       </div>
