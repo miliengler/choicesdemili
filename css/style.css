@@ -471,3 +471,32 @@ body.dark .q-card .explain {
 .btn-notas:hover {
   background: #e2e8f0 !important; /* gris un poco más oscuro al pasar */
 }
+/* ==========================================================
+   🧩 Alineación horizontal: "Desde #" + botones
+   ========================================================== */
+.choice-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+/* Hacemos que el input y label mantengan proporción */
+.choice-body label {
+  margin-right: 4px;
+}
+
+.choice-body input {
+  margin-right: 10px;
+  width: 70px;
+  text-align: center;
+}
+
+/* Ajustamos el contenedor de los botones para que no baje */
+.choice-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0;
+}
