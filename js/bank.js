@@ -127,3 +127,22 @@ window.addEventListener("DOMContentLoaded", async () => {
     await loadAllBanks();
   }
 });
+
+/* ---------- 🔄 Forzar recarga completa del banco ---------- */
+async function forceReloadBank() {
+  if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
+
+  localStorage.removeItem(LS_BANK);
+  localStorage.removeItem(LS_PROGRESS);
+
+  BANK = { subjects: BANK.subjects, questions: [] };
+  PROG = {};
+
+  alert("♻️ Banco borrado. Ahora se recargará completo...");
+
+  await loadAllBanks();
+  saveAll();
+
+  alert(`✅ Banco recargado con ${BANK.questions.length} preguntas`);
+  renderHome();
+}
