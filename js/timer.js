@@ -1,5 +1,3 @@
-Timer.js
-
 /* ========== 🔹 CRONÓMETRO UNIVERSAL (modular) – Estilo B (texto limpio) ========== */
 let TIMER = {
   interval: null,
