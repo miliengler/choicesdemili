@@ -1,16 +1,39 @@
+Ui.js
+
+/* ==========================================================
+   🏠 INTERFAZ PRINCIPAL – Home, materias y práctica
+   ========================================================== */
+
+/* ---------- HOME ---------- */
+function renderHome() {
+  app.innerHTML = `
+    <div class="home-menu fade">
+      <button class="btn-main btn-blue" onclick="renderSubjects()">🧩 Choice por materia</button>
+      <button class="btn-main btn-blue" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
+      <button class="btn-main btn-blue" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
+      <button class="btn-main btn-blue" onclick="alert('📊 Estadísticas próximamente')">📊 Estadísticas generales</button>
+      <button class="btn-main btn-blue" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
+      <hr class="divider">
+      <button class="btn-small btn-grey" onclick="manualBankReload()">🔄 Actualizar bancos</button>
+    </div>
+  `;
+}
+
 /* ---------- Normalizador ---------- */
 const normalize = str =>
   str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
 
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
-  const subs = (MEbank.subjects || []).sort((a, b) =>
+  const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ""),
+      "es",
+      { sensitivity: "base" }
     )
   );
 
-  const resumen = (MEbank.questions || []).reduce((acc, q) => {
+  const resumen = BANK.questions.reduce((acc, q) => {
     const key = normalize(q.materia);
     acc[key] = (acc[key] || 0) + 1;
     return acc;
@@ -82,18 +105,19 @@ function resumeSubject(slug) {
   startPractica(slug, start);
 }
 
-/* ---------- Estadísticas ---------- */
+/* ---------- Estadísticas placeholder ---------- */
 function showStats(slug) {
-  renderStatsGlobal(slug);
+  alert(`📊 Próximamente estadísticas para ${slug}`);
 }
 
 /* ==========================================================
    🔹 MOTOR DE PREGUNTAS
    ========================================================== */
-let CURRENT = { list: [], i: 0, materia: "", session: {} };
+let CURRENT = { list: [], i: 0, materia: "" };
 
 function startPractica(slug, startIndex = 0) {
-  const listAll = (MEbank.byMateria?.[slug] || [])
+  const listAll = (BANK.questions || [])
+    .filter(q => normalize(q.materia) === normalize(slug))
     .sort((a, b) => a.id.localeCompare(b.id));
 
   if (!listAll.length) {
@@ -101,7 +125,7 @@ function startPractica(slug, startIndex = 0) {
     return;
   }
 
-  CURRENT = { list: listAll.slice(startIndex), i: 0, materia: slug, session: {} };
+  CURRENT = { list: listAll.slice(startIndex), i: 0, materia: slug };
   PROG[slug] = PROG[slug] || {};
   PROG[slug]._lastIndex = startIndex;
   saveAll();
@@ -109,7 +133,8 @@ function startPractica(slug, startIndex = 0) {
 }
 
 function startRepaso(slug) {
-  const listAll = (MEbank.byMateria?.[slug] || [])
+  const listAll = (BANK.questions || [])
+    .filter(q => normalize(q.materia) === normalize(slug))
     .sort((a, b) => a.id.localeCompare(b.id));
 
   const prog = PROG[slug] || {};
@@ -120,7 +145,7 @@ function startRepaso(slug) {
     return;
   }
 
-  CURRENT = { list, i: 0, materia: slug, session: {} };
+  CURRENT = { list, i: 0, materia: slug };
   renderPregunta();
 }
 
@@ -134,11 +159,6 @@ function renderPregunta() {
 
   const prog = PROG[CURRENT.materia] || {};
   const ans = prog[q.id]?.chosen;
-
-  // Registrar estado en sesión para sidebar
-  if (ans != null) {
-    CURRENT.session[CURRENT.i] = (ans === q.correcta ? "ok" : "bad");
-  }
 
   const opts = q.opciones.map((t, i) => {
     let cls = "";
@@ -167,7 +187,7 @@ function renderPregunta() {
     </div>
   `;
 
-  // Sidebar
+  // 🧭 Sidebar moderna
   if (!document.getElementById("exam-sidebar")) {
     initSidebar();
   } else {
@@ -214,27 +234,8 @@ function answer(i) {
   const slug = CURRENT.materia || "general";
   PROG[slug] = PROG[slug] || {};
   if (PROG[slug][q.id]) return;
-
   PROG[slug][q.id] = { chosen: i, status: i === q.correcta ? "ok" : "bad" };
   PROG[slug]._lastIndex = CURRENT.i;
-  PROG[slug]._lastDate = Date.now();
   saveAll();
-
-  // Actualizar estado para sidebar
-  CURRENT.session[CURRENT.i] = (i === q.correcta ? "ok" : "bad");
-
   renderPregunta();
 }
-
-/* ==========================================================
-   🚀 ARRANQUE AUTOMÁTICO DE LA APP
-   ========================================================== */
-document.addEventListener("DOMContentLoaded", () => {
-  const appEl = document.getElementById("app");
-  if (appEl && typeof renderHome === "function") {
-    window.app = appEl;
-    renderHome();
-  } else {
-    console.warn("⚠️ No se pudo iniciar la interfaz principal (renderHome no encontrado)");
-  }
-});
