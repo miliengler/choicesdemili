@@ -8,36 +8,36 @@ let currentChoiceSort = localStorage.getItem("choiceSort") || "az";
 function renderChoicePorMateria() {
   let subs = subjectsFromBank();
 
-// 🔢 Orden dinámico según el selector
-if (currentChoiceSort === "az") {
-  subs = subs.sort((a, b) =>
-    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-  );
-} else if (currentChoiceSort === "progress") {
-  subs = subs.sort((a, b) => {
-    const keyA = normalize(a.slug || a.name);
-    const keyB = normalize(b.slug || b.name);
+  // 🔢 Orden dinámico según el selector
+  if (currentChoiceSort === "az") {
+    subs = subs.sort((a, b) =>
+      a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+    );
+  } else if (currentChoiceSort === "progress") {
+    subs = subs.sort((a, b) => {
+      const keyA = normalize(a.slug || a.name);
+      const keyB = normalize(b.slug || b.name);
 
-    const totalA = BANK.questions.filter(q => normalize(q.materia) === keyA).length;
-    const totalB = BANK.questions.filter(q => normalize(q.materia) === keyB).length;
+      const totalA = BANK.questions.filter(q => normalize(q.materia) === keyA).length;
+      const totalB = BANK.questions.filter(q => normalize(q.materia) === keyB).length;
 
-    const progA = PROG[keyA] || {};
-    const progB = PROG[keyB] || {};
+      const progA = PROG[keyA] || {};
+      const progB = PROG[keyB] || {};
 
-    const goodA = Object.values(progA).filter(p => p?.status === "good").length;
-    const goodB = Object.values(progB).filter(p => p?.status === "good").length;
+      const goodA = Object.values(progA).filter(p => p?.status === "good").length;
+      const goodB = Object.values(progB).filter(p => p?.status === "good").length;
 
-    const pctA = totalA ? goodA / totalA : 0;
-    const pctB = totalB ? goodB / totalB : 0;
+      const pctA = totalA ? goodA / totalA : 0;
+      const pctB = totalB ? goodB / totalB : 0;
 
-    // si ambos son iguales, ordenar alfabéticamente para evitar saltos
-    if (pctB === pctA) {
-      return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
-    }
+      // si ambos son iguales, ordenar alfabéticamente para evitar saltos
+      if (pctB === pctA) {
+        return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+      }
 
-    return pctB - pctA; // mayor progreso primero
-  });
-}
+      return pctB - pctA; // mayor progreso primero
+    });
+  }
 
   const resumen = BANK.questions.reduce((acc, q) => {
     const key = normalize(q.materia);
@@ -55,7 +55,7 @@ if (currentChoiceSort === "az") {
     const correctas = answered.filter(([k, data]) => data?.status === "good").length;
     const porcentaje = total ? Math.round((correctas / total) * 100) : 0;
 
-    // usamos el nuevo componente modular
+    // componente modular
     const progressCircle = renderProgressCircle(porcentaje);
 
     // último punto guardado
@@ -119,6 +119,7 @@ if (currentChoiceSort === "az") {
       <div id="choice-list" class="animated-list">${list}</div>
     </div>
   `;
+}
 
 /* ---------- Cambio de orden ---------- */
 function changeChoiceSort(mode) {
