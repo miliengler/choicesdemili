@@ -66,13 +66,21 @@ function subjectsFromBank() {
   );
 }
 
-/* ---------- Carga automática de bancos ---------- */
+/* ---------- Carga automática de bancos (versión sincronizada) ---------- */
 async function loadAllBanks() {
   const materias = BANK.subjects.map(s => s.slug);
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
 
   const loader = showLoader("⏳ Cargando bancos...");
+
+  const normalizarMateria = (nombre) => {
+    if (!nombre) return "";
+    const limpio = nombre.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim();
+    // Empareja con los slugs existentes
+    const match = BANK.subjects.find(s => limpio === s.slug);
+    return match ? s.slug : limpio;
+  };
 
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
@@ -82,15 +90,19 @@ async function loadAllBanks() {
         if (!resp.ok) continue;
         const data = await resp.json();
 
-        // ✅ No tocar el campo materia original
+        // 🩺 Normaliza campo materia antes de guardar
+        data.forEach(q => {
+          if (q.materia) q.materia = normalizarMateria(q.materia);
+        });
+
         const nuevas = data.filter(q => !existingIds.has(q.id));
         if (nuevas.length > 0) {
           nuevas.forEach(q => existingIds.add(q.id));
           BANK.questions.push(...nuevas);
           totalNuevas += nuevas.length;
-          console.log(`📘 Cargado ${ruta} (${nuevas.length} nuevas en ${materia})`);
+          console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
         }
-      } catch (err) {
+      } catch {
         console.warn(`⚠️ No se pudo cargar ${ruta}`);
       }
     }
