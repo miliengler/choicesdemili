@@ -443,3 +443,61 @@ body.dark .q-card .explain {
   font-size: 14px;
   padding: 8px 12px;
 }
+/* --- Ajustes finos para igualar versión original --- */
+.choice-container {
+  box-shadow: none; /* sin sombra global */
+  background: transparent; /* sin recuadro principal */
+  padding: 0;
+}
+
+.choice-item {
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 4px;
+}
+
+.choice-top {
+  padding: 6px 4px;
+}
+
+.choice-body {
+  background: #f8fafc;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin: 6px 0 12px 0;
+  padding: 10px 12px;
+}
+
+.choice-body input {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+}
+
+.choice-buttons {
+  margin-top: 8px;
+  justify-content: flex-start;
+}
+
+.choice-buttons button {
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+.choice-header-global h2 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--brand-dark);
+}
+
+.choice-header-global span {
+  font-size: 20px;
+}
+
+.choice-subtitle {
+  margin-top: 2px;
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 18px;
+  text-align: left;
+}
