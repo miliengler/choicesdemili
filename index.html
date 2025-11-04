@@ -1,3 +1,5 @@
+Bueno index
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,20 +40,14 @@
   <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- 📜 Scripts en orden correcto -->
-  <!-- Núcleo -->
-  <script src="js/core-bank.js"></script>
+  <!-- 📜 Scripts en orden lógico -->
+  <script src="js/bank.js"></script>
+  <script src="js/main.js"></script>
   <script src="js/timer.js"></script>
   <script src="js/sidebar.js"></script>
-
-  <!-- UI, examen, bancos y estadísticas -->
-  <script src="js/ui.js"></script>
   <script src="js/examen.js"></script>
-  <script src="js/examenes.js"></script>
-  <script src="js/stats.js"></script>
-
-  <!-- 🔹 Este debe ir al final para iniciar correctamente la app -->
-  <script src="js/main.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="stats.js"></script>
 
   <!-- 🌗 Toggle de modo oscuro -->
   <script>
@@ -62,6 +58,7 @@
 
       if (isDark) document.body.classList.add('dark');
 
+      // Crear botón flotante
       const btn = document.createElement('button');
       btn.className = 'theme-toggle';
       btn.title = 'Cambiar tema';
