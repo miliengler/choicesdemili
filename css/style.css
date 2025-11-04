@@ -336,3 +336,28 @@ button:hover { transform: translateY(-2px); }
 .sort-control select:hover {
   background: #e2e8f0;
 }
+/* ==========================================================
+   💫 Animación elegante de reordenamiento en Choice
+   ========================================================== */
+.animated-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.choice-item {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: fadeSlideIn 0.35s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
