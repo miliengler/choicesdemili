@@ -18,7 +18,7 @@ function renderHome() {
       <button class="btn-main btn-blue" onclick="renderChoice()">🧩 Choice por materia</button>
       <button class="btn-main btn-blue" onclick="renderExamenes()">📄 Exámenes anteriores</button>
       <button class="btn-main btn-blue" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
-      <button class="btn-main btn-blue" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
+      <button class="btn-main btn-blue" onclick="renderStatsGlobal()">📊 Estadísticas</button>
       <button class="btn-main btn-blue" onclick="renderNotas()">📔 Mis notas</button>
       <hr class="divider">
       <button class="btn-small btn-grey" onclick="manualBankReload()">🔄 Actualizar bancos</button>
