@@ -34,14 +34,14 @@ function renderHome() {
 
 // 🧩 Choice por materia
 function renderChoice() {
-  if (typeof renderSubjects === "function") {
-    renderSubjects();
+  if (typeof renderChoicePorMateria === "function") {
+    renderChoicePorMateria();
   } else {
     app.innerHTML = `
       <div class="card fade" style="text-align:center;">
         <h2>🧩 Choice por materia</h2>
-        <p>Este módulo aún no está cargado.</p>
-        <p class="small">Cuando carguemos <code>choice.js</code>, este botón te llevará allí.</p>
+        <p>No se pudo cargar el módulo <b>choice.js</b>.</p>
+        <p class="small">Verificá que el archivo exista en la carpeta <code>js/</code>.</p>
         <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
       </div>`;
   }
