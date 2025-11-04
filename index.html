@@ -38,23 +38,30 @@
   <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- 📜 Scripts principales -->
-<script src="js/bank.js"></script>
+  <!-- ==========================================================
+       📜 SCRIPTS PRINCIPALES
+       (orden correcto: base → motor → secciones)
+  ========================================================== -->
 
-<!-- 🧠 Núcleo y navegación -->
-<script src="js/main.js"></script>
+  <!-- 1️⃣ Banco y persistencia -->
+  <script src="js/bank.js"></script>
 
-<!-- ⚙️ Motores universales -->
-<script src="js/timer.js"></script>
-<script src="js/sidebar.js"></script>
-<script src="js/resolver.js"></script>
+  <!-- 2️⃣ Núcleo general y navegación -->
+  <script src="js/main.js"></script>
 
-<!-- 🧩 Secciones específicas -->
-<script src="js/stats.js"></script>
-<script src="js/examen.js"></script>
-<!-- (Después podés sumar choice.js, notas.js, anteriores.js, etc.) -->
+  <!-- 3️⃣ Motores universales -->
+  <script src="js/timer.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/resolver.js"></script>
 
-  <!-- 🌗 Toggle modo oscuro -->
+  <!-- 4️⃣ Secciones específicas -->
+  <script src="js/stats.js"></script>
+  <script src="js/examen.js"></script>
+  <!-- (Luego: choice.js, notas.js, anteriores.js, etc.) -->
+
+  <!-- ==========================================================
+       🌗 BOTÓN DE MODO OSCURO
+  ========================================================== -->
   <script>
     (function() {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -75,6 +82,24 @@
       };
       document.body.appendChild(btn);
     })();
+  </script>
+
+  <!-- ==========================================================
+       ✅ INICIALIZACIÓN FINAL SEGURA
+       (garantiza que todo esté listo antes de usar app o stats)
+  ========================================================== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (typeof renderHome === "function") {
+        renderHome();
+      } else {
+        document.getElementById("app").innerHTML = `
+          <div class="card fade" style="text-align:center">
+            <h2>⚠️ Error al cargar la aplicación</h2>
+            <p>No se encontró el módulo principal.</p>
+          </div>`;
+      }
+    });
   </script>
 </body>
 </html>
