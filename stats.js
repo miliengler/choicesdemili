@@ -90,3 +90,4 @@ function renderStatsGlobal() {
 
 /* ---------- Export global garantizado ---------- */
 window.renderStatsGlobal = renderStatsGlobal;
+console.log("📊 Módulo de estadísticas cargado correctamente");
