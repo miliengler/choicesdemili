@@ -1,6 +1,6 @@
+
 /* ==========================================================
    🧩 MAIN.JS – NAVEGACIÓN PRINCIPAL Y PRÁCTICA POR MATERIA
-   (Adaptado al nuevo sistema unificado MEbank)
    ========================================================== */
 
 /* ---------- INICIO AUTOMÁTICO ---------- */
@@ -15,47 +15,35 @@ function renderHome() {
   app.innerHTML = `
     <div style="text-align:center;animation:fadeIn .5s;display:flex;flex-direction:column;align-items:center;gap:10px;">
       <button class="btn-main" onclick="renderSubjects()">🧩 Choice por materia</button>
-
-      <button class="btn-main" onclick="renderExamenesAnteriores()">📄 Exámenes anteriores</button>
-
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;"
-              onclick="(window.renderExamenSetup ? renderExamenSetup() : alert('⚠️ Módulo de examen no está disponible o tiene un error'))">
-        🧠 Modo Examen – Creá el tuyo
-      </button>
-
-      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;"
-              onclick="(window.renderStatsGlobal ? renderStatsGlobal() : alert('⚠️ Módulo de estadísticas generales no está disponible o tiene un error'))">
-        📊 Estadísticas generales
-      </button>
-
+      <button class="btn-main" onclick="alert('📄 Próximamente')">📄 Exámenes anteriores</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderExamenSetup()">🧠 Modo Examen – Creá el tuyo</button>
+      <button class="btn-main" style="background:#1e40af;border-color:#1e40af;" onclick="renderStatsGlobal()">📊 Estadísticas generales</button>
       <button class="btn-main" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
-
       <hr style="width:60%;margin:20px 0;border:0;border-top:1px solid var(--line)">
       <button class="btn-small" style="background:#475569;color:white;" onclick="manualBankReload()">🔄 Actualizar bancos</button>
       <button class="btn-small btn-grey" onclick="forceReloadBank()">♻️ Recarga completa</button>
     </div>
   `;
 }
+
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
-  // 🔹 Ahora usamos directamente las materias desde MEbank
-  const subs = (MEbank.subjects || []).sort((a, b) =>
+  const subs = subjectsFromBank().sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' }
     )
   );
 
-  // 🔹 Construimos la lista de materias con sus totales reales
-  const list = subs.map(s => {
-    const count = (MEbank.byMateria?.[s.slug] || []).length;
-    return `
-      <button class="btn-main" 
-              style="background:#fff;color:var(--text);border:1px solid var(--line);text-align:left;max-width:500px;"
-              onclick="startPractica('${s.slug}')">
-        ${s.name}
-        <span style="float:right;color:var(--muted);font-size:13px;">${count} preg.</span>
-      </button>`;
-  }).join("");
+  const list = subs.map(s => `
+    <button class="btn-main" 
+            style="background:#fff;color:var(--text);border:1px solid var(--line);text-align:left;max-width:500px;"
+            onclick="startPractica('${s.slug}')">
+      ${s.name}
+      <span style="float:right;color:var(--muted);font-size:13px;">
+        ${(BANK.questions || []).filter(q => q.materia === s.slug).length} preg.
+      </span>
+    </button>
+  `).join("");
 
   app.innerHTML = `
     <div class="card" style="text-align:center">
@@ -74,8 +62,9 @@ function renderSubjects() {
 let CURRENT_SESSION = { list: [], i: 0, materia: "" };
 
 function startPractica(slug) {
-  // 🔹 Ahora las preguntas se obtienen desde MEbank.byMateria
-  const listAll = (MEbank.byMateria?.[slug] || []).sort((a, b) => a.id.localeCompare(b.id));
+  const listAll = (BANK.questions || [])
+    .filter(q => q.materia === slug)
+    .sort((a, b) => a.id.localeCompare(b.id));
 
   if (!listAll.length) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
@@ -90,7 +79,7 @@ function startPractica(slug) {
 }
 
 function startRepaso(slug) {
-  const listAll = (MEbank.byMateria?.[slug] || []);
+  const listAll = (BANK.questions || []).filter(q => q.materia === slug);
   const prog = PROG[slug] || {};
   const list = listAll.filter(q => prog[q.id]?.status === 'bad');
 
@@ -194,9 +183,13 @@ function answer(i) {
   const slug = CURRENT_SESSION.materia || 'general';
   PROG[slug] = PROG[slug] || {};
 
+  // Evita sobrescribir si ya respondió
   if (PROG[slug][q.id]) return;
 
+  // Guarda respuesta y estado
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
+
+  // Guarda índice y fecha del último intento
   PROG[slug]._lastIndex = CURRENT_SESSION.i;
   PROG[slug]._lastDate = Date.now();
 
@@ -207,30 +200,6 @@ function answer(i) {
 /* ---------- RECARGA MANUAL DE BANCOS ---------- */
 async function manualBankReload() {
   alert("⏳ Actualizando bancos...");
-  await loadAllBanks(); // definida en core-bank.js
+  await loadAllBanks(); // definida en bank.js
   alert("✅ Bancos actualizados correctamente");
-}
-/* ==========================================================
-   🌍 EXPOSICIÓN GLOBAL DE FUNCIONES – HOME BUTTONS
-   ========================================================== */
-
-// 📄 Exámenes anteriores
-if (typeof window.renderExamenesAnteriores !== "function") {
-  window.renderExamenesAnteriores = function() {
-    alert("📄 Módulo de exámenes anteriores no está cargado o tiene un error.");
-  };
-}
-
-// 🧠 Modo examen
-if (typeof window.renderExamenSetup !== "function") {
-  window.renderExamenSetup = function() {
-    alert("🧠 Módulo de modo examen no está disponible todavía.");
-  };
-}
-
-// 📊 Estadísticas globales
-if (typeof window.renderStatsGlobal !== "function") {
-  window.renderStatsGlobal = function() {
-    alert("📊 Módulo de estadísticas generales no está cargado o tiene un error.");
-  };
 }
