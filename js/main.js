@@ -1,5 +1,6 @@
 /* ==========================================================
    🧩 MAIN.JS – NAVEGACIÓN PRINCIPAL Y PRÁCTICA POR MATERIA
+   (Adaptado al nuevo sistema unificado MEbank)
    ========================================================== */
 
 /* ---------- INICIO AUTOMÁTICO ---------- */
@@ -27,22 +28,24 @@ function renderHome() {
 
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
-  const subs = subjectsFromBank().sort((a, b) =>
+  // 🔹 Ahora usamos directamente las materias desde MEbank
+  const subs = (MEbank.subjects || []).sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, '').localeCompare(
       b.name.replace(/[^\p{L}\p{N} ]/gu, ''), 'es', { sensitivity: 'base' }
     )
   );
 
-  const list = subs.map(s => `
-    <button class="btn-main" 
-            style="background:#fff;color:var(--text);border:1px solid var(--line);text-align:left;max-width:500px;"
-            onclick="startPractica('${s.slug}')">
-      ${s.name}
-      <span style="float:right;color:var(--muted);font-size:13px;">
-        ${(BANK.questions || []).filter(q => q.materia === s.slug).length} preg.
-      </span>
-    </button>
-  `).join("");
+  // 🔹 Construimos la lista de materias con sus totales reales
+  const list = subs.map(s => {
+    const count = (MEbank.byMateria?.[s.slug] || []).length;
+    return `
+      <button class="btn-main" 
+              style="background:#fff;color:var(--text);border:1px solid var(--line);text-align:left;max-width:500px;"
+              onclick="startPractica('${s.slug}')">
+        ${s.name}
+        <span style="float:right;color:var(--muted);font-size:13px;">${count} preg.</span>
+      </button>`;
+  }).join("");
 
   app.innerHTML = `
     <div class="card" style="text-align:center">
@@ -61,9 +64,8 @@ function renderSubjects() {
 let CURRENT_SESSION = { list: [], i: 0, materia: "" };
 
 function startPractica(slug) {
-  const listAll = (BANK.questions || [])
-    .filter(q => q.materia === slug)
-    .sort((a, b) => a.id.localeCompare(b.id));
+  // 🔹 Ahora las preguntas se obtienen desde MEbank.byMateria
+  const listAll = (MEbank.byMateria?.[slug] || []).sort((a, b) => a.id.localeCompare(b.id));
 
   if (!listAll.length) {
     app.innerHTML = `<div class="card">No hay preguntas en <b>${slug}</b>.</div>`;
@@ -78,7 +80,7 @@ function startPractica(slug) {
 }
 
 function startRepaso(slug) {
-  const listAll = (BANK.questions || []).filter(q => q.materia === slug);
+  const listAll = (MEbank.byMateria?.[slug] || []);
   const prog = PROG[slug] || {};
   const list = listAll.filter(q => prog[q.id]?.status === 'bad');
 
@@ -182,13 +184,9 @@ function answer(i) {
   const slug = CURRENT_SESSION.materia || 'general';
   PROG[slug] = PROG[slug] || {};
 
-  // Evita sobrescribir si ya respondió
   if (PROG[slug][q.id]) return;
 
-  // Guarda respuesta y estado
   PROG[slug][q.id] = { chosen: i, status: (i === q.correcta ? 'ok' : 'bad') };
-
-  // Guarda índice y fecha del último intento
   PROG[slug]._lastIndex = CURRENT_SESSION.i;
   PROG[slug]._lastDate = Date.now();
 
@@ -199,6 +197,6 @@ function answer(i) {
 /* ---------- RECARGA MANUAL DE BANCOS ---------- */
 async function manualBankReload() {
   alert("⏳ Actualizando bancos...");
-  await loadAllBanks(); // definida en bank.js
+  await loadAllBanks(); // definida en core-bank.js
   alert("✅ Bancos actualizados correctamente");
 }
