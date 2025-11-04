@@ -74,9 +74,6 @@ async function loadAllBanks() {
 
   const loader = showLoader("⏳ Cargando bancos...");
 
-  const normalizeMateria = str =>
-    str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
-
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
       const ruta = `../bancos/${materia}/${materia}${i}.json`;
@@ -85,18 +82,15 @@ async function loadAllBanks() {
         if (!resp.ok) continue;
         const data = await resp.json();
 
-        data.forEach(q => {
-          if (q.materia) q.materia = normalizeMateria(q.materia);
-        });
-
+        // ✅ No tocar el campo materia original
         const nuevas = data.filter(q => !existingIds.has(q.id));
         if (nuevas.length > 0) {
           nuevas.forEach(q => existingIds.add(q.id));
           BANK.questions.push(...nuevas);
           totalNuevas += nuevas.length;
-          console.log(`📘 Cargado ${ruta} (${nuevas.length} nuevas)`);
+          console.log(`📘 Cargado ${ruta} (${nuevas.length} nuevas en ${materia})`);
         }
-      } catch {
+      } catch (err) {
         console.warn(`⚠️ No se pudo cargar ${ruta}`);
       }
     }
@@ -105,7 +99,6 @@ async function loadAllBanks() {
   hideLoader(loader, totalNuevas);
   if (totalNuevas > 0) saveAll();
 }
-
 /* ---------- Indicadores visuales ---------- */
 function showLoader(text) {
   const el = document.createElement("div");
