@@ -1,31 +1,45 @@
-<!-- stats.js -->
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Compatible con MEbank (con reintento)
+   📊 ESTADÍSTICAS GLOBALES – Compatible con MEbank (versión final)
    ========================================================== */
 
 (function () {
-  function pintarStats() {
+  // 🔹 Dibuja la tabla principal (global o por materia)
+  function pintarStats(filtroMateria = null) {
     const totalPregs = (MEbank?.questions || []).length;
 
-    // Si todavía no hay preguntas cargadas, mostramos un mensajito y salimos
+    // Si todavía no hay preguntas cargadas
     if (!totalPregs) {
       app.innerHTML = `
         <div class="card fade" style="text-align:center;">
           <h2>📊 Estadísticas</h2>
-          <p>Aún no hay datos. Intentá nuevamente en unos segundos.</p>
+          <p>Aún no hay datos cargados. Intentá nuevamente en unos segundos.</p>
           <button class="btn-main" onclick="renderHome()">🏠 Volver</button>
         </div>`;
       return;
     }
+
+    // 🧮 Si se pidió filtrar por materia (slug)
+    const filtroNorm = filtroMateria
+      ? filtroMateria.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase()
+      : null;
+
+    const preguntasFiltradas = filtroNorm
+      ? MEbank.questions.filter(q =>
+          q.materia &&
+          q.materia.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() === filtroNorm
+        )
+      : MEbank.questions;
+
+    const totalPregsUsadas = preguntasFiltradas.length;
 
     // Total respondidas (ignora claves internas _lastIndex / _lastDate)
     const totalRespondidas = Object.values(PROG || {})
       .flatMap(obj => Object.keys(obj || {}))
       .filter(k => !k.startsWith("_")).length;
 
-    // Agregación por materia (usa el mismo identificador que usamos en práctica: slug normalizado)
+    // Agregación por materia o global
     const porMateria = {};
-    (MEbank.questions || []).forEach(q => {
+    preguntasFiltradas.forEach(q => {
       const mat = q.materia || "general";
       if (!porMateria[mat]) porMateria[mat] = { ok: 0, bad: 0, total: 0 };
       porMateria[mat].total++;
@@ -51,10 +65,11 @@
           </tr>`;
       }).join("");
 
+    // 🖼 Render final
     app.innerHTML = `
       <div class="card fade" style="text-align:center;max-width:800px;margin:auto;">
-        <h2>📊 Estadísticas generales</h2>
-        <p>Preguntas totales: <b>${totalPregs}</b></p>
+        <h2>📊 ${filtroMateria ? "Estadísticas de " + filtroMateria.toUpperCase() : "Estadísticas generales"}</h2>
+        <p>Preguntas totales: <b>${totalPregsUsadas}</b></p>
         <p>Preguntas respondidas: <b>${totalRespondidas}</b></p>
 
         <table class="stats-table" style="width:100%;margin-top:15px;border-collapse:collapse;">
@@ -70,25 +85,37 @@
           <tbody>${filas}</tbody>
         </table>
 
-        <div style="margin-top:20px;">
-          <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
+        <div style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+          ${filtroMateria ? 
+            `<button class="btn-main" onclick="renderSubjects()">⬅️ Volver a materias</button>` :
+            `<button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>`}
         </div>
       </div>
     `;
   }
 
-  // Función pública con reintento suave (por si MEbank todavía se está cargando)
-  function renderStatsGlobal() {
-    // Si todavía no hay banco cargado, esperamos un toque y reintenta una vez
-    if (!MEbank || !Array.isArray(MEbank.questions)) {
+  // 🔹 Función pública con reintento (por si MEbank todavía se carga)
+  function renderStatsGlobal(filtroMateria = null) {
+    if (!MEbank || !Array.isArray(MEbank.questions) || !MEbank.questions.length) {
       setTimeout(() => {
-        try { pintarStats(); } catch { /* noop */ }
-      }, 400);
+        try {
+          renderStatsGlobal(filtroMateria);
+        } catch {
+          app.innerHTML = `
+            <div class="card fade" style="text-align:center;">
+              <h2>📊 Estadísticas</h2>
+              <p>No se pudieron cargar los datos. Intentá nuevamente.</p>
+              <button class="btn-main" onclick="renderHome()">🏠 Volver</button>
+            </div>`;
+        }
+      }, 500);
       return;
     }
+
     try {
-      pintarStats();
-    } catch {
+      pintarStats(filtroMateria);
+    } catch (err) {
+      console.error("Error al generar estadísticas:", err);
       app.innerHTML = `
         <div class="card fade" style="text-align:center;">
           <h2>📊 Estadísticas</h2>
@@ -98,6 +125,6 @@
     }
   }
 
-  // 🔹 Export explícito para que main.js encuentre la función
+  // 🔹 Export global
   window.renderStatsGlobal = renderStatsGlobal;
 })();
