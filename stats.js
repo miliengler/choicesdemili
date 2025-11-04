@@ -1,5 +1,3 @@
-Stats
-
 /* ---------- ESTADÍSTICAS GLOBALES ---------- */
 function renderStatsGlobal(){
   const subs = subjectsFromBank();
