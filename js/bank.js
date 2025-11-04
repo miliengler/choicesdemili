@@ -1,12 +1,12 @@
+
 /* ==========================================================
-   💾 CORE-BANK.JS – Banco de preguntas unificado (MEbank)
+   💾 BANCO DE PREGUNTAS – Persistencia, carga y actualización
    ========================================================== */
 
-const LS_BANK = "mebank_v7_unificado";
-const LS_PROGRESS = "mebank_prog_v7_unificado";
+const LS_BANK = "mebank_bank_v6_full";
+const LS_PROGRESS = "mebank_prog_v6_full";
 
-/* ---------- Estado global ---------- */
-let MEbank = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
+let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
     { slug: "neumonologia", name: "🫁 Neumonología" },
     { slug: "psiquiatria", name: "💭 Psiquiatría" },
@@ -37,51 +37,51 @@ let MEbank = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     { slug: "imagenes", name: "🩻 Diagnóstico por Imágenes" },
     { slug: "otras", name: "📚 Otras" }
   ],
-  questions: [],
-  byMateria: {},
-  byExamen: {}
+  questions: []
 };
 
-/* ---------- Progreso ---------- */
-let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
-
-/* ---------- Normalizador universal ---------- */
-function normalize(str) {
-  return str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
-}
+const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
 
 /* ---------- Guardado ---------- */
 function saveAll() {
-  localStorage.setItem(LS_BANK, JSON.stringify(MEbank));
+  localStorage.setItem(LS_BANK, JSON.stringify(BANK));
   localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG));
 }
 
-/* ---------- Índices dinámicos ---------- */
-function rebuildIndexes() {
-  MEbank.byMateria = {};
-  MEbank.byExamen = {};
+/* ---------- Utilidades ---------- */
+function subjectsFromBank() {
+  const normalize = str =>
+    str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
 
-  (MEbank.questions || []).forEach(q => {
-    if (!q || !q.id) return;
+  const known = new Map((BANK.subjects || []).map(s => [normalize(s.slug), s]));
 
-    const mKey = normalize(q.materia);
-    const eKey = normalize(q.examen || "oculto");
-
-    if (!MEbank.byMateria[mKey]) MEbank.byMateria[mKey] = [];
-    if (!MEbank.byExamen[eKey]) MEbank.byExamen[eKey] = [];
-
-    MEbank.byMateria[mKey].push(q);
-    MEbank.byExamen[eKey].push(q);
+  (BANK.questions || []).forEach(q => {
+    if (q && q.materia) {
+      const slug = normalize(q.materia);
+      if (!known.has(slug)) known.set(slug, { slug, name: q.materia });
+    }
   });
+
+  return Array.from(known.values()).sort((a, b) =>
+    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+  );
 }
 
-/* ---------- Carga de bancos ---------- */
+/* ---------- Carga automática de bancos (versión sincronizada) ---------- */
 async function loadAllBanks() {
-  const materias = MEbank.subjects.map(s => s.slug);
-  const existingIds = new Set(MEbank.questions.map(q => q.id));
+  const materias = BANK.subjects.map(s => s.slug);
+  const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
 
   const loader = showLoader("⏳ Cargando bancos...");
+
+  const normalizarMateria = (nombre) => {
+    if (!nombre) return "";
+    const limpio = nombre.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim();
+    // Empareja con los slugs existentes
+    const match = BANK.subjects.find(s => limpio === s.slug);
+    return match ? s.slug : limpio;
+  };
 
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
@@ -91,16 +91,15 @@ async function loadAllBanks() {
         if (!resp.ok) continue;
         const data = await resp.json();
 
+        // 🩺 Normaliza campo materia antes de guardar
         data.forEach(q => {
-          if (!q || !q.id) return;
-          q.materia = normalize(q.materia || materia);
-          q.examen = q.examen || "oculto"; // 📄 Si no tiene examen, no se muestra en “Exámenes anteriores”
+          if (q.materia) q.materia = normalizarMateria(q.materia);
         });
 
         const nuevas = data.filter(q => !existingIds.has(q.id));
         if (nuevas.length > 0) {
           nuevas.forEach(q => existingIds.add(q.id));
-          MEbank.questions.push(...nuevas);
+          BANK.questions.push(...nuevas);
           totalNuevas += nuevas.length;
           console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
         }
@@ -110,11 +109,9 @@ async function loadAllBanks() {
     }
   }
 
-  rebuildIndexes();
   hideLoader(loader, totalNuevas);
   if (totalNuevas > 0) saveAll();
 }
-
 /* ---------- Indicadores visuales ---------- */
 function showLoader(text) {
   const el = document.createElement("div");
@@ -139,21 +136,19 @@ function hideLoader(el, total) {
 
 /* ---------- Carga inicial ---------- */
 window.addEventListener("DOMContentLoaded", async () => {
-  if (!(MEbank.questions && MEbank.questions.length)) {
+  if (!(BANK.questions && BANK.questions.length)) {
     await loadAllBanks();
-  } else {
-    rebuildIndexes();
   }
 });
 
-/* ---------- 🔄 Recarga completa ---------- */
+/* ---------- 🔄 Forzar recarga completa del banco ---------- */
 async function forceReloadBank() {
   if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
 
   localStorage.removeItem(LS_BANK);
   localStorage.removeItem(LS_PROGRESS);
 
-  MEbank = { subjects: MEbank.subjects, questions: [], byMateria: {}, byExamen: {} };
+  BANK = { subjects: BANK.subjects, questions: [] };
   PROG = {};
 
   alert("♻️ Banco borrado. Ahora se recargará completo...");
@@ -161,33 +156,6 @@ async function forceReloadBank() {
   await loadAllBanks();
   saveAll();
 
-  alert(`✅ Banco recargado con ${MEbank.questions.length} preguntas`);
+  alert(`✅ Banco recargado con ${BANK.questions.length} preguntas`);
   renderHome();
 }
-/* ==========================================================
-   🚀 ARRANQUE VISUAL AUTOMÁTICO
-   ========================================================== */
-window.addEventListener("load", () => {
-  const appEl = document.getElementById("app");
-
-  if (appEl) {
-    window.app = appEl;
-
-    if (typeof renderHome === "function") {
-      renderHome();
-      console.log("✅ Interfaz principal iniciada correctamente.");
-    } else {
-      console.warn("⚠️ renderHome no está definido todavía. Intentando de nuevo en 300 ms...");
-      setTimeout(() => {
-        if (typeof renderHome === "function") {
-          renderHome();
-          console.log("✅ Interfaz principal iniciada correctamente (reintento).");
-        } else {
-          console.error("❌ No se pudo iniciar la interfaz principal: renderHome no existe.");
-        }
-      }, 300);
-    }
-  } else {
-    console.error("❌ No se encontró el elemento #app en el DOM.");
-  }
-});
