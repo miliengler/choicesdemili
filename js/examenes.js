@@ -117,3 +117,4 @@ function showExamStats(slug) {
 window.addEventListener("DOMContentLoaded", () => {
   if (location.hash === "#examenes") renderExamenesAnteriores();
 });
+window.renderExamenesAnteriores = renderExamenesAnteriores;
