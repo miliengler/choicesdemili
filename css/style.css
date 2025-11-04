@@ -87,17 +87,6 @@ button:hover { transform: translateY(-2px); }
 }
 .btn-main:hover { background: var(--brand-dark); }
 
-/* ---------- Variante azul oscuro ---------- */
-.btn-main.btn-blue {
-  background: #1e40af !important;
-  border-color: #1e3a8a !important;
-  color: #fff !important;
-  transition: background 0.25s ease;
-}
-.btn-main.btn-blue:hover {
-  background: #1e3a8a !important;
-}
-
 /* ---------- Variante gris ---------- */
 .btn-main.btn-grey {
   background: #475569;
@@ -113,9 +102,7 @@ button:hover { transform: translateY(-2px); }
   cursor: pointer;
   transition: all 0.2s ease;
 }
-.btn-small:hover {
-  background: #f1f5f9;
-}
+.btn-small:hover { background: #f1f5f9; }
 
 /* ==========================================================
    🧩 TARJETAS Y TEXTO
@@ -130,139 +117,6 @@ button:hover { transform: translateY(-2px); }
 
 .small { font-size: 13px; color: var(--muted); }
 
-.divider {
-  width: 60%;
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid var(--line);
-}
-
-/* ==========================================================
-   🌓 BOTÓN DE MODO OSCURO (si se activa en el futuro)
-   ========================================================== */
-.theme-toggle {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 100;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--brand);
-  color: #fff;
-  border: 1px solid var(--brand);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.theme-toggle:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-}
-body.dark .theme-toggle {
-  background: #facc15;
-  color: #000;
-  border-color: #facc15;
-}
-body.dark .theme-toggle:hover { background: #fde047; }
-
-/* ==========================================================
-   🔗 LINKS CLICKEABLES
-   ========================================================== */
-.link {
-  color: var(--brand-dark);
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: 500;
-  transition: color .2s;
-}
-.link:hover { color: var(--brand); }
-
-/* ==========================================================
-   🧱 APP LAYOUT (sidebar, examen, choice)
-   ========================================================== */
-#app.with-sidebar {
-  padding-right: 240px;
-  transition: padding-right 0.3s ease;
-}
-#app.fullwidth {
-  padding-right: 0;
-  transition: padding-right 0.3s ease;
-}
-
-/* ==========================================================
-   🎨 PREGUNTAS Y LAYOUT
-   ========================================================== */
-.q-layout {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  padding-right: 240px;
-  transition: padding-right 0.3s ease;
-  animation: fadeIn 0.3s ease;
-  box-sizing: border-box;
-}
-@media (max-width: 900px) {
-  .q-layout {
-    flex-direction: column;
-    padding-right: 0;
-    gap: 16px;
-  }
-}
-.q-card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 24px 28px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  max-width: 750px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.q-card .enunciado {
-  font-size: 18px;
-  margin: 10px 0;
-}
-.q-card .options label {
-  display: block;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin-top: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.q-card .options label:hover { background: #f1f5f9; }
-.q-card .options label.correct {
-  background: #dcfce7;
-  border-color: var(--accent);
-}
-.q-card .options label.wrong {
-  background: #fee2e2;
-  border-color: var(--danger);
-}
-.q-card .explain {
-  background: #f8fafc;
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 14px;
-}
-.nav-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
-}
-
 /* ==========================================================
    ✨ ANIMACIONES
    ========================================================== */
@@ -273,53 +127,12 @@ body.dark .theme-toggle:hover { background: #fde047; }
 .fade { animation: fadeIn 0.3s ease; }
 
 /* ==========================================================
-   🌙 MODO OSCURO
+   🧩 CHOICE POR MATERIA – Estilo limpio y alineado
    ========================================================== */
-body.dark {
-  --bg: #0f172a;
-  --text: #f8fafc;
-  --muted: #94a3b8;
-  --soft: #1e293b;
-  --line: #334155;
-  --brand: #3b82f6;
-  --brand-dark: #1d4ed8;
-  --card: #1e293b;
-}
-body.dark .card,
-body.dark .q-card {
-  background: var(--card);
-  color: var(--text);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-}
-body.dark button { border-color: var(--line); }
-body.dark .btn-main {
-  background: var(--brand);
-  border-color: var(--brand-dark);
-}
-body.dark .btn-main:hover {
-  background: var(--brand-dark);
-}
-body.dark .q-card .options label {
-  background: #1e293b;
-  border-color: var(--line);
-}
-body.dark .q-card .options label:hover {
-  background: #334155;
-}
-body.dark .q-card .explain {
-  background: #0f172a;
-  color: #cbd5e1;
-}
-
-/* ==========================================================
-   🧩 CHOICE POR MATERIA – Estilo clásico ajustado
-   ========================================================== */
-
 .choice-container {
   max-width: 800px;
   margin: 0 auto;
   background: transparent;
-  border-radius: 0;
   padding: 0;
   box-shadow: none;
 }
@@ -328,7 +141,6 @@ body.dark .q-card .explain {
   display: flex;
   align-items: center;
   gap: 8px;
-  justify-content: flex-start;
   margin-bottom: 4px;
 }
 
@@ -339,40 +151,31 @@ body.dark .q-card .explain {
   font-weight: 700;
 }
 
-.choice-header-global span {
-  font-size: 20px;
-}
-
 .choice-subtitle {
   margin: 4px 0 18px 0;
   font-size: 14px;
   color: var(--muted);
-  text-align: left;
 }
 
 /* ---------- Materias ---------- */
 .choice-item {
   border-bottom: 1px solid var(--line);
-  background: transparent;
   padding: 10px 6px;
   transition: background 0.15s ease;
 }
-.choice-item:hover {
-  background: #f8fafc;
-}
+.choice-item:hover { background: #f8fafc; }
 
 .choice-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 2px;
   cursor: pointer;
+  padding: 6px 2px;
 }
 
 .choice-title {
   font-weight: 600;
   font-size: 16px;
-  color: var(--text);
 }
 
 .choice-count {
@@ -382,7 +185,12 @@ body.dark .q-card .explain {
 
 /* ---------- Panel desplegable ---------- */
 .choice-body {
-  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  background: #fff;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   margin: 6px 0 12px;
@@ -396,7 +204,7 @@ body.dark .q-card .explain {
 }
 
 .choice-body input {
-  width: 60px;
+  width: 70px;
   padding: 4px 6px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
@@ -410,93 +218,26 @@ body.dark .q-card .explain {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 10px;
-  justify-content: flex-start;
+  margin-top: 0;
 }
 
-.choice-buttons button {
-  font-size: 13px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid var(--line);
-  background: #f8fafc;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.1s;
-}
-.choice-buttons button:hover {
-  background: #e2e8f0;
-  transform: translateY(-1px);
-}
-
-.btn-practica {
-  background: #2563eb;
-  color: #fff;
-  border-color: #2563eb;
-}
-.btn-practica:hover {
-  background: #1d4ed8;
-}
-
-.btn-repaso {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
-  color: #0f172a;
-}
-
-.btn-notas {
-  background: #f8fafc;
-  border-color: #e2e8f0;
-}
-.btn-notas:hover {
-  background: #e2e8f0;
-}
-.choice-body {
-  background: #fff !important;
-}
-/* ==========================================================
-   🎨 Unificación de botones de práctica / repaso / notas
-   ========================================================== */
 .choice-buttons button,
 .btn-practica,
 .btn-repaso,
 .btn-notas {
-  background: #f1f5f9 !important; /* gris claro */
-  color: #0f172a !important;      /* texto negro */
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
   border: 1px solid #cbd5e1 !important;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease, transform 0.1s;
 }
 
 .choice-buttons button:hover,
 .btn-practica:hover,
 .btn-repaso:hover,
 .btn-notas:hover {
-  background: #e2e8f0 !important; /* gris un poco más oscuro al pasar */
-}
-/* ==========================================================
-   🧩 Alineación horizontal: "Desde #" + botones
-   ========================================================== */
-.choice-body {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-}
-
-/* Hacemos que el input y label mantengan proporción */
-.choice-body label {
-  margin-right: 4px;
-}
-
-.choice-body input {
-  margin-right: 10px;
-  width: 70px;
-  text-align: center;
-}
-
-/* Ajustamos el contenedor de los botones para que no baje */
-.choice-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0;
+  background: #e2e8f0 !important;
+  transform: translateY(-1px);
 }
