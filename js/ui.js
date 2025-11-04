@@ -1,5 +1,6 @@
 /* ==========================================================
    🏠 INTERFAZ PRINCIPAL – Home, materias y práctica
+   (Adaptado al sistema unificado MEbank)
    ========================================================== */
 
 /* ---------- HOME ---------- */
@@ -23,20 +24,21 @@ const normalize = str =>
 
 /* ---------- LISTA DE MATERIAS ---------- */
 function renderSubjects() {
-  const subs = subjectsFromBank().sort((a, b) =>
+  // 🔹 Materias desde MEbank
+  const subs = (MEbank.subjects || []).sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "").localeCompare(
-      b.name.replace(/[^\p{L}\p{N} ]/gu, ""),
-      "es",
-      { sensitivity: "base" }
+      b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" }
     )
   );
 
-  const resumen = BANK.questions.reduce((acc, q) => {
+  // 🔹 Contador de preguntas por materia
+  const resumen = (MEbank.questions || []).reduce((acc, q) => {
     const key = normalize(q.materia);
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
 
+  // 🔹 Render de materias
   const list = subs.map(s => {
     const key = normalize(s.slug);
     const count = resumen[key] || 0;
@@ -114,8 +116,8 @@ function showStats(slug) {
 let CURRENT = { list: [], i: 0, materia: "" };
 
 function startPractica(slug, startIndex = 0) {
-  const listAll = (BANK.questions || [])
-    .filter(q => normalize(q.materia) === normalize(slug))
+  // 🔹 Ahora usamos directamente MEbank.byMateria
+  const listAll = (MEbank.byMateria?.[slug] || [])
     .sort((a, b) => a.id.localeCompare(b.id));
 
   if (!listAll.length) {
@@ -131,8 +133,7 @@ function startPractica(slug, startIndex = 0) {
 }
 
 function startRepaso(slug) {
-  const listAll = (BANK.questions || [])
-    .filter(q => normalize(q.materia) === normalize(slug))
+  const listAll = (MEbank.byMateria?.[slug] || [])
     .sort((a, b) => a.id.localeCompare(b.id));
 
   const prog = PROG[slug] || {};
