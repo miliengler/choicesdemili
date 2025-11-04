@@ -3,8 +3,8 @@
    Unificado con MEbank y layout moderno
    ========================================================== */
 
-/* ---------- Normalizador local ---------- */
-const normalize = str =>
+/* ---------- Normalizador local (renombrado para evitar conflicto global) ---------- */
+const normalizeEx = str =>
   str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
 
 /* ---------- Render del configurador ---------- */
@@ -16,13 +16,13 @@ function renderExamenSetup() {
   );
 
   const resumen = (MEbank.questions || []).reduce((acc, q) => {
-    const key = normalize(q.materia);
+    const key = normalizeEx(q.materia);
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
 
   const counts = subs.map(s => {
-    const key = normalize(s.slug);
+    const key = normalizeEx(s.slug);
     const total = resumen[key] || 0;
     return { ...s, total };
   });
@@ -89,8 +89,8 @@ function startExamen() {
   const num = Math.max(1, parseInt(numEl?.value || "1", 10));
   const useTimer = document.getElementById("chkTimer")?.checked;
 
-  const selectedNorm = selected.map(s => normalize(s));
-  let pool = (MEbank.questions || []).filter(q => selectedNorm.includes(normalize(q.materia)));
+  const selectedNorm = selected.map(s => normalizeEx(s));
+  let pool = (MEbank.questions || []).filter(q => selectedNorm.includes(normalizeEx(q.materia)));
 
   if (pool.length === 0) {
     alert("Seleccioná al menos una materia con preguntas.");
@@ -115,9 +115,6 @@ function renderExamenPregunta() {
     renderExamenFin();
     return;
   }
-
-  // 🕒 Cronómetro flotante eliminado (ahora usamos solo el minimalista de timer.js)
-  // TODO: en fase visual, mover el cronómetro inferior a posición fija bajo el contenedor principal
 
   const opts = q.opciones.map((t, i) => `
     <label class="option" onclick="answerExamen(${i})">
@@ -169,9 +166,6 @@ function answerExamen(i) {
     else if (idx === i) opt.classList.add("wrong");
     opt.style.pointerEvents = "none";
   });
-
-  // ⏸️ Autoavance desactivado: ahora el usuario debe avanzar manualmente
-  // TODO: si se activa modo “examen cronometrado oficial”, podría volver a activarse
 }
 
 /* ---------- Navegación ---------- */
@@ -215,4 +209,6 @@ function renderExamenFin() {
     </div>
   `;
 }
+
+/* ---------- Export global ---------- */
 window.renderExamenSetup = renderExamenSetup;
