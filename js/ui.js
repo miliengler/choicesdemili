@@ -13,6 +13,7 @@ function renderHome() {
       <button class="btn-main btn-blue" onclick="alert('📔 Mis notas próximamente')">📔 Mis notas</button>
       <hr class="divider">
       <button class="btn-small btn-grey" onclick="manualBankReload()">🔄 Actualizar bancos</button>
+      <button class="btn-small btn-grey" onclick="forceReloadBank()">♻️ Recarga completa</button>
     </div>
   `;
 }
