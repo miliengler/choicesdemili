@@ -1,7 +1,8 @@
-// 🧩 ORDEN DINÁMICO – FIX estados "ok"/"bad" y export a window
+// 🧩 ORDEN DINÁMICO – FIX estados "ok"/"bad" y soporte PROG mixto (slug / name / normalizado)
 
 let currentChoiceSort = localStorage.getItem("choiceSort") || "az";
 
+/* ---------- Render principal ---------- */
 function renderChoicePorMateria() {
   let subs = subjectsFromBank();
   subs = applyChoiceSort(subs);
@@ -12,20 +13,24 @@ function renderChoicePorMateria() {
     return acc;
   }, {});
 
-  const list = subs.map(s => {
+  const list = subs.map((s, idx) => {
     const key = normalize(s.slug);
     const total = resumen[key] || 0;
 
-    const prog = PROG[key] || {};
+    // Soporta cualquier forma guardada de progreso
+    const prog = PROG[key] || PROG[s.slug] || PROG[s.name] || {};
     const answered = Object.entries(prog).filter(([k]) => !k.startsWith("_"));
-    const correctas = answered.filter(([, data]) => data?.status === "ok").length; // <- FIX
+    const correctas = answered.filter(([, data]) => data?.status === "ok").length;
     const porcentaje = total ? Math.round((correctas / total) * 100) : 0;
 
     const progressCircle = renderProgressCircle(porcentaje);
     const lastIndex = answered.length ? answered.length : null;
 
+    // 🔹 Efecto visual: resaltar la materia con más progreso
+    const topMateria = idx === 0 && currentChoiceSort === "progress" ? "box-shadow:0 0 0 3px #86efac80;" : "";
+
     return `
-      <div class="choice-item" onclick="toggleChoiceMateria('${s.slug}', ${total})">
+      <div class="choice-item" style="${topMateria}" onclick="toggleChoiceMateria('${s.slug}', ${total})">
         <div class="choice-top">
           <span class="choice-title">${s.name}</span>
           ${progressCircle}
@@ -66,10 +71,14 @@ function renderChoicePorMateria() {
     </div>`;
 }
 
+/* ---------- Aplicar orden ---------- */
 function applyChoiceSort(subs) {
   if (currentChoiceSort === "az") {
-    return subs.sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
+    return subs.sort((a, b) =>
+      a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+    );
   }
+
   if (currentChoiceSort === "progress") {
     return subs.sort((a, b) => {
       const keyA = normalize(a.slug);
@@ -78,22 +87,27 @@ function applyChoiceSort(subs) {
       const totalA = BANK.questions.filter(q => normalize(q.materia) === keyA).length;
       const totalB = BANK.questions.filter(q => normalize(q.materia) === keyB).length;
 
-      const progA = PROG[keyA] || {};
-      const progB = PROG[keyB] || {};
+      // 🔹 Buscar progreso tanto por clave normalizada, slug o nombre
+      const progA = PROG[keyA] || PROG[a.slug] || PROG[a.name] || {};
+      const progB = PROG[keyB] || PROG[b.slug] || PROG[b.name] || {};
 
-      const okA = Object.values(progA).filter(p => p?.status === "ok").length;   // <- FIX
-      const okB = Object.values(progB).filter(p => p?.status === "ok").length;   // <- FIX
+      const okA = Object.values(progA).filter(p => p?.status === "ok").length;
+      const okB = Object.values(progB).filter(p => p?.status === "ok").length;
 
       const pctA = totalA ? okA / totalA : 0;
       const pctB = totalB ? okB / totalB : 0;
 
-      if (pctB === pctA) return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+      if (pctB === pctA)
+        return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+
       return pctB - pctA; // mayor progreso primero
     });
   }
+
   return subs;
 }
 
+/* ---------- Cambiar modo de orden ---------- */
 function changeChoiceSort(mode) {
   currentChoiceSort = mode;
   localStorage.setItem("choiceSort", mode);
@@ -106,6 +120,6 @@ function changeChoiceSort(mode) {
   }
 }
 
-// 👇 Aseguramos que los handlers inline existan en scope global
+/* ---------- Export global ---------- */
 window.renderChoicePorMateria = renderChoicePorMateria;
 window.changeChoiceSort = changeChoiceSort;
