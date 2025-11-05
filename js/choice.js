@@ -36,14 +36,31 @@ function renderChoicePorMateria() {
 
   // aplicar orden actual
   if (currentChoiceSort === "az") {
-    subs = subs.slice().sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
+    // 🧩 nueva función que ignora emojis y caracteres no alfabéticos
+    const cleanName = (str) =>
+      str
+        ? str
+            .normalize("NFD")
+            .replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ ]/g, "") // quita emojis, signos y símbolos
+            .trim()
+            .toLowerCase()
+        : "";
+
+    subs = subs
+      .slice()
+      .sort((a, b) =>
+        cleanName(a.name).localeCompare(cleanName(b.name), "es", {
+          sensitivity: "base",
+        })
+      );
   } else if (currentChoiceSort === "progress") {
     subs = subs.slice().sort((a, b) => {
       const ka = _normalizeChoice(a.slug);
       const kb = _normalizeChoice(b.slug);
       const pa = pctBySlug[ka] || 0;
       const pb = pctBySlug[kb] || 0;
-      if (pb === pa) return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
+      if (pb === pa)
+        return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
       return pb - pa; // mayor progreso primero
     });
   }
