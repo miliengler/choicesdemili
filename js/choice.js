@@ -1,13 +1,9 @@
-/* ==========================================================
-   🧩 ORDEN DINÁMICO EN CHOICE POR MATERIA – versión corregida
-   ========================================================== */
+// 🧩 ORDEN DINÁMICO – FIX estados "ok"/"bad" y export a window
 
 let currentChoiceSort = localStorage.getItem("choiceSort") || "az";
 
 function renderChoicePorMateria() {
   let subs = subjectsFromBank();
-
-  // 🔢 Ordenar según modo actual
   subs = applyChoiceSort(subs);
 
   const resumen = BANK.questions.reduce((acc, q) => {
@@ -20,10 +16,9 @@ function renderChoicePorMateria() {
     const key = normalize(s.slug);
     const total = resumen[key] || 0;
 
-    // progreso guardado
     const prog = PROG[key] || {};
     const answered = Object.entries(prog).filter(([k]) => !k.startsWith("_"));
-    const correctas = answered.filter(([k, data]) => data?.status === "good").length;
+    const correctas = answered.filter(([, data]) => data?.status === "ok").length; // <- FIX
     const porcentaje = total ? Math.round((correctas / total) * 100) : 0;
 
     const progressCircle = renderProgressCircle(porcentaje);
@@ -50,8 +45,7 @@ function renderChoicePorMateria() {
             </div>
           </div>
         </div>
-      </div>
-    `;
+      </div>`;
   }).join("");
 
   app.innerHTML = `
@@ -69,18 +63,13 @@ function renderChoicePorMateria() {
       </div>
       <p class="choice-subtitle">Elegí una materia para comenzar tu práctica.</p>
       <div id="choice-list" class="animated-list">${list}</div>
-    </div>
-  `;
+    </div>`;
 }
 
-/* ---------- Ordenador auxiliar ---------- */
 function applyChoiceSort(subs) {
   if (currentChoiceSort === "az") {
-    return subs.sort((a, b) =>
-      a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-    );
+    return subs.sort((a, b) => a.name.localeCompare(b.name, "es", { sensitivity: "base" }));
   }
-
   if (currentChoiceSort === "progress") {
     return subs.sort((a, b) => {
       const keyA = normalize(a.slug);
@@ -92,36 +81,31 @@ function applyChoiceSort(subs) {
       const progA = PROG[keyA] || {};
       const progB = PROG[keyB] || {};
 
-      const goodA = Object.values(progA).filter(p => p?.status === "good").length;
-      const goodB = Object.values(progB).filter(p => p?.status === "good").length;
+      const okA = Object.values(progA).filter(p => p?.status === "ok").length;   // <- FIX
+      const okB = Object.values(progB).filter(p => p?.status === "ok").length;   // <- FIX
 
-      const pctA = totalA ? goodA / totalA : 0;
-      const pctB = totalB ? goodB / totalB : 0;
+      const pctA = totalA ? okA / totalA : 0;
+      const pctB = totalB ? okB / totalB : 0;
 
-      if (pctB === pctA)
-        return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
-
+      if (pctB === pctA) return a.name.localeCompare(b.name, "es", { sensitivity: "base" });
       return pctB - pctA; // mayor progreso primero
     });
   }
-
   return subs;
 }
 
-/* ---------- Cambio de orden ---------- */
 function changeChoiceSort(mode) {
   currentChoiceSort = mode;
   localStorage.setItem("choiceSort", mode);
-
   const listContainer = document.getElementById("choice-list");
-  if (!listContainer) {
+  if (listContainer) {
+    listContainer.classList.add("fade-out");
+    setTimeout(() => renderChoicePorMateria(), 250);
+  } else {
     renderChoicePorMateria();
-    return;
   }
-
-  // 🌀 Transición suave al reordenar
-  listContainer.classList.add("fade-out");
-  setTimeout(() => {
-    renderChoicePorMateria();
-  }, 250);
 }
+
+// 👇 Aseguramos que los handlers inline existan en scope global
+window.renderChoicePorMateria = renderChoicePorMateria;
+window.changeChoiceSort = changeChoiceSort;
