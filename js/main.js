@@ -5,8 +5,8 @@
 
 /* ---------- Inicio automático ---------- */
 document.addEventListener("DOMContentLoaded", () => {
+  // se inicializa solo el contenedor global (renderHome ya se llama desde index.html)
   window.app = document.getElementById("app");
-  renderHome();
 });
 
 /* ==========================================================
@@ -81,6 +81,7 @@ function renderNotas() {
    🔧 Función auxiliar para módulos no cargados
    ========================================================== */
 function mostrarModuloFaltante(titulo, archivo) {
+  console.warn(`⚠️ Módulo faltante: ${archivo}`);
   app.innerHTML = `
     <div class="card fade" style="text-align:center;">
       <h2>${titulo}</h2>
