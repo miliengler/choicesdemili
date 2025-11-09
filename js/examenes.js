@@ -3,31 +3,37 @@
    Mismo estilo y estructura que el módulo Choice por materia
    ========================================================== */
 
-// Estado global de orden (por año descendente)
 let currentExamSort = localStorage.getItem("examSort") || "desc";
 
 /* ---------- Render principal ---------- */
 function renderExamenesLista() {
-  // simulación: lista base (en el futuro puede venir de BANK)
-  const examenes = [
-    { slug: "examen_unico_2025", name: "Examen Único 2025", preguntas: 100 },
-    { slug: "examen_unico_2024", name: "Examen Único 2024", preguntas: 100 },
-    { slug: "examen_unico_2019", name: "Examen Único 2019", preguntas: 100 }
+  // lista base con conteo real desde BANK
+  const base = [
+    { slug: "examen_unico_2025", name: "Examen Único 2025" },
+    { slug: "examen_unico_2024", name: "Examen Único 2024" },
+    { slug: "examen_unico_2019", name: "Examen Único 2019" }
   ];
 
-  // Ordenar por año según configuración actual
+  const examenes = base.map(ex => ({
+    ...ex,
+    preguntas: (BANK.questions || []).filter(q =>
+      normalizeString(q.examen || q.examen_nombre || "") === normalizeString(ex.slug)
+    ).length
+  }));
+
+  // Ordenar por año
   examenes.sort((a, b) => {
     const ay = parseInt(a.name.match(/\d+/)?.[0] || "0");
     const by = parseInt(b.name.match(/\d+/)?.[0] || "0");
     return currentExamSort === "asc" ? ay - by : by - ay;
   });
 
-  // Construir lista visual
+  // Construir lista
   const list = examenes.map(ex => `
     <div class="choice-item" onclick="abrirExamen('${ex.slug}', ${ex.preguntas})">
       <div class="choice-top">
         <span class="choice-title">${ex.name}</span>
-        <span style="color:#64748b;font-size:13px;">${ex.preguntas} preguntas</span>
+        <span style="color:#64748b;font-size:13px;">${ex.preguntas || 0} preguntas</span>
       </div>
     </div>
   `).join("");
@@ -56,7 +62,6 @@ function renderExamenesLista() {
     </div>
   `;
 
-  // Listener del selector de orden
   const sel = document.getElementById("sort-exam");
   if (sel) {
     sel.onchange = (e) => {
@@ -69,19 +74,15 @@ function renderExamenesLista() {
 
 /* ---------- Abrir examen ---------- */
 function abrirExamen(slug, total) {
-  // Cargar las preguntas del examen correspondiente
-  const pool = (BANK.questions || []).filter(q => q.examen === slug);
+  const pool = (BANK.questions || []).filter(q =>
+    normalizeString(q.examen || q.examen_nombre || "") === normalizeString(slug)
+  );
+
   if (!pool.length) {
     alert("No se encontraron preguntas para este examen.");
+    console.warn(`⚠️ No hay preguntas para ${slug}`);
     return;
   }
-
-  CURRENT = {
-    list: pool,
-    i: 0,
-    materia: slug,
-    modo: "anteriores"
-  };
 
   iniciarResolucion({
     modo: "anteriores",
@@ -89,15 +90,15 @@ function abrirExamen(slug, total) {
     usarTimer: true,
     mostrarNotas: true,
     permitirRetroceso: true,
-    titulo: `🧾 ${slug.replace(/_/g, " ").toUpperCase()}`
+    titulo: `📄 ${slug.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}`
   });
 
-  // 🔹 Mostrar título del examen arriba del cronómetro
+  // Mostrar título del examen sobre el cronómetro
   setTimeout(() => {
     const timerEl = document.getElementById("exam-timer");
     if (timerEl) {
       const label = document.createElement("div");
-      label.textContent = slug.replace(/_/g, " ").toUpperCase();
+      label.textContent = slug.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
       label.style = `
         font-weight:600;
         font-size:13px;
