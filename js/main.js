@@ -37,13 +37,7 @@ function renderChoice() {
   if (typeof renderChoicePorMateria === "function") {
     renderChoicePorMateria();
   } else {
-    app.innerHTML = `
-      <div class="card fade" style="text-align:center;">
-        <h2>🧩 Choice por materia</h2>
-        <p>No se pudo cargar el módulo <b>choice.js</b>.</p>
-        <p class="small">Verificá que el archivo exista en la carpeta <code>js/</code>.</p>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
-      </div>`;
+    mostrarModuloFaltante("🧩 Choice por materia", "choice.js");
   }
 }
 
@@ -52,13 +46,16 @@ function renderExamenes() {
   if (typeof renderExamenesLista === "function") {
     renderExamenesLista();
   } else {
-    app.innerHTML = `
-      <div class="card fade" style="text-align:center;">
-        <h2>📄 Exámenes anteriores</h2>
-        <p>Este módulo aún no está disponible.</p>
-        <p class="small">Cuando se cargue <code>examenes.js</code>, este botón te llevará allí.</p>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
-      </div>`;
+    mostrarModuloFaltante("📄 Exámenes anteriores", "examenes.js");
+  }
+}
+
+// 🧠 Modo Examen – Creá el tuyo
+function renderExamenSetup() {
+  if (typeof renderExamenSetupMain === "function") {
+    renderExamenSetupMain();
+  } else {
+    mostrarModuloFaltante("🧠 Modo Examen", "examen_setup.js");
   }
 }
 
@@ -67,13 +64,7 @@ function renderStatsGlobal() {
   if (typeof renderStats === "function") {
     renderStats();
   } else {
-    app.innerHTML = `
-      <div class="card fade" style="text-align:center;">
-        <h2>📊 Estadísticas generales</h2>
-        <p>No se pudo cargar el módulo <b>stats.js</b>.</p>
-        <p class="small">Verificá que el archivo exista en la carpeta raíz.</p>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
-      </div>`;
+    mostrarModuloFaltante("📊 Estadísticas generales", "stats.js");
   }
 }
 
@@ -82,14 +73,22 @@ function renderNotas() {
   if (typeof renderNotasMain === "function") {
     renderNotasMain();
   } else {
-    app.innerHTML = `
-      <div class="card fade" style="text-align:center;">
-        <h2>📔 Mis notas</h2>
-        <p>El módulo de notas se encuentra en desarrollo.</p>
-        <p class="small">Cuando carguemos <code>notas.js</code>, este botón te llevará allí.</p>
-        <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
-      </div>`;
+    mostrarModuloFaltante("📔 Mis notas", "notas.js");
   }
+}
+
+/* ==========================================================
+   🔧 Función auxiliar para módulos no cargados
+   ========================================================== */
+function mostrarModuloFaltante(titulo, archivo) {
+  app.innerHTML = `
+    <div class="card fade" style="text-align:center;">
+      <h2>${titulo}</h2>
+      <p>El módulo aún no está disponible o no se pudo cargar.</p>
+      <p class="small">Verificá que el archivo <code>${archivo}</code> exista en la carpeta <code>js/</code>.</p>
+      <button class="btn-small" onclick="renderHome()">⬅️ Volver</button>
+    </div>
+  `;
 }
 
 /* ==========================================================
