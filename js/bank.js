@@ -1,5 +1,6 @@
 /* ==========================================================
    💾 BANCO DE PREGUNTAS – Persistencia, carga y actualización
+   Incluye bancos por materia + exámenes anteriores
    ========================================================== */
 
 const LS_BANK = "mebank_bank_v6_full";
@@ -70,14 +71,12 @@ function subjectsFromBank() {
 }
 
 /* ==========================================================
-   🌐 Carga automática de bancos
+   🌐 Carga completa (materias + exámenes anteriores)
    ========================================================== */
 async function loadAllBanks() {
-  const materias = BANK.subjects.map(s => s.slug);
+  const loader = showLoader("⏳ Cargando bancos...");
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
-
-  const loader = showLoader("⏳ Cargando bancos...");
 
   const normalizarMateria = (nombre) => {
     if (!nombre) return "";
@@ -86,30 +85,56 @@ async function loadAllBanks() {
     return match ? match.slug : limpio;
   };
 
-  for (const materia of materias) {
+  /* ---------- 1️⃣ Cargar bancos por materia ---------- */
+  for (const s of BANK.subjects) {
+    const materia = s.slug;
     for (let i = 1; i <= 4; i++) {
-      // 🔧 ruta corregida: sin "../"
       const ruta = `bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
         if (!resp.ok) continue;
         const data = await resp.json();
 
-        // normaliza campo materia antes de guardar
         data.forEach(q => {
           if (q.materia) q.materia = normalizarMateria(q.materia);
         });
 
         const nuevas = data.filter(q => !existingIds.has(q.id));
-        if (nuevas.length > 0) {
-          nuevas.forEach(q => existingIds.add(q.id));
-          BANK.questions.push(...nuevas);
-          totalNuevas += nuevas.length;
-          console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
-        }
-      } catch (err) {
-        console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
-      }
+        nuevas.forEach(q => existingIds.add(q.id));
+        BANK.questions.push(...nuevas);
+        totalNuevas += nuevas.length;
+        console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
+      } catch {}
+    }
+  }
+
+  /* ---------- 2️⃣ Cargar exámenes anteriores ---------- */
+  const examenes = [
+    "examenunico2025.json",
+    "examenunico2024.json",
+    "examenunico2019.json"
+    // 🔹 agregá acá otros que tengas
+  ];
+
+  for (const ex of examenes) {
+    const ruta = `bancos/anteriores/${ex}`;
+    try {
+      const resp = await fetch(ruta);
+      if (!resp.ok) continue;
+      const data = await resp.json();
+
+      data.forEach(q => {
+        q.tipo = "examen"; // 🧠 marca especial
+        if (q.materia) q.materia = normalizarMateria(q.materia);
+      });
+
+      const nuevas = data.filter(q => !existingIds.has(q.id));
+      nuevas.forEach(q => existingIds.add(q.id));
+      BANK.questions.push(...nuevas);
+      totalNuevas += nuevas.length;
+      console.log(`📄 ${ruta} (${nuevas.length} preguntas de examen)`);
+    } catch {
+      console.warn(`⚠️ No se pudo cargar ${ruta}`);
     }
   }
 
