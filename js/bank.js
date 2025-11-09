@@ -6,6 +6,27 @@
 const LS_BANK = "mebank_bank_v6_full";
 const LS_PROGRESS = "mebank_prog_v6_full";
 
+/* ==========================================================
+   ✨ Normalizador universal de textos
+   (quita emojis, tildes, mayúsculas, símbolos)
+   ========================================================== */
+function normalizeString(str) {
+  return str
+    ? str
+        .normalize("NFD")
+        .replace(/[\p{Emoji_Presentation}\p{Emoji}\p{Extended_Pictographic}]/gu, "")
+        .replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]/g, "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/\s+/g, "")
+        .trim()
+    : "";
+}
+
+/* ==========================================================
+   🧠 Banco base
+   ========================================================== */
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
     { slug: "neumonologia", name: "🫁 Neumonología" },
@@ -53,20 +74,17 @@ function saveAll() {
    📘 Materias derivadas del banco
    ========================================================== */
 function subjectsFromBank() {
-  const normalize = str =>
-    str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
-
-  const known = new Map((BANK.subjects || []).map(s => [normalize(s.slug), s]));
+  const known = new Map((BANK.subjects || []).map(s => [normalizeString(s.slug), s]));
 
   (BANK.questions || []).forEach(q => {
     if (q && q.materia) {
-      const slug = normalize(q.materia);
+      const slug = normalizeString(q.materia);
       if (!known.has(slug)) known.set(slug, { slug, name: q.materia });
     }
   });
 
   return Array.from(known.values()).sort((a, b) =>
-    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+    normalizeString(a.name).localeCompare(normalizeString(b.name), "es", { sensitivity: "base" })
   );
 }
 
@@ -80,8 +98,8 @@ async function loadAllBanks() {
 
   const normalizarMateria = (nombre) => {
     if (!nombre) return "";
-    const limpio = nombre.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim();
-    const match = BANK.subjects.find(s => limpio === s.slug);
+    const limpio = normalizeString(nombre);
+    const match = BANK.subjects.find(s => normalizeString(s.slug) === limpio);
     return match ? match.slug : limpio;
   };
 
@@ -113,7 +131,6 @@ async function loadAllBanks() {
     "examenunico2025.json",
     "examenunico2024.json",
     "examenunico2019.json"
-    // 🔹 agregá acá otros que tengas
   ];
 
   for (const ex of examenes) {
@@ -124,7 +141,7 @@ async function loadAllBanks() {
       const data = await resp.json();
 
       data.forEach(q => {
-        q.tipo = "examen"; // 🧠 marca especial
+        q.tipo = "examen";
         if (q.materia) q.materia = normalizarMateria(q.materia);
       });
 
