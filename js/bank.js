@@ -11,7 +11,7 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     { slug: "psiquiatria", name: "💭 Psiquiatría" },
     { slug: "cardiologia", name: "🫀 Cardiología" },
     { slug: "nutricion", name: "🍏 Nutrición" },
-    { slug: "nefrologia", name: "🫘 Nefrología" },
+    { slug: "urologia", name: "🚽 Urología" },
     { slug: "gastroenterologia", name: "💩 Gastroenterología" },
     { slug: "dermatologia", name: "🧴 Dermatología" },
     { slug: "infectologia", name: "🦠 Infectología" },
@@ -26,7 +26,6 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     { slug: "obstetricia", name: "🤰 Obstetricia" },
     { slug: "cirugiageneral", name: "🔪 Cirugía General" },
     { slug: "traumatologia", name: "🦴 Traumatología" },
-    { slug: "urologia", name: "🚽 Urología" },
     { slug: "oftalmologia", name: "👁️ Oftalmología" },
     { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
     { slug: "neurocirugia", name: "🧠 Neurocirugía" },
@@ -39,15 +38,19 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   questions: []
 };
 
-const PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
+let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
 
-/* ---------- Guardado ---------- */
+/* ==========================================================
+   💾 Guardado local
+   ========================================================== */
 function saveAll() {
   localStorage.setItem(LS_BANK, JSON.stringify(BANK));
   localStorage.setItem(LS_PROGRESS, JSON.stringify(PROG));
 }
 
-/* ---------- Utilidades ---------- */
+/* ==========================================================
+   📘 Materias derivadas del banco
+   ========================================================== */
 function subjectsFromBank() {
   const normalize = str =>
     str ? str.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim() : "";
@@ -66,7 +69,9 @@ function subjectsFromBank() {
   );
 }
 
-/* ---------- Carga automática de bancos (versión sincronizada) ---------- */
+/* ==========================================================
+   🌐 Carga automática de bancos
+   ========================================================== */
 async function loadAllBanks() {
   const materias = BANK.subjects.map(s => s.slug);
   const existingIds = new Set(BANK.questions.map(q => q.id));
@@ -77,20 +82,20 @@ async function loadAllBanks() {
   const normalizarMateria = (nombre) => {
     if (!nombre) return "";
     const limpio = nombre.normalize("NFD").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase().trim();
-    // Empareja con los slugs existentes
     const match = BANK.subjects.find(s => limpio === s.slug);
-    return match ? s.slug : limpio;
+    return match ? match.slug : limpio;
   };
 
   for (const materia of materias) {
     for (let i = 1; i <= 4; i++) {
-      const ruta = `../bancos/${materia}/${materia}${i}.json`;
+      // 🔧 ruta corregida: sin "../"
+      const ruta = `bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
         if (!resp.ok) continue;
         const data = await resp.json();
 
-        // 🩺 Normaliza campo materia antes de guardar
+        // normaliza campo materia antes de guardar
         data.forEach(q => {
           if (q.materia) q.materia = normalizarMateria(q.materia);
         });
@@ -102,8 +107,8 @@ async function loadAllBanks() {
           totalNuevas += nuevas.length;
           console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
         }
-      } catch {
-        console.warn(`⚠️ No se pudo cargar ${ruta}`);
+      } catch (err) {
+        console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
       }
     }
   }
@@ -111,7 +116,10 @@ async function loadAllBanks() {
   hideLoader(loader, totalNuevas);
   if (totalNuevas > 0) saveAll();
 }
-/* ---------- Indicadores visuales ---------- */
+
+/* ==========================================================
+   💬 Indicadores visuales
+   ========================================================== */
 function showLoader(text) {
   const el = document.createElement("div");
   el.id = "bankLoader";
@@ -133,21 +141,28 @@ function hideLoader(el, total) {
   setTimeout(() => el.remove(), 2500);
 }
 
-/* ---------- Carga inicial ---------- */
+/* ==========================================================
+   ⚙️ Carga inicial automática
+   ========================================================== */
 window.addEventListener("DOMContentLoaded", async () => {
   if (!(BANK.questions && BANK.questions.length)) {
     await loadAllBanks();
+    if (!BANK.questions.length) {
+      console.warn("⚠️ No se cargaron preguntas. Verificá rutas o permisos de CORS.");
+    }
   }
 });
 
-/* ---------- 🔄 Forzar recarga completa del banco ---------- */
+/* ==========================================================
+   ♻️ Forzar recarga completa
+   ========================================================== */
 async function forceReloadBank() {
   if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
 
   localStorage.removeItem(LS_BANK);
   localStorage.removeItem(LS_PROGRESS);
 
-  BANK = { subjects: BANK.subjects, questions: [] };
+  BANK = { subjects: [...BANK.subjects], questions: [] };
   PROG = {};
 
   alert("♻️ Banco borrado. Ahora se recargará completo...");
