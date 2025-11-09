@@ -89,8 +89,28 @@ function abrirExamen(slug, total) {
     usarTimer: true,
     mostrarNotas: true,
     permitirRetroceso: true,
-    titulo: `Resolviendo ${slug.replace(/_/g, " ").toUpperCase()}`
+    titulo: `🧾 ${slug.replace(/_/g, " ").toUpperCase()}`
   });
+
+  // 🔹 Mostrar título del examen arriba del cronómetro
+  setTimeout(() => {
+    const timerEl = document.getElementById("exam-timer");
+    if (timerEl) {
+      const label = document.createElement("div");
+      label.textContent = slug.replace(/_/g, " ").toUpperCase();
+      label.style = `
+        font-weight:600;
+        font-size:13px;
+        text-align:center;
+        background:#0f172a;
+        color:#fff;
+        padding:4px 8px;
+        border-radius:6px 6px 0 0;
+        margin-bottom:2px;
+      `;
+      timerEl.parentNode.insertBefore(label, timerEl);
+    }
+  }, 400);
 }
 
 /* ---------- Exponer al scope global ---------- */
