@@ -14,7 +14,7 @@ function normalizeString(str) {
   return str
     ? str
         .normalize("NFD")
-        .replace(/[\p{Emoji_Presentation}\p{Emoji}\p{Extended_Pictographic}]/gu, "")
+        .replace(/[\p{Emoji_Presentation}\p{Emoji}\p{Extended_Pictographic}]+/gu, "")
         .replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]/g, "")
         .toLowerCase()
         .normalize("NFD")
@@ -107,7 +107,7 @@ async function loadAllBanks() {
   for (const s of BANK.subjects) {
     const materia = s.slug;
     for (let i = 1; i <= 4; i++) {
-      const ruta = `bancos/${materia}/${materia}${i}.json`;
+      const ruta = `./bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
         if (!resp.ok) continue;
@@ -122,7 +122,9 @@ async function loadAllBanks() {
         BANK.questions.push(...nuevas);
         totalNuevas += nuevas.length;
         console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
-      } catch {}
+      } catch (err) {
+        console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
+      }
     }
   }
 
@@ -134,7 +136,7 @@ async function loadAllBanks() {
   ];
 
   for (const ex of examenes) {
-    const ruta = `bancos/anteriores/${ex}`;
+    const ruta = `./bancos/anteriores/${ex}`;
     try {
       const resp = await fetch(ruta);
       if (!resp.ok) continue;
@@ -150,13 +152,18 @@ async function loadAllBanks() {
       BANK.questions.push(...nuevas);
       totalNuevas += nuevas.length;
       console.log(`📄 ${ruta} (${nuevas.length} preguntas de examen)`);
-    } catch {
-      console.warn(`⚠️ No se pudo cargar ${ruta}`);
+    } catch (err) {
+      console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
     }
   }
 
   hideLoader(loader, totalNuevas);
-  if (totalNuevas > 0) saveAll();
+  if (totalNuevas > 0) {
+    saveAll();
+    console.log(`✅ Banco actualizado (${BANK.questions.length} preguntas totales)`);
+  } else {
+    console.log("ℹ️ Banco sin cambios");
+  }
 }
 
 /* ==========================================================
@@ -192,6 +199,8 @@ window.addEventListener("DOMContentLoaded", async () => {
     if (!BANK.questions.length) {
       console.warn("⚠️ No se cargaron preguntas. Verificá rutas o permisos de CORS.");
     }
+  } else {
+    console.log(`✅ Banco ya cargado (${BANK.questions.length} preguntas)`);
   }
 });
 
