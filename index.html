@@ -33,7 +33,12 @@
   </div>
 
   <!-- Contenedor principal -->
-  <main class="wrap" id="app"></main>
+  <main class="wrap" id="app">
+    <div style="text-align:center;margin-top:80px;">
+      <h2>🧩 Cargando bancos...</h2>
+      <p style="color:#64748b;">Por favor esperá unos segundos</p>
+    </div>
+  </main>
 
   <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
@@ -43,11 +48,11 @@
        (orden correcto: base → motor → secciones)
   ========================================================== -->
 
-  <!-- 1️⃣ Banco y persistencia -->
-  <script src="js/bank.js?v=3"></script>
-
-  <!-- 2️⃣ Núcleo general y navegación -->
+  <!-- 1️⃣ Núcleo general y navegación -->
   <script src="js/main.js?v=3"></script>
+
+  <!-- 2️⃣ Banco y persistencia -->
+  <script src="js/bank.js?v=3"></script>
 
   <!-- 3️⃣ Motores universales -->
   <script src="js/timer.js?v=3"></script>
@@ -91,17 +96,39 @@
 
   <!-- ==========================================================
        ✅ INICIALIZACIÓN FINAL SEGURA
-       (garantiza que todo esté listo antes de usar app o stats)
+       (espera a que se carguen los bancos antes de iniciar)
   ========================================================== -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      if (typeof renderHome === "function") {
-        renderHome();
-      } else {
-        document.getElementById("app").innerHTML = `
+    document.addEventListener("DOMContentLoaded", async () => {
+      const app = document.getElementById("app");
+
+      try {
+        if (typeof loadAllBanks === "function") {
+          console.log("⏳ Cargando bancos...");
+          app.innerHTML = `
+            <div style="text-align:center;margin-top:80px;">
+              <h2>⏳ Cargando bancos...</h2>
+              <p style="color:#64748b;">Por favor esperá unos segundos</p>
+            </div>`;
+          await loadAllBanks();
+          console.log(`✅ Bancos cargados: ${BANK.questions?.length || 0} preguntas`);
+        }
+
+        if (typeof renderHome === "function") {
+          renderHome();
+        } else {
+          app.innerHTML = `
+            <div class="card fade" style="text-align:center">
+              <h2>⚠️ Error al cargar la aplicación</h2>
+              <p>No se encontró el módulo principal.</p>
+            </div>`;
+        }
+      } catch (err) {
+        console.error("❌ Error al iniciar la app:", err);
+        app.innerHTML = `
           <div class="card fade" style="text-align:center">
-            <h2>⚠️ Error al cargar la aplicación</h2>
-            <p>No se encontró el módulo principal.</p>
+            <h2>❌ Error al cargar bancos</h2>
+            <p>Revisá la consola o recargá la página.</p>
           </div>`;
       }
     });
