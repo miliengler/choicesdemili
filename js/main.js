@@ -1,13 +1,80 @@
 /* ==========================================================
    🧩 MAIN.JS – NAVEGACIÓN PRINCIPAL Y HOME
-   Versión unificada (main + ui) – estable y modular
+   Versión unificada (main + ui + carga de bancos)
    ========================================================== */
 
 /* ---------- Inicio automático ---------- */
-document.addEventListener("DOMContentLoaded", () => {
-  // se inicializa solo el contenedor global (renderHome ya se llama desde index.html)
+document.addEventListener("DOMContentLoaded", async () => {
   window.app = document.getElementById("app");
+
+  // 🔹 Cargar todos los bancos al iniciar
+  console.log("⏳ Cargando bancos...");
+  await loadAllBanks();
+  console.log(`✅ Bancos cargados: ${BANK.questions.length} preguntas totales`);
+
+  // 🔹 Render inicial
+  if (typeof renderHome === "function") renderHome();
 });
+
+/* ==========================================================
+   📦 CARGA GLOBAL DE TODOS LOS BANCOS
+   (materias + exámenes anteriores)
+   ========================================================== */
+
+window.BANK = { questions: [] };
+
+async function loadAllBanks() {
+  try {
+    const folders = [
+      "/bancos/pediatria/",
+      "/bancos/obstetricia/",
+      "/bancos/ginecologia/",
+      "/bancos/medicinafamiliar/",
+      "/bancos/medicinainterna/",
+      "/bancos/cirugiageneral/",
+      "/bancos/saludpublica/",
+      "/bancos/psiquiatria/",
+      "/bancos/cardiologia/",
+      "/bancos/otras/",
+      "/bancos/anteriores/"
+    ];
+
+    let all = [];
+
+    for (const folder of folders) {
+      try {
+        const res = await fetch(folder);
+        if (!res.ok) continue;
+
+        const text = await res.text();
+        const matches = text.match(/href="([^"]+\.json)"/g);
+        if (!matches) continue;
+
+        for (const m of matches) {
+          const file = m.match(/href="([^"]+)"/)[1];
+          const url = folder + file;
+
+          try {
+            const json = await fetch(url).then(r => r.json());
+            if (Array.isArray(json)) {
+              all.push(...json);
+            } else if (Array.isArray(json.questions)) {
+              all.push(...json.questions);
+            }
+          } catch (err) {
+            console.warn("⚠️ Error al leer JSON:", url, err);
+          }
+        }
+      } catch (err) {
+        console.warn("⚠️ Error al leer carpeta:", folder, err);
+      }
+    }
+
+    window.BANK.questions = all;
+  } catch (error) {
+    console.error("❌ Error general al cargar bancos:", error);
+  }
+}
 
 /* ==========================================================
    🏠 HOME – Pantalla principal
@@ -29,7 +96,6 @@ function renderHome() {
 
 /* ==========================================================
    🔹 PLACEHOLDERS DE NAVEGACIÓN
-   (cada uno se reemplazará por su propio módulo)
    ========================================================== */
 
 // 🧩 Choice por materia
@@ -93,10 +159,18 @@ function mostrarModuloFaltante(titulo, archivo) {
 }
 
 /* ==========================================================
-   🔁 Recarga de bancos
+   🔁 Recarga manual de bancos
    ========================================================== */
 async function manualBankReload() {
   alert("⏳ Actualizando bancos...");
-  await loadAllBanks(); // definida en bank.js
+  await loadAllBanks();
   alert("✅ Bancos actualizados correctamente");
+}
+
+/* ==========================================================
+   ♻️ Recarga completa (forzar reload)
+   ========================================================== */
+function forceReloadBank() {
+  localStorage.clear();
+  location.reload(true);
 }
