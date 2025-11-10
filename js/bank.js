@@ -89,7 +89,8 @@ function subjectsFromBank() {
 }
 
 /* ==========================================================
-   🌐 Carga completa (materias + exámenes anteriores)
+   🌐 CARGA ROBUSTA DE BANCOS (Materias + Exámenes Anteriores)
+   Normaliza rutas, ignora mayúsculas/emojis y reporta todo
    ========================================================== */
 async function loadAllBanks() {
   const loader = showLoader("⏳ Cargando bancos...");
@@ -99,31 +100,39 @@ async function loadAllBanks() {
   const normalizarMateria = (nombre) => {
     if (!nombre) return "";
     const limpio = normalizeString(nombre);
-    const match = BANK.subjects.find(s => normalizeString(s.slug) === limpio);
+    const match = BANK.subjects.find(
+      s => normalizeString(s.slug) === limpio || normalizeString(s.name) === limpio
+    );
     return match ? match.slug : limpio;
   };
 
+  console.groupCollapsed("📘 Carga de bancos iniciada");
+
   /* ---------- 1️⃣ Cargar bancos por materia ---------- */
   for (const s of BANK.subjects) {
-    const materia = s.slug;
+    const materia = normalizarMateria(s.slug);
     for (let i = 1; i <= 4; i++) {
-      const ruta = `./bancos/${materia}/${materia}${i}.json`;
+      const ruta = `bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
-        if (!resp.ok) continue;
-        const data = await resp.json();
+        if (!resp.ok) {
+          console.warn(`⚠️ No encontrado: ${ruta}`);
+          continue;
+        }
 
+        const data = await resp.json();
         data.forEach(q => {
           if (q.materia) q.materia = normalizarMateria(q.materia);
+          if (!q.id) q.id = `${materia}_${Date.now()}_${Math.random().toString(36).slice(2,7)}`;
         });
 
         const nuevas = data.filter(q => !existingIds.has(q.id));
         nuevas.forEach(q => existingIds.add(q.id));
         BANK.questions.push(...nuevas);
         totalNuevas += nuevas.length;
-        console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
+        console.log(`✅ ${ruta} → ${nuevas.length} nuevas preguntas`);
       } catch (err) {
-        console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
+        console.warn(`⚠️ Error al leer ${ruta}:`, err.message);
       }
     }
   }
@@ -136,36 +145,42 @@ async function loadAllBanks() {
   ];
 
   for (const ex of examenes) {
-    const ruta = `./bancos/anteriores/${ex}`;
+    const ruta = `bancos/anteriores/${ex}`;
     try {
       const resp = await fetch(ruta);
-      if (!resp.ok) continue;
-      const data = await resp.json();
+      if (!resp.ok) {
+        console.warn(`⚠️ No encontrado: ${ruta}`);
+        continue;
+      }
 
+      const data = await resp.json();
       data.forEach(q => {
         q.tipo = "examen";
         if (q.materia) q.materia = normalizarMateria(q.materia);
+        if (!q.id) q.id = `${ex}_${Math.random().toString(36).slice(2,7)}`;
+        if (!q.examen) q.examen = ex.replace(".json", "");
       });
 
       const nuevas = data.filter(q => !existingIds.has(q.id));
       nuevas.forEach(q => existingIds.add(q.id));
       BANK.questions.push(...nuevas);
       totalNuevas += nuevas.length;
-      console.log(`📄 ${ruta} (${nuevas.length} preguntas de examen)`);
+      console.log(`📄 ${ruta} → ${nuevas.length} preguntas de examen`);
     } catch (err) {
-      console.warn(`⚠️ No se pudo cargar ${ruta}`, err);
+      console.warn(`⚠️ Error al leer ${ruta}:`, err.message);
     }
   }
 
+  console.groupEnd();
   hideLoader(loader, totalNuevas);
+
   if (totalNuevas > 0) {
     saveAll();
-    console.log(`✅ Banco actualizado (${BANK.questions.length} preguntas totales)`);
+    console.log(`💾 Guardado local actualizado (${BANK.questions.length} preguntas totales).`);
   } else {
-    console.log("ℹ️ Banco sin cambios");
+    console.log("✅ Bancos actualizados (sin cambios).");
   }
 }
-
 /* ==========================================================
    💬 Indicadores visuales
    ========================================================== */
