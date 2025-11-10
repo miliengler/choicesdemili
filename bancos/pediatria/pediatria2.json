@@ -1,0 +1,1362 @@
+[
+  {
+  "id": "pediatria-002-001",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis desde el nacimiento que no mejora con oxígeno al 100%. Saturación pre y posductal similar. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Comunicación interventricular",
+    "c": "Persistencia de la circulación fetal",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV produce cianosis refractaria al oxígeno por flujo paralelo sin mezcla adecuada entre las circulaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-002",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con crisis de hipoxia y cianosis intensa al llanto. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "Transposición de grandes vasos",
+    "c": "Atresia pulmonar",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "Las crisis hipoxémicas que se alivian con posición en cuclillas son típicas de la tetralogía de Fallot.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-003",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis central, soplo ausente y saturación 70%. Rx: corazón en huevo. Diagnóstico:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Atresia tricuspídea",
+    "c": "Estenosis pulmonar crítica",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La imagen de 'corazón en huevo' es característica de la transposición de grandes vasos.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-004",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis que mejora con la administración de prostaglandina E1. Diagnóstico probable:",
+  "opciones": {
+    "a": "Cardiopatía ductus-dependiente",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV pequeña",
+    "d": "Cierre fisiológico del conducto arterioso"
+  },
+  "correcta": "a",
+  "explicacion": "Las cardiopatías dependientes del ductus (TGV, coartación crítica, atresia pulmonar) mejoran con PGE1 al mantener la circulación sistémica o pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-005",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante de 2 meses con taquipnea, dificultad para alimentarse y soplo holosistólico en borde esternal inferior izquierdo. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Comunicación interventricular",
+    "b": "Ductus arterioso persistente",
+    "c": "Estenosis pulmonar",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV produce soplo holosistólico intenso por paso de sangre de izquierda a derecha y síntomas de insuficiencia cardíaca a los 2 meses.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-006",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes, soplo mesosistólico y gradiente de presión entre miembros superiores e inferiores. Diagnóstico:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Estenosis aórtica valvular",
+    "c": "CIV",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta se manifiesta por ausencia de pulsos femorales y gradiente tensional entre extremidades.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-007",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con soplo sistólico eyectivo en foco pulmonar y desdoblamiento amplio fijo del segundo ruido. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Comunicación interauricular",
+    "b": "CIV pequeña",
+    "c": "Ductus arterioso persistente",
+    "d": "Estenosis aórtica"
+  },
+  "correcta": "a",
+  "explicacion": "El desdoblamiento fijo del segundo ruido es característico de la CIA tipo ostium secundum.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-008",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, soplo continuo y pulsos amplios. Rx con hiperflujo pulmonar. Diagnóstico:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "Estenosis pulmonar",
+    "c": "Coartación de aorta",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente se caracteriza por soplo continuo en foco pulmonar y pulsos saltones por hiperflujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-009",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 5 años con cianosis leve y dedos en palillo de tambor. Rx: arco medio cóncavo y oligohemia pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "Estenosis pulmonar aislada",
+    "c": "TGV",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot produce cianosis, dedos hipocráticos y oligohemia pulmonar por obstrucción al flujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-010",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis y ausencia de soplo. Ecocardiograma: aurícula derecha conecta con ventrículo izquierdo y aorta. Diagnóstico:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Atresia tricuspídea",
+    "c": "Estenosis pulmonar severa",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "En la transposición de grandes vasos la aorta nace del ventrículo derecho y la pulmonar del izquierdo, generando flujo paralelo sin mezcla.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-011",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis y soplo sistólico eyectivo en foco pulmonar. Saturación posductal 70%. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Estenosis pulmonar crítica",
+    "b": "Coartación de aorta",
+    "c": "CIV restrictiva",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis pulmonar crítica produce cianosis precoz con soplo eyectivo y requiere prostaglandina para mantener el flujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-012",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 3 años con cianosis leve, soplo sistólico en foco pulmonar y desdoblamiento fijo del segundo ruido. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interauricular",
+    "b": "CIV pequeña",
+    "c": "Estenosis aórtica",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "El desdoblamiento fijo del segundo ruido es patognomónico de la comunicación interauricular tipo ostium secundum.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-013",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con taquipnea, hepatomegalia y soplo holosistólico intenso en borde esternal izquierdo. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "Estenosis aórtica",
+    "c": "CIA",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia provoca insuficiencia cardíaca congestiva con taquipnea, hepatomegalia y soplo holosistólico intenso.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-014",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes y gradiente tensional entre brazos y piernas. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Estenosis pulmonar",
+    "c": "Tetralogía de Fallot",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta cursa con hipoperfusión en miembros inferiores y gradiente de presión significativo.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-015",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis intensa, soplo ausente, Rx con hiperclaridad pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Atresia tricuspídea",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV pequeña",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La atresia tricuspídea se presenta con cianosis grave y ausencia de soplo por falta de flujo a través de la válvula tricúspide.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-016",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con soplo continuo en foco pulmonar y pulsos saltones. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "CIV restrictiva",
+    "c": "Estenosis aórtica leve",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente produce soplo continuo y pulsos amplios por hiperflujo sistémico y pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-017",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 6 años con dedos hipocráticos, soplo eyectivo y cianosis leve que mejora al ponerse en cuclillas. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "CIV restrictiva",
+    "c": "TGV",
+    "d": "Atresia pulmonar"
+  },
+  "correcta": "a",
+  "explicacion": "Las crisis hipoxémicas y alivio al ponerse en cuclillas son característicos de la tetralogía de Fallot.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-018",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo sistólico, hepatomegalia y taquipnea a las 2 semanas de vida. Diagnóstico probable:",
+  "opciones": {
+    "a": "CIV amplia con insuficiencia cardíaca",
+    "b": "CIA pequeña",
+    "c": "Coartación leve de aorta",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia causa insuficiencia cardíaca a las 2-4 semanas cuando aumenta el flujo pulmonar postnatal.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-019",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, pulsos normales y soplo eyectivo en borde esternal superior izquierdo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis pulmonar crítica",
+    "b": "TGV",
+    "c": "Coartación de aorta",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis pulmonar crítica genera cianosis con soplo eyectivo y requiere ductus permeable para la supervivencia.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-020",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 4 años con soplo sistólico eyectivo en foco aórtico, irradiado al cuello. Pulsos normales. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular",
+    "b": "Coartación de aorta",
+    "c": "Estenosis pulmonar leve",
+    "d": "CIV"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis aórtica valvular produce soplo eyectivo en foco aórtico con irradiación al cuello y sin cianosis.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-021",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis severa y saturación del 60% que no mejora con oxígeno. Rx: silueta en 'huevo'. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Estenosis pulmonar severa",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV presenta flujo paralelo y cianosis refractaria al oxígeno, con Rx en 'huevo sobre cuerda'.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-022",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo continuo en región infraclavicular izquierda y pulsos amplios. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "CIV restrictiva",
+    "c": "Estenosis aórtica leve",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente produce soplo continuo por flujo sisto-diastólico y pulsos amplios por hiperflujo.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-023",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 2 años con retraso del crecimiento, taquipnea y soplo pansistólico en borde esternal inferior. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIA pequeña",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia causa insuficiencia cardíaca y retraso pondoestatural por sobrecarga de volumen pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-024",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, pulsos femorales ausentes y soplo mesosistólico. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación crítica de aorta",
+    "b": "TGV",
+    "c": "CIV amplia",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación crítica produce hipoperfusión en miembros inferiores y depende del ductus para el flujo sistémico.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-025",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo eyectivo, cianosis leve y saturación de 85%. Rx: oligohemia pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "TGV"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot combina CIV, cabalgamiento aórtico, estenosis pulmonar y HVD, con oligohemia pulmonar en Rx.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-026",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo holosistólico, taquipnea y hepatomegalia a los 15 días de vida. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "CIA pequeña",
+    "c": "Coartación leve de aorta",
+    "d": "Ductus arterioso pequeño"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia produce insuficiencia cardíaca cuando cae la resistencia vascular pulmonar tras el nacimiento.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-027",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 4 años con soplo eyectivo en foco aórtico y pulsos normales. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "El soplo eyectivo irradiado al cuello y segundo ruido normal orientan a estenosis aórtica valvular leve.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-028",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante de 3 meses con taquipnea, sudoración y hepatomegalia. Soplo continuo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente amplio",
+    "b": "CIV pequeña",
+    "c": "Estenosis pulmonar leve",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus persistente grande genera insuficiencia cardíaca congestiva por sobrecarga de volumen izquierda y pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-029",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis y diferencia pre-posductal de saturación >10%. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Persistencia de la circulación fetal",
+    "b": "TGV",
+    "c": "Coartación crítica de aorta",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La hipertensión pulmonar persistente genera shunt derecha-izquierda con diferencia de saturación entre miembros.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-030",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, soplo sistólico y saturación del 70%. Rx con hiperflujo pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "TGV con comunicación interventricular",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Estenosis pulmonar crítica"
+  },
+  "correcta": "a",
+  "explicacion": "En la TGV con CIV hay mezcla parcial y mayor flujo pulmonar, con cianosis y soplo sistólico por turbulencia del defecto.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-031",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 6 años con soplo sistólico eyectivo en foco pulmonar que se intensifica con la inspiración. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis pulmonar valvular",
+    "b": "Estenosis aórtica",
+    "c": "CIV",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis pulmonar valvular genera soplo eyectivo que aumenta con la inspiración y se irradia hacia el hombro izquierdo.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-032",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis y saturación baja. Ecocardiograma: ventrículo único. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Atresia tricuspídea",
+    "b": "Coartación de aorta",
+    "c": "Tetralogía de Fallot",
+    "d": "CIV restrictiva"
+  },
+  "correcta": "a",
+  "explicacion": "La atresia tricuspídea se caracteriza por ausencia de conexión auriculoventricular derecha y ventrículo único funcional.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-033",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con saturación del 70% y cianosis que no mejora con O2. Rx: corazón normal, hiperflujo pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Coartación de aorta",
+    "d": "Estenosis pulmonar"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV cursa con cianosis refractaria y flujo pulmonar aumentado, con Rx de corazón en 'huevo sobre cuerda'.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-034",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales débiles y soplo mesosistólico irradiado a la espalda. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV pequeña",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta se manifiesta con pulsos débiles en miembros inferiores y soplo irradiado a la espalda.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-035",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 8 años con dedos hipocráticos, soplo sistólico y cianosis. Rx: oligohemia pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "CIV restrictiva",
+    "c": "TGV",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot se caracteriza por cianosis, dedos hipocráticos y oligohemia pulmonar por obstrucción al flujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-036",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con soplo continuo en región infraclavicular izquierda y pulsos amplios. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "CIA tipo ostium secundum",
+    "c": "CIV pequeña",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus persistente genera soplo continuo por flujo sisto-diastólico con pulsos amplios y presión diferencial aumentada.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-037",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo sistólico eyectivo en foco pulmonar y Rx normal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis pulmonar leve",
+    "b": "Tetralogía de Fallot",
+    "c": "CIV",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis pulmonar leve produce soplo eyectivo con Rx y ECG normales y sin cianosis.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-038",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño con soplo holosistólico en borde esternal izquierdo inferior, sin signos de insuficiencia cardíaca. Diagnóstico probable:",
+  "opciones": {
+    "a": "CIV pequeña",
+    "b": "CIV amplia",
+    "c": "CIA tipo ostium secundum",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "Las CIV pequeñas producen soplo intenso por alto gradiente de presión sin sobrecarga de volumen ni IC.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-039",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niña de 3 años con soplo eyectivo en foco pulmonar, segundo ruido desdoblado fijo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interauricular tipo ostium secundum",
+    "b": "Estenosis pulmonar",
+    "c": "CIV pequeña",
+    "d": "Coartación leve de aorta"
+  },
+  "correcta": "a",
+  "explicacion": "El desdoblamiento fijo del segundo ruido es patognomónico de la CIA tipo ostium secundum.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-040",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con saturación baja, Rx con hiperflujo y ECG con desviación del eje a la derecha. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Estenosis pulmonar crítica",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV muestra hiperflujo pulmonar con silueta en huevo y ECG con HVD y eje derecho.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-041",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis desde el nacimiento, soplo ausente y saturación del 65% que no mejora con oxígeno. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Estenosis pulmonar leve",
+    "d": "CIV pequeña"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV produce cianosis precoz y refractaria al oxígeno, sin soplo y con hiperflujo pulmonar radiológico.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-042",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con taquipnea, hepatomegalia y soplo holosistólico intenso. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "CIV pequeña",
+    "c": "Estenosis aórtica leve",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia genera insuficiencia cardíaca congestiva y soplo holosistólico intenso en borde esternal inferior.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-043",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niña de 7 años con soplo continuo en foco pulmonar y pulsos amplios. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "CIV restrictiva",
+    "c": "CIA tipo ostium secundum",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente produce soplo continuo en foco pulmonar y pulsos amplios por hiperflujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-044",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, pulsos normales, Rx con oligohemia pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "TGV",
+    "c": "Atresia tricuspídea",
+    "d": "Coartación de aorta"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot se caracteriza por cianosis, soplo sistólico y oligohemia pulmonar radiológica.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-045",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño con soplo sistólico eyectivo en foco pulmonar y desdoblamiento fijo del segundo ruido. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interauricular",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La CIA tipo ostium secundum produce soplo eyectivo y desdoblamiento fijo del segundo ruido por flujo continuo entre aurículas.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-046",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con soplo eyectivo, cianosis leve y saturación 85%. Rx: arco medio cóncavo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "TGV",
+    "c": "Estenosis pulmonar crítica",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "El arco medio cóncavo en Rx es característico de la tetralogía de Fallot, junto con cianosis y soplo eyectivo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-047",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con saturación 70%, soplo ausente y Rx con hiperflujo pulmonar. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Estenosis pulmonar crítica",
+    "d": "Coartación de aorta"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV cursa con hiperflujo pulmonar y cianosis sin soplo por flujo paralelo entre las circulaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-048",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con pulsos femorales ausentes, soplo mesosistólico y diferencia de presión de 30 mmHg entre brazos y piernas. Diagnóstico:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Estenosis aórtica valvular",
+    "c": "CIA",
+    "d": "CIV"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta se sospecha ante pulsos femorales débiles y gradiente tensional mayor a 20 mmHg.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-049",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 5 años con soplo continuo en foco pulmonar, pulsos amplios y crecimiento normal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente pequeño",
+    "b": "CIV restrictiva",
+    "c": "CIA pequeña",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus pequeño produce soplo continuo con escasos síntomas y desarrollo normal.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-050",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, Rx con silueta cardiaca normal e hiperflujo pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "TGV",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Coartación de aorta"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV cursa con cianosis precoz y flujo pulmonar aumentado, manteniendo tamaño cardíaco normal o ligeramente aumentado.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-051",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 10 años asintomático con soplo sistólico eyectivo en foco aórtico que se irradia al cuello. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular leve",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis aórtica valvular leve produce soplo eyectivo irradiado al cuello sin signos de insuficiencia cardíaca.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-052",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes, soplo mesosistólico y extremidades inferiores frías. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación crítica de aorta",
+    "b": "Tetralogía de Fallot",
+    "c": "Estenosis pulmonar",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación crítica se presenta con hipoperfusión en miembros inferiores y depende del ductus para el flujo sistémico.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-053",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis leve, Rx con oligohemia pulmonar y corazón en 'bota'. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "TGV",
+    "c": "Coartación de aorta",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "La silueta en bota y la oligohemia pulmonar son hallazgos típicos de la tetralogía de Fallot.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-054",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con taquipnea y sudoración al alimentarse. Soplo holosistólico en borde esternal izquierdo inferior. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "CIV pequeña",
+    "c": "Estenosis pulmonar leve",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia genera sobrecarga de volumen izquierda y síntomas de insuficiencia cardíaca desde las primeras semanas de vida.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-055",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, Rx con hiperflujo pulmonar y ECG con HVD. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Estenosis pulmonar"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV cursa con hiperflujo pulmonar y HVD por flujo paralelo entre las circulaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-056",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis y soplo ausente. ECG con desviación izquierda y Rx con cardiomegalia. Diagnóstico probable:",
+  "opciones": {
+    "a": "Atresia tricuspídea",
+    "b": "TGV",
+    "c": "Tetralogía de Fallot",
+    "d": "Estenosis pulmonar"
+  },
+  "correcta": "a",
+  "explicacion": "La atresia tricuspídea se caracteriza por cianosis precoz, cardiomegalia e inversión del eje eléctrico.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-057",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño con soplo sistólico eyectivo en foco pulmonar que aumenta con la inspiración. Segundo ruido normal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis pulmonar leve",
+    "b": "Estenosis aórtica",
+    "c": "CIA",
+    "d": "CIV pequeña"
+  },
+  "correcta": "a",
+  "explicacion": "El soplo eyectivo que se acentúa con la inspiración es típico de la estenosis pulmonar valvular leve.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-058",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 4 años con dedos hipocráticos, cianosis y soplo sistólico en borde esternal superior. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "CIV pequeña",
+    "c": "TGV",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "La cianosis progresiva, dedos hipocráticos y soplo eyectivo orientan a tetralogía de Fallot.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-059",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 6 años con soplo eyectivo irradiado a cuello y frémito en foco aórtico. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular moderada",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis aórtica moderada se caracteriza por soplo eyectivo con frémito y irradiación al cuello.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-060",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes y soplo mesosistólico irradiado a la espalda. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Tetralogía de Fallot",
+    "c": "CIV restrictiva",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta produce gradiente de presión y soplo irradiado a la espalda con pulsos femorales débiles.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-061",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con saturación 70%, cianosis desde el nacimiento y Rx con hiperflujo pulmonar. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Estenosis pulmonar crítica"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV se presenta con cianosis precoz, refractaria al oxígeno, y Rx con hiperflujo pulmonar y silueta en 'huevo sobre cuerda'.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-062",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 8 años con dedos hipocráticos, soplo sistólico eyectivo y Rx con oligohemia pulmonar. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "CIV restrictiva",
+    "c": "Estenosis pulmonar leve",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot produce cianosis, dedos hipocráticos y oligohemia pulmonar radiológica por obstrucción al flujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-063",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, Rx con oligohemia pulmonar y ECG con eje a la derecha. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "TGV",
+    "c": "Coartación de aorta",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "El eje derecho y la oligohemia pulmonar son característicos de la tetralogía de Fallot.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-064",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 3 años con soplo eyectivo en foco pulmonar, segundo ruido desdoblado fijo y crecimiento normal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interauricular tipo ostium secundum",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV pequeña",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La CIA ostium secundum produce desdoblamiento fijo del segundo ruido, sin signos de insuficiencia cardíaca ni cianosis.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-065",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con taquipnea, sudoración y hepatomegalia. Soplo holosistólico intenso. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "CIA pequeña",
+    "c": "Estenosis aórtica leve",
+    "d": "Coartación leve"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia produce insuficiencia cardíaca congestiva y soplo holosistólico intenso en las primeras semanas de vida.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-066",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes y gradiente tensional entre brazos y piernas. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "TGV",
+    "c": "CIV pequeña",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta se caracteriza por disminución o ausencia de pulsos femorales y gradiente de presión entre miembros.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-067",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, ECG con desviación del eje a la izquierda y Rx con cardiomegalia. Diagnóstico probable:",
+  "opciones": {
+    "a": "Atresia tricuspídea",
+    "b": "Tetralogía de Fallot",
+    "c": "TGV",
+    "d": "Estenosis pulmonar crítica"
+  },
+  "correcta": "a",
+  "explicacion": "La atresia tricuspídea cursa con cianosis precoz, desviación del eje a la izquierda y cardiomegalia por ventrículo único funcional.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-068",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 4 años con soplo continuo en foco pulmonar y pulsos amplios. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "Estenosis aórtica leve",
+    "c": "CIV pequeña",
+    "d": "CIA tipo ostium secundum"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente produce soplo continuo sisto-diastólico y pulsos amplios por hiperflujo pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-069",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 8 años con soplo eyectivo irradiado al cuello, segundo ruido disminuido. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular",
+    "b": "Estenosis pulmonar",
+    "c": "CIA pequeña",
+    "d": "CIV restrictiva"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis aórtica valvular produce soplo eyectivo con irradiación cervical y segundo ruido disminuido.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-070",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis grave, soplo ausente y Rx con hiperflujo pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Coartación de aorta",
+    "d": "Atresia tricuspídea"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV es la principal causa de cianosis grave en el período neonatal con hiperflujo pulmonar y soplo ausente.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-002-071",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Lactante con taquipnea, hepatomegalia y soplo holosistólico intenso. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interventricular amplia",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIA",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La CIV amplia produce insuficiencia cardíaca congestiva y soplo holosistólico intenso en las primeras semanas de vida.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-072",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, Rx con hiperflujo y ECG con HVD. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Coartación de aorta",
+    "d": "Estenosis pulmonar"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV presenta cianosis precoz, hiperflujo pulmonar y HVD, típica de flujo paralelo entre las circulaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-073",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 5 años con soplo continuo, pulsos amplios y presión diferencial aumentada. Diagnóstico probable:",
+  "opciones": {
+    "a": "Ductus arterioso persistente",
+    "b": "CIV pequeña",
+    "c": "CIA tipo ostium secundum",
+    "d": "Estenosis pulmonar leve"
+  },
+  "correcta": "a",
+  "explicacion": "El ductus arterioso persistente produce soplo continuo sisto-diastólico y pulsos amplios con presión diferencial aumentada.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-074",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niña de 3 años con soplo eyectivo en foco pulmonar y desdoblamiento fijo del segundo ruido. Diagnóstico probable:",
+  "opciones": {
+    "a": "Comunicación interauricular tipo ostium secundum",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "El desdoblamiento fijo del segundo ruido es patognomónico de la CIA tipo ostium secundum.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-075",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis intensa, soplo ausente y Rx con hiperflujo pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Coartación de aorta"
+  },
+  "correcta": "a",
+  "explicacion": "La TGV es la principal causa de cianosis refractaria al oxígeno con Rx de hiperflujo pulmonar y sin soplo audible.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-076",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño con soplo sistólico eyectivo irradiado al cuello y frémito palpable. Diagnóstico probable:",
+  "opciones": {
+    "a": "Estenosis aórtica valvular moderada",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV restrictiva",
+    "d": "CIA"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis aórtica valvular moderada produce soplo eyectivo con frémito e irradiación al cuello.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-077",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis, ECG con desviación del eje a la izquierda y cardiomegalia. Diagnóstico probable:",
+  "opciones": {
+    "a": "Atresia tricuspídea",
+    "b": "TGV",
+    "c": "Tetralogía de Fallot",
+    "d": "Estenosis pulmonar crítica"
+  },
+  "correcta": "a",
+  "explicacion": "La atresia tricuspídea se asocia con eje eléctrico izquierdo, cardiomegalia y cianosis precoz.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-078",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Niño de 9 años con dedos hipocráticos, cianosis y Rx con oligohemia pulmonar. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tetralogía de Fallot",
+    "b": "CIV restrictiva",
+    "c": "CIA pequeña",
+    "d": "Ductus arterioso persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La tetralogía de Fallot cursa con cianosis crónica, dedos hipocráticos y oligohemia pulmonar.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-079",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con pulsos femorales ausentes y gradiente tensional entre extremidades superiores e inferiores. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coartación de aorta",
+    "b": "Estenosis pulmonar leve",
+    "c": "CIV pequeña",
+    "d": "Tetralogía de Fallot"
+  },
+  "correcta": "a",
+  "explicacion": "La coartación de aorta se manifiesta con hipoperfusión de miembros inferiores y gradiente tensional característico.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-002-080",
+  "materia": "Pediatria",
+  "submateria": "Cardiopatias congenitas",
+  "enunciado": "Recién nacido con cianosis desde el nacimiento, Rx con hiperflujo y ECG con HVD. Diagnóstico probable:",
+  "opciones": {
+    "a": "Transposición de grandes vasos",
+    "b": "Tetralogía de Fallot",
+    "c": "Atresia tricuspídea",
+    "d": "Estenosis pulmonar crítica"
+  },
+  "correcta": "a",
+  "explicacion": "La transposición de grandes vasos se presenta con cianosis precoz, hiperflujo pulmonar y desviación derecha en el ECG.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+}
+]
