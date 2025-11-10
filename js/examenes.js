@@ -1,42 +1,54 @@
 /* ==========================================================
-   📄 EXÁMENES ANTERIORES — Lista + acceso por año
-   Mismo estilo y estructura que el módulo Choice por materia
+   📄 EXÁMENES ANTERIORES — Lista expandida (2016–2025)
+   Estilo igual a Choice por materia
    ========================================================== */
 
 let currentExamSort = localStorage.getItem("examSort") || "desc";
 
 /* ---------- Render principal ---------- */
 function renderExamenesLista() {
-  // lista base con conteo real desde BANK
-  const base = [
-    { slug: "examen_unico_2025", name: "Examen Único 2025" },
-    { slug: "examen_unico_2024", name: "Examen Único 2024" },
-    { slug: "examen_unico_2019", name: "Examen Único 2019" }
-  ];
+  const examenes = [];
+  for (let year = 2025; year >= 2016; year--) {
+    examenes.push({
+      slug: `examen_unico_${year}`,
+      name: `Examen Único ${year}`,
+    });
+  }
 
-  const examenes = base.map(ex => ({
-    ...ex,
-    preguntas: (BANK.questions || []).filter(q =>
-      normalizeString(q.examen || q.examen_nombre || "") === normalizeString(ex.slug)
-    ).length
-  }));
-
-  // Ordenar por año
+  // Ordenar según configuración
   examenes.sort((a, b) => {
     const ay = parseInt(a.name.match(/\d+/)?.[0] || "0");
     const by = parseInt(b.name.match(/\d+/)?.[0] || "0");
     return currentExamSort === "asc" ? ay - by : by - ay;
   });
 
-  // Construir lista
-  const list = examenes.map(ex => `
-    <div class="choice-item" onclick="abrirExamen('${ex.slug}', ${ex.preguntas})">
-      <div class="choice-top">
-        <span class="choice-title">${ex.name}</span>
-        <span style="color:#64748b;font-size:13px;">${ex.preguntas || 0} preguntas</span>
-      </div>
-    </div>
-  `).join("");
+  // Construir lista expandible (igual que choice)
+  const list = examenes.map(ex => {
+    const pool = (BANK.questions || []).filter(q => q.examen === ex.slug);
+    const total = pool.length;
+
+    return `
+      <div class="choice-item" onclick="toggleExam('${ex.slug}')">
+        <div class="choice-top">
+          <span class="choice-title">${ex.name}</span>
+          <span style="font-size:13px;color:#64748b;">
+            ${total ? `${total} preguntas` : "sin preguntas cargadas"}
+          </span>
+        </div>
+
+        <div id="exam-body-${ex.slug}" class="choice-body" style="display:none;">
+          ${
+            total
+              ? `
+              <div class="choice-row" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+                <button class="btn-practica" onclick="abrirExamen('${ex.slug}', event)">Iniciar examen</button>
+                <button class="btn-notas" onclick="alert('📘 Notas del ${ex.name}')">Notas</button>
+              </div>`
+              : `<p style="color:#64748b;font-size:13px;">⚠️ Aún no se cargaron las preguntas de este examen.</p>`
+          }
+        </div>
+      </div>`;
+  }).join("");
 
   app.innerHTML = `
     <div class="choice-container fade">
@@ -72,48 +84,31 @@ function renderExamenesLista() {
   }
 }
 
+/* ---------- Mostrar/ocultar examen ---------- */
+function toggleExam(slug) {
+  document.querySelectorAll(".choice-body").forEach(el => {
+    if (el.id !== `exam-body-${slug}`) el.style.display = "none";
+  });
+  const body = document.getElementById(`exam-body-${slug}`);
+  if (body) body.style.display = body.style.display === "block" ? "none" : "block";
+}
+
 /* ---------- Abrir examen ---------- */
-function abrirExamen(slug, total) {
-  const pool = (BANK.questions || []).filter(q =>
-    normalizeString(q.examen || q.examen_nombre || "") === normalizeString(slug)
-  );
+function abrirExamen(slug, event) {
+  event.stopPropagation();
+  const pool = (BANK.questions || []).filter(q => q.examen === slug);
+  if (!pool.length) return alert("⚠️ Aún no hay preguntas cargadas para este examen.");
 
-  if (!pool.length) {
-    alert("No se encontraron preguntas para este examen.");
-    console.warn(`⚠️ No hay preguntas para ${slug}`);
-    return;
-  }
-
+  CURRENT = { list: pool, i: 0, materia: slug, modo: "anteriores" };
   iniciarResolucion({
     modo: "anteriores",
     preguntas: pool,
     usarTimer: true,
     mostrarNotas: true,
     permitirRetroceso: true,
-    titulo: `📄 ${slug.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase())}`
+    titulo: `🧾 ${slug.replace(/_/g, " ").toUpperCase()}`
   });
-
-  // Mostrar título del examen sobre el cronómetro
-  setTimeout(() => {
-    const timerEl = document.getElementById("exam-timer");
-    if (timerEl) {
-      const label = document.createElement("div");
-      label.textContent = slug.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
-      label.style = `
-        font-weight:600;
-        font-size:13px;
-        text-align:center;
-        background:#0f172a;
-        color:#fff;
-        padding:4px 8px;
-        border-radius:6px 6px 0 0;
-        margin-bottom:2px;
-      `;
-      timerEl.parentNode.insertBefore(label, timerEl);
-    }
-  }, 400);
 }
 
-/* ---------- Exponer al scope global ---------- */
+/* ---------- Exportar ---------- */
 window.renderExamenesLista = renderExamenesLista;
-window.abrirExamen = abrirExamen;
