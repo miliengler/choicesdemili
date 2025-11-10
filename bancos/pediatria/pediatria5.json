@@ -1,0 +1,512 @@
+[
+  {
+  "id": "pediatria-005-001",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Según el Calendario Nacional de Vacunación 2025, a qué edad debe aplicarse la primera dosis de vacuna BCG?",
+  "opciones": {
+    "a": "Al recién nacido antes del alta de la maternidad",
+    "b": "A los 2 meses",
+    "c": "A los 6 meses",
+    "d": "A los 12 meses"
+  },
+  "correcta": "a",
+  "explicacion": "La BCG se aplica al recién nacido antes del alta, siempre que pese más de 2 kg y no existan contraindicaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-002",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un lactante de 3 meses con esquema incompleto no recibió la vacuna pentavalente. Qué conducta se indica según el documento de recuperación 2025?",
+  "opciones": {
+    "a": "Iniciar el esquema sin reiniciar, aplicando la dosis faltante según intervalo mínimo",
+    "b": "Reiniciar todo el esquema desde el nacimiento",
+    "c": "Esperar a los 6 meses para reiniciar",
+    "d": "Suspender la vacunación hasta el próximo control"
+  },
+  "correcta": "a",
+  "explicacion": "No se reinician esquemas. Se continúa aplicando las dosis faltantes respetando intervalos mínimos de 4 semanas entre aplicaciones.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-003",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál de las siguientes vacunas se aplica a los 11 años según el Calendario Nacional 2025?",
+  "opciones": {
+    "a": "HPV, triple bacteriana acelular y meningocócica ACWY",
+    "b": "Triple viral y rotavirus",
+    "c": "Hepatitis A y B",
+    "d": "Fiebre amarilla y polio oral"
+  },
+  "correcta": "a",
+  "explicacion": "A los 11 años se aplican las dosis de refuerzo de triple bacteriana acelular, meningocócica conjugada ACWY y la vacuna HPV bivalente o tetravalente según disponibilidad.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-004",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un niño de 6 años con calendario completo requiere ingreso escolar. Qué vacuna corresponde aplicar como refuerzo?",
+  "opciones": {
+    "a": "Triple bacteriana celular (DTP)",
+    "b": "BCG",
+    "c": "Hepatitis B",
+    "d": "Varicela"
+  },
+  "correcta": "a",
+  "explicacion": "A los 5-6 años se aplica el refuerzo de DTP (triple bacteriana celular) y la vacuna antipoliomielítica inactivada (IPV).",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-005",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna se aplica en dosis única al año de vida según el calendario 2025?",
+  "opciones": {
+    "a": "Hepatitis A",
+    "b": "Hepatitis B",
+    "c": "Varicela",
+    "d": "Rotavirus"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna contra la hepatitis A se aplica en dosis única a los 12 meses de edad.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-006",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna está indicada a partir de los 2 meses y requiere tres dosis en el primer año de vida?",
+  "opciones": {
+    "a": "Pentavalente (DTP-HB-Hib)",
+    "b": "Triple viral",
+    "c": "HPV",
+    "d": "Hepatitis A"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna pentavalente se aplica a los 2, 4 y 6 meses, protegiendo contra difteria, tétanos, tos convulsa, hepatitis B y Haemophilus influenzae tipo b.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-007",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna se aplica en forma oral según el calendario 2025?",
+  "opciones": {
+    "a": "Rotavirus",
+    "b": "Poliomielitis inactivada",
+    "c": "Meningocócica conjugada",
+    "d": "HPV"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna contra el rotavirus se administra por vía oral en dos dosis, a los 2 y 4 meses de vida.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-008",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un lactante de 9 meses no recibió vacuna antigripal. Qué indica el MSAL 2025?",
+  "opciones": {
+    "a": "Aplicar dos dosis separadas por 4 semanas si es la primera vez",
+    "b": "Aplicar una dosis única",
+    "c": "Esperar hasta los 12 meses",
+    "d": "Contraindicar por edad"
+  },
+  "correcta": "a",
+  "explicacion": "Los menores de 9 años que se vacunan por primera vez contra la gripe deben recibir dos dosis separadas por al menos 4 semanas.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-009",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna del calendario nacional 2025 protege frente a una bacteria encapsulada que causa meningitis y neumonía?",
+  "opciones": {
+    "a": "Neumocócica conjugada 13-valente",
+    "b": "Triple viral",
+    "c": "Hepatitis B",
+    "d": "Rotavirus"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna conjugada 13-valente previene infecciones graves por Streptococcus pneumoniae, como meningitis y neumonía.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-010",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál de las siguientes vacunas está indicada para todas las embarazadas en cada gestación, independientemente del antecedente?",
+  "opciones": {
+    "a": "Triple bacteriana acelular (Tdap)",
+    "b": "Antigripal solo en invierno",
+    "c": "Hepatitis A",
+    "d": "HPV"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna triple bacteriana acelular (Tdap) se aplica a partir de la semana 20 de cada embarazo, independientemente del antecedente, para proteger al recién nacido contra coqueluche.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-011",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un niño de 18 meses con calendario completo consulta para control. Qué vacunas corresponden a esta edad según el calendario 2025?",
+  "opciones": {
+    "a": "Triple viral, varicela y hepatitis A si no fueron aplicadas",
+    "b": "Pentavalente y polio",
+    "c": "BCG y hepatitis B",
+    "d": "Meningocócica ACWY y HPV"
+  },
+  "correcta": "a",
+  "explicacion": "A los 15–18 meses deben completarse las dosis de triple viral, varicela y hepatitis A en caso de no haber sido aplicadas previamente.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-012",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál es el esquema de vacunación contra poliomielitis vigente en Argentina en 2025?",
+  "opciones": {
+    "a": "Tres dosis de IPV (2, 4, 6 meses) y un refuerzo al ingreso escolar",
+    "b": "Dos dosis de IPV y una dosis oral",
+    "c": "Solo una dosis al año de vida",
+    "d": "Cuatro dosis orales tipo Sabin"
+  },
+  "correcta": "a",
+  "explicacion": "El esquema nacional 2025 incluye tres dosis de IPV (2, 4 y 6 meses) y un refuerzo a los 5–6 años, sin uso de vacuna oral Sabin.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-013",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna debe aplicarse obligatoriamente antes del ingreso escolar, aunque el esquema esté completo?",
+  "opciones": {
+    "a": "Triple viral (SRP)",
+    "b": "Hepatitis B",
+    "c": "Rotavirus",
+    "d": "HPV"
+  },
+  "correcta": "a",
+  "explicacion": "El refuerzo de la triple viral (sarampión, rubéola, parotiditis) se aplica al ingreso escolar, incluso si el niño recibió dosis previas.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-014",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un lactante de 7 meses no recibió ninguna dosis de vacuna antigripal. Qué esquema corresponde iniciar?",
+  "opciones": {
+    "a": "Dos dosis con intervalo mínimo de 4 semanas",
+    "b": "Una sola dosis anual",
+    "c": "Tres dosis separadas",
+    "d": "Esperar hasta el año para aplicarla"
+  },
+  "correcta": "a",
+  "explicacion": "Todos los menores de 9 años que se vacunan por primera vez contra la gripe deben recibir dos dosis separadas por al menos 4 semanas.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-015",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué esquema se aplica para la vacuna contra el rotavirus en Argentina?",
+  "opciones": {
+    "a": "Dos dosis a los 2 y 4 meses de edad",
+    "b": "Tres dosis a los 2, 4 y 6 meses",
+    "c": "Una dosis única al nacer",
+    "d": "Refuerzo a los 12 meses"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna monovalente contra el rotavirus se aplica en dos dosis a los 2 y 4 meses, sin refuerzos posteriores.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-016",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Un niño de 3 años que no recibió ninguna vacuna debe iniciar calendario. Qué principio aplica según el MSAL?",
+  "opciones": {
+    "a": "No reiniciar esquemas, aplicar todas las vacunas según edad y antecedentes",
+    "b": "Iniciar solo con vacunas virales",
+    "c": "Esperar ingreso escolar",
+    "d": "Aplicar solo una vacuna por mes"
+  },
+  "correcta": "a",
+  "explicacion": "Los esquemas no se reinician; se aplica el calendario según edad actual y antecedentes, respetando intervalos mínimos entre dosis.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-017",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál de las siguientes vacunas está incluida en el calendario para personal de salud y embarazadas?",
+  "opciones": {
+    "a": "Antigripal anual y triple bacteriana acelular (Tdap)",
+    "b": "Varicela y hepatitis A",
+    "c": "HPV y BCG",
+    "d": "Fiebre amarilla y polio oral"
+  },
+  "correcta": "a",
+  "explicacion": "Las embarazadas y el personal de salud deben recibir vacuna antigripal anual y Tdap en cada embarazo o si no la recibieron previamente.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-018",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "A qué edad se aplica la primera dosis de vacuna triple viral en Argentina?",
+  "opciones": {
+    "a": "A los 12 meses",
+    "b": "A los 6 meses",
+    "c": "Al nacimiento",
+    "d": "A los 18 meses"
+  },
+  "correcta": "a",
+  "explicacion": "La primera dosis de triple viral (sarampión, rubéola y parotiditis) se aplica a los 12 meses de edad.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-019",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál es el intervalo mínimo entre dosis de vacuna pentavalente según las normas del MSAL?",
+  "opciones": {
+    "a": "4 semanas",
+    "b": "6 semanas",
+    "c": "2 semanas",
+    "d": "8 semanas"
+  },
+  "correcta": "a",
+  "explicacion": "Entre las dosis de pentavalente debe respetarse un intervalo mínimo de 4 semanas para garantizar una adecuada respuesta inmunitaria.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-020",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna se aplica en el recién nacido junto con la BCG?",
+  "opciones": {
+    "a": "Hepatitis B (dentro de las primeras 12 horas de vida)",
+    "b": "Pentavalente",
+    "c": "Antigripal",
+    "d": "Triple viral"
+  },
+  "correcta": "a",
+  "explicacion": "El recién nacido debe recibir la vacuna hepatitis B dentro de las primeras 12 horas de vida junto con la BCG antes del alta.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  {
+  "id": "pediatria-005-021",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Una niña de 5 años inicia escolaridad y no tiene constancia de vacunas previas. Qué acción corresponde según el MSAL 2025?",
+  "opciones": {
+    "a": "Aplicar todas las vacunas correspondientes a su edad sin reiniciar esquemas",
+    "b": "Esperar a verificar carnet antes de vacunar",
+    "c": "Iniciar solo refuerzo de triple viral",
+    "d": "No vacunar hasta nueva consulta pediátrica"
+  },
+  "correcta": "a",
+  "explicacion": "En caso de ausencia de constancia, se debe aplicar el calendario según edad cronológica, sin reiniciar esquemas, garantizando cobertura completa.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-022",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacunas deben aplicarse a un niño de 2 meses de edad según el calendario 2025?",
+  "opciones": {
+    "a": "Pentavalente, polio (IPV), neumocócica conjugada y rotavirus",
+    "b": "BCG y hepatitis A",
+    "c": "Triple viral y varicela",
+    "d": "Meningocócica ACWY y HPV"
+  },
+  "correcta": "a",
+  "explicacion": "A los 2 meses se aplican pentavalente, IPV, neumocócica conjugada 13-valente y rotavirus, iniciando el esquema primario de inmunización.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-023",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál de las siguientes vacunas se administra solo en áreas de riesgo o viajes a zonas endémicas?",
+  "opciones": {
+    "a": "Fiebre amarilla",
+    "b": "Hepatitis A",
+    "c": "Neumocócica conjugada",
+    "d": "Meningocócica ACWY"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna contra la fiebre amarilla se aplica solo a residentes o viajeros a zonas endémicas definidas por el MSAL, a partir de los 12 meses de edad.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-024",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "A qué edad se aplica la vacuna antigripal anual en niños sanos según el calendario nacional?",
+  "opciones": {
+    "a": "A partir de los 6 meses de vida",
+    "b": "Desde el nacimiento",
+    "c": "Desde los 2 años",
+    "d": "Solo en edad escolar"
+  },
+  "correcta": "a",
+  "explicacion": "La vacuna antigripal está indicada a partir de los 6 meses de edad, aplicándose cada año según disponibilidad estacional.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-025",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna protege contra la tos convulsa (coqueluche) en el lactante?",
+  "opciones": {
+    "a": "Pentavalente (DTP-HB-Hib)",
+    "b": "Triple viral",
+    "c": "Meningocócica conjugada",
+    "d": "Hepatitis A"
+  },
+  "correcta": "a",
+  "explicacion": "La pentavalente incluye la protección contra difteria, tétanos y tos convulsa, además de hepatitis B y Haemophilus influenzae tipo b.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-026",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál de las siguientes vacunas está indicada en lactantes prematuros sin modificaciones respecto al término?",
+  "opciones": {
+    "a": "Todas las vacunas del calendario, salvo BCG si pesa menos de 2 kg",
+    "b": "Solo vacunas inactivadas",
+    "c": "Recién a partir de los 6 meses",
+    "d": "Solo hepatitis B y polio"
+  },
+  "correcta": "a",
+  "explicacion": "Los prematuros deben recibir todas las vacunas según edad cronológica; solo se difiere la BCG si el peso es menor a 2 kg.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-027",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna se aplica como refuerzo a los 15 meses de edad según el calendario argentino 2025?",
+  "opciones": {
+    "a": "Pentavalente (4.ª dosis)",
+    "b": "Triple viral",
+    "c": "Hepatitis A",
+    "d": "HPV"
+  },
+  "correcta": "a",
+  "explicacion": "A los 15 meses se aplica el refuerzo de pentavalente, completando la inmunización contra difteria, tétanos, coqueluche, hepatitis B y Haemophilus influenzae tipo b.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-028",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Una adolescente de 12 años nunca recibió vacuna HPV. Qué esquema corresponde aplicar según el calendario 2025?",
+  "opciones": {
+    "a": "Dos dosis separadas por 6 meses",
+    "b": "Tres dosis mensuales consecutivas",
+    "c": "Una dosis única",
+    "d": "Dos dosis separadas por 1 mes"
+  },
+  "correcta": "a",
+  "explicacion": "En adolescentes de 11 a 15 años no vacunados previamente, se aplican dos dosis de vacuna HPV separadas por un intervalo de 6 meses.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-029",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Qué vacuna se aplica en embarazadas a partir de la semana 20 de gestación?",
+  "opciones": {
+    "a": "Triple bacteriana acelular (Tdap)",
+    "b": "HPV",
+    "c": "Triple viral",
+    "d": "BCG"
+  },
+  "correcta": "a",
+  "explicacion": "La Tdap debe aplicarse en cada embarazo a partir de la semana 20, independientemente de antecedentes, para proteger al recién nacido contra coqueluche.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+{
+  "id": "pediatria-005-030",
+  "materia": "Pediatria",
+  "submateria": "Vacunacion infantil",
+  "enunciado": "Cuál es el intervalo mínimo recomendado entre dos dosis de vacuna triple viral?",
+  "opciones": {
+    "a": "4 semanas",
+    "b": "2 semanas",
+    "c": "8 semanas",
+    "d": "3 meses"
+  },
+  "correcta": "a",
+  "explicacion": "Entre dos dosis de triple viral debe respetarse un intervalo mínimo de 4 semanas para asegurar respuesta inmunológica adecuada.",
+  "examen": "Examen Unico",
+  "anio": 2025,
+  "oficial": false
+},
+  
