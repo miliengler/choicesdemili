@@ -1,0 +1,842 @@
+[ 
+{
+  "id": "pediatria-009-001",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Lactante con fiebre sin foco. Qué estudio confirma infección urinaria?",
+  "opciones": {
+    "a": "Urocultivo con recuento significativo según método de recolección",
+    "b": "Tira reactiva positiva",
+    "c": "Sedimento con 5–10 leucocitos/campo",
+    "d": "Ecografía renal normal"
+  },
+  "correcta": "a",
+  "explicacion": "El diagnóstico de ITU se confirma con urocultivo significativo: ≥100.000 UFC/ml (chorro medio), ≥50.000 (cateterismo) o cualquier crecimiento en punción suprapúbica."
+},
+{
+  "id": "pediatria-009-002",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña 7 años con disuria y poliaquiuria, afebril. Conducta inicial más adecuada?",
+  "opciones": {
+    "a": "Urocultivo antes de iniciar antibióticos",
+    "b": "Iniciar antibióticos sin muestras",
+    "c": "Radiografía de vías urinarias",
+    "d": "Derivar a nefrología de urgencia"
+  },
+  "correcta": "a",
+  "explicacion": "Siempre que sea posible, obtener muestra para cultivo antes de antibióticos para orientar el tratamiento."
+},
+{
+  "id": "pediatria-009-003",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Varón 2 años con primera ITU febril. Qué estudio por imágenes es de elección en la fase aguda?",
+  "opciones": {
+    "a": "Ecografía renal y de vías urinarias",
+    "b": "Cistouretrografía miccional seriada",
+    "c": "Centellograma DMSA inmediato",
+    "d": "Resonancia magnética renal"
+  },
+  "correcta": "a",
+  "explicacion": "La ecografía es el estudio inicial para evaluar dilataciones/ malformaciones. La CUMS se reserva para indicaciones específicas."
+},
+{
+  "id": "pediatria-009-004",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Escolar con hematuria macroscópica postinfecciosa. Qué dato orienta a origen glomerular?",
+  "opciones": {
+    "a": "Cilindros hemáticos y proteinuria asociada",
+    "b": "Coágulos en orina",
+    "c": "Dolor cólico lumbar intenso",
+    "d": "Cristales de oxalato cálcico abundantes"
+  },
+  "correcta": "a",
+  "explicacion": "Cilindros hemáticos y proteinuria sugieren origen glomerular; coágulos y dolor cólico orientan a vía urinaria baja/piedras."
+},
+{
+  "id": "pediatria-009-005",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Adolescente con TA elevada en dos controles separados. Primer estudio complementario recomendado?",
+  "opciones": {
+    "a": "Mapeo ambulatorio de presión arterial (MAPA) si disponible",
+    "b": "Ecocardiograma directo",
+    "c": "Angio-TC renal",
+    "d": "Biopsia renal"
+  },
+  "correcta": "a",
+  "explicacion": "El MAPA ayuda a confirmar hipertensión y descartar ‘bata blanca’, orientando el estudio etiológico."
+},
+{
+  "id": "pediatria-009-006",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Niño 3 años con diarrea sanguinolenta 5 días atrás, hoy palidez, petequias y oliguria. Cuál es la tríada diagnóstica del SUH típico?",
+  "opciones": {
+    "a": "Anemia hemolítica microangiopática, trombocitopenia, injuria renal aguda",
+    "b": "Anemia ferropénica, leucocitosis, deshidratación",
+    "c": "Trombocitosis, hematuria, proteinuria",
+    "d": "Anemia hemolítica autoinmune, fiebre, ictericia"
+  },
+  "correcta": "a",
+  "explicacion": "El SUH típico (posdiarreico por STEC) cursa con microangiopatía, plaquetas bajas y fracaso renal agudo."
+},
+{
+  "id": "pediatria-009-007",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Ante sospecha de SUH posdiarreico, cuál de las siguientes conductas está CONTRAINDICADA en la fase diarreica inicial?",
+  "opciones": {
+    "a": "Antibióticos empíricos y antiperistálticos",
+    "b": "Hidratación oral/EV cuidadosa",
+    "c": "Monitoreo de diuresis y PA",
+    "d": "Solicitud de hemograma y función renal"
+  },
+  "correcta": "a",
+  "explicacion": "En diarrea por STEC, antibióticos y antiperistálticos pueden aumentar la liberación de toxina Shiga y el riesgo de SUH."
+},
+{
+  "id": "pediatria-009-008",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué hallazgo de laboratorio apoya anemia hemolítica microangiopática en SUH?",
+  "opciones": {
+    "a": "Esquistocitos en frotis y LDH elevada",
+    "b": "Reticulocitos bajos y haptoglobina alta",
+    "c": "Coombs directo fuertemente positivo",
+    "d": "Leucopenia marcada con neutropenia severa"
+  },
+  "correcta": "a",
+  "explicacion": "La hemólisis microangiopática muestra esquistocitos, LDH alta y haptoglobina baja; el Coombs suele ser negativo."
+},
+{
+  "id": "pediatria-009-009",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Indicación clásica de diálisis en SUH pediátrico:",
+  "opciones": {
+    "a": "Anuria/oliguria persistente con hiperkalemia o sobrecarga hídrica",
+    "b": "Hematuria microscópica aislada",
+    "c": "LDH elevada sin síntomas",
+    "d": "Trombocitopenia leve sin sangrado"
+  },
+  "correcta": "a",
+  "explicacion": "Se dializa ante anuria/oliguria refractaria, hiperkalemia, uremia sintomática o sobrecarga hídrica no controlable."
+},
+{
+  "id": "pediatria-009-010",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Lactante con reflujo vesicoureteral (RVU) grado II. Conducta habitual en ausencia de ITU recurrente:",
+  "opciones": {
+    "a": "Observación con control clínico y medidas miccionales",
+    "b": "Cirugía antirreflujo inmediata",
+    "c": "Profilaxis antibiótica en todos los casos",
+    "d": "CUMS anual obligatoria"
+  },
+  "correcta": "a",
+  "explicacion": "Los RVU bajos suelen resolverse; se indican hábitos miccionales, manejo del estreñimiento y vigilancia. Profilaxis se individualiza."
+},
+  {
+  "id": "pediatria-009-011",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Niño con SUH presenta hipertensión arterial. Cuál es el antihipertensivo inicial recomendado?",
+  "opciones": {
+    "a": "Bloqueantes de los canales de calcio (nifedipina o amlodipina)",
+    "b": "Diurético de asa",
+    "c": "IECA desde el inicio",
+    "d": "Beta bloqueante en monoterapia"
+  },
+  "correcta": "a",
+  "explicacion": "En el SUH, el tratamiento inicial de la hipertensión se realiza con calcioantagonistas; los IECA se reservan para la etapa de recuperación renal."
+},
+{
+  "id": "pediatria-009-012",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "En un paciente con SUH, cuál es el manejo de la transfusión de glóbulos rojos?",
+  "opciones": {
+    "a": "Transfundir solo si hay compromiso clínico o Hb <7 g/dl",
+    "b": "Transfundir de rutina al diagnóstico",
+    "c": "Evitar transfusión por riesgo de sobrecarga",
+    "d": "Administrar corticoides antes de transfundir"
+  },
+  "correcta": "a",
+  "explicacion": "Las transfusiones deben ser restrictivas; solo se indican si hay anemia sintomática o Hb <7 g/dl, evitando sobrecarga de volumen."
+},
+{
+  "id": "pediatria-009-013",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "En el SUH típico, qué hallazgo precede habitualmente al cuadro renal?",
+  "opciones": {
+    "a": "Diarrea sanguinolenta por infección por E. coli productora de toxina Shiga",
+    "b": "Faringoamigdalitis estreptocócica",
+    "c": "Varicela con púrpura",
+    "d": "Bronquiolitis aguda"
+  },
+  "correcta": "a",
+  "explicacion": "El SUH típico sigue a una gastroenteritis por E. coli O157:H7 o STEC, con diarrea con sangre y luego insuficiencia renal."
+},
+{
+  "id": "pediatria-009-014",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué medida de prevención primaria es eficaz para reducir la incidencia de SUH típico?",
+  "opciones": {
+    "a": "Correcta cocción de carnes y evitar contaminación cruzada",
+    "b": "Evitar el consumo de cítricos ácidos en lactantes",
+    "c": "Administrar antibióticos ante diarrea sanguinolenta",
+    "d": "Vacunar contra rotavirus"
+  },
+  "correcta": "a",
+  "explicacion": "El SUH por STEC se previene con higiene alimentaria: carne bien cocida, lavado de manos y evitar contaminación cruzada."
+},
+{
+  "id": "pediatria-009-015",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué tipo de insuficiencia renal presenta típicamente el SUH?",
+  "opciones": {
+    "a": "Aguda oligúrica por necrosis cortical y microangiopatía",
+    "b": "Prerrenal por deshidratación",
+    "c": "Posrenal por obstrucción ureteral",
+    "d": "Crónica de progresión lenta"
+  },
+  "correcta": "a",
+  "explicacion": "El SUH cursa con injuria renal aguda oligúrica debido a microangiopatía trombótica y necrosis cortical."
+},
+{
+  "id": "pediatria-009-016",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué porcentaje de niños con SUH típico evoluciona a enfermedad renal crónica?",
+  "opciones": {
+    "a": "Aproximadamente 10–20 %",
+    "b": "Menos del 1 %",
+    "c": "Más del 50 %",
+    "d": "Todos los casos"
+  },
+  "correcta": "a",
+  "explicacion": "Entre 10 y 20 % de los pacientes con SUH típico pueden presentar secuelas renales a largo plazo."
+},
+{
+  "id": "pediatria-009-017",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué diferencia fundamental existe entre SUH típico y atípico?",
+  "opciones": {
+    "a": "El atípico no está precedido por diarrea y puede tener origen complementario o genético",
+    "b": "El atípico se asocia siempre a infección por E. coli O157",
+    "c": "El típico ocurre sin hemólisis ni trombocitopenia",
+    "d": "El atípico es autolimitado"
+  },
+  "correcta": "a",
+  "explicacion": "El SUH atípico no tiene diarrea previa y suele deberse a disfunción del complemento o causas genéticas; tiene peor pronóstico."
+},
+{
+  "id": "pediatria-009-018",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña de 10 años con proteinuria aislada leve en control de rutina. Conducta inicial?",
+  "opciones": {
+    "a": "Repetir examen con muestra de primera orina matinal",
+    "b": "Derivar de inmediato a nefrología",
+    "c": "Iniciar dieta hipoproteica",
+    "d": "Solicitar biopsia renal"
+  },
+  "correcta": "a",
+  "explicacion": "La proteinuria aislada puede ser ortostática o transitoria; se confirma con muestra de primera orina matinal."
+},
+{
+  "id": "pediatria-009-019",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Escolar con hematuria microscópica persistente y complemento normal. Diagnóstico probable?",
+  "opciones": {
+    "a": "Nefropatía por IgA",
+    "b": "Glomerulonefritis postestreptocócica",
+    "c": "Lupus eritematoso sistémico",
+    "d": "Nefritis túbulo-intersticial aguda"
+  },
+  "correcta": "a",
+  "explicacion": "La nefropatía por IgA cursa con hematuria recurrente, a veces macroscópica, y complemento normal."
+},
+{
+  "id": "pediatria-009-020",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña con ITU febril recurrente y CUMS con reflujo vesicoureteral grado IV. Qué tratamiento es más apropiado?",
+  "opciones": {
+    "a": "Derivación a urología para eventual corrección quirúrgica",
+    "b": "Observación expectante sin profilaxis",
+    "c": "Antibióticos empíricos prolongados sin estudios",
+    "d": "Solo control ecográfico anual"
+  },
+  "correcta": "a",
+  "explicacion": "Los RVU grados IV–V tienen alto riesgo de daño renal; requieren seguimiento especializado y posible corrección quirúrgica."
+},
+  {
+  "id": "pediatria-009-021",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Lactante de 6 meses con fiebre sin foco, urocultivo positivo para E. coli. Qué antibiótico empírico es adecuado en la fase inicial?",
+  "opciones": {
+    "a": "Ceftriaxona intravenosa",
+    "b": "Amoxicilina sola",
+    "c": "Nitrofurantoína oral",
+    "d": "Trimetoprima-sulfametoxazol oral inicial"
+  },
+  "correcta": "a",
+  "explicacion": "En lactantes menores de 6 meses con ITU febril se recomienda cefalosporina de 3ª generación IV, como ceftriaxona o cefotaxima."
+},
+{
+  "id": "pediatria-009-022",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué factor predispone más a infección urinaria recurrente en niñas?",
+  "opciones": {
+    "a": "Disfunción miccional y estreñimiento",
+    "b": "Exceso de ingesta hídrica",
+    "c": "Alergia a antibióticos previos",
+    "d": "Vacunación reciente"
+  },
+  "correcta": "a",
+  "explicacion": "El estreñimiento y las alteraciones del vaciamiento vesical favorecen el estasis urinario y aumentan el riesgo de ITU recurrente."
+},
+{
+  "id": "pediatria-009-023",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué indicación tiene la profilaxis antibiótica en ITU?",
+  "opciones": {
+    "a": "ITU febriles recurrentes o reflujo vesicoureteral alto grado",
+    "b": "Toda primera ITU",
+    "c": "Asintomáticos con piuria aislada",
+    "d": "Hematuria sin fiebre"
+  },
+  "correcta": "a",
+  "explicacion": "La profilaxis está indicada en RVU alto grado o ITU recurrentes mientras se completan estudios y hasta resolución del cuadro."
+},
+{
+  "id": "pediatria-009-024",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué complicación es más temida tras ITU febril en la infancia?",
+  "opciones": {
+    "a": "Cicatriz renal y nefropatía cicatricial",
+    "b": "Anemia ferropénica secundaria",
+    "c": "Urolitiasis por cristaluria",
+    "d": "Proteinuria ortostática"
+  },
+  "correcta": "a",
+  "explicacion": "La cicatriz renal puede generar hipertensión y enfermedad renal crónica; su prevención requiere diagnóstico y tratamiento oportuno."
+},
+{
+  "id": "pediatria-009-025",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué hallazgo ecográfico sugiere reflujo vesicoureteral o daño renal crónico?",
+  "opciones": {
+    "a": "Asimetría de tamaño renal o adelgazamiento cortical",
+    "b": "Quistes renales múltiples bilaterales",
+    "c": "Distensión vesical aislada",
+    "d": "Hidroureter leve reversible"
+  },
+  "correcta": "a",
+  "explicacion": "Asimetría renal y adelgazamiento cortical son signos indirectos de cicatrices o daño por reflujo vesicoureteral."
+},
+{
+  "id": "pediatria-009-026",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña de 8 años con hipertensión, orina normal y función renal conservada. Qué causa secundaria debe sospecharse?",
+  "opciones": {
+    "a": "Estenosis de arteria renal",
+    "b": "Glomerulonefritis postestreptocócica",
+    "c": "SUH atípico",
+    "d": "Hipotiroidismo"
+  },
+  "correcta": "a",
+  "explicacion": "La estenosis de arteria renal es causa de hipertensión renovascular con función renal inicial conservada."
+},
+{
+  "id": "pediatria-009-027",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué estudio confirma el diagnóstico de reflujo vesicoureteral?",
+  "opciones": {
+    "a": "Cistouretrografía miccional seriada (CUMS)",
+    "b": "Ecografía renal",
+    "c": "Centellograma renal con DMSA",
+    "d": "Urocultivo positivo"
+  },
+  "correcta": "a",
+  "explicacion": "La CUMS es el estudio de elección para confirmar RVU y determinar su grado."
+},
+{
+  "id": "pediatria-009-028",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Recién nacido con hidronefrosis bilateral detectada prenatalmente. Qué estudio inicial se recomienda tras el nacimiento?",
+  "opciones": {
+    "a": "Ecografía renal a las 48–72 horas de vida",
+    "b": "CUMS inmediata antes del alta",
+    "c": "Centellograma DMSA neonatal",
+    "d": "Urocultivo semanal por tres meses"
+  },
+  "correcta": "a",
+  "explicacion": "La ecografía postnatal precoz permite valorar persistencia y grado de dilatación; la CUMS se reserva para dilataciones severas o ITU."
+},
+{
+  "id": "pediatria-009-029",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño con glomerulonefritis postestreptocócica. Cuál es el hallazgo característico en laboratorio?",
+  "opciones": {
+    "a": "C3 disminuido y C4 normal",
+    "b": "C3 y C4 elevados",
+    "c": "Complemento normal",
+    "d": "ANA positivo"
+  },
+  "correcta": "a",
+  "explicacion": "La glomerulonefritis postestreptocócica cursa con descenso transitorio del C3 y C4 normal, que se normaliza en 6–8 semanas."
+},
+{
+  "id": "pediatria-009-030",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Lactante con riñón único funcional y función renal normal. Qué recomendaciones deben darse?",
+  "opciones": {
+    "a": "Evitar traumatismos, controles periódicos y orinas ante fiebre",
+    "b": "Iniciar profilaxis antibiótica indefinida",
+    "c": "Restringir proteínas de la dieta",
+    "d": "Indicar reposo prolongado"
+  },
+  "correcta": "a",
+  "explicacion": "Los niños con riñón único deben evitar traumatismos, controlar PA y función renal, y realizar urocultivo ante fiebre."
+},
+  {
+  "id": "pediatria-009-031",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Niño de 4 años en recuperación de SUH desarrolla edema generalizado con proteinuria persistente. Qué complicación se sospecha?",
+  "opciones": {
+    "a": "Secuela glomerular con síndrome nefrótico post-SUH",
+    "b": "Recidiva infecciosa por STEC",
+    "c": "Desnutrición proteica simple",
+    "d": "Anemia hemolítica crónica"
+  },
+  "correcta": "a",
+  "explicacion": "Algunos pacientes evolucionan con proteinuria o síndrome nefrótico persistente por daño glomerular residual."
+},
+{
+  "id": "pediatria-009-032",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Durante la fase aguda del SUH, cuál es la medida más importante de manejo inicial?",
+  "opciones": {
+    "a": "Balance hídrico estricto y control de la diuresis",
+    "b": "Antibióticos empíricos de amplio espectro",
+    "c": "Corticoides en pulsos",
+    "d": "Restricción absoluta de líquidos sin control"
+  },
+  "correcta": "a",
+  "explicacion": "El manejo del SUH se basa en sostén hemodinámico: balance hídrico, control de PA y corrección de electrolitos."
+},
+{
+  "id": "pediatria-009-033",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Qué hallazgo clínico obliga a iniciar diálisis urgente en un paciente con SUH?",
+  "opciones": {
+    "a": "Anuria > 24 h con hiperkalemia y edema pulmonar",
+    "b": "LDH alta aislada",
+    "c": "Anemia leve sin síntomas",
+    "d": "Trombocitopenia sin sangrado"
+  },
+  "correcta": "a",
+  "explicacion": "Anuria prolongada, hiperkalemia y sobrecarga hídrica no controlable son indicaciones absolutas de diálisis."
+},
+{
+  "id": "pediatria-009-034",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "En el seguimiento pos-SUH, cuál es la recomendación fundamental?",
+  "opciones": {
+    "a": "Control periódico de presión arterial, función renal y orina",
+    "b": "Alta inmediata al recuperar diuresis",
+    "c": "Evitar vacunas durante un año",
+    "d": "Profilaxis antibiótica prolongada"
+  },
+  "correcta": "a",
+  "explicacion": "Los controles de PA y función renal detectan precozmente secuelas crónicas post-SUH."
+},
+{
+  "id": "pediatria-009-035",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño de 8 años con edema palpebral matutino, orina espumosa y proteinuria masiva. Qué síndrome presenta?",
+  "opciones": {
+    "a": "Síndrome nefrótico",
+    "b": "Síndrome nefrítico agudo",
+    "c": "ITU recurrente",
+    "d": "Proteinuria ortostática"
+  },
+  "correcta": "a",
+  "explicacion": "La tríada edema-proteinuria-hipoalbuminemia define el síndrome nefrótico."
+},
+{
+  "id": "pediatria-009-036",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Cuál es la causa más frecuente de síndrome nefrótico en la infancia?",
+  "opciones": {
+    "a": "Enfermedad de cambios mínimos",
+    "b": "Glomeruloesclerosis focal y segmentaria",
+    "c": "Nefropatía por IgA",
+    "d": "Lupus eritematoso sistémico"
+  },
+  "correcta": "a",
+  "explicacion": "La enfermedad de cambios mínimos es responsable del 80–90 % de los casos de síndrome nefrótico idiopático infantil."
+},
+{
+  "id": "pediatria-009-037",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Cuál es el tratamiento inicial del síndrome nefrótico idiopático sensible a corticoides?",
+  "opciones": {
+    "a": "Prednisona oral 2 mg/kg/día por 4–6 semanas y descenso progresivo",
+    "b": "Ciclofosfamida inmediata",
+    "c": "Diuréticos en monoterapia",
+    "d": "Plasmaféresis preventiva"
+  },
+  "correcta": "a",
+  "explicacion": "El tratamiento estándar es prednisona en dosis plenas por 4–6 semanas, luego descenso; la mayoría responde favorablemente."
+},
+{
+  "id": "pediatria-009-038",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña de 10 años con hipertensión severa, cefalea y edema. Orina con hematuria y cilindros hemáticos. Diagnóstico probable?",
+  "opciones": {
+    "a": "Síndrome nefrítico agudo postestreptocócico",
+    "b": "Síndrome nefrótico puro",
+    "c": "ITU alta",
+    "d": "SUH en recuperación"
+  },
+  "correcta": "a",
+  "explicacion": "Hematuria glomerular, hipertensión y edema tras infección estreptocócica sugieren síndrome nefrítico postestreptocócico."
+},
+{
+  "id": "pediatria-009-039",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Cuál es la principal complicación a largo plazo del síndrome nefrítico postestreptocócico?",
+  "opciones": {
+    "a": "Hipertensión arterial persistente",
+    "b": "Recidiva infecciosa por estreptococo",
+    "c": "Hipercolesterolemia crónica",
+    "d": "Anemia ferropénica"
+  },
+  "correcta": "a",
+  "explicacion": "Algunos pacientes mantienen hipertensión leve residual por daño glomerular persistente."
+},
+{
+  "id": "pediatria-009-040",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño de 12 años con hipertensión y soplo abdominal. Cuál es la causa más probable?",
+  "opciones": {
+    "a": "Estenosis de arteria renal",
+    "b": "Glomerulonefritis crónica",
+    "c": "Coartación de aorta",
+    "d": "Feocromocitoma"
+  },
+  "correcta": "a",
+  "explicacion": "El soplo abdominal en contexto de hipertensión orienta a estenosis de arteria renal, causa de HTA secundaria en pediatría."
+},
+  {
+  "id": "pediatria-009-041",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño con antecedentes de válvulas uretrales posteriores tratadas en la lactancia. Qué complicación renal puede desarrollar a largo plazo?",
+  "opciones": {
+    "a": "Insuficiencia renal crónica por displasia renal",
+    "b": "Proteinuria ortostática benigna",
+    "c": "Nefrolitiasis por hipercalciuria",
+    "d": "Infecciones urinarias esporádicas sin daño renal"
+  },
+  "correcta": "a",
+  "explicacion": "Las válvulas uretrales posteriores pueden dejar secuelas obstructivas y displasia renal con progresión a enfermedad renal crónica."
+},
+{
+  "id": "pediatria-009-042",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Adolescente con diagnóstico de riñón poliquístico autosómico dominante. Qué estudio debe realizarse también en los familiares?",
+  "opciones": {
+    "a": "Ecografía renal a padres y hermanos",
+    "b": "Dosaje de creatinina en el adolescente solamente",
+    "c": "Urocultivo y radiografía de abdomen",
+    "d": "Resonancia cerebral"
+  },
+  "correcta": "a",
+  "explicacion": "El riñón poliquístico AD tiene herencia familiar; la ecografía detecta quistes en familiares de primer grado."
+},
+{
+  "id": "pediatria-009-043",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "En la enfermedad renal crónica pediátrica, cuál es la complicación metabólica más frecuente?",
+  "opciones": {
+    "a": "Anemia por déficit de eritropoyetina",
+    "b": "Hipocalcemia con tetania",
+    "c": "Hipoglucemia recurrente",
+    "d": "Poliglobulia compensadora"
+  },
+  "correcta": "a",
+  "explicacion": "La disminución de la eritropoyetina renal produce anemia normocítica-normocrómica en la ERC."
+},
+{
+  "id": "pediatria-009-044",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué parámetro se utiliza para estadificar la enfermedad renal crónica (ERC) en pediatría?",
+  "opciones": {
+    "a": "Tasa de filtrado glomerular estimada (TFGe)",
+    "b": "Niveles de urea aislados",
+    "c": "Peso corporal",
+    "d": "Cantidad de proteinuria en 24 h únicamente"
+  },
+  "correcta": "a",
+  "explicacion": "La TFGe determina el estadio de ERC, clasificando el daño renal en función del grado de filtrado glomerular."
+},
+{
+  "id": "pediatria-009-045",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña de 5 años con HTA y función renal normal. Qué examen físico orienta a una causa secundaria?",
+  "opciones": {
+    "a": "Soplo abdominal o soplo en flancos",
+    "b": "Soplo cardíaco funcional",
+    "c": "Cianosis de extremidades",
+    "d": "Edema en miembros inferiores"
+  },
+  "correcta": "a",
+  "explicacion": "El soplo abdominal indica posible estenosis de arteria renal, causa secundaria de hipertensión en niños."
+},
+{
+  "id": "pediatria-009-046",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué alteración del metabolismo óseo acompaña a la enfermedad renal crónica?",
+  "opciones": {
+    "a": "Hiperparatiroidismo secundario con osteodistrofia renal",
+    "b": "Hipoparatiroidismo con hipocalcemia",
+    "c": "Raquitismo carencial aislado",
+    "d": "Aumento del fósforo urinario"
+  },
+  "correcta": "a",
+  "explicacion": "La retención de fósforo y déficit de vitamina D activa causan hiperparatiroidismo secundario y osteodistrofia renal."
+},
+{
+  "id": "pediatria-009-047",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño con enfermedad renal crónica estadio 4. Cuál es el objetivo principal del tratamiento?",
+  "opciones": {
+    "a": "Retrasar la progresión del daño renal y tratar las complicaciones metabólicas",
+    "b": "Reducir el volumen urinario",
+    "c": "Evitar la alimentación proteica",
+    "d": "Suspender medicación antihipertensiva"
+  },
+  "correcta": "a",
+  "explicacion": "El tratamiento de la ERC busca enlentecer la progresión y manejar anemia, acidosis, alteraciones óseas e hipertensión."
+},
+{
+  "id": "pediatria-009-048",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué recomendación dietaria se da a pacientes con ERC en edad escolar?",
+  "opciones": {
+    "a": "Dieta normoproteica, con restricción de sodio y fósforo según estadio",
+    "b": "Dieta estrictamente hipoproteica",
+    "c": "Aporte proteico alto para compensar pérdidas",
+    "d": "Suspender lácteos y frutas"
+  },
+  "correcta": "a",
+  "explicacion": "La dieta debe ser normoproteica, controlando sodio y fósforo para evitar hiperparatiroidismo y acidosis metabólica."
+},
+{
+  "id": "pediatria-009-049",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño en hemodiálisis con fatiga progresiva y palidez. Qué parámetro de laboratorio debe evaluarse primero?",
+  "opciones": {
+    "a": "Hemoglobina y niveles de eritropoyetina",
+    "b": "Calcio sérico",
+    "c": "Ácido úrico",
+    "d": "pH sanguíneo"
+  },
+  "correcta": "a",
+  "explicacion": "La anemia es frecuente en diálisis; se evalúa hemoglobina y se ajusta eritropoyetina y hierro."
+},
+{
+  "id": "pediatria-009-050",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué intervención mejora la sobrevida en enfermedad renal crónica terminal en pediatría?",
+  "opciones": {
+    "a": "Trasplante renal precoz con donante vivo o cadáver compatible",
+    "b": "Diálisis indefinida sin trasplante",
+    "c": "Uso prolongado de corticoides en todos los casos",
+    "d": "Restricción hídrica total"
+  },
+  "correcta": "a",
+  "explicacion": "El trasplante renal es el tratamiento de elección en la enfermedad renal crónica terminal pediátrica, con mejores resultados vitales y de crecimiento."
+},
+  {
+  "id": "pediatria-009-051",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil (SUH)",
+  "enunciado": "Un niño tratado por SUH hace 3 años consulta por TA elevada y microalbuminuria. Qué sugiere esto?",
+  "opciones": {
+    "a": "Secuela renal crónica post-SUH",
+    "b": "Reinfección urinaria aguda",
+    "c": "Hipertensión esencial",
+    "d": "Recaída infecciosa por STEC"
+  },
+  "correcta": "a",
+  "explicacion": "La hipertensión y microalbuminuria años después del SUH reflejan daño glomerular residual."
+},
+{
+  "id": "pediatria-009-052",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Adolescente con hematuria macroscópica recurrente postinfecciosa y complemento normal. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Nefropatía por IgA (enfermedad de Berger)",
+    "b": "Glomerulonefritis postestreptocócica",
+    "c": "Lupus eritematoso sistémico",
+    "d": "Nefritis intersticial medicamentosa"
+  },
+  "correcta": "a",
+  "explicacion": "La hematuria coincidente con infecciones respiratorias altas y complemento normal es típica de nefropatía por IgA."
+},
+{
+  "id": "pediatria-009-053",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué parámetro define mejor la proteinuria clínicamente significativa en pediatría?",
+  "opciones": {
+    "a": "Relación proteína/creatinina en orina >0,2",
+    "b": "Tira reactiva 1+ aislada",
+    "c": "Orina turbia con espuma leve",
+    "d": "Sedimento con leucocitos aislados"
+  },
+  "correcta": "a",
+  "explicacion": "Una relación proteína/creatinina >0,2 en muestra aislada equivale a proteinuria significativa."
+},
+{
+  "id": "pediatria-009-054",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño con ITU febril a repetición y antecedentes de estreñimiento. Qué medida no farmacológica es esencial?",
+  "opciones": {
+    "a": "Tratamiento del estreñimiento y reeducación miccional",
+    "b": "Aumento de proteínas dietarias",
+    "c": "Uso prolongado de diuréticos",
+    "d": "Evitar líquidos nocturnos"
+  },
+  "correcta": "a",
+  "explicacion": "El manejo del estreñimiento y hábitos miccionales adecuados disminuye significativamente la recurrencia de ITU."
+},
+{
+  "id": "pediatria-009-055",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Lactante con ITU por Proteus mirabilis. Qué complicación debe buscarse?",
+  "opciones": {
+    "a": "Litiasis urinaria",
+    "b": "Glomerulonefritis",
+    "c": "Reflujo vesicoureteral",
+    "d": "Insuficiencia renal aguda"
+  },
+  "correcta": "a",
+  "explicacion": "Las infecciones por Proteus se asocian a producción de ureasa y formación de cálculos de estruvita."
+},
+{
+  "id": "pediatria-009-056",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño de 10 años con edemas, proteinuria y C3 normal. Qué diagnóstico sugiere?",
+  "opciones": {
+    "a": "Síndrome nefrótico idiopático (cambios mínimos)",
+    "b": "Glomerulonefritis postestreptocócica",
+    "c": "Lupus eritematoso sistémico",
+    "d": "Nefropatía membranoproliferativa"
+  },
+  "correcta": "a",
+  "explicacion": "En el síndrome nefrótico por cambios mínimos el complemento es normal, a diferencia del postinfeccioso."
+},
+{
+  "id": "pediatria-009-057",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Qué hallazgo clínico diferencia un síndrome nefrítico de un nefrótico?",
+  "opciones": {
+    "a": "Hematuria macroscópica y HTA en el nefrítico",
+    "b": "Proteinuria masiva en el nefrítico",
+    "c": "Hipoalbuminemia en ambos",
+    "d": "Edema leve y disuria en el nefrótico"
+  },
+  "correcta": "a",
+  "explicacion": "El nefrítico se caracteriza por hematuria, hipertensión y edema leve; el nefrótico por proteinuria masiva y hipoalbuminemia."
+},
+{
+  "id": "pediatria-009-058",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niño con ERC estadio 3 presenta acidosis metabólica. Qué tratamiento se indica?",
+  "opciones": {
+    "a": "Bicarbonato de sodio por vía oral para mantener bicarbonato >22 mEq/L",
+    "b": "Restricción completa de sodio",
+    "c": "Suspender lácteos",
+    "d": "Indicar furosemida continua"
+  },
+  "correcta": "a",
+  "explicacion": "En ERC con acidosis se corrige con bicarbonato oral para prevenir pérdida ósea y progresión del daño renal."
+},
+{
+  "id": "pediatria-009-059",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Adolescente con glomerulonefritis lúpica clase IV. Qué hallazgo complementario es típico?",
+  "opciones": {
+    "a": "ANA y anti-DNA positivos con C3 y C4 bajos",
+    "b": "Complemento normal",
+    "c": "Anemia hemolítica sin alteraciones inmunológicas",
+    "d": "Cultivos urinarios positivos"
+  },
+  "correcta": "a",
+  "explicacion": "La glomerulonefritis lúpica cursa con hipocomplementemia y autoanticuerpos positivos."
+},
+{
+  "id": "pediatria-009-060",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica infantil",
+  "enunciado": "Niña de 7 años con hipercalciuria idiopática y cólicos recurrentes. Qué medida preventiva se recomienda?",
+  "opciones": {
+    "a": "Aumentar la ingesta de líquidos y evitar exceso de sodio",
+    "b": "Restringir calcio dietario severamente",
+    "c": "Evitar frutas y verduras",
+    "d": "Suspender actividad física"
+  },
+  "correcta": "a",
+  "explicacion": "La hidratación y reducción del sodio disminuyen la excreción de calcio y el riesgo de litiasis urinaria."
+}
+]
