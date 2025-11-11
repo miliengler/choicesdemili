@@ -1,1571 +1,1502 @@
- [
-  {
-    "id": "PED-001",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Pablo, de 9 años, presentó una herida cortante en la pierna izquierda. El certificado de inmunizaciones está completo para su edad. ¿Qué conducta adopta con este niño?",
-    "opciones": [
-      "a. Sólo limpiar la herida",
-      "b. Limpia la herida e indica refuerzo de vacuna antitetánica",
-      "c. Limpia la herida e indica gammaglobulina antitetánica",
-      "d. Limpia la herida e indica vacuna antitetánica y gammaglobulina antitetánica"
-    ],
-    "correcta": "a",
-    "explicacion": "Si la herida es limpia y el paciente tiene esquema antitetánico completo con última dosis en los últimos 5 años, no se indica refuerzo ni gammaglobulina. Solo se realiza limpieza adecuada de la herida.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-002",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "¿Cuál de las siguientes vacunas es a virus inactivado?",
-    "opciones": [
-      "a. Sarampión",
-      "b. Hepatitis A",
-      "c. Fiebre amarilla",
-      "d. Varicela"
-    ],
-    "correcta": "b",
-    "explicacion": "La vacuna de Hepatitis A contiene virus inactivado. Las de sarampión, fiebre amarilla y varicela son a virus vivos atenuados.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-003",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Un paciente de 6 años recibió la vacuna triple viral hace 10 días y debe viajar a Paraguay dentro de 10 días. ¿Cuál es la conducta adecuada?",
-    "opciones": [
-      "a. Indicar vacuna contra la fiebre amarilla y permitir el viaje en la fecha prevista",
-      "b. Indicar vacuna contra la fiebre amarilla antes del viaje",
-      "c. Postergar la vacuna contra fiebre amarilla 20 días y permitir el viaje inmediatamente después",
-      "d. Postergar la vacuna contra fiebre amarilla 20 días y permitir el viaje 10 días después de su aplicación"
-    ],
-    "correcta": "d",
-    "explicacion": "Las vacunas a virus vivos parenterales deben aplicarse simultáneamente o separadas al menos 4 semanas. Debe esperar 20 días para aplicar fiebre amarilla y 10 días más para viajar.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-004",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Un adolescente de 13 años recibió una dosis de vacuna antihepatitis B hace 2 años. ¿Cuál es la conducta adecuada?",
-    "opciones": [
-      "a. Reiniciar el esquema 0-1-6 meses",
-      "b. Aplicar una nueva dosis y esperar 2 meses para completar el esquema",
-      "c. Aplicar una nueva dosis y esperar 6 meses para completar el esquema",
-      "d. Solicitar dosaje de anticuerpos anti-HBs y decidir vacunación según resultado"
-    ],
-    "correcta": "b",
-    "explicacion": "Los esquemas interrumpidos no se reinician. Se aplican las dosis faltantes respetando el intervalo mínimo: 2 meses entre segunda y tercera dosis para hepatitis B.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-005",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "María, de 5 años y 11 meses, recibió inmunoglobulina estándar hace una semana por brote de hepatitis A. ¿Qué vacunas deben indicarse hoy según calendario nacional?",
-    "opciones": [
-      "a. Salk, Triple bacteriana y Triple viral",
-      "b. Salk y Triple viral. Diferir por tres meses la Triple bacteriana",
-      "c. Triple viral y Triple bacteriana. Diferir por tres meses la Salk",
-      "d. Triple bacteriana y Salk. Diferir por tres meses la Triple viral y la antivaricela"
-    ],
-    "correcta": "d",
-    "explicacion": "Las inmunoglobulinas interfieren con vacunas a virus vivos. Por eso deben diferirse la triple viral y la antivaricela por 3 meses; pueden aplicarse Salk y triple bacteriana.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-006",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "El Ministerio de Salud incorporó la vacuna contra fiebre hemorrágica argentina a partir de los 15 años en zonas endémicas. ¿Cuáles son esas áreas?",
-    "opciones": [
-      "a. La Pampa y sur de Buenos Aires",
-      "b. Santa Fe, Córdoba, Buenos Aires y La Pampa",
-      "c. Entre Ríos y Corrientes",
-      "d. Santa Fe, Entre Ríos y La Pampa"
-    ],
-    "correcta": "b",
-    "explicacion": "Las provincias endémicas de fiebre hemorrágica argentina son Santa Fe, Córdoba, Buenos Aires y La Pampa.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-007",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Los padres de un lactante de 8 meses extraviaron el carnet de vacunación. Presenta cicatriz de BCG. ¿Cuál es la indicación más adecuada?",
-    "opciones": [
-      "a. Aplicar vacuna antisarampionosa",
-      "b. Reiniciar todas las vacunas",
-      "c. Dar todas las vacunas excepto BCG",
-      "d. Continuar el esquema según edad"
-    ],
-    "correcta": "c",
-    "explicacion": "Ante vacunación no documentada se reinicia el esquema completo, salvo la BCG si tiene cicatriz que demuestra aplicación previa.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-008",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Niño de 12 años con herida sucia en muslo. Última vacuna triple bacteriana a los 6 años. ¿Qué conducta corresponde?",
-    "opciones": [
-      "a. Aplicar Doble de adultos (DT)",
-      "b. Aplicar Doble de adultos más gammaglobulina",
-      "c. No vacunar, esquema completo",
-      "d. Aplicar Triple bacteriana (DPT)"
-    ],
-    "correcta": "a",
-    "explicacion": "Tiene esquema completo y última dosis hace más de 5 años. Por tratarse de herida sucia, se indica refuerzo con DT, sin gammaglobulina.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-009",
-    "materia": "pediatria",
-    "submateria": "Nutrición infantil",
-    "enunciado": "¿Cuál de los siguientes alimentos favorece la absorción de hierro?",
-    "opciones": [
-      "a. Té",
-      "b. Cereales",
-      "c. Leche de vaca",
-      "d. Cítricos"
-    ],
-    "correcta": "d",
-    "explicacion": "El ácido ascórbico (vitamina C) presente en frutas cítricas aumenta la absorción intestinal del hierro no hemo.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-010",
-    "materia": "pediatria",
-    "submateria": "Nutrición infantil",
-    "enunciado": "La madre de un lactante de 5 meses no puede continuar la lactancia y no tiene recursos para comprar fórmula. ¿Cómo se debe preparar la leche según recomendaciones del Ministerio de Salud?",
-    "opciones": [
-      "a. Leche entera diluida a dos tercios con 5% de azúcar",
-      "b. Leche entera en polvo fortificada con hierro al 12,5% más 5% de azúcar",
-      "c. Leche entera en polvo fortificada con hierro al 6% más 5% de azúcar y 2% de aceite",
-      "d. Leche fluida diluida a dos tercios más 7% de azúcar"
-    ],
-    "correcta": "c",
-    "explicacion": "En menores de 6 meses se indica leche entera en polvo fortificada al 6%, con 5% de azúcar y 2% de aceite, diluida en agua hervida.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  } ,
-
-  {
-    "id": "PED-011",
-    "materia": "pediatria",
-    "submateria": "Nutrición infantil",
-    "enunciado": "Entre qué edades un niño aumenta en promedio 20 gramos por día de peso:",
-    "opciones": [
-      "a. 3-4 meses",
-      "b. 5-6 meses",
-      "c. 7-8 meses",
-      "d. 9-10 meses"
-    ],
-    "correcta": "a",
-    "explicacion": "Durante los primeros 3 a 4 meses de vida el aumento promedio es de 20 g/día. Luego la velocidad de crecimiento disminuye progresivamente.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-012",
-    "materia": "pediatria",
-    "submateria": "Nutrición infantil",
-    "enunciado": "Un niño de 4 años presenta peso bajo para la talla, pero talla normal para la edad. ¿Cuál es el diagnóstico nutricional?",
-    "opciones": [
-      "a. Desnutrición aguda",
-      "b. Desnutrición crónica",
-      "c. Desnutrición crónica reagudizada",
-      "d. Secuela de desnutrición"
-    ],
-    "correcta": "a",
-    "explicacion": "La desnutrición aguda cursa con peso bajo para la talla, sin afectación de la talla para la edad, lo que indica compromiso reciente del estado nutricional.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-013",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y desarrollo",
-    "enunciado": "Arturo, de 14 años y medio, tiene talla -2,09 DS, edad ósea de 12 años y examen físico normal. ¿Cuál es el diagnóstico más probable?",
-    "opciones": [
-      "a. Retraso de crecimiento endocrino",
-      "b. Retraso de crecimiento cromosómico",
-      "c. Retraso constitucional del crecimiento",
-      "d. Crecimiento normal"
-    ],
-    "correcta": "c",
-    "explicacion": "El retraso constitucional se caracteriza por maduración ósea retrasada y antecedentes familiares de maduración lenta, con desarrollo normal posterior.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-014",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y desarrollo",
-    "enunciado": "Niña de 12 años con talla en percentilo 5, edad ósea 2 DS menor a la cronológica, padres de talla alta. Diagnóstico probable:",
-    "opciones": [
-      "a. Baja talla familiar",
-      "b. Deficiencia de hormona de crecimiento",
-      "c. Hipotiroidismo",
-      "d. Retraso constitucional del crecimiento"
-    ],
-    "correcta": "d",
-    "explicacion": "Padres altos descartan talla familiar; la edad ósea retrasada y el crecimiento enlentecido indican un retraso constitucional del crecimiento.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-015",
-    "materia": "pediatria",
-    "submateria": "Infecciones respiratorias",
-    "enunciado": "Lactante de 6 meses con bronquiolitis presenta tiraje generalizado, aleteo nasal, FR 55 y sibilancias. Según el puntaje de Tal, ¿qué gravedad presenta?",
-    "opciones": [
-      "a. Leve",
-      "b. Moderado",
-      "c. Grave",
-      "d. Datos insuficientes"
-    ],
-    "correcta": "b",
-    "explicacion": "Con FR 55, tiraje y sibilancias bilaterales, el puntaje de Tal suma 6 puntos: cuadro moderado que requiere manejo en guardia y reevaluación.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-016",
-    "materia": "pediatria",
-    "submateria": "Infecciones respiratorias",
-    "enunciado": "Niño de 1 año con dificultad respiratoria, FR 50, sibilancias y tiraje intercostal. Según consenso IRAB SAP, ¿cuál es la conducta inicial?",
-    "opciones": [
-      "a. Alta con salbutamol cada 6 h",
-      "b. Salbutamol cada 20 min (3 dosis) y reevaluar",
-      "c. Internación para oxigenoterapia",
-      "d. Salbutamol + corticoides EV y reevaluar"
-    ],
-    "correcta": "b",
-    "explicacion": "En IRAB moderada se indica tratamiento en guardia con 3 dosis de salbutamol cada 20 minutos y reevaluar la evolución antes de decidir internación.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-017",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Recién nacido de 38 semanas y 2800 g con íleo meconial. ¿Qué patología debe investigarse primero?",
-    "opciones": [
-      "a. Enfermedad de Hirschsprung",
-      "b. Divertículo de Meckel",
-      "c. Fibrosis quística",
-      "d. Malrotación intestinal"
-    ],
-    "correcta": "c",
-    "explicacion": "El íleo meconial es una manifestación neonatal clásica de fibrosis quística y debe investigarse con test del sudor o estudio genético.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-018",
-    "materia": "pediatria",
-    "submateria": "Infecciones respiratorias",
-    "enunciado": "Niño de 2 años con fiebre, taquipnea, saturación 90% y consolidación basal izquierda. Según consenso IRAB SAP, ¿cuál es el tratamiento?",
-    "opciones": [
-      "a. Amoxicilina VO 100 mg/kg/día",
-      "b. Ampicilina EV 200 mg/kg/día",
-      "c. Ampicilina VO 200 mg/kg/día",
-      "d. Cefotaxima EV 200 mg/kg/día"
-    ],
-    "correcta": "b",
-    "explicacion": "La saturación <94% indica internación. En neumonía típica en menores de 5 años se indica ampicilina EV 200 mg/kg/día cada 6 h.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-019",
-    "materia": "pediatria",
-    "submateria": "Infecciones respiratorias",
-    "enunciado": "Niña de 9 meses con consolidación basal derecha. ¿Cuál es el agente etiológico más probable?",
-    "opciones": [
-      "a. Staphylococcus aureus",
-      "b. Virus sincicial respiratorio",
-      "c. Moraxella catarrhalis",
-      "d. Streptococcus pneumoniae"
-    ],
-    "correcta": "d",
-    "explicacion": "El Streptococcus pneumoniae es la causa más frecuente de neumonía lobar en lactantes mayores y preescolares.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-020",
-    "materia": "pediatria",
-    "submateria": "Infecciones respiratorias",
-    "enunciado": "Según consenso IRAB SAP, ¿a partir de qué edad aumenta la prevalencia de Mycoplasma pneumoniae como causa de neumonía?",
-    "opciones": [
-      "a. Desde el año",
-      "b. Desde los 2 años",
-      "c. Desde los 3 años",
-      "d. Desde los 4 años"
-    ],
-    "correcta": "d",
-    "explicacion": "Mycoplasma pneumoniae aparece con mayor frecuencia como agente etiológico a partir de los 4 años de edad.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-
-  {
-    "id": "PED-021",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "Lactante de 9 meses inicia súbitamente dolor abdominal cólico, palidez y heces en jarabe de grosella. ¿Cuál es el diagnóstico más probable?",
-    "opciones": [
-      "a. Enterocolitis",
-      "b. Divertículo de Meckel",
-      "c. Pólipo colónico juvenil",
-      "d. Invaginación intestinal"
-    ],
-    "correcta": "d",
-    "explicacion": "La invaginación intestinal es la causa más frecuente de obstrucción intestinal en menores de 2 años. Cursa con dolor cólico, palidez, letargia y heces en jarabe de grosella.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-022",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "¿Cuál es la utilidad de los anticuerpos antiendomisio y antitransglutaminasa en la enfermedad celíaca?",
-    "opciones": [
-      "a. Confirmación diagnóstica, screening familiar y seguimiento",
-      "b. Apoyo diagnóstico, screening familiar y pronóstico a largo plazo",
-      "c. Apoyo diagnóstico, pronóstico y seguimiento de respuesta a la dieta",
-      "d. Apoyo diagnóstico, screening familiar y seguimiento de respuesta a la dieta"
-    ],
-    "correcta": "d",
-    "explicacion": "Los anticuerpos antiendomisio y antitransglutaminasa tienen valor de apoyo diagnóstico, permiten detectar familiares afectados y sirven para seguimiento tras iniciar la dieta sin gluten.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-023",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "Niño de 18 meses con pérdida de peso progresiva desde la incorporación de gluten en la dieta. Peso y talla < P3, padres de talla normal. Diagnóstico probable:",
-    "opciones": [
-      "a. Baja talla familiar",
-      "b. Recanalización genética",
-      "c. Retardo de crecimiento intrauterino",
-      "d. Enfermedad celíaca"
-    ],
-    "correcta": "d",
-    "explicacion": "El retraso del crecimiento posterior a la introducción del gluten sugiere enfermedad celíaca, descartando causas genéticas o prenatales.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-024",
-    "materia": "pediatria",
-    "submateria": "Nefrología pediátrica",
-    "enunciado": "Lactante de 15 días con fiebre de 39 °C. Se sospecha infección urinaria. ¿Cuál es el método más adecuado para obtener muestra de orina para cultivo?",
-    "opciones": [
-      "a. Punción vesical suprapúbica",
-      "b. Bolsita colectora",
-      "c. Urocultivo al acecho",
-      "d. Sondaje vesical intermitente"
-    ],
-    "correcta": "a",
-    "explicacion": "En menores de 2 meses se recomienda punción suprapúbica para cultivo, ya que la bolsa colectora presenta alto riesgo de contaminación.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-025",
-    "materia": "pediatria",
-    "submateria": "Cirugía pediátrica",
-    "enunciado": "Niño de 8 años con traumatismo testicular, testículo derecho aumentado de tamaño y doloroso. ¿Cuál es la conducta inicial más adecuada?",
-    "opciones": [
-      "a. Ecodoppler testicular",
-      "b. Desrotación manual inmediata",
-      "c. Centellografía testicular",
-      "d. Exploración quirúrgica inmediata"
-    ],
-    "correcta": "a",
-    "explicacion": "El ecodoppler permite confirmar flujo sanguíneo y descartar torsión testicular, evitando cirugía innecesaria en traumatismos leves.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-026",
-    "materia": "pediatria",
-    "submateria": "Nefrología pediátrica",
-    "enunciado": "Niña de 3 años con síndrome urémico hemolítico y anuria de 24 h, K 5,9 mEq/l, acidosis metabólica. ¿Cuál es la conducta inmediata?",
-    "opciones": [
-      "a. Conducta expectante",
-      "b. Corrección con bicarbonato 1/6 M",
-      "c. Corrección rápida con NaCl hipertónico",
-      "d. Diálisis peritoneal"
-    ],
-    "correcta": "d",
-    "explicacion": "El síndrome urémico hemolítico con anuria prolongada, hiperkalemia y acidosis requiere diálisis peritoneal para sostén metabólico y depuración.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-027",
-    "materia": "pediatria",
-    "submateria": "Infecciones virales",
-    "enunciado": "Lactante de 7 meses afebril con exantema macular tras tres días de fiebre de 39°C. Diagnóstico más probable:",
-    "opciones": [
-      "a. Sarampión",
-      "b. Rubéola",
-      "c. Exantema súbito",
-      "d. Quinta enfermedad"
-    ],
-    "correcta": "c",
-    "explicacion": "El exantema súbito (roseola) es característico por fiebre alta que desaparece bruscamente antes de la aparición del exantema macular generalizado.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-028",
-    "materia": "pediatria",
-    "submateria": "Infecciones virales",
-    "enunciado": "Niño de 8 años con fiebre 6 días, lengua aframbuesada, adenopatía cervical y rash polimorfo. Diagnóstico más probable:",
-    "opciones": [
-      "a. Escarlatina",
-      "b. Sarampión",
-      "c. Shock tóxico",
-      "d. Enfermedad de Kawasaki"
-    ],
-    "correcta": "d",
-    "explicacion": "La enfermedad de Kawasaki cursa con fiebre prolongada, exantema polimorfo, cambios mucocutáneos y adenopatía cervical; requiere tratamiento con gammaglobulina e aspirina.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-029",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Recién nacido de madre VIH positiva. ¿Qué estudio confirma infección neonatal?",
-    "opciones": [
-      "a. PCR posparto y a los 4 meses",
-      "b. ELISA al mes y a los 6 meses",
-      "c. Antígeno p24 en sangre de cordón",
-      "d. Western Blot a los 6 meses"
-    ],
-    "correcta": "a",
-    "explicacion": "El diagnóstico de infección por VIH en RN se realiza mediante PCR a las 24-48 h posparto y repetición a las 4-6 semanas; el ELISA no es útil por paso transplacentario de anticuerpos maternos.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-030",
-    "materia": "pediatria",
-    "submateria": "Emergencias",
-    "enunciado": "Niño de 4 años inicia urticaria, disfonía, estridor y hipotensión tras penicilina. ¿Cuál es el fármaco de elección inicial?",
-    "opciones": [
-      "a. Adrenalina",
-      "b. Corticoides",
-      "c. Antihistamínicos",
-      "d. Broncodilatadores"
-    ],
-    "correcta": "a",
-    "explicacion": "La anafilaxia es una emergencia vital. La adrenalina intramuscular es el tratamiento inicial de elección, seguida por medidas de sostén y corticoides.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-
-  {
-    "id": "PED-031",
-    "materia": "pediatria",
-    "submateria": "Salud mental y maltrato infantil",
-    "enunciado": "Niño de 8 años con enfermedad recurrente, síntomas que desaparecen al ausentarse la madre, cuidador que no se separa del niño. Diagnóstico probable:",
-    "opciones": [
-      "a. Trastorno de conversión",
-      "b. Trastorno de somatización",
-      "c. Síndrome de Munchausen por poder",
-      "d. Hipocondría infantil"
-    ],
-    "correcta": "c",
-    "explicacion": "El síndrome de Munchausen por poder se caracteriza por la producción o simulación de síntomas por parte del cuidador, usualmente la madre, buscando atención médica para el niño.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-032",
-    "materia": "pediatria",
-    "submateria": "Alergia e inmunología",
-    "enunciado": "Niño de 12 años con edema facial, estridor y disnea luego de picadura de insecto. ¿Cuál es el tratamiento inmediato?",
-    "opciones": [
-      "a. Adrenalina intramuscular",
-      "b. Hidrocortisona EV",
-      "c. Difenhidramina EV",
-      "d. Budesonida inhalatoria"
-    ],
-    "correcta": "a",
-    "explicacion": "La adrenalina intramuscular es el fármaco de elección en toda reacción anafiláctica, ya que revierte el broncoespasmo y la hipotensión rápidamente.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-033",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "¿Cuál es la causa más frecuente de hipotiroidismo congénito?",
-    "opciones": [
-      "a. Disgenesia tiroidea",
-      "b. Resistencia periférica a las hormonas tiroideas",
-      "c. Infecciones congénitas",
-      "d. Bocio dishormonogenético"
-    ],
-    "correcta": "a",
-    "explicacion": "La disgenesia tiroidea (agenesia, ectopia o hipoplasia) representa más del 80% de los casos de hipotiroidismo congénito.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-034",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y desarrollo",
-    "enunciado": "Adolescente de 15 años con talla 1,58 m (P5-10), padre 1,78 m, madre 1,55 m. ¿Qué estudio permite diferenciar baja talla familiar de retraso constitucional?",
-    "opciones": [
-      "a. Velocidad de crecimiento",
-      "b. Radiografía para edad ósea",
-      "c. Talla objetivo genética",
-      "d. Score Z"
-    ],
-    "correcta": "b",
-    "explicacion": "La radiografía de mano y muñeca determina la edad ósea. En el retraso constitucional está disminuida en más de 2 DS respecto a la cronológica.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-035",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Niña de 13 años con talla 144 cm (P10), Tanner II, edad ósea 11,5 años, sin menarca. ¿Cuál es la conducta más adecuada?",
-    "opciones": [
-      "a. Tranquilizar, crecimiento dentro de parámetros normales",
-      "b. Solicitar cariotipo",
-      "c. Repetir edad ósea en 6 meses",
-      "d. Dosaje de hormona de crecimiento"
-    ],
-    "correcta": "a",
-    "explicacion": "El cuadro es compatible con un retraso constitucional del crecimiento y desarrollo puberal. No hay rasgos dismórficos que sugieran Turner.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-036",
-    "materia": "pediatria",
-    "submateria": "Oncohematología",
-    "enunciado": "¿Cuál de los siguientes tumores es más frecuente entre los 10 y 20 años de edad?",
-    "opciones": [
-      "a. Wilms",
-      "b. Neuroblastoma",
-      "c. Retinoblastoma",
-      "d. Sarcomas óseos"
-    ],
-    "correcta": "d",
-    "explicacion": "Los sarcomas óseos (osteosarcoma y sarcoma de Ewing) predominan en la adolescencia, mientras que Wilms y neuroblastoma son más comunes en menores de 5 años.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-037",
-    "materia": "pediatria",
-    "submateria": "Infecciones virales",
-    "enunciado": "Niña de 1 año con exantema de 4 días, mejillas eritematosas y exantema reticulado en extremidades. Diagnóstico probable:",
-    "opciones": [
-      "a. Eritema infeccioso (quinta enfermedad)",
-      "b. Sarampión",
-      "c. Rubéola",
-      "d. Escarlatina"
-    ],
-    "correcta": "a",
-    "explicacion": "El eritema infeccioso (Parvovirus B19) se caracteriza por el exantema en 'cachetada' facial y patrón reticulado en tronco y extremidades.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-038",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que corre bien, anda en triciclo, hace torres de 10 cubos, copia círculos y cuenta hasta tres. ¿Qué edad madurativa tiene?",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "c",
-    "explicacion": "Los hitos descritos corresponden a los 3 años de edad: corre, pedalea triciclo, copia círculo, cuenta objetos y forma frases de 6 palabras.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-039",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que usa el tobogán solo, corta figuras con tijeras, cuenta hasta 4 y juega con otros niños. Edad madurativa aproximada:",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "d",
-    "explicacion": "A los 4 años puede recortar figuras, contar hasta 4, narrar historias simples y jugar de forma cooperativa.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-040",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que se sienta solo, gatea, usa pinza fina, responde a su nombre y saluda con la mano. ¿Qué edad corresponde?",
-    "opciones": [
-      "a. 6 meses",
-      "b. 10 meses",
-      "c. 12 meses",
-      "d. 18 meses"
-    ],
-    "correcta": "b",
-    "explicacion": "A los 10 meses el lactante se sienta sin apoyo, gatea, hace pinza fina, reconoce su nombre y realiza gestos sociales simples como saludar o aplaudir.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-041",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niña que se mantiene parada sostenida de la silla, señala con el dedo, dice mamá y papá, imita acciones y ayuda a vestirse. ¿Qué edad madurativa tiene?",
-    "opciones": [
-      "a. 6 meses",
-      "b. 9 meses",
-      "c. 12 meses",
-      "d. 15 meses"
-    ],
-    "correcta": "c",
-    "explicacion": "A los 12 meses el niño se pone de pie con apoyo, señala objetos, dice palabras bisílabas, imita y participa en actividades simples de vestirse.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-042",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "Lactante de 6 meses con vómitos a chorro, contenido lácteo no bilioso, hambre persistente y escasa diuresis. Diagnóstico más probable:",
-    "opciones": [
-      "a. Gastroenteritis viral",
-      "b. Estenosis hipertrófica del píloro",
-      "c. Reflujo gastroesofágico",
-      "d. Intolerancia a proteínas de leche de vaca"
-    ],
-    "correcta": "b",
-    "explicacion": "La estenosis pilórica cursa con vómitos no biliosos postprandiales, hambre persistente, pérdida de peso y signos de deshidratación leve.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-043",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Según el consenso SAP 2012, ¿cómo se diagnostica la obesidad en mayores de 2 años?",
-    "opciones": [
-      "a. IMC > percentilo 97",
-      "b. IMC > percentilo 95",
-      "c. Peso/talla > 2 DE",
-      "d. Peso/talla > percentilo 97"
-    ],
-    "correcta": "a",
-    "explicacion": "La SAP define obesidad con IMC mayor al percentilo 97 (puntaje Z ≥2) y sobrepeso entre los percentilos 85 y 96.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-044",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Niño con meningitis por meningococo B. ¿Cuál es la profilaxis recomendada para el grupo familiar?",
-    "opciones": [
-      "a. Rifampicina a todo el grupo familiar",
-      "b. Rifampicina solo a los adultos",
-      "c. Ciprofloxacina a los menores de 2 años",
-      "d. Ciprofloxacina solo a embarazadas"
-    ],
-    "correcta": "a",
-    "explicacion": "La profilaxis postexposición ante meningococo se realiza con rifampicina a todos los convivientes, independientemente de la edad.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-045",
-    "materia": "pediatria",
-    "submateria": "Farmacología pediátrica",
-    "enunciado": "¿Cuál de los siguientes fármacos analgésicos se puede usar en lactantes menores de 6 meses?",
-    "opciones": [
-      "a. Dipirona",
-      "b. Paracetamol",
-      "c. Diclofenac",
-      "d. Aspirina"
-    ],
-    "correcta": "b",
-    "explicacion": "El paracetamol es el único antipirético/analgésico seguro para menores de 6 meses. Los AINEs y la aspirina están contraindicados en lactantes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-046",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Recién nacido de 30 semanas con SDR e hipoxemia. En la radiografía torácica se observa vidrio esmerilado y broncograma aéreo. Diagnóstico probable:",
-    "opciones": [
-      "a. Enfermedad de membrana hialina",
-      "b. Displasia broncopulmonar",
-      "c. Atelectasia obstructiva",
-      "d. Enfisema intersticial"
-    ],
-    "correcta": "a",
-    "explicacion": "La enfermedad de membrana hialina cursa con patrón en vidrio esmerilado y broncograma aéreo, típica de prematurez y déficit de surfactante.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-047",
-    "materia": "pediatria",
-    "submateria": "Vacunas y prevención",
-    "enunciado": "Niña de 15 meses que recibió vacunas hasta los 6 meses. Según el calendario nacional, ¿qué vacunas corresponden?",
-    "opciones": [
-      "a. Triple viral, Hepatitis A, Pentavalente, Neumococo, Meningococo, Antigripal y Varicela",
-      "b. Triple viral, Hepatitis A, Antigripal, Pentavalente, Salk y Varicela",
-      "c. Triple viral, Hepatitis A, HPV, Neumococo, Antigripal y Varicela",
-      "d. Triple viral, Hepatitis A, Salk y Varicela"
-    ],
-    "correcta": "a",
-    "explicacion": "A los 15 meses corresponden TV, HAV, refuerzo pentavalente, antineumocócica, antimeningocócica, antigripal anual y varicela según esquema nacional.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-048",
-    "materia": "pediatria",
-    "submateria": "Nutrición infantil",
-    "enunciado": "Niña de 7 días con pérdida del 5% del peso al nacer, con lactancia exclusiva eficaz. Conducta más adecuada:",
-    "opciones": [
-      "a. Tranquilizar a la madre y controlar evolución",
-      "b. Agregar fórmula después de cada mamada",
-      "c. Internación para estudio",
-      "d. Solicitar análisis de orina"
-    ],
-    "correcta": "a",
-    "explicacion": "La pérdida de peso de hasta 10% en la primera semana es fisiológica. Se indica continuar lactancia exclusiva y control evolutivo.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-049",
-    "materia": "pediatria",
-    "submateria": "Emergencias",
-    "enunciado": "Niño de 3 años en shock por diarrea aguda. ¿Cuál es la conducta inicial?",
-    "opciones": [
-      "a. Expansión con solución polielectrolítica 20 ml/kg en 10 min",
-      "b. Expansión con solución fisiológica 20 ml/kg en ≤30 min",
-      "c. Laboratorio del medio interno antes de hidratar",
-      "d. Intubación y antibióticos de amplio espectro"
-    ],
-    "correcta": "b",
-    "explicacion": "El shock hipovolémico por deshidratación requiere expansión con solución fisiológica 20 ml/kg en 20–30 minutos y reevaluación clínica.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-050",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Recién nacido con ictericia fisiológica. ¿Cuál es la afirmación correcta?",
-    "opciones": [
-      "a. Se inicia después de las primeras 48 h y es a predominio indirecto",
-      "b. Se inicia antes de las 2 h y dura 25 días",
-      "c. Se inicia luego de las 2 semanas y es directa",
-      "d. Se inicia luego de la primera semana y es directa"
-    ],
-    "correcta": "a",
-    "explicacion": "La ictericia fisiológica inicia después de las 48 horas de vida, con predominio de bilirrubina indirecta y duración menor a 10 días.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-051",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "Lactante de 9 meses con fiebre, tos y consolidación en base derecha. ¿Cuál es el agente etiológico más probable?",
-    "opciones": [
-      "a. Streptococcus pneumoniae",
-      "b. Virus sincicial respiratorio",
-      "c. Moraxella catarrhalis",
-      "d. Mycoplasma pneumoniae"
-    ],
-    "correcta": "a",
-    "explicacion": "En menores de 2 años, el agente más frecuente de neumonía lobar es Streptococcus pneumoniae. Mycoplasma predomina a partir de los 4 años.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-052",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "¿A partir de qué edad aumenta la prevalencia de Mycoplasma pneumoniae como causa de neumonía en niños?",
-    "opciones": [
-      "a. A partir del año",
-      "b. A partir de los dos años",
-      "c. A partir de los tres años",
-      "d. A partir de los cuatro años"
-    ],
-    "correcta": "d",
-    "explicacion": "El Mycoplasma pneumoniae se asocia a neumonías atípicas, más comunes en mayores de 4 años y adolescentes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-053",
-    "materia": "pediatria",
-    "submateria": "Gastroenterología",
-    "enunciado": "Niño de 6 meses con vómitos y heces en jarabe de grosella. Diagnóstico más probable:",
-    "opciones": [
-      "a. Gastroenteritis por E. coli enterotoxigénica",
-      "b. Infección por Rotavirus",
-      "c. Invaginación intestinal",
-      "d. Cólico del lactante"
-    ],
-    "correcta": "c",
-    "explicacion": "La triada clásica de invaginación intestinal es dolor intermitente, vómitos y deposiciones mucosanguinolentas ('jarabe de grosella').",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-054",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Según el consenso IRAB de la SAP, ¿cuáles son las medidas de aislamiento para infecciones respiratorias de transmisión aérea?",
-    "opciones": [
-      "a. Lavado de manos, camisolín y barbijo estándar",
-      "b. Habitación tipo cohorte y barbijo N95",
-      "c. Lavado de manos, cohorte y barbijo de alta eficiencia",
-      "d. Lavado de manos, habitación individual y barbijo común"
-    ],
-    "correcta": "c",
-    "explicacion": "Las infecciones respiratorias requieren aislamiento de contacto y gotas: lavado de manos, habitación individual o cohorte y barbijo de alta eficiencia.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-055",
-    "materia": "pediatria",
-    "submateria": "Nefrología pediátrica",
-    "enunciado": "Niña de 4 años con fiebre e irritabilidad. Se solicita sedimento de orina. ¿Qué método es adecuado para obtener la muestra?",
-    "opciones": [
-      "a. Colector plástico",
-      "b. Al acecho con buena higiene",
-      "c. Punción suprapúbica",
-      "d. Sondaje vesical"
-    ],
-    "correcta": "b",
-    "explicacion": "En niños que controlan esfínteres se utiliza muestra de chorro medio tras higiene perineal; la punción suprapúbica se reserva para lactantes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-056",
-    "materia": "pediatria",
-    "submateria": "Dermatología pediátrica",
-    "enunciado": "Lactante de 18 meses con fiebre, hiperestesia cutánea, eritema periorificial y signo de Nikolsky positivo. Diagnóstico más probable:",
-    "opciones": [
-      "a. Impétigo bulloso",
-      "b. Fascitis necrotizante",
-      "c. Síndrome de la piel escaldada",
-      "d. Epidermólisis ampollosa"
-    ],
-    "correcta": "c",
-    "explicacion": "El síndrome de la piel escaldada es causado por toxina exfoliativa de S. aureus y se caracteriza por fiebre, eritema difuso y signo de Nikolsky positivo.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-057",
-    "materia": "pediatria",
-    "submateria": "Dermatología pediátrica",
-    "enunciado": "Niña de 2 años proveniente de orfanato con lesiones pruriginosas en pliegues y vesículas en palmas y plantas. Tratamiento indicado:",
-    "opciones": [
-      "a. Aciclovir oral",
-      "b. Hidrocortisona tópica",
-      "c. Cefalexina oral",
-      "d. Permetrina tópica"
-    ],
-    "correcta": "d",
-    "explicacion": "La escabiosis se trata con permetrina al 5% desde el cuello hacia abajo, repitiendo a la semana, e indicando tratamiento a convivientes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-058",
-    "materia": "pediatria",
-    "submateria": "Neumonología pediátrica",
-    "enunciado": "Según el consenso de neumonía adquirida en la comunidad infantil, ¿qué hallazgos son más sugestivos de neumonía?",
-    "opciones": [
-      "a. Tos, taquipnea y fiebre",
-      "b. PCR y VSG elevadas",
-      "c. Rx de tórax de frente y perfil",
-      "d. Estertores crepitantes aislados"
-    ],
-    "correcta": "a",
-    "explicacion": "Los hallazgos clínicos con mayor valor predictivo para neumonía son fiebre, taquipnea y tos; la radiografía se reserva para casos moderados o graves.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-059",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "¿Entre qué semanas se completa la maduración pulmonar fetal?",
-    "opciones": [
-      "a. Entre la semana 24 y 34",
-      "b. Después de la 34",
-      "c. Antes de la 24",
-      "d. Entre la 22 y 24"
-    ],
-    "correcta": "a",
-    "explicacion": "La maduración pulmonar, con producción adecuada de surfactante, ocurre entre las 24 y 34 semanas de gestación.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-060",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Niña de 3 años con impétigo. Según la SAP, ¿cuándo puede reintegrarse al colegio?",
-    "opciones": [
-      "a. No requiere evicción escolar",
-      "b. Desde el inicio del tratamiento",
-      "c. A las 24 h de iniciado el tratamiento",
-      "d. A las 48 h de iniciado el tratamiento"
-    ],
-    "correcta": "d",
-    "explicacion": "El impétigo es contagioso hasta 48 h de tratamiento antibiótico. Puede reintegrarse si cesa la supuración activa.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-
-  {
-    "id": "PED-061",
-    "materia": "pediatria",
-    "submateria": "Inmunizaciones",
-    "enunciado": "Según el consenso SAP 2016 sobre seguridad infantil, ¿a partir de qué edad puede un niño viajar en el asiento delantero de un automóvil?",
-    "opciones": [
-      "a. 8 años",
-      "b. 10 años",
-      "c. 12 años",
-      "d. 14 años"
-    ],
-    "correcta": "c",
-    "explicacion": "El consenso de la SAP sobre seguridad vehicular recomienda que los niños viajen en el asiento trasero hasta los 12 años o hasta medir más de 1,50 m.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-062",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Lactante de 8 meses con hidrocele bilateral desde el nacimiento, transiluminación positiva y sin cambios de tamaño. ¿Cuál es la conducta adecuada?",
-    "opciones": [
-      "a. Solicitar ecografía con Doppler testicular",
-      "b. Iniciar tratamiento con gonadotrofina coriónica",
-      "c. Interconsulta con cirugía pediátrica",
-      "d. Conducta expectante hasta el año de edad"
-    ],
-    "correcta": "d",
-    "explicacion": "El hidrocele no comunicante suele resolverse espontáneamente antes del año. No requiere intervención quirúrgica salvo persistencia o aumento de tamaño.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-063",
-    "materia": "pediatria",
-    "submateria": "Emergencias pediátricas",
-    "enunciado": "Lactante de 8 meses con irritabilidad, heces con sangre y ecografía que muestra imagen en diana. Diagnóstico probable:",
-    "opciones": [
-      "a. Gastroenteritis aguda",
-      "b. Invaginación intestinal",
-      "c. Síndrome urémico hemolítico",
-      "d. Divertículo de Meckel"
-    ],
-    "correcta": "b",
-    "explicacion": "La ecografía con imagen en diana o 'donut sign' confirma el diagnóstico de invaginación intestinal, urgencia abdominal más frecuente en menores de 2 años.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-064",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Recién nacido a término presenta vómitos biliosos y radiografía con signo de doble burbuja. Diagnóstico más probable:",
-    "opciones": [
-      "a. Atresia duodenal",
-      "b. Estenosis pilórica",
-      "c. Invaginación intestinal",
-      "d. Enfermedad de Hirschsprung"
-    ],
-    "correcta": "a",
-    "explicacion": "El signo radiológico de doble burbuja es característico de la atresia duodenal, que se presenta con vómitos biliosos desde las primeras horas de vida.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-065",
-    "materia": "pediatria",
-    "submateria": "Neumonología pediátrica",
-    "enunciado": "Niña de 15 años con episodios de disnea nocturna y sibilancias recurrentes. Presenta síntomas más de 2 veces por semana. ¿Cuál es el tratamiento de mantenimiento indicado?",
-    "opciones": [
-      "a. Cromoglicato de sodio inhalado",
-      "b. Budesonida inhalatoria",
-      "c. Bromuro de ipratropio",
-      "d. Salmeterol inhalado"
-    ],
-    "correcta": "b",
-    "explicacion": "El asma persistente leve a moderado requiere corticoides inhalatorios como budesonida para control y prevención del remodelado bronquial.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-066",
-    "materia": "pediatria",
-    "submateria": "Nefrología pediátrica",
-    "enunciado": "Niño de 7 años con hematuria, hipertensión y edema bipalpebral una semana post-faringitis. ¿Qué estudio orienta a la etiología?",
-    "opciones": [
-      "a. Urea y creatinina séricas",
-      "b. Dosaje de complemento C3",
-      "c. Ecografía renovesical",
-      "d. Proteinuria en orina de 24 hs"
-    ],
-    "correcta": "b",
-    "explicacion": "La glomerulonefritis postestreptocócica cursa con hipocomplementemia transitoria (C3 bajo), orientando el diagnóstico etiológico.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-067",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Niña de 7 años con telarca y vello pubiano, crecimiento acelerado y Tanner 3. Diagnóstico más probable:",
-    "opciones": [
-      "a. Tumor hipofisario",
-      "b. Quiste ovárico simple",
-      "c. Exposición a estrógenos exógenos",
-      "d. Pubertad precoz central idiopática"
-    ],
-    "correcta": "d",
-    "explicacion": "La pubertad precoz central idiopática se debe a activación temprana del eje hipotálamo-hipófiso-gonadal, frecuente en niñas sin patología orgánica.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-068",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Niño de 7 meses con fiebre alta 3 días y exantema macular al descender la temperatura. Diagnóstico más probable:",
-    "opciones": [
-      "a. Sarampión",
-      "b. Rubéola",
-      "c. Exantema súbito",
-      "d. Eritema infeccioso"
-    ],
-    "correcta": "c",
-    "explicacion": "El exantema súbito (roséola) se caracteriza por fiebre alta seguida de exantema post-febril no pruriginoso, causado por HHV-6.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-069",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Niño de 8 años con fiebre, rash polimorfo, lengua aframbuesada y adenopatía cervical. Diagnóstico probable:",
-    "opciones": [
-      "a. Escarlatina",
-      "b. Sarampión",
-      "c. Síndrome de shock tóxico",
-      "d. Enfermedad de Kawasaki"
-    ],
-    "correcta": "d",
-    "explicacion": "La enfermedad de Kawasaki se diagnostica por fiebre ≥5 días y ≥4 criterios clínicos: conjuntivitis, cambios orales, rash, adenopatía y extremidades.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-070",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Recién nacido de madre con HIV. ¿Qué estudio confirma infección neonatal?",
-    "opciones": [
-      "a. PCR al nacer y a los 4 meses",
-      "b. ELISA al mes y a los 6 meses",
-      "c. Antígeno p24 en sangre de cordón",
-      "d. ELISA posparto y Western Blot"
-    ],
-    "correcta": "a",
-    "explicacion": "El diagnóstico de HIV en RN se realiza con PCR ADN o ARN viral a las 24–48 h y se repite a las 4–6 semanas y 4 meses. ELISA no es válido por Ac maternos.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-071",
-    "materia": "pediatria",
-    "submateria": "Emergencias pediátricas",
-    "enunciado": "Niño de 4 años con anafilaxia tras penicilina (taquicardia, disfonía, estridor, hipotensión). ¿Cuál es el tratamiento inicial?",
-    "opciones": [
-      "a. Adrenalina",
-      "b. Corticoides",
-      "c. Antihistamínicos",
-      "d. Broncodilatadores"
-    ],
-    "correcta": "a",
-    "explicacion": "La adrenalina intramuscular (0,01 mg/kg) es el tratamiento de elección en la anafilaxia. Los corticoides y antihistamínicos son adyuvantes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-072",
-    "materia": "pediatria",
-    "submateria": "Emergencias pediátricas",
-    "enunciado": "Niño de 12 años con edema facial, estridor y sudoración tras picadura de insecto. ¿Cuál es el fármaco indicado?",
-    "opciones": [
-      "a. Adrenalina",
-      "b. Hidrocortisona",
-      "c. Difenhidramina",
-      "d. Budesonida"
-    ],
-    "correcta": "a",
-    "explicacion": "El shock anafiláctico requiere adrenalina intramuscular como primera medida. Los demás son coadyuvantes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-073",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "¿Cuál es la causa más frecuente de hipotiroidismo congénito?",
-    "opciones": [
-      "a. Disgenesia tiroidea",
-      "b. Resistencia periférica a las hormonas tiroideas",
-      "c. Infecciones congénitas",
-      "d. Bocio dishormonogenético"
-    ],
-    "correcta": "a",
-    "explicacion": "La disgenesia tiroidea (ectopia o agenesia) representa el 85–90% de los casos de hipotiroidismo congénito.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-074",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Varón de 15 años con baja talla y velocidad de crecimiento normal. Radiografía ósea acorde a edad cronológica. Diagnóstico probable:",
-    "opciones": [
-      "a. Baja talla familiar",
-      "b. Retraso constitucional del crecimiento",
-      "c. Déficit de hormona de crecimiento",
-      "d. Hipotiroidismo"
-    ],
-    "correcta": "a",
-    "explicacion": "En la baja talla familiar, la velocidad de crecimiento es normal y la edad ósea coincide con la cronológica. En el retraso constitucional, la edad ósea está retrasada.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": true
-  },
-  {
-    "id": "PED-075",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que se sienta solo, gatea, hace pinza fina, responde a su nombre y saluda con la mano. Edad aproximada:",
-    "opciones": [
-      "a. 6 meses",
-      "b. 10 meses",
-      "c. 12 meses",
-      "d. 18 meses"
-    ],
-    "correcta": "b",
-    "explicacion": "A los 10 meses el niño logra sentarse solo, realiza pinza fina, responde a su nombre y realiza gestos simples como saludar o aplaudir.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-076",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niña que mete un objeto dentro de otro, dice mamá/papá, ayuda a vestirse y señala objetos. Edad madurativa:",
-    "opciones": [
-      "a. 9 meses",
-      "b. 12 meses",
-      "c. 15 meses",
-      "d. 18 meses"
-    ],
-    "correcta": "b",
-    "explicacion": "A los 12 meses aparecen la prensión fina, la imitación y el uso intencional de palabras simples. Comienza la interacción funcional con objetos.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-077",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que anda en triciclo, copia un círculo, cuenta hasta tres objetos, hace frases de seis palabras y pregunta '¿por qué?'. Edad estimada:",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "c",
-    "explicacion": "A los 3 años (36 meses) el niño desarrolla lenguaje estructurado, coordinación fina y juego simbólico básico.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-078",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que usa tijeras, cuenta hasta cuatro y juega en interacción con otros. Edad madurativa aproximada:",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "d",
-    "explicacion": "A los 4 años el niño desarrolla motricidad fina avanzada, interacción social cooperativa y noción numérica simple.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-079",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y nutrición",
-    "enunciado": "¿Entre qué edades un niño aumenta en promedio 20 gramos por día de peso?",
-    "opciones": [
-      "a. 3–4 meses",
-      "b. 5–6 meses",
-      "c. 7–8 meses",
-      "d. 9–10 meses"
-    ],
-    "correcta": "a",
-    "explicacion": "Entre los 3 y 4 meses la ganancia diaria promedio es de 20 g. Luego la velocidad de crecimiento comienza a disminuir progresivamente.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-080",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y nutrición",
-    "enunciado": "Niño de 4 años con peso bajo para la talla pero talla normal para la edad. Diagnóstico nutricional:",
-    "opciones": [
-      "a. Desnutrición aguda",
-      "b. Desnutrición crónica",
-      "c. Desnutrición crónica reagudizada",
-      "d. Secuela de desnutrición"
-    ],
-    "correcta": "a",
-    "explicacion": "La desnutrición aguda se caracteriza por bajo peso para la talla con talla conservada, reflejando déficit reciente de nutrientes.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-081",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Varón de 14 años y medio con talla –2,09 DS, edad ósea de 12 años y desarrollo normal. Diagnóstico más probable:",
-    "opciones": [
-      "a. Retraso de crecimiento endocrino",
-      "b. Retraso de crecimiento cromosómico",
-      "c. Retraso constitucional del crecimiento",
-      "d. Crecimiento normal"
-    ],
-    "correcta": "c",
-    "explicacion": "El retraso constitucional se caracteriza por maduración ósea retrasada, desarrollo puberal tardío y antecedentes familiares de maduración lenta.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-082",
-    "materia": "pediatria",
-    "submateria": "Endocrinología pediátrica",
-    "enunciado": "Niña de 12 años con talla en percentilo 5, edad ósea retrasada y padres altos. Diagnóstico más probable:",
-    "opciones": [
-      "a. Baja talla genética",
-      "b. Deficiencia de GH",
-      "c. Hipotiroidismo",
-      "d. Retraso constitucional del crecimiento"
-    ],
-    "correcta": "d",
-    "explicacion": "El retraso constitucional del crecimiento cursa con talla baja, maduración ósea retrasada y antecedentes familiares de crecimiento tardío.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-083",
-    "materia": "pediatria",
-    "submateria": "Oncohematología pediátrica",
-    "enunciado": "¿Cuál es el tumor más frecuente entre los 10 y 20 años?",
-    "opciones": [
-      "a. Tumor de Wilms",
-      "b. Neuroblastoma",
-      "c. Retinoblastoma",
-      "d. Sarcomas óseos"
-    ],
-    "correcta": "d",
-    "explicacion": "En la adolescencia predominan los sarcomas óseos (osteosarcoma, Ewing), a diferencia de los tumores renales o neuroblásticos del lactante.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-084",
-    "materia": "pediatria",
-    "submateria": "Nefrología pediátrica",
-    "enunciado": "¿Cuáles son las principales indicaciones de diálisis peritoneal en síndrome urémico hemolítico?",
-    "opciones": [
-      "a. Anuria prolongada, hipervolemia, hiperkalemia y acidosis severa",
-      "b. Hiponatremia leve y anemia",
-      "c. Hematuria persistente y proteinuria",
-      "d. Oliguria leve con edemas"
-    ],
-    "correcta": "a",
-    "explicacion": "La diálisis se indica en SUH con potasio ≥7 mEq/l, acidosis metabólica, hipervolemia, anuria >24–48 h o uremia sintomática.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-085",
-    "materia": "pediatria",
-    "submateria": "Salud mental y social",
-    "enunciado": "Niño con síntomas variables, enfermedades inexplicables, síntomas ausentes cuando no está el cuidador y actitud inapropiada del mismo. Diagnóstico probable:",
-    "opciones": [
-      "a. Trastorno de conversión",
-      "b. Trastorno de somatización",
-      "c. Síndrome de Munchausen por poder",
-      "d. Hipocondría"
-    ],
-    "correcta": "c",
-    "explicacion": "El síndrome de Munchausen por poder implica simulación o inducción de síntomas en el niño por parte del cuidador, buscando atención médica.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-086",
-    "materia": "pediatria",
-    "submateria": "Infectología",
-    "enunciado": "Niña de 6 años con exantema que se inicia en cara y se exacerba con agua caliente, mejillas eritematosas y exantema reticulado. Diagnóstico probable:",
-    "opciones": [
-      "a. Sarampión",
-      "b. Escarlatina",
-      "c. Quinta enfermedad",
-      "d. Enterovirosis exantemática"
-    ],
-    "correcta": "c",
-    "explicacion": "El eritema infeccioso (quinta enfermedad) se caracteriza por exantema en 'cachetada' y patrón reticulado en extremidades, causado por Parvovirus B19.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-087",
-    "materia": "pediatria",
-    "submateria": "Neumonología pediátrica",
-    "enunciado": "Niña de 4 años con tos, fiebre y taquipnea. Según la SAP, ¿qué signos clínicos orientan mejor al diagnóstico de neumonía?",
-    "opciones": [
-      "a. Tos, taquipnea y fiebre",
-      "b. Estertores aislados",
-      "c. Hipoxemia y retracciones leves",
-      "d. Soplo tubario aislado"
-    ],
-    "correcta": "a",
-    "explicacion": "Los signos clínicos más sensibles y específicos de neumonía adquirida en la comunidad son tos, fiebre y taquipnea.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-088",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que imita cruces, arma torres de 10 cubos y construye frases de seis palabras. Edad estimada:",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "c",
-    "explicacion": "A los 3 años el desarrollo motor y del lenguaje permite realizar torres, copiar formas y mantener diálogo fluido.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-089",
-    "materia": "pediatria",
-    "submateria": "Desarrollo infantil",
-    "enunciado": "Niño que usa el tobogán solo, juega con pala y balde, recorta con tijeras y cuenta hasta cuatro. Edad madurativa:",
-    "opciones": [
-      "a. 24 meses",
-      "b. 30 meses",
-      "c. 36 meses",
-      "d. 48 meses"
-    ],
-    "correcta": "d",
-    "explicacion": "A los 4 años el niño ya realiza tareas motoras finas y juegos compartidos, con mayor autonomía e integración social.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-090",
-    "materia": "pediatria",
-    "submateria": "Neonatología",
-    "enunciado": "Recién nacido con ictericia fisiológica. ¿Cuál de las siguientes es correcta?",
-    "opciones": [
-      "a. Se inicia después de las 48 h y es a predominio indirecto",
-      "b. Se inicia antes de las 2 h y es directa",
-      "c. Dura más de 20 días en RN a término",
-      "d. Se asocia a colestasis neonatal"
-    ],
-    "correcta": "a",
-    "explicacion": "La ictericia fisiológica se inicia luego de las 48 h, con bilirrubina indirecta <12 mg/dl y resolución en 7–10 días.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  },
-  {
-    "id": "PED-091",
-    "materia": "pediatria",
-    "submateria": "Crecimiento y nutrición",
-    "enunciado": "Niña de 8 años con sobrepeso. Según la SAP, ¿qué IMC define obesidad en mayores de 2 años?",
-    "opciones": [
-      "a. IMC > percentilo 85",
-      "b. IMC > percentilo 90",
-      "c. IMC > percentilo 97",
-      "d. IMC > percentilo 99"
-    ],
-    "correcta": "c",
-    "explicacion": "La SAP considera obesidad cuando el IMC supera el percentilo 97 (puntaje Z ≥2). Entre 85 y 96 corresponde a sobrepeso.",
-    "examen": "Inmunomatrix Pediatría",
-    "oficial": false
-  }
-,
+[
+ {
+  "id": "pediatria-016-001",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Pablo, de 9 años, presentó una herida cortante en la pierna izquierda. El certificado de inmunizaciones está completo para su edad. ¿Qué conducta adopta con este niño?",
+  "opciones": {
+    "a": "Sólo limpiar la herida",
+    "b": "Limpia la herida e indica refuerzo de vacuna antitetánica",
+    "c": "Limpia la herida e indica gammaglobulina antitetánica",
+    "d": "Limpia la herida e indica vacuna antitetánica y gammaglobulina antitetánica"
+  },
+  "correcta": "a",
+  "explicacion": "Si la herida es limpia y el paciente tiene esquema antitetánico completo con última dosis en los últimos 5 años, no se indica refuerzo ni gammaglobulina. Solo se realiza limpieza adecuada de la herida.",
+  "oficial": false
+},
 {
-  "id": "ped_2025_092",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
+  "id": "pediatria-016-002",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "¿Cuál de las siguientes vacunas es a virus inactivado?",
+  "opciones": {
+    "a": "Sarampión",
+    "b": "Hepatitis A",
+    "c": "Fiebre amarilla",
+    "d": "Varicela"
+  },
+  "correcta": "b",
+  "explicacion": "La vacuna de Hepatitis A contiene virus inactivado. Las de sarampión, fiebre amarilla y varicela son a virus vivos atenuados.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-003",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Un paciente de 6 años recibió la vacuna triple viral hace 10 días y debe viajar a Paraguay dentro de 10 días. ¿Cuál es la conducta adecuada?",
+  "opciones": {
+    "a": "Indicar vacuna contra la fiebre amarilla y permitir el viaje en la fecha prevista",
+    "b": "Indicar vacuna contra la fiebre amarilla antes del viaje",
+    "c": "Postergar la vacuna contra fiebre amarilla 20 días y permitir el viaje inmediatamente después",
+    "d": "Postergar la vacuna contra fiebre amarilla 20 días y permitir el viaje 10 días después de su aplicación"
+  },
+  "correcta": "d",
+  "explicacion": "Las vacunas a virus vivos parenterales deben aplicarse simultáneamente o separadas al menos 4 semanas. Debe esperar 20 días para aplicar fiebre amarilla y 10 días más para viajar.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-004",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Un adolescente de 13 años recibió una dosis de vacuna antihepatitis B hace 2 años. ¿Cuál es la conducta adecuada?",
+  "opciones": {
+    "a": "Reiniciar el esquema 0-1-6 meses",
+    "b": "Aplicar una nueva dosis y esperar 2 meses para completar el esquema",
+    "c": "Aplicar una nueva dosis y esperar 6 meses para completar el esquema",
+    "d": "Solicitar dosaje de anticuerpos anti-HBs y decidir vacunación según resultado"
+  },
+  "correcta": "b",
+  "explicacion": "Los esquemas interrumpidos no se reinician. Se aplican las dosis faltantes respetando el intervalo mínimo: 2 meses entre segunda y tercera dosis para hepatitis B.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-005",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "María, de 5 años y 11 meses, recibió inmunoglobulina estándar hace una semana por brote de hepatitis A. ¿Qué vacunas deben indicarse hoy según calendario nacional?",
+  "opciones": {
+    "a": "Salk, Triple bacteriana y Triple viral",
+    "b": "Salk y Triple viral. Diferir por tres meses la Triple bacteriana",
+    "c": "Triple viral y Triple bacteriana. Diferir por tres meses la Salk",
+    "d": "Triple bacteriana y Salk. Diferir por tres meses la Triple viral y la antivaricela"
+  },
+  "correcta": "d",
+  "explicacion": "Las inmunoglobulinas interfieren con vacunas a virus vivos. Por eso deben diferirse la triple viral y la antivaricela por 3 meses; pueden aplicarse Salk y triple bacteriana.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-006",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "El Ministerio de Salud incorporó la vacuna contra fiebre hemorrágica argentina a partir de los 15 años en zonas endémicas. ¿Cuáles son esas áreas?",
+  "opciones": {
+    "a": "La Pampa y sur de Buenos Aires",
+    "b": "Santa Fe, Córdoba, Buenos Aires y La Pampa",
+    "c": "Entre Ríos y Corrientes",
+    "d": "Santa Fe, Entre Ríos y La Pampa"
+  },
+  "correcta": "b",
+  "explicacion": "Las provincias endémicas de fiebre hemorrágica argentina son Santa Fe, Córdoba, Buenos Aires y La Pampa.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-007",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Los padres de un lactante de 8 meses extraviaron el carnet de vacunación. Presenta cicatriz de BCG. ¿Cuál es la indicación más adecuada?",
+  "opciones": {
+    "a": "Aplicar vacuna antisarampionosa",
+    "b": "Reiniciar todas las vacunas",
+    "c": "Dar todas las vacunas excepto BCG",
+    "d": "Continuar el esquema según edad"
+  },
+  "correcta": "c",
+  "explicacion": "Ante vacunación no documentada se reinicia el esquema completo, salvo la BCG si tiene cicatriz que demuestra aplicación previa.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-008",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Niño de 12 años con herida sucia en muslo. Última vacuna triple bacteriana a los 6 años. ¿Qué conducta corresponde?",
+  "opciones": {
+    "a": "Aplicar Doble de adultos (DT)",
+    "b": "Aplicar Doble de adultos más gammaglobulina",
+    "c": "No vacunar, esquema completo",
+    "d": "Aplicar Triple bacteriana (DPT)"
+  },
+  "correcta": "a",
+  "explicacion": "Tiene esquema completo y última dosis hace más de 5 años. Por tratarse de herida sucia, se indica refuerzo con DT, sin gammaglobulina.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-009",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "¿Cuál de los siguientes alimentos favorece la absorción de hierro?",
+  "opciones": {
+    "a": "Té",
+    "b": "Cereales",
+    "c": "Leche de vaca",
+    "d": "Cítricos"
+  },
+  "correcta": "d",
+  "explicacion": "El ácido ascórbico (vitamina C) presente en frutas cítricas aumenta la absorción intestinal del hierro no hemo.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-010",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "La madre de un lactante de 5 meses no puede continuar la lactancia y no tiene recursos para comprar fórmula. ¿Cómo se debe preparar la leche según recomendaciones del Ministerio de Salud?",
+  "opciones": {
+    "a": "Leche entera diluida a dos tercios con 5% de azúcar",
+    "b": "Leche entera en polvo fortificada con hierro al 12,5% más 5% de azúcar",
+    "c": "Leche entera en polvo fortificada con hierro al 6% más 5% de azúcar y 2% de aceite",
+    "d": "Leche fluida diluida a dos tercios más 7% de azúcar"
+  },
+  "correcta": "c",
+  "explicacion": "En menores de 6 meses se indica leche entera en polvo fortificada al 6%, con 5% de azúcar y 2% de aceite, diluida en agua hervida.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-011",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Entre qué edades un niño aumenta en promedio 20 gramos por día de peso:",
+  "opciones": {
+    "a": "3-4 meses",
+    "b": "5-6 meses",
+    "c": "7-8 meses",
+    "d": "9-10 meses"
+  },
+  "correcta": "a",
+  "explicacion": "Durante los primeros 3 a 4 meses de vida el aumento promedio es de 20 g/día. Luego la velocidad de crecimiento disminuye progresivamente.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-012",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Un niño de 4 años presenta peso bajo para la talla, pero talla normal para la edad. ¿Cuál es el diagnóstico nutricional?",
+  "opciones": {
+    "a": "Desnutrición aguda",
+    "b": "Desnutrición crónica",
+    "c": "Desnutrición crónica reagudizada",
+    "d": "Secuela de desnutrición"
+  },
+  "correcta": "a",
+  "explicacion": "La desnutrición aguda cursa con peso bajo para la talla, sin afectación de la talla para la edad, lo que indica compromiso reciente del estado nutricional.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-013",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y crecimiento",
+  "enunciado": "Arturo, de 14 años y medio, tiene talla -2,09 DS, edad ósea de 12 años y examen físico normal. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Retraso de crecimiento endocrino",
+    "b": "Retraso de crecimiento cromosómico",
+    "c": "Retraso constitucional del crecimiento",
+    "d": "Crecimiento normal"
+  },
+  "correcta": "c",
+  "explicacion": "El retraso constitucional se caracteriza por maduración ósea retrasada y antecedentes familiares de maduración lenta, con desarrollo normal posterior.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-014",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y crecimiento",
+  "enunciado": "Niña de 12 años con talla en percentilo 5, edad ósea 2 DS menor a la cronológica, padres de talla alta. Diagnóstico probable:",
+  "opciones": {
+    "a": "Baja talla familiar",
+    "b": "Deficiencia de hormona de crecimiento",
+    "c": "Hipotiroidismo",
+    "d": "Retraso constitucional del crecimiento"
+  },
+  "correcta": "d",
+  "explicacion": "Padres altos descartan talla familiar; la edad ósea retrasada y el crecimiento enlentecido indican un retraso constitucional del crecimiento.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-015",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Lactante de 6 meses con bronquiolitis presenta tiraje generalizado, aleteo nasal, FR 55 y sibilancias. Según el puntaje de Tal, ¿qué gravedad presenta?",
+  "opciones": {
+    "a": "Leve",
+    "b": "Moderado",
+    "c": "Grave",
+    "d": "Datos insuficientes"
+  },
+  "correcta": "b",
+  "explicacion": "Con FR 55, tiraje y sibilancias bilaterales, el puntaje de Tal suma 6 puntos: cuadro moderado que requiere manejo en guardia y reevaluación.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-016",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Niño de 1 año con dificultad respiratoria, FR 50, sibilancias y tiraje intercostal. Según consenso IRAB SAP, ¿cuál es la conducta inicial?",
+  "opciones": {
+    "a": "Alta con salbutamol cada 6 h",
+    "b": "Salbutamol cada 20 min (3 dosis) y reevaluar",
+    "c": "Internación para oxigenoterapia",
+    "d": "Salbutamol + corticoides EV y reevaluar"
+  },
+  "correcta": "b",
+  "explicacion": "En IRAB moderada se indica tratamiento en guardia con 3 dosis de salbutamol cada 20 minutos y reevaluar la evolución antes de decidir internación.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-017",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido de 38 semanas y 2800 g con íleo meconial. ¿Qué patología debe investigarse primero?",
+  "opciones": {
+    "a": "Enfermedad de Hirschsprung",
+    "b": "Divertículo de Meckel",
+    "c": "Fibrosis quística",
+    "d": "Malrotación intestinal"
+  },
+  "correcta": "c",
+  "explicacion": "El íleo meconial es una manifestación neonatal clásica de fibrosis quística y debe investigarse con test del sudor o estudio genético.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-018",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Niño de 2 años con fiebre, taquipnea, saturación 90% y consolidación basal izquierda. Según consenso IRAB SAP, ¿cuál es el tratamiento?",
+  "opciones": {
+    "a": "Amoxicilina VO 100 mg/kg/día",
+    "b": "Ampicilina EV 200 mg/kg/día",
+    "c": "Ampicilina VO 200 mg/kg/día",
+    "d": "Cefotaxima EV 200 mg/kg/día"
+  },
+  "correcta": "b",
+  "explicacion": "La saturación <94% indica internación. En neumonía típica en menores de 5 años se indica ampicilina EV 200 mg/kg/día cada 6 h.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-019",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Niña de 9 meses con consolidación basal derecha. ¿Cuál es el agente etiológico más probable?",
+  "opciones": {
+    "a": "Staphylococcus aureus",
+    "b": "Virus sincicial respiratorio",
+    "c": "Moraxella catarrhalis",
+    "d": "Streptococcus pneumoniae"
+  },
+  "correcta": "d",
+  "explicacion": "El Streptococcus pneumoniae es la causa más frecuente de neumonía lobar en lactantes mayores y preescolares.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-020",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Según consenso IRAB SAP, ¿a partir de qué edad aumenta la prevalencia de Mycoplasma pneumoniae como causa de neumonía?",
+  "opciones": {
+    "a": "Desde el año",
+    "b": "Desde los 2 años",
+    "c": "Desde los 3 años",
+    "d": "Desde los 4 años"
+  },
+  "correcta": "d",
+  "explicacion": "Mycoplasma pneumoniae aparece con mayor frecuencia como agente etiológico a partir de los 4 años de edad.",
+  "oficial": false
+},
+ {
+  "id": "pediatria-016-021",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "Lactante de 9 meses inicia súbitamente dolor abdominal cólico, palidez y heces en jarabe de grosella. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Enterocolitis",
+    "b": "Divertículo de Meckel",
+    "c": "Pólipo colónico juvenil",
+    "d": "Invaginación intestinal"
+  },
+  "correcta": "d",
+  "explicacion": "La invaginación intestinal es la causa más frecuente de obstrucción intestinal en menores de 2 años. Cursa con dolor cólico, palidez, letargia y heces en jarabe de grosella.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-022",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "¿Cuál es la utilidad de los anticuerpos antiendomisio y antitransglutaminasa en la enfermedad celíaca?",
+  "opciones": {
+    "a": "Confirmación diagnóstica, screening familiar y seguimiento",
+    "b": "Apoyo diagnóstico, screening familiar y pronóstico a largo plazo",
+    "c": "Apoyo diagnóstico, pronóstico y seguimiento de respuesta a la dieta",
+    "d": "Apoyo diagnóstico, screening familiar y seguimiento de respuesta a la dieta"
+  },
+  "correcta": "d",
+  "explicacion": "Los anticuerpos antiendomisio y antitransglutaminasa tienen valor de apoyo diagnóstico, permiten detectar familiares afectados y sirven para seguimiento tras iniciar la dieta sin gluten.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-023",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "Niño de 18 meses con pérdida de peso progresiva desde la incorporación de gluten en la dieta. Peso y talla < P3, padres de talla normal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Baja talla familiar",
+    "b": "Recanalización genética",
+    "c": "Retardo de crecimiento intrauterino",
+    "d": "Enfermedad celíaca"
+  },
+  "correcta": "d",
+  "explicacion": "El retraso del crecimiento posterior a la introducción del gluten sugiere enfermedad celíaca, descartando causas genéticas o prenatales.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-024",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica",
+  "enunciado": "Lactante de 15 días con fiebre de 39 °C. Se sospecha infección urinaria. ¿Cuál es el método más adecuado para obtener muestra de orina para cultivo?",
+  "opciones": {
+    "a": "Punción vesical suprapúbica",
+    "b": "Bolsita colectora",
+    "c": "Urocultivo al acecho",
+    "d": "Sondaje vesical intermitente"
+  },
+  "correcta": "a",
+  "explicacion": "En menores de 2 meses se recomienda punción suprapúbica para cultivo, ya que la bolsa colectora presenta alto riesgo de contaminación.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-025",
+  "materia": "Pediatria",
+  "submateria": "Otras",
+  "enunciado": "Niño de 8 años con traumatismo testicular, testículo derecho aumentado de tamaño y doloroso. ¿Cuál es la conducta inicial más adecuada?",
+  "opciones": {
+    "a": "Ecodoppler testicular",
+    "b": "Desrotación manual inmediata",
+    "c": "Centellografía testicular",
+    "d": "Exploración quirúrgica inmediata"
+  },
+  "correcta": "a",
+  "explicacion": "El ecodoppler permite confirmar flujo sanguíneo y descartar torsión testicular, evitando cirugía innecesaria en traumatismos leves.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-026",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica",
+  "enunciado": "Niña de 3 años con síndrome urémico hemolítico y anuria de 24 h, K 5,9 mEq/l, acidosis metabólica. ¿Cuál es la conducta inmediata?",
+  "opciones": {
+    "a": "Conducta expectante",
+    "b": "Corrección con bicarbonato 1/6 M",
+    "c": "Corrección rápida con NaCl hipertónico",
+    "d": "Diálisis peritoneal"
+  },
+  "correcta": "d",
+  "explicacion": "El síndrome urémico hemolítico con anuria prolongada, hiperkalemia y acidosis requiere diálisis peritoneal para sostén metabólico y depuración.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-027",
+  "materia": "Pediatria",
+  "submateria": "Infecciones exantemáticas",
+  "enunciado": "Lactante de 7 meses afebril con exantema macular tras tres días de fiebre de 39°C. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Sarampión",
+    "b": "Rubéola",
+    "c": "Exantema súbito",
+    "d": "Quinta enfermedad"
+  },
+  "correcta": "c",
+  "explicacion": "El exantema súbito (roséola) es característico por fiebre alta que desaparece bruscamente antes de la aparición del exantema macular generalizado.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-028",
+  "materia": "Pediatria",
+  "submateria": "Infecciones exantemáticas",
+  "enunciado": "Niño de 8 años con fiebre 6 días, lengua aframbuesada, adenopatía cervical y rash polimorfo. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Escarlatina",
+    "b": "Sarampión",
+    "c": "Shock tóxico",
+    "d": "Enfermedad de Kawasaki"
+  },
+  "correcta": "d",
+  "explicacion": "La enfermedad de Kawasaki cursa con fiebre prolongada, exantema polimorfo, cambios mucocutáneos y adenopatía cervical; requiere tratamiento con gammaglobulina e aspirina.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-029",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Recién nacido de madre VIH positiva. ¿Qué estudio confirma infección neonatal?",
+  "opciones": {
+    "a": "PCR posparto y a los 4 meses",
+    "b": "ELISA al mes y a los 6 meses",
+    "c": "Antígeno p24 en sangre de cordón",
+    "d": "Western Blot a los 6 meses"
+  },
+  "correcta": "a",
+  "explicacion": "El diagnóstico de infección por VIH en RN se realiza mediante PCR a las 24-48 h posparto y repetición a las 4-6 semanas; el ELISA no es útil por paso transplacentario de anticuerpos maternos.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-030",
+  "materia": "Pediatria",
+  "submateria": "Emergencias",
+  "enunciado": "Niño de 4 años inicia urticaria, disfonía, estridor y hipotensión tras penicilina. ¿Cuál es el fármaco de elección inicial?",
+  "opciones": {
+    "a": "Adrenalina",
+    "b": "Corticoides",
+    "c": "Antihistamínicos",
+    "d": "Broncodilatadores"
+  },
+  "correcta": "a",
+  "explicacion": "La anafilaxia es una emergencia vital. La adrenalina intramuscular es el tratamiento inicial de elección, seguida por medidas de sostén y corticoides.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-031",
+  "materia": "Pediatria",
+  "submateria": "Maltrato y abuso",
+  "enunciado": "Niño de 8 años con enfermedad recurrente, síntomas que desaparecen al ausentarse la madre, cuidador que no se separa del niño. Diagnóstico probable:",
+  "opciones": {
+    "a": "Trastorno de conversión",
+    "b": "Trastorno de somatización",
+    "c": "Síndrome de Munchausen por poder",
+    "d": "Hipocondría infantil"
+  },
+  "correcta": "c",
+  "explicacion": "El síndrome de Munchausen por poder se caracteriza por la producción o simulación de síntomas por parte del cuidador, usualmente la madre, buscando atención médica para el niño.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-032",
+  "materia": "Pediatria",
+  "submateria": "Alergia e inmunología",
+  "enunciado": "Niño de 12 años con edema facial, estridor y disnea luego de picadura de insecto. ¿Cuál es el tratamiento inmediato?",
+  "opciones": {
+    "a": "Adrenalina intramuscular",
+    "b": "Hidrocortisona EV",
+    "c": "Difenhidramina EV",
+    "d": "Budesonida inhalatoria"
+  },
+  "correcta": "a",
+  "explicacion": "La adrenalina intramuscular es el fármaco de elección en toda reacción anafiláctica, ya que revierte el broncoespasmo y la hipotensión rápidamente.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-033",
+  "materia": "Pediatria",
+  "submateria": "Endocrinología pediátrica",
+  "enunciado": "¿Cuál es la causa más frecuente de hipotiroidismo congénito?",
+  "opciones": {
+    "a": "Disgenesia tiroidea",
+    "b": "Resistencia periférica a las hormonas tiroideas",
+    "c": "Infecciones congénitas",
+    "d": "Bocio dishormonogenético"
+  },
+  "correcta": "a",
+  "explicacion": "La disgenesia tiroidea (agenesia, ectopia o hipoplasia) representa más del 80% de los casos de hipotiroidismo congénito.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-034",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y crecimiento",
+  "enunciado": "Adolescente de 15 años con talla 1,58 m (P5-10), padre 1,78 m, madre 1,55 m. ¿Qué estudio permite diferenciar baja talla familiar de retraso constitucional?",
+  "opciones": {
+    "a": "Velocidad de crecimiento",
+    "b": "Radiografía para edad ósea",
+    "c": "Talla objetivo genética",
+    "d": "Score Z"
+  },
+  "correcta": "b",
+  "explicacion": "La radiografía de mano y muñeca determina la edad ósea. En el retraso constitucional está disminuida en más de 2 DS respecto a la cronológica.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-035",
+  "materia": "Pediatria",
+  "submateria": "Endocrinología pediátrica",
+  "enunciado": "Niña de 13 años con talla 144 cm (P10), Tanner II, edad ósea 11,5 años, sin menarca. ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Tranquilizar, crecimiento dentro de parámetros normales",
+    "b": "Solicitar cariotipo",
+    "c": "Repetir edad ósea en 6 meses",
+    "d": "Dosaje de hormona de crecimiento"
+  },
+  "correcta": "a",
+  "explicacion": "El cuadro es compatible con un retraso constitucional del crecimiento y desarrollo puberal. No hay rasgos dismórficos que sugieran Turner.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-036",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "¿Cuál de los siguientes tumores es más frecuente entre los 10 y 20 años de edad?",
+  "opciones": {
+    "a": "Wilms",
+    "b": "Neuroblastoma",
+    "c": "Retinoblastoma",
+    "d": "Sarcomas óseos"
+  },
+  "correcta": "d",
+  "explicacion": "Los sarcomas óseos (osteosarcoma y sarcoma de Ewing) predominan en la adolescencia, mientras que Wilms y neuroblastoma son más comunes en menores de 5 años.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-037",
+  "materia": "Pediatria",
+  "submateria": "Infecciones exantemáticas",
+  "enunciado": "Niña de 1 año con exantema de 4 días, mejillas eritematosas y exantema reticulado en extremidades. Diagnóstico probable:",
+  "opciones": {
+    "a": "Eritema infeccioso (quinta enfermedad)",
+    "b": "Sarampión",
+    "c": "Rubéola",
+    "d": "Escarlatina"
+  },
+  "correcta": "a",
+  "explicacion": "El eritema infeccioso (Parvovirus B19) se caracteriza por el exantema en 'cachetada' facial y patrón reticulado en tronco y extremidades.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-038",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo infantil",
+  "enunciado": "Niño que corre bien, anda en triciclo, hace torres de 10 cubos, copia círculos y cuenta hasta tres. ¿Qué edad madurativa tiene?",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "c",
+  "explicacion": "Los hitos descritos corresponden a los 3 años de edad: corre, pedalea triciclo, copia círculo, cuenta objetos y forma frases de 6 palabras.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-039",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo infantil",
+  "enunciado": "Niño que usa el tobogán solo, corta figuras con tijeras, cuenta hasta 4 y juega con otros niños. Edad madurativa aproximada:",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "d",
+  "explicacion": "A los 4 años puede recortar figuras, contar hasta 4, narrar historias simples y jugar de forma cooperativa.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-040",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo infantil",
+  "enunciado": "Niño que se sienta solo, gatea, usa pinza fina, responde a su nombre y saluda con la mano. ¿Qué edad corresponde?",
+  "opciones": {
+    "a": "6 meses",
+    "b": "10 meses",
+    "c": "12 meses",
+    "d": "18 meses"
+  },
+  "correcta": "b",
+  "explicacion": "A los 10 meses el lactante se sienta sin apoyo, gatea, hace pinza fina, reconoce su nombre y realiza gestos sociales simples como saludar o aplaudir.",
+  "oficial": false
+},
+ {
+  "id": "pediatria-016-041",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niña que se mantiene parada sostenida de la silla, señala con el dedo, dice mamá y papá, imita acciones y ayuda a vestirse. ¿Qué edad madurativa tiene?",
+  "opciones": {
+    "a": "6 meses",
+    "b": "9 meses",
+    "c": "12 meses",
+    "d": "15 meses"
+  },
+  "correcta": "c",
+  "explicacion": "A los 12 meses el niño se pone de pie con apoyo, señala objetos, dice palabras bisílabas, imita y participa en actividades simples de vestirse.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-042",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "Lactante de 6 meses con vómitos a chorro, contenido lácteo no bilioso, hambre persistente y escasa diuresis. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Gastroenteritis viral",
+    "b": "Estenosis hipertrófica del píloro",
+    "c": "Reflujo gastroesofágico",
+    "d": "Intolerancia a proteínas de leche de vaca"
+  },
+  "correcta": "b",
+  "explicacion": "La estenosis pilórica cursa con vómitos no biliosos postprandiales, hambre persistente, pérdida de peso y signos de deshidratación leve.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-043",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Según el consenso SAP 2012, ¿cómo se diagnostica la obesidad en mayores de 2 años?",
+  "opciones": {
+    "a": "IMC > percentilo 97",
+    "b": "IMC > percentilo 95",
+    "c": "Peso/talla > 2 DE",
+    "d": "Peso/talla > percentilo 97"
+  },
+  "correcta": "a",
+  "explicacion": "La SAP define obesidad con IMC mayor al percentilo 97 (puntaje Z ≥2) y sobrepeso entre los percentilos 85 y 96.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-044",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niño con meningitis por meningococo B. ¿Cuál es la profilaxis recomendada para el grupo familiar?",
+  "opciones": {
+    "a": "Rifampicina a todo el grupo familiar",
+    "b": "Rifampicina solo a los adultos",
+    "c": "Ciprofloxacina a los menores de 2 años",
+    "d": "Ciprofloxacina solo a embarazadas"
+  },
+  "correcta": "a",
+  "explicacion": "La profilaxis postexposición ante meningococo se realiza con rifampicina a todos los convivientes, independientemente de la edad.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-045",
+  "materia": "Pediatria",
+  "submateria": "Otras",
+  "enunciado": "¿Cuál de los siguientes fármacos analgésicos se puede usar en lactantes menores de 6 meses?",
+  "opciones": {
+    "a": "Dipirona",
+    "b": "Paracetamol",
+    "c": "Diclofenac",
+    "d": "Aspirina"
+  },
+  "correcta": "b",
+  "explicacion": "El paracetamol es el único antipirético/analgésico seguro para menores de 6 meses. Los AINEs y la aspirina están contraindicados en lactantes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-046",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido de 30 semanas con SDR e hipoxemia. En la radiografía torácica se observa vidrio esmerilado y broncograma aéreo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Enfermedad de membrana hialina",
+    "b": "Displasia broncopulmonar",
+    "c": "Atelectasia obstructiva",
+    "d": "Enfisema intersticial"
+  },
+  "correcta": "a",
+  "explicacion": "La enfermedad de membrana hialina cursa con patrón en vidrio esmerilado y broncograma aéreo, típica de prematurez y déficit de surfactante.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-047",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
+  "enunciado": "Niña de 15 meses que recibió vacunas hasta los 6 meses. Según el calendario nacional, ¿qué vacunas corresponden?",
+  "opciones": {
+    "a": "Triple viral, Hepatitis A, Pentavalente, Neumococo, Meningococo, Antigripal y Varicela",
+    "b": "Triple viral, Hepatitis A, Antigripal, Pentavalente, Salk y Varicela",
+    "c": "Triple viral, Hepatitis A, HPV, Neumococo, Antigripal y Varicela",
+    "d": "Triple viral, Hepatitis A, Salk y Varicela"
+  },
+  "correcta": "a",
+  "explicacion": "A los 15 meses corresponden TV, HAV, refuerzo pentavalente, antineumocócica, antimeningocócica, antigripal anual y varicela según esquema nacional.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-048",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niña de 7 días con pérdida del 5% del peso al nacer, con lactancia exclusiva eficaz. Conducta más adecuada:",
+  "opciones": {
+    "a": "Tranquilizar a la madre y controlar evolución",
+    "b": "Agregar fórmula después de cada mamada",
+    "c": "Internación para estudio",
+    "d": "Solicitar análisis de orina"
+  },
+  "correcta": "a",
+  "explicacion": "La pérdida de peso de hasta 10% en la primera semana es fisiológica. Se indica continuar lactancia exclusiva y control evolutivo.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-049",
+  "materia": "Pediatria",
+  "submateria": "Intoxicaciones",
+  "enunciado": "Niño de 3 años en shock por diarrea aguda. ¿Cuál es la conducta inicial?",
+  "opciones": {
+    "a": "Expansión con solución polielectrolítica 20 ml/kg en 10 min",
+    "b": "Expansión con solución fisiológica 20 ml/kg en ≤30 min",
+    "c": "Laboratorio del medio interno antes de hidratar",
+    "d": "Intubación y antibióticos de amplio espectro"
+  },
+  "correcta": "b",
+  "explicacion": "El shock hipovolémico por deshidratación requiere expansión con solución fisiológica 20 ml/kg en 20–30 minutos y reevaluación clínica.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-050",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido con ictericia fisiológica. ¿Cuál es la afirmación correcta?",
+  "opciones": {
+    "a": "Se inicia después de las primeras 48 h y es a predominio indirecto",
+    "b": "Se inicia antes de las 2 h y dura 25 días",
+    "c": "Se inicia luego de las 2 semanas y es directa",
+    "d": "Se inicia luego de la primera semana y es directa"
+  },
+  "correcta": "a",
+  "explicacion": "La ictericia fisiológica inicia después de las 48 horas de vida, con predominio de bilirrubina indirecta y duración menor a 10 días.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-051",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Lactante de 9 meses con fiebre, tos y consolidación en base derecha. ¿Cuál es el agente etiológico más probable?",
+  "opciones": {
+    "a": "Streptococcus pneumoniae",
+    "b": "Virus sincicial respiratorio",
+    "c": "Moraxella catarrhalis",
+    "d": "Mycoplasma pneumoniae"
+  },
+  "correcta": "a",
+  "explicacion": "En menores de 2 años, el agente más frecuente de neumonía lobar es Streptococcus pneumoniae. Mycoplasma predomina a partir de los 4 años.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-052",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "¿A partir de qué edad aumenta la prevalencia de Mycoplasma pneumoniae como causa de neumonía en niños?",
+  "opciones": {
+    "a": "A partir del año",
+    "b": "A partir de los dos años",
+    "c": "A partir de los tres años",
+    "d": "A partir de los cuatro años"
+  },
+  "correcta": "d",
+  "explicacion": "Mycoplasma pneumoniae se asocia a neumonías atípicas, más comunes en mayores de 4 años y adolescentes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-053",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "Niño de 6 meses con vómitos y heces en jarabe de grosella. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Gastroenteritis por E. coli enterotoxigénica",
+    "b": "Infección por Rotavirus",
+    "c": "Invaginación intestinal",
+    "d": "Cólico del lactante"
+  },
+  "correcta": "c",
+  "explicacion": "La triada clásica de invaginación intestinal es dolor intermitente, vómitos y deposiciones mucosanguinolentas ('jarabe de grosella').",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-054",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Según el consenso IRAB de la SAP, ¿cuáles son las medidas de aislamiento para infecciones respiratorias de transmisión aérea?",
+  "opciones": {
+    "a": "Lavado de manos, camisolín y barbijo estándar",
+    "b": "Habitación tipo cohorte y barbijo N95",
+    "c": "Lavado de manos, cohorte y barbijo de alta eficiencia",
+    "d": "Lavado de manos, habitación individual y barbijo común"
+  },
+  "correcta": "c",
+  "explicacion": "Las infecciones respiratorias requieren aislamiento de contacto y gotas: lavado de manos, habitación individual o cohorte y barbijo de alta eficiencia.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-055",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica",
+  "enunciado": "Niña de 4 años con fiebre e irritabilidad. Se solicita sedimento de orina. ¿Qué método es adecuado para obtener la muestra?",
+  "opciones": {
+    "a": "Colector plástico",
+    "b": "Al acecho con buena higiene",
+    "c": "Punción suprapúbica",
+    "d": "Sondaje vesical"
+  },
+  "correcta": "b",
+  "explicacion": "En niños que controlan esfínteres se utiliza muestra de chorro medio tras higiene perineal; la punción suprapúbica se reserva para lactantes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-056",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Lactante de 18 meses con fiebre, hiperestesia cutánea, eritema periorificial y signo de Nikolsky positivo. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Impétigo bulloso",
+    "b": "Fascitis necrotizante",
+    "c": "Síndrome de la piel escaldada",
+    "d": "Epidermólisis ampollosa"
+  },
+  "correcta": "c",
+  "explicacion": "El síndrome de la piel escaldada es causado por toxina exfoliativa de S. aureus y se caracteriza por fiebre, eritema difuso y signo de Nikolsky positivo.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-057",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niña de 2 años proveniente de orfanato con lesiones pruriginosas en pliegues y vesículas en palmas y plantas. Tratamiento indicado:",
+  "opciones": {
+    "a": "Aciclovir oral",
+    "b": "Hidrocortisona tópica",
+    "c": "Cefalexina oral",
+    "d": "Permetrina tópica"
+  },
+  "correcta": "d",
+  "explicacion": "La escabiosis se trata con permetrina al 5% desde el cuello hacia abajo, repitiendo a la semana, e indicando tratamiento a convivientes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-058",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Según el consenso de neumonía adquirida en la comunidad infantil, ¿qué hallazgos son más sugestivos de neumonía?",
+  "opciones": {
+    "a": "Tos, taquipnea y fiebre",
+    "b": "PCR y VSG elevadas",
+    "c": "Rx de tórax de frente y perfil",
+    "d": "Estertores crepitantes aislados"
+  },
+  "correcta": "a",
+  "explicacion": "Los hallazgos clínicos con mayor valor predictivo para neumonía son fiebre, taquipnea y tos; la radiografía se reserva para casos moderados o graves.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-059",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "¿Entre qué semanas se completa la maduración pulmonar fetal?",
+  "opciones": {
+    "a": "Entre la semana 24 y 34",
+    "b": "Después de la 34",
+    "c": "Antes de la 24",
+    "d": "Entre la 22 y 24"
+  },
+  "correcta": "a",
+  "explicacion": "La maduración pulmonar, con producción adecuada de surfactante, ocurre entre las 24 y 34 semanas de gestación.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-060",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niña de 3 años con impétigo. Según la SAP, ¿cuándo puede reintegrarse al colegio?",
+  "opciones": {
+    "a": "No requiere evicción escolar",
+    "b": "Desde el inicio del tratamiento",
+    "c": "A las 24 h de iniciado el tratamiento",
+    "d": "A las 48 h de iniciado el tratamiento"
+  },
+  "correcta": "d",
+  "explicacion": "El impétigo es contagioso hasta 48 h de tratamiento antibiótico. Puede reintegrarse si cesa la supuración activa.",
+  "oficial": false
+},
+ {
+  "id": "pediatria-016-061",
+  "materia": "Pediatria",
+  "submateria": "Otras",
+  "enunciado": "Según el consenso SAP 2016 sobre seguridad infantil, ¿a partir de qué edad puede un niño viajar en el asiento delantero de un automóvil?",
+  "opciones": {
+    "a": "8 años",
+    "b": "10 años",
+    "c": "12 años",
+    "d": "14 años"
+  },
+  "correcta": "c",
+  "explicacion": "El consenso SAP sobre seguridad vehicular recomienda que los niños viajen en el asiento trasero hasta los 12 años o hasta medir más de 1,50 m.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-062",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Lactante de 8 meses con hidrocele bilateral desde el nacimiento, transiluminación positiva y sin cambios de tamaño. ¿Cuál es la conducta adecuada?",
+  "opciones": {
+    "a": "Solicitar ecografía con Doppler testicular",
+    "b": "Iniciar tratamiento con gonadotrofina coriónica",
+    "c": "Interconsulta con cirugía pediátrica",
+    "d": "Conducta expectante hasta el año de edad"
+  },
+  "correcta": "d",
+  "explicacion": "El hidrocele no comunicante suele resolverse espontáneamente antes del año. No requiere cirugía salvo persistencia o aumento de tamaño.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-063",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
+  "enunciado": "Lactante de 8 meses con irritabilidad, heces con sangre y ecografía que muestra imagen en diana. Diagnóstico probable:",
+  "opciones": {
+    "a": "Gastroenteritis aguda",
+    "b": "Invaginación intestinal",
+    "c": "Síndrome urémico hemolítico",
+    "d": "Divertículo de Meckel"
+  },
+  "correcta": "b",
+  "explicacion": "La ecografía con imagen en diana o 'donut sign' confirma el diagnóstico de invaginación intestinal, urgencia abdominal más frecuente en menores de 2 años.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-064",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido a término presenta vómitos biliosos y radiografía con signo de doble burbuja. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Atresia duodenal",
+    "b": "Estenosis pilórica",
+    "c": "Invaginación intestinal",
+    "d": "Enfermedad de Hirschsprung"
+  },
+  "correcta": "a",
+  "explicacion": "El signo radiológico de doble burbuja es característico de la atresia duodenal, que se presenta con vómitos biliosos desde las primeras horas de vida.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-065",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Niña de 15 años con episodios de disnea nocturna y sibilancias recurrentes. Presenta síntomas más de 2 veces por semana. ¿Cuál es el tratamiento de mantenimiento indicado?",
+  "opciones": {
+    "a": "Cromoglicato de sodio inhalado",
+    "b": "Budesonida inhalatoria",
+    "c": "Bromuro de ipratropio",
+    "d": "Salmeterol inhalado"
+  },
+  "correcta": "b",
+  "explicacion": "El asma persistente leve a moderado requiere corticoides inhalatorios como budesonida para control y prevención del remodelado bronquial.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-066",
+  "materia": "Pediatria",
+  "submateria": "Patología nefrourológica",
+  "enunciado": "Niño de 7 años con hematuria, hipertensión y edema bipalpebral una semana post-faringitis. ¿Qué estudio orienta a la etiología?",
+  "opciones": {
+    "a": "Urea y creatinina séricas",
+    "b": "Dosaje de complemento C3",
+    "c": "Ecografía renovesical",
+    "d": "Proteinuria en orina de 24 hs"
+  },
+  "correcta": "b",
+  "explicacion": "La glomerulonefritis postestreptocócica cursa con hipocomplementemia transitoria (C3 bajo), orientando el diagnóstico etiológico.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-067",
+  "materia": "Pediatria",
+  "submateria": "Trastornos de la infancia y de la adolescencia",
+  "enunciado": "Niña de 7 años con telarca y vello pubiano, crecimiento acelerado y Tanner 3. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Tumor hipofisario",
+    "b": "Quiste ovárico simple",
+    "c": "Exposición a estrógenos exógenos",
+    "d": "Pubertad precoz central idiopática"
+  },
+  "correcta": "d",
+  "explicacion": "La pubertad precoz central idiopática se debe a activación temprana del eje hipotálamo-hipófiso-gonadal, frecuente en niñas sin patología orgánica.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-068",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niño de 7 meses con fiebre alta 3 días y exantema macular al descender la temperatura. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Sarampión",
+    "b": "Rubéola",
+    "c": "Exantema súbito",
+    "d": "Eritema infeccioso"
+  },
+  "correcta": "c",
+  "explicacion": "El exantema súbito (roséola) se caracteriza por fiebre alta seguida de exantema post-febril no pruriginoso, causado por HHV-6.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-069",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niño de 8 años con fiebre, rash polimorfo, lengua aframbuesada y adenopatía cervical. Diagnóstico probable:",
+  "opciones": {
+    "a": "Escarlatina",
+    "b": "Sarampión",
+    "c": "Síndrome de shock tóxico",
+    "d": "Enfermedad de Kawasaki"
+  },
+  "correcta": "d",
+  "explicacion": "La enfermedad de Kawasaki se diagnostica por fiebre ≥5 días y ≥4 criterios clínicos: conjuntivitis, cambios orales, rash, adenopatía y extremidades.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-070",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Recién nacido de madre con HIV. ¿Qué estudio confirma infección neonatal?",
+  "opciones": {
+    "a": "PCR al nacer y a los 4 meses",
+    "b": "ELISA al mes y a los 6 meses",
+    "c": "Antígeno p24 en sangre de cordón",
+    "d": "ELISA posparto y Western Blot"
+  },
+  "correcta": "a",
+  "explicacion": "El diagnóstico de HIV en RN se realiza con PCR ADN o ARN viral a las 24–48 h y se repite a las 4–6 semanas y 4 meses. ELISA no es válido por anticuerpos maternos.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-071",
+  "materia": "Pediatria",
+  "submateria": "Otras",
+  "enunciado": "Niño de 4 años con anafilaxia tras penicilina (taquicardia, disfonía, estridor, hipotensión). ¿Cuál es el tratamiento inicial?",
+  "opciones": {
+    "a": "Adrenalina",
+    "b": "Corticoides",
+    "c": "Antihistamínicos",
+    "d": "Broncodilatadores"
+  },
+  "correcta": "a",
+  "explicacion": "La adrenalina intramuscular (0,01 mg/kg) es el tratamiento de elección en la anafilaxia. Los corticoides y antihistamínicos son adyuvantes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-072",
+  "materia": "Pediatria",
+  "submateria": "Otras",
+  "enunciado": "Niño de 12 años con edema facial, estridor y sudoración tras picadura de insecto. ¿Cuál es el fármaco indicado?",
+  "opciones": {
+    "a": "Adrenalina",
+    "b": "Hidrocortisona",
+    "c": "Difenhidramina",
+    "d": "Budesonida"
+  },
+  "correcta": "a",
+  "explicacion": "El shock anafiláctico requiere adrenalina intramuscular como primera medida. Los demás son coadyuvantes.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-073",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "¿Cuál es la causa más frecuente de hipotiroidismo congénito?",
+  "opciones": {
+    "a": "Disgenesia tiroidea",
+    "b": "Resistencia periférica a las hormonas tiroideas",
+    "c": "Infecciones congénitas",
+    "d": "Bocio dishormonogenético"
+  },
+  "correcta": "a",
+  "explicacion": "La disgenesia tiroidea (ectopia o agenesia) representa el 85–90% de los casos de hipotiroidismo congénito.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-074",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Varón de 15 años con baja talla y velocidad de crecimiento normal. Radiografía ósea acorde a edad cronológica. Diagnóstico probable:",
+  "opciones": {
+    "a": "Baja talla familiar",
+    "b": "Retraso constitucional del crecimiento",
+    "c": "Déficit de hormona de crecimiento",
+    "d": "Hipotiroidismo"
+  },
+  "correcta": "a",
+  "explicacion": "En la baja talla familiar, la velocidad de crecimiento es normal y la edad ósea coincide con la cronológica. En el retraso constitucional, la edad ósea está retrasada.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-075",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño que se sienta solo, gatea, hace pinza fina, responde a su nombre y saluda con la mano. Edad aproximada:",
+  "opciones": {
+    "a": "6 meses",
+    "b": "10 meses",
+    "c": "12 meses",
+    "d": "18 meses"
+  },
+  "correcta": "b",
+  "explicacion": "A los 10 meses el niño logra sentarse solo, realiza pinza fina, responde a su nombre y realiza gestos simples como saludar o aplaudir.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-076",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niña que mete un objeto dentro de otro, dice mamá/papá, ayuda a vestirse y señala objetos. Edad madurativa:",
+  "opciones": {
+    "a": "9 meses",
+    "b": "12 meses",
+    "c": "15 meses",
+    "d": "18 meses"
+  },
+  "correcta": "b",
+  "explicacion": "A los 12 meses aparecen la prensión fina, la imitación y el uso intencional de palabras simples. Comienza la interacción funcional con objetos.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-077",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño que anda en triciclo, copia un círculo, cuenta hasta tres objetos, hace frases de seis palabras y pregunta '¿por qué?'. Edad estimada:",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "c",
+  "explicacion": "A los 3 años (36 meses) el niño desarrolla lenguaje estructurado, coordinación fina y juego simbólico básico.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-078",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño que usa tijeras, cuenta hasta cuatro y juega en interacción con otros. Edad madurativa aproximada:",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "d",
+  "explicacion": "A los 4 años el niño desarrolla motricidad fina avanzada, interacción social cooperativa y noción numérica simple.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-079",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "¿Entre qué edades un niño aumenta en promedio 20 gramos por día de peso?",
+  "opciones": {
+    "a": "3–4 meses",
+    "b": "5–6 meses",
+    "c": "7–8 meses",
+    "d": "9–10 meses"
+  },
+  "correcta": "a",
+  "explicacion": "Entre los 3 y 4 meses la ganancia diaria promedio es de 20 g. Luego la velocidad de crecimiento comienza a disminuir progresivamente.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-080",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño de 4 años con peso bajo para la talla pero talla normal para la edad. Diagnóstico nutricional:",
+  "opciones": {
+    "a": "Desnutrición aguda",
+    "b": "Desnutrición crónica",
+    "c": "Desnutrición crónica reagudizada",
+    "d": "Secuela de desnutrición"
+  },
+  "correcta": "a",
+  "explicacion": "La desnutrición aguda se caracteriza por bajo peso para la talla con talla conservada, reflejando déficit reciente de nutrientes.",
+  "oficial": false
+},
+ {
+  "id": "pediatria-016-081",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Varón de 14 años y medio con talla –2,09 DS, edad ósea de 12 años y desarrollo normal. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Retraso de crecimiento endocrino",
+    "b": "Retraso de crecimiento cromosómico",
+    "c": "Retraso constitucional del crecimiento",
+    "d": "Crecimiento normal"
+  },
+  "correcta": "c",
+  "explicacion": "El retraso constitucional se caracteriza por maduración ósea retrasada, desarrollo puberal tardío y antecedentes familiares de maduración lenta.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-082",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niña de 12 años con talla en percentilo 5, edad ósea retrasada y padres altos. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Baja talla genética",
+    "b": "Deficiencia de GH",
+    "c": "Hipotiroidismo",
+    "d": "Retraso constitucional del crecimiento"
+  },
+  "correcta": "d",
+  "explicacion": "El retraso constitucional del crecimiento cursa con talla baja, maduración ósea retrasada y antecedentes familiares de crecimiento tardío.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-083",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "¿Cuál es el tumor más frecuente entre los 10 y 20 años?",
+  "opciones": {
+    "a": "Tumor de Wilms",
+    "b": "Neuroblastoma",
+    "c": "Retinoblastoma",
+    "d": "Sarcomas óseos"
+  },
+  "correcta": "d",
+  "explicacion": "En la adolescencia predominan los sarcomas óseos (osteosarcoma, Ewing), a diferencia de los tumores renales o neuroblásticos del lactante.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-084",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "¿Cuáles son las principales indicaciones de diálisis peritoneal en síndrome urémico hemolítico?",
+  "opciones": {
+    "a": "Anuria prolongada, hipervolemia, hiperkalemia y acidosis severa",
+    "b": "Hiponatremia leve y anemia",
+    "c": "Hematuria persistente y proteinuria",
+    "d": "Oliguria leve con edemas"
+  },
+  "correcta": "a",
+  "explicacion": "La diálisis se indica en SUH con potasio ≥7 mEq/l, acidosis metabólica, hipervolemia, anuria >24–48 h o uremia sintomática.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-085",
+  "materia": "Pediatria",
+  "submateria": "Maltrato y abuso sexual de niños, niñas y adolescentes",
+  "enunciado": "Niño con síntomas variables, enfermedades inexplicables, síntomas ausentes cuando no está el cuidador y actitud inapropiada del mismo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Trastorno de conversión",
+    "b": "Trastorno de somatización",
+    "c": "Síndrome de Munchausen por poder",
+    "d": "Hipocondría"
+  },
+  "correcta": "c",
+  "explicacion": "El síndrome de Munchausen por poder implica simulación o inducción de síntomas en el niño por parte del cuidador, buscando atención médica.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-086",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Niña de 6 años con exantema que se inicia en cara y se exacerba con agua caliente, mejillas eritematosas y exantema reticulado. Diagnóstico probable:",
+  "opciones": {
+    "a": "Sarampión",
+    "b": "Escarlatina",
+    "c": "Quinta enfermedad",
+    "d": "Enterovirosis exantemática"
+  },
+  "correcta": "c",
+  "explicacion": "El eritema infeccioso (quinta enfermedad) se caracteriza por exantema en 'cachetada' y patrón reticulado en extremidades, causado por Parvovirus B19.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-087",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
+  "enunciado": "Niña de 4 años con tos, fiebre y taquipnea. Según la SAP, ¿qué signos clínicos orientan mejor al diagnóstico de neumonía?",
+  "opciones": {
+    "a": "Tos, taquipnea y fiebre",
+    "b": "Estertores aislados",
+    "c": "Hipoxemia y retracciones leves",
+    "d": "Soplo tubario aislado"
+  },
+  "correcta": "a",
+  "explicacion": "Los signos clínicos más sensibles y específicos de neumonía adquirida en la comunidad son tos, fiebre y taquipnea.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-088",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño que imita cruces, arma torres de 10 cubos y construye frases de seis palabras. Edad estimada:",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "c",
+  "explicacion": "A los 3 años el desarrollo motor y del lenguaje permite realizar torres, copiar formas y mantener diálogo fluido.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-089",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niño que usa el tobogán solo, juega con pala y balde, recorta con tijeras y cuenta hasta cuatro. Edad madurativa:",
+  "opciones": {
+    "a": "24 meses",
+    "b": "30 meses",
+    "c": "36 meses",
+    "d": "48 meses"
+  },
+  "correcta": "d",
+  "explicacion": "A los 4 años el niño ya realiza tareas motoras finas y juegos compartidos, con mayor autonomía e integración social.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-090",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido con ictericia fisiológica. ¿Cuál de las siguientes es correcta?",
+  "opciones": {
+    "a": "Se inicia después de las 48 h y es a predominio indirecto",
+    "b": "Se inicia antes de las 2 h y es directa",
+    "c": "Dura más de 20 días en RN a término",
+    "d": "Se asocia a colestasis neonatal"
+  },
+  "correcta": "a",
+  "explicacion": "La ictericia fisiológica se inicia luego de las 48 h, con bilirrubina indirecta <12 mg/dl y resolución en 7–10 días.",
+  "oficial": false
+},
+ {
+  "id": "pediatria-016-091",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Niña de 8 años con sobrepeso. Según la SAP, ¿qué IMC define obesidad en mayores de 2 años?",
+  "opciones": {
+    "a": "IMC > percentilo 85",
+    "b": "IMC > percentilo 90",
+    "c": "IMC > percentilo 97",
+    "d": "IMC > percentilo 99"
+  },
+  "correcta": "c",
+  "explicacion": "La SAP considera obesidad cuando el IMC supera el percentilo 97 (puntaje Z ≥ 2). Entre 85 y 96 corresponde a sobrepeso.",
+  "oficial": false
+},
+{
+  "id": "pediatria-016-092",
+  "materia": "Pediatria",
+  "submateria": "Patología respiratoria",
   "enunciado": "Un niño de 5 años presenta fiebre de 39 °C, tos y taquipnea. En la auscultación se detectan crepitantes en base derecha. ¿Cuál es el antibiótico empírico de elección según la SAP para una neumonía adquirida en la comunidad sin internación?",
-  "opciones": ["Amoxicilina oral", "Azitromicina", "Ceftriaxona IM", "Claritromicina"],
-  "correcta": 0,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Neumonía 2023 – Ministerio de Salud 2023 – Nelson 22ª ed.",
+  "opciones": {
+    "a": "Amoxicilina oral",
+    "b": "Azitromicina",
+    "c": "Ceftriaxona intramuscular",
+    "d": "Claritromicina"
+  },
+  "correcta": "a",
+  "explicacion": "La amoxicilina por vía oral es el antibiótico de elección en neumonía adquirida en la comunidad en niños sin criterios de internación.",
   "oficial": false
 },
 {
-  "id": "ped_2025_093",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
-  "enunciado": "En una niña de 2 meses en control sano se constata perímetro cefálico por encima del percentilo 97, con fontanela tensa y suturas abiertas. El signo más relevante que orienta a hipertensión endocraneana es:",
-  "opciones": ["Irritabilidad y vómitos", "Fontanela deprimida", "Hipotonía generalizada", "Sueño prolongado"],
-  "correcta": 0,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Neurodesarrollo 2022 – Nelson 22ª ed.",
+  "id": "pediatria-016-093",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "En una niña de 2 meses en control sano se constata perímetro cefálico > P97, fontanela tensa y suturas abiertas. El signo más relevante que orienta a hipertensión endocraneana es:",
+  "opciones": {
+    "a": "Irritabilidad y vómitos",
+    "b": "Fontanela deprimida",
+    "c": "Hipotonía generalizada",
+    "d": "Sueño prolongado"
+  },
+  "correcta": "a",
+  "explicacion": "La irritabilidad y los vómitos son signos tempranos de hipertensión endocraneana en lactantes con fontanela aún abierta.",
   "oficial": false
 },
 {
-  "id": "ped_2025_094",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
-  "enunciado": "Un lactante de 8 meses alimentado con leche de vaca entera desde los 4 meses presenta palidez y hemoglobina de 8 g/dL. ¿Cuál es la causa más probable?",
-  "opciones": ["Anemia por deficiencia de hierro", "Anemia hemolítica autoinmune", "Anemia megaloblástica", "Anemia por inflamación crónica"],
-  "correcta": 0,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "SAP Nutrición 2023 – MSAL Guía de Alimentación del Lactante 2022 – Nelson 22ª ed.",
+  "id": "pediatria-016-094",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
+  "enunciado": "Un lactante de 8 meses alimentado con leche de vaca entera desde los 4 meses presenta palidez y Hb 8 g/dL. ¿Cuál es la causa más probable?",
+  "opciones": {
+    "a": "Anemia por deficiencia de hierro",
+    "b": "Anemia hemolítica autoinmune",
+    "c": "Anemia megaloblástica",
+    "d": "Anemia por inflamación crónica"
+  },
+  "correcta": "a",
+  "explicacion": "La introducción precoz de leche de vaca favorece microhemorragias digestivas y escaso aporte de hierro, produciendo anemia ferropénica.",
   "oficial": false
 },
 {
-  "id": "ped_2025_095",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
+  "id": "pediatria-016-095",
+  "materia": "Pediatria",
+  "submateria": "Vacunación infantil",
   "enunciado": "En el calendario nacional de vacunación argentino, la primera dosis de vacuna triple viral (SRP) se aplica a:",
-  "opciones": ["6 meses", "9 meses", "12 meses", "15 meses"],
-  "correcta": 2,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Calendario Nacional de Vacunación Argentina – MSAL 2024 – SAP Vacunas 2023",
+  "opciones": {
+    "a": "6 meses",
+    "b": "9 meses",
+    "c": "12 meses",
+    "d": "15 meses"
+  },
+  "correcta": "c",
+  "explicacion": "La primera dosis de la triple viral se aplica a los 12 meses y la segunda a los 5 años, según calendario nacional.",
   "oficial": false
 },
 {
-  "id": "ped_2025_096",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
+  "id": "pediatria-016-096",
+  "materia": "Pediatria",
+  "submateria": "Patología digestiva",
   "enunciado": "Niño de 3 años con deshidratación leve por gastroenteritis aguda. ¿Cuál es la medida inicial recomendada?",
-  "opciones": ["Suero fisiológico IV", "Solución de rehidratación oral", "Agua sola a demanda", "Dieta absoluta 6 h"],
-  "correcta": 1,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Gastroenteritis Aguda 2022 – MSAL Manejo de IRA y EDA 2023",
+  "opciones": {
+    "a": "Suero fisiológico intravenoso",
+    "b": "Solución de rehidratación oral",
+    "c": "Agua sola a demanda",
+    "d": "Dieta absoluta 6 h"
+  },
+  "correcta": "b",
+  "explicacion": "La rehidratación oral es el tratamiento inicial de elección en deshidratación leve o moderada por diarrea aguda.",
   "oficial": false
 },
 {
-  "id": "ped_2025_097",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
-  "enunciado": "Un recién nacido de 36 semanas tiene dificultad respiratoria leve con taquipnea y leve retracción intercostal. Rx de tórax: hiperinsuflación pulmonar y líquido en cisuras. Diagnóstico más probable:",
-  "opciones": ["Membrana hialina", "Neumonía congénita", "Taquipnea transitoria del recién nacido", "Aspiración meconial"],
-  "correcta": 2,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Neonatología 2023 – Nelson 22ª ed.",
+  "id": "pediatria-016-097",
+  "materia": "Pediatria",
+  "submateria": "Neonatología",
+  "enunciado": "Recién nacido de 36 semanas con taquipnea y leve retracción intercostal. Rx de tórax: hiperinsuflación y líquido en cisuras. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Enfermedad de membrana hialina",
+    "b": "Neumonía congénita",
+    "c": "Taquipnea transitoria del recién nacido",
+    "d": "Aspiración meconial"
+  },
+  "correcta": "c",
+  "explicacion": "La taquipnea transitoria del RN se debe a retención de líquido pulmonar y es típica de recién nacidos tardíos o cesáreas.",
   "oficial": false
 },
 {
-  "id": "ped_2025_098",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
+  "id": "pediatria-016-098",
+  "materia": "Pediatria",
+  "submateria": "Desarrollo y nutrición",
   "enunciado": "En un control de salud de un niño de 18 meses se observa que no señala ni dice palabras con intención comunicativa. El resto del examen es normal. ¿Qué acción corresponde?",
-  "opciones": ["Observar evolución", "Derivar a fonoaudiología y estimulación temprana", "Indicar vitaminas del complejo B", "Solicitar audiometría en 1 año"],
-  "correcta": 1,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Desarrollo Infantil 2023 – MSAL Programa SUMAR 2023",
+  "opciones": {
+    "a": "Observar evolución",
+    "b": "Derivar a fonoaudiología y estimulación temprana",
+    "c": "Indicar vitaminas del complejo B",
+    "d": "Solicitar audiometría en 1 año"
+  },
+  "correcta": "b",
+  "explicacion": "El retraso del lenguaje expresivo a 18 meses requiere intervención temprana y evaluación auditiva y del desarrollo.",
   "oficial": false
 },
 {
-  "id": "ped_2025_099",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
-  "enunciado": "Adolescente de 14 años con menarca hace 1 año presenta ciclos irregulares de 30 a 60 días. Sin signos de hiperandrogenismo. ¿Cuál es la conducta adecuada?",
-  "opciones": ["Iniciar anticonceptivos orales combinados", "Tranquilizar y controlar en 6 meses", "Solicitar dosaje hormonal completo", "Derivar a endocrinología"],
-  "correcta": 1,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "SAP Adolescencia 2023 – Nelson 22ª ed.",
+  "id": "pediatria-016-099",
+  "materia": "Pediatria",
+  "submateria": "Trastornos de la infancia y de la adolescencia",
+  "enunciado": "Adolescente de 14 años con menarca hace 1 año presenta ciclos irregulares de 30 a 60 días, sin signos de hiperandrogenismo. ¿Cuál es la conducta adecuada?",
+  "opciones": {
+    "a": "Iniciar anticonceptivos orales combinados",
+    "b": "Tranquilizar y controlar en 6 meses",
+    "c": "Solicitar dosaje hormonal completo",
+    "d": "Derivar a endocrinología"
+  },
+  "correcta": "b",
+  "explicacion": "Durante los primeros 2 años posmenarca son frecuentes los ciclos anovulatorios; solo se controla evolución.",
   "oficial": false
 },
 {
-  "id": "ped_2025_100",
-  "materia": "🧸 Pediatría",
-  "submateria": null,
-  "enunciado": "Lactante de 10 meses presenta fiebre alta, sin foco evidente. Al tercer día desaparece la fiebre y aparece exantema rosado generalizado. Diagnóstico probable:",
-  "opciones": ["Rubéola", "Exantema súbito (roseola)", "Sarampión", "Eritema infeccioso"],
-  "correcta": 1,
-  "examen": "Examen Único",
-  "anio": 2025,
-  "fuente": "Guía SAP Infectología 2023 – MSAL Enfermedades Exantemáticas 2023",
+  "id": "pediatria-016-100",
+  "materia": "Pediatria",
+  "submateria": "Patología infecciosa",
+  "enunciado": "Lactante de 10 meses presenta fiebre alta sin foco y exantema rosado al desaparecer la fiebre. Diagnóstico probable:",
+  "opciones": {
+    "a": "Rubéola",
+    "b": "Exantema súbito (roséola)",
+    "c": "Sarampión",
+    "d": "Eritema infeccioso"
+  },
+  "correcta": "b",
+  "explicacion": "El exantema súbito (roséola) es característico por fiebre alta seguida de exantema rosado tras su desaparición, causado por HHV-6.",
   "oficial": false
 }
 ]
