@@ -1,10 +1,10 @@
 /* ==========================================================
    💾 BANCO DE PREGUNTAS – Persistencia, carga y actualización
-   Incluye bancos por materia + exámenes anteriores
+   Con índice transversal (materia/submateria) y normalización extendida
    ========================================================== */
 
-const LS_BANK = "mebank_bank_v6_full";
-const LS_PROGRESS = "mebank_prog_v6_full";
+const LS_BANK = "mebank_bank_v7_full";
+const LS_PROGRESS = "mebank_prog_v7_full";
 
 /* ==========================================================
    ✨ Normalizador universal de textos
@@ -22,6 +22,19 @@ function normalizeString(str) {
         .replace(/\s+/g, "")
         .trim()
     : "";
+}
+
+/* ==========================================================
+   🧩 Normalizador de submaterias
+   (maneja los casos “otras” → otras_pediatria, etc.)
+   ========================================================== */
+function normalizarSubmateria(materia, submateria) {
+  const s = normalizeString(submateria);
+  const m = normalizeString(materia);
+  if (["otras", "miscelaneas", "varias", "otros"].includes(s)) {
+    return `otras_${m}`;
+  }
+  return s || "sinclasificar";
 }
 
 /* ==========================================================
@@ -57,7 +70,8 @@ let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
     { slug: "imagenes", name: "🩻 Diagnóstico por Imágenes" },
     { slug: "otras", name: "📚 Otras" }
   ],
-  questions: []
+  questions: [],
+  index: {} // ← nuevo índice transversal
 };
 
 let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
@@ -103,6 +117,9 @@ async function loadAllBanks() {
     return match ? match.slug : limpio;
   };
 
+  // reiniciar índice transversal
+  BANK.index = {};
+
   /* ---------- 1️⃣ Cargar bancos por materia ---------- */
   for (const s of BANK.subjects) {
     const materia = s.slug;
@@ -114,7 +131,16 @@ async function loadAllBanks() {
         const data = await resp.json();
 
         data.forEach(q => {
-          if (q.materia) q.materia = normalizarMateria(q.materia);
+          q.tipo = q.tipo || "banco";
+          q.materia = normalizarMateria(q.materia);
+          q.submateria = normalizarSubmateria(q.materia, q.submateria);
+
+          // Indexación transversal
+          const m = q.materia;
+          const ssub = q.submateria;
+          if (!BANK.index[m]) BANK.index[m] = {};
+          if (!BANK.index[m][ssub]) BANK.index[m][ssub] = [];
+          BANK.index[m][ssub].push(q);
         });
 
         const nuevas = data.filter(q => !existingIds.has(q.id));
@@ -130,7 +156,10 @@ async function loadAllBanks() {
   const examenes = [
     "examenunico2025.json",
     "examenunico2024.json",
-    "examenunico2019.json"
+    "examenunico2019.json",
+    "examenunico2018.json",
+    "examenunico2017.json",
+    "examenunico2016.json"
   ];
 
   for (const ex of examenes) {
@@ -142,7 +171,15 @@ async function loadAllBanks() {
 
       data.forEach(q => {
         q.tipo = "examen";
-        if (q.materia) q.materia = normalizarMateria(q.materia);
+        q.materia = normalizarMateria(q.materia);
+        q.submateria = normalizarSubmateria(q.materia, q.submateria);
+
+        // Indexación transversal
+        const m = q.materia;
+        const ssub = q.submateria;
+        if (!BANK.index[m]) BANK.index[m] = {};
+        if (!BANK.index[m][ssub]) BANK.index[m][ssub] = [];
+        BANK.index[m][ssub].push(q);
       });
 
       const nuevas = data.filter(q => !existingIds.has(q.id));
@@ -204,7 +241,7 @@ async function forceReloadBank() {
   localStorage.removeItem(LS_BANK);
   localStorage.removeItem(LS_PROGRESS);
 
-  BANK = { subjects: [...BANK.subjects], questions: [] };
+  BANK = { subjects: [...BANK.subjects], questions: [], index: {} };
   PROG = {};
 
   alert("♻️ Banco borrado. Ahora se recargará completo...");
