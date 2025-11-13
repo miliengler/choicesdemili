@@ -1,37 +1,9 @@
 /* ==========================================================
-   📚 SUBTEMAS POR MATERIA – VERSIÓN COMPLETA FINAL
+   📚 SUBTEMAS POR MATERIA – VERSIÓN FINAL COMPLETA
    ========================================================== */
 
 const SUBTEMAS = {
 
-  /* ------------------------- NEUMO ------------------------- */
-  neumonologia: [
-    "Anatomía y malformaciones",
-    "Semiología",
-    "Asma",
-    "EPOC",
-    "Neumonía",
-    "Bronquiectasias",
-    "Fibrosis quística",
-    "NPS y cáncer de pulmón",
-    "Tromboembolia de pulmón",
-    "Pleura, mediastino y diafragma",
-    "Enfermedades intersticiales",
-    "Ventilación y ventilación mecánica",
-    "Otras preguntas de neumonología"
-  ],
-
-  /* ------------------------- PSIQUI ------------------------ */
-  psiquiatria: [
-    "Trastornos neuróticos y de la personalidad",
-    "Trastornos del estado de ánimo",
-    "Trastornos psicóticos",
-    "Trastornos relacionados con sustancias",
-    "Trastornos de la conducta alimentaria",
-    "Otras preguntas de psiquiatría"
-  ],
-
-  /* ------------------------- CARDIO ------------------------ */
   cardiologia: [
     "Cardiología básica",
     "Hipertensión arterial y factores de riesgo",
@@ -48,7 +20,6 @@ const SUBTEMAS = {
     "Otras preguntas de cardiología"
   ],
 
-  /* ------------------------- CIRUGÍA ----------------------- */
   cirugiageneral: [
     "Evaluación prequirúrgica",
     "Quemaduras",
@@ -59,45 +30,6 @@ const SUBTEMAS = {
     "Otras preguntas de cirugía general"
   ],
 
-  /* ------------------------- NUTRICIÓN --------------------- */
-  nutricion: [
-    "Diabetes mellitus",
-    "Nutrición y obesidad",
-    "Metabolismo lipídico",
-    "Metabolismo calcio – PTH",
-    "Hipoglucemias",
-    "Otras preguntas de nutrición"
-  ],
-
-  /* ------------------------- UROLOGÍA ---------------------- */
-  urologia: [
-    "Fisiología renal",
-    "Síndromes clínicos",
-    "Fracaso renal agudo",
-    "Insuficiencia renal crónica",
-    "Glomerulonefritis primaria",
-    "Nefritis intersticial",
-    "Tubulopatías",
-    "Riesgo cardiovascular y riñón",
-    "Infecciones urinarias",
-    "Riñón y enfermedades sistémicas",
-    "Otras preguntas de urología"
-  ],
-
-  /* ----------------------- GASTRO -------------------------- */
-  gastroenterologia: [
-    "Esófago",
-    "Estómago",
-    "Intestino delgado",
-    "Hígado",
-    "Vía biliar",
-    "Páncreas",
-    "Colon",
-    "Cáncer colorrectal",
-    "Otras preguntas de gastroenterología"
-  ],
-
-  /* ----------------------- DERMATO ------------------------- */
   dermatologia: [
     "Generalidades",
     "Infecciosas",
@@ -110,7 +42,74 @@ const SUBTEMAS = {
     "Otras preguntas de dermatología"
   ],
 
-  /* --------------------- INFECTOLOGÍA ---------------------- */
+  endocrinologia: [
+    "Hipotálamo / Hipófisis",
+    "Tiroides",
+    "Suprarrenales",
+    "Urgencias endocrinas",
+    "Desarrollo sexual",
+    "Otras preguntas de endocrinología"
+  ],
+
+  gastroenterologia: [
+    "Esófago",
+    "Estómago",
+    "Intestino delgado",
+    "Hígado",
+    "Vía biliar",
+    "Páncreas",
+    "Colon",
+    "Cáncer colorrectal",
+    "Otras preguntas de gastroenterología"
+  ],
+
+  ginecologia: [
+    "Alteraciones menstruales",
+    "Sangrado uterino anormal",
+    "Climaterio y menopausia",
+    "Síndrome de ovario poliquístico",
+    "Infertilidad / Esterilidad / Reproducción asistida",
+    "Anticoncepción",
+    "Endometriosis",
+    "Infecciones del tracto genital inferior",
+    "EPI",
+    "Prolapso e IU",
+    "Patología benigna de mama",
+    "Cáncer de mama",
+    "Patología cervical benigna y preinvasora",
+    "Cáncer de cuello uterino",
+    "Patología benigna uterina",
+    "Cáncer de endometrio",
+    "Cáncer de ovario",
+    "Vulva / Vagina / Cáncer de vulva",
+    "Tumores benignos de ovario",
+    "Otras preguntas de ginecología"
+  ],
+
+  hematologia: [
+    "Anemias carenciales",
+    "Anemias hemolíticas",
+    "Otras anemias",
+    "Insuficiencias medulares",
+    "Leucemias agudas",
+    "Mieloproliferativas crónicas",
+    "Linfoproliferativas crónicas",
+    "Linfomas",
+    "Gamapatías monoclonales",
+    "Trasplante hematopoyético",
+    "Coagulación",
+    "Terapia transfusional",
+    "Otras preguntas de hematología"
+  ],
+
+  imagenes: [
+    "Radiografía",
+    "Tomografía",
+    "Resonancia magnética",
+    "Ecografía",
+    "Otras preguntas de diagnóstico por imágenes"
+  ],
+
   infectologia: [
     "Bacterias",
     "Antibacterianos",
@@ -135,41 +134,15 @@ const SUBTEMAS = {
     "Otras preguntas de infectología"
   ],
 
-  /* ---------------------- REUMATO -------------------------- */
-  reumatologia: [
-    "Cristales",
-    "Vasculitis",
-    "Artritis reumatoide",
-    "Espondiloartropatías",
-    "LES y SAF",
-    "Metabólica ósea",
-    "Artritis infecciosa",
-    "AIJ",
-    "Artrosis",
-    "Otras artropatías",
-    "Otras enfermedades reumatológicas",
-    "Amiloidosis",
-    "Otras preguntas de reumatología"
+  medicinalegal: [
+    "Sistema de salud",
+    "Vigilancia epidemiológica",
+    "Análisis de situación de salud",
+    "Normativa nacional y jurisdiccional",
+    "APS – Atención primaria de la salud",
+    "Salud sexual y reproductiva"
   ],
 
-  /* ---------------------- HEMATOLOGÍA ---------------------- */
-  hematologia: [
-    "Anemias carenciales",
-    "Anemias hemolíticas",
-    "Otras anemias",
-    "Insuficiencias medulares",
-    "Leucemias agudas",
-    "Mieloproliferativas crónicas",
-    "Linfoproliferativas crónicas",
-    "Linfomas",
-    "Gamapatías monoclonales",
-    "Trasplante hematopoyético",
-    "Coagulación",
-    "Terapia transfusional",
-    "Otras preguntas de hematología"
-  ],
-
-  /* ----------------------- NEURO ---------------------------- */
   neurologia: [
     "ECV",
     "Convulsiones y epilepsia",
@@ -185,61 +158,35 @@ const SUBTEMAS = {
     "Otras preguntas de neurología"
   ],
 
-  /* ----------------------- ENDO ---------------------------- */
-  endocrinologia: [
-    "Hipotálamo / Hipófisis",
-    "Tiroides",
-    "Suprarrenales",
-    "Urgencias endocrinas",
-    "Desarrollo sexual",
-    "Otras preguntas de endocrinología"
+  neumonologia: [
+    "Anatomía y malformaciones",
+    "Semiología",
+    "Asma",
+    "EPOC",
+    "Neumonía",
+    "Bronquiectasias",
+    "Fibrosis quística",
+    "NPS y cáncer de pulmón",
+    "Tromboembolia de pulmón",
+    "Pleura, mediastino y diafragma",
+    "Enfermedades intersticiales",
+    "Ventilación y ventilación mecánica",
+    "Otras preguntas de neumonología"
   ],
 
-  /* ---------------------- PEDIATRÍA ------------------------ */
-  pediatria: [
-    "Neonatología",
-    "Cardiopatías congénitas",
-    "Desarrollo y nutrición",
-    "Maltrato y abuso sexual",
-    "Vacunación infantil",
-    "Trastornos de la infancia y adolescencia",
-    "Síndromes y anomalías cromosómicas",
-    "Muerte súbita del lactante",
-    "Patología nefro-urológica",
-    "Patología infecciosa",
-    "Patología respiratoria",
-    "Patología digestiva",
-    "Pulmopatías",
-    "Intoxicaciones",
-    "Oncohematología infantil",
-    "Otras preguntas de pediatría"
+  neurocirugia: [
+    "Neurocirugía"
   ],
 
-  /* ---------------------- GINECO --------------------------- */
-  ginecologia: [
-    "Alteraciones menstruales",
-    "Sangrado uterino anormal",
-    "Climaterio y menopausia",
-    "Síndrome de ovario poliquístico",
-    "Infertilidad / Esterilidad / Reproducción asistida",
-    "Anticoncepción",
-    "Endometriosis",
-    "Infecciones del tracto genital inferior",
-    "EPI",
-    "Prolapso e IU",
-    "Patología benigna de mama",
-    "Cáncer de mama",
-    "Patología cervical benigna y preinvasora",
-    "Cáncer de cuello uterino",
-    "Patología benigna uterina",
-    "Cáncer de endometrio",
-    "Cáncer de ovario",
-    "Vulva / Vagina / Cáncer de vulva",
-    "Tumores benignos de ovario",
-    "Otras preguntas de ginecología"
+  nutricion: [
+    "Diabetes mellitus",
+    "Nutrición y obesidad",
+    "Metabolismo lipídico",
+    "Metabolismo calcio – PTH",
+    "Hipoglucemias",
+    "Otras preguntas de nutrición"
   ],
 
-  /* ---------------------- OBSTETRICIA ---------------------- */
   obstetricia: [
     "Fisiología de la gestación",
     "Hemorragias del embarazo",
@@ -258,17 +205,6 @@ const SUBTEMAS = {
     "Otras preguntas de obstetricia"
   ],
 
-  /* ---------------------- TRAUMATO ------------------------- */
-  traumatologia: [
-    "Fracturas",
-    "Miembro superior",
-    "Miembro inferior",
-    "Tumores músculo-esqueléticos",
-    "Columna vertebral",
-    "Otras preguntas de traumatología"
-  ],
-
-  /* -------------------- OFTALMO ---------------------------- */
   oftalmologia: [
     "Introducción",
     "Conjuntiva",
@@ -286,7 +222,10 @@ const SUBTEMAS = {
     "Otras preguntas de oftalmología"
   ],
 
-  /* ----------------------- OTORRINO ------------------------ */
+  oncologia: [
+    "Oncología"
+  ],
+
   otorrinolaringologia: [
     "Oído",
     "Faringe",
@@ -296,17 +235,55 @@ const SUBTEMAS = {
     "Otras preguntas de ORL"
   ],
 
-  /* ----------------------- NEUROCIR ------------------------ */
-  neurocirugia: [
-    "Neurocirugía"
+  otras: [
+    "Fármacos",
+    "Otras"
   ],
 
-  /* ---------------------- TOXICOLOGÍA ---------------------- */
-  toxicologia: [
-    "Toxicología"
+  pediatria: [
+    "Neonatología",
+    "Cardiopatías congénitas",
+    "Desarrollo y nutrición",
+    "Maltrato y abuso sexual",
+    "Vacunación infantil",
+    "Trastornos de la infancia y adolescencia",
+    "Síndromes y anomalías cromosómicas",
+    "Muerte súbita del lactante",
+    "Patología nefro-urológica",
+    "Patología infecciosa",
+    "Patología respiratoria",
+    "Patología digestiva",
+    "Púrpuras y anemias",
+    "Intoxicaciones",
+    "Oncohematología infantil",
+    "Otras preguntas de pediatría"
   ],
 
-  /* ---------------------- SALUD PÚBLICA -------------------- */
+  psiquiatria: [
+    "Trastornos neuróticos y de la personalidad",
+    "Trastornos del estado de ánimo",
+    "Trastornos psicóticos",
+    "Trastornos relacionados con sustancias",
+    "Trastornos de la conducta alimentaria",
+    "Otras preguntas de psiquiatría"
+  ],
+
+  reumatologia: [
+    "Cristales",
+    "Vasculitis",
+    "Artritis reumatoide",
+    "Espondiloartropatías",
+    "LES y SAF",
+    "Metabólica ósea",
+    "Artritis infecciosa",
+    "AIJ",
+    "Artrosis",
+    "Otras artropatías",
+    "Otras enfermedades reumatológicas",
+    "Amiloidosis",
+    "Otras preguntas de reumatología"
+  ],
+
   saludpublica: [
     "Introducción a la epidemiología",
     "Introducción a la estadística",
@@ -322,27 +299,30 @@ const SUBTEMAS = {
     "Otras preguntas de salud pública"
   ],
 
-  /* ---------------------- MEDICINA LEGAL ------------------ */
-  medicinalegal: [
-    "Sistema de salud",
-    "Vigilancia epidemiológica",
-    "Análisis de situación de salud",
-    "Normativa nacional y jurisdiccional",
-    "APS – Atención primaria de la salud",
-    "Salud sexual y reproductiva"
+  toxicologia: [
+    "Toxicología"
   ],
 
-  /* ---------------------- IMÁGENES ------------------------- */
-  imagenes: [
-    "Radiografía",
-    "Tomografía",
-    "Resonancia magnética",
-    "Ecografía",
-    "Otras preguntas de diagnóstico por imágenes"
+  traumatologia: [
+    "Fracturas",
+    "Miembro superior",
+    "Miembro inferior",
+    "Tumores músculo-esqueléticos",
+    "Columna vertebral",
+    "Otras preguntas de traumatología"
   ],
 
-  /* ---------------------- OTRAS ---------------------------- */
-  otras: [
-    "Fármaco",
-    "Otras"
-]
+  urologia: [
+    "Fisiología renal",
+    "Síndromes clínicos",
+    "Fracaso renal agudo",
+    "Insuficiencia renal crónica",
+    "Glomerulonefritis primaria",
+    "Nefritis intersticial",
+    "Tubulopatías",
+    "Riesgo cardiovascular y riñón",
+    "Infecciones urinarias",
+    "Riñón y enfermedades sistémicas",
+    "Otras preguntas de urología"
+  ]
+};
