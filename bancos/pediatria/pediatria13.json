@@ -1,0 +1,702 @@
+[
+  {
+  "id": "pediatria-013-001",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Lactante de 10 meses con palidez cutánea, irritabilidad y pica. Laboratorio: Hb 8 g/dL, VCM 68 fL, ferritina baja. Diagnóstico probable:",
+  "opciones": {
+    "a": "Anemia ferropénica",
+    "b": "Anemia megaloblástica",
+    "c": "Anemia hemolítica autoinmune",
+    "d": "Talasemia mayor"
+  },
+  "correcta": "a",
+  "explicacion": "El déficit de hierro produce anemia microcítica hipocrómica con ferritina baja y síntomas inespecíficos como pica e irritabilidad."
+},
+{
+  "id": "pediatria-013-002",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Principal causa de anemia ferropénica en el lactante:",
+  "opciones": {
+    "a": "Aporte insuficiente de hierro en la dieta",
+    "b": "Pérdidas crónicas por hematuria",
+    "c": "Defecto congénito en la síntesis de globina",
+    "d": "Deficiencia de vitamina B12"
+  },
+  "correcta": "a",
+  "explicacion": "El rápido crecimiento y la introducción tardía de alimentos ricos en hierro son las principales causas."
+},
+{
+  "id": "pediatria-013-003",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué hallazgo orienta a anemia ferropénica en laboratorio?",
+  "opciones": {
+    "a": "VCM bajo y ferritina baja",
+    "b": "VCM alto y reticulocitosis",
+    "c": "VCM normal y leucocitosis",
+    "d": "Ferritina elevada y LDH alta"
+  },
+  "correcta": "a",
+  "explicacion": "La anemia ferropénica es microcítica hipocrómica con ferritina baja por depleción de reservas."
+},
+{
+  "id": "pediatria-013-004",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el tratamiento de elección para la anemia ferropénica?",
+  "opciones": {
+    "a": "Sulfato ferroso por vía oral durante 3–6 meses",
+    "b": "Hierro parenteral inmediato",
+    "c": "Transfusión sanguínea",
+    "d": "Ácido fólico y vitamina B12"
+  },
+  "correcta": "a",
+  "explicacion": "El hierro oral corrige el déficit; debe mantenerse al menos 3 meses luego de normalizar Hb para repletar depósitos."
+},
+{
+  "id": "pediatria-013-005",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué signo clínico puede observarse en la anemia ferropénica prolongada?",
+  "opciones": {
+    "a": "Coiloniquia y glositis",
+    "b": "Petequias y equimosis",
+    "c": "Esplenomegalia y fiebre",
+    "d": "Ictericia marcada"
+  },
+  "correcta": "a",
+  "explicacion": "La deficiencia prolongada de hierro produce cambios tróficos como uñas cóncavas (coiloniquia) y glositis."
+},
+{
+  "id": "pediatria-013-006",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño de 4 años con Hb 6,5 g/dL, VCM 105 fL y megaloblastos en sangre periférica. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Anemia megaloblástica por déficit de folato",
+    "b": "Anemia ferropénica",
+    "c": "Anemia hemolítica congénita",
+    "d": "Talasemia menor"
+  },
+  "correcta": "a",
+  "explicacion": "El aumento del VCM y la presencia de megaloblastos orientan a déficit de ácido fólico o B12."
+},
+{
+  "id": "pediatria-013-007",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál de los siguientes fármacos puede causar anemia megaloblástica secundaria?",
+  "opciones": {
+    "a": "Fenitoína",
+    "b": "Salbutamol",
+    "c": "Amoxicilina",
+    "d": "Ibuprofeno"
+  },
+  "correcta": "a",
+  "explicacion": "Anticonvulsivantes como la fenitoína interfieren en la absorción de folatos."
+},
+{
+  "id": "pediatria-013-008",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué parámetro distingue la anemia megaloblástica por déficit de vitamina B12 de la causada por folato?",
+  "opciones": {
+    "a": "Presencia de síntomas neurológicos",
+    "b": "VCM elevado",
+    "c": "Reticulocitopenia",
+    "d": "Neutrófilos hipersegmentados"
+  },
+  "correcta": "a",
+  "explicacion": "Solo el déficit de B12 causa alteraciones neurológicas (parestesias, ataxia)."
+},
+{
+  "id": "pediatria-013-009",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Lactante con ictericia, anemia y esplenomegalia. Frotis: esferocitos. Diagnóstico probable:",
+  "opciones": {
+    "a": "Esferocitosis hereditaria",
+    "b": "Anemia ferropénica",
+    "c": "Talasemia menor",
+    "d": "Deficiencia de folato"
+  },
+  "correcta": "a",
+  "explicacion": "La esferocitosis hereditaria cursa con anemia hemolítica, ictericia y esplenomegalia por destrucción de eritrocitos anormales."
+},
+{
+  "id": "pediatria-013-010",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el tratamiento curativo de la esferocitosis hereditaria sintomática?",
+  "opciones": {
+    "a": "Esplenectomía",
+    "b": "Corticoides orales",
+    "c": "Hierro parenteral",
+    "d": "Transfusiones mensuales"
+  },
+  "correcta": "a",
+  "explicacion": "La esplenectomía corrige la hemólisis al eliminar el sitio de destrucción eritrocitaria."
+},
+{
+  "id": "pediatria-013-011",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con anemia, ictericia y test de Coombs directo positivo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Anemia hemolítica autoinmune",
+    "b": "Anemia ferropénica",
+    "c": "Talasemia menor",
+    "d": "Déficit de glucosa-6-fosfato deshidrogenasa"
+  },
+  "correcta": "a",
+  "explicacion": "El Coombs positivo confirma hemólisis mediada por anticuerpos contra glóbulos rojos."
+},
+{
+  "id": "pediatria-013-012",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el desencadenante clásico de crisis hemolítica en el déficit de G6PD?",
+  "opciones": {
+    "a": "Fármacos oxidantes o infecciones",
+    "b": "Déficit de hierro",
+    "c": "Vacunación reciente",
+    "d": "Exposición al frío"
+  },
+  "correcta": "a",
+  "explicacion": "Enzimopatía ligada al X; crisis tras sulfas, habas o infecciones virales."
+},
+{
+  "id": "pediatria-013-013",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué hallazgo característico se observa en el frotis de déficit de G6PD tras crisis hemolítica?",
+  "opciones": {
+    "a": "Cuerpos de Heinz y células en mordida",
+    "b": "Esferocitos",
+    "c": "Macrocitos",
+    "d": "Blastos"
+  },
+  "correcta": "a",
+  "explicacion": "Los cuerpos de Heinz y células 'bite' reflejan daño oxidativo en la membrana eritrocitaria."
+},
+{
+  "id": "pediatria-013-014",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño mediterráneo con anemia microcítica grave, ictericia y hepatoesplenomegalia desde los 6 meses. Diagnóstico:",
+  "opciones": {
+    "a": "Talasemia mayor",
+    "b": "Anemia ferropénica",
+    "c": "Esferocitosis",
+    "d": "Déficit de folato"
+  },
+  "correcta": "a",
+  "explicacion": "La talasemia mayor se manifiesta en lactantes con anemia grave, ictericia y deformidades óseas."
+},
+{
+  "id": "pediatria-013-015",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el tratamiento de sostén principal en la talasemia mayor?",
+  "opciones": {
+    "a": "Transfusiones periódicas y quelantes de hierro",
+    "b": "Ácido fólico exclusivo",
+    "c": "Corticoides diarios",
+    "d": "Eritropoyetina subcutánea"
+  },
+  "correcta": "a",
+  "explicacion": "Las transfusiones regulares y la quelación previenen sobrecarga férrica y complicaciones."
+},
+{
+  "id": "pediatria-013-016",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "En la talasemia menor, el cuadro clínico habitual es:",
+  "opciones": {
+    "a": "Asintomático con microcitosis leve",
+    "b": "Anemia grave con ictericia",
+    "c": "Sangrados espontáneos",
+    "d": "Neutropenia severa"
+  },
+  "correcta": "a",
+  "explicacion": "La talasemia heterocigota cursa asintomática, con microcitosis leve y ferritina normal."
+},
+{
+  "id": "pediatria-013-017",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué hallazgo de laboratorio permite diferenciar anemia ferropénica de talasemia menor?",
+  "opciones": {
+    "a": "Ferritina normal o elevada en talasemia",
+    "b": "VCM bajo en ferropenia",
+    "c": "Ferritina baja en talasemia",
+    "d": "Reticulocitosis en ferropenia"
+  },
+  "correcta": "a",
+  "explicacion": "La ferritina es normal o alta en talasemia y baja en la anemia por déficit de hierro."
+},
+{
+  "id": "pediatria-013-018",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "En el frotis de sangre periférica de talasemia mayor se observan:",
+  "opciones": {
+    "a": "Células en diana (target cells) y anisopoiquilocitosis",
+    "b": "Esferocitos uniformes",
+    "c": "Macrocitos megaloblásticos",
+    "d": "Neutrófilos hipersegmentados"
+  },
+  "correcta": "a",
+  "explicacion": "La presencia de células en diana y anisopoiquilocitosis es característica de talasemia."
+},
+{
+  "id": "pediatria-013-019",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es la complicación más temida de las transfusiones repetidas en talasemia mayor?",
+  "opciones": {
+    "a": "Sobrecarga férrica",
+    "b": "Anemia aplásica secundaria",
+    "c": "Infección viral aguda",
+    "d": "Hipoglucemia"
+  },
+  "correcta": "a",
+  "explicacion": "La sobrecarga férrica requiere quelación con deferoxamina o análogos orales."
+},
+{
+  "id": "pediatria-013-020",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con palidez, soplo sistólico funcional y Hb 10 g/dL. MCV 75 fL, ferritina 12 ng/mL. Diagnóstico:",
+  "opciones": {
+    "a": "Anemia ferropénica leve",
+    "b": "Talasemia mayor",
+    "c": "Anemia megaloblástica",
+    "d": "Anemia hemolítica"
+  },
+  "correcta": "a",
+  "explicacion": "La ferritina baja y microcitosis indican ferropenia leve con repercusión hemodinámica mínima."
+},
+{
+  "id": "pediatria-013-021",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué complicación puede observarse en niños con anemia hemolítica crónica?",
+  "opciones": {
+    "a": "Litiasis biliar pigmentaria",
+    "b": "Hemorragia digestiva",
+    "c": "Trombocitopenia",
+    "d": "Pancreatitis"
+  },
+  "correcta": "a",
+  "explicacion": "La hemólisis crónica aumenta bilirrubina indirecta, predisponiendo a cálculos pigmentarios."
+},
+{
+  "id": "pediatria-013-022",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál de las siguientes es una característica del síndrome mielodisplásico pediátrico?",
+  "opciones": {
+    "a": "Citopenias refractarias y displasia medular",
+    "b": "Neutrofilia reactiva",
+    "c": "Hiperplasia medular sin displasia",
+    "d": "Trombocitosis secundaria"
+  },
+  "correcta": "a",
+  "explicacion": "El síndrome mielodisplásico cursa con citopenias persistentes y displasia en médula ósea."
+},
+{
+  "id": "pediatria-013-023",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño de 3 años con palidez, fiebre y pancitopenia. Diagnóstico diferencial principal:",
+  "opciones": {
+    "a": "Leucemia aguda linfoblástica",
+    "b": "Anemia ferropénica",
+    "c": "Anemia megaloblástica",
+    "d": "Talasemia menor"
+  },
+  "correcta": "a",
+  "explicacion": "La combinación de fiebre, palidez y pancitopenia obliga a descartar leucemia aguda."
+},
+{
+  "id": "pediatria-013-024",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál de los siguientes parámetros orienta a anemia de enfermedad crónica?",
+  "opciones": {
+    "a": "Ferritina normal o alta con hierro sérico bajo",
+    "b": "Ferritina baja y TIBC alto",
+    "c": "VCM alto con reticulocitosis",
+    "d": "LDH elevada con Coombs positivo"
+  },
+  "correcta": "a",
+  "explicacion": "En la anemia de enfermedad crónica hay secuestro de hierro; ferritina normal o elevada por inflamación."
+},
+{
+  "id": "pediatria-013-025",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué característica diferencia la anemia aplásica de las demás anemias pediátricas?",
+  "opciones": {
+    "a": "Médula ósea hipocelular con pancitopenia",
+    "b": "Reticulocitosis y esplenomegalia",
+    "c": "VCM bajo con ferritina baja",
+    "d": "Hiperplasia eritroide medular"
+  },
+  "correcta": "a",
+  "explicacion": "La anemia aplásica se caracteriza por hipocelularidad medular y pancitopenia periférica sin infiltración neoplásica."
+},
+  {
+  "id": "pediatria-013-026",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño de 5 años con petequias generalizadas, sangrado gingival y recuento plaquetario de 18.000/mm³. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Púrpura trombocitopénica inmune (PTI)",
+    "b": "Hemofilia A",
+    "c": "Deficiencia de vitamina K",
+    "d": "Leucemia mieloide aguda"
+  },
+  "correcta": "a",
+  "explicacion": "La PTI es la causa más frecuente de trombocitopenia adquirida en niños previamente sanos, habitualmente postviral."
+},
+{
+  "id": "pediatria-013-027",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es la causa más frecuente de PTI en pediatría?",
+  "opciones": {
+    "a": "Fenómeno autoinmune postinfeccioso",
+    "b": "Déficit congénito de plaquetas",
+    "c": "Defecto en síntesis de fibrinógeno",
+    "d": "Enfermedad mieloproliferativa"
+  },
+  "correcta": "a",
+  "explicacion": "La PTI suele ser secundaria a un proceso viral respiratorio o exantemático, con anticuerpos antiplaquetarios transitorios."
+},
+{
+  "id": "pediatria-013-028",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es la conducta inicial recomendada en PTI con plaquetas >20.000/mm³ y sin sangrado significativo?",
+  "opciones": {
+    "a": "Observación y control ambulatorio",
+    "b": "Iniciar corticoides sistémicos",
+    "c": "Administrar inmunoglobulina EV",
+    "d": "Indicar esplenectomía"
+  },
+  "correcta": "a",
+  "explicacion": "En PTI leve sin sangrado, el manejo es expectante, ya que suele resolverse espontáneamente en 6–8 semanas."
+},
+{
+  "id": "pediatria-013-029",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "En un niño con PTI y sangrado importante, la conducta terapéutica más adecuada es:",
+  "opciones": {
+    "a": "Inmunoglobulina EV o corticoides",
+    "b": "Antibióticos de amplio espectro",
+    "c": "Ácido tranexámico oral únicamente",
+    "d": "Observación sin tratamiento"
+  },
+  "correcta": "a",
+  "explicacion": "El tratamiento de elección ante sangrado relevante es inmunoglobulina EV o corticoides sistémicos."
+},
+{
+  "id": "pediatria-013-030",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con equimosis en miembros inferiores y recuento plaquetario normal. TP y TTPa normales. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Púrpura vascular benigna del niño",
+    "b": "Púrpura trombocitopénica inmune",
+    "c": "Hemofilia A",
+    "d": "Enfermedad de Von Willebrand"
+  },
+  "correcta": "a",
+  "explicacion": "La púrpura vascular benigna cursa con equimosis sin alteraciones en el recuento ni en la coagulación."
+},
+{
+  "id": "pediatria-013-031",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño de 4 años con sangrado articular recurrente. TP normal, TTPa prolongado. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Hemofilia A o B",
+    "b": "Púrpura trombocitopénica",
+    "c": "Déficit de vitamina K",
+    "d": "Von Willebrand leve"
+  },
+  "correcta": "a",
+  "explicacion": "El sangrado articular recurrente con TTPa prolongado es característico de hemofilia."
+},
+{
+  "id": "pediatria-013-032",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el factor deficitario en la hemofilia A?",
+  "opciones": {
+    "a": "Factor VIII",
+    "b": "Factor IX",
+    "c": "Factor XI",
+    "d": "Factor VII"
+  },
+  "correcta": "a",
+  "explicacion": "La hemofilia A se debe a déficit de factor VIII; la B, a déficit de factor IX."
+},
+{
+  "id": "pediatria-013-033",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es la herencia de la hemofilia A?",
+  "opciones": {
+    "a": "Ligada al cromosoma X recesiva",
+    "b": "Autosómica dominante",
+    "c": "Autosómica recesiva",
+    "d": "Mitocondrial"
+  },
+  "correcta": "a",
+  "explicacion": "La hemofilia A es recesiva ligada al X, por lo que afecta a varones y las mujeres son portadoras."
+},
+{
+  "id": "pediatria-013-034",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con hemofilia A leve. Qué tratamiento se utiliza ante un episodio de sangrado leve?",
+  "opciones": {
+    "a": "Desmopresina (DDAVP)",
+    "b": "Factor IX concentrado",
+    "c": "Ácido tranexámico oral exclusivo",
+    "d": "Vitamina K parenteral"
+  },
+  "correcta": "a",
+  "explicacion": "En hemofilia A leve, la desmopresina libera factor VIII endógeno, evitando el uso de concentrados."
+},
+{
+  "id": "pediatria-013-035",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con hemofilia A grave con sangrado articular importante. Tratamiento indicado:",
+  "opciones": {
+    "a": "Concentrado de factor VIII EV",
+    "b": "Desmopresina nasal",
+    "c": "Corticoide oral",
+    "d": "Crioprecipitado oral"
+  },
+  "correcta": "a",
+  "explicacion": "En formas graves se requiere reposición específica con factor VIII concentrado."
+},
+{
+  "id": "pediatria-013-036",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es la complicación más temida del tratamiento de hemofilia con concentrados de factor?",
+  "opciones": {
+    "a": "Desarrollo de inhibidores contra el factor infundido",
+    "b": "Trombosis venosa profunda",
+    "c": "Reacción anafiláctica por plasma",
+    "d": "Infección bacteriana"
+  },
+  "correcta": "a",
+  "explicacion": "Los anticuerpos neutralizantes (inhibidores) reducen la eficacia del tratamiento sustitutivo."
+},
+{
+  "id": "pediatria-013-037",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niña de 9 años con epistaxis recurrentes, menorragia leve y TTPa levemente prolongado. Diagnóstico probable:",
+  "opciones": {
+    "a": "Enfermedad de Von Willebrand",
+    "b": "Hemofilia A leve",
+    "c": "PTI",
+    "d": "Deficiencia de vitamina K"
+  },
+  "correcta": "a",
+  "explicacion": "La enfermedad de Von Willebrand causa sangrados mucosos con TTPa ligeramente prolongado y plaquetas normales."
+},
+{
+  "id": "pediatria-013-038",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué prueba diagnóstica es más útil para confirmar enfermedad de Von Willebrand?",
+  "opciones": {
+    "a": "Dosaje del factor Von Willebrand y actividad del factor VIII",
+    "b": "Recuento plaquetario",
+    "c": "TP y fibrinógeno",
+    "d": "Prueba de Coombs"
+  },
+  "correcta": "a",
+  "explicacion": "El diagnóstico se confirma con dosaje del factor Von Willebrand y su actividad cofactorial."
+},
+{
+  "id": "pediatria-013-039",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el tratamiento de elección en la enfermedad de Von Willebrand leve?",
+  "opciones": {
+    "a": "Desmopresina (DDAVP)",
+    "b": "Concentrado de factor IX",
+    "c": "Vitamina K",
+    "d": "Corticoides orales"
+  },
+  "correcta": "a",
+  "explicacion": "La desmopresina aumenta el factor Von Willebrand y el factor VIII endógeno."
+},
+{
+  "id": "pediatria-013-040",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con sangrado prolongado postextracción dental. TP normal, TTPa prolongado, plaquetas normales. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Enfermedad de Von Willebrand",
+    "b": "PTI",
+    "c": "Hemofilia B",
+    "d": "Déficit de fibrinógeno"
+  },
+  "correcta": "a",
+  "explicacion": "El sangrado mucoso con pruebas plaquetarias normales y TTPa prolongado orienta a Von Willebrand."
+},
+{
+  "id": "pediatria-013-041",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con sangrado umbilical en el período neonatal. Diagnóstico probable:",
+  "opciones": {
+    "a": "Déficit de vitamina K",
+    "b": "PTI congénita",
+    "c": "Hemofilia A",
+    "d": "Púrpura vascular"
+  },
+  "correcta": "a",
+  "explicacion": "La deficiencia de vitamina K en neonatos no suplementados causa sangrados umbilicales o intracraneales."
+},
+{
+  "id": "pediatria-013-042",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué estudio confirma la deficiencia de vitamina K?",
+  "opciones": {
+    "a": "TP prolongado con TTPa normal",
+    "b": "TTPa prolongado con TP normal",
+    "c": "Trombocitopenia",
+    "d": "Tiempo de sangría aumentado"
+  },
+  "correcta": "a",
+  "explicacion": "La vitamina K afecta la síntesis de factores dependientes del TP (II, VII, IX, X)."
+},
+{
+  "id": "pediatria-013-043",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Qué medida preventiva reduce la enfermedad hemorrágica del recién nacido?",
+  "opciones": {
+    "a": "Administración profiláctica de vitamina K al nacer",
+    "b": "Profilaxis antibiótica posparto",
+    "c": "Corticoides antenatales",
+    "d": "Evitar lactancia materna exclusiva"
+  },
+  "correcta": "a",
+  "explicacion": "La administración de vitamina K intramuscular al nacimiento previene la enfermedad hemorrágica del RN."
+},
+{
+  "id": "pediatria-013-044",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Adolescente con epistaxis recurrente y antecedentes familiares similares. TP y TTPa normales. Diagnóstico probable:",
+  "opciones": {
+    "a": "Telangiectasia hemorrágica hereditaria",
+    "b": "Von Willebrand tipo 2",
+    "c": "PTI crónica",
+    "d": "Hemofilia A leve"
+  },
+  "correcta": "a",
+  "explicacion": "La telangiectasia hereditaria causa sangrados recurrentes mucosos con coagulación normal."
+},
+{
+  "id": "pediatria-013-045",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con anemia, sangrados gingivales y lesiones purpúricas tras infección viral. Diagnóstico diferencial más importante:",
+  "opciones": {
+    "a": "Leucemia aguda linfoblástica",
+    "b": "PTI",
+    "c": "Déficit de vitamina K",
+    "d": "Hemofilia B"
+  },
+  "correcta": "a",
+  "explicacion": "La presencia de anemia y leucopenia con sangrados requiere descartar leucemia antes de diagnosticar PTI."
+},
+{
+  "id": "pediatria-013-046",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con sangrado cutáneo difuso, fiebre y shock. TP y TTPa prolongados, fibrinógeno bajo. Diagnóstico probable:",
+  "opciones": {
+    "a": "Coagulación intravascular diseminada (CID)",
+    "b": "PTI aguda",
+    "c": "Hemofilia A",
+    "d": "Púrpura vascular"
+  },
+  "correcta": "a",
+  "explicacion": "La CID se caracteriza por consumo de factores de coagulación, fibrinógeno bajo y sangrados generalizados."
+},
+{
+  "id": "pediatria-013-047",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Cuál es el tratamiento principal de la coagulación intravascular diseminada?",
+  "opciones": {
+    "a": "Tratar la causa subyacente y reponer factores (plasma, crioprecipitado)",
+    "b": "Administrar hierro oral",
+    "c": "Corticoides a altas dosis",
+    "d": "Suspender todos los líquidos EV"
+  },
+  "correcta": "a",
+  "explicacion": "El manejo se basa en corregir la causa y reponer componentes hemostáticos según sangrado."
+},
+{
+  "id": "pediatria-013-048",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Niño con anemia microcítica e historia familiar de rasgo talasémico. Qué examen confirma el diagnóstico?",
+  "opciones": {
+    "a": "Electroforesis de hemoglobina",
+    "b": "Frotis con reticulocitos",
+    "c": "Test de Coombs",
+    "d": "Dosaje de ferritina"
+  },
+  "correcta": "a",
+  "explicacion": "La electroforesis de hemoglobina permite identificar el exceso relativo de HbA₂ o HbF típico de talasemia."
+},
+{
+  "id": "pediatria-013-049",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "Recién nacido con petequias, trombocitopenia severa y madre con PTI. Diagnóstico probable:",
+  "opciones": {
+    "a": "Trombocitopenia aloinmune neonatal",
+    "b": "Hemofilia congénita",
+    "c": "Deficiencia de vitamina K",
+    "d": "PTI neonatal crónica"
+  },
+  "correcta": "a",
+  "explicacion": "Los anticuerpos maternos antiplaquetarios atraviesan la placenta y destruyen plaquetas fetales."
+},
+{
+  "id": "pediatria-013-050",
+  "materia": "Pediatria",
+  "submateria": "Hematología infantil",
+  "enunciado": "En un paciente pediátrico con hemofilia grave, qué manifestación requiere atención inmediata?",
+  "opciones": {
+    "a": "Cefalea intensa y vómitos postraumáticos",
+    "b": "Epistaxis leve aislada",
+    "c": "Equimosis en miembros inferiores",
+    "d": "Hematuria microscópica asintomática"
+  },
+  "correcta": "a",
+  "explicacion": "La cefalea y los vómitos luego de un traumatismo sugieren hemorragia intracraneal, una urgencia vital en pacientes hemofílicos."
+}
+]
