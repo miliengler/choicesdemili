@@ -1,0 +1,562 @@
+[
+  {
+  "id": "pediatria-015-001",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño de 5 años con palidez, fiebre y petequias. Hemograma: Hb 7 g/dL, leucocitos 45.000/mm³ con blastos, plaquetas 40.000/mm³. Diagnóstico más probable:",
+  "opciones": {
+    "a": "Leucemia linfoblástica aguda (LLA)",
+    "b": "Anemia aplásica",
+    "c": "Púrpura trombocitopénica inmune",
+    "d": "Linfoma de Hodgkin"
+  },
+  "correcta": "a",
+  "explicacion": "La tríada anemia, trombocitopenia y blastos en sangre periférica es característica de leucemia aguda, más frecuentemente LLA."
+},
+{
+  "id": "pediatria-015-002",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es la neoplasia maligna más frecuente de la infancia?",
+  "opciones": {
+    "a": "Leucemia linfoblástica aguda",
+    "b": "Linfoma de Hodgkin",
+    "c": "Neuroblastoma",
+    "d": "Tumor de Wilms"
+  },
+  "correcta": "a",
+  "explicacion": "La LLA representa cerca del 25% de todos los cánceres infantiles y es la neoplasia más común en pediatría."
+},
+{
+  "id": "pediatria-015-003",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el tipo de leucemia más frecuente en lactantes?",
+  "opciones": {
+    "a": "Leucemia mieloide aguda (LMA)",
+    "b": "Leucemia linfoblástica aguda (LLA)",
+    "c": "Leucemia mielomonocítica juvenil",
+    "d": "Linfoma linfoblástico"
+  },
+  "correcta": "a",
+  "explicacion": "En menores de 1 año predomina la LMA, mientras que en edad escolar la LLA es la más frecuente."
+},
+{
+  "id": "pediatria-015-004",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál de los siguientes hallazgos orienta al diagnóstico de leucemia aguda?",
+  "opciones": {
+    "a": "Blastos en médula ósea >25%",
+    "b": "Linfocitosis reactiva sin blastos",
+    "c": "Monocitosis aislada",
+    "d": "Ferritina elevada"
+  },
+  "correcta": "a",
+  "explicacion": "La OMS define leucemia aguda por la presencia de blastos medulares ≥25%."
+},
+{
+  "id": "pediatria-015-005",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál de los siguientes síntomas no es típico del debut leucémico?",
+  "opciones": {
+    "a": "Dolor óseo y hepatoesplenomegalia",
+    "b": "Fiebre prolongada sin foco",
+    "c": "Petequias y palidez",
+    "d": "Hematuria aislada sin anemia"
+  },
+  "correcta": "d",
+  "explicacion": "La hematuria aislada no es habitual; los síntomas clásicos son fiebre, palidez, sangrados y dolor óseo."
+},
+{
+  "id": "pediatria-015-006",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño con LLA en inducción quimioterápica. Desarrolla fiebre de 39°C y neutrófilos 200/mm³. Conducta:",
+  "opciones": {
+    "a": "Internación y antibióticos de amplio espectro EV",
+    "b": "Observación domiciliaria",
+    "c": "Corticoides orales",
+    "d": "Aislamiento sin antibióticos"
+  },
+  "correcta": "a",
+  "explicacion": "La fiebre en neutropenia febril es una urgencia oncológica; requiere cobertura antibiótica inmediata."
+},
+{
+  "id": "pediatria-015-007",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es la complicación metabólica más frecuente al inicio del tratamiento de leucemias agudas?",
+  "opciones": {
+    "a": "Síndrome de lisis tumoral",
+    "b": "Hipocalcemia aguda",
+    "c": "Síndrome de secreción inadecuada de ADH",
+    "d": "Hipotiroidismo"
+  },
+  "correcta": "a",
+  "explicacion": "El síndrome de lisis tumoral se produce por destrucción masiva celular, con hiperuricemia, hiperfosfatemia e hipocalcemia."
+},
+{
+  "id": "pediatria-015-008",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es la medida preventiva del síndrome de lisis tumoral?",
+  "opciones": {
+    "a": "Hidratación vigorosa y alopurinol",
+    "b": "Restricción hídrica y hierro oral",
+    "c": "Corticoides a dosis altas",
+    "d": "Transfusión profiláctica"
+  },
+  "correcta": "a",
+  "explicacion": "La hidratación y el alopurinol o rasburicasa previenen la lisis tumoral en leucemias y linfomas de alto riesgo."
+},
+{
+  "id": "pediatria-015-009",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es la localización más frecuente de infiltración extramedular en leucemias agudas pediátricas?",
+  "opciones": {
+    "a": "Sistema nervioso central y testículos",
+    "b": "Pulmones y tiroides",
+    "c": "Riñones y colon",
+    "d": "Corazón y bazo"
+  },
+  "correcta": "a",
+  "explicacion": "El SNC y los testículos son sitios frecuentes de infiltración leucémica; requieren profilaxis específica."
+},
+{
+  "id": "pediatria-015-010",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niña de 10 años con adenomegalia cervical, fiebre, sudoración nocturna y pérdida de peso. Diagnóstico probable:",
+  "opciones": {
+    "a": "Linfoma de Hodgkin",
+    "b": "Leucemia linfoblástica",
+    "c": "Mononucleosis infecciosa",
+    "d": "Tuberculosis ganglionar"
+  },
+  "correcta": "a",
+  "explicacion": "El linfoma de Hodgkin cursa con adenomegalias firmes y síntomas B (fiebre, sudoración, adelgazamiento)."
+},
+{
+  "id": "pediatria-015-011",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el tipo histológico más frecuente de linfoma de Hodgkin en niños?",
+  "opciones": {
+    "a": "Esclerosis nodular",
+    "b": "Celularidad mixta",
+    "c": "Predominio linfocitario",
+    "d": "Depleción linfocitaria"
+  },
+  "correcta": "a",
+  "explicacion": "La variedad de esclerosis nodular es la forma más común en pediatría."
+},
+{
+  "id": "pediatria-015-012",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Qué célula es característica del linfoma de Hodgkin?",
+  "opciones": {
+    "a": "Célula de Reed-Sternberg",
+    "b": "Linfoblasto",
+    "c": "Célula de Langerhans",
+    "d": "Plasmocito atípico"
+  },
+  "correcta": "a",
+  "explicacion": "Las células de Reed-Sternberg son binucleadas y específicas del linfoma de Hodgkin."
+},
+{
+  "id": "pediatria-015-013",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el tipo de linfoma no Hodgkin más frecuente en pediatría?",
+  "opciones": {
+    "a": "Linfoma de Burkitt",
+    "b": "Linfoma anaplásico",
+    "c": "Linfoma T periférico",
+    "d": "Linfoma folicular"
+  },
+  "correcta": "a",
+  "explicacion": "El linfoma de Burkitt es el tipo más frecuente de linfoma no Hodgkin en la infancia."
+},
+{
+  "id": "pediatria-015-014",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el tumor maligno sólido más frecuente en lactantes?",
+  "opciones": {
+    "a": "Neuroblastoma",
+    "b": "Tumor de Wilms",
+    "c": "Rabdomiosarcoma",
+    "d": "Hepatoblastoma"
+  },
+  "correcta": "a",
+  "explicacion": "El neuroblastoma es el tumor sólido extracraneal más frecuente del lactante."
+},
+{
+  "id": "pediatria-015-015",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño de 2 años con masa abdominal, HTA y aumento de catecolaminas urinarias. Diagnóstico probable:",
+  "opciones": {
+    "a": "Neuroblastoma",
+    "b": "Tumor de Wilms",
+    "c": "Linfoma abdominal",
+    "d": "Hepatoblastoma"
+  },
+  "correcta": "a",
+  "explicacion": "El neuroblastoma produce catecolaminas; puede causar HTA y masa abdominal irregular que cruza la línea media."
+},
+{
+  "id": "pediatria-015-016",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el origen embrionario del neuroblastoma?",
+  "opciones": {
+    "a": "Cresta neural (sistema simpático)",
+    "b": "Mesodermo renal",
+    "c": "Epitelio intestinal",
+    "d": "Células germinales"
+  },
+  "correcta": "a",
+  "explicacion": "El neuroblastoma deriva de células de la cresta neural del sistema nervioso simpático."
+},
+{
+  "id": "pediatria-015-017",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño de 4 años con masa abdominal firme, lisa, no cruzando la línea media. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tumor de Wilms (nefroblastoma)",
+    "b": "Neuroblastoma",
+    "c": "Linfoma abdominal",
+    "d": "Hepatoblastoma"
+  },
+  "correcta": "a",
+  "explicacion": "El tumor de Wilms se origina en el riñón, es de superficie lisa y no suele cruzar la línea media."
+},
+{
+  "id": "pediatria-015-018",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Qué síndrome genético se asocia al tumor de Wilms?",
+  "opciones": {
+    "a": "Síndrome de WAGR (Wilms, aniridia, genitourinario, retraso mental)",
+    "b": "Síndrome de Down",
+    "c": "Síndrome de Turner",
+    "d": "Neurofibromatosis tipo 2"
+  },
+  "correcta": "a",
+  "explicacion": "El síndrome WAGR (deleción 11p13) se asocia a tumor de Wilms y aniridia."
+},
+{
+  "id": "pediatria-015-019",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niña de 2 años con leucocoria unilateral. Diagnóstico probable:",
+  "opciones": {
+    "a": "Retinoblastoma",
+    "b": "Catarata congénita",
+    "c": "Neuroblastoma orbital",
+    "d": "Astrocitoma"
+  },
+  "correcta": "a",
+  "explicacion": "La leucocoria es el signo clínico más característico del retinoblastoma."
+},
+{
+  "id": "pediatria-015-020",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es la principal complicación del retinoblastoma hereditario?",
+  "opciones": {
+    "a": "Desarrollo de otros tumores secundarios (osteosarcoma)",
+    "b": "Pérdida de audición",
+    "c": "Insuficiencia renal crónica",
+    "d": "Anemia refractaria"
+  },
+  "correcta": "a",
+  "explicacion": "El retinoblastoma hereditario (mutación RB1) se asocia a riesgo elevado de osteosarcoma y sarcomas secundarios."
+},
+  {
+  "id": "pediatria-015-021",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niña de 8 años con masa dolorosa en muslo, de crecimiento rápido, con imagen ósea de lesión lítica. Diagnóstico probable:",
+  "opciones": {
+    "a": "Sarcoma de Ewing",
+    "b": "Osteosarcoma",
+    "c": "Rabdomiosarcoma",
+    "d": "Neuroblastoma metastásico"
+  },
+  "correcta": "a",
+  "explicacion": "El sarcoma de Ewing es un tumor óseo maligno típico de niños mayores, con lesión lítica y reacción perióstica en capas de cebolla."
+},
+{
+  "id": "pediatria-015-022",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Qué localización es más frecuente en el sarcoma de Ewing?",
+  "opciones": {
+    "a": "Diáfisis de huesos largos y pelvis",
+    "b": "Metáfisis femoral distal",
+    "c": "Epífisis tibial",
+    "d": "Cráneo"
+  },
+  "correcta": "a",
+  "explicacion": "El sarcoma de Ewing afecta habitualmente la diáfisis de huesos largos y la pelvis."
+},
+{
+  "id": "pediatria-015-023",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño de 12 años con dolor óseo en fémur distal, masa dura y Rx con osteólisis y neoformación ósea en sol radiante. Diagnóstico probable:",
+  "opciones": {
+    "a": "Osteosarcoma",
+    "b": "Sarcoma de Ewing",
+    "c": "Condrosarcoma",
+    "d": "Metástasis"
+  },
+  "correcta": "a",
+  "explicacion": "El osteosarcoma se origina en la metáfisis de huesos largos y produce imagen radiada característica ('en sol naciente')."
+},
+{
+  "id": "pediatria-015-024",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el marcador tumoral asociado al hepatoblastoma?",
+  "opciones": {
+    "a": "Alfa-fetoproteína (AFP) elevada",
+    "b": "Catecolaminas urinarias",
+    "c": "CEA",
+    "d": "CA-125"
+  },
+  "correcta": "a",
+  "explicacion": "El hepatoblastoma cursa con aumento de AFP; es el tumor hepático maligno más frecuente en la infancia."
+},
+{
+  "id": "pediatria-015-025",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el tumor de partes blandas más frecuente en la infancia?",
+  "opciones": {
+    "a": "Rabdomiosarcoma",
+    "b": "Fibrosarcoma",
+    "c": "Sarcoma sinovial",
+    "d": "Hemangioma cavernoso"
+  },
+  "correcta": "a",
+  "explicacion": "El rabdomiosarcoma es el tumor de tejidos blandos más común en pediatría, derivado de músculo estriado."
+},
+{
+  "id": "pediatria-015-026",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Localización más habitual del rabdomiosarcoma en la infancia:",
+  "opciones": {
+    "a": "Cabeza y cuello, genitourinario",
+    "b": "Tórax posterior",
+    "c": "Miembros inferiores",
+    "d": "Páncreas"
+  },
+  "correcta": "a",
+  "explicacion": "El rabdomiosarcoma se localiza con frecuencia en cabeza y cuello (órbita) y región genitourinaria."
+},
+{
+  "id": "pediatria-015-027",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño con fiebre persistente, astenia, adenomegalias generalizadas y pérdida de peso. Diagnóstico diferencial inicial:",
+  "opciones": {
+    "a": "Leucemia o linfoma",
+    "b": "Tuberculosis diseminada",
+    "c": "Infección viral autolimitada",
+    "d": "Mononucleosis infecciosa"
+  },
+  "correcta": "a",
+  "explicacion": "La combinación de fiebre, adenopatías y síntomas constitucionales debe hacer sospechar patología oncohematológica."
+},
+{
+  "id": "pediatria-015-028",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál de los siguientes es un signo de alarma oncológico en pediatría?",
+  "opciones": {
+    "a": "Palidez persistente con adenomegalias y hepatoesplenomegalia",
+    "b": "Fiebre aislada de corta evolución",
+    "c": "Adenopatías pequeñas dolorosas tras faringitis",
+    "d": "Pérdida de apetito leve"
+  },
+  "correcta": "a",
+  "explicacion": "La palidez persistente y la visceromegalia son signos de alarma para leucemia o linfoma."
+},
+{
+  "id": "pediatria-015-029",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "En un niño con leucemia, cuál de los siguientes hallazgos requiere atención urgente?",
+  "opciones": {
+    "a": "Fiebre con neutropenia <500/mm³",
+    "b": "Anemia leve sin síntomas",
+    "c": "Trombocitopenia aislada",
+    "d": "Dolor óseo leve"
+  },
+  "correcta": "a",
+  "explicacion": "La neutropenia febril es una urgencia médica; requiere antibióticos EV de amplio espectro."
+},
+{
+  "id": "pediatria-015-030",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Complicación infecciosa más frecuente durante la quimioterapia intensiva:",
+  "opciones": {
+    "a": "Sepsis bacteriana en neutropenia",
+    "b": "Neumonía viral",
+    "c": "Tinea capitis",
+    "d": "Toxoplasmosis"
+  },
+  "correcta": "a",
+  "explicacion": "La neutropenia profunda aumenta el riesgo de bacteriemia grave; se requiere profilaxis y vigilancia."
+},
+{
+  "id": "pediatria-015-031",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño con quimioterapia reciente que presenta fiebre y mucositis oral. Primera conducta:",
+  "opciones": {
+    "a": "Internación y antibióticos EV",
+    "b": "Hidratación oral y control a las 24 h",
+    "c": "Uso de corticoides tópicos",
+    "d": "Antifúngicos orales"
+  },
+  "correcta": "a",
+  "explicacion": "Todo paciente inmunocomprometido febril requiere internación y cobertura empírica inmediata."
+},
+{
+  "id": "pediatria-015-032",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el efecto adverso hematológico más frecuente de la quimioterapia?",
+  "opciones": {
+    "a": "Neutropenia",
+    "b": "Linfocitosis reactiva",
+    "c": "Trombocitosis",
+    "d": "Policitemia"
+  },
+  "correcta": "a",
+  "explicacion": "La neutropenia es la citopenia más frecuente por toxicidad medular de la quimioterapia."
+},
+{
+  "id": "pediatria-015-033",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niña en tratamiento por LLA presenta equimosis y trombocitopenia severa. Conducta inmediata:",
+  "opciones": {
+    "a": "Transfundir plaquetas",
+    "b": "Aumentar dosis de corticoides",
+    "c": "Iniciar antibióticos profilácticos",
+    "d": "Administrar eritropoyetina"
+  },
+  "correcta": "a",
+  "explicacion": "La trombocitopenia con sangrado requiere transfusión de plaquetas."
+},
+{
+  "id": "pediatria-015-034",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Qué complicación metabólica puede aparecer en la quimioterapia intensiva?",
+  "opciones": {
+    "a": "Hiperuricemia y nefropatía por ácido úrico",
+    "b": "Hiponatremia dilucional",
+    "c": "Hipocalcemia secundaria a corticoides",
+    "d": "Hipoglucemia persistente"
+  },
+  "correcta": "a",
+  "explicacion": "La destrucción celular masiva puede causar hiperuricemia, base del síndrome de lisis tumoral."
+},
+{
+  "id": "pediatria-015-035",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niño con linfoma mediastinal presenta disnea y ortopnea. Conducta inicial:",
+  "opciones": {
+    "a": "Evitar decúbito y solicitar Rx de tórax urgente",
+    "b": "Iniciar sedación profunda y analgesia",
+    "c": "Inducir anestesia general para biopsia inmediata",
+    "d": "Administrar líquidos abundantes"
+  },
+  "correcta": "a",
+  "explicacion": "El linfoma mediastinal puede causar compresión traqueal; debe evitarse el decúbito y realizar estudios en posición sentada."
+},
+{
+  "id": "pediatria-015-036",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál de los siguientes tumores se asocia con secreción ectópica de catecolaminas?",
+  "opciones": {
+    "a": "Neuroblastoma",
+    "b": "Tumor de Wilms",
+    "c": "Hepatoblastoma",
+    "d": "Sarcoma de Ewing"
+  },
+  "correcta": "a",
+  "explicacion": "El neuroblastoma deriva de tejido simpático y produce catecolaminas detectables en orina."
+},
+{
+  "id": "pediatria-015-037",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Niña de 6 años con fiebre prolongada, pérdida de peso y masa abdominal firme. Catecolaminas urinarias normales. Diagnóstico probable:",
+  "opciones": {
+    "a": "Tumor de Wilms",
+    "b": "Neuroblastoma",
+    "c": "Linfoma abdominal",
+    "d": "Hepatoblastoma"
+  },
+  "correcta": "a",
+  "explicacion": "El tumor de Wilms presenta masa abdominal sin aumento de catecolaminas urinarias, a diferencia del neuroblastoma."
+},
+{
+  "id": "pediatria-015-038",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál es el hallazgo radiológico típico del neuroblastoma metastásico?",
+  "opciones": {
+    "a": "Metástasis óseas con imagen moteada",
+    "b": "Lesión renal bilateral simétrica",
+    "c": "Hepatomegalia homogénea",
+    "d": "Pulmones hiperdensos"
+  },
+  "correcta": "a",
+  "explicacion": "El neuroblastoma metastásico puede producir imágenes óseas moteadas ('pepper-pot skull') por infiltración."
+},
+{
+  "id": "pediatria-015-039",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Qué marcador se utiliza en el seguimiento de pacientes con LLA?",
+  "opciones": {
+    "a": "Carga mínima residual (CMR) por citometría de flujo o PCR",
+    "b": "AFP sérica",
+    "c": "Catecolaminas urinarias",
+    "d": "LDH hepática"
+  },
+  "correcta": "a",
+  "explicacion": "La CMR permite evaluar la respuesta al tratamiento y riesgo de recaída en leucemias agudas."
+},
+{
+  "id": "pediatria-015-040",
+  "materia": "Pediatria",
+  "submateria": "Oncohematología infantil",
+  "enunciado": "Cuál de los siguientes signos debe alertar sobre posible cáncer infantil?",
+  "opciones": {
+    "a": "Fiebre prolongada, palidez, adenomegalias y dolor óseo persistente",
+    "b": "Rinitis recurrente y tos seca",
+    "c": "Dolor abdominal leve intermitente",
+    "d": "Irritabilidad postvacunal"
+  },
+  "correcta": "a",
+  "explicacion": "Los signos de alarma incluyen fiebre prolongada, palidez, adenomegalias y dolor óseo; deben motivar estudios oncológicos."
+}
+]
