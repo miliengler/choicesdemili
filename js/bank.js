@@ -1,6 +1,6 @@
 /* ==========================================================
    💾 BANCO DE PREGUNTAS – Persistencia, carga y actualización
-   Con índice transversal (materia/submateria) y normalización extendida
+   Versión FULL con SUBTEMAS + INDEX transversal
    ========================================================== */
 
 const LS_BANK = "mebank_bank_v7_full";
@@ -25,8 +25,348 @@ function normalizeString(str) {
 }
 
 /* ==========================================================
+   📚 SUBTEMAS POR MATERIA — ORDENADOS ALFABÉTICAMENTE
+   ========================================================== */
+
+const SUBTEMAS = {
+  cardiologia: [
+    "Cardiología básica",
+    "Hipertensión arterial y factores de riesgo",
+    "Insuficiencia cardíaca",
+    "Cardiopatía isquémica",
+    "Trastornos del ritmo",
+    "Síncope",
+    "Valvulopatías",
+    "Miocardiopatías",
+    "Pericardio",
+    "Aorta",
+    "Enfermedad arterial periférica",
+    "Venas y linfáticos",
+    "Otras preguntas de cardiología"
+  ],
+
+  cirugiageneral: [
+    "Evaluación prequirúrgica",
+    "Quemaduras",
+    "Cirugía mínimamente invasiva",
+    "Glándulas salivales y masas cervicales",
+    "Patología de pared abdominal",
+    "Trasplante y procuración",
+    "Otras preguntas de cirugía general"
+  ],
+
+  dermatologia: [
+    "Generalidades",
+    "Infecciosas",
+    "Dermatología y sistémicas",
+    "Oncología cutánea",
+    "Eritemato-descamativas",
+    "Ampollosas autoinmunes",
+    "Glandulares / Urticaria / Angioedema",
+    "Genodermatosis y facomatosis",
+    "Otras preguntas de dermatología"
+  ],
+
+  endocrinologia: [
+    "Hipotálamo / Hipófisis",
+    "Tiroides",
+    "Suprarrenales",
+    "Urgencias endocrinas",
+    "Desarrollo sexual",
+    "Otras preguntas de endocrinología"
+  ],
+
+  gastroenterologia: [
+    "Esófago",
+    "Estómago",
+    "Intestino delgado",
+    "Hígado",
+    "Vía biliar",
+    "Páncreas",
+    "Colon",
+    "Cáncer colorrectal",
+    "Otras preguntas de gastroenterología"
+  ],
+
+  ginecologia: [
+    "Alteraciones menstruales",
+    "Sangrado uterino anormal",
+    "Climaterio y menopausia",
+    "Síndrome de ovario poliquístico",
+    "Infertilidad / Esterilidad / Reproducción asistida",
+    "Anticoncepción",
+    "Endometriosis",
+    "Infecciones del tracto genital inferior",
+    "EPI",
+    "Prolapso e IU",
+    "Patología benigna de mama",
+    "Cáncer de mama",
+    "Patología cervical benigna y preinvasora",
+    "Cáncer de cuello uterino",
+    "Patología benigna uterina",
+    "Cáncer de endometrio",
+    "Cáncer de ovario",
+    "Vulva / Vagina / Cáncer de vulva",
+    "Tumores benignos de ovario",
+    "Otras preguntas de ginecología"
+  ],
+
+  hematologia: [
+    "Anemias carenciales",
+    "Anemias hemolíticas",
+    "Otras anemias",
+    "Insuficiencias medulares",
+    "Leucemias agudas",
+    "Mieloproliferativas crónicas",
+    "Linfoproliferativas crónicas",
+    "Linfomas",
+    "Gamapatías monoclonales",
+    "Trasplante hematopoyético",
+    "Coagulación",
+    "Terapia transfusional",
+    "Otras preguntas de hematología"
+  ],
+
+  imagenes: [
+    "Radiografía",
+    "Tomografía",
+    "Resonancia magnética",
+    "Ecografía",
+    "Otras preguntas de diagnóstico por imágenes"
+  ],
+
+  infectologia: [
+    "Bacterias",
+    "Antibacterianos",
+    "Sepsis y nosocomiales",
+    "Endocarditis",
+    "SNC y meningitis",
+    "TRS",
+    "TRI – Neumonías",
+    "Tuberculosis",
+    "ITS",
+    "Virus respiratorios / Influenza",
+    "Virus no HIV",
+    "HIV",
+    "Hongos",
+    "Inmunodeprimidos no HIV",
+    "Tropicales",
+    "Tracto digestivo",
+    "Rickettsias / Bartonella / Coxiella / Leptospira",
+    "Brucella / Nocardia / Actinomicosis",
+    "Virus varios",
+    "COVID-19",
+    "Otras preguntas de infectología"
+  ],
+
+  medicinafamiliar: [
+    "Atención primaria",
+    "Promoción y prevención",
+    "Abordaje integral",
+    "Crónicos y multimorbilidad",
+    "Otras preguntas de medicina familiar"
+  ],
+
+  medicinalegal: [
+    "Sistema de salud",
+    "Vigilancia epidemiológica",
+    "Análisis de situación de salud",
+    "Normativa nacional y jurisdiccional",
+    "APS – Atención primaria de la salud",
+    "Salud sexual y reproductiva"
+  ],
+
+  neurologia: [
+    "ECV",
+    "Convulsiones y epilepsia",
+    "Desmielinizantes",
+    "Trastornos del movimiento",
+    "Cefaleas",
+    "Metabólicas",
+    "Encefalitis viral",
+    "Neuropatías",
+    "Placa motora",
+    "Miopatías",
+    "SNP",
+    "Otras preguntas de neurología"
+  ],
+
+  neurocirugia: [
+    "Neurocirugía"
+  ],
+
+  neumonologia: [
+    "Anatomía y malformaciones",
+    "Semiología",
+    "Asma",
+    "EPOC",
+    "Neumonía",
+    "Bronquiectasias",
+    "Fibrosis quística",
+    "NPS y cáncer de pulmón",
+    "Tromboembolia de pulmón",
+    "Pleura, mediastino y diafragma",
+    "Enfermedades intersticiales",
+    "Ventilación y ventilación mecánica",
+    "Otras preguntas de neumonología"
+  ],
+
+  nutricion: [
+    "Diabetes mellitus",
+    "Nutrición y obesidad",
+    "Metabolismo lipídico",
+    "Metabolismo calcio – PTH",
+    "Hipoglucemias",
+    "Otras preguntas de nutrición"
+  ],
+
+  oftalmologia: [
+    "Introducción",
+    "Conjuntiva",
+    "Retina",
+    "Neurooftalmología",
+    "Uveítis",
+    "Glaucoma",
+    "Órbita",
+    "Córnea y esclera",
+    "Cristalino",
+    "Párpados y vía lagrimal",
+    "Refracción",
+    "Estrabismo",
+    "Toxicidad ocular",
+    "Otras preguntas de oftalmología"
+  ],
+
+  oncologia: [
+    "Introducción",
+    "Oncología de órganos",
+    "Hemato-oncología",
+    "Tratamientos",
+    "Cuidados paliativos",
+    "Otras preguntas de oncología"
+  ],
+
+  obstetricia: [
+    "Fisiología de la gestación",
+    "Hemorragias del embarazo",
+    "Screening gestacional",
+    "Complicaciones maternas",
+    "Amenaza de parto prematuro",
+    "RPM",
+    "EHRN e isoinmunización Rh",
+    "Infecciones congénitas",
+    "Patología materna y gestación",
+    "Embarazo múltiple",
+    "Parto",
+    "Embarazo prolongado e inducción",
+    "Puerperio",
+    "Lactancia",
+    "Otras preguntas de obstetricia"
+  ],
+
+  otorrinolaringologia: [
+    "Oído",
+    "Faringe",
+    "Laringe",
+    "Nariz",
+    "Patología maxilofacial",
+    "Otras preguntas de ORL"
+  ],
+
+  otras: [
+    "Fármacos",
+    "Otras"
+  ],
+
+  pediatria: [
+    "Neonatología",
+    "Cardiopatías congénitas",
+    "Desarrollo y nutrición",
+    "Maltrato y abuso sexual",
+    "Vacunación infantil",
+    "Trastornos de la infancia y adolescencia",
+    "Síndromes y anomalías cromosómicas",
+    "Muerte súbita del lactante",
+    "Patología nefro-urológica",
+    "Patología infecciosa",
+    "Patología respiratoria",
+    "Patología digestiva",
+    "Púrpuras y anemias",
+    "Intoxicaciones",
+    "Oncohematología infantil",
+    "Otras preguntas de pediatría"
+  ],
+
+  psiquiatria: [
+    "Trastornos neuróticos y de la personalidad",
+    "Trastornos del estado de ánimo",
+    "Trastornos psicóticos",
+    "Trastornos relacionados con sustancias",
+    "Trastornos de la conducta alimentaria",
+    "Otras preguntas de psiquiatría"
+  ],
+
+  reumatologia: [
+    "Cristales",
+    "Vasculitis",
+    "Artritis reumatoide",
+    "Espondiloartropatías",
+    "LES y SAF",
+    "Metabólica ósea",
+    "Artritis infecciosa",
+    "AIJ",
+    "Artrosis",
+    "Otras artropatías",
+    "Otras enfermedades reumatológicas",
+    "Amiloidosis",
+    "Otras preguntas de reumatología"
+  ],
+
+  saludpublica: [
+    "Introducción a la epidemiología",
+    "Introducción a la estadística",
+    "Estadística descriptiva",
+    "Estadística inferencial",
+    "Medidas epidemiológicas de frecuencia",
+    "Análisis de asociación",
+    "Tipos de estudios epidemiológicos",
+    "Validez y fiabilidad",
+    "Evaluación de pruebas diagnósticas",
+    "Medicina basada en la evidencia",
+    "Datos de nuestro país",
+    "Otras preguntas de salud pública"
+  ],
+
+  toxicologia: [
+    "Toxicología"
+  ],
+
+  traumatologia: [
+    "Fracturas",
+    "Miembro superior",
+    "Miembro inferior",
+    "Tumores músculo-esqueléticos",
+    "Columna vertebral",
+    "Otras preguntas de traumatología"
+  ],
+
+  urologia: [
+    "Fisiología renal",
+    "Síndromes clínicos",
+    "Fracaso renal agudo",
+    "Insuficiencia renal crónica",
+    "Glomerulonefritis primaria",
+    "Nefritis intersticial",
+    "Tubulopatías",
+    "Riesgo cardiovascular y riñón",
+    "Infecciones urinarias",
+    "Riñón y enfermedades sistémicas",
+    "Otras preguntas de urología"
+  ]
+};
+
+/* ==========================================================
    🧩 Normalizador de submaterias
-   (maneja los casos “otras” → otras_pediatria, etc.)
    ========================================================== */
 function normalizarSubmateria(materia, submateria) {
   const s = normalizeString(submateria);
@@ -42,42 +382,40 @@ function normalizarSubmateria(materia, submateria) {
    ========================================================== */
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
-    { slug: "neumonologia", name: "🫁 Neumonología" },
-    { slug: "psiquiatria", name: "💭 Psiquiatría" },
     { slug: "cardiologia", name: "🫀 Cardiología" },
-    { slug: "nutricion", name: "🍏 Nutrición" },
-    { slug: "urologia", name: "🚽 Urología" },
-    { slug: "gastroenterologia", name: "💩 Gastroenterología" },
-    { slug: "dermatologia", name: "🧴 Dermatología" },
-    { slug: "infectologia", name: "🦠 Infectología" },
-    { slug: "reumatologia", name: "💪 Reumatología" },
-    { slug: "hematologia", name: "🩸 Hematología" },
-    { slug: "neurologia", name: "🧠 Neurología" },
-    { slug: "endocrinologia", name: "🧪 Endocrinología" },
-    { slug: "pediatria", name: "🧸 Pediatría" },
-    { slug: "oncologia", name: "🎗️ Oncología" },
-    { slug: "medicinafamiliar", name: "👨‍👩‍👧‍👦 Medicina Familiar" },
-    { slug: "ginecologia", name: "🌸 Ginecología" },
-    { slug: "obstetricia", name: "🤰 Obstetricia" },
     { slug: "cirugiageneral", name: "🔪 Cirugía General" },
-    { slug: "traumatologia", name: "🦴 Traumatología" },
-    { slug: "oftalmologia", name: "👁️ Oftalmología" },
-    { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
-    { slug: "neurocirugia", name: "🧠 Neurocirugía" },
-    { slug: "toxicologia", name: "☠️ Toxicología" },
-    { slug: "saludpublica", name: "🏥 Salud Pública" },
-    { slug: "medicinalegal", name: "⚖️ Medicina Legal" },
+    { slug: "dermatologia", name: "🧴 Dermatología" },
+    { slug: "endocrinologia", name: "🧪 Endocrinología" },
+    { slug: "gastroenterologia", name: "💩 Gastroenterología" },
+    { slug: "ginecologia", name: "🌸 Ginecología" },
+    { slug: "hematologia", name: "🩸 Hematología" },
     { slug: "imagenes", name: "🩻 Diagnóstico por Imágenes" },
-    { slug: "otras", name: "📚 Otras" }
+    { slug: "infectologia", name: "🦠 Infectología" },
+    { slug: "medicinafamiliar", name: "👨‍👩‍👧‍👦 Medicina Familiar" },
+    { slug: "medicinalegal", name: "⚖️ Medicina Legal" },
+    { slug: "neurologia", name: "🧠 Neurología" },
+    { slug: "neurocirugia", name: "🧠 Neurocirugía" },
+    { slug: "neumonologia", name: "🫁 Neumonología" },
+    { slug: "nutricion", name: "🍏 Nutrición" },
+    { slug: "oftalmologia", name: "👁️ Oftalmología" },
+    { slug: "oncologia", name: "🎗️ Oncología" },
+    { slug: "obstetricia", name: "🤰 Obstetricia" },
+    { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
+    { slug: "otras", name: "📚 Otras" },
+    { slug: "pediatria", name: "🧸 Pediatría" },
+    { slug: "psiquiatria", name: "💭 Psiquiatría" },
+    { slug: "reumatologia", name: "💪 Reumatología" },
+    { slug: "saludpublica", name: "🏥 Salud Pública" },
+    { slug: "toxicologia", name: "☠️ Toxicología" },
+    { slug: "traumatologia", name: "🦴 Traumatología" },
+    { slug: "urologia", name: "🚽 Urología" }
   ],
   questions: [],
-  index: {} // ← nuevo índice transversal
+  index: {}
 };
 
-let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
-
 /* ==========================================================
-   💾 Guardado local
+   💾 Guardado
    ========================================================== */
 function saveAll() {
   localStorage.setItem(LS_BANK, JSON.stringify(BANK));
@@ -85,75 +423,64 @@ function saveAll() {
 }
 
 /* ==========================================================
-   📘 Materias derivadas del banco
+   📘 Materias derivadas
    ========================================================== */
 function subjectsFromBank() {
-  const known = new Map((BANK.subjects || []).map(s => [normalizeString(s.slug), s]));
-
-  (BANK.questions || []).forEach(q => {
-    if (q && q.materia) {
-      const slug = normalizeString(q.materia);
-      if (!known.has(slug)) known.set(slug, { slug, name: q.materia });
-    }
-  });
-
-  return Array.from(known.values()).sort((a, b) =>
-    normalizeString(a.name).localeCompare(normalizeString(b.name), "es", { sensitivity: "base" })
+  return BANK.subjects.sort((a, b) =>
+    normalizeString(a.name).localeCompare(normalizeString(b.name))
   );
 }
 
 /* ==========================================================
-   🌐 Carga completa (materias + exámenes anteriores)
+   🌐 Carga total bancos + exámenes anteriores
    ========================================================== */
 async function loadAllBanks() {
-  const loader = showLoader("⏳ Cargando bancos...");
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
 
+  BANK.index = {};
+
   const normalizarMateria = (nombre) => {
-    if (!nombre) return "";
     const limpio = normalizeString(nombre);
     const match = BANK.subjects.find(s => normalizeString(s.slug) === limpio);
     return match ? match.slug : limpio;
   };
 
-  // reiniciar índice transversal
-  BANK.index = {};
-
-  /* ---------- 1️⃣ Cargar bancos por materia ---------- */
+  /* ---------- Bancos por materia ---------- */
   for (const s of BANK.subjects) {
     const materia = s.slug;
-    for (let i = 1; i <= 4; i++) {
+
+    // soporte hasta 16 archivos por materia (vos tenés 1–16 en pediatría)
+    for (let i = 1; i <= 20; i++) {
       const ruta = `bancos/${materia}/${materia}${i}.json`;
       try {
         const resp = await fetch(ruta);
-        if (!resp.ok) continue;
+        if (!resp.ok) break;
+
         const data = await resp.json();
 
         data.forEach(q => {
-          q.tipo = q.tipo || "banco";
-          q.materia = normalizarMateria(q.materia);
+          q.tipo = "banco";
+          q.materia = normalizarMateria(q.materia || materia);
           q.submateria = normalizarSubmateria(q.materia, q.submateria);
 
-          // Indexación transversal
-          const m = q.materia;
-          const ssub = q.submateria;
-          if (!BANK.index[m]) BANK.index[m] = {};
-          if (!BANK.index[m][ssub]) BANK.index[m][ssub] = [];
-          BANK.index[m][ssub].push(q);
+          if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
+          if (!BANK.index[q.materia][q.submateria])
+            BANK.index[q.materia][q.submateria] = [];
+
+          BANK.index[q.materia][q.submateria].push(q);
         });
 
         const nuevas = data.filter(q => !existingIds.has(q.id));
         nuevas.forEach(q => existingIds.add(q.id));
         BANK.questions.push(...nuevas);
         totalNuevas += nuevas.length;
-        console.log(`📘 ${ruta} (${nuevas.length} nuevas preguntas)`);
       } catch {}
     }
   }
 
-  /* ---------- 2️⃣ Cargar exámenes anteriores ---------- */
-  const examenes = [
+  /* ---------- Exámenes anteriores ---------- */
+  const examYears = [
     "examenunico2025.json",
     "examenunico2024.json",
     "examenunico2019.json",
@@ -162,11 +489,12 @@ async function loadAllBanks() {
     "examenunico2016.json"
   ];
 
-  for (const ex of examenes) {
+  for (const ex of examYears) {
     const ruta = `bancos/anteriores/${ex}`;
     try {
       const resp = await fetch(ruta);
       if (!resp.ok) continue;
+
       const data = await resp.json();
 
       data.forEach(q => {
@@ -174,81 +502,47 @@ async function loadAllBanks() {
         q.materia = normalizarMateria(q.materia);
         q.submateria = normalizarSubmateria(q.materia, q.submateria);
 
-        // Indexación transversal
-        const m = q.materia;
-        const ssub = q.submateria;
-        if (!BANK.index[m]) BANK.index[m] = {};
-        if (!BANK.index[m][ssub]) BANK.index[m][ssub] = [];
-        BANK.index[m][ssub].push(q);
+        if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
+        if (!BANK.index[q.materia][q.submateria])
+          BANK.index[q.materia][q.submateria] = [];
+
+        BANK.index[q.materia][q.submateria].push(q);
       });
 
       const nuevas = data.filter(q => !existingIds.has(q.id));
       nuevas.forEach(q => existingIds.add(q.id));
       BANK.questions.push(...nuevas);
       totalNuevas += nuevas.length;
-      console.log(`📄 ${ruta} (${nuevas.length} preguntas de examen)`);
-    } catch {
-      console.warn(`⚠️ No se pudo cargar ${ruta}`);
-    }
+
+    } catch {}
   }
 
-  hideLoader(loader, totalNuevas);
   if (totalNuevas > 0) saveAll();
 }
 
 /* ==========================================================
-   💬 Indicadores visuales
-   ========================================================== */
-function showLoader(text) {
-  const el = document.createElement("div");
-  el.id = "bankLoader";
-  el.style = `
-    position:fixed;bottom:15px;left:15px;
-    background:#1e40af;color:white;padding:8px 12px;
-    border-radius:8px;font-size:13px;z-index:9999;
-    box-shadow:0 2px 6px rgba(0,0,0,0.3);
-  `;
-  el.textContent = text;
-  document.body.appendChild(el);
-  return el;
-}
-
-function hideLoader(el, total) {
-  el.textContent = total > 0
-    ? `✅ ${total} nuevas preguntas cargadas`
-    : "✅ Bancos actualizados (sin cambios)";
-  setTimeout(() => el.remove(), 2500);
-}
-
-/* ==========================================================
-   ⚙️ Carga inicial automática
+   ⚙️ Carga inicial
    ========================================================== */
 window.addEventListener("DOMContentLoaded", async () => {
-  if (!(BANK.questions && BANK.questions.length)) {
+  if (!BANK.questions.length) {
     await loadAllBanks();
-    if (!BANK.questions.length) {
-      console.warn("⚠️ No se cargaron preguntas. Verificá rutas o permisos de CORS.");
-    }
   }
 });
 
 /* ==========================================================
-   ♻️ Forzar recarga completa
+   ♻️ Recarga completa
    ========================================================== */
 async function forceReloadBank() {
-  if (!confirm("⚠️ Esto borrará el banco local y lo recargará completo. ¿Continuar?")) return;
+  if (!confirm("¿Recargar bancos? Se borrarán los datos locales.")) return;
 
   localStorage.removeItem(LS_BANK);
   localStorage.removeItem(LS_PROGRESS);
 
-  BANK = { subjects: [...BANK.subjects], questions: [], index: {} };
-  PROG = {};
-
-  alert("♻️ Banco borrado. Ahora se recargará completo...");
+  BANK.questions = [];
+  BANK.index = {};
 
   await loadAllBanks();
   saveAll();
 
-  alert(`✅ Banco recargado con ${BANK.questions.length} preguntas`);
-  renderHome();
+  alert(`Banco recargado: ${BANK.questions.length} preguntas`);
 }
