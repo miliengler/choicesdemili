@@ -2,7 +2,15 @@
    💾 BANCO DE PREGUNTAS – Persistencia, carga y actualización
    Versión FULL con SUBTEMAS + INDEX transversal
    ========================================================== */
-
+window.addEventListener("error", function(e) {
+  alert(
+    "🔥 ERROR EN LA APP\n\n" +
+    "Mensaje: " + e.message + "\n" +
+    "Archivo: " + (e.filename || "desconocido") + "\n" +
+    "Línea: " + (e.lineno || "?") + "\n" +
+    "Columna: " + (e.colno || "?")
+  );
+});
 const LS_BANK = "mebank_bank_v7_full";
 const LS_PROGRESS = "mebank_prog_v7_full";
 
