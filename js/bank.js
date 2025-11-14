@@ -525,34 +525,33 @@ async function loadAllBanks() {
       }
     }
 
-    /* ---------- 2️⃣ Exámenes anteriores (oficiales públicos) ---------- */
-    const EXAM_SOURCES = [
-      {
-        key: "examenunico",
-        base: "bancos/anteriores/examenunico",
-        prefix: "examen_unico_",
-        years: [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013]
-      },
-      {
-        key: "uba",
-        base: "bancos/anteriores/uba",
-        prefix: "uba_",
-        years: [2017, 2016]
-      },
-      {
-        key: "caba",
-        base: "bancos/anteriores/caba",
-        prefix: "caba_",
-        years: [2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
-      },
-      {
-        key: "pcia_ba",
-        base: "bancos/anteriores/pcia_ba",
-        prefix: "pciba_",
-        years: [2016, 2015, 2014, 2013, 2012, 2011, 2010]
-      }
-    ];
-
+/* ---------- 2️⃣ Exámenes anteriores (oficiales públicos) ---------- */
+const EXAM_SOURCES = [
+  {
+    key: "examenunico",
+    base: "bancos/anteriores/examenunico",
+    prefix: "examen_unico_",
+    years: [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013]
+  },
+  {
+    key: "uba",
+    base: "bancos/anteriores/uba",
+    prefix: "uba_",
+    years: [2017, 2016]
+  },
+  {
+    key: "caba",
+    base: "bancos/anteriores/caba",
+    prefix: "caba_",
+    years: [2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
+  },
+  {
+    key: "pcia_ba",
+    base: "bancos/anteriores/pcia_ba",
+    prefix: "pciaba_",   // 👈 ESTA ES LA CORRECCIÓN IMPORTANTE
+    years: [2016, 2015, 2014, 2013, 2012, 2011, 2010]
+  }
+];
     for (const src of EXAM_SOURCES) {
       for (const year of src.years) {
         const ruta = `${src.base}/${src.prefix}${year}.json`;
