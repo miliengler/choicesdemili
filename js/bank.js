@@ -367,6 +367,7 @@ const SUBTEMAS = {
 
 /* ==========================================================
    🧩 Normalizador de submaterias
+   (evita mezclar “otras” entre materias)
    ========================================================== */
 function normalizarSubmateria(materia, submateria) {
   const s = normalizeString(submateria);
@@ -382,37 +383,39 @@ function normalizarSubmateria(materia, submateria) {
    ========================================================== */
 let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
   subjects: [
-    { slug: "cardiologia", name: "🫀 Cardiología" },
-    { slug: "cirugiageneral", name: "🔪 Cirugía General" },
-    { slug: "dermatologia", name: "🧴 Dermatología" },
-    { slug: "endocrinologia", name: "🧪 Endocrinología" },
-    { slug: "gastroenterologia", name: "💩 Gastroenterología" },
-    { slug: "ginecologia", name: "🌸 Ginecología" },
-    { slug: "hematologia", name: "🩸 Hematología" },
-    { slug: "imagenes", name: "🩻 Diagnóstico por Imágenes" },
-    { slug: "infectologia", name: "🦠 Infectología" },
-    { slug: "medicinafamiliar", name: "👨‍👩‍👧‍👦 Medicina Familiar" },
-    { slug: "medicinalegal", name: "⚖️ Medicina Legal" },
-    { slug: "neurologia", name: "🧠 Neurología" },
-    { slug: "neurocirugia", name: "🧠 Neurocirugía" },
-    { slug: "neumonologia", name: "🫁 Neumonología" },
-    { slug: "nutricion", name: "🍏 Nutrición" },
-    { slug: "oftalmologia", name: "👁️ Oftalmología" },
-    { slug: "oncologia", name: "🎗️ Oncología" },
-    { slug: "obstetricia", name: "🤰 Obstetricia" },
+    { slug: "cardiologia",          name: "🫀 Cardiología" },
+    { slug: "cirugiageneral",       name: "🔪 Cirugía General" },
+    { slug: "dermatologia",         name: "🧴 Dermatología" },
+    { slug: "endocrinologia",       name: "🧪 Endocrinología" },
+    { slug: "gastroenterologia",    name: "💩 Gastroenterología" },
+    { slug: "ginecologia",          name: "🌸 Ginecología" },
+    { slug: "hematologia",          name: "🩸 Hematología" },
+    { slug: "imagenes",             name: "🩻 Diagnóstico por Imágenes" },
+    { slug: "infectologia",         name: "🦠 Infectología" },
+    { slug: "medicinafamiliar",     name: "👨‍👩‍👧‍👦 Medicina Familiar" },
+    { slug: "medicinalegal",        name: "⚖️ Medicina Legal" },
+    { slug: "neurologia",           name: "🧠 Neurología" },
+    { slug: "neurocirugia",         name: "🧠 Neurocirugía" },
+    { slug: "neumonologia",         name: "🫁 Neumonología" },
+    { slug: "nutricion",            name: "🍏 Nutrición" },
+    { slug: "oftalmologia",         name: "👁️ Oftalmología" },
+    { slug: "oncologia",            name: "🎗️ Oncología" },
+    { slug: "obstetricia",          name: "🤰 Obstetricia" },
     { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
-    { slug: "otras", name: "📚 Otras" },
-    { slug: "pediatria", name: "🧸 Pediatría" },
-    { slug: "psiquiatria", name: "💭 Psiquiatría" },
-    { slug: "reumatologia", name: "💪 Reumatología" },
-    { slug: "saludpublica", name: "🏥 Salud Pública" },
-    { slug: "toxicologia", name: "☠️ Toxicología" },
-    { slug: "traumatologia", name: "🦴 Traumatología" },
-    { slug: "urologia", name: "🚽 Urología" }
+    { slug: "otras",                name: "📚 Otras" },
+    { slug: "pediatria",            name: "🧸 Pediatría" },
+    { slug: "psiquiatria",          name: "💭 Psiquiatría" },
+    { slug: "reumatologia",         name: "💪 Reumatología" },
+    { slug: "saludpublica",         name: "🏥 Salud Pública" },
+    { slug: "toxicologia",          name: "☠️ Toxicología" },
+    { slug: "traumatologia",        name: "🦴 Traumatología" },
+    { slug: "urologia",             name: "🚽 Urología" }
   ],
   questions: [],
   index: {}
 };
+
+let PROG = JSON.parse(localStorage.getItem(LS_PROGRESS) || "{}");
 
 /* ==========================================================
    💾 Guardado
@@ -426,106 +429,224 @@ function saveAll() {
    📘 Materias derivadas
    ========================================================== */
 function subjectsFromBank() {
-  return BANK.subjects.sort((a, b) =>
-    normalizeString(a.name).localeCompare(normalizeString(b.name))
+  return [...BANK.subjects].sort((a, b) =>
+    normalizeString(a.name).localeCompare(normalizeString(b.name), "es", {
+      sensitivity: "base"
+    })
   );
+}
+
+/* ==========================================================
+   💬 Loader visual pequeñito
+   ========================================================== */
+function showLoader(text) {
+  const el = document.createElement("div");
+  el.id = "bankLoader";
+  el.style = `
+    position:fixed;bottom:15px;left:15px;
+    background:#1e40af;color:white;padding:8px 12px;
+    border-radius:8px;font-size:13px;z-index:9999;
+    box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  `;
+  el.textContent = text;
+  document.body.appendChild(el);
+  return el;
+}
+
+function hideLoader(el, total) {
+  if (!el) return;
+  el.textContent = total > 0
+    ? `✅ ${total} nuevas preguntas cargadas`
+    : "✅ Bancos actualizados (sin cambios)";
+  setTimeout(() => el.remove(), 2500);
 }
 
 /* ==========================================================
    🌐 Carga total bancos + exámenes anteriores
    ========================================================== */
 async function loadAllBanks() {
+  const loader = showLoader("⏳ Cargando bancos...");
   const existingIds = new Set(BANK.questions.map(q => q.id));
   let totalNuevas = 0;
 
   BANK.index = {};
 
   const normalizarMateria = (nombre) => {
+    if (!nombre) return "";
     const limpio = normalizeString(nombre);
     const match = BANK.subjects.find(s => normalizeString(s.slug) === limpio);
     return match ? match.slug : limpio;
   };
 
-  /* ---------- Bancos por materia ---------- */
-  for (const s of BANK.subjects) {
-    const materia = s.slug;
+  try {
+    /* ---------- 1️⃣ Bancos por materia ---------- */
+    for (const s of BANK.subjects) {
+      const materia = s.slug;
 
-    // soporte hasta 16 archivos por materia (vos tenés 1–16 en pediatría)
-    for (let i = 1; i <= 20; i++) {
-      const ruta = `bancos/${materia}/${materia}${i}.json`;
-      try {
-        const resp = await fetch(ruta);
-        if (!resp.ok) break;
+      // soporte hasta 20 archivos por materia: materia1.json ... materia20.json
+      for (let i = 1; i <= 20; i++) {
+        const ruta = `bancos/${materia}/${materia}${i}.json`;
+        try {
+          const resp = await fetch(ruta);
+          if (!resp.ok) break; // si no existe este, asumimos que no hay más
 
-        const data = await resp.json();
+          const data = await resp.json();
 
-        data.forEach(q => {
-          q.tipo = "banco";
-          q.materia = normalizarMateria(q.materia || materia);
-          q.submateria = normalizarSubmateria(q.materia, q.submateria);
+          data.forEach(q => {
+            q.tipo = q.tipo || "banco";
+            q.materia = normalizarMateria(q.materia || materia);
+            q.submateria = normalizarSubmateria(q.materia, q.submateria);
 
-          if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
-          if (!BANK.index[q.materia][q.submateria])
-            BANK.index[q.materia][q.submateria] = [];
+            if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
+            if (!BANK.index[q.materia][q.submateria])
+              BANK.index[q.materia][q.submateria] = [];
 
-          BANK.index[q.materia][q.submateria].push(q);
-        });
+            BANK.index[q.materia][q.submateria].push(q);
+          });
 
-        const nuevas = data.filter(q => !existingIds.has(q.id));
-        nuevas.forEach(q => existingIds.add(q.id));
-        BANK.questions.push(...nuevas);
-        totalNuevas += nuevas.length;
-      } catch {}
+          const nuevas = data.filter(q => !existingIds.has(q.id));
+          nuevas.forEach(q => existingIds.add(q.id));
+          BANK.questions.push(...nuevas);
+          totalNuevas += nuevas.length;
+
+          console.log(`📘 Cargado banco: ${ruta} (${nuevas.length} nuevas)`);
+        } catch (err) {
+          console.warn(`⚠️ Error leyendo ${ruta}`, err);
+          break;
+        }
+      }
     }
+
+    /* ---------- 2️⃣ Exámenes anteriores (oficiales públicos) ---------- */
+    const EXAM_SOURCES = [
+      {
+        key: "examenunico",
+        base: "bancos/anteriores/examenunico",
+        prefix: "examen_unico_",
+        years: [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2013]
+      },
+      {
+        key: "uba",
+        base: "bancos/anteriores/uba",
+        prefix: "uba_",
+        years: [2017, 2016]
+      },
+      {
+        key: "caba",
+        base: "bancos/anteriores/caba",
+        prefix: "caba_",
+        years: [2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010]
+      },
+      {
+        key: "pcia_ba",
+        base: "bancos/anteriores/pcia_ba",
+        prefix: "pciba_",
+        years: [2016, 2015, 2014, 2013, 2012, 2011, 2010]
+      }
+    ];
+
+    for (const src of EXAM_SOURCES) {
+      for (const year of src.years) {
+        const ruta = `${src.base}/${src.prefix}${year}.json`;
+        try {
+          const resp = await fetch(ruta);
+          if (!resp.ok) {
+            // si no existe, seguimos con el siguiente año
+            continue;
+          }
+
+          const data = await resp.json();
+
+          data.forEach(q => {
+            q.tipo = q.tipo || "examen";
+            q.categoria_examen = src.key; // examenunico / uba / caba / pcia_ba
+            q.materia = normalizarMateria(q.materia);
+            q.submateria = normalizarSubmateria(q.materia, q.submateria);
+
+            if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
+            if (!BANK.index[q.materia][q.submateria])
+              BANK.index[q.materia][q.submateria] = [];
+
+            BANK.index[q.materia][q.submateria].push(q);
+          });
+
+          const nuevas = data.filter(q => !existingIds.has(q.id));
+          nuevas.forEach(q => existingIds.add(q.id));
+          BANK.questions.push(...nuevas);
+          totalNuevas += nuevas.length;
+
+          console.log(`📄 Cargado examen: ${ruta} (${nuevas.length} nuevas)`);
+        } catch (err) {
+          console.warn(`⚠️ Error leyendo examen ${ruta}`, err);
+        }
+      }
+    }
+
+    /* ---------- 3️⃣ Exámenes anteriores privados ---------- */
+    const PRIVADOS_INSTITUCIONES = [
+      "austral",
+      "italiano",
+      "fleni",
+      "favaloro",
+      "cemic",
+      "britanico"
+    ];
+
+    for (const inst of PRIVADOS_INSTITUCIONES) {
+      for (let year = 2010; year <= 2025; year++) {
+        const ruta = `bancos/anteriores/privados/${inst}/${inst}_${year}.json`;
+        try {
+          const resp = await fetch(ruta);
+          if (!resp.ok) continue;
+
+          const data = await resp.json();
+
+          data.forEach(q => {
+            q.tipo = q.tipo || "examen_privado";
+            q.categoria_examen = "privado";
+            q.institucion = inst;
+            q.materia = normalizarMateria(q.materia);
+            q.submateria = normalizarSubmateria(q.materia, q.submateria);
+
+            if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
+            if (!BANK.index[q.materia][q.submateria])
+              BANK.index[q.materia][q.submateria] = [];
+
+            BANK.index[q.materia][q.submateria].push(q);
+          });
+
+          const nuevas = data.filter(q => !existingIds.has(q.id));
+          nuevas.forEach(q => existingIds.add(q.id));
+          BANK.questions.push(...nuevas);
+          totalNuevas += nuevas.length;
+
+          console.log(`🏥 Cargado examen privado: ${ruta} (${nuevas.length} nuevas)`);
+        } catch (err) {
+          console.warn(`⚠️ Error leyendo examen privado ${ruta}`, err);
+        }
+      }
+    }
+
+    if (totalNuevas > 0) {
+      saveAll();
+    }
+  } finally {
+    hideLoader(loader, totalNuevas);
   }
-
-  /* ---------- Exámenes anteriores ---------- */
-  const examYears = [
-    "examenunico2025.json",
-    "examenunico2024.json",
-    "examenunico2019.json",
-    "examenunico2018.json",
-    "examenunico2017.json",
-    "examenunico2016.json"
-  ];
-
-  for (const ex of examYears) {
-    const ruta = `bancos/anteriores/${ex}`;
-    try {
-      const resp = await fetch(ruta);
-      if (!resp.ok) continue;
-
-      const data = await resp.json();
-
-      data.forEach(q => {
-        q.tipo = "examen";
-        q.materia = normalizarMateria(q.materia);
-        q.submateria = normalizarSubmateria(q.materia, q.submateria);
-
-        if (!BANK.index[q.materia]) BANK.index[q.materia] = {};
-        if (!BANK.index[q.materia][q.submateria])
-          BANK.index[q.materia][q.submateria] = [];
-
-        BANK.index[q.materia][q.submateria].push(q);
-      });
-
-      const nuevas = data.filter(q => !existingIds.has(q.id));
-      nuevas.forEach(q => existingIds.add(q.id));
-      BANK.questions.push(...nuevas);
-      totalNuevas += nuevas.length;
-
-    } catch {}
-  }
-
-  if (totalNuevas > 0) saveAll();
 }
 
 /* ==========================================================
    ⚙️ Carga inicial
    ========================================================== */
 window.addEventListener("DOMContentLoaded", async () => {
-  if (!BANK.questions.length) {
-    await loadAllBanks();
+  try {
+    if (!BANK.questions.length) {
+      await loadAllBanks();
+      console.log(`✅ Banco inicial cargado: ${BANK.questions.length} preguntas`);
+    }
+  } catch (err) {
+    console.error("❌ Error en loadAllBanks:", err);
+    alert("❌ Error al cargar bancos.\nRevisá la consola o recargá la página.");
   }
 });
 
@@ -540,6 +661,7 @@ async function forceReloadBank() {
 
   BANK.questions = [];
   BANK.index = {};
+  PROG = {};
 
   await loadAllBanks();
   saveAll();
