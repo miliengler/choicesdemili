@@ -20,6 +20,16 @@
 </head>
 
 <body>
+  <script>
+window.addEventListener("error", function (e) {
+  alert(
+    "🔥 ERROR EN LA APP\n\n" +
+    "Mensaje: " + e.message + "\n" +
+    "Archivo: " + e.filename + "\n" +
+    "Línea: " + e.lineno + ":" + e.colno
+  );
+});
+</script>
   <!-- Encabezado -->
   <div class="header">
     <div class="wrap brand">
