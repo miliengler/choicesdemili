@@ -20,16 +20,18 @@
 </head>
 
 <body>
+  <!-- 🔥 CAPTURADOR GLOBAL DE ERRORES (para iPad / sin consola) -->
   <script>
-window.addEventListener("error", function (e) {
-  alert(
-    "🔥 ERROR EN LA APP\n\n" +
-    "Mensaje: " + e.message + "\n" +
-    "Archivo: " + e.filename + "\n" +
-    "Línea: " + e.lineno + ":" + e.colno
-  );
-});
-</script>
+    window.addEventListener("error", function (e) {
+      alert(
+        "🔥 ERROR EN LA APP\\n\\n" +
+        "Mensaje: " + e.message + "\\n" +
+        "Archivo: " + e.filename + "\\n" +
+        "Línea: " + e.lineno + ":" + e.colno
+      );
+    });
+  </script>
+
   <!-- Encabezado -->
   <div class="header">
     <div class="wrap brand">
@@ -58,11 +60,11 @@ window.addEventListener("error", function (e) {
        (orden correcto: base → motor → secciones)
   ========================================================== -->
 
-  <!-- 1️⃣ Núcleo general y navegación -->
-  <script src="js/main.js?v=3"></script>
-
-  <!-- 2️⃣ Banco y persistencia -->
+  <!-- 1️⃣ Banco y persistencia (define BANK, subjectsFromBank, etc.) -->
   <script src="js/bank.js?v=3"></script>
+
+  <!-- 2️⃣ Núcleo general y navegación -->
+  <script src="js/main.js?v=3"></script>
 
   <!-- 3️⃣ Motores universales -->
   <script src="js/timer.js?v=3"></script>
@@ -121,7 +123,7 @@ window.addEventListener("error", function (e) {
               <p style="color:#64748b;">Por favor esperá unos segundos</p>
             </div>`;
           await loadAllBanks();
-          console.log(`✅ Bancos cargados: ${BANK.questions?.length || 0} preguntas`);
+          console.log("✅ Bancos cargados:", (window.BANK && BANK.questions ? BANK.questions.length : 0), "preguntas");
         }
 
         if (typeof renderHome === "function") {
@@ -135,6 +137,7 @@ window.addEventListener("error", function (e) {
         }
       } catch (err) {
         console.error("❌ Error al iniciar la app:", err);
+        alert("❌ Error al iniciar la app: " + err.message);
         app.innerHTML = `
           <div class="card fade" style="text-align:center">
             <h2>❌ Error al cargar bancos</h2>
@@ -143,25 +146,5 @@ window.addEventListener("error", function (e) {
       }
     });
   </script>
-  <script>
-window.onerror = function (msg, url, line, col, error) {
-  const div = document.createElement("div");
-  div.style.position = "fixed";
-  div.style.bottom = "0";
-  div.style.left = "0";
-  div.style.width = "100%";
-  div.style.background = "rgba(200,0,0,0.85)";
-  div.style.color = "white";
-  div.style.padding = "12px";
-  div.style.fontSize = "14px";
-  div.style.zIndex = "999999";
-  div.style.whiteSpace = "pre-wrap";
-  div.textContent =
-    "🔥 ERROR: " + msg +
-    "\n📄 Archivo: " + url +
-    "\n🔢 Línea: " + line + ":" + col;
-  document.body.appendChild(div);
-};
-</script>
 </body>
 </html>
