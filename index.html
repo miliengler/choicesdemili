@@ -54,7 +54,32 @@
 
   <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
+<!-- 🛑 Error Overlay para iPad / Safari -->
+<div id="errorOverlay" 
+     style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;
+     background:#fee2e2;color:#b91c1c;padding:16px;font-size:14px;
+     border-bottom:2px solid #b91c1c;box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+  <b>Error:</b> <span id="errorText"></span>
+</div>
 
+<script>
+  function showError(msg) {
+    const box = document.getElementById("errorOverlay");
+    const txt = document.getElementById("errorText");
+    txt.textContent = msg;
+    box.style.display = "block";
+  }
+
+  // Captura errores globales (errores JS normales)
+  window.addEventListener("error", function (e) {
+    showError(e.message + " @ " + (e.filename || "") + ":" + (e.lineno || ""));
+  });
+
+  // Captura errores en promesas (fetch, async/await)
+  window.addEventListener("unhandledrejection", function (e) {
+    showError(e.reason);
+  });
+</script>
   <!-- ==========================================================
        📜 SCRIPTS PRINCIPALES
        (orden correcto: base → motor → secciones)
