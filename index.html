@@ -121,32 +121,24 @@ rel="stylesheet">
   <!-- ==========================================================
        🚀 INICIALIZACIÓN FINAL
   ========================================================== -->
-  <script>
-    document.addEventListener("DOMContentLoaded", async () => {
-      const app = document.getElementById("app");
+ <script>
+  document.addEventListener("DOMContentLoaded", async () => {
 
-      try {
-        if (typeof loadAllBanks === "function") {
-          app.innerHTML = `
-            <div style="text-align:center;margin-top:80px;">
-              <h2>⏳ Cargando bancos...</h2>
-              <p style="color:#64748b;">Por favor esperá unos segundos</p>
-            </div>`;
-          await loadAllBanks();
-        }
+    // Intentar cargar bancos, pero NO mostrar mensajes ni bloquear la app
+    if (typeof loadAllBanks === "function") {
+      loadAllBanks().catch(err => {
+        showError("Error cargando bancos: " + err.message);
+      });
+    }
 
-        renderHome();
+    // Cargar la pantalla principal sin esperar nada
+    if (typeof renderHome === "function") {
+      renderHome();
+    } else {
+      showError("No se encontró renderHome()");
+    }
 
-      } catch (err) {
-        showError("Error al iniciar: " + err.message);
-        app.innerHTML = `
-          <div class="card fade" style="text-align:center">
-            <h2>❌ Error al cargar la app</h2>
-            <p>${err.message}</p>
-          </div>`;
-      }
-    });
-  </script>
-
+  });
+</script>
 </body>
 </html>
