@@ -1,7 +1,34 @@
 /* ==========================================================
    🌐 MEbank – Banco transversal de preguntas (v2)
    ========================================================== */
+/* ==========================================================
+   🔐 MEbank Storage Seguro para iPad / Safari
+   SOLO guarda progreso (PROG), NO guarda BANK.
+========================================================== */
 
+const STORAGE_KEY = "MEbank_PROG_v2";
+
+/* Cargar progreso */
+function loadProgress() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+/* Guardar progreso (compactado) */
+function saveProgress() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(PROG));
+  } catch (err) {
+    console.warn("⚠ No se pudo guardar progreso (storage lleno)");
+  }
+}
+
+/* Objeto global de progreso */
+let PROG = loadProgress();
 /* ---------- Claves de storage ---------- */
 const LS_BANK = "mebank_bank_v2";
 const LS_PROG = "mebank_progress_v2";
@@ -54,7 +81,6 @@ BANK.subjects.forEach(s => {
    🔁 Guardar todo
    ========================================================== */
 function saveBank() {
-  localStorage.setItem(LS_BANK, JSON.stringify(BANK));
   localStorage.setItem(LS_PROG, JSON.stringify(PROG));
 }
 
