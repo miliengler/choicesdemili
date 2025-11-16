@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank – Motor universal de resolución (v2)
+   🎯 MEbank – Motor universal de resolución (v2.1 SAFE)
    ========================================================== */
 
 let CURRENT = {
@@ -27,12 +27,8 @@ function iniciarResolucion(config) {
     config
   };
 
-  // Cronómetro
   if (config.usarTimer) initTimer();
-
-  // Sidebar
   initSidebar();
-
   renderPregunta();
 }
 
@@ -45,12 +41,14 @@ function renderPregunta() {
 
   const app = document.getElementById("app");
 
-  const opcionesHTML = q.opciones.map((op, idx) => `
-    <label class="option" onclick="answer(${idx})">
-      <input type="radio" name="opt">
-      ${String.fromCharCode(97 + idx)}) ${op}
-    </label>
-  `).join("");
+  const opcionesHTML = q.opciones
+    .map((op, idx) => `
+      <label class="option" onclick="answer(${idx})">
+        <input type="radio" name="opt">
+        ${String.fromCharCode(97 + idx)}) ${op}
+      </label>
+    `)
+    .join("");
 
   app.innerHTML = `
     <div class="q-layout fade">
@@ -85,16 +83,27 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   🧠 Registrar respuesta
+   🧠 Registrar respuesta + Guardar PROG
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
   const correcta = idx === q.correcta;
 
+  // Registrar sesión local
   CURRENT.session[q.id] = correcta ? "ok" : "bad";
 
-  const opts = document.querySelectorAll(".option");
+  // Guardar en PROG global
+  if (!PROG[q.materia]) PROG[q.materia] = {};
+  PROG[q.materia][q.id] = {
+    status: correcta ? "ok" : "bad",
+    nota: PROG[q.materia][q.id]?.nota || "",
+    fecha: Date.now()
+  };
 
+  saveProgress();  // <<<<<< ESTE ES EL FIX 🔥
+
+  // Feedback visual
+  const opts = document.querySelectorAll(".option");
   opts.forEach((opt, i) => {
     if (i === q.correcta) opt.classList.add("correct");
     else if (i === idx) opt.classList.add("wrong");
@@ -127,14 +136,14 @@ function salir() {
 }
 
 /* ==========================================================
-   🏁 Fin
+   🏁 Pantalla final
    ========================================================== */
 function renderFin() {
   stopTimer();
 
   const total = CURRENT.list.length;
   const correctas = Object.values(CURRENT.session).filter(v => v === "ok").length;
-  const incorrectas = Object.values(CURRENT.session).filter(v => v === "bad").length;
+  const incorrectas = total - correctas;
 
   const app = document.getElementById("app");
 
@@ -154,7 +163,7 @@ function renderFin() {
 }
 
 /* ==========================================================
-   🕒 Timer (versión simple)
+   🕒 Timer
    ========================================================== */
 let TIMER = {
   interval: null,
@@ -258,7 +267,8 @@ function renderSidebarPage() {
     cell.className = "sb-cell";
     cell.textContent = i + 1;
 
-    const res = CURRENT.session[CURRENT.list[i].id];
+    const id = CURRENT.list[i].id;
+    const res = PROG[CURRENT.list[i].materia]?.[id]?.status;
 
     if (i === CURRENT.i) cell.classList.add("active");
     else if (res === "ok") cell.classList.add("ok");
@@ -272,13 +282,11 @@ function renderSidebarPage() {
     grid.append(cell);
   }
 
-  // progreso
-  const respondidas = Object.keys(CURRENT.session).length;
+  const respondidas = Object.values(CURRENT.session).length;
   const p = Math.round(respondidas / total * 100);
   document.getElementById("sb-progress").textContent =
     `Progreso: ${respondidas}/${total} (${p}%)`;
 
-  // paginación
   const pages = Math.ceil(total / PAGE_SIZE);
   document.getElementById("sb-pageinfo").textContent =
     `${sidebarPage + 1}/${pages}`;
