@@ -1,20 +1,20 @@
 /* ==========================================================
-   📔 MEbank – Notas (v2)
+   📔 MEbank – Notas (v2.1 SAFE)
    ========================================================== */
 
 /*
-  Estructura de PROG por pregunta:
+  Estructura de PROG:
 
-  PROG[slug][id] = {
+  PROG[materia][id] = {
      status: "ok" / "bad",
-     nota: "texto opcional",
+     nota: "texto",
      fecha: timestamp
   }
 */
 
 
 /* ----------------------------------------------------------
-   🔥 Render principal
+   🔥 Render principal de notas
 ---------------------------------------------------------- */
 function renderNotasMain() {
   const app = document.getElementById("app");
@@ -43,10 +43,12 @@ function renderNotasMain() {
   document.getElementById("notesSearch").oninput = (e) => {
     filtrarNotas(e.target.value);
   };
+
+  activarAutoGuardadoNotas();
 }
 
 /* ==========================================================
-   🧠 Recolectar todas las notas del usuario
+   🧠 Recolectar todas las notas guardadas
 ========================================================== */
 function recolectarNotas() {
   let result = [];
@@ -76,7 +78,7 @@ function recolectarNotas() {
 }
 
 /* ==========================================================
-   🎨 Render lista completa de notas
+   🎨 Render de la lista de notas
 ========================================================== */
 function renderListaNotas(notas) {
   if (!notas.length) {
@@ -112,7 +114,7 @@ function renderListaNotas(notas) {
 }
 
 /* ==========================================================
-   🔍 Filtro en tiempo real
+   🔍 Búsqueda en tiempo real
 ========================================================== */
 function filtrarNotas(query) {
   query = query.toLowerCase();
@@ -125,12 +127,11 @@ function filtrarNotas(query) {
 
   document.getElementById("notesList").innerHTML = renderListaNotas(notas);
 
-  // Volver a activar eventos de edición
   activarAutoGuardadoNotas();
 }
 
 /* ==========================================================
-   ✏ Auto-guardado de notas
+   ✏ Auto-guardado con PROG seguro
 ========================================================== */
 function activarAutoGuardadoNotas() {
   document.querySelectorAll(".note-edit").forEach(textarea => {
@@ -145,19 +146,18 @@ function activarAutoGuardadoNotas() {
       PROG[mat][id].nota = texto;
       PROG[mat][id].fecha = Date.now();
 
-      saveBank();
+      saveProgress();   // 🔥 FIX: YA NO SAVE BANK
     };
   });
 }
 
 /* ==========================================================
-   🎯 Ir a la pregunta desde notas
+   🎯 Ir a pregunta desde notas
 ========================================================== */
 function openPreguntaDesdeNotas(id) {
   const preg = BANK.questions.find(q => q.id === id);
   if (!preg) return alert("Pregunta no encontrada.");
 
-  // Preparo un mini-pool con solo esa pregunta
   iniciarResolucion({
     modo: "nota",
     preguntas: [preg],
@@ -169,7 +169,7 @@ function openPreguntaDesdeNotas(id) {
 }
 
 /* ==========================================================
-   Inicialización automática de auto-guardado
+   Inicialización
 ========================================================== */
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => activarAutoGuardadoNotas(), 500);
