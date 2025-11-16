@@ -1,9 +1,10 @@
 /* ==========================================================
-   🌐 MEbank – Banco transversal de preguntas (v2)
+   🌐 MEbank – Banco transversal de preguntas (v2.1 SAFE)
    ========================================================== */
+
 /* ==========================================================
-   🔐 MEbank Storage Seguro para iPad / Safari
-   SOLO guarda progreso (PROG), NO guarda BANK.
+   🔐 Storage seguro (iPad / Safari)
+   SOLO guarda PROG (progreso + notas)
 ========================================================== */
 
 const STORAGE_KEY = "MEbank_PROG_v2";
@@ -18,29 +19,26 @@ function loadProgress() {
   }
 }
 
-/* Guardar progreso (compactado) */
+/* Guardar progreso */
 function saveProgress() {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(PROG));
   } catch (err) {
-    console.warn("⚠ No se pudo guardar progreso (storage lleno)");
+    console.warn("⚠ No se pudo guardar PROG (storage lleno)");
   }
 }
 
-/* Objeto global de progreso */
+/* Objeto único de progreso */
 let PROG = loadProgress();
-/* ---------- Claves de storage ---------- */
-const LS_BANK = "mebank_bank_v2";
-const LS_PROG = "mebank_progress_v2";
 
-/* ---------- Estado principal ---------- */
-let BANK = JSON.parse(localStorage.getItem(LS_BANK) || "null") || {
+/* ==========================================================
+   🔧 Banco en memoria (NO se guarda en localStorage)
+   ========================================================== */
+let BANK = {
   subjects: [],
-  subsubjects: {},   // subtemas por materia
+  subsubjects: {}, 
   questions: []
 };
-
-let PROG = JSON.parse(localStorage.getItem(LS_PROG) || "{}");
 
 /* ==========================================================
    ✨ Normalizador universal
@@ -55,7 +53,7 @@ function normalize(str) {
 }
 
 /* ==========================================================
-   🧠 Materias oficiales (tu lista)
+   🧠 Materias oficiales
    ========================================================== */
 BANK.subjects = [
   { slug: "pediatria", name: "🧸 Pediatría" },
@@ -70,7 +68,7 @@ BANK.subjects = [
 ];
 
 /* ==========================================================
-   🧩 Submaterias base (todas arrancan con "otras")
+   🧩 Submaterias base
    ========================================================== */
 BANK.subsubjects = {};
 BANK.subjects.forEach(s => {
@@ -78,19 +76,12 @@ BANK.subjects.forEach(s => {
 });
 
 /* ==========================================================
-   🔁 Guardar todo
-   ========================================================== */
-function saveBank() {
-  localStorage.setItem(LS_PROG, JSON.stringify(PROG));
-}
-
-/* ==========================================================
-   🌐 Carga completa del banco
+   🌐 Cargar TODOS los bancos
    ========================================================== */
 async function loadAllBanks() {
   console.log("⏳ Cargando banco transversal…");
 
-  const existingIds = new Set(BANK.questions.map(q => q.id));
+  const existingIds = new Set();
 
   /* ---------- 1) Bancos por materia ---------- */
   const materias = BANK.subjects.map(s => s.slug);
@@ -113,12 +104,11 @@ async function loadAllBanks() {
     await cargarCarpeta(folder, existingIds);
   }
 
-  saveBank();
-  console.log(`✅ Banco cargado: ${BANK.questions.length} preguntas totales`);
+  console.log(`✅ Banco cargado: ${BANK.questions.length} preguntas`);
 }
 
 /* ==========================================================
-   📁 Cargar carpeta entera (lista JSONs dentro)
+   📁 Leer carpeta
    ========================================================== */
 async function cargarCarpeta(folder, existingIds) {
   try {
@@ -139,7 +129,7 @@ async function cargarCarpeta(folder, existingIds) {
 }
 
 /* ==========================================================
-   📘 Cargar archivo JSON individual
+   📘 Cargar archivo JSON
    ========================================================== */
 async function cargarArchivoJSON(ruta, existingIds, tipo) {
   try {
@@ -151,14 +141,14 @@ async function cargarArchivoJSON(ruta, existingIds, tipo) {
 
     data.forEach(q => normalizarPregunta(q, tipo, ruta));
 
-    const nuevas = data.filter(q => !existingIds.has(q.id));
-    nuevas.forEach(q => {
-      existingIds.add(q.id);
-      BANK.questions.push(q);
+    data.forEach(q => {
+      if (!existingIds.has(q.id)) {
+        existingIds.add(q.id);
+        BANK.questions.push(q);
+      }
     });
 
-    if (nuevas.length)
-      console.log(`📘 ${ruta}: ${nuevas.length} nuevas`);
+    if (data.length) console.log(`📘 ${ruta}: ${data.length} cargadas`);
 
   } catch (err) {
     console.warn(`⚠ Error leyendo ${ruta}`, err);
@@ -166,29 +156,24 @@ async function cargarArchivoJSON(ruta, existingIds, tipo) {
 }
 
 /* ==========================================================
-   🧬 Normalizador de cada pregunta
+   🧬 Normalizar pregunta
    ========================================================== */
 function normalizarPregunta(q, tipo, ruta) {
 
-  /* --- Tipo --- */
   q.tipo = tipo === "examen" ? "examen" : "materia";
 
-  /* --- Materia --- */
   if (!q.materia) q.materia = "otras";
   q.materia = normalize(q.materia);
 
-  /* --- Submateria --- */
   if (!q.submateria) q.submateria = "otras";
   else q.submateria = normalize(q.submateria);
 
-  /* Añadir submateria automáticamente */
   if (!BANK.subsubjects[q.materia])
     BANK.subsubjects[q.materia] = ["otras"];
 
   if (!BANK.subsubjects[q.materia].includes(q.submateria))
     BANK.subsubjects[q.materia].push(q.submateria);
 
-  /* --- Datos de examen (si corresponden) --- */
   if (tipo === "examen") {
     const match = ruta.match(/(\d{4})/);
     q.anio = match ? Number(match[1]) : null;
@@ -208,29 +193,4 @@ function normalizarPregunta(q, tipo, ruta) {
   }
 
   return q;
-}
-
-/* ==========================================================
-   ♻ Recarga completa del banco
-   ========================================================== */
-async function forceReloadBank() {
-  if (!confirm("¿Recargar todo el banco?")) return;
-
-  localStorage.removeItem(LS_BANK);
-  localStorage.removeItem(LS_PROG);
-
-  BANK = {
-    subjects: BANK.subjects,
-    subsubjects: {},
-    questions: []
-  };
-
-  BANK.subjects.forEach(s => {
-    BANK.subsubjects[s.slug] = ["otras"];
-  });
-
-  PROG = {};
-
-  await loadAllBanks();
-  saveBank();
 }
