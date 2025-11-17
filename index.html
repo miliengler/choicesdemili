@@ -9,18 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Manifest (PWA) si lo usás -->
+  <!-- Manifest -->
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- 🎨 Estilos (dejamos tus CSS tal cual) -->
+  <!-- 🎨 Estilos -->
   <link rel="stylesheet" href="css/style.css?v=3">
   <link rel="stylesheet" href="css/layout.css?v=3">
   <link rel="stylesheet" href="css/layout-mobile.css?v=3">
 </head>
 
 <body>
-  <!-- 🛑 Overlay simple de errores (útil en iPad) -->
+
+  <!-- 🛑 Overlay de errores (para iPad) -->
   <div id="errorOverlay"
        style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;
               background:#fee2e2;color:#b91c1c;padding:12px 16px;font-size:13px;
@@ -36,13 +37,13 @@
       box.style.display = "block";
     }
 
-    window.addEventListener("error", function (e) {
-      showError(e.message + " @ " + (e.filename || "") + ":" + (e.lineno || ""));
-    });
+    window.addEventListener("error", e =>
+      showError(e.message + " @ " + (e.filename || "") + ":" + (e.lineno || ""))
+    );
 
-    window.addEventListener("unhandledrejection", function (e) {
-      showError("Promesa rechazada: " + (e.reason && e.reason.message ? e.reason.message : e.reason));
-    });
+    window.addEventListener("unhandledrejection", e =>
+      showError("Promesa rechazada: " + (e.reason && e.reason.message ? e.reason.message : e.reason))
+    );
   </script>
 
   <!-- Encabezado -->
@@ -59,17 +60,16 @@
 
   <!-- Contenedor principal -->
   <main class="wrap" id="app">
-    <!-- Mensaje mínimo de fallback; se reemplaza en cuanto carga JS -->
     <div style="text-align:center;margin-top:80px;">
       <h2>🧩 Cargando MEbank…</h2>
-      <p style="color:#64748b;">Si este mensaje no desaparece, hubo un error con JavaScript.</p>
+      <p style="color:#64748b;">Si este mensaje no desaparece, hubo un error.</p>
     </div>
   </main>
 
   <!-- Pie -->
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- 🌙 Botón de modo oscuro (igual que antes) -->
+  <!-- 🌙 Modo oscuro -->
   <script>
     (function() {
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -82,32 +82,33 @@
       btn.className = 'theme-toggle';
       btn.title = 'Cambiar tema';
       btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+
       btn.onclick = () => {
         document.body.classList.toggle('dark');
         const dark = document.body.classList.contains('dark');
         localStorage.setItem('theme', dark ? 'dark' : 'light');
         btn.textContent = dark ? '☀️' : '🌙';
       };
+
       document.body.appendChild(btn);
     })();
   </script>
 
   <!-- ==========================================================
-       📜 SCRIPTS PRINCIPALES (MEbank 3.0)
-       Orden: config → bank → helpers → pantallas
+       📜 SCRIPTS PRINCIPALES (orden correcto)
   ========================================================== -->
 
-  <!-- 1️⃣ Configuración central (materias, subtemas, exámenes) -->
+  <!-- Config -->
   <script src="js/config.js?v=3"></script>
 
-  <!-- 2️⃣ Banco y progreso -->
+  <!-- Banco -->
   <script src="js/bank.js?v=3"></script>
 
-  <!-- 3️⃣ Motores reutilizables -->
+  <!-- Motores -->
   <script src="js/sidebar.js?v=3"></script>
   <script src="js/timer.js?v=3"></script>
 
-  <!-- 4️⃣ Pantallas -->
+  <!-- Pantallas -->
   <script src="js/home.js?v=3"></script>
   <script src="js/choice.js?v=3"></script>
   <script src="js/resolver.js?v=3"></script>
@@ -116,23 +117,10 @@
   <script src="js/stats.js?v=3"></script>
   <script src="js/notes.js?v=3"></script>
 
-  <!-- 5️⃣ Inicialización global -->
+  <!-- Inicialización -->
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      try {
-        // initApp la vamos a definir en home.js / bank.js
-        if (typeof initApp === "function") {
-          initApp();
-        } else if (typeof renderHome === "function") {
-          renderHome();
-        } else {
-          showError("No se encontró el módulo principal (initApp/renderHome).");
-        }
-      } catch (err) {
-        showError("Error al iniciar MEbank: " + err.message);
-        console.error(err);
-      }
-    });
+    document.addEventListener("DOMContentLoaded", initApp);
   </script>
+
 </body>
 </html>
