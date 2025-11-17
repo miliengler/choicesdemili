@@ -1,3 +1,4 @@
+const BANK_HASH_KEY = "MEbank_Hash_v3";
 /* ==========================================================
    📚 MEbank 3.0 – Configuración central
    - Materias oficiales
