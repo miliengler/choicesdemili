@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MEbank – Banco de Preguntas para Residencias</title>
+
+  <!-- Tipografía -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Manifest (PWA) si lo usás -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- 🎨 Estilos (dejamos tus CSS tal cual) -->
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/layout.css?v=3">
+  <link rel="stylesheet" href="css/layout-mobile.css?v=3">
+</head>
+
+<body>
+  <!-- 🛑 Overlay simple de errores (útil en iPad) -->
+  <div id="errorOverlay"
+       style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;
+              background:#fee2e2;color:#b91c1c;padding:12px 16px;font-size:13px;
+              border-bottom:2px solid #b91c1c;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+    <b>Error:</b> <span id="errorText"></span>
+  </div>
+
+  <script>
+    function showError(msg) {
+      const box = document.getElementById("errorOverlay");
+      const txt = document.getElementById("errorText");
+      txt.textContent = msg;
+      box.style.display = "block";
+    }
+
+    window.addEventListener("error", function (e) {
+      showError(e.message + " @ " + (e.filename || "") + ":" + (e.lineno || ""));
+    });
+
+    window.addEventListener("unhandledrejection", function (e) {
+      showError("Promesa rechazada: " + (e.reason && e.reason.message ? e.reason.message : e.reason));
+    });
+  </script>
+
+  <!-- Encabezado -->
+  <div class="header">
+    <div class="wrap brand">
+      <svg width="26" height="26" viewBox="0 0 64 64" fill="none"
+           xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+        <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z"
+              stroke="#B91C1C" stroke-width="2" fill="none" />
+      </svg>
+      <h1>MEbank – Banco de Preguntas para Residencias</h1>
+    </div>
+  </div>
+
+  <!-- Contenedor principal -->
+  <main class="wrap" id="app">
+    <!-- Mensaje mínimo de fallback; se reemplaza en cuanto carga JS -->
+    <div style="text-align:center;margin-top:80px;">
+      <h2>🧩 Cargando MEbank…</h2>
+      <p style="color:#64748b;">Si este mensaje no desaparece, hubo un error con JavaScript.</p>
+    </div>
+  </main>
+
+  <!-- Pie -->
+  <div class="footer">Vos podés ❤️</div>
+
+  <!-- 🌙 Botón de modo oscuro (igual que antes) -->
+  <script>
+    (function() {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const savedTheme = localStorage.getItem('theme');
+      const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+
+      if (isDark) document.body.classList.add('dark');
+
+      const btn = document.createElement('button');
+      btn.className = 'theme-toggle';
+      btn.title = 'Cambiar tema';
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      btn.onclick = () => {
+        document.body.classList.toggle('dark');
+        const dark = document.body.classList.contains('dark');
+        localStorage.setItem('theme', dark ? 'dark' : 'light');
+        btn.textContent = dark ? '☀️' : '🌙';
+      };
+      document.body.appendChild(btn);
+    })();
+  </script>
+
+  <!-- ==========================================================
+       📜 SCRIPTS PRINCIPALES (MEbank 3.0)
+       Orden: config → bank → helpers → pantallas
+  ========================================================== -->
+
+  <!-- 1️⃣ Configuración central (materias, subtemas, exámenes) -->
+  <script src="js/config.js?v=3"></script>
+
+  <!-- 2️⃣ Banco y progreso -->
+  <script src="js/bank.js?v=3"></script>
+
+  <!-- 3️⃣ Motores reutilizables -->
+  <script src="js/sidebar.js?v=3"></script>
+  <script src="js/timer.js?v=3"></script>
+
+  <!-- 4️⃣ Pantallas -->
+  <script src="js/home.js?v=3"></script>
+  <script src="js/choice.js?v=3"></script>
+  <script src="js/resolver.js?v=3"></script>
+  <script src="js/examenes.js?v=3"></script>
+  <script src="js/examen_setup.js?v=3"></script>
+  <script src="js/stats.js?v=3"></script>
+  <script src="js/notes.js?v=3"></script>
+
+  <!-- 5️⃣ Inicialización global -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      try {
+        // initApp la vamos a definir en home.js / bank.js
+        if (typeof initApp === "function") {
+          initApp();
+        } else if (typeof renderHome === "function") {
+          renderHome();
+        } else {
+          showError("No se encontró el módulo principal (initApp/renderHome).");
+        }
+      } catch (err) {
+        showError("Error al iniciar MEbank: " + err.message);
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
