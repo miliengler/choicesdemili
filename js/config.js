@@ -377,66 +377,100 @@ const SUBTEMAS = {
    - Si después agregás alguno más, lo sumamos acá
    ---------------------------------------------------------- */
 
+/* ==========================================================
+   📘 EXÁMENES ANTERIORES – Rutas exactas según tu proyecto
+   ========================================================== */
+
 const EXAMENES_META = [
+  /* ---------- EXAMEN ÚNICO (oficial) ---------- */
+  ...[
+    2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025
+  ].map(y => ({
+    id: `examen_unico_${y}`,
+    grupo: "Examen Único",
+    anio: y,
+    file: `bancos/anteriores/examenunico/examen_unico_${y}.json`,
+  })),
 
-  // ===== EXAMEN ÚNICO =====
-  { id: "examen_unico_2025", grupo: "Examen Único", anio: 2025, file: "bancos/anteriores/examenunico/examen_unico_2025.json" },
-  { id: "examen_unico_2024", grupo: "Examen Único", anio: 2024, file: "bancos/anteriores/examenunico/examen_unico_2024.json" },
-  { id: "examen_unico_2023", grupo: "Examen Único", anio: 2023, file: "bancos/anteriores/examenunico/examen_unico_2023.json" },
-  { id: "examen_unico_2022", grupo: "Examen Único", anio: 2022, file: "bancos/anteriores/examenunico/examen_unico_2022.json" },
-  { id: "examen_unico_2021", grupo: "Examen Único", anio: 2021, file: "bancos/anteriores/examenunico/examen_unico_2021.json" },
-  { id: "examen_unico_2020", grupo: "Examen Único", anio: 2020, file: "bancos/anteriores/examenunico/examen_unico_2020.json" },
-  { id: "examen_unico_2019", grupo: "Examen Único", anio: 2019, file: "bancos/anteriores/examenunico/examen_unico_2019.json" },
-  { id: "examen_unico_2018", grupo: "Examen Único", anio: 2018, file: "bancos/anteriores/examenunico/examen_unico_2018.json" },
-  { id: "examen_unico_2017", grupo: "Examen Único", anio: 2017, file: "bancos/anteriores/examenunico/examen_unico_2017.json" },
-  { id: "examen_unico_2016", grupo: "Examen Único", anio: 2016, file: "bancos/anteriores/examenunico/examen_unico_2016.json" },
-  { id: "examen_unico_2015", grupo: "Examen Único", anio: 2015, file: "bancos/anteriores/examenunico/examen_unico_2015.json" },
-  { id: "examen_unico_2014", grupo: "Examen Único", anio: 2014, file: "bancos/anteriores/examenunico/examen_unico_2014.json" },
-  { id: "examen_unico_2013", grupo: "Examen Único", anio: 2013, file: "bancos/anteriores/examenunico/examen_unico_2013.json" },
+  /* ---------- CABA ---------- */
+  ...[
+    2010,2011,2012,2013,2014,2015,2016,2017,2018
+  ].map(y => ({
+    id: `caba_${y}`,
+    grupo: "CABA",
+    anio: y,
+    file: `bancos/anteriores/caba/caba_${y}.json`,
+  })),
 
-  // ===== CABA =====
-  { id: "caba_2018", grupo: "CABA", anio: 2018, file: "bancos/anteriores/caba/caba_2018.json" },
-  { id: "caba_2017", grupo: "CABA", anio: 2017, file: "bancos/anteriores/caba/caba_2017.json" },
-  { id: "caba_2016", grupo: "CABA", anio: 2016, file: "bancos/anteriores/caba/caba_2016.json" },
-  { id: "caba_2015", grupo: "CABA", anio: 2015, file: "bancos/anteriores/caba/caba_2015.json" },
-  { id: "caba_2014", grupo: "CABA", anio: 2014, file: "bancos/anteriores/caba/caba_2014.json" },
-  { id: "caba_2013", grupo: "CABA", anio: 2013, file: "bancos/anteriores/caba/caba_2013.json" },
-  { id: "caba_2012", grupo: "CABA", anio: 2012, file: "bancos/anteriores/caba/caba_2012.json" },
-  { id: "caba_2011", grupo: "CABA", anio: 2011, file: "bancos/anteriores/caba/caba_2011.json" },
-  { id: "caba_2010", grupo: "CABA", anio: 2010, file: "bancos/anteriores/caba/caba_2010.json" },
+  /* ---------- Provincia BA ---------- */
+  ...[
+    2010,2011,2012,2013,2014,2015,2016
+  ].map(y => ({
+    id: `pciaba_${y}`,
+    grupo: "Provincia BA",
+    anio: y,
+    file: `bancos/anteriores/pcia_ba/pciaba_${y}.json`,
+  })),
 
-  // ===== Provincia Buenos Aires =====
-  { id: "pciaba_2016", grupo: "Provincia BA", anio: 2016, file: "bancos/anteriores/pcia_ba/pciaba_2016.json" },
-  { id: "pciaba_2015", grupo: "Provincia BA", anio: 2015, file: "bancos/anteriores/pcia_ba/pciaba_2015.json" },
-  { id: "pciaba_2014", grupo: "Provincia BA", anio: 2014, file: "bancos/anteriores/pcia_ba/pciaba_2014.json" },
-  { id: "pciaba_2013", grupo: "Provincia BA", anio: 2013, file: "bancos/anteriores/pcia_ba/pciaba_2013.json" },
-  { id: "pciaba_2012", grupo: "Provincia BA", anio: 2012, file: "bancos/anteriores/pcia_ba/pciaba_2012.json" },
-  { id: "pciaba_2011", grupo: "Provincia BA", anio: 2011, file: "bancos/anteriores/pcia_ba/pciaba_2011.json" },
-  { id: "pciaba_2010", grupo: "Provincia BA", anio: 2010, file: "bancos/anteriores/pcia_ba/pciaba_2010.json" },
+  /* ---------- UBA ---------- */
+  ...[
+    2016,2017
+  ].map(y => ({
+    id: `uba_${y}`,
+    grupo: "UBA",
+    anio: y,
+    file: `bancos/anteriores/uba/uba_${y}.json`,
+  })),
 
-  // ===== UBA =====
-  { id: "uba_2017", grupo: "UBA", anio: 2017, file: "bancos/anteriores/uba/uba_2017.json" },
-  { id: "uba_2016", grupo: "UBA", anio: 2016, file: "bancos/anteriores/uba/uba_2016.json" },
+  /* ---------- Privados / Austral ---------- */
+  ...[
+    2021,2022,2023,2024
+  ].map(y => ({
+    id: `austral_${y}`,
+    grupo: "Austral",
+    anio: y,
+    file: `bancos/anteriores/privados/austral/austral_${y}.json`,
+  })),
 
-  // ===== PRIVADOS: AUSTRAL =====
-  { id: "austral_2024", grupo: "Privados / Austral", anio: 2024, file: "bancos/anteriores/privados/austral/austral_2024.json" },
-  { id: "austral_2023", grupo: "Privados / Austral", anio: 2023, file: "bancos/anteriores/privados/austral/austral_2023.json" },
-  { id: "austral_2022", grupo: "Privados / Austral", anio: 2022, file: "bancos/anteriores/privados/austral/austral_2022.json" },
-  { id: "austral_2021", grupo: "Privados / Austral", anio: 2021, file: "bancos/anteriores/privados/austral/austral_2021.json" },
+  /* ---------- Privados / Británico ---------- */
+  ...[
+    2015,2021
+  ].map(y => ({
+    id: `britanico_${y}`,
+    grupo: "Británico",
+    anio: y,
+    file: `bancos/anteriores/privados/britanico/britanico_${y}.json`,
+  })),
 
-  // ===== PRIVADOS: BRITÁNICO =====
-  { id: "britanico_2021", grupo: "Privados / Británico", anio: 2021, file: "bancos/anteriores/privados/britanico/britanico_2021.json" },
-  { id: "britanico_2015", grupo: "Privados / Británico", anio: 2015, file: "bancos/anteriores/privados/britanico/britanico_2015.json" },
+  /* ---------- Privados / CEMIC ---------- */
+  {
+    id: "cemic_2015",
+    grupo: "CEMIC",
+    anio: 2015,
+    file: "bancos/anteriores/privados/cemic/cemic_2015.json",
+  },
 
-  // ===== PRIVADOS: CEMIC =====
-  { id: "cemic_2015", grupo: "Privados / CEMIC", anio: 2015, file: "bancos/anteriores/privados/cemic/cemic_2015.json" },
+  /* ---------- Privados / Favaloro ---------- */
+  {
+    id: "favaloro_2015",
+    grupo: "Favaloro",
+    anio: 2015,
+    file: "bancos/anteriores/privados/favaloro/favaloro_2015.json",
+  },
 
-  // ===== PRIVADOS: FAVALORO =====
-  { id: "favaloro_2015", grupo: "Privados / Favaloro", anio: 2015, file: "bancos/anteriores/privados/favaloro/favaloro_2015.json" },
+  /* ---------- Privados / FLENI ---------- */
+  {
+    id: "fleni_2015",
+    grupo: "FLENI",
+    anio: 2015,
+    file: "bancos/anteriores/privados/fleni/fleni_2015.json",
+  },
 
-  // ===== PRIVADOS: FLENI =====
-  { id: "fleni_2015", grupo: "Privados / FLENI", anio: 2015, file: "bancos/anteriores/privados/fleni/fleni_2015.json" },
-
-  // ===== PRIVADOS: ITALIANO =====
-  { id: "italiano_2015", grupo: "Privados / Italiano", anio: 2015, file: "bancos/anteriores/privados/italiano/italiano_2015.json" }
+  /* ---------- Privados / Italiano ---------- */
+  {
+    id: "italiano_2015",
+    grupo: "Italiano",
+    anio: 2015,
+    file: "bancos/anteriores/privados/italiano/italiano_2015.json",
+  },
 ];
