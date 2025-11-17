@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 – Banco transversal de preguntas
+   🌐 MEbank 3.0 – Banco transversal inteligente (AutoHash PRO)
    ========================================================== */
 
 /* ==========================================================
@@ -28,16 +28,16 @@ function saveProgress() {
 let PROG = loadProgress();
 
 /* ==========================================================
-   🔤 Normalizador (para claves internas)
+   🔤 Normalizador
    ========================================================== */
 
 function normalize(str) {
   return str
     ? str
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")                           // Quitar tildes
+        .replace(/[\u0300-\u036f]/g, "")                           
         .replace(/[\p{Emoji}\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, "")
-        .replace(/[^\p{L}\p{N}]/gu, "")                           // Solo letras / números
+        .replace(/[^\p{L}\p{N}]/gu, "")                           
         .toLowerCase()
     : "";
 }
@@ -47,13 +47,13 @@ function normalize(str) {
    ========================================================== */
 
 let BANK = {
-  subjects: SUBJECTS,      // listas definidas en config.js
-  subsubjects: {},         // materiaSlug → lista de subtemas
-  questions: [],           // TODAS las preguntas cargadas
-  loaded: false            // indica si ya se cargó el banco
+  subjects: SUBJECTS,
+  subsubjects: {},
+  questions: [],
+  loaded: false
 };
 
-/* Inicializar submaterias desde SUBTEMAS */
+/* Inicializar subtemas */
 SUBJECTS.forEach(s => {
   if (SUBTEMAS[s.slug]) {
     BANK.subsubjects[s.slug] = SUBTEMAS[s.slug].slice();
@@ -63,9 +63,64 @@ SUBJECTS.forEach(s => {
 });
 
 /* ==========================================================
-   🌟 Cargar banco (solo cuando el usuario quiere)
-   - loadAllBanks(): carga TODO según config.js
-   - NO se ejecuta automáticamente al iniciar la app
+   🔍 AUTOHASH PREMIUM — detectar cambios automáticamente
+   ========================================================== */
+
+const BANK_HASH_KEY = "MEbank_Hash_v3";
+
+/* ---- Obtener tamaño del archivo sin descargarlo ---- */
+async function getFileSize(ruta) {
+  try {
+    const resp = await fetch(ruta, { method: "HEAD" });
+    if (!resp.ok) return null;
+    const size = resp.headers.get("content-length");
+    return size ? Number(size) : 0;
+  } catch {
+    return null;
+  }
+}
+
+/* ---- Generar hash del banco entero ---- */
+async function calcularHashBanco() {
+  let partes = [];
+
+  // Materias
+  for (const subj of SUBJECTS) {
+    const slug = subj.slug;
+    for (let i = 1; i <= 4; i++) {
+      const ruta = `bancos/${slug}/${slug}${i}.json`;
+      const size = await getFileSize(ruta);
+      if (size !== null) partes.push(ruta + ":" + size);
+    }
+  }
+
+  // Exámenes anteriores
+  for (const exam of EXAMENES_META) {
+    const size = await getFileSize(exam.file);
+    if (size !== null) partes.push(exam.file + ":" + size);
+  }
+
+  partes.sort();
+  return partes.join("|");
+}
+
+/* ---- Comparar hash actual con hash guardado ---- */
+async function bankNeedsReload() {
+  const stored = localStorage.getItem(BANK_HASH_KEY);
+  const current = await calcularHashBanco();
+
+  if (stored === current) {
+    console.log("🔒 Banco actualizado – no se recarga.");
+    return false;
+  }
+
+  console.log("🔄 Cambios detectados – recarga necesaria.");
+  localStorage.setItem(BANK_HASH_KEY, current);
+  return true;
+}
+
+/* ==========================================================
+   🌟 CARGA COMPLETA DEL BANCO
    ========================================================== */
 
 async function loadAllBanks() {
@@ -74,10 +129,7 @@ async function loadAllBanks() {
   BANK.questions = [];
   const existingIds = new Set();
 
-  // 1) Cargar bancos de materias (carpeta bancos/<materia>/*.json)
   await loadBanksMaterias(existingIds);
-
-  // 2) Cargar bancos de exámenes (según EXAMENES_META)
   await loadBanksExamenes(existingIds);
 
   BANK.loaded = true;
@@ -85,16 +137,11 @@ async function loadAllBanks() {
   console.log(`✅ Banco cargado: ${BANK.questions.length} preguntas totales`);
 }
 
-/* ----------------------------------------------------------
-   🟦 1) Cargar bancos de materias
-   ---------------------------------------------------------- */
+/* ========== 1) Materias ========== */
 
 async function loadBanksMaterias(existingIds) {
   for (const subj of SUBJECTS) {
     const slug = subj.slug;
-
-    // Ruta: bancos/<materia>/<materia>.json  (todas las que existan)
-    // Como no sabemos si hay 1, 2, 3 o 4 archivos, probamos del 1 al 4.
     for (let i = 1; i <= 4; i++) {
       const ruta = `bancos/${slug}/${slug}${i}.json`;
       await cargarArchivoIfExists(ruta, existingIds, "materia");
@@ -102,9 +149,7 @@ async function loadBanksMaterias(existingIds) {
   }
 }
 
-/* ----------------------------------------------------------
-   🟩 2) Cargar bancos de exámenes anteriores
-   ---------------------------------------------------------- */
+/* ========== 2) Exámenes anteriores ========== */
 
 async function loadBanksExamenes(existingIds) {
   for (const exam of EXAMENES_META) {
@@ -112,9 +157,9 @@ async function loadBanksExamenes(existingIds) {
   }
 }
 
-/* ----------------------------------------------------------
+/* ==========================================================
    📄 Cargar archivo JSON si existe
-   ---------------------------------------------------------- */
+   ========================================================== */
 
 async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
   try {
@@ -138,7 +183,7 @@ async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
     return true;
 
   } catch (err) {
-    console.warn(`⚠ No se pudo cargar ${ruta}:`, err);
+    console.warn(`⚠ No se pudo cargar ${ruta}`, err);
     return false;
   }
 }
@@ -149,30 +194,22 @@ async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
 
 function normalizarPregunta(q, tipo, examMeta) {
 
-  // ----------- Materia -----------
   if (!q.materia) q.materia = "otras";
   q.materia = normalize(q.materia);
 
-  // ----------- Submateria -----------
   if (!q.submateria) q.submateria = "otras";
   q.submateria = normalize(q.submateria);
 
-  // Asegurar que existe en BANK.subsubjects
   if (!BANK.subsubjects[q.materia]) {
     BANK.subsubjects[q.materia] = [ "Otras preguntas" ];
   }
 
-  // ----------- Formato de opciones -----------
   if (!Array.isArray(q.opciones)) q.opciones = [];
-
-  // ----------- Explicación e imágenes opcionales -----------
   if (!q.explicacion) q.explicacion = null;
   if (!q.imagenes) q.imagenes = [];
 
-  // ----------- Tipo examen vs materia -----------
   q.tipo = tipo;
 
-  // Si viene de examen, integrar EXAMENES_META
   if (tipo === "examen" && examMeta) {
     q.examen = examMeta.id;
     q.anio = examMeta.anio;
@@ -187,19 +224,16 @@ function normalizarPregunta(q, tipo, examMeta) {
 }
 
 /* ==========================================================
-   📌 UTILIDADES PARA LA APP
+   📌 Utilidades
    ========================================================== */
 
-function getQuestionsByMateria(slug, subtemasElegidos = null) {
+function getQuestionsByMateria(slug, subtemas = null) {
   const mat = normalize(slug);
 
   return BANK.questions.filter(q => {
     if (q.materia !== mat) return false;
-
-    if (subtemasElegidos && subtemasElegidos.length > 0) {
-      return subtemasElegidos.includes(q.submateria);
-    }
-
+    if (subtemas && subtemas.length)
+      return subtemas.includes(q.submateria);
     return true;
   });
 }
@@ -213,16 +247,24 @@ function getQuestionById(id) {
 }
 
 /* ==========================================================
-   🌟 Inicialización de MEbank 3.0
+   🚀 Inicialización automática
    ========================================================== */
 
-function initApp() {
-  // Cargar directamente Home sin cargar bancos (NO molestamos al usuario)
+async function initApp() {
+  const necesita = await bankNeedsReload();
+
+  if (necesita) {
+    alert("🔄 Se detectaron cambios en los bancos. Cargando nuevos bancos…");
+    await loadAllBanks();
+  } else {
+    BANK.loaded = true;
+  }
+
   renderHome();
 }
 
 /* ==========================================================
-   🔄 Recarga manual de bancos (botón en stats o config)
+   🔄 Recarga manual
    ========================================================== */
 
 async function recargarBancos() {
@@ -233,7 +275,7 @@ async function recargarBancos() {
 
   await loadAllBanks();
 
-  alert("Bancos recargados correctamente ✔");
+  alert("✔ Bancos recargados correctamente");
 
-  if (typeof renderHome === "function") renderHome();
+  renderHome();
 }
