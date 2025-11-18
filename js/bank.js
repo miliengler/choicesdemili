@@ -30,14 +30,13 @@ let PROG = loadProgress();
 /* ==========================================================
    🔤 Normalizador
    ========================================================== */
-
 function normalize(str) {
   return str
     ? str
         .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")                           
+        .replace(/[\u0300-\u036f]/g, "")
         .replace(/[\p{Emoji}\p{Emoji_Presentation}\p{Extended_Pictographic}]/gu, "")
-        .replace(/[^\p{L}\p{N}]/gu, "")                           
+        .replace(/[^\p{L}\p{N}]/gu, "")
         .toLowerCase()
     : "";
 }
@@ -45,7 +44,6 @@ function normalize(str) {
 /* ==========================================================
    🧱 BANK – estructura en memoria
    ========================================================== */
-
 let BANK = {
   subjects: SUBJECTS,
   subsubjects: {},
@@ -63,12 +61,10 @@ SUBJECTS.forEach(s => {
 });
 
 /* ==========================================================
-   🔍 AUTOHASH PREMIUM — detectar cambios automáticamente
+   🔍 AUTOHASH – detectar cambios automáticamente
    ========================================================== */
-
 const BANK_HASH_KEY = "MEbank_Hash_v3";
 
-/* ---- Obtener tamaño del archivo sin descargarlo ---- */
 async function getFileSize(ruta) {
   try {
     const resp = await fetch(ruta, { method: "HEAD" });
@@ -80,11 +76,10 @@ async function getFileSize(ruta) {
   }
 }
 
-/* ---- Generar hash del banco entero ---- */
 async function calcularHashBanco() {
   let partes = [];
 
-  // Materias
+  // Bancos por materia
   for (const subj of SUBJECTS) {
     const slug = subj.slug;
     for (let i = 1; i <= 4; i++) {
@@ -104,7 +99,6 @@ async function calcularHashBanco() {
   return partes.join("|");
 }
 
-/* ---- Comparar hash actual con hash guardado ---- */
 async function bankNeedsReload() {
   const stored = localStorage.getItem(BANK_HASH_KEY);
   const current = await calcularHashBanco();
@@ -114,15 +108,14 @@ async function bankNeedsReload() {
     return false;
   }
 
-  console.log("🔄 Cambios detectados – recarga necesaria.");
   localStorage.setItem(BANK_HASH_KEY, current);
+  console.log("🔄 Cambios detectados: se debe recargar.");
   return true;
 }
 
 /* ==========================================================
    🌟 CARGA COMPLETA DEL BANCO
    ========================================================== */
-
 async function loadAllBanks() {
   console.log("⏳ Cargando bancos…");
 
@@ -137,8 +130,6 @@ async function loadAllBanks() {
   console.log(`✅ Banco cargado: ${BANK.questions.length} preguntas totales`);
 }
 
-/* ========== 1) Materias ========== */
-
 async function loadBanksMaterias(existingIds) {
   for (const subj of SUBJECTS) {
     const slug = subj.slug;
@@ -149,8 +140,6 @@ async function loadBanksMaterias(existingIds) {
   }
 }
 
-/* ========== 2) Exámenes anteriores ========== */
-
 async function loadBanksExamenes(existingIds) {
   for (const exam of EXAMENES_META) {
     await cargarArchivoIfExists(exam.file, existingIds, "examen", exam);
@@ -160,7 +149,6 @@ async function loadBanksExamenes(existingIds) {
 /* ==========================================================
    📄 Cargar archivo JSON si existe
    ========================================================== */
-
 async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
   try {
     const resp = await fetch(ruta);
@@ -179,7 +167,6 @@ async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
     }
 
     console.log(`📘 Cargado: ${ruta} (${data.length} preguntas)`);
-
     return true;
 
   } catch (err) {
@@ -191,9 +178,7 @@ async function cargarArchivoIfExists(ruta, existingIds, tipo, examMeta = null) {
 /* ==========================================================
    🧬 Normalizar preguntas
    ========================================================== */
-
 function normalizarPregunta(q, tipo, examMeta) {
-
   if (!q.materia) q.materia = "otras";
   q.materia = normalize(q.materia);
 
@@ -226,10 +211,8 @@ function normalizarPregunta(q, tipo, examMeta) {
 /* ==========================================================
    📌 Utilidades
    ========================================================== */
-
 function getQuestionsByMateria(slug, subtemas = null) {
   const mat = normalize(slug);
-
   return BANK.questions.filter(q => {
     if (q.materia !== mat) return false;
     if (subtemas && subtemas.length)
@@ -249,24 +232,28 @@ function getQuestionById(id) {
 /* ==========================================================
    🚀 Inicialización automática
    ========================================================== */
-
 async function initApp() {
-  const necesita = await bankNeedsReload();
+  try {
+    const necesita = await bankNeedsReload();
 
-  if (necesita) {
-    alert("🔄 Se detectaron cambios en los bancos. Cargando nuevos bancos…");
-    await loadAllBanks();
-  } else {
-    BANK.loaded = true;
+    if (necesita) {
+      alert("🔄 Se detectaron cambios en tus bancos. Cargando…");
+      await loadAllBanks();
+    } else {
+      BANK.loaded = true;
+    }
+
+    renderHome();
+
+  } catch (err) {
+    showError("Error al iniciar MEbank: " + err.message);
+    console.error(err);
   }
-
-  renderHome();
 }
 
 /* ==========================================================
    🔄 Recarga manual
    ========================================================== */
-
 async function recargarBancos() {
   if (!confirm("¿Querés recargar TODOS los bancos?")) return;
 
@@ -276,6 +263,5 @@ async function recargarBancos() {
   await loadAllBanks();
 
   alert("✔ Bancos recargados correctamente");
-
   renderHome();
 }
