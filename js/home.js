@@ -18,40 +18,33 @@ function renderHome() {
 
       <div class="menu-buttons">
 
-        <!-- 1. Práctica por materia -->
-        <button class="btn-main menu-btn" onclick="goChoiceMaterias()">
+        <button class="btn-main menu-btn" onclick="goChoice()">
           📚 Práctica por materia
         </button>
 
-        <!-- 2. Exámenes anteriores -->
         <button class="btn-main menu-btn" onclick="goExamenes()">
           📝 Exámenes anteriores
         </button>
 
-        <!-- 3. Crear tu examen -->
         <button class="btn-main menu-btn" onclick="goCrearExamen()">
           🎯 Crear tu examen
         </button>
 
-        <!-- 4. Estadísticas -->
         <button class="btn-main menu-btn" onclick="goStats()">
           📊 Estadísticas
         </button>
 
-        <!-- 5. Notas -->
         <button class="btn-main menu-btn" onclick="goNotas()">
           📔 Mis notas
         </button>
       </div>
 
-      <!-- Estado del banco -->
       <div style="margin-top:30px;font-size:14px;color:#64748b;">
         ${cargado
           ? `✔ Banco cargado (${preguntas} preguntas)`
           : `⚠ Aún no cargaste los bancos`}
       </div>
 
-      <!-- Botón discreto para recargar bancos -->
       <div style="margin-top:12px;">
         <button class="btn-small" onclick="recargarBancoDesdeHome()">
           🔄 ${cargado ? "Recargar bancos" : "Cargar bancos"}
@@ -63,13 +56,12 @@ function renderHome() {
 }
 
 /* ==========================================================
-   🌐 Navegación simple
-   (estas funciones solo redirigen a las otras pantallas)
+   🔀 Navegación universal
    ========================================================== */
 
-function goChoiceMaterias() {
+function goChoice() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderChoiceMaterias();
+  renderChoice();
 }
 
 function goExamenes() {
@@ -79,12 +71,12 @@ function goExamenes() {
 
 function goCrearExamen() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderCrearExamen();
+  renderExamenSetup();
 }
 
 function goStats() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderStatsMain();
+  renderStats();
 }
 
 function goNotas() {
@@ -93,18 +85,15 @@ function goNotas() {
 }
 
 /* ==========================================================
-   🔄 Recarga manual desde Home
+   🔄 Cargar / recargar bancos
    ========================================================== */
 
 async function recargarBancoDesdeHome() {
-  const confirmacion = confirm(
-    "¿Querés cargar o recargar TODOS los bancos ahora?"
-  );
-  if (!confirmacion) return;
+  const ok = confirm("¿Querés cargar o recargar TODOS los bancos ahora?");
+  if (!ok) return;
 
   await loadAllBanks();
 
   alert("✔ Bancos cargados correctamente");
-
   renderHome();
 }
