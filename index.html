@@ -5,58 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MEbank – Banco de Preguntas para Residencias</title>
 
-  <link rel="stylesheet" href="css/style.css?v=10">
-  <link rel="stylesheet" href="css/layout.css?v=10">
-  <link rel="stylesheet" href="css/layout-mobile.css?v=10">
+  <link rel="stylesheet" href="css/style.css?v=11">
+  <link rel="stylesheet" href="css/layout.css?v=11">
+  <link rel="stylesheet" href="css/layout-mobile.css?v=11">
 
   <script>
-    function showError(m){
-      const box=document.getElementById("errorOverlay");
-      document.getElementById("errorText").textContent=m;
-      box.style.display="block";
+    function showError(message){
+      const box = document.getElementById("errorOverlay");
+      document.getElementById("errorText").textContent = message;
+      box.style.display = "block";
     }
-    window.addEventListener("error",e=>showError(e.message));
-    window.addEventListener("unhandledrejection",e=>showError("Promise: "+e.reason));
+    window.addEventListener("error", e => showError(e.message));
+    window.addEventListener("unhandledrejection", e => showError("Promise error: "+e.reason));
   </script>
 </head>
 
 <body>
 
-<div id="errorOverlay"
-     style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#fee2e2;color:#b91c1c;padding:14px;">
-  <b>Error:</b> <span id="errorText"></span>
-</div>
+  <!-- Overlay de error -->
+  <div id="errorOverlay" 
+       style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#fee2e2;
+              padding:14px;color:#b91c1c;font-size:14px;">
+    <b>Error:</b> <span id="errorText"></span>
+  </div>
 
-<div class="header"><div class="wrap brand"><h1>MEbank</h1></div></div>
+  <div class="header"><div class="wrap brand"><h1>MEbank</h1></div></div>
 
-<main id="app" class="wrap">
-  <div style="text-align:center;margin-top:80px;">Cargando…</div>
-</main>
+  <main class="wrap" id="app">
+    <div style="text-align:center;margin-top:80px;">Cargando…</div>
+  </main>
 
-<div class="footer">Vos podés ❤️</div>
+  <div class="footer">Vos podés ❤️</div>
 
-<!-- Config -->
-<script src="js/config.js?v=10"></script>
+  <!-- Config -->
+  <script src="js/config.js?v=11"></script>
 
-<!-- Banco -->
-<script src="js/bank.js?v=10"></script>
+  <!-- Banco -->
+  <script src="js/bank.js?v=11"></script>
 
-<!-- Motores -->
-<script src="js/sidebar.js?v=10"></script>
-<script src="js/timer.js?v=10"></script>
+  <!-- Motores -->
+  <script src="js/sidebar.js?v=11"></script>
+  <script src="js/timer.js?v=11"></script>
 
-<!-- Pantallas -->
-<script src="js/home.js?v=10"></script>
-<script src="js/choice.js?v=10"></script>
-<script src="js/resolver.js?v=10"></script>
-<script src="js/examenes.js?v=10"></script>
-<script src="js/examen_setup.js?v=10"></script>
-<script src="js/stats.js?v=10"></script>
-<script src="js/notes.js?v=10"></script>
+  <!-- Pantallas -->
+  <script src="js/home.js?v=11"></script>
+  <script src="js/choice.js?v=11"></script>
+  <script src="js/resolver.js?v=11"></script>
+  <script src="js/examenes.js?v=11"></script>
+  <script src="js/examen_setup.js?v=11"></script>
+  <script src="js/stats.js?v=11"></script>
+  <script src="js/notes.js?v=11"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", initApp);
-</script>
+  <!-- Init -->
+  <script>
+    document.addEventListener("DOMContentLoaded", initApp);
+  </script>
 
 </body>
 </html>
