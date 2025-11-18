@@ -5,122 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MEbank – Banco de Preguntas para Residencias</title>
 
-  <!-- Tipografía -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10">
+  <link rel="stylesheet" href="css/layout.css?v=10">
+  <link rel="stylesheet" href="css/layout-mobile.css?v=10">
 
-  <!-- Manifest -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- 🎨 Estilos -->
-  <link rel="stylesheet" href="css/style.css?v=3">
-  <link rel="stylesheet" href="css/layout.css?v=3">
-  <link rel="stylesheet" href="css/layout-mobile.css?v=3">
+  <script>
+    function showError(m){
+      const box=document.getElementById("errorOverlay");
+      document.getElementById("errorText").textContent=m;
+      box.style.display="block";
+    }
+    window.addEventListener("error",e=>showError(e.message));
+    window.addEventListener("unhandledrejection",e=>showError("Promise: "+e.reason));
+  </script>
 </head>
 
 <body>
 
-  <!-- 🛑 Overlay de errores (para iPad) -->
-  <div id="errorOverlay"
-       style="display:none;position:fixed;top:0;left:0;right:0;z-index:99999;
-              background:#fee2e2;color:#b91c1c;padding:12px 16px;font-size:13px;
-              border-bottom:2px solid #b91c1c;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
-    <b>Error:</b> <span id="errorText"></span>
-  </div>
+<div id="errorOverlay"
+     style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#fee2e2;color:#b91c1c;padding:14px;">
+  <b>Error:</b> <span id="errorText"></span>
+</div>
 
-  <script>
-    function showError(msg) {
-      const box = document.getElementById("errorOverlay");
-      const txt = document.getElementById("errorText");
-      txt.textContent = msg;
-      box.style.display = "block";
-    }
+<div class="header"><div class="wrap brand"><h1>MEbank</h1></div></div>
 
-    window.addEventListener("error", e =>
-      showError(e.message + " @ " + (e.filename || "") + ":" + (e.lineno || ""))
-    );
+<main id="app" class="wrap">
+  <div style="text-align:center;margin-top:80px;">Cargando…</div>
+</main>
 
-    window.addEventListener("unhandledrejection", e =>
-      showError("Promesa rechazada: " + (e.reason && e.reason.message ? e.reason.message : e.reason))
-    );
-  </script>
+<div class="footer">Vos podés ❤️</div>
 
-  <!-- Encabezado -->
-  <div class="header">
-    <div class="wrap brand">
-      <svg width="26" height="26" viewBox="0 0 64 64" fill="none"
-           xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
-        <path d="M12 22 C12 12, 28 10, 32 20 C36 10, 52 12, 52 22 C52 36, 38 42, 32 50 C26 42, 12 36, 12 22 Z"
-              stroke="#B91C1C" stroke-width="2" fill="none" />
-      </svg>
-      <h1>MEbank – Banco de Preguntas para Residencias</h1>
-    </div>
-  </div>
+<!-- Config -->
+<script src="js/config.js?v=10"></script>
 
-  <!-- Contenedor principal -->
-  <main class="wrap" id="app">
-    <div style="text-align:center;margin-top:80px;">
-      <h2>🧩 Cargando MEbank…</h2>
-      <p style="color:#64748b;">Si este mensaje no desaparece, hubo un error.</p>
-    </div>
-  </main>
+<!-- Banco -->
+<script src="js/bank.js?v=10"></script>
 
-  <!-- Pie -->
-  <div class="footer">Vos podés ❤️</div>
+<!-- Motores -->
+<script src="js/sidebar.js?v=10"></script>
+<script src="js/timer.js?v=10"></script>
 
-  <!-- 🌙 Modo oscuro -->
-  <script>
-    (function() {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const savedTheme = localStorage.getItem('theme');
-      const isDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+<!-- Pantallas -->
+<script src="js/home.js?v=10"></script>
+<script src="js/choice.js?v=10"></script>
+<script src="js/resolver.js?v=10"></script>
+<script src="js/examenes.js?v=10"></script>
+<script src="js/examen_setup.js?v=10"></script>
+<script src="js/stats.js?v=10"></script>
+<script src="js/notes.js?v=10"></script>
 
-      if (isDark) document.body.classList.add('dark');
-
-      const btn = document.createElement('button');
-      btn.className = 'theme-toggle';
-      btn.title = 'Cambiar tema';
-      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-
-      btn.onclick = () => {
-        document.body.classList.toggle('dark');
-        const dark = document.body.classList.contains('dark');
-        localStorage.setItem('theme', dark ? 'dark' : 'light');
-        btn.textContent = dark ? '☀️' : '🌙';
-      };
-
-      document.body.appendChild(btn);
-    })();
-  </script>
-
-  <!-- ==========================================================
-       📜 SCRIPTS PRINCIPALES (orden correcto)
-  ========================================================== -->
-
-  <!-- Config -->
-  <script src="js/bank.js?v=4"></script>
-
-  <!-- Banco -->
-  <script src="js/bank.js?v=3"></script>
-
-  <!-- Motores -->
-  <script src="js/sidebar.js?v=3"></script>
-  <script src="js/timer.js?v=3"></script>
-
-  <!-- Pantallas -->
-  <script src="js/home.js?v=3"></script>
-  <script src="js/choice.js?v=3"></script>
-  <script src="js/resolver.js?v=3"></script>
-  <script src="js/examenes.js?v=3"></script>
-  <script src="js/examen_setup.js?v=3"></script>
-  <script src="js/stats.js?v=3"></script>
-  <script src="js/notes.js?v=3"></script>
-
-  <!-- Inicialización -->
-  <script>
-    document.addEventListener("DOMContentLoaded", initApp);
-  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", initApp);
+</script>
 
 </body>
 </html>
