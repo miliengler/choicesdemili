@@ -1,14 +1,6 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (versión PRO)
+   📚 MEbank 3.0 – Práctica por materia
    ========================================================== */
-
-/*
-  Requisitos:
-  - BANK.subjects, BANK.subsubjects, BANK.questions (desde bank.js)
-  - PROG para progreso (desde bank.js)
-  - iniciarResolucion(config) (desde resolver.js)
-  - getQuestionsByMateria(materiaSlug, [subtemas]) (desde bank.js)
-*/
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; // materia actualmente expandida
@@ -23,7 +15,9 @@ function renderChoice() {
   app.innerHTML = `
     <div class="card fade" style="max-width:900px;margin:auto;">
 
-      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start;">
+      <!-- HEADER -->
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;">
+
         <div>
           <h2 style="margin-bottom:6px;">Práctica por materia</h2>
           <p style="color:#64748b;margin:0;">
@@ -31,12 +25,15 @@ function renderChoice() {
           </p>
         </div>
 
-        <div style="text-align:right;min-width:200px;">
+        <!-- Ordenar materias (alineado perfecto) -->
+        <div style="text-align:right;">
           <label style="font-size:13px;color:#64748b;display:block;margin-bottom:4px;">
             Ordenar materias
           </label>
+
           <select id="choiceOrderSelect"
-                  style="padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:14px;"
+                  style="padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;
+                         font-size:14px;min-width:160px;text-align:center;"
                   onchange="onChangeChoiceOrder(this.value)">
             <option value="az" ${CHOICE_ORDER === "az" ? "selected" : ""}>A → Z</option>
             <option value="progreso" ${CHOICE_ORDER === "progreso" ? "selected" : ""}>Por progreso</option>
@@ -44,6 +41,7 @@ function renderChoice() {
         </div>
       </div>
 
+      <!-- LISTA DE MATERIAS -->
       <div style="margin-top:20px;">
         ${subjects.map(renderMateriaRow).join("")}
       </div>
@@ -59,34 +57,10 @@ function renderChoice() {
 /* ==========================================================
    🧮 Ordenar materias
    ========================================================== */
+
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
 
-  // 🔥 Limpieza universal (emoji, ZWJ, VS-16, símbolos, etc.)
-  function cleanName(name) {
-    if (!name) return "";
-
-    return name
-      // 1) eliminar variation selectors + ZWJ
-      .replace(/[\u200D\uFE0F\uFE0E]/g, "")
-
-      // 2) eliminar TODOS los caracteres con codepoint alto (emoji)
-      .split("")
-      .filter(ch => ch.codePointAt(0) < 8000)
-      .join("")
-
-      // 3) eliminar símbolos al inicio (⚖ ☠ etc.)
-      .replace(/^[^A-Za-zÁÉÍÓÚáéíóúÑñ]+/, "")
-
-      // 4) normalizar y quitar tildes
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-
-      // 5) limpiar espacios
-      .trim();
-  }
-
-  // Orden por progreso
   if (CHOICE_ORDER === "progreso") {
     return list.sort((a, b) => {
       const pa = getMateriaStats(a.slug).percent || 0;
@@ -95,13 +69,11 @@ function getOrderedSubjects() {
     });
   }
 
-  // 🧠 Orden alfabético REAL (ignora emojis)
-  return list.sort((a, b) => {
-    const A = cleanName(a.name);
-    const B = cleanName(b.name);
-    return A.localeCompare(B, "es", { sensitivity: "base" });
-  });
+  return list.sort((a, b) =>
+    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+  );
 }
+
 function onChangeChoiceOrder(value) {
   CHOICE_ORDER = value;
   localStorage.setItem("MEbank_ChoiceOrder_v1", value);
@@ -114,7 +86,6 @@ function onChangeChoiceOrder(value) {
 
 function getMateriaStats(slug) {
   const total = BANK.questions.filter(q => q.materia === slug).length;
-
   const progMat = PROG[slug] || {};
   let correctas = 0;
 
@@ -122,79 +93,62 @@ function getMateriaStats(slug) {
     if (reg && reg.status === "ok") correctas++;
   });
 
-  const percent = total ? Math.round((correctas / total) * 100) : 0;
+  const percent = total ? Math.round(correctas / total * 100) : 0;
 
   return { total, correctas, percent };
 }
 
 /* ==========================================================
-   🎨 Render de cada materia (fila principal)
+   🎨 Render de cada materia (sin triangulito)
    ========================================================== */
 
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const estaAbierta = choiceOpenSlug === m.slug;
 
-  // “círculo” de progreso simple
-  const circle = `
-    <div style="
-      width:32px;height:32px;border-radius:999px;
-      border:3px solid ${stats.percent ? '#22c55e' : '#e2e8f0'};
-      display:flex;align-items:center;justify-content:center;
-      font-size:11px;color:#0f172a;">
-      ${stats.percent || 0}%
-    </div>
-  `;
-
   return `
-    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:12px;
-                                      padding:10px 12px;margin-bottom:10px;">
+    <div class="materia-block" 
+         style="border:1px solid #e2e8f0;border-radius:10px;
+                padding:14px;margin-bottom:12px;">
+
+      <!-- CABECERA CLICKABLE -->
       <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;"
            onclick="toggleMateriaChoice('${m.slug}')">
 
         <div style="text-align:left;">
-          <div style="font-size:15px;font-weight:600;">
-            ${m.name}
-          </div>
-          <div style="font-size:12px;color:#64748b;margin-top:2px;">
-            ${stats.total
-              ? `✔ ${stats.correctas}/${stats.total} correctas`
-              : `Sin preguntas respondidas aún`}
+          <b>${m.name}</b>
+          <div style="font-size:12px;color:#64748b;">
+            ✔ ${stats.correctas}/${stats.total} correctas (${stats.percent}%)
           </div>
         </div>
 
-        <div style="display:flex;align-items:center;gap:12px;">
-          ${circle}
-          <div style="font-size:18px;color:#64748b;">
-            ${estaAbierta ? "▾" : "▸"}
-          </div>
+        <!-- 🔵 Solo el círculo de progreso -->
+        <div class="progress-circle">
+          ${stats.percent}%
         </div>
       </div>
 
-      ${estaAbierta ? renderMateriaExpanded(m, stats) : ""}
+      ${estaAbierta ? renderMateriaExpanded(m) : ""}
     </div>
   `;
 }
 
 function toggleMateriaChoice(slug) {
-  if (choiceOpenSlug === slug) {
-    choiceOpenSlug = null;
-  } else {
-    choiceOpenSlug = slug;
-  }
+  if (choiceOpenSlug === slug) choiceOpenSlug = null;
+  else choiceOpenSlug = slug;
   renderChoice();
 }
 
 /* ==========================================================
-   📚 Zona expandida con subtemas
+   📚 Subtemas expandibles
    ========================================================== */
 
-function renderMateriaExpanded(m, stats) {
+function renderMateriaExpanded(m) {
   const slug = m.slug;
   const subtemasTexto = BANK.subsubjects[slug] || [];
 
   const items = subtemasTexto.map(nombreSub => {
-    const subSlug = normalize(nombreSub); // clave interna
+    const subSlug = normalize(nombreSub);
     const count = contarPreguntasMateriaSub(slug, subSlug);
     return `
       <label style="display:flex;justify-content:space-between;align-items:center;
@@ -213,40 +167,19 @@ function renderMateriaExpanded(m, stats) {
     `;
   }).join("");
 
-  const totalTexto = stats.total
-    ? `<b>${stats.total}</b> preguntas totales en esta materia.`
-    : `Todavía no cargaste preguntas para esta materia.`;
-
   return `
-    <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:14px;">
-
-      <p style="font-size:13px;color:#475569;margin-bottom:4px;">
-        ${totalTexto}
-      </p>
-
+    <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e8f0;">
       <p style="font-size:13px;color:#64748b;margin-bottom:6px;">
-        Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.
+        Podés seleccionar uno o más subtemas. Si no elegís ninguno, se usan todos.
       </p>
 
-      <div style="max-height:230px;overflow:auto;margin-bottom:10px;padding-right:4px;">
-        ${items || `<p style="color:#94a3b8;font-size:13px;">No hay subtemas configurados.</p>`}
+      <div style="max-height:220px;overflow:auto;margin-bottom:10px;padding-right:4px;">
+        ${items}
       </div>
 
-      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin-top:8px;">
+      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:8px;">
         <button class="btn-main" onclick="iniciarPracticaMateria('${slug}')">
           ▶ Iniciar práctica
-        </button>
-        <button class="btn-small" onclick="reanudarMateria('${slug}')">
-          🔄 Reanudar
-        </button>
-        <button class="btn-small" onclick="repasoMateria('${slug}')">
-          ⭐ Repaso
-        </button>
-        <button class="btn-small" onclick="verNotasMateria('${slug}')">
-          📔 Notas
-        </button>
-        <button class="btn-small" onclick="verStatsMateria('${slug}')">
-          📊 Estadísticas
         </button>
       </div>
     </div>
@@ -264,8 +197,9 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
    ========================================================== */
 
 function iniciarPracticaMateria(mSlug) {
-  // Obtener subtemas tildados
-  const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
+  const checks = document.querySelectorAll(
+    `input[name="subtema-${mSlug}"]:checked`
+  );
   const seleccionados = Array.from(checks).map(ch => ch.value);
 
   const preguntas = getQuestionsByMateria(
@@ -274,7 +208,7 @@ function iniciarPracticaMateria(mSlug) {
   );
 
   if (!preguntas.length) {
-    alert("No hay preguntas disponibles para esa combinación de materia / subtemas.");
+    alert("No hay preguntas disponibles para esa combinación.");
     return;
   }
 
@@ -286,31 +220,7 @@ function iniciarPracticaMateria(mSlug) {
   });
 }
 
-/* ==========================================================
-   🔧 Helpers y stubs (para no romper nada)
-   ========================================================== */
-
 function getMateriaNombre(slug) {
   const mat = BANK.subjects.find(s => s.slug === slug);
   return mat ? mat.name : slug;
-}
-
-// Por ahora estos son “stubs” para que no explote nada.
-// Después los conectamos con stats/notas/repaso reales.
-
-function reanudarMateria(slug) {
-  alert("La función 'Reanudar' para " + getMateriaNombre(slug) + " todavía no está implementada. La agregamos cuando definamos bien las sesiones 🙂");
-}
-
-function repasoMateria(slug) {
-  alert("El modo 'Repaso' (solo incorrectas) para " + getMateriaNombre(slug) + " lo conectamos después de terminar la lógica de PROG.");
-}
-
-function verNotasMateria(slug) {
-  // Si ya tenés renderNotasMain(), podríamos filtrar por materia más adelante
-  alert("La vista de notas filtradas por materia se suma luego. Por ahora usá 'Mis notas' desde el menú principal.");
-}
-
-function verStatsMateria(slug) {
-  alert("Las estadísticas por materia todavía no están conectadas. Cuando terminemos la pantalla Stats, las linkeamos desde acá.");
 }
