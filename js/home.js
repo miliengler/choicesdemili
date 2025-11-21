@@ -70,10 +70,8 @@ function goExamenes() {
 }
 function goCrearExamen() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderCrearExamen();
+  renderExamenSetup();  // ✔ ESTA es la función real
 }
-
-
 function goStats() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
   renderStats();
