@@ -37,7 +37,15 @@ let BANK = {
 SUBJECTS.forEach(s=>{
   BANK.subsubjects[s.slug] = SUBTEMAS[s.slug] || [ "Otras preguntas de "+s.name ];
 });
-
+// 🔄 Intentar cargar BANK desde localStorage
+const savedBank = localStorage.getItem("MEbank_BANK_v1");
+if (savedBank) {
+  try {
+    BANK = JSON.parse(savedBank);
+  } catch(e) {
+    console.warn("Error cargando BANK guardado");
+  }
+}
 /* ==========================================================
    📦 CARGAR BANCOS (solo manual)
    ========================================================== */
