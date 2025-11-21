@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia
+   📚 MEbank 3.0 – Práctica por materia (versión PRO)
    ========================================================== */
 
 /*
@@ -18,7 +18,6 @@ let choiceOpenSlug = null; // materia actualmente expandida
    ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
-
   const subjects = getOrderedSubjects();
 
   app.innerHTML = `
@@ -98,39 +97,56 @@ function getMateriaStats(slug) {
     if (reg && reg.status === "ok") correctas++;
   });
 
-  const percent = total ? Math.round(correctas / total * 100) : 0;
+  const percent = total ? Math.round((correctas / total) * 100) : 0;
 
   return { total, correctas, percent };
 }
 
 /* ==========================================================
-   🎨 Render de cada materia
+   🎨 Render de cada materia (fila principal)
    ========================================================== */
 
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const estaAbierta = choiceOpenSlug === m.slug;
 
+  // “círculo” de progreso simple
+  const circle = `
+    <div style="
+      width:32px;height:32px;border-radius:999px;
+      border:3px solid ${stats.percent ? '#22c55e' : '#e2e8f0'};
+      display:flex;align-items:center;justify-content:center;
+      font-size:11px;color:#0f172a;">
+      ${stats.percent || 0}%
+    </div>
+  `;
+
   return `
-    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;
+    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:12px;
                                       padding:10px 12px;margin-bottom:10px;">
       <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;"
            onclick="toggleMateriaChoice('${m.slug}')">
+
         <div style="text-align:left;">
-          <b>${m.name}</b>
-          <div style="font-size:12px;color:#64748b;">
+          <div style="font-size:15px;font-weight:600;">
+            ${m.name}
+          </div>
+          <div style="font-size:12px;color:#64748b;margin-top:2px;">
             ${stats.total
-              ? `✔ ${stats.correctas}/${stats.total} correctas (${stats.percent}%)`
-              : `Sin preguntas cargadas aún`}
+              ? `✔ ${stats.correctas}/${stats.total} correctas`
+              : `Sin preguntas respondidas aún`}
           </div>
         </div>
 
-        <div style="font-size:20px;">
-          ${estaAbierta ? "▾" : "▸"}
+        <div style="display:flex;align-items:center;gap:12px;">
+          ${circle}
+          <div style="font-size:18px;color:#64748b;">
+            ${estaAbierta ? "▾" : "▸"}
+          </div>
         </div>
       </div>
 
-      ${estaAbierta ? renderMateriaExpanded(m) : ""}
+      ${estaAbierta ? renderMateriaExpanded(m, stats) : ""}
     </div>
   `;
 }
@@ -148,11 +164,10 @@ function toggleMateriaChoice(slug) {
    📚 Zona expandida con subtemas
    ========================================================== */
 
-function renderMateriaExpanded(m) {
+function renderMateriaExpanded(m, stats) {
   const slug = m.slug;
   const subtemasTexto = BANK.subsubjects[slug] || [];
-  
-  // Lista simple de subtemas con cantidad de preguntas
+
   const items = subtemasTexto.map(nombreSub => {
     const subSlug = normalize(nombreSub); // clave interna
     const count = contarPreguntasMateriaSub(slug, subSlug);
@@ -173,19 +188,40 @@ function renderMateriaExpanded(m) {
     `;
   }).join("");
 
+  const totalTexto = stats.total
+    ? `<b>${stats.total}</b> preguntas totales en esta materia.`
+    : `Todavía no cargaste preguntas para esta materia.`;
+
   return `
-    <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e8f0;">
-      <p style="font-size:13px;color:#64748b;margin-bottom:6px;">
-        Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usarán todos.
+    <div style="margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;font-size:14px;">
+
+      <p style="font-size:13px;color:#475569;margin-bottom:4px;">
+        ${totalTexto}
       </p>
 
-      <div style="max-height:220px;overflow:auto;margin-bottom:10px;padding-right:4px;">
+      <p style="font-size:13px;color:#64748b;margin-bottom:6px;">
+        Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.
+      </p>
+
+      <div style="max-height:230px;overflow:auto;margin-bottom:10px;padding-right:4px;">
         ${items || `<p style="color:#94a3b8;font-size:13px;">No hay subtemas configurados.</p>`}
       </div>
 
-      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:8px;">
+      <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;margin-top:8px;">
         <button class="btn-main" onclick="iniciarPracticaMateria('${slug}')">
           ▶ Iniciar práctica
+        </button>
+        <button class="btn-small" onclick="reanudarMateria('${slug}')">
+          🔄 Reanudar
+        </button>
+        <button class="btn-small" onclick="repasoMateria('${slug}')">
+          ⭐ Repaso
+        </button>
+        <button class="btn-small" onclick="verNotasMateria('${slug}')">
+          📔 Notas
+        </button>
+        <button class="btn-small" onclick="verStatsMateria('${slug}')">
+          📊 Estadísticas
         </button>
       </div>
     </div>
@@ -193,7 +229,7 @@ function renderMateriaExpanded(m) {
 }
 
 function contarPreguntasMateriaSub(mSlug, subSlug) {
-  return BANK.questions.filter(q => 
+  return BANK.questions.filter(q =>
     q.materia === mSlug && q.submateria === subSlug
   ).length;
 }
@@ -207,7 +243,10 @@ function iniciarPracticaMateria(mSlug) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
 
-  const preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
+  const preguntas = getQuestionsByMateria(
+    mSlug,
+    seleccionados.length ? seleccionados : null
+  );
 
   if (!preguntas.length) {
     alert("No hay preguntas disponibles para esa combinación de materia / subtemas.");
@@ -223,10 +262,30 @@ function iniciarPracticaMateria(mSlug) {
 }
 
 /* ==========================================================
-   🧾 Helper para mostrar nombre de materia
+   🔧 Helpers y stubs (para no romper nada)
    ========================================================== */
 
 function getMateriaNombre(slug) {
   const mat = BANK.subjects.find(s => s.slug === slug);
   return mat ? mat.name : slug;
+}
+
+// Por ahora estos son “stubs” para que no explote nada.
+// Después los conectamos con stats/notas/repaso reales.
+
+function reanudarMateria(slug) {
+  alert("La función 'Reanudar' para " + getMateriaNombre(slug) + " todavía no está implementada. La agregamos cuando definamos bien las sesiones 🙂");
+}
+
+function repasoMateria(slug) {
+  alert("El modo 'Repaso' (solo incorrectas) para " + getMateriaNombre(slug) + " lo conectamos después de terminar la lógica de PROG.");
+}
+
+function verNotasMateria(slug) {
+  // Si ya tenés renderNotasMain(), podríamos filtrar por materia más adelante
+  alert("La vista de notas filtradas por materia se suma luego. Por ahora usá 'Mis notas' desde el menú principal.");
+}
+
+function verStatsMateria(slug) {
+  alert("Las estadísticas por materia todavía no están conectadas. Cuando terminemos la pantalla Stats, las linkeamos desde acá.");
 }
