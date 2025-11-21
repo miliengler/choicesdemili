@@ -37,26 +37,31 @@
 
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- Config -->
+  <!-- ======================================================
+       SCRIPTS
+       ORDEN CORRECTO (importantísimo)
+  ======================================================= -->
+
+  <!-- 1) Configuración central -->
   <script src="js/config.js?v=11"></script>
 
-  <!-- Banco -->
+  <!-- 2) Banco -->
   <script src="js/bank.js?v=11"></script>
 
-  <!-- Motores -->
+  <!-- 3) Motores base (resolver SIEMPRE antes que todo lo que lo usa) -->
+  <script src="js/resolver.js?v=11"></script>
   <script src="js/sidebar.js?v=11"></script>
   <script src="js/timer.js?v=11"></script>
 
-  <!-- Pantallas -->
+  <!-- 4) Pantallas (todas pueden llamar a iniciarResolucion) -->
   <script src="js/home.js?v=11"></script>
   <script src="js/choice.js?v=11"></script>
-  <script src="js/resolver.js?v=11"></script>
   <script src="js/examenes.js?v=11"></script>
   <script src="js/examen_setup.js?v=11"></script>
   <script src="js/stats.js?v=11"></script>
   <script src="js/notes.js?v=11"></script>
 
-  <!-- Init -->
+  <!-- 5) Inicialización -->
   <script>
     document.addEventListener("DOMContentLoaded", initApp);
   </script>
