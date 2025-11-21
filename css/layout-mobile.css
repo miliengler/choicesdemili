@@ -1,67 +1,38 @@
 /* ==========================================================
-   📱 Layout Mobile – Optimización táctil y responsive
+   📱 MEbank – Ajustes Mobile
    ========================================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 
-  /* ---------- Ajustes generales ---------- */
-  body {
-    font-size: 17px;
-    line-height: 1.6;
-    padding: 0 10px;
-  }
-
+  /* Layout se hace columna */
   .q-layout {
     flex-direction: column;
     padding-right: 0 !important;
-    gap: 12px;
   }
 
-  .q-card {
+  .q-main {
     width: 100%;
     max-width: 100%;
-    border-radius: 12px;
-    padding: 18px 20px;
-    font-size: 17px;
   }
 
-  .q-card .enunciado {
-    font-size: 18px;
-    line-height: 1.5;
+  /* Sidebar desaparece */
+  .q-sidebar {
+    display: none !important;
   }
 
-  /* ---------- Opciones táctiles ---------- */
-  .q-card .options label {
+  /* Opciones más grandes en mobile */
+  .q-option {
     padding: 14px 16px;
     font-size: 16px;
   }
 
-  /* ---------- Botonera ---------- */
-  .nav-row {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .btn-small, .btn-main {
-    width: 100%;
-    max-width: none;
+  .q-enunciado {
     font-size: 16px;
-    padding: 12px 0;
   }
 
-  /* ---------- Sidebar oculto en móvil ---------- */
-  #exam-sidebar,
-  #openSidebarBtn {
-    display: none !important;
-  }
-
-  /* ---------- Header y footer ---------- */
-  .header, .footer {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .brand h1 {
-    font-size: 20px;
+  /* Botones navegacion */
+  .q-nav-row {
+    flex-direction: row;
+    gap: 8px;
   }
 }
