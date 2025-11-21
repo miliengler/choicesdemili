@@ -87,25 +87,17 @@ button:hover { transform: translateY(-2px); }
 }
 .btn-main:hover { background: var(--brand-dark); }
 
-/* ---------- Variante gris ---------- */
-.btn-main.btn-grey {
-  background: #475569;
-  border-color: #334155;
-}
-
 .btn-small {
   background: var(--soft);
   border: 1px solid var(--line);
   border-radius: 8px;
   font-size: 14px;
   padding: 6px 10px;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
-.btn-small:hover { background: #f1f5f9; }
+.btn-small:hover { background: #e2e8f0; }
 
 /* ==========================================================
-   🧩 TARJETAS Y TEXTO
+   🧩 TARJETAS
    ========================================================== */
 .card {
   background: var(--card);
@@ -127,40 +119,13 @@ button:hover { transform: translateY(-2px); }
 .fade { animation: fadeIn 0.3s ease; }
 
 /* ==========================================================
-   🧩 CHOICE POR MATERIA – Estilo limpio y alineado
+   📚 CHOICE POR MATERIA
    ========================================================== */
-.choice-container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: transparent;
-  padding: 0;
-  box-shadow: none;
-}
-
-.choice-header-global {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-
-.choice-header-global h2 {
-  margin: 0;
-  font-size: 20px;
-  color: var(--brand-dark);
-  font-weight: 700;
-}
-
-.choice-subtitle {
-  margin: 4px 0 18px 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* ---------- Materias ---------- */
 .choice-item {
-  border-bottom: 1px solid var(--line);
-  padding: 10px 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
   transition: background 0.15s ease;
 }
 .choice-item:hover { background: #f8fafc; }
@@ -170,200 +135,171 @@ button:hover { transform: translateY(-2px); }
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 6px 2px;
 }
 
-.choice-title {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.choice-count {
-  font-size: 13px;
-  color: var(--muted);
-}
-
-/* ---------- Panel desplegable ---------- */
-.choice-body {
+.progress-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent) 0deg, #e5e7eb 0deg);
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  margin: 6px 0 12px;
-  padding: 10px 12px;
-  animation: fadeIn 0.2s ease;
-}
-
-.choice-body label {
-  font-size: 14px;
-  color: var(--text);
-}
-
-.choice-body input {
-  width: 70px;
-  padding: 4px 6px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  font-size: 14px;
-  text-align: center;
-  background: #fff;
-}
-
-/* ---------- Botones ---------- */
-.choice-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0;
-}
-
-.choice-buttons button,
-.btn-practica,
-.btn-repaso,
-.btn-notas {
-  background: #f1f5f9 !important;
-  color: #0f172a !important;
-  border: 1px solid #cbd5e1 !important;
-  font-size: 13px;
-  padding: 6px 10px;
-  border-radius: 6px;
-  transition: background 0.2s ease, transform 0.1s;
-}
-
-.choice-buttons button:hover,
-.btn-practica:hover,
-.btn-repaso:hover,
-.btn-notas:hover {
-  background: #e2e8f0 !important;
-  transform: translateY(-1px);
-}
-/* ==========================================================
-   📐 Estilo limpio dentro del desplegable
-   ========================================================== */
-.choice-count {
-  color: var(--muted);
-  font-size: 13px;
-  margin: 2px 0 8px 2px;
-}
-
-.choice-row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-}
-
-.choice-row label {
-  font-size: 14px;
-  color: var(--text);
-}
-
-.choice-row input {
-  width: 70px;
-  padding: 4px 6px;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  text-align: center;
-}
-/* ==========================================================
-   📊 Estilo de contador de preguntas
-   ========================================================== */
-.choice-count {
-  color: var(--muted);
-  font-weight: 600;      /* negrita */
-  font-size: 11px;       /* un poco más chico que “Desde” */
-  margin: 1px 0 6px 2px;
-}
-/* ==========================================================
-   🟢 Estilo del componente de progreso circular
-   ========================================================== */
-.progress-ring {
-  position: relative;
-  display: inline-block;
-}
-
-.progress-ring svg {
-  transform: rotate(-90deg);
-}
-
-.progress-bg {
-  stroke-linecap: round;
-}
-
-.progress-value {
-  stroke-linecap: round;
-  transition: stroke-dashoffset 0.4s ease;
-}
-
-.progress-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   color: var(--muted);
-  user-select: none;
-}
-/* ==========================================================
-   🧭 Selector de orden – Choice
-   ========================================================== */
-.sort-control {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 14px;
-  color: var(--muted);
 }
 
-.sort-control select {
+/* ==========================================================
+   📂 EXÁMENES ANTERIORES
+   ========================================================== */
+.examen-item {
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--soft);
-  color: var(--text);
-  padding: 4px 8px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: 0.2s background;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+.examen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sort-control select:hover {
-  background: #e2e8f0;
-}
 /* ==========================================================
-   💫 Animación elegante de reordenamiento en Choice
+   🎯 RESOLVER – LAYOUT
    ========================================================== */
-.animated-list {
+.q-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* COLUMNA PRINCIPAL */
+.q-main { flex: 1; }
+
+.q-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(2,6,23,.08);
+}
+
+/* HEADER */
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.q-title { font-size: 16px; font-weight: 600; }
+.q-counter { font-size: 13px; color: var(--muted); margin-left: 8px; }
+
+/* ENUNCIADO */
+.q-enunciado {
+  margin: 16px 0;
+  font-size: 15px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+/* ==========================================================
+   ✔ OPCIONES
+   ========================================================== */
+.q-options {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 10px;
+}
+.q-option {
+  display: flex;
+  gap: 10px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.q-option:hover { background: #e2e8f0; }
+
+.q-option-letter {
+  font-weight: 700;
+  width: 22px;
+  text-align: center;
+  color: var(--brand-dark);
+}
+.q-option-text { flex: 1; }
+
+/* RESULTADOS POR OPCIÓN */
+.option-correct {
+  background: #dcfce7 !important;
+  border-color: #86efac !important;
+}
+.option-wrong {
+  background: #fee2e2 !important;
+  border-color: #fca5a5 !important;
 }
 
-.choice-item {
-  opacity: 0;
-  transform: translateY(8px);
-  animation: fadeSlideIn 0.35s ease forwards;
+/* NAV */
+.q-nav-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* ==========================================================
+   📊 SIDEBAR
+   ========================================================== */
+.q-sidebar {
+  width: 120px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
 }
-/* 🔄 Transición al cambiar el orden */
-.fade-out {
-  opacity: 0;
-  transform: translateY(6px);
-  transition: all 0.25s ease;
+.q-sidebar-header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.q-sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+.sb-cell {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+.sb-active {
+  background: var(--brand);
+  border-color: var(--brand-dark);
+  color: #fff;
+}
+.sb-ok {
+  background: #bbf7d0;
+  border-color: #4ade80;
+}
+.sb-bad {
+  background: #fecaca;
+  border-color: #ef4444;
+}
+.sb-note {
+  box-shadow: 0 0 0 2px #facc15 inset;
+}
+
+/* ==========================================================
+   📱 RESPONSIVE
+   ========================================================== */
+@media (max-width: 800px) {
+  .q-layout { flex-direction: column; }
+  .q-sidebar { width: 100%; position: relative; }
+  .q-sidebar-grid { grid-template-columns: repeat(8, 1fr); }
 }
