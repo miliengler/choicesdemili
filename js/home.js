@@ -19,7 +19,7 @@ function renderHome() {
       <div class="menu-buttons">
 
         <button class="btn-main menu-btn" onclick="goChoice()">
-          📚 Práctica por materia
+          📚 Práctica por tema
         </button>
 
         <button class="btn-main menu-btn" onclick="goExamenes()">
