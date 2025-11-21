@@ -3,7 +3,59 @@
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
-let choiceOpenSlug = null; // materia actualmente expandida
+let choiceOpenSlug = null;
+
+/* ==========================================================
+   🔵 CÍRCULO DE PROGRESO ANIMADO (SVG)
+   ========================================================== */
+function renderProgressCircle(percent) {
+  const size = 42;
+  const stroke = 4;
+  const radius = (size - stroke) / 2;
+  const circumference = 2 * Math.PI * radius;
+
+  const offset = circumference - (percent / 100) * circumference;
+
+  return `
+    <svg width="${size}" height="${size}">
+      <!-- Círculo base gris -->
+      <circle
+        cx="${size/2}"
+        cy="${size/2}"
+        r="${radius}"
+        stroke="#e2e8f0"
+        stroke-width="${stroke}"
+        fill="none"
+      ></circle>
+
+      <!-- Progreso verde -->
+      <circle
+        cx="${size/2}"
+        cy="${size/2}"
+        r="${radius}"
+        stroke="${percent === 0 ? '#cbd5e1' : '#16a34a'}"
+        stroke-width="${stroke}"
+        fill="none"
+        stroke-dasharray="${circumference}"
+        stroke-dashoffset="${offset}"
+        stroke-linecap="round"
+        style="transition: stroke-dashoffset 0.6s ease;"
+      ></circle>
+
+      <!-- Porcentaje en el centro -->
+      <text
+        x="50%"
+        y="55%"
+        text-anchor="middle"
+        font-size="12"
+        fill="#334155"
+        font-weight="600"
+      >
+        ${percent}%
+      </text>
+    </svg>
+  `;
+}
 
 /* ==========================================================
    🎯 Render principal
@@ -15,9 +67,7 @@ function renderChoice() {
   app.innerHTML = `
     <div class="card fade" style="max-width:900px;margin:auto;">
 
-      <!-- HEADER -->
       <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;">
-
         <div>
           <h2 style="margin-bottom:6px;">Práctica por materia</h2>
           <p style="color:#64748b;margin:0;">
@@ -25,7 +75,6 @@ function renderChoice() {
           </p>
         </div>
 
-        <!-- Ordenar materias -->
         <div style="text-align:right;">
           <label style="font-size:13px;color:#64748b;display:block;margin-bottom:4px;">
             Ordenar materias
@@ -41,7 +90,6 @@ function renderChoice() {
         </div>
       </div>
 
-      <!-- LISTA DE MATERIAS -->
       <div style="margin-top:20px;">
         ${subjects.map(renderMateriaRow).join("")}
       </div>
@@ -57,7 +105,6 @@ function renderChoice() {
 /* ==========================================================
    🧮 Ordenar materias
    ========================================================== */
-
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
 
@@ -83,7 +130,6 @@ function onChangeChoiceOrder(value) {
 /* ==========================================================
    🧠 Stats por materia
    ========================================================== */
-
 function getMateriaStats(slug) {
   const total = BANK.questions.filter(q => q.materia === slug).length;
 
@@ -100,32 +146,28 @@ function getMateriaStats(slug) {
 }
 
 /* ==========================================================
-   🎨 Render de cada materia (sin triángulo)
+   🎨 Render cada materia — CON CÍRCULO SVG
    ========================================================== */
-
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const estaAbierta = choiceOpenSlug === m.slug;
 
   return `
     <div class="materia-block" 
-         style="border:1px solid #e2e8f0;border-radius:10px;
-                padding:14px;margin-bottom:12px;">
+         style="border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin-bottom:12px;">
 
-      <!-- CABECERA CLICKABLE -->
       <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;"
            onclick="toggleMateriaChoice('${m.slug}')">
 
-        <div style="text-align:left;">
+        <div>
           <b>${m.name}</b>
           <div style="font-size:12px;color:#64748b;">
             ${stats.total} preguntas disponibles
           </div>
         </div>
 
-        <!-- 🔵 Solo el círculo de progreso -->
-        <div class="progress-circle">
-          ${stats.percent}%
+        <div style="width:42px;height:42px;">
+          ${renderProgressCircle(stats.percent)}
         </div>
       </div>
 
@@ -135,15 +177,13 @@ function renderMateriaRow(m) {
 }
 
 function toggleMateriaChoice(slug) {
-  if (choiceOpenSlug === slug) choiceOpenSlug = null;
-  else choiceOpenSlug = slug;
+  choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
   renderChoice();
 }
 
 /* ==========================================================
-   📚 Subtemas expandibles
+   📚 Subtemas
    ========================================================== */
-
 function renderMateriaExpanded(m) {
   const slug = m.slug;
   const subtemasTexto = BANK.subsubjects[slug] || [];
@@ -161,9 +201,7 @@ function renderMateriaExpanded(m) {
                  style="margin-right:6px;">
           ${nombreSub}
         </span>
-        <span style="color:#64748b;font-size:12px;">
-          (${count})
-        </span>
+        <span style="color:#64748b;font-size:12px;">(${count})</span>
       </label>
     `;
   }).join("");
@@ -196,7 +234,6 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
 /* ==========================================================
    🚀 Iniciar práctica
    ========================================================== */
-
 function iniciarPracticaMateria(mSlug) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
