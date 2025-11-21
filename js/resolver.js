@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución de preguntas
+   🎯 MEbank – Motor de Resolución 2025 (compatible con layout.css)
    ========================================================== */
 
 let CURRENT = {
@@ -15,7 +15,7 @@ let CURRENT = {
    ========================================================== */
 function iniciarResolucion(config) {
   if (!config || !Array.isArray(config.preguntas) || !config.preguntas.length) {
-    alert("⚠ No hay preguntas para resolver.");
+    alert("⚠ No hay preguntas.");
     return;
   }
 
@@ -35,63 +35,64 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 Renderizar pregunta
+   🧩 Render pregunta
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
   const q = CURRENT.list[CURRENT.i];
-
   if (!q) return renderFin();
 
   const total = CURRENT.list.length;
   const numero = CURRENT.i + 1;
-  const materiaNombre = getMateriaNombreForQuestion(q);
   const estado = CURRENT.session[q.id] || null;
 
   const opcionesHTML = q.opciones.map((op, idx) => {
     const letra = String.fromCharCode(97 + idx);
 
-    let cls = "option";
+    let cls = "";
     if (estado) {
-      if (idx === q.correcta) cls += " option-correct";
-      else if (idx === getRespuestaMarcada(q.id)) cls += " option-wrong";
+      if (idx === q.correcta) cls = " option-correct";
+      else if (estado === "bad" && idx === getRespuestaMarcada(q.id))
+        cls = " option-wrong";
     }
 
     return `
-      <div class="${cls}" onclick="answer(${idx})">
-        <b>${letra})</b> ${op}
-      </div>
+      <label class="q-option${cls}" onclick="answer(${idx})">
+        <span class="q-option-letter">${letra})</span>
+        <span class="q-option-text">${op}</span>
+      </label>
     `;
   }).join("");
 
   app.innerHTML = `
-    <div class="resolver-layout">
+    <div class="q-layout fade">
 
-      <!-- Pregunta -->
-      <div class="resolver-main">
-        <div class="resolver-card">
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="q-main">
+        <div class="q-card">
 
-          <div class="resolver-header">
-            <div class="resolver-title">
-              <b>${CURRENT.config.titulo}</b>
-              <span>${numero}/${total}</span>
+          <div class="q-header">
+            <div class="q-title">
+              <b>${CURRENT.config.titulo || "Práctica"}</b>
+              <span class="q-counter">${numero}/${total}</span>
             </div>
-            <div class="resolver-materia">${materiaNombre || ""}</div>
+            <div class="q-meta">
+              <span class="q-materia">${getMateriaNombreForQuestion(q)}</span>
+            </div>
           </div>
 
-          <div class="resolver-enunciado">
+          <div class="q-enunciado">
             ${q.enunciado}
           </div>
 
           ${q.imagenes?.length ? renderImagenesPregunta(q.imagenes) : ""}
 
-          <div class="resolver-opciones">
+          <div class="q-options">
             ${opcionesHTML}
           </div>
 
-          <div class="resolver-nav">
-            <button class="btn-small" onclick="prevQuestion()" 
-                    ${CURRENT.i === 0 ? "disabled" : ""}>
+          <div class="q-nav-row">
+            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
               ⬅ Anterior
             </button>
 
@@ -99,21 +100,17 @@ function renderPregunta() {
               ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
             </button>
 
-            <button class="btn-small btn-ghost" onclick="salirResolucion()">
-              🏠 Salir
-            </button>
+            <button class="btn-small btn-ghost" onclick="salirResolucion()">🏠 Salir</button>
           </div>
 
         </div>
       </div>
 
-      <!-- SIDEBAR -->
-      <div class="resolver-sidebar">
-        <div class="sidebar-title">Índice</div>
-        <div class="sidebar-grid">
-          ${renderSidebarCells()}
-        </div>
-      </div>
+      <!-- SIDEBAR DERECHA -->
+      <aside class="q-sidebar">
+        <div class="q-sidebar-header"><b>Índice</b></div>
+        <div class="q-sidebar-grid">${renderSidebarCells()}</div>
+      </aside>
 
     </div>
   `;
@@ -122,40 +119,42 @@ function renderPregunta() {
 /* ==========================================================
    🖼 Imágenes
    ========================================================== */
-function renderImagenesPregunta(arr) {
+function renderImagenesPregunta(imgs) {
   return `
-    <div class="resolver-imgs">
-      ${arr.map(src => `<img src="${src}" class="resolver-img">`).join("")}
+    <div class="q-images">
+      ${imgs.map(src => `
+        <div class="q-image-wrap">
+          <img src="${src}" class="q-image">
+        </div>
+      `).join("")}
     </div>
   `;
 }
 
 /* ==========================================================
-   🧠 Responder
+   🧠 Respuesta
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
-  if (!q) return;
 
   if (CURRENT.session[q.id]) return;
 
-  const correct = (idx === q.correcta);
-  CURRENT.session[q.id] = correct ? "ok" : "bad";
+  const ok = (idx === q.correcta) ? "ok" : "bad";
+  CURRENT.session[q.id] = ok;
+
   setRespuestaMarcada(q.id, idx);
 
+  // Guardamos en PROG
   const mat = q.materia || "otras";
   if (!PROG[mat]) PROG[mat] = {};
-  PROG[mat][q.id] = {
-    status: correct ? "ok" : "bad",
-    fecha: Date.now()
-  };
+  PROG[mat][q.id] = { status: ok, fecha: Date.now() };
   saveProgress();
 
   renderPregunta();
 }
 
 /* ==========================================================
-   ⏭ Navegación
+   Navegación
    ========================================================== */
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
@@ -174,47 +173,45 @@ function prevQuestion() {
 }
 
 /* ==========================================================
-   🏁 Fin
+   FIN
    ========================================================== */
 function renderFin() {
   stopTimer();
+
+  const values = Object.values(CURRENT.session);
   const total = CURRENT.list.length;
-  const cor = Object.values(CURRENT.session).filter(v => v === "ok").length;
-  const bad = total - cor;
-  const prec = Math.round(cor / total * 100);
+  const correctas = values.filter(v => v === "ok").length;
+  const incorrectas = values.filter(v => v === "bad").length;
+  const precision = total ? Math.round(correctas / total * 100) : 0;
 
   const app = document.getElementById("app");
   app.innerHTML = `
     <div class="card fade" style="max-width:520px;margin:auto;text-align:center;">
-      <h2>${CURRENT.config.titulo}</h2>
-      <p><b>${total}</b> preguntas</p>
-      <p style="color:#16a34a;">✔ Correctas: ${cor}</p>
-      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
-      <p><b>Precisión:</b> ${prec}%</p>
+      <h2>¡Finalizado!</h2>
+      <p>Total: <b>${total}</b></p>
+      <p style="color:#16a34a;">✔ Correctas: ${correctas}</p>
+      <p style="color:#ef4444;">✖ Incorrectas: ${incorrectas}</p>
+      <p><b>Precisión: ${precision}%</b></p>
 
-      <button class="btn-main" onclick="renderHome()" style="margin-top:16px;">
-        🏠 Volver al inicio
-      </button>
+      <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
     </div>
   `;
 }
 
 /* ==========================================================
-   🔎 Sidebar
+   Sidebar
    ========================================================== */
 function renderSidebarCells() {
   return CURRENT.list.map((q, idx) => {
-    const estado = CURRENT.session[q.id];
-    const active = idx === CURRENT.i;
+    const estado = CURRENT.session[q.id] || null;
+    const esActual = idx === CURRENT.i;
 
-    let cls = "sb-item";
-    if (active) cls += " sb-active";
+    let cls = "sb-cell";
+    if (esActual) cls += " sb-active";
     if (estado === "ok") cls += " sb-ok";
-    else if (estado === "bad") cls += " sb-bad";
+    if (estado === "bad") cls += " sb-bad";
 
-    return `
-      <div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>
-    `;
+    return `<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`;
   }).join("");
 }
 
@@ -224,7 +221,7 @@ function irAPregunta(i) {
 }
 
 /* ==========================================================
-   🕒 Timer
+   TIMER
    ========================================================== */
 let TIMER = { interval: null, start: 0, running: false };
 
@@ -240,13 +237,12 @@ function initTimer() {
     document.body.appendChild(el);
   }
 
-  el.textContent = "⏱ 00:00";
-
   TIMER.interval = setInterval(() => {
     if (!TIMER.running) return;
-
-    const diff = Date.now() - TIMER.start;
-    el.textContent = "⏱ " + formatTimer(diff);
+    const s = Math.floor((Date.now() - TIMER.start) / 1000);
+    el.textContent = "⏱ " +
+      String(Math.floor(s / 60)).padStart(2, "0") + ":" +
+      String(s % 60).padStart(2, "0");
   }, 1000);
 }
 
@@ -254,25 +250,19 @@ function stopTimer() {
   if (TIMER.interval) clearInterval(TIMER.interval);
   TIMER.interval = null;
   TIMER.running = false;
-
   const el = document.getElementById("exam-timer");
   if (el) el.remove();
 }
 
-function formatTimer(ms) {
-  const s = Math.floor(ms / 1000);
-  const m = Math.floor(s / 60);
-  return `${String(m).padStart(2,"0")}:${String(s % 60).padStart(2,"0")}`;
+/* ==========================================================
+   Helpers
+   ========================================================== */
+function getMateriaNombreForQuestion(q) {
+  const f = BANK.subjects.find(s => s.slug === q.materia);
+  return f ? f.name : q.materia;
 }
 
-/* ==========================================================
-   📝 Helpers
-   ========================================================== */
 const RESP_MARCADAS = {};
+
 function setRespuestaMarcada(id, idx) { RESP_MARCADAS[id] = idx; }
 function getRespuestaMarcada(id) { return RESP_MARCADAS[id] ?? null; }
-
-function getMateriaNombreForQuestion(q) {
-  const m = BANK.subjects.find(s => s.slug === q.materia);
-  return m ? m.name : "";
-}
