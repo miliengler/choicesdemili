@@ -25,7 +25,7 @@ function renderChoice() {
           </p>
         </div>
 
-        <!-- Ordenar materias (alineado perfecto) -->
+        <!-- Ordenar materias -->
         <div style="text-align:right;">
           <label style="font-size:13px;color:#64748b;display:block;margin-bottom:4px;">
             Ordenar materias
@@ -86,6 +86,7 @@ function onChangeChoiceOrder(value) {
 
 function getMateriaStats(slug) {
   const total = BANK.questions.filter(q => q.materia === slug).length;
+
   const progMat = PROG[slug] || {};
   let correctas = 0;
 
@@ -99,7 +100,7 @@ function getMateriaStats(slug) {
 }
 
 /* ==========================================================
-   🎨 Render de cada materia (sin triangulito)
+   🎨 Render de cada materia (sin triángulo)
    ========================================================== */
 
 function renderMateriaRow(m) {
@@ -118,7 +119,7 @@ function renderMateriaRow(m) {
         <div style="text-align:left;">
           <b>${m.name}</b>
           <div style="font-size:12px;color:#64748b;">
-            ✔ ${stats.correctas}/${stats.total} correctas (${stats.percent}%)
+            ${stats.total} preguntas disponibles
           </div>
         </div>
 
@@ -197,9 +198,7 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
    ========================================================== */
 
 function iniciarPracticaMateria(mSlug) {
-  const checks = document.querySelectorAll(
-    `input[name="subtema-${mSlug}"]:checked`
-  );
+  const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
 
   const preguntas = getQuestionsByMateria(
