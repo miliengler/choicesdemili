@@ -71,8 +71,9 @@ function goExamenes() {
 
 function goCrearExamen() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderExamenSetup();   // ← ESTA es la verdadera función
+  renderCrearExamen();   // ✅ AHORA SÍ: nombre correcto
 }
+
 function goStats() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
   renderStats();
