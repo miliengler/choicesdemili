@@ -1,177 +1,222 @@
 /* ==========================================================
    🎯 MEbank 3.0 – Motor de resolución de preguntas
+   Estilo examen único:
+   - Marca correcta / incorrecta
+   - NO cambia de pregunta automáticamente
+   - No deja cambiar la respuesta (modo examen real)
    ========================================================== */
 
 let CURRENT = {
-  preguntas: [],
+  list: [],
   i: 0,
   modo: "",
-  titulo: "",
-  usarTimer: false,
-  materiaActual: "",
+  config: {},
+  session: {}   // q.id -> "ok" | "bad"
 };
 
 /* ==========================================================
-   🚀 Iniciar resolución
+   🚀 Iniciar una resolución
    config = {
-      preguntas: [...],
-      modo: "practica" | "repaso" | "examen" | ...,
-      usarTimer: true/false,
-      titulo: "string",
+     modo: "materia" | "examen" | "reanudar" | ...,
+     preguntas: [ array de preguntas ],
+     usarTimer: true/false,
+     permitirRetroceso: true/false,   // por ahora lo usamos poco
+     mostrarNotas: true/false,        // reservado
+     titulo: "texto"
    }
    ========================================================== */
 
 function iniciarResolucion(config) {
-
-  CURRENT = {
-    preguntas: config.preguntas,
-    i: 0,
-    modo: config.modo || "general",
-    titulo: config.titulo || "Resolviendo",
-    usarTimer: config.usarTimer || false,
-    materiaActual: null,
-  };
-
-  // Extraer materia (si aplica)
-  if (CURRENT.preguntas.length > 0) {
-    CURRENT.materiaActual = CURRENT.preguntas[0].materia;
+  if (!config || !Array.isArray(config.preguntas) || !config.preguntas.length) {
+    alert("⚠ No hay preguntas para resolver.");
+    return;
   }
 
+  // Detener timer previo si existía
+  stopTimer();
+
+  CURRENT = {
+    list: config.preguntas.slice(), // copia defensiva
+    i: 0,
+    modo: config.modo || "general",
+    config: config,
+    session: {}   // arrancamos en limpio
+  };
+
   // Timer
-  stopTimer();               // Limpia si había uno previo
-  if (CURRENT.usarTimer) {
+  if (config.usarTimer) {
     initTimer();
   }
 
-  // Sidebar
-  initSidebar(CURRENT.preguntas);
-
-  // Render
+  // Render primera pregunta
   renderPregunta();
 }
 
 /* ==========================================================
-   🧩 Renderizar PREGUNTA
+   🧩 Renderizar una pregunta
    ========================================================== */
 
 function renderPregunta() {
   const app = document.getElementById("app");
-  const q = CURRENT.preguntas[CURRENT.i];
-  if (!q) return renderFin();
+  const q = CURRENT.list[CURRENT.i];
+  if (!q) {
+    renderFin();
+    return;
+  }
 
-  // Materia (gris, arriba a la derecha)
-  const materiaTxt = getMateriaName(q.materia);
+  // Por si venimos de otra vista, scrollear arriba
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
-  const opcionesHTML = q.opciones
-    .map((op, idx) => `
-      <label class="option" onclick="answer(${idx})">
-        <input type="radio" name="opt">
-        ${String.fromCharCode(97 + idx)}) ${op}
+  const total = CURRENT.list.length;
+  const numero = CURRENT.i + 1;
+
+  const materiaNombre = getMateriaNombreForQuestion(q);
+
+  // ¿La pregunta ya fue respondida en ESTA sesión?
+  const estado = CURRENT.session[q.id] || null;
+
+  // Opciones estilo bloque clásico
+  const opcionesHTML = q.opciones.map((op, idx) => {
+    const letra = String.fromCharCode(97 + idx); // a, b, c, d...
+
+    let extraClass = "";
+    if (estado) {
+      const esCorrecta = (idx === q.correcta);
+      const fueRespondidaMal = (estado === "bad" && idx === getRespuestaMarcada(q.id));
+
+      if (esCorrecta) extraClass = " option-correct";
+      else if (fueRespondidaMal) extraClass = " option-wrong";
+    }
+
+    return `
+      <label class="q-option${extraClass}" onclick="answer(${idx})">
+        <span class="q-option-letter">${letra})</span>
+        <span class="q-option-text">${op}</span>
       </label>
-    `)
-    .join("");
+    `;
+  }).join("");
 
   app.innerHTML = `
     <div class="q-layout fade">
 
-      <div class="q-card">
+      <!-- COLUMNA PRINCIPAL -->
+      <div class="q-main">
+        <div class="q-card">
+          <div class="q-header">
+            <div class="q-title">
+              <b>${CURRENT.config.titulo || "Resolución"}</b>
+              <span class="q-counter">${numero}/${total}</span>
+            </div>
+            <div class="q-meta">
+              <span class="q-materia">${materiaNombre || ""}</span>
+            </div>
+          </div>
 
-        <div class="q-top">
-          <b>${CURRENT.titulo}</b>
-          <span class="q-materia">${materiaTxt}</span>
+          <div class="q-enunciado">
+            ${q.enunciado || ""}
+          </div>
+
+          ${q.imagenes && q.imagenes.length ? renderImagenesPregunta(q.imagenes) : ""}
+
+          <div class="q-options">
+            ${opcionesHTML}
+          </div>
+
+          <div class="q-nav-row">
+            <button class="btn-small"
+                    onclick="prevQuestion()"
+                    ${CURRENT.i === 0 ? "disabled" : ""}>
+              ⬅ Anterior
+            </button>
+
+            <button class="btn-small"
+                    onclick="nextQuestion()"
+                    ${CURRENT.i === total - 1 ? "" : ""}>
+              ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
+            </button>
+
+            <button class="btn-small btn-ghost"
+                    onclick="salirResolucion()">
+              🏠 Salir
+            </button>
+          </div>
         </div>
-
-        <div class="q-num">
-          Pregunta ${CURRENT.i + 1} de ${CURRENT.preguntas.length}
-        </div>
-
-        <div class="enunciado">${q.enunciado}</div>
-
-        <!-- Soporte imágenes -->
-        <div class="q-imgs">
-          ${q.imagenes && q.imagenes.length
-            ? q.imagenes.map(img => `<img src="${img}" class="q-img">`).join("")
-            : ""}
-        </div>
-
-        <div class="options">
-          ${opcionesHTML}
-        </div>
-
-        <!-- Explicación si existe (solo después de responder) -->
-        <div id="explicacion-box" class="explicacion-box" style="display:none;">
-          <b>Explicación:</b>
-          <p id="explicacion-text"></p>
-        </div>
-
-        <div class="nav-row">
-          <button class="btn-small" onclick="prevPregunta()"
-            ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button>
-          
-          <button class="btn-small" onclick="nextPregunta()"
-            ${CURRENT.i === CURRENT.preguntas.length - 1 ? "disabled" : ""}>
-            Siguiente ➡
-          </button>
-
-          <button class="btn-small" onclick="salirResolucion()">🏠 Salir</button>
-        </div>
-
       </div>
+
+      <!-- SIDEBAR DERECHA -->
+      <aside class="q-sidebar">
+        <div class="q-sidebar-header">
+          <b>Índice</b>
+        </div>
+        <div class="q-sidebar-grid">
+          ${renderSidebarCells()}
+        </div>
+      </aside>
     </div>
   `;
-
-  renderSidebarPage(CURRENT.i);
 }
 
 /* ==========================================================
-   📝 Resolver respuesta
+   🖼 Render imágenes (si existieran)
+   ========================================================== */
+
+function renderImagenesPregunta(imgs) {
+  if (!Array.isArray(imgs) || !imgs.length) return "";
+  // Por ahora mostramos en columna simple
+  const htmlImgs = imgs.map(src => `
+    <div class="q-image-wrap">
+      <img src="${src}" alt="Imagen de la pregunta" class="q-image">
+    </div>
+  `).join("");
+  return `<div class="q-images">${htmlImgs}</div>`;
+}
+
+/* ==========================================================
+   🧠 Responder (NO avanza de pregunta, no se puede cambiar)
    ========================================================== */
 
 function answer(idx) {
-  const q = CURRENT.preguntas[CURRENT.i];
-  const correcta = q.correcta;
+  const q = CURRENT.list[CURRENT.i];
+  if (!q) return;
 
-  const opts = document.querySelectorAll(".option");
+  // Si ya tenía respuesta en esta sesión, no dejamos cambiar
+  if (CURRENT.session[q.id]) return;
 
-  opts.forEach((opt, i) => {
-    if (i === correcta) opt.classList.add("correct");
-    if (i === idx && idx !== correcta) opt.classList.add("wrong");
-    opt.style.pointerEvents = "none";
-  });
+  const esCorrecta = (idx === q.correcta);
+  const estado = esCorrecta ? "ok" : "bad";
 
-  // Guardar progreso
-  const mat = q.materia;
+  // Guardar en sesión
+  CURRENT.session[q.id] = estado;
+  setRespuestaMarcada(q.id, idx);
+
+  // Guardar en PROG global (por materia)
+  const mat = q.materia || "otras";
   if (!PROG[mat]) PROG[mat] = {};
-  PROG[mat][q.id] = {
-    status: idx === correcta ? "ok" : "bad",
-    fecha: Date.now(),
-    nota: PROG[mat][q.id]?.nota || null,
-  };
+  if (!PROG[mat][q.id]) PROG[mat][q.id] = {};
+
+  PROG[mat][q.id].status = estado;
+  PROG[mat][q.id].fecha = Date.now();
   saveProgress();
 
-  // Mostrar explicación si existe
-  if (q.explicacion) {
-    const box = document.getElementById("explicacion-box");
-    const txt = document.getElementById("explicacion-text");
-    box.style.display = "block";
-    txt.textContent = q.explicacion;
-  }
-
-  // NO pasamos automáticamente de pregunta.
+  // Re-render de la pregunta para aplicar clases correct/incorrect
+  renderPregunta();
 }
 
 /* ==========================================================
    ⏭ Navegación
    ========================================================== */
 
-function nextPregunta() {
-  if (CURRENT.i < CURRENT.preguntas.length - 1) {
+function nextQuestion() {
+  if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
     renderPregunta();
+  } else {
+    // Última -> fin
+    renderFin();
   }
 }
 
-function prevPregunta() {
+function prevQuestion() {
   if (CURRENT.i > 0) {
     CURRENT.i--;
     renderPregunta();
@@ -179,55 +224,155 @@ function prevPregunta() {
 }
 
 /* ==========================================================
-   🏠 Salir
-   ========================================================== */
-
-function salirResolucion() {
-  stopTimer();
-
-  if (confirm("¿Salir de la resolución?")) {
-    renderHome();
-  }
-}
-
-/* ==========================================================
-   🏁 Final
+   🏁 Final del bloque
    ========================================================== */
 
 function renderFin() {
   stopTimer();
 
-  const tot = CURRENT.preguntas.length;
-  let ok = 0, bad = 0;
-
-  CURRENT.preguntas.forEach(q => {
-    const r = PROG[q.materia]?.[q.id];
-    if (r?.status === "ok") ok++;
-    if (r?.status === "bad") bad++;
-  });
+  const total = CURRENT.list.length;
+  const values = Object.values(CURRENT.session);
+  const correctas = values.filter(v => v === "ok").length;
+  const incorrectas = values.filter(v => v === "bad").length;
+  const precision = total ? Math.round(correctas / total * 100) : 0;
 
   const app = document.getElementById("app");
 
   app.innerHTML = `
-    <div class="card fade" style="text-align:center;">
-      <h2>${CURRENT.titulo}</h2>
-      <p>Total: <b>${tot}</b></p>
-      <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
-      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
-      <p><b>Precisión:</b> ${Math.round((ok / tot) * 100)}%</p>
+    <div class="card fade" style="max-width:520px;margin:auto;text-align:center;">
+      <h2>${CURRENT.config.titulo || "Finalizado"}</h2>
+      <p>Total de preguntas: <b>${total}</b></p>
+      <p style="color:#16a34a;">✔ Correctas: ${correctas}</p>
+      <p style="color:#ef4444;">✖ Incorrectas: ${incorrectas}</p>
+      <p><b>Precisión:</b> ${precision}%</p>
 
-      <div style="margin-top:20px;">
-        <button class="btn-main" onclick="renderHome()">🏠 Volver</button>
+      <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+        <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
       </div>
     </div>
   `;
 }
 
 /* ==========================================================
-   🔻 Helpers
+   🚪 Salir de la resolución
    ========================================================== */
 
-function getMateriaName(slug) {
-  const m = SUBJECTS.find(x => x.slug === slug);
-  return m ? m.name : "";
+function salirResolucion() {
+  const ok = confirm("¿Seguro que querés salir de la resolución?");
+  if (!ok) return;
+
+  stopTimer();
+  renderHome();
+}
+
+/* ==========================================================
+   🕒 Timer minimalista
+   ========================================================== */
+
+let TIMER = {
+  interval: null,
+  start: 0,
+  running: false
+};
+
+function initTimer() {
+  TIMER.start = Date.now();
+  TIMER.running = true;
+
+  let el = document.getElementById("exam-timer");
+  if (!el) {
+    el = document.createElement("div");
+    el.id = "exam-timer";
+    el.className = "exam-timer";
+    document.body.appendChild(el);
+  }
+  el.textContent = "⏱ 00:00";
+
+  TIMER.interval = setInterval(() => {
+    if (!TIMER.running) return;
+    const elapsed = Date.now() - TIMER.start;
+    document.getElementById("exam-timer").textContent =
+      "⏱ " + formatTimer(elapsed);
+  }, 1000);
+}
+
+function stopTimer() {
+  if (TIMER.interval) {
+    clearInterval(TIMER.interval);
+    TIMER.interval = null;
+  }
+  TIMER.running = false;
+
+  const el = document.getElementById("exam-timer");
+  if (el) el.remove();
+}
+
+function formatTimer(ms) {
+  const s = Math.floor(ms / 1000);
+  const m = Math.floor(s / 60);
+  const ss = s % 60;
+  return `${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+}
+
+/* ==========================================================
+   📊 Sidebar (índice de preguntas)
+   ========================================================== */
+
+function renderSidebarCells() {
+  const total = CURRENT.list.length;
+
+  return CURRENT.list.map((q, idx) => {
+    const num = idx + 1;
+    const estado = CURRENT.session[q.id] || null;
+    const esActual = (idx === CURRENT.i);
+
+    // ¿Tiene nota guardada?
+    const mat = q.materia || "otras";
+    const nota = PROG[mat] && PROG[mat][q.id] && PROG[mat][q.id].nota;
+
+    let cls = "sb-cell";
+    if (esActual) cls += " sb-active";
+    if (estado === "ok") cls += " sb-ok";
+    else if (estado === "bad") cls += " sb-bad";
+    if (nota) cls += " sb-note";
+
+    return `
+      <div class="${cls}" onclick="irAPregunta(${idx})">
+        ${num}
+      </div>
+    `;
+  }).join("");
+}
+
+function irAPregunta(idx) {
+  if (idx < 0 || idx >= CURRENT.list.length) return;
+  CURRENT.i = idx;
+  renderPregunta();
+}
+
+/* ==========================================================
+   🔎 Helpers para materia / respuesta marcada
+   ========================================================== */
+
+function getMateriaNombreForQuestion(q) {
+  if (!q || !q.materia) return "";
+
+  const slug = q.materia;
+  const found = BANK.subjects.find(s => s.slug === slug);
+  return found ? found.name : slug;
+}
+
+/*
+  Guardamos (solo en memoria) qué opción se eligió
+  por si en el futuro queremos reabrir y marcarla distinta.
+  Por ahora se usa sólo para pintar rojo la que marcó mal.
+*/
+const RESP_MARCADAS = {};  // q.id -> idx
+
+function setRespuestaMarcada(id, idx) {
+  RESP_MARCADAS[id] = idx;
+}
+
+function getRespuestaMarcada(id) {
+  return RESP_MARCADAS[id] ?? null;
 }
