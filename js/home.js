@@ -68,11 +68,11 @@ function goExamenes() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
   renderExamenesMain();
 }
-
 function goCrearExamen() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
-  renderExamenSetup();
+  renderCrearExamen();
 }
+
 
 function goStats() {
   if (!BANK.loaded) return alert("Primero cargá los bancos.");
