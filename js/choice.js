@@ -63,20 +63,30 @@ function renderChoice() {
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
 
+  // Función para ordenar ignorando emoji
+  function cleanName(name) {
+    return name
+      .replace(/^[\p{Emoji}\p{Extended_Pictographic}]+/u, "") // saca emojis del inicio
+      .trim()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, ""); // saca tildes
+  }
+
   if (CHOICE_ORDER === "progreso") {
     return list.sort((a, b) => {
       const pa = getMateriaStats(a.slug).percent || 0;
       const pb = getMateriaStats(b.slug).percent || 0;
-      return pb - pa; // de mayor a menor progreso
+      return pb - pa;
     });
   }
 
-  // Orden alfabético por nombre (A→Z)
-  return list.sort((a, b) =>
-    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-  );
+  // Orden alfabético REAL ignorando emojis
+  return list.sort((a, b) => {
+    const A = cleanName(a.name);
+    const B = cleanName(b.name);
+    return A.localeCompare(B, "es", { sensitivity: "base" });
+  });
 }
-
 function onChangeChoiceOrder(value) {
   CHOICE_ORDER = value;
   localStorage.setItem("MEbank_ChoiceOrder_v1", value);
