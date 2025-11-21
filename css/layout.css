@@ -1,166 +1,227 @@
 /* ==========================================================
-   🎨 Layout general para preguntas + barra lateral
-   (Modo Examen / Choice / Anteriores)
+   🎨 MEbank – Layout del Motor de Resolución (2025)
+   Compatible con resolver.js PRO
    ========================================================== */
 
-/* ---------- Contenedor principal ---------- */
+/* ---------- CONTENEDOR GENERAL ---------- */
 .q-layout {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
-  gap: 24px;
-  padding-right: 240px; /* espacio dinámico para sidebar */
-  transition: padding-right 0.3s ease;
-  animation: fadeIn 0.3s ease;
+  justify-content: center;
+  gap: 26px;
+  padding-right: 260px;   /* espacio para sidebar en desktop */
+  width: 100%;
   box-sizing: border-box;
+  animation: fadeIn .3s ease;
 }
 
-/* En pantallas pequeñas: barra se oculta, sin margen */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .q-layout {
-    flex-direction: column;
     padding-right: 0;
-    gap: 16px;
+    flex-direction: column;
+    gap: 18px;
   }
 }
 
-/* ---------- Caja principal de la pregunta ---------- */
-.q-card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 24px 28px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+/* ==========================================================
+   🧩 COLUMNA PRINCIPAL – TARJETA DE PREGUNTA
+   ========================================================== */
+.q-main {
   width: 100%;
-  max-width: 750px;
-  font-size: 16px;
-  line-height: 1.5;
-  box-sizing: border-box;
-  transition: all 0.2s ease;
+  max-width: 760px;
 }
 
-/* ---------- Título de materia + numeración ---------- */
-.q-card b {
-  color: #0f172a;
-  font-size: 15px;
-}
-
-/* ---------- Enunciado ---------- */
-.q-card .enunciado {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-/* ---------- Opciones ---------- */
-.q-card .options label {
-  display: block;
-  background: var(--soft);
+.q-card {
+  background: var(--card);
+  padding: 26px 30px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,.06);
   border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin-top: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  user-select: none;
 }
 
-.q-card .options label:hover {
-  background: #f1f5f9;
-}
-
-.q-card .options label.correct {
-  background: #dcfce7;
-  border-color: #22c55e;
-}
-
-.q-card .options label.wrong {
-  background: #fee2e2;
-  border-color: #ef4444;
-}
-
-/* ---------- Explicación ---------- */
-.q-card .explain {
-  background: #f8fafc;
-  border-radius: 10px;
-  padding: 10px 14px;
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* ---------- Botonera inferior ---------- */
-.nav-row {
+.q-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  margin-top: 16px;
+  margin-bottom: 14px;
 }
 
-/* ---------- Sidebar complementaria ---------- */
-#exam-sidebar {
-  transition: right 0.3s ease;
+.q-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
 }
 
-/* ---------- Animación de entrada ---------- */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+.q-counter {
+  background: var(--soft);
+  color: var(--muted);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.q-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.q-materia {
+  font-weight: 600;
+  color: var(--brand-dark);
+}
+
+.q-enunciado {
+  font-size: 17px;
+  margin: 14px 0 14px;
+  line-height: 1.5;
 }
 
 /* ==========================================================
-   🧭 Integración visual con el resto del sistema
+   🟩 OPCIONES DE RESPUESTA
    ========================================================== */
 
-/* Botones */
-.btn-main {
-  background: var(--brand);
-  border: 1px solid var(--brand-dark);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
+.q-options {
+  margin-top: 10px;
 }
 
-.btn-main:hover {
-  background: var(--brand-dark);
-}
-
-.btn-main.btn-blue {
-  background: #1e40af;
-  border-color: #1e3a8a;
-}
-
-.btn-main.btn-grey {
-  background: #475569;
-  border-color: #334155;
-}
-
-.btn-small {
-  background: #f8fafc;
+.q-option {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  margin-top: 10px;
+  background: var(--soft);
   border: 1px solid var(--line);
-  border-radius: 6px;
-  font-size: 14px;
-  padding: 6px 10px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all .15s ease;
 }
 
-.btn-small:hover {
-  background: #f1f5f9;
+.q-option:hover {
+  background: #eef2f6;
 }
 
-/* Divider y pequeñas utilidades */
-.divider {
-  width: 60%;
-  margin: 20px 0;
-  border: 0;
-  border-top: 1px solid var(--line);
+.q-option-letter {
+  font-weight: 700;
+  width: 20px;
+  color: var(--muted);
 }
 
-.fade {
-  animation: fadeIn 0.3s ease;
+.q-option-text {
+  flex: 1;
+}
+
+/* Correcta / Incorrecta */
+.option-correct {
+  background:#dcfce7 !important;
+  border-color:#16a34a !important;
+}
+
+.option-wrong {
+  background:#fee2e2 !important;
+  border-color:#ef4444 !important;
+}
+
+/* ==========================================================
+   🖼 IMÁGENES
+   ========================================================== */
+
+.q-images {
+  margin: 15px 0;
+}
+
+.q-image-wrap {
+  margin-bottom: 10px;
+}
+
+.q-image {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+
+/* ==========================================================
+   🧭 NAVEGACIÓN
+   ========================================================== */
+
+.q-nav-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ==========================================================
+   🟦 SIDEBAR – ÍNDICE DE PREGUNTAS
+   ========================================================== */
+
+.q-sidebar {
+  position: fixed;
+  top: 90px;
+  right: 12px;
+  width: 210px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+  padding: 14px 16px;
+  max-height: 82vh;
+  overflow-y:auto;
+}
+
+@media (max-width: 960px) {
+  .q-sidebar { display:none; }
+}
+
+.q-sidebar-header {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: var(--brand-dark);
+}
+
+/* GRID */
+.q-sidebar-grid {
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+.sb-cell {
+  padding: 6px 0;
+  text-align: center;
+  background: var(--soft);
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+
+.sb-cell:hover { background:#e5eaf0; }
+
+.sb-active {
+  border-color: var(--brand);
+  background: #dbeafe;
+}
+
+.sb-ok {
+  background:#dcfce7 !important;
+  border-color:#16a34a !important;
+}
+
+.sb-bad {
+  background:#fee2e2 !important;
+  border-color:#ef4444 !important;
+}
+
+.sb-note {
+  box-shadow: inset 0 0 0 2px #fbbf24;
+}
+
+/* ==========================================================
+   ✨ ANIMACIONES
+   ========================================================== */
+@keyframes fadeIn {
+  from { opacity:0; transform: translateY(10px); }
+  to   { opacity:1; transform: translateY(0); }
 }
