@@ -32,9 +32,9 @@ const SUBJECTS = [
   { slug: "oftalmologia",       name: "👁️ Oftalmología" },
   { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
   { slug: "neurocirugia",       name: "🧠 Neurocirugía" },
-  { slug: "toxicologia",        name: "☠️ Toxicología" },
+  { slug: "toxicologia", name: "☠️ Toxicología" },
+  { slug: "medicinalegal", name: "⚖️ Medicina Legal" },
   { slug: "saludpublica",       name: "🏥 Salud Pública" },
-  { slug: "medicinalegal",      name: "⚖️ Medicina Legal" },
   { slug: "imagenes",           name: "🩻 Diagnóstico por Imágenes" },
   { slug: "otras",              name: "📚 Otras" }
 ];
