@@ -62,25 +62,31 @@ function renderChoice() {
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
 
-  // Limpieza total de emoji + ZWJ + VS16
+  // 🔥 Limpieza universal (emoji, ZWJ, VS-16, símbolos, etc.)
   function cleanName(name) {
     if (!name) return "";
 
     return name
-      // 1) eliminar emojis (codepoint > 12000)
+      // 1) eliminar variation selectors + ZWJ
+      .replace(/[\u200D\uFE0F\uFE0E]/g, "")
+
+      // 2) eliminar TODOS los caracteres con codepoint alto (emoji)
       .split("")
-      .filter(ch => ch.codePointAt(0) < 12000)
+      .filter(ch => ch.codePointAt(0) < 8000)
       .join("")
-      // 2) eliminar variation selectors (VS-16)
-      .replace(/\uFE0F/g, "")
-      // 3) eliminar zero-width joiners
-      .replace(/\u200D/g, "")
+
+      // 3) eliminar símbolos al inicio (⚖ ☠ etc.)
+      .replace(/^[^A-Za-zÁÉÍÓÚáéíóúÑñ]+/, "")
+
       // 4) normalizar y quitar tildes
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
+
+      // 5) limpiar espacios
       .trim();
   }
 
+  // Orden por progreso
   if (CHOICE_ORDER === "progreso") {
     return list.sort((a, b) => {
       const pa = getMateriaStats(a.slug).percent || 0;
@@ -89,7 +95,7 @@ function getOrderedSubjects() {
     });
   }
 
-  // Orden alfabético real
+  // 🧠 Orden alfabético REAL (ignora emojis)
   return list.sort((a, b) => {
     const A = cleanName(a.name);
     const B = cleanName(b.name);
