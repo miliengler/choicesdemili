@@ -2,7 +2,7 @@
    🎯 MEbank 3.0 – Modo Examen (minimalista + cantidades)
    ========================================================== */
 
-function renderExamenSetup() {
+function renderCrearExamen() {
 
   const app = document.getElementById("app");
 
