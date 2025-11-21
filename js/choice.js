@@ -59,17 +59,24 @@ function renderChoice() {
 /* ==========================================================
    🧮 Ordenar materias
    ========================================================== */
-
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
 
-  // Función para ordenar ignorando emoji
+  // Limpia emoji del principio del nombre (versión 100% Safari-compatible)
   function cleanName(name) {
-    return name
-      .replace(/^[\p{Emoji}\p{Extended_Pictographic}]+/u, "") // saca emojis del inicio
+    if (!name) return "";
+
+    // 1) eliminar todos los caracteres emoji (unicode > 12000)
+    const sinEmoji = name
+      .split("")
+      .filter(ch => ch.codePointAt(0) < 12000)
+      .join("");
+
+    // 2) sacar espacios sobrantes, normalizar, sacar tildes
+    return sinEmoji
       .trim()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, ""); // saca tildes
+      .replace(/[\u0300-\u036f]/g, "");
   }
 
   if (CHOICE_ORDER === "progreso") {
@@ -80,7 +87,7 @@ function getOrderedSubjects() {
     });
   }
 
-  // Orden alfabético REAL ignorando emojis
+  // Orden alfabético REAL sin emoji
   return list.sort((a, b) => {
     const A = cleanName(a.name);
     const B = cleanName(b.name);
