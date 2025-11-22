@@ -35,6 +35,41 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
+   🧩 Helper: obtener opciones en formato array
+   - Soporta:
+   - q.opciones = [ "op1", "op2", ... ]
+   - q.a, q.b, q.c, q.d
+   ========================================================== */
+function getOpcionesArray(q) {
+  if (Array.isArray(q.opciones) && q.opciones.length) {
+    return q.opciones;
+  }
+
+  // Soportar formato viejo a/b/c/d
+  const posibles = [q.a, q.b, q.c, q.d].filter(v => v != null && v !== "");
+  if (posibles.length) return posibles;
+
+  return []; // sin opciones
+}
+
+/* ==========================================================
+   🧩 Helper: índice correcto (0–3) aunque venga como "a"/"b"/"c"/"d"
+   ========================================================== */
+function getCorrectIndex(q) {
+  let c = q.correcta;
+
+  if (typeof c === "string") {
+    const mapa = { a: 0, b: 1, c: 2, d: 3 };
+    const key = c.trim().toLowerCase();
+    return mapa[key] ?? 0;
+  }
+
+  if (typeof c === "number") return c;
+
+  return 0;
+}
+
+/* ==========================================================
    🧩 Render Pregunta
    ========================================================== */
 function renderPregunta() {
@@ -52,12 +87,15 @@ function renderPregunta() {
   const estado = CURRENT.session[q.id] || null;
   const marcada = getRespuestaMarcada(q.id);
 
+  const opciones = getOpcionesArray(q);
+  const correctIndex = getCorrectIndex(q);
+
   /* ------ OPCIONES ------ */
-  const opcionesHTML = q.opciones.map((op, idx) => {
-    let cls = "q-option"; // ← tu estilo nuevo
+  const opcionesHTML = opciones.map((op, idx) => {
+    let cls = "q-option";
 
     if (estado) {
-      if (idx === q.correcta) cls += " option-correct";
+      if (idx === correctIndex) cls += " option-correct";
       else if (marcada === idx && estado === "bad") cls += " option-wrong";
     }
 
@@ -82,33 +120,43 @@ function renderPregunta() {
               <span class="q-counter">${numero}/${total}</span>
             </div>
             <div class="q-meta">
-              <span class="q-materia">${materiaNombre}</span>
+              <span class="q-materia">${materiaNombre || ""}</span>
             </div>
           </div>
 
-          <div class="q-enunciado">${q.enunciado}</div>
+          <div class="q-enunciado">${q.enunciado || ""}</div>
 
-          ${q.imagenes?.length ? renderImagenesPregunta(q.imagenes) : ""}
+          ${q.imagenes && q.imagenes.length ? renderImagenesPregunta(q.imagenes) : ""}
 
-          <div class="q-options">${opcionesHTML}</div>
+          <div class="q-options">
+            ${opcionesHTML || `<p style="color:#94a3b8;font-size:14px;">(Pregunta sin opciones definidas)</p>`}
+          </div>
 
           <div class="q-nav-row">
-            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
+            <button class="btn-small"
+                    onclick="prevQuestion()"
+                    ${CURRENT.i === 0 ? "disabled" : ""}>
               ⬅ Anterior
             </button>
 
-            <button class="btn-small" onclick="nextQuestion()">
+            <button class="btn-small"
+                    onclick="nextQuestion()">
               ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
             </button>
 
-            <button class="btn-small btn-ghost" onclick="salirResolucion()">🏠 Salir</button>
+            <button class="btn-small btn-ghost"
+                    onclick="salirResolucion()">
+              🏠 Salir
+            </button>
           </div>
         </div>
       </div>
 
       <aside class="q-sidebar">
         <div class="q-sidebar-header"><b>Índice</b></div>
-        <div class="q-sidebar-grid">${renderSidebarCells()}</div>
+        <div class="q-sidebar-grid">
+          ${renderSidebarCells()}
+        </div>
       </aside>
 
     </div>
@@ -119,6 +167,7 @@ function renderPregunta() {
    🖼 Imágenes
    ========================================================== */
 function renderImagenesPregunta(imgs) {
+  if (!Array.isArray(imgs) || !imgs.length) return "";
   return `
     <div class="q-images">
       ${imgs.map(src => `
@@ -134,11 +183,13 @@ function renderImagenesPregunta(imgs) {
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
-
   if (!q) return;
-  if (CURRENT.session[q.id]) return; // ya respondida
 
-  const esCorrecta = idx === q.correcta;
+  // no permitir cambiar respuesta en la misma sesión
+  if (CURRENT.session[q.id]) return;
+
+  const correctIndex = getCorrectIndex(q);
+  const esCorrecta = idx === correctIndex;
   const estado = esCorrecta ? "ok" : "bad";
 
   CURRENT.session[q.id] = estado;
@@ -159,7 +210,9 @@ function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
     renderPregunta();
-  } else renderFin();
+  } else {
+    renderFin();
+  }
 }
 
 function prevQuestion() {
@@ -188,7 +241,9 @@ function renderFin() {
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
       <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
 
-      <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
+      <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+        <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
+      </div>
     </div>
   `;
 }
@@ -210,25 +265,32 @@ let TIMER = { interval: null, start: 0 };
 function initTimer() {
   TIMER.start = Date.now();
 
-  if (!document.getElementById("exam-timer")) {
-    const el = document.createElement("div");
+  let el = document.getElementById("exam-timer");
+  if (!el) {
+    el = document.createElement("div");
     el.id = "exam-timer";
     el.className = "exam-timer";
     document.body.appendChild(el);
   }
+
+  el.textContent = "⏱ 00:00";
 
   TIMER.interval = setInterval(() => {
     const ms = Date.now() - TIMER.start;
     const s = Math.floor(ms / 1000);
     const m = Math.floor(s / 60);
     const ss = s % 60;
-    document.getElementById("exam-timer").textContent =
-      `⏱ ${String(m).padStart(2,"0")}:${String(ss).padStart(2,"0")}`;
+    const t = `${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+    const box = document.getElementById("exam-timer");
+    if (box) box.textContent = "⏱ " + t;
   }, 1000);
 }
 
 function stopTimer() {
-  if (TIMER.interval) clearInterval(TIMER.interval);
+  if (TIMER.interval) {
+    clearInterval(TIMER.interval);
+    TIMER.interval = null;
+  }
   const el = document.getElementById("exam-timer");
   if (el) el.remove();
 }
@@ -246,11 +308,12 @@ function renderSidebarCells() {
     if (estado === "ok") cls += " sb-ok";
     if (estado === "bad") cls += " sb-bad";
 
-    return `<div class="${cls}" onclick="irAPregunta(${idx})">${idx+1}</div>`;
+    return `<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`;
   }).join("");
 }
 
 function irAPregunta(idx) {
+  if (idx < 0 || idx >= CURRENT.list.length) return;
   CURRENT.i = idx;
   renderPregunta();
 }
@@ -259,10 +322,11 @@ function irAPregunta(idx) {
    Helpers
    ========================================================== */
 const RESP_MARCADAS = {};
-function setRespuestaMarcada(id, idx){ RESP_MARCADAS[id] = idx; }
-function getRespuestaMarcada(id){ return RESP_MARCADAS[id] ?? null; }
+function setRespuestaMarcada(id, idx) { RESP_MARCADAS[id] = idx; }
+function getRespuestaMarcada(id) { return RESP_MARCADAS[id] ?? null; }
 
-function getMateriaNombreForQuestion(q){
+function getMateriaNombreForQuestion(q) {
+  if (!q || !q.materia) return "";
   const mat = BANK.subjects.find(s => s.slug === q.materia);
   return mat ? mat.name : q.materia;
 }
