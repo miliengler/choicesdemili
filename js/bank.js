@@ -59,7 +59,6 @@ try {
   if (savedBank) {
     const parsed = JSON.parse(savedBank);
 
-    // Fusionar banco guardado en BANK actual
     BANK.questions  = parsed.questions || [];
     BANK.loaded     = parsed.loaded || false;
 
@@ -141,22 +140,33 @@ async function loadFileIfExists(ruta, tipo, ids, exam = null) {
 }
 
 /* ==========================================================
-   🧬 Normalizar pregunta
+   🧬 Normalizar pregunta (versión completa)
    ========================================================== */
 
 function normalizeQuestion(q, tipo, exam) {
+
+  // materia / submateria
   q.materia    = normalize(q.materia || "otras");
   q.submateria = normalize(q.submateria || "otras");
 
-  if (!BANK.subsubjects[q.materia])
-    BANK.subsubjects[q.materia] = [ "Otras preguntas" ];
+  if (!BANK.subsubjects[q.materia]) {
+    BANK.subsubjects[q.materia] = ["Otras preguntas"];
+  }
 
-  if (!Array.isArray(q.opciones)) q.opciones = [];
+  // -------- OPCIONES: reparar TODOS los formatos posibles --------
+  q.opciones = getOpcionesArray(q);
+
+  // -------- CORRECTA -> índice estandarizado --------
+  q.correcta = getCorrectIndex(q);
+
+  // extras
   if (!q.explicacion) q.explicacion = null;
   if (!q.imagenes) q.imagenes = [];
 
+  // tipo
   q.tipo = tipo;
 
+  // metadatos de examen
   if (tipo === "examen" && exam) {
     q.examen  = exam.id;
     q.anio    = exam.anio;
@@ -166,6 +176,50 @@ function normalizeQuestion(q, tipo, exam) {
     q.anio    = null;
     q.oficial = false;
   }
+}
+
+/* ==========================================================
+   🔧 Helpers para normalizar opciones
+   ========================================================== */
+
+// Convierte cualquier formato → array estándar
+function getOpcionesArray(q) {
+
+  // 1) Ya es array
+  if (Array.isArray(q.opciones)) {
+    return q.opciones.slice();
+  }
+
+  // 2) Objeto tipo { a:"", b:"", c:"", d:"" }
+  if (q.opciones && typeof q.opciones === "object") {
+    const keys = ["a","b","c","d"];
+    const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
+    if (arr.length) return arr;
+  }
+
+  // 3) Campos sueltos opcion_a / opcion_b / ...
+  if (q.opcion_a || q.opcion_b || q.opcion_c || q.opcion_d) {
+    return [q.opcion_a, q.opcion_b, q.opcion_c, q.opcion_d]
+      .filter(v => v != null && v !== "");
+  }
+
+  // 4) Último recurso
+  return [];
+}
+
+// Convierte letra o número → índice estándar
+function getCorrectIndex(q) {
+  if (typeof q.correcta === "number") {
+    return q.correcta;
+  }
+
+  if (typeof q.correcta === "string") {
+    const map = { a:0, b:1, c:2, d:3 };
+    const key = q.correcta.trim().toLowerCase();
+    if (map[key] != null) return map[key];
+  }
+
+  return 0; // fallback seguro
 }
 
 /* ==========================================================
@@ -195,7 +249,7 @@ function getQuestionById(id) {
    ========================================================== */
 
 function initApp() {
-  renderHome(); // Se carga banco guardado si existe
+  renderHome();
 }
 
 /* ==========================================================
@@ -207,11 +261,8 @@ async function recargarBancos() {
   if (!ok) return;
 
   await loadAllBanks();
-
-  // 🟢 Guardar el banco cargado
   localStorage.setItem("MEbank_BANK_v1", JSON.stringify(BANK));
 
   alert("✔ Bancos cargados");
-
   renderHome();
 }
