@@ -1,0 +1,3059 @@
+[
+  {
+    "id": "obstetricia-009-001",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 30 años, G2P1, con diagnóstico previo de diabetes tipo 1. Consulta a las 8 semanas de gestación. ¿Cuál es el objetivo de HbA1c recomendado en la planificación y primer trimestre?",
+    "opciones": {
+      "a": "< 7,5 %",
+      "b": "< 7 %",
+      "c": "< 6,5 %",
+      "d": "< 6 % si es posible sin hipoglucemias"
+    },
+    "correcta": "d",
+    "explicacion": "En diabetes pregestacional se recomienda optimizar el control glucémico con HbA1c alrededor de 6–6,5 %, y si es posible sin hipoglucemias, incluso <6 %, para reducir malformaciones y complicaciones.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-002",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada de 28 semanas sin antecedentes, con test de O’Sullivan (50 g) de 1 h: 152 mg/dL. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Repetir test de O’Sullivan en 2 semanas",
+      "b": "Diagnosticar diabetes gestacional",
+      "c": "Solicitar TOTG con 75 g para confirmación",
+      "d": "Indicar solo dieta sin estudios adicionales"
+    },
+    "correcta": "c",
+    "explicacion": "Un test de O’Sullivan ≥140 mg/dL es patológico y debe completarse el diagnóstico con prueba de tolerancia oral a la glucosa de 75 g según criterios vigentes.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-003",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Según los criterios de 75 g, ¿cuál de los siguientes valores aislados permite diagnosticar diabetes gestacional?",
+    "opciones": {
+      "a": "Ayunas 88 mg/dL",
+      "b": "1 h: 160 mg/dL",
+      "c": "2 h: 145 mg/dL",
+      "d": "Ayunas 95 mg/dL"
+    },
+    "correcta": "d",
+    "explicacion": "Con TOTG 75 g, se diagnostica DG si alguno de estos puntos es anormal: ayuno ≥92, 1 h ≥180 o 2 h ≥153 mg/dL. Un ayuno de 95 mg/dL es diagnóstico.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-004",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con diabetes gestacional en tratamiento dietético, bien controlada, sin otras comorbilidades. Feto adecuado para la edad gestacional. ¿Cuál es la conducta respecto al momento del parto?",
+    "opciones": {
+      "a": "Inducir a las 37 semanas",
+      "b": "Programar cesárea a las 38 semanas",
+      "c": "Permitir evolución espontánea hasta 40–41 semanas",
+      "d": "Inducir entre las 39 y 40 semanas si no entra en trabajo de parto"
+    },
+    "correcta": "d",
+    "explicacion": "En DG bien controlada con dieta (A1), se puede esperar hasta término, recomendándose inducción alrededor de las 39–40 semanas si no se desencadena el trabajo de parto.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-005",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con DBT tipo 2 pregestacional en tratamiento previo con metformina. Cursa 10 semanas. ¿Qué conducta terapéutica se recomienda en el embarazo?",
+    "opciones": {
+      "a": "Mantener solo metformina",
+      "b": "Suspender fármacos e indicar solo dieta",
+      "c": "Pasar a insulinoterapia ajustando dosis",
+      "d": "Agregar sulfonilureas al esquema previo"
+    },
+    "correcta": "c",
+    "explicacion": "En DBT pregestacional el tratamiento de elección es insulina. La mayoría de las guías recomiendan pasar a insulinoterapia en el embarazo, aun si usaba orales previamente.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-006",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 32 semanas con TA 150/95 mmHg en dos tomas separadas por 4 h. Proteinuria en orina de 24 h: 400 mg. Sin síntomas ni alteraciones de laboratorio. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Hipertensión crónica",
+      "b": "Preeclampsia sin criterios de severidad",
+      "c": "Preeclampsia con criterios de severidad",
+      "d": "Hipertensión gestacional aislada"
+    },
+    "correcta": "b",
+    "explicacion": "TA ≥140/90 luego de las 20 semanas con proteinuria ≥300 mg/24 h corresponde a preeclampsia; no presenta criterios de severidad (TA ≥160/110, alteraciones orgánicas o fetales).",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-007",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada de 34 semanas con HTA crónica, ahora TA 165/110 mmHg, cefalea intensa y fosfenos. ¿Cuál es la conducta inicial?",
+    "opciones": {
+      "a": "Indicar reposo domiciliario y control en 48 h",
+      "b": "Iniciar tratamiento antihipertensivo oral y alta",
+      "c": "Internar, iniciar antihipertensivos EV y sulfato de magnesio",
+      "d": "Inducir parto inmediato sin estabilizar"
+    },
+    "correcta": "c",
+    "explicacion": "TA ≥160/110 con síntomas neurológicos son criterios de severidad. Requiere internación, control de la TA y profilaxis anticonvulsivante con sulfato de magnesio.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-008",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "¿Cuál de los siguientes fármacos es de elección como antihipertensivo de mantenimiento en el embarazo?",
+    "opciones": {
+      "a": "Enalapril",
+      "b": "Metildopa",
+      "c": "Captopril",
+      "d": "Losartán"
+    },
+    "correcta": "b",
+    "explicacion": "Metildopa, labetalol y nifedipina son drogas de elección en embarazo. Los IECAs y ARA II están contraindicados por teratogenicidad y fetopatía.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-009",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 35 semanas con preeclampsia severa, trombocitopenia, aumento de transaminasas y dolor en hipocondrio derecho. ¿Qué diagnóstico complica su cuadro?",
+    "opciones": {
+      "a": "Síndrome HELLP",
+      "b": "DPPNI",
+      "c": "Colecistitis aguda",
+      "d": "Hepatitis viral aguda"
+    },
+    "correcta": "a",
+    "explicacion": "El síndrome HELLP se caracteriza por hemólisis, enzimas hepáticas elevadas y plaquetopenia, típicamente en el contexto de preeclampsia severa.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-010",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 33 semanas con preeclampsia severa y síndrome HELLP. ¿Cuál es la conducta de elección?",
+    "opciones": {
+      "a": "Manejo expectante hasta 37 semanas",
+      "b": "Interrupción del embarazo luego de estabilizar a la madre",
+      "c": "Solo sulfato de magnesio hasta el parto espontáneo",
+      "d": "Suspender todo tratamiento y controlar evolución"
+    },
+    "correcta": "b",
+    "explicacion": "El HELLP es indicación de interrupción del embarazo, priorizando estabilización materna (TA, magnesio, corticoides si hay tiempo) y luego finalizar la gestación.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-011",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de cardiopatía valvular estable, clase funcional I, con buena función. Cursa embarazo de 10 semanas. ¿Cuál es la recomendación general respecto al control?",
+    "opciones": {
+      "a": "No requiere controles especiales",
+      "b": "Control conjunto obstetricia–cardiología durante todo el embarazo",
+      "c": "Indicar interrupción del embarazo",
+      "d": "Restringir completamente la actividad física desde el primer trimestre"
+    },
+    "correcta": "b",
+    "explicacion": "Las cardiopatías en embarazo requieren manejo interdisciplinario, incluso en clase funcional I, con controles obstétricos y cardiológicos programados.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-012",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En una gestante con asma persistente leve, ¿cuál es el tratamiento de mantenimiento de elección?",
+    "opciones": {
+      "a": "Salmeterol solo",
+      "b": "Corticoide inhalado a baja dosis",
+      "c": "Corticoide sistémico diario",
+      "d": "Suspender toda medicación durante el embarazo"
+    },
+    "correcta": "b",
+    "explicacion": "Los corticoides inhalados son seguros y recomendados como tratamiento de mantenimiento del asma persistente durante el embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-013",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 18 semanas con TSH suprimida y T4 libre elevada. Sin oftalmopatía. Antecedente de hipertiroidismo previo. ¿Cuál es el antitiroideo de elección en el segundo trimestre?",
+    "opciones": {
+      "a": "Metimazol (tiamazol)",
+      "b": "Propiltiouracilo",
+      "c": "Yodo radiactivo",
+      "d": "Suspender todo tratamiento"
+    },
+    "correcta": "a",
+    "explicacion": "En 1° trimestre se prefiere propiltiouracilo por menor teratogenicidad; luego se recomienda cambiar a metimazol/tiamazol en 2°–3° trimestre por menor hepatotoxicidad.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-014",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Respecto al hipotiroidismo en el embarazo, ¿cuál es la afirmación correcta?",
+    "opciones": {
+      "a": "La levotiroxina está contraindicada",
+      "b": "Los requerimientos de levotiroxina suelen aumentar",
+      "c": "Debe suspenderse la medicación al inicio del embarazo",
+      "d": "No se requiere controlar TSH durante la gestación"
+    },
+    "correcta": "b",
+    "explicacion": "El embarazo aumenta los requerimientos de hormona tiroidea; suele requerirse aumentar la dosis de levotiroxina y controlar TSH periódicamente.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-015",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con lupus eritematoso sistémico (LES) en remisión, embarazada de 10 semanas. ¿Cuál de los siguientes fármacos puede mantenerse durante la gestación?",
+    "opciones": {
+      "a": "Metotrexato",
+      "b": "Leflunomida",
+      "c": "Hidroxicloroquina",
+      "d": "Ciclofosfamida"
+    },
+    "correcta": "c",
+    "explicacion": "La hidroxicloroquina es segura y se recomienda continuarla porque reduce el riesgo de brotes en el LES. Metotrexato, leflunomida y ciclofosfamida son teratógenos.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-016",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con síndrome antifosfolipídico (SAF) y dos abortos previos en primer trimestre. Embarazada de 7 semanas. ¿Cuál es el tratamiento de elección para disminuir el riesgo de nuevas pérdidas?",
+    "opciones": {
+      "a": "Aspirina en baja dosis + heparina de bajo peso molecular",
+      "b": "Metilprednisona en altas dosis",
+      "c": "Solo aspirina en baja dosis",
+      "d": "Solo ácido fólico"
+    },
+    "correcta": "a",
+    "explicacion": "En SAF obstétrico se recomienda aspirina en baja dosis asociada a heparina de bajo peso molecular para reducir el riesgo de pérdida gestacional y complicaciones placentarias.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-017",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante obesa (IMC 36) sin otras comorbilidades. ¿Cuál de las siguientes complicaciones obstétricas está aumentada en este contexto?",
+    "opciones": {
+      "a": "Embarazo ectópico",
+      "b": "Preeclampsia y diabetes gestacional",
+      "c": "Rotura uterina espontánea en primigesta",
+      "d": "Polihidramnios aislado sin otras causas"
+    },
+    "correcta": "b",
+    "explicacion": "La obesidad aumenta el riesgo de preeclampsia, diabetes gestacional, macrosomía, cesárea y complicaciones trombóticas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-018",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada de 24 semanas con enfermedad renal crónica, creatinina basal elevada y proteinuria. ¿Cuál es la complicación obstétrica más frecuente?",
+    "opciones": {
+      "a": "Embarazo ectópico",
+      "b": "Preeclampsia y RCIU",
+      "c": "Polihidramnios",
+      "d": "Embarazo molar"
+    },
+    "correcta": "b",
+    "explicacion": "La enfermedad renal crónica se asocia a mayor riesgo de preeclampsia, RCIU, parto pretérmino y pérdida gestacional.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-019",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con trombofilia hereditaria de alto riesgo (ej.: déficit de antitrombina) y antecedente de TEP previo. Embarazada de 9 semanas. ¿Cuál es la conducta en relación con la anticoagulación?",
+    "opciones": {
+      "a": "No indicar nada si está asintomática",
+      "b": "Aspirina y nada más",
+      "c": "Heparina de bajo peso molecular a dosis terapéuticas",
+      "d": "Anticoagulación oral durante todo el embarazo"
+    },
+    "correcta": "c",
+    "explicacion": "En trombofilias de alto riesgo con eventos previos se indica HBPM a dosis terapéuticas durante el embarazo y puerperio, evitando anticoagulantes orales por teratogenicidad.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-020",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 30 semanas con DBT gestacional insulinorrequiriente (A2), feto estimado 4.000 g. ¿Cuál es la conducta obstétrica más adecuada?",
+    "opciones": {
+      "a": "Permitir evolución hasta 41 semanas",
+      "b": "Programar parto a término y considerar cesárea si se estima macrosomía",
+      "c": "Interrumpir a las 34 semanas por riesgo de IUFD",
+      "d": "Esperar trabajo de parto espontáneo independientemente del peso fetal"
+    },
+    "correcta": "b",
+    "explicacion": "En DG A2 con sospecha de macrosomía se recomienda finalizar a término (alrededor de 38–39 semanas) y valorar la indicación de cesárea si el peso estimado es elevado (riesgo de distocia de hombros).",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-021",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con epilepsia controlada con ácido valproico. Consulta por deseo de embarazo. ¿Cuál es la recomendación más adecuada?",
+    "opciones": {
+      "a": "Mantener ácido valproico sin cambios",
+      "b": "Suspender toda medicación al quedar embarazada",
+      "c": "Cambiar a un antiepiléptico menos teratógeno antes de la concepción",
+      "d": "Iniciar ácido valproico en el segundo trimestre"
+    },
+    "correcta": "c",
+    "explicacion": "El ácido valproico es teratógeno. Debe planificarse cambiar a otro antiepiléptico más seguro antes de la concepción, intentando monoterapia a la menor dosis eficaz.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-022",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En relación con la HTA crónica en el embarazo, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Suspender todo antihipertensivo al inicio del embarazo",
+      "b": "Cambiar los IECAs/ARA II por drogas seguras como metildopa o labetalol",
+      "c": "Mantener enalapril hasta el tercer trimestre",
+      "d": "Tratar solo si la TA supera 170/110 mmHg"
+    },
+    "correcta": "b",
+    "explicacion": "Los IECAs y ARA II están contraindicados. Deben reemplazarse por fármacos seguros en embarazo, como metildopa, labetalol o nifedipina.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-023",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante fumadora de 20 cigarrillos/día. ¿Cuál de las siguientes complicaciones fetales está más asociada al tabaquismo?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "RCIU y bajo peso al nacer",
+      "c": "Polihidramnios",
+      "d": "Embarazo molar"
+    },
+    "correcta": "b",
+    "explicacion": "El tabaquismo se asocia a RCIU, bajo peso, parto pretérmino, DPPNI y muerte fetal intrauterina, entre otras complicaciones.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-024",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de cardiopatía severa, clase funcional IV. ¿Cuál es la recomendación general respecto al embarazo?",
+    "opciones": {
+      "a": "Puede cursarlo sin riesgo adicional",
+      "b": "Se desaconseja el embarazo por alto riesgo materno",
+      "c": "Solo requiere control obstétrico habitual",
+      "d": "Se recomienda cesárea electiva en todos los casos"
+    },
+    "correcta": "b",
+    "explicacion": "En cardiopatía clase funcional IV el embarazo implica riesgo muy alto de morbimortalidad materna; se desaconseja la gestación y debe recomendarse consejería preconcepcional.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-025",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con obesidad mórbida (IMC ≥40). Además del mayor riesgo de preeclampsia y DG, ¿qué complicación periparto está aumentada?",
+    "opciones": {
+      "a": "Hemorragia posparto y cesárea",
+      "b": "Embarazo ectópico roto",
+      "c": "Incompetencia cervical",
+      "d": "Útero bicorne"
+    },
+    "correcta": "a",
+    "explicacion": "La obesidad mórbida se asocia a mayor tasa de cesárea, hemorragia posparto, complicaciones anestésicas y tromboembolismo.",
+    "oficial": false
+  },
+  
+  {
+    "id": "obstetricia-009-026",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 29 semanas con hipertensión gestacional. TA 150/90. Sin proteinuria, labs normales. Feto adecuado. ¿Cuál es el control recomendado?",
+    "opciones": {
+      "a": "Control semanal con TA, proteinuria y ecografía cada 3 semanas",
+      "b": "Internación obligatoria hasta el parto",
+      "c": "Inducción inmediata",
+      "d": "Suspender controles hasta las 36 semanas"
+    },
+    "correcta": "a",
+    "explicacion": "La hipertensión gestacional requiere controles estrictos materno-fetales para detectar evolución a preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-027",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente diabética tipo 1 con 26 semanas. Glucemias en ayunas 110–120 mg/dL pese a insulina. ¿Cuál es el objetivo de glucemia en ayuno durante el embarazo?",
+    "opciones": {
+      "a": "< 140 mg/dL",
+      "b": "< 120 mg/dL",
+      "c": "< 95 mg/dL",
+      "d": "< 80 mg/dL"
+    },
+    "correcta": "c",
+    "explicacion": "El objetivo glucémico en embarazo es ayuno <95 mg/dL para reducir complicaciones fetales.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-028",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En DG tratada con insulina (A2), ¿cuál es la complicación fetal más relacionada a un mal control glucémico?",
+    "opciones": {
+      "a": "Microcefalia",
+      "b": "Macrosomía",
+      "c": "Hipoplasia pulmonar",
+      "d": "Restricción del crecimiento severa"
+    },
+    "correcta": "b",
+    "explicacion": "La hiperglucemia materna genera hiperinsulinismo fetal → macrosomía.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-029",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con preeclampsia sin criterios de severidad, 36 semanas, feto adecuado. ¿Cuál es la conducta recomendada según guías nacionales?",
+    "opciones": {
+      "a": "Continuar embarazo hasta 40 semanas",
+      "b": "Interrumpir entre 37 y 37+6 semanas",
+      "c": "Esperar espontáneo hasta las 41 semanas",
+      "d": "Inducir inmediatamente a las 36 semanas"
+    },
+    "correcta": "b",
+    "explicacion": "La recomendación es finalizar entre las 37–38 semanas para reducir morbimortalidad materno-fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-030",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con HTA crónica. TA controlada con labetalol. ¿Cuál es el riesgo obstétrico más elevado?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "Preeclampsia superpuesta",
+      "c": "Isoinmunización",
+      "d": "Infecciones urinarias"
+    },
+    "correcta": "b",
+    "explicacion": "La complicación más frecuente en HTA crónica es la preeclampsia superpuesta.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-031",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de eclampsia en embarazo previo. ¿Cuál es la profilaxis recomendada desde el primer trimestre?",
+    "opciones": {
+      "a": "Heparina",
+      "b": "Aspirina en baja dosis",
+      "c": "Progesterona vaginal",
+      "d": "Calcio intravenoso"
+    },
+    "correcta": "b",
+    "explicacion": "Toda paciente con antecedente de preeclampsia severa/eclampsia debe recibir ASA 100–150 mg desde 12–16 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-032",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con LES controlado, sin nefritis. ANA+ y anti-Ro+. ¿Cuál es la principal complicación fetal?",
+    "opciones": {
+      "a": "Microcefalia",
+      "b": "Bloqueo AV congénito",
+      "c": "Trombocitopenia severa",
+      "d": "RCIU tipo I"
+    },
+    "correcta": "b",
+    "explicacion": "Los anticuerpos anti-Ro/SSA pueden causar bloqueo AV congénito.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-033",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "¿Cuál de los siguientes es un criterio de severidad en preeclampsia?",
+    "opciones": {
+      "a": "Proteinuria 300 mg/24 h",
+      "b": "TA 150/95",
+      "c": "Trombocitopenia <100.000",
+      "d": "Edema de miembros inferiores"
+    },
+    "correcta": "c",
+    "explicacion": "Plaquetas <100.000, TA ≥160/110, creatinina elevada, síntomas neurológicos o epigastralgia son criterios de severidad.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-034",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En DBT tipo 1 embarazada, ¿cuál es el principal riesgo fetal durante el primer trimestre si el control metabólico es deficiente?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "Hipertrofia septal",
+      "c": "Malformaciones congénitas",
+      "d": "Hipoglucemia neonatal"
+    },
+    "correcta": "c",
+    "explicacion": "La organogénesis se afecta por hiperglucemia en 1° trimestre → malformaciones.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-035",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con asma moderada persistente. Presenta exacerbación aguda. ¿Cuál es el tratamiento inicial?",
+    "opciones": {
+      "a": "Sulfato de magnesio EV",
+      "b": "Betametasona IM",
+      "c": "Salbutamol inhalado + oxígeno",
+      "d": "Suspender inhaladores"
+    },
+    "correcta": "c",
+    "explicacion": "El manejo inicial incluye broncodilatador de rescate y oxígeno suplementario.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-036",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con fibrilación auricular previa, anticoagulada con warfarina. Embarazo de 6 semanas. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Mantener warfarina todo el embarazo",
+      "b": "Suspender warfarina y pasar a heparina",
+      "c": "Suspender toda anticoagulación",
+      "d": "Cambiar a AAS en monoterapia"
+    },
+    "correcta": "b",
+    "explicacion": "La warfarina es teratógena. Debe cambiarse a HBPM o heparina no fraccionada.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-037",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipotiroidismo subclínico y TSH elevada. ¿Cuál es el tratamiento?",
+    "opciones": {
+      "a": "No requiere tratamiento",
+      "b": "Levotiroxina ajustada según TSH",
+      "c": "Propiltiouracilo",
+      "d": "Yodo radiactivo"
+    },
+    "correcta": "b",
+    "explicacion": "Todo hipotiroidismo en embarazo debe tratarse para asegurar función fetal adecuada.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-038",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con riñón único funcional. ¿Cuál es el riesgo obstétrico principal?",
+    "opciones": {
+      "a": "Placenta previa",
+      "b": "Preeclampsia",
+      "c": "Macrosomía",
+      "d": "Polihidramnios"
+    },
+    "correcta": "b",
+    "explicacion": "La función renal limitada aumenta riesgo de HTA y preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-039",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En DG, ¿qué valor posprandial es objetivo terapéutico?",
+    "opciones": {
+      "a": "<160 mg/dL",
+      "b": "<140 mg/dL a 1 h",
+      "c": "<200 mg/dL",
+      "d": "<120 mg/dL"
+    },
+    "correcta": "b",
+    "explicacion": "Objetivos: 1 h <140 mg/dL, 2 h <120 mg/dL.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-040",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de trombosis venosa profunda por mutación Factor V Leiden heterocigota. Sin eventos previos. Embarazo 8 semanas. ¿Conducta?",
+    "opciones": {
+      "a": "HBPM dosis profiláctica",
+      "b": "HBPM terapéutica",
+      "c": "AAS solamente",
+      "d": "Ninguna conducta"
+    },
+    "correcta": "a",
+    "explicacion": "En trombofilias de riesgo intermedio sin eventos, se indica HBPM profiláctica.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-041",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con miocardiopatía hipertrófica. Asintomática. ¿Cuál es la vía de parto recomendada?",
+    "opciones": {
+      "a": "Cesárea obligatoria",
+      "b": "Parto vaginal si estable",
+      "c": "Cesárea a las 34 semanas",
+      "d": "Parto en posición de litotomía estricta"
+    },
+    "correcta": "b",
+    "explicacion": "El parto vaginal es posible si la paciente está estable hemodinámicamente.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-042",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "¿Qué fármaco está absolutamente contraindicado en asma durante el embarazo?",
+    "opciones": {
+      "a": "Salbutamol",
+      "b": "Formoterol",
+      "c": "Prostaglandina F2 alfa",
+      "d": "Budesonida"
+    },
+    "correcta": "c",
+    "explicacion": "La PGF2α (carboprost) puede causar broncoespasmo severo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-043",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente obesa con IMC 41. ¿Recomendación nutricional inicial?",
+    "opciones": {
+      "a": "Bajar 10 kg durante el embarazo",
+      "b": "Restringir carbohidratos al 5%",
+      "c": "Ganancia recomendada 5–9 kg",
+      "d": "Dieta hiperproteica sin controles"
+    },
+    "correcta": "c",
+    "explicacion": "Para IMC ≥30, ganancia adecuada 5–9 kg.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-044",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Hipertiroidismo mal controlado en embarazo puede causar:",
+    "opciones": {
+      "a": "RCIU y parto pretérmino",
+      "b": "Macrosomía",
+      "c": "Polihidramnios",
+      "d": "Acretismo"
+    },
+    "correcta": "a",
+    "explicacion": "El hipertiroidismo no tratado aumenta RCIU, PP y preeclampsia.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-045",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DBT pregestacional presenta hipoglucemias frecuentes. ¿Ajuste recomendado?",
+    "opciones": {
+      "a": "Reducir dosis de insulina basal",
+      "b": "Suspender bolo preprandial",
+      "c": "Subir dosis total diaria",
+      "d": "Indicar dieta hipocalórica"
+    },
+    "correcta": "a",
+    "explicacion": "Las hipoglucemias suelen deberse a exceso de basal o comidas inadecuadas; se ajusta basal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-046",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En HTA crónica, ¿cuál estudio debe realizarse en el primer trimestre?",
+    "opciones": {
+      "a": "Fondo de ojo y función renal",
+      "b": "Amniocentesis",
+      "c": "Test de O’Sullivan",
+      "d": "Perfil biofísico"
+    },
+    "correcta": "a",
+    "explicacion": "Es esencial evaluar daño de órgano blanco.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-047",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES activo. Presenta proteinuria importante en 20 semanas. ¿Qué ayuda a diferenciar nefritis lúpica de preeclampsia?",
+    "opciones": {
+      "a": "Complemento bajo y anti-DNA alto",
+      "b": "Hiperreflexia",
+      "c": "TA normal",
+      "d": "Edema"
+    },
+    "correcta": "a",
+    "explicacion": "Los marcadores inmunológicos orientan a nefritis lúpica.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-048",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En paciente con FA y alto riesgo trombótico, ¿cuándo se puede reiniciar warfarina posparto?",
+    "opciones": {
+      "a": "Inmediatamente",
+      "b": "A las 6 h posparto",
+      "c": "A las 24 h si no hay sangrado",
+      "d": "A los 7 días"
+    },
+    "correcta": "c",
+    "explicacion": "Se reinicia una vez controlado el puerperio inmediato y sin sangrado.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-049",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DG A1. Feto con peso estimado 4200 g. ¿Vía del nacimiento recomendada?",
+    "opciones": {
+      "a": "Parto vaginal siempre",
+      "b": "Cesárea electiva por macrosomía",
+      "c": "Inducción inmediata",
+      "d": "Esperar trabajo espontáneo sin considerar peso"
+    },
+    "correcta": "b",
+    "explicacion": "Macrosomía >4–4,2 kg aumenta riesgo de distocia → considerar cesárea.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-050",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Asma severa en embarazo. ¿Qué corticoide sistémico es seguro si se requiere?",
+    "opciones": {
+      "a": "Dexametasona EV",
+      "b": "Prednisona",
+      "c": "Betametasona diaria",
+      "d": "Metilprednisolona subcutánea"
+    },
+    "correcta": "b",
+    "explicacion": "La prednisona es segura porque la placenta inactiva parte de la dosis.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-051",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 32 semanas con HTA gestacional. TA 150/95. Proteinuria negativa. Presenta cefalea leve sin fotofobia. Laboratorio normal. ¿Qué manejo corresponde?",
+    "opciones": {
+      "a": "Inducción inmediata del parto",
+      "b": "Internación para observación inicial",
+      "c": "No requiere controles hasta las 36 semanas",
+      "d": "Iniciar sulfato de magnesio"
+    },
+    "correcta": "b",
+    "explicacion": "Toda paciente con síntomas, aunque inespecíficos, requiere observación para descartar progresión a preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-052",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente diabética tipo 2 mal controlada en el primer trimestre. ¿Qué riesgo específico aumenta para el feto?",
+    "opciones": {
+      "a": "Retardo de crecimiento",
+      "b": "Malformaciones cardiacas y del tubo neural",
+      "c": "Sufrimiento agudo",
+      "d": "RCIU simétrico"
+    },
+    "correcta": "b",
+    "explicacion": "Mal control glucémico en organogénesis aumenta defectos cardíacos y del tubo neural.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-053",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Preeclampsia severa diagnosticada a las 30 semanas. TA 170/110, cefalea y epigastralgia. Feto adecuado. ¿Cuál es la conducta recomendada?",
+    "opciones": {
+      "a": "Expectante hasta las 36 semanas",
+      "b": "Interrupción inmediata luego de estabilización",
+      "c": "Progesterona para prolongar la gestación",
+      "d": "Reposo domiciliario y controles semanales"
+    },
+    "correcta": "b",
+    "explicacion": "La preeclampsia severa es indicación de interrupción luego de estabilización materna y esquema MgSO4.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-054",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con historia de nefropatía lúpica. En el embarazo actual presenta presión normal, aumento de proteinuria y C3/C4 disminuidos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Preeclampsia pura",
+      "b": "Nefropatía lúpica en reactivación",
+      "c": "Síndrome HELLP",
+      "d": "Infección urinaria"
+    },
+    "correcta": "b",
+    "explicacion": "Los descensos de complemento orientan a reactivación lúpica, no a preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-055",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DMG A1. ¿Cuál es el principal predictor de macrosomía fetal?",
+    "opciones": {
+      "a": "Edad materna",
+      "b": "Ganas de peso excesivas",
+      "c": "Nivel de HbA1c en 3° trimestre",
+      "d": "Talla materna baja"
+    },
+    "correcta": "c",
+    "explicacion": "La HbA1c del tercer trimestre refleja control metabólico y riesgo de hiperinsulinismo fetal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-056",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 36 semanas con HTA crónica + proteinuria nueva. TA 155/100. ¿Qué diagnóstico orienta este hallazgo?",
+    "opciones": {
+      "a": "Preeclampsia superpuesta",
+      "b": "LES activo",
+      "c": "HIPOMEG",
+      "d": "RCIU constitucional"
+    },
+    "correcta": "a",
+    "explicacion": "Aparición de proteinuria en HTA crónica define preeclampsia superpuesta.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-057",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En paciente embarazada con asma controlada, ¿qué medicación de mantenimiento es la más recomendada?",
+    "opciones": {
+      "a": "Corticoide inhalado",
+      "b": "Beta bloqueantes",
+      "c": "Ipratropio en monoterapia",
+      "d": "Metilxantinas"
+    },
+    "correcta": "a",
+    "explicacion": "Los corticoides inhalados son primera línea de mantenimiento en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-058",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con hipertiroidismo por enfermedad de Graves presenta bocio y TSH suprimida. 10 semanas. ¿Qué tratamiento inicial se recomienda?",
+    "opciones": {
+      "a": "Levotiroxina",
+      "b": "Propiltiouracilo",
+      "c": "Metimazol desde el inicio",
+      "d": "Yodo radiactivo"
+    },
+    "correcta": "b",
+    "explicacion": "En el 1° trimestre se indica PTU para evitar teratogenicidad del metimazol.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-059",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con antecedentes de trombofilia y pérdida gestacional tardía. ¿Qué tratamiento reduce riesgo de recurrencia?",
+    "opciones": {
+      "a": "AAS + HBPM desde diagnóstico de embarazo",
+      "b": "Solo AAS",
+      "c": "Solo HBPM",
+      "d": "Corticoides"
+    },
+    "correcta": "a",
+    "explicacion": "AAS + HBPM reduce riesgo de complicaciones placentarias en trombofilias.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-060",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DBT tipo 1 en trabajo de parto. ¿Cuál es el objetivo de glucemia intraparto?",
+    "opciones": {
+      "a": "70–110 mg/dL",
+      "b": "80–160 mg/dL",
+      "c": "120–180 mg/dL",
+      "d": "<60 mg/dL"
+    },
+    "correcta": "a",
+    "explicacion": "El objetivo es glucemia estricta para prevenir hipoglucemia neonatal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-061",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con sospecha de HELLP. Plaquetas 75.000, AST/ALT elevadas, LDH alta. 34 semanas. Feto vivo. ¿Qué hacer?",
+    "opciones": {
+      "a": "Esteroides para maduración y esperar 48 h",
+      "b": "Inducción inmediata del parto",
+      "c": "Reposo y control en 24 h",
+      "d": "Suspender vigilancia fetal"
+    },
+    "correcta": "b",
+    "explicacion": "El HELLP es indicación de finalización inmediata del embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-062",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con asma grave usa corticoides inhalados y salbutamol. Presenta necesidad de corticoide sistémico. ¿Cuál es seguro?",
+    "opciones": {
+      "a": "Prednisona",
+      "b": "Dexametasona diaria",
+      "c": "Metilprednisolona subcutánea",
+      "d": "Indometacina"
+    },
+    "correcta": "a",
+    "explicacion": "Prednisona es la opción sistémica más segura debido a inactivación placentaria.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-063",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con HTA crónica. ¿Qué antihipertensivo está contraindicado?",
+    "opciones": {
+      "a": "Labetalol",
+      "b": "Metildopa",
+      "c": "IECA",
+      "d": "Nifedipina"
+    },
+    "correcta": "c",
+    "explicacion": "IECA y ARA-II son teratogénicos: contraindicación absoluta.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-064",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Presenta episodios de hipoglucemia severa durante el embarazo. ¿Cuál es la recomendación inmediata?",
+    "opciones": {
+      "a": "Reducir basal nocturna",
+      "b": "Suspender todos los bolos",
+      "c": "Aumentar insulina total",
+      "d": "Inducir parto"
+    },
+    "correcta": "a",
+    "explicacion": "La hipoglucemia materna suele relacionarse a exceso de basal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-065",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con palpitaciones y soplo sistólico leve. Ecocardiograma normal. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Indicar betabloqueantes",
+      "b": "Suspender actividad física",
+      "c": "Reasegurar, hallazgo fisiológico",
+      "d": "Solicitar RMN cardíaca"
+    },
+    "correcta": "c",
+    "explicacion": "Los soplos fisiológicos son comunes por aumento del volumen minuto.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-066",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DMG A1. ¿Qué control fetal se indica a partir de las 32 semanas?",
+    "opciones": {
+      "a": "Ninguno",
+      "b": "Perfil biofísico semanal",
+      "c": "Monitoreo fetal anteparto",
+      "d": "Doppler umbilical cada 72 h"
+    },
+    "correcta": "c",
+    "explicacion": "En DMG se indica NST o monitoreo fetal desde 32–34 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-067",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Sospecha de crisis hipertensiva severa. TA 180/120. ¿Cuál es el fármaco de elección para descenso inmediato?",
+    "opciones": {
+      "a": "Metildopa",
+      "b": "Hidralazina EV",
+      "c": "IECA",
+      "d": "Betametasona"
+    },
+    "correcta": "b",
+    "explicacion": "La hidralazina EV es una de las opciones de urgencia hipertensiva en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-068",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "LES estable. Anti-Ro positivos. ¿Qué estudio fetal se recomienda entre 18–24 semanas?",
+    "opciones": {
+      "a": "Doppler cerebral medio",
+      "b": "Ecocardiografía fetal seriada",
+      "c": "Perfil biofísico diario",
+      "d": "Amniocentesis diagnóstica"
+    },
+    "correcta": "b",
+    "explicacion": "Anti-Ro → riesgo de BAV congénito → eco fetal seriada.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-069",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En HTA gestacional, ¿qué parámetro define progresión a preeclampsia?",
+    "opciones": {
+      "a": "Aumento del edema",
+      "b": "Proteinuria ≥300 mg/24h",
+      "c": "Disminución de movimientos fetales",
+      "d": "Polihidramnios"
+    },
+    "correcta": "b",
+    "explicacion": "La aparición de proteinuria define preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-070",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con obesidad mórbida IMC 45. ¿Qué suplemento adicional debe recibir?",
+    "opciones": {
+      "a": "Vitamina D alta dosis",
+      "b": "Ácido fólico en mega dosis (4–5 mg/día)",
+      "c": "Calcio intravenoso",
+      "d": "Magnesio oral preventivo"
+    },
+    "correcta": "b",
+    "explicacion": "Obesidad aumenta riesgo de DTN → se indica ácido fólico de alta dosis.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-071",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Hipertensión crónica controlada. 40 semanas. Feto adecuado. ¿Cuál es la vía del nacimiento recomendada?",
+    "opciones": {
+      "a": "Cesárea obligatoria",
+      "b": "Inducción del parto",
+      "c": "Esperar hasta 41+5",
+      "d": "Finalización a las 34 semanas"
+    },
+    "correcta": "b",
+    "explicacion": "En HTA crónica controlada se recomienda finalizar entre 38–40 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-072",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con prolactinoma pequeño y bien controlado. ¿Conducta durante el embarazo?",
+    "opciones": {
+      "a": "Suspender cabergolina y observar",
+      "b": "Aumentar dosis preventiva",
+      "c": "Realizar RMN mensual",
+      "d": "Interrumpir embarazo"
+    },
+    "correcta": "a",
+    "explicacion": "En microprolactinomas se suspende agonista dopaminérgico salvo síntomas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-073",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con lupus en remisión, anti-Ro positivos, sin tratamiento. ¿Qué medicación debe mantenerse o iniciarse?",
+    "opciones": {
+      "a": "Hidroxicloroquina",
+      "b": "Corticoides diarios",
+      "c": "Azatioprina",
+      "d": "Ninguna"
+    },
+    "correcta": "a",
+    "explicacion": "HCQ reduce exacerbaciones y complicaciones fetales en LES.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-074",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante fumadora pesada. ¿Cuál es la complicación más asociada?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "Placenta previa",
+      "c": "RCIU",
+      "d": "Polihidramnios"
+    },
+    "correcta": "c",
+    "explicacion": "Tabaquismo → vasoconstricción → hipoperfusión → RCIU.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-075",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabética tipo 1 embarazada. HbA1c 9%. ¿Cuál es el mayor riesgo obstétrico?",
+    "opciones": {
+      "a": "Polihidramnios",
+      "b": "Malformaciones cardiacas fetales",
+      "c": "Parto precipitado",
+      "d": "Óbito por sufrimiento agudo"
+    },
+    "correcta": "b",
+    "explicacion": "La hiperglucemia preconcepcional y del 1° trimestre aumenta malformaciones cardiovasculares.",
+    "oficial": false
+  },
+  [
+  {
+    "id": "obstetricia-009-076",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con diabetes gestacional A2 en tratamiento con insulina. 38 semanas, feto adecuado. ¿Cuál es la recomendación de finalización?",
+    "opciones": {
+      "a": "Esperar hasta las 41 semanas",
+      "b": "Finalizar entre 39 y 40 semanas",
+      "c": "Finalizar a las 37 semanas",
+      "d": "Indicar cesárea electiva"
+    },
+    "correcta": "b",
+    "explicacion": "En DMG A2 la recomendación es finalizar entre 39–40 semanas para reducir riesgo de macrosomía y muerte intraparto.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-077",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de preeclampsia severa en embarazo previo. En este embarazo inicia AAS 100 mg. ¿Cuándo debe comenzar la profilaxis?",
+    "opciones": {
+      "a": "A partir de las 30 semanas",
+      "b": "Entre 12–16 semanas",
+      "c": "Solo al final del segundo trimestre",
+      "d": "Recién cuando aparezca HTA"
+    },
+    "correcta": "b",
+    "explicacion": "La profilaxis con AAS debe iniciarse entre 12–16 semanas para máxima eficacia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-078",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con insuficiencia cardíaca moderada. ¿Qué signo obliga a hospitalización inmediata?",
+    "opciones": {
+      "a": "Edema maleolar",
+      "b": "Disnea de esfuerzo leve",
+      "c": "Ortopnea",
+      "d": "Taquicardia materna 100 lpm"
+    },
+    "correcta": "c",
+    "explicacion": "La ortopnea indica descompensación cardiaca y requiere internación.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-079",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente hipotiroidea en tratamiento. En el primer trimestre, TSH aumenta. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Bajar dosis de levotiroxina",
+      "b": "Aumentar dosis 20–30%",
+      "c": "Suspender tratamiento",
+      "d": "No modificar conducta"
+    },
+    "correcta": "b",
+    "explicacion": "La demanda de hormona tiroidea aumenta en el embarazo; suele requerirse incremento de la dosis.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-080",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con asma moderada requiere salbutamol frecuente. ¿Qué indica este hallazgo?",
+    "opciones": {
+      "a": "Buen control",
+      "b": "Subtratamiento del asma",
+      "c": "Indicación de cesárea",
+      "d": "Cambiar salbutamol por ipratropio"
+    },
+    "correcta": "b",
+    "explicacion": "El uso frecuente de salbutamol indica mal control y necesidad de ajustar corticoides inhalados.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-081",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con HTA crónica en metildopa. TA 150/95. ¿Cuál es la mejor opción terapéutica?",
+    "opciones": {
+      "a": "Suspender metildopa",
+      "b": "Agregar nifedipina",
+      "c": "Agregar IECA",
+      "d": "Inducir parto inmediato"
+    },
+    "correcta": "b",
+    "explicacion": "La combinación metildopa + nifedipina es segura y eficaz para control en HTA crónica.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-082",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional A1 bien controlada. ¿Qué examen NO está indicado de rutina?",
+    "opciones": {
+      "a": "Monitoreo fetal desde las 32 semanas",
+      "b": "Doppler umbilical",
+      "c": "Controles glucémicos",
+      "d": "Eco para biometría fetal"
+    },
+    "correcta": "b",
+    "explicacion": "El Doppler no se indica rutinariamente en DMG sin complicaciones.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-083",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES estable. ¿Cuál de las siguientes drogas está contraindicada?",
+    "opciones": {
+      "a": "Hidroxicloroquina",
+      "b": "Azatioprina",
+      "c": "Ciclofosfamida",
+      "d": "Prednisona"
+    },
+    "correcta": "c",
+    "explicacion": "Ciclofosfamida es teratogénica y debe evitarse en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-084",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipertiroidismo en segundo trimestre. ¿Cuál es el fármaco de elección?",
+    "opciones": {
+      "a": "Propiltiouracilo",
+      "b": "Metimazol",
+      "c": "Levotiroxina",
+      "d": "Iodo radioactivo"
+    },
+    "correcta": "b",
+    "explicacion": "En segundo y tercer trimestre se utiliza metimazol por menor riesgo hepático.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-085",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con antecedente de trombosis venosa profunda. ¿Qué profilaxis debe recibir?",
+    "opciones": {
+      "a": "AAS",
+      "b": "HBPM dosis profiláctica",
+      "c": "HBPM dosis terapéutica",
+      "d": "Warfarina"
+    },
+    "correcta": "b",
+    "explicacion": "Antecedente de TVP requiere HBPM profiláctica durante toda la gestación.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-086",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Hipertiroidismo mal controlado en embarazo. ¿Cuál es la complicación fetal más asociada?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "RCIU",
+      "c": "Embriopatía tiroidea",
+      "d": "Polihidramnios"
+    },
+    "correcta": "b",
+    "explicacion": "El hipertiroidismo materno aumenta riesgo de RCIU por hipermetabolismo fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-087",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DM1 tiene hipoglucemias matutinas. ¿Qué ajuste es el más adecuado?",
+    "opciones": {
+      "a": "Reducir insulina basal nocturna",
+      "b": "Aumentar insulina rápida",
+      "c": "Suspender medicación",
+      "d": "Adelantar horario del desayuno"
+    },
+    "correcta": "a",
+    "explicacion": "Las hipoglucemias en ayunas suelen deberse a exceso de basal nocturna.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-088",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En paciente con preeclampsia, ¿qué hallazgo obliga a iniciar sulfato de magnesio?",
+    "opciones": {
+      "a": "Proteinuria 300 mg",
+      "b": "Cefalea persistente",
+      "c": "TA 140/90",
+      "d": "Edema maleolar"
+    },
+    "correcta": "b",
+    "explicacion": "Los síntomas neurológicos son indicación de MgSO4 para prevención de eclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-089",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con taquicardia materna 120 lpm sin fiebre ni anemia. ECG normal. ¿Qué sugiere?",
+    "opciones": {
+      "a": "Arritmia supraventricular",
+      "b": "Taquicardia sinusal fisiológica",
+      "c": "Hipertiroidismo severo",
+      "d": "Shock compensado"
+    },
+    "correcta": "b",
+    "explicacion": "La taquicardia sinusal es frecuente por aumento del gasto cardíaco materno.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-090",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DMG mal controlada. ¿Cuál es el mayor riesgo neonatal?",
+    "opciones": {
+      "a": "Bajo peso",
+      "b": "Anomalías congénitas",
+      "c": "Hipoglucemia",
+      "d": "Sepsis temprana"
+    },
+    "correcta": "c",
+    "explicacion": "El hiperinsulinismo fetal por hiperglucemia materna causa hipoglucemia neonatal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-091",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazo con asma intermitente. ¿Qué fármaco es seguro como rescate?",
+    "opciones": {
+      "a": "Salmeterol",
+      "b": "Ipratropio",
+      "c": "Salbutamol",
+      "d": "Formoterol"
+    },
+    "correcta": "c",
+    "explicacion": "Salbutamol es el broncodilatador de rescate de elección en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-092",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con enfermedad renal crónica. ¿Qué parámetro predice mayor riesgo obstétrico?",
+    "opciones": {
+      "a": "Hematuria",
+      "b": "Creatinina elevada preconcepcional",
+      "c": "Proteinuria leve",
+      "d": "Edad materna"
+    },
+    "correcta": "b",
+    "explicacion": "La creatinina elevada previa al embarazo se asocia a peor pronóstico materno y fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-093",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipertensión severa. TA 180/110. ¿Qué complicación es más probable?",
+    "opciones": {
+      "a": "Polihidramnios",
+      "b": "Desprendimiento de placenta",
+      "c": "Macrosomía",
+      "d": "Parto precipitado"
+    },
+    "correcta": "b",
+    "explicacion": "La HTA severa aumenta riesgo de DPP por vasoespasmo placentario.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-094",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente hipotiroidea sin tratamiento. ¿Cuál es la complicación fetal más asociada?",
+    "opciones": {
+      "a": "RCIU",
+      "b": "Malformaciones neurológicas",
+      "c": "Anencefalia",
+      "d": "Polihidramnios"
+    },
+    "correcta": "a",
+    "explicacion": "El hipotiroidismo materno no tratado aumenta riesgo de RCIU y parto pretérmino.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-095",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con LES en remisión. ¿Qué estudio de control es esencial en cada trimestre?",
+    "opciones": {
+      "a": "Perfil de hierro",
+      "b": "Complemento C3/C4",
+      "c": "Prueba de Coombs",
+      "d": "Eco Doppler renal"
+    },
+    "correcta": "b",
+    "explicacion": "Los niveles de complemento permiten detectar reactivación temprana del LES.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-096",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DM1 y HbA1c elevada al inicio del embarazo. ¿Qué riesgo aumenta?",
+    "opciones": {
+      "a": "RCIU",
+      "b": "Malformaciones congénitas",
+      "c": "Hiperglucemia neonatal",
+      "d": "Isoinmunización"
+    },
+    "correcta": "b",
+    "explicacion": "La hiperglucemia en la organogénesis se asocia a mayor riesgo de malformaciones.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-097",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En presencia de HTA severa, ¿qué hallazgo indica emergencia hipertensiva?",
+    "opciones": {
+      "a": "Edema",
+      "b": "Cefalea persistente",
+      "c": "TA 140/90",
+      "d": "Aumento del apetito"
+    },
+    "correcta": "b",
+    "explicacion": "Los síntomas neurológicos caracterizan la emergencia hipertensiva.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-098",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente asmática severa en exacerbación. ¿Cuál es el tratamiento inicial?",
+    "opciones": {
+      "a": "Suspender broncodilatadores",
+      "b": "Administrar oxígeno y beta-agonistas",
+      "c": "Indicar reposo en domicilio",
+      "d": "Evitar corticoides"
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento inicial incluye oxígeno + salbutamol; corticoides sistémicos según respuesta.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-099",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Obesa mórbida. ¿Qué estudio de control debe hacerse en el primer trimestre?",
+    "opciones": {
+      "a": "Doppler umbilical",
+      "b": "Glucemia en ayunas y curva temprana",
+      "c": "Perfil hepático",
+      "d": "Estudio de fertilidad"
+    },
+    "correcta": "b",
+    "explicacion": "La obesidad aumenta riesgo de DMG y se recomienda screening temprano.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-100",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con cardiopatía congénita sin complicaciones y FE normal. ¿Cuál es la vía del nacimiento más recomendada?",
+    "opciones": {
+      "a": "Cesárea electiva",
+      "b": "Parto vaginal",
+      "c": "Inducción a las 34 semanas",
+      "d": "Cesárea por riesgo cardiovascular"
+    },
+    "correcta": "b",
+    "explicacion": "La mayoría de las cardiopatías compensadas permiten parto vaginal sin aumento significativo de riesgo.",
+    "oficial": false
+  },
+    
+  {
+    "id": "obstetricia-009-101",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con HTA crónica controlada consulta a las 22 semanas por cefalea leve. TA 145/90, sin proteinuria. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Iniciar sulfato de magnesio",
+      "b": "Indicar reposo absoluto domiciliario",
+      "c": "Control clínico y de laboratorio para descartar progresión",
+      "d": "Internación inmediata"
+    },
+    "correcta": "c",
+    "explicacion": "Ante síntomas inespecíficos, se deben solicitar estudios para descartar superposición con preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-102",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con DM2 inicia embarazo con HbA1c de 10%. ¿Cuál es el riesgo fetal más incrementado?",
+    "opciones": {
+      "a": "Prematurez",
+      "b": "Macrosomía",
+      "c": "Malformaciones congénitas",
+      "d": "Oligoamnios"
+    },
+    "correcta": "c",
+    "explicacion": "La hiperglucemia preconcepcional aumenta riesgo de malformaciones, especialmente cardiopatías.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-103",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 32 semanas con diagnóstico de preeclampsia sin criterios de severidad. ¿Cuál es el objetivo principal del manejo expectante?",
+    "opciones": {
+      "a": "Prolongar indefinidamente la gestación",
+      "b": "Evitar progresión a eclampsia",
+      "c": "Disminuir la glucemia materna",
+      "d": "Aumentar el volumen plasmático"
+    },
+    "correcta": "b",
+    "explicacion": "El manejo expectante busca evitar progresión a formas graves y optimizar la maduración fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-104",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con asma moderada persistente requiere medicación diaria. ¿Cuál es el controlador de elección?",
+    "opciones": {
+      "a": "Beta agonista de acción prolongada en monoterapia",
+      "b": "Corticoide inhalado",
+      "c": "Ipratropio",
+      "d": "Montelukast como única medicación"
+    },
+    "correcta": "b",
+    "explicacion": "Los corticoides inhalados son seguros y primera línea de control del asma en el embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-105",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabética tipo 1 con hipoglucemias nocturnas repetidas. ¿Qué ajuste se recomienda?",
+    "opciones": {
+      "a": "Aumentar insulina basal nocturna",
+      "b": "Reducir insulina basal nocturna",
+      "c": "Suspender bolos preprandiales",
+      "d": "Indicar colación hiposódica"
+    },
+    "correcta": "b",
+    "explicacion": "La causa más frecuente de hipoglucemia nocturna es exceso de basal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-106",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES controlado y anti-Ro positivos. ¿Qué estudio debe realizarse entre 18–24 semanas?",
+    "opciones": {
+      "a": "Perfil biofísico",
+      "b": "Ecocardiografía fetal seriada",
+      "c": "Doppler uterino",
+      "d": "Test combinado"
+    },
+    "correcta": "b",
+    "explicacion": "Anti-Ro aumenta riesgo de bloqueo AV fetal → requiere monitoreo ecocardiográfico seriado.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-107",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA severa. TA 180/110, cefalea persistente. ¿Qué fármaco de urgencia utilizar?",
+    "opciones": {
+      "a": "Metildopa VO",
+      "b": "Hidralazina EV",
+      "c": "IECA",
+      "d": "Atropina"
+    },
+    "correcta": "b",
+    "explicacion": "Hidralazina EV es de elección en crisis hipertensivas del embarazo junto a labetalol EV.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-108",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma leve. ¿Qué broncodilatador usar para crisis?",
+    "opciones": {
+      "a": "Formoterol",
+      "b": "Ipratropio solo",
+      "c": "Salbutamol",
+      "d": "Teofilina"
+    },
+    "correcta": "c",
+    "explicacion": "Salbutamol es seguro y efectivo como rescate en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-109",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipotiroidismo no tratado. ¿Qué complicación neonatal se incrementa?",
+    "opciones": {
+      "a": "Hiperglucemia neonatal",
+      "b": "RCIU",
+      "c": "Macrosomía",
+      "d": "Policitemia"
+    },
+    "correcta": "b",
+    "explicacion": "El hipotiroidismo materno sin tratamiento aumenta riesgo de RCIU y parto pretérmino.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-110",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de trombofilia y pérdidas gestacionales. ¿Cuál es el tratamiento recomendado durante el embarazo?",
+    "opciones": {
+      "a": "HBPM terapéutica",
+      "b": "Solo AAS",
+      "c": "AAS + HBPM profiláctica",
+      "d": "Corticoides"
+    },
+    "correcta": "c",
+    "explicacion": "AAS + HBPM profiláctica disminuye complicaciones placentarias en trombofilias.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-111",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional. ¿Cuál es la indicación absolutas para insulinoterapia?",
+    "opciones": {
+      "a": "Glucemias normales luego de dieta",
+      "b": "Glucemias posprandiales persistentemente elevadas",
+      "c": "IMC >30",
+      "d": "Edad materna >40"
+    },
+    "correcta": "b",
+    "explicacion": "Si la glucemia posprandial permanece elevada pese a dieta, se requiere insulina.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-112",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con preeclampsia severa presenta dolor en hipocondrio derecho. ¿Qué condición sospechar?",
+    "opciones": {
+      "a": "Cólico biliar",
+      "b": "Úlcera péptica",
+      "c": "HELLP",
+      "d": "Apendicitis"
+    },
+    "correcta": "c",
+    "explicacion": "El dolor en HD en preeclampsia severa debe hacer sospechar síndrome HELLP.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-113",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente asmática requiere corticoide sistémico. ¿Cuál es el más seguro?",
+    "opciones": {
+      "a": "Dexametasona prolongada",
+      "b": "Prednisona",
+      "c": "Metimazol",
+      "d": "Ketorolac"
+    },
+    "correcta": "b",
+    "explicacion": "Prednisona es inactivada por la placenta y es segura para uso sistémico.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-114",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con IMC 45. ¿Qué suplemento debe recibir en mayor dosis?",
+    "opciones": {
+      "a": "Vitamina D",
+      "b": "Ácido fólico 4–5 mg/día",
+      "c": "Yodo",
+      "d": "Calcio"
+    },
+    "correcta": "b",
+    "explicacion": "Obesidad → mayor riesgo de DTN → ácido fólico en dosis altas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-115",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DM1 mal controlada. ¿Qué hallazgo fetal es más frecuente?",
+    "opciones": {
+      "a": "Hipoglucemia neonatal",
+      "b": "Pielonefritis",
+      "c": "Placenta previa",
+      "d": "Polidactilia"
+    },
+    "correcta": "a",
+    "explicacion": "El hiperinsulinismo fetal provoca hipoglucemia neonatal temprana.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-116",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA crónica controlada. ¿Cuándo finalizar el embarazo?",
+    "opciones": {
+      "a": "34 semanas",
+      "b": "37 semanas exactas",
+      "c": "Entre 38–40 semanas",
+      "d": "42 semanas"
+    },
+    "correcta": "c",
+    "explicacion": "La recomendación es finalizar entre 38–40 semanas según estado materno-fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-117",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con asma en control. ¿Qué medicación está contraindicada?",
+    "opciones": {
+      "a": "Betametasona",
+      "b": "Ipratropio",
+      "c": "Betabloqueantes no selectivos",
+      "d": "Prednisona"
+    },
+    "correcta": "c",
+    "explicacion": "Los betabloqueantes no selectivos pueden desencadenar broncoespasmo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-118",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional controlada con dieta. Feto grande para edad gestacional. ¿Qué hacer?",
+    "opciones": {
+      "a": "Indicar insulina",
+      "b": "Realizar Doppler semanal",
+      "c": "Restringir carbohidratos drásticamente",
+      "d": "Inducir a las 34 semanas"
+    },
+    "correcta": "a",
+    "explicacion": "Si aparece macrosomía, se requiere intensificar tratamiento con insulina.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-119",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES controlado sin tratamiento. ¿Qué droga debe continuarse siempre para disminuir complicaciones?",
+    "opciones": {
+      "a": "Hidroxicloroquina",
+      "b": "Metotrexato",
+      "c": "Ciclofosfamida",
+      "d": "Warfarina"
+    },
+    "correcta": "a",
+    "explicacion": "HCQ reduce reactivación del LES y complicaciones materno-fetales.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-120",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con sospecha de eclampsia inminente. ¿Cuál es el fármaco indicado?",
+    "opciones": {
+      "a": "Sulfato de magnesio",
+      "b": "Insulina rápida",
+      "c": "Furosemida",
+      "d": "Hidroxicloroquina"
+    },
+    "correcta": "a",
+    "explicacion": "MgSO4 previene convulsiones y es tratamiento de elección.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-121",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional A2 mal controlada. ¿Qué complicación obstétrica es más frecuente?",
+    "opciones": {
+      "a": "Óbito intrauterino",
+      "b": "Isoinmunización",
+      "c": "Placenta accreta",
+      "d": "SGA severo"
+    },
+    "correcta": "a",
+    "explicacion": "La hiperglucemia severa aumenta riesgo de muerte fetal tardía.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-122",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con enfermedad hepática por colestasis del embarazo. ¿Qué síntoma es característico?",
+    "opciones": {
+      "a": "Prurito palmoplantar",
+      "b": "Vómitos persistentes",
+      "c": "Dolor en FID",
+      "d": "Fiebre"
+    },
+    "correcta": "a",
+    "explicacion": "El prurito palmoplantar es característico de la colestasis intrahepática del embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-123",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Asma persistente grave. ¿Cuál es el desencadenante más frecuente de descompensaciones en el embarazo?",
+    "opciones": {
+      "a": "Ejercicio",
+      "b": "Infecciones virales",
+      "c": "Alimentos",
+      "d": "Aire frío"
+    },
+    "correcta": "b",
+    "explicacion": "Las infecciones virales son la primera causa de exacerbaciones asmáticas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-124",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA crónica con proteinuria que aparece durante el embarazo. ¿Diagnóstico?",
+    "opciones": {
+      "a": "HTA esencial",
+      "b": "LES activo",
+      "c": "Preeclampsia superpuesta",
+      "d": "Insuficiencia renal crónica"
+    },
+    "correcta": "c",
+    "explicacion": "La aparición de proteinuria en HTA crónica define preeclampsia superpuesta.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-125",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma moderada controlada. ¿Cuál es el objetivo de saturación durante una crisis?",
+    "opciones": {
+      "a": "≥92%",
+      "b": "≥94%",
+      "c": "≥97%",
+      "d": "≥88%"
+    },
+    "correcta": "b",
+    "explicacion": "En asma durante el embarazo se debe mantener SatO2 ≥94% para asegurar adecuada oxigenación fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-126",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con diabetes tipo 1 presenta cetonuria moderada y glucemias elevadas. ¿Cuál es la conducta inicial?",
+    "opciones": {
+      "a": "Iniciar hidratación y corrección con insulina EV",
+      "b": "Dar bolo de glucosa",
+      "c": "Indicar dieta hipograsa estricta",
+      "d": "Inducir el parto inmediatamente"
+    },
+    "correcta": "a",
+    "explicacion": "La cetosis en diabetes tipo 1 requiere hidratación y corrección rápida con insulina EV para evitar cetoacidosis.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-127",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES controlado consulta por proteinuria leve sin HTA. Complemento normal. ¿Cuál es la hipótesis más probable?",
+    "opciones": {
+      "a": "Preeclampsia",
+      "b": "Reactivación del LES",
+      "c": "Proteinuria gestacional",
+      "d": "Cólico renal"
+    },
+    "correcta": "c",
+    "explicacion": "Proteinuria aislada con complemento normal y sin HTA orienta a proteinuria gestacional.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-128",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con IMC 40 presenta glucemia en ayunas 102 mg/dL en primer trimestre. ¿Qué corresponde?",
+    "opciones": {
+      "a": "Controlar en tercer trimestre",
+      "b": "Realizar curva de tolerancia oral",
+      "c": "Diagnosticar diabetes gestacional",
+      "d": "Repetir glucemia en tres semanas"
+    },
+    "correcta": "b",
+    "explicacion": "La obesidad es factor de riesgo y se recomienda test precoz con PTOG.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-129",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con preeclampsia leve a las 36 semanas. TA 145/90, proteinuria 400 mg. Feto adecuado. ¿Conducta?",
+    "opciones": {
+      "a": "Finalizar el embarazo",
+      "b": "Esperar hasta las 40 semanas",
+      "c": "Iniciar MgSO4",
+      "d": "Indicar dieta hiposódica severa"
+    },
+    "correcta": "a",
+    "explicacion": "A las 37 semanas o más se recomienda finalización incluso en formas leves.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-130",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional A2 bien controlada. ¿Qué estudio fetal debe realizarse semanalmente?",
+    "opciones": {
+      "a": "Doppler umbilical",
+      "b": "Perfil biofísico o NST",
+      "c": "Amniocentesis",
+      "d": "Biometría fetal exclusiva"
+    },
+    "correcta": "b",
+    "explicacion": "Se recomienda monitoreo fetal semanal desde 32–34 semanas.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-131",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente asmática presenta exacerbación y SatO2 92%. ¿Qué es lo primero que debe iniciarse?",
+    "opciones": {
+      "a": "Beta agonistas + oxígeno suplementario",
+      "b": "Antibióticos",
+      "c": "Corticoides IV únicamente",
+      "d": "Reposo y control en 12 hs"
+    },
+    "correcta": "a",
+    "explicacion": "Toda exacerbación requiere oxígeno y broncodilatadores de acción rápida.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-132",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipertiroidismo en primer trimestre. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Metimazol",
+      "b": "Propiltiouracilo",
+      "c": "Iodo radiactivo",
+      "d": "Suspender antitiroideos"
+    },
+    "correcta": "b",
+    "explicacion": "El PTU es preferido en el primer trimestre por menor riesgo teratogénico.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-133",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con trombofilia y antecedente de RCIU severo. ¿Qué combinación reduce mejor el riesgo?",
+    "opciones": {
+      "a": "Metformina + AAS",
+      "b": "HBPM + AAS",
+      "c": "HBPM sola",
+      "d": "AAS sola"
+    },
+    "correcta": "b",
+    "explicacion": "HBPM + AAS está demostrado en reducción de complicaciones placentarias.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-134",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente diabética tipo 2 controlada. ¿Cuándo debe iniciar monitoreo fetal?",
+    "opciones": {
+      "a": "24 semanas",
+      "b": "32 semanas",
+      "c": "36 semanas",
+      "d": "Sólo intraparto"
+    },
+    "correcta": "b",
+    "explicacion": "Diabetes pregestacional requiere NST desde 32 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-135",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA severa con TA 170/110 persistente. ¿Cuál es el objetivo inicial del tratamiento?",
+    "opciones": {
+      "a": "TA sistólica <100",
+      "b": "TA 140–150/90–100",
+      "c": "TA 120/70",
+      "d": "Descenso brusco de TA"
+    },
+    "correcta": "b",
+    "explicacion": "La TA objetivo debe reducirse gradualmente a rangos seguros sin comprometer perfusión uteroplacentaria.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-136",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES en remisión, sin proteinuria. Presenta caída de C3/C4. ¿Qué orienta esto?",
+    "opciones": {
+      "a": "Preeclampsia",
+      "b": "Reactivación del LES",
+      "c": "Estado fisiológico del embarazo",
+      "d": "Infección urinaria"
+    },
+    "correcta": "b",
+    "explicacion": "La disminución del complemento orienta a reactivación lúpica.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-137",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma grave necesita corticoides sistémicos prolongados. ¿Qué efecto fetal preocupa más?",
+    "opciones": {
+      "a": "Hipoglucemia",
+      "b": "RCIU leve",
+      "c": "Aumento de LCR",
+      "d": "Malformaciones cardiacas"
+    },
+    "correcta": "b",
+    "explicacion": "Corticoides sistémicos prolongados pueden asociarse a menor crecimiento fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-138",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con hipotiroidismo presenta TSH elevada a las 10 semanas. ¿Qué hacer?",
+    "opciones": {
+      "a": "Disminuir levotiroxina",
+      "b": "Aumentar dosis de levotiroxina",
+      "c": "Suspender medicación",
+      "d": "Esperar hasta segundo trimestre"
+    },
+    "correcta": "b",
+    "explicacion": "La demanda de hormona tiroidea aumenta en el primer trimestre.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-139",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con colestasis intrahepática. ¿Qué estudio se utiliza para seguimiento fetal?",
+    "opciones": {
+      "a": "Doppler cerebral medio",
+      "b": "Perfil biofísico",
+      "c": "Test combinado",
+      "d": "Amniocentesis"
+    },
+    "correcta": "b",
+    "explicacion": "Se utiliza monitoreo fetal con PBF por riesgo de óbito tardío.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-140",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con asma controlada presenta necesidad frecuente de salbutamol. ¿Qué significa?",
+    "opciones": {
+      "a": "Uso adecuado",
+      "b": "Descontrol del asma",
+      "c": "Efecto colateral común",
+      "d": "Indicación de suspender corticoides"
+    },
+    "correcta": "b",
+    "explicacion": "Uso repetido indica descontrol y necesidad de ajustar tratamiento controlador.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-141",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DM1 embarazada. ¿Qué valor de glucemia intraparto se recomienda mantener?",
+    "opciones": {
+      "a": "60–80 mg/dL",
+      "b": "70–110 mg/dL",
+      "c": "150–200 mg/dL",
+      "d": "≥180 mg/dL"
+    },
+    "correcta": "b",
+    "explicacion": "Valores entre 70–110 mg/dL reducen hipoglucemia neonatal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-142",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA severa con síntomas neurológicos. ¿Qué condición es más preocupante?",
+    "opciones": {
+      "a": "Eclampsia inminente",
+      "b": "Colestasis",
+      "c": "Gastroenteritis",
+      "d": "Atonía uterina"
+    },
+    "correcta": "a",
+    "explicacion": "Síntomas neurológicos → riesgo de convulsión inminente.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-143",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma grave. ¿Cuál es la causa de exacerbación más frecuente?",
+    "opciones": {
+      "a": "Ejercicio",
+      "b": "Infecciones respiratorias virales",
+      "c": "Alimentos",
+      "d": "Polvo doméstico"
+    },
+    "correcta": "b",
+    "explicacion": "Las infecciones virales son el principal desencadenante de crisis asmáticas.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-144",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DMG A1. ¿Qué examen debe realizarse entre 34–36 semanas?",
+    "opciones": {
+      "a": "Perfil biofísico",
+      "b": "Monitoreo fetal",
+      "c": "Amniocentesis",
+      "d": "Doppler de arteria cerebral media"
+    },
+    "correcta": "b",
+    "explicacion": "DMG A1 → NST/MTF recomendado desde 34 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-145",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con LES en remisión presenta proteinuria leve y TA normal. ¿Qué estudio ayuda a diferenciar preeclampsia de LES activo?",
+    "opciones": {
+      "a": "Complemento C3/C4",
+      "b": "ECG",
+      "c": "Perfil tiroideo",
+      "d": "Doppler fetal"
+    },
+    "correcta": "a",
+    "explicacion": "Complemento bajo orienta a LES activo; normal sugiere preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-146",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con colestasis intrahepática y ácidos biliares elevados. ¿Cuál es la complicación fetal más temida?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "Óbito intrauterino",
+      "c": "RCIU",
+      "d": "Corioamnionitis"
+    },
+    "correcta": "b",
+    "explicacion": "La colestasis aumenta riesgo de muerte fetal tardía.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-147",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "HTA crónica con mala respuesta a metildopa. ¿Qué fármaco es seguro para agregar?",
+    "opciones": {
+      "a": "IECA",
+      "b": "ARA-II",
+      "c": "Nifedipina",
+      "d": "Espironolactona"
+    },
+    "correcta": "c",
+    "explicacion": "Nifedipina es segura y ampliamente utilizada combinada con metildopa.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-148",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DM2 mal controlada. ¿Qué complicación obstétrica es más frecuente?",
+    "opciones": {
+      "a": "Polihidramnios",
+      "b": "Placenta previa",
+      "c": "Oligoamnios",
+      "d": "SGA"
+    },
+    "correcta": "a",
+    "explicacion": "Hiperglucemia severa induce polihidramnios por poliuria fetal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-149",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente asmática controlada con budesonida. ¿Debe suspenderse en el embarazo?",
+    "opciones": {
+      "a": "Sí, por teratogenicidad",
+      "b": "Sí, en 2do trimestre",
+      "c": "No, debe mantenerse",
+      "d": "Reemplazar por teofilina"
+    },
+    "correcta": "c",
+    "explicacion": "Budesonida es el corticoide inhalatorio más seguro en embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-150",
+    "materia": "Obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con sospecha de HELLP. ¿Qué hallazgo apoya el diagnóstico?",
+    "opciones": {
+      "a": "Plaquetas 90.000, LDH elevada, TGO/TGP elevadas",
+      "b": "HTA leve con edema",
+      "c": "Proteinuria aislada",
+      "d": "Hiperglucemia"
+    },
+    "correcta": "a",
+    "explicacion": "La tríada del HELLP incluye hemólisis, enzimas hepáticas elevadas y plaquetopenia.",
+    "oficial": false
+  },
+  
+  {
+    "id": "obstetricia-009-151",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 30 semanas con diabetes tipo 1, HbA1c 8.5%. Ecografía: feto grande para la edad gestacional. ¿Cuál es la principal complicación fetal asociada al mal control glucémico?",
+    "opciones": {
+      "a": "Hipertensión pulmonar persistente",
+      "b": "Cardiomiopatía hipertrófica",
+      "c": "Atresia duodenal",
+      "d": "Restricción del crecimiento"
+    },
+    "correcta": "b",
+    "explicacion": "La diabetes pregestacional mal controlada produce hiperinsulinismo fetal, generando cardiomiopatía hipertrófica septal.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-152",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En relación con la enfermedad hipertensiva del embarazo, ¿qué criterio define preeclampsia con criterios de severidad?",
+    "opciones": {
+      "a": "Proteinuria > 300 mg/24 h",
+      "b": "TA ≥ 140/90 en dos tomas",
+      "c": "Creatinina > 1,1 mg/dL",
+      "d": "Edema periférico severo"
+    },
+    "correcta": "c",
+    "explicacion": "La creatinina por encima de 1,1 mg/dL es criterio de severidad según SOGIBA/MSAL.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-153",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 26 semanas con hipertiroidismo por enfermedad de Graves. ¿Cuál es el tratamiento de elección durante el segundo trimestre?",
+    "opciones": {
+      "a": "Propiltiuracilo",
+      "b": "Metimazol",
+      "c": "Levotiroxina",
+      "d": "Yodo radiactivo"
+    },
+    "correcta": "b",
+    "explicacion": "En 2.º y 3.º trimestre se prefiere metimazol; PTU solo en el 1.º trimestre.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-154",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con diagnóstico reciente de trombofilia hereditaria y antecedentes de dos pérdidas gestacionales tempranas. ¿Qué conducta preventiva corresponde?",
+    "opciones": {
+      "a": "Aspirina baja dosis",
+      "b": "Heparina de bajo peso molecular",
+      "c": "Anticoagulación oral",
+      "d": "Corticoides"
+    },
+    "correcta": "b",
+    "explicacion": "Las trombofilias con antecedentes reproductivos se manejan con HBPM durante el embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-155",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con LES en remisión embarazada de 14 semanas. ¿Cuál es la recomendación principal para el control del embarazo?",
+    "opciones": {
+      "a": "Suspender hidroxicloroquina",
+      "b": "Solicitar anticuerpos anti-Ro/La",
+      "c": "Iniciar prednisona",
+      "d": "Aumentar la ingesta proteica"
+    },
+    "correcta": "b",
+    "explicacion": "Los Ac anti-Ro/La se asocian a bloqueo cardíaco congénito; deben evaluarse siempre.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-156",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante obesa (IMC 38) de 32 semanas. ¿Qué complicación obstétrica es más frecuente?",
+    "opciones": {
+      "a": "Anencefalia",
+      "b": "Oligohidramnios",
+      "c": "Preeclampsia",
+      "d": "CIUR"
+    },
+    "correcta": "c",
+    "explicacion": "La obesidad aumenta significativamente el riesgo de preeclampsia, diabetes y cesárea.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-157",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 34 semanas con HTP crónica controlada. TA 150/95. Proteinuria negativa. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Preeclampsia",
+      "b": "HTA gestacional",
+      "c": "HTA crónica no controlada",
+      "d": "Eclampsia inminente"
+    },
+    "correcta": "c",
+    "explicacion": "Si la HTA precede al embarazo o aparece antes de las 20 semanas, se considera crónica.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-158",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Diabetes gestacional tipo A1. ¿Cuál es la primera línea terapéutica?",
+    "opciones": {
+      "a": "Insulina NPH",
+      "b": "Metformina",
+      "c": "Cambios dietarios y ejercicio",
+      "d": "Glibenclamida"
+    },
+    "correcta": "c",
+    "explicacion": "La DG A1 se maneja con dieta y actividad física; si falla, se usa insulina.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-159",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma moderado persistente embarazada de 22 semanas. ¿Cuál es el tratamiento de control?",
+    "opciones": {
+      "a": "Salmeterol solo",
+      "b": "Budesonida inhalatoria",
+      "c": "Ipatropio inhalado",
+      "d": "Montelukast"
+    },
+    "correcta": "b",
+    "explicacion": "La budesonida inhalada es el corticoide de elección durante el embarazo.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-160",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con DPPNI moderado y feto vivo. TA 170/110, cefalea y fosfenos. ¿Cuál es la conducta inmediata?",
+    "opciones": {
+      "a": "Inducción del trabajo de parto",
+      "b": "Cesárea de urgencia",
+      "c": "Observación activa",
+      "d": "Amnioinfusión"
+    },
+    "correcta": "b",
+    "explicacion": "Un DPPNI asociado a preeclampsia severa requiere resolución inmediata por cesárea.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-161",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con DM1 presenta hipoglucemia durante el trabajo de parto. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Suspender insulina y administrar hidratos de carbono",
+      "b": "Administrar bolo de insulina rápida",
+      "c": "Administrar glucagón",
+      "d": "Indicar cesárea inmediata"
+    },
+    "correcta": "a",
+    "explicacion": "La hipoglucemia intraparto se maneja suspendiendo insulina y administrando glucosa.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-162",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con hipotiroidismo subclínico. TSH 7 mUI/L. Anti-TPO positivos. ¿Conducta?",
+    "opciones": {
+      "a": "Observar evolución",
+      "b": "Iniciar levotiroxina",
+      "c": "Solicitar ecografía tiroidea",
+      "d": "Repetir TSH en 8 semanas"
+    },
+    "correcta": "b",
+    "explicacion": "TSH >4 + anti-TPO positivos en embarazo indica iniciar tratamiento.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-163",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer embarazada con antecedente de trombosis venosa profunda. No trombofilia. ¿Profilaxis recomendada?",
+    "opciones": {
+      "a": "AAS",
+      "b": "HBPM durante todo el embarazo",
+      "c": "Heparina no fraccionada",
+      "d": "Ninguna"
+    },
+    "correcta": "b",
+    "explicacion": "El antecedente de TVP justifica HBPM preventivo durante la gestación.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-164",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En una paciente con LES y embarazo, ¿qué complicación neonatal puede aparecer por anti-Ro positivos?",
+    "opciones": {
+      "a": "Anencefalia",
+      "b": "Bloqueo auriculoventricular congénito",
+      "c": "Hidrocefalia",
+      "d": "Cardiopatía cianótica"
+    },
+    "correcta": "b",
+    "explicacion": "Anti-Ro/La se asocian a bloqueo AV congénito.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-165",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con sospecha de preeclampsia. ¿Qué estudio confirma proteinuria significativa?",
+    "opciones": {
+      "a": "Tira reactiva positiva",
+      "b": "Relación proteína/creatinina >0,3",
+      "c": "Densidad urinaria >1030",
+      "d": "Orina completa normal"
+    },
+    "correcta": "b",
+    "explicacion": "Relación P/C >0,3 o >300 mg/24 h confirma proteinuria.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-166",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con preeclampsia severa. ¿Qué antihipertensivo es de elección para crisis hipertensiva?",
+    "opciones": {
+      "a": "Metoprolol",
+      "b": "Nifedipina VO",
+      "c": "Lisinopril",
+      "d": "Hidroclorotiazida"
+    },
+    "correcta": "b",
+    "explicacion": "Nifedipina VO, labetalol EV o hidralazina EV son de elección.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-167",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En paciente con DG A2, ¿cuándo está indicada la inducción del parto?",
+    "opciones": {
+      "a": "37 semanas",
+      "b": "38–39 semanas",
+      "c": "40 semanas",
+      "d": "41 semanas"
+    },
+    "correcta": "b",
+    "explicacion": "DG insulinorrequiriente: indicar parto entre 38–39 semanas.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-168",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante asmática en crisis moderada. Saturación 92%, sibilancias difusas. ¿Conducta inicial?",
+    "opciones": {
+      "a": "Corticoide EV inmediato",
+      "b": "Salbutamol en puffs repetidos",
+      "c": "Intubación orotraqueal",
+      "d": "Nebulización con adrenalina"
+    },
+    "correcta": "b",
+    "explicacion": "El manejo agudo comienza con β2 inhalado de acción rápida.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-169",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con antecedente de bypass gástrico. ¿Qué déficit nutricional es más frecuente?",
+    "opciones": {
+      "a": "Vitamina B12",
+      "b": "Vitamina D",
+      "c": "Vitamina C",
+      "d": "Yodo"
+    },
+    "correcta": "a",
+    "explicacion": "El bypass gástrico genera malabsorción de B12 y hierro.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-170",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer embarazada con TA 180/115 y convulsión tónico-clónica. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Crisis epiléptica",
+      "b": "Eclampsia",
+      "c": "Preeclampsia leve",
+      "d": "Insuficiencia renal aguda"
+    },
+    "correcta": "b",
+    "explicacion": "Convulsión + HTA en embarazo = eclampsia.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-171",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Eclampsia. ¿Cuál es el tratamiento anticonvulsivante de elección?",
+    "opciones": {
+      "a": "Diazepam",
+      "b": "Fenitoína",
+      "c": "Sulfato de magnesio",
+      "d": "Levomepromazina"
+    },
+    "correcta": "c",
+    "explicacion": "El sulfato de magnesio es el estándar terapéutico.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-172",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipertiroidismo severo descompensado. ¿Cuál es una complicación obstétrica importante?",
+    "opciones": {
+      "a": "CIUR",
+      "b": "Feto macrosómico",
+      "c": "Acretismo placentario",
+      "d": "DPPNI"
+    },
+    "correcta": "a",
+    "explicacion": "El hipertiroidismo descompensado se asocia a restricción del crecimiento y parto pretérmino.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-173",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedente de cirugía cardíaca con prótesis valvular. ¿Qué anticoagulación se recomienda?",
+    "opciones": {
+      "a": "HBPM toda la gestación",
+      "b": "Warfarina todo el embarazo",
+      "c": "Warfarina hasta la semana 36",
+      "d": "Heparina no fraccionada subcutánea"
+    },
+    "correcta": "c",
+    "explicacion": "Prótesis mecánicas: warfarina hasta la 36, luego heparina para parto.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-174",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DG bien controlada. Ecografía: polihidramnios. ¿Qué complicación fetal sospecha?",
+    "opciones": {
+      "a": "Atresia esofágica",
+      "b": "Tetralogía de Fallot",
+      "c": "Agenesia renal",
+      "d": "Anencefalia"
+    },
+    "correcta": "a",
+    "explicacion": "Polihidramnios + diabetes: sospechar malformaciones que alteren la deglución.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-175",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con ITU alta y fiebre persistente pese a antibióticos por 48 h. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "a": "Pielonefritis complicada",
+      "b": "Shock séptico",
+      "c": "Absceso renal",
+      "d": "Trabajo de parto pretérmino"
+    },
+    "correcta": "c",
+    "explicacion": "Fiebre persistente en pielonefritis gestacional obliga a descartar absceso renal.",
+    "oficial": false
+  },
+    
+  {
+    "id": "obstetricia-009-176",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con diabetes tipo 1 presenta hiperglucemias persistentes pese a ajustes de insulina. ¿Cuál es la complicación obstétrica más vinculada a descontrol glucémico sostenido?",
+    "opciones": {
+      "a": "Anemia fetal",
+      "b": "Polihidramnios",
+      "c": "Placenta previa",
+      "d": "Oligohidramnios"
+    },
+    "correcta": "b",
+    "explicacion": "El exceso de glucosa fetal provoca poliuria fetal, generando polihidramnios.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-177",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con LES controlado y embarazo de 20 semanas. Anti-Ro positivos. ¿Qué control fetal es obligatorio?",
+    "opciones": {
+      "a": "Ecografía obstétrica cada 4 semanas",
+      "b": "Perfil biofísico semanal",
+      "c": "Ecocardiograma fetal seriado",
+      "d": "Doppler uterino"
+    },
+    "correcta": "c",
+    "explicacion": "El bloqueo AV congénito asociado a anti-Ro requiere ecocardiografía fetal seriada.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-178",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con DG A2 en tratamiento con insulina. A las 34 semanas presenta feto con peso estimado > P95. ¿Cuál es la complicación más probable al nacimiento?",
+    "opciones": {
+      "a": "Hipotermia neonatal",
+      "b": "Hipocalcemia",
+      "c": "Distocia de hombros",
+      "d": "Enterocolitis necrotizante"
+    },
+    "correcta": "c",
+    "explicacion": "La macrosomía por DG aumenta marcadamente el riesgo de distocia de hombros.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-179",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante de 14 semanas con antecedente de preeclampsia severa en embarazo previo. ¿Qué medida preventiva corresponde?",
+    "opciones": {
+      "a": "Calcio 1 g/día",
+      "b": "Heparina profiláctica",
+      "c": "AAS 100 mg/día",
+      "d": "Dieta hiposódica estricta"
+    },
+    "correcta": "c",
+    "explicacion": "El AAS desde 12–16 semanas reduce el riesgo de recurrencia de preeclampsia.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-180",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con crisis hipertensiva (TA 190/120). ¿Cuál es el objetivo de descenso de presión en la primera hora?",
+    "opciones": {
+      "a": "Normalizar TA inmediata",
+      "b": "Reducir PAS 25% en la primera hora",
+      "c": "Reducir PAD a <80 mmHg",
+      "d": "Descenso rápido hasta 120/80"
+    },
+    "correcta": "b",
+    "explicacion": "El descenso excesivo puede comprometer perfusión placentaria; se reduce 20–25%.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-181",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con antecedente de nefropatía crónica leve. Presenta proteinuria 2 g/día persistente desde el primer trimestre. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Preeclampsia",
+      "b": "HTA gestacional",
+      "c": "Enfermedad renal crónica",
+      "d": "Preeclampsia sobreagregada"
+    },
+    "correcta": "c",
+    "explicacion": "La proteinuria previa a 20 semanas indica patología renal crónica preexistente.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-182",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con DG y controles glucémicos adecuados. ¿Cuál es el momento ideal para el tamizaje de malformaciones cardíacas?",
+    "opciones": {
+      "a": "20–22 semanas",
+      "b": "26–28 semanas",
+      "c": "30–32 semanas",
+      "d": "12 semanas"
+    },
+    "correcta": "a",
+    "explicacion": "Las malformaciones cardíacas son más frecuentes en DG y se pesquisan en la ecografía morfológica de 20–22 semanas.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-183",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con DG A1 en seguimiento. Glucemias normales pero crecimiento fetal acelerado en ecografía. ¿Conducta?",
+    "opciones": {
+      "a": "Mantener plan",
+      "b": "Iniciar insulina",
+      "c": "Suspender ejercicio",
+      "d": "Inducir parto inmediato"
+    },
+    "correcta": "b",
+    "explicacion": "El crecimiento fetal excesivo indica insuficiente control metabólico y obliga a iniciar insulina.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-184",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En eclampsia, ¿cuál es el signo que sugiere toxicidad por sulfato de magnesio?",
+    "opciones": {
+      "a": "Hiperreflexia",
+      "b": "Depresión de reflejos osteotendinosos",
+      "c": "Midriasis",
+      "d": "Sudoración profusa"
+    },
+    "correcta": "b",
+    "explicacion": "La pérdida de reflejos es el primer signo de toxicidad por magnesio.",
+    "oficial": false
+  },
+  {
+    "id": "obstetricia-009-185",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con asma persistente leve antes del embarazo. En gestación presenta síntomas diarios. ¿Qué ajuste corresponde?",
+    "opciones": {
+      "a": "Suspender corticoides inhalados",
+      "b": "Agregar LABA al corticoide inhalado",
+      "c": "Cambiar a corticoides orales",
+      "d": "Solo salbutamol a demanda"
+    },
+    "correcta": "b",
+    "explicacion": "El control insuficiente requiere combinación ICS + LABA.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-186",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con hipotiroidismo severo. TSH muy elevada. ¿Cuál es la principal complicación fetal?",
+    "opciones": {
+      "a": "Macrosomía",
+      "b": "Retraso del crecimiento",
+      "c": "Muerte fetal",
+      "d": "Hiperinsulinismo"
+    },
+    "correcta": "b",
+    "explicacion": "El hipotiroidismo materno mal controlado afecta crecimiento fetal y desarrollo neurológico.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-187",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedentes de SAF obstétrico. ¿Qué esquema se recomienda para prevenir complicaciones?",
+    "opciones": {
+      "a": "HBPM + AAS",
+      "b": "AAS solo",
+      "c": "Warfarina todo el embarazo",
+      "d": "Corticoides"
+    },
+    "correcta": "a",
+    "explicacion": "El SAF obstétrico requiere doble profilaxis (HBPM + AAS).",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-188",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con consumo reciente de warfarina por prótesis valvular. Feto con hallazgos de nasal hipoplásico. Diagnóstico probable:",
+    "opciones": {
+      "a": "Síndrome alcohólico fetal",
+      "b": "Embriopatía por warfarina",
+      "c": "Defecto del tubo neural",
+      "d": "Síndrome de Potter"
+    },
+    "correcta": "b",
+    "explicacion": "La warfarina en primer trimestre causa embriopatía característica.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-189",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente de 38 semanas con HTA gestacional. ¿Cuándo se indica resolución del embarazo?",
+    "opciones": {
+      "a": "37 semanas",
+      "b": "39 semanas",
+      "c": "41 semanas",
+      "d": "Cuando aparezca proteinuria"
+    },
+    "correcta": "a",
+    "explicacion": "La HTA gestacional requiere resolución a las 37 semanas según guías MSAL.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-190",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con hipertiroidismo tratado con metimazol presenta rash y fiebre. ¿Conducta?",
+    "opciones": {
+      "a": "Continuar tratamiento",
+      "b": "Cambiar a propiltiuracilo",
+      "c": "Suspender y usar levotiroxina",
+      "d": "Administrar yodo radiactivo"
+    },
+    "correcta": "b",
+    "explicacion": "Metimazol puede causar reacciones adversas; se cambia a PTU.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-191",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer con DG presenta hipoglucemia neonatal en RN. ¿Cuál es la causa?",
+    "opciones": {
+      "a": "Falla adrenal",
+      "b": "Hipotiroidismo fetal",
+      "c": "Hiperinsulinismo fetal",
+      "d": "Sufrimiento fetal agudo"
+    },
+    "correcta": "c",
+    "explicacion": "El exceso de glucosa materna genera hiperinsulinismo fetal y posterior hipoglucemia neonatal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-192",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con asma persistente grave. Embarazo de 24 semanas. Saturación 90%. ¿Conducta inicial?",
+    "opciones": {
+      "a": "Corticoides orales",
+      "b": "Oxígeno suplementario",
+      "c": "Antileucotrienos",
+      "d": "LABA"
+    },
+    "correcta": "b",
+    "explicacion": "Toda embarazada con saturación <95% requiere oxigenoterapia inmediata.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-193",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante obesa IMC>40. ¿Qué complicación intraparto es más frecuente?",
+    "opciones": {
+      "a": "Prolapso de cordón",
+      "b": "Parto precipitado",
+      "c": "Cesárea por detención del descenso",
+      "d": "Taquisistolia"
+    },
+    "correcta": "c",
+    "explicacion": "La obesidad aumenta trabajo de parto prolongado y necesidad de cesárea.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-194",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con epilepsia controlada con levetiracetam. ¿Cuál es la recomendación en embarazo?",
+    "opciones": {
+      "a": "Suspender medicación",
+      "b": "Sustituir por ácido valproico",
+      "c": "Mantener tratamiento",
+      "d": "Reducir dosis a la mitad"
+    },
+    "correcta": "c",
+    "explicacion": "El levetiracetam es uno de los anticonvulsivantes más seguros en embarazo.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-195",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En una paciente con DG, ¿qué valor de glucemia poscarga 2 h confirma el diagnóstico?",
+    "opciones": {
+      "a": "≥ 120 mg/dL",
+      "b": "≥ 140 mg/dL",
+      "c": "≥ 153 mg/dL",
+      "d": "≥ 200 mg/dL"
+    },
+    "correcta": "c",
+    "explicacion": "Según MSAL/SOGIBA, ≥153 mg/dL a las 2 h confirma DG.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-196",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Mujer embarazada con insuficiencia cardíaca clase NYHA III. ¿Cuál es el riesgo principal?",
+    "opciones": {
+      "a": "Muerte materna",
+      "b": "Macrosomía",
+      "c": "Polihidramnios",
+      "d": "Placenta previa"
+    },
+    "correcta": "a",
+    "explicacion": "El embarazo aumenta la mortalidad en cardiopatías severas (NYHA III–IV).",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-197",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Paciente con antecedentes de enfermedad renal crónica leve. TA 150/90 y proteinuria nueva de 1 g/día a las 32 semanas. ¿Diagnóstico?",
+    "opciones": {
+      "a": "Preeclampsia sobreagregada",
+      "b": "Recaída de ERC",
+      "c": "HTA gestacional",
+      "d": "HTA crónica sin complicaciones"
+    },
+    "correcta": "a",
+    "explicacion": "Proteinuria nueva + HTA en embarazo sobre patología renal previa = sobreagregada.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-198",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "En una embarazada con tiroiditis de Hashimoto, ¿qué se ajusta prioritariamente en controles?",
+    "opciones": {
+      "a": "TSH",
+      "b": "T3",
+      "c": "T4 total",
+      "d": "Calcio sérico"
+    },
+    "correcta": "a",
+    "explicacion": "La TSH es el parámetro más útil para ajustar levotiroxina.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-199",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Gestante con DM1 presenta hiperglucemia severa y cetonuria. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Aumentar insulina basal",
+      "b": "Administrar bolo subcutáneo",
+      "c": "Tratar como cetoacidosis diabética",
+      "d": "Dar líquidos por boca"
+    },
+    "correcta": "c",
+    "explicacion": "La cetoacidosis diabética en embarazo es una urgencia materno-fetal.",
+    "oficial": false
+  },
+
+  {
+    "id": "obstetricia-009-200",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "Embarazada con LES en remisión. A las 30 semanas presenta brote cutáneo y proteinuria. ¿Cuál es la principal sospecha?",
+    "opciones": {
+      "a": "Preeclampsia severa",
+      "b": "Reactivación del LES",
+      "c": "HTA gestacional",
+      "d": "Nefropatía diabética"
+    },
+    "correcta": "b",
+    "explicacion": "El brote cutáneo + proteinuria orienta más a reactivación del LES que a preeclampsia.",
+    "oficial": false
+  }
+]
