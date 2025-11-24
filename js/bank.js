@@ -140,33 +140,45 @@ async function loadFileIfExists(ruta, tipo, ids, exam = null) {
 }
 
 /* ==========================================================
-   🧬 Normalizar pregunta (versión completa)
+   🧬 Normalizar pregunta (versión tolerante PRO)
    ========================================================== */
 
 function normalizeQuestion(q, tipo, exam) {
 
-  // materia / submateria
-  q.materia    = normalize(q.materia || "otras");
-  q.submateria = normalize(q.submateria || "otras");
+  /* ----- materia ----- */
+  // aceptar: "Cardiología", ["🫀 Cardiología"], "cardiologia"
+  if (Array.isArray(q.materia)) {
+    q.materia = q.materia[0] || "otras";
+  }
+  if (!q.materia) q.materia = "otras";
+
+  q.materia = normalize(q.materia);
+
+  /* ----- submateria ----- */
+  if (Array.isArray(q.submateria)) {
+    q.submateria = q.submateria[0] || "otras";
+  }
+  if (!q.submateria) q.submateria = "otras";
+
+  q.submateria = normalize(q.submateria);
 
   if (!BANK.subsubjects[q.materia]) {
-    BANK.subsubjects[q.materia] = ["Otras preguntas"];
+    BANK.subsubjects[q.materia] = ["otras"];
   }
 
-  // -------- OPCIONES: reparar TODOS los formatos posibles --------
+  /* ----- opciones ----- */
   q.opciones = getOpcionesArray(q);
 
-  // -------- CORRECTA -> índice estandarizado --------
+  /* ----- correcta ----- */
   q.correcta = getCorrectIndex(q);
 
-  // extras
+  /* ----- extras ----- */
+  if (!Array.isArray(q.imagenes)) q.imagenes = [];
   if (!q.explicacion) q.explicacion = null;
-  if (!q.imagenes) q.imagenes = [];
 
-  // tipo
   q.tipo = tipo;
 
-  // metadatos de examen
+  /* ----- metadatos de examen ----- */
   if (tipo === "examen" && exam) {
     q.examen  = exam.id;
     q.anio    = exam.anio;
@@ -176,6 +188,47 @@ function normalizeQuestion(q, tipo, exam) {
     q.anio    = null;
     q.oficial = false;
   }
+}
+
+/* ==========================================================
+   🔧 Conversión universal de opciones
+   ========================================================== */
+
+function getOpcionesArray(q) {
+  // ya es array
+  if (Array.isArray(q.opciones)) return q.opciones.slice();
+
+  // objeto tipo {a: "...", b:"...", ...}
+  if (q.opciones && typeof q.opciones === "object") {
+    const letras = ["a","b","c","d","e"];
+    return letras.map(l => q.opciones[l]).filter(v => v != null && v !== "");
+  }
+
+  // forma antigua opcion_a / opcion_b ...
+  const keys = ["opcion_a","opcion_b","opcion_c","opcion_d","opcion_e"];
+  const arr = keys.map(k => q[k]).filter(v => v != null && v !== "");
+  if (arr.length) return arr;
+
+  return []; // fallback
+}
+
+/* ==========================================================
+   🔧 Convertir "correcta" a índice
+   ========================================================== */
+
+function getCorrectIndex(q) {
+  // número (0–3)
+  if (typeof q.correcta === "number") return q.correcta;
+
+  // letra
+  if (typeof q.correcta === "string") {
+    const clean = q.correcta.trim().toLowerCase();
+    const map = { a:0, b:1, c:2, d:3, e:4 };
+    if (map[clean] != null) return map[clean];
+  }
+
+  // si no viene correcta: sin solución → -1
+  return -1;
 }
 
 /* ==========================================================
