@@ -7,7 +7,7 @@ let CURRENT = {
   i: 0,
   modo: "",
   config: {},
-  session: {}   
+  session: {}
 };
 
 /* ==========================================================
@@ -35,38 +35,79 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 Helper: obtener opciones en formato array
+   🧩 Helper: obtener opciones en formato array (FULL)
    - Soporta:
-   - q.opciones = [ "op1", "op2", ... ]
-   - q.a, q.b, q.c, q.d
+     1) q.opciones = [ "op1", "op2", ... ]
+     2) q.opciones = { a:"", b:"", c:"", d:"" }
+     3) q.opcion_a / opcion_b / opcion_c / opcion_d
+     4) q.a / q.b / q.c / q.d  (formato viejo)
    ========================================================== */
 function getOpcionesArray(q) {
+  // 1) Ya es array
   if (Array.isArray(q.opciones) && q.opciones.length) {
     return q.opciones;
   }
 
-  // Soportar formato viejo a/b/c/d
-  const posibles = [q.a, q.b, q.c, q.d].filter(v => v != null && v !== "");
-  if (posibles.length) return posibles;
+  // 2) Objeto {a,b,c,d}
+  if (q.opciones && typeof q.opciones === "object" && !Array.isArray(q.opciones)) {
+    const keys = ["a", "b", "c", "d", "e"];
+    const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
+    if (arr.length) return arr;
+  }
+
+  // 3) opcion_a/opcion_b...
+  const arr2 = [q.opcion_a, q.opcion_b, q.opcion_c, q.opcion_d, q.opcion_e]
+    .filter(v => v != null && v !== "");
+  if (arr2.length) return arr2;
+
+  // 4) formato viejo a/b/c/d
+  const arr3 = [q.a, q.b, q.c, q.d, q.e].filter(v => v != null && v !== "");
+  if (arr3.length) return arr3;
 
   return []; // sin opciones
 }
 
 /* ==========================================================
-   🧩 Helper: índice correcto (0–3) aunque venga como "a"/"b"/"c"/"d"
+   🧩 Helper: índice correcto (0–3) robusto
+   - Soporta:
+     - q.correcta = 0..3
+     - q.correcta = "a"/"b"/"c"/"d"
+     - q.correctaLetra = "a"... (si existe)
+   - Devuelve:
+     - número (0..n-1) o null si no se puede determinar
    ========================================================== */
-function getCorrectIndex(q) {
+function getCorrectIndex(q, opcionesLen) {
+  const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+
   let c = q.correcta;
 
-  if (typeof c === "string") {
-    const mapa = { a: 0, b: 1, c: 2, d: 3 };
-    const key = c.trim().toLowerCase();
-    return mapa[key] ?? 0;
+  // número
+  if (typeof c === "number") {
+    if (!Number.isFinite(c)) return null;
+    if (c < 0) return null;
+    if (typeof opcionesLen === "number" && opcionesLen > 0 && c >= opcionesLen) return null;
+    return c;
   }
 
-  if (typeof c === "number") return c;
+  // letra en correcta
+  if (typeof c === "string") {
+    const key = c.trim().toLowerCase();
+    const idx = mapa[key];
+    if (idx == null) return null;
+    if (typeof opcionesLen === "number" && opcionesLen > 0 && idx >= opcionesLen) return null;
+    return idx;
+  }
 
-  return 0;
+  // letra alternativa (si tu bank.js la guarda)
+  if (typeof q.correctaLetra === "string") {
+    const key = q.correctaLetra.trim().toLowerCase();
+    const idx = mapa[key];
+    if (idx == null) return null;
+    if (typeof opcionesLen === "number" && opcionesLen > 0 && idx >= opcionesLen) return null;
+    return idx;
+  }
+
+  return null;
 }
 
 /* ==========================================================
@@ -88,14 +129,15 @@ function renderPregunta() {
   const marcada = getRespuestaMarcada(q.id);
 
   const opciones = getOpcionesArray(q);
-  const correctIndex = getCorrectIndex(q);
+  const correctIndex = getCorrectIndex(q, opciones.length);
 
   /* ------ OPCIONES ------ */
   const opcionesHTML = opciones.map((op, idx) => {
     let cls = "q-option";
 
     if (estado) {
-      if (idx === correctIndex) cls += " option-correct";
+      // Solo pintamos la correcta si existe
+      if (correctIndex != null && idx === correctIndex) cls += " option-correct";
       else if (marcada === idx && estado === "bad") cls += " option-wrong";
     }
 
@@ -188,8 +230,11 @@ function answer(idx) {
   // no permitir cambiar respuesta en la misma sesión
   if (CURRENT.session[q.id]) return;
 
-  const correctIndex = getCorrectIndex(q);
-  const esCorrecta = idx === correctIndex;
+  const opciones = getOpcionesArray(q);
+  const correctIndex = getCorrectIndex(q, opciones.length);
+
+  // si no hay correcta determinable, igual marcamos como "bad" (pero sin verde)
+  const esCorrecta = (correctIndex != null) ? (idx === correctIndex) : false;
   const estado = esCorrecta ? "ok" : "bad";
 
   CURRENT.session[q.id] = estado;
