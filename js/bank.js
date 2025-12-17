@@ -39,6 +39,46 @@ function normalize(s) {
 }
 
 /* ==========================================================
+   🧼 IDs y dedupe (CLAVE para que no se repitan preguntas)
+   ========================================================== */
+
+function normalizeId(id) {
+  if (id == null) return "";
+  return String(id).trim();
+}
+
+function dedupeQuestionsById(list) {
+  const map = new Map();
+  const dupes = [];
+
+  for (const q of (list || [])) {
+    if (!q || typeof q !== "object") continue;
+
+    q.id = normalizeId(q.id);
+
+    // si no tiene id, no podemos deduplicar por id (lo dejamos, pero es raro)
+    if (!q.id) {
+      const key = "__noid__" + Math.random().toString(16).slice(2);
+      map.set(key, q);
+      continue;
+    }
+
+    if (map.has(q.id)) {
+      dupes.push(q.id);
+      continue;
+    }
+
+    map.set(q.id, q);
+  }
+
+  if (dupes.length) {
+    console.warn("🧯 IDs duplicados detectados (se eliminaron repetidos):", dupes);
+  }
+
+  return Array.from(map.values());
+}
+
+/* ==========================================================
    🧱 BANK — estructura base
    ========================================================== */
 
@@ -62,8 +102,11 @@ try {
   const savedBank = localStorage.getItem("MEbank_BANK_v1");
   if (savedBank) {
     const parsed = JSON.parse(savedBank);
-    BANK.questions = parsed.questions || [];
+
+    // ✅ saneo por si el BANK guardado ya venía con ids duplicados
+    BANK.questions = dedupeQuestionsById(parsed.questions || []);
     BANK.loaded = parsed.loaded || false;
+
     console.log("📦 Banco restaurado desde localStorage:", BANK.questions.length, "preguntas");
   }
 } catch (e) {
@@ -82,6 +125,9 @@ async function loadAllBanks() {
 
   await loadFromMaterias(ids);
   await loadFromExamenes(ids);
+
+  // ✅ saneo final (por si entró algo raro, o ids iguales en 2 archivos)
+  BANK.questions = dedupeQuestionsById(BANK.questions);
 
   BANK.loaded = true;
   console.log("✔ Banco cargado:", BANK.questions.length, "preguntas");
@@ -128,9 +174,11 @@ async function loadFileIfExists(ruta, tipo, ids, exam = null) {
     for (const q of data) {
       normalizeQuestion(q, tipo, exam);
 
-      // si no trae id, generamos uno (evita "undefined" y colisiones raras)
+      // ✅ id normalizado y siempre presente
+      q.id = normalizeId(q.id);
       if (!q.id) q.id = `${tipo}_${Math.random().toString(36).slice(2, 10)}`;
 
+      // ✅ dedupe por id global
       if (!ids.has(q.id)) {
         ids.add(q.id);
         BANK.questions.push(q);
@@ -155,23 +203,20 @@ function canonicalizeSubmateria(mSlug, rawSub) {
   const normalizedList = list.map(t => normalize(t));
   const subNorm = normalize(rawSub);
 
-  // 1) match exacto contra los subtemas oficiales
+  // 1) match exacto
   const idxExact = normalizedList.indexOf(subNorm);
   if (idxExact !== -1) return normalizedList[idxExact];
 
-  // 2) match por "contiene" (útil cuando submateria viene tipo "Cardiología – X")
-  //    ej: "hipertension" debería caer en "Hipertensión arterial y factores de riesgo"
+  // 2) match por "contiene"
   for (let i = 0; i < list.length; i++) {
     const tNorm = normalizedList[i];
     if (!tNorm) continue;
-
-    // si alguno de los dos contiene al otro, lo damos por match
     if (subNorm.includes(tNorm) || tNorm.includes(subNorm)) {
       return tNorm;
     }
   }
 
-  // 3) fallback: último subtema suele ser "Otras preguntas de ..."
+  // 3) fallback: último subtema (suele ser "Otras preguntas de ...")
   const fallback = normalizedList[normalizedList.length - 1] || "otras";
   return fallback || "otras";
 }
@@ -184,18 +229,15 @@ function normalizeQuestion(q, tipo, exam) {
   if (!q || typeof q !== "object") return;
 
   /* ----- materia ----- */
-  // aceptar: "Cardiología", ["🫀 Cardiología"], "cardiologia"
   if (Array.isArray(q.materia)) q.materia = q.materia[0] || "otras";
   if (!q.materia) q.materia = "otras";
 
-  // slug final
   q.materia = normalize(q.materia);
 
   // si la materia no existe en SUBJECTS, mandala a "otras"
   const existeMateria = (BANK.subjects || []).some(s => s.slug === q.materia);
   if (!existeMateria) q.materia = "otras";
 
-  // asegurar subsubjects de esa materia
   if (!BANK.subsubjects[q.materia]) {
     BANK.subsubjects[q.materia] = ["Otras preguntas de " + q.materia];
   }
@@ -204,7 +246,6 @@ function normalizeQuestion(q, tipo, exam) {
   if (Array.isArray(q.submateria)) q.submateria = q.submateria[0] || "";
   if (!q.submateria) q.submateria = "";
 
-  // IMPORTANTÍSIMO: encajar submateria a lista oficial
   q.submateria = canonicalizeSubmateria(q.materia, q.submateria);
 
   /* ----- opciones ----- */
@@ -238,17 +279,14 @@ function normalizeQuestion(q, tipo, exam) {
    ========================================================== */
 
 function getOpcionesArray(q) {
-  // 1) ya es array
   if (Array.isArray(q.opciones)) return q.opciones.slice();
 
-  // 2) objeto tipo {a: "...", b:"...", c:"...", d:"..."}
   if (q.opciones && typeof q.opciones === "object") {
     const letras = ["a","b","c","d","e"];
     const arr = letras.map(l => q.opciones[l]).filter(v => v != null && v !== "");
     if (arr.length) return arr;
   }
 
-  // 3) forma antigua opcion_a / opcion_b ...
   const keys = ["opcion_a","opcion_b","opcion_c","opcion_d","opcion_e"];
   const arr2 = keys.map(k => q[k]).filter(v => v != null && v !== "");
   if (arr2.length) return arr2;
@@ -261,13 +299,11 @@ function getOpcionesArray(q) {
    ========================================================== */
 
 function getCorrectIndex(q) {
-  // si ya viene numérico válido
   if (typeof q.correcta === "number") {
     if (Number.isFinite(q.correcta) && q.correcta >= 0) return q.correcta;
     return -1;
   }
 
-  // si viene letra
   if (typeof q.correcta === "string") {
     const clean = q.correcta.trim().toLowerCase();
     const map = { a:0, b:1, c:2, d:3, e:4 };
