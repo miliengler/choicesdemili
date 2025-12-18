@@ -63,8 +63,7 @@ async function loadAllBanks() {
 
   // A) Materias 
   BANK.subjects.forEach(subj => {
-    // CAMBIAMOS EL 4 POR EL 10 PARA QUE LEA HASTA 10 ARCHIVOS POR MATERIA
-    for (let i = 1; i <= 10; i++) { 
+    for (let i = 1; i <= 20; i++) { 
       urls.push({
         url: `bancos/${subj.slug}/${subj.slug}${i}.json`,
         type: "materia",
