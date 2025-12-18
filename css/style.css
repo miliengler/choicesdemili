@@ -264,6 +264,19 @@ button:hover { transform: translateY(-2px); }
   font-weight: 600;
   margin-bottom: 10px;
 }
+
+<div class="q-sidebar">
+  <div class="q-sidebar-header">Preguntas</div>
+
+  <div class="q-sidebar-pager">
+    <button class="btn-small" id="sbPrev">◀</button>
+    <div class="q-sidebar-pageinfo" id="sbInfo">1–60</div>
+    <button class="btn-small" id="sbNext">▶</button>
+  </div>
+
+  <div class="q-sidebar-grid" id="sbGrid"></div>
+</div>
+
 .q-sidebar-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -293,6 +306,26 @@ button:hover { transform: translateY(-2px); }
 }
 .sb-note {
   box-shadow: 0 0 0 2px #facc15 inset;
+}
+
+.q-sidebar-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.q-sidebar-pager .btn-small {
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.q-sidebar-pageinfo {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 /* ==========================================================
