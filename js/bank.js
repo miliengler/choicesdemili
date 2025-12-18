@@ -61,10 +61,10 @@ async function loadAllBanks() {
   // 1. Recopilar TODAS las URLs que necesitamos
   const urls = [];
 
-  // A) Materias (asumimos 4 partes por materia)
-  // Si tus archivos son menos o más, el fetch fallará rápido y lo ignoramos, no pasa nada.
+  // A) Materias 
   BANK.subjects.forEach(subj => {
-    for (let i = 1; i <= 4; i++) {
+    // CAMBIAMOS EL 4 POR EL 10 PARA QUE LEA HASTA 10 ARCHIVOS POR MATERIA
+    for (let i = 1; i <= 10; i++) { 
       urls.push({
         url: `bancos/${subj.slug}/${subj.slug}${i}.json`,
         type: "materia",
@@ -72,6 +72,7 @@ async function loadAllBanks() {
       });
     }
   });
+
 
   // B) Exámenes Anteriores (desde EXAMENES_META en config.js)
   if (typeof EXAMENES_META !== 'undefined') {
