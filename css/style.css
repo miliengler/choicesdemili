@@ -145,7 +145,7 @@ button:hover { transform: translateY(-2px); }
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: conic-gradient(from -90deg, var(--accent) 0deg, #e5e7eb 0deg);
+  background: conic-gradient(from -90deg, var(--accent) 0deg 0deg, #e5e7eb 0deg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +153,6 @@ button:hover { transform: translateY(-2px); }
   font-weight: 600;
   color: var(--muted);
 }
-
 /* ==========================================================
    🎯 RESOLVER – LAYOUT
    ========================================================== */
