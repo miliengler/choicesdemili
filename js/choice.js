@@ -15,23 +15,25 @@ function renderProgressCircle(percent) {
   const circumference = 2 * Math.PI * radius;
 
   const offset = circumference - (percent / 100) * circumference;
+  const cx = size / 2;
+  const cy = size / 2;
 
   return `
-    <svg width="${size}" height="${size}">
+    <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
       <!-- Círculo base gris -->
       <circle
-        cx="${size/2}"
-        cy="${size/2}"
+        cx="${cx}"
+        cy="${cy}"
         r="${radius}"
         stroke="#e2e8f0"
         stroke-width="${stroke}"
         fill="none"
       ></circle>
 
-      <!-- Progreso verde -->
+      <!-- Progreso (arranca en 12 hs) -->
       <circle
-        cx="${size/2}"
-        cy="${size/2}"
+        cx="${cx}"
+        cy="${cy}"
         r="${radius}"
         stroke="${percent === 0 ? '#cbd5e1' : '#16a34a'}"
         stroke-width="${stroke}"
@@ -39,6 +41,7 @@ function renderProgressCircle(percent) {
         stroke-dasharray="${circumference}"
         stroke-dashoffset="${offset}"
         stroke-linecap="round"
+        transform="rotate(-90 ${cx} ${cy})"
         style="transition: stroke-dashoffset 0.6s ease;"
       ></circle>
 
