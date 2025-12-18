@@ -1,11 +1,10 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco simple y estable (modo botón)
+   🌐 MEbank 3.0 — Banco TURBO (Carga paralela)
    ========================================================== */
 
 /* ==========================================================
-   🔐 PROGRESO (único guardado)
+   🔐 PROGRESO (Esto SÍ se guarda en localStorage)
    ========================================================== */
-
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
 function loadProgress() {
@@ -21,338 +20,198 @@ function saveProgress() {
 let PROG = loadProgress();
 
 /* ==========================================================
-   🔤 Normalizador (robusto)
-   - saca tildes
-   - saca emojis
-   - deja solo letras/números
+   🔤 Utilidades (Normalizar y Deduplicar)
    ========================================================== */
-
 function normalize(s) {
-  return s
-    ? String(s)
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "")
-        .replace(/[^\p{L}\p{N}]/gu, "")
-        .toLowerCase()
-    : "";
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() : "";
 }
-
-/* ==========================================================
-   🧼 IDs y dedupe (CLAVE para que no se repitan preguntas)
-   ========================================================== */
 
 function normalizeId(id) {
-  if (id == null) return "";
-  return String(id).trim();
-}
-
-function dedupeQuestionsById(list) {
-  const map = new Map();
-  const dupes = [];
-
-  for (const q of (list || [])) {
-    if (!q || typeof q !== "object") continue;
-
-    q.id = normalizeId(q.id);
-
-    // si no tiene id, no podemos deduplicar por id (lo dejamos, pero es raro)
-    if (!q.id) {
-      const key = "__noid__" + Math.random().toString(16).slice(2);
-      map.set(key, q);
-      continue;
-    }
-
-    if (map.has(q.id)) {
-      dupes.push(q.id);
-      continue;
-    }
-
-    map.set(q.id, q);
-  }
-
-  if (dupes.length) {
-    console.warn("🧯 IDs duplicados detectados (se eliminaron repetidos):", dupes);
-  }
-
-  return Array.from(map.values());
+  return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
 }
 
 /* ==========================================================
-   🧱 BANK — estructura base
+   🧱 BANK — Estructura
    ========================================================== */
-
 let BANK = {
-  subjects: SUBJECTS,
+  subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [], // Lo toma de config.js
   subsubjects: {},
   questions: [],
   loaded: false
 };
 
-// Cargar subtemas base (texto UI)
-SUBJECTS.forEach(s => {
-  BANK.subsubjects[s.slug] = SUBTEMAS[s.slug] || [("Otras preguntas de " + s.name)];
-});
-
-/* ==========================================================
-   🔄 Intentar cargar BANK guardado
-   ========================================================== */
-
-try {
-  const savedBank = localStorage.getItem("MEbank_BANK_v1");
-  if (savedBank) {
-    const parsed = JSON.parse(savedBank);
-
-    // ✅ saneo por si el BANK guardado ya venía con ids duplicados
-    BANK.questions = dedupeQuestionsById(parsed.questions || []);
-    BANK.loaded = parsed.loaded || false;
-
-    console.log("📦 Banco restaurado desde localStorage:", BANK.questions.length, "preguntas");
-  }
-} catch (e) {
-  console.warn("⚠ Error cargando BANK guardado", e);
+// Inicializar subtemas vacíos
+if(typeof SUBJECTS !== 'undefined') {
+    SUBJECTS.forEach(s => {
+        BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
+          ? SUBTEMAS[s.slug] 
+          : ["General"];
+    });
 }
 
 /* ==========================================================
-   📦 CARGAR BANCOS (solo manual)
+   ⚡ CARGA TURBO (La magia ocurre aquí)
    ========================================================== */
 
 async function loadAllBanks() {
-  console.log("⏳ Cargando bancos…");
+  console.time("⏱ Tiempo de carga");
+  const appMsg = document.querySelector("#app div"); 
+  if(appMsg) appMsg.textContent = "🚀 Cargando banco completo...";
 
-  BANK.questions = [];
-  const ids = new Set();
+  // 1. Recopilar TODAS las URLs que necesitamos
+  const urls = [];
 
-  await loadFromMaterias(ids);
-  await loadFromExamenes(ids);
-
-  // ✅ saneo final (por si entró algo raro, o ids iguales en 2 archivos)
-  BANK.questions = dedupeQuestionsById(BANK.questions);
-
-  BANK.loaded = true;
-  console.log("✔ Banco cargado:", BANK.questions.length, "preguntas");
-}
-
-/* ==========================================================
-   🟦 1) Cargar materias
-   ========================================================== */
-
-async function loadFromMaterias(ids) {
-  for (const subj of SUBJECTS) {
-    const slug = subj.slug;
-
-    // tus bancos por materia: slug1..slug4 (si no existen, fetch falla ok)
+  // A) Materias (asumimos 4 partes por materia)
+  // Si tus archivos son menos o más, el fetch fallará rápido y lo ignoramos, no pasa nada.
+  BANK.subjects.forEach(subj => {
     for (let i = 1; i <= 4; i++) {
-      const ruta = `bancos/${slug}/${slug}${i}.json`;
-      await loadFileIfExists(ruta, "materia", ids);
+      urls.push({
+        url: `bancos/${subj.slug}/${subj.slug}${i}.json`,
+        type: "materia",
+        meta: subj
+      });
     }
+  });
+
+  // B) Exámenes Anteriores (desde EXAMENES_META en config.js)
+  if (typeof EXAMENES_META !== 'undefined') {
+    EXAMENES_META.forEach(ex => {
+      urls.push({
+        url: ex.file,
+        type: "examen",
+        meta: ex
+      });
+    });
   }
-}
 
-/* ==========================================================
-   🟩 2) Cargar exámenes
-   ========================================================== */
+  // 2. Disparar TODAS las peticiones en paralelo
+  // Promise.allSettled espera a que todas terminen (bien o mal)
+  const results = await Promise.allSettled(
+    urls.map(item => fetch(item.url).then(r => {
+      if (!r.ok) throw new Error("404");
+      return r.json().then(data => ({ data, type: item.type, meta: item.meta }));
+    }))
+  );
 
-async function loadFromExamenes(ids) {
-  for (const exam of EXAMENES_META) {
-    await loadFileIfExists(exam.file, "examen", ids, exam);
-  }
-}
+  // 3. Procesar resultados
+  let allQuestions = [];
+  let successCount = 0;
 
-/* ==========================================================
-   📄 Cargar archivo JSON si existe
-   ========================================================== */
-
-async function loadFileIfExists(ruta, tipo, ids, exam = null) {
-  try {
-    const resp = await fetch(ruta);
-    if (!resp.ok) return;
-
-    const data = await resp.json();
-    if (!Array.isArray(data)) return;
-
-    for (const q of data) {
-      normalizeQuestion(q, tipo, exam);
-
-      // ✅ id normalizado y siempre presente
-      q.id = normalizeId(q.id);
-      if (!q.id) q.id = `${tipo}_${Math.random().toString(36).slice(2, 10)}`;
-
-      // ✅ dedupe por id global
-      if (!ids.has(q.id)) {
-        ids.add(q.id);
-        BANK.questions.push(q);
+  results.forEach(res => {
+    if (res.status === "fulfilled") {
+      const { data, type, meta } = res.value;
+      if (Array.isArray(data)) {
+        successCount++;
+        // Normalizamos cada pregunta del archivo
+        data.forEach(q => {
+            // Ajustes rápidos antes de insertar
+            processQuestion(q, type, meta);
+            allQuestions.push(q);
+        });
       }
     }
+  });
 
-    console.log("📘", ruta, "+", data.length);
-  } catch (e) {
-    console.warn("⚠ No se pudo cargar", ruta);
-  }
+  // 4. Deduplicar y Guardar en Memoria RAM
+  BANK.questions = dedupeQuestionsById(allQuestions);
+  BANK.loaded = true;
+
+  console.timeEnd("⏱ Tiempo de carga");
+  console.log(`✅ Carga finalizada: ${successCount} archivos leídos. ${BANK.questions.length} preguntas totales.`);
+
+  // Aviso visual
+  if(appMsg) appMsg.textContent = "✔ Banco listo.";
+  
+  // Renderizar Home automáticamente si existe la función
+  if(typeof renderHome === "function") renderHome();
 }
 
 /* ==========================================================
-   🧩 Submateria → “encajar” en un subtema oficial
-   (esto arregla el: "materia X preguntas" pero subtemas 0)
+   🧬 Procesador de Pregunta Individual
    ========================================================== */
+function processQuestion(q, type, examMeta) {
+    // ID
+    q.id = normalizeId(q.id);
+    
+    // Materia
+    if (Array.isArray(q.materia)) q.materia = q.materia[0];
+    q.materia = normalize(q.materia || "otras");
+    // Fallback si la materia no está en config
+    if (!BANK.subjects.some(s => s.slug === q.materia)) q.materia = "otras";
 
-function canonicalizeSubmateria(mSlug, rawSub) {
-  const list = BANK.subsubjects[mSlug] || [];
-  if (!list.length) return "otras";
+    // Submateria (Simplificada)
+    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
+    q.submateria = normalize(q.submateria || "");
 
-  const normalizedList = list.map(t => normalize(t));
-  const subNorm = normalize(rawSub);
+    // Opciones y Correcta
+    q.opciones = getOpcionesArray(q);
+    q.correcta = getCorrectIndex(q);
 
-  // 1) match exacto
-  const idxExact = normalizedList.indexOf(subNorm);
-  if (idxExact !== -1) return normalizedList[idxExact];
-
-  // 2) match por "contiene"
-  for (let i = 0; i < list.length; i++) {
-    const tNorm = normalizedList[i];
-    if (!tNorm) continue;
-    if (subNorm.includes(tNorm) || tNorm.includes(subNorm)) {
-      return tNorm;
+    // Metadatos Examen
+    q.tipo = type;
+    if (type === "examen" && examMeta) {
+        q.examen = examMeta.id;
+        q.anio = examMeta.anio;
+    } else {
+        q.examen = null;
     }
-  }
-
-  // 3) fallback: último subtema (suele ser "Otras preguntas de ...")
-  const fallback = normalizedList[normalizedList.length - 1] || "otras";
-  return fallback || "otras";
 }
 
 /* ==========================================================
-   🧬 Normalizar pregunta (versión tolerante PRO, sin duplicados)
+   🔧 Helpers de Limpieza
    ========================================================== */
-
-function normalizeQuestion(q, tipo, exam) {
-  if (!q || typeof q !== "object") return;
-
-  /* ----- materia ----- */
-  if (Array.isArray(q.materia)) q.materia = q.materia[0] || "otras";
-  if (!q.materia) q.materia = "otras";
-
-  q.materia = normalize(q.materia);
-
-  // si la materia no existe en SUBJECTS, mandala a "otras"
-  const existeMateria = (BANK.subjects || []).some(s => s.slug === q.materia);
-  if (!existeMateria) q.materia = "otras";
-
-  if (!BANK.subsubjects[q.materia]) {
-    BANK.subsubjects[q.materia] = ["Otras preguntas de " + q.materia];
-  }
-
-  /* ----- submateria ----- */
-  if (Array.isArray(q.submateria)) q.submateria = q.submateria[0] || "";
-  if (!q.submateria) q.submateria = "";
-
-  q.submateria = canonicalizeSubmateria(q.materia, q.submateria);
-
-  /* ----- opciones ----- */
-  q.opciones = getOpcionesArray(q);
-
-  /* ----- correcta ----- */
-  const idx = getCorrectIndex(q);
-  q.correcta = idx; // índice 0–3
-  q.correctaLetra = idx >= 0 ? (["a","b","c","d","e"][idx] || null) : null;
-
-  /* ----- extras ----- */
-  if (!Array.isArray(q.imagenes)) q.imagenes = [];
-  if (q.explicacion === undefined || q.explicacion === "") q.explicacion = null;
-
-  /* ----- tipo / metadatos ----- */
-  q.tipo = tipo;
-
-  if (tipo === "examen" && exam) {
-    q.examen  = exam.id;
-    q.anio    = exam.anio;
-    q.oficial = (exam.grupo === "Examen Único");
-  } else {
-    q.examen  = null;
-    q.anio    = null;
-    q.oficial = false;
-  }
+function dedupeQuestionsById(list) {
+  const map = new Map();
+  list.forEach(q => {
+      if(!q.id) return;
+      if(!map.has(q.id)) map.set(q.id, q);
+  });
+  return Array.from(map.values());
 }
-
-/* ==========================================================
-   🔧 Conversión universal de opciones (única)
-   ========================================================== */
 
 function getOpcionesArray(q) {
-  if (Array.isArray(q.opciones)) return q.opciones.slice();
-
-  if (q.opciones && typeof q.opciones === "object") {
-    const letras = ["a","b","c","d","e"];
-    const arr = letras.map(l => q.opciones[l]).filter(v => v != null && v !== "");
-    if (arr.length) return arr;
+  if (Array.isArray(q.opciones)) return q.opciones;
+  if (q.opciones && typeof q.opciones === 'object') {
+      return ["a","b","c","d","e"].map(k => q.opciones[k]).filter(v=>v);
   }
-
-  const keys = ["opcion_a","opcion_b","opcion_c","opcion_d","opcion_e"];
-  const arr2 = keys.map(k => q[k]).filter(v => v != null && v !== "");
-  if (arr2.length) return arr2;
-
   return [];
 }
 
-/* ==========================================================
-   ✅ Convertir "correcta" a índice (única)
-   ========================================================== */
-
 function getCorrectIndex(q) {
-  if (typeof q.correcta === "number") {
-    if (Number.isFinite(q.correcta) && q.correcta >= 0) return q.correcta;
-    return -1;
+  // Soporte para número (0-4) o letra ("a"-"e")
+  if (typeof q.correcta === 'number') return q.correcta;
+  if (typeof q.correcta === 'string') {
+      const map = {a:0, b:1, c:2, d:3, e:4};
+      return map[q.correcta.trim().toLowerCase()] ?? -1;
   }
-
-  if (typeof q.correcta === "string") {
-    const clean = q.correcta.trim().toLowerCase();
-    const map = { a:0, b:1, c:2, d:3, e:4 };
-    if (map[clean] != null) return map[clean];
-  }
-
   return -1;
 }
 
 /* ==========================================================
-   🔧 API para pantallas
+   🚀 Auto-Arranque
    ========================================================== */
+// Llama a cargar automáticamente al cargar el script, 
+// pero esperamos un poco a que CONFIG y el DOM existan.
+document.addEventListener("DOMContentLoaded", () => {
+    // Iniciamos la carga automática
+    loadAllBanks();
+});
 
-function getQuestionsByMateria(slug, subs = null) {
-  const mat = normalize(slug);
-  return BANK.questions.filter(q => {
-    if (q.materia !== mat) return false;
-    if (subs && subs.length) return subs.includes(q.submateria);
-    return true;
-  });
+/* ==========================================================
+   🔌 APIs para las otras pantallas
+   ========================================================== */
+function getQuestionsByMateria(slug, subs) {
+    return BANK.questions.filter(q => {
+        if (q.materia !== slug) return false;
+        if (subs && subs.length) return subs.includes(q.submateria);
+        return true;
+    });
 }
 
 function getQuestionsByExamen(id) {
-  return BANK.questions.filter(q => q.examen === id);
+    return BANK.questions.filter(q => q.examen === id);
 }
 
 function getQuestionById(id) {
-  return BANK.questions.find(q => q.id === id) || null;
-}
-
-/* ==========================================================
-   🚀 initApp — no carga bancos sola
-   ========================================================== */
-
-function initApp() {
-  renderHome();
-}
-
-/* ==========================================================
-   🔄 Recarga manual + guardado permanente
-   ========================================================== */
-
-async function recargarBancos() {
-  const ok = confirm("¿Cargar / recargar TODOS los bancos ahora?");
-  if (!ok) return;
-
-  await loadAllBanks();
-  localStorage.setItem("MEbank_BANK_v1", JSON.stringify(BANK));
-
-  alert("✔ Bancos cargados");
-  renderHome();
+    return BANK.questions.find(q => q.id === id);
 }
