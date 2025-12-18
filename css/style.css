@@ -350,4 +350,6 @@ button:hover { transform: translateY(-2px); }
   .q-layout { flex-direction: column; }
   .q-sidebar { width: 100%; position: relative; }
   .q-sidebar-grid { grid-template-columns: repeat(8, 1fr); }
+     .q-sidebar-pager {   margin-bottom: 12px;
+  }
 }
