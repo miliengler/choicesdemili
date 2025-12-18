@@ -11,6 +11,51 @@ let CURRENT = {
 };
 
 /* ==========================================================
+   📊 Sidebar (PAGINADA)
+   ========================================================== */
+const SB_PAGE_SIZE = 60; // ajustable
+let SB_PAGE = 0;
+
+function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
+
+function ensureSidebarOnCurrent() {
+  const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
+  const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
+  SB_PAGE = clamp(targetPage, 0, totalPages - 1);
+}
+
+function paintSidebarPageInfo() {
+  const info = document.getElementById("sbInfo");
+  const prev = document.getElementById("sbPrev");
+  const next = document.getElementById("sbNext");
+  if (!info || !prev || !next) return;
+
+  const total = CURRENT.list.length;
+  const totalPages = Math.max(1, Math.ceil(total / SB_PAGE_SIZE));
+
+  SB_PAGE = clamp(SB_PAGE, 0, totalPages - 1);
+
+  const start = SB_PAGE * SB_PAGE_SIZE;
+  const end = Math.min(total, start + SB_PAGE_SIZE);
+
+  info.textContent = `${start + 1}–${end} (Pág ${SB_PAGE + 1}/${totalPages})`;
+  prev.disabled = SB_PAGE === 0;
+  next.disabled = SB_PAGE === totalPages - 1;
+}
+
+function sbPrevPage() {
+  const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
+  SB_PAGE = clamp(SB_PAGE - 1, 0, totalPages - 1);
+  renderPregunta(); // simple y estable
+}
+
+function sbNextPage() {
+  const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
+  SB_PAGE = clamp(SB_PAGE + 1, 0, totalPages - 1);
+  renderPregunta();
+}
+
+/* ==========================================================
    🚀 Iniciar resolución
    ========================================================== */
 function iniciarResolucion(config) {
@@ -29,6 +74,9 @@ function iniciarResolucion(config) {
     session: {}
   };
 
+  SB_PAGE = 0;               // reset paginado
+  ensureSidebarOnCurrent();  // por las dudas
+
   if (config.usarTimer) initTimer();
 
   renderPregunta();
@@ -36,52 +84,36 @@ function iniciarResolucion(config) {
 
 /* ==========================================================
    🧩 Helper: obtener opciones en formato array (FULL)
-   - Soporta:
-     1) q.opciones = [ "op1", "op2", ... ]
-     2) q.opciones = { a:"", b:"", c:"", d:"" }
-     3) q.opcion_a / opcion_b / opcion_c / opcion_d
-     4) q.a / q.b / q.c / q.d  (formato viejo)
    ========================================================== */
 function getOpcionesArray(q) {
-  // 1) Ya es array
   if (Array.isArray(q.opciones) && q.opciones.length) {
     return q.opciones;
   }
 
-  // 2) Objeto {a,b,c,d}
   if (q.opciones && typeof q.opciones === "object" && !Array.isArray(q.opciones)) {
     const keys = ["a", "b", "c", "d", "e"];
     const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
     if (arr.length) return arr;
   }
 
-  // 3) opcion_a/opcion_b...
   const arr2 = [q.opcion_a, q.opcion_b, q.opcion_c, q.opcion_d, q.opcion_e]
     .filter(v => v != null && v !== "");
   if (arr2.length) return arr2;
 
-  // 4) formato viejo a/b/c/d
   const arr3 = [q.a, q.b, q.c, q.d, q.e].filter(v => v != null && v !== "");
   if (arr3.length) return arr3;
 
-  return []; // sin opciones
+  return [];
 }
 
 /* ==========================================================
    🧩 Helper: índice correcto (0–3) robusto
-   - Soporta:
-     - q.correcta = 0..3
-     - q.correcta = "a"/"b"/"c"/"d"
-     - q.correctaLetra = "a"... (si existe)
-   - Devuelve:
-     - número (0..n-1) o null si no se puede determinar
    ========================================================== */
 function getCorrectIndex(q, opcionesLen) {
   const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
 
   let c = q.correcta;
 
-  // número
   if (typeof c === "number") {
     if (!Number.isFinite(c)) return null;
     if (c < 0) return null;
@@ -89,7 +121,6 @@ function getCorrectIndex(q, opcionesLen) {
     return c;
   }
 
-  // letra en correcta
   if (typeof c === "string") {
     const key = c.trim().toLowerCase();
     const idx = mapa[key];
@@ -98,7 +129,6 @@ function getCorrectIndex(q, opcionesLen) {
     return idx;
   }
 
-  // letra alternativa (si tu bank.js la guarda)
   if (typeof q.correctaLetra === "string") {
     const key = q.correctaLetra.trim().toLowerCase();
     const idx = mapa[key];
@@ -136,7 +166,6 @@ function renderPregunta() {
     let cls = "q-option";
 
     if (estado) {
-      // Solo pintamos la correcta si existe
       if (correctIndex != null && idx === correctIndex) cls += " option-correct";
       else if (marcada === idx && estado === "bad") cls += " option-wrong";
     }
@@ -148,6 +177,9 @@ function renderPregunta() {
       </label>
     `;
   }).join("");
+
+  /* Asegura que la sidebar quede en la página correcta */
+  ensureSidebarOnCurrent();
 
   /* ------ HTML COMPLETO ------ */
   app.innerHTML = `
@@ -196,13 +228,23 @@ function renderPregunta() {
 
       <aside class="q-sidebar">
         <div class="q-sidebar-header"><b>Índice</b></div>
-        <div class="q-sidebar-grid">
+
+        <div class="q-sidebar-pager">
+          <button class="btn-small" id="sbPrev" onclick="sbPrevPage()">◀</button>
+          <div class="q-sidebar-pageinfo" id="sbInfo">1–60</div>
+          <button class="btn-small" id="sbNext" onclick="sbNextPage()">▶</button>
+        </div>
+
+        <div class="q-sidebar-grid" id="sbGrid">
           ${renderSidebarCells()}
         </div>
       </aside>
 
     </div>
   `;
+
+  /* Pinta el rango y habilita/deshabilita botones */
+  paintSidebarPageInfo();
 }
 
 /* ==========================================================
@@ -233,7 +275,6 @@ function answer(idx) {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // si no hay correcta determinable, igual marcamos como "bad" (pero sin verde)
   const esCorrecta = (correctIndex != null) ? (idx === correctIndex) : false;
   const estado = esCorrecta ? "ok" : "bad";
 
@@ -245,6 +286,7 @@ function answer(idx) {
   PROG[mat][q.id] = { status: estado, fecha: Date.now() };
   saveProgress();
 
+  ensureSidebarOnCurrent();
   renderPregunta();
 }
 
@@ -254,6 +296,7 @@ function answer(idx) {
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
+    ensureSidebarOnCurrent();
     renderPregunta();
   } else {
     renderFin();
@@ -263,6 +306,7 @@ function nextQuestion() {
 function prevQuestion() {
   if (CURRENT.i > 0) {
     CURRENT.i--;
+    ensureSidebarOnCurrent();
     renderPregunta();
   }
 }
@@ -341,10 +385,20 @@ function stopTimer() {
 }
 
 /* ==========================================================
-   📊 Sidebar
+   📊 Sidebar (render SOLO página)
    ========================================================== */
 function renderSidebarCells() {
-  return CURRENT.list.map((q, idx) => {
+  const total = CURRENT.list.length;
+  const totalPages = Math.max(1, Math.ceil(total / SB_PAGE_SIZE));
+
+  SB_PAGE = clamp(SB_PAGE, 0, totalPages - 1);
+
+  const start = SB_PAGE * SB_PAGE_SIZE;
+  const end = Math.min(total, start + SB_PAGE_SIZE);
+
+  const out = [];
+  for (let idx = start; idx < end; idx++) {
+    const q = CURRENT.list[idx];
     const estado = CURRENT.session[q.id];
     const esActual = idx === CURRENT.i;
 
@@ -353,13 +407,15 @@ function renderSidebarCells() {
     if (estado === "ok") cls += " sb-ok";
     if (estado === "bad") cls += " sb-bad";
 
-    return `<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`;
-  }).join("");
+    out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
+  }
+  return out.join("");
 }
 
 function irAPregunta(idx) {
   if (idx < 0 || idx >= CURRENT.list.length) return;
   CURRENT.i = idx;
+  ensureSidebarOnCurrent();
   renderPregunta();
 }
 
