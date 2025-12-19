@@ -294,7 +294,7 @@ const SUBTEMAS = {
     "Síndromes asociados a anomalías cromosómicas",
     "Síndrome de muerte súbita del lactante",
     "Patología nefrourológica infantil",
-    "Patología infecciosa",
+    "Patología infecciosa infantil",
     "Patología respiratoria",
     "Patología digestiva",
     "Púrpuras y anemias",
