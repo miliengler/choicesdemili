@@ -187,15 +187,7 @@ function getCorrectIndex(q) {
   return -1;
 }
 
-/* ==========================================================
-   🚀 Auto-Arranque
-   ========================================================== */
-// Llama a cargar automáticamente al cargar el script, 
-// pero esperamos un poco a que CONFIG y el DOM existan.
-document.addEventListener("DOMContentLoaded", () => {
-    // Iniciamos la carga automática
-    loadAllBanks();
-});
+
 
 /* ==========================================================
    🔌 APIs para las otras pantallas
