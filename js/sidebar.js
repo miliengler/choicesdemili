@@ -1,61 +1,68 @@
 /* ==========================================================
-   📋 MEbank 3.0 – Sidebar de resolución
+   📋 MEbank 3.0 – Sidebar de resolución (Paginado Fijo)
    ========================================================== */
+
+// Configuración
+const SIDEBAR_PAGE_SIZE = 50; // Cantidad de cuadraditos por página
 
 let SIDEBAR = {
   preguntas: [],
-  page: 0,
+  currentPage: 0,
+  activeIndex: 0
 };
 
-const SIDEBAR_PAGE_SIZE = 40;
-
 /* ----------------------------------------------------------
-   🔧 Inicializar sidebar para una resolución nueva
+   🔧 Inicializar sidebar
    ---------------------------------------------------------- */
 function initSidebar(preguntas) {
   SIDEBAR.preguntas = preguntas || [];
-  SIDEBAR.page = 0;
+  SIDEBAR.currentPage = 0;
+  SIDEBAR.activeIndex = 0;
 
-  // Si ya existe, solo re-renderizamos
-  if (document.getElementById("exam-sidebar")) {
-    renderSidebarPage(0);
-    return;
-  }
+  // Si ya existe el div, lo borramos para crearlo limpio
+  const existing = document.getElementById("exam-sidebar");
+  if (existing) existing.remove();
+  const existingBtn = document.getElementById("sb-openbtn");
+  if (existingBtn) existingBtn.remove();
 
-  // Crear contenedor de sidebar
+  // Crear contenedor
   const sb = document.createElement("div");
   sb.id = "exam-sidebar";
   sb.className = "exam-sidebar";
+  
+  // Estilos inline básicos para garantizar visibilidad
   sb.style.position = "fixed";
-  sb.style.top = "60px";
-  sb.style.right = "-260px";
-  sb.style.width = "240px";
+  sb.style.top = "70px";
+  sb.style.right = "-280px"; // Oculto por defecto
+  sb.style.width = "260px";
   sb.style.bottom = "20px";
-  sb.style.background = "var(--sidebar-bg, #f8fafc)";
-  sb.style.borderLeft = "1px solid #e2e8f0";
-  sb.style.boxShadow = "0 4px 12px rgba(15,23,42,0.15)";
-  sb.style.padding = "10px";
+  sb.style.backgroundColor = "#ffffff";
+  sb.style.boxShadow = "-2px 0 10px rgba(0,0,0,0.1)";
   sb.style.zIndex = "9999";
-  sb.style.transition = "right 0.25s ease";
+  sb.style.transition = "right 0.3s ease";
+  sb.style.display = "flex";
+  sb.style.flexDirection = "column";
+  sb.style.padding = "10px";
+  sb.style.borderLeft = "1px solid #e2e8f0";
 
+  // HTML Interno
   sb.innerHTML = `
-    <div class="sb-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
-      <span style="font-weight:600;font-size:14px;">Índice</span>
-      <button onclick="hideSidebar()" class="btn-small" style="padding:2px 6px;font-size:12px;">✖</button>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span style="font-weight:bold;font-size:15px;">Índice</span>
+      <button onclick="window.hideSidebar()" class="btn-small" style="padding:4px 8px;">✖</button>
     </div>
 
-    <div id="sb-progress" class="sb-progress" style="font-size:12px;color:#475569;margin-bottom:8px;">
-      Progreso: 0/0 (0%)
+    <div id="sb-stats" style="font-size:12px;color:#64748b;margin-bottom:10px;text-align:center;">
+      Cargando...
     </div>
 
-    <div id="sb-grid" class="sb-grid"
-         style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px;font-size:11px;">
-    </div>
+    <div id="sb-grid" style="flex:1;overflow-y:auto;display:grid;grid-template-columns:repeat(5, 1fr);gap:6px;align-content:start;">
+      </div>
 
-    <div class="sb-pages" style="display:flex;justify-content:center;align-items:center;margin-top:10px;gap:8px;">
-      <button onclick="prevSidebarPage()" class="btn-small" style="padding:2px 6px;font-size:12px;">⬅</button>
-      <span id="sb-pageinfo" style="font-size:12px;color:#475569;">1/1</span>
-      <button onclick="nextSidebarPage()" class="btn-small" style="padding:2px 6px;font-size:12px;">➡</button>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;">
+      <button onclick="window.sbPrev()" class="btn-small" style="font-size:16px;padding:2px 10px;">◀</button>
+      <span id="sb-pagelabel" style="font-size:13px;font-weight:600;color:#334155;">Pág 1</span>
+      <button onclick="window.sbNext()" class="btn-small" style="font-size:16px;padding:2px 10px;">▶</button>
     </div>
   `;
 
@@ -64,152 +71,165 @@ function initSidebar(preguntas) {
   // Botón flotante para abrir
   const btn = document.createElement("button");
   btn.id = "sb-openbtn";
-  btn.textContent = "📋";
-  btn.title = "Ver índice";
+  btn.innerHTML = "📋";
   btn.style.position = "fixed";
-  btn.style.right = "16px";
+  btn.style.right = "20px";
   btn.style.bottom = "80px";
   btn.style.zIndex = "9998";
-  btn.style.borderRadius = "999px";
-  btn.style.border = "1px solid #cbd5e1";
-  btn.style.background = "#ffffff";
-  btn.style.boxShadow = "0 4px 10px rgba(15,23,42,0.2)";
-  btn.style.padding = "8px 10px";
+  btn.style.width = "50px";
+  btn.style.height = "50px";
+  btn.style.borderRadius = "25px";
+  btn.style.border = "none";
+  btn.style.background = "#2563eb";
+  btn.style.color = "white";
+  btn.style.fontSize = "24px";
+  btn.style.boxShadow = "0 4px 12px rgba(37,99,235,0.4)";
   btn.style.cursor = "pointer";
-  btn.onclick = showSidebar;
+  btn.onclick = window.showSidebar;
 
   document.body.appendChild(btn);
 
-  renderSidebarPage(0);
+  // Render inicial
+  renderGrid();
+  
+  // Abrir sidebar automáticamente si es desktop
+  if (window.innerWidth > 1000) window.showSidebar();
 }
 
 /* ----------------------------------------------------------
-   👁 Mostrar / ocultar
+   🎨 Renderizar la grilla (Lógica Central)
    ---------------------------------------------------------- */
-function showSidebar() {
-  const sb = document.getElementById("exam-sidebar");
-  const btn = document.getElementById("sb-openbtn");
-  if (!sb || !btn) return;
-
-  sb.style.right = "0";
-  btn.style.display = "none";
-}
-
-function hideSidebar() {
-  const sb = document.getElementById("exam-sidebar");
-  const btn = document.getElementById("sb-openbtn");
-  if (!sb || !btn) return;
-
-  sb.style.right = "-260px";
-  btn.style.display = "block";
-}
-
-/* ----------------------------------------------------------
-   📄 Render de página del sidebar
-   currentIndex: índice actual en CURRENT.preguntas
-   ---------------------------------------------------------- */
-function renderSidebarPage(currentIndex = 0) {
+function renderGrid() {
   const grid = document.getElementById("sb-grid");
-  const progEl = document.getElementById("sb-progress");
-  const pageInfo = document.getElementById("sb-pageinfo");
-  if (!grid || !progEl || !pageInfo) return;
-
-  const total = SIDEBAR.preguntas.length;
-  if (!total) {
-    grid.innerHTML = "";
-    progEl.textContent = "Progreso: 0/0 (0%)";
-    pageInfo.textContent = "1/1";
-    return;
-  }
-
-  // Ajustar página si el índice actual está fuera de la visible
-  const pageFromIndex = Math.floor(currentIndex / SIDEBAR_PAGE_SIZE);
-  if (pageFromIndex !== SIDEBAR.page) {
-    SIDEBAR.page = pageFromIndex;
-  }
-
-  const start = SIDEBAR.page * SIDEBAR_PAGE_SIZE;
-  const end = Math.min(start + SIDEBAR_PAGE_SIZE, total);
+  const label = document.getElementById("sb-pagelabel");
+  const stats = document.getElementById("sb-stats");
+  
+  if (!grid || !label) return;
 
   grid.innerHTML = "";
 
-  let respondidas = 0;
+  const total = SIDEBAR.preguntas.length;
+  const totalPages = Math.ceil(total / SIDEBAR_PAGE_SIZE);
+  
+  // Validar límites de página
+  if (SIDEBAR.currentPage < 0) SIDEBAR.currentPage = 0;
+  if (SIDEBAR.currentPage >= totalPages) SIDEBAR.currentPage = totalPages - 1;
+  if (total === 0) SIDEBAR.currentPage = 0;
 
+  // Texto del paginador
+  label.innerText = `Pág ${SIDEBAR.currentPage + 1} de ${totalPages || 1}`;
+
+  // Calcular rango
+  const start = SIDEBAR.currentPage * SIDEBAR_PAGE_SIZE;
+  const end = Math.min(start + SIDEBAR_PAGE_SIZE, total);
+
+  // Estadísticas rápidas
+  const totalRespondidas = Object.values(PROG || {}).reduce((acc, m) => acc + Object.keys(m).length, 0); 
+  // (Nota: el conteo totalRespondidas es global, para simplificar)
+  stats.innerText = `Mostrando ${start + 1} - ${end} de ${total}`;
+
+  // Generar cuadraditos
   for (let i = start; i < end; i++) {
     const q = SIDEBAR.preguntas[i];
+    const el = document.createElement("div");
+    
+    // Estilos base
+    el.style.textAlign = "center";
+    el.style.padding = "6px 0";
+    el.style.fontSize = "12px";
+    el.style.borderRadius = "6px";
+    el.style.cursor = "pointer";
+    el.style.border = "1px solid #e2e8f0";
+    el.style.backgroundColor = "#f8fafc";
+    el.innerText = i + 1;
+
+    // Estado: Respondida
     const mat = q.materia;
-    const res = PROG[mat]?.[q.id];
-    if (res && (res.status === "ok" || res.status === "bad")) respondidas++;
+    const estado = PROG[mat]?.[q.id]?.status;
 
-    const cell = document.createElement("div");
-    cell.className = "sb-cell";
-    cell.textContent = i + 1;
-    cell.style.borderRadius = "6px";
-    cell.style.textAlign = "center";
-    cell.style.padding = "4px 0";
-    cell.style.cursor = "pointer";
-    cell.style.border = "1px solid #e2e8f0";
-
-    // Colores según estado
-    if (i === currentIndex) {
-      cell.style.background = "#0ea5e9";
-      cell.style.color = "#ffffff";
-      cell.style.fontWeight = "600";
-    } else if (res?.status === "ok") {
-      cell.style.background = "#dcfce7";
-      cell.style.color = "#166534";
-    } else if (res?.status === "bad") {
-      cell.style.background = "#fee2e2";
-      cell.style.color = "#b91c1c";
-    } else {
-      cell.style.background = "#f8fafc";
-      cell.style.color = "#0f172a";
+    if (estado === "ok") {
+      el.style.backgroundColor = "#dcfce7"; // Verde
+      el.style.color = "#166534";
+      el.style.borderColor = "#86efac";
+    } else if (estado === "bad") {
+      el.style.backgroundColor = "#fee2e2"; // Rojo
+      el.style.color = "#991b1b";
+      el.style.borderColor = "#fca5a5";
     }
 
-    // Indicador de nota (●) si hay nota guardada
-    if (res?.nota && res.nota.trim() !== "") {
-      const dot = document.createElement("span");
-      dot.textContent = " •";
-      dot.style.color = "#6366f1";
-      cell.appendChild(dot);
+    // Estado: Activa (La pregunta que estás viendo)
+    if (i === SIDEBAR.activeIndex) {
+      el.style.backgroundColor = "#2563eb"; // Azul fuerte
+      el.style.color = "#ffffff";
+      el.style.borderColor = "#1e40af";
+      el.style.fontWeight = "bold";
     }
 
-    cell.onclick = () => {
+    // Click: Ir a esa pregunta
+    el.onclick = () => {
       if (typeof CURRENT !== "undefined") {
-        CURRENT.i = i;
-        renderPregunta();
+        CURRENT.i = i; // Actualizar índice global
+        renderPregunta(); // Re-renderizar pantalla principal
       }
     };
 
-    grid.appendChild(cell);
+    grid.appendChild(el);
   }
-
-  const totalResueltas = Object.values(PROG || {}).reduce((acc, matObj) => {
-    return acc + Object.keys(matObj || {}).length;
-  }, 0);
-
-  const p = Math.round((respondidas / total) * 100);
-  progEl.textContent = `Progreso (página): ${respondidas}/${end - start} (${p}%)`;
-
-  const pages = Math.ceil(total / SIDEBAR_PAGE_SIZE);
-  pageInfo.textContent = `${SIDEBAR.page + 1}/${pages}`;
 }
 
 /* ----------------------------------------------------------
-   ⏩ Paginación
+   🔄 Conexión con el Motor de Resolución
    ---------------------------------------------------------- */
-function nextSidebarPage() {
-  const total = SIDEBAR.preguntas.length;
-  const pages = Math.ceil(total / SIDEBAR_PAGE_SIZE);
-  if (SIDEBAR.page < pages - 1) {
-    SIDEBAR.page++;
-    renderSidebarPage(SIDEBAR.page * SIDEBAR_PAGE_SIZE);
+// Esta función la llama resolver.js cada vez que cambias de pregunta
+window.renderSidebarPage = function(indexActual) {
+  SIDEBAR.activeIndex = indexActual;
+  
+  // Opcional: Si querés que el sidebar cambie de página solo al avanzar:
+  // SIDEBAR.currentPage = Math.floor(indexActual / SIDEBAR_PAGE_SIZE);
+  
+  // PERO, para que los botones manuales funcionen libremente, 
+  // solo actualizamos el grid sin forzar el cambio de página, 
+  // salvo que la pregunta activa quede muy lejos.
+  
+  const pageOfActive = Math.floor(indexActual / SIDEBAR_PAGE_SIZE);
+  // Solo forzamos el salto de página si es la primera carga
+  if (!document.getElementById("exam-sidebar")) {
+      SIDEBAR.currentPage = pageOfActive;
   }
-}
+  
+  renderGrid();
+};
 
-function prevSidebarPage() {
-  if (SIDEBAR.page > 0) {
-    SIDEBAR.page--;
-    renderSidebarPage(SIDEBAR.page * SIDEBAR_PAGE_SIZE);
+/* ----------------------------------------------------------
+   🎮 Controles (Globales)
+   ---------------------------------------------------------- */
+window.sbNext = function() {
+  const total = SIDEBAR.preguntas.length;
+  const totalPages = Math.ceil(total / SIDEBAR_PAGE_SIZE);
+  
+  if (SIDEBAR.currentPage < totalPages - 1) {
+    SIDEBAR.currentPage++;
+    renderGrid();
   }
-}
+};
+
+window.sbPrev = function() {
+  if (SIDEBAR.currentPage > 0) {
+    SIDEBAR.currentPage--;
+    renderGrid();
+  }
+};
+
+window.showSidebar = function() {
+  const sb = document.getElementById("exam-sidebar");
+  const btn = document.getElementById("sb-openbtn");
+  if (sb) sb.style.right = "0";
+  if (btn) btn.style.display = "none";
+};
+
+window.hideSidebar = function() {
+  const sb = document.getElementById("exam-sidebar");
+  const btn = document.getElementById("sb-openbtn");
+  if (sb) sb.style.right = "-280px";
+  if (btn) btn.style.display = "block";
+};
