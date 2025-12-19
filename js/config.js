@@ -295,9 +295,9 @@ const SUBTEMAS = {
     "Síndrome de muerte súbita del lactante",
     "Patología nefrourológica infantil",
     "Patología infecciosa infantil",
-    "Patología respiratoria",
-    "Patología digestiva",
-    "Púrpuras y anemias",
+    "Patología del aparato respiratorio",
+    "Patología del aparato digestivo",
+    "Hematología infantil",
     "Intoxicaciones",
     "Oncohematología infantil",
     "Otras preguntas de pediatría"
