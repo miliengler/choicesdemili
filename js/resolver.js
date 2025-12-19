@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (versión estable)
+   🎯 MEbank 3.0 – Motor de resolución (Full Integrado)
    ========================================================== */
 
 let CURRENT = {
@@ -11,19 +11,25 @@ let CURRENT = {
 };
 
 /* ==========================================================
-   📊 Sidebar (PAGINADA)
+   📊 Estado Interno del Sidebar
    ========================================================== */
-const SB_PAGE_SIZE = 60; // ajustable
+const SB_PAGE_SIZE = 60; // Cantidad de preguntas por página del sidebar
 let SB_PAGE = 0;
 
 function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
 
+/* ----------------------------------------------------------
+   Sincronizar página del sidebar con la pregunta actual
+   ---------------------------------------------------------- */
 function ensureSidebarOnCurrent() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
   SB_PAGE = clamp(targetPage, 0, totalPages - 1);
 }
 
+/* ----------------------------------------------------------
+   Renderizar información de paginado en el sidebar
+   ---------------------------------------------------------- */
 function paintSidebarPageInfo() {
   const info = document.getElementById("sbInfo");
   const prev = document.getElementById("sbPrev");
@@ -43,10 +49,13 @@ function paintSidebarPageInfo() {
   next.disabled = SB_PAGE === totalPages - 1;
 }
 
+/* ----------------------------------------------------------
+   Funciones de los botones del Sidebar
+   ---------------------------------------------------------- */
 function sbPrevPage() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   SB_PAGE = clamp(SB_PAGE - 1, 0, totalPages - 1);
-  renderPregunta(); // simple y estable
+  renderPregunta(); // Re-renderiza para actualizar la grilla
 }
 
 function sbNextPage() {
@@ -74,8 +83,8 @@ function iniciarResolucion(config) {
     session: {}
   };
 
-  SB_PAGE = 0;               // reset paginado
-  ensureSidebarOnCurrent();  // por las dudas
+  SB_PAGE = 0;               // Resetear paginado
+  ensureSidebarOnCurrent();  // Alinear con la pregunta 1
 
   if (config.usarTimer) initTimer();
 
@@ -83,65 +92,34 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 Helper: obtener opciones en formato array (FULL)
+   🧩 Helpers de Opciones
    ========================================================== */
 function getOpcionesArray(q) {
-  if (Array.isArray(q.opciones) && q.opciones.length) {
-    return q.opciones;
-  }
+  if (Array.isArray(q.opciones) && q.opciones.length) return q.opciones;
 
-  if (q.opciones && typeof q.opciones === "object" && !Array.isArray(q.opciones)) {
+  if (q.opciones && typeof q.opciones === "object") {
     const keys = ["a", "b", "c", "d", "e"];
     const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
     if (arr.length) return arr;
   }
-
-  const arr2 = [q.opcion_a, q.opcion_b, q.opcion_c, q.opcion_d, q.opcion_e]
-    .filter(v => v != null && v !== "");
-  if (arr2.length) return arr2;
-
-  const arr3 = [q.a, q.b, q.c, q.d, q.e].filter(v => v != null && v !== "");
-  if (arr3.length) return arr3;
-
   return [];
 }
 
-/* ==========================================================
-   🧩 Helper: índice correcto (0–3) robusto
-   ========================================================== */
 function getCorrectIndex(q, opcionesLen) {
   const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
-
   let c = q.correcta;
 
-  if (typeof c === "number") {
-    if (!Number.isFinite(c)) return null;
-    if (c < 0) return null;
-    if (typeof opcionesLen === "number" && opcionesLen > 0 && c >= opcionesLen) return null;
-    return c;
-  }
-
+  if (typeof c === "number") return (c >= 0 && c < opcionesLen) ? c : null;
+  
   if (typeof c === "string") {
-    const key = c.trim().toLowerCase();
-    const idx = mapa[key];
-    if (idx == null) return null;
-    if (typeof opcionesLen === "number" && opcionesLen > 0 && idx >= opcionesLen) return null;
-    return idx;
+    const idx = mapa[c.trim().toLowerCase()];
+    return (idx != null && idx < opcionesLen) ? idx : null;
   }
-
-  if (typeof q.correctaLetra === "string") {
-    const key = q.correctaLetra.trim().toLowerCase();
-    const idx = mapa[key];
-    if (idx == null) return null;
-    if (typeof opcionesLen === "number" && opcionesLen > 0 && idx >= opcionesLen) return null;
-    return idx;
-  }
-
   return null;
 }
 
 /* ==========================================================
-   🧩 Render Pregunta
+   🧩 Render Principal (Pregunta + Sidebar)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -178,10 +156,11 @@ function renderPregunta() {
     `;
   }).join("");
 
-  /* Asegura que la sidebar quede en la página correcta */
-  ensureSidebarOnCurrent();
-
-  /* ------ HTML COMPLETO ------ */
+  // Si cambiamos de pregunta con las flechas principales, aseguramos que el sidebar acompañe
+  // (Solo si NO fue un cambio manual de página del sidebar)
+  // Pero para simplificar, llamamos a ensureSidebarOnCurrent solo al navegar preguntas, no al paginar sidebar.
+  
+  /* ------ HTML ESTRUCTURA ------ */
   app.innerHTML = `
     <div class="q-layout fade">
 
@@ -203,23 +182,25 @@ function renderPregunta() {
           ${q.imagenes && q.imagenes.length ? renderImagenesPregunta(q.imagenes) : ""}
 
           <div class="q-options">
-            ${opcionesHTML || `<p style="color:#94a3b8;font-size:14px;">(Pregunta sin opciones definidas)</p>`}
+            ${opcionesHTML || `<p style="color:#94a3b8;font-size:14px;">(Sin opciones)</p>`}
           </div>
+          
+          ${estado && q.explicacion ? `
+            <div class="q-explanation" style="margin-top:15px; padding:10px; background:#f0fdf4; border-left:4px solid #22c55e; border-radius:4px; font-size:14px; color:#14532d;">
+               <b>Explicación:</b> ${q.explicacion}
+            </div>
+          ` : ""}
 
           <div class="q-nav-row">
-            <button class="btn-small"
-                    onclick="prevQuestion()"
-                    ${CURRENT.i === 0 ? "disabled" : ""}>
+            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
               ⬅ Anterior
             </button>
 
-            <button class="btn-small"
-                    onclick="nextQuestion()">
+            <button class="btn-small" onclick="nextQuestion()">
               ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
             </button>
 
-            <button class="btn-small btn-ghost"
-                    onclick="salirResolucion()">
+            <button class="btn-small btn-ghost" onclick="salirResolucion()">
               🏠 Salir
             </button>
           </div>
@@ -231,7 +212,7 @@ function renderPregunta() {
 
         <div class="q-sidebar-pager">
           <button class="btn-small" id="sbPrev" onclick="sbPrevPage()">◀</button>
-          <div class="q-sidebar-pageinfo" id="sbInfo">1–60</div>
+          <div class="q-sidebar-pageinfo" id="sbInfo">...</div>
           <button class="btn-small" id="sbNext" onclick="sbNextPage()">▶</button>
         </div>
 
@@ -243,33 +224,17 @@ function renderPregunta() {
     </div>
   `;
 
-  /* Pinta el rango y habilita/deshabilita botones */
   paintSidebarPageInfo();
 }
 
 /* ==========================================================
-   🖼 Imágenes
-   ========================================================== */
-function renderImagenesPregunta(imgs) {
-  if (!Array.isArray(imgs) || !imgs.length) return "";
-  return `
-    <div class="q-images">
-      ${imgs.map(src => `
-        <div class="q-image-wrap">
-          <img class="q-image" src="${src}">
-        </div>`).join("")}
-    </div>
-  `;
-}
-
-/* ==========================================================
-   🧠 Responder
+   🧠 Responder (CON LÓGICA DE ESTADÍSTICAS)
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
   if (!q) return;
 
-  // no permitir cambiar respuesta en la misma sesión
+  // No permitir cambiar respuesta en la misma sesión
   if (CURRENT.session[q.id]) return;
 
   const opciones = getOpcionesArray(q);
@@ -278,16 +243,39 @@ function answer(idx) {
   const esCorrecta = (correctIndex != null) ? (idx === correctIndex) : false;
   const estado = esCorrecta ? "ok" : "bad";
 
+  // 1. Guardar estado en sesión actual
   CURRENT.session[q.id] = estado;
   setRespuestaMarcada(q.id, idx);
 
+  // 2. Guardar progreso histórico (por materia)
   const mat = q.materia || "otras";
   if (!PROG[mat]) PROG[mat] = {};
   PROG[mat][q.id] = { status: estado, fecha: Date.now() };
-  saveProgress();
+  
+  if (window.saveProgress) window.saveProgress();
 
-  ensureSidebarOnCurrent();
+  // 3. 📊 ACTUALIZAR ESTADÍSTICAS DIARIAS (Para el gráfico semanal)
+  if (esCorrecta) {
+    const hoy = new Date().toISOString().split('T')[0]; // Ejemplo: "2025-12-19"
+    const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+    stats[hoy] = (stats[hoy] || 0) + 1;
+    localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
+  }
+
+  // 4. Actualizar vista
   renderPregunta();
+}
+
+/* ==========================================================
+   🖼 Render Imágenes
+   ========================================================== */
+function renderImagenesPregunta(imgs) {
+  if (!Array.isArray(imgs) || !imgs.length) return "";
+  return `
+    <div class="q-images">
+      ${imgs.map(src => `<div class="q-image-wrap"><img class="q-image" src="${src}"></div>`).join("")}
+    </div>
+  `;
 }
 
 /* ==========================================================
@@ -296,7 +284,7 @@ function answer(idx) {
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
-    ensureSidebarOnCurrent();
+    ensureSidebarOnCurrent(); // Mueve la página del sidebar si es necesario
     renderPregunta();
   } else {
     renderFin();
@@ -312,34 +300,62 @@ function prevQuestion() {
 }
 
 /* ==========================================================
-   🏁 Fin
+   📊 Render Celdas del Sidebar
+   ========================================================== */
+function renderSidebarCells() {
+  const total = CURRENT.list.length;
+  const start = SB_PAGE * SB_PAGE_SIZE;
+  const end = Math.min(total, start + SB_PAGE_SIZE);
+
+  const out = [];
+  for (let idx = start; idx < end; idx++) {
+    const q = CURRENT.list[idx];
+    const estado = CURRENT.session[q.id];
+    const esActual = idx === CURRENT.i;
+
+    let cls = "sb-cell";
+    if (esActual) cls += " sb-active";
+    if (estado === "ok") cls += " sb-ok";
+    if (estado === "bad") cls += " sb-bad";
+
+    out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
+  }
+  return out.join("");
+}
+
+function irAPregunta(idx) {
+  if (idx < 0 || idx >= CURRENT.list.length) return;
+  CURRENT.i = idx;
+  // No forzamos ensureSidebarOnCurrent aquí para permitir navegar el sidebar libremente
+  // Pero al renderizar la pregunta, visualmente se actualizará el activo.
+  renderPregunta();
+}
+
+/* ==========================================================
+   🏁 Finalizar y Salir
    ========================================================== */
 function renderFin() {
   stopTimer();
-
   const total = CURRENT.list.length;
   const values = Object.values(CURRENT.session);
   const ok = values.filter(v => v === "ok").length;
-  const bad = total - ok;
+  const bad = total - ok; // Asumiendo que llegó al final respondiendo todo o saltando
 
   const app = document.getElementById("app");
   app.innerHTML = `
     <div class="card fade" style="max-width:520px;margin:auto;text-align:center;">
       <h2>${CURRENT.config.titulo || "Finalizado"}</h2>
-      <p>Total: <b>${total}</b></p>
+      <p>Total de preguntas: <b>${total}</b></p>
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
-      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
+      <p style="color:#ef4444;">✖ Incorrectas/Omitidas: ${bad}</p>
 
-      <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap;">
+      <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;">
         <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
       </div>
     </div>
   `;
 }
 
-/* ==========================================================
-   🚪 Salir
-   ========================================================== */
 function salirResolucion() {
   if (!confirm("¿Seguro que querés salir?")) return;
   stopTimer();
@@ -347,13 +363,12 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🕒 Timer
+   🕒 Timer (Opcional)
    ========================================================== */
 let TIMER = { interval: null, start: 0 };
 
 function initTimer() {
   TIMER.start = Date.now();
-
   let el = document.getElementById("exam-timer");
   if (!el) {
     el = document.createElement("div");
@@ -361,7 +376,6 @@ function initTimer() {
     el.className = "exam-timer";
     document.body.appendChild(el);
   }
-
   el.textContent = "⏱ 00:00";
 
   TIMER.interval = setInterval(() => {
@@ -385,42 +399,7 @@ function stopTimer() {
 }
 
 /* ==========================================================
-   📊 Sidebar (render SOLO página)
-   ========================================================== */
-function renderSidebarCells() {
-  const total = CURRENT.list.length;
-  const totalPages = Math.max(1, Math.ceil(total / SB_PAGE_SIZE));
-
-  SB_PAGE = clamp(SB_PAGE, 0, totalPages - 1);
-
-  const start = SB_PAGE * SB_PAGE_SIZE;
-  const end = Math.min(total, start + SB_PAGE_SIZE);
-
-  const out = [];
-  for (let idx = start; idx < end; idx++) {
-    const q = CURRENT.list[idx];
-    const estado = CURRENT.session[q.id];
-    const esActual = idx === CURRENT.i;
-
-    let cls = "sb-cell";
-    if (esActual) cls += " sb-active";
-    if (estado === "ok") cls += " sb-ok";
-    if (estado === "bad") cls += " sb-bad";
-
-    out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
-  }
-  return out.join("");
-}
-
-function irAPregunta(idx) {
-  if (idx < 0 || idx >= CURRENT.list.length) return;
-  CURRENT.i = idx;
-  ensureSidebarOnCurrent();
-  renderPregunta();
-}
-
-/* ==========================================================
-   Helpers
+   🛠 Helpers Varios
    ========================================================== */
 const RESP_MARCADAS = {};
 function setRespuestaMarcada(id, idx) { RESP_MARCADAS[id] = idx; }
@@ -428,6 +407,10 @@ function getRespuestaMarcada(id) { return RESP_MARCADAS[id] ?? null; }
 
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
-  const mat = BANK.subjects.find(s => s.slug === q.materia);
-  return mat ? mat.name : q.materia;
+  // Busca en BANK.subjects si está disponible globalmente
+  if (typeof BANK !== 'undefined' && BANK.subjects) {
+    const mat = BANK.subjects.find(s => s.slug === q.materia);
+    return mat ? mat.name : q.materia;
+  }
+  return q.materia;
 }
