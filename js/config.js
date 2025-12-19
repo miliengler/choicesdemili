@@ -292,7 +292,7 @@ const SUBTEMAS = {
     "Vacunación infantil",
     "Trastornos de la infancia y la adolescencia",
     "Síndromes asociados a anomalías cromosómicas",
-    "Muerte súbita del lactante",
+    "Síndrome de muerte súbita del lactante",
     "Patología nefro-urológica",
     "Patología infecciosa",
     "Patología respiratoria",
