@@ -291,7 +291,7 @@ const SUBTEMAS = {
     "Maltrato y abuso sexual",
     "Vacunación infantil",
     "Trastornos de la infancia y la adolescencia",
-    "Síndromes y anomalías cromosómicas",
+    "Síndromes asociados a anomalías cromosómicas",
     "Muerte súbita del lactante",
     "Patología nefro-urológica",
     "Patología infecciosa",
