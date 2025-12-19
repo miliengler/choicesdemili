@@ -316,3 +316,46 @@ button:hover { transform: translateY(-2px); }
   .q-sidebar-grid { grid-template-columns: repeat(8, 1fr); }
   .q-sidebar-pager { margin-bottom: 12px; }
 }
+/* =========================================
+   ⏱ ESTILOS DEL CRONÓMETRO FLOTANTE
+   ========================================= */
+.exam-timer {
+  position: fixed;
+  top: 20px;
+  right: 20px; /* Arriba a la derecha */
+  z-index: 10000; /* Siempre por encima de todo */
+  
+  background-color: #0f172a; /* Azul oscuro casi negro */
+  color: #f8fafc; /* Blanco tiza */
+  
+  padding: 8px 16px;
+  border-radius: 50px; /* Forma de píldora */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  
+  font-family: "Courier New", Courier, monospace; /* Fuente monoespaciada para números */
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  
+  /* Animación suave al aparecer */
+  animation: fadeInDown 0.5s ease-out;
+  pointer-events: none; /* Para que puedas hacer click "a través" de él si tapa algo */
+}
+
+/* Animación de entrada */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste para celulares: Un poco más chico y pegado al borde */
+@media (max-width: 600px) {
+  .exam-timer {
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
