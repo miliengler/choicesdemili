@@ -106,7 +106,7 @@ function renderChoice() {
 }
 
 /* ==========================================================
-   🧮 Ordenar materias
+   🧮 Ordenar materias (Mejorado: Sin Emojis)
    ========================================================== */
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
@@ -119,16 +119,17 @@ function getOrderedSubjects() {
     });
   }
 
-  return list.sort((a, b) =>
-    a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-  );
+  // Orden Alfabético A-Z (Ignorando emojis y símbolos)
+  return list.sort((a, b) => {
+    // Esta expresión regular borra todo lo que NO sea letra o número
+    const cleanA = a.name.replace(/[^\p{L}\p{N}]/gu, "").trim();
+    const cleanB = b.name.replace(/[^\p{L}\p{N}]/gu, "").trim();
+    
+    return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
+  });
 }
 
-function onChangeChoiceOrder(value) {
-  CHOICE_ORDER = value;
-  localStorage.setItem("MEbank_ChoiceOrder_v1", value);
-  renderChoice();
-}
+
 
 /* ==========================================================
    🧠 Stats por materia
