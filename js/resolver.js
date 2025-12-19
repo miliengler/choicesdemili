@@ -363,40 +363,48 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🕒 Timer (Limpiado para usar CSS)
+   🕒 Timer (Con soporte de HORAS)
    ========================================================== */
 let TIMER = { interval: null, start: 0 };
 
 function initTimer() {
-  // Evitar duplicados
-  stopTimer(); 
+  stopTimer(); // Limpiar previo
 
   TIMER.start = Date.now();
   
-  // Crear el div si no existe
   let el = document.getElementById("exam-timer");
   if (!el) {
     el = document.createElement("div");
     el.id = "exam-timer";
-    el.className = "exam-timer"; // <--- ESTA CLASE TOMA EL CSS NUEVO
+    el.className = "exam-timer";
     document.body.appendChild(el);
   }
   
+  // Render inicial
   el.textContent = "⏱ 00:00";
 
-  // Iniciar el conteo
   TIMER.interval = setInterval(() => {
-    const ms = Date.now() - TIMER.start;
-    const s = Math.floor(ms / 1000);
-    const m = Math.floor(s / 60);
-    const ss = s % 60;
+    const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
     
-    // Formato 00:00
-    const t = `${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+    // Cálculos matemáticos
+    const h = Math.floor(totalSeconds / 3600);
+    const m = Math.floor((totalSeconds % 3600) / 60);
+    const s = totalSeconds % 60;
     
-    // Actualizar texto
+    // Formateo con ceros (ej: 05, 09)
+    const mm = String(m).padStart(2, "0");
+    const ss = String(s).padStart(2, "0");
+    
+    // Si hay horas, mostramos H:MM:SS, si no, solo MM:SS
+    let texto = "";
+    if (h > 0) {
+        texto = `${h}:${mm}:${ss}`;
+    } else {
+        texto = `${mm}:${ss}`;
+    }
+    
     const box = document.getElementById("exam-timer");
-    if (box) box.textContent = "⏱ " + t;
+    if (box) box.textContent = "⏱ " + texto;
   }, 1000);
 }
 
