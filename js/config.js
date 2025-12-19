@@ -293,7 +293,7 @@ const SUBTEMAS = {
     "Trastornos de la infancia y la adolescencia",
     "Síndromes asociados a anomalías cromosómicas",
     "Síndrome de muerte súbita del lactante",
-    "Patología nefro-urológica",
+    "Patología nefrourológica infantil",
     "Patología infecciosa",
     "Patología respiratoria",
     "Patología digestiva",
