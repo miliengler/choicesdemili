@@ -1,134 +1,205 @@
 /* ==========================================================
-   📊 MEbank 3.0 – Estadísticas Inteligentes
+   📊 ESTADÍSTICAS GLOBALES – Estilo Clásico
    ========================================================== */
 
 function renderStats() {
   const app = document.getElementById("app");
 
-  // Calcular totales globales
+  // 1. Cálculos Globales
   let totalPreguntas = 0;
   let totalRespondidas = 0;
   let totalCorrectas = 0;
+  let totalIncorrectas = 0;
 
-  // Recorrer todas las materias
   BANK.subjects.forEach(m => {
+    // Total de preguntas en el banco
     const preguntasMateria = BANK.questions.filter(q => q.materia === m.slug);
     totalPreguntas += preguntasMateria.length;
 
+    // Progreso del usuario
     const progresoMateria = PROG[m.slug] || {};
     Object.values(progresoMateria).forEach(p => {
       if (p.status === "ok" || p.status === "bad") {
         totalRespondidas++;
         if (p.status === "ok") totalCorrectas++;
+        if (p.status === "bad") totalIncorrectas++;
       }
     });
   });
 
-  const totalIncorrectas = totalRespondidas - totalCorrectas;
-  const precision = totalRespondidas > 0 ? Math.round((totalCorrectas / totalRespondidas) * 100) : 0;
-  const avance = totalPreguntas > 0 ? Math.round((totalRespondidas / totalPreguntas) * 100) : 0;
+  const porcentajeGlobal = totalRespondidas > 0 
+    ? Math.round((totalCorrectas / totalRespondidas) * 100) 
+    : 0;
 
-  /* ---------- HTML Principal ---------- */
+  // 2. HTML Principal (Estilo Clásico)
   app.innerHTML = `
-    <div class="card fade" style="max-width:800px;margin:auto;">
+    <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
-      <h2 style="text-align:center;margin-bottom:20px;">📊 Tu Rendimiento</h2>
-
-      <div style="display:flex;justify-content:space-around;flex-wrap:wrap;gap:15px;text-align:center;margin-bottom:30px;">
+      <h3 style="margin-top:0;">📊 Estadísticas generales</h3>
+      
+      <div style="font-size: 15px; margin-top: 15px; line-height: 1.8;">
+        <p style="margin:0;"><b>Total de preguntas:</b> ${totalPreguntas}</p>
+        <p style='color:#16a34a; margin:0;'>✔ Correctas: ${totalCorrectas}</p>
+        <p style='color:#ef4444; margin:0;'>✖ Incorrectas: ${totalIncorrectas}</p>
+        <p style="margin:0;">⚪ Sin responder: ${totalPreguntas - totalRespondidas}</p>
         
-        <div style="flex:1;min-width:120px;padding:15px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
-          <div style="font-size:24px;font-weight:bold;color:#2563eb;">${avance}%</div>
-          <div style="font-size:13px;color:#64748b;">Avance del Banco</div>
-          <div style="font-size:11px;color:#94a3b8;">${totalRespondidas} / ${totalPreguntas}</div>
+        <div style="margin-top:10px; font-size: 18px;">
+            <b>Precisión global:</b> <span style="color:${getColor(porcentajeGlobal)}">${porcentajeGlobal}%</span>
         </div>
-
-        <div style="flex:1;min-width:120px;padding:15px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
-          <div style="font-size:24px;font-weight:bold;color:#16a34a;">${precision}%</div>
-          <div style="font-size:13px;color:#64748b;">Precisión Global</div>
-          <div style="font-size:11px;color:#94a3b8;">${totalCorrectas} ✅  / ${totalIncorrectas} ❌</div>
-        </div>
-
       </div>
 
-      ${renderSugerencias()}
+      <hr style='margin:18px 0; border: 0; border-top: 1px solid #e2e8f0;'>
 
-      <hr style="margin:25px 0;border:0;border-top:1px dashed #cbd5e1;">
-
-      <h3 style="margin-bottom:15px;">📈 Detalle por Materia</h3>
-      <div id="stats-materias-list">
-        ${renderMateriasList()}
+      <div id="sugerencias-container">
+        ${getSugerenciasHTML()}
       </div>
 
-      <div style="margin-top:30px;text-align:center;">
-        <button class="btn-small" onclick="renderHome()">⬅ Volver al inicio</button>
+      <hr style='margin:18px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <h4 style="margin-bottom:15px;">📈 Estadísticas por materia</h4>
+      <p style="font-size:13px; color:#64748b; margin-top:-10px; margin-bottom:15px;">
+        Tocá una materia para ver el detalle.
+      </p>
+      
+      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
+        </ul>
+
+      <div style='margin-top:30px;'>
+        <button class='btn-small' onclick='renderHome()'>⬅ Volver</button>
       </div>
 
     </div>
   `;
+
+  // 3. Renderizar la lista de materias
+  renderMateriasList();
 }
 
 /* ==========================================================
-   💡 Sugerencias de Repaso (Lógica)
+   📋 Lista de Materias (Acordeón Clásico)
    ========================================================== */
-function renderSugerencias() {
+function renderMateriasList() {
+  const container = document.getElementById("matsList");
+  
+  // Ordenar alfabéticamente (sin emojis)
+  const sortedSubjects = [...BANK.subjects].sort((a, b) => {
+    const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+    const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+    return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
+  });
+
+  const listHTML = sortedSubjects.map(m => {
+    // Cálculos por materia
+    const totalM = BANK.questions.filter(q => q.materia === m.slug).length;
+    if (totalM === 0) return ""; 
+
+    const datos = PROG[m.slug] || {};
+    let ok = 0, bad = 0;
+    Object.values(datos).forEach(p => {
+      if (p.status === "ok") ok++;
+      if (p.status === "bad") bad++;
+    });
+    
+    const resp = ok + bad;
+    const pct = resp > 0 ? Math.round((ok / resp) * 100) : 0;
+    const noresp = totalM - resp;
+
+    return `
+      <li style="margin-bottom: 8px;">
+        
+        <div onclick="toggleStatsAcc('${m.slug}')"
+             style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;
+                    padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between;
+                    align-items: center; transition: background 0.2s;">
+          
+          <div style="font-weight: 600; color: #334155;">${m.name}</div>
+          <div style="font-size: 13px; font-weight: bold; color: ${getColor(pct)};">
+            ${pct}%
+          </div>
+        </div>
+
+        <div id="stat-${m.slug}" style="display:none; padding: 15px; background: #f8fafc; 
+             border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: -4px;">
+          
+          <div style="display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap:10px;">
+            
+            <div style="font-size: 13px; line-height: 1.6; color: #475569;">
+              <div>📦 Total: <b>${totalM}</b></div>
+              <div style="color:#16a34a">✔ Correctas: <b>${ok}</b></div>
+              <div style="color:#ef4444">✖ Incorrectas: <b>${bad}</b></div>
+              <div style="color:#94a3b8">⚪ Sin hacer: <b>${noresp}</b></div>
+            </div>
+
+            <div>
+               <button class="btn-small" 
+                       style="font-size:12px; padding: 6px 12px; background: #3b82f6; color: white; border: none;"
+                       onclick="iniciarPracticaMateria('${m.slug}')">
+                 Practicar ▶
+               </button>
+            </div>
+
+          </div>
+          
+          <div style="margin-top:10px; height: 6px; background: #e2e8f0; border-radius: 3px; overflow: hidden;">
+             <div style="width: ${pct}%; height: 100%; background: ${getColor(pct)};"></div>
+          </div>
+
+        </div>
+      </li>
+    `;
+  }).join("");
+
+  container.innerHTML = listHTML;
+}
+
+/* ==========================================================
+   💡 Lógica de Sugerencias
+   ========================================================== */
+function getSugerenciasHTML() {
   let suggestions = [];
 
   BANK.subjects.forEach(m => {
-    const preguntas = BANK.questions.filter(q => q.materia === m.slug);
-    if (preguntas.length === 0) return;
+    const totalQ = BANK.questions.filter(q => q.materia === m.slug).length;
+    if (totalQ === 0) return;
 
-    const progreso = PROG[m.slug] || {};
-    let ok = 0, total = 0;
-    
-    Object.values(progreso).forEach(p => {
+    const datos = PROG[m.slug] || {};
+    let ok = 0, totalR = 0;
+    Object.values(datos).forEach(p => {
       if (p.status === "ok" || p.status === "bad") {
-        total++;
+        totalR++;
         if (p.status === "ok") ok++;
       }
     });
 
-    if (total > 5) { // Solo analizar si respondió al menos 5 preguntas
-      const pct = Math.round((ok / total) * 100);
+    if (totalR > 5) {
+      const pct = Math.round((ok / totalR) * 100);
       if (pct < 60) {
         suggestions.push({
-          type: "low_score",
-          materia: m.name,
-          slug: m.slug,
-          val: pct,
-          msg: `Tu rendimiento en <b>${m.name}</b> es bajo (${pct}%). ¡A repasar!`
+          msg: `📚 Tu promedio es bajo en <b>${m.name}</b> (${pct}%).`,
+          slug: m.slug
         });
       }
-    } else if (total === 0) {
+    } else if (totalR === 0) {
        suggestions.push({
-          type: "no_activity",
-          materia: m.name,
-          slug: m.slug,
-          val: 0,
-          msg: `Aún no empezaste con <b>${m.name}</b>.`
+          msg: `💡 Aún no empezaste <b>${m.name}</b>.`,
+          slug: m.slug
        });
     }
   });
 
-  // Priorizar: primero bajo rendimiento, luego las no tocadas
-  suggestions.sort((a, b) => {
-    if (a.type === "low_score" && b.type !== "low_score") return -1;
-    if (a.type !== "low_score" && b.type === "low_score") return 1;
-    return 0;
-  });
+  // Mostrar máximo 2 sugerencias aleatorias para no saturar
+  suggestions = suggestions.sort(() => 0.5 - Math.random()).slice(0, 2);
 
-  // Tomar top 3
-  const top = suggestions.slice(0, 3);
-
-  if (top.length === 0) return "";
+  if (suggestions.length === 0) return "";
 
   return `
-    <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:15px;margin-bottom:20px;">
-      <div style="font-weight:bold;color:#c2410c;margin-bottom:10px;">💡 Sugerencias para hoy:</div>
-      <ul style="margin:0;padding-left:20px;font-size:14px;color:#431407;">
-        ${top.map(s => `
-          <li style="margin-bottom:6px;">
+    <div style="text-align: left; background: #fff7ed; border: 1px solid #ffedd5; padding: 12px; border-radius: 8px;">
+      <h4 style="margin: 0 0 8px 0; color: #c2410c; font-size: 14px;">💡 Sugerencias:</h4>
+      <ul style="margin:0; padding-left: 20px; font-size: 13px; color: #9a3412;">
+        ${suggestions.map(s => `
+          <li style="margin-bottom:4px;">
             ${s.msg} 
-            <a href="#" onclick="iniciarPracticaMateria('${s.slug}')" style="color:#ea580c;text-decoration:none;font-weight:600;margin-left:5px;">▶ Practicar</a>
+            <a href="#" onclick="iniciarPracticaMateria('${s.slug}')" style="color:#ea580c; font-weight:bold; text-decoration:none;">[Ir]</a>
           </li>
         `).join("")}
       </ul>
@@ -137,91 +208,20 @@ function renderSugerencias() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Acordeón)
+   🔧 Utilidades
    ========================================================== */
-function renderMateriasList() {
-  // Ordenar alfabéticamente (limpiando emojis)
-  const sorted = [...BANK.subjects].sort((a, b) => {
-    const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
-    const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
-    return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
-  });
-
-  return sorted.map(m => {
-    const preguntas = BANK.questions.filter(q => q.materia === m.slug);
-    const totalQ = preguntas.length;
-    if (totalQ === 0) return ""; // No mostrar vacías
-
-    const progreso = PROG[m.slug] || {};
-    let ok = 0, bad = 0;
-    Object.values(progreso).forEach(p => {
-      if (p.status === "ok") ok++;
-      if (p.status === "bad") bad++;
-    });
-    
-    const respondidas = ok + bad;
-    const pct = respondidas > 0 ? Math.round((ok / respondidas) * 100) : 0;
-    const avance = Math.round((respondidas / totalQ) * 100);
-
-    // Barra de color según precisión
-    let colorBarra = "#cbd5e1"; // Gris
-    if (respondidas > 0) {
-      if (pct >= 70) colorBarra = "#22c55e"; // Verde
-      else if (pct >= 50) colorBarra = "#f59e0b"; // Naranja
-      else colorBarra = "#ef4444"; // Rojo
-    }
-
-    return `
-      <div style="border:1px solid #e2e8f0;border-radius:10px;margin-bottom:10px;overflow:hidden;">
-        
-        <div onclick="toggleStatDetails('${m.slug}')"
-             style="padding:12px 15px;background:#fff;cursor:pointer;display:flex;justify-content:space-between;align-items:center;">
-          
-          <div style="flex:1;">
-            <div style="font-weight:600;font-size:15px;">${m.name}</div>
-            <div style="font-size:12px;color:#64748b;margin-top:2px;">
-              ${respondidas}/${totalQ} respondidas (${avance}%)
-            </div>
-          </div>
-
-          <div style="text-align:right;">
-            <span style="font-weight:bold;font-size:16px;color:${colorBarra};">${pct}%</span>
-            <div style="font-size:10px;color:#94a3b8;">Precisión</div>
-          </div>
-
-        </div>
-
-        <div style="height:4px;width:100%;background:#f1f5f9;">
-          <div style="height:100%;width:${avance}%;background:${colorBarra};transition:width 0.5s;"></div>
-        </div>
-
-        <div id="stat-det-${m.slug}" style="display:none;background:#f8fafc;padding:12px 15px;border-top:1px solid #e2e8f0;font-size:13px;">
-          <div style="display:flex;gap:15px;margin-bottom:10px;">
-            <div style="color:#16a34a;">✔ Correctas: <b>${ok}</b></div>
-            <div style="color:#ef4444;">✖ Incorrectas: <b>${bad}</b></div>
-            <div style="color:#64748b;">⚪ Restantes: <b>${totalQ - respondidas}</b></div>
-          </div>
-          
-          <button class="btn-small" onclick="iniciarPracticaMateria('${m.slug}')">
-            ▶ Practicar esta materia
-          </button>
-        </div>
-
-      </div>
-    `;
-  }).join("");
-}
-
-/* ==========================================================
-   🎮 Utilidades UI
-   ========================================================== */
-function toggleStatDetails(slug) {
-  const el = document.getElementById(`stat-det-${slug}`);
+function toggleStatsAcc(slug) {
+  const el = document.getElementById(`stat-${slug}`);
   if (el) {
     el.style.display = el.style.display === "none" ? "block" : "none";
   }
 }
 
-// Necesitamos acceder a la función de iniciar práctica de Choice.js
-// Como 'iniciarPracticaMateria' está en choice.js, la llamamos directo.
-// Si no estuviera cargada, daría error, pero en tu index.html choice.js carga antes.
+function getColor(pct) {
+  if (pct >= 70) return "#16a34a"; // Verde
+  if (pct >= 50) return "#f59e0b"; // Naranja
+  return "#ef4444"; // Rojo
+}
+
+// Exponer globalmente
+window.renderStats = renderStats;
