@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Integrado)
+   🎯 MEbank 3.0 – Motor de resolución (CORREGIDO)
    ========================================================== */
 
 let CURRENT = {
@@ -13,23 +13,19 @@ let CURRENT = {
 /* ==========================================================
    📊 Estado Interno del Sidebar
    ========================================================== */
-const SB_PAGE_SIZE = 60; // Cantidad de preguntas por página del sidebar
+const SB_PAGE_SIZE = 60; 
 let SB_PAGE = 0;
 
 function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
 
-/* ----------------------------------------------------------
-   Sincronizar página del sidebar con la pregunta actual
-   ---------------------------------------------------------- */
+/* Sincronizar página del sidebar */
 function ensureSidebarOnCurrent() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
   SB_PAGE = clamp(targetPage, 0, totalPages - 1);
 }
 
-/* ----------------------------------------------------------
-   Renderizar información de paginado en el sidebar
-   ---------------------------------------------------------- */
+/* Renderizar info de paginado */
 function paintSidebarPageInfo() {
   const info = document.getElementById("sbInfo");
   const prev = document.getElementById("sbPrev");
@@ -49,13 +45,11 @@ function paintSidebarPageInfo() {
   next.disabled = SB_PAGE === totalPages - 1;
 }
 
-/* ----------------------------------------------------------
-   Funciones de los botones del Sidebar
-   ---------------------------------------------------------- */
+/* Botones Sidebar */
 function sbPrevPage() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   SB_PAGE = clamp(SB_PAGE - 1, 0, totalPages - 1);
-  renderPregunta(); // Re-renderiza para actualizar la grilla
+  renderPregunta();
 }
 
 function sbNextPage() {
@@ -83,8 +77,8 @@ function iniciarResolucion(config) {
     session: {}
   };
 
-  SB_PAGE = 0;               // Resetear paginado
-  ensureSidebarOnCurrent();  // Alinear con la pregunta 1
+  SB_PAGE = 0;
+  ensureSidebarOnCurrent();
 
   if (config.usarTimer) initTimer();
 
@@ -92,12 +86,15 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 Helpers de Opciones
+   🧩 Helpers de Opciones (LÓGICA MEJORADA)
    ========================================================== */
 function getOpcionesArray(q) {
+  // 1. Si ya es array
   if (Array.isArray(q.opciones) && q.opciones.length) return q.opciones;
 
+  // 2. Si es objeto {a: "...", b: "..."}
   if (q.opciones && typeof q.opciones === "object") {
+    // Forzamos el orden a, b, c, d, e
     const keys = ["a", "b", "c", "d", "e"];
     const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
     if (arr.length) return arr;
@@ -106,20 +103,34 @@ function getOpcionesArray(q) {
 }
 
 function getCorrectIndex(q, opcionesLen) {
-  const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
   let c = q.correcta;
 
-  if (typeof c === "number") return (c >= 0 && c < opcionesLen) ? c : null;
-  
-  if (typeof c === "string") {
-    const idx = mapa[c.trim().toLowerCase()];
-    return (idx != null && idx < opcionesLen) ? idx : null;
+  // 1. Si es número (ej: 0)
+  if (typeof c === "number") {
+    return (c >= 0 && c < opcionesLen) ? c : null;
   }
+
+  // 2. Si es string
+  if (typeof c === "string") {
+    c = c.trim().toLowerCase();
+
+    // Si es "0", "1", "2"...
+    if (!isNaN(c) && c !== "") {
+      const num = parseInt(c, 10);
+      return (num >= 0 && num < opcionesLen) ? num : null;
+    }
+
+    // Si es letra "a", "b", "c"...
+    const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+    const idx = mapa[c];
+    if (idx != null && idx < opcionesLen) return idx;
+  }
+
   return null;
 }
 
 /* ==========================================================
-   🧩 Render Principal (Pregunta + Sidebar)
+   🧩 Render Principal
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -139,28 +150,31 @@ function renderPregunta() {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  /* ------ OPCIONES ------ */
+  /* ------ OPCIONES HTML ------ */
   const opcionesHTML = opciones.map((op, idx) => {
     let cls = "q-option";
+    let icon = "";
 
     if (estado) {
-      if (correctIndex != null && idx === correctIndex) cls += " option-correct";
-      else if (marcada === idx && estado === "bad") cls += " option-wrong";
+      if (correctIndex != null && idx === correctIndex) {
+        cls += " option-correct";
+        icon = " ✅";
+      }
+      else if (marcada === idx && estado === "bad") {
+        cls += " option-wrong";
+        icon = " ❌";
+      }
     }
 
     return `
       <label class="${cls}" onclick="answer(${idx})">
         <span class="q-option-letter">${String.fromCharCode(97 + idx)})</span>
-        <span class="q-option-text">${op}</span>
+        <span class="q-option-text">${op}${icon}</span>
       </label>
     `;
   }).join("");
 
-  // Si cambiamos de pregunta con las flechas principales, aseguramos que el sidebar acompañe
-  // (Solo si NO fue un cambio manual de página del sidebar)
-  // Pero para simplificar, llamamos a ensureSidebarOnCurrent solo al navegar preguntas, no al paginar sidebar.
-  
-  /* ------ HTML ESTRUCTURA ------ */
+  /* ------ LAYOUT ------ */
   app.innerHTML = `
     <div class="q-layout fade">
 
@@ -186,36 +200,28 @@ function renderPregunta() {
           </div>
           
           ${estado && q.explicacion ? `
-            <div class="q-explanation" style="margin-top:15px; padding:10px; background:#f0fdf4; border-left:4px solid #22c55e; border-radius:4px; font-size:14px; color:#14532d;">
-               <b>Explicación:</b> ${q.explicacion}
+            <div style="margin-top:20px; padding:15px; background:#f0fdf4; border-left:4px solid #22c55e; border-radius:6px; color:#14532d; line-height:1.5;">
+               <b style="display:block;margin-bottom:5px;">💡 Explicación:</b> ${q.explicacion}
             </div>
           ` : ""}
 
           <div class="q-nav-row">
-            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
-              ⬅ Anterior
-            </button>
-
+            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button>
             <button class="btn-small" onclick="nextQuestion()">
               ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
             </button>
-
-            <button class="btn-small btn-ghost" onclick="salirResolucion()">
-              🏠 Salir
-            </button>
+            <button class="btn-small btn-ghost" onclick="salirResolucion()">🏠 Salir</button>
           </div>
         </div>
       </div>
 
       <aside class="q-sidebar">
-        <div class="q-sidebar-header"><b>Índice</b></div>
-
+        <div class="q-sidebar-header">Índice</div>
         <div class="q-sidebar-pager">
           <button class="btn-small" id="sbPrev" onclick="sbPrevPage()">◀</button>
           <div class="q-sidebar-pageinfo" id="sbInfo">...</div>
           <button class="btn-small" id="sbNext" onclick="sbNextPage()">▶</button>
         </div>
-
         <div class="q-sidebar-grid" id="sbGrid">
           ${renderSidebarCells()}
         </div>
@@ -228,46 +234,45 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   🧠 Responder (CON LÓGICA DE ESTADÍSTICAS)
+   🧠 Responder
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
   if (!q) return;
 
-  // No permitir cambiar respuesta en la misma sesión
+  // Bloquear si ya respondió
   if (CURRENT.session[q.id]) return;
 
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
+  // Lógica de corrección
   const esCorrecta = (correctIndex != null) ? (idx === correctIndex) : false;
   const estado = esCorrecta ? "ok" : "bad";
 
-  // 1. Guardar estado en sesión actual
+  // 1. Guardar en sesión temporal
   CURRENT.session[q.id] = estado;
   setRespuestaMarcada(q.id, idx);
 
-  // 2. Guardar progreso histórico (por materia)
+  // 2. Guardar progreso permanente
   const mat = q.materia || "otras";
   if (!PROG[mat]) PROG[mat] = {};
   PROG[mat][q.id] = { status: estado, fecha: Date.now() };
-  
   if (window.saveProgress) window.saveProgress();
 
   // 3. 📊 ACTUALIZAR ESTADÍSTICAS DIARIAS (Para el gráfico semanal)
   if (esCorrecta) {
-    const hoy = new Date().toISOString().split('T')[0]; // Ejemplo: "2025-12-19"
+    const hoy = new Date().toISOString().split('T')[0]; 
     const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
     stats[hoy] = (stats[hoy] || 0) + 1;
     localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
   }
 
-  // 4. Actualizar vista
   renderPregunta();
 }
 
 /* ==========================================================
-   🖼 Render Imágenes
+   🖼 Helpers Visuales
    ========================================================== */
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
@@ -284,7 +289,7 @@ function renderImagenesPregunta(imgs) {
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
-    ensureSidebarOnCurrent(); // Mueve la página del sidebar si es necesario
+    ensureSidebarOnCurrent();
     renderPregunta();
   } else {
     renderFin();
@@ -300,7 +305,7 @@ function prevQuestion() {
 }
 
 /* ==========================================================
-   📊 Render Celdas del Sidebar
+   📊 Render Sidebar Cells
    ========================================================== */
 function renderSidebarCells() {
   const total = CURRENT.list.length;
@@ -326,30 +331,27 @@ function renderSidebarCells() {
 function irAPregunta(idx) {
   if (idx < 0 || idx >= CURRENT.list.length) return;
   CURRENT.i = idx;
-  // No forzamos ensureSidebarOnCurrent aquí para permitir navegar el sidebar libremente
-  // Pero al renderizar la pregunta, visualmente se actualizará el activo.
   renderPregunta();
 }
 
 /* ==========================================================
-   🏁 Finalizar y Salir
+   🏁 Fin / Salir / Timer
    ========================================================== */
 function renderFin() {
   stopTimer();
   const total = CURRENT.list.length;
   const values = Object.values(CURRENT.session);
   const ok = values.filter(v => v === "ok").length;
-  const bad = total - ok; // Asumiendo que llegó al final respondiendo todo o saltando
+  const bad = total - ok;
 
   const app = document.getElementById("app");
   app.innerHTML = `
     <div class="card fade" style="max-width:520px;margin:auto;text-align:center;">
       <h2>${CURRENT.config.titulo || "Finalizado"}</h2>
-      <p>Total de preguntas: <b>${total}</b></p>
+      <p>Total: <b>${total}</b></p>
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
-      <p style="color:#ef4444;">✖ Incorrectas/Omitidas: ${bad}</p>
-
-      <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;">
+      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
+      <div style="margin-top:20px;">
         <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
       </div>
     </div>
@@ -357,16 +359,13 @@ function renderFin() {
 }
 
 function salirResolucion() {
-  if (!confirm("¿Seguro que querés salir?")) return;
-  stopTimer();
-  renderHome();
+  if (confirm("¿Seguro que querés salir?")) {
+    stopTimer();
+    renderHome();
+  }
 }
 
-/* ==========================================================
-   🕒 Timer (Opcional)
-   ========================================================== */
 let TIMER = { interval: null, start: 0 };
-
 function initTimer() {
   TIMER.start = Date.now();
   let el = document.getElementById("exam-timer");
@@ -377,29 +376,22 @@ function initTimer() {
     document.body.appendChild(el);
   }
   el.textContent = "⏱ 00:00";
-
   TIMER.interval = setInterval(() => {
-    const ms = Date.now() - TIMER.start;
-    const s = Math.floor(ms / 1000);
+    const s = Math.floor((Date.now() - TIMER.start) / 1000);
     const m = Math.floor(s / 60);
     const ss = s % 60;
-    const t = `${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
-    const box = document.getElementById("exam-timer");
-    if (box) box.textContent = "⏱ " + t;
+    el.textContent = `⏱ ${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
   }, 1000);
 }
 
 function stopTimer() {
-  if (TIMER.interval) {
-    clearInterval(TIMER.interval);
-    TIMER.interval = null;
-  }
+  if (TIMER.interval) clearInterval(TIMER.interval);
   const el = document.getElementById("exam-timer");
   if (el) el.remove();
 }
 
 /* ==========================================================
-   🛠 Helpers Varios
+   🛠 Helpers
    ========================================================== */
 const RESP_MARCADAS = {};
 function setRespuestaMarcada(id, idx) { RESP_MARCADAS[id] = idx; }
@@ -407,7 +399,6 @@ function getRespuestaMarcada(id) { return RESP_MARCADAS[id] ?? null; }
 
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
-  // Busca en BANK.subjects si está disponible globalmente
   if (typeof BANK !== 'undefined' && BANK.subjects) {
     const mat = BANK.subjects.find(s => s.slug === q.materia);
     return mat ? mat.name : q.materia;
