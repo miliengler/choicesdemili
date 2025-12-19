@@ -1,0 +1,38 @@
+/* ==========================================================
+   📱 MEbank – Ajustes Mobile
+   ========================================================== */
+
+@media (max-width: 960px) {
+
+  /* Layout se hace columna */
+  .q-layout {
+    flex-direction: column;
+    padding-right: 0 !important;
+  }
+
+  .q-main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Sidebar desaparece */
+  .q-sidebar {
+    display: none !important;
+  }
+
+  /* Opciones más grandes en mobile */
+  .q-option {
+    padding: 14px 16px;
+    font-size: 16px;
+  }
+
+  .q-enunciado {
+    font-size: 16px;
+  }
+
+  /* Botones navegacion */
+  .q-nav-row {
+    flex-direction: row;
+    gap: 8px;
+  }
+}
