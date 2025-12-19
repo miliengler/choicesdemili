@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌈 STYLE.CSS – Variables y Componentes Base
+   🌈 VARIABLES DE COLOR Y CONFIGURACIÓN GLOBAL
    ========================================================== */
 :root {
   --bg: #ffffff;
@@ -101,7 +101,7 @@ button:hover { transform: translateY(-2px); }
 .btn-small:hover { background: #e2e8f0; }
 
 /* ==========================================================
-   🧩 TARJETAS GENERALES
+   🧩 TARJETAS
    ========================================================== */
 .card {
   background: var(--card);
@@ -123,7 +123,7 @@ button:hover { transform: translateY(-2px); }
 .fade { animation: fadeIn 0.3s ease; }
 
 /* ==========================================================
-   📚 MENU CHOICE (Selección de materia)
+   📚 CHOICE POR MATERIA
    ========================================================== */
 .choice-item {
   border: 1px solid var(--line);
@@ -152,4 +152,167 @@ button:hover { transform: translateY(-2px); }
   font-size: 12px;
   font-weight: 600;
   color: var(--muted);
+}
+/* ==========================================================
+   🎯 RESOLVER – LAYOUT
+   ========================================================== */
+.q-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.q-main { flex: 1; }
+
+.q-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(2,6,23,.08);
+}
+
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.q-title { font-size: 16px; font-weight: 600; }
+.q-counter { font-size: 13px; color: var(--muted); }
+
+/* ENUNCIADO */
+.q-enunciado {
+  margin: 16px 0;
+  font-size: 15px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+/* ==========================================================
+   ✔ OPCIONES
+   ========================================================== */
+.q-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.q-option {
+  display: flex;
+  gap: 10px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.q-option:hover { background: #e2e8f0; }
+
+.q-option-letter {
+  font-weight: 700;
+  width: 22px;
+  text-align: center;
+  color: var(--brand-dark);
+}
+.q-option-text { flex: 1; }
+
+.option-correct {
+  background: #dcfce7 !important;
+  border-color: #86efac !important;
+}
+.option-wrong {
+  background: #fee2e2 !important;
+  border-color: #fca5a5 !important;
+}
+
+/* NAV */
+.q-nav-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* ==========================================================
+   📊 SIDEBAR
+   ========================================================== */
+.q-sidebar {
+  width: 120px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.q-sidebar-header {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.q-sidebar-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.q-sidebar-pager .btn-small {
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.q-sidebar-pageinfo {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.q-sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.sb-cell {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  padding: 6px 0;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.sb-active {
+  background: var(--brand);
+  border-color: var(--brand-dark);
+  color: #fff;
+}
+
+.sb-ok {
+  background: #bbf7d0;
+  border-color: #4ade80;
+}
+
+.sb-bad {
+  background: #fecaca;
+  border-color: #ef4444;
+}
+
+.sb-note {
+  box-shadow: 0 0 0 2px #facc15 inset;
+}
+
+/* ==========================================================
+   📱 RESPONSIVE
+   ========================================================== */
+@media (max-width: 800px) {
+  .q-layout { flex-direction: column; }
+  .q-sidebar { width: 100%; position: relative; }
+  .q-sidebar-grid { grid-template-columns: repeat(8, 1fr); }
+  .q-sidebar-pager { margin-bottom: 12px; }
 }
