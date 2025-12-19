@@ -363,27 +363,38 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🕒 Timer (Opcional)
+   🕒 Timer (Limpiado para usar CSS)
    ========================================================== */
 let TIMER = { interval: null, start: 0 };
 
 function initTimer() {
+  // Evitar duplicados
+  stopTimer(); 
+
   TIMER.start = Date.now();
+  
+  // Crear el div si no existe
   let el = document.getElementById("exam-timer");
   if (!el) {
     el = document.createElement("div");
     el.id = "exam-timer";
-    el.className = "exam-timer";
+    el.className = "exam-timer"; // <--- ESTA CLASE TOMA EL CSS NUEVO
     document.body.appendChild(el);
   }
+  
   el.textContent = "⏱ 00:00";
 
+  // Iniciar el conteo
   TIMER.interval = setInterval(() => {
     const ms = Date.now() - TIMER.start;
     const s = Math.floor(ms / 1000);
     const m = Math.floor(s / 60);
     const ss = s % 60;
+    
+    // Formato 00:00
     const t = `${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+    
+    // Actualizar texto
     const box = document.getElementById("exam-timer");
     if (box) box.textContent = "⏱ " + t;
   }, 1000);
