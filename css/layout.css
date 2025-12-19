@@ -1,41 +1,33 @@
 /* ==========================================================
-   🎨 MEbank – Layout del Motor de Resolución (2025)
-   Compatible con resolver.js PRO
+   🎨 MEbank – MOTOR DE RESOLUCIÓN (Unificado)
    ========================================================== */
 
-/* ---------- CONTENEDOR GENERAL ---------- */
+/* ---------- 1. CONTENEDOR PRINCIPAL ---------- */
 .q-layout {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* Clave para sticky */
   justify-content: center;
-  gap: 26px;
-  padding-right: 260px;   /* espacio para sidebar en desktop */
+  gap: 24px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
-  animation: fadeIn .3s ease;
+  padding: 20px 15px;
+  animation: fadeIn .4s ease;
 }
 
-@media (max-width: 960px) {
-  .q-layout {
-    padding-right: 0;
-    flex-direction: column;
-    gap: 18px;
-  }
-}
-
-/* ==========================================================
-   🧩 COLUMNA PRINCIPAL – TARJETA DE PREGUNTA
-   ========================================================== */
+/* ---------- 2. COLUMNA IZQUIERDA (Pregunta) ---------- */
 .q-main {
+  flex: 1;
+  min-width: 0;
   width: 100%;
-  max-width: 760px;
 }
 
 .q-card {
   background: var(--card);
-  padding: 26px 30px;
-  border-radius: 14px;
-  box-shadow: 0px 4px 16px rgba(0,0,0,.06);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.06);
   border: 1px solid var(--line);
 }
 
@@ -43,185 +35,213 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--line);
 }
 
 .q-title {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 17px;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .q-counter {
   background: var(--soft);
   color: var(--muted);
   padding: 4px 10px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 13px;
-}
-
-.q-meta {
-  font-size: 13px;
-  color: var(--muted);
+  font-weight: 600;
 }
 
 .q-materia {
-  font-weight: 600;
-  color: var(--brand-dark);
+  font-weight: 700;
+  color: var(--brand);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .q-enunciado {
-  font-size: 17px;
-  margin: 14px 0 14px;
-  line-height: 1.5;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #334155;
+  white-space: pre-wrap;
 }
 
-/* ==========================================================
-   🟩 OPCIONES DE RESPUESTA
-   ========================================================== */
-
+/* ---------- 3. OPCIONES ---------- */
 .q-options {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .q-option {
   display: flex;
-  gap: 10px;
-  padding: 12px 14px;
-  margin-top: 10px;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  border-radius: 10px;
+  gap: 15px;
+  padding: 16px;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 12px;
   cursor: pointer;
-  transition: all .15s ease;
+  transition: all .2s ease;
+  align-items: flex-start;
 }
 
 .q-option:hover {
-  background: #eef2f6;
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  transform: translateY(-1px);
 }
 
 .q-option-letter {
-  font-weight: 700;
-  width: 20px;
+  font-weight: 800;
   color: var(--muted);
+  min-width: 25px;
 }
 
 .q-option-text {
   flex: 1;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--muted);
 }
 
-/* Correcta / Incorrecta */
+/* Estados */
 .option-correct {
-  background:#dcfce7 !important;
-  border-color:#16a34a !important;
+  background: #f0fdf4 !important;
+  border-color: #22c55e !important;
+  color: #14532d;
 }
+.option-correct .q-option-letter { color: #15803d; }
 
 .option-wrong {
-  background:#fee2e2 !important;
-  border-color:#ef4444 !important;
+  background: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #7f1d1d;
 }
+.option-wrong .q-option-letter { color: #b91c1c; }
 
-/* ==========================================================
-   🖼 IMÁGENES
-   ========================================================== */
+/* ---------- 4. IMÁGENES ---------- */
+.q-images { margin: 15px 0; text-align: center; }
+.q-image { max-width: 100%; border-radius: 10px; border: 1px solid var(--line); }
 
-.q-images {
-  margin: 15px 0;
-}
-
-.q-image-wrap {
-  margin-bottom: 10px;
-}
-
-.q-image {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-}
-
-/* ==========================================================
-   🧭 NAVEGACIÓN
-   ========================================================== */
-
+/* ---------- 5. NAVEGACIÓN ---------- */
 .q-nav-row {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-/* ==========================================================
-   🟦 SIDEBAR – ÍNDICE DE PREGUNTAS
-   ========================================================== */
-
+/* ---------- 6. SIDEBAR (Escritorio) ---------- */
 .q-sidebar {
-  position: fixed;
-  top: 90px;
-  right: 12px;
-  width: 210px;
-  background: var(--card);
+  width: 280px;
+  min-width: 280px;
+  background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.06);
-  padding: 14px 16px;
-  max-height: 82vh;
-  overflow-y:auto;
-}
-
-@media (max-width: 960px) {
-  .q-sidebar { display:none; }
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  
+  /* STICKY: Se queda fijo al bajar */
+  position: sticky;
+  top: 90px; 
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
 }
 
 .q-sidebar-header {
-  margin-bottom: 12px;
-  font-size: 15px;
-  color: var(--brand-dark);
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
 }
 
-/* GRID */
+.q-sidebar-pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background: var(--soft);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+.q-sidebar-pageinfo { font-size: 13px; font-weight: 600; color: var(--muted); }
+
 .q-sidebar-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 6px;
+  gap: 8px;
+  overflow-y: auto;
+  padding-right: 5px;
+  flex: 1;
 }
 
 .sb-cell {
-  padding: 6px 0;
-  text-align: center;
-  background: var(--soft);
-  border-radius: 6px;
-  border: 1px solid var(--line);
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
+  font-weight: 600;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
   cursor: pointer;
-  transition: all .15s ease;
+  color: var(--muted);
+  transition: all 0.2s;
 }
 
-.sb-cell:hover { background:#e5eaf0; }
+.sb-cell:hover { border-color: #94a3b8; transform: scale(1.05); }
 
 .sb-active {
-  border-color: var(--brand);
-  background: #dbeafe;
+  background: var(--brand);
+  color: white;
+  border-color: var(--brand-dark);
+  box-shadow: 0 4px 6px -1px rgba(37,99,235,0.3);
 }
 
-.sb-ok {
-  background:#dcfce7 !important;
-  border-color:#16a34a !important;
-}
+.sb-ok { background: #dcfce7; color: #15803d; border-color: #86efac; }
+.sb-bad { background: #fee2e2; color: #b91c1c; border-color: #fca5a5; }
 
-.sb-bad {
-  background:#fee2e2 !important;
-  border-color:#ef4444 !important;
-}
-
-.sb-note {
-  box-shadow: inset 0 0 0 2px #fbbf24;
-}
 
 /* ==========================================================
-   ✨ ANIMACIONES
+   📱 ADAPTACIÓN MÓVIL (Todo integrado aquí)
    ========================================================== */
-@keyframes fadeIn {
-  from { opacity:0; transform: translateY(10px); }
-  to   { opacity:1; transform: translateY(0); }
+@media (max-width: 960px) {
+  .q-layout {
+    flex-direction: column; /* Pone uno abajo del otro */
+    padding: 15px;
+    gap: 30px;
+  }
+
+  .q-sidebar {
+    width: 100%;
+    min-width: 0;
+    position: relative; /* Ya no es sticky */
+    top: 0;
+    max-height: none;
+    order: 2; /* Importante: Manda el sidebar ABAJO de la pregunta */
+    margin-bottom: 40px;
+  }
+
+  .q-card { padding: 20px; }
+  .q-title, .q-enunciado { font-size: 16px; }
+  
+  .q-sidebar-grid {
+    max-height: 250px; /* Evita que sea infinito en móvil */
+  }
 }
