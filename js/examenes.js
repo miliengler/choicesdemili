@@ -249,14 +249,16 @@ function calcularProgresoExamen(examenId) {
 function iniciarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
   if (!preguntas.length) return alert("No se encontraron preguntas.");
+  const quiereTimer = confirm("¿Querés activar el cronómetro para este examen?");
 
   iniciarResolucion({
     modo: "examen",
     preguntas,
-    usarTimer: true,
+    usarTimer: quiereTimer, 
     titulo: formatearNombreExamen(id)
   });
 }
+
 
 /* ==========================================================
    🔁 Reanudar examen
