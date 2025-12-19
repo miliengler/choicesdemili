@@ -20,7 +20,6 @@ function renderProgressCircle(percent) {
 
   return `
     <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-      <!-- Círculo base gris -->
       <circle
         cx="${cx}"
         cy="${cy}"
@@ -30,7 +29,6 @@ function renderProgressCircle(percent) {
         fill="none"
       ></circle>
 
-      <!-- Progreso (arranca en 12 hs) -->
       <circle
         cx="${cx}"
         cy="${cy}"
@@ -45,7 +43,6 @@ function renderProgressCircle(percent) {
         style="transition: stroke-dashoffset 0.6s ease;"
       ></circle>
 
-      <!-- Porcentaje en el centro -->
       <text
         x="50%"
         y="55%"
@@ -74,7 +71,7 @@ function renderChoice() {
         <div>
           <h2 style="margin-bottom:6px;">Práctica por materia</h2>
           <p style="color:#64748b;margin:0;">
-            Elegí una materia y opcionalmente uno o más subtemas para comenzar tu práctica.
+            Elegí una materia y opcionalmente uno o más subtemas.
           </p>
         </div>
 
@@ -106,7 +103,7 @@ function renderChoice() {
 }
 
 /* ==========================================================
-   🧮 Ordenar materias (Mejorado: Sin Emojis)
+   🧮 Ordenar materias (Mejorado: Sin Emojis y Conecta el Select)
    ========================================================== */
 function getOrderedSubjects() {
   const list = [...BANK.subjects];
@@ -119,17 +116,20 @@ function getOrderedSubjects() {
     });
   }
 
-  // Orden Alfabético A-Z (Ignorando emojis y símbolos)
+  // Orden Alfabético A-Z (Ignorando emojis)
   return list.sort((a, b) => {
-    // Esta expresión regular borra todo lo que NO sea letra o número
-    const cleanA = a.name.replace(/[^\p{L}\p{N}]/gu, "").trim();
-    const cleanB = b.name.replace(/[^\p{L}\p{N}]/gu, "").trim();
-    
+    const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+    const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
     return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
   });
 }
 
-
+// ⚠️ ESTA ES LA FUNCIÓN QUE FALTABA
+function onChangeChoiceOrder(value) {
+  CHOICE_ORDER = value;
+  localStorage.setItem("MEbank_ChoiceOrder_v1", value);
+  renderChoice();
+}
 
 /* ==========================================================
    🧠 Stats por materia
@@ -150,7 +150,7 @@ function getMateriaStats(slug) {
 }
 
 /* ==========================================================
-   🎨 Render cada materia — CON CÍRCULO SVG
+   🎨 Render cada materia
    ========================================================== */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
