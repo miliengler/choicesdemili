@@ -139,7 +139,7 @@ function renderPregunta() {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // --- 📝 LÓGICA DE NOTAS (NUEVO) ---
+  // --- 📝 LÓGICA DE NOTAS ---
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const currentNote = savedNotes[q.id]; 
   const noteText = currentNote ? currentNote.text : "";
@@ -270,7 +270,7 @@ function answer(idx) {
 
   // 2. Guardar progreso histórico (por materia)
   const mat = q.materia || "otras";
-  if (typeof PROG !== 'undefined') { // Chequeo de seguridad
+  if (typeof PROG !== 'undefined') {
       if (!PROG[mat]) PROG[mat] = {};
       PROG[mat][q.id] = { status: estado, fecha: Date.now() };
       if (window.saveProgress) window.saveProgress();
@@ -278,7 +278,7 @@ function answer(idx) {
 
   // 3. 📊 ACTUALIZAR ESTADÍSTICAS DIARIAS (Para el gráfico semanal)
   if (esCorrecta) {
-    const hoy = new Date().toISOString().split('T')[0]; // Ejemplo: "2025-12-19"
+    const hoy = new Date().toISOString().split('T')[0];
     const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
     stats[hoy] = (stats[hoy] || 0) + 1;
     localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
@@ -306,7 +306,7 @@ function renderImagenesPregunta(imgs) {
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
     CURRENT.i++;
-    ensureSidebarOnCurrent(); // Mueve la página del sidebar si es necesario
+    ensureSidebarOnCurrent();
     renderPregunta();
   } else {
     renderFin();
@@ -322,12 +322,15 @@ function prevQuestion() {
 }
 
 /* ==========================================================
-   📊 Render Celdas del Sidebar
+   📊 Render Celdas del Sidebar (CON INDICADOR DE NOTAS)
    ========================================================== */
 function renderSidebarCells() {
   const total = CURRENT.list.length;
   const start = SB_PAGE * SB_PAGE_SIZE;
   const end = Math.min(total, start + SB_PAGE_SIZE);
+
+  // Cargamos notas para chequear visualmente
+  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
 
   const out = [];
   for (let idx = start; idx < end; idx++) {
@@ -340,6 +343,9 @@ function renderSidebarCells() {
     if (estado === "ok") cls += " sb-ok";
     if (estado === "bad") cls += " sb-bad";
 
+    // 👉 Si tiene nota, agregamos clase especial
+    if (savedNotes[q.id]) cls += " sb-note";
+
     out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
   }
   return out.join("");
@@ -348,8 +354,6 @@ function renderSidebarCells() {
 function irAPregunta(idx) {
   if (idx < 0 || idx >= CURRENT.list.length) return;
   CURRENT.i = idx;
-  // No forzamos ensureSidebarOnCurrent aquí para permitir navegar el sidebar libremente
-  // Pero al renderizar la pregunta, visualmente se actualizará el activo.
   renderPregunta();
 }
 
@@ -361,7 +365,7 @@ function renderFin() {
   const total = CURRENT.list.length;
   const values = Object.values(CURRENT.session);
   const ok = values.filter(v => v === "ok").length;
-  const bad = total - ok; // Asumiendo que llegó al final respondiendo todo o saltando
+  const bad = total - ok; 
 
   const app = document.getElementById("app");
   app.innerHTML = `
@@ -402,22 +406,17 @@ function initTimer() {
     document.body.appendChild(el);
   }
   
-  // Render inicial
   el.textContent = "⏱ 00:00";
 
   TIMER.interval = setInterval(() => {
     const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
-    
-    // Cálculos matemáticos
     const h = Math.floor(totalSeconds / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = totalSeconds % 60;
     
-    // Formateo con ceros (ej: 05, 09)
     const mm = String(m).padStart(2, "0");
     const ss = String(s).padStart(2, "0");
     
-    // Si hay horas, mostramos H:MM:SS, si no, solo MM:SS
     let texto = "";
     if (h > 0) {
         texto = `${h}:${mm}:${ss}`;
@@ -448,7 +447,6 @@ function getRespuestaMarcada(id) { return RESP_MARCADAS[id] ?? null; }
 
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
-  // Busca en BANK.subjects si está disponible globalmente
   if (typeof BANK !== 'undefined' && BANK.subjects) {
     const mat = BANK.subjects.find(s => s.slug === q.materia);
     return mat ? mat.name : q.materia;
