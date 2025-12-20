@@ -230,6 +230,32 @@ button:hover { transform: translateY(-2px); }
   justify-content: space-between;
   margin-top: 20px;
 }
+/* =========================================
+   ✅ ESTILOS DE RESPUESTA (Correcta/Incorrecta)
+   ========================================= */
+
+/* Opción Correcta (Verde) */
+.q-option.option-correct {
+  background-color: #dcfce7 !important; /* Verde claro */
+  border-color: #22c55e !important;     /* Borde verde fuerte */
+  color: #14532d !important;            /* Texto verde oscuro */
+  font-weight: 600;
+}
+
+/* Opción Incorrecta (Rojo) */
+.q-option.option-wrong {
+  background-color: #fee2e2 !important; /* Rojo claro */
+  border-color: #ef4444 !important;     /* Borde rojo fuerte */
+  color: #7f1d1d !important;            /* Texto rojo oscuro */
+  opacity: 0.8;
+}
+
+/* Bloquear clicks después de responder */
+.q-option.option-correct,
+.q-option.option-wrong {
+  cursor: default;
+  pointer-events: none; /* Evita que sigas clickeando */
+}
 
 /* ==========================================================
    📊 SIDEBAR
