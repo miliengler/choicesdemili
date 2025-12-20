@@ -4,13 +4,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El embarazo cronológicamente prolongado se define como:",
-    "opciones": {
-      "a": "≥ 40 semanas",
-      "b": "≥ 41 semanas",
-      "c": "≥ 42 semanas",
-      "d": "≥ 43 semanas"
-    },
-    "correcta": "c",
+    "opciones": [
+      "≥ 40 semanas",
+      "≥ 41 semanas",
+      "≥ 42 semanas",
+      "≥ 43 semanas"
+    ],
+    "correcta": 2,
     "explicacion": "El embarazo prolongado se define oficialmente como ≥ 42 semanas de gestación.",
     "oficial": false
   },
@@ -19,13 +19,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La complicación fetal más frecuente del embarazo prolongado es:",
-    "opciones": {
-      "a": "Anomalías congénitas",
-      "b": "Macrosomía",
-      "c": "Oligohidramnios",
-      "d": "Sufrimiento fetal crónico"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Anomalías congénitas",
+      "Macrosomía",
+      "Oligohidramnios",
+      "Sufrimiento fetal crónico"
+    ],
+    "correcta": 2,
     "explicacion": "La disminución progresiva del líquido amniótico es la complicación más frecuente en embarazos prolongados.",
     "oficial": false
   },
@@ -34,13 +34,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Indicación de inducción en embarazo prolongado:",
-    "opciones": {
-      "a": "ILA 13 cm",
-      "b": "BPP 8/8",
-      "c": "ILA < 5 cm",
-      "d": "Monitoreo normal"
-    },
-    "correcta": "c",
+    "opciones": [
+      "ILA 13 cm",
+      "BPP 8/8",
+      "ILA < 5 cm",
+      "Monitoreo normal"
+    ],
+    "correcta": 2,
     "explicacion": "El oligohidramnios (ILA < 5 cm o bolsillo único < 2 cm) es indicación clara de inducción.",
     "oficial": false
   },
@@ -49,13 +49,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El primer estudio recomendado en la vigilancia del embarazo prolongado es:",
-    "opciones": {
-      "a": "Perfil biofísico",
-      "b": "Flujometría Doppler umbilical",
-      "c": "Monitoreo fetal no estresante",
-      "d": "Ecografía de crecimiento"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Perfil biofísico",
+      "Flujometría Doppler umbilical",
+      "Monitoreo fetal no estresante",
+      "Ecografía de crecimiento"
+    ],
+    "correcta": 2,
     "explicacion": "El método inicial de vigilancia recomendada es el monitoreo fetal no estresante.",
     "oficial": false
   },
@@ -64,13 +64,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué parámetro del Bishop predice mejor el éxito de la inducción?",
-    "opciones": {
-      "a": "Altura de la presentación",
-      "b": "Consistencia del cuello",
-      "c": "Dilatación cervical",
-      "d": "Borramiento"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Altura de la presentación",
+      "Consistencia del cuello",
+      "Dilatación cervical",
+      "Borramiento"
+    ],
+    "correcta": 2,
     "explicacion": "La dilatación cervical es el factor individual con mayor valor predictivo para éxito.",
     "oficial": false
   },
@@ -79,13 +79,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Una paciente de 41+5 semanas consulta con movimientos fetales disminuidos. BPP 6/8 por disminución del líquido. Conducta:",
-    "opciones": {
-      "a": "Control en 48 h",
-      "b": "Inducción inmediata",
-      "c": "Reposición hídrica materna",
-      "d": "Repetir BPP mañana"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Control en 48 h",
+      "Inducción inmediata",
+      "Reposición hídrica materna",
+      "Repetir BPP mañana"
+    ],
+    "correcta": 1,
     "explicacion": "En embarazo prolongado y BPP 6/8 por LA bajo, corresponde inducir por riesgo de hipoxia.",
     "oficial": false
   },
@@ -94,13 +94,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El método de maduración cervical mecánico más recomendado es:",
-    "opciones": {
-      "a": "Misoprostol vaginal",
-      "b": "Foley transcervical",
-      "c": "Oxitocina a bajas dosis",
-      "d": "Despegamiento de membranas"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Misoprostol vaginal",
+      "Foley transcervical",
+      "Oxitocina a bajas dosis",
+      "Despegamiento de membranas"
+    ],
+    "correcta": 1,
     "explicacion": "El catéter Foley tiene bajo riesgo de hiperestimulación y se recomienda ampliamente para maduración.",
     "oficial": false
   },
@@ -109,13 +109,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La principal contraindicación del misoprostol vaginal en embarazadas es:",
-    "opciones": {
-      "a": "Pelvis estrecha",
-      "b": "Cesárea previa",
-      "c": "Rotura prematura de membrana",
-      "d": "Bishop > 8"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Pelvis estrecha",
+      "Cesárea previa",
+      "Rotura prematura de membrana",
+      "Bishop > 8"
+    ],
+    "correcta": 1,
     "explicacion": "Los análogos de prostaglandinas están contraindicados en pacientes con cicatriz uterina previa por riesgo de ruptura.",
     "oficial": false
   },
@@ -124,13 +124,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método recomendado para inducción en gestante con cesárea previa y Bishop desfavorable:",
-    "opciones": {
-      "a": "Misoprostol vaginal",
-      "b": "Dinoprostona",
-      "c": "Foley transcervical",
-      "d": "Oxígeno materno"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Misoprostol vaginal",
+      "Dinoprostona",
+      "Foley transcervical",
+      "Oxígeno materno"
+    ],
+    "correcta": 2,
     "explicacion": "El Foley es el método seguro y recomendado en inducciones con cicatriz previa.",
     "oficial": false
   },
@@ -139,13 +139,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El riesgo fetal más característico del embarazo cronológicamente prolongado es:",
-    "opciones": {
-      "a": "Onfalocele",
-      "b": "Hipertrofia ventricular",
-      "c": "Síndrome de aspiración meconial",
-      "d": "Incompatibilidad Rh"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Onfalocele",
+      "Hipertrofia ventricular",
+      "Síndrome de aspiración meconial",
+      "Incompatibilidad Rh"
+    ],
+    "correcta": 2,
     "explicacion": "La hipoxia crónica aumenta el riesgo de expulsión y aspiración de meconio.",
     "oficial": false
   },
@@ -154,13 +154,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La inducción con oxitocina requiere:",
-    "opciones": {
-      "a": "Bishop ≥ 6",
-      "b": "Bishop ≤ 4",
-      "c": "Bolsa íntegra obligatoria",
-      "d": "Foley colocado previamente"
-    },
-    "correcta": "a",
+    "opciones": [
+      "Bishop ≥ 6",
+      "Bishop ≤ 4",
+      "Bolsa íntegra obligatoria",
+      "Foley colocado previamente"
+    ],
+    "correcta": 0,
     "explicacion": "Oxitocina se utiliza con cuellos favorables (Bishop ≥ 6).",
     "oficial": false
   },
@@ -169,13 +169,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Embarazo de 41 semanas, BPP 8/8, LA normal. Conducta:",
-    "opciones": {
-      "a": "Finalizar embarazo ya",
-      "b": "Control cada 48–72 h",
-      "c": "Hospitalización",
-      "d": "Estimulación con oxitocina"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Finalizar embarazo ya",
+      "Control cada 48–72 h",
+      "Hospitalización",
+      "Estimulación con oxitocina"
+    ],
+    "correcta": 1,
     "explicacion": "Si los controles son normales, se realiza vigilancia estrecha hasta la semana 42.",
     "oficial": false
   },
@@ -184,13 +184,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Bishop 3. ¿Cuál es la opción inicial?",
-    "opciones": {
-      "a": "Oxitocina",
-      "b": "Foley o prostaglandinas",
-      "c": "Rotura artificial de membranas",
-      "d": "Conducta expectante indefinida"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Oxitocina",
+      "Foley o prostaglandinas",
+      "Rotura artificial de membranas",
+      "Conducta expectante indefinida"
+    ],
+    "correcta": 1,
     "explicacion": "Los cuellos desfavorables requieren maduración cervical previa.",
     "oficial": false
   },
@@ -199,13 +199,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué parámetro del BPP refleja mejor la oxigenación fetal a largo plazo?",
-    "opciones": {
-      "a": "Movimientos respiratorios",
-      "b": "Tono fetal",
-      "c": "Movimientos corporales",
-      "d": "Líquido amniótico"
-    },
-    "correcta": "d",
+    "opciones": [
+      "Movimientos respiratorios",
+      "Tono fetal",
+      "Movimientos corporales",
+      "Líquido amniótico"
+    ],
+    "correcta": 3,
     "explicacion": "El LA refleja crónicamente el estado de oxigenación fetal.",
     "oficial": false
   },
@@ -214,13 +214,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El bolsón vertical < 2 cm se interpreta como:",
-    "opciones": {
-      "a": "Normal",
-      "b": "Oligohidramnios",
-      "c": "Polihidramnios",
-      "d": "Anhidramnios"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Normal",
+      "Oligohidramnios",
+      "Polihidramnios",
+      "Anhidramnios"
+    ],
+    "correcta": 1,
     "explicacion": "Un bolsón < 2 cm es criterio de oligohidramnios.",
     "oficial": false
   },
@@ -229,13 +229,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 42 semanas, LA normal, sin contracciones. ¿Qué conducta recomiendan las guías?",
-    "opciones": {
-      "a": "Expectante hasta 43 semanas",
-      "b": "Inducción del trabajo de parto",
-      "c": "Repetir ecografía en 72 h",
-      "d": "Iniciar misoprostol sí o sí"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Expectante hasta 43 semanas",
+      "Inducción del trabajo de parto",
+      "Repetir ecografía en 72 h",
+      "Iniciar misoprostol sí o sí"
+    ],
+    "correcta": 1,
     "explicacion": "A las 42 semanas todas las gestantes deben finalizar el embarazo.",
     "oficial": false
   },
@@ -244,13 +244,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La dinoprostona está especialmente indicada cuando:",
-    "opciones": {
-      "a": "El cuello es favorable",
-      "b": "Hay cicatriz uterina previa",
-      "c": "Bishop < 6",
-      "d": "ILA normal"
-    },
-    "correcta": "c",
+    "opciones": [
+      "El cuello es favorable",
+      "Hay cicatriz uterina previa",
+      "Bishop < 6",
+      "ILA normal"
+    ],
+    "correcta": 2,
     "explicacion": "La dinoprostona se usa para maduración cervical cuando el Bishop es desfavorable.",
     "oficial": false
   },
@@ -259,13 +259,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es la principal ventaja del método mecánico frente al farmacológico?",
-    "opciones": {
-      "a": "Mejor eficacia",
-      "b": "Menor riesgo de infección",
-      "c": "Menor riesgo de hiperestimulación",
-      "d": "Mayor confort materno"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Mejor eficacia",
+      "Menor riesgo de infección",
+      "Menor riesgo de hiperestimulación",
+      "Mayor confort materno"
+    ],
+    "correcta": 2,
     "explicacion": "Los métodos mecánicos tienen muy baja tasa de taquisistolia.",
     "oficial": false
   },
@@ -274,13 +274,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, el doppler umbilical alterado indica:",
-    "opciones": {
-      "a": "Hipoxia aguda",
-      "b": "Compromiso crónico",
-      "c": "Feto macrosómico",
-      "d": "Anomalías congénitas"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Hipoxia aguda",
+      "Compromiso crónico",
+      "Feto macrosómico",
+      "Anomalías congénitas"
+    ],
+    "correcta": 1,
     "explicacion": "El doppler umbilical evalúa resistencia placentaria y compromisos crónicos.",
     "oficial": false
   },
@@ -289,13 +289,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El 'shell sign' ecográfico en embarazo prolongado significa:",
-    "opciones": {
-      "a": "Calcificación placentaria",
-      "b": "Mayor riesgo de cordón corto",
-      "c": "Placenta grado III",
-      "d": "Aumento del LA"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Calcificación placentaria",
+      "Mayor riesgo de cordón corto",
+      "Placenta grado III",
+      "Aumento del LA"
+    ],
+    "correcta": 2,
     "explicacion": "Las calcificaciones placentarias marcan maduración grado III típica de prolongación.",
     "oficial": false
   },
@@ -304,13 +304,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La inducción está contraindicada cuando:",
-    "opciones": {
-      "a": "Hay placenta posterior",
-      "b": "Se sospecha macrosomía leve",
-      "c": "Existe presentación transversa",
-      "d": "La paciente es nulípara"
-    },
-    "correcta": "c",
+    "opciones": [
+      "Hay placenta posterior",
+      "Se sospecha macrosomía leve",
+      "Existe presentación transversa",
+      "La paciente es nulípara"
+    ],
+    "correcta": 2,
     "explicacion": "La presentación transversa requiere resolución por cesárea.",
     "oficial": false
   },
@@ -319,13 +319,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El despegamiento de membranas se utiliza para:",
-    "opciones": {
-      "a": "Inducción inmediata",
-      "b": "Estimulación espontánea del parto",
-      "c": "Aumentar el líquido amniótico",
-      "d": "Corregir posición fetal"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Inducción inmediata",
+      "Estimulación espontánea del parto",
+      "Aumentar el líquido amniótico",
+      "Corregir posición fetal"
+    ],
+    "correcta": 1,
     "explicacion": "Aumenta la liberación de prostaglandinas endógenas, favoreciendo el inicio del trabajo de parto.",
     "oficial": false
   },
@@ -334,13 +334,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "El riesgo de muerte fetal intraparto aumenta especialmente después de:",
-    "opciones": {
-      "a": "40 semanas",
-      "b": "40+5 semanas",
-      "c": "41 semanas",
-      "d": "42 semanas"
-    },
-    "correcta": "d",
+    "opciones": [
+      "40 semanas",
+      "40+5 semanas",
+      "41 semanas",
+      "42 semanas"
+    ],
+    "correcta": 3,
     "explicacion": "El riesgo crece exponencialmente a partir de las 42 semanas.",
     "oficial": false
   },
@@ -349,13 +349,13 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado con LA normal y NST reactivo, la frecuencia de controles recomendada es:",
-    "opciones": {
-      "a": "Semanal",
-      "b": "Cada 48–72 h",
-      "c": "Diaria",
-      "d": "Cada 10 días"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Semanal",
+      "Cada 48–72 h",
+      "Diaria",
+      "Cada 10 días"
+    ],
+    "correcta": 1,
     "explicacion": "Las guías recomiendan vigilancia estrecha cada 48–72 h desde las 41 semanas.",
     "oficial": false
   },
@@ -364,20 +364,20 @@
     "materia": "obstetricia",
     "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método más efectivo para resolver Bishop favorable en embarazo prolongado:",
-    "opciones": {
-      "a": "Despegamiento repetido",
-      "b": "Oxitocina intravenosa",
-      "c": "Misoprostol sublingual",
-      "d": "Dinoprostona intracervical"
-    },
-    "correcta": "b",
+    "opciones": [
+      "Despegamiento repetido",
+      "Oxitocina intravenosa",
+      "Misoprostol sublingual",
+      "Dinoprostona intracervical"
+    ],
+    "correcta": 1,
     "explicacion": "Con un cuello favorable, la oxitocina es el método más eficaz y predecible.",
     "oficial": false
   },
   {
     "id": "obstetricia-012-026",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante de 41+2 semanas con LCF basal 140, movimientos fetales presentes y líquido amniótico normal. Bishop 3. ¿Cuál es la conducta inicial?",
     "opciones": [
       "Inducción inmediata con oxitocina",
@@ -392,7 +392,7 @@
   {
     "id": "obstetricia-012-027",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 40+5 semanas con ILA 4 cm. Feto cefálico y reactivo. ¿Cuál es la conducta adecuada según MSAL?",
     "opciones": [
       "Alta con control en 72 h",
@@ -407,7 +407,7 @@
   {
     "id": "obstetricia-012-028",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál de los siguientes es un riesgo característico del embarazo prolongado?",
     "opciones": [
       "Polihidramnios",
@@ -422,7 +422,7 @@
   {
     "id": "obstetricia-012-029",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Embarazada 41 semanas, Bishop 2. ¿Cuál método de maduración se considera más eficaz?",
     "opciones": [
       "Misoprostol vaginal",
@@ -437,7 +437,7 @@
   {
     "id": "obstetricia-012-030",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción por embarazo prolongado. Tras 6 h de oxitocina no hay cambios cervicales (Bishop 3 → 3). ¿Cuál es la conducta?",
     "opciones": [
       "Aumentar la dosis de oxitocina",
@@ -452,7 +452,7 @@
   {
     "id": "obstetricia-012-031",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Embarazo 41 semanas. BPP 6/10 por oligohidramnios. ¿Qué corresponde?",
     "opciones": [
       "Repetir BPP en 24 h",
@@ -467,7 +467,7 @@
   {
     "id": "obstetricia-012-032",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es la indicación más frecuente de inducción del parto?",
     "opciones": [
       "RPM",
@@ -482,7 +482,7 @@
   {
     "id": "obstetricia-012-033",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente con 41+4 semanas, Bishop 6. ¿Qué método es adecuado para inducir?",
     "opciones": [
       "Prostaglandinas",
@@ -497,7 +497,7 @@
   {
     "id": "obstetricia-012-034",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Indicador más precoz de disfunción placentaria en embarazo prolongado:",
     "opciones": [
       "Aumento de líquido",
@@ -512,7 +512,7 @@
   {
     "id": "obstetricia-012-035",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante de 42 semanas. Feto en presentación podálica. ¿Cuál es la conducta?",
     "opciones": [
       "Inducción inmediata",
@@ -527,7 +527,7 @@
   {
     "id": "obstetricia-012-036",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué método NO debe usarse para inducción en cicatriz uterina previa?",
     "opciones": [
       "Foley",
@@ -542,7 +542,7 @@
   {
     "id": "obstetricia-012-037",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+6 semanas. BPP 8/10 (sin líquido). ¿Qué conducta corresponde?",
     "opciones": [
       "Control diario",
@@ -557,7 +557,7 @@
   {
     "id": "obstetricia-012-038",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Complicación fetal típica del embarazo prolongado:",
     "opciones": [
       "Taquicardia fetal sostenida",
@@ -572,7 +572,7 @@
   {
     "id": "obstetricia-012-039",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuándo debe iniciarse el control fetal intensificado en gestaciones cronológicamente prolongadas según MSAL?",
     "opciones": [
       "39 semanas",
@@ -587,7 +587,7 @@
   {
     "id": "obstetricia-012-040",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante de 40+6 semanas decide esperar. Tiene controles normales. ¿Cuál es el límite máximo recomendado para conducta expectante?",
     "opciones": [
       "41+3",
@@ -602,7 +602,7 @@
   {
     "id": "obstetricia-012-041",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción por embarazo prolongado con Foley. ¿Cuándo se retira habitualmente la sonda?",
     "opciones": [
       "A las 4 h",
@@ -617,7 +617,7 @@
   {
     "id": "obstetricia-012-042",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método con mayor riesgo de hiperestimulación uterina:",
     "opciones": [
       "Foley",
@@ -632,7 +632,7 @@
   {
     "id": "obstetricia-012-043",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es la principal ventaja del misoprostol oral respecto del vaginal?",
     "opciones": [
       "Menos hiperestimulación",
@@ -647,7 +647,7 @@
   {
     "id": "obstetricia-012-044",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción en primigesta con 41+3 semanas. Bishop 4. ¿Cuál método es preferido?",
     "opciones": [
       "Foley",
@@ -662,7 +662,7 @@
   {
     "id": "obstetricia-012-045",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La presencia de meconio espeso en embarazo prolongado se relaciona principalmente con:",
     "opciones": [
       "Polihidramnios",
@@ -677,7 +677,7 @@
   {
     "id": "obstetricia-012-046",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente con inducción fallida tras prostaglandinas + oxitocina. ¿Cuál es el siguiente paso?",
     "opciones": [
       "Dejar 24 h y reintentar",
@@ -692,7 +692,7 @@
   {
     "id": "obstetricia-012-047",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál de las siguientes constituye una contraindicación absoluta para inducción?",
     "opciones": [
       "Oligohidramnios",
@@ -707,7 +707,7 @@
   {
     "id": "obstetricia-012-048",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método físico para maduración cervical con mejor perfil de seguridad:",
     "opciones": [
       "Laminarias",
@@ -722,7 +722,7 @@
   {
     "id": "obstetricia-012-049",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál parámetro del Bishop evalúa la consistencia cervical?",
     "opciones": [
       "Posición",
@@ -737,7 +737,7 @@
   {
     "id": "obstetricia-012-050",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41 semanas, ILA 6 cm, BPP 8/10. Preferencia materna de esperar. ¿Cuál es la conducta segura?",
     "opciones": [
       "Inducción inmediata",
@@ -752,7 +752,7 @@
   {
     "id": "obstetricia-012-051",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41 semanas con movimientos fetales disminuidos y BPP 6/10. ¿Cuál es la conducta indicada?",
     "opciones": [
       "Repetir BPP en 12 horas",
@@ -767,7 +767,7 @@
   {
     "id": "obstetricia-012-052",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 40+5 semanas. Bishop 7. ¿Cuál método de inducción es preferido?",
     "opciones": [
       "Prostaglandinas",
@@ -782,7 +782,7 @@
   {
     "id": "obstetricia-012-053",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el principal riesgo materno en el embarazo cronológicamente prolongado?",
     "opciones": [
       "Placenta previa",
@@ -797,7 +797,7 @@
   {
     "id": "obstetricia-012-054",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción fallida tras 24 h de Foley + oxitocina. Bishop 4. ¿Cuál es la conducta?",
     "opciones": [
       "Continuar oxitocina 12 h más",
@@ -812,7 +812,7 @@
   {
     "id": "obstetricia-012-055",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué hallazgo define oligoamnios en embarazo prolongado?",
     "opciones": [
       "ILA <10",
@@ -827,7 +827,7 @@
   {
     "id": "obstetricia-012-056",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41 semanas con BPP 8/10 (falta movimiento respiratorio). Líquido normal. ¿Conducta?",
     "opciones": [
       "Control en 24 h",
@@ -842,7 +842,7 @@
   {
     "id": "obstetricia-012-057",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el parámetro más importante del BPP en embarazo prolongado?",
     "opciones": [
       "Tono",
@@ -857,7 +857,7 @@
   {
     "id": "obstetricia-012-058",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción en embarazo 41+2. Bishop 3. ¿Cuál combinación mejora éxito?",
     "opciones": [
       "Misoprostol vaginal solo",
@@ -872,7 +872,7 @@
   {
     "id": "obstetricia-012-059",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente en inducción con misoprostol. FC fetal con desaceleraciones tardías. ¿Qué corresponde?",
     "opciones": [
       "Continuar monitoreo",
@@ -887,7 +887,7 @@
   {
     "id": "obstetricia-012-060",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿cuál es el riesgo neonatal más asociado?",
     "opciones": [
       "Sepsis neonatal temprana",
@@ -902,7 +902,7 @@
   {
     "id": "obstetricia-012-061",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41 semanas. NST reactivo, líquido normal. Prefiere esperar. ¿Cuál es el máximo permitido por MSAL?",
     "opciones": [
       "41+0",
@@ -917,7 +917,7 @@
   {
     "id": "obstetricia-012-062",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Foley colocado para maduración cervical. La paciente presenta fiebre y leucorrea fétida. ¿Diagnóstico?",
     "opciones": [
       "Infección urinaria",
@@ -932,7 +932,7 @@
   {
     "id": "obstetricia-012-063",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Contraindicación relativa para el despegamiento de membranas:",
     "opciones": [
       "Embarazo prolongado",
@@ -947,7 +947,7 @@
   {
     "id": "obstetricia-012-064",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente en inducción con oxitocina, dinámica: 6 contracciones/10min. ¿Qué corresponde?",
     "opciones": [
       "Continuar igual",
@@ -962,7 +962,7 @@
   {
     "id": "obstetricia-012-065",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Factores asociados a inducción exitosa:",
     "opciones": [
       "IMC alto",
@@ -977,7 +977,7 @@
   {
     "id": "obstetricia-012-066",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué método es útil para disminuir la tasa de embarazo prolongado?",
     "opciones": [
       "Control fetal intensivo",
@@ -992,7 +992,7 @@
   {
     "id": "obstetricia-012-067",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método con mayor tasa de hiperestimulación:",
     "opciones": [
       "Foley",
@@ -1007,7 +1007,7 @@
   {
     "id": "obstetricia-012-068",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción en paciente con cesárea previa. ¿Qué método es el más seguro?",
     "opciones": [
       "Misoprostol",
@@ -1022,7 +1022,7 @@
   {
     "id": "obstetricia-012-069",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 42 semanas sin trabajo de parto. ¿Cuál es el riesgo fetal que más aumenta?",
     "opciones": [
       "Onfalocele",
@@ -1037,7 +1037,7 @@
   {
     "id": "obstetricia-012-070",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el componente del Bishop que mejor predice éxito de inducción?",
     "opciones": [
       "Dilatación",
@@ -1052,7 +1052,7 @@
   {
     "id": "obstetricia-012-071",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿cuál de estos hallazgos define placenta senescente?",
     "opciones": [
       "Grado I",
@@ -1067,7 +1067,7 @@
   {
     "id": "obstetricia-012-072",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+1 con dinámica dolorosa pero sin cambios cervicales. ¿Cuál intervención ayuda a acelerar el trabajo?",
     "opciones": [
       "Aumentar oxitocina",
@@ -1082,7 +1082,7 @@
   {
     "id": "obstetricia-012-073",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es la definición de embarazo cronológicamente prolongado según MSAL?",
     "opciones": [
       "≥40+0 semanas",
@@ -1097,7 +1097,7 @@
   {
     "id": "obstetricia-012-074",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante de 41+4 semanas. FC fetal basal 160. Líquido disminuido. ¿Qué indica taquicardia fetal?",
     "opciones": [
       "Situación normal tardía",
@@ -1112,7 +1112,7 @@
   {
     "id": "obstetricia-012-075",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál método farmacológico para inducción tiene menor tasa de cesárea?",
     "opciones": [
       "Misoprostol vaginal",
@@ -1127,7 +1127,7 @@
   {
     "id": "obstetricia-012-076",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+3 semanas. NST no reactivo, líquido normal. ¿Cuál es la conducta adecuada?",
     "opciones": [
       "Repetir NST en 1 hora",
@@ -1142,7 +1142,7 @@
   {
     "id": "obstetricia-012-077",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 42 semanas con BPP 8/10 y oligoamnios leve. ¿Qué corresponde según MSAL?",
     "opciones": [
       "Conducta expectante",
@@ -1157,7 +1157,7 @@
   {
     "id": "obstetricia-012-078",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál de estas NO es una indicación de inducción por embarazo prolongado?",
     "opciones": [
       "Líquido amniótico reducido",
@@ -1172,7 +1172,7 @@
   {
     "id": "obstetricia-012-079",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método de inducción contraindicado si la paciente tiene antecedente de cesárea previa:",
     "opciones": [
       "Foley",
@@ -1187,7 +1187,7 @@
   {
     "id": "obstetricia-012-080",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En inducciones por embarazo prolongado, ¿qué hallazgo fetal obliga a suspender el método?",
     "opciones": [
       "Aceleraciones",
@@ -1202,7 +1202,7 @@
   {
     "id": "obstetricia-012-081",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál de estos es un factor predictor de fracaso de inducción?",
     "opciones": [
       "Multiparidad",
@@ -1217,7 +1217,7 @@
   {
     "id": "obstetricia-012-082",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41 semanas. Se decide despegamiento de membranas. ¿Qué efecto adverso es esperable?",
     "opciones": [
       "Hiperestimulación",
@@ -1232,7 +1232,7 @@
   {
     "id": "obstetricia-012-083",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La indicación de control fetal en embarazo prolongado es:",
     "opciones": [
       "Cada 24 h",
@@ -1247,7 +1247,7 @@
   {
     "id": "obstetricia-012-084",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 42 semanas. Bishop 7. Feto cefálico. ¿Qué método se elige?",
     "opciones": [
       "Prostaglandinas",
@@ -1262,7 +1262,7 @@
   {
     "id": "obstetricia-012-085",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál complicación aumenta con embarazos prolongados?",
     "opciones": [
       "Restricción de crecimiento por perfusión reducida",
@@ -1277,7 +1277,7 @@
   {
     "id": "obstetricia-012-086",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41+1 con dinámica adecuada. Tras 4 h no progresa más allá de 3 cm. ¿Qué corresponde?",
     "opciones": [
       "Aumentar oxitocina",
@@ -1292,7 +1292,7 @@
   {
     "id": "obstetricia-012-087",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el método de maduración cervical más indicado en pacientes con alto riesgo de hiperestimulación?",
     "opciones": [
       "Dinoprostona",
@@ -1307,7 +1307,7 @@
   {
     "id": "obstetricia-012-088",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente con Bishop 0. ¿Cuál método ofrece mayor probabilidad de éxito?",
     "opciones": [
       "Prostaglandinas",
@@ -1322,7 +1322,7 @@
   {
     "id": "obstetricia-012-089",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿qué parámetro fetal sufre mayor deterioro por disfunción placentaria?",
     "opciones": [
       "Movimientos respiratorios",
@@ -1337,7 +1337,7 @@
   {
     "id": "obstetricia-012-090",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41+5. NST reactivo, ILA 3 cm. ¿Conducta?",
     "opciones": [
       "Control en 48 h",
@@ -1352,7 +1352,7 @@
   {
     "id": "obstetricia-012-091",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Método que genera mayor tasa de parto vaginal dentro de 24 h:",
     "opciones": [
       "Foley",
@@ -1367,7 +1367,7 @@
   {
     "id": "obstetricia-012-092",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿qué hallazgo ecográfico indica mayor riesgo?",
     "opciones": [
       "Placenta grado II",
@@ -1382,7 +1382,7 @@
   {
     "id": "obstetricia-012-093",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 42 semanas. Bishop 4. ¿Qué método de inicio se recomienda?",
     "opciones": [
       "Amniotomía",
@@ -1397,7 +1397,7 @@
   {
     "id": "obstetricia-012-094",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el principal objetivo de la inducción en embarazo prolongado?",
     "opciones": [
       "Reducir macrosomía",
@@ -1412,7 +1412,7 @@
   {
     "id": "obstetricia-012-095",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+2, Bishop 5. ¿Qué intervención mejora el Bishop rápidamente?",
     "opciones": [
       "Misoprostol rectal",
@@ -1427,7 +1427,7 @@
   {
     "id": "obstetricia-012-096",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál hallazgo clínico sugiere maceración fetal en embarazo prolongado?",
     "opciones": [
       "Líquido verde claro",
@@ -1442,7 +1442,7 @@
   {
     "id": "obstetricia-012-097",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Durante inducción se detecta taquísistolia (≥6 contracciones/10min). ¿Cuál fármaco se utiliza para tratarla?",
     "opciones": [
       "Adrenalina",
@@ -1457,7 +1457,7 @@
   {
     "id": "obstetricia-012-098",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué factor aumenta la probabilidad de cesárea durante inducción?",
     "opciones": [
       "Multiparidad",
@@ -1472,7 +1472,7 @@
   {
     "id": "obstetricia-012-099",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41 semanas decide esperar. ¿Qué elemento es indispensable para permitir conducta expectante?",
     "opciones": [
       "NST reactivo",
@@ -1487,7 +1487,7 @@
   {
     "id": "obstetricia-012-100",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿qué parámetro del RCTG se altera primero por hipoxia crónica?",
     "opciones": [
       "Variabilidad",
@@ -1502,7 +1502,7 @@
   {
     "id": "obstetricia-012-101",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Multipara 41+4 semanas. NST reactivo, ILA 7 cm, Bishop 8. ¿Cuál es el método de inducción más adecuado?",
     "opciones": [
       "Amniotomía + oxitocina",
@@ -1517,7 +1517,7 @@
   {
     "id": "obstetricia-012-102",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+3 con disminución marcada de movimientos fetales. NST no reactivo. ¿Cuál es la conducta?",
     "opciones": [
       "Repetir NST en 1 h",
@@ -1532,7 +1532,7 @@
   {
     "id": "obstetricia-012-103",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿cuál es el riesgo fetal más aumentado?",
     "opciones": [
       "Mielomeningocele",
@@ -1547,7 +1547,7 @@
   {
     "id": "obstetricia-012-104",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 42 semanas con feto PAEG y líquido normal. ¿Qué conducta es correcta?",
     "opciones": [
       "Esperar 48 h más",
@@ -1562,7 +1562,7 @@
   {
     "id": "obstetricia-012-105",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Durante inducción, la paciente presenta taquísistolia sin compromiso fetal. ¿Qué medida se debe implementar?",
     "opciones": [
       "Continuar igual",
@@ -1577,7 +1577,7 @@
   {
     "id": "obstetricia-012-106",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Primigesta 41 semanas. Bishop 2. ¿Qué método tiene mejor eficacia inicial?",
     "opciones": [
       "Foley",
@@ -1592,7 +1592,7 @@
   {
     "id": "obstetricia-012-107",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente 41+2 con feto en presentación transversa. ¿Cuál es la conducta?",
     "opciones": [
       "Version cefálica externa",
@@ -1607,7 +1607,7 @@
   {
     "id": "obstetricia-012-108",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿qué parámetro sugiere mayor deterioro fetal?",
     "opciones": [
       "Movimientos fetales aumentados",
@@ -1622,7 +1622,7 @@
   {
     "id": "obstetricia-012-109",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Durante inducción con misoprostol se observa hiperestimulación y desaceleraciones tardías. ¿Qué corresponde?",
     "opciones": [
       "Aumentar oxígeno materno",
@@ -1637,7 +1637,7 @@
   {
     "id": "obstetricia-012-110",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Inducción por embarazo prolongado. Tras 12 h de Foley + misoprostol, Bishop cambia de 1 → 5. ¿Qué conducta sigue?",
     "opciones": [
       "Repetir prostaglandinas",
@@ -1652,7 +1652,7 @@
   {
     "id": "obstetricia-012-111",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 41+6. NST reactivo, ILA normal. Ella desea esperar. ¿Qué corresponde?",
     "opciones": [
       "Permitir conducta expectante 48 h más",
@@ -1667,7 +1667,7 @@
   {
     "id": "obstetricia-012-112",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál condición aumenta la probabilidad de requerir cesárea durante inducción por prolongado?",
     "opciones": [
       "Edad <20 años",
@@ -1682,7 +1682,7 @@
   {
     "id": "obstetricia-012-113",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Qué método evita hiperestimulación y es seguro en cesárea previa?",
     "opciones": [
       "Dinoprostona",
@@ -1697,7 +1697,7 @@
   {
     "id": "obstetricia-012-114",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente con antecedentes de pérdida fetal tardía. Ahora cursa 41 semanas. NST reactivo. ¿Qué se indica?",
     "opciones": [
       "Control diario",
@@ -1712,7 +1712,7 @@
   {
     "id": "obstetricia-012-115",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "En embarazo prolongado, ¿qué parámetro del RCTG se altera primero por hipoxia crónica?",
     "opciones": [
       "Variabilidad",
@@ -1721,13 +1721,13 @@
       "Reactividad"
     ],
     "correcta": 1,
-    "explicacion": "La pérdida de aceleraciones es un signo precoz de compromiso fetal.",
+    "explicacion": "La pérdida de aceleraciones suele ser el primer signo temprano de compromiso.",
     "oficial": false
   },
   {
     "id": "obstetricia-012-116",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Durante inducción, la paciente presenta fiebre, taquicardia materna y dolor uterino. Diagnóstico probable:",
     "opciones": [
       "Hipertonicidad uterina",
@@ -1742,7 +1742,7 @@
   {
     "id": "obstetricia-012-117",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Paciente con 41+2. Bishop 6. Dinámica espontánea irregular. ¿Qué intervención ayuda a establecer trabajo de parto?",
     "opciones": [
       "Misoprostol",
@@ -1757,7 +1757,7 @@
   {
     "id": "obstetricia-012-118",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "¿Cuál es el principal beneficio del misoprostol oral frente al vaginal?",
     "opciones": [
       "Menor hiperestimulación",
@@ -1772,7 +1772,7 @@
   {
     "id": "obstetricia-012-119",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "Gestante 42 semanas con líquido teñido meconial espeso. FC fetal con variabilidad moderada. ¿Qué corresponde?",
     "opciones": [
       "Esperar evolución espontánea",
@@ -1787,7 +1787,7 @@
   {
     "id": "obstetricia-012-120",
     "materia": "obstetricia",
-    "submateria": "Embarazo cronológicamente prolongado e inducción del trabajo de parto",
+    "submateria": "Embarazo prolongado e inducción",
     "enunciado": "La principal complicación materna asociada a embarazos prolongados es:",
     "opciones": [
       "Rotura uterina",
