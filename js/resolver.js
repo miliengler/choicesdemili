@@ -119,7 +119,7 @@ function getCorrectIndex(q, opcionesLen) {
 }
 
 /* ==========================================================
-   🧩 Render Principal (Pregunta + Sidebar + NOTAS)
+   🧩 Render Principal (Con lógica de colores corregida)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -133,8 +133,9 @@ function renderPregunta() {
   const numero = CURRENT.i + 1;
   const materiaNombre = getMateriaNombreForQuestion(q);
 
-  const estado = CURRENT.session[q.id] || null;
-  const marcada = getRespuestaMarcada(q.id);
+  // Estado de la pregunta actual
+  const estado = CURRENT.session[q.id] || null; // "ok", "bad" o null
+  const marcada = getRespuestaMarcada(q.id);    // Índice que tocó el usuario (0, 1, 2...)
 
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
@@ -145,13 +146,23 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  /* ------ OPCIONES ------ */
+  /* ------ 🎨 GENERAR OPCIONES CON COLORES ------ */
   const opcionesHTML = opciones.map((op, idx) => {
     let cls = "q-option";
-
+    
+    // Si ya respondió, bloqueamos todo
     if (estado) {
-      if (correctIndex != null && idx === correctIndex) cls += " option-correct";
-      else if (marcada === idx && estado === "bad") cls += " option-wrong";
+        cls += " q-option-locked"; 
+
+        // 1. Si es la correcta -> VERDE (Siempre mostramos la correcta)
+        if (correctIndex !== null && idx === correctIndex) {
+            cls += " option-correct";
+        }
+        
+        // 2. Si es la que eligió el usuario Y estaba mal -> ROJO
+        else if (idx === marcada && estado === "bad") {
+            cls += " option-wrong";
+        }
     }
 
     return `
@@ -188,13 +199,13 @@ function renderPregunta() {
           </div>
           
           ${estado && q.explicacion ? `
-            <div class="q-explanation" style="margin-top:15px; padding:10px; background:#f0fdf4; border-left:4px solid #22c55e; border-radius:4px; font-size:14px; color:#14532d;">
-               <b>Explicación:</b> ${q.explicacion}
+            <div class="q-explanation">
+               <strong>💡 Explicación:</strong><br>
+               ${q.explicacion}
             </div>
           ` : ""}
 
-          <div style="margin-top:20px; border-top:1px dashed #e2e8f0; padding-top:10px;">
-             
+          <div style="margin-top:25px; border-top:1px dashed #e2e8f0; padding-top:15px;">
              <button class="btn-small" 
                      style="background:${hasNote ? '#fefce8' : 'white'}; border-color:${hasNote ? '#facc15' : '#e2e8f0'}; color:${hasNote ? '#854d0e' : '#64748b'};"
                      onclick="toggleNoteArea('${q.id}')">
@@ -212,6 +223,7 @@ function renderPregunta() {
                 </div>
              </div>
           </div>
+
           <div class="q-nav-row" style="margin-top:25px;">
             <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
               ⬅ Anterior
