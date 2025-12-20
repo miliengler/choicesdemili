@@ -306,6 +306,22 @@ button:hover { transform: translateY(-2px); }
 .sb-note {
   box-shadow: 0 0 0 2px #facc15 inset;
 }
+/* Indicador de Nota en Sidebar */
+.sb-cell {
+  position: relative; /* Necesario para ubicar el puntito */
+}
+
+.sb-note::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: #f59e0b; /* Naranja/Ámbar */
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
 
 /* ==========================================================
    📱 RESPONSIVE
