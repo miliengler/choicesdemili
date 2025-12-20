@@ -119,7 +119,7 @@ function getCorrectIndex(q, opcionesLen) {
 }
 
 /* ==========================================================
-   🧩 Render Principal (Pregunta + Sidebar)
+   🧩 Render Principal (Pregunta + Sidebar + NOTAS)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -139,6 +139,12 @@ function renderPregunta() {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
+  // --- 📝 LÓGICA DE NOTAS (NUEVO) ---
+  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  const currentNote = savedNotes[q.id]; 
+  const noteText = currentNote ? currentNote.text : "";
+  const hasNote = !!noteText;
+
   /* ------ OPCIONES ------ */
   const opcionesHTML = opciones.map((op, idx) => {
     let cls = "q-option";
@@ -155,10 +161,6 @@ function renderPregunta() {
       </label>
     `;
   }).join("");
-
-  // Si cambiamos de pregunta con las flechas principales, aseguramos que el sidebar acompañe
-  // (Solo si NO fue un cambio manual de página del sidebar)
-  // Pero para simplificar, llamamos a ensureSidebarOnCurrent solo al navegar preguntas, no al paginar sidebar.
   
   /* ------ HTML ESTRUCTURA ------ */
   app.innerHTML = `
@@ -191,7 +193,26 @@ function renderPregunta() {
             </div>
           ` : ""}
 
-          <div class="q-nav-row">
+          <div style="margin-top:20px; border-top:1px dashed #e2e8f0; padding-top:10px;">
+             
+             <button class="btn-small" 
+                     style="background:${hasNote ? '#fefce8' : 'white'}; border-color:${hasNote ? '#facc15' : '#e2e8f0'}; color:${hasNote ? '#854d0e' : '#64748b'};"
+                     onclick="toggleNoteArea('${q.id}')">
+                ${hasNote ? '📝 Ver/Editar mi nota' : '➕ Agregar nota personal'}
+             </button>
+
+             <div id="note-area-${q.id}" style="display:none; margin-top:10px;">
+                <textarea id="note-text-${q.id}" 
+                          placeholder="Escribí tu apunte acá..."
+                          style="width:100%; height:80px; padding:10px; border:1px solid #cbd5e1; border-radius:6px; font-family:inherit; font-size:14px; resize:vertical;">${noteText}</textarea>
+                
+                <div style="margin-top:6px; text-align:right;">
+                   <button class="btn-small" style="background:#3b82f6; color:white; border:none;" 
+                           onclick="saveNoteResolver('${q.id}')">💾 Guardar nota</button>
+                </div>
+             </div>
+          </div>
+          <div class="q-nav-row" style="margin-top:25px;">
             <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
               ⬅ Anterior
             </button>
@@ -249,10 +270,11 @@ function answer(idx) {
 
   // 2. Guardar progreso histórico (por materia)
   const mat = q.materia || "otras";
-  if (!PROG[mat]) PROG[mat] = {};
-  PROG[mat][q.id] = { status: estado, fecha: Date.now() };
-  
-  if (window.saveProgress) window.saveProgress();
+  if (typeof PROG !== 'undefined') { // Chequeo de seguridad
+      if (!PROG[mat]) PROG[mat] = {};
+      PROG[mat][q.id] = { status: estado, fecha: Date.now() };
+      if (window.saveProgress) window.saveProgress();
+  }
 
   // 3. 📊 ACTUALIZAR ESTADÍSTICAS DIARIAS (Para el gráfico semanal)
   if (esCorrecta) {
