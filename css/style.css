@@ -230,32 +230,50 @@ button:hover { transform: translateY(-2px); }
   justify-content: space-between;
   margin-top: 20px;
 }
-/* =========================================
-   ✅ ESTILOS DE RESPUESTA (Correcta/Incorrecta)
-   ========================================= */
+/* =========================================================
+   🎨 ESTILOS DE RESPUESTA (Feedback Visual)
+   ========================================================= */
 
-/* Opción Correcta (Verde) */
+/* 🟢 Opción CORRECTA (Siempre se pinta de verde al responder) */
 .q-option.option-correct {
-  background-color: #dcfce7 !important; /* Verde claro */
+  background-color: #dcfce7 !important; /* Fondo verde claro */
   border-color: #22c55e !important;     /* Borde verde fuerte */
   color: #14532d !important;            /* Texto verde oscuro */
   font-weight: 600;
 }
 
-/* Opción Incorrecta (Rojo) */
+/* 🔴 Opción INCORRECTA (Solo la que clickeaste si fallaste) */
 .q-option.option-wrong {
-  background-color: #fee2e2 !important; /* Rojo claro */
+  background-color: #fee2e2 !important; /* Fondo rojo claro */
   border-color: #ef4444 !important;     /* Borde rojo fuerte */
   color: #7f1d1d !important;            /* Texto rojo oscuro */
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
-/* Bloquear clicks después de responder */
-.q-option.option-correct,
-.q-option.option-wrong {
+/* 🔒 Bloquear clicks después de responder */
+.q-option-locked {
+  pointer-events: none; /* Ya no se puede clickear */
   cursor: default;
-  pointer-events: none; /* Evita que sigas clickeando */
 }
+
+/* 💡 Caja de Explicación */
+.q-explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-left: 4px solid #3b82f6; /* Borde azul */
+  border-radius: 6px;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 
 /* ==========================================================
    📊 SIDEBAR
