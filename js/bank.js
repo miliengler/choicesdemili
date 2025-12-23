@@ -1,239 +1,202 @@
+
 /* ==========================================================
-   🏦 BANK.JS – Gestión de Datos (Versión Turbo + Híbrida)
+   🌐 MEbank 3.0 — Banco TURBO (Carga paralela)
    ========================================================== */
 
-/* 1. DEFINICIÓN DE MATERIAS */
-const SUBJECTS = [
-  { slug: "neumonologia",       name: "🫁 Neumonología" },
-  { slug: "psiquiatria",        name: "💭 Psiquiatría" },
-  { slug: "cardiologia",        name: "🫀 Cardiología" },
-  { slug: "nutricion",          name: "🍏 Nutrición" },
-  { slug: "urologia",           name: "🚽 Urología" },
-  { slug: "gastroenterologia",  name: "💩 Gastroenterología" },
-  { slug: "dermatologia",       name: "🧴 Dermatología" },
-  { slug: "infectologia",       name: "🦠 Infectología" },
-  { slug: "reumatologia",       name: "💪 Reumatología" },
-  { slug: "hematologia",        name: "🩸 Hematología" },
-  { slug: "neurologia",         name: "🧠 Neurología" },
-  { slug: "endocrinologia",     name: "🧪 Endocrinología" },
-  { slug: "pediatria",          name: "🧸 Pediatría" },
-  { slug: "oncologia",          name: "🎗️ Oncología" },
-  { slug: "medicinafamiliar",   name: "👨‍👩‍👧‍👦 Medicina Familiar" },
-  { slug: "ginecologia",        name: "🌸 Ginecología" },
-  { slug: "obstetricia",        name: "🤰 Obstetricia" },
-  { slug: "cirugiageneral",     name: "🔪 Cirugía General" },
-  { slug: "traumatologia",      name: "🦴 Traumatología" },
-  { slug: "oftalmologia",       name: "👁️ Oftalmología" },
-  { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
-  { slug: "neurocirugia",       name: "🧠 Neurocirugía" },
-  { slug: "toxicologia",        name: "☠️ Toxicología" },
-  { slug: "medicinalegal",      name: "⚖️ Medicina Legal" },
-  { slug: "saludpublica",       name: "🏥 Salud Pública" },
-  { slug: "imagenes",           name: "🩻 Diagnóstico por Imágenes" },
-  { slug: "otras",              name: "📚 Otras" }
-];
+/* ==========================================================
+   🔐 PROGRESO (Esto SÍ se guarda en localStorage)
+   ========================================================== */
+const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
-/* 2. DEFINICIÓN DE SUBTEMAS */
-const SUBTEMAS = {
-  cardiologia: [
-    "Cardiología básica", "Hipertensión arterial y factores de riesgo", "Insuficiencia cardíaca",
-    "Cardiopatía isquémica", "Trastornos del ritmo", "Síncope", "Valvulopatías", "Miocardiopatías",
-    "Pericardio", "Aorta", "Enfermedad arterial periférica", "Venas y linfáticos", "Otras preguntas de cardiología"
-  ],
-  cirugiageneral: [
-    "Evaluación prequirúrgica", "Quemaduras", "Cirugía mínimamente invasiva", "Glándulas salivales y masas cervicales",
-    "Patología de pared abdominal", "Trasplante y procuración", "Otras preguntas de cirugía general"
-  ],
-  dermatologia: [
-    "Generalidades", "Infecciosas", "Dermatología y sistémicas", "Oncología cutánea", "Eritemato-descamativas",
-    "Ampollosas autoinmunes", "Glandulares / Urticaria / Angioedema", "Genodermatosis y facomatosis", "Otras preguntas de dermatología"
-  ],
-  endocrinologia: [
-    "Hipotálamo / Hipófisis", "Tiroides", "Suprarrenales", "Urgencias endocrinas", "Desarrollo sexual", "Otras preguntas de endocrinología"
-  ],
-  gastroenterologia: [
-    "Esófago", "Estómago", "Intestino delgado", "Hígado", "Vía biliar", "Páncreas", "Colon", "Cáncer colorrectal", "Otras preguntas de gastroenterología"
-  ],
-  ginecologia: [
-    "Alteraciones menstruales", "Sangrado uterino anormal", "Climaterio y menopausia", "Síndrome de ovario poliquístico",
-    "Infertilidad / Esterilidad / Reproducción asistida", "Anticoncepción", "Endometriosis", "Infecciones del tracto genital inferior",
-    "EPI", "Prolapso e IU", "Patología benigna de mama", "Cáncer de mama", "Patología cervical benigna y preinvasora",
-    "Cáncer de cuello uterino", "Patología benigna uterina", "Cáncer de endometrio", "Cáncer de ovario",
-    "Vulva / Vagina / Cáncer de vulva", "Tumores benignos de ovario", "Otras preguntas de ginecología"
-  ],
-  hematologia: [
-    "Anemias carenciales", "Anemias hemolíticas", "Otras anemias", "Insuficiencias medulares", "Leucemias agudas",
-    "Mieloproliferativas crónicas", "Linfoproliferativas crónicas", "Linfomas", "Gamapatías monoclonales",
-    "Trasplante hematopoyético", "Coagulación", "Terapia transfusional", "Otras preguntas de hematología"
-  ],
-  imagenes: [
-    "Radiografía", "Tomografía", "Resonancia magnética", "Ecografía", "Otras preguntas de diagnóstico por imágenes"
-  ],
-  infectologia: [
-    "Bacterias", "Antibacterianos", "Sepsis y nosocomiales", "Endocarditis", "SNC y meningitis", "TRS", "TRI – Neumonías",
-    "Tuberculosis", "ITS", "Virus respiratorios / Influenza", "Virus no HIV", "HIV", "Hongos", "Inmunodeprimidos no HIV",
-    "Tropicales", "Tracto digestivo", "Rickettsias / Bartonella / Coxiella / Leptospira", "Brucella / Nocardia / Actinomicosis",
-    "Virus varios", "COVID-19", "Otras preguntas de infectología"
-  ],
-  medicinalegal: [
-    "Sistema de salud", "Vigilancia epidemiológica", "Análisis de situación de salud", "Normativa nacional y jurisdiccional",
-    "APS – Atención primaria de la salud", "Salud sexual y reproductiva"
-  ],
-  neurologia: [
-    "ECV", "Convulsiones y epilepsia", "Desmielinizantes", "Trastornos del movimiento", "Cefaleas", "Metabólicas",
-    "Encefalitis viral", "Neuropatías", "Placa motora", "Miopatías", "SNP", "Otras preguntas de neurología"
-  ],
-  neumonologia: [
-    "Anatomía y malformaciones", "Semiología", "Asma", "EPOC", "Neumonía", "Bronquiectasias", "Fibrosis quística",
-    "NPS y cáncer de pulmón", "Tromboembolia de pulmón", "Pleura, mediastino y diafragma", "Enfermedades intersticiales",
-    "Ventilación y ventilación mecánica", "Otras preguntas de neumonología"
-  ],
-  neurocirugia: ["Neurocirugía"],
-  nutricion: [
-    "Diabetes mellitus", "Nutrición y obesidad", "Metabolismo lipídico", "Metabolismo calcio – PTH", "Hipoglucemias", "Otras preguntas de nutrición"
-  ],
-  obstetricia: [
-    "Fisiología de la gestación", "Hemorragias del embarazo", "Screening gestacional", "Complicaciones maternas en el embarazo",
-    "Amenazas de parto prematuro", "Rotura prematura de membranas", "Enfermedad hemolítica fetal", "Infecciones congénitas y perinatales",
-    "Patología materna y gestación", "Embarazo múltiple", "Parto", "Embarazo prolongado e inducción", "Puerperio", "Lactancia",
-    "Otras preguntas de obstetricia"
-  ],
-  oftalmologia: [
-    "Introducción", "Conjuntiva", "Retina", "Neurooftalmología", "Uveítis", "Glaucoma", "Órbita", "Córnea y esclera",
-    "Cristalino", "Párpados y vía lagrimal", "Refracción", "Estrabismo", "Toxicidad ocular", "Otras preguntas de oftalmología"
-  ],
-  oncologia: ["Oncología"],
-  otorrinolaringologia: [
-    "Oído", "Faringe", "Laringe", "Nariz", "Patología maxilofacial", "Otras preguntas de ORL"
-  ],
-  otras: ["Fármacos", "Otras"],
-  pediatria: [
-    "Neonatología", "Cardiopatías congénitas", "Desarrollo y nutrición", "Maltrato y abuso sexual", "Vacunación infantil",
-    "Trastornos de la infancia y la adolescencia", "Síndromes asociados a anomalías cromosómicas", "Síndrome de muerte súbita del lactante",
-    "Patología nefrourológica infantil", "Patología infecciosa infantil", "Patología del aparato respiratorio",
-    "Patología del aparato digestivo", "Hematología infantil", "Intoxicaciones", "Oncohematología infantil", "Otras preguntas de pediatría"
-  ],
-  psiquiatria: [
-    "Trastornos neuróticos y de la personalidad", "Trastornos del estado de ánimo", "Trastornos psicóticos",
-    "Trastornos relacionados con sustancias", "Trastornos de la conducta alimentaria", "Otras preguntas de psiquiatría"
-  ],
-  reumatologia: [
-    "Cristales", "Vasculitis", "Artritis reumatoide", "Espondiloartropatías", "LES y SAF", "Metabólica ósea",
-    "Artritis infecciosa", "AIJ", "Artrosis", "Otras artropatías", "Otras enfermedades reumatológicas", "Amiloidosis",
-    "Otras preguntas de reumatología"
-  ],
-  saludpublica: [
-    "Introducción a la epidemiología", "Introducción a la estadística", "Estadística descriptiva", "Estadística inferencial",
-    "Medidas epidemiológicas de frecuencia", "Análisis de asociación", "Tipos de estudios epidemiológicos", "Validez y fiabilidad",
-    "Evaluación de pruebas diagnósticas", "Medicina basada en la evidencia", "Datos de nuestro país", "Otras preguntas de salud pública"
-  ],
-  toxicologia: ["Toxicología"],
-  traumatologia: [
-    "Fracturas", "Miembro superior", "Miembro inferior", "Tumores músculo-esqueléticos", "Columna vertebral", "Otras preguntas de traumatología"
-  ],
-  urologia: [
-    "Fisiología renal", "Síndromes clínicos", "Fracaso renal agudo", "Insuficiencia renal crónica", "Glomerulonefritis primaria",
-    "Nefritis intersticial", "Tubulopatías", "Riesgo cardiovascular y riñón", "Infecciones urinarias", "Riñón y enfermedades sistémicas",
-    "Otras preguntas de urología"
-  ],
-  medicinafamiliar: ["General"]
-};
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY_PROG)) || {}; }
+  catch { return {}; }
+}
 
-/* 3. OBJETO PRINCIPAL DEL BANCO */
-let BANK = {
-  questions: [],
-  subjects: SUBJECTS,
-  subsubjects: SUBTEMAS,
-  loaded: false
-};
+function saveProgress() {
+  try { localStorage.setItem(STORAGE_KEY_PROG, JSON.stringify(PROG)); }
+  catch (e) { console.warn("No se pudo guardar PROG", e); }
+}
 
-/* 4. UTILS INTERNOS */
+let PROG = loadProgress();
+
+/* ==========================================================
+   🔤 Utilidades (Normalizar y Deduplicar)
+   ========================================================== */
+function normalize(s) {
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() : "";
+}
+
 function normalizeId(id) {
   return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
 }
 
-// ⚠️ PROCESADOR HÍBRIDO (Soporta Array y String)
-function processQuestion(q) {
-    q.id = normalizeId(q.id);
+/* ==========================================================
+   🧱 BANK — Estructura
+   ========================================================== */
+let BANK = {
+  subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [], // Lo toma de config.js
+  subsubjects: {},
+  questions: [],
+  loaded: false
+};
 
-    // Si materia es array, lo dejamos array. Si es string, lo dejamos string.
-    // Pero nos aseguramos de que los valores sean lowercase (slugs).
-    if (Array.isArray(q.materia)) {
-        q.materia = q.materia.map(m => m.toLowerCase().trim());
-    } else if (typeof q.materia === "string") {
-        q.materia = q.materia.toLowerCase().trim();
-    } else {
-        q.materia = "otras";
-    }
-
-    // Normalizar subtemas (solo string por ahora en tu estructura, pero prevenimos)
-    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0]; 
+// Inicializar subtemas vacíos
+if(typeof SUBJECTS !== 'undefined') {
+    SUBJECTS.forEach(s => {
+        BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
+          ? SUBTEMAS[s.slug] 
+          : ["General"];
+    });
 }
 
-/* 5. CARGA EN PARALELO (TURBO) */
+/* ==========================================================
+   ⚡ CARGA TURBO (La magia ocurre aquí)
+   ========================================================== */
+
 async function loadAllBanks() {
+  console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
-  if(appMsg) appMsg.textContent = "🚀 Cargando banco...";
+  if(appMsg) appMsg.textContent = "🚀 Cargando banco completo...";
 
-  // 📝 LISTA DE ARCHIVOS REALES (Agregá acá tus archivos nuevos)
-  const files = [
-    // Obstetricia
-    "bancos/obstetricia/obstetricia12.json",
-    "bancos/obstetricia/obstetricia13.json",
-    
-    // Exámenes
-    "bancos/examenes/examen_unico_2025.json",
-    "bancos/examenes/examen_unico_2024.json",
-    "bancos/examenes/examen_unico_2023.json"
-  ];
+  // 1. Recopilar TODAS las URLs que necesitamos
+  const urls = [];
 
-  // Disparamos todas las peticiones a la vez
-  const promises = files.map(url => fetch(url).then(res => {
-      if (!res.ok) throw new Error(`404: ${url}`);
-      return res.json();
-  }).catch(err => {
-      console.warn(`⚠️ No se pudo cargar ${url}`, err);
-      return []; // Si falla uno, devolvemos array vacío para no romper todo
-  }));
+  // A) Materias 
+  BANK.subjects.forEach(subj => {
+    for (let i = 1; i <= 20; i++) { 
+      urls.push({
+        url: `bancos/${subj.slug}/${subj.slug}${i}.json`,
+        type: "materia",
+        meta: subj
+      });
+    }
+  });
 
-  try {
-    const results = await Promise.all(promises);
-    
-    // Aplanamos y procesamos
-    const allQuestions = results.flat();
-    
-    allQuestions.forEach(q => processQuestion(q));
 
-    // Deduplicar por ID (por si cargás dos veces lo mismo)
-    const map = new Map();
-    allQuestions.forEach(q => map.set(q.id, q));
-    
-    BANK.questions = Array.from(map.values());
-    BANK.loaded = true;
-
-    console.log(`✅ Carga finalizada: ${BANK.questions.length} preguntas.`);
-    if(window.renderHome) window.renderHome();
-
-  } catch (err) {
-    console.error("❌ Error fatal cargando:", err);
-    document.getElementById("app").innerHTML = `<div style="text-align:center;padding:20px;color:red;">Error de carga. Revisá la consola.</div>`;
+  // B) Exámenes Anteriores (desde EXAMENES_META en config.js)
+  if (typeof EXAMENES_META !== 'undefined') {
+    EXAMENES_META.forEach(ex => {
+      urls.push({
+        url: ex.file,
+        type: "examen",
+        meta: ex
+      });
+    });
   }
+
+  // 2. Disparar TODAS las peticiones en paralelo
+  // Promise.allSettled espera a que todas terminen (bien o mal)
+  const results = await Promise.allSettled(
+    urls.map(item => fetch(item.url).then(r => {
+      if (!r.ok) throw new Error("404");
+      return r.json().then(data => ({ data, type: item.type, meta: item.meta }));
+    }))
+  );
+
+  // 3. Procesar resultados
+  let allQuestions = [];
+  let successCount = 0;
+
+  results.forEach(res => {
+    if (res.status === "fulfilled") {
+      const { data, type, meta } = res.value;
+      if (Array.isArray(data)) {
+        successCount++;
+        // Normalizamos cada pregunta del archivo
+        data.forEach(q => {
+            // Ajustes rápidos antes de insertar
+            processQuestion(q, type, meta);
+            allQuestions.push(q);
+        });
+      }
+    }
+  });
+
+  // 4. Deduplicar y Guardar en Memoria RAM
+  BANK.questions = dedupeQuestionsById(allQuestions);
+  BANK.loaded = true;
+
+  console.timeEnd("⏱ Tiempo de carga");
+  console.log(`✅ Carga finalizada: ${successCount} archivos leídos. ${BANK.questions.length} preguntas totales.`);
+
+  // Aviso visual
+  if(appMsg) appMsg.textContent = "✔ Banco listo.";
+  
+  // Renderizar Home automáticamente si existe la función
+  if(typeof renderHome === "function") renderHome();
 }
 
-/* 6. APIs PARA LA APP (Adaptadas a Híbrido) */
+/* ==========================================================
+   🧬 Procesador de Pregunta Individual
+   ========================================================== */
+function processQuestion(q, type, examMeta) {
+    // ID
+    q.id = normalizeId(q.id);
+    
+    // Materia
+    if (Array.isArray(q.materia)) q.materia = q.materia[0];
+    q.materia = normalize(q.materia || "otras");
+    // Fallback si la materia no está en config
+    if (!BANK.subjects.some(s => s.slug === q.materia)) q.materia = "otras";
+
+    // Submateria (Simplificada)
+    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
+    q.submateria = normalize(q.submateria || "");
+
+    // Opciones y Correcta
+    q.opciones = getOpcionesArray(q);
+    q.correcta = getCorrectIndex(q);
+
+    // Metadatos Examen
+    q.tipo = type;
+    if (type === "examen" && examMeta) {
+        q.examen = examMeta.id;
+        q.anio = examMeta.anio;
+    } else {
+        q.examen = null;
+    }
+}
+
+/* ==========================================================
+   🔧 Helpers de Limpieza
+   ========================================================== */
+function dedupeQuestionsById(list) {
+  const map = new Map();
+  list.forEach(q => {
+      if(!q.id) return;
+      if(!map.has(q.id)) map.set(q.id, q);
+  });
+  return Array.from(map.values());
+}
+
+function getOpcionesArray(q) {
+  if (Array.isArray(q.opciones)) return q.opciones;
+  if (q.opciones && typeof q.opciones === 'object') {
+      return ["a","b","c","d","e"].map(k => q.opciones[k]).filter(v=>v);
+  }
+  return [];
+}
+
+function getCorrectIndex(q) {
+  // Soporte para número (0-4) o letra ("a"-"e")
+  if (typeof q.correcta === 'number') return q.correcta;
+  if (typeof q.correcta === 'string') {
+      const map = {a:0, b:1, c:2, d:3, e:4};
+      return map[q.correcta.trim().toLowerCase()] ?? -1;
+  }
+  return -1;
+}
+
+
+
+/* ==========================================================
+   🔌 APIs para las otras pantallas
+   ========================================================== */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        // 1. Chequeo Híbrido de Materia
-        const esMateria = Array.isArray(q.materia) 
-            ? q.materia.includes(slug) 
-            : q.materia === slug;
-        
-        if (!esMateria) return false;
-
-        // 2. Chequeo de Subtemas
-        if (subs && subs.length) {
-            return subs.includes(q.submateria);
-        }
+        if (q.materia !== slug) return false;
+        if (subs && subs.length) return subs.includes(q.submateria);
         return true;
     });
 }
@@ -242,7 +205,6 @@ function getQuestionsByExamen(id) {
     return BANK.questions.filter(q => q.examen === id);
 }
 
-/* 7. INIT */
-function initApp() {
-  loadAllBanks();
+function getQuestionById(id) {
+    return BANK.questions.find(q => q.id === id);
 }
