@@ -1,11 +1,8 @@
-
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Carga paralela)
+   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia)
    ========================================================== */
 
-/* ==========================================================
-   🔐 PROGRESO (Esto SÍ se guarda en localStorage)
-   ========================================================== */
+/* --- PROGRESO --- */
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
 function loadProgress() {
@@ -20,9 +17,7 @@ function saveProgress() {
 
 let PROG = loadProgress();
 
-/* ==========================================================
-   🔤 Utilidades (Normalizar y Deduplicar)
-   ========================================================== */
+/* --- UTILIDADES --- */
 function normalize(s) {
   return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() : "";
 }
@@ -31,17 +26,14 @@ function normalizeId(id) {
   return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
 }
 
-/* ==========================================================
-   🧱 BANK — Estructura
-   ========================================================== */
+/* --- ESTRUCTURA --- */
 let BANK = {
-  subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [], // Lo toma de config.js
+  subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [],
   subsubjects: {},
   questions: [],
   loaded: false
 };
 
-// Inicializar subtemas vacíos
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -50,16 +42,12 @@ if(typeof SUBJECTS !== 'undefined') {
     });
 }
 
-/* ==========================================================
-   ⚡ CARGA TURBO (La magia ocurre aquí)
-   ========================================================== */
-
+/* --- CARGA TURBO --- */
 async function loadAllBanks() {
   console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
   if(appMsg) appMsg.textContent = "🚀 Cargando banco completo...";
 
-  // 1. Recopilar TODAS las URLs que necesitamos
   const urls = [];
 
   // A) Materias 
@@ -73,8 +61,7 @@ async function loadAllBanks() {
     }
   });
 
-
-  // B) Exámenes Anteriores (desde EXAMENES_META en config.js)
+  // B) Exámenes
   if (typeof EXAMENES_META !== 'undefined') {
     EXAMENES_META.forEach(ex => {
       urls.push({
@@ -85,8 +72,6 @@ async function loadAllBanks() {
     });
   }
 
-  // 2. Disparar TODAS las peticiones en paralelo
-  // Promise.allSettled espera a que todas terminen (bien o mal)
   const results = await Promise.allSettled(
     urls.map(item => fetch(item.url).then(r => {
       if (!r.ok) throw new Error("404");
@@ -94,7 +79,6 @@ async function loadAllBanks() {
     }))
   );
 
-  // 3. Procesar resultados
   let allQuestions = [];
   let successCount = 0;
 
@@ -103,9 +87,7 @@ async function loadAllBanks() {
       const { data, type, meta } = res.value;
       if (Array.isArray(data)) {
         successCount++;
-        // Normalizamos cada pregunta del archivo
         data.forEach(q => {
-            // Ajustes rápidos antes de insertar
             processQuestion(q, type, meta);
             allQuestions.push(q);
         });
@@ -113,42 +95,37 @@ async function loadAllBanks() {
     }
   });
 
-  // 4. Deduplicar y Guardar en Memoria RAM
   BANK.questions = dedupeQuestionsById(allQuestions);
   BANK.loaded = true;
 
   console.timeEnd("⏱ Tiempo de carga");
-  console.log(`✅ Carga finalizada: ${successCount} archivos leídos. ${BANK.questions.length} preguntas totales.`);
+  console.log(`✅ Carga finalizada: ${successCount} archivos. ${BANK.questions.length} preguntas.`);
 
-  // Aviso visual
   if(appMsg) appMsg.textContent = "✔ Banco listo.";
-  
-  // Renderizar Home automáticamente si existe la función
   if(typeof renderHome === "function") renderHome();
 }
 
-/* ==========================================================
-   🧬 Procesador de Pregunta Individual
-   ========================================================== */
+/* --- PROCESADOR DE PREGUNTA (MODIFICADO PARA HÍBRIDO) --- */
 function processQuestion(q, type, examMeta) {
-    // ID
     q.id = normalizeId(q.id);
     
-    // Materia
-    if (Array.isArray(q.materia)) q.materia = q.materia[0];
-    q.materia = normalize(q.materia || "otras");
-    // Fallback si la materia no está en config
-    if (!BANK.subjects.some(s => s.slug === q.materia)) q.materia = "otras";
+    // ⚠️ CAMBIO CLAVE: Soportar Array o String en Materia
+    if (Array.isArray(q.materia)) {
+        q.materia = q.materia.map(m => normalize(m));
+    } else {
+        let mat = normalize(q.materia || "otras");
+        // Validar si existe en config, sino 'otras'
+        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
+        q.materia = mat;
+    }
 
-    // Submateria (Simplificada)
+    // Submateria (Simplificada a string por ahora, tomamos la primera si es array)
     if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
     q.submateria = normalize(q.submateria || "");
 
-    // Opciones y Correcta
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
 
-    // Metadatos Examen
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
@@ -158,9 +135,7 @@ function processQuestion(q, type, examMeta) {
     }
 }
 
-/* ==========================================================
-   🔧 Helpers de Limpieza
-   ========================================================== */
+/* --- HELPERS --- */
 function dedupeQuestionsById(list) {
   const map = new Map();
   list.forEach(q => {
@@ -179,7 +154,6 @@ function getOpcionesArray(q) {
 }
 
 function getCorrectIndex(q) {
-  // Soporte para número (0-4) o letra ("a"-"e")
   if (typeof q.correcta === 'number') return q.correcta;
   if (typeof q.correcta === 'string') {
       const map = {a:0, b:1, c:2, d:3, e:4};
@@ -188,14 +162,17 @@ function getCorrectIndex(q) {
   return -1;
 }
 
-
-
-/* ==========================================================
-   🔌 APIs para las otras pantallas
-   ========================================================== */
+/* --- APIS CON FILTRO HÍBRIDO --- */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        if (q.materia !== slug) return false;
+        // 1. Chequeo si la materia es o contiene el slug
+        const esDeLaMateria = Array.isArray(q.materia) 
+            ? q.materia.includes(slug) 
+            : q.materia === slug;
+        
+        if (!esDeLaMateria) return false;
+
+        // 2. Chequeo de Subtemas
         if (subs && subs.length) return subs.includes(q.submateria);
         return true;
     });
