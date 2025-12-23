@@ -35,8 +35,8 @@
   },
   {
     "id": "ped_2025_003",
-    "materia": "pediatria",
-    "submateria": "Patología infecciosa infantil",
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Patología infecciosa infantil", "Tropicales"],
     "enunciado": "Ramiro de 14 años presenta fiebre, exantema macular y petequias a predominio de tronco y extremidades, con mialgias y cefalea. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "Dengue.",
@@ -50,6 +50,7 @@
     "anio": 2025,
     "oficial": true
   },
+
   {
     "id": "med_2025_004",
     "materia": "cardiologia",
@@ -256,8 +257,8 @@
   },
   {
     "id": "med_2025_016",
-    "materia": "infectologia",
-    "submateria": "HIV",
+    "materia": ["infectologia", "gastroenterologia"],
+    "submateria": ["HIV", "Intestino delgado"],
     "enunciado": "Paciente HIV+ con suboclusión intestinal recurrente, pérdida de peso y masa intestinal. ¿Diagnóstico probable?",
     "opciones": {
       "a": "Cáncer de colon",
@@ -341,8 +342,8 @@
   },
   {
     "id": "med_2025_021",
-    "materia": "nutricion",
-    "submateria": "Diabetes mellitus",
+    "materia": ["nutricion", "endocrinologia"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "Mujer de 40 años, IMC 28 kg/m², glicemia en ayunas 110 mg/dL, sin otros antecedentes. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Indicar metformina y control trimestral.",
@@ -1650,8 +1651,8 @@
   },
   {
     "id": "leg_2025_098",
-    "materia": "medicinalegal",
-    "submateria": "Salud sexual y reproductiva",
+    "materia": ["medicinalegal", "ginecologia"],
+    "submateria": ["Salud sexual y reproductiva"],
     "enunciado": "Según la Ley 27.610, ¿en qué casos se garantiza el acceso a la interrupción voluntaria del embarazo?",
     "opciones": {
       "a": "Hasta la semana 12 sin causa, y en cualquier momento por causal de salud.",
