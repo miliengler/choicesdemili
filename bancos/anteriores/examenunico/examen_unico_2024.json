@@ -1,8 +1,8 @@
 [
   {
     "id": "inf_2024_001",
-    "materia": ["Infectología"],
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "Tropicales",
     "enunciado": "¿En qué fase ocurren las complicaciones clínicas potencialmente graves y mortales del dengue?",
     "opciones": {
       "a": "Fase febril de la enfermedad.",
@@ -18,8 +18,8 @@
   },
   {
     "id": "gin_2024_002",
-    "materia": ["Ginecología"],
-    "submateria": ["Citología cervical y tamizaje"],
+    "materia": "ginecologia",
+    "submateria": "Patología cervical benigna y preinvasora",
     "enunciado": "Karina, 35 años, se realizó un Papanicolau (PAP). Hoy concurre al Centro de Salud con el resultado: Muestra satisfactoria, ASC‐US (Células escamosas atípicas de significado incierto). Según las recomendaciones del Ministerio de Salud de la Nación, ¿cuál es la conducta adecuada?",
     "opciones": {
       "a": "Repetir citología (PAP) lo antes posible.",
@@ -35,8 +35,8 @@
   },
   {
     "id": "ped_2024_003",
-    "materia": ["Pediatría"],
-    "submateria": ["Inmunizaciones y profilaxis"],
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "En cuanto a la profilaxis del Haemophilus influenzae por un caso de meningitis en una guardería, marque lo correcto: ¿Quiénes deben recibir la profilaxis del Haemophilus influenzae ante un caso de meningitis en un jardín maternal?",
     "opciones": {
       "a": "Todos los contactos cercanos menores de 4 años, aunque posean vacunación completa.",
@@ -52,8 +52,8 @@
   },
   {
     "id": "car_2024_004",
-    "materia": ["Cardiología"],
-    "submateria": ["Tratamiento de la hipertensión"],
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "Estanislao Méndez de 85 años asiste a su consulta luego de haberse tomado la presión en un stand de salud en una fiesta patronal. Refiere que la enfermera encontró que tenía una TA de 150/80 mmHg. Al reiterar la toma en consultorio se encuentra la misma TA indicada en el stand. ¿Cuál es la medida terapéutica a realizar?",
     "opciones": {
       "a": "Iniciar tratamiento antihipertensivo con terapia combinada doble.",
@@ -69,8 +69,8 @@
   },
   {
     "id": "car_2024_005",
-    "materia": ["Cardiología"],
-    "submateria": ["Arritmias"],
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
     "enunciado": "¿Cuál es criterio electrocardiográfico de fibrilación auricular?",
     "opciones": {
       "a": "Ondas R polimórficas e irregulares, ondas auriculares regulares.",
@@ -86,8 +86,8 @@
   },
   {
     "id": "obs_2024_006",
-    "materia": ["Obstetricia"],
-    "submateria": ["Hemorragias del embarazo y puerperio"],
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "¿Cuál es la causa más frecuente de hemorragia post parto?",
     "opciones": {
       "a": "Coagulopatías relacionadas al embarazo.",
@@ -103,8 +103,8 @@
   },
   {
     "id": "sal_2024_007",
-    "materia": ["Salud Pública"],
-    "submateria": ["Metodología epidemiológica"],
+    "materia": "saludpublica",
+    "submateria": "Tipos de estudios epidemiológicos",
     "enunciado": "¿Cuál es una de las principales ventajas de los Estudios de Cohorte?",
     "opciones": {
       "a": "Son eficientes para el estudio de enfermedades raras.",
@@ -120,8 +120,8 @@
   },
   {
     "id": "gin_2024_008",
-    "materia": ["Ginecología"],
-    "submateria": ["Patología mamaria"],
+    "materia": "ginecologia",
+    "submateria": "Patología benigna de mama",
     "enunciado": "Paciente de 28 años de edad que acude a la consulta por tumoración en mama izquierda. Se palpa lesión nodular de 2x2 cm móvil, no dolorosa, no adherida. ¿Cuál es su presunción diagnóstica?",
     "opciones": {
       "a": "Cáncer de mama.",
@@ -137,8 +137,8 @@
   },
   {
     "id": "obs_2024_009",
-    "materia": ["Obstetricia"],
-    "submateria": ["Hipertensión en el embarazo"],
+    "materia": "obstetricia",
+    "submateria": "Complicaciones maternas en el embarazo",
     "enunciado": "Paciente de 18 años, primigesta de 35 semanas con cefalea, TA 140/110 mmHg, laboratorio con plaquetas 100000/dl y proteinuria +++. ¿Qué conducta toma?",
     "opciones": {
       "a": "Tratamiento antihipertensivo, sulfato de Mg y cesárea.",
@@ -154,8 +154,8 @@
   },
   {
     "id": "neu_2024_010",
-    "materia": ["Neurología"],
-    "submateria": ["Otoneurología"],
+    "materia": "neurologia",
+    "submateria": "ECV",
     "enunciado": "¿Cuál es la característica patognomónica del vértigo laberíntico?",
     "opciones": {
       "a": "Acufenos o hipoacusia.",
@@ -171,8 +171,8 @@
   },
   {
     "id": "ped_2024_011",
-    "materia": ["Pediatría"],
-    "submateria": ["Cardiología pediátrica"],
+    "materia": "pediatria",
+    "submateria": "Cardiopatías congénitas",
     "enunciado": "Margarita, de 10 años de edad, presenta soplo sistólico eyectivo en foco aórtico que se atenúa al pasar de decúbito a sentado. ¿Cuál es su sospecha?",
     "opciones": {
       "a": "Insuficiencia aórtica.",
@@ -188,8 +188,8 @@
   },
   {
     "id": "bio_2024_012",
-    "materia": ["Salud Publica"],
-    "submateria": ["Ley 26.529 Derechos del Paciente"],
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "Un equipo de salud toma conocimiento de que una mujer tiene serología positiva para VIH y su marido no lo sabe. Según la Ley 26.529, ¿qué debe hacer el equipo de salud ante la pregunta del marido?",
     "opciones": {
       "a": "Explicar que el VIH se transmite por leche materna.",
@@ -205,8 +205,8 @@
   },
   {
     "id": "ped_2024_013",
-    "materia": ["Pediatría"],
-    "submateria": ["Cardiopatías congénitas"],
+    "materia": "pediatria",
+    "submateria": "Cardiopatías congénitas",
     "enunciado": "Bastián, de 4 meses, presenta cianosis de mucosas y soplo sistólico eyectivo intenso en borde esternal izquierdo. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "CIV grande.",
@@ -222,8 +222,8 @@
   },
   {
     "id": "ped_2024_014",
-    "materia": ["Pediatría"],
-    "submateria": ["Gastroenterología pediátrica"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
     "enunciado": "Bruno, 10 meses, con diarrea recurrente sin signos de alarma ni deshidratación. Usted sospecha síndrome de malabsorción. ¿Cuál sería la conducta inicial?",
     "opciones": {
       "a": "Eliminar gluten y seguimiento en 15 días.",
@@ -239,8 +239,8 @@
   },
   {
     "id": "sal_2024_015",
-    "materia": ["Salud Pública"],
-    "submateria": ["Mortalidad y morbilidad"],
+    "materia": "saludpublica",
+    "submateria": "Datos de nuestro país",
     "enunciado": "¿Cuál es la principal causa de muerte en la población adulta en la República Argentina?",
     "opciones": {
       "a": "Enfermedades del corazón.",
@@ -256,8 +256,8 @@
   },
   {
     "id": "neumo_2024_016",
-    "materia": ["Neumonología"],
-    "submateria": ["EPOC y tabaquismo"],
+    "materia": "neumonologia",
+    "submateria": "EPOC",
     "enunciado": "Paciente masculino de 56 años, tabaquista, con disnea y tos con expectoración mucosa. ¿Qué estudio solicitaría para diagnóstico?",
     "opciones": {
       "a": "Tomografía de tórax con contraste EV.",
@@ -273,8 +273,8 @@
   },
   {
     "id": "ped_2024_017",
-    "materia": ["Pediatría"],
-    "submateria": ["Otorrinolaringología pediátrica"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "¿En qué escenario clínico es necesario realizar laboratorio ante un caso de epistaxis en pediatría?",
     "opciones": {
       "a": "Niños con epistaxis graves o recurrentes sin causa local.",
@@ -290,8 +290,8 @@
   },
   {
     "id": "obs_2024_018",
-    "materia": ["Obstetricia"],
-    "submateria": ["Infecciones en el embarazo"],
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
     "enunciado": "En pacientes embarazadas con diagnóstico de HIV y carga viral mayor a 1000 copias, ¿cuál es la vía de finalización del embarazo?",
     "opciones": {
       "a": "Parto vaginal + profilaxis con AZT intraparto.",
@@ -307,8 +307,8 @@
   },
   {
     "id": "sal_2024_019",
-    "materia": ["Salud Pública"],
-    "submateria": ["Prevención"],
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿A qué tipo de prevención pertenece la toma de presión arterial?",
     "opciones": {
       "a": "Prevención secundaria.",
@@ -324,8 +324,8 @@
   },
   {
     "id": "obs_2024_020",
-    "materia": ["Obstetricia"],
-    "submateria": ["Hemorragias del embarazo"],
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "Paciente cursando gestación de 33 semanas consulta por ginecorragia roja oscura y tono uterino aumentado. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "Desprendimiento de placenta normoinserta.",
@@ -341,8 +341,8 @@
   },
   {
     "id": "sal_2024_021",
-    "materia": ["Salud Pública"],
-    "submateria": ["Epidemiología clínica"],
+    "materia": "saludpublica",
+    "submateria": "Evaluación de pruebas diagnósticas",
     "enunciado": "¿Cuál es el significado del concepto 'Valor Predictivo Positivo'?",
     "opciones": {
       "a": "La proporción de pacientes con resultados negativos de la prueba que tienen la alteración blanco.",
@@ -358,8 +358,8 @@
   },
   {
     "id": "hem_2024_022",
-    "materia": ["Hematología"],
-    "submateria": ["Anemias hemolíticas"],
+    "materia": "hematologia",
+    "submateria": "Anemias hemolíticas",
     "enunciado": "Varón de 73 años que consulta por disnea, palidez, ictericia y esplenomegalia. Laboratorio con anemia macrocítica, LDH elevada, bilirrubina indirecta alta y prueba de Coombs directa positiva. ¿Cuál es su diagnóstico presuntivo?",
     "opciones": {
       "a": "Anemia diseritropoyética.",
@@ -375,8 +375,8 @@
   },
   {
     "id": "ped_2024_023",
-    "materia": ["Pediatría"],
-    "submateria": ["Lactancia y nutrición"],
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿En cuál de los siguientes casos usted debe indicar continuar la lactancia materna?",
     "opciones": {
       "a": "Galactosemia del recién nacido.",
@@ -392,8 +392,8 @@
   },
   {
     "id": "nef_2024_024",
-    "materia": ["Urología"],
-    "submateria": ["Lesión renal aguda"],
+    "materia": "urologia",
+    "submateria": "Fracaso renal agudo",
     "enunciado": "¿En qué lesión renal aguda la excreción fraccional de sodio es menor al 1%?",
     "opciones": {
       "a": "Posrenal.",
@@ -409,8 +409,8 @@
   },
   {
     "id": "sal_2024_025",
-    "materia": ["Salud Pública"],
-    "submateria": ["Mortalidad infantil"],
+    "materia": "saludpublica",
+    "submateria": "Datos de nuestro país",
     "enunciado": "¿Cuál es la principal causa de muerte en los menores de 1 año en la República Argentina?",
     "opciones": {
       "a": "Enfermedades infecciosas intestinales.",
@@ -426,8 +426,8 @@
   },
   {
     "id": "car_2024_026",
-    "materia": ["Cardiología"],
-    "submateria": ["Diagnóstico de hipertensión"],
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "Un paciente de 53 años presenta en su consultorio mediciones de presión arterial en dos oportunidades de 142/80 y 120/90 mmHg. Un monitoreo ambulatorio de 24 hs (MAPA) arroja un valor promedio de 138/90 mmHg. ¿Qué le informa al paciente respecto de su diagnóstico?",
     "opciones": {
       "a": "Sospecha hipertensión sistólica aislada, requiere completar estudios.",
@@ -443,8 +443,8 @@
   },
   {
     "id": "gin_2024_027",
-    "materia": ["Ginecología"],
-    "submateria": ["Patología mamaria"],
+    "materia": "ginecologia",
+    "submateria": "Patología benigna de mama",
     "enunciado": "¿Cuál es la conducta a tomar ante el resultado de una mamografía informada con un BIRADS-3?",
     "opciones": {
       "a": "Probabilidad de malignidad mayor al 2%, sugiere biopsia de mama.",
@@ -460,8 +460,8 @@
   },
   {
     "id": "psi_2024_028",
-    "materia": ["Salud Mental"],
-    "submateria": ["Evaluación del riesgo suicida"],
+    "materia": "psiquiatria",
+    "submateria": "Trastornos del estado de ánimo",
     "enunciado": "Concurre un paciente por guardia manifestando ánimo depresivo, ansiedad y preocupación sobre su futuro. Refiere insomnio e ideas de ruina. ¿Qué conducta tomaría respecto del riesgo?",
     "opciones": {
       "a": "Indicar medicación ansiolítica y derivar a psicoterapia ambulatoria.",
@@ -477,8 +477,8 @@
   },
   {
     "id": "end_2024_029",
-    "materia": ["Endocrinología"],
-    "submateria": ["Diabetes mellitus tipo 2"],
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "¿En qué paciente diabético tipo 2 indicaría insulinoterapia?",
     "opciones": {
       "a": "Paciente con IMC 36 y sedentarismo.",
@@ -494,8 +494,8 @@
   },
   {
     "id": "end_2024_030",
-    "materia": ["Endocrinología"],
-    "submateria": ["Diabetes mellitus tipo 2"],
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "Paciente de 55 años obeso consulta por poliuria, polidipsia y glucemia en ayunas 240 mg%. ¿Qué tratamiento realizaría?",
     "opciones": {
       "a": "Metformina, dieta hipohidrocarbonada e inicio de actividad física.",
@@ -511,8 +511,8 @@
   },
   {
     "id": "ped_2024_031",
-    "materia": ["Pediatría"],
-    "submateria": ["Infecciones urinarias"],
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
     "enunciado": "Lactante de 6 meses con fiebre, nitritos y esterasa leucocitaria positivas, leucocitos en sedimento. ¿Qué conducta adopta?",
     "opciones": {
       "a": "Aguardar urocultivo antes de iniciar antibiótico.",
@@ -528,8 +528,8 @@
   },
   {
     "id": "gin_2024_032",
-    "materia": ["Ginecología"],
-    "submateria": ["Oncología ginecológica"],
+    "materia": "ginecologia",
+    "submateria": "Tumores benignos de ovario",
     "enunciado": "Juana de 61 años con masa ovárica unilateral, heterogénea, doppler (+). ¿Qué estudio complementario solicitaría?",
     "opciones": {
       "a": "Rx directa de abdomen de pie.",
@@ -545,8 +545,8 @@
   },
   {
     "id": "bio_2024_033",
-    "materia": ["Salud Publica"],
-    "submateria": ["Ley 26.529 Derechos del Paciente"],
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "Según la Ley 26.529, ¿en qué casos el profesional queda eximido de requerir el consentimiento informado?",
     "opciones": {
       "a": "Cuando la intervención no sea invasiva ni de gran riesgo.",
@@ -562,8 +562,8 @@
   },
   {
     "id": "ped_2024_034",
-    "materia": ["Pediatría"],
-    "submateria": ["Desarrollo puberal"],
+    "materia": "pediatria",
+    "submateria": "Trastornos de la infancia y la adolescencia",
     "enunciado": "María concurre con su hija Belén de 8 años preocupada por el desarrollo puberal. ¿Cuál es la secuencia de desarrollo considerada normal en una niña?",
     "opciones": {
       "a": "Vello pubiano - Botón mamario - Menarca - Pico de empuje puberal.",
@@ -579,8 +579,8 @@
   },
   {
     "id": "obs_2024_035",
-    "materia": ["Obstetricia"],
-    "submateria": ["Inmunizaciones y prevención perinatal"],
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
     "enunciado": "¿Cuándo debe ser aplicada la dosis de la vacuna del virus sincicial respiratorio (VSR) en la gestante?",
     "opciones": {
       "a": "Entre la semana 12 y 16.",
@@ -596,8 +596,8 @@
   },
   {
     "id": "oft_2024_036",
-    "materia": ["Oftalmología"],
-    "submateria": ["Neuropatías ópticas"],
+    "materia": "oftalmologia",
+    "submateria": "Neurooftalmología",
     "enunciado": "Mujer de 75 años con pérdida brusca de visión en un ojo, defecto pupilar aferente y VSG elevada. Fondo de ojo con edema sectorial y hemorragias peripapilares. ¿Cuál es su diagnóstico?",
     "opciones": {
       "a": "Neuropatía óptica isquémica arterítica.",
@@ -613,8 +613,8 @@
   },
   {
     "id": "gas_2024_037",
-    "materia": ["Gastroenterología"],
-    "submateria": ["Patología colónica"],
+    "materia": "gastroenterologia",
+    "submateria": "Colon",
     "enunciado": "Paciente femenina de 40 años con dolor en fosa iliaca izquierda y TC con engrosamiento del colon sigmoides y rarefacción de grasa pericolónica. ¿Cuál es la conducta a seguir?",
     "opciones": {
       "a": "Internación, antibioticoterapia endovenosa y control evolutivo.",
@@ -630,8 +630,8 @@
   },
   {
     "id": "inf_2024_038",
-    "materia": ["Infectología"],
-    "submateria": ["Enfermedades de transmisión sexual"],
+    "materia": "infectologia",
+    "submateria": "ITS",
     "enunciado": "Paciente VIH positivo con lesiones maculopapulosas en tronco que no respetan palmas ni plantas. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "Sífilis primaria.",
@@ -647,8 +647,8 @@
   },
   {
     "id": "obs_2024_039",
-    "materia": ["Obstetricia"],
-    "submateria": ["Monitoreo fetal intraparto"],
+    "materia": "obstetricia",
+    "submateria": "Parto",
     "enunciado": "En el monitoreo fetal intraparto, ¿por qué motivo se produce un DIP variable?",
     "opciones": {
       "a": "Por acidosis fetal.",
@@ -664,8 +664,8 @@
   },
   {
     "id": "car_2024_040",
-    "materia": ["Cardiología"],
-    "submateria": ["Valvulopatías"],
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
     "enunciado": "Paciente de 78 años con disnea progresiva, soplo sistólico áspero en segundo espacio intercostal derecho y crepitantes en bases. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "Insuficiencia mitral.",
@@ -681,8 +681,8 @@
   },
   {
     "id": "car_2024_041",
-    "materia": ["Cardiología"],
-    "submateria": ["Tratamiento de la hipertensión"],
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "Paciente de 65 años con hipertensión arterial de difícil control, en tratamiento con amlodipina, losartán e hidroclorotiazida. ¿Qué fármaco se puede agregar según las recomendaciones actuales?",
     "opciones": {
       "a": "Carvedilol.",
@@ -698,8 +698,8 @@
   },
   {
     "id": "sal_2024_042",
-    "materia": ["Salud Pública"],
-    "submateria": ["Estadísticas vitales"],
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cuál es el denominador correcto de la tasa de mortalidad materna?",
     "opciones": {
       "a": "Total de muertes de mujeres en edad fértil.",
@@ -715,8 +715,8 @@
   },
   {
     "id": "ped_2024_043",
-    "materia": ["Pediatría"],
-    "submateria": ["Inmunizaciones"],
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "¿Qué vacunas corresponden aplicar a los 15 meses según el Calendario Nacional de Vacunación?",
     "opciones": {
       "a": "Triple viral, hepatitis A, antigripal, triple bacteriana celular, Sabin y varicela.",
@@ -732,8 +732,8 @@
   },
   {
     "id": "nef_2024_044",
-    "materia": ["Urología"],
-    "submateria": ["Fisiopatología renal"],
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "¿Cuál de las siguientes alteraciones caracteriza al síndrome nefrótico?",
     "opciones": {
       "a": "Proteinuria menor a 1 g/día.",
@@ -749,8 +749,8 @@
   },
   {
     "id": "gas_2024_045",
-    "materia": ["Gastroenterología"],
-    "submateria": ["Hepatología"],
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
     "enunciado": "¿Qué tumor hepático se asocia al uso prolongado de anticonceptivos orales?",
     "opciones": {
       "a": "Adenoma hepático.",
@@ -766,8 +766,8 @@
   },
   {
     "id": "obs_2024_046",
-    "materia": ["Obstetricia"],
-    "submateria": ["Hipertensión en el embarazo"],
+    "materia": "obstetricia",
+    "submateria": "Complicaciones maternas en el embarazo",
     "enunciado": "¿Qué signo es considerado de severidad ante el diagnóstico de preeclampsia?",
     "opciones": {
       "a": "Presión arterial de 150/90 mmHg.",
@@ -783,8 +783,8 @@
   },
   {
     "id": "gin_2024_047",
-    "materia": ["Ginecología"],
-    "submateria": ["Infecciones vaginales"],
+    "materia": "ginecologia",
+    "submateria": "Infecciones del tracto genital inferior",
     "enunciado": "¿Cuáles son los criterios de Amsel para el diagnóstico de vaginosis bacteriana?",
     "opciones": {
       "a": "Prueba de aminas positiva, pH 4–5, flujo homogéneo y presencia de clue cells.",
@@ -800,8 +800,8 @@
   },
   {
     "id": "ped_2024_048",
-    "materia": ["Pediatría"],
-    "submateria": ["Enfermedades respiratorias"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Niño de 2 años con dificultad respiratoria, fiebre y tos. Al examen: retracción supraesternal y tiraje subcostal, saturación 88%. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Bronquiolitis.",
@@ -817,8 +817,8 @@
   },
   {
     "id": "inf_2024_049",
-    "materia": ["Infectología"],
-    "submateria": ["Infecciones del sistema nervioso central"],
+    "materia": "infectologia",
+    "submateria": "SNC y meningitis",
     "enunciado": "Varón de 19 años con fiebre alta, cefalea, rigidez de nuca y signos meníngeos. LCR: glucosa baja, proteínas elevadas y predominio de neutrófilos. ¿Cuál es el diagnóstico probable?",
     "opciones": {
       "a": "Meningitis bacteriana.",
@@ -834,8 +834,8 @@
   },
   {
     "id": "sal_2024_050",
-    "materia": ["Salud Pública"],
-    "submateria": ["Indicadores demográficos"],
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Qué indicador se calcula dividiendo el número de casos nuevos de una enfermedad en un período determinado sobre la población en riesgo?",
     "opciones": {
       "a": "Tasa de mortalidad.",
@@ -851,8 +851,8 @@
   },
   {
     "id": "car_2024_051",
-    "materia": ["Cardiología"],
-    "submateria": ["Valvulopatías"],
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
     "enunciado": "Varón de 75 años con disnea progresiva y soplo mesosistólico rudo en foco aórtico. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Estenosis aórtica.",
@@ -868,8 +868,8 @@
   },
   {
     "id": "sal_2024_052",
-    "materia": ["Salud Pública"],
-    "submateria": ["Mortalidad general"],
+    "materia": "saludpublica",
+    "submateria": "Datos de nuestro país",
     "enunciado": "¿Cuál es la esperanza de vida al nacer en Argentina?",
     "opciones": {
       "a": "72 años.",
@@ -885,8 +885,8 @@
   },
   {
     "id": "car_2024_053",
-    "materia": ["Cardiología"],
-    "submateria": ["Enfermedad coronaria"],
+    "materia": "gastroenterologia",
+    "submateria": "Esófago",
     "enunciado": "Varón de 49 años con disfagia progresiva y regurgitación no ácida. TAC normal. ¿Qué estudio debe solicitarse?",
     "opciones": {
       "a": "Endoscopía y manometría esofágica.",
@@ -902,8 +902,8 @@
   },
   {
     "id": "obs_2024_054",
-    "materia": ["Obstetricia"],
-    "submateria": ["Maniobras de Leopold"],
+    "materia": "obstetricia",
+    "submateria": "Fisiología de la gestación",
     "enunciado": "¿Cómo se denomina la maniobra unimanual en la que se palpa el polo fetal en la pelvis entre el pulgar y los dedos índice y medio?",
     "opciones": {
       "a": "Primera maniobra de Leopold.",
@@ -919,8 +919,8 @@
   },
   {
     "id": "ped_2024_055",
-    "materia": ["Pediatría"],
-    "submateria": ["Lactancia y metabolismo"],
+    "materia": "pediatria",
+    "submateria": "Lactancia y nutrición",
     "enunciado": "¿En cuál de las siguientes patologías está contraindicada la lactancia materna?",
     "opciones": {
       "a": "Déficit de alfa 1 antitripsina.",
@@ -936,8 +936,8 @@
   },
   {
     "id": "gin_2024_056",
-    "materia": ["Ginecología"],
-    "submateria": ["Citología cervical y tamizaje"],
+    "materia": "ginecologia",
+    "submateria": "Patología cervical benigna y preinvasora",
     "enunciado": "Evangelina, de 35 años, trae un test de VPH positivo por autotoma. ¿Qué conducta corresponde?",
     "opciones": {
       "a": "Realizar toma de citología cervical.",
@@ -953,8 +953,8 @@
   },
   {
     "id": "sal_2024_057",
-    "materia": ["Salud Pública"],
-    "submateria": ["Epidemiología general"],
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cómo se define la prevalencia?",
     "opciones": {
       "a": "Número de casos nuevos en un período dado.",
@@ -970,8 +970,8 @@
   },
   {
     "id": "obs_2024_058",
-    "materia": ["Obstetricia"],
-    "submateria": ["Infecciones en el embarazo"],
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
     "enunciado": "Paciente de 32 semanas con fiebre y líquido amniótico claro. Según la guía MSAL, ¿cuál es la conducta adecuada?",
     "opciones": {
       "a": "Betametasona 12 mg IM + ampicilina/sulbactam + metronidazol + conducta expectante.",
@@ -987,8 +987,8 @@
   },
   {
     "id": "gas_2024_059",
-    "materia": ["Gastroenterología"],
-    "submateria": ["Infecciones bacterianas digestivas"],
+    "materia": "gastroenterologia",
+    "submateria": "Colon",
     "enunciado": "¿Cuál es el tratamiento para una persona con infección grave por Clostridium difficile?",
     "opciones": {
       "a": "Metronidazol 500 mg VO cada 8 hs por 7 días.",
@@ -1004,8 +1004,8 @@
   },
   {
     "id": "car_2024_060",
-    "materia": ["Cardiología"],
-    "submateria": ["Prevención cardiovascular"],
+    "materia": "cardiologia",
+    "submateria": "Prevención cardiovascular",
     "enunciado": "Según las guías NICE, ¿cuál es la recomendación respecto a las estatinas en prevención primaria?",
     "opciones": {
       "a": "Atorvastatina 20 mg/día si el riesgo cardiovascular ≥10% a 10 años.",
@@ -1021,8 +1021,8 @@
   },
   {
     "id": "car_2024_061",
-    "materia": ["Cardiología"],
-    "submateria": ["Hipertensión arterial"],
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "¿Cuál es la prevalencia estimada de hipertensión arterial en Argentina?",
     "opciones": {
       "a": "28%",
@@ -1038,8 +1038,8 @@
   },
   {
     "id": "nef_2024_062",
-    "materia": ["Urología"],
-    "submateria": ["Infecciones urinarias"],
+    "materia": "urologia",
+    "submateria": "Infecciones urinarias",
     "enunciado": "¿Cuál es el manejo correcto de la bacteriuria asintomática?",
     "opciones": {
       "a": "En gestantes, tratar hasta esterilizar el urocultivo.",
@@ -1055,8 +1055,8 @@
   },
   {
     "id": "gin_2024_063",
-    "materia": ["Ginecología"],
-    "submateria": ["Diagnóstico mamario"],
+    "materia": "ginecologia",
+    "submateria": "Diagnóstico mamario",
     "enunciado": "Mujer de 57 años con mamografía que muestra microcalcificaciones isomorfas e isodensas agrupadas. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Ecografía mamaria, BIRADS 0.",
@@ -1072,8 +1072,8 @@
   },
   {
     "id": "ped_2024_064",
-    "materia": ["Pediatría"],
-    "submateria": ["Inmunizaciones"],
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Macarena, 15 meses, recibió sus últimas vacunas a los 6 meses. ¿Qué vacunas le corresponden según el Calendario Nacional?",
     "opciones": {
       "a": "Triple viral, hepatitis A, antigripal, pentavalente, IPV, antineumococo, antimeningococo y varicela.",
@@ -1089,8 +1089,8 @@
   },
   {
     "id": "car_2024_065",
-    "materia": ["Cardiología"],
-    "submateria": ["Insuficiencia cardíaca"],
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
     "enunciado": "Pedro, 70 años, con enfermedad de Chagas, diabetes y antecedente de infarto, asintomático. Según la clasificación ACC/AHA, ¿en qué estadio se encuentra?",
     "opciones": {
       "a": "Estadio A.",
@@ -1106,8 +1106,8 @@
   },
   {
     "id": "ped_2024_066",
-    "materia": ["Pediatría"],
-    "submateria": ["Vacunas del lactante"],
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "¿Cuáles son las vacunas que corresponden a un niño de 8 meses?",
     "opciones": {
       "a": "BCG, HepB, 2 dosis quíntuple, 3 SALK, 2 antineumococo, 2 rotavirus, 1 meningococo.",
@@ -1123,8 +1123,8 @@
   },
   {
     "id": "ped_2024_067",
-    "materia": ["Pediatría"],
-    "submateria": ["Asma y emergencias respiratorias"],
+    "materia": "pediatria",
+    "submateria": "Asma",
     "enunciado": "¿Qué signo sugiere paro respiratorio inminente en un niño con exacerbación asmática?",
     "opciones": {
       "a": "Taquicardia >120 lpm.",
@@ -1140,8 +1140,8 @@
   },
   {
     "id": "car_2024_068",
-    "materia": ["Cardiología"],
-    "submateria": ["Isquemia y vasoespasmo"],
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "Mujer de 33 años con dolor torácico nocturno y elevación transitoria del ST. Angiografía coronaria normal. ¿Cuál es el tratamiento indicado?",
     "opciones": {
       "a": "Clonazepam.",
@@ -1157,8 +1157,8 @@
   },
   {
     "id": "ped_2024_069",
-    "materia": ["Pediatría"],
-    "submateria": ["Síndrome urémico hemolítico"],
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
     "enunciado": "Niño de 2 años con diarrea sanguinolenta, anemia, trombocitopenia y creatinina elevada. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Púrpura trombocitopénica idiopática.",
@@ -1174,8 +1174,8 @@
   },
   {
     "id": "end_2024_070",
-    "materia": ["Endocrinología"],
-    "submateria": ["Obesidad y diabetes"],
+    "materia": "nutricion",
+    "submateria": "Nutrición y obesidad",
     "enunciado": "Según la guía nacional de diabetes tipo 2, ¿cómo se define el sobrepeso?",
     "opciones": {
       "a": "IMC entre 20 y 24,9 kg/m².",
@@ -1191,8 +1191,8 @@
   },
   {
     "id": "inf_2024_071",
-    "materia": ["Infectología"],
-    "submateria": ["Endocarditis infecciosa"],
+    "materia": "infectologia",
+    "submateria": "Endocarditis",
     "enunciado": "Mujer de 73 años con prótesis valvular, fiebre persistente y petequias. ¿Qué conducta adoptar?",
     "opciones": {
       "a": "Internar, tomar 3 hemocultivos y realizar ecocardiograma transesofágico.",
@@ -1208,8 +1208,8 @@
   },
   {
     "id": "ped_2024_072",
-    "materia": ["Pediatría"],
-    "submateria": ["Emergencias respiratorias"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Niña de 6 años con fiebre, dificultad respiratoria, babeo y voz apagada. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Crup.",
@@ -1225,8 +1225,8 @@
   },
   {
     "id": "sal_2024_073",
-    "materia": ["Salud Pública"],
-    "submateria": ["Indicadores de salud"],
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Qué característica define a una razón como indicador de salud?",
     "opciones": {
       "a": "El numerador está incluido en el denominador.",
@@ -1242,8 +1242,8 @@
   },
   {
     "id": "bio_2024_074",
-    "materia": ["Salud publica"],
-    "submateria": ["Derechos del paciente"],
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "¿Qué valores protege la Ley 26.529 de Derechos del Paciente?",
     "opciones": {
       "a": "Edad, libertad y equidad.",
@@ -1259,8 +1259,8 @@
   },
   {
     "id": "neo_2024_075",
-    "materia": ["Neonatología"],
-    "submateria": ["Escala de Apgar"],
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "Recién nacido activo, llanto vigoroso, cianosis distal, flexión de extremidades y FC 130 lpm. ¿Cuál es el puntaje de Apgar al minuto?",
     "opciones": {
       "a": "7",
@@ -1276,8 +1276,8 @@
   },
   {
     "id": "gas_2024_076",
-    "materia": ["Gastroenterología"],
-    "submateria": ["Cáncer colorrectal"],
+    "materia": "gastroenterologia",
+    "submateria": "Cáncer colorrectal",
     "enunciado": "Marcos, 38 años, con antecedente familiar de cáncer colorrectal a los 55 años. ¿Cuándo iniciar colonoscopía?",
     "opciones": {
       "a": "A los 50 años y luego cada 5 años.",
@@ -1293,8 +1293,8 @@
   },
   {
     "id": "car_2024_077",
-    "materia": ["Cardiología"],
-    "submateria": ["Tratamiento antihipertensivo"],
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "¿Qué combinación de fármacos se recomienda en hipertensión resistente que requiere tres fármacos?",
     "opciones": {
       "a": "Losartán + amlodipina + hidroclorotiazida.",
@@ -1310,8 +1310,8 @@
   },
   {
     "id": "inf_2024_078",
-    "materia": ["Infectología"],
-    "submateria": ["VIH/SIDA"],
+    "materia": "infectologia",
+    "submateria": "HIV",
     "enunciado": "Según la guía nacional de VIH, ¿cuál es la primera línea de tratamiento antirretroviral recomendada?",
     "opciones": {
       "a": "Monoterapia con inhibidores nucleósidos de la transcriptasa reversa.",
@@ -1327,8 +1327,8 @@
   },
   {
     "id": "car_2024_079",
-    "materia": ["Cardiología"],
-    "submateria": ["Prevención cardiovascular"],
+    "materia": "cardiologia",
+    "submateria": "Prevención cardiovascular",
     "enunciado": "Varón de 45 años con diabetes tipo 2 sin enfermedad cardiovascular previa. ¿Cuál es la recomendación sobre estatinas?",
     "opciones": {
       "a": "Estatinas de baja intensidad solo si colesterol elevado.",
@@ -1344,8 +1344,8 @@
   },
   {
     "id": "hem_2024_080",
-    "materia": ["Hematología"],
-    "submateria": ["Púrpura trombocitopénica trombótica"],
+    "materia": "hematologia",
+    "submateria": "Anemias hemolíticas",
     "enunciado": "Paciente con fiebre, anemia hemolítica microangiopática y trombocitopenia. ¿Qué hallazgo apoya el diagnóstico de PTT sobre SUH?",
     "opciones": {
       "a": "Insuficiencia renal severa.",
@@ -1361,8 +1361,8 @@
   },
   {
     "id": "ped_2024_081",
-    "materia": ["Pediatría"],
-    "submateria": ["Cuerpo extraño"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Belén, de 3 años, presenta episodio de ahogo, tos y vómito mientras comía frutos secos. Rx tórax: atrapamiento aéreo izquierdo y desplazamiento mediastinal. ¿Cuál es la conducta terapéutica a seguir?",
     "opciones": {
       "a": "Realizar broncoscopía.",
@@ -1378,8 +1378,8 @@
   },
   {
     "id": "neumo_2024_082",
-    "materia": ["Neumonología"],
-    "submateria": ["Derrames pleurales"],
+    "materia": "neumonologia",
+    "submateria": "Pleura, mediastino y diafragma",
     "enunciado": "Durante el examen respiratorio se detecta disminución del murmullo vesicular, matidez a la percusión y disminución de vibraciones vocales. ¿En qué patología pensaría?",
     "opciones": {
       "a": "Atelectasia.",
@@ -1395,8 +1395,8 @@
   },
   {
     "id": "neu_2024_083",
-    "materia": ["Neurología"],
-    "submateria": ["Trastornos cognitivos agudos"],
+    "materia": "neurologia",
+    "submateria": "Metabólicas",
     "enunciado": "¿Cuáles son características propias del síndrome confusional agudo (delirium)?",
     "opciones": {
       "a": "Alteración transitoria del estado mental, de origen psicógeno, con perturbación del sueño.",
@@ -1412,8 +1412,8 @@
   },
   {
     "id": "gin_2024_084",
-    "materia": ["Ginecología"],
-    "submateria": ["Endometriosis"],
+    "materia": "ginecologia",
+    "submateria": "Endometriosis",
     "enunciado": "¿Cuál es el tratamiento médico de elección en pacientes con endometriosis?",
     "opciones": {
       "a": "Dienogest.",
@@ -1429,8 +1429,8 @@
   },
   {
     "id": "ped_2024_085",
-    "materia": ["Pediatría"],
-    "submateria": ["Diarrea aguda"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
     "enunciado": "Eugenia, de 1 año, presenta diarrea abundante sin signos de deshidratación. ¿Cuál es el tratamiento inicial adecuado?",
     "opciones": {
       "a": "Hidratación endovenosa hasta normohidratación.",
@@ -1446,8 +1446,8 @@
   },
   {
     "id": "der_2024_086",
-    "materia": ["Dermatología"],
-    "submateria": ["Escabiosis"],
+    "materia": "dermatologia",
+    "submateria": "Infecciosas",
     "enunciado": "Niño de 20 meses con pápulas eritematosas en muñecas, tobillos y genitales, pruriginosas nocturnas. Padres con lesiones similares. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Permetrina al 5% para todos los convivientes.",
@@ -1463,8 +1463,8 @@
   },
   {
     "id": "end_2024_087",
-    "materia": ["Endocrinología"],
-    "submateria": ["Diabetes tipo 2"],
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "¿En qué escenario clínico está indicado iniciar terapia con insulina en diabetes tipo 2?",
     "opciones": {
       "a": "Diabetes reciente en paciente obeso.",
@@ -1480,8 +1480,8 @@
   },
   {
     "id": "end_2024_088",
-    "materia": ["Endocrinología"],
-    "submateria": ["Cirugía tiroidea"],
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
     "enunciado": "Paciente de 42 años operada de tiroidectomía total por bocio multinodular, presenta signos de Chvostek y Trousseau positivos. ¿Cuál es la complicación postoperatoria más probable?",
     "opciones": {
       "a": "Hipocalcemia.",
@@ -1497,8 +1497,8 @@
   },
   {
     "id": "ped_2024_089",
-    "materia": ["Pediatría"],
-    "submateria": ["Tuberculosis pediátrica"],
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Hernán, 5 años, contacto domiciliario de TBC, PPD 2 mm, Rx normal, asintomático. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Isoniacida.",
@@ -1514,8 +1514,8 @@
   },
   {
     "id": "trauma_2024_090",
-    "materia": ["Traumatología"],
-    "submateria": ["Infecciones osteoarticulares"],
+    "materia": "traumatologia",
+    "submateria": "Miembro inferior",
     "enunciado": "Niño de 7 años con fiebre, dolor y limitación de movilidad en cadera derecha. Leucocitos 30.000, PCR 200. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Artritis séptica.",
@@ -1531,8 +1531,8 @@
   },
   {
     "id": "bio_2024_091",
-    "materia": ["Salud publica"],
-    "submateria": ["Ley 27.610 IVE/ILE"],
+    "materia": "ginecologia",
+    "submateria": "Anticoncepción",
     "enunciado": "Según la Ley 27.610 de Interrupción Voluntaria y Legal del Embarazo, ¿cuál es el límite gestacional para contemplar una IVE?",
     "opciones": {
       "a": "10 semanas.",
@@ -1548,8 +1548,8 @@
   },
   {
     "id": "car_2024_092",
-    "materia": ["Cardiología"],
-    "submateria": ["Prevención tromboembólica"],
+    "materia": "cardiologia",
+    "submateria": "Enfermedad arterial periférica",
     "enunciado": "Paciente de 75 años con AIT y FA. Doppler: estenosis carotídea <70%. TAC normal. ¿Cuál es el tratamiento preventivo adecuado?",
     "opciones": {
       "a": "Acenocumarol con RIN 2–3.",
@@ -1565,8 +1565,8 @@
   },
   {
     "id": "ped_2024_093",
-    "materia": ["Pediatría"],
-    "submateria": ["Diagnóstico clínico respiratorio"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "¿Cómo realizaría el diagnóstico de una exacerbación aguda de asma en un paciente pediátrico?",
     "opciones": {
       "a": "Radiografía de tórax.",
@@ -1582,8 +1582,8 @@
   },
   {
     "id": "sal_2024_094",
-    "materia": ["Salud Pública"],
-    "submateria": ["Mortalidad infantil"],
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cómo se calcula la tasa de mortalidad infantil?",
     "opciones": {
       "a": "Muertes fetales / nacidos vivos × 1.000.",
@@ -1599,8 +1599,8 @@
   },
   {
     "id": "end_2024_095",
-    "materia": ["Endocrinología"],
-    "submateria": ["Diagnóstico de diabetes"],
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "¿Qué recomendaría realizar en un paciente con glucemia plasmática en ayunas de 119 mg/dL?",
     "opciones": {
       "a": "Repetir glucemia y POTG 75 g.",
@@ -1616,8 +1616,8 @@
   },
   {
     "id": "ped_2024_096",
-    "materia": ["Pediatría"],
-    "submateria": ["Abdomen agudo pediátrico"],
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
     "enunciado": "Lactante de 12 meses con dolor abdominal intermitente, vómitos biliosos y deposición sanguinolenta. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Invaginación intestinal.",
@@ -1633,8 +1633,8 @@
   },
   {
     "id": "cir_2024_097",
-    "materia": ["Cirugía"],
-    "submateria": ["Abdomen agudo quirúrgico"],
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
     "enunciado": "Varón de 75 años con hernia inguinoescrotal irreductible, dolorosa, con signos de obstrucción intestinal y acidosis. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Sonda nasogástrica y Rx de abdomen.",
@@ -1650,8 +1650,8 @@
   },
   {
     "id": "inf_2024_098",
-    "materia": ["Infectología"],
-    "submateria": ["Hepatitis virales"],
+    "materia": "infectologia",
+    "submateria": "Tracto digestivo",
     "enunciado": "¿Cuál es la vía de transmisión de la Hepatitis E?",
     "opciones": {
       "a": "Transfusional.",
@@ -1667,8 +1667,8 @@
   },
   {
     "id": "neu_2024_099",
-    "materia": ["Neurología"],
-    "submateria": ["Encefalitis viral"],
+    "materia": "neurologia",
+    "submateria": "Encefalitis viral",
     "enunciado": "Varón de 40 años con fiebre, cefalea, vómitos y afasia. TAC normal, HIV negativo, Na 129 mEq/L. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Reposición con NaCl hipertónico e interconsulta quirúrgica.",
@@ -1684,8 +1684,8 @@
   },
   {
     "id": "nef_2024_100",
-    "materia": ["Urología"],
-    "submateria": ["Infecciones urinarias"],
+    "materia": "urologia",
+    "submateria": "Infecciones urinarias",
     "enunciado": "Mujer de 22 años con fiebre, dolor lumbar y orina con leucocitos y piocitos ++++. ¿Cuál es el diagnóstico presuntivo y la conducta terapéutica?",
     "opciones": {
       "a": "Pielonefritis, ceftriaxona 500 mg IM y urocultivo.",
