@@ -66,6 +66,41 @@
   <script>
     document.addEventListener("DOMContentLoaded", initApp);
   </script>
+<style>
+  /* FORZAR VERDE (Correcta) */
+  .q-option.option-correct {
+    background-color: #dcfce7 !important; /* Verde claro */
+    border: 2px solid #22c55e !important; /* Borde verde */
+    color: #14532d !important;            /* Letra verde */
+    font-weight: 700 !important;
+    opacity: 1 !important;
+  }
+
+  /* FORZAR ROJO (Incorrecta) */
+  .q-option.option-wrong {
+    background-color: #fee2e2 !important; /* Rojo claro */
+    border: 2px solid #ef4444 !important; /* Borde rojo */
+    color: #7f1d1d !important;            /* Letra roja */
+    opacity: 1 !important;
+  }
+
+  /* FORZAR BLOQUEO */
+  .q-option-locked, .q-option.q-option-locked {
+    pointer-events: none !important;
+    cursor: default !important;
+  }
+
+  /* FORZAR EXPLICACIÓN */
+  .q-explanation {
+    display: block !important;
+    margin-top: 15px !important;
+    padding: 15px !important;
+    background-color: #f1f5f9 !important;
+    border-left: 5px solid #3b82f6 !important;
+    color: #334155 !important;
+    border-radius: 6px !important;
+  }
+</style>
 
 </body>
 </html>
