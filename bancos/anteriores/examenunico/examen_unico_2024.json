@@ -290,8 +290,8 @@
   },
   {
     "id": "obs_2024_018",
-    "materia": "obstetricia",
-    "submateria": "Infecciones congénitas y perinatales",
+    "materia": ["obstetricia", "infectologia"],
+    "submateria": ["Infecciones congénitas y perinatales", "HIV"],
     "enunciado": "En pacientes embarazadas con diagnóstico de HIV y carga viral mayor a 1000 copias, ¿cuál es la vía de finalización del embarazo?",
     "opciones": {
       "a": "Parto vaginal + profilaxis con AZT intraparto.",
@@ -475,10 +475,10 @@
     "anio": 2024,
     "oficial": true
   },
-  {
+    {
     "id": "end_2024_029",
-    "materia": "nutricion",
-    "submateria": "Diabetes mellitus",
+    "materia": ["nutricion", "endocrinologia"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "¿En qué paciente diabético tipo 2 indicaría insulinoterapia?",
     "opciones": {
       "a": "Paciente con IMC 36 y sedentarismo.",
@@ -1494,11 +1494,11 @@
     "examen": "Examen Único",
     "anio": 2024,
     "oficial": true
-  },
+  }, 
   {
     "id": "ped_2024_089",
-    "materia": "pediatria",
-    "submateria": "Patología infecciosa infantil",
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Patología infecciosa infantil", "Tuberculosis"],
     "enunciado": "Hernán, 5 años, contacto domiciliario de TBC, PPD 2 mm, Rx normal, asintomático. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Isoniacida.",
@@ -1529,10 +1529,10 @@
     "anio": 2024,
     "oficial": true
   },
-  {
+    {
     "id": "bio_2024_091",
-    "materia": "ginecologia",
-    "submateria": "Anticoncepción",
+    "materia": ["ginecologia", "medicinalegal"],
+    "submateria": ["Anticoncepción", "Salud sexual y reproductiva"],
     "enunciado": "Según la Ley 27.610 de Interrupción Voluntaria y Legal del Embarazo, ¿cuál es el límite gestacional para contemplar una IVE?",
     "opciones": {
       "a": "10 semanas.",
