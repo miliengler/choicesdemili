@@ -137,8 +137,8 @@
   },
   {
     "id": "med_2023_009",
-    "materia": "pediatria",
-    "submateria": "Maltrato y abuso sexual",
+    "materia": ["pediatria", "medicinalegal"],
+    "submateria": ["Maltrato y abuso sexual", "Normativa nacional y jurisdiccional"],
     "enunciado": "En el abuso sexual de niños, niñas y adolescentes según De Paul Ochotorena y Arruabarrena Madariaga (1996), ¿qué factores resultan útiles para diferenciar las prácticas sexuales abusivas?",
     "opciones": {
       "a": "La cercanía en distancia física y afectiva con el acosado",
@@ -222,8 +222,8 @@
   },
   {
     "id": "med_2023_014",
-    "materia": "pediatria",
-    "submateria": "Patología infecciosa infantil",
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Patología infecciosa infantil", "Tuberculosis"],
     "enunciado": "Paciente de 6 años es traído a control ya que su tío, con quien convive, fue diagnosticado de tuberculosis. PPD = 12 mm, radiografía de tórax sin hallazgos. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Conducta expectante",
@@ -851,8 +851,8 @@
   },
   {
     "id": "med_2023_051",
-    "materia": "nutricion",
-    "submateria": "Diabetes mellitus",
+    "materia": ["nutricion", "endocrinologia"],
+    "submateria": ["Diabetes mellitus", "Otras preguntas de endocrinología"],
     "enunciado": "¿Cuál es la prevalencia de la Diabetes Mellitus en Argentina?",
     "opciones": {
       "a": "5%",
