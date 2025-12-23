@@ -1,8 +1,8 @@
 [
   {
     "id": "med_2025_001",
-    "materia": ["Endocrinología"],
-    "submateria": "Endocrinología – SIADH",
+    "materia": "endocrinologia",
+    "submateria": "Hipotálamo / Hipófisis",
     "enunciado": "¿Cuáles son los criterios diagnósticos esenciales para el Síndrome de Secreción inadecuada de hormona antidiurética (SIAHD)?",
     "opciones": {
       "a": "Hiponatremia (< 100 mmol/L), osmolalidad plasmática alta (> 280 mOsm/KgH2O), natriuresis > 40mmol/L.",
@@ -18,8 +18,8 @@
   },
   {
     "id": "obs_2025_002",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Control prenatal",
+    "materia": "obstetricia",
+    "submateria": "Screening gestacional",
     "enunciado": "¿Cuáles son los 4 requisitos básicos que debe cumplir un control prenatal para considerarse eficiente?",
     "opciones": {
       "a": "Precoz, periódico, seguro y de amplia cobertura.",
@@ -35,8 +35,8 @@
   },
   {
     "id": "ped_2025_003",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Dengue",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Ramiro de 14 años presenta fiebre, exantema macular y petequias a predominio de tronco y extremidades, con mialgias y cefalea. ¿Cuál es su sospecha diagnóstica?",
     "opciones": {
       "a": "Dengue.",
@@ -52,8 +52,8 @@
   },
   {
     "id": "med_2025_004",
-    "materia": ["🫀 Cardiología"],
-    "submateria": "Hipertensión arterial",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "¿Cuál es la definición de urgencia hipertensiva?",
     "opciones": {
       "a": "Valores de PA >160/110 mmHg sin lesión aguda en órganos blanco, en personas con HTA conocida.",
@@ -69,8 +69,8 @@
   },
   {
     "id": "med_2025_005",
-    "materia": ["🫀 Cardiología"],
-    "submateria": "Cardiología",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
     "enunciado": "¿De qué patología es característico un primer ruido de intensidad variable en la auscultación cardíaca?",
     "opciones": {
       "a": "Bloqueo completo de rama derecha.",
@@ -86,8 +86,8 @@
   },
   {
     "id": "obs_2025_006",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Embarazo ectópico",
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "¿Cuál es la dosis recomendada para el tratamiento médico del embarazo ectópico?",
     "opciones": {
       "a": "Flúor uracilo 200 mg2 dosis IV.",
@@ -103,8 +103,8 @@
   },
   {
     "id": "ped_2025_007",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Inmunizaciones",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Niña de 5 meses con solo BCG y Hepatitis B del nacimiento. ¿Qué vacunas le corresponde aplicar?",
     "opciones": {
       "a": "Pentavalente, SALK, Rotavirus, antineumocócica, sarampión.",
@@ -120,8 +120,8 @@
   },
   {
     "id": "obs_2025_008",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Incompetencia cervical",
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
     "enunciado": "Paciente G3P2 con antecedentes de parto prematuro e inmaduro, actualmente 14 semanas. ¿Cuál es la conducta?",
     "opciones": {
       "a": "Cerclaje profiláctico antes de la semana 16 (McDonald).",
@@ -137,8 +137,8 @@
   },
   {
     "id": "obs_2025_009",
-    "materia": ["Salud Publica"],
-    "submateria": "Salud pública materna",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿A qué se denomina razón de mortalidad materna?",
     "opciones": {
       "a": "Defunciones maternas por 100.000 embarazos.",
@@ -154,8 +154,8 @@
   },
   {
     "id": "epi_2025_010",
-    "materia": ["📈 salud Publica"],
-    "submateria": "Estudios de cohorte",
+    "materia": "saludpublica",
+    "submateria": "Estadística inferencial",
     "enunciado": "Un estudio de cohorte sobre dieta y cáncer mostró un RR 1,5 (IC95% 1,05–2,06). ¿Qué valor p es más probable?",
     "opciones": {
       "a": "0,03",
@@ -171,8 +171,8 @@
   },
   {
     "id": "ped_2025_011",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Neurodesarrollo",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "Olivia camina de la mano, dice palabras simples y usa pinza fina. ¿Qué edad tiene aproximadamente?",
     "opciones": {
       "a": "8 meses",
@@ -188,8 +188,8 @@
   },
   {
     "id": "ped_2025_012",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Bronquiolitis",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Lactante de 6 meses con tos, fiebre, tiraje intercostal y SatO2 91%. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Medidas de soporte, hidratación, oxígeno y monitoreo clínico.",
@@ -205,8 +205,8 @@
   },
   {
     "id": "ped_2025_013",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Crecimiento y desarrollo",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿A qué edad es más frecuente el pico de empuje puberal en niñas?",
     "opciones": {
       "a": "8 años",
@@ -222,7 +222,7 @@
   },
   {
     "id": "med_2025_014",
-    "materia": [" Oncología"],
+    "materia": "oncologia",
     "submateria": "Oncología",
     "enunciado": "¿Cuál es el tipo de cáncer con más prevalencia en Argentina?",
     "opciones": {
@@ -239,8 +239,8 @@
   },
   {
     "id": "ped_2025_015",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Piel",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Niña de 6 años con fiebre y placa roja indurada y dolorosa de 72h de evolución. ¿Diagnóstico más probable?",
     "opciones": {
       "a": "Erisipela",
@@ -256,8 +256,8 @@
   },
   {
     "id": "med_2025_016",
-    "materia": ["Infectologia"],
-    "submateria": "Gastroenterología – VIH",
+    "materia": "infectologia",
+    "submateria": "HIV",
     "enunciado": "Paciente HIV+ con suboclusión intestinal recurrente, pérdida de peso y masa intestinal. ¿Diagnóstico probable?",
     "opciones": {
       "a": "Cáncer de colon",
@@ -273,8 +273,8 @@
   },
   {
     "id": "ped_2025_017",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Exantemáticas",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Niño con fiebre y lesiones vesiculares en cuero cabelludo y tronco, con costras. ¿Diagnóstico probable?",
     "opciones": {
       "a": "Varicela",
@@ -290,8 +290,8 @@
   },
   {
     "id": "gine_2025_018",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Amenorrea secundaria",
+    "materia": "ginecologia",
+    "submateria": "Alteraciones menstruales",
     "enunciado": "Mujer de 28 años con amenorrea, pérdida de peso, astenia y baja libido. ¿Causa más probable?",
     "opciones": {
       "a": "Falla ovárica precoz",
@@ -307,8 +307,8 @@
   },
   {
     "id": "ped_2025_019",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Inmunizaciones",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Lactante de 2 meses alimentado al pecho. ¿Qué vacunas debe recibir según el Calendario Nacional 2025?",
     "opciones": {
       "a": "Pentavalente, Polio (IPV), Hepatitis A.",
@@ -324,8 +324,8 @@
   },
   {
     "id": "gine_2025_020",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Climaterio",
+    "materia": "ginecologia",
+    "submateria": "Climaterio y menopausia",
     "enunciado": "Mujer de 50 años en perimenopausia con sofocos y alteraciones del sueño. ¿Factor principal de los síntomas?",
     "opciones": {
       "a": "Aumento de progesterona.",
@@ -341,8 +341,8 @@
   },
   {
     "id": "med_2025_021",
-    "materia": [" Endocrinologia"],
-    "submateria": "Endocrinología – Diabetes",
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "Mujer de 40 años, IMC 28 kg/m², glicemia en ayunas 110 mg/dL, sin otros antecedentes. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Indicar metformina y control trimestral.",
@@ -358,8 +358,8 @@
   },
   {
     "id": "obs_2025_022",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "HTA y embarazo",
+    "materia": "obstetricia",
+    "submateria": "Complicaciones maternas en el embarazo",
     "enunciado": "Embarazada de 30 semanas con presión arterial 150/95 mmHg y proteinuria de 400 mg/24 h. ¿Cuál es el diagnóstico?",
     "opciones": {
       "a": "Hipertensión crónica.",
@@ -375,8 +375,8 @@
   },
   {
     "id": "ped_2025_023",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Nutrición infantil",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿A qué edad se recomienda iniciar la alimentación complementaria según el Ministerio de Salud?",
     "opciones": {
       "a": "A los 4 meses.",
@@ -392,8 +392,8 @@
   },
   {
     "id": "gine_2025_024",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Infecciones vaginales",
+    "materia": "ginecologia",
+    "submateria": "Infecciones del tracto genital inferior",
     "enunciado": "¿Cuál es el agente etiológico más frecuente de la vaginosis bacteriana?",
     "opciones": {
       "a": "Gardnerella vaginalis.",
@@ -409,8 +409,8 @@
   },
   {
     "id": "med_2025_025",
-    "materia": ["urologia"],
-    "submateria": "Nefrología",
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "Paciente con síndrome nefrótico. ¿Cuál es el tipo de hiperlipidemia característica?",
     "opciones": {
       "a": "Aumento de HDL y descenso de LDL.",
@@ -426,8 +426,8 @@
   },
   {
     "id": "ped_2025_026",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Desnutrición",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "Niño de 2 años con bajo peso para la talla. ¿Qué tipo de desnutrición presenta?",
     "opciones": {
       "a": "Desnutrición crónica.",
@@ -443,8 +443,8 @@
   },
   {
     "id": "obs_2025_027",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Trabajo de parto",
+    "materia": "obstetricia",
+    "submateria": "Parto",
     "enunciado": "Mujer de 39 semanas con dinámica uterina regular, cuello borrado, dilatación de 6 cm, presentación cefálica, bolsa íntegra. ¿Cuál es la conducta?",
     "opciones": {
       "a": "Conducta expectante.",
@@ -460,8 +460,8 @@
   },
   {
     "id": "epi_2025_028",
-    "materia": ["📈 Salud Publica"],
-    "submateria": "Tasas",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Qué denominador se utiliza para el cálculo de la tasa de mortalidad infantil?",
     "opciones": {
       "a": "N° de nacidos vivos.",
@@ -477,8 +477,8 @@
   },
   {
     "id": "obs_2025_029",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Amenaza de parto pretérmino",
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
     "enunciado": "Embarazada de 32 semanas con fiebre y dinámica uterina, cuello borrado 20%, LA claro. ¿Cuál es la conducta según guía nacional?",
     "opciones": {
       "a": "Betametasona + Ampicilina-sulbactam + Metronidazol + conducta expectante.",
@@ -494,8 +494,8 @@
   },
   {
     "id": "ped_2025_030",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Hematología – Hemorragias",
+    "materia": "pediatria",
+    "submateria": "Hematología infantil",
     "enunciado": "Niño de 5 años con hemartrosis espontáneas y cefalohematoma tras trauma leve. ¿Qué enfermedad debe descartarse?",
     "opciones": {
       "a": "Hemofilia.",
@@ -511,8 +511,8 @@
   },
   {
     "id": "ped_2025_031",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Exantemáticas",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Niño de 9 meses con fiebre, conjuntivitis, enantema en mucosa y exantema maculopapular generalizado que toma palmas y plantas. ¿Cuál es la sospecha diagnóstica?",
     "opciones": {
       "a": "Rubéola.",
@@ -528,8 +528,8 @@
   },
   {
     "id": "gine_2025_032",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Infertilidad",
+    "materia": "ginecologia",
+    "submateria": "Infertilidad / Esterilidad / Reproducción asistida",
     "enunciado": "¿En qué circunstancias debe iniciarse el estudio básico de infertilidad?",
     "opciones": {
       "a": "Mujeres mayores de 35 años, luego de 3 meses de coitos regulares sin anticonceptivos.",
@@ -545,8 +545,8 @@
   },
   {
     "id": "med_2025_033",
-    "materia": [" infectologia"],
-    "submateria": "Inmunizaciones del adulto",
+    "materia": "infectologia",
+    "submateria": "Otras preguntas de infectología",
     "enunciado": "Hombre de 55 años diabético, vacunado con antigripal, COVID-19 y doble bacteriana, sin antineumocócica. ¿Qué indica?",
     "opciones": {
       "a": "VCN20 + VCN13 secuencial.",
@@ -562,8 +562,8 @@
   },
   {
     "id": "med_2025_034",
-    "materia": ["🧠 Hematologia"],
-    "submateria": "Hematología – Anemias",
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
     "enunciado": "Mujer de 38 años con hiperpolimenorrea, Hb 9,7 g/dL, VCM 75 fL, HCM 20 pg. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Pancitopenia por hemólisis intravascular.",
@@ -579,8 +579,8 @@
   },
   {
     "id": "med_2025_035",
-    "materia": ["Cirugia"],
-    "submateria": "Hepatología",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
     "enunciado": "¿Cuál es el tumor hepático que se relaciona con la ingesta de anticonceptivos orales?",
     "opciones": {
       "a": "Adenoma hepático.",
@@ -596,8 +596,8 @@
   },
   {
     "id": "gine_2025_036",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Gestacional trofoblástica",
+    "materia": "ginecologia",
+    "submateria": "Otras preguntas de ginecología",
     "enunciado": "¿Cuál de los siguientes tumores trofoblásticos es quimiorresistente?",
     "opciones": {
       "a": "Tumor del sitio de implantación.",
@@ -613,8 +613,8 @@
   },
   {
     "id": "med_2025_037",
-    "materia": ["Gastroenterologia"],
-    "submateria": "Hepatología – Cirrosis",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
     "enunciado": "¿Cuáles son los microorganismos implicados en la peritonitis bacteriana espontánea?",
     "opciones": {
       "a": "Pseudomonas aeruginosa y Escherichia coli.",
@@ -630,8 +630,8 @@
   },
   {
     "id": "med_2025_038",
-    "materia": ["Cardiologia"],
-    "submateria": "Prevención cardiovascular",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
     "enunciado": "¿Cuál es la recomendación de las guías NICE con respecto a las estatinas en prevención primaria?",
     "opciones": {
       "a": "Atorvastatina 10 mg/día en RCVG ≥15%.",
@@ -647,8 +647,8 @@
   },
   {
     "id": "ped_2025_039",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Neonatología – Botulismo",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Lactante de 6 meses con hipotonía, ptosis y constipación luego de consumir miel. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Síndrome de Guillain-Barré.",
@@ -664,8 +664,8 @@
   },
   {
     "id": "obs_2025_040",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Prevención parto pretérmino",
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
     "enunciado": "¿Cuál es el esquema indicado respecto al uso de progesterona como prevención secundaria del parto pretérmino?",
     "opciones": {
       "a": "17 alpha-hidroxiprogesterona 250 mg IM semanal.",
@@ -681,8 +681,8 @@
   },
   {
     "id": "med_2025_041",
-    "materia": ["🧠 Cardiologia"],
-    "submateria": "Cardiología – Prevención primaria",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
     "enunciado": "¿Cuál es la recomendación de las guías NICE con respecto a las estatinas en prevención primaria?",
     "opciones": {
       "a": "Atorvastatina 10 mg/día (intensidad leve) en personas con RCVG ≥15% en 10 años.",
@@ -698,8 +698,8 @@
   },
   {
     "id": "ped_2025_042",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Botulismo infantil",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Lactante de 6 meses con hipotonía generalizada, ptosis bilateral y constipación luego de haber consumido miel. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Síndrome de Guillain-Barré.",
@@ -715,8 +715,8 @@
   },
   {
     "id": "obs_2025_043",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Prevención parto pretérmino",
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
     "enunciado": "¿Cuál es el esquema indicado respecto al uso de progesterona como prevención secundaria del parto pretérmino?",
     "opciones": {
       "a": "17 alpha-hidroxiprogesterona 250 mg IM semanal.",
@@ -732,8 +732,8 @@
   },
   {
     "id": "ped_2025_044",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Nefrología – Síndrome nefrótico",
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
     "enunciado": "Niño de 5 años con edema bipalpebral y de miembros inferiores, TA normal, proteinuria ++++, sin hematuria. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Síndrome nefrítico.",
@@ -749,8 +749,8 @@
   },
   {
     "id": "ped_2025_045",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Inmunizaciones",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Bebé de 6 meses y 15 días con esquema completo hasta los 3 meses. ¿Qué vacunas corresponden según el Calendario Nacional?",
     "opciones": {
       "a": "Quíntuple + IPV + 2° Meningococo + 1° Neumococo + 1° Antigripal.",
@@ -766,8 +766,8 @@
   },
   {
     "id": "obs_2025_046",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Emergencias obstétricas",
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "Embarazada de 37 semanas, amniorrexis con sangrado rojo rutilante y bradicardia fetal sostenida. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Vasa previa.",
@@ -783,8 +783,8 @@
   },
   {
     "id": "epi_2025_047",
-    "materia": ["Salud Publica"],
-    "submateria": "Diseños de estudio",
+    "materia": "saludpublica",
+    "submateria": "Tipos de estudios epidemiológicos",
     "enunciado": "¿Qué diseño epidemiológico constituye un estudio descriptivo?",
     "opciones": {
       "a": "Estudios de cohorte.",
@@ -800,8 +800,8 @@
   },
   {
     "id": "ped_2025_048",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Cardiología pediátrica",
+    "materia": "pediatria",
+    "submateria": "Cardiopatías congénitas",
     "enunciado": "Niña de 10 años con soplo sistólico eyectivo en foco aórtico que se atenúa al pasar a posición sentada. ¿Cuál es la sospecha diagnóstica?",
     "opciones": {
       "a": "Estenosis aórtica.",
@@ -817,8 +817,8 @@
   },
   {
     "id": "obs_2025_049",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Inmunizaciones en el embarazo",
+    "materia": "obstetricia",
+    "submateria": "Otras preguntas de obstetricia",
     "enunciado": "¿Qué esquema de vacunas es recomendable indicar durante el embarazo?",
     "opciones": {
       "a": "DT, Hepatitis B, Dengue.",
@@ -834,8 +834,8 @@
   },
   {
     "id": "obs_2025_050",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Preeclampsia",
+    "materia": "obstetricia",
+    "submateria": "Complicaciones maternas en el embarazo",
     "enunciado": "¿Qué signo es considerado de severidad ante el diagnóstico de preeclampsia?",
     "opciones": {
       "a": "Presión arterial 150/90 mmHg.",
@@ -851,8 +851,8 @@
   },
   {
     "id": "gine_2025_051",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Infecciones vaginales",
+    "materia": "ginecologia",
+    "submateria": "Infecciones del tracto genital inferior",
     "enunciado": "¿Cuáles son los criterios de Amsel para el diagnóstico de vaginosis bacteriana?",
     "opciones": {
       "a": "Prueba de aminas positiva, pH 7, reacción inflamatoria negativa.",
@@ -868,8 +868,8 @@
   },
   {
     "id": "epi_2025_052",
-    "materia": ["Salud Publica"],
-    "submateria": "Indicadores de salud",
+    "materia": "saludpublica",
+    "submateria": "Datos de nuestro país",
     "enunciado": "¿Cuál es la esperanza de vida al nacer en Argentina?",
     "opciones": {
       "a": "72 años.",
@@ -885,8 +885,8 @@
   },
   {
     "id": "med_2025_053",
-    "materia": ["Gastroenterologia"],
-    "submateria": "Gastroenterología – Disfagia",
+    "materia": "gastroenterologia",
+    "submateria": "Esófago",
     "enunciado": "Hombre de 49 años con disfagia progresiva, regurgitación y neumonía reciente. ¿Qué examen complementario solicita?",
     "opciones": {
       "a": "TAC de tórax y abdomen superior.",
@@ -902,8 +902,8 @@
   },
   {
     "id": "obs_2025_054",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Maniobras de Leopold",
+    "materia": "obstetricia",
+    "submateria": "Fisiología de la gestación",
     "enunciado": "¿Cómo se denomina la maniobra unimanual donde se palpa el polo presentado entre pulgar y dedos índice y medio?",
     "opciones": {
       "a": "Primera maniobra de Leopold.",
@@ -919,8 +919,8 @@
   },
   {
     "id": "ped_2025_055",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Lactancia materna",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Ante qué patología está contraindicada la lactancia materna?",
     "opciones": {
       "a": "COVID-19.",
@@ -936,8 +936,8 @@
   },
   {
     "id": "gine_2025_056",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Tamizaje cervical",
+    "materia": "ginecologia",
+    "submateria": "Patología cervical benigna y preinvasora",
     "enunciado": "Mujer de 35 años con test de VPH positivo por autotoma. ¿Qué conducta debe tomarse?",
     "opciones": {
       "a": "Conización cervical.",
@@ -953,8 +953,8 @@
   },
   {
     "id": "epi_2025_057",
-    "materia": ["Salud Publica"],
-    "submateria": "Indicadores de frecuencia",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cómo se define la prevalencia?",
     "opciones": {
       "a": "Número de casos nuevos durante un periodo.",
@@ -970,8 +970,8 @@
   },
   {
     "id": "med_2025_058",
-    "materia": ["Cardiologia"],
-    "submateria": "Cardiología",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
     "enunciado": "Hombre de 73 años con soplo mesosistólico rudo en foco aórtico, sin irradiación ni modificación con bipedestación. ¿Cuál es el diagnóstico probable?",
     "opciones": {
       "a": "Estenosis mitral.",
@@ -987,8 +987,8 @@
   },
   {
     "id": "med_2025_059",
-    "materia": ["cardiologia"],
-    "submateria": "Cardiología – Fibrilación auricular",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
     "enunciado": "Hombre de 75 años con FA y AIT previo. ¿Cuál es la prevención secundaria adecuada?",
     "opciones": {
       "a": "Aspirina 300 mg/día.",
@@ -1004,8 +1004,8 @@
   },
   {
     "id": "ped_2025_060",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Neumonía",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "¿Cuál es el agente etiológico más frecuente en la neumonía aguda de la comunidad en menores de 3 meses?",
     "opciones": {
       "a": "Citomegalovirus.",
@@ -1021,8 +1021,8 @@
   },
   {
     "id": "med_2025_061",
-    "materia": ["Cardiologia"],
-    "submateria": "Hipertensión arterial",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "¿Cuál es la prevalencia de Hipertensión Arterial en Argentina?",
     "opciones": {
       "a": "28%",
@@ -1038,7 +1038,7 @@
   },
   {
     "id": "med_2025_062",
-    "materia": ["Urologia"],
+    "materia": "urologia",
     "submateria": "Infecciones urinarias",
     "enunciado": "¿Cuál es el manejo correcto de la bacteriuria asintomática?",
     "opciones": {
@@ -1055,8 +1055,8 @@
   },
   {
     "id": "gine_2025_063",
-    "materia": ["🌸 Ginecología"],
-    "submateria": "Diagnóstico mamario",
+    "materia": "ginecologia",
+    "submateria": "Patología benigna de mama",
     "enunciado": "Mujer de 57 años con mamografía con microcalcificaciones agrupadas. ¿Cuál es la conducta a seguir?",
     "opciones": {
       "a": "Ecografía mamaria ipsilateral (BIRADS 0).",
@@ -1072,8 +1072,8 @@
   },
   {
     "id": "ped_2025_064",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Inmunizaciones",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Niña de 15 meses que recibió las últimas vacunas a los 6 meses. ¿Qué vacunas corresponden según el Calendario Nacional?",
     "opciones": {
       "a": "Triple viral, Hepatitis A, antigripal, Pentavalente, Sabin, Triple bacteriana, HPV, varicela.",
@@ -1089,8 +1089,8 @@
   },
   {
     "id": "med_2025_065",
-    "materia": ["Cardiologia"],
-    "submateria": "Cardiología – Insuficiencia cardíaca",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
     "enunciado": "Paciente de 70 años con enfermedad de Chagas, diabetes y antecedente de IAM. Asintomático. ¿Qué estadio ACC/AHA presenta?",
     "opciones": {
       "a": "Estadio A.",
@@ -1106,8 +1106,8 @@
   },
   {
     "id": "ped_2025_066",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Inmunizaciones",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "¿Cuáles son las vacunas que le corresponden a un niño de 8 meses de edad?",
     "opciones": {
       "a": "BCG, Hep B, 2 quíntuples, 3 SALK, 2 antineumocócicas, 2 rotavirus, 1 meningococo.",
@@ -1123,8 +1123,8 @@
   },
   {
     "id": "ped_2025_067",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Neumonología – Asma",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "¿Qué signo sugiere paro respiratorio inminente en un niño de 5 años con exacerbación asmática?",
     "opciones": {
       "a": "Taquicardia >120 lpm.",
@@ -1140,8 +1140,8 @@
   },
   {
     "id": "med_2025_068",
-    "materia": ["Cardiologia"],
-    "submateria": "Cardiología – Angina de Prinzmetal",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "Mujer de 33 años con dolor torácico nocturno, elevación transitoria del ST y coronarias normales. ¿Cuál es el mejor tratamiento?",
     "opciones": {
       "a": "Clonazepam.",
@@ -1157,8 +1157,8 @@
   },
   {
     "id": "ped_2025_069",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Nefrología – SUH",
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
     "enunciado": "Niño de 2 años con diarrea sanguinolenta, anemia, plaquetopenia y creatinina elevada. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Púrpura trombocitopénica idiopática.",
@@ -1174,8 +1174,8 @@
   },
   {
     "id": "med_2025_070",
-    "materia": ["Nutricion"],
-    "submateria": "Nutrición – Diabetes",
+    "materia": "nutricion",
+    "submateria": "Nutrición y obesidad",
     "enunciado": "Según la Guía Nacional de Diabetes tipo 2, ¿cómo se define el sobrepeso?",
     "opciones": {
       "a": "IMC entre 20–24,9 kg/m².",
@@ -1191,8 +1191,8 @@
   },
   {
     "id": "med_2025_071",
-    "materia": ["Infectologia"],
-    "submateria": "Infectología – Endocarditis",
+    "materia": "infectologia",
+    "submateria": "Endocarditis",
     "enunciado": "Mujer de 73 años con válvula aórtica protésica, fiebre de 2 semanas y petequias. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Internar, realizar 3 hemocultivos y ecocardiograma transesofágico.",
@@ -1208,8 +1208,8 @@
   },
   {
     "id": "ped_2025_072",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Otorrinolaringología – Epiglotitis",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Niña de 6 años con fiebre 40°C, dificultad respiratoria, babeo y signos de sepsis. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Cuerpo extraño en laringe.",
@@ -1225,8 +1225,8 @@
   },
   {
     "id": "epi_2025_073",
-    "materia": ["Salud Publica"],
-    "submateria": "Indicadores de salud",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Qué característica corresponde a la definición de una 'razón' como indicador de salud?",
     "opciones": {
       "a": "Es un indicador cualitativo.",
@@ -1242,8 +1242,8 @@
   },
   {
     "id": "leg_2025_074",
-    "materia": ["Medicina Legal"],
-    "submateria": "Derechos del paciente",
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "Según la Ley 26.529 de 'Derechos del paciente', ¿qué valores busca proteger?",
     "opciones": {
       "a": "Edad, libertad y equidad.",
@@ -1259,8 +1259,8 @@
   },
   {
     "id": "neo_2025_075",
-    "materia": ["Pediatria"],
-    "submateria": "Apgar y reanimación neonatal",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "Recién nacido activo, llanto vigoroso, color rosado con cianosis distal, FC 130, flexiona extremidades. ¿Puntaje de Apgar al minuto?",
     "opciones": {
       "a": "7",
@@ -1276,8 +1276,8 @@
   },
   {
     "id": "med_2025_076",
-    "materia": ["Gastroenterologia"],
-    "submateria": "Gastroenterología – Cáncer colorrectal",
+    "materia": "gastroenterologia",
+    "submateria": "Cáncer colorrectal",
     "enunciado": "Hombre de 38 años con familiar de primer grado fallecido por cáncer colorrectal a los 55 años. ¿Cuándo iniciar colonoscopía?",
     "opciones": {
       "a": "A los 50 años y luego cada 5 años.",
@@ -1293,8 +1293,8 @@
   },
   {
     "id": "med_2025_077",
-    "materia": ["Cardiologia"],
-    "submateria": "HTA – Tratamiento combinado",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "En personas con HTA que requieren tres fármacos para alcanzar metas, ¿cuál es la combinación recomendada?",
     "opciones": {
       "a": "Losartán + Enalapril + Hidroclorotiazida.",
@@ -1310,8 +1310,8 @@
   },
   {
     "id": "med_2025_078",
-    "materia": ["Infectologia"],
-    "submateria": "Infectología – VIH",
+    "materia": "infectologia",
+    "submateria": "HIV",
     "enunciado": "¿Cuál es la primera línea de tratamiento antirretroviral recomendada según la guía nacional?",
     "opciones": {
       "a": "Monoterapia con inhibidor nucleósido de la transcriptasa reversa.",
@@ -1327,8 +1327,8 @@
   },
   {
     "id": "med_2025_079",
-    "materia": ["Cardiologia"],
-    "submateria": "Prevención cardiovascular – Diabetes",
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
     "enunciado": "Hombre de 45 años con diabetes tipo II sin enfermedad cardiovascular. ¿Qué recomienda sobre el uso de estatinas?",
     "opciones": {
       "a": "Solicitar laboratorio y tratar si los valores son altos.",
@@ -1344,8 +1344,8 @@
   },
   {
     "id": "med_2025_080",
-    "materia": ["Hematologia"],
-    "submateria": "Hematología – Microangiopatías",
+    "materia": "hematologia",
+    "submateria": "Anemias hemolíticas",
     "enunciado": "Paciente con anemia hemolítica microangiopática, trombocitopenia y síntomas neurológicos. ¿Qué hallazgo apoya PTT sobre SUH?",
     "opciones": {
       "a": "Insuficiencia renal severa.",
@@ -1361,8 +1361,8 @@
   },
   {
     "id": "med_2025_081",
-    "materia": ["Endocrinologia"],
-    "submateria": "Endocrinología – Tiroides",
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
     "enunciado": "Mujer de 38 años con TSH suprimida y T4 libre elevada. ¿Cuál es la causa más frecuente de hipertiroidismo?",
     "opciones": {
       "a": "Tiroiditis subaguda.",
@@ -1378,7 +1378,7 @@
   },
   {
     "id": "gine_2025_082",
-    "materia": ["🌸 Ginecología"],
+    "materia": "ginecologia",
     "submateria": "Anticoncepción",
     "enunciado": "¿Qué método anticonceptivo es el más efectivo en el contexto de un posparto inmediato y lactancia materna exclusiva?",
     "opciones": {
@@ -1395,8 +1395,8 @@
   },
   {
     "id": "ped_2025_083",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Crecimiento y desarrollo",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿A qué edad se duplica el peso de nacimiento en un lactante sano?",
     "opciones": {
       "a": "A los 3 meses.",
@@ -1412,8 +1412,8 @@
   },
   {
     "id": "obs_2025_084",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Hemorragia postparto",
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "Mujer con parto vaginal y sangrado abundante a los 20 minutos, útero blando. ¿Cuál es la causa más probable?",
     "opciones": {
       "a": "Atonía uterina.",
@@ -1429,8 +1429,8 @@
   },
   {
     "id": "med_2025_085",
-    "materia": ["Reumatologia "],
-    "submateria": "Reumatología – Artritis reumatoidea",
+    "materia": "reumatologia",
+    "submateria": "Artritis reumatoide",
     "enunciado": "¿Qué articulación suele afectarse primero en la artritis reumatoidea?",
     "opciones": {
       "a": "Rodilla.",
@@ -1446,8 +1446,8 @@
   },
   {
     "id": "epi_2025_086",
-    "materia": ["Salud Publica"],
-    "submateria": "Medidas de asociación",
+    "materia": "saludpublica",
+    "submateria": "Análisis de asociación",
     "enunciado": "En un estudio de cohorte se obtiene un riesgo relativo (RR) = 1, ¿cómo se interpreta?",
     "opciones": {
       "a": "La exposición tiene efecto protector.",
@@ -1463,8 +1463,8 @@
   },
   {
     "id": "med_2025_087",
-    "materia": ["Neumonologia"],
-    "submateria": "Neumonología – EPOC",
+    "materia": "neumonologia",
+    "submateria": "EPOC",
     "enunciado": "Hombre de 65 años, fumador, con disnea progresiva y tos crónica. Espirometría con VEF1/CVF < 0,7. ¿Qué indica?",
     "opciones": {
       "a": "Restricción pulmonar.",
@@ -1480,8 +1480,8 @@
   },
   {
     "id": "ped_2025_088",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Infectología – Escarlatina",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Niño de 6 años con fiebre, faringoamigdalitis y exantema micropapular difuso. ¿Cuál es el agente causal más probable?",
     "opciones": {
       "a": "Streptococcus pyogenes.",
@@ -1497,8 +1497,8 @@
   },
   {
     "id": "obs_2025_089",
-    "materia": ["🤰 Obstetricia"],
-    "submateria": "Infecciones – TORCH",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
     "enunciado": "¿Cuál de las siguientes infecciones congénitas puede prevenirse con vacunación materna?",
     "opciones": {
       "a": "Citomegalovirus.",
@@ -1514,8 +1514,8 @@
   },
   {
     "id": "med_2025_090",
-    "materia": ["Gastroenterologia"],
-    "submateria": "Gastroenterología – Pancreatitis aguda",
+    "materia": "gastroenterologia",
+    "submateria": "Páncreas",
     "enunciado": "Hombre con dolor epigástrico irradiado a dorso, amilasa y lipasa elevadas. ¿Cuál es la causa más frecuente?",
     "opciones": {
       "a": "Alcohol.",
@@ -1531,8 +1531,8 @@
   },
   {
     "id": "neo_2025_091",
-    "materia": ["Pediatria"],
-    "submateria": "Recién nacido patológico",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "Recién nacido con ictericia en las primeras 24 horas de vida. ¿Cuál es la causa más probable?",
     "opciones": {
       "a": "Ictericia fisiológica.",
@@ -1548,8 +1548,8 @@
   },
   {
     "id": "med_2025_092",
-    "materia": ["Neurologia"],
-    "submateria": "Neurología – ACV",
+    "materia": "neurologia",
+    "submateria": "ECV",
     "enunciado": "Hombre de 60 años con déficit motor derecho y afasia de inicio súbito. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Hemorragia subaracnoidea.",
@@ -1565,7 +1565,7 @@
   },
   {
     "id": "gine_2025_093",
-    "materia": ["🌸 Ginecología"],
+    "materia": "ginecologia",
     "submateria": "Cáncer de cuello uterino",
     "enunciado": "¿Qué tipo histológico de cáncer de cuello uterino es el más frecuente?",
     "opciones": {
@@ -1582,8 +1582,8 @@
   },
   {
     "id": "epi_2025_094",
-    "materia": ["Salud Publica"],
-    "submateria": "Medidas de frecuencia",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cuál de las siguientes medidas indica cuántos casos nuevos ocurren en una población durante un tiempo determinado?",
     "opciones": {
       "a": "Prevalencia.",
@@ -1599,8 +1599,8 @@
   },
   {
     "id": "ped_2025_095",
-    "materia": ["🧒 Pediatría"],
-    "submateria": "Neurología – Convulsión febril",
+    "materia": "pediatria",
+    "submateria": "Otras preguntas de pediatría",
     "enunciado": "Niño de 2 años con fiebre de 39°C y convulsión tónico-clónica generalizada de 3 minutos. Examen neurológico normal. ¿Cuál es la conducta?",
     "opciones": {
       "a": "Internación para estudio neurológico.",
@@ -1616,7 +1616,7 @@
   },
   {
     "id": "obs_2025_096",
-    "materia": ["🤰 Obstetricia"],
+    "materia": "obstetricia",
     "submateria": "Embarazo múltiple",
     "enunciado": "¿Cuál es la complicación específica de los embarazos gemelares monocoriales biamnióticos?",
     "opciones": {
@@ -1633,8 +1633,8 @@
   },
   {
     "id": "med_2025_097",
-    "materia": ["Infectologia"],
-    "submateria": "Infectología – Tuberculosis",
+    "materia": "infectologia",
+    "submateria": "Tuberculosis",
     "enunciado": "¿Cuál es el tratamiento de primera línea para tuberculosis pulmonar sensible?",
     "opciones": {
       "a": "Isoniacida, rifampicina, pirazinamida y etambutol.",
@@ -1650,7 +1650,7 @@
   },
   {
     "id": "leg_2025_098",
-    "materia": ["Ginecologia"],
+    "materia": "medicinalegal",
     "submateria": "Salud sexual y reproductiva",
     "enunciado": "Según la Ley 27.610, ¿en qué casos se garantiza el acceso a la interrupción voluntaria del embarazo?",
     "opciones": {
@@ -1667,8 +1667,8 @@
   },
   {
     "id": "med_2025_099",
-    "materia": ["Hematologia"],
-    "submateria": "Hematología – Anemias",
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
     "enunciado": "Mujer con anemia microcítica, ferritina baja y transferrina elevada. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Anemia por enfermedad crónica.",
@@ -1684,8 +1684,8 @@
   },
   {
     "id": "med_2025_100",
-    "materia": ["Infectologia"],
-    "submateria": "Emergencias – Shock séptico",
+    "materia": "infectologia",
+    "submateria": "Sepsis y nosocomiales",
     "enunciado": "Paciente internado con infección respiratoria grave, hipotensión refractaria a fluidos y lactato >2 mmol/L. ¿Cuál es la conducta inicial?",
     "opciones": {
       "a": "Administrar vasopresores e iniciar antibióticos de amplio espectro.",
