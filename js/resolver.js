@@ -392,3 +392,26 @@ function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
   return `<div class="q-images">${imgs.map(src => `<div class="q-image-wrap"><img class="q-image" src="${src}"></div>`).join("")}</div>`;
 }
+/* ==========================================================
+   (Agregar al final de js/resolver.js)
+   HELPER VISUAL MULTI-MATERIA
+   ========================================================== */
+
+function getMateriaNombreForQuestion(q) {
+  if (!q || !q.materia) return "";
+
+  // 1. Convertimos todo a Array
+  const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
+
+  // 2. Mapeamos cada slug a su Nombre Bonito
+  const nombres = materias.map(slug => {
+    if (typeof BANK !== 'undefined' && BANK.subjects) {
+      const mat = BANK.subjects.find(s => s.slug === slug);
+      return mat ? mat.name : slug;
+    }
+    return slug;
+  });
+
+  // 3. Unimos con una barra
+  return nombres.join(" | ");
+}
