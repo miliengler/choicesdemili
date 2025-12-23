@@ -18,42 +18,7 @@
     window.addEventListener("error", e => showError(e.message));
     window.addEventListener("unhandledrejection", e => showError("Promise error: "+e.reason));
   </script>
-  <style>
-  /* 🔥 FUERZA BRUTA: Pega esto dentro del <head> de tu Index.html 🔥 */
-
-  /* Cuando la opción es CORRECTA -> VERDE */
-  .q-option.option-correct {
-    background-color: #dcfce7 !important;
-    border: 2px solid #22c55e !important;
-    color: #14532d !important;
-    font-weight: 700 !important;
-  }
-
-  /* Cuando la opción es INCORRECTA -> ROJO */
-  .q-option.option-wrong {
-    background-color: #fee2e2 !important;
-    border: 2px solid #ef4444 !important;
-    color: #7f1d1d !important;
-    opacity: 1 !important;
-  }
-
-  /* Bloquear para que no puedas seguir clickeando */
-  .q-option-locked {
-    pointer-events: none !important;
-  }
-
-  /* Asegurar que la explicación se vea */
-  .q-explanation {
-    display: block !important;
-    margin-top: 15px;
-    padding: 15px;
-    background: #f1f5f9;
-    border-left: 5px solid #3b82f6;
-    border-radius: 6px;
-    color: #334155;
-  }
-</style>
-
+  
 
 </head>
 
