@@ -177,7 +177,11 @@ const SUBTEMAS = {
     "COVID-19",
     "Otras preguntas de infectología"
   ],
-
+   
+  medicinafamiliar: [
+    "General"
+  ],
+   
   medicinalegal: [
     "Sistema de salud",
     "Vigilancia epidemiológica",
