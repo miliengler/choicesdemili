@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Integrado)
+   🎯 MEbank 3.0 – Motor de resolución (Lógica de Colores Simplificada)
    ========================================================== */
 
 let CURRENT = {
@@ -13,23 +13,17 @@ let CURRENT = {
 /* ==========================================================
    📊 Estado Interno del Sidebar
    ========================================================== */
-const SB_PAGE_SIZE = 60; // Cantidad de preguntas por página del sidebar
+const SB_PAGE_SIZE = 60;
 let SB_PAGE = 0;
 
 function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
 
-/* ----------------------------------------------------------
-   Sincronizar página del sidebar con la pregunta actual
-   ---------------------------------------------------------- */
 function ensureSidebarOnCurrent() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
   SB_PAGE = clamp(targetPage, 0, totalPages - 1);
 }
 
-/* ----------------------------------------------------------
-   Renderizar información de paginado en el sidebar
-   ---------------------------------------------------------- */
 function paintSidebarPageInfo() {
   const info = document.getElementById("sbInfo");
   const prev = document.getElementById("sbPrev");
@@ -38,9 +32,7 @@ function paintSidebarPageInfo() {
 
   const total = CURRENT.list.length;
   const totalPages = Math.max(1, Math.ceil(total / SB_PAGE_SIZE));
-
   SB_PAGE = clamp(SB_PAGE, 0, totalPages - 1);
-
   const start = SB_PAGE * SB_PAGE_SIZE;
   const end = Math.min(total, start + SB_PAGE_SIZE);
 
@@ -49,13 +41,10 @@ function paintSidebarPageInfo() {
   next.disabled = SB_PAGE === totalPages - 1;
 }
 
-/* ----------------------------------------------------------
-   Funciones de los botones del Sidebar
-   ---------------------------------------------------------- */
 function sbPrevPage() {
   const totalPages = Math.max(1, Math.ceil(CURRENT.list.length / SB_PAGE_SIZE));
   SB_PAGE = clamp(SB_PAGE - 1, 0, totalPages - 1);
-  renderPregunta(); // Re-renderiza para actualizar la grilla
+  renderPregunta();
 }
 
 function sbNextPage() {
@@ -72,9 +61,7 @@ function iniciarResolucion(config) {
     alert("⚠ No hay preguntas para resolver.");
     return;
   }
-
   stopTimer();
-
   CURRENT = {
     list: config.preguntas.slice(),
     i: 0,
@@ -82,21 +69,17 @@ function iniciarResolucion(config) {
     config: config,
     session: {}
   };
-
-  SB_PAGE = 0;               // Resetear paginado
-  ensureSidebarOnCurrent();  // Alinear con la pregunta 1
-
+  SB_PAGE = 0;
+  ensureSidebarOnCurrent();
   if (config.usarTimer) initTimer();
-
   renderPregunta();
 }
 
 /* ==========================================================
-   🧩 Helpers de Opciones
+   🧩 Helpers Robustos (Aquí estaba la clave)
    ========================================================== */
 function getOpcionesArray(q) {
   if (Array.isArray(q.opciones) && q.opciones.length) return q.opciones;
-
   if (q.opciones && typeof q.opciones === "object") {
     const keys = ["a", "b", "c", "d", "e"];
     const arr = keys.map(k => q.opciones[k]).filter(v => v != null && v !== "");
@@ -106,20 +89,26 @@ function getOpcionesArray(q) {
 }
 
 function getCorrectIndex(q, opcionesLen) {
-  const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+  // Manejo robusto de la respuesta correcta
   let c = q.correcta;
-
-  if (typeof c === "number") return (c >= 0 && c < opcionesLen) ? c : null;
   
+  // Si es número (ej: 0, 1, 2)
+  if (typeof c === "number") {
+      return (c >= 0 && c < opcionesLen) ? c : null;
+  }
+  
+  // Si es string (ej: "a", "A", "a.")
   if (typeof c === "string") {
-    const idx = mapa[c.trim().toLowerCase()];
-    return (idx != null && idx < opcionesLen) ? idx : null;
+      c = c.trim().toLowerCase().replace(".", ""); // Limpiamos "a." -> "a"
+      const mapa = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+      const idx = mapa[c];
+      return (idx != null && idx < opcionesLen) ? idx : null;
   }
   return null;
 }
 
 /* ==========================================================
-   🧩 Render Principal (Con lógica de colores corregida)
+   🧩 Render Principal
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -133,35 +122,34 @@ function renderPregunta() {
   const numero = CURRENT.i + 1;
   const materiaNombre = getMateriaNombreForQuestion(q);
 
-  // Estado de la pregunta actual
-  const estado = CURRENT.session[q.id] || null; // "ok", "bad" o null
-  const marcada = getRespuestaMarcada(q.id);    // Índice que tocó el usuario (0, 1, 2...)
+  // Recuperamos qué contestó el usuario (si contestó)
+  const userIdx = getRespuestaMarcada(q.id); // null o 0, 1, 2...
+  const yaRespondio = (userIdx !== null);
 
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // --- 📝 LÓGICA DE NOTAS ---
+  // --- 📝 NOTAS ---
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const currentNote = savedNotes[q.id]; 
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  /* ------ 🎨 GENERAR OPCIONES CON COLORES ------ */
+  /* ------ OPCIONES (Lógica de Colores Simplificada) ------ */
   const opcionesHTML = opciones.map((op, idx) => {
     let cls = "q-option";
-    
-    // Si ya respondió, bloqueamos todo
-    if (estado) {
-        cls += " q-option-locked"; 
 
-        // 1. Si es la correcta -> VERDE (Siempre mostramos la correcta)
+    if (yaRespondio) {
+        cls += " q-option-locked"; // Bloquear todas
+
+        // LÓGICA DE COLORES:
+        // 1. ¿Es esta la correcta? -> VERDE SIEMPRE
         if (correctIndex !== null && idx === correctIndex) {
             cls += " option-correct";
         }
-        
-        // 2. Si es la que eligió el usuario Y estaba mal -> ROJO
-        else if (idx === marcada && estado === "bad") {
-            cls += " option-wrong";
+        // 2. ¿Es esta la que tocó el usuario? (Y no era la correcta, porque sino entró en el if de arriba)
+        else if (idx === userIdx) {
+            cls += " option-wrong"; // ROJO
         }
     }
 
@@ -173,35 +161,29 @@ function renderPregunta() {
     `;
   }).join("");
   
-  /* ------ HTML ESTRUCTURA ------ */
+  /* ------ HTML ------ */
   app.innerHTML = `
     <div class="q-layout fade">
-
       <div class="q-main">
         <div class="q-card">
-
           <div class="q-header">
             <div class="q-title">
               <b>${CURRENT.config.titulo || "Resolución"}</b>
               <span class="q-counter">${numero}/${total}</span>
             </div>
-            <div class="q-meta">
-              <span class="q-materia">${materiaNombre || ""}</span>
-            </div>
+            <div class="q-meta"><span class="q-materia">${materiaNombre || ""}</span></div>
           </div>
 
           <div class="q-enunciado">${q.enunciado || ""}</div>
-
           ${q.imagenes && q.imagenes.length ? renderImagenesPregunta(q.imagenes) : ""}
 
           <div class="q-options">
             ${opcionesHTML || `<p style="color:#94a3b8;font-size:14px;">(Sin opciones)</p>`}
           </div>
           
-          ${estado && q.explicacion ? `
+          ${yaRespondio && q.explicacion ? `
             <div class="q-explanation">
-               <strong>💡 Explicación:</strong><br>
-               ${q.explicacion}
+               <strong>💡 Explicación:</strong><br>${q.explicacion}
             </div>
           ` : ""}
 
@@ -211,84 +193,63 @@ function renderPregunta() {
                      onclick="toggleNoteArea('${q.id}')">
                 ${hasNote ? '📝 Ver/Editar mi nota' : '➕ Agregar nota personal'}
              </button>
-
              <div id="note-area-${q.id}" style="display:none; margin-top:10px;">
-                <textarea id="note-text-${q.id}" 
-                          placeholder="Escribí tu apunte acá..."
-                          style="width:100%; height:80px; padding:10px; border:1px solid #cbd5e1; border-radius:6px; font-family:inherit; font-size:14px; resize:vertical;">${noteText}</textarea>
-                
+                <textarea id="note-text-${q.id}" placeholder="Escribí tu apunte acá..." style="width:100%; height:80px; padding:10px; border:1px solid #cbd5e1; border-radius:6px;">${noteText}</textarea>
                 <div style="margin-top:6px; text-align:right;">
-                   <button class="btn-small" style="background:#3b82f6; color:white; border:none;" 
-                           onclick="saveNoteResolver('${q.id}')">💾 Guardar nota</button>
+                   <button class="btn-small" style="background:#3b82f6; color:white; border:none;" onclick="saveNoteResolver('${q.id}')">💾 Guardar nota</button>
                 </div>
              </div>
           </div>
 
           <div class="q-nav-row" style="margin-top:25px;">
-            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
-              ⬅ Anterior
-            </button>
-
-            <button class="btn-small" onclick="nextQuestion()">
-              ${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}
-            </button>
-
-            <button class="btn-small btn-ghost" onclick="salirResolucion()">
-              🏠 Salir
-            </button>
+            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button>
+            <button class="btn-small" onclick="nextQuestion()">${CURRENT.i === total - 1 ? "Finalizar ➜" : "Siguiente ➡"}</button>
+            <button class="btn-small btn-ghost" onclick="salirResolucion()">🏠 Salir</button>
           </div>
         </div>
       </div>
 
       <aside class="q-sidebar">
         <div class="q-sidebar-header"><b>Índice</b></div>
-
         <div class="q-sidebar-pager">
           <button class="btn-small" id="sbPrev" onclick="sbPrevPage()">◀</button>
           <div class="q-sidebar-pageinfo" id="sbInfo">...</div>
           <button class="btn-small" id="sbNext" onclick="sbNextPage()">▶</button>
         </div>
-
-        <div class="q-sidebar-grid" id="sbGrid">
-          ${renderSidebarCells()}
-        </div>
+        <div class="q-sidebar-grid" id="sbGrid">${renderSidebarCells()}</div>
       </aside>
-
     </div>
   `;
-
   paintSidebarPageInfo();
 }
 
 /* ==========================================================
-   🧠 Responder (CON LÓGICA DE ESTADÍSTICAS)
+   🧠 Responder
    ========================================================== */
 function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
   if (!q) return;
 
-  // No permitir cambiar respuesta en la misma sesión
-  if (CURRENT.session[q.id]) return;
+  // Si ya respondió, no hacer nada
+  if (getRespuestaMarcada(q.id) !== null) return;
+
+  setRespuestaMarcada(q.id, idx);
 
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
-
-  const esCorrecta = (correctIndex != null) ? (idx === correctIndex) : false;
+  const esCorrecta = (correctIndex !== null && idx === correctIndex);
   const estado = esCorrecta ? "ok" : "bad";
 
-  // 1. Guardar estado en sesión actual
+  // Guardar en sesión
   CURRENT.session[q.id] = estado;
-  setRespuestaMarcada(q.id, idx);
 
-  // 2. Guardar progreso histórico (por materia)
+  // Guardar estadísticas
   const mat = q.materia || "otras";
   if (typeof PROG !== 'undefined') {
       if (!PROG[mat]) PROG[mat] = {};
       PROG[mat][q.id] = { status: estado, fecha: Date.now() };
       if (window.saveProgress) window.saveProgress();
   }
-
-  // 3. 📊 ACTUALIZAR ESTADÍSTICAS DIARIAS (Para el gráfico semanal)
   if (esCorrecta) {
     const hoy = new Date().toISOString().split('T')[0];
     const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
@@ -296,8 +257,7 @@ function answer(idx) {
     localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
   }
 
-  // 4. Actualizar vista
-  renderPregunta();
+  renderPregunta(); // Re-renderizar para mostrar colores
 }
 
 /* ==========================================================
@@ -334,14 +294,12 @@ function prevQuestion() {
 }
 
 /* ==========================================================
-   📊 Render Celdas del Sidebar (CON INDICADOR DE NOTAS)
+   📊 Render Celdas del Sidebar
    ========================================================== */
 function renderSidebarCells() {
   const total = CURRENT.list.length;
   const start = SB_PAGE * SB_PAGE_SIZE;
   const end = Math.min(total, start + SB_PAGE_SIZE);
-
-  // Cargamos notas para chequear visualmente
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
 
   const out = [];
@@ -354,8 +312,6 @@ function renderSidebarCells() {
     if (esActual) cls += " sb-active";
     if (estado === "ok") cls += " sb-ok";
     if (estado === "bad") cls += " sb-bad";
-
-    // 👉 Si tiene nota, agregamos clase especial
     if (savedNotes[q.id]) cls += " sb-note";
 
     out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
@@ -370,14 +326,14 @@ function irAPregunta(idx) {
 }
 
 /* ==========================================================
-   🏁 Finalizar y Salir
+   🏁 Finalizar
    ========================================================== */
 function renderFin() {
   stopTimer();
   const total = CURRENT.list.length;
   const values = Object.values(CURRENT.session);
   const ok = values.filter(v => v === "ok").length;
-  const bad = total - ok; 
+  const bad = values.filter(v => v === "bad").length;
 
   const app = document.getElementById("app");
   app.innerHTML = `
@@ -385,8 +341,7 @@ function renderFin() {
       <h2>${CURRENT.config.titulo || "Finalizado"}</h2>
       <p>Total de preguntas: <b>${total}</b></p>
       <p style="color:#16a34a;">✔ Correctas: ${ok}</p>
-      <p style="color:#ef4444;">✖ Incorrectas/Omitidas: ${bad}</p>
-
+      <p style="color:#ef4444;">✖ Incorrectas: ${bad}</p>
       <div style="margin-top:20px;display:flex;justify-content:center;gap:10px;">
         <button class="btn-main" onclick="renderHome()">🏠 Volver al inicio</button>
       </div>
@@ -401,15 +356,13 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🕒 Timer (Con soporte de HORAS)
+   🕒 Timer
    ========================================================== */
 let TIMER = { interval: null, start: 0 };
 
 function initTimer() {
-  stopTimer(); // Limpiar previo
-
+  stopTimer();
   TIMER.start = Date.now();
-  
   let el = document.getElementById("exam-timer");
   if (!el) {
     el = document.createElement("div");
@@ -417,35 +370,22 @@ function initTimer() {
     el.className = "exam-timer";
     document.body.appendChild(el);
   }
-  
   el.textContent = "⏱ 00:00";
-
   TIMER.interval = setInterval(() => {
     const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
     const h = Math.floor(totalSeconds / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = totalSeconds % 60;
-    
     const mm = String(m).padStart(2, "0");
     const ss = String(s).padStart(2, "0");
-    
-    let texto = "";
-    if (h > 0) {
-        texto = `${h}:${mm}:${ss}`;
-    } else {
-        texto = `${mm}:${ss}`;
-    }
-    
     const box = document.getElementById("exam-timer");
-    if (box) box.textContent = "⏱ " + texto;
+    if (box) box.textContent = "⏱ " + (h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`);
   }, 1000);
 }
 
 function stopTimer() {
-  if (TIMER.interval) {
-    clearInterval(TIMER.interval);
-    TIMER.interval = null;
-  }
+  if (TIMER.interval) clearInterval(TIMER.interval);
+  TIMER.interval = null;
   const el = document.getElementById("exam-timer");
   if (el) el.remove();
 }
