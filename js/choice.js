@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Final)
+   📚 MEbank 3.0 – Práctica por materia (Centro de Comando)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -37,7 +37,9 @@ function renderChoice() {
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div>
           <h2 style="margin:0 0 6px 0;">📚 Práctica por materia</h2>
-          <p style="color:#64748b; margin:0; font-size:14px;">Elegí una materia y opcionalmente uno o más subtemas.</p>
+          <p style="color:#64748b; margin:0; font-size:14px;">
+             Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.
+          </p>
         </div>
         
         <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#f1f5f9; border:1px solid #cbd5e1;">
@@ -47,7 +49,7 @@ function renderChoice() {
 
       <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;">
         <input type="text" 
-               placeholder="🔍 Buscar materia o tema (ej: vacunas)..." 
+               placeholder="🔍 Buscar materia o tema..." 
                value="${choiceSearchTerm}"
                oninput="onSearchChoice(this.value)"
                style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:15px;">
@@ -70,7 +72,6 @@ function renderChoice() {
     </div>
   `;
   
-  // Auto-focus para no perder el cursor al escribir
   if (choiceSearchTerm) {
       const input = document.querySelector("input[type='text']");
       if(input) {
@@ -80,9 +81,7 @@ function renderChoice() {
   }
 }
 
-/* --- LÓGICA DE INTERACCIÓN --- */
-
-// ✅ FUNCION RECUPERADA
+/* --- LÓGICA INTERNA --- */
 function onChangeChoiceOrder(val) {
   CHOICE_ORDER = val;
   localStorage.setItem("MEbank_ChoiceOrder_v1", val);
@@ -98,7 +97,6 @@ function getFilteredSubjects() {
   let list = [...BANK.subjects];
   const term = normalize(choiceSearchTerm);
 
-  // FILTRO
   if (term) {
     list = list.filter(subj => {
         const matchName = normalize(subj.name).includes(term);
@@ -108,7 +106,6 @@ function getFilteredSubjects() {
     });
   }
 
-  // ORDEN
   if (CHOICE_ORDER === "progreso") {
     return list.sort((a, b) => {
       const pa = getMateriaStats(a.slug).percent || 0;
@@ -128,13 +125,10 @@ function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
   
-  // Abrir automáticamente si hay coincidencia de búsqueda interna
   let forceOpen = false;
   if (term) {
       const subtemas = BANK.subsubjects[m.slug] || [];
-      if (subtemas.some(s => normalize(s).includes(term))) {
-          forceOpen = true;
-      }
+      if (subtemas.some(s => normalize(s).includes(term))) forceOpen = true;
   }
 
   const estaAbierta = forceOpen || (choiceOpenSlug === m.slug);
@@ -150,7 +144,7 @@ function renderMateriaRow(m) {
         <div style="width:42px;height:42px;">${renderProgressCircle(stats.percent)}</div>
       </div>
 
-      ${estaAbierta ? renderMateriaExpanded(m, term) : ""}
+      ${estaAbierta ? renderMateriaExpanded(m, term, stats) : ""}
     </div>
   `;
 }
@@ -160,8 +154,8 @@ function toggleMateriaChoice(slug) {
   renderChoice();
 }
 
-/* --- SUBTEMAS --- */
-function renderMateriaExpanded(m, term) {
+/* --- SUBTEMAS Y BOTONERA --- */
+function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
 
@@ -172,14 +166,12 @@ function renderMateriaExpanded(m, term) {
       }
   }
 
+  // Lista de Checks
   const items = subtemasTexto.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = contarPreguntasMateriaSub(slug, subSlug);
-    
     let displayName = nombreSub;
-    if (term && normalize(nombreSub).includes(term)) {
-        displayName = `<b>${nombreSub}</b>`;
-    }
+    if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
 
     return `
       <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:pointer;">
@@ -192,19 +184,69 @@ function renderMateriaExpanded(m, term) {
     `;
   }).join("");
 
+  // --- LÓGICA DE BOTONES (PANEL DE CONTROL) ---
+  const hayRespondidas = (stats.ok + stats.bad) > 0;
+  const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
+  const hayErrores = stats.bad > 0;
+  const materiaDominada = (stats.ok === stats.total) && (stats.total > 0);
+
+  // Fila 1: Iniciar y Reanudar
+  let fila1 = `
+    <button class="btn-main" style="flex:1;" onclick="iniciarPracticaMateria('${slug}', 'normal')">
+      ▶ Iniciar
+    </button>
+  `;
+  if (hayRespondidas && faltanResponder) {
+      fila1 += `
+        <button class="btn-main" style="flex:1; background:#f59e0b; border-color:#f59e0b;" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
+          ⏩ Reanudar
+        </button>
+      `;
+  }
+
+  // Fila 2: Aprender Errores
+  let fila2 = "";
+  if (hayErrores) {
+      fila2 = `
+        <button class="btn-main" style="width:100%; background:#ef4444; border-color:#ef4444;" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
+           🧠 Aprender mis ${stats.bad} errores
+        </button>
+      `;
+  } else if (materiaDominada) {
+      fila2 = `
+        <div style="background:#dcfce7; color:#166534; padding:10px; border-radius:8px; text-align:center; border:1px solid #86efac; font-size:14px;">
+           🏆 ¡Felicitaciones! Tenés el 100% de la materia correcta.
+        </div>
+      `;
+  }
+
+  // Fila 3: Herramientas
+  let fila3 = `
+    <div style="display:flex; gap:10px; margin-top:10px;">
+       <button class="btn-small" style="flex:1;" onclick="alert('Funcionalidad de Estadísticas Específicas en desarrollo')">📊 Estadísticas</button>
+       <button class="btn-small" style="flex:1;" onclick="alert('Funcionalidad de Notas Específicas en desarrollo')">📒 Notas</button>
+    </div>
+  `;
+  // Nota: Dejé los alerts en Stats/Notas por ahora, después los conectamos a pantallas reales si querés.
+
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <p style="font-size:13px; color:#64748b; margin-bottom:6px;">
-         ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas.'}
+         ${term ? 'Resultados de la búsqueda:' : 'Temas:'}
       </p>
       
-      <div style="max-height:300px; overflow:auto; margin-bottom:10px; padding-right:4px;">
-         ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin subtemas coincidentes.</div>'}
+      <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
+         ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
 
-      <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
-        <button class="btn-main" onclick="iniciarPracticaMateria('${slug}')">▶ Iniciar práctica</button>
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+         ${fila1}
       </div>
+      
+      ${fila2 ? `<div style="margin-bottom:10px;">${fila2}</div>` : ""}
+      
+      ${fila3}
+
     </div>
   `;
 }
@@ -217,13 +259,16 @@ function getMateriaStats(slug) {
   }).length;
 
   const progMat = PROG[slug] || {};
-  let correctas = 0;
+  let ok = 0, bad = 0;
   Object.values(progMat).forEach(reg => {
-    if (reg && reg.status === "ok") correctas++;
+    if (reg) {
+        if (reg.status === "ok") ok++;
+        if (reg.status === "bad") bad++;
+    }
   });
 
-  const percent = total ? Math.round(correctas / total * 100) : 0;
-  return { total, correctas, percent };
+  const percent = total ? Math.round(ok / total * 100) : 0;
+  return { total, ok, bad, percent };
 }
 
 function contarPreguntasMateriaSub(mSlug, subSlug) {
@@ -233,25 +278,52 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
   }).length;
 }
 
-function iniciarPracticaMateria(mSlug) {
+function getMateriaNombre(slug) {
+  const mat = BANK.subjects.find(s => s.slug === slug);
+  return mat ? mat.name : slug;
+}
+
+/* --- LANZADORES DE PRÁCTICA --- */
+function iniciarPracticaMateria(mSlug, modo) {
+  // 1. Obtener Subtemas Seleccionados
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
-  const preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
+  
+  // 2. Obtener Preguntas Base (Todas las de la materia/subtemas)
+  let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
-  if (!preguntas.length) {
-    alert("No hay preguntas disponibles para esa combinación.");
-    return;
+  if (!preguntas.length) return alert("No hay preguntas disponibles con este filtro.");
+
+  // 3. Filtrar según el MODO
+  let titulo = `Práctica – ${getMateriaNombre(mSlug)}`;
+  
+  if (modo === "reanudar") {
+      // Filtrar las que YA tienen respuesta (ok o bad)
+      const progMat = PROG[mSlug] || {};
+      preguntas = preguntas.filter(q => !progMat[q.id] || (progMat[q.id].status !== 'ok' && progMat[q.id].status !== 'bad'));
+      titulo += " (Reanudado)";
+      
+      if (!preguntas.length) return alert("¡Ya respondiste todas las preguntas de esta selección!");
+  } 
+  else if (modo === "repaso") {
+      // Filtrar SOLO las que están MAL
+      const progMat = PROG[mSlug] || {};
+      preguntas = preguntas.filter(q => progMat[q.id] && progMat[q.id].status === 'bad');
+      titulo += " (Repaso de Errores)";
+
+      if (!preguntas.length) return alert("¡Genial! No tenés errores registrados en esta selección.");
+  }
+  else {
+      // Modo NORMAL: Se usa todo el array 'preguntas' tal cual viene.
+      // Al iniciar, resolver.js empezará de la 0.
+      // Si respondes una que ya estaba OK, se sobreescribe. (Lógica de reaprendizaje).
   }
 
+  // 4. Iniciar
   iniciarResolucion({
     modo: "materia",
     preguntas,
     usarTimer: false,
-    titulo: `Práctica – ${getMateriaNombre(mSlug)}`
+    titulo: titulo
   });
-}
-
-function getMateriaNombre(slug) {
-  const mat = BANK.subjects.find(s => s.slug === slug);
-  return mat ? mat.name : slug;
 }
