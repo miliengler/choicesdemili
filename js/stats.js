@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Navegación Mejorada
+   📊 ESTADÍSTICAS GLOBALES – Diseño Unificado (Final)
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -148,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Layout Ajustado)
+   📋 Lista de Materias (Botones Unificados)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -204,7 +204,10 @@ function renderMateriasList() {
     const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
 
     const insights = getSubjectInsights(m.slug, m.name, datos);
-    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); // Gráfico
+    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
+
+    // ESTILO COMÚN PARA BOTONES (Transparencia + Texto Negro)
+    const btnBase = "width:100%; min-width:140px; font-size:13px; padding: 8px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155;";
 
     return `
       <li style="margin-bottom: 10px;">
@@ -236,22 +239,19 @@ function renderMateriasList() {
 
             <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
 
-            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1;">
                
-               <button class="btn-small" 
-                       style="min-width:140px; font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
+               <button style="${btnBase} background: #eff6ff; border: 1px solid #93c5fd;"
                        onclick="goToPracticeFromStats('${m.slug}')">
-                 Ir a practicar
+                 ▶ Ir a practicar
                </button>
                
-               <button class="btn-small" 
-                       style="min-width:140px; font-size:13px; padding: 8px 16px; background: #fef9c3; color: #b45309; border: 1px solid #fde047; border-radius:6px;"
+               <button style="${btnBase} background: #fefce8; border: 1px solid #fde047;"
                        onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
                  📝 Mis notas
                </button>
 
-               <button class="btn-small" 
-                       style="min-width:140px; font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; font-weight:600;"
+               <button style="${btnBase} background: #fef2f2; border: 1px solid #fca5a5;"
                        onclick="resetSubjectStats('${m.slug}', '${m.name}')">
                  🗑 Reiniciar materia
                </button>
@@ -363,10 +363,8 @@ function toggleStatsAcc(slug) {
 function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
 function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
 
-// 1. Navegación a Choice (Con materia expandida)
 function goToPracticeFromStats(slug) {
     if (window.renderChoice) {
-        // Seteamos la variable global de choice.js para que se abra
         window.choiceOpenSlug = slug; 
         renderChoice();
     } else {
@@ -374,21 +372,13 @@ function goToPracticeFromStats(slug) {
     }
 }
 
-// 2. Navegación a Notas (Con chequeo)
 function checkAndGoToNotes(slug, name) {
-    // Intentamos leer las notas del localStorage para ver si hay algo
-    // Asumimos que las notas se guardan en un array con {materia: 'slug', ...}
-    // Si no usas esta key exacta, avisame, pero es la estándar que usamos antes.
     const savedNotes = JSON.parse(localStorage.getItem("MEbank_Notes_v1") || "[]");
-    
     const hasNotes = savedNotes.some(n => n.materia === slug);
     
     if(hasNotes) {
         if(window.renderNotes) {
-            // Idea: Podríamos pasarle el slug a renderNotes(slug) si lo soporta
-            // Por ahora vamos a la pantalla y avisamos
             renderNotes(); 
-            // Si tuvieramos acceso al select de notas, lo cambiariamos aqui
             setTimeout(() => {
                 const sel = document.getElementById("notesMateriaSelect");
                 if(sel) { sel.value = slug; sel.onchange(); }
@@ -397,7 +387,6 @@ function checkAndGoToNotes(slug, name) {
             alert("Navegando a notas de " + name);
         }
     } else {
-        // Igual navegamos (usuario pidió ir igual), pero con aviso
         alert(`Todavía no tenés notas de ${name}, pero podés crear una ahora.`);
         if(window.renderNotes) renderNotes();
     }
