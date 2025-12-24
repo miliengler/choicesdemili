@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Diseño Final)
+   📚 MEbank 3.0 – Práctica por materia (ZERO FLICKER FINAL)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -24,13 +24,20 @@ function renderProgressCircle(percent) {
   `;
 }
 
-/* --- RENDER PRINCIPAL --- */
+/* ==========================================================
+   🏗️ RENDER ESTRUCTURA (Solo se ejecuta 1 vez)
+   ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
-  const subjects = getFilteredSubjects();
+  
+  // Si ya existe la estructura, no la volvemos a dibujar (evita parpadeo)
+  if (document.getElementById("choice-shell")) {
+      renderChoiceList(); // Solo actualizamos la lista
+      return;
+  }
 
   app.innerHTML = `
-    <div class="card fade" style="max-width:900px;margin:auto;">
+    <div id="choice-shell" class="card fade" style="max-width:900px;margin:auto;">
       
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div>
@@ -47,6 +54,7 @@ function renderChoice() {
 
       <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;">
         <input type="text" 
+               id="choiceSearchInput"
                placeholder="🔍 Buscar materia o tema..." 
                value="${choiceSearchTerm}"
                oninput="onSearchChoice(this.value)"
@@ -60,37 +68,56 @@ function renderChoice() {
         </select>
       </div>
 
-      <div style="margin-top:10px;">
-        ${subjects.length > 0 
-           ? subjects.map(m => renderMateriaRow(m)).join("") 
-           : `<div style="text-align:center; color:#64748b; padding:30px;">No se encontraron resultados.</div>`
-        }
-      </div>
+      <div id="choiceListContainer" style="margin-top:10px; min-height:200px;">
+         </div>
 
     </div>
   `;
-  
-  if (choiceSearchTerm) {
-      const input = document.querySelector("input[type='text']");
-      if(input) {
-          input.focus();
-          const val = input.value; input.value = ''; input.value = val; 
-      }
+
+  // Enfocar input si había búsqueda previa
+  const input = document.getElementById("choiceSearchInput");
+  if(choiceSearchTerm && input) {
+      input.focus();
+      const val = input.value; input.value = ''; input.value = val; 
   }
+
+  renderChoiceList();
 }
 
-/* --- LÓGICA --- */
+/* ==========================================================
+   🔄 RENDER LISTA (Se actualiza al buscar/tocar)
+   ========================================================== */
+function renderChoiceList() {
+    const container = document.getElementById("choiceListContainer");
+    if(!container) return; // Seguridad
+
+    const subjects = getFilteredSubjects();
+
+    if (subjects.length > 0) {
+        container.innerHTML = subjects.map(m => renderMateriaRow(m)).join("");
+    } else {
+        container.innerHTML = `<div style="text-align:center; color:#64748b; padding:30px;">No se encontraron resultados.</div>`;
+    }
+}
+
+/* --- EVENTOS OPTIMIZADOS --- */
 function onChangeChoiceOrder(val) {
   CHOICE_ORDER = val;
   localStorage.setItem("MEbank_ChoiceOrder_v1", val);
-  renderChoice();
+  renderChoiceList(); // Solo actualiza lista
 }
 
 function onSearchChoice(val) {
     choiceSearchTerm = val; 
-    renderChoice();         
+    renderChoiceList(); // Solo actualiza lista
 }
 
+function toggleMateriaChoice(slug) {
+  choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
+  renderChoiceList(); // Solo actualiza lista
+}
+
+/* --- LÓGICA DE FILTRADO --- */
 function getFilteredSubjects() {
   let list = [...BANK.subjects];
   const term = normalize(choiceSearchTerm);
@@ -118,7 +145,7 @@ function getFilteredSubjects() {
   });
 }
 
-/* --- FILA MATERIA --- */
+/* --- RENDER FILA (ROW) --- */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
@@ -133,8 +160,9 @@ function renderMateriaRow(m) {
   const bg = estaAbierta ? '#f8fafc' : 'white';
   const border = estaAbierta ? '#cbd5e1' : '#e2e8f0';
 
+  // Nota: Agregamos 'fade' aquí para que la animación sea suave solo en la lista
   return `
-    <div class="materia-block" style="border:1px solid ${border}; border-radius:10px; padding:14px; margin-bottom:12px; background:${bg}; transition: all 0.2s ease;">
+    <div class="materia-block fade" style="border:1px solid ${border}; border-radius:10px; padding:14px; margin-bottom:12px; background:${bg}; transition: background 0.2s ease;">
       
       <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleMateriaChoice('${m.slug}')">
         <div>
@@ -149,12 +177,7 @@ function renderMateriaRow(m) {
   `;
 }
 
-function toggleMateriaChoice(slug) {
-  choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
-  renderChoice();
-}
-
-/* --- PANEL EXPANDIDO --- */
+/* --- RENDER EXPANDIDO (CONTENIDO) --- */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
@@ -183,15 +206,13 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LOGICA DE BOTONES ---
+  // --- BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
-  
   const siguienteNum = stats.ok + stats.bad + 1;
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
-  // Botones Superiores (Acciones)
   let botonesHTML = `
     <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'normal')">
       ▶ Iniciar
@@ -214,10 +235,8 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // --- BOTONES INFERIORES (Stats & Notas) ---
-  // Limpiamos el nombre de la materia (quitamos emojis y símbolos raros) para estos botones
+  // --- TOOLS (Sin Emojis en el nombre) ---
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
-
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
        <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
