@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Layout 3 Columnas (Final)
+   📊 ESTADÍSTICAS GLOBALES – Navegación Mejorada
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -148,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Layout 3 Columnas)
+   📋 Lista de Materias (Layout Ajustado)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -157,10 +157,8 @@ function renderMateriasList() {
   let list = [...BANK.subjects];
   const term = normalize(statsSearchTerm);
 
-  // Filtrar
   if (term) list = list.filter(m => normalize(m.name).includes(term));
 
-  // Ordenar
   list.sort((a, b) => {
     const getPct = (slug) => {
         const total = BANK.questions.filter(q => q.materia === slug).length;
@@ -193,7 +191,6 @@ function renderMateriasList() {
     
     if (totalM === 0) return ""; 
 
-    // Stats básicas
     const datos = PROG[m.slug] || {};
     let ok = 0, bad = 0;
     Object.values(datos).forEach(p => {
@@ -206,11 +203,8 @@ function renderMateriasList() {
     const noresp = totalM - resp;
     const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
 
-    // Insights Inteligentes
     const insights = getSubjectInsights(m.slug, m.name, datos);
-
-    // Gráfico de torta CSS
-    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM);
+    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); // Gráfico
 
     return `
       <li style="margin-bottom: 10px;">
@@ -240,13 +234,20 @@ function renderMateriasList() {
               <div>⚪ Sin responder: <b style="color:#64748b">${noresp}</b></div>
             </div>
 
-            <div style="width:70px; height:70px; border-radius:50%; ${pieStyle} border:3px solid white; box-shadow:0 2px 5px rgba(0,0,0,0.1);"></div>
+            <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
 
             <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
+               
                <button class="btn-small" 
                        style="min-width:140px; font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
-                       onclick="iniciarPracticaMateria('${m.slug}', 'normal')">
+                       onclick="goToPracticeFromStats('${m.slug}')">
                  Ir a practicar
+               </button>
+               
+               <button class="btn-small" 
+                       style="min-width:140px; font-size:13px; padding: 8px 16px; background: #fef9c3; color: #b45309; border: 1px solid #fde047; border-radius:6px;"
+                       onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
+                 📝 Mis notas
                </button>
 
                <button class="btn-small" 
@@ -254,6 +255,7 @@ function renderMateriasList() {
                        onclick="resetSubjectStats('${m.slug}', '${m.name}')">
                  🗑 Reiniciar materia
                </button>
+
             </div>
           </div>
 
@@ -272,13 +274,12 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   🧠 Lógica de Insights Inteligentes
+   🧠 Lógica Inteligente
    ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
     const now = new Date();
     
-    // 1. Calcular días sin practicar
     let lastDate = null;
     Object.values(datos).forEach(p => {
         if (p.date) {
@@ -296,29 +297,25 @@ function getSubjectInsights(slug, name, datos) {
         insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
     }
 
-    // 2. Detectar Subtema más flojo
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
         insights.push(`📉 Tu subtema más flojo es <b>${weakest.name}</b> (${weakest.pct}%).`);
     }
 
     if (insights.length === 0) return "";
-    
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
 
 function getWeakestSubtopic(mSlug, progData) {
-    // Agrupar preguntas por subtema
     const questions = BANK.questions.filter(q => {
         const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-        return esMateria && q.submateria; // Solo si tiene subtema
+        return esMateria && q.submateria; 
     });
 
     const groups = {};
     questions.forEach(q => {
         const sub = q.submateria;
         if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
-        
         groups[sub].total++;
         if (progData[q.id]) {
             groups[sub].answered++;
@@ -326,7 +323,6 @@ function getWeakestSubtopic(mSlug, progData) {
         }
     });
 
-    // Buscar el peor (mínimo 3 respuestas para que sea relevante)
     let worst = null;
     let minPct = 101;
 
@@ -340,20 +336,15 @@ function getWeakestSubtopic(mSlug, progData) {
             }
         }
     });
-
     return worst;
 }
 
-/* ==========================================================
-   🎨 Utilidades Gráficas
-   ========================================================== */
 function getPieChartStyle(ok, bad, none, total) {
     if (total === 0) return `background: #e2e8f0;`; 
     
     const degOk = (ok / total) * 360;
     const degBad = (bad / total) * 360;
 
-    // Conic Gradient: Verde -> Rojo -> Gris
     return `background: conic-gradient(
         #16a34a 0deg ${degOk}deg, 
         #ef4444 ${degOk}deg ${degOk + degBad}deg, 
@@ -362,21 +353,54 @@ function getPieChartStyle(ok, bad, none, total) {
 }
 
 /* ==========================================================
-   🔧 Utilidades Generales
+   🔧 Navegación y Utilidades
    ========================================================== */
 function toggleStatsAcc(slug) {
   const el = document.getElementById(`stat-${slug}`);
   if (el) el.style.display = el.style.display === "none" ? "block" : "none";
 }
 
-function onSearchStats(val) {
-    statsSearchTerm = val;
-    renderMateriasList();
+function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
+function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
+
+// 1. Navegación a Choice (Con materia expandida)
+function goToPracticeFromStats(slug) {
+    if (window.renderChoice) {
+        // Seteamos la variable global de choice.js para que se abra
+        window.choiceOpenSlug = slug; 
+        renderChoice();
+    } else {
+        alert("Error: No se encuentra la pantalla de práctica.");
+    }
 }
 
-function onChangeStatsOrder(val) {
-    STATS_ORDER = val;
-    renderMateriasList();
+// 2. Navegación a Notas (Con chequeo)
+function checkAndGoToNotes(slug, name) {
+    // Intentamos leer las notas del localStorage para ver si hay algo
+    // Asumimos que las notas se guardan en un array con {materia: 'slug', ...}
+    // Si no usas esta key exacta, avisame, pero es la estándar que usamos antes.
+    const savedNotes = JSON.parse(localStorage.getItem("MEbank_Notes_v1") || "[]");
+    
+    const hasNotes = savedNotes.some(n => n.materia === slug);
+    
+    if(hasNotes) {
+        if(window.renderNotes) {
+            // Idea: Podríamos pasarle el slug a renderNotes(slug) si lo soporta
+            // Por ahora vamos a la pantalla y avisamos
+            renderNotes(); 
+            // Si tuvieramos acceso al select de notas, lo cambiariamos aqui
+            setTimeout(() => {
+                const sel = document.getElementById("notesMateriaSelect");
+                if(sel) { sel.value = slug; sel.onchange(); }
+            }, 50);
+        } else {
+            alert("Navegando a notas de " + name);
+        }
+    } else {
+        // Igual navegamos (usuario pidió ir igual), pero con aviso
+        alert(`Todavía no tenés notas de ${name}, pero podés crear una ahora.`);
+        if(window.renderNotes) renderNotes();
+    }
 }
 
 function resetGlobalStats() {
