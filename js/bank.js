@@ -34,7 +34,7 @@ let BANK = {
   loaded: false
 };
 
-// Carga los subtemas desde la variable global si existe
+// Carga los subtemas desde la variable global (config.js) si existe
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -106,7 +106,7 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (CON EMBUDO PARA "OTRAS") --- */
+/* --- PROCESADOR DE PREGUNTA (CON EMBUDO "OTRAS") --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
@@ -115,12 +115,11 @@ function processQuestion(q, type, examMeta) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
         let mat = normalize(q.materia || "otras");
-        // Validar si existe en config, sino 'otras'
         if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
         q.materia = mat;
     }
 
-    // 2. Submateria (EL EMBUDO: Si no coincide, va a "Otras")
+    // 2. Submateria (El Embudo Mágico)
     
     // a. Buscamos la lista oficial de temas para esta materia
     // Usamos la primera materia del array para decidir la lista
@@ -200,6 +199,7 @@ function getQuestionsByMateria(slug, subs) {
         if (!esDeLaMateria) return false;
 
         // 2. Chequeo de Subtemas
+        // Como ya pasamos por el embudo, la comparación es exacta
         if (subs && subs.length) return subs.includes(q.submateria);
         return true;
     });
