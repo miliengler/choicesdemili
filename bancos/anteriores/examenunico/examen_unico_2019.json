@@ -1,8 +1,8 @@
 [
   {
     "id": "med_2019_001",
-    "materia": "Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "Infecciones del tracto genital inferior",
     "enunciado": "En la detección de infecciones del tracto genital inferior de las mujeres embarazadas, ¿cuál de las siguientes no es una infección endógena?",
     "opciones": {
       "a": "Trichomoniasis.",
@@ -10,7 +10,7 @@
       "c": "Estreptococo agalactiae.",
       "d": "Candidiasis."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -19,8 +19,8 @@
   },
   {
     "id": "med_2019_002",
-    "materia": "Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "ITS",
     "enunciado": "Una paciente de 22 años consulta por presentar una lesión genital. Al examen físico se evidencia una úlcera indurada no dolorosa en región vulvar. Ante la sospecha de sífilis, respecto de la notificación de este caso, ¿cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Solicita pruebas de laboratorio para confirmar el caso y luego notificarlo.",
@@ -28,7 +28,7 @@
       "c": "Notifica sífilis sin especificar.",
       "d": "Notifica control serológico sífilis."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -37,8 +37,8 @@
   },
   {
     "id": "med_2019_003",
-    "materia": "Gastroenterología",
-    "submateria": "Diverticulitis",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Patología de pared abdominal"],
     "enunciado": "Paciente mujer de 80 años con antecedentes de enfermedad diverticular de larga data. Concurre a la guardia por dolor abdominal localizado en hemiabdomen izquierdo y síndrome febril. Se efectúa laboratorio donde se observa leucocitosis y tomografía computarizada evidenciando colección de 5 x 4 cm localizada en la fosa ilíaca izquierda Hinchey II. ¿Cuál es el tratamiento de elección?",
     "opciones": {
       "a": "Drenaje percutáneo y antibioticoterapia.",
@@ -46,7 +46,7 @@
       "c": "Cirugía de urgencia para drenaje.",
       "d": "Laparotomía exploradora y operación de Hartmann."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -55,8 +55,8 @@
   },
   {
     "id": "med_2019_004",
-    "materia": "Gastroenterología",
-    "submateria": "Nefropatías secundarias",
+    "materia": "urologia",
+    "submateria": "Glomerulonefritis primaria",
     "enunciado": "Un paciente varón de 30 años de edad cursando tercer día de cuadro de faringoamigdalitis presenta hematuria y dolor lumbar. Mejoró toda la sintomatología en 48-72 hs con desaparición de la macrohematuria. Refiere haber tenido episodios previos similares. ¿Cuál considera usted es el diagnóstico más probable?",
     "opciones": {
       "a": "Nefropatía por IgA.",
@@ -64,7 +64,7 @@
       "c": "Fístula arterio-venosa renal.",
       "d": "Litiasis renal sintomática."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -73,7 +73,7 @@
   },
   {
     "id": "med_2019_005",
-    "materia": "Endocrinología",
+    "materia": "endocrinologia",
     "submateria": "Tiroides",
     "enunciado": "Paciente varón, de 67 años, con historia de fibrilación auricular en tratamiento con amiodarona, consulta por astenia y decaimiento, con aumento ponderal de 5 kg e intolerancia al frío. Al examen físico presenta discreta bradipsiquia, pulso de 60 latidos por minutos, presión arterial 130/80 mmHg. En función de su presunción diagnóstica, ¿qué signo semiológico podría aportarle información para confirmarla?",
     "opciones": {
@@ -82,7 +82,7 @@
       "c": "Rodete miotónico.",
       "d": "Rales crepitantes secos bilaterales."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -91,8 +91,8 @@
   },
   {
     "id": "med_2019_006",
-    "materia": "Farmacología",
-    "submateria": "Psiquiatría y adicciones",
+    "materia": ["psiquiatria", "otras"],
+    "submateria": ["Trastornos relacionados con sustancias", "Fármacos"],
     "enunciado": "Paciente mujer de 50 años concurre a control periódico de salud. Como antecedentes refiere ser hipertensa y tabaquista de 15 cigarrillos. Quiere realizar tratamiento con bupropión, ya que su vecina tuvo éxito con ese tratamiento. ¿Cuál de las siguientes es una contraindicación absoluta para el uso de bupropión?",
     "opciones": {
       "a": "Epilepsia.",
@@ -100,7 +100,7 @@
       "c": "Displasia mamaria.",
       "d": "Dislipemia."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -109,8 +109,8 @@
   },
   {
     "id": "med_2019_007",
-    "materia": "Ginecología",
-    "submateria": "HPV y tamizaje",
+    "materia": "ginecologia",
+    "submateria": "Patología cervical benigna y preinvasora",
     "enunciado": "En una paciente de 20 años, nuligesta, la colposcopía reveló una lesión acetoblanca de límites netos (grado 1), que llega al orificio cervical externo. La anatomía patológica informa SIL de bajo grado (CIN 1) y el LEC es negativo. ¿Qué conducta terapéutica considera usted más apropiada?",
     "opciones": {
       "a": "Conización cervical a bisturí.",
@@ -118,7 +118,7 @@
       "c": "Escisión amplia tipo 3.",
       "d": "Control cito-colposcópico semestral."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -127,8 +127,8 @@
   },
   {
     "id": "med_2019_008",
-    "materia": "Pediatría",
-    "submateria": "Infecciones congénitas",
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Neonatología", "Infecciones congénitas y perinatales"],
     "enunciado": "Usted evalúa en internación a un paciente de 2 días de vida. Se trata de un recién nacido de término, con retraso del crecimiento intrauterino y producto de un embarazo no controlado. El examen físico presenta microcefalia, ictericia, lesiones purpúricas diseminadas y hepatoesplenomegalia. ¿Cuál considera usted es el diagnóstico más probable?",
     "opciones": {
       "a": "Chagas.",
@@ -136,7 +136,7 @@
       "c": "Virus de la inmunodeficiencia humana.",
       "d": "Zika."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -145,8 +145,8 @@
   },
   {
     "id": "med_2019_009",
-    "materia": "Medicina legal",
-    "submateria": "Consentimiento informado",
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "Según la ley Nº 26.529 de 'Derechos del Paciente en su Relación con los Profesionales e Instituciones de la Salud', ¿en qué casos el profesional queda eximido de requerir el consentimiento informado?",
     "opciones": {
       "a": "Cuando mediare gran peligro para la salud pública o una situación de emergencia con gran peligro para la vida del paciente.",
@@ -154,7 +154,7 @@
       "c": "Cuando el equipo tratante tenga certeza de la necesariedad y eficacia del tratamiento.",
       "d": "Cuando la intervención no sea invasiva o no revista gran riesgo para el paciente."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -163,8 +163,8 @@
   },
   {
     "id": "med_2019_010",
-    "materia": "Pediatría",
-    "submateria": "Desarrollo psicomotor",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "En la consulta de control de una niña de 9 meses, el padre dice estar preocupado porque su hija comienza a llorar cuando un extraño la levanta en brazos. En el examen físico la niña se sienta sola, traslada los objetos de una mano a la otra, levanta el cereal con un movimiento de pinza del pulgar y el índice. Se ríe y juega a las palmaditas con su padre, pero no balbucea ni gorjea. ¿Cuál es la conducta a seguir?",
     "opciones": {
       "a": "Formular más preguntas sobre el comportamiento angustiado de la niña.",
@@ -172,7 +172,7 @@
       "c": "Derivar a la niña para una evaluación fisioterapéutica.",
       "d": "Explicar al padre que la maduración de la niña es normal."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -181,8 +181,8 @@
   },
   {
     "id": "med_2019_011",
-    "materia": "Infectología",
-    "submateria": "Enfermedades importadas",
+    "materia": "infectologia",
+    "submateria": "Tropicales",
     "enunciado": "¿Cuál de los siguientes exámenes complementarios debe solicitarse en primer lugar ante un paciente que consulta por síndrome febril de 36 horas de evolución y tiene como antecedentes haber estado de viaje visitando familiares y amigos en Tarija, Bolivia?",
     "opciones": {
       "a": "Gota gruesa y extendido hemático para búsqueda de Plasmodium sp.",
@@ -190,7 +190,7 @@
       "c": "Serología para Trypanosoma cruzi.",
       "d": "Serología para brucelosis por Rosa de Bengala."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -199,8 +199,8 @@
   },
   {
     "id": "med_2019_012",
-    "materia": "Reumatología",
-    "submateria": "Gota",
+    "materia": "reumatologia",
+    "submateria": "Cristales",
     "enunciado": "Paciente varón de 70 años de edad, obeso y sedentario, se presenta a la consulta por dolor en la rodilla derecha de una semana de evolución. La articulación se encuentra caliente y dolorosa. Usted decide realizar una punción de líquido articular que arroja los siguientes resultados: características turbio y espeso, leucocitos 20000/ml, gram directo negativo, cristales de urato monosódico presentes. ¿Cuál considera usted que es el esquema terapéutico más adecuado para este caso?",
     "opciones": {
       "a": "Inicio de antibioticoterapia en espera de cultivo.",
@@ -208,7 +208,7 @@
       "c": "Colchicina vía oral con indicación de interrumpir en caso de diarrea.",
       "d": "Allopurinol por vía oral ajustado al clearence de creatinina."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -217,8 +217,8 @@
   },
   {
     "id": "med_2019_013",
-    "materia": "Clínica médica",
-    "submateria": "Diabetes mellitus tipo 2",
+    "materia": ["medicinafamiliar", "nutricion", "endocrinologia"],
+    "submateria": ["General", "Diabetes mellitus", "Diabetes mellitus"],
     "enunciado": "Llega a su consultorio una paciente mujer de 52 años, diabética en tratamiento con metformina 500 mg/día y no fumadora. ¿Qué estudio debe realizar para evaluar daño de órgano blanco?",
     "opciones": {
       "a": "Hemoglobina glicosilada.",
@@ -226,7 +226,7 @@
       "c": "Ecografía renal.",
       "d": "Electrocardiograma."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -235,8 +235,8 @@
   },
   {
     "id": "med_2019_014",
-    "materia": "Neurología",
-    "submateria": "Vértigo",
+    "materia": ["neurologia", "otorrinolaringologia"],
+    "submateria": ["Otras preguntas de neurología", "Oído"],
     "enunciado": "Durante las últimas 2 semanas un paciente varón de 63 años se despertó varias veces con vértigo y náuseas. No hay otros síntomas y el vértigo desaparece cuando se sienta o se da vuelta. En el examen físico se presenta normotenso y se observa la aparición de nistagmus en posición supina con su cabeza hacia la izquierda. El mismo aparece luego de una latencia de 30 segundos y el componente rápido se encuentra hacia la derecha. El resto del examen neurológico, auditivo y la otoscopía son normales. ¿Cuál es su diagnóstico presuntivo más probable?",
     "opciones": {
       "a": "Neurinoma del acústico.",
@@ -244,7 +244,7 @@
       "c": "Vértigo paroxístico posicional benigno.",
       "d": "Hipotensión ortostática."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -253,8 +253,8 @@
   },
   {
     "id": "med_2019_015",
-    "materia": "Pediatría",
-    "submateria": "Displasia de cadera",
+    "materia": ["pediatria", "traumatologia"],
+    "submateria": ["Neonatología", "Miembro inferior"],
     "enunciado": "Una madre trae a su hija de 2 meses a la consulta de control de niño sano. Refiere que es su primogénita y que nació por cesárea debido a un embarazo prolongado. Con estos antecedentes, Ud. piensa que debería descartar una displasia de cadera. ¿Sobre qué otros factores de riesgo debería indagar?",
     "opciones": {
       "a": "Presentación podálica, deformidades en los pies, historia familiar de displasia de cadera.",
@@ -262,7 +262,7 @@
       "c": "Presentación cefálica, pie bot, historia familiar de displasia de cadera.",
       "d": "Historia familiar de displasia de cadera, deformidades en la columna y tortícolis."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -271,8 +271,8 @@
   },
   {
     "id": "med_2019_016",
-    "materia": "Infectología",
-    "submateria": "IRA y neumonía",
+    "materia": ["infectologia", "neumonologia"],
+    "submateria": ["TRI – Neumonías", "Neumonía"],
     "enunciado": "De acuerdo a la Guía de Vigilancia Epidemiológica y Recomendaciones para la Prevención y Diagnóstico de las Infecciones Respiratorias Agudas en Argentina (2018), señale la definición de caso correcta para neumonía.",
     "opciones": {
       "a": "Dificultad respiratoria, tos con expectoración mucopurulenta, síndrome febril (>38 °C).",
@@ -280,7 +280,7 @@
       "c": "Paciente febril, tos con expectoración mucopurulenta, examen físico: vibraciones vocales aumentadas y matidez a la percusión de tórax.",
       "d": "Enfermedad respiratoria febril con expectoración, taquicardia, taquipnea, semiología de condensación o derrame pleural al examen físico."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -289,8 +289,8 @@
   },
   {
     "id": "med_2019_017",
-    "materia": "Neumonología",
-    "submateria": "Neumotórax",
+    "materia": "neumonologia",
+    "submateria": "Pleura, mediastino y diafragma",
     "enunciado": "Paciente varón 22 años que concurre a la guardia con dolor, disnea y tos. Se efectúa radiografía simple de tórax donde se evidencia neumotórax grado II. ¿Cuál considera usted es el diagnóstico etiológico más probable?",
     "opciones": {
       "a": "Neumonía.",
@@ -298,7 +298,7 @@
       "c": "Bulla subpleural.",
       "d": "Enfisema pulmonar."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -307,8 +307,8 @@
   },
   {
     "id": "med_2019_018",
-    "materia": "Pediatría",
-    "submateria": "Vacunación",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Un paciente de 9 años es traído a control de salud. No realizó controles en los últimos años y no presenta carnet de vacunas. Al examen físico no se observa cicatriz de BCG. ¿Cuál es el esquema correcto de vacunas a indicar en esta consulta según las Recomendaciones Nacionales de Vacunación?",
     "opciones": {
       "a": "Quíntuple, vacuna antipoliomielítica oral, triple viral, hepatitis A, hepatitis B.",
@@ -316,7 +316,7 @@
       "c": "Quíntuple, vacuna antipoliomielítica oral, antivaricela, antineumocóccica, hepatitis B.",
       "d": "BCG, triple bacteriana acelular, triple viral, hepatitis B, hepatitis A."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -325,8 +325,8 @@
   },
   {
     "id": "med_2019_019",
-    "materia": "Pediatría",
-    "submateria": "Abdomen agudo",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
     "enunciado": "Una paciente de 10 meses es traída a la guardia por presentar irritabilidad de comienzo súbito. Refieren los padres que presentó un vómito y dos deposiciones desligadas de escaso volumen; por momentos llora intensamente, flexionando los miembros inferiores, y luego parece dormirse. Al examen físico se encuentra afebril, sudorosa y pálida. El abdomen resulta difícil de evaluar debido a la irritabilidad. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Alergia a las proteínas de la leche de vaca.",
@@ -334,7 +334,7 @@
       "c": "Cólicos del lactante.",
       "d": "Apendicitis aguda."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -343,8 +343,8 @@
   },
   {
     "id": "med_2019_020",
-    "materia": "Cardiología",
-    "submateria": "Miopericarditis",
+    "materia": "cardiologia",
+    "submateria": "Pericardio",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retroesternal irradiado a la escápula izquierda, que apareció 10 horas antes estando en reposo y que empeora con la inspiración? El día anterior había presentado un episodio similar que cedió espontáneamente al reclinarse hacia adelante en la cama. No tiene factores de riesgo cardiovascular ni consume sustancias. Hace una semana refiere un cuadro de gastroenterocolitis aguda. En el examen físico se encuentra pálido y sudoroso, eupneico en reposo, con presión arterial 140/90 mmHg, frecuencia cardiaca 80 latidos por minuto. Auscultación cardiaca y pulmonar normal. En el Electrocardiograma se observa el siguiente registro.",
     "opciones": {
       "a": "Hipopotasemia.",
@@ -352,7 +352,7 @@
       "c": "Miopericarditis aguda.",
       "d": "Isquemia miocárdica aguda."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": true,
     "imagen_url": "bancos/anteriores/img/examenunico2019_20.png",
@@ -362,8 +362,8 @@
   },
   {
     "id": "med_2019_021",
-    "materia": "Gastroenterología",
-    "submateria": "Hepatitis viral",
+    "materia": ["gastroenterologia", "infectologia"],
+    "submateria": ["Hígado", "Tracto digestivo"],
     "enunciado": "Un paciente de 35 años con diagnóstico reciente de hepatitis A presenta mejoría clínica con descenso de las transaminasas y bilirrubina total normalizada. ¿Cuál es la recomendación respecto de su reintegro laboral en un comedor escolar?",
     "opciones": {
       "a": "Puede reintegrarse una vez normalizadas las transaminasas.",
@@ -371,7 +371,7 @@
       "c": "Puede reintegrarse una vez que desaparece la ictericia.",
       "d": "Debe esperar 6 meses luego del diagnóstico."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -380,8 +380,8 @@
   },
   {
     "id": "med_2019_022",
-    "materia": "Ginecología",
-    "submateria": "Amenorrea secundaria",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Alteraciones menstruales", "Hipotálamo / Hipófisis"],
     "enunciado": "Una paciente de 32 años consulta por amenorrea de 8 meses. Tuvo menarca a los 13 años y menstruaciones regulares. No hay antecedentes quirúrgicos ni enfermedades crónicas. Test de embarazo negativo. Prolactina y TSH normales. FSH y LH elevadas. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Síndrome de Asherman.",
@@ -389,7 +389,7 @@
       "c": "Hiperprolactinemia.",
       "d": "Síndrome de ovario poliquístico."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -398,8 +398,8 @@
   },
   {
     "id": "med_2019_023",
-    "materia": "Salud pública",
-    "submateria": "Determinantes sociales",
+    "materia": "saludpublica",
+    "submateria": "Introducción a la epidemiología",
     "enunciado": "De acuerdo con el modelo de Dahlgren y Whitehead (1991), ¿cuál de los siguientes es un determinante estructural de la salud?",
     "opciones": {
       "a": "Hábitos personales.",
@@ -407,7 +407,7 @@
       "c": "Nivel educativo.",
       "d": "Red de apoyo social."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -416,8 +416,8 @@
   },
   {
     "id": "med_2019_024",
-    "materia": "Cardiología",
-    "submateria": "Arritmias",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
     "enunciado": "Paciente de 75 años con diagnóstico de fibrilación auricular permanente en tratamiento anticoagulante. Consulta por mareos e hipotensión. En el ECG se observa respuesta ventricular a 35 latidos por minuto. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Suspender anticoagulación y controlar evolución.",
@@ -425,7 +425,7 @@
       "c": "Indicar cardioversión eléctrica inmediata.",
       "d": "Implantar marcapasos definitivo."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -434,8 +434,8 @@
   },
   {
     "id": "med_2019_025",
-    "materia": "Medicina legal",
-    "submateria": "Certificados médicos",
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "Según la legislación argentina, ¿qué debe consignar el profesional médico en un certificado de defunción?",
     "opciones": {
       "a": "El diagnóstico presuntivo y la causa inmediata de muerte.",
@@ -443,7 +443,7 @@
       "c": "La enfermedad antecedente, causa básica y causa inmediata de muerte.",
       "d": "Únicamente el diagnóstico que figura en la historia clínica."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -452,8 +452,8 @@
   },
   {
     "id": "med_2019_026",
-    "materia": "Ginecología",
-    "submateria": "Anticoncepción",
+    "materia": ["ginecologia", "cardiologia"],
+    "submateria": ["Anticoncepción", "Hipertensión arterial y factores de riesgo"],
     "enunciado": "Una mujer de 42 años, tabaquista de 10 cigarrillos diarios, solicita información sobre métodos anticonceptivos. ¿Cuál es el método más seguro y adecuado para esta paciente?",
     "opciones": {
       "a": "Anticonceptivos combinados orales.",
@@ -461,7 +461,7 @@
       "c": "Dispositivo intrauterino de cobre.",
       "d": "Píldora solo con progestágeno."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -470,8 +470,8 @@
   },
   {
     "id": "med_2019_027",
-    "materia": "Pediatría",
-    "submateria": "Recién nacido",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "En la atención inmediata del recién nacido vigoroso, ¿cuál de las siguientes acciones debe realizarse primero según las recomendaciones nacionales?",
     "opciones": {
       "a": "Aspirar secreciones de boca y nariz.",
@@ -479,7 +479,7 @@
       "c": "Promover contacto piel a piel con su madre.",
       "d": "Cortar el cordón umbilical inmediatamente."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -488,7 +488,7 @@
   },
   {
     "id": "med_2019_028",
-    "materia": "Cardiología",
+    "materia": "cardiologia",
     "submateria": "Insuficiencia cardíaca",
     "enunciado": "Paciente con insuficiencia cardíaca crónica en tratamiento con IECA, diurético y betabloqueante, que continúa con síntomas de disnea y edemas. Se le agrega antagonista de los receptores de mineralocorticoides. ¿Qué parámetro debe controlarse estrechamente luego del inicio?",
     "opciones": {
@@ -497,7 +497,7 @@
       "c": "Transaminasas.",
       "d": "Colesterol LDL."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -506,7 +506,7 @@
   },
   {
     "id": "med_2019_029",
-    "materia": "Urología",
+    "materia": "urologia",
     "submateria": "Litiasis renal",
     "enunciado": "Paciente de 48 años consulta por dolor lumbar intenso irradiado hacia la ingle, acompañado de hematuria microscópica. Ecografía: litiasis renal de 6 mm en uréter distal. ¿Cuál es la conducta inicial más adecuada?",
     "opciones": {
@@ -515,7 +515,7 @@
       "c": "Antibióticos por vía oral.",
       "d": "Internación para litotricia de urgencia."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -524,8 +524,8 @@
   },
   {
     "id": "med_2019_030",
-    "materia": "Pediatría",
-    "submateria": "IRA baja",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Infante de 8 meses es traído a la guardia por dificultad respiratoria. Al examen físico se constata taquipnea, tiraje intercostal y sibilancias difusas. Saturación de oxígeno 90%. ¿Cuál es la medida terapéutica inicial más apropiada?",
     "opciones": {
       "a": "Corticoides sistémicos.",
@@ -533,7 +533,7 @@
       "c": "Antibióticos de amplio espectro.",
       "d": "Nebulizaciones con solución fisiológica."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -542,8 +542,8 @@
   },
   {
     "id": "med_2019_031",
-    "materia": "Ginecología",
-    "submateria": "Trastornos del ciclo menstrual",
+    "materia": "ginecologia",
+    "submateria": "Alteraciones menstruales",
     "enunciado": "Paciente de 19 años consulta por menstruaciones irregulares desde la menarca. Refiere ciclos de entre 35 y 60 días, con sangrado normal y sin dismenorrea. IMC 22, sin signos de hiperandrogenismo. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Solicitar ecografía transvaginal.",
@@ -551,7 +551,7 @@
       "c": "Tranquilizar a la paciente: es una variante normal en el posmenarca.",
       "d": "Iniciar anticonceptivos combinados."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -560,8 +560,8 @@
   },
   {
     "id": "med_2019_032",
-    "materia": "Neurología",
-    "submateria": "ACV",
+    "materia": "neurologia",
+    "submateria": "ECV",
     "enunciado": "Paciente de 70 años consulta por pérdida súbita de fuerza en hemicuerpo derecho, con recuperación completa en 10 minutos. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Accidente cerebrovascular hemorrágico.",
@@ -569,7 +569,7 @@
       "c": "Crisis epiléptica parcial.",
       "d": "Ataque de pánico."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -578,8 +578,8 @@
   },
   {
     "id": "med_2019_033",
-    "materia": "Gastroenterología",
-    "submateria": "Hemorragia digestiva",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
     "enunciado": "Varón de 58 años con cirrosis hepática consulta por hematemesis. TA 90/60 mmHg, FC 110 lpm. Se inicia expansión con cristaloides y transfusión. ¿Qué fármaco debe indicarse precozmente?",
     "opciones": {
       "a": "Omeprazol endovenoso.",
@@ -587,7 +587,7 @@
       "c": "Eritromicina.",
       "d": "Ceftriaxona."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -596,8 +596,8 @@
   },
   {
     "id": "med_2019_034",
-    "materia": "Pediatría",
-    "submateria": "Maltrato infantil",
+    "materia": ["pediatria", "medicinalegal"],
+    "submateria": ["Maltrato y abuso sexual", "Normativa nacional y jurisdiccional"],
     "enunciado": "Durante un control de salud, se observan hematomas de diferentes edades en espalda y glúteos de un niño de 4 años. El padre refiere que 'es muy torpe y se cae seguido'. ¿Cuál es la conducta correcta?",
     "opciones": {
       "a": "Registrar lesiones y citar control en una semana.",
@@ -605,7 +605,7 @@
       "c": "Notificar situación sospechosa de maltrato infantil.",
       "d": "Derivar a pediatría del hospital de referencia."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -614,8 +614,8 @@
   },
   {
     "id": "med_2019_035",
-    "materia": "Urología",
-    "submateria": "Prostatismo",
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "Varón de 72 años con polaquiuria, chorro débil y sensación de vaciado incompleto. Tacto rectal: próstata aumentada de tamaño, elástica. PSA normal. ¿Cuál es la conducta terapéutica inicial más adecuada?",
     "opciones": {
       "a": "Iniciar alfabloqueantes.",
@@ -623,7 +623,7 @@
       "c": "Iniciar antibióticos empíricos.",
       "d": "Indicar fitoterapia."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -632,8 +632,8 @@
   },
   {
     "id": "med_2019_036",
-    "materia": "Cardiología",
-    "submateria": "Pericarditis",
+    "materia": "cardiologia",
+    "submateria": "Pericardio",
     "enunciado": "Paciente varón de 25 años consulta por dolor torácico punzante, que empeora al inspirar y mejora al inclinarse hacia adelante. No presenta disnea ni fiebre. ECG con supradesnivel del ST difuso. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Pericarditis aguda.",
@@ -641,7 +641,7 @@
       "c": "Embolia pulmonar.",
       "d": "Miocardiopatía hipertrófica."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -650,8 +650,8 @@
   },
   {
     "id": "med_2019_037",
-    "materia": "Pediatría",
-    "submateria": "IRA alta",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Niño de 3 años con fiebre, odinofagia y babeo. Se encuentra con estridor inspiratorio, posición de trípode y dificultad respiratoria. ¿Cuál es la conducta inmediata más adecuada?",
     "opciones": {
       "a": "Administrar corticoides orales.",
@@ -659,7 +659,7 @@
       "c": "Evitar manipulación, asegurar vía aérea y trasladar a quirófano para intubación.",
       "d": "Realizar hisopado de fauces."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -668,8 +668,8 @@
   },
   {
     "id": "med_2019_038",
-    "materia": "Salud pública",
-    "submateria": "Prevención cuaternaria",
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "Según la clasificación de niveles de prevención, ¿cuál de las siguientes situaciones corresponde a prevención cuaternaria?",
     "opciones": {
       "a": "Tamizaje de cáncer de cuello uterino.",
@@ -677,7 +677,7 @@
       "c": "Evitar procedimientos diagnósticos innecesarios.",
       "d": "Vacunación antigripal anual."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -686,8 +686,8 @@
   },
   {
     "id": "med_2019_039",
-    "materia": "Urología",
-    "submateria": "Torsión testicular",
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "Adolescente de 15 años consulta por dolor escrotal súbito, intenso, con testículo elevado y horizontalizado. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Solicitar ecografía doppler y luego decidir conducta.",
@@ -695,7 +695,7 @@
       "c": "Exploración quirúrgica inmediata.",
       "d": "Tratamiento antibiótico empírico."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -704,8 +704,8 @@
   },
   {
     "id": "med_2019_040",
-    "materia": "Neumonología",
-    "submateria": "Neumotórax espontáneo",
+    "materia": ["neumonologia", "cirugiageneral"],
+    "submateria": ["Pleura, mediastino y diafragma", "Otras preguntas de cirugía general"],
     "enunciado": "Paciente varón de 30 años, fumador, consulta por disnea súbita y dolor torácico derecho. En la radiografía de tórax se observa colapso parcial del pulmón derecho sin desviación mediastinal. ¿Cuál es la conducta terapéutica inicial más adecuada?",
     "opciones": {
       "a": "Colocación de tubo pleural y aspiración.",
@@ -713,7 +713,7 @@
       "c": "Videotoracoscopía urgente.",
       "d": "Punción evacuadora inmediata."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": true,
     "imagen_url": "bancos/anteriores/img/examenunico2019_40.png",
@@ -723,8 +723,8 @@
   },
   {
     "id": "med_2019_041",
-    "materia": "Dermatología",
-    "submateria": "Neonatología",
+    "materia": ["dermatologia", "pediatria"],
+    "submateria": ["Generalidades", "Neonatología"],
     "enunciado": "Una niña de 7 días es traída por su padre al centro de salud por presentar pápulas de color blanco perlado de aproximadamente 1 mm de diámetro en puente nasal y mejillas. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Foliculitis pustulosa eosinofílica.",
@@ -732,7 +732,7 @@
       "c": "Milium.",
       "d": "Eritema tóxico."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -741,8 +741,8 @@
   },
   {
     "id": "med_2019_042",
-    "materia": "Gastroenterología",
-    "submateria": "Celiaquía",
+    "materia": ["gastroenterologia", "pediatria"],
+    "submateria": ["Intestino delgado", "Patología del aparato digestivo"],
     "enunciado": "Una paciente de 4 años es evaluada por diarrea de tres meses de evolución. La madre refiere heces pálidas y de olor fétido, irritabilidad y distensión abdominal frecuente. El examen físico es normal, con peso y talla en percentilo 10. ¿Qué estudio de laboratorio es el más adecuado en esta instancia?",
     "opciones": {
       "a": "Anticuerpos IgG antigliadina e IgA antirreticulina.",
@@ -750,7 +750,7 @@
       "c": "Anticuerpos IgA antitransglutaminasa e IgA total.",
       "d": "HLA DQ2 y DQ8."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -759,7 +759,7 @@
   },
   {
     "id": "med_2019_043",
-    "materia": "Salud publica",
+    "materia": "saludpublica",
     "submateria": "Diseños de estudio",
     "enunciado": "Usted se encuentra investigando una enfermedad poco frecuente. Su objetivo es determinar cuánto más prevalente es un factor de riesgo determinado entre los pacientes que tienen la enfermedad en comparación con quienes no la presentan. ¿Cuál es el diseño experimental más adecuado en este caso?",
     "opciones": {
@@ -768,7 +768,7 @@
       "c": "Estudio de casos y controles.",
       "d": "Estudio descriptivo."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -777,8 +777,8 @@
   },
   {
     "id": "med_2019_044",
-    "materia": "Ginecología",
-    "submateria": "Anticoncepción de emergencia",
+    "materia": ["ginecologia", "saludpublica"],
+    "submateria": ["Anticoncepción", "Salud sexual y reproductiva"],
     "enunciado": "Concurre al centro de salud una paciente de 20 años porque hace 12 horas refiere rotura del preservativo durante la relación sexual. Es tabaquista y sufre migrañas, en tratamiento preventivo con propranolol. No utiliza otro método anticonceptivo. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Indicar Levonorgestrel 1,5 mg en una dosis única.",
@@ -786,7 +786,7 @@
       "c": "Contraindicar anticoncepción hormonal de emergencia.",
       "d": "Solicitar laboratorio previo a la anticoncepción hormonal de emergencia."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -795,8 +795,8 @@
   },
   {
     "id": "med_2019_045",
-    "materia": "Pediatría",
-    "submateria": "Vacunación",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "Una niña que hace 3 días cumplió 6 meses, sana y con vacunas registradas hasta los 4 meses, consulta por las correspondientes al control. Según el calendario nacional, ¿cuál es la conducta respecto a las vacunas contra Rotavirus y Meningococo?",
     "opciones": {
       "a": "Indicar ambas vacunas aunque la meningocócica debía aplicarse al 5° mes.",
@@ -804,7 +804,7 @@
       "c": "Indicar solo Meningocócica, ya no corresponde Rotavirus.",
       "d": "Indicar Rotavirus y Meningocócica para no desaprovechar oportunidad de vacunación."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -813,8 +813,8 @@
   },
   {
     "id": "med_2019_046",
-    "materia": "Endocrinología",
-    "submateria": "Diabetes tipo 2",
+    "materia": ["endocrinologia", "urologia"],
+    "submateria": ["Diabetes mellitus", "Insuficiencia renal crónica"],
     "enunciado": "Un paciente varón de 55 años con antecedentes de hipertensión arterial y diabetes tipo II diagnosticada 2 años atrás concurre a control. PA 125/80 mmHg, hemoglobina glicosilada 7,5%, creatinina 0,8 mg/dL. Usted desea evaluar compromiso renal en etapa precoz de la enfermedad diabética. ¿Qué estudio solicitaría en orina?",
     "opciones": {
       "a": "Índice albúmina/creatinina.",
@@ -822,7 +822,7 @@
       "c": "Detección de proteínas en tiras reactivas.",
       "d": "Creatinina urinaria."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -831,8 +831,8 @@
   },
   {
     "id": "med_2019_047",
-    "materia": "Pediatría",
-    "submateria": "Audición infantil",
+    "materia": ["pediatria", "otorrinolaringologia"],
+    "submateria": ["Desarrollo y nutrición", "Oído"],
     "enunciado": "Una niña de 3 años es traída a control porque la madre sospecha que no escucha bien. No presenta antecedentes y las otoemisiones al nacer fueron normales. ¿Cuál considera usted la conducta más adecuada?",
     "opciones": {
       "a": "Continuar con los controles habituales.",
@@ -840,7 +840,7 @@
       "c": "Solicitar audiometría de juego.",
       "d": "Solicitar audiometría tonal."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -849,8 +849,8 @@
   },
   {
     "id": "med_2019_048",
-    "materia": "Salud Publica",
-    "submateria": "Registros continuos",
+    "materia": "saludpublica",
+    "submateria": "Vigilancia epidemiológica",
     "enunciado": "En el área programática de su centro de salud deciden que la mejor fuente de información serían los registros continuos. Señale entre los siguientes un registro de este tipo.",
     "opciones": {
       "a": "Grupos focales cada 60 días.",
@@ -858,7 +858,7 @@
       "c": "Planilla de rondas de agentes sanitarios.",
       "d": "Observación participante de los procesos."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -867,8 +867,8 @@
   },
   {
     "id": "med_2019_049",
-    "materia": "Cirugía",
-    "submateria": "Abdomen agudo",
+    "materia": ["cirugiageneral", "ginecologia"],
+    "submateria": ["Abdomen agudo quirúrgico", "EPI"],
     "enunciado": "Paciente mujer de 30 años consulta por dolor abdominal de inicio brusco en hemiabdomen inferior, fiebre y vómitos. ¿Qué hallazgo físico sugiere abdomen agudo quirúrgico?",
     "opciones": {
       "a": "Disminución de ruidos hidroaéreos.",
@@ -876,7 +876,7 @@
       "c": "Signo de Cullen o cabeza de medusa.",
       "d": "Signo de rebote o Blumberg."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -885,7 +885,7 @@
   },
   {
     "id": "med_2019_050",
-    "materia": "Infectología",
+    "materia": "infectologia",
     "submateria": "Zoonosis",
     "enunciado": "Paciente de 39 años, sano, consulta por fiebre, mialgias, cefalea, tos seca y vómitos. Antecedente de viaje reciente a Neuquén, contacto con conservas de ciervo y jabalí. Laboratorio: leucocitosis, plaquetopenia, LDH y transaminasas elevadas. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
@@ -894,7 +894,7 @@
       "c": "Triquinosis.",
       "d": "Leptospirosis."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -903,8 +903,8 @@
   },
   {
     "id": "med_2019_051",
-    "materia": "Ginecología",
-    "submateria": "Abdomen agudo ginecológico",
+    "materia": ["ginecologia", "cirugiageneral"],
+    "submateria": ["EPI", "Abdomen agudo quirúrgico"],
     "enunciado": "El porcentaje más alto de apendicectomías negativas ocurre en mujeres jóvenes. ¿Cuáles son los diagnósticos diferenciales más frecuentes en este grupo?",
     "opciones": {
       "a": "EII, EIP, cáncer de ciego.",
@@ -912,7 +912,7 @@
       "c": "Patología pleuropulmonar, EIP y pielonefritis.",
       "d": "Embarazo ectópico, tiflitis y úlcera duodenal perforada."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -921,8 +921,8 @@
   },
   {
     "id": "med_2019_052",
-    "materia": "Urología",
-    "submateria": "Obstrucción urinaria",
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "Paciente varón de 70 años con insuficiencia renal sin diuresis tras colocación de sonda. Ecografía: hidronefrosis bilateral. ¿Qué estudio diagnóstico realizaría en primera instancia?",
     "opciones": {
       "a": "Radiografía de abdomen de pie.",
@@ -930,7 +930,7 @@
       "c": "Urografía retrógrada.",
       "d": "Urografía anterógrada."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -939,8 +939,8 @@
   },
   {
     "id": "med_2019_053",
-    "materia": "Pediatría",
-    "submateria": "Vacunación HPV",
+    "materia": ["pediatria", "ginecologia"],
+    "submateria": ["Vacunación infantil", "Patología cervical benigna y preinvasora"],
     "enunciado": "El calendario nacional establece respecto a la vacuna del virus del papiloma humano:",
     "opciones": {
       "a": "Única dosis en niñas hasta los 21 años.",
@@ -948,7 +948,7 @@
       "c": "No se indica en pacientes inmunosuprimidos.",
       "d": "Dos dosis a los 9 años para niñas y niños."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -957,8 +957,8 @@
   },
   {
     "id": "med_2019_054",
-    "materia": "Neumonología",
-    "submateria": "Cáncer de pulmón",
+    "materia": ["neumonologia", "oncologia"],
+    "submateria": ["NPS y cáncer de pulmón", "Oncología"],
     "enunciado": "Paciente varón de 50 años, fumador, con EPOC, consulta por disnea, tos irritativa y esputos hemoptoicos. Radiografía: masa en lóbulo superior derecho. ¿Qué estudio inicial está indicado?",
     "opciones": {
       "a": "Citología de esputo.",
@@ -966,7 +966,7 @@
       "c": "Tomografía computarizada de tórax con contraste.",
       "d": "Punción biopsia del tumor."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -975,8 +975,8 @@
   },
   {
     "id": "med_2019_055",
-    "materia": "Neurología",
-    "submateria": "Síndrome de Guillain-Barré",
+    "materia": "neurologia",
+    "submateria": "Neuropatías",
     "enunciado": "Una mujer de 26 años ingresa por debilidad progresiva en miembros inferiores y dificultad respiratoria. Antecedente de catarro 15 días antes. Examen: reflejos abolidos, PaO2 65 mmHg, PaCO2 50 mmHg. Rx tórax normal. ¿Cuál es su diagnóstico presuntivo más probable?",
     "opciones": {
       "a": "Miastenia gravis.",
@@ -984,7 +984,7 @@
       "c": "Poliomielitis.",
       "d": "Síndrome de distress respiratorio del adulto."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -993,8 +993,8 @@
   },
   {
     "id": "med_2019_056",
-    "materia": "Infectología",
-    "submateria": "Chagas agudo",
+    "materia": ["infectologia", "cardiologia"],
+    "submateria": ["Tropicales", "Miocardiopatías"],
     "enunciado": "¿Cuál es el diagnóstico más probable ante un paciente con edema bipalpebral indoloro, adenopatía preauricular y antecedente de exposición rural en zona endémica?",
     "opciones": {
       "a": "Conjuntivitis viral.",
@@ -1002,7 +1002,7 @@
       "c": "Dacriocistitis aguda.",
       "d": "Blefaritis."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1011,8 +1011,8 @@
   },
   {
     "id": "med_2019_057",
-    "materia": "Salud pública",
-    "submateria": "Ambiente y tabaco",
+    "materia": "saludpublica",
+    "submateria": "Análisis de asociación",
     "enunciado": "Un paciente trabaja en oficina donde varios compañeros fuman y hay poca ventilación. ¿Cómo se considera el humo de cigarrillo para él?",
     "opciones": {
       "a": "Tendencia de exposición.",
@@ -1020,7 +1020,7 @@
       "c": "Marcador de riesgo.",
       "d": "No constituye riesgo."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1029,8 +1029,8 @@
   },
   {
     "id": "med_2019_058",
-    "materia": "Oncología",
-    "submateria": "Cáncer de mama",
+    "materia": ["oncologia", "ginecologia"],
+    "submateria": ["Oncología", "Cáncer de mama"],
     "enunciado": "En una paciente de 48 años con nódulo de 1.3 cm confirmado como carcinoma ductal invasor, ¿cuál es la terapéutica locorregional de elección?",
     "opciones": {
       "a": "Mastectomía con vaciamiento ganglionar.",
@@ -1038,7 +1038,7 @@
       "c": "Resección amplia, linfadenectomía y radioterapia.",
       "d": "Resección amplia, ganglio centinela y radioterapia."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1047,7 +1047,7 @@
   },
   {
     "id": "med_2019_059",
-    "materia": "Cardiología",
+    "materia": "cardiologia",
     "submateria": "Factores de riesgo",
     "enunciado": "Un paciente de 55 años hipertenso e hipercolesterolémico. En relación a la enfermedad cardiovascular, ¿la edad se considera?",
     "opciones": {
@@ -1056,7 +1056,7 @@
       "c": "Tendencia de exposición.",
       "d": "Riesgo absoluto."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1064,27 +1064,27 @@
     "oficial": true
   },
   {
-  "id": "med_2019_060",
-  "materia": "Obstetricia",
-  "submateria": "Hipertensión en el embarazo",
-  "enunciado": "Consulta una mujer embarazada e hipertensa. ¿Cuál de las siguientes drogas utilizaría como primera opción de tratamiento?",
-  "opciones": {
-    "a": "Metildopa.",
-    "b": "Hidralazina.",
-    "c": "Losartán.",
-    "d": "Nifedipina."
+    "id": "med_2019_060",
+    "materia": "obstetricia",
+    "submateria": "Hipertensión en el embarazo",
+    "enunciado": "Consulta una mujer embarazada e hipertensa. ¿Cuál de las siguientes drogas utilizaría como primera opción de tratamiento?",
+    "opciones": {
+      "a": "Metildopa.",
+      "b": "Hidralazina.",
+      "c": "Losartán.",
+      "d": "Nifedipina."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": "Examen Único",
+    "anio": 2019,
+    "oficial": true
   },
-  "correcta": "",
-  "explicacion": "",
-  "imagen": false,
-  "examen": "Examen Único",
-  "anio": 2019,
-  "oficial": true
-},
   {
     "id": "med_2019_061",
-    "materia": "Obstetricia",
-    "submateria": "Amenaza de aborto",
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "Concurre a emergencias una mujer de 19 años por sangrado vaginal moderado y cólicos abdominales. Test de embarazo positivo. Al examen físico: cuello cerrado, PA 110/70 mmHg, FC 75 lpm. Ecografía: coágulos aislados en cavidad uterina. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Internación y evacuación médica.",
@@ -1092,7 +1092,7 @@
       "c": "Tratamiento médico ambulatorio.",
       "d": "Conducta expectante y evaluar necesidad de inmunoglobulina anti-D."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1101,8 +1101,8 @@
   },
   {
     "id": "med_2019_062",
-    "materia": "Pediatría",
-    "submateria": "Oftalmología infantil",
+    "materia": ["pediatria", "oftalmologia"],
+    "submateria": ["Desarrollo y nutrición", "Estrabismo"],
     "enunciado": "Un paciente de 2 meses es traído al control de salud. Los padres observan que ocasionalmente desvía el ojo derecho. En el examen físico se constata endodesviación ocular derecha que revierte espontáneamente. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Conducta expectante.",
@@ -1110,7 +1110,7 @@
       "c": "Solicitar interconsulta con oftalmología.",
       "d": "Solicitar interconsulta con neurología."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1119,8 +1119,8 @@
   },
   {
     "id": "med_2019_063",
-    "materia": "Cardiología",
-    "submateria": "Tromboembolismo pulmonar",
+    "materia": ["cardiologia", "neumonologia"],
+    "submateria": ["Insuficiencia cardíaca", "Tromboembolia de pulmón"],
     "enunciado": "Paciente de 83 años, posoperatoria de reemplazo de cadera, presenta disnea súbita, taquipnea y edema de miembro inferior derecho. ¿Cuál es el estudio inicial más apropiado?",
     "opciones": {
       "a": "Dímero D.",
@@ -1128,7 +1128,7 @@
       "c": "Angiotomografía pulmonar.",
       "d": "Angiografía pulmonar."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1137,8 +1137,8 @@
   },
   {
     "id": "med_2019_064",
-    "materia": "Obstetricia",
-    "submateria": "Lactancia",
+    "materia": ["obstetricia", "pediatria", "infectologia"],
+    "submateria": ["Lactancia", "Lactancia y nutrición", "HIV"],
     "enunciado": "¿En qué situación está contraindicada la lactancia materna?",
     "opciones": {
       "a": "Niño con bajo peso al nacer.",
@@ -1146,7 +1146,7 @@
       "c": "Hermano con antecedente de intolerancia a la leche de vaca.",
       "d": "Madre con serología positiva para VIH."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1155,8 +1155,8 @@
   },
   {
     "id": "med_2019_065",
-    "materia": "Salud pública",
-    "submateria": "Tabaquismo",
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿En qué momento luego de la cesación tabáquica se estima una reducción del 50% del riesgo de enfermedad coronaria, infarto y accidente cerebrovascular?",
     "opciones": {
       "a": "A los 6 meses.",
@@ -1164,7 +1164,7 @@
       "c": "A los 5 años.",
       "d": "A los 15 años."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1173,8 +1173,8 @@
   },
   {
     "id": "med_2019_066",
-    "materia": "Pediatría",
-    "submateria": "Criptorquidia",
+    "materia": ["pediatria", "urologia"],
+    "submateria": ["Patología nefrourológica infantil", "Síndromes clínicos"],
     "enunciado": "Un paciente de 8 meses es evaluado en control de salud. No se palpa el testículo derecho en escroto ni en la región inguinal. Los padres refieren que ya les habían dicho que no había descendido. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Conducta expectante.",
@@ -1182,7 +1182,7 @@
       "c": "Indicar tratamiento con Gonadotrofina Coriónica Humana.",
       "d": "Derivar a cirugía."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1191,8 +1191,8 @@
   },
   {
     "id": "med_2019_067",
-    "materia": "Pediatría",
-    "submateria": "Fiebre sin foco",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "Niña de 7 meses consulta por fiebre de 39°C de 3 días sin foco aparente. Bien nutrida y sin signos de gravedad. ¿Cuál es el estudio inicial que debe solicitarse?",
     "opciones": {
       "a": "Radiografía de tórax y abdomen.",
@@ -1200,7 +1200,7 @@
       "c": "Análisis de orina completa.",
       "d": "Hemograma y hepatograma."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1209,8 +1209,8 @@
   },
   {
     "id": "med_2019_068",
-    "materia": "Oncología",
-    "submateria": "Cáncer de mama",
+    "materia": ["oncologia", "ginecologia"],
+    "submateria": ["Oncología", "Cáncer de mama"],
     "enunciado": "¿Cuál de los siguientes se considera un factor de riesgo para el desarrollo de cáncer de mama?",
     "opciones": {
       "a": "Dieta hiperproteica.",
@@ -1218,7 +1218,7 @@
       "c": "Menopausia precoz.",
       "d": "Multiparidad con lactancia prolongada."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1227,8 +1227,8 @@
   },
   {
     "id": "med_2019_069",
-    "materia": "Pediatría",
-    "submateria": "Trastornos hidroelectrolíticos",
+    "materia": ["pediatria", "nefrologia"],
+    "submateria": ["Patología del aparato digestivo", "Tubulopatías"],
     "enunciado": "Internan a un paciente de 2 años por deshidratación aguda secundaria a gastroenteritis. Laboratorio: acidosis metabólica e hipopotasemia moderada. ¿Qué alteraciones espera encontrar en el electrocardiograma?",
     "opciones": {
       "a": "Aplanamiento de onda T.",
@@ -1236,7 +1236,7 @@
       "c": "Desaparición de onda U.",
       "d": "Alargamiento del QT."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1245,8 +1245,8 @@
   },
   {
     "id": "med_2019_070",
-    "materia": "Reumatología",
-    "submateria": "Polimialgia reumática",
+    "materia": "reumatologia",
+    "submateria": "Otras enfermedades reumatológicas",
     "enunciado": "Paciente de 80 años con dolor en hombros y caderas que dificulta levantarse. Laboratorio: eritrosedimentación 90 mm/h, FAN y látex negativos. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Polimialgia reumática.",
@@ -1254,7 +1254,7 @@
       "c": "Osteoartritis.",
       "d": "Artritis reactiva."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1263,8 +1263,8 @@
   },
   {
     "id": "med_2019_071",
-    "materia": "Endocrinología",
-    "submateria": "Nódulo tiroideo",
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Tiroides", "Glándulas salivales y masas cervicales"],
     "enunciado": "Paciente mujer de 38 años técnica en radiología consulta por nódulo tiroideo derecho de 12 mm, hipoecoico. Función tiroidea normal, sin antecedentes familiares de cáncer. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Control ecográfico en 6 meses.",
@@ -1272,7 +1272,7 @@
       "c": "Tiroidectomía total.",
       "d": "Lobectomía tiroidea."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1281,8 +1281,8 @@
   },
   {
     "id": "med_2019_072",
-    "materia": "Oncología",
-    "submateria": "Cáncer de mama",
+    "materia": ["oncologia", "ginecologia"],
+    "submateria": ["Oncología", "Cáncer de mama"],
     "enunciado": "Paciente de 52 años con nódulo mamario de 2 cm, móvil, duro, de bordes irregulares y microcalcificaciones agrupadas. ¿Cuál es el diagnóstico presuntivo?",
     "opciones": {
       "a": "Fibroadenoma calcificado.",
@@ -1290,7 +1290,7 @@
       "c": "Cáncer de mama.",
       "d": "Mastopatía escleroquística."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1299,8 +1299,8 @@
   },
   {
     "id": "med_2019_073",
-    "materia": "Infectología",
-    "submateria": "Vacunación adultos",
+    "materia": ["infectologia", "saludpublica"],
+    "submateria": ["Neumonía", "Medicina basada en la evidencia"],
     "enunciado": "Paciente de 65 años, sana, recibió hace 4 semanas vacuna polisacárida de 23 serotipos (VPN23). ¿Qué esquema de vacunación está indicado?",
     "opciones": {
       "a": "Al año aplicar conjugada 13 serotipos (VCN13).",
@@ -1308,7 +1308,7 @@
       "c": "Reiniciar esquema con VCN13 y luego VPN23 a 8 semanas.",
       "d": "Aplicar dentro de 5 años una dosis de VCN13 y luego VPN23."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1317,8 +1317,8 @@
   },
   {
     "id": "med_2019_074",
-    "materia": "Gastroenterologia",
-    "submateria": "Colestasis intrahepática",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
     "enunciado": "Paciente mujer de 50 años consulta por prurito nocturno y hepatomegalia. Laboratorio: FAL y GGT elevadas, bilirrubina normal. ¿Qué estudio recomendaría para confirmar diagnóstico?",
     "opciones": {
       "a": "Electroforesis de proteínas.",
@@ -1326,7 +1326,7 @@
       "c": "Colangio pancreatografía retrógrada endoscópica.",
       "d": "Anticuerpo antimitocondrial."
     },
-    "correcta": "",
+    "correcta": "d",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1335,8 +1335,8 @@
   },
   {
     "id": "med_2019_075",
-    "materia": "Reumatología",
-    "submateria": "LES",
+    "materia": "reumatologia",
+    "submateria": "LES y SAF",
     "enunciado": "Paciente mujer de 25 años, deportista, consulta por poliartralgias, aftas orales y lesiones eritematosas en tronco. Laboratorio: Hb 8 g/dL, plaquetas 20.000/mm³, uremia 40 mg%, creatinina 1,2 mg%. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Artritis reumatoidea.",
@@ -1344,7 +1344,7 @@
       "c": "Enfermedad de Still.",
       "d": "Panarteritis nodosa."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1353,8 +1353,8 @@
   },
   {
     "id": "med_2019_076",
-    "materia": "Salud pública",
-    "submateria": "Inmunizaciones adultos mayores",
+    "materia": ["saludpublica", "medicinafamiliar", "infectologia"],
+    "submateria": ["APS – Atención primaria de la salud", "General", "Neumonía"],
     "enunciado": "Una paciente de 65 años hipotiroidea en tratamiento consulta por control. ¿Qué vacunas se recomiendan para este grupo etario?",
     "opciones": {
       "a": "Influenza anual y refuerzo doble adultos cada 5 años.",
@@ -1362,7 +1362,7 @@
       "c": "Neumococo, influenza y refuerzo doble adulto (DT).",
       "d": "Doble adulto (DT) cada 10 años."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1371,8 +1371,8 @@
   },
   {
     "id": "med_2019_077",
-    "materia": "Cardiología",
-    "submateria": "IAM con supradesnivel",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "Paciente de 64 años cursa infarto anterior con supradesnivel del ST en V1-V4. Se indica aspirina y nitroglicerina EV mientras se prepara angioplastia. ¿Cuál es el beneficio comprobado del uso de nitritos?",
     "opciones": {
       "a": "Aliviar el dolor anginoso.",
@@ -1380,7 +1380,7 @@
       "c": "Aumentar la tasa de éxito de la angioplastia.",
       "d": "Disminuir la mortalidad."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1389,8 +1389,8 @@
   },
   {
     "id": "med_2019_078",
-    "materia": "Infectología",
-    "submateria": "Sarampión",
+    "materia": ["infectologia", "pediatria"],
+    "submateria": ["Virus varios", "Patología infecciosa infantil"],
     "enunciado": "Niño de 2 años con fiebre alta, tos, conjuntivitis y exantema maculopapular retroauricular que se extiende al tronco. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Escarlatina.",
@@ -1398,7 +1398,7 @@
       "c": "Varicela.",
       "d": "Rubéola."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1407,8 +1407,8 @@
   },
   {
     "id": "med_2019_079",
-    "materia": "Infectología",
-    "submateria": "Tuberculosis infantil",
+    "materia": ["infectologia", "pediatria"],
+    "submateria": ["Tuberculosis", "Patología infecciosa infantil"],
     "enunciado": "Niño de 5 años, contacto estrecho de una empleada con tuberculosis. Asintomático y examen físico normal. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Conducta expectante.",
@@ -1416,7 +1416,7 @@
       "c": "Solicitar esputo seriado para BAAR.",
       "d": "Iniciar profilaxis con isoniacida."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1425,8 +1425,8 @@
   },
   {
     "id": "med_2019_080",
-    "materia": "Pediatría",
-    "submateria": "Laringitis",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "Niño de 3 años consulta por tos perruna y afonía. Buen estado general, leve dificultad respiratoria, sin fiebre. ¿Cuál es el tratamiento de elección?",
     "opciones": {
       "a": "Vaporterapia con solución fría.",
@@ -1434,18 +1434,17 @@
       "c": "Corticoides vía oral dosis única.",
       "d": "Adrenalina nebulizada cada 20 minutos."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
     "anio": 2019,
     "oficial": true
   },
-  
   {
     "id": "med_2019_081",
-    "materia": "Gastroenterología",
-    "submateria": "Hepatitis B",
+    "materia": ["gastroenterologia", "infectologia"],
+    "submateria": ["Hígado", "Virus no HIV"],
     "enunciado": "Paciente de 32 años con antecedentes de consumo de drogas EV. Laboratorio: HBsAg positivo, HBeAg positivo, anti-HBc IgM negativo. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Hepatitis B aguda.",
@@ -1453,7 +1452,7 @@
       "c": "Hepatitis B crónica no replicativa.",
       "d": "Portador inactivo del virus de hepatitis B."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1462,8 +1461,8 @@
   },
   {
     "id": "med_2019_082",
-    "materia": "Cardiología",
-    "submateria": "Arritmias",
+    "materia": "cardiologia",
+    "submateria": "Artritis reumatoide",
     "enunciado": "Paciente de 70 años, con antecedentes de hipertensión arterial, presenta palpitaciones irregulares y disnea de esfuerzo. ECG: ausencia de ondas P y ritmo irregular. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Flutter auricular.",
@@ -1471,7 +1470,7 @@
       "c": "Fibrilación auricular.",
       "d": "Extrasistolia auricular."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1480,8 +1479,8 @@
   },
   {
     "id": "med_2019_083",
-    "materia": "Urologia",
-    "submateria": "Síndrome nefrótico",
+    "materia": ["urologia", "pediatria"],
+    "submateria": ["Síndrome nefrótico", "Patología nefrourológica infantil"],
     "enunciado": "Niño de 4 años consulta por edema palpebral y en miembros inferiores. Laboratorio: proteinuria 4+, albúmina sérica 2 g/dL, colesterol 320 mg/dL. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Síndrome nefrítico agudo.",
@@ -1489,7 +1488,7 @@
       "c": "Glomerulonefritis rápidamente progresiva.",
       "d": "Pielonefritis crónica."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1498,7 +1497,7 @@
   },
   {
     "id": "med_2019_084",
-    "materia": "Neumonología",
+    "materia": "neumonologia",
     "submateria": "EPOC",
     "enunciado": "Varón de 62 años, fumador de 40 paquetes/año, presenta disnea progresiva y tos crónica con expectoración. Espirometría: VEF1/CVF menor a 70%. ¿Cuál es el diagnóstico?",
     "opciones": {
@@ -1507,7 +1506,7 @@
       "c": "Fibrosis pulmonar idiopática.",
       "d": "Bronquiectasias."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1516,7 +1515,7 @@
   },
   {
     "id": "med_2019_085",
-    "materia": "Obstetricia",
+    "materia": "obstetricia",
     "submateria": "Trabajo de parto",
     "enunciado": "Mujer primigesta cursando embarazo de 40 semanas consulta por contracciones. Al examen: dilatación 6 cm, borramiento 90%, membranas íntegras, presentación cefálica. ¿Cuál es la conducta adecuada?",
     "opciones": {
@@ -1525,7 +1524,7 @@
       "c": "Conducta expectante y control del trabajo de parto.",
       "d": "Cesárea por sufrimiento fetal agudo."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1534,8 +1533,8 @@
   },
   {
     "id": "med_2019_086",
-    "materia": "Infectología",
-    "submateria": "VIH",
+    "materia": "infectologia",
+    "submateria": "HIV",
     "enunciado": "Según la Guía Nacional de manejo de VIH, ¿qué esquema se recomienda como primera línea en adultos?",
     "opciones": {
       "a": "Tenofovir + Lamivudina + Efavirenz.",
@@ -1543,7 +1542,7 @@
       "c": "Abacavir + Lamivudina + Nevirapina.",
       "d": "Emtricitabina + Raltegravir + Atazanavir."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1552,8 +1551,8 @@
   },
   {
     "id": "med_2019_087",
-    "materia": "Pediatría",
-    "submateria": "Desarrollo infantil",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "Niño de 18 meses, nacido a término y con desarrollo normal. Según la Escala de Denver, ¿qué hito del desarrollo debería haber adquirido?",
     "opciones": {
       "a": "Sube escaleras alternando pies.",
@@ -1561,7 +1560,7 @@
       "c": "Corre sin caerse.",
       "d": "Usa frases de 2 o más palabras."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1570,7 +1569,7 @@
   },
   {
     "id": "med_2019_088",
-    "materia": "Salud pública",
+    "materia": "saludpublica",
     "submateria": "Indicadores demográficos",
     "enunciado": "¿Cuál es el denominador de la tasa de natalidad?",
     "opciones": {
@@ -1579,7 +1578,7 @@
       "c": "Número de mujeres en edad fértil.",
       "d": "Número de defunciones infantiles."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1588,8 +1587,8 @@
   },
   {
     "id": "med_2019_089",
-    "materia": "Traumatología",
-    "submateria": "Fracturas",
+    "materia": "traumatologia",
+    "submateria": "Miembro superior",
     "enunciado": "Paciente de 35 años sufre caída sobre la mano extendida. Presenta dolor, impotencia funcional y deformidad en muñeca distal. ¿Qué diagnóstico es más probable?",
     "opciones": {
       "a": "Fractura de Monteggia.",
@@ -1597,7 +1596,7 @@
       "c": "Fractura de Galeazzi.",
       "d": "Luxación perilunar."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1606,7 +1605,7 @@
   },
   {
     "id": "med_2019_090",
-    "materia": "Psiquiatría",
+    "materia": "psiquiatria",
     "submateria": "Trastornos de ansiedad",
     "enunciado": "Paciente de 29 años consulta por crisis súbitas con palpitaciones, sensación de ahogo y miedo a morir. Duración de 10 minutos. ECG y laboratorio normales. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
@@ -1615,7 +1614,7 @@
       "c": "Trastorno somatomorfo.",
       "d": "Trastorno adaptativo con ansiedad."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1624,8 +1623,8 @@
   },
   {
     "id": "med_2019_091",
-    "materia": "Reumatología",
-    "submateria": "Gota",
+    "materia": "reumatologia",
+    "submateria": "Cristales",
     "enunciado": "Paciente varón de 56 años con dolor, enrojecimiento e inflamación en articulación metatarsofalángica del hallux derecho. ¿Qué estudio confirma el diagnóstico?",
     "opciones": {
       "a": "Ácido úrico plasmático elevado.",
@@ -1633,7 +1632,7 @@
       "c": "Velocidad de eritrosedimentación elevada.",
       "d": "Radiografía con erosiones óseas."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1642,8 +1641,8 @@
   },
   {
     "id": "med_2019_092",
-    "materia": "Neurología",
-    "submateria": "Epilepsia",
+    "materia": ["neurologia", "pediatria"],
+    "submateria": ["Convulsiones y epilepsia", "Trastornos de la infancia y la adolescencia"],
     "enunciado": "Paciente de 23 años presenta episodio de desconexión breve, mirada fija y parpadeo rápido. EEG: descargas generalizadas de punta-onda 3 Hz. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Crisis focal motora.",
@@ -1651,7 +1650,7 @@
       "c": "Crisis tónico-clónica generalizada.",
       "d": "Crisis psicógena no epiléptica."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1660,8 +1659,8 @@
   },
   {
     "id": "med_2019_093",
-    "materia": "Dermatología",
-    "submateria": "Psoriasis",
+    "materia": "dermatologia",
+    "submateria": "Eritemato-descamativas",
     "enunciado": "Paciente de 45 años consulta por placas eritematoescamosas en codos y rodillas, bien delimitadas y con escama nacarada. ¿Cuál es el diagnóstico?",
     "opciones": {
       "a": "Eccema.",
@@ -1669,7 +1668,7 @@
       "c": "Tiña corporis.",
       "d": "Liquen plano."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1678,7 +1677,7 @@
   },
   {
     "id": "med_2019_094",
-    "materia": "Neumonología",
+    "materia": "neumonologia",
     "submateria": "Asma",
     "enunciado": "Paciente de 25 años con historia de tos seca nocturna, disnea y sibilancias reversibles con salbutamol. Espirometría normal entre episodios. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
@@ -1687,7 +1686,7 @@
       "c": "Asma persistente leve.",
       "d": "Bronquiolitis obliterante."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1696,7 +1695,7 @@
   },
   {
     "id": "med_2019_095",
-    "materia": "Salud pública",
+    "materia": "saludpublica",
     "submateria": "Indicadores sanitarios",
     "enunciado": "¿Qué indicador mide la cantidad de muertes ocurridas durante el primer año de vida por cada mil nacidos vivos?",
     "opciones": {
@@ -1705,7 +1704,7 @@
       "c": "Tasa de mortalidad perinatal.",
       "d": "Tasa de mortalidad general."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1714,7 +1713,7 @@
   },
   {
     "id": "med_2019_096",
-    "materia": "Cardiología",
+    "materia": "cardiologia",
     "submateria": "Insuficiencia cardíaca",
     "enunciado": "Paciente de 68 años con disnea, ortopnea y edemas maleolares. ECG: ritmo sinusal, eje normal. Ecocardiograma: FEVI 35%. ¿Cuál es la clasificación funcional según NYHA si presenta disnea al subir un piso?",
     "opciones": {
@@ -1723,7 +1722,7 @@
       "c": "Clase III.",
       "d": "Clase IV."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1732,8 +1731,8 @@
   },
   {
     "id": "med_2019_097",
-    "materia": "Gastroenterología",
-    "submateria": "Úlcera péptica",
+    "materia": ["gastroenterologia", "infectologia"],
+    "submateria": ["Estómago", "Bacterias"],
     "enunciado": "Paciente de 48 años con epigastralgia que mejora al comer. Endoscopía: úlcera duodenal. ¿Cuál es el tratamiento de erradicación de Helicobacter pylori recomendado?",
     "opciones": {
       "a": "Amoxicilina + Claritromicina + IBP.",
@@ -1741,7 +1740,7 @@
       "c": "Tetraciclina + IBP.",
       "d": "IBP en monoterapia por 4 semanas."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1750,7 +1749,7 @@
   },
   {
     "id": "med_2019_098",
-    "materia": "Urología",
+    "materia": "urologia",
     "submateria": "Litiasis renal",
     "enunciado": "Paciente varón de 45 años con dolor lumbar agudo irradiado a genitales, hematuria macroscópica y vómitos. TAC: cálculo de 5 mm en uréter distal. ¿Cuál es la conducta más adecuada?",
     "opciones": {
@@ -1759,7 +1758,7 @@
       "c": "Derivación urinaria inmediata.",
       "d": "Antibióticos y reposo domiciliario."
     },
-    "correcta": "",
+    "correcta": "a",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1768,7 +1767,7 @@
   },
   {
     "id": "med_2019_099",
-    "materia": "Hematología",
+    "materia": "hematologia",
     "submateria": "Anemia ferropénica",
     "enunciado": "Paciente mujer de 30 años refiere astenia y palidez. Laboratorio: Hb 9 g/dL, Hto 29%, VCM 70 fL, ferritina 8 ng/mL. ¿Cuál es el diagnóstico?",
     "opciones": {
@@ -1777,7 +1776,7 @@
       "c": "Anemia megaloblástica.",
       "d": "Anemia hemolítica."
     },
-    "correcta": "",
+    "correcta": "b",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
@@ -1786,7 +1785,7 @@
   },
   {
     "id": "med_2019_100",
-    "materia": "Salud Publica",
+    "materia": "saludpublica",
     "submateria": "Indicadores de salud",
     "enunciado": "Si en un país se implementa un nuevo tratamiento que prolonga la sobrevida de pacientes con una enfermedad, ¿qué sucede con la incidencia y la prevalencia?",
     "opciones": {
@@ -1795,7 +1794,7 @@
       "c": "La incidencia se mantiene y aumenta la prevalencia.",
       "d": "Disminuye la incidencia y la prevalencia permanece igual."
     },
-    "correcta": "",
+    "correcta": "c",
     "explicacion": "",
     "imagen": false,
     "examen": "Examen Único",
