@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Diseño Unificado (Final)
+   📊 ESTADÍSTICAS GLOBALES – Final Pulido
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -148,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Botones Unificados)
+   📋 Lista de Materias (Botones Angostos & Subtemas Clean)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -206,8 +206,9 @@ function renderMateriasList() {
     const insights = getSubjectInsights(m.slug, m.name, datos);
     const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
 
-    // ESTILO COMÚN PARA BOTONES (Transparencia + Texto Negro)
-    const btnBase = "width:100%; min-width:140px; font-size:13px; padding: 8px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155;";
+    // ESTILO COMÚN ANGOSTO
+    // Quitamos min-width grande, usamos padding lateral justo y texto unificado.
+    const btnBase = "width:100%; min-width:110px; font-size:12px; padding: 6px 10px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155; white-space:nowrap;";
 
     return `
       <li style="margin-bottom: 10px;">
@@ -230,7 +231,7 @@ function renderMateriasList() {
           
           <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
             
-            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:140px;">
+            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:130px;">
               <div>📦 Total preguntas: <b>${totalM}</b></div>
               <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
               <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
@@ -239,7 +240,7 @@ function renderMateriasList() {
 
             <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
 
-            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1;">
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; max-width: 150px;">
                
                <button style="${btnBase} background: #eff6ff; border: 1px solid #93c5fd;"
                        onclick="goToPracticeFromStats('${m.slug}')">
@@ -274,7 +275,7 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   🧠 Lógica Inteligente
+   🧠 Lógica Inteligente (Formatter)
    ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
@@ -299,11 +300,20 @@ function getSubjectInsights(slug, name, datos) {
 
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
-        insights.push(`📉 Tu subtema más flojo es <b>${weakest.name}</b> (${weakest.pct}%).`);
+        // Formatear el slug para que se lea lindo
+        const prettyName = formatSubtopicName(weakest.name);
+        insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
     }
 
     if (insights.length === 0) return "";
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
+}
+
+// Convertir "hipertension-arterial" -> "Hipertension arterial"
+function formatSubtopicName(slug) {
+    if(!slug) return "";
+    let text = slug.replace(/[-_]/g, " ");
+    return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 function getWeakestSubtopic(mSlug, progData) {
@@ -363,10 +373,17 @@ function toggleStatsAcc(slug) {
 function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
 function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
 
+// Navegación con auto-apertura
 function goToPracticeFromStats(slug) {
     if (window.renderChoice) {
-        window.choiceOpenSlug = slug; 
         renderChoice();
+        // Intentar abrir el acordeón de esa materia automáticamente
+        // Usamos setTimeout para dar tiempo a que se renderice el DOM
+        setTimeout(() => {
+            if(typeof toggleMateriaChoice === 'function') {
+                toggleMateriaChoice(slug);
+            }
+        }, 50);
     } else {
         alert("Error: No se encuentra la pantalla de práctica.");
     }
@@ -383,12 +400,11 @@ function checkAndGoToNotes(slug, name) {
                 const sel = document.getElementById("notesMateriaSelect");
                 if(sel) { sel.value = slug; sel.onchange(); }
             }, 50);
-        } else {
-            alert("Navegando a notas de " + name);
         }
     } else {
-        alert(`Todavía no tenés notas de ${name}, pero podés crear una ahora.`);
-        if(window.renderNotes) renderNotes();
+        alert(`Todavía no tenés notas de ${name}!`);
+        // Opcional: ir igual para crear
+        // if(window.renderNotes) renderNotes();
     }
 }
 
