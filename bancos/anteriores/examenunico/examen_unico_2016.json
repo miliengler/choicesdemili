@@ -1,8 +1,8 @@
 [
   {
     "id": "med_2016_001",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
     "enunciado": "¿Cuál es el esquema de vacunación para poliomielitis que debe administrarse a un recién nacido sano hasta los dos años de edad?",
     "opciones": {
       "a": "Una dosis a los 2,4 y 6 meses, y una cuarta dosis entre los 15 y 18 meses.",
@@ -18,8 +18,8 @@
   },
   {
     "id": "med_2016_002",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": ["neumonologia", "infectologia"],
+    "submateria": ["Neumonía", "TRI – Neumonías"],
     "enunciado": "¿Cuál es la conducta más adecuada ante la sospecha clínica de neumonía aguda de la comunidad?",
     "opciones": {
       "a": "Realizar siempre radiografía de tórax a todos los pacientes antes de iniciar el tratamiento antibiótico.",
@@ -35,8 +35,8 @@
   },
   {
     "id": "med_2016_003",
-    "materia": "🧴 Dermatología",
-    "submateria": null,
+    "materia": "dermatologia",
+    "submateria": "Infecciosas",
     "enunciado": "¿Cuál es el diagnóstico más probable en un joven sano de 25 años que lo consulta por la aparición de manchas en su tronco de dos meses de evolución? En el examen físico presenta máculas blanquecinas con descamación fina en el tronco y brazos y algunas más oscuras en región glútea.",
     "opciones": {
       "a": "Vitiligo.",
@@ -52,8 +52,8 @@
   },
   {
     "id": "med_2016_004",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
     "enunciado": "¿Cuál sería la conducta más adecuada con una mujer que cursa la sexta semana de gestación y se encuentra ansiosa porque regresa de visitar a su familia en Asia donde había un brote de rubéola? Hace dos meses, durante la consulta pre-concepcional, la paciente tenía IgG reactiva para rubéola.",
     "opciones": {
       "a": "Tranquilizar a la paciente.",
@@ -69,8 +69,8 @@
   },
   {
     "id": "med_2016_005",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Cuál de los siguientes aspectos enfatizaría en la consulta con una madre adolescente que se encuentra inquieta porque su bebé de 25 días alimentado a pecho está durmiendo mucho y cree que se alimenta poco?",
     "opciones": {
       "a": "Prevención de la muerte súbita.",
@@ -86,8 +86,8 @@
   },
   {
     "id": "med_2016_006",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿Cuál de las siguientes conductas es una medida de prevención secundaria?",
     "opciones": {
       "a": "Fluoración de agua.",
@@ -103,8 +103,8 @@
   },
   {
     "id": "med_2016_007",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": "ginecologia",
+    "submateria": "Alteraciones menstruales",
     "enunciado": "¿Cuál de los siguientes procedimientos es el más adecuado con una mujer de 28 años que consulta por amenorrea de 2 meses y dolor hipogástrico? Tiene colocado un DIU hace tres años.",
     "opciones": {
       "a": "Laparoscopía.",
@@ -120,8 +120,8 @@
   },
   {
     "id": "med_2016_008",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Medicina basada en la evidencia",
     "enunciado": "¿Cómo considera la solicitud de hepatograma en la evaluación prequirúrgica?",
     "opciones": {
       "a": "Imprescindible antes de cualquier cirugía.",
@@ -137,8 +137,8 @@
   },
   {
     "id": "med_2016_009",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": ["imagenes", "cardiologia"],
+    "submateria": ["Ecografía", "Venas y linfáticos"],
     "enunciado": "¿Cuál es el método más preciso para el diagnóstico de una trombosis venosa profunda?",
     "opciones": {
       "a": "Ultrasonografía dúplex.",
@@ -154,8 +154,8 @@
   },
   {
     "id": "med_2016_010",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Estómago",
     "enunciado": "¿Qué estudio solicitaría a un paciente de 47 años, tabaquista de 25 cigarrillos día, que consulta por dolor urente epigástrico que aparece 1 hora después de comer y cede al volver a comer?",
     "opciones": {
       "a": "Seriada gastroesofágica.",
@@ -171,8 +171,8 @@
   },
   {
     "id": "med_2016_011",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "neumonologia"],
+    "submateria": ["Patología del aparato respiratorio", "Bronquiolitis"],
     "enunciado": "¿Cuál es el diagnóstico más probable en un lactante de 4 meses que presenta tos, coriza, sibilancias y aumento de la frecuencia respiratoria de dos días de evolución?",
     "opciones": {
       "a": "Aspiración de cuerpo extraño.",
@@ -188,8 +188,8 @@
   },
   {
     "id": "med_2016_012",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "¿Cuál es el diagnóstico más probable de una mujer de 30 años con embarazo de 7 semanas y hemorragia genital abundante con orificio cervical permeable?",
     "opciones": {
       "a": "Aborto inminente.",
@@ -205,8 +205,8 @@
   },
   {
     "id": "med_2016_013",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "obstetricia"],
+    "submateria": ["Desarrollo y nutrición", "Lactancia"],
     "enunciado": "¿Qué le recomendaría a una madre que se encuentra amamantando a su hijo de 45 días y le pregunta qué puede comer para mejorar la calidad de la leche?",
     "opciones": {
       "a": "Incorporar almendras y levadura de cerveza.",
@@ -222,8 +222,8 @@
   },
   {
     "id": "med_2016_014",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Colon",
     "enunciado": "¿Cuál sería la conducta inicial más adecuada con un señor de 40 años con fiebre, dolor abdominal y diarrea con sangre, pujo y tenesmo de 72 horas de evolución?",
     "opciones": {
       "a": "Hemocultivos y examen de materia fecal.",
@@ -239,8 +239,8 @@
   },
   {
     "id": "med_2016_015",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "Virus respiratorios / Influenza",
     "enunciado": "¿Cómo define una enfermedad tipo influenza (ETI)?",
     "opciones": {
       "a": "Fiebre mayor a 38°C con tos, dificultad respiratoria y taquipnea.",
@@ -256,8 +256,8 @@
   },
   {
     "id": "med_2016_016",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
     "enunciado": "¿Cuál es el diagnóstico más probable de un niño de 2 años que estuvo con fiebre 4 días y al ceder la fiebre presenta erupción micropapular en tronco?",
     "opciones": {
       "a": "Quinta enfermedad.",
@@ -273,8 +273,8 @@
   },
   {
     "id": "med_2016_017",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": ["neurologia", "medicinafamiliar"],
+    "submateria": ["Otras preguntas de neurología", "General"],
     "enunciado": "¿Qué regiones corporales examinaría con detenimiento ante una adenopatía preauricular derecha?",
     "opciones": {
       "a": "Estructuras del cuello y región occipital.",
@@ -290,8 +290,8 @@
   },
   {
     "id": "med_2016_018",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Otras preguntas de endocrinología", "Cirugía mínimamente invasiva"],
     "enunciado": "¿Cuál de los siguientes es el examen complementario de elección para el diagnóstico de la colecistitis aguda?",
     "opciones": {
       "a": "Colecistografía oral.",
@@ -307,8 +307,8 @@
   },
   {
     "id": "med_2016_019",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Trabajo de parto",
     "enunciado": "¿Qué indicación postural le brindaría a una mujer que inició el trabajo de parto con ruptura de membranas y cabeza fetal descendida?",
     "opciones": {
       "a": "Permitir libertad de movimientos.",
@@ -324,8 +324,8 @@
   },
   {
     "id": "med_2016_020",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": ["gastroenterologia", "imagenes"],
+    "submateria": ["Vía biliar", "Ecografía"],
     "enunciado": "¿Cuál de los siguientes es el examen complementario de elección para el diagnóstico de la colecistitis aguda?",
     "opciones": {
       "a": "Colecistografía oral.",
@@ -341,8 +341,8 @@
   },
   {
     "id": "med_2016_021",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Cuándo debería evaluar nuevamente a un bebé de 6 meses con problemas de alimentación luego de indicar pautas de lactancia y aporte de hierro?",
     "opciones": {
       "a": "A las 48 horas.",
@@ -358,8 +358,8 @@
   },
   {
     "id": "med_2016_022",
-    "materia": "💪 Reumatología",
-    "submateria": null,
+    "materia": "reumatologia",
+    "submateria": "Artritis reumatoide",
     "enunciado": "¿Qué articulaciones se afectan más frecuentemente en la artritis reumatoidea de larga evolución con dolor adyacente a la columna vertebral?",
     "opciones": {
       "a": "C7-D1 y D11-D12.",
@@ -375,8 +375,8 @@
   },
   {
     "id": "med_2016_023",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": ["cardiologia", "neurologia"],
+    "submateria": ["Síncope", "ECV"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un señor de 40 años que presentó una pérdida brusca de conocimiento con caída, sin movimientos tónicoclónicos ni relajación de esfínteres, que mejoró al recostarse?",
     "opciones": {
       "a": "Accidente isquémico transitorio.",
@@ -392,8 +392,8 @@
   },
   {
     "id": "med_2016_024",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Vigilancia epidemiológica", "Inmunodeprimidos no HIV"],
     "enunciado": "¿Cuál es la conducta adecuada respecto a la vacunación contra hepatitis B en un médico con esquema completo y anti HBs >10 mIU/ml a los dos meses?",
     "opciones": {
       "a": "Indicar nuevo esquema de vacunación.",
@@ -409,8 +409,8 @@
   },
   {
     "id": "med_2016_025",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": ["ginecologia", "medicinafamiliar"],
+    "submateria": ["Anticoncepción", "General"],
     "enunciado": "¿Qué método anticonceptivo recomendaría a una mujer de 38 años, 45 días postparto, no amamantando, tabaquista e IMC 30?",
     "opciones": {
       "a": "Anticonceptivo combinado inyectable mensual.",
@@ -426,8 +426,8 @@
   },
   {
     "id": "med_2016_026",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Patología de pared abdominal"],
     "enunciado": "¿Cuál es la conducta más adecuada con un paciente con diverticulitis sigmoidea complicada con pequeño absceso peridiverticular?",
     "opciones": {
       "a": "Tratamiento médico y colectomía total.",
@@ -443,8 +443,8 @@
   },
   {
     "id": "med_2016_027",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": ["neumonologia", "pediatria"],
+    "submateria": ["Asma", "Patología del aparato respiratorio"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un niño asmático de 8 años con tos seca persistente, cianosis perioral, tiraje generalizado y ruidos respiratorios disminuidos?",
     "opciones": {
       "a": "Neumotórax a tensión.",
@@ -460,8 +460,8 @@
   },
   {
     "id": "med_2016_028",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Trabajo de parto",
     "enunciado": "¿Cuál es la conducta más adecuada para el manejo del dolor en una mujer primigesta con trabajo de parto prolongado e intolerancia al dolor?",
     "opciones": {
       "a": "Esperar 3 cm de dilatación e indicar analgesia epidural.",
@@ -477,8 +477,8 @@
   },
   {
     "id": "med_2016_029",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
     "enunciado": "Paciente con anemia megaloblástica, B12 de 190 pg/ml y folato de 2 ng/ml. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Deficiencia de cobalamina.",
@@ -494,8 +494,8 @@
   },
   {
     "id": "med_2016_030",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿Cuál es la función del cuestionario CAGE en relación al alcoholismo?",
     "opciones": {
       "a": "Cuantificar la cantidad de alcohol consumida.",
@@ -509,11 +509,10 @@
     "fuente": "Examen Único Nacional 2016 – Ministerio de Salud de la Nación",
     "oficial": true
   },
-  
   {
     "id": "med_2016_031",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Cuál considera que es la valoración correcta del examen madurativo de un niño de 3 años y medio que no puede dibujar círculos, tomar el lápiz en forma correcta y construir una oración?",
     "opciones": {
       "a": "Tiene un examen madurativo normal.",
@@ -529,8 +528,8 @@
   },
   {
     "id": "med_2016_032",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": ["ginecologia", "infectologia"],
+    "submateria": ["Infecciones del tracto genital inferior", "ITS"],
     "enunciado": "¿Cuál de las siguientes serologías solicitaría a una mujer de 24 años durante una evaluación preconcepcional con vacunación al día y antecedente de varicela a los 5 años?",
     "opciones": {
       "a": "Varicela, sarampión, rubéola, VDRL, HIV, toxoplasmosis, anticore total.",
@@ -546,8 +545,8 @@
   },
   {
     "id": "med_2016_033",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": ["cardiologia", "infectologia"],
+    "submateria": ["Miocardiopatías", "Tropicales"],
     "enunciado": "¿Cuál es el trastorno electrocardiográfico más frecuente en la miocardiopatía producida por la Enfermedad de Chagas?",
     "opciones": {
       "a": "Bloqueo de rama izquierda.",
@@ -563,8 +562,8 @@
   },
   {
     "id": "med_2016_034",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿A qué niños solicitaría ecografía para rastreo de la displasia evolutiva de cadera (DEC)?",
     "opciones": {
       "a": "Todos los niños hasta los seis meses de edad.",
@@ -580,8 +579,8 @@
   },
   {
     "id": "med_2016_035",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "Virus respiratorios / Influenza",
     "enunciado": "¿En cuál de las siguientes situaciones se debe realizar diagnóstico virológico según las recomendaciones nacionales de infecciones respiratorias agudas (2015)?",
     "opciones": {
       "a": "Niño de 2 años con bronquitis sin insuficiencia respiratoria en control ambulatorio.",
@@ -597,8 +596,8 @@
   },
   {
     "id": "med_2016_036",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Qué le respondería a la madre de un niño de dos años sobre el proceso de control de esfínteres?",
     "opciones": {
       "a": "La primera señal es cuando el niño empieza a querer sacarse los pañales.",
@@ -614,8 +613,8 @@
   },
   {
     "id": "med_2016_037",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "urologia"],
+    "submateria": ["ITS", "Infecciones urinarias"],
     "enunciado": "¿Qué tratamiento antibiótico empírico elegiría para un paciente con uretritis?",
     "opciones": {
       "a": "Ceftriaxona 250 mg IM + 1 g de azitromicina VO única dosis.",
@@ -631,8 +630,8 @@
   },
   {
     "id": "med_2016_038",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
     "enunciado": "¿Qué estudio solicitaría a una mujer de 50 años con nódulo tiroideo único sólido de 3 cm y hormonas normales?",
     "opciones": {
       "a": "Centellograma con tecnecio 99.",
@@ -648,8 +647,8 @@
   },
   {
     "id": "med_2016_039",
-    "materia": "👂 Otorrinolaringología",
-    "submateria": null,
+    "materia": ["otorrinolaringologia", "pediatria"],
+    "submateria": ["Oído", "Patología infecciosa infantil"],
     "enunciado": "¿Qué antibiótico utilizaría para tratar un niño de 6 años con otitis media aguda con fiebre y otalgia de 48 horas?",
     "opciones": {
       "a": "Ceftriaxona.",
@@ -665,8 +664,8 @@
   },
   {
     "id": "med_2016_040",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": ["medicinalegal", "psiquiatria"],
+    "submateria": ["Normativa nacional y jurisdiccional", "Otras preguntas de psiquiatría"],
     "enunciado": "¿Cuál es la conducta más adecuada luego de proceder a la internación involuntaria de una mujer de 30 años con riesgo cierto e inminente para sí o para terceros?",
     "opciones": {
       "a": "Hacerle firmar consentimiento informado y contactar familiares por redes.",
@@ -682,8 +681,8 @@
   },
   {
     "id": "med_2016_041",
-    "materia": "🍏 Nutrición",
-    "submateria": null,
+    "materia": "nutricion",
+    "submateria": "Metabolismo lipídico",
     "enunciado": "¿Cuál es la razón por la cual se recomienda consumir pescado al menos dos veces por semana?",
     "opciones": {
       "a": "Por su alto contenido de omega 3, que aumenta el colesterol LDL y disminuye los triglicéridos.",
@@ -699,8 +698,8 @@
   },
   {
     "id": "med_2016_042",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": "neumonologia",
+    "submateria": "Asma",
     "enunciado": "¿Cómo caracteriza el cuadro asmático de un joven de 25 años con síntomas diarios, crisis nocturnas semanales y VEF1 del 80%?",
     "opciones": {
       "a": "Asma persistente leve.",
@@ -716,8 +715,8 @@
   },
   {
     "id": "med_2016_043",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["medicinafamiliar", "saludpublica"],
+    "submateria": ["General", "APS – Atención primaria de la salud"],
     "enunciado": "¿Qué examen de laboratorio solicitaría a un joven sano de 26 años con IMC 24 y TA 125/75 mmHg?",
     "opciones": {
       "a": "Hemograma.",
@@ -733,8 +732,8 @@
   },
   {
     "id": "med_2016_044",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Intoxicaciones",
     "enunciado": "¿Qué consejo sobre prevención de lesiones no intencionales privilegiaría en padres primerizos de un bebé de seis meses?",
     "opciones": {
       "a": "Colocar disyuntor de corriente y tapas en enchufes.",
@@ -750,8 +749,8 @@
   },
   {
     "id": "med_2016_045",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": ["ginecologia", "imagenes"],
+    "submateria": ["Patología benigna de mama", "Ecografía"],
     "enunciado": "¿Cuál de las siguientes afirmaciones respecto a la mamografía es correcta?",
     "opciones": {
       "a": "Debe realizarse entre los 55 y 75 años.",
@@ -767,8 +766,8 @@
   },
   {
     "id": "med_2016_046",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "gastroenterologia"],
+    "submateria": ["Patología del aparato digestivo", "Otras preguntas de gastroenterología"],
     "enunciado": "Niño sano de 6 meses con cólicos intermitentes y vómitos porráceos. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Cirugía inmediata tras estabilización.",
@@ -784,8 +783,8 @@
   },
   {
     "id": "med_2016_047",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Diabetes mellitus", "General"],
     "enunciado": "¿Cuál es el fármaco de primera línea en el tratamiento de la diabetes tipo 2?",
     "opciones": {
       "a": "Sulfonilureas.",
@@ -801,8 +800,8 @@
   },
   {
     "id": "med_2016_048",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "saludpublica"],
+    "submateria": ["Puerperio", "Otras preguntas de salud pública"],
     "enunciado": "¿Qué vacunación corresponde aplicar en el posparto inmediato de una mujer con control irregular y solo una dosis de triple viral en la infancia?",
     "opciones": {
       "a": "Ninguna, esquema completo.",
@@ -818,8 +817,8 @@
   },
   {
     "id": "med_2016_049",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": ["neumonologia", "medicinafamiliar"],
+    "submateria": ["Neumonía", "General"],
     "enunciado": "¿Qué paciente con neumonía aguda de la comunidad debe ser internado por mayor riesgo de mortalidad?",
     "opciones": {
       "a": "Hombre 50 años, somnoliento, FR 20, TA 120/70.",
@@ -835,8 +834,8 @@
   },
   {
     "id": "med_2016_050",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Trabajo de parto",
     "enunciado": "¿Qué procedimiento debe realizar al recibir a una primigesta de 26 años con embarazo de 37 semanas en la primera fase de dilatación?",
     "opciones": {
       "a": "Revisar historia perinatal, controlar TA, pulso, realizar rasurado y enema.",
@@ -852,8 +851,8 @@
   },
   {
     "id": "med_2016_051",
-    "materia": "👂 Otorrinolaringología",
-    "submateria": null,
+    "materia": "otorrinolaringologia",
+    "submateria": "Oído",
     "enunciado": "Señora de 74 años sin antecedentes patológicos refiere que su esposo dice que no oye bien. ¿Cuál sería la conducta inicial más adecuada?",
     "opciones": {
       "a": "Solicitar audiometría.",
@@ -869,8 +868,8 @@
   },
   {
     "id": "med_2016_052",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "¿Cuál de los siguientes marcadores es más sensible y específico para el diagnóstico de un infarto agudo de miocardio?",
     "opciones": {
       "a": "CPK.",
@@ -886,8 +885,8 @@
   },
   {
     "id": "med_2016_053",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": "ginecologia",
+    "submateria": "Patología benigna de mama",
     "enunciado": "¿Qué procedimiento realizaría en primera instancia en una señora que consulta por haberse encontrado un bulto en el pecho?",
     "opciones": {
       "a": "Examen mamario completo, palpación axilar y mamografía.",
@@ -903,8 +902,8 @@
   },
   {
     "id": "med_2016_054",
-    "materia": "🧴 Dermatología",
-    "submateria": null,
+    "materia": ["dermatologia", "pediatria"],
+    "submateria": ["Infecciosas", "Patología infecciosa infantil"],
     "enunciado": "Niña de 5 años con prurito anal y nasal, sueño intranquilo y gusanos finos visibles en región perianal. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Teniasis.",
@@ -920,8 +919,8 @@
   },
   {
     "id": "med_2016_055",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Tiroides", "General"],
     "enunciado": "¿Qué determinación solicitaría para el control de un paciente hipotiroideo en tratamiento?",
     "opciones": {
       "a": "TSH ultrasensible y T3.",
@@ -937,8 +936,8 @@
   },
   {
     "id": "med_2016_056",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "medicinafamiliar"],
+    "submateria": ["APS – Atención primaria de la salud", "General"],
     "enunciado": "¿Qué aspectos debe considerar durante la anamnesis en un paciente que refiere dolor?",
     "opciones": {
       "a": "Antigüedad, localización, irradiación, carácter, intensidad, atenuación o agravación.",
@@ -954,8 +953,8 @@
   },
   {
     "id": "med_2016_057",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "infectologia"],
+    "submateria": ["Infecciones congénitas y perinatales", "ITS"],
     "enunciado": "¿Cómo realizaría el seguimiento serológico de una embarazada de 28 semanas tratada por sífilis en el primer trimestre?",
     "opciones": {
       "a": "FTA-abs mensual hasta el parto.",
@@ -971,8 +970,8 @@
   },
   {
     "id": "med_2016_058",
-    "materia": "🦴 Traumatología",
-    "submateria": null,
+    "materia": "traumatologia",
+    "submateria": "Columna vertebral",
     "enunciado": "Hombre de 30 años atropellado por bicicleta con dolor cervical e irradiación a hombros. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Paracetamol 500 mg cada 8 h y control ambulatorio.",
@@ -988,8 +987,8 @@
   },
   {
     "id": "med_2016_059",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Otras preguntas de salud pública", "Inmunodeprimidos no HIV"],
     "enunciado": "¿En cuál de las siguientes situaciones está indicada la vacuna antigripal?",
     "opciones": {
       "a": "Niños en edad escolar.",
@@ -1005,8 +1004,8 @@
   },
   {
     "id": "med_2016_060",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
     "enunciado": "Hombre de 58 años con disnea progresiva, TA 170/60 mmHg, soplo proto–mesodiastólico 3/6 y pulso amplio y tenso. ¿Qué valvulopatía presenta?",
     "opciones": {
       "a": "Estenosis mitral.",
@@ -1022,8 +1021,8 @@
   },
   {
     "id": "med_2016_061",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Análisis de asociación",
     "enunciado": "¿En cuál de los siguientes tipos de estudio se utiliza exclusivamente la razón de probabilidades (Odds Ratio) para estimar la relación entre exposición y evento?",
     "opciones": {
       "a": "Estudios ecológicos.",
@@ -1039,8 +1038,8 @@
   },
   {
     "id": "med_2016_062",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "hematologia"],
+    "submateria": ["Complicaciones maternas en el embarazo", "Anemias carenciales"],
     "enunciado": "Gestante de 28 semanas con IMC 27, glucemia normal y leve anemia. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Derivar a embarazo de alto riesgo.",
@@ -1056,8 +1055,8 @@
   },
   {
     "id": "med_2016_063",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": ["psiquiatria", "medicinafamiliar"],
+    "submateria": ["Trastornos relacionados con sustancias", "General"],
     "enunciado": "¿Cuál de las siguientes personas tiene mayor dependencia al tabaco?",
     "opciones": {
       "a": "Juan prende el primer cigarrillo a los 15 minutos de levantarse.",
@@ -1073,8 +1072,8 @@
   },
   {
     "id": "med_2016_064",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
     "enunciado": "¿Cuál de las siguientes afirmaciones es correcta sobre los años de vida perdidos por muerte prematura (AVPMP)?",
     "opciones": {
       "a": "Las enfermedades perinatales y respiratorias son las que causan más AVPMP.",
@@ -1090,8 +1089,8 @@
   },
   {
     "id": "med_2016_065",
-    "materia": "🍏 Nutrición",
-    "submateria": null,
+    "materia": ["nutricion", "obstetricia"],
+    "submateria": ["Otras preguntas de nutrición", "Fisiología de la gestación"],
     "enunciado": "¿Cuál de las siguientes sustancias puede ser insuficiente en una embarazada que practica veganismo?",
     "opciones": {
       "a": "Vitamina D.",
@@ -1107,8 +1106,8 @@
   },
   {
     "id": "med_2016_066",
-    "materia": "🦴 Traumatología",
-    "submateria": null,
+    "materia": ["traumatologia", "cirugiageneral"],
+    "submateria": ["Miembro inferior", "Otras preguntas de cirugía general"],
     "enunciado": "Paciente con lesión por aplastamiento en miembro inferior y diagnóstico de síndrome compartimental. ¿Cuál es la conducta indicada?",
     "opciones": {
       "a": "Conducta expectante con analgésicos.",
@@ -1124,8 +1123,8 @@
   },
   {
     "id": "med_2016_067",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "Mujer de 24 años con 8 semanas de amenorrea, dolor abdominal difuso, febril y TA 90/50 mmHg. ¿Qué estudio brinda mayor certeza diagnóstica?",
     "opciones": {
       "a": "Culdocentesis.",
@@ -1141,8 +1140,8 @@
   },
   {
     "id": "med_2016_068",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "neumonologia"],
+    "submateria": ["Tuberculosis", "Tuberculosis"],
     "enunciado": "Paciente de 30 años con tuberculosis pulmonar en tratamiento hace un mes. ¿Cómo debe realizarse el seguimiento?",
     "opciones": {
       "a": "Control mensual con clínica, efectos adversos y baciloscopía al 2° mes.",
@@ -1158,8 +1157,8 @@
   },
   {
     "id": "med_2016_069",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
     "enunciado": "Mujer de 53 años hipertensa medicada con amlodipina y enalapril, aún con TA 155/102 mmHg. ¿Qué fármaco agregaría?",
     "opciones": {
       "a": "Atenolol.",
@@ -1175,8 +1174,8 @@
   },
   {
     "id": "med_2016_070",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "pediatria", "infectologia"],
+    "submateria": ["Infecciones congénitas y perinatales", "Neonatología", "ITS"],
     "enunciado": "Recién nacido hijo de madre tratada por sífilis en el 1° trimestre, VDRL no reactiva, ecografías normales. ¿Cuál es la conducta indicada?",
     "opciones": {
       "a": "Seguimiento con VDRL y penicilina benzatínica.",
@@ -1192,8 +1191,8 @@
   },
   {
     "id": "med_2016_071",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "saludpublica"],
+    "submateria": ["Tuberculosis", "Vigilancia epidemiológica"],
     "enunciado": "¿Cuál de los siguientes contactos de una persona enferma de tuberculosis debe evaluarse para controlar la transmisión?",
     "opciones": {
       "a": "Personas que tuvieron contacto estrecho más de 4 horas diarias.",
@@ -1209,8 +1208,8 @@
   },
   {
     "id": "med_2016_072",
-    "materia": "🫀 Cardiología",
-    "submateria": "Electrocardiografía",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
     "enunciado": "Observá el siguiente electrocardiograma. ¿Qué hallazgo describe mejor el trazado?",
     "opciones": {
       "a": "Extrasístole ventricular aislada.",
@@ -1227,8 +1226,8 @@
   },
   {
     "id": "med_2016_073",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": "neumonologia",
+    "submateria": "Pleura, mediastino y diafragma",
     "enunciado": "Niño con derrame paraneumónico. ¿Cuál de los siguientes análisis de líquido pleural corresponde a un trasudado?",
     "opciones": {
       "a": "Proteínas 3.5 g/dl; LDH 220 UI/L; cociente 0.8; glucosa 45; pH 7.25; leucocitos 1000.",
@@ -1244,8 +1243,8 @@
   },
   {
     "id": "med_2016_074",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
     "enunciado": "Mujer de 65 años en el 6º día postoperatorio de una neoplasia de colon presenta edema en pierna izquierda y disnea paroxística nocturna. ¿Cuál es el tratamiento indicado?",
     "opciones": {
       "a": "Aspirina.",
@@ -1261,8 +1260,8 @@
   },
   {
     "id": "med_2016_075",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
     "enunciado": "Niña de 8 meses con fiebre de 39ºC de tres días, vómitos y sin foco aparente. ¿Qué estudio solicitaría?",
     "opciones": {
       "a": "Radiografías de tórax y abdomen.",
@@ -1278,8 +1277,8 @@
   },
   {
     "id": "med_2016_076",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": "ginecologia",
+    "submateria": "Cáncer de endometrio",
     "enunciado": "Mujer de 65 años, obesa, sin TRH, con metrorragia de una semana. Útero levemente aumentado. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Cáncer de endometrio.",
@@ -1295,8 +1294,8 @@
   },
   {
     "id": "med_2016_077",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
     "enunciado": "Paciente de 35 años con pancreatitis aguda que al reiniciar la alimentación presenta dolor y colección de 4 cm. ¿Cuál es la conducta?",
     "opciones": {
       "a": "Desbridamiento quirúrgico y drenaje externo.",
@@ -1312,8 +1311,8 @@
   },
   {
     "id": "med_2016_078",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Tipos de estudios epidemiológicos",
     "enunciado": "¿Cuál de las siguientes afirmaciones sobre los estudios observacionales es correcta?",
     "opciones": {
       "a": "Los estudios de prevalencia establecen relación causa-efecto.",
@@ -1329,8 +1328,8 @@
   },
   {
     "id": "med_2016_079",
-    "materia": "⚖️ Medicina Legal",
-    "submateria": null,
+    "materia": ["medicinalegal", "cirugiageneral"],
+    "submateria": ["Otras", "Quemaduras"],
     "enunciado": "Durante un incendio, una persona es retirada en llamas del lugar. ¿Cuál es la conducta adecuada?",
     "opciones": {
       "a": "Hacerlo rodar y aplicar mantas húmedas.",
@@ -1346,8 +1345,8 @@
   },
   {
     "id": "med_2016_080",
-    "materia": "🫁 Neumonología",
-    "submateria": "Radiología torácica",
+    "materia": ["neumonologia", "imagenes"],
+    "submateria": ["Radiografía", "Pleura, mediastino y diafragma"],
     "enunciado": "Radiografía de tórax con opacidad total del hemitórax izquierdo, elevación diafragmática y desviación mediastinal ipsolateral. ¿Cuál es el diagnóstico?",
     "opciones": {
       "a": "Atelectasia pulmonar total.",
@@ -1363,8 +1362,8 @@
   },
   {
     "id": "med_2016_081",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Diabetes mellitus", "General"],
     "enunciado": "¿Con cuál de los siguientes resultados de laboratorio que trae un paciente considera necesario comenzar el tratamiento con insulina como primera elección?",
     "opciones": {
       "a": "Glucemia en ayunas de 180 mg/dl.",
@@ -1380,8 +1379,8 @@
   },
   {
     "id": "med_2016_082",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": ["neurologia", "medicinafamiliar"],
+    "submateria": ["Demencias", "General"],
     "enunciado": "¿Cuál es la conducta inicial más adecuada con una paciente de 80 años que es traída a la consulta por su hija quien le refiere que su madre se olvida de las cosas, se ha perdido en el barrio en una oportunidad y pasa la mayor parte del día mirando televisión?",
     "opciones": {
       "a": "Solicitar interconsulta con psiquiatría.",
@@ -1397,8 +1396,8 @@
   },
   {
     "id": "med_2016_083",
-    "materia": "🏥 Salud Pública",
-    "submateria": "Vigilancia epidemiológica",
+    "materia": ["saludpublica", "toxicologia"],
+    "submateria": ["Vigilancia epidemiológica", "Toxicología"],
     "enunciado": "¿De qué manera debería notificarse al Sistema Nacional de Vigilancia de la Salud un caso sospechoso de intoxicación por monóxido de carbono?",
     "opciones": {
       "a": "Individual e inmediata.",
@@ -1414,8 +1413,8 @@
   },
   {
     "id": "med_2016_084",
-    "materia": "🍏 Nutrición",
-    "submateria": null,
+    "materia": "nutricion",
+    "submateria": "Nutrición y obesidad",
     "enunciado": "¿Cuál de las siguientes opciones es correcta con respecto al plan alimentario de un paciente obeso?",
     "opciones": {
       "a": "Es necesario que realice las cuatro comidas diarias más dos colaciones e incorpore variedad de alimentos.",
@@ -1431,7 +1430,7 @@
   },
   {
     "id": "med_2016_085",
-    "materia": "🌸 Ginecología",
+    "materia": "ginecologia",
     "submateria": "Tamizaje cervical",
     "enunciado": "¿Cuál sería la conducta más adecuada en una mujer de 25 años sin controles ginecológicos periódicos, a quien se le realizó un PAP cuyo informe citológico es células escamosas atípicas (\"ASC-H\")?",
     "opciones": {
@@ -1448,8 +1447,8 @@
   },
   {
     "id": "med_2016_086",
-    "materia": "🔪 Cirugía General",
-    "submateria": "Trauma torácico",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
     "enunciado": "Paciente politraumatizado excitado, hipotenso, con dificultad respiratoria, contusiones en hemitórax derecho, enfisema subcutáneo, ingurgitación yugular y disminución de entrada de aire derecha. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Realizar entubación endotraqueal.",
@@ -1465,8 +1464,8 @@
   },
   {
     "id": "med_2016_087",
-    "materia": "🌸 Ginecología",
-    "submateria": "Vulvovaginitis / Climaterio",
+    "materia": "ginecologia",
+    "submateria": "Climaterio y menopausia",
     "enunciado": "Mujer de 54 años con dispareunia y ardor vaginal; menopausia a los 49. Mucosa pálida, flujo abundante inodoro, pH 5.5 y abundantes leucocitos sin tricomonas. ¿Conducta?",
     "opciones": {
       "a": "Tratamiento con óvulos con estrógenos.",
@@ -1482,8 +1481,8 @@
   },
   {
     "id": "med_2016_088",
-    "materia": "🚽 Urología",
-    "submateria": null,
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "¿Cómo interpreta un resultado elevado de antígeno prostático específico (APE o \"PSA\")?",
     "opciones": {
       "a": "Que el paciente puede tener próstata normal, hipertrofia prostática benigna, cáncer de próstata o prostatitis.",
@@ -1499,8 +1498,8 @@
   },
   {
     "id": "med_2016_089",
-    "materia": "🦠 Infectología",
-    "submateria": "Zoonosis",
+    "materia": ["infectologia", "saludpublica"],
+    "submateria": ["Zoonosis", "Vigilancia epidemiológica"],
     "enunciado": "¿Cuál es el ciclo animal que contribuye en mayor medida al mantenimiento de la hidatidosis en Argentina?",
     "opciones": {
       "a": "Perro-cabra.",
@@ -1516,8 +1515,8 @@
   },
   {
     "id": "med_2016_090",
-    "materia": "💭 Psiquiatría",
-    "submateria": "Psicofarmacología en el adulto mayor",
+    "materia": ["psiquiatria", "medicinafamiliar"],
+    "submateria": ["Otras preguntas de psiquiatría", "General"],
     "enunciado": "¿Cuáles conductas son apropiadas al prescribir psicofármacos en un adulto mayor?",
     "opciones": {
       "a": "Comenzar con un 25-50% de la dosis estándar, elegir el fármaco con menor potencial tóxico.",
@@ -1533,8 +1532,8 @@
   },
   {
     "id": "med_2016_091",
-    "materia": "⚖️ Medicina Legal",
-    "submateria": "Derechos del paciente",
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
     "enunciado": "¿Cuál es correcta respecto al consentimiento informado según la Ley 26.529 (Cap. III)?",
     "opciones": {
       "a": "Toda actuación profesional en el ámbito médico sanitario, sea público o privado, requiere el previo consentimiento informado del paciente.",
@@ -1550,7 +1549,7 @@
   },
   {
     "id": "med_2016_092",
-    "materia": "🫀 Cardiología",
+    "materia": "cardiologia",
     "submateria": "Insuficiencia cardíaca",
     "enunciado": "¿Cuál de los siguientes beneficios puede obtenerse al agregar digoxina en un paciente de 65 años con insuficiencia cardíaca y deterioro sistólico, en ritmo sinusal, medicado con IECA, betabloqueante y diurético?",
     "opciones": {
@@ -1567,8 +1566,8 @@
   },
   {
     "id": "med_2016_093",
-    "materia": "👨‍👩‍👧‍👦 Medicina Familiar",
-    "submateria": "Salud del adolescente",
+    "materia": "medicinafamiliar",
+    "submateria": "General",
     "enunciado": "Adolescente de 17 años con dolor torácico autolimitado; controles normales. La madre pregunta si puede estar presente en la entrevista. ¿Respuesta más adecuada?",
     "opciones": {
       "a": "Sí, los padres siempre deben estar presentes.",
@@ -1584,8 +1583,8 @@
   },
   {
     "id": "med_2016_094",
-    "materia": "🤰 Obstetricia",
-    "submateria": "Diabetes gestacional",
+    "materia": ["obstetricia", "endocrinologia"],
+    "submateria": ["Diabetes gestacional", "Diabetes mellitus"],
     "enunciado": "¿Cuál de los siguientes puede ser considerado un factor de riesgo para diabetes gestacional?",
     "opciones": {
       "a": "Edad mayor o igual a 25 años.",
@@ -1601,8 +1600,8 @@
   },
   {
     "id": "med_2016_095",
-    "materia": "🦠 Infectología",
-    "submateria": "Enfermedades transmitidas por vectores",
+    "materia": "infectologia",
+    "submateria": "Tropicales",
     "enunciado": "Joven sano de 28 años, de Córdoba, con 48 h de fiebre, cefalea, dolor retro-ocular, exantema tenue en tronco, náuseas y dolor de espalda; sin viajes. ¿Diagnóstico más probable?",
     "opciones": {
       "a": "Infección por enterovirus.",
@@ -1618,8 +1617,8 @@
   },
   {
     "id": "med_2016_096",
-    "materia": "💩 Gastroenterología",
-    "submateria": "Colonoscopia / pólipos",
+    "materia": "gastroenterologia",
+    "submateria": "Cáncer colorrectal",
     "enunciado": "Paciente de 65 años con pólipo pediculado de 1,5 cm resecado por videocolonoscopía; AP: carcinoma intramucoso con márgenes libres; sin otras lesiones. ¿Conducta?",
     "opciones": {
       "a": "Realizar resección colónica con criterio oncológico.",
@@ -1635,8 +1634,8 @@
   },
   {
     "id": "med_2016_097",
-    "materia": "🧴 Dermatología",
-    "submateria": "Acné",
+    "materia": "dermatologia",
+    "submateria": "Dermatología y sistémicas",
     "enunciado": "Joven de 18 años con acné de larga data refractario a cremas y pastillas; pápulas, comedones y pústulas en cara y tronco superior; caspa en cuero cabelludo. ¿Tratamiento?",
     "opciones": {
       "a": "Minociclina 100 mg/día vía oral y peróxido de benzoilo local.",
@@ -1652,8 +1651,8 @@
   },
   {
     "id": "med_2016_098",
-    "materia": "🧸 Pediatría",
-    "submateria": "Maltrato infantil",
+    "materia": ["pediatria", "medicinalegal"],
+    "submateria": ["Maltrato y abuso sexual", "Normativa nacional y jurisdiccional"],
     "enunciado": "¿Cuál de las siguientes afirmaciones respecto al maltrato infantil es correcta?",
     "opciones": {
       "a": "Debe sospecharse maltrato cuando una lesión es incompatible con la historia narrada por los padres del niño.",
@@ -1669,8 +1668,8 @@
   },
   {
     "id": "med_2016_099",
-    "materia": "🏥 Salud Pública",
-    "submateria": "Actividad física",
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿Cuál de las siguientes actividades físicas requiere más gasto energético (actividad igual o mayor a 6 mets)?",
     "opciones": {
       "a": "Navegar.",
@@ -1686,8 +1685,8 @@
   },
   {
     "id": "med_2016_100",
-    "materia": "🧸 Pediatría",
-    "submateria": "Hipertensión arterial pediátrica",
+    "materia": "pediatria",
+    "submateria": "Cardiopatías congénitas",
     "enunciado": "Niño de 3 años y 3 meses con TA por debajo del percentilo 90 para edad, peso e IMC. ¿Conducta más adecuada?",
     "opciones": {
       "a": "Indicar dieta hiposódica y control de la TA cada dos años.",
