@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (FINAL AZUL FORMAL)
+   📚 MEbank 3.0 – Práctica por materia (Con Ayuda/Info)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -37,11 +37,43 @@ function renderChoice() {
   }
 
   app.innerHTML = `
+    <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
+        <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+            <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
+            <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
+            
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">▶ Iniciar práctica</div>
+                <div style="font-size:14px; color:#475569;">Crea un examen mezclando <b>todas</b> las preguntas seleccionadas (nuevas y viejas). Ideal para repaso general.</div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">⏩ Resolver pendientes</div>
+                <div style="font-size:14px; color:#475569;">Filtra solo las preguntas que <b>nunca respondiste</b>. Ideal para avanzar en la materia sin repetir.</div>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">🧠 Repasar incorrectas</div>
+                <div style="font-size:14px; color:#475569;">Crea un examen exclusivo con las preguntas que tenés registradas como <b>Incorrectas</b>. Ideal para corregir errores.</div>
+            </div>
+
+            <div style="text-align:right;">
+                <button class="btn-main" onclick="toggleInfoModal()" style="width:auto; padding:8px 20px;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
     <div id="choice-shell" class="card fade" style="max-width:900px;margin:auto;">
       
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
-        <div>
-          <h2 style="margin:0 0 6px 0;">📚 Práctica por materia</h2>
+        <div style="flex:1;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <h2 style="margin:0;">📚 Práctica por materia</h2>
+            <button onclick="toggleInfoModal()" 
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+              ?
+            </button>
+          </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
              Elegí una materia y opcionalmente uno o más subtemas.
           </p>
@@ -101,6 +133,13 @@ function renderChoiceList() {
 }
 
 /* --- EVENTOS --- */
+function toggleInfoModal() {
+    const el = document.getElementById("infoModal");
+    if(el) {
+        el.style.display = (el.style.display === "none") ? "flex" : "none";
+    }
+}
+
 function onChangeChoiceOrder(val) {
   CHOICE_ORDER = val;
   localStorage.setItem("MEbank_ChoiceOrder_v1", val);
@@ -205,14 +244,13 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LÓGICA DE BOTONES ---
+  // --- BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
   
   const pendientes = stats.total - (stats.ok + stats.bad);
 
-  // ESTILO ÚNICO (Azul Uniforme)
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
   let botonesHTML = `
@@ -237,7 +275,7 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // --- TOOLS (Sin Emojis) ---
+  // --- TOOLS ---
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
