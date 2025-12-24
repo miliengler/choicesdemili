@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Reactividad Total)
+   📚 MEbank 3.0 – Práctica por materia (Textos Help Corregidos)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -38,22 +38,23 @@ function renderChoice() {
   app.innerHTML = `
     <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
         <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+            
             <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
             <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
             
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
-                <div style="font-size:14px; color:#475569;">Crea un examen mezclando <b>todas</b> las preguntas seleccionadas. Ideal para repaso general.</div>
+                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (nuevas y ya respondidas). Ideal para repaso general.</div>
             </div>
 
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏩ Resolver pendientes</div>
-                <div style="font-size:14px; color:#475569;">Filtra solo las preguntas que <b>nunca respondiste</b> de la selección actual.</div>
+                <div style="font-size:14px; color:#475569;">Selecciona únicamente las preguntas que <b>aún no respondiste</b>. Ideal para avanzar con material nuevo.</div>
             </div>
 
             <div style="margin-bottom:20px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
-                <div style="font-size:14px; color:#475569;">Crea un examen exclusivo con las preguntas que tenés registradas como <b>Incorrectas</b> en la selección actual.</div>
+                <div style="font-size:14px; color:#475569;">Genera una práctica exclusiva con las preguntas registradas como <b>Incorrectas</b>. Ideal para corregir errores y fijar conceptos.</div>
             </div>
 
             <div style="text-align:right;">
@@ -152,19 +153,13 @@ function toggleMateriaChoice(slug) {
   renderChoiceList(); 
 }
 
-/* --- LÓGICA DE ACTUALIZACIÓN DE BOTONES (MAGIC ✨) --- */
+/* --- ACTUALIZACIÓN DE BOTONES (Reactividad) --- */
 function updateActionButtons(slug) {
-    // 1. Ver qué está tildado
     const checks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
     const seleccionados = Array.from(checks).map(ch => ch.value);
-    
-    // 2. Definir alcance (Si está vacío es TODO)
     const scope = seleccionados.length ? seleccionados : null;
-
-    // 3. Filtrar preguntas
     const questions = getQuestionsByMateria(slug, scope);
 
-    // 4. Calcular stats al vuelo
     let ok = 0, bad = 0;
     const total = questions.length;
     const progMat = PROG[slug] || {};
@@ -177,13 +172,12 @@ function updateActionButtons(slug) {
         }
     });
 
-    // 5. Generar y reemplazar HTML
     const html = getButtonsHTML(slug, { total, ok, bad });
     const container = document.getElementById(`actions-${slug}`);
     if(container) container.innerHTML = html;
 }
 
-/* --- GENERADOR DE BOTONES (Shared Logic) --- */
+/* --- GENERADOR DE BOTONES --- */
 function getButtonsHTML(slug, stats) {
     const hayRespondidas = (stats.ok + stats.bad) > 0;
     const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
@@ -293,7 +287,6 @@ function renderMateriaExpanded(m, term, stats) {
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
 
-    // AGREGADO: onchange llama a updateActionButtons
     return `
       <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:pointer;">
         <span>
@@ -372,7 +365,6 @@ function getMateriaNombre(slug) {
   return mat ? mat.name : slug;
 }
 
-/* --- INICIAR --- */
 function iniciarPracticaMateria(mSlug, modo) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
@@ -383,19 +375,15 @@ function iniciarPracticaMateria(mSlug, modo) {
   let titulo = `Práctica – ${getMateriaNombre(mSlug)}`;
   
   if (modo === "reanudar") {
-      // PENDIENTES
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => !progMat[q.id] || (progMat[q.id].status !== 'ok' && progMat[q.id].status !== 'bad'));
       titulo += " (Pendientes)";
-      
       if (!preguntas.length) return alert("¡Excelente! No hay preguntas pendientes con esta selección.");
   } 
   else if (modo === "repaso") {
-      // INCORRECTAS
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => progMat[q.id] && progMat[q.id].status === 'bad');
       titulo += " (Repaso de Incorrectas)";
-      
       if (!preguntas.length) return alert("¡Bien hecho! No tenés respuestas incorrectas registradas.");
   }
 
