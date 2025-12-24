@@ -1,9 +1,10 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Híbrido)
+   📚 MEbank 3.0 – Práctica por materia (Con Buscador Pro)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
-let choiceOpenSlug = null;
+let choiceOpenSlug = null; // Para abrir/cerrar manualmente
+let choiceSearchTerm = ""; // Término de búsqueda actual
 
 /* --- CÍRCULO DE PROGRESO --- */
 function renderProgressCircle(percent) {
@@ -26,36 +27,81 @@ function renderProgressCircle(percent) {
 /* --- RENDER PRINCIPAL --- */
 function renderChoice() {
   const app = document.getElementById("app");
-  const subjects = getOrderedSubjects();
+  
+  // 1. Filtramos y Ordenamos según búsqueda
+  const subjects = getFilteredSubjects();
 
   app.innerHTML = `
     <div class="card fade" style="max-width:900px;margin:auto;">
-      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;">
-        <div>
-          <h2 style="margin-bottom:6px;">Práctica por materia</h2>
-          <p style="color:#64748b;margin:0;">Elegí una materia y opcionalmente uno o más subtemas.</p>
-        </div>
-        <div style="text-align:right;">
-          <label style="font-size:13px;color:#64748b;display:block;margin-bottom:4px;">Ordenar materias</label>
-          <select id="choiceOrderSelect" style="padding:6px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:14px;min-width:160px;text-align:center;" onchange="onChangeChoiceOrder(this.value)">
+      
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
+        <h2 style="margin:0;">📚 Práctica por materia</h2>
+        <button class="btn-small" onclick="renderHome()" style="background:#f1f5f9; border:1px solid #cbd5e1;">
+           ⬅ Volver al inicio
+        </button>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;">
+        <input type="text" 
+               placeholder="🔍 Buscar materia o tema (ej: vacunas)..." 
+               value="${choiceSearchTerm}"
+               oninput="onSearchChoice(this.value)"
+               style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:15px;">
+        
+        <select id="choiceOrderSelect" 
+                style="padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; background:white;" 
+                onchange="onChangeChoiceOrder(this.value)">
             <option value="az" ${CHOICE_ORDER === "az" ? "selected" : ""}>A → Z</option>
             <option value="progreso" ${CHOICE_ORDER === "progreso" ? "selected" : ""}>Por progreso</option>
-          </select>
-        </div>
+        </select>
       </div>
-      <div style="margin-top:20px;">
-        ${subjects.map(renderMateriaRow).join("")}
+
+      <div style="margin-top:10px;">
+        ${subjects.length > 0 
+           ? subjects.map(m => renderMateriaRow(m)).join("") 
+           : `<div style="text-align:center; color:#64748b; padding:20px;">No se encontraron materias ni temas.</div>`
+        }
       </div>
-      <div style="margin-top:24px;text-align:center;">
-        <button class="btn-small" onclick="renderHome()">⬅ Volver al inicio</button>
-      </div>
+
     </div>
   `;
+  
+  // Auto-focus al buscador si hay texto (para no perder foco al escribir)
+  if (choiceSearchTerm) {
+      const input = document.querySelector("input[type='text']");
+      if(input) {
+          input.focus();
+          // Truco para poner el cursor al final
+          const val = input.value; input.value = ''; input.value = val; 
+      }
+  }
 }
 
-/* --- ORDENAMIENTO --- */
-function getOrderedSubjects() {
-  const list = [...BANK.subjects];
+/* --- LÓGICA DE BÚSQUEDA --- */
+function onSearchChoice(val) {
+    choiceSearchTerm = val; // Guardamos lo que escribe
+    renderChoice();         // Re-renderizamos instantáneamente
+}
+
+function getFilteredSubjects() {
+  let list = [...BANK.subjects];
+  const term = normalize(choiceSearchTerm);
+
+  // FILTRO
+  if (term) {
+    list = list.filter(subj => {
+        // 1. Coincide Nombre Materia?
+        const matchName = normalize(subj.name).includes(term);
+        
+        // 2. Coincide algún Subtema?
+        const subtemas = BANK.subsubjects[subj.slug] || [];
+        const matchSub = subtemas.some(s => normalize(s).includes(term));
+
+        return matchName || matchSub;
+    });
+  }
+
+  // ORDEN
   if (CHOICE_ORDER === "progreso") {
     return list.sort((a, b) => {
       const pa = getMateriaStats(a.slug).percent || 0;
@@ -70,15 +116,103 @@ function getOrderedSubjects() {
   });
 }
 
-function onChangeChoiceOrder(value) {
-  CHOICE_ORDER = value;
-  localStorage.setItem("MEbank_ChoiceOrder_v1", value);
+/* --- RENDER FILA --- */
+function renderMateriaRow(m) {
+  const stats = getMateriaStats(m.slug);
+  const term = normalize(choiceSearchTerm);
+  
+  // LÓGICA DE APERTURA AUTOMÁTICA (Opción B)
+  // Si hay búsqueda y esta materia pasó el filtro, revisamos si es por subtema
+  let forceOpen = false;
+  if (term) {
+      // Si el término está en un subtema, forzamos abrir
+      const subtemas = BANK.subsubjects[m.slug] || [];
+      if (subtemas.some(s => normalize(s).includes(term))) {
+          forceOpen = true;
+      }
+  }
+
+  const estaAbierta = forceOpen || (choiceOpenSlug === m.slug);
+
+  return `
+    <div class="materia-block" style="border:1px solid ${forceOpen ? '#3b82f6' : '#e2e8f0'}; border-radius:10px; padding:14px; margin-bottom:12px; background:${forceOpen ? '#eff6ff' : 'white'};">
+      
+      <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleMateriaChoice('${m.slug}')">
+        <div>
+          <b>${m.name}</b>
+          <div style="font-size:12px; color:#64748b;">${stats.total} preguntas disponibles</div>
+        </div>
+        <div style="width:42px;height:42px;">${renderProgressCircle(stats.percent)}</div>
+      </div>
+
+      ${estaAbierta ? renderMateriaExpanded(m, term) : ""}
+    </div>
+  `;
+}
+
+function toggleMateriaChoice(slug) {
+  // Si el usuario toca manualmente, alternamos. 
+  // (Si hay búsqueda, esto permite cerrar una forzada si quiere)
+  choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
   renderChoice();
 }
 
-/* --- STATS (MODIFICADO) --- */
+/* --- SUBTEMAS --- */
+function renderMateriaExpanded(m, term) {
+  const slug = m.slug;
+  let subtemasTexto = BANK.subsubjects[slug] || [];
+
+  // FILTRADO INTERNO DE SUBTEMAS
+  // Si hay búsqueda, solo mostramos los subtemas que coinciden
+  // (A menos que la coincidencia haya sido por el nombre de la materia, ahí mostramos todo)
+  if (term) {
+      const matchName = normalize(m.name).includes(term);
+      if (!matchName) {
+          // Si la materia NO coincide por nombre, filtramos sus hijos
+          subtemasTexto = subtemasTexto.filter(s => normalize(s).includes(term));
+      }
+  }
+
+  const items = subtemasTexto.map(nombreSub => {
+    const subSlug = normalize(nombreSub);
+    const count = contarPreguntasMateriaSub(slug, subSlug);
+    
+    // Resaltar texto si coincide
+    let displayName = nombreSub;
+    if (term && normalize(nombreSub).includes(term)) {
+        displayName = `<b>${nombreSub}</b>`;
+    }
+
+    return `
+      <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:pointer;">
+        <span>
+          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" style="margin-right:8px;">
+          ${displayName}
+        </span>
+        <span style="color:#64748b; font-size:12px;">(${count})</span>
+      </label>
+    `;
+  }).join("");
+
+  return `
+    <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
+      <p style="font-size:13px; color:#64748b; margin-bottom:6px;">
+         ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas.'}
+      </p>
+      
+      <div style="max-height:300px; overflow:auto; margin-bottom:10px; padding-right:4px;">
+         ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin subtemas coincidentes.</div>'}
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:8px; margin-top:8px;">
+        <button class="btn-main" onclick="iniciarPracticaMateria('${slug}')">▶ Iniciar práctica</button>
+      </div>
+    </div>
+  `;
+}
+
+/* --- STATS & UTILS --- */
 function getMateriaStats(slug) {
-  // ⚠️ Filtro Híbrido
   const total = BANK.questions.filter(q => {
       if (Array.isArray(q.materia)) return q.materia.includes(slug);
       return q.materia === slug;
@@ -94,61 +228,6 @@ function getMateriaStats(slug) {
   return { total, correctas, percent };
 }
 
-/* --- RENDER FILA --- */
-function renderMateriaRow(m) {
-  const stats = getMateriaStats(m.slug);
-  const estaAbierta = choiceOpenSlug === m.slug;
-
-  return `
-    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin-bottom:12px;">
-      <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="toggleMateriaChoice('${m.slug}')">
-        <div>
-          <b>${m.name}</b>
-          <div style="font-size:12px;color:#64748b;">${stats.total} preguntas disponibles</div>
-        </div>
-        <div style="width:42px;height:42px;">${renderProgressCircle(stats.percent)}</div>
-      </div>
-      ${estaAbierta ? renderMateriaExpanded(m) : ""}
-    </div>
-  `;
-}
-
-function toggleMateriaChoice(slug) {
-  choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
-  renderChoice();
-}
-
-/* --- SUBTEMAS --- */
-function renderMateriaExpanded(m) {
-  const slug = m.slug;
-  const subtemasTexto = BANK.subsubjects[slug] || [];
-
-  const items = subtemasTexto.map(nombreSub => {
-    const subSlug = normalize(nombreSub);
-    const count = contarPreguntasMateriaSub(slug, subSlug);
-    return `
-      <label style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:14px;border-bottom:1px dashed #e2e8f0;">
-        <span>
-          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" style="margin-right:6px;">
-          ${nombreSub}
-        </span>
-        <span style="color:#64748b;font-size:12px;">(${count})</span>
-      </label>
-    `;
-  }).join("");
-
-  return `
-    <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e8f0;">
-      <p style="font-size:13px;color:#64748b;margin-bottom:6px;">Podés seleccionar uno o más subtemas.</p>
-      <div style="max-height:220px;overflow:auto;margin-bottom:10px;padding-right:4px;">${items}</div>
-      <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:8px;">
-        <button class="btn-main" onclick="iniciarPracticaMateria('${slug}')">▶ Iniciar práctica</button>
-      </div>
-    </div>
-  `;
-}
-
-// ⚠️ Filtro Híbrido
 function contarPreguntasMateriaSub(mSlug, subSlug) {
   return BANK.questions.filter(q => {
     const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
@@ -156,12 +235,14 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
   }).length;
 }
 
-/* --- INICIAR --- */
 function iniciarPracticaMateria(mSlug) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
 
-  // Usa la función híbrida de bank.js
+  // Si no seleccionó nada, pero filtró por subtemas, quizás podríamos seleccionar todo lo visible.
+  // Pero por seguridad, mantenemos la lógica: si no selecciona nada, son TODOS los de la materia (o filtrados).
+  // Para MEbank 3.0: Si no hay selección, mandamos null (que significa "Toda la materia").
+  
   const preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
   if (!preguntas.length) {
