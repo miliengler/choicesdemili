@@ -1,167 +1,175 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Final Pulido
+   📊 ESTADÍSTICAS GLOBALES – Versión Robusta y Segura
    ========================================================== */
 
 let STATS_ORDER = "az";
 let statsSearchTerm = "";
 
 function renderStats() {
-  const app = document.getElementById("app");
+  try {
+      const app = document.getElementById("app");
+      if (!app) return;
 
-  // --- 1. CÁLCULOS GLOBALES ---
-  let totalPreguntas = 0;
-  let totalRespondidas = 0;
-  let totalCorrectas = 0;
-  let totalIncorrectas = 0;
+      // --- 1. CÁLCULOS GLOBALES ---
+      let totalPreguntas = 0;
+      let totalRespondidas = 0;
+      let totalCorrectas = 0;
+      let totalIncorrectas = 0;
 
-  BANK.subjects.forEach(m => {
-    const preguntasMateria = BANK.questions.filter(q => q.materia === m.slug);
-    totalPreguntas += preguntasMateria.length;
+      // Usamos optional chaining (?.) para evitar errores si BANK no cargó
+      (BANK?.subjects || []).forEach(m => {
+        const preguntasMateria = (BANK.questions || []).filter(q => q.materia === m.slug);
+        totalPreguntas += preguntasMateria.length;
 
-    const progresoMateria = PROG[m.slug] || {};
-    Object.values(progresoMateria).forEach(p => {
-      if (p.status === "ok" || p.status === "bad") {
-        totalRespondidas++;
-        if (p.status === "ok") totalCorrectas++;
-        if (p.status === "bad") totalIncorrectas++;
-      }
-    });
-  });
+        const progresoMateria = PROG[m.slug] || {};
+        Object.values(progresoMateria).forEach(p => {
+          if (p.status === "ok" || p.status === "bad") {
+            totalRespondidas++;
+            if (p.status === "ok") totalCorrectas++;
+            if (p.status === "bad") totalIncorrectas++;
+          }
+        });
+      });
 
-  const totalSinResponder = totalPreguntas - totalRespondidas;
-  const porcentajeProgreso = totalPreguntas > 0 
-    ? Math.round((totalCorrectas / totalPreguntas) * 100) 
-    : 0;
+      const totalSinResponder = totalPreguntas - totalRespondidas;
+      const porcentajeProgreso = totalPreguntas > 0 
+        ? Math.round((totalCorrectas / totalPreguntas) * 100) 
+        : 0;
 
-  // --- 2. ACTIVIDAD SEMANAL ---
-  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
-  const today = new Date();
-  let weeklyTotalCorrect = 0;
+      // --- 2. ACTIVIDAD SEMANAL ---
+      const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+      const today = new Date();
+      let weeklyTotalCorrect = 0;
 
-  const weekList = Array.from({ length: 7 }).map((_, i) => {
-    const d = new Date(today);
-    d.setDate(today.getDate() - i);
-    const key = d.toISOString().split('T')[0]; 
-    const count = STATS_DAILY[key] || 0;
-    if(i < 7) weeklyTotalCorrect += count;
+      const weekList = Array.from({ length: 7 }).map((_, i) => {
+        const d = new Date(today);
+        d.setDate(today.getDate() - i);
+        const key = d.toISOString().split('T')[0]; 
+        const count = STATS_DAILY[key] || 0;
+        if(i < 7) weeklyTotalCorrect += count;
 
-    const dd = String(d.getDate()).padStart(2, '0');
-    const mm = String(d.getMonth() + 1).padStart(2, '0');
-    const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
-    const checkIcon = count > 0 ? "✅" : "⬜";
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
+        const checkIcon = count > 0 ? "✅" : "⬜";
 
-    return `
-      <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
-        <span style="color:#64748b">➤ ${dd}/${mm}</span>
-        <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
-      </div>`;
-  }).reverse().join("");
+        return `
+          <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
+            <span style="color:#64748b">➤ ${dd}/${mm}</span>
+            <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
+          </div>`;
+      }).reverse().join("");
 
-  // --- 3. RENDERIZADO PRINCIPAL ---
-  app.innerHTML = `
-    <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
-      
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
-        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
-           ⬅ Volver
-        </button>
-      </div>
-      
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
-            <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
-            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
+      // --- 3. RENDERIZADO PRINCIPAL ---
+      app.innerHTML = `
+        <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
+          
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+            <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
+            <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
+               ⬅ Volver
+            </button>
+          </div>
+          
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
+            <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+                <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
+                <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
+            </div>
+            <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+                <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
+                <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
+            </div>
+            <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
+                <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
+                <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:10px; text-align:left;">
+            <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+                <span style="color:#334155; font-weight:600;">Progreso total</span>
+                <span style="color:#16a34a; font-weight:bold;">${porcentajeProgreso}%</span>
+            </div>
+            <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
+                <div style="width:${porcentajeProgreso}%; background:#16a34a; height:100%;"></div>
+            </div>
+            <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
+               Preguntas aprendidas sobre el total (${totalPreguntas})
+            </div>
+          </div>
+
+          <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+          <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
+          <div style='text-align:left; max-width:300px; margin:auto;'>
+            ${weekList}
+          </div>
+
+          <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
+            ${weeklyTotalCorrect > 0 
+               ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Sigue así!` 
+               : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
+          </div>
+
+          <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+          <button class='btn-small' style="background:#fff; border-color:#cbd5e1; color:#64748b;" onclick='resetGlobalStats()'>
+              🗑 Reiniciar todo el progreso
+          </button>
+
         </div>
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
-            <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
-            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
+
+        <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
+          <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
+          
+          <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
+             <input type="text" 
+                    placeholder="🔍 Buscar materia..." 
+                    value="${statsSearchTerm}"
+                    oninput="onSearchStats(this.value)"
+                    style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
+             
+             <select onchange="onChangeStatsOrder(this.value)" 
+                     style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
+                 <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
+                 <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
+                 <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
+             </select>
+          </div>
+          
+          <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
+              </ul>
         </div>
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
-            <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
-            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
+        
+        <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
+           Vos podés ❤️
         </div>
-      </div>
+      `;
 
-      <div style="margin-bottom:10px; text-align:left;">
-        <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
-            <span style="color:#334155; font-weight:600;">Progreso total</span>
-            <span style="color:#16a34a; font-weight:bold;">${porcentajeProgreso}%</span>
-        </div>
-        <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
-            <div style="width:${porcentajeProgreso}%; background:#16a34a; height:100%;"></div>
-        </div>
-        <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
-           Preguntas aprendidas sobre el total (${totalPreguntas})
-        </div>
-      </div>
+      renderMateriasList();
 
-      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
-
-      <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
-      <div style='text-align:left; max-width:300px; margin:auto;'>
-        ${weekList}
-      </div>
-
-      <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
-        ${weeklyTotalCorrect > 0 
-           ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Sigue así!` 
-           : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
-      </div>
-
-      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
-
-      <button class='btn-small' style="background:#fff; border-color:#cbd5e1; color:#64748b;" onclick='resetGlobalStats()'>
-          🗑 Reiniciar todo el progreso
-      </button>
-
-    </div>
-
-    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
-      <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
-      
-      <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
-         <input type="text" 
-                placeholder="🔍 Buscar materia..." 
-                value="${statsSearchTerm}"
-                oninput="onSearchStats(this.value)"
-                style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
-         
-         <select onchange="onChangeStatsOrder(this.value)" 
-                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
-             <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
-             <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
-             <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
-         </select>
-      </div>
-      
-      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
-          </ul>
-    </div>
-    
-    <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
-       Vos podés ❤️
-    </div>
-  `;
-
-  renderMateriasList();
+  } catch (err) {
+      console.error(err);
+      alert("Error cargando estadísticas: " + err.message);
+  }
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Botones Angostos & Subtemas Clean)
+   📋 Lista de Materias (Layout Ajustado & Seguro)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
   if (!container) return;
   
-  let list = [...BANK.subjects];
+  let list = [...(BANK?.subjects || [])];
   const term = normalize(statsSearchTerm);
 
   if (term) list = list.filter(m => normalize(m.name).includes(term));
 
   list.sort((a, b) => {
     const getPct = (slug) => {
-        const total = BANK.questions.filter(q => q.materia === slug).length;
+        const total = (BANK?.questions || []).filter(q => q.materia === slug).length;
         if (total === 0) return 0;
         const p = PROG[slug] || {};
         let ok = 0, bad = 0;
@@ -186,7 +194,7 @@ function renderMateriasList() {
   }
 
   const listHTML = list.map(m => {
-    const preguntas = BANK.questions.filter(q => q.materia === m.slug);
+    const preguntas = (BANK?.questions || []).filter(q => q.materia === m.slug);
     const totalM = preguntas.length;
     
     if (totalM === 0) return ""; 
@@ -206,8 +214,10 @@ function renderMateriasList() {
     const insights = getSubjectInsights(m.slug, m.name, datos);
     const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
 
-    // ESTILO COMÚN ANGOSTO
-    // Quitamos min-width grande, usamos padding lateral justo y texto unificado.
+    // Protección de comillas en nombres para los onclick
+    const safeName = m.name.replace(/'/g, "\\'"); 
+
+    // Estilos de Botones
     const btnBase = "width:100%; min-width:110px; font-size:12px; padding: 6px 10px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155; white-space:nowrap;";
 
     return `
@@ -248,12 +258,12 @@ function renderMateriasList() {
                </button>
                
                <button style="${btnBase} background: #fefce8; border: 1px solid #fde047;"
-                       onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
+                       onclick="checkAndGoToNotes('${m.slug}', '${safeName}')">
                  📝 Mis notas
                </button>
 
                <button style="${btnBase} background: #fef2f2; border: 1px solid #fca5a5;"
-                       onclick="resetSubjectStats('${m.slug}', '${m.name}')">
+                       onclick="resetSubjectStats('${m.slug}', '${safeName}')">
                  🗑 Reiniciar materia
                </button>
 
@@ -275,7 +285,7 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   🧠 Lógica Inteligente (Formatter)
+   🧠 Lógica Inteligente
    ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
@@ -300,7 +310,6 @@ function getSubjectInsights(slug, name, datos) {
 
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
-        // Formatear el slug para que se lea lindo
         const prettyName = formatSubtopicName(weakest.name);
         insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
     }
@@ -309,7 +318,6 @@ function getSubjectInsights(slug, name, datos) {
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
 
-// Convertir "hipertension-arterial" -> "Hipertension arterial"
 function formatSubtopicName(slug) {
     if(!slug) return "";
     let text = slug.replace(/[-_]/g, " ");
@@ -317,7 +325,7 @@ function formatSubtopicName(slug) {
 }
 
 function getWeakestSubtopic(mSlug, progData) {
-    const questions = BANK.questions.filter(q => {
+    const questions = (BANK?.questions || []).filter(q => {
         const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         return esMateria && q.submateria; 
     });
@@ -350,7 +358,7 @@ function getWeakestSubtopic(mSlug, progData) {
 }
 
 function getPieChartStyle(ok, bad, none, total) {
-    if (total === 0) return `background: #e2e8f0;`; 
+    if (!total || total === 0) return `background: #e2e8f0;`; 
     
     const degOk = (ok / total) * 360;
     const degBad = (bad / total) * 360;
@@ -373,17 +381,16 @@ function toggleStatsAcc(slug) {
 function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
 function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
 
-// Navegación con auto-apertura
 function goToPracticeFromStats(slug) {
     if (window.renderChoice) {
+        window.choiceOpenSlug = slug; 
         renderChoice();
-        // Intentar abrir el acordeón de esa materia automáticamente
-        // Usamos setTimeout para dar tiempo a que se renderice el DOM
+        // Fallback por si la variable no alcanza
         setTimeout(() => {
             if(typeof toggleMateriaChoice === 'function') {
                 toggleMateriaChoice(slug);
             }
-        }, 50);
+        }, 100);
     } else {
         alert("Error: No se encuentra la pantalla de práctica.");
     }
@@ -403,8 +410,6 @@ function checkAndGoToNotes(slug, name) {
         }
     } else {
         alert(`Todavía no tenés notas de ${name}!`);
-        // Opcional: ir igual para crear
-        // if(window.renderNotes) renderNotes();
     }
 }
 
@@ -426,4 +431,5 @@ function resetSubjectStats(slug, name) {
     }
 }
 
+// Exponer al scope global para que los onclick funcionen
 window.renderStats = renderStats;
