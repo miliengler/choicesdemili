@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Diseño Dashboard (Final)
+   📊 ESTADÍSTICAS GLOBALES – Dashboard Final (Sin Duplicados)
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -148,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Con GRÁFICOS e INSIGHTS)
+   📋 Lista de Materias
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -209,7 +209,7 @@ function renderMateriasList() {
     // Insights Inteligentes
     const insights = getSubjectInsights(m.slug, m.name, datos);
 
-    // Gráfico de torta CSS (Conic Gradient)
+    // Gráfico de torta CSS
     const pieStyle = getPieChartStyle(ok, bad, noresp, totalM);
 
     return `
@@ -221,7 +221,7 @@ function renderMateriasList() {
                     align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           
           <div style="font-weight: 600; color: #1e293b; font-size:15px;">
-            ${getEmojiForSubject(m.name)} ${m.name}
+            ${m.name}
           </div>
           <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
             ${pct}%
@@ -348,11 +348,10 @@ function getWeakestSubtopic(mSlug, progData) {
    🎨 Utilidades Gráficas
    ========================================================== */
 function getPieChartStyle(ok, bad, none, total) {
-    if (total === 0) return `background: #e2e8f0;`; // Gris si está vacía
+    if (total === 0) return `background: #e2e8f0;`; 
     
     const degOk = (ok / total) * 360;
     const degBad = (bad / total) * 360;
-    // const degNone = (none / total) * 360; // El resto
 
     // Conic Gradient: Verde -> Rojo -> Gris
     return `background: conic-gradient(
@@ -360,20 +359,6 @@ function getPieChartStyle(ok, bad, none, total) {
         #ef4444 ${degOk}deg ${degOk + degBad}deg, 
         #e2e8f0 ${degOk + degBad}deg 360deg
     );`;
-}
-
-function getEmojiForSubject(name) {
-    // Mapeo simple de emojis para decorar (Opcional, si no encuentra devuelve libro)
-    const map = {
-        'Cardiología': '🫀', 'Dermatología': '🧴', 'Endocrinología': '🧪',
-        'Gastroenterología': '💩', 'Ginecología': '🌸', 'Hematología': '🩸',
-        'Infectología': '🦠', 'Neumonología': '🫁', 'Neurología': '🧠',
-        'Oftalmología': '👁️', 'Pediatría': '👶', 'Psiquiatría': '🧘',
-        'Traumatología': '🦴', 'Urología': '🚽', 'Cirugía': '🔪'
-    };
-    // Buscar coincidencia parcial
-    const key = Object.keys(map).find(k => name.includes(k));
-    return key ? map[key] : '📘';
 }
 
 /* ==========================================================
