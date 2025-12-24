@@ -1,10 +1,20 @@
 /* ==========================================================
-   📱 MEbank – Ajustes Mobile
+   📱 MEbank – Ajustes Mobile (Mejorado)
    ========================================================== */
+
+/* Botón flotante para abrir menú (solo visible en mobile) */
+.btn-mobile-sidebar {
+  display: none;
+}
+
+/* Botón cerrar dentro del sidebar */
+.btn-close-mobile {
+  display: none;
+}
 
 @media (max-width: 960px) {
 
-  /* Layout se hace columna */
+  /* 1. Layout General */
   .q-layout {
     flex-direction: column;
     padding-right: 0 !important;
@@ -15,12 +25,59 @@
     max-width: 100%;
   }
 
-  /* Sidebar desaparece */
-  .q-sidebar {
-    display: none !important;
+  /* 2. Botón flotante para abrir índice */
+  .btn-mobile-sidebar {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
   }
 
-  /* Opciones más grandes en mobile */
+  /* 3. SIDEBAR MODAL / DRAWER */
+  .q-sidebar {
+    /* Por defecto oculto fuera de pantalla o hidden */
+    display: block !important; 
+    position: fixed;
+    top: 0;
+    right: -100%; /* Fuera de pantalla a la derecha */
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    z-index: 2000;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.2);
+    transition: right 0.3s ease; /* Animación */
+    padding: 20px;
+    overflow-y: auto;
+    border-radius: 0;
+    max-height: 100vh;
+  }
+
+  /* Clase para cuando está abierto */
+  .q-sidebar.active-mobile {
+    right: 0;
+  }
+
+  /* Botón cerrar visible */
+  .btn-close-mobile {
+    display: block;
+    background: #fee2e2;
+    border: 1px solid #ef4444;
+    color: #991b1b;
+  }
+
+  /* Ajustes de grilla en sidebar mobile */
+  .q-sidebar-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  /* 4. Opciones más grandes para dedos */
   .q-option {
     padding: 14px 16px;
     font-size: 16px;
@@ -30,9 +87,18 @@
     font-size: 16px;
   }
 
-  /* Botones navegacion */
   .q-nav-row {
     flex-direction: row;
     gap: 8px;
+  }
+  
+  /* Ajuste Timer en Mobile */
+  .exam-timer {
+    top: auto; 
+    bottom: 10px; /* Abajo para no tapar preguntas */
+    right: 10px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #cbd5e1;
   }
 }
