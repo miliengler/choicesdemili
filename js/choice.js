@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Estilo Uniforme Azul)
+   📚 MEbank 3.0 – Práctica por materia (Textos Corregidos)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -36,7 +36,7 @@ function renderChoice() {
         <div>
           <h2 style="margin:0 0 6px 0;">📚 Práctica por materia</h2>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.
+             Elegí una materia y opcionalmente uno o más subtemas.
           </p>
         </div>
         
@@ -183,12 +183,11 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LOGICA DE BOTONES ---
+  // --- BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
 
-  // ESTILO COMÚN PARA TODOS LOS BOTONES DE ACCIÓN (AZUL)
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
   // Botón Base: Iniciar
@@ -198,7 +197,7 @@ function renderMateriaExpanded(m, term, stats) {
     </button>
   `;
 
-  // Botón: Reanudar (Mismo estilo)
+  // Botón: Reanudar
   if (hayRespondidas && faltanResponder) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
@@ -207,7 +206,7 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // Botón: Aprender (Mismo estilo)
+  // Botón: Aprender
   if (hayErrores) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
@@ -227,7 +226,7 @@ function renderMateriaExpanded(m, term, stats) {
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <p style="font-size:13px; color:#64748b; margin-bottom:6px;">
-         ${term ? 'Resultados:' : 'Temas:'}
+         ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.'}
       </p>
       
       <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
@@ -305,4 +304,3 @@ function iniciarPracticaMateria(mSlug, modo) {
     titulo: titulo
   });
 }
-
