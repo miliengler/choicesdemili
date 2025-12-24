@@ -1,8 +1,8 @@
 [
   {
     "id": "med_2018_001",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": ["ginecologia", "cardiologia"],
+    "submateria": ["Anticoncepción", "Cardiopatía isquémica"],
     "enunciado": "¿Cuál es el mejor método anticonceptivo para una mujer de 46 años, tabaquista desde los 15 años, que tiene historia de dislipemia, hipertensión arterial e infarto de miocardio hace 2 años, en tratamiento con antihipertensivos y aspirina diariamente?",
     "opciones": {
       "a": "Métodos basados en el conocimiento de la fertilidad de la mujer (MBCF)",
@@ -11,15 +11,14 @@
       "d": "Dispositivo intrauterino."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_002",
-    "materia": "☠️ Toxicología",
-    "submateria": null,
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
     "enunciado": "¿Cuál de las siguientes sustancias puede haber consumido un adolescente de 13 años, que ingresa a la guardia por un cuadro de 'ebriedad' acompañado de alucinaciones y en el examen físico presenta frecuencia cardiaca de 180 latidos por minuto y en los exámenes de laboratorio presenta anemia y leucopenia?",
     "opciones": {
       "a": "LSD.",
@@ -28,15 +27,14 @@
       "d": "Éxtasis."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_003",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": ["ginecologia", "reumatologia"],
+    "submateria": ["Anticoncepción", "LES y SAF"],
     "enunciado": "¿Cuál de las siguientes es una contraindicación para el uso de los anticonceptivos orales combinados?",
     "opciones": {
       "a": "Lactancia materna, 7 meses post parto.",
@@ -45,15 +43,14 @@
       "d": "Lupus eritematoso sistémico con anticuerpos antifosfolipídicos positivos."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_004",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Hemorragias del embarazo",
     "enunciado": "¿Cuál es el diagnóstico más probable de una mujer embarazada en semana 38 de gestación, que cursa cuarto embarazo y consulta por dolor abdominal intenso acompañado de sangrado vaginal? En el examen físico el útero se encuentra tenso y no se auscultan latidos fetales. La mujer tiene tres hijos sanos.",
     "opciones": {
       "a": "Placenta previa.",
@@ -61,16 +58,15 @@
       "c": "Embarazo ectópico.",
       "d": "Desprendimiento de placenta normoinserta."
     },
-    "correcta": "b",
-    "examen": "examen_unico_2018",
+    "correcta": "d",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_005",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": ["psiquiatria", "medicinafamiliar"],
+    "submateria": ["Trastornos relacionados con sustancias", "General"],
     "enunciado": "¿En cuál de las siguientes circunstancias considera que un paciente fumador se encuentra en estadio de contemplación de acuerdo al modelo transteorético de cambio?",
     "opciones": {
       "a": "No percibe actualmente la necesidad de cambiar su comportamiento.",
@@ -79,15 +75,14 @@
       "d": "Está listo para realizar un intento de dejar en los próximos 30 días y está tomando acciones concretas."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_006",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "Cefaleas",
     "enunciado": "¿Qué estudio complementario solicita a un paciente de 60 años que consulta por cefalea intensa, visión borrosa y mareos de 6 horas de evolución y en el examen físico se encuentra lúcido, sin signo de foco motor, sensitivo o meníngeo y tiene presión arterial 220/110 mmHg?",
     "opciones": {
       "a": "Tomografía de encéfalo sin contraste.",
@@ -96,15 +91,14 @@
       "d": "Ecocardiograma."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_007",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
     "enunciado": "¿Cuál es la conducta más adecuada con un señor de 56 años, asintomático, que consulta porque le detectaron anemia en un análisis de rutina? No tiene antecedentes patológicos y no toma ninguna medicación.",
     "opciones": {
       "a": "Conducta expectante y repetir el hemograma en 6 meses.",
@@ -113,15 +107,14 @@
       "d": "Solicitar endoscopía digestiva."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_008",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "pediatria"],
+    "submateria": ["Parto", "Neonatología"],
     "enunciado": "¿Cuál de las siguientes consideraciones con respecto a la ligadura del cordón umbilical es correcta?",
     "opciones": {
       "a": "La ligadura del cordón umbilical antes del minuto de vida previene la policitemia.",
@@ -130,15 +123,14 @@
       "d": "La ligadura tardía del cordón umbilical no evidenció ningún cambio en los requerimientos de hierro durante el primer año de vida."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_009",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Convulsiones y epilepsia"],
     "enunciado": "¿Cuál es la conducta más adecuada con un niño de 3 años, previamente sano, que ingresa a guardia en estado posconvulsivo y se encuentra febril? Presentó un episodio de convulsión febril simple.",
     "opciones": {
       "a": "Internar para diagnóstico y tratamiento.",
@@ -147,15 +139,14 @@
       "d": "Solicitar estudios por imágenes."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_010",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Patología del aparato respiratorio", "TRI – Neumonías"],
     "enunciado": "¿Cuál de los siguientes exámenes complementarios solicita en primer instancia, a un niño de 6 años que presenta dolor en hipocondrio derecho y fiebre de 72 horas de evolución? La madre refiere tos, disminución del apetito y vómitos, y en el examen físico se constata fiebre, taquicardia, taquipnea, murmullo vesicular disminuido en campo pulmonar derecho, abdomen tenso y con ruidos hidroaéreos disminuidos.",
     "opciones": {
       "a": "Tomografía axial computada torácica y abdominal.",
@@ -164,15 +155,14 @@
       "d": "Radiografía de tórax."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_011",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "reumatologia"],
+    "submateria": ["Metabolismo calcio – PTH", "Metabólica ósea"],
     "enunciado": "¿Cuál combinación de métodos complementarios solicita a una paciente de 65 años que tiene dolores óseos, osteoporosis moderada y en los exámenes de laboratorio presenta hipercalcemia (11mg/dl) y parathormona (PTH) elevada (300 pg/dl)?",
     "opciones": {
       "a": "Ecografía + centellograma con Tecnecio 99 Sestamibi.",
@@ -181,15 +171,14 @@
       "d": "Ecografía + Tomografía por emisión de positrones (PET)."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_012",
-    "materia": "🚽 Urología",
-    "submateria": null,
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
     "enunciado": "¿Cuál de las siguientes afirmaciones es correcta con respecto a la hipertrofia prostática benigna (HPB)?",
     "opciones": {
       "a": "El diagnóstico se hace por tacto rectal.",
@@ -198,15 +187,14 @@
       "d": "La polaquiuria, en mayores de 50 años, es siempre provocada por la HPB."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_013",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": "hematologia",
+    "submateria": "Coagulación",
     "enunciado": "¿Cuál de los siguientes métodos complementarios utiliza para ajustar la dosis de cumarínicos?",
     "opciones": {
       "a": "Determinación de fibrinógeno.",
@@ -215,15 +203,14 @@
       "d": "Tiempo de sangría."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_014",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Estómago",
     "enunciado": "¿Cuál es la conducta más adecuada con un señor de 34 años, tabaquista de 10 cigarrillos diarios, que consulta por acidez y dolor epigástrico de un mes de evolución, que en ocasiones cede con la ingesta y que empeoró en los últimos días? No tiene antecedentes patológicos y está preocupado por problemas económicos familiares.",
     "opciones": {
       "a": "Promover la cesación tabáquica y solicitar videoendoscopía digestiva alta.",
@@ -232,15 +219,14 @@
       "d": "Promover la cesación tabáquica e indicar antiácidos durante un mes y evaluar nuevamente."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_015",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "¿Cómo caracteriza el dolor torácico de un paciente de 58 años, tabaquista, con hipercolesterolemia no tratada, que refiere dolor precordial opresivo desde hace 4 meses, que aparece usualmente al caminar 2 cuadras y que dura 2 a 5 minutos?",
     "opciones": {
       "a": "Angina estable.",
@@ -249,15 +235,14 @@
       "d": "Dolor precordial inespecífico."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_016",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "infectologia", "neurologia"],
+    "submateria": ["Patología infecciosa infantil", "Virus varios", "Neuropatías"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un niño de 12 años internado por síndrome de Guillain-Barré posterior a un cuadro febril con adenopatías generalizadas y esplenomegalia, que presenta trombocitopenia y anemia hemolítica Coombs positiva con crioaglutininas específicas para el antígeno i de los eritrocitos?",
     "opciones": {
       "a": "Artritis idiopática juvenil.",
@@ -266,15 +251,14 @@
       "d": "Infección por Mycoplasma pneumoniae."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_017",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Otras preguntas de salud pública", "Inmunodeprimidos no HIV"],
     "enunciado": "¿Cómo indica la administración de vacuna antineumocócica a una paciente de 50 años con diabetes?",
     "opciones": {
       "a": "VCN13 y luego VPN23 con intervalo mínimo de 12 meses.",
@@ -283,15 +267,14 @@
       "d": "VPN23 y luego VCN13 con intervalo mínimo de 8 semanas."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_018",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "neumonologia"],
+    "submateria": ["Tropicales", "Neumonía"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un niño de 11 años, sano previamente, residente en área rural de Entre Ríos, que consulta por fiebre, escalofríos, mialgias, astenia y cefalea de 48 horas de evolución y dificultad respiratoria en las últimas horas, con aumento del hematocrito, plaquetopenia, leucocitosis con neutrofilia y linfocitos atípicos?",
     "opciones": {
       "a": "Infección por Mycoplasma pneumoniae.",
@@ -300,15 +283,14 @@
       "d": "Brucelosis aguda."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_019",
-    "materia": "🚽 Urología",
-    "submateria": null,
+    "materia": "urologia",
+    "submateria": "Litiasis renal",
     "enunciado": "¿Cuál es el diagnóstico más probable de un señor de 40 años, sin antecedentes patológicos, que concurre a guardia por dolor de comienzo brusco en flanco izquierdo que irradia a la zona testicular, acompañado de náuseas, sin posición antálgica?",
     "opciones": {
       "a": "Cólico renal.",
@@ -317,15 +299,14 @@
       "d": "Infarto mesentérico."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_020",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "¿En cuál de las siguientes situaciones indica la colocación de una sonda orogástrica en un recién nacido de término, con peso adecuado para edad gestacional?",
     "opciones": {
       "a": "Antecedente de polihidramnios.",
@@ -334,15 +315,14 @@
       "d": "Nacimiento por cesárea."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_021",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": "imagenes",
+    "submateria": "Radiografía",
     "enunciado": "¿Qué observa en las radiografías de tórax? (ver imagen 3)",
     "opciones": {
       "a": "Condensación pulmonar en base izquierda anterior.",
@@ -351,16 +331,15 @@
       "d": "Atelectasia de segmento posterior del lóbulo inferior izquierdo."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true,
     "imagen": "bancos/anteriores/imagenes/2018_03_torax.jpg"
   },
   {
     "id": "med_2018_022",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Patología infecciosa infantil", "SNC y meningitis"],
     "enunciado": "¿A qué integrantes del grupo familiar de un niño 4 años con meningitis purulenta por meningococo B les indicaría profilaxis con rifampicina? La familia está constituida por el padre, la madre embarazada de 5 meses y hermanos de 2 y 14 años.",
     "opciones": {
       "a": "A todo el grupo familiar.",
@@ -369,15 +348,14 @@
       "d": "A los 2 hijos."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_023",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Vigilancia epidemiológica",
     "enunciado": "¿Cuáles establecimientos deben notificar al Sistema Nacional de Vigilancia en Salud?",
     "opciones": {
       "a": "Establecimientos privados.",
@@ -386,15 +364,14 @@
       "d": "Establecimientos públicos."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_024",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Intoxicaciones",
     "enunciado": "¿Cuál es el tratamiento más adecuado para un niño de 4 años alérgico a la proteína de la leche, que ingiere una cucharada de yogur y presenta edema facial, ronquera, hipotensión y sibilancias diseminadas?",
     "opciones": {
       "a": "Adrenalina 1/1000 endovenosa.",
@@ -403,15 +380,14 @@
       "d": "Difenhidramina endovenosa."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_025",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": ["cardiologia", "otras"],
+    "submateria": ["Arritmias", "Otras"],
     "enunciado": "¿Cuál es la conducta más adecuada con una paciente hipertensa que consulta por disnea, palpitaciones, mareos y en el examen físico presenta TA 100/60 mmHg, FC 140 x’, rales crepitantes en bases y el siguiente ECG (ver imagen 2)?",
     "opciones": {
       "a": "Indicar dosis de carga de amiodarona.",
@@ -420,16 +396,15 @@
       "d": "Cardioversión eléctrica."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true,
     "imagen": "bancos/anteriores/imagenes/2018_02_ecg.jpg"
   },
   {
     "id": "med_2018_026",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Neonatología",
     "enunciado": "¿Cuál de los siguientes patrones radiológicos espera encontrar en la radiografía de tórax de un recién nacido pretérmino de 31 semanas que presenta dificultad respiratoria precoz?",
     "opciones": {
       "a": "Patrón reticulogranular con broncograma aéreo.",
@@ -438,15 +413,14 @@
       "d": "Patrón normal."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_027",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Diabetes mellitus", "General"],
     "enunciado": "¿Cuál es la conducta más adecuada con un señor de 55 años, sin antecedentes, con glucemia en ayunas 120 mg/dl, triglicéridos 148 mg/dl, colesterol 135 mg/dl y HDL 38 mg/dl?",
     "opciones": {
       "a": "Solicitar una nueva glucemia en ayunas.",
@@ -455,15 +429,14 @@
       "d": "Solicitar prueba de tolerancia oral y comenzar metformina."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_028",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "cardiologia"],
+    "submateria": ["Cardiopatías congénitas", "Cardiología básica"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un lactante de 2 meses que presenta taquipnea, rales subcrepitantes bilaterales y soplo eyectivo holosistólico con precordio activo, sin fiebre?",
     "opciones": {
       "a": "Bronquiolitis aguda más estenosis pulmonar.",
@@ -472,15 +445,14 @@
       "d": "Insuficiencia cardíaca por comunicación interauricular."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_029",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "cardiologia"],
+    "submateria": ["Complicaciones maternas en el embarazo", "Hipertensión arterial y factores de riesgo"],
     "enunciado": "¿Cuál es la conducta más adecuada con una paciente de 42 años que cursa embarazo de 8 semanas y tiene hipertensión arterial crónica tratada con IECA?",
     "opciones": {
       "a": "Cambiar los IECA por otro fármaco con mejor perfil de seguridad en gestación.",
@@ -489,15 +461,14 @@
       "d": "Incrementar la dosis de IECA por el riesgo de preeclampsia."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_030",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": ["obstetricia", "endocrinologia"],
+    "submateria": ["Complicaciones maternas en el embarazo", "Diabetes mellitus"],
     "enunciado": "¿Cuál es la conducta más adecuada con una mujer de 26 años, primer embarazo de 28 semanas, examen físico normal, IMC 27 y laboratorio normal salvo colesterol total 240 mg/dl y triglicéridos 175 mg/dl?",
     "opciones": {
       "a": "Derivar a embarazo de alto riesgo.",
@@ -506,15 +477,14 @@
       "d": "Continuar con el control regular."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_031",
-    "materia": "👨‍👩‍👧‍👦 Medicina Familiar",
-    "submateria": null,
+    "materia": ["medicinafamiliar", "traumatologia"],
+    "submateria": ["General", "Otras preguntas de traumatología"],
     "enunciado": "¿Cuál de los siguientes factores extrínsecos se relacionan frecuentemente con caídas de los ancianos en la casa?",
     "opciones": {
       "a": "Interruptores de luz de difícil acceso.",
@@ -523,15 +493,14 @@
       "d": "Sillas estables con apoyabrazos."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_032",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "pediatria"],
+    "submateria": ["Otras preguntas de salud pública", "Vacunación infantil"],
     "enunciado": "¿Cuál es la conducta más adecuada con respecto a la actualización del Calendario Nacional de Vacunación en un lactante de 4 meses que recibió una dosis de vacuna contra hepatitis B y BCG al nacer, y a los dos meses las vacunas Salk, pentavalente, rotavirus y neumococo conjugada, pero no recibió más vacunas desde esa fecha?",
     "opciones": {
       "a": "Aplicar primera dosis de vacuna antimeningocócica y citar en 30 días para completar el calendario.",
@@ -540,15 +509,14 @@
       "d": "Aplicar segunda dosis de pentavalente, Salk, rotavirus y antineumocócica conjugada. Citar a los 5 meses para aplicar antimeningocócica."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_033",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": ["psiquiatria", "medicinafamiliar"],
+    "submateria": ["Trastornos relacionados con sustancias", "General"],
     "enunciado": "¿Cuál es la conducta más adecuada con un señor de 51 años, obeso, dislipémico, tabaquista, en etapa de acción para dejar de fumar, con una prueba de Fagerström de 6?",
     "opciones": {
       "a": "Parches + chicles de nicotina + bupropion. Control en 7 días.",
@@ -557,15 +525,14 @@
       "d": "Parches de nicotina + vareniclina. Control en 14 días."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_034",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Vigilancia epidemiológica",
     "enunciado": "¿Cuál de las siguientes patologías es de notificación inmediata ante caso sospechoso por planilla C2?",
     "opciones": {
       "a": "Chagas crónico.",
@@ -574,15 +541,14 @@
       "d": "Hepatitis A."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_035",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
     "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 50 años, que consulta por dolor precordial típico de 30 minutos en un hospital sin hemodinamia, y ECG con elevación del ST en cara anterior?",
     "opciones": {
       "a": "Solicitar traslado a otro centro cuando sea posible.",
@@ -591,15 +557,14 @@
       "d": "Indicar tratamiento anticoagulante con heparina de bajo peso molecular."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_036",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": ["psiquiatria", "medicinalegal"],
+    "submateria": ["Otras preguntas de psiquiatría", "Normativa nacional y jurisdiccional"],
     "enunciado": "Según la Ley de Salud Mental 26657, ¿cómo considera a la internación como modalidad de intervención?",
     "opciones": {
       "a": "Es un recurso terapéutico de carácter restrictivo.",
@@ -608,15 +573,14 @@
       "d": "Puede indicarse para resolver problemáticas sociales o de vivienda."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_037",
-    "materia": "🌸 Ginecología",
-    "submateria": null,
+    "materia": "ginecologia",
+    "submateria": "Patología benigna de mama",
     "enunciado": "¿Con cuál de las siguientes imágenes mamográficas le solicitaría una biopsia mamaria a una paciente de 60 años con dolor en mama izquierda y aumento de densidad en cuadrante superior externo?",
     "opciones": {
       "a": "Calcificaciones gruesas y dispersas.",
@@ -625,16 +589,15 @@
       "d": "Calcificaciones de trayectos vasculares."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true,
     "imagen": "bancos/anteriores/imagenes/2018_04_mama.jpg"
   },
   {
     "id": "med_2018_038",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": ["gastroenterologia", "pediatria"],
+    "submateria": ["Intestino delgado", "Patología del aparato digestivo"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un niño de 4 años con diarrea intermitente no disentérica, dolor abdominal e hiporexia, con antecedente de déficit de IgA?",
     "opciones": {
       "a": "Enfermedad de Crohn.",
@@ -643,15 +606,14 @@
       "d": "Diarrea crónica inespecífica."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_039",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Diabetes mellitus", "General"],
     "enunciado": "¿Cuál es la conducta más adecuada durante la internación con un paciente de 64 años diabético tipo 2 en tratamiento oral que cursa neumonía aguda de la comunidad y glucemias >300 mg%?",
     "opciones": {
       "a": "Continuar medicación habitual y aumentar dosis de metformina.",
@@ -660,15 +622,14 @@
       "d": "Suspender medicación oral e indicar insulina en infusión continua EV."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_040",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Otras preguntas de salud pública", "Tuberculosis"],
     "enunciado": "¿Cuál de las siguientes afirmaciones con respecto a la vacunación BCG es correcta?",
     "opciones": {
       "a": "Evita la infección por M. tuberculosis.",
@@ -677,15 +638,14 @@
       "d": "Se puede aplicar en inmunodeprimidos sin riesgo."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_041",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "infectologia"],
+    "submateria": ["Neonatología", "SNC y meningitis"],
     "enunciado": "¿Cuál de los siguientes gérmenes puede estar presente en el tracto genital materno y causar meningitis en un neonato a los 7 días del nacimiento?",
     "opciones": {
       "a": "Chlamydia trachomatis.",
@@ -694,15 +654,14 @@
       "d": "Streptococcus agalactiae."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_042",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Vigilancia epidemiológica",
     "enunciado": "¿Cuáles son los registros continuos que sirven como fuente de información para estudios epidemiológicos?",
     "opciones": {
       "a": "Encuestas de satisfacción y registro de internaciones.",
@@ -711,15 +670,14 @@
       "d": "Planilla de consulta diaria y planilla de ronda de agentes sanitarios."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_043",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "cardiologia"],
+    "submateria": ["Cardiopatías congénitas", "Cardiología básica"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un lactante de 35 días con soplo mesocárdico holosistólico irradiado al ápex, sin cianosis y pulsos simétricos?",
     "opciones": {
       "a": "Comunicación interventricular.",
@@ -728,15 +686,14 @@
       "d": "Estenosis pulmonar leve."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_044",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Vigilancia epidemiológica", "Tuberculosis"],
     "enunciado": "¿Actualmente, en cuál de las siguientes situaciones está indicada realizar prueba de tuberculina (reacción de Mantoux)?",
     "opciones": {
       "a": "Diagnóstico de adultos con sospecha de tuberculosis pulmonar.",
@@ -745,15 +702,14 @@
       "d": "Monitoreo de pacientes inmunodeprimidos tratados con corticoides."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_045",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "endocrinologia",
+    "submateria": "Suprarrenales",
     "enunciado": "¿Cuál de las siguientes pruebas realizaría en primer lugar para confirmar la enfermedad de Addison?",
     "opciones": {
       "a": "Cortisol en orina 24 horas.",
@@ -762,15 +718,14 @@
       "d": "Cortisol plasmático basal y a las 20 horas."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_046",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "gastroenterologia"],
+    "submateria": ["Patología del aparato digestivo", "Otras preguntas de gastroenterología"],
     "enunciado": "¿Cuál es la conducta más adecuada con un lactante de 9 meses con gastroenteritis aguda y deshidratación moderada?",
     "opciones": {
       "a": "Hidratación endovenosa inmediata.",
@@ -779,15 +734,14 @@
       "d": "Rehidratación oral en la casa y pautas de alarma."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_047",
-    "materia": "👨‍👩‍👧‍👦 Medicina Familiar",
-    "submateria": null,
+    "materia": "medicinafamiliar",
+    "submateria": "General",
     "enunciado": "¿Cuál de los siguientes es un motivo para aconsejar la realización de actividad física a los pacientes?",
     "opciones": {
       "a": "Preserva funciones mentales (comprensión, memoria, concentración).",
@@ -796,15 +750,14 @@
       "d": "Mejora función cardiorrespiratoria aunque aumenta presión arterial."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_048",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": ["neurologia", "infectologia"],
+    "submateria": ["Otras preguntas de neurología", "SNC y meningitis"],
     "enunciado": "¿Cuál es el diagnóstico más probable de una mujer de 24 años, tabaquista, con trastornos del sensorio, parálisis del VI par craneal, signos meníngeos y LCR con leucocitos 680 (85% PMN), glucosa 9 mg/dl, proteínas 77 mg/dl?",
     "opciones": {
       "a": "Tuberculosis meníngea.",
@@ -813,15 +766,14 @@
       "d": "Meningitis bacteriana."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_049",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": ["imagenes", "cardiologia"],
+    "submateria": ["Otras preguntas de diagnóstico por imágenes", "Cardiopatía isquémica"],
     "enunciado": "¿En cuál de los siguientes cuadros clínicos es posible observar la siguiente alteración en el ECG? (ver imagen 1)",
     "opciones": {
       "a": "Infarto agudo de miocardio en etapa aguda.",
@@ -830,16 +782,15 @@
       "d": "Pericarditis."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true,
     "imagen": "bancos/anteriores/imagenes/2018_01_ecg.jpg"
   },
   {
     "id": "med_2018_050",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": ["saludpublica", "infectologia"],
+    "submateria": ["Otras preguntas de salud pública", "Inmunodeprimidos no HIV"],
     "enunciado": "¿Cuál de las siguientes vacunas NO se debe administrar a un niño que convive con un hermano con deficiencia inmunológica?",
     "opciones": {
       "a": "Triple viral (Paperas, Sarampión y Rubéola).",
@@ -848,15 +799,14 @@
       "d": "Vacuna oral contra la polio."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_051",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "urologia"],
+    "submateria": ["Patología nefrourológica infantil", "Otras preguntas de urología"],
     "enunciado": "¿Cuál de las siguientes es una indicación de cirugía en un niño de 8 años con criptorquidia unilateral no descendida?",
     "opciones": {
       "a": "A los 3 años de edad.",
@@ -865,15 +815,14 @@
       "d": "Al inicio de la pubertad."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_052",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Cuál de los siguientes hallazgos radiológicos es característico del raquitismo carencial?",
     "opciones": {
       "a": "Densidad ósea aumentada.",
@@ -882,15 +831,14 @@
       "d": "Esclerosis cortical."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_053",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "ECV",
     "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 70 años con episodio de pérdida súbita de la fuerza en hemicuerpo derecho que dura 10 minutos y se recupera completamente?",
     "opciones": {
       "a": "Solicitar tomografía de cerebro sin contraste de urgencia.",
@@ -899,15 +847,14 @@
       "d": "Iniciar antihipertensivos y control a la semana."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_054",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": "neumonologia",
+    "submateria": "Neumonía",
     "enunciado": "¿Cuál es el tratamiento antibiótico empírico más adecuado para un adulto de 35 años previamente sano, con diagnóstico clínico y radiológico de neumonía adquirida en la comunidad?",
     "opciones": {
       "a": "Amoxicilina-clavulánico.",
@@ -916,15 +863,14 @@
       "d": "Levofloxacina."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_055",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": ["hematologia", "ginecologia"],
+    "submateria": ["Anemias carenciales", "Alteraciones menstruales"],
     "enunciado": "¿Cuál es la conducta más adecuada con una paciente de 35 años con diagnóstico reciente de anemia ferropénica y menorragia?",
     "opciones": {
       "a": "Solicitar colonoscopía.",
@@ -933,15 +879,14 @@
       "d": "Indicar hierro parenteral."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_056",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": "imagenes",
+    "submateria": "Ecografía",
     "enunciado": "¿Qué estudio de diagnóstico por imágenes solicitaría como primera elección en una mujer de 27 años con sospecha de litiasis vesicular?",
     "opciones": {
       "a": "Resonancia magnética.",
@@ -950,15 +895,14 @@
       "d": "Colangiorresonancia."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_057",
-    "materia": "🧴 Dermatología",
-    "submateria": null,
+    "materia": "dermatologia",
+    "submateria": "Eritemato-descamativas",
     "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 40 años con placas eritemato-descamativas bien delimitadas en codos y rodillas?",
     "opciones": {
       "a": "Eczema de contacto.",
@@ -967,15 +911,14 @@
       "d": "Pitriasis rosada."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_058",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "HIV",
     "enunciado": "¿Cuál es la profilaxis indicada para un paciente con exposición percutánea a sangre de un paciente VIH positivo?",
     "opciones": {
       "a": "No requiere profilaxis si el accidente fue superficial.",
@@ -984,15 +927,14 @@
       "d": "Iniciar antirretrovirales si aparece fiebre o adenopatías."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_059",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
     "enunciado": "¿Cuál es la localización más probable de la lesión en un paciente con hemianopsia homónima izquierda?",
     "opciones": {
       "a": "Quiasma óptico.",
@@ -1001,15 +943,14 @@
       "d": "Nervio óptico derecho."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_060",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
     "enunciado": "¿Cuál es la causa más frecuente de hipotiroidismo primario?",
     "opciones": {
       "a": "Tiroiditis de Hashimoto.",
@@ -1018,15 +959,14 @@
       "d": "Tratamiento con litio."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_061",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": ["hematologia", "urologia"],
+    "submateria": ["Anemias carenciales", "Insuficiencia renal crónica"],
     "enunciado": "¿Cuál es el mecanismo fisiopatológico más frecuente de la anemia en pacientes con insuficiencia renal crónica?",
     "opciones": {
       "a": "Deficiencia de hierro.",
@@ -1035,15 +975,14 @@
       "d": "Pérdida crónica por sangrados ocultos."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_062",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "hematologia"],
+    "submateria": ["Hematología infantil", "Anemias carenciales"],
     "enunciado": "¿Cuál es la causa más frecuente de anemia ferropénica en el lactante?",
     "opciones": {
       "a": "Dietas restrictivas en hierro.",
@@ -1052,15 +991,14 @@
       "d": "Malabsorción intestinal."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_063",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Lactancia",
     "enunciado": "¿Cuál de los siguientes métodos anticonceptivos puede utilizarse durante la lactancia exclusiva?",
     "opciones": {
       "a": "Anticonceptivos orales combinados.",
@@ -1069,15 +1007,14 @@
       "d": "Métodos de barrera exclusivamente."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_064",
-    "materia": "🧴 Dermatología",
-    "submateria": null,
+    "materia": "dermatologia",
+    "submateria": "Infecciosas",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente con máculas hipopigmentadas en tronco y extremidades, sin síntomas y con escamas finas al raspar la lesión?",
     "opciones": {
       "a": "Vitiligo.",
@@ -1086,15 +1023,14 @@
       "d": "Dermatitis seborreica."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_065",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "ITS",
     "enunciado": "¿Cuál es la conducta más adecuada ante un paciente con sífilis primaria y prueba de VDRL reactiva 1/64?",
     "opciones": {
       "a": "Penicilina G benzatínica 2,4 millones IM dosis única.",
@@ -1103,15 +1039,14 @@
       "d": "Ceftriaxona 1 g diario por 7 días."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_066",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente con pulso alternante, tercer ruido y disnea progresiva de esfuerzo?",
     "opciones": {
       "a": "Estenosis aórtica severa.",
@@ -1120,15 +1055,14 @@
       "d": "Taponamiento cardíaco."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_067",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": "psiquiatria",
+    "submateria": "Trastornos del estado de ánimo",
     "enunciado": "¿Cuál es la indicación principal del uso de litio como estabilizador del ánimo?",
     "opciones": {
       "a": "Trastorno de ansiedad generalizada.",
@@ -1137,15 +1071,14 @@
       "d": "Trastorno esquizoafectivo."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_068",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
     "enunciado": "¿Cuál es la causa más frecuente de bronquiolitis en menores de 2 años?",
     "opciones": {
       "a": "Virus sincicial respiratorio.",
@@ -1154,15 +1087,14 @@
       "d": "Influenza B."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_069",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
     "enunciado": "¿Cuál es la causa más frecuente de anemia megaloblástica?",
     "opciones": {
       "a": "Déficit de hierro.",
@@ -1171,15 +1103,14 @@
       "d": "Anemia de enfermedad crónica."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_070",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Colon",
     "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 28 años que consulta por dolor abdominal, diarrea con sangre y fiebre de 3 semanas de evolución?",
     "opciones": {
       "a": "Solicitar colonoscopía y biopsia.",
@@ -1188,15 +1119,14 @@
       "d": "Realizar TAC abdominal con contraste."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_071",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Pericardio",
     "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 65 años con disnea progresiva, ortopnea y edema de miembros inferiores?",
     "opciones": {
       "a": "Insuficiencia cardíaca congestiva.",
@@ -1205,15 +1135,14 @@
       "d": "Pericarditis constrictiva."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_072",
-    "materia": "🦴 Traumatología",
-    "submateria": null,
+    "materia": "traumatologia",
+    "submateria": "Fracturas",
     "enunciado": "¿Cuál es el tratamiento inicial más adecuado para una fractura expuesta de tibia tipo II de Gustilo?",
     "opciones": {
       "a": "Inmovilización, antibióticos y limpieza quirúrgica urgente.",
@@ -1222,15 +1151,14 @@
       "d": "Reducción cerrada y yeso inmediato."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_073",
-    "materia": "🤰 Obstetricia",
-    "submateria": null,
+    "materia": "obstetricia",
+    "submateria": "Preeclampsia",
     "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 36 semanas de gestación con cefalea intensa, epigastralgia, edema y presión arterial 160/110 mmHg?",
     "opciones": {
       "a": "Preeclampsia severa.",
@@ -1239,15 +1167,14 @@
       "d": "Síndrome HELLP."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_074",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Convulsiones y epilepsia"],
     "enunciado": "¿Cuál es la causa más frecuente de convulsión febril simple?",
     "opciones": {
       "a": "Infección respiratoria alta viral.",
@@ -1256,15 +1183,14 @@
       "d": "Infección urinaria."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_075",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": ["imagenes", "cardiologia"],
+    "submateria": ["Ecografía", "Venas y linfáticos"],
     "enunciado": "¿Cuál es el método de elección para confirmar la sospecha clínica de trombosis venosa profunda en miembro inferior?",
     "opciones": {
       "a": "Flebografía con contraste.",
@@ -1273,15 +1199,14 @@
       "d": "Tomografía computada helicoidal."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_076",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
     "enunciado": "¿Cuál de los siguientes hallazgos de laboratorio confirma el diagnóstico de hipertiroidismo primario?",
     "opciones": {
       "a": "TSH elevada y T4 libre elevada.",
@@ -1290,15 +1215,14 @@
       "d": "TSH suprimida y T4 libre baja."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_077",
-    "materia": "🫁 Neumonología",
-    "submateria": null,
+    "materia": "neumonologia",
+    "submateria": "EPOC",
     "enunciado": "¿Cuál es el tratamiento antibiótico de elección para una reagudización infecciosa de EPOC leve?",
     "opciones": {
       "a": "Amoxicilina 1 g cada 8 horas por 7 días.",
@@ -1307,15 +1231,14 @@
       "d": "Azitromicina 500 mg día 1 y 250 mg/día por 4 días."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_078",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
     "enunciado": "¿Cuál es la edad de inicio recomendada para la alimentación complementaria en lactantes sanos?",
     "opciones": {
       "a": "4 meses.",
@@ -1324,15 +1247,14 @@
       "d": "8 meses."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_079",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "Sistema de salud",
     "enunciado": "¿Cuál de los siguientes programas del Ministerio de Salud promueve el control del embarazo y el parto seguro?",
     "opciones": {
       "a": "Programa SUMAR.",
@@ -1341,15 +1263,14 @@
       "d": "Programa Proteger."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_080",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": ["neurologia", "infectologia"],
+    "submateria": ["Neuropatías", "Virus varios"],
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente con debilidad progresiva en miembros inferiores, arreflexia y parestesias ascendentes luego de una infección respiratoria viral?",
     "opciones": {
       "a": "Mielitis transversa.",
@@ -1358,15 +1279,14 @@
       "d": "Miastenia gravis."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_081",
-    "materia": "💪 Reumatología",
-    "submateria": null,
+    "materia": "reumatologia",
+    "submateria": "LES y SAF",
     "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 30 años con eritema malar, fotosensibilidad, artralgias y ANA positivo?",
     "opciones": {
       "a": "Artritis reumatoidea.",
@@ -1375,15 +1295,14 @@
       "d": "Esclerodermia."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_082",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": ["hematologia", "gastroenterologia"],
+    "submateria": ["Coagulación", "Hígado"],
     "enunciado": "¿Cuál de las siguientes alteraciones es más frecuente en la coagulación del paciente con hepatopatía crónica?",
     "opciones": {
       "a": "Aumento de fibrinógeno.",
@@ -1392,15 +1311,14 @@
       "d": "Aumento de factor VIII."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_083",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Esófago",
     "enunciado": "¿Cuál es la conducta más adecuada frente a un paciente con diagnóstico de enfermedad por reflujo gastroesofágico que no responde al tratamiento con inhibidores de bomba de protones por 8 semanas?",
     "opciones": {
       "a": "Aumentar la dosis del inhibidor de bomba de protones.",
@@ -1409,15 +1327,14 @@
       "d": "Suspender tratamiento y observar evolución."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_084",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": "endocrinologia",
+    "submateria": "Urgencias endocrinas",
     "enunciado": "¿Cuál es la principal complicación aguda de la diabetes mellitus tipo 1?",
     "opciones": {
       "a": "Cetoacidosis diabética.",
@@ -1426,15 +1343,14 @@
       "d": "Nefropatía diabética."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_085",
-    "materia": "💭 Psiquiatría",
-    "submateria": null,
+    "materia": "psiquiatria",
+    "submateria": "Otras preguntas de psiquiatría",
     "enunciado": "Según la Ley 26 657, ¿qué principio rige las internaciones involuntarias?",
     "opciones": {
       "a": "Deben ser decididas por el equipo tratante sin autorización judicial.",
@@ -1443,15 +1359,14 @@
       "d": "Deben ser decididas por familiares o allegados."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_086",
-    "materia": "🩻 Diagnóstico por Imágenes",
-    "submateria": null,
+    "materia": ["imagenes", "neumonologia"],
+    "submateria": ["Radiografía", "Neumonía"],
     "enunciado": "¿Cuál de las siguientes imágenes es característica de una neumonía lobar?",
     "opciones": {
       "a": "Infiltrado intersticial difuso bilateral.",
@@ -1460,16 +1375,15 @@
       "d": "Cavitación apical bilateral."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true,
     "imagen": "bancos/anteriores/imagenes/2018_05_neumonia.jpg"
   },
   {
     "id": "med_2018_087",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": "infectologia",
+    "submateria": "Tropicales",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente con fiebre, mialgias, ictericia y compromiso renal que trabaja en aguas estancadas?",
     "opciones": {
       "a": "Hepatitis A.",
@@ -1478,15 +1392,14 @@
       "d": "Fiebre amarilla."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_088",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
     "enunciado": "¿Cuál de los siguientes pares craneales está afectado si el paciente presenta desviación de la lengua hacia un lado al protruirla?",
     "opciones": {
       "a": "IX par.",
@@ -1495,15 +1408,14 @@
       "d": "VII par."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_089",
-    "materia": "🫀 Cardiología",
-    "submateria": null,
+    "materia": "cardiologia",
+    "submateria": "Artritis reumatoide",
     "enunciado": "¿Cuál es el fármaco de elección para el control de la frecuencia ventricular en la fibrilación auricular?",
     "opciones": {
       "a": "Amiodarona.",
@@ -1512,15 +1424,14 @@
       "d": "Verapamilo."
     },
     "correcta": "a",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_090",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Otras preguntas de gastroenterología",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente con ictericia, coluria, acolia y bilirrubina directa elevada?",
     "opciones": {
       "a": "Hepatitis aguda viral.",
@@ -1529,15 +1440,14 @@
       "d": "Hemólisis aguda."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_091",
-    "materia": "🧪 Endocrinología",
-    "submateria": null,
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Diabetes mellitus", "Diabetes mellitus"],
     "enunciado": "¿Cuál es el criterio diagnóstico fundamental para la diabetes mellitus tipo 2?",
     "opciones": {
       "a": "Glucemia posprandial ≥ 180 mg/dl.",
@@ -1546,15 +1456,14 @@
       "d": "Síntomas clásicos con glucemia casual ≥ 140 mg/dl."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_092",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿Cuál de las siguientes medidas pertenece a la prevención secundaria?",
     "opciones": {
       "a": "Vacunación.",
@@ -1563,15 +1472,14 @@
       "d": "Educación para la salud en escuelas."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_093",
-    "materia": "🩸 Hematología",
-    "submateria": null,
+    "materia": "hematologia",
+    "submateria": "Otras anemias",
     "enunciado": "¿Cuál es la interpretación más probable de un paciente con VCM elevado y reticulocitos aumentados?",
     "opciones": {
       "a": "Anemia ferropénica.",
@@ -1580,15 +1488,14 @@
       "d": "Anemia de enfermedad crónica."
     },
     "correcta": "d",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_094",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "Trastornos del movimiento",
     "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 70 años con temblor en reposo, rigidez y bradicinesia?",
     "opciones": {
       "a": "Temblor esencial.",
@@ -1597,15 +1504,14 @@
       "d": "Corea de Huntington."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_095",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "pediatria"],
+    "submateria": ["Bacterias", "Patología infecciosa infantil"],
     "enunciado": "¿Cuál es la conducta más adecuada frente a un niño de 6 años con fiebre de 39°C, odinofagia, exudado amigdalar y test rápido para estreptococo beta hemolítico del grupo A positivo?",
     "opciones": {
       "a": "Amoxicilina 50 mg/kg/día durante 10 días.",
@@ -1614,15 +1520,14 @@
       "d": "No requiere antibiótico, es autolimitado."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_096",
-    "materia": "💩 Gastroenterología",
-    "submateria": null,
+    "materia": "gastroenterologia",
+    "submateria": "Otras preguntas de gastroenterología",
     "enunciado": "¿Cuál es la causa más frecuente de hemorragia digestiva alta en adultos?",
     "opciones": {
       "a": "Úlcera gástrica.",
@@ -1631,15 +1536,14 @@
       "d": "Varices esofágicas."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_097",
-    "materia": "🧸 Pediatría",
-    "submateria": null,
+    "materia": ["pediatria", "gastroenterologia"],
+    "submateria": ["Patología del aparato digestivo", "Otras preguntas de gastroenterología"],
     "enunciado": "¿Cuál es la causa más frecuente de deshidratación en la infancia?",
     "opciones": {
       "a": "Gastroenteritis viral.",
@@ -1648,15 +1552,14 @@
       "d": "Reflujo gastroesofágico."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_098",
-    "materia": "🧠 Neurología",
-    "submateria": null,
+    "materia": "neurologia",
+    "submateria": "Demencias",
     "enunciado": "¿Cuál es la causa más frecuente de demencia en mayores de 65 años?",
     "opciones": {
       "a": "Demencia vascular.",
@@ -1665,15 +1568,14 @@
       "d": "Demencia frontotemporal."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_099",
-    "materia": "🦠 Infectología",
-    "submateria": null,
+    "materia": ["infectologia", "ginecologia"],
+    "submateria": ["ITS", "Infecciones del tracto genital inferior"],
     "enunciado": "¿Cuál es la conducta más adecuada frente a una embarazada con VDRL reactiva y alergia a la penicilina?",
     "opciones": {
       "a": "Administrar eritromicina 500 mg cada 6 horas por 15 días.",
@@ -1682,15 +1584,14 @@
       "d": "Indicar tratamiento con azitromicina 1 g VO dosis única."
     },
     "correcta": "b",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   },
   {
     "id": "med_2018_100",
-    "materia": "🏥 Salud Pública",
-    "submateria": null,
+    "materia": "saludpublica",
+    "submateria": "APS – Atención primaria de la salud",
     "enunciado": "¿Cuál de las siguientes es una acción de prevención cuaternaria?",
     "opciones": {
       "a": "Vacunación antigripal anual.",
@@ -1699,9 +1600,8 @@
       "d": "Rehabilitación motora post ACV."
     },
     "correcta": "c",
-    "examen": "examen_unico_2018",
+    "examen": "Examen Único",
     "anio": 2018,
-    "fuente": "Examen Único Nacional 2018 – Ministerio de Salud de la Nación",
     "oficial": true
   }
 ]
