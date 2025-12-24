@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia)
+   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia + Embudo)
    ========================================================== */
 
 /* --- PROGRESO --- */
@@ -34,6 +34,7 @@ let BANK = {
   loaded: false
 };
 
+// Inicializar subtemas (Tomados de config.js o definidos externamente)
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -105,27 +106,44 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (MODIFICADO PARA HÍBRIDO) --- */
+/* --- PROCESADOR DE PREGUNTA (CON EMBUDO DE SUBTEMAS) --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
-    // ⚠️ CAMBIO CLAVE: Soportar Array o String en Materia
+    // 1. MATERIA (Soporte Array o String + Normalización)
     if (Array.isArray(q.materia)) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
         let mat = normalize(q.materia || "otras");
-        // Validar si existe en config, sino 'otras'
         if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
         q.materia = mat;
     }
 
-    // Submateria (Simplificada a string por ahora, tomamos la primera si es array)
-    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
-    q.submateria = normalize(q.submateria || "");
+    // 2. SUBMATERIA (El Embudo Mágico 🌪️)
+    // Definimos la materia principal para buscar la lista válida
+    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
 
+    // Obtenemos el subtema crudo del JSON
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
+    if (!subRaw) subRaw = "";
+
+    // LÓGICA: Si está en la lista oficial, se queda. Si no, va al fondo (Otras).
+    if (listaOficial.includes(subRaw)) {
+        q.submateria = subRaw;
+    } else {
+        // Si no coincide, asignamos el último de la lista (generalmente "Otras preguntas de...")
+        // Si la lista está vacía por error, asignamos "General"
+        q.submateria = listaOficial.length > 0 
+            ? listaOficial[listaOficial.length - 1] 
+            : "General";
+    }
+
+    // 3. OPCIONES Y CORRECTA
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
 
+    // 4. METADATOS EXAMEN
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
