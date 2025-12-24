@@ -1,1 +1,852 @@
-[]
+[
+  {
+    "id": "med_2015_001",
+    "materia": "urologia",
+    "submateria": "Fisiología renal",
+    "enunciado": "Una paciente de 68 años de edad consulta por diarrea de 7 días de evolución. Se le efectúa un examen de laboratorio que muestra los siguientes valores en sangre: Na: 135 mEq/L, K: 4 mEq/L, Cloro: 110 mEq/L, pH: 7.4, PCO2: 28 mm Hg, HCO3: 17 mEq/L. ¿Qué tipo de trastorno del equilibrio ácido base presenta?",
+    "opciones": {
+      "a": "Acidosis metabólica con anión gap aumentado",
+      "b": "Alcalosis metabólica",
+      "c": "Alcalosis respiratoria",
+      "d": "Acidosis metabólica con anión gap normal"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente presenta bicarbonato bajo (17), lo que indica acidosis metabólica. El Anion Gap es Na - (Cl + HCO3) = 135 - (110 + 17) = 8, lo cual es normal (8-12). Es una acidosis metabólica hiperclorémica (gap normal) típica de pérdidas intestinales de bicarbonato (diarrea). El pH normal y la PCO2 baja indican una compensación respiratoria o un trastorno mixto, pero el trastorno primario por los electrolitos es la acidosis metabólica.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_002",
+    "materia": "cardiologia",
+    "submateria": "Miocardiopatías",
+    "enunciado": "¿A qué entidad nosológica corresponde un soplo que se ausculta en mesocardio e incrementa su intensidad con la maniobra de Valsalva?",
+    "opciones": {
+      "a": "Estenosis aórtica",
+      "b": "Insuficiencia mitral",
+      "c": "Miocardiopatía hipertrófica obstructiva",
+      "d": "Comunicación interventricular"
+    },
+    "correcta": "c",
+    "explicacion": "La maniobra de Valsalva disminuye la precarga. La mayoría de los soplos disminuyen de intensidad, excepto el de la Miocardiopatía Hipertrófica Obstructiva (y el prolapso mitral), que aumenta al disminuir el volumen ventricular y aumentar la obstrucción del tracto de salida.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_003",
+    "materia": "traumatologia",
+    "submateria": "Columna vertebral",
+    "enunciado": "Un paciente de 34 años se presenta en el consultorio con el antecedente de una severa lumbociática y déficit a la extensión del hallux (según el reporte de su atención en guardia hace 7 días). Al momento de la consulta el enfermo se encuentra prácticamente asintomático, neurológicamente intacto y con una resonancia magnética obtenida esa semana evidenciando una gran hernia de disco a nivel del IV espacio. ¿Cuál sería a su juicio la conducta adecuada?",
+    "opciones": {
+      "a": "Utilización de un corset por 60 días",
+      "b": "Laminectomía y discectomía",
+      "c": "Microdiscectomía",
+      "d": "Control expectante"
+    },
+    "correcta": "d",
+    "explicacion": "Se trata al paciente, no a la imagen. Si el paciente está asintomático y sin déficit neurológico actual (restitutio ad integrum), no tiene indicación quirúrgica a pesar del hallazgo en la RM. Muchas hernias se reabsorben espontáneamente.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_004",
+    "materia": "gastroenterologia",
+    "submateria": "Estómago",
+    "enunciado": "¿Cuál de los siguientes signos macroscópicos de una lesión gástrica le harían sospechar la presencia de una neoplasia ulcerada?",
+    "opciones": {
+      "a": "La confluencia de los pliegues hacia la úlcera",
+      "b": "El fondo sanioso de la misma",
+      "c": "El aspecto elevado de un borde ulceroso",
+      "d": "La ubicación en curvatura mayor"
+    },
+    "correcta": "c",
+    "explicacion": "Los signos de malignidad en una úlcera gástrica incluyen: bordes elevados, irregulares, nodulares o evertidos; pliegues que se interrumpen abruptamente antes de llegar al borde; y fondo sucio/necrótico. La confluencia de pliegues hacia el cráter es signo de benignidad.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_005",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
+    "enunciado": "En el control en internación conjunta examina un neonato que presenta una tumoración localizada en región parietal derecha, sin lesiones en la piel y que le provoca una marcada asimetría craneana. En la zona central de la lesión se palpa una leve depresión. El resto del examen físico es normal excepto que tiene ictericia hasta la raíz de los muslos. Ud diagnostica céfalo hematoma. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Expectante, tratamiento eventual de la ictericia",
+      "b": "Solicita Rx de cráneo por el riesgo de fractura asociado",
+      "c": "Decide drenar el hematoma por punción para evitar el agravamiento de la ictericia",
+      "d": "Solo drena si la bilirrubina supera los 29 mg%"
+    },
+    "correcta": "a",
+    "explicacion": "El cefalohematoma es una colección subperióstica autolimitada. No se debe punzar ni drenar por riesgo de infección (osteomielitis). Puede causar hiperbilirrubinemia por hemólisis local, la cual se trata según guías habituales (luminoterapia). La 'depresión central' suele ser el borde calcificado del hematoma organizándose (signo del cráter) y no necesariamente una fractura.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_006",
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
+    "enunciado": "En un control en salud la madre de un niño de 12 meses refiere preocupación porque no puede retraerle el prepucio e higienizarlo correctamente. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Indica tratamiento tópico con esteroides",
+      "b": "Indica higiene por debajo del prepucio con hisopo de algodón húmedo",
+      "c": "Deriva al urólogo para corregir la fimosis",
+      "d": "Explica que es normal que el prepucio no se retraiga a esa edad"
+    },
+    "correcta": "d",
+    "explicacion": "La fimosis fisiológica es normal en lactantes y niños pequeños. No se debe forzar la retracción. La separación balanoprepucial ocurre espontáneamente con el tiempo.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_007",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Un paciente de sexo masculino 87 años de edad es ingresado a la central de emergencias por presentar adinamia, vómitos fecaloides y dolor abdominal difuso de 4 días de evolución progresiva. El paciente se halla estuporoso, febril, oligúrico y no responde a las preguntas que se le formulan. El examen físico revela dolor en hipocondrio derecho con leve defensa, peritonismo y distensión generalizada, sin hallar hernias. Carece de antecedentes quirúrgicos. Se le coloca una sonda nasogástrica que debita 1200 cm3 de material fecaloide y se le realiza laboratorio que muestra leucocitosis y evidencias de hemoconcentración. La Rx de abdomen revela distensión de varias asas del intestino delgado y aerobilia. ¿Cómo procedería Ud. ante este enfermo?",
+    "opciones": {
+      "a": "Realizaría una laparotomía exploradora ante el evidente diagnóstico de isquemia mesentérica",
+      "b": "Indicaría una ecografía a fin de descartar la obstrucción biliar por la sospecha de colangitis aguda litiásica",
+      "c": "Manejaría en forma conservadora al paciente dado que se trata de una obstrucción intestinal que cederá con tratamiento médico",
+      "d": "Sospecharía un íleo biliar por lo que solicitaría una TAC de abdomen y planificaría la laparotomía de urgencia"
+    },
+    "correcta": "d",
+    "explicacion": "La tríada de Rigler (Obstrucción de intestino delgado + Aerobilia + Litiasis ectópica) sugiere Íleo Biliar (una fístula colecisto-duodenal permite el paso de un cálculo grande que obstruye el íleon distal). En un paciente sin cirugías previas con obstrucción mecánica y aerobilia, este es el diagnóstico principal.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_008",
+    "materia": "urologia",
+    "submateria": "Síndromes clínicos",
+    "enunciado": "¿Cuál de estos signos NO está incluido en la definición de síndrome nefrítico?",
+    "opciones": {
+      "a": "Edema",
+      "b": "Hipertensión",
+      "c": "Proteinuria",
+      "d": "Dislipidemia"
+    },
+    "correcta": "d",
+    "explicacion": "El síndrome nefrítico se caracteriza por hematuria, hipertensión, edema leve/moderado, oliguria y proteinuria en rango no nefrótico. La dislipidemia es característica del síndrome NEFRÓTICO.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_009",
+    "materia": "otorrinolaringologia",
+    "submateria": "Oído",
+    "enunciado": "Paciente de 55 años de edad que consulta por otalgia, hipoacusia y parálisis facial periférica derecha de 48 horas de evolución. Al examen físico se observan numerosas vesículas en el conducto auditivo externo, membrana timpánica y pabellón auricular derecho. En la audiometría tonal se objetiva una hipoacusia neurosensorial ipsilateral. ¿Cuál sería su diagnóstico?",
+    "opciones": {
+      "a": "Miringitis bullosa",
+      "b": "Parálisis de Bell",
+      "c": "Síndrome de Ramsay Hunt",
+      "d": "Síndrome de Melkersson Rosenthal"
+    },
+    "correcta": "c",
+    "explicacion": "El Síndrome de Ramsay Hunt (Herpes Zoster Oticus) se define por la tríada de parálisis facial periférica, otalgia y vesículas en el pabellón auricular/conducto auditivo externo, causadas por la reactivación del virus Varicela-Zoster en el ganglio geniculado.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_010",
+    "materia": "toxicologia",
+    "submateria": "Toxicología",
+    "enunciado": "Se recibe el siguiente laboratorio: pH: 7.23, PCO2: 23 mm Hg, Bicarbonato: 10 mEq/L, Sodio plasmático: 140 mEq/L, Cloro: 100 mEq/L. De las siguientes, ¿cuál es la causa desencadenante más probable de este trastorno hidroelectrolítico?",
+    "opciones": {
+      "a": "Diarrea aguda",
+      "b": "Obstrucción respiratoria aguda",
+      "c": "Intoxicación con aspirina",
+      "d": "Acidosis tubular renal"
+    },
+    "correcta": "c",
+    "explicacion": "El paciente tiene Acidosis Metabólica (HCO3 bajo, pH bajo) con Anion Gap Aumentado (140 - (100+10) = 30). La diarrea y la acidosis tubular renal causan acidosis metabólica con GAP NORMAL (hiperclorémica). La intoxicación por salicilatos (aspirina) causa acidosis metabólica con gap aumentado (y a menudo alcalosis respiratoria concomitante).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_011",
+    "materia": "neumonologia",
+    "submateria": "Enfermedades intersticiales",
+    "enunciado": "¿Cuál es el método por imágenes de elección para la evaluación de la patología pulmonar difusa?",
+    "opciones": {
+      "a": "Radiografía de tórax frente y perfil",
+      "b": "Tomografía computada de alta resolución",
+      "c": "Resonancia magnética",
+      "d": "Tomografía por emisión de positrones"
+    },
+    "correcta": "b",
+    "explicacion": "La Tomografía Computada de Alta Resolución (TCAR o HRCT) es el 'gold standard' para evaluar la arquitectura pulmonar fina y diagnosticar enfermedades pulmonares intersticiales difusas (EPID).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_012",
+    "materia": "obstetricia",
+    "submateria": "Complicaciones maternas en el embarazo",
+    "enunciado": "Una paciente primigesta de 24 años, cursando la semana 34 de gestación, presenta dos mediciones de TA de 140/90 mm Hg con 6 horas de diferencia y trazas de proteinuria por tira reactiva. ¿Cuál considera la conducta más apropiada en este caso?",
+    "opciones": {
+      "a": "Internación, medicación antihipertensiva",
+      "b": "Seguimiento ambulatorio, dieta hiposódica y medicación antihipertensiva",
+      "c": "Internación, maduración fetal e interrupción de la gestación",
+      "d": "Seguimiento ambulatorio, reposo, conducta expectante"
+    },
+    "correcta": "d",
+    "explicacion": "Presenta Hipertensión Gestacional o Preeclampsia leve (la proteinuria es solo 'trazas', no significativa). Con 140/90 sin criterios de severidad a las 34 semanas, el manejo es expectante con control estricto (ambulatorio o internación breve para evaluación) hasta las 37 semanas. No se indica antihipertensivos para valores leves ya que pueden enmascarar el deterioro placentario.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_013",
+    "materia": "cirugiageneral",
+    "submateria": "Estómago",
+    "enunciado": "Un paciente, cuyo examen físico revela mucosa levemente secas, buen relleno capilar y una masa palpable en el epigastrio medio. ¿Cuáles serían los hallazgos de laboratorio más probable en este paciente?",
+    "opciones": {
+      "a": "pH 7.20 / PCO2 20 / HCO3 8",
+      "b": "pH 7.20 / PCO2 55 / HCO3 23",
+      "c": "pH 7.55 / PCO2 20 / HCO3 17",
+      "d": "pH 7.55 / PCO2 55 / HCO3 48"
+    },
+    "correcta": "d",
+    "explicacion": "La clínica de masa palpable en epigastrio (oliva pilórica o tumor) con deshidratación sugiere obstrucción del tracto de salida gástrico (estenosis pilórica). Los vómitos reiterados provocan pérdida de ácido clorhídrico, llevando a una Alcalosis Metabólica Hipoclorémica e Hipopotasémica. Se espera pH alto (>7.45), HCO3 alto y PCO2 alta compensatoria.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_014",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
+    "enunciado": "Un niño de 24 meses es traído a la guardia por presentar fiebre, irritabilidad que alterna con tendencia al sueño y vómitos. El paciente recibe amoxicilina desde hace 48 horas por una otitis media. Se realiza punción lumbar y el líquido muestra: Glucosa: 25 mg% (glucemia 90 mg%), Proteínas: 110 mg% y Leucocitos: 350/mm3 con 80% de neutrófilos. Examen directo negativo para gérmenes bacterianos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Meningitis viral",
+      "b": "Absceso cerebral asociado a otitis media",
+      "c": "Meningitis bacteriana parcialmente tratada",
+      "d": "Tromboflebitis del seno cavernoso"
+    },
+    "correcta": "c",
+    "explicacion": "El LCR muestra características bacterianas: pleocitosis neutrofílica, hiperproteinorraquia y, crucialmente, hipoglucorraquia (glucosa baja). El examen directo negativo se explica por el tratamiento antibiótico previo (meningitis decapitada).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_015",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
+    "enunciado": "Recibe en consulta a un niño de 4 años constipado crónico. ¿Cuál de las siguientes características lo hace considerar la posibilidad de un megacolon aganglionar congénito (Enfermedad de Hirschsprung)?",
+    "opciones": {
+      "a": "Comienzo de la constipación en los primeros meses de vida",
+      "b": "Episodios frecuentes de escurrimiento desde los 3 años",
+      "c": "Presencia de megarrecto",
+      "d": "Disminución de calibre del orificio anal"
+    },
+    "correcta": "a",
+    "explicacion": "La enfermedad de Hirschsprung es congénita, por lo que la sintomatología (retraso en la eliminación de meconio, constipación severa) suele iniciar desde el nacimiento o los primeros meses. El escurrimiento (encopresis) y el megarrecto son típicos de la constipación funcional.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_016",
+    "materia": "cirugiageneral",
+    "submateria": "Esófago",
+    "enunciado": "Un paciente de 73 años, con antecedentes de EPOC, cardiopatía isquémica crónica e insuficiencia renal crónica en diálisis trisemanal, consulta por disfagia para sólidos de 1 mes de evolución. Se detecta un cáncer epidermoide de tercio medio de esófago con estenosis casi completa de la luz. La TAC de tórax revela una masa mediastinal de gran tamaño, la cual compromete esófago, base del pulmón derecho y no tiene plano de separación claro con la aorta descendente. ¿Qué conducta seguiría ante este paciente?",
+    "opciones": {
+      "a": "Colocación de una endoprótesis",
+      "b": "Radioterapia local y quimioterapia sistémica",
+      "c": "Esofaguectomía sin toracotomía",
+      "d": "Esofaguectomía transtorácica"
+    },
+    "correcta": "a",
+    "explicacion": "Es un paciente con comorbilidades severas (EPOC, diálisis, cardiopatía) y un tumor T4 (invasión de estructuras adyacentes: aorta, pulmón) irresecable. El objetivo es paliativo (mejorar la disfagia). La colocación de un stent (endoprótesis) es la mejor opción para restablecer la vía digestiva rápidamente con menor morbilidad que la cirugía.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_017",
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
+    "enunciado": "¿Cuál es el signo más precoz y consistente de un enclavamiento del uncus del hipocampo?",
+    "opciones": {
+      "a": "Midriasis unilateral",
+      "b": "Trastorno del nivel de conciencia",
+      "c": "Hemiparesia",
+      "d": "Rigidez de descerebración"
+    },
+    "correcta": "a",
+    "explicacion": "La hernia uncal comprime el tercer par craneal (motor ocular común) ipsilateral, afectando primero a las fibras parasimpáticas superficiales, lo que produce una midriasis fija ipsilateral como signo temprano.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_018",
+    "materia": "saludpublica",
+    "submateria": "Evaluación de pruebas diagnósticas",
+    "enunciado": "Un nuevo test para el diagnóstico rápido de infección por Chlamydia reporta una especificidad del 85%. Eso significa que:",
+    "opciones": {
+      "a": "85% de los individuos infectados tienen el test positivo",
+      "b": "15% de los individuos no infectados tienen el test positivo",
+      "c": "85% de los individuos no infectados tienen el test positivo",
+      "d": "15% de los individuos infectados tienen el test positivo"
+    },
+    "correcta": "b",
+    "explicacion": "La especificidad es la capacidad de detectar a los sanos (Verdaderos Negativos). Si es del 85%, significa que el 85% de los sanos darán negativo. Por ende, el complemento (100% - 85% = 15%) corresponde a los sanos que dan positivo erróneamente (Falsos Positivos).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_019",
+    "materia": "urologia",
+    "submateria": "Glomerulonefritis primaria",
+    "enunciado": "Señale ¿cuál de estas glomerulopatías cursa con niveles normales de complemento?",
+    "opciones": {
+      "a": "Esclerosis glomerular focal y segmentaria",
+      "b": "Glomerulopatía membranoproliferativa idiopática",
+      "c": "Glomerulonefritis postestreptocóccica",
+      "d": "Crioglobulinemia"
+    },
+    "correcta": "a",
+    "explicacion": "La Esclerosis Focal y Segmentaria (y la de Cambios Mínimos) cursa con complemento sérico normal. Las que consumen complemento son: Postinfecciosa, Membranoproliferativa, Lúpica, Crioglobulinemia y Endocarditis.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_020",
+    "materia": "obstetricia",
+    "submateria": "Screening gestacional",
+    "enunciado": "Una mujer de 23 años ha tenido una niña con estigmas clínicos de Síndrome de Down. La madre quiere saber qué riesgo tiene para futuros embarazos. ¿En qué argumento basaría su respuesta?",
+    "opciones": {
+      "a": "Que se lo podrá estimar sólo midiendo Alfafetoproteína en cada embarazo",
+      "b": "Que se puede estimar luego de realizar el estudio genético en la niña afectada",
+      "c": "Que no es mayor que el riesgo de otra mujer de su misma edad",
+      "d": "Que no es mayor hasta que no cumpla los 35 años"
+    },
+    "correcta": "b",
+    "explicacion": "El riesgo de recurrencia depende fundamentalmente del cariotipo del caso índice. Si es una Trisomía 21 libre (no disyunción esporádica), el riesgo es bajo (~1%). Si es por Translocación Robertsoniana, el riesgo puede ser mucho mayor (especialmente si la madre es portadora balanceada).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_021",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
+    "enunciado": "Un niño de 22 meses de edad presenta desde hace 6 semanas deposiciones semilíquidas con moco y restos alimentarios cada 2 o 3 días, también estuvo 3 o 4 días sin deposiciones. No tiene fiebre, vómitos ni sangre en la materia fecal. El examen físico es normal excepto por aumento de ruidos hidroaéreos abdominales y no hay compromiso nutricional. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Intolerancia a la lactosa",
+      "b": "Diarrea crónica inespecífica",
+      "c": "Giardiasis",
+      "d": "Comienzo de enfermedad celíaca"
+    },
+    "correcta": "b",
+    "explicacion": "La Diarrea Crónica Inespecífica (o diarrea del deambulador) es un cuadro funcional benigno en niños pequeños, caracterizado por heces con restos alimentarios (lientería) y moco, alternancia con normalidad o constipación, y lo más importante: excelente curva de peso y talla (sin compromiso nutricional).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_022",
+    "materia": "urologia",
+    "submateria": "Fracaso renal agudo",
+    "enunciado": "Paciente de 50 años de edad, sexo masculino, que consulta por guardia por edemas y oliguria progresiva. Sin referir cólicos renales ni hematuria. Luego del interrogatorio y el examen físico, junto con un laboratorio que evidencia aumento de los valores de Urea y Creatinina, Ud tiene la sospecha de una uropatía obstructiva. Decide realizar entonces un estudio complementario para confirmar dicho diagnóstico. ¿Cuál es el primer estudio de elección?",
+    "opciones": {
+      "a": "Tomografía computada con contraste intravenoso",
+      "b": "Urograma excretor",
+      "c": "Tomografía computada sin contraste intravenoso",
+      "d": "Ecografía"
+    },
+    "correcta": "d",
+    "explicacion": "La ecografía renal y vesical es el método de elección inicial ante la sospecha de insuficiencia renal aguda (especialmente post-renal/obstructiva) por ser inocua, no requerir contraste (nefrotóxico) y tener alta sensibilidad para detectar dilatación de la vía urinaria (hidronefrosis).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_023",
+    "materia": "urologia",
+    "submateria": "Glomerulonefritis primaria",
+    "enunciado": "Paciente de 20 años de edad y sexo masculino, que se presenta con un cuadro de proteinuria mayor de 3.5 g/24 horas, edemas e hipoalbuminemia. Por dicha razón Ud. efectúa una biopsia renal percutánea. La microscopía glomerular informa 20 glomérulos mínimos. ¿Qué resultado esperaría encontrar en microscopía con inmunofluorescencia?",
+    "opciones": {
+      "a": "Depósito de C3",
+      "b": "Depósito de IgG",
+      "c": "Depósitos de IgA",
+      "d": "Ningún depósito"
+    },
+    "correcta": "d",
+    "explicacion": "La descripción corresponde a una Nefropatía por Cambios Mínimos (glomérulos normales o mínimos en microscopía óptica). Una característica definitoria es la ausencia de depósitos inmunes en la inmunofluorescencia (IF negativa).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_024",
+    "materia": "cirugiageneral",
+    "submateria": "Vía biliar",
+    "enunciado": "Una paciente de 56 años, hipertensa tratada y sin otros antecedentes patológicos, lo consulta porque hace 30 días estuvo de vacaciones y sufrió un episodio de pancreatitis aguda leve, por lo que estuvo internado en una clínica por 5 días. Entre los estudios que le trae figura una ecografía que muestra la presencia de litiasis vesicular múltiple. Actualmente se encuentra asintomática con un laboratorio completo con hepatograma normal, y al examen físico no muestra dolor a la palpación. Usted asume correctamente el cuadro como una pancreatitis de origen biliar. Ud decide:",
+    "opciones": {
+      "a": "Repetir los estudios para ver si hay algún indicio de colecistitis para decidir la cirugía",
+      "b": "Solicitar una colangioresonancia magnética nuclear para ver si tiene litiasis coledociana y realizar una papilotomía endoscópica",
+      "c": "Indicar la colecistectomía con colangiografía intraoperatoria lo antes posible en forma programada",
+      "d": "Controlar al paciente en forma periódica por tratarse de un primer episodio"
+    },
+    "correcta": "c",
+    "explicacion": "En la pancreatitis biliar leve, la colecistectomía está indicada tan pronto como el paciente se recupere (idealmente en la misma internación o dentro de las 2-4 semanas) para prevenir recurrencias, que son frecuentes. La paciente está asintomática y recuperada, por lo que la cirugía está indicada.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_025",
+    "materia": "pediatria",
+    "submateria": "Trastornos de la infancia y la adolescencia",
+    "enunciado": "Un lactante de 8 semanas de vida nacido en su domicilio y sin asistencia médica hasta este momento, presenta mala progresión de peso, constipación, con protrusión lingual, ictericia, hepatomegalia y hernia umbilical. ¿Cuál es la secuela alejada más probable de este lactante?",
+    "opciones": {
+      "a": "Sordera",
+      "b": "Parálisis cerebral",
+      "c": "Hidrocefalia",
+      "d": "Retardo mental"
+    },
+    "correcta": "d",
+    "explicacion": "El cuadro clínico (ictericia prolongada, hernia umbilical, macroglosia, constipación) es clásico del Hipotiroidismo Congénito. Si no se trata precozmente (algo probable dado el nacimiento domiciliario sin screening neonatal aparente), la secuela principal e irreversible es la discapacidad intelectual (cretinismo).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_026",
+    "materia": "ginecologia",
+    "submateria": "Síndrome de ovario poliquístico",
+    "enunciado": "Ud se encuentra frente a una paciente con irregularidades menstruales y signos de androgenismo. Detecta exceso de andrógenos en los exámenes de laboratorio. El exceso de cuál de las siguientes sustancias le hace pensar en origen ovárico de la hiperandrogenia:",
+    "opciones": {
+      "a": "Androstenediona",
+      "b": "Dehidroepiandrosterona",
+      "c": "Sulfato de dehidroepiandrosterona",
+      "d": "17 hidroxiprogesterona"
+    },
+    "correcta": "a",
+    "explicacion": "El Sulfato de DHEA es un marcador exclusivamente adrenal. La 17-OH Progesterona se eleva en la Hiperplasia Suprarrenal Congénita. La Androstenediona es secretada tanto por ovario como suprarrenal, pero en el contexto de SOP (ovario), suele estar elevada junto con la testosterona, mientras que el DHEAS suele ser normal o levemente elevado. Por descarte de los marcadores puramente adrenales, la androstenediona (o testosterona) orienta al ovario.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_027",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Un paciente varón de 55 años presenta una angina crónica estable de 1 año de evolución medicado con aspirina y beta bloqueantes. Se le indica una prueba ergométrica graduada que muestra dolor anginoso en el esfuerzo y cambios de segmento ST-T con infradesnivel de 2 mm de V1 a V6 a 4 METS, con un doble producto de 14.500. No presentó otros síntomas asociados. ¿Cuál sería su interpretación y conducta?",
+    "opciones": {
+      "a": "Prueba de bajo riesgo e indica seguimiento clínico con el mismo esquema",
+      "b": "Prueba de bajo riesgo e indica seguimiento clínico con agregado de nitritos al esquema terapéutico",
+      "c": "Prueba de alto riesgo e indica una cinecoronariografía",
+      "d": "Prueba de alto riesgo e indica seguimiento clínico con el agregado de nitritos al esquema terapéutico"
+    },
+    "correcta": "c",
+    "explicacion": "La aparición de isquemia a baja carga (< 5 METS), con depresión profunda del ST (> 2mm) y extensa (V1-V6), define una prueba de Alto Riesgo. Esto sugiere enfermedad coronaria severa (tronco o tres vasos), por lo que está indicada la Cinecoronariografía (CCG) para evaluar revascularización.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_028",
+    "materia": "traumatologia",
+    "submateria": "Miembro inferior",
+    "enunciado": "Un paciente de 40 años es atendido en la guardia 3 horas luego de haber sufrido un accidente automovilístico de alta energía. Al examinar al enfermo constatamos dolor en el miembro inferior derecho y la cadera en rotación interna y aducción. ¿Cuál sería su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Parálisis de rotadores externos",
+      "b": "Fractura lateral de cadera",
+      "c": "Luxación anterior de cadera",
+      "d": "Luxación posterior de cadera"
+    },
+    "correcta": "d",
+    "explicacion": "La posición de 'bañista impúdico' (miembro acortado, en aducción y rotación interna) es patognomónica de la Luxación Posterior de Cadera, frecuente en accidentes de tránsito (golpe del tablero contra la rodilla).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_029",
+    "materia": "cirugiageneral",
+    "submateria": "Esófago",
+    "enunciado": "Un paciente de 32 años de edad con enfermedad por reflujo gastroesofágico de 16 años de evolución, consulta por disfagia para alimentos sólidos que comienza hace 3 meses, sin pérdida de peso. Refiere haber abandonado la medicación habitual para su reflujo y desde hace un año manejarse con antiácidos endoluminales según sintomatología. Se le realiza una seriada esofágica y se halla estenosis de 5 a 6 cm de longitud en esófago distal regular, simétrica, con luz remanente de 4 mm, pequeña hernia hiatal por deslizamiento y esófago acortado. Por endoscopía la estenosis es infranqueable. Posee una manometría de 6 meses atrás prácticamente normal con perístasis conservada. ¿Qué tratamiento considera el óptimo para este paciente?",
+    "opciones": {
+      "a": "Doble dosis de bloqueantes de la bomba de protones de por vida",
+      "b": "Doble dosis de bloqueantes de la bomba de protones por 2 meses y dilatación endoscópica de la estenosis con balón",
+      "c": "Doble dosis de bloqueantes de la bomba de protones por 2 meses, dilatación endoscópica de la estenosis con balón y cirugía programada tipo Collis-Nissen",
+      "d": "Cirugía antirreflujo precoz dada la mala respuesta a los bloqueantes de la bomba de protones"
+    },
+    "correcta": "c",
+    "explicacion": "El paciente tiene una estenosis péptica severa y esófago corto (braquiesófago). El manejo requiere: 1) Tratamiento médico (IBP) para bajar la inflamación, 2) Dilatación para permitir la alimentación y evaluación, 3) Cirugía antirreflujo. Dado el esófago corto, una funduplicatura estándar (Nissen) tendría mucha tensión y fallaría, por lo que se requiere una gastroplastía de alargamiento (Collis) combinada con el Nissen.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_030",
+    "materia": "oftalmologia",
+    "submateria": "Glaucoma",
+    "enunciado": "En el tratamiento del glaucoma agudo primario por bloqueo angular, ¿cuál de las siguientes drogas está contraindicada?",
+    "opciones": {
+      "a": "Acetazolamida",
+      "b": "Manitol",
+      "c": "Acetato de prednisolona",
+      "d": "Sulfato de atropina"
+    },
+    "correcta": "d",
+    "explicacion": "La atropina es un midriático (dilata la pupila). En el glaucoma de ángulo cerrado, la midriasis pliega el iris periférico hacia el ángulo, bloqueando aún más el drenaje del humor acuoso y empeorando el cuadro. El tratamiento busca la miosis (pilocarpina) y reducir la producción/volumen (acetazolamida, manitol).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_031",
+    "materia": "cirugiageneral",
+    "submateria": "Intestino delgado",
+    "enunciado": "Un cirujano realiza una apendicectomía en un paciente masculino de 42 años con una apendicitis aguda. El informe de anatomía patológica reporta el hallazgo de un tumor carcinoide de 1,5 cm de diámetro en la porción media del apéndice, sin observarse invasión vascular o del meso del apéndice. ¿Cuál sería en este caso la mejor conducta a seguir?",
+    "opciones": {
+      "a": "Hemicolectomía derecha",
+      "b": "Radioterapia a nivel de fosa iliaca derecha",
+      "c": "No es necesario ningún tratamiento adicional",
+      "d": "Análogos de la somatostatina (Octreotide)"
+    },
+    "correcta": "c",
+    "explicacion": "Los tumores carcinoides apendiculares < 1 cm se curan con apendicectomía. Los > 2 cm requieren hemicolectomía. Entre 1-2 cm (este caso), la hemicolectomía se indica solo si hay factores de riesgo (invasión del meso, base del apéndice, invasión vascular). Al no tenerlos y estar en la porción media, la apendicectomía realizada es suficiente.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_032",
+    "materia": "pediatria",
+    "submateria": "Patología nefrourológica infantil",
+    "enunciado": "Un bebé de 15 meses de vida nacido a las 35 semanas de edad gestacional presenta desde el nacimiento el testículo derecho en el canal inguinal. ¿Cuál es la conducta más apropiada a seguir?",
+    "opciones": {
+      "a": "Observar hasta los 2 años",
+      "b": "Efectuar orquidopexia",
+      "c": "Tratar con testosterona",
+      "d": "Realizar un perfil hormonal"
+    },
+    "correcta": "b",
+    "explicacion": "En la criptorquidia, el descenso espontáneo es raro después de los 6 meses. La cirugía (orquidopexia) está indicada entre los 6 y 12 meses (máximo 18) para preservar la fertilidad y facilitar el control oncológico. A los 15 meses, la cirugía es la conducta correcta.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_033",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "Una paciente de 28 años, deportista, consulta por disnea al esfuerzo. Presenta antecedentes de estenosis mitral reumática. El electrocardiograma evidencia ritmo sinusal, sin otras alteraciones. El ecocardiograma presenta una válvula mitral flexible, no calcificada con un área de 1.1 cm, sin insuficiencia ni signos de hipertensión pulmonar. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Tratamiento con diuréticos y digital",
+      "b": "Tratamiento con betabloqueantes",
+      "c": "Valvuloplastia con balón",
+      "d": "Reemplazo valvular"
+    },
+    "correcta": "c",
+    "explicacion": "Paciente joven, sintomática, con estenosis mitral severa (área < 1.5 cm2) y anatomía favorable (válvula flexible, no calcificada, score de Wilkins bajo). El tratamiento de elección es la valvuloplastia mitral percutánea con balón.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_034",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
+    "enunciado": "Ud realiza un control en salud a un bebé de 2 meses que se muestra alerta, sonríe y gorjea. ¿Cuál de los siguientes hitos madurativos es más probable que manifieste este lactante?",
+    "opciones": {
+      "a": "Levantar la cabeza cuando está boca abajo",
+      "b": "Rodar sobre sí mismo",
+      "c": "Extender la mano hacia un objeto",
+      "d": "Pasar un objeto de una mano a otra"
+    },
+    "correcta": "a",
+    "explicacion": "A los 2 meses, los hitos esperados incluyen la sonrisa social, el gorjeo y levantar la cabeza/pecho en decúbito prono. Rodar y alcanzar objetos ocurre hacia los 4-5 meses, y pasar objetos de una mano a otra a los 6 meses.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_035",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Una mujer de 28 años refiere palpitaciones frecuentes. Al examen físico cardiovascular no presenta particularidades, el ecocardiograma es normal. En el estudio Holter se detectan episodios de taquicardia supraventricular por reentrada nodal. ¿Qué le indicaría a esta paciente?",
+    "opciones": {
+      "a": "Tratamiento con betabloqueantes",
+      "b": "Tratamiento con digital",
+      "c": "Ablación por radiofrecuencia",
+      "d": "Colocación de marcapasos"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes jóvenes con taquicardia por reentrada nodal sintomática y recurrente, la ablación por radiofrecuencia es el tratamiento de elección definitivo, con una tasa de éxito muy alta, evitando la medicación de por vida.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_036",
+    "materia": "gastroenterologia",
+    "submateria": "Esófago",
+    "enunciado": "¿Cuál es el diagnóstico diferencial más común del dolor de pecho de origen no cardíaco?",
+    "opciones": {
+      "a": "Embolia de pulmón",
+      "b": "Síndrome costoesternal",
+      "c": "Cólico biliar",
+      "d": "Reflujo gastroesofágico"
+    },
+    "correcta": "d",
+    "explicacion": "La Enfermedad por Reflujo Gastroesofágico (ERGE) es la causa más frecuente de dolor torácico no cardiogénico.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_037",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
+    "enunciado": "Lo consulta una paciente de 16 años en un control de salud. Cuando le solicita el carnet de vacunación observa que hasta los 7 años recibió las siguientes dosis: BCG 2 aplicaciones, Triple Viral (Sarampión, Paperas, Rubéola) 1 aplicación, Sabin 5 aplicaciones, Triple Bacteriana (Difteria, Pertussis, Tétanos) 5 aplicaciones, Haemophilus Influenzae 4 aplicaciones, Hepatitis B 3 aplicaciones. Señale qué vacunas debe indicar según el calendario oficial:",
+    "opciones": {
+      "a": "BCG, Doble adultos (Tétanos Difteria)",
+      "b": "BCG, Doble adultos, Triple viral",
+      "c": "Doble adultos (Tétanos, Difteria) y Triple viral (Sarampión, Paperas, Rubéola)",
+      "d": "Doble adultos (Tétanos, Difteria)"
+    },
+    "correcta": "c",
+    "explicacion": "A los 16 años, la paciente necesita completar el esquema de Triple Viral (se requieren 2 dosis y solo tiene 1) y recibir refuerzo de Tétanos/Difteria (se da a los 11 años o cada 10 años; su última triple bacteriana fue a los 6-7 años, por lo que necesita refuerzo).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_038",
+    "materia": "ginecologia",
+    "submateria": "Alteraciones menstruales",
+    "enunciado": "Lo consulta una paciente de 15 años por amenorrea primaria. Su telarca fue a los 12 años y 6 meses. Al examen físico presenta un Tanner M4, P3, talla 1.60 cm y el resto del examen normal. ¿Cuál considera es la conducta más adecuada?",
+    "opciones": {
+      "a": "Control clínico en 4 meses",
+      "b": "Cariotipo",
+      "c": "FSH, LH, TSH, T4 y Estradiol",
+      "d": "Hemograma, hepatograma y anticuerpos antigliadina"
+    },
+    "correcta": "c",
+    "explicacion": "La definición de Amenorrea Primaria incluye la ausencia de menarca a los 15 años en presencia de caracteres sexuales secundarios. Por lo tanto, aunque el desarrollo puberal es adecuado (Tanner 4), al cumplir 15 años sin menstruar, corresponde iniciar el estudio básico (perfil hormonal, ecografía) para descartar patología.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_039",
+    "materia": "pediatria",
+    "submateria": "Maltrato y abuso sexual",
+    "enunciado": "Un lactante de 3 meses es traído a la guardia por su abuelo por haber presentado vómitos. El lactante está irritable y presenta una tumefacción en la región parietal derecha. Se realiza una tomografía computada que muestra un céfalo hematoma con un pequeño trazo fracturario sin lesiones endocraneanas. Re interrogando a la abuela, la misma refiere que la madre del niño comentó que 24 horas previas el bebé rodó desde la cama hasta el piso alfombrado. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Dar analgésicos y citar en control en 24 hs con pautas de alarma",
+      "b": "Observar en la guardia y dar de alta sólo si tienen buena tolerancia oral",
+      "c": "Solicitar resonancia nuclear magnética de cerebro y decidir según los hallazgos",
+      "d": "Internar y solicitar Rx de todo el esqueleto"
+    },
+    "correcta": "d",
+    "explicacion": "Un lactante de 3 meses no tiene la capacidad motora de rolar (rodar), lo que hace que el relato de la caída sea inconsistente con el desarrollo (red flag). Esto, sumado a una fractura de cráneo, obliga a sospechar Maltrato Infantil. La conducta es internar para protección y realizar el mapeo óseo (serie esquelética) para buscar fracturas antiguas u otras lesiones.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_040",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
+    "enunciado": "Un recién nacido con antecedentes de polihidramnios y signo de doble burbuja en una ecografía prenatal, presenta un vómito bilioso a las 6 horas de vida. ¿Cuál de los siguientes es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad de Hirschsprung",
+      "b": "Estenosis hipertrófica de píloro",
+      "c": "Atresia duodenal",
+      "d": "Atresia esofágica"
+    },
+    "correcta": "c",
+    "explicacion": "La imagen de 'doble burbuja' (cámara gástrica y duodeno proximal dilatados) asociada a polihidramnios y vómitos biliosos precoces es patognomónica de la Atresia Duodenal.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_041",
+    "materia": "ginecologia",
+    "submateria": "Alteraciones menstruales",
+    "enunciado": "Una mujer de 31 años consulta por presentar un atraso de 25 días en su ciclo menstrual. Hace 10 días se le realizó un test de embarazo por anticuerpos monoclonales en orina cuyo resultado fue negativo. El médico le indica una prueba de progesterona que resultó positiva. ¿Cuál de los siguientes estudios complementarios sería de mayor utilidad para determinar la causa del atraso menstrual en esta paciente?",
+    "opciones": {
+      "a": "DAP test en sangre",
+      "b": "Dosaje de TSH",
+      "c": "Dosaje de FSH",
+      "d": "Ecografía pelviana"
+    },
+    "correcta": "b",
+    "explicacion": "La prueba de progesterona positiva (sangrado por deprivación) indica que hay útero permeable y suficiente estrógeno endógeno (ovario funcionante), pero anovulación. Descartado el embarazo, las causas más comunes de anovulación con estrógenos presentes son SOP, hipotiroidismo o hiperprolactinemia. Solicitar TSH (y Prolactina) es el paso diagnóstico siguiente.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_042",
+    "materia": "neurologia",
+    "submateria": "Convulsiones y epilepsia",
+    "enunciado": "Una niña es traída a la guardia por presentar una convulsión tónico-clónica generalizada. Ud intenta colocar un acceso venoso, no lo consigue y la convulsión continúa. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Diazepam por vía rectal",
+      "b": "Difenihidantoína por vía intramuscular",
+      "c": "Fenobarbital intraóseo",
+      "d": "Ácido valproico por vía rectal"
+    },
+    "correcta": "a",
+    "explicacion": "Ante un estatus convulsivo sin acceso venoso, la vía rectal (Diazepam) o la vía intramuscular (Midazolam) son las alternativas de primera línea para la benzodiacepina inicial mientras se intenta establecer acceso intraóseo o venoso.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_043",
+    "materia": "obstetricia",
+    "submateria": "Parto",
+    "enunciado": "Una primigesta de 20 años de 40 semanas se encuentra en trabajo de parto desde hace 9 horas. Las membranas se rompieron espontáneamente hace 5 horas. El líquido amniótico es meconial claro. La frecuencia cardiaca fetal es de 138, la variabilidad es de 5 latidos y no se observan desaceleraciones en el monitoreo fetal. La dinámica uterina es de 3/10/40\", se encuentra con dilatación completa desde hace una hora y media. La presentación es cefálica de vértice OIDP, primer plano de Hodge. Sin epidural. ¿Cuál es el diagnóstico de esta situación?",
+    "opciones": {
+      "a": "Distocia dinámica",
+      "b": "Periodo expulsivo prolongado",
+      "c": "Parto normal",
+      "d": "Detención del trabajo de parto en fase de aceleración"
+    },
+    "correcta": "b",
+    "explicacion": "La paciente está en dilatación completa (fase expulsiva) desde hace 1.5 horas. En nulíparas sin epidural, si el expulsivo dura > 2 horas (o >1 hora sin descenso según criterios antiguos más estrictos, o si hay falta de progreso), se considera prolongado. Lo más llamativo es que la cabeza está alta (I plano) pese a la dilatación completa, lo que sugiere desproporción o malposición (OIDP es posterior), configurando una falta de descenso/expulsivo prolongado.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_044",
+    "materia": "otorrinolaringologia",
+    "submateria": "Oído",
+    "enunciado": "Consulta en la guardia un hombre de 53 años por cuadro de vértigo objetivo, acompañado de náuseas y vómitos. Refiere que sus síntomas comenzaron hace 48 horas y solo ha presentado muy leve mejoría de los mismos. También manifiesta que los movimientos cefálicos incrementan su malestar por lo que prefiere estar inmóvil. Como antecedente refiere haber cursado una infección de vías aéreas superiores hace 7 días. Al examen físico presenta nistagmus derecho inagotable a predominio horizontal con un ligero componente rotatorio y que se atenúa con la fijación de la mirada. El examen neurológico mostró como única anormalidad un signo de Romberg positivo. ¿Cuál sería según su criterio el diagnóstico más probable?",
+    "opciones": {
+      "a": "Otitis media",
+      "b": "Vértigo posicional paroxístico benigno (VPPB)",
+      "c": "Neuronitis vestibular",
+      "d": "Enfermedad de Meniere"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico de vértigo agudo continuo (duración de días), severo, post-viral, con nistagmo periférico (horizontal-rotatorio, suprime con fijación) y sin síntomas auditivos (no menciona hipoacusia/tinnitus como Meniere) es característico de la Neuronitis Vestibular.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_045",
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
+    "enunciado": "Un varón de 12 años es traído a la guardia luego de haber sufrido un traumatismo de cráneo. Al examen físico responde solo con quejidos a los estímulos dolorosos y no localiza el dolor. Presenta pupilas mióticas, iguales y reactivas. ¿Cuál de los siguientes signos es el que más probablemente se asocie a hipertensión endocraneana con signos de herniación transtentorial en este?",
+    "opciones": {
+      "a": "Taquicardia",
+      "b": "Nistagmus",
+      "c": "Hiperventilación",
+      "d": "Hipotensión"
+    },
+    "correcta": "c",
+    "explicacion": "La herniación transtentorial central (diencefálica) progresiva o la compresión del mesencéfalo produce patrones respiratorios alterados, siendo la Hiperventilación Neurogénica Central un signo característico de deterioro rostro-caudal a nivel mesencefálico/protuberancial.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_046",
+    "materia": "oftalmologia",
+    "submateria": "Glaucoma",
+    "enunciado": "Un paciente de 65 años consulta por ojo rojo, dolor ocular unilateral intenso con irradiación a zona trigeminal, de comienzo brusco y acompañado de disminución de la visión, pupila dilatada y vómitos. ¿Cuál sería su diagnóstico?",
+    "opciones": {
+      "a": "Glaucoma crónico simple",
+      "b": "Iridociclitis",
+      "c": "Glaucoma agudo",
+      "d": "Neuritis óptica inflamatoria"
+    },
+    "correcta": "c",
+    "explicacion": "La tríada de dolor ocular intenso, disminución de la visión y midriasis (pupila dilatada) arreactiva, acompañada de síntomas vagales (vómitos) y ojo rojo, es clásica del Glaucoma Agudo de Ángulo Cerrado.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_047",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
+    "enunciado": "Un niño de tres años se presenta con tos de comienzo súbito de 12 horas de evolución. Antecedente de catarro de vías aéreas superiores de 72 horas de evolución. A la auscultación presenta sibilancias localizadas en base pulmonar derecha, con buena entrada bilateral de aire, sin dificultad respiratoria. Sin antecedentes de enfermedad respiratoria previa. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Solicita Rx de tórax en espiración",
+      "b": "Indica nebulización con salbutamol",
+      "c": "Indica sesión de kinesiología respiratoria y control en 24 hs",
+      "d": "Indica esteroides y control en 24 horas"
+    },
+    "correcta": "a",
+    "explicacion": "El comienzo súbito de tos y sibilancias localizadas (unilaterales) en un niño pequeño (3 años) es altamente sugestivo de aspiración de cuerpo extraño. La Rx de tórax en espiración forzada ayuda a detectar atrapamiento aéreo (hiperinsuflación) unilateral causado por el mecanismo de válvula del cuerpo extraño.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_048",
+    "materia": "infectologia",
+    "submateria": "Bacterias",
+    "enunciado": "Paciente de 22 años de edad en plan de artroscopía de rodilla (reparación de ligamento cruzado posterior). Tiene refuerzo de vacuna antitetánica de 3 años atrás y esquema de vacunación de infancia completo. ¿Cuál es la conducta más apropiada en cuanto a la profilaxis antitetánica preoperatorio?",
+    "opciones": {
+      "a": "Vacuna y gammaglobulina antitetánicas previamente a la cirugía",
+      "b": "Una dosis de vacuna antitetánica pre-cirugía y completar esquema luego de la cirugía",
+      "c": "Una dosis de vacuna antitetánica en el preoperatorio",
+      "d": "No requiere profilaxis antitetánica"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente tiene el esquema completo y un refuerzo vigente (hace < 5 años para heridas sucias, < 10 años para limpias/cirugía). Por lo tanto, está protegido y no requiere profilaxis adicional.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_049",
+    "materia": "psiquiatria",
+    "submateria": "Trastornos de la conducta alimentaria",
+    "enunciado": "Lo consulta una paciente de 16 años que presenta un índice de masa corporal de 15, amenorrea de 7 meses de evolución y distorsión de la imagen corporal. Su diagnóstico clínico es de anorexia nerviosa. ¿Qué estudios iniciales deben realizarse?",
+    "opciones": {
+      "a": "Ecografía pelviana y Rx de tórax",
+      "b": "Ecocardiograma e ionograma",
+      "c": "ECG e ionograma",
+      "d": "Calcio y proteinograma"
+    },
+    "correcta": "c",
+    "explicacion": "En la anorexia nerviosa severa (IMC 15), las complicaciones más urgentes y letales son las cardiovasculares (arritmias, prolongación QT) y las hidroelectrolíticas (hipopotasemia), especialmente ante el riesgo de síndrome de realimentación. Por ello, el ECG y el ionograma son prioritarios.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "med_2015_050",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Un joven de 22 años ha sido apuñalado por su pareja. Ingresa a la guardia 20 minutos después del episodio. Al examen se encuentra inquieto, pálido, sudoroso, habla claramente pero con incoherencias. Presenta una herida de 2 cm entre el esternón y la tetilla izquierda. La TA es de 70/30 mm Hg. La FC 130 por minuto. Los ruidos respiratorios son normales. Ruidos cardiacos difíciles de escuchar. Venas yugulares ingurgitadas. Se ha colocado máscara con oxigeno al 100% y se ha iniciado resucitación con fluidos. ¿Cuál es el paso siguiente más importante?",
+    "opciones": {
+      "a": "Obtención de una Rx de tórax",
+      "b": "Control de vía aérea por intubación orotraqueal",
+      "c": "Realización de toracocentesis",
+      "d": "Realización de pericardiocentesis"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente presenta la Tríada de Beck (Hipotensión, Ruidos cardíacos alejados, Ingurgitación yugular) sugestiva de Taponamiento Cardíaco traumático. Ante la inestabilidad hemodinámica (shock), la descompresión inmediata mediante pericardiocentesis (o ventana pericárdica/toracotomía si está disponible el equipo quirúrgico inmediato) es vital para salvar la vida.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  
