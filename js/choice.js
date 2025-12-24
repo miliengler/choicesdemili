@@ -1,10 +1,10 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Buscador Pro)
+   📚 MEbank 3.0 – Práctica por materia (Final)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
-let choiceOpenSlug = null; // Para abrir/cerrar manualmente
-let choiceSearchTerm = ""; // Término de búsqueda actual
+let choiceOpenSlug = null; 
+let choiceSearchTerm = ""; 
 
 /* --- CÍRCULO DE PROGRESO --- */
 function renderProgressCircle(percent) {
@@ -28,16 +28,20 @@ function renderProgressCircle(percent) {
 function renderChoice() {
   const app = document.getElementById("app");
   
-  // 1. Filtramos y Ordenamos según búsqueda
+  // 1. Filtramos y Ordenamos
   const subjects = getFilteredSubjects();
 
   app.innerHTML = `
     <div class="card fade" style="max-width:900px;margin:auto;">
       
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
-        <h2 style="margin:0;">📚 Práctica por materia</h2>
-        <button class="btn-small" onclick="renderHome()" style="background:#f1f5f9; border:1px solid #cbd5e1;">
-           ⬅ Volver al inicio
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
+        <div>
+          <h2 style="margin:0 0 6px 0;">📚 Práctica por materia</h2>
+          <p style="color:#64748b; margin:0; font-size:14px;">Elegí una materia y opcionalmente uno o más subtemas.</p>
+        </div>
+        
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#f1f5f9; border:1px solid #cbd5e1;">
+           ⬅ Volver
         </button>
       </div>
 
@@ -49,7 +53,7 @@ function renderChoice() {
                style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:15px;">
         
         <select id="choiceOrderSelect" 
-                style="padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; background:white;" 
+                style="padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; background:white; cursor:pointer;" 
                 onchange="onChangeChoiceOrder(this.value)">
             <option value="az" ${CHOICE_ORDER === "az" ? "selected" : ""}>A → Z</option>
             <option value="progreso" ${CHOICE_ORDER === "progreso" ? "selected" : ""}>Por progreso</option>
@@ -59,28 +63,35 @@ function renderChoice() {
       <div style="margin-top:10px;">
         ${subjects.length > 0 
            ? subjects.map(m => renderMateriaRow(m)).join("") 
-           : `<div style="text-align:center; color:#64748b; padding:20px;">No se encontraron materias ni temas.</div>`
+           : `<div style="text-align:center; color:#64748b; padding:30px;">No se encontraron resultados.</div>`
         }
       </div>
 
     </div>
   `;
   
-  // Auto-focus al buscador si hay texto (para no perder foco al escribir)
+  // Auto-focus para no perder el cursor al escribir
   if (choiceSearchTerm) {
       const input = document.querySelector("input[type='text']");
       if(input) {
           input.focus();
-          // Truco para poner el cursor al final
           const val = input.value; input.value = ''; input.value = val; 
       }
   }
 }
 
-/* --- LÓGICA DE BÚSQUEDA --- */
+/* --- LÓGICA DE INTERACCIÓN --- */
+
+// ✅ FUNCION RECUPERADA
+function onChangeChoiceOrder(val) {
+  CHOICE_ORDER = val;
+  localStorage.setItem("MEbank_ChoiceOrder_v1", val);
+  renderChoice();
+}
+
 function onSearchChoice(val) {
-    choiceSearchTerm = val; // Guardamos lo que escribe
-    renderChoice();         // Re-renderizamos instantáneamente
+    choiceSearchTerm = val; 
+    renderChoice();         
 }
 
 function getFilteredSubjects() {
@@ -90,13 +101,9 @@ function getFilteredSubjects() {
   // FILTRO
   if (term) {
     list = list.filter(subj => {
-        // 1. Coincide Nombre Materia?
         const matchName = normalize(subj.name).includes(term);
-        
-        // 2. Coincide algún Subtema?
         const subtemas = BANK.subsubjects[subj.slug] || [];
         const matchSub = subtemas.some(s => normalize(s).includes(term));
-
         return matchName || matchSub;
     });
   }
@@ -121,11 +128,9 @@ function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
   
-  // LÓGICA DE APERTURA AUTOMÁTICA (Opción B)
-  // Si hay búsqueda y esta materia pasó el filtro, revisamos si es por subtema
+  // Abrir automáticamente si hay coincidencia de búsqueda interna
   let forceOpen = false;
   if (term) {
-      // Si el término está en un subtema, forzamos abrir
       const subtemas = BANK.subsubjects[m.slug] || [];
       if (subtemas.some(s => normalize(s).includes(term))) {
           forceOpen = true;
@@ -151,8 +156,6 @@ function renderMateriaRow(m) {
 }
 
 function toggleMateriaChoice(slug) {
-  // Si el usuario toca manualmente, alternamos. 
-  // (Si hay búsqueda, esto permite cerrar una forzada si quiere)
   choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
   renderChoice();
 }
@@ -162,13 +165,9 @@ function renderMateriaExpanded(m, term) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
 
-  // FILTRADO INTERNO DE SUBTEMAS
-  // Si hay búsqueda, solo mostramos los subtemas que coinciden
-  // (A menos que la coincidencia haya sido por el nombre de la materia, ahí mostramos todo)
   if (term) {
       const matchName = normalize(m.name).includes(term);
       if (!matchName) {
-          // Si la materia NO coincide por nombre, filtramos sus hijos
           subtemasTexto = subtemasTexto.filter(s => normalize(s).includes(term));
       }
   }
@@ -177,7 +176,6 @@ function renderMateriaExpanded(m, term) {
     const subSlug = normalize(nombreSub);
     const count = contarPreguntasMateriaSub(slug, subSlug);
     
-    // Resaltar texto si coincide
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) {
         displayName = `<b>${nombreSub}</b>`;
@@ -238,11 +236,6 @@ function contarPreguntasMateriaSub(mSlug, subSlug) {
 function iniciarPracticaMateria(mSlug) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
-
-  // Si no seleccionó nada, pero filtró por subtemas, quizás podríamos seleccionar todo lo visible.
-  // Pero por seguridad, mantenemos la lógica: si no selecciona nada, son TODOS los de la materia (o filtrados).
-  // Para MEbank 3.0: Si no hay selección, mandamos null (que significa "Toda la materia").
-  
   const preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
   if (!preguntas.length) {
