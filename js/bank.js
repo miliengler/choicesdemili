@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia)
+   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia + Embudo)
    ========================================================== */
 
 /* --- PROGRESO --- */
@@ -34,6 +34,7 @@ let BANK = {
   loaded: false
 };
 
+// Carga los subtemas desde la variable global si existe
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -105,11 +106,11 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (MODIFICADO PARA HÍBRIDO) --- */
+/* --- PROCESADOR DE PREGUNTA (CON EMBUDO PARA "OTRAS") --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
-    // ⚠️ CAMBIO CLAVE: Soportar Array o String en Materia
+    // 1. Materia (Array o String -> Array Normalizado)
     if (Array.isArray(q.materia)) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
@@ -119,9 +120,35 @@ function processQuestion(q, type, examMeta) {
         q.materia = mat;
     }
 
-    // Submateria (Simplificada a string por ahora, tomamos la primera si es array)
-    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
-    q.submateria = normalize(q.submateria || "");
+    // 2. Submateria (EL EMBUDO: Si no coincide, va a "Otras")
+    
+    // a. Buscamos la lista oficial de temas para esta materia
+    // Usamos la primera materia del array para decidir la lista
+    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
+    // b. Obtenemos el subtema que viene del JSON
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
+    if (!subRaw) subRaw = "";
+    
+    // c. Normalizamos para comparar
+    const subNorm = normalize(subRaw);
+    
+    // d. Buscamos si existe en la lista oficial (comparando normalizados)
+    const existe = listaOficial.some(tema => normalize(tema) === subNorm);
+
+    if (existe) {
+        // Si existe, lo dejamos (normalizado para que coincida en choice.js)
+        q.submateria = subNorm;
+    } else {
+        // ⚠️ Si NO existe en la lista, lo mandamos al último ítem (Otras)
+        if (listaOficial.length > 0) {
+            const ultimoTema = listaOficial[listaOficial.length - 1];
+            q.submateria = normalize(ultimoTema);
+        } else {
+            q.submateria = "general";
+        }
+    }
 
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
@@ -165,7 +192,7 @@ function getCorrectIndex(q) {
 /* --- APIS CON FILTRO HÍBRIDO --- */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        // 1. Chequeo si la materia es o contiene el slug
+        // 1. Chequeo de Materia
         const esDeLaMateria = Array.isArray(q.materia) 
             ? q.materia.includes(slug) 
             : q.materia === slug;
@@ -185,4 +212,3 @@ function getQuestionsByExamen(id) {
 function getQuestionById(id) {
     return BANK.questions.find(q => q.id === id);
 }
-Piensa bien
