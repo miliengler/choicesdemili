@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Textos Corregidos)
+   📚 MEbank 3.0 – Práctica por materia (Textos Dinámicos)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -183,10 +183,13 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- BOTONES ---
+  // --- LOGICA DE BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
+  
+  // Calculamos desde qué número reanuda (Respuestas + 1)
+  const siguienteNum = stats.ok + stats.bad + 1;
 
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
@@ -197,29 +200,36 @@ function renderMateriaExpanded(m, term, stats) {
     </button>
   `;
 
-  // Botón: Reanudar
+  // Botón: Reanudar (Con número)
   if (hayRespondidas && faltanResponder) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
-          ⏩ Reanudar
+          ⏩ Reanudar (desde ${siguienteNum})
         </button>
       `;
   }
 
-  // Botón: Aprender
+  // Botón: Aprender (Con cantidad errores)
   if (hayErrores) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
-           🧠 Aprender (${stats.bad})
+           🧠 Repasar mis ${stats.bad} errores
         </button>
       `;
   }
 
-  // Fila Tools
+  // Fila Tools (Con nombre materia)
+  // Nota: m.name ya suele traer el emoji, así que queda "Ver estadísticas de 🫁 Neumonología"
   let filaTools = `
-    <div style="display:flex; gap:10px; margin-top:10px;">
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" onclick="alert('Próximamente: Estadísticas detalladas')">📊 Estadísticas</button>
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" onclick="alert('Próximamente: Notas de materia')">📒 Notas</button>
+    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+               onclick="alert('Próximamente: Estadísticas de ${m.name}')">
+           📊 Ver estadísticas de ${m.name}
+       </button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+               onclick="alert('Próximamente: Notas de ${m.name}')">
+           📒 Mis notas de ${m.name}
+       </button>
     </div>
   `;
 
@@ -233,7 +243,7 @@ function renderMateriaExpanded(m, term, stats) {
          ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
 
-      <div style="display:flex; gap:8px; margin-bottom:10px;">
+      <div style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
          ${botonesHTML}
       </div>
       
