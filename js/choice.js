@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Ayuda/Info)
+   📚 MEbank 3.0 – Práctica por materia (Diseño Final Pulido)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -39,21 +39,22 @@ function renderChoice() {
   app.innerHTML = `
     <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
         <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+            
             <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
             <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
             
             <div style="margin-bottom:15px;">
-                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">▶ Iniciar práctica</div>
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
                 <div style="font-size:14px; color:#475569;">Crea un examen mezclando <b>todas</b> las preguntas seleccionadas (nuevas y viejas). Ideal para repaso general.</div>
             </div>
 
             <div style="margin-bottom:15px;">
-                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">⏩ Resolver pendientes</div>
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏩ Resolver pendientes</div>
                 <div style="font-size:14px; color:#475569;">Filtra solo las preguntas que <b>nunca respondiste</b>. Ideal para avanzar en la materia sin repetir.</div>
             </div>
 
             <div style="margin-bottom:20px;">
-                <div style="font-weight:700; color:#1d4ed8; margin-bottom:4px;">🧠 Repasar incorrectas</div>
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
                 <div style="font-size:14px; color:#475569;">Crea un examen exclusivo con las preguntas que tenés registradas como <b>Incorrectas</b>. Ideal para corregir errores.</div>
             </div>
 
@@ -275,7 +276,7 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // --- TOOLS ---
+  // --- TOOLS (Sin Emojis) ---
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
