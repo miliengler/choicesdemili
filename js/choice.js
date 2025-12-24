@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Textos Help Corregidos)
+   📚 MEbank 3.0 – Práctica por materia (Textos Finales)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -44,7 +44,7 @@ function renderChoice() {
             
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
-                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (nuevas y ya respondidas). Ideal para repaso general.</div>
+                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (respondidas previamente o no). Ideal para repaso general.</div>
             </div>
 
             <div style="margin-bottom:15px;">
