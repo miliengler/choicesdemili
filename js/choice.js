@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Textos Dinámicos)
+   📚 MEbank 3.0 – Práctica por materia (Diseño Final)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -188,19 +188,16 @@ function renderMateriaExpanded(m, term, stats) {
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
   
-  // Calculamos desde qué número reanuda (Respuestas + 1)
   const siguienteNum = stats.ok + stats.bad + 1;
-
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
-  // Botón Base: Iniciar
+  // Botones Superiores (Acciones)
   let botonesHTML = `
     <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'normal')">
       ▶ Iniciar
     </button>
   `;
 
-  // Botón: Reanudar (Con número)
   if (hayRespondidas && faltanResponder) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
@@ -209,7 +206,6 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // Botón: Aprender (Con cantidad errores)
   if (hayErrores) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
@@ -218,17 +214,19 @@ function renderMateriaExpanded(m, term, stats) {
       `;
   }
 
-  // Fila Tools (Con nombre materia)
-  // Nota: m.name ya suele traer el emoji, así que queda "Ver estadísticas de 🫁 Neumonología"
+  // --- BOTONES INFERIORES (Stats & Notas) ---
+  // Limpiamos el nombre de la materia (quitamos emojis y símbolos raros) para estos botones
+  const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
+
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
        <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
-               onclick="alert('Próximamente: Estadísticas de ${m.name}')">
-           📊 Ver estadísticas de ${m.name}
+               onclick="alert('Próximamente: Estadísticas de ${cleanName}')">
+           📊 Ver estadísticas de ${cleanName}
        </button>
        <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
-               onclick="alert('Próximamente: Notas de ${m.name}')">
-           📒 Mis notas de ${m.name}
+               onclick="alert('Próximamente: Notas de ${cleanName}')">
+           📒 Mis notas de ${cleanName}
        </button>
     </div>
   `;
