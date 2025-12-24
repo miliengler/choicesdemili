@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 MEbank 3.0 – Estadísticas (Diseño Clásico + Funciones)
+   📊 ESTADÍSTICAS GLOBALES – Estilo Clásico (Mejorado)
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -7,234 +7,345 @@ let statsSearchTerm = "";
 
 function renderStats() {
   const app = document.getElementById("app");
-  
+
   // --- 1. CÁLCULOS GLOBALES ---
-  const totalPreguntasBanco = BANK.questions.length;
-  let correctas = 0;
-  let incorrectas = 0;
-  
-  // Recorremos todo el progreso
-  Object.values(PROG).forEach(materiaData => {
-    Object.values(materiaData).forEach(qData => {
-      if(qData.status === 'ok') correctas++;
-      if(qData.status === 'bad') incorrectas++;
+  let totalPreguntas = 0;
+  let totalRespondidas = 0;
+  let totalCorrectas = 0;
+  let totalIncorrectas = 0;
+
+  // Calculamos totales recorriendo el banco y el progreso
+  BANK.subjects.forEach(m => {
+    const preguntasMateria = BANK.questions.filter(q => q.materia === m.slug);
+    totalPreguntas += preguntasMateria.length;
+
+    const progresoMateria = PROG[m.slug] || {};
+    Object.values(progresoMateria).forEach(p => {
+      if (p.status === "ok" || p.status === "bad") {
+        totalRespondidas++;
+        if (p.status === "ok") totalCorrectas++;
+        if (p.status === "bad") totalIncorrectas++;
+      }
     });
   });
 
-  const respondidas = correctas + incorrectas;
-  const sinResponder = totalPreguntasBanco - respondidas;
+  const totalSinResponder = totalPreguntas - totalRespondidas;
   
-  // Porcentaje de Dominio (Sobre el TOTAL del banco)
-  const porcentajeDominio = Math.round((correctas / totalPreguntasBanco) * 100);
+  // Porcentaje de Dominio (Correctas sobre el TOTAL del banco)
+  const porcentajeDominio = totalPreguntas > 0 
+    ? Math.round((totalCorrectas / totalPreguntas) * 100) 
+    : 0;
 
-  // --- 2. RENDERIZADO ---
+  // --- 2. Lógica de Actividad Semanal ---
+  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  const today = new Date();
+  let weeklyTotalCorrect = 0; // Para el mensaje alentador
+
+  const weekList = Array.from({ length: 7 }).map((_, i) => {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const key = d.toISOString().split('T')[0]; 
+    const count = STATS_DAILY[key] || 0;
+    
+    if(i < 7) weeklyTotalCorrect += count; // Sumamos para el mensaje
+
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    
+    const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
+    const checkIcon = count > 0 ? "✅" : "⬜";
+
+    return `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
+        <span style="color:#64748b">➤ ${dd}/${mm}</span>
+        <span>
+            <b style="color:${colorCount}">${count} correctas</b> ${checkIcon}
+        </span>
+      </div>`;
+  }).reverse().join(""); // Orden cronológico
+
+  // --- 3. RENDERIZADO PRINCIPAL ---
   app.innerHTML = `
-    <div class="card fade" style="max-width:900px; margin:auto;">
+    <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h2 style="margin:0;">📊 Mi Progreso</h2>
-        <button class="btn-small" onclick="renderHome()" style="background:#fff; border:1px solid #e2e8f0; color:#475569;">
-           ⬅ Volver
-        </button>
+        <h3 style="margin:0;">📊 Estadísticas generales</h3>
+        <button class='btn-small' onclick='renderHome()' style="padding:5px 10px; font-size:12px;">Volver</button>
       </div>
-
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
+      
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
         
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:15px; text-align:center;">
-            <div style="font-size:24px; font-weight:bold; color:#16a34a;">${correctas}</div>
-            <div style="font-size:12px; color:#64748b; text-transform:uppercase;">Correctas</div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
         </div>
 
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:15px; text-align:center;">
-            <div style="font-size:24px; font-weight:bold; color:#ef4444;">${incorrectas}</div>
-            <div style="font-size:12px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
         </div>
 
-        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:15px; text-align:center; background:#f8fafc;">
-            <div style="font-size:24px; font-weight:bold; color:#94a3b8;">${sinResponder}</div>
-            <div style="font-size:12px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
-        </div>
-
-      </div>
-
-      <div style="margin-bottom:30px; padding:15px; border:1px solid #e2e8f0; border-radius:8px;">
-        <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-            <span style="font-weight:600; color:#334155; font-size:14px;">Dominio del Banco</span>
-            <span style="font-weight:bold; color:#16a34a; font-size:14px;">${porcentajeDominio}%</span>
-        </div>
-        <div style="height:10px; background:#f1f5f9; border-radius:5px; overflow:hidden;">
-            <div style="width:${porcentajeDominio}%; background:#16a34a; height:100%; transition: width 0.5s ease;"></div>
-        </div>
-        <div style="font-size:12px; color:#94a3b8; margin-top:5px; text-align:center;">
-            Preguntas correctas sobre el total de preguntas (${totalPreguntasBanco}).
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
+            <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
         </div>
       </div>
 
-      <hr style="margin:20px 0; border:0; border-top:1px solid #e2e8f0;">
-
-      <div style="margin-bottom:30px;">
-        <h3 style="margin-top:0; font-size:18px;">📅 Actividad Semanal</h3>
-        
-        <div style="height:150px; background:#f8fafc; border:1px dashed #cbd5e1; border-radius:8px; display:flex; align-items:center; justify-content:center; color:#94a3b8; font-size:13px;">
-           (Gráfico de actividad aquí)
+      <div style="margin-bottom:10px; text-align:left;">
+        <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+            <span style="color:#334155; font-weight:600;">Dominio del Banco</span>
+            <span style="color:#16a34a; font-weight:bold;">${porcentajeDominio}%</span>
         </div>
-
-        <div style="margin-top:10px; padding:10px; background:#eff6ff; border-radius:6px; font-size:14px; color:#1e40af; text-align:center;">
-            🎉 <b>¡Bien hecho!</b> Esta semana avanzaste con <b>${getRandomWeeklyCount()}</b> preguntas. ¡Mantené el ritmo!
+        <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
+            <div style="width:${porcentajeDominio}%; background:#16a34a; height:100%;"></div>
+        </div>
+        <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
+           Preguntas dominadas sobre el total (${totalPreguntas})
         </div>
       </div>
 
-      <div style="margin-bottom:30px;">
-         <h3 style="margin-top:0; font-size:18px;">🧠 Sugerencias de Repaso</h3>
-         <div id="suggestionsContainer">
-            ${getSuggestionsHTML()}
-         </div>
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
+      <div style='text-align:left; max-width:300px; margin:auto;'>
+        ${weekList}
       </div>
 
-      <hr style="margin:20px 0; border:0; border-top:1px solid #e2e8f0;">
+      <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
+        ${weeklyTotalCorrect > 0 
+           ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Esa es la actitud!` 
+           : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
+      </div>
 
-      <div>
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; flex-wrap:wrap; gap:10px;">
-            <h3 style="margin:0; font-size:18px;">📚 Detalle por Materia</h3>
-            
-            <div style="display:flex; gap:8px;">
-                <input type="text" 
-                       placeholder="Buscar..." 
-                       value="${statsSearchTerm}"
-                       oninput="onSearchStats(this.value)"
-                       style="padding:6px 10px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:120px;">
-                
-                <select onchange="onChangeStatsOrder(this.value)" 
-                        style="padding:6px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
-                    <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
-                    <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
-                    <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
-                </select>
-            </div>
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <button class='btn-small' style="background:#fff; border-color:#cbd5e1; color:#64748b;" onclick='resetGlobalStats()'>
+          🗑 Reiniciar todo el progreso
+      </button>
+
+    </div>
+
+    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
+        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
+        <p style="font-size:14px; color:#64748b; margin-bottom:15px;">
+          Basadas en tu precisión por materia.
+        </p>
+        <div id="sugerencias-container">
+            ${getSugerenciasHTML()}
         </div>
+    </div>
 
-        <div id="statsListContainer">
-            </div>
+    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
+      <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
+      
+      <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
+         <input type="text" 
+                placeholder="🔍 Buscar materia..." 
+                value="${statsSearchTerm}"
+                oninput="onSearchStats(this.value)"
+                style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
+         
+         <select onchange="onChangeStatsOrder(this.value)" 
+                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
+             <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
+             <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
+             <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
+         </select>
       </div>
-
+      
+      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
+          </ul>
+    </div>
+    
+    <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
+       Vos podés ❤️
     </div>
   `;
 
-  renderStatsList();
+  renderMateriasList();
 }
 
 /* ==========================================================
-   🔄 RENDER LISTA (Lógica Zero Flicker)
+   📋 Lista de Materias (Filtrable y Ordenable)
    ========================================================== */
+function renderMateriasList() {
+  const container = document.getElementById("matsList");
+  if (!container) return;
+  
+  // 1. Clonar lista para no afectar la original
+  let list = [...BANK.subjects];
 
-function renderStatsList() {
-    const container = document.getElementById("statsListContainer");
-    if(!container) return;
+  // 2. Filtrar por Buscador
+  const term = normalize(statsSearchTerm);
+  if (term) {
+      list = list.filter(m => normalize(m.name).includes(term));
+  }
 
-    let list = [...BANK.subjects];
-    const term = normalize(statsSearchTerm);
+  // 3. Ordenar
+  list.sort((a, b) => {
+    // Cálculo auxiliar para ordenar
+    const getPct = (slug) => {
+        const total = BANK.questions.filter(q => q.materia === slug).length;
+        if (total === 0) return 0;
+        const p = PROG[slug] || {};
+        let ok = 0, bad = 0;
+        Object.values(p).forEach(x => { if(x.status==='ok') ok++; if(x.status==='bad') bad++; });
+        return (ok+bad) > 0 ? (ok/(ok+bad))*100 : 0;
+    };
 
-    // 1. Filtrar
-    if (term) {
-        list = list.filter(s => normalize(s.name).includes(term));
-    }
-
-    // 2. Ordenar
     if (STATS_ORDER === 'az') {
-        list.sort((a, b) => a.name.localeCompare(b.name));
+        const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
+    } else if (STATS_ORDER === 'progreso') {
+        return getPct(a.slug) - getPct(b.slug); // Menor a Mayor
     } else {
-        list.sort((a, b) => {
-            const statA = getMateriaStatsSimple(a.slug);
-            const statB = getMateriaStatsSimple(b.slug);
-            return STATS_ORDER === 'progreso' 
-                ? statA.percent - statB.percent
-                : statB.percent - statA.percent;
-        });
+        return getPct(b.slug) - getPct(a.slug); // Mayor a Menor
     }
+  });
 
-    // 3. HTML (Diseño Fila Simple)
-    if (list.length === 0) {
-        container.innerHTML = `<div style="text-align:center; padding:20px; color:#94a3b8; font-size:14px;">No hay resultados.</div>`;
-        return;
-    }
+  // 4. Renderizar
+  if (list.length === 0) {
+      container.innerHTML = `<li style="text-align:center; padding:20px; color:#94a3b8;">No se encontraron materias.</li>`;
+      return;
+  }
 
-    container.innerHTML = list.map(m => {
-        const s = getMateriaStatsSimple(m.slug);
+  const listHTML = list.map(m => {
+    const preguntas = BANK.questions.filter(q => q.materia === m.slug);
+    const totalM = preguntas.length;
+    
+    // Si la materia no tiene preguntas, no la mostramos
+    if (totalM === 0) return ""; 
+
+    const datos = PROG[m.slug] || {};
+    let ok = 0, bad = 0;
+    Object.values(datos).forEach(p => {
+      if (p.status === "ok") ok++;
+      if (p.status === "bad") bad++;
+    });
+    
+    const resp = ok + bad;
+    const pct = resp > 0 ? Math.round((ok / resp) * 100) : 0;
+    const noresp = totalM - resp;
+
+    // Colores
+    const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
+
+    return `
+      <li style="margin-bottom: 10px;">
         
-        // Color barra pequeña
-        let colorBar = '#3b82f6';
-        if (s.percent >= 70) colorBar = '#16a34a'; // Verde
-        if (s.percent < 30) colorBar = '#ef4444'; // Rojo
-
-        return `
-        <div style="display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-bottom:1px solid #f1f5f9;">
-            <div style="flex:1; padding-right:15px;">
-                <div style="font-weight:600; font-size:14px; color:#334155;">${m.name}</div>
-                <div style="background:#f1f5f9; height:5px; border-radius:3px; overflow:hidden; width:100%; max-width:120px; margin-top:4px;">
-                    <div style="width:${s.percent}%; background:${colorBar}; height:100%;"></div>
-                </div>
-            </div>
-            <div style="text-align:right;">
-                <div style="font-weight:bold; font-size:14px; color:#1e293b;">${s.percent}%</div>
-                <div style="font-size:11px; color:#94a3b8;">${s.ok}/${s.total}</div>
-            </div>
+        <div onclick="toggleStatsAcc('${m.slug}')"
+             style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;
+                    padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between;
+                    align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          
+          <div style="font-weight: 600; color: #1e293b; font-size:15px;">${m.name}</div>
+          <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
+            ${pct}%
+          </div>
         </div>
-        `;
-    }).join("");
+
+        <div id="stat-${m.slug}" style="display:none; padding: 15px; background: #f8fafc; 
+             border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: -2px;">
+          
+          <div style="display:flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap:10px;">
+            
+            <div style="font-size: 14px; line-height: 1.8; color: #475569;">
+              <div>📦 Total preguntas: <b>${totalM}</b></div>
+              <div style="color:#16a34a">✔ Correctas: <b>${ok}</b></div>
+              <div style="color:#ef4444">✖ Incorrectas: <b>${bad}</b></div>
+              <div style="color:#64748b">⚪ Sin responder: <b>${noresp}</b></div>
+            </div>
+
+            <div>
+               <button class="btn-small" 
+                       style="font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
+                       onclick="iniciarPracticaMateria('${m.slug}', 'normal')">
+                 Ir a practicar
+               </button>
+            </div>
+
+          </div>
+        </div>
+      </li>
+    `;
+  }).join("");
+
+  container.innerHTML = listHTML;
 }
 
-/* --- EVENTOS --- */
+/* ==========================================================
+   💡 Lógica de Sugerencias
+   ========================================================== */
+function getSugerenciasHTML() {
+  let suggestions = [];
+
+  BANK.subjects.forEach(m => {
+    const totalQ = BANK.questions.filter(q => q.materia === m.slug).length;
+    if (totalQ === 0) return;
+
+    const datos = PROG[m.slug] || {};
+    let ok = 0, totalR = 0;
+    Object.values(datos).forEach(p => {
+      if (p.status === "ok" || p.status === "bad") {
+        totalR++;
+        if (p.status === "ok") ok++;
+      }
+    });
+
+    if (totalR > 5) {
+      const pct = Math.round((ok / totalR) * 100);
+      if (pct < 60) {
+        suggestions.push(`📚 Tu promedio es bajo en <b>${m.name}</b> (${pct}%).`);
+      }
+    } else if (totalR === 0) {
+       suggestions.push(`💡 Aún no empezaste <b>${m.name}</b>.`);
+    }
+  });
+
+  suggestions = suggestions.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+  if (suggestions.length === 0) {
+      return `<div style="font-size:14px; color:#94a3b8; padding:10px;">Aún no hay datos suficientes para sugerencias.</div>`;
+  }
+
+  return `
+    <ul style="list-style:none; padding:0; margin:0; text-align: left; display:inline-block;">
+      ${suggestions.map(msg => `
+        <li style="margin-bottom:8px; font-size:14px; color:#475569;">
+          ${msg}
+        </li>
+      `).join("")}
+    </ul>
+  `;
+}
+
+/* ==========================================================
+   🔧 Utilidades y Eventos
+   ========================================================== */
+function toggleStatsAcc(slug) {
+  const el = document.getElementById(`stat-${slug}`);
+  if (el) {
+    el.style.display = el.style.display === "none" ? "block" : "none";
+  }
+}
+
 function onSearchStats(val) {
     statsSearchTerm = val;
-    renderStatsList();
+    renderMateriasList();
 }
 
 function onChangeStatsOrder(val) {
     STATS_ORDER = val;
-    renderStatsList();
+    renderMateriasList();
 }
 
-/* --- HELPERS --- */
-function getMateriaStatsSimple(slug) {
-    const total = BANK.questions.filter(q => {
-      if (Array.isArray(q.materia)) return q.materia.includes(slug);
-      return q.materia === slug;
-    }).length;
-
-    const progMat = PROG[slug] || {};
-    let ok = 0;
-    Object.values(progMat).forEach(r => { if(r && r.status === 'ok') ok++; });
-
-    const percent = total ? Math.round((ok / total) * 100) : 0;
-    return { total, ok, percent };
+function resetGlobalStats() {
+  if (confirm("¿Seguro que querés borrar TODAS las estadísticas y el progreso?")) {
+    localStorage.removeItem("MEbank_Progreso_v3");
+    localStorage.removeItem("mebank_stats_daily");
+    location.reload();
+  }
 }
 
-function getRandomWeeklyCount() {
-    let totalOk = 0;
-    Object.values(PROG).forEach(m => Object.values(m).forEach(q => { if(q.status==='ok') totalOk++ }));
-    return totalOk > 0 ? totalOk : 0; 
-}
-
-function getSuggestionsHTML() {
-    let suggestions = [];
-    BANK.subjects.forEach(m => {
-        const s = getMateriaStatsSimple(m.slug);
-        const bad = (PROG[m.slug] ? Object.values(PROG[m.slug]).filter(x=>x.status==='bad').length : 0);
-        
-        if (bad > 0 || (s.total > 0 && s.percent < 20)) {
-            suggestions.push({ name: m.name, bad });
-        }
-    });
-
-    suggestions.sort((a,b) => b.bad - a.bad);
-
-    if (suggestions.length === 0) {
-        return `<div style="color:#64748b; font-size:13px; font-style:italic;">No hay sugerencias por ahora.</div>`;
-    }
-
-    return suggestions.slice(0, 3).map(s => `
-        <div style="background:#fff7ed; padding:8px 12px; border-radius:6px; margin-bottom:6px; font-size:13px; color:#c2410c;">
-           ⚠ Repasá <b>${s.name}</b> (${s.bad} errores).
-        </div>
-    `).join("");
-}
+window.renderStats = renderStats;
