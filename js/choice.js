@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Textos Finales)
+   📚 MEbank 3.0 – Práctica por materia (Ayuda Completa)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -55,6 +55,11 @@ function renderChoice() {
             <div style="margin-bottom:20px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
                 <div style="font-size:14px; color:#475569;">Genera una práctica exclusiva con las preguntas registradas como <b>Incorrectas</b>. Ideal para corregir errores y fijar conceptos.</div>
+            </div>
+
+            <div style="margin-bottom:20px; padding-top:15px; border-top:1px solid #e2e8f0;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Sobre el porcentaje</div>
+                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia. Las respuestas incorrectas no suman al progreso.</div>
             </div>
 
             <div style="text-align:right;">
