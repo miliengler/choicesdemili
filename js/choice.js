@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (ZERO FLICKER FINAL)
+   📚 MEbank 3.0 – Práctica por materia (FINAL AZUL FORMAL)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -25,14 +25,14 @@ function renderProgressCircle(percent) {
 }
 
 /* ==========================================================
-   🏗️ RENDER ESTRUCTURA (Solo se ejecuta 1 vez)
+   🏗️ RENDER ESTRUCTURA (Zero Flicker)
    ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
   
-  // Si ya existe la estructura, no la volvemos a dibujar (evita parpadeo)
+  // Si la estructura ya existe, solo actualizamos la lista
   if (document.getElementById("choice-shell")) {
-      renderChoiceList(); // Solo actualizamos la lista
+      renderChoiceList(); 
       return;
   }
 
@@ -74,7 +74,7 @@ function renderChoice() {
     </div>
   `;
 
-  // Enfocar input si había búsqueda previa
+  // Focus inteligente
   const input = document.getElementById("choiceSearchInput");
   if(choiceSearchTerm && input) {
       input.focus();
@@ -85,11 +85,11 @@ function renderChoice() {
 }
 
 /* ==========================================================
-   🔄 RENDER LISTA (Se actualiza al buscar/tocar)
+   🔄 RENDER LISTA
    ========================================================== */
 function renderChoiceList() {
     const container = document.getElementById("choiceListContainer");
-    if(!container) return; // Seguridad
+    if(!container) return; 
 
     const subjects = getFilteredSubjects();
 
@@ -100,21 +100,21 @@ function renderChoiceList() {
     }
 }
 
-/* --- EVENTOS OPTIMIZADOS --- */
+/* --- EVENTOS --- */
 function onChangeChoiceOrder(val) {
   CHOICE_ORDER = val;
   localStorage.setItem("MEbank_ChoiceOrder_v1", val);
-  renderChoiceList(); // Solo actualiza lista
+  renderChoiceList(); 
 }
 
 function onSearchChoice(val) {
     choiceSearchTerm = val; 
-    renderChoiceList(); // Solo actualiza lista
+    renderChoiceList(); 
 }
 
 function toggleMateriaChoice(slug) {
   choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
-  renderChoiceList(); // Solo actualiza lista
+  renderChoiceList(); 
 }
 
 /* --- LÓGICA DE FILTRADO --- */
@@ -145,7 +145,7 @@ function getFilteredSubjects() {
   });
 }
 
-/* --- RENDER FILA (ROW) --- */
+/* --- RENDER FILA --- */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
@@ -160,7 +160,6 @@ function renderMateriaRow(m) {
   const bg = estaAbierta ? '#f8fafc' : 'white';
   const border = estaAbierta ? '#cbd5e1' : '#e2e8f0';
 
-  // Nota: Agregamos 'fade' aquí para que la animación sea suave solo en la lista
   return `
     <div class="materia-block fade" style="border:1px solid ${border}; border-radius:10px; padding:14px; margin-bottom:12px; background:${bg}; transition: background 0.2s ease;">
       
@@ -177,7 +176,7 @@ function renderMateriaRow(m) {
   `;
 }
 
-/* --- RENDER EXPANDIDO (CONTENIDO) --- */
+/* --- RENDER EXPANDIDO --- */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
@@ -206,23 +205,26 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- BOTONES ---
+  // --- LÓGICA DE BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
-  const siguienteNum = stats.ok + stats.bad + 1;
+  
+  const pendientes = stats.total - (stats.ok + stats.bad);
+
+  // ESTILO ÚNICO (Azul Uniforme)
   const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
   let botonesHTML = `
     <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'normal')">
-      ▶ Iniciar
+      ▶ Iniciar práctica
     </button>
   `;
 
   if (hayRespondidas && faltanResponder) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
-          ⏩ Reanudar (desde ${siguienteNum})
+          ⏩ Resolver pendientes (${pendientes})
         </button>
       `;
   }
@@ -230,12 +232,12 @@ function renderMateriaExpanded(m, term, stats) {
   if (hayErrores) {
       botonesHTML += `
         <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
-           🧠 Repasar mis ${stats.bad} errores
+           🧠 Repasar incorrectas (${stats.bad})
         </button>
       `;
   }
 
-  // --- TOOLS (Sin Emojis en el nombre) ---
+  // --- TOOLS (Sin Emojis) ---
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
@@ -312,16 +314,20 @@ function iniciarPracticaMateria(mSlug, modo) {
   let titulo = `Práctica – ${getMateriaNombre(mSlug)}`;
   
   if (modo === "reanudar") {
+      // PENDIENTES
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => !progMat[q.id] || (progMat[q.id].status !== 'ok' && progMat[q.id].status !== 'bad'));
-      titulo += " (Reanudado)";
-      if (!preguntas.length) return alert("¡Ya respondiste todo!");
+      titulo += " (Pendientes)";
+      
+      if (!preguntas.length) return alert("¡Excelente! No hay preguntas pendientes con esta selección.");
   } 
   else if (modo === "repaso") {
+      // INCORRECTAS
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => progMat[q.id] && progMat[q.id].status === 'bad');
-      titulo += " (Repaso de Errores)";
-      if (!preguntas.length) return alert("¡No tenés errores registrados!");
+      titulo += " (Repaso de Incorrectas)";
+      
+      if (!preguntas.length) return alert("¡Bien hecho! No tenés respuestas incorrectas registradas.");
   }
 
   iniciarResolucion({
