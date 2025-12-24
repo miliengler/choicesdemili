@@ -1,5 +1,5 @@
- /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia)
+/* ==========================================================
+   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia + Embudo)
    ========================================================== */
 
 /* --- PROGRESO --- */
@@ -105,11 +105,11 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (MODIFICADO PARA HÍBRIDO) --- */
+/* --- PROCESADOR DE PREGUNTA (CON EL FIX DE "OTRAS") --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
-    // ⚠️ CAMBIO CLAVE: Soportar Array o String en Materia
+    // 1. Materia (Array o String)
     if (Array.isArray(q.materia)) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
@@ -119,13 +119,38 @@ function processQuestion(q, type, examMeta) {
         q.materia = mat;
     }
 
-    // Submateria (Simplificada a string por ahora, tomamos la primera si es array)
-    if (Array.isArray(q.submateria)) q.submateria = q.submateria[0];
-    q.submateria = normalize(q.submateria || "");
+    // 2. Submateria (EL FIX: Validación contra lista oficial)
+    
+    // a. Determinamos la materia principal para buscar la lista de temas válida
+    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
+    // b. Obtenemos el subtema que viene en el JSON
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
+    if (!subRaw) subRaw = "";
+    
+    // c. Normalizamos ambos para comparar (json vs lista oficial)
+    const subNorm = normalize(subRaw);
+    const existeEnLista = listaOficial.some(oficial => normalize(oficial) === subNorm);
 
+    if (existeEnLista) {
+        // Si existe, lo asignamos normalizado
+        q.submateria = subNorm;
+    } else {
+        // ⚠️ Si NO existe, lo mandamos al último de la lista (Otras)
+        if (listaOficial.length > 0) {
+            const ultimoSubtema = listaOficial[listaOficial.length - 1];
+            q.submateria = normalize(ultimoSubtema);
+        } else {
+            q.submateria = "general";
+        }
+    }
+
+    // 3. Opciones y Correcta
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
 
+    // 4. Metadatos
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
