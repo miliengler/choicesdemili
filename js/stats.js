@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Diseño Final Pulido
+   📊 ESTADÍSTICAS GLOBALES – Diseño Dashboard (Final)
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -118,16 +118,6 @@ function renderStats() {
     </div>
 
     <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
-        <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
-        <p style="font-size:14px; color:#64748b; margin-bottom:15px;">
-          Basadas en tu precisión y frecuencia.
-        </p>
-        <div id="sugerencias-container">
-            ${getSugerenciasHTML()}
-        </div>
-    </div>
-
-    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
       <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
       
       <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
@@ -158,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias
+   📋 Lista de Materias (Con GRÁFICOS e INSIGHTS)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -203,6 +193,7 @@ function renderMateriasList() {
     
     if (totalM === 0) return ""; 
 
+    // Stats básicas
     const datos = PROG[m.slug] || {};
     let ok = 0, bad = 0;
     Object.values(datos).forEach(p => {
@@ -215,6 +206,12 @@ function renderMateriasList() {
     const noresp = totalM - resp;
     const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
 
+    // Insights Inteligentes
+    const insights = getSubjectInsights(m.slug, m.name, datos);
+
+    // Gráfico de torta CSS (Conic Gradient)
+    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM);
+
     return `
       <li style="margin-bottom: 10px;">
         
@@ -223,41 +220,49 @@ function renderMateriasList() {
                     padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between;
                     align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
           
-          <div style="font-weight: 600; color: #1e293b; font-size:15px;">${m.name}</div>
+          <div style="font-weight: 600; color: #1e293b; font-size:15px;">
+            ${getEmojiForSubject(m.name)} ${m.name}
+          </div>
           <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
             ${pct}%
           </div>
         </div>
 
-        <div id="stat-${m.slug}" style="display:none; padding: 15px; background: #f8fafc; 
+        <div id="stat-${m.slug}" style="display:none; padding: 20px; background: #f8fafc; 
              border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: -2px;">
           
-          <div style="display:flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap:10px;">
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
             
-            <div style="font-size: 14px; line-height: 1.8; color: #475569;">
+            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:140px;">
               <div>📦 Total preguntas: <b>${totalM}</b></div>
-              <div style="color:#16a34a">✔ Correctas: <b>${ok}</b></div>
-              <div style="color:#ef4444">✖ Incorrectas: <b>${bad}</b></div>
-              <div style="color:#64748b">⚪ Sin responder: <b>${noresp}</b></div>
+              <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
+              <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
+              <div>⚪ Sin responder: <b style="color:#64748b">${noresp}</b></div>
             </div>
 
-            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
-               
+            <div style="width:70px; height:70px; border-radius:50%; ${pieStyle} border:3px solid white; box-shadow:0 2px 5px rgba(0,0,0,0.1);"></div>
+
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; min-width:150px;">
                <button class="btn-small" 
-                       style="font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px; min-width:140px;"
+                       style="width:100%; font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
                        onclick="iniciarPracticaMateria('${m.slug}', 'normal')">
                  Ir a practicar
                </button>
 
                <button class="btn-small" 
-                       style="font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; min-width:140px; font-weight:600;"
+                       style="width:100%; font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; font-weight:600;"
                        onclick="resetSubjectStats('${m.slug}', '${m.name}')">
                  🗑 Reiniciar materia
                </button>
-
             </div>
-
           </div>
+
+          ${insights ? `
+            <div style="margin-top:15px; padding-top:15px; border-top:1px dashed #cbd5e1; font-size:13px; color:#475569;">
+               ${insights}
+            </div>
+          ` : ''}
+
         </div>
       </li>
     `;
@@ -267,59 +272,112 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   💡 Lógica de Sugerencias
+   🧠 Lógica de Insights Inteligentes
    ========================================================== */
-function getSugerenciasHTML() {
-  let suggestions = [];
-  const now = new Date();
-
-  BANK.subjects.forEach(m => {
-    const totalQ = BANK.questions.filter(q => q.materia === m.slug).length;
-    if (totalQ === 0) return;
-
-    const datos = PROG[m.slug] || {};
-    let ok = 0, totalR = 0;
+function getSubjectInsights(slug, name, datos) {
+    let insights = [];
+    const now = new Date();
+    
+    // 1. Calcular días sin practicar
     let lastDate = null;
-
     Object.values(datos).forEach(p => {
-      if (p.status === "ok" || p.status === "bad") {
-        totalR++;
-        if (p.status === "ok") ok++;
         if (p.date) {
             const d = new Date(p.date);
             if (!lastDate || d > lastDate) lastDate = d;
         }
-      }
     });
-
-    if (totalR > 5) {
-      const pct = Math.round((ok / totalR) * 100);
-      if (pct < 60) suggestions.push(`📚 Tu promedio es bajo en <b>${m.name}</b> (${pct}%).`);
-    } else if (totalR === 0) {
-       suggestions.push(`💡 Aún no empezaste <b>${m.name}</b>.`);
-    }
 
     if (lastDate) {
         const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
-        if (diffDays > 7) suggestions.push(`⏰ Hace ${diffDays} días no practicas <b>${m.name}</b>.`);
+        if (diffDays > 14) {
+             insights.push(`🕰️ Hace <b>${diffDays} días</b> no practicás esta materia.`);
+        }
+    } else {
+        insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
     }
-  });
 
-  suggestions = suggestions.sort(() => 0.5 - Math.random()).slice(0, 3);
+    // 2. Detectar Subtema más flojo
+    const weakest = getWeakestSubtopic(slug, datos);
+    if (weakest) {
+        insights.push(`📉 Tu subtema más flojo es <b>${weakest.name}</b> (${weakest.pct}%).`);
+    }
 
-  if (suggestions.length === 0) {
-      return `<div style="font-size:14px; color:#94a3b8; padding:10px;">¡Todo viene genial! Seguí así.</div>`;
-  }
+    if (insights.length === 0) return "";
+    
+    return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
+}
 
-  return `
-    <ul style="list-style:none; padding:0; margin:0; text-align: left; display:inline-block;">
-      ${suggestions.map(msg => `<li style="margin-bottom:8px; font-size:14px; color:#475569;">${msg}</li>`).join("")}
-    </ul>
-  `;
+function getWeakestSubtopic(mSlug, progData) {
+    // Agrupar preguntas por subtema
+    const questions = BANK.questions.filter(q => {
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        return esMateria && q.submateria; // Solo si tiene subtema
+    });
+
+    const groups = {};
+    questions.forEach(q => {
+        const sub = q.submateria;
+        if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
+        
+        groups[sub].total++;
+        if (progData[q.id]) {
+            groups[sub].answered++;
+            if (progData[q.id].status === 'ok') groups[sub].ok++;
+        }
+    });
+
+    // Buscar el peor (mínimo 3 respuestas para que sea relevante)
+    let worst = null;
+    let minPct = 101;
+
+    Object.keys(groups).forEach(subName => {
+        const g = groups[subName];
+        if (g.answered >= 3) {
+            const pct = Math.round((g.ok / g.answered) * 100);
+            if (pct < minPct) {
+                minPct = pct;
+                worst = { name: subName, pct: pct };
+            }
+        }
+    });
+
+    return worst;
 }
 
 /* ==========================================================
-   🔧 Utilidades
+   🎨 Utilidades Gráficas
+   ========================================================== */
+function getPieChartStyle(ok, bad, none, total) {
+    if (total === 0) return `background: #e2e8f0;`; // Gris si está vacía
+    
+    const degOk = (ok / total) * 360;
+    const degBad = (bad / total) * 360;
+    // const degNone = (none / total) * 360; // El resto
+
+    // Conic Gradient: Verde -> Rojo -> Gris
+    return `background: conic-gradient(
+        #16a34a 0deg ${degOk}deg, 
+        #ef4444 ${degOk}deg ${degOk + degBad}deg, 
+        #e2e8f0 ${degOk + degBad}deg 360deg
+    );`;
+}
+
+function getEmojiForSubject(name) {
+    // Mapeo simple de emojis para decorar (Opcional, si no encuentra devuelve libro)
+    const map = {
+        'Cardiología': '🫀', 'Dermatología': '🧴', 'Endocrinología': '🧪',
+        'Gastroenterología': '💩', 'Ginecología': '🌸', 'Hematología': '🩸',
+        'Infectología': '🦠', 'Neumonología': '🫁', 'Neurología': '🧠',
+        'Oftalmología': '👁️', 'Pediatría': '👶', 'Psiquiatría': '🧘',
+        'Traumatología': '🦴', 'Urología': '🚽', 'Cirugía': '🔪'
+    };
+    // Buscar coincidencia parcial
+    const key = Object.keys(map).find(k => name.includes(k));
+    return key ? map[key] : '📘';
+}
+
+/* ==========================================================
+   🔧 Utilidades Generales
    ========================================================== */
 function toggleStatsAcc(slug) {
   const el = document.getElementById(`stat-${slug}`);
@@ -337,7 +395,7 @@ function onChangeStatsOrder(val) {
 }
 
 function resetGlobalStats() {
-  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas y el progreso? Esta acción no se puede deshacer.")) {
+  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
     localStorage.removeItem("MEbank_Progreso_v3");
     localStorage.removeItem("mebank_stats_daily");
     location.reload();
