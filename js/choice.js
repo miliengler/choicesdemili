@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Layout Horizontal)
+   📚 MEbank 3.0 – Práctica por materia (Estilo Uniforme Azul)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -154,7 +154,7 @@ function toggleMateriaChoice(slug) {
   renderChoice();
 }
 
-/* --- PANEL EXPANDIDO (Layout corregido) --- */
+/* --- PANEL EXPANDIDO --- */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
@@ -183,34 +183,34 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LOGICA DE BOTONES (UNA SOLA LÍNEA) ---
+  // --- LOGICA DE BOTONES ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
 
+  // ESTILO COMÚN PARA TODOS LOS BOTONES DE ACCIÓN (AZUL)
+  const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
+
   // Botón Base: Iniciar
   let botonesHTML = `
-    <button class="btn-small" style="flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;" 
-            onclick="iniciarPracticaMateria('${slug}', 'normal')">
+    <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'normal')">
       ▶ Iniciar
     </button>
   `;
 
-  // Botón: Reanudar
+  // Botón: Reanudar (Mismo estilo)
   if (hayRespondidas && faltanResponder) {
       botonesHTML += `
-        <button class="btn-small" style="flex:1; background:white; border:1px solid #f59e0b; color:#b45309; font-weight:600;" 
-                onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
+        <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
           ⏩ Reanudar
         </button>
       `;
   }
 
-  // Botón: Aprender
+  // Botón: Aprender (Mismo estilo)
   if (hayErrores) {
       botonesHTML += `
-        <button class="btn-small" style="flex:1; background:white; border:1px solid #ef4444; color:#b91c1c; font-weight:600;" 
-                onclick="iniciarPracticaMateria('${slug}', 'repaso')">
+        <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
            🧠 Aprender (${stats.bad})
         </button>
       `;
@@ -305,3 +305,4 @@ function iniciarPracticaMateria(mSlug, modo) {
     titulo: titulo
   });
 }
+
