@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Ayuda Completa)
+   📚 MEbank 3.0 – Práctica por materia (Versión Definitiva 10/10)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -156,6 +156,13 @@ function onSearchChoice(val) {
 function toggleMateriaChoice(slug) {
   choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
   renderChoiceList(); 
+}
+
+/* --- SELECTOR MASIVO (NUEVO) --- */
+function toggleAllSubtemas(slug, state) {
+    const checks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
+    checks.forEach(c => c.checked = state);
+    updateActionButtons(slug); // Recalcular botones al instante
 }
 
 /* --- ACTUALIZACIÓN DE BOTONES (Reactividad) --- */
@@ -318,12 +325,23 @@ function renderMateriaExpanded(m, term, stats) {
     </div>
   `;
 
+  // CONTROLES DE SELECCIÓN MASIVA (NUEVO)
+  const controls = `
+    <div style="display:flex; gap:12px; margin-bottom:8px; font-size:13px;">
+       <span onclick="toggleAllSubtemas('${slug}', true)" style="color:#3b82f6; cursor:pointer; font-weight:600;">Marcar todos</span>
+       <span style="color:#cbd5e1;">|</span>
+       <span onclick="toggleAllSubtemas('${slug}', false)" style="color:#64748b; cursor:pointer;">Desmarcar todos</span>
+    </div>
+  `;
+
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
-      <p style="font-size:13px; color:#64748b; margin-bottom:6px;">
+      <p style="font-size:13px; color:#64748b; margin-bottom:8px;">
          ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.'}
       </p>
       
+      ${items.length ? controls : ''}
+
       <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
          ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
