@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Versión Definitiva 10/10)
+   📚 MEbank 3.0 – Práctica por materia (UI Definitiva)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -25,7 +25,7 @@ function renderProgressCircle(percent) {
 }
 
 /* ==========================================================
-   🏗️ RENDER ESTRUCTURA (Zero Flicker)
+   🏗️ RENDER ESTRUCTURA
    ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
@@ -158,22 +158,35 @@ function toggleMateriaChoice(slug) {
   renderChoiceList(); 
 }
 
-/* --- SELECTOR MASIVO (NUEVO) --- */
+/* --- LOGICA DE SELECCIÓN MASIVA (Master Control) --- */
 function toggleAllSubtemas(slug, state) {
     const checks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     checks.forEach(c => c.checked = state);
-    updateActionButtons(slug); // Recalcular botones al instante
+    updateInterfaceState(slug); // Actualiza TODO (botones y controles)
 }
 
-/* --- ACTUALIZACIÓN DE BOTONES (Reactividad) --- */
-function updateActionButtons(slug) {
-    const checks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
-    const seleccionados = Array.from(checks).map(ch => ch.value);
+/* --- UPDATE REACTIVO UNIFICADO --- */
+function updateInterfaceState(slug) {
+    // 1. Obtener estado de los checkboxes
+    const allChecks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
+    const checkedChecks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
+    
+    const totalSubtemas = allChecks.length;
+    const countSelected = checkedChecks.length;
+
+    // 2. Actualizar CONTROLES (Marcar/Desmarcar)
+    const controlsContainer = document.getElementById(`controls-${slug}`);
+    if (controlsContainer) {
+        controlsContainer.innerHTML = getControlsHTML(slug, totalSubtemas, countSelected);
+    }
+
+    // 3. Actualizar BOTONES DE ACCIÓN (Iniciar/Pendientes/Errores)
+    const seleccionados = Array.from(checkedChecks).map(ch => ch.value);
     const scope = seleccionados.length ? seleccionados : null;
     const questions = getQuestionsByMateria(slug, scope);
 
     let ok = 0, bad = 0;
-    const total = questions.length;
+    const totalQ = questions.length;
     const progMat = PROG[slug] || {};
     
     questions.forEach(q => {
@@ -184,13 +197,39 @@ function updateActionButtons(slug) {
         }
     });
 
-    const html = getButtonsHTML(slug, { total, ok, bad });
-    const container = document.getElementById(`actions-${slug}`);
-    if(container) container.innerHTML = html;
+    const actionsContainer = document.getElementById(`actions-${slug}`);
+    if (actionsContainer) {
+        actionsContainer.innerHTML = getActionButtonsHTML(slug, { total: totalQ, ok, bad });
+    }
 }
 
-/* --- GENERADOR DE BOTONES --- */
-function getButtonsHTML(slug, stats) {
+/* --- GENERADORES HTML --- */
+
+// A. Generador de Controles (Marcar/Desmarcar) con Estilos Lógicos
+function getControlsHTML(slug, total, selected) {
+    // Definimos estados
+    const noneSelected = selected === 0;
+    const allSelected = selected === total;
+
+    // Estilos
+    const styleActive = "color:#1e3a8a; font-weight:700; cursor:pointer; transition:color 0.2s;"; // Azul Noche
+    const styleInactive = "color:#cbd5e1; cursor:default; pointer-events:none;"; // Gris suave
+
+    return `
+        <span onclick="${!allSelected ? `toggleAllSubtemas('${slug}', true)` : ''}"
+              style="${allSelected ? styleInactive : styleActive}">
+            Marcar todos
+        </span>
+        <span style="color:#e2e8f0; margin:0 8px;">|</span>
+        <span onclick="${!noneSelected ? `toggleAllSubtemas('${slug}', false)` : ''}"
+              style="${noneSelected ? styleInactive : styleActive}">
+            Desmarcar todos
+        </span>
+    `;
+}
+
+// B. Generador de Botones de Acción
+function getActionButtonsHTML(slug, stats) {
     const hayRespondidas = (stats.ok + stats.bad) > 0;
     const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
     const hayErrores = stats.bad > 0;
@@ -293,6 +332,7 @@ function renderMateriaExpanded(m, term, stats) {
       }
   }
 
+  // Checkbox items
   const items = subtemasTexto.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = contarPreguntasMateriaSub(slug, subSlug);
@@ -302,7 +342,7 @@ function renderMateriaExpanded(m, term, stats) {
     return `
       <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:pointer;">
         <span>
-          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" onchange="updateActionButtons('${slug}')" style="margin-right:8px;">
+          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" onchange="updateInterfaceState('${slug}')" style="margin-right:8px;">
           ${displayName}
         </span>
         <span style="color:#64748b; font-size:12px;">(${count})</span>
@@ -325,14 +365,9 @@ function renderMateriaExpanded(m, term, stats) {
     </div>
   `;
 
-  // CONTROLES DE SELECCIÓN MASIVA (NUEVO)
-  const controls = `
-    <div style="display:flex; gap:12px; margin-bottom:8px; font-size:13px;">
-       <span onclick="toggleAllSubtemas('${slug}', true)" style="color:#3b82f6; cursor:pointer; font-weight:600;">Marcar todos</span>
-       <span style="color:#cbd5e1;">|</span>
-       <span onclick="toggleAllSubtemas('${slug}', false)" style="color:#64748b; cursor:pointer;">Desmarcar todos</span>
-    </div>
-  `;
+  // CONTROLES DE SELECCIÓN (Estado inicial: 0 seleccionados porque el usuario no tocó nada)
+  // Nota: Si no hay items, no mostramos los controles.
+  const controlsHTML = items.length ? getControlsHTML(slug, subtemasTexto.length, 0) : '';
 
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
@@ -340,14 +375,16 @@ function renderMateriaExpanded(m, term, stats) {
          ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.'}
       </p>
       
-      ${items.length ? controls : ''}
+      <div id="controls-${slug}" style="display:flex; justify-content:center; align-items:center; margin-bottom:10px; font-size:13px;">
+          ${controlsHTML}
+      </div>
 
       <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
          ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
 
       <div id="actions-${slug}" style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
-         ${getButtonsHTML(slug, stats)}
+         ${getActionButtonsHTML(slug, stats)}
       </div>
       
       ${filaTools}
