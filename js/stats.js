@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Estilo Clásico (Final)
+   📊 ESTADÍSTICAS GLOBALES – Diseño Final Pulido
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -29,13 +29,11 @@ function renderStats() {
   });
 
   const totalSinResponder = totalPreguntas - totalRespondidas;
-  
-  // Porcentaje de Progreso Total
   const porcentajeProgreso = totalPreguntas > 0 
     ? Math.round((totalCorrectas / totalPreguntas) * 100) 
     : 0;
 
-  // --- 2. Lógica de Actividad Semanal ---
+  // --- 2. ACTIVIDAD SEMANAL ---
   const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
   const today = new Date();
   let weeklyTotalCorrect = 0;
@@ -45,21 +43,17 @@ function renderStats() {
     d.setDate(today.getDate() - i);
     const key = d.toISOString().split('T')[0]; 
     const count = STATS_DAILY[key] || 0;
-    
     if(i < 7) weeklyTotalCorrect += count;
 
     const dd = String(d.getDate()).padStart(2, '0');
     const mm = String(d.getMonth() + 1).padStart(2, '0');
-    
     const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
     const checkIcon = count > 0 ? "✅" : "⬜";
 
     return `
       <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
         <span style="color:#64748b">➤ ${dd}/${mm}</span>
-        <span>
-            <b style="color:${colorCount}">${count} correctas</b> ${checkIcon}
-        </span>
+        <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
       </div>`;
   }).reverse().join("");
 
@@ -68,22 +62,21 @@ function renderStats() {
     <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h3 style="margin:0;">📊 Estadísticas generales</h3>
-        <button class='btn-small' onclick='renderHome()' style="padding:5px 10px; font-size:12px;">Volver</button>
+        <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
+           ⬅ Volver
+        </button>
       </div>
       
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
-        
         <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
             <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
             <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
         </div>
-
         <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
             <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
             <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
         </div>
-
         <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
             <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
             <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
@@ -127,7 +120,7 @@ function renderStats() {
     <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
         <h3 style="margin-bottom:10px;">💡 Sugerencias de repaso</h3>
         <p style="font-size:14px; color:#64748b; margin-bottom:15px;">
-          Basadas en tu precisión y frecuencia de práctica.
+          Basadas en tu precisión y frecuencia.
         </p>
         <div id="sugerencias-container">
             ${getSugerenciasHTML()}
@@ -248,19 +241,20 @@ function renderMateriasList() {
               <div style="color:#64748b">⚪ Sin responder: <b>${noresp}</b></div>
             </div>
 
-            <div style="display:flex; gap:8px;">
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
+               
                <button class="btn-small" 
-                       style="font-size:13px; padding: 8px 12px; background: white; color: #ef4444; border: 1px solid #ef4444; border-radius:6px;"
-                       onclick="resetSubjectStats('${m.slug}', '${m.name}')"
-                       title="Reiniciar estadísticas de esta materia">
-                 🗑
-               </button>
-
-               <button class="btn-small" 
-                       style="font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
+                       style="font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px; min-width:140px;"
                        onclick="iniciarPracticaMateria('${m.slug}', 'normal')">
                  Ir a practicar
                </button>
+
+               <button class="btn-small" 
+                       style="font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; min-width:140px; font-weight:600;"
+                       onclick="resetSubjectStats('${m.slug}', '${m.name}')">
+                 🗑 Reiniciar materia
+               </button>
+
             </div>
 
           </div>
@@ -273,7 +267,7 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   💡 Lógica de Sugerencias (Inteligente)
+   💡 Lógica de Sugerencias
    ========================================================== */
 function getSugerenciasHTML() {
   let suggestions = [];
@@ -285,14 +279,12 @@ function getSugerenciasHTML() {
 
     const datos = PROG[m.slug] || {};
     let ok = 0, totalR = 0;
-    let lastDate = null; // Para rastrear última práctica
+    let lastDate = null;
 
     Object.values(datos).forEach(p => {
       if (p.status === "ok" || p.status === "bad") {
         totalR++;
         if (p.status === "ok") ok++;
-        
-        // Buscar fecha más reciente
         if (p.date) {
             const d = new Date(p.date);
             if (!lastDate || d > lastDate) lastDate = d;
@@ -300,28 +292,19 @@ function getSugerenciasHTML() {
       }
     });
 
-    // 1. Sugerencia por NOTA BAJA
     if (totalR > 5) {
       const pct = Math.round((ok / totalR) * 100);
-      if (pct < 60) {
-        suggestions.push(`📚 Tu promedio es bajo en <b>${m.name}</b> (${pct}%).`);
-      }
-    } 
-    // 2. Sugerencia por MATERIA VIRGEN
-    else if (totalR === 0) {
+      if (pct < 60) suggestions.push(`📚 Tu promedio es bajo en <b>${m.name}</b> (${pct}%).`);
+    } else if (totalR === 0) {
        suggestions.push(`💡 Aún no empezaste <b>${m.name}</b>.`);
     }
 
-    // 3. Sugerencia por TIEMPO SIN PRACTICAR
     if (lastDate) {
         const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
-        if (diffDays > 7) {
-             suggestions.push(`⏰ Hace ${diffDays} días no practicas <b>${m.name}</b>.`);
-        }
+        if (diffDays > 7) suggestions.push(`⏰ Hace ${diffDays} días no practicas <b>${m.name}</b>.`);
     }
   });
 
-  // Mezclar y mostrar 3
   suggestions = suggestions.sort(() => 0.5 - Math.random()).slice(0, 3);
 
   if (suggestions.length === 0) {
@@ -330,11 +313,7 @@ function getSugerenciasHTML() {
 
   return `
     <ul style="list-style:none; padding:0; margin:0; text-align: left; display:inline-block;">
-      ${suggestions.map(msg => `
-        <li style="margin-bottom:8px; font-size:14px; color:#475569;">
-          ${msg}
-        </li>
-      `).join("")}
+      ${suggestions.map(msg => `<li style="margin-bottom:8px; font-size:14px; color:#475569;">${msg}</li>`).join("")}
     </ul>
   `;
 }
@@ -344,9 +323,7 @@ function getSugerenciasHTML() {
    ========================================================== */
 function toggleStatsAcc(slug) {
   const el = document.getElementById(`stat-${slug}`);
-  if (el) {
-    el.style.display = el.style.display === "none" ? "block" : "none";
-  }
+  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
 }
 
 function onSearchStats(val) {
@@ -359,7 +336,6 @@ function onChangeStatsOrder(val) {
     renderMateriasList();
 }
 
-// Reset GLOBAL
 function resetGlobalStats() {
   if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas y el progreso? Esta acción no se puede deshacer.")) {
     localStorage.removeItem("MEbank_Progreso_v3");
@@ -368,15 +344,11 @@ function resetGlobalStats() {
   }
 }
 
-// Reset MATERIA ESPECÍFICA (Nueva Función)
 function resetSubjectStats(slug, name) {
-    if (confirm(`¿Estás seguro que querés reiniciar SOLO el progreso de ${name}?`)) {
-        // Borramos la key de esa materia en el objeto PROG
+    if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
         if (PROG[slug]) {
             delete PROG[slug];
-            // Guardamos el cambio en localStorage
             localStorage.setItem("MEbank_Progreso_v3", JSON.stringify(PROG));
-            // Recargamos la vista
             renderStats();
         }
     }
