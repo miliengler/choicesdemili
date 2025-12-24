@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Dashboard Final (Sin Duplicados)
+   📊 ESTADÍSTICAS GLOBALES – Layout 3 Columnas (Final)
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -148,7 +148,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias
+   📋 Lista de Materias (Layout 3 Columnas)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -242,15 +242,15 @@ function renderMateriasList() {
 
             <div style="width:70px; height:70px; border-radius:50%; ${pieStyle} border:3px solid white; box-shadow:0 2px 5px rgba(0,0,0,0.1);"></div>
 
-            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; min-width:150px;">
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end;">
                <button class="btn-small" 
-                       style="width:100%; font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
+                       style="min-width:140px; font-size:13px; padding: 8px 16px; background: #3b82f6; color: white; border: none; border-radius:6px;"
                        onclick="iniciarPracticaMateria('${m.slug}', 'normal')">
                  Ir a practicar
                </button>
 
                <button class="btn-small" 
-                       style="width:100%; font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; font-weight:600;"
+                       style="min-width:140px; font-size:12px; padding: 6px 12px; background: #fef2f2; color: #ef4444; border: 1px solid #fecaca; border-radius:6px; font-weight:600;"
                        onclick="resetSubjectStats('${m.slug}', '${m.name}')">
                  🗑 Reiniciar materia
                </button>
