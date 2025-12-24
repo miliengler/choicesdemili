@@ -1,8 +1,8 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Soporte Multi-Materia + Embudo)
+   🌐 MEbank 3.0 — Banco TURBO (Corrección Definitiva de Fugas)
    ========================================================== */
 
-/* --- PROGRESO --- */
+/* --- 1. PROGRESO --- */
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
 function loadProgress() {
@@ -17,16 +17,17 @@ function saveProgress() {
 
 let PROG = loadProgress();
 
-/* --- UTILIDADES --- */
+/* --- 2. UTILIDADES --- */
+// Normalización agresiva para asegurar coincidencias (slug)
 function normalize(s) {
-  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() : "";
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
 }
 
 function normalizeId(id) {
   return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
 }
 
-/* --- ESTRUCTURA --- */
+/* --- 3. ESTRUCTURA (Vinculada a config.js) --- */
 let BANK = {
   subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [],
   subsubjects: {},
@@ -34,7 +35,7 @@ let BANK = {
   loaded: false
 };
 
-// Carga los subtemas desde la variable global (config.js) si existe
+// Cargar subtemas desde la configuración global
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -43,7 +44,7 @@ if(typeof SUBJECTS !== 'undefined') {
     });
 }
 
-/* --- CARGA TURBO --- */
+/* --- 4. CARGA TURBO --- */
 async function loadAllBanks() {
   console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
@@ -106,7 +107,7 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (CON EMBUDO "OTRAS") --- */
+/* --- 5. PROCESADOR DE PREGUNTA (A PRUEBA DE BALAS) --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
@@ -119,39 +120,39 @@ function processQuestion(q, type, examMeta) {
         q.materia = mat;
     }
 
-    // 2. Submateria (El Embudo Mágico)
-    
-    // a. Buscamos la lista oficial de temas para esta materia
-    // Usamos la primera materia del array para decidir la lista
+    // 2. SUBMATERIA (Lógica de Rescate)
+    // Definimos la materia principal para buscar la lista válida
     const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
     const listaOficial = BANK.subsubjects[mainMateria] || [];
-    
-    // b. Obtenemos el subtema que viene del JSON
+
+    // Obtenemos el subtema crudo del JSON
     let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
     if (!subRaw) subRaw = "";
     
-    // c. Normalizamos para comparar
     const subNorm = normalize(subRaw);
-    
-    // d. Buscamos si existe en la lista oficial (comparando normalizados)
-    const existe = listaOficial.some(tema => normalize(tema) === subNorm);
 
-    if (existe) {
-        // Si existe, lo dejamos (normalizado para que coincida en choice.js)
-        q.submateria = subNorm;
+    // Intentamos encontrar coincidencia en la lista oficial
+    // Comparamos slug contra slug para evitar errores de tildes/mayúsculas
+    const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
+
+    if (match) {
+        // Si existe, asignamos el slug normalizado (que es lo que usa el filtro)
+        q.submateria = normalize(match);
     } else {
-        // ⚠️ Si NO existe en la lista, lo mandamos al último ítem (Otras)
+        // Si NO existe, asignamos el último de la lista ("Otras...")
         if (listaOficial.length > 0) {
-            const ultimoTema = listaOficial[listaOficial.length - 1];
-            q.submateria = normalize(ultimoTema);
+            const ultimo = listaOficial[listaOficial.length - 1];
+            q.submateria = normalize(ultimo);
         } else {
             q.submateria = "general";
         }
     }
 
+    // 3. Opciones y Correcta
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
 
+    // 4. Metadatos
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
@@ -161,7 +162,7 @@ function processQuestion(q, type, examMeta) {
     }
 }
 
-/* --- HELPERS --- */
+/* --- 6. HELPERS --- */
 function dedupeQuestionsById(list) {
   const map = new Map();
   list.forEach(q => {
@@ -188,19 +189,21 @@ function getCorrectIndex(q) {
   return -1;
 }
 
-/* --- APIS CON FILTRO HÍBRIDO --- */
+/* --- 7. APIS HÍBRIDAS --- */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        // 1. Chequeo de Materia
+        // Chequeo de materia (flexible)
         const esDeLaMateria = Array.isArray(q.materia) 
             ? q.materia.includes(slug) 
             : q.materia === slug;
         
         if (!esDeLaMateria) return false;
 
-        // 2. Chequeo de Subtemas
-        // Como ya pasamos por el embudo, la comparación es exacta
-        if (subs && subs.length) return subs.includes(q.submateria);
+        // Chequeo de subtemas (exacto porque ya está normalizado)
+        if (subs && subs.length) {
+            // subs es un array de slugs (ej: ['arritmias', 'insuficienciacardiaca'])
+            return subs.includes(q.submateria);
+        }
         return true;
     });
 }
