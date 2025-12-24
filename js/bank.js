@@ -1,5 +1,5 @@
 /* ==========================================================
-   🏦 BANK.JS – CORREGIDO (Comparación Inteligente)
+   🌐 MEbank 3.0 — Banco TURBO (Con corrección "Otras")
    ========================================================== */
 
 /* --- PROGRESO --- */
@@ -18,9 +18,9 @@ function saveProgress() {
 let PROG = loadProgress();
 
 /* --- UTILIDADES --- */
-// Normaliza texto para comparar (saca tildes, mayúsculas, símbolos)
 function normalize(s) {
-  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
+  // Normalización estándar para slugs (materias)
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").replace(/[^\p{L}\p{N}]/gu, "").toLowerCase() : "";
 }
 
 function normalizeId(id) {
@@ -107,58 +107,46 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- PROCESADOR DE PREGUNTA (INTELIGENTE) --- */
+/* --- PROCESADOR DE PREGUNTA (CON EL FIX DE "OTRAS") --- */
 function processQuestion(q, type, examMeta) {
     q.id = normalizeId(q.id);
     
-    // 1. MATERIA (Array o String -> Array Normalizado)
+    // 1. Materia (Array o String)
     if (Array.isArray(q.materia)) {
-        q.materia = q.materia.map(m => normalize(m)); // Normalizamos slugs
+        q.materia = q.materia.map(m => normalize(m));
     } else {
         let mat = normalize(q.materia || "otras");
-        // Si no existe la materia en config, va a "otras"
         if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
-        q.materia = mat; // String único si no es array
+        q.materia = mat;
     }
 
-    // 2. SUBMATERIA (El Embudo Inteligente 🌪️)
-    // Usamos la materia principal (la primera si es array) para buscar la lista válida
+    // 2. Submateria (Corrección automática)
+    
+    // Identificamos la materia principal para buscar su lista de temas
     const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
     const listaOficial = BANK.subsubjects[mainMateria] || [];
-
-    // Tomamos el subtema crudo del JSON
-    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
-    if (!subRaw) subRaw = "";
-    const subRawNorm = normalize(subRaw); // Normalizamos lo que viene del JSON
-
-    // Buscamos coincidencia en la lista oficial
-    let match = null;
     
-    // a) Búsqueda Exacta (Normalizada)
-    for (let oficial of listaOficial) {
-        if (normalize(oficial) === subRawNorm) {
-            match = oficial; // ¡Encontramos el nombre bonito!
-            break;
-        }
-    }
-
-    // b) Asignación
-    if (match) {
-        q.submateria = match;
-    } else {
-        // Si no coincide con ninguno, asignamos el ÚLTIMO de la lista oficial
-        // (Que por convención pusimos "Otras preguntas de...")
-        if (listaOficial.length > 0) {
-            q.submateria = listaOficial[listaOficial.length - 1];
+    // Tomamos lo que viene en el JSON
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
+    
+    // Si la lista oficial tiene temas...
+    if (listaOficial.length > 0) {
+        // Si el subtema del JSON existe exacto en la lista -> Lo dejamos
+        if (listaOficial.includes(subRaw)) {
+            q.submateria = subRaw;
         } else {
-            q.submateria = "General";
+            // Si NO existe (o es null), lo mandamos al último de la lista (Otras)
+            q.submateria = listaOficial[listaOficial.length - 1];
         }
+    } else {
+        q.submateria = "General";
     }
 
-    // 3. RESTO DE DATOS
+    // 3. Opciones y Correcta
     q.opciones = getOpcionesArray(q);
     q.correcta = getCorrectIndex(q);
 
+    // 4. Metadatos
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
@@ -195,20 +183,16 @@ function getCorrectIndex(q) {
   return -1;
 }
 
-/* --- APIS DE ACCESO --- */
+/* --- APIS DE ACCESO (Mantiene soporte array) --- */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        // 1. Chequeo de Materia (Soporta Array)
         const esDeLaMateria = Array.isArray(q.materia) 
             ? q.materia.includes(slug) 
             : q.materia === slug;
         
         if (!esDeLaMateria) return false;
 
-        // 2. Chequeo de Subtemas (Exacto porque ya normalizamos al cargar)
-        if (subs && subs.length) {
-            return subs.includes(q.submateria);
-        }
+        if (subs && subs.length) return subs.includes(q.submateria);
         return true;
     });
 }
