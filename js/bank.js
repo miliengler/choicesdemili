@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Corrección Definitiva de Fugas)
+   🌐 MEbank 3.0 — Banco TURBO (Optimizado)
    ========================================================== */
 
 /* --- 1. PROGRESO --- */
@@ -18,7 +18,6 @@ function saveProgress() {
 let PROG = loadProgress();
 
 /* --- 2. UTILIDADES --- */
-// Normalización agresiva para asegurar coincidencias (slug)
 function normalize(s) {
   return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
 }
@@ -27,7 +26,7 @@ function normalizeId(id) {
   return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
 }
 
-/* --- 3. ESTRUCTURA (Vinculada a config.js) --- */
+/* --- 3. ESTRUCTURA --- */
 let BANK = {
   subjects: typeof SUBJECTS !== 'undefined' ? SUBJECTS : [],
   subsubjects: {},
@@ -35,7 +34,6 @@ let BANK = {
   loaded: false
 };
 
-// Cargar subtemas desde la configuración global
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -48,52 +46,47 @@ if(typeof SUBJECTS !== 'undefined') {
 async function loadAllBanks() {
   console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
-  if(appMsg) appMsg.textContent = "🚀 Cargando banco completo...";
+  if(appMsg) appMsg.textContent = "🚀 Buscando preguntas...";
 
   const urls = [];
 
-  // A) Materias 
+  // A) Materias - Intentamos cargar hasta 15 archivos por materia. 
+  // (Los 404 son esperables y se ignorarán).
+  const FILES_PER_SUBJECT = 15; 
   BANK.subjects.forEach(subj => {
-    for (let i = 1; i <= 20; i++) { 
-      urls.push({
-        url: `bancos/${subj.slug}/${subj.slug}${i}.json`,
-        type: "materia",
-        meta: subj
-      });
+    for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
+      urls.push({ url: `bancos/${subj.slug}/${subj.slug}${i}.json`, type: "materia", meta: subj });
     }
   });
 
   // B) Exámenes
   if (typeof EXAMENES_META !== 'undefined') {
-    EXAMENES_META.forEach(ex => {
-      urls.push({
-        url: ex.file,
-        type: "examen",
-        meta: ex
-      });
-    });
+    EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
   }
 
-  const results = await Promise.allSettled(
-    urls.map(item => fetch(item.url).then(r => {
-      if (!r.ok) throw new Error("404");
-      return r.json().then(data => ({ data, type: item.type, meta: item.meta }));
-    }))
+  // C) Fetch en paralelo
+  const promises = urls.map(item => 
+    fetch(item.url)
+      .then(r => {
+        if (!r.ok) throw new Error("404"); // Ignoramos archivos que no existen
+        return r.json();
+      })
+      .then(data => ({ status: "ok", data, type: item.type, meta: item.meta }))
+      .catch(() => ({ status: "fail" })) // Capturamos el error para no romper Promise.all
   );
 
+  const results = await Promise.all(promises);
+
   let allQuestions = [];
-  let successCount = 0;
+  let successFiles = 0;
 
   results.forEach(res => {
-    if (res.status === "fulfilled") {
-      const { data, type, meta } = res.value;
-      if (Array.isArray(data)) {
-        successCount++;
-        data.forEach(q => {
-            processQuestion(q, type, meta);
-            allQuestions.push(q);
-        });
-      }
+    if (res.status === "ok" && Array.isArray(res.data)) {
+      successFiles++;
+      res.data.forEach(q => {
+          processQuestion(q, res.type, res.meta);
+          allQuestions.push(q);
+      });
     }
   });
 
@@ -101,58 +94,44 @@ async function loadAllBanks() {
   BANK.loaded = true;
 
   console.timeEnd("⏱ Tiempo de carga");
-  console.log(`✅ Carga finalizada: ${successCount} archivos. ${BANK.questions.length} preguntas.`);
+  console.log(`✅ Carga finalizada: ${successFiles} archivos leídos. ${BANK.questions.length} preguntas totales.`);
 
   if(appMsg) appMsg.textContent = "✔ Banco listo.";
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR DE PREGUNTA (A PRUEBA DE BALAS) --- */
+/* --- 5. PROCESADOR --- */
 function processQuestion(q, type, examMeta) {
-    q.id = normalizeId(q.id);
+    if(!q.id) q.id = normalizeId(null);
+    else q.id = normalizeId(q.id);
     
-    // 1. Materia (Array o String -> Array Normalizado)
+    // 1. Materia
     if (Array.isArray(q.materia)) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
         let mat = normalize(q.materia || "otras");
-        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
+        // Validación extra: si la materia no está en la lista oficial, marcar como 'otras'
+        if (!BANK.subjects.some(s => s.slug === mat)) {
+            // Un intento de "fuzzy match" básico o dejar como otras
+            mat = "otras"; 
+        }
         q.materia = mat;
     }
 
-    // 2. SUBMATERIA (Lógica de Rescate)
-    // Definimos la materia principal para buscar la lista válida
+    // 2. Submateria
     const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
     const listaOficial = BANK.subsubjects[mainMateria] || [];
-
-    // Obtenemos el subtema crudo del JSON
-    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : q.submateria;
-    if (!subRaw) subRaw = "";
-    
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
     const subNorm = normalize(subRaw);
-
-    // Intentamos encontrar coincidencia en la lista oficial
-    // Comparamos slug contra slug para evitar errores de tildes/mayúsculas
     const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
 
     if (match) {
-        // Si existe, asignamos el slug normalizado (que es lo que usa el filtro)
         q.submateria = normalize(match);
     } else {
-        // Si NO existe, asignamos el último de la lista ("Otras...")
-        if (listaOficial.length > 0) {
-            const ultimo = listaOficial[listaOficial.length - 1];
-            q.submateria = normalize(ultimo);
-        } else {
-            q.submateria = "general";
-        }
+        q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
     }
 
-    // 3. Opciones y Correcta
-    q.opciones = getOpcionesArray(q);
-    q.correcta = getCorrectIndex(q);
-
-    // 4. Metadatos
+    // 3. Metadatos
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
@@ -172,38 +151,12 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-function getOpcionesArray(q) {
-  if (Array.isArray(q.opciones)) return q.opciones;
-  if (q.opciones && typeof q.opciones === 'object') {
-      return ["a","b","c","d","e"].map(k => q.opciones[k]).filter(v=>v);
-  }
-  return [];
-}
-
-function getCorrectIndex(q) {
-  if (typeof q.correcta === 'number') return q.correcta;
-  if (typeof q.correcta === 'string') {
-      const map = {a:0, b:1, c:2, d:3, e:4};
-      return map[q.correcta.trim().toLowerCase()] ?? -1;
-  }
-  return -1;
-}
-
 /* --- 7. APIS HÍBRIDAS --- */
 function getQuestionsByMateria(slug, subs) {
     return BANK.questions.filter(q => {
-        // Chequeo de materia (flexible)
-        const esDeLaMateria = Array.isArray(q.materia) 
-            ? q.materia.includes(slug) 
-            : q.materia === slug;
-        
+        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
         if (!esDeLaMateria) return false;
-
-        // Chequeo de subtemas (exacto porque ya está normalizado)
-        if (subs && subs.length) {
-            // subs es un array de slugs (ej: ['arritmias', 'insuficienciacardiaca'])
-            return subs.includes(q.submateria);
-        }
+        if (subs && subs.length) return subs.includes(q.submateria);
         return true;
     });
 }
