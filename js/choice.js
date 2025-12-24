@@ -1,12 +1,12 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Centro de Comando)
+   📚 MEbank 3.0 – Práctica por materia (Diseño Clean)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
 
-/* --- CÍRCULO DE PROGRESO --- */
+/* --- CÍRCULO DE PROGRESO (Sin cambios) --- */
 function renderProgressCircle(percent) {
   const size = 42, stroke = 4, radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -27,8 +27,6 @@ function renderProgressCircle(percent) {
 /* --- RENDER PRINCIPAL --- */
 function renderChoice() {
   const app = document.getElementById("app");
-  
-  // 1. Filtramos y Ordenamos
   const subjects = getFilteredSubjects();
 
   app.innerHTML = `
@@ -42,7 +40,7 @@ function renderChoice() {
           </p>
         </div>
         
-        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#f1f5f9; border:1px solid #cbd5e1;">
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
            ⬅ Volver
         </button>
       </div>
@@ -81,7 +79,7 @@ function renderChoice() {
   }
 }
 
-/* --- LÓGICA INTERNA --- */
+/* --- LÓGICA --- */
 function onChangeChoiceOrder(val) {
   CHOICE_ORDER = val;
   localStorage.setItem("MEbank_ChoiceOrder_v1", val);
@@ -120,7 +118,7 @@ function getFilteredSubjects() {
   });
 }
 
-/* --- RENDER FILA --- */
+/* --- FILA DE MATERIA --- */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
@@ -133,8 +131,12 @@ function renderMateriaRow(m) {
 
   const estaAbierta = forceOpen || (choiceOpenSlug === m.slug);
 
+  // Fondo sutil al abrir (azul muy pálido) o blanco si está cerrada
+  const bg = estaAbierta ? '#f8fafc' : 'white';
+  const border = estaAbierta ? '#cbd5e1' : '#e2e8f0';
+
   return `
-    <div class="materia-block" style="border:1px solid ${forceOpen ? '#3b82f6' : '#e2e8f0'}; border-radius:10px; padding:14px; margin-bottom:12px; background:${forceOpen ? '#eff6ff' : 'white'};">
+    <div class="materia-block" style="border:1px solid ${border}; border-radius:10px; padding:14px; margin-bottom:12px; background:${bg}; transition: all 0.2s ease;">
       
       <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleMateriaChoice('${m.slug}')">
         <div>
@@ -154,7 +156,7 @@ function toggleMateriaChoice(slug) {
   renderChoice();
 }
 
-/* --- SUBTEMAS Y BOTONERA --- */
+/* --- PANEL EXPANDIDO (EL CAMBIO DE DISEÑO ESTÁ ACÁ) --- */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
@@ -166,7 +168,6 @@ function renderMateriaExpanded(m, term, stats) {
       }
   }
 
-  // Lista de Checks
   const items = subtemasTexto.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = contarPreguntasMateriaSub(slug, subSlug);
@@ -184,13 +185,15 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LÓGICA DE BOTONES (PANEL DE CONTROL) ---
+  // --- LÓGICA DE ESTADO ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
   const materiaDominada = (stats.ok === stats.total) && (stats.total > 0);
 
-  // Fila 1: Iniciar y Reanudar
+  // --- BOTONES CON DISEÑO CLEAN (Ghost Buttons) ---
+  
+  // Fila 1: Iniciar (Sólido Azul) + Reanudar (Ghost Azul Oscuro)
   let fila1 = `
     <button class="btn-main" style="flex:1;" onclick="iniciarPracticaMateria('${slug}', 'normal')">
       ▶ Iniciar
@@ -198,41 +201,40 @@ function renderMateriaExpanded(m, term, stats) {
   `;
   if (hayRespondidas && faltanResponder) {
       fila1 += `
-        <button class="btn-main" style="flex:1; background:#f59e0b; border-color:#f59e0b;" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
+        <button class="btn-main" style="flex:1; background:white; border:1px solid #1e40af; color:#1e40af;" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
           ⏩ Reanudar
         </button>
       `;
   }
 
-  // Fila 2: Aprender Errores
+  // Fila 2: Errores (Ghost Rojo) o Éxito (Texto Verde)
   let fila2 = "";
   if (hayErrores) {
       fila2 = `
-        <button class="btn-main" style="width:100%; background:#ef4444; border-color:#ef4444;" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
-           🧠 Aprender mis ${stats.bad} errores
+        <button class="btn-main" style="width:100%; background:white; border:1px solid #ef4444; color:#ef4444;" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
+           🧠 Repasar ${stats.bad} errores
         </button>
       `;
   } else if (materiaDominada) {
       fila2 = `
-        <div style="background:#dcfce7; color:#166534; padding:10px; border-radius:8px; text-align:center; border:1px solid #86efac; font-size:14px;">
-           🏆 ¡Felicitaciones! Tenés el 100% de la materia correcta.
+        <div style="color:#166534; font-size:14px; text-align:center; padding:5px; font-weight:600;">
+           🏆 ¡Materia dominada! (100% Correcto)
         </div>
       `;
   }
 
-  // Fila 3: Herramientas
+  // Fila 3: Tools (Gris sutil)
   let fila3 = `
     <div style="display:flex; gap:10px; margin-top:10px;">
-       <button class="btn-small" style="flex:1;" onclick="alert('Funcionalidad de Estadísticas Específicas en desarrollo')">📊 Estadísticas</button>
-       <button class="btn-small" style="flex:1;" onclick="alert('Funcionalidad de Notas Específicas en desarrollo')">📒 Notas</button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0;" onclick="alert('Funcionalidad de Estadísticas Específicas en desarrollo')">📊 Estadísticas</button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0;" onclick="alert('Funcionalidad de Notas Específicas en desarrollo')">📒 Notas</button>
     </div>
   `;
-  // Nota: Dejé los alerts en Stats/Notas por ahora, después los conectamos a pantallas reales si querés.
 
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <p style="font-size:13px; color:#64748b; margin-bottom:6px;">
-         ${term ? 'Resultados de la búsqueda:' : 'Temas:'}
+         ${term ? 'Resultados:' : 'Temas:'}
       </p>
       
       <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
@@ -251,7 +253,7 @@ function renderMateriaExpanded(m, term, stats) {
   `;
 }
 
-/* --- STATS & UTILS --- */
+/* --- UTILS --- */
 function getMateriaStats(slug) {
   const total = BANK.questions.filter(q => {
       if (Array.isArray(q.materia)) return q.materia.includes(slug);
@@ -283,43 +285,28 @@ function getMateriaNombre(slug) {
   return mat ? mat.name : slug;
 }
 
-/* --- LANZADORES DE PRÁCTICA --- */
 function iniciarPracticaMateria(mSlug, modo) {
-  // 1. Obtener Subtemas Seleccionados
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
-  
-  // 2. Obtener Preguntas Base (Todas las de la materia/subtemas)
   let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
   if (!preguntas.length) return alert("No hay preguntas disponibles con este filtro.");
 
-  // 3. Filtrar según el MODO
   let titulo = `Práctica – ${getMateriaNombre(mSlug)}`;
   
   if (modo === "reanudar") {
-      // Filtrar las que YA tienen respuesta (ok o bad)
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => !progMat[q.id] || (progMat[q.id].status !== 'ok' && progMat[q.id].status !== 'bad'));
       titulo += " (Reanudado)";
-      
-      if (!preguntas.length) return alert("¡Ya respondiste todas las preguntas de esta selección!");
+      if (!preguntas.length) return alert("¡Ya respondiste todo!");
   } 
   else if (modo === "repaso") {
-      // Filtrar SOLO las que están MAL
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => progMat[q.id] && progMat[q.id].status === 'bad');
       titulo += " (Repaso de Errores)";
-
-      if (!preguntas.length) return alert("¡Genial! No tenés errores registrados en esta selección.");
-  }
-  else {
-      // Modo NORMAL: Se usa todo el array 'preguntas' tal cual viene.
-      // Al iniciar, resolver.js empezará de la 0.
-      // Si respondes una que ya estaba OK, se sobreescribe. (Lógica de reaprendizaje).
+      if (!preguntas.length) return alert("¡No tenés errores registrados!");
   }
 
-  // 4. Iniciar
   iniciarResolucion({
     modo: "materia",
     preguntas,
