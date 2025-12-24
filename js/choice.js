@@ -1,12 +1,12 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Diseño Clean)
+   📚 MEbank 3.0 – Práctica por materia (Layout Horizontal)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
 
-/* --- CÍRCULO DE PROGRESO (Sin cambios) --- */
+/* --- CÍRCULO DE PROGRESO --- */
 function renderProgressCircle(percent) {
   const size = 42, stroke = 4, radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -118,7 +118,7 @@ function getFilteredSubjects() {
   });
 }
 
-/* --- FILA DE MATERIA --- */
+/* --- FILA MATERIA --- */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
@@ -130,8 +130,6 @@ function renderMateriaRow(m) {
   }
 
   const estaAbierta = forceOpen || (choiceOpenSlug === m.slug);
-
-  // Fondo sutil al abrir (azul muy pálido) o blanco si está cerrada
   const bg = estaAbierta ? '#f8fafc' : 'white';
   const border = estaAbierta ? '#cbd5e1' : '#e2e8f0';
 
@@ -156,7 +154,7 @@ function toggleMateriaChoice(slug) {
   renderChoice();
 }
 
-/* --- PANEL EXPANDIDO (EL CAMBIO DE DISEÑO ESTÁ ACÁ) --- */
+/* --- PANEL EXPANDIDO (Layout corregido) --- */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   let subtemasTexto = BANK.subsubjects[slug] || [];
@@ -185,49 +183,44 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // --- LÓGICA DE ESTADO ---
+  // --- LOGICA DE BOTONES (UNA SOLA LÍNEA) ---
   const hayRespondidas = (stats.ok + stats.bad) > 0;
   const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
   const hayErrores = stats.bad > 0;
-  const materiaDominada = (stats.ok === stats.total) && (stats.total > 0);
 
-  // --- BOTONES CON DISEÑO CLEAN (Ghost Buttons) ---
-  
-  // Fila 1: Iniciar (Sólido Azul) + Reanudar (Ghost Azul Oscuro)
-  let fila1 = `
-    <button class="btn-main" style="flex:1;" onclick="iniciarPracticaMateria('${slug}', 'normal')">
+  // Botón Base: Iniciar
+  let botonesHTML = `
+    <button class="btn-small" style="flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;" 
+            onclick="iniciarPracticaMateria('${slug}', 'normal')">
       ▶ Iniciar
     </button>
   `;
+
+  // Botón: Reanudar
   if (hayRespondidas && faltanResponder) {
-      fila1 += `
-        <button class="btn-main" style="flex:1; background:white; border:1px solid #1e40af; color:#1e40af;" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
+      botonesHTML += `
+        <button class="btn-small" style="flex:1; background:white; border:1px solid #f59e0b; color:#b45309; font-weight:600;" 
+                onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
           ⏩ Reanudar
         </button>
       `;
   }
 
-  // Fila 2: Errores (Ghost Rojo) o Éxito (Texto Verde)
-  let fila2 = "";
+  // Botón: Aprender
   if (hayErrores) {
-      fila2 = `
-        <button class="btn-main" style="width:100%; background:white; border:1px solid #ef4444; color:#ef4444;" onclick="iniciarPracticaMateria('${slug}', 'repaso')">
-           🧠 Repasar ${stats.bad} errores
+      botonesHTML += `
+        <button class="btn-small" style="flex:1; background:white; border:1px solid #ef4444; color:#b91c1c; font-weight:600;" 
+                onclick="iniciarPracticaMateria('${slug}', 'repaso')">
+           🧠 Aprender (${stats.bad})
         </button>
-      `;
-  } else if (materiaDominada) {
-      fila2 = `
-        <div style="color:#166534; font-size:14px; text-align:center; padding:5px; font-weight:600;">
-           🏆 ¡Materia dominada! (100% Correcto)
-        </div>
       `;
   }
 
-  // Fila 3: Tools (Gris sutil)
-  let fila3 = `
+  // Fila Tools
+  let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px;">
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0;" onclick="alert('Funcionalidad de Estadísticas Específicas en desarrollo')">📊 Estadísticas</button>
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0;" onclick="alert('Funcionalidad de Notas Específicas en desarrollo')">📒 Notas</button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" onclick="alert('Próximamente: Estadísticas detalladas')">📊 Estadísticas</button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" onclick="alert('Próximamente: Notas de materia')">📒 Notas</button>
     </div>
   `;
 
@@ -241,13 +234,11 @@ function renderMateriaExpanded(m, term, stats) {
          ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
 
-      <div style="display:flex; gap:10px; margin-bottom:10px;">
-         ${fila1}
+      <div style="display:flex; gap:8px; margin-bottom:10px;">
+         ${botonesHTML}
       </div>
       
-      ${fila2 ? `<div style="margin-bottom:10px;">${fila2}</div>` : ""}
-      
-      ${fila3}
+      ${filaTools}
 
     </div>
   `;
