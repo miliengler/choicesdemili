@@ -1,1 +1,852 @@
-[]
+[[
+  {
+    "id": "med_2013_001",
+    "materia": "infectologia",
+    "submateria": "Tracto digestivo",
+    "enunciado": "¿Cuál es la etiología más probable del cuadro clínico de un grupo de niños en edad escolar que compartieron una fiesta de cumpleaños en la que comieron hamburguesas con ensalada rusa y helados y que seis horas después comenzaron con náuseas, vómitos y diarrea?",
+    "opciones": {
+      "a": "E. coli",
+      "b": "Shigella sp.",
+      "c": "Enterobacter sp.",
+      "d": "Salmonella sp."
+    },
+    "correcta": "d",
+    "explicacion": "El periodo de incubación corto (6 horas) y los alimentos implicados (ensalada rusa/huevos/mayonesa, hamburguesas) sugieren una intoxicación alimentaria o infección rápida. Aunque S. aureus es clásico para <6h, Salmonella es la opción más viable entre las presentes (incubación 6-72h). E. coli y Shigella suelen tener incubaciones más largas (>12-24h).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_002",
+    "materia": "pediatria",
+    "submateria": "Hematología infantil",
+    "enunciado": "¿Cuál es el diagnóstico más probable en un niño de 2 años de edad que hace 15 días presentó un cuadro autolimitado de infección de vías aéreas superiores y que hace 24 horas comenzó con lesiones petequiales en miembros inferiores sin otra sintomatología y en el examen de laboratorio realizado por guardia presenta hemoglobina 12,2 g/dL recuento de Glóbulos Blancos: 9.800/mm3 Plaquetas: 70.000/mm3?",
+    "opciones": {
+      "a": "Púrpura de Schönlein Henoch",
+      "b": "Púrpura trombocitopénica idiopática",
+      "c": "Meningococcemia",
+      "d": "Sindrome de Wiscott-Aldrich"
+    },
+    "correcta": "b",
+    "explicacion": "La presentación clásica de la Púrpura Trombocitopénica Idiopática (PTI) en niños es la aparición brusca de petequias/equimosis en un niño por lo demás sano (sin otros síntomas sistémicos), a menudo precedida por una infección viral. La trombocitopenia aislada (70.000) confirma la sospecha. El Schönlein-Henoch cursa con plaquetas normales.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_003",
+    "materia": "cirugiageneral",
+    "submateria": "Colon",
+    "enunciado": "¿Cuál es el diagnóstico más probable en una paciente de 55 años de edad que consulta por dolor en fosa iliaca izquierda, fiebre de 38°C y constipación de 12 horas de evolución? En el examen físico presenta abdomen blando, doloroso a la palpación de flanco y fosa ilíaca izquierda sin reacción peritoneal y con ruidos hidroaéreos presentes.",
+    "opciones": {
+      "a": "Diverticulitis aguda",
+      "b": "Cólico renal izquierdo",
+      "c": "Recto sigmoiditis",
+      "d": "Absceso tuboovárico"
+    },
+    "correcta": "a",
+    "explicacion": "El cuadro clínico de dolor en fosa ilíaca izquierda ('apendicitis izquierda') con fiebre y alteración del ritmo evacuatorio (constipación) en una paciente de 55 años es altamente sugestivo de Diverticulitis Aguda.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_004",
+    "materia": "infectologia",
+    "submateria": "Infecciones urinarias",
+    "enunciado": "¿En cuál de los siguientes pacientes indicaría tratamiento antibiótico con dos urocultivos con 10^5 unidades formadoras de colonias (UFC)/ml de E. coli aunque se encuentre asintomático?",
+    "opciones": {
+      "a": "Embarazada",
+      "b": "Anciano",
+      "c": "Diabético",
+      "d": "Lesionado medular"
+    },
+    "correcta": "a",
+    "explicacion": "La bacteriuria asintomática solo debe tratarse en situaciones específicas donde el riesgo de complicaciones es alto, siendo la principal indicación el embarazo (riesgo de pielonefritis y parto prematuro) y previo a procedimientos urológicos invasivos.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_005",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
+    "enunciado": "¿Cuál es la conducta más adecuada en una paciente con infección HIV que concurre a la consulta porque se realizó una prueba de embarazo que fue positiva y recibe tratamiento antirretroviral (TARV) con zidovudina/lamivudina (AZT/3TC) y efavirenz (EFV) desde hace 4 años? Tiene carga viral <50 copias y CD4 350 mm3.",
+    "opciones": {
+      "a": "Continuar con el TARV que venía recibiendo y repetir la prueba de embarazo",
+      "b": "Continuar con el TARV que venía recibiendo y reemplazar el EFV por otra droga",
+      "c": "Suspender el TARV y repetir la prueba de embarazo, si es positiva reiniciarlo en segundo trimestre",
+      "d": "Suspender el TARV para evitar efectos teratogénicos"
+    },
+    "correcta": "b",
+    "explicacion": "El Efavirenz se consideraba teratogénico (Categoría D) en el primer trimestre (riesgo de defectos del tubo neural) según guías clásicas (vigentes en 2013). La conducta estándar era rotar el esquema (ej. a Nevirapina o Inhibidor de Proteasa) si se detectaba embarazo en primer trimestre. Suspender el tratamiento no se recomienda por riesgo de rebote viral.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_006",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
+    "enunciado": "¿Cuál es la conducta más adecuada para prevenir la sepsis neonatal en una embarazada de 37 semanas que llega a la guardia en trabajo de parto con una rotura de membranas de más de 18 horas?",
+    "opciones": {
+      "a": "Cultivo vaginal y rectal para búsqueda de Streptococcus beta hemolítico Grupo B (EGB) y aguardar los resultados para iniciar tratamiento en el recién nacido",
+      "b": "Cultivo vaginal y rectal para búsqueda de EGB, urocultivo y profilaxis intraparto (PAI) con dosis de carga de Penicilina G 5 mill UI",
+      "c": "Cultivo vaginal y rectal para búsqueda de EGB, urocultivo y conducta expectante para iniciar tratamiento en el recién nacido",
+      "d": "Cultivo vaginal y rectal para búsqueda de EGB y, si son positivos, profilaxis intraparto (PAI) con dosis de carga de Penicilina G 5 mill UI"
+    },
+    "correcta": "b",
+    "explicacion": "Ante un estatus de EGB desconocido y presencia de factores de riesgo (como rotura de membranas > 18 horas o fiebre intraparto), está indicada la Profilaxis Antibiótica Intraparto empírica inmediata, sin esperar cultivos.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_007",
+    "materia": "psiquiatria",
+    "submateria": "Trastornos de la infancia y la adolescencia",
+    "enunciado": "¿Cuál de los siguientes factores se asocia con mayor riesgo de suicidio en la adolescencia?",
+    "opciones": {
+      "a": "Pertenecer a clase socioeconómica baja",
+      "b": "Haber sido victima de abuso físico",
+      "c": "Haber finalizado los estudios y no encontrar trabajo",
+      "d": "Haber presentado trastornos del aprendizaje en la infancia"
+    },
+    "correcta": "b",
+    "explicacion": "El antecedente de abuso físico o sexual es uno de los factores de riesgo más consistentes y de mayor peso para el comportamiento suicida en adolescentes.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_008",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
+    "enunciado": "¿Cuál es la conducta más adecuada en el control de un niño sano de 11 meses de edad, hijo de una madre con enfermedad de Chagas crónica, que en el momento del nacimiento tenía una parasitemia negativa y actualmente tiene hemoaglutinación Indirecta (HAI) e inmunofluorescencia indirecta (IFI) reactivas?",
+    "opciones": {
+      "a": "Repetir la serología a los 18 meses ya que son anticuerpos transferidos por la madre",
+      "b": "Realizar tratamiento etiológico tripanocida ya que tiene infección congénita",
+      "c": "Realizar una tercera prueba serológica (ELISA) para evaluar si tiene infección congénita",
+      "d": "Dar de alta de seguimiento porque la parasitemia fue negativa al nacimiento"
+    },
+    "correcta": "b",
+    "explicacion": "Los anticuerpos maternos (IgG) pasan la placenta pero desaparecen usualmente entre los 6 y 9 meses (máximo 12). La persistencia de serología reactiva (dos pruebas positivas) más allá de los 10 meses confirma el diagnóstico de Chagas Congénito, indicando tratamiento inmediato.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_009",
+    "materia": "cirugiageneral",
+    "submateria": "Evaluación prequirúrgica",
+    "enunciado": "¿Cuál de las siguientes intervenciones resulta más eficiente en la reducción de las infecciones quirúrgicas?",
+    "opciones": {
+      "a": "Nutrir adecuadamente al paciente para una mejor evolución post quirúrgica",
+      "b": "Administrar antibióticos profilácticos de bajo costo",
+      "c": "Reducir lo más posible el ingreso preoperatorio del enfermo",
+      "d": "Garantizar un equipo médico quirúrgico con probada destreza técnica"
+    },
+    "correcta": "c",
+    "explicacion": "La reducción de la estadía preoperatoria disminuye la colonización del paciente por flora intrahospitalaria resistente, siendo una de las medidas más eficaces (junto con la profilaxis antibiótica adecuada en tiempo y forma) para prevenir la infección del sitio quirúrgico.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_010",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
+    "enunciado": "¿Cuál considera que es la conducta terapéutica más apropiada en una paciente de 54 años de edad, que consumió 80 gramos de alcohol/día durante los últimos 15 años y que presenta aumento del diámetro abdominal e incremento de 4 kg de peso en los últimos dos meses? En el examen físico presenta telangiectasias, abdomen globuloso con matidez desplazable y edemas. Lab: albúmina 2.5 g/dl, Na urinario 10 mEq/l. Ecografía: ascitis moderada, hígado cirrótico.",
+    "opciones": {
+      "a": "Dieta hiposódica y furosemida vía oral",
+      "b": "Dieta hiposódica y espironolactona vía oral",
+      "c": "Paracentesis evacuadora",
+      "d": "Dieta hiposódica y furosemida intravenosa"
+    },
+    "correcta": "b",
+    "explicacion": "En el tratamiento inicial de la ascitis moderada en cirróticos, la restricción de sodio y el uso de diuréticos es la base. La espironolactona (antagonista de aldosterona) es el diurético de elección inicial por el hiperaldosteronismo secundario presente. Se suele iniciar con espironolactona sola o combinada con furosemida (relación 100:40), pero la espironolactona es fundamental.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_011",
+    "materia": "infectologia",
+    "submateria": "TRI – Neumonías",
+    "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 70 años que lo consulta para vacunarse contra el neumococo y que recibió una dosis de vacuna a los 65 años? Tiene como antecedentes hipertensión arterial.",
+    "opciones": {
+      "a": "Vacunarlo porque trascurrieron 5 años desde la última dosis",
+      "b": "No repetir la vacunación",
+      "c": "Esperar 10 años desde la última dosis para vacunarlo",
+      "d": "Esperar un mes porque recibió gamaglobulina antitetánica"
+    },
+    "correcta": "b",
+    "explicacion": "Según el esquema secuencial (y las guías de la época), los mayores de 65 años requieren una dosis de vacuna polisacárida (Pneumo23). Si la recibieron a los 65 años o más, no requieren revacunación (refuerzo). Solo se revacuna si la primera dosis fue antes de los 65 años y pasaron 5 años.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_012",
+    "materia": "infectologia",
+    "submateria": "Tropicales",
+    "enunciado": "¿Cuál es el diagnóstico más probable en un niño de 8 años que vive en Formosa, sin antecedentes significativos, que presenta fiebre de 39°C cefalea intensa acompañada de dolor al movimiento de los ojos, dolores musculares y en articulaciones, náuseas y petequias en tronco? Lab: leucopenia (4.000), plaquetas normales.",
+    "opciones": {
+      "a": "Paludismo",
+      "b": "Dengue",
+      "c": "Sarampión",
+      "d": "Leptospirosis"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro es la definición clásica de caso sospechoso de Dengue (zona endémica, fiebre rompehuesos, dolor retroocular, mialgias, exantema/petequias).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_013",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
+    "enunciado": "¿Cuál de los siguientes enunciados corresponde a la definición de prevalencia?",
+    "opciones": {
+      "a": "El número de casos de una enfermedad en una población en un momento dado",
+      "b": "El número de casos nuevos de una enfermedad específica",
+      "c": "El número de casos de una enfermedad en un momento dado",
+      "d": "Es la razón que expresa el riesgo de enfermar o morir"
+    },
+    "correcta": "a",
+    "explicacion": "La prevalencia mide la proporción de individuos en una población que tienen la enfermedad en un punto específico en el tiempo (Prevalencia = Casos / Población total).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_014",
+    "materia": "obstetricia",
+    "submateria": "Parto",
+    "enunciado": "¿Cuál es el diagnóstico más probable en una mujer multípara de 32 años que se encuentra en trabajo de parto y la frecuencia cardíaca fetal muestra desaceleraciones tardías repetidas?",
+    "opciones": {
+      "a": "Insuficiencia útero-placentaria",
+      "b": "Presentación anormal",
+      "c": "Falta de descenso del feto",
+      "d": "Atonía uterina"
+    },
+    "correcta": "a",
+    "explicacion": "Las desaceleraciones tardías (Dips II) en el monitoreo fetal son aquellas que comienzan después del pico de la contracción y se recuperan lentamente. Son indicativas de hipoxia fetal por insuficiencia útero-placentaria.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_015",
+    "materia": "neurologia",
+    "submateria": "ECV",
+    "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 65 años, hipertenso y diabético... traído a la guardia por haber presentado una pérdida transitoria del conocimiento y actualmente refiere inestabilidad en la marcha, visión doble y mareos? Examen: marcha inestable y leve parálisis oculomotora.",
+    "opciones": {
+      "a": "Control ambulatorio y solicitar Holter",
+      "b": "Internación y solicitar TAC de cerebro",
+      "c": "Internación para monitoreo cardíaco y glucemia",
+      "d": "Control ambulatorio y solicitar EEG"
+    },
+    "correcta": "b",
+    "explicacion": "La clínica de diplopía, ataxia (inestabilidad) y vértigo/mareos sugiere una isquemia del territorio vertebrobasilar (ACV de fosa posterior o tronco). Dado los factores de riesgo y los signos neurológicos focales, requiere internación y neuroimagen urgente.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_016",
+    "materia": "pediatria",
+    "submateria": "Vacunación infantil",
+    "enunciado": "¿Cuál de las siguientes vacunas está contraindicada en un niño hijo de un padre HIV positivo?",
+    "opciones": {
+      "a": "Vacuna contra la varicela",
+      "b": "Vacuna anti meningocócica",
+      "c": "Vacuna anti hepatitis B",
+      "d": "Vacuna Sabin"
+    },
+    "correcta": "d",
+    "explicacion": "La vacuna Sabin (oral atenuada) se excreta en heces y puede causar polio vacunal en contactos inmunocomprometidos del hogar. Por ello, si un conviviente es HIV+, el niño debe recibir vacuna Salk (IPV, inactivada) en lugar de Sabin.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_017",
+    "materia": "medicinalegal",
+    "submateria": "Normativa nacional y jurisdiccional",
+    "enunciado": "Según la ley 26.529, ¿cuál es la conducta adecuada ante un paciente internado por una pielonefritis aguda que solicita el alta voluntaria y aún no completó el tratamiento indicado para su enfermedad?",
+    "opciones": {
+      "a": "Denegar el egreso hospitalario por considerar que está en riesgo su salud",
+      "b": "Aceptar la decisión del paciente, dar de alta hospitalaria y registrar en la historia clínica",
+      "c": "Solicitar al director del hospital su intervención",
+      "d": "Aceptar la decisión del paciente, brindar indicaciones médicas y registrar en la historia clínica"
+    },
+    "correcta": "d",
+    "explicacion": "La Ley de Derechos del Paciente establece la autonomía de la voluntad. El paciente competente tiene derecho a rechazar tratamientos. El médico debe informar los riesgos, otorgar el alta, registrarlo en la HC y brindar las indicaciones pertinentes (ej. medicación oral, pautas de alarma).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_018",
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
+    "enunciado": "¿Cuál es la conducta más adecuada en una niña de 2 años que presenta una hernia inguinal no complicada?",
+    "opciones": {
+      "a": "Cirugía de urgencia",
+      "b": "Conducta expectante y programar cirugía para los 6 años de edad",
+      "c": "Programar cirugía en un tiempo próximo",
+      "d": "Sólo operar si se complica por atascamiento"
+    },
+    "correcta": "c",
+    "explicacion": "Las hernias inguinales en pediatría no cierran espontáneamente y tienen riesgo de atascamiento. La indicación es quirúrgica (herniorrafia) de forma programada (no urgente si es reducible, pero 'próxima' para evitar complicaciones).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_019",
+    "materia": "neumonologia",
+    "submateria": "Neumonía",
+    "enunciado": "¿Cuál de los siguientes es un criterio para internar a un paciente con neumonía aguda adquirida en la comunidad?",
+    "opciones": {
+      "a": "Edad mayor a 60 años sin comorbilidades",
+      "b": "PO2: 70 mmHG",
+      "c": "Afectación de un lóbulo pulmonar en la radiografía de tórax",
+      "d": "Bajo nivel socioeconómico"
+    },
+    "correcta": "d",
+    "explicacion": "Los criterios de internación incluyen factores clínicos (CURB-65 >1, hipoxemia severa, inestabilidad) y factores sociales. El bajo nivel socioeconómico que impida el acceso al tratamiento ambulatorio o el cuidado adecuado es una indicación de internación por causa social. Una pO2 de 70 mmHg (sat ~93%) por sí sola en un anciano puede no requerir internación obligatoria si está estable, pero el riesgo social es determinante.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_020",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
+    "enunciado": "¿Cuál es la conducta más adecuada con una paciente embarazada de 2 meses que fue derivada a la consulta infectológica por presentar una determinación de Ig G positiva 1/5.000 por inmunoflorecencia indirecta (IFI) para toxoplasmosis? La paciente tiene un hijo de 3 años y durante el embarazo tenía una prueba positiva con título de 1/100.",
+    "opciones": {
+      "a": "Solicitar una determinación de Ig G por otro método",
+      "b": "Iniciar tratamiento con antiparasitarios",
+      "c": "Tranquilizar a la paciente ya que es una infección pasada",
+      "d": "Solicitar determinación de Ig M"
+    },
+    "correcta": "c",
+    "explicacion": "Si la paciente ya tenía IgG positiva hace 3 años, significa que se infectó antes del embarazo actual (es una infección crónica/pasada). Por lo tanto, tiene inmunidad y no hay riesgo de transmisión vertical en este embarazo. Los títulos altos pueden ser normales o por efecto 'booster', pero la seroconversión es antigua.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_021",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "¿Cuál es la causa más probable de un cuadro sincopal durante la realización de ejercicio físico intenso en un paciente de 65 años que tiene como único antecedente un soplo sistólico diagnosticado hace 8 años?",
+    "opciones": {
+      "a": "Sindrome vaso-vagal",
+      "b": "Insuficiencia mitral",
+      "c": "Estenosis aortica",
+      "d": "Bloqueo auriculo-ventricular"
+    },
+    "correcta": "c",
+    "explicacion": "El síncope de esfuerzo es un síntoma cardinal de la Estenosis Aórtica severa (junto con ángor y disnea). El soplo sistólico previo apoya el diagnóstico.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_022",
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
+    "enunciado": "¿Cuál de las siguientes patologías debería descartarse en una paciente de 40 años de edad, sin antecedentes patológicos que desde hace un mes presenta episodios compatibles con ataque de pánico?",
+    "opciones": {
+      "a": "Hipertiroidismo",
+      "b": "Hipotiroidismo",
+      "c": "Hiperparatiroidismo",
+      "d": "Insuficiencia suprarrenal"
+    },
+    "correcta": "a",
+    "explicacion": "El hipertiroidismo puede mimetizar trastornos de ansiedad o crisis de pánico, presentando taquicardia, palpitaciones, temblor, nerviosismo y sudoración. Es un diagnóstico diferencial orgánico obligatorio.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_023",
+    "materia": "neumonologia",
+    "submateria": "Asma",
+    "enunciado": "¿La desaparición de cuál de los siguientes signos constituye el indicador más importante para dar de alta a un paciente con una crisis asmática grave?",
+    "opciones": {
+      "a": "Taquicardia",
+      "b": "Taquipnea",
+      "c": "Disnea",
+      "d": "Sibilancias"
+    },
+    "correcta": "b",
+    "explicacion": "Aunque la evaluación es global, la normalización de la frecuencia respiratoria (taquipnea) y la saturación de oxígeno son indicadores objetivos clave de la resolución de la obstrucción severa y la fatiga respiratoria. Las sibilancias pueden persistir levemente al alta. La taquipnea refleja el trabajo respiratorio.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_024",
+    "materia": "pediatria",
+    "submateria": "Patología infecciosa infantil",
+    "enunciado": "¿Cuál es el diagnóstico más probable en una niña de 6 años que presenta fiebre y exantema de 24 horas de evolución, que comenzó en la cara, se extendió por todo el cuerpo y se exacerba al bañarse con agua caliente? En el examen físico presenta exantema eritemato-máculo-papular generalizado, con mejillas con 'signo de la cachetada'...",
+    "opciones": {
+      "a": "Sarampión",
+      "b": "Escarlatina",
+      "c": "5ta enfermedad",
+      "d": "Enterovirosis exantemática"
+    },
+    "correcta": "c",
+    "explicacion": "El signo de la cachetada (eritema facial intenso) seguido de un exantema reticular en el cuerpo que se exacerba con el calor/sol es patognomónico del Eritema Infeccioso o Quinta Enfermedad (Parvovirus B19).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_025",
+    "materia": "infectologia",
+    "submateria": "Virus respiratorios / Influenza",
+    "enunciado": "¿Cuál de los siguientes estudios complementarios solicitaría en primera instancia a una paciente de 17 años... que consulta por presentar desde hace una semana múltiples adenopatías en ambas cadenas yugulares e inguinales y lesiones cutáneas maculoeritematosas generalizadas, confluentes, no pruriginosas y sin descamación?",
+    "opciones": {
+      "a": "Examen micológico de las lesiones",
+      "b": "VDRL",
+      "c": "Serología para rubéola",
+      "d": "Serología para Epstein Barr"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro de adenopatías generalizadas (especialmente retroauriculares/cervicales) y exantema maculopapular confluente en un adolescente/adulto joven sugiere Rubéola. Aunque la sífilis secundaria es un diferencial (VDRL), la descripción del rash confluente y las adenopatías orientan clásicamente a Rubéola en preguntas de examen (sarampión alemán).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_026",
+    "materia": "infectologia",
+    "submateria": "Bacterias",
+    "enunciado": "¿Cuál es la conducta más adecuada en un adolescente de 17 años, con plan completo de inmunizaciones para la edad, que en la ciudad de Viedma es mordido por un perro callejero en la pierna izquierda y que en la consulta se observa una herida puntiforme profunda?",
+    "opciones": {
+      "a": "Suturar la herida...",
+      "b": "Antisepsia de la herida, gammaglobulina y vacuna antirrábica...",
+      "c": "Antisepsia de la herida, vacuna antirrábica y tratamiento con amoxicilina/clavulánico",
+      "d": "Suturar la herida..."
+    },
+    "correcta": "c",
+    "explicacion": "Ante una mordedura de perro callejero (riesgo de rabia, animal no observable), se indica profilaxis post-exposición (Vacuna Antirrábica). La herida profunda puntiforme NO se debe suturar (riesgo de infección) y requiere profilaxis antibiótica (Amoxi-Clav). La profilaxis antitetánica depende del carnet (si tiene completo, solo refuerzo si >5-10 años, aquí dice completo para la edad, probablemente al día). La gammaglobulina antirrábica se reserva para heridas graves/cara o riesgo muy alto.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_027",
+    "materia": "endocrinologia",
+    "submateria": "Metabolismo calcio – PTH",
+    "enunciado": "¿Cuál de las siguientes determinaciones de laboratorio se encontraría aumentada en un paciente de 58 años, con antecedentes de cáncer de pulmón en tratamiento oncológico, que presenta desde hace una semana prurito generalizado, náuseas, constipación y que es llevado a la guardia por un cuadro confusional?",
+    "opciones": {
+      "a": "Acido úrico",
+      "b": "Ácido láctico",
+      "c": "Potasio",
+      "d": "Calcio"
+    },
+    "correcta": "d",
+    "explicacion": "La hipercalcemia maligna (síndrome paraneoplásico común en cáncer de pulmón escamoso) se manifiesta con la nemotecnia 'bones, stones, groans, and psychic moans': dolor óseo, cálculos/poliuria, síntomas gastrointestinales (constipación, náuseas) y compromiso del SNC (confusión, letargo).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_028",
+    "materia": "reumatologia",
+    "submateria": "Artritis reumatoide",
+    "enunciado": "¿Cuál de los siguientes parámetros es de menor utilidad para monitorear la actividad de la artritis reumatoide?",
+    "opciones": {
+      "a": "Velocidad de sedimentación",
+      "b": "Factor reumatoideo",
+      "c": "Proteína C reactiva",
+      "d": "Hemoglobina"
+    },
+    "correcta": "b",
+    "explicacion": "El Factor Reumatoideo (FR) es útil para el diagnóstico y pronóstico, pero sus niveles no fluctúan consistentemente con la actividad inflamatoria aguda de la enfermedad, a diferencia de la VSG y la PCR, que son reactantes de fase aguda usados para el seguimiento (DAS28).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_029",
+    "materia": "saludpublica",
+    "submateria": "Medicina basada en la evidencia",
+    "enunciado": "¿Cuál de las siguientes definiciones corresponde al concepto de Medicina Basada en la Evidencia?",
+    "opciones": {
+      "a": "Estrategia que utiliza la mejor evidencia científica integrada a la experiencia clínica para tomar decisiones...",
+      "b": "Estrategia que utiliza la interpretación crítica de ensayos clínicos...",
+      "c": "Búsqueda sistemática de información médica...",
+      "d": "Búsqueda de los estudios publicados..."
+    },
+    "correcta": "a",
+    "explicacion": "La definición clásica de David Sackett es: 'El uso concienzudo, explícito y juicioso de la mejor evidencia actual en la toma de decisiones sobre el cuidado de los pacientes individuales', integrando la experticia clínica individual con la mejor evidencia externa disponible.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_030",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
+    "enunciado": "¿Cómo considera a un recién nacido de sexo masculino, edad gestacional 31 semanas, que pesa 1600 gramos tiene una talla de 43 cm y un perímetro cefálico de 31 cm.?",
+    "opciones": {
+      "a": "Recién nacido de pre-término, peso elevado para la edad gestacional",
+      "b": "Recién nacido de pre-termino, peso adecuado para edad gestacional",
+      "c": "Recién nacido de pre-término, bajo peso para edad gestacional",
+      "d": "Recién nacido de pre-término, bajo peso extremo"
+    },
+    "correcta": "b",
+    "explicacion": "Para 31 semanas de gestación, el peso medio (percentilo 50) ronda los 1500-1600 gramos. 1600g está dentro de los percentilos normales (entre 10 y 90), por lo tanto es Adecuado para la Edad Gestacional (AEG).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_031",
+    "materia": "psiquiatria",
+    "submateria": "Trastornos relacionados con sustancias",
+    "enunciado": "¿Cuál es la función del cuestionario CAGE en relación al tratamiento del alcoholismo?",
+    "opciones": {
+      "a": "Rastrear el consumo de alcohol de un paciente",
+      "b": "Diagnosticar a un paciente alcohólico grave",
+      "c": "Distinguir entre pacientes ex alcohólicos y alcohólicos activos",
+      "d": "Cuantificar la cantidad de alcohol que consume un paciente"
+    },
+    "correcta": "a",
+    "explicacion": "El cuestionario CAGE es una herramienta de screening (tamizaje/rastreo) para detectar problemas relacionados con el consumo de alcohol, no para cuantificar ni diagnosticar gravedad por sí solo.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_032",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
+    "enunciado": "¿Cuál de los siguientes enunciados es correcto con respecto al diagnóstico de Enfermedad de Chagas en la mujer embarazada?",
+    "opciones": {
+      "a": "Deben ser evaluadas sólo las embarazadas que tienen antecedentes epidemiológicos",
+      "b": "Deben ser evaluadas todas las embarazadas, independientemente de sus antecedentes epidemiológicos",
+      "c": "La evaluación serológica... con una sola técnica...",
+      "d": "La evaluación... con técnica serológica y parasitemia"
+    },
+    "correcta": "b",
+    "explicacion": "En áreas endémicas o países con historia de endemia (como Argentina), la Ley nacional obliga al tamizaje serológico para Chagas en *todas* las embarazadas para detectar y tratar al recién nacido precozmente si hay transmisión vertical.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_033",
+    "materia": "neumonologia",
+    "submateria": "Ventilación y ventilación mecánica",
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente que estuvo internado hace dos meses en terapia intensiva, en asistencia respiratoria mecánica por traumatismo encefalocraneano, y que actualmente presenta disnea inspiratoria?",
+    "opciones": {
+      "a": "Neumotórax espontáneo",
+      "b": "Estenosis subglótica traqueal",
+      "c": "Parálisis recurrencial",
+      "d": "Luxación aritenoidea"
+    },
+    "correcta": "b",
+    "explicacion": "La estenosis traqueal o subglótica es una complicación tardía conocida de la intubación prolongada o traqueostomía. La clínica de disnea *inspiratoria* (estridor) meses después de la extubación es característica.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_034",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
+    "enunciado": "¿Cuál es el diagnóstico más probable en un lactante de 6 meses que bruscamente comienza con vómitos asociados a episodios de llanto intenso, palidez y heces en 'jarabe de grosella'?",
+    "opciones": {
+      "a": "Gastroenterocolitis por E. coli enterotoxigénica",
+      "b": "Infección por rotavirus",
+      "c": "Invaginación intestinal",
+      "d": "Cólicos del lactante"
+    },
+    "correcta": "c",
+    "explicacion": "La tríada clásica de dolor abdominal cólico intermitente (llanto, encogimiento de piernas), vómitos y deposiciones con sangre y moco ('jalea de grosella') en un lactante es diagnóstica de Invaginación Intestinal.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_035",
+    "materia": "neumonologia",
+    "submateria": "Neumonía",
+    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta con respecto a las infecciones del tracto respiratorio adquiridas en la comunidad?",
+    "opciones": {
+      "a": "El diagnóstico debe confirmarse por exámenes microbiológicos...",
+      "b": "El diagnóstico es clínico y debe solicitarse examen microbiológico...",
+      "c": "El diagnóstico es clínico y no son necesarios estudios para iniciar el tratamiento",
+      "d": "El diagnóstico es clínico y radiológico y el esputo es útil para descartar tuberculosis"
+    },
+    "correcta": "d",
+    "explicacion": "En el manejo ambulatorio de la NAC, el diagnóstico se basa en la clínica y la radiografía de tórax (para confirmar infiltrado). No se recomiendan cultivos de rutina en ambulatorios. En nuestro medio, la baciloscopía de esputo es relevante para descartar TB ante síntomas respiratorios.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_036",
+    "materia": "cirugiageneral",
+    "submateria": "Vía biliar",
+    "enunciado": "¿Cuál de las siguientes patologías es un hallazgo frecuente en un adolescente de 14 años con un índice de masa corporal (IMC) de 30 con un cuadro de dolor abdominal?",
+    "opciones": {
+      "a": "Litiasis urinaria",
+      "b": "Esteatosis hepática",
+      "c": "Colon irritable",
+      "d": "Litiasis biliar"
+    },
+    "correcta": "d",
+    "explicacion": "La obesidad (IMC 30) es un factor de riesgo mayor para el desarrollo de colelitiasis (cálculos biliares), incluso en adolescentes. El dolor abdominal (cólico biliar) es la manifestación clínica.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_037",
+    "materia": "obstetricia",
+    "submateria": "Patología materna y gestación",
+    "enunciado": "¿A cuál de las siguientes patologías se asocia el polihidramnios?",
+    "opciones": {
+      "a": "Anomalías del aparato renal fetal",
+      "b": "Restricción del crecimiento intrauterino",
+      "c": "Anomalías del tubo neural",
+      "d": "Arteria umbilical única"
+    },
+    "correcta": "c",
+    "explicacion": "El polihidramnios se asocia a defectos que impiden la deglución fetal, como la anencefalia (defecto del tubo neural) o atresias digestivas altas. Las anomalías renales (agenesia) y el RCIU se asocian a oligoamnios.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_038",
+    "materia": "infectologia",
+    "submateria": "Parasitología",
+    "enunciado": "¿Cuál es el diagnóstico más probable en una niña de 7 años de edad... que vive en Esquel y que presenta un cuadro de 7 días de evolución... tos intensa con expectoración abundante blanquecina, hemoptoica y filante... radiografías de tórax...?",
+    "opciones": {
+      "a": "Hidatidosis pulmonar",
+      "b": "Absceso de pulmón",
+      "c": "Neumonía abscedada",
+      "d": "Quiste pleural"
+    },
+    "correcta": "a",
+    "explicacion": "La procedencia epidemiológica (Esquel, Patagonia, zona ovina) y la clínica de vómica (expulsión brusca de líquido, 'expectoración filante' o membranas, 'hollejos de uva') tras un acceso de tos sugiere la ruptura de un quiste hidatídico pulmonar hacia el bronquio.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_039",
+    "materia": "pediatria",
+    "submateria": "Trastornos de la infancia y la adolescencia",
+    "enunciado": "¿Cuál de los siguientes trastornos psiquiátricos es el más frecuente en los niños?",
+    "opciones": {
+      "a": "Tic transitorio",
+      "b": "Enuresis",
+      "c": "Déficit de atención e hiperactividad",
+      "d": "Encopresis"
+    },
+    "correcta": "c",
+    "explicacion": "El Trastorno por Déficit de Atención e Hiperactividad (TDAH) es el trastorno neuropsiquiátrico más frecuente en la infancia, con una prevalencia estimada del 5-10%.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  
+  {
+    "id": "med_2013_040",
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
+    "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 25 años de edad que presenta dolor abdominal y fiebre de 24 horas de evolución? En el examen físico se encuentra febril, a la palpación abdominal presenta un punto doloroso en fosa ilíaca derecha, signo de Blumberg negativo y la palpación profunda en fosa ilíaca izquierda le provoca dolor en el lado opuesto.",
+    "opciones": {
+      "a": "Peritonitis",
+      "b": "Colecistitis aguda",
+      "c": "Apendicitis aguda",
+      "d": "Absceso perirrenal derecho"
+    },
+    "correcta": "c",
+    "explicacion": "El dolor en fosa ilíaca derecha al palpar la fosa ilíaca izquierda se conoce como Signo de Rovsing, el cual es característico de la apendicitis aguda. Aunque el signo de Blumberg sea negativo (quizás por apéndice retrocecal o etapa temprana), la clínica de dolor en FID y fiebre en paciente joven es altamente sugestiva.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_041",
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 75 años, con antecedentes de hipertensión arterial controlada... que según sus familiares presentó en los últimos meses dificultad para andar, torpeza, inestabilidad con caídas frecuentes, falta de concentración, olvidos y pérdidas de orina? En el examen físico se encuentra normotenso con leve desorientación témporo espacial y examen neurológico normal.",
+    "opciones": {
+      "a": "Sindrome de Guillain Barré",
+      "b": "Enfermedad de Alzheimer",
+      "c": "Enfermedad de Parkinson",
+      "d": "Hidrocefalia normotensiva"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente presenta la tríada clásica de Hakim-Adams: trastornos de la marcha (apraxia/inestabilidad), deterioro cognitivo (demencia) e incontinencia urinaria. Es un cuadro de Hidrocefalia Normotensiva, reversible con derivación.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_042",
+    "materia": "infectologia",
+    "submateria": "Tuberculosis",
+    "enunciado": "¿En cuál de los siguientes casos, en contacto con un paciente con tuberculosis, indicaría quimioprofilaxis con isoniazida durante 6 meses?",
+    "opciones": {
+      "a": "Adolescente de 14 años en contacto con enfermo no bacilífero",
+      "b": "Niño de 4 años con PPD no reactiva en contacto con enfermo no bacilífero",
+      "c": "Adulto con diabetes tipo I con PPD reactiva en contacto con enfermo bacilífero",
+      "d": "Adulto con PPD reactiva y Rx normal en contacto con enfermo con adenitis tuberculosa"
+    },
+    "correcta": "c",
+    "explicacion": "La profilaxis primaria o tratamiento de la infección latente está indicada prioritariamente en contactos de pacientes bacilíferos (alto riesgo de transmisión). Los pacientes con comorbilidades como diabetes tienen mayor riesgo de progresión a enfermedad activa si están infectados (PPD+), por lo que está indicada la profilaxis.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_043",
+    "materia": "neumonologia",
+    "submateria": "Tuberculosis",
+    "enunciado": "¿Cuál es la indicación correcta en una paciente en periodo de lactancia con baciloscopía negativa que inicia tratamiento para tuberculosis?",
+    "opciones": {
+      "a": "Continuar con la lactancia materna",
+      "b": "Suspender la lactancia durante los primeros 15 días",
+      "c": "Suspender la lactancia durante los primeros 2 meses",
+      "d": "Suspender la lactancia definitivamente"
+    },
+    "correcta": "a",
+    "explicacion": "Si la madre es baciloscopía negativa (no contagiante) o ya ha iniciado tratamiento efectivo, no hay contraindicación para la lactancia. Los fármacos antituberculosos pasan a la leche en cantidades mínimas no tóxicas para el bebé.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_044",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato digestivo",
+    "enunciado": "¿Cuál de las siguientes es la causa más probable del cuadro clínico de un lactante de 8 meses de edad que es internado por edemas, anemia ferropénica e hipoproteinemia y que desde hace un mes se encuentra irritable, tiene diarrea acuosa, distensión abdominal y no aumentó de peso? El bebé tuvo buena progresión de peso con lactancia materna exclusiva y a los 6 meses se le incorporaron otros alimentos como yogur, papillas de zapallo, sémola y fideos.",
+    "opciones": {
+      "a": "Enteropatía infecciosa",
+      "b": "Enteropatía por sensibilidad al gluten",
+      "c": "Sindrome nefrótico",
+      "d": "Oxiuriasis"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico de diarrea crónica, distensión, irritabilidad y desnutrición (falla de medro) que comienza tras la introducción del gluten (fideos, sémola) a los 6 meses es la presentación clásica de la Enfermedad Celíaca en lactantes. La hipoproteinemia severa con edemas (forma de presentación tipo Kwashiorkor) es una complicación posible.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_045",
+    "materia": "oftalmologia",
+    "submateria": "Órbita",
+    "enunciado": "¿Cuál es el diagnóstico más probable de una niña de 10 años que es llevada a la consulta por tumefacción palpebral izquierda, fiebre, dolor e imposibilidad de abrir el ojo de 24 horas de evolución? ... En el examen físico presenta... importante edema, congestión conjuntival, quemosis y secreción purulenta. La movilidad ocular está disminuida, la niña manifiesta dolor al intentar movilizar el globo ocular y leve disminución de la visión.",
+    "opciones": {
+      "a": "Celulitis periorbitaria",
+      "b": "Celulitis orbitaria",
+      "c": "Absceso orbitario",
+      "d": "Uveítis"
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de oftalmoplejía (movilidad disminuida), dolor a la movilización ocular y disminución de la agudeza visual son los signos de alarma que diferencian la Celulitis Orbitaria (postseptal, grave) de la Periorbitaria (preseptal). Requiere internación y tratamiento endovenoso urgente.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_046",
+    "materia": "cardiologia",
+    "submateria": "Venas y linfáticos",
+    "enunciado": "¿Cuál es el diagnóstico más probable en un paciente de 45 años, con antecedentes de enfermedad inflamatoria intestinal que consulta por dolor moderado en pierna izquierda que aumenta al caminar? En el examen físico presenta... Miembro inferior izquierdo con aumento de volumen, dolor e hipertermia en pantorrilla.",
+    "opciones": {
+      "a": "Trombosis venosa profunda",
+      "b": "Tromboflebitis superficial",
+      "c": "Celulitis",
+      "d": "Trombosis arterial"
+    },
+    "correcta": "a",
+    "explicacion": "La clínica de edema unilateral, dolor y calor local en pantorrilla, sumado al factor de riesgo (la Enfermedad Inflamatoria Intestinal es pro-trombótica), orienta fuertemente a Trombosis Venosa Profunda (TVP).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_047",
+    "materia": "hematologia",
+    "submateria": "Anemias carenciales",
+    "enunciado": "¿Cuál de los siguientes enunciados describe mejor el cuadro que presenta una paciente de 17 años de edad con el siguiente hemograma: recuento de Glóbulos Rojos: 3.650.000/mm3; HB: 11.6 g/dl; Hematocrito: 32.5%; VCM: 78 FL; CHCM: 30 g/dl; RDW: 18%; FERRITINA: 5 µg/L...?",
+    "opciones": {
+      "a": "Anemia ferropénica",
+      "b": "Anemia megaloblástica",
+      "c": "Anemia hemolítica",
+      "d": "Hemograma normal para edad"
+    },
+    "correcta": "a",
+    "explicacion": "La paciente tiene anemia leve (Hb 11.6), microcitosis (VCM 78 < 80), amplitud de distribución eritrocitaria aumentada (RDW alto, anisocitosis) y Ferritina muy baja (5 ng/mL), lo cual confirma la ferropenia (depósitos de hierro agotados).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_048",
+    "materia": "psiquiatria",
+    "submateria": "Trastornos de la conducta alimentaria",
+    "enunciado": "¿Cuál es el diagnóstico más probable de una adolescente de 15 años, sin antecedentes patológicos, que consulta por amenorrea de 4 meses y constipación? En el examen físico se encuentra bradipsíquica, bradicárdica e hipotensa, con piel seca, leve Ictericia, cianosis acrodistal, abdomen excavado y genitales externos atrofiados.",
+    "opciones": {
+      "a": "Hipertiroidismo",
+      "b": "Anorexia nerviosa",
+      "c": "Insuficiencia suprarrenal",
+      "d": "Hipotiroidismo"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico de amenorrea secundaria en adolescente, asociado a signos de hipometabolismo (bradicardia, hipotensión, piel seca/lanugo, intolerancia al frío) y desnutrición severa ('abdomen excavado'), es característico de la Anorexia Nerviosa. La 'ictericia' puede ser hipercarotinemia (común en estas pacientes por dieta restrictiva rica en vegetales).",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_049",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
+    "enunciado": "¿A qué edad el niño dibuja la figura humana completa?",
+    "opciones": {
+      "a": "2 años",
+      "b": "3 años",
+      "c": "4 años",
+      "d": "5 años"
+    },
+    "correcta": "d",
+    "explicacion": "El hito madurativo del dibujo de la figura humana evoluciona: a los 3 años hace el 'renacuajo' (cabeza y patas), a los 4 años agrega el tronco y a los 5 años dibuja la figura humana completa reconocible con cabeza, tronco, extremidades y detalles.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
+  {
+    "id": "med_2013_050",
+    "materia": "infectologia",
+    "submateria": "SNC y meningitis",
+    "enunciado": "¿Cuál es el tratamiento más indicado en un paciente de 57 años, etilista crónico que ingresa a guardia por cefalea, fiebre, tendencia al sueño y que presentó una convulsión tónico clónica generalizada? ... LCR levemente turbio: células 200/mm3 neutrófilos 70%, Glucosa: 0.30g/l, proteínas 0,60g/l.",
+    "opciones": {
+      "a": "Ceftriaxona, dexametasona, tuberculostáticos",
+      "b": "Ceftriaxona, ampicilina, dexametasona",
+      "c": "Ceftriaxona, vancomicina, dexametasona",
+      "d": "Penicilina, aciclovir, dexametasona"
+    },
+    "correcta": "b",
+    "explicacion": "Es una meningitis bacteriana en un paciente con factores de riesgo (edad >50 y alcoholismo) para *Listeria monocytogenes*, además de *S. pneumoniae* y *N. meningitidis*. La ceftriaxona cubre neumococo/meningococo, pero NO cubre Listeria; se debe agregar Ampicilina. La dexametasona se indica para reducir secuelas inflamatorias.",
+    "examen": "Examen Único",
+    "anio": 2013,
+    "oficial": true
+  },
