@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Final Pulido
+   📊 ESTADÍSTICAS GLOBALES – Final Pulidoo
    ========================================================== */
 
 let STATS_ORDER = "az";
