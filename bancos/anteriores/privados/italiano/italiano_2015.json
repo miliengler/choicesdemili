@@ -851,551 +851,92 @@
   },
   
   {
-    "id": "med_2015_051",
-    "materia": "obstetricia",
-    "submateria": "Complicaciones maternas en el embarazo",
-    "enunciado": "Usted sigue a una embarazada cuyo feto creció hasta la semana 30 en el percentilo 50. Realiza una ecografía en la semana 34 y la antropometría fetal se encuentra en el percentilo 25, con líquido amniótico normal. ¿Cuál es la conducta más apropiada en este caso?",
+    "id": "ita_2015_051",
+    "materia": "pediatria",
+    "submateria": "Oncohematología infantil",
+    "enunciado": "Un paciente de 12 años se presenta a la consulta con un síndrome de edema en esclavina. En la tomografía de tórax y abdomen se observa una masa sólida y homogénea a nivel de mediastino medio que rodea a los grandes vasos y desplaza la vía aérea. También se observa una masa retroperitoneal y una moderada esplenomegalia. ¿Cuál de los siguientes es el diagnóstico más probable?",
     "opciones": {
-      "a": "Reposo absoluto, beta-miméticos y ecografía semanal",
-      "b": "Reposo relativo, aspirina a bajas dosis y ecografía semanal",
-      "c": "Seguimiento habitual del embarazo",
-      "d": "Reposo absoluto, doppler y ecografía quincenal"
+      "a": "Teratoma quístico",
+      "b": "Neuroblastoma",
+      "c": "Linfoma",
+      "d": "Carcinoma epidermoide"
     },
     "correcta": "c",
-    "explicacion": "Aunque hubo un cambio de carril en el crecimiento (del p50 al p25), el peso fetal estimado sigue estando dentro del rango normal (percentilo 25, que es >10). Con líquido amniótico normal y sin otros signos de alarma, no cumple criterios de Restricción del Crecimiento Intrauterino (RCIU). Corresponde continuar el control habitual monitoreando el crecimiento.",
+    "explicacion": "En un niño/adolescente, una masa mediastínica anterior/media asociada a masas retroperitoneales y esplenomegalia es altamente sugestiva de Linfoma (especialmente No Hodgkin). El neuroblastoma es más común en niños pequeños y suele tener calcificaciones. El teratoma suele ser anterior y quístico/heterogéneo.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_052",
+    "id": "ita_2015_052",
+    "materia": "pediatria",
+    "submateria": "Neonatología",
+    "enunciado": "Recibe en sala de partos a una niña con fisura labio palatina. ¿Cuál es su conducta terapéutica ante este caso?",
+    "opciones": {
+      "a": "Cirugía de labio y paladar los primeros días de vida para poder alimentarla",
+      "b": "Colocación de sonda nasogástrica y corrección del labio y el paladar al mes de vida",
+      "c": "Colocación de placa en el paladar, corrección del labio en los primeros meses de vida y más tarde el paladar",
+      "d": "Colocación de placa en el paladar y corrección del labio y el paladar luego de los 2 años una vez que haya desarrollado el macizo labial"
+    },
+    "correcta": "c",
+    "explicacion": "El manejo estándar suele implicar el cierre del labio (queiloplastia) alrededor de los 3-6 meses (regla de los 10) y el cierre del paladar (palatoplastia) entre los 9 y 18 meses (antes del desarrollo del lenguaje). La opción C describe la secuencia correcta.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_053",
     "materia": "urologia",
     "submateria": "Glomerulonefritis primaria",
-    "enunciado": "¿Cuál de las siguientes glomerulopatías primarias constituye la causa más común de síndrome nefrótico en adultos?",
+    "enunciado": "Un niño de 10 años consulta por presentar orinas color té cargado de 3 días de evolución, que comenzó dos días después de una infección de vías aéreas superiores. No hay antecedentes familiares ni personales de enfermedad renal. No presenta dolor lumbar ni disuria, está normotenso. El análisis de orina muestra campo cubierto de hematíes y la función renal es normal. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
-      "a": "Esclerosis glomerular focal y segmentaria",
-      "b": "Glomerulopatía membranosa",
-      "c": "Glomerulonefritis proliferativa mesangial",
-      "d": "Glomerulopatía de cambios mínimos"
-    },
-    "correcta": "b",
-    "explicacion": "Históricamente, la Glomerulopatía Membranosa ha sido la causa más frecuente de síndrome nefrótico primario en adultos no diabéticos (especialmente en caucásicos). Nota: La Focal y Segmentaria ha aumentado su incidencia en algunos grupos demográficos, pero la Membranosa sigue siendo la respuesta clásica.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_053",
-    "materia": "traumatologia",
-    "submateria": "Miembro inferior",
-    "enunciado": "La complicación alejada más frecuente luego de un reemplazo total de cadera es:",
-    "opciones": {
-      "a": "Aflojamiento protésico",
-      "b": "Infección protésica por vía hematógena",
-      "c": "Fractura periprotésica",
-      "d": "Luxación protésica"
+      "a": "Enfermedad de Berger",
+      "b": "Síndrome de Alport",
+      "c": "Glomerulonefritis postinfecciosa",
+      "d": "Glomerulonefritis proliferativa mesangial"
     },
     "correcta": "a",
-    "explicacion": "El aflojamiento aséptico de la prótesis es la causa más común de falla a largo plazo y revisión de la artroplastia total de cadera.",
+    "explicacion": "La hematuria macroscópica sinfaringítica (que ocurre simultáneamente o 1-2 días después de una infección respiratoria) es clásica de la Nefropatía por IgA (Enfermedad de Berger). La GMN postinfecciosa tiene un periodo de latencia de 1 a 3 semanas.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_054",
-    "materia": "hematologia",
-    "submateria": "Mieloproliferativas crónicas",
-    "enunciado": "Un paciente de sexo masculino de 67 años de edad, con antecedentes de policitemia vera de larga data consulta por astenia. Examen físico: esplenomegalia. Laboratorio: Hematocrito 30%, Plaquetas 87.000/ml, Leucocitos 2.800/ml. El aspirado de médula ósea fue seco. De acuerdo a estos datos, ¿cuál sería el diagnóstico más probable?",
+    "id": "ita_2015_054",
+    "materia": "reumatologia",
+    "submateria": "Vasculitis",
+    "enunciado": "Paciente de 48 años de edad y sexo femenino que consulta por obstrucción nasal bilateral, rinorrea, epistaxis y costras en ambas fosas nasales de dos meses de evolución. En la rinoscopía anterior se observan costras y ulceraciones de la mucosa. Al solicitar los análisis de laboratorio estos mostraron como datos relevantes un incremento en el valor sérico de la Creatinina, un c-ANCA positivo y un sedimento urinario alterado. Su diagnóstico presuntivo es:",
     "opciones": {
-      "a": "Leucemia linfática crónica",
-      "b": "Leucemia de células vellosas",
-      "c": "Mielofibrosis",
-      "d": "Mieloma múltiple"
+      "a": "Sarcoidosis",
+      "b": "Síndrome de Churg-Strauss",
+      "c": "Enfermedad de Wegener",
+      "d": "Enfermedad de Behçet"
     },
     "correcta": "c",
-    "explicacion": "La evolución natural de la Policitemia Vera (fase gastada) es hacia la Mielofibrosis post-policitemia. La clínica de pancitopenia (anemia, trombocitopenia, leucopenia) tras una fase policitémica, esplenomegalia y el aspirado de médula ósea 'seco' (por la fibrosis que impide la aspiración) son característicos.",
+    "explicacion": "La tríada clínica de compromiso de vía aérea superior (sinusitis, costras, nariz en silla de montar), compromiso pulmonar (no mencionado pero implícito en la vasculitis sistémica) y compromiso renal (creatinina alta, sedimento activo), asociada a c-ANCA positivo, es diagnóstica de Granulomatosis con Poliangeítis (Wegener).",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_055",
-    "materia": "obstetricia",
-    "submateria": "Amenazas de parto prematuro",
-    "enunciado": "Ante una mujer embarazada con riesgo de parto prematuro, ¿cuál de las siguientes medidas terapéuticas disminuye significativamente la morbilidad neonatal?",
-    "opciones": {
-      "a": "Reposo",
-      "b": "Betamiméticos",
-      "c": "Antibióticos",
-      "d": "Corticoesteroides"
-    },
-    "correcta": "d",
-    "explicacion": "La administración de corticoides antenatales (betametasona o dexametasona) es la única intervención que ha demostrado reducir significativamente la mortalidad neonatal, el síndrome de dificultad respiratoria y la hemorragia intraventricular.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_056",
-    "materia": "obstetricia",
-    "submateria": "Infecciones congénitas y perinatales",
-    "enunciado": "¿Cuál de los siguientes factores de riesgo es indicación de profilaxis intraparto para Estreptococo del Grupo B?",
-    "opciones": {
-      "a": "Fiebre materna en la última semana",
-      "b": "Embarazo menor de 37 semanas",
-      "c": "Rotura prematura de membrana a término de 16 horas",
-      "d": "Líquido amniótico meconial"
-    },
-    "correcta": "b",
-    "explicacion": "Las indicaciones de profilaxis antibiótica intraparto para EGB (cuando no se tiene cultivo o es desconocido) incluyen: Parto pretérmino (<37 semanas), Rotura de membranas prolongada (≥18 horas) o Fiebre intraparto (≥38°C). La opción B es correcta.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_057",
-    "materia": "pediatria",
-    "submateria": "Patología del aparato digestivo",
-    "enunciado": "Un lactante de 3 meses de edad, internado por bronquiolitis presenta tumoración en la región inguinal derecha que aumenta con los accesos de tos y que se puede reducir con relativa facilidad. Ud diagnostica hernia inguinal. ¿Cuál cree es la conducta adecuada?",
-    "opciones": {
-      "a": "Cirugía de urgencia por el riesgo de atascamiento",
-      "b": "Cirugía cuando resuelva el cuadro respiratorio",
-      "c": "Conducta expectante por las altas chances de resolución espontánea",
-      "d": "Cirugía diferida para los 11 meses de edad y corregir antes de que empiece a deambular"
-    },
-    "correcta": "b",
-    "explicacion": "La hernia inguinal en pediatría no se resuelve espontáneamente y tiene alto riesgo de atascamiento, por lo que su tratamiento es quirúrgico. Sin embargo, al ser reducible y estar el paciente cursando una infección respiratoria aguda (bronquiolitis), se debe esperar a la resolución del cuadro respiratorio para minimizar riesgos anestésicos, operando poco después (programada a corto plazo).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_058",
-    "materia": "pediatria",
-    "submateria": "Patología del aparato digestivo",
-    "enunciado": "Un joven de 15 años presenta deterioro del desempeño escolar y cambios de carácter. Niega consumo de drogas. Presenta hepatomegalia e ictericia y en el laboratorio aumento de transaminasas, Quick 35%, bilirrubina total 4.5 mg%, con fosfatasa alcalina dentro del límite normal. ¿Cuál de los siguientes exámenes solicitaría para confirmar el diagnóstico más probable?",
-    "opciones": {
-      "a": "Fenotipo de alfa 1 antitripsina",
-      "b": "Glucemia en ayunas",
-      "c": "Amonio",
-      "d": "Ceruloplasmina"
-    },
-    "correcta": "d",
-    "explicacion": "La combinación de enfermedad hepática (fallo hepático o hepatitis) y síntomas neurológicos/psiquiátricos (cambios de carácter, deterioro escolar) en un adolescente sugiere Enfermedad de Wilson. El screening inicial incluye dosaje de ceruloplasmina (baja) y cobre urinario.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_059",
-    "materia": "urologia",
-    "submateria": "Otras preguntas de urología",
-    "enunciado": "Un paciente de 28 años, al ducharse descubre por palpación un nódulo indoloro en su testículo derecho. Consulta a su médico quien le realiza una ecografía que confirma la presencia de una tumoración sólida de 2 cm de diámetro. ¿Cuál sería la conducta apropiada?",
-    "opciones": {
-      "a": "Confirmar el diagnóstico mediante una punción testicular transescrotal bajo anestesia general",
-      "b": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y efectuar exploración quirúrgica testicular solamente si ambos marcadores están elevados",
-      "c": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y efectuar exploración quirúrgica testicular sin necesidad de esperar los resultados de estos marcadores",
-      "d": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y mantener una conducta expectante si ambos marcadores están bajos"
-    },
-    "correcta": "c",
-    "explicacion": "Ante una masa testicular sólida, se presume malignidad hasta demostrar lo contrario. La biopsia transescrotal está contraindicada por riesgo de diseminación linfática. La conducta es la orquiectomía radical inguinal (diagnóstica y terapéutica). Se solicitan marcadores tumorales preoperatorios, pero su resultado no cambia la indicación quirúrgica inmediata de la masa.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_060",
-    "materia": "traumatologia",
-    "submateria": "Miembro inferior",
-    "enunciado": "Un paciente de 65 años se presenta caminando con dolor a las 6 horas de haber sufrido una supinación forzada del tobillo. Al examen físico presenta importante tumefacción del tobillo que impide la palpación de los pulsos arteriales. Las radiografías no objetivan lesión ósea. ¿Cuál sería la conducta de urgencia más adecuada?",
-    "opciones": {
-      "a": "Inmovilización con bota corta de yeso con taco de marcha",
-      "b": "Rehabilitación precoz",
-      "c": "Inmovilización temporaria con valva de yeso y control el 48 hs",
-      "d": "Punción evacuatoria y bota corta de yeso"
-    },
-    "correcta": "c",
-    "explicacion": "Se trata de un esguince severo de tobillo con gran edema. La inmovilización con yeso cerrado está contraindicada en agudo por riesgo de síndrome compartimental o lesiones cutáneas por compresión al aumentar el edema. Lo correcto es colocar una inmovilización abierta (valva de yeso o férula), elevar el miembro y controlar en 48hs cuando baje el edema.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_061",
-    "materia": "endocrinologia",
-    "submateria": "Suprarrenales",
-    "enunciado": "¿Cuáles son las alteraciones clásicas en el ionograma que se presentan en la insuficiencia suprarrenal primaria?",
-    "opciones": {
-      "a": "Hiponatremia e hiperkalemia",
-      "b": "Hiponatremia e hipokalemia",
-      "c": "Hipernatremia e hiperkalemia",
-      "d": "Hipernatremia e hipokalemia"
-    },
-    "correcta": "a",
-    "explicacion": "En la insuficiencia suprarrenal primaria (Enfermedad de Addison), el déficit de aldosterona impide la reabsorción de sodio y la excreción de potasio en el túbulo distal, llevando a hiponatremia, hiperkalemia y acidosis metabólica leve.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_062",
-    "materia": "infectologia",
-    "submateria": "Sepsis y nosocomiales",
-    "enunciado": "Un niño de 6 años dependiente de alimentación parenteral por síndrome de intestino corto, presenta fiebre y bacteriemias. El retrocultivo del acceso venoso central desarrolla estafilococo coagulasa negativo. ¿Cuál es su opción terapéutica?",
-    "opciones": {
-      "a": "Vancomicina",
-      "b": "Cefalotina",
-      "c": "Clindamicina",
-      "d": "Ciprofloxacina"
-    },
-    "correcta": "a",
-    "explicacion": "El Staphylococcus epidermidis (coagulasa negativo) asociado a catéteres suele ser meticilino-resistente, por lo que la Vancomicina es el antibiótico de elección.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_063",
-    "materia": "toxicologia",
-    "submateria": "Toxicología",
-    "enunciado": "Un hombre de 70 años se presenta a la guardia del hospital con dificultad respiratoria, sensación de tumefacción faríngea posterior y prurito generalizado. Presenta antecedentes de asma inducida por ejercicio y una hora previa al episodio había recibido una dosis de amoxicilina como profilaxis por una extracción dentaria. Al examen físico: exantema cutáneo generalizado eritematopapuloso, sibilancias a la auscultación pulmonar acompañado de un ruido de tonalidad grave inspiratorio. Los signos vitales son normales. ¿Cuál de los siguientes tratamientos indicaría Ud en primer término?",
-    "opciones": {
-      "a": "Salbutamol inhalatorio",
-      "b": "Metilprednisolona endovenosa",
-      "c": "Difenhidramina endovenosa",
-      "d": "Epinefrina intramuscular"
-    },
-    "correcta": "d",
-    "explicacion": "El cuadro es una anafilaxia (compromiso cutáneo + respiratorio/vía aérea) desencadenada por amoxicilina. El tratamiento de elección y primera línea es la adrenalina (epinefrina) intramuscular. Los antihistamínicos y corticoides son coadyuvantes de segunda línea.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_064",
-    "materia": "ginecologia",
-    "submateria": "Cáncer de ovario",
-    "enunciado": "Una paciente de sexo femenino de 44 años, se presenta a la consulta con ascitis y una masa tumoral en abdomen inferior. El examen ecográfico muestra tumor sólido y quístico en ovario derecho. Los dosajes de sangre de CA 125 están aumentados. ¿Qué tumor espera encontrar en el estudio histopatológico?",
-    "opciones": {
-      "a": "Tumor de células transicionales",
-      "b": "Cistoadenocarcinoma mucinoso",
-      "c": "Cistoadenocarcinoma seroso",
-      "d": "Adenocarcinoma de células claras"
-    },
-    "correcta": "c",
-    "explicacion": "El cistoadenocarcinoma seroso es el tumor maligno de ovario más frecuente (especialmente epitelial), y típicamente eleva el CA-125.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_065",
-    "materia": "infectologia",
-    "submateria": "HIV",
-    "enunciado": "Concurre a la consulta un paciente de sexo masculino y 32 años de edad, HIV positivo, quien presenta desde hace 15 días cefalea holocraneana acompañada de debilidad para mover su brazo y pierna izquierdos. Se efectuó tomografía computada encefálica con y sin contraste la cual mostró múltiples lesiones que realzan tras la administración de contraste endovenoso, encontrándose la mayor a nivel periventricular derecho, causando moderado efecto de masa. De las siguientes entidades, ¿cuál sería la más probable?",
-    "opciones": {
-      "a": "Toxoplasmosis cerebral",
-      "b": "Linfoma primario del sistema nervioso central",
-      "c": "Leucoencefalopatía multifocal progresiva",
-      "d": "Criptococosis cerebral"
-    },
-    "correcta": "a",
-    "explicacion": "En pacientes HIV, la causa más frecuente de lesiones focales múltiples con realce en anillo y efecto de masa es la Toxoplasmosis Cerebral. Aunque el linfoma primario (típicamente periventricular) es un diferencial importante, la multiplicidad de lesiones hace que la toxoplasmosis sea estadísticamente más probable. La conducta habitual es tratamiento empírico anti-toxoplasma.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_066",
-    "materia": "hematologia",
-    "submateria": "Leucemias agudas",
-    "enunciado": "Una mujer de 35 años se presenta a la consulta con epistaxis y gingivorragia. Al examen físico presenta fiebre 38°C y petequias en miembros inferiores. Laboratorio: Hematocrito 29%, Plaquetas 10.000/mm3; Leucocitos 1600/mm3 (50% blastos promielocíticos). Tiempo de protrombina 15%; KPTT 60%. Punción de médula ósea: infiltración por mieloblastos con abundantes gránulos y bastones de Auer. Se comienza tratamiento con ATRA (ácido transretinoico). ¿Cuál de las siguientes complicaciones esperaría usted que se presenta debido al tratamiento?",
-    "opciones": {
-      "a": "Neutropenia febril",
-      "b": "Síndrome de lisis tumoral",
-      "c": "Distress respiratorio",
-      "d": "Empeoramiento de la coagulación"
-    },
-    "correcta": "c",
-    "explicacion": "El Síndrome de ATRA (o Síndrome de Diferenciación) es una complicación grave del tratamiento de la Leucemia Promielocítica Aguda, caracterizado por fiebre, distress respiratorio, infiltrados pulmonares, derrame pleural/pericárdico y aumento de peso.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_067",
-    "materia": "pediatria",
-    "submateria": "Otras preguntas de pediatría",
-    "enunciado": "En eucariontes, un gen es una porción de DNA que codifica para:",
-    "opciones": {
-      "a": "Una sola proteína",
-      "b": "Varias proteínas",
-      "c": "Una o varias proteínas",
-      "d": "Proteínas y otras moléculas"
-    },
-    "correcta": "c",
-    "explicacion": "Gracias al proceso de splicing alternativo, un mismo gen eucariota puede dar lugar a diferentes ARNm maduros y, por tanto, codificar para varias isoformas de proteínas diferentes.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_068",
-    "materia": "otorrinolaringologia",
-    "submateria": "Oído",
-    "enunciado": "Un hombre de 67 años asiste a la consulta médica refiriendo disminución progresiva de la audición. La otoscopía no muestra hallazgos de importancia. La audiometría solicitada muestra una caída de 5 a 10 dB en la vía ósea y de 30 a 40 dB en la vía aérea. ¿Cuál de los siguientes estudios complementarios cree Ud que sería más útil para caracterizar la hipoacusia en este paciente?",
-    "opciones": {
-      "a": "Logoaudiometría",
-      "b": "Otoemisión",
-      "c": "Timpanometría",
-      "d": "Potenciales evocados auditivos"
-    },
-    "correcta": "c",
-    "explicacion": "La diferencia entre la vía ósea (normal o casi normal) y la aérea (afectada) se llama gap osteo-aéreo e indica una Hipoacusia Conductiva (problema en oído externo o medio). Dado que la otoscopía es normal (membrana íntegra), la timpanometría es fundamental para evaluar la función del oído medio (movilidad timpánica, cadena osicular, presencia de líquido o fijación).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_069",
-    "materia": "ginecologia",
-    "submateria": "Cáncer de mama",
-    "enunciado": "Ud recibe una interconsulta por una paciente de 33 años que ha sido operada por padecer cáncer mamario, se le realizó una mastectomía subradical y la anatomía patológica postoperatoria muestra un carcinoma ductal infiltrando de 3.9 cm con componente intraductal extensivo y 5 de 23 ganglios axilares con metástasis. Los receptores hormonales estrogénicos son positivos. ¿Cuál es la terapéutica postoperatoria indicada?",
-    "opciones": {
-      "a": "Radioterapia en colgajos mamarios",
-      "b": "Radioterapia en colgajos mamarios más quimioterapia",
-      "c": "Radioterapia en colgajos mamarios más quimioterapia más tamoxifeno",
-      "d": "Quimioterapia más tamoxifeno"
-    },
-    "correcta": "c",
-    "explicacion": "Paciente de alto riesgo: premenopáusica (33 años), ganglios positivos (>4 ganglios implica alto riesgo de recurrencia local y sistémica) y receptores positivos. Requiere: 1) Quimioterapia adyuvante (por ganglios+ y edad). 2) Hormonoterapia (Tamoxifeno) por receptores positivos. 3) Radioterapia post-mastectomía (indicada cuando hay >4 ganglios positivos o tumores grandes).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_070",
-    "materia": "endocrinologia",
-    "submateria": "Metabolismo calcio – PTH",
-    "enunciado": "¿Cuál de las siguientes entidades nosológicas es una causa de aumento de densidad ósea generalizada (osteoesclerosis)?",
-    "opciones": {
-      "a": "Hiperparatiroidismo",
-      "b": "Osteomalacia",
-      "c": "Raquitismo",
-      "d": "Paget"
-    },
-    "correcta": "a",
-    "explicacion": "El Hiperparatiroidismo (especialmente el secundario en insuficiencia renal, conocido como osteodistrofia renal) puede producir osteoesclerosis generalizada (ej. columna en 'rugger jersey'). La Osteomalacia y el Raquitismo cursan con disminución de la densidad mineral (osteopenia). La enfermedad de Paget produce esclerosis pero suele ser focal/parcheada y con hueso deformado/agrandado, no uniformemente generalizada en todo el esqueleto como primera definición.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_071",
-    "materia": "ginecologia",
-    "submateria": "Cáncer de endometrio",
-    "enunciado": "Un paciente de 63 años ha sido tratada por presentar adenocarcinoma endometrial con anexohisterectomía total, toma citológica peritoneal y linfadenectomía pelviana y aórtica completa. La biopsia final mostró carcinoma endometroide (G3) pobremente diferenciado que infiltra el miometrio del fondo uterino en menos del 50% de su espesor con progresión al cuello uterino más allá de la mucosa, serosa intacta. Anexos libres, citología negativa y ausencia de metástasis en todos los grupos ganglionares estudiados. ¿Frente a qué estadio nos encontramos y qué adyuvancia sugiere Ud?",
-    "opciones": {
-      "a": "Estadio IB G3 y debe completar braquicurieterapia",
-      "b": "Estadio IB G3 y debe completar teleradioterapia y braquicurieterapia",
-      "c": "Estadio IIB G3 y debe completar teleradioterapia y braquicurieterapia",
-      "d": "Estadio IIIB G3 y debe completar braquicurieterapia"
-    },
-    "correcta": "c",
-    "explicacion": "La invasión del estroma cervical ('más allá de la mucosa' del cuello) define el Estadio II (según clasificación FIGO, antiguamente IIB). Al ser un tumor de alto grado (G3) y Estadio II, el riesgo de recurrencia es significativo, por lo que se indica radioterapia adyuvante (Teleradioterapia pélvica + Braquiterapia de cúpula).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_072",
-    "materia": "nutricion",
-    "submateria": "Diabetes mellitus",
-    "enunciado": "Un hombre de 55 años consulta por un control de salud. En su historia clínica se registran valores de glucemia en ayunas de 112 y 114 mg% realizadas hace 3 meses y con diferencia de 20 días. Su médico decide realizar una prueba de carga oral con 75 g de glucosa cuyo resultado es de 135 mg% a las 2 hs. ¿A cuál de las siguientes categorías correspondería asignar a este paciente según los criterios diagnósticos de la Asociación Americana de Diabetes?",
-    "opciones": {
-      "a": "Glucemia normal",
-      "b": "Glucemia alterada en ayunas",
-      "c": "Intolerancia oral a la glucosa",
-      "d": "Diabetes"
-    },
-    "correcta": "b",
-    "explicacion": "La Glucemia Alterada en Ayunas (GAA) se define por glucemias en ayunas entre 100 y 125 mg/dL. La Intolerancia a la glucosa requiere una glucemia a las 2h post-carga entre 140 y 199 mg/dL. Este paciente tiene GAA (112, 114) pero respuesta normal a la carga (<140).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_073",
-    "materia": "neurologia",
-    "submateria": "Otras preguntas de neurología",
-    "enunciado": "¿Qué tipo de edema cerebral es el que responde mejor a la dexametasona?",
-    "opciones": {
-      "a": "Isquémico",
-      "b": "Traumático",
-      "c": "Metastásico",
-      "d": "Hemorrágico"
-    },
-    "correcta": "c",
-    "explicacion": "Los corticoides (dexametasona) son altamente efectivos en el edema vasogénico asociado a tumores (metastásicos o primarios) y abscesos. Tienen poco o nulo efecto en el edema citotóxico (isquémico) o traumático.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_074",
-    "materia": "otorrinolaringologia",
-    "submateria": "Nariz",
-    "enunciado": "Una niña de 5 años presenta rinorrea purulenta de la narina izquierda, fiebre y edema violáceo periorbitario izquierdo, presenta dolor con la motilidad ocular y agudeza visual normal. ¿Cuál es su conducta?",
-    "opciones": {
-      "a": "Solicita Rx de senos paranasales",
-      "b": "Solicita TAC de senos paranasales y órbita",
-      "c": "Solicita ecografía orbitaria",
-      "d": "Solicita rinofibroscopía"
-    },
-    "correcta": "b",
-    "explicacion": "El cuadro clínico sugiere una Celulitis Periorbitaria (Preseptal) complicada probablemente por una Etmoiditis aguda. Aunque la movilidad ocular normal sugiere que aún no es orbitaria (postseptal), el edema importante y la fiebre obligan a descartar extensión orbitaria o absceso subperióstico, siendo la TAC el estudio de elección (Gold Standard) para evaluar senos y órbita.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_075",
-    "materia": "gastroenterologia",
-    "submateria": "Hígado",
-    "enunciado": "Le derivan una paciente de 35 años, que por un cuadro de dispepsia fue estudiada con una ecografía abdominal. El informe muestra una vesícula alitiásica, con una formación sólida hiperecogénica de 2.5 cm de diámetro en lóbulo derecho del hígado, compatible en primer lugar con un hemangioma hepático. Presenta marcadores tumorales negativos, no tiene antecedentes de hepatopatía. Y una tomografía computada dinámica muestra un patrón de relleno periférico compatible también con un hemangioma. ¿Cuál sería su conducta?",
-    "opciones": {
-      "a": "Le indica cirugía exploradora para eventual resección del nódulo",
-      "b": "Le solicita una resonancia y angiografía digital para descartar hepatocarcinoma",
-      "c": "La deriva para una punción biopsia bajo tomografía",
-      "d": "La tranquiliza y le indica controles periódicos con ecografía para controlar el tamaño del hemangioma"
-    },
-    "correcta": "d",
-    "explicacion": "Los hemangiomas hepáticos son tumores benignos frecuentes. Si son asintomáticos, pequeños (<5cm) y tienen características típicas en imágenes (hiperecogénico en eco, relleno centrípeto en TAC), no requieren tratamiento ni biopsia. La conducta es tranquilizar y observar.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_076",
-    "materia": "pediatria",
-    "submateria": "Otras preguntas de pediatría",
-    "enunciado": "En un control a las 3 semanas de vida, los padres de una niña consultan preocupados porque observan una secreción vaginal rosada al cambiar los pañales. El examen físico es normal y presenta buena ganancia del peso. ¿Cuál es su sospecha diagnóstica y conducta?",
-    "opciones": {
-      "a": "Déficit de vitamina K. Solicita tiempo protrombina",
-      "b": "Deprivación hormonal, tranquiliza a los padres por ser un evento fisiológico",
-      "c": "Dermatitis del pañal. Tratamiento local",
-      "d": "Infección urinaria, solicita urocultivo"
-    },
-    "correcta": "b",
-    "explicacion": "La menarca neonatal o 'crisis genital' es un sangrado vaginal leve y transitorio en las primeras semanas de vida causado por la caída brusca de los estrógenos maternos que pasaron a la niña durante el embarazo. Es fisiológico.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_077",
-    "materia": "urologia",
-    "submateria": "Otras preguntas de urología",
-    "enunciado": "Un paciente de 63 años presenta un quiste renal, descubierto por ecografía en el transcurso de un chequeo de salud de contenido no homogéneo, de paredes engrosadas y con calcificación aisladas. ¿Cuál sería su conducta?",
-    "opciones": {
-      "a": "Realizar una tomografía computada con contraste endovenoso",
-      "b": "Controlar una vez por año con ecografía renal",
-      "c": "Informar al paciente que se trata de una condición benigna",
-      "d": "Indicar una nefrectomía"
-    },
-    "correcta": "a",
-    "explicacion": "Un quiste renal complejo (paredes engrosadas, contenido no homogéneo, calcificaciones) requiere caracterización mediante Tomografía Computada con contraste para clasificarlo según Bosniak. Si es Bosniak I o II es benigno; si es IIF, III o IV puede requerir seguimiento o cirugía por riesgo de malignidad.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_078",
+    "id": "ita_2015_055",
     "materia": "cardiologia",
-    "submateria": "Valvulopatías",
-    "enunciado": "¿Qué conducta adoptaría con un paciente de 75 años con diagnóstico de estenosis aórtica severa que presenta ángor de esfuerzo?",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Un paciente ingresa a la unidad coronaria con dolor precordial opresivo de 20 minutos de duración. En el electrocardiograma presenta ondas T negativas en derivaciones precordiales V3-V6. En el examen de laboratorio la enzima CPK presenta valores normales y la Troponina T un valor de 20 (valor normal hasta 0,4). ¿Cómo clasificaría el riesgo del paciente de padecer un IAM y/o muerte de causa cardíaca?",
     "opciones": {
-      "a": "Tratamiento con aspirina y betabloqueantes",
-      "b": "Tratamiento con aspirina, betabloqueantes, nitritos y estatinas",
-      "c": "Reemplazo valvular",
-      "d": "Valvuloplastia aórtica"
+      "a": "Muy bajo",
+      "b": "Bajo",
+      "c": "Moderado",
+      "d": "Alto"
     },
-    "correcta": "c",
-    "explicacion": "La estenosis aórtica severa sintomática (angor, síncope o disnea) tiene una mortalidad muy elevada a corto plazo sin tratamiento. La indicación es el reemplazo valvular aórtico (quirúrgico o TAVI según riesgo).",
+    "correcta": "d",
+    "explicacion": "La elevación significativa de Troponinas (marcador de necrosis) junto con cambios en el ECG (inversión de ondas T) en contexto de dolor torácico coloca al paciente en un riesgo Alto en las escalas de estratificación (como TIMI o GRACE) para Síndrome Coronario Agudo Sin Elevación del ST.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_079",
-    "materia": "cirugiageneral",
-    "submateria": "Páncreas",
-    "enunciado": "Usted recibe en la guardia un paciente sano de 48 años, masculino, sin antecedentes patológicos de importancia, consulta por intenso dolor abdominal epigástrico de 12 horas de evolución, irradiado a ambos hipocondrios. Al examen físico, el paciente se encuentra con una frecuencia cardíaca de 120 x minuto, TA de 90/60 mm Hg, temperatura rectal de 37.8°C, levemente obnubilado, quejándose del intenso dolor. Le coloca una sonda vesical y constata oliguria. Le solicita un laboratorio que muestra un hepatograma con signos leves de colestasis y una amilasemia de 1200 para un valor normal de hasta 100. La ecografía abdominal muestra litiasis vesicular múltiple sin signos de colecistitis. Vía biliar no dilatada sin líquido abdominal ni colecciones. ¿Cuál sería su conducta?",
-    "opciones": {
-      "a": "Instaurar medidas de soporte hemodinámico, con hidratación endovenosa, analgesia y monitoreo continuo de los signos vitales",
-      "b": "Realizar una tomografía computada de urgencia para evaluar la presencia de lesiones o complicaciones locales que puedan ser drenadas",
-      "c": "Indicar la colecistectomía de urgencia",
-      "d": "Llevar el paciente a quirófano para una laparotomía y necrosectomía en las primeras 48 horas"
-    },
-    "correcta": "a",
-    "explicacion": "El paciente presenta una Pancreatitis Aguda grave (con falla orgánica: shock, oliguria). La prioridad inicial absoluta es la reanimación hemodinámica agresiva con fluidos. La cirugía temprana está contraindicada. La TAC no se indica de urgencia salvo duda diagnóstica (aquí el diagnóstico es claro por amilasa y clínica) o deterioro posterior.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_080",
-    "materia": "otras",
-    "submateria": "Otras",
-    "enunciado": "¿Cuál de las siguientes afirmaciones es verdadera en relación al proceso de apoptosis?",
-    "opciones": {
-      "a": "Es un proceso observado sólo en eventos patológicos",
-      "b": "Intervienen las caspasas en forma específica",
-      "c": "Durante el proceso apoptótico se rompe la membrana celular y la célula se lisa",
-      "d": "Genera cambios inflamatorios a su alrededor"
-    },
-    "correcta": "b",
-    "explicacion": "La apoptosis (muerte celular programada) es un proceso fisiológico y patológico mediado por enzimas proteolíticas llamadas caspasas. A diferencia de la necrosis, mantiene la integridad de la membrana (cuerpos apoptóticos) y no genera inflamación.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_081",
-    "materia": "neurologia",
-    "submateria": "Columna vertebral",
-    "enunciado": "Un paciente de 65 años con antecedente de estenosis cervical sufre un trauma en hiperflexión de su columna cervical. Al ingreso a la guardia 3 horas luego del accidente, el examen neurológico muestra una clara afectación con disminución de fuerza y sensibilidad de los miembros con mayor compromiso de miembros superiores desde el nivel C5. ¿Qué síndrome presenta el paciente?",
-    "opciones": {
-      "a": "Síndrome medular central",
-      "b": "Síndrome medular posterior",
-      "c": "Síndrome medular anterior",
-      "d": "Síndrome de Brown-Séquard"
-    },
-    "correcta": "a",
-    "explicacion": "El Síndrome Medular Central (de Schneider) es típico de pacientes ancianos con estenosis cervical previa que sufren un trauma (hiperextensión o flexión). Se caracteriza por déficit motor y sensitivo predominante en miembros superiores más que en inferiores ('paresia de manos').",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_082",
-    "materia": "neumonologia",
-    "submateria": "Ventilación y ventilación mecánica",
-    "enunciado": "Una niña de 2 años internada desde hace 8 horas en la unidad de cuidados intensivos por una casi asfixia por inmersión, recibiendo oxigeno por cánula nasal, presenta taquipnea, dificultad respiratoria y aumento de las necesidades de oxigeno. ¿Cuál es el diagnóstico más probable?",
-    "opciones": {
-      "a": "Síndrome de dificultad respiratoria del adulto",
-      "b": "Neumonía bacteriana",
-      "c": "Edema de las vías aéreas superiores",
-      "d": "Crisis de broncoespasmo"
-    },
-    "correcta": "a",
-    "explicacion": "La inmersión (ahogamiento) puede causar lesión pulmonar aguda que evoluciona a SDRA (Síndrome de Dificultad Respiratoria Aguda/Adulto) horas después del evento, debido al lavado de surfactante y daño alveolar difuso.",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_083",
+    "id": "ita_2015_056",
     "materia": "urologia",
     "submateria": "Otras preguntas de urología",
     "enunciado": "Un paciente de 60 años, asintomático, decide realizar un chequeo prostático. El dosaje de antígeno prostático específico (PSA) es de 3,2 ng/ml (VN: menor de 4 ng/ml). Al tacto rectal presenta una próstata con nódulo duro pétreo de 1 cm en el lóbulo derecho. ¿Cuál sería su recomendación?",
@@ -1406,95 +947,757 @@
       "d": "Tratamiento médico con drogas alfa-bloqueantes"
     },
     "correcta": "a",
-    "explicacion": "Aunque el PSA sea normal, un tacto rectal sospechoso (nódulo duro) es indicación absoluta de biopsia prostática para descartar cáncer de próstata.",
+    "explicacion": "Aunque el PSA sea normal, la presencia de un nódulo sospechoso (duro/pétreo) al tacto rectal es una indicación absoluta de biopsia prostática para descartar cáncer de próstata.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_084",
-    "materia": "cardiologia",
-    "submateria": "Cardiopatía isquémica",
-    "enunciado": "Un paciente ingresa a la unidad coronaría con dolor precordial opresivo de 20 minutos de duración, en el electrocardiograma presenta ondas T negativas en derivaciones precordiales V3-V6. En el examen de laboratorio la enzima CPK presenta valores normales y la Troponina T un valor de 20 (valor normal hasta 0,4). ¿Cómo clasificaría el riesgo del paciente de padecer un IAM y/o muerte de causa cardiaca?",
+    "id": "ita_2015_057",
+    "materia": "pediatria",
+    "submateria": "Patología del aparato respiratorio",
+    "enunciado": "Una niña de 2 años internada desde hace 8 horas en la unidad de cuidados intensivos por una casi asfixia por inmersión, recibiendo oxígeno por cánula nasal. Presenta taquipnea, dificultad respiratoria y aumento de las necesidades de oxígeno. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
-      "a": "Muy bajo",
-      "b": "Bajo",
-      "c": "Moderado",
-      "d": "Alto"
-    },
-    "correcta": "d",
-    "explicacion": "La elevación significativa de Troponinas (marcador de necrosis) en el contexto de un Síndrome Coronario Agudo Sin Elevación del ST (SCASEST) define automáticamente al paciente como de Alto Riesgo (y diagnóstico de IAM sin ST).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_085",
-    "materia": "reumatologia",
-    "submateria": "Vasculitis",
-    "enunciado": "Paciente de 48 años de edad y sexo femenino que consulta por obstrucción nasal bilateral, rinorrea, epistaxis y costras en ambas fosas nasales de dos meses de evolución. En la rinoscopía anterior se observan costras y ulceraciones de la mucosa. Al solicitar los análisis de laboratorio estos mostraron como datos relevantes un incremento en el valor sérico de la Creatinina, un C-ANCA positivo y un sedimento urinario alterado. Su diagnóstico presuntivo es:",
-    "opciones": {
-      "a": "Sarcoidosis",
-      "b": "Síndrome de Churg-Strauss",
-      "c": "Enfermedad de Wegener",
-      "d": "Enfermedad de Behçet"
-    },
-    "correcta": "c",
-    "explicacion": "La tríada de compromiso de vía aérea superior (sinusitis, costras, nariz en silla de montar), compromiso renal (glomerulonefritis) y ANCA-c (PR3) positivo es patognomónica de la Granulomatosis con Poliangeítis (anteriormente Enfermedad de Wegener).",
-    "examen": "Hospital Italiano",
-    "anio": 2015,
-    "oficial": true
-  },
-  {
-    "id": "med_2015_086",
-    "materia": "urologia",
-    "submateria": "Glomerulonefritis primaria",
-    "enunciado": "Un niño de 10 años consulta por presentar orinas color té cargado de 3 días de evolución, que comenzó dos días después de una infección de vías aéreas superiores. No hay antecedentes familiares ni personales de enfermedad renal. No presenta dolor lumbar ni disuria. Está normotenso. El análisis de orina muestra campo cubierto de hematíes y la función renal es normal. ¿Cuál es el diagnóstico más probable?",
-    "opciones": {
-      "a": "Enfermedad de Berger",
-      "b": "Síndrome de Alport",
-      "c": "Glomerulonefritis postinfecciosa",
-      "d": "Glomerulonefritis proliferativa mesangial"
+      "a": "Síndrome de dificultad respiratoria del adulto",
+      "b": "Neumonía bacteriana",
+      "c": "Edema de las vías aéreas superiores",
+      "d": "Crisis de broncoespasmo"
     },
     "correcta": "a",
-    "explicacion": "La hematuria macroscópica que aparece concomitantemente o 1-2 días después (sinfaringítica) de una infección respiratoria es característica de la Nefropatía por IgA (Enfermedad de Berger). La glomerulonefritis postestreptocócica tiene un periodo de latencia de 1 a 3 semanas.",
+    "explicacion": "La aspiración de agua provoca lavado del surfactante y daño alveolar difuso, llevando al desarrollo de SDRA (Síndrome de Dificultad Respiratoria del Adulto - término usado históricamente también en pediatría o ahora PARDS) horas después del evento de inmersión.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_087",
+    "id": "ita_2015_058",
+    "materia": "traumatologia",
+    "submateria": "Columna vertebral",
+    "enunciado": "Un paciente de 65 años con antecedente de estenosis cervical sufre un trauma en hiperflexión de su columna cervical. Al ingreso a la guardia 3 horas luego del accidente, el examen neurológico muestra una clara afectación con disminución de fuerza y sensibilidad de los miembros con mayor compromiso de miembros superiores desde el nivel C5. ¿Qué síndrome presenta el paciente?",
+    "opciones": {
+      "a": "Síndrome medular central",
+      "b": "Síndrome medular posterior",
+      "c": "Síndrome medular anterior",
+      "d": "Síndrome de Brown-Séquard"
+    },
+    "correcta": "a",
+    "explicacion": "El Síndrome Medular Central (de Schneider) es típico de ancianos con cambios espondilóticos (estenosis) que sufren un trauma (hiperextensión o hiperflexión). Se caracteriza clínicamente por debilidad motora desproporcionada, afectando más a los miembros superiores que a los inferiores.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_059",
+    "materia": "otras",
+    "submateria": "Otras",
+    "enunciado": "¿Cuál de las siguientes afirmaciones es verdadera en relación al proceso de apoptosis?",
+    "opciones": {
+      "a": "Es un proceso observado sólo en eventos patológicos",
+      "b": "Intervienen las caspasas en forma específica",
+      "c": "Durante el proceso apoptótico se rompe la membrana celular y la célula se lisa",
+      "d": "Genera cambios inflamatorios a su alrededor"
+    },
+    "correcta": "b",
+    "explicacion": "La apoptosis (muerte celular programada) es un proceso fisiológico y patológico mediado por caspasas. A diferencia de la necrosis, la membrana celular se mantiene íntegra (cuerpos apoptóticos) y no genera inflamación.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_060",
+    "materia": "gastroenterologia",
+    "submateria": "Páncreas",
+    "enunciado": "Usted recibe en la guardia un paciente sano, de 48 años, masculino, sin antecedentes patológicos de importancia. Consulta por intenso dolor abdominal epigástrico de 12 horas de evolución, irradiado a ambos hipocondrios. Al examen físico, el paciente se encuentra con una frecuencia cardíaca de 120 x minuto, TA de 90/60 mm Hg, temperatura rectal de 37.8°C, levemente obnubilado, quejándose del intenso dolor. Le coloca una sonda vesical y constata oliguria. Le solicita un laboratorio que muestra un hepatograma con signos leves de colestasis y una amilasemia de 1200 (VN hasta 100). La ecografía abdominal muestra litiasis vesicular múltiple sin signos de colecistitis, vía biliar no dilatada sin líquido abdominal ni colecciones. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Instaurar medidas de soporte hemodinámico, con hidratación endovenosa, analgesia y monitoreo continuo de los signos vitales",
+      "b": "Realizar una tomografía computada de urgencia para evaluar la presencia de lesiones o complicaciones locales que puedan ser drenadas",
+      "c": "Indicar la colecistectomía de urgencia",
+      "d": "Llevar el paciente a quirófano para una laparotomía y necrosectomía en las primeras 48 horas"
+    },
+    "correcta": "a",
+    "explicacion": "El paciente presenta una Pancreatitis Aguda Grave con signos de shock (hipotensión, taquicardia, oliguria, alteración del sensorio). La prioridad absoluta inicial es la reanimación hemodinámica agresiva. La cirugía y la TC se reservan para etapas posteriores o complicaciones específicas una vez estabilizado.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_061",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "¿Qué conducta adoptaría con un paciente de 75 años con diagnóstico de estenosis aórtica severa que presenta angor de esfuerzo?",
+    "opciones": {
+      "a": "Tratamiento con aspirina y betabloqueantes",
+      "b": "Tratamiento con aspirina, betabloqueantes, nitritos y estatinas",
+      "c": "Reemplazo valvular",
+      "d": "Valvuloplastia aórtica"
+    },
+    "correcta": "c",
+    "explicacion": "La estenosis aórtica severa sintomática (angor, síncope o disnea) tiene una alta mortalidad a corto plazo sin tratamiento. La indicación es el reemplazo valvular aórtico (quirúrgico o TAVI). El tratamiento médico no modifica la historia natural de la enfermedad mecánica.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_062",
+    "materia": "urologia",
+    "submateria": "Otras preguntas de urología",
+    "enunciado": "Un paciente de 63 años presenta un quiste renal, descubierto por ecografía en el transcurso de un chequeo de salud, de contenido no homogéneo, de paredes engrosadas y con calcificaciones aisladas. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Realizar una tomografía computada con contraste endovenoso",
+      "b": "Controlar una vez por año con ecografía renal",
+      "c": "Informar al paciente que se trata de una condición benigna",
+      "d": "Indicar una nefrectomía"
+    },
+    "correcta": "a",
+    "explicacion": "Las características ecográficas describen un quiste complejo (probablemente Bosniak III o IV). El siguiente paso indispensable para la caracterización y estadificación antes de decidir la cirugía es la Tomografía Computada (Urotomografía) con contraste.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_063",
     "materia": "pediatria",
-    "submateria": "Otras preguntas de pediatría",
-    "enunciado": "Recibe en sala de partos a una niña con fisura labio palatina. ¿Cuál es su conducta terapéutica ante este caso?",
+    "submateria": "Neonatología",
+    "enunciado": "En un control a las 3 semanas de vida, los padres de una niña consultan preocupados porque observan una secreción vaginal rosada al cambiar los pañales. El examen físico es normal y presenta buena ganancia del peso. ¿Cuál es su sospecha diagnóstica y conducta?",
     "opciones": {
-      "a": "Cirugía de labio y paladar lo primeros días de vida para poder alimentarla",
-      "b": "Colocación de sonda nasogástrica y corrección del labio y el paladar al mes de vida",
-      "c": "Colocación de placa en el paladar, corrección del labio en los primeros meses de vida y más tarde el paladar",
-      "d": "Colocación de placa en el paladar y corrección del labio y el paladar luego de los 2 años una vez que haya desarrollado el macizo labial"
+      "a": "Déficit de vitamina K, solicita tiempo protrombina",
+      "b": "Deprivación hormonal tranquiliza a los padres por ser un evento fisiológico",
+      "c": "Dermatitis del pañal, tratamiento local",
+      "d": "Infección urinaria, solicita urocultivo"
     },
-    "correcta": "c",
-    "explicacion": "El protocolo habitual (ej. Regla de los 10) sugiere operar el labio (queiloplastia) alrededor de los 3 meses y el paladar (palatoplastia) hacia el año de vida (antes del desarrollo del lenguaje). El uso de placas ortopédicas prequirúrgicas ayuda a alinear los segmentos.",
+    "correcta": "b",
+    "explicacion": "Es la llamada \"menstruación de la bruja\". Se debe a la deprivación de los estrógenos maternos que pasaron a la niña durante el embarazo. Es un evento fisiológico y transitorio.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   },
   {
-    "id": "med_2015_088",
-    "materia": "hematologia",
-    "submateria": "Linfomas",
-    "enunciado": "Un paciente de 12 años se presenta a la consulta con un síndrome de edema en esclavina. En la tomografía de tórax y abdomen se observa una masa sólida y homogénea a nivel de mediastino medio que rodea a los grandes vasos y desplaza la vía aérea. También se observa una masa retroperitoneal y una moderada esplenomegalia. ¿Cuál de los siguientes es el diagnóstico más probable?",
+    "id": "ita_2015_064",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
+    "enunciado": "Le derivan una paciente de 35 años, que por un cuadro de dispepsia fue estudiada con una ecografía abdominal. El informe muestra una vesícula alitiásica, con una formación sólida hiperecogénica de 2.5 cm de diámetro en lóbulo derecho del hígado, compatible en primer lugar con un hemangioma hepático. Presenta marcadores tumorales negativos, no tiene antecedentes de hepatopatía, y una tomografía computada dinámica muestra un patrón de relleno periférico compatible también con un hemangioma. ¿Cuál sería su conducta?",
     "opciones": {
-      "a": "Teratoma quístico",
-      "b": "Neuroblastoma",
-      "c": "Linfoma",
-      "d": "Carcinoma epidermoide"
+      "a": "Le indica cirugía exploradora para eventual resección del nódulo",
+      "b": "Le solicita una resonancia y angiografía digital para descartar hepatocarcinoma",
+      "c": "La deriva para una punción biopsia bajo tomografía",
+      "d": "La tranquiliza y le indica controles periódicos con ecografía para controlar el tamaño del hemangioma"
+    },
+    "correcta": "d",
+    "explicacion": "El hemangioma es el tumor hepático benigno más frecuente. Si tiene características típicas en imágenes (hiperecogénico en eco, relleno periférico centrípeto en TC) y es asintomático, la conducta es expectante.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_065",
+    "materia": "otorrinolaringologia",
+    "submateria": "Nariz",
+    "enunciado": "Una niña de 5 años presenta rinorrea purulenta de la narina izquierda, fiebre y edema violáceo periorbitario izquierdo. Presenta dolor con la motilidad ocular y agudeza visual normal. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Solicita RX de senos paranasales",
+      "b": "Solicita TAC de senos paranasales y órbita",
+      "c": "Solicita ecografía orbitaria",
+      "d": "Solicita rinofibroscopía"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico sugiere una celulitis orbitaria (post-septal) como complicación de una sinusitis (dolor a la motilidad ocular es el signo clave que la diferencia de la pre-septal). El estudio de elección es la TC para evaluar la extensión y descartar abscesos subperiósticos.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_066",
+    "materia": "neurologia",
+    "submateria": "Otras preguntas de neurología",
+    "enunciado": "¿Qué tipo de edema cerebral es el que responde mejor a la dexametasona?",
+    "opciones": {
+      "a": "Isquémico",
+      "b": "Traumático",
+      "c": "Metastásico",
+      "d": "Hemorrágico"
     },
     "correcta": "c",
-    "explicacion": "En un niño/adolescente, una masa mediastinal anterior/media rápida que causa síndrome de vena cava superior, asociada a masas abdominales y esplenomegalia, es altamente sugestiva de Linfoma No Hodgkin (ej. Linfoblástico o Burkitt). El neuroblastoma suele ser de mediastino posterior y en niños más pequeños. Los teratomas son de mediastino anterior pero no suelen dar esa diseminación sistémica masiva típica de linfoma.",
+    "explicacion": "Los corticoides (dexametasona) son altamente efectivos en el edema vasogénico asociado a tumores (metastásicos o primarios) y abscesos. Tienen poca o nula utilidad en el edema citotóxico (isquémico) o traumático.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_067",
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
+    "enunciado": "Un hombre de 55 años consulta por un control de salud. En su historia clínica se registran valores de glucemia en ayunas de 112 y 114 mg% realizadas hace 3 meses y con diferencia de 20 días. Su médico decide realizar una prueba de carga oral con 75 g de glucosa cuyo resultado es de 135 mg% a las 2 hs. ¿A cuál de las siguientes categorías correspondería asignar a este paciente según los criterios diagnósticos de la Asociación Americana de Diabetes (1997)?",
+    "opciones": {
+      "a": "Glucemia normal",
+      "b": "Glucemia alterada en ayunas",
+      "c": "Intolerancia oral a la glucosa",
+      "d": "Diabetes"
+    },
+    "correcta": "b",
+    "explicacion": "Según los criterios ADA: Glucemia en ayunas entre 110-125 mg/dl (luego actualizado a 100-125) se define como Glucemia Alterada en Ayunas (GAA). La prueba de tolerancia fue normal (<140 mg/dl a las 2h), por lo que no es intolerancia ni diabetes.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_068",
+    "materia": "ginecologia",
+    "submateria": "Cáncer de endometrio",
+    "enunciado": "Un paciente de 63 años ha sido tratada por presentar adenocarcinoma endometrial con anexohisterectomía total, toma citológica peritoneal y linfadenectomía pelviana y aórtica completa. La biopsia final mostró carcinoma endometroide (G3) pobremente diferenciado que infiltra el miometrio del fondo uterino en menos del 50% de su espesor con progresión al cuello uterino más allá de la mucosa, serosa intacta. Anexos libres, citología negativa y ausencia de metástasis en todos los grupos ganglionares estudiados. ¿Frente a qué estadio nos encontramos y qué adyuvancia sugiere Ud?",
+    "opciones": {
+      "a": "Estadio IB G3 y debe completar braquicurieterapia",
+      "b": "Estadio IB G3 y debe completar teleradioterapia y braquicurieterapia",
+      "c": "Estadio IIB G3 y debe completar teleradioterapia y braquicurieterapia",
+      "d": "Estadio IIIB G3 y debe completar braquicurieterapia"
+    },
+    "correcta": "c",
+    "explicacion": "La invasión del estroma cervical (más allá de la mucosa endocervical) clasifica al cáncer de endometrio como Estadio II (clasificación FIGO clásica/2009). Al ser G3 (alto grado) y Estadio II, requiere tratamiento adyuvante agresivo con Radioterapia externa (Teleradioterapia) y Braquiterapia para control local.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_069",
+    "materia": "reumatologia",
+    "submateria": "Metabólica ósea",
+    "enunciado": "¿Cuál de las siguientes entidades nosológicas es una causa de aumento de densidad ósea generalizada (osteoesclerosis)?",
+    "opciones": {
+      "a": "Hiperparatiroidismo",
+      "b": "Osteomalacia",
+      "c": "Raquitismo",
+      "d": "Paget"
+    },
+    "correcta": "d",
+    "explicacion": "La Enfermedad de Paget se caracteriza por un remodelado óseo acelerado y desorganizado que lleva a huesos engrosados y escleróticos (fase esclerótica o mixta). Las otras opciones (Osteomalacia, Raquitismo, Hiperparatiroidismo primario) suelen causar osteopenia o pérdida de densidad, aunque el HPT secundario renal puede dar osteoesclerosis (\"espina en jersey de rugby\"). Paget es la causa clásica de aumento de densidad y deformidad entre las opciones.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_070",
+    "materia": "ginecologia",
+    "submateria": "Cáncer de mama",
+    "enunciado": "Ud recibe una interconsulta por una paciente de 33 años que ha sido operada por padecer cáncer mamario. Se le realizó una mastectomía subradical y la anatomía patológica postoperatoria muestra un carcinoma ductal infiltrando de 3.9 cm con componente intraductal extensivo y 5 de 23 ganglios axilares con metástasis. Los receptores hormonales estrogénicos son positivos. ¿Cuál es la terapéutica postoperatoria indicada?",
+    "opciones": {
+      "a": "Radioterapia en colgajos mamarios",
+      "b": "Radioterapia en colgajos mamarios más quimioterapia",
+      "c": "Radioterapia en colgajos mamarios más quimioterapia más tamoxifeno",
+      "d": "Quimioterapia más tamoxifeno"
+    },
+    "correcta": "c",
+    "explicacion": "Paciente de alto riesgo: joven, ganglios positivos (>4), tumor grande. Requiere tratamiento sistémico completo: Quimioterapia (por ganglios y edad) y Hormonoterapia (Tamoxifeno por ser premenopáusica y Receptores +). Además, al tener >4 ganglios positivos, la Radioterapia post-mastectomía (en pared torácica/colgajos y áreas ganglionares) es estándar.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_071",
+    "materia": "otorrinolaringologia",
+    "submateria": "Oído",
+    "enunciado": "Un hombre de 67 años asiste a la consulta médica refiriendo disminución progresiva de la audición. La otoscopía no muestra hallazgos de importancia. La audiometría solicitada muestra una caída de 5 a 10 dB en la vía ósea y de 30 a 40 dB en la vía aérea. ¿Cuál de los siguientes estudios complementarios cree Ud que sería más útil para caracterizar la hipoacusia en este paciente?",
+    "opciones": {
+      "a": "Logoaudiometría",
+      "b": "Otoemisión",
+      "c": "Timpanometría",
+      "d": "Potenciales evocados auditivos"
+    },
+    "correcta": "c",
+    "explicacion": "El paciente presenta un GAP osteo-aéreo (diferencia entre vía ósea y aérea), lo que indica una hipoacusia conductiva. Con una otoscopia normal (membrana íntegra), la timpanometría es fundamental para evaluar la movilidad del sistema tímpano-osicular (ej. fijación de cadena, otosclerosis, disyunción, otitis media serosa no evidente).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_072",
+    "materia": "otras",
+    "submateria": "Otras",
+    "enunciado": "En eucariontes, un gen es una porción de DNA que codifica para:",
+    "opciones": {
+      "a": "Una sola proteína",
+      "b": "Varias proteínas",
+      "c": "Una o varias proteínas",
+      "d": "Proteínas y otras moléculas"
+    },
+    "correcta": "c",
+    "explicacion": "Gracias al mecanismo de splicing alternativo (corte y empalme), un solo gen eucariota puede dar lugar a diferentes isoformas de ARNm y, por tanto, codificar una o varias proteínas distintas.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_073",
+    "materia": "hematologia",
+    "submateria": "Leucemias agudas",
+    "enunciado": "Una mujer de 35 años se presenta a la consulta con epistaxis y gingivorragia. Al examen físico presenta fiebre 38°C y petequias en miembros inferiores. Laboratorio: Hematocrito 29%, Plaquetas 10.000/mm3, Leucocitos 1600/mm3 (50% blastos promielocíticos). Tiempo de protrombina 15%, KPTT 60%. Punción de médula ósea: infiltración por mieloblastos con abundantes gránulos y bastones de Auer. Se comienza tratamiento con ATRA (ácido transretinoico). ¿Cuál de las siguientes complicaciones esperaría usted que se presenta debido al tratamiento?",
+    "opciones": {
+      "a": "Neutropenia febril",
+      "b": "Síndrome de lisis tumoral",
+      "c": "Distress respiratorio",
+      "d": "Empeoramiento de la coagulación"
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento con ATRA en la Leucemia Promielocítica Aguda (M3) puede desencadenar el \"Síndrome de Diferenciación\" (o Síndrome del Ácido Retinoico), caracterizado por fiebre, edema, efusiones y distress respiratorio agudo.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_074",
+    "materia": "infectologia",
+    "submateria": "HIV",
+    "enunciado": "Concurre a la consulta un paciente de sexo masculino y 32 años de edad, HIV positivo, quien presenta desde hace 15 días cefalea holocraneana, acompañada de debilidad para mover su brazo y pierna izquierdos. Se efectuó tomografía computada encefálica con y sin contraste la cual mostró múltiples lesiones que realzan tras la administración de contraste endovenoso, encontrándose la mayor a nivel periventricular derecho, causando moderado efecto de masa. De las siguientes entidades, ¿cuál sería la más probable?",
+    "opciones": {
+      "a": "Toxoplasmosis cerebral",
+      "b": "Linfoma primario del sistema nervioso central",
+      "c": "Leucoencefalopatía multifocal progresiva",
+      "d": "Criptococosis cerebral"
+    },
+    "correcta": "a",
+    "explicacion": "En pacientes HIV, la presencia de lesiones focales *múltiples* con realce en anillo (o nodular) y efecto de masa es, por probabilidad (>80%), Toxoplasmosis cerebral. El Linfoma primario suele ser lesión única (aunque puede ser múltiple) y periventricular, pero la multiplicidad favorece fuertemente a la toxoplasmosis.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_075",
+    "materia": "ginecologia",
+    "submateria": "Cáncer de ovario",
+    "enunciado": "Una paciente de sexo femenino de 44 años, se presenta a la consulta con ascitis y una masa tumoral en abdomen inferior. El examen ecográfico muestra tumor sólido y quístico en ovario DERECHO. Los dosajes de sangre de CA 125 están aumentados. ¿Qué tumor espera encontrar en el estudio histopatológico?",
+    "opciones": {
+      "a": "Tumor de células transicionales",
+      "b": "Cistoadenocarcinoma mucinoso",
+      "c": "Cistoadenocarcinoma seroso",
+      "d": "Adenocarcinoma de células claras"
+    },
+    "correcta": "c",
+    "explicacion": "El Cistoadenocarcinoma Seroso es el tumor maligno epitelial de ovario más frecuente. Suele presentarse con ascitis, elevación marcada del CA-125 y componentes sólido-quísticos.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_076",
+    "materia": "otras",
+    "submateria": "Fármacos",
+    "enunciado": "Un hombre de 70 años se presenta a la guardia del hospital con dificultad respiratoria, sensación de tumefacción faríngea posterior y prurito generalizado. Presenta antecedentes de asma inducida por ejercicio y una hora previa al episodio había recibido una dosis de amoxicilina como profilaxis por una extracción dentaria. Al examen físico: exantema cutáneo generalizado eritematopapuloso, sibilancias a la auscultación pulmonar acompañado de un ruido de tonalidad grave inspiratorio (estridor). Los signos vitales son normales. ¿Cuál de los siguientes tratamientos indicaría Ud en primer término?",
+    "opciones": {
+      "a": "Salbutamol inhalatorio",
+      "b": "Metilprednisolona endovenosa",
+      "c": "Difenhidramina endovenosa",
+      "d": "Epinefrina intramuscular"
+    },
+    "correcta": "d",
+    "explicacion": "El cuadro clínico es una Anafilaxia (compromiso de vía aérea, respiratorio y cutáneo tras exposición a alérgeno). El tratamiento de primera línea y que salva la vida es la Adrenalina (Epinefrina) intramuscular. Los corticoides y antihistamínicos son de segunda línea.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_077",
+    "materia": "infectologia",
+    "submateria": "Sepsis y nosocomiales",
+    "enunciado": "Un niño de 6 años dependiente de alimentación parenteral por síndrome de intestino corto, presenta fiebre y bacteriemias. El retrocultivo del acceso venoso central desarrolla estafilococo coagulasa negativo. ¿Cuál es su opción terapéutica?",
+    "opciones": {
+      "a": "Vancomicina",
+      "b": "Cefalotina",
+      "c": "Clindamicina",
+      "d": "Ciprofloxacina"
+    },
+    "correcta": "a",
+    "explicacion": "El *Staphylococcus* coagulasa negativo (ej. *epidermidis*) asociado a catéteres suele ser meticilino-resistente, por lo que el tratamiento empírico de elección es la Vancomicina.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_078",
+    "materia": "endocrinologia",
+    "submateria": "Suprarrenales",
+    "enunciado": "¿Cuáles son las alteraciones clásicas en el ionograma que se presenta en la insuficiencia suprarrenal primaria?",
+    "opciones": {
+      "a": "Hiponatremia e hiperkalemia",
+      "b": "Hiponatremia e hipokalemia",
+      "c": "Hipernatremia e hiperkalemia",
+      "d": "Hipernatremia e hipokalemia"
+    },
+    "correcta": "a",
+    "explicacion": "En la insuficiencia suprarrenal primaria (Addison) hay déficit de mineralocorticoides (aldosterona). La falta de aldosterona impide la reabsorción de sodio y la excreción de potasio en el túbulo renal, causando hiponatremia e hiperkalemia.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_079",
+    "materia": "traumatologia",
+    "submateria": "Miembro inferior",
+    "enunciado": "Un paciente de 65 años se presenta caminando con dolor a las 6 horas de haber sufrido una supinación forzada del tobillo. Al examen físico presenta importante tumefacción del tobillo que impide la palpación de los pulsos arteriales. Las radiografías no objetivan lesión ósea. ¿Cuál sería la conducta de urgencia más adecuada?",
+    "opciones": {
+      "a": "Inmovilización con bota corta de yeso con taco de marcha",
+      "b": "Rehabilitación precoz",
+      "c": "Inmovilización temporaria con valva de yeso y control el 48 hs",
+      "d": "Punción evacuatoria y bota corta de yeso"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un edema severo (\"que impide palpación de pulsos\") en agudo, está contraindicado el yeso cerrado por riesgo de síndrome compartimental. La conducta correcta es colocar una inmovilización abierta (valva) para permitir la expansión del edema, elevar el miembro y reevaluar cuando la inflamación disminuya.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_080",
+    "materia": "urologia",
+    "submateria": "Otras preguntas de urología",
+    "enunciado": "Un paciente de 28 años, al ducharse, descubre por palpación un nódulo indoloro en su testículo derecho. Consulta a su médico quien le realiza una ecografía que confirma la presencia de una tumoración sólida de 2 cm de diámetro. ¿Cuál sería la conducta apropiada?",
+    "opciones": {
+      "a": "Confirmar el diagnóstico mediante una punción testicular transescrotal bajo anestesia general",
+      "b": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y efectuar exploración quirúrgica testicular solamente si ambos marcadores están elevados",
+      "c": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y efectuar exploración quirúrgica testicular sin necesidad de esperar los resultados de estos marcadores",
+      "d": "Solicitar dosaje de alfa fetoproteína y beta gonadotrofina coriónica y mantener una conducta expectante si ambos marcadores están bajos"
+    },
+    "correcta": "c",
+    "explicacion": "Toda masa testicular sólida es cáncer hasta que se demuestre lo contrario. La punción está contraindicada. Los marcadores son útiles para pronóstico y seguimiento, pero su negatividad (ej. seminomas puros) no descarta el tumor ni la indicación quirúrgica. La conducta es la orquiectomía radical (exploración inguinal).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_081",
+    "materia": "gastroenterologia",
+    "submateria": "Hígado",
+    "enunciado": "Un joven de 15 años presenta deterioro del desempeño escolar y cambios de carácter. Niega consumo de drogas. Presenta hepatomegalia e ictericia y en el laboratorio aumento de transaminasas, Quick 35%, bilirrubina total 4.5 mg%, con fosfatasa alcalina dentro del límite normal. ¿Cuál de los siguientes exámenes solicitaría para confirmar el diagnóstico más probable?",
+    "opciones": {
+      "a": "Fenotipo de alfa 1 antitripsina",
+      "b": "Glucemia en ayunas",
+      "c": "Amonio",
+      "d": "Ceruloplasmina"
+    },
+    "correcta": "d",
+    "explicacion": "La asociación de hepatopatía y trastornos neuropsiquiátricos en un adolescente sugiere Enfermedad de Wilson. El screening se realiza midiendo la Ceruloplasmina sérica (que suele estar disminuida) y cobre en orina.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_082",
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
+    "enunciado": "Un lactante de 3 meses de edad, internado por bronquiolitis, presenta tumoración en la región inguinal derecha que aumenta con los accesos de tos y que se puede reducir con relativa facilidad. Ud diagnostica hernia inguinal. ¿Cuál cree es la conducta adecuada?",
+    "opciones": {
+      "a": "Cirugía de urgencia por el riesgo de atascamiento",
+      "b": "Cirugía cuando resuelva el cuadro respiratorio",
+      "c": "Conducta expectante por las altas chances de resolución espontánea",
+      "d": "Cirugía diferida para los 11 meses de edad y corregir antes de que empiece a deambular"
+    },
+    "correcta": "b",
+    "explicacion": "Las hernias inguinales en niños no cierran espontáneamente y tienen riesgo de atascamiento, por lo que se operan poco después del diagnóstico. Sin embargo, dado que el niño cursa una infección respiratoria activa (bronquiolitis), se debe diferir la cirugía hasta la resolución del cuadro respiratorio para minimizar riesgos anestésicos, operando poco después.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_083",
+    "materia": "obstetricia",
+    "submateria": "Infecciones congénitas y perinatales",
+    "enunciado": "¿Cuál de los siguientes factores de riesgo es indicación de profilaxis intraparto para Estreptococo del Grupo B?",
+    "opciones": {
+      "a": "Fiebre materna en la última semana",
+      "b": "Embarazo menor de 37 semanas",
+      "c": "Rotura prematura de membrana a término de 16 horas",
+      "d": "Líquido amniótico meconial"
+    },
+    "correcta": "b",
+    "explicacion": "Si se desconoce el estado de portación de EGB, se indica profilaxis en presencia de factores de riesgo: parto pretérmino (<37 semanas), rotura de membranas prolongada (>18 horas) o fiebre intraparto (>38°C).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_084",
+    "materia": "obstetricia",
+    "submateria": "Amenazas de parto prematuro",
+    "enunciado": "Ante una mujer embarazada con riesgo de parto prematuro, ¿cuál de las siguientes medidas terapéuticas disminuye significativamente la morbilidad neonatal?",
+    "opciones": {
+      "a": "Reposo",
+      "b": "Betamiméticos",
+      "c": "Antibióticos",
+      "d": "Corticoesteroides"
+    },
+    "correcta": "d",
+    "explicacion": "La administración de corticoesteroides antenatales (betametasona o dexametasona) es la intervención más eficaz para inducir la maduración pulmonar fetal y reducir el riesgo de síndrome de dificultad respiratoria, hemorragia intraventricular y enterocolitis necrotizante.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_085",
+    "materia": "hematologia",
+    "submateria": "Mieloproliferativas crónicas",
+    "enunciado": "Un paciente de sexo masculino de 67 años de edad, con antecedentes de policitemia vera de larga data consulta por astenia. Examen físico: esplenomegalia. Laboratorio: Hematocrito 30%, Plaquetas 87.000/ml, Leucocitos 2.800/ml (12% neutrófilos segmentados, 78% linfocitos, 10% monocitos). El aspirado de médula ósea fue seco. De acuerdo a estos datos, ¿cuál sería el diagnóstico más probable?",
+    "opciones": {
+      "a": "Leucemia linfática crónica",
+      "b": "Leucemia de células vellosas",
+      "c": "Mielofibrosis",
+      "d": "Mieloma múltiple"
+    },
+    "correcta": "c",
+    "explicacion": "La evolución natural de la Policitemia Vera (fase \"gastada\") es hacia la Mielofibrosis post-policitemia. La pancitopenia, esplenomegalia y la \"punción seca\" (por fibrosis medular) son características distintivas.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_086",
+    "materia": "traumatologia",
+    "submateria": "Miembro inferior",
+    "enunciado": "La complicación alejada más frecuente luego de un reemplazo total de cadera es:",
+    "opciones": {
+      "a": "Aflojamiento protésico",
+      "b": "Infección protésica por vía hematógena",
+      "c": "Fractura periprotésica",
+      "d": "Luxación protésica"
+    },
+    "correcta": "a",
+    "explicacion": "El aflojamiento aséptico es la causa más común de falla a largo plazo de las artroplastias totales de cadera, requiriendo cirugía de revisión.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_087",
+    "materia": "urologia",
+    "submateria": "Glomerulonefritis primaria",
+    "enunciado": "¿Cuál de las siguientes glomerulopatías primarias constituye la causa más común de síndrome nefrótico en adultos?",
+    "opciones": {
+      "a": "Esclerosis glomerular local y segmentaria",
+      "b": "Glomerulopatía membranosa",
+      "c": "Glomerulonefritis proliferativa mesangial",
+      "d": "Glomerulopatía de cambios mínimos"
+    },
+    "correcta": "b",
+    "explicacion": "Clásicamente, la Glomerulonefritis Membranosa es la causa más frecuente de síndrome nefrótico primario en adultos no diabéticos (aunque la GEFS ha aumentado su incidencia en ciertos grupos demográficos, la Membranosa sigue siendo la respuesta estándar en este contexto).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_088",
+    "materia": "obstetricia",
+    "submateria": "Fisiología de la gestación",
+    "enunciado": "Usted sigue a una embarazada cuyo feto creció hasta la semana 30 en el percentilo 50. Realiza una ecografía en la semana 34 y la antropometría fetal se encuentra en el percentilo 25, con líquido amniótico normal. ¿Cuál es la conducta más apropiada en este caso?",
+    "opciones": {
+      "a": "Reposo absoluto, beta-miméticos y ecografía semanal",
+      "b": "Reposo relativo, aspirina a bajas dosis y ecografía semanal",
+      "c": "Seguimiento habitual del embarazo",
+      "d": "Reposo absoluto, Doppler y ecografía quincenal"
+    },
+    "correcta": "c",
+    "explicacion": "Aunque hubo un cambio de carril en el crecimiento, el feto se mantiene en un percentilo normal (P25) y con líquido amniótico normal. No cumple criterios de RCIU (usualmente < P10) ni hay signos de alarma inmediatos. Corresponde continuar el control habitual.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_089",
+    "materia": "nutricion",
+    "submateria": "Diabetes mellitus",
+    "enunciado": "Frente a cuál de las siguientes concentraciones de glucosa se hace el diagnóstico de diabetes mellitus:",
+    "opciones": {
+      "a": "Glucemia de ayuno de 127 mg/dl",
+      "b": "Glucemia de ayuno de 132 mg/dl",
+      "c": "Glucemia post sobrecarga (con 75 mg de glucosa oral) de 180 mg/dl",
+      "d": "Glucemia en ayuno de 202 mg/dl"
+    },
+    "correcta": "a",
+    "explicacion": "El punto de corte para diagnóstico de diabetes en ayunas es ≥ 126 mg/dl. Un valor de 127 mg/dl ya cumple el criterio. (La opción D también es diabetes, pero la pregunta suele apuntar al valor umbral o mínimo diagnóstico).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_090",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Un paciente ingresa con dolor precordial intenso de 3 horas de evolución asociado a un electrocardiograma con supradesnivel del segmento ST de 3 mm en las derivaciones D2, D3, AVF y de V5-V8. Se encuentra en Killip y Kimball III. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Nitroglicerina y aspirina",
+      "b": "Oxigenoterapia aspirina y betabloqueantes",
+      "c": "Nitroglicerina aspirina e indica una angioplastia primaria",
+      "d": "Trombolíticos endovenosos"
+    },
+    "correcta": "c",
+    "explicacion": "Se trata de un IAM con elevación del ST de cara inferoposterior con falla de bomba (Killip III, edema agudo de pulmón). La reperfusión es prioritaria. La Angioplastia Primaria es superior a los trombolíticos, especialmente en pacientes con shock o falla cardíaca severa (Killip III). Los betabloqueantes están contraindicados inicialmente en insuficiencia cardíaca descompensada.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_091",
+    "materia": "infectologia",
+    "submateria": "ITS",
+    "enunciado": "Lo consulta una adolescente de 17 años sexualmente activa por presentar secreción vaginal purulenta y lesiones eritematosas perianales. Mientras espera los cultivos de secreción vaginal ¿qué tratamiento empírico indicaría?",
+    "opciones": {
+      "a": "Ceftriaxona 125 mg IM única dosis",
+      "b": "Ceftriaxona 125 mg IM única dosis y Eritromicina 50 mg VO única dosis",
+      "c": "Azitromicina 1 gr VO única dosis",
+      "d": "Ceftriaxona 125 mg IM única dosis y Doxiciclina 200 mg/día por 10 días"
+    },
+    "correcta": "d",
+    "explicacion": "Ante la sospecha de cervicitis mucopurulenta/EIP, se debe cubrir empíricamente tanto *Neisseria gonorrhoeae* (Ceftriaxona) como *Chlamydia trachomatis* (Doxiciclina o Azitromicina). El esquema clásico combinado es Ceftriaxona + Doxiciclina.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_092",
+    "materia": "otorrinolaringologia",
+    "submateria": "Faringe",
+    "enunciado": "Paciente de 48 años de edad y sexo masculino quien consulta por epistaxis derecha, obstrucción nasal e hipoacusia ipsilateral de dos meses de evolución. En la palpación del cuello se detecta una adenomegalia en el subángulo mandibular derecha de 2 x 3 cm adherida a planos profundos. Los estudios audiológicos muestran resultados compatibles con una otitis media serosa derecha. En la citología realizada por punción con aguja fina de la adenomegalia se identificaron células atípicas. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Tumor de hipofaringe",
+      "b": "Tumor de cavum",
+      "c": "Linfoma de Hodgkin",
+      "d": "Enfermedad de Wegener"
+    },
+    "correcta": "b",
+    "explicacion": "La tríada de adenopatía cervical, síntomas nasales (obstrucción/epistaxis) y otitis media serosa unilateral (por obstrucción de la trompa de Eustaquio) es la presentación clásica del Carcinoma de Cavum (Nasofaringe).",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_093",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
+    "enunciado": "Una mujer de 53 años consulta preocupada por el nivel de Colesterol de su último análisis. Colesterol total 230 mg%, HDL 38 mg%, Triglicéridos 190 mg% y LDL 70 mg%. El médico decide realizar una valoración de riesgo cardiovascular para definir la conducta a seguir, obteniendo los siguientes datos: Padre fallecido a los 58 años por muerte súbita, menopausia a 46 años. No es tabaquista en la actualidad, no realiza actividad física, y presenta registros de presión arterial de 130/80 mm Hg. ¿Cuántos factores de riesgo coronario presenta esta paciente según la guía de expertos del NCEP (National Cholesterol Education Program)?",
+    "opciones": {
+      "a": "0",
+      "b": "1",
+      "c": "2",
+      "d": "3"
+    },
+    "correcta": "b",
+    "explicacion": "Factores de riesgo NCEP ATP III: Edad (Mujer >55: No), Antecedentes familiares prematuros (Padre <55: No, tenía 58), Tabaquismo (No), HTA (≥140/90: No), HDL bajo (<40: Sí, tiene 38). Total = 1 factor de riesgo.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_094",
+    "materia": "ginecologia",
+    "submateria": "Síndrome de ovario poliquístico",
+    "enunciado": "Ud. recibe una paciente de 23 años de edad con el antecedente de tener períodos menstruales aproximadamente cada 60 días. Su menarca fue a los 13 años y ha ciclado así desde entonces. Pesa 70 kg y mide 1,59 m. Ha recibido múltiples tratamientos por acné. Su examen clínico muestra caracteres sexuales secundarios normales y aumento del vello en el antebrazo, muslos, zona periumbilical y en la espalda. Ud. solicita determinaciones hormonales al cuarto día del ciclo. Valores normales: FSH 1.2 a 8 mUI/ml, LH 1.5 a 6 mUI/ml, Estradiol 39 a 189 pg/ml, Prolactina 5 a 25 ng/ml. ¿Cuál de los siguientes resultados esperaría encontrar?",
+    "opciones": {
+      "a": "FSH: 4, LH 15, Estradiol: 22, Prolactina: 83",
+      "b": "FSH: 4, LH: 15, Estradiol: 223, Prolactina: 12",
+      "c": "FSH: 6, LH: 4, Estradiol: 223, Prolactina: 12",
+      "d": "FSH: 41, LH: 4, Estradiol: 22, Prolactina: 35"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico (oligomenorrea, hirsutismo, sobrepeso) sugiere Síndrome de Ovario Poliquístico (SOP). El perfil hormonal característico es una relación LH/FSH aumentada (> 2.5), con prolactina normal. La opción B muestra LH elevada (15) con FSH normal (4), lo cual es compatible con SOP.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_095",
+    "materia": "infectologia",
+    "submateria": "SNC y meningitis",
+    "enunciado": "Un paciente de 28 años de edad ingresa por fiebre y cefalea de un día de evolución. Al examen físico se encuentra febril, confuso y con signos meníngeos. La punción lumbar revela LCR turbio con 1.200 leucocitos/ml (98% neutrófilos), glucosa 20 mg%, proteínas 200 mg. ¿Cuál es el agente etiológico más probable?",
+    "opciones": {
+      "a": "Neisseria meningitidis",
+      "b": "Streptococcus pneumoniae",
+      "c": "Virus Coxsackie grupo A",
+      "d": "Herpes simple tipo 1"
+    },
+    "correcta": "b",
+    "explicacion": "Es una meningitis bacteriana aguda (purulenta, hipoglucorraquia, hiperproteinorraquia). En adultos jóvenes y adultos en general, *Streptococcus pneumoniae* es la causa más frecuente. Si bien *Neisseria meningitidis* afecta a niños y adultos jóvenes, el neumococo lidera las estadísticas generales.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_096",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un paciente varón de 50 años presenta disnea en clase funcional II-III. En el electrocardiograma se observa ritmo sinusal, 70 latidos por minuto, con extrasístoles ventriculares frecuentes. En el estudio Holter presenta episodios de taquicardia ventricular no sostenida. El ecocardiograma muestra un deterioro de la función sistólica de ventrículo izquierdo con una fracción de eyección de 30% y diámetros aumentados. ¿Cómo trataría al paciente?",
+    "opciones": {
+      "a": "Beta bloqueantes, diuréticos y aspirina",
+      "b": "Bloqueantes cálcicos, beta bloqueantes y antiarrítmicos",
+      "c": "Beta bloqueantes, inhibidores de la enzima convertidora, espironolactona y nitritos",
+      "d": "Beta bloqueantes, inhibidores de la enzima convertidora, espironolactona, amiodarona y diuréticos"
+    },
+    "correcta": "d",
+    "explicacion": "Paciente con Insuficiencia Cardíaca con FE reducida (HFrEF) sintomático. Requiere tratamiento triple estándar para reducir mortalidad: IECA + Beta Bloqueante + Antagonista Mineralocorticoide (Espironolactona). Además, por la disnea (congestión) requiere diuréticos de asa. La amiodarona se considera para el control de la taquicardia ventricular no sostenida sintomática o como puente a CDI.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_097",
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
+    "enunciado": "¿Cuál de las siguientes aseveraciones en relación a la hernia por deslizamiento es correcta?",
+    "opciones": {
+      "a": "El saco herniario se encuentra habitado por vísceras sólidas",
+      "b": "El saco herniario se encuentra atascado",
+      "c": "El meso visceral se encuentra formando parte de la pared del saco",
+      "d": "El conducto peritoneo vaginal llega hasta el testículo"
+    },
+    "correcta": "c",
+    "explicacion": "Una hernia por deslizamiento se define como aquella en la cual una víscera retroperitoneal (como el ciego, colon sigmoides o vejiga) forma parte de la pared del saco herniario.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_098",
+    "materia": "urologia",
+    "submateria": "Otras preguntas de urología",
+    "enunciado": "Paciente de sexo masculino de 59 años de edad, tabaquista severo desde hace 30 años. Un día luego de finalizada su sesión de intensos ejercicios físicos, el paciente presenta una micción francamente hematúrica, absolutamente indolora. Usted casualmente se encuentra en el gimnasio y el paciente, enterado de que se ha recibido recientemente de médico, no duda en consultarlo. ¿Cuál sería su interpretación y conducta?",
+    "opciones": {
+      "a": "Asume que es una hematuria relacionada con el esfuerzo físico y le explica que se trata de un fenómeno transitorio",
+      "b": "Sospecha una infección urinaria, le solicita un urocultivo y le indica quinolonas durante 10 días",
+      "c": "Considera importante descartar un tumor de vejiga por lo que le recomienda una ecografía y una cistoscopia",
+      "d": "Considera enfermedad de Berger y sugiere consulta al nefrólogo"
+    },
+    "correcta": "c",
+    "explicacion": "Hematuria macroscópica indolora en un paciente mayor de 50 años y tabaquista es cáncer urotelial (vejiga) hasta que se demuestre lo contrario. Se debe estudiar exhaustivamente (Cistoscopia + Imágenes) y no asumir causas benignas o de esfuerzo.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_099",
+    "materia": "pediatria",
+    "submateria": "Desarrollo y nutrición",
+    "enunciado": "Al realizar un control en salud a un bebé sano de 9 meses de edad le palpa el borde hepático a 2 cm por debajo del reborde costal. Percutiendo mide una altura hepática de 5 cm. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Solicita ecografía",
+      "b": "Solicita hepatograma",
+      "c": "Cita en control al año de vida",
+      "d": "Solicita interconsulta a gastroenterología"
+    },
+    "correcta": "c",
+    "explicacion": "En lactantes es normal palpar el hígado 1-2 cm (o hasta 3 cm según algunas fuentes) por debajo del reborde costal debido al tamaño relativo del órgano y la caja torácica. Una altura hepática (span) de 5 cm es normal para la edad. Es un hallazgo fisiológico.",
+    "examen": "Hospital Italiano",
+    "anio": 2015,
+    "oficial": true
+  },
+  {
+    "id": "ita_2015_100",
+    "materia": "saludpublica",
+    "submateria": "Medidas epidemiológicas de frecuencia",
+    "enunciado": "Un ensayo clínico controlado, diseñado para evaluar riesgo de ACV en pacientes hipertensos reportó un riesgo absoluto de 12% en pacientes tratados y de 20% en no tratados. La reducción de riesgo relativo (RRR) es una medida usada habitualmente para expresar el porcentaje de reducción del evento en el grupo tratado relativo al basal. En el estudio citado la RRR reportada fue de:",
+    "opciones": {
+      "a": "8%",
+      "b": "16%",
+      "c": "40%",
+      "d": "60%"
+    },
+    "correcta": "c",
+    "explicacion": "Riesgo Control (Rc) = 20% (0.20). Riesgo Tratado (Rt) = 12% (0.12). La Reducción de Riesgo Relativo (RRR) se calcula como (Rc - Rt) / Rc. Cálculo: (0.20 - 0.12) / 0.20 = 0.08 / 0.20 = 0.40, es decir, 40%.",
     "examen": "Hospital Italiano",
     "anio": 2015,
     "oficial": true
   }
 ]
-
