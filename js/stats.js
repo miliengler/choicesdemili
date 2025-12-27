@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Final Pulidoo
+   📊 ESTADÍSTICAS GLOBALES – Final Corregido
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -8,24 +8,30 @@ let statsSearchTerm = "";
 function renderStats() {
   const app = document.getElementById("app");
 
-  // --- 1. CÁLCULOS GLOBALES ---
+  // --- 1. CÁLCULOS GLOBALES (CORREGIDO) ---
   let totalPreguntas = 0;
+  // Para evitar contar duplicados si una pregunta tiene 2 materias,
+  // calculamos el total global basándonos en el array de preguntas único.
+  totalPreguntas = BANK.questions.length; 
+
   let totalRespondidas = 0;
   let totalCorrectas = 0;
   let totalIncorrectas = 0;
 
-  BANK.subjects.forEach(m => {
-    const preguntasMateria = BANK.questions.filter(q => q.materia === m.slug);
-    totalPreguntas += preguntasMateria.length;
+  // Recorremos las preguntas directamente para los contadores globales
+  // (Es más preciso que sumar por materias si hay materias compartidas)
+  BANK.questions.forEach(q => {
+      // Buscamos el progreso usando la PRIMERA materia asignada (convención de Bank.js)
+      // O buscamos en todas las materias donde pueda estar guardada.
+      // Simplificación: Bank.js guarda el progreso bajo la materia principal o "otras".
+      const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+      const prog = PROG[mat] ? PROG[mat][q.id] : null;
 
-    const progresoMateria = PROG[m.slug] || {};
-    Object.values(progresoMateria).forEach(p => {
-      if (p.status === "ok" || p.status === "bad") {
-        totalRespondidas++;
-        if (p.status === "ok") totalCorrectas++;
-        if (p.status === "bad") totalIncorrectas++;
+      if (prog && (prog.status === "ok" || prog.status === "bad")) {
+          totalRespondidas++;
+          if (prog.status === "ok") totalCorrectas++;
+          if (prog.status === "bad") totalIncorrectas++;
       }
-    });
   });
 
   const totalSinResponder = totalPreguntas - totalRespondidas;
@@ -148,7 +154,7 @@ function renderStats() {
 }
 
 /* ==========================================================
-   📋 Lista de Materias (Botones Angostos & Subtemas Clean)
+   📋 Lista de Materias (Lógica de filtrado corregida)
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -159,9 +165,18 @@ function renderMateriasList() {
 
   if (term) list = list.filter(m => normalize(m.name).includes(term));
 
+  // --- HELPER PARA CONTAR (CORREGIDO PARA ARRAYS) ---
+  const countMateria = (slug) => {
+      // AQUÍ ESTABA EL ERROR: Usamos .includes() para arrays o comparación directa para strings
+      return BANK.questions.filter(q => {
+          if (Array.isArray(q.materia)) return q.materia.includes(slug);
+          return q.materia === slug;
+      }).length;
+  };
+
   list.sort((a, b) => {
     const getPct = (slug) => {
-        const total = BANK.questions.filter(q => q.materia === slug).length;
+        const total = countMateria(slug);
         if (total === 0) return 0;
         const p = PROG[slug] || {};
         let ok = 0, bad = 0;
@@ -186,8 +201,8 @@ function renderMateriasList() {
   }
 
   const listHTML = list.map(m => {
-    const preguntas = BANK.questions.filter(q => q.materia === m.slug);
-    const totalM = preguntas.length;
+    // --- USO DEL HELPER CORREGIDO ---
+    const totalM = countMateria(m.slug);
     
     if (totalM === 0) return ""; 
 
@@ -206,8 +221,6 @@ function renderMateriasList() {
     const insights = getSubjectInsights(m.slug, m.name, datos);
     const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
 
-    // ESTILO COMÚN ANGOSTO
-    // Quitamos min-width grande, usamos padding lateral justo y texto unificado.
     const btnBase = "width:100%; min-width:110px; font-size:12px; padding: 6px 10px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155; white-space:nowrap;";
 
     return `
@@ -275,7 +288,7 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   🧠 Lógica Inteligente (Formatter)
+   🧠 Lógica Inteligente (Insights)
    ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
@@ -300,7 +313,6 @@ function getSubjectInsights(slug, name, datos) {
 
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
-        // Formatear el slug para que se lea lindo
         const prettyName = formatSubtopicName(weakest.name);
         insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
     }
@@ -309,7 +321,6 @@ function getSubjectInsights(slug, name, datos) {
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
 
-// Convertir "hipertension-arterial" -> "Hipertension arterial"
 function formatSubtopicName(slug) {
     if(!slug) return "";
     let text = slug.replace(/[-_]/g, " ");
@@ -318,6 +329,7 @@ function formatSubtopicName(slug) {
 
 function getWeakestSubtopic(mSlug, progData) {
     const questions = BANK.questions.filter(q => {
+        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
         const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         return esMateria && q.submateria; 
     });
@@ -373,12 +385,9 @@ function toggleStatsAcc(slug) {
 function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
 function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
 
-// Navegación con auto-apertura
 function goToPracticeFromStats(slug) {
     if (window.renderChoice) {
         renderChoice();
-        // Intentar abrir el acordeón de esa materia automáticamente
-        // Usamos setTimeout para dar tiempo a que se renderice el DOM
         setTimeout(() => {
             if(typeof toggleMateriaChoice === 'function') {
                 toggleMateriaChoice(slug);
@@ -390,27 +399,29 @@ function goToPracticeFromStats(slug) {
 }
 
 function checkAndGoToNotes(slug, name) {
-    const savedNotes = JSON.parse(localStorage.getItem("MEbank_Notes_v1") || "[]");
-    const hasNotes = savedNotes.some(n => n.materia === slug);
+    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    // Filtrar notas que pertenezcan a preguntas de esta materia
+    const idsConNotas = Object.keys(savedNotes);
+    
+    const preguntasMateria = BANK.questions.filter(q => {
+        if(Array.isArray(q.materia)) return q.materia.includes(slug);
+        return q.materia === slug;
+    });
+    
+    const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
     
     if(hasNotes) {
-        if(window.renderNotes) {
-            renderNotes(); 
-            setTimeout(() => {
-                const sel = document.getElementById("notesMateriaSelect");
-                if(sel) { sel.value = slug; sel.onchange(); }
-            }, 50);
+        if(window.renderNotasMain) {
+            renderNotasMain(); 
         }
     } else {
         alert(`Todavía no tenés notas de ${name}!`);
-        // Opcional: ir igual para crear
-        // if(window.renderNotes) renderNotes();
     }
 }
 
 function resetGlobalStats() {
   if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
-    localStorage.removeItem("MEbank_Progreso_v3");
+    localStorage.removeItem("MEbank_PROG_v3");
     localStorage.removeItem("mebank_stats_daily");
     location.reload();
   }
@@ -420,7 +431,7 @@ function resetSubjectStats(slug, name) {
     if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
         if (PROG[slug]) {
             delete PROG[slug];
-            localStorage.setItem("MEbank_Progreso_v3", JSON.stringify(PROG));
+            if(window.saveProgress) window.saveProgress();
             renderStats();
         }
     }
