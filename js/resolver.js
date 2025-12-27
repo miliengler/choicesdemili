@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Fixed)
+   🎯 MEbank 3.0 – Motor de resolución (Con Soporte Imágenes HD)
    ========================================================== */
 
 let CURRENT = {
@@ -14,8 +14,6 @@ let CURRENT = {
 const SB_PAGE_SIZE = 60;
 let SB_PAGE = 0;
 
-function clamp(n, min, max) { return Math.max(min, Math.min(max, n)); }
-
 /* ==========================================================
    🚀 INICIAR
    ========================================================== */
@@ -27,7 +25,7 @@ function iniciarResolucion(config) {
   stopTimer();
   
   CURRENT = {
-    list: config.preguntas.slice(), // Copia segura
+    list: config.preguntas.slice(),
     i: 0,
     modo: config.modo || "general",
     config: config,
@@ -40,7 +38,6 @@ function iniciarResolucion(config) {
   if (config.usarTimer) {
       initTimer();
   } else {
-      // Asegurar que no quede un timer viejo pegado
       const oldTimer = document.getElementById("exam-timer");
       if(oldTimer) oldTimer.remove();
   }
@@ -63,23 +60,20 @@ function renderPregunta() {
   const numero = CURRENT.i + 1;
   const materiaNombre = getMateriaNombreForQuestion(q);
 
-  // Datos de estado
   const userIdx = getRespuestaMarcada(q.id); 
   const yaRespondio = (userIdx !== null);
 
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // Notas
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const currentNote = savedNotes[q.id]; 
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  // Render Opciones
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
-    let letra = String.fromCharCode(97 + idx); // a, b, c...
+    let letra = String.fromCharCode(97 + idx); 
 
     if (yaRespondio) {
         claseCSS += " q-option-locked"; 
@@ -95,8 +89,14 @@ function renderPregunta() {
     `;
   }).join("");
 
-  // --- HTML PRINCIPAL ---
+  // --- HTML PRINCIPAL (Incluye Modal de Imagen Oculto) ---
   app.innerHTML = `
+    <div id="imgModal" class="img-modal" onclick="closeImgModal()">
+      <span class="img-modal-close">&times;</span>
+      <img class="img-modal-content" id="imgInModal">
+      <div id="imgCaption" class="img-modal-caption"></div>
+    </div>
+
     <button class="btn-mobile-sidebar" onclick="toggleMobileSidebar()">☰ Índice</button>
 
     <div class="q-layout fade">
@@ -111,6 +111,7 @@ function renderPregunta() {
           </div>
 
           <div class="q-enunciado">${q.enunciado}</div>
+          
           ${q.imagenes ? renderImagenesPregunta(q.imagenes) : ""}
 
           <div class="q-options">
@@ -171,7 +172,7 @@ function answer(idx) {
   const q = CURRENT.list[CURRENT.i];
   if (!q) return;
 
-  if (getRespuestaMarcada(q.id) !== null) return; // Ya respondió
+  if (getRespuestaMarcada(q.id) !== null) return; 
 
   setRespuestaMarcada(q.id, idx);
 
@@ -181,7 +182,6 @@ function answer(idx) {
   
   CURRENT.session[q.id] = esCorrecta ? "ok" : "bad";
 
-  // Guardar Progreso Global
   const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
   if (typeof PROG !== 'undefined') {
       if (!PROG[mat]) PROG[mat] = {};
@@ -189,7 +189,6 @@ function answer(idx) {
       if (window.saveProgress) window.saveProgress();
   }
 
-  // Stats Diarias
   if (esCorrecta) {
     const hoy = new Date().toISOString().split('T')[0];
     const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
@@ -201,7 +200,49 @@ function answer(idx) {
 }
 
 /* ==========================================================
-   ⏭ Navegación y Sidebar (LAS FUNCIONES QUE FALTABAN)
+   🖼 GESTIÓN DE IMÁGENES (LIGHTBOX)
+   ========================================================== */
+function renderImagenesPregunta(imgs) {
+  if (!Array.isArray(imgs) || !imgs.length) return "";
+  
+  // Renderizamos miniaturas que abren el modal
+  return `
+    <div class="q-images-container">
+       ${imgs.map((src, idx) => `
+          <div class="q-image-thumbnail" onclick="openImgModal('${src}', 'Imagen ${idx+1}')">
+             <img src="${src}" alt="Imagen clínica" loading="lazy">
+             <div class="q-image-zoom-hint">🔍 Ampliar</div>
+          </div>
+       `).join("")}
+    </div>
+  `;
+}
+
+// Funciones globales para el modal (deben estar accesibles desde el HTML)
+window.openImgModal = (src, caption) => {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgInModal");
+  const captionText = document.getElementById("imgCaption");
+  
+  if(modal && modalImg) {
+      modal.style.display = "flex"; // Flex para centrar
+      modalImg.src = src;
+      if(captionText) captionText.innerHTML = caption || "";
+  }
+};
+
+window.closeImgModal = () => {
+  const modal = document.getElementById("imgModal");
+  if(modal) modal.style.display = "none";
+};
+
+// Cerrar con tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") window.closeImgModal();
+});
+
+/* ==========================================================
+   ⏭ Navegación y Sidebar
    ========================================================== */
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
@@ -221,13 +262,11 @@ function prevQuestion() {
   }
 }
 
-// Mobile Toggle
 function toggleMobileSidebar() {
     const sb = document.getElementById("sidebarEl");
     if(sb) sb.classList.toggle("active-mobile");
 }
 
-// Paginación Sidebar
 function sbNextPage() {
     const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
     if (SB_PAGE < totalPages - 1) {
@@ -278,7 +317,6 @@ function renderSidebarCells() {
     if (estado === "bad") cls += " sb-bad";
     if (savedNotes[q.id]) cls += " sb-note";
 
-    // Al hacer click, cerramos el menú en mobile también
     out.push(`<div class="${cls}" onclick="irAPregunta(${idx}); toggleMobileSidebar();">${idx + 1}</div>`);
   }
   return out.join("");
@@ -349,7 +387,7 @@ function initTimer() {
     el.className = "exam-timer";
     document.body.appendChild(el);
   }
-  el.style.display = "block"; // Asegurar visible
+  el.style.display = "block"; 
   el.textContent = "⏱ 00:00";
   
   TIMER.interval = setInterval(() => {
@@ -371,7 +409,7 @@ function stopTimer() {
   if (TIMER.interval) clearInterval(TIMER.interval);
   TIMER.interval = null;
   const el = document.getElementById("exam-timer");
-  if (el) el.style.display = "none"; // Ocultar en lugar de borrar
+  if (el) el.style.display = "none"; 
 }
 
 // Helpers de datos
@@ -415,9 +453,4 @@ function getMateriaNombreForQuestion(q) {
     return slug;
   });
   return nombres.join(" | ");
-}
-
-function renderImagenesPregunta(imgs) {
-  if (!Array.isArray(imgs) || !imgs.length) return "";
-  return `<div class="q-images">${imgs.map(src => `<div class="q-image-wrap"><img class="q-image" src="${src}" onclick="window.open(this.src)"></div>`).join("")}</div>`;
 }
