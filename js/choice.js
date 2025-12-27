@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (UI Definitiva)
+   📚 MEbank 3.0 – Práctica por materia (UI Definitiva + Fix Suma)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -167,20 +167,17 @@ function toggleAllSubtemas(slug, state) {
 
 /* --- UPDATE REACTIVO UNIFICADO --- */
 function updateInterfaceState(slug) {
-    // 1. Obtener estado de los checkboxes
     const allChecks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     const checkedChecks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
     
     const totalSubtemas = allChecks.length;
     const countSelected = checkedChecks.length;
 
-    // 2. Actualizar CONTROLES (Marcar/Desmarcar)
     const controlsContainer = document.getElementById(`controls-${slug}`);
     if (controlsContainer) {
         controlsContainer.innerHTML = getControlsHTML(slug, totalSubtemas, countSelected);
     }
 
-    // 3. Actualizar BOTONES DE ACCIÓN (Iniciar/Pendientes/Errores)
     const seleccionados = Array.from(checkedChecks).map(ch => ch.value);
     const scope = seleccionados.length ? seleccionados : null;
     const questions = getQuestionsByMateria(slug, scope);
@@ -204,16 +201,11 @@ function updateInterfaceState(slug) {
 }
 
 /* --- GENERADORES HTML --- */
-
-// A. Generador de Controles (Marcar/Desmarcar) con Estilos Lógicos
 function getControlsHTML(slug, total, selected) {
-    // Definimos estados
     const noneSelected = selected === 0;
     const allSelected = selected === total;
-
-    // Estilos
-    const styleActive = "color:#1e3a8a; font-weight:700; cursor:pointer; transition:color 0.2s;"; // Azul Noche
-    const styleInactive = "color:#cbd5e1; cursor:default; pointer-events:none;"; // Gris suave
+    const styleActive = "color:#1e3a8a; font-weight:700; cursor:pointer; transition:color 0.2s;";
+    const styleInactive = "color:#cbd5e1; cursor:default; pointer-events:none;";
 
     return `
         <span onclick="${!allSelected ? `toggleAllSubtemas('${slug}', true)` : ''}"
@@ -228,7 +220,6 @@ function getControlsHTML(slug, total, selected) {
     `;
 }
 
-// B. Generador de Botones de Acción
 function getActionButtonsHTML(slug, stats) {
     const hayRespondidas = (stats.ok + stats.bad) > 0;
     const faltanResponder = (stats.total - (stats.ok + stats.bad)) > 0;
@@ -320,22 +311,50 @@ function renderMateriaRow(m) {
   `;
 }
 
-/* --- RENDER EXPANDIDO --- */
+/* ==========================================================
+   🔄 RENDER EXPANDIDO (FIX MATEMÁTICO)
+   ========================================================== */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
-  let subtemasTexto = BANK.subsubjects[slug] || [];
+  const fullSubtemas = BANK.subsubjects[slug] || [];
+  
+  // 1. CÁLCULO MATEMÁTICO PRECISO (Antes de filtrar visualmente)
+  // Calculamos para TODOS los subtemas, para que el residuo ("Otras") sea correcto.
+  const totalMateria = stats.total;
+  let sumaParcial = 0;
+  const countsMap = {};
 
+  fullSubtemas.forEach((nombreSub, index) => {
+      const isLast = (index === fullSubtemas.length - 1);
+      const subSlug = normalize(nombreSub);
+
+      if (!isLast) {
+          // Contamos solo lo que macha exacto
+          const c = contarPreguntasMateriaSubEstricto(slug, subSlug);
+          countsMap[subSlug] = c;
+          sumaParcial += c;
+      } else {
+          // El último se lleva TODO lo que sobra
+          let resto = totalMateria - sumaParcial;
+          if (resto < 0) resto = 0;
+          countsMap[subSlug] = resto;
+      }
+  });
+
+  // 2. FILTRADO VISUAL (Solo decidimos qué mostrar)
+  let visibleSubtemas = fullSubtemas;
   if (term) {
       const matchName = normalize(m.name).includes(term);
       if (!matchName) {
-          subtemasTexto = subtemasTexto.filter(s => normalize(s).includes(term));
+          visibleSubtemas = fullSubtemas.filter(s => normalize(s).includes(term));
       }
   }
 
-  // Checkbox items
-  const items = subtemasTexto.map(nombreSub => {
+  // 3. GENERACIÓN HTML
+  const items = visibleSubtemas.map(nombreSub => {
     const subSlug = normalize(nombreSub);
-    const count = contarPreguntasMateriaSub(slug, subSlug);
+    const count = countsMap[subSlug] || 0; // Usamos el valor pre-calculado
+    
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
 
@@ -350,7 +369,6 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  // TOOLS
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
@@ -365,14 +383,12 @@ function renderMateriaExpanded(m, term, stats) {
     </div>
   `;
 
-  // CONTROLES DE SELECCIÓN (Estado inicial: 0 seleccionados porque el usuario no tocó nada)
-  // Nota: Si no hay items, no mostramos los controles.
-  const controlsHTML = items.length ? getControlsHTML(slug, subtemasTexto.length, 0) : '';
+  const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <p style="font-size:13px; color:#64748b; margin-bottom:8px;">
-         ${term ? 'Resultados de la búsqueda:' : 'Podés seleccionar uno o más subtemas. Si no seleccionás ninguno, se usan todos.'}
+         ${term ? 'Resultados de la búsqueda:' : 'Seleccioná subtemas. El último incluye preguntas generales y mixtas.'}
       </p>
       
       <div id="controls-${slug}" style="display:flex; justify-content:center; align-items:center; margin-bottom:10px; font-size:13px;">
@@ -413,7 +429,16 @@ function getMateriaStats(slug) {
   return { total, ok, bad, percent };
 }
 
+// Mantenemos esta para compatibilidad
 function contarPreguntasMateriaSub(mSlug, subSlug) {
+  return BANK.questions.filter(q => {
+    const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+    return esMateria && q.submateria === subSlug;
+  }).length;
+}
+
+// NUEVA: Cuenta estricta para el cálculo de residuos
+function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
   return BANK.questions.filter(q => {
     const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
     return esMateria && q.submateria === subSlug;
