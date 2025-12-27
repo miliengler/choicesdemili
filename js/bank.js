@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Optimizado)
+   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos)
    ========================================================== */
 
 /* --- 1. PROGRESO --- */
@@ -50,8 +50,7 @@ async function loadAllBanks() {
 
   const urls = [];
 
-  // A) Materias - Intentamos cargar hasta 15 archivos por materia. 
-  // (Los 404 son esperables y se ignorarán).
+  // A) Materias
   const FILES_PER_SUBJECT = 15; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
@@ -64,15 +63,15 @@ async function loadAllBanks() {
     EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
   }
 
-  // C) Fetch en paralelo
+  // C) Fetch
   const promises = urls.map(item => 
     fetch(item.url)
       .then(r => {
-        if (!r.ok) throw new Error("404"); // Ignoramos archivos que no existen
+        if (!r.ok) throw new Error("404");
         return r.json();
       })
       .then(data => ({ status: "ok", data, type: item.type, meta: item.meta }))
-      .catch(() => ({ status: "fail" })) // Capturamos el error para no romper Promise.all
+      .catch(() => ({ status: "fail" }))
   );
 
   const results = await Promise.all(promises);
@@ -105,29 +104,30 @@ function processQuestion(q, type, examMeta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. Materia
+    // 1. Materia (Normalización robusta)
     if (Array.isArray(q.materia)) {
         q.materia = q.materia.map(m => normalize(m));
     } else {
         let mat = normalize(q.materia || "otras");
-        // Validación extra: si la materia no está en la lista oficial, marcar como 'otras'
-        if (!BANK.subjects.some(s => s.slug === mat)) {
-            // Un intento de "fuzzy match" básico o dejar como otras
-            mat = "otras"; 
-        }
+        // Si la materia no existe en SUBJECTS, mandarla a 'otras'
+        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
         q.materia = mat;
     }
 
     // 2. Submateria
+    // Intentamos asignar una submateria válida basándonos en la PRIMERA materia de la lista
     const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
     const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
     let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
     const subNorm = normalize(subRaw);
+    
     const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
 
     if (match) {
         q.submateria = normalize(match);
     } else {
+        // Si no machea, asignamos al ÚLTIMO ítem de la lista (Catch-All)
         q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
     }
 
@@ -151,13 +151,37 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS HÍBRIDAS --- */
-function getQuestionsByMateria(slug, subs) {
+/* --- 7. APIS HÍBRIDAS (LOGICA MATEMÁTICA CORREGIDA) --- */
+function getQuestionsByMateria(mSlug, selectedSubs) {
+    // Lista oficial de subtemas normalizados para esta materia
+    const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
+    // Identificamos cuál es el "Catch-All" (el último de la lista)
+    const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
+
     return BANK.questions.filter(q => {
-        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+        // 1. Chequear si es de la materia
+        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         if (!esDeLaMateria) return false;
-        if (subs && subs.length) return subs.includes(q.submateria);
-        return true;
+
+        // 2. Si no hay filtro de subtemas, devolver todo
+        if (!selectedSubs || !selectedSubs.length) return true;
+
+        // 3. Chequear subtema
+        const qSub = q.submateria;
+        
+        // A) Coincidencia directa
+        if (selectedSubs.includes(qSub)) return true;
+
+        // B) Lógica de Huérfanos:
+        // Si el usuario seleccionó el "Catch-All" (ej: "Otras preguntas..."),
+        // debemos incluir también las preguntas cuyo subtema NO esté en la lista oficial de esta materia.
+        // (Esto pasa cuando una pregunta es compartida entre materias y tiene el subtema de la otra).
+        if (selectedSubs.includes(catchAllSub)) {
+            const esHuerfano = !officialSubs.includes(qSub);
+            if (esHuerfano) return true;
+        }
+
+        return false;
     });
 }
 
