@@ -428,7 +428,8 @@ button:hover { transform: translateY(-2px); }
 .q-image-thumbnail {
   position: relative;
   width: 100%;           /* Intenta ocupar todo el ancho posible */
-  max-width: 600px;      /* Pero que no se pase de 600px (bastante grande) */
+  max-width: 600px; 
+  margin: 20px auto; 
   height: auto;          /* La altura se calcula sola para no deformar la imagen */
   max-height: 400px;     /* Un límite de altura por si la imagen es muy vertical */
 
