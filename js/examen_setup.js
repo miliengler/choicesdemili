@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Crear Examen (Cajones Individuales + Sin Pintar)
+   🎯 MEbank 3.0 – Simulacro de Examen (Final)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,7 +22,7 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista de materias (CADA UNA EN SU "CAJÓN")
+  // Generamos la lista de materias (Cajones individuales)
   const lista = materias.map(m => `
     <label class="materia-box" onclick="updateMaxPreguntas()">
       
@@ -32,7 +32,7 @@ function renderCrearExamen() {
       </div>
 
       <div style="display:flex; align-items:center; padding-left:15px; border-left:1px solid #f1f5f9;">
-        <input type="checkbox" class="mk-mat" value="${m.slug}" checked>
+        <input type="checkbox" class="mk-mat normal-checkbox" value="${m.slug}" checked>
       </div>
 
     </label>
@@ -41,30 +41,24 @@ function renderCrearExamen() {
   // Estilos CSS inyectados
   const styles = `
     <style>
-      /* Estilo de "Cajón" (Box) individual */
       .materia-box {
         display: flex; justify-content: space-between; align-items: center;
         background: white;
         border: 1px solid #e2e8f0;
-        border-radius: 10px; /* Bordes redondeados */
+        border-radius: 10px;
         padding: 16px;
-        margin-bottom: 12px; /* Separación entre cajones */
+        margin-bottom: 12px;
         cursor: pointer;
         transition: transform 0.1s, box-shadow 0.2s;
       }
-
-      /* Hover suave (levanta un poquito) */
       .materia-box:hover {
         border-color: #cbd5e1;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         transform: translateY(-1px);
       }
-
-      /* IMPORTANTE: No cambiamos el background al estar checked */
-      /* Solo el checkbox se ve marcado */
-
-      .mk-mat {
-        width: 20px; height: 20px; cursor: pointer;
+      
+      .normal-checkbox {
+        width: 18px; height: 18px; cursor: pointer;
         accent-color: #3b82f6;
       }
       
@@ -83,14 +77,14 @@ function renderCrearExamen() {
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div style="flex:1;">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-            <h2 style="margin:0;">🎯 Crear Examen</h2>
+            <h2 style="margin:0;">🎯 Simulacro de Examen</h2>
             <button onclick="mostrarInfoExamen()" 
                     style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
               ?
             </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Seleccioná las materias que querés incluir.
+             Seleccioná las materias para armar tu simulacro personalizado.
           </p>
         </div>
         
@@ -113,7 +107,7 @@ function renderCrearExamen() {
              <div style="font-size:11px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
              <div id="mk-max-hint" style="font-size:11px; color:#94a3b8;">(Max: ${totalAll})</div>
           </div>
-          <input id="mk-total" type="number" min="1" value="50" 
+          <input id="mk-total" type="number" min="1" value="100" 
                  style="width:80px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:18px; font-weight:bold; text-align:center; color:#334155;">
         </div>
 
@@ -124,7 +118,7 @@ function renderCrearExamen() {
 
         <button class="btn-main" style="padding:10px 25px; font-size:1.1rem; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);" 
                 onclick="startExamenPersonalizado()">
-          ▶ COMENZAR
+          ▶ Comenzar Simulacro
         </button>
 
       </div>
@@ -140,7 +134,8 @@ function renderCrearExamen() {
    ========================================================== */
 
 function mostrarInfoExamen() {
-    alert("ℹ️ MODO CREADOR\n\nArmá tu propia práctica mezclando preguntas de las materias que elijas.");
+    // Opción A: Profesional
+    alert("ℹ️ MODO EXAMEN\n\nEste modo te permite simular las condiciones reales de evaluación. Seleccioná las materias que quieras integrar, definí la extensión del examen y entrená tu agilidad mental con preguntas aleatorias y cronómetro activo.");
 }
 
 function toggleGlobalSelection(state) {
@@ -156,7 +151,7 @@ function updateMaxPreguntas() {
   const totalItems = allCheckboxes.length;
   const selectedCount = checkedBoxes.length;
 
-  // 1. Renderizar controles Marcar | Desmarcar
+  // Renderizar controles de texto
   const container = document.getElementById("global-controls");
   if (container) {
       const allSelected = selectedCount === totalItems;
@@ -171,7 +166,7 @@ function updateMaxPreguntas() {
       `;
   }
 
-  // 2. Calcular preguntas disponibles
+  // Calcular disponibles
   const checksValues = checkedBoxes.map(c => c.value);
   const poolSize = BANK.questions.filter(q => {
       const mat = q.materia;
@@ -179,12 +174,14 @@ function updateMaxPreguntas() {
       return checksValues.includes(mat);
   }).length;
 
-  // 3. Actualizar Inputs
+  // Actualizar Inputs
   const input = document.getElementById("mk-total");
   const hint = document.getElementById("mk-max-hint");
   
   if (input) {
       input.max = poolSize;
+      // Si el valor actual supera el máximo real, lo bajamos. 
+      // Si es 100 (default) y hay menos de 100, se ajusta solo.
       if (parseInt(input.value) > poolSize) input.value = poolSize;
       if (poolSize === 0) input.value = 0;
   }
@@ -227,6 +224,6 @@ function startExamenPersonalizado() {
     usarTimer,
     permitirRetroceso: true,
     mostrarNotas: true,
-    titulo: "🎯 Examen Personalizado"
+    titulo: "🎯 Simulacro Personalizado"
   });
 }
