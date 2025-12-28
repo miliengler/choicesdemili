@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro de Examen (Con Efecto Pop)
+   🎯 MEbank 3.0 – Simulacro de Examen (Footer Gris Transparente)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,7 +22,7 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista
+  // Generamos la lista de materias (Cajones individuales)
   const lista = materias.map(m => `
     <label class="materia-box" onclick="updateMaxPreguntas()">
       
@@ -38,7 +38,7 @@ function renderCrearExamen() {
     </label>
   `).join("");
 
-  // Estilos CSS con el efecto "Pop" agregado
+  // Estilos CSS
   const styles = `
     <style>
       .materia-box {
@@ -49,40 +49,70 @@ function renderCrearExamen() {
         padding: 16px;
         margin-bottom: 12px;
         cursor: pointer;
-        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Rebote suave */
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         position: relative;
       }
-
-      /* Hover sutil para las no seleccionadas */
       .materia-box:hover {
         border-color: #cbd5e1;
       }
-
-      /* ESTADO SELECCIONADO (El efecto que pediste) */
       .box-selected {
-        transform: scale(1.02); /* Se agranda un 2% */
-        border-color: #3b82f6;  /* Borde azul */
-        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15); /* Sombra azulada flotante */
-        z-index: 10; /* Se pone por encima de las otras */
+        transform: scale(1.02);
+        border-color: #3b82f6;
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
+        z-index: 10;
         background-color: #fff;
       }
-      
       .normal-checkbox {
         width: 18px; height: 18px; cursor: pointer;
         accent-color: #3b82f6;
       }
-      
       .ctrl-link {
          font-size: 14px; font-weight: 600; cursor: pointer; transition: color 0.2s;
       }
       .ctrl-active { color: #1e3a8a; }
       .ctrl-inactive { color: #cbd5e1; cursor: default; pointer-events: none; }
+      
+      /* Estilo botón estilo "Outline" (Como Iniciar Práctica) */
+      .btn-outline-blue {
+        background: white;
+        border: 1px solid #3b82f6;
+        color: #1d4ed8;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: all 0.2s;
+        box-shadow: 0 2px 5px rgba(59, 130, 246, 0.1);
+      }
+      .btn-outline-blue:hover {
+        background: #eff6ff;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+      }
+
+      /* Estilo botón "Mi Progreso" (Grisáceo) */
+      .btn-outline-gray {
+        background: white;
+        border: 1px solid #cbd5e1;
+        color: #475569;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        transition: background 0.2s;
+      }
+      .btn-outline-gray:hover {
+        background: #f1f5f9;
+        color: #1e293b;
+      }
     </style>
   `;
 
   app.innerHTML = `
     ${styles}
-    <div id="choice-shell" class="card fade" style="max-width:900px; margin:auto;">
+    <div id="choice-shell" class="card fade" style="max-width:900px; margin:auto; padding-bottom:0;">
       
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div style="flex:1;">
@@ -94,7 +124,7 @@ function renderCrearExamen() {
             </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Seleccioná las materias para armar tu simulacro.
+             Seleccioná las materias para armar tu simulacro personalizado.
           </p>
         </div>
         
@@ -106,37 +136,48 @@ function renderCrearExamen() {
       <div id="global-controls" style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:15px; padding-right:5px;">
          </div>
 
-      <div style="margin-bottom:30px;">
+      <div style="margin-bottom:20px;">
         ${lista}
       </div>
 
-      <div style="position:sticky; bottom:20px; background:white; padding:15px; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border:1px solid #e2e8f0; display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
+      <div style="position:sticky; bottom:20px; 
+                  background:rgba(248, 250, 252, 0.95); backdrop-filter: blur(5px);
+                  padding:15px; border-radius:12px; 
+                  box-shadow: 0 4px 25px rgba(0,0,0,0.1); border:1px solid #cbd5e1; 
+                  display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
         
-        <div style="display:flex; align-items:center; gap:10px;">
-          <div style="text-align:right;">
-             <div style="font-size:11px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
-             <div id="mk-max-hint" style="font-size:11px; color:#94a3b8;">(Max: ${totalAll})</div>
-          </div>
-          <input id="mk-total" type="number" min="1" value="100" 
-                 style="width:80px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:18px; font-weight:bold; text-align:center; color:#334155;">
+        <div style="display:flex; align-items:center; gap:15px;">
+           <div style="display:flex; align-items:center; gap:8px;">
+              <div style="text-align:right;">
+                 <div style="font-size:10px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
+                 <div id="mk-max-hint" style="font-size:10px; color:#94a3b8;">(Max: ${totalAll})</div>
+              </div>
+              <input id="mk-total" type="number" min="1" value="100" 
+                     style="width:70px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:16px; font-weight:bold; text-align:center; color:#334155;">
+           </div>
+
+           <label style="display:flex; align-items:center; gap:6px; cursor:pointer; padding-left:10px; border-left:1px solid #cbd5e1;">
+              <input type="checkbox" id="mk-timer" checked style="width:16px; height:16px;">
+              <span style="font-size:13px; color:#334155; font-weight:600;">Reloj</span>
+           </label>
         </div>
 
-        <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
-          <input type="checkbox" id="mk-timer" checked style="width:18px; height:18px;">
-          <span style="font-size:14px; color:#334155; font-weight:600;">Cronómetro</span>
-        </label>
+        <div style="display:flex; gap:10px;">
+            <button class="btn-outline-gray" onclick="alert('Próximamente: Historial de simulacros')">
+               📊 Mi Progreso
+            </button>
 
-        <button class="btn-main" style="padding:10px 25px; font-size:1.1rem; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);" 
-                onclick="startExamenPersonalizado()">
-          ▶ Comenzar Simulacro
-        </button>
+            <button class="btn-outline-blue" onclick="startExamenPersonalizado()">
+              ▶ Comenzar Simulacro
+            </button>
+        </div>
 
       </div>
 
     </div>
   `;
   
-  // Ejecutamos una vez al inicio para que las que están "checked" por defecto se levanten
+  // Ejecutar lógica inicial
   updateMaxPreguntas();
 }
 
@@ -165,10 +206,10 @@ function updateMaxPreguntas() {
       allCheckboxes.push(chk);
       
       if (chk.checked) {
-          lbl.classList.add("box-selected"); // 🔥 AGREGAMOS EL EFECTO POP
+          lbl.classList.add("box-selected");
           checkedBoxes.push(chk);
       } else {
-          lbl.classList.remove("box-selected"); // QUITAMOS EL EFECTO
+          lbl.classList.remove("box-selected");
       }
   });
 
