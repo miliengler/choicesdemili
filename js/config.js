@@ -32,10 +32,11 @@ const SUBJECTS = [
   { slug: "oftalmologia",       name: "👁️ Oftalmología" },
   { slug: "otorrinolaringologia", name: "👂 Otorrinolaringología" },
   { slug: "neurocirugia",       name: "🧠 Neurocirugía" },
-  { slug: "toxicologia", name: "☠️ Toxicología" },
-  { slug: "medicinalegal", name: "⚖️ Medicina Legal" },
+  { slug: "toxicologia",        name: "☠️ Toxicología" },
+  { slug: "medicinalegal",      name: "⚖️ Medicina Legal" },
   { slug: "saludpublica",       name: "🏥 Salud Pública" },
   { slug: "imagenes",           name: "🩻 Diagnóstico por Imágenes" },
+  { slug: "aps",                name: "🚑 Atención Primaria de la Salud" },
   { slug: "otras",              name: "📚 Otras" }
 ];
 
@@ -47,6 +48,9 @@ const SUBJECTS = [
    ---------------------------------------------------------- */
 
 const SUBTEMAS = {
+  aps: [
+     "Atención Primaria de la Salud"
+ ],
 
   cardiologia: [
     "Cardiología básica",
