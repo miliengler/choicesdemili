@@ -46,7 +46,7 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 RENDER PRINCIPAL (Limpio y Sin Redundancias)
+   🧩 RENDER PRINCIPAL (Preparado para respuesta suave)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -54,6 +54,8 @@ function renderPregunta() {
 
   if (!q) return renderFin();
 
+  // Solo scrolleamos al top si estamos cambiando de pregunta, no al responder
+  // (Esta validación la haremos visualmente al no recargar todo)
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   const total = CURRENT.list.length;
@@ -71,61 +73,50 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  // --- 🏆 INSIGNIA "PREGUNTA TOMADA" (Solo en modos de práctica) ---
+  // --- INSIGNIA ---
   let badgeHTML = "";
-  
-  // Solo mostramos el badge si NO estamos en modo examen
   const esModoExamen = (CURRENT.modo === "examen" || CURRENT.modo === "reanudar");
 
   if (!esModoExamen && q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
-      
-      // Limpieza básica de guiones bajos
       if (nombreExamen.includes("_")) {
-          nombreExamen = nombreExamen.replace(/_/g, " ");
-          nombreExamen = nombreExamen.replace(/\b\w/g, l => l.toUpperCase());
+          nombreExamen = nombreExamen.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
       }
-
-      // Lógica Anti-Duplicado de Año:
-      // Solo agregamos el año si NO está ya escrito dentro del nombre del examen
       let detalle = "";
       if (q.anio) {
-          if (nombreExamen.includes(String(q.anio))) {
-              detalle = `(${nombreExamen})`; // Ya tiene el año, no lo repito
-          } else {
-              detalle = `(${nombreExamen} ${q.anio})`; // No lo tiene, lo agrego
-          }
+          detalle = nombreExamen.includes(String(q.anio)) ? `(${nombreExamen})` : `(${nombreExamen} ${q.anio})`;
       } else {
           detalle = `(${nombreExamen})`;
       }
-
-      badgeHTML = `
-        <div class="badge-oficial">
-           <span style="font-size:1.1em; margin-right:4px;">⭐️</span> 
-           PREGUNTA TOMADA 
-           <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span>
-        </div>
-      `;
+      badgeHTML = `<div class="badge-oficial"><span style="font-size:1.1em; margin-right:4px;">⭐️</span> PREGUNTA TOMADA <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span></div>`;
   }
-  // ----------------------------------------------------
 
+  // --- OPCIONES ---
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
-
+    // Si ya cargamos la página respondida, pintamos directo
     if (yaRespondio) {
         claseCSS += " q-option-locked"; 
         if (idx === correctIndex) claseCSS += " option-correct"; 
         else if (idx === userIdx) claseCSS += " option-wrong";   
     }
-
     return `
-      <label class="${claseCSS}" onclick="answer(${idx})">
+      <label class="${claseCSS}" id="opt-${idx}" onclick="answer(${idx})">
         <span class="q-option-letter">${letra})</span>
         <span class="q-option-text">${texto}</span>
       </label>
     `;
   }).join("");
+
+  // --- EXPLICACIÓN (Si ya respondió, la mostramos. Si no, dejamos hueco vacío) ---
+  let explicacionInicial = "";
+  if (yaRespondio && q.explicacion) {
+      explicacionInicial = `
+        <div class="q-explanation fade">
+           <strong>💡 Explicación:</strong><br>${q.explicacion}
+        </div>`;
+  }
 
   app.innerHTML = `
     <div id="imgModal" class="img-modal" onclick="closeImgModal()">
@@ -136,10 +127,8 @@ function renderPregunta() {
 
     <button class="btn-mobile-sidebar" onclick="toggleMobileSidebar()">☰ Índice</button>
 
-    <div class="q-layout fade">
-      <div class="q-main">
-        <div class="q-card">
-          <div class="q-header">
+    <div class="q-layout"> <div class="q-main">
+        <div class="q-card fade"> <div class="q-header">
             <div class="q-title">
               <b>${CURRENT.config.titulo || "Práctica"}</b>
               <span class="q-counter">${numero} / ${total}</span>
@@ -148,20 +137,14 @@ function renderPregunta() {
           </div>
 
           ${badgeHTML}
-
           <div class="q-enunciado">${q.enunciado}</div>
-          
           ${q.imagenes ? renderImagenesPregunta(q.imagenes) : ""}
 
-          <div class="q-options">
+          <div class="q-options" id="options-container">
             ${opcionesHTML || `<p class="small">(Sin opciones)</p>`}
           </div>
 
-          ${yaRespondio && q.explicacion ? `
-            <div class="q-explanation">
-               <strong>💡 Explicación:</strong><br>${q.explicacion}
-            </div>
-          ` : ""}
+          <div id="explanation-holder">${explicacionInicial}</div>
 
           <div style="margin-top:25px; border-top:1px dashed #e2e8f0; padding-top:15px;">
              <button class="btn-small" 
@@ -205,37 +188,59 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   🧠 Lógica de Respuesta
+   ⚡️ RESPUESTA INSTANTÁNEA (Sin recargar la página)
    ========================================================== */
-function answer(idx) {
+function answer(selectedIndex) {
   const q = CURRENT.list[CURRENT.i];
-  if (!q) return;
+  
+  // 1. Si ya respondió, no hacemos nada (evita doble click)
+  if (getRespuestaMarcada(q.id) !== null) return;
 
-  if (getRespuestaMarcada(q.id) !== null) return; 
+  // 2. Guardamos la respuesta en la memoria
+  saveRespuesta(q.id, selectedIndex);
 
-  setRespuestaMarcada(q.id, idx);
-
+  // 3. Calculamos cuál es la correcta
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
-  const esCorrecta = (correctIndex !== null && idx === correctIndex);
+
+  // 4. ACTUALIZACIÓN VISUAL (DOM Patching)
+  // En vez de recargar todo, buscamos los botones y los pintamos
+  const allOptions = document.querySelectorAll(".q-option");
   
-  CURRENT.session[q.id] = esCorrecta ? "ok" : "bad";
+  allOptions.forEach((el, idx) => {
+      // Bloqueamos todas para que no pueda cambiar
+      el.classList.add("q-option-locked");
+      el.onclick = null; // Quitamos el evento de click
 
-  const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
-  if (typeof PROG !== 'undefined') {
-      if (!PROG[mat]) PROG[mat] = {};
-      PROG[mat][q.id] = { status: CURRENT.session[q.id], fecha: Date.now() };
-      if (window.saveProgress) window.saveProgress();
+      if (idx === correctIndex) {
+          el.classList.add("option-correct"); // Verde
+      } else if (idx === selectedIndex) {
+          el.classList.add("option-wrong"); // Rojo
+      }
+  });
+
+  // 5. Mostrar la explicación suavemente (si existe)
+  if (q.explicacion) {
+      const holder = document.getElementById("explanation-holder");
+      if (holder) {
+          holder.innerHTML = `
+            <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
+               <strong>💡 Explicación:</strong><br>${q.explicacion}
+            </div>
+          `;
+      }
   }
 
-  if (esCorrecta) {
-    const hoy = new Date().toISOString().split('T')[0];
-    const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
-    stats[hoy] = (stats[hoy] || 0) + 1;
-    localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
+  // 6. Actualizar el índice lateral (Sidebar) sin recargarlo
+  // Solo actualizamos la celda actual para que se ponga verde/roja
+  const sidebarCell = document.getElementById(`sb-cell-${CURRENT.i}`);
+  if (sidebarCell) {
+      if (selectedIndex === correctIndex) {
+          sidebarCell.classList.add("sb-correct");
+      } else {
+          sidebarCell.classList.add("sb-wrong");
+      }
   }
-
-  renderPregunta();
 }
 
 /* ==========================================================
