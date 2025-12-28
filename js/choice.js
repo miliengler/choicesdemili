@@ -310,16 +310,14 @@ function renderMateriaRow(m) {
     </div>
   `;
 }
-
 /* ==========================================================
-   🔄 RENDER EXPANDIDO (FIX MATEMÁTICO)
+   🔄 RENDER EXPANDIDO (Con el texto corregido)
    ========================================================== */
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   const fullSubtemas = BANK.subsubjects[slug] || [];
   
-  // 1. CÁLCULO MATEMÁTICO PRECISO (Antes de filtrar visualmente)
-  // Calculamos para TODOS los subtemas, para que el residuo ("Otras") sea correcto.
+  // 1. CÁLCULO MATEMÁTICO PRECISO
   const totalMateria = stats.total;
   let sumaParcial = 0;
   const countsMap = {};
@@ -329,19 +327,17 @@ function renderMateriaExpanded(m, term, stats) {
       const subSlug = normalize(nombreSub);
 
       if (!isLast) {
-          // Contamos solo lo que macha exacto
           const c = contarPreguntasMateriaSubEstricto(slug, subSlug);
           countsMap[subSlug] = c;
           sumaParcial += c;
       } else {
-          // El último se lleva TODO lo que sobra
           let resto = totalMateria - sumaParcial;
           if (resto < 0) resto = 0;
           countsMap[subSlug] = resto;
       }
   });
 
-  // 2. FILTRADO VISUAL (Solo decidimos qué mostrar)
+  // 2. FILTRADO VISUAL
   let visibleSubtemas = fullSubtemas;
   if (term) {
       const matchName = normalize(m.name).includes(term);
@@ -353,7 +349,7 @@ function renderMateriaExpanded(m, term, stats) {
   // 3. GENERACIÓN HTML
   const items = visibleSubtemas.map(nombreSub => {
     const subSlug = normalize(nombreSub);
-    const count = countsMap[subSlug] || 0; // Usamos el valor pre-calculado
+    const count = countsMap[subSlug] || 0; 
     
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
@@ -388,7 +384,7 @@ function renderMateriaExpanded(m, term, stats) {
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <p style="font-size:13px; color:#64748b; margin-bottom:8px;">
-         ${term ? 'Resultados de la búsqueda:' : 'Seleccioná subtemas. El último incluye preguntas generales y mixtas.'}
+         ${term ? 'Resultados de la búsqueda:' : 'Seleccioná subtemas. Si no seleccionás ninguno, se usan todos.'}
       </p>
       
       <div id="controls-${slug}" style="display:flex; justify-content:center; align-items:center; margin-bottom:10px; font-size:13px;">
