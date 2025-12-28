@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Crear Examen (Sin Scroll Interno)
+   🎯 MEbank 3.0 – Crear Examen (Estilo Unificado)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,71 +22,70 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista de materias
+  // Generamos la lista (Sin scroll interno, estilo limpio)
   const lista = materias.map(m => `
-    <label style="display:flex; justify-content:space-between; align-items:center; 
-                  padding:12px 5px; border-bottom:1px solid #f1f5f9; cursor:pointer;">
-      <span style="display:flex; align-items:center; font-size:15px; color:#334155;">
+    <label class="mat-row" style="display:flex; justify-content:space-between; align-items:center; 
+                  padding:15px 10px; border-bottom:1px solid #f1f5f9; cursor:pointer; transition: background 0.2s;">
+      <div style="display:flex; align-items:center; gap:12px;">
         <input type="checkbox" class="mk-mat" value="${m.slug}"
-               onchange="updateMaxPreguntas()" checked style="margin-right:10px; transform:scale(1.1);">
-        ${m.name}
-      </span>
-      <span style="background:#f1f5f9; color:#64748b; font-size:12px; font-weight:600; 
-                   padding:2px 8px; border-radius:12px;">${m.total}</span>
+               onchange="updateMaxPreguntas()" checked style="transform:scale(1.2); cursor:pointer;">
+        <span style="font-size:16px; color:#1e293b; font-weight:500;">${m.name}</span>
+      </div>
+      <span style="background:#f1f5f9; color:#64748b; font-size:13px; font-weight:700; 
+                   padding:4px 10px; border-radius:12px;">${m.total}</span>
     </label>
   `).join("");
 
   app.innerHTML = `
-    <div class="card fade" style="max-width:800px; margin:20px auto; padding:25px;">
+    <div class="card fade" style="max-width:800px; margin:20px auto; padding:30px;">
 
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; border-bottom:2px solid #f1f5f9; padding-bottom:15px;">
-          <h2 style="margin:0; font-size:1.5rem; color:#0f172a;">🛠 Crear Examen</h2>
-          <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:25px;">
+          <h2 style="margin:0; font-size:1.8rem; color:#0f172a;">🛠 Crear Examen</h2>
+          
+          <div style="display:flex; gap:10px;">
+            <button class="btn-small btn-ghost" onclick="mostrarInfoExamen()" title="Ayuda" 
+                    style="font-size:18px; width:36px; height:36px; display:flex; align-items:center; justify-content:center; padding:0;">
+               ?
+            </button>
+            <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+          </div>
       </div>
 
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; background:#f8fafc; padding:10px; border-radius:8px;">
-        
-        <button class="btn-small btn-ghost" onclick="mostrarInfoExamen()" 
-                style="display:flex; align-items:center; gap:5px; color:#475569;">
-           <span style="font-weight:bold; font-size:16px;">?</span> <span>Ayuda</span>
-        </button>
-
-        <label style="font-size:14px; color:#1e3a8a; cursor:pointer; font-weight:700; display:flex; align-items:center; gap:6px;">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:15px; border-bottom:2px solid #f1f5f9; padding-bottom:10px;">
+         <span style="font-size:1rem; font-weight:600; color:#64748b;">Materias disponibles</span>
+         
+         <label style="font-size:14px; color:#1e3a8a; cursor:pointer; font-weight:700; display:flex; align-items:center; gap:6px; user-select:none;">
             <input type="checkbox" id="chk-all" checked onchange="toggleSelectAll(this)">
             SELECCIONAR TODOS
-        </label>
+         </label>
       </div>
 
-      <div style="margin-bottom:25px;">
+      <div style="margin-bottom:30px;">
         ${lista}
       </div>
 
-      <div style="border-top:2px solid #f1f5f9; margin-top:10px; padding-top:20px;"></div>
-
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+      <div style="background:#f8fafc; border-radius:12px; padding:20px; border:1px solid #e2e8f0; display:flex; flex-wrap:wrap; gap:20px; justify-content:space-between; align-items:center;">
         
         <div>
-          <label for="mk-total" style="font-size:14px; color:#475569; font-weight:600; display:block; margin-bottom:5px;">
-            Preguntas a responder:
+          <label for="mk-total" style="font-size:14px; color:#475569; font-weight:700; display:block; margin-bottom:6px;">
+            Preguntas totales:
           </label>
           <div style="display:flex; align-items:center; gap:8px;">
             <input id="mk-total" type="number" min="1" value="50" 
-                   style="width:100px; padding:8px; border-radius:6px; border:1px solid #cbd5e1; font-size:16px; font-weight:bold; text-align:center;">
-            <span id="mk-max-hint" style="font-size:13px; color:#94a3b8;">(Máx: ${totalAll})</span>
+                   style="width:100px; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:18px; font-weight:bold; text-align:center; color:#334155;">
+            <span id="mk-max-hint" style="font-size:13px; color:#94a3b8; font-weight:500;">(Máx: ${totalAll})</span>
           </div>
         </div>
 
-        <div style="display:flex; align-items:center; gap:8px; background:#f8fafc; padding:8px 12px; border-radius:6px; border:1px solid #e2e8f0;">
-          <input type="checkbox" id="mk-timer" checked style="width:18px; height:18px;">
-          <label for="mk-timer" style="font-size:14px; color:#334155; font-weight:600; cursor:pointer;">
-            ⏱ Activar cronómetro
-          </label>
-        </div>
+        <label style="display:flex; align-items:center; gap:10px; cursor:pointer; background:white; padding:10px 15px; border-radius:8px; border:1px solid #e2e8f0;">
+          <input type="checkbox" id="mk-timer" checked style="width:20px; height:20px; cursor:pointer;">
+          <span style="font-size:15px; color:#334155; font-weight:600;">⏱ Usar cronómetro</span>
+        </label>
 
       </div>
 
       <div style="margin-top:30px; text-align:center;">
-        <button class="btn-main" style="width:100%; max-width:350px; padding:14px; font-size:1.1rem; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);" 
+        <button class="btn-main" style="width:100%; max-width:400px; padding:15px; font-size:1.2rem; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);" 
                 onclick="startExamenPersonalizado()">
           ▶ COMENZAR SIMULACRO
         </button>
