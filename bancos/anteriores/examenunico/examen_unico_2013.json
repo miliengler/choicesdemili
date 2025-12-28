@@ -633,6 +633,9 @@
     "materia": "infectologia",
     "submateria": "Parasitología",
     "enunciado": "¿Cuál es el diagnóstico más probable en una niña de 7 años de edad... que vive en Esquel y que presenta un cuadro de 7 días de evolución... tos intensa con expectoración abundante blanquecina, hemoptoica y filante... radiografías de tórax...?",
+    "imagenes": [
+      "img/examenunico/hidatidosis_2013.png"
+    ],
     "opciones": {
       "a": "Hidatidosis pulmonar",
       "b": "Absceso de pulmón",
@@ -645,6 +648,7 @@
     "anio": 2013,
     "oficial": true
   },
+ 
   {
     "id": "med_2013_039",
     "materia": "pediatria",
@@ -888,7 +892,10 @@
     "id": "med_2013_053",
     "materia": "cardiologia",
     "submateria": "Trastornos del ritmo",
-    "enunciado": "¿Cómo interpreta el siguiente trazado electrocardiográfico? (Imagen de ondas F en serrucho)",
+    "enunciado": "¿Cómo interpreta el siguiente trazado electrocardiográfico?",
+    "imagenes": [
+      "img/examenunico/aleteo_2013.png"
+    ],
     "opciones": {
       "a": "Aleteo auricular",
       "b": "Fibrilación auricular",
@@ -901,6 +908,7 @@
     "anio": 2013,
     "oficial": true
   },
+
   {
     "id": "med_2013_054",
     "materia": "obstetricia",
@@ -940,6 +948,9 @@
     "materia": "dermatologia",
     "submateria": "Infecciosas",
     "enunciado": "Un paciente de 40 años concurre a la consulta por presentar dolor moderado y prurito en la región periauricular y posterolateral izquierda del cuello de 72 horas de evolución y en las últimas horas refiere la aparición de una erupción en el área con formación de algunas ampollas. ¿Cuál es el diagnóstico más probable?",
+    "imagenes": [
+      "img/examenunico/herpes_zoster_2013.png"
+    ],
     "opciones": {
       "a": "Penfigoide",
       "b": "Dermatitis de contacto",
@@ -1330,7 +1341,10 @@
     "id": "med_2013_079",
     "materia": "neumonologia",
     "submateria": "Neumonía",
-    "enunciado": "¿Cómo describiría la siguiente imagen radiológica? (Imagen de opacidad en lóbulo superior derecho)",
+    "enunciado": "¿Cómo describiría la siguiente imagen radiológica?",
+    "imagenes": [
+      "img/examenunico/neumonia_lsd_2013.png"
+    ],
     "opciones": {
       "a": "Condensación del lóbulo superior derecho",
       "b": "Atelectasia del lóbulo superior derecho",
