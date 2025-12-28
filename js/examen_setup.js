@@ -93,7 +93,7 @@ function updateMaxPreguntas() {
 }
 
 /* ==========================================================
-   🚀 Iniciar examen personalizado
+   🚀 Iniciar examen personalizado (Con Insignias Activadas)
    ========================================================== */
 
 function startExamenPersonalizado() {
@@ -106,27 +106,35 @@ function startExamenPersonalizado() {
     return;
   }
 
-  const total = parseInt(document.getElementById("mk-total").value) || 1;
+  const totalInput = document.getElementById("mk-total");
+  const total = parseInt(totalInput.value) || 10;
   const usarTimer = document.getElementById("mk-timer").checked;
 
-  // Construir pool de preguntas
-  let pool = BANK.questions.filter(q => checks.includes(q.materia));
+  // 1. CONSTRUIR POOL (Soporte Arrays)
+  let pool = BANK.questions.filter(q => {
+      const mat = q.materia;
+      if (Array.isArray(mat)) {
+          return mat.some(m => checks.includes(m));
+      }
+      return checks.includes(mat);
+  });
 
   if (!pool.length) {
-    alert("No hay preguntas disponibles.");
+    alert("No hay preguntas disponibles con esa selección.");
     return;
   }
 
-  // Aleatorizar y cortar
-  pool = pool.sort(() => Math.random() - 0.5)
-             .slice(0, total);
+  // 2. ALEATORIZAR Y CORTAR
+  pool = pool.sort(() => Math.random() - 0.5).slice(0, total);
 
+  // 3. INICIAR
   iniciarResolucion({
-    modo: "examen",
+    modo: "personalizado", // 👈 CAMBIO CLAVE: Esto activa las insignias en Resolver.js
     preguntas: pool,
     usarTimer,
     permitirRetroceso: true,
     mostrarNotas: true,
-    titulo: "🎯 Examen personalizado"
+    titulo: "🎯 Examen Personalizado"
   });
 }
+
