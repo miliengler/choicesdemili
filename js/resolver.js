@@ -46,10 +46,7 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 RENDER PRINCIPAL
-   ========================================================== */
-/* ==========================================================
-   🧩 RENDER PRINCIPAL (Con Badge "PREGUNTA TOMADA" Mejorado)
+   🧩 RENDER PRINCIPAL (Limpio y Sin Redundancias)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -74,24 +71,34 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  // --- 🏆 INSIGNIA "PREGUNTA TOMADA" ---
+  // --- 🏆 INSIGNIA "PREGUNTA TOMADA" (Solo en modos de práctica) ---
   let badgeHTML = "";
   
-  if (q.oficial === true) {
-      // 1. Limpiamos el nombre del examen (quita guiones bajos, pone mayúsculas)
+  // Solo mostramos el badge si NO estamos en modo examen
+  const esModoExamen = (CURRENT.modo === "examen" || CURRENT.modo === "reanudar");
+
+  if (!esModoExamen && q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
       
-      // Truco: Si el nombre parece un ID (tiene guiones bajos), lo formateamos lindo
+      // Limpieza básica de guiones bajos
       if (nombreExamen.includes("_")) {
-          nombreExamen = nombreExamen.replace(/_/g, " "); // Quita _
-          // Pone Mayúscula En Cada Palabra
-          nombreExamen = nombreExamen.replace(/\b\w/g, l => l.toUpperCase()); 
+          nombreExamen = nombreExamen.replace(/_/g, " ");
+          nombreExamen = nombreExamen.replace(/\b\w/g, l => l.toUpperCase());
       }
 
-      // 2. Armamos el texto (Nombre + Año)
-      const detalle = q.anio ? `(${nombreExamen} ${q.anio})` : `(${nombreExamen})`;
+      // Lógica Anti-Duplicado de Año:
+      // Solo agregamos el año si NO está ya escrito dentro del nombre del examen
+      let detalle = "";
+      if (q.anio) {
+          if (nombreExamen.includes(String(q.anio))) {
+              detalle = `(${nombreExamen})`; // Ya tiene el año, no lo repito
+          } else {
+              detalle = `(${nombreExamen} ${q.anio})`; // No lo tiene, lo agrego
+          }
+      } else {
+          detalle = `(${nombreExamen})`;
+      }
 
-      // 3. HTML Final
       badgeHTML = `
         <div class="badge-oficial">
            <span style="font-size:1.1em; margin-right:4px;">⭐️</span> 
