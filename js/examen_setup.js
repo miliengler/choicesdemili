@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro de Examen (Final)
+   🎯 MEbank 3.0 – Simulacro de Examen (Con Efecto Pop)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,7 +22,7 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista de materias (Cajones individuales)
+  // Generamos la lista
   const lista = materias.map(m => `
     <label class="materia-box" onclick="updateMaxPreguntas()">
       
@@ -38,7 +38,7 @@ function renderCrearExamen() {
     </label>
   `).join("");
 
-  // Estilos CSS inyectados
+  // Estilos CSS con el efecto "Pop" agregado
   const styles = `
     <style>
       .materia-box {
@@ -49,12 +49,22 @@ function renderCrearExamen() {
         padding: 16px;
         margin-bottom: 12px;
         cursor: pointer;
-        transition: transform 0.1s, box-shadow 0.2s;
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Rebote suave */
+        position: relative;
       }
+
+      /* Hover sutil para las no seleccionadas */
       .materia-box:hover {
         border-color: #cbd5e1;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        transform: translateY(-1px);
+      }
+
+      /* ESTADO SELECCIONADO (El efecto que pediste) */
+      .box-selected {
+        transform: scale(1.02); /* Se agranda un 2% */
+        border-color: #3b82f6;  /* Borde azul */
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15); /* Sombra azulada flotante */
+        z-index: 10; /* Se pone por encima de las otras */
+        background-color: #fff;
       }
       
       .normal-checkbox {
@@ -84,7 +94,7 @@ function renderCrearExamen() {
             </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Seleccioná las materias para armar tu simulacro personalizado.
+             Seleccioná las materias para armar tu simulacro.
           </p>
         </div>
         
@@ -126,6 +136,7 @@ function renderCrearExamen() {
     </div>
   `;
   
+  // Ejecutamos una vez al inicio para que las que están "checked" por defecto se levanten
   updateMaxPreguntas();
 }
 
@@ -134,7 +145,6 @@ function renderCrearExamen() {
    ========================================================== */
 
 function mostrarInfoExamen() {
-    // Opción A: Profesional
     alert("ℹ️ MODO EXAMEN\n\nEste modo te permite simular las condiciones reales de evaluación. Seleccioná las materias que quieras integrar, definí la extensión del examen y entrená tu agilidad mental con preguntas aleatorias y cronómetro activo.");
 }
 
@@ -145,9 +155,23 @@ function toggleGlobalSelection(state) {
 }
 
 function updateMaxPreguntas() {
-  const allCheckboxes = Array.from(document.querySelectorAll(".mk-mat"));
-  const checkedBoxes = allCheckboxes.filter(c => c.checked);
+  const labels = document.querySelectorAll(".materia-box");
+  const allCheckboxes = [];
+  const checkedBoxes = [];
   
+  // Recorremos para actualizar clases visuales y contar
+  labels.forEach(lbl => {
+      const chk = lbl.querySelector("input");
+      allCheckboxes.push(chk);
+      
+      if (chk.checked) {
+          lbl.classList.add("box-selected"); // 🔥 AGREGAMOS EL EFECTO POP
+          checkedBoxes.push(chk);
+      } else {
+          lbl.classList.remove("box-selected"); // QUITAMOS EL EFECTO
+      }
+  });
+
   const totalItems = allCheckboxes.length;
   const selectedCount = checkedBoxes.length;
 
@@ -180,8 +204,6 @@ function updateMaxPreguntas() {
   
   if (input) {
       input.max = poolSize;
-      // Si el valor actual supera el máximo real, lo bajamos. 
-      // Si es 100 (default) y hay menos de 100, se ajusta solo.
       if (parseInt(input.value) > poolSize) input.value = poolSize;
       if (poolSize === 0) input.value = 0;
   }
