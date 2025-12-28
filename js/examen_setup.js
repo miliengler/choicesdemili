@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro de Examen (Footer Gris Transparente)
+   🎯 MEbank 3.0 – Simulacro (Con Pop Uniforme)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,7 +22,7 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista de materias (Cajones individuales)
+  // Generamos la lista
   const lista = materias.map(m => `
     <label class="materia-box" onclick="updateMaxPreguntas()">
       
@@ -38,7 +38,7 @@ function renderCrearExamen() {
     </label>
   `).join("");
 
-  // Estilos CSS
+  // Estilos CSS (Con el Fix para Móvil)
   const styles = `
     <style>
       .materia-box {
@@ -51,61 +51,54 @@ function renderCrearExamen() {
         cursor: pointer;
         transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         position: relative;
+        /* Evita el highlight azul nativo en Android/iOS al tocar */
+        -webkit-tap-highlight-color: transparent; 
       }
-      .materia-box:hover {
-        border-color: #cbd5e1;
+
+      /* Solo aplicamos hover en computadoras (donde hay mouse real) */
+      /* Esto evita que en el celular el último tocado quede "pegado" con estilo diferente */
+      @media (hover: hover) {
+        .materia-box:hover {
+          border-color: #cbd5e1;
+        }
       }
+
+      /* ESTADO SELECCIONADO (Uniforme para todos) */
       .box-selected {
         transform: scale(1.02);
-        border-color: #3b82f6;
+        border-color: #3b82f6 !important; /* Forzamos azul */
         box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
         z-index: 10;
         background-color: #fff;
       }
+      
       .normal-checkbox {
         width: 18px; height: 18px; cursor: pointer;
         accent-color: #3b82f6;
       }
+      
       .ctrl-link {
          font-size: 14px; font-weight: 600; cursor: pointer; transition: color 0.2s;
       }
       .ctrl-active { color: #1e3a8a; }
       .ctrl-inactive { color: #cbd5e1; cursor: default; pointer-events: none; }
       
-      /* Estilo botón estilo "Outline" (Como Iniciar Práctica) */
       .btn-outline-blue {
-        background: white;
-        border: 1px solid #3b82f6;
-        color: #1d4ed8;
-        font-weight: 700;
-        padding: 10px 20px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: all 0.2s;
-        box-shadow: 0 2px 5px rgba(59, 130, 246, 0.1);
+        background: white; border: 1px solid #3b82f6; color: #1d4ed8;
+        font-weight: 700; padding: 10px 20px; border-radius: 8px; cursor: pointer;
+        font-size: 1rem; transition: all 0.2s; box-shadow: 0 2px 5px rgba(59, 130, 246, 0.1);
       }
       .btn-outline-blue:hover {
-        background: #eff6ff;
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+        background: #eff6ff; transform: translateY(-1px); box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
       }
 
-      /* Estilo botón "Mi Progreso" (Grisáceo) */
       .btn-outline-gray {
-        background: white;
-        border: 1px solid #cbd5e1;
-        color: #475569;
-        font-weight: 600;
-        padding: 10px 15px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-size: 0.95rem;
-        transition: background 0.2s;
+        background: white; border: 1px solid #cbd5e1; color: #475569;
+        font-weight: 600; padding: 10px 15px; border-radius: 8px; cursor: pointer;
+        font-size: 0.95rem; transition: background 0.2s;
       }
       .btn-outline-gray:hover {
-        background: #f1f5f9;
-        color: #1e293b;
+        background: #f1f5f9; color: #1e293b;
       }
     </style>
   `;
@@ -177,7 +170,6 @@ function renderCrearExamen() {
     </div>
   `;
   
-  // Ejecutar lógica inicial
   updateMaxPreguntas();
 }
 
@@ -200,16 +192,16 @@ function updateMaxPreguntas() {
   const allCheckboxes = [];
   const checkedBoxes = [];
   
-  // Recorremos para actualizar clases visuales y contar
+  // 🔄 LOOP VISUAL: Actualiza CADA fila según su checkbox
   labels.forEach(lbl => {
       const chk = lbl.querySelector("input");
       allCheckboxes.push(chk);
       
       if (chk.checked) {
-          lbl.classList.add("box-selected");
+          lbl.classList.add("box-selected"); // Se agranda si está checked
           checkedBoxes.push(chk);
       } else {
-          lbl.classList.remove("box-selected");
+          lbl.classList.remove("box-selected"); // Vuelve a normal si no
       }
   });
 
