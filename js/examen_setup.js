@@ -1,11 +1,11 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Crear Examen (Estética Unificada + Checkbox)
+   🎯 MEbank 3.0 – Crear Examen (Estética Refinada)
    ========================================================== */
 
 function renderCrearExamen() {
   const app = document.getElementById("app");
 
-  // 1. CÁLCULO DE TOTALES (Soporte Arrays)
+  // 1. CÁLCULO DE TOTALES
   const materias = BANK.subjects.map(s => {
     const total = BANK.questions.filter(q => {
         if (Array.isArray(q.materia)) return q.materia.includes(s.slug);
@@ -22,45 +22,44 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista (Estilo idéntico a Práctica, pero con Checkbox a la derecha)
+  // Generamos la lista de materias
+  // Nota: Quitamos la clase "big-checkbox" y el estilo de fila activa.
   const lista = materias.map(m => `
     <label class="materia-row" onclick="updateMaxPreguntas()">
       
       <div style="flex:1;">
-        <div style="font-weight:700; font-size:16px; color:#1e293b; margin-bottom:2px;">${m.name}</div>
-        <div style="font-size:12px; color:#64748b;">${m.total} preguntas disponibles</div>
+        <div style="font-weight:600; font-size:15px; color:#334155; margin-bottom:2px;">${m.name}</div>
+        <div style="font-size:12px; color:#94a3b8;">${m.total} preguntas</div>
       </div>
 
-      <div style="display:flex; align-items:center; gap:10px;">
-        <input type="checkbox" class="mk-mat big-checkbox" value="${m.slug}" checked>
+      <div style="display:flex; align-items:center;">
+        <input type="checkbox" class="mk-mat normal-checkbox" value="${m.slug}" checked>
       </div>
 
     </label>
   `).join("");
 
-  // Estilos específicos inyectados (para no tocar global css)
+  // Estilos CSS inyectados
   const styles = `
     <style>
       .materia-row {
         display: flex; justify-content: space-between; align-items: center;
-        border: 1px solid #e2e8f0; border-radius: 10px;
-        padding: 16px; margin-bottom: 12px;
+        border-bottom: 1px solid #f1f5f9;
+        padding: 12px 5px;
         background: white; cursor: pointer;
-        transition: all 0.2s ease;
       }
-      .materia-row:hover {
-        border-color: #cbd5e1; box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+      /* Eliminamos el cambio de color de fondo al seleccionar */
+      
+      .normal-checkbox {
+        width: 18px; height: 18px; cursor: pointer;
+        accent-color: #3b82f6;
       }
-      /* Checkbox Gigante Custom */
-      .big-checkbox {
-        width: 24px; height: 24px; cursor: pointer;
-        accent-color: #3b82f6; /* Azul MEbank */
-        transform: scale(1.2);
+      
+      .ctrl-link {
+         font-size: 14px; font-weight: 600; cursor: pointer; transition: color 0.2s;
       }
-      /* Cuando está seleccionado, le damos un borde azulito suave a la fila */
-      .materia-row:has(input:checked) {
-        border-color: #bfdbfe; background: #eff6ff;
-      }
+      .ctrl-active { color: #1e3a8a; }
+      .ctrl-inactive { color: #cbd5e1; cursor: default; pointer-events: none; }
     </style>
   `;
 
@@ -78,7 +77,7 @@ function renderCrearExamen() {
             </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Seleccioná las materias que querés incluir en tu simulacro.
+             Personalizá tu simulacro seleccionando las materias.
           </p>
         </div>
         
@@ -87,12 +86,8 @@ function renderCrearExamen() {
         </button>
       </div>
 
-      <div style="display:flex; justify-content:flex-end; margin-bottom:15px;">
-         <label style="font-size:14px; color:#1e3a8a; cursor:pointer; font-weight:700; display:flex; align-items:center; gap:8px;">
-            SELECCIONAR TODOS
-            <input type="checkbox" id="chk-all" checked onchange="toggleSelectAll(this)" style="transform:scale(1.2);">
-         </label>
-      </div>
+      <div id="global-controls" style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:10px; padding-right:5px;">
+         </div>
 
       <div style="margin-bottom:30px;">
         ${lista}
@@ -102,7 +97,7 @@ function renderCrearExamen() {
         
         <div style="display:flex; align-items:center; gap:10px;">
           <div style="text-align:right;">
-             <div style="font-size:12px; color:#64748b; font-weight:600;">PREGUNTAS</div>
+             <div style="font-size:11px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
              <div id="mk-max-hint" style="font-size:11px; color:#94a3b8;">(Max: ${totalAll})</div>
           </div>
           <input id="mk-total" type="number" min="1" value="50" 
@@ -124,6 +119,7 @@ function renderCrearExamen() {
     </div>
   `;
   
+  // Inicializamos para pintar los controles correctamente
   updateMaxPreguntas();
 }
 
@@ -132,36 +128,48 @@ function renderCrearExamen() {
    ========================================================== */
 
 function mostrarInfoExamen() {
-    alert("ℹ️ MODO CREADOR\n\n1. Marcá las materias que te interesan.\n2. Elegí cuántas preguntas responder abajo.\n3. ¡Dale a comenzar! El sistema mezclará todo al azar.");
+    alert("ℹ️ MODO CREADOR\n\nArmá tu propia práctica mezclando preguntas de las materias que elijas.");
 }
 
-function toggleSelectAll(source) {
+// Función maestra para marcar/desmarcar
+function toggleGlobalSelection(state) {
     const checkboxes = document.querySelectorAll('.mk-mat');
-    checkboxes.forEach(chk => chk.checked = source.checked);
+    checkboxes.forEach(chk => chk.checked = state);
     updateMaxPreguntas();
 }
 
+// Actualiza contadores y renderiza los controles de texto (Marcar/Desmarcar)
 function updateMaxPreguntas() {
-  const checks = Array.from(document.querySelectorAll(".mk-mat"))
-    .filter(c => c.checked)
-    .map(c => c.value);
+  const allCheckboxes = Array.from(document.querySelectorAll(".mk-mat"));
+  const checkedBoxes = allCheckboxes.filter(c => c.checked);
+  
+  const totalItems = allCheckboxes.length;
+  const selectedCount = checkedBoxes.length;
 
-  // Sincronizar checkbox "Todos"
-  const allCheckboxes = document.querySelectorAll(".mk-mat");
-  const chkAll = document.getElementById("chk-all");
-  if(chkAll) {
-      if(checks.length === 0) chkAll.checked = false;
-      else if(checks.length === allCheckboxes.length) chkAll.checked = true;
-      else chkAll.indeterminate = true;
+  // 1. Renderizar controles Marcar | Desmarcar
+  const container = document.getElementById("global-controls");
+  if (container) {
+      const allSelected = selectedCount === totalItems;
+      const noneSelected = selectedCount === 0;
+
+      container.innerHTML = `
+        <span class="ctrl-link ${allSelected ? 'ctrl-inactive' : 'ctrl-active'}" 
+              onclick="toggleGlobalSelection(true)">Marcar todos</span>
+        <span style="color:#e2e8f0; margin:0 8px;">|</span>
+        <span class="ctrl-link ${noneSelected ? 'ctrl-inactive' : 'ctrl-active'}" 
+              onclick="toggleGlobalSelection(false)">Desmarcar todos</span>
+      `;
   }
 
-  // Contar preguntas (soporte arrays)
+  // 2. Calcular preguntas disponibles (Soporte Arrays)
+  const checksValues = checkedBoxes.map(c => c.value);
   const poolSize = BANK.questions.filter(q => {
       const mat = q.materia;
-      if (Array.isArray(mat)) return mat.some(m => checks.includes(m));
-      return checks.includes(mat);
+      if (Array.isArray(mat)) return mat.some(m => checksValues.includes(m));
+      return checksValues.includes(mat);
   }).length;
 
+  // 3. Actualizar Inputs
   const input = document.getElementById("mk-total");
   const hint = document.getElementById("mk-max-hint");
   
