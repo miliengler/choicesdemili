@@ -71,6 +71,20 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
+  // --- 🏆 NUEVA LÓGICA DE INSIGNIA OFICIAL ---
+  let badgeHTML = "";
+  // Si la pregunta tiene el campo 'examen' o 'oficial: true'
+  if (q.examen || q.oficial) {
+      const nombreExamen = q.examen || "Examen Oficial";
+      const anioExamen = q.anio ? `(${q.anio})` : "";
+      badgeHTML = `
+        <div class="badge-oficial">
+           <span>⭐</span> ${nombreExamen} ${anioExamen}
+        </div>
+      `;
+  }
+  // -------------------------------------------
+
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
@@ -89,7 +103,6 @@ function renderPregunta() {
     `;
   }).join("");
 
-  // --- HTML PRINCIPAL (Incluye Modal de Imagen Oculto) ---
   app.innerHTML = `
     <div id="imgModal" class="img-modal" onclick="closeImgModal()">
       <span class="img-modal-close">&times;</span>
@@ -109,6 +122,8 @@ function renderPregunta() {
             </div>
             <div class="q-meta"><span class="q-materia">${materiaNombre}</span></div>
           </div>
+
+          ${badgeHTML}
 
           <div class="q-enunciado">${q.enunciado}</div>
           
