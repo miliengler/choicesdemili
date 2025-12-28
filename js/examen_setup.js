@@ -1,12 +1,11 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Modo Examen (Minimalista + Funcional)
+   🎯 MEbank 3.0 – Crear Examen (Estética Unificada + Checkbox)
    ========================================================== */
 
 function renderCrearExamen() {
-
   const app = document.getElementById("app");
 
-  // 1. CÁLCULO DE TOTALES (Corregido para Arrays)
+  // 1. CÁLCULO DE TOTALES (Soporte Arrays)
   const materias = BANK.subjects.map(s => {
     const total = BANK.questions.filter(q => {
         if (Array.isArray(q.materia)) return q.materia.includes(s.slug);
@@ -15,84 +14,125 @@ function renderCrearExamen() {
     return { ...s, total };
   }).filter(m => m.total > 0);
 
-  // Orden alfabético limpio
+  // Orden alfabético
   materias.sort((a, b) =>
     a.name.replace(/[^\p{L}\p{N} ]/gu, "")
       .localeCompare(b.name.replace(/[^\p{L}\p{N} ]/gu, ""), "es", { sensitivity: "base" })
   );
 
-  // Generamos la lista (Tu diseño original)
+  const totalAll = BANK.questions.length; 
+
+  // Generamos la lista (Estilo idéntico a Práctica, pero con Checkbox a la derecha)
   const lista = materias.map(m => `
-    <label style="display:flex;justify-content:space-between; align-items:center;
-                  padding:8px 0; border-bottom:1px solid #e5e7eb; cursor:pointer;">
-      <span style="display:flex; align-items:center;">
-        <input type="checkbox" class="mk-mat" value="${m.slug}"
-               onchange="updateMaxPreguntas()" checked style="margin-right:8px;">
-        ${m.name}
-      </span>
-      <span style="color:#64748b;font-size:13px;">(${m.total})</span>
+    <label class="materia-row" onclick="updateMaxPreguntas()">
+      
+      <div style="flex:1;">
+        <div style="font-weight:700; font-size:16px; color:#1e293b; margin-bottom:2px;">${m.name}</div>
+        <div style="font-size:12px; color:#64748b;">${m.total} preguntas disponibles</div>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:10px;">
+        <input type="checkbox" class="mk-mat big-checkbox" value="${m.slug}" checked>
+      </div>
+
     </label>
   `).join("");
 
-  app.innerHTML = `
-    <div class="card fade" style="max-width:800px; margin:20px auto; padding:20px;">
+  // Estilos específicos inyectados (para no tocar global css)
+  const styles = `
+    <style>
+      .materia-row {
+        display: flex; justify-content: space-between; align-items: center;
+        border: 1px solid #e2e8f0; border-radius: 10px;
+        padding: 16px; margin-bottom: 12px;
+        background: white; cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .materia-row:hover {
+        border-color: #cbd5e1; box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+      }
+      /* Checkbox Gigante Custom */
+      .big-checkbox {
+        width: 24px; height: 24px; cursor: pointer;
+        accent-color: #3b82f6; /* Azul MEbank */
+        transform: scale(1.2);
+      }
+      /* Cuando está seleccionado, le damos un borde azulito suave a la fila */
+      .materia-row:has(input:checked) {
+        border-color: #bfdbfe; background: #eff6ff;
+      }
+    </style>
+  `;
 
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:2px solid #f1f5f9; padding-bottom:10px;">
-          <div style="display:flex; align-items:center; gap:8px;">
-            <h2 style="margin:0;">🎯 Crear tu examen</h2>
-            <button class="btn-small btn-ghost" onclick="mostrarInfoExamen()" title="Ayuda" 
-                    style="width:30px; height:30px; padding:0; display:flex; align-items:center; justify-content:center; border-radius:50%;">
-               ?
+  app.innerHTML = `
+    ${styles}
+    <div id="choice-shell" class="card fade" style="max-width:900px; margin:auto;">
+      
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
+        <div style="flex:1;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <h2 style="margin:0;">🎯 Crear Examen</h2>
+            <button onclick="mostrarInfoExamen()" 
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+              ?
             </button>
           </div>
-          <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+          <p style="color:#64748b; margin:0; font-size:14px;">
+             Seleccioná las materias que querés incluir en tu simulacro.
+          </p>
+        </div>
+        
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
+           ⬅ Volver
+        </button>
       </div>
 
-      <div style="text-align:right; margin-bottom:10px;">
-         <label style="font-size:14px; color:#1e3a8a; cursor:pointer; font-weight:700; display:inline-flex; align-items:center; gap:6px;">
-            <input type="checkbox" id="chk-all" checked onchange="toggleSelectAll(this)">
+      <div style="display:flex; justify-content:flex-end; margin-bottom:15px;">
+         <label style="font-size:14px; color:#1e3a8a; cursor:pointer; font-weight:700; display:flex; align-items:center; gap:8px;">
             SELECCIONAR TODOS
+            <input type="checkbox" id="chk-all" checked onchange="toggleSelectAll(this)" style="transform:scale(1.2);">
          </label>
       </div>
 
-      <div style="margin-bottom:20px;">
+      <div style="margin-bottom:30px;">
         ${lista}
       </div>
 
-      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-top:14px; background:#f8fafc; padding:15px; border-radius:8px;">
-
-        <div>
-          <label for="mk-total" style="font-size:14px; color:#64748b; font-weight:600;">Número de preguntas</label><br>
-          <div style="display:flex; align-items:center; gap:5px; margin-top:4px;">
-             <input id="mk-total" type="number" min="1" value="50"
-                 style="width:90px; padding:6px; border-radius:6px; border:1px solid #cbd5e1; text-align:center;">
-             <span id="mk-max-hint" style="font-size:12px; color:#94a3b8;">(Máx: ...)</span>
+      <div style="position:sticky; bottom:20px; background:white; padding:15px; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border:1px solid #e2e8f0; display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
+        
+        <div style="display:flex; align-items:center; gap:10px;">
+          <div style="text-align:right;">
+             <div style="font-size:12px; color:#64748b; font-weight:600;">PREGUNTAS</div>
+             <div id="mk-max-hint" style="font-size:11px; color:#94a3b8;">(Max: ${totalAll})</div>
           </div>
+          <input id="mk-total" type="number" min="1" value="50" 
+                 style="width:80px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:18px; font-weight:bold; text-align:center; color:#334155;">
         </div>
 
-        <div style="display:flex; align-items:center; gap:8px;">
-          <input type="checkbox" id="mk-timer" checked>
-          <label for="mk-timer" style="font-size:14px; cursor:pointer;">⏱ Activar cronómetro</label>
-        </div>
+        <label style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+          <input type="checkbox" id="mk-timer" checked style="width:18px; height:18px;">
+          <span style="font-size:14px; color:#334155; font-weight:600;">Cronómetro</span>
+        </label>
+
+        <button class="btn-main" style="padding:10px 25px; font-size:1.1rem; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);" 
+                onclick="startExamenPersonalizado()">
+          ▶ COMENZAR
+        </button>
 
       </div>
 
-      <div style="margin-top:24px; text-align:center;">
-        <button class="btn-main" style="width:100%; max-width:300px; padding:12px;" onclick="startExamenPersonalizado()">▶ Comenzar examen</button>
-      </div>
     </div>
   `;
-
-  // Calcular máximo inicial
+  
   updateMaxPreguntas();
 }
 
 /* ==========================================================
-   ⚙️ LÓGICA
+   ⚙️ LÓGICA AUXILIAR
    ========================================================== */
 
 function mostrarInfoExamen() {
-    alert("ℹ️ MODO CREADOR\n\nElige las materias y la cantidad de preguntas. El sistema generará un examen único mezclando esos temas al azar.");
+    alert("ℹ️ MODO CREADOR\n\n1. Marcá las materias que te interesan.\n2. Elegí cuántas preguntas responder abajo.\n3. ¡Dale a comenzar! El sistema mezclará todo al azar.");
 }
 
 function toggleSelectAll(source) {
@@ -115,7 +155,7 @@ function updateMaxPreguntas() {
       else chkAll.indeterminate = true;
   }
 
-  // Contar preguntas únicas (soporte arrays)
+  // Contar preguntas (soporte arrays)
   const poolSize = BANK.questions.filter(q => {
       const mat = q.materia;
       if (Array.isArray(mat)) return mat.some(m => checks.includes(m));
@@ -124,7 +164,7 @@ function updateMaxPreguntas() {
 
   const input = document.getElementById("mk-total");
   const hint = document.getElementById("mk-max-hint");
-
+  
   if (input) {
       input.max = poolSize;
       if (parseInt(input.value) > poolSize) input.value = poolSize;
@@ -132,7 +172,7 @@ function updateMaxPreguntas() {
   }
   
   if (hint) {
-      hint.textContent = `(Disp: ${poolSize})`;
+      hint.textContent = `(Max: ${poolSize})`;
   }
 }
 
@@ -142,14 +182,14 @@ function startExamenPersonalizado() {
     .map(c => c.value);
 
   if (!checks.length) {
-    alert("Seleccioná al menos una materia.");
+    alert("⚠ Seleccioná al menos una materia.");
     return;
   }
 
-  const total = parseInt(document.getElementById("mk-total").value) || 1;
+  const totalInput = document.getElementById("mk-total");
+  const total = parseInt(totalInput.value) || 10;
   const usarTimer = document.getElementById("mk-timer").checked;
 
-  // Construir pool (Soporte Arrays)
   let pool = BANK.questions.filter(q => {
       const mat = q.materia;
       if (Array.isArray(mat)) return mat.some(m => checks.includes(m));
@@ -161,11 +201,10 @@ function startExamenPersonalizado() {
     return;
   }
 
-  // Aleatorizar
   pool = pool.sort(() => Math.random() - 0.5).slice(0, total);
 
   iniciarResolucion({
-    modo: "personalizado", // IMPORTANTE: Esto activa las insignias en Resolver.js
+    modo: "personalizado",
     preguntas: pool,
     usarTimer,
     permitirRetroceso: true,
