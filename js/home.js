@@ -54,7 +54,7 @@ function renderHome() {
       <div class="menu-buttons">
         <button class="btn-main menu-btn" onclick="goChoice()">📚 Práctica por materia</button>
         <button class="btn-main menu-btn" onclick="goExamenes()">📝 Exámenes anteriores</button>
-        <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Crear examen</button>
+        <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de exámen</button>
         <button class="btn-main menu-btn" onclick="goStats()">📊 Estadísticas</button>
         <button class="btn-main menu-btn" onclick="goNotas()">📔 Mis notas</button>
       </div>
