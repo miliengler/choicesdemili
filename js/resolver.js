@@ -48,6 +48,9 @@ function iniciarResolucion(config) {
 /* ==========================================================
    🧩 RENDER PRINCIPAL
    ========================================================== */
+/* ==========================================================
+   🧩 RENDER PRINCIPAL (Con Badge "PREGUNTA TOMADA" Mejorado)
+   ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
   const q = CURRENT.list[CURRENT.i];
@@ -71,19 +74,33 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  // --- 🏆 NUEVA LÓGICA DE INSIGNIA OFICIAL ---
+  // --- 🏆 INSIGNIA "PREGUNTA TOMADA" ---
   let badgeHTML = "";
-  // Si la pregunta tiene el campo 'examen' o 'oficial: true'
-  if (q.examen || q.oficial) {
-      const nombreExamen = q.examen || "Examen Oficial";
-      const anioExamen = q.anio ? `(${q.anio})` : "";
+  
+  if (q.oficial === true) {
+      // 1. Limpiamos el nombre del examen (quita guiones bajos, pone mayúsculas)
+      let nombreExamen = q.examen || "Examen Oficial";
+      
+      // Truco: Si el nombre parece un ID (tiene guiones bajos), lo formateamos lindo
+      if (nombreExamen.includes("_")) {
+          nombreExamen = nombreExamen.replace(/_/g, " "); // Quita _
+          // Pone Mayúscula En Cada Palabra
+          nombreExamen = nombreExamen.replace(/\b\w/g, l => l.toUpperCase()); 
+      }
+
+      // 2. Armamos el texto (Nombre + Año)
+      const detalle = q.anio ? `(${nombreExamen} ${q.anio})` : `(${nombreExamen})`;
+
+      // 3. HTML Final
       badgeHTML = `
         <div class="badge-oficial">
-           <span>⭐</span> ${nombreExamen} ${anioExamen}
+           <span style="font-size:1.1em; margin-right:4px;">⭐️</span> 
+           PREGUNTA TOMADA 
+           <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span>
         </div>
       `;
   }
-  // -------------------------------------------
+  // ----------------------------------------------------
 
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
