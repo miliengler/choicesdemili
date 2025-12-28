@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Crear Examen (Estética Refinada)
+   🎯 MEbank 3.0 – Crear Examen (Cajones Individuales + Sin Pintar)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,18 +22,17 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista de materias
-  // Nota: Quitamos la clase "big-checkbox" y el estilo de fila activa.
+  // Generamos la lista de materias (CADA UNA EN SU "CAJÓN")
   const lista = materias.map(m => `
-    <label class="materia-row" onclick="updateMaxPreguntas()">
+    <label class="materia-box" onclick="updateMaxPreguntas()">
       
       <div style="flex:1;">
-        <div style="font-weight:600; font-size:15px; color:#334155; margin-bottom:2px;">${m.name}</div>
-        <div style="font-size:12px; color:#94a3b8;">${m.total} preguntas</div>
+        <div style="font-weight:700; font-size:16px; color:#1e293b; margin-bottom:4px;">${m.name}</div>
+        <div style="font-size:12px; color:#64748b;">${m.total} preguntas disponibles</div>
       </div>
 
-      <div style="display:flex; align-items:center;">
-        <input type="checkbox" class="mk-mat normal-checkbox" value="${m.slug}" checked>
+      <div style="display:flex; align-items:center; padding-left:15px; border-left:1px solid #f1f5f9;">
+        <input type="checkbox" class="mk-mat" value="${m.slug}" checked>
       </div>
 
     </label>
@@ -42,16 +41,30 @@ function renderCrearExamen() {
   // Estilos CSS inyectados
   const styles = `
     <style>
-      .materia-row {
+      /* Estilo de "Cajón" (Box) individual */
+      .materia-box {
         display: flex; justify-content: space-between; align-items: center;
-        border-bottom: 1px solid #f1f5f9;
-        padding: 12px 5px;
-        background: white; cursor: pointer;
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 16px;
+        margin-bottom: 12px; /* Separación entre cajones */
+        cursor: pointer;
+        transition: transform 0.1s, box-shadow 0.2s;
       }
-      /* Eliminamos el cambio de color de fondo al seleccionar */
-      
-      .normal-checkbox {
-        width: 18px; height: 18px; cursor: pointer;
+
+      /* Hover suave (levanta un poquito) */
+      .materia-box:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        transform: translateY(-1px);
+      }
+
+      /* IMPORTANTE: No cambiamos el background al estar checked */
+      /* Solo el checkbox se ve marcado */
+
+      .mk-mat {
+        width: 20px; height: 20px; cursor: pointer;
         accent-color: #3b82f6;
       }
       
@@ -77,7 +90,7 @@ function renderCrearExamen() {
             </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">
-             Personalizá tu simulacro seleccionando las materias.
+             Seleccioná las materias que querés incluir.
           </p>
         </div>
         
@@ -86,14 +99,14 @@ function renderCrearExamen() {
         </button>
       </div>
 
-      <div id="global-controls" style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:10px; padding-right:5px;">
+      <div id="global-controls" style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:15px; padding-right:5px;">
          </div>
 
       <div style="margin-bottom:30px;">
         ${lista}
       </div>
 
-      <div style="position:sticky; bottom:20px; background:white; padding:15px; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border:1px solid #e2e8f0; display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
+      <div style="position:sticky; bottom:20px; background:white; padding:15px; border-radius:12px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border:1px solid #e2e8f0; display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
         
         <div style="display:flex; align-items:center; gap:10px;">
           <div style="text-align:right;">
@@ -119,7 +132,6 @@ function renderCrearExamen() {
     </div>
   `;
   
-  // Inicializamos para pintar los controles correctamente
   updateMaxPreguntas();
 }
 
@@ -131,14 +143,12 @@ function mostrarInfoExamen() {
     alert("ℹ️ MODO CREADOR\n\nArmá tu propia práctica mezclando preguntas de las materias que elijas.");
 }
 
-// Función maestra para marcar/desmarcar
 function toggleGlobalSelection(state) {
     const checkboxes = document.querySelectorAll('.mk-mat');
     checkboxes.forEach(chk => chk.checked = state);
     updateMaxPreguntas();
 }
 
-// Actualiza contadores y renderiza los controles de texto (Marcar/Desmarcar)
 function updateMaxPreguntas() {
   const allCheckboxes = Array.from(document.querySelectorAll(".mk-mat"));
   const checkedBoxes = allCheckboxes.filter(c => c.checked);
@@ -161,7 +171,7 @@ function updateMaxPreguntas() {
       `;
   }
 
-  // 2. Calcular preguntas disponibles (Soporte Arrays)
+  // 2. Calcular preguntas disponibles
   const checksValues = checkedBoxes.map(c => c.value);
   const poolSize = BANK.questions.filter(q => {
       const mat = q.materia;
