@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Con Soporte Imágenes HD)
+   🎯 MEbank 3.0 – Motor de resolución (Full Optimizado)
    ========================================================== */
 
 let CURRENT = {
@@ -46,7 +46,7 @@ function iniciarResolucion(config) {
 }
 
 /* ==========================================================
-   🧩 RENDER PRINCIPAL (Preparado para respuesta suave)
+   🧩 RENDER PRINCIPAL (Sin Parpadeo)
    ========================================================== */
 function renderPregunta() {
   const app = document.getElementById("app");
@@ -54,8 +54,6 @@ function renderPregunta() {
 
   if (!q) return renderFin();
 
-  // Solo scrolleamos al top si estamos cambiando de pregunta, no al responder
-  // (Esta validación la haremos visualmente al no recargar todo)
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   const total = CURRENT.list.length;
@@ -73,43 +71,63 @@ function renderPregunta() {
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
 
-  // --- INSIGNIA ---
+  // --- 🏆 INSIGNIA "PREGUNTA TOMADA" ---
   let badgeHTML = "";
   const esModoExamen = (CURRENT.modo === "examen" || CURRENT.modo === "reanudar");
 
   if (!esModoExamen && q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
+      
+      // Limpieza de nombre
       if (nombreExamen.includes("_")) {
-          nombreExamen = nombreExamen.replace(/_/g, " ").replace(/\b\w/g, l => l.toUpperCase());
+          nombreExamen = nombreExamen.replace(/_/g, " ");
+          nombreExamen = nombreExamen.replace(/\b\w/g, l => l.toUpperCase());
       }
+
+      // Lógica Anti-Duplicado de Año
       let detalle = "";
       if (q.anio) {
-          detalle = nombreExamen.includes(String(q.anio)) ? `(${nombreExamen})` : `(${nombreExamen} ${q.anio})`;
+          if (nombreExamen.includes(String(q.anio))) {
+              detalle = `(${nombreExamen})`;
+          } else {
+              detalle = `(${nombreExamen} ${q.anio})`;
+          }
       } else {
           detalle = `(${nombreExamen})`;
       }
-      badgeHTML = `<div class="badge-oficial"><span style="font-size:1.1em; margin-right:4px;">⭐️</span> PREGUNTA TOMADA <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span></div>`;
+
+      badgeHTML = `
+        <div class="badge-oficial">
+           <span style="font-size:1.1em; margin-right:4px;">⭐️</span> 
+           PREGUNTA TOMADA 
+           <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span>
+        </div>
+      `;
   }
 
   // --- OPCIONES ---
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
-    // Si ya cargamos la página respondida, pintamos directo
+    let eventHandler = `onclick="answer(${idx})"`;
+
     if (yaRespondio) {
         claseCSS += " q-option-locked"; 
+        eventHandler = ""; // Quitamos click si ya respondió
         if (idx === correctIndex) claseCSS += " option-correct"; 
         else if (idx === userIdx) claseCSS += " option-wrong";   
     }
+
+    // Agregamos ID único para poder pintarlo sin recargar
     return `
-      <label class="${claseCSS}" id="opt-${idx}" onclick="answer(${idx})">
+      <label class="${claseCSS}" id="opt-${idx}" ${eventHandler}>
         <span class="q-option-letter">${letra})</span>
         <span class="q-option-text">${texto}</span>
       </label>
     `;
   }).join("");
 
-  // --- EXPLICACIÓN (Si ya respondió, la mostramos. Si no, dejamos hueco vacío) ---
+  // --- EXPLICACIÓN ---
   let explicacionInicial = "";
   if (yaRespondio && q.explicacion) {
       explicacionInicial = `
@@ -127,8 +145,10 @@ function renderPregunta() {
 
     <button class="btn-mobile-sidebar" onclick="toggleMobileSidebar()">☰ Índice</button>
 
-    <div class="q-layout"> <div class="q-main">
-        <div class="q-card fade"> <div class="q-header">
+    <div class="q-layout">
+      <div class="q-main">
+        <div class="q-card fade">
+          <div class="q-header">
             <div class="q-title">
               <b>${CURRENT.config.titulo || "Práctica"}</b>
               <span class="q-counter">${numero} / ${total}</span>
@@ -137,10 +157,12 @@ function renderPregunta() {
           </div>
 
           ${badgeHTML}
+
           <div class="q-enunciado">${q.enunciado}</div>
+          
           ${q.imagenes ? renderImagenesPregunta(q.imagenes) : ""}
 
-          <div class="q-options" id="options-container">
+          <div class="q-options">
             ${opcionesHTML || `<p class="small">(Sin opciones)</p>`}
           </div>
 
@@ -188,38 +210,59 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   ⚡️ RESPUESTA INSTANTÁNEA (Sin recargar la página)
+   ⚡️ RESPUESTA INSTANTÁNEA (DOM Patching - Sin Recargar)
    ========================================================== */
 function answer(selectedIndex) {
   const q = CURRENT.list[CURRENT.i];
+  if (!q) return;
   
-  // 1. Si ya respondió, no hacemos nada (evita doble click)
+  // 1. Evitar doble respuesta
   if (getRespuestaMarcada(q.id) !== null) return;
 
-  // 2. Guardamos la respuesta en la memoria
-  saveRespuesta(q.id, selectedIndex);
+  // 2. Guardar respuesta (Usamos setRespuestaMarcada, no saveRespuesta)
+  setRespuestaMarcada(q.id, selectedIndex);
 
-  // 3. Calculamos cuál es la correcta
+  // 3. Lógica de corrección
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
-
-  // 4. ACTUALIZACIÓN VISUAL (DOM Patching)
-  // En vez de recargar todo, buscamos los botones y los pintamos
-  const allOptions = document.querySelectorAll(".q-option");
+  const esCorrecta = (correctIndex !== null && selectedIndex === correctIndex);
   
-  allOptions.forEach((el, idx) => {
-      // Bloqueamos todas para que no pueda cambiar
-      el.classList.add("q-option-locked");
-      el.onclick = null; // Quitamos el evento de click
+  CURRENT.session[q.id] = esCorrecta ? "ok" : "bad";
 
-      if (idx === correctIndex) {
-          el.classList.add("option-correct"); // Verde
-      } else if (idx === selectedIndex) {
-          el.classList.add("option-wrong"); // Rojo
-      }
-  });
+  // Guardar progreso global
+  const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
+  if (typeof PROG !== 'undefined') {
+      if (!PROG[mat]) PROG[mat] = {};
+      PROG[mat][q.id] = { status: CURRENT.session[q.id], fecha: Date.now() };
+      if (window.saveProgress) window.saveProgress();
+  }
 
-  // 5. Mostrar la explicación suavemente (si existe)
+  // Guardar stats diarias
+  if (esCorrecta) {
+    const hoy = new Date().toISOString().split('T')[0];
+    const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+    stats[hoy] = (stats[hoy] || 0) + 1;
+    localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
+  }
+
+  // 4. ACTUALIZACIÓN VISUAL SUAVE (Sin recargar toda la página)
+  // Buscamos los botones por su ID o clase y los bloqueamos
+  const container = document.querySelector(".q-options");
+  if (container) {
+      const labels = container.querySelectorAll("label");
+      labels.forEach((el, idx) => {
+          el.classList.add("q-option-locked");
+          el.onclick = null; // Quitamos evento
+          
+          if (idx === correctIndex) {
+              el.classList.add("option-correct"); // Pinta Verde
+          } else if (idx === selectedIndex) {
+              el.classList.add("option-wrong");   // Pinta Rojo
+          }
+      });
+  }
+
+  // 5. Mostrar explicación suavemente
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
@@ -231,16 +274,10 @@ function answer(selectedIndex) {
       }
   }
 
-  // 6. Actualizar el índice lateral (Sidebar) sin recargarlo
-  // Solo actualizamos la celda actual para que se ponga verde/roja
-  const sidebarCell = document.getElementById(`sb-cell-${CURRENT.i}`);
-  if (sidebarCell) {
-      if (selectedIndex === correctIndex) {
-          sidebarCell.classList.add("sb-correct");
-      } else {
-          sidebarCell.classList.add("sb-wrong");
-      }
-  }
+  // 6. Actualizar Sidebar (Solo la celda actual)
+  // Como no tenemos IDs únicos en las celdas del sidebar en el render original,
+  // recargamos solo el sidebar (es imperceptible)
+  refreshSidebarContent();
 }
 
 /* ==========================================================
@@ -249,7 +286,6 @@ function answer(selectedIndex) {
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
   
-  // Renderizamos miniaturas que abren el modal
   return `
     <div class="q-images-container">
        ${imgs.map((src, idx) => `
@@ -262,14 +298,13 @@ function renderImagenesPregunta(imgs) {
   `;
 }
 
-// Funciones globales para el modal (deben estar accesibles desde el HTML)
 window.openImgModal = (src, caption) => {
   const modal = document.getElementById("imgModal");
   const modalImg = document.getElementById("imgInModal");
   const captionText = document.getElementById("imgCaption");
   
   if(modal && modalImg) {
-      modal.style.display = "flex"; // Flex para centrar
+      modal.style.display = "flex";
       modalImg.src = src;
       if(captionText) captionText.innerHTML = caption || "";
   }
@@ -280,7 +315,6 @@ window.closeImgModal = () => {
   if(modal) modal.style.display = "none";
 };
 
-// Cerrar con tecla ESC
 document.addEventListener('keydown', function(event) {
     if (event.key === "Escape") window.closeImgModal();
 });
@@ -327,7 +361,8 @@ function sbPrevPage() {
 }
 
 function refreshSidebarContent() {
-    document.getElementById("sbGrid").innerHTML = renderSidebarCells();
+    const grid = document.getElementById("sbGrid");
+    if(grid) grid.innerHTML = renderSidebarCells();
     paintSidebarPageInfo();
 }
 
