@@ -1,157 +1,440 @@
 /* ==========================================================
-   📒 MEbank 3.0 – Gestor de Notas (Fix Multi-Materia.)
+   📊 ESTADÍSTICAS GLOBALES – Final Corregido
    ========================================================== */
 
-function renderNotas() {
+let STATS_ORDER = "az";
+let statsSearchTerm = "";
+
+function renderStats() {
   const app = document.getElementById("app");
-  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
-  const noteIds = Object.keys(savedNotes);
 
-  if (noteIds.length === 0) {
-    app.innerHTML = `
-      <div class="card fade" style="max-width:600px; margin:auto; text-align:center; padding:40px;">
-        <div style="font-size:40px; margin-bottom:10px;">📝</div>
-        <h3>Mis Notas</h3>
-        <p style="color:#64748b;">Todavía no tomaste ninguna nota.</p>
-        <button class="btn-main" onclick="renderHome()">Volver al inicio</button>
-      </div>
-    `;
-    return;
-  }
+  // --- 1. CÁLCULOS GLOBALES (CORREGIDO) ---
+  let totalPreguntas = 0;
+  // Para evitar contar duplicados si una pregunta tiene 2 materias,
+  // calculamos el total global basándonos en el array de preguntas único.
+  totalPreguntas = BANK.questions.length; 
 
-  // 1. AGRUPAR NOTAS (Lógica Corregida)
-  // Ahora la misma nota se agrega a VARIOS grupos si la pregunta es multi-materia.
-  const grupos = {};
+  let totalRespondidas = 0;
+  let totalCorrectas = 0;
+  let totalIncorrectas = 0;
 
-  noteIds.forEach(id => {
-      const q = BANK.questions.find(item => item.id === id);
-      if (!q) return; 
+  // Recorremos las preguntas directamente para los contadores globales
+  // (Es más preciso que sumar por materias si hay materias compartidas)
+  BANK.questions.forEach(q => {
+      // Buscamos el progreso usando la PRIMERA materia asignada (convención de Bank.js)
+      // O buscamos en todas las materias donde pueda estar guardada.
+      // Simplificación: Bank.js guarda el progreso bajo la materia principal o "otras".
+      const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+      const prog = PROG[mat] ? PROG[mat][q.id] : null;
 
-      // Convertimos siempre a array: "pediatria" -> ["pediatria"]
-      // Si ya era ["pediatria", "infecto"], se mantiene igual.
-      const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
-
-      materias.forEach(slug => {
-          if (!grupos[slug]) grupos[slug] = [];
-          
-          // Agregamos la nota a este grupo
-          grupos[slug].push({
-              id: id,
-              pregunta: q,
-              nota: savedNotes[id].text,
-              fecha: savedNotes[id].date
-          });
-      });
+      if (prog && (prog.status === "ok" || prog.status === "bad")) {
+          totalRespondidas++;
+          if (prog.status === "ok") totalCorrectas++;
+          if (prog.status === "bad") totalIncorrectas++;
+      }
   });
 
-  // 2. ORDENAR LOS TÍTULOS DE MATERIAS
-  const slugsOrdenados = Object.keys(grupos).sort((a, b) => {
-      const nameA = getMateriaName(a);
-      const nameB = getMateriaName(b);
-      return nameA.localeCompare(nameB);
-  });
+  const totalSinResponder = totalPreguntas - totalRespondidas;
+  const porcentajeProgreso = totalPreguntas > 0 
+    ? Math.round((totalCorrectas / totalPreguntas) * 100) 
+    : 0;
 
-  // 3. GENERAR HTML
-  let htmlGrupos = "";
+  // --- 2. ACTIVIDAD SEMANAL ---
+  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  const today = new Date();
+  let weeklyTotalCorrect = 0;
 
-  slugsOrdenados.forEach(slug => {
-      const notasDelGrupo = grupos[slug];
-      const nombreMateria = getMateriaName(slug);
+  const weekList = Array.from({ length: 7 }).map((_, i) => {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const key = d.toISOString().split('T')[0]; 
+    const count = STATS_DAILY[key] || 0;
+    if(i < 7) weeklyTotalCorrect += count;
 
-      // Renderizamos las tarjetas
-      const cardsHtml = notasDelGrupo.map(item => `
-        <div class="nota-card" onclick="irAPreguntaDesdeNota('${item.id}')">
-           <div style="font-size:12px; color:#94a3b8; margin-bottom:5px; font-weight:600; text-transform:uppercase;">
-              Pregunta #${findQuestionIndex(item.id) + 1}
-           </div>
-           <div style="font-weight:600; color:#1e293b; margin-bottom:10px; font-size:15px; line-height:1.4; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden;">
-              ${item.pregunta.enunciado}
-           </div>
-           <div style="background:#fefce8; border-left:3px solid #facc15; padding:10px; font-size:14px; color:#854d0e; font-style:italic; border-radius:0 4px 4px 0;">
-              "${item.nota}"
-           </div>
-        </div>
-      `).join("");
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
+    const checkIcon = count > 0 ? "✅" : "⬜";
 
-      htmlGrupos += `
-        <div style="margin-bottom:40px;">
-           <h3 style="color:#1e3a8a; border-bottom:2px solid #e2e8f0; padding-bottom:10px; margin-bottom:20px; display:flex; align-items:center; gap:10px;">
-              ${nombreMateria} 
-              <span style="background:#e0f2fe; color:#0284c7; font-size:0.6em; padding:2px 8px; border-radius:12px; vertical-align:middle;">${notasDelGrupo.length}</span>
-           </h3>
-           <div class="notas-grid">
-              ${cardsHtml}
-           </div>
-        </div>
-      `;
-  });
+    return `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
+        <span style="color:#64748b">➤ ${dd}/${mm}</span>
+        <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
+      </div>`;
+  }).reverse().join("");
 
-  // Estilos CSS específicos para esta pantalla
-  const styles = `
-    <style>
-      .notas-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive Grid */
-        gap: 20px;
-      }
-      .nota-card {
-        background: white; 
-        border: 1px solid #e2e8f0; 
-        border-radius: 12px; 
-        padding: 20px;
-        cursor: pointer; 
-        transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-        display: flex; flex-direction: column;
-      }
-      .nota-card:hover {
-        transform: translateY(-3px); 
-        box-shadow: 0 10px 25px rgba(0,0,0,0.06); 
-        border-color: #cbd5e1;
-      }
-    </style>
-  `;
-
+  // --- 3. RENDERIZADO PRINCIPAL ---
   app.innerHTML = `
-    ${styles}
-    <div class="card fade" style="max-width:1100px; margin:20px auto; padding:30px;">
+    <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:30px;">
-         <div style="display:flex; align-items:center; gap:10px;">
-            <div style="font-size:28px;">📒</div>
-            <h2 style="margin:0; font-size:24px; color:#0f172a;">Mis Notas</h2>
-         </div>
-         <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+        <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
+           ⬅ Volver
+        </button>
+      </div>
+      
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
+        </div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
+        </div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
+            <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
+        </div>
       </div>
 
-      ${htmlGrupos}
+      <div style="margin-bottom:10px; text-align:left;">
+        <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+            <span style="color:#334155; font-weight:600;">Progreso total</span>
+            <span style="color:#16a34a; font-weight:bold;">${porcentajeProgreso}%</span>
+        </div>
+        <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
+            <div style="width:${porcentajeProgreso}%; background:#16a34a; height:100%;"></div>
+        </div>
+        <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
+           Preguntas aprendidas sobre el total (${totalPreguntas})
+        </div>
+      </div>
+
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
+      <div style='text-align:left; max-width:300px; margin:auto;'>
+        ${weekList}
+      </div>
+
+      <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
+        ${weeklyTotalCorrect > 0 
+           ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Sigue así!` 
+           : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
+      </div>
+
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <button class='btn-small' style="background:#fff; border-color:#cbd5e1; color:#64748b;" onclick='resetGlobalStats()'>
+          🗑 Reiniciar todo el progreso
+      </button>
+
+    </div>
+
+    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
+      <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
+      
+      <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
+         <input type="text" 
+                placeholder="🔍 Buscar materia..." 
+                value="${statsSearchTerm}"
+                oninput="onSearchStats(this.value)"
+                style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
+         
+         <select onchange="onChangeStatsOrder(this.value)" 
+                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
+             <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
+             <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
+             <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
+         </select>
+      </div>
+      
+      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
+          </ul>
+    </div>
+    
+    <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
+       Vos podés ❤️
     </div>
   `;
+
+  renderMateriasList();
 }
 
-/* --- HELPERS --- */
+/* ==========================================================
+   📋 Lista de Materias (Lógica de filtrado corregida)
+   ========================================================== */
+function renderMateriasList() {
+  const container = document.getElementById("matsList");
+  if (!container) return;
+  
+  let list = [...BANK.subjects];
+  const term = normalize(statsSearchTerm);
 
-function getMateriaName(slug) {
-    if (typeof BANK !== 'undefined' && BANK.subjects) {
-        const m = BANK.subjects.find(s => s.slug === slug);
-        if (m) return m.name;
+  if (term) list = list.filter(m => normalize(m.name).includes(term));
+
+  // --- HELPER PARA CONTAR (CORREGIDO PARA ARRAYS) ---
+  const countMateria = (slug) => {
+      // AQUÍ ESTABA EL ERROR: Usamos .includes() para arrays o comparación directa para strings
+      return BANK.questions.filter(q => {
+          if (Array.isArray(q.materia)) return q.materia.includes(slug);
+          return q.materia === slug;
+      }).length;
+  };
+
+  list.sort((a, b) => {
+    const getPct = (slug) => {
+        const total = countMateria(slug);
+        if (total === 0) return 0;
+        const p = PROG[slug] || {};
+        let ok = 0, bad = 0;
+        Object.values(p).forEach(x => { if(x.status==='ok') ok++; if(x.status==='bad') bad++; });
+        return (ok+bad) > 0 ? (ok/(ok+bad))*100 : 0;
+    };
+
+    if (STATS_ORDER === 'az') {
+        const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
+    } else if (STATS_ORDER === 'progreso') {
+        return getPct(a.slug) - getPct(b.slug);
+    } else {
+        return getPct(b.slug) - getPct(a.slug);
     }
-    // Si no encuentra el nombre, capitaliza el slug
-    return slug.charAt(0).toUpperCase() + slug.slice(1).replace(/-/g, ' ');
-}
+  });
 
-function findQuestionIndex(id) {
-    return BANK.questions.findIndex(q => q.id === id);
-}
+  if (list.length === 0) {
+      container.innerHTML = `<li style="text-align:center; padding:20px; color:#94a3b8;">No se encontraron materias.</li>`;
+      return;
+  }
 
-function irAPreguntaDesdeNota(id) {
-    // Abrimos el visualizador para esa pregunta puntual
-    const q = BANK.questions.find(item => item.id === id);
-    if(!q) return;
+  const listHTML = list.map(m => {
+    // --- USO DEL HELPER CORREGIDO ---
+    const totalM = countMateria(m.slug);
+    
+    if (totalM === 0) return ""; 
 
-    iniciarResolucion({
-        modo: "revision",
-        preguntas: [q],
-        usarTimer: false,
-        titulo: "Revisión de Nota"
+    const datos = PROG[m.slug] || {};
+    let ok = 0, bad = 0;
+    Object.values(datos).forEach(p => {
+      if (p.status === "ok") ok++;
+      if (p.status === "bad") bad++;
     });
+    
+    const resp = ok + bad;
+    const pct = resp > 0 ? Math.round((ok / resp) * 100) : 0;
+    const noresp = totalM - resp;
+    const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
+
+    const insights = getSubjectInsights(m.slug, m.name, datos);
+    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
+
+    const btnBase = "width:100%; min-width:110px; font-size:12px; padding: 6px 10px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155; white-space:nowrap;";
+
+    return `
+      <li style="margin-bottom: 10px;">
+        
+        <div onclick="toggleStatsAcc('${m.slug}')"
+             style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;
+                    padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between;
+                    align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          
+          <div style="font-weight: 600; color: #1e293b; font-size:15px;">
+            ${m.name}
+          </div>
+          <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
+            ${pct}%
+          </div>
+        </div>
+
+        <div id="stat-${m.slug}" style="display:none; padding: 20px; background: #f8fafc; 
+             border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: -2px;">
+          
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+            
+            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:130px;">
+              <div>📦 Total preguntas: <b>${totalM}</b></div>
+              <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
+              <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
+              <div>⚪ Sin responder: <b style="color:#64748b">${noresp}</b></div>
+            </div>
+
+            <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
+
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; max-width: 150px;">
+               
+               <button style="${btnBase} background: #eff6ff; border: 1px solid #93c5fd;"
+                       onclick="goToPracticeFromStats('${m.slug}')">
+                 ▶ Ir a practicar
+               </button>
+               
+               <button style="${btnBase} background: #fefce8; border: 1px solid #fde047;"
+                       onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
+                 📝 Mis notas
+               </button>
+
+               <button style="${btnBase} background: #fef2f2; border: 1px solid #fca5a5;"
+                       onclick="resetSubjectStats('${m.slug}', '${m.name}')">
+                 🗑 Reiniciar materia
+               </button>
+
+            </div>
+          </div>
+
+          ${insights ? `
+            <div style="margin-top:15px; padding-top:15px; border-top:1px dashed #cbd5e1; font-size:13px; color:#475569;">
+               ${insights}
+            </div>
+          ` : ''}
+
+        </div>
+      </li>
+    `;
+  }).join("");
+
+  container.innerHTML = listHTML;
 }
+
+/* ==========================================================
+   🧠 Lógica Inteligente (Insights)
+   ========================================================== */
+function getSubjectInsights(slug, name, datos) {
+    let insights = [];
+    const now = new Date();
+    
+    let lastDate = null;
+    Object.values(datos).forEach(p => {
+        if (p.date) {
+            const d = new Date(p.date);
+            if (!lastDate || d > lastDate) lastDate = d;
+        }
+    });
+
+    if (lastDate) {
+        const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+        if (diffDays > 14) {
+             insights.push(`🕰️ Hace <b>${diffDays} días</b> no practicás esta materia.`);
+        }
+    } else {
+        insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
+    }
+
+    const weakest = getWeakestSubtopic(slug, datos);
+    if (weakest) {
+        const prettyName = formatSubtopicName(weakest.name);
+        insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
+    }
+
+    if (insights.length === 0) return "";
+    return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
+}
+
+function formatSubtopicName(slug) {
+    if(!slug) return "";
+    let text = slug.replace(/[-_]/g, " ");
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function getWeakestSubtopic(mSlug, progData) {
+    const questions = BANK.questions.filter(q => {
+        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        return esMateria && q.submateria; 
+    });
+
+    const groups = {};
+    questions.forEach(q => {
+        const sub = q.submateria;
+        if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
+        groups[sub].total++;
+        if (progData[q.id]) {
+            groups[sub].answered++;
+            if (progData[q.id].status === 'ok') groups[sub].ok++;
+        }
+    });
+
+    let worst = null;
+    let minPct = 101;
+
+    Object.keys(groups).forEach(subName => {
+        const g = groups[subName];
+        if (g.answered >= 3) {
+            const pct = Math.round((g.ok / g.answered) * 100);
+            if (pct < minPct) {
+                minPct = pct;
+                worst = { name: subName, pct: pct };
+            }
+        }
+    });
+    return worst;
+}
+
+function getPieChartStyle(ok, bad, none, total) {
+    if (total === 0) return `background: #e2e8f0;`; 
+    
+    const degOk = (ok / total) * 360;
+    const degBad = (bad / total) * 360;
+
+    return `background: conic-gradient(
+        #16a34a 0deg ${degOk}deg, 
+        #ef4444 ${degOk}deg ${degOk + degBad}deg, 
+        #e2e8f0 ${degOk + degBad}deg 360deg
+    );`;
+}
+
+/* ==========================================================
+   🔧 Navegación y Utilidades
+   ========================================================== */
+function toggleStatsAcc(slug) {
+  const el = document.getElementById(`stat-${slug}`);
+  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
+}
+
+function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
+function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
+
+function goToPracticeFromStats(slug) {
+    if (window.renderChoice) {
+        renderChoice();
+        setTimeout(() => {
+            if(typeof toggleMateriaChoice === 'function') {
+                toggleMateriaChoice(slug);
+            }
+        }, 50);
+    } else {
+        alert("Error: No se encuentra la pantalla de práctica.");
+    }
+}
+
+function checkAndGoToNotes(slug, name) {
+    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    // Filtrar notas que pertenezcan a preguntas de esta materia
+    const idsConNotas = Object.keys(savedNotes);
+    
+    const preguntasMateria = BANK.questions.filter(q => {
+        if(Array.isArray(q.materia)) return q.materia.includes(slug);
+        return q.materia === slug;
+    });
+    
+    const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
+    
+    if(hasNotes) {
+        if(window.renderNotasMain) {
+            renderNotasMain(); 
+        }
+    } else {
+        alert(`Todavía no tenés notas de ${name}!`);
+    }
+}
+
+function resetGlobalStats() {
+  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
+    localStorage.removeItem("MEbank_PROG_v3");
+    localStorage.removeItem("mebank_stats_daily");
+    location.reload();
+  }
+}
+
+function resetSubjectStats(slug, name) {
+    if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
+        if (PROG[slug]) {
+            delete PROG[slug];
+            if(window.saveProgress) window.saveProgress();
+            renderStats();
+        }
+    }
+}
+
+window.renderStats = renderStats;
