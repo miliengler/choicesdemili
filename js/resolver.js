@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Optimizado)
+   🎯 MEbank 3.0 – Motor de resolución (Full Optimizado.)
    ========================================================== */
 
 let CURRENT = {
