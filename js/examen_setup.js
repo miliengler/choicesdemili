@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro (Con Pop Uniforme.)
+   🎯 MEbank 3.0 – Simulacro (Pro + Historial + Validaciones)
    ========================================================== */
 
 function renderCrearExamen() {
@@ -22,7 +22,7 @@ function renderCrearExamen() {
 
   const totalAll = BANK.questions.length; 
 
-  // Generamos la lista
+  // Generamos la lista (SIN CHECKED por defecto)
   const lista = materias.map(m => `
     <label class="materia-box" onclick="updateMaxPreguntas()">
       
@@ -32,54 +32,33 @@ function renderCrearExamen() {
       </div>
 
       <div style="display:flex; align-items:center; padding-left:15px; border-left:1px solid #f1f5f9;">
-        <input type="checkbox" class="mk-mat normal-checkbox" value="${m.slug}" checked>
+        <input type="checkbox" class="mk-mat normal-checkbox" value="${m.slug}">
       </div>
 
     </label>
   `).join("");
 
-  // Estilos CSS (Con el Fix para Móvil)
+  // --- ESTILOS CSS ---
   const styles = `
     <style>
       .materia-box {
         display: flex; justify-content: space-between; align-items: center;
-        background: white;
-        border: 1px solid #e2e8f0;
-        border-radius: 10px;
-        padding: 16px;
-        margin-bottom: 12px;
-        cursor: pointer;
+        background: white; border: 1px solid #e2e8f0; border-radius: 10px;
+        padding: 16px; margin-bottom: 12px; cursor: pointer;
         transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        position: relative;
-        /* Evita el highlight azul nativo en Android/iOS al tocar */
-        -webkit-tap-highlight-color: transparent; 
+        position: relative; -webkit-tap-highlight-color: transparent; 
       }
-
-      /* Solo aplicamos hover en computadoras (donde hay mouse real) */
-      /* Esto evita que en el celular el último tocado quede "pegado" con estilo diferente */
       @media (hover: hover) {
-        .materia-box:hover {
-          border-color: #cbd5e1;
-        }
+        .materia-box:hover { border-color: #cbd5e1; }
       }
-
-      /* ESTADO SELECCIONADO (Uniforme para todos) */
       .box-selected {
-        transform: scale(1.02);
-        border-color: #3b82f6 !important; /* Forzamos azul */
+        transform: scale(1.02); border-color: #3b82f6 !important;
         box-shadow: 0 8px 20px rgba(59, 130, 246, 0.15);
-        z-index: 10;
-        background-color: #fff;
+        z-index: 10; background-color: #fff;
       }
+      .normal-checkbox { width: 18px; height: 18px; cursor: pointer; accent-color: #3b82f6; }
       
-      .normal-checkbox {
-        width: 18px; height: 18px; cursor: pointer;
-        accent-color: #3b82f6;
-      }
-      
-      .ctrl-link {
-         font-size: 14px; font-weight: 600; cursor: pointer; transition: color 0.2s;
-      }
+      .ctrl-link { font-size: 14px; font-weight: 600; cursor: pointer; transition: color 0.2s; }
       .ctrl-active { color: #1e3a8a; }
       .ctrl-inactive { color: #cbd5e1; cursor: default; pointer-events: none; }
       
@@ -91,27 +70,90 @@ function renderCrearExamen() {
       .btn-outline-blue:hover {
         background: #eff6ff; transform: translateY(-1px); box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
       }
+      .btn-disabled {
+         background: #f1f5f9; border: 1px solid #cbd5e1; color: #94a3b8; 
+         cursor: not-allowed; box-shadow: none; transform: none !important;
+      }
 
       .btn-outline-gray {
         background: white; border: 1px solid #cbd5e1; color: #475569;
         font-weight: 600; padding: 10px 15px; border-radius: 8px; cursor: pointer;
         font-size: 0.95rem; transition: background 0.2s;
       }
-      .btn-outline-gray:hover {
-        background: #f1f5f9; color: #1e293b;
+      .btn-outline-gray:hover { background: #f1f5f9; color: #1e293b; }
+
+      /* MODALES */
+      .modal-overlay {
+        display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+        background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;
+        animation: fadeIn 0.2s ease; backdrop-filter: blur(2px);
+      }
+      .modal-content {
+        background:white; padding:25px; border-radius:12px; max-width:500px; width:90%;
+        box-shadow:0 10px 30px rgba(0,0,0,0.2); max-height:85vh; overflow-y:auto;
+      }
+      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+      /* HISTORIAL CARDS */
+      .hist-card {
+        border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px; margin-bottom: 10px;
+        display: flex; gap: 12px; align-items: center;
+      }
+      .score-circle {
+        width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        font-weight: 800; font-size: 13px; color: white; flex-shrink: 0;
       }
     </style>
   `;
 
   app.innerHTML = `
     ${styles}
+
+    <div id="helpModal" class="modal-overlay" onclick="closeModals(event)">
+        <div class="modal-content">
+            <h3 style="margin-top:0; color:#1e293b;">🎯 ¿Cómo funciona?</h3>
+            
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🎲 Simulación Real</div>
+                <div style="font-size:14px; color:#475569;">El sistema seleccionará preguntas al azar <b>únicamente</b> de las materias que marques.</div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏱️ Gestión del Tiempo</div>
+                <div style="font-size:14px; color:#475569;">El cronómetro es opcional. Usalo para entrenar tu velocidad bajo presión.</div>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Historial</div>
+                <div style="font-size:14px; color:#475569;">Tus resultados (puntaje y tiempo) quedarán guardados en "Mi Progreso" para que veas tu evolución.</div>
+            </div>
+
+            <div style="text-align:right;">
+                <button class="btn-main" onclick="document.getElementById('helpModal').style.display='none'" style="width:auto; padding:8px 20px;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="historyModal" class="modal-overlay" onclick="closeModals(event)">
+        <div class="modal-content">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <h3 style="margin:0; color:#1e293b;">📊 Mi Progreso</h3>
+                <button onclick="document.getElementById('historyModal').style.display='none'" style="background:none; border:none; font-size:20px; cursor:pointer;">✕</button>
+            </div>
+            
+            <div id="historyList" style="min-height:100px;">
+                </div>
+        </div>
+    </div>
+
+
     <div id="choice-shell" class="card fade" style="max-width:900px; margin:auto; padding-bottom:0;">
       
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div style="flex:1;">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
             <h2 style="margin:0;">🎯 Simulacro de Examen</h2>
-            <button onclick="mostrarInfoExamen()" 
+            <button onclick="document.getElementById('helpModal').style.display='flex'" 
                     style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
               ?
             </button>
@@ -143,10 +185,14 @@ function renderCrearExamen() {
            <div style="display:flex; align-items:center; gap:8px;">
               <div style="text-align:right;">
                  <div style="font-size:10px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
-                 <div id="mk-max-hint" style="font-size:10px; color:#94a3b8;">(Max: ${totalAll})</div>
+                 <div id="mk-max-hint" style="font-size:10px; color:#94a3b8;">(Max: 0)</div>
               </div>
-              <input id="mk-total" type="number" min="1" value="100" 
+              <input id="mk-total" type="number" min="1" value="100" oninput="calculateTimeEstimate()"
                      style="width:70px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:16px; font-weight:bold; text-align:center; color:#334155;">
+           </div>
+
+           <div id="time-estimate" style="font-size:11px; color:#64748b; font-style:italic; display:none;">
+              ~1h 40m
            </div>
 
            <label style="display:flex; align-items:center; gap:6px; cursor:pointer; padding-left:10px; border-left:1px solid #cbd5e1;">
@@ -156,12 +202,12 @@ function renderCrearExamen() {
         </div>
 
         <div style="display:flex; gap:10px;">
-            <button class="btn-outline-gray" onclick="alert('Próximamente: Historial de simulacros')">
+            <button class="btn-outline-gray" onclick="showHistory()">
                📊 Mi Progreso
             </button>
 
-            <button class="btn-outline-blue" onclick="startExamenPersonalizado()">
-              ▶ Comenzar Simulacro
+            <button id="btn-start-sim" class="btn-outline-blue btn-disabled" onclick="startExamenPersonalizado()">
+              ▶ Comenzar
             </button>
         </div>
 
@@ -170,15 +216,17 @@ function renderCrearExamen() {
     </div>
   `;
   
-  updateMaxPreguntas();
+  updateMaxPreguntas(); // Iniciar estado
 }
 
 /* ==========================================================
-   ⚙️ LÓGICA AUXILIAR
+   ⚙️ LÓGICA DE INTERFAZ Y SELECCIÓN
    ========================================================== */
 
-function mostrarInfoExamen() {
-    alert("ℹ️ MODO EXAMEN\n\nEste modo te permite simular las condiciones reales de evaluación. Seleccioná las materias que quieras integrar, definí la extensión del examen y entrená tu agilidad mental con preguntas aleatorias y cronómetro activo.");
+function closeModals(e) {
+    if (e.target.classList.contains('modal-overlay')) {
+        e.target.style.display = 'none';
+    }
 }
 
 function toggleGlobalSelection(state) {
@@ -192,23 +240,22 @@ function updateMaxPreguntas() {
   const allCheckboxes = [];
   const checkedBoxes = [];
   
-  // 🔄 LOOP VISUAL: Actualiza CADA fila según su checkbox
   labels.forEach(lbl => {
       const chk = lbl.querySelector("input");
       allCheckboxes.push(chk);
       
       if (chk.checked) {
-          lbl.classList.add("box-selected"); // Se agranda si está checked
+          lbl.classList.add("box-selected");
           checkedBoxes.push(chk);
       } else {
-          lbl.classList.remove("box-selected"); // Vuelve a normal si no
+          lbl.classList.remove("box-selected");
       }
   });
 
   const totalItems = allCheckboxes.length;
   const selectedCount = checkedBoxes.length;
 
-  // Renderizar controles de texto
+  // 1. Controles Texto
   const container = document.getElementById("global-controls");
   if (container) {
       const allSelected = selectedCount === totalItems;
@@ -223,7 +270,7 @@ function updateMaxPreguntas() {
       `;
   }
 
-  // Calcular disponibles
+  // 2. Calcular pool
   const checksValues = checkedBoxes.map(c => c.value);
   const poolSize = BANK.questions.filter(q => {
       const mat = q.materia;
@@ -231,9 +278,10 @@ function updateMaxPreguntas() {
       return checksValues.includes(mat);
   }).length;
 
-  // Actualizar Inputs
+  // 3. Inputs y Botón Start
   const input = document.getElementById("mk-total");
   const hint = document.getElementById("mk-max-hint");
+  const btnStart = document.getElementById("btn-start-sim");
   
   if (input) {
       input.max = poolSize;
@@ -241,20 +289,146 @@ function updateMaxPreguntas() {
       if (poolSize === 0) input.value = 0;
   }
   
-  if (hint) {
-      hint.textContent = `(Max: ${poolSize})`;
+  if (hint) hint.textContent = `(Max: ${poolSize})`;
+
+  // Validar Botón Comenzar
+  if (btnStart) {
+      if (selectedCount === 0 || poolSize === 0) {
+          btnStart.classList.add("btn-disabled");
+          btnStart.disabled = true;
+      } else {
+          btnStart.classList.remove("btn-disabled");
+          btnStart.disabled = false;
+      }
   }
+
+  calculateTimeEstimate();
 }
 
+function calculateTimeEstimate() {
+    const input = document.getElementById("mk-total");
+    const label = document.getElementById("time-estimate");
+    if(!input || !label) return;
+
+    const val = parseInt(input.value) || 0;
+    if(val === 0) {
+        label.style.display = "none";
+        return;
+    }
+    
+    // Estimación: 1 min por pregunta
+    const hours = Math.floor(val / 60);
+    const mins = val % 60;
+    let txt = "~";
+    if(hours > 0) txt += `${hours}h `;
+    txt += `${mins}m`;
+
+    label.textContent = txt;
+    label.style.display = "block";
+}
+
+/* ==========================================================
+   📊 HISTORIAL (MOCK DATA & RENDER)
+   ========================================================== */
+
+function showHistory() {
+    document.getElementById('historyModal').style.display = 'flex';
+    const container = document.getElementById('historyList');
+    
+    // MOCK DATA: Simula datos guardados en LocalStorage
+    // Esto lo conectaremos al real luego.
+    const mockHistory = [
+        { 
+            date: new Date().toISOString(), 
+            score: 85, 
+            totalQ: 50, 
+            timeStr: "42 min", 
+            subjects: ["pediatria", "cirugia", "ginecologia", "obstetricia", "cardiologia", "neurologia"] 
+        },
+        { 
+            date: new Date(Date.now() - 86400000).toISOString(), 
+            score: 72, 
+            totalQ: 20, 
+            timeStr: "18 min", 
+            subjects: ["infectologia", "pediatria"] 
+        },
+        { 
+            date: new Date(Date.now() - 172800000).toISOString(), 
+            score: 55, 
+            totalQ: 100, 
+            timeStr: "1h 10m", 
+            subjects: ["todas"] // Caso especial
+        },
+        { 
+            date: new Date(Date.now() - 300000000).toISOString(), 
+            score: 30, 
+            totalQ: 10, 
+            timeStr: "5 min", 
+            subjects: ["psiquiatria"] 
+        }
+    ];
+
+    if(mockHistory.length === 0) {
+        container.innerHTML = `<div style="text-align:center; color:#94a3b8; padding:20px;">No hay simulacros previos.</div>`;
+        return;
+    }
+
+    container.innerHTML = mockHistory.map(h => {
+        // Colores según score
+        let color = "#1e293b"; // Negro (<40)
+        if(h.score >= 40) color = "#ef4444"; // Rojo (<60)
+        if(h.score >= 60) color = "#eab308"; // Amarillo (<80)
+        if(h.score >= 80) color = "#16a34a"; // Verde (>=80)
+
+        const fecha = new Date(h.date).toLocaleDateString("es-AR", {day:'2-digit', month:'2-digit'});
+        
+        // Formato Materias
+        let subjText = "";
+        if(h.subjects.includes("todas") || h.subjects.length > BANK.subjects.length - 2) {
+            subjText = "Examen Completo";
+        } else if(h.subjects.length <= 3) {
+            subjText = h.subjects.map(s => capitalize(s)).join(", ");
+        } else {
+            const firstTwo = h.subjects.slice(0, 2).map(s => capitalize(s)).join(", ");
+            subjText = `${firstTwo} +${h.subjects.length - 2} más`;
+        }
+
+        return `
+          <div class="hist-card">
+              <div class="score-circle" style="background:${color};">
+                  ${h.score}%
+              </div>
+              <div style="flex:1;">
+                  <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+                      <span style="font-weight:700; color:#1e293b; font-size:14px;">${h.totalQ} preguntas</span>
+                      <span style="font-size:12px; color:#64748b;">${fecha}</span>
+                  </div>
+                  <div style="font-size:12px; color:#64748b; margin-bottom:2px;">⏱ ${h.timeStr}</div>
+                  <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; font-weight:600;">${subjText}</div>
+              </div>
+          </div>
+        `;
+    }).join("");
+}
+
+function capitalize(str) {
+    if(!str) return "";
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+/* ==========================================================
+   🚀 START
+   ========================================================== */
 function startExamenPersonalizado() {
+  const btn = document.getElementById("btn-start-sim");
+  if(btn && btn.disabled) {
+      alert("Seleccioná al menos una materia para comenzar.");
+      return;
+  }
+
   const checks = Array.from(document.querySelectorAll(".mk-mat"))
     .filter(c => c.checked)
     .map(c => c.value);
-
-  if (!checks.length) {
-    alert("⚠ Seleccioná al menos una materia.");
-    return;
-  }
 
   const totalInput = document.getElementById("mk-total");
   const total = parseInt(totalInput.value) || 10;
@@ -266,10 +440,7 @@ function startExamenPersonalizado() {
       return checks.includes(mat);
   });
 
-  if (!pool.length) {
-    alert("No hay preguntas disponibles.");
-    return;
-  }
+  if (!pool.length) return alert("Error: No hay preguntas.");
 
   pool = pool.sort(() => Math.random() - 0.5).slice(0, total);
 
@@ -279,6 +450,6 @@ function startExamenPersonalizado() {
     usarTimer,
     permitirRetroceso: true,
     mostrarNotas: true,
-    titulo: "🎯 Simulacro Personalizado"
+    titulo: "🎯 Simulacro"
   });
 }
