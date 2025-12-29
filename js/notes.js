@@ -1,5 +1,5 @@
 /* ==========================================================
-   📒 MEbank 3.0 – Gestor de Notas (Fix Multi-Materia)
+   📒 MEbank 3.0 – Gestor de Notas (Fix Multi-Materia.)
    ========================================================== */
 
 function renderNotas() {
