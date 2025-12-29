@@ -75,7 +75,7 @@ function renderHome() {
       </p>
 
       ${hechasHoy > 0 
-        ? `<div style="margin-bottom:20px; padding:8px; background:#f0fdf4; color:#166534; border-radius:8px; font-size:14px;">
+        ? `<div class="daily-banner" style="margin-bottom:20px; padding:8px; background:#f0fdf4; color:#166534; border-radius:8px; font-size:14px;">
              🔥 Hoy respondiste <b>${hechasHoy}</b> preguntas correctamente.
            </div>`
         : ''
