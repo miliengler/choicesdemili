@@ -1,6 +1,28 @@
 /* ==========================================================
-   🏠 MEbank 3.0 – Pantalla Home y Arranque.
+   🏠 MEbank 3.0 – Pantalla Home y Arranque (Con Dark Mode)
    ========================================================== */
+
+// 🌙 1. LÓGICA DE MODO OSCURO (Se ejecuta al cargar)
+document.addEventListener("DOMContentLoaded", () => {
+    // Recuperar preferencia guardada
+    const isDark = localStorage.getItem("mebank_darkmode") === "true";
+    if (isDark) {
+        document.body.classList.add("dark-mode");
+    }
+});
+
+// Función global para el botón
+window.toggleDarkMode = function() {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    
+    // Guardar preferencia
+    localStorage.setItem("mebank_darkmode", isDark);
+    
+    // Actualizar ícono visualmente
+    const btn = document.getElementById("btn-dark-mode");
+    if(btn) btn.textContent = isDark ? "☀️" : "🌙";
+};
 
 // ✅ ESTA FUNCIÓN ARRANCA LA APP
 async function initApp() {
@@ -15,7 +37,6 @@ async function initApp() {
   `;
 
   // 2. Disparar carga de bancos
-  // (Cuando termine, Bank.js llamará automáticamente a renderHome)
   if (typeof loadAllBanks === 'function') {
       await loadAllBanks();
   } else {
@@ -36,11 +57,20 @@ function renderHome() {
   const hoy = new Date().toISOString().split('T')[0];
   const hechasHoy = daily[hoy] || 0;
 
+  // 🌙 Detectar estado actual para el ícono
+  const isDark = document.body.classList.contains("dark-mode");
+  const icon = isDark ? "☀️" : "🌙";
+
   app.innerHTML = `
-    <div class="card fade" style="max-width:520px;margin:auto;text-align:center;">
+    <div class="card fade" style="max-width:520px; margin:auto; text-align:center; position:relative;">
       
+      <button id="btn-dark-mode" onclick="toggleDarkMode()" 
+              style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; z-index:10; padding:0;">
+          ${icon}
+      </button>
+
       <h1 style="margin-bottom:6px;">MEbank</h1>
-      <p style="color:#64748b;margin-bottom:25px;">
+      <p style="color:#64748b; margin-bottom:25px;">
         Banco de Preguntas para Residencias
       </p>
 
@@ -54,12 +84,12 @@ function renderHome() {
       <div class="menu-buttons">
         <button class="btn-main menu-btn" onclick="goChoice()">📚 Práctica por materia</button>
         <button class="btn-main menu-btn" onclick="goExamenes()">📝 Exámenes anteriores</button>
-        <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de exámen</button>
+        <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de examen</button>
         <button class="btn-main menu-btn" onclick="goStats()">📊 Estadísticas</button>
         <button class="btn-main menu-btn" onclick="goNotas()">📔 Mis notas</button>
       </div>
 
-      <div style="margin-top:25px;font-size:13px;color:#94a3b8;">
+      <div style="margin-top:25px; font-size:13px; color:#94a3b8;">
         ${cargado
           ? `✔ Sistema listo (${preguntas} preguntas)`
           : `⚠ Error de carga`}
