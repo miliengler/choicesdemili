@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (UI Definitiva + Fix Suma)
+   📚 MEbank 3.0 – Práctica por materia (UI Definitiva + Fix Suma.)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
