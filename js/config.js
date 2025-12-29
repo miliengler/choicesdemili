@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Configuración central
+   📚 MEbank 3.0 – Configuración central.
    - Materias oficiales
    - Subtemas por materia
    - Exámenes anteriores (meta)
