@@ -1,6 +1,16 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes anteriores (Con Checkbox Timer.)
+   📝 MEbank 3.0 – Exámenes Anteriores (UI Final + Checkbox)
    ========================================================== */
+
+// NOTA: Asegurate de tener definida EXAMENES_META en bank.js o aquí mismo.
+// Si no la tenés, descomentá esto para probar:
+/*
+const EXAMENES_META = [
+  { id: 'eu_2023', grupo: 'Examen Único', anio: 2023 },
+  { id: 'eu_2022', grupo: 'Examen Único', anio: 2022 },
+  { id: 'caba_2023', grupo: 'Municipales CABA', anio: 2023 }
+];
+*/
 
 /* ==========================================================
    🔵 CÍRCULO DE PROGRESO ANIMADO
@@ -17,34 +27,69 @@ function renderProgressCircleExam(percent) {
       <circle cx="${size/2}" cy="${size/2}" r="${radius}" stroke="#e2e8f0" stroke-width="${stroke}" fill="none"></circle>
       <circle cx="${size/2}" cy="${size/2}" r="${radius}" stroke="${percent === 0 ? '#cbd5e1' : '#16a34a'}"
         stroke-width="${stroke}" fill="none" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
-        stroke-linecap="round" style="transition: stroke-dashoffset 0.6s ease;"></circle>
+        stroke-linecap="round" transform="rotate(-90 ${size/2} ${size/2})" style="transition: stroke-dashoffset 0.6s ease;"></circle>
       <text x="50%" y="55%" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">${percent}%</text>
     </svg>
   `;
 }
 
 /* ==========================================================
-   🏠 Render principal 
+   🏠 Render Principal (Con Header Nuevo)
    ========================================================== */
 function renderExamenesMain() {
   const app = document.getElementById("app");
+  
+  // Agrupamos datos
   const grupos = agruparExamenesPorGrupo();
   const gruposOrdenados = Object.keys(grupos).sort((a, b) => a.localeCompare(b));
 
+  // Generamos el HTML de la lista
+  const listaHtml = gruposOrdenados.map(g => renderGrupoExamen(g, grupos[g])).join("");
+
   app.innerHTML = `
-    <div class="card fade" style="max-width:900px;margin:auto;">
-      <h2 style="margin-bottom:6px;">Exámenes anteriores</h2>
-      <p style="color:#64748b;margin:0 0 25px 0;">Elegí un examen para practicar.</p>
-      ${gruposOrdenados.map(g => renderGrupoExamen(g, grupos[g])).join("")}
-      <div style="margin-top:24px;text-align:center;">
-        <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+    <div class="card fade" style="max-width:900px; margin:auto;">
+      
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
+        <div style="flex:1;">
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <h2 style="margin:0;">📝 Exámenes Anteriores</h2>
+            <button onclick="mostrarInfoExamenesOficiales()" 
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+              ?
+            </button>
+          </div>
+          <p style="color:#64748b; margin:0; font-size:14px;">
+             Elegí un examen oficial para practicar.
+          </p>
+        </div>
+        
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
+           ⬅ Volver
+        </button>
       </div>
+
+      <div>
+         ${listaHtml}
+      </div>
+
     </div>
   `;
 }
 
+/* ==========================================================
+   ⚙️ Lógica de Ayuda
+   ========================================================== */
+function mostrarInfoExamenesOficiales() {
+    alert("ℹ️ EXÁMENES OFICIALES\n\nAquí encontrarás exámenes completos de años anteriores agrupados por institución.\n\n• Podés activar el cronómetro con la casilla de verificación antes de iniciar.\n• Al finalizar, podrás revisar tus notas y estadísticas específicas de ese examen.");
+}
+
+/* ==========================================================
+   🏛 Lógica de Grupos
+   ========================================================== */
 function agruparExamenesPorGrupo() {
   const grupos = {};
+  if (typeof EXAMENES_META === 'undefined') return {}; // Seguridad
+
   EXAMENES_META.forEach(ex => {
     if (!grupos[ex.grupo]) grupos[ex.grupo] = [];
     grupos[ex.grupo].push(ex);
@@ -55,18 +100,18 @@ function agruparExamenesPorGrupo() {
   return grupos;
 }
 
-/* ==========================================================
-   🏛 Render de grupo e items
-   ========================================================== */
 let examenesOpenGrupo = null;
 let examenesOpenExamen = null;
 
 function renderGrupoExamen(nombreGrupo, lista) {
   const abierto = examenesOpenGrupo === nombreGrupo;
   return `
-    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin-bottom:12px;">
+    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin-bottom:12px; background:white;">
       <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="toggleGrupoExamen('${nombreGrupo}')">
-        <div><b>${nombreGrupo}</b><div style="font-size:12px;color:#64748b;">${lista.length} exámenes disponibles</div></div>
+        <div>
+           <b style="color:#1e293b; font-size:16px;">${nombreGrupo}</b>
+           <div style="font-size:12px;color:#64748b;">${lista.length} exámenes disponibles</div>
+        </div>
         <div style="width:42px;height:42px;">${renderProgressCircleExam(0)}</div>
       </div>
       ${abierto ? renderGrupoExamenExpanded(lista) : ""}
@@ -81,7 +126,7 @@ function toggleGrupoExamen(grupo) {
 }
 
 function renderGrupoExamenExpanded(lista) {
-  return `<div style="margin-top:10px;padding-top:10px;border-top:1px solid #e2e8f0;">${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
+  return `<div style="margin-top:10px;padding-top:10px;border-top:1px solid #f1f5f9;">${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
 }
 
 function renderItemExamen(ex) {
@@ -89,12 +134,18 @@ function renderItemExamen(ex) {
   const total = preguntas.length;
   const progreso = calcularProgresoExamen(ex.id);
   const abierto = examenesOpenExamen === ex.id;
+  
+  // Fondo sutilmente distinto para items internos
+  const bg = abierto ? '#f8fafc' : 'white'; 
 
   return `
-    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:12px;margin-bottom:10px;">
+    <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:12px;margin-bottom:10px; background:${bg};">
       <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="toggleExamenItem('${ex.id}')">
-        <div><b>${formatearNombreExamen(ex.id)}</b><div style="font-size:12px;color:#64748b;">${total} preguntas</div></div>
-        <div style="width:42px;height:42px;">${renderProgressCircleExam(progreso)}</div>
+        <div>
+            <b style="color:#334155;">${formatearNombreExamen(ex.id)}</b>
+            <div style="font-size:12px;color:#64748b;">${total} preguntas</div>
+        </div>
+        <div style="width:36px;height:36px;">${renderProgressCircleExam(progreso)}</div>
       </div>
       ${abierto ? renderExpandExamen(ex, preguntas) : ""}
     </div>
@@ -106,10 +157,12 @@ function toggleExamenItem(id) {
   renderExamenesMain();
 }
 
-function formatearNombreExamen(id) { return id.replace(/_/g, " ").toUpperCase(); }
+function formatearNombreExamen(id) { 
+    return id.replace(/_/g, " ").toUpperCase(); 
+}
 
 /* ==========================================================
-   📘 Contenido interno (AQUÍ ESTÁ EL CAMBIO DEL CHECKBOX)
+   📘 Contenido interno (Checkbox + Botones)
    ========================================================== */
 function renderExpandExamen(ex, preguntas) {
   const hayProgreso = preguntas.some(q => {
@@ -117,22 +170,23 @@ function renderExpandExamen(ex, preguntas) {
     return r && (r.status === "ok" || r.status === "bad");
   });
 
-  // 👇 AQUÍ AGREGAMOS EL CHECKBOX ÚNICO PARA ESTE EXAMEN
   return `
-    <div style="margin-top:12px;padding-top:10px;border-top:1px dashed #e2e8f0;">
+    <div style="margin-top:12px;padding-top:12px;border-top:1px dashed #cbd5e1;">
 
-      <div style="margin-bottom:15px; display:flex; align-items:center; gap:8px;">
-        <input type="checkbox" id="timer-check-${ex.id}" style="cursor:pointer;">
-        <label for="timer-check-${ex.id}" style="font-size:14px; color:#334155; cursor:pointer;">
-           ⏱ Activar cronómetro para este examen
+      <div style="margin-bottom:15px; display:flex; align-items:center; gap:8px; background:white; padding:8px; border-radius:6px; border:1px solid #f1f5f9; width:fit-content;">
+        <input type="checkbox" id="timer-check-${ex.id}" style="cursor:pointer; width:16px; height:16px; accent-color:#3b82f6;">
+        <label for="timer-check-${ex.id}" style="font-size:13px; color:#334155; cursor:pointer; font-weight:600;">
+           ⏱ Activar cronómetro
         </label>
       </div>
 
-      <div style="display:flex;flex-wrap:wrap;gap:10px;">
-        <button class="btn-main" onclick="iniciarExamen('${ex.id}')">Iniciar examen</button>
-        ${hayProgreso ? `<button class="btn-main" onclick="reanudarExamen('${ex.id}')">Reanudar</button>` : ""}
-        <button class="btn-main" onclick="verNotasExamen('${ex.id}')">Notas</button>
-        <button class="btn-main" onclick="verStatsExamen('${ex.id}')">Estadísticas</button>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <button class="btn-main" style="flex:1;" onclick="iniciarExamen('${ex.id}')">▶ Iniciar</button>
+        
+        ${hayProgreso ? `<button class="btn-main" style="flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8;" onclick="reanudarExamen('${ex.id}')">⏩ Reanudar</button>` : ""}
+        
+        <button class="btn-small" style="flex:1; background:#f1f5f9; color:#475569; border:1px solid #cbd5e1;" onclick="alert('Próximamente: Notas de este examen')">📒 Notas</button>
+        <button class="btn-small" style="flex:1; background:#f1f5f9; color:#475569; border:1px solid #cbd5e1;" onclick="alert('Próximamente: Estadísticas de este examen')">📊 Stats</button>
       </div>
     </div>
   `;
@@ -146,43 +200,57 @@ function calcularProgresoExamen(examenId) {
   if (!preguntas.length) return 0;
   let resueltas = 0;
   preguntas.forEach(q => {
+    // Nota: Ajustá esta lógica si PROG guarda diferente
+    // Asumo PROG[materia][id]
     const r = PROG[q.materia]?.[q.id];
     if (r && (r.status === "ok" || r.status === "bad")) resueltas++;
   });
   return Math.round((resueltas / preguntas.length) * 100);
 }
 
+// Helper si no lo tenés global
+function getQuestionsByExamen(examId) {
+    if (typeof BANK === 'undefined') return [];
+    // Asume que BANK.questions tiene una propiedad 'source' o que el ID empieza con el examId
+    // AJUSTAR SEGÚN TU ESTRUCTURA REAL. 
+    // Opción A (por propiedad): return BANK.questions.filter(q => q.source === examId);
+    // Opción B (por prefijo ID): 
+    return BANK.questions.filter(q => q.id.startsWith(examId)); 
+}
+
 /* ==========================================================
-   ▶ Iniciar examen (LEE EL CHECKBOX)
+   ▶ Iniciar examen
    ========================================================== */
 function iniciarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
-  if (!preguntas.length) return alert("No se encontraron preguntas.");
+  if (!preguntas.length) return alert("No se encontraron preguntas para este examen.");
 
-  // 👇 BUSCAMOS EL CHECKBOX ESPECÍFICO DE ESTE EXAMEN
   const checkEl = document.getElementById(`timer-check-${id}`);
   const usarTimer = checkEl ? checkEl.checked : false;
 
   iniciarResolucion({
     modo: "examen",
     preguntas,
-    usarTimer: usarTimer, // ✅ Opcional real
+    usarTimer: usarTimer,
     titulo: formatearNombreExamen(id)
   });
 }
 
 function reanudarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
-  // Al reanudar, asumimos que querés seguir como estabas o sin timer por defecto, 
-  // pero podés forzarlo a true si querés. Lo dejo en false o true según prefieras.
-  // Por ahora sin timer al reanudar para no molestar.
+  // Al reanudar, solemos querer seguir con las pendientes
+  // Filtramos las ya respondidas
+  const pendientes = preguntas.filter(q => {
+      const r = PROG[q.materia]?.[q.id];
+      return !r || (r.status !== 'ok' && r.status !== 'bad');
+  });
+
+  if(pendientes.length === 0) return alert("¡Ya completaste todas las preguntas de este examen!");
+
   iniciarResolucion({
     modo: "reanudar",
-    preguntas,
+    preguntas: pendientes,
     usarTimer: true, 
-    titulo: formatearNombreExamen(id)
+    titulo: formatearNombreExamen(id) + " (Continuación)"
   });
 }
-
-function verNotasExamen(id) { renderNotasMain(id); }
-function verStatsExamen(id) { renderStatsExamen(id); }
