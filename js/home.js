@@ -1,5 +1,5 @@
 /* ==========================================================
-   🏠 MEbank 3.0 – Pantalla Home y Arranque
+   🏠 MEbank 3.0 – Pantalla Home y Arranque.
    ========================================================== */
 
 // ✅ ESTA FUNCIÓN ARRANCA LA APP
