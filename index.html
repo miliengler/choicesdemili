@@ -19,6 +19,82 @@
     window.addEventListener("unhandledrejection", e => showError("Promise error: "+e.reason));
   </script>
   
+<style>
+  /* 1. DEFINICIÓN DE COLORES (Variables) */
+  :root {
+    --bg-body: #f8fafc;       /* Fondo claro */
+    --bg-card: #ffffff;       /* Tarjetas claras */
+    --text-main: #1e293b;     /* Texto oscuro */
+    --text-sec: #64748b;      /* Texto gris */
+    --border: #e2e8f0;        /* Bordes claros */
+    --shadow: rgba(0,0,0,0.05);
+    --input-bg: #ffffff;
+  }
+
+  /* 2. OVERRIDES PARA MODO OSCURO */
+  body.dark-mode {
+    --bg-body: #0f172a;       /* Fondo azul muy oscuro */
+    --bg-card: #1e293b;       /* Tarjetas azul oscuro */
+    --text-main: #f1f5f9;     /* Texto casi blanco */
+    --text-sec: #94a3b8;      /* Texto gris claro */
+    --border: #334155;        /* Bordes oscuros */
+    --shadow: rgba(0,0,0,0.3);
+    --input-bg: #1e293b;
+  }
+
+  /* 3. APLICACIÓN GENERAL */
+  body {
+    background-color: var(--bg-body) !important;
+    color: var(--text-main) !important;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  /* 4. REGLAS DE FUERZA MAYOR (Para pisar los estilos inline del JS) */
+  /* Cuando está activo dark-mode, forzamos estos colores en tus componentes */
+  body.dark-mode .card, 
+  body.dark-mode .materia-block, 
+  body.dark-mode .nota-card,
+  body.dark-mode .exam-card,
+  body.dark-mode .stat-card,
+  body.dark-mode .materia-box,
+  body.dark-mode .modal-content,
+  body.dark-mode #choice-shell {
+      background-color: var(--bg-card) !important;
+      border-color: var(--border) !important;
+      color: var(--text-main) !important;
+      box-shadow: 0 4px 6px var(--shadow) !important;
+  }
+
+  /* Textos específicos en modo oscuro */
+  body.dark-mode h2, 
+  body.dark-mode h3, 
+  body.dark-mode b, 
+  body.dark-mode strong {
+      color: #f8fafc !important;
+  }
+  
+  body.dark-mode p, 
+  body.dark-mode .text-muted,
+  body.dark-mode div[style*="color:#64748b"], /* Hack para tus textos grises inline */
+  body.dark-mode div[style*="color:#475569"] {
+      color: var(--text-sec) !important;
+  }
+
+  /* Inputs y Botones secundarios en modo oscuro */
+  body.dark-mode input, 
+  body.dark-mode select {
+      background-color: #334155 !important; 
+      color: white !important; 
+      border-color: #475569 !important;
+  }
+  
+  body.dark-mode .btn-small,
+  body.dark-mode .btn-outline-gray {
+      background-color: #334155 !important;
+      color: white !important;
+      border-color: #475569 !important;
+  }
+</style>
 
 </head>
 
