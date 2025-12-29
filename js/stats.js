@@ -1,247 +1,440 @@
 /* ==========================================================
-   📊 MEbank 3.0 – Estadísticas (Dominio + Tema a Reforzar.)
+   📊 ESTADÍSTICAS GLOBALES – Final Corregido
    ========================================================== */
+
+let STATS_ORDER = "az";
+let statsSearchTerm = "";
 
 function renderStats() {
   const app = document.getElementById("app");
-  
-  // 1. CÁLCULO GLOBAL
-  let totalOkGlobal = 0;
-  let totalBadGlobal = 0;
-  let totalPreguntasGlobal = BANK.questions.length;
 
+  // --- 1. CÁLCULOS GLOBALES (CORREGIDO) ---
+  let totalPreguntas = 0;
+  // Para evitar contar duplicados si una pregunta tiene 2 materias,
+  // calculamos el total global basándonos en el array de preguntas único.
+  totalPreguntas = BANK.questions.length; 
+
+  let totalRespondidas = 0;
+  let totalCorrectas = 0;
+  let totalIncorrectas = 0;
+
+  // Recorremos las preguntas directamente para los contadores globales
+  // (Es más preciso que sumar por materias si hay materias compartidas)
   BANK.questions.forEach(q => {
-      const status = getQuestionStatus(q); 
-      if (status === 'ok') totalOkGlobal++;
-      if (status === 'bad') totalBadGlobal++;
+      // Buscamos el progreso usando la PRIMERA materia asignada (convención de Bank.js)
+      // O buscamos en todas las materias donde pueda estar guardada.
+      // Simplificación: Bank.js guarda el progreso bajo la materia principal o "otras".
+      const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+      const prog = PROG[mat] ? PROG[mat][q.id] : null;
+
+      if (prog && (prog.status === "ok" || prog.status === "bad")) {
+          totalRespondidas++;
+          if (prog.status === "ok") totalCorrectas++;
+          if (prog.status === "bad") totalIncorrectas++;
+      }
   });
 
-  const totalRespondidas = totalOkGlobal + totalBadGlobal;
-  const percentGlobal = totalPreguntasGlobal > 0 
-      ? Math.round((totalOkGlobal / totalPreguntasGlobal) * 100) 
-      : 0;
+  const totalSinResponder = totalPreguntas - totalRespondidas;
+  const porcentajeProgreso = totalPreguntas > 0 
+    ? Math.round((totalCorrectas / totalPreguntas) * 100) 
+    : 0;
 
-  // 2. CÁLCULO POR MATERIA + DETECCIÓN DE "TEMA A REFORZAR"
-  const statsPorMateria = BANK.subjects.map(s => {
-      // Filtramos preguntas de la materia (soporte arrays)
-      const preguntasDeLaMateria = BANK.questions.filter(q => {
-          if (Array.isArray(q.materia)) return q.materia.includes(s.slug);
-          return q.materia === s.slug;
-      });
+  // --- 2. ACTIVIDAD SEMANAL ---
+  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  const today = new Date();
+  let weeklyTotalCorrect = 0;
 
-      const totalMateria = preguntasDeLaMateria.length;
-      let okMateria = 0;
-      let badMateria = 0;
-      
-      // Objeto para rastrear subtemas: { "farmaco": { ok: 2, total: 5 } }
-      const subtemasStats = {}; 
+  const weekList = Array.from({ length: 7 }).map((_, i) => {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const key = d.toISOString().split('T')[0]; 
+    const count = STATS_DAILY[key] || 0;
+    if(i < 7) weeklyTotalCorrect += count;
 
-      preguntasDeLaMateria.forEach(q => {
-          const st = getQuestionStatus(q);
-          if (st === 'ok') okMateria++;
-          if (st === 'bad') badMateria++;
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
+    const checkIcon = count > 0 ? "✅" : "⬜";
 
-          // Agrupamos por subtema si existe
-          if (q.submateria) {
-              const subSlug = q.submateria; 
-              if (!subtemasStats[subSlug]) subtemasStats[subSlug] = { ok: 0, total: 0 };
-              subtemasStats[subSlug].total++;
-              if (st === 'ok') subtemasStats[subSlug].ok++;
-          }
-      });
+    return `
+      <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
+        <span style="color:#64748b">➤ ${dd}/${mm}</span>
+        <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
+      </div>`;
+  }).reverse().join("");
 
-      const percent = totalMateria > 0 
-          ? Math.round((okMateria / totalMateria) * 100) 
-          : 0;
-
-      // --- LÓGICA: ENCONTRAR TEMA A REFORZAR ---
-      // Buscamos el subtema con MENOR porcentaje de aciertos
-      let weakTopicName = null;
-      let minPercent = 101; // Empezamos alto para que cualquier % real sea menor
-
-      Object.keys(subtemasStats).forEach(subSlug => {
-          const sData = subtemasStats[subSlug];
-          
-          // Condición: Haber respondido al menos 1 pregunta de ese tema
-          // (Para no marcar temas que ni siquiera leíste todavía)
-          if (sData.total > 0 && (sData.ok < sData.total)) { 
-              const p = Math.round((sData.ok / sData.total) * 100);
-              
-              // Nos quedamos con el más bajo
-              if (p < minPercent) {
-                  minPercent = p;
-                  weakTopicName = getBestSubtopicName(s.slug, subSlug);
-              }
-          }
-      });
-
-      // Si tiene todo perfecto (100%) o no respondió nada, no mostramos aviso
-      if (minPercent === 101) weakTopicName = null;
-
-      return {
-          name: s.name,
-          slug: s.slug,
-          total: totalMateria,
-          ok: okMateria,
-          percent: percent,
-          weakTopic: weakTopicName
-      };
-  }).filter(m => m.total > 0);
-
-  // Orden alfabético
-  statsPorMateria.sort((a, b) => a.name.localeCompare(b.name));
-
-
-  // 3. GENERAR HTML
-  const rows = statsPorMateria.map(m => `
-    <div class="stat-row">
-      <div class="stat-info">
-         <div class="stat-header">
-            <div class="stat-name">${m.name}</div>
-            <div class="stat-percent-text">${m.percent}%</div>
-         </div>
-         
-         <div class="stat-bar-bg">
-            <div class="stat-bar-fill" style="width: ${m.percent}%;"></div>
-         </div>
-
-         <div class="stat-footer">
-            <span>${m.ok} aprendidas / ${m.total} totales</span>
-            
-            ${m.weakTopic ? `<span class="insight-badge">⚠️ Tema a reforzar: <b>${m.weakTopic}</b></span>` : ''}
-         </div>
-      </div>
-    </div>
-  `).join("");
-
-  const styles = `
-    <style>
-      .stat-card {
-         background: white; border-radius: 12px; padding: 20px;
-         box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-         border: 1px solid #e2e8f0; margin-bottom: 20px;
-      }
-      .stat-row { padding: 15px 0; border-bottom: 1px solid #f1f5f9; }
-      .stat-row:last-child { border-bottom: none; }
-      
-      .stat-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
-      .stat-name { font-weight: 700; color: #334155; font-size: 15px; }
-      .stat-percent-text { font-weight: 800; color: #3b82f6; font-size: 14px; }
-
-      .stat-bar-bg {
-         width: 100%; height: 8px; background: #f1f5f9; border-radius: 4px; overflow: hidden; margin-bottom: 8px;
-      }
-      .stat-bar-fill {
-         height: 100%; background: #3b82f6; border-radius: 4px; transition: width 0.5s ease;
-      }
-
-      .stat-footer { 
-         display: flex; justify-content: space-between; align-items: center; 
-         font-size: 12px; color: #94a3b8; flex-wrap: wrap; gap: 8px; 
-      }
-      
-      .insight-badge {
-         background: #fff1f2; color: #be123c; 
-         padding: 3px 8px; border-radius: 6px; 
-         font-size: 11px; border: 1px solid #fda4af;
-      }
-
-      .pie-chart {
-         width: 120px; height: 120px; border-radius: 50%;
-         background: conic-gradient(#16a34a 0% ${percentGlobal}%, #f1f5f9 ${percentGlobal}% 100%);
-         display: flex; align-items: center; justify-content: center;
-         margin: 0 auto 15px auto; position: relative;
-      }
-      .pie-chart::after {
-         content: ""; position: absolute; width: 90px; height: 90px; background: white; border-radius: 50%;
-      }
-      .pie-text { position: absolute; z-index: 1; text-align: center; }
-      .pie-big { font-size: 26px; font-weight: 800; color: #0f172a; }
-      .pie-small { font-size: 11px; color: #64748b; font-weight: 700; text-transform: uppercase; }
-
-      .kpi-box { flex: 1; background: #f8fafc; border-radius: 8px; padding: 10px; text-align: center; border: 1px solid #e2e8f0; }
-      .kpi-num { font-size: 18px; font-weight: 700; color: #334155; }
-      .kpi-label { font-size: 10px; color: #64748b; text-transform: uppercase; font-weight: 700; margin-top: 2px; }
-    </style>
-  `;
-
+  // --- 3. RENDERIZADO PRINCIPAL ---
   app.innerHTML = `
-    ${styles}
-    <div class="fade" style="max-width:800px; margin:auto; padding-bottom:40px;">
+    <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h2 style="margin:0; font-size:24px; color:#0f172a;">📊 Mis Estadísticas</h2>
-        <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+        <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
+           ⬅ Volver
+        </button>
+      </div>
+      
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap:10px; margin-bottom:20px;">
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#16a34a;">${totalCorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Correctas</div>
+        </div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px;">
+            <div style="font-size:20px; font-weight:bold; color:#ef4444;">${totalIncorrectas}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Incorrectas</div>
+        </div>
+        <div style="border:1px solid #e2e8f0; border-radius:8px; padding:10px; background:#f8fafc;">
+            <div style="font-size:20px; font-weight:bold; color:#94a3b8;">${totalSinResponder}</div>
+            <div style="font-size:11px; color:#64748b; text-transform:uppercase;">Sin Responder</div>
+        </div>
       </div>
 
-      <div class="stat-card">
-         <h3 style="margin-top:0; color:#1e3a8a; font-size:15px; margin-bottom:15px; text-align:center; text-transform:uppercase; letter-spacing:0.5px;">Dominio Global</h3>
-         
-         <div class="pie-chart">
-            <div class="pie-text">
-               <div class="pie-big">${percentGlobal}%</div>
-               <div class="pie-small">Completado</div>
-            </div>
-         </div>
-
-         <div style="display:flex; gap:10px; margin-top:20px;">
-            <div class="kpi-box">
-               <div class="kpi-num" style="color:#16a34a;">${totalOkGlobal}</div>
-               <div class="kpi-label">Aprendidas</div>
-            </div>
-            <div class="kpi-box">
-               <div class="kpi-num" style="color:#ef4444;">${totalBadGlobal}</div>
-               <div class="kpi-label">Errores</div>
-            </div>
-            <div class="kpi-box">
-               <div class="kpi-num" style="color:#64748b;">${totalPreguntasGlobal - totalRespondidas}</div>
-               <div class="kpi-label">Pendientes</div>
-            </div>
-         </div>
+      <div style="margin-bottom:10px; text-align:left;">
+        <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px;">
+            <span style="color:#334155; font-weight:600;">Progreso total</span>
+            <span style="color:#16a34a; font-weight:bold;">${porcentajeProgreso}%</span>
+        </div>
+        <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
+            <div style="width:${porcentajeProgreso}%; background:#16a34a; height:100%;"></div>
+        </div>
+        <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
+           Preguntas aprendidas sobre el total (${totalPreguntas})
+        </div>
       </div>
 
-      <h3 style="margin:25px 0 10px 0; color:#334155; font-size:16px;">Detalle por Materia</h3>
-      <div class="stat-card" style="padding: 0 20px;">
-         ${rows}
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
+      <div style='text-align:left; max-width:300px; margin:auto;'>
+        ${weekList}
       </div>
+
+      <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
+        ${weeklyTotalCorrect > 0 
+           ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Sigue así!` 
+           : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
+      </div>
+
+      <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
+
+      <button class='btn-small' style="background:#fff; border-color:#cbd5e1; color:#64748b;" onclick='resetGlobalStats()'>
+          🗑 Reiniciar todo el progreso
+      </button>
 
     </div>
+
+    <div class="card fade" style="max-width: 800px; margin: 20px auto; text-align: center;">
+      <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
+      
+      <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
+         <input type="text" 
+                placeholder="🔍 Buscar materia..." 
+                value="${statsSearchTerm}"
+                oninput="onSearchStats(this.value)"
+                style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
+         
+         <select onchange="onChangeStatsOrder(this.value)" 
+                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
+             <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
+             <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
+             <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
+         </select>
+      </div>
+      
+      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
+          </ul>
+    </div>
+    
+    <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
+       Vos podés ❤️
+    </div>
   `;
+
+  renderMateriasList();
 }
 
 /* ==========================================================
-   🛠 HELPERS
+   📋 Lista de Materias (Lógica de filtrado corregida)
    ========================================================== */
+function renderMateriasList() {
+  const container = document.getElementById("matsList");
+  if (!container) return;
+  
+  let list = [...BANK.subjects];
+  const term = normalize(statsSearchTerm);
 
-function getQuestionStatus(q) {
-    if (typeof PROG === 'undefined') return null;
-    const matPrincipal = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
-    if (PROG[matPrincipal] && PROG[matPrincipal][q.id]) {
-        return PROG[matPrincipal][q.id].status;
+  if (term) list = list.filter(m => normalize(m.name).includes(term));
+
+  // --- HELPER PARA CONTAR (CORREGIDO PARA ARRAYS) ---
+  const countMateria = (slug) => {
+      // AQUÍ ESTABA EL ERROR: Usamos .includes() para arrays o comparación directa para strings
+      return BANK.questions.filter(q => {
+          if (Array.isArray(q.materia)) return q.materia.includes(slug);
+          return q.materia === slug;
+      }).length;
+  };
+
+  list.sort((a, b) => {
+    const getPct = (slug) => {
+        const total = countMateria(slug);
+        if (total === 0) return 0;
+        const p = PROG[slug] || {};
+        let ok = 0, bad = 0;
+        Object.values(p).forEach(x => { if(x.status==='ok') ok++; if(x.status==='bad') bad++; });
+        return (ok+bad) > 0 ? (ok/(ok+bad))*100 : 0;
+    };
+
+    if (STATS_ORDER === 'az') {
+        const cleanA = a.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
+        return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
+    } else if (STATS_ORDER === 'progreso') {
+        return getPct(a.slug) - getPct(b.slug);
+    } else {
+        return getPct(b.slug) - getPct(a.slug);
     }
-    return null;
+  });
+
+  if (list.length === 0) {
+      container.innerHTML = `<li style="text-align:center; padding:20px; color:#94a3b8;">No se encontraron materias.</li>`;
+      return;
+  }
+
+  const listHTML = list.map(m => {
+    // --- USO DEL HELPER CORREGIDO ---
+    const totalM = countMateria(m.slug);
+    
+    if (totalM === 0) return ""; 
+
+    const datos = PROG[m.slug] || {};
+    let ok = 0, bad = 0;
+    Object.values(datos).forEach(p => {
+      if (p.status === "ok") ok++;
+      if (p.status === "bad") bad++;
+    });
+    
+    const resp = ok + bad;
+    const pct = resp > 0 ? Math.round((ok / resp) * 100) : 0;
+    const noresp = totalM - resp;
+    const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
+
+    const insights = getSubjectInsights(m.slug, m.name, datos);
+    const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
+
+    const btnBase = "width:100%; min-width:110px; font-size:12px; padding: 6px 10px; border-radius:6px; font-weight:600; cursor:pointer; color:#334155; white-space:nowrap;";
+
+    return `
+      <li style="margin-bottom: 10px;">
+        
+        <div onclick="toggleStatsAcc('${m.slug}')"
+             style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;
+                    padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between;
+                    align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+          
+          <div style="font-weight: 600; color: #1e293b; font-size:15px;">
+            ${m.name}
+          </div>
+          <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
+            ${pct}%
+          </div>
+        </div>
+
+        <div id="stat-${m.slug}" style="display:none; padding: 20px; background: #f8fafc; 
+             border: 1px solid #e2e8f0; border-top: none; border-radius: 0 0 8px 8px; margin-top: -2px;">
+          
+          <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+            
+            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:130px;">
+              <div>📦 Total preguntas: <b>${totalM}</b></div>
+              <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
+              <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
+              <div>⚪ Sin responder: <b style="color:#64748b">${noresp}</b></div>
+            </div>
+
+            <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
+
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; max-width: 150px;">
+               
+               <button style="${btnBase} background: #eff6ff; border: 1px solid #93c5fd;"
+                       onclick="goToPracticeFromStats('${m.slug}')">
+                 ▶ Ir a practicar
+               </button>
+               
+               <button style="${btnBase} background: #fefce8; border: 1px solid #fde047;"
+                       onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
+                 📝 Mis notas
+               </button>
+
+               <button style="${btnBase} background: #fef2f2; border: 1px solid #fca5a5;"
+                       onclick="resetSubjectStats('${m.slug}', '${m.name}')">
+                 🗑 Reiniciar materia
+               </button>
+
+            </div>
+          </div>
+
+          ${insights ? `
+            <div style="margin-top:15px; padding-top:15px; border-top:1px dashed #cbd5e1; font-size:13px; color:#475569;">
+               ${insights}
+            </div>
+          ` : ''}
+
+        </div>
+      </li>
+    `;
+  }).join("");
+
+  container.innerHTML = listHTML;
 }
 
-// ✨ FUNCIÓN PARA LIMPIAR NOMBRES DE SUBTEMAS
-function getBestSubtopicName(materiaSlug, subSlug) {
-    if (!subSlug) return "";
+/* ==========================================================
+   🧠 Lógica Inteligente (Insights)
+   ========================================================== */
+function getSubjectInsights(slug, name, datos) {
+    let insights = [];
+    const now = new Date();
+    
+    let lastDate = null;
+    Object.values(datos).forEach(p => {
+        if (p.date) {
+            const d = new Date(p.date);
+            if (!lastDate || d > lastDate) lastDate = d;
+        }
+    });
 
-    // 1. Intentar buscar en la lista oficial del banco
-    if (BANK.subsubjects && BANK.subsubjects[materiaSlug]) {
-        const list = BANK.subsubjects[materiaSlug];
-        // Normalizamos ambos para comparar sin importar mayúsculas o espacios
-        const normalizedSub = subSlug.toLowerCase().replace(/[^a-z0-9]/g, "");
-        
-        const match = list.find(nombreOficial => {
-            const normalizedOficial = nombreOficial.toLowerCase().replace(/[^a-z0-9]/g, "");
-            return normalizedOficial === normalizedSub; 
-        });
-        
-        if (match) return match; // Devolvemos el nombre bonito "Psicofármacos"
+    if (lastDate) {
+        const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+        if (diffDays > 14) {
+             insights.push(`🕰️ Hace <b>${diffDays} días</b> no practicás esta materia.`);
+        }
+    } else {
+        insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
     }
 
-    // 2. Fallback: Limpieza manual si no se encontró
-    // Reemplaza guiones y pone mayúscula inicial
-    let clean = subSlug.replace(/[_-]/g, " "); 
-    return clean.charAt(0).toUpperCase() + clean.slice(1);
+    const weakest = getWeakestSubtopic(slug, datos);
+    if (weakest) {
+        const prettyName = formatSubtopicName(weakest.name);
+        insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
+    }
+
+    if (insights.length === 0) return "";
+    return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
+
+function formatSubtopicName(slug) {
+    if(!slug) return "";
+    let text = slug.replace(/[-_]/g, " ");
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function getWeakestSubtopic(mSlug, progData) {
+    const questions = BANK.questions.filter(q => {
+        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        return esMateria && q.submateria; 
+    });
+
+    const groups = {};
+    questions.forEach(q => {
+        const sub = q.submateria;
+        if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
+        groups[sub].total++;
+        if (progData[q.id]) {
+            groups[sub].answered++;
+            if (progData[q.id].status === 'ok') groups[sub].ok++;
+        }
+    });
+
+    let worst = null;
+    let minPct = 101;
+
+    Object.keys(groups).forEach(subName => {
+        const g = groups[subName];
+        if (g.answered >= 3) {
+            const pct = Math.round((g.ok / g.answered) * 100);
+            if (pct < minPct) {
+                minPct = pct;
+                worst = { name: subName, pct: pct };
+            }
+        }
+    });
+    return worst;
+}
+
+function getPieChartStyle(ok, bad, none, total) {
+    if (total === 0) return `background: #e2e8f0;`; 
+    
+    const degOk = (ok / total) * 360;
+    const degBad = (bad / total) * 360;
+
+    return `background: conic-gradient(
+        #16a34a 0deg ${degOk}deg, 
+        #ef4444 ${degOk}deg ${degOk + degBad}deg, 
+        #e2e8f0 ${degOk + degBad}deg 360deg
+    );`;
+}
+
+/* ==========================================================
+   🔧 Navegación y Utilidades
+   ========================================================== */
+function toggleStatsAcc(slug) {
+  const el = document.getElementById(`stat-${slug}`);
+  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
+}
+
+function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
+function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
+
+function goToPracticeFromStats(slug) {
+    if (window.renderChoice) {
+        renderChoice();
+        setTimeout(() => {
+            if(typeof toggleMateriaChoice === 'function') {
+                toggleMateriaChoice(slug);
+            }
+        }, 50);
+    } else {
+        alert("Error: No se encuentra la pantalla de práctica.");
+    }
+}
+
+function checkAndGoToNotes(slug, name) {
+    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    // Filtrar notas que pertenezcan a preguntas de esta materia
+    const idsConNotas = Object.keys(savedNotes);
+    
+    const preguntasMateria = BANK.questions.filter(q => {
+        if(Array.isArray(q.materia)) return q.materia.includes(slug);
+        return q.materia === slug;
+    });
+    
+    const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
+    
+    if(hasNotes) {
+        if(window.renderNotasMain) {
+            renderNotasMain(); 
+        }
+    } else {
+        alert(`Todavía no tenés notas de ${name}!`);
+    }
+}
+
+function resetGlobalStats() {
+  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
+    localStorage.removeItem("MEbank_PROG_v3");
+    localStorage.removeItem("mebank_stats_daily");
+    location.reload();
+  }
+}
+
+function resetSubjectStats(slug, name) {
+    if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
+        if (PROG[slug]) {
+            delete PROG[slug];
+            if(window.saveProgress) window.saveProgress();
+            renderStats();
+        }
+    }
+}
+
+window.renderStats = renderStats;
