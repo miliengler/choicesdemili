@@ -1,5 +1,5 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos)
+   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos.)
    ========================================================== */
 
 /* --- 1. PROGRESO --- */
