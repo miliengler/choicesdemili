@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro (Con Pop Uniforme)
+   🎯 MEbank 3.0 – Simulacro (Con Pop Uniforme.)
    ========================================================== */
 
 function renderCrearExamen() {
