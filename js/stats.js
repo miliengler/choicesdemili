@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 MEbank 3.0 – Estadísticas (Dominio + Tema a Reforzar)
+   📊 MEbank 3.0 – Estadísticas (Dominio + Tema a Reforzar.)
    ========================================================== */
 
 function renderStats() {
