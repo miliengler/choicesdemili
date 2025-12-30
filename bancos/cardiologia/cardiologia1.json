@@ -1,1 +1,452 @@
-[]
+[
+  {
+    "id": "med_cardio_custom_001",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Un hombre de 52 años con una enfermedad pulmonar obstructiva grave, causada por el tabaco, acude con disnea de dos días de evolución y palpitaciones en las últimas 2 horas. En la auscultación se aprecian sibilancias espiratorias difusas y un latido irregular. El ECG revela una fibrilación auricular con una respuesta ventricular rápida de 170 lpm, y cambios inespecíficos de la repolarización. La fibrilación auricular de este enfermo se puede tratar con todo lo siguiente, excepto:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Metoprolol",
+      "b": "Digoxina",
+      "c": "Diltiazem",
+      "d": "Verapamilo"
+    },
+    "correcta": "a",
+    [span_0](start_span)"explicacion": "En pacientes con EPOC grave y broncoespasmo activo (sibilancias), los betabloqueantes no selectivos o incluso selectivos (como metoprolol) pueden exacerbar la obstrucción bronquial, por lo que suelen evitarse o usarse con extrema precaución en el contexto agudo frente a otras opciones como calcioantagonistas no dihidropiridínicos o digoxina[span_0](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_002",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Un varón asintomático de 18 años es enviado a cardiología para evaluación debido a un soplo cardíaco fuerte presente en un examen físico de rutina. El paciente ha tenido un soplo cardíaco desde que tenía 2 años de edad. El examen físico revela presión arterial normal, pulsos arteriales y pulso venoso yugular normales; los pulmones están claros. Un soplo sistólico largo de grado 4/6 tiene máxima auscultación en el borde esternal izquierdo bajo, y el S2 cardíaco se separa normalmente con la inspiración. La radiografía de tórax y el electrocardiograma son normales. El diagnóstico más probable es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Comunicación interventricular (CIV)",
+      "b": "Insuficiencia mitral",
+      "c": "Estenosis pulmonar congénita",
+      "d": "Estenosis aórtica congénita"
+    },
+    "correcta": "a",
+    "explicacion": "El soplo holosistólico áspero en el borde esternal izquierdo bajo (mesocardio/tricúspide) acompañado de frémito (grado 4/6) es característico de la Comunicación Interventricular (CIV). [span_1](start_span)[span_2](start_span)La CIV pequeña (enfermedad de Roger) suele ser asintomática pero produce un soplo muy intenso[span_1](end_span)[span_2](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_003",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "En una paciente de 64 años, diabética, con antecedentes de haber sufrido un infarto inferior tres años antes, quien desde ocho meses atrás refiere disnea a medianos esfuerzos y ortopnea... La fracción de expulsión es de 28%. ¿Cuál es la mejor estrategia para valorar el tratamiento óptimo de este paciente?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Angiorresonancia coronaria",
+      "b": "Arteriografía coronaria",
+      "c": "Ecocardiograma Doppler color",
+      "d": "Ecocardiograma Doppler color dinámico con dobutamina"
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes con disfunción ventricular severa y antecedentes de infarto, es crucial evaluar la viabilidad miocárdica para decidir si la revascularización mejorará la función. [span_3](start_span)El ecocardiograma de estrés con dobutamina es una herramienta clave para detectar reserva contráctil (viabilidad)[span_3](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_004",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Una mujer de 56 años con antecedentes de hipertensión arterial no tratada y tabaquista, consulta a la guardia porque hace 30 minutos comenzó con opresión precordial, disnea y sudoración profusa. Se realizó ECG que presenta elevación del segmento ST de 3 mV en las derivaciones DI, AVL y de V1 a V6. ¿Cuál es el diagnóstico más probable?",
+    "imagenes": [],
+    "opciones": {
+      "a": "SCACEST inferoposterior.",
+      "b": "SCACEST anterolateral.",
+      "c": "SCACEST anteroseptal.",
+      "d": "SCACEST anterior extenso."
+    },
+    "correcta": "d",
+    [span_4](start_span)[span_5](start_span)"explicacion": "La elevación del ST en DI, aVL (cara lateral alta) y de V1 a V6 (cara anterior completa) define un infarto anterior extenso, que suele implicar la oclusión de la arteria descendente anterior proximal[span_4](end_span)[span_5](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_005",
+    "materia": "cardiologia",
+    "submateria": "Aorta",
+    "enunciado": "La ecocardiografía transesofágica está indicada en el estudio de:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Insuficiencia tricuspidea",
+      "b": "El derrame pericárdico",
+      "c": "La disección de la aorta",
+      "d": "La estenosis mitral"
+    },
+    "correcta": "c",
+    [span_6](start_span)"explicacion": "El ecocardiograma transesofágico (ETE) tiene una alta sensibilidad y especificidad para visualizar la aorta torácica y es una prueba de elección ante la sospecha de disección aórtica, especialmente en pacientes inestables[span_6](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_006",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "La presencia de ondas Q de necrosis en DI, AVL, V5 y V6 indica:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Infarto de miocardio de cara anterior",
+      "b": "Infarto de miocardio lateral",
+      "c": "Angina prolongada.",
+      "d": "Infarto de miocardio anterior."
+    },
+    "correcta": "b",
+    "explicacion": "Las derivaciones DI y aVL miran la cara lateral alta, y V5-V6 la cara lateral baja. [span_7](start_span)[span_8](start_span)La presencia de ondas Q patológicas en estas derivaciones indica necrosis en la cara lateral del ventrículo izquierdo[span_7](end_span)[span_8](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_007",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "En relación al bloqueo auriculoventricular tipo Wenckebach (Mobitz I), Ud. sabe que:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Tiene mal pronóstico",
+      "b": "Se caracteriza por un intervalo PR alargado y constante",
+      "c": "Se caracteriza por un intervalo PR normal y disociación AV",
+      "d": "Puede darse en personas sanas con aumento del tono vagal"
+    },
+    "correcta": "d",
+    [span_9](start_span)"explicacion": "El bloqueo AV de segundo grado Mobitz I (Wenckebach) es a menudo una condición benigna que puede observarse en atletas o personas jóvenes sanas durante el sueño debido a un alto tono vagal, y no suele requerir marcapasos si es asintomático[span_9](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_008",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "En presencia de bloqueo de rama izquierda típico, puede sospecharse IAM cuando:",
+    "imagenes": [],
+    "opciones": {
+      "a": "El bloqueo de rama izquierda no permite la sospecha de un IAM",
+      "b": "Hay melladuras notables en el QRS de las derivaciones frontales y onda u positiva en D1 y AVL",
+      "c": "Hay inversión de la onda t en las derivaciones precordiales derechas",
+      "d": "El QRS dura más de 200 mseg y la negatividad de ST-T es predominante en cara lateral"
+    },
+    "correcta": "c",
+    [span_10](start_span)"explicacion": "Nota: Aunque los criterios de Sgarbossa son los más utilizados (elevación concordante del ST), la fuente oficial marca como correcta 'inversión de la onda T en precordiales derechas'[span_10](end_span). Generalmente, en BRI la onda T debe ser discordante al QRS (QRS negativo en V1-V3 -> T positiva); si la T se invierte (se vuelve negativa concordante con el QRS), sugiere isquemia (signo de Cabrera o Chapman, aunque menos sensible).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_009",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Una mujer de 72 años con antecedentes de hipertensión recibe atenolol en dosis bajas y Diltiazem. Trasladada tras síncope y traumatismo... Se advierte una bradicardia sinusal de 40 lpm con pausas de 3 a 4 segundos... Los pasos siguientes para tratar la arritmia consistirán en:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Colocación de almohadillas externas y marcapasos permanente.",
+      "b": "Suspensión del Diltiazem y atenolol e ingreso a UCO.",
+      "c": "Colocación de un marcapasos transitorio y luego el permanente.",
+      "d": "Colocación de un marcapasos transitorio y mantenimiento del tratamiento habitual."
+    },
+    "correcta": "d",
+    [span_11](start_span)"explicacion": "Nota: La respuesta oficial del archivo es 'Colocación de un marcapasos transitorio y mantenimiento del tratamiento habitual'[span_11](end_span). Clínicamente es controversial mantener fármacos cronotrópicos negativos causantes del cuadro, pero se respeta la fuente.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_010",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Una paciente femenino de 35 años, con síncope y bloqueo AV de tercer grado en estudio electrofisiológico. Se decide colocar un marcapasos definitivo, ¿Cuál sería el indicado?",
+    "imagenes": [],
+    "opciones": {
+      "a": "VVI",
+      "b": "DDDR",
+      "c": "AAIR",
+      "d": "VVIR"
+    },
+    "correcta": "b",
+    [span_12](start_span)[span_13](start_span)"explicacion": "En una paciente joven con bloqueo AV completo y ritmo sinusal preservado (aurícula funcionante), el modo de elección es bicameral (DDD/DDDR) para mantener la sincronía auriculoventricular y permitir la respuesta de frecuencia (R) ante el esfuerzo[span_12](end_span)[span_13](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_011",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Ingresa a guardia un paciente con antecedentes de HTA, refiere palpitaciones rápidas e irregulares desde hace 72 horas. ECG: fibrilación auricular de alta respuesta ventricular (145 lpm). ¿Qué conducta adoptaría?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Anticoagular por 1 mes para luego revertirlo a ritmo sinusal.",
+      "b": "Realizar cardioversión eléctrica",
+      "c": "Disminuir la frecuencia ventricular.",
+      "d": "Intentar cardioversión farmacológica."
+    },
+    "correcta": "c",
+    "explicacion": "Al llevar 72 horas de evolución, el paciente está fuera de la ventana de seguridad (<48h) para cardioversión inmediata sin anticoagulación (riesgo de tromboembolia). [span_14](start_span)La prioridad inicial es el control de la frecuencia ventricular (frenar la respuesta) y anticoagular, difiriendo la cardioversión[span_14](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_012",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "¿Cuáles de las siguientes drogas no prolonga el intervalo QT?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Procainamida",
+      "b": "Atenolol",
+      "c": "Amiodarona",
+      "d": "Quinidina"
+    },
+    "correcta": "b",
+    "explicacion": "Los betabloqueantes como el Atenolol no prolongan el intervalo QT (de hecho, se usan en el síndrome de QT largo congénito). [span_15](start_span)La Procainamida, Amiodarona y Quinidina son antiarrítmicos que sí afectan la repolarización y prolongan el QT[span_15](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_013",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Todos los siguientes factores aumentan la mortalidad por cateterismo cardíaco, excepto:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Angina inestable",
+      "b": "Fracción de eyección inferior al 30%",
+      "c": "Valvulopatía grave asociada a enfermedad coronaria",
+      "d": "Insuficiencia cardiaca descompensada."
+    },
+    "correcta": "a",
+    [span_16](start_span)"explicacion": "La angina inestable per se, aunque es una indicación de cateterismo, tiene menor riesgo de mortalidad procedimental comparado con situaciones críticas como insuficiencia cardíaca descompensada, disfunción ventricular severa (<30%) o valvulopatía grave concomitante[span_16](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_014",
+    "materia": "cardiologia",
+    "submateria": "Infectologia",
+    "enunciado": "Se obtiene un ecocardiograma transtorácico que no muestra evidencia de vegetación. En los cultivos de sangre ha crecido Staphylococcus aureus en varias ocasiones. El siguiente paso diagnóstico es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Cateterismo cardiaco",
+      "b": "Ecocardiograma transesofágico",
+      "c": "Ecocardiograma de estrés con dobutamina.",
+      "d": "La medición del péptido natriurético cerebral"
+    },
+    "correcta": "b",
+    [span_17](start_span)"explicacion": "Ante una bacteriemia por S. aureus y sospecha de endocarditis, si el ecocardiograma transtorácico (ETT) es negativo o dudoso, es mandatorio realizar un ecocardiograma transesofágico (ETE) por su mayor sensibilidad para detectar vegetaciones y abscesos[span_17](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_015",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un paciente internado en UCO por insuficiencia cardíaca tiene hipotensión arterial, presión capilar pulmonar (Wedge) de 25 mm Hg, e índice cardiaco de 1.8 lts/min/m2. ¿Qué tratamiento debo aplicarle?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Expansión de volumen ya que se encuentra hipovolémico.",
+      "b": "Inotrópicos y diuréticos ya que se encuentra en shock cardiogénico",
+      "c": "Epinefrina vía oral y diuréticos",
+      "d": "Vasodilatadores arteriovenosos y diuréticos"
+    },
+    "correcta": "b",
+    "explicacion": "El perfil hemodinámico 'húmedo y frío' (Wedge elevado >18, Índice Cardíaco bajo <2.2, hipotensión) corresponde a shock cardiogénico. Requiere soporte inotrópico para mejorar el gasto y diuréticos para descongestionar (una vez estabilizada la presión). [span_18](start_span)[span_19](start_span)Los vasodilatadores están contraindicados inicialmente por la hipotensión[span_18](end_span)[span_19](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_016",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Recibimos una paciente de 71 años, con 'palpitaciones' este último año, CF III-IV, edemas, ECG: fibrilación auricular a 120 lpm. ¿Qué NO debe hacerse de inmediato?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Administrar digoxina y diuréticos",
+      "b": "Anticoagulación con heparina y cumarínicos",
+      "c": "Disminución de la respuesta ventricular",
+      "d": "Cardioversión eléctrica"
+    },
+    "correcta": "d",
+    [span_20](start_span)"explicacion": "La cardioversión eléctrica inmediata está contraindicada (o no indicada 'de inmediato') en una FA de larga data (>1 año o desconocida >48h) sin anticoagulación previa o ETE, debido al alto riesgo de embolia sistémica[span_20](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_017",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Todas las siguientes técnicas permiten detectar el miocardio viable, excepto:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Perfusión miocárdica con talio 201",
+      "b": "TC 3D con contraste endovenoso",
+      "c": "Ecocardiografía stress con dobutamina.",
+      "d": "PET-TC"
+    },
+    "correcta": "b",
+    [span_21](start_span)"explicacion": "La TC cardíaca es excelente para anatomía coronaria, pero la TC convencional con contraste (angioTC) no es la técnica estándar ni fisiológica para evaluar viabilidad miocárdica metabólica o contráctil, a diferencia del Talio, PET o Eco estrés[span_21](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_018",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Se diagnostica taquicardia ventricular (TV). Marque la incorrecta:",
+    "imagenes": [],
+    "opciones": {
+      "a": "La TV se define como sostenida cuando perdura por más de 10 minutos",
+      "b": "A veces responden a la administración de lidocaína.",
+      "c": "Los pacientes sin cardiopatía con TV uniforme tienen un pronóstico favorable",
+      "d": "En algunos casos puede ser abolida mediante ablación por radiofrecuencia"
+    },
+    "correcta": "a",
+    "explicacion": "La definición estándar de Taquicardia Ventricular Sostenida es aquella que dura más de 30 segundos o requiere terminación antes por inestabilidad hemodinámica. [span_22](start_span)La opción de 'más de 10 minutos' es incorrecta por exceso[span_22](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_019",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Un joven atleta de 18 años, soplo de eyección grado 2/6 en foco pulmonar/mesocardio. El soplo disminuye con Valsalva pero se incrementa luego de incorporarse. ECG bradicardia sinusal normal. ¿Cuál es el próximo paso adecuado?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Radiografía de tórax",
+      "b": "Electrocardiograma de estrés",
+      "c": "Ecocardiograma Doppler color",
+      "d": "Electrocardiograma ambulatorio de 24 hs."
+    },
+    "correcta": "c",
+    [span_23](start_span)"explicacion": "Aunque muchos soplos en atletas son inocentes, cualquier hallazgo que genere duda o comportamiento dinámico (cambios con maniobras) en un atleta de competición justifica un Ecocardiograma para descartar cardiopatía estructural (como miocardiopatía hipertrófica, aunque esta suele aumentar con Valsalva, la evaluación completa es mandataria)[span_23](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_020",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Una mujer de 42 años sufre edema maleolar bilateral. Presión venosa yugular normal (5 cm H2O), sin reflujo hepatoyugular. El diagnóstico diferencial del edema incluye todo lo siguiente, excepto:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Sindrome nefrótico",
+      "b": "Tratamiento con Diltiazem",
+      "c": "Insuficiencia cardiaca derecha",
+      "d": "Mixedema"
+    },
+    "correcta": "c",
+    "explicacion": "La Insuficiencia Cardíaca Derecha se caracteriza cardinalmente por aumento de la presión venosa (ingurgitación yugular). [span_24](start_span)[span_25](start_span)Si la PVY es normal, el edema no es cardiogénico derecho (puede ser renal, farmacológico, tiroideo o venoso local)[span_24](end_span)[span_25](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_021",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "Una paciente de 52 años con válvula aórtica mecánica (implantada hace 8 años) presenta hemianopsia (ACV). RIN de 2.1. Tiene Fibrilación Auricular. ¿Cuál es verdadera?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Se le debe recomendar un fármaco anti plaquetario",
+      "b": "La causa está relacionada claramente con la válvula",
+      "c": "Su tiempo de protrombina se encuentra dentro de los limites",
+      "d": "El riesgo de padecer acv en el futuro está aumentado"
+    },
+    "correcta": "d",
+    "explicacion": "Haber tenido un evento embólico (ACV) aumenta significativamente el riesgo de recurrencia. [span_26](start_span)Además, un RIN de 2.1 es bajo para una válvula mecánica (generalmente se busca 2.5-3.5 dependiendo de la posición y factores de riesgo) y más aún con FA concomitante[span_26](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_022",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Señale qué maniobra ha de realizar prioritariamente en el caso de un paro cardiorrespiratorio:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Cardioversión eléctrica",
+      "b": "Buscar una vía aérea permeable",
+      "c": "Inyección de adrenalina intracardiaca",
+      "d": "Masaje Cardiaco"
+    },
+    "correcta": "d",
+    [span_27](start_span)"explicacion": "En el paro cardiorrespiratorio, las compresiones torácicas (masaje cardíaco) son la prioridad absoluta (CAB en lugar de ABC en adultos) para mantener la perfusión cerebral y coronaria[span_27](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_023",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Una mujer de 55 años presenta fibrilación auricular tres años después de un infarto. TA 134/78, FC 146 lpm, sin insuficiencia cardíaca. El tratamiento inicial apropiado incluye:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Bloqueante beta",
+      "b": "Cardioversión eléctrica inmediata",
+      "c": "Bloqueante alfa y beta",
+      "d": "Quinidina por vía E.V."
+    },
+    "correcta": "a",
+    [span_28](start_span)"explicacion": "Para el control de frecuencia inicial en un paciente estable post-IAM con función conservada, los betabloqueantes son de elección para frenar la respuesta ventricular[span_28](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_024",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Un paciente con insuficiencia cardiaca tiene taquicardia supraventricular por reentrada intranodal (170 lpm). ¿Cuál es el tratamiento más efectivo?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Cardioversión eléctrica",
+      "b": "Administración de verapamilo endovenoso",
+      "c": "Modificación del nódulo mediante catéter de radiofrecuencia",
+      "d": "Administración de digital intravenosa junto con diurético"
+    },
+    "correcta": "c",
+    [span_29](start_span)"explicacion": "La ablación por radiofrecuencia (modificación del nodo AV) es el tratamiento curativo y más efectivo a largo plazo para la reentrada intranodal, especialmente si es recurrente o sintomática[span_29](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_025",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
+    "enunciado": "Un varón de 50 años, asintomático. TA 160/100 mmHg. Retinopatía hipertensiva y signos ECG de HVI. Conducta más apropiada:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Pensar que la TA está falsamente elevada.",
+      "b": "Búsqueda de causas de HTA secundaria",
+      "c": "Dosaje de renina plasmática.",
+      "d": "Solicitar un ecocardiograma bidimensional."
+    },
+    "correcta": "d",
+    [span_30](start_span)"explicacion": "Ante signos de daño de órgano blanco (HVI en ECG, retinopatía), el siguiente paso lógico es cuantificar dicho daño, por ejemplo, con un ecocardiograma para evaluar la masa ventricular y función, confirmando la severidad y cronicidad de la HTA[span_30](end_span).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  }
+]
