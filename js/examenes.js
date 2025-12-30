@@ -1,9 +1,18 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (UI Final + Logic Fix)
+   📝 MEbank 3.0 – Exámenes Anteriores (Con Análisis Gráfico)
    ========================================================== */
 
 /* ==========================================================
-   🔵 CÍRCULO DE PROGRESO ANIMADO
+   🎨 PALETA DE COLORES (Para el gráfico)
+   ========================================================== */
+const CHART_COLORS = [
+  "#3b82f6", "#ef4444", "#10b981", "#f59e0b", "#8b5cf6", 
+  "#ec4899", "#06b6d4", "#84cc16", "#f97316", "#6366f1",
+  "#14b8a6", "#d946ef", "#e11d48", "#22c55e", "#64748b"
+];
+
+/* ==========================================================
+   🔵 CÍRCULO DE PROGRESO (UI Exámenes)
    ========================================================== */
 function renderProgressCircleExam(percent) {
   const size = 42;
@@ -11,8 +20,7 @@ function renderProgressCircleExam(percent) {
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percent / 100) * circumference;
-
-  // Color dinámico
+  
   let color = percent === 100 ? '#16a34a' : (percent > 0 ? '#3b82f6' : '#cbd5e1');
 
   return `
@@ -27,7 +35,7 @@ function renderProgressCircleExam(percent) {
 }
 
 /* ==========================================================
-   🏠 Render principal (Con Header Nuevo y Estilos)
+   🏠 Render Principal
    ========================================================== */
 function renderExamenesMain() {
   const app = document.getElementById("app");
@@ -36,7 +44,7 @@ function renderExamenesMain() {
 
   const listaHtml = gruposOrdenados.map(g => renderGrupoExamen(g, grupos[g])).join("");
 
-  // Estilos CSS inyectados para Badges y Botones nuevos
+  // INYECCIÓN DE ESTILOS (Badges + Chart + Modal)
   const styles = `
     <style>
       .badge-status { padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-left: 8px; }
@@ -51,14 +59,48 @@ function renderExamenesMain() {
       }
       .btn-reset:hover { background: #fef2f2; }
       
-      .btn-review {
-         background: white; border: 1px solid #3b82f6; color: #1d4ed8; font-weight: 700;
+      .btn-review { background: white; border: 1px solid #3b82f6; color: #1d4ed8; font-weight: 700; }
+      
+      /* ESTILOS DEL GRÁFICO (MODAL) */
+      .chart-container { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-top: 10px; }
+      .donut-chart {
+        width: 140px; height: 140px; border-radius: 50%;
+        position: relative; margin: 0 auto;
+        /* El gradiente se inyecta por JS */
+      }
+      .donut-hole {
+        width: 90px; height: 90px; background: var(--bg-card, white); border-radius: 50%;
+        position: absolute; top: 25px; left: 25px;
+        display: flex; align-items: center; justify-content: center;
+        flex-direction: column;
+        box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+      }
+      .chart-legend { flex: 1; min-width: 200px; max-height: 300px; overflow-y: auto; }
+      .legend-item { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; font-size: 13px; }
+      .legend-color { width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; display: inline-block; }
+      .legend-bar-bg { flex: 1; height: 6px; background: #f1f5f9; border-radius: 3px; margin: 0 10px; overflow: hidden; }
+      .legend-bar-fill { height: 100%; border-radius: 3px; }
+      
+      .disclaimer-box {
+        margin-top: 20px; padding: 10px; background: #fffbeb; border: 1px solid #fcd34d; 
+        border-radius: 8px; font-size: 11px; color: #92400e; display: flex; gap: 8px;
       }
     </style>
   `;
 
   app.innerHTML = `
     ${styles}
+    
+    <div id="analysisModal" class="modal-overlay" onclick="closeModals(event)" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; backdrop-filter:blur(2px);">
+        <div class="modal-content" style="background:var(--bg-card, white); padding:25px; border-radius:12px; max-width:600px; width:90%; box-shadow:0 10px 30px rgba(0,0,0,0.2); max-height:90vh; overflow-y:auto;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
+                <h3 id="analysisTitle" style="margin:0; font-size:18px; color:var(--text-main, #1e293b);">📊 Análisis</h3>
+                <button onclick="document.getElementById('analysisModal').style.display='none'" style="background:none; border:none; font-size:24px; cursor:pointer; color:var(--text-sec, #64748b);">×</button>
+            </div>
+            <div id="analysisBody"></div>
+        </div>
+    </div>
+
     <div class="card fade" style="max-width:900px;margin:auto;">
       
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
@@ -86,8 +128,14 @@ function renderExamenesMain() {
   `;
 }
 
+function closeModals(e) {
+    if (e.target.classList.contains('modal-overlay')) {
+        e.target.style.display = 'none';
+    }
+}
+
 function mostrarInfoExamenesOficiales() {
-    alert("ℹ️ EXÁMENES OFICIALES\n\n• Pendiente: No iniciado.\n• En Curso: Progreso guardado.\n• Completado: 100% respondido.\n\nPodés usar el botón 'Reiniciar' para borrar tu progreso de un examen específico y volver a practicarlo desde cero.");
+    alert("ℹ️ EXÁMENES OFICIALES\n\n• Pendiente: No iniciado.\n• En Curso: Progreso guardado.\n• Completado: 100% respondido.\n\nPodés usar el botón '📊' para ver estadísticas de qué materias se toman más.");
 }
 
 function agruparExamenesPorGrupo() {
@@ -105,7 +153,7 @@ function agruparExamenesPorGrupo() {
 }
 
 /* ==========================================================
-   🏛 Render de grupo e items
+   🏛 Render de Grupos
    ========================================================== */
 let examenesOpenGrupo = null;
 let examenesOpenExamen = null;
@@ -114,12 +162,23 @@ function renderGrupoExamen(nombreGrupo, lista) {
   const abierto = examenesOpenGrupo === nombreGrupo;
   return `
     <div class="materia-block" style="border:1px solid #e2e8f0;border-radius:10px;padding:14px;margin-bottom:12px; background:white;">
-      <div style="display:flex;justify-content:space-between;align-items:center;cursor:pointer;" onclick="toggleGrupoExamen('${nombreGrupo}')">
-        <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        
+        <div style="cursor:pointer; flex:1;" onclick="toggleGrupoExamen('${nombreGrupo}')">
             <b style="font-size:16px; color:#1e293b;">${nombreGrupo}</b>
             <div style="font-size:12px;color:#64748b;">${lista.length} exámenes disponibles</div>
         </div>
-        <div style="width:42px;height:42px;">${renderProgressCircleExam(0)}</div> 
+
+        <div style="display:flex; align-items:center; gap:10px;">
+             <button onclick="analizarGrupo('${nombreGrupo}')" title="Analizar todo el historial de ${nombreGrupo}"
+                     style="background:#f0f9ff; border:1px solid #bae6fd; width:32px; height:32px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:14px;">
+                📊
+             </button>
+             <div style="width:42px;height:42px; cursor:pointer;" onclick="toggleGrupoExamen('${nombreGrupo}')">
+                ${renderProgressCircleExam(0)}
+             </div> 
+        </div>
+
       </div>
       ${abierto ? renderGrupoExamenExpanded(lista) : ""}
     </div>
@@ -141,11 +200,8 @@ function renderItemExamen(ex) {
   const total = preguntas.length;
   const progreso = calcularProgresoExamen(ex.id);
   const abierto = examenesOpenExamen === ex.id;
-  
-  // Fondo sutilmente distinto si está abierto
   const bg = abierto ? '#f8fafc' : 'white';
 
-  // Badges
   let badge = `<span class="badge-status bg-gray">Pendiente</span>`;
   if (progreso > 0 && progreso < 100) badge = `<span class="badge-status bg-orange">En Curso</span>`;
   if (progreso === 100) badge = `<span class="badge-status bg-green">Completado</span>`;
@@ -177,7 +233,7 @@ function toggleExamenItem(id) {
 function formatearNombreExamen(id) { return id.replace(/_/g, " ").toUpperCase(); }
 
 /* ==========================================================
-   📘 Contenido interno (BOTONERA MEJORADA)
+   📘 Botonera
    ========================================================== */
 function renderExpandExamen(ex, preguntas, progreso) {
   const iniciado = progreso > 0;
@@ -196,7 +252,6 @@ function renderExpandExamen(ex, preguntas, progreso) {
         <button class="btn-main" onclick="${iniciado ? `reanudarExamen('${ex.id}')` : `iniciarExamen('${ex.id}')`}">
            ${iniciado ? '⏩ Reanudar' : '▶ Iniciar Examen'}
         </button>
-        
         ${iniciado ? 
            `<button class="btn-main btn-review" onclick="revisarExamen('${ex.id}')">👁️ Revisar</button>` 
            : `<button class="btn-disabled" disabled style="opacity:0.5; cursor:not-allowed;">👁️ Revisar</button>`
@@ -204,11 +259,11 @@ function renderExpandExamen(ex, preguntas, progreso) {
       </div>
 
       <div style="display:flex; gap:10px;">
+        <button class="btn-small" style="flex:1; background:#f8fafc; color:#475569;" onclick="analizarExamen('${ex.id}')">📊 Análisis</button>
         <button class="btn-small" style="flex:1; background:#f8fafc; color:#475569;" onclick="verNotasExamen('${ex.id}')">📒 Notas</button>
-        <button class="btn-small" style="flex:1; background:#f8fafc; color:#475569;" onclick="verStatsExamen('${ex.id}')">📊 Stats</button>
         
         ${iniciado ? 
-           `<button class="btn-reset" onclick="resetearExamen('${ex.id}')">🗑️ Reiniciar</button>` 
+           `<button class="btn-reset" onclick="resetearExamen('${ex.id}')">🗑️ Reset</button>` 
            : ''
         }
       </div>
@@ -218,114 +273,166 @@ function renderExpandExamen(ex, preguntas, progreso) {
 }
 
 /* ==========================================================
-   📊 Progreso y Datos
+   📊 LÓGICA DE ANÁLISIS (GRÁFICO)
+   ========================================================== */
+function analizarExamen(examId) {
+    const preguntas = getQuestionsByExamen(examId);
+    mostrarModalAnalisis(formatearNombreExamen(examId), preguntas);
+}
+
+function analizarGrupo(nombreGrupo) {
+    if(typeof EXAMENES_META === 'undefined') return;
+    
+    // 1. Obtener todos los IDs de ese grupo
+    const examenesDelGrupo = EXAMENES_META.filter(e => e.grupo === nombreGrupo);
+    
+    let todasLasPreguntas = [];
+    examenesDelGrupo.forEach(ex => {
+        todasLasPreguntas = todasLasPreguntas.concat(getQuestionsByExamen(ex.id));
+    });
+
+    mostrarModalAnalisis(`Histórico: ${nombreGrupo}`, todasLasPreguntas);
+}
+
+function mostrarModalAnalisis(titulo, preguntas) {
+    const modal = document.getElementById('analysisModal');
+    const titleEl = document.getElementById('analysisTitle');
+    const bodyEl = document.getElementById('analysisBody');
+
+    titleEl.textContent = `📊 Análisis: ${titulo}`;
+
+    if(preguntas.length === 0) {
+        bodyEl.innerHTML = "<p>No hay preguntas disponibles para analizar.</p>";
+        modal.style.display = 'flex';
+        return;
+    }
+
+    // 1. Conteo de Materias
+    const counts = {};
+    let totalTags = 0; // Total de menciones (puede ser mayor a total de preguntas)
+    
+    preguntas.forEach(q => {
+        const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
+        materias.forEach(m => {
+            counts[m] = (counts[m] || 0) + 1;
+            totalTags++;
+        });
+    });
+
+    // 2. Ordenar datos
+    const data = Object.keys(counts)
+        .map(m => ({ name: m, count: counts[m] }))
+        .sort((a, b) => b.count - a.count);
+
+    // 3. Asignar Colores y Porcentajes
+    const chartData = data.map((d, i) => {
+        const color = CHART_COLORS[i % CHART_COLORS.length];
+        const percent = (d.count / totalTags) * 100;
+        return { ...d, color, percent };
+    });
+
+    // 4. Generar Gradiente Cónico para el Donut
+    let gradientStr = "";
+    let currentPerc = 0;
+    chartData.forEach(d => {
+        const endPerc = currentPerc + d.percent;
+        gradientStr += `${d.color} ${currentPerc}% ${endPerc}%,`;
+        currentPerc = endPerc;
+    });
+    gradientStr = gradientStr.slice(0, -1); // Sacar última coma
+
+    // 5. Generar HTML Lista
+    const listHtml = chartData.map(d => `
+        <div class="legend-item">
+            <div style="display:flex; align-items:center; width:130px;">
+                <span class="legend-color" style="background:${d.color}"></span>
+                <span style="font-weight:600; text-transform:capitalize; color:var(--text-main, #334155); white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                   ${d.name.replace(/_/g, " ")}
+                </span>
+            </div>
+            <div class="legend-bar-bg">
+                <div class="legend-bar-fill" style="width:${d.percent}%; background:${d.color};"></div>
+            </div>
+            <div style="font-weight:700; color:var(--text-main, #1e293b); font-size:12px;">${d.count}</div>
+        </div>
+    `).join("");
+
+    // 6. Render Final
+    bodyEl.innerHTML = `
+        <div class="chart-container">
+            <div class="donut-chart" style="background: conic-gradient(${gradientStr});">
+                <div class="donut-hole">
+                    <div style="font-size:24px; font-weight:800; color:var(--text-main, #1e293b);">${preguntas.length}</div>
+                    <div style="font-size:10px; color:var(--text-sec, #64748b); font-weight:600; text-transform:uppercase;">Preguntas</div>
+                </div>
+            </div>
+            
+            <div class="chart-legend">
+                ${listHtml}
+            </div>
+        </div>
+
+        <div class="disclaimer-box">
+           <span style="font-size:16px;">⚠️</span>
+           <div>
+             <b>Nota:</b> El total de temas (${totalTags}) puede ser mayor al de preguntas (${preguntas.length}) porque algunas preguntas multidisciplinarias suman en varias categorías a la vez.
+           </div>
+        </div>
+    `;
+
+    modal.style.display = 'flex';
+}
+
+/* ==========================================================
+   📊 Progreso y Helpers
    ========================================================== */
 function calcularProgresoExamen(examenId) {
   const preguntas = getQuestionsByExamen(examenId);
   if (!preguntas.length) return 0;
   let resueltas = 0;
   preguntas.forEach(q => {
-    // Busca progreso global. Ajustar si tu estructura PROG es distinta.
     const r = PROG[q.materia]?.[q.id];
     if (r && (r.status === "ok" || r.status === "bad")) resueltas++;
   });
   return Math.round((resueltas / preguntas.length) * 100);
 }
 
-// 🔥 FIX IMPORTANTE: Búsqueda robusta de preguntas
 function getQuestionsByExamen(examId) {
     if (typeof BANK === 'undefined' || !BANK.questions) return [];
-    
     return BANK.questions.filter(q => {
-        // 1. Coincidencia exacta de propiedad 'examen' o 'source'
         if (q.examen === examId) return true;
         if (q.source === examId) return true;
-        
-        // 2. Coincidencia por prefijo en el ID (ej: "eu_2023_01" empieza con "eu_2023")
         if (q.id && q.id.startsWith(examId)) return true;
-        
         return false;
     });
 }
 
-/* ==========================================================
-   ▶ Lógica de Botones
-   ========================================================== */
-
 function iniciarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
   if (!preguntas.length) return alert("No se encontraron preguntas.");
-
   const checkEl = document.getElementById(`timer-check-${id}`);
-  const usarTimer = checkEl ? checkEl.checked : false;
-
-  iniciarResolucion({
-    modo: "examen",
-    preguntas,
-    usarTimer: usarTimer,
-    titulo: formatearNombreExamen(id),
-    examenId: id
-  });
+  iniciarResolucion({ modo: "examen", preguntas, usarTimer: checkEl ? checkEl.checked : false, titulo: formatearNombreExamen(id), examenId: id });
 }
 
 function reanudarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
-  // Filtrar solo las pendientes
-  const pendientes = preguntas.filter(q => {
-      const r = PROG[q.materia]?.[q.id];
-      return !r || (r.status !== 'ok' && r.status !== 'bad');
-  });
-
-  if(pendientes.length === 0) return alert("¡Examen completado! Usá 'Revisar' para ver tus respuestas.");
-
+  const pendientes = preguntas.filter(q => { const r = PROG[q.materia]?.[q.id]; return !r || (r.status !== 'ok' && r.status !== 'bad'); });
+  if(pendientes.length === 0) return alert("¡Examen completado!");
   const checkEl = document.getElementById(`timer-check-${id}`);
-  const usarTimer = checkEl ? checkEl.checked : true; // Por defecto true al reanudar
-
-  iniciarResolucion({
-    modo: "reanudar",
-    preguntas: pendientes,
-    usarTimer: usarTimer, 
-    titulo: formatearNombreExamen(id) + " (Cont.)",
-    examenId: id
-  });
+  iniciarResolucion({ modo: "reanudar", preguntas: pendientes, usarTimer: checkEl ? checkEl.checked : true, titulo: formatearNombreExamen(id) + " (Cont.)", examenId: id });
 }
 
 function revisarExamen(id) {
-    const preguntas = getQuestionsByExamen(id);
-    // Revisión: Enviamos todas las preguntas para ver el sidebar completo
-    iniciarResolucion({
-        modo: "revision",
-        preguntas: preguntas,
-        usarTimer: false,
-        titulo: "Revisión: " + formatearNombreExamen(id),
-        mostrarNotas: true
-    });
+    iniciarResolucion({ modo: "revision", preguntas: getQuestionsByExamen(id), usarTimer: false, titulo: "Rev: " + formatearNombreExamen(id), mostrarNotas: true });
 }
 
 function resetearExamen(id) {
-    if(!confirm("⚠️ ¿Estás seguro de querer REINICIAR este examen?\n\nSe borrarán todas tus respuestas de este examen específico. Esta acción no se puede deshacer.")) {
-        return;
-    }
-
+    if(!confirm("⚠ ¿Reiniciar este examen? Se borrará todo el progreso.")) return;
     const preguntas = getQuestionsByExamen(id);
     let cambios = false;
-
-    // Borrado quirúrgico en PROG
-    preguntas.forEach(q => {
-        if(PROG[q.materia] && PROG[q.materia][q.id]) {
-            delete PROG[q.materia][q.id];
-            cambios = true;
-        }
-    });
-
-    if(cambios) {
-        if(typeof saveProgress === 'function') saveProgress();
-        alert("♻️ Examen reiniciado.");
-        renderExamenesMain(); // Refrescar pantalla
-    } else {
-        alert("No se encontró progreso para borrar.");
-    }
+    preguntas.forEach(q => { if(PROG[q.materia] && PROG[q.materia][q.id]) { delete PROG[q.materia][q.id]; cambios = true; } });
+    if(cambios) { if(typeof saveProgress === 'function') saveProgress(); renderExamenesMain(); } 
+    else { alert("No había progreso."); }
 }
 
-function verNotasExamen(id) { renderNotasMain(); } // Redirige al main de notas
-function verStatsExamen(id) { renderStatsExamen(id); } // (Si tenés esta función definida)
+function verNotasExamen(id) { renderNotasMain(); }
