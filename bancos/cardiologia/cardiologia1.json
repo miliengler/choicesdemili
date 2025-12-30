@@ -448,5 +448,457 @@
     "examen": "",
     "anio": null,
     "oficial": false
+  },
+  
+  {
+    "id": "med_cardio_custom_026",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "Uno de los siguientes hallazgos no es propio de Fiebre Reumática:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Pericarditis",
+      "b": "Insuficiencia cardiaca",
+      "c": "Nódulos subcutáneos indoloros",
+      "d": "Soplo de insuficiencia tricuspide"
+    },
+    "correcta": "d",
+    "explicacion": "Los criterios de Jones para Fiebre Reumática incluyen carditis (que puede manifestarse como soplos de insuficiencia mitral o aórtica, pericarditis, IC), nódulos subcutáneos, corea, eritema marginado y poliartritis. El soplo de insuficiencia tricúspide aislada no es un hallazgo característico ni criterio mayor.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_027",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Uno de los siguientes hallazgos no es propio de la comunicación interauricular; señale cuál:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Presencia de cortocircuito de izquierda a derecha",
+      "b": "Bloqueo de rama izquierda del Haz de His",
+      "c": "Sobrecarga de volumen de la aurícula derecha",
+      "d": "Sobrecarga de volumen del ventrículo derecho"
+    },
+    "correcta": "b",
+    "explicacion": "La Comunicación Interauricular (CIA) produce clásicamente un patrón de Bloqueo Incompleto o Completo de Rama DERECHA (no izquierda) debido a la sobrecarga de volumen del ventrículo derecho.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_028",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un hombre de 65 años, con antecedentes prolongados de hipertensión no tratada, se queja de disnea recidivante a mínimos esfuerzos. La exploración cardiovascular es normal, con excepción de un latido prominente de la punta. La Rx de tórax tampoco muestra anomalías, salvo un discreto aumento del ventrículo izquierdo. La prueba de esfuerzo con talio no indica isquemia miocárdica. En la ecocardiografía bidimensional se observa una hipertrofia ventricular izquierda y leve dilatación de la aurícula izquierda. La ventriculografía radioisotópica presenta fracciones normales de eyección de ambos ventrículos. ¿Cuál es la explicación más verosímil de los síntomas de este paciente?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Isquemia miocárdica",
+      "b": "Insuficiencia cardíaca anterógrada",
+      "c": "Enfermedad pulmonar obstructiva crónica",
+      "d": "Disfunción diastólica ventricular izquierda."
+    },
+    "correcta": "d",
+    "explicacion": "El paciente presenta síntomas de insuficiencia cardíaca (disnea) con función sistólica preservada (FE normal) e Hipertrofia Ventricular Izquierda (HVI) por hipertensión. Esto es el cuadro clásico de Insuficiencia Cardíaca con Fracción de Eyección Preservada (ICFEP) debida a disfunción diastólica.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_029",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Uno de los siguientes hallazgos no es propio de Fiebre Reumática (Profilaxis):",
+    "imagenes": [],
+    "opciones": {
+      "a": "Sulfadiazina 1 gr cada 6 hs por vía oral",
+      "b": "Penicilina G benzatínica 1.200.00 U/mes I.M.",
+      "c": "En la actualidad no está indicada la profilaxis.",
+      "d": "Amoxicilina 2 gr por vía oral"
+    },
+    "correcta": "b",
+    "explicacion": "La profilaxis secundaria estándar de elección para evitar recurrencias de Fiebre Reumática es la Penicilina G Benzatínica intramuscular cada 3-4 semanas (mensual).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_030",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
+    "enunciado": "Lo consulta una mujer embarazada e hipertensa. ¿Cuál de las siguientes drogas utilizaría como primera opción de tratamiento?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Metildopa",
+      "b": "Losartan",
+      "c": "Nifedipina",
+      "d": "Hidralazina"
+    },
+    "correcta": "a",
+    "explicacion": "La Alfametildopa es el fármaco de primera línea clásico y más estudiado para el manejo crónico de la hipertensión en el embarazo por su seguridad fetal.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_031",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Una paciente de 70 años de edad hipertensa desde hace 10 años ingresa con disnea de pequeños esfuerzos... S4 y estertores crepitantes... El ecocardiograma muestra hipertrofia ventricular izquierda, diámetros normales, fracción de expulsión de 52%. ¿Cuál es el diagnóstico y tratamiento correcto?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Disfunción diastólica: bloqueantes beta, venodilatadores, IECA, diuréticos",
+      "b": "Edema pulmonar no cardiogénico: metilprednisolona, diuréticos, antagonistas del calcio, dopamina",
+      "c": "Tromboembolia pulmonar aguda: activador tisular del plasminógeno, diurético, heparina no fraccionada.",
+      "d": "Insuficiencia cardíaca: digital, diuréticos, dobutamina, venodilatadores"
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de un edema agudo de pulmón hipertensivo con función sistólica conservada (Disfunción Diastólica). El tratamiento se basa en controlar la congestión (diuréticos, venodilatadores) y la presión arterial/frecuencia (betabloqueantes, IECA).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_032",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un paciente de 60 años con antecedentes de disnea Clase Funcional II/III al examen físico, TA 110/60 mm Hg, sin signos de insuficiencia cardíaca, el ecocardiograma presenta fracción de eyección 25% ¿Cuál es el tratamiento óptimo para mejorar su sobrevida?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Bloqueantes cálcicos, aspirina y anticoagulación",
+      "b": "Digital, furosemida y amiodarona",
+      "c": "Beta bloqueante, IECA y espironolactona",
+      "d": "Anticoagulación, furosemida y digital"
+    },
+    "correcta": "c",
+    "explicacion": "La triple terapia con Betabloqueantes, IECA (o ARA II/ARNI) y antagonistas de mineralocorticoides (Espironolactona) es el pilar fundamental que ha demostrado reducir mortalidad en pacientes con IC y fracción de eyección reducida.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_033",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "El examen del pulso carotídeo de un paciente revela dos impulsos o picos durante la sístole ventricular (pulso bisferiens), el primero amplio, de breve duración y el segundo de menor amplitud, separados por un brusco colapso mesosistólico. ¿Cuál de las siguientes opciones se asocia con este hallazgo?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Disminución de la presión sistólica durante la inspiración",
+      "b": "Tercer tono cardíaco de origen derecho",
+      "c": "Soplo diastólico decreciente, que aumenta durante la maniobra de ejercicio isométrico",
+      "d": "Soplo diastólico en barra"
+    },
+    "correcta": "c",
+    "explicacion": "El pulso bisferiens es característico de la Insuficiencia Aórtica severa (a veces combinada con estenosis o en miocardiopatía hipertrófica). La Insuficiencia Aórtica se manifiesta semiológicamente con un soplo diastólico decreciente (aspirativo) que aumenta con el ejercicio isométrico (handgrip) al aumentar la postcarga.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_034",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Todas las siguientes cardiopatías congénitas se asocian a un cortocircuito izquierda-derecha, acianótico, excepto:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Comunicación interventricular con comunicación interauricular",
+      "b": "Origen anómalo de la arteria coronaria izquierda en el tronco pulmonar",
+      "c": "Drenaje completamente anómalo de las venas pulmonares",
+      "d": "Conducto arterioso permeable"
+    },
+    "correcta": "c",
+    "explicacion": "El Drenaje Venoso Pulmonar Anómalo Total es una cardiopatía cianótica (o mixta), ya que toda la sangre oxigenada de los pulmones retorna al lado derecho del corazón, mezclándose con la sangre venosa sistémica.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_035",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Una mujer de 30 años de edad... se queja de palpitaciones... Holter muestra extrasístoles ventriculares que ocurren aproximadamente cuatro veces por minuto. El corazón es estructuralmente normal. El siguiente paso más adecuado en su tratamiento es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Asegurarle que no es patológico y que no necesita tratamiento",
+      "b": "Remitirla a un cardiólogo para su estudio electrofisiológico.",
+      "c": "Administrar Amiodarona",
+      "d": "Administrar un bloqueante beta."
+    },
+    "correcta": "a",
+    "explicacion": "Las extrasístoles ventriculares infrecuentes en un paciente asintomático (o levemente sintomático) sin cardiopatía estructural tienen un pronóstico benigno y generalmente no requieren tratamiento farmacológico, solo reaseguro.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_036",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "En un paciente de 32 años de edad con insuficiencia cardíaca congestiva tratada óptimamente... Clase Funcional III, hipotensión, ritmo de galope; el ecocardiograma muestra patrón restrictivo y FE 27%. ¿Cuál sería la mejor alternativa terapéutica?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Ingresarlo al hospital y administrar tratamiento intravenoso con levosimendán",
+      "b": "Programa de asistencia ventricular",
+      "c": "Remodelación quirúrgica del ventrículo izquierdo",
+      "d": "Trasplante cardíaco"
+    },
+    "correcta": "d",
+    "explicacion": "En un paciente joven con insuficiencia cardíaca avanzada, refractaria al tratamiento médico óptimo y con signos de mal pronóstico (hipotensión, patrón restrictivo), el trasplante cardíaco es la opción terapéutica definitiva de elección.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_037",
+    "materia": "cardiologia",
+    "submateria": "Trastornos del ritmo",
+    "enunciado": "Las extrasístoles ventriculares...",
+    "imagenes": [],
+    "opciones": {
+      "a": "Siempre requieren tratamiento",
+      "b": "Tienen un complejo QRS de duración normal",
+      "c": "Van precedidos de una onda p",
+      "d": "Se inician por debajo de la bifurcación del haz de his"
+    },
+    "correcta": "d",
+    "explicacion": "Por definición, las extrasístoles ventriculares se originan en el ventrículo (debajo de la bifurcación del Haz de His), por lo que no son conducidas por el sistema His-Purkinje normal, resultando en un QRS ancho y abigarrado.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_038",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un paciente de 76 años, masculino, diabético. Consulta por disnea progresiva, no tolera el decúbito, expectora secreción rosada, TA 180/90, FC 122, rales crepitantes, soplo aórtico. ¿Qué diagnóstico realiza?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Edema agudo de pulmón (EAP)",
+      "b": "Bronconeumonía grave",
+      "c": "Shock cardiogénico",
+      "d": "Neumonía de la comunidad (NAC)"
+    },
+    "correcta": "a",
+    "explicacion": "El cuadro clínico de disnea súbita, ortopnea, expectoración asalmonada (rosada), hipertensión y crepitantes húmedos bilaterales es la presentación clásica del Edema Agudo de Pulmón cardiogénico hipertensivo.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_039",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "En la guardia usted interroga a un paciente de 67 años... TA de 175/50 mm Hg (presión de pulso amplia), pulso bisferiens, signo del martillo de agua, soplo diastólico. ¿Cuál sería su primer diagnóstico semiológico?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Insuficiencia aórtica",
+      "b": "Insuficiencia mitral",
+      "c": "Estenosis aórtica",
+      "d": "Estenosis mitral"
+    },
+    "correcta": "a",
+    "explicacion": "La presión de pulso diferencial amplia (gran diferencia entre sistólica y diastólica), el pulso 'saltón' o de martillo de agua (Corrigan) y el soplo diastólico son patognomónicos de la Insuficiencia Aórtica crónica severa.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_040",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "¿Cuál de las siguientes opciones relativas a la digital no le parece correcta?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Se debe evitar la administración en pacientes con insuficiencia cardíaca secundaria a miocardiopatía hipertrófica",
+      "b": "La presencia de cubeta digitálica en el ECG, es un signo de intoxicación digitálica",
+      "c": "Aumenta la contractilidad miocárdica.",
+      "d": "Es útil para el control de la respuesta ventricular en la Fibrilación Auricular"
+    },
+    "correcta": "b",
+    "explicacion": "La 'cubeta digitálica' (infradesnivel cóncavo del ST) es un signo de impregnación o efecto digitálico, indica que el paciente toma la droga, pero NO es sinónimo de intoxicación (que se manifiesta por arritmias, síntomas gastrointestinales, etc.).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_041",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "En relación a las maniobras empleadas para distinguir entre dos enfermedades cardiacas ¿Cuál de las siguientes opciones es verdadera?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Los soplos de la insuficiencia y la estenosis tricuspídea aumentan durante la inspiración",
+      "b": "La posición en cuclillas aumenta la intensidad del soplo diastólico en el prolapso de la válvula mitral",
+      "c": "La maniobra de valsalva aumenta la duración e intensidad de la mayoría de los soplos sistólicos, excepto los causados por el prolapso de la válvula mitral",
+      "d": "El soplo de la estenosis aórtica disminuye después de una extrasístole ventricular"
+    },
+    "correcta": "a",
+    "explicacion": "El signo de Rivero-Carvallo describe el aumento de intensidad de los soplos derechos (como los tricuspídeos) durante la inspiración, debido al aumento del retorno venoso al corazón derecho.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_042",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Una paciente de 34 años con soplo en la infancia, presenta cianosis universal progresiva (Síndrome de Eisenmenger probable), CIV amplia perimembranosa y presión pulmonar sistémica (107 mmHg). Señale el tratamiento correcto indicado en el archivo:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Digoxina más vasodilatadores",
+      "b": "Uso de prostaciclina",
+      "c": "Tratamiento quirúrgico",
+      "d": "IECA más nitratos"
+    },
+    "correcta": "c",
+    "explicacion": "Nota: Aunque clínicamente la hipertensión pulmonar fija (Eisenmenger) suele contraindicar la cirugía correctora (cierre del defecto) por riesgo de fallo derecho agudo, la fuente oficial marca 'Tratamiento quirúrgico' como correcta (quizás asumiendo reversibilidad o trasplante). Se respeta la fuente.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_043",
+    "materia": "cardiologia",
+    "submateria": "Cardiopatía isquémica",
+    "enunciado": "Un paciente de 60 años con dolor precordial opresivo intenso de 30 min de evolución y supradesnivel del ST en cara antero-septal. Se inició AAS y clopidogrel. ¿Cuál es la conducta terapéutica más adecuada a continuación?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Estratificación de riesgo en unidad coronaria, con eventual prueba de esfuerzo en 48 hs",
+      "b": "Reperfusión de urgencia",
+      "c": "Coronariografía con reperfusión en 24 hs",
+      "d": "Anticoagulación por 48 hs y seguimiento ambulatorio con pautas de alarma"
+    },
+    "correcta": "b",
+    "explicacion": "Ante un Síndrome Coronario Agudo con Elevación del ST (SCACEST) en evolución (< 12 horas), la prioridad absoluta es la reperfusión inmediata, ya sea mecánica (angioplastia primaria) o farmacológica (fibrinólisis), para salvar miocardio.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_044",
+    "materia": "cardiologia",
+    "submateria": "Hipertensión arterial y factores de riesgo",
+    "enunciado": "Una mujer de 63 años hipertensa es trasladada por alteración del sensorio (encefalopatía). TA 230/160 mm Hg. TC de cráneo normal. La medida terapéutica más adecuada consiste en:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Administrar nitroprusiato sódico",
+      "b": "Vigilar a la paciente en una habitación tranquila durante 1 hora antes de administrar el tratamiento",
+      "c": "Esperar a obtener los datos de laboratorio antes de establecer el tratamiento específico",
+      "d": "Administrar nifedipina sublingual"
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de una Emergencia Hipertensiva con daño de órgano blanco (encefalopatía hipertensiva). El tratamiento requiere reducción inmediata pero controlada de la PA con fármacos intravenosos titulables como el Nitroprusiato de Sodio o Labetalol.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_045",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Una mujer de 62 años con IC crónica se descompensa (Clase IV, disnea, hepatomegalia, edemas, ingurgitación yugular). Tratamiento actual: digoxina, enalapril, furosemida. La mejor opción a aplicar a continuación es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Internar a la paciente e iniciar tratamiento con vasodilatadores y furosemida endovenosos.",
+      "b": "Interrumpir la administración de enalapril y comenzar con losartán",
+      "c": "Aumentar la digoxina",
+      "d": "Agregar carvedilol al tratamiento"
+    },
+    "correcta": "a",
+    "explicacion": "Ante una descompensación aguda severa (IC agudizada 'húmeda'), se requiere hospitalización para diuréticos endovenosos y vasodilatadores para reducir la precarga y postcarga rápidamente.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_046",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "El Segundo Ruido Cardíaco:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Se desdobla en la espiración",
+      "b": "Aumenta su intensidad en la insuficiencia aórtica",
+      "c": "Se debe al cierre de las válvulas tricúspide y mitral",
+      "d": "Muestra un desdoblamiento fijo en la comunicación interauricular"
+    },
+    "correcta": "d",
+    "explicacion": "El desdoblamiento fijo (que no varía con la respiración) del segundo ruido (S2) es el hallazgo auscultatorio clásico de la Comunicación Interauricular (CIA), debido a la sobrecarga de volumen constante del ventrículo derecho.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_047",
+    "materia": "cardiologia",
+    "submateria": "Valvulopatías",
+    "enunciado": "En un paciente portador de Estenosis Mitral ¿Qué signos espera encontrar en la auscultación?",
+    "imagenes": [],
+    "opciones": {
+      "a": "S1 disminuido con soplo sistólico",
+      "b": "S1 disminuido con soplo diastólico",
+      "c": "S1 aumentado con soplo sistólico",
+      "d": "S1 aumentado con soplo diastólico"
+    },
+    "correcta": "d",
+    "explicacion": "La Estenosis Mitral se caracteriza por un Primer Ruido (S1) brillante o aumentado (por el cierre brusco de valvas engrosadas pero móviles) y un soplo diastólico (rolido) con refuerzo presistólico.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_048",
+    "materia": "cardiologia",
+    "submateria": "Pericardio",
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retro esternal irradiado a la escápula izquierda, que empeora con la inspiración y mejora al reclinarse hacia adelante (pleuritico/posicional)? Antecedente de gastroenteritis.",
+    "imagenes": [],
+    "opciones": {
+      "a": "Hiperpotasemia",
+      "b": "Isquemia miocárdica aguda",
+      "c": "Hipopotasemia",
+      "d": "Miopericarditis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "El dolor torácico de características pleuríticas (empeora al respirar) y posturales (mejora al inclinarse adelante), en un paciente joven con antecedente viral reciente, sugiere fuertemente una pericarditis aguda.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_049",
+    "materia": "cardiologia",
+    "submateria": "Insuficiencia cardíaca",
+    "enunciado": "Un varón de 68 años ingresa en shock (hipotensión severa, taquicardia, oliguria). Cateterismo derecho muestra PCWP (capilar pulmonar) alta (28 mmHg) y Gasto Cardíaco bajo (1.9 L/min). La causa más probable de la hipotensión es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Infarto del ventrículo derecho",
+      "b": "Insuficiencia ventricular izquierda",
+      "c": "Hemorragia digestiva",
+      "d": "Embolia pulmonar"
+    },
+    "correcta": "b",
+    "explicacion": "El perfil hemodinámico de presiones de llenado izquierdo elevadas (PCWP > 18) con bajo gasto cardíaco define el shock cardiogénico por fallo de bomba izquierda (Insuficiencia Ventricular Izquierda).",
+    "examen": "",
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "med_cardio_custom_050",
+    "materia": "cardiologia",
+    "submateria": "Cardiología básica",
+    "enunciado": "Una paciente de 20 años consulta por hipertensión arterial (170/100 mm Hg). Se constata disminución de los pulsos en miembros inferiores. Su diagnóstico presuntivo es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Trombosis de aorta abdominal",
+      "b": "Hipertensión esencial severa",
+      "c": "Coartación de aorta",
+      "d": "Ductus permeable"
+    },
+    "correcta": "c",
+    "explicacion": "La hipertensión arterial en miembros superiores con pulsos femorales disminuidos o ausentes (y presión baja en piernas) es el signo clínico clásico de la Coartación de Aorta.",
+    "examen": "",
+    "anio": null,
+    "oficial": false
   }
 ]
+
