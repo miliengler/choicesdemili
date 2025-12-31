@@ -1,1 +1,433 @@
-[]
+[
+  {
+    "id": "cir_2025_001",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Usted es consultado por la familia de un paciente de 20 años que se encuentra internado por neumotórax espontáneo con drenaje pleural bajo agua, el cual está burbujeando y con falla de expansión luego de 6 días de colocado el drenaje. ¿Cuál es el tratamiento quirúrgico más adecuado?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Resección de bullas por videotoracoscopia",
+      "b": "Toracotomía amplia para exploración y resección de las bullas",
+      "c": "Colocación de un nuevo drenaje pleural en otro sitio",
+      "d": "Sellado pleural con talco por videotoracoscopia"
+    },
+    "correcta": "a",
+    "explicacion": "neumotórax en paciente joven sin antecedente de trauma.",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "neumonologia",
+        "submateria": "Pleura, mediastino y diafragma"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_002",
+    "materia": "cirugiageneral",
+    "submateria": "Quemaduras",
+    "enunciado": "Un joven de 19 años cuya remera se prendió fuego en un campamento, tiene quemaduras en la porción anterior del tórax y del abdomen ¿Qué porcentaje de la superficie corporal se ha afectado?",
+    "imagenes": [],
+    "opciones": {
+      "a": "9%",
+      "b": "36%",
+      "c": "18%",
+      "d": "24%"
+    },
+    "correcta": "c",
+    "explicacion": "Regla de los 9 hay una pregunta por choice",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_003",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Luego de un accidente automovilístico, un joven de 21 años es admitido en la sala de urgencias con lesión extensa en el centro de la cara. Su respiración es laboriosa y rápida, expulsa sangre y moco en cada ventilación. Se encuentra agitado y agresivo a pesar de los esfuerzos para sostenerlo. El primer paso de la atención debe ser mantener alineada la columna cervical mediante tracción y realizar:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Traqueotomía",
+      "b": "Intubación nasotraqueal.",
+      "c": "Cricotiroidotomía",
+      "d": "Intubación orotraqueal"
+    },
+    "correcta": "c",
+    "explicacion": "B y C no por sospecha de fractura de base de cráneo y no se hacen traqueotomías de urgencia",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_004",
+    "materia": "neurocirugia",
+    "submateria": "Neurocirugía",
+    "enunciado": "Un niño de 12 años sufre pérdida de conciencia breve tras caerse de una bicicleta desde una rampa. Al llegar a la guardia está orientado y presenta signos de impacto en la región parietal derecha. Dos horas más tarde presenta cefalea de intensidad rápidamente creciente seguida de alteración del nivel de conciencia. La causa más probable del deterioro es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Hematoma extradural agudo.",
+      "b": "Hidrocefalia",
+      "c": "Contusión cerebral parietal derecha",
+      "d": "Hipertensión endocraneal aguda secundaria a edema cerebral vasogénico."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "neurologia",
+        "submateria": "ECV"
+      },
+      {
+        "materia": "traumatologia",
+        "submateria": "Otras preguntas de traumatología"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_005",
+    "materia": "cirugiageneral",
+    "submateria": "Glándulas salivales y masas cervicales",
+    "enunciado": "Una mujer de 30 años se presenta con una masa de 1.5 cm por debajo del lóbulo de la oreja derecha y conoce la existencia de esa anomalía desde hace cuatro años. El examen físico revela una masa firme movible e indolora y función intacta del nervio facial; no se palpan ganglios linfáticos cervicales. El diagnóstico más probable es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Tumor mixto benigno (adenoma pleomórfico)",
+      "b": "Cistadenoma linfomatoso papilar (tumor de Warthin)",
+      "c": "Ninguna es correcta",
+      "d": "Carcinoma mucoepidermoide de grado bajo"
+    },
+    "correcta": "a",
+    "explicacion": "Pregunta fácil adenoma pleomorfo.",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_006",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "¿Cuál de las siguientes intervenciones NO aplicaría en un traumatismo de duodeno?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Duodenopancreatectomía cefálica",
+      "b": "Diverticulización duodenal",
+      "c": "Duodenostomía y gastrostomía",
+      "d": "Exclusión pilórica"
+    },
+    "correcta": "c",
+    "explicacion": "La duodenostomía prácticamente no existe porque no hay manera de hacer una ostomía con un órgano retroperitoneal aparte no resuelve nada solo crearía una fístula de alto débito intratable",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "gastroenterologia",
+        "submateria": "Intestino delgado"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_007",
+    "materia": "neumonologia",
+    "submateria": "Pleura, mediastino y diafragma",
+    "enunciado": "Un paciente que se le realiza un drenaje de un neumotórax espontáneo, usted constata que el pulmón no se re expande, evalúa el sistema de avenamiento bajo agua y no presenta pérdidas aéreas. ¿Cuál es la conducta más adecuada?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Toracotomía exploradora",
+      "b": "Recolocación de tubo de drenaje pleural",
+      "c": "Videotoracoscopía",
+      "d": "Fibrobroncoscopía"
+    },
+    "correcta": "d",
+    "explicacion": "Si no expande debe estar tapado entonces se realiza fibrobroncoscopía y se libera es diagnóstico y terapéutico",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Otras preguntas de cirugía general"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_008",
+    "materia": "endocrinologia",
+    "submateria": "Tiroides",
+    "enunciado": "Una mujer de 26 años presenta nódulo tiroideo palpable y la biopsia con aguja identifica sustancia amiloide en el estroma de la lesión. Se palpa ganglio linfático cervical en el mismo lado de la lesión. El tratamiento de elección para esta paciente sería:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Extirpación del lóbulo afectado, istmo y ganglio linfático hipertrofiado",
+      "b": "Tiroidectomía total y disección modificada en el cuello en el lado del ganglio linfático hipertrofiado",
+      "c": "Extirpación del lóbulo afectado e istmo y disección del cuello en el lado del ganglio linfático hipertrofiado",
+      "d": "Extirpación del lóbulo afectado, el istmo, una porción del lóbulo opuesto, y el ganglio linfático hipertrofiado"
+    },
+    "correcta": "b",
+    "explicacion": "Tiene sustancia amiloide por lo tanto es un carcinoma medular",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Glándulas salivales y masas cervicales"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_009",
+    "materia": "cirugiageneral",
+    "submateria": "Quemaduras",
+    "enunciado": "Un hombre de 25 años es admitido en la guardia poco después de ser rescatado de una casa incendiada. Padece de cefaleas, vómitos, ronquera y disnea con sibilancias espiratorias. El primer paso de la atención de las vías respiratorias debe consistir en:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Suministrar oxígeno y adrenalina mediante mascarilla",
+      "b": "Traqueotomía y administración de oxígeno",
+      "c": "Administración de oxígeno al 100% mediante mascarilla y/o intubación.",
+      "d": "Realizar laringoscopia y en caso de lesión en la vía aérea, traqueotomía"
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta fácil manejo via aérea en paciente quemado.",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_010",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Una mujer de 30 años sufre un accidente automovilístico que le provoca una fractura de pelvis abierta al periné. La hipotensión y la taquicardia responden de manera marginal a la restitución de volumen. Una vez definido que el principal problema es la hemorragia, además de la fractura, la atención apropiada será:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Embolización arterial de los vasos pélvicos.",
+      "b": "Exploración quirúrgica de abdomen para estabilización y desbridamiento con colostomía",
+      "c": "Aplicación de fijación externa para estabilizar la pelvis.",
+      "d": "Exploración laparoscópica de abdomen para control de hemorragias"
+    },
+    "correcta": "b",
+    "explicacion": "Es una fractura expuesta (a vagina o ano) es la única indicación de cirugía a cielo abierto en fractura de pelvis si o si hay que realizar colostomía para que no defeque sobre la fractura",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "traumatologia",
+        "submateria": "Fracturas"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_011",
+    "materia": "neumonologia",
+    "submateria": "NPS y cáncer de pulmón",
+    "enunciado": "Un paciente varón de 50 años, fumador, con enfermedad pulmonar obstructiva crónica. Concurre al centro de salud por disnea progresiva, tos irritativa y espaciados esputos hemoptoicos. Se realiza una radiografía simple de tórax muestra un tumor en el lóbulo superior derecho de 2 cm de diámetro, ¿qué estudio inicial considera Ud. es el indicado?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Citología de esputo en muestras seriadas",
+      "b": "Tomografía computarizada de tórax con contraste",
+      "c": "Broncoscopia con biopsia transbronquial",
+      "d": "Punción biopsia del tumor para establecer la histología"
+    },
+    "correcta": "b",
+    "explicacion": "Primero TAC para ver por que método vamos a realizar la biopsia",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Otras preguntas de cirugía general"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_012",
+    "materia": "cirugiageneral",
+    "submateria": "Glándulas salivales y masas cervicales",
+    "enunciado": "Juan, un joven de 22 años sufre un accidente con su moto que le provoca una fractura de Lefort III. Indique la respuesta correcta:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Las fracturas de Lefort representan el 10% de las fracturas faciales.",
+      "b": "Durante el tratamiento quirúrgico las alteraciones estéticas deben ser corregidas en un segundo acto quirúrgico",
+      "c": "La fractura de Lefort III afecta sólo la infraestructura del maxilar superior, separando las apófisis alveolares y palatinas del resto del paladar superior",
+      "d": "Esta fractura se caracteriza por representar una verdadera disyunción cráneo facial"
+    },
+    "correcta": "d",
+    "explicacion": "Clasificación de Lefort se toma en los choice. Estudiar",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_013",
+    "materia": "cardiologia",
+    "submateria": "Pericardio",
+    "enunciado": "¿En un paciente con shock y sospecha de un taponamiento cardiaco, ¿Cuál de los siguientes procedimientos indicaría en primer término?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Electrocardiograma",
+      "b": "Toracotomía exploradora",
+      "c": "Radiografía simple de tórax de frente y perfil",
+      "d": "Pericardiocentesis"
+    },
+    "correcta": "d",
+    "explicacion": "Y luego quirófano para realizar toracotomía",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Otras preguntas de cirugía general"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_014",
+    "materia": "cirugiageneral",
+    "submateria": "Glándulas salivales y masas cervicales",
+    "enunciado": "Un paciente de 45 años consulta a la guardia por presentar dolor intenso en la hemicara izquierda, que aumenta al probar alimentos salados y se acompaña de mal olor y sabor en la boca. El paciente refiere la aparición del cuadro en la última semana y niega haber tenido fiebre. Al examen físico presenta inflamación difusa de la hemicara izquierda con dolor a la palpación de la región geniana. ¿Cuál es el diagnóstico más probable?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Sialolitiasis",
+      "b": "Sialoadenitis aguda",
+      "c": "Quiste preauricular",
+      "d": "Parotiditis aguda"
+    },
+    "correcta": "a",
+    "explicacion": "Sialolitiasis y el tratamiento es con caramelo ácido",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_015",
+    "materia": "urologia",
+    "submateria": "Otras preguntas de urología",
+    "enunciado": "Un hombre de 25 años sufre una lesión en la uretra posterior. En la atención inicial se le realiza una cistostomía sola, para luego en un segundo tiempo realizar la reparación definitiva. La complicación más probable será:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Impotencia",
+      "b": "Estrechez uretral",
+      "c": "Resangrado",
+      "d": "Incontinencia"
+    },
+    "correcta": "b",
+    "explicacion": "Todas son correctas pero la que se presenta en casi todos los casos es la estrechez uretral",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Otras preguntas de cirugía general"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_016",
+    "materia": "cirugiageneral",
+    "submateria": "Quemaduras",
+    "enunciado": "Un paciente de 50 años ingresa a la guardia luego de sufrir quemaduras que se caracterizan por ser indoloras y comprometer cara, parte anterior del cuello y tronco y cara anterior del miembro superior derecho. Indique que porcentaje de superficie corporal se encuentra afectado y su grado de profundidad",
+    "imagenes": [],
+    "opciones": {
+      "a": "Quemaduras de tercer grado (grado b) Que comprometen el 36% de la superficie corporal.",
+      "b": "Quemaduras de tercer grado (grado b) Que comprometen el 27% de la superficie corporal.",
+      "c": "Quemaduras de segundo grado (grado ab) Que comprometen el 27% de la superficie corporal.",
+      "d": "Quemaduras de segundo grado (grado ab) Que comprometen el 36% de la superficie corporal."
+    },
+    "correcta": "b",
+    "explicacion": "Regla de los 9 hay una pregunta por choice. Estudiar y practicar.",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_017",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Señale lo incorrecto con respecto al tratamiento conservador en traumatismo de vísceras sólidas intraabdominales:",
+    "imagenes": [],
+    "opciones": {
+      "a": "No es necesario el diagnóstico tomográfico de la lesión",
+      "b": "No está contraindicado en pacientes con TEC y Glasgow menor de 12",
+      "c": "Se puede efectuar en pacientes con shock",
+      "d": "Se puede efectuar en menores de 15 años"
+    },
+    "correcta": "c",
+    "explicacion": "si el paciente está hemodinamicamente inestable o en SHOCK no se puede realizar manejo no operatorio",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_018",
+    "materia": "cirugiageneral",
+    "submateria": "Otras preguntas de cirugía general",
+    "enunciado": "Un paciente de 67 años fumador desde los 15 años de 20 cigarrillos día consulta por tos y falta de aire, Rx de tórax en donde se descubre una masa paramediastinal derecha. Se realiza TC de tórax se identifica masa paramediastinal derecha de 84 mm x 57 mm ubicado por delante de la VCS a la cual comprime al igual que al esófago. Impronta sobre la pared del bronquio fuente derecho. Distalmente se extiende hacia el espacio subcarinal. La masa presenta densidad heterogénea con áreas con necrosis en su interior. Derrame pleural homolateral. ¿Cómo obtiene una biopsia para diagnóstico definitivo?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Mediastinoscopía",
+      "b": "Ecoendoscopía",
+      "c": "Punción torácica con biopsia pleural",
+      "d": "Transbronquial"
+    },
+    "correcta": "d",
+    "explicacion": "La elección de la vía de abordaje de una biopsia es por cercanía",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "neumonologia",
+        "submateria": "NPS y cáncer de pulmón"
+      }
+    ]
+  },
+  {
+    "id": "cir_2025_019",
+    "materia": "cirugiageneral",
+    "submateria": "Patología de pared abdominal",
+    "enunciado": "Un hombre de 70 años que fue intervenido quirúrgicamente de una hernia estrangulada en la región inguinal derecha, se presenta al consultorio de su cirujano. Está preocupado y molesto porque siente los mismos síntomas que tenía antes de la cirugía. Además, ha observado la presencia de una masa en la región de la herida que ha aumentado progresivamente de tamaño. De las complicaciones siguientes de la cirugía de la hernia inguinal, ¿cuál es la que tiene este paciente?",
+    "imagenes": [],
+    "opciones": {
+      "a": "Absceso",
+      "b": "Divertículos",
+      "c": "Enfermedad de Crohn",
+      "d": "Oblito"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false
+  },
+  {
+    "id": "cir_2025_020",
+    "materia": "gastroenterologia",
+    "submateria": "Vía biliar",
+    "enunciado": "Una mujer de 42 años, portadora de una colelitiasis detectada a través de una placa simple de abdomen, no desea ser operada, y por primera vez presenta un cuadro agudo de colecistitis. El método diagnóstico que tiene mayor utilidad en esta paciente es:",
+    "imagenes": [],
+    "opciones": {
+      "a": "Colangiografía endovenosa",
+      "b": "Ultrasonografía",
+      "c": "Tomografía axial computada",
+      "d": "Colecistografía oral"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "examen": "",
+    "anio": 2025,
+    "oficial": false,
+    "multimateria": [
+      {
+        "materia": "cirugiageneral",
+        "submateria": "Otras preguntas de cirugía general"
+      }
+    ]
+  }
+]
+
