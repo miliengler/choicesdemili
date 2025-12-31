@@ -1,3 +1,4 @@
+
 [
   {
     "id": "iar_cirugia_001",
@@ -582,7 +583,6 @@
     "anio": null,
     "oficial": false
   },
-  
   {
     "id": "iar_cirugia_026",
     "materia": [
@@ -1755,7 +1755,6 @@
     "anio": null,
     "oficial": false
   },
-
   {
     "id": "iar_cirugia_076",
     "materia": [
@@ -2006,13 +2005,13 @@
     ],
     "enunciado": "El tratamiento adecuado en la poliposis colónica familiar es:",
     "opciones": {
-      "a": "Resección endorrectal",
-      "b": "Resección transacra",
-      "c": "Resección y anastomosis terminoterminal",
-      "d": "Resección abdominoperineal"
+      "a": "Resección endoscópica de los pólipos mayores a 2 cm",
+      "b": "Sólo observación periódica",
+      "c": "Proctocolectomía total o colectomía total con anastomosis ileorrectal",
+      "d": "Tratamiento continuado con vitaminas"
     },
     "correcta": "c",
-    "explicacion": "El examen marca esta opción, aunque técnicamente el tratamiento estándar es la Proctocolectomía total o Colectomía total (ver pregunta posterior similar).",
+    "explicacion": "Dada la certeza (100%) de desarrollo de cáncer de colon, el tratamiento es la extirpación de todo el colon (Colectomía total) o colon y recto (Proctocolectomía).",
     "imagen": false,
     "examen": "IAR Talleres - Cirugía 4ta parte",
     "anio": null,
