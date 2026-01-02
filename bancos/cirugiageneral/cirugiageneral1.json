@@ -589,7 +589,6 @@
     "anio": null,
     "oficial": false
   },
-  [
   {
     "id": "cirugia-001-026",
     "materia": [
@@ -1184,4 +1183,1238 @@
     "anio": null,
     "oficial": false
   },
-    
+  {
+    "id": "cirugia-001-051",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un paciente de 48 años con antecedentes de cáncer de riñón operado hace 10 años con hemorragia digestiva baja. FEDA con gastritis leve. Antecedentes de enfermedad diverticular. Se le realiza una arteriografía cuyo resultado habla de sangrado de la 2º rama izquierda de la arteria Mesentérica Superior. ¿En dónde usted piensa que será la lesión?",
+    "opciones": {
+      "a": "Duodeno",
+      "b": "Colon ascendente",
+      "c": "Yeyuno",
+      "d": "Ileon"
+    },
+    "correcta": "c",
+    "explicacion": "Anatómicamente, las primeras ramas izquierdas de la arteria mesentérica superior irrigan el yeyuno.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-052",
+    "materia": [
+      "cirugiageneral",
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Ecografía",
+      "Vía biliar"
+    ],
+    "enunciado": "Una mujer de 42 años, portadora de una colelitiasis detectada a través de una placa simple de abdomen, no desea ser operada, y por primera vez presenta un cuadro agudo de colecistitis. El método diagnóstico que tiene mayor utilidad en esta paciente es:",
+    "opciones": {
+      "a": "Colangiografía endovenosa",
+      "b": "Ultrasonografia",
+      "c": "Tomografía axial computada",
+      "d": "Colecistografía oral"
+    },
+    "correcta": "b",
+    "explicacion": "La ultrasonografía (ecografía) es el método de elección inicial para el diagnóstico de colecistitis aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-053",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un hombre de 25 años se presenta a la sala de urgencias por haber deglutido dos alfileres de seguridad abiertos seis horas antes. La radiografía muestra los alfileres localizados en el intestino delgado. En este momento la atención más apropiada es:",
+    "opciones": {
+      "a": "Suministrar 250 ml de citrato de magnesio para inducir catarsis e incrementar la rapidez del tránsito",
+      "b": "Seguimiento con radiografías seriadas y exámenes abdominales",
+      "c": "Operación inmediata",
+      "d": "Administrar antibióticos de amplio espectro por via intravenosa"
+    },
+    "correcta": "b",
+    "explicacion": "La mayoría de los cuerpos extraños que logran pasar el píloro se expulsan espontáneamente; se indica seguimiento clínico y radiológico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-054",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Estómago",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En pacientes con úlceras duodenales sangrantes, el dato endoscópico relacionado con la máxima frecuencia de recurrencia de la hemorragia es:",
+    "opciones": {
+      "a": "Lecho de la úlcera limpio",
+      "b": "Mancha color rojo cereza",
+      "c": "Ulcera superficial de 3 milimetros",
+      "d": "Vaso visible"
+    },
+    "correcta": "d",
+    "explicacion": "El vaso visible no sangrante (Clasificación de Forrest IIa) es el signo endoscópico con mayor riesgo de resangrado.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-055",
+    "materia": [
+      "gastroenterologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Estómago",
+      "General"
+    ],
+    "enunciado": "Un paciente masculino de 50 años, con antecedentes de episodios aislados de dispepsia desde hace 2 años, consulta por dolor quemante subxifoideo con irradiación precordial, que aparece en ayunas y calma con las comidas y la ingesta de antiácidos. Presenta un examen fisico sin particularidades. Se le indica la realización de una seriada esofagogastroduodenal que informa la visualización de un nicho fijo, inamovible, con contornos regulares y limpios, localizado en la porción vertical de la curvatura menor del estómago y persistente en la serie radiográfica. Una endoscopia alta confirma el diagnóstico de úlcera gástrica estadio a1, con H. pylori positivo. ¿Cuál de las siguientes indicaciones no recomendaría en el tratamiento agudo de este paciente?",
+    "opciones": {
+      "a": "Alimentación fraccionada durante el día, de escaso volumen y evitando irritantes",
+      "b": "Amoxicilina + Claritromicina",
+      "c": "Omeprazol 20 mg/día",
+      "d": "Antiácidos"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento curativo requiere erradicación del H. pylori y bloqueantes de la bomba de protones. Los antiácidos son meramente sintomáticos y no se recomiendan como terapia principal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-056",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología",
+      "Páncreas"
+    ],
+    "enunciado": "Un hombre de 68 años, que acostumbra a ingerir cerveza, consulta a su médico porque nota en los ojos un color amarillo verdoso, junto con prurito en todo el cuerpo; además, ha perdido peso en los últimos meses. En la exploración física se detecta ictericia intensa y presencia de una tumoración blanda no dolorosa en el cuadrante superior derecho del abdomen. El diagnóstico es:",
+    "opciones": {
+      "a": "Cáncer de páncreas",
+      "b": "Cáncer de vías biliares extrahepáticas",
+      "c": "Cistoadenoma mucinoso",
+      "d": "Coledocolitiasis"
+    },
+    "correcta": "a",
+    "explicacion": "La presencia de vesícula palpable no dolorosa (Signo de Courvoisier-Terrier) en un paciente con ictericia progresiva es altamente sugestiva de cáncer de cabeza de páncreas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-057",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "La causa más frecuente de síndrome de intestino corto en el adulto es:",
+    "opciones": {
+      "a": "Enfermedad de Crohn",
+      "b": "Lesiones traumáticas",
+      "c": "Hernia estrangulada",
+      "d": "Isquemia mesentérica"
+    },
+    "correcta": "d",
+    "explicacion": "La isquemia mesentérica aguda que conlleva resecciones masivas es la principal causa de síndrome de intestino corto en adultos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-058",
+    "materia": [
+      "cirugiageneral",
+      "infectologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Sepsis y nosocomiales",
+      "Ecografía"
+    ],
+    "enunciado": "Un paciente de 35 años que se encuentra internado en el séptimo día del posoperatorio de esplenectomía por traumatismo cerrado de abdomen, comienza con taquipnea, desaturación y fiebre. Al examen físico presenta hipoventilación en la base del pulmón izquierdo. En el laboratorio se constata leucocitosis y en la radiografía de tórax se evidencia una radiopacidad homogénea en la base del pulmón izquierdo. Se realiza radioscopia y se observa parálisis del hemidiafragma izquierdo. Según su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Colocación de tubo de drenaje pleural y tratamiento antibiótico.",
+      "b": "Tratamiento antibiótico empírico de amplio espectro.",
+      "c": "Drenaje percutáneo guiado por imágenes y tratamiento antibiótico.",
+      "d": "Laparotomía re exploratoria"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico sugiere un absceso subfrénico izquierdo post-esplenectomía. El tratamiento de elección es el drenaje percutáneo guiado por imágenes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-059",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Quemaduras",
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente con una internación prolongada en UTI por una quemadura grave desarrolla una colecistitis aguda alitiásica. ¿Cuál es el tratamiento de elección frente a este caso?",
+    "opciones": {
+      "a": "Colecistectomía a cielo abierto",
+      "b": "Tratamiento médico (hidratación y antibióticos)",
+      "c": "Colecistectomía laparoscópica",
+      "d": "Colecistostomia percutánea"
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes críticos e inestables con colecistitis alitiásica, la colecistostomía percutánea es el procedimiento de elección para descomprimir la vesícula con menor riesgo quirúrgico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-060",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vía biliar"
+    ],
+    "enunciado": "Una mujer obesa de 36 años, que es madre de tres hijos y goza de excelente salud, una noche después de cenar en abundancia inicia cuadro con dolor intenso en epigastrio e hipocondrio derecho, acompañado de náuseas y vómitos de poca importancia. Refiere que el dolor no cede en ninguna posición ni con la toma de antiácidos, por lo que acude a consulta médica. La opción diagnóstica correcta es:",
+    "opciones": {
+      "a": "Úlcera perforada",
+      "b": "Colecistitis aguda",
+      "c": "Pancreatitis",
+      "d": "Apendicitis aguda"
+    },
+    "correcta": "b",
+    "explicacion": "Es la presentación clásica de patología biliar aguda (factor de riesgo: mujer, multiparidad, obesidad) desencadenada por ingesta colecistoquinética.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-061",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Estómago"
+    ],
+    "enunciado": "Un hombre de 49 años con antecedentes de tabaquismo y alcoholismo moderados, presenta mala digestión manifestada por eructos y meteorismo posprandial. Sufre dolor brusco e intenso en epigastrio, referido al hombro izquierdo y a la fosa ilíaca derecha. Es trasladado de urgencia a un centro hospitalario, en donde se le toma una Rx de tórax simple de pie que muestra aire subdiafragmático. El diagnóstico probable es:",
+    "opciones": {
+      "a": "Divertículo de colon perforado",
+      "b": "Apendicitis aguda",
+      "c": "Ulcera gástrica perforada",
+      "d": "Ulcera duodenal perforada"
+    },
+    "correcta": "d",
+    "explicacion": "El neumoperitoneo (aire subdiafragmático) y el dolor en Fosa Ilíaca Derecha por escurrimiento (Síndrome de Valentino) son típicos de la úlcera duodenal perforada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-062",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Páncreas"
+    ],
+    "enunciado": "¿Cuál de las siguientes opciones en relación con la pancreatitis crónica es correcta?",
+    "opciones": {
+      "a": "Los individuos con pancreatitis crónica suelen presentar ictericia, prurito y fiebre.",
+      "b": "En individuos con pancreatitis crónica incapacitante y dilatación de un conducto pancreático con formación de estenosis concomitante, una pancreaticoyeyunostomía longitudinal constituye una opción quirúrgica adecuada",
+      "c": "La pancreatectomía total por lo general ofrece el mejor resultado a las personas con pancreatitis crónica",
+      "d": "La pancreatitis crónica es el resultado inevitable después de ataques repetidos de pancreatitis aguda"
+    },
+    "correcta": "b",
+    "explicacion": "Se refiere a la operación de Puestow, indicada para el drenaje del conducto pancreático dilatado en pancreatitis crónica sintomática.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-063",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vía biliar"
+    ],
+    "enunciado": "Los síntomas de la 'Triada de Charcot' es diagnóstico de:",
+    "opciones": {
+      "a": "Divertículo duodenal",
+      "b": "Pancreatitis aguda hemorrágica",
+      "c": "Colangitis aguda",
+      "d": "Diverticulitis aguda"
+    },
+    "correcta": "c",
+    "explicacion": "La Triada de Charcot (fiebre, ictericia y dolor en hipocondrio derecho) es diagnóstica de colangitis aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-064",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología",
+      "Vía biliar"
+    ],
+    "enunciado": "A un hombre de 64 años con ictericia intensa, pérdida de peso, prurito y dolor en hipocondrio derecho en estudios anteriores se le diagnosticó un tumor de Klatskin. ¿A qué nivel del árbol biliar se localiza este tumor?",
+    "opciones": {
+      "a": "Ampolla de Vater",
+      "b": "Conducto colédoco",
+      "c": "Árbol biliar intrahepático",
+      "d": "Unión de los conductos hepáticos"
+    },
+    "correcta": "d",
+    "explicacion": "El tumor de Klatskin es un colangiocarcinoma hiliar localizado en la confluencia de los conductos hepáticos derecho e izquierdo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-065",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente masculino de 72 años, que se presenta a la consulta con dolor abdominal de aparición brusca, localizado en el epigastrio que se irradia al dorso. Se asocia con vómitos reiterados de contenido gástrico. Al examen fisico se presenta lúcido, con ictericia de piel y mucosas, TA 100/60 mmHg, FC 100 lpm, FR 24 rpm, abdomen distendido a predominio supraumbilical con defensa, sin contractura a nivel epigástrico. Se interpreta como posible pancreatitis aguda, la cual se confirma por ecografía y se le solicita un laboratorio que informa: Hto 40%, leucocitosis 20.000/mm3, hipocalcemia 8.5 mg/dL LDH 350 U/L, GOT 100 U/L, urea 40 mg/dL, amilasa sérica total 1.050 U/L Con este laboratorio ¿cuántos criterios de Ranson se encuentran presentes?",
+    "opciones": {
+      "a": "4",
+      "b": "3",
+      "c": "2",
+      "d": "1"
+    },
+    "correcta": "c",
+    "explicacion": "Al ingreso, los criterios de Ranson presentes son: Edad > 55 años (tiene 72) y Leucocitos > 16.000 (tiene 20.000). Total: 2 criterios.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-066",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vía biliar"
+    ],
+    "enunciado": "En relación con la colecistitis litiásica aguda, ¿cuál de las siguientes opciones sobre el tratamiento quirúrgico es correcta?",
+    "opciones": {
+      "a": "Se inicia la antibioticoterapia una vez establecido el diagnóstico.",
+      "b": "La operación se realiza en todos los casos tan pronto como se establezca el diagnóstico.",
+      "c": "En las colecistitis agudas no complicadas se recomienda la cirugía a las 4 semanas.",
+      "d": "En todos los casos se realiza una colangiografia transoperatoria"
+    },
+    "correcta": "a",
+    "explicacion": "El manejo inicial estándar incluye el inicio de antibioticoterapia tras el diagnóstico, seguido de cirugía.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-067",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cardiología básica",
+      "Intestino delgado"
+    ],
+    "enunciado": "Una mujer de 72 años con estenosis mitral y fibrilación auricular, acude por dolor abdominal de localización en la región periumbilical intenso, que inició de forma brusca y se generalizó. Toma Digoxina 0.25 mg/dia La paciente se encuentra angustiada, con una T. axilar de 38.3°C, una TA de 102/62 mmHg, FC 120 lpm, FR 26 rpm. La piel está fría y húmeda, la mucosa bucal se encuentra seca. En la auscultación cardíaca se aprecia un arrastre diastólico 2/4. El peristaltismo está conservado. Se observa una distensión abdominal leve con dolor a la palpación, pero sin rebote. En la prueba de heces no se observa sangre ni melenas. El estudio inicial de laboratorio es de 16.000 leucocitos/mm3 con 75% de neutrófilos, 10% cayados, 10% linfocitos y 5% monocitos. El hematócrito es de 42% y las plaquetas 552.000/mm3 Radiografía de abdomen con niveles hidroaéreos. La maniobra diagnóstica más adecuada en este momento consiste en:",
+    "opciones": {
+      "a": "Laparotomía exploradora",
+      "b": "Angiografía",
+      "c": "Laparoscopia exploradora",
+      "d": "TC de abdomen"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico (Fibrilación Auricular + dolor abdominal desproporcionado al examen físico) sugiere isquemia mesentérica aguda. La angiografía es el estudio confirmatorio tradicional.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-068",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Oncología"
+    ],
+    "enunciado": "En relación con los factores etiológicos y manifestaciones clínicas del carcinoma hepatocelular:",
+    "opciones": {
+      "a": "Es más frecuente en la mujer asociado a consumo de ACO",
+      "b": "En un 70% de los casos la primera manifestación es un hemoperitoneo secundario a la rotura del tumor a cavidad peritoneal",
+      "c": "Asienta sobre una hepatopatía crónica en el 90% de los casos y se ha descrito la implantación tumoral sobre cirrosis de cualquier etiologia",
+      "d": "La determinación de niveles de alfafetoproteína se utiliza como screening en la población general para el diagnóstico precoz de tumores de pequeño tamaño."
+    },
+    "correcta": "c",
+    "explicacion": "El carcinoma hepatocelular asienta sobre hepatopatía crónica (cirrosis) en aproximadamente el 90% de los casos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-069",
+    "materia": [
+      "cirugiageneral",
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Radiografía",
+      "Intestino delgado"
+    ],
+    "enunciado": "En un paciente con obstrucción completa simple y establecida de la porción distal del intestino delgado, por lo general en las radiografias simples y de pie del abdomen se observan los siguientes datos:",
+    "opciones": {
+      "a": "Aire libre",
+      "b": "Marcas prominentes de las haustras",
+      "c": "Distribución periférica de gas, más que central",
+      "d": "Distensión del intestino delgado identificable por las válvulas conniventes y múltiples niveles hidroaéreos"
+    },
+    "correcta": "d",
+    "explicacion": "La radiografía típica de obstrucción de intestino delgado muestra asas dilatadas centralmente, válvulas conniventes (pilas de monedas) y niveles hidroaéreos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-070",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vía biliar"
+    ],
+    "enunciado": "¿Cuál de las siguientes opciones en relación con la colangitis es correcta?",
+    "opciones": {
+      "a": "Siempre se presenta la triada de Charcot",
+      "b": "La asociación con hemocultivos positivos es frecuente",
+      "c": "Los escalofríos y la fiebre se presentan en el 60% de los casos.",
+      "d": "La causa más común de colangitis es la coledocolitiasis."
+    },
+    "correcta": "d",
+    "explicacion": "La obstrucción biliar por cálculos (coledocolitiasis) es la causa principal de la colangitis aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-071",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Cuando un paciente con pancreatitis aguda es admitido en el hospital, los signos presentes en la admisión o que se desarrollan antes de las 48 horas y que indican mal pronóstico, incluyen todo lo siguiente, excepto:",
+    "opciones": {
+      "a": "Glucemia 300 mg/dL",
+      "b": "Amilasa en suero de 150 U/L",
+      "c": "Cifra de leucocitos de 25.000/mm3",
+      "d": "Calcemia 7.1 mg/dL"
+    },
+    "correcta": "b",
+    "explicacion": "El nivel de amilasa sérica es diagnóstico pero no tiene valor pronóstico de severidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-072",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología",
+      "Vía biliar"
+    ],
+    "enunciado": "Un hombre de 68 años, que acostumbra a ingerir cerveza, consulta a su médico porque nota en los ojos un color amarillo verdoso, junto con prurito en todo el cuerpo; además, ha perdido peso en los últimos meses. En la exploración física se detecta ictericia intensa y presencia de una tumoración blanda no dolorosa en el cuadrante superior derecho del abdomen. El tratamiento quirúrgico paliativo más adecuado para descomprimir la vía biliar sería:",
+    "opciones": {
+      "a": "Hepaticoyeyunoanastomosis con asa en Y de Roux",
+      "b": "Colocación de una férula",
+      "c": "Colecistoyeyunostomía",
+      "d": "Coledocoyeyunostomia"
+    },
+    "correcta": "a",
+    "explicacion": "Ante un cáncer periampular irresecable, la hepaticoyeyunoanastomosis en Y de Roux es la derivación biliodigestiva de elección para paliar la ictericia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-073",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vía biliar"
+    ],
+    "enunciado": "Una mujer de 48 años, secretaria ejecutiva, tiene cálculos en la vesícula biliar. Se le detectaron hace tiempo mediante un estudio radiológico simple, previo a una urografía excretora para valorar sus riñones. Después de la detección, se le propuso una colecistectomía, pero la rechazó por estar asintomática y sentirse bien. Un día presenta cuadro de cólico vesicular con escalofríos, fiebre e ictericia precedidos por coluria. La paciente decide operarse, pero en esta ocasión el médico tratante le advierte que no será una colecistectomía simple, porque tendrá que explorar las vías biliares. La indicación más importante para explorar las vías biliares es:",
+    "opciones": {
+      "a": "Conducto colédoco dilatado",
+      "b": "Coledocolitiasis con impactación de un cálculo distal en la ampolla de Vater",
+      "c": "Múltiples cálculos en la vesícula biliar",
+      "d": "Bilirrubina elevada"
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de fiebre, escalofríos e ictericia (síntomas de colangitis/obstrucción) indica una coledocolitiasis que requiere exploración y resolución.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-074",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Estómago",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Indique lo correcto con respecto a los pólipos gástricos:",
+    "opciones": {
+      "a": "Son pólipos comunes al igual que los colónicos.",
+      "b": "Se comportan como los pólipos colorrectales.",
+      "c": "Los pólipos adenomatosos de más de 2 cm deben resecarse por riesgo a malignización.",
+      "d": "La endoscopía predice las características histológicas del pólipo por su localización y aspecto."
+    },
+    "correcta": "c",
+    "explicacion": "Los pólipos gástricos adenomatosos, especialmente los mayores de 2 cm, tienen un riesgo significativo de transformación maligna y deben resecarse.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-075",
+    "materia": [
+      "gastroenterologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Páncreas",
+      "General"
+    ],
+    "enunciado": "Un hombre de 48 años, con antecedentes de alcoholismo crónico, presenta náusea, vómito y dolor epigástrico con irradiación hacia la espalda, después de una comida abundante y de ingerir demasiado alcohol. En la exploración presenta dolor intenso en epigastrio, defensa muscular, distensión abdominal y ruidos intestinales escasos. Las pruebas de laboratorio muestran amilasa aumentada y leucocitosis. Por radiología se observa dilatación de las asas intestinales en el abdomen superior. El diagnóstico probable es:",
+    "opciones": {
+      "a": "Ulcera péptica perforada",
+      "b": "Vólvulo cecal",
+      "c": "Colecistitis aguda",
+      "d": "Pancreatitis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "El cuadro clínico de dolor epigástrico irradiado al dorso tras ingesta alcohólica copiosa, junto con hiperamilasemia, es diagnóstico de pancreatitis aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-076",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección frente a una estenosis carotídea mayor de 70%, asintomática?",
+    "opciones": {
+      "a": "Ligadura de la carotida primitiva para evitar una embolia distal.",
+      "b": "Bypass carotideo con vena",
+      "c": "Tromboendarterectomía carotidea",
+      "d": "Anticoagulación de por vida"
+    },
+    "correcta": "a",
+    "explicacion": "Según la fuente, la respuesta marcada es la ligadura de la carótida primitiva, aunque la práctica clínica habitual suele indicar endarterectomía en estenosis significativas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-077",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología",
+      "Tumores músculo-esqueléticos"
+    ],
+    "enunciado": "Una mujer de 42 años presenta en la parte posterior del muslo una masa de 8 x 6 x 4 cm. La biopsia incisional revela un liposarcoma de grado avanzado. Su tratamiento incluirá:",
+    "opciones": {
+      "a": "Escisión extracompartimiento con márgenes negativos",
+      "b": "Amputación supracondilea alta",
+      "c": "Quimioterapia coadyuvante",
+      "d": "Escisión completa con márgenes negativos"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento estándar para sarcomas de partes blandas es la resección amplia con márgenes negativos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-078",
+    "materia": [
+      "cirugiageneral",
+      "dermatologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología cutánea",
+      "Oncología"
+    ],
+    "enunciado": "Un hombre de 38 años presenta un melanoma en la piel de la pantorrilla derecha que mide 5 mm de espesor. Se le palpan varios ganglios grandes en la región inguinal derecha. ¿Cuál de las siguientes opciones en relación con el tratamiento apropiado de este problema clínico es falsa?",
+    "opciones": {
+      "a": "Cuando el estudio adicional revela múltiples metástasis pulmonares de melanoma, tendrán que resecarse lo más pronto posible",
+      "b": "Cuando no hay infección general, hay que resecar el melanoma primario de la pantorrilla derecha con un borde mínimo de 2 centímetros",
+      "c": "Si los ganglios no contienen enfermedad metastásica sino simplemente son reactivos, la posibilidad de sobrevida a cinco años es del 60%",
+      "d": "Habrá que disecar por completo los ganglios inguinales derechos si no hay datos de metástasis generales"
+    },
+    "correcta": "a",
+    "explicacion": "Es la opción falsa. Si hay metástasis sistémicas múltiples (pulmonares), el tratamiento es sistémico; la resección quirúrgica inmediata de las metástasis no es la primera elección estándar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-079",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "Consulta a la guardia un varón de 75 años por dolor que comienza en forma brusca en el miembro inferior derecho y le produce impotencia funcional. En el examen físico los pulsos distales están ausentes. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Tromboflebitis",
+      "b": "Trombosis venosa profunda",
+      "c": "Embolia",
+      "d": "Erisipela"
+    },
+    "correcta": "c",
+    "explicacion": "El inicio brusco del dolor, la impotencia funcional y la ausencia de pulsos (signos de las 5 P) son característicos de la embolia arterial aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-080",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "Un hombre de 53 años, con historia de estreñimiento, dolor abdominal hipogástrico esporádico y espasmódico a veces intenso, presenta un cuadro actual de siete días de evolución con dolor abdominal inicialmente espasmódico y después pungitivo, localizado en hipogastrio y fosa ilíaca izquierda, con intensidad cada día mayor, distensión abdominal progresiva, dificultad para canalizar gases y escasa evacuación acintada y fiebre de hasta 39 C en los últimos dos días. En la exploración física se le encuentra febril, con abdomen distendido. Al palpar la fosa ilíaca izquierda se aprecia una masa fija muy dolorosa. Tiene resistencia muscular voluntaria e involuntaria y signo de rebote positivo. Con los datos anteriores, el diagnóstico clínico más probable es:",
+    "opciones": {
+      "a": "Ameboma",
+      "b": "Colitis ulcerosa",
+      "c": "Cáncer de colon",
+      "d": "Enfermedad de Crohn"
+    },
+    "correcta": "c",
+    "explicacion": "La presencia de masa fija, cambios en el hábito evacuatorio (heces acintadas), edad >50 y cuadro obstructivo/inflamatorio orientan al cáncer de colon (posiblemente perforado o complicado).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-081",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Los síntomas típicos de las hemorroides internas, que indican gravedad incluyen:",
+    "opciones": {
+      "a": "Sangre mezclada con heces",
+      "b": "Prolapso irreductible",
+      "c": "Dolor espontáneo",
+      "d": "Rectocele moderado."
+    },
+    "correcta": "b",
+    "explicacion": "El prolapso irreductible (Grado IV) indica severidad y complicación (riesgo de trombosis/estrangulación).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-082",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "Usted asiste a un paciente con el antecedente de resección endoscópica de un pólipo de colon a 40 cm del margen anal cuyo estudio histopatológico informó: pólipo adenomatoso con áreas de carcinoma con infiltración de la submucosa. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Iniciar tratamiento quimioterápico previo a la cirugía electiva oncológica",
+      "b": "Control en seis meses y nueva endoscopia para control de cambios en la mucosa",
+      "c": "Resección colónica de tipo oncológica en forma electiva",
+      "d": "Colonoscopía de control en 3 meses y nueva biopsia de la zona de resección por vía endoscópica."
+    },
+    "correcta": "c",
+    "explicacion": "La infiltración de la submucosa (cáncer invasor) generalmente requiere resección oncológica quirúrgica para asegurar márgenes y linfadenectomía.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-083",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Estómago"
+    ],
+    "enunciado": "Una clasificación ampliamente utilizada para valorar el sangrado en la ulcera gástrica en base a endoscopía es la de Forrest. La posibilidad de resangrado es mayor en",
+    "opciones": {
+      "a": "Forrest tipo III",
+      "b": "Forrest tipo I",
+      "c": "Forrest tipo II a",
+      "d": "Forrest tipo II b"
+    },
+    "correcta": "b",
+    "explicacion": "Forrest I (sangrado activo) tiene el mayor riesgo de persistencia o recurrencia de la hemorragia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-084",
+    "materia": [
+      "cirugiageneral",
+      "urologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Otras preguntas de urología",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "¿Qué se entiende por Enfermedad de Fournier?",
+    "opciones": {
+      "a": "Infección de músculos esqueléticos con presencia de gas por gérmenes anaeróbicos",
+      "b": "Infección por estafilococo y estreptococo del saco escrotal, con compromiso de la viabilidad testicular",
+      "c": "Necrosis cutánea de los tegumentos genitales, que puede afectar estructuras más profundas",
+      "d": "Celulitis necrotizante difusa del celular subcutáneo, que suele afectar las piernas y extenderse al abdomen"
+    },
+    "correcta": "c",
+    "explicacion": "La gangrena de Fournier es una fascitis necrotizante de los genitales y el periné.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-085",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Un varón sano de 24 años, refiere hemorragia rectal indolora después de los movimientos intestinales. Nunca ha estado enfermo ni hospitalizado. Un sigmoidoscopio flexible revela la presencia de hemorroides internas pequeñas sin otras lesiones ¿Cuál de las acciones siguientes debe incluir el tratamiento de este sujeto?",
+    "opciones": {
+      "a": "Hemorroidectomía",
+      "b": "Modificación dietética",
+      "c": "Ligadura con banda de caucho",
+      "d": "Escleroterapia"
+    },
+    "correcta": "b",
+    "explicacion": "En hemorroides internas pequeñas (Grado I) y sintomáticas leves, el tratamiento inicial es conservador con dieta rica en fibra y líquidos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-086",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "El tratamiento adecuado en la poliposis colónica familiar es:",
+    "opciones": {
+      "a": "Resección endorrectal",
+      "b": "Resección transacra",
+      "c": "Resección y anastomosis terminoterminal",
+      "d": "Resección abdominoperineal"
+    },
+    "correcta": "c",
+    "explicacion": "En el contexto de las opciones dadas, se refiere a la colectomía/proctocolectomía con anastomosis (como la ileorrectal o ileoanal).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-087",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon",
+      "Tomografía"
+    ],
+    "enunciado": "El estudio de mayor utilidad para confirmar y seguir evolutivamente el diagnóstico de diverticulitis aguda de colon en adultos es:",
+    "opciones": {
+      "a": "Fibro-colonoscopia",
+      "b": "Colon por enema",
+      "c": "Laparoscopia exploradora",
+      "d": "Tomografia computada de abdomen"
+    },
+    "correcta": "d",
+    "explicacion": "La tomografía computada es el Gold Standard para el diagnóstico y estadificación (Hinchey) de la diverticulitis aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-088",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Aorta"
+    ],
+    "enunciado": "Marcelino de 74 años con antecedentes de HTA en tratamiento con atenolol, dislipidémico y ex tabaquista se presenta a la guardia presentando epigastralgia postprandial de tipo cólico, de 7 días de evolución. Durante el examen físico se palpa una masa umbilical pulsátil y dolorosa al tacto. Se interpreta como aneurisma de aorta abdominal por lo cual se le solicita una TC de abdomen y pelvis que informa: importante dilatación aneurismática de la aorta abdominal por debajo del nacimiento de las arterias renales que toma un aspecto fusiforme hasta su bifurcación, prolongándose varios cm por la arteria iliaca izquierda. Dicho aneurisma alcanza diámetros máximos de 55 mm. Con un trombo mural de aproximadamente 38 mm en su posición más extensa. La conducta frente a estos datos es:",
+    "opciones": {
+      "a": "Resección quirúrgica posterior programada",
+      "b": "Nuevo control resonancia magnética y resección por vía anterior",
+      "c": "Reemplazo endoaneurismático o implante de endoprótesis por vía percutánea",
+      "d": "Control tomográfico cada 6 meses"
+    },
+    "correcta": "c",
+    "explicacion": "Con un diámetro de 5,5 cm, está indicado el tratamiento. El reemplazo endovascular (EVAR) es una opción de elección en pacientes añosos con anatomía favorable.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-089",
+    "materia": [
+      "cirugiageneral",
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Patología nefrourológica infantil",
+      "Otras preguntas de urología"
+    ],
+    "enunciado": "Un niño de 12 meses de edad, que en los exámenes de salud practicados desde el nacimiento presenta testículo derecho en conducto inguinal que no es posible descender hasta el escroto. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Se ha de esperar hasta los dos años a que ocurra descenso espontáneo del mismo",
+      "b": "La indicación de orquidopexia no debe diferirse",
+      "c": "El diagnóstico más probable es el de testículo retráctil",
+      "d": "La gonadotropina coriónica humana es el tratamiento de primera elección"
+    },
+    "correcta": "b",
+    "explicacion": "A los 12 meses (1 año), si el testículo no ha descendido, es poco probable que lo haga espontáneamente y se indica la corrección quirúrgica (orquidopexia) para preservar la función.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-090",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Un paciente de 72 años lo consulta por haber presentado un episodio de proctorragia hace 5 días. No tiene antecedentes patológicos relevantes. Se realiza una video colonoscopía que informa: presencia de un pólipo único pediculado en el sigma, de unos 25 mm de diámetro, que tiene una ulceración en su cúspide. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Videocolonoscopía a los 3 meses e intervención quirúrgica si aumenta de tamaño.",
+      "b": "Fotocoagulación con láser del pólipo",
+      "c": "Polipectomía endoscópica y estudio anatomopatológico",
+      "d": "Sigmoidectomía"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un pólipo pediculado, el primer paso es la polipectomía endoscópica completa para su análisis histológico, que determinará si se requiere cirugía posterior.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-091",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "El tratamiento adecuado en la poliposis colónica familiar es:",
+    "opciones": {
+      "a": "Resección endoscópica de los pólipos mayores a 2 cm",
+      "b": "Sólo observación periódica",
+      "c": "Proctocolectomía total o colectomía total con anastomosis ileorrectal",
+      "d": "Tratamiento continuado con vitaminas"
+    },
+    "correcta": "c",
+    "explicacion": "Debido al riesgo del 100% de cáncer colorrectal, el tratamiento es la extirpación profiláctica de todo el colon (y recto según el caso).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-092",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Una mujer de 80 años es valorada por dolor abdominal y estreñimiento rebelde. En el examen se encuentra afebril con ligera taquicardia. Presenta abdomen distendido y timpanismo, pero no hay signos peritoneales. La radiografía de abdomen sugiere la presencia de vólvulo sigmoide. El primer paso del tratamiento debe ser:",
+    "opciones": {
+      "a": "Enema de bario",
+      "b": "Colostomía transversa",
+      "c": "Resección del sigmoide",
+      "d": "Sigmoidoscopia rígida"
+    },
+    "correcta": "d",
+    "explicacion": "En ausencia de peritonitis o gangrena, la devolvulación y descompresión endoscópica (con sigmoidoscopio rígido o flexible) es el tratamiento inicial de elección.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-093",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Un hombre de 53 años, con historia de estreñimiento, dolor abdominal hipogástrico esporádico y espasmódico a veces intenso, presenta un cuadro actual de siete días de evolución con dolor abdominal inicialmente espasmódico y después pungitivo, localizado en hipogastrio y fosa ilíaca izquierda, con intensidad cada día mayor, distensión abdominal progresiva, dificultad para canalizar gases y escasa evacuación acintada y fiebre de hasta 39 C en los últimos dos días. En la exploración física se le encuentra febril, con abdomen distendido. Al palpar la fosa iliaca izquierda se aprecia una masa fija muy dolorosa. Tiene resistencia muscular voluntaria e involuntaria y signo de rebote positivo. Con los datos anteriores, el diagnóstico clínico más probable es:",
+    "opciones": {
+      "a": "Cáncer del sigmoides",
+      "b": "Colitis ulcerosa",
+      "c": "Diverticulitis del sigmoides",
+      "d": "Vólvulos del sigmoides"
+    },
+    "correcta": "c",
+    "explicacion": "La clínica de dolor en Fosa Ilíaca Izquierda, fiebre, masa palpable y signos de irritación peritoneal es clásica de la diverticulitis sigmoidea aguda complicada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-094",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon",
+      "Antibacterianos"
+    ],
+    "enunciado": "Una vez establecido el diagnóstico de apendicitis aguda no complicada y una vez que se ha decidido realizar una apendicectomía, ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "En todos los casos son preferibles los antibióticos múltiples a un sólo agente",
+      "b": "No es necesario el tratamiento antibiótico",
+      "c": "Es necesario administrar antibióticos profilácticos",
+      "d": "Los antibióticos profilácticos no son necesarios a menos que haya datos de perforación"
+    },
+    "correcta": "c",
+    "explicacion": "La profilaxis antibiótica preoperatoria es necesaria y estándar para reducir la infección del sitio quirúrgico en apendicitis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-095",
+    "materia": [
+      "cirugiageneral",
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Vacunación infantil",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "Pablo de 9 años presentó una herida cortante en la pierna izquierda El certificado de inmunizaciones está completo para su edad. ¿Qué conducta adopta con este niño?",
+    "opciones": {
+      "a": "Limpia la herida e indica gammaglobulina antitetánica",
+      "b": "Sólo limpiar la herida",
+      "c": "Limpia la herida e indica refuerzo de vacuna antitetánica",
+      "d": "Limpia la herida e indica vacuna y gammaglobulina antitetánicas"
+    },
+    "correcta": "b",
+    "explicacion": "Si el esquema de vacunación está completo y la última dosis fue hace menos de 5-10 años (dependiendo del tipo de herida, pero a los 9 años suele estar cubierto por el ingreso escolar), solo requiere limpieza.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-096",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon",
+      "Oncología"
+    ],
+    "enunciado": "En un paciente de 35 años se realiza una apendicectomía sin complicaciones a causa de apendicitis supurativa aguda. El informe de patología revela un tumor carcinoide de 1 cm en la parte media del apéndice. ¿Cuál de las siguientes acciones implicaría al tratamiento posterior?",
+    "opciones": {
+      "a": "Radioterapia del cuadrante inferior derecho",
+      "b": "Orina de 24 horas para valoración del ácido 5-hidroxiindolacético",
+      "c": "Seguimiento regular, ya que la resección fue realizada",
+      "d": "Colectomía derecha"
+    },
+    "correcta": "c",
+    "explicacion": "Los tumores carcinoides apendiculares menores de 1-2 cm localizados en la punta o cuerpo, sin invasión del meso, se consideran curados con la apendicectomía.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-097",
+    "materia": [
+      "cirugiageneral",
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Radiografía",
+      "Colon"
+    ],
+    "enunciado": "Un paciente masculino de 72 años se presenta a la consulta con dolor intenso en fosa ilíaca izquierda de aparición brusca, que luego se propago al resto del abdomen. El paciente refiere haber presentado hace 4 años un cuadro de dolor abdominal leve con alteración del ritmo evacuatorio por el que fue estudiado diagnosticándole enfermedad diverticular. Actualmente al examen fisico se presenta lúcido, febril con 39 C FC 120 lpm, FR 24 rpm, TA 130/80 mmHg; abdomen distendido, a la palpación se evidencia hiperalgesia, contractura muscular general y exacerbación del dolor a la descompresión brusca. Según su interpretación del cuadro que estudio solicitaría como primer método diagnóstico:",
+    "opciones": {
+      "a": "Ecografía de abdomen",
+      "b": "Rx de abdomen de pie y acostado",
+      "c": "RMN de abdomen",
+      "d": "TC de abdomen"
+    },
+    "correcta": "b",
+    "explicacion": "Ante la sospecha de peritonitis generalizada por perforación (neumoperitoneo), la radiografía de abdomen de pie y acostado (o tórax de pie) es el estudio inicial rápido para buscar aire libre.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-098",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Una mujer de 43 años, con antecedente de evacuaciones de consistencia disminuida (de cuatro a seis en 24 hs durante los últimos cinco años. Y en los últimos tres meses, acompañadas de moco y sangre, ha perdido 20% de su peso corporal en el último año; sufre dolor abdominal espasmódico hipogástrico de moderado a intenso, que se agudiza al comer y disminuye al canalizar gases o evacuar. Con los datos anteriores, además de la exploración clínica, ¿qué estudio sería el más indicado?",
+    "opciones": {
+      "a": "Rectosigmoidoscopia",
+      "b": "Sigmoidoscopia flexible",
+      "c": "Colon por enema",
+      "d": "Colonoscopia"
+    },
+    "correcta": "d",
+    "explicacion": "Dada la cronicidad, la pérdida de peso y el sangrado, se requiere una evaluación completa del colon (colonoscopia) para descartar enfermedad inflamatoria intestinal o neoplasia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-099",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Venas y linfáticos"
+    ],
+    "enunciado": "En un hombre de 55 años que trabaja de cajero en un supermercado, con un antecedente de edema en la pierna derecha de 8 meses de duración, que aumenta de tamaño durante el transcurso de una jornada de trabajo, acompañándose de dolor estallante de intensidad moderada a grave, el estudio más apropiado a realizar es:",
+    "opciones": {
+      "a": "Medición de la presión venosa del pie ambulatoria y en reposo",
+      "b": "Flebografía ascendente y descendente",
+      "c": "Ultrasonografía dúplex con Doppler.",
+      "d": "Prueba Brodie-Trendelenburg"
+    },
+    "correcta": "c",
+    "explicacion": "El Eco Doppler venoso es el estudio no invasivo de elección para el diagnóstico de insuficiencia venosa crónica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-001-100",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál de los siguientes signos suelen relacionarse más frecuentemente con apendicitis aguda?",
+    "opciones": {
+      "a": "Temp. mayor de 40 C y dolor en el cuadrante inferior derecho",
+      "b": "Leucocitosis de más de 20.000 mm3, aumento de LDH y dolor en hipocondrio derecho",
+      "c": "Anorexia, dolor abdominal y dolor en el cuadrante inferior derecho (FID)",
+      "d": "Evacuaciones semilíquidas frecuentes acompañadas de vómitos y dolor en el ombligo"
+    },
+    "correcta": "c",
+    "explicacion": "La secuencia de anorexia, dolor periumbilical que migra a FID (Cronología de Murphy) es la presentación clínica clásica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
