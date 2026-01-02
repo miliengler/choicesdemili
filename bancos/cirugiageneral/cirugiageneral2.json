@@ -600,3 +600,1777 @@
     "anio": null,
     "oficial": false
   },
+
+  {
+    "id": "cirugia-002-026",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Si un paciente presenta una panlitiasis coledociana, ¿qué tratamiento indicaría?",
+    "opciones": {
+      "a": "Papiloesfinterotomía transduodenal.",
+      "b": "Litotricia.",
+      "c": "Coledocotomía y extracción de los cálculos.",
+      "d": "Colecistectomía con drenaje con tubo de Kehr."
+    },
+    "correcta": "d",
+    [span_0](start_span)"explicacion": "Hay que sacar la vesícula, explorar la vía biliar para extraer los cálculos del interior y dejar un tubo de Kehr para evitar la estenosis[span_0](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-027",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Urgencias endocrinas"
+    ],
+    "enunciado": "Un paciente de 32 años medicada con anticonceptivos orales desde hace 5 años, consulta por dolor abdominal, taquicardia, hipotensión y masa abdominal palpable. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Tumor carcinoide.",
+      "b": "Adenoma hepatocelular complicado.",
+      "c": "Hemangioma.",
+      "d": "Hipertrofia nodular focal."
+    },
+    "correcta": "b",
+    [span_1](start_span)"explicacion": "El adenoma hepatocelular está asociado al uso de anticonceptivos orales y puede complicarse con rotura y hemorragia (shock hipovolémico)[span_1](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-028",
+    "materia": [
+      "cirugiageneral",
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Ingresa a la guardia un paciente de 49 años con antecedentes de linfoma de Hodgkin tratado hace 8 años con buena respuesta al tratamiento. Comienza bruscamente con síndrome febril, hipotensión, desorientación temporoespacial y oliguria. En la ecografía se encuentra una formación de 10 X 14 cm en el lóbulo derecho hepático compatible con absceso ¿Cuál es la conducta terapéutica más aconsejable?",
+    "opciones": {
+      "a": "Antibioticoterapia y drenaje percutáneo.",
+      "b": "Laparotomía exploradora de urgencia.",
+      "c": "Antibioticoterapia exclusivamente.",
+      "d": "Punción aspiración del absceso."
+    },
+    "correcta": "a",
+    [span_2](start_span)"explicacion": "Siempre que hay una colección hay que drenarla y tratar la causa; el drenaje percutáneo junto con antibióticos es el tratamiento de elección inicial[span_2](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-029",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección en una paciente que presenta una hernia inguinal recidivada?",
+    "opciones": {
+      "a": "Colocación de malla anterior x via laparoscópica anterior.",
+      "b": "Abordaje laparoscópico preperitoneal.",
+      "c": "Incisión de descarga en la vaina de los rectos.",
+      "d": "Reparación con sutura en \"surget\"."
+    },
+    "correcta": "b",
+    [span_3](start_span)"explicacion": "Cuando la hernia es recidivada se intenta abordar por un sitio virgen de cirugía (diferente al anterior), por lo que se prefiere el abordaje preperitoneal (generalmente laparoscópico)[span_3](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-030",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "Con respecto a las hernias inguinoescrotales:",
+    "opciones": {
+      "a": "Son siempre directas.",
+      "b": "Se forman por la ausencia del conducto peritoneo vaginal.",
+      "c": "Son siempre indirectas.",
+      "d": "Su génesis se debe a un defecto en la fascia transversalis."
+    },
+    "correcta": "c",
+    [span_4](start_span)"explicacion": "Son siempre indirectas porque se producen por la persistencia/permeabilidad del conducto peritoneo vaginal por donde desciende el testículo[span_4](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-031",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Esófago",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección frente a un tumor de 1/3 medio de esófago que infiltra toda la pared, sin la adventicia, con ganglios de mediastino negativos y sin metástasis a distancia?",
+    "opciones": {
+      "a": "Esofagectomía por toracofreno-laparotomía derecha.",
+      "b": "Esofagectomía por toracotomía posterolateral derecha.",
+      "c": "Esofagectomía sin toracotomía.",
+      "d": "Esofagectomía por toracotomía posterolateral izquierda."
+    },
+    "correcta": "b",
+    [span_5](start_span)"explicacion": "Se aborda por el lado derecho (toracotomía derecha) porque del lado izquierdo se encuentran el corazón y la aorta, dificultando el acceso al esófago medio[span_5](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-032",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "La protrusión más frecuente de un saco herniario crural está en relación con los vasos femorales:",
+    "opciones": {
+      "a": "Entre la arteria y el nervio crural.",
+      "b": "No tiene relación con los vasos.",
+      "c": "Delante de los mismos.",
+      "d": "Por dentro de la vena femoral."
+    },
+    "correcta": "d",
+    [span_6](start_span)"explicacion": "Anatómicamente, el anillo crural se encuentra medial a la vena femoral; en ese lugar estrecho lo más colapsable es la vena[span_6](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-033",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "En un paciente al cual usted se encuentra realizando una colangiografía trans-Kehr, se identifica un cálculo grande retenido en el colédoco. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Extracción quirúrgica inmediata.",
+      "b": "Disolución con heparina.",
+      "c": "Disolución con colato de sodio.",
+      "d": "Extracción instrumental por el trayecto fistuloso del Kehr."
+    },
+    "correcta": "d",
+    [span_7](start_span)"explicacion": "Se espera a que madure el trayecto (4-6 semanas), se retira el tubo de Kehr y se realiza la extracción instrumental del cálculo por el trayecto fistuloso[span_7](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-034",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente de 60 años con un cuadro de dolores cólicos postprandiales en hipocondrio derecho, Ud le diagnostica una litiasis vesicular por ecografía. ¿Cuál es su propuesta terapéutica?",
+    "opciones": {
+      "a": "Cirugía electiva.",
+      "b": "Litotricia extracorpórea.",
+      "c": "Papiloesfinteroplastia endoscópica.",
+      "d": "Dieta hipograsa y antiespasmódicos."
+    },
+    "correcta": "a",
+    [span_8](start_span)"explicacion": "Ante una litiasis vesicular sintomática, el tratamiento de elección es la colecistectomía (cirugía) electiva[span_8](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-035",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es la opción correcta con relación al cáncer de las vías biliares extrahepáticas?",
+    "opciones": {
+      "a": "La colangiografía es el primer estudio en la secuencia diagnóstica.",
+      "b": "El pronóstico es excelente cuando se aplica el tratamiento quirúrgico y coadyuvante apropiado.",
+      "c": "La enfermedad casi siempre se pone de manifiesto por dolor en el cuadrante superior derecho de intensidad moderada a grave.",
+      "d": "La ubicación del tumor determina el tipo de procedimiento quirúrgico que se realizará."
+    },
+    "correcta": "d",
+    [span_9](start_span)"explicacion": "La técnica quirúrgica depende de la localización (tercio superior, medio o inferior); no se reseca igual un tumor hiliar que uno distal[span_9](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-036",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Estómago"
+    ],
+    "enunciado": "Un paciente de 80 años, desnutrido, con EPOC tiene un adenocarcinoma gástrico y se le realizó gastrectomía Billroth II. Es evaluado al quinto día de la cirugía y presenta distensión abdominal, ausencia de ruidos hidroaéreos y débito serohemático abundante por la herida quirúrgica. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Evisceración.",
+      "b": "Fístula del muñón duodenal.",
+      "c": "Fístula de la anastomosis gastrointestinal.",
+      "d": "Adherencias o bridas tempranas."
+    },
+    "correcta": "a",
+    [span_10](start_span)"explicacion": "La salida de líquido serohemático ('lavado de carne') por la herida es un signo patognomónico de evisceración cubierta o dehiscencia de la pared abdominal[span_10](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-037",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Una paciente de 57 años consulta por dolor epigástrico tipo cólico luego de la ingesta de comidas ricas en grasas. Tiene antecedente de colecistectomía laparoscópica hace siete años. Laboratorio: Bilirrubina total 2,5 mg/dl, Directa 2,1 mg/dl, FA 490 UI/L. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hepatitis viral.",
+      "b": "Litiasis coledociana con obstrucción canalicular.",
+      "c": "Hepatitis tóxica.",
+      "d": "Síndrome postcolecistectomía."
+    },
+    "correcta": "b",
+    "explicacion": "Presenta síndrome coledociano (colestasis y dolor). [span_11](start_span)Dado que fue operada hace 7 años, se trata probablemente de una litiasis coledociana primaria (de novo)[span_11](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-038",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "Una paciente de 30 años consulta por dolor abdominal de iniciación brusca, en hemiabdomen inferior, fiebre y dos episodios de vómitos alimentarios. Es la primera vez que presenta este cuadro. ¿Qué hallazgo del examen físico le hace sospechar un abdomen agudo quirúrgico?",
+    "opciones": {
+      "a": "Signo de rebote o Bloomberg.",
+      "b": "Signo de Cullen o cabeza de medusa.",
+      "c": "Puño percusión positiva.",
+      "d": "Disminución de los ruidos hidroaéreos."
+    },
+    "correcta": "a",
+    [span_12](start_span)"explicacion": "El signo de rebote o Blumberg positivo indica irritación peritoneal, sugiriendo un cuadro de abdomen agudo quirúrgico (peritonitis)[span_12](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-039",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "¿Cuáles de las siguientes variedades de hernia tiene más probabilidades de estrangularse?",
+    "opciones": {
+      "a": "Hernia crural.",
+      "b": "Hernia hiatal.",
+      "c": "Hernia inguinal.",
+      "d": "Hernia de Spiegel."
+    },
+    "correcta": "a",
+    [span_13](start_span)"explicacion": "Las hernias crurales, al atravesar un orificio estrecho y rígido (anillo crural), son las que presentan mayor tasa de complicación (estrangulamiento)[span_13](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-040",
+    "materia": [
+      "cirugiageneral",
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "Una paciente de 41 años consulta por hipertermia y tos, 72 horas de evolución, con antecedente de colecistectomía laparoscópica hace 3 semanas. Rx tórax: derrame pleural derecho. Ecografía: colección anterohepática de 5x7 cm. Toracocentesis: pH<7, LDH>1000. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Drenaje pleural y laparotomía.",
+      "b": "Toracotomía y laparotomía.",
+      "c": "Drenaje pleural y drenaje percutáneo de la colección.",
+      "d": "Toracocentesis y laparoscopia."
+    },
+    "correcta": "c",
+    "explicacion": "Presenta un empiema pleural secundario a un absceso subfrénico/colección abdominal. [span_14](start_span)Se debe drenar la colección abdominal (causa) y el empiema pleural[span_14](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-041",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "La colerragia por falla en la ligadura del conducto cístico es una complicación de la colecistectomía laparoscópica. Si la fuga de bilis persiste, ¿cuál es el primer procedimiento terapéutico?",
+    "opciones": {
+      "a": "Un drenaje biliar externo por vía percutánea.",
+      "b": "Una papilotomía endoscópica.",
+      "c": "Una laparotomía.",
+      "d": "Una nueva laparoscopia."
+    },
+    "correcta": "b",
+    [span_15](start_span)"explicacion": "Se realiza papilotomía endoscópica (CPRE) para disminuir la presión en la vía biliar y favorecer el flujo hacia el duodeno, permitiendo el cierre de la fístula del cístico[span_15](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-042",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Un enfermo crítico, en el 10° día de ARM por TEC, presenta sepsis de origen desconocido, dolor en HD, fiebre y amilasemia de 450 UI. La ecografía muestra vesícula aumentada de tamaño, paredes de 8 mm y barro biliar, sin litiasis. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Pancreatitis aguda.",
+      "b": "Colecistitis alitiásica.",
+      "c": "Colangitis aguda.",
+      "d": "Colecistitis alitiásica."
+    },
+    "correcta": "b",
+    "explicacion": "En pacientes críticos inmunodeprimidos o en UTI, es frecuente la colecistitis alitiásica (por isquemia/estasis). [span_16](start_span)El tratamiento suele ser colecistostomía percutánea[span_16](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-043",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Hígado",
+      "Tomografía"
+    ],
+    "enunciado": "En un paciente joven, asintomático, una TC muestra un tumor de 3 cm en el lóbulo derecho del hígado. Con el contraste se observa hipervascularizado, con distribución vascular en estrella y una cicatriz central. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Adenoma hepatocelular.",
+      "b": "Hemangioma.",
+      "c": "Hamartoma.",
+      "d": "Hiperplasia nodular focal."
+    },
+    "correcta": "d",
+    [span_17](start_span)"explicacion": "La imagen con cicatriz central estrellada es patognomónica de la hiperplasia nodular focal[span_17](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-044",
+    "materia": [
+      "cirugiageneral",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Evaluación prequirúrgica",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "Un paciente en su 15º día de postoperatorio por colecistectomía presenta fiebre, derrame pleural derecho, dolor a la compresión de parrilla costal derecha y parálisis diafragmática derecha. ¿Qué patología sugiere?",
+    "opciones": {
+      "a": "Neumotórax.",
+      "b": "Tromboflebitis.",
+      "c": "Absceso subfrénico.",
+      "d": "Neumonía."
+    },
+    "correcta": "c",
+    [span_18](start_span)"explicacion": "La clínica de fiebre postoperatoria tardía, dolor en hipocondrio derecho y signos torácicos derechos (derrame, parálisis diafragmática) sugiere un absceso subfrénico[span_18](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-045",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente de 78 años tratado con colecistectomía laparoscópica por colecistitis aguda hace dos meses, consulta por dolor en hipocondrio derecho, fiebre en picos con bacteriemia. Ecografía: vía biliar de 12 mm. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Lesión quirúrgica de la vía biliar.",
+      "b": "Absceso hepático.",
+      "c": "Absceso subfrénico.",
+      "d": "Colangitis aguda por litiasis residual."
+    },
+    "correcta": "d",
+    [span_19](start_span)"explicacion": "La presencia de vía biliar dilatada y colangitis meses después de la cirugía sugiere una litiasis residual (cálculo que quedó en la vía biliar)[span_19](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-046",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección del carcinoma de la vesícula biliar?",
+    "opciones": {
+      "a": "Radioterapia.",
+      "b": "Quimioterapia.",
+      "c": "Tratamiento combinado que comprende cirugía, quimioterapia y radiación.",
+      "d": "Resección en bloque del tumor y el lecho vesicular en cuña, incluyendo 3 cm de parénquima hepático adyacente en los segmentos IV y V y disección de ganglios linfáticos regionales."
+    },
+    "correcta": "d",
+    [span_20](start_span)"explicacion": "El tratamiento radical incluye colecistectomía, resección del lecho hepático (segmentos IVb y V) y linfadenectomía regional[span_20](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-047",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "¿A qué se denomina hernia de Spiegel?",
+    "opciones": {
+      "a": "A la que protruye a través del hiato esofágico.",
+      "b": "A la que protruye a través de orificios existentes en la línea semilunar.",
+      "c": "A la que protruye a través del orificio obturador.",
+      "d": "A la que se forma con el intestino delgado en la hernia inguinal."
+    },
+    "correcta": "b",
+    [span_21](start_span)"explicacion": "La hernia de Spiegel protruye a través de la línea semilunar de Spiegel (borde lateral del músculo recto abdominal)[span_21](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-048",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente de 56 años, cursa una colangitis aguda grave, con signos de shock y trastornos del sensorio. ¿Cuál es la conducta terapéutica más importante en este paciente?",
+    "opciones": {
+      "a": "Drenaje biliar endoscópico.",
+      "b": "Administración de antibióticos de acuerdo con los hemocultivos.",
+      "c": "Colecistectomía y coledocotomía laparoscópicas.",
+      "d": "Internación en terapia intensiva y soporte con drogas vasoactivas."
+    },
+    "correcta": "a",
+    [span_22](start_span)"explicacion": "En la colangitis supurativa aguda (Péntada de Reynolds), es imperativo drenar el pus de la vía biliar (preferentemente por CPRE) para controlar la sepsis; los antibióticos solos no son suficientes[span_22](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-049",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "En un paciente que presenta una hernia crural, ¿cuál de las siguientes estructuras debe ser utilizada en la cirugía para reparar el defecto?",
+    "opciones": {
+      "a": "La línea blanca externa.",
+      "b": "El músculo recto anterior.",
+      "c": "El ligamento de Gimbernat.",
+      "d": "El ligamento de Cooper."
+    },
+    "correcta": "d",
+    [span_23](start_span)"explicacion": "La técnica clásica (McVay) para reparar hernias crurales utiliza el ligamento de Cooper para cerrar el anillo femoral[span_23](end_span).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-050",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "El factor más importante determinante de muerte por obstrucción intestinal es:",
+    "opciones": {
+      "a": "Edad del paciente.",
+      "b": "Intubación gastrointestinal excesiva.",
+      "c": "Perforación.",
+      "d": "Lugar de obstrucción."
+    },
+    "correcta": "c",
+    "explicacion": "La perforación intestinal conlleva peritonitis fecal y sepsis, aumentando drásticamente la mortalidad.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-051",
+    "materia": [
+      "cirugiageneral",
+      "hematologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Estómago",
+      "Linfomas"
+    ],
+    "enunciado": "En un varón de 40 años con linfoma gástrico diagnosticado por endoscopía y biopsia. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Gastrectomía subtotal.",
+      "b": "Quimioterapia.",
+      "c": "Radioterapia.",
+      "d": "Resección quirúrgica y terapia adyuvante (quimioterapia y radioterapia)."
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento clásico del linfoma gástrico primario (MALT o difuso de células grandes) suele combinar cirugía (si está indicada/complicada) con adyuvancia, aunque actualmente la quimio/inmuno y erradicación de H. pylori son pilares fundamentales, la respuesta de la fuente marca la combinación quirúrgica.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-052",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Aorta",
+      "General"
+    ],
+    "enunciado": "Usted asiste en el consultorio a un paciente varón de 74 años, asintomático, que fumó hasta dos años 20 paquetes/año y tiene historia de hipertensión arterial desde hace 20 años. ¿Qué medida de rastreo está recomendada para este tipo de paciente?",
+    "opciones": {
+      "a": "Ecocardiograma Doppler.",
+      "b": "Ecografía abdominal.",
+      "c": "Radiografía de tórax.",
+      "d": "Ergometría."
+    },
+    "correcta": "b",
+    "explicacion": "Está indicado el screening de aneurisma de aorta abdominal mediante ecografía en hombres de 65 a 75 años con antecedentes de tabaquismo.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-053",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una medida de apoyo normal para los pacientes con pancreatitis leve?",
+    "opciones": {
+      "a": "Tratamiento subcutáneo con octreotide.",
+      "b": "Antibióticos profilácticos.",
+      "c": "Tratamiento con líquido y electrólitos por vía intravenosa.",
+      "d": "Insulina SC."
+    },
+    "correcta": "c",
+    "explicacion": "El pilar del tratamiento de la pancreatitis aguda leve es el reposo digestivo (inicialmente) y la hidratación parenteral agresiva.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-054",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "Un paciente joven presenta dolor epigástrico, de comienzo brusco irradiado al dorso, vómitos, sin fiebre ni colestasis. En el examen físico el abdomen se encuentra distendido y presenta defensa generalizada. El par radiológico de abdomen es normal y una ecografía muestra microlitiasis vesicular. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colangitis aguda.",
+      "b": "Pancreatitis aguda.",
+      "c": "Colecistitis aguda.",
+      "d": "Ulcera duodenal perforada."
+    },
+    "correcta": "b",
+    "explicacion": "La clínica de dolor en cinturón irradiado al dorso, asociada a microlitiasis (causa biliar), es típica de pancreatitis aguda.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-055",
+    "materia": [
+      "cirugiageneral",
+      "hematologia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Anemias hemolíticas"
+    ],
+    "enunciado": "En los siguientes casos la esplenectomía es curativa, EXCEPTO:",
+    "opciones": {
+      "a": "Trauma esplénico Grado II.",
+      "b": "Púrpura trombocitopénica.",
+      "c": "Trombosis u obstrucción de la vena esplénica.",
+      "d": "Anemia hemolítica aguda."
+    },
+    "correcta": "a",
+    "explicacion": "En el trauma esplénico Grado II, si el paciente está estable, se indica manejo no operatorio (conservador), no esplenectomía.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-056",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "La causa más frecuente de pancreatitis aguda es:",
+    "opciones": {
+      "a": "En mujeres postmenopáusicas e idiopática.",
+      "b": "Postoperatorio de vía biliar y cirugía de hígado.",
+      "c": "Obeso que descendió de peso abruptamente.",
+      "d": "Alcoholismo y litiasis biliar."
+    },
+    "correcta": "d",
+    "explicacion": "La litiasis biliar y el alcoholismo constituyen las dos causas principales de pancreatitis aguda.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-057",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Una paciente de 80 años con antecedentes de enfermedad diverticular concurre por dolor en FII y fiebre. Tomografía evidencia colección de 5 x 4 cm localizada (Hinchey II). ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Cirugía de urgencia para drenaje.",
+      "b": "Tratamiento antibiótico por vía parenteral.",
+      "c": "Laparotomía exploradora y operación de Hartmann.",
+      "d": "Drenaje percutáneo y antibioticoterapia."
+    },
+    "correcta": "d",
+    "explicacion": "Las colecciones diverticulares localizadas accesibles (Hinchey II) mayores a 3-4 cm se tratan preferentemente con drenaje percutáneo.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-058",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "En un paciente diagnosticado de pancreatitis aguda, a los dos días de su evolución, ¿cuál de los siguientes datos carece de valor para pronosticar su carácter severo?",
+    "opciones": {
+      "a": "Valores de amilasa y/o lipasa sérica elevados más de 10 veces el límite normal.",
+      "b": "Presentar una puntuación APACHE II superior a 8.",
+      "c": "Obesidad.",
+      "d": "Tener unos valores de proteína C reactiva sérica superiores a 120 mg/dL."
+    },
+    "correcta": "a",
+    "explicacion": "El nivel de elevación de las enzimas (amilasa/lipasa) es diagnóstico pero no tiene valor pronóstico de severidad.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-059",
+    "materia": [
+      "pediatria",
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Es traída a la guardia una niña de 3 años por presentar un episodio de heces con sangre (enterorragia). La madre refiere dos episodios similares previos. No refiere constipación ni molestias al defecar. El examen físico es normal. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Invaginación intestinal.",
+      "b": "Divertículo de Meckel.",
+      "c": "Apendicitis aguda hemorrágica.",
+      "d": "Colitis ulcerosa."
+    },
+    "correcta": "b",
+    "explicacion": "El divertículo de Meckel es la principal causa de hemorragia digestiva baja indolora en niños pequeños.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-060",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "Luego de una resección muy extensa de yeyunoileon se puede observar una o más de las siguientes complicaciones. Señale la respuesta:",
+    "opciones": {
+      "a": "Esteatorrea.",
+      "b": "Diarrea.",
+      "c": "Hipersecreción gástrica.",
+      "d": "Hiperoxaluria."
+    },
+    "correcta": "a",
+    "explicacion": "La resección extensa del intestino delgado provoca malabsorción de grasas (esteatorrea) por pérdida de superficie absortiva y sales biliares.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-061",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "Un paciente cursando 7º día postoperatorio de resección intestinal por hernia crural atascada, comienza con débito aéreo por el drenaje y eritema peri-drenaje. Sospecha una fístula entérica reciente. ¿Cuál es el paso por seguir para esclarecer el diagnóstico?",
+    "opciones": {
+      "a": "FEDA.",
+      "b": "Azul de metileno V.O.",
+      "c": "SEGD.",
+      "d": "Fistulografía."
+    },
+    "correcta": "b",
+    "explicacion": "Para confirmar una fístula reciente sin trayecto maduro, la administración de azul de metileno por vía oral y su salida por el drenaje/herida confirma la comunicación entérica.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-062",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "Ante un paciente que presenta cáncer de cabeza de páncreas irresecable, ¿qué tipo de cirugía paliativa es la de elección?",
+    "opciones": {
+      "a": "Wirsung yeyunoanastomosica.",
+      "b": "Derivación biliodigestiva.",
+      "c": "Colocación de un tubo de Kehr.",
+      "d": "Pancreatectomía corporocaudal."
+    },
+    "correcta": "b",
+    "explicacion": "La paliación quirúrgica para la ictericia obstructiva se realiza mediante una derivación biliodigestiva (como la hepaticoyeyunoanastomosis).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-063",
+    "materia": [
+      "cirugiageneral",
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Radiografía"
+    ],
+    "enunciado": "Responda cuál es el procedimiento radiográfico de mayor valor diagnóstico en la obstrucción del intestino delgado antes de la cirugía:",
+    "opciones": {
+      "a": "Estudio de contraste del intestino.",
+      "b": "Ecografía del abdomen.",
+      "c": "Radiografías en decúbito supino y de pie del abdomen.",
+      "d": "Tomografía computada de abdomen."
+    },
+    "correcta": "c",
+    "explicacion": "En la suboclusión u obstrucción, el primer estudio (y de gran valor inicial) es el par radiográfico de abdomen.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-064",
+    "materia": [
+      "cirugiageneral",
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Resonancia magnética"
+    ],
+    "enunciado": "Un paciente de 70 años presenta ictericia insidiosa, dilatación vesicular y de vía biliar intra y extrahepática sin cálculos visibles por ecografía, con patrón de colestasis. ¿Cuál de los siguientes estudios solicita en primer lugar para estudiar la vía biliar?",
+    "opciones": {
+      "a": "Colangiopancreatografía retrógrada endoscópica.",
+      "b": "Colangiografía por resonancia nuclear magnética.",
+      "c": "Colangiografía trans Kehr.",
+      "d": "Tomografía de abdomen con contraste oral y endovenoso."
+    },
+    "correcta": "b",
+    "explicacion": "La colangioresonancia (CRNM) es el estudio no invasivo ideal (gold standard de imagen) para visualizar toda la vía biliar y determinar la causa de la obstrucción.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-065",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral",
+      "oncologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Una paciente de 53 años operada por cáncer de mama hace 6 años presenta derrame pleural derecho. La punción pleural fue negativa para células neoplásicas. ¿Qué estudio solicitaría para continuar evaluando a la paciente?",
+    "opciones": {
+      "a": "TC de tórax con contraste endovenoso.",
+      "b": "Videotoracoscopía.",
+      "c": "Toracotomía.",
+      "d": "Punción biopsia pleural."
+    },
+    "correcta": "b",
+    "explicacion": "La videotoracoscopía (VATS) permite visualizar la pleura, tomar biopsias dirigidas de mayor calidad y realizar tratamiento (talcage/sellado) en el mismo acto.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-066",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "Un paciente de 52 años con adenocarcinoma de cabeza de páncreas resecable (sin compromiso vascular ni metástasis) ingresa con ictericia. ¿Cuál es el procedimiento quirúrgico de elección?",
+    "opciones": {
+      "a": "Duodenopancreatectomía cefálica.",
+      "b": "Hepaticoyeyunoanastomosis en Y de Roux.",
+      "c": "Derivación biliodigestiva y gastroenteroanastomosis.",
+      "d": "Derivación biliodigestiva."
+    },
+    "correcta": "a",
+    "explicacion": "La Duodenopancreatectomía Cefálica (Operación de Whipple) es el tratamiento curativo de elección para tumores de cabeza de páncreas resecables.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-067",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Un paciente de 78 años internado por ACV presenta distensión abdominal marcada y catarsis negativa (Sd. de Ogilvie / Pseudoobstrucción). Radiografía muestra dilatación colónica hasta ángulo esplénico. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Descompresión por videocolonoscopia.",
+      "b": "Laparotomía exploradora.",
+      "c": "Cecostomía guiada por imágenes.",
+      "d": "Hemicolectomía derecha."
+    },
+    "correcta": "a",
+    "explicacion": "En el síndrome de Ogilvie (pseudoobstrucción colónica aguda) sin signos de perforación, la descompresión colonoscópica es el tratamiento de elección si fallan las medidas conservadoras.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-068",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Páncreas"
+    ],
+    "enunciado": "¿Cuál es el único cuadro agudo abdominal cuyo tratamiento puede ser médico?",
+    "opciones": {
+      "a": "Perforación de apéndice.",
+      "b": "Rotura de embarazo ectópico.",
+      "c": "Perforación de úlcera gástrica.",
+      "d": "Pancreatitis."
+    },
+    "correcta": "d",
+    "explicacion": "La pancreatitis aguda es fundamentalmente de manejo médico (reposo, hidratación, analgesia), salvo complicaciones específicas.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-069",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Estómago",
+      "Oncología"
+    ],
+    "enunciado": "Un tumor gástrico T2, N1, con metástasis hepáticas múltiples (M1), se lo considera:",
+    "opciones": {
+      "a": "Tumor resecable con intención paliativa.",
+      "b": "Tumor inoperable.",
+      "c": "Tumor irresecable.",
+      "d": "Tumor resecable con intención curativa."
+    },
+    "correcta": "a",
+    "explicacion": "Al tener metástasis a distancia (M1), ya no es curativo (se fue de rango curativo), pero puede ser resecable con intención paliativa si hay síntomas como obstrucción o sangrado.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-070",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Estómago"
+    ],
+    "enunciado": "¿Cuál de las siguientes no es una contraindicación para una vagotomía supraselectiva?",
+    "opciones": {
+      "a": "Ulcera péptica que produce obstrucción de la salida gástrica.",
+      "b": "Ulcera péptica perforada con más de 24 hs de contaminación.",
+      "c": "Ulcera duodenal intratable.",
+      "d": "Ulcera péptica en el fondo del estómago."
+    },
+    "correcta": "c",
+    "explicacion": "La úlcera duodenal intratable es, de hecho, una indicación para cirugía (como la vagotomía supraselectiva), no una contraindicación.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-071",
+    "materia": [
+      "cirugiageneral",
+      "infectologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Bacterias"
+    ],
+    "enunciado": "Su paciente ha sido esplenectomizado hace 72 horas por cuadro de anemia hemolítica. Bruscamente presenta escalofríos, fiebre y shock (Sepsis post-esplenectomía). ¿Cuál es el germen más frecuentemente responsable?",
+    "opciones": {
+      "a": "Pseudomonas aeruginosa.",
+      "b": "Staphylococcus aureus.",
+      "c": "Escherichia coli.",
+      "d": "Neumococo."
+    },
+    "correcta": "d",
+    "explicacion": "El Neumococo (Streptococcus pneumoniae) es el principal agente causal de la sepsis fulminante en pacientes esplenectomizados (OPSI).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-072",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "General"
+    ],
+    "enunciado": "Varón de 79 años, obeso y tabaquista, se presenta para control. Video colonoscopia hace 4 años normal. Sin antecedentes familiares de cáncer de colon. ¿Cuál es la conducta más adecuada para el rastreo?",
+    "opciones": {
+      "a": "Solicita sangre oculta en materia fecal.",
+      "b": "Le explica la necesidad de continuar con el rastreo por pertenecer al grupo de pacientes de riesgo intermedio/alto.",
+      "c": "Solicita un colon por enema.",
+      "d": "Le explica que de acuerdo con su salud y antecedentes no es necesario continuar las pruebas de tamizaje."
+    },
+    "correcta": "b",
+    "explicacion": "Aunque las guías suelen detener el screening a los 75 años, la respuesta marcada como correcta en la fuente indica continuar el rastreo por sus factores de riesgo (obesidad, tabaquismo, edad).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-073",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Patología del aparato digestivo"
+    ],
+    "enunciado": "La diverticulitis de Meckel se presenta frecuentemente en:",
+    "opciones": {
+      "a": "Yeyuno proximal.",
+      "b": "Íleon proximal.",
+      "c": "Yeyuno distal.",
+      "d": "Íleon distal."
+    },
+    "correcta": "d",
+    "explicacion": "El divertículo de Meckel se ubica típicamente en el íleon distal, a unos 40-60 cm de la válvula ileocecal.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-074",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Tomografía"
+    ],
+    "enunciado": "¿Cuál es el examen más conveniente para hacer diagnóstico de cáncer de páncreas?",
+    "opciones": {
+      "a": "RMN.",
+      "b": "CPRE.",
+      "c": "Tomografía axial computada y ecografía.",
+      "d": "Dosaje de CEA en la secreción pancreática."
+    },
+    "correcta": "c",
+    "explicacion": "La Tomografía Axial Computada (TAC) es el método de elección para el diagnóstico y estadificación del cáncer de páncreas. La ecografía suele ser el estudio inicial.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }, 
+
+  {
+    "id": "cirugia-002-076",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "¿Cuál de los siguientes procedimientos es útil en el manejo preoperatorio de las eventraciones gigantes con pérdida de domicilio? [Nota: Enunciado corregido por incoherencia en el original]",
+    "opciones": {
+      "a": "Contraindicar la cirugía.",
+      "b": "Cirugía inmediata y reparación de la brecha con prótesis no absorbible.",
+      "c": "Bypass gástrico inicial y reevaluar el defecto parietal.",
+      "d": "Neumoperitoneo inicial y reparación parietal acorde a las características tisulares."
+    },
+    "correcta": "d",
+    "explicacion": "El neumoperitoneo progresivo preoperatorio (técnica de Goñi Moreno) permite la elongación de la pared abdominal y la adaptación diafragmática para reintroducir las vísceras sin causar síndrome compartimental o insuficiencia respiratoria.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-077",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Tracto digestivo"
+    ],
+    "enunciado": "Un paciente de 80 años con una hemorragia digestiva baja moderada, fue estudiado con una colonoscopia sin detectar el origen (solo divertículos). Repite sangrado con descompensación hemodinámica. ¿Cuál es la conducta MÁS adecuada?",
+    "opciones": {
+      "a": "Centellograma con glóbulos rojos marcados.",
+      "b": "Arteriografía selectiva y eventual embolización.",
+      "c": "Laparotomía y sigmoidectomía.",
+      "d": "Reposición de la volemia y conducta expectante."
+    },
+    "correcta": "b",
+    "explicacion": "Ante una hemorragia digestiva baja activa con descompensación hemodinámica y endoscopía negativa o no diagnóstica, la arteriografía es diagnóstica y terapéutica (embolización).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-078",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Tracto digestivo"
+    ],
+    "enunciado": "¿Cuál es la localización más frecuente, dentro de las enunciadas, de una angiodisplasia?",
+    "opciones": {
+      "a": "Colon sigmoide.",
+      "b": "Recto.",
+      "c": "Colon ascendente.",
+      "d": "Colon descendente."
+    },
+    "correcta": "c",
+    "explicacion": "Las angiodisplasias son lesiones vasculares degenerativas más frecuentes en el ciego y colon ascendente (colon derecho).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-079",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "En un paciente al que debe realizarse un bypass femoropoplíteo, ¿cuál es el elemento de elección para su confección?",
+    "opciones": {
+      "a": "Prótesis de Dacrón.",
+      "b": "Prótesis de politetrafluoretileno expandida (Goretex).",
+      "c": "Vena safena autóloga.",
+      "d": "Vena umbilical."
+    },
+    "correcta": "c",
+    "explicacion": "La vena safena autóloga (invertida o in situ) es el injerto de elección para revascularizaciones infrainguinales debido a su mejor permeabilidad a largo plazo.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-080",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "Usted asiste a un paciente con el antecedente de una resección endoscópica de un pólipo de colon a 40 cm del margen anal cuyo estudio histopatológico informó: pólipo adenomatoso con áreas de carcinoma con infiltración de la submucosa. ¿Cuál es la conducta terapéutica MÁS adecuada?",
+    "opciones": {
+      "a": "Colonoscopia de control en 3 meses y nueva biopsia de la zona de resección por vía endoscópica.",
+      "b": "Iniciar tratamiento quimioterápico previo a la cirugía electiva oncológica.",
+      "c": "Resección colónica de tipo oncológica en forma electiva.",
+      "d": "Control en seis meses y nueva endoscopia para control de cambios en la mucosa."
+    },
+    "correcta": "c",
+    "explicacion": "La invasión de la submucosa (cáncer invasor, T1) conlleva riesgo de metástasis ganglionar. Si no cumple criterios de resección endoscópica curativa (márgenes libres, bien diferenciado, sin invasión linfo-vascular), requiere cirugía oncológica.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-081",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta con respecto a la preparación mecánica del colon? [Nota: Enunciado corregido por incoherencia en el original]",
+    "opciones": {
+      "a": "La preparación del intestino se logra mediante una combinación de limpieza mecánica y antibióticos absorbibles.",
+      "b": "En el acto quirúrgico se agrega metronidazol y antibióticos de amplio espectro.",
+      "c": "Las soluciones de electrólitos y polietilenglicol disponibles en el comercio proporcionan un lavado mecánico sin ocasionar desequilibrios electrolíticos.",
+      "d": "Los antibióticos no absorbibles como la neomicina y la eritromicina base se administran el día previo a la operación en tres dosis."
+    },
+    "correcta": "c",
+    "explicacion": "El polietilenglicol (PEG) es una solución isoosmótica que permite la limpieza mecánica del colon sin provocar cambios significativos en el balance hidroelectrolítico.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-082",
+    "materia": [
+      "cirugiageneral",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Urgencias endocrinas"
+    ],
+    "enunciado": "¿Qué se entiende por Síndrome Compartimental Abdominal?",
+    "opciones": {
+      "a": "La disfunción orgánica progresiva por aumento de la presión abdominal.",
+      "b": "El aumento brusco del retorno venoso que se produce al descomprimir un abdomen a tensión.",
+      "c": "Conjunto de síntomas y signos desencadenados por la ruptura visceral que se limita a un solo cuadrante del abdomen.",
+      "d": "Cuadro clínico similar a un abdomen agudo que se produce por un globo vesical."
+    },
+    "correcta": "a",
+    "explicacion": "Se define como la disfunción de órganos (renal, respiratoria, cardiovascular) secundaria a la hipertensión intraabdominal sostenida (>20 mmHg).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-083",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Una mujer de 24 años con colitis ulcerativa ingresa con megacolon tóxico (transverso 12 cm), fiebre y deterioro progresivo a pesar del tratamiento médico. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Proctocolectomía total.",
+      "b": "Colostomía transversa.",
+      "c": "Cecostomía.",
+      "d": "Colectomía transversa."
+    },
+    "correcta": "a",
+    "explicacion": "Ante un megacolon tóxico que no responde a tratamiento médico o se perfora, la cirugía de elección es la colectomía total o proctocolectomía total.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-084",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Marque la indicación menos común para el tratamiento quirúrgico de urgencia de la diverticulitis aguda:",
+    "opciones": {
+      "a": "Absceso.",
+      "b": "Obstrucción colónica incompleta.",
+      "c": "Peritonitis difusa.",
+      "d": "Perforación."
+    },
+    "correcta": "b",
+    "explicacion": "La obstrucción incompleta suele manejarse inicialmente de forma conservadora o diferida; la perforación, peritonitis y abscesos no drenables son indicaciones más firmes de urgencia.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-085",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "¿En cuál de estas localizaciones se observa con mayor frecuencia el desarrollo de cánceres sincrónicos?",
+    "opciones": {
+      "a": "Laringe.",
+      "b": "Colon.",
+      "c": "Estómago.",
+      "d": "Páncreas."
+    },
+    "correcta": "b",
+    "explicacion": "El cáncer colorrectal presenta una tasa significativa de tumores sincrónicos (simultáneos en otro segmento del colon), por lo que se exige colonoscopía completa.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-086",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es el tipo de carcinoma anal más frecuente?",
+    "opciones": {
+      "a": "Basocelular.",
+      "b": "Adenocarcinoma.",
+      "c": "Epidermoide.",
+      "d": "Melanocarcinoma."
+    },
+    "correcta": "c",
+    "explicacion": "El carcinoma epidermoide (escamoso) es el tumor maligno más frecuente del canal anal.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-087",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Una paciente de 76 años con enfermedad diverticular presenta un absceso pélvico de 4 cm de diámetro (Hinchey II). ¿Cuál es la conducta para seguir?",
+    "opciones": {
+      "a": "Operación de Miles.",
+      "b": "Colectomía total e ileorrectoanastomosis.",
+      "c": "Colectomía subtotal y colorrectoanastomosis.",
+      "d": "Drenaje percutáneo y cirugía diferida."
+    },
+    "correcta": "d",
+    "explicacion": "Los abscesos diverticulares localizados >3-4 cm se tratan inicialmente con drenaje percutáneo y antibióticos, difiriendo la cirugía (sigmoidectomía) para una etapa electiva si es necesario.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-088",
+    "materia": [
+      "pediatria",
+      "infectologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Vacunación infantil",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente de 7 años es traído por mordedura de perro en miembro inferior (animal no hallado). Vacunas completas para su edad. ¿Cuál considera usted es la conducta más adecuada?",
+    "opciones": {
+      "a": "Amoxicilina-clavulánico, vacuna antirrábica, vacuna antitetánica.",
+      "b": "Cefalexina, vacuna antitetánica.",
+      "c": "Cefalexina, vacuna antirrábica, vacuna antitetánica.",
+      "d": "Amoxicilina-clavulánico y vacuna antirrábica."
+    },
+    "correcta": "d",
+    "explicacion": "Se indica antibiótico profiláctico (Amoxi-Clavulánico cubre Pasteurella y flora oral) y profilaxis antirrábica post-exposición (vacuna) dado que el animal no es observable. No requiere antitetánica si el esquema está completo y vigente.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-089",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Señale la indicación más frecuente para la operación electiva en la enfermedad de Crohn colónica:",
+    "opciones": {
+      "a": "Obstrucción.",
+      "b": "Perforación.",
+      "c": "Falla de tratamiento médico.",
+      "d": "Hemorragia."
+    },
+    "correcta": "c",
+    "explicacion": "La refractariedad o falla al tratamiento médico es la causa más común de indicación quirúrgica en Crohn. La obstrucción es común pero a menudo se maneja o es indicación en agudo/subagudo.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-090",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "En un cáncer de recto localizado a 9 cm del margen anal y que abarca 1/3 de su circunferencia, ¿cuál es la intervención quirúrgica de elección?",
+    "opciones": {
+      "a": "Resección local endoanal.",
+      "b": "Proctocolectomía izquierda.",
+      "c": "Amputación abdominoperineal u operación de Miles.",
+      "d": "Resección anterior u operación de Dixon."
+    },
+    "correcta": "d",
+    "explicacion": "Para tumores de recto medio/superior (9 cm es recto medio/superior), la cirugía de elección es la resección anterior de recto (Operación de Dixon) con conservación de esfínteres.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-091",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Aorta",
+      "Traumatología"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de lesión no penetrante en la aorta torácica?",
+    "opciones": {
+      "a": "Fracturas múltiples costales.",
+      "b": "Traumatismos por caída de altura.",
+      "c": "Desaceleración.",
+      "d": "Aplastamiento."
+    },
+    "correcta": "c",
+    "explicacion": "El mecanismo de desaceleración brusca (accidentes de tránsito, caídas) causa cizallamiento de la aorta, típicamente en el istmo (ligamento arterioso).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-092",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "¿En qué circunstancia se encuentra indicada la simpatectomía lumbar como tratamiento en las arteriopatías periféricas?",
+    "opciones": {
+      "a": "Previamente a la realización de un bypass femoropoplíteo para mejorar su salida.",
+      "b": "Cuando no es posible la reconstrucción arterial directa por falta de lechos distales.",
+      "c": "En el pie diabético con pulsos distales presentes.",
+      "d": "En la claudicación intermitente que se presenta a los 300 metros."
+    },
+    "correcta": "b",
+    "explicacion": "La simpatectomía se reserva como medida paliativa para mejorar el dolor de reposo o úlceras isquémicas en pacientes sin opción de revascularización directa.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-093",
+    "materia": [
+      "cirugiageneral",
+      "hematologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Venas y linfáticos",
+      "Coagulación"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección de la tromboflebitis profunda (TVP)?",
+    "opciones": {
+      "a": "Trombectomía.",
+      "b": "Administrar anticoagulantes y/o fibrinolíticos.",
+      "c": "Colocación de Stent.",
+      "d": "Colocación de filtro de Greenfield."
+    },
+    "correcta": "b",
+    "explicacion": "El pilar del tratamiento de la TVP es la anticoagulación plena.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-094",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "El síntoma más temprano en la apendicitis aguda es:",
+    "opciones": {
+      "a": "Vómitos.",
+      "b": "Leucocitosis.",
+      "c": "Dolor epigástrico.",
+      "d": "Náuseas."
+    },
+    "correcta": "c",
+    "explicacion": "Según la cronología de Murphy, el cuadro inicia con dolor visceral difuso en epigastrio o región periumbilical antes de localizarse en FID.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-095",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "Ante un paciente que presenta cáncer de ciego, ¿cuál es el tratamiento quirúrgico de elección?",
+    "opciones": {
+      "a": "Colectomía total.",
+      "b": "Cecostomía.",
+      "c": "Hemicolectomía derecha.",
+      "d": "Resección del íleo terminal y del ciego, con ileoascendoanastomosis."
+    },
+    "correcta": "c",
+    "explicacion": "La hemicolectomía derecha (incluyendo ganglios regionales) es la cirugía oncológica estándar para tumores de ciego y colon ascendente.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-096",
+    "materia": [
+      "cirugiageneral",
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "En un paciente con SIDA, ¿cuál de los siguientes factores NO tiene implicancia directa sobre el resultado de la operación?",
+    "opciones": {
+      "a": "Riesgo anestésico.",
+      "b": "Resecciones extensas.",
+      "c": "Estado nutricional previo.",
+      "d": "Infección oportunista."
+    },
+    "correcta": "d",
+    "explicacion": "Según la fuente, los factores de riesgo habituales (ASA, nutrición) influyen, pero la presencia de una infección oportunista per se no altera el resultado quirúrgico directo si se manejan los otros parámetros, o es la respuesta esperada en este contexto específico.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-097",
+    "materia": [
+      "pediatria",
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "La tríada de dolor abdominal, vómitos y fiebre leve en un niño, hasta que se demuestre lo contrario, se considera diagnóstico de:",
+    "opciones": {
+      "a": "Intususcepción.",
+      "b": "Enteritis viral aguda.",
+      "c": "Hernia encarcelada.",
+      "d": "Apendicitis aguda."
+    },
+    "correcta": "d",
+    "explicacion": "Es la presentación clásica de abdomen agudo en la infancia sugestiva de apendicitis.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-098",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Patología del aparato digestivo"
+    ],
+    "enunciado": "Con respecto al divertículo de Meckel señale lo INCORRECTO:",
+    "opciones": {
+      "a": "Es la principal causa de HDB en los niños.",
+      "b": "El hallazgo intraoperatorio en adultos no constituye una indicación quirúrgica para su tratamiento.",
+      "c": "La persistencia del conducto onfalomesentérico es lo que determina su aparición.",
+      "d": "Se localiza en el borde mesentérico del íleon a 50 cm de la válvula ileocecal."
+    },
+    "correcta": "d",
+    "explicacion": "Es incorrecta porque el divertículo de Meckel se localiza en el borde ANTIMESENTÉRICO del íleon.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-099",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Quemaduras"
+    ],
+    "enunciado": "Una mujer de 55 años sufre una quemadura por contacto con plancha. Presenta lecho de 5x2 cm, color blanco y al realizar el signo del pelo sale fácilmente. ¿Cuál es la profundidad de la quemadura?",
+    "opciones": {
+      "a": "Intermedia.",
+      "b": "Superficial flictenular.",
+      "c": "Profunda.",
+      "d": "Superficial eritematosa."
+    },
+    "correcta": "c",
+    "explicacion": "El color blanco nacarado y la depilación indolora (signo del pelo positivo, destrucción del folículo) indican quemadura de espesor total (tipo B o profunda).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cirugia-002-100",
+    "materia": [
+      "cirugiageneral",
+      "urologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de urología"
+    ],
+    "enunciado": "Señale la prueba diagnóstica que con mayor precisión detecta una fístula colovesical:",
+    "opciones": {
+      "a": "Cistoscopia.",
+      "b": "Colon por enema con bario.",
+      "c": "Cistografía.",
+      "d": "Tomografía computada."
+    },
+    "correcta": "a",
+    "explicacion": "La cistoscopia es el método más sensible para confirmar la fístula colovesical (viéndose la zona de inflamación bullosa o el orificio), complementada con colonoscopia para descartar cáncer.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
+
+
