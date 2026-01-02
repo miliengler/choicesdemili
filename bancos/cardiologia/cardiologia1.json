@@ -3,6 +3,573 @@
     "id": "cardiologia-001-001",
     "materia": [
       "cardiologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo",
+      "EPOC"
+    ],
+    "enunciado": "Un hombre de 52 años con una enfermedad pulmonar obstructiva grave, causada por el tabaco, acude con disnea de dos días de evolución y palpitaciones en las últimas 2 horas. En la auscultación se aprecian sibilancias espiratorias difusas y un latido irregular. EI ECG revela una fibrilación auricular con una respuesta ventricular rápida de 170 lpm, y cambios inespecíficos de la repolarización (segmento ST y onda t). La fibrilación auricular de este enfermo se puede tratar con todo lo siguiente, excepto:",
+    "opciones": {
+      "a": "Metoprolol",
+      "b": "Digoxina",
+      "c": "Diltiazem",
+      "d": "Verapamilo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-002",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "Un varón asintomático de 18 años es enviado a cardiología para evaluación debido a un soplo cardíaco fuerte presente en un examen físico de rutina. El paciente ha tenido un soplo cardíaco desde que tenía 2 años de edad. El examen físico revela presión arterial normal, pulsos arteriales y pulso venoso yugular normales; los pulmones están claros. Un soplo sistólico largo de grado 4/6 tiene máxima auscultación en el borde esternal izquierdo bajo, y el S2 cardíaco se separa normalmente con la inspiración. La radiografía de tórax y el electrocardiograma son normales. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Comunicación interventricular (CIV)",
+      "b": "Insuficiencia mitral",
+      "c": "Estenosis pulmonar congénita",
+      "d": "Estenosis aórtica congénita"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-003",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "En una paciente de 64 años, diabética, con antecedentes de haber sufrido un infarto inferior tres años antes, quien desde ocho meses atrás refiere disnea a medianos esfuerzos y ortopnea, por lo que recibe digoxina 0.125 mg cada 24 hs por seis días de la semana, furosemida 40 mg a las 8 am y a las 14 hs, enalapril 10 mg cada 12 hs y carvedilol 25 mg cada 12 hs. Asimismo, recibe glibenclamida 15 mg diarios, rosuvastatina 10 mg diarios, aspirina 100 mg diarios. La frecuencia cardiaca es de 67 lpm; la TA es de 120/80 mm Hg, el ápex se palpa en 6° EII y LMC, es amplio y tiene S3 palpable. El resto de la exploración no arroja otros datos relevantes, la glucemia es de 132 mg/dl, el colesterol de 192 mg/dl, los triglicéridos de 250 mg/dl, Ia HDL de 36 mg/dl y la LDL es de 98 mg/dl, la fracción de expulsión es de 28%. ¿Cuál es la mejor estrategia para valorar el tratamiento óptimo de este paciente?",
+    "opciones": {
+      "a": "Angiorresonancia coronaria",
+      "b": "Arteriografía coronaria",
+      "c": "Ecocardiograma Doppler color",
+      "d": "Ecocardiograma Doppler color dinámico con dobutamina"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-004",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Una mujer de 56 años con antecedentes de hipertensión arterial no tratada y tabaquista, consulta a la guardia porque hace 30 minutos comenzó con opresión precordial, disnea y sudoración profusa. Se realizó ECG que presenta elevación del segmento ST de 3 mV en las derivaciones DI, AVL y de V1 a V6. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "SCACEST inferoposterior.",
+      "b": "SCACEST anterolateral.",
+      "c": "SCACEST anteroseptal.",
+      "d": "SCACEST anterior extenso."
+    },
+    "correcta": "d",
+    "explicacion": "El Sindrome coronario agudo sin elevación del ST (SCASEST) incluye el infarto sin onda Q y la angina inestable (ausencia de elevación enzimática). Se caracteriza por la presencia de dolor anginoso de más de 20 minutos de duración asociado o no a cambios del ECG compatibles con isquemia miocárdica aguda. (Nota: La explicación en el documento original describe SCASEST aunque la respuesta correcta y el caso clínico son SCACEST).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-005",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Aorta"
+    ],
+    "enunciado": "La ecocardiografía transesofágica está indicada en el estudio de:",
+    "opciones": {
+      "a": "Insuficiencia tricuspidea",
+      "b": "El derrame pericárdico",
+      "c": "La disección de la aorta",
+      "d": "La estenosis mitral"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-006",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "La presencia de ondas Q de necrosis en d1, AVL, V5 y V6 indica:",
+    "opciones": {
+      "a": "Infarto de miocardio de cara anterior",
+      "b": "Infarto de miocardio lateral",
+      "c": "Angina prolongada",
+      "d": "Infarto de miocardio anterior"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-007",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "En relación al bloqueo auriculoventricular tipo Wenckebach, ud sabe que:",
+    "opciones": {
+      "a": "Tiene mal pronóstico",
+      "b": "Se caracteriza por un intervalo PR alargado y constante",
+      "c": "Se caracteriza por un intervalo PR normal y disociación AV",
+      "d": "Puede darse en personas sanas con aumento del tono vagal"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-008",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "En presencia de bloqueo de rama izquierda típico, puede sospecharse IAM cuando:",
+    "opciones": {
+      "a": "El bloqueo de rama izquierda no permite la sospecha de un IAM",
+      "b": "Hay melladuras notables en el QRS de las derivaciones frontales y onda u positiva en D1 y AVL",
+      "c": "Hay inversión de la onda t en las derivaciones precordiales derechas",
+      "d": "El QRS dura más de 200 mseg y la negatividad de ST-T es predominante en cara lateral"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-009",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Síncope",
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Una mujer de 72 años con antecedentes de hipertensión recibe atenolol en dosis bajas, un diurético no conocido y Diltiazen de acción prolongada. No existen otros antecedentes cardíacos de interés. Esta paciente es trasladada al servicio de urgencias tras haber perdido el conocimiento al levantarse a las 6 de la mañana para ir al baño. Es atendida por los cirujanos que observan una fractura orbitaria como consecuencia del golpe contra el lavabo. Se solicita interconsulta a medicina interna al advertir una bradicardia sinusal de 40 lpm en el ECG con parada sinusal ocasional y pausas de 3 a 4 segundos, sin otras anomalías. La paciente se encuentra algo aturdida. La TA es de 90/50 mmHg y el resto de la exploración física es normal. No ha tomado nada por boca desde la noche anterior. Los pasos siguientes para tratar la arritmia de esta enferma consistirán en:",
+    "opciones": {
+      "a": "Colocación de almohadillas externas para estimulación cardíaca e implantar un marcapasos permanente por la tarde.",
+      "b": "Suspensión del Diltiazen y atenolol e ingreso a UCO para monitoreo continuo.",
+      "c": "Colocación de un marcapasos transitorio y luego el permanente por la tarde.",
+      "d": "Colocación de un marcapasos transitorio y mantenimiento del tratamiento habitual."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-010",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Una paciente femenino de 35 años de edad, desde hace seis meses inició con sensación de lipotimia y el día de ayer presentó síncope al estar en su domicilio en reposo. EI ECG y examen físico son normales. El estudio electrofisiológico mostró un bloqueo AV de tercer grado. Se decide colocar un marcapasos definitivo, ¿Cuál seria el indicado?",
+    "opciones": {
+      "a": "VVI",
+      "b": "DDDR",
+      "c": "AAIR",
+      "d": "VVIR"
+    },
+    "correcta": "b",
+    "explicacion": "Marcapasos unicamerales (afectan sólo a la aurícula o al ventriculo): son los marcapasos en modo AAI y VVI. Marcapasos bicamerales (afectan a auricula y ventriculo, normalmente derechos): son marcapasos en modo VDD y DDD. Marcapasos tricamerales o sistema de resincronización cardiaca (afectan a la aurícula derecha y ventrículos derecho e izquierdo). Los cuatro tipos más importantes de marcapaso son: auricular (AAI), ventricular (VVI) y auriculoventriculares (VDD y DDD). Las siglas AAI, VVI, etc, constituyen códigos universales para designar el tipo de marcapaso con claridad. La primera letra define la cámara cardiaca estimulada (A=Auricula, V=Ventrículo), la segunda la cámara sensada y la tercera el mecanismo de acción (I=Inhibición, T=Trigered, D=Ambos).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-011",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Ingresa a guardia un paciente con antecedentes de Hta, refiere palpitaciones rápidas e irregulares desde hace 72 horas, sin otras manifestaciones clínicas. Se le realiza ECG donde se observa una fibrilación auricular de alta respuesta ventricular, FC de 145 lpm. ¿Qué conducta adoptaría?",
+    "opciones": {
+      "a": "Anticoagular por 1 mes para luego revertirlo a ritmo sinusal.",
+      "b": "Realizar cardioversión eléctrica",
+      "c": "Disminuir la frecuencia ventricular.",
+      "d": "Intentar cardioversión farmacológica."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-012",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Cuáles de las siguientes drogas no prolonga el intervalo QT?",
+    "opciones": {
+      "a": "Procainamida",
+      "b": "Atenolol",
+      "c": "Amiodarona",
+      "d": "Quinidina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-013",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Todos los siguientes factores aumentan la mortalidad por cateterismo cardíaco, excepto:",
+    "opciones": {
+      "a": "Angina inestable",
+      "b": "Fracción de eyección inferior al 30%",
+      "c": "Valvulopatía grave asociada a enfermedad coronaria",
+      "d": "Insuficiencia cardiaca descompensada."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-014",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Endocarditis"
+    ],
+    "enunciado": "Se obtiene un ecocardiograma transtorácico que no muestra evidencia de vegetación. En los cultivos de sangre ha crecido Staphylococcus aureus en varias ocasiones. El siguiente paso diagnóstico, después de la estabilización clínica, es realizar:",
+    "opciones": {
+      "a": "Cateterismo cardiaco",
+      "b": "Ecocardiograma transesofágico",
+      "c": "Ecocardiograma de estrés con dobutamina.",
+      "d": "La medición del péptido natriurético cerebral"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-015",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Un paciente internado en la unidad coronaria, por insuficiencia cardíaca se encuentra bajo monitoreo hemodinámico. Posee hipotensión arterial, presión capilar pulmonar (Wedge) de 25 mm Hg, e índice cardiaco de 1.8 lts/min/m2. ¿Qué tratamiento debo aplicarle?",
+    "opciones": {
+      "a": "Expansión de volumen ya que se encuentra hipovolémico.",
+      "b": "Inotropicos y diureticos ya que se encuentra en shock cardiogenico",
+      "c": "Epinefrina vía oral y diuréticos",
+      "d": "Vasodilatadores arteriovenosos y diuréticos porque el paciente presenta edema agudo de pulmón."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-016",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Recibimos una paciente de 71 años, con historia de \"palpitaciones\" en este último año, en clase funcional III-IV con edemas moderados, el ECG muestra una fibrilación auricular con respuesta ventricular de 120 lpm, HVI por criterios de voltaje y una secuela de necrosis de cara inferior. ¿Qué no debe hacerse de inmediato?",
+    "opciones": {
+      "a": "Administrar digoxina y diuréticos",
+      "b": "Anticoagulación con heparina y cumarínicos",
+      "c": "Disminución de la respuesta ventricular de la Fibrilacion Auricular (FA)",
+      "d": "Cardioversión eléctrica"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-017",
+    "materia": [
+      "cardiologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Tomografía"
+    ],
+    "enunciado": "Todas las siguientes técnicas permiten detectar el miocardio viable, excepto:",
+    "opciones": {
+      "a": "Perfusión miocárdica con talio 201",
+      "b": "TC 3D con contraste endovenoso",
+      "c": "Ecocardiografía stress con dobutamina.",
+      "d": "PET-TC"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-018",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Llega a la guardia una señora mayor acompañada de su familia, muy mareada y con muchas palpitaciones fuertes desde hace una hora; estas no ceden, se diagnostica taquicardia ventricular (TV). Marque la incorrecta:",
+    "opciones": {
+      "a": "La TV se define como sostenida cuando perdura por más de 10 minutos",
+      "b": "A veces responden a la administración de lidocaína.",
+      "c": "Los pacientes sin cardiopatía con TV uniforme tienen un pronóstico favorable",
+      "d": "En algunos casos puede ser abolida mediante ablación por radiofrecuencia"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-019",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "Un joven universitario de 18 años, corredor de larga distancia, busca la aprobación médica para ser seleccionado para el equipo de atletismo. Le diagnosticaron un soplo cardíaco a la edad de 10 años, pero niega tener síntomas. Mide 1,78 m de estatura y pesa 64,5 kg. En el examen físico, su FC es de 52 lpm e irregular y la TA es de 94/50 mm Hg. En posición de 30° no se observa el pulso venoso yugular por encima de la clavícula y el pulso carotideo es normal. El tórax tiene una leve deformidad en forma de pectus. El choque de punta es normal. El s1 y s2 son normales, este último con desdoblamiento normal. Se oye un soplo de eyección de grado 2/6 en el tercer espacio intercostal izquierdo. El soplo disminuye con la maniobra de valsalva, pero se incrementa luego de que el joven se incorpora diez veces. Los pulsos periféricos son normales. EI ECG muestra bradicardia sinusal, arritmia sinusal con pausas de hasta 1,5 seg. Y complejos QRS con morfología y ejes normales para su edad. ¿Cuál de los siguientes es el próximo paso adecuado en la evaluación de este atleta?",
+    "opciones": {
+      "a": "Radiografía de tórax",
+      "b": "Electrocardiograma de estrés",
+      "c": "Ecocardiograma Doppler color",
+      "d": "Electrocardiograma ambulatorio de 24 hs."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-020",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Una mujer de 42 años sufre edema maleolar bilateral. La presión venosa yugular es de 5 cm H2O y no se aprecia reflujo hepatoyugular en la exploración física. No presenta disnea, ni rales pulmonares. El diagnóstico diferencial del edema maleolar en este caso incluye todo lo siguiente, excepto:",
+    "opciones": {
+      "a": "Sindrome nefrótico",
+      "b": "Tratamiento con Diltiazen",
+      "c": "Insuficiencia cardiaca derecha",
+      "d": "Mixedema"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-021",
+    "materia": [
+      "cardiologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "ECV"
+    ],
+    "enunciado": "Una paciente de 52 años presenta una hemianopsia homónima derecha. Esta paciente tiene una válvula aórtica mecánica, que se implantó hace 8 años, y como consecuencia de ello la paciente sigue un tratamiento con acenocumarol. En el momento del ingreso de la paciente su RIN era de 2.1. El ritmo es de fibrilación auricular ¿Cuál de las siguientes opciones es la verdadera?",
+    "opciones": {
+      "a": "Aparte de la terapia regular que sigue la paciente, se le debe recomendar un fármaco anti plaquetario",
+      "b": "La causa de la distorsión visual está relacionada claramente con la válvula",
+      "c": "Su tiempo de protrombina se encuentra dentro de los limites recomendados para su edad",
+      "d": "El riesgo de padecer acv en el futuro está aumentado"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-022",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "General"
+    ],
+    "enunciado": "Señale que maniobra ha de realizar prioritariamente en el caso de un paro cardiorrespiratorio:",
+    "opciones": {
+      "a": "Cardioversión eléctrica",
+      "b": "Buscar una vía aérea permeable",
+      "c": "Inyección de adrenalina intracardiaca",
+      "d": "Masaje Cardiaco"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-023",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Una mujer de 55 años de edad presenta fibrilación auricular tres años después de un infarto de miocardio. Ella informa que aparecen y desaparecen palpitaciones desde hace varios meses. Presenta TA de 134/78 mm Hg, una respuesta ventricular de 146 lpm y no hay datos de insuficiencia cardiaca congestiva ni de enfermedad valvular. El tratamiento inicial apropiado para esta paciente, puede incluir:",
+    "opciones": {
+      "a": "Bloqueante beta",
+      "b": "Cardioversión eléctrica inmediata",
+      "c": "Bloqueante alfa y beta",
+      "d": "Quinidina por vía E.V."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-024",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un paciente con insuficiencia cardiaca congestiva desde hace tres meses ha recibido el diagnóstico de \"taquicardia\". La frecuencia cardíaca es de 170 lpm, la TA de 115/80 mm Hg, el ritmo de galope no muestra soplos, la radiografía del tórax indica indice cardiotorácico de 0.58 y signos de hipertensión venocapilar notoria. Por último, el ECG revela la presencia de una taquicardia supraventricular por reentrada intranodal. ¿Cuál es el tratamiento más efectivo?",
+    "opciones": {
+      "a": "Cardioversión eléctrica",
+      "b": "Administración de verapamilo endovenoso",
+      "c": "Modificación del nódulo mediante catéter de radiofrecuencia",
+      "d": "Administración de digital intravenosa junto con diurético"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-025",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un varón de 50 años se presenta a la consulta para control. No refiere síntomas. Al examen físico: TA 160/100 mmHg, FC 72 rpm, 2 ruidos en 4 focos con aumento del segundo ruido y silencios libres. Fondo de ojo con estrechamiento arteriolar y cruces arteriovenosos patológicos. Resto s/p. ECG sinusal, con signos de HVI. Rx de tórax con índice cardiotorácico en el límite superior de lo normal. Los estudios bioquímicos-hematológicos rutinarios son normales. La conducta más apropiada es:",
+    "opciones": {
+      "a": "Pensar que la TA está falsamente elevada.",
+      "b": "Búsqueda de causas de HTA (hipertensión arterial) Secundaria",
+      "c": "Dosaje de renina plasmática.",
+      "d": "Solicitar un ecocardiograma bidimensional."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-026",
+    "materia": [
+      "cardiologia",
       "infectologia"
     ],
     "submateria": [
@@ -24,13 +591,13 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-002",
+    "id": "cardiologia-001-027",
     "materia": [
       "cardiologia",
       "pediatria"
     ],
     "submateria": [
-      "Otras preguntas de cardiología",
+      "Cardiología básica",
       "Cardiopatías congénitas"
     ],
     "enunciado": "Uno de los siguientes hallazgos no es propio de la comunicación interauricular; señale cuál:",
@@ -48,19 +615,20 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-003",
+    "id": "cardiologia-001-028",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
-      "Insuficiencia cardíaca"
+      "Insuficiencia cardíaca",
+      "Hipertensión arterial y factores de riesgo"
     ],
-    "enunciado": "Un hombre de 65 años, con antecedentes prolongados de hipertensión no tratada, se queja de disnea recidivante a mínimos esfuerzos. La exploración cardiovascular es normal, con excepción de un latido prominente de la punta. La Rx de tórax tampoco muestra anomalías, salvo un discreto aumento del ventrículo izquierdo. La prueba de esfuerzo con talio no indica isquemia miocárdica. En la ecocardiografía bidimensional se observa una hipertrofia ventricular izquierda y leve dilatación de la aurícula izquierda. La ventriculografía radioisotópica presenta fracciones normales de eyección de ambos ventrículos. ¿Cuál es la explicación más verosímil de los síntomas de este paciente?",
+    "enunciado": "Un hombre de 65 años, con antecedentes prolongados de hipertensión no tratada, se queja de disnea recidivante a minimos esfuerzos. La exploración cardiovascular es normal, con excepción de un latido prominente de la punta. La Rx de tórax tampoco muestra anomalías, salvo un discreto aumento del ventriculo izquierdo. La prueba de esfuerzo con talio no indica isquemia miocárdica. En la ecocardiografía bidimensional se observa una hipertrofia ventricular izquierda y leve dilatación de la aurícula izquierda. La ventriculografía radioisotópica presenta fracciones normales de eyección de ambos ventrículos. ¿Cuál es la explicación más verosímil de los síntomas de este paciente?",
     "opciones": {
       "a": "Isquemia miocárdica",
       "b": "Insuficiencia cardíaca anterógrada",
       "c": "Enfermedad pulmonar obstructiva crónica",
-      "d": "Disfunción diastólica ventricular izquierda"
+      "d": "Disfunción diastólica ventricular izquierda."
     },
     "correcta": "d",
     "explicacion": "",
@@ -70,7 +638,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-004",
+    "id": "cardiologia-001-029",
     "materia": [
       "cardiologia",
       "infectologia"
@@ -79,22 +647,22 @@
       "Valvulopatías",
       "Antibacterianos"
     ],
-    "enunciado": "Uno de los siguientes hallazgos no es propio de Fiebre Reumática (referido a profilaxis/tratamiento):",
+    "enunciado": "Uno de los siguientes hallazgos no es propio de Fiebre Reumática (Nota: La pregunta parece referirse al tratamiento correcto según las opciones):",
     "opciones": {
       "a": "Sulfadiazina 1 gr cada 6 hs por vía oral",
       "b": "Penicilina G benzatínica 1.200.00 U/mes I.M.",
-      "c": "En la actualidad no está indicada la profilaxis",
+      "c": "En la actualidad no está indicada la profilaxis.",
       "d": "Amoxicilina 2 gr por vía oral"
     },
     "correcta": "b",
-    "explicacion": "Nota: La pregunta parece solicitar la indicación correcta de profilaxis secundaria.",
+    "explicacion": "",
     "imagen": false,
     "examen": null,
     "anio": null,
     "oficial": false
   },
   {
-    "id": "cardiologia-001-005",
+    "id": "cardiologia-001-030",
     "materia": [
       "cardiologia",
       "obstetricia"
@@ -118,18 +686,18 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-006",
+    "id": "cardiologia-001-031",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Insuficiencia cardíaca"
     ],
-    "enunciado": "Una paciente de 70 años de edad hipertensa desde hace 10 años ingresa con disnea de pequeños esfuerzos, FC de 90 lpm, TA de 170/80 mm Hg, S4 y estertores crepitantes. La radiografía del tórax revela un índice cardiotorácico de 0.46, moteado difuso, redistribución del flujo y líneas B de Kerley. El ecocardiograma muestra hipertrofia ventricular izquierda, diámetros normales, fracción de expulsión de 52%. ¿Cuál es el diagnóstico y tratamiento correcto?",
+    "enunciado": "Una paciente de 70 años de edad hipertensa desde hace 10 años ingresa con disnea de pequeños esfuerzos, FC de 90 lpm, TA de 170/80 mm Hg, S4 y estertores crepitantes. La radiografía del tórax revela in indice cardiotorácico de 0.46, moteado difuso, redistribución del flujo y líneas B de Kerley. El ecocardiograma muestra hipertrofia ventricular izquierda, diámetros normales, fracción de expulsión de 52%. ¿Cuál es el diagnóstico y tratamiento correcto?",
     "opciones": {
       "a": "Disfunción diastólica: bloqueantes beta, venodilatadores, IECA, diuréticos",
       "b": "Edema pulmonar no cardiogénico: metilprednisolona, diuréticos, antagonistas del calcio, dopamina",
-      "c": "Tromboembolia pulmonar aguda: activador tisular del plasminógeno, diurético, heparina no fraccionada",
+      "c": "Tromboembolia pulmonar aguda: activador tisular del plasminógeno, diurético, heparina no fraccionada.",
       "d": "Insuficiencia cardíaca: digital, diuréticos, dobutamina, venodilatadores"
     },
     "correcta": "a",
@@ -140,7 +708,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-007",
+    "id": "cardiologia-001-032",
     "materia": [
       "cardiologia"
     ],
@@ -162,14 +730,15 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-008",
+    "id": "cardiologia-001-033",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
-      "Valvulopatías"
+      "Valvulopatías",
+      "Cardiología básica"
     ],
-    "enunciado": "El examen del pulso carotídeo de un paciente revela dos impulsos o picos durante la sístole ventricular, el primero amplio, de breve duración y el segundo de menor amplitud, separados por un brusco colapso mesosistólico. ¿Cuál de las siguientes opciones se asocia con este hallazgo?",
+    "enunciado": "El examen del pulso carotideo de un paciente revela dos impulsos o picos durante la sistole ventricular, el primero amplio, de breve duración y el segundo de menor amplitud, separados por un brusco colapso mesosistólico. ¿Cuál de las siguientes opciones se asocia con este hallazgo?",
     "opciones": {
       "a": "Disminución de la presión sistólica durante la inspiración",
       "b": "Tercer tono cardíaco de origen derecho",
@@ -177,23 +746,23 @@
       "d": "Soplo diastólico en barra"
     },
     "correcta": "c",
-    "explicacion": "",
+    "explicacion": "El pulso bisferiens es característico de la doble lesión aórtica (insuficiencia predominante) o miocardiopatía hipertrófica. La opción C describe el soplo de la insuficiencia aórtica.",
     "imagen": false,
     "examen": null,
     "anio": null,
     "oficial": false
   },
   {
-    "id": "cardiologia-001-009",
+    "id": "cardiologia-001-034",
     "materia": [
       "cardiologia",
       "pediatria"
     ],
     "submateria": [
-      "Otras preguntas de cardiología",
+      "Cardiología básica",
       "Cardiopatías congénitas"
     ],
-    "enunciado": "Todas las siguientes cardiopatías congénitas se asocian a un cortocircuito izquierda-derecha, acianótico, excepto:",
+    "enunciado": "Todas las siguientes cardiopatias congénitas se asocian a un cortocircuito izquierda-derecha, acianótico, excepto:",
     "opciones": {
       "a": "Comunicación interventricular con comunicación interauricular",
       "b": "Origen anómalo de la arteria coronaria izquierda en el tronco pulmonar",
@@ -208,19 +777,19 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-010",
+    "id": "cardiologia-001-035",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Trastornos del ritmo"
     ],
-    "enunciado": "Una mujer de 30 años de edad, que se presenta con síndrome del intestino irritable, se queja de palpitaciones. En la anamnesis indica que los síntomas ocurren aleatoriamente durante el día, tal vez con mayor frecuencia después de ingerir cafeína. La sensación primaria es que su corazón \"aletea\" en su pecho. La paciente nunca ha tenido un síncope. Sus signos vitales y exámenes son normales. Se obtiene un electrocardiograma que muestra ritmo sinusal normal ninguna otra anormalidad. Se obtiene monitoreo Holter que muestra extrasístoles ventriculares que ocurren aproximadamente cuatro veces por minuto. El siguiente paso más adecuado en su tratamiento es:",
+    "enunciado": "Una mujer de 30 años de edad, que se presenta con síndrome del intestino irritable, se queja de palpitaciones. En la anamnesis indica que los sintomas ocurren aleatoriamente durante el día, tal vez con mayor frecuencia después de ingerir cafeína. La sensación primaria es que su corazón \"aletea\" en su pecho. La paciente nunca ha tenido un sincope. Sus signos vitales y exámenes son normales. Se obtiene un electrocardiograma que muestra ritmo sinusal normal ninguna otra anormalidad. Se obtiene monitoreo Holter que muestra extrasístoles ventriculares que ocurren aproximadamente cuatro veces por minuto. El siguiente paso más adecuado en su tratamiento es:",
     "opciones": {
       "a": "Asegurarle que no es patológico y que no necesita tratamiento",
-      "b": "Remitirla a un cardiólogo para su estudio electrofisiológico",
+      "b": "Remitirla a un cardiólogo para su estudio electrofisiológico.",
       "c": "Administrar Amiodarona",
-      "d": "Administrar un bloqueante beta"
+      "d": "Administrar un bloqueante beta."
     },
     "correcta": "a",
     "explicacion": "",
@@ -230,7 +799,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-011",
+    "id": "cardiologia-001-036",
     "materia": [
       "cardiologia"
     ],
@@ -252,7 +821,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-012",
+    "id": "cardiologia-001-037",
     "materia": [
       "cardiologia"
     ],
@@ -274,21 +843,19 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-013",
+    "id": "cardiologia-001-038",
     "materia": [
-      "cardiologia",
-      "neumonologia"
+      "cardiologia"
     ],
     "submateria": [
-      "Insuficiencia cardíaca",
-      "Neumonía"
+      "Insuficiencia cardíaca"
     ],
     "enunciado": "Un paciente de 76 años, masculino, diabético. Consulta en la guardia por presentar disnea progresiva en las últimas 72 hs al momento del examen el paciente no tolera el decúbito dorsal, expectora una secreción blanquecina-rosada su presión arterial es 180/90 mm Hg y la frecuencia cardiaca 122 lpm, se auscultan rales crepitantes en ambos hemitórax, con un soplo aórtico sistólico severo. ¿Qué diagnóstico realiza?",
     "opciones": {
       "a": "Edema agudo de pulmón (EAP)",
       "b": "Bronconeumonía grave",
       "c": "Shock cardiogénico",
-      "d": "Neumonía de la comunidad (NAC)"
+      "d": "Neumonia de la comunidad (NAC)"
     },
     "correcta": "a",
     "explicacion": "",
@@ -298,14 +865,14 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-014",
+    "id": "cardiologia-001-039",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Valvulopatías"
     ],
-    "enunciado": "En la guardia usted interroga a un paciente de sexo masculino de 67 años, él refiere episodios de disnea a moderados esfuerzos. En el examen físico detecta una TA de 175/50 mm Hg, pulso bisferiens, signo del martillo de agua, soplo diastólico aórtico, y soplo sistólico femoral bilateral. ¿Cuál sería su primer diagnóstico semiológico?",
+    "enunciado": "En la guardia usted interroga a un paciente de sexo masculino de 67 años, el refiere episodios de disnea a moderados esfuerzos. En el examen físico detecta una TA de 175/50 mm Hg, pulso bisferiens, signo del martillo de agua, soplo diastólico aórtico, y soplo sistólico femoral bilateral. ¿Cuál sería su primer diagnóstico semiológico?",
     "opciones": {
       "a": "Insuficiencia aórtica",
       "b": "Insuficiencia mitral",
@@ -320,7 +887,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-015",
+    "id": "cardiologia-001-040",
     "materia": [
       "cardiologia",
       "otras"
@@ -329,22 +896,22 @@
       "Insuficiencia cardíaca",
       "Fármacos"
     ],
-    "enunciado": "¿Cuál de las siguientes opciones relativas a la digital NO le parece correcta?",
+    "enunciado": "¿Cuál de las siguientes opciones relativas a la digital no le parece correcta?",
     "opciones": {
       "a": "Se debe evitar la administración en pacientes con insuficiencia cardíaca secundaria a miocardiopatía hipertrófica",
-      "b": "La presencia de cubeta digitálica en el ECG, es un signo de intoxicación digitálica",
-      "c": "Aumenta la contractilidad miocárdica",
+      "b": "La presencia de cubeta digitalica en el ECG, es un signo de intoxicación digitalica",
+      "c": "Aumenta la contractilidad miocárdica.",
       "d": "Es útil para el control de la respuesta ventricular en la Fibrilación Auricular"
     },
     "correcta": "b",
-    "explicacion": "La cubeta digitálica es un efecto del fármaco, no necesariamente un signo de toxicidad.",
+    "explicacion": "La cubeta digitálica es un signo de impregnación (efecto del fármaco), no de intoxicación.",
     "imagen": false,
     "examen": null,
     "anio": null,
     "oficial": false
   },
   {
-    "id": "cardiologia-001-016",
+    "id": "cardiologia-001-041",
     "materia": [
       "cardiologia"
     ],
@@ -366,16 +933,16 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-017",
+    "id": "cardiologia-001-042",
     "materia": [
       "cardiologia",
       "pediatria"
     ],
     "submateria": [
-      "Otras preguntas de cardiología",
+      "Cardiología básica",
       "Cardiopatías congénitas"
     ],
-    "enunciado": "Una paciente de 34 años de edad en quien se auscultó un soplo en la infancia y seis meses antes de su ingreso presentó cianosis universal progresiva, fatigabilidad fácil y adelgazamiento, cuya exploración física reveló la existencia de un chasquido protosistólico en el foco pulmonar con un S2 reforzado y único. En la misma paciente la radiografía del tórax muestra un índice cardiotorácico de 0.49, arco medio abombado ++ e hilios pulmonares prominentes. El ecocardiograma revela presencia de CIV amplia perimembranosa, dilatación del tronco de la arteria pulmonar y presión sistólica en la arteria pulmonar calculada en 107 mm Hg; señale el tratamiento correcto según el criterio de la fuente:",
+    "enunciado": "Una paciente de 34 años de edad en quien se auscultó un soplo en la infancia y seis meses antes de su ingreso presentó cianosis universal progresiva, fatigabilidad fácil y adelgazamiento, cuya exploración física reveló la existencia de un chasquido protosistólico en el foco pulmonar con un S2 reforzado y único. En la misma paciente la radiografía del tórax muestra un indice cardiotorácico de 0.49, arco medio abombado ++ e hilios pulmonares prominentes. El ecocardiograma revela presencia de CIV amplia perimembranosa, dilatación del tronco de la arteria pulmonar y presión sistólica en la arteria pulmonar calculada en 107 mm Hg; señale el tratamiento correcto:",
     "opciones": {
       "a": "Digoxina más vasodilatadores",
       "b": "Uso de prostaciclina",
@@ -390,18 +957,18 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-018",
+    "id": "cardiologia-001-043",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Cardiopatía isquémica"
     ],
-    "enunciado": "Un paciente de 60 años llega a la guardia refiriendo dolor precordial opresivo con irradiación a mandíbula y brazo izquierdo de intensidad 10/10 de media hora de evolución. Usted realiza un electrocardiograma de doce derivaciones y encuentra un supra desnivel del segmento ST de 2 mm en cara antero-septal. Usted decide iniciar ácido acetil salicílico y clopidrogel ¿Cuál considera que es la conducta terapéutica mas adecuada a continuación?",
+    "enunciado": "Un paciente de 60 años llega a la guardia refiriendo dolor precordial opresivo con irradiación a mandíbula y brazo izquierdo de intensidad 10/10 de media hora de evolución. Usted realiza un electrocardiograma de doce derivaciones y encuentra un supra desnivel del segmento ST de 2 mmm en cara antero-septal. Usted decide iniciar ácido acetil salicílico y clopidrogel ¿Cuál considera que es la conducta terapéutica mas adecuad a continuación?",
     "opciones": {
       "a": "Estratificación de riesgo en unidad coronaria, con eventual prueba de esfuerzo en 48 hs",
       "b": "Reperfusion de urgencia",
-      "c": "Coronariografía con reperfusión en 24 hs",
+      "c": "Coronariografia con reperfusion en 24 hs",
       "d": "Anticoagulación por 48 hs y seguimiento ambulatorio con pautas de alarma"
     },
     "correcta": "b",
@@ -412,7 +979,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-019",
+    "id": "cardiologia-001-044",
     "materia": [
       "cardiologia"
     ],
@@ -434,18 +1001,18 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-020",
+    "id": "cardiologia-001-045",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Insuficiencia cardíaca"
     ],
-    "enunciado": "Una mujer de 62 años presenta insuficiencia cardíaca crónica de varios años de evolución, pero ha ido sintiéndose gradualmente peor durante las últimas 3 semanas. Hace 1 año su fracción de eyección ventricular izquierda era del 35%. La paciente cumple por completo con el plan de medicación, que incluye: digoxina 0,25 mg/día, enalapril 5 mg 2 veces al día y furosemida 80 mg/día. Presenta tos seca y disnea clase funcional III-IV. En el examen físico la TA es de 130/80 mm Hg, la FC es de 110 lpm. Los pulmones muestran crepitantes basales. La presión venosa yugular es de 15 cm de H2O con reflujo hepatoyugular. El latido del vértice está reducido y desplazado ligeramente hacia un lado. Tiene un S1, S2 y S3 con ritmo de galope. No se oyen soplos. El examen abdominal muestra hepatomegalia dolorosa y hay edemas en miembros inferiores. La mejor opción a aplicar a continuación es:",
+    "enunciado": "Una mujer de 62 años presenta insuficiencia cardíaca crónica de varios años de evolución, pero ha ido sintiéndose gradualmente peor durante las últimas 3 semanas. Hace 1 año su fracción de eyección ventricular izquierda era del 35%. La paciente cumple por completo con el plan de medicación, que incluye: digoxina 0,25 mg/dia, enalapril 5 mg 2 veces al día y furosemida 80 mg/dia. Presenta tos seca y disnea clase funcional III-IV. En el examen físico la TA es de 130/80 mm Hg, la FC es de 110 lpm. Los pulmones muestran crepitantes basales. La presión venosa yugular es de 15 cm de H2O con reflujo hepatoyugular. El latido del vértice está reducido y desplazado ligeramente hacia un lado. Tiene un S1, S2 y S3 con ritmo de galope. No se oyen soplos. El examen abdominal muestra hepatomegalia dolorosa y hay edemas en miembros inferiores. La mejor opción a aplicar a continuación es:",
     "opciones": {
-      "a": "Internar a la paciente e iniciar tratamiento con vasodilatadores y furosemida endovenosos",
-      "b": "Interrumpir la administración de enalapril y comenzar con losartán, 50 mg/día",
-      "c": "Aumentar la digoxina hasta 0,375 mg/día",
+      "a": "Internar a la paciente e iniciar tratamiento con vasodilatadores y furosemida endovenosos.",
+      "b": "Interrumpir la administración de enalapril y comenzar con losartán, 50 mg/dia",
+      "c": "Aumentar la digoxina hasta 0,375 mg/dia",
       "d": "Agregar carvedilol al tratamiento ya que el mismo mejora el pronóstico de estos pacientes"
     },
     "correcta": "a",
@@ -456,7 +1023,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-021",
+    "id": "cardiologia-001-046",
     "materia": [
       "cardiologia"
     ],
@@ -478,7 +1045,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-022",
+    "id": "cardiologia-001-047",
     "materia": [
       "cardiologia"
     ],
@@ -500,14 +1067,14 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-023",
+    "id": "cardiologia-001-048",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Pericardio"
     ],
-    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retro esternal irradiado a la escapula izquierda, que apareció 10 horas antes estando en reposo y que empeora con la inspiración? El día anterior había presentado un episodio similar que cedió espontáneamente al reclinarse hacia adelante en la cama. No tiene factores de riesgo cardiovascular ni consume sustancias. Hace una semana refiere un cuadro de gastroenteritis aguda. En el examen físico se encuentra pálido y sudoroso, eupneico en reposo, con presión arterial 140/90 mmHg, frecuencia cardiaca 80 latidos por minuto. Auscultación cardiaca y pulmonar normal. En el electrocardiograma observar el siguiente registro (Ver Imagen).",
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retro esternal irradiado a la escapula izquierda, que apareció 10 horas antes estando en reposo y que empeora con la inspiración? El dia anterior había presentado un episodio similar que cedió espontáneamente al reclinarse hacia adelante en la cama. No tiene factores de riesgo cardiovascular ni consume sustancias. Hace una semana refiere un cuadro de gastroenteritis aguda. En el examen físico se encuentra pálido y sudoroso, eupneico en reposo, con presión arterial 140/90 mmHg, frecuencia cardiaca 80 latidos por minuto. Auscultación cardiaca y pulmonar normal. En el electrocardiograma observar el siguiente registro (Ver Imagen)",
     "opciones": {
       "a": "Hiperpotasemia",
       "b": "Isquemia miocárdica aguda",
@@ -522,14 +1089,14 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-024",
+    "id": "cardiologia-001-049",
     "materia": [
       "cardiologia"
     ],
     "submateria": [
       "Insuficiencia cardíaca"
     ],
-    "enunciado": "Un varón de 68 años con antecedentes de hipertensión, diabetes y retención urinaria se despertó por la noche con náuseas y aturdimiento. No respondió a las preguntas de su esposa. Cuando llegó el personal médico de urgencias, la TAS era de 60 mm Hg por palpación. Se administraron líquidos E.V. y oxígeno. En el departamento de urgencias se registraron estas constantes vitales: TAS de 60 mm Hg, frecuencia cardiaca de 120 lpm y regular, temp de 36.9° C y frecuencia respiratoria de 30 rpm. En la exploración física abreviada se apreciaron estertores de burbuja gruesa. Se colocó una sonda vesical permanente, por la que drenaron 10 a 20 ml de orina oscura. La radiografía de tórax mostró infiltrados intersticiales bilaterales y el ECG no presentó ninguna anomalía aguda, excepto taquicardia sinusal. Se trasladó al enfermo a la UTI, donde se procedió a un cateterismo de las cavidades derechas. La presión de enclavamiento pulmonar alcanzaba 28 mm Hg; el gasto cardíaco, 1.9 l/minuto, y la presión media en la aurícula derecha, 10 mm Hg. En este caso, la causa más probable de la hipotensión es:",
+    "enunciado": "Un varón de 68 años con antecedentes de hipertensión, diabetes y retención urinaria se despertó por la noche con náuseas y aturdimiento. No respondió a las preguntas de su esposa. Cuando llegó el personal médico de urgencias, la TAS era de 60 mm Hg por palpación. Se administraron líquidos E.V. y oxígeno. En el departamento de urgencias se registraron estas constantes vitales: tas de 60 mm Hg, frecuencia cardiaca de 120 lpm y regular, temp de 36.9° C y frecuencia respiratoria de 30 rpm. En la exploración física abreviada se apreciaron estertores de burbuja gruesa. Se colocó una sonda vesical permanente, por la que drenaron 10 a 20 ml de orina oscura. La radiografía de tórax mostró infiltrados intersticiales bilaterales y el ECG no presentó ninguna anomalía aguda, excepto taquicardia sinusal. Se trasladó al enfermo a la UTI, donde se procedió a un cateterismo de las cavidades derechas. La presión de enclavamiento pulmonar alcanzaba 28 mm Hg; el gasto cardíaco, 1.9 l/minuto, y la presión media en la aurícula derecha, 10 mm Hg. En este caso, la causa más probable de la hipotensión es:",
     "opciones": {
       "a": "Infarto del ventrículo derecho",
       "b": "Insuficiencia ventricular izquierda",
@@ -544,7 +1111,7 @@
     "oficial": false
   },
   {
-    "id": "cardiologia-001-025",
+    "id": "cardiologia-001-050",
     "materia": [
       "cardiologia",
       "pediatria"
@@ -566,5 +1133,1143 @@
     "examen": null,
     "anio": null,
     "oficial": false
+  },
+  {
+    "id": "cardiologia-001-051",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "Un paciente de 65 años de edad con diabetes mellitus tipo II, sin antecedentes cardiovasculares. Acude al servicio de urgencias y refiere dolor precordial de reciente inicio menor 24 hs en dos ocasiones, con duración de 15 minutos; en el ECG se evidencia depresión de segmento ST menor a 1 mm, las enzimas cardíacas se encuentran dentro de límites normales. Los hipoglucemiantes orales son el único tratamiento que toma de manera crónica. No toma aspirina ¿Qué diagnóstico debe establecerse?",
+    "opciones": {
+      "a": "Angina inestable de riesgo bajo",
+      "b": "Angina estable",
+      "c": "Infarto con elevación del segmento ST",
+      "d": "Angina inestable de riesgo intermedio"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-052",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Miocardiopatías"
+    ],
+    "enunciado": "Una mujer llega al departamento de urgencias con un dolor retro esternal episódico no irradiado, que dura de 5 a 10 minutos. Algunas veces se relaciona con el ejercicio, pero en otras se presenta en reposo. La mujer no fuma ni tiene antecedentes de hipertensión arterial. Otros dos miembros de su familia murieron de cardiopatía, uno a los 50 y el otro a los 56 años. En la exploración física la paciente no presenta sufrimiento agudo, su TA es de 120/70 mm Hg y su FC es de 70 lpm. En la exploración del precordio de encuentra que el choque de punta es fuerte. Hay soplo sistólico de expulsión II/VI a lo largo del borde esternal izquierdo. El electrocardiograma (ECG) muestra un segmento S-T inespecífico. ¿Cuál de los siguientes es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Cardiomiopatía obstructiva hipertrófica",
+      "b": "Estenosis aórtica",
+      "c": "Estenosis mitral",
+      "d": "Soplo ligero con hipertrofia del VI"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-053",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Pericardio",
+      "Virus respiratorios / Influenza"
+    ],
+    "enunciado": "Un hombre de 27 años, presenta dolor precordial y fiebre, como antecedente refiere que padeció hace 2 semanas, una infección respiratoria alta ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Pericarditis",
+      "b": "Embolia pulmonar",
+      "c": "Neumotórax espontáneo",
+      "d": "Infarto agudo de miocardio (IAM)"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-054",
+    "materia": [
+      "cardiologia",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Miocardiopatías",
+      "Amiloidosis"
+    ],
+    "enunciado": "Un hombre de 75 años refiere episodios recidivantes de disnea de mínimos esfuerzos. Los antecedentes médicos personales carecen de interés y en la exploración física se advierte una TA de 110/70 mm Hg sin pulso paradójico, FC 110 lpm, FR 25 RPM y temp de 37°C. Las venas yugulares se encuentran distendidas. Los ruidos cardiacos están atenuados, y se ausculta un s4. Se aprecia hepatomegalia y edema maleolar. El ECG muestra cambios inespecíficos de la repolarización (ST-T) y algunas extrasístoles ventriculares. En la Rx de tx, los campos pulmonares aparecen limpios y se aprecia una leve cardiomegalia, La ecocardiografía revela una función sistólica normal con paredes ventriculares engrosadas de aspecto \"moteado\". ¿Cuál de las siguientes anomalías es compatible con este tipo de presentación clínica?",
+    "opciones": {
+      "a": "Miocardiopatía alcohólica",
+      "b": "Miocarditis vírica",
+      "c": "Hemocromatosis",
+      "d": "Amiloidosis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-055",
+    "materia": [
+      "cardiologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "A un paciente de 67 años de edad obeso, diabético, con angina de pequeños esfuerzos; antecedentes de un infarto anterior con oclusión total proximal de la arteria coronaria descendente anterior, coronaría derecha pequeña, gran arteria circunfleja con una obtusa marginal prominente con una rama posterolateral larga y la descendente posterior, con obstrucción proximal, arteria circunfleja, aneurisma antero apical grande, fracción de expulsión de 27%, ¿Cuál estrategia terapéutica le ofrecería mayor beneficio en la clase funcional y en la sobrevida con menor riesgo de mortalidad?",
+    "opciones": {
+      "a": "NTG, atorvastatina, ezetimibe, más beta bloqueantes",
+      "b": "Angioplastia transluminal percutánea con stent liberador de fármacos",
+      "c": "cirugía de revascularización miocárdica",
+      "d": "NTG, atorvastatina, beta bloqueante, más antagonistas cálcicos"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-056",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Maria Emilia, de 63 años es ingresada en el hospital por un dolor torácico opresivo intermitente, rápidamente progresivo en los últimos 2 días, que apareció inicialmente con el ejercicio leve y ahora se produce en reposo y cede con nitroglicerina sublingual. La mujer es fumadora y presenta un colesterol total de 340 mg/dL. A la exploración física está ansiosa pero no presenta dolor. En el examen fisico presenta R1 y R2 normales y R4 +, sin signos de falla de bomba. EI ECG muestra depresión del segmento ST en las derivaciones D1, aVL, V5 y V6 ¿Cuál de las siguientes medidas es menos probable que resulte beneficiosa para esta paciente?",
+    "opciones": {
+      "a": "Acido acetilsalicilico",
+      "b": "Beta bloqueantes",
+      "c": "Trombólisis",
+      "d": "Heparina intravenosa"
+    },
+    "correcta": "c",
+    "explicacion": "En la angina inestable o infarto sin elevación del ST (indicado por depresión del ST), la trombólisis está contraindicada y no es beneficiosa.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-057",
+    "materia": [
+      "cardiologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Oncología"
+    ],
+    "enunciado": "una mujer de 46 años consulta por fatiga desde hace 18 meses, disnea episódica y fiebre. Aunque no tiene antecedentes de disnea paroxistica nocturna u ortopnea, en las últimas semanas ha presentado una nicturia progresiva. Hace 1 año no sufría palpitaciones ni sincopes y el resto de su historia médica era anodina. En la exploración física, se observa una t de 37.9°C, una FC de 80 lpm y TA de 118/78 mm Hg, sin cambios posturales. No presenta petequias ni hemorragias en astilla y el fondo de ojo es normal. Las venas del cuello tienen una presión venosa media elevada (12 cm H2O), con una morfología normal. Los pulsos carotideos son normales. En la exploración torácica se auscultan estertores inspiratorios en ambas bases, más prominentes en la derecha. En la exploración del precordio destaca un latido palpable de la arteria pulmonar y un impulso mantenido en el borde esternal inferior izquierdo. No se percibe latido de la punta independiente. El s1 es débil, y el s2 es único y acentuado en el borde esternal superior izquierdo. No se aprecian latidos extra sistólicos. Existe un ruido diastólico variable, unos 100 mseg después de s2, que se escucha mejor en decúbito lateral izquierdo, un soplo apical holosistólico, en barra y un breve retumbo diastólico apical precoz. No se aprecia ritmo de galope. En el abdomen no se detectan masas ni ruidos y ambas extremidades inferiores presentan un edema depresible de 2+. En la Rx tx se observa un aumento de la aurícula izquierda y un edema intersticial pulmonar. En el ECG se registra un aumento de la aurícula izquierda y cambios inespecíficos en la onda ST-T, ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Importante calcificación del anillo mitral con estenosis mitral.",
+      "b": "Mixoma de la aurícula izquierda.",
+      "c": "Endocarditis de la válvula mitral.",
+      "d": "Calcificación de la aurícula izquierda debido a una regurgitación mitral significativa y crónica."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-058",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "En la actualidad se admiten como factores de riesgo cardiaco todos los siguientes, excepto uno:",
+    "opciones": {
+      "a": "Resistencia a la insulina",
+      "b": "Hipotensión arterial",
+      "c": "Tabaco y obesidad",
+      "d": "Sexo masculino y sedentarismo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-059",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un varón de 65 años presentó un infarto de miocardio de cara anterior (fracción de eyección del 35%). Va a ser dado de alta del hospital al sexto día. El día 4°, la concentración de colesterol total era de 390 mg/dl, con un colesterol LDL de 290 mg/dl. La TA es de 124/75 mm Hg y la FC de 81 lpm. ¿Cuál de las siguientes medidas es menos probable que aporte a este paciente un beneficio en el período pos infarto?",
+    "opciones": {
+      "a": "La administración de ácido acetilsalicílico",
+      "b": "La administración de un beta bloqueante",
+      "c": "La administración de hidralazina",
+      "d": "La administración de una estatina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-060",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Una mujer de 58 años de edad es sometida con éxito a cateterismo cardiaco después de sufrir un infarto al miocardio sin elevación del ST. Se le colocan dos endoprótesis en las arterias descendente anterior izquierda y circunfleja izquierda. Debe recibir el alta con todos los medicamentos siguientes, excepto:",
+    "opciones": {
+      "a": "Aspirina",
+      "b": "Atenolol",
+      "c": "Enalapril",
+      "d": "Warfarina"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-061",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Valvulopatías"
+    ],
+    "enunciado": "Una mujer de 63 años con antecedentes de infarto agudo de miocardio de cara diafragmática, tiene una fracción de eyección ventricular izquierda del 50%. Se mantenía bien con atenolol 25 mg/dia y Aas 100 mg/dia. Mientras estaba viendo un programa de aventuras emocionante por televisión empezó a presentar una disnea extrema y fue llevada al hospital. Un comprimido de nitroglicerina por vía sublingual hizo que se encontrara mucho mejor. A la exploración física presentaba disnea leve, TA de 142/76 mm Hg y FC de 85 lpm. La exploración pulmonar evidenció estertores bibasales. La presión venosa yugular era de 6 cm H2O. El pulso carotideo era normal. El latido de la punta estaba en la línea media clavicular y parecía normal. Se auscultaban S1 y S2 normales, S4 y un soplo sistólico de regurgitación mitral en ápex no detectado en evaluaciones anteriores. De acuerdo a su diagnóstico presuntivo, ¿Cuál de las siguientes opciones diagnósticas sería la más útil e indicada en este caso?",
+    "opciones": {
+      "a": "Ecocardiografía transesofágica y luego toma de decisión",
+      "b": "Estudio electrofisiológico con estimulación programada",
+      "c": "Cinecoronariografia.",
+      "d": "ECG de 24 horas (Holter)"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-062",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "El Mixoma auricular:",
+    "opciones": {
+      "a": "Es un tumor cardíaco maligno",
+      "b": "Afecta predominantemente al sexo masculino",
+      "c": "Puede dar embolias sistémicas",
+      "d": "Es más frecuentes en las primeras décadas de la vida"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-063",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Pericardio"
+    ],
+    "enunciado": "Un hombre de 68 años ingresa con tos crónica no productiva, disnea de esfuerzo y dolor precordial crónico no relacionado con el esfuerzo. El paciente ha adelgazado 5 kg en el último semestre, ha perdido el apetito y ha notado hinchazón en sus tobillos. En la exploración física destaca el mal aspecto general y la disminución de la masa esquelética. La TA es de 100/70 mm Hg, pero la presión sistólica no disminuye de forma significativa con la inspiración. La FC asciende a 110 lpm, la FR a 25 rpm, la temperatura axilar es de 36.8°C. No se auscultan crepitantes en la exploración pulmonar y se observa una distensión venosa yugular. El latido de la punta cardíaca esta disminuido; los ruidos cardíacos apagados y se ausculta un S3 precoz inmediatamente después del cierre de la válvula aórtica; no se auscultan soplos. El hígado y el bazo están aumentados de tamaño y se aprecia una onda ascítica en la exploración del abdomen. El ECG muestra disminución de los voltajes de QRS, pero ninguna otra anomalía. En la Rx de Tórax, los campos pulmonares están limpios y la silueta cardíaca, aumentada. ¿Cuál de los siguientes hallazgos aparecerá en la ecocardiografía?",
+    "opciones": {
+      "a": "Aumento de tamaño del ventrículo derecho",
+      "b": "Derrame pericárdico severo",
+      "c": "Engrosamiento miocárdico",
+      "d": "Pericarditis crónica constrictiva"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-064",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "Un paciente se presenta con antecedentes de fatiga y disnea, en la exploración se observan edemas periféricos, pulso venoso yugular elevado, ascitis y hepatomegalia. Los ruidos cardíacos son normales, no se identifican soplos y el corazón es de tamaño normal. EI ECG normal, excepto por voltaje bajo. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Mixoma auricular derecho",
+      "b": "Cirrosis hepática",
+      "c": "Enfermedad de la válvula tricúspide",
+      "d": "Pericarditis constrictiva"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-065",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un varón de 55 años de edad se presenta con un dolor subesternal grave que ha tenido durante la última hora. Empezó en reposo y se acompaña de disnea y náuseas. El electrocardiograma muestra un bloqueo de segundo grado, Mobitz tipo II. La placa simple de tórax es normal. ¿Cuál de las siguientes opciones hay probabilidad de encontrar adicionalmente en el electrocardiograma?",
+    "opciones": {
+      "a": "Depresión ST en I y AVL.",
+      "b": "Elevaron del ST en II, III y AVF.",
+      "c": "Ondas T de Wellen.",
+      "d": "Ninguna otra anormalidad."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-066",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Pericardio"
+    ],
+    "enunciado": "El pulso paradójico es signo de:",
+    "opciones": {
+      "a": "Insuficiencia aórtica",
+      "b": "Taponamiento cardíaco",
+      "c": "Miocarditis congénita",
+      "d": "Pericarditis constrictiva"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-067",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Miocardiopatías"
+    ],
+    "enunciado": "¿Cuál de los siguientes hallazgos no es propio de la miocardiopatía hipertrófica?",
+    "opciones": {
+      "a": "Soplo diastólico en foco aórtico",
+      "b": "Pulso carotideo vivo, de ascenso rápido",
+      "c": "Es posible la existencia de ondas Q diseminadas, amplias y profundas en el ECG",
+      "d": "Existe un gradiente de presión dinámica en el tracto de salida del ventriculo izquierdo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-068",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Valvulopatías"
+    ],
+    "enunciado": "Un hombre de 55 años, cursando el 6° día de su IAM, sin compromiso hemodinámico hasta ese momento, comienza con disnea súbita y edema pulmonar. Se ausculta un soplo holosistólico sin frémito, de reciente comienzo y de baja intensidad y un S4. Su diagnóstico presuntivo es:",
+    "opciones": {
+      "a": "Ruptura del septum ventricular",
+      "b": "Ruptura del músculo papilar",
+      "c": "Ruptura de la pared libre del ventrículo izquierdo",
+      "d": "Taponamiento cardíaco por síndrome de Dressler"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-069",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Usted atiende por primera vez a un varón de 54 años que lo consulta para realizar un control de salud. En la historia clínica figura como antecedente hipertensión arterial, constan dos consultas con registros de 150-90 hace 2 años. En ese momento le indicaron enalapril 5mg por día y dieta hiposódica que aún sigue cumpliendo. Fuma 10 cigarrillos por dia. Como antecedentes familiares de importancia, su padre tuvo infarto de miocardio a los 68 años y su madre tiene diabetes tipo 2. En la consulta usted le detecta presión arterial de 150-95 mmHg. ¿Qué estudios complementarios le solicita a este paciente para completar la evaluación?",
+    "opciones": {
+      "a": "Ecocardiograma, hemograma, perfil lipídico, creatinina, sedimento de orina e ionograma",
+      "b": "Prueba ergométrica, ecocardiograma, creatinina, ecografia renal.",
+      "c": "Electrocardiograma, perfil lipídico, creatinina, ecografía renal y doppler de arterias renales.",
+      "d": "Electrocardiograma, perfil lipídico, creatinina, sedimento de orina, ionograma y fondo de ojo."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-070",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Una mujer de 49 años, de profesión conductora de un autobús escolar, que sufre un infarto de miocardio de pared anterior. Durante su hospitalización no se producen complicaciones. Al octavo día de sufrir un infarto de miocardio, se somete a una prueba de esfuerzo según el protocolo de bruce modificado y desarrolla una depresión del segmento ST de 2,5 mm en las derivaciones DII, aVF y V5. ¿Cuál de las siguientes intervenciones debería hacerse a continuación?",
+    "opciones": {
+      "a": "Prueba de talio con esfuerzo",
+      "b": "Prueba con talio y dipiridamol.",
+      "c": "Ventriculografía isotópica de esfuerzo",
+      "d": "Cateterismo cardíaco."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-071",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un hombre de 59 años, fumador, diabético tipo II y dislipémico se ha despertado con una sensación de dolor retroesternal acompañada de sudoración, que cede en 30 minutos en forma espontánea. Un ECG ambulatorio de 24 horas revela un episodio de infra desnivel del segmento ST que se produce simultáneamente con el malestar torácico. ¿Qué es lo que la angiografía coronaria de este paciente mostrará con mayor probabilidad?",
+    "opciones": {
+      "a": "Arterias coronarias normales con ligera ateromatosis",
+      "b": "Vasoespasmo coronario.",
+      "c": "Origen de la arteria coronaria descendente anterior izquierda en la arteria coronaria derecha",
+      "d": "Enfermedad de tres vasos oclusiva."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-072",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "José, de 51 años de edad, es llevado al departamento de urgencias por presentar dolor retroesternal intenso iniciado dos horas antes. Tiene antecedentes familiares positivos de arteriopatía coronaria. Fuma 20 cigarrillos/día y ha presentado HTA en forma aislada. Hace 2 meses fue tratado por una úlcera duodenal sangrante. A la exploración física, está pálido y sudoroso. La frecuencia cardiaca es de 98 lpm y la TA de 100/60 mm Hg, en la auscultación pulmonar se aprecia estertores crepitantes bibasales. La exploración abdominal es normal. En el ECG se observa una elevación del segmento ST de 3 mm en las derivaciones V1 a V4. El paciente ha sido tratado en el departamento de urgencias con ácido acetilsalicilico ¿Qué utilizaría como tratamiento primario?",
+    "opciones": {
+      "a": "Trombólisis con estreptoquinasa",
+      "b": "Trombólisis con rtPA",
+      "c": "Cirugía de revascularización miocárdica de urgencia (bypass).",
+      "d": "Angioplastia directa (primaria)"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-073",
+    "materia": [
+      "cardiologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "EPOC"
+    ],
+    "enunciado": "Ud. Atiende en la guardia un paciente adulto mayor, con diagnóstico de Cor Pulmonale crónico (Insuficiencia Cardiaca Derecha) ¿Cuál de las siguientes opciones no caracteriza esta entidad?",
+    "opciones": {
+      "a": "Ausencia de cardiopatía izquierda",
+      "b": "Obstrucción vascular pulmonar difusa",
+      "c": "Hipertrofia del ventrículo derecho",
+      "d": "Desviación del eje a la izquierda"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-074",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 48 años ingresa a la unidad de cuidados coronarios con IAM de cara inferior. Dos horas después la TA es de 86/52 mm Hg y la FC 42 lpm, con ritmo sinusal, sin sintomas relevantes. ¿Cuál es la primera indicación para este paciente?",
+    "opciones": {
+      "a": "Administración de sulfato de atropina e.v",
+      "b": "Administración de dobutamina e.v",
+      "c": "Administración de suero salino al 5%",
+      "d": "Administración de isoprenalina. e.v"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-075",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un paciente tiene dolor anginoso cuando sube un tramo de escaleras que le obliga a parar. ¿En qué Clase Funcional cree que está?",
+    "opciones": {
+      "a": "Clase funcional III",
+      "b": "Clase funcional II",
+      "c": "Clase funcional 0.",
+      "d": "Clase funcional I"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-076",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Endocarditis"
+    ],
+    "enunciado": "Una paciente de 20 años, estudiante, presenta un clic sistólico suave y prolapso de la válvula mitral, también suave que se detecta mediante ecocardiografía. La paciente presenta regurgitación mitral con los cambios posturales. ¿Cuál de los siguientes tratamientos sería el mejor para prevenir la endocarditis infecciosa?",
+    "opciones": {
+      "a": "Usted recomendaría terapia profiláctica de rutina con antibióticos",
+      "b": "Usted recomendaría terapia profiláctica con antibióticos sólo si se presenta regurgitación mitral fija",
+      "c": "No se requiere terapia profiláctica con antibióticos",
+      "d": "Usted recomendaría terapia con antibióticos sólo si la paciente presenta un foco infeccioso evidente"
+    },
+    "correcta": "a",
+    "explicacion": "Nota: Aunque las guías actuales (AHA/ESC) han restringido el uso de profilaxis, la respuesta considerada correcta en este examen específico indica su uso rutinario.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-077",
+    "materia": [
+      "cardiologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Venas y linfáticos",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "Una paciente de 57 años; obesa; ha sido operada efectuándose un reemplazo total de cadera selectiva por artrosis severa. Fue dada de alta y a la semana consulta por dolor en miembro inferior derecho. Al examen físico se objetiva hipersensibilidad, aumento de la temperatura, eritema y edema a nivel de la pantorrilla derecha. La conducta seria:",
+    "opciones": {
+      "a": "Ecodoppler venoso de mmII y anticoagulación con heparina",
+      "b": "Anticoagulantes con heparina sin estudios complementarios",
+      "c": "Flebografía radioisotópica de MMII y anticoagulantes según resultados",
+      "d": "AINEs y fisioterapia"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-078",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "La causa más frecuente de muerte súbita en los adultos mayores de 21 años es:",
+    "opciones": {
+      "a": "Fibrilación ventricular",
+      "b": "Asistolia",
+      "c": "Actividad eléctrica sin pulso",
+      "d": "Taquicardia supraventricular"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-079",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Señale la opción correcta con respecto al bloqueo AV de 2 grado tipo Mobitz I o de Wenckebach",
+    "opciones": {
+      "a": "Es más frecuente en diabéticos tipo I",
+      "b": "EI PR se prolonga hasta que una p no conduce",
+      "c": "Puede ser provocado por la administración de atropina",
+      "d": "Puede ser provocado por una obstrucción de la arteria descendente anterior"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-080",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Metabolismo lipídico"
+    ],
+    "enunciado": "Roberto, de 57 años de edad presenta antecedentes de infarto miocárdico. Es hipertenso y diabético tipo II. Se le realiza un perfil de lípidos el cual revela un colesterol total de 240 mg/dl colesterol HDL de 40 mg/dl triglicéridos de 120 mg/dl y colesterol LDL de 160 mg/dl. ¿Cuál es su conducta y el objetivo del tratamiento, según lo recomendado en la literatura?",
+    "opciones": {
+      "a": "Dieta hipograsa sin tratamiento ya que el colesterol se encuentra en el límite máximo normal",
+      "b": "Dieta y tratamiento farmacológico para llevar el colesterol LDL a 130 mg/dl.",
+      "c": "Dieta hipograsa para reducir el colesterol total a 220 mg/dl.",
+      "d": "Dieta y tratamiento farmacológico para reducir el colesterol LDL a 100 mg/dl"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-081",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Endocarditis"
+    ],
+    "enunciado": "Son indicaciones de tratamiento quirúrgico absoluta en la fase activa de la endocarditis:",
+    "opciones": {
+      "a": "La endocarditis sobre válvula protésica en paciente que no tolera el tratamiento médico",
+      "b": "La presencia de vegetaciones valvulares móviles mayores a 10 mm",
+      "c": "La Insuficiencia cardíaca con respuesta adecuada al tratamiento médico.",
+      "d": "La endocarditis sobre válvula protésica por s. Aureus con una complicación intracardiaca"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-082",
+    "materia": [
+      "cardiologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Tubulopatías"
+    ],
+    "enunciado": "Una mujer de 58 años con antecedentes de osteoporosis, litiasis renal por oxalato de calcio e hipercalciuria idiopática, presenta hipertensión arterial sin respuesta al tratamiento no farmacológico. Sus niveles promedio de tensión arterial son 170/90 mm Hg. No existe daño de órgano blanco. ¿Cuál de los siguientes medicamentos estaría recomendado en este paciente?",
+    "opciones": {
+      "a": "Hidroclorotiazida",
+      "b": "Amlodipina",
+      "c": "Enalapril",
+      "d": "Atenolol"
+    },
+    "correcta": "a",
+    "explicacion": "Los diuréticos tiazídicos reducen la excreción urinaria de calcio, siendo útiles tanto para la hipertensión como para la prevención de litiasis cálcica y la osteoporosis.",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-083",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Endocarditis"
+    ],
+    "enunciado": "Se presenta a la guardia un paciente joven, HIV seropositivo, con antecedentes de drogadicción endovenosa. Comenta que ayer se le extrajo la raíz de un molar, que tenia una infección periodontal circundante. Presenta ahora escalofríos, anorexia, mialgias, soplo cardiaco y fiebre: ud. sospecha que esta patologia:",
+    "opciones": {
+      "a": "Afecta preferentemente las válvulas derechas.",
+      "b": "Es una enfermedad muy frecuente y que hay que controlar periódicamente",
+      "c": "En la mayoría de los casos está producida por estafilococos",
+      "d": "Tiene siempre un curso clínico agudo y fulminante"
+    },
+    "correcta": "a",
+    "explicacion": "En usuarios de drogas por vía parenteral, la endocarditis infecciosa afecta con mayor frecuencia a la válvula tricúspide (corazón derecho).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-084",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Una mujer de 49 años de edad se presenta a la primera consulta para establecer un programa de atención médica. No tiene antecedentes médicos relevantes y niega antecedente familiar de diabetes mellitus, enfermedad cardiovascular temprana o enfermedad renal. Al presentarse, su TA es de 185/112 mm Hg. Niega tener cefalea o molestias visuales. No tiene dolor toráxicos, falta de aliento o cambio de color en la orina. La exploración física es normal, con la excepción de galope s4 que se escucha en el cuarto espacio intercostal, inmediatamente a la izquierda del esternón. En el electrocardiograma destacan hipertrofia ventricular izquierda y desviación del eje a la izquierda. No hay signos de isquemia cardiaca. El análisis de la orina no muestra eritrocitos ni proteinuria ¿Cuál es la recomendación terapéutica para esta paciente?",
+    "opciones": {
+      "a": "Indicar terapia con dos drogas antihipertensivas (combinado).",
+      "b": "Iniciar terapia con Hidroclorotiazida sola.",
+      "c": "Aconsejar a la paciente que acuda al servicio de urgencia más cercano para tratamiento más a fondo de la urgencia hipertensiva.",
+      "d": "Iniciar terapia con IECA solamente"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-085",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un varón de 55 años, con enfermedad coronaria, experimenta síntomas recurrentes de angina a los 2 meses de una angioplastia coronaria transluminal percutánea (ACTP) con aparente buenos resultados. La ACTP original se aplicó por una angina sin respuesta al tratamiento médico con dos oclusiones proximales del 90% (la primera en la arteria coronaria derecha y la segunda en la arteria circunfleja El cateterismo cardíaco reveló una nueva oclusión de la circunfleja. ¿Cuál de las siguientes opciones sobre el estado actual de este paciente es correcta?",
+    "opciones": {
+      "a": "Posiblemente, el enfermo precise cirugía de revascularización coronaria",
+      "b": "Debería haberse administrado un hipolipemiante para prevenir el problema",
+      "c": "La administración de warfarina durante 6 meses después de la ACTP previene esta complicación",
+      "d": "Probablemente, la proliferación del músculo liso de las arterias coronarias contribuyó al problema actual"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-086",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "¿Cuál de las siguientes opciones no indica un pronóstico adverso en los factores de prevalencia de la hipertensión arterial?",
+    "opciones": {
+      "a": "Tabaquismo de 20 cigarrillos/día durante los últimos 40 años",
+      "b": "Mujeres jóvenes y que consuman anticonceptivos orales",
+      "c": "Presión diastólica persistente mayor a 115 mm hg",
+      "d": "Diabetes mellitus"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-087",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "un varón de 59 años de edad es internado con 2 hs de dolor torácico subesternal agobiante y elevación del segmento ST en las derivaciones de V2 a V4 del ECG. Es sometido a cateterismo cardíaco con angioplastía y colocación de endoprótesis por una lesión trombótica en la arteria coronaria descendente anterior izquierda. Durante las primeras 72 hs de su hospitalización debe recibir los siguientes medicamentos, excepto:",
+    "opciones": {
+      "a": "Ticlopidina",
+      "b": "Clopidogrel",
+      "c": "Dexametasona",
+      "d": "Aspirina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-088",
+    "materia": [
+      "cardiologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón"
+    ],
+    "enunciado": "En una paciente de 62 años en 8 día postoperatorio de fractura de cadera que desarrolla TEP; sintomático por disnea, paO2 50 mm Hg con FiO2 0,21, TAS 90 mm Hg y ecocardiograma bidimensional con dilatación de cavidades derechas, el tratamiento más adecuado es:",
+    "opciones": {
+      "a": "Heparinización endovenosa y filtro de vena cava",
+      "b": "Heparinización endovenosa y trombolisis",
+      "c": "Dicumarínicos y aspirina",
+      "d": "Heparinización endovenosa y anticoagulantes orales"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-089",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Aorta"
+    ],
+    "enunciado": "La cirugía en un paciente con diagnóstico de disección aórtica está indicada en todas estas situaciones, excepto en:",
+    "opciones": {
+      "a": "La abolición de los pulsos del miembro superior derecho",
+      "b": "La disección tipo b no complicada.",
+      "c": "La disección tipo a con soplo de insuficiencia aortica de aparición reciente.",
+      "d": "El dolor torácico persistente."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-090",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un paciente con una taquicardia con QRS angosto, estable ud debe:",
+    "opciones": {
+      "a": "Administrar amiodarona E.V. en bolo y llevarlo a unidad coronaria",
+      "b": "Administrar adenosina por vía I.M. y dejarlo en la guardia",
+      "c": "Realizar maniobras diagnóstico terapéuticas: estimulación vagal y si no hay respuesta adenosina E.V.",
+      "d": "Cardiovertir con 300 joules y no moverlo"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-091",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Ante un paciente con bloqueo AV completo sintomático está indicado:",
+    "opciones": {
+      "a": "Marcapasos transcutáneo",
+      "b": "Isoproterenol en aerosol",
+      "c": "Adrenalina subcutánea",
+      "d": "Betabloqueantes por via oral"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-092",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Aorta"
+    ],
+    "enunciado": "¿En cuál de los siguientes casos no está indicado el tratamiento quirúrgico de un aneurisma de aorta abdominal y su sustitución por un injerto vascular?",
+    "opciones": {
+      "a": "Varón de 62 años con un aneurisma de 4.5 cm de diámetro, con síntomas",
+      "b": "Varón de 60 años con un aneurisma de 4.3 cm de diámetro, con sintomas",
+      "c": "Mujer de 65 años con un aneurisma de 7 cm de diámetro, asintomática",
+      "d": "Mujer de 58 años con un aneurisma de 4.5 cm de diámetro, asintomática"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-093",
+    "materia": [
+      "cardiologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Venas y linfáticos",
+      "Coagulación"
+    ],
+    "enunciado": "Un paciente de 68 años desarrolla 12 días después de una prostatectomia, una trombosis venosa profunda en un miembro inferior y a partir de allí un trombo embolismo pulmonar. Se anticoagula primero con heparina y luego con dicumarínicos lográndose su recuperación. Es enviado a su domicilio con anticoagulantes orales y es controlado periódicamente con determinaciones de Quick y Kptt. ¿Durante cuánto tiempo se mantiene este tratamiento?",
+    "opciones": {
+      "a": "3 meses",
+      "b": "De por vida",
+      "c": "12 meses",
+      "d": "6 meses"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-094",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Endocarditis"
+    ],
+    "enunciado": "Una mujer de 30 años es vista en la consulta clínica antes de someterse a dilatación esofágica por estenosis. En sus antecedentes médicos destaca prolapso de la válvula mitral, con regurgitación moderada. No toma medicamentos y es alérgica a la penicilina. ¿Cuál de las siguientes opciones debe recomendar su médico?",
+    "opciones": {
+      "a": "500 mg de claritromicina vía oral 1 hs antes del procedimiento.",
+      "b": "450 mg de clindamicina vía oral 1 hs antes del procedimiento.",
+      "c": "El procedimiento es de bajo riesgo y por lo tanto no se indica profilaxis.",
+      "d": "1 gr de vancomicina intravenosa antes del procedimiento"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-095",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿Cuál de los siguientes son criterios positivos de reperfusión miocárdica luego de terapéutica trombolitica en un IAM?",
+    "opciones": {
+      "a": "Disminución de las enzimas cardíacas, desaparición del dolor y disminución del ST > 50%",
+      "b": "Disminución de las enzimas al 50% y desaparición del dolor y el ST",
+      "c": "Descenso del segmento ST > 50% bradicardia sinusal y descenso del dolor 30%",
+      "d": "Disminución del dolor > 50%, disminución del ST > 50% y pico precoz de CPK"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-096",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Aorta",
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿En cuál de los siguientes casos no está indicado el tratamiento quirúrgico de un aneurisma de aorta abdominal y su sustitución por un injerto vascular? (Nota: El enunciado original del archivo PDF parece erróneo/duplicado; las opciones se refieren a escalas de riesgo).",
+    "opciones": {
+      "a": "Framingham",
+      "b": "TIMI",
+      "c": "KILLIP Y KIMBALL",
+      "d": "SYNTAX"
+    },
+    "correcta": "b",
+    "explicacion": "Nota técnica: El enunciado de esta pregunta en el documento fuente es una copia del texto de una pregunta anterior sobre aneurismas, pero las opciones corresponden a escalas de riesgo cardiovascular. La respuesta correcta según la fuente es TIMI (Score de riesgo para angina inestable/IAMSEST).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-097",
+    "materia": [
+      "cardiologia",
+      "otras"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Fármacos"
+    ],
+    "enunciado": "¿Cuál de los siguientes no forma parte de los efectos adversos de la hidralazina en el tratamiento de la hipertensión arterial?",
+    "opciones": {
+      "a": "Sindrome de tipo lupus",
+      "b": "Insuficiencia suprarrenal",
+      "c": "Angor pectoris",
+      "d": "Cefalea vascular."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-098",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "Cada uno de los siguientes pacientes deben tener como meta < 100 mg/dl de colesterol en lipoproteínas de baja densidad para reducir el riesgo de enfermedad cardiaca coronaria, excepto:",
+    "opciones": {
+      "a": "Hombre de 49 años de edad, fumador, con antecedentes de angina de esfuerzo",
+      "b": "Hombre de 62 años de edad con hipertensión de mucho tiempo y antecedente familiar de enfermedad cardíaca coronaria.",
+      "c": "Hombre de 68 años de edad, asintomático, con obstrucción carotidea derecha de 60%.",
+      "d": "Mujer de 49 años de edad, asintomático, con diabetes mellitus tipo I"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-099",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Ingresa al servicio de emergencias un paciente de 56 años con dolor precordial. Al hacer el ECG Ud. Constata supradesnivel del ST en DII, DIII, y aVF. ¿Cuál sería su conducta?",
+    "opciones": {
+      "a": "Administrar betabloqueantes E.V.",
+      "b": "Administrar oxígeno, colocar vía periférica y trombolisis",
+      "c": "Angioplastia primaria urgente",
+      "d": "Administrar oxígeno, colocar vía periférica y comenzar goteo de nitroglicerina"
+    },
+    "correcta": "d",
+    "explicacion": "Nota: Aunque la angioplastia primaria es el tratamiento de reperfusión de elección, la respuesta marcada como correcta en el documento fuente es la opción D (medidas iniciales y nitroglicerina).",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-001-100",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Aorta"
+    ],
+    "enunciado": "Se realiza el diagnóstico de disección de la aorta torácica descendente en un paciente de 65 años de edad que acude al servicio de urgencias a causa de tres horas de dolor transfictivo irradiado a espalda y en quien la exploración física revela TA de 170/100 mm Hg, FC de 100 lpm y con disminución en la intensidad de los pulsos pedios, ¿Cuál sería el tratamiento inicial en este paciente?",
+    "opciones": {
+      "a": "Nifedipina sublingual",
+      "b": "Nitroglicerina en infusión",
+      "c": "Infusión de nitroprusiato y beta bloqueantes",
+      "d": "Esmolol intravenoso"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": false,
+    "examen": null,
+    "anio": null,
+    "oficial": false
   }
 ]
+
