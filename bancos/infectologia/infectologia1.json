@@ -1,1 +1,2365 @@
-[]
+[
+  {
+    "id": "infecto-001-001",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "La paciente concurre a control a los 4 días y refiere que desde hace 2 días que no tiene fiebre pero que tiene náuseas y vómitos y su familiar refiere que la nota \"mas dormida que antes\". Usted:",
+    "opciones": {
+      "a": "Realiza laboratorio donde observa leucocitosis y plaquetopenia.",
+      "b": "Explica que se debe a aumento de la viremia por lo que solicita nuevamente antígeno NS1.",
+      "c": "Realiza laboratorio donde observa aumento del hematocrito con respecto al previo y plaquetopenia. Solicita internación.",
+      "d": "Realiza laboratorio donde observa aumento del hematocrito con respecto al previo y plaquetopenia. Solicita internación."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-002",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Un hombre mayor de 83 años, previamente sano, ingresa a la guardia con disuria, polaquiuria, fiebre y escalofríos. Su temperatura es de 39.5° C, TA 102/62 mm Hg, FC 138 Ipm y la FR 28 rpm. ¿Cuál de las siguientes intervenciones es la más importante para combatir su enfermedad aguda?",
+    "opciones": {
+      "a": "Inyección de metilprednisona para disminuir los síntomas",
+      "b": "Cateterismo de la vejiga y evaluación del sedimento para indicación antibiótica",
+      "c": "Inicio de tratamiento antibiótico",
+      "d": "Infusión de solución salina, toma de muestra y esperar antibiograma"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-003",
+    "materia": [
+      "infectologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Leucemias agudas"
+    ],
+    "enunciado": "Un hombre de 22 años con leucemia aguda no diferenciada desarrolla un infiltrado pulmonar después de 20 días de presentar neutropenia. Había tenido fiebre constante y recibió ceftazidima durante 10 días, vancomicina durante 7 días y anfotericina B durante 5 días. La TC pulmonar muestra un infiltrado periférico en el lóbulo inferior derecho con núcleo central denso y borde circundante de infiltrado en vidrio esmerilado que se extiende a la pleura. ¿Cuál de las siguientes es la fuente más probable de infección?",
+    "opciones": {
+      "a": "Fomites en la habitación del paciente",
+      "b": "Circulación del aire del hospital.",
+      "c": "Las vías respiratorias superiores del paciente.",
+      "d": "Un visitante con tos y antecedentes de TBC curada."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-004",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Una joven de 16 años, presenta frecuencia miccional aumentada y disuria de 2 días de duración. No existen antecedentes previos de síntomas similares. El análisis de orina muestra 10 a 15 leucocitos y 20 a 30 eritrocitos por campo ¿Cuál de los siguientes tratamientos es el más apropiado para esta paciente?",
+    "opciones": {
+      "a": "Tratamiento con Nitrofurantoina durante 3 días.",
+      "b": "Tratamiento con furantoina durante 7 días.",
+      "c": "Tratamiento con fluoroquinolona durante 3 días",
+      "d": "Tratamiento con Trimetoprima-sulfametoxazol durante 7 días."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-005",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Neumonía"
+    ],
+    "enunciado": "Una mujer de 50 años es sometida a transplante bipulmonar no complicado a causa de un antecedente de hipertensión pulmonar primaria, que no cedía con tratamiento intensivo. Fue seropositiva para citomegalovirus (CMV) y recibió profilaxis para CMV inmediatamente después del transplante. El séptimo día postoperatorio presentó fiebre y un nuevo infiltrado en el pulmón derecho. ¿Cuál de los siguientes microorganismos probablemente sea el agente causal de estos hallazgos?",
+    "opciones": {
+      "a": "Listeria monocytogenes",
+      "b": "Pneumocystis jiroveci",
+      "c": "Pseudomonas aeruginosa",
+      "d": "Citomegalovirus"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-006",
+    "materia": [
+      "cirugiageneral",
+      "infectologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Dos semanas después de una cirugía de urgencia por úlcera duodenal perforada, una mujer de 39 años refiere dolor abdominal vago y fiebre. En la exploración física se encuentra un poco pálida, con temperatura de 38 °C y ligera plenitud en el epigastrio. La tomografía de abdomen muestra un área de acumulación de liquido que mide 3x3x8 cm en el espacio paracólico izquierdo. ¿Cuál de las siguientes medidas sería el próximo paso más eficaz a realizar?",
+    "opciones": {
+      "a": "Drenar mediante catéter el cúmulo de liquido y dar antibióticos de amplio espectro activos contra la infección asociada.",
+      "b": "No administrar tratamiento hasta que se obtengan hemocultivos positivos o la acumulación de líquido cambie de tamaño",
+      "c": "Administrar antibioticoterapia contra bacilos aerobios gramnegativos",
+      "d": "Administrar antibioticoterapia eficaz contra anaerobios abdominales"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-007",
+    "materia": [
+      "infectologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Antibacterianos",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Una mujer de 78 años concurre al departamento de emergencias con dolor abdominal creciente y fiebre de comienzo repentino. En el examen físico, la temperatura es de 39.4°C, la FR es de 24 RPM y la TA es de 110/55 mm Hg. El abdomen está distendido y presenta dolor a la presión, con pocos ruidos intestinales. Pruebas de laboratorio: recuento leucocitario 21.000/mm3, neutrófilos polimorfonucleares 74%, formas en banda 10%, linfocitos 10%, monocitos 6%; bilirrubina total 4 mg/dl; fosfatasa alcalina 250 u/l; got 35 u/l. Después de instituir liquidos e imipenem-cilastatina por vía E.V., la fiebre se resuelve y la TA se normaliza. Al 18° día de hospitalización, la paciente desarrolla diarrea y dolor abdominal. Una prueba para detectar la presencia de toxina Clostridium difficile es positiva y se agrega vancomicina por vía oral al régimen imipenem-cilastatina. Al 14° día de hospitalización la fiebre recurre y se realizan hemocultivos. El laboratorio de microbiología informa al día siguiente que los hemocultivos están desarrollando cocos Gram positivos en cadenas cortas que son resistentes a vancomicina. Al 16° dia de hospitalización, el aislado sanguíneo es identificado como Enterococos faecium. Se cambia el catéter venoso central. ¿Cuál de los siguientes es el régimen antimicrobiano más apropiado para esta paciente?",
+    "opciones": {
+      "a": "Continuar con vancomicina + imipenem",
+      "b": "Azitromicina + ciprofloxacina",
+      "c": "Linezolid",
+      "d": "Ampicilina + gentamicina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-008",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "Una mujer oriunda de CABA que viaja a playa de Brasil por 15 días y vuelve a Argentina con fiebre de 2 días de evolución + rash cutáneo. Usted la atiende en guardia. Le refiere que además de la fiebre tiene cefalea intensa, dolor retroocular, ninguna de las personas que viajó con ella tiene sintomas similares y que donde estuvo fue picada varias veces por mosquitos. Usted:",
+    "opciones": {
+      "a": "Solicita Antígeno NS1 y PCR viral.",
+      "b": "Le informa que tiene un probable dengue y que debe usar repelente DEET ya que si la picara un mosquito este inmediatamente podría transmitir la infección",
+      "c": "Solicita Ig M virus dengue.",
+      "d": "Tranquiliza a la paciente, le informa que debe ser alergia a algo que comió."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-009",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Un hombre de 38 años presenta endocarditis infecciosa en una válvula aórtica bicúspide nativa. Los hemocultivos dan como resultado Estreptococos viridans sensibles a penicilina (CIM<=0.1 mg/ml). El paciente no ha recibido penicilina desde la infancia, pero no recuerda haber tenido reacción exantematosa leve a este antibiótico. Se indica la administración de penicilina, 3 000 000 unidades por vía E.V. Cada 4 hs durante 4 semanas. Aproximadamente 3 hs después de la primera dosis, el paciente desarrolla urticaria generalizada con comezón en ojos y labios. ¿Cuál de los siguientes es el tratamiento más apropiado para este paciente?",
+    "opciones": {
+      "a": "Ceftriaxona.",
+      "b": "Azitromicina.",
+      "c": "Levofloxacina.",
+      "d": "Penicilina después de desensibilización."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-010",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Antibacterianos"
+    ],
+    "enunciado": "En un absceso bacteriano no asociado a infección de piel y partes blandas, ¿cuál sería el tratamiento antibiótico de elección, entre las siguientes opciones?",
+    "opciones": {
+      "a": "Cloranfenicol",
+      "b": "Ceftriaxona + metronidazol",
+      "c": "Ampicilina + estreptomicina",
+      "d": "Rifampicina + isoniazida"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-011",
+    "materia": [
+      "infectologia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Miembro superior"
+    ],
+    "enunciado": "Estudiante de 25 años, que vive en tu mismo barrio, consulta a la guardia debido a que fue mordido por el perro de tu hermano, presenta celulitis y supuración. ¿Cuál es el antibiótico de elección para el posible microorganismo infectante y qué otra precaución se debería tomar?",
+    "opciones": {
+      "a": "Levofloxaciclina + vacuna doble adulto como refuerzo",
+      "b": "Cloranfenicol + suero antirrábico",
+      "c": "Amoxi-clavulánico + vacuna doble bacteriana",
+      "d": "Tetraciclina + vacuna antitetánica"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-012",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "A un varón de 59 años se le valora por disnea progresiva de una semana de duración. Catorce meses antes recibió transplante de pulmón derecho unitario por antecedentes de fibrosis pulmonar idiopática. La evolución después del transplante se complicó con tres episodios de rechazo agudo durante el primer año. Su medicación inmunosupresora actual incluye prednisona, tacrolimus y micofenolato. En la exploración física, el paciente se encuentra afebril con signos vitales normales, excepto por una FR de 20 rpm. Presenta estertores crepitantes difusos del lado izquierdo y disminución de los ruidos respiratorios en el lado derecho, con matidez a la percusión. Una radiografía torácica revela derrame pleural derecho de tamaño moderado que no se observó dos meses antes. La valoración del líquido pleural muestra linfocitos t malignos que son compatibles con linfoma primario. ¿Cuál de los siguientes microorganismos probablemente sea el agente causal del derrame pleural maligno?",
+    "opciones": {
+      "a": "Virus sincicial respiratorio",
+      "b": "Citomegalovirus",
+      "c": "Virus herpes humano 8",
+      "d": "Virus de Epstein-Barr"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-013",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Vacunación infantil"
+    ],
+    "enunciado": "Se recomiendan todas las siguientes vacunas en los adultos inmunodeprimidos, excepto:",
+    "opciones": {
+      "a": "Vacuna triple viral y antitetánica",
+      "b": "Vacuna antimeningocócica tetravalente",
+      "c": "Vacuna con el virus inactivado de la gripe del año en vigencia",
+      "d": "Vacuna antineumococica"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-014",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Infecciosas"
+    ],
+    "enunciado": "Un hombre de 35 años con una historia de abrasión en la mano derecha, presenta dolor agudo en el hombro del mismo lado. En la exploración destaca una temperatura de 39,4°C y escalofríos, el estado general del enfermo es bastante malo. Se aprecia un eritema oscuro y edema en el hombro y miembro superior derecho, con un intenso dolor a la movilización. Pocas horas después, el paciente deja de responder a los estímulos y presenta hipotensión. El estudio de laboratorio destaca el aumento de la creatinina, la trombocitopenia y la elevación de las transaminasas hepáticas. En los tejidos blandos del miembro superior izquierdo se ha iniciado una necrosis. Un hemocultivo, obtenido al comienzo del cuadro clínico, es positivo. El microorganismo responsable de este sindrome clínico es:",
+    "opciones": {
+      "a": "Bacteroides fragilis",
+      "b": "Staphylococcus aureus",
+      "c": "Estreptococos del grupo A. Shock tóxico.",
+      "d": "Estreptococos del grupo D"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-015",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Una mujer de 55 años es hospitalizada debido a fiebre y escalofríos de 2 días de duración. La paciente tiene una prótesis de válvula aórtica porcina, la cual fue colocada hace 4 años por una estenosis aórtica. Ayer la paciente fue al consultorio de su médico, donde se tomaron muestras para 2 series de hemocultivos. En el examen fisico no se observan lesiones cutáneas. Se detectan petequias en la conjuntiva palpebral derecha. El examen pulmonar no revela crepitaciones. El examen cardíaco muestra soplo de eyección sistólica de grado 2/6 en el borde esternal superior derecho y soplo diastólico leve en el borde esternal inferior izquierdo; los ruidos de la prótesis valvular son claros y no hay ritmo de galope. El electrocardiograma es normal. El examen del abdomen y las extremidades son normales. El Hto es del 35%, el recuento leucocitario es de 11.000/mm3 y la creatinina es de 0.8 mg/dl. Los 2 hemocultivos desarrollan cocos Gram positivos. ¿Cuál de los siguientes regímenes antibióticos intravenosos es el más apropiado para esta paciente?",
+    "opciones": {
+      "a": "Penicilina, cada 4 hs.",
+      "b": "Penicilina + gentamicina, cada 24 hs.",
+      "c": "Vancomicina, cada 12 hs.",
+      "d": "Penicilina, cada 4 hs + gentamicina, cada 8 hs + Vancomicina c/12hs."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-016",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Infecciosas"
+    ],
+    "enunciado": "Un paciente de 35 años de sexo femenino que consulta en la guardia del hospital por una lesión tumefacta, eritematosa, muy dolorosa, de bordes indurados en cara lateral de pierna derecha. Ud lo trata con penicilina pensando en:",
+    "opciones": {
+      "a": "Erisipela.",
+      "b": "Fascitis necrotizante",
+      "c": "Lesión ulcerosa",
+      "d": "Celulitis"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-017",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Tuberculosis"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la causa más probable de fiebre de origen desconocido en el paciente infectado por el HIV?",
+    "opciones": {
+      "a": "Candidiasis",
+      "b": "Brucelosis",
+      "c": "Linfoma",
+      "d": "Tuberculosis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-018",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Bacterias"
+    ],
+    "enunciado": "Una mujer de 32 años es llevada al departamento de emergencias en estado de shock. El estado de su salud era bueno hasta hace pocas horas, cuando desarrolló escalofríos, fiebre y confusión de comienzo súbito. La temperatura es de 40° C, la FC de 120 Ipm, la FR de 32 RPM y la TA es de 70/40 mm Hg. Tiene una laceración de 3 cm en el dedo índice de la mano derecha con bordes dentados, necróticos, que presenta eritema y equimosis circundante. Las extremidades están frías. Al realizar el cuestionario, su esposo recuerda que la paciente fue mordida por su perro la tarde anterior. ¿Cuál de los siguientes microorganismos es probablemente responsable de la enfermedad de esta mujer?",
+    "opciones": {
+      "a": "Capnocytophaga canimorsus.",
+      "b": "Staphylococcus aureus.",
+      "c": "Pasteurella multocida",
+      "d": "Haemophilus influenzae."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-019",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Neumonía"
+    ],
+    "enunciado": "Una mujer de 24 años ex drogadicta por vía endovenosa, infectada con HIV y sexualmente activa, presenta fiebre de 2 días y tos productiva. Las radiografías de tórax muestran un infiltrado en el pulmón derecho, que afecta menos de un segmento pulmonar. Dos semanas antes el número de células T auxiliares (CD4) Fue de 510/mm3. La tinción de Gram del esputo muestra muchos leucocitos y células epiteliales escamosas mezcladas con flora bacteriana. La prueba de antigeno no treponémico es positiva a 2 diluciones y la prueba de antígeno treponémico también lo es. ¿Cuál de las siguientes es la causa más probable de neumonia?",
+    "opciones": {
+      "a": "Pneumocystis jirovecii",
+      "b": "Citomegalovirus (CMV)",
+      "c": "Streptococcus pneumoniae",
+      "d": "Sífilis"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-020",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tracto digestivo"
+    ],
+    "enunciado": "¿Cuánto tiempo suele transcurrir entre la ingestión de un alimento contaminado por toxinas de estafilococos y la aparición de diarrea?",
+    "opciones": {
+      "a": "12-24 horas",
+      "b": "1-6 horas",
+      "c": "24-48 horas",
+      "d": "48-72 horas"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-021",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Un hombre de 62 años es atendido por su médico debido a dolor bucal relacionado con la masticación. En el curso de 2 semanas, el paciente ha experimentado dificultades progresivas para masticar y observó cierto sangrado de las encías al cepillarse los dientes. La revisión de la historia clínica del paciente indicó alergia severa a la penicilina que se manifestó con urticaria y edematización de garganta durante una infusión profiláctica de ampicilina al momento de una cistoscopia con biopsia hace 2 años. Hace un año, durante una evaluación por sincope, se le diagnosticó un soplo de estenosis aórtica cada vez más fuerte. El examen físico actual muestra gingivitis considerable y varias piezas dentarias pérdidas o cariadas. Se aconseja al paciente consultar a un odontólogo para limpieza, relleno de las cavidades y extracción de un diente. ¿Cuál de los siguientes es el régimen profiláctico más apropiado para la visita al odontólogo?",
+    "opciones": {
+      "a": "Sin antibióticos, no es necesaria la profilaxis.",
+      "b": "Vancomicina, 1 g por vía E.V. 1 hora antes del procedimiento.",
+      "c": "Trimetoprima-sulfametoxazol (tmp/smx), un comprimido de doble concentración por vía oral 1 hora antes del procedimiento.",
+      "d": "Penicilina, 1 g por vía oral 1 hora antes del procedimiento y 0,5 g, 6 hs después del procedimiento."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-022",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Un paciente al que le detectan una infección urinaria por Pseudomonas aeruginosa, inicia tratamiento con ceftazidima, luego de dos días el paciente se encuentra peor, la fiebre aumentó hasta 39º C y desarrolla hipotensión. En el hemograma hay leucopenia e importante trombocitopenia que no estaban previamente, también presenta una glucemia de 198 g/dl. Probablemente nos encontramos ante:",
+    "opciones": {
+      "a": "La evolución natural del proceso",
+      "b": "Probable asociación con una hemopatía",
+      "c": "Un efecto secundario de la ceftazidima",
+      "d": "Sepsis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-023",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Hígado"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la etiología más frecuente de una peritonitis espontánea en el paciente cirrótico?",
+    "opciones": {
+      "a": "Escherichia coli",
+      "b": "Staphylococcus aureus",
+      "c": "Klebsiella pneumoniae",
+      "d": "Streptococcus agalactiae"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-024",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Infecciosas"
+    ],
+    "enunciado": "Un hombre de 35 años presenta un forúnculo eritematoso caliente, con dolor a la presión, de 4 cm. En la pantorrilla derecha. La lesión comenzó hace 3 días como un \"grano\", el cual se agrandó gradualmente y se volvió cada vez más doloroso. El paciente manifiesta que no ha tenido fiebre, escalofríos ni otros síntomas constitucionales. Durante los últimos 4 años, el paciente ha tenido por lo menos 6 lesiones similares en los glúteos, el abdomen y las extremidades. Cada episodio se caracteriza por una lesión solitaria que se resolvía luego de incisión y drenaje o con tratamiento antibiótico de corta duración. En 2 ocasiones anteriores, los cultivos del drenaje desarrollaron Staphylococcus aureus meticilino-sensibles. En general, el paciente ha tenido excelente salud. Las únicas infecciones que ha tenido son dolores de garganta en la infancia y un episodio de sinusitis luego de un viaje en avión hace varios años. No tiene antecedentes de neumonía ni de meningitis. ¿Cuál de los siguientes trastornos subyacentes tiene mayor probabilidad de estar presente en este paciente?",
+    "opciones": {
+      "a": "Síndrome de Chediak-Higashi.",
+      "b": "Enfermedad granulomatosa crónica.",
+      "c": "Inmunodeficiencia variable común.",
+      "d": "Colonización cutánea y nasal crónica con S. aureus."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-001-025",
+    "materia": [
+      "infectologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Leucemias agudas"
+    ],
+    "enunciado": "Un hombre de 35 años con leucemia mieloblástica aguda que ha tolerado, en principio, bien la quimioterapia inicial, empieza con fiebre 6 días después de la quimioterapia y unos 10 días después de colocar un catéter intravenoso transtorácico permanente (Hickman). La exploración resulta negativa, excepto el eritema y dolor a la palpación en el lugar de inserción del catéter y el túnel subcutáneo. Los hemocultivos y la Rx de tórax son anodinos, la actuación más correcta consistiría en:",
+    "opciones": {
+      "a": "Comenzar con vancomicina por vía E.V.",
+      "b": "Comenzar con vancomicina + gentamicina por vía E.V.",
+      "c": "Comenzar con vancomicina + gentamicina + anfotericina b por vía E.V.",
+      "d": "Retirar el catéter"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-026",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Brucella / Nocardia / Actinomicosis",
+      "Trasplante y procuración"
+    ],
+    "enunciado": "Un varón de 35 años acude a revisión a los 6 meses de recibir un aloinjerto de un riñón cadavérico. Desde el trasplante, el enfermo toma azatioprina y prednisona. En la última semana se ha encontrado mal, con fiebre de 38,6°C anorexia y tos productiva de un esputo denso. En la Rx de tórax se observa un nódulo en el lóbulo inferior izquierdo (5 cm.) Con cavitación central. El examen del esputo muestra filamentos Gram (+) largos, curvos, ramificados y arrosariados. El tratamiento inicial más adecuado se basa en la administración de:",
+    "opciones": {
+      "a": "Ceftazidima",
+      "b": "Penicilina",
+      "c": "Sulfisoxazol",
+      "d": "Eritromicina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-027",
+    "materia": [
+      "infectologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "¿Cuál de las siguientes especies de microorganismos anaerobios es más frecuente en el desarrollo de infecciones abdominales?",
+    "opciones": {
+      "a": "Propionibacterium spp",
+      "b": "Clostridium spp.",
+      "c": "Bacteroides spp.",
+      "d": "Peptostreptococcus spp."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-028",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Varón de 28 años, previamente sano, que refiere diversos episodios de fiebre, mialgias y cefalea, seguidos de dolor abdominal y diarrea. Ha tenido hasta 10 deposiciones al día. La exploración física es anodina. En el estudio de laboratorio sólo se advierte una ligera leucocitosis y un aumento de la velocidad de sedimentación. La tinción de Wright de una muestra fecal revela la presencia de neutrófilos y la colonoscopia, una inflamación de la mucosa. En la biopsia de la región afectada se observa una infiltración de la mucosa por neutrófilos, monocitos y eosinófilos; daño epitelial con pérdida de la capa de moco, degeneración glandular y abscesos de las criptas. El enfermo indica que unos meses antes participó en un asado en la parroquia, en la que algunas personas contrajeron una enfermedad diarreica. Aunque este paciente podria sufrir una enfermedad inflamatoria intestinal, es probable que uno de los siguientes patógenos haya causado este cuadro:",
+    "opciones": {
+      "a": "Estafilococos aureus",
+      "b": "Salmonella.",
+      "c": "Campylobacter.",
+      "d": "Escherichia coli"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-029",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Orientan al diagnóstico de botulismo las siguientes manifestaciones clínicas, excepto:",
+    "opciones": {
+      "a": "Parálisis fláccida bilateral",
+      "b": "Inicio agudo",
+      "c": "Conservación del sensorio",
+      "d": "Fiebre"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-030",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Con respecto a salmonella typhi, ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "La infección por S. typhi ocurre prácticamente en verano",
+      "b": "Es la especie de salmonella patógena tanto para los hombres como para los animales",
+      "c": "El exantema es la manifestación clínica más tardía.",
+      "d": "La vía de contagio de salmonella en el hombre es la orofecal"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-031",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Con respecto al cólera, ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "De forma característica, el periodo de incubación del cólera es siempre superior a 50 días",
+      "b": "El cólera se transmite tanto por la ingestión de agua contaminada como por el contacto con animales infectados",
+      "c": "El cuadro clinico se presenta como un proceso diarreico grave, que alcanza su acmé a las 4 hs del inicio y se acompaña de vómitos y fiebre elevada",
+      "d": "El cólera tiene un tratamiento basado en la reposición adecuada de líquidos y electrólitos. La administración de tetraciclinas en monodosis puede disminuir la duración y el volumen de pérdida de líquidos"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-032",
+    "materia": [
+      "infectologia",
+      "obstetricia"
+    ],
+    "submateria": [
+      "HIV",
+      "Infecciones congénitas y perinatales"
+    ],
+    "enunciado": "Embarazada de 38 semanas se interna por tener contracciones constantes, como antecedente tiene diagnóstico de HIV en el primer control del embarazo iniciando tratamiento con darunavir/ritonavir tenofovir/emtricitabina. Tiene controles de CV y CD4 de la semana 36 siendo estos CD4 20cell/ml 3% CV 100 copias. Siendo ud el infectologo decide:",
+    "opciones": {
+      "a": "Contraindicar parto vaginal, indicar cesárea ya que tiene muy bajas defensas, componente AZT intraparto y profilaxis para el recién nacido.",
+      "b": "Contraindicar parto vaginal, indicar cesárea ya que tiene riesgo alto de transmisión, componente AZT intraparto y profilaxis para el recién nacido.",
+      "c": "No hay contraindicación infectológica para iniciar parto vaginal, no es necesaria la profilaxis intraparto ya que tiene menos de mil copias",
+      "d": "No hay contraindicación infectológica para iniciar parto vaginal, igual modo inicia componente AZT intraparto y profilaxis para el recién nacido."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-033",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Con respecto al tétanos, ¿Cuál de las siguientes opciones es incorrecta?",
+    "opciones": {
+      "a": "La dosis de refuerzo de la vacunación debe administrarse cada 10 años",
+      "b": "La antitoxina actúa tanto sobre la toxina circulante como sobre la que está fijada en el SNC",
+      "c": "El metronidazol y la penicilina son los antibióticos de elección",
+      "d": "La toxina responsable de las manifestaciones neurológicas de la infección es la tetanosplasmina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-034",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "TRS",
+      "Miocardiopatías"
+    ],
+    "enunciado": "Ante un paciente con difteria que presenta, en la segunda semana desde el inicio de la enfermedad, hipotensión, pulso débil y deterioro del estado general. ¿Qué diagnosticaría como más probable?",
+    "opciones": {
+      "a": "Miocarditis.",
+      "b": "Evolución normal de la difteria",
+      "c": "Coagulación intravascular diseminada",
+      "d": "Sepsis tardia"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-035",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Es característico del estudio del líquido cefalorraquideo en el botulismo:",
+    "opciones": {
+      "a": "El estudio de LCR es generalmente normal.",
+      "b": "Pleocitosis con predominio de polimorfonucleares",
+      "c": "Hiperglucorraquia",
+      "d": "Hiperproteinorraquia"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-036",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "TRS",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Para saber si un paciente con tos paroxística y respiración jadeante sufre una tos ferina, el médico debería solicitar:",
+    "opciones": {
+      "a": "Radiografía de tórax frente y perfil",
+      "b": "Recuento leucocitario con fórmula.",
+      "c": "Hemocultivo",
+      "d": "tomografia de cerebro"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-037",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "La listeria monocytogenes produce, más a menudo, una de estas infecciones, indique cuál:",
+    "opciones": {
+      "a": "Meningitis",
+      "b": "Peritonitis",
+      "c": "Conjuntivitis",
+      "d": "Endocarditis"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-038",
+    "materia": [
+      "infectologia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Brucella / Nocardia / Actinomicosis",
+      "Columna vertebral"
+    ],
+    "enunciado": "Un veterinario consultó por fiebre de 3 semanas de duración con dolor de espalda en los últimos días. Al final de la primera semana sufrió inflamación testicular que cedió con tmp/smx. La exploración física era normal salvo por dolor a la percusión en la columna dorso lumbar. Tenía una Hb de 12,2 g/dl, gtp 320 u/l y fosfatasa alcalina 230 u/l. La RN mostraba signos de espondilodiscitis en D12-L1. ¿Cuál debe ser la prueba diagnóstica siguiente en este caso?",
+    "opciones": {
+      "a": "Punción aspiración vertebral",
+      "b": "Biopsia para cultivo de la médula ósea",
+      "c": "Biopsia hepática",
+      "d": "Hemocultivos y aglutinaciones para Brucella"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-039",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "¿Cuál de los siguientes microorganismos favorece la formación de cálculos renales?",
+    "opciones": {
+      "a": "Citrobacter",
+      "b": "Proteus mirabilis",
+      "c": "Enterobacter-serratia",
+      "d": "Klebsiella pneumoniae"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-040",
+    "materia": [
+      "infectologia",
+      "reumatologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Artritis infecciosa"
+    ],
+    "enunciado": "Una mujer de 19 años acude al departamento de urgencias por tumefacción en la rodilla izquierda. La paciente refiere sensación febril, asi como mialgias y artralgias desde unos días antes. Más concretamente, indica dolor en las manos y muñecas desde hace varios días, aunque en ese momento sólo tiene molestias en la rodilla. En la exploración física destaca únicamente una lesión vesicopustulosa y una ligera tumefacción de la rodilla izquierda. Los antecedentes médicos personales carecen de interés. El procedimiento diagnóstico más oportuno realizar, consiste en:",
+    "opciones": {
+      "a": "Estudio del complemento sérico",
+      "b": "Hemocultivo",
+      "c": "Cultivo cervicouterino",
+      "d": "Cultivo sinovial"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-041",
+    "materia": [
+      "infectologia",
+      "ginecologia"
+    ],
+    "submateria": [
+      "ITS",
+      "EPI"
+    ],
+    "enunciado": "Concurre a la consulta una joven de 21 años residente en el centro de esta ciudad. Presenta fiebre, dolor pleuritico en el hipocondrio derecho y dolor hipogástrico. En la exploración ginecológica se observa una cervicitis mucopurulenta y dolor en la movilización del cuello uterino. Asimismo, se observa también un ligero dolor al palpar el hipocondrio derecho, el fondo uterino y los anexos. El número de leucocitos y la velocidad de sedimentación están elevados. ¿Cuál de los siguientes gérmenes puede causar este problema clínico?",
+    "opciones": {
+      "a": "Treponema pallidum + anaerobios",
+      "b": "Candida albicans",
+      "c": "Mycoplasma hominis o Ureaplasma urealitcum",
+      "d": "Neisseria gonorrheae"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-042",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Un adolescente de 16 años es trasladado a un hospital en estado de coma. Anteriormente gozaba de buena salud, pero ayer los familiares notaron una disminución del sensorio. El día de la admisión tuvo una convulsión aislada. El adolescente vive en una casa en la provincia, con sus padres, 2 hermanos menores, un perro y un gato. La evaluación inicial completa, realizada por el internista y un neurólogo, no muestra una causa obvia para la convulsión y el estado de coma. Los estudios incluyeron EEG, TC y RM cefálicas y punción lumbar; todos los resultados iniciales fueron normales. Al momento de la admisión, 36 hs atrás, se inició tratamiento con aciclovir y ceftriaxona por vía E.V. Durante la primera semana de hospitalización, el paciente recobró la conciencia y se recuperó por completo. Dos semanas después del alta hospitalaria, se informó que la PCR en LCR para el virus del herpes simple era negativa. ¿Cuál de los siguientes microorganismos fue la causa más probable de los hallazgos en este paciente?",
+    "opciones": {
+      "a": "Neisseria meningitidis",
+      "b": "Virus del herpes simple",
+      "c": "Listeria monocytogenes.",
+      "d": "Bartonella henselae."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-043",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál es el antibiótico de elección para el tratamiento de una diarrea por Shigella?",
+    "opciones": {
+      "a": "Eritromicina.",
+      "b": "Penicilina",
+      "c": "Cloxacilina",
+      "d": "Ampicilina"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-044",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "SNC y meningitis"
+    ],
+    "enunciado": "El antibiótico de elección en la profilaxis de contactos intimos en un paciente con meningitis es:",
+    "opciones": {
+      "a": "Cotrimoxazol",
+      "b": "Cefotaxima",
+      "c": "Rifampicina",
+      "d": "Ciprofloxacina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-045",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "En cuanto a la Pseudomonas aeruginosa, señale cuál de las siguientes opciones es falsa:",
+    "opciones": {
+      "a": "Nunca forma parte de la flora normal.",
+      "b": "Se multiplica en agua destilada",
+      "c": "Es resistente a temperaturas elevadas y a cloración intensa",
+      "d": "Presenta requerimientos nutritivos mínimos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-046",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV"
+    ],
+    "enunciado": "La gravedad de las infecciones por Haemophilus influenzae aumenta en todos estos estados, excepto:",
+    "opciones": {
+      "a": "Enfermedad granulomatosa crónica",
+      "b": "Agammaglobulinemia",
+      "c": "Alcoholismo",
+      "d": "Esplenectomía"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-047",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "Una mujer oriunda de CABA de 45 años que concurre a la guardia con fiebre y tos con expectoración. Al indagar sobre los síntomas. Ella refiere que desde hace 2 meses aproximadamente se despierta en la noche sudada y que tiene tos seca. Consulto en una oportunidad hace un mes y le dijeron que tenía una infección viral. Ud:",
+    "opciones": {
+      "a": "Laboratorio con recuento de plaquetas y TAC de torax abdomen y pelvis",
+      "b": "Laboratorio, radiografía de torax, esputo gérmenes comunes y seriado para BAAR.",
+      "c": "PPD, radiografía de torax y solicita que vuelva con los resultados.",
+      "d": "Le informa que seguramente es el mismo cuadro viral que tenía previamente."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-048",
+    "materia": [
+      "infectologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Oído"
+    ],
+    "enunciado": "Un varón de 60 años con diabetes mellitus insulinodependiente muestra otorrea purulenta izquierda desde hace una semana. De repente, aparecen fiebre, vértigo y se intensifica el dolor. El agente causal más probable es:",
+    "opciones": {
+      "a": "Staphylococcus aureus.",
+      "b": "Pseudomona aeruginosa",
+      "c": "Mucormicosis.",
+      "d": "Aspergillus."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-049",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "EPOC"
+    ],
+    "enunciado": "Consulta un hombre de 70 años, fumador importante, con EPOC moderada, que refiere malestar. Asimismo, describe tos, escalofríos, dolor pleurítico y febricula. En la Rx de tórax se observa un pequeño infiltrado denso en el lóbulo inferior derecho. En la tinción de Gram del esputo aparecen muchos cocos Gramnegativos, generalmente emparejados. El tratamiento más correcto consistiría en:",
+    "opciones": {
+      "a": "Tetraciclina",
+      "b": "Ciprofloxacina",
+      "c": "Trimetoprima sulfametoxazol",
+      "d": "Ampicilina sulbactam"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-050",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "TRS",
+      "Neuropatías"
+    ],
+    "enunciado": "La manifestación más común de neuritis diftérica es",
+    "opciones": {
+      "a": "Parálisis ocular",
+      "b": "ileo paralítico",
+      "c": "Parálisis diafragmática",
+      "d": "Parálisis del paladar blando"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },[
+  {
+    "id": "infecto-003-051",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Trasplante y procuración"
+    ],
+    "enunciado": "Un varón de 53 años tratado en la actualidad con azatioprina y prednisona y sometido 7 meses antes a un alotrasplante de ríñón, acude al hospital una semana después de experimentar fiebre, sudoración nocturna y anorexia. También refiere tos y dolor toráxicos. En la placa de tórax se observan infiltrados en ambos vértices con una aparente cavidad en el lóbulo superior izquierdo. La tinción de auramina-rodamina muestra microorganismos que parecen bacilos tuberculosos. La creatinina del enfermo es de 1,2 mg/dl. En este momento, el tratamiento de elección consiste en:",
+    "opciones": {
+      "a": "Rifampicina, pirazinamida, etambutol y claritromicina",
+      "b": "Isoniazida, rifampicina y pirazinamida",
+      "c": "Isoniazida, rifampicina y tmp-smx",
+      "d": "Isoniazida, rifampicina, pirazinamida y etambutol"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-052",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Virus respiratorios / Influenza",
+      "Neumonía"
+    ],
+    "enunciado": "La complicación respiratoria más frecuente de la gripe es",
+    "opciones": {
+      "a": "Bronquitis aguda",
+      "b": "Neumonía vírica primaria",
+      "c": "Otitis media",
+      "d": "Neumonía mixta, viral y bacteriana"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-053",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Un varón de 49 años informa reciente contacto sexual sin protección. Unos nueve días después presenta disuria y secreción uretral muy leve. ¿Cuál de los agentes infecciosos es la explicación más probable de sus síntomas?",
+    "opciones": {
+      "a": "Treponema pallidum",
+      "b": "Granuloma inguinal",
+      "c": "Chlamydia trachomatis",
+      "d": "Trichomonas vaginalis"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-054",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Infecciosas"
+    ],
+    "enunciado": "Uno de los siguientes postulados sobre la lepra, no es correcto:",
+    "opciones": {
+      "a": "La sarcoidosis no es un diagnóstico diferencial, pero sí el sarampión",
+      "b": "Puede dar positivo cualquiera de los siguientes análisis: ANA, AR o VDRL",
+      "c": "Uno de los tratamientos posibles es la dapsona, la clofazimina y la rifampicina",
+      "d": "La BCG protege contra la lepra parcialmente o es totalmente ineficaz"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-055",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Hongos"
+    ],
+    "enunciado": "En un paciente con fiebre sin foco aparente, que recibe alimentación parenteral y que en los días previos había sido tratado con imipenem, ¿Cuál es el microorganismo que debe ser obligatoriamente descartado?",
+    "opciones": {
+      "a": "Staphylococcus epidermidis",
+      "b": "Enterococos faecalis",
+      "c": "Candida albicans",
+      "d": "Staphylococcus aureus"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-056",
+    "materia": [
+      "infectologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Virus varios",
+      "Linfomas"
+    ],
+    "enunciado": "La infección por el virus de Epstein-Barr se ha asociado a la producción de tumores, entre los que destacan todas las siguientes opciones, excepto:",
+    "opciones": {
+      "a": "Linfoma inmunoblástico",
+      "b": "Mieloma",
+      "c": "Linfoma nasal",
+      "d": "Carcinoma nasofaringeo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-057",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Virus varios"
+    ],
+    "enunciado": "Son complicaciones conocidas de la infección por el virus de Epstein-Barr todas las siguientes, excepto:",
+    "opciones": {
+      "a": "Obstrucción respiratoria",
+      "b": "Trombocitosis",
+      "c": "Hemiplejía aguda o psicosis",
+      "d": "Anemia hemolítica"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-058",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Infecciosas"
+    ],
+    "enunciado": "Una estudiante de enfermería de 19 años se presenta con dolor en el extremo del dedo índice de la mano derecha. Inicialmente, el área presentaba prurito intenso y aspecto eritematoso. La joven ha trabajado en una unidad de terapia intensiva con pacientes de trasplante renal. Niega factores de riesgo para infección por HIV. En el examen físico, la paciente presenta buen estado de salud con signos vitales normales. El dedo indice tiene varias lesiones papulovesiculares pequeñas con eritema circundante. Se observa una tenue línea linfangítica en el antebrazo y se palpan ganglios linfáticos epitrocleares y axilares. ¿Cuál de los siguientes microorganismos tiene mayor probabilidad de causar esta infección?",
+    "opciones": {
+      "a": "Staphilococcus epidermidis",
+      "b": "Streptococcus pyogenes (grupo A)",
+      "c": "Herpetoviridae",
+      "d": "Staphylococcus aureus."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-059",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Un estudiante de medicina examina a un niño de 10 años que es llevado a una clínica de oncología pediátrica sin turno previo, debido a que la hermana menor del niño contrajo varicela. El niño se encuentra en la etapa de remisión de una leucemia linfoblástica aguda y nunca ha tenido varicela. La madre tiene un embarazo de 6 meses, pero cree que tuvo varicela en la infancia. El estudiante de medicina no cree haber tenido varicela y tiene programado continuar trabajando en la clínica de oncología pediátrica durante las próximas 4 semanas. ¿Cuál de las siguientes opciones deberá aconsejar para el estudiante de medicina, el niño y/o la madre?",
+    "opciones": {
+      "a": "La madre deberá recibir profilaxis con famciclovir o valaciclovir en este momento.",
+      "b": "En el niño se deberá administrar inmunoglobulina contra varicela zoster. Al estudiante se lo vacuna si tienen serología negativa.",
+      "c": "El estudiante de medicina deberá recibir tratamiento profiláctico con famciclovir o valaciclovir, pero no deberá ser inmunizado en este momento.",
+      "d": "El estudiante de medicina deberá ser evaluado para detectar anticuerpo contra VVZ mediante una prueba sensible y ser inmunizado si es seronegativo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-060",
+    "materia": [
+      "infectologia",
+      "oftalmologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Retina"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la afección más frecuente que el citomegalovirus provoca en la población infectada por el HIV?",
+    "opciones": {
+      "a": "Meningoencefalitis",
+      "b": "Hepatitis",
+      "c": "Neumonitis",
+      "d": "Retinitis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-061",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Neumonía"
+    ],
+    "enunciado": "Un varón homosexual de 38 años, portador de HIV, presenta fiebre y taquipnea desde una semana antes. En la Rx de tórax se observan infiltrados alveolares bilaterales y la gasometría muestra una paO2 de 55 mm Hg, respirando aire ambiente. La muestra del lavado broncoalveolar se tiñe con metamina plata. ¿Cuál de las afirmaciones siguientes es correcta sobre este caso?",
+    "opciones": {
+      "a": "Hay que administrar solamente trimetoprima-sulfametoxazol + GCT, eventualmente tratamiento para gérmenes comunes.",
+      "b": "Hay que practicar una biopsia transbronquial para confirmar el diagnóstico",
+      "c": "Los corticoides están contraindicados por el riesgo de que aparezcan otras infecciones oportunistas en el sarcoma de Kaposi",
+      "d": "El tratamiento con claritromicina E.V. Resultaría idóneo si el enfermo presentara alergia a las sulfamidas"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-062",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tuberculosis"
+    ],
+    "enunciado": "¿Cuál de los siguientes contactos con un paciente infectado de tuberculosis tiene más posibilidades de desarrollar la enfermedad?",
+    "opciones": {
+      "a": "El compañero de trabajo en una oficina pequeña de un paciente con tuberculosis laringea.",
+      "b": "La pareja HIV-negativa de un paciente infectado con HIV que tiene tuberculosis pulmonar.",
+      "c": "El progenitor de un niño pequeño lactante con tuberculosis renal.",
+      "d": "El niño de un padre con tuberculosis pulmonar con frotis negativo y cultivo positivo."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-063",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Virus respiratorios / Influenza",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "Entre las personas que han de recibir la vacuna de la gripe por ser pacientes de riesgo elevado se encuentran los siguientes, excepto:",
+    "opciones": {
+      "a": "Médicos, y personal sanitario destinado a cuidados hospitalarios y ambulatorios de pacientes.",
+      "b": "Infectados por el HIV",
+      "c": "Diabéticos",
+      "d": "Residentes en centros geriátricos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-064",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Virus varios"
+    ],
+    "enunciado": "Una mujer de 23 años, previamente sana trabaja en un barrio de la provincia de bs. As. En el que se ha documentado la presencia de murciélagos con rabia. La mujer es mordida por un murciélago luego de estar arreglando el techo de su casa. En la exploración inicial se aprecia una herida limpia en la parte superior del antebrazo derecho. La paciente no recuerda haber recibido tratamiento de la rabia y refiere no haber sido vacunada de niña. El médico debería:",
+    "opciones": {
+      "a": "Limpiar la herida con una solución jabonosa, antibióticos y administrar el toxoide antitetánico.",
+      "b": "Limpiar la herida con solución jabonosa, administrar la vacuna de la rabia de células diploides humanas y vacuna contra el tétanos",
+      "c": "Limpiar la herida con solución de povidona yodada y andimistra vacuna antitetánica mas gammaglobulina antitetánica además de vacuna antirrabica también la inmunoglobulina humana contra la rabia.",
+      "d": "Limpiar la herida con solución de povidona yodada y administrar vacuna antirrábica junto con inmunoglobulina antirrábica."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-065",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "¿Cuál de las siguientes opciones sobre la tuberculosis en un paciente infectado con HIV es correcta?",
+    "opciones": {
+      "a": "Los pacientes infectados con HIV y con tuberculosis pulmonar por lo general se diagnostican con frotis de esputo positivo.",
+      "b": "La meningitis tuberculosa es más común en individuos infectados con HIV que en personas no infectadas con HIV.",
+      "c": "Una persona con un PPD positivo previo, que después adquiere HIV, no tiene más posibilidades de desarrollar tuberculosis activa que un individuo no infectado con HIV.",
+      "d": "La tuberculosis extrapulmonar es una manifestación rara de tuberculosis."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-066",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Hongos"
+    ],
+    "enunciado": "Concurre a guardia paciente sexo masculino de 22 años, refiere fiebre, anorexia y linfadenopatía difusa progresiva desde hace 2 semanas. La exploración física destaca la caquexia de este joven, que presenta varias úlceras linguales, así como hepatomegalia. En el análisis de laboratorio se aprecia pancitopenia, aumento de la fosfatasa alcalina e hiperfosfatemia. La Rx de tórax muestra un infiltrado difuso con patrón miliar. La biopsia lingual revela hifas con esporas de tamaño grande y pequeño. El diagnóstico más correcto es:",
+    "opciones": {
+      "a": "Blastomicosis",
+      "b": "Coccidioidomicosis",
+      "c": "Histoplasmosis",
+      "d": "Criptococosis"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-067",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Rickettsias / Bartonella / Coxiella / Leptospira"
+    ],
+    "enunciado": "Un adolescente de 17 años es admitido en la unidad de cuidados intensivos por presentar fiebre, ictericia, insuficiencia renal e insuficiencia respiratoria. Diez días antes fue parte de un grupo de servicio comunitario de su escuela que realizó limpieza de un callejón infestado de ratas. Dos de sus compañeros desarrollaron una enfermedad seudogripal con cefalea, fiebre, mialgias y náuseas que ha comenzado a resolverse. El paciente aquejó síntomas similares, más ictericia. En la exploración física se observó temperatura de 38.4°C, presión arterial de 95/65 mm Hg, FC de 110 lpm, FR de 25 RPM y saturación de oxigeno de 92% mientras el paciente recibía oxígeno al 100% con mascarilla. La ictericia es notoria al igual que la sufusión conjuntival bilateral. Una radiografía torácica muestra infiltrados difusos bilaterales. Los estudios de laboratorio indican valores de creatinina de 2.5 mg/dl, bilirrubina total de 12.3 mg/dl y cifras normales de aminotransferasa de aspartato (AST), aminotransferasa de alanina (alt) Y tiempo de protrombina. ¿Cuál de los siguientes antibióticos debería incluirse en su tratamiento?",
+    "opciones": {
+      "a": "Cefepima",
+      "b": "Penicilina",
+      "c": "Ciprofloxacina + gentamicina",
+      "d": "Clindamicina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-068",
+    "materia": [
+      "infectologia",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Virus varios",
+      "Artritis infecciosa"
+    ],
+    "enunciado": "Una secretaria de 33 años presenta antecedentes de rigidez y edematización en las articulaciones pequeñas de las manos de 4 días de duración, que le causan dificultad para tipear. Anteriormente ha estado bien, sin ninguna enfermedad reciente. Sin embargo, el mes pasado, entre los compañeros de segundo grado de su hija hubo varios casos de una enfermedad febril leve, seguida por una erupción facial prominente, considerada la \"quinta enfermedad\" por uno de los pediatras de los niños. Su hija no desarrolló la erupción, aunque para ese momento estuvo algunos días con fiebre. El examen de la paciente es irrelevante, aunque la evaluación confirmó que el suero era positivo para factor reumatoideo. ¿Cuál de las siguientes es la prueba más apropiada para determinar si la artritis de la madre está relacionada con el brote de quinta enfermedad en la escuela de su hija?",
+    "opciones": {
+      "a": "Anticuerpo Ig M contra herpes virus humano 6 en suero",
+      "b": "Anticuerpo Ig m contra parvovirus B 19 en suero.",
+      "c": "Determinación de anticuerpo Ig M contra rubéola",
+      "d": "Determinación de ADN viral en plasma de la paciente."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-069",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "¿Cuál de los siguientes enunciados es cierto con respecto a la infección herpética del SNC?",
+    "opciones": {
+      "a": "Las alucinaciones visuales y olfatorias son especialmente evocadoras en la encefalitis herpética",
+      "b": "La recuperación del virus en el LCR, constituye el método de diagnóstico de certeza de las infecciones herpéticas del SNC",
+      "c": "La mayoría de los casos de encefalitis herpética se deben al VHS-2",
+      "d": "En la mayoría de los casos hay datos clínicos o serológicos de infección mucocutánea antes del comienzo de los síntomas"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-070",
+    "materia": [
+      "infectologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Hongos",
+      "Leucemias agudas"
+    ],
+    "enunciado": "Una mujer de 21 años con una leucemia linfoblástica aguda recidivante recibe tratamiento con una pauta de inducción basada en 5 fármacos (ciclofosfamida, daunorubicina, vincristina, prednisona y L-asparraginasa). Seis días después de iniciar este tratamiento, la paciente experimenta fiebre y se inicia tratamiento con ceftazidima por vía E.V. La fiebre desaparece, pero recidiva 5 días después, por lo que se le administra anfotericina b. Diez días más tarde, mientras la paciente continua con esteroides por vía oral, la fiebre persiste, se aprecia neutropenia y trombocitopenia, así como disnea. En la Rx de tórax se advierte un infiltrado pulmonar con una consolidación densa en pulmón izquierdo. El cultivo del esputo revela una flora bucal normal y algunas colonias de aspergillus. La conclusión más importante que extraería de este caso es:",
+    "opciones": {
+      "a": "La paciente padece con mayor probabilidad una aspergilosis pulmonar invasora, aunque debe confirmarse por estudios específicos.",
+      "b": "No se precisa la biopsia para el diagnóstico definitivo",
+      "c": "La paciente sufre, con toda probabilidad, una neumonitis vírica",
+      "d": "La paciente tiene una colonización por aspergillus, pero la etiología más probable del infiltrado es una toxicidad por medicamentos"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-071",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Neumonía"
+    ],
+    "enunciado": "Varón de 45 años con leucemia mieloblástica aguda en su segunda remisión. Presenta tos, disnea y fiebre 3 meses después de recibir un aloinjerto de médula ósea. El paciente se encontraba bien antes del trasplante. En aquel momento, la serologia mostraba anticuerpos contra citomegalovirus (CMV). El injerto prendió, pero el paciente precisó varios ciclos intermitentes de corticoides para combatir una enfermedad injerto contra huésped, manifestada por eritema difuso y diarrea. En la exploración el paciente se encuentra ligeramente afectado con temperatura de 38.5°C TA de 130/80 mm Hg. FC de 110 lpm y una FR de 30 rpm. El examen de la piel pone de relieve un exantema maculopapular con eritema, sobre todo en los brazos y las piernas. Se auscultan crepitantes difusos en ambos pulmones. La Rx de tórax muestra un infiltrado intersticial bilateral, especialmente en lóbulos inferiores. Se practica una broncoscopia, pero la tinción con azul de toluidina, el cultivo sistemático y las tinciones para hongos dan un resultado negativo. Dado el empeoramiento de la función respiratoria, se decide realizar una biopsia pulmonar abierta. El estudio del tejido pulmonar revela células con un tamaño varias veces mayor que las vecinas, que contienen una inclusión de 10 micrómetros situada en el centro del núcleo. Asimismo, se observa un infiltrado de células plasmáticas y linfocitos en el pulmón. El tratamiento más adecuado en este momento sería:",
+    "opciones": {
+      "a": "Foscarnet",
+      "b": "Ganciclovir más inmunoglobulina contra CMV",
+      "c": "Aciclovir más inmunoglobulina contra CMV",
+      "d": "Ganciclovir"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-072",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Infecciosas"
+    ],
+    "enunciado": "Un hombre que proviene del norte de la provincia de santa fe, que ha vivido en el sur de la misma provincia, tiene máculas hipopigmentadas y un aumento palpable del nervio cubital. Para establecer el diagnóstico de lepra será necesario:",
+    "opciones": {
+      "a": "Ninguna de estas, la lepra es un diagnóstico clínico",
+      "b": "Demostración de microorganismos ácido alcohol resistentes en el examen histológico de la piel",
+      "c": "Cultivo del material obtenido por biopsia de piel",
+      "d": "Una prueba positiva de lepromina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-073",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Hongos",
+      "Infecciosas"
+    ],
+    "enunciado": "Un jardinero de 62 años con leucemia linfocítica crónica sufre linfangitis y una lesión indolora y nodular en su muñeca. Seguidamente comienza con postración y neumonía cavitada en el lóbulo superior derecho; se aísla Sporothrix schenckii (esporotricosis). Este proceso debe tratarse con:",
+    "opciones": {
+      "a": "Anfotericina B",
+      "b": "Itraconazol",
+      "c": "Cloranfenicol",
+      "d": "Penicilina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-074",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus varios",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Las siguientes enfermedades presentan como signo dermatológico básico un exantema maculopapular, excepto:",
+    "opciones": {
+      "a": "Varicela",
+      "b": "Sarampión",
+      "c": "Escarlatina",
+      "d": "Rubéola"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-003-075",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Hongos"
+    ],
+    "enunciado": "Los siguientes antifúngicos tienen actividad frente a aspergillus, excepto:",
+    "opciones": {
+      "a": "Itraconazol",
+      "b": "Nistatina",
+      "c": "Anfotericina B",
+      "d": "Voriconazol"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-076",
+    "materia": [
+      "infectologia",
+      "obstetricia"
+    ],
+    "submateria": [
+      "HIV",
+      "Infecciones congénitas y perinatales"
+    ],
+    "enunciado": "Una mujer de 25 años embarazada de 12 semanas trae laboratorio control donde evidencia toxoplasmosis Ig G 1450 Ig M 0.9, Ac AgSHBV (+) AgSHBV (-) Ac antiCORE HBV (-) ELISA HIV (+). Usted:",
+    "opciones": {
+      "a": "Informa que hay que descartar una infección aguda por Toxoplasma gondii, tiene una hepatitis B curada y HIV positivo por lo que debe iniciar inmediatamente tratamiento antirretroviral.",
+      "b": "Informa que tiene una infección crónica por Toxoplasma gondii por lo que tiene riesgo de contagio al producto de la gestación, tiene anticuerpos protectivos para hepatitis B y tiene HIV por lo que es necesario una prueba confirmatoria.",
+      "c": "Informa que tiene una infección crónica por Toxoplasma gondii por lo que no tiene riesgo de contagio al producto de la gestación, tiene anticuerpos protectivos para hepatitis B y tiene una prueba con HIV (+) por lo que es necesario una nueva prueba confirmatoria.",
+      "d": "Informa que tiene una infección crónica por Toxoplasma gondii por lo cual no hay riesgos de transmisión al producto de la gestación, tiene hepatitis B aguda y prueba de HIV (+) por lo que es necesario una nueva prueba confirmatoria."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-077",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Miocardiopatías"
+    ],
+    "enunciado": "Una mujer de 50 años, emigrada desde la provincia de chaco hace aproximadamente diez años con residencia actual en Pcia bs. As. La paciente refiere disnea y la Rx de tórax muestra cardiomegalia a expensas de ambos ventrículos. En la ecocardiografía se observa un tamaño aumentado de los 2 ventriculos, paredes ventriculares finas y un aneurisma apical. La paciente niega antecedentes de etilismo, enfermedad tiroidea, factores de riesgo para aterosclerosis o antecedentes familiares de hemocromatosis. Considerando la etiología más probable de este caso, ¿Cuál de las afirmaciones siguientes es correcta?",
+    "opciones": {
+      "a": "Los corticoides resultan beneficiosos",
+      "b": "Dada la naturaleza progresiva y en última instancia, mortal, debería considerarse el trasplante cardíaco",
+      "c": "El agente causal se puede detectar en sangre periférica por medio de la tinción de Giemsa.",
+      "d": "Otras manifestaciones de la infección afectan al aparato digestivo"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-078",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "¿Cuál de las afirmaciones que siguen sobre la infección urinaria asociada con catéter uretral es correcta?",
+    "opciones": {
+      "a": "La mayoría de los enfermos con sonda vesical durante más de 2 semanas presentan bacteriuria",
+      "b": "La mayoría de las infecciones asociadas con la sonda o catéter es sintomática.",
+      "c": "La causa más común de estas infecciones son los microorganismos de la piel como Staphylococcus y Streptococcus",
+      "d": "Deben administrarse antibióticos por vía periuretral"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-079",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "TRS",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Después de un resfriado reciente grave, un varón de 18 años tiene síntomas de sinusitis, con rinorrea y congestión nasal. En la exploración se encontró náuseas, vómitos y cefalea acompañado con papiledema. El médico está convencido de que el paciente tiene un absceso encefálico en formación. ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "Indica punción lumbar de urgencia",
+      "b": "Por lo común antimicrobianos activos contra pseudomonas aeruginosa son parte del tratamiento",
+      "c": "Por lo común las imágenes de resonancia magnética no son útiles",
+      "d": "Se reconoce que el tratamiento antimicrobiano precoz aislado, sin intervención quirúrgica, puede curar la cerebritis, sin el posterior desarrollo de absceso encapsulado."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-080",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "En relación con la giardiasis ¿Cuál de los siguientes enunciados es falso?",
+    "opciones": {
+      "a": "La presencia de sangre, moco o ambos es frecuente.",
+      "b": "La Giardia lamblia es frecuente en áreas de condiciones higiénicas deficientes",
+      "c": "Se transmite por ingerir agua contaminada",
+      "d": "La mayoría de los infectados permanecen asintomáticos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-081",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál es el agente etiológico de la neumonía en la que se observa con frecuencia la presencia de cavitaciones?",
+    "opciones": {
+      "a": "Bacterias anaerobias",
+      "b": "Legionella pneumophila",
+      "c": "Streptococcus pneumoniae",
+      "d": "Mycoplasma pneumoniae"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-082",
+    "materia": [
+      "infectologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Insuficiencias medulares"
+    ],
+    "enunciado": "Un hombre de 45 años con síndrome mielodisplásico ingresa al hospital para ser sometido a trasplante de célula madre hematopoyética de su hermano. El paciente tiene antecedentes de desarrollo de erupción pruriginosa cuando se le administró un fármaco sulfa por sinusitis, hace alrededor de 10 años. Todas las opciones son posibles para la prevención de neumocistosis en este paciente, ¿excepto?",
+    "opciones": {
+      "a": "Dapsona, pentamidina y ácido fólico",
+      "b": "Trimetoprima-sulfametoxazol en dosis menores.",
+      "c": "Trimetoprima-sulfametoxazol a dosis habituales ya que la reacción carece de valor por haberla presentado en la infancia.",
+      "d": "Dapsona únicamente."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-083",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Con respecto al tratamiento de la neumonía adquirida en la comunidad. ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "El porcentaje de neumococos no susceptibles a la penicilina es insignificante y no debe considerarse para escoger el tratamiento inicial de una neumonía adquirida en la comunidad.",
+      "b": "Los pacientes que se han tratado con fluoroquinolona en los últimos tres meses son elegibles para recibir de nuevo tratamiento con fluoroquinolona para la neumonía adquirida de la comunidad.",
+      "c": "La mortalidad es más alta en pacientes con un neumococo no susceptible a la penicilina, que en los que tienen aislados de neumococos susceptibles",
+      "d": "Los pacientes que reciben antibióticos en las primeras 8 hs de llegar al servicio de urgencias tienen mortalidad más baja que aquellos que reciben antibióticos más de 8 hs después de su llegada"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-084",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál es el agente etiológico más frecuente de la neumonía bacteriana en pacientes con HIV y CD4<200?",
+    "opciones": {
+      "a": "Haemophilus influenzae",
+      "b": "Pneumocystis jirovecii",
+      "c": "Streptococcus pneumoniae",
+      "d": "Staphylococcus aureus"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-085",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "Un hombre de 65 años solicita asesoramiento sobre la elección de agentes profilácticos puesto que la próxima semana inicia un viaje de 6 semanas a la cuenca de las amazonas. No toma medicaciones, excepto un agente hipocolesterolémico te del grupo de las estatina. ¿Cuál de los siguientes fármacos se indica para la profilaxis por paludismo en este paciente?",
+    "opciones": {
+      "a": "Ciprofloxacina.",
+      "b": "Cloroquina.",
+      "c": "Quinina.",
+      "d": "Mefloquina"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-086",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál de las opciones siguientes sobre la infección por nematodos intestinales es correcta?",
+    "opciones": {
+      "a": "Las infecciones por uncinaria se deben a la deglución de los huevos",
+      "b": "La infección por strongiloides se acompaña de urticaria recurrente",
+      "c": "La infección por oxiuros se asocia a una anemia ferropénica",
+      "d": "Las larvas de áscaris penetran en el organismo por migración a través de los capilares de la piel"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-087",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "Un varón de 24 años tomó unas vacaciones exóticas \"alrededor del mundo\" en Europa, áfrica, india y china. Durante ellas tuvo encuentros sexuales frecuentes sin haber usado preservativo. Además, fue picado por mosquitos muchas veces. A su regreso observa fiebre y su médico encuentra linfadenopatía generalizada. ¿Cuál de los siguientes es la causa menos probable de esos sintomas?",
+    "opciones": {
+      "a": "Virus de inmunodeficiencia humana.",
+      "b": "Sarampión.",
+      "c": "Sífilis secundaria",
+      "d": "Mononucleosis infecciosa."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-088",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Neumonía"
+    ],
+    "enunciado": "Un hombre de 68 años es llevado al departamento de emergencias por su esposa debido a un aumento de la tos y la confusión. La tos usual del paciente ha aumentado durante los últimos 3 días y está asociada con un aumento en la producción de esputo y disnea. Tiene antecedentes de tabaquismo equivalentes a 30 cigarrillos por día durante 50 años. Su esposa notó confusión en su marido por primera vez esta mañana. En el examen físico, el paciente está somnoliento. El cuello no se mueve fácilmente con la flexión pasiva. El examen neurológico no presenta signos focales. No puede obtenerse una muestra de esputo. La Rx de tórax muestra un infiltrado lobar. La punción lumbar con examen de LCR revela pleocitosis polimorfonuclear con bajo nivel de glucosa, elevado nivel de proteínas y coloración de Gram negativa. Se han solicitado hemocultivos. ¿Cuál de los siguientes regimenes antibióticos deberá ser iniciado inmediatamente?",
+    "opciones": {
+      "a": "Trimetoprima-sulfametoxazol.",
+      "b": "Vancomicina.",
+      "c": "Ceftriaxona.",
+      "d": "Ampicilina Ceftriaxona y vancomicina"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-089",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "Fibrosis quística"
+    ],
+    "enunciado": "Todas las afirmaciones que siguen sobre la predisposición a las infecciones parasitarias son ciertas, excepto",
+    "opciones": {
+      "a": "Los enfermos infectados por el virus linfotropo de células T humanas de tipo I tienen más tendencia a la infección por estrongiloides",
+      "b": "La disminución del número de linfocitos de CD4+ predispone a la criptosporidiasis",
+      "c": "Los pacientes con mieloma múltiple pueden sufrir giardiasis",
+      "d": "Los enfermos con fibrosis quística corren un riesgo muy superior de toxoplasmosis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-090",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "Una mujer de 35 años acude con mialgias y tumefacción, sobre todo en el bíceps y cuello, varias semanas después de comer en una fiesta de campo en la provincia de buenos aires carne de vaca y de cerdo de cría local. En la exploración física se observa edema periorbitario. El estudio de laboratorio revela eosinofilia, aumento de la Ig E sérica y también de la creatinfosfoquinasa. El diagnóstico más probable es",
+    "opciones": {
+      "a": "Tenia solium (del cerdo: cisticerco)",
+      "b": "Echinococcus granulosus",
+      "c": "Trichinella spiralis",
+      "d": "Larva migrans (infección por toxocara)"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-091",
+    "materia": [
+      "infectologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Faringe"
+    ],
+    "enunciado": "Un varón de 41 años con antecedente de pérdida de peso y leucoplasia oral vellosa refiere que una prueba sanguínea para HIV resultó positiva. Tiene 20 células CD4 y su carga viral es de 58.000 copias/ml por reacción en cadena de polimerasa (PCR) Moderadamente alta. La cutirreacción para derivado de proteína purificada (PPD o reacción de Mantoux) De tuberculosis es negativa, y el paciente ya había recibido vacuna contra neumococos. ¿Cuál sería el siguiente paso?",
+    "opciones": {
+      "a": "Comenzar con zidovudina a dosis estándar y determinar el número de CD4 y edición de carga viral en 6 semanas",
+      "b": "Esperar hasta que el paciente presente una infección oportunista más grave antes de iniciar tratamiento antirretroviral",
+      "c": "Iniciar tratamiento con fluconazol para prevenir candidiasis y de rifabutina para impedir la infección por mycobacterium avium-intracellulare (MAI)",
+      "d": "Iniciar un régimen combinado con 3 agentes activos como tenofovir, lamivudina y efavirenz."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-092",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Hígado"
+    ],
+    "enunciado": "Una mujer del sur de la provincia de Neuquén de 65 años presentó epigastralgia durante una visita a sus hijos, que viven en buenos aires. La paciente acude al médico de familia, quien aprecia una ictericia escleral, así como una masa en el hipocondrio derecho. La TC revela un quiste multilobulado de 10 cm con calcificación mural que comprime el conducto colédoco. ¿Cuál de las afirmaciones que siguen es correcta en este caso?",
+    "opciones": {
+      "a": "Está indicado el tratamiento con el producto anti Amebiano cloroquina",
+      "b": "La infección probablemente se transmitió por la exposición a perros infectados.",
+      "c": "El parásito adulto reside en el intestino de la paciente",
+      "d": "La cirugía está contraindicada por el riesgo de anafilaxia debida a la diseminación del material infeccioso"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-093",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Hígado"
+    ],
+    "enunciado": "¿Cuál de las pruebas siguientes resulta menos sensible para diagnosticar el parásito correspondiente?",
+    "opciones": {
+      "a": "Aspiración del absceso hepático, para diagnosticar entamoeba histolytica",
+      "b": "Técnica del papel celofán colocado sobre la región perianal, para detectar la tenia bovina",
+      "c": "Estudio del sedimento de orina, para detectar schistosoma haematobium",
+      "d": "Tinción con plata del esputo inducido, para detectar Pneumocystis jiroveci"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-094",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Un hombre de 78 años presenta antecedentes de fiebre y tos que produce esputo espeso de 4 días de duración. Nunca ha fumado. La claritromicina, administrada durante los últimos 2 días, no ha sido efectiva. Se informa que un hemocultivo en una muestra tomada en el consultorio desarrolla cocos Gram positivos en pares. La Rx de tórax muestra un infiltrado en el lóbulo inferior derecho. El paciente no puede producir esputo para el examen. ¿Cuál de los siguientes antibióticos, administrados por vía E.V., constituye el tratamiento inicial más apropiado?",
+    "opciones": {
+      "a": "Vancomicina.",
+      "b": "Ceftazidima.",
+      "c": "Azitromicina.",
+      "d": "Trimetoprima - sulfametoxazol."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-095",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un paciente de 37 años homosexual presenta antecedente de diarrea crónica con un test de van de Kammer con 10 g de grasa en 24 horas y test de absorción alterados ¿Cuál de los siguientes agentes patógenos le parece más probablemente el agente causal?",
+    "opciones": {
+      "a": "Enterovirus vermiculares",
+      "b": "Giardia lamblia",
+      "c": "Cryptococcus neoformans.",
+      "d": "Entamoeba histolytica."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-096",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Un diplomático egipcio acude a su de medicina del viajero consultando con dolor en el flanco izquierdo. En la ecografía se aprecia aumento de tamaño del uréter izquierdo hasta la vejiga. La cistoscopia muestra una masa que se extiende desde el uréter izquierdo hasta la vejiga. Se detectan huevos de parásitos (150 por 50 mm.) En la orina en la biopsia de una masa ureteral. ¿Cuál de estas afirmaciones es correcta?",
+    "opciones": {
+      "a": "Si no se aplica tratamiento, es probable que ocurra una insuficiencia renal",
+      "b": "Esta lesión no revierte con la quimioterapia",
+      "c": "Si no se aplica tratamiento, aumenta el riesgo que ocurra un carcinoma de células de la transición de vejiga",
+      "d": "Esté enfermo padece una esquistosomiasis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-097",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Hígado"
+    ],
+    "enunciado": "Las indicaciones de la punción aspirativa hepática en el absceso amebiano son todas las siguientes excepto:",
+    "opciones": {
+      "a": "Tinidazol o albendazol",
+      "b": "Metronidazol o tinidazol",
+      "c": "Yodoquinol o paromomicina",
+      "d": "Ornidazol o mebendazol"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-098",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "EPOC"
+    ],
+    "enunciado": "Un hombre de 84 años con neumopatía obstructiva crónica es llevado al departamento de emergencias desde el geriátrico debido a fiebre y aumento en la dificultad respiratoria. En el examen físico, el paciente se encuentra confundido. La temperatura es de 9.4 C, la FC es de 110 Ipm, la FR es de 32 RPM y la TA es de 110/60 mm Hg. Las membranas mucosas están secas y el cuello es flexible. El examen pulmonar sólo revela ruidos respiratorios distantes. No se percibe soplo cardíaco. El examen abdominal es normal y no se observa edema en las extremidades inferiores ni aparente dolor a la presión en la pantorrilla. El Hto es del 48% y el recuento leucocitario es de 14.000/mm3, con 85% de neutrófilos polimorfonucleares, 5% de formas en banda, 7% de linfocitos y 3% de monocitos. La saturación de oxígeno es del 85% por oximetría de pulso. La Rx de tórax muestra cambios de enfisema e infiltrados en el lóbulo inferior derecho y en el lóbulo medio derecho. El paciente no puede producir esputo. Es hospitalizado. ¿Cuál de los siguientes antibióticos intravenosos es el más apropiado?",
+    "opciones": {
+      "a": "Azitromicina.",
+      "b": "Norfloxacina.",
+      "c": "Ciprofloxacina.",
+      "d": "Piperacilina-Tazobactam."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-099",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Antibacterianos"
+    ],
+    "enunciado": "¿Cuál de los siguientes fármacos endoluminales, no sistémicos, sirve para tratar una amebiasis?",
+    "opciones": {
+      "a": "Tinidazol o albendazol",
+      "b": "Yodoquinol o paromomicina",
+      "c": "Metronidazol o tinidazol",
+      "d": "Ornidazol o mebendazol"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-100",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Miocardiopatías"
+    ],
+    "enunciado": "En relación con la fase aguda de la enfermedad de Chagas, señale la respuesta incorrecta:",
+    "opciones": {
+      "a": "Puede aparecer miocarditis, con aumento del tamaño cardíaco",
+      "b": "La temperatura axilar permanece constante.",
+      "c": "En la mayoría de los pacientes, las manifestaciones clínicas se resuelven espontáneamente en 4 a 16 semanas.",
+      "d": "Los casos agudos ocurren, en general, en niños"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
+
