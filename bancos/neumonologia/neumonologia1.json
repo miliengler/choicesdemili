@@ -1147,7 +1147,6 @@
     "anio": null,
     "oficial": false
   },
-
   {
     "id": "neumo-001-051",
     "materia": [
@@ -1624,7 +1623,7 @@
       "HIV",
       "Neumonía"
     ],
-    "enunciado": "Un paciente de 45 años consulta a la guardia por fiebre y disnea progresiva CF II-III de tres semanas de evolución, agregando tos seca. Tiene diagnóstico de HIV positivo hace 2 años sin tratamiento. Al examen físico, satura 90% al 0,21, afebril y presenta crepitantes escasos en campo medio bilaterales. Se realiza laboratorio que informa: Hto 42%, GB 2500/mm3 LDH 1200 UI/I y EAB: pH 7.45 pC02 32 mmHg p02 67 mmHg. La radiografía de tórax muestra un infiltrado intersticial perihiliar bilateral. ¿Cuál es el tratamiento más adecuado?",
+    "enunciado": "Un paciente de 45 años consulta a la guardia por fiebre y disnea progresiva CF II-III de tres semanas de evolución, agregando tos seca. Tiene diagnóstico de HIV positivo hace 2 años sin tratamiento. Al examen físico, satura 90% al 0,21, afebril y presenta crepitantes escasos en campo medio bilaterales. Se realiza laboratorio que informa: Hto 42%, GB 2500/mm3 LDH 1200 UI/I y EAB: pH 7.45 pC02 32 mmHg pO2 67 mmHg. La radiografía de tórax muestra un infiltrado intersticial perihiliar bilateral. ¿Cuál es el tratamiento más adecuado?",
     "opciones": {
       "a": "Levofloxacina",
       "b": "Trimetroprima sulfametoxazol.",
@@ -1734,7 +1733,6 @@
     "anio": null,
     "oficial": false
   },
-  
   {
     "id": "neumo-001-076",
     "materia": [
@@ -1773,8 +1771,10 @@
       "d": "Hay indicación de realizar una biopsia pleural"
     },
     "correcta": "a",
-    [span_0](start_span)"explicacion": "[span_0](end_span)",
-    "imagen": [],
+    "explicacion": "Según los criterios de Light, una relación LDH pleura/suero menor a 0.6 indica la presencia de un trasudado.",
+    "imagen": [
+      "Image of criterios de light derrame pleural"
+    ],
     "examen": null,
     "anio": null,
     "oficial": false
@@ -1819,7 +1819,7 @@
       "d": "Pericarditis"
     },
     "correcta": "d",
-    [span_1](start_span)"explicacion": "[span_1](end_span)",
+    "explicacion": "Los corticoides en tuberculosis han demostrado beneficio en la reducción de mortalidad y complicaciones en la TBC meníngea y la TBC pericárdica.",
     "imagen": [],
     "examen": null,
     "anio": null,
@@ -2172,8 +2172,7 @@
   {
     "id": "neumo-001-095",
     "materia": [
-      "neumonologia",
-      "infectologia"
+      "neumonologia"
     ],
     "submateria": [
       "EPOC",
@@ -2314,4 +2313,3 @@
     "oficial": false
   }
 ]
-
