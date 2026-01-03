@@ -1733,5 +1733,585 @@
     "examen": null,
     "anio": null,
     "oficial": false
+  },
+  
+  {
+    "id": "neumo-001-076",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Según la GUÍA DE PRÁCTICA CLÍNICA NACIONAL sobre la EPOC el salbutamol se usa:",
+    "opciones": {
+      "a": "En Aerosol 2 inhalaciones a 4 inhalaciones c/24 hs",
+      "b": "En Aerosol 4 inhalaciones a 8 inhalaciones c/6 hs",
+      "c": "En Aerosol 2 inhalaciones cada 6 hs",
+      "d": "En Aerosol 2 inhalaciones a 4 inhalaciones c/12 hs"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-077",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "En una toracocentesis se obtiene un líquido de con pH 7,40, concentración de glucosa 58 mg/dl, relación LDH pleura/LDH suero es de 0,3 y una celularidad del 75% de linfocitos. Señale la afirmación correcta",
+    "opciones": {
+      "a": "Es compatible con un trasudado",
+      "b": "Es un exudado, probablemente tuberculoso",
+      "c": "Es sospechoso de un síndrome linfoproliferativo",
+      "d": "Hay indicación de realizar una biopsia pleural"
+    },
+    "correcta": "a",
+    [span_0](start_span)"explicacion": "[span_0](end_span)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-078",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Ventilación y ventilación mecánica"
+    ],
+    "enunciado": "Un hombre de 43 años consulta porque se queda dormido en su trabajo sobre la computadora. Él se acuesta cerca de las 11 pm y duerme hasta las 6 am. No sabe si ronca, no tiene historia de obstrucción de la vía aérea. No siente que su sueño sea reparador. Inicia las mañanas con dolor de cabeza y toma varias tazas de café para no quedarse dormido en el trabajo. No toma medicamentos y bebe alcohol por la tarde eventualmente. En el examen físico: mide 1,76 mts para un peso de 81 kg. Su cuello mide 45 cm de diámetro, la laringe cruje normalmente a la movilización. La presión arterial es de 135/70 mm Hg, su paladar está bajo y la úvula elongada. El corazón y el tórax no tienen anormalidades. ¿Cuál de los siguientes factores de riesgo es el más predictivo de la apnea de sueño en este paciente?",
+    "opciones": {
+      "a": "Beber alcohol por la tarde",
+      "b": "Excesivo tiempo de sueño",
+      "c": "Diámetro del cuello",
+      "d": "Cefaleas matutinas"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-079",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Tuberculosis"
+    ],
+    "enunciado": "Según la guía práctica \"tratamiento de la tuberculosis\" ¿Cuál de las siguientes situaciones requiere el agregado de prednisona como adyuvante en el tratamiento de la tuberculosis?",
+    "opciones": {
+      "a": "TBC pulmonar con ausencia de respuesta al tratamiento",
+      "b": "Diabetes mellitus",
+      "c": "HIV/SIDA",
+      "d": "Pericarditis"
+    },
+    "correcta": "d",
+    [span_1](start_span)"explicacion": "[span_1](end_span)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-080",
+    "materia": [
+      "neumonologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales",
+      "General"
+    ],
+    "enunciado": "Una mujer de 34 años de edad acude para que se le valore un cuadro de tos y disnea de esfuerzo que se ha agravado en los últimos tres meses. Comenzó a trabajar en una tienda de mascotas seis meses antes, aproximadamente. Sus tares incluyen la limpieza de la jaula de reptiles y de aves. Tres meses antes la paciente no tenía limitaciones de tolerancia al ejercicio, pero hoy en día refiere que le falta el aire al subir dos tramos de escaleras. La saturación de oxígeno es de 95% en aire ambiente, en reposo y desatura en 91% al caminar. La temperatura corporal es de 37,8°C. Una TC de alta resolución, muestra infiltrados de vidrio esmerilado difusos en lóbulos inferiores, y nódulos centrolobulillares. Una biopsia transbronquial muestra un infiltrado alveolar intersticial de células plasmáticas, linfocitos y uno que otro eosinófilo. También hay varios granulomas no caseificantes sueltos. Todos los cultivos son negativos para bacterias, virus y hongos patógenos. ¿Cuál sería el diagnóstico más probable?",
+    "opciones": {
+      "a": "Aspergilosis",
+      "b": "Neumonitis por hipersensibilidad",
+      "c": "Sarcoidosis",
+      "d": "Neumonitis intersticial no especifica relacionada con vasculopatía del tejido conjuntivo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-081",
+    "materia": [
+      "neumonologia",
+      "psiquiatria"
+    ],
+    "submateria": [
+      "EPOC",
+      "Trastornos relacionados con sustancias"
+    ],
+    "enunciado": "Un paciente de 36 años lo consulta porque quiere dejar de fumar. Fuma 20 cigarrillos día desde los 16 años, nunca intentó dejar de fumar. Quiere dejar de fumar en los próximos 6 meses. No tiene antecedentes cardiológicos, y no toma ninguna medicación de forma habitual. Usted le realiza la prueba de Richmond para evaluar motivación y el cuestionario de Fagerström para evaluar dependencia, arrojándole como resultado 4 y 7 puntos respectivamente. ¿qué tratamiento sería el más adecuado para este paciente?",
+    "opciones": {
+      "a": "Brindar intervención mínima e iniciar chicles de nicotina de 2 mg, disminuyendo el número de cigarrillos diarios a la mitad",
+      "b": "Brindar intervención minima y volver a citar con nuevo turno para continuar trabajando la motivación a dejar de fumar",
+      "c": "Brindar intervención mínima e iniciar chicles de nicotina de 4 mg",
+      "d": "Iniciar tratamiento con Bupropión y citar en una semana"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-082",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Oncología"
+    ],
+    "enunciado": "Una mujer de 68 años se presenta en el servicio de urgencias con disnea de dos semanas de evolución progresiva. Tiene tos seca y dolor pleurítico de tórax del lado derecho. No fiebre. Fuma una caja de cigarrillos al día desde los 18 años. Al examen físico se muestra disneica en reposo. Sus signos vitales son: PA: 138/86 mmHg; FR 92 Ipm; 37,1°C; FC 24 rpm y SatO2 de 94% a Temp. Ambiente. Hay sonido sordo a la percusión a la mitad del campo pulmonar derecho con disminución del frémito táctil. Los sonidos respiratorios están disminuidos sin egofonía. El examen por lo demás es normal. La radiografía de tórax muestra gran derrame pleural de flujo libre del lado derecho y también sugiere linfadenopatía del mediastino. El paciente es sometido a toracocentesis y se extraen 1500 ml de líquido de aspecto sanguinolento. Los resultados del líquido pleural son: pH 7,46; recuento de glóbulos rojos muy numerosos, hematocrito 3%, leucocitos 230/ul (85% de linfocitos, 10% neutrófilos, 5% células endoteliales), proteínas 4,6 gr/dL LDH 340 u/L y glucosa 35 mg/dL. Los valores correspondientes en suero son: proteínas, 6.87 gr/dL LDH, 360 u/L; y glucosa 115 mg/dL. Después de la toracocentesis se realiza TC de tórax que muestra derrame pleural moderado residual con colapso del lóbulo inferior derecho y nódulos linfáticos mediastínicos agrandados. ¿Cuál de las siguientes pruebas puede dar mejores resultados de la causa del derrame pleural?",
+    "opciones": {
+      "a": "Citología del líquido pleural",
+      "b": "Mediastinoscopía",
+      "c": "Cultivo de líquido pleural",
+      "d": "Biopsia toracoscópica de la pleural"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-083",
+    "materia": [
+      "neumonologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Cardiología básica"
+    ],
+    "enunciado": "¿Cuál de los enfermos siguientes con tromboembolismo pulmonar se beneficia más con el tratamiento con fármacos trombolíticos seguido de heparina y warfarina, en vez de solamente heparina seguida de warfarina?",
+    "opciones": {
+      "a": "Mujer de 25 años de edad con hipotensión causada por embolia pulmonar masiva",
+      "b": "Hombre de 40 años de edad con hemoptisis y dolor precordial",
+      "c": "Mujer de 56 años que desarrolla embolia pulmonar de 48 horas después de una cirugía por fractura de pelvis",
+      "d": "Hombre de 78 años de edad que desarrolla disnea súbita 2 semanas después de sufrir un acv"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-084",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Según las pautas de práctica clínica generalmente aceptadas, el oxígeno terapia crónica domiciliaria, está indicada en pacientes con Enfermedad Pulmonar Obstructiva Crónica (EPOC) Cuya presión parcial arterial de oxigeno (paO2) sea:",
+    "opciones": {
+      "a": "Entre 55 y 60 mmHg en situación clínica estable, pero con historia de agravamientos frecuentes más severos, por debajo de 55 mmHg",
+      "b": "Inferior a 55 mmHg en situación clínica estable.",
+      "c": "Inferior a 55 mmHg en situación clínica aguda",
+      "d": "Niguna es la correcta"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-085",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Una mujer de 25 años acude al hospital por exacerbación aguda de un asma de larga evolución. En la exploración se la nota ansiosa y taquipneica, emplea los músculos accesorios de la respiración y se auscultan estertores sibilantes difusos a la espiración. Según la GINA ¿Cuál de los siguientes sería el tratamiento inicial apropiado para esta mujer?",
+    "opciones": {
+      "a": "Agonistas β2 de acción rápida inhalados, 2 a 4 inhalaciones+ teofilina por vía oral.",
+      "b": "Agonistas β2 de acción rápida inhalados, 2 a 4 inhalaciones cada 20 minutos + mucoliticos",
+      "c": "Agonistas β2 de acción rápida inhalados, 2 a 4 inhalaciones cada 3-4 horas",
+      "d": "Agonistas β2 de acción rápida inhalados, 2 a 4 inhalaciones cada 20 minutos."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [
+      "img/neumo/neumo-001-085.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-086",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Para realizar detección de casos conforme a síntomas y riesgo. La espirometría sirve para diagnosticar obstrucción al flujo aéreo cuando la relación VEF1/CVF es menor de 0,70 pos broncodilatadores. Por lo tanto, los niveles de severidad de la obstrucción según VEF1 pos broncodilatadores son:",
+    "opciones": {
+      "a": "Severa: VEF1 menor al 20%",
+      "b": "Leves: VEF1 igual o mayor al 80%",
+      "c": "Leves: VEF1 igual o mayor al 50% y menor al 80%",
+      "d": "Moderado: VEF 1 menor al 50%"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-087",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "¿Cuál de las siguientes condiciones pudiera incrementar el Volumen Residual del pulmón?",
+    "opciones": {
+      "a": "Fibrosis pulmonar idiopática",
+      "b": "Neumonía organizacional criptógena",
+      "c": "Neumonía bacteriana.",
+      "d": "Enfisema"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-088",
+    "materia": [
+      "neumonologia",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Bronquiectasias",
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Un varón de 35 años es atendido en la clinica para evaluación de infertilidad. Nunca ha sido padre y después de 2 años de coito sin protección su esposa no ha logrado embarazarse. El análisis de esperma muestra un número normal de espermatozoides, pero son inmóviles. La historia médica pasada destaca por infecciones sino pulmonares recurrentes y recientemente se le dijo que tenía bronquiectasias. ¿Cuál de los siguientes aspectos muestra la radiografía de tórax?",
+    "opciones": {
+      "a": "Linfadenopatía bihiliar",
+      "b": "Hallazgos normales",
+      "c": "Situs inversus",
+      "d": "Infiltrado lobar superior bilateral"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-089",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un hombre de 70 años con antecedentes de EPOC grave y cor pulmonale crónico presenta una gasometría arterial con pH 7,45, paO2 57 mmHg, paCO2 35 mmHg y HCO3 25 mEq/L ¿cree que estaria indicado iniciar oxígeno terapia domiciliaria?",
+    "opciones": {
+      "a": "No, porque empeoraría la insuficiencia respiratoria hipercapnica que presenta.",
+      "b": "Sí, pero únicamente en las exacerbaciones.",
+      "c": "No, porque todavía la paO2 se mantiene por encima de 55 mmHg.",
+      "d": "Sí, porque aumentaría su esperanza de vida"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-090",
+    "materia": [
+      "neumonologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 70 años diagnosticado con EPOC de grado moderado, estable, con tratamiento correcto de su patología pulmonar, ingresa con fibrilación auricular rápida cuya reversión a ritmo sinusal no se consigue. La ecocardiografía muestra ausencia de hipertensión pulmonar y cavidades derechas normales. El hematocrito es de 45%. La paO2 es de 52 mmHg y la paCO2 de 45 mmHg. ¿Cuál es la conducta más correcta para su tratamiento?",
+    "opciones": {
+      "a": "Fármacos antiarrítmicos + oxigeno con terapia continua domiciliaria durante las horas de sueño.",
+      "b": "Fármacos antiarrítmicos + presión positiva nocturna",
+      "c": "Fármacos antiarritmicos exclusivamente",
+      "d": "Fármacos antiarrítmicos + oxigeno con terapia continua domiciliaria no inferior a doce horas al día."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-091",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neumonología"
+    ],
+    "enunciado": "Un joven de 23 años asciende al Aconcagua. No tiene problemas médicos ni toma medicamentos. Poco después de iniciar el ascenso desarrolla disnea grave. Al examen físico muestra crepitaciones inspiratorias bilaterales difusas. ¿Cuál de las siguientes es la etiología más probable?",
+    "opciones": {
+      "a": "Síndrome de sufrimiento respiratorio agudo",
+      "b": "Choque cardiógeno",
+      "c": "Neumonitis intersticial aguda",
+      "d": "Edema pulmonar de grandes altitudes."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-092",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "La enfermedad respiratoria prevenible y tratable caracterizada por una limitación al flujo aéreo persistente donde la obstrucción puede presentar algún grado de reversibilidad -pero nunca normalizarse-, asociada a una anormal respuesta inflamatoria de los pulmones a partículas nocivas y gases, principalmente derivados del humo de tabaco. La obstrucción se define por la relación VEF1/CVF menor al 70% y la gravedad por el porcentaje del VEF1 pos broncodilatador respecto del predicho: leve igual o mayor al 80% (GOLD 1); moderado: entre el 50 y el 79%, (GOLD 2); severa: entre 30 y 49% (GOLD 3); muy severa: menor al 30% (GOLD 4). se están refiriendo a",
+    "opciones": {
+      "a": "Enfermedad pulmonar restrictiva crónica",
+      "b": "Enfermedad Intersticial",
+      "c": "Enfermedad pulmonar obstructiva crónica",
+      "d": "Asma"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-093",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "A un paciente de 50 años, con diagnóstico de EPOC, en fase estable y que actualmente ha dejado el cigarrillo, se le realiza una espirometría que muestra que el volumen espiratorio máximo en el primer segundo (VEMS) es del 60% del valor teórico. Un hemograma revela un hematocrito de 58% la gasometría arterial muestra una paO2 de 75 mmHg ¿Cuál de las siguientes exploraciones complementarias está indicada en primer lugar en este paciente?",
+    "opciones": {
+      "a": "Prueba de provocación bronquial inespecifica con metacolina.",
+      "b": "Polisomnografia con registro de variables cardiorrespiratorias",
+      "c": "Determinación de la relación ventilación-perfusión pulmonares mediante técnica de eliminación de gases inertes múltiples.",
+      "d": "Cateterismo pulmonar con catéter de Swan-Ganz"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-094",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Según la GUÍA DE PRÁCTICA CLÍNICA NACIONAL sobre la EPOC los efectos adversos del Tiotropio o Glicopirronio son:",
+    "opciones": {
+      "a": "Diarrea, náuseas y vómitos",
+      "b": "Sequedad bucal, efectos gastrointestinales, visión borrosa y retención urinaria son poco frecuentes",
+      "c": "ITU, tenesmo, acides estomacal",
+      "d": "Urticaria, Alergia, Angioedema"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-095",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "Señale cuál es el germen que con mayor frecuencia causa infecciones bronquiales agudas bacterianas en pacientes con EPOC:",
+    "opciones": {
+      "a": "Chlamydia pneumoniae",
+      "b": "Klebsiella pneumoniae",
+      "c": "Pseudomona aeruginosa.",
+      "d": "Haemophilus influenzae"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-096",
+    "materia": [
+      "neumonologia",
+      "psiquiatria"
+    ],
+    "submateria": [
+      "EPOC",
+      "Trastornos relacionados con sustancias"
+    ],
+    "enunciado": "Según la GUÍA DE PRÁCTICA CLÍNICA NACIONAL sobre la EPOC se utiliza como estilo de atención para estimular el abandono y también durante todas las etapas del tratamiento a:",
+    "opciones": {
+      "a": "Modelo medico hegemónico",
+      "b": "La entrevista motivacional",
+      "c": "La entrevista paternalista",
+      "d": "La entrevista orientada a problemas"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-097",
+    "materia": [
+      "cirugiageneral",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "General"
+    ],
+    "enunciado": "Un paciente de 86 años, residente de un asilo, es llevado en ambulancia al servicio de urgencias. Se le encontró inconsciente, por lo que se llamó a urgencias. Su historia médica pasada destaca por demencia de Alzheimer y cáncer de próstata no tratado. Los socorristas descubrieron pulso débil, PA de 91/49 mmHg y FR de 120 Ipm. En la sala de urgencias su presión es de 88/51 mmHg y FR de 131 Ipm. Se encuentra quejumbroso y con torpeza mental, localiza el dolor y tiene las venas del cuello aplanadas. Se le coloca una línea E.V. periférica, se toman muestras para pruebas iniciales de laboratorio, y se obtiene un electrocardiograma y radiografía de tórax. Se llama al anestesiólogo al lado de la cama y se valoran las vías aéreas del paciente. ¿Cuál es el mejor paso inmediato en el manejo?",
+    "opciones": {
+      "a": "Infusión de solución salina hipertónica para incrementar la velocidad de llenado vascular",
+      "b": "Transfusión de paquete de eritrocitos hasta que la hemoglobina sea > 10g/dL",
+      "c": "Infusión de solución cristaloide isotónica por vía E.V. abierta amplia",
+      "d": "Infusión de solución coloidal rápida."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-098",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Tuberculosis"
+    ],
+    "enunciado": "Según la guía práctica \"tratamiento de la tuberculosis\" ¿Cuál de las siguientes opciones son efectos adversos de la isoniazida?",
+    "opciones": {
+      "a": "Intolerancia gástrica, hepatitis toxica, hipersensibilidad cutánea",
+      "b": "Excitación del SNC, alopecia, ototoxicidad.",
+      "c": "Coloración naranja de las secreciones, nefrotoxicidad.",
+      "d": "Hepatitis toxica, neuropatía periférica."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-099",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "Un hombre de 60 años se presenta a la consulta con disnea progresiva. No registra antecedentes patológicos, pero si hábito tabáquico. Al examen físico se encuentra ausencia de murmullo vesicular en los 2/3 superiores del pulmón izquierdo, con disminución de la sonoridad a la percusión y vibraciones vocales también disminuidas. La radiografía de tórax muestra desviación traqueal hacia la izquierda. ¿Cuál es su diagnóstico?",
+    "opciones": {
+      "a": "Neumotorax",
+      "b": "Derrame pleural.",
+      "c": "Obstrucción bronquial.",
+      "d": "Neumopatía bacteriana."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-001-100",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "La EPOC se define como una enfermedad respiratoria prevenible y tratable caracterizada por una",
+    "opciones": {
+      "a": "limitación al flujo aéreo reversible",
+      "b": "limitación al flujo aéreo intermitente",
+      "c": "limitación al flujo aéreo persistente",
+      "d": "limitación al flujo aéreo banal"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [
+      "img/neumo/neumo-001-100.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
   }
 ]
+
