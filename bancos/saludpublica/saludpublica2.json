@@ -1,1 +1,2240 @@
-[]
+[
+  {
+    "id": "saludpublica-002-001",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "La fuerza de una asociación puede medirse por el riesgo relativo que compara el riesgo absoluto de los sujetos con el factor en estudio (expuestos), con el riesgo absoluto de los sujetos sin el factor en estudio (no expuestos). Según la \"Guía de Principios de Epidemiología\" ¿Cómo se interpreta un Riesgo Relativo menor a 1?",
+    "opciones": {
+      "a": "Indica que puede ser un factor de riesgo o causal.",
+      "b": "Indica que el factor en estudio tiene más chance de causar daño que los otros factores",
+      "c": "Indica que el factor en estudio puede tener un efecto protector.",
+      "d": "Indica que la fuerza de asociación es nula."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-002",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "¿Cómo se denomina la relación de la incidencia en personas con el factor de riesgo con la incidencia de personas sin factor de riesgo?",
+    "opciones": {
+      "a": "Riesgo absoluto",
+      "b": "Riesgo binomial",
+      "c": "Riesgo relativo",
+      "d": "Riesgo promedio"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-003",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "Un ensayo clínico para determinar la eficacia de un fármaco para prevenir crisis asmáticas demostró que deben tratarse 12 pacientes para evitar un episodio grave. ¿Qué cálculo se utilizó para obtener este resultado?",
+    "opciones": {
+      "a": "La inversa de la reducción del riesgo absoluto",
+      "b": "El intervalo de confianza",
+      "c": "La reducción del riesgo relativo",
+      "d": "La reducción del riesgo absoluto"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-004",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "El objetivo de la estadística inferencial es permitir generalizaciones a partir de una muestra de la población correspondiente. Para ello se pueden utilizar las pruebas de hipótesis o las estimaciones. Para indicar la variabilidad que la estimación tendría en otras muestras se utilizan estimaciones de intervalos. ¿Cómo se denominan estos intervalos?",
+    "opciones": {
+      "a": "Intervalo de confianza",
+      "b": "Límite de confianza",
+      "c": "Intervalo de población",
+      "d": "Límite de intervalo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-005",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "¿Qué estamos calculando si para una enfermedad establecemos la relación de la incidencia en personas con un factor de riesgo sobre la incidencia en personas sin este factor de riesgo?",
+    "opciones": {
+      "a": "Riesgo absoluto",
+      "b": "Riesgo relativo",
+      "c": "Riesgo nominal",
+      "d": "Reducción de riesgo relativo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-006",
+    "materia": [
+      "aps",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Atención Primaria de la Salud",
+      "APS – Atención primaria de la salud"
+    ],
+    "enunciado": "¿Cuál es el punto en común respecto a las nuevas formas de definir la atención primaria orientada a la comunidad?",
+    "opciones": {
+      "a": "Utilización de la medicina basada en evidencias para la toma de decisiones.",
+      "b": "Utilización de los recursos existentes de los programas de salud",
+      "c": "Utilización de conocimientos clínicos y epidemiológicos para la elaboración de programas",
+      "d": "Utilización de saberes populares para readecuar las intervenciones"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-007",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "El diseño de preguntas clínicas específicas con el sistema PICO en Medicina Basada en la Evidencia implica incluir en la pregunta cuatro ítems. ¿Cuáles son?",
+    "opciones": {
+      "a": "Pregunta, intervención, comparación y outcome (resultados).",
+      "b": "Paciente, intervención, comparación y outcome (resultados).",
+      "c": "Paciente, intervención, ciencia y outcome (resultados).",
+      "d": "Placebo, intervención, comparación y outcome (resultados)."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-008",
+    "materia": [
+      "saludpublica",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia",
+      "Sistema de salud"
+    ],
+    "enunciado": "La Organización Mundial de la Salud (OMS) Define varios criterios para la selección de medicamentos a incluir en la lista de Medicamentos Esenciales. ¿Cuál de los siguientes es el correcto?",
+    "opciones": {
+      "a": "Sólo se deben seleccionar los medicamentos sobre los que existe información sobre su uso en ámbitos médicos si son citadas las fuentes.",
+      "b": "En el criterio de la correcta utilización y eficiencia comprobable por la Medicina Basada en la Evidencia (MBE).",
+      "c": "En la comparación de medicamentos que no son completamente iguales, la selección debe basarse en comparar el costo del tratamiento completo de ambos.",
+      "d": "Cada medicamento seleccionado debe estar disponible en una forma que permita asegurar que su calidad, incluida su biodisponibilidad, es adecuada; debe comprobarse su estabilidad en las condiciones de almacenamiento y uso previstas."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-009",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "¿Cuáles son las medidas de asociación que expresan la magnitud o fuerza de asociación entre un factor de exposición y una enfermedad?",
+    "opciones": {
+      "a": "El Riesgo Relativo y el Riesgo Atribuible",
+      "b": "El Riesgo Atribuible y la Fracción de Riesgo Atribuible",
+      "c": "El Odds Ratio y el Riesgo Atribuible",
+      "d": "El Riesgo Relativo y el Odds Ratio"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-010",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿En qué circunstancias es aplicable la Medicina Basada en la Evidencia (MBE)?",
+    "opciones": {
+      "a": "Sólo ante algunos casos clínicos.",
+      "b": "Sólo en entornos privilegiados y con muchos medios.",
+      "c": "Sólo en determinados ámbitos.",
+      "d": "En cualquier situación de la práctica clínica diaria."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-011",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "En indicadores de riesgo ¿Qué cuantifica el riesgo absoluto?",
+    "opciones": {
+      "a": "La parte del riesgo que puede ser atribuido al factor de referencia.",
+      "b": "El impacto en la salud de la población si un factor se suprimiera.",
+      "c": "La incidencia en dos grupos de población que difieren en la exposición a un factor.",
+      "d": "La probabilidad de que el daño ocurra en la población sin asociarlo a factor alguno."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-012",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Qué entiende por intervalo de confianza?",
+    "opciones": {
+      "a": "Que la estimación del parámetro correspondiente a una variable aleatoria tomará un valor del intervalo",
+      "b": "Un intervalo de valores dentro del que se pretende que esté el parámetro de interés con cierto grado de confianza",
+      "c": "Un intervalo de valores dentro del que se halla una proporción de los valores de la población",
+      "d": "Un intervalo de valores dentro del que se halla una proporción de los valores de la muestra"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-013",
+    "materia": [
+      "medicinalegal",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Sistema de salud",
+      "General"
+    ],
+    "enunciado": "Un hombre de 52 años concurre a la consulta para solicitar un PSA y un tacto rectal para rastreo de cáncer de próstata. El paciente considera muy importante la realización de estos estudios porque su hermano padece la enfermedad. El médico brinda la información necesaria y luego aconseja al paciente tomar la decisión de someterse o no a los estudios en base a la información suministrada. ¿A qué modelo de relación médico paciente corresponde esta consulta?",
+    "opciones": {
+      "a": "Modelo deliberativo",
+      "b": "Modelo interpretativo",
+      "c": "Modelo informativo",
+      "d": "Modelo paternalista"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-014",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "Un ensayo clínico para determinar la eficacia de un fármaco para prevenir crisis asmáticas demostró que deben tratarse 12 pacientes para evitar un episodio grave. ¿Qué cálculo se utilizó para obtener este resultado?",
+    "opciones": {
+      "a": "La reducción del riesgo relativo",
+      "b": "La inversa de la reducción del riesgo absoluto",
+      "c": "El intervalo de confianza",
+      "d": "La reducción del riesgo absoluto"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-015",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cómo debe estar fundamentada la toma de decisiones en la práctica clínica según la Medicina Basada en la Evidencia (MBE)?",
+    "opciones": {
+      "a": "Debe fundamentarse únicamente en las preferencias del paciente",
+      "b": "No debe considerarse en absoluto el costo que suponen",
+      "c": "Resulta de la integración entre preferencias del paciente, criterio profesional fundamentado y opciones disponibles",
+      "d": "No valorará la experiencia clinica profesional, sólo las evidencias científicas derivadas de los ensayos clínicos"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-016",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Qué organismo elabora revisiones sistemáticas útiles para la toma de decisiones en Medicina Basada en la Evidencia?",
+    "opciones": {
+      "a": "NatGeo",
+      "b": "La Biblioteca Cochrane.",
+      "c": "Clínica Evidence Homeopatics.",
+      "d": "Infobae, C5N. TN. Crónica TV."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-017",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Cuál es el intervalo de confianza más utilizado en las pruebas de significancia estadística?",
+    "opciones": {
+      "a": "96%",
+      "b": "94%",
+      "c": "95%",
+      "d": "93%"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-018",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿En función de que parámetros se determina un intervalo de confianza?",
+    "opciones": {
+      "a": "N. Desvío estándar y variabilidad muestral",
+      "b": "Media, Zyn",
+      "c": "N, Z, y el nivel de confianza",
+      "d": "Desvío estándar, n y el nivel de confianza"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-019",
+    "materia": [
+      "saludpublica",
+      "aps"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "el término Promoción de la Salud resurgió en las dos últimas décadas en países industrializados, particularmente en Canadá. ¿Cuál fue el cuestionamiento que constituyó uno de los orígenes importante de ese resurgimiento?",
+    "opciones": {
+      "a": "El del poder médico hegemónico.",
+      "b": "El de la eficacia de la asistencia médica curativa de alta tecnología.",
+      "c": "El de la eficiencia del método epidemiológico para prevenir riesgos",
+      "d": "El de las prácticas de la medicina basada en la evidencia."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-020",
+    "materia": [
+      "medicinalegal",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Sistema de salud",
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "¿Cómo se mide la eficacia en el Sistema Hospitalario?",
+    "opciones": {
+      "a": "Es directamente proporcional al número de camas y al costo del paciente día.",
+      "b": "Es directamente proporcional al número de pacientes internados y a la ocupación de camas",
+      "c": "Es directamente proporcional al número de pacientes y al número de camas en un periodo dado",
+      "d": "Es directamente proporcional al número de camas ocupadas, a la ocupación y al periodo considerado"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-021",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cómo debe estar fundamentada la toma de decisiones en la práctica clínica según la Medicina Basada en la Evidencia (MBE)?",
+    "opciones": {
+      "a": "No valorará la experiencia clínica profesional, sólo las evidencias científicas derivadas de los ensayos clínicos.",
+      "b": "No debe considerarse en absoluto el costo que suponen.",
+      "c": "Resulta de la integración entre preferencias del paciente, criterio profesional fundamentado y opciones disponibles.",
+      "d": "Debe fundamentarse únicamente en las preferencias del paciente."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-022",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Qué modelo estimula la variación en la práctica clínica?",
+    "opciones": {
+      "a": "Modelo de medicina radar",
+      "b": "Modelo proactivo.",
+      "c": "Modelo preventivo.",
+      "d": "Modelo de medicina basada en evidencia."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-023",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Cuál es la relación que existe entre el intervalo de confianza (IC) Y el tamaño de la muestra (N)?",
+    "opciones": {
+      "a": "A menor tamaño de muestra, menor IC.",
+      "b": "A mayor tamaño de muestra, menor IC.",
+      "c": "A menor tamaño de muestra, mayor IC.",
+      "d": "Al modificar el tamaño de la muestra el IC no sufre modificación."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-024",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Qué parámetros tendría en cuenta como mínimo para el cálculo del tamaño muestral?",
+    "opciones": {
+      "a": "Grado de significancia, grado de potencia, diferencia de media y norma y estimación de desviación estándar.",
+      "b": "Grado de potencia, grado de significancia",
+      "c": "Grado alfa, valor de P, intervalo de confianza",
+      "d": "Valor de P, puntaje z, grado alfa"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-025",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "¿Cómo se denomina al riesgo que está representado por la razón entre la incidencia entre los expuestos y los no expuestos a un factor determinado?",
+    "opciones": {
+      "a": "Riesgo diferencial",
+      "b": "Riesgo relativo.",
+      "c": "Riesgo absoluto.",
+      "d": "Riesgo atribuible."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-026",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cómo se denominan las variaciones en las mediciones que pueden proceder de cambios en la condición del sujeto?",
+    "opciones": {
+      "a": "Error aleatorio.",
+      "b": "Variabilidad en la percepción individual.",
+      "c": "Sesgo.",
+      "d": "Variabilidad biológica."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-027",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "Se pueden cometer dos tipos de errores en las pruebas de hipótesis. ¿Qué se entiende por \"error tipo II\"?",
+    "opciones": {
+      "a": "Rechazar la hipótesis de nulidad",
+      "b": "Concluir que existe una diferencia cuando no la hay",
+      "c": "No concluir que existe una diferencia cuando si la hay",
+      "d": "Aceptar la hipótesis de nulidad"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-028",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Qué se logra al realizar una definición de caso más estricta en una investigación de brote?",
+    "opciones": {
+      "a": "Mayor especificidad.",
+      "b": "Mayor cantidad de casos.",
+      "c": "Menor especificidad",
+      "d": "Mayor sensibilidad"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-029",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Al momento de analizar datos demográficos, ¿Cómo controlaría el efecto de factores de confusión?",
+    "opciones": {
+      "a": "Aumentando el tamaño muestral",
+      "b": "Testeando la desigualdad",
+      "c": "No habría forma de controlar el efecto de confusión, debe informarse.",
+      "d": "A través de métodos de estandarización"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-030",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cuál es el indicador que evalúa la \"precisión\"?",
+    "opciones": {
+      "a": "Validez",
+      "b": "Sensibilidad",
+      "c": "Especificidad",
+      "d": "Confiabilidad"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-031",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "¿Cuál de las siguientes medidas de asociación es de tipo diferencia?",
+    "opciones": {
+      "a": "Odds ratio",
+      "b": "Coeficiente de correlación",
+      "c": "Riesgo relativo",
+      "d": "Riesgo atribuible"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-032",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "El Odds Ratio es una medida de asociación que puede estimarse en cualquier tipo de estudio observacional, sin embargo, su utilización se reserva especialmente para un tipo de estudio. ¿A qué tipo de estudio se refiere?",
+    "opciones": {
+      "a": "Estudios Ecológicos",
+      "b": "Estudios de Cohorte",
+      "c": "Estudios de Casos y Controles",
+      "d": "Estudios Transversales"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-033",
+    "materia": [
+      "neumonologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Cuál de estos estudios es el de mayor sensibilidad en el tromboembolismo de pulmón?",
+    "opciones": {
+      "a": "Centellograma V/Q",
+      "b": "Radiografía de tórax precoz",
+      "c": "Ecocardiograma transesofágica",
+      "d": "Angiografía de pulmón"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-034",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Que caracteriza a los eventos independientes?",
+    "opciones": {
+      "a": "Los eventos independientes no ocurren de manera simultanea",
+      "b": "El resultado de uno no influye en el hecho de que el otro suceda o no suceda",
+      "c": "Condicionan la probabilidad del evento dependiente",
+      "d": "La probabilidad de que cualquiera de los eventos ocurra es igual a la probabilidad de los eventos individuales"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-035",
+    "materia": [
+      "saludpublica",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "Un responsable de Área de Salud de un municipio ha observado un aumento del número de casos de sepsis por Salmonelosis en niños. ¿Ante cuál de las siguientes situaciones se confirma la existencia de un brote?",
+    "opciones": {
+      "a": "Cuando al construir la curva epidémica se observa que el brote es producido por una fuente común",
+      "b": "Cuando el índice epidémico es menor a 1",
+      "c": "Cuando al realizar un estudio de casos y controles en la investigación del brote, el Odds Ratio obtenido es mayor a 1",
+      "d": "Cuando el número de casos observados es mayor al número de casos esperados por unidad de tiempo y lugar determinado"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-036",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "\"lA probabilidad de ocurrencia de una enfermedad, agravio, muerte o condición relacionada a la salud en una población o grupo, durante un período de tiempo determinado\". ¿A qué concepto corresponde esta definición?",
+    "opciones": {
+      "a": "Distribución de Gauss",
+      "b": "Años de Vida potencialmente perdidos",
+      "c": "Odds Ratio",
+      "d": "Riesgo"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-037",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Ante la sospecha de asociación entre insuficiencia hepática aguda e ingesta de un determinado analgésico se llevó a cabo un estudio de casos y controles. Uno de los resultados obtenidos fue 1,85 (IC 95%: 0,875) 10,23). ¿Qué medida de asociación se utilizó y cuál es su significado?",
+    "opciones": {
+      "a": "Riesgo relativo y los eventos están asociados",
+      "b": "Odds ratio y los eventos no están asociados",
+      "c": "Odds ratio y los eventos están asociados",
+      "d": "Razón de prevalencias y los eventos no están asociados"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-038",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Cómo se define la \"población\" de una muestra?",
+    "opciones": {
+      "a": "La muestra con la mayor factibilidad en el desarrollo de la investigación.",
+      "b": "El subconjunto de una población, elegido de tal manera que sea representativo de ella.",
+      "c": "La selección de un grupo determinado individuos con una característica en común.",
+      "d": "El conjunto de grandes elementos sin ninguna característica en común, pero que forma parte de la muestra."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-039",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "En un estudio de cohortes en el grupo expuesto el evento estudiado se ha dado en 5 de cada 10 expuestos y en 4 de cada 8 no expuestos. ¿Cuál es el Odds ratio del evento de los expuestos sobre los no expuestos?",
+    "opciones": {
+      "a": "0.5",
+      "b": "1.22",
+      "c": "1.5",
+      "d": "1"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-040",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cómo se denomina a la pérdida de datos sobre un gran número de individuos en el marco de un estudio prospectivo?",
+    "opciones": {
+      "a": "Sesgo de selección",
+      "b": "Error aleatorio",
+      "c": "Sesgo de seguimiento",
+      "d": "Factor de confusión"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-041",
+    "materia": [
+      "saludpublica",
+      "urologia"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas",
+      "Riesgo cardiovascular y riñón"
+    ],
+    "enunciado": "La sensibilidad de la ecografía Doppler para el diagnóstico de estenosis de la arteria renal es:",
+    "opciones": {
+      "a": "30%",
+      "b": "Menor al 10%",
+      "c": "100%",
+      "d": "84-98%"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-042",
+    "materia": [
+      "saludpublica",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas",
+      "Aorta"
+    ],
+    "enunciado": "¿Cuál es la sensibilidad y especificidad de la ecografía transesofágica para el diagnóstico de disección de aorta ascendente?",
+    "opciones": {
+      "a": "Tiene una sensibilidad y especificidad no determinada",
+      "b": "Tiene una sensibilidad y especificidad de 60 y 80%",
+      "c": "Tiene una sensibilidad y especificidad de 50 y 60%",
+      "d": "Tiene una sensibilidad y especificidad de 98 y 100%"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-043",
+    "materia": [
+      "saludpublica",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "¿Cuál de las siguientes conductas es la correcta según las normas de Vigilancia Epidemiológica al asistir en guardia a un niño de 16 meses recibido en guardia con exantema febril? Se solicitan estudios complementarios y se indica tratamiento.",
+    "opciones": {
+      "a": "Registrar el diagnóstico en la hoja de atención de guardia y en ficha de notificación específica y avisar a Epidemiología Local.",
+      "b": "Registrar el diagnóstico en la hoja de atención de guardia y avisar al personal administrativo para que notifique el caso",
+      "c": "Registrar el diagnóstico en la hoja de atención de guardia y en ficha de notificación específica y avisar a enfermería para que notifique el caso.",
+      "d": "Registrar el diagnóstico en la hoja de atención de guardia y en ficha de notificación específica."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-044",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Cuándo se habla de \"error tipo I\"?",
+    "opciones": {
+      "a": "Cuando se acepta la hipótesis nula y es verdadera",
+      "b": "Cuando se rechaza la hipótesis nula y es falsa.",
+      "c": "Cuando se rechaza la hipótesis nula y es verdadera",
+      "d": "Cuando se rechazan ambas hipótesis"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-045",
+    "materia": [
+      "saludpublica",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas",
+      "Vía biliar"
+    ],
+    "enunciado": "¿Cuál es la sensibilidad de la ecografía para detección de la litiasis vesicular?",
+    "opciones": {
+      "a": "80-85%.",
+      "b": "95-97%.",
+      "c": "86-90%.",
+      "d": "70-79%."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-046",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Qué información nos brinda el \"Número Necesario para Tratar\" (NNT)?",
+    "opciones": {
+      "a": "El número de personas que es necesario estudiar para evitar un evento",
+      "b": "El número de personas que es necesario tratar para reducir a la mitad la incidencia de una patología",
+      "c": "El número de personas que es necesario tratar para reducir la prevalencia de una patología",
+      "d": "El número de personas que es necesario tratar para evitar un evento"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-047",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Se realizó un estudio de caso-control basado en la hipótesis de que el uso de anticonceptivos orales se asociaría a la ocurrencia de trombosis venosa. Los datos indican que el Odds ratio, o razón de productos cruzados, es igual a 8,14. ¿Cómo interpretaría dicho resultado?",
+    "opciones": {
+      "a": "El riesgo de ocurrencia de trombosis venosa entre mujeres no usuarias de anticonceptivos orales es ocho veces mayor que entre mujeres usuarias",
+      "b": "El riesgo de ocurrencia de trombosis venosa entre usuarias de anticonceptivos orales es ocho veces mayor que entre mujeres no usuarias",
+      "c": "Se podrían prevenir la ocurrencia de ocho casos de trombosis venosa en usuarias de anticonceptivos orales si suspendieran su uso",
+      "d": "Se produce una diferencia de ocurrencia de trombosis venosa en ocho mujeres que utilizaron anticonceptivos orales que entre quienes no los utilizaron"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-048",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cómo se define el error aleatorio no sistemático?",
+    "opciones": {
+      "a": "Ocurre cuando las mediciones repetidas, ya sea en un mismo sujeto o en diferentes sujetos, varían de manera no predecible.",
+      "b": "Ocurre cuando una única medición ya sea en un mismo sujeto o en diferentes sujetos, varían de manera predecible.",
+      "c": "Ocurre cuando las mediciones repetidas, ya sea en un mismo sujeto o en diferentes sujetos, varian de manera predecible.",
+      "d": "Ocurre cuando una única medición ya sea en un mismo sujeto o en diferentes sujetos, varian de manera no predecible."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-049",
+    "materia": [
+      "saludpublica",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas",
+      "Tromboembolia de pulmón"
+    ],
+    "enunciado": "¿Cuál es el valor diagnóstico de la determinación de Dímero D en el Tromboembolismo Pulmonar (TEP)?",
+    "opciones": {
+      "a": "Presenta un alto valor predictivo negativo",
+      "b": "Presenta un alto valor predictivo positivo",
+      "c": "No posee sensibilidad ni especificidad",
+      "d": "Presenta alta especificidad diagnóstica"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-050",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿A qué se denomina \"potencia\" en una prueba de hipótesis?",
+    "opciones": {
+      "a": "Al error tipo I",
+      "b": "A la capacidad de un estudio de comprobar la hipótesis",
+      "c": "A la capacidad de un estudio para demostrar una diferencia verdadera",
+      "d": "Al error tipo II"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-051",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Al clasificar las causas de discrepancia clínica entre dos observadores según su origen: en el examinado, en el examinador y en el examen. ¿Qué causas de discrepancia clínica se originan en el examinado?",
+    "opciones": {
+      "a": "Efecto del síndrome y las medicaciones; memoria y reflexión; juego de azar",
+      "b": "Interacción inadecuada entre examinador y examinado; variación biológica del examinado; atrapamiento por la expectativa previa",
+      "c": "Simple incompetencia; elección inadecuada del profesional; variación biológica en el sistema examinado",
+      "d": "Circunstancias inadecuadas para el examen; memoria y reflexión; rendimiento inadecuado"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-052",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Los dos componentes de la evaluación de los procedimientos diagnósticos son la sensibilidad y la especificidad. ¿Qué se entiende por sensibilidad?",
+    "opciones": {
+      "a": "La capacidad de un procedimiento para dar un resultado negativo si la enfermedad está presente.",
+      "b": "La capacidad de un procedimiento para dar un resultado negativo si la enfermedad no está presente",
+      "c": "La capacidad de un procedimiento para detectar una enfermedad cuando está ausente.",
+      "d": "La capacidad de un procedimiento para detectar una enfermedad cuando está presente."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-053",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones representa algunas de las etiologías de las discrepancias clínicas?",
+    "opciones": {
+      "a": "Las características del servicio en que se asiste al paciente y la variación estacional de la patología",
+      "b": "El género del profesional asistente, la situación laboral de los profesionales y las características cognitivas del paciente.",
+      "c": "La variación biológica de los sentidos del examinador, las circunstancias inadecuadas para el examen y la simple incompetencia",
+      "d": "Las características sociales de los pacientes y las especialidades de los profesionales"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-054",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Las pruebas diagnósticas tienen cierta sensibilidad y especificidad; ¿A qué se denomina sensibilidad?",
+    "opciones": {
+      "a": "A la probabilidad de tener la enfermedad si el resultado de la prueba es positiva",
+      "b": "A la probabilidad de que un sujeto sano tenga un resultado negativo en la prueba",
+      "c": "A la probabilidad de no tener la enfermedad si el resultado de la prueba es negativa",
+      "d": "A la probabilidad de que un sujeto enfermo tenga un resultado positivo en la prueba"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-055",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué significa Valor Predictivo Positivo?",
+    "opciones": {
+      "a": "La confirmación de un diagnóstico a través de pruebas de tamizaje",
+      "b": "La prevalencia de la alteración blanco entre los pacientes con resultados positivos en la prueba",
+      "c": "El aumento de la prevalencia de los pacientes en un periodo determinado",
+      "d": "La probabilidad de que la alteración blanco entre los pacientes antes de la prueba sea mayor al 50%"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-056",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué característica de una prueba diagnóstico debe disminuir si aumenta la prevalencia de un problema de salud?",
+    "opciones": {
+      "a": "Especificidad.",
+      "b": "Valor predictivo negativo.",
+      "c": "Sensibilidad.",
+      "d": "Valor predictivo positivo."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-057",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Qué es el Número Necesario Para Tratar (NNT)?",
+    "opciones": {
+      "a": "Un indicador que mide calidad de vida",
+      "b": "Un indicador que determina la significación clínica de un ensayo positivo",
+      "c": "Un indicador que mide la reducción del riesgo relativo",
+      "d": "Un indicador que mide la adherencia al tratamiento por parte del paciente"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-058",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿A través de qué representación gráfica se puede mostrar la relación entre sensibilidad y especificidad entre dos o más pruebas diagnósticas medidas en escala numérica?",
+    "opciones": {
+      "a": "Regresión logistica",
+      "b": "Correlación",
+      "c": "Curva ROC",
+      "d": "Curva de Kaplan-Meier"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [
+      "Image of Curva ROC"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-059",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "En un ensayo clínico controlado ¿Qué finalidad esencial debe cumplirse en la etapa de análisis e interpretación de resultados?",
+    "opciones": {
+      "a": "Determinar los métodos de evaluación.",
+      "b": "Asegurar el bienestar del paciente sometido al ensayo.",
+      "c": "Estimar los efectos esperados del tratamiento.",
+      "d": "Verificar la comparabilidad de los grupos."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-060",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Cómo se define la sensibilidad de una prueba diagnóstica?",
+    "opciones": {
+      "a": "Es la proporción de resultados positivos de una prueba en todo el universo bajo estudio",
+      "b": "Es la cantidad de expuestos y no expuestos que presentaron el evento bajo estudio",
+      "c": "Es la totalidad de los expuestos al factor de riesgo que presentaron el evento",
+      "d": "Es la proporción de pacientes con la alteración blanco que tienen un resultado positivo de la prueba"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-061",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Ud. estudia un problema de salud en un barrio donde la prevalencia de este es del 20%. La prueba diagnóstico a utilizar presenta una sensibilidad y especificidad del 95%, un valor predictivo positivo de 83% y un valor predictivo negativo del 99%. ¿Cuál es la probabilidad de tener la enfermedad luego de tener un resultado negativo de la prueba?",
+    "opciones": {
+      "a": "1%.",
+      "b": "10%.",
+      "c": "17%.",
+      "d": "5%."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-062",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Una prueba desarrollada para el diagnóstico de una enfermedad presenta una sensibilidad del 50% y una especificidad del 95%. ¿Cuál de las siguientes características presenta esta prueba?",
+    "opciones": {
+      "a": "Alta Tasa de Verdaderos Positivos",
+      "b": "Baja Tasa de Falsos Negativos",
+      "c": "Alto Valor Predictivo Positivo",
+      "d": "Baja Tasa de Falsos Positivos"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-063",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Cuál es el significado del concepto \"Valor Predictivo Positivo\"?",
+    "opciones": {
+      "a": "La proporción de pacientes con resultados negativos de la prueba que tienen la alteración blanco",
+      "b": "La proporción de pacientes con resultados positivos de la prueba que no tienen la alteración blanco",
+      "c": "La proporción de pacientes con resultados positivos de la prueba que tienen la alteración blanco",
+      "d": "La proporción de pacientes con resultados negativos de la prueba que no tienen la alteración blanco"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-064",
+    "materia": [
+      "medicinalegal",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Sistema de salud",
+      "Otras preguntas de salud pública"
+    ],
+    "enunciado": "¿Qué consideración es importante tener en cuenta para la evaluación de un análisis económico de la atención clínica y otras prestaciones de servicio?",
+    "opciones": {
+      "a": "Los costos secundarios valorados durante la programación",
+      "b": "La identificación de los errores médicos",
+      "c": "El tiempo en vigencia del programa bajo evaluación",
+      "d": "La validación de la efectividad de los programas"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-065",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cuál es la diferencia fundamental entre una revisión y un estudio primario?",
+    "opciones": {
+      "a": "Los datos secundarios que se originan de la investigación",
+      "b": "Los principios científicos que aplica",
+      "c": "La unidad de análisis",
+      "d": "La cantidad de artículos citados"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-066",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Se realiza una prueba de ELISA a 2000 pacientes. A los 60 que resultan positivos se les realiza una prueba de Western Blot, confirmando el diagnóstico en 40 de ellos. Señale qué valor tiene esta segunda determinación",
+    "opciones": {
+      "a": "Aumenta el valor predictivo positivo",
+      "b": "Aumenta la sensibilidad de la segunda prueba",
+      "c": "Aumenta la especificidad de la segunda prueba",
+      "d": "Aumenta el valor predictivo negativo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-067",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué consideración haría ante el aumento de la especificidad de una prueba diagnóstica?",
+    "opciones": {
+      "a": "Que disminuye la sensibilidad de esta",
+      "b": "Que se incremente la probabilidad de diagnósticos positivos",
+      "c": "Disminuye la probabilidad de que los resultados sean negativos en individuos que no padecen la enfermedad e incrementa el número de resultados positivos",
+      "d": "Que aumenta la cantidad de falsos positivos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-068",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Cómo se calcula el valor predictivo positivo de un instrumento?",
+    "opciones": {
+      "a": "N.° Verdaderos positivos/total de resultados de la prueba x 100.",
+      "b": "N.° Verdaderos positivos/total de sanos en la prueba x 100.",
+      "c": "N.º Verdaderos positivos/total de negativos de la prueba x 100.",
+      "d": "N.° Verdaderos positivos/total de positivos de la prueba x 100."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-069",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué aspectos deben tenerse en cuenta al valorar la precisión de una prueba diagnóstica?",
+    "opciones": {
+      "a": "Prevalencia basal y probabilidad condicional",
+      "b": "Probabilidad a priori y probabilidad posprueba",
+      "c": "Sensibilidad y especificidad",
+      "d": "Escala y rango"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-070",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "Al hacer una investigación científica los problemas de reproducibilidad y sesgo que afectan los procesos de revisión, ¿Cómo pueden reducirse estos problemas por parte de los revisores?",
+    "opciones": {
+      "a": "Mediante la aplicación de criterios explícitos de inclusión y evaluación de los artículos primarios",
+      "b": "Mediante el descarte de los artículos primarios contradictorios entre si",
+      "c": "Mediante la solicitud de elección de artículos primarios a expertos en el tema",
+      "d": "Mediante la búsqueda exhaustiva no sistemática de los artículos primarios"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-071",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Al clasificar las causas de discrepancia clinica entre dos observadores según su origen: en el examinado, en el examinador y en el examen. ¿Qué causas de discrepancia clínica se originan en el examinado?",
+    "opciones": {
+      "a": "Simple incompetencia; elección inadecuada del profesional; variación biológica en el sistema examinado",
+      "b": "Efecto del síndrome y las medicaciones; memoria y reflexión; juego de azar",
+      "c": "Interacción inadecuada entre examinador y examinado; variación biológica del examinado; atrapamiento por la expectativa previa",
+      "d": "Circunstancias inadecuadas para el examen; memoria y reflexión; rendimiento inadecuado"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-072",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Cómo se define la especificidad de una prueba diagnóstica?",
+    "opciones": {
+      "a": "Es la capacidad de utilizar una prueba diagnóstica en forma comparativa en distintos estudios",
+      "b": "Es la capacidad de una prueba para identificar correctamente la ausencia de la alteración blanco.",
+      "c": "Es la tasa de probabilidad antes de la prueba de la alteración blanco",
+      "d": "Es la confirmación del diagnóstico de un paciente con la utilización de pruebas de catastro"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-073",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "En relación con las discrepancias clínicas en la interpretación de las pruebas diagnósticas, ¿A qué se denomina consistencia?",
+    "opciones": {
+      "a": "A la medida en que exámenes múltiples de un mismo paciente o muestras concuerdan unos con otros",
+      "b": "A la fidelidad de una observación clínica respecto del estado clínico real",
+      "c": "A la diferencia entre la observación clínica y las pruebas diagnósticas",
+      "d": "A la desviación sistemática de una observación respecto del estado clínico real"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-074",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué implica el valor predictivo positivo en relación con la interpretación de los datos diagnósticos?",
+    "opciones": {
+      "a": "La probabilidad de la alteración blanco antes de la prueba es mayor al 60%.",
+      "b": "La caída de la prevalencia en forma significativa de una población a través del tiempo",
+      "c": "La prevalencia de la alteración blanco entre los pacientes con resultados positivos de la prueba",
+      "d": "La probabilidad de la ausencia de signos y sintomas de una enfermedad prevalente en la población bajo estudio"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-075",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Una prueba desarrollada para el diagnóstico de una enfermedad presenta una sensibilidad del 50% y una especificidad del 95%. ¿Cuál de las siguientes características presenta esta prueba?",
+    "opciones": {
+      "a": "Alto Valor Predictivo Positivo",
+      "b": "Alta Tasa de Verdaderos Positivos",
+      "c": "Baja Tasa de Falsos Negativos",
+      "d": "Baja Tasa de Falsos Positivos"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+
+  {
+    "id": "saludpublica-002-076",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Cuál es la característica distintiva de una distribución \"Gaussiana\" de la población?",
+    "opciones": {
+      "a": "Es probabilística",
+      "b": "Es normal",
+      "c": "Es bimodal",
+      "d": "Es anormal"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [
+      "Image of Distribución Normal Gaussiana"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-077",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "En los estudios epidemiológicos se estudia un evento y los factores que determinan su aparición, magnitud y distribución. ¿Qué tipo de variable corresponde al evento en estudio?",
+    "opciones": {
+      "a": "Variable Condicionante",
+      "b": "Variable Independiente",
+      "c": "Variable Interviniente",
+      "d": "Variable Dependiente"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-078",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Si en un ensayo clínico aleatorizado y controlado que estudia la incidencia de hemorragia en un grupo tratado con fondaparinux y en el grupo control tratado con enoxaparina se obtiene un RR (riesgo relativo =1). ¿Qué significa dicho valor de RR?",
+    "opciones": {
+      "a": "EI RR no me permite afirmar nada acerca del riesgo",
+      "b": "El grupo control tiene más riesgo de padecer hemorragia que el que recibe fondaparinux",
+      "c": "El grupo tratado con fondaparinux tiene mayor riesgo de padecer hemorragia",
+      "d": "No existe diferencia entre la incidencia de hemorragia entre los dos grupos"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-079",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué enunciado se corresponde con el Teorema de Bayes?",
+    "opciones": {
+      "a": "De gran utilidad práctica en estudios donde la proporción de casos y controles es igual a la proporción real existente en la población.",
+      "b": "Permite calcular la tasa de morbimortalidad total de la población en estudio",
+      "c": "Permite calcular la proporción de enfermos entre los positivos y negativos a la prueba.",
+      "d": "De gran utilidad práctica en estudios prospectivos y retrospectivos."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-080",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "¿Cuáles son los sistemas de ideas o creencias sobre la naturaleza de la enfermedad?",
+    "opciones": {
+      "a": "Sistema mágico, empírico y científico",
+      "b": "Sistema sobrenatural, religioso y moderno",
+      "c": "Sistema mítico, oriental y occidental",
+      "d": "Sistema mágico, religioso y científico"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-081",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "¿Cuál es la definición de \"Incidencia\"?",
+    "opciones": {
+      "a": "Enfermos acumulados de una enfermedad sobre el total de la población",
+      "b": "Enfermos nuevos detectados de una enfermedad sobre el total de la población en un periodo determinado de tiempo",
+      "c": "Casos nuevos de una enfermedad sobre número de casos de todas las enfermedades",
+      "d": "Casos de muerte por una enfermedad sobre el número de habitantes de una población"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-082",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística descriptiva"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una medida de dispersión?",
+    "opciones": {
+      "a": "Mediana",
+      "b": "Modo",
+      "c": "Media",
+      "d": "Percentil"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-083",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "En los sesgos en estudios epidemiológicos, ¿Cómo se originan los sesgos de confusión?",
+    "opciones": {
+      "a": "Por errores introducidos durante la asignación de la exposición a la población bajo estudio",
+      "b": "Por errores introducidos durante la selección o seguimiento de la población bajo estudio",
+      "c": "Por errores introducidos durante los procesos de medición de la población bajo estudio",
+      "d": "Por errores introducidos durante la asignación del evento a la población bajo estudio"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [
+      "Image of Sesgo de confusión epidemiología"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-084",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Qué requisito indispensable deben presentar las categorías de las escalas de medición?",
+    "opciones": {
+      "a": "No deben ser exhaustivas y deben ser mutuamente excluyentes",
+      "b": "Deben ser exhaustivas y mutuamente excluyentes",
+      "c": "Deben ser exhaustivas y mutuamente incluyentes",
+      "d": "No deben ser exhaustivas y deben ser mutuamente incluyentes"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-085",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cómo se clasifican los errores en Epidemiología?",
+    "opciones": {
+      "a": "Errores no aleatorios o no sistemáticos y errores aleatorios o sistemáticos",
+      "b": "Errores no aleatorios o sistemáticos y errores aleatorios o no sistemáticos",
+      "c": "Errores aleatorios o no sistemáticos y errores aleatorios o sistemáticos",
+      "d": "Errores aleatorios o sistemáticos y errores no aleatorios o no sistemáticos"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-086",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "Para considerar un resultado como \"estadísticamente significativo\", el valor de P (probabilidad de que una diferencia ocurra por azar cuando se asume que no hay diferencia entre las medias de las observaciones) Debe ser menor que un determinado valor. ¿Cuál es este valor umbral?",
+    "opciones": {
+      "a": "0.100",
+      "b": "0.050",
+      "c": "0,005",
+      "d": "0.500"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-087",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Describen los conceptos de validez. ¿Cómo se define a la validez externa?",
+    "opciones": {
+      "a": "Está constituida por los errores cometidos durante el proceso de selección de la población",
+      "b": "Es la capacidad del estudio de generalizar los resultados observados en la población blanco hacia la población en estudio",
+      "c": "Es la capacidad del estudio de generalizar los resultados observados en la población en estudio hacia la población blanco",
+      "d": "Está constituida por los errores ocasionados por la falta de comparabilidad de los grupos estudiados"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-088",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Qué es la validez externa de un estudio?",
+    "opciones": {
+      "a": "La ausencia de sesgo o error ajenos al investigador",
+      "b": "La capacidad de generalizar los resultados observados en la población en estudio hacia la población blanco",
+      "c": "La capacidad de detectar los errores cometidos durante el proceso de selección externa de la población de estudio",
+      "d": "La potencia de la comparabilidad de los grupos estudiados"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-089",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Qué parámetros tendría en cuenta como mínimo para el cálculo del tamaño muestral?",
+    "opciones": {
+      "a": "Grado de significancia, grado de potencia, diferencia de media y norma y estimación de desviación estándar.",
+      "b": "Valor de P, puntaje z, grado alfa",
+      "c": "Grado de potencia, grado de significancia",
+      "d": "Grado alfa, valor de P, intervalo de confianza"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-090",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "En la discrepancia clínica; cuando se habla de variación biológica de los sentidos y atrapamiento por la experiencia previa, ¿A qué sujeto se refiere?",
+    "opciones": {
+      "a": "Al examinado.",
+      "b": "Al familiar del examinado.",
+      "c": "Al equipo de salud.",
+      "d": "Al examinador."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-091",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones representa el concepto de Reducción relativa del riesgo (RRR)?",
+    "opciones": {
+      "a": "Es la probabilidad de que un individuo experimente un resultado específico durante un periodo específico",
+      "b": "Es el número de veces más probable o menos probable que puede suceder un determinado evento en un grupo comparado al del otro grupo",
+      "c": "Es diferencia absoluta en el riesgo entre el grupo experimental y el grupo control en un ensayo clinico",
+      "d": "Es la reducción proporcional del riesgo entre los participantes en el grupo experimental y en el control"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-092",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cuáles son los principales tipos de validez?",
+    "opciones": {
+      "a": "En contenido, criterios concurrentes y predictivos únicamente",
+      "b": "En contenido, aspectos, criterios concurrentes, criterios predictivos y construcción",
+      "c": "En contenido, aspectos y criterios concurrentes únicamente",
+      "d": "En contenido y sus aspectos puntuales"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-093",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Cómo se denomina a aquellos atributos o características que pueden tomar diversos valores?",
+    "opciones": {
+      "a": "Prevalencia",
+      "b": "Variables",
+      "c": "Incidencia",
+      "d": "Ajuste"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-094",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Cómo se define la probabilidad \"p\"?",
+    "opciones": {
+      "a": "La cantidad de veces que se presenta un resultado específico dividido la cantidad total de pruebas que se han intentado.",
+      "b": "La cantidad de veces que se presenta una falla en una serie de pruebas.",
+      "c": "La cantidad de veces que un resultado es negativo",
+      "d": "La cantidad de veces que se presenta un resultado en relación con la cantidad veces que el intento por lograr el mismo fue negativo."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-095",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿A qué concepto corresponde la definición \"cualquier desviación sistemática de una observación respecto del estado clínico real\"?",
+    "opciones": {
+      "a": "Inconsistencia",
+      "b": "Sesgo",
+      "c": "Error alfa.",
+      "d": "Error beta."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-096",
+    "materia": [
+      "saludpublica",
+      "pediatria"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos",
+      "Hematología infantil"
+    ],
+    "enunciado": "Se realiza un estudio para investigar la ocurrencia de anemia ferropénica en la población infantil de una región determinada en un determinado período de tiempo y los factores potencialmente causales de esta enfermedad, tales como prematurez, dieta insuficiente, hemorragias agudas y alteraciones de la absorción. ¿Cuál es la variable dependiente del estudio?",
+    "opciones": {
+      "a": "La presencia de dieta insuficiente",
+      "b": "El antecedente de prematurez",
+      "c": "La presencia de hemorragias agudas",
+      "d": "La ocurrencia de anemia ferropénica"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-097",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "¿A qué denomina Karl Popper una \"hipótesis falsable\"?",
+    "opciones": {
+      "a": "A la hipótesis alterna simbolizada como H1",
+      "b": "A la hipótesis de nulidad simbolizada como HO",
+      "c": "A la que se puede refutar mediante una puesta a prueba",
+      "d": "A la que se llega a través de razonamientos inválidos"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-098",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "¿Qué característica de una prueba diagnóstico debe disminuir si aumenta la prevalencia de un problema de salud?",
+    "opciones": {
+      "a": "Sensibilidad.",
+      "b": "Especificidad.",
+      "c": "Valor predictivo positivo.",
+      "d": "Valor predictivo negativo."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagen": [
+      "Image of Valor Predictivo y Prevalencia"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-099",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "¿Cuál de las siguientes constituye una desventaja de los estudios transversales?",
+    "opciones": {
+      "a": "La relación causa -efecto no siempre es verificable",
+      "b": "No se puede estimar la prevalencia del evento.",
+      "c": "Se puede presentar causalidad reversa.",
+      "d": "Alto costo y problemas logísticos."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "saludpublica-002-100",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "De los sesgos en estudios epidemiológicos\", ¿Cuál es una estrategia de control del sesgo de confusión en la fase de análisis?",
+    "opciones": {
+      "a": "Estratificación",
+      "b": "Aleatorización",
+      "c": "Restricción",
+      "d": "Pareamiento"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
+
