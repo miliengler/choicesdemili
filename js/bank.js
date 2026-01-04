@@ -51,7 +51,7 @@ async function loadAllBanks() {
   const urls = [];
 
   // A) Materias
-  const FILES_PER_SUBJECT = 20; 
+  const FILES_PER_SUBJECT = 25; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
       urls.push({ url: `bancos/${subj.slug}/${subj.slug}${i}.json`, type: "materia", meta: subj });
