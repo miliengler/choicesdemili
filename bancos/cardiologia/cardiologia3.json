@@ -1,1 +1,516 @@
-[]
+[
+  {
+    "id": "cardiologia-003-001",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Llega a la guardia Andrés de 65 años consultando por dolor precordial opresivo de 4 horas de evolución que se irradia a la espalda, acompañado de mareos y sudoración. No hace referencia a ningún episodio similar a este, aunque refiere hipertensión arterial sin control. No presentó disnea, ortopnea y disnea paroxística nocturna. Al momento de la consulta se encuentra ansioso e inquieto, tensión arterial 100-60 mmHg, frecuencia cardíaca 60 lpm y saturación de oxígeno del 96%. La auscultación pulmonar es normal. El electrocardiograma (ECG) presenta ritmo sinusal a 100 lpm, PR 188 mseg, supradesnivel del segmento ST en las derivaciones DI, AVL y de V1 a V6 de hasta 5 mm. ¿Cuál es el tratamiento de inicio más adecuado?",
+    "opciones": {
+      "a": "Nitroglicerina, aspirina, clopidogrel y estatinas.",
+      "b": "Angioplastia coronaria percutánea primaria.",
+      "c": "Metoprolol, aspirina y enoxaparina.",
+      "d": "Fibrinólisis"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. El tratamiento de reperfusión está indicado para todo paciente con síntomas de isquemia de duración <= 12 h y elevación persistente del segmento ST. La estrategia de angioplastia primaria es más recomendable que la fibrinólisis siempre que se realice en los plazos indicados. Máxima demora prevista entre el diagnóstico de IAMCEST y la angioplastia primaria (paso de la guia) para escoger entre la estrategia de angioplastia primaria o fibrinolisis (si este plazo no se puede cumplir, considere la administración de fibrinolisis) <= 120 min. Respuesta correcta: angioplastia primaria.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-002",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "El patrón electrocardiográfico QRS de duración mayor a 0,12 seg con morfología QS en V1 con R ancha y empastada en V6, ¿a qué alteración corresponde?",
+    "opciones": {
+      "a": "Bloqueo auriculo-ventricular de primer grado.",
+      "b": "Bloqueo completo de rama izquierda.",
+      "c": "Bloqueo bifasicular.",
+      "d": "Bloqueo completo de rama derecha."
+    },
+    "correcta": "b",
+    "explicacion": "Bloqueo de rama izquierda: Cuando la que se bloquea es la rama izquierda, el impulso eléctrico viaja de manera rápida por la rama derecha, dando lugar a la despolarización del ventriculo derecho y después de manera lenta, a través del tabique interventricular y finalmente del ventriculo izquierdo, de manera inversa a la despolarización normal4. Observaremos en la derivación V1 un patrón rS o QS (un complejo QS profundo y ancho sin onda R). En V6 se puede observar un complejo QRS ancho, con una onda R alta, ancha y poco marcada, posiblemente con una escotadura) o bien un patrón rSR'.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-003",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿En cuál de los siguientes cuadros clínicos es posible observar la siguiente alteración en el ECG?",
+    "opciones": {
+      "a": "Pericarditis.",
+      "b": "Isquemia subendocárdica.",
+      "c": "Infarto agudo de miocardio en etapa crónica",
+      "d": "Infarto agudo de miocardio en etapa aguda."
+    },
+    "correcta": "d",
+    "explicacion": "En el ECG se observa elevación (también llamada supradesnivelación) del segmento ST y es convexa (en lomo de delfin) de las opciones que nos ofrecen corresponde al distractor de \"Infarto agudo de miocardio en etapa aguda\". Inversión de la onda T: isquemia subendocárdica. Onda Q: necrosis miocárdica. Pericarditis aguda: se pueden observar hasta en el 60% de los pacientes, la elevación cóncava del segmento ST en muchas derivaciones es lo más frecuente. También se puede registrar descenso del segmento PR",
+    "imagen": [
+      "img/cardiologia/cardiologia-003-003.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-004",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 40 años consulta por presentar días atrás pérdida de la conciencia durante el ejercicio. En la lectura de su ECG se observa una falla intermitente en la conducción de la onda P sin cambios en los intervalos PR precedentes. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Bloqueo AV de 2do grado tipo 2",
+      "b": "Bloqueo AV de 2do grado tipo 1",
+      "c": "Bloqueo AV de primer grado",
+      "d": "Bloqueo AV completo"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Vamos a analizar el caso clinico: tenemos un varón joven (40 años) que presenta un sincope durante el ejercicio lo que sugiere arritmia significativa o trastorno de conducción con riesgo de pausas prolongadas. EI ECG: \"Falla intermitente en la conducción de la onda P\" es decir hay ondas P no conducidas. \"Sin cambios en los intervalos PR precedentes\", el PR es constante antes del bloqueo. Análisis de opciones: • Bloqueo AV de 2º grado tipo 2 (Mobitz II). Se caracteriza por: ondas P que a veces no se conducen, con PR constante en los latidos previos. Es un bloqueo más serio, de localización infranodal (Haz de His o ramas). Asociado a riesgo de progresión a bloqueo AV completo y sincope (sindrome de Stokes-Adams). Opción correcta, diagnóstico más probable. • Bloqueo AV de 2º grado tipo 1 (Wenckebach) = INCORRECTA. Se caracteriza por alargamiento progresivo del PR hasta que una onda P no se conduce. Aquí el PR es constante, por lo que no corresponde. • Bloqueo AV de 1° grado = INCORRECTA. En este caso, todas las ondas P se conducen, pero con PR prolongado (>200 ms). No hay pérdida intermitente de conducción. • Bloqueo AV completo = INCORRECTA. Se caracteriza por disociación AV completa: ondas P y complejos QRS independientes. No es intermitente, sino constante.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-005",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Ud. se encuentra en la guardia del hospital y un estudiante de la práctica final obligatoria lo consulta con el siguiente electrocardiograma (ECG) (VER IMAGEN). ¿Cuál es el diagnostico más probable?",
+    "opciones": {
+      "a": "Sindrome Coronario Agudo con Elevación del ST anterior",
+      "b": "Sindrome Coronario Agudo sin Elevación del ST infero-posterior",
+      "c": "Sindrome Coronario Agudo sin Elevación del ST inferior",
+      "d": "Sindrome Coronario Agudo con Elevación del ST anterior extenso."
+    },
+    "correcta": "d",
+    "explicacion": "ECG: elevación del segmento ST en las derivaciones DI y AVL y de V1 hasta V6 indican el compromiso anterior extenso del miocardio.",
+    "imagen": [
+      "img/cardiologia/cardiologia-003-005.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-006",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Alicia de 90 años tiene antecedentes de insuficiencia cardíaca, tabaquismo e hipertensión arterial. Al examen físico usted le constata pulso irregular y desigual. Le realiza un electrocardiograma donde se observa un patrón de fibrilación auricular con una frecuencia de 84 latidos por minuto. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Amiodarona.",
+      "b": "Anticoagulación por moderado-alto riesgo de embolia.",
+      "c": "Atenolol por bajo riesgo de embolia.",
+      "d": "Digoxina y AAS."
+    },
+    "correcta": "b",
+    "explicacion": "En personas que se realiza el diagnóstico de FA, el tratamiento consiste en anticoagular en función del riesgo trombótico y hemorrágico (casi siempre requiere anticoagulación) y controlar la frecuencia cardiaca con fármacos (betabloqueantes o calcioantagonistas preferiblemente, la digoxina se reserva como segunda linea). El tratamiento antitrombótico es la piedra angular del tratamiento. El tratamiento anticoagulante ha demostrado de forma consistente una reducción significativa de los eventos embólicos, así como una reducción de la mortalidad. La anticoagulación además ha demostrado ser superior al ácido acetilsalicilico, así como al placebo. El riesgo trombótico no depende del tipo de fibrilación auricular (paroxística, persistente o permanente), sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación CHA2DS2VASC. Las letras que no tienen subindice numérico puntúan como 1. Las letras con subindice 2 puntúan doble. En todo paciente con fibrilación auricular (FA), independientemente del tipo de FA que tenga, hay que aplicarle esta escala para conocer el riesgo embólico anual. Se hace un sumatorio de todos los factores que tiene. A mayor puntuación mayor riesgo anual de tener una embolia sistémica y/o ictus. Una puntuación de cero se considera bajo riesgo y no estaría indicado pautar tratamiento antitrombótico a largo plazo. Una puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones. Si bien se recomienda tratamiento anticoagulante o antiagregante en pacientes con puntuación CHA2 DS2- -VASC=1, debe excluirse de esta recomendación a las mujeres < 65 años que no presentan otro factor de riesgo embólico (es decir, que alcanzan la puntuación = 1 por el género femenino). El riesgo embólico de estas pacientes es similar al de pacientes con CHA2 DS2-VASc = 0, por lo que no requieren tratamiento antitrombótico. En esta paciente tiene un CHA2DS2VASC mayor a 2, se debe anticoagular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-007",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "¿Qué indica la presencia de una onda P picuda con ramas simétricas en el electrocardiograma?",
+    "opciones": {
+      "a": "Crecimiento de la auricula derecha",
+      "b": "Crecimiento de la aurícula izquierda",
+      "c": "Crecimiento del ventriculo derecho",
+      "d": "Crecimiento del ventrículo izquierdo"
+    },
+    "correcta": "a",
+    "explicacion": "La onda P refleja la despolarización auricular. Una onda P de alto voltaje y amplia traduce agrandamiento auricular derecha.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-008",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 50 años, que consulta por dolor precordial típico, de 30 minutos de duración, en un hospital sin hemodinamia y distante de centro de referencia y que en el ECG presenta elevación del segmento ST en cara anterior? Tiene antecedentes de tabaquismo, dislipemia y sobrepeso.",
+    "opciones": {
+      "a": "Administrar aspirina y clopidogrel en altas dosis",
+      "b": "Indicar tratamiento anticoagulante con heparina de bajo peso molecular",
+      "c": "Solicitar traslado a otro centro cuando sea posible",
+      "d": "Indicar tratamiento con fibrinoliticos"
+    },
+    "correcta": "d",
+    "explicacion": "Varón de 50 años + factores de riesgo CV + dolor precordial + elevación del ST en el ECG = SCACEST = tratamiento de reperfusión urgente (angioplastia o fibrinolisis). El objetivo del tratamiento del SCACEST es la apertura de la arteria ocluida lo antes posible, ya que cuanto antes se consiga la reperfusión, menor es el tamaño del infarto y más improbables las complicaciones (\"el tiempo es músculo cardiaco\"). Cuanto antes se realice la reperfusión en el SCACEST, mejor será el pronóstico, tanto a corto como a largo plazo. Si el tiempo de traslado hasta el centro para realizar el cateterismo se estima inferior a dos horas, traslado y cateterismo (angioplastia primaria). Si el tiempo de traslado desde el sitio donde se diagnostica el infarto hasta el centro más cercano con capacidad de angioplastia se estima que es mayor de dos horas: fibrinolisis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-009",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección ante una fibrilación auricular aguda, con descompensación hemodinámica, sin cardiopatía estructural?",
+    "opciones": {
+      "a": "Betabloqueantes",
+      "b": "Cardioversión electrica",
+      "c": "Antiagregación",
+      "d": "Amiodarona"
+    },
+    "correcta": "b",
+    "explicacion": "Todas las taquiarritmias que provocan inestabilidad hemodinámica se tratan mediante cardioversión eléctrica inmediata.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-010",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿Cuál de los siguientes marcadores es más sensible y específico para el diagnóstico de un infarto agudo de miocardio?",
+    "opciones": {
+      "a": "LDH",
+      "b": "Troponinas",
+      "c": "CPK",
+      "d": "GOT"
+    },
+    "correcta": "b",
+    "explicacion": "Marcadores bioquímicos de necrosis miocárdica: Las cTn Te I cardiacas son proteinas responsables de la contracción de las fibras miocárdicas, por lo que su liberación en plasma indica la existencia de lesión miocárdica con alta sensibilidad y especificidad (> 90%); por ello, son los marcadores de elección. En pacientes con infarto del miocardio (IM), las cTn empiezan a detectarse en plasma a las 3 h (incluso antes cuando se determinas las cTn de alta sensibilidad) y suelen alcanzar un pico máximo a las 24 h, excepto en los IM pequeños cuyo pico máximo puede ocurrir a las 6 h; por ello, su análisis debe realizarse siempre en el ingreso y repetirse a las 3-6 h; si se confirma el diagnóstico de IM, deben repetirse cada 12-24 h hasta su normalización para poder estimar el tamaño de la necrosis; también se repetirá su análisis cada vez que aparezca un nuevo episodio de dolor torácico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-011",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Una mujer de 70 años, con antecedentes de IAM hace 10 meses, acude a la guardia acompañada por familiares por presentar episodio sincopal, palpitaciones, sudoración y malestar general. Al examen físico se encuentra lúcida, normotensa y taquicárdica. El ECG presenta ritmo regular, FC 170 lpm, QRS de 180 mseg. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Aleteo auricular",
+      "b": "Fibrilación auricular",
+      "c": "Taquicardia supraventricular",
+      "d": "Taquicardia ventricular"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Datos positivos del caso: Mujer de 70 años. Antecedente importante: IAM hace 10 meses, sustrato para arritmias ventriculares. Presenta sincope, palpitaciones, sudoración (sintomas de compromiso hemodinámico transitorio). ECG: Ritmo regular. FC: 170 Ipm. QRS ancho (180 mseg). Opciones: • Taquicardia ventricular = CORRECTA. En un paciente con antecedente de IAM y un QRS muy ancho (>140 mseg), el diagnóstico más probable es taquicardia ventricular monomórfica sostenida. El ritmo regular y la clínica acompañan. Es la arritmia más temida post-IAM. • Fibrilación auricular = INCORRECTA. La FA se caracteriza por ritmo irregularmente irregular y ausencia de ondas P, no por ritmo regular como en este caso. • Aleteo auricular = INCORRECTA. El flutter auricular puede tener respuesta ventricular rápida (150 lpm aprox.), pero el QRS es angosto salvo que exista bloqueo de rama previo o conducción aberrante. Aquí el QRS es muy ancho y la paciente tiene antecedente de cardiopatia isquémica. • Taquicardia supraventricular = INCORRECTA. Las TSV suelen ser de QRS estrecho, salvo que exista aberrancia. En un paciente post-IAM, con QRS de 180 mseg, la probabilidad de TSV con aberrancia es muy baja frente a la de TV.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-012",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 56 años, hipertenso en tratamiento con 12,5 mg/día de carvedilol, que presenta desde hace 6 horas palpitaciones asociadas a disnea. En el examen físico presenta TA: 140/85 mmHg, sin signos de insuficiencia cardiaca. En el ECG se observa taquicardia con ausencia de onda P, QRS conservado y frecuencia cardíaca 170 latidos/minuto?",
+    "opciones": {
+      "a": "Realizar cardioversión eléctrica inmediata",
+      "b": "Realizar cardioversión farmacológica con amiodarona",
+      "c": "Realizar tratamiento con digoxina",
+      "d": "Realizar tratamiento con lidocaína endovenosa"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Datos positivos del caso: Paciente de 56 años, hipertenso, en tratamiento con carvedilol + Cuadro: palpitaciones + disnea desde hace 6 horas + TA estable: 140/85 mmHg, sin signos de insuficiencia cardíaca ni shock + ECG: taquicardia regular, QRS estrecho, sin ondas P visibles, FC 170 Ipm = cuadro compatible con fibrilación auricular de inicio reciente (menos de 48 horas). Análisis de opciones: • Cardioversión farmacológica con amiodarona opción CORRECTA. El paciente está hemodinámicamente estable. El inicio de la fibrilación auricular es menor a 48 horas, por lo que puede intentarse cardioversión (eléctrica o farmacológica) sin anticoagulación previa prolongada. La amiodarona IV es una de las drogas de elección en FA de inicio reciente, especialmente en pacientes con hipertensión e intolerancia a la taquicardia. . Cardioversión eléctrica inmediata = INCORRECTA. Indicada en pacientes con FA y compromiso hemodinámico (hipotensión, angina, edema agudo de pulmón, shock). Aquí está estable, por lo que no corresponde la urgencia de la CVE. • Tratamiento con digoxina = INCORRECTA. La digoxina se utiliza para control de frecuencia en FA, pero no es útil para cardioversión ni en el contexto agudo de inicio reciente. Además, tiene inicio de acción lento. Tratamiento con lidocaina EV = INCORRECTA. La lidocaína se utiliza para taquicardias ventriculares, no en fibrilación auricular. Respuesta correcta: Realizar cardioversión farmacológica con amiodarona.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-013",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿En qué región del corazón se encuentra la necrosis si en el ECG se observa un supradesnivel del ST en las derivaciones DII, DIII y aVF?",
+    "opciones": {
+      "a": "Apical",
+      "b": "Basal anterior",
+      "c": "Anterior",
+      "d": "Diafragmática"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. La elevación del ST en DII, DIII y aVF corresponde al territorio inferior del corazón. El infarto inferior suele deberse a la oclusión de la arteria coronaria derecha (o, en menor proporción, la circunfleja). A este territorio también se lo denomina cara diafragmática del corazón.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-014",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Joaquín de 65 años llega a la guardia por presentar dolor retroesternal de 2 hs de evolución asociado a náuseas, sudoración y lumbalgia. Refiere que esa mañana estuvo haciendo jardinería en su casa por varias horas cuando comenzó el dolor. Como antecedentes tiene HTA en tratamiento con enalapril y bisoprolol, dislipemia en tratamiento con rosuvastatina y litiasis biliar en plan quirúrgico. Al examen físico presenta FC 70 l/min, TA 110-70 mmHg, temperatura 36,7 7C. Abdomen blando, depresible, doloroso en epigastrio, sin defensa ni reacción peritoneal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome coronario agudo.",
+      "b": "Pericarditis aguda",
+      "c": "Ulcera gástrica perforada.",
+      "d": "Colecistitis aguda."
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Datos positivos del caso clinico: Varón de 65 años + FRCV HTA, dislipemia + Dolor retroesternal de 2 horas de evolución, asociado a náuseas y sudoración + Inicio durante esfuerzo (jardinería varias horas). Al examen: signos vitales estables, sin fiebre. Abdomen: dolor epigástrico leve, sin defensa ni reacción peritoneal (no orienta a abdomen agudo quirúrgico). Diferencial de diagnósticos propuestos • Sindrome coronario agudo (SCA): dolor retroesternal prolongado, opresivo, con irradiación atípica (lumbalgia), acompañado de síntomas vegetativos (náuseas, sudoración). Desencadenado por esfuerzo -> muy compatible. . Pericarditis aguda: dolor suele ser punzante, se modifica con la posición, no tipicamente con el esfuerzo. Colecistitis aguda: dolor en hipocondrio derecho, fiebre, Murphy positivo. No hay en este caso. . Úlcera gástrica perforada: dolor abdominal intenso, peritonitis (defensa, rebote). No presente. Diagnóstico más probable: Sindrome coronario agudo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-015",
+    "materia": [
+      "cardiologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Otras preguntas de diagnóstico por imágenes"
+    ],
+    "enunciado": "Un varón de 56 años acude a la consulta por episodios de dolor torácico que se presentan al acelerar la marcha o subir escaleras y ceden con el reposo, de aproximadamente 3 meses de evolución. Tiene como antecedente HTA tratada con inhibidores de la ECA y en varios ECG de control de los últimos años presenta signos de hipertrofia ventricular izquierda. ¿Cuál es la prueba más adecuada para arribar al diagnóstico?",
+    "opciones": {
+      "a": "Coronariografía",
+      "b": "Gammagrafia isotópica",
+      "c": "Prueba ergométrica convencional",
+      "d": "Holter de 24 hs"
+    },
+    "correcta": "b",
+    "explicacion": "Ante la sospecha clínica de cardiopatía isquémica estable (angina estable), debemos perseguir dos objetivos: . Excluir o confirmar el diagnóstico. . Establecer el pronóstico y detectar pacientes de alto riesgo. Las pruebas funcionales de detección de isquemia consisten en provocar isquemia y detectarla: Para provocar la isquemia puede emplearse ejercicio fisico (cinta rodante o cicloergómetro) o fármacos (dobutamina, dipiridamol). Para detectar la isquemia pueden emplearse el ECG (poca sensibilidad y especificidad, si se recuerda la cascada isquémica), la ecocardiografia de estrés o la gammagrafia isotópica (más sensibles y específicas que la prueba de esfuerzo). Pueden utilizarse diferentes combinaciones entre ellas (ergometria convencional, ergometría isotópica, dobutamina-gammagrafia isotópica, dipiridamol-gammagrafia isotópica, ecocardiografia de esfuerzo, ecocardiografia-dobutamina, entre otras.) en función de las caracteristicas del paciente. Ergometría convencional: consiste en realizar esfuerzo en una cinta rodante o en un cicloergómetro para desencadenar dolor y cambios electrocardiográficos. Suele realizarse mediante protocolo de Bruce, con aumento progresivo de la velocidad y la pendiente de la cinta. Se considera concluyente si el paciente alcanza el 85% de su frecuencia cardiaca máxima teórica (220-edad). Una prueba es positiva si aparecen sintomas (dolor torácico durante el esfuerzo que cede al descansar) o si se observan alteraciones en el ECG (descenso o ascenso del segmento ST). Se considera una ergometría de alto riesgo si cumple alguno de los siguientes criterios (el número del diablo: 666): Sintomas antes del minuto: 6. • Descenso del segmento ST en 6 derivaciones o más. • Alteraciones en el ECG más allá del minuto 6 tras finalizar el esfuerzo. En estos casos, es necesario realizar un cateterismo por la alta probabilidad de que exista enfermedad coronaria importante. La ergometria convencional es poco sensible y específica, especialmente en mujeres. Además, requiere un ECG basal con repolarización normal, ya que la prueba no será valorable si existen alteraciones basales en la repolarización: bloqueo de rama izquierda, hipertrofia ventricular izquierda, impregnación digitálica, preexcitación o ritmo de marcapasos. Gammagrafia isotópica (ergometría isotópica); la provocación de la isquemia puede realizarse mediante estrés físico (cinta rodante o cicloergómetro) o farmacológico (dobutamina o dipiridamol). Se administra un radiotrazador (tecnecio o talio) en el momento de máximo estrés miocárdico, que se une solo al tejido miocárdico viable y además lo hace de forma proporcional a su perfusión, y por tanto mediante el análisis por tomografia por emisión de fotón único (SPECT) se puede obtener información sobre su perfusión y viabilidad. Se debe obtener, por tanto, una imagen durante el estrés miocárdico y otra en reposo. El tejido sano tiene captación normal en esfuerzo y en reposo; el tejido isquémico pero viable tiene mayor captación en reposo que en esfuerzo y, por último, el tejido necrótico no tiene captación ni en esfuerzo ni en reposo. La gammagrafia isotópica permite, por tanto, detectar, cuantificar y localizar el territorio miocárdico isquémico. Ecocardiografía de estrés: se trata de analizar la contractilidad del miocardio sometiendo al corazón a estrés, mediante ejercicio fisico (cicloergómetro o cinta rodante) o bien mediante administración de fármacos (dobutamina o dipiridamol). La dobutamina, con efectos inotrópico y cronotrópico positivos, aumenta la demanda miocárdica de oxígeno, simulando el efecto del ejercicio físico; el dipiridamol, en cambio, tiene efecto vasodilatador sobre las coronarias sanas pero no vasodilata las enfermas, por lo que produce un fenómeno de robo coronario que desencadena en isquemia. La ecocardiografia de estrés tiene una rentabilidad diagnóstica similar a la ergometria isotópica pero superior a la prueba de esfuerzo convencional. Cuando la isquemia es extensa (enfermedad del tronco coronario izquierdo, enfermedad multivaso), puede observarse dilatación de la cavidad ventricular izquierda durante el pico máximo de esfuerzo, fenómeno que implica mal pronóstico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-016",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Cuál es criterio electrocardiográfico de fibrilación auricular?",
+    "opciones": {
+      "a": "Ondas P de distinta morfologia y ondas R a intervalos irregulares.",
+      "b": "Ondas R polimórficas e irregulares, ondas auriculares regulares.",
+      "c": "Ondas R en intervalos irregulares, ausencia de ondas P y ondas auriculares polimorficas",
+      "d": "Ausencia de ondas P, ondas auriculares regulares y monomórficas."
+    },
+    "correcta": "c",
+    "explicacion": "En la Fibrilación auricular en el ECG encontramos una linea de base ondulante, sin onda P, con pequeñas deflexiones positivas, y unos intervalos R-R irregularmente irregulares.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-017",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Varón de 72 años con antecedentes de hipertensión arterial y obesidad que es traído a la guardia del hospital por presentar dolor torácico, sudoración intensa, mareos y vómitos de dos horas de evolución. Al examen físico presenta frialdad periférica, TA: 70-40 mmHg, aumento de la presión venosa yugular durante la inspiración y pulso paradójico, sin evidencia de edema pulmonar en la auscultación. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Rotura del septo interventricular basal.",
+      "b": "Afectación de ventriculo derecho.",
+      "c": "Pseudoaneurisma ventricular inferobasal.",
+      "d": "Rotura del músculo papilar posteromedial mitral."
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Infarto del ventriculo derecho: puede aparecer como complicación de un IAM inferior, y siempre se debe a la oclusión de la arteria coronaria derecha, que irriga el ventriculo derecho en prácticamente el 100% de los seres humanos. Se manifiesta en las primeras horas del infarto, como hipotensión arterial sostenida, con signos de congestión venosa sistémica (ingurgitación yugular) y una excelente situación respiratoria, con radiografia de tórax normal y presiones capilares pulmonares normales (como el ventrículo derecho no eyecta sangre, esta no llega a los pulmones, que se encuentran limpios). (correcta) Comunicación interventricular post-infarto: ocurre entre los días 3-6 del infarto. Se manifiesta como deterioro hemodinámico brusco y signos de insuficiencia cardiaca. Se ausculta un soplo sistólico rudo en el borde esternal izquierdo en banda. El diagnóstico se confirma con ecocardiografia, pudiendo observarse una comunicación interventricular apical (más frecuente en infartos anteriores) o en la parte más basal del septo (más habitual en infartos inferiores). También puede observarse el caracteristico salto oximétrico: con un catéter situado en las cavidades derechas, se observa una saturación mucho mayor en el ventriculo derecho que en la auricula derecha, debido al paso de sangre oxigenada del ventriculo izquierdo al ventriculo derecho que aumenta la saturación de la sangre en el ventriculo derecho. El tratamiento pasa por implantar un balón de contrapulsación/ECMO y cirugia urgente para el cierre de la comunicación interventricular. Rotura del músculo papilar: se observa más frecuentemente en infartos inferiores, por rotura del músculo papilar inferomedial, aunque puede producirse en infartos anteriores por rotura del músculo papilar anterolateral. Se produce insuficinecia mitral grave aguda, que provoca edema agudo de pulmón de inicio brusco, asi como inestabilidad hemodinámica. Si el paciente lleva implantado un catéter en la arteria pulmonar (catėter de Swan-Ganz) aparecen ondas V gigantes, coincidiendo con la contracción ventricular. El soplo que genera la insuficiencia mitral puede ser poco Ilamativo. El tratamiento incluye balón de contrapulsación y cirugía urgente para sustituir la válvula por una prótesis mitral. Pseudoaneurisma ventricular inferobasal: Ruptura miocárdica en la zona de infarto y contención por tejidos adyacentes. Más frecuente en región posterior o diafragmática. Provoca derrame pericárdico progresivo y taponamiento de instauración más lenta (de horas a días). Se diagnostica por ecocardiografía, aunque puede emplearse la TC cardiaca con contraste para diferenciar la naturaleza del derrame (inflamatorio frente a hemopericardio). El tratamiento es quirúrgico, mediante cierre de la rotura con un parche.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-018",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Una mujer de 56 años, tabaquista, con antecedentes de hipertensión arterial tratada con 10 mg/dia de enalapril, consulta a la guardia porque tiene cefalea, dolor torácico, náuseas, sudoración intensa y parestesias de miembros superiores. La sintomatología apareció a los 30 minutos de recibir la noticia que su hijo tuvo un accidente. En el examen físico se encuentra ansiosa, sudorosa, frecuencia cardíaca: 96 latidos por minuto, tensión arterial: 142-87 mmHg. Sin otros hallazgos patológicos. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar tomografia de cerebro e interconsulta con neurologia.",
+      "b": "Realizar ECG y evaluar según resultado.",
+      "c": "Administrar un ansiolítico y seguimiento ambulatorio.",
+      "d": "Administrar una dosis de enalapril más paracetamol y seguimiento ambulatorio."
+    },
+    "correcta": "b",
+    "explicacion": "La forma de presentación más habitual del SCA es en forma de dolor torácico prolongado en reposo, más intenso que el de la angina estable. Cuando la isquemia es intensa, puede acompañarse de otros síntomas como sudoración, náuseas, disnea, debilidad o sincope, o ser los únicos sintomas (equivalente anginoso); ello es más frecuente en mujeres, pacientes de edad avanzada o diabetes mellitus (DM). En ocasiones, especialmente en personas de edad avanzada, diabéticos; y con mayor frecuencia en mujeres, la isquemia miocárdica se manifiesta con otros sintomas (disnea, dolor dorsal, náuseas y vómitos sin dolor, entre otros.). Para estimar la probabilidad de que un dolor torácico sea anginoso, se valoran tres caracteristicas: • Que sea en la región central del tórax (retroesternal), y de unas caracteristicas y duración tipicas. Un dolor torácico de pocos segundos o varios dias difícilmente puede ser de origen coronario. • Que aparezca con el estrés, ya sea físico (esfuerzo) o emocional. • Que desaparezca con el reposo o los nitratos (no lo presenta) Cumple dos de ellas = angina atipica. La mujer tiene FRCV. A todo paciente con dolor torácico agudo de reposo se le debe realizar (e interpretar) un ECG de 12 derivaciones en los primeros 10 minutos tras su primer contacto médico. El ECG es fundamental para establecer el diagnóstico y decidir la estrategia terapéutica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-019",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Paciente de 67 años, HTA y dislipidémico, es traído a la guardia por presentar dolor torácico opresivo de 4 horas de evolución, con intensa sudoración asociada. Se realiza un electrocardiograma que muestra elevación convexa del ST de 4 mm en DII, DIII y aVF, con descenso del ST de 3 mm en V1 - V3 ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "tratamiento médico inicial y cine coronariografia dentro de las 72hs",
+      "b": "angioplastia coronaria percutánea",
+      "c": "tratamiento fibrinolítico inmediato",
+      "d": "cirugía de revascularización miocárdica"
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta clásica de tratamiento de SCACEST. El objetivo del tratamiento del SCACEST es la apertura de la arteria ocluida lo antes posible, ya que cuanto antes se consiga la reperfusión, menor es el tamaño del infarto y más improbables las complicaciones (\"el tiempo es músculo cardíaco\"). Cuanto antes se realice la reperfusión en el SCACEST, mejor será el pronóstico, tanto a corto como a largo plazo. Paciente con factores de riesgo cardiovascular, dolor torácico opresivo, elevación del segmento ST=SCACEST= tratamiento de reperfusión urgente (angioplastia primaria o fibrinolisis). La angioplastia coronaria percutánea primaria (ACTP) constituye el tratamiento de elección en el IMCEST siempre y cuando pueda administrarse en menos de 2hs desde el momento del diagnóstico; en caso contrario, es preferible realizar fibrinólisis inmediata. (respuesta correcta) Siempre recordar que se debe elegir el tratamiento de reperfusión desde el momento de realizado el diagnóstico, desde ahí comienzan a contarse esas 2 hs para hacer o no hacer ACTP.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-020",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un paciente de 21 años consulta a la guardia por presentar palpitaciones y mareos de 3 horas de evolución que comenzó subitamente con el esfuerzo. Tiene antecedente de diagnóstico de Síndrome de Wolff Parkinson White. Al ingreso presenta TA: 120/60 mm Hg FR: 22/min y SatO2: 99%, con examen físico normal. El ECG muestra taquicardia regular de180 lpm con complejos QRS angostos. ¿Cuál es el tratamiento inicial en la guardia?",
+    "opciones": {
+      "a": "Administración de verapamilo 2,5 a 5 mg I.V",
+      "b": "Digitalización rápida y continuar con dosis de mantenimiento por V.O. a 0,125 mg/dia",
+      "c": "Administración de adenosina 3 mg IV en bolo rápido",
+      "d": "Ablación de haz aberrante por radiofrecuencia"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Datos positivos del caso: Varón 21 años + Antecedente: Síndrome de Wolff- Parkinson-White (WPW) + Consulta por palpitaciones súbitas y mareos, inicio con esfuerzo + Signos vitales: estable (TA 120/60, Sato, 99%) + ECG: taquicardia regular, QRS angosto, FC 180 Ipm. Esto sugiere una taquicardia supraventricular paroxistica (probablemente por reentrada AV ortodrómica) en el contexto de WPW. Análisis de opciones: • Administración de adenosina 3 mg IV en bolo rápido = CORRECTA. En pacientes estables con taquicardia supraventricular regular de QRS estrecho, la adenosina IV es el fármaco de elección. Es eficaz y segura incluso en WPW cuando se trata de una taquicardia ortodrómica con QRS estrecho. El efecto es transitorio y puede interrumpir la reentrada. • Ablación de haz aberrante por radiofrecuencia = INCORRECTA. Es el tratamiento definitivo en WPW, pero no es la conducta inicial en una guardia con crisis aguda. Se plantea en forma electiva tras estabilización. • Digitalización rápida con digoxina = INCORRECTA. Contraindicado en WPW, ya que la digoxina (al igual que verapamilo y otros bloqueadores de nodo AV) favorece la conducción por la vía accesoria y puede desencadenar fibrilación ventricular. • Verapamilo IV = INCORRECTA. Al igual que la digoxina, está contraindicado en WPW, pues bloquea el nodo AV y facilita la conducción exclusiva por la via accesoria, aumentando el riesgo de arritmias malignas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-021",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 67 años con antecedente de hipertensión e hiperlipidemia consulta a la guardia por dolor retroesternal opresivo y disnea de comienzo agudo. Se realiza ECG que muestra elevaciones del segmento ST en las derivaciones anterior y lateral y se administraron trombolíticos. Se interna en la unidad de cuidados intensivos cardíacos. La enfermera solicita su presencia en el cuarto del paciente, por haber detectado trazos inusuales en el monitor. El ECG presenta: ritmo regular, ausencia de onda p, presencia de 3 latidos ventriculares con QRS ancho y con una FC 76 lpm. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Ritmo idioventricular",
+      "b": "Ritmo sinusal normal con bloqueo de rama izquierda del haz de His",
+      "c": "Bloqueo cardiaco completo con un ritmo de escape de unión",
+      "d": "Bloqueo de salida nodal senoauricular Mobitz tipo"
+    },
+    "correcta": "a",
+    "explicacion": "Las arritmias ventriculares se caracterizan por originarse a nivel del ventriculo. (estas pueden ser los latidos ventriculares prematuros, la taquicardia ventricular y la fibrilacion ventricular). La taquicardia ventricular se diagnostica a nivel del electrocardiograma cuando se evidencian tres latidos ventriculares consecutivos a mas de 100 latidos por minuto. Cuando estos tres latidos ventriculares se producen con un ritmo menor a 100 latidos por minuto se denomina ritmo idioventricular y surgen frecuentemente en pacientes con isquemia miocardica. El ritmo idioventricular acelerado (RIVA) es un ritmo ventricular automático más rápido que la frecuencia sinusal, pero por lo general inferior a 100 ldtidos/min. Es frecuente que aparezcan en el contexto de un IM agudo y se suele observar habitualmente después de la reperfusión coronaria, no causando inestabilidad hemodinámica y normalmente termina de manera espontánea.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-022",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Romina de 33 años consultó por dolor torácico subesternal nocturno que la despierta durante el sueño. La paciente negó disnea y refirió que el dolor cede espontáneamente luego de 10 minutos. Como único antecedente es tabaquista. En el examen físico está normotensa y no tiene signos de insuficiencia cardíaca. Se le solicitó un electrocardiograma extendido ambulatorio (Holter) donde se observó elevación transitoria del segmento ST en las derivaciones V4, V5 y V6 que coinciden con los episodios de dolor por lo que se decidió realizar una angiografía coronaria que fue normal. ¿Cuál es el mejor tratamiento para esta paciente?",
+    "opciones": {
+      "a": "Clonazepam",
+      "b": "Diltiazem",
+      "c": "Omeprazol",
+      "d": "Heparina"
+    },
+    "correcta": "b",
+    "explicacion": "La paciente presenta dolor torácico nocturno, en reposo, subesternal, de corta duración y que despierta del sueño. El Holter muestra con elevación transitoria del ST en V4-V6 durante el dolor. Angiografia coronaria normal. Este cuadro es típico de angina variante o angina de Prinzmetal, causada por vasoespasmo coronario. El tratamiento de primera línea para la angina por vasoespasmo es un calcioantagonista, como diltiazem o verapamilo, que relajan la musculatura vascular y previenen el espasmo. Diltiazem es eficaz tanto para prevenir los episodios como para mejorar la perfusión coronaria. Los nitratos también pueden ser usados, pero no están entre las opciones dadas. Clonazepam: benzodiacepina, no tiene rol en el tratamiento de angina por vasoespasmo. Heparina: se usa en sindrome coronario agudo con trombosis, no en espasmo coronario con arterias normales. Omeprazol: puede usarse si se sospecha causa gastrointestinal, pero no es el tratamiento adecuado aquí.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-003-023",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "Se observa en el electrocardiograma de un paciente un QRS isodifásico en D1, ¿dónde se encuentra el eje cardíaco en el plano frontal?",
+    "opciones": {
+      "a": "90°",
+      "b": "0°",
+      "c": "60°",
+      "d": "30°"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Vamos a resolverlo paso a paso con la lógica de la determinación del eje eléctrico en el plano frontal: un QRS isodifásico en una derivación significa que el eje cardiaco es perpendicular a esa derivación. Aquí se menciona que el QRS es isodifásico en D1. La derivación D1 se ubica en el eje de 0° (linea horizontal hacia la izquierda). El eje eléctrico debe ser perpendicular a 0°, es decir: +90° -90°. Ahora, ¿cuál elegir? Un eje de +90° corresponde a un eje dirigido hacia abajo y ligeramente a la derecha: puede ser fisiológico o limite en adultos. Un eje de -90° seria un eje extremadamente izquierdo superior (patológico, hemibloqueo anterior izquierdo severo). En opciones dadas: 90° está presente, -90° no lo está. Respuesta correcta: el eje se encuentra en 90° (respuesta correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
+
