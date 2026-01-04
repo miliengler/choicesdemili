@@ -1,1 +1,284 @@
-[]
+[
+  {
+    "id": "cardiologia-002-001",
+    "materia": [
+      "cardiologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "En un paciente adulto con shock hipovolémico; ¿qué parámetros esperaría encontrar en el monitoreo hemodinámico? (referencias: VM: volumen minuto; RVS: resistencia vascular sistémica; PVC: presión venosa central).",
+    "opciones": {
+      "a": "PVC baja, VM bajo, RVS baja",
+      "b": "PVC alta, VM alto, RVS baja",
+      "c": "PVC alta, VM bajo, RVS alta",
+      "d": "PVC baja, VM bajo, RVS alta"
+    },
+    "correcta": "d",
+    "explicacion": "El shock hipovolémico es el tipo de shock mas frecuente. Se caracteriza por una disminución del volumen sanguineo que no logra suplir las demandas metabólicas del organismo por lo que se producen mecanismos compensatorios (aumento del tono simpático, liberación de hormonas de estres, colapso de vasos de capacitancia, disminución de la diuresis). El diagnóstico puede realizarse fácilmente si se conoce la fuente de pérdida de volumen (ejemplo: hemorragia visible), pero puede ser mas dificultoso en caso de hemorragias ocultas. Es indispensable distinguir el shock hipovolémico del shock cardiogénico debido a que su tratamiento es diferente. En el caso del shock hipovolémico los parámetros hemodinámicos que se pueden observar son: gasto cardiaco disminuido, presión capilar wedge y presión venosa central disminuidos y resistencias vasculares sistémicas aumentadas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-002",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "La exploración física de Juana, de 22 años quien consulta por palpitaciones arroja únicamente los siguientes datos semiológicos: R1 desdoblado, soplo mesosistólico en el área pulmonar, R2 con desdoblamiento fijo en relación a la respiración. Juana se halla compensada hemodinámicamente y no presenta antecedentes personales significativos. En relación a los hallazgos semiológicos: ¿Cuál es la presunción diagnóstica inicial?",
+    "opciones": {
+      "a": "Comunicación interventricular leve",
+      "b": "Comunicación Interauricular",
+      "c": "Coartación de aorta",
+      "d": "Estenosis pulmonar"
+    },
+    "correcta": "b",
+    "explicacion": "Teniendo el cuenta el caso clínico analizamos las distintas opciones que nos ofrecen: El segundo ruido está producido por el cierre de las válvulas aórtica y pulmonar. Existe un desdoblamiento fisiológico del segundo ruido, sobre todo en inspiración. Una exageración del desdoblamiento fisiológico con persistencia durante la espiración se observa en cardiopatias que retrasan o prolongan la duración de la sistole ventricular derecha, como en pacientes con bloqueo de la rama derecha, estenosis pulmonar e hipertensión arterial pulmonar, así como en cardiopatías que adelantan el cierre aórtico, como la insuficiencia mitral y la comunicación interventricular. La CIV: su diagnóstico se basa en la auscultación de un soplo pansistólico rudo, intenso, con frémito en el tercer y el cuarto espacio intercostal, que se irradia horizontalmente. El desdoblamiento fijo del 2º ruido, es decir, que no se modifica durante el ciclo respiratorio, puede verse en sujetos con comunicación interauricular; la falta de integridad del tabique interauricular hace que se pierda la independencia hemodinámica de las cámaras izquierdas y derechas, manteniéndose unos flujos de llenado ventriculares constantes durante el ciclo respiratorio (respuesta correcta). La estenosis pulmonar en la exploración física, destaca un clic protosistólico (coincidiendo con el momento en que se tiene que abrir la válvula), un soplo sistólico eyectivo, frémito en el borde esternal izquierdo alto y un componente pulmonar del segundo ruido disminuido. Coartación de aórta: en general, el adulto se presenta muy frecuentemente con hipertensión arterial en las extremidades superiores, refractaria al tratamiento médico. La sospecha clínica inicial basada en la existencia de pulsos femorales débiles y retrasados, diferencia tensional de los miembros superiores e inferiores mayor de 20 mm Hg y soplo, junto con grados variables de hipertrofia ventricular izquierda en el ECG y la radiología torácica, puede confirmarse mediante ecocardiografia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-003",
+    "materia": [
+      "pediatria",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatías congénitas",
+      "Cardiología básica"
+    ],
+    "enunciado": "Margarita, de 10 años de edad, es traída a la consulta para control de salud. En el examen físico, detecta que presenta soplo sistólico eyectivo a predominio en foco aórtico, que no irradia. Se atenúa al pasar de decúbito dorsal a la posición sentada. Frente a este cuadro, ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Insuficiencia aórtica.",
+      "b": "Estenosis aórtica.",
+      "c": "Soplo funcional.",
+      "d": "Insuficiencia mitral."
+    },
+    "correcta": "c",
+    "explicacion": "Los soplos cardiacos son un hallazgo frecuente durante el examen físico en pediatría. Se reporta que hasta 50% de los niños fuera del periodo neonatal cursan con algún soplo; sin embargo, menos de 1% de estos soplos se asocia con cardiopatia estructural. Es muy importante diferenciar las características clínicas de un soplo inocente de uno patológico para referirlo de forma adecuada. La mayoría de los soplos en niños se originan a través de flujos sanguíneos normales en ausencia de patologia anatómica cardiaca o de los grandes vasos. Ante la sospecha de un soplo inocente no se requieren de estudios de extensión, sólo seguimiento. Se ha demostrado que solicitar un electrocardiograma o una radiografia de tórax, a todos los niños con soplos en la exploración física, no tiene algún beneficio y en ocasiones confunde más al médico, provocando errores en el diagnóstico. Los soplos inocentes comparten ciertas característica que permite su sospecha: Sensible a los cambios de posición o la respiración. No holosistólico. No asociado a clic o galopes. Limitado a una pequeña área y no irradiados. Baja amplitud. No suena áspero. Ocurre durante y limitado sólo a la sístole.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-004",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "¿Cuál de los siguientes cuadros es compatible con un shock séptico? (VMC = Volumen minuto cardiaco; RAP = resistencia arterial periférica)",
+    "opciones": {
+      "a": "Hipotensión arterial; VMC disminuido; RAP elevada; Taquicardia",
+      "b": "Hipotensión arterial; VMC normal; RAP elevada; Bradicardia",
+      "c": "Hipotensión arterial; VMC disminuido en un 20%; RAP normal; Taquicardia",
+      "d": "Hipotensión arterial; VMC elevado; RAP baja; Taquicardia"
+    },
+    "correcta": "d",
+    "explicacion": "El shock séptico se caracteriza por presentar sepsis e hipotensión arterial que no responde a la expansión con cristaloides. Para evaluar el estado hemodinámico del shock es de utilidad el catéter en la arteria pulmonar. El shock séptico presenta un patrón hemodinámico caracterizado por gasto cardiaco elevado, resistencias vasculares sistémicas disminuidas y taquicardia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-005",
+    "materia": [
+      "pediatria",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatías congénitas",
+      "Cardiología básica"
+    ],
+    "enunciado": "Margarita, de 10 años de edad, concurre a control de salud. Al examen físico, usted detecta que presenta soplo sistólico eyectivo a predominio en foco aórtico, que no irradia. Se atenúa al pasar de decúbito dorsal a la posición sentada. Frente a esto ¿Cuál es su sospecha?",
+    "opciones": {
+      "a": "Soplo funcional",
+      "b": "Insuficiencia mitral",
+      "c": "Insuficiencia aórtica",
+      "d": "Estenosis aórtica"
+    },
+    "correcta": "a",
+    "explicacion": "Los soplos cardiacos son un hallazgo frecuente durante el examen físico en pediatria. Se reporta que hasta 50% de los niños fuera del periodo neonatal cursan con algún soplo; sin embargo, menos de 1% de estos soplos se asocia con cardiopatia estructural. Es muy importante diferenciar las características clínicas de un soplo inocente de uno patológico para referirlo de forma adecuada. La mayoría de los soplos en niños se originan a través de flujos sanguineos normales en ausencia de patología anatómica cardiaca o de los grandes vasos. Ante la sospecha de un soplo inocente no se requieren de estudios de extensión, sólo seguimiento. Se ha demostrado que solicitar un electrocardiograma o una radiografía de tórax, a todos los niños con soplos en la exploración física, no tiene algún beneficio y en ocasiones confunde más al médico, provocando errores en el diagnóstico. Los soplos inocentes comparten ciertas caracteristica que permite su sospecha: Sensible a los cambios de posición o la respiración. No holosistólico. No asociado a clic o galopes. Limitado a una pequeña área y no irradiados. Baja amplitud. No suena áspero. Ocurre durante y limitado sólo a la sístole.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-006",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "¿En qué momento del ciclo cardíaco se produce la apertura de las válvulas sigmoideas?",
+    "opciones": {
+      "a": "Comienzo de la contracción isovolumétrica sistólica",
+      "b": "Final de la sistole",
+      "c": "Final de la fase isovolumétrica sistólica",
+      "d": "Inicio del llenado ventricular"
+    },
+    "correcta": "c",
+    "explicacion": "Fase de contracción isovolumétrica (sístole isovolumétrica): comienza cuando los ventriculos inician la contracción, lo que provoca el cierre de las válvulas auriculoventriculares (mitral y tricúspide). Durante esta fase, las válvulas sigmoideas (aórtica y pulmonar) todavia permanecen cerradas porque la presión intraventricular aún no supera la presión en la aorta y en la arteria pulmonar. Cuando la presión intraventricular supera la presión en la aorta y pulmonar: se produce la apertura de las válvulas sigmoideas (aórtica y pulmonar). Esto marca el final de la fase isovolumétrica y el inicio de la fase de eyección ventricular. Análisis de opciones: Final de la fase isovolumétrica sistólica = CORRECTA. Justo en ese momento se abren las válvulas sigmoideas para permitir la eyección de sangre hacia la circulación sistémica y pulmonar. Final de la sístole = INCORRECTA. En el final de la sistole, la presión intraventricular cae, lo que provoca el cierre de las sigmoideas, no su apertura. Comienzo de la contracción isovolumétrica sistólica = INCORRECTA. Aquí se cierran las válvulas auriculoventriculares, pero las sigmoideas siguen cerradas. Inicio del llenado ventricular = INCORRECTA. Eso ocurre en la diástole temprana, tras el cierre de las válvulas sigmoideas y la apertura de las auriculoventriculares.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-007",
+    "materia": [
+      "cardiologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "Evaluación prequirúrgica"
+    ],
+    "enunciado": "Un paciente de 34 años cursa internación en UTI por accidente con traumatismo múltiple en la vía pública. Al cuarto día de internación muestra los siguientes parámetros hemodinámicos: presión venosa central (PVC): 4 mm Hg, presión de enclavamiento pulmonar (PCP): 3 mm Hg, índice cardíaco: 1,8 l/min/m2. ¿Cuál es el diagnóstico más probable? Nota: El Índice Cardíaco normal es 2,8-4,2 l/min/m2. La resistencia vascular sistémica: RVS = (PAM - PVC) / GC, donde PAM es la presión arterial media, GC es el gasto cardíaco y PVC es la presión venosa central. RVS: 1600-2400 dinas.seg.m2/cm5. Los valores de la PVC oscilan entre 2-10 cm H2O ó entre 6-12 mmHg, aproximadamente. La presión de enclavamiento capilar pulmonar es de 5 a 15 mmHg.",
+    "opciones": {
+      "a": "Shock Hipovolémico",
+      "b": "Valores hemodinámicos normales",
+      "c": "Shock cardiogénico",
+      "d": "Shock Séptico"
+    },
+    "correcta": "a",
+    "explicacion": "Datos positivos del caso clínico: PVC: 4 mmHg: bajo (normal-6-12 mmHg). PCP: 3 mmHg: bajo (normal ~5-15 mmHg). Índice cardíaco: 1,8 l/min/m2 disminuido (normal 2,8-4,2). Análisis de opciones: Shock hipovolémico: CORRECTA. En el shock hipovolémico, se caracteriza por bajas presiones de llenado (PVC y PCP bajas) por disminución del volumen intravascular. Disminución del índice cardíaco por menor retorno venoso. Esto concuerda con el paciente politraumatizado, donde la causa más probable es pérdida de volumen (sangrado). Shock séptico: INCORRECTA. En el shock séptico, el indice cardíaco suele estar normal o elevado en fases iniciales (hiperdinámico), aunque en fases tardias puede caer, pero tipicamente las presiones de llenado no están tan bajas, y el contexto clinico es distinto (infección). Shock cardiogénico: INCORRECTA. Se caracteriza por indice cardíaco bajo, pero con PVC y PCP elevadas (por congestión retrógrada debido a falla de bomba). Aquí ocurre lo contrario: PVC y PCP muy bajas. Valores hemodinámicos normales: INCORRECTA. Claramente no son normales: PVC y PCP están por debajo de lo fisiológico, e indice cardíaco muy reducido.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-008",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿De qué patología es característico un primer ruido de intensidad variable en la auscultación cardiaca?",
+    "opciones": {
+      "a": "Estenosis mitral.",
+      "b": "Insuficiencia cardíaca.",
+      "c": "Bloqueo completo de la rama derecha.",
+      "d": "Fibrilación auricular."
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes con fibrilación auricular la intensidad del 1er ruido variará en función de la duración de la diástole, siendo el 1er ruido más intenso cuando está precedido por diástoles cortas, donde la contracción ventricular sobreviene con las valvas en su máxima apertura, y siendo menos intenso cuando la diástole precedente es larga. En pacientes con bloqueo de la rama derecha se aprecia un desdoblamiento marcado del 1er ruido cardiaco. En la estenosis mitral se asocia a primer ruido intenso, no variable. En la insuficiencia cardiaca puede causar tercer ruido (S3), pero no caracteriza variabilidad del primer ruido.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-009",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Un paciente de 58 años lo consulta porque en un ecocardiograma solicitado para un apto deportivo se detecta dilatación ventricular izquierda con hipocinesia global y fracción de eyección de 38%, sin regionalidad ni valvulopatías significativas. Al interrogatorio refiere hipertensión arterial de larga data sin tratamiento. Al examen físico presenta Tensión Arterial 160/100 mmHg y frecuencia cardíaca de 90 latidos por minuto regular. El Electrocardiograma mostró ritmo sinusal con signos de hipertrofia ventricular izquierda. ¿Cuál de los siguientes es el tratamiento recomendado en esta etapa?",
+    "opciones": {
+      "a": "Anticoagulantes orales, bloqueantes cálcicos y antagonistas de la angiotensina.",
+      "b": "Betabloqueantes e inhibidores de la enzima convertidora de angiotensina.",
+      "c": "Aspirina, estatinas y betabloqueantes.",
+      "d": "Diuréticos de asa, aspirina e inhibidores de la enzima convertidora de angiotensina."
+    },
+    "correcta": "b",
+    "explicacion": "El paciente del caso clinico presenta como datos positivos: FEVI por debajo del 40% = IC con fracción de eyección (FE) reducida. En este caso el déficit de la contractilidad del miocardio es el resultado de la afección directa del músculo cardíaco, como sucede en la miocardiopatía dilatada o después de un infarto de miocardio, o puede ser secundario a una sobrecarga impuesta al corazón como consecuencia de una lesión valvular o de una hipertensión arterial de larga evolución. Antecedente de HTA de larga data. HVI en el ECG. Cuando la IC se debe a disfunción sistólica del ventriculo izquierdo, el tratamiento debe iniciarse cuando la fracción de eyección sea inferior al 45%-50%, aunque el paciente se halle asintomático (fases B y C de IC), los fármacos de elección son un IECA o un antagonista de los receptores de la angiotensina (ARA) en caso de contraindicación al IECA, acompañado de un bloqueante B-adrenérgico y un diurético. En este caso el tto más adecuado en esta etapa es: IECA + Betabloqueante. Recordar que: los Betabloqueantes: junto a los IECA, son fármacos de primera linea en el tratamiento de la IC con FE reducida, independientemente de la causa y de la clase funcional NYHA, por cuanto han demostrado una reducción adicional de la mortalidad de un 30%, disminución de los reingresos hospitalarios, mejoria de los síntomas y de la FEVI.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-010",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "General"
+    ],
+    "enunciado": "Un paciente de 56 años concurre a la consulta para control de salud. Tiene antecedentes de HTA en tratamiento. Presenta índice de masa corporal (IMC) de 25, Colesterol total 320 mg/dl, LDL 232 md/dl, es fumador y presenta un registro de TA 130/80 mmHg. ¿Cuál es el riesgo cardiovascular y la intervención más apropiada?",
+    "opciones": {
+      "a": "Muy alto riesgo cardiovascular. Se indica AAS y fármacos hipolipemiantes, actividad fisica y dieta hipograsa",
+      "b": "Riesgo cardiovascular medio. Se indica alimentación baja en grasas y actividad fisica en forma diaria y un nuevo control en 3 meses",
+      "c": "Riesgo cardiovascular bajo. Se indica AAS y cambios de hábitos de vida y nuevo control en 6 meses",
+      "d": "Alto riesgo cardiovascular. Se indica derivación al cardiólogo"
+    },
+    "correcta": "a",
+    "explicacion": "Su riesgo cardiovascular es MUY ALTO y se debe indicar AAS y fármacos hipolipemiantes, actividad fisica y dieta hipograsa. Personas sin enfermedad cardiovascular establecida, pero con al menos una de las siguientes condiciones: valor de colesterol total (CT) >= 310 mg/dl, colesterol LDL >= 230 mg/dl o una relación CT/CHDL > 8. En estos casos no es necesario utilizar la tabla de estratificación, y la persona debe incluirse en la máxima categoria de riesgo cardiovascular (\"muy alto riesgo\").",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-011",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "General"
+    ],
+    "enunciado": "Acude a su consultorio un paciente masculino de 48 años que refiere que, en el último control, hace más de dos años, le diagnosticaron hipercolesterolemia, no tomó medicación ni modificó hábitos de vida. Además, es tabaquista de aproximadamente 20 cigarrillos diarios, etilista, y niega otros antecedentes. Al examen físico presenta IMC 32, TA 140/90 mmHg. FC 86 lpm, FR 20 rpm, acantosis nigricans en región posterior del cuello, xantelasmas palpebrales. Resto del examen sin particularidades. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Sospecha Hipertensión arterial, inicia evaluación del paciente y cita para una 2da toma de presión arterial",
+      "b": "Sospecha Hipertensión de guardapolvo blanco e indica monitoreo domiciliario",
+      "c": "Establece el diagnóstico de Hipertensión arterial secundaria y solicitar estudios complementarios",
+      "d": "Establece el diagnóstico de Hipertensión arterial esencial e inicia tratamiento medicamentoso"
+    },
+    "correcta": "a",
+    "explicacion": "Nos encontramos ante un caso clínico en que tenemos que elegir conducta de acuerdo a las opciones que nos proponen. Datos positivos del caso clínico: TBQ, TA 140-90, IMC 32, acantosis nigricans en región posterior del cuello, xantelasmas palpebrales. Ante nuestro paciente en el que sospechamos HTA tenemos que confirmar el diagnóstico de HTA. Recordar que \"en personas de 18 años o más, se adopta como punto de corte para diagnosticar HTA en consultorio valores promediados (de al menos 2 tomas) de: - presión arterial sistólica iguales o mayores a 140 mmHg y/o - presión arterial diastólica iguales o mayores a 90 mmHg. En al menos dos consultas realizadas en diferentes dias.\" Conducta más adecuada: \"Sospecha Hipertensión arterial, inicia evaluación del paciente y cita para una 2da toma de presión arterial\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "cardiologia-002-012",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "General"
+    ],
+    "enunciado": "Según el Riesgo Cardiovascular Global (RCVG) ¿Cuál es la recomendación de simvastatina para un paciente con un riesgo mayor a 30%?",
+    "opciones": {
+      "a": "Simvastatina 40 mg/dia en personas de 40 a 75 años",
+      "b": "Simvastatina 20 mg/dia en personas de 40 a 75 años",
+      "c": "Simvastatina 40 mg/did en personas mayores de 35 años",
+      "d": "Individualizar la indicación según los niveles de colesterol"
+    },
+    "correcta": "a",
+    "explicacion": "Riesgo CV >= 30%: Los individuos de esta categoría tienen un MUY ALTO RIESGO de sufrir episodios cardiovasculares. En lo referente a indicación de simvastatina: 40 mg/día en personas de 40 a 75 años y de 20 mg en personas > 75 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
