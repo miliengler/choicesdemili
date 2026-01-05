@@ -1,1 +1,2238 @@
-[]
+[
+  {
+    "id": "infecto-002-001",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Neumonía"
+    ],
+    "enunciado": "Un varón de 46 años es derivado desde la guardia a la sala de internación de clínica médica con diagnóstico de neumonía de la comunidad. Al ingreso se encuentra confuso, temperatura axilar 38.5, TA 110-70, FC: 120 lpm, FR 30 por min. El laboratorio muestra como datos relevantes Glóbulos Blancos: 18000 por mm3 y creatinina de 2,7 mg %. ¿Cuál es la definición correcta de esta situación?",
+    "opciones": {
+      "a": "Sepsis severa",
+      "b": "Bacteriemia",
+      "c": "Sindrome de disfunción orgánica múltiple",
+      "d": "Shock séptico"
+    },
+    "correcta": "a",
+    "explicacion": "La disfunción orgánica potencialmente mortal causada por una respuesta inadecuada del paciente frente a una infección. La disfunción orgánica se define de forma operacional como un aumento agudo en la escala de SOFA mayor o igual a 2 (ASOFA ≥ 2). Sepsis = Sepsis grave/severa.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-002",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Neumonía"
+    ],
+    "enunciado": "Un varón de 45 años ingresa a la guardia por fiebre de 39°C, tos y expectoración de 24 hs de evolución. Al ingreso se presenta lúcido, TA 120/80 mm de Hg, FC 110 lpm, FR 24 rpm. Se auscultan estertores crepitantes en base derecha y la radiografía de tórax muestra presencia de patrón alveolar en la misma región. El laboratorio informa: Hto 41% Rto GB 15600/mm3, Creatinina 3,5 mg/dl, Hepatograma: BT 5,8 mg/dl, BD 2,7 mg/dl, GOT 100, GPT 175, Coagulograma: TP 25%, KPTT 175 seg. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Shock séptico",
+      "b": "Insuficiencia renal crónica reagudizada",
+      "c": "Insuficiencia hepática fulminante",
+      "d": "Sepsis severa/grave"
+    },
+    "correcta": "d",
+    "explicacion": "El concepto de sepsis ha desaparecido en la Tercera Conferencia de Consenso (Sepsis-3), de forma que sólo se definen como sepsis los cuadros que incluyen disfunción orgánica, y la definición es equivalente a la de «sepsis grave» de la Primera y la Segunda Conferencia de Consenso. \"disfunción orgánica potencialmente mortal causada por una respuesta inadecuada del paciente frente a una infección. La disfunción orgánica se define de forma operacional como un aumento agudo en la escala de SOFA mayor o igual a 2 (ΔSOFA ≥ 2). Sepsis = Sepsis grave/severa\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-003",
+    "materia": [
+      "infectologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un varón de 71 años con una neoplasia pancreática resecable se intervino realizándose un Whipple. Entre el 6°-7° día, cuando el paciente ya se encontraba iniciando tolerancia por vía oral, comienza con fiebre elevada. Aun así, también tenía la vía central para complementar la nutrición por vía parenteral. El estado general del paciente es bueno, y la exploración abdominal no muestra signos de dolor abdominal llamativo, presentando la herida un buen aspecto, sin eritema ni fluctuación. La analítica de sangre muestra 17.000 leucocitosis/mm3 con 94% de neutrofilia. Se extraen hemocultivos (x2) resultando ambos positivos. La radiografía de tórax y el sedimento urinario son normales. ¿Cuál es la causa más probable de este cuadro clínico?",
+    "opciones": {
+      "a": "Infección de la herida",
+      "b": "Neumonia postoperatoria",
+      "c": "Sepsis por catéter",
+      "d": "Dehiscencia anastomótica"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un paciente cursando postoperatorio que intercurre con fiebre, con buen estado general, en la exploración abdominal no presenta dolor y la herida quirúrgica se encuentra sin signos de infección, el cual se encontraba recibiendo alimentación parenteral con hemocultivos positivos. Debe considerarse como primer foco el catéter de alimentación parenteral, ya que al en 6-7mo día postoperatorio y considerado que inició alimentación parenteral desde el día cero, existe gran probabilidad que el catéter se encuentre colonizado. Por lo que debe considerarse como correcta infección asociada a catéter.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-004",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un lactante de 7 meses que presenta fiebre de 48 horas de evolución y en el examen físico se encuentra apático, tensión arterial: 60/40 mmHg, taquicárdico, pulsos débiles, taquipneico, extremidades frías y relleno capilar de 3 segundos? Los padres refieren que orina poco y se le realiza una medición de glucemia (Glucotest) 180 mg%.",
+    "opciones": {
+      "a": "Cetoacidosis diabética",
+      "b": "Trastorno metabólico",
+      "c": "Deshidratación",
+      "d": "Shock séptico"
+    },
+    "correcta": "d",
+    "explicacion": "La sepsis es el sindrome de respuesta inflamatoria sistémica (SIRS) producido por una infección comprobada o probable.\nSIRS se define por la presencia de dos o más de los siguientes: fiebre (o hipotermia), taquipnea, taquicardia, leucocitosis (o leucopenia o más de 90% de cayados).\nEl término shock séptico se reserva para aquellos pacientes con sepsis en los que persiste la hipotensión (volumen minuto cardiaco aumentado y resistencia arterial periférica baja) y la hipoperfusión periférica y disfunción multiorgánica pese a un correcto aporte de fluidos, requiriendo soporte inotrópico y vasopresor.\nEn el caso clinico de la pregunta el paciente presenta relleno capilar lento, hipotension y pulsos débiles: todos estos signos de shock que se suman al estado séptico manifestado por la taquicardia, taquipnea, y fiebre.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-005",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "¿Cuál de los siguientes cuadros es compatible con un shock séptico? (VMC= Volumen minuto cardiaco; RAP= resistencia arterial periférica)",
+    "opciones": {
+      "a": "Hipotensión arterial; VMC disminuido; RAP elevada; Taquicardia",
+      "b": "Hipotensión arterial; VMC disminuido en un 20%; RAP normal; Taquicardia",
+      "c": "Hipotensión arterial; VMC normal; RAP elevada; Bradicardia",
+      "d": "Hipotensión arterial; VMC elevado; RAP baja; Taquicardia"
+    },
+    "correcta": "d",
+    "explicacion": "El shock séptico se caracteriza por presentar sepsis e hipotensión arterial que no responde a la expansión con cristaloides. Para evaluar el estado hemodinámico del shock es de utilidad el catéter en la arteria pulmonar. El shock séptico presenta un patrón hemodinámico caracterizado por gasto cardiaco elevado, resistencias vasculares sistémicas disminuidas y taquicardia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-006",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Antibacterianos"
+    ],
+    "enunciado": "El imipenem:",
+    "opciones": {
+      "a": "Es muy sensible a la hidrólisis por parte de casi todas las beta-lactamasas.",
+      "b": "Tiene muy baja actividad sobre estreptococos, enterococos, estafilococos y listeria",
+      "c": "Posee biodisponibilidad vía oral cercana al 90%",
+      "d": "Es hidrolizado rápidamente por una dipeptidasa en la porción proximal del túbulo renal"
+    },
+    "correcta": "d",
+    "explicacion": "El imipenem es hidrolizado mediante dipeptidasa que se encuentra en el tubulo contorneado proximal por lo que se administra junto a cilastatina (un inhibidor de dicha enzima).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-007",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Antibacterianos",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Mujer de 86 años es trasladada a la guardia por sepsis de origen urinario que no ha respondido al tratamiento empírico con ciprofloxacina. Reside en un geriátrico de su obra social. Hemocultivos y urocultivos informan: E. Coli resistente a cefalosporinas, cepa productora de betalactamasas de espectro extendido. ¿Cuál es el tratamiento antibiótico más adecuado?",
+    "opciones": {
+      "a": "Ertapenem",
+      "b": "Amoxicilina-clavulánico",
+      "c": "Amikacina",
+      "d": "Trimetoprima sulfametoxazol"
+    },
+    "correcta": "a",
+    "explicacion": "Las betalactamasas de espectro extendido (BLEE) son un grupo heterogéneo de enzimas producidas por bacilos gram negativos (E.Coli y Klebsiella pneumoniae entre muchas otras) capaces de conferir resistencia contra todos los betalactamicos salvo los carbapenemes y algunas de ellas son resistentes a la acción de inhibidores de betalactamasas.\nResp correcta: Ertapenem",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-008",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "¿Cuál de estas opciones se corresponde con la definición de sepsis?",
+    "opciones": {
+      "a": "Infección abdominal o torácica grave",
+      "b": "Infección con presencia de gérmenes en sangre",
+      "c": "Infección de dos o más territorios de la economia",
+      "d": "Disfunción orgánica potencialmente mortal causada por una respuesta inadecuada del paciente frente a una infección. La disfunción orgánica se define de forma operacional como un aumento agudo en la escala de SOFA mayor o igual a 2 (ΔSOFA ≥ 2)"
+    },
+    "correcta": "d",
+    "explicacion": "Sepsis: Tercera Conferencia de Consenso (2016): disfunción orgánica potencialmente mortal causada por una respuesta inadecuada del paciente frente a una infección. La disfunción orgánica se define de forma operacional como un aumento agudo en la escala de SOFA mayor o igual a 2 (ΔSOFA ≥ 2).\nSepsis = Sepsis grave/severa.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-009",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Paciente de 40 años de edad, sin antecedentes de consideración. Ingresa en ambulancia a guardia de emergencias por cuadro de 4 días de evolución que comienza con rinitis, reiterados registros de fiebre, cefalea, vómitos, dolor abdominal, conducta errática. Durante la evaluación se constata afasia mixta. Fuerza y sensibilidad conservada en 4 miembros, sin signos meníngeos. Se solicita laboratorio con natremia 129 meq/l, leucocitosis, test HIV negativo. Tomografía axial computada de cerebro sin contraste con resultado normal. Ud. es el médico a cargo de la guardia. ¿Cuál es la conducta adecuada a seguir?",
+    "opciones": {
+      "a": "Solicitar por externo resonancia magnética nuclear de encéfalo con gadolinio y aguardar hasta resultado de la misma para toma de conducta.",
+      "b": "Comenzar reposición endovenosa de cloruro de sodio hipertónico e interconsultar a cirujano general.",
+      "c": "Comenzar reposición endovenosa de cloruro de sodio hipertónico con control de ionograma y evaluación en 2 horas.",
+      "d": "Realizar de urgencia punción lumbar diagnóstica y considerar inicio empirico con antibióticos y antivirales de acuerdo a resultado."
+    },
+    "correcta": "d",
+    "explicacion": "Estamos ante un paciente joven con un cuadro de 4 dias de evolución que comienza con rinitis, reiterados registros de fiebre, cefalea, vómitos, dolor abdominal, conducta errática. Durante la evaluación se constata afasia mixta. Fuerza y sensibilidad conservada en 4 miembros, sin signos meningeos. Se solicita laboratorio con natremia 129 meq/l, leucocitosis, test HIV negativo. Tomografia axial computada de cerebro sin contraste con resultado normal.\nDatos positivos rinitis (generalmente la meningitis bacteriana va precedida de una infección respiratoria superior, lo que facilita que las bacterias colonicen la nasofaringe. N. meningitidis, S. pneumoniae y Haemophilus influenzae son residentes habituales de la nasofaringe y la orofaringe.) + \"fiebre + cefalea + cefalea + vómitos + conducta errática + afasia mixta\".\nSospechamos meningitis aguda. TAC cerebro normal.\nConducta más adecuada: Realizar de urgencia punción lumbar diagnóstica y considerar inicio empirico con antibióticos y antivirales de acuerdo a resultado.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-010",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada ante la sospecha clínica de neumonía aguda de la comunidad?",
+    "opciones": {
+      "a": "Realizar tomografia de tórax a todos los pacientes antes de iniciar el tratamiento antibiótico",
+      "b": "Realizar estudios microbiológicos (esputo y hemocultivos) a todos los pacientes",
+      "c": "Realizar estudios microbiológicos a los pacientes con factores de riesgo y/o que requieran internación antes de iniciar el tratamiento",
+      "d": "Confirmar con estudios microbiológicos la etiología antes de iniciar el tratamiento"
+    },
+    "correcta": "c",
+    "explicacion": "La neumonia se define como la infección del parénquima pulmonar. La neumonia aguda adquirida en la comunidad se manifiesta con fiebre, tos productiva y disnea como manifestaciones mas importantes. Semiológicamente se puede constar aumento de las vibraciones vocales, rales crepitantes y en algunos casos la presencia de una respiración soplante entre otros hallazgos.\nLos síntomas clinicos a veces son poco definidos y se debe realizar una radiografia de tórax en todos los pacientes en los que se sospeche el diagnóstico. Esta permite evidencia la consolidación como un incremento de la atenuación tipicamente con broncograma aéreo. También permite estimar la extensión, si es bilateral o multilobar y si se asocia a derrame pleural que podría requerir un tratamiento específico.\nLa confirmación de la sospecha diagnóstica de neumonia (tanto sea por radiologia o por exámenes microbiológicos) no debe poner en riesgo el inicio precoz del tratamiento de los pacientes con signos y sintomas clinicos caracteristicos. En los servicios de salud en los que no se pueda realizar la radiografia, el diagnóstico de NAC puede ser clinico y basarse en el interrogatorio y en el examen fisico realizado por el médico. No obstante, siempre que se pueda es recomendable realizar una radiografía para confirmar el diagnóstico clinico y evitar el tratamiento antibiótico en infecciones respiratorias virales.\nLa confirmación etiológica de la neumonia, no es necesaria en la mayoría de los pacientes que se tratan en forma ambulatoria y evolucionan favorablemente.\nSi es necesaria en pacientes que requieren internación. Luego de la observación clinica y considerando la epidemiologia se deberá recolectar, una muestra de esputo (baciloscopía, gérmenes comunes, hongos, Legionella spp); dos muestras de hemocultivo, dos hisopados nasal y faringeo (uno para virologia y otro para atipicas) y el primer suero (periodo agudo) para atipicas. Esto nos permitirá conocer la etiologia de la infección por uno o más agentes y realizar el estudio de sensibilidad antibiótica.\nCuando el paciente recibió terapia antibiótica por más de 24 hs la muestra de esputo debe reemplazarse por otro tipo de muestra respiratoria de mayor calidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-011",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "De acuerdo a la Guía de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018. Señale la definición correcta para la neumonía.",
+    "opciones": {
+      "a": "Definición de caso: Paciente febril, tos con expectoración mucopurulenta, examen fisico: vibraciones vocales aumentadas y matidez a la percusión de toráx.",
+      "b": "Definición de caso: Enfermedad respiratoria aguda febril (>38°) con tos, dificultad respiratoria, taquipnea y radiologia que muestra un infiltrado lobar o segmentario o derrame pleural.",
+      "c": "Definición de caso: Dificultad respiratoria, tos con expectoración mucopurulenta, sindrome febril, (>38°).",
+      "d": "Definición de caso: Enfermedad respiratoria febril con expectoración, taquicardia, taquipnea, semiologia de condensación o derrame pleural al examen fisico."
+    },
+    "correcta": "b",
+    "explicacion": "Guia de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018: Neumonia: Definición de caso: Enfermedad respiratoria aguda febril (> 38°) con tos, dificultad respiratoria, taquipnea y radiologia que muestra un infiltrado lobar o segmentario o derrame pleural.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-012",
+    "materia": [
+      "infectologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "TRS",
+      "Faringe"
+    ],
+    "enunciado": "Un paciente de 19 años, sin antecedentes patológicos, consulta a la guardia por odinofagia y fiebre de 39°C de 48 h de evolución. No presenta tos. Al examen físico se observa un exudado blanquecino bilateral en amígdalas y se palpan adenomegalias cervicales anteriores dolorosas a la palpación. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Indicar claritromicina",
+      "b": "Indicar amoxicilina",
+      "c": "Indicar penicilina",
+      "d": "Tratamiento sintomático, no indicar antibióticos"
+    },
+    "correcta": "c",
+    "explicacion": "La faringoamigdalitis por estreptococo se manifiesta con fiebre y odinofagia asociada a adenomegalias dolorosa y exudado faringeo blanquecino. La ausencia de tos, conjuntivitis y rinitis hace menos probable la etiologia viral al igual que la presencia de adenomegalias dolorosas.\nEl tratamiento de elección es la penicilina con el objetivo de diminuir las complicaciones supurativas y la incidencia de fiebre reumática. La dosis de penicilina V es 1500000 Ui/d fraccionada en 2 o 3 tomas por dia por 10 dias por via oral.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-013",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Elisa tiene 70 años, es llevada al servicio de guardia por sus familiares por presentar deterioro del sensorio. Ellos refieren que en el último mes la encontraban más decaída, con poco apetito, se pasaba todo el día durmiendo y en las últimas semanas agregó fiebre. El día de la consulta no la pudieron despertar por lo que deciden consultar. Como antecedentes presenta artritis reumatoidea en tratamiento con infliximab. Se le realiza un laboratorio sin hallazgos patológicos, TAC de encéfalo normal, radiografía de tórax se evidencia un infiltrado alveolar en vértice pulmonar izquierdo. Ante la sospecha de una meningitis tuberculosa. ¿Qué hallazgo espera encontrar en el líquido cefalorraquídeo?",
+    "opciones": {
+      "a": "Disminución de la presión de apertura, pleocitosis linfocitaria, proteinorraquia normal, concentración baja de glucosa (menor a 30 mg/dl)",
+      "b": "Aumento presión de apertura, pleocitosis linfocitaria, hiperproteinorraquia, concentración baja de glucosa (menor a 30 mg/dl)",
+      "c": "Presión de apertura normal, leucocitos a predominio de linfocitos, hiperproteinorraquia, concentración alta de glucosa (mayor a 45 mg/dl)",
+      "d": "Aumento presión de apertura, leucocitos a predominio neutrófilos, hiperproteinorraquia, concentración alta de glucosa (menor a 45 mg/dl)"
+    },
+    "correcta": "b",
+    "explicacion": "Meningitis TBC\nEl LCR muestra una aumento de la presión de apertura. pleocitosis linfocitaria (~200 células/µl), hiperproteinorraquia (-200 mg/dL) e hipoglucorraquia. El aspecto del LCR es claro.\nCorrecta: Aumento presión de apertura, pleocitosis linfocitaria, hiperproteinorraquia, concentración baja de glucosa (menor a 30 mg/dl)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-014",
+    "materia": [
+      "infectologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "TRS",
+      "Faringe"
+    ],
+    "enunciado": "Un varón de 17 años de edad, sin antecedentes personales relevantes, consulta por presentar disfagia y odinofagia de 7 días de evolución y registros febriles. Recibió tratamiento con amoxicilina, sin mejoría. En la exploración se observa hipertrofia amigdalina con exudado blanquecino, abombamiento del pilar anterior con desplazamiento hacia la izquierda de la úvula y adenomegalias laterocervicales de aspecto inflamatorio. ¿Cuál es el procedimiento más adecuado en esta instancia?",
+    "opciones": {
+      "a": "TC de cuello con cortes axiales y coronales con contraste endovenoso",
+      "b": "Biopsia de la amigdala",
+      "c": "Punción aspiración del pilar amigdalino",
+      "d": "Cultivo del exudado amigdalino"
+    },
+    "correcta": "c",
+    "explicacion": "El absceso periamigdalino se presenta en pacientes jóvenes posteriormente a haber presentado una amigdalitis. El paciente presenta odinofagia, voz englobada y trismus. Al examen presenta abombamiento del pilar anterior con desplazamiento de la úvula hacia la izquierda. El tratamiento de elección es la punción a través de la cavidad oral donde se encuentra más abombada y posterior antibioticoterapia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-015",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Paciente de 53 años con antecedente de reemplazo de válvula aórtica hace 3 años. Consulta por síndrome febril de dos semanas de evolución asociado a astenia. Refiere un episodio de hematuria hace 5 días que cedió espontáneamente. Al examen físico presenta buen estado general, febrícula (T° axilar: 37.4°), hemorragias en astilla en pulgar derecho. Señale la conducta más adecuada:",
+    "opciones": {
+      "a": "Realiza hemocultivos y ecocardiograma transesofágico.",
+      "b": "Descarta diagnóstico de endocarditis por ser un paciente de bajo riesgo",
+      "c": "Realiza hemocultivos, de ser negativos descarta el diagnóstico de endocarditis",
+      "d": "Realiza hemocultivos y ecocardiograma transtorácico. De ser negativo realiza ecocardiograma transesofágico dentro de las primeras 72 hs."
+    },
+    "correcta": "a",
+    "explicacion": "El ETE se recomienda como estudio de primera linea para el diagnóstico de EI en válvula cardiaca protésica, antecedentes de numerosas cardiopatia congénitas, insuficiencia cardíaca u otros estigmas de EI y para valorar sus complicaciones.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-016",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Un paciente, Matías, de 68 años, consulta por fiebre 38,5°, de inicio brusco, tos con expectoración mucopurolenta. Su frecuencia respiratoria es de 32 por minuto, su tensión arterial sistólica es de 130 mm Hg, se halla ubicado en tiempo y espacio. En sus análisis se destaca GB 12.000 mm 3 y urea 18 mg/dl. Su radiografía de tórax muestra infiltrado en base derecha. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Usted hace diagnóstico de neumonía, pero por su puntaje CURB 65 decide internación y le indica Ampicilina Sulbactam 1,5 grs cada 6 horas",
+      "b": "Usted hace diagnóstico de neumonía y por su puntaje CURB-65 decide manejo ambulatorio con macrólidos o amoxiclinaclavulánico en domicilio",
+      "c": "Usted hace diagnóstico de neumonía y por su CURB-65 y sus co-morbilidades decide manejo ambulatorio con Levofloxacina",
+      "d": "Usted hace diagnóstico de neumonia, pero por su puntaje CURB 65 decide internación en UTI y le indica Ampicilina Sulbactam 1,5 grs cada 6 horas más macrólidos"
+    },
+    "correcta": "a",
+    "explicacion": "La neumonia se define como la infección del parénquima pulmonar. El espectro de gravedad de la enfermedad es amplio y suele utilizarse la escala CURB-65 para estratificar el riesgo.\nC: Confusión U: Urea mayor a 42 mg/dl R(rate): Frecuencia respiratoria mayor a 30 rpm B (Blood pressure): Presion arterial sistólica menor o igual a 90 mmHg o diastólica menor a 60 mmHG. 65: Edad mayor o igual a 65 años.\nMientras más factores estén presentes peor es el pronóstico. En general se acepta que un paciente con dos o más de estos factores deben internarse para realizar el tratamiento endovenoso siendo el antibiótico de elección un betalactámico combinado con un inhibidor de betalactamasas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-017",
+    "materia": [
+      "infectologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Faringe"
+    ],
+    "enunciado": "Una mujer de 17 años presenta fiebre (39°C), odinofagia, adenopatías cervicales y exantema maculopapuloso generalizado. Recientemente recibió tratamiento con ampicilina por diagnóstico de faringitis aguda. El laboratorio informa: leucocitosis con linfocitosis; presencia de linfocitos activados y aumento discreto de transaminasas. ¿Cuál es el diagnóstico más probable de este cuadro clínico?",
+    "opciones": {
+      "a": "Rubéola",
+      "b": "Mononucleosis infecciosa",
+      "c": "Toxoplasmosis aguda (forma linfoganglionar adquirida de adulta)",
+      "d": "Varicela"
+    },
+    "correcta": "b",
+    "explicacion": "La mononucleosis infecciosa consiste en amigdalitis con fiebre 38-39°C, intensa inflamación de los ganglios cervicales, axilares e inguinales, afectación del estado general, astenia, intensa odinofagia, linfocitosis con monocitosis y hepatoesplenomegalia frecuente. Se pueden apreciar unas amigdalas intensamente inflamadas y con exudados fibrinosos. Producida por el VEB, tipicamente en niños y jóvenes. Contagio por contacto personal (< enfermedad del beso»). Serologia para VEB y Paul-Bunnell positiva.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-018",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Consulta a la guardia un varón de 22 años con el antecedentes de catarro de vía aérea superior de causa viral hace 5 días asociada a diarrea posterior, que progresa desfavorablemente agregándose fiebre, cefalea retroorbitaria y fotofobia en el contexto de intensa astenia y mialgias. Su diagnóstico presuntivo es la de un síndrome meníngeo de probable origen viral y se dispone a realizar una punción lumbar. ¿Qué es lo mas probable encontrar en el LCR acorde a su presunción diagnóstica?",
+    "opciones": {
+      "a": "LCR claro, pleocitosis linfocitica, proteinas normales y glucorraquia elevada",
+      "b": "LCR turbio, pleocitosis a predominio de neutrófilos, proteinas elevadas y glucorraquia baja",
+      "c": "LCR claro, pleocitosis linfocitaria, proteinas ligeramente elevadas, glucorraquia >40 mg/dL",
+      "d": "LCR turbio, pleocitosis neutrofilia inicial, proteínas normales, glucorraquia baja"
+    },
+    "correcta": "c",
+    "explicacion": "La punción lumbar es crucial para el diagnóstico. Ante una sospecha de meningitis, la realización de una TC craneal no debe retrasar la de una punción lumbar, salvo en ciertas circunstancias.\nLCR:\n. En la meningitis viral esperamos encontrar: LCR claro, pleocitosis linfocitaria, proteínas ligeramente elevadas, glucorraquia > -40 mg/dL, Glucosa en LCR/glucosa en suero > 40% de la glucemia (correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-019",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "En cuanto a la profilaxis del haemofilus influenzae por un caso de meningitis en una guarderia, marque lo correcto: ¿Quiénes deben recibir la profilaxis del haemofilus influenzae ante un caso de meningitis en un jardín maternal?",
+    "opciones": {
+      "a": "Todos los contactos cercanos menores de 4 años, aunque posean vacunación completa.",
+      "b": "Todos los contactos cercanos, aunque posean vacunación completa",
+      "c": "Todos contactos cercanos con vacunación incompleta",
+      "d": "Los contactos cercanos menores de 4 años con vacunación incompleta"
+    },
+    "correcta": "b",
+    "explicacion": "En caso de contacto con un caso de enfermedad invasiva por Haemophilus Influenzae, el riesgo en jardines de infantes es controvertido y es mayor cuando se trata de menores de 2 años. En este caso al hacer referencia a una guarderia estimamos grupo poblacional menor de 2 años.\nLa quimioprofilaxis está indicada en las siguientes situaciones:\nTodos los contactos domésticos (excepto embarazada)*, de cualquier edad, entre los cuales haya por lo menos un contacto menor de 4 años de edad no inmunizado o con inmunización incompleta.\nTodos los contactos domésticos entre los cuales haya un niño menor de 12 meses de edad, pues no recibió aún la dosis de refuerzo.\nTodos los contactos domésticos entre los cuales haya un paciente inmunocomprometido, cualquiera sea su edad, aunque tenga la inmunización completa.\nTodos los contactos de guarderías y jardines, cualquiera sea la edad, cuando ocurren 2 o más casos de enfermedad invasiva por Hib en el término de 60 dias.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-020",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál de los siguientes parámetros corresponde a Neumonía extrahospitalaria grave en el paciente adulto?",
+    "opciones": {
+      "a": "Progresión del infiltrado pulmonar mayor al 20% en las primeras 72 hs",
+      "b": "Frecuencia respiratoria mayor de 20 ciclos por minuto",
+      "c": "Presión arterial diastólica menor a 60 mmHg",
+      "d": "PaO2/FiO2 menor a 350"
+    },
+    "correcta": "c",
+    "explicacion": "La neumonía adquirida en la comunidad grave se define según la sociedad internacional de infectologia por la presencia de al menos un criterio mayor (Necesidad de ventilación mecánica o Shock con requerimiento de vasopresores) o tres o mas de los siguientes criterios menores: 1- Frecuencia respiratoria mayor a 30, 2- PaO2FiO2 menor a 250, 3- Infiltrados multilobares, 4-Confusión/desorientación, 5- Urea mayor a 43, 6-Lucopenia, 7- Trombocitopenia, 8- Hipotermia, 9- Hipotensión.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-021",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Un varón de 70 años consulta a la guardia por fiebre y tos con expectoración mucopurulenta de 48 horas de evolución. En el examen físico se encuentra confuso, con una presión arterial de 80/50 mmHg, una frecuencia cardíaca de 110 latidos/minuto, una frecuencia respiratoria de 32 respiraciones/minuto y en la radiografía de tórax se observa infiltrado multilobar. ¿Cuál es la conducta más adecuada, además de realizar hemocultivos e iniciar tratamiento con antibióticos?",
+    "opciones": {
+      "a": "Expansión con solución fisiológica e internación en sala general.",
+      "b": "Infusión con vasopresores e internación en sala general.",
+      "c": "Expansión con solución fisiológica e internación en unidad de terapia intensiva.",
+      "d": "Infusión con vasopresores e internación en unidad de terapia intensiva."
+    },
+    "correcta": "c",
+    "explicacion": "Criterios mayores y menores para ingreso a UTI en adultos con NAC:\nCriterios mayores: Ventilación mecánica invasiva/Shock séptico con necesidad de vasopresores\nCriterios menores: Taquipnea > 30/minuto/Radiografia de tórax con infiltrados multilobares/pO2/iO2 < 250 mmHg/Confusion/desorientacion/Urea > 42 mg/dl/Leucopenia < 4000 mm3/Trombocitopenia < 100 000 mm3/Hipotermia < 36°C/Hipotensión que requiere fluidos.\nUn criterio mayor o tres (o más) menores determinan requerimiento de ingreso a UTI.\nEl paciente de la viñeta presenta: confusión, hipotensión que requiere fluidos, taquipnea e infiltrado multilobar.\nConducta: internación en terapia intensiva y expansión son solución fisiológica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-022",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál de los siguientes pacientes con diagnóstico de neumonía aguda de la comunidad tiene indicación de ser internado por mayor riesgo de mortalidad?",
+    "opciones": {
+      "a": "Raúl, 50 años, somnoliento, FR: 20r/min, TA: 120/70 mmHg",
+      "b": "Carlos, 63 años, lúcido, FR: 20 r/min, TA: 90/60 mmHg",
+      "c": "Maria, 55 años, confusa, FR: 32r/min, TA: 86/50 mmHg",
+      "d": "Esther, 60 años, lúcida, FR: 35r/min, TA: 130/80mmHg"
+    },
+    "correcta": "c",
+    "explicacion": "La neumonia se define como la infección del parénquima pulmonar. El espectro de gravedad de la enfermedad es amplio y suele utilizarse la escala CURB-65 para estratificar el riesgo.\nC: Confusión U: Urea mayor a 42 mg/dl R(rate): Frecuencia respiratoria mayor a 30 rpm B (Blood pressure): Presión arterial sistólica menor o igual a 90 mmHg o diastólica menor a 60 mmHG. 65: Edad mayor o igual a 65 años.\nMientras mas factores estén presentes peor es el pronóstico. En general se acepta que un paciente con dos o más de estos factores deben internarse para realizar el tratamiento.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-023",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "María de 73 años, con antecedente de reemplazo de válvula aórtica hace 7 años, consulta a su médico de cabecera por síndrome febril desde hace dos semanas, por lo que consultó a la guardia en dos ocasiones y se le indicó tratamiento sintomático. En el examen físico se encuentra en buen estado general, T axilar 38.2°, soplo sistólico y petequias en los dedos del pie derecho. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar internación y antibioticoterapia empirica y realizar ecocardiograma transtorácico.",
+      "b": "Indicar internación, realizar 3 hemocultivos no simultáneos y ecocardiograma transesofágico.",
+      "c": "Indicar antibióticos y programar cirugía de urgencia.",
+      "d": "Realizar ecocardiograma transtorácico y hemocultivos por 3."
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es: \"indicar internación, realizar 3 hemocultivos no simultáneos y ecocardiograma transesofágico\".\nEn el caso nos presentan a María con un cuadro altamente sugestivo de endocarditis infecciosa, dado que tiene: - antecedente de reemplazo valvular (prótesis valvular aórtica) - fiebre prolongada (≥2 semanas) - soplo cardiaco - signos vasculares periféricos (petequias en los dedos).\nEstos hallazgos cumplen criterios clínicos mayores y menores según Duke modificado, lo que obliga a descartar endocarditis con estudios apropiados.\nEntonces se debe realizar el ecocardiograma transesofágico (ETE) que es el estudio de elección en pacientes con válvula protésica, ya que el ecocardiograma transtorácico tiene menor sensibilidad para detectar vegetaciones en válvulas artificiales.\nRecordar: paciente con alto riesgo inicial (válvulas cardíacas protésicas, numerosas cardiopatías congénitas, endocarditis previa, nuevo soplo, insuficiencia cardíaca u otros estigmas de El), sospecha clinica moderada o alta o dificultad para obtener imágenes: realizar ETE inicial.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-024",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Usted discute con sus compañeros/as de equipo sobre una persona con Neumonía que fue tratada ambulatoriamente y revisan los criterios por los que se tomó esa decisión. ¿En qué situaciones el equipo de salud podrá decidir la internación o el tratamiento supervisado de una persona adulta con Neumonía?",
+    "opciones": {
+      "a": "Personas con hipertensión arterial.",
+      "b": "Personas mayores de 60 años.",
+      "c": "Personas con obesidad.",
+      "d": "Personas con residencia lejana a los centros de consulta."
+    },
+    "correcta": "d",
+    "explicacion": "En las personas que se realice diagnóstico de NAC, se debe evaluar si el tratamiento debe ser ambulatorio o requiere internación. Uno de los scores más utilizados por su simplicidad es el CURB-65 0 CRB-65 (cuando no disponemos de laboratorio para el parámetro de la urea.\nTambién se deben considerar otros factores como la contención social del pacientes, posibilidad de adherencia, inmunosupresión, oximetria, etc.(respuesta correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-025",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Un niño de 6 años es traído a la consulta por fiebre, malestar y formación de hematomas de horas de evolución. Presenta mal estado general, con temperatura de 39,5 C. Tiene petequias generalizadas y áreas de púrpura palpable, en especial en nalgas y extremidades inferiores. El laboratorio revela una Hemoglobina 10,5 g/dL, Rto de leucocitos de 18.500/mL y Rto de plaquetas de 25.000/mL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Púrpura trombocitopénica idiopática",
+      "b": "Púrpura de Schönlein-Henoch",
+      "c": "Fiebre de las Montañas Rocallosas",
+      "d": "Meningococemia"
+    },
+    "correcta": "d",
+    "explicacion": "La meningococemia es una enfermedad grave, con mal estado general del paciente causada por Neisseria meningitidis. Se manifiesta con púrpura palpable, petequias, fiebre alta y sepsis y fallo multiorgánico de rápida evolución. A diferencia de la purpura de Schonlein Henoch y la PTI donde el estado general del paciente es bueno y no se presenta con fiebre.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-026",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Si un paciente persiste con síntomas respiratorios como fiebre, expectoración, dolor torácico o disnea, a las 72 horas de iniciado el tratamiento antibiótico, se considera el cuadro como Neumonía que no responde al tratamiento. ¿Cuál de las siguientes acciones es la adecuada?",
+    "opciones": {
+      "a": "Internación en una sala de cuidados criticos por posible evolución tórpida.",
+      "b": "Internación para pasar a tratamiento endovenoso.",
+      "c": "Aumentar las dosis antibióticas aumentando la frecuencia de administración.",
+      "d": "Revisar si el diagnóstico fue correcto, y si el tratamiento fue adecuado."
+    },
+    "correcta": "d",
+    "explicacion": "Ante una NAC que no responde al tratamiento antibiótico a las 48-72 horas de su instauración, deben considerarse las siguientes posibilidades:\n• Proceso infeccioso que no responde al tratamiento antibiótico pautado: en este apartado se incluyen circunstancias como neumonia por bacterias habituales pero con resistencia a los antibióticos prescritos, neumonia por bacterias no habituales, complicaciones infecciosas extrapulmonares (empiema o foco séptico a distancia) y otros tipos de infección pulmonar como tuberculosis, neumonia por Pneumocystis jirovecii o infección pulmonar por otros gérmenes oportunistas (por ejemplo, Nocardia y Aspergillus).\n• Patologia pulmonar no infecciosa: el diagnóstico diferencial deberia llevarse a cabo con procesos como insuficiencia cardíaca, enfermedad tromboembólica, neoplasia, aspiración por cuerpo extraño, neumonia eosinofilica, neumonia organizativa, vasculitis, hemorragia pulmonar y neumonitis por fármacos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-027",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Una niña de 5 años es llevada a la guardia por odinofagia y fiebre de 48 horas de evolución. En el examen físico presenta vesículas periorificiales, ulceras superficiales en mucosa yugal, fauces cubiertas de membranas amarillo-grisáceas y adenopatías submaxilares bilaterales dolorosas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Herpangina.",
+      "b": "Difteria.",
+      "c": "Faringitis estreptocóccica.",
+      "d": "Gingivoestomatitis herpética."
+    },
+    "correcta": "d",
+    "explicacion": "La primoinfección herpètica suele manifestarse con un cuadro febril acompañado de gingivoestomatitis, con vesiculas que rápidamente se ulceran, afectan al paladar duro y las encias, pero en fases iniciales puede confundirse con una faringitis virica. La herpangina es una infección por enterovirus Coxsackie A y B y-menos frecuentemente- por enterovirus 71, echovirus y VHS; se caracteriza por la aparición de vesículas de 1-2 mm que posteriormente se ulceran que se circunscriben a la faringe posterior sin rebasar los pilares anteriores amigdalinos, con lo que se ha de realizar el diagnóstico diferencial con la infección herpética. El niño puede sufrir ataques recurrentes. Las infecciones por enterovirus son más frecuentes en verano y principio de otoño. La presencia de exudados blanquecinos y petequias en paladar blando y/o úvula es muy sugestiva pero no patognomónica de infección estreptocócica. Por último en la difteria se encuentra una membrana o pelicula de sustancia espesa y gris cubre la parte posterior de la garganta y dificulta la respiración.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-028",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "¿Cuál es un criterio mayor en la endocarditis infecciosa?",
+    "opciones": {
+      "a": "Nueva insuficiencia valvular.",
+      "b": "Embolia arterial recidivante.",
+      "c": "Fiebre superior a 38 grados.",
+      "d": "Nodulo de Osler."
+    },
+    "correcta": "a",
+    "explicacion": "De acuerdo a los Criterios modificados de Durack (también conocidos como criterios modificados de Duke), un criterio mayor en la endocarditis infecciosa es: Nueva insuficiencia valvular. Los criterios son un sistema utilizado para el diagnóstico de la endocarditis infecciosa. Estos criterios se clasifican en mayores y menores.\nLos otros criterios mayores son:\n• Hemocultivo positivo para un microorganismo tipico de endocarditis infecciosa.\n• Evidencia de afectación valvular: Ecocardiografía positiva = Vegetaciones, abscesos, nueva dehiscencia en prótesis, insuficiencia valvular nueva (no es suficiente el aumento o cambio en un soplo preexistente).\nCon estos criterios diagnósticos se puede considerar un caso de «certeza» si cumple:\n2 criterios mayores o\n1 mayor y 3 menores o\n5 menores",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-029",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "TRS",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "El nódulo de Aschoff es una lesión característica de:",
+    "opciones": {
+      "a": "Lupus eritematoso sistémico",
+      "b": "Flebre reumática aguda",
+      "c": "Artritis Reumatoidea",
+      "d": "Endocarditis bacteriana"
+    },
+    "correcta": "b",
+    "explicacion": "La fiebre reumática aguda es una complicación inmunitaria de una infección de la via respiratoria alta por estreptococo del grupo A. Es más frecuente en niños menores a 14 años. La clinica se caracteriza por un periodo de latencia inicial que puede durar alrededor de 5 semanas luego de la infección por estreptococo. Los sintomas más frecuentes son la poliartritis migratoria y la fiebre. A nivel cardiaco puede haber afectación del miocardio en el que se evidencian acúmulos de linfocitos, células plasmáticas y macrófagos redondeados (células de Anitschkov) conformando los llamados nódulos de Aschoff. También se pueden ver afectados endocardio y pericardio configurando una pancarditis. A nivel neurológico puede aparecer corea de Sydenham (suele aparecer luego de periodos de latencia prolongados) que es más frecuente en mujeres, los movimientos coreiformes afectan cabeza, extremidades superiores o hemicoreas que pueden durar hasta 6 meses. A nivel cutáneo se evidencian exantema en tronco y algunas veces en extremidades y nódulos subcutáneos, masas indoloras móviles y pequeñas de 0,5 a 2 cm bajo la piel, superpuesta a prominencias óseas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-030",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la causa más común de meningitis víricas en el adulto?",
+    "opciones": {
+      "a": "Virus de varicela- zoster",
+      "b": "Citomegalovirus",
+      "c": "Virus del herpes simple tipo 2",
+      "d": "Enterovirus"
+    },
+    "correcta": "d",
+    "explicacion": "La meningitis viral cursa con sintomas como cefalea frontal o retroorbitaria, fotofobia y dolor con el movimiento de los ojos, rigidez de nuca leve, malestar, mialgias, anorexia y vómitos. Siendo rara la presencia de alteraciones severas de la conciencia como coma o estupor. Con respecto a la etiología, más de un 75% de las meningitis son virales. Los agentes causantes mas frecuentes son el enterovirus en primer lugar (incluyendo los ecovirus y coxsackievirus), el HSV tipo 2 y el arbovirus.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-031",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Un hombre de 65 años es conducido a la guardia del hospital por presentar fiebre de 48 hs de evolución, cefalea intensa, trastornos de la conducta, agitación, disartria y un episodio de movimientos anormales tónico clónicos generalizados. Al examen físico se presenta taquicárdico, taquipneico, febril con fotofobia y rigidez de nuca. En la RMI se visualizan zonas con mayor intensidad de señal en el encéfalo en las regiones frontotemporal, del cíngulo y de la ínsula en las secuencias FLAIR y DW1. Se procede a realizar punción lumbar y el LCR muestra pleocitosis linfocítica, elevación ligera de la concentración de proteínas y glucorraquia normal con tinción de Gram negativa. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Meningitis por TBC",
+      "b": "Encefalitis por virus Herpes simplex (HVS)",
+      "c": "Meningitis por diplococo gram negativo",
+      "d": "Enfermedad de Creutzfeldt-Jacob"
+    },
+    "correcta": "b",
+    "explicacion": "La encefalitis es la entidad clinica que surge de la inflamación del parenquima cerebral. Se presenta a menudo con caracteristicas similares a la meningitis (meningoencefalitis) pero se asocia con trastornos del contenido y el nivel de la conciencia y convulsiones. La causa mas frecuente de encefalitis es infecciosa y de estas los microorganismos mas frecuentes son los virus, en particular los herpesvirus. Las caracteristicas típicas del LCR son pleocitosis mononuclear con hiperproteinorraquia y glucorraquia normal. En la RMN son frecuentes las lesiones hiperintensas en FLAIR en areas limbicas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-032",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál de los siguientes patógenos bacterianos causa con mayor frecuencia neumonías de la comunidad?",
+    "opciones": {
+      "a": "Moraxellacatarrhalis",
+      "b": "Bordetella pertussis",
+      "c": "Streptococcus pneumoniae",
+      "d": "Staphylococcus epidermidis"
+    },
+    "correcta": "c",
+    "explicacion": "La neumonia se define como la infección del parénquima pulmonar. La neumonia aguda adquirida en la comunidad se manifiesta con fiebre, tos productiva y disnea como manifestaciones más importantes. Semiológicamente se puede constar aumento de las vibraciones vocales, rales crepitantes y en algunos casos la presencia de una respiración soplante entre otros hallazgos. Los sintomas clínicos a veces son poco definidos y se debe realizar una radiografia de tórax en todos los pacientes en los que se sospeche el diagnóstico. Esta permite evidencia la consolidación como un incremento de la atenuación típicamente con broncograma aéreo. También permite estimar la extensión, si es bilateral o multilobar y si se asocia a derrame pleural que podría requerir un tratamiento específico. El Streptococo pneumoniae es el microorganismo que se detecta más frecuentemente en cultivos de esputo o en hemocultivos en las neumonias extrahospitalarias.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-033",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "SNC y meningitis"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 35 años que consulta en guardia por cefalea y fiebre de 4 semanas de evolución y en el examen físico tiene rigidez de nuca y presencia de signos meníngeos? Se le realiza punción lumbar y el LCR es claro con el siguiente estudio físico químico: glucosa 22 mg/dl; proteínas 3,4 g/l; 300 leucocitos/mm3 a predominio mononuclear.",
+    "opciones": {
+      "a": "Meningitis tuberculosa",
+      "b": "Meningoencefalitis por virus Herpes",
+      "c": "Criptococosis meningea",
+      "d": "Meningoencefalitis por Listeria monocytogenes"
+    },
+    "correcta": "a",
+    "explicacion": "La tuberculosis meningea es una manifestación extrapulmonar de la tuberculosis secundaria a una diseminación hematógena. Los síntomas se caracterizan por cefalea leve, cambios sutiles en el estado de conciencia, malestar general, anorexia, rigidez de nuca asociado a fiebre de semanas de evolución. La misma puede afectar la base del cerebro por lo cual puede manifestarse también con paresias en los nervios craneales y las alteraciones vasculares también pueden presentarse generando isquemia focal. La evolución final es la hipertensión endocraneana, hidrocefalia y coma. El diagnostico se realiza mediante la obtención de líquido cefalorraquídeo cuyas características son la elevación de leucocitos a predominio mononuclear, la hiperproteinorráquia y la hipoglucorráquia y el cultivo diagnostica hasta 80% de los casos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-034",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Mujer de 75 años consulta a su médico de cabecera por un cuadro de pérdida de peso de 6 kg en los últimos tres meses acompañados de astenia, hiporexia con fiebre vespertina entre 37,5 5°C y 38,2 2°C y sudoración nocturna. Refiere antecedentes de recambio valvular mitral por prolapso mitral en 2010 y FA que requirió cardioversión en 2017. Se encuentra en tratamiento con sintrom y pantoprazol. En el examen físico está estable hemodinámicamente, con saturación de 97% (FiO2 21%) y T° 37,9 9°C. Se auscultan tonos cardíacos rítmicos con soplo sistólico en borde esternal izquierdo. En el laboratorio presenta Hb 9 g/dL, VCM 83,2 fL, VSG 79 mm/h, PCR 9 mg/dL (normal hasta 0,5), RIN 3,4. ¿Qué estudio solicita?",
+    "opciones": {
+      "a": "Ecocardiograma",
+      "b": "VEDA y VCC",
+      "c": "TC de tórax y abdomen",
+      "d": "Cinecoronariografia"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Pregunta típica de examen de residencia cuando se quiere evaluar el contenido endocarditis infecciosa. La mujer presenta el antecedente importante de recambio valvular y un cuadro clinico de fiebre sin claro foco y el hallazgo de un soplo = pensemos en EI. Ante toda sospecha clínica de endocarditis debe realizarse inmediatamente un ecocardiograma transtorácico (ETT).\nRecordar: el ETE se recomienda como estudio de primera línea para el diagnóstico de El en válvula cardíaca protésica, antecedentes de numerosas cardiopatias congénitas, insuficiencia cardiaca u otros estigmas de El y para valorar sus complicaciones.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-035",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Alfredo de 69 años consulta por un cuadro de pérdida de peso de 6 kg en los últimos tres meses acompañados de astenia e hiporexia con fiebre vespertina entre 37,5 5°C y 38,2 2°C y sudoración nocturna. Tiene antecedentes de recambio valvular mitral por prolapso mitral en 2010 y fibrilación auricular que requirió cardioversión en 2017. Está en tratamiento con acenocumarol y pantoprazol. A la exploración física se encuentra estable hemodinámicamente, con saturación de 97% basal y T° 37,9 9°C. En la auscultación se aprecian tonos rítmicos con soplo sistólico en borde esternal izquierdo. El abdomen está blando y depresible, sin hepatomegalia. No tiene edemas. En la analítica destaca hemoglobina 9 g/dL, volumen corpuscular medio (VCM) 83,2 fL; velocidad de segmentación glomerular (VSG) 79 mm/h, proteína C reactiva (PCR) 7,72 mg/dL (normal hasta 0,5), RIN 3,4. ¿Qué estudio solicita?",
+    "opciones": {
+      "a": "Cinecoronariografía.",
+      "b": "Ecocardiograma.",
+      "c": "VEDA.",
+      "d": "Tomografia computada de tórax y abdomen."
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico de EI requiere una alta sospecha clínica. Se basa en tres pilares fundamentales: la clinica, los hemocultivos y la demostración de vegetaciones con la ecocardiografia. Dentro de la categoría de cardiopatias de alto riesgo de EI se incluyen:\n• Las prótesis valvulares (tanto mecánicas como biológicas).\n• El antecedente de El previa.\nLas cardiopatias congénitas cianógenas no tratadas, o los pacientes con reconstrucción con shunts postoperatorios paliativos, conductos pulmonares- sistémicos u otras prótesis.\nLa endocarditis sobre válvula protésica (EVP) se clasifica en precoz o tardia en función del tiempo desde el reemplazo valvular a la infección (< 12 meses o > 12 meses desde la cirugia, respectivamente). Esta clasificación permite identificar aquellos casos en los que presumiblemente la infección fue de adquisición nosocomial (en los casos precoces)\nAnte toda sospecha clinica de endocarditis debe realizarse inmediatamente un ecocardiograma transtorácico (ETT).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-036",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Un varón de 34 años sin comorbilidades, consulta por fiebre acompañada de tos con expectoración y tiene en la radiografía de tórax una condensación basal derecha sin derrame pleural. En el examen físico se encuentra lúcido, con tensión arterial de 130/70 mmHg, una frecuencia cardíaca de 85 latidos/minuto, una frecuencia respiratoria de 16 respiraciones/minuto, SatO2 de 96% (aire ambiente) y recuento de glóbulos blancos de 15.500 mm3. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Internación en terapia intermedia, oxigenoterapia, tratamiento con ampicilina sulbactam 1 gramo cada 12 horas.",
+      "b": "Internación en sala de aislamiento respiratorio, oxigenoterapia con ventilación no invasiva, tratamiento con azitromicina 1 gramo/día más oseltamivir 75 mg cada 12 hs.",
+      "c": "Internación en sala general, kinesioterapia, tratamiento con ampicilina sulbactam 1 gramo cada 12 horas.",
+      "d": "Seguimiento ambulatorio y tratamiento con amoxicilina 1 gramo cada 12hs."
+    },
+    "correcta": "d",
+    "explicacion": "El diagnóstico más probable es NAC. Score CRB-65: 0. En general se considera que aquellos con 0 puntos pueden ser manejados en forma ambulatoria. Recomendaciones de tratamiento antibiótico para pacientes de atención ambulatoria:\nTratamiento de elección: pacientes <65 años sin comorbilidades: Amoxicilina 875-1000 mg cada 12 horas vía oral",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-037",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Con respecto a meningitis por enterovirus señale la opción CORRECTA:",
+    "opciones": {
+      "a": "El contagio es por contacto directo con secreciones respiratorias y/o materia fecal",
+      "b": "Son menos frecuentes que las meningitis bacterianas",
+      "c": "No se observan variaciones estacionales",
+      "d": "Los cuadros son de extremada gravedad y dejan con frecuencia secuelas"
+    },
+    "correcta": "a",
+    "explicacion": "La meningitis viral o aséptica es una inflamación de las meninges por un virus. El enterovirus que produce un 60% de las meningitis virales. Su frecuencia es más alta en verano y otoño. Presenta una diseminación fecal-oral y ocasionalmente respiratoria. La clínica se caracteriza por cefalea, fiebre y rigidez de nuca. El curso clínico es favorable incluso en aquellos pacientes donde el comienzo es agudo. En los niños la duración es de aproximadamente una semana y en adultos puede ser de varias semanas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-038",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Un niño de 10 años es llevado por sus padres a la guardia por presentar fiebre de 24 hs de evolución, somnolencia, decaimiento general y cefalea. En los días previos había presentado un leve dolor de garganta y tos productiva. Al examen físico presenta 39°C, rigidez de nuca, petequias en cara y extremidades. Estaba hipotenso, con taquicardia y taquipnea leves, saturación de oxígeno aire ambiente 98%, algunas de las máculas eritematosas se convierten en petequias otras en púrpuras. Recibe una parte del laboratorio con hemoglobina de 15g/dl, glóbulos blancos 18000/mm3 (PMN63/L.22), plaquetas 450000/µl, glucemia 110 mg/dl. Ante la clínica y el examen físico: ¿Cuál opción es compatible con el liquido céfalo raquídeo de nuestro paciente por su sospecha diagnóstica?",
+    "opciones": {
+      "a": "LCR con 3000 leucocitos/mm3, 100 mg/dl de proteinas y 70 mg/dl de glucosa (glucemia simultánea de 120 mg/dl). Examen de Gram: negativo",
+      "b": "LCR con 600 leucocitos/mm3, 700 mg/dl de proteinas y 50 mg/dl de glucosa (glucemia simultánea de 120 mg/dl). Examen de Zielh Neelsen: negativo",
+      "c": "LCR con 100 leucocitos/mm3, 200 mg/dl de proteinas y 30 mg/dl de glucosa (glucemia simultánea de 120 mg/dl). Examen de Gram: negativo",
+      "d": "LCR con 10 leucocitos/mm3, 20 mg/dl de proteínas y 60 mg/dl de glucosa (glucemia simultánea de 120 mg/dl). Examen de Gram: negativo"
+    },
+    "correcta": "a",
+    "explicacion": "El cuadro clínico del paciente corresponde a una meningitis, que por la progresión del cuadro (petequias/púrpuras/ hipotensión), nos hace pensar en Meningococo cómo agente etiológico. Entonces las características del líquido cefalorraquídeo en este caso se corresponden a las de una meningitis bacteriana:\nAumento de la celularidad a predominio neutrófilo\nAumento de proteínas más de 100 mg/dl\nDisminución de la glucosa a menos de 40 mg/dl o menor al 40% de la glucemia",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-039",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Varón de 44 años consulta a la guardia por fiebre de 39°C y cefalea. Al examen físico se constata rigidez de nuca y signo de Brudzinski positivo. Desde hace 4 días se encuentra cursando otitis media. Se realiza punción lumbar: leucocitos 2000/mm3 (90% neutrófilos), proteínas 250 mg/dL y glucosa 25 mg/dL. Decide iniciar tratamiento empírico hasta recibir el cultivo y los resultados del antibiograma. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Ampicilina + ceftriaxona",
+      "b": "Vancomicina + rifampicina",
+      "c": "Vancomicina",
+      "d": "Ceftriaxona"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos. Caso clinico clásico de meningitis bacteriana = clínica + resultado de LCR. Tto antibiótico empírico: 2gr de ceftriaxona cada 12 hs",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-040",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Inmunodeprimidos no HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Marque la opción correcta en lo que se refiere a la infección del sistema nervioso central por Toxoplasma gondii en pacientes adultos inmunodeprimidos.",
+    "opciones": {
+      "a": "Las zonas más afectadas del SNC son el tronco encefálico, ganglios basales, hipofisis y unión cortico-medular",
+      "b": "El dato característico en el LCR en la meningitis por dicha causa es la hipoglucorraquia",
+      "c": "En pacientes con sida aproximadamente el 10% de las encefalitis por Toxoplasma gondii se debe a infecciones reactivadas",
+      "d": "En personas con sida la toxoplasmosis aguda es la tercera causa de infección oportunista del SNC"
+    },
+    "correcta": "a",
+    "explicacion": "La infección del sistema nervioso central por Toxoplasma Gondii en pacientes con sindrome de inmunodeficiencia adquirida corresponde en el 95% de los casos a una reactivación de una infección latente. En aquellos pacientes con sida la toxoplasmosis seria la primer infección oportunista del SNC. Las personas con SIDA con serología positiva para T.Gondii tienen un alto riesgo de padecer encefalitis. Los signos y sintomas corresponden al SNC. Hallándose desde disfunciones no focales a disfunciones focales. Las zonas del SNC mas afectadas son el tronco encefálico, los ganglios de la base, la hipofisis y la union corticomedular. Por ultimo el LCR puede presentar aumento del recuento celular y proteico sin hipoglucorraquia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-041",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un criterio mayor en la endocarditis infecciosa?",
+    "opciones": {
+      "a": "Fiebre mayor a 38°",
+      "b": "Nueva insuficiencia valvular",
+      "c": "Embolia arterial recidivante",
+      "d": "Cardiopatia predisponente"
+    },
+    "correcta": "b",
+    "explicacion": "La endocarditis infecciosa es una infección que se localiza en la superficie endocárdica, puede ser aguda o subaguda. La presentación clinica varia. Los sintomas más frecuentes son: fiebre, presencia de un soplo nuevo, empeoramiento de un soplo antiguo, episodio embólico vascular, esplenomegalia, hemorragias subungueales, nódulos de osler, manchas de roth, aumento de la eritrosedimentación, aumento del factor rematoideo. Para diagnosticar la endocarditis infecciosa se utilizan los criterios de DUKE en los cuales se evalúan como criterios mayores: hemocultivos positivos para germenes tipicos, bacteriemia persistente de gérmenes no tipicos, bacteriemia por S.aeurus. Signos de afectación endocárdica como masa móvil en válvula cardíaca o insuficiencia valvular nueva. Como criterios menores se evalúan factores predisponentes como drogadicción endovenosa, proceso cardiaco predisponente, fiebre, fenómenos vasculares, fenómenos inmunológicos, signos ecocardiográficos que no cumplen criterios mayores y hemocultivos positivos sin cumplir criterios microbiológicos mayores.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-042",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una indicacion de TC previa a realizar una punción lumbar?",
+    "opciones": {
+      "a": "Rigidez de nuca",
+      "b": "Cefalea holocraneal",
+      "c": "Vómitos",
+      "d": "Convulsiones"
+    },
+    "correcta": "d",
+    "explicacion": "Cuando se evalua un paciente con sindrome meningeo es fundamental la realizacion de una punción lumbar para analizar las caracteristicas del liquido cefalorraquideo. En pacientes con lesiones ocupantes de espacio que generen un cono de presion la puncion lumbar puede asociarse a enclavamiento y muerte, por lo que ante un paciente con manifestaciones focales se debe considerar la realizacion de una imagen cerebral (Tomografia computarizada o resonancia magnética) para descartar la presencia de tumores, abscesos y evaluar el riesgo de herniación cerebral. Tambien se debe considerar la realización de imagénes en pacientes inmunosuprimidos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-043",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Antibacterianos",
+      "Valvulopatías"
+    ],
+    "enunciado": "Lo consulta un paciente antecedentes de una valvulopatía de alto riesgo que va a ser sometida a una extracción dentaria. ¿Qué prescripción elegiría para la realizar la profilaxis?",
+    "opciones": {
+      "a": "Amoxicilina 2 gramos, indicar 1 hora antes de la extracción dentaria,",
+      "b": "Amoxicilina 500 mg cada 6 horas, iniciar 12 horas antes de la extracción dentaria.",
+      "c": "Amoxicilina 500 mg cada 8 horas, iniciar 24 horas antes de la extracción dentaria.",
+      "d": "Amoxicilina 500 mg. Cada 6 horas por 24 horas después de la extracción."
+    },
+    "correcta": "a",
+    "explicacion": "En las últimas recomendaciones se aconseja realizar profilaxis antibiótica sólo en un determinado grupo de pacientes y ante determinados procedimientos de riesgo. El grupo de pacientes en los que se recomienda la profilaxis son aquéllos con cardiopatias consideradas de alto riesgo:\n• Pacientes con cualquier tipo de válvula protésica, incluso las implantadas de forma percutánea transcatéter, o en los que se haya usado algún tipo de material protésico para la reparación valvular cardiaca.\n• Pacientes con El previa.\n• Pacientes con cardiopatias congénitas: - Cualquier forma de cardiopatia congénita cianosante; - Cualquier forma de cardiopatia congénita reparada con material protésico, ya sea quirúrgica o percutáneamente, hasta 6 meses tras el procedimiento o de por vida si queda shunt residual o insuficiencia valvular.\nLa profilaxis consiste en la administración de una dosis única entre 30-60 minutos antes del procedimiento de amoxicilina (dosis de 2 g). En el caso de alérgicos a betalactámicos, la alternativa es clindamicina.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-044",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada en una paciente diabética tipo II de 65 años con tos y expectoración mucosa de 72 horas de evolución, que en la radiografía de tórax presenta infiltrado basal izquierdo y en el examen físico se encuentra lúcida, febril, FC 120 /minuto; FR 35/min, presión arterial 80/60 mmHg, Urea: 50 mg/dl y gases arteriales: pH: 7,32, pCO2:35, bicarbonato 16, PO2: 58?",
+    "opciones": {
+      "a": "Internación y tratamiento con ampicilina sulbactam parenteral",
+      "b": "Manejo ambulatorio y tratamiento con amoxicilina clavulámico más claritromicina vía oral",
+      "c": "Manejo ambulatorio, tratamiento con claritromicina via oral",
+      "d": "Internación, tratamiento con ampicilina sulbactam parenteral más claritromicina via oral"
+    },
+    "correcta": "d",
+    "explicacion": "Ante un paciente neumonia adquirida en la comunidad se debe tomar la decisión de internar al paciente o realizar tratamiento ambulatorio. La regla CURB-65 establece que se debe internar a todo paciente que presente dos o más de los siguientes datos de la regla. 1) Confusión 2) Uremia (más de 43 mg/dl) 3) Frecuencia respiratoria mayor a 30 rmp. 4) Presión arterial sistólica menor a 90 mmHg o diastólica menor a 60 mmHg. 5) Edad mayor a 65 años.\nStreptococcus pneumoniae es el productor de NAC que se aísla con mayor frecuencia, amoxicilina es la droga de elección para su tratamiento debido a los bajos niveles de resistencia en nuestro país. Es por eso que el antibiótico elegido para pacientes con neumonías que requieren internación en principio es un betalactámico como ampicilina sulbactam. El rol de la claritromicina en aquellos pacientes que no requieren internación en terapia intensiva no esta claro, pero en nuestro medio suele usarse en combinación con el anterior. Entonces en este contexto, la opción con 2 antibióticos es preferible a la monoterapia, ya que proporciona una cobertura antibiótica más amplia y se alinea con las recomendaciones de tratamiento en NAC grave. Además, aunque la claritromicina se administra vía oral, sigue siendo efectiva en combinación con el ẞ-lactámico parenteral.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-045",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Infecciosas"
+    ],
+    "enunciado": "Se halla evaluando por guardia a Clara, una paciente de 27 años con el antecedente de haber sido esplenectomizada en la infancia, que ingresó presentando un síndrome meníngeo de evolución rápida y tórpida, su estado de conciencia es fluctuante. Se dispone a realizar la punción lumbar y halla lesiones cutáneas compatibles con infección aguda por Neisseria Meningitidis en el contexto de una posible meningococcemia fulminante ¿Cuál de las siguientes descripciones semiológicas se corresponderán con dicha presunción diagnóstica?",
+    "opciones": {
+      "a": "Pústulas hemorrágicas con centros necróticos en palmas y plantas altamente contagiosas",
+      "b": "Lesiones purpúricas palpables y dolorosas que evolucionan en brotes en piel y mucosas",
+      "c": "Equimosis que evolucionan a ampollas hemorrágicas en tronco, palmas y plantas, asociada a gingivorragia",
+      "d": "Púrpura extensa en la piel mayormente en tronco y extremidades."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. La meningococemia fulminante (5-15% de los casos) se asocia a púrpura extensa en la piel, hemorragias mucosas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-046",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Un hombre de 60 años ingresa por guardia por fiebre de 39°C, cefalea, vómitos y deterioro del sensorio. Al examen físico se constata la presencia de signos meníngeos francos. El fondo de ojo no muestra edema de papila por lo que se practica punción lumbar obteniéndose LCR turbio con glucorraquia de 10 mg %, proteinorraquia de 160 mg % y 2100 Glóbulos Blancos: a predominio PMN. ¿Cuál es el tratamiento empírico inicial más adecuado en esta situación?",
+    "opciones": {
+      "a": "Dexametasona, vancomicina y rifampicina.",
+      "b": "Vancomicina y ceftriaxona.",
+      "c": "Ceftriaxona y dexametasona.",
+      "d": "Dexametasona, ceftriaxona y ampicilina."
+    },
+    "correcta": "d",
+    "explicacion": "Tratamiento de la meningitis bacteriana:\nSegún la edad > 50 años, los patógenos en que hay que pensar; N. meningitidis, S. pneumoniae, L. monocytogenes, bacilos Gram negativos: antibiótico de elección = ampicilina + cefalosporina de 3º generación. Tratamiento adyuvante, uso de dexametasona: Se recomienda añadir dexametasona 10 mg/kg, 10 minutos antes de la primera dosis de antibiótico. La principal indicación del tratamiento con dexametasona es en adultos con meningitis por neumococo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-047",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "Un paciente de 23 años, sin antecedentes patológicos relevantes, se encuentra bajo tratamiento con amoxicilina 1 gramo cada 8 horas por vía oral por una neumonía de la comunidad. Consulta nuevamente por persistencia de síntomas a las 72 horas de iniciado el tratamiento antibiótico. Se realiza nuevo examen físico y Rx de tórax y se constata derrame pleural. Se realiza toracocentesis y se obtiene líquido con las siguientes características: pH: 6.9, glucosa 1,5 mmol/L, LDH: 1605 U/L. ¿Cuál es la conducta terapéutica indicada?",
+    "opciones": {
+      "a": "Rotar a esquema antibiótico que contenga quinolona oral y nuevo control en 48 horas",
+      "b": "Continuar con el mismo esquema antibiótico y nuevo control en 48 horas",
+      "c": "Internación e iniciar antibioticoterapia EV",
+      "d": "Internación y drenaje del derrame por medio de colocación de tubo de toracostomia"
+    },
+    "correcta": "d",
+    "explicacion": "El derrame pleural puede ser clasificado como trasudado o exudado en función de los criterios de Light. El derrame paraneumónico es la forma mas frecuente de exudado pleural. Los exudados complicados definidos como aquellos con un pH < 7.20, Glucosa < 60 mg/dl, y los empiemas (liquido con tinción de gram positivo para bacterias, o aspecto francamente purulento) requieren la colocación de un tubo de toracostomia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-048",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "¿En un empiema torácico agudo, cuál de las siguientes medidas terapéuticas seleccionaría como tratamiento inicial?",
+    "opciones": {
+      "a": "Antibioterapia de amplio espectro, a la espera del cultivo del derrame pleural",
+      "b": "Decorticación pulmonar temprana",
+      "c": "Punción-aspiración pleural con aguja",
+      "d": "Drenaje pleural con tubos"
+    },
+    "correcta": "d",
+    "explicacion": "El derrame pleural paraneumonico debe sospecharse siempre ante la presencia de neumonia y derrame pleural. Un débito francamente purulento al realizar la toracocentesis es diagnostico de empiema e implica la necesidad de drenar la cavidad pleural a travez de un tubo de toracostomia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-049",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Consulta a la guardia Ana de 93 años por un cuadro de contractura muscular que define como un espasmo cervical de intensidad variable que hasta le dificulta abrir la boca y masticar. Se auto medicó con analgésicos y consultó a su médico de cabecera por teléfono quién le recomendó un relajante muscular. Al progresar el cuadro en su intensidad decide consultar al hospital. En el Triage la clasifican como Verde por su cervicalgia, se encuentra estable, sin signos de riesgo vital. Cuando Ud. recibe a la paciente, a pesar de poder articular algunas palabras, no puede abrir la boca por el dolor. La examina y encuentra en su pierna derecha una herida cortante suturada, flogótica de aproximadamente 7 días de evolución según refiere el familiar acompañante. No recibió ninguna indicación para seguimiento, ni tratamiento farmacológico. Ud. se plantea el diagnóstico clínico de Tétanos ¿Cuáles son las medidas iniciales de atención de esta paciente?",
+    "opciones": {
+      "a": "Internación en sala general, penicilina IM y control clínico de la herida de la pierna.",
+      "b": "Internación en sala general, Gammaglobulina antitetánica IM 500 UI y metronidazol EV",
+      "c": "Internación en UCI, desbridamiento de la herida, gammaglobulina antitetanica IM 500 Ul y metronidazol EV",
+      "d": "Alta con relajantes musculares y metronidazol vía oral, cura plana de la herida y pautas de alarma."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento del tétanos requiere: desbridamiento de la herida, administrar gamma-globulina antitetánica y la primera dosis de vacuna (en lugares separados), tratamiento antibiótico con metronidazol o penicilina e ingreso en la UCI para estabilización.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-050",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Vacunación infantil"
+    ],
+    "enunciado": "María es una lactante de 9 meses que tuvo meningitis a Haemophylus influenzae b, tiene vacunas incompletas (solo recibió BCG al nacimiento). ¿Cuáles son las vacunas que debe recibir?",
+    "opciones": {
+      "a": "Posponer todas las vacunas hasta dentro de un mes.",
+      "b": "Pentavalente (DPT-Hib-Hepatitis B) + antipoliomielitica +neumococo conjugada + Vacuna tetravalente conjugada con la proteina CRM197 (Menveo®) + antigripal.",
+      "c": "DPT+ Hepatitis B+ antipoliomielitica + neumococo conjugada, antigripal. No requiere vacuna Hib ya que tuvo meningitis por Hib.",
+      "d": "Hepatitis B + antipoliomielitica +neumococo conjugada y posponer Pentavalente (DPT- Hib-Hepatitis hasta dentro de 3 meses."
+    },
+    "correcta": "b",
+    "explicacion": "Debe recibir lo antes posible el esquema de vacunas de primera dosis de calendario. Pentavalente (DPT-Hib-Hepatitis), primera dosis de Salky neumo conjugada. Si es periodo estacional de vacunación antigripal recibe la vacuna por ser menor de 2 años y constituir población de riesgo. No recibe Rotavirus por ser mayor de 14 semanas y seis dias (tres meses y medio). Haber tenido enfermedad por Haemophylus influenza b no confiere inmunidad, los niños menores de 24 meses que hayan padecido una enfermedad invasiva por Hib pueden no quedar suficientemente protegidos, por lo que deben vacunarse a pesar de este antecedente.\nEn el año 2017 se incorporó en la Argentina la vacuna contra el meningococo Vacuna tetravalente conjugada con la proteina CRM197 (Menveo®) al Calendario Nacional de Vacunación en niños y niñas que cumplan los 3 meses a partir de enero de 2017 (nacidos a partir de octubre de 2016). Tres dosis (a los 3, 5 y 15 meses) y niños y niñas que cumplan 11 años a partir de enero de 2017 (nacidos a partir del año 2006): una única dosis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-051",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Un varón de 22 años, es un paciente HIV positivo y se encuentra cursando internación por una meningitis por criptococo, lleva dos días de tratamiento con anfotericina + fluconazol pero persiste con cefalea de intensidad 10/10, vómitos incoercible y fotofobia. Ante la sospecha de hipertensión endocraneana. ¿Cuál es su conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar acetazolamida",
+      "b": "Indicar Manitol",
+      "c": "Indicar dexametasona",
+      "d": "Realizar drenaje de LCR"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. La meningoencefalitis criptocócica es mortal sin tratamiento. Los pilares básicos son el tratamiento antifúngico de inducción (al menos 2 semanas), consolidación (al menos 8 semanas) y mantenimiento (al menos 1 año), el abordaje de la hipertensión intracraneal y la reducción de la terapia inmunodepresora en el caso de que esta sea el factor predisponente Además, si el paciente está infectado por el HIV o ha sido sometido a un trasplante de órgano sólido, debe plantearse la prevención del SRI, la cronologia en el inicio del TARGA y la prevención primaria de esta infección. Los glucocorticoides no aportan beneficio terapéutico.\nEl aumento de la presión intracraneal antes, durante o después del tratamiento de la meningitis criptocócica conduce a un deterioro neurológico (aumento de la cefalea, depresión de consciencia, afección de los pares craneales) y puede llevar a la muerte súbita en las primeras semanas sea cual sea la enfermedad subyacente del paciente. Por ello, cuando la presión del LCR sea superior a 25 cm, es necesario practicar punciones lumbares repetidas incluso diarias, colocar un drenaje lumbar o incluso realizar una derivación lumboperitoneal. No son adecuados para el control de la hipertensión intracraneal ni el manitol, ni la acetazolamida ni los glucocorticoides, excepto estos últimos en el SRI. No se debe administrar dexametasona como coadyuvante del tratamiento de inducción por cuanto puede reducir la actividad fungicida de los fármacos y aumentar la morbilidad de la infección.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-052",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "¿Cuál es el tratamiento más adecuado de un paciente de 32 años que cursa una neumonía aguda de la comunidad en el lóbulo inferior derecho y que luego de cuatro días de tratamiento con ampicilina sulbactam continúa con fiebre y presenta toracodinia? En la radiografía de tórax se observa infiltrado en lóbulo inferior y derrame pleural. Al realizar una punción pleural se obtiene líquido turbio, abundantes leucocitos, pH: 7,05, LDH 1234 mU/mL y glucosa 34 mg/dL.",
+    "opciones": {
+      "a": "Realizar toracotomia",
+      "b": "Realizar fibrobroncoscopia",
+      "c": "Mantener conducta expectante",
+      "d": "Colocar drenaje pleural"
+    },
+    "correcta": "d",
+    "explicacion": "El derrame pleural puede ser clasificado como trasudado o exudado en función de los criterios de Light. El derrame paraneumónico es la forma mas frecuente de exudado pleural. Los exudados complicados definidos como aquellos con un pH < 7.20, Glucosa < 60 mg/dl, y los empiemas (liquido con tinción de gram positivo para bacterias, o aspecto francamente purulento) requieren la colocación de un tubo de toracostomia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-053",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "SNC y meningitis"
+    ],
+    "enunciado": "¿Cuál de los siguientes gérmenes requieren quimioprofilaxis post exposición a un caso de meningitis?",
+    "opciones": {
+      "a": "Streptococcus pneumoniae y Haemophilus influenzae",
+      "b": "Haemophilus influenzae y Neisseria meningitidis",
+      "c": "Haemophilus influenzae Listeria monocitogenes",
+      "d": "Neisseria meningitidis y Streptococcus pneumoniae A"
+    },
+    "correcta": "b",
+    "explicacion": "Los gérmenes requieren quimioprofilaxis post exposición a un caso de meningitis son: Haemophilus influenzae y Neisseria meningitidis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-054",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Se halla valorando a un paciente varón de 55 años, con antecedentes de valvulopatía aórtica, que consulta por fiebre y empeoramiento de las características semiológicas del soplo. En la exploración física se constatan equimosis lineales subungueales y una esplenomegalia grado II. Su sospecha es la de una Endocarditis Infecciosa aguda sobre válvula nativa: ¿En que etiologías infecciosas prevalentes piensa para planear un esquema antibiótico?",
+    "opciones": {
+      "a": "Streptococos y Gram negativos",
+      "b": "Streptococos y Staphylococos",
+      "c": "Streptococos y EnterocOCOS",
+      "d": "Endocarditis polimicrobiana"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines educativos. El principal agente productor de endocarditis sobre válvula nativa (EVN) en no usuarios de drogas por via parental es actualmente S. aureus (40%) seguido de los estreptococos de grupo viridans. Las endocarditis producida por enterococos representan entre el 5-15% de los casos. Se ha asociado a manipulaciones del tracto gastrointestinal o del tracto genitourinario. Son más frecuentes en los pacientes mayores de 60 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-055",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Endocarditis",
+      "Valvulopatías"
+    ],
+    "enunciado": "Un paciente de 58 años, con antecedentes de insuficiencia mitral, acude a la guardia por debilidad en su brazo derecho y dificultad en el habla. En las últimas semanas notó la presencia de fiebre intermitente y pérdida de peso. Al interrogatorio dirigido manifiesta que hace un mes fue sometido a extracción dental. El Ecocardiograma Transtorácico (ET) revela la presencia de una vegetación móvil de 14 mm y una insuficiencia mitral grado 2 (Leve). La RMI de cerebro muestra lesiones isquémicas recientes. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Iniciar tratamiento antibiótico empirico de inmediato con posterioridad a la toma de cultivos, se contraindica cirugía valvular.",
+      "b": "Tomar hemocultivos e indicar tratamiento antibiótico específico según germen cultivado, indicar cirugía valvular en caso de evolucionar a Insuficiencia Mitral severa.",
+      "c": "Tomar hemocultivos e iniciar seguimiento estricto con paciente internado. Indicar tratamiento antibiótico específico según germen cultivado",
+      "d": "Iniciar tratamiento antibiótico empirico de inmediato con posterioridad a la toma de cultivos, programar para cirugía valvular de urgencia"
+    },
+    "correcta": "d",
+    "explicacion": "Todos los pacientes con complicaciones graves y sospecha de endocarditis deben recibir tratamiento antibiotico empirico luego de la toma de hemocultivos. Las indicaciones de cirugía pueden estar dadas por el riesgo embólico (por ejemplo vegetaciones mayores a 10 mm especialmente si se asocian a embolias perifericas), el control infeccioso (por ejemplo infecciones fungicas o por bacterias resistentes o dificiles de erradicar) o por insuficiencia cardiaca relacionada con disfunción valvular severa u otras complicaciones relacionadas con la extension de la infección a estructuras perivalvulares. En los pacientes con ACV embólico isquemico la cirugía de reemplazo valvular con circulación extracorporea podría asociarse a un incremento del riesgo de trasnformación hemorragica por lo que se ha recomendado diferir (de ser posible) la cirugía dos a tres semanas en el ACV no hemorragico y cuatro semanas en el ACV hemorragico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-056",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "En un paciente de 30 años con diagnóstico de neumonía extrahospitalaria, que se encontraba sano previamente y no había recibido antibióticoterapia en los últimos 90 días. ¿Qué antibiótico indica inicialmente?",
+    "opciones": {
+      "a": "Trimetroprima sulfametoxazol EV",
+      "b": "Claritromicina vía oral",
+      "c": "Ceftriaxona endovenoso (EV)",
+      "d": "Piperacilina tazobactan (EV)"
+    },
+    "correcta": "b",
+    "explicacion": "La neumonía se define como la infección del parénquima pulmonar. La neumonia aguda adquirida en la comunidad se manifiesta con fiebre, tos productiva y disnea como manifestaciones más importantes. Semiológicamente se puede constar aumento de las vibraciones vocales, rales crepitantes y en algunos casos la presencia de una respiración soplante entre otros hallazgos. Los sintomas clínicos a veces son poco definidos y se debe realizar una radiografia de tórax en todos los pacientes en los que se sospeche el diagnóstico. Esta permite evidencia la consolidación como un incremento de la atenuación tipicamente con broncograma aéreo. También permite estimar la extensión, si es bilateral o multilobar y si se asocia a derrame pleural que podría requerir un tratamiento específico. El Streptococo pneumoniae es el microorganismo que se detecta más frecuentemente en cultivos de esputo o en hemocultivos en las neumonias extrahospitalarias. El tratamiento ambulatorio en pacientes previamente sanos sin comorbilidades ni consumo de antibióticos en los últimos meses previos puede ser un macrólido como claritromicina o azitromicina.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-057",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Un varón de 28 años consulta, acompañado por su familia, a un centro de salud de un pueblo ubicado a 250 km de la capital de San Luis. Presenta cefalea intensa, fiebre, náuseas y vómitos de 2 días de evolución. Al examen físico se encuentra febril, confuso, hipertenso y bradicárdico, con rigidez de nuca y signos de Kernig y Brudzinski positivos. ¿Cuál es la conducta más adecuada en esta situación?",
+    "opciones": {
+      "a": "Realizar punción lumbar e indicar antibioticoterapia de acuerdo al resultado del examen bacteriológico directo",
+      "b": "Solicitar derivación a la capital para realización de TC de cerebro y evaluación por neurocirugía",
+      "c": "Realizar punción lumbar, toma de hemocultivos e iniciar antibioticoterapia empirica",
+      "d": "Realizar hemocultivos e iniciar la administración de antibioticoterapia empirica"
+    },
+    "correcta": "d",
+    "explicacion": "Datos positivos del caso clinico: varón joven con fiebre, cefalea intensa, náuseas, vómitos, rigidez de nuca y signos meningeos positivos = cuadro altamente sugestivo de meningitis aguda. Pero además: está confuso, hipertenso y bradicárdico = esto sugiere hipertensión endocraneana (triada de Cushing). En presencia de signos de hipertensión endocraneana, la punción lumbar está contraindicada porque puede precipitar una herniación cerebral. Conducta más adecuada en este contexto rural: No hacer punción lumbar. Realizar hemocultivos (si es posible). Iniciar antibióticos empíricos de inmediato, sin esperar punción ni derivación, porque la meningitis es una urgencia vital. Luego, si se logra estabilizar, derivar para estudios de neuroimagen y seguimiento.\nAnálisis de opciones:\n. Realizar hemocultivos e iniciar antibioticoterapia empírica: CORRECTA.\n• Punción lumbar + hemocultivos + ATB: Contraindicado por hipertensión endocraneana.\n.\nDerivación a capital para TC y neurocirugía: No debe retrasarse el inicio de ATB, la derivación demoraría horas.\nPunción lumbar y ATB según resultado: Incorrecto, no se puede esperar el resultado y la PL está contraindicada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-058",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Neumonía"
+    ],
+    "enunciado": "Una paciente de 67 años comienza con tos productiva hace 72 hs y en el día de ayer presentó fiebre con escalofríos por lo que consulta a la guardia. Al examen físico presenta TA: 150-90 mmHg FC: 110 lpm FR: 32 rpm T° 38,6 6°C y crepitantes bibasales en la auscultación pulmonar. Se realiza Rx tórax que muestra radioopacidad en lóbulo inferior derecho. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Internación en unidad de cuidados intensivos y antibioticoterapia",
+      "b": "Tratamiento antibiótico ambulatorio",
+      "c": "Internación en sala general y antibioticoterapia",
+      "d": "Solicita examen directo de esputo y si el resultado es positivo indica internación y antibioticoterapia"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un paciente neumonia adquidira en la comunidad se debe tomar la decision de internar al paciente o realizar tratamiento ambulatorio. La regla CURB-65 establece que se debe internar a todo paciente que presente dos o mas de los siguientes datos de la regla: 1. Confusion, 2. Uremia (mas de 43 mg/dl), 3. Frecuencia respiratoria mayor a 30 rmp, 4. Presion arterial sistolica menor a 90 mmHg o diastolica menor a 60 mmHg, 5. Edad mayor a 65 años. En este caso tiene 2 puntos: ingresar en sala general e indicar ATB.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-059",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "SNC y meningitis"
+    ],
+    "enunciado": "En pacientes adultos, las alteraciones típicas del líquido cefalorraquídeo (LCR) en la meningitis bacteriana son:",
+    "opciones": {
+      "a": "Leucocitosis polimorfonuclear, una tasa de LCR/glucosa sérica <0,4, disminución de la concentración de proteínas",
+      "b": "Leucocitosis mononuclear, una tasa de LCR/glucosa sérica >0,4 disminución de la concentración de proteinas",
+      "c": "Leucocitosis polimorfonuclear, una tasa LCR/glucosa sérica <0,4, aumento de la concentración de proteinas",
+      "d": "Leucocitosis mononuclear, una tasa de LCR/glucosa sérica >0,4, aumento de la concentración de proteínas"
+    },
+    "correcta": "c",
+    "explicacion": "La meningitis bacteriana es una infección aguda que compromete las meninges, el espacio subaracnoideo y el tejido encefálico (Meningoencefalitis). Sus manifestaciones clinicas mas frecuentes son la fiebre, cefalea y trastornos en el estado de conciencia. El diagnóstico se realiza a través del liquido cefalorraquideo. La caracteristica del LCR en meningitis bacteriana es la pleocitosis a predominio polimorfonuclear, hipoglucorraquia (menor a 40mg/dl o una relación glucosa LCR/serica menor a 0,4), hiperproteinorraquia y aumento en la presión de apertura.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-060",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "¿Cuáles son las precauciones para prevenir el contagio institucional de las enfermedades de transmisión tipo respiratorio?",
+    "opciones": {
+      "a": "Lavado de manos, habitación individual o tipo cohorte, barbijo de alta eficiencia",
+      "b": "Lavado de manos, camisolin, barbijo estándar, habitación individual",
+      "c": "Habitación tipo cohorte, barbijo de alta eficiencia, camisolin, guantes",
+      "d": "Lavado de manos, habitación individual o tipo cohorte, barbijo estándar"
+    },
+    "correcta": "a",
+    "explicacion": "La prevención del contagio intrainstitucional está basada en la transmisión respiratoria, de gota y de contacto. Con respecto a la transmisión respiratoria se debe realizar un correcto lavado de manos, ubicar al paciente en habitación individual o agrupar por cohortes según aislamiento viral, y utilizar barbijo de alta eficiencia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-061",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "Llega a la consulta, Josefina de 32 años presentando tos productiva de 3 semanas de evolución. Refiere que en el último tiempo se sintió más cansada de lo habitual. Niega episodios febriles. Sin embargo, alude haber recibido tratamiento para tuberculosis pulmonar hace 4 años, recibiendo el alta. Usted realiza PPD cuya lectura es de 10 mm y la baciloscopía resulta (++). ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Solicitar cultivo con antibiograma y radiografia de tórax, notificar el caso e iniciar tratamiento con esquema 2 HRZE/6 HR.",
+      "b": "Solicitar cultivo con antibiograma y radiografia de tórax, notificar del caso e iniciar tratamiento según las pruebas de sensibilidad a antimicrobianos.",
+      "c": "Solicitar cultivo con antibiograma y radiografia de tórax e iniciar tratamiento con esquema 2 HRZE/ 4 HR",
+      "d": "Solicitar cultivo con antibiograma y radiografia de tórax, notificar del caso e iniciar tratamiento con esquema 2 HRZE/4 HR."
+    },
+    "correcta": "d",
+    "explicacion": "Ante un caso de TB, el médico se encuentra con dos tipos de situaciones:\nCasos nuevos: son aquellos casos que no han recibido previamente tratamiento para TB o lo han recibido por menos de un mes (sin importar si la baciloscopía o el cultivo son positivos o no)\nCasos previamente tratados: son aquellos pacientes que han recibido tratamiento para TB anteriormente, por más de un mes, y son diagnosticados de nuevo como enfermos de TB activa. El riesgo de que sean portadores de cepas con farmacorresistencia es mayor que en casos nuevos. A su vez dentro de los casos previamente tratados existe el grupo al que pertenece esta paciente:\nrecaídas: paciente con TB en cualquiera de sus formas, quien en el pasado ha sido notificado con tratamiento completo o curado por un médico, y ha vuelto con baciloscopia y/o cultivo de esputo positivo. A todos los pacientes previamente tratados se les debe solicitar cultivo y antibiograma al inicio del tratamiento. La prueba de sensibilidad resulta necesaria al menos para H y R. La obtención de la muestra para cultivos y prueba de sensibilidad no debe retrasar el inicio del tratamiento. La terapia empirica debe iniciarse de inmediato, especialmente si el paciente está gravemente enfermo o si la enfermedad evoluciona rápidamente. Comenzar con un esquema de 2HRZE/4HR hasta tener el resultado del cultivo y antibiograma. De acuerdo al mismo, ver si es necesario modificar esquema. Todos estos casos deben ser notificados, independientemente si inició tratamiento o no.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-062",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "Acude a su consulta Anabela de 17 años quien refiere haber tenido relaciones sexuales con un varón sin profilaxis hace 2 días y recién se enteró que era probable portador de HIV. ¿Cuál es la indicación ante esa situación?",
+    "opciones": {
+      "a": "Realizar test rápido para VIH y no indicar PEP debido al tiempo transcurrido desde la exposición.",
+      "b": "Realizar PEP (Profilaxis posexposición para HIV) con 3 drogas durante 28 días previo testeo de HIV con test rápido.",
+      "c": "Realización de PEP (Profilaxis posexposición para HIV) con 3 drogas durante 14 días.",
+      "d": "Tranquilizar a Anabela ya que las probabilidades de contagio son bajas y sugerir control en un mes para testeo."
+    },
+    "correcta": "b",
+    "explicacion": "El riesgo de transmisión del VIH viene determinado por el tipo de exposición y la fuente. La exposición de mayor riesgo seria la exposición a un volumen importante de sangre (pinchazo con aguja gruesa hueca) de una fuente con unos niveles de viremia elevados (primoinfección, enfermedad avanzada sin TAR) o sexual de riesgo elevado. La relación sexual de mayor riesgo es la receptiva anal, seguida de la receptiva vaginal. El riesgo de transmisión por via sexual cuando la fuente está bajo TAR con viremia controlada es cercano a cero. El VIH puede detectarse en fluidos corporales sin contenido hemático (liquido pleural, LCR, secreciones vaginales y semen), la orina no se considera con potencial infeccioso. Se recomienda realizar profilaxis posexposición en las siguientes situaciones\n• SANGRE - LCR - LIQUIDO DE SEROSAS - FLUIDOS VISIBLEMENTE CONTAMINADOS CON SANGRE Penetración subcutánea o intramuscular con aguja intravenosa o intramusclar, o dispositivo intravascular -VIH(+) - Fuente desconocida pero ALTO riesgo de infección por VIH\nHerida percutánea con elemento cortante, o con aguja subcutánea o intramuscular, o aguja de sutura Contacto por más de 15 minutos con mucosas o con piel no intacta -VIH(+)\nSECRECIONES GENITALES Sexo anal o vaginal - VIH(+) - Fuente desconocida pero ALTO riesgo de infección por VIH\nSexo oral receptivo CON eyaculación sobre mucosa oral - VIH(+)\nUSO DE DROGAS INTRAVENOSAS Intercambio de jeringas, agujas, materiales de preparación u otro material - -VIH(t)\nProfilaxis postexposición:\n• Siempre se deben solicitar las serologias basales (VIH, VHB, VHC), previo consentimiento informado, de la persona expuesta (en las primeras 72 horas). La profilaxis posexposición NO tiene utilidad y no está indicada luego de las 72 horas de la exposición.\n• Solicitar también test de embarazo.\n• Solicitar las serologias (previo consentimiento informado) de la fuente, siempre que sea posible.\n• La profilaxis debe comenzarse idealmente durante las primeras 4 horas posteriores al episodio, y no debe comenzarse después de las 48 horas, excepto en casos excepcionales.\n• La duración es de 4 semanas.\n• Régimen recomendado: tenofovir DF 300 mg emtricitabina 200 mg cada 24 hs o tenofovir DF 300 mg lamivudina 300 mg cada 24 hs + preferido: dolutegravir 50 mg cada 24 hs; alternativo: darunavir/ritonavir 800/100 mg cada 24 hs. Profilaxis de otras ITS = Esquema recomendado: ceftriaxona 250 mg por via intramuscular + azitromicina 1 gramo via oral (única vez).\n• Solicitar screening de ITS en caso de exposición sexual.\n• En caso de exposición sexual, realizar consejería sobre prevención de VIH e ITS, y evaluar si es una primera exposición. Tener en cuenta que en las personas con múltiples exposiciones la estrategia de utilizar profilaxis post-exposición no está indicada.\n• Si la fuente es VIH positiva, se debe individualizar la profilaxis según los antecedentes de fallas terapéuticas previas y el esquema actual. En el caso de contar con la posibilidad de realizar pruebas de laboratorio de VIH a la fuente (p. ej., test rápido, ELISA) con resultado no reactivo, la Profilaxis posexposición para el VIH no está recomendada (ahi hay que evaluar en caso de fuerte sospecha de persona cursando primoinfeccion). Seguimiento: - Re-evaluación por parte de un experto de la indicación de la profilaxis a las 48-72 horas - Evaluar la tolerancia al régimen - Solicitar hemograma y hepatograma a las 2 semanas de haber comenzado la profilaxis - Repetir la serologia para VIH a los 2, 4 y 6 meses - Repetir VDRL al mes si la exposición fue sexual - Hepatograma basal si la fuente es VHC(+). Repetir hepatograma y serología para VHC a los 4 meses. Profilaxis preexposición: se ha demostrado que el uso de tenofovir/emtricitabina disminuye el riesgo de transmisión en poblaciones de riesgo en torno a un 80% (mujeres transgénero, profesionales del sexo, hombres que tienen sexo con hombres con antecedentes recientes de infecciones de transmisión sexual o necesidad de profilaxis preexposición). La profilaxis se realiza con tenofovir/emtricitabina diariamente o con dosis puntuales antes y después de la exposición.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-063",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciosas"
+    ],
+    "enunciado": "Paciente masculino de 43 años de edad VIH positivo en tratamiento antirretroviral con CD4 650 y carga viral indetectable. Consulta por lesiones maculo papulosas a predominio de tronco que no respeta palmas ni plantas. ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Sífilis secundaria.",
+      "b": "Urticaria aguda por alergia medicamentosa.",
+      "c": "Sifilis primaria.",
+      "d": "Vasculitis asociada a terapéutica anti-retroviral."
+    },
+    "correcta": "a",
+    "explicacion": "La aparición de un exantema maculopapular que afecta a palmas y plantas en un sujeto joven es prácticamente patognomónica de sifilis secundaria.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-064",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Un paciente de 50 años consulta por lesiones en genitales. Al examen físico se observa glande con vesículas, pápulas y úlceras sobre una base eritematosa. Refiere que es el primer episodio de este tipo y tiene conductas sexuales de riesgo. ¿Cuáles es la conducta más adecuada en este caso?",
+    "opciones": {
+      "a": "Indicar tratamiento para sífilis, herpes y chancroide y ofrecer realizar prueba para HIV.",
+      "b": "Realizar prueba para VIH y VHB e indicar tratamiento para herpes",
+      "c": "Realizar rastreo de infecciones transmitidas sexualmente y derivar a infectologia",
+      "d": "Ofrecer realizar prueba para HIV, indicar tratamiento para herpes y uso de preservativo y aconsejar informar a su pareja"
+    },
+    "correcta": "d",
+    "explicacion": "Ante todo paciente con una infección de transmisión sexual se le debe ofrecer rastreo para HIV independientemente de sus sintomas. Las lesiones vesiculares en glande son manifestaciones tipicas de la infección por herpes y debe ser tratada con antivirales por via oral. Se debe aconsejar el uso de metodos de barrera para prevenir esta y otras infecciones como la sifilis, gonorrea, uretritis no gonococcica y hepatitis B.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-065",
+    "materia": [
+      "infectologia",
+      "otras"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Fármacos"
+    ],
+    "enunciado": "Un varón de 36 años con diagnóstico de Tuberculosis pulmonar que comienza tratamiento con tuberculostáticos. A los 7 días presenta náuseas, vómitos, dolor abdominal, se le realiza laboratorio donde se constata elevación de transaminasas 3 veces por encima del valor normal. ¿Cuál de las siguientes conductas considera más adecuada?",
+    "opciones": {
+      "a": "Suspender todos los fármacos y evaluar de cerca al paciente. Esperar que los sintomas hayan resuelto y que el nivel de transaminasas se haya normalizado para luego reintroducir secuencialmente la medicación con controles del hepatograma.",
+      "b": "Tranquilizar al paciente y no modificar el tratamiento farmacológico",
+      "c": "Continuar el tratamiento farmacológico con Isoniazida durante 7 días y realizar nuevo hepatograma",
+      "d": "Continuar con 3 fármacos no hepatotóxicos hasta la normalización del hepatograma y luego iniciar con Pirazinamida."
+    },
+    "correcta": "a",
+    "explicacion": "Análisis del caso: Paciente con TB pulmonar, en esquema HRZE - A los 7 días presenta síntomas digestivos (náuseas, vómitos, dolor abdominal) - Laboratorio: transaminasas 3 veces el limite superior de lo normal. Criterios de hepatotoxicidad por tuberculostáticos = Suspender inmediatamente todos los fármacos si: Transaminasas >3 veces LSN con síntomas, o Transaminasas >5 veces LSN aunque no haya síntomas. Una vez que los síntomas desaparezcan y las enzimas hepáticas se normalicen, se deben reintroducir los fármacos secuencialmente, con control de hepatograma, para identificar al responsable.\nEvaluación de las opciones:\n• Suspender todos los fármacos y reintroducirlos secuencialmente tras la normalización. Correcto, es la conducta recomendada.\n• No modificar el tratamiento = incorrecto, hay sintomas y hepatotoxicidad significativa.\n• Continuar solo con isoniacida = incorrecto, la isoniacida es de los más hepatotóxicos, no debe mantenerse.\n.\nContinuar con 3 fármacos no hepatotóxicos (ej. estreptomicina, etambutol, levofloxacino) hasta la normalización y luego reiniciar pirazinamida = Esto se hace en formas graves de TB con necesidad de mantener esquema de sostén, pero la conducta estándar inicial es suspender todos los fármacos hasta la normalización.\nRespuesta correcta: \"suspender todos los fármacos y evaluar de cerca al paciente. Esperar que los síntomas hayan resuelto y que el nivel de transaminasas se haya normalizado para luego reintroducir secuencialmente la medicación con controles del hepatograma\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-066",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Usted se encuentra en un colegio realizando controles de salud escolar y le informan que una alumna de quinto grado, turno mañana, no concurre desde hace una semana debido a que le diagnosticaron Tuberculosis pulmonar bacilífera. La niña compartía una hora diaria de comedor con otros grados. Según \"Criterios de diagnóstico y tratamiento de la tuberculosis infantil\", SAP, 2016; ¿Cómo realizaría el catastro?",
+    "opciones": {
+      "a": "Solicita PPD y radiografia de tórax a todo el grado.",
+      "b": "Solicita radiografía de tórax y baciloscopía a todo el turno.",
+      "c": "Solicita PPD y baciloscopia a todo el grado.",
+      "d": "Solicita PPD y radiografia de tórax a todo el turno"
+    },
+    "correcta": "a",
+    "explicacion": "Las personas que han estado en contacto con un paciente cuya enfermedad tiene localización laringea y/o pulmonar con baciloscopia positiva (enfermo bacilífero) o presentan lesiones extensas o cavitadas tienen mayor riesgo de tener una infección tuberculosa latente y, eventualmente, desarrollar la enfermedad. Ante un caso de tuberculosis primero se debe determinar cuales son los contactos intimos (convivientes o aquellos que comparten diariamente 6 hs o mas, por ejemplo compañeros de grado); los contactos frecuentes (comparten menos de 6 horas diarias) o contactos ocasionales (son las personas que tienen contacto con un enfermo con diagnóstico de tuberculosis, pero no en forma diaria). Luego se solicitará PPD y radiografia de torax a todos los contactos intimos. Por último, se pasará a hacer el estudio de los contactos frecuentes y ocasionales, si se considera necesario. Por ejemplo un número elevado de infectados o conversores a la tuberculina en los contactos intimos mostrará la necesidad de estudiar a los contactos frecuentes también. Es decir en el caso de la pregunta primero se solicitará PPD y radiografia de torax a todos los niños del mismo grado del caso indice por compartir mayor carga horaria, luego de acuerdo a la cantidad de positivos se valorará la necesidad de testear a todo el turno.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-067",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Usted evalúa a una niña de 4 años de edad que presenta úlceras bucales y fiebre, de intensidad creciente, de 2 días de evolución. Al examen físico, la niña tiene aspecto cansado, su temperatura es de 39,8 8°C y babea. Los labios están ligeramente hinchados y sobre ellos se observa sangre seca, y se encuentran numerosas lesiones vesiculares en las encías, la lengua, la mucosa oral, el paladar y la pared posterior de la faringe. Las encías están tumefactas y dolorosas a la palpación, con áreas de hemorragia intermitente. Se observan lesiones vesiculares diseminadas en ambas comisuras de la boca y en la mejilla. El resto del examen físico es normal. ¿Cuál es el agente etiológico más probable?",
+    "opciones": {
+      "a": "Herpes Virus tipo 6",
+      "b": "Parvovirus",
+      "c": "Herpes Virus tipo I",
+      "d": "Enterovirus"
+    },
+    "correcta": "c",
+    "explicacion": "La primo infección herpética por Herpes Virus tipo I puede manifestarse por un cuadro viral con fiebre y una gingivoestomatitis compuesta por vesículas que se ulceran y afectan el paladar duro, las encías y también pueden tener localización peri bucal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-068",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Un paciente de 5 años es traído a la consulta por sus padres porque a la empleada que cuida al niño 7 horas al día se le diagnosticó tuberculosis. El examen físico es normal y el niño se encuentra asintomático. ¿Cuál considera usted la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Indicar profilaxis con isoniacida.",
+      "b": "Solicitar radiografia de tórax y PPD.",
+      "c": "Conducta expectante.",
+      "d": "Solicitar esputo seriado para BAAR."
+    },
+    "correcta": "b",
+    "explicacion": "Ante el diagnostico de tuberculosis en un caso indice se debe estudiara a los contactos con el fin de detectar pacientes con tuberculosis activa para iniciar el tratamiento o iniciar quimioprofilaxis de tuberculosis latente en los contactos cuando corresponda. El niño esta mas de 6 hs con el paciente con TBC. Se debe realizar radiografía de tórax y PPD para determinar si presenta tuberculosis activa o tuberculosis latente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-069",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "Dentro de las acciones del programa de lucha contra la tuberculosis, ¿a qué hace referencia la sigla DOTS?",
+    "opciones": {
+      "a": "A una clasificación para categorizar a los enfermos",
+      "b": "A una estrategia para estudio de los contactos del paciente bacilifero",
+      "c": "A una estrategia de tratamiento de observación directa o supervisado",
+      "d": "A un estudio diagnóstico de alta sensibilidad"
+    },
+    "correcta": "c",
+    "explicacion": "Tratamiento directamente observado (TDO): en este caso el paciente toma los medicamentos en presencia del personal u otro agente de salud. Para esto es recomendable que el tratamiento se descentralice, es decir que el enfermo concurra a un servicio de salud cercano a su domicilio o lugar de trabajo. Esta estrategia de tratamiento mejora la adherencia al tratamiento y baja el riesgo de aparición de resistencia a fármacos debida a la toma irregular de los medicamentos y el abandono.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-070",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Virus respiratorios / Influenza",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "¿Cómo define una enfermedad tipo influenza (ETI)?",
+    "opciones": {
+      "a": "Aparición súbita de fiebre mayor a 38°C y tos o dolor de garganta en ausencia de otras causas",
+      "b": "Enfermedad respiratoria aguda febril mayor a 38°C con tos hemoptoica y dificultad respiratoria",
+      "c": "Aparición súbita de fiebre mayor a 38°C, episodio de tos y de sibilancias",
+      "d": "Enfermedad respiratoria aguda febril con tos, dificultad respiratoria y taquipnea"
+    },
+    "correcta": "a",
+    "explicacion": "Según la Guía de vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas, en Argentina se define Enfermedad Tipo Influenza (ETI) como aparición súbita de fiebre mayor a 38°C y tos o dolor de garganta en ausencia de otras causas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-071",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Hongos",
+      "Neumonía"
+    ],
+    "enunciado": "Pneumocystis jirovecci tiene un tropismo único por el tejido:",
+    "opciones": {
+      "a": "Cerebral.",
+      "b": "Pulmonar.",
+      "c": "Renal",
+      "d": "Endotelial."
+    },
+    "correcta": "b",
+    "explicacion": "Neumonia por Pneumocystis jirovecii: aunque la mayor parte de la población está infectada por este hongo, no suele producir clínica mientras los CD4 no desciendan por debajo de 200/µL En los pacientes inmunodeprimidos típicamente produce una neumonia subaguda con fiebre, tos no productiva y disnea-hipoxemia progresiva.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-072",
+    "materia": [
+      "infectologia",
+      "otras"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Fármacos"
+    ],
+    "enunciado": "Llega a la consulta Sebastián de 40 años, con diagnóstico de tuberculosis pulmonar se encuentra en el día 30 de tratamiento con Isoniacida (H), Rifampicina (R), Pirazinamida (P) y Etambutol (E). Presenta buena tolerancia al tratamiento y se encuentra asintomático excepto porque refiere que la orina se ha tornado de color anaranjado. Aporta hepatograma control que informa: GOT 30 GPT 25 FAL 120 ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Suspender tratamiento por nefrotoxicidad y una vez resuelto el cuadro, reintroducir los fármacos en forma simultánea.",
+      "b": "Suspender tratamiento por hepato y nefrotoxicidad y una vez resuelto el cuadro, reintroducir los fármacos de a uno por vez.",
+      "c": "Tranquilizar al paciente respecto del color de la orina explicando que es consecuencia de la toma de pirazinamida y continuar con Hy R por 4 meses más.",
+      "d": "Tranquilizar al paciente respecto del color de la orina explicando que es consecuencia de la toma de rifampicina y continuar con 4 drogas hasta cumplir los 2 meses y luego seguir con Hy R por 4 meses más."
+    },
+    "correcta": "d",
+    "explicacion": "Rifampicina: Inductor enzimático. Alteración del perfil hepático, hepatitis de predominio colestásico. Otros: fiebre de origen medicamentoso, hipersensibilidad cutánea en menos del 5%. Anemia hemolitica, púrpura trombocitopénica, nefritis intersticial. Es característico el cambio de coloración de la orina a un tono anaranjado.\nManejo de RAFAs menores: orina anaranjada/colorada: Rifampicina. Conducta. Tranquilizar al paciente. Explicar. Continuar con la pauta terapéutica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-073",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "¿Actualmente, en cuál de las siguientes situaciones está indicada realizar prueba de tuberculina (reacción de Mantoux)?",
+    "opciones": {
+      "a": "Diagnóstico de embarazadas con sospecha de tuberculosis.",
+      "b": "Diagnóstico de adultos en los que se sospecha tuberculosis pulmonar",
+      "c": "En el ingreso laboral del personal de salud y seguimiento en el tiempo",
+      "d": "Monitoreo de pacientes inmunodeprimidos en tratamiento con corticoides."
+    },
+    "correcta": "c",
+    "explicacion": "La prueba tuberculinica se utiliza como indice epidemiológico de infección con M. tuberculosis en una población, como ayuda diagnóstica de la enfermedad y para detectar personas infectadas con alto riesgo de enfermar de TB. En consecuencia las únicas indicaciones actuales de realizar prueba tuberculinica son: personal de salud que ingresa a trabajar y su seguimiento en el tiempo; grupos de alta prevalencia de infección con VIH y niños con sospecha de TB con el fin de detectar viraje tuberculinico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-074",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Otras preguntas de gastroenterología"
+    ],
+    "enunciado": "¿Qué patología sospecha en primer lugar en un paciente con ascitis y edemas que tiene un líquido ascítico ligeramente turbio con concentración de proteínas mayor a 25 g/l, con gradiente de albúmina suero-ascitis menor de 1,1 g/dL, más de 1.000 leucocitos y 70% de linfocitos?",
+    "opciones": {
+      "a": "Peritonitis tuberculosa",
+      "b": "Insuficiencia cardiaca congestiva",
+      "c": "Peritonitis bacteriana",
+      "d": "Sindrome nefrótico"
+    },
+    "correcta": "a",
+    "explicacion": "La ascitis es la acumulación de liquido en la cavidad peritoneal. El gradiente entre la albumina sérica y la albumina del liquido ascitico (GASA) establece la presencia de hipertensión portal y es útil en el diagnostico diferencial. Los paciente con ascitis con GASA mayor a 1,1 tienen hipertension portal y entre la causas se encuentran principalmente la cirrosis y la insuficiencia cardiaca. En paciente con ascitis con GASA menor a 1,1 se debe pensar fundamentalmente en causas neoplásicas y en tuberculosis. La presencia de leucocitos abundantes a predominio linfocitario sugiere la presencia de tuberculosis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-075",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "¿Cuáles de las siguientes patologías se deben descartar antes de iniciar terapia antirretroviral en un paciente con inmunosupresión severa?",
+    "opciones": {
+      "a": "Toxoplasmosis cerebral",
+      "b": "Tuberculosis",
+      "c": "Sarcoma de Kaposi",
+      "d": "Hepatitis por Citomegalovirus (CMV)"
+    },
+    "correcta": "b",
+    "explicacion": "El inicio de TARV en presencia de infecciones oportunistas debe ser temprano para disminuir el riesgo de otros eventos definidores de sida y muerte, e incrementar más rápidamente el recuento de CD4. Sin embargo hay situaciones como la tuberculosis y la meningitis criptocócica que deben evaluarse individualmente teniendo en cuenta la situación clínica, el riesgo de sindrome de respuesta inflamatoria sistémica (SRIS), las interacciones medicamentosas y la superposición de toxicidades.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-076",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "¿Cómo realiza el seguimiento de un paciente de 30 años, inmunocompetente, en buen estado general, que tiene por primera vez tuberculosis pulmonar con baciloscopía positiva y que recibe desde hace un mes tratamiento con isoniacida, rifampicina, etambutol y pirazinamida?",
+    "opciones": {
+      "a": "Realizar cada dos meses evaluación clínica y baciloscopía al final del primer mes y realizar cultivo si el resultado es positivo",
+      "b": "Realizar cada dos meses evaluación clínica, y baciloscopia al final del segundo mes y realizar cultivo si el resultado es positivo",
+      "c": "Realizar una vez por mes evaluación clínica, evaluar las posibles reacciones adversas a los medicamentos y baciloscopía al final del cuarto mes y realizar cultivo si el resultado es positivo",
+      "d": "Realizar una vez por mes evaluación clínica, evaluar las posibles reacciones adversas a los medicamentos y baciloscopia al final del segundo mes y realizar cultivo si el resultado es positivo"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento de la tuberculosis consta de una primera fase intensiva o esterilizante durante dos meses con cuatro drogas de primera linea (Rifampicina, isoniazida, prirazinamida y etambutol) seguida de una fase de cuatro meses con dos fármacos (Isoniazida y Rifampicina). Si el resultado de la baciloscopía de esputo al final del segundo mes es positivo, se debe realizar cultivo y prueba de sensibilidad. Se realizará además control clínico mensual con el fin de mejorar la adherencia al tratamiento, evaluar toxicidad por drogas, ajustar la medicación al peso y solicitar estudios microbiológicos según corresponda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-077",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Ramiro, de 22 años consulta por una secreción uretral de características purulentas que está asociada a prurito y disuria de 4 días de evolución. Que conducta sigue?",
+    "opciones": {
+      "a": "Indica Ceftriaxona 250 mg intramuscular única dosis+ Azitromicina 1 gr via oral única dosis.",
+      "b": "Solicita VDRL, testeo de Hepatitis B y VIH. Indica tratamiento a la pareja.",
+      "c": "Indica Ciprofloxacina 500mg c/12hs via oral por 7 dias + Azitromicina 1 gr via oral, única dosis. Solicita HIV, VDRL, Hepatitis B. Indica tratamiento a la pareja",
+      "d": "Indica Ceftriaxona 125 mg intramuscular, única dosis + doxiciclina 100mg c/12hs vía oral x 7 dias. Solicita testeo de VIH. Indica tratamiento a la pareja."
+    },
+    "correcta": "a",
+    "explicacion": "La presencia de secreción uretral debe orientar al diagnóstico de uretritis, que se caracteriza por secreción purulenta uretral, disuria y/o prurito pero también puede ser asintomática. Las uretritis infecciosas, de acuerdo con el germen involucrado pueden clasificarse en: uretritis gonococcica y uretritis no gonocóccica. Tratamiento de elección Ceftriaxona 250 mg IM dosis única + Azitromicina 1 g VO dosis única. Debe indicarse similar tratamiento a toda pareja que haya tenido contacto sexual en los últimos 30 días (60 dias si el caso índice estuviera asintomático). Recordar que ante todo paciente con una infección de transmisión sexual se debe ofrecer el rastreo para HIV independientemente de sus sintomas, VDRL y testeo de hepatitis B.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-078",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "¿Cuál es la estrategia recomendada por las guías argentinas para las personas con diagnóstico reciente confirmado de infección por VIH?",
+    "opciones": {
+      "a": "Diferir el inicio del tratamiento si su carga viral es menor a 10.000 copias",
+      "b": "Iniciar el tratamiento independientemente del recuento de células TCD4+ o de la magnitud de su carga viral",
+      "c": "Diferir el inicio del tratamiento antirretroviral hasta que sus recuentos de linfocitos TCD4+ sean menores a 350 células/mm3",
+      "d": "Iniciar el tratamiento si su carga viral supera las 100.000 copias"
+    },
+    "correcta": "b",
+    "explicacion": "En la actualidad se recomienda comenzarlo en cualquier paciente diagnosticado de infección por VIH, independientemente de la cifra de linfocitos CD4 o de la carga viral. Esta estrategia ha demostrado mejorar el pronóstico a largo plazo como disminuir la posibilidad de transmisión, el riesgo de complicaciones de la infección por VIH Y aumentar las probabilidades de elevar el recuento de CD4.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-079",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "Consulta Sergio de 33 años por presentar supuración uretral. Usted la constata y realiza diagnóstico de uretritis. ¿Qué tratamiento antibiótico empírico le indica?",
+    "opciones": {
+      "a": "Ceftriaxona 1gr intramuscular + 1 gr de azitromicina via oral única dosis.",
+      "b": "Ceftriaxona 250 mg intramuscular + 200 mg de doxiciclina via oral única dosis.",
+      "c": "Ciprofloxacina 500 mg cada 12 horas por 3 dias + 200 mg de doxiciclina 5 dias.",
+      "d": "Ciprofloxacina 500 mg cada 12 horas por 3 dias + 1 gr. de azitromicina via oral única dosis."
+    },
+    "correcta": "a",
+    "explicacion": "La presencia de secreción uretral debe orientar al diagnóstico de uretritis, que se caracteriza por secreción purulenta uretral, disuria y/o prurito pero también puede ser asintomática. Las uretritis infecciosas, de acuerdo con el germen involucrado pueden clasificarse en: uretritis gonococcica y uretritis no gonocóccica. Tratamiento de Elección Ceftriaxona 250 mg IM dosis única (o en biblio Farreras dosis de 1g) + Azitromicina 1 g VO dosis única. Debe indicarse similar tratamiento a toda pareja que haya tenido contacto sexual en los últimos 30 dias (60 dias si el caso índice estuviera asintomático).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-080",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Neumonía"
+    ],
+    "enunciado": "Un paciente de 32 años consulta a la guardia por fiebre y disnea progresiva CF II-III de 20 días de evolución, asociada a tos seca. Tiene diagnóstico de HIV positivo hace 2 años sin tratamiento actualmente por intolerancia. Al examen fisico se encuentra en buen estado general, afebril y presenta a la auscultación pulmonar crepitantes escasos en campo medio bilaterales. Se realiza laboratorio que informa: Hto 40%, GB 2500/mm3, LDH 1200 Ui/l y EAB: pH 7.45 pC02 32 mmHg p02 67 mmHg. La radiografía de tórax muestra un infitrado intersticial perihiliar bilateral. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Amoxicilina + ciprofloxacina",
+      "b": "Levofloxacina",
+      "c": "Amoxicilina clavulánico",
+      "d": "Trimetroprima sulfametoxazol"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad pulmonar es una de las manifestaciones mas frecuentes en el paciente infectado por HIV. Entre ellas se destaca la neumonia por Pneumocystis jirovecci. Se presenta en pacientes con mal control inmunologico (recuento de CD4 menor a 200/mcl). Se caracterisa por la aparición de tos seca, fiebre a veces asociada a perdida de peso. Radiologicamente se observa un infiltrado intersticial difuso sin consolidacion y en la tomografia de torax un patron difuso de atenuación en vidro esmerilado bilateral algunas veces asociado a la formación de quistes. El tratamiento de primera linea consiste en la administracion de Trimetroprim-Sulfametoxazol por 21 dias.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-081",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tuberculosis"
+    ],
+    "enunciado": "Un varón de 35 años, presenta pérdida de peso, fiebre, deterioro del estado general, tos y expectoración mucopurulenta de 2 meses de evolución; en la radiografía de tórax presenta lesión cavitada en el vértice derecho y en el estudio microbiológico de esputo se observan bacilos ácido-alcohol resistentes. ¿Cuál es el tratamiento adecuado?",
+    "opciones": {
+      "a": "Isoniacida, rifampicina y etambutol durante dos meses y cuatro meses de isoniacida y rifampicina en forma diaria",
+      "b": "Isoniacida, rifampicina, pirazinamida y etambutol durante dos meses y seis meses de isoniacida y rifampicina en forma diaria",
+      "c": "Isoniacida, rifampicina, pirazinamida y etambutol durante dos meses y ocho meses de isoniacida y rifampicina en forma diaria",
+      "d": "Isoniacida, rifampicina, pirazinamida y etambutol durante dos meses y cuatro meses de isoniacida y rifampicina en forma diaria"
+    },
+    "correcta": "d",
+    "explicacion": "Actualización:\nRespuesta correcta: Isoniacida, rifampicina, pirazinamida y etambutol durante dos meses y cuatro meses de isoniacida y rifampicina en forma diaria\nResumiendo:\nCasos nuevos de TBC pulmonar:\nFase inicial de 2 meses con H (isoniacida), R (rifampicina), Z (pirazinamida) y E (etambutol), en forma diaria. Fase de continuación de 4 meses con Hy R, en forma diaria. En determinadas circunstancias el tratamiento debe prolongarse a expensas de la segunda fase.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-082",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "En un paciente con HIV con CD4<50 y alta carga viral, que presenta una lesión ocupante de espacio, ¿Cuál de las siguientes patologías debe descartar en primera instancia?",
+    "opciones": {
+      "a": "Chagoma por enfermedad de Chagas",
+      "b": "Toxoplasmosis",
+      "c": "Tumor cerebral",
+      "d": "Absceso cerebral"
+    },
+    "correcta": "b",
+    "explicacion": "Ante una LOE en HIV+ en hemisferio sur pensar en: Toxo vs Chagas vs TBC. Toxoplasmosis cerebral es la infección secundaria del SNC más frecuente en los pacientes con inmunodepresión avanzada (CD4<100) (correcta)\nChagoma como LOE, en pacientes con VIH/SIDA el mayor riesgo de reactivación se presenta cuando el recuento de linfocitos T CD4+ es menor de 100-200 células/µL.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-083",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Hongos"
+    ],
+    "enunciado": "Una mujer de 57 años, con antecedentes de VIH +, consulta a la guardia por fiebre y tos no productiva de 10 días de evolución. Refiere astenia, adinamia y deterioro general de 1 mes de evolución aproximadamente con pérdida de peso de 7kg y odinofagia desde hace 4 meses. Al examen físico presenta muguet oral y subcrepitantes bilaterales aislados en ambos campos pulmonares. Laboratorio: linfopenia 100/mm3 y LDH 1900 U/L (225 LSN). En la radiografía de tórax se observa patrón intersticial bilateral con extensión centrífuga desde los hilios pulmonares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Bronconeumonia por pseudomona aeruginosa",
+      "b": "Neumonia por neumococo",
+      "c": "Aspergilosis pulmonar",
+      "d": "Neumonía por pneumocystis jirovecii"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Cuadro clínico que un en paciente con VIH nos hace sospechar en neumonia por pneumocystis jirovecii por cuadro respiratorio subagudo, linfopenia menor a 100, LDH elevada y patrón radiológico intersticial bilateral con extensión centrífuga desde los hilios pulmonares.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-084",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "De acuerdo a la Guía de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018. Señale la definición correcta para la neumonía.",
+    "opciones": {
+      "a": "Definición de caso: Paciente febril, tos con expectoración mucopurulenta, examen fisico: vibraciones vocales aumentadas y matidez a la percusión de toráx.",
+      "b": "Definición de caso: Dificultad respiratoria, tos con expectoración mucopurulenta, sindrome febril, (>38°).",
+      "c": "Definición de caso: Enfermedad respiratoria aguda febril (>38°) con tos, dificultad respiratoria, taquipnea y radiologia que muestra un infiltrado lobar o segmentario o derrame pleural.",
+      "d": "Definición de caso: Enfermedad respiratoria febril con expectoración, taquicardia, taquipnea, semiología de condensación o derrame pleural al examen fisico."
+    },
+    "correcta": "c",
+    "explicacion": "Guía de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018: Neumonía: Definición de caso: Enfermedad respiratoria aguda febril (> 38°) con tos, dificultad respiratoria, taquipnea y radiología que muestra un infiltrado lobar o segmentario o derrame pleural.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-085",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Mariano de 20 años de edad presenta un índrome mononucleósico, ¿Cuál de los siguientes hallazgos serológicos diagnostican una infección aguda por Virus de Ebstein Barr?",
+    "opciones": {
+      "a": "Anticuerpos contra EBNA positivos",
+      "b": "Anticuerpos heterófilo negativa",
+      "c": "IgM negativo, IgG VCA positivos",
+      "d": "Prueba monospot/monotest positiva"
+    },
+    "correcta": "d",
+    "explicacion": "Mononucleosis infecciosa: el Monotest (test de Paul-Bunnell) es una prueba rápida para la detección de anticuerpos heterófilos. Los anticuerpos heterófilos pueden aparecer al inicio o después, en el curso de la enfermedad. (correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-086",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "Mujer trans de 26 años de edad con diagnóstico de VIH hace 2 años. Está bajo tratamiento antirretroviral con buena adherencia y tolerancia, su último control de carga viral, hecho el mes pasado, fue no detectable y no ha tenido ninguna complicación relacionada al VIH. Ella desea comenzar a hormonizarse como parte de su transición, pero teme por la posibilidad de que las hormonas interfieran y hagan más efectivo su tratamiento antirretroviral. ¿Qué información debe brindarse?",
+    "opciones": {
+      "a": "Que podrá realizar el tratamiento de hominización teniendo en cuenta posibles interacciones entre el tratamiento antirretroviral y las hormonas administradas.",
+      "b": "Que para poder recibir terapia de reemplazo hormonal la carga viral debe estar indetectable durante al menos un año.",
+      "c": "Que no podrá realizar tratamiento de hominización, dado que está contraindicado junto con el tratamiento antirretroviral.",
+      "d": "Que debe interrumpir su tratamiento antirretroviral mientras realiza la hominización."
+    },
+    "correcta": "a",
+    "explicacion": "Guia de atención de la salud integral de personas trans, travestis y no binaria: se debe tener presente que ni la infección por VIH ni la terapia antiretroviral representan per se un impedimento para iniciar o continuar la terapia hormonal (TH). A su vez, ninguno de los esquemas recomendados de hormonización contraindica el uso de la medicación antirretroviral utilizada para el tratamiento de la infección por VIH, la (profilaxis post-exposición) PEP y la profilaxis pre-exposición (PrEP). La TH no interfiere con la eficacia del tratamiento antirretroviral. En cambio, algunos antirretrovirales pueden modificar la eficacia de los medicamentos empleados para hormonización. Es importante valorar en cada caso particular la necesidad y la posibilidad de cambiar a otro esquema antirretroviral o ajustar las dosis de los fármacos utilizados en la terapia hormonal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-087",
+    "materia": [
+      "infectologia",
+      "otras"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Fármacos"
+    ],
+    "enunciado": "Una mujer de 28 años VIH negativa con diagnóstico de TB pulmonar inicia tratamiento ambulatorio con Isoniacida (I), Rifampicina (R), Pirazinamida (P) y Etambutol (E). El hepatograma control, a las 2 semanas de comenzado el tratamiento, muestra aumento de las transaminasas superior a 5 veces el valor máximo normal. La paciente no presenta síntomas de intolerancia digestiva, dolor abdominal ni ictericia. ¿Cuál es la conducta más apropiada ante esta situación?",
+    "opciones": {
+      "a": "Suspender el tratamiento con las cuatro drogas hasta la normalización de las enzimas hepáticas. Reiniciar secuencialmente el tratamiento comenzando con P",
+      "b": "Continuar el tratamiento, interpretando que se trata de elevación transitoria y asintomática de las transaminasas, aumentando la frecuencia de los controles clínicos y de laboratorio a una vez por semana",
+      "c": "Suspender el tratamiento con I, Ry P continuando con la administración de E e iniciar fluoroquinolonas y aminoglucosido hasta la normalización del hepatograma. Reiniciar secuencialmente el tratamiento comenzando con R",
+      "d": "Suspender el tratamiento con I, Ry P continuando con la administración de E hasta la normalización del hepatograma. Reiniciar secuencialmente el tratamiento comenzando con I"
+    },
+    "correcta": "c",
+    "explicacion": "Datos positivos: Mujer de 28 años, TB pulmonar, VIH negativa. En tratamiento con HRZE. A las 2 semanas: transaminasas >5 veces LSN, sin síntomas. Regla de hepatotoxicidad = Suspender tratamiento si: Transaminasas >= 3 veces LSN con sintomas, o Transaminasas >= 5 veces LSN sin síntomas. Este caso cumple este último criterio. ¿Qué hacemos mientras tanto? Mantener esquema con drogas no hepatotóxicas (Ej.: Etambutol + fluoroquinolona aminoglucósido), para no dejar al paciente sin cobertura. Una vez normalizado el hepatograma, se reintroducen secuencialmente los hepatotóxicos, en este orden: Rifampicina - Isoniacida y Pirazinamida (última o incluso no reintroducir si la reacción fue grave).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-088",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "A un paciente de 25 años, con una radiografía de tórax donde se observa cavidad en ápice derecho, se le diagnosticó tuberculosis pulmonar por baciloscopía directa de esputo y comenzó tratamiento con isoniacida, rifampicina, pirazinamida y etambutol. ¿Cuál es la conducta más adecuada para el seguimiento luego de iniciado el tratamiento?",
+    "opciones": {
+      "a": "Evaluación clínica, evaluar las posibles reacciones adversas, exámenes de laboratorio para evaluar toxicidad farmacológica y radiografia de tórax semanalmente. Baciloscopía al 6to mes.",
+      "b": "Evaluación clinica, evaluar las posibles reacciones adversas, exámenes de laboratorio para evaluar toxicidad farmacológica, Baciloscopia al final del 2do mes, 4to mes y 6to mes. En cada caso si la baciloscopia es positiva se debe solicitar cultivo y prueba de sensibilidad. Estudios radiológicos al inicio, al finalizar la primera etapa y al completar el tratamiento.",
+      "c": "Evaluación clínica, evaluar las posibles reacciones adversas, exámenes de laboratorio para evaluar toxicidad farmacológica, baciloscopia cada 15 dias y PPD a la semana de tratamiento. Estudios radiológicos al inicio y al completar el tratamiento.",
+      "d": "Evaluación clínica, evaluar las posibles reacciones adversas, exámenes de laboratorio para evaluar toxicidad farmacológica, baciloscopía mensual, PPD y radiografia de tórax a los 15 días y al finalizar el tratamiento"
+    },
+    "correcta": "b",
+    "explicacion": "Seguimiento del tratamiento de la tuberculosis pulmonar. Se debe realizar seguimiento clinico de los pacientes por lo menos al primero, segundo, cuarto y sexto mes de tratamiento, con el fin de incentivar la toma de medicamentos, evaluar toxicidad a las drogas, ajustar la medicación al peso del paciente y solicitar los controles bacteriológicos según corresponda. Los estudios radiológicos recomendados son: al inicio, al finalizar la primera etapa y al completar el tratamiento. Los controles bacteriológicos deben realizarse: Examen de esputo (controles minimos). Caso nuevo pulmonar con baciloscopia positiva: Baciloscopia al final del 2do mes, final del 4to mes y final del 6to mes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-089",
+    "materia": [
+      "infectologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "HIV",
+      "Oncología"
+    ],
+    "enunciado": "En los pacientes adultos con enfermedad por el virus de la inmunodeficiencia humana (VIH).",
+    "opciones": {
+      "a": "La incidencia del linfoma aumenta en los pacientes que presentan concomitantemente infección por el virus del papiloma humano",
+      "b": "Supone alrededor del 80% de los casos de linfoma en los individuos con infección por VIH",
+      "c": "El linfoma del SNC se presenta en fases más tempranas de la infección por el VIH que el linfoma sistémico",
+      "d": "Los linfomas primarios del SNC suelen contener el genoma del virus de Epstein-Barr"
+    },
+    "correcta": "d",
+    "explicacion": "El linfoma se presenta tardiamente en pacientes con HIV, ocurre generalmente con <200 CD4. Hay tres grandes grupos de linfomas. El linfoma inmunoblástico de grado III o IV, el linfoma de Burkitt y el linfoma primario del SNC. El linfoma primario del SNC representa el 20% de los linfomas en pacientes HIV. El virus Epstein Barr resulta positivo en el 100%. El linfoma puede aparecer a cualquier edad y se presenta en fases mas tardias de la infección por HIV que el linfoma sistémico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-090",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "HIV",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Paciente con diagnóstico de VIH que ingresa por hemiparesia, hemianopsia y compromiso del III par. Se realiza RNM de cerebro donde presenta múltiples lesiones hiperintensas en T2 en sustancia blanca subcorticales en ambos hemisferios, que no refuerzan con gadolinio ni presentan efecto de masa. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Toxoplasmosis cerebral",
+      "b": "Demencia asociada a SIDA",
+      "c": "Leucoencefalopatia multifocal progresiva",
+      "d": "Linfoma primario del sistema nervioso central"
+    },
+    "correcta": "c",
+    "explicacion": "La LMP, frecuente en pacientes inmunodeprimidos, es la manifestación de la infección por el virus JC que es un poliomavirus humano, en la mayor parte de la población presenta infección previa sin replicaron viral sostenida. La LMP es una enfermedad desmielinizante, que se presenta como focos en la sustancia blanca subcortical, afectando también cerebelo, tronco del encéfalo y hemisferios cerebrales. Se manifiesta con sintomas como ataxia, hemiparesia, afasia, déficit sensitivos y campimétricos. En la RMN se evidencian lesiones hipertensas en T2, hipointensas en T1, confluentes mayormente en lóbulos occipitales y parietales. La medición del virus JC en LCR tiene una sensibilidad del 76% y una especificidad del 100%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-091",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Mariela de 10 años es traída a la guardia por odinofagia y fiebre de 48hs de evolución. Al examen físico se observan vesículas periorificiales y úlceras superficiales en mucosa yugal. Las fauces están cubiertas de membrana amarillo grisáceas y se palpan adenopatías submaxilares bilaterales dolorosas. ¿Cuál es diagnóstico más probable?",
+    "opciones": {
+      "a": "Faringitis estreptocóccica",
+      "b": "Gingivoestomatitis herpética",
+      "c": "Herpangina",
+      "d": "Difteria"
+    },
+    "correcta": "b",
+    "explicacion": "La infección herpética puede manifestarse con un cuadro viral y una gingivoestomatitis compuesta por vesículas que se ulceran, afectan el paladar duro y las encías y, también pueden ser peribucales.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-092",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "Una paciente de 23 años consulta por presentar tos de dos meses de evolución, sudoración nocturna y fiebre no cuantificada. Desde la última semana presenta falta de aire que la obliga a detenerse al caminar 200 metros. Al examen físico se encuentra adelgazada y a la auscultación pulmonar presenta hipoventilación global. Refiere vivir con 4 hermanos en una pieza en condiciones de hacinamiento. Según su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar fibrobroncoscopia con lavado broncoalveolar y esputo para BAAR",
+      "b": "Realizar fibrobroncoscopia y PPD",
+      "c": "Solicitar baciloscopia de esputo, radiografia tórax y hemograma",
+      "d": "Solicitar baciloscopia de esputo y tomografía de tórax con contraste endovenoso"
+    },
+    "correcta": "c",
+    "explicacion": "La tuberculosis es un enfermedad infectocontagiosa producida por el bacilo acido alcohol resitente mycobacterium tuberculosis. Afecta principalmente los pulmones en forma de una neumonia de lenta evolucion asociada fiebre, sudoración nocturna y perdida de peso. Las condiciones de hacinamiento, el alcoholismo, la denutricion, la infeccion por HIV son algunos de los factores que incrementan el riesgo de padecer la enfermedad. Para realizar el diagnostico se debe evidenciar el bacilo y esto se realiza en primera instancia con el estudio directo del esputo con el metodo de Ziehl-Neelsen en tres muestras separadas. La muestra tambien debera ser enviada para realizar cultivo y antibiograma. Con las pruebas de amplificación de ADN como GeneXpert MTB-RIF se obtiene el resultado en forma casi inmediata con una sensibilidad y especificidad similar a la del cultivo y ademas permite reconocer la infecciones resistentes a rifampicina. La realizacion de una radiografia de torax resulta fundamental para conocer el patron y la extension de la enfermedad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-093",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "Un paciente de 20 años consultó por un cuadro de 48 horas de evolución de malestar general, mialgias, cefalea, fiebre de 38° C y lesiones maculopapulosas que aparecieron inicialmente en región facial y fueron progresando en tronco y extemidades. En el examen físico presenta en forma generalizada múltiples lesiones maculopapulosas eritematosas, redondeadas, monomorfas sin afectación de palmas ni plantas y en paladar duro una lesión erosiva no dolorosa. Se palpan poliadenopatías cervicales y axilares móviles y pequeñas. Trae un ELISA para HIV negativo realizado el día anterior. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar nuevo ELISA para HIV",
+      "b": "Solicitar VDRL y FTA - ABS",
+      "c": "Solicitar VDRL y serologia dengue",
+      "d": "Solicitar VDRL y antigeno p24"
+    },
+    "correcta": "d",
+    "explicacion": "Entre 50-70% de los individuos con infección por HIV presentan entre 3 a 6 semanas después de la infección primaria un sindrome clinico que consiste tipicamente en fiebre, erupción cutánea, faringitis, mialgias y adenopatias similar a la mononucleosis infecciosa. El análisis de captación del antigeno P24 es espacialmente útil en los pacientes en los que se sospecha sindrome agudo por HIV.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-002-094",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciones urinarias"
+    ],
+    "enunciado": "¿A partir de qué título de VDRL investiga Sífilis?",
+    "opciones": {
+      "a": "4 dil.",
+      "b": "1 dils.",
+      "c": "16 dils.",
+      "d": "8 dils."
+    },
+    "correcta": "b",
+    "explicacion": "Tests no treponémicos: RPR/VDRL. Se basan en la detección de anticuerpos contra antigenos de las células afectadas por la espiroqueta. Son muy sensibles pero menos específicas. Se emplean para monitorizar la respuesta al tratamiento (se negativizan). También pueden negativizarse en la fase latente tardía. Son poco específicas y producen falsos positivos frecuentes en embarazo, ancianos, enfermedades autoinmunes como lupus eritematoso sistémico, otras infecciones (otras espiroquetas, VIH, etc.) y por este motivo un resultado reactivo debe confirmarse siempre con una prueba especifica independientemente del titulo de anticuerpos. Los resultados se informan como \"reactivo\" o \"no reactivo\", y de forma cuantitativa como \"dils\" o titulos de anticuerpos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
