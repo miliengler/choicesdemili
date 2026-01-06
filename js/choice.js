@@ -512,15 +512,34 @@ function verEstadisticasMateria(slug) {
             if(card) card.scrollIntoView({ behavior: "smooth", block: "center" });
         }
     }, 100);
-}
+}function verNotasMateria(slug) {
+    // 1. Verificar si hay notas guardadas de esta materia
+    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    const noteIds = Object.keys(savedNotes);
+    
+    // Buscamos si existe al menos UNA pregunta con nota que pertenezca a este slug
+    const tieneNotas = BANK.questions.some(q => {
+        // ¿La pregunta tiene nota?
+        if (!noteIds.includes(q.id)) return false;
+        
+        // ¿La pregunta pertenece a la materia?
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+        return esMateria;
+    });
 
-function verNotasMateria(slug) {
+    // 2. Si no hay notas, mostramos alerta y cortamos acá
+    if (!tieneNotas) {
+        const nombreMateria = getMateriaNombre(slug);
+        alert(`Todavía no tenés notas de ${nombreMateria}.`);
+        return; 
+    }
+
+    // 3. Si hay notas, procedemos a navegar
     if (typeof renderNotasMain !== 'function') return alert("Error: Módulo de Notas no cargado.");
 
-    // 1. Ir a la pantalla de Notas
     renderNotasMain();
 
-    // 2. Abrir el grupo de esa materia
+    // 4. Abrir el grupo de esa materia y scrollear
     setTimeout(() => {
         if (typeof openGroups !== 'undefined') {
             openGroups[slug] = true; 
@@ -536,3 +555,4 @@ function verNotasMateria(slug) {
         }
     }, 100);
 }
+
