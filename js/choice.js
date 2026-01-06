@@ -32,21 +32,39 @@ function renderProgressCircle(percent) {
 function renderChoice() {
   const app = document.getElementById("app");
   
-  // Si ya existe el contenedor, solo refrescamos la lista
   if (document.getElementById("choice-shell")) {
       renderChoiceList(); 
       return;
   }
 
   app.innerHTML = `
-    <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
-        <div class="modal-content" style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%;">
-            <h3 style="margin-top:0;">💡 Modos de práctica</h3>
-            <p>Elegí la opción que mejor se adapte a tu estudio:</p>
-            <div style="margin-bottom:10px;"><b>▶ Iniciar:</b> Repaso general (todas las seleccionadas).</div>
-            <div style="margin-bottom:10px;"><b>⏩ Pendientes:</b> Solo las que no respondiste aún.</div>
-            <div style="margin-bottom:10px;"><b>🧠 Repasar incorrectas:</b> Solo en las que fallaste.</div>
-            <div style="margin-top:15px; text-align:right;">
+    <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
+        <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
+            
+            <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
+            <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
+            
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
+                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (respondidas previamente o no). Ideal para repaso general.</div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏩ Resolver pendientes</div>
+                <div style="font-size:14px; color:#475569;">Selecciona únicamente las preguntas que <b>aún no respondiste</b>. Ideal para avanzar con material nuevo.</div>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
+                <div style="font-size:14px; color:#475569;">Genera una práctica exclusiva con las preguntas registradas como <b>Incorrectas</b>. Ideal para corregir errores y fijar conceptos.</div>
+            </div>
+
+            <div style="margin-bottom:20px; padding-top:15px; border-top:1px solid #e2e8f0;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Sobre el porcentaje</div>
+                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia.</div>
+            </div>
+
+            <div style="text-align:right;">
                 <button class="btn-main" onclick="toggleInfoModal()" style="width:auto; padding:8px 20px;">Entendido</button>
             </div>
         </div>
@@ -63,19 +81,24 @@ function renderChoice() {
               ?
             </button>
           </div>
-          <p style="color:#64748b; margin:0; font-size:14px;">Elegí una materia y tus subtemas.</p>
+          <p style="color:#64748b; margin:0; font-size:14px;">
+             Elegí una materia y opcionalmente uno o más subtemas.
+          </p>
         </div>
-        <button class="btn-small" onclick="renderHome()" style="background:#fff; border:1px solid #e2e8f0; color:#475569;">⬅ Volver</button>
+        
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
+           ⬅ Volver
+        </button>
       </div>
 
       <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap; align-items:center;">
         
         <input type="text" 
                id="choiceSearchInput"
-               placeholder="🔍 Buscar..." 
+               placeholder="🔍 Buscar materia o tema..." 
                value="${choiceSearchTerm}"
                oninput="onSearchChoice(this.value)"
-               style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; min-width: 150px;">
+               style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:15px; min-width: 150px;">
         
         <label style="display:flex; align-items:center; gap:6px; background:#f0fdf4; border:1px solid #bbf7d0; padding:8px 12px; border-radius:8px; cursor:pointer; user-select:none;">
             <input type="checkbox" id="chkOficialesChoice" ${choiceOnlyOfficial ? "checked" : ""} onchange="toggleChoiceOfficial(this.checked)" style="accent-color:#16a34a;">
@@ -100,6 +123,7 @@ function renderChoice() {
 
   renderChoiceList();
 }
+
 
 /* ==========================================================
    🔄 RENDER LISTA
