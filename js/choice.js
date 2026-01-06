@@ -32,6 +32,7 @@ function renderProgressCircle(percent) {
 function renderChoice() {
   const app = document.getElementById("app");
   
+  // Si ya existe el contenedor, solo refrescamos la lista
   if (document.getElementById("choice-shell")) {
       renderChoiceList(); 
       return;
@@ -57,7 +58,10 @@ function renderChoice() {
         <div style="flex:1;">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
             <h2 style="margin:0;">📚 Práctica por materia</h2>
-            <button onclick="toggleInfoModal()" style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-weight:bold; cursor:pointer;">?</button>
+            <button onclick="toggleInfoModal()" 
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+              ?
+            </button>
           </div>
           <p style="color:#64748b; margin:0; font-size:14px;">Elegí una materia y tus subtemas.</p>
         </div>
