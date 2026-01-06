@@ -1,14 +1,21 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Fusionado: Estable + Modo Examen)
+   🎯 MEbank 3.0 – Motor de resolución (Definitivo)
    ========================================================== */
 
+// 1. VARIABLES DE ESTADO (Al principio para evitar errores)
 let CURRENT = {
   list: [],
   i: 0,
   modo: "",
   config: {},
   session: {},
-  userAnswers: {} // Aquí guardamos lo que marca el usuario
+  userAnswers: {} 
+};
+
+let TIMER = {
+    interval: null,
+    start: 0,
+    el: null
 };
 
 // --- Configuración Paginado Sidebar ---
@@ -24,6 +31,7 @@ function iniciarResolucion(config) {
     return;
   }
   
+  // Limpiamos timer previo
   stopTimer();
   
   CURRENT = {
@@ -38,6 +46,7 @@ function iniciarResolucion(config) {
   SB_PAGE = 0;
   ensureSidebarOnCurrent();
   
+  // Iniciamos timer si la config lo pide
   if (config.usarTimer) {
       initTimer();
   } else {
@@ -63,7 +72,7 @@ function renderPregunta() {
   const numero = CURRENT.i + 1;
   const materiaNombre = getMateriaNombreForQuestion(q);
 
-  // LÓGICA DE ESTADO
+  // LÓGICA DE MODO EXAMEN VS PRÁCTICA
   const isReview = (CURRENT.modo === "revision");
   const isExamMode = (CURRENT.config.correccionFinal === true) && !isReview;
 
@@ -125,12 +134,14 @@ function renderPregunta() {
   }).join("");
 
   // --- EXPLICACIÓN ---
-  // Solo mostramos explicación si NO es examen real (o si ya terminó y es revisión)
   let explicacionInicial = "";
   if (q.explicacion && ( (!isExamMode && yaRespondio) || isReview )) {
       explicacionInicial = `
         <div class="q-explanation fade">
            <strong>💡 Explicación:</strong><br>${q.explicacion}
+           <div style="margin-top:10px; text-align:right;">
+              <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
+           </div>
         </div>`;
   }
 
@@ -229,7 +240,7 @@ function answer(selectedIndex) {
           }
       });
       refreshSidebarContent();
-      return; // Cortamos acá, no mostramos explicación ni guardamos en PROG todavía
+      return; // Cortamos acá
   }
 
   // 3. MODO PRÁCTICA (Inmediato): Corregimos al toque
@@ -275,6 +286,9 @@ function answer(selectedIndex) {
           holder.innerHTML = `
             <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
                <strong>💡 Explicación:</strong><br>${q.explicacion}
+               <div style="margin-top:10px; text-align:right;">
+                  <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
+               </div>
             </div>
           `;
       }
@@ -473,7 +487,6 @@ function procesarResultadosExamenFinal() {
 }
 
 function renderFinSimple() {
-    // Tu renderFin original como backup
     const app = document.getElementById("app");
     app.innerHTML = `<div class="card" style="text-align:center"><h2>Examen Finalizado</h2><button class="btn-main" onclick="renderHome()">Inicio</button></div>`;
 }
@@ -505,7 +518,10 @@ function initTimer() {
     const h = Math.floor(totalSeconds / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = totalSeconds % 60;
-    const timeString = h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${pad(m)}:${pad(s)}`;
+    const timeString = h > 0 
+        ? `${h}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
+        : `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+        
     if (el) el.textContent = "⏱ " + timeString;
   }, 1000);
 }
@@ -517,9 +533,6 @@ function stopTimer() {
   if (el) el.style.display = "none"; 
 }
 
-function pad(n) { return n < 10 ? '0'+n : n; }
-
-/* --- NOTAS --- */
 function toggleNoteArea(id) {
     const area = document.getElementById(`note-area-${id}`);
     if(area) area.style.display = (area.style.display === "none") ? "block" : "none";
@@ -535,8 +548,22 @@ function saveNoteResolver(id) {
     renderPregunta(); 
 }
 
+function copiarExplicacionNota(id) {
+    const q = CURRENT.list.find(x => x.id == id);
+    if (!q || !q.explicacion) return;
+    
+    const area = document.getElementById(`note-text-${id}`);
+    if (area) {
+        if(area.value) area.value += "\n\n";
+        area.value += "Explicación: " + q.explicacion;
+        
+        const div = document.getElementById(`note-area-${id}`);
+        if(div) div.style.display = "block";
+    }
+}
+
 /* ==========================================================
-   HELPERS DE DATOS (Manteniendo los tuyos)
+   HELPERS DE DATOS
    ========================================================== */
 function getOpcionesArray(q) {
   if (!q.opciones) return [];
@@ -551,7 +578,6 @@ function getCorrectIndex(q, totalOpciones) {
   let raw = q.correcta;
   if (raw === undefined || raw === null) return null;
   if (typeof raw === 'number') return (raw >= 0 && raw < totalOpciones) ? raw : null;
-  // Soporte legacy string "a", "b"...
   if (typeof raw === 'string') {
       const mapa = { "a": 0, "b": 1, "c": 2, "d": 3, "e": 4 };
       let s = raw.trim().toLowerCase().replace(/[\.\)]/g, "");
