@@ -27,7 +27,7 @@ function renderProgressCircle(percent) {
 }
 
 /* ==========================================================
-   🏗️ RENDER ESTRUCTURA
+   🏗️ RENDER ESTRUCTURA (Diseño Original Restaurado + Filtro)
    ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
@@ -61,7 +61,7 @@ function renderChoice() {
 
             <div style="margin-bottom:20px; padding-top:15px; border-top:1px solid #e2e8f0;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Sobre el porcentaje</div>
-                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia.</div>
+                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia. Las respuestas incorrectas no suman al progreso.</div>
             </div>
 
             <div style="text-align:right;">
@@ -123,7 +123,6 @@ function renderChoice() {
 
   renderChoiceList();
 }
-
 
 /* ==========================================================
    🔄 RENDER LISTA
