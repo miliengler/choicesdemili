@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Modal Stats 📊)
+   📚 MEbank 3.0 – Práctica por materia (Con Modal Stats 📊 + Reset + Nombres Lindos)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
@@ -381,7 +381,6 @@ function renderMateriaExpanded(m, term, stats) {
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
-  // 🛠️ BOTONES QUE ABREN LOS NUEVOS MODALES / VINCULOS
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; padding-top:10px; border-top:1px dashed #e2e8f0;">
        <button class="btn-small" style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; color:#64748b; font-size:12px;" 
@@ -527,19 +526,19 @@ function openStatsModal(slug) {
 
     let weakest = null;
     let minPct = 101;
-    Object.keys(subGroups).forEach(subName => {
-        const g = subGroups[subName];
+    Object.keys(subGroups).forEach(subSlug => {
+        const g = subGroups[subSlug];
         if (g.answered >= 3) {
             const p = Math.round((g.ok / g.answered) * 100);
             if (p < minPct) {
                 minPct = p;
-                weakest = { name: subName, pct: p };
+                weakest = { name: getPrettySubtopicName(slug, subSlug), pct: p };
             }
         }
     });
 
     // Generar HTML del cuerpo
-    const htmlBody = `
+    let htmlBody = `
         <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin-bottom:20px;">
             <div style="width:120px; height:120px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.1);"></div>
             
@@ -561,6 +560,13 @@ function openStatsModal(slug) {
                ${(ok+bad)===0 ? 'Todavía no hay suficientes datos para analizar tus puntos débiles.' : '¡Seguí practicando para desbloquear más estadísticas!'}
             </div>
         `}
+        
+        <div style="margin-top:20px; text-align:center; border-top:1px dashed #e2e8f0; padding-top:15px;">
+             <button class="btn-small" onclick="resetSubjectStatsFromModal('${slug}')" 
+                     style="background:white; border:1px solid #fca5a5; color:#ef4444; width:100%;">
+                🗑 Reiniciar progreso de esta materia
+             </button>
+        </div>
     `;
 
     // Inyectar y Abrir Modal
@@ -611,4 +617,25 @@ function verNotasMateria(slug) {
             if(header) header.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     }, 100);
+}
+
+/* ==========================================================
+   🛠 HELPERS ADICIONALES
+   ========================================================== */
+function getPrettySubtopicName(materiaSlug, subSlug) {
+    const originales = BANK.subsubjects[materiaSlug] || [];
+    const match = originales.find(s => normalize(s) === subSlug);
+    return match || subSlug;
+}
+
+function resetSubjectStatsFromModal(slug) {
+    if (!confirm("⚠️ ¿Estás seguro? Se borrará todo el progreso de esta materia.")) return;
+
+    if (PROG[slug]) {
+        delete PROG[slug];
+        if (typeof saveProgress === 'function') saveProgress();
+    }
+
+    document.getElementById('statsModal').style.display = 'none';
+    renderChoiceList();
 }
