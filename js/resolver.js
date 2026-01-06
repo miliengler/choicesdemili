@@ -135,7 +135,7 @@ function renderPregunta() {
            <strong>💡 Explicación:</strong><br>${q.explicacion}
            <div style="margin-top:10px; text-align:right;">
               <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')" style="font-size:12px; border:1px solid #cbd5e1;">
-                 📋 Copiar a mis notas
+                 📋 Agregar a mis notas
               </button>
            </div>
         </div>`;
