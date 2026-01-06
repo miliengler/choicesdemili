@@ -1,10 +1,11 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (UI Definitiva + Fix Suma.)
+   📚 MEbank 3.0 – Práctica por materia (Con Filtro Oficiales ⭐️)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
+let choiceOnlyOfficial = false; // <--- NUEVA VARIABLE DE ESTADO
 
 /* --- CÍRCULO DE PROGRESO --- */
 function renderProgressCircle(percent) {
@@ -12,11 +13,12 @@ function renderProgressCircle(percent) {
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percent / 100) * circumference;
   const cx = size / 2, cy = size / 2;
+  const color = percent === 0 ? '#cbd5e1' : '#16a34a';
 
   return `
     <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
       <circle cx="${cx}" cy="${cy}" r="${radius}" stroke="#e2e8f0" stroke-width="${stroke}" fill="none"></circle>
-      <circle cx="${cx}" cy="${cy}" r="${radius}" stroke="${percent === 0 ? '#cbd5e1' : '#16a34a'}"
+      <circle cx="${cx}" cy="${cy}" r="${radius}" stroke="${color}"
         stroke-width="${stroke}" fill="none" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
         stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})" style="transition: stroke-dashoffset 0.6s ease;"></circle>
       <text x="50%" y="55%" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">${percent}%</text>
@@ -30,39 +32,21 @@ function renderProgressCircle(percent) {
 function renderChoice() {
   const app = document.getElementById("app");
   
+  // Si ya existe el contenedor, solo refrescamos la lista
   if (document.getElementById("choice-shell")) {
       renderChoiceList(); 
       return;
   }
 
   app.innerHTML = `
-    <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
-        <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
-            
-            <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
-            <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
-            
-            <div style="margin-bottom:15px;">
-                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
-                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (respondidas previamente o no). Ideal para repaso general.</div>
-            </div>
-
-            <div style="margin-bottom:15px;">
-                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏩ Resolver pendientes</div>
-                <div style="font-size:14px; color:#475569;">Selecciona únicamente las preguntas que <b>aún no respondiste</b>. Ideal para avanzar con material nuevo.</div>
-            </div>
-
-            <div style="margin-bottom:20px;">
-                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
-                <div style="font-size:14px; color:#475569;">Genera una práctica exclusiva con las preguntas registradas como <b>Incorrectas</b>. Ideal para corregir errores y fijar conceptos.</div>
-            </div>
-
-            <div style="margin-bottom:20px; padding-top:15px; border-top:1px solid #e2e8f0;">
-                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Sobre el porcentaje</div>
-                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia. Las respuestas incorrectas no suman al progreso.</div>
-            </div>
-
-            <div style="text-align:right;">
+    <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+        <div class="modal-content" style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%;">
+            <h3 style="margin-top:0;">💡 Modos de práctica</h3>
+            <p>Elegí la opción que mejor se adapte a tu estudio:</p>
+            <div style="margin-bottom:10px;"><b>▶ Iniciar:</b> Repaso general (todas las seleccionadas).</div>
+            <div style="margin-bottom:10px;"><b>⏩ Pendientes:</b> Solo las que no respondiste aún.</div>
+            <div style="margin-bottom:10px;"><b>🧠 Repasar incorrectas:</b> Solo en las que fallaste.</div>
+            <div style="margin-top:15px; text-align:right;">
                 <button class="btn-main" onclick="toggleInfoModal()" style="width:auto; padding:8px 20px;">Entendido</button>
             </div>
         </div>
@@ -74,29 +58,27 @@ function renderChoice() {
         <div style="flex:1;">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
             <h2 style="margin:0;">📚 Práctica por materia</h2>
-            <button onclick="toggleInfoModal()" 
-                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
-              ?
-            </button>
+            <button onclick="toggleInfoModal()" style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-weight:bold; cursor:pointer;">?</button>
           </div>
-          <p style="color:#64748b; margin:0; font-size:14px;">
-             Elegí una materia y opcionalmente uno o más subtemas.
-          </p>
+          <p style="color:#64748b; margin:0; font-size:14px;">Elegí una materia y tus subtemas.</p>
         </div>
-        
-        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
-           ⬅ Volver
-        </button>
+        <button class="btn-small" onclick="renderHome()" style="background:#fff; border:1px solid #e2e8f0; color:#475569;">⬅ Volver</button>
       </div>
 
-      <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap;">
+      <div style="display:flex; gap:10px; margin-bottom:20px; flex-wrap:wrap; align-items:center;">
+        
         <input type="text" 
                id="choiceSearchInput"
-               placeholder="🔍 Buscar materia o tema..." 
+               placeholder="🔍 Buscar..." 
                value="${choiceSearchTerm}"
                oninput="onSearchChoice(this.value)"
-               style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:15px;">
+               style="flex:1; padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; min-width: 150px;">
         
+        <label style="display:flex; align-items:center; gap:6px; background:#f0fdf4; border:1px solid #bbf7d0; padding:8px 12px; border-radius:8px; cursor:pointer; user-select:none;">
+            <input type="checkbox" id="chkOficialesChoice" ${choiceOnlyOfficial ? "checked" : ""} onchange="toggleChoiceOfficial(this.checked)" style="accent-color:#16a34a;">
+            <span style="font-size:13px; color:#166534; font-weight:600;">⭐️ Solo Oficiales</span>
+        </label>
+
         <select id="choiceOrderSelect" 
                 style="padding:10px; border-radius:8px; border:1px solid #cbd5e1; font-size:14px; background:white; cursor:pointer;" 
                 onchange="onChangeChoiceOrder(this.value)">
@@ -105,17 +87,13 @@ function renderChoice() {
         </select>
       </div>
 
-      <div id="choiceListContainer" style="margin-top:10px; min-height:200px;">
-         </div>
+      <div id="choiceListContainer" style="margin-top:10px; min-height:200px;"></div>
 
     </div>
   `;
 
   const input = document.getElementById("choiceSearchInput");
-  if(choiceSearchTerm && input) {
-      input.focus();
-      const val = input.value; input.value = ''; input.value = val; 
-  }
+  if(choiceSearchTerm && input) { input.focus(); input.value = ''; input.value = choiceSearchTerm; }
 
   renderChoiceList();
 }
@@ -132,7 +110,7 @@ function renderChoiceList() {
     if (subjects.length > 0) {
         container.innerHTML = subjects.map(m => renderMateriaRow(m)).join("");
     } else {
-        container.innerHTML = `<div style="text-align:center; color:#64748b; padding:30px;">No se encontraron resultados.</div>`;
+        container.innerHTML = `<div style="text-align:center; color:#64748b; padding:30px;">No se encontraron materias con ese criterio.</div>`;
     }
 }
 
@@ -153,39 +131,45 @@ function onSearchChoice(val) {
     renderChoiceList(); 
 }
 
+function toggleChoiceOfficial(checked) {
+    choiceOnlyOfficial = checked;
+    renderChoiceList(); // Re-renderiza todo aplicando el nuevo filtro
+}
+
 function toggleMateriaChoice(slug) {
   choiceOpenSlug = choiceOpenSlug === slug ? null : slug;
   renderChoiceList(); 
 }
 
-/* --- LOGICA DE SELECCIÓN MASIVA (Master Control) --- */
+/* --- SELECCIÓN MASIVA --- */
 function toggleAllSubtemas(slug, state) {
     const checks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     checks.forEach(c => c.checked = state);
-    updateInterfaceState(slug); // Actualiza TODO (botones y controles)
+    updateInterfaceState(slug);
 }
 
-/* --- UPDATE REACTIVO UNIFICADO --- */
+/* --- UPDATE REACTIVO --- */
 function updateInterfaceState(slug) {
     const allChecks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     const checkedChecks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
     
-    const totalSubtemas = allChecks.length;
-    const countSelected = checkedChecks.length;
-
     const controlsContainer = document.getElementById(`controls-${slug}`);
     if (controlsContainer) {
-        controlsContainer.innerHTML = getControlsHTML(slug, totalSubtemas, countSelected);
+        controlsContainer.innerHTML = getControlsHTML(slug, allChecks.length, checkedChecks.length);
     }
 
+    // Calcular stats dinámicas para los botones
     const seleccionados = Array.from(checkedChecks).map(ch => ch.value);
     const scope = seleccionados.length ? seleccionados : null;
-    const questions = getQuestionsByMateria(slug, scope);
+    let questions = getQuestionsByMateria(slug, scope);
+
+    // FILTRO OFICIAL APLICADO AQUI TAMBIEN
+    if (choiceOnlyOfficial) {
+        questions = questions.filter(q => q.oficial === true);
+    }
 
     let ok = 0, bad = 0;
-    const totalQ = questions.length;
     const progMat = PROG[slug] || {};
-    
     questions.forEach(q => {
         const r = progMat[q.id];
         if(r) {
@@ -196,27 +180,21 @@ function updateInterfaceState(slug) {
 
     const actionsContainer = document.getElementById(`actions-${slug}`);
     if (actionsContainer) {
-        actionsContainer.innerHTML = getActionButtonsHTML(slug, { total: totalQ, ok, bad });
+        actionsContainer.innerHTML = getActionButtonsHTML(slug, { total: questions.length, ok, bad });
     }
 }
 
-/* --- GENERADORES HTML --- */
+/* --- HTML GENERATORS --- */
 function getControlsHTML(slug, total, selected) {
     const noneSelected = selected === 0;
     const allSelected = selected === total;
-    const styleActive = "color:#1e3a8a; font-weight:700; cursor:pointer; transition:color 0.2s;";
+    const styleActive = "color:#1e3a8a; font-weight:700; cursor:pointer;";
     const styleInactive = "color:#cbd5e1; cursor:default; pointer-events:none;";
 
     return `
-        <span onclick="${!allSelected ? `toggleAllSubtemas('${slug}', true)` : ''}"
-              style="${allSelected ? styleInactive : styleActive}">
-            Marcar todos
-        </span>
+        <span onclick="${!allSelected ? `toggleAllSubtemas('${slug}', true)` : ''}" style="${allSelected ? styleInactive : styleActive}">Marcar todos</span>
         <span style="color:#e2e8f0; margin:0 8px;">|</span>
-        <span onclick="${!noneSelected ? `toggleAllSubtemas('${slug}', false)` : ''}"
-              style="${noneSelected ? styleInactive : styleActive}">
-            Desmarcar todos
-        </span>
+        <span onclick="${!noneSelected ? `toggleAllSubtemas('${slug}', false)` : ''}" style="${noneSelected ? styleInactive : styleActive}">Desmarcar todos</span>
     `;
 }
 
@@ -228,6 +206,11 @@ function getActionButtonsHTML(slug, stats) {
 
     const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
+    // Si no hay preguntas (por ejemplo, filtro oficial activado y la materia no tiene oficiales)
+    if (stats.total === 0) {
+        return `<div style="width:100%; text-align:center; color:#94a3b8; font-size:13px; padding:10px;">⚠️ No hay preguntas oficiales en esta selección.</div>`;
+    }
+
     let html = `
       <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'normal')">
         ▶ Iniciar práctica
@@ -237,7 +220,7 @@ function getActionButtonsHTML(slug, stats) {
     if (hayRespondidas && faltanResponder) {
         html += `
           <button class="btn-small" style="${commonStyle}" onclick="iniciarPracticaMateria('${slug}', 'reanudar')">
-            ⏩ Resolver pendientes (${pendientes})
+            ⏩ Pendientes (${pendientes})
           </button>
         `;
     }
@@ -257,6 +240,7 @@ function getFilteredSubjects() {
   let list = [...BANK.subjects];
   const term = normalize(choiceSearchTerm);
 
+  // 1. Filtrar por búsqueda
   if (term) {
     list = list.filter(subj => {
         const matchName = normalize(subj.name).includes(term);
@@ -264,6 +248,15 @@ function getFilteredSubjects() {
         const matchSub = subtemas.some(s => normalize(s).includes(term));
         return matchName || matchSub;
     });
+  }
+
+  // 2. Filtrar materias vacías si se activó el filtro oficial
+  // (Ocultar materias que no tengan ninguna pregunta oficial)
+  if (choiceOnlyOfficial) {
+      list = list.filter(subj => {
+          const stats = getMateriaStats(subj.slug);
+          return stats.total > 0;
+      });
   }
 
   if (CHOICE_ORDER === "progreso") {
@@ -280,7 +273,6 @@ function getFilteredSubjects() {
   });
 }
 
-/* --- RENDER FILA --- */
 function renderMateriaRow(m) {
   const stats = getMateriaStats(m.slug);
   const term = normalize(choiceSearchTerm);
@@ -297,28 +289,25 @@ function renderMateriaRow(m) {
 
   return `
     <div class="materia-block fade" style="border:1px solid ${border}; border-radius:10px; padding:14px; margin-bottom:12px; background:${bg}; transition: background 0.2s ease;">
-      
       <div style="display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleMateriaChoice('${m.slug}')">
         <div>
           <b>${m.name}</b>
-          <div style="font-size:12px; color:#64748b;">${stats.total} preguntas disponibles</div>
+          <div style="font-size:12px; color:#64748b;">
+             ${stats.total} preguntas ${choiceOnlyOfficial ? '⭐️' : ''}
+          </div>
         </div>
         <div style="width:42px;height:42px;">${renderProgressCircle(stats.percent)}</div>
       </div>
-
       ${estaAbierta ? renderMateriaExpanded(m, term, stats) : ""}
     </div>
   `;
 }
-/* ==========================================================
-   🔄 RENDER EXPANDIDO (Con el texto corregido)
-   ========================================================== */
+
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   const fullSubtemas = BANK.subsubjects[slug] || [];
   
-  // 1. CÁLCULO MATEMÁTICO PRECISO
-  const totalMateria = stats.total;
+  const totalMateria = stats.total; // Ya viene filtrado por getMateriaStats
   let sumaParcial = 0;
   const countsMap = {};
 
@@ -327,6 +316,7 @@ function renderMateriaExpanded(m, term, stats) {
       const subSlug = normalize(nombreSub);
 
       if (!isLast) {
+          // Usamos el contador estricto que TAMBIÉN respeta el filtro
           const c = contarPreguntasMateriaSubEstricto(slug, subSlug);
           countsMap[subSlug] = c;
           sumaParcial += c;
@@ -337,7 +327,6 @@ function renderMateriaExpanded(m, term, stats) {
       }
   });
 
-  // 2. FILTRADO VISUAL
   let visibleSubtemas = fullSubtemas;
   if (term) {
       const matchName = normalize(m.name).includes(term);
@@ -346,98 +335,89 @@ function renderMateriaExpanded(m, term, stats) {
       }
   }
 
-  // 3. GENERACIÓN HTML
+  // Generamos la lista de subtemas
   const items = visibleSubtemas.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = countsMap[subSlug] || 0; 
     
+    // Si estamos en modo oficial y el subtema tiene 0, lo ocultamos para limpiar la vista?
+    // O lo mostramos deshabilitado? Vamos a mostrarlo pero gris si es 0.
+    const isZero = count === 0;
+    const styleLabel = isZero ? "color:#cbd5e1;" : "";
+
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
 
     return `
-      <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:pointer;">
+      <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:${isZero ? 'default' : 'pointer'}; ${styleLabel}">
         <span>
-          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" onchange="updateInterfaceState('${slug}')" style="margin-right:8px;">
+          <input type="checkbox" name="subtema-${slug}" value="${subSlug}" ${isZero ? 'disabled' : ''} onchange="updateInterfaceState('${slug}')" style="margin-right:8px;">
           ${displayName}
         </span>
-        <span style="color:#64748b; font-size:12px;">(${count})</span>
+        <span style="font-size:12px;">(${count})</span>
       </label>
     `;
   }).join("");
 
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
-  let filaTools = `
-    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
-               onclick="alert('Próximamente: Estadísticas de ${cleanName}')">
-           📊 Ver estadísticas de ${cleanName}
-       </button>
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
-               onclick="alert('Próximamente: Notas de ${cleanName}')">
-           📒 Mis notas de ${cleanName}
-       </button>
-    </div>
-  `;
-
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
-      <p style="font-size:13px; color:#64748b; margin-bottom:8px;">
-         ${term ? 'Resultados de la búsqueda:' : 'Seleccioná subtemas. Si no seleccionás ninguno, se usan todos.'}
-      </p>
-      
       <div id="controls-${slug}" style="display:flex; justify-content:center; align-items:center; margin-bottom:10px; font-size:13px;">
           ${controlsHTML}
       </div>
-
       <div style="max-height:250px; overflow:auto; margin-bottom:15px; padding-right:4px;">
          ${items.length ? items : '<div style="font-size:13px; color:#94a3b8;">Sin coincidencias.</div>'}
       </div>
-
       <div id="actions-${slug}" style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
          ${getActionButtonsHTML(slug, stats)}
       </div>
-      
-      ${filaTools}
-
     </div>
   `;
 }
 
 /* --- UTILS --- */
 function getMateriaStats(slug) {
+  // Aquí aplicamos el filtro global
   const total = BANK.questions.filter(q => {
-      if (Array.isArray(q.materia)) return q.materia.includes(slug);
-      return q.materia === slug;
+      const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+      if (!esMat) return false;
+      
+      if (choiceOnlyOfficial && q.oficial !== true) return false; // FILTRO
+      
+      return true;
   }).length;
 
   const progMat = PROG[slug] || {};
   let ok = 0, bad = 0;
-  Object.values(progMat).forEach(reg => {
-    if (reg) {
-        if (reg.status === "ok") ok++;
-        if (reg.status === "bad") bad++;
-    }
+  
+  // Calcular progreso SOLO sobre las visibles (oficiales o todas)
+  BANK.questions.forEach(q => {
+      const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+      if (!esMat) return;
+      if (choiceOnlyOfficial && q.oficial !== true) return;
+
+      const reg = progMat[q.id];
+      if (reg) {
+          if (reg.status === "ok") ok++;
+          if (reg.status === "bad") bad++;
+      }
   });
 
   const percent = total ? Math.round(ok / total * 100) : 0;
   return { total, ok, bad, percent };
 }
 
-// Mantenemos esta para compatibilidad
-function contarPreguntasMateriaSub(mSlug, subSlug) {
-  return BANK.questions.filter(q => {
-    const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-    return esMateria && q.submateria === subSlug;
-  }).length;
-}
-
-// NUEVA: Cuenta estricta para el cálculo de residuos
 function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
   return BANK.questions.filter(q => {
     const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-    return esMateria && q.submateria === subSlug;
+    if (!esMateria) return false;
+    
+    // FILTRO OFICIAL
+    if (choiceOnlyOfficial && q.oficial !== true) return false;
+
+    return q.submateria === subSlug;
   }).length;
 }
 
@@ -449,24 +429,31 @@ function getMateriaNombre(slug) {
 function iniciarPracticaMateria(mSlug, modo) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
+  
   let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
+
+  // APLICAR FILTRO FINAL ANTES DE EMPEZAR
+  if (choiceOnlyOfficial) {
+      preguntas = preguntas.filter(q => q.oficial === true);
+  }
 
   if (!preguntas.length) return alert("No hay preguntas disponibles con este filtro.");
 
-  let titulo = `Práctica – ${getMateriaNombre(mSlug)}`;
-  
+  let titulo = `${getMateriaNombre(mSlug)}`;
+  if (choiceOnlyOfficial) titulo += " ⭐️";
+
   if (modo === "reanudar") {
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => !progMat[q.id] || (progMat[q.id].status !== 'ok' && progMat[q.id].status !== 'bad'));
       titulo += " (Pendientes)";
-      if (!preguntas.length) return alert("¡Excelente! No hay preguntas pendientes con esta selección.");
   } 
   else if (modo === "repaso") {
       const progMat = PROG[mSlug] || {};
       preguntas = preguntas.filter(q => progMat[q.id] && progMat[q.id].status === 'bad');
-      titulo += " (Repaso de Incorrectas)";
-      if (!preguntas.length) return alert("¡Bien hecho! No tenés respuestas incorrectas registradas.");
+      titulo += " (Repaso Incorrectas)";
   }
+
+  if (!preguntas.length) return alert("¡Excelente! No hay preguntas para esa selección.");
 
   iniciarResolucion({
     modo: "materia",
