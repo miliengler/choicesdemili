@@ -660,5 +660,333 @@
     "examen": null,
     "anio": null,
     "oficial": false
+  },
+  {
+    "id": "infecto-004-029",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Sepsis y nosocomiales",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Joaquín 16 años es traído a la guardia por presentar un cuadro de fiebre, vómitos, cefalea, escalofríos y fatiga de 2 días de evolución. No presenta antecedentes de contacto estrecho con alguien enfermo. A los 13 años fue esplenectomizado por accidente de tránsito. No toma ninguna medicación ni tiene otros antecedentes de relevancia. Al revisarlo, presenta temperatura axilar de 39°C, FC 130/min, FR 14/min, TA 160/110mm Hg. Presenta murmullo vesicular bilateral a la auscultación pulmonar, y al examen abdominal una cicatriz compatible con antecedente quirúrgico y sensibilidad leve y difusa a la palpación. ¿Cuál de las siguientes conductas es la más apropiada para realizar a continuación en el manejo del paciente?",
+    "opciones": {
+      "a": "Realizar radiografía de abdomen",
+      "b": "Iniciar antibioticoterapia",
+      "c": "Iniciar terapia antiemética",
+      "d": "Realizar TAC de tórax"
+    },
+    "correcta": "b",
+    "explicacion": "Las infecciones asociadas a la asplenia incluyen sepsis por bacterias encapsuladas (Streptococcus pneumoniae, Haemophilus influenzae) y Babesia (un protozoo que infecta a los eritrocitos y causa fiebre y hemólisis en la asplenia). Similar a la Babesia, la infección por Plasmodium sp. (malaria) puede ser más grave en el paciente asplénico. El riesgo de infección es diferente según la etiología de la asplenia; por ejemplo, la esplenectomía por trauma tiene menor riesgo. La infección por las bacterias encapsuladas es más frecuente en el niño con asplenia que en el adulto con asplenia. Ante el inicio de fiebre sin foco, debe siempre realizarse chequeo infeccioso (hemograma, reactantes de fase aguda, hemocultivo), e iniciar antibiótico (ej.: amoxicilina-clavulánico, ceftriaxona) ante la mínima sospecha de infección bacteriana, vía oral o parenteral según la potencial invasividad del caso, sin demorar el inicio de la misma. Ante una sepsis sospechada o confirmada se recomienda iniciar ceftriaxona im/iv (100 mg/kg/dia, máximo 2 g/dia) en espera de cultivos, o clindamicina o vancomicina en caso de alergia a beta-lactámicos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-030",
+    "materia": [
+      "infectologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Tracto digestivo",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "¿Cuál es la etiología más probable del cuadro clínico de un grupo de niños en edad escolar que compartieron una fiesta de cumpleaños en la que comieron hamburguesas con ensalada rusa y helados y que seis horas después comenzaron con náuseas, vómitos y diarrea?",
+    "opciones": {
+      "a": "Shigella sp.",
+      "b": "E. coli",
+      "c": "Salmonella sp.",
+      "d": "Enterobacter sp.."
+    },
+    "correcta": "c",
+    "explicacion": "Las intoxicaciones alimentarias se producen por la ingestión de alimentos contaminados. En general se manifiestan con un cuadro de gastroenteritis leve y de corta duración. La Salmonella se asocia al consumo de cremas y mayonesas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-031",
+    "materia": [
+      "infectologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Miocardiopatías"
+    ],
+    "enunciado": "Un varón de 40 años que nació en Jujuy y a los 20 años se mudo a la ciudad de La Plata por trabajo, es diagnosticado recientemente con Chagas crónico. Se encuentra asintomático y sin patología demostrada por ECG, ecocardiograma ni Rx tórax. Decide iniciar tratamiento con benznidazol 5-7 mg/kg/dia, administrado en dos tomas diarias, durante 60 días. ¿Cómo debe ser el seguimiento?",
+    "opciones": {
+      "a": "No necesita seguimiento clínico ni de laboratorio especial",
+      "b": "ECG mensual y serologia anual",
+      "c": "Serología anual",
+      "d": "Laboratorio con hemograma, función renal, coagulograma, hepatograma al inicio y cada 20 dias hasta completar tratamiento + serológico anual."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. El paciente del caso clínico se encuentra en la categoría = Probablemente hacer - fase crónica, forma sin patología demostrada en pacientes ≥ 19 años y menores de 50 años. Antes de iniciar el tratamiento realizar hemograma, función renal, coagulograma y hepatograma para luego monitorear el mismo. Se debe realizar un control de laboratorio (idéntico al solicitado previo al inicio del tratamiento cada 20 dias hasta completar los 60 días que dura el mismo. Durante la fase crónica: se recomienda efectuar controles serológicos una vez por año. Respuesta correcta: Laboratorio con hemograma, función renal, coagulograma, hepatograma al inicio y cada 20 días hasta completar tratamiento + serológico anual.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-032",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Neumonía"
+    ],
+    "enunciado": "Usted recibe en la guardia a Julián, de doce años, con dificultad respiratoria. Refiere que desde hace cuatro días presenta fiebre, cefalea y mialgias que comenzaron después de un viaje de vacaciones de verano por el Parque Nacional Los Alerces, en Chubut, Patagonia argentina. En el día de la consulta comienza con disnea, que es progresiva. Se constata taquipnea, taquicardia e hipotensión. En los estudios de laboratorio, se observan leucocitosis, elevación del hematocrito y plaquetopenia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Fiebre hemorrágica argentina.",
+      "b": "Dengue.",
+      "c": "Leptospirosis.",
+      "d": "Enfermedad por Hantavirus."
+    },
+    "correcta": "d",
+    "explicacion": "Las infecciones por hanta virus representan una zoonosis emergente. En nuestro país la áreas endémicas incluyen la zona Noroeste de clima subtropical, que incluye las provincias de Salta y Jujuy y el oeste de Formosa; la zona Central o Pampeana que incluye la Ciudad de Buenos Aires, y las Provincias de Buenos Aires, Santa Fe y Entre Rios; la zona Nordeste: Misiones, Corrientes y este de Formosa y la zona Suroeste (Andina) integrada por las provincias de Neuquén, Río Negro, Chubut y Santa Cruz. El sindrome cardiopulmonar por hantavirus puede presentarse como un cuadro leve con un sindrome febril inespecífico o llegar hasta la manifestación más grave con insuficiencia respiratoria grave y shock cardiogénico. El cuadro clínico del síndrome cardiopulmonar por hantavirus se puede dividir en cuatro fases (prodrómica o febril, cardiopulmonar, diurética y de convalecencia). La fase prodrómica: se extiende entre 3 a 5 dias. Se caracteriza por el inicio brusco de fiebre superior a 38,5°, astenia, escalofrios y mialgias generalizadas. Los sintomas respiratorios superiores están frecuentemente ausentes. El hemograma es el examen más útil en el estudio en la fase prodrómica. La presencia de inmunoblastos (linfocitos atipicos) generalmente superan el 10% del recuento de linfocitos; trombocitopenia, leucocitosis (> 12.000) con desviación a la izquierda. VSG normal o ligeramente aumentada. La fase cardiopulmonar: se caracteriza por la presentación de shock y edema pulmonar que puede progresar rápidamente (entre 4 a 24 horas), con el consecuente distrés respiratorio.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-033",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "El diagnóstico de enfermedad de Chagas:",
+    "opciones": {
+      "a": "Se realiza mediante la serologia por el ELISA",
+      "b": "Se realiza mediante la dupla serológica a saber HAI/IFI O HAI/ELISA",
+      "c": "Se realiza por la presencia se manifestaciones cardiacas en pacientes infectadas",
+      "d": "Se realiza por la presencia del signo de romania"
+    },
+    "correcta": "b",
+    "explicacion": "La enfermedad de Chagas es una enfermedad endémica en nuestro medio producida por el protozoario Trypanosoma Cruzi. El diagnóstico de la fase aguda se realiza a través de la demostración de presencia del parasito (gota fresca, micrométodo con capilares, strout). En la fase crónica la parasitemia no es detectable por lo que el diagnóstico se realiza a través de la detección de igG por dos métodos (ELISA, IFI, HAI, aglutinación con particular de gelatina). Se requieren dos pruebas normatizadas diferentes y concordantes para hacer el diagnóstico (ELISA, HAI, IFI).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-034",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Tropicales"
+    ],
+    "enunciado": "¿Cuál es el ciclo animal que contribuye en mayor medida al mantenimiento de la hidatidosis en Argentina?",
+    "opciones": {
+      "a": "Perro-vaca",
+      "b": "Perro-cerdo",
+      "c": "Perro-oveja",
+      "d": "Perro-cabra"
+    },
+    "correcta": "c",
+    "explicacion": "La hidatidosis quística es una enfermedad endémica en la Argentina. Se produce por un parásito llamado Echinococcus Granulosus, un cestodo que tiene al perro como hospedero definitivo. En el ser humano (y otros animales) tras la ingesta de huevos en alimentos contaminados por heces de perro se produce la diseminación de los embriones que forman quisten en múltiples órganos siendo el higado afectado con mayor frecuencia. Las ovejas son los hospederos intermedios más relacionados con el mantenimiento del ciclo parasitario.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-035",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tropicales",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "Según las Guías para el equipo de Salud n° 2 del Ministerio de Salud de la Nación sobre Dengue, en un paciente adulto con diagnóstico de dicha enfermedad, ¿cuál de los siguientes es un signo de alarma?",
+    "opciones": {
+      "a": "Dolor abdominal intenso y sostenido",
+      "b": "Erupción rojiza en forma de parches en brazos y piernas",
+      "c": "Dolor muscular intenso",
+      "d": "Dolor retroocular"
+    },
+    "correcta": "a",
+    "explicacion": "El dengue es una enfermedad aguda causada por el virus dengue, transmitida por la picadura del mosquito Aedes aegypti. El principal sintoma del dengue es la fiebre, aunque puede haber muchos sintomas acompañantes de los cuales, algunos de ellos marcan gravedad de la enfermedad como: dolor abdominal intenso y sostenido, vomitos continuos, presencia de derrame seroso, sangrado de mucosas, cambio en el estado mental, hepatomegalia, incremento del hematocrito y caida de las plaquetas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-036",
+    "materia": [
+      "infectologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Rickettsias / Bartonella / Coxiella / Leptospira",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Mario tiene 40 años, trabaja de parquero y consulta por fiebre. Refiere que comenzó hace una semana con mialgias principalmente en miembros inferiores, cefalea, fiebre y que el día de hoy se agregó dificultad respiratoria por lo que decide consultar. Ante la sospecha de una Leptospirosis ictérica: ¿qué hallazgos bioquímicos apoyan la sospecha clínica?",
+    "opciones": {
+      "a": "Sedimento urinario activo (proteinuria, piuria, cilindruria, hematuria)",
+      "b": "Leucopenia",
+      "c": "Trombocitosis",
+      "d": "Bilirrubina no conjugada elevada"
+    },
+    "correcta": "a",
+    "explicacion": "Leptospirosis ictérica (sindrome de Weil): forma grave, producida por Leptospira interrogans serovar icterohaemorrhagie. Cursa con ictericia, insuficiencia renal, hemorragias, anemia, alteraciones de consciencia, miocarditis y fiebre continua. En general, la ictericia es el primer dato de gravedad, y es a expensas de la bilirrubina conjugada; las cifras de transaminasas están poco elevadas. El trastorno renal se expresa por proteinuria, piuria, cilindruria, hematuria con elevación de las cifras de nitrógeno ureico y creatinina. La triada clásica del sindrome: hemorragia, ictericia y nefropatia aguda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-037",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "COVID-19",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Consulta un varón de 37 años con tos, disnea y fiebre en plena pandemia de SARS-CoV-2, y usted lo va a evaluar. ¿Cuál es la secuencia de colocación del EPP?",
+    "opciones": {
+      "a": "1. higiene de manos; 2. barbijo común o filtro de particulas según el caso; 3. gafas; 4. guantes comunes.",
+      "b": "1. higiene de manos; 2. barbijo común o filtro de particulas según el caso; 3. colocación de camisolin (atarlo a la altura de cuello, hombros y cintura); 4. guantes comunes; 5. gafas.",
+      "c": "1. higiene de manos; 2. colocación de camisolin (atarlo a la altura de cuello, hombros y cintura); 3. barbijo común o filtro de particulas según el caso; 4. guantes comunes.",
+      "d": "1. higiene de manos; 2. colocación de camisolin (atarlo a la altura de cuello, hombros y cintura); 3. barbijo común o filtro de particulas según el caso; 4. gafas; 5. guantes comunes."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Secuencia de colocación de EPP: 1. higiene de manos; 2. colocación de camisolin (atarlo a la altura de cuello, hombros y cintura); 3. barbijo común o filtro de particulas según el caso; 4. gafas; 5. guantes comunes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-038",
+    "materia": [
+      "infectologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "COVID-19",
+      "General"
+    ],
+    "enunciado": "Consulta un paciente de 40 años, con antecedentes de hipertensión arterial y dislipidemia, por la presencia de un registro febril (38°C) y cefalea. Se encuentra medicado con enalapril y fenofibrato. Se le realiza PCR-RT de muestra de hisopado nasal que resulta DETECTABLE para SARS-Cov2. Al examen físico no presenta hallazgos de relevancia por lo que decide continuar cuidados en aislamento de baja complejidad ¿Cuál es la conducta farmacologica que asume?",
+    "opciones": {
+      "a": "Le indica profilaxis con ivermectina",
+      "b": "Le indica profilaxis con estatinas",
+      "c": "Le indica la suspensión del tratamiento con IECA por las formas graves",
+      "d": "Le indica tratamiento sintomático con paracetamol."
+    },
+    "correcta": "d",
+    "explicacion": "Ante la presencia de fiebre se sugiere como tratamiento inicial el uso de paracetamol (en lugar de AINE -ej. ibuprofeno-) como agente antitérmico/antipirético. No se recomienda el uso de corticoides sistémicos en este nivel de atención. No se recomienda suspender medicamentos antihipertensivos (inhibidores de la ECA o ARA-II).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-039",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Rickettsias / Bartonella / Coxiella / Leptospira"
+    ],
+    "enunciado": "¿Cuál es el modo de transmisión que origina con mayor frecuencia brotes de leptospirosis en humanos?",
+    "opciones": {
+      "a": "Ingestión de agua o alimentos contaminados con heces de animales infectados",
+      "b": "Contacto con agua o vegetación contaminadas con orina de animales infectados",
+      "c": "Transmisión interhumana",
+      "d": "Contacto con sangre de animales infectados"
+    },
+    "correcta": "b",
+    "explicacion": "La leptospirosis es una zoonosis de distribución mundial y puede presentarse en zonas urbanas y rurales. Los humanos pueden contraer la infección al entrar en contacto con la orina de animales infectados; por eso está vinculada con condiciones de vida, actividades recreativas o laborales que favorecen el contacto con animales infectados o con agua o suelos contaminados por la orina de los reservorios.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-040",
+    "materia": [
+      "infectologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "COVID-19",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Usted es asignado a trabajar en el área de COVID-19 de su Hospital. Su labor allí es realizar la asistencia de los pacientes según el compromiso del cuadro clínico correspondiente. Sobre los Elementos de Protección Personal (EPP) ¿Cuál es la forma adecuada de uso?",
+    "opciones": {
+      "a": "En la secuencia del retiro de los EPP el camisolin es lo primero que debe retirarse y el barbijo lo último.",
+      "b": "En la secuencia de colocación de los EPP lo primero es la higiene de manos, 2do colocación de gafas, 3ero colocación de camisolin y 4to el barbijo.",
+      "c": "En la secuencia de retiro de los EPP las gafas es lo primero que debe retirarse y el barbijo lo último.",
+      "d": "En la secuencia de colocación de los EPP lo primero que se debe colocar es el camisolín y último las gafas."
+    },
+    "correcta": "a",
+    "explicacion": "El orden de retiro adecuado debe ser la siguiente: Retirar el camisolin y descartarlo en bolsa roja - Retirar guantes y descartar en bolsa roja - Higiene de manos - Retirar antiparras para poder limpiarla adecuadamente - Retirar el barbijo y proceder según tipo de elemento utilizado - Higiene de manos. (correcta). Secuencia de colocación de los EPP: higiene de manos - camisolin - barbijo - gafas - guantes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-041",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciosas"
+    ],
+    "enunciado": "¿Cuál de los siguientes estudios complementarios solicitaría en primera instancia a una paciente de 17 años, sin antecedentes significativos, que consulta por presentar desde hace una semana múltiples adenopatías en ambas cadenas yugulares e inguinales y lesiones cutáneas maculoeritematosas generalizadas, confluentes, no pruriginosas y sin descamación? No tiene compromiso del estado general.",
+    "opciones": {
+      "a": "Serologia para rubéola",
+      "b": "VDRL",
+      "c": "Serologia para Epstein Barr",
+      "d": "Examen micológico de las lesiones"
+    },
+    "correcta": "b",
+    "explicacion": "La sifilis secundaria es la fase con manifestaciones más floridas, se pueden encontrar adenopatías, fiebre, malestar general y exantema macular, que puede afectar palmas y plantas. Para el diagnóstico se pueden utilizar pruebas serológicas como la VDRL.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "infecto-004-042",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "HIV"
+    ],
+    "enunciado": "Marcos tiene 30 años, y tiene un diagnóstico reciente de HIV. Su carga viral es 1 millón de copias y su cd4 350. ¿Cuándo debe indicar el tratamiento de HIV?",
+    "opciones": {
+      "a": "Se debe iniciar tratamiento solo cuando tenga una enfermedad marcadora de estadio SIDA",
+      "b": "Se debe iniciar tratamiento solo cuando sus CD4 sean menores a 250",
+      "c": "Se debe iniciar tratamiento solo cuando sus cd4 sean menores a 300 y la cv mayor a 1 millón",
+      "d": "Se debe iniciar tratamiento lo más pronto posible, independientemente de CV y CD4"
+    },
+    "correcta": "d",
+    "explicacion": "Si bien la cifra de linfocitos CD4 ha marcado clásicamente el momento de iniciar el TAR, en la actualidad se recomienda comenzarlo en cualquier paciente diagnosticado de infección por VIH, independientemente de la cifra de linfocitos CD4 o de la carga viral. Esta estrategia ha demostrado mejorar el pronóstico a largo plazo como disminuir la posibilidad de transmisión, el riesgo de complicaciones de la infección por VIH y aumentar las probabilidades de elevar el recuento de CD4.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
   }
 ]
