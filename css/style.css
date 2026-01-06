@@ -2,15 +2,25 @@
    🌈 VARIABLES DE COLOR Y CONFIGURACIÓN GLOBAL
    ========================================================== */
 :root {
+  --bg-body: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-sec: #64748b;
+  --border: #e2e8f0;
+  --input-bg: #ffffff;
+  --shadow: rgba(0,0,0,0.05);
+
+  --brand: #2563eb;
+  --brand-dark: #1e40af;
+  --accent: #22c55e;
+  --danger: #ef4444;
+  
+  /* Variables Legacy para compatibilidad */
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #475569;
   --soft: #f1f5f9;
   --line: #e2e8f0;
-  --brand: #2563eb;
-  --brand-dark: #1e40af;
-  --accent: #22c55e;
-  --danger: #ef4444;
   --card: #ffffff;
 }
 
@@ -23,8 +33,9 @@ html, body { height: 100%; }
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: var(--bg);
-  color: var(--text);
+  background-color: var(--bg-body) !important;
+  color: var(--text-main) !important;
+  transition: background 0.3s, color 0.3s;
 }
 
 /* ---------- CONTENEDORES ---------- */
@@ -39,7 +50,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--card);
+  background: var(--bg-card);
   box-shadow: 0 6px 24px rgba(2,6,23,.08);
 }
 
@@ -60,7 +71,7 @@ body {
 
 .footer {
   text-align: center;
-  color: var(--muted);
+  color: var(--text-sec);
   font-size: 14px;
   padding: 20px;
 }
@@ -70,7 +81,7 @@ body {
    ========================================================== */
 button {
   cursor: pointer;
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 14px 20px;
   font-size: 16px;
@@ -93,7 +104,7 @@ button:hover { transform: translateY(-2px); }
 
 .btn-small {
   background: var(--soft);
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 14px;
   padding: 6px 10px;
@@ -104,14 +115,14 @@ button:hover { transform: translateY(-2px); }
    🧩 TARJETAS
    ========================================================== */
 .card {
-  background: var(--card);
-  border: 1px solid var(--line);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
   border-radius: 16px;
   padding: 16px;
   box-shadow: 0 6px 24px rgba(2,6,23,.08);
 }
 
-.small { font-size: 13px; color: var(--muted); }
+.small { font-size: 13px; color: var(--text-sec); }
 
 /* ==========================================================
    ✨ ANIMACIONES
@@ -126,7 +137,7 @@ button:hover { transform: translateY(-2px); }
    📚 CHOICE POR MATERIA
    ========================================================== */
 .choice-item {
-  border: 1px solid var(--line);
+  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 14px;
   margin-bottom: 12px;
@@ -151,429 +162,101 @@ button:hover { transform: translateY(-2px); }
   align-items: center;
   font-size: 12px;
   font-weight: 600;
-  color: var(--muted);
-}
-/* ==========================================================
-   🎯 RESOLVER – LAYOUT
-   ========================================================== */
-.q-layout {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.q-main { flex: 1; }
-
-.q-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 4px 16px rgba(2,6,23,.08);
-}
-
-.q-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.q-title { font-size: 16px; font-weight: 600; }
-.q-counter { font-size: 13px; color: var(--muted); }
-
-/* ENUNCIADO */
-.q-enunciado {
-  margin: 16px 0;
-  font-size: 15px;
-  line-height: 1.45;
-  white-space: pre-wrap;
+  color: var(--text-sec);
 }
 
 /* ==========================================================
-   ✔ OPCIONES
+   🌙 MODO OSCURO (Overrides)
    ========================================================== */
-.q-options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.q-option {
-  display: flex;
-  gap: 10px;
-  background: var(--soft);
-  border: 1px solid var(--line);
-  padding: 10px 12px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.q-option:hover { background: #e2e8f0; }
-
-.q-option-letter {
-  font-weight: 700;
-  width: 22px;
-  text-align: center;
-  color: var(--brand-dark);
-}
-.q-option-text { flex: 1; }
-
-.option-correct {
-  background: #dcfce7 !important;
-  border-color: #86efac !important;
-}
-.option-wrong {
-  background: #fee2e2 !important;
-  border-color: #fca5a5 !important;
+body.dark-mode {
+  --bg-body: #0f172a;       /* Azul muy oscuro (Fondo) */
+  --bg-card: #1e293b;       /* Azul intermedio (Tarjetas) */
+  --text-main: #f1f5f9;     /* Blanco */
+  --text-sec: #94a3b8;      /* Gris claro */
+  --border: #334155;        /* Bordes oscuros */
+  --input-bg: #1e293b;
+  --shadow: rgba(0,0,0,0.3);
 }
 
-/* NAV */
-.q-nav-row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-/* =========================================================
-   🎨 ESTILOS DE RESPUESTA (Feedback Visual)
-   ========================================================= */
-
-/* 🟢 Opción CORRECTA (Siempre se pinta de verde al responder) */
-.q-option.option-correct {
-  background-color: #dcfce7 !important; /* Fondo verde claro */
-  border-color: #22c55e !important;     /* Borde verde fuerte */
-  color: #14532d !important;            /* Texto verde oscuro */
-  font-weight: 600;
-}
-
-/* 🔴 Opción INCORRECTA (Solo la que clickeaste si fallaste) */
-.q-option.option-wrong {
-  background-color: #fee2e2 !important; /* Fondo rojo claro */
-  border-color: #ef4444 !important;     /* Borde rojo fuerte */
-  color: #7f1d1d !important;            /* Texto rojo oscuro */
-  opacity: 0.9;
+/* REGLAS DE FUERZA MAYOR (Componentes Generales) */
+body.dark-mode .card, 
+body.dark-mode .materia-block, 
+body.dark-mode .nota-card,
+body.dark-mode .exam-card,
+body.dark-mode .stat-card,
+body.dark-mode .materia-box,
+body.dark-mode .modal-content,
+body.dark-mode #choice-shell,
+body.dark-mode .opcion-card,
+body.dark-mode .pregunta-box
+{
+    background-color: var(--bg-card) !important;
+    border-color: var(--border) !important;
+    color: var(--text-main) !important;
+    box-shadow: 0 4px 6px var(--shadow) !important;
 }
 
-/* 🔒 Bloquear clicks después de responder */
-.q-option-locked {
-  pointer-events: none; /* Ya no se puede clickear */
-  cursor: default;
+/* FIX TEXTOS GENERALES */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, 
+body.dark-mode b, body.dark-mode strong {
+    color: #f8fafc !important;
 }
 
-/* 💡 Caja de Explicación */
-.q-explanation {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #f8fafc;
-  border-left: 4px solid #3b82f6; /* Borde azul */
-  border-radius: 6px;
-  font-size: 14px;
-  color: #334155;
-  line-height: 1.5;
-  animation: fadeIn 0.3s ease-in;
+body.dark-mode p, 
+body.dark-mode .text-muted,
+body.dark-mode div[style*="color:#64748b"], 
+body.dark-mode div[style*="color:#475569"],
+body.dark-mode label {
+    color: var(--text-sec) !important;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(5px); }
-  to { opacity: 1; transform: translateY(0); }
+/* FIX SVG (Números de Progreso) */
+body.dark-mode text {
+    fill: #f1f5f9 !important; /* Pone los números blancos */
+}
+body.dark-mode circle[stroke="#f1f5f9"],
+body.dark-mode circle[stroke="#e2e8f0"] {
+    stroke: #334155 !important; /* Anillos vacíos más oscuros */
 }
 
-
-/* ==========================================================
-   📊 SIDEBAR
-   ========================================================== */
-.q-sidebar {
-  width: 120px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px;
-  height: fit-content;
-  position: sticky;
-  top: 80px;
+/* FIX INPUTS Y BOTONES */
+body.dark-mode input, 
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #334155 !important; 
+    color: white !important; 
+    border-color: #475569 !important;
 }
 
-.q-sidebar-header {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 10px;
+body.dark-mode .btn-small,
+body.dark-mode .btn-outline-gray {
+    background-color: #334155 !important;
+    color: white !important;
+    border-color: #475569 !important;
 }
 
-.q-sidebar-pager {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 10px;
+/* Hover en opciones del resolver */
+body.dark-mode .opcion-card:hover {
+    background-color: #334155 !important;
 }
 
-.q-sidebar-pager .btn-small {
-  padding: 6px 8px;
-  border-radius: 10px;
-}
-
-.q-sidebar-pageinfo {
-  font-size: 12px;
-  color: var(--muted);
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.q-sidebar-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
-}
-
-.sb-cell {
-  background: var(--soft);
-  border: 1px solid var(--line);
-  padding: 6px 0;
-  border-radius: 6px;
-  text-align: center;
-  font-size: 13px;
-  cursor: pointer;
-}
-
-.sb-active {
-  background: var(--brand);
-  border-color: var(--brand-dark);
-  color: #fff;
-}
-
-.sb-ok {
-  background: #bbf7d0;
-  border-color: #4ade80;
-}
-
-.sb-bad {
-  background: #fecaca;
-  border-color: #ef4444;
-}
-
-.sb-note {
-  box-shadow: 0 0 0 2px #facc15 inset;
-}
-/* Indicador de Nota en Sidebar */
-.sb-cell {
-  position: relative; /* Necesario para ubicar el puntito */
-}
-
-.sb-note::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  right: 3px;
-  width: 6px;
-  height: 6px;
-  background-color: #f59e0b; /* Naranja/Ámbar */
-  border-radius: 50%;
-  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+/* Soporte Dark Mode para selección neutra (Modo Corrección Final) */
+body.dark-mode .option-selected-neutral {
+    background-color: #172554 !important; /* Azul oscuro */
+    border-color: #3b82f6 !important;
+    color: #bfdbfe !important;
 }
 
 /* ==========================================================
-   📱 RESPONSIVE
+   🎚️ SWITCHES Y CONTROLES
    ========================================================== */
-@media (max-width: 800px) {
-  .q-layout { flex-direction: column; }
-  .q-sidebar { width: 100%; position: relative; }
-  .q-sidebar-grid { grid-template-columns: repeat(8, 1fr); }
-  .q-sidebar-pager { margin-bottom: 12px; }
-}
-/* =========================================
-   ⏱ TIMER MODERNO (Soporte Horas + Estilo Clean)
-   ========================================= */
-.exam-timer {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
-  
-  /* Estilo visual: Blanco con transparencia y borde suave */
-  background-color: rgba(255, 255, 255, 0.95);
-  color: #334155; /* Gris oscuro, igual a tus textos */
-  border: 1px solid #cbd5e1; /* Borde gris suave */
-  border-radius: 8px; /* Bordes apenas redondeados */
-  
-  /* Sombra suave para que flote */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
-              0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  
-  /* Efecto moderno de desenfoque de fondo (glassmorphism) */
-  backdrop-filter: blur(4px); 
+/* Switch General (Verde) */
+.toggle-switch { position: relative; display: inline-block; width: 34px; height: 20px; margin-right: 8px; }
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
+.slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+input:checked + .slider { background-color: #16a34a; }
+input:checked + .slider:before { transform: translateX(14px); }
 
-  padding: 6px 12px;
-  font-size: 15px;
-  font-weight: 600;
-  
-  /* TRUCO: Tabular nums hace que el "1" ocupe lo mismo que el "8" */
-  font-feature-settings: "tnum";
-  font-variant-numeric: tabular-nums;
-  
-  pointer-events: none;
-  transition: all 0.3s ease;
-}
-
-/* En celulares lo hacemos un pelín más chico */
-@media (max-width: 600px) {
-  .exam-timer {
-    top: 10px;
-    right: 10px;
-    font-size: 13px;
-    padding: 4px 10px;
-  }
-}
-/* ==========================================================
-   🖼 GESTIÓN DE IMÁGENES (LIGHTBOX & THUMBNAILS)
-   ========================================================== */
-
-
-/* Bloque 1: El contenedor de la miniatura */
-.q-image-thumbnail {
-  position: relative;
-  width: 100%;           /* Intenta ocupar todo el ancho posible */
-  max-width: 600px; 
-  margin: 20px auto; 
-  height: auto;          /* La altura se calcula sola para no deformar la imagen */
-  max-height: 400px;     /* Un límite de altura por si la imagen es muy vertical */
-
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #e2e8f0;
-  cursor: zoom-in;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  background: #f1f5f9; /* Fondo gris clarito por si la imagen tiene transparencias */
-  display: flex; /* Para centrar la imagen si sobra espacio */
-  align-items: center;
-  justify-content: center;
-}
-
-/* Bloque 2: La imagen adentro de la miniatura */
-.q-image-thumbnail img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  /* 'contain' asegura que se vea TODA la imagen sin recortar nada */
-  object-fit: contain;
-}
-
-/* Texto "Ampliar" que aparece al hacer hover */
-.q-image-zoom-hint {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  font-size: 11px;
-  text-align: center;
-  padding: 4px;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.q-image-thumbnail:hover .q-image-zoom-hint {
-  opacity: 1;
-}
-
-/* --- EL MODAL (PANTALLA COMPLETA) --- */
-.img-modal {
-  display: none; /* Oculto por defecto */
-  position: fixed; 
-  z-index: 10000; /* Encima de todo */
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: hidden; 
-  background-color: rgba(0,0,0,0.92); /* Fondo casi negro */
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  animation: fadeIn 0.2s ease;
-}
-
-/* Imagen dentro del modal */
-.img-modal-content {
-  margin: auto;
-  display: block;
-  max-width: 95%;
-  max-height: 85vh;
-  border-radius: 4px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
-  animation: zoomIn 0.3s;
-}
-
-/* Texto descriptivo (si hubiera) */
-.img-modal-caption {
-  margin: 15px auto 0;
-  text-align: center;
-  color: #ccc;
-  font-size: 14px;
-  padding: 10px 0;
-  height: 30px;
-}
-
-/* Botón cerrar (X) */
-.img-modal-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  line-height: 1;
-}
-
-.img-modal-close:hover,
-.img-modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Animación de Zoom al abrir */
-@keyframes zoomIn {
-  from {transform:scale(0.9); opacity:0} 
-  to {transform:scale(1); opacity:1}
-}
-/* ==========================================================
-   🏆 BADGE DE EXAMEN OFICIAL
-   ========================================================== */
-.badge-oficial {
-  display: inline-flex;
-  align-items: center;
-  /* Fondo amarillo un poquito más intenso */
-  background-color: #fff9c4; 
-  border: 1px solid #facc15;
-  color: #a16207; /* Texto marrón dorado */
-  font-size: 13px; /* Un pelín más grande */
-  font-weight: 800; /* Letra bien gruesa para "PREGUNTA TOMADA" */
-  padding: 6px 12px;
-  border-radius: 6px; /* Bordes menos redondos, más "etiqueta" */
-  margin-bottom: 15px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-/* ==========================================================
-   ANIMACIÓN SOLO EN LAS OPCIONES
-   ========================================================== */
-
-/* Definimos el "saltito" (Pop) */
-@keyframes optionPop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.02); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-  100% { transform: scale(1); }
-}
-
-/* Aplicamos la animación solo cuando la opción se marca */
-.option-correct, .option-wrong {
-  animation: optionPop 0.3s ease-out forwards;
-  /* Un pequeño borde más grueso para destacar */
-  border-width: 2px !important; 
-}
-
-/* Opcional: Que la transición de colores sea suave */
-.q-option {
-  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
-}
-
+/* Switch Naranja (Corrección) */
+.slider-orange input:checked + .slider { background-color: #ea580c; }
