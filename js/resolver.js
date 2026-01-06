@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Logic + Timer Fix)
+   🎯 MEbank 3.0 – Motor de resolución (Final Fix)
    ========================================================== */
 
 let CURRENT = {
@@ -7,8 +7,8 @@ let CURRENT = {
   i: 0,
   modo: "",
   config: {},
-  session: {},    // Para guardar ok/bad (legacy/progreso)
-  userAnswers: {} // NUEVO: Para guardar el índice seleccionado { qId: optionIndex }
+  session: {},    
+  userAnswers: {} 
 };
 
 let TIMER = {
@@ -30,10 +30,8 @@ function iniciarResolucion(config) {
     return;
   }
   
-  // 1. Limpiar timer previo si existía (Ahora sí existe la función abajo)
   stopTimer();
   
-  // 2. Configurar nueva sesión
   CURRENT = {
     list: config.preguntas.slice(),
     i: 0,
@@ -46,11 +44,9 @@ function iniciarResolucion(config) {
   SB_PAGE = 0;
   ensureSidebarOnCurrent();
   
-  // 3. Iniciar timer si corresponde
   if (config.usarTimer) {
       initTimer();
   } else {
-      // Asegurarnos de borrar el elemento visual si no se usa
       const oldTimer = document.getElementById("exam-timer");
       if(oldTimer) oldTimer.remove();
   }
@@ -76,7 +72,7 @@ function renderPregunta() {
   const isReview = (CURRENT.modo === "revision");
   const isExamMode = (CURRENT.config.correccionFinal === true) && !isReview;
   
-  // Recuperamos qué marcó el usuario (si marcó algo)
+  // Recuperamos qué marcó el usuario
   const userIdx = CURRENT.userAnswers[q.id] !== undefined ? CURRENT.userAnswers[q.id] : null;
   const yaRespondio = (userIdx !== null);
 
@@ -99,18 +95,18 @@ function renderPregunta() {
     let eventHandler = `onclick="answer(${idx})"`;
     let icon = `<span class="q-option-letter">${String.fromCharCode(97 + idx)})</span>`;
 
-    // A) MODO REVISIÓN O MODO NORMAL (YA RESPONDIDO)
+    // A) MODO REVISIÓN O NORMAL (YA RESPONDIDO)
     if ((!isExamMode && yaRespondio) || isReview) {
         claseCSS += " q-option-locked"; 
-        eventHandler = ""; // Bloqueado
+        eventHandler = ""; 
         
         if (idx === correctIndex) claseCSS += " option-correct"; 
         else if (idx === userIdx) claseCSS += " option-wrong";   
     }
     
-    // B) MODO EXAMEN REAL (RESPUESTA SELECCIONADA PERO OCULTA)
+    // B) MODO EXAMEN REAL (SOLO SELECCIONADA)
     else if (isExamMode && idx === userIdx) {
-        claseCSS += " option-selected-neutral"; // Clase nueva (Azul/Gris)
+        claseCSS += " option-selected-neutral"; 
     }
 
     return `
@@ -190,28 +186,27 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   ⚡️ RESPUESTA (Lógica Dual)
+   ⚡️ RESPUESTA
    ========================================================== */
 function answer(selectedIndex) {
   const q = CURRENT.list[CURRENT.i];
   const isExamMode = (CURRENT.config.correccionFinal === true);
 
-  // 1. Guardar la selección del usuario
+  // 1. Guardar la selección
   CURRENT.userAnswers[q.id] = selectedIndex;
 
-  // 2. Si es MODO EXAMEN REAL:
+  // 2. MODO EXAMEN REAL
   if (isExamMode) {
-      // Solo actualizamos visualmente la selección (Azul/Neutro)
       const options = document.querySelectorAll(".q-option");
       options.forEach((el, idx) => {
           el.classList.remove("option-selected-neutral");
           if(idx === selectedIndex) el.classList.add("option-selected-neutral");
       });
       refreshSidebarContent();
-      return; // NO MOSTRAR CORRECCIÓN
+      return; 
   }
 
-  // 3. Si es MODO INMEDIATO (Normal):
+  // 3. MODO INMEDIATO
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
   const esCorrecta = (correctIndex !== null && selectedIndex === correctIndex);
@@ -220,7 +215,6 @@ function answer(selectedIndex) {
   
   saveSingleQuestionProgress(q, esCorrecta);
 
-  // Update UI Visual
   const container = document.querySelector(".q-options");
   if (container) {
       const labels = container.querySelectorAll("label");
@@ -232,7 +226,6 @@ function answer(selectedIndex) {
       });
   }
 
-  // Mostrar explicación
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
@@ -254,7 +247,6 @@ function answer(selectedIndex) {
 function renderFin() {
   stopTimer();
 
-  // Si estábamos en MODO EXAMEN REAL, guardar ahora
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
@@ -293,7 +285,7 @@ function procesarResultadosExamenFinal() {
 }
 
 /* ==========================================================
-   ⏱ UTILIDADES TIMER (¡NO BORRAR!)
+   ⏱ UTILIDADES TIMER
    ========================================================== */
 function initTimer() {
     stopTimer();
@@ -361,7 +353,6 @@ function paintSidebarPageInfo() {
 }
 
 function refreshSidebarContent() {
-    // Refresca la grilla (para mostrar colores o gris de respondida)
     const grid = document.getElementById("sbGrid");
     if (grid) grid.innerHTML = renderSidebarCells();
 }
@@ -391,12 +382,10 @@ function renderSidebarCells() {
     if (isExamMode) {
         if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral"; 
     } else {
-        // En revisión o modo normal, el color depende de si acertó
-        const estado = CURRENT.session[q.id]; // Modo normal
+        const estado = CURRENT.session[q.id]; 
         if (estado === "ok") cls += " sb-ok";
         if (estado === "bad") cls += " sb-bad";
 
-        // Modo revisión (el estado 'session' puede no estar, calculamos al vuelo)
         if (CURRENT.modo === 'revision' && userAns !== undefined && userAns !== null) {
              const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
              if (!cls.includes("sb-ok") && !cls.includes("sb-bad")) {
@@ -465,7 +454,6 @@ function getCorrectIndex(q, totalOpciones) {
 }
 
 function saveSingleQuestionProgress(q, esCorrecta) {
-    // Guarda en progreso global (solo en modo inmediato)
     const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
     
     if (!PROG[mat]) PROG[mat] = {};
@@ -529,11 +517,11 @@ function saveNoteResolver(id) {
     localStorage.setItem("mebank_notes", JSON.stringify(saved));
     
     alert("Nota guardada!");
-    renderPregunta(); // Recargar para actualizar icono
+    renderPregunta(); 
 }
 
 function copiarExplicacionNota(id) {
-    const q = CURRENT.list.find(x => x.id == id); // Loose equality por si id es string/num
+    const q = CURRENT.list.find(x => x.id == id);
     if (!q || !q.explicacion) return;
     
     const area = document.getElementById(`note-text-${id}`);
@@ -541,7 +529,6 @@ function copiarExplicacionNota(id) {
         if(area.value) area.value += "\n\n";
         area.value += "Explicación: " + q.explicacion;
         
-        // Abrir el área si estaba cerrada
         const div = document.getElementById(`note-area-${id}`);
         if(div) div.style.display = "block";
     }
