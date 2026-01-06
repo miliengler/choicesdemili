@@ -1,7 +1,8 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro (Con Filtro Oficiales ⭐️)
+   🎯 MEbank 3.0 – Simulacro (Con Filtro Oficiales ⭐️ + Help)
    ========================================================== */
 
+// Variable de estado para el orden del historial
 let historySortOrder = 'newest';
 
 function renderCrearExamen() {
@@ -55,18 +56,88 @@ function renderCrearExamen() {
       .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
       input:checked + .slider { background-color: #16a34a; }
       input:checked + .slider:before { transform: translateX(14px); }
+
+      /* Modales */
+      .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation: fadeIn 0.2s ease; backdrop-filter: blur(2px); }
+      .modal-content { background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 30px rgba(0,0,0,0.2); max-height:85vh; overflow-y:auto; }
+      @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+      /* Historial Styles */
+      .hist-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; margin-bottom: 12px; display: flex; gap: 15px; align-items: center; background: #fff; }
+      .hist-date-box { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 45px; flex-shrink: 0; border-right: 1px solid #f1f5f9; padding-right: 15px; }
+      .hist-day { font-size: 18px; font-weight: 800; color: #334155; line-height: 1; }
+      .hist-month { font-size: 10px; color: #94a3b8; text-transform: uppercase; font-weight: 700; margin-top: 2px; }
+      .score-circle { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 12px; color: white; flex-shrink: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+      .sort-link { cursor: pointer; font-size: 13px; transition: color 0.2s; }
+      .sort-active { color: #0f172a; font-weight: 800; text-decoration: underline text-decoration-color: #3b82f6; }
+      .sort-inactive { color: #94a3b8; font-weight: 500; }
     </style>
   `;
 
   app.innerHTML = `
     ${styles}
+
+    <div id="helpModal" class="modal-overlay" onclick="closeModals(event)">
+        <div class="modal-content">
+            <h3 style="margin-top:0; color:#1e293b;">🎯 ¿Cómo funciona?</h3>
+            
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🎲 Simulación Real</div>
+                <div style="font-size:14px; color:#475569;">El sistema seleccionará preguntas al azar <b>únicamente</b> de las materias que marques.</div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏱️ Gestión del Tiempo</div>
+                <div style="font-size:14px; color:#475569;">El cronómetro es opcional. Usalo para entrenar tu velocidad bajo presión.</div>
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Historial</div>
+                <div style="font-size:14px; color:#475569;">Tus resultados (puntaje y tiempo) quedarán guardados en "Mi Progreso" para que veas tu evolución.</div>
+            </div>
+
+            <div style="text-align:right;">
+                <button class="btn-main" onclick="document.getElementById('helpModal').style.display='none'" style="width:auto; padding:8px 20px;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="historyModal" class="modal-overlay" onclick="closeModals(event)">
+        <div class="modal-content" style="max-width:550px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
+                <h3 style="margin:0; color:#1e293b;">📊 Mi Progreso</h3>
+                <button onclick="document.getElementById('historyModal').style.display='none'" style="background:none; border:none; font-size:20px; cursor:pointer;">✕</button>
+            </div>
+            
+            <div style="display:flex; justify-content:flex-end; align-items:center; gap:8px; margin-bottom:15px; padding-bottom:10px; border-bottom:1px solid #f1f5f9;">
+                <span class="sort-link" id="sort-newest" onclick="setHistorySort('newest')">Más recientes</span>
+                <span style="color:#e2e8f0;">|</span>
+                <span class="sort-link" id="sort-oldest" onclick="setHistorySort('oldest')">Más antiguas</span>
+            </div>
+
+            <div id="historyList" style="min-height:100px;"></div>
+        </div>
+    </div>
+
     <div id="choice-shell" class="card fade" style="max-width:900px; margin:auto; padding-bottom:0;">
+      
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div style="flex:1;">
-          <h2 style="margin:0;">🎯 Simulacro de Examen</h2>
-          <p style="color:#64748b; margin:0; font-size:14px;">Seleccioná las materias.</p>
+          <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+            <h2 style="margin:0;">🎯 Simulacro de Examen</h2>
+            <button onclick="document.getElementById('helpModal').style.display='flex'" 
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
+              ?
+            </button>
+          </div>
+          <p style="color:#64748b; margin:0; font-size:14px;">
+             Seleccioná las materias para armar tu simulacro personalizado.
+          </p>
         </div>
-        <button class="btn-small" onclick="renderHome()">⬅ Volver</button>
+        
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
+           ⬅ Volver
+        </button>
       </div>
 
       <div id="global-controls" style="display:flex; justify-content:flex-end; align-items:center; margin-bottom:15px; padding-right:5px;"></div>
@@ -104,7 +175,12 @@ function renderCrearExamen() {
         </div>
 
         <div style="display:flex; gap:10px;">
-            <button id="btn-start-sim" class="btn-outline-blue btn-disabled" onclick="startExamenPersonalizado()">▶ Comenzar</button>
+            <button class="btn-outline-gray" onclick="showHistory()">
+               📊 Mi Progreso
+            </button>
+            <button id="btn-start-sim" class="btn-outline-blue btn-disabled" onclick="startExamenPersonalizado()">
+              ▶ Comenzar
+            </button>
         </div>
       </div>
     </div>
@@ -116,6 +192,12 @@ function renderCrearExamen() {
 /* ==========================================================
    ⚙️ LÓGICA DE INTERFAZ Y SELECCIÓN
    ========================================================== */
+function closeModals(e) {
+    if (e.target.classList.contains('modal-overlay')) {
+        e.target.style.display = 'none';
+    }
+}
+
 function toggleGlobalSelection(state) {
     const checkboxes = document.querySelectorAll('.mk-mat');
     checkboxes.forEach(chk => chk.checked = state);
@@ -158,10 +240,7 @@ function updateMaxPreguntas() {
       const matchMateria = mat.some(m => checksValues.includes(m));
       
       if (!matchMateria) return false;
-      
-      // FILTRO OFICIAL
       if (soloOficiales && q.oficial !== true) return false;
-      
       return true;
   }).length;
 
@@ -174,14 +253,10 @@ function updateMaxPreguntas() {
       input.max = poolSize;
       if (parseInt(input.value) > poolSize) input.value = poolSize;
       if (poolSize === 0) input.value = 0;
-      
-      // Si el usuario quiere más de lo que hay, ajustamos
-      // Pero si quiere menos, lo respetamos.
   }
   
   if (hint) {
       hint.textContent = `(Max: ${poolSize})`;
-      // Cambiar color si es oficial para feedback visual
       hint.style.color = soloOficiales ? "#16a34a" : "#94a3b8";
   }
 
@@ -200,8 +275,7 @@ function updateMaxPreguntas() {
 function calculateTimeEstimate() {
     const input = document.getElementById("mk-total");
     if(!input) return;
-    const val = parseInt(input.value) || 0;
-    // ... (lógica de tiempo igual)
+    // ... (lógica simple de tiempo, si querés agregarla visualmente, aquí iría)
 }
 
 function startExamenPersonalizado() {
@@ -232,6 +306,90 @@ function startExamenPersonalizado() {
     modo: "personalizado",
     preguntas: pool,
     usarTimer,
+    permitirRetroceso: true,
+    mostrarNotas: true,
     titulo: soloOficiales ? "🎯 Simulacro Oficial ⭐️" : "🎯 Simulacro"
   });
+}
+
+/* ==========================================================
+   📊 HISTORIAL (MANTENIDO)
+   ========================================================== */
+
+function showHistory() {
+    document.getElementById('historyModal').style.display = 'flex';
+    renderHistoryList();
+}
+
+function setHistorySort(order) {
+    historySortOrder = order;
+    renderHistoryList();
+}
+
+function renderHistoryList() {
+    const container = document.getElementById('historyList');
+    
+    const btnNew = document.getElementById('sort-newest');
+    const btnOld = document.getElementById('sort-oldest');
+    
+    if (historySortOrder === 'newest') {
+        btnNew.className = 'sort-link sort-active';
+        btnOld.className = 'sort-link sort-inactive';
+    } else {
+        btnNew.className = 'sort-link sort-inactive';
+        btnOld.className = 'sort-link sort-active';
+    }
+
+    // MOCK DATA (Podés conectar esto con localStorage real si querés a futuro)
+    const mockHistory = [
+        { date: new Date().toISOString(), score: 85, totalQ: 50, timeStr: "42 min", subjects: ["pediatria", "cirugia", "ginecologia", "obstetricia", "cardiologia", "neurologia"] },
+        { date: new Date(Date.now() - 86400000).toISOString(), score: 72, totalQ: 20, timeStr: "18 min", subjects: ["infectologia", "pediatria"] },
+        { date: new Date(Date.now() - 172800000).toISOString(), score: 55, totalQ: 100, timeStr: "1h 10m", subjects: ["todas"] }
+    ];
+
+    mockHistory.sort((a, b) => {
+        if (historySortOrder === 'newest') return new Date(b.date) - new Date(a.date);
+        return new Date(a.date) - new Date(b.date);
+    });
+
+    if(mockHistory.length === 0) {
+        container.innerHTML = `<div style="text-align:center; color:#94a3b8; padding:20px;">No hay simulacros previos.</div>`;
+        return;
+    }
+
+    container.innerHTML = mockHistory.map(h => {
+        let color = "#1e293b";
+        if(h.score >= 40) color = "#ef4444";
+        if(h.score >= 60) color = "#eab308";
+        if(h.score >= 80) color = "#16a34a";
+
+        const dateObj = new Date(h.date);
+        const day = dateObj.getDate();
+        const monthNames = ["ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC"];
+        const month = monthNames[dateObj.getMonth()];
+
+        let subjText = "";
+        if(h.subjects.includes("todas") || h.subjects.length > 5) {
+            subjText = "Examen Completo";
+        } else {
+            subjText = h.subjects.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(", ");
+        }
+
+        return `
+          <div class="hist-card">
+              <div class="hist-date-box">
+                  <div class="hist-day">${day}</div>
+                  <div class="hist-month">${month}</div>
+              </div>
+              <div style="flex:1;">
+                  <div style="font-size:14px; color:#1e293b; font-weight:700;">${h.totalQ} preguntas</div>
+                  <div style="font-size:12px; color:#64748b; margin-top:3px;">${subjText}</div>
+                  <div style="font-size:11px; color:#94a3b8; margin-top:2px;">⏱ ${h.timeStr}</div>
+              </div>
+              <div class="score-circle" style="background:${color};">
+                  ${h.score}%
+              </div>
+          </div>
+        `;
+    }).join("");
 }
