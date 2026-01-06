@@ -133,8 +133,14 @@ function renderPregunta() {
       explicacionInicial = `
         <div class="q-explanation fade">
            <strong>💡 Explicación:</strong><br>${q.explicacion}
+           <div style="margin-top:10px; text-align:right;">
+              <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')" style="font-size:12px; border:1px solid #cbd5e1;">
+                 📋 Copiar a mis notas
+              </button>
+           </div>
         </div>`;
   }
+
 
   app.innerHTML = `
     <div id="imgModal" class="img-modal" onclick="closeImgModal()">
@@ -269,10 +275,16 @@ function answer(selectedIndex) {
           holder.innerHTML = `
             <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
                <strong>💡 Explicación:</strong><br>${q.explicacion}
+               <div style="margin-top:10px; text-align:right;">
+                  <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')" style="font-size:12px; border:1px solid #cbd5e1;">
+                     📋 Copiar a mis notas
+                  </button>
+               </div>
             </div>
           `;
       }
   }
+
 
   // 6. Actualizar Sidebar (Solo la celda actual)
   // Como no tenemos IDs únicos en las celdas del sidebar en el render original,
@@ -533,3 +545,46 @@ function getMateriaNombreForQuestion(q) {
   });
   return nombres.join(" | ");
 }
+/* ==========================================================
+   📋 NUEVA FUNCIÓN: Copiar Explicación a Notas
+   ========================================================== */
+window.copiarExplicacionNota = (qid) => {
+    // 1. Buscamos la pregunta en la lista actual
+    const q = CURRENT.list.find(item => item.id === qid);
+    if (!q || !q.explicacion) return;
+
+    // 2. Buscamos el textarea
+    const textArea = document.getElementById(`note-text-${qid}`);
+    const noteArea = document.getElementById(`note-area-${qid}`);
+    if (!textArea || !noteArea) return;
+
+    // 3. Limpieza de texto (convertimos <br> en saltos de linea y quitamos negritas)
+    let textoLimpio = q.explicacion
+        .replace(/<br\s*\/?>/gi, '\n') // <br> a salto de linea
+        .replace(/<[^>]+>/g, '');      // Quitar resto de tags HTML (<b>, <i>, etc)
+
+    // 4. Agregamos el texto
+    if (textArea.value.trim()) {
+        // Si ya hay texto, agregamos dos saltos de línea y un separador
+        textArea.value += "\n\n--- Explicación ---\n" + textoLimpio;
+    } else {
+        textArea.value = textoLimpio;
+    }
+
+    // 5. Abrimos el área si está cerrada
+    if (noteArea.style.display === "none") {
+        noteArea.style.display = "block";
+    }
+
+    // 6. Efecto visual y foco
+    textArea.focus();
+    // Movemos el scroll al final del textarea
+    textArea.scrollTop = textArea.scrollHeight;
+    
+    // Feedback visual breve en el botón (opcional, pero queda bien)
+    const btn = event.target; // El botón que se clickeó
+    const textoOriginal = btn.textContent;
+    btn.textContent = "✅ ¡Copiado!";
+    setTimeout(() => { btn.textContent = textoOriginal; }, 1500);
+};
+
