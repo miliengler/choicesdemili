@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Full Logic + Timer)
+   🎯 MEbank 3.0 – Motor de resolución (Full Logic + Timer Fix)
    ========================================================== */
 
 let CURRENT = {
@@ -30,7 +30,7 @@ function iniciarResolucion(config) {
     return;
   }
   
-  // 1. Limpiar timer previo si existía
+  // 1. Limpiar timer previo si existía (Ahora sí existe la función abajo)
   stopTimer();
   
   // 2. Configurar nueva sesión
@@ -293,7 +293,7 @@ function procesarResultadosExamenFinal() {
 }
 
 /* ==========================================================
-   ⏱ UTILIDADES TIMER (FALTANTES)
+   ⏱ UTILIDADES TIMER (¡NO BORRAR!)
    ========================================================== */
 function initTimer() {
     stopTimer();
@@ -461,8 +461,6 @@ function getOpcionesArray(q) {
 
 function getCorrectIndex(q, totalOpciones) {
   if (typeof q.correcta === 'number') return q.correcta;
-  // Fallback si viene como letra (0,1,2,3 o a,b,c,d)
-  // Ajustar según tu JSON. Asumo que usas 0-based index.
   return q.correcta;
 }
 
