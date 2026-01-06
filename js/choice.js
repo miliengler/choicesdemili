@@ -1,13 +1,13 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Filtro Oficiales ⭐️ + Links)
+   📚 MEbank 3.0 – Práctica por materia (Con Modal Stats 📊)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
-let choiceOnlyOfficial = false; // <--- VARIABLE DE ESTADO FILTRO
+let choiceOnlyOfficial = false; 
 
-/* --- CÍRCULO DE PROGRESO --- */
+/* --- CÍRCULO DE PROGRESO (Lista principal) --- */
 function renderProgressCircle(percent) {
   const size = 42, stroke = 4, radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -27,7 +27,7 @@ function renderProgressCircle(percent) {
 }
 
 /* ==========================================================
-   🏗️ RENDER ESTRUCTURA (Diseño Original Restaurado + Filtro)
+   🏗️ RENDER ESTRUCTURA
    ========================================================== */
 function renderChoice() {
   const app = document.getElementById("app");
@@ -40,32 +40,42 @@ function renderChoice() {
   app.innerHTML = `
     <div id="infoModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease;">
         <div style="background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 25px rgba(0,0,0,0.2);">
-            
             <h3 style="margin-top:0; color:#1e293b;">💡 Modos de práctica</h3>
             <p style="color:#64748b; font-size:14px; margin-bottom:20px;">Elegí la opción que mejor se adapte a tu estudio:</p>
-            
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">▶ Iniciar práctica</div>
-                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas (respondidas previamente o no). Ideal para repaso general.</div>
+                <div style="font-size:14px; color:#475569;">Comienza una sesión con <b>todas</b> las preguntas seleccionadas.</div>
             </div>
-
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏩ Resolver pendientes</div>
-                <div style="font-size:14px; color:#475569;">Selecciona únicamente las preguntas que <b>aún no respondiste</b>. Ideal para avanzar con material nuevo.</div>
+                <div style="font-size:14px; color:#475569;">Selecciona únicamente las preguntas que <b>aún no respondiste</b>.</div>
             </div>
-
             <div style="margin-bottom:20px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🧠 Repasar incorrectas</div>
-                <div style="font-size:14px; color:#475569;">Genera una práctica exclusiva con las preguntas registradas como <b>Incorrectas</b>. Ideal para corregir errores y fijar conceptos.</div>
+                <div style="font-size:14px; color:#475569;">Genera una práctica con las preguntas registradas como <b>Incorrectas</b>.</div>
             </div>
-
-            <div style="margin-bottom:20px; padding-top:15px; border-top:1px solid #e2e8f0;">
-                <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Sobre el porcentaje</div>
-                <div style="font-size:14px; color:#475569;">El indicador circular representa el porcentaje de <b>respuestas correctas</b> sobre el total de preguntas de la materia. Las respuestas incorrectas no suman al progreso.</div>
-            </div>
-
             <div style="text-align:right;">
                 <button class="btn-main" onclick="toggleInfoModal()" style="width:auto; padding:8px 20px;">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="statsModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation:fadeIn 0.2s ease; backdrop-filter: blur(2px);">
+        <div class="modal-content" style="background:white; padding:0; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 30px rgba(0,0,0,0.2); overflow:hidden; display:flex; flex-direction:column; max-height:90vh;">
+            
+            <div style="padding:15px 20px; border-bottom:1px solid #e2e8f0; display:flex; justify-content:space-between; align-items:center; background:#f8fafc;">
+                <h3 id="statsModalTitle" style="margin:0; font-size:18px; color:#1e293b;">Estadísticas</h3>
+                <button onclick="document.getElementById('statsModal').style.display='none'" 
+                        style="background:none; border:none; font-size:24px; cursor:pointer; color:#64748b; line-height:1;">
+                    &times;
+                </button>
+            </div>
+
+            <div id="statsModalBody" style="padding:20px; overflow-y:auto;">
+                </div>
+
+            <div style="padding:15px 20px; border-top:1px solid #e2e8f0; text-align:right; background:white;">
+                <button class="btn-main" onclick="document.getElementById('statsModal').style.display='none'" style="width:auto; padding:8px 20px; font-size:14px;">Cerrar</button>
             </div>
         </div>
     </div>
@@ -167,14 +177,12 @@ function toggleMateriaChoice(slug) {
   renderChoiceList(); 
 }
 
-/* --- SELECCIÓN MASIVA --- */
 function toggleAllSubtemas(slug, state) {
     const checks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     checks.forEach(c => c.checked = state);
     updateInterfaceState(slug);
 }
 
-/* --- UPDATE REACTIVO --- */
 function updateInterfaceState(slug) {
     const allChecks = document.querySelectorAll(`input[name="subtema-${slug}"]`);
     const checkedChecks = document.querySelectorAll(`input[name="subtema-${slug}"]:checked`);
@@ -188,7 +196,6 @@ function updateInterfaceState(slug) {
     const scope = seleccionados.length ? seleccionados : null;
     let questions = getQuestionsByMateria(slug, scope);
 
-    // FILTRO OFICIAL
     if (choiceOnlyOfficial) {
         questions = questions.filter(q => q.oficial === true);
     }
@@ -264,7 +271,6 @@ function getFilteredSubjects() {
   let list = [...BANK.subjects];
   const term = normalize(choiceSearchTerm);
 
-  // 1. Filtrar por búsqueda
   if (term) {
     list = list.filter(subj => {
         const matchName = normalize(subj.name).includes(term);
@@ -274,7 +280,6 @@ function getFilteredSubjects() {
     });
   }
 
-  // 2. Filtrar materias vacías si se activó el filtro oficial
   if (choiceOnlyOfficial) {
       list = list.filter(subj => {
           const stats = getMateriaStats(subj.slug);
@@ -329,7 +334,6 @@ function renderMateriaRow(m) {
 function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   const fullSubtemas = BANK.subsubjects[slug] || [];
-  
   const totalMateria = stats.total; 
   let sumaParcial = 0;
   const countsMap = {};
@@ -337,7 +341,6 @@ function renderMateriaExpanded(m, term, stats) {
   fullSubtemas.forEach((nombreSub, index) => {
       const isLast = (index === fullSubtemas.length - 1);
       const subSlug = normalize(nombreSub);
-
       if (!isLast) {
           const c = contarPreguntasMateriaSubEstricto(slug, subSlug);
           countsMap[subSlug] = c;
@@ -360,13 +363,10 @@ function renderMateriaExpanded(m, term, stats) {
   const items = visibleSubtemas.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = countsMap[subSlug] || 0; 
-    
     const isZero = count === 0;
     const styleLabel = isZero ? "color:#cbd5e1;" : "";
-
     let displayName = nombreSub;
     if (term && normalize(nombreSub).includes(term)) displayName = `<b>${nombreSub}</b>`;
-
     return `
       <label style="display:flex; justify-content:space-between; align-items:center; padding:8px 0; font-size:14px; border-bottom:1px dashed #e2e8f0; cursor:${isZero ? 'default' : 'pointer'}; ${styleLabel}">
         <span>
@@ -381,11 +381,11 @@ function renderMateriaExpanded(m, term, stats) {
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
-  // 🛠️ DEFINICIÓN DE BOTONES
+  // 🛠️ BOTONES QUE ABREN LOS NUEVOS MODALES / VINCULOS
   let filaTools = `
     <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; padding-top:10px; border-top:1px dashed #e2e8f0;">
        <button class="btn-small" style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; color:#64748b; font-size:12px;" 
-               onclick="verEstadisticasMateria('${slug}')">
+               onclick="openStatsModal('${slug}')">
            📊 Ver estadísticas
        </button>
        <button class="btn-small" style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; color:#64748b; font-size:12px;" 
@@ -406,9 +406,7 @@ function renderMateriaExpanded(m, term, stats) {
       <div id="actions-${slug}" style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
          ${getActionButtonsHTML(slug, stats)}
       </div>
-      
       ${filaTools}
-
     </div>
   `;
 }
@@ -429,7 +427,6 @@ function getMateriaStats(slug) {
       const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
       if (!esMat) return;
       if (choiceOnlyOfficial && q.oficial !== true) return;
-
       const reg = progMat[q.id];
       if (reg) {
           if (reg.status === "ok") ok++;
@@ -458,13 +455,9 @@ function getMateriaNombre(slug) {
 function iniciarPracticaMateria(mSlug, modo) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
-  
   let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
-  if (choiceOnlyOfficial) {
-      preguntas = preguntas.filter(q => q.oficial === true);
-  }
-
+  if (choiceOnlyOfficial) preguntas = preguntas.filter(q => q.oficial === true);
   if (!preguntas.length) return alert("No hay preguntas disponibles con este filtro.");
 
   let titulo = `${getMateriaNombre(mSlug)}`;
@@ -482,64 +475,128 @@ function iniciarPracticaMateria(mSlug, modo) {
   }
 
   if (!preguntas.length) return alert("¡Excelente! No hay preguntas para esa selección.");
-
-  iniciarResolucion({
-    modo: "materia",
-    preguntas,
-    usarTimer: false,
-    titulo: titulo
-  });
+  iniciarResolucion({ modo: "materia", preguntas, usarTimer: false, titulo: titulo });
 }
 
 /* ==========================================================
-   🔗 VINCULACIÓN CON OTROS MÓDULOS
+   📊 MODAL DE ESTADÍSTICAS (Nuevo Feature)
    ========================================================== */
+function openStatsModal(slug) {
+    // 1. Calcular Stats Globales de la materia (Sin importar filtro)
+    // Queremos ver la "foto real" de esa materia, como en la pestaña Stats.
+    const questions = BANK.questions.filter(q => {
+        return Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+    });
 
-function verEstadisticasMateria(slug) {
-    if (typeof renderStats !== 'function') return alert("Error: Módulo de Estadísticas no cargado.");
+    const total = questions.length;
+    const progMat = PROG[slug] || {};
+    let ok = 0, bad = 0;
     
-    // 1. Ir a la pantalla de Stats
-    renderStats();
+    // Contar progreso
+    Object.values(progMat).forEach(reg => {
+        if(reg.status === 'ok') ok++;
+        if(reg.status === 'bad') bad++;
+    });
 
-    // 2. Abrir el acordeón específico
-    setTimeout(() => {
-        if (typeof toggleStatsAcc === 'function') {
-            const el = document.getElementById(`stat-${slug}`);
-            if (el && el.style.display === 'none') {
-                toggleStatsAcc(slug);
-            }
-            const card = el ? el.parentElement : null;
-            if(card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+    const noResp = total - (ok + bad);
+    const pct = (ok + bad) > 0 ? Math.round((ok / (ok + bad)) * 100) : 0;
+    
+    // Gráfico de Torta
+    let pieStyle = `background: #e2e8f0;`;
+    if (total > 0) {
+        const degOk = (ok / total) * 360;
+        const degBad = (bad / total) * 360;
+        pieStyle = `background: conic-gradient(
+            #16a34a 0deg ${degOk}deg, 
+            #ef4444 ${degOk}deg ${degOk + degBad}deg, 
+            #e2e8f0 ${degOk + degBad}deg 360deg
+        );`;
+    }
+
+    // Calcular Subtema más flojo
+    const subGroups = {};
+    questions.forEach(q => {
+        const sub = q.submateria;
+        if (!subGroups[sub]) subGroups[sub] = { total: 0, ok: 0, answered: 0 };
+        subGroups[sub].total++;
+        if (progMat[q.id]) {
+            subGroups[sub].answered++;
+            if (progMat[q.id].status === 'ok') subGroups[sub].ok++;
         }
-    }, 100);
-}function verNotasMateria(slug) {
-    // 1. Verificar si hay notas guardadas de esta materia
+    });
+
+    let weakest = null;
+    let minPct = 101;
+    Object.keys(subGroups).forEach(subName => {
+        const g = subGroups[subName];
+        if (g.answered >= 3) {
+            const p = Math.round((g.ok / g.answered) * 100);
+            if (p < minPct) {
+                minPct = p;
+                weakest = { name: subName, pct: p };
+            }
+        }
+    });
+
+    // Generar HTML del cuerpo
+    const htmlBody = `
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin-bottom:20px;">
+            <div style="width:120px; height:120px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.1);"></div>
+            
+            <div style="font-size: 14px; line-height: 2; color: #475569; min-width:130px;">
+              <div>📦 Total preguntas: <b>${total}</b></div>
+              <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
+              <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
+              <div>⚪ Sin responder: <b style="color:#64748b">${noResp}</b></div>
+            </div>
+        </div>
+        
+        ${weakest ? `
+            <div style="background:#fef2f2; border:1px solid #fee2e2; padding:10px; border-radius:8px; color:#991b1b; font-size:13px; display:flex; gap:8px;">
+                <span>📉</span>
+                <span>Tu subtema más flojo es <b>${weakest.name}</b> con un <b>${weakest.pct}%</b> de efectividad.</span>
+            </div>
+        ` : `
+            <div style="text-align:center; color:#94a3b8; font-size:13px;">
+               ${(ok+bad)===0 ? 'Todavía no hay suficientes datos para analizar tus puntos débiles.' : '¡Seguí practicando para desbloquear más estadísticas!'}
+            </div>
+        `}
+    `;
+
+    // Inyectar y Abrir Modal
+    const modal = document.getElementById("statsModal");
+    const title = document.getElementById("statsModalTitle");
+    const body = document.getElementById("statsModalBody");
+    
+    if(modal && title && body) {
+        title.textContent = `Estadísticas: ${getMateriaNombre(slug)}`;
+        body.innerHTML = htmlBody;
+        modal.style.display = "flex";
+    }
+}
+
+/* ==========================================================
+   🔗 VINCULACIÓN CON NOTAS (Validación Previa)
+   ========================================================== */
+function verNotasMateria(slug) {
     const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
     const noteIds = Object.keys(savedNotes);
     
-    // Buscamos si existe al menos UNA pregunta con nota que pertenezca a este slug
     const tieneNotas = BANK.questions.some(q => {
-        // ¿La pregunta tiene nota?
         if (!noteIds.includes(q.id)) return false;
-        
-        // ¿La pregunta pertenece a la materia?
         const esMateria = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
         return esMateria;
     });
 
-    // 2. Si no hay notas, mostramos alerta y cortamos acá
     if (!tieneNotas) {
         const nombreMateria = getMateriaNombre(slug);
-        alert(`Todavía no tenés notas de ${nombreMateria}.`);
-        return; 
+        return alert(`Todavía no tenés notas de ${nombreMateria}.`);
     }
 
-    // 3. Si hay notas, procedemos a navegar
     if (typeof renderNotasMain !== 'function') return alert("Error: Módulo de Notas no cargado.");
 
     renderNotasMain();
 
-    // 4. Abrir el grupo de esa materia y scrollear
     setTimeout(() => {
         if (typeof openGroups !== 'undefined') {
             openGroups[slug] = true; 
@@ -555,4 +612,3 @@ function verEstadisticasMateria(slug) {
         }
     }, 100);
 }
-
