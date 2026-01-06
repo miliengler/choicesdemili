@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MEbank – Banco de Preguntas para Residencias</title>
 
-  <link rel="stylesheet" href="css/style.css?v=11">
-  <link rel="stylesheet" href="css/layout.css?v=11">
-  <link rel="stylesheet" href="css/layout-mobile.css?v=11">
+  <link rel="stylesheet" href="css/style.css?v=12">
+  <link rel="stylesheet" href="css/layout.css?v=12">
+  <link rel="stylesheet" href="css/layout-mobile.css?v=12">
 
   <script>
     function showError(message){
@@ -120,6 +120,28 @@
   body.dark-mode .opcion-card:hover {
       background-color: #334155 !important;
   }
+
+  /* 9. ESTILOS MODO EXAMEN (Corrección al final) */
+  .option-selected-neutral {
+      background-color: #eff6ff !important;
+      border-color: #3b82f6 !important;
+      color: #1e3a8a !important;
+      font-weight: 600;
+  }
+  
+  /* Soporte Dark Mode para selección neutra */
+  body.dark-mode .option-selected-neutral {
+      background-color: #172554 !important; /* Azul oscuro */
+      border-color: #3b82f6 !important;
+      color: #bfdbfe !important;
+  }
+
+  /* Sidebar celda respondida (sin revelar verdad) */
+  .sb-answered-neutral {
+      background-color: #64748b !important;
+      color: white !important;
+      border-color: #475569 !important;
+  }
 </style>
 
 
@@ -127,7 +149,6 @@
 
 <body>
 
-  <!-- Overlay de error -->
   <div id="errorOverlay" 
        style="display:none;position:fixed;top:0;left:0;right:0;z-index:9999;background:#fee2e2;
               padding:14px;color:#b91c1c;font-size:14px;">
@@ -142,30 +163,22 @@
 
   <div class="footer">Vos podés ❤️</div>
 
-  <!-- ======================================================
-       SCRIPTS
-       ORDEN CORRECTO (importantísimo)
-  ======================================================= -->
+  <script src="js/config.js?v=12"></script>
 
-  <!-- 1) Configuración central -->
-  <script src="js/config.js?v=11"></script>
+  <script src="js/bank.js?v=12"></script>
 
-  <!-- 2) Banco -->
-  <script src="js/bank.js?v=11"></script>
-
-  <!-- 3) Motores base (resolver SIEMPRE antes que todo lo que lo usa) -->
-  <script src="js/resolver.js?v=11"></script>
+  <script src="js/resolver.js?v=12"></script>
   
 
-  <!-- 4) Pantallas (todas pueden llamar a iniciarResolucion) -->
-  <script src="js/home.js?v=11"></script>
-  <script src="js/choice.js?v=11"></script>
-  <script src="js/examenes.js?v=11"></script>
-  <script src="js/examen_setup.js?v=11"></script>
-  <script src="js/stats.js?v=11"></script>
-  <script src="js/notes.js?v=11"></script>
+  <script src="js/home.js?v=12"></script>
+  <script src="js/choice.js?v=12"></script>
+  <script src="js/examenes.js?v=12"></script>
+  <script src="js/examen_setup.js?v=12"></script>
+  <script src="js/stats.js?v=12"></script>
+  <script src="js/notes.js?v=12"></script>
+  
+  <script src="js/results.js?v=12"></script>
 
-  <!-- 5) Inicialización -->
   <script>
     document.addEventListener("DOMContentLoaded", initApp);
   </script>
