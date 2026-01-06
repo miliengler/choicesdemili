@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Soporte Modo Examen Real)
+   🎯 MEbank 3.0 – Motor de resolución (Full Logic + Timer)
    ========================================================== */
 
 let CURRENT = {
@@ -9,6 +9,12 @@ let CURRENT = {
   config: {},
   session: {},    // Para guardar ok/bad (legacy/progreso)
   userAnswers: {} // NUEVO: Para guardar el índice seleccionado { qId: optionIndex }
+};
+
+let TIMER = {
+    interval: null,
+    start: 0,
+    el: null
 };
 
 // --- Configuración Paginado Sidebar ---
@@ -23,8 +29,11 @@ function iniciarResolucion(config) {
     alert("⚠ No hay preguntas disponibles.");
     return;
   }
+  
+  // 1. Limpiar timer previo si existía
   stopTimer();
   
+  // 2. Configurar nueva sesión
   CURRENT = {
     list: config.preguntas.slice(),
     i: 0,
@@ -37,9 +46,11 @@ function iniciarResolucion(config) {
   SB_PAGE = 0;
   ensureSidebarOnCurrent();
   
+  // 3. Iniciar timer si corresponde
   if (config.usarTimer) {
       initTimer();
   } else {
+      // Asegurarnos de borrar el elemento visual si no se usa
       const oldTimer = document.getElementById("exam-timer");
       if(oldTimer) oldTimer.remove();
   }
@@ -79,7 +90,6 @@ function renderPregunta() {
   // --- BADGE OFICIAL ---
   let badgeHTML = "";
   if (q.oficial === true) {
-      // (Tu lógica de badge existente...)
       badgeHTML = `<div class="badge-oficial">⭐️ PREGUNTA DE EXAMEN</div>`;
   }
 
@@ -111,7 +121,7 @@ function renderPregunta() {
     `;
   }).join("");
 
-  // --- EXPLICACIÓN (Solo si NO es examen real o si es Revisión) ---
+  // --- EXPLICACIÓN ---
   let explicacionHTML = "";
   if (q.explicacion && ( (!isExamMode && yaRespondio) || isReview )) {
       explicacionHTML = `
@@ -122,7 +132,6 @@ function renderPregunta() {
            </div>
         </div>`;
   } else {
-      // Placeholder vacio para inyectar si es modo inmediato
       explicacionHTML = `<div id="explanation-holder"></div>`;
   }
 
@@ -166,7 +175,13 @@ function renderPregunta() {
         </div>
       </div>
       <aside class="q-sidebar" id="sidebarEl">
+         <div class="q-sidebar-pager">
+             <button class="btn-small" onclick="changeSidebarPage(-1)" ${SB_PAGE===0?'disabled':''}>◀</button>
+             <span class="q-sidebar-pageinfo" id="sbPageInfo"></span>
+             <button class="btn-small" onclick="changeSidebarPage(1)">▶</button>
+         </div>
          <div class="q-sidebar-grid" id="sbGrid">${renderSidebarCells()}</div>
+         <button class="btn-close-mobile btn-small" style="width:100%; margin-top:15px;" onclick="toggleMobileSidebar()">Cerrar Índice</button>
       </aside>
     </div>
   `;
@@ -192,20 +207,17 @@ function answer(selectedIndex) {
           el.classList.remove("option-selected-neutral");
           if(idx === selectedIndex) el.classList.add("option-selected-neutral");
       });
-      // Actualizamos sidebar (se pone gris de "respondida")
       refreshSidebarContent();
-      return; // NO MOSTRAR CORRECCIÓN NI EXPLICACIÓN
+      return; // NO MOSTRAR CORRECCIÓN
   }
 
   // 3. Si es MODO INMEDIATO (Normal):
-  // (Lógica original de colores y bloqueos)
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
   const esCorrecta = (correctIndex !== null && selectedIndex === correctIndex);
   
   CURRENT.session[q.id] = esCorrecta ? "ok" : "bad";
   
-  // Guardar stats inmediato
   saveSingleQuestionProgress(q, esCorrecta);
 
   // Update UI Visual
@@ -242,23 +254,20 @@ function answer(selectedIndex) {
 function renderFin() {
   stopTimer();
 
-  // Si estábamos en MODO EXAMEN REAL, ahora es el momento de guardar todo
+  // Si estábamos en MODO EXAMEN REAL, guardar ahora
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // LLAMAR A LA NUEVA PANTALLA DE RESULTADOS
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
-      alert("Error: Falta results.js");
+      alert("Error: Falta results.js. Volviendo a Home.");
       renderHome();
   }
 }
 
 function procesarResultadosExamenFinal() {
-    // Recorre todas las respuestas y las guarda en el historial y stats
-    // Solo se ejecuta al dar click en "Finalizar"
     const list = CURRENT.list;
     const answers = CURRENT.userAnswers;
     
@@ -268,12 +277,10 @@ function procesarResultadosExamenFinal() {
             const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
             const esCorrecta = (uIdx === rIdx);
             
-            // Guardar en PROG global
             const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
             if (!PROG[mat]) PROG[mat] = {};
             PROG[mat][q.id] = { status: esCorrecta ? 'ok' : 'bad', fecha: Date.now() };
 
-            // Stats Diarias
             if(esCorrecta) {
                 const hoy = new Date().toISOString().split('T')[0];
                 const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
@@ -286,34 +293,115 @@ function procesarResultadosExamenFinal() {
 }
 
 /* ==========================================================
-   SIDEBAR & HELPERS
+   ⏱ UTILIDADES TIMER (FALTANTES)
    ========================================================== */
+function initTimer() {
+    stopTimer();
+    TIMER.start = Date.now();
+    
+    let el = document.getElementById("exam-timer");
+    if (!el) {
+        el = document.createElement("div");
+        el.id = "exam-timer";
+        el.className = "exam-timer fade";
+        document.body.appendChild(el);
+    }
+    TIMER.el = el;
+    
+    TIMER.interval = setInterval(updateTimer, 1000);
+    updateTimer();
+}
+
+function stopTimer() {
+    if (TIMER.interval) clearInterval(TIMER.interval);
+    TIMER.interval = null;
+    const el = document.getElementById("exam-timer");
+    if (el) el.remove();
+}
+
+function updateTimer() {
+    if (!TIMER.el) return;
+    const diff = Math.floor((Date.now() - TIMER.start) / 1000);
+    const m = Math.floor(diff / 60);
+    const s = diff % 60;
+    TIMER.el.textContent = `⏱ ${m}:${s < 10 ? '0' : ''}${s}`;
+}
+
+/* ==========================================================
+   SIDEBAR HELPERS
+   ========================================================== */
+function changeSidebarPage(delta) {
+    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
+    SB_PAGE += delta;
+    if (SB_PAGE < 0) SB_PAGE = 0;
+    if (SB_PAGE >= totalPages) SB_PAGE = totalPages - 1;
+    
+    const grid = document.getElementById("sbGrid");
+    if (grid) grid.innerHTML = renderSidebarCells();
+    paintSidebarPageInfo();
+}
+
+function paintSidebarPageInfo() {
+    const info = document.getElementById("sbPageInfo");
+    const btns = document.querySelectorAll(".q-sidebar-pager button");
+    if(!info) return;
+
+    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
+    if (totalPages <= 1) {
+        document.querySelector(".q-sidebar-pager").style.display = "none";
+        return;
+    }
+    document.querySelector(".q-sidebar-pager").style.display = "flex";
+    info.textContent = `Pág ${SB_PAGE+1}/${totalPages}`;
+    
+    if (btns.length === 2) {
+        btns[0].disabled = (SB_PAGE === 0);
+        btns[1].disabled = (SB_PAGE === totalPages - 1);
+    }
+}
+
+function refreshSidebarContent() {
+    // Refresca la grilla (para mostrar colores o gris de respondida)
+    const grid = document.getElementById("sbGrid");
+    if (grid) grid.innerHTML = renderSidebarCells();
+}
+
+function ensureSidebarOnCurrent() {
+    SB_PAGE = Math.floor(CURRENT.i / SB_PAGE_SIZE);
+}
+
 function renderSidebarCells() {
   const start = SB_PAGE * SB_PAGE_SIZE;
   const end = Math.min(CURRENT.list.length, start + SB_PAGE_SIZE);
   const isExamMode = (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision');
   
+  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+
   const out = [];
   for (let idx = start; idx < end; idx++) {
     const q = CURRENT.list[idx];
     const esActual = (idx === CURRENT.i);
     const userAns = CURRENT.userAnswers[q.id];
+    const hasNote = !!savedNotes[q.id];
     
     let cls = "sb-cell";
     if (esActual) cls += " sb-active";
+    if (hasNote) cls += " sb-note";
 
     if (isExamMode) {
-        // En examen solo mostramos si está respondida (gris oscuro)
         if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral"; 
     } else {
-        // Modo inmediato o revisión (colores verdad)
-        const estado = CURRENT.session[q.id]; // Ojo: session se llena en modo inmediato
-        if(isReview && userAns !== undefined) {
+        // En revisión o modo normal, el color depende de si acertó
+        const estado = CURRENT.session[q.id]; // Modo normal
+        if (estado === "ok") cls += " sb-ok";
+        if (estado === "bad") cls += " sb-bad";
+
+        // Modo revisión (el estado 'session' puede no estar, calculamos al vuelo)
+        if (CURRENT.modo === 'revision' && userAns !== undefined && userAns !== null) {
              const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-             cls += (userAns === rIdx) ? " sb-ok" : " sb-bad";
-        } else {
-            if (estado === "ok") cls += " sb-ok";
-            if (estado === "bad") cls += " sb-bad";
+             if (!cls.includes("sb-ok") && !cls.includes("sb-bad")) {
+                 cls += (userAns === rIdx) ? " sb-ok" : " sb-bad";
+             }
         }
     }
     out.push(`<div class="${cls}" onclick="irAPregunta(${idx})">${idx + 1}</div>`);
@@ -321,5 +409,142 @@ function renderSidebarCells() {
   return out.join("");
 }
 
-// ... Resto de funciones helpers (irAPregunta, next, prev, etc) se mantienen igual ...
-// Solo agregá el estilo CSS nuevo para "sb-answered-neutral" y "option-selected-neutral"
+/* ==========================================================
+   NAVEGACIÓN PREGUNTA
+   ========================================================== */
+function irAPregunta(idx) {
+    if (idx < 0 || idx >= CURRENT.list.length) return;
+    CURRENT.i = idx;
+    ensureSidebarOnCurrent();
+    renderPregunta();
+}
+
+function nextQuestion() {
+    if (CURRENT.i < CURRENT.list.length - 1) {
+        CURRENT.i++;
+        ensureSidebarOnCurrent();
+        renderPregunta();
+    } else {
+        if (confirm("¿Finalizar examen?")) {
+            renderFin();
+        }
+    }
+}
+
+function prevQuestion() {
+    if (CURRENT.i > 0) {
+        CURRENT.i--;
+        ensureSidebarOnCurrent();
+        renderPregunta();
+    }
+}
+
+function salirResolucion() {
+    if (confirm("¿Salir? Se perderá el progreso de esta sesión.")) {
+        stopTimer();
+        renderHome();
+    }
+}
+
+/* ==========================================================
+   HELPERS GLOBALES
+   ========================================================== */
+function getMateriaNombreForQuestion(q) {
+  const slug = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+  const mat = BANK.subjects.find(s => s.slug === slug);
+  return mat ? mat.name : slug;
+}
+
+function getOpcionesArray(q) {
+  return [q.opcion_a, q.opcion_b, q.opcion_c, q.opcion_d].filter(x => x !== undefined && x !== null);
+}
+
+function getCorrectIndex(q, totalOpciones) {
+  if (typeof q.correcta === 'number') return q.correcta;
+  // Fallback si viene como letra (0,1,2,3 o a,b,c,d)
+  // Ajustar según tu JSON. Asumo que usas 0-based index.
+  return q.correcta;
+}
+
+function saveSingleQuestionProgress(q, esCorrecta) {
+    // Guarda en progreso global (solo en modo inmediato)
+    const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
+    
+    if (!PROG[mat]) PROG[mat] = {};
+    PROG[mat][q.id] = { status: esCorrecta ? 'ok' : 'bad', fecha: Date.now() };
+
+    if (window.saveProgress) window.saveProgress();
+
+    if(esCorrecta) {
+        const hoy = new Date().toISOString().split('T')[0];
+        const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+        stats[hoy] = (stats[hoy] || 0) + 1;
+        localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
+    }
+}
+
+// Mobile sidebar
+function toggleMobileSidebar() {
+    const sb = document.getElementById("sidebarEl");
+    if(sb) sb.classList.toggle("active-mobile");
+}
+
+/* ==========================================================
+   VISUALIZADOR IMÁGENES
+   ========================================================== */
+function renderImagenesPregunta(imgs) {
+    if(!imgs || !imgs.length) return "";
+    return `<div class="q-images">
+      ${imgs.map(src => `
+        <div class="q-image-thumbnail" onclick="openImgModal('${src}')">
+          <img src="${src}" alt="Imagen pregunta" loading="lazy">
+          <div class="q-image-zoom-hint">🔍 Clic para ampliar</div>
+        </div>
+      `).join('')}
+    </div>`;
+}
+
+function openImgModal(src) {
+    const modal = document.getElementById("imgModal");
+    const img = document.getElementById("imgInModal");
+    img.src = src;
+    modal.style.display = "flex";
+}
+function closeImgModal() {
+    document.getElementById("imgModal").style.display = "none";
+}
+
+/* ==========================================================
+   NOTAS EN RESOLVER
+   ========================================================== */
+function toggleNoteArea(id) {
+    const area = document.getElementById(`note-area-${id}`);
+    if (area) area.style.display = (area.style.display === "none") ? "block" : "none";
+}
+
+function saveNoteResolver(id) {
+    const txt = document.getElementById(`note-text-${id}`).value;
+    if (!txt.trim()) return alert("La nota está vacía.");
+    
+    const saved = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    saved[id] = { text: txt, date: Date.now() };
+    localStorage.setItem("mebank_notes", JSON.stringify(saved));
+    
+    alert("Nota guardada!");
+    renderPregunta(); // Recargar para actualizar icono
+}
+
+function copiarExplicacionNota(id) {
+    const q = CURRENT.list.find(x => x.id == id); // Loose equality por si id es string/num
+    if (!q || !q.explicacion) return;
+    
+    const area = document.getElementById(`note-text-${id}`);
+    if (area) {
+        if(area.value) area.value += "\n\n";
+        area.value += "Explicación: " + q.explicacion;
+        
+        // Abrir el área si estaba cerrada
+        const div = document.getElementById(`note-area-${id}`);
+        if(div) div.style.display = "block";
+    }
+}
