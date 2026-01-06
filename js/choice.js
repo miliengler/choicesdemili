@@ -354,16 +354,16 @@ function renderMateriaExpanded(m, term, stats) {
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
-  // 🛠️ AQUÍ ESTÁ EL CAMBIO IMPORTANTE: Botones conectados
+  // 🛠️ DEFINICIÓN DE BOTONES
   let filaTools = `
-    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; padding-top:10px; border-top:1px dashed #e2e8f0;">
+       <button class="btn-small" style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; color:#64748b; font-size:12px;" 
                onclick="verEstadisticasMateria('${slug}')">
-           📊 Ver estadísticas de ${cleanName}
+           📊 Ver estadísticas
        </button>
-       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+       <button class="btn-small" style="flex:1; background:#f8fafc; border:1px solid #e2e8f0; color:#64748b; font-size:12px;" 
                onclick="verNotasMateria('${slug}')">
-           📒 Mis notas de ${cleanName}
+           📒 Ver mis notas
        </button>
     </div>
   `;
