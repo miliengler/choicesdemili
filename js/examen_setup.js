@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro (Con Filtro Oficiales ⭐️ + Help)
+   🎯 MEbank 3.0 – Simulacro (Con Filtro Oficiales ⭐️ + Corrección Final)
    ========================================================== */
 
 // Variable de estado para el orden del historial
@@ -49,13 +49,16 @@ function renderCrearExamen() {
       .btn-disabled { background: #f1f5f9; border: 1px solid #cbd5e1; color: #94a3b8; cursor: not-allowed; box-shadow: none; transform: none !important; }
       .btn-outline-gray { background: white; border: 1px solid #cbd5e1; color: #475569; font-weight: 600; padding: 10px 15px; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
       
-      /* Switch Oficiales */
+      /* Switch Generico */
       .toggle-switch { position: relative; display: inline-block; width: 34px; height: 20px; margin-right: 8px; }
       .toggle-switch input { opacity: 0; width: 0; height: 0; }
       .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
       .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-      input:checked + .slider { background-color: #16a34a; }
+      input:checked + .slider { background-color: #16a34a; } /* Verde por defecto */
       input:checked + .slider:before { transform: translateX(14px); }
+      
+      /* Switch Naranja para Corrección */
+      .slider-orange input:checked + .slider { background-color: #ea580c; } 
 
       /* Modales */
       .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation: fadeIn 0.2s ease; backdrop-filter: blur(2px); }
@@ -80,22 +83,18 @@ function renderCrearExamen() {
     <div id="helpModal" class="modal-overlay" onclick="closeModals(event)">
         <div class="modal-content">
             <h3 style="margin-top:0; color:#1e293b;">🎯 ¿Cómo funciona?</h3>
-            
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">🎲 Simulación Real</div>
                 <div style="font-size:14px; color:#475569;">El sistema seleccionará preguntas al azar <b>únicamente</b> de las materias que marques.</div>
             </div>
-
             <div style="margin-bottom:15px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">⏱️ Gestión del Tiempo</div>
                 <div style="font-size:14px; color:#475569;">El cronómetro es opcional. Usalo para entrenar tu velocidad bajo presión.</div>
             </div>
-
             <div style="margin-bottom:20px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Historial</div>
                 <div style="font-size:14px; color:#475569;">Tus resultados (puntaje y tiempo) quedarán guardados en "Mi Progreso" para que veas tu evolución.</div>
             </div>
-
             <div style="text-align:right;">
                 <button class="btn-main" onclick="document.getElementById('helpModal').style.display='none'" style="width:auto; padding:8px 20px;">Entendido</button>
             </div>
@@ -108,13 +107,11 @@ function renderCrearExamen() {
                 <h3 style="margin:0; color:#1e293b;">📊 Mi Progreso</h3>
                 <button onclick="document.getElementById('historyModal').style.display='none'" style="background:none; border:none; font-size:20px; cursor:pointer;">✕</button>
             </div>
-            
             <div style="display:flex; justify-content:flex-end; align-items:center; gap:8px; margin-bottom:15px; padding-bottom:10px; border-bottom:1px solid #f1f5f9;">
                 <span class="sort-link" id="sort-newest" onclick="setHistorySort('newest')">Más recientes</span>
                 <span style="color:#e2e8f0;">|</span>
                 <span class="sort-link" id="sort-oldest" onclick="setHistorySort('oldest')">Más antiguas</span>
             </div>
-
             <div id="historyList" style="min-height:100px;"></div>
         </div>
     </div>
@@ -134,7 +131,6 @@ function renderCrearExamen() {
              Seleccioná las materias para armar tu simulacro personalizado.
           </p>
         </div>
-        
         <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
            ⬅ Volver
         </button>
@@ -148,7 +144,7 @@ function renderCrearExamen() {
                   padding:15px; border-radius:12px; box-shadow: 0 4px 25px rgba(0,0,0,0.15); border:1px solid #cbd5e1; 
                   display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; align-items:center; z-index:100;">
         
-        <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:15px; flex-wrap:wrap;">
            <div style="display:flex; align-items:center; gap:8px;">
               <div style="text-align:right;">
                  <div style="font-size:10px; color:#64748b; font-weight:700; letter-spacing:0.5px;">CANTIDAD</div>
@@ -158,13 +154,23 @@ function renderCrearExamen() {
                      style="width:70px; padding:8px; border-radius:8px; border:1px solid #cbd5e1; font-size:16px; font-weight:bold; text-align:center; color:#334155;">
            </div>
 
-           <div style="display:flex; align-items:center; border-left:1px solid #e2e8f0; padding-left:15px;">
+           <div style="display:flex; align-items:center; border-left:1px solid #e2e8f0; padding-left:10px;">
                <label class="toggle-switch">
                   <input type="checkbox" id="mk-oficiales" onchange="updateMaxPreguntas()">
                   <span class="slider"></span>
                </label>
-               <div style="font-size:13px; font-weight:600; color:#166534; cursor:pointer;" onclick="document.getElementById('mk-oficiales').click()">
-                  Solo Oficiales ⭐️
+               <div style="font-size:11px; font-weight:700; color:#166534; cursor:pointer;" onclick="document.getElementById('mk-oficiales').click()">
+                  Solo<br>Oficiales ⭐️
+               </div>
+           </div>
+
+           <div style="display:flex; align-items:center; border-left:1px solid #e2e8f0; padding-left:10px;">
+               <label class="toggle-switch slider-orange">
+                  <input type="checkbox" id="mk-correccion">
+                  <span class="slider"></span>
+               </label>
+               <div style="font-size:11px; font-weight:700; color:#ea580c; cursor:pointer;" onclick="document.getElementById('mk-correccion').click()">
+                  Corregir<br>al final
                </div>
            </div>
 
@@ -176,7 +182,7 @@ function renderCrearExamen() {
 
         <div style="display:flex; gap:10px;">
             <button class="btn-outline-gray" onclick="showHistory()">
-               📊 Mi Progreso
+               📊 Progreso
             </button>
             <button id="btn-start-sim" class="btn-outline-blue btn-disabled" onclick="startExamenPersonalizado()">
               ▶ Comenzar
@@ -208,7 +214,6 @@ function updateMaxPreguntas() {
   const labels = document.querySelectorAll(".materia-box");
   const checkedBoxes = [];
   
-  // 1. Ver cuáles están seleccionados
   labels.forEach(lbl => {
       const chk = lbl.querySelector("input");
       if (chk.checked) {
@@ -219,7 +224,6 @@ function updateMaxPreguntas() {
       }
   });
 
-  // 2. Render de controles Marcar/Desmarcar
   const totalItems = labels.length;
   const selectedCount = checkedBoxes.length;
   const container = document.getElementById("global-controls");
@@ -231,7 +235,6 @@ function updateMaxPreguntas() {
       `;
   }
 
-  // 3. CALCULAR POOL DISPONIBLE (CON FILTRO)
   const soloOficiales = document.getElementById("mk-oficiales").checked;
   const checksValues = checkedBoxes.map(c => c.value);
   
@@ -244,7 +247,6 @@ function updateMaxPreguntas() {
       return true;
   }).length;
 
-  // 4. Actualizar Inputs
   const input = document.getElementById("mk-total");
   const hint = document.getElementById("mk-max-hint");
   const btnStart = document.getElementById("btn-start-sim");
@@ -275,7 +277,7 @@ function updateMaxPreguntas() {
 function calculateTimeEstimate() {
     const input = document.getElementById("mk-total");
     if(!input) return;
-    // ... (lógica simple de tiempo, si querés agregarla visualmente, aquí iría)
+    // ...
 }
 
 function startExamenPersonalizado() {
@@ -287,6 +289,7 @@ function startExamenPersonalizado() {
   const total = parseInt(totalInput.value) || 10;
   const usarTimer = document.getElementById("mk-timer").checked;
   const soloOficiales = document.getElementById("mk-oficiales").checked;
+  const correccionFinal = document.getElementById("mk-correccion").checked; // CAPTURA NUEVA
 
   let pool = BANK.questions.filter(q => {
       const mat = Array.isArray(q.materia) ? q.materia : [q.materia];
@@ -308,7 +311,8 @@ function startExamenPersonalizado() {
     usarTimer,
     permitirRetroceso: true,
     mostrarNotas: true,
-    titulo: soloOficiales ? "🎯 Simulacro Oficial ⭐️" : "🎯 Simulacro"
+    titulo: soloOficiales ? "🎯 Simulacro Oficial ⭐️" : "🎯 Simulacro",
+    correccionFinal: correccionFinal // DATO NUEVO
   });
 }
 
@@ -340,7 +344,7 @@ function renderHistoryList() {
         btnOld.className = 'sort-link sort-active';
     }
 
-    // MOCK DATA (Podés conectar esto con localStorage real si querés a futuro)
+    // MOCK DATA
     const mockHistory = [
         { date: new Date().toISOString(), score: 85, totalQ: 50, timeStr: "42 min", subjects: ["pediatria", "cirugia", "ginecologia", "obstetricia", "cardiologia", "neurologia"] },
         { date: new Date(Date.now() - 86400000).toISOString(), score: 72, totalQ: 20, timeStr: "18 min", subjects: ["infectologia", "pediatria"] },
