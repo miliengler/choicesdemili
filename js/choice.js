@@ -1,11 +1,11 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Filtro Oficiales ⭐️)
+   📚 MEbank 3.0 – Práctica por materia (Con Filtro Oficiales ⭐️ + Links)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
-let choiceOnlyOfficial = false; // <--- NUEVA VARIABLE DE ESTADO
+let choiceOnlyOfficial = false; // <--- VARIABLE DE ESTADO FILTRO
 
 /* --- CÍRCULO DE PROGRESO --- */
 function renderProgressCircle(percent) {
@@ -32,7 +32,6 @@ function renderProgressCircle(percent) {
 function renderChoice() {
   const app = document.getElementById("app");
   
-  // Si ya existe el contenedor, solo refrescamos la lista
   if (document.getElementById("choice-shell")) {
       renderChoiceList(); 
       return;
@@ -133,7 +132,7 @@ function onSearchChoice(val) {
 
 function toggleChoiceOfficial(checked) {
     choiceOnlyOfficial = checked;
-    renderChoiceList(); // Re-renderiza todo aplicando el nuevo filtro
+    renderChoiceList(); 
 }
 
 function toggleMateriaChoice(slug) {
@@ -158,12 +157,11 @@ function updateInterfaceState(slug) {
         controlsContainer.innerHTML = getControlsHTML(slug, allChecks.length, checkedChecks.length);
     }
 
-    // Calcular stats dinámicas para los botones
     const seleccionados = Array.from(checkedChecks).map(ch => ch.value);
     const scope = seleccionados.length ? seleccionados : null;
     let questions = getQuestionsByMateria(slug, scope);
 
-    // FILTRO OFICIAL APLICADO AQUI TAMBIEN
+    // FILTRO OFICIAL
     if (choiceOnlyOfficial) {
         questions = questions.filter(q => q.oficial === true);
     }
@@ -206,7 +204,6 @@ function getActionButtonsHTML(slug, stats) {
 
     const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
-    // Si no hay preguntas (por ejemplo, filtro oficial activado y la materia no tiene oficiales)
     if (stats.total === 0) {
         return `<div style="width:100%; text-align:center; color:#94a3b8; font-size:13px; padding:10px;">⚠️ No hay preguntas oficiales en esta selección.</div>`;
     }
@@ -251,7 +248,6 @@ function getFilteredSubjects() {
   }
 
   // 2. Filtrar materias vacías si se activó el filtro oficial
-  // (Ocultar materias que no tengan ninguna pregunta oficial)
   if (choiceOnlyOfficial) {
       list = list.filter(subj => {
           const stats = getMateriaStats(subj.slug);
@@ -307,7 +303,7 @@ function renderMateriaExpanded(m, term, stats) {
   const slug = m.slug;
   const fullSubtemas = BANK.subsubjects[slug] || [];
   
-  const totalMateria = stats.total; // Ya viene filtrado por getMateriaStats
+  const totalMateria = stats.total; 
   let sumaParcial = 0;
   const countsMap = {};
 
@@ -316,7 +312,6 @@ function renderMateriaExpanded(m, term, stats) {
       const subSlug = normalize(nombreSub);
 
       if (!isLast) {
-          // Usamos el contador estricto que TAMBIÉN respeta el filtro
           const c = contarPreguntasMateriaSubEstricto(slug, subSlug);
           countsMap[subSlug] = c;
           sumaParcial += c;
@@ -335,13 +330,10 @@ function renderMateriaExpanded(m, term, stats) {
       }
   }
 
-  // Generamos la lista de subtemas
   const items = visibleSubtemas.map(nombreSub => {
     const subSlug = normalize(nombreSub);
     const count = countsMap[subSlug] || 0; 
     
-    // Si estamos en modo oficial y el subtema tiene 0, lo ocultamos para limpiar la vista?
-    // O lo mostramos deshabilitado? Vamos a mostrarlo pero gris si es 0.
     const isZero = count === 0;
     const styleLabel = isZero ? "color:#cbd5e1;" : "";
 
@@ -362,6 +354,20 @@ function renderMateriaExpanded(m, term, stats) {
   const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
+  // 🛠️ AQUÍ ESTÁ EL CAMBIO IMPORTANTE: Botones conectados
+  let filaTools = `
+    <div style="display:flex; gap:10px; margin-top:10px; flex-wrap:wrap;">
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+               onclick="verEstadisticasMateria('${slug}')">
+           📊 Ver estadísticas de ${cleanName}
+       </button>
+       <button class="btn-small" style="flex:1; background:#f8fafc; border-color:#e2e8f0; color:#64748b;" 
+               onclick="verNotasMateria('${slug}')">
+           📒 Mis notas de ${cleanName}
+       </button>
+    </div>
+  `;
+
   return `
     <div style="margin-top:10px; padding-top:8px; border-top:1px solid #e2e8f0;">
       <div id="controls-${slug}" style="display:flex; justify-content:center; align-items:center; margin-bottom:10px; font-size:13px;">
@@ -373,26 +379,25 @@ function renderMateriaExpanded(m, term, stats) {
       <div id="actions-${slug}" style="display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap;">
          ${getActionButtonsHTML(slug, stats)}
       </div>
+      
+      ${filaTools}
+
     </div>
   `;
 }
 
 /* --- UTILS --- */
 function getMateriaStats(slug) {
-  // Aquí aplicamos el filtro global
   const total = BANK.questions.filter(q => {
       const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
       if (!esMat) return false;
-      
-      if (choiceOnlyOfficial && q.oficial !== true) return false; // FILTRO
-      
+      if (choiceOnlyOfficial && q.oficial !== true) return false;
       return true;
   }).length;
 
   const progMat = PROG[slug] || {};
   let ok = 0, bad = 0;
   
-  // Calcular progreso SOLO sobre las visibles (oficiales o todas)
   BANK.questions.forEach(q => {
       const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
       if (!esMat) return;
@@ -413,10 +418,7 @@ function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
   return BANK.questions.filter(q => {
     const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
     if (!esMateria) return false;
-    
-    // FILTRO OFICIAL
     if (choiceOnlyOfficial && q.oficial !== true) return false;
-
     return q.submateria === subSlug;
   }).length;
 }
@@ -432,7 +434,6 @@ function iniciarPracticaMateria(mSlug, modo) {
   
   let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
-  // APLICAR FILTRO FINAL ANTES DE EMPEZAR
   if (choiceOnlyOfficial) {
       preguntas = preguntas.filter(q => q.oficial === true);
   }
@@ -461,4 +462,50 @@ function iniciarPracticaMateria(mSlug, modo) {
     usarTimer: false,
     titulo: titulo
   });
+}
+
+/* ==========================================================
+   🔗 VINCULACIÓN CON OTROS MÓDULOS
+   ========================================================== */
+
+function verEstadisticasMateria(slug) {
+    if (typeof renderStats !== 'function') return alert("Error: Módulo de Estadísticas no cargado.");
+    
+    // 1. Ir a la pantalla de Stats
+    renderStats();
+
+    // 2. Abrir el acordeón específico
+    setTimeout(() => {
+        if (typeof toggleStatsAcc === 'function') {
+            const el = document.getElementById(`stat-${slug}`);
+            if (el && el.style.display === 'none') {
+                toggleStatsAcc(slug);
+            }
+            const card = el ? el.parentElement : null;
+            if(card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    }, 100);
+}
+
+function verNotasMateria(slug) {
+    if (typeof renderNotasMain !== 'function') return alert("Error: Módulo de Notas no cargado.");
+
+    // 1. Ir a la pantalla de Notas
+    renderNotasMain();
+
+    // 2. Abrir el grupo de esa materia
+    setTimeout(() => {
+        if (typeof openGroups !== 'undefined') {
+            openGroups[slug] = true; 
+            if (typeof updateNotasList === 'function') updateNotasList(); 
+        } else if (typeof toggleGroup === 'function') {
+            toggleGroup(slug);
+        }
+
+        const content = document.getElementById(`content-${slug}`);
+        if (content) {
+            const header = content.previousElementSibling;
+            if(header) header.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    }, 100);
 }
