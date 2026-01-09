@@ -183,7 +183,8 @@ const SUBTEMAS = {
   ],
    
   medicinafamiliar: [
-    "General"
+    "General",
+    "Adulto mayor"
   ],
    
   medicinalegal: [
