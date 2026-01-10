@@ -1,1 +1,550 @@
-[]
+[
+  {
+    "id": "otorrino-001-001",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Nariz",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "Un niño de 5 años es traído a la consulta con congestión nasal crónica de 2 años de evolución. Los padres refieren que respira por la boca en forma habitual, con ronquido y ocasionales interrupciones de la respiración durante la noche. Los síntomas se han manifestado de manera cotidiana, sin cambios estacionales específicos y no han mejorado luego de una serie con corticoides por vía nasal y antihistamínicos de segunda generación por vía oral de 3 meses de duración. El niño no presenta síntomas oculares, estornudos o prurito nasal. Al examen físico se observa tranquilo, pero es evidente la respiración bucal. En las fauces se observan amígdalas que sobresalen por fuera de los pliegues de la pared faríngea pero no se tocan entre sí. El resto del examen físico es normal. ¿Cuál es la causa más probable del cuadro clínico?",
+    "opciones": {
+      "a": "Rinitis alérgica",
+      "b": "Hipertrofia adenoidea",
+      "c": "Sinusitis crónica",
+      "d": "Pólipos nasales"
+    },
+    "correcta": "b",
+    "explicacion": "La hipertrofia adenoidea es el aumento del tamaño de las adenoides que afecta la dinámica de la vía aérea superior.\n\nSe manifiesta por respiración bucal, ronquido durante el sueño, voz apagada y nasal. Los niños pueden presentar una facie característica con cara alargada, boca abierta, mordida abierta y paladar superior elevado.\n\nEn los casos más graves se pueden presentar apneas obstructivas del sueño.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-002",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la característica patognomónica del vértigo laberíntico?",
+    "opciones": {
+      "a": "Nistagmo vertical.",
+      "b": "Romberg negativo.",
+      "c": "Nistagmo horizontal.",
+      "d": "Acufenos o hipoacusia."
+    },
+    "correcta": "c",
+    "explicacion": "El 93% de los pacientes con vértigo periférico tienen vértigo posicional paroxístico benigno (VPPB), neuronitis vestibular aguda y enfermedad de Ménière. Por su alta frecuencia en la consulta, estas tres patologías deben estar siempre presentes para el médico en el momento de iniciar el proceso de diagnóstico.\n\nEl Sindrome de maniere se produce por un aumento de la presión de la endolinfa por incremento en su producción (hidropesia endolinfática) o de modo idiopático (enfermedad de Ménière), que desencadena inflamación del laberinto membranoso.\n\nLa triada sintomática de: vértigo episódico (aparición brusca, duración de horas a dias) asociado a HNS (inicialmente es fluctuante, con mayor afectación de tonos graves) y acúfeno.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-003",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Qué observamos con relación al nistagmo si hacemos fijar la vista en un punto en un paciente con vértigo y nistagmo de origen periférico?",
+    "opciones": {
+      "a": "No se modifica",
+      "b": "Disminuye o desaparece",
+      "c": "Aumenta",
+      "d": "Cambia de dirección"
+    },
+    "correcta": "b",
+    "explicacion": "El nistagmo en el Vértigo Periférico siempre es horizontorrotatorio, unidireccional y se inhibe con la fijación. Ante un nistagmo que no cumple estas caracteristicas siempre hay que sospechar centralidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-004",
+    "materia": [
+      "otorrinolaringologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Oído",
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Cuál sería la conducta inicial más adecuada con una señora de 74 años, sin antecedentes patológicos, que durante la consulta le refiere que su esposo continuamente le está diciendo que ella no oye bien?",
+    "opciones": {
+      "a": "Realizar otoscopia",
+      "b": "Solicitar interconsulta con fonoaudiología",
+      "c": "Solicitar audiometria",
+      "d": "Conducta expectante y evaluar evolución"
+    },
+    "correcta": "a",
+    "explicacion": "La anamnesis, la exploración física y la audiometría son fundamentales en le evaluación del paciente con hipoacusia.\n\nEl primero paso es realizar la otoscopia mediante la cual se buscara la presencia de cerumen impactado que es la causa mas frecuente de hipoacusia conductiva. También se puede poner en evidencia una otitis media, colesteatoma, perforación timpánica etc.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-005",
+    "materia": [
+      "otorrinolaringologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Oído",
+      "Adulto Mayor"
+    ],
+    "enunciado": "Una mujer de 74 años, sin antecedentes patológicos, refiere durante la consulta que su esposo continuamente le está diciendo que ella no oye bien, especialmente en las reuniones familiares. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Conducta expectante y evaluar evolución.",
+      "b": "Solicitar audiometria.",
+      "c": "Solicitar interconsulta con fonoaudiologia.",
+      "d": "Realizar otoscopia."
+    },
+    "correcta": "d",
+    "explicacion": "La evaluación completa del oído debe comprender una exploración otológica, auditiva y también la valoración del equilibrio.\n\nLa exploración otológica inicial se basa principalmente en la anamnesis y en la otoscopia, bien simple o con microscopio, para la valoración de CAE y del oído medio. Se realiza la inspección del pabellón auricular en búsqueda de lesiones a ese nivel y la palpación para descartar adenopatías, signo del trago (positivo ante otitis externas) y patologia a nivel de la articulación temporomandibular.\n\nSi en la exploración otoscópica no se encuentran lesiones que justifiquen la disminución de la audición, puede procederse a estudios radiológicos (TC, RM) y estudios auditivos para evaluar las vías auditivas. Luego estaría indicada una audiometria.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-006",
+    "materia": [
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Oído"
+    ],
+    "enunciado": "La causa más frecuente de vértigo es:",
+    "opciones": {
+      "a": "Neuronitis vestibular",
+      "b": "Síndrome de Wallenberg",
+      "c": "Vértigo posicional benigno",
+      "d": "Síndrome de Menière"
+    },
+    "correcta": "c",
+    "explicacion": "El vértigo es la ilusión de movimiento en el espacio, puede ser central o periférico, acompañarse de nistagmo, acufenos e hipoacusia. Las causas son fisiológicas (como el vértigo de las alturas) o patológicas.\n\nLa patología asociada a vértigo más frecuente es el vértigo posicional benigno caracterizado por episodios cortos de vértigo (menores de un minuto) que se asocian con los cambios de posición. La causa del VPB es la formación de otolitos en un conducto semicircular.\n\nLa causa más frecuente es espontánea pero también puede producirse luego de traumatismos o infecciones. El diagnóstico es clinico y el tratamiento se realiza mediante maniobras clínicas específicas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-007",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Oído",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Un niño de 3 años tiene antecedentes de dos semanas de otorrea derecha, afebril en buen estado general, que no respondió al tratamiento antibiótico. Es imposible visualizar la membrana timpánica. ¿Cuál es la causa más probable de otorrea resistente al tratamiento?",
+    "opciones": {
+      "a": "Cuerpo extraño.",
+      "b": "Alergia.",
+      "c": "Fibrosis quistica.",
+      "d": "Otorrea de líquido cefalorraquideo."
+    },
+    "correcta": "a",
+    "explicacion": "La presencia de cuerpo extraño en oido sucede en 2/3 de los casos en menores de 8 años. A veces el episodio es relatado por el niño u observado por una adulto.\n\nSi el episodio pasa desapercibido debe sospecharse ante clinica de supuración ótica persistente, dolor, hemorragia, disminución de la capacidad auditiva unilateral. En la otoscopia no se puede visualizar completamente la membrana timpánica.\n\nSi el cuerpo extraño es una pila o botón la extracción debe realizarse urgente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-008",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Oído",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Matías, de 9 años de edad, es traído a la guardia. Hace 5 días se le diagnosticó otitis media aguda en el oído izquierdo. Se le indicó amoxicilina 80 mg/k/dia vía oral. En el día de hoy consulta por fiebre y dolor retroauricular izquierdo. Al examen físico presenta edema y eritema retroauricular izquierdo, con despegamiento y antepulsión de pabellón auricular homolateral. ¿Qué estudio complementario solicita según su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Ecografia de partes blandas.",
+      "b": "Ecografía de región parotidea.",
+      "c": "Radiografia de cráneo con foco en mastoides.",
+      "d": "TAC cerebral con contraste endovenoso."
+    },
+    "correcta": "d",
+    "explicacion": "La mastoiditis es una infección de las celdas mastoides que asocia osteitis. Se produce por los mismos gérmenes que una OMA y es su complicación más frecuente.\n\nClinicamente se caracteriza por los mismos sintomas de una OMA (otalgia, otorrea, fiebre y malestar general), despegamiento del pabellón auricular y posible fistulización retroauricular o al CAE (fistula de Gellé).\n\nPara su diagnóstico es de elección la tomografia donde se puede observar la destrucción ósea.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-009",
+    "materia": [
+      "otorrinolaringologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Faringe",
+      "TRS"
+    ],
+    "enunciado": "Un varón de 17 años de edad, sin antecedentes personales relevantes, consulta por presentar disfagia y odinofagia de 7 días de evolución y registros febriles. Recibió tratamiento con amoxicilina, sin mejoría. En la exploración se observa hipertrofia amigdalina con exudado blanquecino, abombamiento del pilar anterior con desplazamiento hacia la izquierda de la úvula y adenomegalias laterocervicales de aspecto inflamatorio. ¿Cuál es el procedimiento más adecuado en esta instancia?",
+    "opciones": {
+      "a": "TC de cuello con cortes axiales y coronales con contraste endovenoso",
+      "b": "Cultivo del exudado amigdalino",
+      "c": "Biopsia de la amigdala",
+      "d": "Punción aspiración del pilar amigdalino"
+    },
+    "correcta": "d",
+    "explicacion": "El absceso periamigdalino se presenta en pacientes jóvenes posteriormente a haber presentado una amigdalitis. El paciente presenta odinofagia, voz englobada y trismus. Al examen presenta abombamiento del pilar anterior con desplazamiento de la úvula hacia la izquierda.\n\nEl tratamiento de elección es la punción a través de la cavidad oral donde se encuentra más abombada y posterior antibioticoterapia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-010",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Oído",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Es traído por sus padres a la guardia externa, Juan de 8 años de edad. Se trata de un niño previamente sano, a quien se le diagnosticó otitis media aguda derecha hace 5 días y fue medicado con amoxicilina 90 mg/kg/dia. En el día de hoy consulta por persistencia de la fiebre y dolor retroauricular. Al examen físico encuentra edema y eritema retroauricular con despegamiento y antepulsión del pabellón auricular derecho. De acuerdo a su hipótesis diagnóstica inicial, ¿Cuáles son las conductas prioritarias?",
+    "opciones": {
+      "a": "Indicar lavados de conducto auditivo externo.",
+      "b": "Solicitar internación para tratamiento antibiótico EV.",
+      "c": "Continuar con el tratamiento antibiótico indicado hasta cumplir 10 dias",
+      "d": "Indicar antiinflamatorios pautados y controlar en 48 hs"
+    },
+    "correcta": "b",
+    "explicacion": "El caso orienta mastoiditis aguda (MA) que aparece como resultado de la extensión de una otitis media aguda (OMA) y provoca la infección de las celdillas mastoideas del hueso temporal. Se trata de la complicación más frecuente de una OMA.\n\nLa MA es una enfermedad potencialmente grave que debe sospecharse ante la presencia de celulitis en la región mastoidea, junto con el despegamiento del pabellón auricular. Tras la inflamación inicial de la mastoides, esta puede evolucionar hacia la destrucción de las celdillas óseas, con el consiguiente riesgo de extensión a estructuras vecinas, lo que da lugar a complicaciones tanto intra- como extracraneales (las primeras son las más frecuentes).\n\nLos gérmenes implicados con más frecuencia en las MA son Streptococcus pneumoniae, Streptococcus pyogenes, Haemophilus influenzae y Moraxella catarrhalis. Las OMA causadas por Streptococcus pyogenes presentan un riesgo relativo mayor de evolucionar hacia MA.\n\nEl diagnóstico se basa en la presencia de inflamación o eritema de la zona retroauricular, despegamiento del pabellón auricular y dolor en la zona afectada. Ante la sospecha dentro de las imágenes se recomienda TAC.\n\nNo existe un consenso claro en cuanto al tratamiento quirúrgico en la MA. El tratamiento inicial suele ser conservador y consiste en antibioterapia que cubre los gérmenes más frecuentes. Será preciso evaluar la necesidad de una mastoidectomía en los casos en los que no se aprecie una mejoría en las primeras 24-48 horas de tratamiento conservador.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-011",
+    "materia": [
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Oído"
+    ],
+    "enunciado": "Un paciente de 42 años concurre a la consulta con el otorrinolaringólogo porque creer percibir alteraciones en la audición. En la prueba de Rinne, el estímulo trasmitido con el diapasón apoyado sobre la apófisis mastoides derecha se percibe con mayor intensidad (Rinne negativo). En la prueba de Weber, con el diapasón apoyado sobre la frente, el sonido se percibe peor en el oído izquierdo (lateralización a la derecha). ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Hipoacusia mixta",
+      "b": "Hipoacusia unilateral de conducción con afección del oido derecho",
+      "c": "Hipoacusia unilateral de conducción con afección del oido izquierdo",
+      "d": "Hipoacusia neurosensorial con afección del oído izquierdo"
+    },
+    "correcta": "b",
+    "explicacion": "La hipoacusia puede ser conductiva (afectación del oido externo y medio) o neurosensorial (afectación del octavo par craneal). La prueba con diapasón se utiliza para determinar el origen de una hipoacusia.\n\nEn la prueba de Rinne se coloca el diapasón en la apofisis mastoides hasta que el sonido ya no pueda ser oido. Luego se sujeta a 2,5 cm del oido. Si la conducción osea es mejor que la aerea entonces se trata de una hipoacusia conductiva.\n\nLa prueba de Weber se realiza apoyando el diapasón en la frente. Normalmente el sonido se percibe central. Si se percibe en el lado de la hipoacusia, la hipoacusia es de conducción, si no es neurosensorial.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-012",
+    "materia": [
+      "neurologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología",
+      "Oído"
+    ],
+    "enunciado": "Consulta a la guardia un varón de 50 años por un cuadro vertiginoso de aparición brusca. Refiere mareos intensos, inestabilidad, pérdida de equilibrio, náuseas y vómitos. Una de las preguntas que usted se hace frente a este cuadro es si el vértigo es de causa central o periférica: ¿Cuál de estos elementos semiológicos le indicaran una causa central de vértigo?",
+    "opciones": {
+      "a": "Nistagmo horizontorrotatorio",
+      "b": "Nistagmo unidireccional",
+      "c": "Nistagmo que se inhibe fijando la mirada",
+      "d": "Nistagmo vertical puro"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta modificada por motivos educativos. El nistagmo en el vértigo periférico siempre es horizontorrotatorio, unidireccional y se inhibe con la fijación. Ante un nistagmo que no cumple estas caracteristicas siempre hay que sospechar centralidad.\n\nRespuesta correcta: nistagmo vertical puro.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-013",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Durante las últimas dos semanas una mujer de 66 años se despertó varias veces con vértigo y nauseas. No hay otros síntomas y el vértigo desaparece cuando se sienta o se da vuelta. En el examen físico se presenta normotensa y se observa la aparición de nistagmus en posición supina con si cabeza hacia la izquierda. El mismo aparece luego de una latencia de 30 segundos y el componente rápido se encuentra hacia la derecha. El resto del examen neurológico, auditivo y la otoscopía son normales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hipotensión ortostática",
+      "b": "Vértigo paroxistico posicional benigno",
+      "c": "Neurinoma del acústico",
+      "d": "Accidente isquémico transitorio vertebrobasilar"
+    },
+    "correcta": "b",
+    "explicacion": "El vértigo posicional paroxistico benigno (VPPB) es la forma más frecuente de vértigo periférico y se da con más frecuencia en mujeres. El vértigo aparece solo al situar al paciente en una posición determinada y dura segundos o minutos, sin acompañarse de otra clínica otológica.\n\nLa mayoría es de causa idiopática aunque también se asocia con traumatismos craneoencefálicos. Se debe a:\n- Canalitiasis: otolitos procedentes del utriculo flotan dentro del canal semicircular y estimulan la cresta ampular con los cambios posicionales.\n- Cupulolitiasis: otolitos adheridos a la cúpula del canal semicircular.\n\nEl nistagmo del VPPB aparece solo con determinada posición. El nistagmo en el vértigo periférico siempre es horizontorrotatorio, unidireccional y se inhibe con la fijación. El diagnóstico se realiza con maniobras posicionales (Dix-Hallpike), en las que se aprecia un nistagmo que se caracteriza por resultar fatigante cuando se repite la maniobra, ser reversible y presentar agotamiento y latencia (comienza a los pocos segundos de haber realizado la maniobra).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-014",
+    "materia": [
+      "otorrinolaringologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Nariz",
+      "TRS"
+    ],
+    "enunciado": "Un paciente de 35 años fumador de 25 paquetes/año consulta a la guardia por presentar secreción nasal purulenta, congestión de vías nasales, sensación de presión en la cara a nivel maxilar izquierdo y cefalea, que tiende a empeorar cuando flexiona la cintura hacia adelante y en decúbito supino, de alrededor de 3 semanas de duración. El paciente refiere cuadros de similares características en 2 o 3 oportunidades en los últimos años que fueron tratados con antibióticos y descongestivos nasales. De acuerdo a la presunción diagnóstica, ¿cuál es la técnica más adecuada para la evaluación diagnóstica de esta patología?",
+    "opciones": {
+      "a": "Cultivo de material obtenido por punción de seno maxilar",
+      "b": "Aspirado de secreciones nasales para examen directo y cultivo",
+      "c": "Cultivo de material obtenido por técnicas endoscopicas combinado con tomografia computarizada de senos paranasales",
+      "d": "Radiografia de senos paranasales"
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico de la sinusitis es fundamentalmente clinico mediante la anamnesis y una exploración que incluya endoscopia nasal, donde se puede observar rinorrea purulenta en los meatos.\n\nNo está indicado hacer radiología convencional. La TC es la prueba de elección en procesos crónicos o ante sospecha de complicaciones.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-015",
+    "materia": [
+      "otorrinolaringologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Nariz",
+      "TRS"
+    ],
+    "enunciado": "Llega a la consulta Bianca de 23 años, quien presenta cefalea, dolor a nivel frontal y maxilar superior, y registros de 37,5 de temperatura axilar. Refiere que hace 24 hs cesaron síntomas de resfrío común que venía teniendo desde hace una semana, para lo cual se automedicó con analgésicos y descongestivos nasales, pero actualmente no surten efecto. Al examen físico identifica secreciones mucopurulentas que discurren por la rinofaringe. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Laringitis aguda",
+      "b": "Sinusitis aguda",
+      "c": "Fase de remisión del resfrio común",
+      "d": "Faringitis aguda"
+    },
+    "correcta": "b",
+    "explicacion": "La rinosinusitis bacteriana es la inflamación de las fosas nasales y de los senos paranasales caracterizada por bloqueo, obstrucción o congestión nasal y secreción nasal (rinorrea anterior o posterior) junto con uno de los siguientes síntomas:\n\n- Dolor o sensación de presión facial.\n- Pérdida total o parcial del sentido del olfato.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-016",
+    "materia": [
+      "neurologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología",
+      "Oído"
+    ],
+    "enunciado": "Paciente que presenta vértigo periférico, ¿cuál de los siguientes signos lo diferencian del vértigo central?",
+    "opciones": {
+      "a": "Diplopía",
+      "b": "Disartria",
+      "c": "Acúfenos",
+      "d": "Hipo"
+    },
+    "correcta": "c",
+    "explicacion": "Vértigo: sintomas acompañantes: el Vértigo Periférico se acompaña con frecuencia de sintomas otológicos (hipoacusia, acúfenos, entre otros.) y el Vértigo Central puede presentar cefalea o alguna alteración neurológica (diplopia, afasia, debilidad, entre otras).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-017",
+    "materia": [
+      "pediatria",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Desarrollo y nutrición",
+      "Oído"
+    ],
+    "enunciado": "Una niña de 3 años es traída a control de salud por su madre, quien refiere que le preocupa porque cree que no escucha bien. No presenta antecedentes personales ni familiares de relevancia Y las otoemisiones acústicas son normales al nacimiento. ¿cuál considera usted es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar audiometria tonal",
+      "b": "Solicitar audiometria de juego",
+      "c": "Solicitar audiometria del comportamiento con refuerzo visual",
+      "d": "Continuar con los controles habituales"
+    },
+    "correcta": "b",
+    "explicacion": "En algunos casos las hipoacusias no se manifiesta hasta una etapa posterior de la niñez. De modo que es importante evaluar la audición de los niños periódicamente durante el crecimiento.\n\nMás aún se solicitará evaluación de la audición cuando los familiares sospechen hipoacusia en el niño o se presente por ejemplo retraso en el lenguaje.\n\nSegún la edad se podrá solicitar:\n- Audiometria del comportamiento y refuerzo visual, entre los 6 meses y 2 años.\n- Audiometria de juego: esta técnica se usa en niños de 2 a 4 años; se le enseña al niño a colocar un objeto (como un cubo en una caja) cuando escucha un tono.\n- Audiometria tonal en niños mayores de 6 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-018",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Nariz",
+      "SNP"
+    ],
+    "enunciado": "Los núcleos parasimpáticos del facial se denominan núcleos...",
+    "opciones": {
+      "a": "motor dorsal y lacrimal",
+      "b": "salivar inferior y lagrimal.",
+      "c": "salivar inferior y de Edinger-Westphal.",
+      "d": "salivar superior y lagrimal."
+    },
+    "correcta": "d",
+    "explicacion": "La inervación de la nariz se clasifica en sensorial olfatoria, a través nervio olfatorio o I par craneal, y sensitiva, a cargo de los ramos primero y segundo del nervio trigémino. La inervación autónoma regula la función secretora y vasomotora y va vehiculizada por el nervio intermediario del nervio facial a través del nervio petroso mayor y el nervio vidiano.\n\nLa estimulación simpática provoca vasoconstricción, mientras que la parasimpática (a través de los núcleos faciales salivar superior y lagrimal) desencadena vasodilatación y rinorrea.\n\nLas fosas y los senos paranasales presentan una inervación sensitiva (primera y segunda rama del trigémino) y autónoma (secretora y vasomotora), además de una inervación especial que asume la función sensorial olfatoria, a través del nervio olfatorio.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-019",
+    "materia": [
+      "otorrinolaringologia",
+      "aps"
+    ],
+    "submateria": [
+      "Oído",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "¿Cuál de estas afirmaciones sobre el manejo de tapón de cerumen es correcta?",
+    "opciones": {
+      "a": "Los ceroliticos ocasionan transitoriamente una mayor pérdida auditiva.",
+      "b": "Los intentos de eliminación manual generalmente no tienen éxito.",
+      "c": "El lavaje del oido se hace preferentemente con dextrosa al 5%.",
+      "d": "La limpieza auditiva con hisopos previene la formación de cerumen."
+    },
+    "correcta": "a",
+    "explicacion": "Los tapones de cerumen causan hipoacusia, sensación de plenitud e incluso otalgia. Con frecuencia el paciente refiere la aparición brusca de la sintomatología tras un baño (se <<hincha>> el tapón con el agua).\n\nSe extrae con un instrumento, un aspirador o mediante la irrigación con agua templada (no dextrosa) siempre que se conozca de antemano que el timpano está integro. El tratamiento requiere la extracción del cerumen por lavado con jeringa o aparato eléctrico y es el método más utilizado en atención primaria.\n\nPuede hacerse directamente (eficacia del 70%-75%) o con el empleo previo de cerumenoliticos (eficacia del 97%). Con cierta frecuencia al volver el paciente tras la administración del cerumenolitico en su domicilio ya no es necesaria la extracción por lavado. Se debe informar al paciente y/o familia sobre la posible aparición de síntomas y los cuidados posteriores a la extracción: ligera pérdida de audición de forma transitoria y breve, hasta la evaporación del agua residual; si aparecen pequeños mareos evitar actividades que impliquen peligro (conducir, etc.); proteger el canal del oído de una posible infección tras la irrigación manteniéndolo seco 4 o 5 dias hasta que produzca más cera.\n\nCon respecto a la extracción del cerumen a través de visión directa con un instrumento (cureta, cucharilla, etc.) o por aspiración, es lo más indicado si existe el antecedente de perforación, aunque requiere formación específica previa, lleva un tiempo similar al lavado, no requiere la administración previa de cerumenoliticos y disminuye el riesgo de infecciones. No se usa prácticamente en atención primaria pero hay estudios que demuestran que es posible su aplicación con una adecuada formación.\n\nNo se recomienda la limpieza habitual con hisopos ya que esto no previene la formación de tapones de cerumen y puede ocasionar laceraciones e infecciones.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-020",
+    "materia": [
+      "neumonologia",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Ventilación y ventilación mecánica",
+      "Faringe"
+    ],
+    "enunciado": "Marcos tiene 55 años, y consulta por astenia. Refiere que no puede descansar bien por la noche, lo que hace que durante el día se duerma mirando la televisión, comiendo o trabajando, situación que le preocupa mucho. Marcos está acompañado de su esposa, quien relata que durante la noche ronca. El es hipertenso con mal control, obeso y tabaquista severo. Trae un laboratorio que como dato positivo presenta Hto 57 Hb 19. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome de apnea obstructiva del sueño",
+      "b": "Depresión",
+      "c": "Insomnio",
+      "d": "Ronquido primario"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. No presentan un caso clinico de una persona con astenia, con somnoliencia diurna, que ronca durante la noche y se encuentra insomne y que tiene antecedentes de HTA, obesidad y poliglobulia.\n\nEl dx más probable es SAHOS.\n\nEl ronquido simple: no está asociado a interrupción del sueño, insomnio o hipersomnoliencia diurna.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-021",
+    "materia": [
+      "otorrinolaringologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Faringe",
+      "Oncología"
+    ],
+    "enunciado": "Un varón de 47 años es derivado a ORL por presentar voz nasal, obstrucción nasal unilateral, hipoacusia de conducción y adenopatía yugulocarotídea homolateral de varios meses de evolución. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Carcinoma parotideo con extensión a oido externo",
+      "b": "Carcinoma parafaringeo",
+      "c": "Carcinoma de cavum",
+      "d": "Glomus yugulocarotideo"
+    },
+    "correcta": "c",
+    "explicacion": "El tumor de cavum, con igual incidencia en hombres y mujeres, se presenta más frecuente entre los 60 a 70 años. Clásicamente los sintomas que presenta son locorregionales como obstrucción nasal unilateral o bilateral, epistaxis (leve en comienzo que se vuelva más copiosa), rinorrea que tiende a ser hemorrágica, espesa y amarilla, otitis media (por afectación de la trompa auditiva o de Eustaquio).\n\nAl momento de la consulta el 90% presentan adenopatias.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-022",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una característica del vértigo laberíntico?",
+    "opciones": {
+      "a": "Nistagmo vertical",
+      "b": "Inicio insidioso",
+      "c": "Nistagmo horizontal",
+      "d": "Romberg negativo"
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta modificada con fines didácticos de un examen real. El nistagmo en el vértigo periférico siempre es horizontorrotatorio, unidireccional y se inhibe con la fijación. Ante un nistagmo que no cumple estas características siempre hay que sospechar centralidad.\n\nLa neuritis vestibular y la enfermedad de Ménière son los únicos cuadros periféricos que presentan nistagmo espontáneo, mientras que el nistagmo del VPPB aparece solo con determinada posición.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "otorrino-001-023",
+    "materia": [
+      "pediatria",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Patología del aparato respiratorio",
+      "Nariz"
+    ],
+    "enunciado": "En el caso de la epistaxis en pediatría se debe realizar laboratorio ¿En qué escenario clínico es necesario realizar laboratorio ante un caso de epistaxis en pediatria?",
+    "opciones": {
+      "a": "Si se sospecha infección viral",
+      "b": "En niños que sufrieron un traumatismo nasal.",
+      "c": "Si es el primer episodio",
+      "d": "Niños con epistaxis graves o recurrentes (sin causa local que las explique)."
+    },
+    "correcta": "d",
+    "explicacion": "Lo primero que hay que hacer es estabilizar al paciente: toma de constantes, tranquilizarle, revertir las coagulopatias, valorar la suspensión de anticoagulantes, entre otras. Dependiendo de la gravedad del sangrado y localización (referencia a recurso 'Dibujo 3')), y que de menor a mayor consiste en:\n\nLimpieza de las fosas nasales de restos hemáticos y coágulos.\n\nAplicación de un vasoconstrictor nasal con compresión local.\n\nSi se observa el punto de sangrado, se procederá a cauterizarlo con nitrato de plata o electrocauterio. Nunca cauterizar ambos lados del septo a la vez por riesgo de perforación.\n\nTaponamiento anterior durante 48-72 horas con gasa de borde o material hemóstatico (Surgicel®, Spongostan®, entre otros.). Siempre se debe cubrir con antibiótico, si se prolonga más allá de 72 horas, para evitar sinusitis.\n\nTaponamientos posteriores o neumotaponamientos: se deben evitar en la medida de lo posible por la comorbilidad que producen y revisar al paciente en quirófano; para ello se realiza una ligadura/cauterización de la arteria esfenopalatina o de las arterias etmoidales\n\nEmbolización de la arteria maxilar interna en caso de sangrado incoercible que no responde al tratamiento convencional.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
