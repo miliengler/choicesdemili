@@ -1,1 +1,542 @@
-[]
+[
+  {
+    "id": "oftalmo-001-001",
+    "materia": [
+      "oftalmologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Párpados y vía lagrimal",
+      "Oncología cutánea"
+    ],
+    "enunciado": "Un varón de 60 años presenta una pápula nacarada en el ángulo interno del ojo derecho de un año de evolución, que no ha cambiado en apariencia desde que se desarrolló, tiene un borde enrollado y se observan telangiectasias. ¿Cuál de es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Melanoma maligno.",
+      "b": "Eczema atópico.",
+      "c": "Carcinoma de células escamosas.",
+      "d": "Carcinoma de células basales."
+    },
+    "correcta": "d",
+    "explicacion": "Los tumores malignos del párpado pueden ser:\n\nCarcinoma basocelular (90%): habitualmente se presenta como un nódulo ulcerado, con mayor frecuencia en el párpado inferior. Los de tipo nodular comienzan generalmente como pequeñas protuberancias elevadas, brillantes y firmes, de color rosado o casi transparentes. Al cabo de algunos meses o años pueden aparecer vasos sanguineos dilatados visibles (telangiectasias) en la superficie, y su centro se puede abrir y se puede formar una costra. El borde del cáncer puede estar a veces engrosado y tener un color blanco perlado. Es posible que el tumor sangre y luego parezca cicatrizar, formando una costra, lo que puede llevar a la persona afectada a pensar falsamente que se trata de una llaga en lugar de un cancer. No metastatiza, y su extirpación completa supone la curación de la enfermedad.\n\nCarcinoma espinocelular (5%): puede metastatizar y es más radiorresistente.\n\nAdenocarcinoma de las glándulas de Zeiss o Meibomio: de bordes mal definidos, se debe sospechar ante una lesión similar a un chalazión que recidive.\n\nMelanoma.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-002",
+    "materia": [
+      "oftalmologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Estrabismo",
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "Un paciente de 2 meses es traído al control de salud. Sus padres observan que ocasionalmente desvía el ojo derecho. Durante el examen físico, usted constata endodesviación ocular derecha, que revierte espontáneamente. ¿Cuál es la conducta más adecuada ante este hallazgo?",
+    "opciones": {
+      "a": "Conducta expectante",
+      "b": "Solicitar TAC cerebral y de órbitas.",
+      "c": "Solicitar interconsulta con oftalmologia.",
+      "d": "Solicitar interconsulta con neurologia"
+    },
+    "correcta": "a",
+    "explicacion": "Denominamos estrabismo, cuando los ejes visuales de uno y otro ojo no se dirigen sobre el objeto de interés visual. Según la dirección los estrabismos pueden ser: horizontales (convergentes o divergentes), verticales, o mixtos. Puede afectar a un ojo o ser alternante, presentarse constante o intermitente.\n\nEl estrabismo convergente (hacia adentro o endotropia) suele desaparecer después de los tres meses y hasta los seis meses se pueden considerar normales desviaciones intermitentes de los ojos hacia afuera (exotropia). Cuando la desviación de los ojos es permanente, es decir, no varia durante el día, sino que el ojo siempre está desviado hacia adentro, fuera, arriba o abajo se debe consultar a un especialista.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-003",
+    "materia": [
+      "oftalmologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Retina",
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Una paciente de 65 años, hipertensa y con diagnóstico de diabetes tipo 2 con buen control metabólico, consulta por pérdida marcada de la agudeza visual en su ojo derecho de 4 días de evolución. En el fondo de ojo se observan venas dilatadas y tortuosas, hemorragias en llama, edema retiniano difuso y algunos exudados algodonosos. En la papila no se observan alteraciones significativas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Oclusión de la vena central de la retina",
+      "b": "Retinopatia diabética proliferativa",
+      "c": "Oclusión de la arteria central de la retina",
+      "d": "Retinopatia hipertensiva grado IV"
+    },
+    "correcta": "a",
+    "explicacion": "La obstrucción venosa retiniana (OVR) es un cuadro más frecuente que la OACR (obstrucción de la arteria central de la retina). Los factores de riesgo son la edad mayor de 60 años, el sexo femenino con hipertensión arterial y la hipertensión ocular. Otros factores de riesgo son los estados de hipercoagulabilidad y los fenómenos compresivos locales. Se produce por compresión venosa y enlentecimiento del flujo en las zonas de cruce arteriovenosos.\n\nOcasiona una pérdida de visión indolora que en ocasiones pasa desapercibida, si no afecta al territorio venoso de la retina central. La exploración del fondo de ojo se caracteriza por hemorragias en llama en la capa de fibras nerviosas de la retina, exudados algodonosos, tortuosidad venosa y edema retiniano en el territorio venoso afectado. En ocasiones se produce un borramiento del nervio óptico por la extensión del edema a la región peripapilar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-004",
+    "materia": [
+      "oftalmologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Glaucoma",
+      "Datos de nuestro país"
+    ],
+    "enunciado": "¿Cuál es la prevalencia del glaucoma en la población general?",
+    "opciones": {
+      "a": "8-10%",
+      "b": "20 a 22%",
+      "c": "0,5%",
+      "d": "2-3%"
+    },
+    "correcta": "d",
+    "explicacion": "El glaucoma es una neuropatia óptica progresiva, en la que se produce una pérdida de las células ganglionares y fibras nerviosas de la retina con un aumento de la excavación papilar y una alteración del campo visual progresiva, pudiendo producir ceguera. Su prevalencia en la población general es de 1,5-2% y en individuos con antecedentes familiares puede alcanzar hasta 10 a 15%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-005",
+    "materia": [
+      "oftalmologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Retina",
+      "Oncohematología infantil"
+    ],
+    "enunciado": "La madre de un niño de dos años consulta porque su hijo comenzó con estrabismo convergente del ojo izquierdo. Al examen físico presenta dolor a la compresión del globo ocular izquierdo con reflejo rojo positivo en ojo derecho y reflejo blanco amarillento en el ojo izquierdo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Estrabismo paralitico",
+      "b": "Celulitis orbitaria",
+      "c": "Retinoblastoma",
+      "d": "Catarata"
+    },
+    "correcta": "c",
+    "explicacion": "El retinoblastoma es la neoplasia intraocular más frecuente en pediatría. Puede ser uni o bilateral. El cuadro clinico se presenta con leucocoria (reflejo pupilar blanco) cuando hay desprendimiento de retina total, seguido por estrabismo, y ocasionalmente reducción de la agudeza visual.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-006",
+    "materia": [
+      "oftalmologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Retina",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "La principal causa de ceguera en pacientes en edad laboral en el mundo occidental es:",
+    "opciones": {
+      "a": "La maculopatia miópica",
+      "b": "El glaucoma",
+      "c": "La retinopatia diabética",
+      "d": "La trombosis de la vena central de la retina"
+    },
+    "correcta": "c",
+    "explicacion": "La diabetes es una enfermedad prevalente en todo el mundo y entre sus complicaciones se encuentra la retinopatía diabética que representa la principal causa de ceguera en el mundo occidental en pacientes en edad laboral.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-007",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Uveítis"
+    ],
+    "enunciado": "Un paciente de 23 años consulta a la guardia por ojo rojo derecho. Presenta visión ligeramente borrosa y dolor ocular de intensidad 6-7/10. Al examen ocular se observa inyección conjuntival alrededor de la córnea, córnea clara, pupila pequeña con reflejo pupilar enlentecido y presión intraocular 15 mmHg. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Conjuntivitis aguda",
+      "b": "Uveitis anterior aguda",
+      "c": "Trauma corneal",
+      "d": "Glaucoma de ángulo cerrado"
+    },
+    "correcta": "b",
+    "explicacion": "El ojo rojo doloroso es un motivo habitual de consulta. Sus causas más importantes son la conjuntivitis aguda, la uveitis anterior aguda o iritis, el glaucoma agudo y el traumatismo. La uveitis anterior aguda es la inflamación de la porción anterior del tracto uveal. Se presenta con ojo rojo, disminución de la agudeza visual y fotofobia. La inyección conjuntival es sobre todo pericorneal como dato característico. El tamaño pupilar es pequeño y con poca respuesta a la luz a diferencia de lo que sucede en el glaucoma en el cual la pupila suele estar dilatada e hiporreactiva a la luz. La presión intraocular es normal en la mayoría de los casos de uveitis y se encuentra elevada en el glaucoma.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-008",
+    "materia": [
+      "oftalmologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurooftalmología",
+      "SNP"
+    ],
+    "enunciado": "El síndrome de Horner se caracteriza por la presencia de:",
+    "opciones": {
+      "a": "Miosis, ptosis palpebral, anhidrosis facial e inyección conjuntival",
+      "b": "Miosis, ptosis palpebral, nistagmus y anhidrosis facial",
+      "c": "Miosis, ptosis palpebral, anhidrosis facial y exoftalmos",
+      "d": "Miosis, proptosis ocular, anhidrosis facial e inyección conjuntival"
+    },
+    "correcta": "c",
+    "explicacion": "Los músculos que controlan el diámetro pupilar poseen inervación autonómica. La inervación simpática depende de neuronas hipotalámicas del área ventrolateral que emiten proyecciones que se dirigen al asta intermediolateral de la médula espinal pasando por el tronco encefálico. Las proyecciones del asta intermediolateral salen por las raíces ventrales de C8 T1 y T2 y se dirigen hacia el ganglio cervical superior. Las fibras que emergen del ganglio cervical superior ascienden por las carótidas hasta llegar a la órbita siguiendo el trayecto de la rama oftálmica del nervio trigémino y finalmente llegar hasta el musculo dilatador de la pupila.\n\nLa lesión de esta via en cualquier parte de su trayecto se asocia a la aparición del sindrome de Horner se caracteriza por enoftalmos, ptosis palpebral y miosis unilateral, con anhidrosis de la hemicara y la extremidad superior. e inyección conjuntival.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-009",
+    "materia": [
+      "oftalmologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Retina",
+      "Adulto Mayor"
+    ],
+    "enunciado": "Un varón de 72 años, con antecedente de HTA controlada con IECA, consulta por trastornos de la visión de meses de evolución. Refiere no tener problemas para desplazarse en la calle ni para realizar sus tareas cotidianas, pero encuentra dificultades para la lectura y para reconocer rasgos faciales de las personas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Retinopatia hipertensiva",
+      "b": "Oclusión de la vena central de la retina",
+      "c": "Maculopatia relacionada con la edad",
+      "d": "Glaucoma de ángulo abierto"
+    },
+    "correcta": "c",
+    "explicacion": "La degeneración macular relacionada con la edad es la principal causa de disminución de la agudeza visual, de origen retiniano en el anciano. Se clasifica en formas exudativas (húmedas) y no exudativas (secas).\n\nLa enfermedad comienza afectando la mácula sin compromiso de la retina periférica de manera que los pacientes pueden deambular por la calle sin ayuda pero presentan problemas para el reconocimiento de rostros. Si se utiliza el test de amsler se evidencian metamorfopsias, es decir alteraciones en la visión de lineas que se ven curvas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-010",
+    "materia": [
+      "oftalmologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Conjuntiva",
+      "Virus varios"
+    ],
+    "enunciado": "Ante un paciente con ojo rojo, sensación de cuerpo extraño, secreciones mucosas, adenopatías preauriculares y el antecedente de un cuadro de vías aéreas superiores, usted pensaría en:",
+    "opciones": {
+      "a": "Conjuntivitis alérgica.",
+      "b": "Conjuntivitis micótica.",
+      "c": "Conjuntivitis vírica.",
+      "d": "Conjuntivitis bacteriana."
+    },
+    "correcta": "c",
+    "explicacion": "Conjuntivitis viricas:\n\nClinica. Comienzan con un ojo rojo unilateral con secreción serosa o seromucosa y reacción folicular, con frecuente afectación del otro ojo a los pocos dias. Es típica la presencia de una adenopatía preauricular dolorosa. Es un cuadro autolimitado de 1-3 semanas de duración.\n\nSe clasifican en:\n\nQueratoconjuntivitis epidémica: es muy contagiosa y la más frecuente.\n\nFiebre adenofaringoconjuntival: asocia malestar general, fiebre y faringitis.\n\nQueratoconjuntivitis hemorrágica epidémica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-011",
+    "materia": [
+      "oftalmologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Uveítis",
+      "Tuberculosis"
+    ],
+    "enunciado": "¿Qué entidad clínica deberá descartarse antes de tratar a una uveítis con corticoides sistémicos?",
+    "opciones": {
+      "a": "Sarcoidosis",
+      "b": "Tuberculosis",
+      "c": "Toxoplasmosis",
+      "d": "Sífilis"
+    },
+    "correcta": "b",
+    "explicacion": "La uveitis es la inflamación de la uvea, que se encuentra entre la retina y la esclerótica. Según el sitio comprometido se clasifica en uveitis anterior intermedia y posterior. Dentro de las causas se encuentran las de origen infecciosas, como lepra o tuberculosis, y las de origen autoinmune.\n\nAntes de utilizar tratamiento antiinflamatorio, se debe descartar las causas infecciosas, entre ellas la tuberculosis ya que podria exacerbar el cuadro. Se recomienda realizar PPD previo al inicio. Se recomienda tratamiento profiláctico con isoniacida en aquellos con prueba de PPD positiva o antecedentes de tuberculosis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-012",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "¿Cuál es el tipo de defecto atribuible a glaucoma que se encuentra en el campo visual?",
+    "opciones": {
+      "a": "Escotoma central",
+      "b": "Escotoma arcuato",
+      "c": "Cuadrantopsia",
+      "d": "Cuadrantanopsia"
+    },
+    "correcta": "b",
+    "explicacion": "Los defectos atribuibles al glaucoma que se encuentran en el campo visual es el escotoma arcuato o escotoma de Bjerrum, que se producen por la fusión de los escotomas paracentrales.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-013",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Uveítis"
+    ],
+    "enunciado": "La uveítis anterior aguda puede mostrar en la evaluación biomicroscópica:",
+    "opciones": {
+      "a": "Precipitados queráticos endoteliales, Tyndall en humor acuoso, sinequias posteriores.",
+      "b": "Congestión conjuntival, papilas en conjuntiva tarsal.",
+      "c": "Opacidad vítrea.",
+      "d": "Edema palpebral."
+    },
+    "correcta": "a",
+    "explicacion": "La úvea comprende el iris y el cuerpo ciliar. En la Uveitis anterior se ve representada por:\n\nIritis\n\nIridociclitis\n\nCiclitis anterior\n\nLa clinica característica de la Uveitis anterior es:\n\nOjo rojo, dolor, fotofobia, miosis, visión borrosa con buena agudeza visual, fenómeno de Tyndall, precipitados retroqueráticos\n\nOjo rojo: Inyección ciliar",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-014",
+    "materia": [
+      "oftalmologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Retina",
+      "Oncohematología infantil"
+    ],
+    "enunciado": "¿Cuál de las siguientes características clínicas presentan los niños con retinoblastoma?",
+    "opciones": {
+      "a": "Leucocoria",
+      "b": "Ptosis palpebral",
+      "c": "Ambliopía",
+      "d": "Ceguera"
+    },
+    "correcta": "a",
+    "explicacion": "El retinoblastoma, es la neoplasia maligna primaria intraocular más frecuente en la infancia. Representa el 3% de todos los cánceres infantiles. Puede tener un patrón hereditario (40%) o no hereditario (60%). Se debe a una mutación en el gen RB1 que se localiza en el cromosoma 13.\n\nLa leucocoria (aparición de un reflejo blanco en la región pupilar) es el sintoma más habitual y se presenta en alrededor del 60% de los casos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-015",
+    "materia": [
+      "oftalmologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Órbita",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una niña de 10 años que es llevada a la consulta por tumefacción palpebral izquierda, fiebre, dolor e imposibilidad de abrir el ojo de 24 horas de evolución? Había consultado en otro centro asistencial y le diagnosticaron picadura de insecto y fue medicada con antihistamínicos, sin mejoría. No tiene antecedentes significativos, excepto resfríos y otitis a repetición. En el examen físico presenta en el ojo izquierdo tumefacción palpebral eritematosa con importante edema, congestión conjuntival, quemosis y secreción purulenta. La movilidad ocular está disminuida, la niña manifiesta dolor al intentar movilizar el globo ocular y leve disminución de la visión.",
+    "opciones": {
+      "a": "Celulitis periorbitaria",
+      "b": "Celulitis orbitaria",
+      "c": "Uveitis",
+      "d": "Absceso orbitario"
+    },
+    "correcta": "b",
+    "explicacion": "La celulitis orbitaria es la infección que afecta a los tejidos orbitarios propiamente dichos, es decir poseptal, habitualmente por gérmenes de propagación de los senos paranasales. Es la causa más frecuente de exoftalmos doloroso en pediatria con edema, eritema periocular, fiebre y dificultad en la apertura ocular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-016",
+    "materia": [
+      "oftalmologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurooftalmología",
+      "ECV"
+    ],
+    "enunciado": "La lesión de la via óptica a nivel de la cintilla óptica derecha produce:",
+    "opciones": {
+      "a": "Hemianopsia bitemporal",
+      "b": "Ceguera circunferencial",
+      "c": "Hemianopsia temporal izquierda y hemianopsia nasal derecha",
+      "d": "Hemianopsia nasal izquierda y hemianopsia nasal derecha"
+    },
+    "correcta": "c",
+    "explicacion": "Las alteraciones del campo visual se pueden caracterizar con bastante precisión con la intención de identificar las topografia de la lesión a través del examen clinico. Es necesario conocer la via óptica. Las fibras que surgen de la retina nasal se decusan a nivel del quiasma óptico en tanto que las temporales no lo hacen de manera que a nivel de las cintillas ópticas corren las fibras correspondientes a la retina temporal homolateral y nasal contralateral y lo mismo sucede a nivel de las radiaciones ópticas que llevan las fibras que se dirigen a la corteza visual.\n\nLo primero es determinar si la lesión es prequiasmatica (o sea a nivel del nervio óptico o retina), quiasmática o retroquiasmática (cintillas, ganglio geniculado y radiaciones). En las lesiones prequiasmáticas se produce un defecto de la visión en un solo ojo. Las lesiones quiasmátias producen hemianopsia bitemporal (por afectación de las retinas nasales decusándose). Las lesiones retroquiasmáticas producen hemianopsia homónima es decir un defecto del campo temporal contralateral y un defecto del campo nasal homolateral. La dispesión de las fibras a nivel de las radiaciones hace que a veces se afecte solamente un cuadrante del campo temporal y nasal y a esto se lo denomina cuadrantópsia",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-017",
+    "materia": [
+      "oftalmologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Retina",
+      "Adulto Mayor"
+    ],
+    "enunciado": "La principal causa de ceguera legal (agudeza visual corregida 1/10 ó menor) en los pacientes mayores de 60 años es:",
+    "opciones": {
+      "a": "La maculopatia diabética",
+      "b": "La retinopatía hipertensiva avanzada (grado IV)",
+      "c": "La degeneración macular relacionada con la edad",
+      "d": "Las oclusiones venosas de la retina"
+    },
+    "correcta": "c",
+    "explicacion": "La degeneración macular relacionada con la edad es una de las afecciones mas frecuentes de la retina. Existe una forma no exudativa y otra exudativa. Constituye la principal causa de pérdida gradual de la visión en el anciano.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-018",
+    "materia": [
+      "oftalmologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Córnea y esclera",
+      "General"
+    ],
+    "enunciado": "Usted se encuentra en la guardia evaluando a Víctor de 11 años que sufrió una abrasión corneal porque, jugando al fútbol, le entró tierra en el ojo derecho. Luego del lavado inicial con solución fisiológica, ¿Cuál es la conducta terapéutica indicada?",
+    "opciones": {
+      "a": "Pomada antibiótica tópica.",
+      "b": "Parche no compresivo con anestésico",
+      "c": "Parche semicompresivo con antibiótico.",
+      "d": "Gotas anestésicas tópicas."
+    },
+    "correcta": "a",
+    "explicacion": "Dentro de las queratitis no infecciosas encontramos las de causa traumáticas como el caso de la pregunta. Es fundamental realizar un lavado con abundante suero o agua de forma precoz para eliminar la tierra en este caso. Las queratitis traumáticas son las más frecuentes y se producen por erosión, quemadura, cuerpo extraño, etc.\n\nSe tratan con antibióticos para evitar la sobreinfección y con midriáticos para reducir el dolor producido por el espasmo ciliar. Los cuerpos extraños deben ser extirpados. Recordar que se presentarán con dolor (por espasmo del músculo ciliar), reacción de defensa (fotofobia, blefaroespasmo y lagrimeo) y enrojecimiento ocular perilimbar (inyección de los vasos pericorneales). En el caso de úlceras infecciosa no se recomienda la oclusión ocular.\n\nEntonces nunca debemos ocluir el ojo. Únicamente pautar pomada antibiótica y colirio midriático ciclopléjico (no anestésico) para disminuir el dolor mediante la relajación del músculo ciliar. La oclusión queda reservada para las erosiones de origen fototraumático o por radiación (erosiones estériles).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-019",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Neurooftalmología"
+    ],
+    "enunciado": "¿Cuál de las siguientes imágenes pupilares es compatible con discoria?",
+    "opciones": {
+      "a": "Imagen A.",
+      "b": "Imagen C.",
+      "c": "Imagen B.",
+      "d": "Imagen D."
+    },
+    "correcta": "d",
+    "explicacion": "Alteraciones pupilares:\n\nIsocoria: pupilas de igual tamaño (se acepta una diferencia máxima de 0,5 mm)\n\nAnisocoria: pupilas de diferentes tamaños.\n\nMiosis: pupilas pequeñas (contraidas).\n\nMidriasis: pupilas aumentadas de tamaño (dilatadas).\n\nDiscoria: deformidad de la pupila del ojo por la que pierde su circularidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-020",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Neurooftalmología"
+    ],
+    "enunciado": "Un oftalmólogo verifica en una campimetría la presencia de hemianopsia bitemporal. ¿Cuál es el sitio probable de la lesión?",
+    "opciones": {
+      "a": "El tracto óptico izquierdo",
+      "b": "El labio superior de la cisura calcarina",
+      "c": "El nervio óptico derecho",
+      "d": "La lesión del quiasma óptico"
+    },
+    "correcta": "d",
+    "explicacion": "Las alteraciones del campo visual se pueden caracterizar con bastante precisión con la intención de identificar las topografía de la lesión a través del examen clínico. Es necesario conocer la via óptica. Las fibras que surgen de la retina nasal se decusan a nivel del quiasma óptico en tanto que las temporales no lo hacen de manera que a nivel de las cintillas ópticas corren las fibras correspondientes a la retina temporal homolateral y nasal contralateral y lo mismo sucede a nivel de las radiaciones ópticas que llevan las fibras que se dirigen a la corteza visual.\n\nLo primero es determinar si la lesión es prequíasmática (o sea a nivel del nervio óptico o retina), quiasmática o retroquiasmática (cintillas, ganglio geniculado y radiaciones). En las lesiones prequiasmáticas se produce un defecto de la visión en un solo ojo. Las lesiones quiasmáticas producen hemianopsia bitemporal (por afectación de las retinas nasales decusandose). Las lesiones retroquiasmáticas producen hemianopsia homónima es decir un defecto del campo temporal contralateral y un defecto del campo nasal homolateral. La dispersión de las fibras a nivel de las radiaciones hace que a veces se afecte solamente un cuadrante del campo temporal y nasal y a esto se lo denomina cuadrantópsia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-021",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Retina"
+    ],
+    "enunciado": "¿En qué capa de la retina se localizan los exudados duros?",
+    "opciones": {
+      "a": "Capa plexiforme externa",
+      "b": "Capa nuclear externa",
+      "c": "Capa plexiforme interna",
+      "d": "Capa de fibras nerviosas"
+    },
+    "correcta": "a",
+    "explicacion": "Los exudados duros son lesiones que se formar por depósitos de lipoproteinas y lipidos debido a una permeabilidad aumentada de los vasos retinianos, que se producen en la retina, mas especificamente en la capa plexiforme externa. Entre las causas se puede mencionar a la retinopatia hipertensiva y a la retinopatia diabética.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-022",
+    "materia": [
+      "oftalmologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Retina",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "Señale cuál de las siguientes afirmaciones es verdadera acerca de la retinopatía diabética:",
+    "opciones": {
+      "a": "La diabetes tipo Il se diferencia de la tipo I por las lesiones retinales.",
+      "b": "La retinopatia proliferativa se diferencia de la no proliferativa porque la primera tiene neovasos.",
+      "c": "Su evolución no depende del control de glucemia y hemoglobina glicosilada.",
+      "d": "Debe tratarse con panfotocoagulacón si el paciente tiene microaneurismas."
+    },
+    "correcta": "b",
+    "explicacion": "La retina es uno de los órganos blancos que se puede dañar producto de la diabetes. Si bien es mas frecuente en la diabetes tipo I (40%) que en la de tipo II (20%), la lesiones son iguales en ambas.\n\nLa retinopatía Diabética puede ser:\n\nNo proliferativa (RDNP): no presenta neovasos en el fondo de ojo. Se clasifica en función de los hallazgos en el fondo de ojo en:\n\nRetinopatía diabética leve: solo microaneurismas. Retinopatía diabética moderada: microaneurismas y menos de 20 hemorragias por cuadrante\n\nRetinopatía diabética proliferativa (RDP): se caracteriza por la presencia de neovascularización papilar, extrapapilar y ocasionalmente en el iris y en la malla trabecular, lo que puede dar lugar a un glaucoma neovascular. El hemovitreo se considera signo de RDP y se manifiesta como una pérdida de visión brusca no dolorosa.\n\nEl tratamiento de la RDNP es únicamente el control de la enfermedad. En cambio, el de la RDP abarca desde Panfotocoagulación en casos de RDP y láser focal en casos de edemas focales. Fármacos antiangiogénicos: en casos de edema macular que no responde al tratamiento con láser focal. Vitrectomía, si se produce un hemovitreo o un desprendimiento de retina traccional.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oftalmo-001-023",
+    "materia": [
+      "oftalmologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Conjuntiva",
+      "Bacterias"
+    ],
+    "enunciado": "Una mujer de 23 años, consulta a la guardia por ojo rojo derecho. Refiere sensación de cuerpo extraño y lagrimeo. Niega antecedentes patológicos, no toma medicación alguna y no tuvo ningún traumatismo. No tiene dolor ni pérdida de la visión. A la exploración ocular presenta hiperemia conjuntival difusa, más intensa lejos del limbo corneal, secreción mucopurulenta y una respuesta inflamatoria importante en la conjuntiva (folículos). El ojo izquierdo no se encuentra afectado. No se palpan adenopatías. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Queratoconjuntivitis hemorrágica.",
+      "b": "Conjuntivitis viral.",
+      "c": "Conjuntivitis alérgica.",
+      "d": "Conjuntivitis bacteriana."
+    },
+    "correcta": "d",
+    "explicacion": "Las conjuntivitis bacterianas se caracterizan por una secreción mucopurulenta. Lo más frecuente es que sean debidas a bacterias grampositivas: Staphylococcus aureus, Staphylococcus epidermidis, Streptococcus pneumoniae y Haemophilus.\n\nEn cambio, las conjuntivitis víricas comienzan con un ojo rojo unilateral con secreción serosa o seromucosa y reacción folicular, con frecuente afectación del otro ojo a los pocos dias. Es tipica la presencia de una adenopatia preauricular dolorosa. Es un cuadro autolimitado de 1-3 semanas de duración.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
