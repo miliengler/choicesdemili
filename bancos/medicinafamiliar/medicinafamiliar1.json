@@ -1,1 +1,1178 @@
-[]
+[
+  {
+    "id": "medfliar-001-001",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 70 años que lo consulta para vacunarse contra el neumococo y que recibió una dosis de vacuna a los 65 años de VACUNAS POLISACÁRIDAS CONTRA NEUMOCOCO DE 23 SEROTIPOS y a los 12 meses de esta VACUNA CONJUGADA DE NEUMOCOCO DE 13 SEROTIPOS? Tiene como antecedentes hipertensión arterial en tratamiento con enalapril y hace una semana recibió gamaglobulina antitetánica por una herida cortante en mano.",
+    "opciones": {
+      "a": "Vacunarlo ahora porque trascurrieron 5 años desde la última dosis con VCN13",
+      "b": "Esperar un mes y luego administrar una única dosis de VCN 20 como refuerzo.",
+      "c": "Esperar 10 años desde la última dosis para vacunarlo VCN 20",
+      "d": "Esperar al menos dos semanas tras la gammaglobulina y luego administrar una única dosis de vacuna VCN 20 como refuerzo."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nLa conducta más adecuada es esperar al menos dos semanas tras la gammaglobulina y luego administrar una única dosis de vacuna conjugada VCN 20 como refuerzo.\n\nLa administración de inmunoglobulinas (como la gammaglobulina antitetánica) puede interferir con la respuesta a vacunas inactivadas y conjugadas. Se recomienda esperar al menos 2 semanas para asegurar una respuesta inmune adecuada.\n\nVacunarlo ahora: incorrecto porque no han pasado 2 semanas desde la gammaglobulina.\n\nEsperar 10 años = no hay recomendación de esperar 10 años, este intervalo aplica solo para repetir PPSV23 si fue aplicada antes de los 65.\n\nEsperar 1 mes = no es necesario esperar tanto; el intervalo recomendado tras inmunoglobulina es de 2 semanas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-002",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Consulta un varón de 84 años por control periódico de salud. Tiene antecedentes de hipertensión arterial, cardiopatía isquémica, hipertrofia benigna de la próstata y tabaquismo (40 p/y). Se encuentra en tratamiento con valsartán/amlodipina, amiloride, aspirina, bisoprolol, doxazosina y clonazepam. Vive solo y no requiere de asistencia para realizar las tareas habituales. Los hijos lo visitan los fines de semana. Al examen físico: adelgazado, vigil, TA 110-70 mmHg, FC 60 lpm, afebril, con disminución del tono muscular, la fuerza conservada en los 4 miembros, sin alteraciones en la evaluación neurológica y la marcha es estable. Presenta algunas escoriaciones en los brazos y en las piernas. Refiere que en algunas ocasiones se ha caído en la vía pública porque se tropezó por el estado de las veredas rotas del barrio. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Evaluar como se administra la medicación y considerar nuevo plan",
+      "b": "Realizar RMN de cerebro",
+      "c": "Derivar al neurólogo",
+      "d": "Reevaluar a las 48 hs con un familiar acompañante"
+    },
+    "correcta": "a",
+    "explicacion": "Las caídas deben incluirse dentro del concepto de inestabilidad, alcanzando la jerarquía de gigante de la geriatría.\n\nSu presentación es muy frecuente. Asimismo, los ancianos de mayor edad que sufren caídas son propensos a sufrir lesiones de mayor envergadura.\n\nLos factores de riesgo que predisponen a caer: trastornos de la marcha, inestabilidad, disminución de la fuerza muscular y tipo y número de medicación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-003",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Cuál de las siguientes recomendaciones es útil para evitar las caídas de los ancianos en el domicilio?",
+    "opciones": {
+      "a": "Utilizar sillas sin apoya brazos",
+      "b": "Instalar barras de agarre en la bañera",
+      "c": "Bajar el inodoro",
+      "d": "Utilizar iluminación tenue"
+    },
+    "correcta": "b",
+    "explicacion": "Los ancianos se caen con frecuencia y el impacto en la salud de estas caídas es mayor.\n\nLas medidas que han demostrado en estudios controlados disminuir el riesgo de caídas son la suspensión de psicofármacos, corrección de la polifarmacia, la implementación de ejercicios de fortalecimiento de los miembros inferiores, y la mejoría del entorno del hogar (mejorar la iluminación, instalación de felpudos o tapetes antideslizantes, inodoro alto, instalar barras de agarre en montadas en la pared o en la bañadera, usar sillas con apoya brazos etc).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-004",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "Paciente de 78 años, con antecedentes de hipertensión arterial, fue evaluada en el consultorio de neurología por presentar trastornos en la memoria anterógrada y fallas en la atención asociado a alucinaciones visuales de al menos 6 meses de evolución, que empeoraron en las últimas semanas, asociadas a bradicinesia y temblor en reposo. Fue evaluada ambulatoriamente indicándose L-dopa. A las 24 horas presentó un síndrome confusional alucinatorio. ¿Qué diagnóstico explica este cuadro?",
+    "opciones": {
+      "a": "Demencia con cuerpos de Lewy",
+      "b": "Demencia vascular",
+      "c": "Demencia asociada a Parkinson",
+      "d": "Demencia de tipo Alzheimer"
+    },
+    "correcta": "a",
+    "explicacion": "Debemos sospechar demencia por cuerpos de Lewy ante un paciente mayor con deterioro cognitivo fluctuante pero progresivo que se acompañe de parkinsonismo y alucinaciones visuales.\n\nAnte un paciente con DCL el tratamiento del parkinsonismo debe hacerse con dosis bajas de levodopa ya que ésta puede empeorar las alucinaciones y el trastorno cognitivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-005",
+    "materia": [
+      "medicinafamiliar",
+      "urologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de urología"
+    ],
+    "enunciado": "Los estudios no han podido demostrar que la utilización del screening de cáncer de próstata permite:",
+    "opciones": {
+      "a": "el aumento del diagnóstico del cáncer de próstata localizado",
+      "b": "la reducción del diagnóstico del cáncer de próstata avanzado",
+      "c": "la reducción de la mortalidad",
+      "d": "el aumento del diagnóstico temprano del cáncer de próstata"
+    },
+    "correcta": "c",
+    "explicacion": "Cáncer de próstata\n\nEs la segunda causa de muerte por cancer, después del cáncer de pulmón en hombres.\n\nTipicamente crece en forma lenta, siendo su incidencia máxima en mayores de 80 años (resulta fatal en un pequeño porcentaje de los pacientes).\n\nDistintos estudios han evaluado la conducta de observar y esperar sin un tratamiento específico en estadios tempranos de pacientes con cáncer de próstata, alcanzándose sobrevidas a cinco y diez años del 98% al 87% respectivamente. La ACS y la American Urological Asociation recomiendan cribado de cáncer de próstata en forma anual para hombres mayores de 50 años, con tacto rectal y PSA anual hasta los 70 años.\n\nCiertos grupos (ACP; AAFP; USPSTF/ recomendación de tipo D) se encuentran en contra del cribado de cáncer de próstata, ya que su tratamiento en estadios tempranos no consigue alterar la historia natural de la enfermedad.\n\nDe los hombres mayores de 65 años que realizan cribado, un 28% necesitará una biopsia como procedimiento posterior, pudiendo la misma tener complicaciones (sangrado, sepsis).\n\nAlgunos de los tratamientos propuestos pueden potencialmente asociarse con impotencia o incontinencia urinaria.\n\nLa American Academy of Family Physician recomienda discutir con el paciente las ventajas y desventajas de realizar el cribado de cáncer de próstata.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-006",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Consulta un varón de 80 años por que percibe deterioro de la memoria. Se encuentra en tratamiento con losartán para su HTA. Trabajó hasta los 75 años como traductor en una editorial prestigiosa. Nos refiere que se olvida el nombre de la novela que está leyendo o cuál era el objeto que iba a buscar cuando se dirige del dormitorio a la cocina, recuerda el nombre de sus hijos y que nunca se perdió en su barrio. El resultado de su desempeño en las pruebas cognitivas de rastreo es normal. Duerme bien y no bebe alcohol. Está orientado en el tiempo y el espacio y es capaz de administrar sus bienes y pagar sus cuentas adecuadamente. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar memantina, estimulación cognitiva y citar a los 2 meses",
+      "b": "Tranquilizar al paciente y proponerle un nuevo encuentro para revaluar el desempeño cognitivo a los dos meses",
+      "c": "Indicar memantina y citar en 3 semanas",
+      "d": "Indicar fuertemente la realización de estimulación cognitiva y la actividad física"
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento de la queja cognitiva incluye: Estimulación cognitiva y actividad física: La evidencia disponible no indica que la estimulación cognitiva ni la actividad física sean beneficiosas para prevenir la progresión a la demencia. No obstante, en la búsqueda de un envejecimiento exitoso, ambas actividades deberían ser estimuladas en todos los adultos mayores.\n\nManejo de los factores de riesgo cardiovascular: Los pacientes con quejas subjetivas de memoria que eventualmente puedan desarrollar un deterioro cognitivo leve no escapan a las recomendaciones generales de búsqueda de los diferentes factores de riesgo cardiovascular.\n\nTratamiento farmacológico especifico: No existe suficiente evidencia para recomendar el uso de anticolinesterásicos en los pacientes con quejas subjetivas de memoria ni de aquellos con deterioro cognitivo leve. Se desaconseja el uso de AINE, terapia de reemplazo hormonal, Ginkgo biloba y vitamina E para el tratamiento del deterioro cognitivo leve.\n\nComunicación: consejo médico y educación ¿Debe comunicarse el diagnóstico? Si el diagnóstico es queja de memoria, el resultado debería ser tranquilizador y proponer un nuevo encuentro para revaluar el desempeño cognitivo en un tiempo prudencial.\n\nSi se concluye que el paciente tiene un deterioro cognitivo leve, no hay estudios que evalúen el impacto psicosocial de conocer el diagnóstico, pero la recomendación sugiere que saberlo potencia la autonomía del paciente, le permite decidir el tratamiento adecuado, entrar en protocolos de investigación, elegir un subrogante ante la eventualidad de la progresión de la enfermedad, entre otros beneficios.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-007",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "Un paciente de 73 años es traído a la consulta por presentar deterioro cognitivo, lentitud y torpeza en los movimientos de ocho meses de evolución. La familia refiere que alterna periodos de lucidez y confusión y que presenta alucinaciones visuales, lo que motivó que su médico de cabecera indicara haloperidol en gotas con aparición de marcado deterioro de la función motora. De acuerdo al cuadro clínico, ¿cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad de Parkinson",
+      "b": "Demencia por cuerpos de Lewy",
+      "c": "Demencia frontotemporal",
+      "d": "Enfermedad de Alzheimer"
+    },
+    "correcta": "b",
+    "explicacion": "Las dos formas mas frecuentes de demencia son la enfermedad de Alzherimer y la demencia de origen vascular.\n\nLas demencias asociadas a la enfermedad de Parkinson pueden aparecer despues de un cuadro parkinsoniano (como en la demencia relacionada con la enfermedad de parkinson) o en forma simultanea o antes como sucede en la demencia por cuerpos de Lewy.\n\nEsta ultima entidad se caracteriza por 1. alucinaciones visuales, 2. parkinsonismo, 3. estado fluctuante de alerta, 4. Trastornos de la conducta en fase REM en algunos casos.\n\nSe describe caracteristicamente el desarrollo de alucinaciones cuando inicia tratamiento con L-DOPA para tratar los sintomas motores y empeoramiento del parkinsonismo muy marcado con el uso de antipsicoticos incluso en dosis bajas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-008",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Una mujer de 70 años, ama de casa, acude a la consulta acompañada por su esposo que informa que hace unos meses se ha vuelto retraída, apática e irritable. Presenta dificultad para acordarse de cosas que habían sucedido el día anterior y problemas para calcular el dinero al ir de compras. A la evaluación está desorientada en tiempo y espacio, desprolija en su vestimenta, lúcida pero notoriamente ansiosa y con dificultad para encontrar las palabras para expresarse. No se detectaron alteraciones en el examen físico. Todos los análisis de laboratorio dieron negativos, pero una tomografía computada mostró una marcada atrofia cortical y, un Mini Mental Test de Folstein arrojó un puntaje de 19. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Sindrome confusional agudo, tratamiento de su causa. Generar un ambiente familiar para el paciente",
+      "b": "Cuadro depresivo, inicio de tratamiento con fármacos antidepresivos",
+      "c": "Síndrome demencial (compatible con enfermedad de Alzheimer), inicio de tratamiento de los sintomas cognitivos y no cognitivos",
+      "d": "Deterioro cognitivo normal para la edad seguimiento y reevaluación periódica para monitorear la aparición de algún sintoma de enfermedad"
+    },
+    "correcta": "c",
+    "explicacion": "La enfermedad de Alzheimer es la causa más frecuente de demencia.\n\nSe caracteriza por una pérdida de la memoria episódica que progresa gradualmente con alteraciones del lenguaje y visuoespaciales.\n\nEl minimental test de Folstein es el test más utilizado para el tamizaje del deterioro cognitivo. Se puede realizar en 5 a 10 minutos y evalúa 7 dominios. Orientación temporal, orientación espacial, memoria, atención, cálculo, memoria diferida, lenguaje y dibujo.\n\nUn puntaje entre 24 y 30 indica ausencia de deterioro o deterioro leve, entre 18 y 23 deterioro moderado y 17 o menos deterioro cognitivo severo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-009",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "¿Cuál es la diferencia más significativa entre la estrategia de la vacunación entre la VCN20 y la estrategia secuencial VCN13-VPN23?",
+    "opciones": {
+      "a": "Son similares pero su costo es mayor",
+      "b": "El cumplimiento",
+      "c": "Es menos inmunógena en pacientes inmunodeprimidos",
+      "d": "Tiene más efectos adversos locales la VCN 20"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEl esquema secuencial (VCN13-VPN23), si bien ha demostrado ser efectivo para la prevención de la enfermedad neumocócica, tiene como limitaciones para su cumplimiento la dificultad en su aplicación debido la necesidad de aplicar dos vacunas distintas con intervalos variables según la edad y comorbilidades.\n\nLa estrategia con VCN 20 implica una sola dosis, mientras que la secuencia VCN13-VPN23 requiere múltiples visitas y puede tener bajas tasas de cumplimiento al no completarse todas las dosis.\n\nNo hay evidencia de que VCN 20 cause más efectos adversos locales que VCN13-VPN23; de hecho, la tolerabilidad es muy similar entre ambos enfoques.\n\nEn adultos, VCN 20 ha demostrado ser no inferior en inmunogenicidad frente a los serotipos comunes del VCN13 y también a VPN23 para los adicionales; no hay datos que indiquen menor eficacia en inmunodeprimidos.\n\nLos análisis económicos proyectan que VCN20 es incluso más costo-efectiva que la combinación VCN13 + VPN23, con costos globales menores y prevención de más casos de enfermedad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-010",
+    "materia": [
+      "medicinafamiliar",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Metabólica ósea"
+    ],
+    "enunciado": "Una paciente de 65 años consulta por dolor lumbar de 4 meses de evolución. De la anamnesis surgen como antecedentes tabaquismo de 20 cigarrillos/día y fractura de muñeca un año atrás. El examen físico es normal y su peso es de 55 kg. De acuerdo al diagnóstico presuntivo ¿Cuál de los siguientes estudios deben solicitarse en primera instancia?",
+    "opciones": {
+      "a": "Radiografia de tórax y determinación de calcemia",
+      "b": "Estudio de la densidad mineral ósea (DMO)",
+      "c": "Centellograma óseo corporal total y determinación en sangre de marcadores tumorales",
+      "d": "Tomografia axial computada de columna sin contraste y determinación de hidroxiprolina urinaria"
+    },
+    "correcta": "b",
+    "explicacion": "Osteoporosis\n\nLa fuerza de tareas canadiense concluye que existe evidencia adecuada para recomendar rastreo de osteoporosis en mujeres posmenopaúsicas (recomendación tipo B), con la finalidad de identificar pacientes con baja densidad mineral ósea, cuyo tratamiento pueda disminuir el riesgo de fracturas (grado A).\n\nLa densitometría ósea de columna lumbar y cuello femoral parece justificada en mujeres mayores de 65 años, cuyo peso sea menor de 60kg, con antecedentes de una fractura o un rastreo patológico en cuestionarios específicos.\n\nEl intervalo entre rastreos depende de los resultados de la densitometria. Sin embargo, no deberia realizarse antes de los dos años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-011",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Consulta una paciente de 77 años acompañada por su hija preocupada quien le cuenta que tuvo algunas caídas en el último año, al levantarse de la cama por la noche, al tropezar con una alfombra en el living, y otra por llevarse por delante una silla en su dormitorio, en todas las oportunidades no presentó lesiones. Desde entonces tiene miedo de quedarse sola. ¿Cuál de las siguientes maniobras es correcta para evaluar a la paciente?",
+    "opciones": {
+      "a": "Test de saturación en caminata de 6 minutos",
+      "b": "Prueba de \"levántate y anda\"",
+      "c": "Maniobra de Lasègue",
+      "d": "Maniobra de Adams"
+    },
+    "correcta": "b",
+    "explicacion": "Una prueba sencilla y recomendada como herramienta práctica para la evaluación inicial de la marcha es la que se denomina \"Levántate y anda\" (traducción del inglés \"Get up and go\").\n\nPara realizarla se le solicita al paciente: 1) \"Levántese de su silla\" (en lo posible, ésta no debería tener apoyabrazos), 2) \"Camine hacia delante\" (3 metros aproximadamente), 3) \"Dé la vuelta, camine hacia su silla nuevamente y siéntese\".\n\nMientras el paciente realiza la prueba, el médico debe evaluar el pasaje de la posición sentado a parado (es normal si el paciente se para en un único movimiento sin usar las manos), las características de los pasos (es decir, si son normales, si son pequeños, discontinuos e inseguros, etc.), la estabilidad al caminar y el equilibrio al sentarse.\n\nSe considera que la prueba es anormal si dura más de 15 segundos o si existe incapacidad parcial, es decir, que el paciente requiere alguna maniobra de adaptación para no caerse: uso del apoyabrazos de la silla al incorporarse, tambaleo, etc., o total (el paciente no puede incorporarse si no recibe ayuda de otra persona).\n\nUna prueba anormal predice una mayor incidencia de caídas recurrentes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-012",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "¿Cuál es el esquema de vacunación neumocócica de un adulto sano de 66 años de acuerdo a la estrategia argentina de inmunización de vacuna neumocócica en adultos mayores?",
+    "opciones": {
+      "a": "Una dosis de vacuna neumocócica conjugada de 13 serotipos y al año una dosis de vacuna neumocócicapolisacarida de 23 serotipos.",
+      "b": "Una dosis única de vacuna polisacárida de 23 serotipos",
+      "c": "Una dosis única de vacuna conjugada de 20 serotipos.",
+      "d": "Una dosis de vacuna polisacárida de 23 serotipos es suficiente."
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEdad >= 65 años, sin antecedente de vacunación neumocócica previa: 1 dosis de VCN20 (reemplaza el esquema previo con VCN13 + VPN23)\n\nYa no se aplica la estrategia secuencial con VCN13 seguida de VPN23 para este grupo. Ese enfoque fue reemplazado por la estrategia más simple y efectiva con VCN20 como única dosis requerida.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-013",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "En la evaluación de una mujer de 79 años realiza una visita a su casa para conocer como está acondicionado su hogar. Usted observa que en el living tiene una alfombra de decoración y dos mesas ratonas. En el baño tiene una bañera alta. En el dormitorio hay una cama con respaldo, dos mesas de luz y un placard empotrado. Tiene los ambientes iluminados con una luz tenue. ¿Cuál de las siguientes sugerencias realiza para reducir el riesgo de caídas en el hogar?",
+    "opciones": {
+      "a": "Mejorar la iluminación de los espacios, retirar los muebles pequeños y las alfombras de decoración, colocar barras de agarre en el baño y recortar la bañera",
+      "b": "Mejorar la iluminación de los espacios y contratar a un cuidador confiable.",
+      "c": "Mejorar la iluminación de los espacios, sacar los muebles pequeños y recortar la bañera",
+      "d": "Mejorar la iluminación de los espacios, colocar barras de agarre en el baño y recortar la bañera"
+    },
+    "correcta": "a",
+    "explicacion": "Hay evidencias que indican que la evaluación y la intervención sobre estos pacientes reducen el riesgo de caer.\n\nLas intervenciones que demostraron ser efectivas son: terapia física y ejercicios; reducción de la medicación; acondicionamiento del hogar (riesgos del entorno escaleras, barras de agarre, objetos no asegurados, alfombras, mala iluminación, zapatos que no ajustan bien, pavimentos irregulares y superficies resbaladizas).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-014",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Cuál de las siguientes situaciones NO está asociada específicamente a un mayor riesgo de caídas en personas mayores?:",
+    "opciones": {
+      "a": "Déficit visual",
+      "b": "Polifarmacia",
+      "c": "Artrosis",
+      "d": "Osteoporosis"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos.\n\nLa osteoporosis se asocia a caídas, pero no produce un aumento del riesgo de estas, por lo que es la opción que hay que seleccionar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-015",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Matilde de 77 años de edad, es traída por su familia que relata que en los últimos meses la notan más retraída, ya no sale de la casa desde que en una salida se perdió en el barrio. Tiene antecedentes de Hipertensión Arterial desde hace 8 años controlada con Enalapril e Hidroclorotiazida. Toma aspirina 100 mg. desde hace 2 años, en que tuvo el primero de dos accidentes isquémicos transitorios. En la evaluación, tarda en responder, luce triste. Se le realiza un Mini Mental Test que da 17/30. El examen neurológico no revela déficit motor. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Demencia",
+      "b": "ACV en área no motora",
+      "c": "Depresión",
+      "d": "Sindrome Confusional"
+    },
+    "correcta": "a",
+    "explicacion": "El caso clínico expuesto nos hace sospechar en un cuadro de demencia.\n\nEl diagnóstico de la demencia es clínico y se realiza por la anamnesis y pruebas neuropsicólogicas.\n\nEl diagnóstico de demencia requiere de múltiples déficits cognitivos que incluyen:-Alteración de la memoria (imprescindible) y Uno o más de los siguientes: -Afasia-Apraxia-Agnosia\n\n• Alteración en funciones ejecutivas.\n\nLa alteración cognitiva: - Debe tener suficiente gravedad para causar un deterioro significativo de la actividad personal, social o laboral.\n\n- Debe presentar un déficit respecto al nivel previo cognitivo-funcional de la persona.\n\n- No debe estar causada por otro trastorno distinto de la demencia («delirium», enfermedad psiquiátrica, procesos focales cerebrales u otros)\n\nEn el MMSE de 30 puntos una puntuación igual o menor a 23 indicarian la presencia de un déficit cognitivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-016",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "La tríada clínica de la enfermedad de Hakim Adams consiste en:",
+    "opciones": {
+      "a": "Trastornos de la marcha, demencia e incontinencia urinaria",
+      "b": "Diadococinesia, demencia e incontinencia urinaria",
+      "c": "Cefalea, déficit visual y edema de papila",
+      "d": "Cefalea, deterioro del nivel de conciencia y marcha parkinsoniana"
+    },
+    "correcta": "a",
+    "explicacion": "La enfermedad de Hakim Adams o hidrocefalia normotensiva es un sindrome infrecuente, que tiene un tratamiento especifico.\n\nLa clinica se compone por trastornos en la marcha (apraxica o ataxica), demencia (con mayor afectación de las funciones ejecutivas) e incontinencia urinaria.\n\nEn las imágenes se evidencia hidrocefalia comunicante. El LCR no presenta particularidades y el tratamiento se realiza con drenaje lumbar, luego seguimiento para evaluar la necesidad o no de un drenaje permamente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-017",
+    "materia": [
+      "medicinafamiliar",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Metabólica ósea"
+    ],
+    "enunciado": "¿Cuál de los siguientes es el mejor predictor de riesgo de fractura vertebral osteoporótica en personas sin fracturas?",
+    "opciones": {
+      "a": "Baja densidad mineral ósea en raquis lumbar",
+      "b": "Tabaquismo",
+      "c": "Hipercalcemia",
+      "d": "Bajo indice de masa corporal"
+    },
+    "correcta": "a",
+    "explicacion": "El factor predictivo más preciso de fractura de vertebral o cadera osteoporótica es la densidad mineral ósea en raquis lumbar o en la cadera medida con radioabsorciometría de doble energia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-018",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Qué debe utilizarse para realizar una evaluación cognitiva objetiva formal, ante un diagnóstico de demencia?",
+    "opciones": {
+      "a": "El Mini Mental Test de Folstein",
+      "b": "El test de CAGE",
+      "c": "El cuestionario PHQ9",
+      "d": "La escala de Barthel"
+    },
+    "correcta": "a",
+    "explicacion": "Entre las opciones:\n\nEl Mini Mental State Examination (MMSE) de Folstein (respuesta correcta) es una de las baterías breves más difundidas; sin embargo, es poco sensible para detectar alteraciones cognitivas leves. Existen dos versiones, de 30 y de 35 puntos respectivamente, siendo la de 30 puntos un instrumento más útil para comparaciones internacionales. Sus items exploran 5 áreas cognitivas: Orientación, Fijación, Concentración y Cálculo, Memoria y Lenguaje. El punto de corte más ampliamente aceptado y frecuentemente empleado para el MMSE de 30 puntos es 23; las puntuaciones iguales o menores que esta cifra indicarían la presencia de un déficit cognitivo.\n\n• Cuestionario para Depresión (PHQ9): herramienta puede ser útil para establecer un dx formal de depresión, para ayudar en la decisión de iniciar tratamiento específico y monitorizar su tratamiento.\n\n• El indice de Barthel es un instrumento ampliamente utilizado para la valoración de la discapacidad física y mide la capacidad de la persona para la realización de diez actividades básicas de la vida diaria, obteniéndose una estimación cuantitativa del grado de dependencia del sujeto.\n\n. El cuestionario CAGE se usa para comprobar la existencia de un trastorno por consumo de alcohol en adultos. No se usa para diagnosticar la enfermedad, sino solo para indicar si pudiera existir un problema.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-019",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Virus respiratorios / Influenza"
+    ],
+    "enunciado": "Respecto a la vacuna de influenza en adultos mayores ¿Cuál de las siguientes opciones es correcta?",
+    "opciones": {
+      "a": "No tiene indicación en pacientes EPOC que fuman, ya que no tiene efectividad en esta población",
+      "b": "Está contraindicada en pacientes inmunocomprometidos por ser una vacuna a virus atenuado",
+      "c": "Está indicada en todos los pacientes mayores de 65 años, anualmente en otoño",
+      "d": "Es frecuente que produzca efectos adversos serios como hipersensibilidad y afectación neurológica"
+    },
+    "correcta": "c",
+    "explicacion": "Las infecciones afectan negativamente la calidad de vida de los adultos mayores. Los virus de la influenza A y B producen fundamentalmente enfermedad respiratoria, con mayor riesgo de hospitalización y complicaciones (respiratorias, cardiovasculares, neurológicas, descompensación de enfermedades subyacentes, entre otras) en niños, ancianos y grupos de alto riesgo. El 90% de las muertes durante la circulación del virus de la influenza estacional se producen en adultos mayores.\n\nLas complicaciones más habituales de la influenza son la neumonitis primaria (por el mismo virus) y la neumonia bacteriana secundaria, descompensación de enfermedades crónicas (insuficiencia cardiaca y diabetes). También existe evidencia de la asociación entre la infección por influenza y el infarto agudo de miocardio (IAM) y el accidente cerebrovascular (ACV).\n\nLa eficacia de la vacunación para prevenir complicaciones por influenza es del de 58% en adultos mayores de 65 años. En la Argentina, las indicaciones de vacunación de influenza incluye a todos los adultos mayores de 65 años. Deben recibir una dosis de influenza anual en otoño.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-020",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Ud. trabaja en la dirección de un club social y deportivo, como asesor médico, donde se desarrollan diferentes actividades para adultos mayores. Desde la cooperadora le proponen modificar el entorno en donde las personas adultas realizan estas actividades. Las modificaciones incluyen espacios seguros para caminar, con señalizaciones y la disminución de obstáculos. Ud. le responde con la siguiente afirmación:",
+    "opciones": {
+      "a": "Los adultos mayores son naturalmente olvidadizos y con menor capacidad de aprendizaje de su entorno, por lo cual no accederá a la propuesta",
+      "b": "Considera fuertemente la recomendación dado que entiende que podrá implementar programas que mejoren condiciones de salud (cardiorrespiratoria, la fuerza muscular y el equilibrio).",
+      "c": "Considera estudiar la propuesta entendiendo que la movilidad del adulto mayor no tiene relación con el entorno ni su adecuación, sino que es una capacidad intrinseca de cada persona.",
+      "d": "Los adultos mayores por su edad representan una población con fragilidad, realizar las modificaciones propuestas solo pondría en riesgo su salud."
+    },
+    "correcta": "b",
+    "explicacion": "Hay evidencias que indican que la evaluación y la intervención sobre estos pacientes reducen el riesgo de caer. Las intervenciones que demostraron ser efectivas son:\n\n• terapia física y ejercicios\n\n• reducción de la medicación\n\n• acondicionamiento del hogar (riesgos del entorno escaleras, barras de agarre, objetos no asegurados, alfombras, mala iluminación, zapatos que no ajustan bien, pavimentos irregulares, interruptores de luz de difícil acceso y superficies resbaladizas).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-021",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "Usted recibe en su consultorio a Cayetano de 68 años, tabaquista con enfermedad de Crohn para un control. Con respecto a las vacunas refiere haber recibido solamente las de la infancia ¿Qué inmunización debería recibir este paciente?",
+    "opciones": {
+      "a": "Vacuna antineumocócica 13 valente, antigripal, refuerzo doble adulto.",
+      "b": "Vacuna antigripal, antineumocócica 23 valente, refuerzo doble adulto.",
+      "c": "Vacuna antigripal, refuerzo doble adultos, hepatitis B.",
+      "d": "Vacuna antigripal, vacuna doble adultos."
+    },
+    "correcta": "a",
+    "explicacion": "Vacunación en mayores de 65 años:\n\nVacuna antigripal, antineumocócica 13 valente, refuerzo doble adulto.\n\nInfluenza: Todas las muertes relacionadas al virus de influenza se dan en mayores de 60 años. Estudios han reportado entre un 40% a 70% de efectividad de la vacuna, con un mínimo de factores adversos. Está recomendada la vacunación anual durante el otoño a aquellos mayores de 65 años (USPSTF), así como también a cuidadores y trabajadores de la salud.\n\nNeumococo: Se sugiere vacuna antineumocócica en adultos a los 65 años con el siguiente esquema:\n\n• Personas >= 65 años que nunca recibieron vacunas contra neumococo: aplicar VCN13 (vacuna conjugada de neumococo de 13 serotipos) y a los 12 meses aplicar VPN23 (vacuna polisacárida contra neumococo de 23 serotipos).\n\n• Las personas que recibieron previamente VPN23 a partir de los 65 años o más: aplicar a los 12 meses VCN13.\n\n• Personas que recibieron VPN23 antes de los 65 años: aplicar VCN13 con un intervalo a 12 meses cuando tenga 65 años o más y luego aplicar a los 12 meses VPN23 (en un periodo de 5 años tiene que completarse este esquema).\n\nVacuna doble adultos: Por último, se sugiere la vacuna doble adultos (tétanos-difteria) cada diez años. En 1993, un estudio demostró que un refuerzo con una dosis única a los 65 años después de la inmunización de la infancia, sería costo efectivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-022",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "La demencia por cuerpos de Lewy llega a ser en algunas series, la segunda causa de demencia degenerativa del anciano. Respecto a esta patología, ¿cuál de los siguientes enunciados es correcto?",
+    "opciones": {
+      "a": "Es una entidad clinico-patológica caracterizada por la asociación de deterioro mental fluctuante, parkinsonismo y sintomas psicóticos",
+      "b": "El deterioro cognitivo progresa rápidamente",
+      "c": "Los sintomas parkinsonianos son infrecuentes en esta patología",
+      "d": "Los sintomas cognitivos responden muy bien al tratamiento con neurolépticos"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nDemencia por cuerpos de Lewy:\n\nDeterioro cognitivo fluctuante pero progresivo, con afectación principalmente de la atención y las funciones ejecutiva (dificultad para planificar y llevar a cabo tareas complejas) y visuoespacial (dificultad para orientarse en el espacio y copiar dibujos complejos). Existe una preservación de la memoria hasta fases más avanzadas.\n\nSíntomas psicóticos, entre los que predominan las alucinaciones visuales recurrentes. También son frecuentes las alucinaciones auditivas y olfativas, así como las ideas delirantes paranoides.\n\nParkinsonismo: bradicinesia, rigidez, trastorno de la marcha.\n\n• Trastorno del sueño y la vigilia.\n\n• Hipersensibilidad a los neurolépticos: pequeñas dosis de éstos pueden producir excesiva somnolencia y agravar el parkinsonismo, por lo que deben evitarse.\n\n. El deterioro cognitivo progresa lentamente, es fluctuante, existiendo períodos de mejoría que alternan con otros de empeoramiento.\n\n• La demencia por cuerpos de Lewy y la demencia asociada a la enfermedad de Parkinson forman parte del mismo proceso fisiopatológico. La única diferencia entre ambas es el momento en el que se desarrolla el parkinsonismo. Si éste aparece antes de la demencia o durante el primer año tras el desarrollo de ésta se denomina demencia asociada a Parkinson, si aparece más tarde, se denomina demencia por cuerpos de Lewy. Para evitar esta división arbitraria actualmente se prefiere denominar a ambas demencia asociada a Parkinson.\n\nTeniendo en cuenta estas características y definiciones la respuesta correcta es: \"Es una entidad clínico-patológica caracterizada por la asociación de deterioro mental fluctuante, parkinsonismo y síntomas psicóticos\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-023",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Qué medida es considerada el \"sexto signo vital\" de la evaluación geriátrica?",
+    "opciones": {
+      "a": "Time up and go",
+      "b": "Evaluación de la marcha",
+      "c": "Romberg modificado",
+      "d": "Alcance funcional"
+    },
+    "correcta": "b",
+    "explicacion": "Las caidas deben incluirse dentro del concepto de inestabilidad, alcanzando la jerarquía de gigante de la geriatria. Su presentación es muy frecuente. Asimismo, los ancianos de mayor edad que sufren caidas son propensos a sufrir lesiones de mayor envergadura.\n\nSi los ancianos tienen antecedentes de caídas previas el riesgo a caer aumenta a un 60%. Lo mismo ocurre con la edad, los adultos mayores de 85 años tienen mayor riesgo a caer. Si el anciano se encuentra institucionalizado puede caer hasta 1,5 veces al año en promedio.\n\nAdemás de los mencionados, son considerados factores de riesgo que predisponen a caer:\n\n• trastornos de la marcha\n\n• inestabilidad\n\n• disminución de la fuerza muscular\n\n• tipo y número de medicación\n\nLa valoración geriátrica integral es la tecnologia diagnóstica y terapéutica que dispone el médico geriatra para evaluar en forma holistica al paciente anciano, incluyendo aspectos clínicos, psicosociales y funcionales que le permitan un diagnóstico integral. De esta forma, pueden formular un plan de acción destinado al manejo de los problemas de salud identificados. En el desarrollo de esta valoración, deberá considerarse:\n\n• Desempeño o funcionalidad física.\n\n• Estado:\n\n-mental o funcionalidad cognitiva (tamizaje de demencia)\n\n-anímico (tamizaje de depresión)\n\n-nutricional\n\n• Desempeño motor y riesgo para padecer caídas: evaluación de la marcha y el balance.\n\n. Uso de medicamentos (pesquisa de polifarmacia).\n\n• Soporte social y eventual posibilidad de abuso y maltrato.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-024",
+    "materia": [
+      "medicinafamiliar",
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de oftalmología"
+    ],
+    "enunciado": "Un paciente de 67 años sin antecedentes personales ni familiares de relevancia concurre a la consulta. ¿Qué práctica preventiva recomendada debe efectuarse?",
+    "opciones": {
+      "a": "Palpación abdominal",
+      "b": "Test de Snellen",
+      "c": "Auscultación respiratoria",
+      "d": "Eco doppler arterio-venoso de miembros inferiores"
+    },
+    "correcta": "b",
+    "explicacion": "Los trastornos de la agudeza visual son frecuentes en pacientes mayores y se asocian a deterioro de la capacidad funcional. Se recomienda evaluar la agudeza visual para la deteccion de presbicia, cataratas, glaucoma y degeneración macular relacionada con la edad. El tratamiento especifico de estas patologias produce una mejoria funcional del paciente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-025",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Según su etiología, la demencia degenerativa más frecuente es la demencia tipo:",
+    "opciones": {
+      "a": "Vascular",
+      "b": "Alzheimer",
+      "c": "Parkinson",
+      "d": "Mixta"
+    },
+    "correcta": "b",
+    "explicacion": "Las demencias son el conjunto de patologías que generan deterioro cognitivo produciendo alteraciones tanto en la memoria, juicio, comportamiento y estado de ánimo dependiendo el tipo de demencia. En los paises occidentales la demencia mas frecuente es la enfermedad de Alzheimer, luego la demencia secundaria a vasculopatias.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-026",
+    "materia": [
+      "medicinafamiliar",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Prolapso e IU"
+    ],
+    "enunciado": "Consulta una mujer de 73 años por control periódico de salud. Refiere antecedentes de HTA y DLP, EPOC y G3 P3. Nos comenta que habitualmente \"cuando siente ganas de hacer pis y está en camino al baño se le escapa un poco de pis\". Está en tratamiento con losartán 100 mg/día, rosuvastatina 20 mg/dia fluticasona-vilanterol 1 puff/día. Al examen físico presenta como dato positivo un IMC de 41 kg/m2. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar ejercicios de suelo pélvico, plan nutricional para bajar de peso e inyección de toxina botulinica en el músculo detrusor de la vejiga",
+      "b": "Indicar medicación con antimuscarinicos, ejercicios de suelo pélvico y plan nutricional para bajar de peso",
+      "c": "Indicar ejercicios de suelo pélvico, modificar la medicación e indicar plan nutricional para bajar de peso.",
+      "d": "Indicar ejercicios de suelo pélvico, plan nutricional para bajar de peso y realizar sling suburetral"
+    },
+    "correcta": "c",
+    "explicacion": "Incontinencia urinaria: Tratamiento conservador: mediante ejercicios de suelo pélvico, corrección de factores desencadenantes o agravantes (tratar la ITU, modificar la medicación, corregir el estreñimiento, restringir liquidos y adelgazar).\n\nTratamiento farmacológico: para la IUE no existe ningún tratamiento farmacológico efectivo. Para la IUU, el tratamiento de elección son los antimuscarinicos (oxibutinina, trospio, fesoterodina, solifenacina y tolterodina).\n\nTratamiento quirúrgico: el tratamiento de elección para la IUE en la mujer es el sling suburetral y en el varón el esfinter artificial (sacra o del tibial posterior) se emplean cuando fracasa el tratamiento conservador de la IUU, siendo el último recurso la cistectomia con derivación urinaria. La inyección de toxina botulínica en el detrusor o la neuromodulación (sacra o del tibial posterior) se emplean cuando fracasa el tratamiento conservador de la IUU, siendo el último recurso la cistectomía con derivación urinaria.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-027",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Un paciente de 66 años sin antecedentes patológicos consulta para control de salud. Se encuentra lúcido, TA 130-70 mmHg e IMC 22 kg/m2. En cuanto al conjunto de prácticas preventivas recomendadas según la evidencia científica, además del registro anual de la presión arterial, ¿qué recomendaciones le haría a este paciente?",
+    "opciones": {
+      "a": "Medición de peso y altura cada 3 años; vacunas antineumocóccica e influenza anualmente",
+      "b": "Registro de peso anual; registro de altura cada 5 años; evaluación de agudeza visual con gráfica de Snellen y agudeza auditiva por interrogatorio cada 5 años; vacunas antineumocóccica, influenza anual y doble adultos cada 10 años",
+      "c": "Registro de peso y altura cada 3 años; consejo sobre consumo de alcohol y tabaco; consejo sobre prevención de accidentes y caidas; vacunas: antineumococcica e influenza anualmente y Doble adultos cada 5 años.",
+      "d": "Medición de peso y altura cada 3 años; evaluación anual de agudeza visual con gráfica de Snellen y auditiva por Interrogatorio; consejo sobre prevención de accidentes y caidas; vacunas contra influenza anual, doble adultos cada 10 años y antineumococcica"
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes mayores a 65 años se recomienda como medidas de tamizaje las siguientes: Registro de la tensión arterial anual, peso y altura cada 3 años.\n\nEvaluación de la agudeza auditiva, de la agudeza visual, evaluación del riesgo de caidas.\n\nEntre las inmunizaciones debe incluirse la vacuna contra el neumococo (única dosis), influenza (anual) y doble adultos cada 10 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-028",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "María de 68 años de edad, consulta preocupada porque su esposo le remarca sus olvidos frecuentes, que está repetitiva y que está lenta en la resolución de los problemas de la vida cotidiana. En su evaluación, objetiva un deterioro de la función de la memoria y preservación de sus otros dominios cognitivos, sin demencia evidente ni alteración de su actividad habitual. ¿Cómo define el problema?",
+    "opciones": {
+      "a": "Síndrome confusional agudo",
+      "b": "Uso de drogas psicoactivas",
+      "c": "Depresión",
+      "d": "Deterioro cognitivo leve"
+    },
+    "correcta": "d",
+    "explicacion": "El deterioro cognitivo leve es un deterioro en la cognición que no produce repercusión funcional (no hay compromiso de las actividades habituales).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-029",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la conducta inicial más adecuada con una paciente de 80 años que es traída a la consulta por su hija quien le refiere que su madre se olvida de las cosas, se ha perdido en el barrio en una oportunidad y pasa la mayor parte del día mirando televisión?",
+    "opciones": {
+      "a": "Valorar con pruebas el deterioro cognitivo",
+      "b": "Solicitar interconsulta con psiquiatria",
+      "c": "Realizar control evolutivo ya que tiene sintomas del envejecimiento normal",
+      "d": "Solicitar tomografía de cerebro con contraste"
+    },
+    "correcta": "a",
+    "explicacion": "A la hora de hacer el diagnóstico diferencial del paciente con quejas subjetivas de memoria del que tiene deterioro cognitivo leve, debe considerarse al paciente como una totalidad, de manera que debe ser evaluado mediante una valoración geriátrica integral. Se debe confeccionar una historia minuciosa, interrogando a familiares o personas cercanas. En la evaluación no pueden faltar algunas pruebas neuropsicológicas y pruebas de desempeño.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-030",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "Una mujer de 65 años, sin antecedentes patológicos relevantes, lo consulta con respecto a la indicación de vacunación contra el neumococo. Refiere haber recibido hace 4 semanas una dosis de la vacuna polisacárido de 23 serotipos (VPN23). ¿Cuál es la conducta más adecuada respecto al esquema de vacunación contra el neumococo?",
+    "opciones": {
+      "a": "Administrar a las 8 semanas de recibir la VPN23 una dosis de vacuna conjugada de serotipos (VCN 13)",
+      "b": "Administrar dentro de 5 años una dosis de VCN13 y a las 8 semanas una dosis de V PN23.",
+      "c": "Reiniciar el esquema nuevamente con una dosis de VCN13 y a las 8 semanas una dosis de V PN23.",
+      "d": "Administrar al año de recibir la VPN23, una dosis única de VCN20"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEn esta paciente de 65 años que recibió PPSV23 hace 4 semanas, la conducta correcta es administrar una dosis única de VCN20 al cumplirse 1 año de esa aplicación.\n\nPor qué no son correctas las otras opciones:\n\n. A las 8 semanas: Este intervalo solo aplica cuando se da primero la vacuna conjugada (PCV) en personas de alto riesgo, no cuando PPSV23 se administra primero.\n\n. Reiniciar esquema: No es necesario reiniciar, se continúa el esquema respetando intervalos.\n\n• A los 5 años: No se espera 5 años; ese intervalo aplica solo para una segunda dosis de PPSV23 cuando la primera se administró antes de los 65 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-031",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Consulta una mujer de 72 años por alteraciones en la memoria y que en las últimas semanas se siente frustrada por no reconocer a la gente del barrio. Tiene antecedentes de dislipemia e hipertensión en tratamiento farmacológico. Refiere que no recuerda con claridad algunos hechos recientes y que en ocasiones tiene dificultades en la fluidez verbal y para encontrar las palabras correctas. Nos comenta que está teniendo dificultades para realizar actividades como cocinar y ordenar el dormitorio. Se encuentra vigil, orientada en tiempo, sin déficit motor agudo, pares craneanos sin alteraciones y sin signos meníngeos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Queja cognitiva",
+      "b": "Enfermedad de Alzheimer",
+      "c": "Demencia vascular",
+      "d": "Demencia frontotemporal."
+    },
+    "correcta": "b",
+    "explicacion": "La primera función cognitiva en alterarse es la memoria. La memoria más afectada es la reciente (amnesia anterógrada). Éste es el principal rasgo distintivo entre la enfermedad de Alzheimer y otras demencias.\n\nPosteriormente aparecen alteraciones en otras funciones: Lenguaje: pérdida de la fluidez verbal con dificultad para encontrar las palabras.\n\nOrientación temporal y espacial. Praxias: con dificultad para realizar actividades inicialmente complejas (cocina, bricolaje, etc.) y posteriormente más sencillas (vestido, baño, etc.).\n\nFunción visuoespacial: en fases avanzadas aparece dificultad para reconocer objetos y caras (no reconocen a sus familiares).\n\nTrastornos afectivos y conductuales: es frecuente la depresión desde estadios iniciales. Posteriormente pueden aparecer alteraciones conductuales como apatia, irritabilidad o agresividad. También pueden aparecer ideas delirantes y alucinaciones (raros al inicio, a diferencia de la demencia por cuerpos de Lewy).\n\nEl estadio final es similar para todas las demencias, con dependencia para todas las actividades de la vida diaria, negativa a la alimentación, pérdida del control de esfinteres o pérdida de la deambulación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-032",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Qué conducta adoptaría con un paciente de 72 años sin antecedentes patológicos que consulta porque tiene olvidos frecuentes y le cuesta recordar donde deja las cosas? Refiere problemas de atención y no puede concentrarse en lo que hace. Su esposa comenta que \"ya no es el de antes\". No toma medicación. El examen físico es normal.",
+    "opciones": {
+      "a": "Realizar Minimental Test y evaluar depresión",
+      "b": "Solicitar interconsulta a psiquiatria",
+      "c": "Brindar tranquilidad, vincular el cuadro a la edad y el estrés",
+      "d": "Solicitar tomografia computada de cerebro."
+    },
+    "correcta": "a",
+    "explicacion": "Los olvidos y otras alteraciones cognitivas son frecuentes en las poblaciones adultas. La demencia es un trastorno de la cognicion que interfiere en el funcionamiento en la vida diaria con perdida de la independencia. Tiene inicio gradual y curso progresivo y no alteran el nivel de alerta. Para la valoracion del estado cognitivo es util la utilizacion de escalas neurologicas validadas como el Mini Mental State Examination o el Montreal Cognitive Assesment. Entre los diagnosticos diferenciales del trastorno coginitivo se deben incluir el delirium caracterizado por un comienzo agudo, un curso fluctuante y primordialmente por inatencion y enfermedades psiquiatricas como la depresion mayor, trastorno bipolar o ezquizofrenia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-033",
+    "materia": [
+      "medicinafamiliar",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Aorta"
+    ],
+    "enunciado": "Lo consulta un varón de 74 años, asintomático, que fumó hasta hace dos años 20 paquetes/año y tiene historia de hipertensión arterial desde hace 20 años en tratamiento. ¿Qué medida de rastreo está recomendada para esta persona?",
+    "opciones": {
+      "a": "Ergometria",
+      "b": "Ecocardiograma Doppler",
+      "c": "Ecografia de aorta abdominal",
+      "d": "Radiografía de toráx"
+    },
+    "correcta": "c",
+    "explicacion": "Rastreo de aneurisma abdominal: Con respecto a su rastreo, se recomienda realizar una ecografía abdominal por única vez en varones de entre 65-75 años y en mujeres que alguna vez fumaron.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-034",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Qué estudia la Geriatría?",
+    "opciones": {
+      "a": "Es la rama de la medicina que se ocupa de los problemas de salud de los adultos mayores",
+      "b": "Es la rama de las ciencias médicas que estudia la forma de envejecer de una población",
+      "c": "Es la rama de las ciencias médicas que se ocupa del envejecimiento poblacional",
+      "d": "Es la rama de la medicina que se ocupa del estudio del envejecimiento"
+    },
+    "correcta": "a",
+    "explicacion": "Geriatria: es la rama de la medicina que se ocupa de los problemas de salud de los adultos mayores",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-035",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Una mujer de 67 años, sin antecedentes patológicos, es traída al servicio de urgencias por cuadro clínico de tres semanas de evolución que se exacerbó durante los últimos cinco días, consistente en sensación rotacional externa que se incrementa con los cambios de posición y mejora con el reposo, asociado a bradilalia, bradipsiquia, episodios de desorientación e insomnio de conciliación. Al examen neurológico presenta compromiso cerebeloso, de la memoria y del lenguaje con conductas utilitarias. Se realiza RMN de cerebro con y sin contraste que evidencia hiperintensidad en putamen y cabeza de caudado en T2. En el EEG informa ondas trifásicas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Encefalitis de Hashimoto",
+      "b": "Enfermedad priónica Creutzfeldt-Jakob",
+      "c": "Leucoencefalopatia rápidamente progresiva",
+      "d": "Encefalitis mediada inmunológicamente"
+    },
+    "correcta": "b",
+    "explicacion": "La enfermedad priónica más frecuente es la de Creutzfeldt-Jakob. Existe una forma esporádica (más frecuente), una familiar y la nueva variante (derivada del consumo de ganado afectado por encefalopatia espongiforme bovina).\n\nLa clinica incluye: Demencia rápidamente progresiva (encamados en pocos meses) de inicio aproximadamente a los 65 años. Signos corticales. Trastornos del movimiento: mioclonias, ataxia, parkinsonismo, etc. El diagnóstico se realiza mediante la clinica y los hallazgos típicos en las pruebas complementarias: RM: hiperintensidad en putamen y cabeza de caudado en T2. EEG: ondas trifásicas. Punción lumbar: proteina 14.3.3 elevada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-036",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de demencia en las personas mayores de 65 años?",
+    "opciones": {
+      "a": "Demencia por Parkinson.",
+      "b": "Demencia vascular.",
+      "c": "Demencia frontotemporal.",
+      "d": "Enfermedad de Alzheimer."
+    },
+    "correcta": "d",
+    "explicacion": "La Enfermedad de Alzheimer es la demencia más frecuente y su incidencia aumenta con la edad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-037",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "Concurre al Centro de salud una mujer de 66 años para control de salud. Refiere antecedentes de hipotiroidismo medicada con levotiroxina 150 mcg/dia. De acuerdo a las recomendaciones de inmunización para adultos mayores. ¿Cuáles son las vacunas que se recomiendan para este grupo etario?",
+    "opciones": {
+      "a": "Vacuna contra influenza en forma anual, refuerzo de la doble de adultos (DT) cada 5 años.",
+      "b": "Refuerzo de doble adulto (DT) cada 10 años.",
+      "c": "Vacuna contra el neumococo e influenza ambas en forma anual y doble adultos cada 10 años.",
+      "d": "Vacuna contra el neumococo, influenza y refuerzo de doble adulto (DT)."
+    },
+    "correcta": "d",
+    "explicacion": "Respecto de las inmunizaciones deben indicarse vacunas contra el neumococo, influenza (anual) y el refuerzo de la doble adultos cada diez años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-038",
+    "materia": [
+      "medicinafamiliar",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Jaime de 76 años está cursando el segundo día postoperatorio de reemplazo total de cadera izquierda. Durante la noche presentó síndrome confusional sin excitación psicomotriz. Tiene colocada una sonda vesical que drena orina clara. Señale la conducta a seguir:",
+    "opciones": {
+      "a": "Evalúa la posibilidad de administrar flumazenil.",
+      "b": "Evalúa la medicación que está recibiendo.",
+      "c": "Descartar tromboembolismo pulmonary.",
+      "d": "Solicita una TAC de cerebro."
+    },
+    "correcta": "b",
+    "explicacion": "El caso nos presenta un paciente con diagnóstico probable de \"delirium o síndrome confusional\" es una alteración del nivel de conciencia con inversión del ciclo vigilia-sueño, de inicio brusco y curso fluctuante (no progresivo como la demencia) en el que alternan fases de somnolencia con otras de agitación que aparece generalmente en pacientes ancianos con una enfermedad o condición intercurrente como infecciones, alteraciones metabólicas o fármacos (como, por ejemplo, las benzodiacepinas).\n\nOcurre con mucha frecuencia en pacientes hospitalizados (del 10% al 30% de los pacientes hospitalizados por causas médicas). La principal afectación se produce a nivel de la atención y del alerta, lo que produce una repercusión en todas las áreas cognitivas.\n\nPuede manifestarse como dos cuadros clínicos: la forma hiperactiva: en la que el paciente presenta agitación psicomotriz (es la más frecuente); y la forma hipoactiva: en la que lo que domina es la inhibición psicomotriz con tendencia a la somnolencia.\n\nLas alucinaciones suelen aparecer con frecuencia. Generalmente es reversible una vez que se elimina el factor desencadenante. El tratamiento se realiza con medidas no farmacológicas (poner al paciente cerca de la ventana con objetos personales que le ayuden a orientarse, evitar sujeciones innecesarias, acortar el ingreso en la medida de lo posible, evaluar fármacos que esta tomando, etc.). Si esto no es suficiente, se utilizan fármacos, de preferencia los antipsicóticos (haloperidol en gotas o vía parental), se deben evitar las benzodiacepinas y medicaciones de perfil sedante porque empeoran el cuadro.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-039",
+    "materia": [
+      "medicinafamiliar",
+      "urologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "En la consulta de un varón de 70 años le refiere que tiene retraso en el inicio de la micción, disminución de la fuerza y del calibre miccional y goteo posmiccional. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Cálculos vesicales",
+      "b": "Vejiga neurogénica.",
+      "c": "Sintomas obstructivos de HBP",
+      "d": "Sintomas irritativos de HBP"
+    },
+    "correcta": "c",
+    "explicacion": "Síntomas obstructivos de HBP (de vaciado): Retraso en el inicio de la micción. Disminución de la fuerza y el calibre miccional. Goteo posmiccional. Sensación de vaciado incompleto (tenesmo) y necesidad de prensa abdominal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-040",
+    "materia": [
+      "medicinafamiliar",
+      "urologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de urología"
+    ],
+    "enunciado": "Un varón de 67 años lo consulta porque quiere asesorarse sobre el rastreo de cáncer de próstata, ya que los amigos refieren haberse realizado \"un PSA\" en lo que va del año. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar PSA, realizar tacto rectal y repetirlo cada 2 años hasta cumplir 75 años",
+      "b": "Explicar y discutir con el paciente las ventajas y desventajas de realizar el cribado de câncer de próstata.",
+      "c": "Desaconsejar su rastreo porque es mayor de 65 años",
+      "d": "Solicitar PSA especifico y PSA total de manera anual hasta cumplir los 70 años"
+    },
+    "correcta": "b",
+    "explicacion": "La ACS y la American Urological Asociation recomiendan cribado de cáncer de próstata en forma anual para hombres mayores de 50 años, con tacto rectal y PSA anual hasta los 70 años.\n\nCiertos grupos (ACP; AAFP; USPSTF/recomendación de tipo D) se encuentran en contra del cribado de cáncer de próstata, ya que su tratamiento en estadios tempranos no consigue alterar la historia natural de la enfermedad. De los hombres mayores de 65 años que realizan cribado, un 28% necesitará una biopsia como procedimiento posterior, pudiendo la misma tener complicaciones (sangrado, sepsis).\n\nAlgunos de los tratamientos propuestos pueden potencialmente asociarse con impotencia o incontinencia urinaria. La American Academy of Family Physician recomienda discutir con el paciente las ventajas y desventajas de realizar el cribado de cáncer de próstata.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-041",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "¿Qué prácticas preventivas corresponden a una paciente mujer de 70 años no fumadora sin antecedentes de importancia con controles de salud al día?",
+    "opciones": {
+      "a": "Rastreo de cáncer de mama; rastreo de cáncer de colon y rastreo de osteoporosis.",
+      "b": "Rastreo de cáncer de mama; rastreo de cáncer de colon y rastreo de aneurisma de aorta.",
+      "c": "Rastreo de cáncer de mama; rastreo de cáncer de colon y rastreo de cáncer de cuello uterino.",
+      "d": "Rastreo de cáncer de mama y rastreo de aneurisma de aorta."
+    },
+    "correcta": "a",
+    "explicacion": "Rastreo de condiciones oncológicas\n\nCáncer de mama\n\nEl 45% de los casos de cáncer de mama ocurren en pacientes mayores de 65 años. El cribado de cáncer de mama con un examen manual y mamografia, desde los 50 hasta los 75 años, es una de las recomendaciones más fuertemente establecidas. Pareceria razonable continuar con el cribado de cáncer de mama con un examen fisico y mamografia anual o bienal, hasta que la expectativa de vida de la paciente sea menor a cinco años, momento en el cual podría ser suspendido. La USPSFT pone como edad limite (máxima) a los 75 años.\n\nCáncer colorrectal\n\nEs la segunda causa de muerte por cáncer, calculándose que la incidencia en mayores de 65 años es de 337,1 por 100 000. El University of Minnesota Trial consiguió una reducción de la mortalidad del 33% en pacientes con sangre oculta en materia fecal (SOMF) positiva (con un seguimiento de 13 años). Se discute si la reducción se debe al rastreo en si, o a las colonoscopias que se realizaron después. Dos estudios de casos controles han demostrado una reducción en la mortalidad por cáncer de colon entre el 59% al 95%, al utilizar como método de cribado la rectosigmoideoscopia. En 1997, la Sociedad Americana de Cáncer (ACS, por sus siglas en inglés) estableció nuevas guías para el cribado de cáncer de colon con videocolonoscopia cada 10 años. La USPSTF recomienda SOMF en forma anual o VCC cada 10 años o ambos en mayores de 50 años. Seria sensato continuar con los rastreos hasta los 75 años, según la expectativa de vida del paciente.\n\nOsteoporosis\n\nLa fuerza de tareas canadiense concluye que existe evidencia adecuada para recomendar rastreo de osteoporosis en mujeres posmenopaúsicas (recomendación tipo B), con la finalidad de identificar pacientes con baja densidad mineral ósea, cuyo tratamiento pueda disminuir el riesgo de fracturas (grado A). La densitometría ósea de columna lumbar y cuello femoral parece justificada en mujeres mayores de 65 años, cuyo peso sea menor de 60kg, con antecedentes de una fractura o un rastreo patológico en cuestionarios especificos. El intervalo entre rastreos depende de los resultados de la densitometria. Sin embargo, no deberia realizarse antes de los dos años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-042",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Usted evalúa un adulto mayor en su esfera cognitiva a través del Minimental test de Folstein. El paciente obtiene un puntaje de 28/30. ¿Qué grado de deterioro cognitivo presenta el paciente según el test?",
+    "opciones": {
+      "a": "Deterioro cognitivo de leve a moderado.",
+      "b": "No existe deterioro cognitivo.",
+      "c": "Deterioro cognitivo moderado a severo.",
+      "d": "Deterioro cognitivo muy severo."
+    },
+    "correcta": "b",
+    "explicacion": "El Mini Mental State Examination (MMSE) de Folstein es una de las baterías breves más difundidas; sin embargo, es poco sensible para detectar alteraciones cognitivas leves. Existen dos versiones, de 30 y de 35 puntos respectivamente, siendo la de 30 puntos un instrumento más útil para comparaciones internacionales. Sus items exploran 5 áreas cognitivas: Orientación, Fijación, Concentración y Cálculo, Memoria y Lenguaje.\n\nEl punto de corte más ampliamente aceptado y frecuentemente empleado para el MMSE de 30 puntos es 23; las puntuaciones iguales o menores que esta cifra indicarian la presencia de un déficit cognitivo.\n\n(REM MSAL 2020, P2486)\n\n27 puntos o más: Normal. La persona presenta una adecuada capacidad cognoscitiva.\n\n23 puntos o menos: Sospecha patológica\n\n12-23 puntos: Deterioro\n\n9-12 puntos: Demencia\n\nMenos de 5 puntos. Fase terminal. Totalmente desorientado. No se reconoce él mismo. Incoherente. Postración.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-043",
+    "materia": [
+      "medicinafamiliar",
+      "urologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de urología"
+    ],
+    "enunciado": "Un varón de 73 años le trae a la consulta una nota realizada por el oncólogo en el que informa la estadificación del cáncer que presenta en la próstata. En el informe dice \"tumor confinado a la próstata que afecta la mitad de un lóbulo, no hay extensión extraprostática, ni de estructuras vecina, no hay afectación ganglionar ni a distancia\". Según el TNM, ¿en que estadio se encuentra la enfermedad del paciente?",
+    "opciones": {
+      "a": "T1c N0 M0",
+      "b": "T2a N0 M0",
+      "c": "T2b N0 M0",
+      "d": "T3a N0 M0"
+    },
+    "correcta": "c",
+    "explicacion": "TNM de cáncer de próstata:\n\nT2 Tumor confinado a la próstata\n\nT2a Menos de la mitad de un lóbulo\n\nT2b La mitad de un lóbulo\n\nT2c Bilateral",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-044",
+    "materia": [
+      "medicinafamiliar",
+      "psiquiatria"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de psiquiatría"
+    ],
+    "enunciado": "¿Cuáles son características propias del Síndrome Confusional Agudo?",
+    "opciones": {
+      "a": "Alteración crónica del estado mental, con conservación de funciones cognitivas e ideación delirante megalómana.",
+      "b": "Alteración transitoria del estado mental, de origen psicógeno, con perturbación en el ritmo sueño vigilia.",
+      "c": "Alteración transitoria del estado mental, de inicio insidioso, con alteraciones en el nivel de atención sin fluctuaciones.",
+      "d": "Alteración transitoria del estado mental, de inicio agudo y curso fluctuante, con alteraciones en el nivel de atención, de origen orgánico."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es: Alteración transitoria del estado mental, de inicio agudo y curso fluctuante, con alteraciones en el nivel de atención, de origen orgánico.\n\nEl Sindrome Confusional Agudo (SCA), también conocido como delirium, es una alteración aguda de la función cerebral que se caracteriza por:\n\nInicio agudo: EI SCA se desarrolla rápidamente, generalmente en cuestión de horas o días.\n\nCurso fluctuante: Los síntomas del SCA pueden variar en intensidad a lo largo del dia, con periodos de mayor claridad y otros de mayor confusión.\n\nAlteraciones en el nivel de atención: La principal caracteristica del SCA es la alteración de la atención, que se manifiesta como dificultad para concentrarse, seguir instrucciones y recordar información reciente.\n\nOtras alteraciones cognitivas: Además de la alteración de la atención, el SCA puede causar otras alteraciones cognitivas, como desorientación, desorganización del pensamiento, alteraciones de la percepción, problemas de memoria y lenguaje.\n\nOrigen orgánico: El SCA es causado por una disfunción cerebral temporal, que puede ser provocada por diversos factores, como infecciones, medicamentos, deshidratación, alteraciones electroliticas, hipoxia, traumatismo craneoencefálico y cirugías.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-045",
+    "materia": [
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Adulto Mayor"
+    ],
+    "enunciado": "Un paciente de 84 años concurre para su control de salud habitual en el mes de marzo. ¿Qué conducta corresponde tomar en relación a las prácticas preventivas?",
+    "opciones": {
+      "a": "Solicitar densitometria ósea, indicar vacuna antigripal, evaluación de la audición y de la visión, interrogar sobre red social",
+      "b": "Solicitar PSA, indicar vacuna antigripal, evaluación de la audición y de la visión, interrogar sobre red social",
+      "c": "Indicar vacuna antigripal, realiza evaluación de audición y visión, evaluar la red social y el riesgo de caidas",
+      "d": "Solicitar ECG, indicar vacuna antigripal, evaluación de la audición y de la visión, interrogar sobre red social"
+    },
+    "correcta": "c",
+    "explicacion": "Según las normas de vacunación del ministerio de salud de la nación esta indicada la vacunación anual para la gripe en todos los pacientes mayores de 65 años.\n\nSe recomienda evaluar la agudeza auditiva y visual para la deteccion de presbicia, cataratas, glaucoma y degeneración macular relacionada con la edad. El tratamiento especifico de estas patologias produce una mejoria funcional del paciente.\n\nLa disminución de la agudeza auditiva produce un deterioro funcional del paciente y se ha asociado con el sindrome confusional y la demencia, por lo que se recomienda el rastreo rutinario.\n\nSe considera importante la evaluacion de la red social en la que se encuentra el paciente (familia, amigos, club de jubilados, etc.) pues da una idea de la contencion y el cuidado que el paciente puede recibir.\n\nLa evaluación del riesgo de caidas es importante pues estas son frecuentes en esta población y asociadas a una elevada morbilidad por fracturas, escaras, miedo a deambular, etc. Se recomienda pedir al paciente que se levante de la silla y camine tres metros hacia adelante y vuelva a sentarse. Si puede realizar la tarea sin dificultades en 15 segundos o menos se considera que el riesgo de caidas es bajo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-046",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál de los siguientes grupos tiene el mayor riesgo de conversión a demencia?",
+    "opciones": {
+      "a": "Pacientes con depresión Mayor",
+      "b": "El deterioro cognitivo leve sin sintomas psiquiátricos",
+      "c": "El deterioro cognitivo leve con sintomas psiquiátricos",
+      "d": "Quejas subjetivas de memoria"
+    },
+    "correcta": "d",
+    "explicacion": "Las quejas subjetivas de memoria son comunes y suelen asociarse con los procesos del envejecimiento. Los estudios de prevalencia han informado que se observan en el 11% de las personas de 65 años y llegan hasta el 88% en los mayores de 85 años.\n\nTodavia existe incertidumbre sobre el significado de la queja subjetiva de memoria, que puede verse en el envejecimiento normal, en ciertos cuadros psicopatológicos (ansiedad o depresión) y también en la declinación cognitiva. En estudios de cohorte (estudios longitudinales de varios años de seguimiento), la asociación entre las quejas de memoria y el posterior desarrollo de demencia es robusta. La asociación de queja cognitiva como predictor de déficits parece ser más evidente en los sujetos con mayor nivel de educación y sugiere una declinación significativa respecto del nivel de funcionamiento anterior.\n\nMuchos adultos mayores pueden percibir el deterioro de la memoria aun cuando el desempeño en las pruebas cognitivas de rastreo sea normal, dado que la sensibilidad de estas pruebas puede no ser lo suficientemente adecuada como para demostrar el deterioro. Entonces las quejas subjetivas de la memoria deben ser tomadas en serio, especialmente si son persistentes, nuevas, o asociadas a factores de riesgo como edad avanzada, antecedentes familiares, o sintomas psiquiátricos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-047",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Una mujer de 62 años es llevada a la guardia por alteraciones de la memoria y del comportamiento. Hace un año que presenta conductas sociales inadecuadas e irritabilidad. Al examen físico se muestra hostil, la TA es de 150-90 mmHg. Tiene un reflejo glabelar positivo. La calificación del Miniexamen del Estado Mental es de 20/30. No tiene rigidez. Su locomoción es normal. Los reflejos tendinosos profundos son 3+ y simétricos. Su fuerza muscular es de 5/5 en todo el cuerpo y no hay déficit sensitivo. La función cerebelosa es normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Demencia por cuerpos de Lewy",
+      "b": "Demencia vascular",
+      "c": "Demencia frontotemporal",
+      "d": "Enfermedad de Alzheimer"
+    },
+    "correcta": "c",
+    "explicacion": "La demencia frontotemporal engloba a las demencias que presentan alteración en el lóbulo frontal. Aparecen en pacientes entre 50-70 años, es mas frecuente en hombres.\n\nLos síntomas son irritabilidad, compulsividad, desinhibición, pérdida de empatia y a veces pérdida del control ejecutivo. En las imágenes se observa atrofia a nivel de la corteza frontal y en la anatomia patológica pueden encontrarse cuerpos de Pick (inclusiones citoplasmaticas que se tiñen con método de plata).\n\nEl tratamiento es sintomático.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-048",
+    "materia": [
+      "medicinafamiliar",
+      "infectologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "¿Cómo indica la administración de vacuna antineumocócica a una paciente de 50 años con diabetes?",
+    "opciones": {
+      "a": "la dosis: la vacuna polisacárida de 23 serotipos (VPN23) y 2a dosis: vacuna conjugada 13 valente (VCN13) con un intervalo minimo de 8 semanas.",
+      "b": "la dosis: vacuna conjugada 13 valente (VCN13) y 2a dosis: la vacuna polisacárida de 23 serotipos (VPN23) con un intervalo minimo de 12 meses.",
+      "c": "Una sola dosis de la vacuna polisacárida de 23 serotipos (VPN23).",
+      "d": "la dosis: vacuna conjugada 13 valente (VCN13) y 2a dosis: la vacuna polisacárida de 23 serotipos (VPN23) con un intervalo minimo de 8 semanas."
+    },
+    "correcta": "b",
+    "explicacion": "Personas de 5 a 64 años:\n\nNo Inmunocomprometidos (cardiopatía crónica, enfermedad pulmonar crónica, diabetes miellitus, alcoholismo, enfermedad hepática crónica, tabaquismo):\n\n.\n\n• 1era dosis: vacuna conjugada 13 valente\n\n• 2da dosis: vacuna polisacárida 23 valente al año de la primera dosis\n\n1er refuerzo: vacuna polisacárida 23 valente a los 65 años (respetando intervalo minimo de 5 años con dosis previa)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-049",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "En la evaluación de una mujer de 77 años usted realiza la siguiente prueba para evaluar la memoria: lee 4 palabras (cuchara, martillo, manzana, jirafa) y la debe asociar a 4 categorías distintas. Durante 5 minutos se realiza una tarea distractora y luego le pide que recupere la información aprendida, en caso de no recordar alguna de las palabras, se facilita el recuerdo con las mismas categorías utilizadas en el aprendizaje. ¿Qué prueba está realizando?",
+    "opciones": {
+      "a": "Memory Impairment Screen",
+      "b": "Montreal Cognitive Assessment",
+      "c": "Prueba de Rey",
+      "d": "Mini Mental State Examination"
+    },
+    "correcta": "a",
+    "explicacion": "EI MIS: Esta prueba emplea el recuerdo libre y facilitado de cuatro palabras. Utiliza técnicas de aprendizaje controlado, requiere que el sujeto busque e identifique las palabras para recordar según categorías (pistas semánticas que favorecen el recuerdo facilitado). Se le presenta una lámina, se lee en voz alta las palabras y se categorizan. Al cabo de 5 minutos se le pide que recupere la información. En caso de no recordar alguna de las palabras, se facilita el recuerdo con las mismas pistas utilizadas en el aprendizaje. Para el puntaje se tiene en cuenta (MIS total: (recuerdo libre x 2) + (recuerdo facilitado).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "medfliar-001-050",
+    "materia": [
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Es traído a su consultorio Alberto, un paciente de 78 años. El familiar refiere que desde hace unos meses está más irritable, se olvida los nombres de las cosas y pierde objetos. Al preguntarle por las actividades de la vida diaria, reconoce que desde hace un par de años fue necesitando asistencia, pero no puede precisar ningún momento en particular. En los test cognitivos tiene fallas generalizadas, con relativa conservación de actividad motora. El paciente se muestra pasivo y no parece darse cuenta de sus problemas. ¿Qué tipo de demencia sospecha?",
+    "opciones": {
+      "a": "Vascular",
+      "b": "Fronto temporal",
+      "c": "Parkinson",
+      "d": "Alzheimer"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad de Alzheimer es la causa mas frecuente de demencia. Se caracteriza por una pérdida de la memoria episódica que progresa gradualmente con alteraciones del lenguaje y visuoespaciales. Algunos elementos ayudan a establecer el diagnostico diferencial, la aparición de trastornos motores tempranos con relativa indemnidad de la memoria sugiere una causa vascular, un sindrome rigido hipokinético sugiere enfermedad de Parkinson. El parkinsonismo asociado a un nivel de alerta fluctuante y alucinaciones sugiere demencia por cuerpos de Lewy. Los trastornos de la conducta tempranos sugieren una demencia frontotemporal",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
