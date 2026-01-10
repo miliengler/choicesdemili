@@ -1,1 +1,634 @@
-[]
+[
+  {
+    "id": "neurocirugia-001-001",
+    "materia": [
+      "neurocirugia",
+      "neurologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Miopatías",
+      "Neonatología"
+    ],
+    "enunciado": "Un niño de 50 días de vida, es traído al consultorio para control de salud. Durante la anamnesis no surge ningún dato familiar, ni perinatalógico relevante; pero el médico nota que el niño presenta hipotonía, debilidad muscular generalizada, masa muscular fina y ausencia de reflejos de estiramiento muscular. Los movimientos extraoculares están conservados. También nota que la progresión ponderal desde el nacimiento no ha sido la adecuada y la madre le refiere que se agota fácilmente al succionar. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Atrofia Muscular Espinal",
+      "b": "Miastenia Grave congénita",
+      "c": "Parálisis cerebral",
+      "d": "Distrofia Muscular de Duchene"
+    },
+    "correcta": "a",
+    "explicacion": "La atrofia muscular espinal es una enfermedad neurodegenerativa que se caracteriza por debilidad y atrofia muscular generalizada con capacidad cognitiva conservada.\n\nLa afección es a nivel de las motoneuronas alfa en el asta anterior de la médula espinal y es la segunda causa de enfermedad autosómica recesiva luego de la fibrosis quística, siendo la causa genética más frecuente de mortalidad en lactantes con una incidencia entre 1/6000 y 1/10000 nacimientos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-002",
+    "materia": [
+      "neurocirugia",
+      "traumatologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Columna vertebral",
+      "General"
+    ],
+    "enunciado": "Consulta en guardia, Sebastián de 35 años por lumbalgia de 5 semanas de evolución. Refiere que el dolor es en la zona lumbar baja a predominio derecho sin irradiación a miembros inferiores. ¿Cuál de las siguientes se considera \"bandera roja\" para tomar conducta?",
+    "opciones": {
+      "a": "Antecedentes familiares de cáncer",
+      "b": "Traumatismo reciente.",
+      "c": "Uso crónico de cannabinoides.",
+      "d": "Uso crónico de estatinas."
+    },
+    "correcta": "b",
+    "explicacion": "Lumbalgia: es fundamental la historia clinica y la exploración física para detectar signos de alarma \"banderas rojas\": edad mayor a 50 años, antecedentes de neoplasia, falta de mejoría con tratamientos habituales, dolor de reposo, fiebre, inmunodepresión, traumatismo previo, osteoporosis, medicación con corticoides, síndrome de cauda equina.\n\nSi no existen, no son necesarias las pruebas complementarias para el diagnóstico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-003",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Fracturas"
+    ],
+    "enunciado": "¿En un traumatismo cráneo facial, cuándo está contraindicado la colocación de una sonda nasogástrica?",
+    "opciones": {
+      "a": "Fractura de órbita y de la rama ascendente del maxilar inferior",
+      "b": "Hemorragia nasal",
+      "c": "Fractura del piso de órbita",
+      "d": "Fractura de base de cráneo"
+    },
+    "correcta": "d",
+    "explicacion": "Ante la sospecha de fractura de base de cráneo está contraindicada la colocación de sonda nasogástrica por peligro de colocar la sonda en regiones del encéfalo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-004",
+    "materia": [
+      "neurocirugia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un niño de 4 años, que luego de un traumatismo en la vía pública, ingresa a guardia y se le diagnosticó traumatismo encéfalo craneano (TEC) con signos de aumento de la presión intracraneana? En el examen físico se encuentra con tensión arterial normal e impresiona normovolémico.",
+    "opciones": {
+      "a": "Hiperventilación.",
+      "b": "Infusión de cristaloides isotónicos",
+      "c": "Craniectomía descompresiva.",
+      "d": "Administrar corticoides."
+    },
+    "correcta": "a",
+    "explicacion": "La hipertensión endocraneana puede originarse por hidrocefalia, o por la presencia de lesiones ocupantes de espacio como tumores, abscesos, o edema, hemorragia, por ejemplo tras un traumatismo de cráneo como en éste caso.\n\nSe puede presentar con:\n\nCefalea que despierta al paciente, aumenta al despertar, con las maniobras de Valsalva y no cede con la analgesia habitual.\nVómitos no precedidos de náuseas («en escopetazo»).\nPapiledema bilateral.\nDiplopia por la parálisis de los pares craneales (tipicamente el VI par craneal).\nAlteraciones en el nivel de consciencia y focalidad neurológica.\nTriada de Cushing: hipertensión arterial, bradicardia y respiración irregular (compresión del bulbo).\n\nSiempre que sea posible se establece el tratamiento etiológico y además medidas generales:\n\nCabecera elevada a 30 grados (favorece el drenaje venoso).\nMantenimiento de la tensión arterial y evitar hipertermia.\nManitol al 20%.\nHiperventilación (PaCO2 hasta 25 mm Hg para revertir la vasodilatación y disminuir el edema).\nY en los casos refractarios: sedación con barbitúricos, hipotermia, derivación ventricular, craniectomía descompresiva.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-005",
+    "materia": [
+      "neurocirugia",
+      "traumatologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Columna vertebral",
+      "General"
+    ],
+    "enunciado": "Una paciente de 35 años concurre a consultorio de Medicina General por dolor lumbar. La mujer trabaja como empleada doméstica y refiere presentar este cuadro desde hace algunos años en forma ocasional. Desde hace 2 días el dolor en la región lumbar reapareció con irradiación a cara posterior del muslo derecho hasta la altura de la rodilla. No presenta antecedentes de relevancia salvo consumo ocasional de AINEs por este cuadro. El examen físico revela sobrepeso leve y en miembros inferiores fuerza muscular conservada, reflejos tendinosos y sensibilidad normales. La prueba de Lasegue es negativa. ¿Cuál es la conducta más adecuada ante este caso?",
+    "opciones": {
+      "a": "Indicar reposo en cama y AINEs via oral en dosis programadas. Reevaluarla en 48 hs y en caso de persistir el dolor solicitar interconsulta a traumatologia",
+      "b": "Solicitar RMI de columna lumbosacra.",
+      "c": "Indicar reposo en cama y AINEs por via intramuscular por 72 hs y en caso de persistir el dolor evaluar con traumatologia conducta quirúrgica. Solicitar Rx columna lumbosacra.",
+      "d": "Alentarla a mantenerse activa evitando movimientos de torsión y levantar pesos. Indicar AINEs por via oral en dosis programadas. Reevaluarla en 4 semanas"
+    },
+    "correcta": "d",
+    "explicacion": "El dolor lumbar es un motivo de consulta muy frecuente en atención primaria de la salud. La mayoría constituyen cuadros benignos que no requieren estudios diagnósticos complejos ni intervenciones específicas.\n\nLos factores asociados a una causa estructural importante son: dolor que empeora con el reposo o por la noche, antecedente de cáncer, antecedente de infección crónica, antecedente de traumatismo, incontinencia, tener mas de 70 años, abuso de fármacos intravenosos, uso de corticoides, antecedente de déficit neurológico de evolución rápida, fiebre inexplicada, pérdida de peso, dolor a la percusión de la columna entre otros.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-006",
+    "materia": [
+      "neurocirugia",
+      "pediatria",
+      "imagenes"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de pediatría",
+      "Tomografía"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada, luego de las medidas de estabilización iniciales, con una niña de 7 años que ingresa a la guardia luego de un accidente automovilístico en la ruta y que se encuentra irritable con trastornos del sensorio, y ha presentado durante el traslado episodio convulsivo y vómitos?",
+    "opciones": {
+      "a": "Realizar radiografia de cráneo y dejar en observación por 12 horas",
+      "b": "Realizar TAC de cerebro y referir al neurocirujano infantil",
+      "c": "Realizar tomografia axial computada (TAC) de cerebro y dejar en observación 24 hs",
+      "d": "Realizar radiografía de cráneo y si es normal dar de alta con cita en una semana"
+    },
+    "correcta": "b",
+    "explicacion": "Los niños mayores de 2 años de edad que han sufrido un traumatismo encéfalo craneano, y presentan un Glasgow menor de 13 en cualquier momento, focalidad neurológica, signos de fractura deprimida, lesión penetrante, fractura basilar o convulsión postraumática; tendrán alto riesgo de lesión intracraneal, por lo cual, tras la estabilización del paciente (ABC), realización de historia clínica y exploración; se deberá solicitar una tomografia craneal e interconsulta con neurocirugia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-007",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "¿Cuál es el criterio que se utiliza para estatificar la gravedad del traumatismo craneoencefálico?",
+    "opciones": {
+      "a": "La presencia de foco motor",
+      "b": "Las lesiones en las radiografias de cráneo (frente y perfil)",
+      "c": "Escala de Glasgow",
+      "d": "Las lesiones topográficas"
+    },
+    "correcta": "c",
+    "explicacion": "El traumatismo craneoencefálico se clasifica de acuerdo con la escala de Glasgow en la valoración inicial del paciente. Esta escala evalúa la apertura ocular y las respuestas verbal y motora. De esta forma clasifica los traumatismos cráneo encefálicos en leves, moderados o graves.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-008",
+    "materia": [
+      "neurocirugia",
+      "traumatologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Columna vertebral",
+      "Radiografía"
+    ],
+    "enunciado": "Antonio, de 60 años, consulta por dolor lumbar moderado de 3 días de evolución, luego de resbalar y caer sentado desde su propia altura. No refiere antecedentes patológicos ni tratamientos farmacológicos crónicos. Al realizar la maniobra de Lasegue, el dolor se incrementa al elevar la pierna derecha en un ángulo de 75 grados. No presenta alteración de reflejos osteotendinosos rotulianos ni patelares. Ante estos hallazgos, ¿cuál es su problematización diagnóstica?",
+    "opciones": {
+      "a": "Lumbalgia aguda con indicación de radiografia de columna lumbar.",
+      "b": "Lumbociatalgia con indicación de resonancia nuclear magnética de columna.",
+      "c": "Lumbalgia aguda sin indicación de radiografia de columna lumbar.",
+      "d": "Lumbociatalgia sin indicación re resonancia nuclear magnética de columna."
+    },
+    "correcta": "a",
+    "explicacion": "Caso clínico que evalúa si reconoces a las \"banderas rojas\" ante la consulta de una lumbalgia:\n\n• signos de alarma \"banderas rojas\": edad mayor a 50 años, antecedentes de neoplasia, falta de mejoría con tratamientos habituales, dolor de reposo, fiebre, inmunodepresión, traumatismo previo, osteoporosis, medicación con corticoides, síndrome de cauda equina.\n\nSi no existen, no son necesarias las pruebas complementarias para el diagnóstico.\n\nLa persona del caso propuesto tiene 60 años y traumatismo previo al dolor.\nLumbalgia aguda con indicación de radiografía de columna lumbar (respuesta correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-009",
+    "materia": [
+      "neurocirugia",
+      "traumatologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Un paciente que sufrió un traumatismo craneoencefálico hace 16 hs se encuentra en coma con un puntaje de Glasgow de 5 y sin lesión objetivable en la tomografía de cerebro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Lesión cerebral isquémica",
+      "b": "Edema cerebral difuso",
+      "c": "Injuria axonal difusa",
+      "d": "Contusión cortical"
+    },
+    "correcta": "c",
+    "explicacion": "La lesión axonal difusa es una lesión grave que afecta a la materia blanca del cerebro y provoca pérdida de conciencia con pronóstico variable. Esta lesión suele estar producida por un traumatismo craneoencefálico.\n\nEl traumatismo motiva que el encéfalo se desplace dentro del cráneo de forma violenta. Por esta brusca aceleración y desaceleración los axones (elongaciones de las neuronas que transmiten los impulsos nerviosos y forman la materia blanca del cerebro), se lesionan y se interrumpe la comunicación entre las neuronas. El paciente pierde el conocimiento de forma inmediata. Sin pérdida de conciencia no se considera que haya daño axonal difuso. Es la causa más frecuente de estado vegetativo postraumático.\n\nNo se evidencian lesiones en la TC.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-010",
+    "materia": [
+      "neurocirugia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "¿Cuál sería la decisión más adecuada con un niño de tres años que es traído a la consulta porque hace dos horas se cayó de su triciclo y se golpeó la cabeza contra el cemento? Presentó convulsiones de 5 minutos de duración inmediatamente después de caer. El examen físico es normal, incluidas las evaluaciones del estado mental y neurológico.",
+    "opciones": {
+      "a": "Hospitalizar y realizar radiografía de cráneo",
+      "b": "Hospitalizar y realizar interconsulta con neurologia",
+      "c": "Hospitalizar para observación",
+      "d": "Hospitalizar y realizar tomografia (TAC) de cerebro"
+    },
+    "correcta": "d",
+    "explicacion": "La mayoría de los niños que sufren un TEC no presentan sintomas ni lesión intracraneana severa, pero se ha visto que a partir de los 2 años de edad la presencia de signo sintomatología tiene un valor predictivo positivo de lesión intracraneal. Si el paciente presenta disminución de la conciencia o pérdida de conciencia mayor a 1 minuto, focalidad neurológica, convulsión postraumática, lesión penetrante, fractura de base de cráneo o fractura hundimiento; se deberá realizar TAC de cerebro a fin de pesquisar una posible lesión intracraneal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-011",
+    "materia": [
+      "neurocirugia",
+      "medicinafamiliar",
+      "imagenes"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Adulto Mayor",
+      "Tomografía"
+    ],
+    "enunciado": "Una mujer de 86 años de edad con antecedentes de hipertensión arterial y fibrilación auricular en tratamiento con enalapril, hidroclorotiazida y acenocumarol, consulta a la guardia por caídas frecuentes y episodios de \"niebla mental\". Se realiza diagnóstico de infección urinaria y se indica tratamiento antibiótico. La paciente no tuvo mejoría y es llevada a la guardia del hospital para una nueva evaluación. Al examen clínico presenta deambulación inestable y no se detectan signos neurológicos focales. La TC craneal sin contraste muestra hipodensidad en forma de semiluna del lado izquierdo, edema con borramiento del ventrículo y de la línea media con desplazamiento. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hemorragia subaracnoidea",
+      "b": "Hematoma subdural",
+      "c": "Hematoma epidural",
+      "d": "Hematoma intraparenquimatoso"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Mujer añosa con caídas frecuentes y cuadro neurológico solapado, pensar en hematoma subdural\n\nEn la TC de cerebro:\n\nHSD=Forma de semiluna\n\nHematoma epidural=Forma de lente biconvexa",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-012",
+    "materia": [
+      "neurocirugia",
+      "oncologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Oncología",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es el tumor intracraneano más frecuente de la edad adulta?",
+    "opciones": {
+      "a": "Schwannoma vestibular",
+      "b": "Astrocitoma pilocitico",
+      "c": "Meduloblastoma",
+      "d": "Metástasis"
+    },
+    "correcta": "d",
+    "explicacion": "En el adulto los tumores cerebrales más frecuentes son las metástasis y el tumor primario más frecuente, el meningioma, seguido del glioblastoma.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-013",
+    "materia": [
+      "neurocirugia",
+      "imagenes",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Tomografía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "Un varón de 35 años sufre una caída hacia atrás desde una altura de 3 metros, perdió el conocimiento durante unos minutos, se recupera pero persiste con cefalea y dolor occipital. A las dos horas del traumatismo presenta tendencia al sueño, agitación, alteración de la conciencia y la observa la siguiente imagen en la tomografía de cerebro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hematoma epidural en fosa posterior y occipital, linea de fractura en ventana ósea.",
+      "b": "Infarto en fosa posterior y linea de fractura en ventana ósea.",
+      "c": "Hematoma subdural en fosa posterior y occipital.",
+      "d": "Hematoma subdural en fosa posterior y occipital, linea de fractura en ventana ósea."
+    },
+    "correcta": "a",
+    "explicacion": "La clínica del paciente se corresponde con la secuencia del hematoma epidural característico: 1ero TEC con pérdida de conciencia 2do Período lúcido y 3ero Deterioro neurológico con herniación uncal por efecto masa.\n\nEn la TC el hematoma epidural se ve como una lente biconvexa.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-014",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "Un varón de 26 años es traído a la guardia porque sufrió un trauma encefalocraneano por colisión vehicular. Al examen físico se constata otorragia, rinorragia y \"ojos de mapache\". ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Fractura de Le Fort",
+      "b": "Fractura de calota craneana",
+      "c": "Fractura hundimiento del hueso parietal",
+      "d": "Fractura de la base del cráneo"
+    },
+    "correcta": "d",
+    "explicacion": "La fractura de base de cráneo de manifiesta clínicamente como \"ojos de mapache\" (tiene su origen por una fractura a nivel del piso anterior de la base del cráneo y está representado por una equimosis periorbitaria usualmente en ambos ojos), otorragia (hemorragia en el oido) y rinorragia (hemorragia en la nariz).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-015",
+    "materia": [
+      "neurocirugia",
+      "oncologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Oncología",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Los tumores intracraneales intraxiales:",
+    "opciones": {
+      "a": "Se separan fácilmente del parénquima cerebral",
+      "b": "Suelen ser gliomas",
+      "c": "Son extracerebrales",
+      "d": "Suelen ser meningiomas"
+    },
+    "correcta": "b",
+    "explicacion": "Globalmente los tumores cerebrales más frecuentes son metastásicos. Los tumores primarios del sistema nervioso central se pueden clasificar con un criterio topográfico en extraaxiales e intraaxiales.\n\nDentro de los extraaxiales se encuentran principalmente los meningiomas, los adenomas hipofisários y el neurinoma del acústico.\nDentro de los intraaxiales suelen ser gliomas como astrocitomas, oligodendrogliomas y ependimomas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-016",
+    "materia": [
+      "neurocirugia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "Julián es un niño de 3 años y 3 meses que es traído por sus padres tras haber sufrido traumatismo de cráneo, al caer de una cama elástica donde estaba saltando, en un cumpleaños, golpeándose en región frontoparietal derecha. Los familiares refieren que estuvo desmayado durante aproximadamente 5 minutos y que mientras era trasladado al hospital vomitó en cuatro ocasiones. Al ingresar se le realiza un detallado examen físico, encontrándose en regular estado general, compensado hemodinámicamente, con auscultación cardio-pulmonar normal. A la valoración neurológica se constata cefalohematoma en región parietal derecha de cuero cabelludo. Presenta tendencia al sueño, que se incrementa. Presenta un score de Glasgow de 12 (4 de apertura ocular. 5 localiza el dolor. 3 llora al dolor). Reflejos osteotendinosos normales. Ojos: pupilas isocóricas con reacción perezosa a la luz. Amnesia postraumática. ¿Cuál de las siguientes es la conducta más adecuada?",
+    "opciones": {
+      "a": "Observación en guardia, acceso venoso para hidratación parenteral, analgésicos y radiografía de cráneo",
+      "b": "Observación en el domicilio, alimentación fraccionada y control en 24 hs",
+      "c": "Tomografia computada craneal. Internación en Unidad de Cuidados Intensivos Pediátricos y evaluación neuroquirúrgica",
+      "d": "Internación en Unidad de Cuidados intensivos Pediátricos. Resonancia Nuclear cerebral y evaluación por neurocirujano"
+    },
+    "correcta": "c",
+    "explicacion": "La mayoría de los niños que sufren un TEC no presentan síntomas ni lesión intracraneana severa, pero se ha visto que a partir de los 2 años de edad la presencia de signo sintomatología tiene un valor predictivo positivo de lesión intracraneal. Si el paciente presenta disminución de la conciencia o pérdida de conciencia mayor al minuto, focalidad neurológica, convulsión postraumática, lesión penetrante, fractura de base de cráneo o fractura hundimiento; se deberá realizar TAC de cerebro a fin de pesquisar una posible lesión intracraneal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-017",
+    "materia": [
+      "neurocirugia",
+      "pediatria",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de pediatría",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "Un niño de 7 años quien cae de un árbol sufriendo traumatismo de cráneo. Llega a la guardia presentando en el examen neurológico apertura ocular ante el estímulo verbal, respuesta verbal confusa y retira el miembro ante el estímulo doloroso. ¿Cuál es el Score de Glasgow de este niño?",
+    "opciones": {
+      "a": "17",
+      "b": "11",
+      "c": "9",
+      "d": "13"
+    },
+    "correcta": "b",
+    "explicacion": "La escala de Glasgow sirve para valorar el estado de conciencia, tomando en cuenta la apertura ocular, la respuesta verbal y la respuesta motora. Este paciente tiene apertura ocular ante el estímulo verbal por lo que suma 3 puntos, respuesta verbal confusa 4 puntos, retira el miembro ante el dolor 4 puntos por lo que suma un Glasgow de 11 puntos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-018",
+    "materia": [
+      "neurocirugia",
+      "endocrinologia",
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Hipotálamo / Hipófisis",
+      "Neurooftalmología"
+    ],
+    "enunciado": "Una paciente de 45 años consulta en la guardia por presentar cefalea intensa. Al examen físico presenta signos de irritación meníngea, hemianopsia bitemporal y oftalmoplejía. La TC de cerebro evidencia lesión ocupante de espacio en la silla turca de 2 cm compatible con adenoma hipofisario y signos de hemorragia intratumoral, con desviación del tallo hipofisario y compresión del tejido glandular. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Internar en sala con indicación de manitol e interconsultar al servicio de neurocirugía",
+      "b": "Indicar tratamiento con corticoides a dosis altas",
+      "c": "Internar en UTI en indicar colocación de catéter para medición de Presión Intracraneana (PIC)",
+      "d": "Indicar descompresión quirúrgica urgente"
+    },
+    "correcta": "d",
+    "explicacion": "Los tumores hipofisarios más frecuentes son los adenomas. La apoplejía hipofisaria es una urgencia neuroquirúrgica, el paciente se presenta con cefalea, bruca asociada a alteraciones campimétricas, oftalmoplejia, incluso puede progresar hasta el coma. Esto es debido a la hemorragia o infarto del tumor. Este cuadro tiene indicación quirúrgica de urgencia y posterior tratamiento hormonal sustitutivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-019",
+    "materia": [
+      "neurocirugia",
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Adulto Mayor",
+      "ECV"
+    ],
+    "enunciado": "Un varón de 77 años de edad, que vive alejado de su familia desde hace varios años, un mes antes de su internación en la sala de clínica médica comenzó a presentar apatía y abulia progresivas, así como mayor tendencia a quedarse en la cama. Los familiares refieren que se quejaba de cefalalgia en ocasiones y unos 4 días antes de su internación notaron que presentaba micción y defecación espontáneas. Al examen físico se encuentra vigíl, en un estado de mutismo acinético, puntuación en la Escala de Coma de Glasgow de 13 puntos, cuadriparesia asimétrica a predominio izquierdo, signo de Babinski y abolición de reflejos cutáneo-abdominales bilaterales. Se realiza TC de cráneo simple y con contraste, en la que se informa imagen predominantemente hipodensa, de localización extraxial frontoparietooccipital derecha, de aproximadamente 2 cm de grosor y que desplazaba las estructuras de la línea media 1,5 cm de derecha a izquierda. No hay captación de contraste por la lesión. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar trepanación y drenaje.",
+      "b": "Indicar soluciones hiperosmolares endovenosas y corticoides endovenosos.",
+      "c": "Solicitar RMN e indicar tratamiento antibiótico empirico.",
+      "d": "Evacuación endoscópica."
+    },
+    "correcta": "a",
+    "explicacion": "Tratamiento del hematoma subdural crónico: trepanación y drenaje",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-020",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "Un varón de 18 años, que participó en una pelea callejera, es trasladado al hospital por el sistema de emergencias. Durante el traslado permaneció lúcido y hemodinámicamente compensado. Al ingreso a la guardia presenta desorientación temporoespacial, herida cortante a nivel parietal izquierdo y midriasis homolateral. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hemorragia subaracnoidea",
+      "b": "Hematoma subdural",
+      "c": "Hematoma intracerebral",
+      "d": "Hematoma epidural (extradural)"
+    },
+    "correcta": "d",
+    "explicacion": "Hematoma epidural:\n\nClinica: TCE con pérdida de conciencia-Periodo lúcido (30-45min)-Deterioro neurológico con herniación uncal por efecto masa\n\nTC cerebro: Forma de lente biconvexa\n\nTratamiento: Craneotomia de urgencia, salvo si son muy pequeños",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-021",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en un adolescente de 18 años que luego de una pelea callejera, ingresa al hospital por traumatismo parietal izquierdo? Inicialmente se encontraba lúcido, pero luego de 20 minutos se encuentra confuso y con midriasis izquierda.",
+    "opciones": {
+      "a": "Hemorragia subaracnoidea",
+      "b": "Hematoma intracerebral",
+      "c": "Hematoma extradural",
+      "d": "Hematoma subdural"
+    },
+    "correcta": "c",
+    "explicacion": "El hematoma extradural o epidural se produce por la acumulación de sangre entre la tabla interna del diploe y la cara externa de la duramadre. Es una de las principales causas de estado vegetativo post traumático. En inicio se presenta como un traumatismo endocraneano con pérdida de conciencia, con recuperación completa que se presenta por 30 a 45 minutos para luego presentar un rápido deterioro del sensorio (que es caracteristico).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-022",
+    "materia": [
+      "neurocirugia",
+      "oncologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Oncología",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Julio, de 60 años presenta astenia y debilidad de 5 semanas de evolución. Comienza en los últimos días con torpeza en el brazo y la pierna izquierda y con episodios de disartria por lo que consulta a la guardia. Se realiza resonancia magnética de cerebro con secuencias potenciadas en T1 sin y con contraste endovenoso en donde se observa una lesión ocupante de espacio con contraste anular, necrosis central y edema periférico a nivel temporal derecho. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Astrocitoma de bajo grado.",
+      "b": "Encefalomielitis aguda.",
+      "c": "Encefalitis herpética.",
+      "d": "Glioblastoma."
+    },
+    "correcta": "d",
+    "explicacion": "Sospechar en este paciente por el cuadro la presencia de un tumor cerebral. Las más frecuentes son las metástasis y el tumor primario más frecuente, el meningioma, seguido del glioblastoma. Pensar en glioblastoma cuando en la imagen se describe captación en anillo con edema perilesional.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-023",
+    "materia": [
+      "neurocirugia",
+      "traumatologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Otras preguntas de traumatología"
+    ],
+    "enunciado": "Una mujer de 17 años que ingresa en UCI por un traumatismo craneoencefálico tras un accidente de tránsito. Al examen físico: no abre los ojos, no emite sonidos antes de ser intubado y presenta extensión de las extremidades al estímulo nociceptivo. ¿Qué puntuación de la escala Glasgow presenta en la evaluación inicial?",
+    "opciones": {
+      "a": "6",
+      "b": "5",
+      "c": "4",
+      "d": "3"
+    },
+    "correcta": "c",
+    "explicacion": "Apertura ocular: sin respuesta = 1\n\nRespuesta verbal: nada = 1.\nRespuesta motora al estimulo: extensión anormal (descerebración) = 2.\n\nGlasgow = 4",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-024",
+    "materia": [
+      "neurocirugia",
+      "medicinafamiliar",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Adulto Mayor",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Concurre a la guardia una paciente de 85 años traída desde el geriátrico por presentar desorientación temporo-espacial y lenguaje incoherente de 48 hs de evolución. Al examen físico presenta un cefalohematoma en región parietal derecha. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Hemorragia subaracnoidea",
+      "b": "Hematoma subdural",
+      "c": "Hematoma epidural",
+      "d": "Hematoma intraparenquimatoso"
+    },
+    "correcta": "b",
+    "explicacion": "Ante una persona adulta mayor (institucionalizada dato clave en el enunciado) que presenta un cambio agudo en su estado de salud relacionado con la presencia de: trastornos conductuales o cognitivos transitorios, nueva aparición o aumento de la frecuencia de caidas, déficits neurológicos focales persistentes o progresivos y se evidencia un cefalohematoma pensar en primer lugar en hematoma subdural vrs infección.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neurocirugia-001-025",
+    "materia": [
+      "neurocirugia",
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Oído",
+      "Neuropatías"
+    ],
+    "enunciado": "Usted se halla evaluando a un Juan, de 62 años que presenta mareos con algunos elementos semiológicos y a la entrevista que le hacen sospechar un schwannoma vestibular (o neuroma acústico). ¿Cual es el hallazgo clínico-funcional típico de esta patología?",
+    "opciones": {
+      "a": "Hipoacusia unilateral súbita, mareo y ataxia",
+      "b": "Hipoacusia neurosensorial unilateral progresiva, mareo y ataxia",
+      "c": "Hipoacusia neurosensorial unilateral súbita y ataxia",
+      "d": "Hipoacusia neurosensorial bilateral progresiva"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. Schwannomas: se originan en las células de Schwann de los nervios periféricos, siendo el más frecuente el del nervio vestibular (VIII nervio craneal), inadecuadamente Ilamado «neurinoma del acústico») = Hipoacusia neurosensorial, mareo y ataxia\n\nEn cualquier hipoacusia neurosensorial unilateral y progresiva, hay que solicitar una RM craneal para descartar un schwannoma del vestibular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
