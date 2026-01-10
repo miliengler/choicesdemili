@@ -1,1 +1,172 @@
-[]
+[
+  {
+    "id": "oncologia-001-001",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "Páncreas"
+    ],
+    "enunciado": "El CA 19.9 es un marcador tumoral que se encuentra generalmente elevado en:",
+    "opciones": {
+      "a": "Carcinoma seroso del ovario",
+      "b": "Tumores de las células germinales",
+      "c": "En cáncer digestivo y en menor medida en mama",
+      "d": "Carcinoma de endometrio"
+    },
+    "correcta": "c",
+    "explicacion": "Los marcadores tumorales pueden ser de utilidad a nivel del tratamiento en algunos cánceres especificos. Por otro lado su aumento o descenso a nivel del laboratorio puede vincularse con el aumento o disminución del volumen de células tumorales sin embargo los marcadores en si mismos no poseen utilidad para el diagnóstico de un cáncer.\n\nEl CA 19-9 es un marcador tumor al que puede encontrarse presente en cáncer de colon, páncreas y mama. Su presencia también puede vincularse con entidades no neoclásicas como la colitis ulcerosa y la pancreatitis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-002",
+    "materia": [
+      "oncologia",
+      "urologia",
+      "otras"
+    ],
+    "submateria": [
+      "Oncología",
+      "Fracaso renal agudo",
+      "Fármacos"
+    ],
+    "enunciado": "¿Cuál de los siguientes fármacos previene la insuficiencia renal aguda asociada a la quimioterapia?",
+    "opciones": {
+      "a": "Allopurinol",
+      "b": "Difeninhidramina",
+      "c": "Furosemida",
+      "d": "Nifedipina"
+    },
+    "correcta": "a",
+    "explicacion": "La quimioterapia se utiliza para el tratamiento tanto previo a la realización de cirugía o de radioterapia frente al cáncer, también llamado neoadyuvancia o posterior al tratamiento quirúrgico o radioterápico de un cáncer (quimioterapia adyuvante). La quimioterapia también puede utilizarse en forma paliativa, es decir, sin intención de tratamiento quirúrgico o radioterápico, o también en aquellos pacientes que presentan recidiva de la enfermedad.\n\nAl iniciar el tratamiento con quimioterapia los síntomas más frecuentes son los gastrointestinales, como las náuseas y los vómitos, las citopenias.\n\nAquellos tumores hematológicos o tumores sólidos que son sensibles a la quimioterapia deben tratarse en forma profiláctica con allopurinol para reducir los efectos secundarios del sindrome de lisis tumoral (uno de ellos la insuficiencia renal aguda).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-003",
+    "materia": [
+      "oncologia",
+      "otras"
+    ],
+    "submateria": [
+      "Oncología",
+      "Fármacos"
+    ],
+    "enunciado": "¿Cuál de los siguientes medicamentos es el de mayor efectividad en vómitos y náuseas inducidas por quimioterapia, siendo su mecanismo de acción el antagonismo de los receptores 5-HT3?",
+    "opciones": {
+      "a": "Escopolamina",
+      "b": "Ondasentron",
+      "c": "Domperidona",
+      "d": "Dimenhidrinato"
+    },
+    "correcta": "b",
+    "explicacion": "La quimioterapia se utiliza para el tratamiento tanto previo a la realización de cirugia o de radioterapia frente al cáncer, también llamado neoadyuvancia o posterior al tratamiento quirúrgico o radioterápico de un cáncer (quimioterapia adyuvante). La quimioterapia también puede utilizarse en forma paliativa, es decir, sin intención de tratamiento quirúrgico o radioterápico, o también en aquellos pacientes que presentan recidiva de la enfermedad.\n\nAl iniciar el tratamiento con quimioterapia los sintomas más frecuentes son los gastrointestinales, como las náuseas y los vómitos, las citopénias.\n\nLos antieméticos más recientes han disminuido el índice de nauseas en pacientes en tratamiento quimioterápico, sobre todo los inhibidos del receptor de tipo 3 de 5-hidroxitriptamina como el ondansetron.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-004",
+    "materia": [
+      "oncologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "NPS y cáncer de pulmón"
+    ],
+    "enunciado": "Un paciente de 56 años, tabaquista, presenta convulsiones tónico clónicas, sin antecedes previos. Le realiza una tomografía computada observando múltiples lesiones compatibles con metástasis. Por criterio epidemiológico usted sospecha que el primitivo del tumor es de:",
+    "opciones": {
+      "a": "Colon.",
+      "b": "Pleura.",
+      "c": "Pulmón.",
+      "d": "Pancreas."
+    },
+    "correcta": "c",
+    "explicacion": "Humo de tabaco: es la principal causa de la mayoría de los casos de CP.\n\nLas sustancias nocivas del humo tabáquico lesionan las células del pulmón. La exposición al humo del tabaco en el ambiente puede causar cáncer de pulmón también en personas que no fuman (fumadores pasivos).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-005",
+    "materia": [
+      "oncologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "NPS y cáncer de pulmón"
+    ],
+    "enunciado": "Un varón de 72 años, con diagnóstico de carcinoma epidermoide de pulmón y metástasis hepáticas, consulta a la guardia por presentar hinchazón del cuello y la cara, tos seca y disnea progresiva hasta clase funcional IV. Al examen físico presenta venas cervicales dilatadas, un mayor número de venas colaterales visibles en la pared anterior del tórax, cianosis y edema de la cara y el tórax superior. La Rx de tórax evidencia ensanchamiento del mediastino superior. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar TC de tórax y administrar glucocorticoides",
+      "b": "Iniciar Radioterapia y colocación de endoprótesis traqueal",
+      "c": "Realizar Biopsia transtóracica y Quimioterapia",
+      "d": "Realizar TC de tórax e iniciar Radioterapia"
+    },
+    "correcta": "d",
+    "explicacion": "El sindrome de vena cava superior es una complicación frecuente del cancer de pulmon escamoso y microcitico y otros tumores que ocupan el mediastino como los linfomas.\n\nSe produce obstrucción al retorno venoso de los vasos de la cabeza, el cuello y los miembros superiores generando un aumento del diametro del cuello, disnea tos, edema palpebral. Los sintomas pueden empeorar con el decúbito.\n\nSe debe realizar una tomografia computada de torax para evaluar el mediastino y se debe evaluar especialmente la indemnidad de la via aerea. En los tumores de pulmon no microciticos el tratamiento basico consiste en la realización de radioterapia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-006",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "Páncreas"
+    ],
+    "enunciado": "¿Cuál de los siguientes marcadores tumorales puede ser útil para el seguimiento del cáncer de páncreas?:",
+    "opciones": {
+      "a": "CA 19.9.",
+      "b": "CA 125.",
+      "c": "Alfa-fetoproteína.",
+      "d": "CA 15.3."
+    },
+    "correcta": "a",
+    "explicacion": "Los marcadores tumorales tienen una utilidad limitada en el diagnóstico de neoplasias. Su mayor utilidad es en el seguimiento del tratamiento.\n\nRepasamos los marcadores tumorales: CA15.3: mama, CA 125: ovario, y siempre que exista irritación del peritoneo. AFP: hepatocarcinoma. CA 19.9: vía biliar y páncreas. hCG (gonadotrofina coriónica humana): tumores de extirpe germinal (tumores testiculares).\n\nPor ejemplo una apendicitis puede elevar el CA 125 y una colangitis aumenta el CA 19.9 sin que exista ningún tumor.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "oncologia-001-007",
+    "materia": [
+      "oncologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "NPS y cáncer de pulmón"
+    ],
+    "enunciado": "Se encuentra evaluando a un varón de 68 años con diagnóstico reciente de cáncer de pulmón (células no pequeñas) en estadio IIB. Refiere sentirse bien y que desempeña normalmente sus actividades diarias, pero que se agita cuando acelera el paso o sube las escaleras del subte. Duerme entre 6 o 7 hs por día. Para valorar su estado funcional utiliza la escala ECOG (eastern cooperative oncology group). ¿Cuál es el valor ECOG de este paciente?",
+    "opciones": {
+      "a": "1",
+      "b": "2",
+      "c": "4",
+      "d": "3"
+    },
+    "correcta": "a",
+    "explicacion": "El performance status (PS) o ECOG (Eastern Cooperative Oncology Group) es una escala que mide el estado funcional del paciente oncológico y que es fundamental para valorar el pronóstico de un enfermo y la indicación de tratamientos oncológicos.\n\nEI ECOG 2 es uno de los factores de mal pronóstico más importantes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
