@@ -478,11 +478,18 @@ function iniciarPracticaMateria(mSlug, modo) {
 }
 
 /* ==========================================================
-   📊 MODAL DE ESTADÍSTICAS (Nuevo Feature)
+   📊 MODAL DE ESTADÍSTICAS (Actualizado con Barras)
    ========================================================== */
+
+// Variable temporal para guardar el slug abierto en el modal
+let currentModalSlug = null;
+let currentSubtopicSort = "original"; // original | error | acierto
+
 function openStatsModal(slug) {
-    // 1. Calcular Stats Globales de la materia (Sin importar filtro)
-    // Queremos ver la "foto real" de esa materia, como en la pestaña Stats.
+    currentModalSlug = slug;
+    currentSubtopicSort = "original"; // Resetear orden al abrir
+
+    // 1. Calcular Stats Globales (Igual que antes)
     const questions = BANK.questions.filter(q => {
         return Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
     });
@@ -491,16 +498,14 @@ function openStatsModal(slug) {
     const progMat = PROG[slug] || {};
     let ok = 0, bad = 0;
     
-    // Contar progreso
     Object.values(progMat).forEach(reg => {
         if(reg.status === 'ok') ok++;
         if(reg.status === 'bad') bad++;
     });
 
     const noResp = total - (ok + bad);
-    const pct = (ok + bad) > 0 ? Math.round((ok / (ok + bad)) * 100) : 0;
     
-    // Gráfico de Torta
+    // Gráfico de Torta Global
     let pieStyle = `background: #e2e8f0;`;
     if (total > 0) {
         const degOk = (ok / total) * 360;
@@ -512,54 +517,38 @@ function openStatsModal(slug) {
         );`;
     }
 
-    // Calcular Subtema más flojo
-    const subGroups = {};
-    questions.forEach(q => {
-        const sub = q.submateria;
-        if (!subGroups[sub]) subGroups[sub] = { total: 0, ok: 0, answered: 0 };
-        subGroups[sub].total++;
-        if (progMat[q.id]) {
-            subGroups[sub].answered++;
-            if (progMat[q.id].status === 'ok') subGroups[sub].ok++;
-        }
-    });
-
-    let weakest = null;
-    let minPct = 101;
-    Object.keys(subGroups).forEach(subSlug => {
-        const g = subGroups[subSlug];
-        if (g.answered >= 3) {
-            const p = Math.round((g.ok / g.answered) * 100);
-            if (p < minPct) {
-                minPct = p;
-                weakest = { name: getPrettySubtopicName(slug, subSlug), pct: p };
-            }
-        }
-    });
-
-    // Generar HTML del cuerpo
-    let htmlBody = `
+    // HTML Cabecera (Resumen)
+    let htmlHeader = `
         <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin-bottom:20px;">
             <div style="width:120px; height:120px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.1);"></div>
-            
             <div style="font-size: 14px; line-height: 2; color: #475569; min-width:130px;">
-              <div>📦 Total preguntas: <b>${total}</b></div>
+              <div>📦 Total: <b>${total}</b></div>
               <div>✅ Correctas: <b style="color:#16a34a">${ok}</b></div>
               <div>❌ Incorrectas: <b style="color:#ef4444">${bad}</b></div>
-              <div>⚪ Sin responder: <b style="color:#64748b">${noResp}</b></div>
+              <div>⚪ Pendientes: <b style="color:#64748b">${noResp}</b></div>
             </div>
         </div>
-        
-        ${weakest ? `
-            <div style="background:#fef2f2; border:1px solid #fee2e2; padding:10px; border-radius:8px; color:#991b1b; font-size:13px; display:flex; gap:8px;">
-                <span>📉</span>
-                <span>Tu subtema más flojo es <b>${weakest.name}</b> con un <b>${weakest.pct}%</b> de efectividad.</span>
+    `;
+
+    // HTML Cuerpo (Botón expandible para subtemas)
+    let htmlBody = `
+        <div style="border-top:1px dashed #e2e8f0; padding-top:15px; margin-bottom:15px;">
+            <button class="btn-small" onclick="toggleSubtopicStats()" style="width:100%; background:#f8fafc; color:#334155; display:flex; justify-content:space-between; align-items:center;">
+                <span>📊 Ver detalle por subtemas</span>
+                <span id="subtopic-arrow">▼</span>
+            </button>
+            
+            <div id="subtopic-container" style="display:none; margin-top:15px; animation:fadeIn 0.3s ease;">
+                <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
+                    <select onchange="updateSubtopicSort(this.value)" style="font-size:12px; padding:4px; border-radius:6px; border:1px solid #cbd5e1;">
+                        <option value="original">Orden Original</option>
+                        <option value="error">Más Errores Primero</option>
+                        <option value="acierto">Mejor % Primero</option>
+                    </select>
+                </div>
+                <div id="subtopic-bars-list"></div>
             </div>
-        ` : `
-            <div style="text-align:center; color:#94a3b8; font-size:13px;">
-               ${(ok+bad)===0 ? 'Todavía no hay suficientes datos para analizar tus puntos débiles.' : '¡Seguí practicando para desbloquear más estadísticas!'}
-            </div>
-        `}
+        </div>
         
         <div style="margin-top:20px; text-align:center; border-top:1px dashed #e2e8f0; padding-top:15px;">
              <button class="btn-small" onclick="resetSubjectStatsFromModal('${slug}')" 
@@ -576,9 +565,125 @@ function openStatsModal(slug) {
     
     if(modal && title && body) {
         title.textContent = `Estadísticas: ${getMateriaNombre(slug)}`;
-        body.innerHTML = htmlBody;
+        body.innerHTML = htmlHeader + htmlBody;
         modal.style.display = "flex";
+        
+        // Pre-renderizamos la lista (aunque esté oculta) para que esté lista
+        renderSubtopicBars();
     }
+}
+
+/* --- NUEVAS FUNCIONES PARA EL DESGLOSE --- */
+
+function toggleSubtopicStats() {
+    const container = document.getElementById("subtopic-container");
+    const arrow = document.getElementById("subtopic-arrow");
+    if (container.style.display === "none") {
+        container.style.display = "block";
+        arrow.textContent = "▲";
+    } else {
+        container.style.display = "none";
+        arrow.textContent = "▼";
+    }
+}
+
+function updateSubtopicSort(val) {
+    currentSubtopicSort = val;
+    renderSubtopicBars();
+}
+
+function renderSubtopicBars() {
+    const slug = currentModalSlug;
+    if (!slug) return;
+
+    // 1. Obtener lista base
+    const subtemasOficiales = BANK.subsubjects[slug] || ["General"];
+    const progMat = PROG[slug] || {};
+
+    // 2. Mapear datos
+    let data = subtemasOficiales.map(subName => {
+        const subSlug = normalize(subName);
+        
+        // Contar preguntas de este subtema
+        // Nota: Usamos la función existente o lógica in-line
+        const questions = BANK.questions.filter(q => {
+            const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+            return esMat && q.submateria === subSlug;
+        });
+
+        let ok = 0, bad = 0;
+        questions.forEach(q => {
+            const p = progMat[q.id];
+            if(p) {
+                if(p.status === 'ok') ok++;
+                if(p.status === 'bad') bad++;
+            }
+        });
+
+        const total = questions.length;
+        const respondidas = ok + bad;
+        // Evitamos división por cero
+        const pctOk = respondidas > 0 ? Math.round((ok/respondidas)*100) : 0;
+        const pctBad = respondidas > 0 ? Math.round((bad/respondidas)*100) : 0;
+
+        return { 
+            name: subName, 
+            total, 
+            ok, 
+            bad, 
+            respondidas, 
+            pctOk,
+            pctBad 
+        };
+    });
+
+    // 3. Filtrar subtemas vacíos (opcional, pero queda más limpio)
+    data = data.filter(d => d.total > 0);
+
+    // 4. Ordenar
+    if (currentSubtopicSort === "error") {
+        // Mayor porcentaje de error arriba. Si empate, más cantidad de errores.
+        data.sort((a, b) => b.pctBad - a.pctBad || b.bad - a.bad);
+    } else if (currentSubtopicSort === "acierto") {
+        // Mayor porcentaje de acierto arriba.
+        data.sort((a, b) => b.pctOk - a.pctOk);
+    } 
+    // "original" no hace nada, mantiene el orden del map
+
+    // 5. Renderizar HTML
+    const listEl = document.getElementById("subtopic-bars-list");
+    if (!listEl) return;
+
+    if (data.length === 0) {
+        listEl.innerHTML = `<div style="text-align:center; color:#94a3b8; padding:10px;">No hay datos detallados.</div>`;
+        return;
+    }
+
+    listEl.innerHTML = data.map(d => {
+        // Ancho de las barras (relativo al total de preguntas del subtema)
+        // O mejor: relativo al 100% de la barra visual
+        
+        // Barra compuesta: [Verde (OK)][Rojo (Bad)][Gris (Pendiente)]
+        const wOk = (d.total > 0) ? (d.ok / d.total) * 100 : 0;
+        const wBad = (d.total > 0) ? (d.bad / d.total) * 100 : 0;
+        
+        return `
+            <div style="margin-bottom:12px;">
+                <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px; color:#334155;">
+                    <span style="font-weight:600;">${d.name}</span>
+                    <span style="font-size:12px; color:#64748b;">${d.respondidas}/${d.total}</span>
+                </div>
+                <div style="height:8px; width:100%; background:#f1f5f9; border-radius:4px; overflow:hidden; display:flex;">
+                    <div style="width:${wOk}%; background:#16a34a;" title="${d.ok} correctas"></div>
+                    <div style="width:${wBad}%; background:#ef4444;" title="${d.bad} incorrectas"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:10px; color:#94a3b8; margin-top:2px;">
+                    <span>${d.pctOk}% Acierto</span>
+                    ${d.bad > 0 ? `<span style="color:#ef4444;">${d.bad} Errores</span>` : ''}
+                </div>
+            </div>
+        `;
+    }).join("");
 }
 
 /* ==========================================================
