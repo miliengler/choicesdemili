@@ -531,32 +531,54 @@ function irAPregunta(idx) {
 /* ==========================================================
    🏁 FINALIZAR
    ========================================================== */
+/* ==========================================================
+   EN js/resolver.js (Reemplazar renderFin completo)
+   ========================================================== */
+
 function renderFin() {
   stopTimer();
 
-  // 1. Procesar corrección
+  // 1. Guardar las respuestas NUEVAS de esta sesión en PROG
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // 2. Guardar Historial
+  // 2. Cálculo de Nota y Guardado en Historial
   if ((CURRENT.modo === 'personalizado' || CURRENT.modo === 'examen' || CURRENT.modo === 'reanudar') 
-      && typeof window.guardarResultadoSimulacro === 'function' 
-      && CURRENT.config.metaSubjects) {
+      && typeof window.guardarResultadoSimulacro === 'function') {
       
       let correctas = 0;
-      let total = CURRENT.list.length;
-      
-      CURRENT.list.forEach(q => {
-          const uIdx = CURRENT.userAnswers[q.id];
-          const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-          if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
-              correctas++;
-          }
-      });
+      let total = 0;
+
+      // --- LOGICA CORREGIDA PARA EXÁMENES REANUDADOS ---
+      if (CURRENT.config.allQuestionsRef) {
+          // Si tenemos la lista completa (caso Examen Oficial / Reanudar)
+          const fullList = CURRENT.config.allQuestionsRef;
+          total = fullList.length;
+          
+          fullList.forEach(q => {
+              // Verificamos en PROG (localStorage) porque ahí conviven las viejas y las nuevas
+              const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+              if (PROG[mat] && PROG[mat][q.id] && PROG[mat][q.id].status === 'ok') {
+                  correctas++;
+              }
+          });
+
+      } else {
+          // Caso Simulacro (Memoria local de la sesión actual)
+          total = CURRENT.list.length;
+          CURRENT.list.forEach(q => {
+              const uIdx = CURRENT.userAnswers[q.id];
+              const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
+              if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
+                  correctas++;
+              }
+          });
+      }
 
       const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
       
+      // Cálculo de tiempo (solo de esta sesión, lamentablemente no acumulamos tiempo previo por ahora)
       let timeStr = "--:--";
       if (TIMER.start > 0) {
           const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
@@ -579,6 +601,7 @@ function renderFin() {
       window.guardarResultadoSimulacro(resultado);
   }
 
+  // 3. Pantalla Resultados
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
