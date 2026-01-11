@@ -1,32 +1,27 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Final Corregido
+   📊 ESTADÍSTICAS GLOBALES – Calendario Mensual + Heatmap
    ========================================================== */
 
 let STATS_ORDER = "az";
 let statsSearchTerm = "";
+let statsViewMode = "weekly"; // 'weekly' | 'monthly'
+
+// Estado del calendario (Mes actual por defecto)
+let calYear = new Date().getFullYear();
+let calMonth = new Date().getMonth(); // 0-11
 
 function renderStats() {
   const app = document.getElementById("app");
 
-  // --- 1. CÁLCULOS GLOBALES (CORREGIDO) ---
-  let totalPreguntas = 0;
-  // Para evitar contar duplicados si una pregunta tiene 2 materias,
-  // calculamos el total global basándonos en el array de preguntas único.
-  totalPreguntas = BANK.questions.length; 
-
+  // --- 1. CÁLCULOS GLOBALES (Igual que antes) ---
+  let totalPreguntas = BANK.questions.length; 
   let totalRespondidas = 0;
   let totalCorrectas = 0;
   let totalIncorrectas = 0;
 
-  // Recorremos las preguntas directamente para los contadores globales
-  // (Es más preciso que sumar por materias si hay materias compartidas)
   BANK.questions.forEach(q => {
-      // Buscamos el progreso usando la PRIMERA materia asignada (convención de Bank.js)
-      // O buscamos en todas las materias donde pueda estar guardada.
-      // Simplificación: Bank.js guarda el progreso bajo la materia principal o "otras".
       const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
       const prog = PROG[mat] ? PROG[mat][q.id] : null;
-
       if (prog && (prog.status === "ok" || prog.status === "bad")) {
           totalRespondidas++;
           if (prog.status === "ok") totalCorrectas++;
@@ -39,36 +34,55 @@ function renderStats() {
     ? Math.round((totalCorrectas / totalPreguntas) * 100) 
     : 0;
 
-  // --- 2. ACTIVIDAD SEMANAL ---
-  const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
-  const today = new Date();
-  let weeklyTotalCorrect = 0;
+  // --- 2. GENERAR HTML DE ACTIVIDAD (Switch) ---
+  let activityHTML = "";
+  
+  if (statsViewMode === "weekly") {
+      // VISTA SEMANAL (LISTA)
+      const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+      const today = new Date();
+      let weeklyTotalCorrect = 0;
 
-  const weekList = Array.from({ length: 7 }).map((_, i) => {
-    const d = new Date(today);
-    d.setDate(today.getDate() - i);
-    const key = d.toISOString().split('T')[0]; 
-    const count = STATS_DAILY[key] || 0;
-    if(i < 7) weeklyTotalCorrect += count;
+      const weekList = Array.from({ length: 7 }).map((_, i) => {
+        const d = new Date(today);
+        d.setDate(today.getDate() - i);
+        const key = d.toISOString().split('T')[0]; 
+        const count = STATS_DAILY[key] || 0;
+        if(i < 7) weeklyTotalCorrect += count;
 
-    const dd = String(d.getDate()).padStart(2, '0');
-    const mm = String(d.getMonth() + 1).padStart(2, '0');
-    const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
-    const checkIcon = count > 0 ? "✅" : "⬜";
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const colorCount = count > 0 ? "#16a34a" : "#94a3b8"; 
+        const checkIcon = count > 0 ? "✅" : "⬜";
 
-    return `
-      <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
-        <span style="color:#64748b">➤ ${dd}/${mm}</span>
-        <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
-      </div>`;
-  }).reverse().join("");
+        return `
+          <div style="display:flex; justify-content:space-between; align-items:center; margin: 4px 0; font-size: 14px;">
+            <span style="color:#64748b">➤ ${dd}/${mm}</span>
+            <span><b style="color:${colorCount}">${count} correctas</b> ${checkIcon}</span>
+          </div>`;
+      }).reverse().join("");
+
+      activityHTML = `
+          <div style='text-align:left; max-width:300px; margin:auto;'>
+            ${weekList}
+          </div>
+          <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
+            ${weeklyTotalCorrect > 0 
+               ? `🎉 Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>.` 
+               : `💤 Semana tranquila. ¡A practicar!`}
+          </div>
+      `;
+  } else {
+      // VISTA MENSUAL (CALENDARIO)
+      activityHTML = renderCalendarHTML();
+  }
 
   // --- 3. RENDERIZADO PRINCIPAL ---
   app.innerHTML = `
     <div class='card fade' style='text-align:center; max-width: 800px; margin: auto;'>
       
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <h3 style="margin:0; font-size:22px;">📊 Estadísticas generales</h3>
+        <h3 style="margin:0; font-size:22px;">📊 Estadísticas</h3>
         <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569; padding: 8px 16px; font-size: 14px;">
            ⬅ Volver
         </button>
@@ -97,23 +111,25 @@ function renderStats() {
         <div style="height:8px; background:#f1f5f9; border-radius:4px; overflow:hidden; border:1px solid #e2e8f0;">
             <div style="width:${porcentajeProgreso}%; background:#16a34a; height:100%;"></div>
         </div>
-        <div style="font-size:11px; color:#94a3b8; margin-top:3px; text-align:center;">
-           Preguntas aprendidas sobre el total (${totalPreguntas})
-        </div>
       </div>
 
       <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
 
-      <h4 style="margin-bottom:15px; margin-top:0;">📆 Actividad semanal</h4>
-      <div style='text-align:left; max-width:300px; margin:auto;'>
-        ${weekList}
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+          <h4 style="margin:0;">📆 Actividad</h4>
+          <div style="display:flex; background:#f1f5f9; padding:2px; border-radius:8px;">
+              <button onclick="toggleStatsView('weekly')" 
+                      style="border:none; background:${statsViewMode==='weekly'?'white':'transparent'}; padding:4px 12px; font-size:12px; border-radius:6px; box-shadow:${statsViewMode==='weekly'?'0 1px 3px rgba(0,0,0,0.1)':'none'}; color:${statsViewMode==='weekly'?'#0f172a':'#64748b'};">
+                  Semanal
+              </button>
+              <button onclick="toggleStatsView('monthly')" 
+                      style="border:none; background:${statsViewMode==='monthly'?'white':'transparent'}; padding:4px 12px; font-size:12px; border-radius:6px; box-shadow:${statsViewMode==='monthly'?'0 1px 3px rgba(0,0,0,0.1)':'none'}; color:${statsViewMode==='monthly'?'#0f172a':'#64748b'};">
+                  Mensual
+              </button>
+          </div>
       </div>
 
-      <div style="margin-top:15px; padding:10px; background:#eff6ff; border-radius:6px; font-size:13px; color:#1e40af; border:1px solid #dbeafe;">
-        ${weeklyTotalCorrect > 0 
-           ? `🎉 ¡Bien hecho! Esta semana sumaste <b>${weeklyTotalCorrect} correctas</b>. ¡Sigue así!` 
-           : `💤 Esta semana viene tranquila. ¡Es un buen momento para hacer unas preguntas!`}
-      </div>
+      ${activityHTML}
 
       <hr style='margin:20px 0; border: 0; border-top: 1px solid #e2e8f0;'>
 
@@ -127,32 +143,112 @@ function renderStats() {
       <h3 style="margin-bottom:5px;">📈 Estadísticas por materia</h3>
       
       <div style="display:flex; gap:10px; justify-content:center; margin: 15px 0 20px 0;">
-         <input type="text" 
-                placeholder="🔍 Buscar materia..." 
-                value="${statsSearchTerm}"
-                oninput="onSearchStats(this.value)"
+         <input type="text" placeholder="🔍 Buscar materia..." value="${statsSearchTerm}" oninput="onSearchStats(this.value)"
                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; max-width:160px;">
-         
-         <select onchange="onChangeStatsOrder(this.value)" 
-                 style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
+         <select onchange="onChangeStatsOrder(this.value)" style="padding:8px; border:1px solid #cbd5e1; border-radius:6px; font-size:13px; background:white;">
              <option value="az" ${STATS_ORDER === 'az' ? 'selected' : ''}>A-Z</option>
              <option value="progreso" ${STATS_ORDER === 'progreso' ? 'selected' : ''}>% Menor</option>
              <option value="progreso_desc" ${STATS_ORDER === 'progreso_desc' ? 'selected' : ''}>% Mayor</option>
          </select>
       </div>
-      
-      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;">
-          </ul>
-    </div>
-    
-    <div style="text-align:center; margin: 30px 0; font-size:13px; color:#94a3b8;">
-       Vos podés ❤️
+      <ul id="matsList" style="list-style:none; padding:0; margin:0; text-align: left;"></ul>
     </div>
   `;
 
   renderMateriasList();
 }
 
+/* ==========================================================
+   📅 LÓGICA DE CALENDARIO
+   ========================================================== */
+function toggleStatsView(mode) {
+    statsViewMode = mode;
+    renderStats();
+}
+
+function changeMonth(delta) {
+    calMonth += delta;
+    if (calMonth > 11) { calMonth = 0; calYear++; }
+    if (calMonth < 0) { calMonth = 11; calYear--; }
+    renderStats();
+}
+
+function renderCalendarHTML() {
+    const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+    const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+    
+    // Calcular días
+    const firstDay = new Date(calYear, calMonth, 1).getDay(); // 0=Dom, 1=Lun
+    const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+    
+    // Ajustar para que Lunes sea el primer día (Lun=0, Dom=6)
+    // getDay(): Dom=0, Lun=1...
+    // Ajuste: Lun(1)->0, Mar(2)->1, ..., Dom(0)->6
+    let startOffset = firstDay === 0 ? 6 : firstDay - 1;
+
+    let gridHTML = "";
+    
+    // Celdas vacías iniciales
+    for (let i = 0; i < startOffset; i++) {
+        gridHTML += `<div style="height:40px;"></div>`;
+    }
+
+    // Días
+    for (let day = 1; day <= daysInMonth; day++) {
+        // Formato YYYY-MM-DD
+        const key = `${calYear}-${String(calMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const count = STATS_DAILY[key] || 0;
+        
+        // Determinar Color (Intensidad)
+        let bg = "#f1f5f9"; // Default (0)
+        let color = "#64748b";
+        let weight = "400";
+        
+        if (count > 0) {
+            color = "#064e3b"; // Verde muy oscuro texto
+            weight = "700";
+            if (count <= 10) bg = "#bbf7d0";       // Verde claro
+            else if (count <= 40) bg = "#4ade80";  // Verde medio
+            else bg = "#16a34a";                   // Verde fuerte
+            
+            // Si es muy fuerte, texto blanco
+            if (count > 40) color = "white";
+        }
+
+        gridHTML += `
+            <div style="height:40px; background:${bg}; border-radius:6px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:12px; color:${color}; font-weight:${weight}; position:relative;" title="${count} correctas">
+                <span>${day}</span>
+                ${count > 0 ? `<span style="font-size:9px; opacity:0.8;">${count}</span>` : ''}
+            </div>
+        `;
+    }
+
+    return `
+        <div style="background:white; border:1px solid #e2e8f0; border-radius:10px; padding:15px; max-width:400px; margin:auto;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                <button onclick="changeMonth(-1)" style="padding:4px 10px; border-radius:6px;">◀</button>
+                <div style="font-weight:700; color:#1e293b;">${monthNames[calMonth]} ${calYear}</div>
+                <button onclick="changeMonth(1)" style="padding:4px 10px; border-radius:6px;">▶</button>
+            </div>
+            
+            <div style="display:grid; grid-template-columns: repeat(7, 1fr); gap:4px; margin-bottom:6px; text-align:center; font-size:10px; color:#94a3b8; font-weight:700;">
+                <div>L</div><div>M</div><div>M</div><div>J</div><div>V</div><div>S</div><div>D</div>
+            </div>
+
+            <div style="display:grid; grid-template-columns: repeat(7, 1fr); gap:4px;">
+                ${gridHTML}
+            </div>
+
+            <div style="display:flex; gap:10px; justify-content:center; margin-top:15px; font-size:10px; color:#64748b;">
+                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#bbf7d0; border-radius:2px;"></div> 1-10</div>
+                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#4ade80; border-radius:2px;"></div> 11-40</div>
+                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#16a34a; border-radius:2px;"></div> +40</div>
+            </div>
+        </div>
+    `;
+}
+
+// Mantener resto de funciones (renderMateriasList, helpers, etc)...
 /* ==========================================================
    📋 Lista de Materias (Lógica de filtrado corregida)
    ========================================================== */
@@ -165,9 +261,7 @@ function renderMateriasList() {
 
   if (term) list = list.filter(m => normalize(m.name).includes(term));
 
-  // --- HELPER PARA CONTAR (CORREGIDO PARA ARRAYS) ---
   const countMateria = (slug) => {
-      // AQUÍ ESTABA EL ERROR: Usamos .includes() para arrays o comparación directa para strings
       return BANK.questions.filter(q => {
           if (Array.isArray(q.materia)) return q.materia.includes(slug);
           return q.materia === slug;
@@ -201,9 +295,7 @@ function renderMateriasList() {
   }
 
   const listHTML = list.map(m => {
-    // --- USO DEL HELPER CORREGIDO ---
     const totalM = countMateria(m.slug);
-    
     if (totalM === 0) return ""; 
 
     const datos = PROG[m.slug] || {};
@@ -286,6 +378,152 @@ function renderMateriasList() {
 
   container.innerHTML = listHTML;
 }
+
+function getSubjectInsights(slug, name, datos) {
+    let insights = [];
+    const now = new Date();
+    
+    let lastDate = null;
+    Object.values(datos).forEach(p => {
+        if (p.date) {
+            const d = new Date(p.date);
+            if (!lastDate || d > lastDate) lastDate = d;
+        }
+    });
+
+    if (lastDate) {
+        const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
+        if (diffDays > 14) {
+             insights.push(`🕰️ Hace <b>${diffDays} días</b> no practicás esta materia.`);
+        }
+    } else {
+        insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
+    }
+
+    const weakest = getWeakestSubtopic(slug, datos);
+    if (weakest) {
+        const prettyName = formatSubtopicName(weakest.name);
+        insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
+    }
+
+    if (insights.length === 0) return "";
+    return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
+}
+
+function formatSubtopicName(slug) {
+    if(!slug) return "";
+    let text = slug.replace(/[-_]/g, " ");
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function getWeakestSubtopic(mSlug, progData) {
+    const questions = BANK.questions.filter(q => {
+        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        return esMateria && q.submateria; 
+    });
+
+    const groups = {};
+    questions.forEach(q => {
+        const sub = q.submateria;
+        if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
+        groups[sub].total++;
+        if (progData[q.id]) {
+            groups[sub].answered++;
+            if (progData[q.id].status === 'ok') groups[sub].ok++;
+        }
+    });
+
+    let worst = null;
+    let minPct = 101;
+
+    Object.keys(groups).forEach(subName => {
+        const g = groups[subName];
+        if (g.answered >= 3) {
+            const pct = Math.round((g.ok / g.answered) * 100);
+            if (pct < minPct) {
+                minPct = pct;
+                worst = { name: subName, pct: pct };
+            }
+        }
+    });
+    return worst;
+}
+
+function getPieChartStyle(ok, bad, none, total) {
+    if (total === 0) return `background: #e2e8f0;`; 
+    
+    const degOk = (ok / total) * 360;
+    const degBad = (bad / total) * 360;
+
+    return `background: conic-gradient(
+        #16a34a 0deg ${degOk}deg, 
+        #ef4444 ${degOk}deg ${degOk + degBad}deg, 
+        #e2e8f0 ${degOk + degBad}deg 360deg
+    );`;
+}
+
+function toggleStatsAcc(slug) {
+  const el = document.getElementById(`stat-${slug}`);
+  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
+}
+
+function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
+function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
+
+function goToPracticeFromStats(slug) {
+    if (window.renderChoice) {
+        renderChoice();
+        setTimeout(() => {
+            if(typeof toggleMateriaChoice === 'function') {
+                toggleMateriaChoice(slug);
+            }
+        }, 50);
+    } else {
+        alert("Error: No se encuentra la pantalla de práctica.");
+    }
+}
+
+function checkAndGoToNotes(slug, name) {
+    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+    // Filtrar notas que pertenezcan a preguntas de esta materia
+    const idsConNotas = Object.keys(savedNotes);
+    
+    const preguntasMateria = BANK.questions.filter(q => {
+        if(Array.isArray(q.materia)) return q.materia.includes(slug);
+        return q.materia === slug;
+    });
+    
+    const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
+    
+    if(hasNotes) {
+        if(window.renderNotasMain) {
+            renderNotasMain(); 
+        }
+    } else {
+        alert(`Todavía no tenés notas de ${name}!`);
+    }
+}
+
+function resetGlobalStats() {
+  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
+    localStorage.removeItem("MEbank_PROG_v3");
+    localStorage.removeItem("mebank_stats_daily");
+    location.reload();
+  }
+}
+
+function resetSubjectStats(slug, name) {
+    if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
+        if (PROG[slug]) {
+            delete PROG[slug];
+            if(window.saveProgress) window.saveProgress();
+            renderStats();
+        }
+    }
+}
+
+window.renderStats = renderStats;
 
 /* ==========================================================
    🧠 Lógica Inteligente (Insights)
