@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Con Favoritos)
+   🎯 MEbank 3.0 – Motor de resolución (Optimizado)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -116,11 +116,11 @@ function renderPregunta() {
       explicacionInicial = `<div class="q-explanation fade"><strong>💡 Explicación:</strong><br>${q.explicacion}<div style="margin-top:10px; text-align:right;"><button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button></div></div>`;
   }
 
-  // --- CSS LOCAL PARA LAYOUT Y BOTONES ---
+  // --- CSS LOCAL ---
   const localStyles = `
     <style>
-        /* Botonera de Navegación Dividida */
-        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 25px; padding-top: 20px; border-top: 1px solid #f1f5f9; }
+        /* Botonera de Navegación */
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px; padding-top: 15px; border-top: 1px solid #f1f5f9; }
         .nav-group { display: flex; gap: 10px; }
         .btn-res {
             padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
@@ -129,18 +129,15 @@ function renderPregunta() {
         .btn-res:hover { background: #f8fafc; color: #1e293b; border-color: #cbd5e1; }
         .btn-res:disabled { opacity: 0.5; cursor: not-allowed; }
 
-        /* Barra de Acciones (Favorito + Nota) */
-        .action-bar { display: flex; gap: 10px; margin-top: 25px; border-top: 1px dashed #e2e8f0; padding-top: 15px; flex-wrap: wrap; }
+        /* Barra de Acciones (Compacta) */
+        .action-bar { display: flex; gap: 8px; margin-top: 20px; border-top: 1px dashed #e2e8f0; padding-top: 12px; }
         .btn-action-user {
-            flex: 1; min-width: 140px; display: flex; align-items: center; justify-content: center; gap: 6px;
-            padding: 8px 12px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;
+            flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
+            padding: 8px 10px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;
             border: 1px solid #e2e8f0; background: white; color: #64748b; transition: all 0.2s;
         }
-        .btn-action-user:hover { background: #f8fafc; color: #334155; border-color: #cbd5e1; }
-        
+        .btn-action-user:hover { background: #f8fafc; color: #334155; }
         .btn-action-user.has-note { background: #fefce8; border-color: #facc15; color: #854d0e; }
-        
-        /* ESTILO BOTÓN FAVORITO (NEGRO CUANDO ACTIVO) */
         .btn-action-user.is-fav { background: #1e293b; border-color: #0f172a; color: white; }
 
         .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: #f8fafc; border-radius: 8px; }
@@ -300,7 +297,7 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🏁 FINALIZAR
+   🏁 FINALIZAR (CON LÓGICA DE FUSIÓN DE DATOS)
    ========================================================== */
 function renderFin() {
   stopTimer();
@@ -309,6 +306,7 @@ function renderFin() {
       procesarResultadosExamenFinal();
   }
 
+  // Fusión de datos (Fix Reanudar)
   if (CURRENT.config.allQuestionsRef && CURRENT.config.allQuestionsRef.length > 0) {
       CURRENT.list = CURRENT.config.allQuestionsRef; 
       CURRENT.list.forEach(q => {
@@ -507,7 +505,7 @@ function reviewIncorrectOnly() {
 }
 
 /* ==========================================================
-   AUXILIARES
+   AUXILIARES & HELPERS VISUALES (SIDEBAR + IMÁGENES)
    ========================================================== */
 function initTimer() {
   stopTimer(); TIMER.start = Date.now();
@@ -522,6 +520,7 @@ function initTimer() {
   }, 1000);
 }
 function stopTimer() { if (TIMER.interval) clearInterval(TIMER.interval); TIMER.interval = null; const el = document.getElementById("exam-timer"); if (el) el.style.display = "none"; }
+
 function toggleNoteArea(id) { const area = document.getElementById(`note-area-${id}`); if(area) area.style.display = (area.style.display === "none") ? "block" : "none"; }
 function saveNoteResolver(id) {
     const txt = document.getElementById(`note-text-${id}`).value;
@@ -561,121 +560,44 @@ function getMateriaNombreForQuestion(q) {
   const nombres = materias.map(slug => { if (typeof BANK !== 'undefined' && BANK.subjects) { const mat = BANK.subjects.find(s => s.slug === slug); return mat ? mat.name : slug; } return slug; });
   return nombres.join(" | ");
 }
-/* ==========================================================
-   🖼 HELPERS VISUALES & SIDEBAR (AGREGAR AL FINAL DE resolver.js)
-   ========================================================== */
 
+// HELPERS VISUALES (Imágenes y Sidebar)
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
-  return `
-    <div class="q-images-container">
-       ${imgs.map((src, idx) => `
-          <div class="q-image-thumbnail" onclick="openImgModal('${src}', 'Imagen ${idx+1}')">
-             <img src="${src}" alt="Imagen clínica" loading="lazy">
-             <div class="q-image-zoom-hint">🔍 Ampliar</div>
-          </div>
-       `).join("")}
-    </div>
-  `;
+  return `<div class="q-images-container">${imgs.map((src, idx) => `<div class="q-image-thumbnail" onclick="openImgModal('${src}', 'Imagen ${idx+1}')"><img src="${src}" alt="Imagen clínica" loading="lazy"><div class="q-image-zoom-hint">🔍 Ampliar</div></div>`).join("")}</div>`;
 }
-
 window.openImgModal = (src, caption) => {
-  const modal = document.getElementById("imgModal");
-  const modalImg = document.getElementById("imgInModal");
-  const captionText = document.getElementById("imgCaption");
-  if(modal && modalImg) {
-      modal.style.display = "flex";
-      modalImg.src = src;
-      if(captionText) captionText.innerHTML = caption || "";
-  }
+  const modal = document.getElementById("imgModal"); const modalImg = document.getElementById("imgInModal"); const captionText = document.getElementById("imgCaption");
+  if(modal && modalImg) { modal.style.display = "flex"; modalImg.src = src; if(captionText) captionText.innerHTML = caption || ""; }
 };
+window.closeImgModal = () => { const modal = document.getElementById("imgModal"); if(modal) modal.style.display = "none"; };
 
-window.closeImgModal = () => {
-  const modal = document.getElementById("imgModal");
-  if(modal) modal.style.display = "none";
-};
-
-/* --- LÓGICA DEL SIDEBAR (ÍNDICE) --- */
-
-function toggleMobileSidebar() {
-    const sb = document.getElementById("sidebarEl");
-    if(sb) sb.classList.toggle("active-mobile");
-}
-
-function sbNextPage() {
-    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
-    if (SB_PAGE < totalPages - 1) {
-        SB_PAGE++;
-        refreshSidebarContent();
-    }
-}
-
-function sbPrevPage() {
-    if (SB_PAGE > 0) {
-        SB_PAGE--;
-        refreshSidebarContent();
-    }
-}
-
-function refreshSidebarContent() {
-    const grid = document.getElementById("sbGrid");
-    if(grid) grid.innerHTML = renderSidebarCells();
-    paintSidebarPageInfo();
-}
-
-function ensureSidebarOnCurrent() {
-  const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
-  SB_PAGE = targetPage;
-}
-
-function paintSidebarPageInfo() {
-    const el = document.getElementById("sbInfo");
-    if(!el) return;
-    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
-    el.textContent = `${SB_PAGE + 1}/${totalPages}`;
-}
+function toggleMobileSidebar() { const sb = document.getElementById("sidebarEl"); if(sb) sb.classList.toggle("active-mobile"); }
+function sbNextPage() { const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE); if (SB_PAGE < totalPages - 1) { SB_PAGE++; refreshSidebarContent(); } }
+function sbPrevPage() { if (SB_PAGE > 0) { SB_PAGE--; refreshSidebarContent(); } }
+function refreshSidebarContent() { const grid = document.getElementById("sbGrid"); if(grid) grid.innerHTML = renderSidebarCells(); paintSidebarPageInfo(); }
+function ensureSidebarOnCurrent() { const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE); SB_PAGE = targetPage; }
+function paintSidebarPageInfo() { const el = document.getElementById("sbInfo"); if(!el) return; const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE); el.textContent = `${SB_PAGE + 1}/${totalPages}`; }
 
 function renderSidebarCells() {
-  const total = CURRENT.list.length;
-  const start = SB_PAGE * SB_PAGE_SIZE;
-  const end = Math.min(total, start + SB_PAGE_SIZE);
+  const total = CURRENT.list.length; const start = SB_PAGE * SB_PAGE_SIZE; const end = Math.min(total, start + SB_PAGE_SIZE);
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
-  
   const isExamMode = (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision');
-
   const out = [];
   for (let idx = start; idx < end; idx++) {
-    const q = CURRENT.list[idx];
-    const esActual = idx === CURRENT.i;
-    const userAns = CURRENT.userAnswers[q.id];
-
-    let cls = "sb-cell";
-    if (esActual) cls += " sb-active";
-    if (savedNotes[q.id]) cls += " sb-note";
-
-    if (isExamMode) {
-        if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral";
-    } else {
+    const q = CURRENT.list[idx]; const esActual = idx === CURRENT.i; const userAns = CURRENT.userAnswers[q.id];
+    let cls = "sb-cell"; if (esActual) cls += " sb-active"; if (savedNotes[q.id]) cls += " sb-note";
+    if (isExamMode) { if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral"; } 
+    else {
         const estado = CURRENT.session[q.id]; 
-        if (estado === "ok") cls += " sb-ok";
-        if (estado === "bad") cls += " sb-bad";
-        
+        if (estado === "ok") cls += " sb-ok"; if (estado === "bad") cls += " sb-bad";
         if (CURRENT.modo === 'revision' && userAns !== undefined) {
-             const ops = getOpcionesArray(q);
-             const rIdx = getCorrectIndex(q, ops.length);
-             if(!cls.includes('sb-ok') && !cls.includes('sb-bad')) {
-                 cls += (userAns === rIdx) ? " sb-ok" : " sb-bad";
-             }
+             const ops = getOpcionesArray(q); const rIdx = getCorrectIndex(q, ops.length);
+             if(!cls.includes('sb-ok') && !cls.includes('sb-bad')) { cls += (userAns === rIdx) ? " sb-ok" : " sb-bad"; }
         }
     }
-
     out.push(`<div class="${cls}" onclick="irAPregunta(${idx}); toggleMobileSidebar();">${idx + 1}</div>`);
   }
   return out.join("");
 }
-
-function irAPregunta(idx) {
-  if (idx < 0 || idx >= CURRENT.list.length) return;
-  CURRENT.i = idx;
-  renderPregunta();
-}
+function irAPregunta(idx) { if (idx < 0 || idx >= CURRENT.list.length) return; CURRENT.i = idx; renderPregunta(); }
