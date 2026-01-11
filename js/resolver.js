@@ -532,53 +532,72 @@ function irAPregunta(idx) {
    🏁 FINALIZAR
    ========================================================== */
 /* ==========================================================
-   EN js/resolver.js (Reemplazar renderFin completo)
+   EN js/resolver.js (Reemplazo de renderFin con Fusión de Datos)
    ========================================================== */
 
 function renderFin() {
   stopTimer();
 
-  // 1. Guardar las respuestas NUEVAS de esta sesión en PROG
+  // 1. PRIMERO: Guardar las respuestas NUEVAS de esta sesión en localStorage (PROG)
+  // Esto asegura que lo que acabas de responder quede registrado antes de cualquier cálculo.
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // 2. Cálculo de Nota y Guardado en Historial
+  // 2. CRÍTICO: RECONSTRUCCIÓN DEL EXAMEN COMPLETO (FIX REANUDAR)
+  // Si tenemos una referencia de todas las preguntas (examen reanudado),
+  // reemplazamos la lista parcial por la total y rellenamos las respuestas viejas.
+  if (CURRENT.config.allQuestionsRef && CURRENT.config.allQuestionsRef.length > 0) {
+      
+      // A. Reemplazamos la lista de sesión (91 preguntas) por la total (100 preguntas)
+      CURRENT.list = CURRENT.config.allQuestionsRef;
+
+      // B. Rellenamos las respuestas viejas leyendo de PROG
+      // (Porque userAnswers solo tiene las 91 nuevas)
+      CURRENT.list.forEach(q => {
+          // Si ya tiene respuesta en esta sesión, la respetamos.
+          if (CURRENT.userAnswers[q.id] !== undefined && CURRENT.userAnswers[q.id] !== null) return;
+
+          // Si no está en sesión, buscamos en el historial (PROG)
+          const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
+          
+          if (PROG[mat] && PROG[mat][q.id]) {
+              const status = PROG[mat][q.id].status;
+              const correctIdx = getCorrectIndex(q, getOpcionesArray(q).length);
+              
+              if (status === 'ok') {
+                  // Reconstruimos: marcamos la correcta
+                  CURRENT.userAnswers[q.id] = correctIdx;
+              } else {
+                  // Reconstruimos: marcamos una incorrecta cualquiera para que cuente como error
+                  // (Como PROG no guarda cuál incorrecta elegiste hace un mes, elegimos una dummy distinta a la correcta)
+                  CURRENT.userAnswers[q.id] = (correctIdx === 0) ? 1 : 0; 
+              }
+          }
+      });
+  }
+
+  // 3. AHORA SÍ: Guardar Historial y Calcular Nota
+  // (Ahora CURRENT.list tiene 100 y userAnswers tiene 100)
   if ((CURRENT.modo === 'personalizado' || CURRENT.modo === 'examen' || CURRENT.modo === 'reanudar') 
-      && typeof window.guardarResultadoSimulacro === 'function') {
+      && typeof window.guardarResultadoSimulacro === 'function' 
+      && CURRENT.config.metaSubjects) {
       
       let correctas = 0;
-      let total = 0;
-
-      // --- LOGICA CORREGIDA PARA EXÁMENES REANUDADOS ---
-      if (CURRENT.config.allQuestionsRef) {
-          // Si tenemos la lista completa (caso Examen Oficial / Reanudar)
-          const fullList = CURRENT.config.allQuestionsRef;
-          total = fullList.length;
+      let total = CURRENT.list.length; // Ahora será 100
+      
+      CURRENT.list.forEach(q => {
+          const uIdx = CURRENT.userAnswers[q.id];
+          const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
           
-          fullList.forEach(q => {
-              // Verificamos en PROG (localStorage) porque ahí conviven las viejas y las nuevas
-              const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
-              if (PROG[mat] && PROG[mat][q.id] && PROG[mat][q.id].status === 'ok') {
-                  correctas++;
-              }
-          });
-
-      } else {
-          // Caso Simulacro (Memoria local de la sesión actual)
-          total = CURRENT.list.length;
-          CURRENT.list.forEach(q => {
-              const uIdx = CURRENT.userAnswers[q.id];
-              const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-              if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
-                  correctas++;
-              }
-          });
-      }
+          if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
+              correctas++;
+          }
+      });
 
       const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
       
-      // Cálculo de tiempo (solo de esta sesión, lamentablemente no acumulamos tiempo previo por ahora)
+      // Tiempo: Solo registra el de la sesión actual (limitación técnica aceptable)
       let timeStr = "--:--";
       if (TIMER.start > 0) {
           const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
@@ -601,13 +620,14 @@ function renderFin() {
       window.guardarResultadoSimulacro(resultado);
   }
 
-  // 3. Pantalla Resultados
+  // 4. Mostrar Pantalla de Resultados
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
       renderFinSimple();
   }
 }
+
 
 function procesarResultadosExamenFinal() {
     const list = CURRENT.list;
