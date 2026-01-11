@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – Calendario Mensual + Heatmap
+   📊 ESTADÍSTICAS GLOBALES – Final Pulido
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -13,7 +13,7 @@ let calMonth = new Date().getMonth(); // 0-11
 function renderStats() {
   const app = document.getElementById("app");
 
-  // --- 1. CÁLCULOS GLOBALES (Igual que antes) ---
+  // --- 1. CÁLCULOS GLOBALES ---
   let totalPreguntas = BANK.questions.length; 
   let totalRespondidas = 0;
   let totalCorrectas = 0;
@@ -30,6 +30,7 @@ function renderStats() {
   });
 
   const totalSinResponder = totalPreguntas - totalRespondidas;
+  // Progreso total (Learned %)
   const porcentajeProgreso = totalPreguntas > 0 
     ? Math.round((totalCorrectas / totalPreguntas) * 100) 
     : 0;
@@ -38,7 +39,7 @@ function renderStats() {
   let activityHTML = "";
   
   if (statsViewMode === "weekly") {
-      // VISTA SEMANAL (LISTA)
+      // VISTA SEMANAL
       const STATS_DAILY = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
       const today = new Date();
       let weeklyTotalCorrect = 0;
@@ -73,7 +74,7 @@ function renderStats() {
           </div>
       `;
   } else {
-      // VISTA MENSUAL (CALENDARIO)
+      // VISTA MENSUAL
       activityHTML = renderCalendarHTML();
   }
 
@@ -178,40 +179,34 @@ function renderCalendarHTML() {
     const monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
     
     // Calcular días
-    const firstDay = new Date(calYear, calMonth, 1).getDay(); // 0=Dom, 1=Lun
+    const firstDay = new Date(calYear, calMonth, 1).getDay(); // 0=Dom
     const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
     
-    // Ajustar para que Lunes sea el primer día (Lun=0, Dom=6)
-    // getDay(): Dom=0, Lun=1...
-    // Ajuste: Lun(1)->0, Mar(2)->1, ..., Dom(0)->6
+    // Ajustar para que Lunes sea el primer día
     let startOffset = firstDay === 0 ? 6 : firstDay - 1;
 
     let gridHTML = "";
     
-    // Celdas vacías iniciales
+    // Celdas vacías
     for (let i = 0; i < startOffset; i++) {
         gridHTML += `<div style="height:40px;"></div>`;
     }
 
     // Días
     for (let day = 1; day <= daysInMonth; day++) {
-        // Formato YYYY-MM-DD
         const key = `${calYear}-${String(calMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
         const count = STATS_DAILY[key] || 0;
         
-        // Determinar Color (Intensidad)
-        let bg = "#f1f5f9"; // Default (0)
+        let bg = "#f1f5f9"; 
         let color = "#64748b";
         let weight = "400";
         
         if (count > 0) {
-            color = "#064e3b"; // Verde muy oscuro texto
+            color = "#064e3b"; 
             weight = "700";
-            if (count <= 10) bg = "#bbf7d0";       // Verde claro
-            else if (count <= 40) bg = "#4ade80";  // Verde medio
-            else bg = "#16a34a";                   // Verde fuerte
-            
-            // Si es muy fuerte, texto blanco
+            if (count <= 10) bg = "#bbf7d0";       
+            else if (count <= 40) bg = "#4ade80";  
+            else bg = "#16a34a";                   
             if (count > 40) color = "white";
         }
 
@@ -223,6 +218,7 @@ function renderCalendarHTML() {
         `;
     }
 
+    // ACLARACIÓN AGREGADA AL FINAL
     return `
         <div style="background:white; border:1px solid #e2e8f0; border-radius:10px; padding:15px; max-width:400px; margin:auto;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
@@ -239,18 +235,22 @@ function renderCalendarHTML() {
                 ${gridHTML}
             </div>
 
-            <div style="display:flex; gap:10px; justify-content:center; margin-top:15px; font-size:10px; color:#64748b;">
-                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#bbf7d0; border-radius:2px;"></div> 1-10</div>
-                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#4ade80; border-radius:2px;"></div> 11-40</div>
-                <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#16a34a; border-radius:2px;"></div> +40</div>
+            <div style="display:flex; flex-direction:column; gap:8px; align-items:center; margin-top:15px; border-top:1px dashed #e2e8f0; padding-top:10px;">
+                <div style="display:flex; gap:10px; justify-content:center; font-size:10px; color:#64748b;">
+                    <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#bbf7d0; border-radius:2px;"></div> 1-10</div>
+                    <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#4ade80; border-radius:2px;"></div> 11-40</div>
+                    <div style="display:flex; align-items:center; gap:4px;"><div style="width:8px; height:8px; background:#16a34a; border-radius:2px;"></div> +40</div>
+                </div>
+                <div style="font-size:11px; font-weight:600; color:#64748b;">
+                   (Los números indican respuestas correctas)
+                </div>
             </div>
         </div>
     `;
 }
 
-// Mantener resto de funciones (renderMateriasList, helpers, etc)...
 /* ==========================================================
-   📋 Lista de Materias (Lógica de filtrado corregida)
+   📋 LISTA DE MATERIAS (Calculo corregido: "Learned %")
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
@@ -269,13 +269,14 @@ function renderMateriasList() {
   };
 
   list.sort((a, b) => {
-    const getPct = (slug) => {
+    // Ordenar también por Progreso Real (Learned)
+    const getLearnedPct = (slug) => {
         const total = countMateria(slug);
         if (total === 0) return 0;
         const p = PROG[slug] || {};
-        let ok = 0, bad = 0;
-        Object.values(p).forEach(x => { if(x.status==='ok') ok++; if(x.status==='bad') bad++; });
-        return (ok+bad) > 0 ? (ok/(ok+bad))*100 : 0;
+        let ok = 0;
+        Object.values(p).forEach(x => { if(x.status==='ok') ok++; });
+        return Math.round((ok / total) * 100);
     };
 
     if (STATS_ORDER === 'az') {
@@ -283,9 +284,9 @@ function renderMateriasList() {
         const cleanB = b.name.replace(/[^\p{L}\p{N} ]/gu, "").trim();
         return cleanA.localeCompare(cleanB, "es", { sensitivity: "base" });
     } else if (STATS_ORDER === 'progreso') {
-        return getPct(a.slug) - getPct(b.slug);
+        return getLearnedPct(a.slug) - getLearnedPct(b.slug);
     } else {
-        return getPct(b.slug) - getPct(a.slug);
+        return getLearnedPct(b.slug) - getLearnedPct(a.slug);
     }
   });
 
@@ -305,10 +306,18 @@ function renderMateriasList() {
       if (p.status === "bad") bad++;
     });
     
-    const resp = ok + bad;
-    const pct = resp > 0 ? Math.round((ok / resp) * 100) : 0;
-    const noresp = totalM - resp;
-    const colorPct = pct >= 70 ? "#16a34a" : (pct >= 50 ? "#f59e0b" : "#ef4444");
+    // --- CAMBIO CLAVE: CÁLCULO DE % APRENDIDO ---
+    // Antes: (ok / (ok+bad)) * 100 -> Efectividad
+    // Ahora: (ok / totalM) * 100 -> Progreso Real
+    const pctLearned = Math.round((ok / totalM) * 100);
+
+    const noresp = totalM - (ok + bad);
+    
+    // Color basado en cuánto completaste de la materia
+    let colorPct = "#64748b"; // Gris si es bajo
+    if(pctLearned >= 20) colorPct = "#eab308";
+    if(pctLearned >= 50) colorPct = "#16a34a";
+    if(pctLearned >= 80) colorPct = "#15803d";
 
     const insights = getSubjectInsights(m.slug, m.name, datos);
     const pieStyle = getPieChartStyle(ok, bad, noresp, totalM); 
@@ -317,7 +326,6 @@ function renderMateriasList() {
 
     return `
       <li style="margin-bottom: 10px;">
-        
         <div onclick="toggleStatsAcc('${m.slug}')"
              style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px;
                     padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between;
@@ -327,7 +335,7 @@ function renderMateriasList() {
             ${m.name}
           </div>
           <div style="font-size: 14px; font-weight: bold; color: ${colorPct};">
-            ${pct}%
+            ${pctLearned}%
           </div>
         </div>
 
@@ -346,22 +354,18 @@ function renderMateriasList() {
             <div style="width:100px; height:100px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.05);"></div>
 
             <div style="display:flex; flex-direction:column; gap:8px; align-items:flex-end; flex:1; max-width: 150px;">
-               
                <button style="${btnBase} background: #eff6ff; border: 1px solid #93c5fd;"
                        onclick="goToPracticeFromStats('${m.slug}')">
                  ▶ Ir a practicar
                </button>
-               
                <button style="${btnBase} background: #fefce8; border: 1px solid #fde047;"
                        onclick="checkAndGoToNotes('${m.slug}', '${m.name}')">
                  📝 Mis notas
                </button>
-
                <button style="${btnBase} background: #fef2f2; border: 1px solid #fca5a5;"
                        onclick="resetSubjectStats('${m.slug}', '${m.name}')">
                  🗑 Reiniciar materia
                </button>
-
             </div>
           </div>
 
@@ -379,14 +383,19 @@ function renderMateriasList() {
   container.innerHTML = listHTML;
 }
 
+/* ==========================================================
+   🧠 Lógica Inteligente (Insights) - CORREGIDA
+   ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
     const now = new Date();
     
     let lastDate = null;
     Object.values(datos).forEach(p => {
-        if (p.date) {
-            const d = new Date(p.date);
+        // --- CORRECCIÓN BUG: p.fecha en vez de p.date ---
+        const ts = p.fecha || p.date; 
+        if (ts) {
+            const d = new Date(ts);
             if (!lastDate || d > lastDate) lastDate = d;
         }
     });
@@ -400,9 +409,11 @@ function getSubjectInsights(slug, name, datos) {
         insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
     }
 
+    // --- CORRECCIÓN: Pasar Slug para buscar nombre bonito ---
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
-        const prettyName = formatSubtopicName(weakest.name);
+        // Usamos la nueva función formateadora que busca en BANK.subsubjects
+        const prettyName = formatSubtopicName(weakest.name, slug);
         insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
     }
 
@@ -410,15 +421,25 @@ function getSubjectInsights(slug, name, datos) {
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
 
-function formatSubtopicName(slug) {
-    if(!slug) return "";
-    let text = slug.replace(/[-_]/g, " ");
+// --- NUEVA LÓGICA DE NOMBRES DE SUBTEMAS ---
+function formatSubtopicName(subSlug, materiaSlug) {
+    if(!subSlug) return "";
+    
+    // Intentar buscar el nombre real en la configuración
+    if (typeof BANK !== 'undefined' && BANK.subsubjects && materiaSlug) {
+        const listaOficial = BANK.subsubjects[materiaSlug] || [];
+        // Normalizamos la lista oficial para comparar
+        const match = listaOficial.find(nombreReal => normalize(nombreReal) === subSlug);
+        if (match) return match; // Devolvemos "Atención Primaria..."
+    }
+    
+    // Fallback: Capitalizar si no se encuentra
+    let text = subSlug.replace(/[-_]/g, " ");
     return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
 function getWeakestSubtopic(mSlug, progData) {
     const questions = BANK.questions.filter(q => {
-        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
         const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         return esMateria && q.submateria; 
     });
@@ -486,172 +507,15 @@ function goToPracticeFromStats(slug) {
 
 function checkAndGoToNotes(slug, name) {
     const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
-    // Filtrar notas que pertenezcan a preguntas de esta materia
     const idsConNotas = Object.keys(savedNotes);
-    
     const preguntasMateria = BANK.questions.filter(q => {
         if(Array.isArray(q.materia)) return q.materia.includes(slug);
         return q.materia === slug;
     });
-    
     const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
     
     if(hasNotes) {
-        if(window.renderNotasMain) {
-            renderNotasMain(); 
-        }
-    } else {
-        alert(`Todavía no tenés notas de ${name}!`);
-    }
-}
-
-function resetGlobalStats() {
-  if (confirm("⚠️ ¿Seguro que querés borrar TODAS las estadísticas?")) {
-    localStorage.removeItem("MEbank_PROG_v3");
-    localStorage.removeItem("mebank_stats_daily");
-    location.reload();
-  }
-}
-
-function resetSubjectStats(slug, name) {
-    if (confirm(`¿Estás seguro que querés borrar tu progreso de ${name}?`)) {
-        if (PROG[slug]) {
-            delete PROG[slug];
-            if(window.saveProgress) window.saveProgress();
-            renderStats();
-        }
-    }
-}
-
-window.renderStats = renderStats;
-
-/* ==========================================================
-   🧠 Lógica Inteligente (Insights)
-   ========================================================== */
-function getSubjectInsights(slug, name, datos) {
-    let insights = [];
-    const now = new Date();
-    
-    let lastDate = null;
-    Object.values(datos).forEach(p => {
-        if (p.date) {
-            const d = new Date(p.date);
-            if (!lastDate || d > lastDate) lastDate = d;
-        }
-    });
-
-    if (lastDate) {
-        const diffDays = Math.floor((now - lastDate) / (1000 * 60 * 60 * 24));
-        if (diffDays > 14) {
-             insights.push(`🕰️ Hace <b>${diffDays} días</b> no practicás esta materia.`);
-        }
-    } else {
-        insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
-    }
-
-    const weakest = getWeakestSubtopic(slug, datos);
-    if (weakest) {
-        const prettyName = formatSubtopicName(weakest.name);
-        insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
-    }
-
-    if (insights.length === 0) return "";
-    return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
-}
-
-function formatSubtopicName(slug) {
-    if(!slug) return "";
-    let text = slug.replace(/[-_]/g, " ");
-    return text.charAt(0).toUpperCase() + text.slice(1);
-}
-
-function getWeakestSubtopic(mSlug, progData) {
-    const questions = BANK.questions.filter(q => {
-        // CORREGIDO TAMBIÉN AQUÍ PARA INSIGHTS
-        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-        return esMateria && q.submateria; 
-    });
-
-    const groups = {};
-    questions.forEach(q => {
-        const sub = q.submateria;
-        if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
-        groups[sub].total++;
-        if (progData[q.id]) {
-            groups[sub].answered++;
-            if (progData[q.id].status === 'ok') groups[sub].ok++;
-        }
-    });
-
-    let worst = null;
-    let minPct = 101;
-
-    Object.keys(groups).forEach(subName => {
-        const g = groups[subName];
-        if (g.answered >= 3) {
-            const pct = Math.round((g.ok / g.answered) * 100);
-            if (pct < minPct) {
-                minPct = pct;
-                worst = { name: subName, pct: pct };
-            }
-        }
-    });
-    return worst;
-}
-
-function getPieChartStyle(ok, bad, none, total) {
-    if (total === 0) return `background: #e2e8f0;`; 
-    
-    const degOk = (ok / total) * 360;
-    const degBad = (bad / total) * 360;
-
-    return `background: conic-gradient(
-        #16a34a 0deg ${degOk}deg, 
-        #ef4444 ${degOk}deg ${degOk + degBad}deg, 
-        #e2e8f0 ${degOk + degBad}deg 360deg
-    );`;
-}
-
-/* ==========================================================
-   🔧 Navegación y Utilidades
-   ========================================================== */
-function toggleStatsAcc(slug) {
-  const el = document.getElementById(`stat-${slug}`);
-  if (el) el.style.display = el.style.display === "none" ? "block" : "none";
-}
-
-function onSearchStats(val) { statsSearchTerm = val; renderMateriasList(); }
-function onChangeStatsOrder(val) { STATS_ORDER = val; renderMateriasList(); }
-
-function goToPracticeFromStats(slug) {
-    if (window.renderChoice) {
-        renderChoice();
-        setTimeout(() => {
-            if(typeof toggleMateriaChoice === 'function') {
-                toggleMateriaChoice(slug);
-            }
-        }, 50);
-    } else {
-        alert("Error: No se encuentra la pantalla de práctica.");
-    }
-}
-
-function checkAndGoToNotes(slug, name) {
-    const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
-    // Filtrar notas que pertenezcan a preguntas de esta materia
-    const idsConNotas = Object.keys(savedNotes);
-    
-    const preguntasMateria = BANK.questions.filter(q => {
-        if(Array.isArray(q.materia)) return q.materia.includes(slug);
-        return q.materia === slug;
-    });
-    
-    const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
-    
-    if(hasNotes) {
-        if(window.renderNotasMain) {
-            renderNotasMain(); 
-        }
+        if(window.renderNotasMain) renderNotasMain(); 
     } else {
         alert(`Todavía no tenés notas de ${name}!`);
     }
