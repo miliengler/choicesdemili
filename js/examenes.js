@@ -419,6 +419,10 @@ function iniciarExamenConCheck(id, yaIniciado) {
     iniciarExamen(id);
 }
 
+/* ==========================================================
+   EN js/examenes.js (Actualizar Iniciar y Reanudar)
+   ========================================================== */
+
 function iniciarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
   if (!preguntas.length) return alert("No se encontraron preguntas.");
@@ -428,23 +432,27 @@ function iniciarExamen(id) {
   
   iniciarResolucion({ 
       modo: "examen", 
-      preguntas, 
+      preguntas: preguntas, // Aquí van todas
       usarTimer: checkTimer ? checkTimer.checked : false, 
       titulo: formatearNombreExamen(id), 
       examenId: id,
       correccionFinal: checkCorrection ? checkCorrection.checked : false,
       metaSubjects: [id],
-      metaIsOfficial: true
+      metaIsOfficial: true,
+      allQuestionsRef: preguntas // Referencia para cálculo final
   });
 }
 
 function reanudarExamen(id) {
-  const preguntas = getQuestionsByExamen(id);
-  const pendientes = preguntas.filter(q => { 
+  const todasLasPreguntas = getQuestionsByExamen(id);
+  
+  // Filtramos pendientes para que el usuario solo responda lo que falta
+  const pendientes = todasLasPreguntas.filter(q => { 
       const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
       const r = PROG[mat]?.[q.id]; 
       return !r || (r.status !== 'ok' && r.status !== 'bad'); 
   });
+  
   if(pendientes.length === 0) return alert("¡Examen completado! Podés iniciar uno nuevo.");
   
   const checkTimer = document.getElementById(`timer-check-${id}`);
@@ -452,15 +460,17 @@ function reanudarExamen(id) {
 
   iniciarResolucion({ 
       modo: "reanudar", 
-      preguntas: pendientes, 
+      preguntas: pendientes, // El usuario solo ve las pendientes
       usarTimer: checkTimer ? checkTimer.checked : true, 
       titulo: formatearNombreExamen(id) + " (Cont.)", 
       examenId: id,
       correccionFinal: checkCorrection ? checkCorrection.checked : false,
       metaSubjects: [id],
-      metaIsOfficial: true
+      metaIsOfficial: true,
+      allQuestionsRef: todasLasPreguntas // IMPORTANTE: Pasamos TODAS para calcular la nota real al final
   });
 }
+
 
 function resetearExamen(id) {
     if(!confirm("⚠ ¿Borrar el progreso actual? (Tus respuestas se perderán, pero el historial de notas queda).")) return;
