@@ -1,5 +1,5 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (Estética Final)
+   📝 MEbank 3.0 – Exámenes Anteriores (Estética Choice Unificada)
    ========================================================== */
 
 /* ==========================================================
@@ -42,91 +42,68 @@ function renderExamenesMain() {
   const app = document.getElementById("app");
   
   if (typeof EXAMENES_META === 'undefined') {
-      app.innerHTML = `<div style="text-align:center; padding:30px; color:red;">Error: No se encontró la configuración de exámenes.</div>`;
+      app.innerHTML = `<div style="text-align:center; padding:30px; color:red;">Error: Configuración no encontrada.</div>`;
       return;
   }
 
   const grupos = agruparExamenesPorGrupo();
   const gruposOrdenados = Object.keys(grupos).sort((a, b) => a.localeCompare(b));
-
   const listaHtml = gruposOrdenados.map(g => renderGrupoExamen(g, grupos[g])).join("");
 
   const styles = `
     <style>
-      /* --- TARJETAS --- */
-      .exam-group-card { 
-          background: white; border: 1px solid #e2e8f0; border-radius: 12px; 
-          margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      /* Estilos Base */
+      .exam-box { 
+          background: white; border: 1px solid #e2e8f0; border-radius: 10px; 
+          margin-bottom: 12px; overflow: hidden; transition: all 0.2s;
       }
-      .exam-group-header {
-          padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
-          background: white; transition: background 0.2s;
+      .exam-header {
+          padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+          background: white;
       }
-      .exam-group-header:hover { background: #f8fafc; }
+      .exam-header:hover { background: #f8fafc; }
       
-      .exam-item-row {
-          display: flex; justify-content: space-between; align-items: center;
-          padding: 14px 16px; border-top: 1px solid #f1f5f9; cursor: pointer;
-          background: white; transition: background 0.2s;
-      }
-      .exam-item-row:hover { background: #f8fafc; }
-      .exam-item-row.is-open { background: #f1f5f9; }
-
-      /* --- MENÚ DESPLEGABLE (MEJORADO) --- */
-      .exam-expanded-panel {
-          background: #f8fafc;
+      .exam-expanded {
           padding: 16px;
           border-top: 1px solid #e2e8f0;
-          animation: slideDown 0.2s ease-out;
+          background: white;
+          animation: fadeIn 0.2s ease;
       }
-      @keyframes slideDown { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
 
-      /* --- BADGES --- */
+      /* Badges */
       .badge-status { padding: 3px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-left: 8px; }
       .bg-gray { background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0; }
       .bg-orange { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
       .bg-green { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
       
-      /* --- BOTONES (REDISEÑO) --- */
-      .btn-action-primary {
-          background: #16a34a; color: white; border: 1px solid #15803d; 
-          font-weight: 600; padding: 10px; border-radius: 8px; width: 100%;
-          display: flex; align-items: center; justify-content: center; gap: 6px;
-          transition: transform 0.1s, background 0.2s;
-      }
-      .btn-action-primary:hover { background: #15803d; transform: translateY(-1px); }
-      
-      .btn-action-sec {
-          background: white; border: 1px solid #cbd5e1; color: #475569;
-          font-weight: 600; padding: 8px; border-radius: 8px; font-size: 13px;
-          display: flex; align-items: center; justify-content: center; gap: 6px;
-          transition: all 0.2s;
-      }
-      .btn-action-sec:hover { background: #f1f5f9; border-color: #94a3b8; }
+      /* Switches Compactos */
+      .config-check { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; margin-right: 15px; }
+      .config-check input { width: 16px; height: 16px; accent-color: #3b82f6; cursor: pointer; }
+      .config-label { font-size: 13px; color: #334155; font-weight: 500; }
 
-      .btn-action-danger {
-          background: #fff1f2; border: 1px solid #fecdd3; color: #e11d48;
-          font-size: 12px; padding: 6px 12px; border-radius: 6px; cursor: pointer;
+      /* Botones (Estilo Choice) */
+      .btn-choice-style {
+          background: white; border: 1px solid #3b82f6; color: #1d4ed8; 
+          font-weight: 600; padding: 8px 16px; border-radius: 8px; font-size: 13px;
+          cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; gap: 6px;
       }
+      .btn-choice-style:hover { background: #eff6ff; }
 
-      /* --- SWITCHES --- */
-      .toggle-switch { position: relative; display: inline-block; width: 34px; height: 20px; margin-right: 8px; vertical-align: middle; }
-      .toggle-switch input { opacity: 0; width: 0; height: 0; }
-      .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
-      .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-      input:checked + .slider { background-color: #3b82f6; } /* Azul por defecto */
-      input:checked + .slider:before { transform: translateX(14px); }
-      .slider-orange input:checked + .slider { background-color: #ea580c; }
-      
-      .config-row { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; padding: 10px; background: white; border-radius: 8px; border: 1px solid #e2e8f0; }
-      .config-item { display: flex; align-items: center; font-size: 13px; color: #334155; font-weight: 600; cursor: pointer; }
-
-      /* --- HISTORIAL --- */
-      .mini-history { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #cbd5e1; font-size: 12px; color: #64748b; }
-      .hist-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
+      /* Historial Container */
+      .history-box {
+          margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;
+      }
+      .hist-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e2e8f0; font-size: 12px; color: #64748b; }
       .hist-item:last-child { border-bottom: none; }
       .hist-score-bad { color: #ef4444; font-weight: 700; }
       .hist-score-ok { color: #16a34a; font-weight: 700; }
+
+      /* Botón Análisis (Emoji) */
+      .btn-analysis-icon {
+          width: 30px; height: 30px; border-radius: 50%; border: 1px solid #e2e8f0; background: white;
+          display: flex; align-items: center; justify-content: center; cursor: pointer; margin-left: 8px; font-size: 14px;
+      }
+      .btn-analysis-icon:hover { background: #f1f5f9; }
     </style>
   `;
 
@@ -144,40 +121,28 @@ function renderExamenesMain() {
     </div>
 
     <div class="card fade" style="max-width:900px;margin:auto;">
-      
       <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; gap:10px;">
         <div style="flex:1;">
           <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
             <h2 style="margin:0;">📝 Exámenes Anteriores</h2>
             <button onclick="mostrarInfoExamenesOficiales()" 
-                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">
-              ?
-            </button>
+                    style="width:24px; height:24px; border-radius:50%; border:1px solid #cbd5e1; background:white; color:#64748b; font-size:14px; font-weight:bold; cursor:pointer; display:flex; align-items:center; justify-content:center;">?</button>
           </div>
-          <p style="color:#64748b; margin:0; font-size:14px;">
-             Seleccioná un examen oficial para practicar o analizar.
-          </p>
+          <p style="color:#64748b; margin:0; font-size:14px;">Seleccioná un examen oficial para practicar.</p>
         </div>
-        
-        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">
-           ⬅ Volver
-        </button>
+        <button class="btn-small" onclick="renderHome()" style="white-space:nowrap; background:#fff; border:1px solid #e2e8f0; color:#475569;">⬅ Volver</button>
       </div>
-
       <div>${listaHtml}</div>
-
     </div>
   `;
 }
 
 function closeModals(e) {
-    if (e.target.classList.contains('modal-overlay')) {
-        e.target.style.display = 'none';
-    }
+    if (e.target.classList.contains('modal-overlay')) e.target.style.display = 'none';
 }
 
 function mostrarInfoExamenesOficiales() {
-    alert("ℹ️ EXÁMENES OFICIALES\n\n• Cada examen guarda su progreso automáticamente.\n• Podés activar 'Corregir al final' para simular condiciones reales.");
+    alert("ℹ️ INFO\n\n• Los exámenes guardan tu progreso automáticamente.\n• Activá 'Corregir al final' para simular el examen real.");
 }
 
 function agruparExamenesPorGrupo() {
@@ -187,15 +152,13 @@ function agruparExamenesPorGrupo() {
         if (!grupos[ex.grupo]) grupos[ex.grupo] = [];
         grupos[ex.grupo].push(ex);
       });
-      Object.keys(grupos).forEach(g => {
-        grupos[g].sort((a, b) => b.anio - a.anio);
-      });
+      Object.keys(grupos).forEach(g => { grupos[g].sort((a, b) => b.anio - a.anio); });
   }
   return grupos;
 }
 
 /* ==========================================================
-   🏛 Render de Grupos
+   🏛 RENDER GRUPOS E ÍTEMS
    ========================================================== */
 let examenesOpenGrupo = null;
 let examenesOpenExamen = null;
@@ -205,8 +168,8 @@ function renderGrupoExamen(nombreGrupo, lista) {
   const arrow = abierto ? "▼" : "▶";
 
   return `
-    <div class="exam-group-card">
-      <div class="exam-group-header" onclick="toggleGrupoExamen('${nombreGrupo}')">
+    <div class="exam-box">
+      <div class="exam-header" onclick="toggleGrupoExamen('${nombreGrupo}')" style="background:${abierto ? '#f8fafc' : 'white'}">
         <div style="display:flex; align-items:center; gap:10px; flex:1;">
             <span style="font-size:12px; color:#94a3b8; width:15px;">${arrow}</span>
             <div>
@@ -214,11 +177,7 @@ function renderGrupoExamen(nombreGrupo, lista) {
                 <div style="font-size:12px;color:#64748b;">${lista.length} exámenes</div>
             </div>
         </div>
-        
-        <button onclick="event.stopPropagation(); analizarGrupo('${nombreGrupo}')" title="Analizar grupo"
-                style="background:white; border:1px solid #e2e8f0; width:32px; height:32px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; margin-right:10px;">
-            📊
-        </button>
+        <button onclick="event.stopPropagation(); analizarGrupo('${nombreGrupo}')" class="btn-analysis-icon" title="Analizar grupo">📊</button>
       </div>
       ${abierto ? renderGrupoExamenExpanded(lista) : ""}
     </div>
@@ -232,27 +191,23 @@ function toggleGrupoExamen(grupo) {
 }
 
 function renderGrupoExamenExpanded(lista) {
-  return `<div>${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
+  return `<div style="border-top:1px solid #e2e8f0;">${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
 }
 
-/* ==========================================================
-   📄 Render Ítem Examen
-   ========================================================== */
 function renderItemExamen(ex) {
   const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(ex.id) : []; 
   const total = preguntas.length;
   const progreso = calcularProgresoExamen(ex.id, total);
   const abierto = examenesOpenExamen === ex.id;
-  
-  const rowClass = abierto ? "exam-item-row is-open" : "exam-item-row";
+  const bg = abierto ? '#f1f5f9' : 'white';
 
   let badge = `<span class="badge-status bg-gray">Pendiente</span>`;
   if (progreso > 0 && progreso < 100) badge = `<span class="badge-status bg-orange">En Curso</span>`;
   if (progreso === 100) badge = `<span class="badge-status bg-green">Completado</span>`;
 
   return `
-    <div>
-      <div class="${rowClass}" onclick="toggleExamenItem('${ex.id}')">
+    <div style="background:${bg}; border-bottom:1px solid #f1f5f9; transition:background 0.2s;">
+      <div style="padding:12px 16px; display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleExamenItem('${ex.id}')">
         <div style="flex:1; display:flex; align-items:center; gap:12px;">
            <div style="width:38px; height:38px;">${renderProgressCircleExam(progreso)}</div>
            <div>
@@ -263,9 +218,10 @@ function renderItemExamen(ex) {
               <div style="font-size:12px; color:#64748b;">${total} preguntas</div>
            </div>
         </div>
-        <div style="font-size:12px; color:#94a3b8;">${abierto ? '▲' : '▼'}</div>
+        <div style="display:flex; align-items:center;">
+            <button onclick="event.stopPropagation(); analizarExamen('${ex.id}')" class="btn-analysis-icon" title="Analizar examen">📊</button>
+        </div>
       </div>
-      
       ${abierto ? renderExpandExamen(ex, preguntas, progreso) : ""}
     </div>
   `;
@@ -277,15 +233,13 @@ function toggleExamenItem(id) {
 }
 
 /* ==========================================================
-   ⚙️ MENÚ DESPLEGABLE (Botones Rediseñados)
+   ⚙️ PANEL EXPANDIDO (ESTÉTICA CHOICE)
    ========================================================== */
 function renderExpandExamen(ex, preguntas, progreso) {
   const iniciado = progreso > 0;
-  
-  // Historial
   const historial = getExamHistory(ex.id);
 
-  let historyHTML = `<div style="text-align:center; padding:5px; opacity:0.6;">Sin intentos previos.</div>`;
+  let historyHTML = `<div style="text-align:center; padding:5px; opacity:0.6; font-size:12px;">No hay intentos finalizados.</div>`;
   if (historial.length > 0) {
       historyHTML = historial.map(h => {
           const date = new Date(h.date).toLocaleDateString();
@@ -301,57 +255,43 @@ function renderExpandExamen(ex, preguntas, progreso) {
   }
 
   return `
-    <div class="exam-expanded-panel">
+    <div class="exam-expanded">
       
-      <div class="config-row">
-          <label class="config-item" onclick="event.stopPropagation()">
-             <div class="toggle-switch">
-                <input type="checkbox" id="timer-check-${ex.id}" checked>
-                <span class="slider"></span>
-             </div>
-             <span>Reloj activado</span>
-          </label>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:15px; margin-bottom:15px;">
+          
+          <button class="btn-choice-style" onclick="iniciarExamenConCheck('${ex.id}', ${iniciado})">
+             ▶ Iniciar Examen
+          </button>
 
-          <label class="config-item" onclick="event.stopPropagation()">
-             <div class="toggle-switch slider-orange">
-                <input type="checkbox" id="correction-check-${ex.id}">
-                <span class="slider"></span>
-             </div>
-             <span>Corregir al final</span>
-          </label>
-      </div>
-
-      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px;">
-         <div style="grid-column: span 3;">
-             <button class="btn-action-primary" 
-                     onclick="${iniciado ? `reanudarExamen('${ex.id}')` : `iniciarExamen('${ex.id}')`}">
-                 ${iniciado ? '⏩ CONTINUAR INTENTO' : '▶ COMENZAR EXAMEN'}
+          ${iniciado ? `
+             <button class="btn-choice-style" style="border-color:#16a34a; color:#15803d; background:#f0fdf4;" 
+                     onclick="reanudarExamen('${ex.id}')">
+                ⏩ Continuar Intento
              </button>
-         </div>
+          ` : ''}
 
-         <button class="btn-action-sec" onclick="analizarExamen('${ex.id}')">
-             📊 Análisis
-         </button>
-         <button class="btn-action-sec" onclick="verNotasExamen('${ex.id}')">
-             📒 Notas
-         </button>
-         
-         ${iniciado ? 
-            `<button class="btn-action-sec" style="color:#1d4ed8; border-color:#93c5fd;" onclick="revisarExamen('${ex.id}')">👁️ Revisar</button>` 
-            : `<button class="btn-action-sec" disabled style="opacity:0.5; cursor:not-allowed;">👁️ Revisar</button>`
-         }
+          <div style="display:flex; align-items:center; gap:10px; margin-left:auto;">
+              <label class="config-check">
+                <input type="checkbox" id="timer-check-${ex.id}" checked>
+                <span class="config-label">⏱ Reloj</span>
+              </label>
+              
+              <label class="config-check">
+                <input type="checkbox" id="correction-check-${ex.id}">
+                <span class="config-label">📝 Corregir al final</span>
+              </label>
+          </div>
       </div>
-      
-      ${iniciado ? `
-        <div style="text-align:right; margin-bottom:15px;">
-           <button class="btn-action-danger" onclick="resetearExamen('${ex.id}')">
-              🗑 Reiniciar progreso
-           </button>
-        </div>
-      ` : ''}
 
-      <div class="mini-history">
-         <div style="font-weight:700; margin-bottom:6px; color:#334155;">📋 Historial de intentos</div>
+      <div class="history-box">
+         <div style="font-weight:700; margin-bottom:8px; color:#334155; font-size:13px; display:flex; justify-content:space-between; align-items:center;">
+             <span>📋 Historial de intentos</span>
+             ${iniciado ? `
+                <span onclick="resetearExamen('${ex.id}')" style="color:#ef4444; cursor:pointer; font-size:11px; text-decoration:underline;">
+                   Reiniciar progreso actual
+                </span>
+             ` : ''}
+         </div>
          ${historyHTML}
       </div>
 
@@ -360,7 +300,7 @@ function renderExpandExamen(ex, preguntas, progreso) {
 }
 
 /* ==========================================================
-   📊 LÓGICA & HELPERS (Se mantienen igual)
+   📊 LÓGICA & HELPERS
    ========================================================== */
 
 function formatearNombreExamen(id) { return id.replace(/_/g, " ").toUpperCase(); }
@@ -389,6 +329,23 @@ function getExamHistory(examId) {
 }
 
 /* --- ACCIONES --- */
+
+function iniciarExamenConCheck(id, yaIniciado) {
+    if (yaIniciado) {
+        if(!confirm("⚠️ Ya tienes un examen en curso.\n\nSi inicias uno nuevo, se borrará el progreso actual (respuestas guardadas) para empezar de cero.\n¿Estás seguro?")) {
+            return;
+        }
+        // Borramos progreso previo antes de iniciar
+        const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
+        preguntas.forEach(q => { 
+            const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+            if(PROG[mat] && PROG[mat][q.id]) { delete PROG[mat][q.id]; } 
+        });
+        if(typeof saveProgress === 'function') saveProgress();
+    }
+    iniciarExamen(id);
+}
+
 function iniciarExamen(id) {
   const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
   if (!preguntas.length) return alert("No se encontraron preguntas.");
@@ -415,7 +372,7 @@ function reanudarExamen(id) {
       const r = PROG[mat]?.[q.id]; 
       return !r || (r.status !== 'ok' && r.status !== 'bad'); 
   });
-  if(pendientes.length === 0) return alert("¡Examen completado!");
+  if(pendientes.length === 0) return alert("¡Examen completado! Podés iniciar uno nuevo.");
   
   const checkTimer = document.getElementById(`timer-check-${id}`);
   const checkCorrection = document.getElementById(`correction-check-${id}`);
@@ -433,7 +390,7 @@ function reanudarExamen(id) {
 }
 
 function resetearExamen(id) {
-    if(!confirm("⚠ ¿Reiniciar este examen? Se borrará el progreso actual (respuestas).")) return;
+    if(!confirm("⚠ ¿Borrar el progreso actual? (Tus respuestas se perderán, pero el historial de notas queda).")) return;
     const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
     let cambios = false;
     preguntas.forEach(q => { 
@@ -523,6 +480,10 @@ function mostrarModalAnalisis(titulo, preguntas) {
                 </div>
             </div>
             <div class="chart-legend">${listHtml}</div>
+        </div>
+        <div class="disclaimer-box">
+           <span style="font-size:16px;">⚠️</span>
+           <div><b>Nota:</b> El total de temas (${totalTags}) puede ser mayor al de preguntas por temas multidisciplinarios.</div>
         </div>
     `;
     modal.style.display = 'flex';
