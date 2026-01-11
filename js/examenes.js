@@ -1,5 +1,5 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (Estética Final & Lógica)
+   📝 MEbank 3.0 – Exámenes Anteriores (Final Definitivo)
    ========================================================== */
 
 /* ==========================================================
@@ -104,6 +104,30 @@ function renderExamenesMain() {
           display: flex; align-items: center; justify-content: center; cursor: pointer; margin-left: 8px; font-size: 14px;
       }
       .btn-analysis-icon:hover { background: #f1f5f9; }
+
+      /* === ESTILOS DEL GRÁFICO (RECUPERADOS) === */
+      .chart-container { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-top: 10px; }
+      .donut-chart {
+        width: 140px; height: 140px; border-radius: 50%;
+        position: relative; margin: 0 auto;
+      }
+      .donut-hole {
+        width: 90px; height: 90px; background: var(--bg-card, white); border-radius: 50%;
+        position: absolute; top: 25px; left: 25px;
+        display: flex; align-items: center; justify-content: center;
+        flex-direction: column;
+        box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+      }
+      .chart-legend { flex: 1; min-width: 200px; max-height: 300px; overflow-y: auto; }
+      .legend-item { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; font-size: 13px; }
+      .legend-color { width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; display: inline-block; }
+      .legend-bar-bg { flex: 1; height: 6px; background: #f1f5f9; border-radius: 3px; margin: 0 10px; overflow: hidden; }
+      .legend-bar-fill { height: 100%; border-radius: 3px; }
+      
+      .disclaimer-box {
+        margin-top: 20px; padding: 10px; background: #fffbeb; border: 1px solid #fcd34d; 
+        border-radius: 8px; font-size: 11px; color: #92400e; display: flex; gap: 8px;
+      }
     </style>
   `;
 
