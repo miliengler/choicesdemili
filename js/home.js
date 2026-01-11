@@ -1,140 +1,173 @@
 /* ==========================================================
-   🏠 MEbank 3.0 – Home & Mi Repaso (Buscador Global)
+   🏠 MEbank 3.0 – Pantalla Home y Arranque (Con Dark Mode)
    ========================================================== */
 
-// --- Variables de Estado para el Repaso ---
-let REPASO_FILTER = 'all'; // 'all', 'fav', 'notes'
-let REPASO_SEARCH = '';
+// 🌙 1. LÓGICA DE MODO OSCURO (Se ejecuta al cargar)
+document.addEventListener("DOMContentLoaded", () => {
+    // Recuperar preferencia guardada
+    const isDark = localStorage.getItem("mebank_darkmode") === "true";
+    if (isDark) {
+        document.body.classList.add("dark-mode");
+    }
+});
 
-function renderHome() {
+// Función global para el botón
+window.toggleDarkMode = function() {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+    localStorage.setItem("mebank_darkmode", isDark);
+    
+    const btn = document.getElementById("btn-dark-mode");
+    if(btn) btn.textContent = isDark ? "☀️" : "🌙";
+};
+
+// ✅ ESTA FUNCIÓN ARRANCA LA APP
+async function initApp() {
   const app = document.getElementById("app");
   
-  // Resumen rápido para el dashboard
+  app.innerHTML = `
+    <div style="text-align:center;margin-top:100px;">
+      <div style="font-size:40px;margin-bottom:20px;">🚀</div>
+      <p style="color:#64748b;">Iniciando MEbank...</p>
+    </div>
+  `;
+
+  if (typeof loadAllBanks === 'function') {
+      await loadAllBanks();
+  } else {
+      alert("Error crítico: No se encuentra el módulo Bank.js");
+  }
+}
+
+// ✅ RENDERIZA EL MENÚ PRINCIPAL
+function renderHome() {
+  const app = document.getElementById("app");
+
+  const cargado = (typeof BANK !== 'undefined' && BANK.loaded);
+  const preguntas = cargado ? BANK.questions.length : 0;
+  const daily = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
+  const hoy = new Date().toISOString().split('T')[0];
+  const hechasHoy = daily[hoy] || 0;
+
+  // Contadores para "Mi Repaso"
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const favorites = JSON.parse(localStorage.getItem("mebank_favorites") || "[]");
   const countNotes = Object.keys(savedNotes).length;
   const countFavs = favorites.length;
 
+  const isDark = document.body.classList.contains("dark-mode");
+  const icon = isDark ? "☀️" : "🌙";
+
   app.innerHTML = `
-    <div class="fade">
-      <div style="text-align:center; margin-bottom: 30px; padding-top: 20px;">
-        <h1 style="margin:0; font-size: 28px; color: #1e293b;">MEbank 3.0</h1>
-        <p style="color: #64748b; margin-top: 5px;">Tu banco de preguntas inteligente</p>
-      </div>
-
-      <div class="menu-grid" style="display: grid; gap: 15px; max-width: 600px; margin: auto;">
-        
-        <div class="card menu-card" onclick="renderChoice()" style="cursor:pointer; transition:transform 0.2s;">
-           <div style="display:flex; align-items:center; gap: 15px;">
-              <div style="background:#eff6ff; width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px;">💊</div>
-              <div>
-                 <h3 style="margin:0; font-size:18px; color:#1e293b;">Práctica por Materias</h3>
-                 <p style="margin:0; font-size:13px; color:#64748b;">Entrená temas específicos</p>
-              </div>
-           </div>
-        </div>
-
-        <div class="card menu-card" onclick="renderSimulacroSetup()" style="cursor:pointer; transition:transform 0.2s;">
-           <div style="display:flex; align-items:center; gap: 15px;">
-              <div style="background:#f0fdf4; width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px;">⏱</div>
-              <div>
-                 <h3 style="margin:0; font-size:18px; color:#1e293b;">Simulacro Personalizado</h3>
-                 <p style="margin:0; font-size:13px; color:#64748b;">Creá tu propia prueba</p>
-              </div>
-           </div>
-        </div>
-
-        <div class="card menu-card" onclick="renderExamenesMain()" style="cursor:pointer; transition:transform 0.2s;">
-           <div style="display:flex; align-items:center; gap: 15px;">
-              <div style="background:#fff7ed; width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px;">📜</div>
-              <div>
-                 <h3 style="margin:0; font-size:18px; color:#1e293b;">Exámenes Oficiales</h3>
-                 <p style="margin:0; font-size:13px; color:#64748b;">Resolvé exámenes reales</p>
-              </div>
-           </div>
-        </div>
-
-        <div class="card menu-card" onclick="renderStats()" style="cursor:pointer; transition:transform 0.2s;">
-           <div style="display:flex; align-items:center; gap: 15px;">
-              <div style="background:#f5f3ff; width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px;">📊</div>
-              <div>
-                 <h3 style="margin:0; font-size:18px; color:#1e293b;">Estadísticas</h3>
-                 <p style="margin:0; font-size:13px; color:#64748b;">Seguí tu progreso</p>
-              </div>
-           </div>
-        </div>
-
-        <div class="card menu-card" onclick="renderRepasoMain()" style="cursor:pointer; transition:transform 0.2s;">
-           <div style="display:flex; align-items:center; gap: 15px;">
-              <div style="background:#fff1f2; width:50px; height:50px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:24px;">📚</div>
-              <div>
-                 <h3 style="margin:0; font-size:18px; color:#1e293b;">Mi Repaso</h3>
-                 <p style="margin:0; font-size:13px; color:#64748b;">
-                    <span style="font-weight:700; color:#e11d48;">${countFavs}</span> Favoritas • 
-                    <span style="font-weight:700; color:#d97706;">${countNotes}</span> Notas
-                 </p>
-              </div>
-           </div>
-        </div>
-
-      </div>
+    <div class="card fade" style="max-width:520px; margin:auto; text-align:center; position:relative;">
       
-      <div style="text-align:center; margin-top:30px; font-size:12px; color:#cbd5e1;">
-         v3.0 - MEbank
+      <button id="btn-dark-mode" onclick="toggleDarkMode()" 
+              style="position:absolute; top:20px; right:20px; background:none; border:none; font-size:24px; cursor:pointer; z-index:10; padding:0;">
+          ${icon}
+      </button>
+
+      <h1 style="margin-bottom:6px;">MEbank</h1>
+      <p style="color:#64748b; margin-bottom:25px;">
+        Banco de Preguntas para Residencias
+      </p>
+
+      ${hechasHoy > 0 
+        ? `<div class="daily-banner" style="margin-bottom:20px; padding:8px; background:#f0fdf4; color:#166534; border-radius:8px; font-size:14px;">
+             🔥 Hoy respondiste <b>${hechasHoy}</b> preguntas correctamente.
+           </div>`
+        : ''
+      }
+
+      <div class="menu-buttons">
+        <button class="btn-main menu-btn" onclick="goChoice()">📚 Práctica por materia</button>
+        <button class="btn-main menu-btn" onclick="goExamenes()">📝 Exámenes anteriores</button>
+        <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de examen</button>
+        <button class="btn-main menu-btn" onclick="goStats()">📊 Estadísticas</button>
+        
+        <button class="btn-main menu-btn" onclick="goNotas()">
+            📚 Mi Repaso 
+            <span style="font-size:11px; opacity:0.8; display:block; font-weight:400;">${countFavs} Favs • ${countNotes} Notas</span>
+        </button>
+      </div>
+
+      <div style="margin-top:25px; font-size:13px; color:#94a3b8;">
+        ${cargado ? `✔ Sistema listo (${preguntas} preguntas)` : `⚠ Error de carga`}
+      </div>
+
+      <div style="margin-top:10px;">
+        <button class="btn-small btn-ghost" onclick="recargarBancoDesdeHome()">
+          🔄 Recargar todo
+        </button>
       </div>
     </div>
   `;
 }
 
 /* ==========================================================
-   📚 LÓGICA DE "MI REPASO" (Buscador + Favoritos)
+   🔀 Navegación
    ========================================================== */
+function checkLoaded() {
+  if (!BANK.loaded) {
+    alert("Esperá a que carguen las preguntas...");
+    return false;
+  }
+  return true;
+}
+
+function goChoice() { if(checkLoaded()) renderChoice(); }
+function goExamenes() { if(checkLoaded()) renderExamenesMain(); }
+function goCrearExamen() { if(checkLoaded()) renderCrearExamen(); }
+function goStats() { if(checkLoaded()) renderStats(); }
+
+// Redirige a la nueva pantalla de repaso
+function goNotas() { if(checkLoaded()) renderRepasoMain(); }
+
+async function recargarBancoDesdeHome() {
+  if(!confirm("¿Recargar base de datos?")) return;
+  document.getElementById("app").innerHTML = "<div style='text-align:center;margin-top:50px;'>Recargando...</div>";
+  await loadAllBanks();
+}
+
+/* ==========================================================
+   📚 MI REPASO (Buscador Global + Favoritos + Notas)
+   ========================================================== */
+
+let REPASO_FILTER = 'all'; // 'all', 'fav', 'notes'
+let REPASO_SEARCH = '';
+
 function renderRepasoMain() {
   const app = document.getElementById("app");
   
-  // 1. Obtener Datos
   const favorites = JSON.parse(localStorage.getItem("mebank_favorites") || "[]");
   const notes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   
-  // 2. Filtrado Inteligente
-  let list = [];
-  
-  // Si no hay búsqueda ni filtro activo, por defecto mostramos TODO lo guardado (Fav + Notas)
-  // para no mostrar las 5000 preguntas del banco de una.
-  const showSavedOnly = (REPASO_FILTER === 'all' && REPASO_SEARCH.trim() === '');
-
-  list = BANK.questions.filter(q => {
-      // A. Filtro por Texto (Buscador Global)
+  // Filtro Inteligente
+  let list = BANK.questions.filter(q => {
+      // Filtro Texto
       if (REPASO_SEARCH) {
           const term = REPASO_SEARCH.toLowerCase();
           const enun = (q.enunciado || "").toLowerCase();
           const expl = (q.explicacion || "").toLowerCase();
           const userNote = (notes[q.id] ? notes[q.id].text : "").toLowerCase();
           
-          // Debe coincidir con algo
           if (!enun.includes(term) && !expl.includes(term) && !userNote.includes(term)) {
               return false;
           }
       }
 
-      // B. Filtro por Pestañas
+      // Filtro Pestañas
       if (REPASO_FILTER === 'fav') return favorites.includes(q.id);
       if (REPASO_FILTER === 'notes') return !!notes[q.id];
-      
-      // C. Filtro 'All' (Default)
       if (REPASO_FILTER === 'all') {
-          if (REPASO_SEARCH) return true; // Si busca, busca en todo el banco
-          return favorites.includes(q.id) || !!notes[q.id]; // Si no busca, muestra solo guardados
+          if (REPASO_SEARCH) return true; 
+          return favorites.includes(q.id) || !!notes[q.id];
       }
-      
       return false;
   });
 
   const totalResults = list.length;
-  // Paginación visual (Max 50) para no colgar el DOM
   const displayList = list.slice(0, 50);
 
-  // 3. Estilos Locales
   const styles = `
     <style>
       .repaso-header { background: white; padding: 20px; border-bottom: 1px solid #e2e8f0; margin-bottom: 20px; position: sticky; top: 0; z-index: 10; }
@@ -159,13 +192,11 @@ function renderRepasoMain() {
     </style>
   `;
 
-  // 4. Generar HTML de Lista
   const listHTML = displayList.map(q => {
       const isFav = favorites.includes(q.id);
       const hasNote = !!notes[q.id];
       const matName = getMateriaNombre(Array.isArray(q.materia) ? q.materia[0] : q.materia);
 
-      // Previsualización de la nota (si existe)
       let notePreview = "";
       if (hasNote) {
           notePreview = `<div style="margin-top:8px; font-size:12px; color:#b45309; background:#fffbeb; padding:8px; border-radius:6px; border-left:3px solid #f59e0b;">📝 ${notes[q.id].text.substring(0, 80)}${notes[q.id].text.length>80?'...':''}</div>`;
@@ -232,30 +263,13 @@ function renderRepasoMain() {
   `;
 }
 
-/* --- HELPERS --- */
-
-function onRepasoSearch(val) {
-    REPASO_SEARCH = val;
-    renderRepasoMain(); 
-}
-
-function setRepasoFilter(mode) {
-    REPASO_FILTER = mode;
-    renderRepasoMain();
-}
+function onRepasoSearch(val) { REPASO_SEARCH = val; renderRepasoMain(); }
+function setRepasoFilter(mode) { REPASO_FILTER = mode; renderRepasoMain(); }
 
 function abrirModoLectura(qid) {
-    // Busca la pregunta completa
     const q = BANK.questions.find(x => x.id === qid);
     if(q) {
-        // Usamos el resolver en modo "Revisión"
-        iniciarResolucion({
-            modo: 'revision',
-            preguntas: [q],
-            usarTimer: false,
-            titulo: 'Lectura Rápida',
-            correccionFinal: false
-        });
+        iniciarResolucion({ modo: 'revision', preguntas: [q], usarTimer: false, titulo: 'Lectura Rápida', correccionFinal: false });
     }
 }
 
@@ -273,16 +287,5 @@ function highlightSearchTerm(text, term) {
     return text.replace(regex, '<mark style="background:#fef08a; color:#854d0e; padding:0 2px; border-radius:2px;">$1</mark>');
 }
 
-// Mantener compatibilidad si algún botón llama a renderNotasMain
-window.renderNotasMain = renderRepasoMain; 
-/* ==========================================================
-   🚀 INICIALIZACIÓN (AGREGAR AL FINAL DE home.js)
-   ========================================================== */
-
-function initApp() {
-    console.log("Iniciando MEbank 3.0...");
-    renderHome();
-}
-
-// Aseguramos que sea global
-window.initApp = initApp;
+// Mantener compatibilidad
+window.renderNotasMain = renderRepasoMain;
