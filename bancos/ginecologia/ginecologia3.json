@@ -1,1 +1,426 @@
-[]
+[
+  {
+    "id": "gineco-003-001",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Anticoncepción"
+    ],
+    "enunciado": "Nuria tiene 16 años y le comenta que ayer olvidó tomar la pastilla anticonceptiva. Ella usa anticonceptivos combinados de 28 días desde hace un año. Esta es la primera semana de toma y le consulta que conducta debe seguir. ¿Cuál es la indicación correcta?",
+    "opciones": {
+      "a": "Que tome el comprimido olvidado y el que le toca tomar hoy y continúe las tomas normalmente.",
+      "b": "Que tome el comprimido olvidado y el que le toca tomar hoy y luego de la última toma activa no tome el placebo e inicie otra caja",
+      "c": "Que tome el comprimido olvidado y el que le toca tomar hoy y utilice preservativos hasta el inicio de la siguiente caja",
+      "d": "Que tome el comprimido olvidado y el que le toca tomar hoy y que por 7 días utilice además preservativos"
+    },
+    "correcta": "a",
+    "explicacion": "SI EL OLVIDO ES DE UN COMPRIMIDO activo: Tomar la pastilla olvidada lo antes posible y continuar las siguientes en el horario habitual, aunque esto signifique tomar dos comprimidos juntos. La eficacia anticonceptiva no se altera, y no necesita usar un método de respaldo.\n\n• SI EL OLVIDO ES DE DOS COMPRIMIDOS activos o más: la eficacia anticonceptiva puede estar disminuida y puede no inhibir adecuadamente la ovulación. En este caso, deberá considerarse en qué semana fue el olvido. En todos los casos de olvido de pastillas activas, tomar la última pastilla olvidada lo antes posible, aunque esto implique tomar dos pastillas el mismo día o al mismo tiempo, y continuar tomando las siguientes pastillas en el horario habitual. Esta conducta reducirá la posibilidad de aparición de pequeños sangrados por motivo del olvido. El riesgo de embarazo aumenta con el número de pastillas olvidadas, y es mayor en la primera semana",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-002",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPI",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Una paciente de 36 años, G1 C1, que utiliza como método anticonceptivo DIU, consulta por presentar fiebre y dolor abdominal de 72 horas de evolución. Al examen se evidencia abdomen distendido, doloroso a la palpación superficial y profunda en forma difusa, con defensa y reacción peritoneal predominantemente en fosa ilíaca izquierda. Tacto vaginal: signo de Frenkel positivo. Laboratorio: Glóbulos Blancos: 16.200/mm3, eritrosedimentación 53 mm/h, subunidad beta HCG negativa. Ecografía transvaginal: DIU intracavitario, formación anexial izquierda, particulada, de 97 x 15 mm y escaso líquido libre en fondo de saco de Douglas. ¿En base a su diagnóstico presuntivo, cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Antibioticoterapia intravenosa y control evolutivo",
+      "b": "Laparoscopia exploradora",
+      "c": "Culdocentesis",
+      "d": "Antibioticoterapia via oral y control en 72 horas"
+    },
+    "correcta": "a",
+    "explicacion": "El tratamiento quirúrgico está indicado en infecciones graves que ponen en riesgo la vida de la paciente, abscesos tuboováricos rotos, abscesos persistentes sintomáticos o drenaje de abscesos en saco de Douglas. Siempre debe ser lo más conservador posible. La extracción del dispositivo intrauterino en pacientes con EPI no acelera la resolución clínica (y hasta puede demorarla) y en la mayoría de los casos se aconseja no extraerlo.\n\nLos criterios de tratamiento hospitalario de la enfermedad inflamatoria pélvica incluyen embarazo, ausencia de respuesta al tratamiento oral tras 48-72 horas, falta de seguimiento del tratamiento por vía oral, enfermedad grave, absceso tuvoovárico e intolerancia al tratamiento por vía oral.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-003",
+    "materia": [
+      "ginecologia",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Anticoncepción",
+      "Normativa nacional y jurisdiccional"
+    ],
+    "enunciado": "Una paciente de 14 años concurre para consejería en salud sexual y reproductiva. Luego de la entrevista, decide que además del preservativo que ya utiliza, desea que le coloquen un dispositivo intrauterino (DIU). ¿Cuáles son los requisitos para que la paciente pueda acceder a este método?",
+    "opciones": {
+      "a": "Prestar su consentimiento informado",
+      "b": "Ser mayor de 16 años",
+      "c": "Realizar estudios de laboratorio",
+      "d": "Autorización de una persona adulta responsable"
+    },
+    "correcta": "a",
+    "explicacion": "Los dispositivos intrauterinos (DIU) son un método anticonceptivo reversible de alta eficacia. Para su colocación se requiere como minimo un examen vaginal con especuloscopia y no resulta obligatoria la obtención de estudios serológicos para ITS.\n\nAdolescentes entre 13 y 16 años: pueden brindar su consentimiento en forma autónoma, a menos que se trate de prácticas que puedan implicar un riesgo grave para su salud o su vida. Únicamente para estas situaciones será necesario, además de su consentimiento, el asentimiento de al menos una persona adulta referente (progenitores, representantes legales, personas que ejerzan formal o informalmente roles de cuidado, personas \"allegadas\" o referentes afectivos).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-004",
+    "materia": [
+      "ginecologia",
+      "infectologia",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Infecciones del tracto genital inferior",
+      "Patología materna y gestación"
+    ],
+    "enunciado": "En la detección de infecciones del tracto genital inferior en mujeres embarazadas. ¿Cuál de las siguientes no es una infección endógena?",
+    "opciones": {
+      "a": "Trichomoniasis",
+      "b": "Candidiasis",
+      "c": "Estreptococo agalactiae",
+      "d": "Vaginosis bacteriana"
+    },
+    "correcta": "a",
+    "explicacion": "Trichomonas vaginalis es un protozoo flagelado anaerobio que se transmite por contacto estrecho, generalmente por las relaciones sexuales. La transmisión perinatal es la única forma de transmisión no sexual documentada.\n\nLa vaginosis bacteriana es la vulvovaginitis más frecuente (20-40% del total de vulvovaginitis). Clásicamente se ha atribuido esta entidad a la infección por Gardnerella vaginalis. Actualmente se define como un sindrome clínico de origen polimicrobiano que resulta de la alteración del ecosistema vaginal normal (infección endógena).\n\nLa candidiasis es una enfermedad inflamatoria de la vagina y vulva producida por diferentes especies de hongos, secundaria generalmente a condiciones fisiológicas alteradas que determinan una disminución de la inmunidad local.\n\nEl EGB (Estreptococo agalactiae) es un habitante primario del tracto gastrointestinal. Sin embargo también puede colonizar el tracto genitourinario y la faringe.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-005",
+    "materia": [
+      "ginecologia",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Anticoncepción",
+      "Salud sexual y reproductiva"
+    ],
+    "enunciado": "Rocío de 15 años lo consulta en su consultorio porque ayer se le rompió el preservativo mientras mantenía relaciones sexuales con su novio. Después de brindarle asesoramiento sobre embarazo y enfermedades de transmisión sexual (ETS), Rocío le comunica que su novio recibió los resultados de la serología de VIH la semana anterior y era negativo, pero refiere que ella no desea ser madre en este momento. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicita serologias para ETS y entrega anticonceptivo hormonal de emergencia",
+      "b": "Cita a su pareja para tomar la decisión en conjunto",
+      "c": "Cita a sus padres para tomar la decisión con un adulto responsable",
+      "d": "Solicita laboratorio de rutina con búsqueda en ETS y cita a los padres"
+    },
+    "correcta": "a",
+    "explicacion": "Las indicaciones para la anticoncepción hormonal de emergencia son mujeres que hayan tenido una relación sexual no protegida, ante el uso incorrecto o un accidente con otro método anticonceptivo o ante casos de violencia sexual. Su mecanismo de acción es el de impedir la ovulación, en caso de que el embarazo ya se haya producido no lo interrumpe. La efectividad disminuye con el paso de las horas.\n\nEn Argentina, la Ley de Salud Sexual establece que a partir de los 13 años el adolescente puede solicitar metodos anticonceptivos. Pueden consentir además para toda práctica que no implique un riesgo grave para su salud o su vida.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-006",
+    "materia": [
+      "cirugiageneral",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "EPI"
+    ],
+    "enunciado": "El porcentaje más alto de apendicetomías negativas ocurre en mujeres jóvenes, con cifras que oscilan entre 32 y 45%. En este contexto, ¿cuáles son los diagnósticos diferenciales más frecuentes?",
+    "opciones": {
+      "a": "Enfermedad inflamatoria intestinal, enfermedad inflamatoria pelviana, cáncer de ciego.",
+      "b": "Embarazo ectópico, tiflitis y úlcera duodenal perforada.",
+      "c": "Embarazo ectópico, enfermedad inflamatoria pelviana y patología anexial.",
+      "d": "Patología pleuropulmonar, enfermedad inflamatoria pelviana y pielonefritis."
+    },
+    "correcta": "c",
+    "explicacion": "La apendicitis es la urgencia quirúrgica más frecuente. Es la causa de abdomen agudo más común en pacientes de 10-40 años. El diagnóstico diferencial es muy amplio. Cualquier causa de inflamación en la fosa ilíaca derecha puede simular una apendicitis aguda. Los principales trastornos con que se debe diferenciar son: quiste ovárico roto, embarazo ectópico, enfermedad inflamatoria pélvica, ileítis terminal, entre otros.\n\nEl cuadro clínico típico de un embarazo ectópico es la asociación de metrorragia del primer trimestre y dolor abdominal. En el caso de embarazo ectópico complicado (cuando el anejo se rompe), existirá dolor abdominal agudo en el hemiabdomen inferior por la irritación peritoneal producida por la sangre libre en la cavidad.\n\nLos sintomas que se pueden encontrar habitualmente en la enfermedad inflamatoria pélvica son: dolor abdominal bajo (hipogástrico) (síntoma más frecuente): 95%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-007",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones del tracto genital inferior",
+      "ITS"
+    ],
+    "enunciado": "Una paciente joven concurre al consultorio por presentar prurito y dolor de tipo fulgurante en la región del pubis, introito y horquilla vulvar. Al examen físico se comprueba un área extensa de la región vulvar bilateral cubierta por pequeñas ulceras coalescentes en ramillete. ¿En qué tipo de infección pensaría?",
+    "opciones": {
+      "a": "Virus del papiloma humano",
+      "b": "Primoinfección por virus herpes simple",
+      "c": "Escabiosis",
+      "d": "Chancro sifilitico"
+    },
+    "correcta": "b",
+    "explicacion": "La primoinfección sintomática por herpes virus se caracteriza por lesiones vesiculosas agrupadas en forma de ramillete que se rompen, quedando erosiones superficiales y costras. Las adenopatías locales son frecuentes. Puede acompañarse de fiebre, cefalea, dolor abdominal, mialgias y malestar general.\n\nLas verrugas genitales o condilomas acuminados (VPH) se caracterizan por tumoraciones exofíticas de tamaño y número variable, de consistencia blanda.\n\nEl chancro sifilítico se manifiesta con un chancro o úlcera indolora acompañada de adenopatias regionales.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-008",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones del tracto genital inferior",
+      "ITS"
+    ],
+    "enunciado": "Lo consulta por guardia Martina de 19 años porque refiere malestar generalizado, fiebre y ardor vulvar de 36 hs de evolución. Al revisar a la paciente encuentra adenopatías inguinales y lesiones vesiculares en periné. ¿Qué tratamiento sería el más adecuado para esta paciente?",
+    "opciones": {
+      "a": "Aciclovir 800 mg VO cada 8hs por 14 días.",
+      "b": "Aciclovir 800mg VO cada 12 hs por 5 días.",
+      "c": "Aciclovir 400mg VO cada 8hs por 10 dias.",
+      "d": "Aciclovir 400mg VO cada 8hs por 5 días."
+    },
+    "correcta": "c",
+    "explicacion": "El herpes genital es una infección viral crónica. Las manifestaciones clinicas de la primoinfección son variadas, desde formas asintomáticas hasta graves. La primoinfección sintomática se caracteriza por lesiones vesiculosas que se rompen, quedando erosiones superficiales y costras. Las adenopatías locales son frecuentes.\n\nSegun la actualizacion 2025, el tratamiento de la primoinfeccion es el siguiente:\n\nAciclovir 400 mg via oral 3 veces por día por 7 a 10 dias, ó\n\nValaciclovir 1 gr via oral 2 veces por día por 7 a 10 días.\n\nLas formas recurrentes se tratan con esquemas supresores sistémicos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-009",
+    "materia": [
+      "ginecologia",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Anticoncepción",
+      "Normativa nacional y jurisdiccional"
+    ],
+    "enunciado": "Juana, de 15 años, concurre a su consultorio para asesoramiento en anticoncepción. No refiere antecedentes personales ni familiares a destacar. El examen físico es normal. Juana no conoció a su padre y dice que su madre trabaja todo el día y no puede acompañarla a la visita. Después de brindarle asesoramiento, Juana dice que además de usar preservativo, ella preferiría iniciar el uso de píldoras anticonceptivas para mayor seguridad. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Solicitar laboratorio previo a la entrega de las píldoras",
+      "b": "Solicitar laboratorio y ecografia ginecológica y citar a un adulto",
+      "c": "Entregar píldoras en próxima consulta en compañía de la madre",
+      "d": "Controlar la tensión arterial y entregar las píldoras"
+    },
+    "correcta": "d",
+    "explicacion": "La consulta por anticoncepción debe ser considerada una urgencia. Se suguiere control de TA antes del inicio de la utilización de anticonceptivos hormonales. Solicitar otro tipo de estudios de laboratorio como requisito para la entrega y/o indicación de los anticonceptivos implica perder la oportunidad de iniciar a tiempo su uso.\n\nConsentimiento de adolescentes entre 13 y 16 años: pueden decidir de manera autónoma, sin necesidad de asistencia de personas adultas, sobre prácticas y tratamientos que no impliquen riesgo grave para su salud. Los métodos anticonceptivos transitorios (incluyendo los implantes y los dispositivos intrauterinos) no son prácticas que comprometan el estado de salud, por lo tanto, desde los 13 años pueden acceder en forma autónoma, sin autorización ni acompañamiento de adultos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-010",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Endometriosis"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico presuntivo de una mujer de 24 años que consulta por dolor pélvico crónico, de varios años de evolución, tratado sin éxito con antiespasmódicos y diferentes analgésicos? El dolor se localiza en ambas fosas ilíacas, es sordo, no cólico, intermitente, se exacerba con la menstruación y con el coito. Es sexualmente activa y hace 18 meses que ha dejado de tomar anticonceptivos, pero no ha logrado embarazarse.",
+    "opciones": {
+      "a": "Enfermedad pelviana inflamatoria",
+      "b": "Endometriosis",
+      "c": "Rotura de quiste de ovario",
+      "d": "Mioma uterino"
+    },
+    "correcta": "b",
+    "explicacion": "La endometriosis es una enfermedad benigna que afecta al 5 al 10% de la población en edad reproductiva de entre 15 y 45 años, produciendo dolor (pelviano crónico, dismenorrea, dispareunia), subfertilidad, o la combinación de ambos sintomas. El diagnóstico se realiza en forma presuntiva a través de un exhaustivo interrogatorio, sintomatología expresada por la paciente, examen físico, estudios complementarios.\n\nEn el caso de esta pregunta, en el enunciado se mencionan todos los sintomas compatibles con endometriosis: dolor pelviano cronico, dispareunia, dismenorrea y esterilidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-011",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Anticoncepción"
+    ],
+    "enunciado": "Según los criterios de la OMS. ¿En cuál de los siguientes casos está contraindicado un método anticonceptivo hormonal?",
+    "opciones": {
+      "a": "Mujer de 38 años que presenta hipertensión leve, antecedentes de preeclampsia y miomatosis uterina",
+      "b": "Mujer de 36 años tabaquista de 20 cigarrillos diarios, antecedentes de diabetes gestacional y talasemia",
+      "c": "Mujer de 31 años, antecedente de cáncer de mama en familiar de primer grado, trombosis venosa superficial e hipotiroidea",
+      "d": "Mujer de 32 años que cursa un posparto de 8 semanas, antecedentes de dismenorrea y cefaleas suaves"
+    },
+    "correcta": "b",
+    "explicacion": "Contraindicaciones absolutas de los anticonceptivos hormonales combinados:\n\n• Lactancia materna (6 primeras semanas)\n• Tabaquismo de > 15 cigarrillos/día en mayores de 35 años\n• Obesidad con IMC>40\n• Hipertensión arterial grave no controlada\n• Cirugia mayor con periodos prologados de inmovilización\n• Accidente cerebrovascular (ictus) isquémico o cardiopatia grave\n• Hipertrigliceridemia grave\n• Hepatopatia activa\n• Diabetes mellitus con vasculopatía asociada\n• Antecedente personal de trombosis venosa profunda o tromboembolismo pulmonar\n• Trombofilia familiar\n• Cefaleas migrañosas con aura\n• Tumores hormonodependientes\n• Lupus eritematoso sistémico con anticuerpos antifosfolipidicos positivos",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-012",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Anticoncepción",
+      "Tuberculosis"
+    ],
+    "enunciado": "Una mujer de 45 años concurre al centro de salud para solicitar un método anticonceptivo. Tiene como antecedentes encontrarse en tratamiento por tuberculosis pulmonar en el mismo centro de salud. ¿Cuál es el método anticonceptivo más adecuado en este caso?",
+    "opciones": {
+      "a": "Desogestrel",
+      "b": "Combinación de etinilestradiol y gestodeno",
+      "c": "Combinación de etinilestradiol y levonorgestrel",
+      "d": "Acetato de medroxiprogesterona de depósito"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento con derivados de la rifampicina (utilizado en tuberculosis) disminuye las concentraciones séricas tanto de etinilestradiol (EE) como de los diferentes progestágenos (entre ellos levonorgestrel) que integran los preparados de anticoncepción combinada oral (ACO). Este efecto puede implicar una reducción de la eficacia anticonceptiva de los combinados hormonales.\n\nSeguin la guia MAC MSAL 2023, tanto los AOC como los POP (progestágenos solos oral), el anillo y parche son categoria 3 para pacientes en tratamiento con rifampicina. El implante subdermico, el inyectable comninado o el de inyectable de progestageno son categoria 2 (Beneficios superan riesgos).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-013",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones del tracto genital inferior",
+      "ITS"
+    ],
+    "enunciado": "Una paciente de 45 años consulta por flujo genital y prurito vulvar. Refiere que su pareja se encuentra asintomática. Al examen presenta eritema y congestión vulvar y abundante flujo verdoso con burbujas. En base a la sospecha diagnóstica, ¿Qué tratamiento indica?",
+    "opciones": {
+      "a": "Doxiciclina via oral a la paciente y a su pareja",
+      "b": "Metronidazol via oral a la paciente y a su pareja",
+      "c": "Doxiciclina vía oral sólo a la paciente",
+      "d": "Metronidazol via vaginal sólo a la paciente"
+    },
+    "correcta": "b",
+    "explicacion": "Un flujo abundante flujo verdoso con burbujas que se acompaña eritema y congestión vulvar, incluso puede estar asociado en la especuloscopia a colpitis con puntos rojos o \"en fresa\" generando un cuello uterino friable y sangrante, es caracteristico de una infeccion por tricomonas, catalogada como una enfermedad de transmisión sexual (ETS) muy común causada por la infección transmitida por el parásito protozoario llamado Trichomonas vaginalis.\n\nEl tratamiento de la misma es con Metronidazol en sus dos esquemas: 500mg cada 12 horas por 7 dias o 2mg monodosis via oral (siendo el primero mas efectivo) a la paciente y a su pareja sexual al tratarse de una ETS, por mas que la pareja este asintomatica ya que el no realizar tratamiento conlleva a la reinfeccion.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-014",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Anticoncepción"
+    ],
+    "enunciado": "Según la Guía \"Métodos anticonceptivos: guía práctica para profesionales de la salud\", Ministerio de salud de la Nación, 2023, en relación con el uso de los anticonceptivos orales combinados, ¿cuál es la conducta más adecuada en caso de vómitos?",
+    "opciones": {
+      "a": "Si la mujer presenta vómitos dentro de las 6 horas de la toma, debe tomar otro comprimido lo antes posible y continuar con la toma diaria",
+      "b": "Si la mujer presenta vómitos dentro de las 2 horas de la toma, debe tomar otro comprimido lo antes posible y continuar con la toma diaria",
+      "c": "Si la mujer presenta vómitos dentro de las 2 horas de la toma, debe tomar otro comprimido lo antes posible, y usar método alternativo por 7 dias",
+      "d": "Si la mujer presenta vómitos dentro de las 6 horas de la toma, debe tomar otro comprimido lo antes posible, y usar método alternativo por 7 dias"
+    },
+    "correcta": "b",
+    "explicacion": "Si por algún motivo la mujer vomito o esta con diarrea mientras toma ACO, es importante tener en cuenta algunos cuidados adicionales para la efectividad del método anticonceptivo. En el caso particular de los vómitos, si el vómito es dentro de las 2 horas posteriores a la toma, debe tomarse otra pastilla lo antes posible y luego continuar con la toma diaria (en este caso, se terminará el envase un día antes de lo previsto, y debe iniciarse el próximo también un dia antes).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-015",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Anticoncepción"
+    ],
+    "enunciado": "Una paciente de 25 años concurre a la consulta ginecológica porque desea comenzar a utilizar Anticonceptivos Orales (ACO). Según la Guía \"Métodos anticonceptivos guía práctica para profesionales de la salud\" Ministerio de Salud de la Nación, 2023. ¿Cuáles son las prácticas mínimas para iniciar tratamiento con ACO?",
+    "opciones": {
+      "a": "Toma de presión arterial",
+      "b": "Toma de presión arterial y solicitar laboratorio y ecografía transvaginal",
+      "c": "Toma de Papanicolaou",
+      "d": "Toma de papanicolaou y solicitar laboratorio con enzimas hepáticas"
+    },
+    "correcta": "a",
+    "explicacion": "Si bien la OMS recomienda idealmente tomar la presión arterial antes de iniciar la toma de métodos hormonales, en algunos lugares su medición no está disponible, lo cual no invalida necesariamente la posibilidad de utilizar un anticonceptivo hormonal. Siempre es conveniente tener en cuenta la situación singular de la mujer, el contexto y sus posibilidades. En caso de que no sea conveniente comenzar con el ACO hasta tener los resultados de los estudios, debe facilitarse otro método que no implique un riesgo para la salud hasta ese momento.\n\nEl nivel de recomendación de cada practica a realizar antes de indicar ACO:\nExamen ginecológico y mamario (nivel C)\nCitología cervical y colposcopia (nivel C)\nLaboratorio de rutina (nivel C)\nPesquisa de ITS (nivel C)\nTensión arterial (aconsejado)\nConsejería (nivel A)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-016",
+    "materia": [
+      "ginecologia",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Anticoncepción",
+      "Salud sexual y reproductiva"
+    ],
+    "enunciado": "Concurre una mujer de 15 años a los consultorios de demanda espontánea del hopital porque utiliza anticonceptivos orales combinados (ACO) desde hace 3 meses recetados por otro médico. Refiere buena tolerancia y adherencia al método. Le solicita más cajas de ACO. Según la \"Guía Métodos anticonceptivos: Guía práctica para profesionales de la salud\" del Ministerio de salud de la Nación. 2019, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Desaconseja ACO y le entrega preservativos",
+      "b": "Entrega los ACO en el momento, aclarando que es una excepción y le solicita que a la próxima consulta concurra acompañada de un mayor",
+      "c": "Entrega ACO en el momento, ofrece rastreo de infección de fransmisión sexual (ITS) y brinda información sobre el uso del preservativo",
+      "d": "Toma una muestra para PAP y solicita serologias para ITS. Cita con resultado para entregar los ACO"
+    },
+    "correcta": "c",
+    "explicacion": "La consejería es un dispositivo de atención que implica el asesoramiento personalizado, realizado por personal capacitado, con el objetivo de acompañar a las personas en la toma de decisiones autónomas sobre su salud sexual y reproductiva. La información que se incluye en los espacios de consejería refiere, entre otros temas, α: Métodos anticonceptivos, Prácticas de cuidado y prevención de ITS, etc.\n\nLa información sobre salud sexual y reproductiva que se brinda en la consejería debe ser actualizada, validada científicamente, expresada de forma clara, en términos adecuados y al momento de la demanda, sin interferencias de turnos o requerimientos previos. Esto también aplica a las adolescentes mayores de 13 años, donde tampoco se requiere la firma de los padres para recibir información y asesoramiento.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-017",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPI",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "Una paciente de 24 años, nuligesta, con diagnóstico de enfermedad inflamatoria pélvica concurre al control luego de haber realizado 72 horas de antibioticoterapia por vía oral. Al examen se constata persistencia de los signos y los síntomas. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Rotar esquema antibiótico via oral y control en 24 horas",
+      "b": "Internación y rotar a esquema antibiótico intravenoso",
+      "c": "Laparoscopia exploradora",
+      "d": "Rotar esquema antibiótico via oral y solicitar ecografia transvaginal"
+    },
+    "correcta": "b",
+    "explicacion": "Considerar internación para observación, estudio, tratamiento antibiótico intravenoso y/o posible intervención quirúrgica en las siguientes situaciones:\n\n• Diagnóstico incierto.\n• Falta de respuesta al tratamiento ambulatorio oral.\n• Paciente con enfermedad grave.\n• Presencia de absceso tuboovárico.\n• Intolerancia al tratamiento oral.\n• Embarazo (se interna de inicio, no se realiza tratamiento ambulatorio)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gineco-003-018",
+    "materia": [
+      "ginecologia",
+      "medicinalegal",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones del tracto genital inferior",
+      "Normativa nacional y jurisdiccional"
+    ],
+    "enunciado": "¿Cual es la conducta a seguir ante una joven sana de 19 años, con vacunación completa para hepatitis B, que consulta a la guardia porque hace 4 días fue violada en la vía pública? La paciente no presenta lesiones graves producto de la violación.",
+    "opciones": {
+      "a": "Solicitar VDRL, serologia de VIH (previo consentimiento), antiHBs, serologia de hepatitis C, prueba de embarazo. Indicar anticoncepción de emergencia, Ceftriaxona 250 mg IM + Azitromicina 1g VO + Metronidazol 2 g VO",
+      "b": "Solicitar VDRL, serología de VIH (previo consentimiento), AntiHBc, serología de hepatitis C, prueba de embarazo. Indicar anticoncepción de emergencia, Ceftriaxona 250 mg IM + Azitromicina 1g VO + Metronidazol 2 g VO + tratamiento antirretroviral",
+      "c": "Denuncia policial de la violación. Solicitar VDRL, serología de VIH (previo consentimiento), AntiHBc, serología de hepatitis C, prueba de embarazo. Indicar Ceftriaxona 250 mg IM + Azitromicina 1g VO + Metronidazol 2 g VO",
+      "d": "Denuncia policial de la violación. Solicitar VDRL, serología de VIH (previo consentimiento), AntiHBs, serologia de hepatitis C, prueba de embarazo. Indicar anticoncepción de emergencia, Ceftriaxona 250 mg IM + Azitromicina 19 VO + Metronidazol 2 g VO"
+    },
+    "correcta": "a",
+    "explicacion": "El acceso de las víctimas de violaciones puede producirse por el Servicio de Guardia o por los Consultorios Externos de distintos servicios. Las pruebas de laboratorio indicadas son: Sifilis, VIH, Hepatitis B y C, etc.\n\nEn caso de faltar este estudio, de todas formas debe comenzarse la anticoncepción hormonal de emergencia (AHE), que es un método que previene el embarazo después de un acto sexual sin protección. La AHE se debe brindar lo antes posible y hasta 5 días después de la violación. La prevención del VIH con tratamiento antirretroviral debe comenzar inmediatamente después del episodio de violación, en lo posible antes de las 2 horas de producido. Pasadas las 72 horas se deben evaluar los riesgos de transmisión de VIH y los beneficios del tratamiento.\n\nEn mayores de edad la denuncia policial no corresponde ya que en un hecho de instancia privada, por lo que no es obligacion del personal de salud gestionarla.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  
