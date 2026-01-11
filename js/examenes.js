@@ -1,5 +1,5 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (Con Análisis Gráfico)
+   📝 MEbank 3.0 – Exámenes Anteriores (Con Configuración Completa)
    ========================================================== */
 
 /* ==========================================================
@@ -66,7 +66,6 @@ function renderExamenesMain() {
       .donut-chart {
         width: 140px; height: 140px; border-radius: 50%;
         position: relative; margin: 0 auto;
-        /* El gradiente se inyecta por JS */
       }
       .donut-hole {
         width: 90px; height: 90px; background: var(--bg-card, white); border-radius: 50%;
@@ -85,6 +84,12 @@ function renderExamenesMain() {
         margin-top: 20px; padding: 10px; background: #fffbeb; border: 1px solid #fcd34d; 
         border-radius: 8px; font-size: 11px; color: #92400e; display: flex; gap: 8px;
       }
+      
+      /* Checkbox bonito */
+      .config-check { display: flex; align-items: center; gap: 8px; background: white; padding: 6px 12px; border-radius: 6px; border: 1px solid #f1f5f9; cursor: pointer; user-select: none; }
+      .config-check:hover { background: #f8fafc; border-color: #e2e8f0; }
+      .config-check input { cursor: pointer; accent-color: #3b82f6; width: 16px; height: 16px; }
+      .config-label { font-size: 13px; color: #334155; font-weight: 600; }
     </style>
   `;
 
@@ -233,19 +238,25 @@ function toggleExamenItem(id) {
 function formatearNombreExamen(id) { return id.replace(/_/g, " ").toUpperCase(); }
 
 /* ==========================================================
-   📘 Botonera
+   📘 Botonera Expandida (CONFIGURACIÓN)
    ========================================================== */
 function renderExpandExamen(ex, preguntas, progreso) {
   const iniciado = progreso > 0;
 
+  // NUEVO: Checkboxes de configuración
   return `
     <div style="margin-top:12px;padding-top:12px;border-top:1px dashed #cbd5e1;">
 
-      <div style="margin-bottom:15px; display:flex; align-items:center; gap:8px; background:white; padding:8px; border-radius:6px; border:1px solid #f1f5f9; width:fit-content;">
-        <input type="checkbox" id="timer-check-${ex.id}" style="cursor:pointer; width:16px; height:16px; accent-color:#3b82f6;">
-        <label for="timer-check-${ex.id}" style="font-size:13px; color:#334155; cursor:pointer; font-weight:600;">
-           ⏱ Activar cronómetro
-        </label>
+      <div style="margin-bottom:15px; display:flex; flex-wrap:wrap; gap:10px;">
+          <label class="config-check" for="timer-check-${ex.id}">
+            <input type="checkbox" id="timer-check-${ex.id}">
+            <span class="config-label">⏱ Reloj</span>
+          </label>
+          
+          <label class="config-check" for="correction-check-${ex.id}">
+            <input type="checkbox" id="correction-check-${ex.id}">
+            <span class="config-label">📝 Corregir al final</span>
+          </label>
       </div>
 
       <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; margin-bottom:10px;">
@@ -283,7 +294,7 @@ function analizarExamen(examId) {
 function analizarGrupo(nombreGrupo) {
     if(typeof EXAMENES_META === 'undefined') return;
     
-    // 1. Obtener todos los IDs de ese grupo
+    // IDs del grupo
     const examenesDelGrupo = EXAMENES_META.filter(e => e.grupo === nombreGrupo);
     
     let todasLasPreguntas = [];
@@ -307,9 +318,8 @@ function mostrarModalAnalisis(titulo, preguntas) {
         return;
     }
 
-    // 1. Conteo de Materias
     const counts = {};
-    let totalTags = 0; // Total de menciones (puede ser mayor a total de preguntas)
+    let totalTags = 0; 
     
     preguntas.forEach(q => {
         const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
@@ -319,19 +329,16 @@ function mostrarModalAnalisis(titulo, preguntas) {
         });
     });
 
-    // 2. Ordenar datos
     const data = Object.keys(counts)
         .map(m => ({ name: m, count: counts[m] }))
         .sort((a, b) => b.count - a.count);
 
-    // 3. Asignar Colores y Porcentajes
     const chartData = data.map((d, i) => {
         const color = CHART_COLORS[i % CHART_COLORS.length];
         const percent = (d.count / totalTags) * 100;
         return { ...d, color, percent };
     });
 
-    // 4. Generar Gradiente Cónico para el Donut
     let gradientStr = "";
     let currentPerc = 0;
     chartData.forEach(d => {
@@ -339,9 +346,8 @@ function mostrarModalAnalisis(titulo, preguntas) {
         gradientStr += `${d.color} ${currentPerc}% ${endPerc}%,`;
         currentPerc = endPerc;
     });
-    gradientStr = gradientStr.slice(0, -1); // Sacar última coma
+    gradientStr = gradientStr.slice(0, -1); 
 
-    // 5. Generar HTML Lista
     const listHtml = chartData.map(d => `
         <div class="legend-item">
             <div style="display:flex; align-items:center; width:130px;">
@@ -357,7 +363,6 @@ function mostrarModalAnalisis(titulo, preguntas) {
         </div>
     `).join("");
 
-    // 6. Render Final
     bodyEl.innerHTML = `
         <div class="chart-container">
             <div class="donut-chart" style="background: conic-gradient(${gradientStr});">
@@ -366,17 +371,11 @@ function mostrarModalAnalisis(titulo, preguntas) {
                     <div style="font-size:10px; color:var(--text-sec, #64748b); font-weight:600; text-transform:uppercase;">Preguntas</div>
                 </div>
             </div>
-            
-            <div class="chart-legend">
-                ${listHtml}
-            </div>
+            <div class="chart-legend">${listHtml}</div>
         </div>
-
         <div class="disclaimer-box">
            <span style="font-size:16px;">⚠️</span>
-           <div>
-             <b>Nota:</b> El total de temas (${totalTags}) puede ser mayor al de preguntas (${preguntas.length}) porque algunas preguntas multidisciplinarias suman en varias categorías a la vez.
-           </div>
+           <div><b>Nota:</b> El total de temas (${totalTags}) puede ser mayor al de preguntas por temas multidisciplinarios.</div>
         </div>
     `;
 
@@ -391,7 +390,9 @@ function calcularProgresoExamen(examenId) {
   if (!preguntas.length) return 0;
   let resueltas = 0;
   preguntas.forEach(q => {
-    const r = PROG[q.materia]?.[q.id];
+    // Busca en la materia de la pregunta si hay respuesta
+    const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    const r = PROG[mat]?.[q.id];
     if (r && (r.status === "ok" || r.status === "bad")) resueltas++;
   });
   return Math.round((resueltas / preguntas.length) * 100);
@@ -407,19 +408,48 @@ function getQuestionsByExamen(examId) {
     });
 }
 
+// LÓGICA DE INICIO CON CONFIGURACIÓN
 function iniciarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
   if (!preguntas.length) return alert("No se encontraron preguntas.");
-  const checkEl = document.getElementById(`timer-check-${id}`);
-  iniciarResolucion({ modo: "examen", preguntas, usarTimer: checkEl ? checkEl.checked : false, titulo: formatearNombreExamen(id), examenId: id });
+  
+  // Leemos configs
+  const checkTimer = document.getElementById(`timer-check-${id}`);
+  const checkCorrection = document.getElementById(`correction-check-${id}`);
+  
+  iniciarResolucion({ 
+      modo: "examen", 
+      preguntas, 
+      usarTimer: checkTimer ? checkTimer.checked : false, 
+      titulo: formatearNombreExamen(id), 
+      examenId: id,
+      correccionFinal: checkCorrection ? checkCorrection.checked : false // Pasamos la config
+  });
 }
 
 function reanudarExamen(id) {
   const preguntas = getQuestionsByExamen(id);
-  const pendientes = preguntas.filter(q => { const r = PROG[q.materia]?.[q.id]; return !r || (r.status !== 'ok' && r.status !== 'bad'); });
+  // Filtramos pendientes
+  const pendientes = preguntas.filter(q => { 
+      const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+      const r = PROG[mat]?.[q.id]; 
+      return !r || (r.status !== 'ok' && r.status !== 'bad'); 
+  });
+  
   if(pendientes.length === 0) return alert("¡Examen completado!");
-  const checkEl = document.getElementById(`timer-check-${id}`);
-  iniciarResolucion({ modo: "reanudar", preguntas: pendientes, usarTimer: checkEl ? checkEl.checked : true, titulo: formatearNombreExamen(id) + " (Cont.)", examenId: id });
+  
+  // Leemos configs (el usuario puede cambiarlas al reanudar)
+  const checkTimer = document.getElementById(`timer-check-${id}`);
+  const checkCorrection = document.getElementById(`correction-check-${id}`);
+
+  iniciarResolucion({ 
+      modo: "reanudar", 
+      preguntas: pendientes, 
+      usarTimer: checkTimer ? checkTimer.checked : true, 
+      titulo: formatearNombreExamen(id) + " (Cont.)", 
+      examenId: id,
+      correccionFinal: checkCorrection ? checkCorrection.checked : false // Pasamos la config
+  });
 }
 
 function revisarExamen(id) {
@@ -430,9 +460,17 @@ function resetearExamen(id) {
     if(!confirm("⚠ ¿Reiniciar este examen? Se borrará todo el progreso.")) return;
     const preguntas = getQuestionsByExamen(id);
     let cambios = false;
-    preguntas.forEach(q => { if(PROG[q.materia] && PROG[q.materia][q.id]) { delete PROG[q.materia][q.id]; cambios = true; } });
-    if(cambios) { if(typeof saveProgress === 'function') saveProgress(); renderExamenesMain(); } 
-    else { alert("No había progreso."); }
+    preguntas.forEach(q => { 
+        const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+        if(PROG[mat] && PROG[mat][q.id]) { delete PROG[mat][q.id]; cambios = true; } 
+    });
+    
+    if(cambios) { 
+        if(typeof saveProgress === 'function') saveProgress(); 
+        renderExamenesMain(); 
+    } else { 
+        alert("No había progreso."); 
+    }
 }
 
 function verNotasExamen(id) { renderNotasMain(); }
