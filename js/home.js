@@ -275,3 +275,14 @@ function highlightSearchTerm(text, term) {
 
 // Mantener compatibilidad si algún botón llama a renderNotasMain
 window.renderNotasMain = renderRepasoMain; 
+/* ==========================================================
+   🚀 INICIALIZACIÓN (AGREGAR AL FINAL DE home.js)
+   ========================================================== */
+
+function initApp() {
+    console.log("Iniciando MEbank 3.0...");
+    renderHome();
+}
+
+// Aseguramos que sea global
+window.initApp = initApp;
