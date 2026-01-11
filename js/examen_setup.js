@@ -1,14 +1,36 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Simulacro (Con Filtro Oficiales ⭐️ + Corrección Final)
+   🎯 MEbank 3.0 – Simulacro & Historial Real
    ========================================================== */
 
-// Variable de estado para el orden del historial
+const STORAGE_KEY_HISTORY = "MEbank_Simulacros_History_v1";
 let historySortOrder = 'newest';
 
+/* --- HELPER: Cargar Historial --- */
+function loadHistory() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY_HISTORY)) || [];
+  } catch (e) {
+    console.error("Error cargando historial", e);
+    return [];
+  }
+}
+
+/* --- API GLOBAL: Guardar Resultado (Llamada desde resolver.js) --- */
+window.guardarResultadoSimulacro = function(datos) {
+  // datos: { score (int), totalQ (int), timeStr (string), subjects (array), date (iso string) }
+  const historial = loadHistory();
+  historial.push(datos);
+  localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(historial));
+  console.log("✅ Simulacro guardado en historial.");
+};
+
+/* ==========================================================
+   RENDER PRINCIPAL
+   ========================================================== */
 function renderCrearExamen() {
   const app = document.getElementById("app");
 
-  // 1. CÁLCULO DE TOTALES (Sin filtrar, solo para mostrar disponibles)
+  // 1. CÁLCULO DE TOTALES
   const materias = BANK.subjects.map(s => {
     const total = BANK.questions.filter(q => {
         if (Array.isArray(q.materia)) return q.materia.includes(s.slug);
@@ -35,6 +57,7 @@ function renderCrearExamen() {
     </label>
   `).join("");
 
+  // Estilos (Mantenidos igual)
   const styles = `
     <style>
       .materia-box { display: flex; justify-content: space-between; align-items: center; background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s; position: relative; }
@@ -54,13 +77,11 @@ function renderCrearExamen() {
       .toggle-switch input { opacity: 0; width: 0; height: 0; }
       .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; transition: .4s; border-radius: 20px; }
       .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-      input:checked + .slider { background-color: #16a34a; } /* Verde por defecto */
+      input:checked + .slider { background-color: #16a34a; } 
       input:checked + .slider:before { transform: translateX(14px); }
       
-      /* Switch Naranja para Corrección */
       .slider-orange input:checked + .slider { background-color: #ea580c; } 
 
-      /* Modales */
       .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center; animation: fadeIn 0.2s ease; backdrop-filter: blur(2px); }
       .modal-content { background:white; padding:25px; border-radius:12px; max-width:500px; width:90%; box-shadow:0 10px 30px rgba(0,0,0,0.2); max-height:85vh; overflow-y:auto; }
       @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -93,7 +114,7 @@ function renderCrearExamen() {
             </div>
             <div style="margin-bottom:20px;">
                 <div style="font-weight:700; color:#1e293b; margin-bottom:4px;">📈 Historial</div>
-                <div style="font-size:14px; color:#475569;">Tus resultados (puntaje y tiempo) quedarán guardados en "Mi Progreso" para que veas tu evolución.</div>
+                <div style="font-size:14px; color:#475569;">Tus resultados se guardan automáticamente en "Mi Progreso".</div>
             </div>
             <div style="text-align:right;">
                 <button class="btn-main" onclick="document.getElementById('helpModal').style.display='none'" style="width:auto; padding:8px 20px;">Entendido</button>
@@ -113,6 +134,10 @@ function renderCrearExamen() {
                 <span class="sort-link" id="sort-oldest" onclick="setHistorySort('oldest')">Más antiguas</span>
             </div>
             <div id="historyList" style="min-height:100px;"></div>
+            
+            <div style="margin-top:20px; text-align:center; padding-top:10px; border-top:1px dashed #e2e8f0;">
+               <button class="btn-small btn-ghost" onclick="clearHistory()" style="color:#ef4444; font-size:12px;">🗑 Borrar historial</button>
+            </div>
         </div>
     </div>
 
@@ -196,7 +221,7 @@ function renderCrearExamen() {
 }
 
 /* ==========================================================
-   ⚙️ LÓGICA DE INTERFAZ Y SELECCIÓN
+   ⚙️ LÓGICA DE INTERFAZ
    ========================================================== */
 function closeModals(e) {
     if (e.target.classList.contains('modal-overlay')) {
@@ -275,9 +300,7 @@ function updateMaxPreguntas() {
 }
 
 function calculateTimeEstimate() {
-    const input = document.getElementById("mk-total");
-    if(!input) return;
-    // ...
+    // Placeholder para futura lógica de tiempo
 }
 
 function startExamenPersonalizado() {
@@ -289,7 +312,7 @@ function startExamenPersonalizado() {
   const total = parseInt(totalInput.value) || 10;
   const usarTimer = document.getElementById("mk-timer").checked;
   const soloOficiales = document.getElementById("mk-oficiales").checked;
-  const correccionFinal = document.getElementById("mk-correccion").checked; // CAPTURA NUEVA
+  const correccionFinal = document.getElementById("mk-correccion").checked;
 
   let pool = BANK.questions.filter(q => {
       const mat = Array.isArray(q.materia) ? q.materia : [q.materia];
@@ -303,8 +326,10 @@ function startExamenPersonalizado() {
 
   if (!pool.length) return alert("Error: No hay preguntas con esta configuración.");
 
+  // Shuffle y slice
   pool = pool.sort(() => Math.random() - 0.5).slice(0, total);
 
+  // IMPORTANTE: Pasamos 'checks' (subjects) a config para guardarlos en historial
   iniciarResolucion({
     modo: "personalizado",
     preguntas: pool,
@@ -312,12 +337,15 @@ function startExamenPersonalizado() {
     permitirRetroceso: true,
     mostrarNotas: true,
     titulo: soloOficiales ? "🎯 Simulacro Oficial ⭐️" : "🎯 Simulacro",
-    correccionFinal: correccionFinal // DATO NUEVO
+    correccionFinal: correccionFinal,
+    // Metadata extra para guardar en historial
+    metaSubjects: checks, 
+    metaIsOfficial: soloOficiales
   });
 }
 
 /* ==========================================================
-   📊 HISTORIAL (MANTENIDO)
+   📊 HISTORIAL REAL
    ========================================================== */
 
 function showHistory() {
@@ -330,8 +358,15 @@ function setHistorySort(order) {
     renderHistoryList();
 }
 
+function clearHistory() {
+    if(!confirm("¿Seguro que querés borrar todo el historial de simulacros?")) return;
+    localStorage.removeItem(STORAGE_KEY_HISTORY);
+    renderHistoryList();
+}
+
 function renderHistoryList() {
     const container = document.getElementById('historyList');
+    const history = loadHistory();
     
     const btnNew = document.getElementById('sort-newest');
     const btnOld = document.getElementById('sort-oldest');
@@ -344,28 +379,23 @@ function renderHistoryList() {
         btnOld.className = 'sort-link sort-active';
     }
 
-    // MOCK DATA
-    const mockHistory = [
-        { date: new Date().toISOString(), score: 85, totalQ: 50, timeStr: "42 min", subjects: ["pediatria", "cirugia", "ginecologia", "obstetricia", "cardiologia", "neurologia"] },
-        { date: new Date(Date.now() - 86400000).toISOString(), score: 72, totalQ: 20, timeStr: "18 min", subjects: ["infectologia", "pediatria"] },
-        { date: new Date(Date.now() - 172800000).toISOString(), score: 55, totalQ: 100, timeStr: "1h 10m", subjects: ["todas"] }
-    ];
-
-    mockHistory.sort((a, b) => {
-        if (historySortOrder === 'newest') return new Date(b.date) - new Date(a.date);
-        return new Date(a.date) - new Date(b.date);
-    });
-
-    if(mockHistory.length === 0) {
+    if(history.length === 0) {
         container.innerHTML = `<div style="text-align:center; color:#94a3b8; padding:20px;">No hay simulacros previos.</div>`;
         return;
     }
 
-    container.innerHTML = mockHistory.map(h => {
+    // Ordenar
+    history.sort((a, b) => {
+        if (historySortOrder === 'newest') return new Date(b.date) - new Date(a.date);
+        return new Date(a.date) - new Date(b.date);
+    });
+
+    container.innerHTML = history.map(h => {
+        // h: { score, totalQ, timeStr, subjects, date, correctCount }
         let color = "#1e293b";
-        if(h.score >= 40) color = "#ef4444";
-        if(h.score >= 60) color = "#eab308";
-        if(h.score >= 80) color = "#16a34a";
+        if(h.score < 40) color = "#ef4444";
+        else if(h.score < 70) color = "#eab308";
+        else color = "#16a34a";
 
         const dateObj = new Date(h.date);
         const day = dateObj.getDate();
@@ -373,10 +403,18 @@ function renderHistoryList() {
         const month = monthNames[dateObj.getMonth()];
 
         let subjText = "";
-        if(h.subjects.includes("todas") || h.subjects.length > 5) {
-            subjText = "Examen Completo";
+        // Si h.subjects existe y tiene todas, poner "Completo"
+        if (!h.subjects || h.subjects.length > 5) {
+            subjText = "Varias materias";
         } else {
-            subjText = h.subjects.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(", ");
+            subjText = h.subjects.map(s => {
+                // Intentar buscar nombre bonito
+                if(typeof BANK !== 'undefined') {
+                    const found = BANK.subjects.find(m => m.slug === s);
+                    if(found) return found.name.split(" ")[1] || found.name; // Ej: "Neumonología"
+                }
+                return s;
+            }).join(", ");
         }
 
         return `
@@ -387,8 +425,8 @@ function renderHistoryList() {
               </div>
               <div style="flex:1;">
                   <div style="font-size:14px; color:#1e293b; font-weight:700;">${h.totalQ} preguntas</div>
-                  <div style="font-size:12px; color:#64748b; margin-top:3px;">${subjText}</div>
-                  <div style="font-size:11px; color:#94a3b8; margin-top:2px;">⏱ ${h.timeStr}</div>
+                  <div style="font-size:12px; color:#64748b; margin-top:3px; max-width:200px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${subjText}</div>
+                  <div style="font-size:11px; color:#94a3b8; margin-top:2px;">⏱ ${h.timeStr || '--:--'}</div>
               </div>
               <div class="score-circle" style="background:${color};">
                   ${h.score}%
