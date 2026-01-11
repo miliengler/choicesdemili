@@ -42,13 +42,6 @@ function renderHome() {
   const daily = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
   const hoy = new Date().toISOString().split('T')[0];
   const hechasHoy = daily[hoy] || 0;
-
-  // Datos para los contadores del botón "Mi Repaso"
-  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
-  const favorites = JSON.parse(localStorage.getItem("mebank_favorites") || "[]");
-  const countNotes = Object.keys(savedNotes).length;
-  const countFavs = favorites.length;
-
   const isDark = document.body.classList.contains("dark-mode");
   const icon = isDark ? "☀️" : "🌙";
 
@@ -78,12 +71,7 @@ function renderHome() {
         <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de examen</button>
         <button class="btn-main menu-btn" onclick="goStats()">📊 Estadísticas</button>
         
-        <button class="btn-main menu-btn" onclick="goRepaso()">
-             📚 Mi Repaso
-             <span style="font-size:11px; opacity:0.8; display:block; font-weight:400; margin-top:2px;">
-                ${countFavs} Favs • ${countNotes} Notas
-             </span>
-        </button>
+        <button class="btn-main menu-btn" onclick="goNotas()">📚 Mi Repaso</button>
       </div>
 
       <div style="margin-top:25px; font-size:13px; color:#94a3b8;">
@@ -115,11 +103,8 @@ function goExamenes() { if(checkLoaded()) renderExamenesMain(); }
 function goCrearExamen() { if(checkLoaded()) renderCrearExamen(); }
 function goStats() { if(checkLoaded()) renderStats(); }
 
-// Llama a la función que vive en repaso.js
-function goRepaso() { if(checkLoaded()) renderRepasoMain(); }
-
-// Compatibilidad por si algún botón viejo llama a goNotas
-function goNotas() { goRepaso(); }
+// Redirecciona a la nueva pantalla de repaso (definida en repaso.js)
+function goNotas() { if(checkLoaded()) renderRepasoMain(); }
 
 async function recargarBancoDesdeHome() {
   if(!confirm("¿Recargar base de datos?")) return;
