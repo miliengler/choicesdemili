@@ -561,3 +561,121 @@ function getMateriaNombreForQuestion(q) {
   const nombres = materias.map(slug => { if (typeof BANK !== 'undefined' && BANK.subjects) { const mat = BANK.subjects.find(s => s.slug === slug); return mat ? mat.name : slug; } return slug; });
   return nombres.join(" | ");
 }
+/* ==========================================================
+   🖼 HELPERS VISUALES & SIDEBAR (AGREGAR AL FINAL DE resolver.js)
+   ========================================================== */
+
+function renderImagenesPregunta(imgs) {
+  if (!Array.isArray(imgs) || !imgs.length) return "";
+  return `
+    <div class="q-images-container">
+       ${imgs.map((src, idx) => `
+          <div class="q-image-thumbnail" onclick="openImgModal('${src}', 'Imagen ${idx+1}')">
+             <img src="${src}" alt="Imagen clínica" loading="lazy">
+             <div class="q-image-zoom-hint">🔍 Ampliar</div>
+          </div>
+       `).join("")}
+    </div>
+  `;
+}
+
+window.openImgModal = (src, caption) => {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("imgInModal");
+  const captionText = document.getElementById("imgCaption");
+  if(modal && modalImg) {
+      modal.style.display = "flex";
+      modalImg.src = src;
+      if(captionText) captionText.innerHTML = caption || "";
+  }
+};
+
+window.closeImgModal = () => {
+  const modal = document.getElementById("imgModal");
+  if(modal) modal.style.display = "none";
+};
+
+/* --- LÓGICA DEL SIDEBAR (ÍNDICE) --- */
+
+function toggleMobileSidebar() {
+    const sb = document.getElementById("sidebarEl");
+    if(sb) sb.classList.toggle("active-mobile");
+}
+
+function sbNextPage() {
+    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
+    if (SB_PAGE < totalPages - 1) {
+        SB_PAGE++;
+        refreshSidebarContent();
+    }
+}
+
+function sbPrevPage() {
+    if (SB_PAGE > 0) {
+        SB_PAGE--;
+        refreshSidebarContent();
+    }
+}
+
+function refreshSidebarContent() {
+    const grid = document.getElementById("sbGrid");
+    if(grid) grid.innerHTML = renderSidebarCells();
+    paintSidebarPageInfo();
+}
+
+function ensureSidebarOnCurrent() {
+  const targetPage = Math.floor(CURRENT.i / SB_PAGE_SIZE);
+  SB_PAGE = targetPage;
+}
+
+function paintSidebarPageInfo() {
+    const el = document.getElementById("sbInfo");
+    if(!el) return;
+    const totalPages = Math.ceil(CURRENT.list.length / SB_PAGE_SIZE);
+    el.textContent = `${SB_PAGE + 1}/${totalPages}`;
+}
+
+function renderSidebarCells() {
+  const total = CURRENT.list.length;
+  const start = SB_PAGE * SB_PAGE_SIZE;
+  const end = Math.min(total, start + SB_PAGE_SIZE);
+  const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
+  
+  const isExamMode = (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision');
+
+  const out = [];
+  for (let idx = start; idx < end; idx++) {
+    const q = CURRENT.list[idx];
+    const esActual = idx === CURRENT.i;
+    const userAns = CURRENT.userAnswers[q.id];
+
+    let cls = "sb-cell";
+    if (esActual) cls += " sb-active";
+    if (savedNotes[q.id]) cls += " sb-note";
+
+    if (isExamMode) {
+        if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral";
+    } else {
+        const estado = CURRENT.session[q.id]; 
+        if (estado === "ok") cls += " sb-ok";
+        if (estado === "bad") cls += " sb-bad";
+        
+        if (CURRENT.modo === 'revision' && userAns !== undefined) {
+             const ops = getOpcionesArray(q);
+             const rIdx = getCorrectIndex(q, ops.length);
+             if(!cls.includes('sb-ok') && !cls.includes('sb-bad')) {
+                 cls += (userAns === rIdx) ? " sb-ok" : " sb-bad";
+             }
+        }
+    }
+
+    out.push(`<div class="${cls}" onclick="irAPregunta(${idx}); toggleMobileSidebar();">${idx + 1}</div>`);
+  }
+  return out.join("");
+}
+
+function irAPregunta(idx) {
+  if (idx < 0 || idx >= CURRENT.list.length) return;
+  CURRENT.i = idx;
+  renderPregunta();
+}
