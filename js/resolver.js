@@ -446,20 +446,65 @@ function irAPregunta(idx) {
 function renderFin() {
   stopTimer();
 
-  // Si era MODO EXAMEN, ahora es el momento de procesar todo
+  // 1. Si era modo corrección final, procesamos los aciertos/errores en PROG
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // Llamar a la nueva pantalla de resultados
+  // 2. DETECCIÓN DE SIMULACRO PERSONALIZADO PARA HISTORIAL
+  // Solo guardamos si es modo 'personalizado' y NO es una revisión
+  if (CURRENT.modo === 'personalizado' && typeof window.guardarResultadoSimulacro === 'function') {
+      
+      // Calcular Stats del Examen
+      let correctas = 0;
+      let total = CURRENT.list.length;
+      
+      CURRENT.list.forEach(q => {
+          // Buscamos respuesta del usuario
+          const uIdx = CURRENT.userAnswers[q.id];
+          const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
+          
+          if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
+              correctas++;
+          }
+      });
+
+      const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
+      
+      // Calcular Tiempo Transcurrido (Si existe TIMER)
+      let timeStr = "--:--";
+      if (TIMER.start > 0) {
+          const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
+          const h = Math.floor(totalSeconds / 3600);
+          const m = Math.floor((totalSeconds % 3600) / 60);
+          timeStr = h > 0 
+            ? `${h}h ${m}m` 
+            : `${m} min`;
+      }
+
+      // Preparamos objeto para guardar
+      const resultado = {
+          date: new Date().toISOString(),
+          score: score,
+          correctCount: correctas,
+          totalQ: total,
+          timeStr: timeStr,
+          subjects: CURRENT.config.metaSubjects || [], // Viene del paso anterior
+          isOfficial: CURRENT.config.metaIsOfficial || false
+      };
+
+      // Guardamos
+      window.guardarResultadoSimulacro(resultado);
+  }
+
+  // 3. Llamar a la pantalla de resultados
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
-      // Fallback a pantalla simple si falla results.js
-      alert("No se cargó results.js, mostrando resumen simple.");
       renderFinSimple();
   }
 }
+
 
 function procesarResultadosExamenFinal() {
     const list = CURRENT.list;
