@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Botonera Dividida)
+   🎯 MEbank 3.0 – Motor de resolución (Final Layout Fix)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -111,14 +111,14 @@ function renderPregunta() {
     let letra = String.fromCharCode(97 + idx); 
     let eventHandler = `onclick="answer(${idx})"`;
 
-    // CASO A: MODO REVISIÓN O NORMAL (YA RESPONDIDO Y CORREGIDO)
+    // CASO A: REVISIÓN O NORMAL (YA RESPONDIDO Y CORREGIDO)
     if ((!isExamMode && yaRespondio) || isReview) {
         claseCSS += " q-option-locked"; 
         eventHandler = ""; 
         if (idx === correctIndex) claseCSS += " option-correct"; 
         else if (idx === userIdx) claseCSS += " option-wrong";   
     }
-    // CASO B: MODO EXAMEN REAL (SELECCIONADA PERO OCULTA LA VERDAD)
+    // CASO B: MODO EXAMEN (SELECCIONADA PERO OCULTA)
     else if (isExamMode && idx === userIdx) {
         claseCSS += " option-selected-neutral"; 
     }
@@ -143,7 +143,55 @@ function renderPregunta() {
         </div>`;
   }
 
+  // INYECTAMOS CSS ESPECÍFICO PARA ESTE LAYOUT AQUÍ MISMO
+  // Para asegurar que los botones queden bien separados
+  const localStyles = `
+    <style>
+        .nav-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 100%; 
+            margin-top: 25px; 
+            padding-top: 20px; 
+            border-top: 1px solid #f1f5f9;
+        }
+        .nav-group {
+            display: flex;
+            gap: 10px;
+        }
+        /* Botones del Resolver */
+        .btn-res {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            background: white;
+            color: #475569;
+            transition: all 0.2s;
+            display: flex; align-items: center; gap: 6px;
+        }
+        .btn-res:hover { background: #f8fafc; color: #1e293b; border-color: #cbd5e1; }
+        .btn-res:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Sidebar Pager Fix */
+        .sb-pager-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding: 8px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+    </style>
+  `;
+
   app.innerHTML = `
+    ${localStyles}
     <div id="imgModal" class="img-modal" onclick="closeImgModal()">
       <span class="img-modal-close">&times;</span>
       <img class="img-modal-content" id="imgInModal">
@@ -189,22 +237,22 @@ function renderPregunta() {
              </div>
           </div>
 
-          <div class="q-nav-row">
+          <div class="nav-container">
             
             <div class="nav-group">
-                <button class="btn-nav btn-nav-ghost" onclick="salirResolucion()">
+                <button class="btn-res" onclick="salirResolucion()">
                     🚪 Salir
                 </button>
-                <button class="btn-nav btn-nav-danger" onclick="intentarFinalizar()">
-                    🏁 Terminar
+                <button class="btn-res" onclick="intentarFinalizar()">
+                    🏁 Finalizar
                 </button>
             </div>
 
             <div class="nav-group">
-                <button class="btn-nav btn-nav-primary" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
+                <button class="btn-res" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
                     ⬅ Anterior
                 </button>
-                <button class="btn-nav btn-nav-primary" onclick="nextQuestion()" ${CURRENT.i === total - 1 ? "disabled" : ""}>
+                <button class="btn-res" onclick="nextQuestion()" ${CURRENT.i === total - 1 ? "disabled" : ""}>
                     Siguiente ➡
                 </button>
             </div>
@@ -220,11 +268,12 @@ function renderPregunta() {
             <button class="btn-small btn-close-mobile" onclick="toggleMobileSidebar()">✖</button>
         </div>
         
-        <div class="q-sidebar-pager">
-          <button class="btn-small" onclick="sbPrevPage()">◀</button>
-          <div class="q-sidebar-pageinfo" id="sbInfo">...</div>
-          <button class="btn-small" onclick="sbNextPage()">▶</button>
+        <div class="sb-pager-row">
+          <button class="btn-small" style="padding:4px 10px;" onclick="sbPrevPage()">◀</button>
+          <span class="q-sidebar-pageinfo" id="sbInfo" style="font-weight:600; font-size:13px; color:#475569;">...</span>
+          <button class="btn-small" style="padding:4px 10px;" onclick="sbNextPage()">▶</button>
         </div>
+
         <div class="q-sidebar-grid" id="sbGrid">${renderSidebarCells()}</div>
       </aside>
     </div>
@@ -245,7 +294,7 @@ function answer(selectedIndex) {
   // 1. Guardar respuesta en CURRENT
   CURRENT.userAnswers[q.id] = selectedIndex;
 
-  // 2. MODO EXAMEN: Solo marcamos visualmente
+  // 2. MODO EXAMEN
   if (isExamMode) {
       const options = document.querySelectorAll(".q-option");
       options.forEach((el, idx) => {
@@ -258,7 +307,7 @@ function answer(selectedIndex) {
       return; 
   }
 
-  // 3. MODO PRÁCTICA: Corregimos al toque
+  // 3. MODO PRÁCTICA
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
   const esCorrecta = (correctIndex !== null && selectedIndex === correctIndex);
@@ -307,7 +356,7 @@ function answer(selectedIndex) {
 }
 
 /* ==========================================================
-   ⏮ ⏭ NAVEGACIÓN Y CONTROL (Lógica Actualizada)
+   ⏮ ⏭ NAVEGACIÓN
    ========================================================== */
 
 function nextQuestion() {
@@ -316,7 +365,6 @@ function nextQuestion() {
     ensureSidebarOnCurrent();
     renderPregunta();
   }
-  // NOTA: Ya no finaliza automáticamente al llegar al final.
 }
 
 function prevQuestion() {
@@ -327,14 +375,9 @@ function prevQuestion() {
   }
 }
 
-// NUEVO: Lógica del botón "Terminar"
 function intentarFinalizar() {
-    // Contar respondidas
     const total = CURRENT.list.length;
     let respondidas = 0;
-    
-    // Contamos claves en userAnswers que correspondan a preguntas de la lista actual
-    // (Por si userAnswers tiene basura de otras cosas, aunque se limpia al iniciar)
     CURRENT.list.forEach(q => {
         if (CURRENT.userAnswers[q.id] !== undefined && CURRENT.userAnswers[q.id] !== null) {
             respondidas++;
@@ -345,26 +388,22 @@ function intentarFinalizar() {
     let msg = "";
 
     if (faltan === 0) {
-        msg = "Has respondido todas las preguntas.\n¿Deseas finalizar el examen y ver tu calificación?";
+        msg = "Has respondido todas las preguntas.\n¿Deseas finalizar el examen?";
     } else {
-        msg = `⚠️ Aún te faltan responder ${faltan} de ${total} preguntas.\n\nSi finalizas ahora, se calculará tu nota basándose en lo que has hecho (las vacías cuentan como error).\n¿Estás seguro de terminar?`;
+        msg = `⚠️ Te faltan ${faltan} de ${total} preguntas.\n\nSi finalizas, las no respondidas contarán como incorrectas.\n¿Finalizar de todos modos?`;
     }
 
     if (confirm(msg)) {
-        renderFin(); // Esto dispara el guardado en Historial y muestra Results
+        renderFin(); 
     }
 }
 
-// NUEVO: Lógica del botón "Salir"
 function salirResolucion() {
   let msg = "¿Deseas salir al menú principal?";
-  
   if (CURRENT.modo === 'personalizado') {
-      // Simulacro: Se pierde si sale
-      msg += "\n\n⚠️ ATENCIÓN: Estás en un Simulacro Personalizado.\nSi sales ahora sin 'Terminar', este intento NO se guardará en el historial y perderás el progreso de esta sesión.";
+      msg += "\n\n⚠️ ATENCIÓN: Es un Simulacro. Si sales sin 'Finalizar', el intento se perderá.";
   } else {
-      // Oficial / Práctica: Se guarda (Pausa)
-      msg += "\n\n(Tu progreso parcial se mantendrá guardado y podrás continuar luego).";
+      msg += "\n\n(Tu progreso se guardará automáticamente).";
   }
 
   if (confirm(msg)) {
@@ -374,7 +413,7 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🖼 GESTIÓN DE IMÁGENES & SIDEBAR (Igual que antes)
+   🖼 HELPERS VISUALES
    ========================================================== */
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
@@ -500,8 +539,7 @@ function renderFin() {
       procesarResultadosExamenFinal();
   }
 
-  // 2. Guardar Historial (Simulacros / Examenes Oficiales)
-  // Ahora manejamos ambos casos con 'window.guardarResultadoSimulacro' si tienen metadata
+  // 2. Guardar Historial
   if ((CURRENT.modo === 'personalizado' || CURRENT.modo === 'examen' || CURRENT.modo === 'reanudar') 
       && typeof window.guardarResultadoSimulacro === 'function' 
       && CURRENT.config.metaSubjects) {
@@ -535,13 +573,12 @@ function renderFin() {
           timeStr: timeStr,
           subjects: CURRENT.config.metaSubjects || [],
           isOfficial: CURRENT.config.metaIsOfficial || false,
-          examId: CURRENT.config.examenId || null // Guardamos ID de examen si existe
+          examId: CURRENT.config.examenId || null 
       };
 
       window.guardarResultadoSimulacro(resultado);
   }
 
-  // 3. Pantalla Resultados
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
@@ -552,13 +589,11 @@ function renderFin() {
 function procesarResultadosExamenFinal() {
     const list = CURRENT.list;
     const answers = CURRENT.userAnswers;
-    
     list.forEach(q => {
         const uIdx = answers[q.id];
         if (uIdx !== undefined && uIdx !== null) {
             const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
             const esCorrecta = (uIdx === rIdx);
-            
             const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
             if (!PROG[mat]) PROG[mat] = {};
             PROG[mat][q.id] = { status: esCorrecta ? 'ok' : 'bad', fecha: Date.now() };
@@ -633,7 +668,6 @@ function saveNoteResolver(id) {
 function copiarExplicacionNota(id) {
     const q = CURRENT.list.find(x => x.id == id);
     if (!q || !q.explicacion) return;
-    
     const area = document.getElementById(`note-text-${id}`);
     if (area) {
         if(area.value) area.value += "\n\n";
