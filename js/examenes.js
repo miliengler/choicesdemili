@@ -1,9 +1,9 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (Rediseño Estético UI)
+   📝 MEbank 3.0 – Exámenes Anteriores (Estética Final)
    ========================================================== */
 
 /* ==========================================================
-   🎨 PALETA DE COLORES (Para gráficos)
+   🎨 PALETA DE COLORES
    ========================================================== */
 const CHART_COLORS = [
   "#3b82f6", "#ef4444", "#10b981", "#f59e0b", "#8b5cf6", 
@@ -12,16 +12,17 @@ const CHART_COLORS = [
 ];
 
 /* ==========================================================
-   🔵 CÍRCULO DE PROGRESO (UI Exámenes)
+   🔵 CÍRCULO DE PROGRESO
    ========================================================== */
 function renderProgressCircleExam(percent) {
-  const size = 38; // Un poco más sutil
+  const p = isNaN(percent) ? 0 : percent;
+  const size = 38;
   const stroke = 3;
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
-  const offset = circumference - (percent / 100) * circumference;
+  const offset = circumference - (p / 100) * circumference;
   
-  let color = percent === 100 ? '#16a34a' : (percent > 0 ? '#3b82f6' : '#cbd5e1');
+  let color = p === 100 ? '#16a34a' : (p > 0 ? '#3b82f6' : '#cbd5e1');
 
   return `
     <svg width="${size}" height="${size}">
@@ -29,7 +30,7 @@ function renderProgressCircleExam(percent) {
       <circle cx="${size/2}" cy="${size/2}" r="${radius}" stroke="${color}"
         stroke-width="${stroke}" fill="none" stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"
         stroke-linecap="round" transform="rotate(-90 ${size/2} ${size/2})" style="transition: stroke-dashoffset 0.6s ease;"></circle>
-      <text x="50%" y="55%" text-anchor="middle" font-size="10" fill="#334155" font-weight="700">${percent}%</text>
+      <text x="50%" y="55%" text-anchor="middle" font-size="10" fill="#334155" font-weight="700">${p}%</text>
     </svg>
   `;
 }
@@ -39,59 +40,90 @@ function renderProgressCircleExam(percent) {
    ========================================================== */
 function renderExamenesMain() {
   const app = document.getElementById("app");
+  
+  if (typeof EXAMENES_META === 'undefined') {
+      app.innerHTML = `<div style="text-align:center; padding:30px; color:red;">Error: No se encontró la configuración de exámenes.</div>`;
+      return;
+  }
+
   const grupos = agruparExamenesPorGrupo();
   const gruposOrdenados = Object.keys(grupos).sort((a, b) => a.localeCompare(b));
 
   const listaHtml = gruposOrdenados.map(g => renderGrupoExamen(g, grupos[g])).join("");
 
-  // Estilos específicos para igualar a Simulacro/Choice
   const styles = `
     <style>
-      /* Estilos unificados con Simulacro */
-      .exam-box { 
+      /* --- TARJETAS --- */
+      .exam-group-card { 
           background: white; border: 1px solid #e2e8f0; border-radius: 12px; 
-          margin-bottom: 12px; transition: all 0.2s; overflow: hidden;
+          margin-bottom: 16px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
       }
-      .exam-header {
-          padding: 14px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
-          background: white;
+      .exam-group-header {
+          padding: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+          background: white; transition: background 0.2s;
       }
-      .exam-header:hover { background: #f8fafc; }
+      .exam-group-header:hover { background: #f8fafc; }
       
-      .exam-expanded {
-          padding: 0 16px 16px 16px;
-          border-top: 1px solid #f1f5f9;
-          background: #fdfdfd;
-          animation: fadeIn 0.3s ease;
+      .exam-item-row {
+          display: flex; justify-content: space-between; align-items: center;
+          padding: 14px 16px; border-top: 1px solid #f1f5f9; cursor: pointer;
+          background: white; transition: background 0.2s;
       }
+      .exam-item-row:hover { background: #f8fafc; }
+      .exam-item-row.is-open { background: #f1f5f9; }
 
-      /* Badges */
+      /* --- MENÚ DESPLEGABLE (MEJORADO) --- */
+      .exam-expanded-panel {
+          background: #f8fafc;
+          padding: 16px;
+          border-top: 1px solid #e2e8f0;
+          animation: slideDown 0.2s ease-out;
+      }
+      @keyframes slideDown { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+
+      /* --- BADGES --- */
       .badge-status { padding: 3px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-left: 8px; }
       .bg-gray { background: #f1f5f9; color: #94a3b8; border: 1px solid #e2e8f0; }
       .bg-orange { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
       .bg-green { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
       
-      /* Switches (Iguales a Simulacro) */
+      /* --- BOTONES (REDISEÑO) --- */
+      .btn-action-primary {
+          background: #16a34a; color: white; border: 1px solid #15803d; 
+          font-weight: 600; padding: 10px; border-radius: 8px; width: 100%;
+          display: flex; align-items: center; justify-content: center; gap: 6px;
+          transition: transform 0.1s, background 0.2s;
+      }
+      .btn-action-primary:hover { background: #15803d; transform: translateY(-1px); }
+      
+      .btn-action-sec {
+          background: white; border: 1px solid #cbd5e1; color: #475569;
+          font-weight: 600; padding: 8px; border-radius: 8px; font-size: 13px;
+          display: flex; align-items: center; justify-content: center; gap: 6px;
+          transition: all 0.2s;
+      }
+      .btn-action-sec:hover { background: #f1f5f9; border-color: #94a3b8; }
+
+      .btn-action-danger {
+          background: #fff1f2; border: 1px solid #fecdd3; color: #e11d48;
+          font-size: 12px; padding: 6px 12px; border-radius: 6px; cursor: pointer;
+      }
+
+      /* --- SWITCHES --- */
       .toggle-switch { position: relative; display: inline-block; width: 34px; height: 20px; margin-right: 8px; vertical-align: middle; }
       .toggle-switch input { opacity: 0; width: 0; height: 0; }
       .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
       .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-      input:checked + .slider { background-color: #16a34a; }
+      input:checked + .slider { background-color: #3b82f6; } /* Azul por defecto */
       input:checked + .slider:before { transform: translateX(14px); }
       .slider-orange input:checked + .slider { background-color: #ea580c; }
       
-      .config-row { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; padding-top: 15px; }
+      .config-row { display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; padding: 10px; background: white; border-radius: 8px; border: 1px solid #e2e8f0; }
       .config-item { display: flex; align-items: center; font-size: 13px; color: #334155; font-weight: 600; cursor: pointer; }
 
-      /* Botones de Acción */
-      .action-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 10px; margin-bottom: 15px; }
-      .btn-outline-blue { background: white; border: 1px solid #3b82f6; color: #1d4ed8; font-weight: 700; border-radius: 8px; padding: 10px; transition:0.2s; }
-      .btn-outline-blue:hover { background: #eff6ff; }
-      .btn-ghost-muted { background: transparent; border: 1px solid #e2e8f0; color: #64748b; font-size: 12px; border-radius: 8px; padding: 8px; }
-
-      /* Historial Mini */
-      .mini-history { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #e2e8f0; font-size: 12px; color: #64748b; }
-      .hist-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #f1f5f9; }
+      /* --- HISTORIAL --- */
+      .mini-history { margin-top: 15px; padding-top: 15px; border-top: 1px dashed #cbd5e1; font-size: 12px; color: #64748b; }
+      .hist-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e2e8f0; }
       .hist-item:last-child { border-bottom: none; }
       .hist-score-bad { color: #ef4444; font-weight: 700; }
       .hist-score-ok { color: #16a34a; font-weight: 700; }
@@ -145,7 +177,7 @@ function closeModals(e) {
 }
 
 function mostrarInfoExamenesOficiales() {
-    alert("ℹ️ EXÁMENES OFICIALES\n\n• Cada examen guarda su progreso automáticamente.\n• Podés activar 'Corregir al final' para simular condiciones reales.\n• En 'Intentos previos' verás tu historial de finalización.");
+    alert("ℹ️ EXÁMENES OFICIALES\n\n• Cada examen guarda su progreso automáticamente.\n• Podés activar 'Corregir al final' para simular condiciones reales.");
 }
 
 function agruparExamenesPorGrupo() {
@@ -170,13 +202,11 @@ let examenesOpenExamen = null;
 
 function renderGrupoExamen(nombreGrupo, lista) {
   const abierto = examenesOpenGrupo === nombreGrupo;
-  
-  // Icono de flecha
   const arrow = abierto ? "▼" : "▶";
 
   return `
-    <div class="exam-box">
-      <div class="exam-header" onclick="toggleGrupoExamen('${nombreGrupo}')" style="background:${abierto ? '#f8fafc' : 'white'}">
+    <div class="exam-group-card">
+      <div class="exam-group-header" onclick="toggleGrupoExamen('${nombreGrupo}')">
         <div style="display:flex; align-items:center; gap:10px; flex:1;">
             <span style="font-size:12px; color:#94a3b8; width:15px;">${arrow}</span>
             <div>
@@ -197,32 +227,32 @@ function renderGrupoExamen(nombreGrupo, lista) {
 
 function toggleGrupoExamen(grupo) {
   examenesOpenGrupo = examenesOpenGrupo === grupo ? null : grupo;
-  examenesOpenExamen = null; // Cerrar hijos al cerrar padre
+  examenesOpenExamen = null;
   renderExamenesMain();
 }
 
 function renderGrupoExamenExpanded(lista) {
-  return `<div style="border-top:1px solid #e2e8f0;">${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
+  return `<div>${lista.map(ex => renderItemExamen(ex)).join("")}</div>`;
 }
 
 /* ==========================================================
    📄 Render Ítem Examen
    ========================================================== */
 function renderItemExamen(ex) {
-  const preguntas = getQuestionsByExamen(ex.id);
+  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(ex.id) : []; 
   const total = preguntas.length;
-  const progreso = calcularProgresoExamen(ex.id);
+  const progreso = calcularProgresoExamen(ex.id, total);
   const abierto = examenesOpenExamen === ex.id;
-  const bg = abierto ? '#f1f5f9' : 'white';
+  
+  const rowClass = abierto ? "exam-item-row is-open" : "exam-item-row";
 
   let badge = `<span class="badge-status bg-gray">Pendiente</span>`;
   if (progreso > 0 && progreso < 100) badge = `<span class="badge-status bg-orange">En Curso</span>`;
   if (progreso === 100) badge = `<span class="badge-status bg-green">Completado</span>`;
 
   return `
-    <div style="background:${bg}; border-bottom:1px solid #f1f5f9; transition:background 0.2s;">
-      <div style="padding:12px 16px; display:flex; justify-content:space-between; align-items:center; cursor:pointer;" onclick="toggleExamenItem('${ex.id}')">
-        
+    <div>
+      <div class="${rowClass}" onclick="toggleExamenItem('${ex.id}')">
         <div style="flex:1; display:flex; align-items:center; gap:12px;">
            <div style="width:38px; height:38px;">${renderProgressCircleExam(progreso)}</div>
            <div>
@@ -233,10 +263,7 @@ function renderItemExamen(ex) {
               <div style="font-size:12px; color:#64748b;">${total} preguntas</div>
            </div>
         </div>
-
-        <div style="font-size:12px; color:#94a3b8;">
-           ${abierto ? '▲' : '▼'}
-        </div>
+        <div style="font-size:12px; color:#94a3b8;">${abierto ? '▲' : '▼'}</div>
       </div>
       
       ${abierto ? renderExpandExamen(ex, preguntas, progreso) : ""}
@@ -250,16 +277,15 @@ function toggleExamenItem(id) {
 }
 
 /* ==========================================================
-   ⚙️ Panel Expandido (Configuración + Acciones)
+   ⚙️ MENÚ DESPLEGABLE (Botones Rediseñados)
    ========================================================== */
 function renderExpandExamen(ex, preguntas, progreso) {
   const iniciado = progreso > 0;
   
-  // 1. Obtener historial real de este examen
+  // Historial
   const historial = getExamHistory(ex.id);
 
-  // 2. Renderizar lista de historial
-  let historyHTML = `<div style="text-align:center; padding:5px;">Sin intentos previos.</div>`;
+  let historyHTML = `<div style="text-align:center; padding:5px; opacity:0.6;">Sin intentos previos.</div>`;
   if (historial.length > 0) {
       historyHTML = historial.map(h => {
           const date = new Date(h.date).toLocaleDateString();
@@ -275,7 +301,7 @@ function renderExpandExamen(ex, preguntas, progreso) {
   }
 
   return `
-    <div class="exam-expanded">
+    <div class="exam-expanded-panel">
       
       <div class="config-row">
           <label class="config-item" onclick="event.stopPropagation()">
@@ -295,28 +321,37 @@ function renderExpandExamen(ex, preguntas, progreso) {
           </label>
       </div>
 
-      <div class="action-grid">
-         <button class="btn-main" style="margin:0; width:100%; max-width:none;" 
-                 onclick="${iniciado ? `reanudarExamen('${ex.id}')` : `iniciarExamen('${ex.id}')`}">
-             ${iniciado ? '⏩ Continuar Intento' : '▶ Iniciar Examen'}
-         </button>
-         
-         <button class="btn-outline-blue" style="font-weight:600; color:#475569; border-color:#e2e8f0;"
-                 onclick="analizarExamen('${ex.id}')">
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 10px;">
+         <div style="grid-column: span 3;">
+             <button class="btn-action-primary" 
+                     onclick="${iniciado ? `reanudarExamen('${ex.id}')` : `iniciarExamen('${ex.id}')`}">
+                 ${iniciado ? '⏩ CONTINUAR INTENTO' : '▶ COMENZAR EXAMEN'}
+             </button>
+         </div>
+
+         <button class="btn-action-sec" onclick="analizarExamen('${ex.id}')">
              📊 Análisis
          </button>
+         <button class="btn-action-sec" onclick="verNotasExamen('${ex.id}')">
+             📒 Notas
+         </button>
+         
+         ${iniciado ? 
+            `<button class="btn-action-sec" style="color:#1d4ed8; border-color:#93c5fd;" onclick="revisarExamen('${ex.id}')">👁️ Revisar</button>` 
+            : `<button class="btn-action-sec" disabled style="opacity:0.5; cursor:not-allowed;">👁️ Revisar</button>`
+         }
       </div>
       
       ${iniciado ? `
-        <div style="text-align:center; margin-bottom:15px;">
-           <span style="font-size:12px; color:#ef4444; cursor:pointer; text-decoration:underline;" onclick="resetearExamen('${ex.id}')">
-              Reiniciar progreso actual (Borrar respuestas)
-           </span>
+        <div style="text-align:right; margin-bottom:15px;">
+           <button class="btn-action-danger" onclick="resetearExamen('${ex.id}')">
+              🗑 Reiniciar progreso
+           </button>
         </div>
       ` : ''}
 
       <div class="mini-history">
-         <div style="font-weight:700; margin-bottom:6px; color:#334155;">📋 Intentos previos</div>
+         <div style="font-weight:700; margin-bottom:6px; color:#334155;">📋 Historial de intentos</div>
          ${historyHTML}
       </div>
 
@@ -325,75 +360,61 @@ function renderExpandExamen(ex, preguntas, progreso) {
 }
 
 /* ==========================================================
-   📊 LÓGICA & HELPERS
+   📊 LÓGICA & HELPERS (Se mantienen igual)
    ========================================================== */
-
-function getExamHistory(examId) {
-    // Busca en el historial general (el mismo de simulacros)
-    // pero filtra por este ID específico.
-    const STORAGE_KEY_HISTORY = "MEbank_Simulacros_History_v1";
-    try {
-        const raw = localStorage.getItem(STORAGE_KEY_HISTORY);
-        if(!raw) return [];
-        const allHistory = JSON.parse(raw);
-        // Filtramos donde el sujeto sea el examId o tenga un flag
-        // Nota: En resolver.js guardaremos 'examId' en el objeto resultado.
-        return allHistory.filter(h => h.examId === examId).sort((a,b) => new Date(b.date) - new Date(a.date));
-    } catch(e) { return []; }
-}
 
 function formatearNombreExamen(id) { return id.replace(/_/g, " ").toUpperCase(); }
 
-function getQuestionsByExamen(examId) {
-    if (typeof BANK === 'undefined' || !BANK.questions) return [];
-    return BANK.questions.filter(q => {
-        if (q.examen === examId) return true;
-        if (q.source === examId) return true;
-        if (q.id && q.id.startsWith(examId)) return true;
-        return false;
-    });
-}
-
-function calcularProgresoExamen(examenId) {
-  const preguntas = getQuestionsByExamen(examenId);
-  if (!preguntas.length) return 0;
+function calcularProgresoExamen(examenId, total) {
+  if (!total || total === 0) return 0;
+  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(examenId) : [];
   let resueltas = 0;
   preguntas.forEach(q => {
     const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
     const r = PROG[mat]?.[q.id];
     if (r && (r.status === "ok" || r.status === "bad")) resueltas++;
   });
-  return Math.round((resueltas / preguntas.length) * 100);
+  return Math.round((resueltas / total) * 100);
+}
+
+function getExamHistory(examId) {
+    const STORAGE_KEY_HISTORY = "MEbank_Simulacros_History_v1";
+    try {
+        const raw = localStorage.getItem(STORAGE_KEY_HISTORY);
+        if(!raw) return [];
+        const allHistory = JSON.parse(raw);
+        return allHistory.filter(h => h.isOfficial && h.subjects && h.subjects.includes(examId))
+                         .sort((a,b) => new Date(b.date) - new Date(a.date));
+    } catch(e) { return []; }
 }
 
 /* --- ACCIONES --- */
-
 function iniciarExamen(id) {
-  const preguntas = getQuestionsByExamen(id);
+  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
   if (!preguntas.length) return alert("No se encontraron preguntas.");
   
   const checkTimer = document.getElementById(`timer-check-${id}`);
   const checkCorrection = document.getElementById(`correction-check-${id}`);
   
   iniciarResolucion({ 
-      modo: "examen", // Esto le dice al resolver que es un examen oficial
+      modo: "examen", 
       preguntas, 
       usarTimer: checkTimer ? checkTimer.checked : false, 
       titulo: formatearNombreExamen(id), 
-      examenId: id, // IMPORTANTE: Para guardar historial luego
-      correccionFinal: checkCorrection ? checkCorrection.checked : false 
+      examenId: id,
+      correccionFinal: checkCorrection ? checkCorrection.checked : false,
+      metaSubjects: [id],
+      metaIsOfficial: true
   });
 }
 
 function reanudarExamen(id) {
-  const preguntas = getQuestionsByExamen(id);
-  // Filtramos pendientes
+  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
   const pendientes = preguntas.filter(q => { 
       const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
       const r = PROG[mat]?.[q.id]; 
       return !r || (r.status !== 'ok' && r.status !== 'bad'); 
   });
-  
   if(pendientes.length === 0) return alert("¡Examen completado!");
   
   const checkTimer = document.getElementById(`timer-check-${id}`);
@@ -405,30 +426,27 @@ function reanudarExamen(id) {
       usarTimer: checkTimer ? checkTimer.checked : true, 
       titulo: formatearNombreExamen(id) + " (Cont.)", 
       examenId: id,
-      correccionFinal: checkCorrection ? checkCorrection.checked : false 
+      correccionFinal: checkCorrection ? checkCorrection.checked : false,
+      metaSubjects: [id],
+      metaIsOfficial: true
   });
 }
 
 function resetearExamen(id) {
-    if(!confirm("⚠ ¿Reiniciar este examen? Se borrará el progreso actual (no el historial).")) return;
-    const preguntas = getQuestionsByExamen(id);
+    if(!confirm("⚠ ¿Reiniciar este examen? Se borrará el progreso actual (respuestas).")) return;
+    const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
     let cambios = false;
     preguntas.forEach(q => { 
         const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
         if(PROG[mat] && PROG[mat][q.id]) { delete PROG[mat][q.id]; cambios = true; } 
     });
-    
-    if(cambios) { 
-        if(typeof saveProgress === 'function') saveProgress(); 
-        renderExamenesMain(); 
-    } else { 
-        alert("No había progreso."); 
-    }
+    if(cambios) { if(typeof saveProgress === 'function') saveProgress(); renderExamenesMain(); } 
+    else { alert("No había progreso para borrar."); }
 }
 
 /* --- ANÁLISIS --- */
 function analizarExamen(examId) {
-    const preguntas = getQuestionsByExamen(examId);
+    const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(examId) : [];
     mostrarModalAnalisis(formatearNombreExamen(examId), preguntas);
 }
 
@@ -437,7 +455,8 @@ function analizarGrupo(nombreGrupo) {
     const examenesDelGrupo = EXAMENES_META.filter(e => e.grupo === nombreGrupo);
     let todasLasPreguntas = [];
     examenesDelGrupo.forEach(ex => {
-        todasLasPreguntas = todasLasPreguntas.concat(getQuestionsByExamen(ex.id));
+        const qs = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(ex.id) : [];
+        todasLasPreguntas = todasLasPreguntas.concat(qs);
     });
     mostrarModalAnalisis(`Histórico: ${nombreGrupo}`, todasLasPreguntas);
 }
@@ -446,7 +465,6 @@ function mostrarModalAnalisis(titulo, preguntas) {
     const modal = document.getElementById('analysisModal');
     const titleEl = document.getElementById('analysisTitle');
     const bodyEl = document.getElementById('analysisBody');
-
     titleEl.textContent = `📊 Análisis: ${titulo}`;
 
     if(preguntas.length === 0) {
@@ -457,13 +475,9 @@ function mostrarModalAnalisis(titulo, preguntas) {
 
     const counts = {};
     let totalTags = 0; 
-    
     preguntas.forEach(q => {
         const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
-        materias.forEach(m => {
-            counts[m] = (counts[m] || 0) + 1;
-            totalTags++;
-        });
+        materias.forEach(m => { counts[m] = (counts[m] || 0) + 1; totalTags++; });
     });
 
     const data = Object.keys(counts)
@@ -511,6 +525,5 @@ function mostrarModalAnalisis(titulo, preguntas) {
             <div class="chart-legend">${listHtml}</div>
         </div>
     `;
-
     modal.style.display = 'flex';
 }
