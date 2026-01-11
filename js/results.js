@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 MEbank 3.0 – Pantalla de Resultados (Dashboard)
+   📊 MEbank 3.0 – Pantalla de Resultados (Tu Diseño + Botón Revisar Mal)
    ========================================================== */
 
 function renderDetailedResults() {
@@ -7,7 +7,7 @@ function renderDetailedResults() {
   
   // 1. Procesar Datos de la Sesión Actual
   const list = CURRENT.list; // Lista de preguntas
-  const userAnswers = CURRENT.userAnswers || {}; // { idPregunta: indiceElegido }
+  const userAnswers = CURRENT.userAnswers || {}; 
   
   let correctas = 0;
   let incorrectas = 0;
@@ -85,7 +85,14 @@ function renderDetailedResults() {
              </div>
         </div>
 
-        <h3 style="margin-bottom:15px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">🗺️ Mapa de calor</h3>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
+            <h3 style="margin:0;">🗺️ Mapa de calor</h3>
+            <button onclick="reviewIncorrectOnly()" 
+                    style="background:#fef2f2; color:#ef4444; border:1px solid #fecaca; border-radius:6px; padding:6px 12px; font-size:12px; font-weight:700; cursor:pointer;">
+               👁️ Revisar Incorrectas
+            </button>
+        </div>
+
         <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap:8px; margin-bottom:30px;">
             ${gridData.map(item => {
                 let color = "#e2e8f0"; // gris
@@ -140,7 +147,6 @@ function renderSubjectBreakdown(list, userAnswers) {
         }
     });
 
-    // Convertir a array y ordenar por % de error (lo peor primero para revisar)
     const rows = Object.keys(stats).map(slug => {
         const d = stats[slug];
         const name = getMateriaNombre(slug);
@@ -174,16 +180,46 @@ function renderSubjectBreakdown(list, userAnswers) {
     return `<div style="background:white; border:1px solid #e2e8f0; border-radius:8px;">${rows}</div>`;
 }
 
+function getMateriaNombre(slug) {
+    if (typeof BANK !== 'undefined' && BANK.subjects) {
+      const mat = BANK.subjects.find(s => s.slug === slug);
+      return mat ? mat.name : slug;
+    }
+    return slug;
+}
+
 function startReviewMode() {
-    // Inicia revisión desde la 1
     CURRENT.i = 0;
     CURRENT.modo = "revision"; 
     renderPregunta();
 }
 
 function reviewQuestion(idx) {
-    // Inicia revisión desde la pregunta clickeada
     CURRENT.i = idx;
     CURRENT.modo = "revision";
+    renderPregunta();
+}
+
+// 🔴 NUEVA FUNCIÓN: Filtrar solo incorrectas
+function reviewIncorrectOnly() {
+    // 1. Crear una nueva lista filtrada solo con las incorrectas
+    const wrongQuestions = CURRENT.list.filter(q => {
+        const uIdx = CURRENT.userAnswers[q.id];
+        const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
+        // Si respondió y fue distinto a la correcta, o si no respondió (omitida cuenta como error)
+        return (uIdx === undefined || uIdx === null || uIdx !== rIdx);
+    });
+
+    if (wrongQuestions.length === 0) {
+        alert("¡Felicitaciones! No tenés respuestas incorrectas para revisar. 🎉");
+        return;
+    }
+
+    // 2. Reemplazar la lista actual por la filtrada
+    CURRENT.list = wrongQuestions;
+    CURRENT.i = 0;
+    CURRENT.modo = "revision";
+    
+    // 3. Renderizar la primera incorrecta
     renderPregunta();
 }
