@@ -1,8 +1,8 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Definitivo)
+   🎯 MEbank 3.0 – Motor de resolución (Botonera Dividida)
    ========================================================== */
 
-// 1. VARIABLES DE ESTADO (Al principio para evitar errores)
+// 1. VARIABLES DE ESTADO
 let CURRENT = {
   list: [],
   i: 0,
@@ -31,7 +31,6 @@ function iniciarResolucion(config) {
     return;
   }
   
-  // Limpiamos timer previo
   stopTimer();
   
   CURRENT = {
@@ -46,7 +45,6 @@ function iniciarResolucion(config) {
   SB_PAGE = 0;
   ensureSidebarOnCurrent();
   
-  // Iniciamos timer si la config lo pide
   if (config.usarTimer) {
       initTimer();
   } else {
@@ -72,7 +70,7 @@ function renderPregunta() {
   const numero = CURRENT.i + 1;
   const materiaNombre = getMateriaNombreForQuestion(q);
 
-  // LÓGICA DE MODO EXAMEN VS PRÁCTICA
+  // LÓGICA DE MODOS
   const isReview = (CURRENT.modo === "revision");
   const isExamMode = (CURRENT.config.correccionFinal === true) && !isReview;
 
@@ -192,10 +190,27 @@ function renderPregunta() {
           </div>
 
           <div class="q-nav-row">
-            <button class="btn-small" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button>
-            <button class="btn-small" onclick="nextQuestion()">${CURRENT.i === total - 1 ? "Finalizar" : "Siguiente ➡"}</button>
-            <button class="btn-small btn-ghost" onclick="salirResolucion()">Salir</button>
+            
+            <div class="nav-group">
+                <button class="btn-nav btn-nav-ghost" onclick="salirResolucion()">
+                    🚪 Salir
+                </button>
+                <button class="btn-nav btn-nav-danger" onclick="intentarFinalizar()">
+                    🏁 Terminar
+                </button>
+            </div>
+
+            <div class="nav-group">
+                <button class="btn-nav btn-nav-primary" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>
+                    ⬅ Anterior
+                </button>
+                <button class="btn-nav btn-nav-primary" onclick="nextQuestion()" ${CURRENT.i === total - 1 ? "disabled" : ""}>
+                    Siguiente ➡
+                </button>
+            </div>
+
           </div>
+
         </div>
       </div>
 
@@ -219,7 +234,7 @@ function renderPregunta() {
 }
 
 /* ==========================================================
-   ⚡️ RESPUESTA (LÓGICA DUAL)
+   ⚡️ RESPUESTA
    ========================================================== */
 function answer(selectedIndex) {
   const q = CURRENT.list[CURRENT.i];
@@ -230,7 +245,7 @@ function answer(selectedIndex) {
   // 1. Guardar respuesta en CURRENT
   CURRENT.userAnswers[q.id] = selectedIndex;
 
-  // 2. MODO EXAMEN REAL: Solo marcamos visualmente (sin corregir)
+  // 2. MODO EXAMEN: Solo marcamos visualmente
   if (isExamMode) {
       const options = document.querySelectorAll(".q-option");
       options.forEach((el, idx) => {
@@ -240,17 +255,16 @@ function answer(selectedIndex) {
           }
       });
       refreshSidebarContent();
-      return; // Cortamos acá
+      return; 
   }
 
-  // 3. MODO PRÁCTICA (Inmediato): Corregimos al toque
+  // 3. MODO PRÁCTICA: Corregimos al toque
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
   const esCorrecta = (correctIndex !== null && selectedIndex === correctIndex);
   
   CURRENT.session[q.id] = esCorrecta ? "ok" : "bad";
 
-  // Guardar progreso global (Inmediato)
   const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
   if (typeof PROG !== 'undefined') {
       if (!PROG[mat]) PROG[mat] = {};
@@ -258,7 +272,6 @@ function answer(selectedIndex) {
       if (window.saveProgress) window.saveProgress();
   }
 
-  // Stats diarias
   if (esCorrecta) {
     const hoy = new Date().toISOString().split('T')[0];
     const stats = JSON.parse(localStorage.getItem("mebank_stats_daily") || "{}");
@@ -266,20 +279,17 @@ function answer(selectedIndex) {
     localStorage.setItem("mebank_stats_daily", JSON.stringify(stats));
   }
 
-  // Pintar colores (Verde/Rojo)
   const container = document.querySelector(".q-options");
   if (container) {
       const labels = container.querySelectorAll("label");
       labels.forEach((el, idx) => {
           el.classList.add("q-option-locked");
           el.onclick = null; 
-          
           if (idx === correctIndex) el.classList.add("option-correct"); 
           else if (idx === selectedIndex) el.classList.add("option-wrong");   
       });
   }
 
-  // Mostrar explicación
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
@@ -293,12 +303,78 @@ function answer(selectedIndex) {
           `;
       }
   }
-
   refreshSidebarContent();
 }
 
 /* ==========================================================
-   🖼 GESTIÓN DE IMÁGENES
+   ⏮ ⏭ NAVEGACIÓN Y CONTROL (Lógica Actualizada)
+   ========================================================== */
+
+function nextQuestion() {
+  if (CURRENT.i < CURRENT.list.length - 1) {
+    CURRENT.i++;
+    ensureSidebarOnCurrent();
+    renderPregunta();
+  }
+  // NOTA: Ya no finaliza automáticamente al llegar al final.
+}
+
+function prevQuestion() {
+  if (CURRENT.i > 0) {
+    CURRENT.i--;
+    ensureSidebarOnCurrent();
+    renderPregunta();
+  }
+}
+
+// NUEVO: Lógica del botón "Terminar"
+function intentarFinalizar() {
+    // Contar respondidas
+    const total = CURRENT.list.length;
+    let respondidas = 0;
+    
+    // Contamos claves en userAnswers que correspondan a preguntas de la lista actual
+    // (Por si userAnswers tiene basura de otras cosas, aunque se limpia al iniciar)
+    CURRENT.list.forEach(q => {
+        if (CURRENT.userAnswers[q.id] !== undefined && CURRENT.userAnswers[q.id] !== null) {
+            respondidas++;
+        }
+    });
+
+    const faltan = total - respondidas;
+    let msg = "";
+
+    if (faltan === 0) {
+        msg = "Has respondido todas las preguntas.\n¿Deseas finalizar el examen y ver tu calificación?";
+    } else {
+        msg = `⚠️ Aún te faltan responder ${faltan} de ${total} preguntas.\n\nSi finalizas ahora, se calculará tu nota basándose en lo que has hecho (las vacías cuentan como error).\n¿Estás seguro de terminar?`;
+    }
+
+    if (confirm(msg)) {
+        renderFin(); // Esto dispara el guardado en Historial y muestra Results
+    }
+}
+
+// NUEVO: Lógica del botón "Salir"
+function salirResolucion() {
+  let msg = "¿Deseas salir al menú principal?";
+  
+  if (CURRENT.modo === 'personalizado') {
+      // Simulacro: Se pierde si sale
+      msg += "\n\n⚠️ ATENCIÓN: Estás en un Simulacro Personalizado.\nSi sales ahora sin 'Terminar', este intento NO se guardará en el historial y perderás el progreso de esta sesión.";
+  } else {
+      // Oficial / Práctica: Se guarda (Pausa)
+      msg += "\n\n(Tu progreso parcial se mantendrá guardado y podrás continuar luego).";
+  }
+
+  if (confirm(msg)) {
+      stopTimer();
+      renderHome();
+  }
+}
+
+/* ==========================================================
+   🖼 GESTIÓN DE IMÁGENES & SIDEBAR (Igual que antes)
    ========================================================== */
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
@@ -318,7 +394,6 @@ window.openImgModal = (src, caption) => {
   const modal = document.getElementById("imgModal");
   const modalImg = document.getElementById("imgInModal");
   const captionText = document.getElementById("imgCaption");
-  
   if(modal && modalImg) {
       modal.style.display = "flex";
       modalImg.src = src;
@@ -330,29 +405,6 @@ window.closeImgModal = () => {
   const modal = document.getElementById("imgModal");
   if(modal) modal.style.display = "none";
 };
-
-/* ==========================================================
-   ⏭ NAVEGACIÓN Y SIDEBAR
-   ========================================================== */
-function nextQuestion() {
-  if (CURRENT.i < CURRENT.list.length - 1) {
-    CURRENT.i++;
-    ensureSidebarOnCurrent();
-    renderPregunta();
-  } else {
-    if(confirm("¿Finalizar examen?")) {
-        renderFin();
-    }
-  }
-}
-
-function prevQuestion() {
-  if (CURRENT.i > 0) {
-    CURRENT.i--;
-    ensureSidebarOnCurrent();
-    renderPregunta();
-  }
-}
 
 function toggleMobileSidebar() {
     const sb = document.getElementById("sidebarEl");
@@ -411,15 +463,12 @@ function renderSidebarCells() {
     if (savedNotes[q.id]) cls += " sb-note";
 
     if (isExamMode) {
-        // En modo examen, solo mostramos si respondió (color neutro)
         if (userAns !== undefined && userAns !== null) cls += " sb-answered-neutral";
     } else {
-        // En modo práctica o revisión, mostramos la verdad
         const estado = CURRENT.session[q.id]; 
         if (estado === "ok") cls += " sb-ok";
         if (estado === "bad") cls += " sb-bad";
         
-        // Si estamos en revisión y no tiene session (ej. recarga), calculamos
         if (CURRENT.modo === 'revision' && userAns !== undefined) {
              const ops = getOpcionesArray(q);
              const rIdx = getCorrectIndex(q, ops.length);
@@ -446,24 +495,23 @@ function irAPregunta(idx) {
 function renderFin() {
   stopTimer();
 
-  // 1. Si era modo corrección final, procesamos los aciertos/errores en PROG
+  // 1. Procesar corrección
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // 2. DETECCIÓN DE SIMULACRO PERSONALIZADO PARA HISTORIAL
-  // Solo guardamos si es modo 'personalizado' y NO es una revisión
-  if (CURRENT.modo === 'personalizado' && typeof window.guardarResultadoSimulacro === 'function') {
+  // 2. Guardar Historial (Simulacros / Examenes Oficiales)
+  // Ahora manejamos ambos casos con 'window.guardarResultadoSimulacro' si tienen metadata
+  if ((CURRENT.modo === 'personalizado' || CURRENT.modo === 'examen' || CURRENT.modo === 'reanudar') 
+      && typeof window.guardarResultadoSimulacro === 'function' 
+      && CURRENT.config.metaSubjects) {
       
-      // Calcular Stats del Examen
       let correctas = 0;
       let total = CURRENT.list.length;
       
       CURRENT.list.forEach(q => {
-          // Buscamos respuesta del usuario
           const uIdx = CURRENT.userAnswers[q.id];
           const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-          
           if (uIdx !== undefined && uIdx !== null && uIdx === rIdx) {
               correctas++;
           }
@@ -471,40 +519,35 @@ function renderFin() {
 
       const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
       
-      // Calcular Tiempo Transcurrido (Si existe TIMER)
       let timeStr = "--:--";
       if (TIMER.start > 0) {
           const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
           const h = Math.floor(totalSeconds / 3600);
           const m = Math.floor((totalSeconds % 3600) / 60);
-          timeStr = h > 0 
-            ? `${h}h ${m}m` 
-            : `${m} min`;
+          timeStr = h > 0 ? `${h}h ${m}m` : `${m} min`;
       }
 
-      // Preparamos objeto para guardar
       const resultado = {
           date: new Date().toISOString(),
           score: score,
           correctCount: correctas,
           totalQ: total,
           timeStr: timeStr,
-          subjects: CURRENT.config.metaSubjects || [], // Viene del paso anterior
-          isOfficial: CURRENT.config.metaIsOfficial || false
+          subjects: CURRENT.config.metaSubjects || [],
+          isOfficial: CURRENT.config.metaIsOfficial || false,
+          examId: CURRENT.config.examenId || null // Guardamos ID de examen si existe
       };
 
-      // Guardamos
       window.guardarResultadoSimulacro(resultado);
   }
 
-  // 3. Llamar a la pantalla de resultados
+  // 3. Pantalla Resultados
   if (typeof renderDetailedResults === 'function') {
       renderDetailedResults();
   } else {
       renderFinSimple();
   }
 }
-
 
 function procesarResultadosExamenFinal() {
     const list = CURRENT.list;
@@ -534,12 +577,6 @@ function procesarResultadosExamenFinal() {
 function renderFinSimple() {
     const app = document.getElementById("app");
     app.innerHTML = `<div class="card" style="text-align:center"><h2>Examen Finalizado</h2><button class="btn-main" onclick="renderHome()">Inicio</button></div>`;
-}
-
-function salirResolucion() {
-  if (!confirm("¿Salir del examen actual?")) return;
-  stopTimer();
-  renderHome();
 }
 
 /* ==========================================================
@@ -601,14 +638,13 @@ function copiarExplicacionNota(id) {
     if (area) {
         if(area.value) area.value += "\n\n";
         area.value += "Explicación: " + q.explicacion;
-        
         const div = document.getElementById(`note-area-${id}`);
         if(div) div.style.display = "block";
     }
 }
 
 /* ==========================================================
-   HELPERS DE DATOS
+   HELPERS
    ========================================================== */
 function getOpcionesArray(q) {
   if (!q.opciones) return [];
