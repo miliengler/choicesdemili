@@ -1,5 +1,5 @@
 /* ==========================================================
-   📝 MEbank 3.0 – Exámenes Anteriores (Final Definitivo)
+   📝 MEbank 3.0 – Exámenes Anteriores (Final UX/UI)
    ========================================================== */
 
 /* ==========================================================
@@ -76,23 +76,41 @@ function renderExamenesMain() {
       .bg-orange { background: #ffedd5; color: #c2410c; border: 1px solid #fdba74; }
       .bg-green { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
       
-      /* Switches Compactos */
-      .config-check { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; margin-right: 15px; }
-      .config-check input { width: 16px; height: 16px; accent-color: #3b82f6; cursor: pointer; }
-      .config-label { font-size: 13px; color: #334155; font-weight: 500; }
+      /* Switches (Slider Style) */
+      .toggle-switch { position: relative; display: inline-block; width: 34px; height: 20px; margin-right: 8px; vertical-align: middle; }
+      .toggle-switch input { opacity: 0; width: 0; height: 0; }
+      .slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #cbd5e1; transition: .4s; border-radius: 20px; }
+      .slider:before { position: absolute; content: ""; height: 14px; width: 14px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
+      input:checked + .slider { background-color: #3b82f6; } /* Azul por defecto */
+      input:checked + .slider:before { transform: translateX(14px); }
+      .slider-orange input:checked + .slider { background-color: #ea580c; }
+      
+      .config-label-text { font-size: 12px; font-weight: 600; color: #475569; cursor: pointer; }
 
-      /* Botones (Estilo Choice) */
+      /* Botones (Estilo Choice Flexibles) */
       .btn-choice-style {
           background: white; border: 1px solid #3b82f6; color: #1d4ed8; 
-          font-weight: 600; padding: 8px 16px; border-radius: 8px; font-size: 13px;
-          cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; gap: 6px;
+          font-weight: 600; padding: 10px 16px; border-radius: 8px; font-size: 13px;
+          cursor: pointer; transition: background 0.2s; 
+          display: flex; align-items: center; justify-content: center; gap: 6px;
+          flex: 1; /* Para que ocupen el espacio disponible */
+          white-space: nowrap;
       }
       .btn-choice-style:hover { background: #eff6ff; }
 
-      /* Historial Container */
+      /* Historial Container (Acordeón) */
       .history-box {
-          margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;
+          margin-top: 15px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; overflow:hidden;
       }
+      .history-header {
+          padding: 10px 12px; cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+          font-weight: 700; font-size: 12px; color: #334155; user-select: none;
+      }
+      .history-header:hover { background: #f1f5f9; }
+      .history-content {
+          padding: 0 12px 12px 12px; display: none; border-top: 1px solid #e2e8f0;
+      }
+      
       .hist-item { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #e2e8f0; font-size: 12px; color: #64748b; }
       .hist-item:last-child { border-bottom: none; }
       .hist-score-bad { color: #ef4444; font-weight: 700; }
@@ -105,29 +123,21 @@ function renderExamenesMain() {
       }
       .btn-analysis-icon:hover { background: #f1f5f9; }
 
-      /* === ESTILOS DEL GRÁFICO (RECUPERADOS) === */
+      /* === ESTILOS DEL GRÁFICO === */
       .chart-container { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin-top: 10px; }
-      .donut-chart {
-        width: 140px; height: 140px; border-radius: 50%;
-        position: relative; margin: 0 auto;
-      }
+      .donut-chart { width: 140px; height: 140px; border-radius: 50%; position: relative; margin: 0 auto; }
       .donut-hole {
         width: 90px; height: 90px; background: var(--bg-card, white); border-radius: 50%;
         position: absolute; top: 25px; left: 25px;
         display: flex; align-items: center; justify-content: center;
-        flex-direction: column;
-        box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+        flex-direction: column; box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
       }
       .chart-legend { flex: 1; min-width: 200px; max-height: 300px; overflow-y: auto; }
       .legend-item { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; font-size: 13px; }
       .legend-color { width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; display: inline-block; }
       .legend-bar-bg { flex: 1; height: 6px; background: #f1f5f9; border-radius: 3px; margin: 0 10px; overflow: hidden; }
       .legend-bar-fill { height: 100%; border-radius: 3px; }
-      
-      .disclaimer-box {
-        margin-top: 20px; padding: 10px; background: #fffbeb; border: 1px solid #fcd34d; 
-        border-radius: 8px; font-size: 11px; color: #92400e; display: flex; gap: 8px;
-      }
+      .disclaimer-box { margin-top: 20px; padding: 10px; background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; font-size: 11px; color: #92400e; display: flex; gap: 8px; }
     </style>
   `;
 
@@ -223,7 +233,7 @@ function renderItemExamen(ex) {
   const total = preguntas.length;
   const progreso = calcularProgresoExamen(ex.id, total);
   const abierto = examenesOpenExamen === ex.id;
-  const bg = abierto ? '#f1f5f9' : 'white';
+  const bg = abierto ? '#f8fafc' : 'white';
 
   let badge = `<span class="badge-status bg-gray">Pendiente</span>`;
   if (progreso > 0 && progreso < 100) badge = `<span class="badge-status bg-orange">En Curso</span>`;
@@ -257,7 +267,7 @@ function toggleExamenItem(id) {
 }
 
 /* ==========================================================
-   ⚙️ PANEL EXPANDIDO (ESTÉTICA CHOICE)
+   ⚙️ PANEL EXPANDIDO (ESTÉTICA CHOICE + SWITCHES)
    ========================================================== */
 function renderExpandExamen(ex, preguntas, progreso) {
   const iniciado = progreso > 0;
@@ -278,49 +288,78 @@ function renderExpandExamen(ex, preguntas, progreso) {
       }).join("");
   }
 
+  // Si hay historial o está iniciado, mostramos opción de reset dentro del historial
+  if (iniciado) {
+      historyHTML = `
+        <div style="margin-bottom:10px; padding-bottom:10px; border-bottom:1px dashed #e2e8f0; text-align:center;">
+            <span onclick="resetearExamen('${ex.id}')" style="color:#ef4444; cursor:pointer; font-size:11px; text-decoration:underline; font-weight:600;">
+               🗑 Reiniciar progreso actual (En curso)
+            </span>
+        </div>
+        ${historyHTML}
+      `;
+  }
+
   return `
     <div class="exam-expanded">
       
-      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:15px; margin-bottom:15px;">
+      <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-bottom:12px;">
           
           <button class="btn-choice-style" onclick="iniciarExamenConCheck('${ex.id}', ${iniciado})">
-             ▶ Iniciar Examen
+             ▶ Iniciar
           </button>
 
           ${iniciado ? `
-             <button class="btn-choice-style" style="border-color:#16a34a; color:#15803d; background:#f0fdf4;" 
-                     onclick="reanudarExamen('${ex.id}')">
-                ⏩ Continuar Intento
+             <button class="btn-choice-style" onclick="reanudarExamen('${ex.id}')">
+                ⏩ Continuar
              </button>
           ` : ''}
 
-          <div style="display:flex; align-items:center; gap:10px; margin-left:auto;">
-              <label class="config-check">
-                <input type="checkbox" id="timer-check-${ex.id}" checked>
-                <span class="config-label">⏱ Reloj</span>
-              </label>
+          <div style="display:flex; align-items:center; gap:12px; margin-left:auto;">
+              <div style="display:flex; align-items:center;">
+                  <label class="toggle-switch">
+                    <input type="checkbox" id="timer-check-${ex.id}" checked>
+                    <span class="slider"></span>
+                  </label>
+                  <span class="config-label-text">Reloj</span>
+              </div>
               
-              <label class="config-check">
-                <input type="checkbox" id="correction-check-${ex.id}">
-                <span class="config-label">📝 Corregir al final</span>
-              </label>
+              <div style="display:flex; align-items:center;">
+                  <label class="toggle-switch slider-orange">
+                    <input type="checkbox" id="correction-check-${ex.id}">
+                    <span class="slider"></span>
+                  </label>
+                  <span class="config-label-text">Corregir final</span>
+              </div>
           </div>
       </div>
 
       <div class="history-box">
-         <div style="font-weight:700; margin-bottom:8px; color:#334155; font-size:13px; display:flex; justify-content:space-between; align-items:center;">
+         <div class="history-header" onclick="toggleExamHistory('${ex.id}')">
              <span>📋 Historial de intentos</span>
-             ${iniciado ? `
-                <span onclick="resetearExamen('${ex.id}')" style="color:#ef4444; cursor:pointer; font-size:11px; text-decoration:underline;">
-                   Reiniciar progreso actual
-                </span>
-             ` : ''}
+             <span id="hist-arrow-${ex.id}">▼</span>
          </div>
-         ${historyHTML}
+         <div class="history-content" id="hist-content-${ex.id}">
+             <div style="padding-top:10px;">
+                ${historyHTML}
+             </div>
+         </div>
       </div>
 
     </div>
   `;
+}
+
+function toggleExamHistory(id) {
+    const content = document.getElementById(`hist-content-${id}`);
+    const arrow = document.getElementById(`hist-arrow-${id}`);
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        arrow.textContent = "▼";
+    } else {
+        content.style.display = "block";
+        arrow.textContent = "▲";
+    }
 }
 
 /* ==========================================================
@@ -352,6 +391,16 @@ function getExamHistory(examId) {
     } catch(e) { return []; }
 }
 
+function getQuestionsByExamen(examId) {
+    if (typeof BANK === 'undefined' || !BANK.questions) return [];
+    return BANK.questions.filter(q => {
+        if (q.examen === examId) return true;
+        if (q.source === examId) return true;
+        if (q.id && q.id.startsWith(examId)) return true;
+        return false;
+    });
+}
+
 /* --- ACCIONES --- */
 
 function iniciarExamenConCheck(id, yaIniciado) {
@@ -360,7 +409,7 @@ function iniciarExamenConCheck(id, yaIniciado) {
             return;
         }
         // Borramos progreso previo antes de iniciar
-        const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
+        const preguntas = getQuestionsByExamen(id);
         preguntas.forEach(q => { 
             const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
             if(PROG[mat] && PROG[mat][q.id]) { delete PROG[mat][q.id]; } 
@@ -371,7 +420,7 @@ function iniciarExamenConCheck(id, yaIniciado) {
 }
 
 function iniciarExamen(id) {
-  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
+  const preguntas = getQuestionsByExamen(id);
   if (!preguntas.length) return alert("No se encontraron preguntas.");
   
   const checkTimer = document.getElementById(`timer-check-${id}`);
@@ -390,7 +439,7 @@ function iniciarExamen(id) {
 }
 
 function reanudarExamen(id) {
-  const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
+  const preguntas = getQuestionsByExamen(id);
   const pendientes = preguntas.filter(q => { 
       const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
       const r = PROG[mat]?.[q.id]; 
@@ -415,7 +464,7 @@ function reanudarExamen(id) {
 
 function resetearExamen(id) {
     if(!confirm("⚠ ¿Borrar el progreso actual? (Tus respuestas se perderán, pero el historial de notas queda).")) return;
-    const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(id) : [];
+    const preguntas = getQuestionsByExamen(id);
     let cambios = false;
     preguntas.forEach(q => { 
         const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
@@ -425,9 +474,9 @@ function resetearExamen(id) {
     else { alert("No había progreso para borrar."); }
 }
 
-/* --- ANÁLISIS --- */
+/* --- ANÁLISIS (GRÁFICO RESTAURADO) --- */
 function analizarExamen(examId) {
-    const preguntas = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(examId) : [];
+    const preguntas = getQuestionsByExamen(examId);
     mostrarModalAnalisis(formatearNombreExamen(examId), preguntas);
 }
 
@@ -436,7 +485,7 @@ function analizarGrupo(nombreGrupo) {
     const examenesDelGrupo = EXAMENES_META.filter(e => e.grupo === nombreGrupo);
     let todasLasPreguntas = [];
     examenesDelGrupo.forEach(ex => {
-        const qs = typeof getQuestionsByExamen === 'function' ? getQuestionsByExamen(ex.id) : [];
+        const qs = getQuestionsByExamen(ex.id);
         todasLasPreguntas = todasLasPreguntas.concat(qs);
     });
     mostrarModalAnalisis(`Histórico: ${nombreGrupo}`, todasLasPreguntas);
@@ -449,7 +498,7 @@ function mostrarModalAnalisis(titulo, preguntas) {
     titleEl.textContent = `📊 Análisis: ${titulo}`;
 
     if(preguntas.length === 0) {
-        bodyEl.innerHTML = "<p>No hay preguntas disponibles.</p>";
+        bodyEl.innerHTML = "<p>No hay preguntas disponibles para analizar.</p>";
         modal.style.display = 'flex';
         return;
     }
