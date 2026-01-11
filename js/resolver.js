@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (FULL VERSION)
+   🎯 MEbank 3.0 – Motor de resolución (Con Favoritos)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -139,6 +139,8 @@ function renderPregunta() {
         .btn-action-user:hover { background: #f8fafc; color: #334155; border-color: #cbd5e1; }
         
         .btn-action-user.has-note { background: #fefce8; border-color: #facc15; color: #854d0e; }
+        
+        /* ESTILO BOTÓN FAVORITO (NEGRO CUANDO ACTIVO) */
         .btn-action-user.is-fav { background: #1e293b; border-color: #0f172a; color: white; }
 
         .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: #f8fafc; border-radius: 8px; }
@@ -263,7 +265,7 @@ function answer(selectedIndex) {
 }
 
 /* ==========================================================
-   ⏮ ⏭ NAVEGACIÓN & LOGICA FIN
+   ⏮ ⏭ NAVEGACIÓN
    ========================================================== */
 function nextQuestion() {
   if (CURRENT.i < CURRENT.list.length - 1) {
@@ -298,33 +300,28 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🏁 RENDER FIN (CON FIX DE FUSIÓN DE DATOS)
+   🏁 FINALIZAR
    ========================================================== */
 function renderFin() {
   stopTimer();
 
-  // 1. Guardar progreso actual
   if (CURRENT.config.correccionFinal === true && CURRENT.modo !== 'revision') {
       procesarResultadosExamenFinal();
   }
 
-  // 2. FUSIÓN DE DATOS (Fix para Reanudar Examen)
   if (CURRENT.config.allQuestionsRef && CURRENT.config.allQuestionsRef.length > 0) {
-      CURRENT.list = CURRENT.config.allQuestionsRef; // Usamos la lista completa de 100
+      CURRENT.list = CURRENT.config.allQuestionsRef; 
       CURRENT.list.forEach(q => {
-          if (CURRENT.userAnswers[q.id] !== undefined && CURRENT.userAnswers[q.id] !== null) return; // Ya respondida hoy
-          // Rellenar con memoria PROG
+          if (CURRENT.userAnswers[q.id] !== undefined && CURRENT.userAnswers[q.id] !== null) return; 
           const mat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
           if (PROG[mat] && PROG[mat][q.id]) {
               const status = PROG[mat][q.id].status;
               const correctIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-              // Si estaba bien, marcamos la correcta. Si estaba mal, marcamos incorrecta (dummy).
               CURRENT.userAnswers[q.id] = (status === 'ok') ? correctIdx : ((correctIdx === 0) ? 1 : 0);
           }
       });
   }
 
-  // 3. Guardar en Historial
   if ((CURRENT.modo === 'personalizado' || CURRENT.modo === 'examen' || CURRENT.modo === 'reanudar') 
       && typeof window.guardarResultadoSimulacro === 'function' && CURRENT.config.metaSubjects) {
       
@@ -381,7 +378,7 @@ function procesarResultadosExamenFinal() {
 }
 
 /* ==========================================================
-   📊 PANTALLA DE RESULTADOS (TU DISEÑO + BOTÓN REVISAR)
+   📊 PANTALLA DE RESULTADOS
    ========================================================== */
 function renderDetailedResults() {
   const app = document.getElementById("app");
@@ -481,7 +478,7 @@ function renderSubjectBreakdown(list, userAnswers) {
     });
     const rows = Object.keys(stats).map(slug => {
         const d = stats[slug];
-        const name = getMateriaNombreForQuestion({materia:slug}); // Reutilizamos helper
+        const name = getMateriaNombreForQuestion({materia:slug});
         const score = Math.round((d.ok / d.total) * 100);
         return `
           <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border-bottom:1px solid #f1f5f9;">
@@ -499,7 +496,6 @@ function renderSubjectBreakdown(list, userAnswers) {
 
 function startReviewMode() { CURRENT.i = 0; CURRENT.modo = "revision"; renderPregunta(); }
 function reviewQuestion(idx) { CURRENT.i = idx; CURRENT.modo = "revision"; renderPregunta(); }
-
 function reviewIncorrectOnly() {
     const wrongQuestions = CURRENT.list.filter(q => {
         const uIdx = CURRENT.userAnswers[q.id];
