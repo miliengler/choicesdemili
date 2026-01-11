@@ -259,3 +259,49 @@ input:checked + .slider:before { transform: translateX(14px); }
 
 /* Switch Naranja */
 .slider-orange input:checked + .slider { background-color: #ea580c; }
+
+/* ==========================================================
+   🕹 BOTONERA RESOLVER (DIVIDIDA)
+   ========================================================== */
+.q-nav-row {
+  display: flex;
+  justify-content: space-between; /* Empuja los grupos a los extremos */
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap; /* Para que en pantallas muy chicas no se rompa */
+}
+
+.nav-group {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilos específicos para estos botones */
+.btn-nav {
+  display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+
+.btn-nav-ghost { background: transparent; color: #64748b; border-color: #e2e8f0; }
+.btn-nav-ghost:hover { background: #f1f5f9; color: #334155; }
+
+.btn-nav-danger { background: #fff1f2; color: #be123c; border-color: #fda4af; }
+.btn-nav-danger:hover { background: #ffe4e6; }
+
+.btn-nav-primary { background: white; color: #3b82f6; border-color: #cbd5e1; }
+.btn-nav-primary:hover { background: #eff6ff; border-color: #3b82f6; }
+
+/* En móvil, que los botones sean un poco más grandes para el dedo */
+@media (max-width: 600px) {
+  .btn-nav { padding: 10px 12px; font-size: 13px; }
+  .q-nav-row { gap: 15px; } 
+}
