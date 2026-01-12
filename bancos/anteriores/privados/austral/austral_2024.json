@@ -1,1 +1,120 @@
-[]
+[
+  {
+    "id": "austral_2024_01",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Paciente de 55 años con diagnóstico de nódulo pulmonar de 4 cm espiculado y adenomegalias mediastinales. Su estadificación con PET RM de cerebro no muestra más que la enfermedad descripta. ¿Qué conducta tomaria?",
+    "opciones": {
+      "a": "Inicia quimioterapia + Inmunoterapia por diagnostico radiológico de cáncer de pulmón.",
+      "b": "Realiza mediastinoscopía para estadificar el mediastino y obtener material para anatomia patológica.",
+      "c": "Opera al paciente resecando el lóbulo donde se encuentra el nódulo y le realiza un vaciamiento ganglionar mediastinal.",
+      "d": "Realiza quimioradioterapia."
+    },
+    "correcta": "b",
+    "explicacion": "Dado que las adenomegallas mediastinales pueden ser indicativas de enfermedad ganglionar mediastinal involucrada (lo que implica uma enfermedad más avanzada), la mediastinoscopia seria la opción más adecuada en este caso para obtener una muestra de los ganglios mediastinales, poder estadificar al paciente y, por lo tanto, aplicar un tratamiento adecuado. Farreras, página 740; En los casos con adenopatias mediastinicas aumentadas de tamaño o con captación patológica en la PET en los que la EBUS no ha evidenciado células neoplásicas está indicada la realización de una mediastinoscopia La mediastinoscopia tiene fácil acceso a las adenopatias paratraqueales y traqueobronquiales proximales",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_02",
+    "materia": [
+      "infectologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "General"
+    ],
+    "enunciado": "Consulta un estudiante de medicina de 25 años por la vacuna antihepatitis B. Le comenta que no sabe si está vacunado y que el carnet lo perdió en una mudanza. Elija la opción correcta",
+    "opciones": {
+      "a": "Solicita dosaje de HBAgs, antiHB core y antiHBs para corroborar status de vacunación, si es negativo indica 3 dosis de vacuna (0-1-6 meses).",
+      "b": "Le indica 2 dosis de vacuna antihepatitis B ya que es personal de salud.",
+      "c": "No indica la vacuna ya que no tiene riesgo de tener hepatitis B.",
+      "d": "Indica 3 dosis de vacuna antihepatitis B (0-1-6 meses)."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es Indica 3 dosis de vacura antihepatitis 8 (0-1-6 meses",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_03",
+    "materia": [
+      "gastroenterologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Esófago",
+      "Hongos"
+    ],
+    "enunciado": "¿Cuál de los siguientes hallazgos macroscópicos es compatible con esofagitis por Cándida?",
+    "opciones": {
+      "a": "Úlceras en esófago medio.",
+      "b": "Desprendimiento de la mucosa.",
+      "c": "Placas mucosas de color blanco amarillento.",
+      "d": "Estrias sangrantes."
+    },
+    "correcta": "c",
+    "explicacion": "La esofagitis por Cándida, que es causada por la infección del hange Candida albicans, tipicamente presenta placas blanquecmas o de color blanco amarillento sobre la mucosa esofágica. Harrison, página 2203",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_04",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología"
+    ],
+    "enunciado": "Paciente femenina de 60 años de edad que consulta por cuadro de proctorragia asociada a tenesmo. Al examen fisico se palpa lesión ulcerada sangrante en hora 6, a 2 cm del margen anal, que se biopsia, con AP: carcinoma escamoso. Se estadifica con resonancia de alta resolución: T3N2 sin secundarismo a distancia en estudios de extensión ¿Qué conducta terapéutica le ofrecería?",
+    "opciones": {
+      "a": "Resección quirúrgica local del tumor.",
+      "b": "Quimiorradioterapia mediante esquema de Nigro.",
+      "c": "Cirugia de amputación abdominoperineal.",
+      "d": "Quimiorradioterapia y capecitabina oral."
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, página 1413: Todas las lesiones del margen anal mayores que 11 con ganglios positivos deben tratarse como canceres primarios de celulas escamosas del conducto anal con quemiorradiación definitiva) Nigro fue el primero en promover la radioterapia con la quimioterapia como el tratamiento definitivo para los canceres de células escamosas del conducto anal. El protocolo actual consiste en una infusión de 5-FU con mitomicina Cy radiación con haz externo de la pelvis con una dosie minima de 45 Gy",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_05",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "ECV"
+    ],
+    "enunciado": "Hombre de 55 años intercurre a las 15 hs con dificultad en el habla e imposibilidad para realizar movimientos con sus extremidades superiores. Consulta 15:30 hs al servicio de emergencias donde se evidencia al examen neurológico afasia de expresión y paresia braquio-crural derecha, tomografia de cerebro simple sin hallazgos patológicos. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Iniciar medidas de neuroprotección y mantener en observación por 24 horas",
+      "b": "Solicitar Tomografia de cerebro con contraste.",
+      "c": "Indicar reposo y control por ambulatorio.",
+      "d": "Iniciar medidas de neuroprotección y tromboliticos endovenosos."
+    },
+    "correcta": "d",
+    "explicacion": "La presentación clínica de este paciente, con dificultad en el habla y paresia braquio-crural derecha, es altamente sugestiva de un accidente cerebrovascular (ACV) Considerando que el paciente está dentro del tiempo terapéutico para el tratamiento con tromboliticas que es dentro de las primeras 4.5 horas desde el inicio de los sintomas), la conducta adecuada es iniciar medidas de neuroprotección y tromboliticos endovenasos y no esperar ya que el riesgo de morbimortalidad es alto. Harrison, página 3078 La CT (tomografia computada) del cerebro obtenida en las primeras horas después del infarto no suele mostrar anomallas, de manera que no siempre se observa el infarto de forma fiable hasta pasadas 24-48 h",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  }
+]
