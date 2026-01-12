@@ -116,5 +116,473 @@
     "examen": "Hospital Austral",
     "anio": 2024,
     "oficial": true
-  }
-]
+  },
+  {
+    "id": "austral_2024_06",
+    "materia": [
+      "traumatologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Tumores músculo-esqueléticos",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es la neoplasia maligna más frecuente del esqueleto apendicular?",
+    "opciones": {
+      "a": "Metastasis.",
+      "b": "Osteocondroma.",
+      "c": "Osteosarcoma.",
+      "d": "Sarcoma de Ewing."
+    },
+    "correcta": "c",
+    "explicacion": "La neoplasia maligna más frecuente del esqueleto apendicular es el osteosarcoma\n\nHarrison, página 655 y 656: \"Los tumores malignos más frecuentes en el huese son los tumores de células plasmáticas, y los cuatro tumores malignos más frecuentes no procedentes del tejido hematopoyético son el osteosarcoma, condrosarcoma, sarcoma de Ewing y UPS (sarcoma pleomórfico indiferenciado)\n\nEl osteosarcoma constituye casi 45% de todos los sarcomas óseos y es una neoplasia de células fusiformes que produce matriz osteoide (hueso no mineralizado) o hueso\"\n\nRepasando osteosarcoma:\n\nEs el tumor óseo maligno primarno más común del esqueleto apendicular Afecta principalmente a adolescentes y adultos jóvenes.\nPredilección por metáfisis de huesos largos, especialmerite: Fémur distal Tibia proximal, humero proximal",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_07",
+    "materia": [
+      "pediatria",
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Patología infecciosa infantil",
+      "Órbita"
+    ],
+    "enunciado": "Concurre a la guardia una paciente de 3 años por edema perioribitario derecho, que abarca el párpado superior e inferior. La madre refiere que en las semanas previas curso un cuadro de vias aéreas superiores que requirió tratamiento con corticoides. Al examen físico, los párpados estän edematosos, congestivos, con aumento de la temperatura local. La niña manifiesta dolor con los movimientos oculares y la agudeza visual del ojo derecho es de 8/10. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Indica cefalexina y control en 48 hs.",
+      "b": "Indica internación y tratamiento antibiótico endovenoso.",
+      "c": "Solicita un fondo de ojos.",
+      "d": "Solicita una tomografia computada con contraste"
+    },
+    "correcta": "b",
+    "explicacion": "La paciente presenta un edema periorbitario con signos de inflamación local (congestión, aumento de temperatura, dolor can movimientos oculares), sumado a pérdida de la agudeza visual del ojo derecho, lo que sugiere una celulitis orbitaria. La paciente debe ser internada para recibir antibióticos intravenosos y para un manejo adecuado\n\nNelson, página 3392: \"La celulitis orbitaria debe diagnosticarse con rapidez y tratarse de forma intensiva. Scele ser necesario hospitalizar al niño y administrarle antibióticos sistémicos El dato del CVAS previo nos podría hablar de una sinusitis como puerta de entrada.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_08",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Amenazas de parto prematuro"
+    ],
+    "enunciado": "Respecto a la Maduración Pulmonar Fetal con glucocorticoides, señale la opción incorrecta:",
+    "opciones": {
+      "a": "Se realiza mediante la administración de 2 dosis de Betametasona 12 mg IM o Dexametasona 6 mg/12 hs EV, según disponibilidad",
+      "b": "Al ser drogas hipoglucemiantes se encuentran contraindicadas en pacientes diabéticas gestacionales o pregestacionales dado el riesgo de muerte fetal intraûtero.",
+      "c": "Se indica en embarazos de entre 24.0-33.6 semanas de edad gestacional que presenten APP, RPM u otras condiciones que requieran su nacimiento prematuro.",
+      "d": "El tratamiento no debe ser suspendido aún si se prevé que el nacimiento se produzca antes de completarlo."
+    },
+    "correcta": "b",
+    "explicacion": "La maduración pulmonar fetal con glucocorticoides no estä contraindicada en pacientes diabéticas, si lo está en descompensación diabética.\n\nGuia de Amenaza de parto pretérmino, atención del parto pretermino espontaneo y rotura prematura de membranes, pagina 52\n\nContraindicaciones Absolutas\n\nTBC en actividad, descompensación diabética\n\nPrecauciones\n\nÚlcera gastro-duodenal activa, Diabetes gestacional o pregestacional (se deberá incrementar la frecuencia de los controles glucémicos pre y posprandiales; sobre la base de estos se ajustarán las dosis de insulina con bomba de infusion IV continua o en forttia SC o IV)\"\n\nPor otro lado, los glucocorticoides (betametasona o dexametasona) NO son hipoglucemiantes, por el contrario, pueden generar hiperglucemia transitoria, especialmente en pacientes diabéticas, lo cual debe ser monitoreado, pero no contraindica su uso",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_09",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Esófago"
+    ],
+    "enunciado": "¿Cuál de los siguientes métodos complementarios es más sensible y especifico para el diagnóstico de trastorno motor esofágico?",
+    "opciones": {
+      "a": "SEGD.",
+      "b": "Tomografia computada con contraste.",
+      "c": "Manometría esofágica de alta resolución.",
+      "d": "Endoscopia digestiva alta."
+    },
+    "correcta": "c",
+    "explicacion": "La manometria esofágica de alta resolución es el método más sensible y específico para el diagnóstico de trastornos motores esofagicos, como acalasia por ejemplo.\n\nSabiston, página 1047: \"La manometria esofágica es la forma más eficaz de evaluar la función del cuerpo del esofago y del EE \"\nLa SEGD (Seriada esofago-gastro-duodenal) es útil para ver morfologia y vaciamiento, pero poco sensible para trastornos motores finos\n\nLa endoscopia digestiva alta puede descartar causas estructurales lesteriosis, tumores), pero no evalúa motilidad\nLa tomografia con contraste no tiene utilidad en el estudio funcional del esófago.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_10",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Se presenta a la guardia un paciente de 67 años, hipertenso, dislipidémico, Diabético tipo 2 no insulino requiriente, sin antecedentes coronarios, que no toma medicación. Consulta por presentar en las últimas 24 hs 3 episodios de dolor precordial opresivo, en reposo, de 20 min de duración. Ud. solicita un electrocardiograma donde se observa una frecuencia cardíaca de 70 latidos por minuto e inversión de las ondas Ten cara anterior, y un dosaje de Troponina T que resulta negativa. Frente a este escenario ¿Cuál es su diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome coronario agudo.",
+      "b": "Dolor torácico no coronario debido a que la troponina Tes negativa.",
+      "c": "Tromboembolismo pulmonar.",
+      "d": "Angina crónica estable."
+    },
+    "correcta": "a",
+    "explicacion": "El paciente presenta caracteristicas tipicas de angina inestable, que es una forma de sindrome coronario agudo (SCA) sin elevación del Stri aumento de troponinas\n\nCriterios de sindrome coronário agudo\n\nDolor torácico en reposo (no con el esfuerzo, como en la angina establej\n\nDuración 20 minutos\n\nMúltiples episodios en 24 horas\n\nECG con inversión de Ten cara anterior (signo isquémico).\n\nTroponina negatival orienta a angina inestable, pero sigue siendo un SCA\n\nRespecto a las falsas\n\nDolor torácico no coronario to descarto porque están presentes los sintomas tipicos + ECG compatible.\n\nEI TEP suele dar disriea, taquicardia, signos de sobrecarga de cavidades derechas.\n\nLa angina crónica estable requiere que el dolor ses predecible, con el esfuerzo, y no cambiante",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  }, 
+  {
+    "id": "austral_2024_11",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "Durante una consulta de control en salud, un niño se dirige a su padre llamándolo \"papa\". La madre entra al consultorio unos minutos después, y el niño estira los brazos y grita en voz alta \"mamá\". Cuando nota que la madre está sosteniendo una banana, sonrie y dice \"nana\". La madre lo levanta y le ofrece la banana. Usted le pregunta si el niño dice otras palabras y su madre le contesta que \"no todavia ¿Cuál es la edad tipica del desarrollo en la que son más esperables estos signos?",
+    "opciones": {
+      "a": "15 meses.",
+      "b": "18 meses.",
+      "c": "12 meses.",
+      "d": "9 meses,"
+    },
+    "correcta": "c",
+    "explicacion": "La edad tipica del desarrollo en la que son más esperables estos signos es 12 meses. A los 12 meses, muchos niños empiezan a decir sus primeras palabras, como \"mama\" \"papa\", y algunas veces palabras relacionadas con objetos cotidianos como \"nana\" (para referirse a una bariana, por ejemplo). A este edad también es común que los niños usen gestos cómo estirar los brazos para pedir que los levariten. Neilson, página 133",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_12",
+    "materia": [
+      "reumatologia",
+      "ginecologia",
+      "endocrinologia"
+    ],
+    "submateria": [
+      "Metabólica ósea",
+      "Climaterio y menopausia",
+      "Otras preguntas de endocrinología"
+    ],
+    "enunciado": "Con respecto a osteoporosis marque la opción incorrecta:",
+    "opciones": {
+      "a": "En una densitometría ósea: si una mujer tiene -2.5 de T score, su masa ósea es menor de 2.5 desvíos estándares de la media de las mujeres pre menopausicas con masa ósea normal.",
+      "b": "Las fracturas asociadas con la osteoporosis son más frecuentes en muñeca, cadera y columna vertebral.",
+      "c": "En el Z score, se compara el valor de la paciente estudiada con el de una mujer de su misma edad, pero sin osteoporosis.",
+      "d": "La radiografía de columna lumbar es un estudio con alta sensibilidad para el diagnóstico de osteoporosis."
+    },
+    "correcta": "d",
+    "explicacion": "La radiografía no tiene una alta sensibilidad para detectar osteoporosis, ya que no puede identificar la perdida onea hasta que ya ha ocurrido una disminución significativa en la densidad ósea (alrededor del 30-40%) Por lo tanto, la densitometria osea es el método de referencia más precisio para diagnosticar osteoporosis, ya que puede detectar la disminución de la densidad dana en etapas más tempranas. Ferreras, página 1024: \"La valoración del grado de radiotransparencia tienie poco interés en el abordaje de la osteoporosis, por ser poco sensible (solo aumenta con disminución de masa osea de un 30-40%) y escasamente reproducible varia con el grosor de las partes blandas y con la técnica radiológica - intensidad y voltaje- El resto de las opciones son correctais.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_13",
+    "materia": [
+      "infectologia"
+    ],
+    "submateria": [
+      "Rickettsias / Bartonella / Coxiella / Leptospira"
+    ],
+    "enunciado": "Recibe en el consultorio un paciente joven derivado de la guardia, inmunocompetente, que consulta por la aparición aguda de fiebre y un ganglio axilar aumentado de tamaño y doloroso. Hace unos días encontro un gato cachorro en la calle al que adoptó. ¿Cuál es su diagnóstico más probable?",
+    "opciones": {
+      "a": "Tuberculosis ganglionar.",
+      "b": "Brucelosisi",
+      "c": "Bartonelosis.",
+      "d": "Linfoma."
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico más probable en este caso es partonelosis, Los sintomas tipicos incluyen:\n\n-Fiebre\n\n-Ganglio linfático aumentado y doloroso.\n\n-Exposición a un gato.\n\nFarreras, pagina 2214: \"La forma más frecuente de presentación es la de adenopatias regionales tras un arañazo de gato. En el lugar de la inoculación pueden evidenciarse en los primeros 8 dias unas lesiones papulopustulosas. Posteriormente, entre 3 y 50 dias, aparece una adenopatia que suele ser ünica (80%), puede ser inicialmente dolorosa y tener signos inflamatorios importantes. Su tamaño oscila entre 1 y 5 cm, y ratamente supura (17%). La cabeza, el cuello, el codo y las axilas son los territorios afectos con mayor frecuencia Las manifestaciones generales son inespecíficas, y consisten en fiebre superior a 38,5°C (30%), malestar (15%), cefalea, odinofagia, näusees, vomitos, dolor abdominal y raramente un exantema transitorio generalizado de tipo maculopapular o petequial\".",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_14",
+    "materia": [
+      "infectologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "ITS",
+      "Infecciosas"
+    ],
+    "enunciado": "¿Cuál es la opción correcta en relación a la sífilis?",
+    "opciones": {
+      "a": "El estudio de campo oscuro de lesiones mucosas es útil para el diagnóstico.",
+      "b": "La roseola sifilitica es muy contagiosa.",
+      "c": "En el período secundario la VDRL cuantitativa suele tener titulos no mayores de 8 dils",
+      "d": "El tratamiento de elección de la sifilis primaria es la penicilina G sódica."
+    },
+    "correcta": "a",
+    "explicacion": "La opción correcta en relación a la sifilis es que el estudio de campo oscuro (metodo directo de lesiones mucosas es útil para el diagnóstion. Farreras, pagina 2187: \"Para el diagnóstico directo se récurre a la observación en fresco en microscopio de campo oscuro o a tinciones con inmunofluorocromos en muestras de lesiones genitales, lesiones cutâneas exudativas y aspirados de ganglio linfático\" Esta técnica es especialmente útil en las lesiones primartas (chancro) y secundarias que presentan exudado. Las lesiones mucosas, como los condilomas planos del periodo secundario, también pueden ser examinadas con esta técnica:\n\nPor otro lado, la roseala sifilitica es una erupción maculopapular no pruriginosa que aparece durante el período secundario de la sifilis. Si bien el período secundario es altamente contagioso debido a la presencia de espiroquetas en la sangre y las lesiones mucocutáneas, la erupción en si misma (la roseola) no es la principal fuente de contagio directo por contacto, Las lesiones mucosas secundarias (condilomas planos, parches mucosos son mucho más infecciosaa debido a la alta concentración de Treponema pallidum\nDurante el período secundario de la sifilis, la respuesta serologica es tipicamente muy alta y solemos encontrar valores mayores a 8 dils\n\nPor último, El tratamiento de elección para la sifilis primaria, secundaria y latente temprana es la penicilina G benzatinica administrada por via intramuscular",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_15",
+    "materia": [
+      "hematologia"
+    ],
+    "submateria": [
+      "Anemias carenciales"
+    ],
+    "enunciado": "Una mujer de 75 años de edad, con antecedentes de asma, se presenta a su control de salud anual y su médico de cabecera encuentra en sus estudios de laboratorio una anemia macrocitica. Además, refiere presentar sintomas que impresionan parestesias y al examen fisico se observa ataxia. Estudios posteriores muestran aumento de LDH y neutrófilos hipersegmentados en frotis de sangre periférica. ¿Cuál es su diagnóstico presuntivo inicial?",
+    "opciones": {
+      "a": "Déficit de vitamina b12.",
+      "b": "Déficit de cobre.",
+      "c": "Sobrecarga de hierro.",
+      "d": "Déficit de hierro."
+    },
+    "correcta": "a",
+    "explicacion": "El diagnóstico presuntivo inicial es el déficit de vitamina b12 debido a la presencia de anernis megaloblástica y los sionos y sintomas del paciente (parestesias y ataxial\n\nFarmras, página 1580. \"Por su peculiaridad relacionada con el déficit de cobalamina merecen mención especial las manifestaciones neurológicas hasta un 45% de los casos tienen algún sintoma neurológico en el diagnóstico Clinicamente, las manifestaciones pueden ser parestesias en manos y ples, falta de fuerza muscular, marcha staxica siona de Romberg, espasticidad, signo de Babinski, hiperreflexia, pérdida de memoria y, a veces, cuadro psicótico (psicoanemia de Weil) () El hemograma y el análisis bioquímico mostrarán las alteraciones citadas en el sindrome megaloblástica (aumento de LDH, bilirrubina indirecta, etc),",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_16",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "¿Qué vacunas no indicaría a una persona gestante?",
+    "opciones": {
+      "a": "Antigripal, hepatitis B",
+      "b": "Covid 19.",
+      "c": "Triple viral, Qdenga",
+      "d": "Triple bacteriana acelular, Vacuna VSR."
+    },
+    "correcta": "c",
+    "explicacion": "Las vacunas que se encuentran contraindicadas en personas gestantes son las a virus vivos atemaatios, como es el caso de la vacutta triple viral y Odenga para dengue). Las demás se encuentran indicades Calendario Nacional de Vacunación",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_17",
+    "materia": [
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Ecografía"
+    ],
+    "enunciado": "Con respecto a los criterios ecográficos de colecistitis, marque la opción incorrecta:",
+    "opciones": {
+      "a": "Edema parietal",
+      "b": "Engrosamiento parietal.",
+      "c": "Distensión vesicular.",
+      "d": "Litiasis móvil."
+    },
+    "correcta": "d",
+    "explicacion": "La opción incorrecta en relación con los criterios ecográficos de colecistitis es \"litiasis móvil Gimenez, página 438 \"El aumento de los diámetros vesiculares transversal (40 mm) y longitudinat (>90mm) es signo lodirecto de y glere la obstrucción del conducto clistica por un calculo, que puede no ser advertido durante el estudio Cuando éste es individualizado, se observa como una imágen de cálculo (hipenicogénico con sombra acústica posterior) en el cuello vesicular que no se moviliza ante los cambios de decúbito. La inflamación de las paredes de la vesicula se aprecia como un engrosamiento (>3mm) con presencia de liquido, observándose una región hipoecoica entre dos lineas ecogénican (sugno del doble halo o de la oblea)\"",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_18",
+    "materia": [
+      "hematologia"
+    ],
+    "submateria": [
+      "Gamapatías monoclonales"
+    ],
+    "enunciado": "Paciente de 62 años concurre a la guardia por letargia. Su esposa refiere que ha estado con mucha sed en las últimas semanas y orinando con espuma. Al laboratorio presenta anemia normocitica normocrómica, glóbulos blancos y plaquetas normales, falla renal, hipercalcemia con fostoro normal. ¿Qué otro estudio solicitaria?",
+    "opciones": {
+      "a": "Tomografia de tórax para confirmar Linfoma Linfoblástico",
+      "b": "Proteinograma para confirmar mieloma múltiple.",
+      "c": "Ecografia abdominal para evaluar esplenomegalia.",
+      "d": "LDH y ácido úrico para confirmar síndrome de lisis tumoral."
+    },
+    "correcta": "b",
+    "explicacion": "B paciante de 62 años presenta sibtomas sugestivos de mieloma múltiple, como letargia, sed excesiva, polluria y espuma en la orina, junto con hallazgos de laboratorio que incluyen ariemia normocitica normocrómica, falla renal, hipercalcemia y proteinuria. Estos sintomas y resultados son característicos de esta enfermedad, ya que el misloma múltiple puede causar insuficiencia renal por la precipitación de proteinas monoclonales en los túbulbs renales, así como hipercalcemia debido a la destrucción ósea. La proteinuria también es un hallazgo clave, dado que mieloma múltiple puede gemerar la excreción de proteinas, como las cadenas ligeras de inmunoglobulinas. Por lo tanto, el estudio más adecuado a solicitar seria un proteinograma para confirmar el diagnóstico de mielona mittiple. Farreras, página 1887: \"La enfermedad (mieloma multiple) se mandiesta con insuficiencia renal o con sintomatologia secundaria a hipercalcemia (nausean, vomitos, poliuria, polidipsia, estreñimiento, cefalean, somnolencia, imitabilidad e incluso coma) () La palidez cutaneo-mucosa se halla en relación con el grado de anemia( Recientemente se han revisado los criterios diagnosticos de mieloma mültiple e incluyen: 11 fa presencia de 10% de células plasmáticas en médula osex o un plasmocitoma dseo o extramedular confirmado por bloosia, mas 2) al menos uno de los siguletites criterios: a) Hipercalcemia >11mg/dL); b insuficiencia renal jaclaramiento de Cr < 40 mL/min o 2 g por debajo del limite normal), y di lesiones óseal outeoliticas demostradas por radiologia simole o tomografia computarizada.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_19",
+    "materia": [
+      "pediatria",
+      "otorrinolaringologia"
+    ],
+    "submateria": [
+      "Patología del aparato respiratorio",
+      "Laringe"
+    ],
+    "enunciado": "Usted está examinando a un varón de 4 semanas de vida en su primer control en salud tras ser dado de alta después de un nacimiento sin particularidades. Los padres están preocupados porque el niño ha estado haciendo ruido al respirar, al inspirar, durante la última semana, especialmente cuando come. Dicen que come bien y que no ha tenido fiebre ni congestión nasal. En el examen fisico, usted nota que el lactante ha recuperado el peso de nacimiento, pero tiene un estridor inspiratorio. En la radiografía de tórax, se ven campos pulmonares normales sin infiltración ni consolidación. El tamaño del corazón es normal. ¿Cuál es la explicación más probable para el estridor de este recién nacido?",
+    "opciones": {
+      "a": "Anillo vascular.",
+      "b": "Refiujo gastroesofágico",
+      "c": "Parálisis de cuerdas vocales.",
+      "d": "Laringomalacia."
+    },
+    "correcta": "d",
+    "explicacion": "La explicación más probable para el estridor en este recién nacido es laingomalacia. Este trastorno es común en lactarites de 2 a 4 sehianas, y generalmerite se presenta con estridor que empedra durante l alimentación, llanto o agitación. Nelson, página 2206: \"La laringomalacia supone el 45-75% de las malformaciones congénitas de la laringe en niños con estridor. El estridor es inspiratorio y de torio bajo, y se agrava por cualquier esfuerza: llanto, agitación o alimentación Los sintomas suelen aparecer en las 2 printeras samarias de victa y sgravedad aumenta hasta el sexto mes sunque en cualquier momento puede empezar una mejoria gradual Analizamos las opciones falsa Anillo vascular. Aunque puede causar estridor en algunos casos generalmente está asociado con otros síntomas más graves y con là presencia de radiografias anormales. La radiografia normal nos ayuda a descartar esta opción Reflujo gastroesofágico Puede causar estridor, pero tipicamente se acompaña de otros sintomas como regurgitación o vomitas, que no se mencionan en el choice. Parálisis de cuerdas vocales: Puede causar estridor, pero suele estar asociado con una respiración más ruidosa y la perálisis de las cuerdas vocales es menos comun y más grave que la laningomalacia.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_20",
+    "materia": [
+      "infectologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Tuberculosis",
+      "Neumonía"
+    ],
+    "enunciado": "Paciente de 57 años concurre a la guardia con fiebre y tos de 15 días de evolución. En relación a los hallazgos en la radiografía y tomografia computada de tórax mostradas a continuación. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Aspergilosis.",
+      "b": "Derrame pleural.",
+      "c": "Neumotorax.",
+      "d": "Tuberculosis."
+    },
+    "correcta": "d",
+    "explicacion": "La clinica presentada por el paciente en un pals endémico como lo es la Argentina, nos tiene que hacer sospechar Tuberculosis como priemer diagnóstico diferencial. Las imágenes refuerzan la sospecha al evidenciar lesiones cavitadas en el polo apical. En la TAC se observa claramente una cavitación (una lesión con una pared y contenido aéreo) en el lóbulo superior derecho. Harrison, pagina 1242 \"Por lo común está localizada en los segmentos apical y posterior de los lóbulos superiores, en donde la presion media de oxigeno que es sustancialmente mayor (en comparación con la de zonas mas bajas) facilita la proliferación de micobacterias (El grado de afectación parenquimatosa varia mucho, desde pequeños infiltredes hasta un proceso cavitario extenso",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_21",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna de mama"
+    ],
+    "enunciado": "Una mujer de 25 años se realiza una biopsia guiada por ecografia de una masa mamaria de 3 cm, con un resultado de lesión fibroepitelial. ¿Qué característica histológica es consistente con un diagnóstico de fibroadenoma?",
+    "opciones": {
+      "a": "Márgenes circunscriptos",
+      "b": "Atipia citológica estromal evidente.",
+      "c": "Actividad mitótica de 7-8 mitosis por campo de gran aumento.",
+      "d": "Crecimiento excesivo del estroma."
+    },
+    "correcta": "a",
+    "explicacion": "El fibroadenome es ef tumor benigno más frecuente de la glandula mamaria, Citando el Provenzano, página 532 \"Microscópicamente se compone de proliferación mixta epitelial y estromal observandone l microscopio conductos bien desarrollados rodeados de tejido conjuntivo periductal hiperplasico, en conjunto se aprecia un equilibrio entre in proliferación del epitelio y el estroma\"\n\nRecordemps que el fibroadenoma es una lesión benigna de la mansa compuesta por un componente glandular y estromal que se caracteriza. por tener märgenes bien definidos, sin invasión del tejido circundante Esta es una caracteristica clave en el diagnostico histológico de fibroadenoma\n\nLas opciones de atipia citológica y actividad mítótica nos harian pensar en un proceso maligno.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_22",
+    "materia": [
+      "pediatria",
+      "reumatologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Patología infecciosa infantil",
+      "Artritis infecciosa",
+      "Bacterias"
+    ],
+    "enunciado": "Un paciente de 3 años es diagnosticado con artritis séptica de cadera izquierda luego de una punción articular en contexto de sospecha clinica ¿Cuál de estos gérmenes esperaria usted encontrar con mayor frecuencia en el desarrollo de los cultivos bacterianos de esta patología en este rango etario?",
+    "opciones": {
+      "a": "Neisseria gonorrhoeae.",
+      "b": "Pseudomona aeruginosa.",
+      "c": "Stafilococo aureus.",
+      "d": "Streptococo grupo B."
+    },
+    "correcta": "c",
+    "explicacion": "Nelson, página 3676 \"Staphylococcus aureus es el agente causal de artritis bacteriana más frecuente en todos los grupos de edad (...) En adolescentes sexualmente activos, el gonococo es una causa relativamente frecuente de artritis Los estreptococos del grupo Bison una causa importante de artritis séptica en neonatos. Por último podríamos sospechar pseudomona en pacientes con antecedentes de uso de dispositivas médicas, inmunocompromiso o en situaciones de lesiones penetrantes.",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_23",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPI",
+      "ITS"
+    ],
+    "enunciado": "Una paciente de 29 años consulta por dolor en hipogastrio de 1 mes de evolución. Al interrogatorio dirigido refiere un flujo verdoso hace 2 semanas y dispareunia. Al examen físico se constata leucorrea maloliente verdosa, Frenkel positivo y dolor a la palpación profunda en hipogastrio sin defensa ni reacción peritoneal. Refiere registros de 37.5°C el día anterior. ¿Qué medida presuntiva tomaría?",
+    "opciones": {
+      "a": "Ante sospecha de EPI solicita cultivo de flujo, pero arranca empiricamente tratamiento con Ceftriaxona + Metronidazol + Doxicicilina a ella y a la pareja.",
+      "b": "Ante sospecha de vulvovaginitis por trichomonas indica metronidazol a ella y a su pareja.",
+      "c": "Ante sospecha de EPI complicada indica internación para tratamiento antibiótico EV y eventual conducta quirúrgica.",
+      "d": "Ante sospecha de endometriosis solicita ecografía TV e indica comenzar con tratamiento hormonal."
+    },
+    "correcta": "a",
+    "explicacion": "Eos sintomas clinicos como dolor en hipogastrio, flujo maloliente y verdoso, dispareunia, fiebre subfebril, leucorrea maloliente y signos de Imitación peritoreal (como el signo de Frenkel) son altamente sugestivos de EPI. El tratamiento empirico para EPI incluye una combinación de antibióticos que cubren los agentes más comunes involucrados (como las Infecciones por gonococo y clamidia), y debe iniciarse de inmediato mientras se espera el cultivo del flujo para confirmar el diagnostico. Gori, página 404: \"Los tratamientos propuestos en pacientes ambulatorias son: Cefalosporina de 3 generación, parenteral, monodosis antianaerobio +doxiciclina 100 mig oral, cada 12 horas, durante 10 a 14 días ( ) De ser posible, la pareja debe ser examinada si tuvo contacto sexuaاس dentro de los 60 dias previos a la aparición del cuadro infeccioso. La evaluación y tratamimito de la pareja es importante, debido a que puede ser el origen de una posible reinfección. Se deberá pesquisar N gonorrhoeae y trachomatis por hisopedo uretral. De no ser factible el estudio microbiológico, se sugiere el tratamiento empirico de la pareja con azitromicina 1g en monodosis Respecto a las otras opciones: Vulvovaginitis por Trichomonas: el flujo verdoso suglere esta etiologia, pero el dolar hipogástrico, dispareunia y el Frenkel positive implican compromiso pélvico, no solo vaginal.\n\nEPI complicada con indicación de internación: esta paciente no presenta signos de severidad (no hay fiebre alta, vómitos, pentonitis, absceso, ni Intolerancia oral)\n\nEndometriosis: puede dar dispareunia y dolor pélvico cronico, pero no da leucorrea purulenta ni fiebre ni signos infecciosos, y no requiere antibióticos",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_24",
+    "materia": [
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Patología del aparato respiratorio",
+      "TRS"
+    ],
+    "enunciado": "Se presenta un paciente de 5 años con fiebre, odinofagia y tos disfónica de 48 horas de evolución. Al examen fisico presenta fauces congestivas sin exudado, auscultación normal salvo leve estridor inspiratorio y buen estado general. ¿Qué conducta le parece más adecuada?",
+    "opciones": {
+      "a": "Indicar control en 48 horas.",
+      "b": "Solicitar cultivo de fauces y medicar con antibiótico",
+      "c": "Realizar test rápido y cultivo.",
+      "d": "Indicar tratamiento sintomático"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente padece un cuadro denominado laringotraqueitis, también conocido como crup. Se produce principalmente por etiologia viral, y su presentación clinica, según el Nelson (pagina 2203) se caractenza por alguna combinación de rinorrea, faringitis, tos leve y febricula durante 1-3 dias antes de la aparición de signos y sintomas clarou de obstrucción de la via respiratoria superior. En ese momento el niño presenta tos perruns, ronquera y estridor inspiratorio) La mayor parte de los pacientes jóvenes con crup solo tiene estridor y disnea leve antes de empezar a recuperarse\nCon respecto al tratamiento, el Nelson determina que \"El pillar del tratamiento de los niños con crup es el control de la via respiratoria y el tratamiento de la hipoxia ( Se puede tratar de forma segura en su domicilio a la mayor parte de los nifios con crup agudo espasmodico o Infeccioso () Se conoce bien la eficacia de los corticoides orales en el crup virico. Estos farmacos reducen el edema de la mucosa laringea por su acción antinflamatoria. Cuando se administran por via gral son beneficioses, incluso en el crup leve Por lo tanto, concluimos que la opción correcta es tratamiento sintomático",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  {
+    "id": "austral_2024_25",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Encefalitis viral"
+    ],
+    "enunciado": "Ingresa una paciente inmunocompetente con sospecha de encefalitis herpética. Función renal normal. En cuanto al tratamiento antiviral:",
+    "opciones": {
+      "a": "Indica Aciclovir 10 a 12 mg/kg cada 8 hs via IV.",
+      "b": "Indica Ganciclovir 5 mg/kg cada 12 hs via IV para optimizar además cobertura de VHS y CMV.",
+      "c": "Indica Aciclovir dosis 800 mg 5 veces por día via oral.",
+      "d": "No indica tratamiento antiviral, esperara el resultado de las PCR en LCR."
+    },
+    "correcta": "a",
+    "explicacion": "Ante la sospecha clinica de encefalitis herpética, se debe iniciar tratamiento empirica inmediato con Aciclovir IV, sin esperar confirmación por PCR de LCR, debido a la alta morbimortalidad de esta entidad si no se trata precozmente\n\nSegún el Harrison, pagina 995 El aciclovir es un fármaco beneficioso contra HSV y habrá que comenzar su administración sobre bases empiticas en personas en quienes se sospecha el ataque de la encefalitis viral mientras llegan los resultados de los estudios diagnosticos\". Por lo tanto, la opción correcta es Aciclovir y su administración debe ser de 10 a 12 mg/kg cada 8 hs via IV por 21 dias, Por via oral no llega a concentraciones adecuadas en SNC y el ganciclovir se usa más en CMV",
+    "imagen": [],
+    "examen": "Hospital Austral",
+    "anio": 2024,
+    "oficial": true
+  },
+  
