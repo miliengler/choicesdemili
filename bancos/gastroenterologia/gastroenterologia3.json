@@ -1,1 +1,2646 @@
-[]
+[
+  {
+    "id": "gastro-003-001",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Hígado"
+    ],
+    "enunciado": "Franco llega preocupado al consultorio porque en un examen preocupacional le realizaron un laboratorio y le dijeron que tenía hepatitis B. Usted le solicita un laboratorio con serologías para Hepatitis B que informa: HBs Ag negativo, Anti HBs positivo, Anti HBc IgG positivo, HBe Ag negativo, Anti HBe negativo. ¿Qué es correcto informarle?",
+    "opciones": {
+      "a": "Que se encuentra en recuperación de una hepatitis B asintomática.",
+      "b": "Que se encuentra cursando una hepatitis B aguda asintomática.",
+      "c": "Que el laboratorio refleja anticuerpos por vacunación con HBsAg.",
+      "d": "Que el laboratorio refleja una Hepatitis B crónica de baja infectividad."
+    },
+    "correcta": "a",
+    "explicacion": "Nuestro paciente presenta:\n• Anticuerpo frente al antigeno s (anti-HBs). Su presencia en sangre refleja inmunización frente al VHB (valor > 10 m I/ml). Cuando aparece este anticuerpo de forma aislada (sin otros anticuerpos) indica que el paciente ha sido vacunado (recuerda que la vacunación se hace con el antigeno s, por eso no aparecen otros anticuerpos). Cuando el anti-HBs aparece junto con otros anticuerpos (anti-HBc) indica que el paciente se ha inmunizado debido a una infección pasada por el VHB (desaparece el antígeno s y el ADN viral).\n• Anticuerpo frente al antigeno c (anti-HBc). Son muy importantes estos anticuerpos, ya que su presencia en sangre reflejan que ha habido contacto con el virus. Anti-HBc indica Contacto con el virus. Si los anticuerpos son de tipo IgG el contacto fue pasado.\nLos anti-HBc IgG, dependiendo de cómo estén otros parámetros, pueden indicar tres cosas:\n. Infección pasada curada: hay anti-HBc IgG en combinación con otros anticuerpos como los anti-s y el anti-e. No hay antigeno s porque la infección está curada. Tampoco hay ADN viral. (nuestro paciente - respuesta correcta)\n• Hepatitis crónica inactiva o no replicativa (estado de portador): hay virus pero no hay replicación; por tanto, hay antígeno s (hay virus) y anticuerpos anti-e (no hay antigeno e porque no hay actividad viral).\n• Hepatitis crónica activa: HBs Ag +, HBe Ag +, anti-HBc tipo IgG +, ADN elevado, transaminasas elevadas. En caso de que la infección sea por la cepa mutante precore habrá: HBs Ag +, Hbe Ag-, anti-HBe +, anti-HBc lg +, ADN elevado y transaminasas elevadas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-002",
+    "materia": [
+      "gastroenterologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Otras preguntas de hematología"
+    ],
+    "enunciado": "Juan Carlos tiene 50 años, y se encuentra en seguimiento por gastroenterología por una hepatopatía en estudio. Como plan de estudio le solicitan un perfil férrico que viene con una sideremia de 180 microgr/dl Transferrina 200 mg/dl, Sat transferrina 80%, Ferritina 800 ng/dl. Ante la sospecha de hemocromatosis que signos y síntomas debe buscar para ver si es sintomática:",
+    "opciones": {
+      "a": "Neuropatía motora, dolor abdominal intenso, ansiedad.",
+      "b": "Diarrea, dolor abdominal e hipotensión",
+      "c": "Sintomas de diabetes, hiperpigmentación, atrofia testicular",
+      "d": "Disartria, irritabilidad, anillo de Kayser-Fleischer en el ojo"
+    },
+    "correcta": "c",
+    "explicacion": "Hemocromatosis: diagnóstico: ferritina alta con índice de saturación de transferrina (IST) alto.\nEl 90% de los casos son asintomáticos y se diagnostican por las alteraciones analíticas. Aparece alrededor de los 50 años. Si no se trata, el hierro se deposita en varios órganos y causa la siguiente clinica:\nHigado: molestias en hipocondrio derecho, cirrosis, hepatocarcinoma. La hemocromatosis es la hepatopatia con el riesgo más elevado de desarrollar hepatocarcinoma.\nPancreas: diabetes mellitus por infiltración pancreática de hierro; los niveles de glucemia estarán elevados.\nPiel: hiperpigmentación cutánea, pérdida del vello corporal.\nArticulaciones: artralgias, sobre todo en las articulaciones metacarpofalángicas (dolor al darles la mano).\nCorazón: miocardiopatia restrictiva por depósito miocárdico de hierro.\nHipófisis: falta de hormona liberadora de gonadotropina GnRH, lo que conlleva hipogonadismo hipogonadotropo.\nAtrofia testicular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-003",
+    "materia": [
+      "gastroenterologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 62 años con cirrosis por virus de hepatitis C y síndrome ascítico edematoso, que fue internado por presentar cuadro de oliguria en los últimos 3 días? Está medicado diariamente con 40 mg de furosemida, 100 mg de espironolactona. En el día de hoy, tiene los siguientes resultados de laboratorio: urea: 122 mg/dL Cr 2,1, Na 128 mEq/l, K 4,9 mEq/l, Na urinario: 8 mEq/l, sedimento urinario normal. Se lo expande con volumen, pero luego de 24 horas continúa sin diuresis.",
+    "opciones": {
+      "a": "Glomerulonefritis por crioblobulinemia mixta esencial",
+      "b": "Nefritis intersticial",
+      "c": "Nefropatía por Ig A",
+      "d": "Sindrome hepatorenal"
+    },
+    "correcta": "d",
+    "explicacion": "En los pacientes con cirrosis hepática existe una alteración en el metabolismo del óxido nítrico que se asocia a vasodilatación sistémica con hipoperfusión renal y activación de mecanismos compensatorios (sistema renina angiotensina, sistema simpático, liberación de arginina vasopresina) que producen vasoconstricción renal y retención urinaria de agua y sodio.\nEstos eventos dan lugar al desarrollo de ascitis que conforme evoluciona la enfermedad se hace refractaria al tratamiento con diuréticos y se asocia a hiponatremia.\nEl sindrome hepatorenal es una forma que insuficiencia renal prerenal asociada a vasocontricción renal sin una alteración histológica identificada.\nEl sindrome hepatorenal de tipo I consiste en la elevación aguda (dentro de dos semanas) de los valores de creatinina.\nEl síndrome hepatorenal de tipo Il sigue un curso mas lento relacionado con la evolución de la enfermedad hepática.\nSe debe tener en cuenta que se trata de un diagnóstico de descarte que se establece cuando persiste la falla renal luego de la interrupción de los diuréticos (la hipovolemia efectiva inducida por diuréticos es la principal causa de injuria renal aguda en cirróticos) la expansión del plasma con coloides, suspensión de nefrotóxicos (como AINES o aminoglucosidos), y se descartan enfermedades glomerulares (por medio del análisis del sedimento urinario) y hemodinámicas que pudieran explicar mejor la insuficiencia renal (shock) en un paciente con cirrosis y ascitis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-004",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hígado"
+    ],
+    "enunciado": "Un paciente de 67 años consulta por aumento del diámetro abdominal y edemas en miembros inferiores. Tiene como antecedentes alcoholismo de 25 años de evolución con diagnóstico de cirrosis hepática CHILD A. Al examen físico presenta ascitis moderada y edemas 2/6 en miembros inferiores. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Paracentesis diagnóstica, restricción del sodio de la dieta a 2 g/dia, espironolactona 100 a 200 mg/dia y furosemida 40 a 80 mg/dia",
+      "b": "Paracentesis diagnóstica y evacuadora con posterior derivación porto sistémica intrahepática transyugular",
+      "c": "Paracentesis diagnóstica y evacuadora, restricción del sodio de la dieta a 2 g/día, espironolactona 400 a 600 mg/dia y furosemida 120 a 160 mg/dio",
+      "d": "Paracentesis diagnóstica, restricción del sodio de la dieta a 2 g/día y furosemida 60 mg/dia"
+    },
+    "correcta": "a",
+    "explicacion": "La ascitis es una complicacion de la cirrosis.\nCuando los pacientes presentan ascitis por primera vez, se recomienda llevar a cabo una paracentesis diagnostica a fin de caracterizar el liquido.\nEsto incluira la determinacion del contenido de proteina total y de albumina, recuento celular con fórmula (%PMN y %MN) y cultivos.\nEl trataiento consiste en restriccion de sodio de la dieta (2g/dia), cuando hay una cantidad moderada de ascitis, por lo general se necesitan diureticos.\nLo habitual es iniciar la espironolactona en dosis de 100 a 200 mg/dia en una sola toma y se puede añadir furosemida en dosis de 40 a 80 mg/dia, sobre todo en caso de edema periferico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-005",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "Un varón de 62 años consulta por presentar luego de una ingesta copiosa de alimentos, dolor en hemiabdomen superior de 2 horas de evolución, asociado a náuseas y deposiciones diarreicas, que no cede con antiespasmódicos. Tiene como antecedente múltiples episodios similares en el curso del último año. En el examen físico se encuentra taquicárdico, sudoroso, hipotenso con signos de hipoperfusión periférica con reacción peritoneal. De los exámenes complementarios se obtienen los siguientes resultados: acidosis metabólica; radiografía de tórax con aumento del índice cardiotorácico; radiografía de abdomen con aorta calcificada y dilatación de asas y en el ECG presenta fibrilación auricular de adecuada respuesta con secuela infero dorsal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Isquemia mesenterica aguda",
+      "b": "Infarto agudo de miocardio",
+      "c": "Ulcera gástrica",
+      "d": "Gastroenterocolitis"
+    },
+    "correcta": "a",
+    "explicacion": "La isquemia mesentérica aguda es la interrupción del flujo sanguineo por embolia, trombosis o un estado de bajo flujo.\nInduce la liberación de mediadores, inflamación y, por último, infarto.\nFactores de Riesgo Hipertensión (80%) Tabaquismo (70%) Enfermedad Vascular Periférica (60%) Enfermedad Coronaria (50%)\nLa manifestación temprana distintiva de la isquemia mesentérica es el dolor intenso con hallazgos físicos minimos.\nEl abdomen permanece blando, con dolor a la palpación escaso o nulo. Puede haber taquicardia leve. Más adelante, a medida que se produce la necrosis, aparecen signos de peritonitis, con intenso dolor a la palpación abdominal, defensa, rigidez y ausencia de ruidos hidroaéreos.\nLa materia fecal puede ser hemo-positiva (cada vez más probable a medida que progresa la isquemia).\nSe presentan los signos habituales de shock, que frecuentemente son seguidos de muerte.\nEl comienzo súbito del dolor sugiere una embolia arterial, aunque no es diagnóstico, mientras que el comienzo gradual es típico de la trombosis venosa.\nLos pacientes con antecedentes de malestar abdominal posprandial (que sugiere angina intestinal) pueden tener trombosis arterial.\nEl diagnóstico temprano de la isquemia mesenterica tiene particular importancia, porque la mortalidad aumenta de manera significativa una vez que se produce el infarto intestinal.\nDebe considerarse la isquemia mesentérica en cualquier paciente > 50 con factores de riesgo conocidos o enfermedades predisponentes que presentan dolor abdominal intenso y súbito.\nEn la radiología de abdomen se observa dilatación de asas, pero también puede ser normal.\nLos pacientes con signos peritoneales evidentes deben ser llevados directamente a quirófano para diagnóstico y tratamiento.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-006",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Colon"
+    ],
+    "enunciado": "Lorenzo de 22 años es traído a la guardia en ambulancia desde su domicilio por dolor abdominal de 11 hs de evolución asociado a náuseas y vómitos, que fue empeorando con el paso de las horas. No presenta antecedentes de relevancia. Al examen físico presenta temperatura de 39°C, FC 125 1/min, TA 80-50 mmHg, FR 24 r/min, saturación de oxígeno de 97%. Abdomen distendido, tenso, globalmente doloroso, con defensa y reacción peritoneal. El laboratorio de ingreso informa: Hto 45%, Hb 15, GB 20.000, plaquetas 470.000, urea 70, creatinina 1.6, GOT 45, GPT52, PH 7,30, PCO2 29, HCO3 15. Al momento usted no dispone de tomografía en su institución ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Reposición de fluidos y derivación para realizar TAC de abdomen.",
+      "b": "Reposición de fluidos y laparotomia exploradora.",
+      "c": "Reposición de fluidos, antibioticoterapia de amplio espectro y derivación para realizar TAC de abdomen.",
+      "d": "Reposición de fluidos, antibioticoterapia de amplio espectro y laparotomia exploratoria."
+    },
+    "correcta": "d",
+    "explicacion": "Estamos ante un abdomen agudo.Sospechamos de apendicitis aguda.\nEs la urgencia quirúrgica más frecuente. Es la causa de abdomen agudo más común en pacientes de 10-40 años.\nEn niños y ancianos da lugar a un cuadro muy engañoso, y frecuentemente se produce una demora diagnóstica que origina una mayor frecuencia de complicaciones con mayores tasas de perforación y mortalidad, respecto a los jóvenes.\nLa ecografía abdominal y TC son útiles para ver el apéndice y órganos vecinos (importancia para el diagnóstico diferencial). Aunque la TC abdominal es más precisa para localizar las lesiones causantes del abdomen agudo, la ecografia abdominal se utiliza cada vez más para no emplear radiación, especialmente en mujeres jóvenes.\nSi bien la confirmación por imagen cada vez se utiliza más para evitar intervenciones en las que luego sea otra la causa del dolor en la fosa ilíaca derecha, NO ES imprescindible para el diagnóstico, y en ocasiones la clinica y exploración física son suficientes para indicar la intervención quirúrgica.\nSe debe realizar reposición de fluidos ya que el paciente se encuentra hemodinámicamente inestable. El tratamiento es quirúrgico, y consiste en una apendicectomia urgente abierta o laparoscópica. La antibioterapia está indicada porque el paciente se encuentra en shock séptico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-007",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Una mujer de 42 años de edad ingresa a la guardia presentando dolor abdominal de 48 hs de evolución. Al interrogatorio refiere episodios similares desde hace más de 8 meses. Al examen físico presenta dolor periumbilical con defensa, FC: 100/min. Rx simple de abdomen: niveles del delgado aislados. Ecografía abdominal: líquido libre en espacios hepato y esplenorenal. La laparotomía evidencia hemoperitoneo y un gran tumor yeyunal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Adenoma",
+      "b": "Leiomioma",
+      "c": "Lipoma",
+      "d": "Hamartoma"
+    },
+    "correcta": "b",
+    "explicacion": "El leiomioma constituye un tumor benigno del intestino delgado.\nLos tumores de intestino delgado son una patología poco frecuente que se manifiesta clínicamente por dolor de tipo sordo (en ocasiones cólico), sangrado oculto, distensión abdominal, nauseas o vómitos.\nSuelen ser sintomas inespecíficos para el diagnóstico por lo que suelen presentarse como abdomen agudo oclusivo debido al crecimiento endofitico del tumor hacia la luz intestinal.\nLos leiomiomas son tumores conjuntivos de la pared del intestino delgado y presentan tendencia a ulcerarse y sangrar.\nSon más frecuentes a nivel de yeyuno aunque pueden desarrollarse en cualquier sector del intestino delgado.\nEs el tumor benigno más frecuente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-008",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál es la utilidad de los marcadores serológicos (anticuerpos anti endomisio y anti transglutaminasa) en enfermedad celíaca?",
+    "opciones": {
+      "a": "Apoyo diagnóstico, screening de familiares de primer grado, monitoreo de la respuesta a la dieta libre de gluten",
+      "b": "Apoyo diagnóstico, screening de familiares de primer grado, pronóstico de la enfermedad a largo plazo",
+      "c": "Confirmación diagnóstica, screening de familiares de primer grado, monitoreo de la respuesta a la dieta libre de gluten",
+      "d": "Apoyo diagnóstico, pronóstico de la enfermedad a mediano plazo, monitoreo de la respuesta a la dieta libre de gluten"
+    },
+    "correcta": "a",
+    "explicacion": "Enfermedad Celiaca:\nLos anticuerpos son útiles para el diagnóstico, para el cribado de familiares y para el seguimiento porque son marcadores del cumplimiento terapéutico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-009",
+    "materia": [
+      "gastroenterologia",
+      "nutricion",
+      "pediatria"
+    ],
+    "submateria": [
+      "Hígado",
+      "Nutrición y obesidad",
+      "Patología del aparato digestivo"
+    ],
+    "enunciado": "¿Cuál de las siguientes patologías es un hallazgo frecuente en un adolescente de 14 años con un índice de masa corporal (IMC) de 30 con un cuadro de dolor abdominal?",
+    "opciones": {
+      "a": "Litiasis urinaria",
+      "b": "Esteatosis hepática",
+      "c": "Colon irritable",
+      "d": "Enfermedad celiaca"
+    },
+    "correcta": "b",
+    "explicacion": "La enfermedad hepática grasa no alcohólica es la enfermedad hepática crónica más frecuente y tiene una correlación directa con el aumento de prevalencia de la obesidad.\nY puede formar parte del Sindrome Metabólico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-010",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hígado"
+    ],
+    "enunciado": "Un varón de 45 años tiene síndrome ascítico edematoso y se le realiza una videoendoscopia alta en la cual se observan algunas várices pequeñas en tercio inferior de esófago, sin signos de sangrado activo. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar somatostatina via oral por 3 meses y reevaluar.",
+      "b": "Indicar control endoscópico en 12 meses.",
+      "c": "Indicar control endoscópico en 6 meses.",
+      "d": "Indicar betabloqueantes a dosis bajas."
+    },
+    "correcta": "b",
+    "explicacion": "Entre el 10% y el 20% de los pacientes con cirrosis desarrollan varices anualmente y su incidencia aumenta con el tiempo; por eso, la endoscopia debe repetirse cada 2 o 3 años en pacientes que no presenten várices.\nSi las várices son grandes (mayores a 5mm o que ocupan más de un un tercio de la luz) se ha demostrado que el tratamiento con betabloqueantes disminuye el riesgo de sangrado.\nCuando las várices son pequeñas no se ha demostrado beneficio y por lo tanto se recomienda el seguimiento con endoscopia cada 1 o 2 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-011",
+    "materia": [
+      "cirugiageneral",
+      "otras"
+    ],
+    "submateria": [
+      "Evaluación prequirúrgica",
+      "Fármacos"
+    ],
+    "enunciado": "Para la reversión del bloqueo neuromuscular no despolarizante, puede utilizarse:",
+    "opciones": {
+      "a": "bromuro de otilonio",
+      "b": "Neostigmina",
+      "c": "Escopolamina",
+      "d": "Propranolol"
+    },
+    "correcta": "b",
+    "explicacion": "Los efectos de los bloqueantes neuromusculares no desporalizantes, como el pancuronio, se antagonizan habitualmente con neostigmina o edrofonio",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-012",
+    "materia": [
+      "infectologia",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Sistema de salud"
+    ],
+    "enunciado": "Un trabajador de salud vacunado con un primer esquema de 3 dosis de HB hace 1 año, no estudiado con antiHBs posvacuna, consulta por una inoculación accidental con sangre HBsAg(+). ¿Cuál es la conducta correcta que Ud debe seguir?",
+    "opciones": {
+      "a": "Solicita dosaje de antiHBs y si es negativo, indica 2 dosis IgHB (0.06 ml/kg) con intervalo de 1 mes.",
+      "b": "Solicita dosaje de antiHBs y si es negativo, indica IgHB (0.06 ml/kg) e inicia nueva serie de vacuna .",
+      "c": "Indica IgHB (0.06 ml/kg) + vacuna HB.",
+      "d": "Indica IgHB (0.06 ml/kg)."
+    },
+    "correcta": "b",
+    "explicacion": "Ver las recomendaciones para la profilaxis contra hepatitis B postexposición percutánea en personas con riesgo ocupacional.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-013",
+    "materia": [
+      "gastroenterologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Anemias carenciales"
+    ],
+    "enunciado": "Un varón de 33 años recibe tratamiento con 150 mg/d de hierro elemental por indicación de un colega porque presenta en el laboratorio Hemoglobina 10.2 g/dl, volumen corpuscular medio 70 fL, ferritina 12 ng/ml, saturación de transferrina disminuída y capacidad de saturación de transferrina aumentada. Lo consulta a Ud. con un laboratorio que realizó a los 2 meses de iniciado el tratamiento que muestra hemoglobina 10.5 g/dl. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar una videocolonoscopia.",
+      "b": "Solicitar serologia para enfermedad celiaca.",
+      "c": "Mantener el tratamiento con hierro via oral por 3 meses.",
+      "d": "Indicar ácido fólico y vitamina B12."
+    },
+    "correcta": "b",
+    "explicacion": "Enfermedad celiaca: El cuadro clásico de malabsorción, diarrea y desnutrición es muy raro.\nLa mayoría de pacientes tiene sintomas inespecíficos y no tan evidentes, por lo que casi ante cualquier sintoma digestivo o intestinal se deben pedir los anticuerpos de la enfermedad celíaca.\nEn la edad adulta lo más frecuente es que sea asintomática o paucisintomática (80%).\nSi da clinica, esta es bastante inespecifica: astenia, cansancio, dolor abdominal, hinchazón, diarrea y adelgazamiento.\nEl hallazgo más frecuente es la anemia ferropénica o solo ferropenia, que suele responder mal al tratamiento con hierro oral.\nPara establecer el diagnóstico se emplean el estudio de anticuerpos, la biopsia (con histologia compatible), respuesta a la dieta libre de gluten y estudios genético.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-014",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Colon"
+    ],
+    "enunciado": "Un varón de 32 años consulta a la guardia por fiebre y dolor abdominal en hemiabdomen inferior asociado a náuseas y vómitos, de 24 hs de evolución. Como antecedente refiere cirugía por apendicitis hace 7 días. En el laboratorio presenta leucocitosis. En la TC abomino pelviana se visualiza en la pelvis una masa de pared irregular, con imagen borrosa adyacente, al inyectar el contraste endovenoso se evidencia realce en su pared. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Oblito",
+      "b": "Absceso",
+      "c": "Enfermedad de crohn",
+      "d": "Divertículos"
+    },
+    "correcta": "b",
+    "explicacion": "En una paciente con antecedentes de apendicectomía hace 7 días, que concurre por dolor asociado a nauseas y vómitos se realiza una imagen tomográfica donde se evidencia una masa que realza su borde tras la administración de contraste endovenoso, debe sospecharse un absceso.\nLa descripción tomográfica es caracteristica de absceso.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-015",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Hígado",
+      "Oncología"
+    ],
+    "enunciado": "Raúl de 65 años, le trae a la consulta estudios que le habían sido solicitados debido a una elevación leve de las enzimas hepáticas obtenidas por hallazgo casual en el laboratorio. La ecografía doppler hepática muestra una tumoración de 3 cm en el lóbulo derecho, con aumento de la vascularización y signos de trombosis portal. Sospecha diagnóstica: hepatocarcinoma. ¿Cuál de los siguientes contextos clínicos están asociados al desarrollo de hepatocarcinoma?",
+    "opciones": {
+      "a": "Infección crónica por VHA",
+      "b": "Sindrome metabólico",
+      "c": "Insuficiencia cardiaca",
+      "d": "Sindrome hepatorrenal"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines educativos.\nLa aparición del CHC está estrechamente relacionada con la presencia de una enfermedad hepática crónica, y el riesgo se asocia de forma paralela a su gravedad y al mayor tiempo de evolución.\nEn los países desarrollados, el CHC se asienta sobre una cirrosis hepática en más del 90% de los casos. Se ha descrito el desarrollo de CHC sobre cirrosis de cualquier etiología, aunque la infección crónica por los virus de las hepatitis B y C, el alcoholismo y la hemocromatosis poseen el mayor riesgo oncogénico.\nRecientemente se ha reconocido la posible importancia de la hepatopatía asociada al síndrome metabólico (enfermedad hepática por depósito de grasa no alcohólica) como causa de cirrosis y, en último término, de CHC.\nPor el contrario, si no se ha desarrollado la cirrosis hepática, la incidencia es baja.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-016",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Oncología"
+    ],
+    "enunciado": "Un paciente de 35 años concurre a la consulta por diarrea y rubor. Tiene como antecedentes quirúrgicos una hemicolectomía derecha por colisión vehicular y un varicocele. Al examen físico presenta hepatomegalia. ¿Cuál es la localización más probable de un tumor carcinoide del tubo digestivo en este paciente?",
+    "opciones": {
+      "a": "Apéndice",
+      "b": "Duodeno",
+      "c": "Recto",
+      "d": "Ileon"
+    },
+    "correcta": "d",
+    "explicacion": "Los tumores carcinoides de intestino delgado, representan el 30 al 40% de los tumores de intestino delgado.\nSuelen presentarse como multicéntricos y se localizan con mayor frecuencia a nivel del ileon terminal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-017",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "¿Cuál de los siguientes es el signo o síntoma fundamental en la peritonitis?",
+    "opciones": {
+      "a": "Fiebre",
+      "b": "Diarrea",
+      "c": "Dolor",
+      "d": "Vómitos"
+    },
+    "correcta": "c",
+    "explicacion": "El principal síntoma de la peritonitis es el dolor abdominal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-018",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Esófago"
+    ],
+    "enunciado": "José, de 65 años, con sobrepeso y sin otros antecedentes, consulta con síntomas crónicos de reflujo gastroesofágico, con pirosis y eventuales episodios broncoaspirativos. Al realizar los estudios específicos se descubre endoscópicamente una metaplasia de Barrett de tipo intestinal de alto grado con úlceras marginales. El paciente refiere haber realizado tratamiento para la pirosis en forma previa. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "a": "Terapia de ablación endoscópica con ablación por radiofrecuencia",
+      "b": "Dilataciones con bujías para evitar las retracciones cicatrizales",
+      "c": "Esofagectomia total",
+      "d": "Descenso de peso, bloqueantes de la bomba de protones, evacuantes gástricos y controles endoscópicos"
+    },
+    "correcta": "a",
+    "explicacion": "Ante un paciente con lesión esofágica descrita endoscópicamente como metaplasia de Barret de tipo intestinal de alto grado con úlceras marginales la conducta es la terapia de ablación endoscópica con ablación por radiofrecuencia, la resección endoscópica de la mucosa o una combinación de ambas.\nLa cirugia (esofagectomia total) se reserva sólo para los pacientes que no responden a la ablación endoscópica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-019",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Bacterias",
+      "Hígado"
+    ],
+    "enunciado": "¿Cuáles son los microorganismos implicados en la peritonitis bacteriana espontánea?",
+    "opciones": {
+      "a": "Neisseria meningitidis y Neisseria gonorrhoeae.",
+      "b": "Proteus mirabilis y Escherichia coli.",
+      "c": "Pseudomonas aeruginosa y Escherichia coli.",
+      "d": "Escherichia coli y Klebsiella."
+    },
+    "correcta": "d",
+    "explicacion": "La peritonitis bacteriana espontánea -PBE- es una infección de origen endógeno.\nSe considera que la traslocación bacteriana juega un papel fundamental en la patogenia de la PBE. Existen tres factores importantes que participan en este proceso: en primer lugar, cambios en la microbiota intestinal junto con hipomotilidad; en segundo lugar, una alteración de la barrera mucosa intestinal que facilita el paso de bacterias al espacio intersticial submucoso, y, por último, una diminución de la actividad antibacteriana de los linfocitos y los macrófagos intestinales.\nLa concentración de proteinas en el liquido ascitico es un indicador de la concentración de estos factores antibacterianos. Ello explica que los pacientes con una concentración baja de proteinas en el líquido ascitico estén más predispuestos a desarrollar una PBE.\nLos gérmenes responsables con mayor frecuencia son las bacterias gramnegativas de origen intestinal, en especial Escherichia coli y Klebsiella pneumoniae, y los estreptococos no enterococos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-020",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Esófago"
+    ],
+    "enunciado": "Un varón de 65 años de edad lo consulta por pérdida de 8 kilos de peso en los últimos 6 meses, pirosis, disfagia y epigastralgia. Esofagograma (trago de bario) muestra un aumento del tamaño esofágico con imagen en \"pico de pájaro\" ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Esofagitis por reflujo",
+      "b": "Cáncer de esofago",
+      "c": "Cáncer de techo gástrico",
+      "d": "Acalasia"
+    },
+    "correcta": "d",
+    "explicacion": "Nos encontramos con un caso clinico que nos aporta en el enunciado datos clínicos y un estudio por imágenes que son claves para resolverlo.\nEn la clinica la disfagia, la epigastralgia y la pirosis nos plantea un cuadro de afectación esófago vs estómago.\nLa pérdida de peso involuntaria en los últimos 6 meses nos hace pensar en una patológica grave.\nEl estudio de contraste con bario nos muestra algo muy característico de observar en la ACALASIA: un cuerpo esofágico dilatado y un paso de contraste filiforme a través del EEI (que no se relaja y no se abre), lo que se denomina imagen «en pico de pájaro o cola de ratón».\nPor lo que el dx presuntivo en este caso es: ACALASIA",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-021",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Un paciente de 38 años sin antecedentes de relevancia consulta por un cuadro de 2 años de evolución caracterizado por diarrea intermitente (2 a 3 deposiciones diarias pastosas) con dolor abdominal pre evacuatorio, alivio luego de las deposiciones, sin pérdida de peso en los últimos meses y rutina de laboratorio con hemograma y hepatograma sin alteraciones. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad celiaca",
+      "b": "Colitis colágena",
+      "c": "Síndrome de intestino irritable",
+      "d": "Malabsorción de sales biliares"
+    },
+    "correcta": "c",
+    "explicacion": "Estamos ante un cuadro relacionado con TRASTORNOS FUNCIONALES INTESTINALES que por definición engloba estas caracteristicas:\n) Predominio de signos o síntomas de dolor abdominal, distensión y alteración de los hábitos intestinales(estreñimiento, diarrea o alternancia de ambos).\nII) Cronicidad: síntomas > 6 meses de evolución antes del diagnóstico\nIII) Actividad actual :sintomas presentes en los últimos 3 meses\nIV) Frecuencia: sintomas presentes, al menos un día a la semana\nV) Ausencia de otras anomalías anatómicas, metabólicas o fisiológicas evidentes\nLas pruebas o estudios adicionales no muestran que si signos de alerta (\"banderas rojas\").\nAnte este cuadro el dx más probable es: Síndrome de intestino irritable.\nEs importante conocer los criterios ROMA IV: Dolor o molestia abdominal recurrente, al menos 1 día a la semana durante los últimos 3 meses, relacionado con dos o más de los siguientes: Relacionado con la defecación; Relacionado con un cambio en la frecuencia defecatoria; Relacionado con un cambio en la consistencia de las heces.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-022",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Estómago",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Damián que cursa un posoperatorio tardío, tras ser sometido a una vagotomía con antrectomía por enfermedad ulceropéptica con reparación tipo Billroth II, presenta dolor sordo en el cuadrante superior derecho y epigastrio, luego de la ingesta. El síntoma se alivia tras el vómito de material bilioso no alimentario. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome de vaciamiento o Dumping",
+      "b": "Obstrucción pilórica",
+      "c": "Dehiscencia del muñón duodenal",
+      "d": "Síndrome de asa aferente"
+    },
+    "correcta": "d",
+    "explicacion": "El sindrome clínico del asa aferente de la gastrectomia aparece habitualmente en los dias que siguen a esta operación.\nSe produce cuando el asa aferente (la parte del intestino que se conecta a la porción distal) es demasiado larga, lo que provoca la acumulación de restos alimentarios.\nSe manifiesta por dolores del epigastrio o sub hepáticos, que tienen la característica de sensación de plenitud, pesadez o distensión, que aparecen de 15 45 minutos después de la ingestión de los líquidos o alimentos, molestias que suelen ser atenuadas, pero que pueden adquirir intensidad paroxistica o de cólico, que puede hacer sospechar un accidente oclusivo.\nEstos dolores se calman o cesan de 1 3 horas, sobre todo después de los vómitos.\nEl vómito constituye el segundo sintoma importante que es muy significativo; son vómitos de bilis, postprandiales, abundantes de 150 á 400 cc. y con su principal característica de ser exclusivamente biliosos, sin embargo, pueden presentar a veces, restos de alimentos.\nEs esta una importante y significativa manifestación semiológica de los vómitos biliosos lo que justifica a este sindrome como originario del asa aferente, sin intervención del asa eferente, ya que la derivación de los alimentos no sufre interrupción alguna.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-023",
+    "materia": [
+      "pediatria",
+      "gastroenterologia",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Hígado",
+      "Otras enfermedades reumatológicas"
+    ],
+    "enunciado": "Lola de 8 años de edad, sin antecedentes de importancia, consulta por presentar astenia y anorexia de 7 días de evolución. Al examen físico presenta conjuntivas y piel ictéricas, abdomen doloroso en hipocondrio derecho y hepatomegalia. Tiene vacunas completas acorde a edad y niega consumo de medicamentos. El laboratorio informa: hemograma, función renal, y electrolitos plasmáticos normales, proteínas totales 8,4 gr/dl albúmina 3,2 gr/dl. Bilirrubina total 14 (Bilirrubina directa 10); TGP 1878; TGO 1908, Fosfatasa alcalina y Gama-glutamil transpeptidasa (GGT) normales, TP 45, KPTT 32 seg. ¿Qué estudio complementario solicitaría en función de diagnóstico presuntivo?",
+    "opciones": {
+      "a": "IgM anti hepatitis A, HbsAg, anti HBC, PCR Virus Hepatitis C.",
+      "b": "Anticuerpos antinucleares, anti musculo liso y antimitocondriales",
+      "c": "Dosaje plasmático de paracetamol",
+      "d": "Ceruloplasmina plasmática"
+    },
+    "correcta": "b",
+    "explicacion": "La hepatitis autoinmune es de etiología desconocida.\nLa forma más frecuente de presentación en la edad pediátrica es la de una hepatitis aguda prolongada con persistencia de ictericia, coluria, y síntomas generales como astenia, anorexia, entre otros.\nLa detección por IFI de anticuerpos antinucleares, anticuerpos anti músculo liso son precisos para el diagnóstico.\nComo regla general, las elevaciones de las transaminasas son más notables en la HAI que las de la bilirrubina y la fosfatasa alcalina.\nEl caso presenta mucho aumento de transaminasas, con GGT y FAL normal.\nLa elevación de las transaminasas son diagnósticas de hepatitis pero no específicas, encontrándose por sobre 5 a 10 veces el valor normal en las hepatitis virales y entre 10 a 50 veces en la HAI",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-024",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Mujer de 88 años, institucionalizada por demencia de cuerpos de Lewy. Acude por primera vez a urgencias por un cuadro de 48 h de distensión y dolor abdominal. No ha realizado deposición en 3 días, y ha comenzado con vómitos hace pocas horas. No refiere ninguna otra clínica. En la exploración presenta un abdomen distendido, timpánico con ruidos metálicos. La radiografía de abdomen muestra una dilatación del intestino grueso. Analíticamente no presenta ninguna alteración. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Colonoscopia descompresiva y si no responde realizar una colostomia de descarga.",
+      "b": "Se deben administrar procinéticos y enemas.",
+      "c": "Solicitar tomografia computarizada para diagnosticar la etiologia, antes de comenzar el tratamiento.",
+      "d": "Administrar neostigmina como el fármaco de primera elección."
+    },
+    "correcta": "c",
+    "explicacion": "La paciente presenta un cuadro clinico muy sugestivo de pseudoobstrucción intestinal aguda o síndrome de Ogilvie, que es común en adultos mayores, especialmente institucionalizados, con enfermedades neurológicas como demencia de cuerpos de Lewy.\nDatos positivos del caso clinico: Edad avanzada, institucionalizada. Distensión abdominal + dolor + ausencia de deposiciones. Ruidos metálicos + abdomen timpánico. Radiografia: dilatación de intestino grueso sin signos de obstrucción mecánica. Analitica sin alteraciones = sin datos de peritonitis o isquemia.\nDiagnóstico probable: Pseudoobstrucción colónica aguda (sindrome de Ogilvie).\nEntonces SIEMPRE hay que descartar una obstrucción mecánica antes de iniciar procinéticos o enemas.\nObstrucción mecánica del colon: Vólvulo de sigma o ciego o Carcinoma de colon o Bolo fecal impactado (más leve pero posible).\nSe debe solicitar una TC de abdomen y pelvis ante la sospecha de pseudoobstrucción o vólvulo, especialmente si no se resuelve espontáneamente o hay dudas diagnósticas (opción correcta)\nNo se deben usar procinéticos o enemas o neostigmina sin descartar primero obstrucción mecánica.\nLa colonoscopia descompresiva se reserva para falla de la neostigmina o contraindicación para su uso.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-025",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Colon"
+    ],
+    "enunciado": "Un chico de 22 años de edad acude a Urgencias por dolor abdominal desde hace 8 horas. El dolor lo refiere en la fosa ilíaca derecha. La temperatura es de 38.5°C muestra una presión arterial de 90/50 con una frecuencia cardíaca de 115 latidos por minuto. En la exploración física destaca rebote positivo en la fosa ilíaca derecha e izquierda. En la analítica destacan 20.000 leucocitos / mm3. ¿Cuál es la siguiente actitud?",
+    "opciones": {
+      "a": "Realizar una radiografia simple de abdomen.",
+      "b": "Administrar sueroterapia, sacar hemocultivos, administrar antibiótico de amplio espectro y repetir analitica en 1 hora.",
+      "c": "Realizar una ecografia abdominal para buscar abscesos ante la posibilidad de enfermedad de Crohn penetrante.",
+      "d": "Laparotomía, ya que lo más probable es que se trate de una apendicitis aguda."
+    },
+    "correcta": "d",
+    "explicacion": "Paciente de 22 años que consulta por dolor en fosa iliaca derecha de horas de evolución, asociado a fiebre, hipotensión y taquicardia (signos de sepsis), signos de rebote positivo en fosa iliaca derecha y leucocitosis.\nDebería considerarse una apendicitis aguda como diagnóstico, por lo que la indicación es la resolución quirúrgica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-026",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología de pared abdominal",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la posición anatómica más frecuente del apéndice cecal en el adulto?",
+    "opciones": {
+      "a": "Preileal",
+      "b": "Retrocecal",
+      "c": "Subcecal",
+      "d": "Retroileal"
+    },
+    "correcta": "b",
+    "explicacion": "La posición más frecuente del apéndice cecal es en la retrocecal ascendente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-027",
+    "materia": [
+      "infectologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Virus no HIV",
+      "Hígado"
+    ],
+    "enunciado": "¿Cuál es la condición de un paciente con diagnóstico de hepatitis B hace 12 meses que trae al control médico los siguientes resultados de laboratorio: HBsAg positivo, antiHBc positivo, HBeAg positivo y enzimas hepatocelulares elevadas?",
+    "opciones": {
+      "a": "No puede determinarse a partir de los resultados disponibles",
+      "b": "Es un portador inactivo del virus hepatitis B (VHB)",
+      "c": "Cursa evolución natural de una hepatitis aguda",
+      "d": "Cursa infección crónica activa por VHB"
+    },
+    "correcta": "d",
+    "explicacion": "Los pacientes crónicamente infectados por Hepatitis B presentan en suero HBsAg y títulos elevados de anti-HBc, se clasifican en altamente replicativos (infección crónica activa);\ncuando además presentan HBeAg en suero y aumento de transaminasas con daño hepático sustancial en altamente infecciosos para sus contactos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-028",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Cardiopatía isquémica"
+    ],
+    "enunciado": "¿A qué nivel de la arteria mesentérica superior es más probable hallar un émbolo en un paciente que presenta isquemia intestinal aguda?",
+    "opciones": {
+      "a": "En el origen de la cólica media o previo a éste",
+      "b": "Distal al nacimiento de la cólica media",
+      "c": "Distal al nacimiento de la ileocólica",
+      "d": "En el nacimiento de la ileocólica"
+    },
+    "correcta": "a",
+    "explicacion": "El sitio mas frecuente para hallar un émbolo a nivel de la arteria mesentérica en una isquemia mesenterica aguda es el origen de la cólica media o previa a esta.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-029",
+    "materia": [
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Ecografía",
+      "Colon"
+    ],
+    "enunciado": "La ecografía es útil en el diagnóstico de la apendicitis aguda con elevada sensibilidad y especificidad. ¿En qué caso el resultado de la ecografía puede brindar un falso negativo?",
+    "opciones": {
+      "a": "Cuando la apendicitis se limita a la punta del órgano",
+      "b": "El apéndice no es compresible",
+      "c": "El apéndice se encuentra por delante del ciego",
+      "d": "La apendicitis se limita a la base del órgano"
+    },
+    "correcta": "a",
+    "explicacion": "La ecografía es un estudio muy utilizado para el diagnóstico de apendicitis, en manos expertas presenta una sensibilidad del 75 al 90% y una especificidad del 89 al 93%.\nLos hallazgos indicadores de apendicitis aguda ecográficos incluyen apéndice cecal con diámetro mayor a 7 mm, apéndice no compresible con paredes engrosadas, coprolito en la luz apendicular, liquido libre intraabdominal, dolor durante la realización del estudio en fosa iliaca derecha, hiperecogenicidad del tejido graso vecino, signos inflamatorios a nivel cecal o hipervascularización en una ecografia doppler.\nPuede aparecer el apéndice no compresible (descomprimido) o incluso desintegrado cuando hay una apendicitis perforada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-030",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Hígado"
+    ],
+    "enunciado": "Inés tiene 6 meses. No ha tenido controles desde los 4 meses de vida por habitar área de asentamientos, alejada del acceso a CAPS y a centros asistenciales de mayor complejidad. Su madre refiere persistencia de episodios aparentemente convulsivos, sin especificar claramente, desde el quinto mes de vida. Presenta talla corta y rasgos faciales inmaduros. En el examen físico se detecta hepatoesplenomegalia. Los primeros exámenes detectan hipoglucemia, acidosis metabólica, hiperlipidemia, hipercolesterolemia. Se observa hepatomegalia y nefromegalia bilateral a la ecografía abdomino-renal. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Galactosemia",
+      "b": "Sindrome de West idiopático",
+      "c": "Enfermedad de Niemman Pick",
+      "d": "Glucogenosis tipo I"
+    },
+    "correcta": "d",
+    "explicacion": "La glucogenosis tipo I o enfermedad de Von Gierke, es una enfermedad de depósito de glucógeno por déficit de la enzima G6pasa.\nSe manifiesta alrededor del 6to al 8vo mes con crisis convulsivas, hepatomegalia, hipoglucemia y alteración del crecimiento.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-031",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En referencia al síndrome de intestino corto. ¿Cuál de los siguientes enunciados es correcto?",
+    "opciones": {
+      "a": "Aparece con resecciones del 60% de la longitud del órgano",
+      "b": "Se asocia a malabsorción de folato en grandes resecciones proximales",
+      "c": "Se asocia a malabsorción de calcio en grandes resecciones distales",
+      "d": "Lleva al estreñimiento crónico"
+    },
+    "correcta": "b",
+    "explicacion": "El sindrome de intestino corto se define como malabsorción secundaria a la resección extensa de intestino delgado.\nLa capacidad de digestión y de absorción es mayor, cuanto mas proximal sea el segmento de intestino delgado.\nLas extensas resecciones proximales afectan la absorción de triglicéridos, colesterol, vitaminas liposolubles, sales biliares, acido fólico, oligosacáridos y oligopeptidos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-032",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral",
+      "oncologia"
+    ],
+    "submateria": [
+      "Esófago",
+      "Cirugía mínimamente invasiva",
+      "Oncología"
+    ],
+    "enunciado": "En un paciente con cáncer de esófago, ¿cuál de las siguientes situaciones es una contraindicación absoluta de tratamiento quirúrgico?",
+    "opciones": {
+      "a": "Compresión traqueobronquial",
+      "b": "Parálisis recurrencial",
+      "c": "Insuficiencia ventilatoria mayor al 50%",
+      "d": "Edad mayor de 80 años"
+    },
+    "correcta": "c",
+    "explicacion": "Una contraindicación absoluta de esofagectomía es la insuficiencia ventilatoria mayor del 50%, esto es debido a la alta tasa de complicaciones respiratorias que presentan estos pacientes en posoperatorios y que es la principal causa de muerte en posoperatorios de esofagectomía.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-033",
+    "materia": [
+      "gastroenterologia",
+      "oncologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología",
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿En qué casos está indicado el test de sangre oculta en materia fecal inmunohistoquímica?",
+    "opciones": {
+      "a": "Pérdida de peso y anemia",
+      "b": "Sangre evidente en materia fecal",
+      "c": "Antecedentes hereditarios de cáncer",
+      "d": "Personas entre 50 y 75 años"
+    },
+    "correcta": "d",
+    "explicacion": "La detección precoz del CCR en la población general se realiza mediante una prueba de detección de sangre oculta en heces cada 1-2 años y una colonoscopia en caso de un resultado positivo para individuos entre 50 y 69 (hasta 75 años dependiendo la bibliografía).\nEn la población con factores de riesgo estas recomendaciones se intensifican.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-034",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el síntoma más común en la fisura anal?",
+    "opciones": {
+      "a": "Prurito.",
+      "b": "Dolor.",
+      "c": "Secreción purulenta.",
+      "d": "Hemorragia."
+    },
+    "correcta": "b",
+    "explicacion": "Las fisuras anales son desgarros de la piel de ano, que se localizan en más del 90% de los casos en la parte posterior (solo un 10% son anteriores).\nComo consecuencia se produce un espasmo muy intenso del esfinter anal interno que origina un intenso dolor punzante y lancinante al defecar.\nAparece miedo a defecar por el dolor, por lo que se genera estreñimiento.\nSe establece así un circulo vicioso: más dolor evita la defecación más estreñimiento más fuerza para hacer deposición → más dolor → más estreñimiento...",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-035",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Una mujer de 73 años consulta a la guardia por presentar dolor abdominal a predominio en fosa ilíaca izquierda, fiebre y vómitos de 3 días de evolución. Al examen físico se encuentra con una TA: 140-90 mm de Hg FC: 104/min, T°Ax 38,7 7°C, dolor a la palpación en fosa ilíaca izquierda con sensación de masa palpable, con presencia de defensa y reacción peritoneal. Se realiza TC de abdomen y pelvis que informa absceso intraperitoneal en fosa iliaca izquierda. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "La resección del segmento colónico afectado con anastomosis primaria en un solo tiempo",
+      "b": "Colostomía transversa",
+      "c": "Drenaje por via percutánea guiada por ecografia o tomografia computada",
+      "d": "Extirpación del segmento colónico afectado sin restablecer la continuidad intestinal"
+    },
+    "correcta": "c",
+    "explicacion": "La diverticulitis es un cuadro inflamatorio que se produce por la perforación o microperforación de un diverticulo.\nSe manifiesta con dolor en fosa iliaca izquierda asociado a fiebre y en ocasiones a masa palpable.\nSe clasifica en HINCHEY I (responden satisfactoriamente al tratamiento médico) HINCHEY II (absceso menores a 3-4 cm responden satisfactoriamente a tratamiento médico, en caso que posean mayor tamaño está indicado el drenaje percutáneo) y HINCHEY III (peritonitis a punto diverticular que tiene indicación quirúrgica).\nLa paciente tiene masa palpable y se informa en la TC absceso intraperitoneal, sin líquido libre ni aire en cavidad cavidad.\nLa conducta es drenaje percutáneo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-036",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 65 años a quien durante una videocolonoscopía se le resecó un pólipo de 2,5 cm en colon y el informe de anatomía patológica describe adenoma sésil? No había otras lesiones.",
+    "opciones": {
+      "a": "Solicitar control endoscópico en 2 a 6 meses.",
+      "b": "Solicitar control endoscópico a los 2 años",
+      "c": "Realizar endoscopia inmediata y revisión del área.",
+      "d": "Realizar resección colónica con criterio oncológico"
+    },
+    "correcta": "a",
+    "explicacion": "Cuando en la VCC (videocolonoscopia) se encuentran uno o dos adenomas menores a un centimetro se debería repetir la colonoscopia a los cinco años.\nSi se encuentran entre 3 y 10 adenomas o un adenoma mayor a 1 cm o con displasia de alto grado el intervalo será de 3 años.\nPara aquellos casos en que se encuentran más de 10 adenomas el intervalo recomendado es menor a 3 años.\nEn casos de detectar un adenoma sésil mayor de 2 cm o extirpado parcialmente se realizará un nuevo control en 2 a 6 meses.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-037",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Un paciente de 60 años consulta por dificultad evacuatoria severa, con digitación diaria, pujos y tenesmo. Luego del tratamiento médico la sintomatología persiste. La videocolonoscopia no muestra patología rectocolónica ¿Qué estudio solicitaría?",
+    "opciones": {
+      "a": "Videofecografia",
+      "b": "Electromiograma",
+      "c": "Tac de abdomen y pelvis",
+      "d": "Colon por enema con doble contraste"
+    },
+    "correcta": "a",
+    "explicacion": "El estreñimiento es prácticamente una pandemia.\nSu forma de expresión es múltiple pues, aunque se considera ritmo normal entre tres veces al día y tres veces a la semana, la sensación de dificultad al defecar o de no realizarlo a un ritmo adecuado también es definitoria de estreñimiento.\nEl diagnóstico es clínico y se debe preguntar por los síntomas de alarma habituales (aparición reciente, tenesmo, proctorragia, pérdida de peso, anemia, etc.), por si fuera necesaria una colonoscopia.\nLa evaluación funcional puede comprender el estudio de los esfinteres o la realización de un tiempo de tránsito colónico, que es diagnóstico de estreñimiento funcional, manometria anorrectal y videodefecografia para la evaluación del tracto de salida.\nEl tratamiento son los hábitos dietéticos (agua, ejercicio y fibra), siendo a veces necesario el uso de laxantes.\nParece que los laxantes osmóticos, en particular los que se componen de polietilenglicol, son los que mejor efecto tienen a medio-largo plazo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-038",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es el sitio de sangrado más frecuente en las hemorragias digestivas bajas de origen diverticular?",
+    "opciones": {
+      "a": "Colon sigmoide",
+      "b": "Colon izquierdo",
+      "c": "Colon transverso",
+      "d": "Colon derecho"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad diverticular es frecuente en pacientes mayores a 60 años.\nLas complicaciones ocurren solo en el 20% de los pacientes afectados, siendo las mismas el sangrado diverticular y la diverticulitis con sus complicaciones asociadas.\nEl sangrado diverticular es una causa frecuente de hemorragia digestiva baja autolimitada, el diganostico se realiza mediante colonoscopia que tambien suele ser terapeutica.\nLa localización mas frecuente de los diverticulos sangrantes es el hemicolon derecho.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-039",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Un paciente de 54 años internado en UTI por traumatismo craneoencefálico con hematoma extradural, intervenido quirúrgicamente quince días atrás, en Asistencia Respiratoria Mecánica (ARM) con distress respiratorio, desarrolla un cuadro de abdomen agudo cuyo diagnóstico es colecistitis alitiásica. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Colecistostomia percutánea",
+      "b": "Colecistectomia por via abierta",
+      "c": "Tratamiento médico",
+      "d": "Colecistectomia laparoscópica"
+    },
+    "correcta": "a",
+    "explicacion": "Colecistitis alitiásica: supone menos del 10% de las colecistitis.\nLa inflamación e infección cursan en una vesicula sin litiasis.\nEs típica de pacientes muy graves con estancia en UTI, en pacientes con nutrición parenteral total o con SIDA.\nGérmenes: Gram negativos, estreptococos, clostridios. Se suele tratar inicialmente con colecistostomia percutánea (de elección) o bien con colecistectomia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-040",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "Un varón de 49 años consulta por un cuadro de distensión abdominal asociado a períodos de diarrea y constipación. Al interrogatorio refiere haber tenido ocasionalmente episodios de hematoquezia. Solicita un laboratorio que informa: Hto 33%, leucocitos 13500/mm3 y ESD 85 mm/h. Se realiza una enterografía por TAC en donde se observan áreas con pequeñas ulceras superficiales separadas por mucosa normal en el yeyuno y en la porción proximal del íleon. Según su presunción diagnóstica, ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Metrotexato",
+      "b": "Sulfalazina",
+      "c": "Azatioprina",
+      "d": "Budesonide"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad inflamatoria intestinal incluye a la colitis ulcerosa y a la enfermedad de crohn.\nEsta última puede afectar todo el tracto intestinal de manera parcheada, pero con afectación transmural (de todo el espesor).\nEl objetivo del tratamiento médico es disminuir la inflamación. Las opciones terapeúticas incluyen corticoides, los 5-ASA (5-aminosalicilato), inmunosupresores (6-mercaptopurina, azatioprina) y agenes biológicos.\nCuando las manisfestaciones son leves o moderada y afecta al intestino delgado disal o al colon proximal, la budesonida (comp de 9 mg, una vez al dia) demostró ser mejor que las 5-ASA.\nEstos últimos no demostraron grandes beneficios cuando solo hay afectación del intestino delgado.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-041",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Una mujer de 80 años, estreñida habitual, con antecedentes de cardiopatía isquémica e HTA en tratamiento con diuréticos y ácido acetilsalicílico acude al servicio de urgencias por dolor abdominal, malestar general y hematoquecia con emisión de sangre roja. A la palpación del abdomen presenta dolor leve difuso sin reacción peritoneal y en el tacto rectal se observan restos de sangre roja. El laboratorio revela Hto. 35%, HB: 11,2 g/dl, Urea: 55 mg/dl, Creatinina 1,2 mg/dl. Se indica colonoscopia que pone en evidencia la presencia de sangrado activo sin localización del punto de origen y diverticulosis. ¿Cuál es la conducta más adecuada ante esta situación?",
+    "opciones": {
+      "a": "Suspender el tratamiento con ácido acetil salicilico y repetir colonoscopia a las 48 hs",
+      "b": "Indicar coagulación de la lesión con tratamiento endoscópico",
+      "c": "Administrar cápsula endoscópica para descartar sangrado diverticular en tramos altos",
+      "d": "Indicar angiografia"
+    },
+    "correcta": "d",
+    "explicacion": "Es una persona añosa con HDB que se encuentra compensada se debe realizar VCC.\nEn la VCC se observa sangrado sin localizar el punto de origen, se debe indicar angiografia para dx y tto.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-042",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 35 años que a los 10 días de una pancreatitis aguda, al iniciar con la alimentación por vía oral comienza con recurrencia del dolor abdominal? Se le realizó una ecografía en la cual se observa colección de 4 cm de diámetro, cercana a la cola del páncreas. Continúa con nutrición parenteral.",
+    "opciones": {
+      "a": "Drenaje por cistogastrostomia laparoscópica",
+      "b": "Desbridamiento quirúrgico y drenaje externo",
+      "c": "Drenaje percutáneo guiado por tomografía computada",
+      "d": "Observación y evaluar evolución"
+    },
+    "correcta": "d",
+    "explicacion": "En la evolución de la pancreatitis aguda es frecuente observar la formación de colecciones peripancreaticas.\nEstas no requieren ningún tratamiento en especial. Algunas resuelven en forma espontánea y otras evolucionan a la formación de un pseudoquiste.\nEstos últimos tampoco requieren tratamiento salvo que presenten alguna complicación como hemorragia, infección, compresión de víscera hueca o se asocien a dolor.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-043",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es la indicación más apropiada en un paciente que presenta hemorroides que prolapsan fácilmente en el momento de la evacuación y que deben reducirse manualmente?",
+    "opciones": {
+      "a": "Hemorroidectomia quirúrgica",
+      "b": "Dieta más venotónicos 13",
+      "c": "Ligadura elástica",
+      "d": "Crioterapia"
+    },
+    "correcta": "a",
+    "explicacion": "Las hemorroides GRADO III (aquellas que prolapsan ante esfuerzo como la defecación y que deben reducirse manualmente) tienen indicación de hemorroidectomia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-044",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente de 65 años internado en UTI con diagnóstico de pancreatitis aguda grave presenta inicialmente buena evolución clínica. A partir de la 5° semana comienza con rápido deterioro clínico, fiebre, leucocitosis e íleo. ¿Cuál es el diagnóstico más probable y la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Necrosis pancreática, aspiración percutánea por guía tomográfica y antibioticoterapia",
+      "b": "Necrosis pancreática y debridamiento quirúrgico",
+      "c": "Pseudoquiste pancreatico y debridamiento quirúrgico",
+      "d": "Necrosis pancreática y evacuación percutánea con guía tomográfica"
+    },
+    "correcta": "a",
+    "explicacion": "El tratamiento de la necrosis pancreática se hará la aspiración percutánea de la zona necrótica con tinción de Gram y cultivo del material obtenido si hay signos incesantes de infección pancreática posible como leucocitosis sostenida, fiebre o insuficiencia de órgano.\nEn la actualidad no se concede importancia a los antibióticos con fin profiláctico en la pancreatitis necrosante.\nEs razonable comenzar el uso de antibióticos de amplio espectro en una persona cuyo aspecto es de sepsis en tanto se esperan los resultados de la tinción de Gram y los cultivos.\nSi estos últimos son negativos, se interrumpirá el uso de antibióticos para llevar al minimo el riesgo de que surjan infecciones sobreañadidas por oportunistas u hongos.\nEn caso de fiebre persistente en un lapso de 5 a 7 días se repetirá la aspiración con aguja fina y la tinción de Gram, así como el cultivo de la necrosis pancreática.\nTambién se considerará la posibilidad de repetir los estudios de imagen como CT o MRI ante cualquier cambio en la evolución clínica para identificar complicaciones (como trombosis, hemorragia, sindrome de compartimiento abdominal).\nEn términos generales, la necrosis estéril suele tratarse con medidas conservadoras salvo que surjan complicaciones.\nUna vez confirmado el diagnóstico de necrosis infectada e identificado algún microorganismo, habrá que emprender el uso de antibióticos particularizados.\nHay que pensar en el desbridamiento pancreatico y extirpación de zonas necróticas como tratamiento definitivo de la necrosis infecciosa, pero la decisión clinica suele incluir la influencia de la respuesta a la antibioticoterapia y el estado clínico global del enfermo.\nLas complicaciones locales sintomáticas, como se definen en los criterios revisados de Atlanta, pueden obligar a iniciar tratamiento definitivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-045",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente consulta por episodios reiterados de proctorragia y dolor defecatorio. El estudio anoscópico informa hemorroides que prolapsan a bajos esfuerzos y requieren reducción manual. ¿Qué grado de hemorroides presenta el paciente y cuál es el tratamiento apropiado?",
+    "opciones": {
+      "a": "Grado II, Inyección esclerosante submucosa",
+      "b": "Grado IV, Ligaduras elásticas",
+      "c": "Grado III, Hemorroidectomia",
+      "d": "Grado II, Fotocoagulación infrarroja"
+    },
+    "correcta": "c",
+    "explicacion": "Las hemorroides son dilataciones venosas del conducto anal que se producen a partir de los plexos venosos hemorroidales internos y externos.\nSe clasifican en GRADO I: visibles pero no prolapsan. GRADO II: prolapsan ante la defecación y se reducen posteriormente en forma espontánea.\nGRADO III: prolapsan ante la defecación y esfuerzos y su reducción es manual.\nGRADO IV: el prolapso es permanente y no pueden reducirse. La hemorroidectomía esta indicada en grados III y IV.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-046",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Andrés de 69 años, que ingresa a la guardia por dolor abdominal en fosa ilíaca izquierda de 72 hs de evolución. Se encuentra febril con náuseas, vómitos y cambios en los hábitos intestinales. Se le realizó una tomografía computada donde se observa engrosamiento de la pared colónica y presencia de grasa pericolónica inflamatoria; y estudios de laboratorio que presentan leucocitosis. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Apendicitis aguda.",
+      "b": "Diverticulitis aguda.",
+      "c": "Hernia inguinal izquierda no complicada",
+      "d": "Colecistitis aguda."
+    },
+    "correcta": "b",
+    "explicacion": "Andrés presenta una \"diverticulitis aguda\".\nDatos positivos del examen físico:\n• Localización del dolor: en la fosa iliaca izquierda, lo cual es típico de la diverticulitis aguda, ya que el sigmoides es el segmento colónico más frecuentemente afectado.\n• Sintomas acompañantes: fiebre, náuseas, vómitos y alteraciones del tránsito intestinal son comunes en cuadros de diverticulitis.\n• Tomografia computada: hallazgos como engrosamiento de la pared colónica y grasa pericolónica inflamada son característicos de la diverticulitis aguda.\n• Laboratorio: la leucocitosis refuerza la sospecha de un proceso infeccioso/inflamatorio abdominal.\nLos diverticulos más propensos a complicarse de esta manera son los ubicados en colon izquierdo (sigma).\nProducen dolor progresivo en la zona afectada (generalmente fosa iliaca izquierda), fiebre, diarrea, signos de irritación peritoneal y, en los casos más graves, perforación intestinal y peritonitis.\nDiagnósticos descartados:\nApendicitis aguda: suele dar dolor en fosa iliaca derecha, no izquierda.\nHernia inguinal no complicada: no suele cursar con fiebre ni leucocitosis, ni con hallazgos tomográficos como los descritos.\nColecistitis aguda: produce dolor en hipocondrio derecho, no en fosa ilíaca izquierda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-047",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología"
+    ],
+    "enunciado": "Un paciente de 54 años concurre a la consulta por presentar proctorragia. Refiere que es el primer episodio, que está medicado con antiflamatorios no esteroideos por un desgarro muscular y que a su hermano se le practicó una hemicolectomía derecha por diverticulitis cecal. ¿Con qué factor está vinculado el riesgo de cáncer colorrectal en este paciente?",
+    "opciones": {
+      "a": "Antecedente familiar de enfermedad inflamatoria",
+      "b": "Antecedente familiar de cirugía colónica",
+      "c": "Hemorragia digestiva",
+      "d": "Edad"
+    },
+    "correcta": "d",
+    "explicacion": "Ante un paciente con proctorragia, si este tiene más de 50 años, debe realizarse el estudio del colon completo. Si es menor de 50 años sin factores de riesgo para CCR (personales o familiares) puede no evaluarse el colon si mediante el examen fisico y otros estudios se encuentra una causa externa del sangrado.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-048",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la localización más frecuente, dentro de las enunciadas, de una angiodisplasia?",
+    "opciones": {
+      "a": "Recto",
+      "b": "Colon ascendente",
+      "c": "Colon sigmoide",
+      "d": "Colon descendente"
+    },
+    "correcta": "b",
+    "explicacion": "La angiodisplasia se caracteriza por la presencia de una estructura vascular con vasos dilatados de paredes finas que se localiza en la mucosa y submucosa del intestino.\nLa angiodisplasia suele afectar la superficie colónica derecha, afecta aproximadamente el 1% de la población y aumenta la frecuencia con la edad.\nLas manifestaciones clínicas son anemia y presencia de sangre en las heces.\nEl diagnóstico se realiza mediante la endoscopio y el tratamiento se realiza con la administración de láser de electrocoagulación o plasma argon por via endoscópica",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-049",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "¿Cuál considera puede ser la causa más probable por la que un paciente de 25 años que fue sometido a una colecistectomía laparoscópica hace 10 horas, comienza con débito bilioso por el drenaje abdominal? Se encuentra afebril y sin dolor abdominal.",
+    "opciones": {
+      "a": "Estenosis de via biliar por lesión térmica de la misma",
+      "b": "Ligadura inadvertida de arteria hepática",
+      "c": "Lesión intestinal",
+      "d": "Deslizamiento de la ligadura del conducto cistico o bilirragia de los conductos aberrantes."
+    },
+    "correcta": "d",
+    "explicacion": "En un paciente cursando postoperatorio inmediato de colecistectomía laparoscópica que intercurre con bilirragia hay que considerar que la ligadura del cistico no haya sido efectiva o que en las maniobras de disección del lecho vesicular hubiera algún conducto aberrante que no se haya visualizado durante la cirugía.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-050",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "La colecistectomía por cirugía videolaparoscópica está contraindicada en:",
+    "opciones": {
+      "a": "Sospecha de cáncer de vesicula.",
+      "b": "Colecistitis aguda.",
+      "c": "Sindrome coledociano",
+      "d": "Insuficiencia renal."
+    },
+    "correcta": "a",
+    "explicacion": "La cirugía laparoscópica no se usa si se sospecha de cáncer de vesicula biliar ya que solo le ofrece al cirujano una vista limitada del área que rodea la vesícula biliar. Por lo tanto, existe una mayor probabilidad de pasar por alto y dejar algo de cáncer después de realizar este procedimiento. La extirpación de la vesicula biliar de esta forma también podría provocar la propagación accidental del cáncer a medida que se extrae la vesícula biliar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-051",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada de acuerdo a su sospecha diagnóstica, en un paciente de 69 años, sin antecedentes quirúrgicos, que ingresa por vómitos fecaloideos y dolor abdominal difuso de 4 días de evolución? En el examen físico está estuporoso, febril y oligúrico. Tiene dolor, leve defensa en hipocondrio derecho y distensión abdominal generalizada, no presenta hernias. En los exámenes de laboratorio presenta leucocitosis y hematocrito 55%. En la radiografía de abdomen se observa distensión del intestino delgado y aire en la zona de la vía biliar.",
+    "opciones": {
+      "a": "Realizar laparotomia exploradora por sospecha de isquemia mesenterica",
+      "b": "Realizar TAC de abdomen y cirugía de urgencia por sospecha de ileo biliar",
+      "c": "Solicitar amilasemia y lipasemia por sospecha de pancreatitis aguda",
+      "d": "Realizar tratamiento conservador por sospecha de abdomen agudo médico"
+    },
+    "correcta": "b",
+    "explicacion": "El ileo biliar es una complicación secundaria a litiasis vesicular no tratada de larga data, donde por múltiples episodios inflamatorios se genera una fistula entre la vía biliar y el intestino delgado (generalmente duodeno) permitiendo el pasaje de litos al intestino delgado. Si los litos son de gran tamaño puede provocar la oclusión intestinal. El cuadro se manifiesta como un abdomen agudo oclusivo asociado a AEROBILIA.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-052",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Una mujer de 50 años, con antecedentes de dispepsia, consulta a la guardia por fiebre, vómitos y dolor epigástrico de 48 horas de evolución. Al examen físico presenta TA: 140-90 mm/Hg FC: 100/min T°Ax. 38,6 °C, hipersensibilidad a la palpación en el cuadrante superior derecho del abdomen y signo de Murphy positivo. El laboratorio indica: Hto 36%, Leucocitos 21.000/mm3, Glucemia 200 mg/dL, Urea 100 mg/dl, Creatininemia 1,7 mg/dlL, Bilirrubina Total 2 mg/dL, GOT 100 UI/L, GPT 120 UI/L, FAL 320 UI/L. Se realiza ecografía abdominal que informa: grosor parietal de 6 mm, halo parietal, diámetro transverso máximo de 6 mm y presencia de colecciones líquidas paravesiculares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Absceso subhepático",
+      "b": "Coledocolitiasis",
+      "c": "Perforación vesicular",
+      "d": "Colecistitis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "La colecistitis aguda es habitualmente de causa litiásica y se produce cuando hay una obstrucción al flujo de bilis a través del conducto cistico. Se produce distensión vesicular, isquemia de la pared y sobreinfección bacteriana por microorganismos como E. coli, Klebsiella, Streptococcus y Clostridium. La mayoría de los pacientes tiene antecedentes de cuadros de dolor abdominal que resolvieron en forma espontanea. El cuadro se caracteriza por la triada de dolor abdominal localizado en el hipocondrio derecho, que suele acompañarse del signo de Murphy (detención de los movimiento respiratorios durante la inspiración cuando se palpa el punto de Murphy), fiebre y leucocitosis. En algunos pacientes puede observarse una leve elevación de la bilirrubina y de las transaminasas. La ecografia abdominal muestra cálculos en la mayoría de los casos y engrosamiento de la pared vesicular con distensión de la misma y liquido perivesicular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-053",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Paciente femenino de 40 años de edad, sin antecedentes de relevancia, ingresa a la guardia por presentar dolor abdominal localizado en fosa iliaca izquierda de 72 horas de evolución, sin otros síntomas asociados. Al examen físico, presenta dolor abdominal en fosa iliaca izquierda, sin reacción peritoneal. En el laboratorio presenta 11500 glóbulos blancos/mm3 y PCR de 30 mg/L. Se realiza una TC de abdomen y pelvis que muestra engrosamiento del colon sigmoides con imágenes diverticulares y leve rarefacción de la grasa pericolónica. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Internación, antibioticoterapia endovenosa y colectomía.",
+      "b": "Antibioticoterapia via oral, pautas de alarma y control ambulatorio al mes.",
+      "c": "Internación, antibioticoterapia endovenosa y control evolutivo.",
+      "d": "Antibioticoterapia vía oral, pautas de alarma y control ambulatorio en 48 horas"
+    },
+    "correcta": "d",
+    "explicacion": "Estamos ante un caso de diverticulitis, al examen fisico presenta dolor abdominal sin reacción peritoneal. En la TC de abdomen y pelvis que muestra engrosamiento del colon sigmoides con imágenes diverticulares y leve rarefacción de la grasa pericolónica. En un paciente clinicamente estable y con la documentación por imágenes que muestre solamente un ligero engrosamiento del sigma, por lo general no se requiere internación (nuestra paciente). Los pilares del tratamiento son el reposo intestinal (dieta baja en residuos) y antibioterapia que cubra gérmenes anaerobios y gram negativos (ciprofloxacina y metronidazol). Respuesta correcta en relación a la conducta de acuerdo a las opciones que nos proponen es: Antibioticoterapia vía oral, pautas de alarma y control ambulatorio en 48 horas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-054",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Oncología",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "Una paciente de 65 años fue sometida a hemicolectomía derecha por un adenocarcinoma de colon estadio II (T3N0M0). ¿Cuál es el seguimiento adecuado?",
+    "opciones": {
+      "a": "Antigeno Carcinoembrionario (CEA) cada 3 meses, exploración fisica cada 6 meses, colonoscopia al año de la cirugia.",
+      "b": "Antigeno Carcinoembrionario (CEA) y CA 19-9 anual y en caso de resultado positivo realizar colonoscopia",
+      "c": "Antigeno Carcinoembrionario (CEA) y CA 19-9 cada 6 meses, exploración fisica y colonoscopía anual",
+      "d": "Exploración fisica cada 3 meses, Antigeno Carcinoembrionario (CEA) y colonoscopia cada 6 meses"
+    },
+    "correcta": "a",
+    "explicacion": "La extirpación quirúrgica del tumor es el tratamiento de elección en todos los casos en que sea posible. Luego de la cirugia se debe realizar seguimiento con marcadores tumorales (CEA) cada 3 meses que predicen una recidiva y examen clinico cada 6 meses. La colonoscopia se debe realizar al año, si es normal repetir a los 3 años y continuación cada 5 años, puesto que los pacientes que han sido tratados por un cáncer de colon tienen un 3 a 5% de probabilidades de presentar una nueva neoplasia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-055",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado",
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente concurre a guardia por presentar distensión abdominal y vómitos. En la radiografía simple de abdomen se observan niveles hidroaéreos del intestino delgado y aerobilia. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Colecistectomia, resección intestinal y reconstrucción del tránsito",
+      "b": "Resección intestinal y colecistectomía.",
+      "c": "Enterolitotomia con colecistectomia en un segundo procedimiento.",
+      "d": "Resección intestinal y entero-entero anastomosis"
+    },
+    "correcta": "c",
+    "explicacion": "El ileo biliar es una obstrucción del intestino delgado debido a una litiasis de gran tamaño impactada en el ileon, que ha salido de la vesicula biliar al intestino a través de una fistula bilioentérica directamente sin pasar por el colédoco. La clínica es la de un cólico biliar que no solo no mejora con el tratamiento médico, sino al que se le asocia la sintomatologia tipica de una obstrucción intestinal con dolor y distensión abdominal, vómitos, abdomen timpánico y ruidos metálicos. Es típica la radiografia de abdomen con aerobilia, datos de obstrucción del intestino delgado (niveles hidroaéreos) observándose a veces la litiasis intraluminal. La aerobilia es un dato tipico. El tratamiento debe ser la resolución del cuadro oclusivo, dejando para un segundo tiempo la remoción de la vesícula biliar. La enterolitotomía es el procedimiento más utilizado. Se realiza laparotomía exploradora y una vez identificada la zona de obstrucción se hace una incisión longitudinal en el borde antimesenterico del intestino delgado. Se recomienda cierre transverso de la enterotomia. La reparación completa en un tiempo (cierre de fistula y colecistectomia) se recomienda en casos seleccionados en los que el paciente se encuentra estable, con reposición hidrica y de electrolitos adecuada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-056",
+    "materia": [
+      "cirugiageneral",
+      "obstetricia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Paciente de 34 años con antecedentes personales de cólicos biliares que se encuentra en el 7.º mes de gestación y que acude a urgencias por presentar dolor abdominal localizado en cuadrante superior derecho de aproximadamente 24-36 h de evolución, tras el cual ha presentado dos vómitos, y que actualmente presenta fiebre de 38°C. Tras ser valorada por ginecología sin apreciarse patología ginecológica es remitida en el servicio de urgencias. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicita laboratorio de sangre completo y Rx de abdomen",
+      "b": "Realiza laparotomia exploradora.",
+      "c": "Realiza TC abdominal",
+      "d": "Solicita laboratorio de sangre y orina y ecografia abdominal."
+    },
+    "correcta": "d",
+    "explicacion": "El caso clinico describe dolor en hipocondrio derecho + fiebre + vómitos. La sospecha clínica es de colecistitis aguda, por lo que la actitud correcta consiste en pruebas de laboratorio en sangre y ecografia abdominal. En caso de embarazo si es posible se demora la conducta quirúrgica hasta el parto. En caso de riesgo de vida se deberá estimular la maduración fetal con corticosteroides y realizar el parto para luego llevar a cabo la cirugia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-057",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología"
+    ],
+    "enunciado": "Un paciente de 72 años lo consulta por haber presentado un episodio de proctorragia hace 5 días. No tiene antecedentes patológicos relevantes. Se realiza una videocolonoscopía que informa: presencia de un pólipo único pediculado en el sigma, de unos 25 mm de diámetro, que tiene una ulceración en su cúspide. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Videocolonoscopia a los 3 meses e intervención quirúrgica si aumenta de tamaño",
+      "b": "Sigmoidectomia",
+      "c": "Fotocoagulación con láser del pólipo",
+      "d": "Polipectomia endoscópica y estudio anatomopatológico"
+    },
+    "correcta": "d",
+    "explicacion": "Los pólipos del colon se pueden clasificar en no adenomatosos (hiperplasiscos, inflamatorios, linfoides y juveniles) y adenomatosos (sesiles o pediculados según su forma y tubulares o vellosos según su histologia). Los pólipos adenomatosos habitualmente no causan sintomas aunque en algunas ocasiones pueden dar lugar a sangrado digestivo bajo. Se considera que los pólipos neoplasicos son lesiones potencialmente precursoras de carcinomas invasivos por lo que se debe realizar la polipectomia endoscopica para disminuir el riesgo y para realizar estudio anatomopatologico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-058",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es el tratamiento quirúrgico paliativo de elección en tumores de páncreas irresecables diagnosticados en el intraoperatorio?",
+    "opciones": {
+      "a": "Duodenopancreatectomia cefálica y derivación biliodigestiva",
+      "b": "Duodenopancreatectomia total",
+      "c": "Hepaticoyeyunoanastomosis y gastroenteroanastomosis",
+      "d": "Coledocoduodenoanastomosis y drenaje percutáneo de la via biliar"
+    },
+    "correcta": "c",
+    "explicacion": "En tumores de páncreas irresecable donde el diagnóstico se realiza en el intraoperatorio la indicación quirúrgica es la derivación biliodigestiva pudiendo optar por hepaticoyeyuno anastomosis y gastroenteroanastomosis. Para paliación de los sintomas producidos o que se producirán secundarios a la obstrucción de la vía biliar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-059",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "¿Cuál de los siguientes son factores predisponentes para los cálculos de colesterol?",
+    "opciones": {
+      "a": "Ayuno",
+      "b": "Hemólisis crónica",
+      "c": "Fibrosis quistica",
+      "d": "Cirrosis alcohólica"
+    },
+    "correcta": "a",
+    "explicacion": "El ayuno prolongado produce estasis vesicular, permitiendo que la bilis rica en colesterol \"sedimente\", tiende a nuclearse y cuando el núcleo de colesterol se forma comienza el crecimiento de los litos debido al depósito de cristales alrededor del núcleo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-060",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Vía biliar"
+    ],
+    "enunciado": "Señale la opción CORRECTA, cuando la papilotomía endoscópica tiene indicación indiscutible en una pancreatitis aguda biliar.",
+    "opciones": {
+      "a": "Se observan por ecografía cálculos en la via biliar",
+      "b": "El dolor requiere tratamiento con opiáceos",
+      "c": "Persiste la amilasa sérica elevada",
+      "d": "Hay colangitis aguda asociada"
+    },
+    "correcta": "d",
+    "explicacion": "En caso de pancreatitis asociadas a colangitis la descompresión endoscópica de la via biliar mediante colangiopancreatografía retrograda endoscópica (CPRE) asociada a papilotomía disminuye la morbilidad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-061",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Paciente mujer de 80 años con antecedentes de enfermedad diverticular de larga data. Concurre a la guardia por dolor abdominal localizado en hemiabdomen izquierdo y síndrome febril. Se efectúa laboratorio donde se observa leucocitosis y la tomografía computarizada evidencia colección de 5 x 4 cm localizada en la fosa iliaca izquierda Hinchey II ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Drenaje percutáneo",
+      "b": "Laparotomia exploradora y operación de Hartmann",
+      "c": "Tratamiento antibiótico por via parenteral",
+      "d": "Cirugía de urgencia para drenajes"
+    },
+    "correcta": "a",
+    "explicacion": "La diverticulitis es la inflamación aguda de uno o varios diverticulos, la mayor parte de las veces debida a la obstrucción por un fecalito. Los diverticulos más propensos a complicarse de esta manera son los ubicados en colon izquierdo (sigma). Producen dolor progresivo en la zona afectada (generalmente fosa ilíaca izquierda), fiebre, diarrea, signos de irritación peritoneal y, en los casos más graves, perforación intestinal y peritonitis. Se clasifica en HINCHEY I (responden satisfactoriamente al tratamiento médico) y HINCHEY II (los absceso menores de 3-4 cm responden satisfactoriamente al tratamiento médico; en caso de que posean mayor tamaño está indicado el drenaje percutáneo) y HINCHEY III (peritonitis a punto diverticular que tiene indicación quirúrgica).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-062",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente de 78 años que se encuentra en el séptimo día de internación por un ACV isquémico presenta distensión abdominal marcada y desde hace 3 días catarsis negativa. Al examen físico se constata que el abdomen se encuentra doloroso de manera difusa, sin reacción peritoneal y los RHA son negativos. No elimina gases. Se realiza radiografía de abdomen que muestra dilatación del colon generalizada, que es más pronunciada desde el ciego hasta el ángulo esplénico. Según su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Hemicolectomía derecha",
+      "b": "Laparotomia exploradora",
+      "c": "Descompresión por videocolonoscopia",
+      "d": "Cecostomia guiada por imágenes"
+    },
+    "correcta": "c",
+    "explicacion": "La pseudoobstrucción del colon es una forma de ileo colónico que se presenta generalmente en pacientes postrados y con múltiples comorbilidades. Se asocia a trastornos hidroelectrolíticos, uso de opioides, anticolinérgicos, cirugías, etc. Se presenta con distensión abdominal, dolor, timpanismo y se evidencia en los estudios de imagen dilatación del colon derecho especialmente. En la evaluación del paciente se debe tener muy en cuenta la presencia de signos de irritación peritoneal que puedan indicar perforación. En pacientes que no presentan signos de isquemia intestinal o perforación se suele preferir un tratamiento conservador con corrección de los factores desencadenantes (trastornos electroliticos, hidratación, suspender farmacos que alteren la motilidad intestinal y estimular la movilización del paciente). En pacientes con dilatación significativa (dilatación mayor a 12cm) o que no respondieron al tratamiento conservador se utiliza la neostigmina endovenosa para estimular la motilidad o la descompresión colónica endoscópica. Si estas medidas no son suficientes o el paciente presenta signos de perforación o isquemia intestinal se deberá instaurar un tratamiento quirúrgico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-063",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "¿Cuál es el tratamiento inicial de una colección subhepática posterior a una colecistectomía laparoscópica?",
+    "opciones": {
+      "a": "Laparoscopia",
+      "b": "Laparotomia y colocación de tubo de Kehr",
+      "c": "Drenaje percutáneo",
+      "d": "Colangiografia endoscópica retrógrada y colocación de stent"
+    },
+    "correcta": "c",
+    "explicacion": "Como todo procedimiento, la colecistectomia puede presentar complicaciones indistintamente cual sea su abordaje tanto laparoscópico como convencional. Sin embargo, presenta una morbilidad (1,5-6%) y mortalidad (0-0,2%) bajas. Las complicaciones más importantes son: 1) hemorragia, que puede originarse en el sitio de colocación de los trocares, en el epiplón, en el pediculo vesicular (arteria cística o hepática derecha) o en el lecho hepático; 2) infección: las infecciones de las heridas son raras y de poca relevancia clínica. Los cálculos perdidos en el peritoneo pueden causar abscesos tardios en el 0,3% de los casos; 3) colección intraperitoneal, de la que cabe destacar la colección biliar («biloma»), que puede también manifestarse en forma de fistula biliar externa a través del drenaje subhepático. Puede significar una lesión de la via biliar, una fistula del muñón cistico, o tener su origen en un conducto de Luschka o en un conducto biliar menor en el lecho hepático o algún conducto biliar aberrante. Su tratamiento consiste en el drenaje por via percutánea.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-064",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "Ante un paciente de 70 años con dolor abdominal a nivel de flanco y fosa ilíaca izquierda acompañado de proctorragia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colitis ulcerosa",
+      "b": "Pólipo colónico",
+      "c": "Enfermedad diverticular complicada",
+      "d": "Neoplasia de colon izquierdo"
+    },
+    "correcta": "c",
+    "explicacion": "Los diverticulos de colon (diverticulosis) son en su mayoría asintomáticos y, por tanto, un hallazgo casual, pero cuando producen sintomatologia lo hacen con dolor o hemorragia. Cualquier divertículo puede sangrar y lo puede hacer profusamente, siendo una de las causas más frecuentes de hemorragia digestiva baja que se atienden en los servicios de urgencia. Suele aparecer en mayores de 65 años y se manifiesta como proctorragia o hematoquecia. Los diverticulos del colon derecho son más propensos a sangrar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-065",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Vía biliar"
+    ],
+    "enunciado": "Una mujer de 72 años consulta a la guardia por presentar fiebre, vómitos y dolor abdominal epigástrico que irradia al dorso de 24 hs de evolución. Al ingreso presenta TA de 90/60 mm/Hg, Fc 110/min, Fr 20/min Tax 38.5°C. Examen fisico: abdomen levemente tenso, depresible y doloroso a la palpación en epigastrio, con defensa y sin reacción peritoneal. Se solicita laboratorio que informa Hto 38 Gb 18.500/mm3, Glucemia 180 mg% Uremia 15mg%, Ceatininemia 0.68 mg% GOT 2300 UI/L, GPT 2100 UI/L, FAL 650 UI/L, Amilasa 2.400 UI/L, LDH 6.000 UI/L. Se solicita ecografía abdominal que informa páncreas edematoso con via biliar intra y extrahepática dilatada. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar TC de abdomen e internar en sala de cuidados críticos",
+      "b": "Solicitar CPRE e internar en sala de cuidados críticos",
+      "c": "Internar en sala general, evaluar por cirugía y realizar TC de abdomen a las 72 hs.",
+      "d": "Solicitar TC de abdomen e internar en sala general"
+    },
+    "correcta": "a",
+    "explicacion": "La litiasis coledociana tiene entre sus complicaciones mas importantes la pancreatitis aguda y la colangitis. Ante un paciente con dolor abdominal con elevación de la amilasa (mas de tres veces el valor superior normal) con dilatación de la vía biliar y datos de colestasis en el laboratorio se debe pensar en la presencia de pancreatitis de origen biliar. Los datos de falla orgánica persistente indican la gravedad de la pancreatitis. Se debe considerar el ingreso en unidad de cuidados intensivos. La tomografía de abdomen no aporta datos significativos en la mayoría de los paciente y no se realiza de rutina en el momento del diagnóstico en la pancreatitis aguda. Una TC realizada antes del tercer dia de evolución puede subestimar las complicaciones locales. La necrosis pancreática se objetiva en la TC como una falta de realce de la glándula tras la administración de contraste intravenoso. La realización de una TC de seguimiento estará determinada por su utilidad clínica. Sin embargo en pacientes con presentación grave o aquellos en los que queden dudas diagnósticas se hará de inicio para descartar otras patología que pongan en riesgo la vida de nuestro paciente (caso clínico de la viñeta).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-066",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Elena de 78 años, ingresa a la guardia por dolor abdominal localizado en fosa iliaca izquierda, náuseas, vómitos y fiebre de 24hs de evolución. Al examen físico presenta dolor en fosa iliaca izquierda sin reacción peritoneal. En el laboratorio presenta leve leucocitosis y sedimento urinario normal. En la tomografía computada se observa un engrosamiento de la pared colónica. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Fibrocolonoscopía de urgencia",
+      "b": "Resección segmentaria con colostomia transitoria.",
+      "c": "Laparotomía exploradora.",
+      "d": "Antibiótico terapia, internación y control evolutivo."
+    },
+    "correcta": "d",
+    "explicacion": "Recordar que los divertículos más propensos a complicarse de esta manera son los ubicados en colon izquierdo (sigma). Producen dolor progresivo en la zona afectada (generalmente fosa iliaca izquierda), fiebre, diarrea, signos de irritación peritoneal y, en los casos más graves, perforación intestinal y peritonitis. La diverticulitis aguda simula una apendicitis pero del lado izquierdo. En un paciente clinicamente estable y con la documentación por imágenes que muestre solamente un ligero engrosamiento del sigma, por lo general no se requiere internación. Los pilares del tratamiento son el reposo intestinal (dieta baja en residuos) y antibioterapia que cubra gérmenes anaerobios y gram negativos (ciprofloxacina y metronidazol). En los casos que no se encuadren con lo antes descrito, o en aquellos que no se garantice un correcto seguimiento ambulatorio, su internación será la indicación para la realización de hidratación y antibioticoterapia endovenosa.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-067",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál es el tratamiento quirúrgico paliativo de elección en tumores de páncreas irresecables diagnosticados en el intraoperatorio?",
+    "opciones": {
+      "a": "Pancreatectomia total",
+      "b": "Coledocoduodenoanastomosis y drenaje percutáneo de la via biliar",
+      "c": "Hepaticoyeyunoanastomosis y gastroenteroanastomosis",
+      "d": "Duodenopancreatectomia cefálica y gastroenteroanastomosis"
+    },
+    "correcta": "c",
+    "explicacion": "El único tratamiento radical y curativo es la cirugía, que en general sólo es posible en aquellos tumores limitados al duodeno páncreas. En tumores irresecables la opción es aprovechar el tiempo quirúrgico es generar derivaciones para mejorar la calidad de vida y los síntomas del paciente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-068",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "Un paciente de 60 años con antecedentes de tabaquismo e HTA consulta por screening de cáncer colorrectal (CCR). El año pasado se realizó una videocolonoscopía (VCC) que no evidenció alteraciones patológicas. Tiene como antecedente a un hermano de 55 años con diagnóstico y en tratamiento por CCR. ¿Cuál es la estrategia de vigilancia más adecuada?",
+    "opciones": {
+      "a": "SOMF anual",
+      "b": "Colonoscopia a los 5-10 años",
+      "c": "Colonoscopia virtual por tomografia cada 3 años",
+      "d": "Sangre Oculta en Materia Fecal (SOMF) y rectosigmoideoscopia cada 5 años"
+    },
+    "correcta": "b",
+    "explicacion": "En la actualidad se recomienda el rastreo de cáncer colorrectal en la población general de entre 50 y 75 años. Los metodos para el rastreo incluyen pruebas en heces que incluyen la detección en materia fecal de sangre oculta (por metodo guayacol o por inmunohistoquimica) en forma anual y pruebas de ADN con intervalo menos claro. Las pruebas estructurales son la colonoscopia cada diez años, la sigmoidoscopia cada 5 años junto a una tecnica de detección en materia fecal anual, la colonografia por tomografia computada (colonoscopia virtual) cada cinco años y el enema baritado cada cinco años. En los pacientes con antecedentes de FPG con cáncer colorrectal se recomienda realizar VCC a los 5 años (respuesta correcta colonoscopia cada 5-10 años)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-069",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "Un paciente colecistectomizado hace 10 años ingresa con un síndrome coledociano. La ecografía muestra vía biliar intrahepática levemente dilatada con imagen hiperecogénica en colédoco distal. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Extracción de lito a través del tubo de Kehr",
+      "b": "Laparotomia, coledocotomia y anastomosis biliodigestiva",
+      "c": "Colangiografia endoscópica retrógrada y eventual papilotomia endoscópica",
+      "d": "Laparotomia exploradora y coledocotomia"
+    },
+    "correcta": "c",
+    "explicacion": "En el paciente con colestasis se debera determinar si esta es intrahepatica o extrahepatica. La ecografia un excelente método para determinar esto último, sin embargo no es tan buena para determinar la causa de la colestasis. La colangiografia endoscópica retrograda es el metodo indicado para el diagnostico de coledocolitiasis. Además de ser útil en el diagnostico permite la extracción de cálculos y la colocación de endoprótesis cuando corresponde.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-070",
+    "materia": [
+      "gastroenterologia",
+      "infectologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Tomografía",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "¿Cuál de los siguientes signos tomográficos nos confirma una necrosis infectada de páncreas?",
+    "opciones": {
+      "a": "Irregularidad de los bordes de la glándula",
+      "b": "Aumento de tamaño de la glándula",
+      "c": "Gas retroperitoneal",
+      "d": "Heterogeneidad del parénquima"
+    },
+    "correcta": "c",
+    "explicacion": "La pancreatitis aguda mas frecuente es la pancreatitis secundaria a cálculos biliares. La inflamación aguda del páncreas puede tener una resolución espontánea o evolucionar con fallo sistémico y complicaciones locales tales como la necrosis pancreática tanto estéril como infectada y el seudoquiste pancreático. La necrosis pancreática se infecta luego de una semana de la aparición de la pancreatitis. Se sospecha ante el paciente que evoluciona con síndrome de respuesta inflamatoria sistemática persistente, en los cultivos se rescatan mayormente enterobacterias gram negativas. La presencia de gas en el páncreas o en el plano retroperitoneal estima la existencia de necrosis infectada en mas del 33% de los casos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-071",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la fuente colónica más común de hematoquecia grave?",
+    "opciones": {
+      "a": "Angiodisplasia colónica.",
+      "b": "Diverticulosis.",
+      "c": "Colitis isquémica.",
+      "d": "Hemorroides internas."
+    },
+    "correcta": "b",
+    "explicacion": "Cualquier diverticulo puede sangrar y lo puede hacer profusamente, siendo una de las causas más frecuentes de hemorragia digestiva baja que se atienden en los servicios de urgencia. Suele aparecer en mayores de 65 años y se manifiesta como rectorragia o hematoquecia. Los divertículos del colon derecho son más propensos a sangrar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-072",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "Un hombre de 57 años ingresa a la guardia del hospital por dolor abdominal y vómitos de 36 hs evolución. El laboratorio solicitado informó, Hto:34%, GB: 22.000/mm3, Glucemia: 245mg/dl Uremia: 52mg/dl, Na: 140mEq/l K: 4,8 mEq/l, Amilasemia: 2150 UI. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Antibioticoterapia, corrección de la glucemia y seguimiento por consultorios externos",
+      "b": "Observación en guardia, tratamiento sintomático y seguimiento ambulatorio",
+      "c": "Internación en sala general del hospital",
+      "d": "Internación en área cerrada"
+    },
+    "correcta": "d",
+    "explicacion": "En los pacientes con enfermedades coexistentes graves, falla orgánica temprana o perdidas importantes de liquidos puede estar indicada la internación en unidad de cuidados intensivos. En esta pregunta el paciente presenta 3 criterios Ranson al ingreso: edad/leucocitos/glucemia. Criterios de Ranson: Con sensibilidad de 80% en las primeras 48 horas. Valora 11 factores (5 al ingreso y 6 a las 48 horas), un valor ≥ 3 puntos se considera PA grave. Este hallazgo contrasta con otros paises en donde el sistema Ranson es cada vez menos utilizado, debido fundamentalmente a su desventaja de requerir 48 hs para su determinación. Este sistema es reemplazado con mayor frecuencia por el APACHE II/ Indice BISAP/Atlanta que aportan similar exactitud y se puede determinar al ingreso y en cualquier momento de la evolución. El porcentaje de graves de acuerdo a los sistemas pronósticos fue del 16% similar a otros estudios que evalúan poblaciones en general. La pancreatitis aguda severa (PAS) se caracteriza por la presencia de necrosis parenquimatosa, necrosis de la grasa retroperitoneal, fallo sistémico, un cuadro clinico de tórpida evolución y el desarrollo de complicaciones potencialmente letales. Afecta del 20 al 25% de los pacientes que desarrollan una pancreatitis. Se considera que un paciente es portador de PAS si presenta alguno de los siguientes criterios: Fallo orgánico con uno o más de los siguientes criterios: shock (presión arterial sistólica <90 mm Hg), insuficiencia respiratoria (PaO2 <60 mmHg), insuficiencia renal (creatinina sérica>2mg/dl luego de la hidratación) y sangrado gastrointestinal (> 500 ml en 24 horas). Complicaciones locales tales como necrosis, pseudoquistes o abscesos. Al menos 3 de los criterios de Ranson. Al menos 8 de los criterios del APACHE II. Se ha comprobado, que la falla orgánica que se presenta en la primera semana y se resuelve dentro de las 48 horas, no es un indicador de un ataque severo de pancreatitis aguda. Los pacientes estables diagnosticados de PA con criterios de \"gravedad\" precoces presentan una alta fasa de complicaciones. Estos pacientes con Pancreatitis aguda grave necesitan una estrecha monitorización (incluyendo PVC, diuresis, frecuencia cardiaca, frecuencia respiratoria, tensión arterial y oxigenación) y un manejo adecuado, por lo que deberán ingresar en áreas hospitalarias donde se garanticen sus necesidades de monitorización y tratamiento. En este contexto, las UCI han contribuido al mejor pronóstico de estos pacientes, donde el abordaje va a ir dirigido fundamentalmente al control del dolor, reposición de la volemia y control hemodinámico, corrección de los electrolitos y del equilibrio acido-básico ya asegurar una adecuada nutrición tras el periodo de ayuno inicial. Por lo anteriormente descripto el criterio Ranson está en desuso.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-073",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas"
+    ],
+    "enunciado": "La incidencia, en orden de frecuencia, de las etiologías de la pancreatitis crónica en los distintos informes es la siguiente:",
+    "opciones": {
+      "a": "Tóxica, Autoinmune, Idiopática",
+      "b": "Autoinmune, Toxica, Genetica",
+      "c": "Tóxica, Idiopática, Genética",
+      "d": "Idiopática, Toxica, Genetica"
+    },
+    "correcta": "c",
+    "explicacion": "La incidencia, en orden de frecuencia, de las etiologías de la pancreatitis crónica en los distintos informes es la siguiente: el alcohol es la causa más frecuente, seguido de las causas idiopáticas y en tercer lugar las causas geneticas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-074",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Ante una paciente de 40 años que fue diagnosticada de pancreatitis aguda, a las 3 semanas de evolución de la enfermedad, encontrándose asintomática, en la ecografía abdominal se evidencia una colección delimitada, de 35mmx30mm, en la cola del páncreas. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Punción con aguja fina guiada por ecografia para toma de muestra.",
+      "b": "Intervención quirúrgica.",
+      "c": "Actitud expectante, por resolución espontánea",
+      "d": "Drenaje percutáneo de la colección líquida."
+    },
+    "correcta": "c",
+    "explicacion": "Seudoquiste pancreático: Es la complicación más frecuente de la pancreatitis aguda. La mayoria se dan en la cola del páncreas y aislados. Sólo se tratan si producen sintomas. En un primer momento se forman colecciones agudas peripancreáticas en las primeras 24-48 horas (explicadas previamente). Aunque la mayoria se reabsorben, un 15-20% no lo hacen y a las 4 semanas se rodean de tejido fibrocicatricial sin forma de verdadera cápsula (seudoquiste). La mayoría se localizan en el cuerpo y la cola del páncreas (85%), y solamente el 15% se localizan en la cabeza. La mayoria son únicos. Se sospecha cuando una pancreatitis no mejora o empeora cuando habia comenzado a mejorar. Suele cursar con elevación de la amilasa (bien se mantiene elevada, o bien vuelve a elevarse tras haberse normalizado). Se diagnostica con TC. Tratamiento: conservador si es asintomático, el 40% se resuelven solos. Antes se usaba la regla del 6:>6 cm y persistencia > 6 semanas, realizar drenaje. En la actualidad es la clinica (dolor abdominal persistente, compresión de estructuras vecinas, infección, rotura, hemorragia) la que indica si debe o no ser tratado. Solamente se tratan los seudoquistes sintomáticos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-075",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "Un paciente de 25 años con diagnóstico de enfermedad de Crohn, consulta a la guardia por presenta dolor abdominal difuso a predominio de hemiabdomen derecho, diarrea, hematoquecia y fiebre de 2 días de evolución. Se decide su internación en sala de clínica médica y se inicia tratamiento con prednisona en dosis de 1 mg/Kg. Luego de una semana de tratamiento, el paciente continúa con igual sintomatología. Los resultados de los hemocultivos, coprocultivos y coproparasitológicos son negativos. ¿Cuál es la conducta terapéutica más adecuada en esta instancia?",
+    "opciones": {
+      "a": "Indicar tratamiento con anticuerpo anti-TNF (infliximab)",
+      "b": "Asociar mesalazina en dosis de 4 g/dia oral y triamcinolona rectal 1 aplicación cada 12 horas",
+      "c": "Efectuar colectomia total con anastomosis de pouch ileal",
+      "d": "Efectuar colectomia subtotal con anastomosis ileo rectal"
+    },
+    "correcta": "a",
+    "explicacion": "La enfermedad de Crohn es una forma de enfermedad inflamatoria intestinal. Puede afectar cualquier sitio del tracto digestivo desde el esófago hasta el ano. Los brotes de actividad de la enfermedad moderada a grave deben ser tratados con corticoides sistémicos, junto con otras medidas de sostén. En los pacientes que persisten con actividad de la enfermedad se debe agregar un inmunomodulador como la aziatropina o metotrexato, fármacos biológicos anti-TNF (Infliximab, certolizumab pegol, adalimumab), o natalizumab (este ultimo se ha asociado al desarrollo de leucoencefalopatia multifocal progresiva y no suele ser un tratamiento de primera linea).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+
+  {
+    "id": "gastro-003-076",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la complicación posoperatoria más frecuente de la hemorroidectomía?",
+    "opciones": {
+      "a": "Fistula anal",
+      "b": "Infección",
+      "c": "Hemorragia",
+      "d": "Retención urinaria"
+    },
+    "correcta": "d",
+    "explicacion": "La complicación posoperatoria más frecuente de una hemorroidectomia es la retención urinaria.\nA veces se produce incapacidad para orinar debido a hinchazón (edema) en los tejidos o a un espasmo de los músculos pélvicos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-077",
+    "materia": [
+      "gastroenterologia",
+      "oncologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Ante un paciente con cáncer de cabeza de páncreas irresecable y metástasis hepáticas. ¿Cuál es el mejor tratamiento para paliar la ictericia?",
+    "opciones": {
+      "a": "Drenaje biliar externo percutáneo",
+      "b": "Protesis biliar endoscópica",
+      "c": "Hepaticoyeyunoanastomosis",
+      "d": "Coledocoduodenoanastomosis"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nLos tratamientos paliativos en pacientes con cáncer de páncreas irresecable incluyen:\n\n• Radioquimioterapia o quimioterapia: disminuyen la sintomatologia y prolongan la supervivencia.\n\n• Derivaciones quirúrgicas tanto biliares como intestinales: evitan las obstrucciones pero causan morbilidad por el acto quirúrgico en sí.\n\n• Prótesis endoscópicas: es la tendencia actual siempre que sea posible ya que permite, por vía endoscópica, la colocación de prótesis autoexpandibles tanto biliares como duodenales para salvar las obstrucciones por compresión local. (correcta)\n• Tratamiento del dolor: es muy importante. Puede ser médico (analgésicos, incluso opiáceos), quirúrgico (descompresiones) o endoscópico (neurólisis del plexo celiaco mediante la inyección de anestésicos en el mismo).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-078",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Oncología",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "En un cáncer de recto localizado a 9 cm del margen anal y que abarca 1/3 de su circunferencia, ¿cuál es la intervención quirúrgica de elección?",
+    "opciones": {
+      "a": "Resección local endoanal",
+      "b": "Proctocolectomia izquierda",
+      "c": "Amputación abdominoperineal u operación de Miles",
+      "d": "Resección anterior u operación de Dixon"
+    },
+    "correcta": "d",
+    "explicacion": "La resección anterior u Operación de Dixon consiste en la resección tumoral asociado a todo el mesorecto, debe lograrse un margen de 5 cm de la lesión.\nEn caso que dicho margen no pueda lograrse deberá realizarse una amputación abdominoperineal o cirugía de Miles.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-079",
+    "materia": [
+      "gastroenterologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Bacterias"
+    ],
+    "enunciado": "Una mujer de 29 años, con historia de episodios intermitentes de hematoquecia de 6 meses de evolución, presenta en las últimas 72hs deposiciones diarreicas sanguinolentas (más de 6 por día) por lo que concurre a la guardia. Al examen físico presenta palidez cutáneo mucosa, TA 90-60 mm Hg, FC 120 l/m, signos de ortostatismo y Temp. axilar de 38°C. El laboratorio informa Hto: 28% y VSG 70 mm. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Enfermedad de Crohn, ileocolitis",
+      "b": "Diarrea por E coli enterohemorrágica",
+      "c": "Megacolon tóxico",
+      "d": "Crisis grave de colitis ulcerosa"
+    },
+    "correcta": "d",
+    "explicacion": "La colitis ulcerosa (UC) es una enfermedad de la mucosa que por lo común abarca el recto y se extiende en sentido proximal hasta afectar el colon en su totalidad o en parte.\nLos principales sintomas de la UC son diarrea, rectorragia, tenesmo, secreción de moco y dolor abdominal de tipo cólico.\nDentro de la clasificación de la UC existe la forma de presentación grave, que es cuando el paciente presenta más de 6 deposiciones por dia, la cantidad de sangre en heces es abundante, la T° es mayor a 37,5°C, la FC es mayor a 90 lxm de pulso medio, en el laboratorio presenta anemia en más del 75% de los casos y la VSG es mayor a 30 mm.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-080",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "¿Cuál es la metodología diagnóstica más adecuada en un paciente de 62 años, que consulta por haber presentado proctorragia en dos o tres oportunidades durante la última semana? En el examen físico se encuentra compensado hemodinámicamente, no presenta ortostatismo, se observa palpación abdominal normal y en el examen anal se observan pequeñas hemorroides prolapsadas.",
+    "opciones": {
+      "a": "Colon por enema",
+      "b": "Rectoscopia",
+      "c": "Fibrocolonoscopia",
+      "d": "Rectosigmoidoscopia"
+    },
+    "correcta": "c",
+    "explicacion": "El screening de cáncer colorrectal debe iniciarse en pacientes que no presentan antecedentes familiares a partir de los 50 años, el estudio de elección para tal fin es la fibrocolonoscopia.\nEn el caso clinico que se presenta, se debe tener en cuenta, además, que el paciente presenta proctorragia.\nSi bien en el examen físico presenta hemorroides prolapsadas, por edad la indicación seria fibrocolonoscopia para screening de cáncer colorrectal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-081",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Consulta Gustavo de 58 años por proctorragia, prurito anal y sensación de ano húmedo de tres meses de evolución. Relata que ante esfuerzos evacuatorios siente exteriorización de las hemorroides que debe reducir manualmente con mucha dificultad. En la historia clínica se constata videocolonoscopia completa y normal realizada 8 meses antes de la consulta y un examen de laboratorio con hemoglobina 12 g/dl del último mes. Al examen físico se constata prolapso hemorroidal durante el pujo sin reducción espontánea y estigmas de sangrado reciente. El tacto rectal impresiona mucosa lisa y leve aumento de tamaño de la próstata. ¿Cuál es la conducta terapéutica a seguir?",
+    "opciones": {
+      "a": "Ligaduras elásticas.",
+      "b": "Resección hemorroidal.",
+      "c": "Escleroterapia con fenol al 5%.",
+      "d": "Tratamiento local con crema con lidocaína y betametasona."
+    },
+    "correcta": "b",
+    "explicacion": "Estamos ante un paciente que presenta prolapso hemorroidal durante el prolapso y la reducción no es espontánea.\nDe manera que estamos en una clasificación en grado 3. La indicación de hemorroidectomia se realiza a partir del grado 3.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-082",
+    "materia": [
+      "oncologia",
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es el mejor tratamiento para un paciente de 75 años que presenta obstrucción intestinal por un tumor de colon descendente y que en la TC de abdomen se identifican múltiples metástasis hepáticas?",
+    "opciones": {
+      "a": "Recanalización de la luz intestinal por vía endoscópica",
+      "b": "Resección y anastomosis primaria más quimioterapia",
+      "c": "Colocación de sonda nasogástrica y tratamiento paliativo",
+      "d": "Resección del tumor primario y metastasectomías hepáticas"
+    },
+    "correcta": "a",
+    "explicacion": "El cáncer colorrectal (CCR) es el primer tumor maligno en incidencia y el segundo en mortalidad en ambos sexos.\nLa mayoría de ellos afectan al recto (37%) y al sigma (32 %) aunque puede aparecer en cualquier tramo del colon.\nLos síntomas típicos son sangrado digestivo bajo (proctorragia), dolor abdominal, anemia ferropénica y alteración del hábito intestinal.\nOtros cuadros clinicos de presentación de especial importancia por su gravedad son la obstrucción intestinal y la perforación de viscera hueca abdominal.\nDado que un 20% de los pacientes debutará como enfermedad avanzada, también se puede encontrar sintomatologia derivada de la afectación metastásica a distancia.\nLa obstrucción colónica generalmente se produce en el colon izquierdo y es una situación de urgencia.\nEn los pacientes con comorbilidades importantes o afectación metastásica se recomienda la implantación de una prótesis en el colon para solucionar la obstrucción y planear, diferidamente, el tratamiento definitivo.\nEn los pacientes con buen estado general y metástasis, se puede plantear la prótesis o directamente cirugía de Hartmann, que consiste en una colostomía temporal y reconstrucción posterior.\nLa obstrucción del colon constituye una indicación para la intervención de urgencia.\nLa colocación colonoscópica de una endoprótesis expansible es una alternativa para aliviar la obstrucción de origen maligno sin recurrir a una intervención quirúrgica de urgencia, y permitir la preparación intestinal para realizar un procedimiento programado en una sola fase.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-083",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la conducta más adecuada con un paciente de 60 años que consulta por dolor en fosa ilíaca izquierda y fiebre en picos de un día de evolución? Se le realizó una tomografía computada de abdomen y se observa engrosamiento significativo de la pared sigmoidea y pequeño absceso peridiverticular de 2,5 cm.",
+    "opciones": {
+      "a": "Tratamiento médico y eventual drenaje percutáneo",
+      "b": "Tratamiento médico y colectomía total",
+      "c": "Colectomía con anastomosis colosigmoidea termino terminal",
+      "d": "Tratamiento médico y videocolonoscopia"
+    },
+    "correcta": "a",
+    "explicacion": "La diverticulitis es un cuadro inflamatorio que se produce por la perforación o microperforación de un diverticulo.\nSe manifiesta con dolor en fosa iliaca izquierda asociado a fiebre y en ocasiones a masa palpable.\nSe clasifica en HINCHEY I (responden satisfactoriamente al tratamiento médico) HINCHEY II (absceso menores a 3-4 cm responden satisfactoriamente a tratamiento médico, en caso que posean mayor tamaño, está indicado el drenaje percutáneo) y HINCHEY III (peritonitis a punto divertículo que tiene indicación quirúrgica).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-084",
+    "materia": [
+      "gastroenterologia",
+      "hematologia",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Anemias carenciales",
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con una mujer de 54 años, menopausica, que tiene anemia microcítica hipocrómica?",
+    "opciones": {
+      "a": "Descartar patología de médula ósea",
+      "b": "Descartar patologia ginecológica",
+      "c": "Indicar sulfato ferroso hasta completar depósitos y evaluar nuevamente",
+      "d": "Indicar sulfato ferroso y estudiar el tubo digestivo"
+    },
+    "correcta": "d",
+    "explicacion": "Las anemias se clasifican en hiporegenerativas y regenerativas según la capacidad de la médula ósea para sostener la producción de eritrocitos estimada a través del indice reticulocitario.\nLas anemias hiporregenerativas se clasifican según el tamaño del eritrocito en micro, normo y macrociticas.\nEl contenido de hemoglobina depende de la capacidad de sintesis de globina, del anillo de porfirina y de la disponibilidad de hierro.\nUn déficit en alguno de estos elemento puede ocasionar una anemia microcitica y/o hipocrómica.\nLa ferropenia es la causa más frecuente. Se suele confirmar el diagnóstico con un estudio del estado del hierro en el que se encuentra la saturación de transferrina baja, la ferritina y la ferremia también bajas.\nEl tratamiento de la anemia ferropénica se basa en el reemplazo con hierro, habitualmente por via oral.\nCuando se diagnostica una anemia ferropénica se deberá evaluar la causa del déficit de hierro.\nDado que existen amplios depósitos de hierro en el cuerpo el déficit se origina mas frecuentemente por pérdida a través de hemorragias.\nEn mujeres en edad fértil las pérdidas ginecológicas son las más frecuentes.\nEn pacientes mayores se deberá considerar siempre la pérdida gastrointestinal, en particular secundaria a neoplasias colorectales.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-085",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral",
+      "imagenes"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Ecografía"
+    ],
+    "enunciado": "Gustavo, de 50 años de edad consulta porque luego de una comida copiosa sufre dolor abdominal de comienzo brusco, muy intensa en epigastrio, con irradiación al dorso, con vómitos incoercibles. El paciente presenta tendencia a la hipotensión, taquicardia y taquipnea. Los valores de laboratorio de ingreso muestran: Amilasemia: 380 U/L, Leucocitosis de 20.000/mm3, Glucemia de 210 mg/dl, LDH 400 UI/L, Bilirrubina Total: 6 mg/dl a predominio directo. Hto: 45% ¿Qué estudio de imágenes recomendaría inicialmente?",
+    "opciones": {
+      "a": "RMN con Gadolinio",
+      "b": "Colangiopancreatografia retrógrada endoscópica (CPRE)",
+      "c": "TAC de abdomen con y sin contraste IV",
+      "d": "Ecografia abdominal"
+    },
+    "correcta": "d",
+    "explicacion": "Ante un paciente con dolor epigástrico agudo se debe considerar el diagnóstico de pancreatitis aguda (PAg) entre otros.\nSe considera que un paciente padece una PAg cuando cumple al menos dos de los siguientes tres criterios: 1) elevación de la amilasa y/o la lipasa en la sangre mayor de 3 veces el límite superior de la normalidad;\n2) presencia de dolor abdominal típico, y 3) pruebas de imagen compatibles con PAg.\nSi el paciente cumple los dos primeros criterios, no es necesario solicitar pruebas de imagen complementarias en urgencias.\nSin embargo, ante unas enzimas poco elevadas en la sangre o en caso de manifestaciones atípicas, conviene descartar otras causas de dolor abdominal.\nLa ecografía abdominal muchas veces es la prueba inicial en el paciente con patología pancreatica, dada su alta disponibilidad, su fácil y rápida realización, y su bajo precio.\nPermite diagnosticar colelitiasis en la pancreatitis aguda, el seguimiento de colecciones, y el diagnóstico inicial de pancreatitis crónica y neoplasias pancreáticas, pero con menor sensibilidad que otras pruebas de imagen, como TC, RM o ecografia endoscópica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-086",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Según la clasificación de las estenosis iatrogénica de la vía biliar (Bismuth). ¿Cuál es la característica de la estenosis traumática tipo 2?",
+    "opciones": {
+      "a": "Presenta una estenosis a más de 2 cm de la confluencia hepática",
+      "b": "Presenta una estenosis alta con confluencia destruida y disociación de los conductos hepáticos derecho e izquierdo",
+      "c": "Presenta una estenosis alta con confluencia intacta",
+      "d": "Presenta una estenosis a menos de 2 cm de la confluencia hepática"
+    },
+    "correcta": "d",
+    "explicacion": "Como todo procedimiento, la colecistectomía puede presentar complicaciones indistintamente cual sea su abordaje tanto laparoscópico como convencional.\nSin embargo, presenta una morbilidad (1,5-6%) y mortalidad (0-0,2%) bajas.Las complicaciones más importantes son:\n\n• Hemorragia: puede originarse en el sitio de colocación de los trocares, en el epiplón, en el pediculo vesicular (arteria cística o hepática derecha) o en el lecho hepático.\n. Infección: las infecciones de las heridas son raras y de poca relevancia clínica.\nLos cálculos perdidos en el peritoneo pueden causar abscesos tardíos en el 0,3%.\nColección intraperitoneal: tienen importancia las colecciones biliares («biliomas»), que pueden también manifestarse en forma de fistula biliar externa a través del drenaje subhepático.\nPueden significar una lesión de la via biliar, una fístula del muñón cístico, o tener su origen en un conducto de Luschka o en un conducto biliar menor en el lecho hepático o algún conducto biliar aberrante.\n• Estenosis iatrogénica de la via biliar: La clasificación de Bismuth indica la incidencia según el tipo de lesión.\nEl tipo 1 se encuentra a más de 2 cm de la confluencia hepática, su incidencia es del 18-36%.\nLa tipo 2 está a menos de 2 cm de la confluencia hepática y su incidencia es de 27-38%.\nLa tipo 3 coincide con la confluencia y su incidencia es de 20-33%, mientras que la tipo 4 presenta destrucción de la confluencia, con una incidencia de 14-16% y la tipo 5 se manifiesta con afección de la rama hepática derecha o con el colédoco y su incidencia es de 0 a 7%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-087",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál de las siguientes es causa de diarrea inflamatoria?",
+    "opciones": {
+      "a": "Lesión por radiación",
+      "b": "Enfermedad de Addison",
+      "c": "Insuficiencia pancreática exocrina",
+      "d": "Deficiencia de lactasa"
+    },
+    "correcta": "a",
+    "explicacion": "Diarrea que dura más de cuatro semanas es preciso valorarla para descartar algún trastorno subyacente grave.\nA diferencia de la diarrea aguda, la mayor parte de las múltiples causas de la diarrea crónica no son infecciosas.\nLas diarreas de causa inflamatoria suelen acompañarse de dolor, fiebre, hemorragias u otras manifestaciones de inflamación.\nLa diarrea inflamatoria crónica puede ser secundaria a la enfermedad de Crohn, a la colitis ulcerosa crónica, a enterocolitis por radiación, a la enfermedad del injerto contra hospedador, al sindrome de Behçet, entre otros.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-088",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un paciente de 45 años ingresa por guardia con un cuadro de dolor y marcada distensión abdominal. En la radiografía de abdomen se observan asas de intestino delgado dilatadas con niveles hidroaéreos y aerobilia. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar laparotomia por sospecha de ileo biliar",
+      "b": "Indicar plan de hidratación parenteral, contraindicar la via oral, colocar sonda nasogástrica y dejar al paciente en observación por cuadro de suboclusión",
+      "c": "Indicar radiografias seriadas con contraste para evaluar cuadro obstructivo",
+      "d": "Realizar fibrocolonoscopia ante sospecha de cáncer de ciego que infiltra el ileon"
+    },
+    "correcta": "a",
+    "explicacion": "El ileo biliar es una obstrucción del intestino delgado debido a una litiasis de gran tamaño impactada en el ileon, que ha salido de la vesicula biliar al intestino a través de una fistula bilioentérica directamente sin pasar por el colédoco. La clínica es la de un cólico biliar que no solo no mejora con el tratamiento médico, sino al que se le asocia la sintomatologia tipica de una obstrucción intestinal con dolor y distensión abdominal, vómitos, abdomen timpánico y ruidos metálicos.\nEs típica la radiografia de abdomen con aerobilia, datos de obstrucción del intestino delgado (niveles hidroaéreos) observándose a veces la litiasis intraluminal.\nLa aerobilia es un dato típico",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-089",
+    "materia": [
+      "gastroenterologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "Varón de 75 años consulta por ictericia, astenia y pérdida de peso de unos 4 kg en el último mes aproximadamente. Presenta dolor sordo a nivel epigástrico. El laboratorio: BT 7,7 mg/dL (BD 6 mg/dL), GOT y GPT normales y GGT 349 U/L y fosfatasa alcalina 260 U/L. La ecografía de abdomen informa dilatación de la vía biliar intra y extrahepática. Se le realiza una colangiopancreatografía retrógrada endoscópica apreciándose una estenosis abrupta del colédoco distal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hepatitis aguda.",
+      "b": "Colangitis esclerosante primaria.",
+      "c": "Cancer de pancreas.",
+      "d": "Coledocolitiasis."
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos.\nTenemos un paciente añoso que consulta por ictericia obstructiva dolorosa subaguda, con pérdida de peso y que presenta stop único en colédoco distal, pensar primero en neoplasia pancreática.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-090",
+    "materia": [
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Tomografía"
+    ],
+    "enunciado": "¿Qué método diagnóstico realiza para valorar la gravedad de una pancreatitis aguda?",
+    "opciones": {
+      "a": "Resonancia magnética nuclear con Gadolinio",
+      "b": "Ecografia",
+      "c": "Ecografia endoscópica",
+      "d": "Tomografia axial computada dinámica con contraste"
+    },
+    "correcta": "d",
+    "explicacion": "La realización de TC en el momento del diagnóstico no tiene valor pronóstico.\nDebe hacerse 72-96 horas tras el debut de la pancreatitis, siempre y cuando esté indicado: en caso de duda diagnóstica, gravedad clínica o si el paciente presenta factores pronósticos de gravedad.\nLa TC con contraste intravenoso es la técnica de imagen de elección para la valoración de los pacientes con PA.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-091",
+    "materia": [
+      "cirugiageneral",
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "El tratamiento quirúrgico del cáncer de colon de derecho es:",
+    "opciones": {
+      "a": "Operación de Hartmann",
+      "b": "Colectomia total",
+      "c": "Hemicolectomia derecha",
+      "d": "Cecostomia."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento de elección es la cirugía, que consiste en la resección del tramo donde se encuentra la lesión con márgenes de seguridad y los ganglios de la zona.\nEstadio I y II de bajo riesgo: cirugía del tumor primario más linfadenectomía regional con intención curativa.\nEstadio II de alto riesgo (T4, perforación u obstrucción intestinal, menos de 12 ganglios analizados en la pieza quirúrgica, histología pobremente diferenciada como la mucinosa o anillo de sello, presencia de invasión linfovascular o perineural, CEA preoperatorio alto): al tratamiento anterior se añade quimioterapia adyuvante similar al estadio III.\nTumores rectales: todos los estadios II reciben tratamiento multimodal con cirugía, radioterapia y quimioterapia.\nDependiendo de la localización de la lesión, la anatomía vascular obliga a determinadas resecciones:\n\nCiego o colon ascendente: hemicolectomía derecha y anastomosis ileocólica.\nColon transverso: hemicolectomía derecha ampliada (hasta ángulo esplénico) y anastomosis ileocólica.\nÁngulo esplénico y colon descendente: hemicolectomía izquierda y anastomosis del colon transverso con recto.\n\nSigma: resección segmentaria y anastomosis término-terminal.\nHay una tendencia cada vez mayor al uso de la cirugía laparoscópica, que permite igualmente una cirugía oncológica segura y efectiva.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-092",
+    "materia": [
+      "gastroenterologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Ecografía"
+    ],
+    "enunciado": "¿Cuál de los siguientes es el examen complementario de elección para el diagnóstico de la colecistitis aguda?",
+    "opciones": {
+      "a": "Tomografia hepatobiliopancreática",
+      "b": "Tomografía helicoidal",
+      "c": "Colecistografia oral",
+      "d": "Ecografia hepatobiliopancreatica"
+    },
+    "correcta": "d",
+    "explicacion": "Diagnóstico de la colecistits se realiza por la clínica y las pruebas de imagen.\nLa ecografia ((referencia a recurso 'Figura 5-9')) es la técnica más utilizada y detecta un aumento del tamaño de la pared vesicular (> 4 mm), liquido libre perivesicular y litiasis.\nLa técnica más específica es la gammagrafía con HIDA, pero no se suele realizar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-093",
+    "materia": [
+      "gastroenterologia",
+      "saludpublica",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Medicina basada en la evidencia",
+      "Oncología"
+    ],
+    "enunciado": "¿Qué recomendación le haría respecto a la realización de una colonoscopía a Marcos de 38 años, que presenta como antecedente el fallecimiento de un familiar de primer grado debido a cáncer colorrectal a los 55 años?",
+    "opciones": {
+      "a": "Comenzar con colonoscopia a los 40 años, luego controles cada 5 años.",
+      "b": "Comenzar con colonoscopia a los 50 años, luego controles cada 10 años.",
+      "c": "Comenzar con colonoscopia a los 50 años, luego controles cada 5 años.",
+      "d": "Comenzar con colonoscopia a los 40 años, luego controles cada 10 años."
+    },
+    "correcta": "a",
+    "explicacion": "En los pacientes con antecedentes de familiar de primer grado con cáncer colorrectal se recomienda disminuir 10 años la edad de inicio del cribado y la periodicidad cada 5 años.\nMarcos tiene antecedente de cáncer colorrectal (CCR) en un familiar de primer grado diagnosticado a los 55 años, lo que lo ubica en un grupo de riesgo moderado.\nSi un familiar de primer grado tuvo CCR antes de los 60 años, o si hay más de un familiar afectado, el cribado debe iniciarse a los 40 años o 10 años antes de la edad de diagnóstico del familiar más joven (lo que ocurra primero).\nLa frecuencia del control debe ser cada 5 años, no cada 10 como en la población general, por el riesgo aumentado.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-094",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "Los divertículos verdaderos están constituidos por todas las capas de la pared intestinal. ¿Cuál es el divertículo más frecuente del tubo digestivo?",
+    "opciones": {
+      "a": "El de sigmoides",
+      "b": "El de Meckel",
+      "c": "El de esófago",
+      "d": "El de duodeno"
+    },
+    "correcta": "b",
+    "explicacion": "El diverticulo de Meckel es la malformación congénita mas frecuente.\nSe produce porque asas intestinales se hernian a través del conducto onfalomesentérico hacia el saco vitelino.\nSu frecuencia se estima entre el 1.5 al 3% y es mas frecuente en el sexo masculino.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-095",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Varón de 44 años sin enfermedades de interés acude a urgencias por dolor abdominal de 2,5 horas de evolución, localizado en el hipocondrio derecho. El paciente refiere que el dolor apareció de forma súbita y que es muy intenso. Refiere náuseas y vómitos en relación con las crisis de dolor. En la exploración física no muestra fiebre y el abdomen es doloroso en el hipocondrio derecho. Analíticamente presenta creatinina de 0,8 mg/dl, bilirrubina 0,9mg/dl, AST 43 U/L, ALT 40 U/L, GGT 48 U/L, FA 98 U/L. Hemoglobina 13,8 g/dl, Plaquetas 145.000/microL. Leucocitos 7500/microL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome de Mirizzi.",
+      "b": "Cólico biliar.",
+      "c": "Colangitis.",
+      "d": "Coledocolitiasis."
+    },
+    "correcta": "b",
+    "explicacion": "Paciente de 44 años sin antecedentes previos que consulta por dolor súbito en hipocondrio derecho asociado a náuseas y vómitos.\nLaboratorio se presenta dentro de paramentros de referencia. El diagnóstico mas probable es cólico biliar.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-096",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un hombre de 73 años consulta a la guardia por distensión abdominal y vómitos sin eliminación de gases ni materia fecal. El estudio radiológico de abdomen muestra asas de intestino delgado distendidas con niveles hidroaéreos y aire en la vía biliar intrahepática (aerobilia). ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Cancer de colon derecho con perforación intestinal",
+      "b": "Colecistitis gangrenosa",
+      "c": "Ileo biliar",
+      "d": "Fistula gastroyeyunocolónica"
+    },
+    "correcta": "c",
+    "explicacion": "El ileo biliar es una complicación secundaria a litiasis vesicular no tratada de larga data, donde por múltiples episodios inflamatorios se genera una fistula entre la vía biliar y el intestino delgado (generalmente duodeno) permitiendo el pasaje de litos al intestino delgado.\nSi los litos son de gran tamaño puede provocar la oclusión intestinal.\nEl cuadro se manifiesta como un abdomen agudo oclusivo asociado a AEROBILIA.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-097",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En una diverticulitis colónica complicada con un absceso abdominal de seis centímetros de diámetro, ¿cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Drenaje laparoscópico",
+      "b": "Drenaje por cirugia abierta y operación de Hartmann",
+      "c": "Drenaje percutáneo",
+      "d": "Tratamiento médico con antibióticos de amplio espectro"
+    },
+    "correcta": "c",
+    "explicacion": "La diverticulitis es un cuadro inflamatorio que se produce por la perforación o microperforación de un diverticulo.\nSe manifiesta con dolor en fosa iliaca izquierda asociado a fiebre y en ocasiones a masa palpable.\nSe clasifica en HINCHEY I (responden satisfactoriamente al tratamiento médico) HINCHEY II (absceso menores a 3-4 cm responden satisfactoriamente a tratamiento médico, en caso que posean mayor tamaño está indicado el drenaje percutáneo) y HINCHEY III (peritonitis a punto diverticulo que tiene indicación quirúrgica).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-098",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Tomografía"
+    ],
+    "enunciado": "Ingresa a la guardia Carlos de 69 años, con dolor abdominal en fosa iliaca izquierda de 72 hs de evolución. Se encuentra febril y presenta leucocitosis. ¿Qué estudio solicitaría y cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Ecografia abdominal. Hernia inguinal izquierda no complicada.",
+      "b": "Tomografia computada. Diverticulitis aguda.",
+      "c": "Rx de abdomen de pie. Colecistitis aguda.",
+      "d": "Tomografia computada. Torsión testicular izquierda."
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clinica nos presenta un dolor abdominal agudo, en la fosa iliaca izquierda con fiebre.\nRecordar que es muy prevalente la diverticulitis aguda que simula una apendicitis pero del lado izquierdo.\nSe debe solicitar un estudio de imagen para realizar el diagnóstico y para una mayor valoración resulta recomendable realizar la TC abdominal se con contraste oral, intravenoso e incluso rectal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-099",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar"
+    ],
+    "enunciado": "En la presentación clínica de la colangitis aguda, la tríada de Charcot presenta:",
+    "opciones": {
+      "a": "Ictericia, coluria y acolia",
+      "b": "Ictericia, coluria y elevación de las enzimas colestásicas",
+      "c": "Ictericia, fiebre y elevación de las enzimas colestásicas",
+      "d": "Ictericia, fiebre y dolor abdominal"
+    },
+    "correcta": "d",
+    "explicacion": "La colangitis es una inflamación aguda del coledoco que se produce por una obstrucción al flujo biliar.\nLa clinica caracteristica es la triada de Charcot compuesta por el dolor abdominal tipo cólico biliar, la fiebre y la ictericia.\nLos cultivos tanto de sangre como de bilis suelen ser positvos.\nEn cuanto al tratamiento depende de si la colangitis es o no supurativa.\nDe no serlo se realiza tratamiento antibiótico y de ser supurativa es necesario el drenaje de la bilis infectada.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-100",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Paciente masculino de 70 años de edad, sin antecedentes quirúrgicos, consulta por presentar dolor abdominal localizado en epigastrio e hipocondrio derecho, asociado a náuseas, vómitos y registro febril de 38.1°C, de 48 horas de evolución. Al examen físico, se encuentra somnoliento, con TA=80/60 mmHg, con ictericia y dolor abdominal localizado en epigastrio e hipocondrio derecho. Signo de Murphy negativo. El laboratorio de ingreso presenta 17000 glóbulos blancos/mm3, bilirrubina total de 7.2 mg/dL, bilirrubina directa de 6.9 mg/dL, FAL: 205 UI/L, GOT: 429 UI/L GPT: 502 UI/L, acidosis metabólica. Ecografía abdominal muestra litiasis vesicular con dilatación de la vía biliar intrahepática con vía extrahepática no visible. Ante sospecha de colangitis. ¿Qué procedimiento debe realizarse?",
+    "opciones": {
+      "a": "Colecistectomía laparoscópica con colangiografia intraoperatoria.",
+      "b": "Colangiopancreatografia retrógrada endoscópica y colecistectomía laparoscópica posterior.",
+      "c": "Colecistectomia convencional y colangiografia intraoperatoria.",
+      "d": "Colecistectomía laparoscópica con colangiopancreatigrafia retrograda endoscópica postoperatoria"
+    },
+    "correcta": "b",
+    "explicacion": "Respuesta correcta: Colangitis = Colangiopancreatografía retrógrada endoscópica y colecistectomía laparoscópica posterior.\nEste enfoque es el adecuado para manejar una colangitis aguda asociada a litiasis vesicular y dilatación de la vía biliar intrahepática, permitiendo inicialmente descomprimir la vía biliar y luego proceder con la colecistectomía una vez estabilizado el paciente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-101",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Un paciente de 78 años presentó una colecistitis aguda y fue tratado con colecistectomía laparoscópica. Dos meses después consulta por un cuadro de colestasis con dolor en el hipocondrio derecho y fiebre en picos con bacteriemia. La ecografía muestra una vía biliar de 12 mm. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colangitis aguda por litiasis residual",
+      "b": "Absceso hepático",
+      "c": "Absceso subfrénico",
+      "d": "Lesión quirúrgica de la vía biliar"
+    },
+    "correcta": "a",
+    "explicacion": "Se define como colangitis aguda la infección de la vía biliar.\nLos pacientes se presentan con la triada de Charcot (fiebre con escalofrios + dolor + ictericia).\nEs caracteristica la dilatación de la vía biliar (en el caso clinico planteado presenta una via biliar de 12 mm).\nSe considera litiasis residual ya que se presenta previa a 2 años de postoperatorio sin sintomatologia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-102",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Cáncer colorrectal",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál se considera un factor de riesgo para el cáncer colorrectal (CCR)?",
+    "opciones": {
+      "a": "El antecedente de CCR en familiar directo",
+      "b": "La enfermedad diverticular",
+      "c": "La dieta rica en fibras",
+      "d": "El sindrome de colon irritable con constipación"
+    },
+    "correcta": "a",
+    "explicacion": "Aproximadamente el 70% de los CCR son esporádicos, el 25% relacionados con agregación familiar y el resto asociado a formas hereditarias.\nEs por ello que, además de las estrategias de cribado poblacional, es interesante conocer los factores de riesgo que identifican población susceptible de padecer CCR:\n\nPertenencia a familias con formas hereditarias de CCR (Lynch, PAF, MYH, etc.).\nEnfermedad inflamatoria intestinal.\n\nAntecedentes familiares de CCR (respuesta correcta)\n\nSignos o síntomas sugerentes de CCR.\n\nEdad > 50 años.\nDieta: parece que la carne roja o procesada incrementa ligeramente el riesgo de CCR frente a dietas ricas en fibra y fruta.\nObesidad.\n\nFalta de ejercicio físico.\n\nAlcohol.\n\nTabaco.\n\nUreterosigmoidectomía previa.\n\nRadioterapia abdominal.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-103",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Ingresa por guardia Esteban de 71 años de edad con un dolor abdominal agudo. La ecografía muestra litiasis vesicular múltiple. El laboratorio muestra leve alteración de las enzimas hepáticas sin ictericia y elevación de la amilasa sérica 10 veces, por encima del valor máximo normal. Señale el momento óptimo para realizar la cirugía laparoscópica:",
+    "opciones": {
+      "a": "Cuando los sintomas remiten.",
+      "b": "A los 3 meses del episodio agudo.",
+      "c": "A los 5 meses del episodio agudo.",
+      "d": "Al ingreso y diagnóstico de la pancreatitis aguda."
+    },
+    "correcta": "a",
+    "explicacion": "Para responder esta pregunta es importante tener en cuenta: ¿cuándo utilizar la cirugía en un caso de pancreatitis aguda?:\n\nPara eliminar la causa (litiásica):\n\nEn caso de pancreatitis aguda leve secundaria a litiasis se recomienda colecistectomía antes del alta para evitar recurrencia de la pancreatitis.\nSi la pancreatitis es litiásica pero hay datos de complicación local (necrosis, seudoquiste, etc.) o el curso clinico es torpido y complicado, se recomienda esperar hasta la resolución/estabilización de las complicaciones.\nLa colecistectomia laparoscópica se realiza previo al alta (hay estudios que sugieren realizarla durante los 3 primeros dias de la hospitalización).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-104",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "Una mujer de 67 años edad con antecedentes de tabaquismo, consulta por un dolor abdominal mal definido, de varios meses de evolución acompañado de fiebre, hiporexia y pérdida de peso de 1 mes de evolución. Durante el examen físico usted encuentra, como único hallazgo positivo al examen físico, un ganglio en el hueco supraclavicular izquierdo, adherido a planos profundos, indoloro, redondeado y de aproximadamente 1,5 cm de diámetro. Con estas características semiológicas, ¿cuál considera usted que es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Mononucleosis.",
+      "b": "Tuberculosis.",
+      "c": "Linfoma.",
+      "d": "Cáncer de páncreas."
+    },
+    "correcta": "d",
+    "explicacion": "El cuadro clínico nos presenta una mujer con dolor abdominal inespecífico y un sindrome constitucional + fiebre de 1 mes de evolución.\nTiene antecedentes de TBQ. Nos describen la presencia de un ganglio a nivel supraclavicular izquierdo.\n\nLos datos son bastante inespecificos.\nEl nódulo de Virchow (también llamado nódulo de Troisier) es un ganglio linfático situado en la fosa supraclavicular izquierda (el área por encima de la clavicula izquierda).\nRecibe el drenaje de vasos linfáticos en la cavidad abdominal.\nDe manera que uno de los diagnósticos probables puede ser el de una neoplasia a nivel abdominal (cáncer de páncreas respuesta correcta)\n\nPregunta rebuscada en su resolución porque los distractores TBC y linfoma podrían ser correctos también.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-105",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en una paciente de 55 años de edad que consulta por dolor en fosa ilíaca izquierda, fiebre de 38° C y constipación de 12 horas de evolución? En el examen físico presenta abdomen blando, doloroso a la palpación de flanco y fosa ilíaca izquierda sin reacción peritoneal y con ruidos hidroaéreos presentes.",
+    "opciones": {
+      "a": "Cólico renal izquierdo",
+      "b": "Recto sigmoiditis",
+      "c": "Absceso tuboovárico",
+      "d": "Diverticulitis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "La diverticulitis es un cuadro inflamatorio que se produce por la perforación o microperforación de un diverticulo.\nSe manifiesta con dolor en fosa iliaca izquierda asociado a fiebre y en ocasiones a masa palpable.\nAl exámen fisico se evidencia fiebre, abdomen blando con dolor en fosa iliaca izquierda, los ruidos hidroaéreos suelen estar presentes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-106",
+    "materia": [
+      "imagenes",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Ecografía"
+    ],
+    "enunciado": "¿Cuál es la sensibilidad de la ecografía para la detección de litiasis vesicular?",
+    "opciones": {
+      "a": "95-97%",
+      "b": "70-79%",
+      "c": "80-85%",
+      "d": "86-90%"
+    },
+    "correcta": "a",
+    "explicacion": "La ecografía es la técnica de imagen más sensible (95-97%) para el diagnóstico de la litiasis biliar.\nDetecta incluso el barro biliar. En la ecografía las litiasis se muestran como imágenes hiperecogénicas que dejan sombra posterior.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-107",
+    "materia": [
+      "oncologia",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Páncreas",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál de los siguientes marcadores tumorales puede ser útil para el seguimiento del cáncer de páncreas?:",
+    "opciones": {
+      "a": "CA 125.",
+      "b": "CA 19.9.",
+      "c": "Alfa-fetoproteina.",
+      "d": "CA 15.3."
+    },
+    "correcta": "b",
+    "explicacion": "Los marcadores tumorales tienen una utilidad limitada en el diagnóstico de neoplasias.\nSu mayor utilidad es en el seguimiento del tratamiento.\n\nRepasamos los marcadores tumorales: CA15.3: mama, CA 125: ovario, y siempre que exista irritación del peritoneo.\nAFP: hepatocarcinoma. CA 19.9: vía biliar y páncreas. hCG (gonadotrofina coriónica humana): tumores de extirpe germinal (tumores testiculares).\nPor ejemplo una apendicitis puede elevar el CA 125 y una colangitis aumenta el CA 19.9 sin que exista ningún tumor.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-108",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una característica de la colitis ulcerosa?",
+    "opciones": {
+      "a": "El recto es frecuentemente respetado",
+      "b": "En la endoscopia presenta \"lesión en empedrado\"",
+      "c": "Los ASCA muy frecuentemente dan positivos",
+      "d": "Los ANCA positivos son frecuentes"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad infalamatoria intestinal agrupa un conjunto de enfermedades que pueden afectar todo el trayecto del tubo digestivo.\nLa causa es inmunologica, la sintomatología se caracteriza por trastornos gastrointestinales pero tambien pueden afectarse órganos extraintestinales.\nCon respecto a la colitis ulcerosa, que se caracteriza por la inflamación del recto y la totalidad del colon, a nivel del laboratorio presentan reactantes de fase aguda aumentados y en un 60% de los pacientes con colitis ulcerosa se ha encontrado la positividad de los anticuerpos ANCA.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-109",
+    "materia": [
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Intestino delgado"
+    ],
+    "enunciado": "Un varón de 30 años consulta por distensión abdominal asociado a períodos de diarrea y constipación; ha presentado ocasionalmente episodios de hematoquezia y se le realizó videoendoscopía digestiva observándose áreas con pequeñas úlceras superficiales separadas por mucosa normal en el yeyuno y en la porción terminal del íleon. Adjunta hemograma: hematocrito 33%, leucocitos 13.500/mm3 y eritrosedimentación 85 mm. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colitis por Shigella sp.",
+      "b": "Colitis ulcerosa.",
+      "c": "Enfermedad de Crohn.",
+      "d": "Colitis pseudomembranosa."
+    },
+    "correcta": "c",
+    "explicacion": "Enfermedad de Crohn: Enfermedad inflamatoria que puede afectar a cualquier tramo del aparato digestivo.\nLo hace de forma parcheada y se diferencia de la colitis ulcerosa en que la afectación es transmural y no sólo mucosa.\nLa localización más frecuente es el ileon terminal el dolor suele localizarse en la fosa iliaca derecha (diagnóstico diferencial: apendicitis aguda).\nCursa en brotes.\n\nLa imagen endoscópica muestra pequeñas úlceras lineales o serpiginosas rodeadas de mucosa normal, pudiendo asociarse fistulas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-110",
+    "materia": [
+      "gastroenterologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Colon",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál de las siguientes conductas estaría indicada en un paciente de 56 años con antecedentes de diverticulosis colónica que presenta dolor de inicio gradual y constante en fosa iliaca izquierda y fiebre? En el examen físico presenta dolor a la palpación en dicha zona y tiene recuento de glóbulos blancos de 14.000/mm3 con neutrofilia.",
+    "opciones": {
+      "a": "Indicar tratamiento con clindamicina más cefadroxilo y evaluar evolución",
+      "b": "Realizar fibrocolonoscopia para determinar perforación intestinal",
+      "c": "Realizar laparotomia de urgencia para resección intestinal",
+      "d": "Indicar tratamiento con ciprofloxacina más metronidazol y evaluar evolución"
+    },
+    "correcta": "d",
+    "explicacion": "La diverticulosis es la existencia de diverticulos en el colon que son herniaciones de la mucosa y la submucosa a traves de la muscular.\nLa localización mas frecuente de los diverticulos es el colon izquierdo. La diverticulitis es la inflamación de los diverticulos.\nSe manifiesta con dolor localizado habitualmente en la fosa iliaca izquierda asociado a fiebre y anorexia.\nEn el examen fisico se presenta aumento de la sensibilidad a la palpación de la fosa iliaca y cuando existe perforación pueden aparecen signos de irritación peritoneal.\nLa leucocitosis esta presente en la mayoria de los pacientes.\nLa tomografia computada de torax con contraste oral y ev es el estudio de elección en cuando se sospecha el diagnostico.\nLa diverticulitis no complicada debe tratarse en forma ambulatoria con ciprofloxacina y metronidazol durante 7 a 10 dias.\nLos pacientes con abscesos pueden ser tratados mediante drenaje percutaneo guiado por tomografia computada.\nLa diverticulitis perforada requiere un abordaje mas invasivo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "gastro-003-111",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Vía biliar",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Ante un paciente que ingresa con un cuadro de colangitis aguda grave litiásica y falla de órganos, luego de la reanimación inicial. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "a": "Cirugía laparoscópica de urgencia",
+      "b": "Cirugia convencional de urgencia",
+      "c": "Tratamiento endoscópico",
+      "d": "Colangioresonancia y cirugía laparoscópica"
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento inicial de la colangitis aguda es la administración de antibióticos que deberán indicarse por 7 a 14 dias.\nEn caso que se pueda realizar, en el centro de atención, una colangiopancreatografia retrógrada endoscópica (CPRE) asociada a papilotomía, disminuye la morbilidad y además permite la extracción de litos o la colocación de stent.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
+
+  
