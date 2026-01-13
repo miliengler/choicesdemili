@@ -431,20 +431,20 @@ const EXAMENES_META = [
   })),
 
   /* ---------- Privados / Austral ---------- */
-  // 1. OFICIALES (Incluye el 2021 real)
+  // 1. OFICIALES (Estos quedan en el grupo "Austral")
   ...[
     2021,2022,2023,2024
   ].map(y => ({
     id: `austral_${y}`,
-    grupo: "Austral",
+    grupo: "Austral", 
     anio: y,
     file: `bancos/anteriores/privados/austral/austral_${y}.json`,
   })),
 
-  // 2. SIMULACRO (Diferenciado por el texto en 'anio')
+  // 2. SIMULACRO (LE CAMBIAMOS EL GRUPO PARA QUE NO SE TOQUEN)
   {
     id: "austral_2021_simulacro",
-    grupo: "Austral",
+    grupo: "Simulacro Austral",   // 👈 ANTES DECÍA "Austral"
     anio: "Simulacro 2021", 
     file: "bancos/anteriores/privados/austral/austral_2021_simulacro.json",
   },
