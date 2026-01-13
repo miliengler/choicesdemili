@@ -610,16 +610,17 @@ function renderSidebarCells() {
   return out.join("");
 }
 function irAPregunta(idx) { if (idx < 0 || idx >= CURRENT.list.length) return; CURRENT.i = idx; renderPregunta(); }
-/* --- HELPER PARA IMÁGENES DE EXPLICACIÓN --- */
+
+/* --- HELPER PARA IMÁGENES DE EXPLICACIÓN (Sin texto abajo) --- */
 function renderImagenesExplicacion(imgs) {
     if (!Array.isArray(imgs) || !imgs.length) return "";
     return `
       <div class="expl-img-container">
          ${imgs.map((src, idx) => `
             <img src="${src}" class="expl-img-thumb" 
-                 onclick="openImgModal('${src}', 'Algoritmo / Explicación')" 
-                 alt="Algoritmo" loading="lazy">
-            <div style="font-size:11px; color:#64748b; margin-top:4px;">🔍 Ver algoritmo</div>
+                 onclick="openImgModal('${src}', 'Imagen de Referencia')" 
+                 alt="Imagen explicativa" loading="lazy" 
+                 title="Clic para ampliar">
          `).join("")}
       </div>
     `;
