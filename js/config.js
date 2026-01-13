@@ -441,6 +441,15 @@ const EXAMENES_META = [
     file: `bancos/anteriores/privados/austral/austral_${y}.json`,
   })),
 
+  // 👇 AGREGADO MANUAL: SIMULACRO 2021
+  {
+    id: "austral_2021_simulacro",
+    grupo: "Austral",
+    anio: "Simulacro 2021", 
+    file: "bancos/anteriores/privados/austral/austral_2021_simulacro.json",
+  },
+
+
   /* ---------- Privados / Británico ---------- */
   ...[
     2015,2021
