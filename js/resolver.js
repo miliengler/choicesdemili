@@ -76,16 +76,15 @@ function renderPregunta() {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // --- DATOS DE NOTAS Y FAVORITOS ---
+  // Datos de notas y favoritos
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const currentNote = savedNotes[q.id]; 
   const noteText = currentNote ? currentNote.text : "";
   const hasNote = !!noteText;
-
   const favorites = JSON.parse(localStorage.getItem("mebank_favorites") || "[]");
   const isFav = favorites.includes(q.id);
 
-  // --- BADGE ---
+  // Badge Oficial
   let badgeHTML = "";
   if (q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
@@ -94,7 +93,7 @@ function renderPregunta() {
       badgeHTML = `<div class="badge-oficial"><span style="font-size:1.1em; margin-right:4px;">⭐️</span> PREGUNTA TOMADA <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span></div>`;
   }
 
-  // --- OPCIONES ---
+  // Opciones
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
@@ -110,37 +109,41 @@ function renderPregunta() {
     return `<label class="${claseCSS}" id="opt-${idx}" ${eventHandler}><span class="q-option-letter">${letra})</span><span class="q-option-text">${texto}</span></label>`;
   }).join("");
 
-  // --- EXPLICACIÓN ---
+  // --- LOGICA EXPLICACIÓN (CON IMÁGENES) ---
   let explicacionInicial = "";
   if (q.explicacion && ( (!isExamMode && yaRespondio) || isReview )) {
-      explicacionInicial = `<div class="q-explanation fade"><strong>💡 Explicación:</strong><br>${q.explicacion}<div style="margin-top:10px; text-align:right;"><button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button></div></div>`;
+      // Verificamos si hay imágenes extra para la explicación
+      const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
+      
+      explicacionInicial = `
+        <div class="q-explanation fade">
+            <strong>💡 Explicación:</strong><br>
+            ${q.explicacion}
+            ${imgsExpl} <div style="margin-top:10px; text-align:right;">
+                <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
+            </div>
+        </div>`;
   }
 
-  // --- CSS LOCAL ---
+  // CSS Local
   const localStyles = `
     <style>
-        /* Botonera de Navegación */
         .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px; padding-top: 15px; border-top: 1px solid #f1f5f9; }
         .nav-group { display: flex; gap: 10px; }
-        .btn-res {
-            padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer;
-            border: 1px solid #e2e8f0; background: white; color: #475569; transition: all 0.2s; display: flex; align-items: center; gap: 6px;
-        }
+        .btn-res { padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid #e2e8f0; background: white; color: #475569; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
         .btn-res:hover { background: #f8fafc; color: #1e293b; border-color: #cbd5e1; }
         .btn-res:disabled { opacity: 0.5; cursor: not-allowed; }
-
-        /* Barra de Acciones (Compacta) */
         .action-bar { display: flex; gap: 8px; margin-top: 20px; border-top: 1px dashed #e2e8f0; padding-top: 12px; }
-        .btn-action-user {
-            flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;
-            padding: 8px 10px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer;
-            border: 1px solid #e2e8f0; background: white; color: #64748b; transition: all 0.2s;
-        }
+        .btn-action-user { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 10px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid #e2e8f0; background: white; color: #64748b; transition: all 0.2s; }
         .btn-action-user:hover { background: #f8fafc; color: #334155; }
         .btn-action-user.has-note { background: #fefce8; border-color: #facc15; color: #854d0e; }
         .btn-action-user.is-fav { background: #1e293b; border-color: #0f172a; color: white; }
-
         .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: #f8fafc; border-radius: 8px; }
+        
+        /* Estilo para imágenes de explicación */
+        .expl-img-container { margin-top:15px; text-align:center; }
+        .expl-img-thumb { max-width: 100%; border-radius: 8px; border: 1px solid #cbd5e1; cursor: zoom-in; transition: transform 0.2s; }
+        .expl-img-thumb:hover { transform: scale(1.02); }
     </style>
   `;
 
@@ -179,16 +182,9 @@ function renderPregunta() {
           </div>
 
           <div class="nav-container">
-            <div class="nav-group">
-                <button class="btn-res" onclick="salirResolucion()">🚪 Salir</button>
-                <button class="btn-res" onclick="intentarFinalizar()">🏁 Finalizar</button>
-            </div>
-            <div class="nav-group">
-                <button class="btn-res" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button>
-                <button class="btn-res" onclick="nextQuestion()" ${CURRENT.i === total - 1 ? "disabled" : ""}>Siguiente ➡</button>
-            </div>
+            <div class="nav-group"><button class="btn-res" onclick="salirResolucion()">🚪 Salir</button><button class="btn-res" onclick="intentarFinalizar()">🏁 Finalizar</button></div>
+            <div class="nav-group"><button class="btn-res" onclick="prevQuestion()" ${CURRENT.i === 0 ? "disabled" : ""}>⬅ Anterior</button><button class="btn-res" onclick="nextQuestion()" ${CURRENT.i === total - 1 ? "disabled" : ""}>Siguiente ➡</button></div>
           </div>
-
         </div>
       </div>
       <aside class="q-sidebar" id="sidebarEl">
@@ -200,6 +196,7 @@ function renderPregunta() {
   `;
   paintSidebarPageInfo();
 }
+
 
 /* ==========================================================
    ⚡️ RESPUESTA
@@ -252,14 +249,26 @@ function answer(selectedIndex) {
       });
   }
 
+  // --- MOSTRAR EXPLICACIÓN (CON IMÁGENES) AL RESPONDER ---
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
-          holder.innerHTML = `<div class="q-explanation fade" style="animation: fadeIn 0.5s ease;"><strong>💡 Explicación:</strong><br>${q.explicacion}<div style="margin-top:10px; text-align:right;"><button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button></div></div>`;
+          const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
+          
+          holder.innerHTML = `
+            <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
+               <strong>💡 Explicación:</strong><br>${q.explicacion}
+               ${imgsExpl}
+               <div style="margin-top:10px; text-align:right;">
+                  <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
+               </div>
+            </div>
+          `;
       }
   }
   refreshSidebarContent();
 }
+
 
 /* ==========================================================
    ⏮ ⏭ NAVEGACIÓN
@@ -601,3 +610,17 @@ function renderSidebarCells() {
   return out.join("");
 }
 function irAPregunta(idx) { if (idx < 0 || idx >= CURRENT.list.length) return; CURRENT.i = idx; renderPregunta(); }
+/* --- HELPER PARA IMÁGENES DE EXPLICACIÓN --- */
+function renderImagenesExplicacion(imgs) {
+    if (!Array.isArray(imgs) || !imgs.length) return "";
+    return `
+      <div class="expl-img-container">
+         ${imgs.map((src, idx) => `
+            <img src="${src}" class="expl-img-thumb" 
+                 onclick="openImgModal('${src}', 'Algoritmo / Explicación')" 
+                 alt="Algoritmo" loading="lazy">
+            <div style="font-size:11px; color:#64748b; margin-top:4px;">🔍 Ver algoritmo</div>
+         `).join("")}
+      </div>
+    `;
+}
