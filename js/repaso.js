@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 4.0 – Módulo de Repaso (Smart Modal & Navigation)
+   📚 MEbank 4.1 – Módulo de Repaso (FINAL - FIXED)
    ========================================================== */
 
 let REPASO_FILTER = 'all'; 
@@ -63,12 +63,14 @@ function renderRepasoShell(container) {
       @media (min-width: 768px) { .modal-content { border-radius: 16px; height: 85vh; } }
       @keyframes zoomIn { from { opacity:0; transform:scale(0.95); } to { opacity:1; transform:scale(1); } }
 
-      /* Cabecera Modal con Navegación */
+      /* Cabecera Modal */
       .modal-header { padding: 15px 20px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; background: #f8fafc; border-radius: 16px 16px 0 0; }
       .nav-controls { display: flex; gap: 10px; align-items: center; }
       .btn-nav { background: white; border: 1px solid #cbd5e1; color: #334155; width: 36px; height: 36px; border-radius: 8px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.1s; }
       .btn-nav:hover { background: #e2e8f0; border-color: #94a3b8; }
       .btn-nav:disabled { opacity: 0.3; cursor: not-allowed; }
+      .btn-close-modal { width: 30px; height: 30px; border: none; background: transparent; font-size: 24px; color: #94a3b8; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+      .btn-close-modal:hover { color: #ef4444; }
       
       /* Cuerpo Modal */
       .modal-body { flex: 1; overflow-y: auto; padding: 25px; scroll-behavior: smooth; position: relative; }
@@ -79,13 +81,30 @@ function renderRepasoShell(container) {
       .mq-opt.correct { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
       .mq-opt.wrong { border-color: #ef4444; background: #fef2f2; opacity: 0.7; }
       
-      .mq-expl { margin-top: 25px; padding: 20px; background: #f1f5f9; border-radius: 10px; font-size: 14px; line-height: 1.6; color: #334155; display: none; border-left: 4px solid #64748b; }
-      .mq-expl.visible { display: block; animation: fadeIn 0.4s; }
-      
+      /* Clases para letras de opciones */
+      .mq-opt-letter { font-weight: 700; color: #64748b; margin-right: 8px; min-width: 20px; }
+      .mq-opt.wrong .mq-opt-letter { color: #ef4444; }
+      .mq-opt.correct .mq-opt-letter { color: #166534; }
+
+      /* --- EXPLICACIÓN (Corrección Display) --- */
+      .mq-expl { 
+          margin-top: 25px; 
+          padding: 20px; 
+          background: #f1f5f9; 
+          border-radius: 10px; 
+          font-size: 14px; 
+          line-height: 1.6; 
+          color: #334155; 
+          display: none; /* Oculto por defecto */
+          border-left: 4px solid #64748b; 
+      }
+      .mq-expl.visible { 
+          display: block !important; /* Forzar mostrado */
+          animation: fadeIn 0.4s; 
+      }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
       .match-badge { font-size: 11px; background: #fef9c3; color: #854d0e; padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid #fde047; display: inline-flex; align-items: center; gap: 4px; }
-      
-      .btn-close-modal { width: 30px; height: 30px; border: none; background: transparent; font-size: 24px; color: #94a3b8; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-      .btn-close-modal:hover { color: #ef4444; }
     </style>
   `;
 
@@ -131,7 +150,8 @@ function renderRepasoShell(container) {
                        </div>
                        <div style="display:flex; flex-direction:column;">
                            <span style="font-weight:700; color:#475569; font-size:13px;" id="modal-meta">Materia</span>
-                           <span id="modal-match-info"></span> </div>
+                           <span id="modal-match-info"></span> 
+                       </div>
                    </div>
                    <button class="btn-close-modal" onclick="cerrarModalRepaso()">×</button>
                </div>
@@ -184,7 +204,7 @@ function updateRepasoList() {
   // GUARDAMOS LA LISTA GLOBALMENTE PARA LA NAVEGACIÓN
   CURRENT_REPASO_LIST = list;
 
-  const displayList = list.slice(0, 50); // Solo mostramos 50 en la lista visual (por rendimiento)
+  const displayList = list.slice(0, 50);
 
   if (list.length === 0) {
       container.innerHTML = `<div style="text-align:center; padding:60px 20px; color:#94a3b8;"><div style="font-size:48px; margin-bottom:15px; opacity:0.5;">🔍</div><p>No se encontraron resultados.</p></div>`;
@@ -211,18 +231,15 @@ function updateRepasoList() {
 
 /* 3. LÓGICA DEL MODAL INTELIGENTE */
 
-// Abre buscando el ID en la lista actual para setear el índice
 function abrirModalRepasoPorID(qid) {
     const index = CURRENT_REPASO_LIST.findIndex(q => q.id === qid);
     if (index !== -1) {
         renderModalQuestion(index);
-        // Abrir modal visualmente
         document.getElementById("repaso-modal").style.display = "flex";
         document.body.style.overflow = "hidden";
     }
 }
 
-// Renderiza la pregunta basada en el índice de la lista global
 function renderModalQuestion(index) {
     if (index < 0 || index >= CURRENT_REPASO_LIST.length) return;
     
@@ -247,7 +264,7 @@ function renderModalQuestion(index) {
         const noteMatches = (userNote || "").toLowerCase().includes(term);
         
         if (explMatches && noteMatches) matchInfoHTML = `<span class="match-badge">⚠️ Ojo: "${REPASO_SEARCH}" está en Explicación y Notas</span>`;
-        else if (explMatches) matchInfoHTML = `<span class="match-badge">⚠️ Encontrado en Explicación (Responder para ver)</span>`;
+        else if (explMatches) matchInfoHTML = `<span class="match-badge">⚠️ Encontrado en Explicación</span>`;
         else if (noteMatches) matchInfoHTML = `<span class="match-badge">📝 Encontrado en tus Notas</span>`;
     }
     document.getElementById("modal-match-info").innerHTML = matchInfoHTML;
@@ -256,9 +273,9 @@ function renderModalQuestion(index) {
     const body = document.getElementById("modal-body-content");
     const opcionesHTML = getOpcionesArray(q).map((txt, idx) => {
         const letra = String.fromCharCode(97 + idx);
-        // Resaltamos texto en las opciones también
+        // CORRECCIÓN: Usamos la clase mq-opt-letter para que JS pueda encontrarla luego
         return `<div class="mq-opt" id="mopt-${idx}" onclick="checkModalAnswer(${idx})">
-                  <span style="font-weight:bold; color:#64748b; margin-right:8px;">${letra})</span>
+                  <span class="mq-opt-letter">${letra})</span>
                   <span>${highlightSearchTerm(txt, REPASO_SEARCH)}</span>
                 </div>`;
     }).join("");
@@ -302,24 +319,23 @@ function checkModalAnswer(selectedIndex) {
         el.style.cursor = "default";
         if (idx === correctIndex) {
             el.classList.add("correct");
-            // Agregar check ✓
+            // CORRECCIÓN: Ahora sí encuentra el elemento porque le pusimos la clase
             el.querySelector(".mq-opt-letter").innerHTML = "✓";
         } else if (idx === selectedIndex) {
             el.classList.add("wrong");
-            // Agregar cruz ✕
             el.querySelector(".mq-opt-letter").innerHTML = "✕";
         } else {
             el.style.opacity = "0.5";
         }
     });
 
-    // 3. MOSTRAR EXPLICACIÓN Y SCROLLEAR HACIA ELLA
+    // 3. MOSTRAR EXPLICACIÓN Y SCROLLEAR
     const explDiv = document.getElementById("modal-expl");
     if (explDiv) {
-        explDiv.style.display = "block"; // Forzamos el display
+        explDiv.style.display = "block"; 
         setTimeout(() => {
-             explDiv.classList.add("visible"); // Activamos animación
-             // 👇 ESTO ES LO NUEVO: Scrollear suave hasta la explicación
+             explDiv.classList.add("visible"); 
+             // Scroll suave hasta la explicación
              explDiv.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 50);
     }
@@ -355,8 +371,6 @@ function getMateriaNombre(slug) { if (typeof BANK !== 'undefined' && BANK.subjec
 function highlightSearchTerm(text, term) {
     if (!term || term.trim() === "" || typeof text !== 'string') return text;
     const safeTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    // Regex segura que no rompa HTML tags (basic approach)
-    // Nota: Esto resalta todo, si coincide dentro de una tag HTML podría romper, pero para texto plano de preguntas está bien.
     const regex = new RegExp(`(${safeTerm})`, "gi");
     return text.replace(regex, '<mark style="background:#fef08a; color:#854d0e; padding:0 2px; border-radius:2px;">$1</mark>');
 }
