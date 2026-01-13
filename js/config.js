@@ -385,7 +385,6 @@ const SUBTEMAS = {
    - Usamos tus carpetas reales en /bancos/anteriores
    - Si después agregás alguno más, lo sumamos acá
    ---------------------------------------------------------- */
-
 /* ==========================================================
    📘 EXÁMENES ANTERIORES – Rutas exactas según tu proyecto
    ========================================================== */
@@ -432,6 +431,7 @@ const EXAMENES_META = [
   })),
 
   /* ---------- Privados / Austral ---------- */
+  // 1. OFICIALES (Incluye el 2021 real)
   ...[
     2021,2022,2023,2024
   ].map(y => ({
@@ -441,7 +441,7 @@ const EXAMENES_META = [
     file: `bancos/anteriores/privados/austral/austral_${y}.json`,
   })),
 
-  // 👇 AGREGADO MANUAL: SIMULACRO 2021
+  // 2. SIMULACRO (Diferenciado por el texto en 'anio')
   {
     id: "austral_2021_simulacro",
     grupo: "Austral",
@@ -449,8 +449,8 @@ const EXAMENES_META = [
     file: "bancos/anteriores/privados/austral/austral_2021_simulacro.json",
   },
 
-
   /* ---------- Privados / Británico ---------- */
+  // 1. OFICIALES (Incluye el 2021 real)
   ...[
     2015,2021
   ].map(y => ({
@@ -459,6 +459,14 @@ const EXAMENES_META = [
     anio: y,
     file: `bancos/anteriores/privados/britanico/britanico_${y}.json`,
   })),
+
+  // 2. SIMULACRO (Diferenciado por el texto en 'anio')
+  {
+    id: "britanico_2021_simulacro",
+    grupo: "Británico",
+    anio: "Simulacro 2021",
+    file: "bancos/anteriores/privados/britanico/britanico_2021_simulacro.json",
+  },
 
   /* ---------- Privados / CEMIC ---------- */
   {
@@ -492,3 +500,4 @@ const EXAMENES_META = [
     file: "bancos/anteriores/privados/italiano/italiano_2015.json",
   },
 ];
+
