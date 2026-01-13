@@ -45,29 +45,31 @@
     "anio": 2021,
     "oficial": true
   },
-  {
-    "id": "austral_2021_sim_003",
-    "materia": [
-      "urologia"
-    ],
-    "submateria": [
-      "Glomerulonefritis primaria"
-    ],
-    "enunciado": "¿Cuál de las siguientes glomerulopatías se encuentra más frecuentemente asociada a neoplasias?",
-    "opciones": {
-      "a": "GNF Mesangial por depósito de IgA",
-      "b": "GN membranoproliferativa asociada a crioglobulinemia",
-      "c": "GNF membranosa",
-      "d": "GNF ANCA positiva"
-    },
-    "correcta": "b",
-    "explicacion": "Es una glomerulonefritis regulada por mecanismos inmunitarios, que se caracteriza por engrosamiento de la membrana basal glomerular con cambios mesangioproliferativos; 70% de los enfermos muestran hipocomplementemia. La entidad se subdivide, según su cuadro patológico, en tipos I, II y III. La MPGN de tipo I suele acompañar a la hepatitis C persistente, enfermedades autoinmunitarias como el lupus o la crioglobulinemia o enfermedades neoplásicas.",
-    "explicacion_img": [“img/explicaciones/glomerulonefritis_membranoproliferativa_tipos.jpg”]
-    "imagen": [],
-    "examen": "Simulacro Austral",
-    "anio": 2021,
-    "oficial": true
+{
+  "id": "austral_2021_sim_003",
+  "materia": [
+    "urologia"
+  ],
+  "submateria": [
+    "Glomerulonefritis primaria"
+  ],
+  "enunciado": "¿Cuál de las siguientes glomerulopatías se encuentra más frecuentemente asociada a neoplasias?",
+  "opciones": {
+    "a": "GNF Mesangial por depósito de IgA",
+    "b": "GN membranoproliferativa asociada a crioglobulinemia",
+    "c": "GNF membranosa",
+    "d": "GNF ANCA positiva"
   },
+  "correcta": "b",
+  "explicacion": "Es una glomerulonefritis regulada por mecanismos inmunitarios, que se caracteriza por engrosamiento de la membrana basal glomerular con cambios mesangioproliferativos; 70% de los enfermos muestran hipocomplementemia. La entidad se subdivide, según su cuadro patológico, en tipos I, II y III. La MPGN de tipo I suele acompañar a la hepatitis C persistente, enfermedades autoinmunitarias como el lupus o la crioglobulinemia o enfermedades neoplásicas.",
+  "explicacion_img": [
+    "img/explicaciones/glomerulonefritis_membranoproliferativa_tipos.jpg"
+  ],
+  "imagen": [],
+  "examen": "Simulacro Austral",
+  "anio": 2021,
+  "oficial": true
+},
   {
     "id": "austral_2021_sim_004",
     "materia": [
