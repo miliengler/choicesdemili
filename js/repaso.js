@@ -291,20 +291,40 @@ function checkModalAnswer(selectedIndex) {
     const q = CURRENT_REPASO_LIST[CURRENT_Q_INDEX];
     if (!q) return;
 
+    // 1. Verificar respuesta
     const opciones = getOpcionesArray(q);
     const correctIndex = getCorrectIndex(q, opciones.length);
 
+    // 2. Marcar visualmente (Verde/Rojo)
     const allOpts = document.querySelectorAll(".mq-opt");
     allOpts.forEach((el, idx) => {
-        el.onclick = null;
+        el.onclick = null; // Bloquear nuevos clicks
         el.style.cursor = "default";
-        if (idx === correctIndex) el.classList.add("correct");
-        else if (idx === selectedIndex) el.classList.add("wrong");
-        else el.style.opacity = "0.5";
+        if (idx === correctIndex) {
+            el.classList.add("correct");
+            // Agregar check ✓
+            el.querySelector(".mq-opt-letter").innerHTML = "✓";
+        } else if (idx === selectedIndex) {
+            el.classList.add("wrong");
+            // Agregar cruz ✕
+            el.querySelector(".mq-opt-letter").innerHTML = "✕";
+        } else {
+            el.style.opacity = "0.5";
+        }
     });
 
-    document.getElementById("modal-expl").classList.add("visible");
+    // 3. MOSTRAR EXPLICACIÓN Y SCROLLEAR HACIA ELLA
+    const explDiv = document.getElementById("modal-expl");
+    if (explDiv) {
+        explDiv.style.display = "block"; // Forzamos el display
+        setTimeout(() => {
+             explDiv.classList.add("visible"); // Activamos animación
+             // 👇 ESTO ES LO NUEVO: Scrollear suave hasta la explicación
+             explDiv.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 50);
+    }
 }
+
 
 function navegarModal(offset) {
     const newIndex = CURRENT_Q_INDEX + offset;
