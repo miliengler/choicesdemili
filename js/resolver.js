@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Optimizado)
+   🎯 MEbank 3.0 – Motor de resolución (Con Texto Formateado)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -98,6 +98,10 @@ function renderPregunta() {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
     let eventHandler = `onclick="answer(${idx})"`;
+    
+    // Formateamos también el texto de las opciones por si tienen negritas
+    let textoFormateado = parsearTexto(texto);
+
     if ((!isExamMode && yaRespondio) || isReview) {
         claseCSS += " q-option-locked"; 
         eventHandler = ""; 
@@ -106,43 +110,49 @@ function renderPregunta() {
     } else if (isExamMode && idx === userIdx) {
         claseCSS += " option-selected-neutral"; 
     }
-    return `<label class="${claseCSS}" id="opt-${idx}" ${eventHandler}><span class="q-option-letter">${letra})</span><span class="q-option-text">${texto}</span></label>`;
+    return `<label class="${claseCSS}" id="opt-${idx}" ${eventHandler}><span class="q-option-letter">${letra})</span><span class="q-option-text">${textoFormateado}</span></label>`;
   }).join("");
 
-  // --- LOGICA EXPLICACIÓN (CON IMÁGENES) ---
+  // --- LOGICA EXPLICACIÓN (FORMATEADA) ---
   let explicacionInicial = "";
   if (q.explicacion && ( (!isExamMode && yaRespondio) || isReview )) {
-      // Verificamos si hay imágenes extra para la explicación
       const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
       
+      // APLICAMOS EL PARSEO DE TEXTO AQUÍ 👇
+      const explicacionFormateada = parsearTexto(q.explicacion);
+
       explicacionInicial = `
         <div class="q-explanation fade">
-            <strong>💡 Explicación:</strong><br>
-            ${q.explicacion}
-            ${imgsExpl} <div style="margin-top:10px; text-align:right;">
+            <div style="margin-bottom:8px;"><strong>💡 Explicación:</strong></div>
+            <div style="line-height:1.6;">${explicacionFormateada}</div>
+            ${imgsExpl} 
+            <div style="margin-top:10px; text-align:right;">
                 <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
             </div>
         </div>`;
   }
 
-  // CSS Local
+  // Parseamos el enunciado principal
+  const enunciadoFormateado = parsearTexto(q.enunciado);
+
   const localStyles = `
     <style>
-        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px; padding-top: 15px; border-top: 1px solid #f1f5f9; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--border-color); }
         .nav-group { display: flex; gap: 10px; }
-        .btn-res { padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid #e2e8f0; background: white; color: #475569; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
-        .btn-res:hover { background: #f8fafc; color: #1e293b; border-color: #cbd5e1; }
+        .btn-res { padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-muted); transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+        .btn-res:hover { background: var(--bg-subtle); color: var(--text-main); }
         .btn-res:disabled { opacity: 0.5; cursor: not-allowed; }
-        .action-bar { display: flex; gap: 8px; margin-top: 20px; border-top: 1px dashed #e2e8f0; padding-top: 12px; }
-        .btn-action-user { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 10px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid #e2e8f0; background: white; color: #64748b; transition: all 0.2s; }
-        .btn-action-user:hover { background: #f8fafc; color: #334155; }
+        .action-bar { display: flex; gap: 8px; margin-top: 20px; border-top: 1px dashed var(--border-color); padding-top: 12px; }
+        .btn-action-user { flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 10px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-muted); transition: all 0.2s; }
+        .btn-action-user:hover { background: var(--bg-subtle); color: var(--text-main); }
         .btn-action-user.has-note { background: #fefce8; border-color: #facc15; color: #854d0e; }
         .btn-action-user.is-fav { background: #1e293b; border-color: #0f172a; color: white; }
-        .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: #f8fafc; border-radius: 8px; }
-        
-        /* Estilo para imágenes de explicación */
+        [data-theme="dark"] .btn-action-user.is-fav { background: #3b82f6; border-color: #3b82f6; color: white; }
+        [data-theme="dark"] .btn-action-user.has-note { background: #451a03; border-color: #d97706; color: #fbbf24; }
+
+        .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: var(--bg-subtle); border-radius: 8px; }
         .expl-img-container { margin-top:15px; text-align:center; }
-        .expl-img-thumb { max-width: 100%; border-radius: 8px; border: 1px solid #cbd5e1; cursor: zoom-in; transition: transform 0.2s; }
+        .expl-img-thumb { max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color); cursor: zoom-in; transition: transform 0.2s; }
         .expl-img-thumb:hover { transform: scale(1.02); }
     </style>
   `;
@@ -160,7 +170,7 @@ function renderPregunta() {
             <div class="q-meta"><span class="q-materia">${materiaNombre}</span></div>
           </div>
           ${badgeHTML}
-          <div class="q-enunciado">${q.enunciado}</div>
+          <div class="q-enunciado">${enunciadoFormateado}</div>
           ${q.imagenes ? renderImagenesPregunta(q.imagenes) : ""}
           <div class="q-options">${opcionesHTML || `<p class="small">(Sin opciones)</p>`}</div>
           <div id="explanation-holder">${explicacionInicial}</div>
@@ -175,7 +185,7 @@ function renderPregunta() {
           </div>
 
           <div id="note-area-${q.id}" style="display:none; margin-top:10px;">
-                <textarea id="note-text-${q.id}" placeholder="Escribí acá..." style="width:100%; height:80px; padding:10px; border:1px solid #cbd5e1; border-radius:6px; font-family:inherit;">${noteText}</textarea>
+                <textarea id="note-text-${q.id}" placeholder="Escribí acá..." style="width:100%; height:80px; padding:10px; border:1px solid var(--border-color); border-radius:6px; font-family:inherit; background:var(--bg-input); color:var(--text-main);">${noteText}</textarea>
                 <div style="margin-top:6px; text-align:right;">
                    <button class="btn-small" style="background:#3b82f6; color:white; border:none;" onclick="saveNoteResolver('${q.id}')">💾 Guardar</button>
                 </div>
@@ -189,7 +199,7 @@ function renderPregunta() {
       </div>
       <aside class="q-sidebar" id="sidebarEl">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;"><div class="q-sidebar-header" style="margin:0;">Índice</div><button class="btn-small btn-close-mobile" onclick="toggleMobileSidebar()">✖</button></div>
-        <div class="sb-pager-row"><button class="btn-small" style="padding:4px 10px;" onclick="sbPrevPage()">◀</button><span class="q-sidebar-pageinfo" id="sbInfo" style="font-weight:600; font-size:13px; color:#475569;">...</span><button class="btn-small" style="padding:4px 10px;" onclick="sbNextPage()">▶</button></div>
+        <div class="sb-pager-row"><button class="btn-small" style="padding:4px 10px;" onclick="sbPrevPage()">◀</button><span class="q-sidebar-pageinfo" id="sbInfo" style="font-weight:600; font-size:13px; color:var(--text-muted);">...</span><button class="btn-small" style="padding:4px 10px;" onclick="sbNextPage()">▶</button></div>
         <div class="q-sidebar-grid" id="sbGrid">${renderSidebarCells()}</div>
       </aside>
     </div>
@@ -249,15 +259,19 @@ function answer(selectedIndex) {
       });
   }
 
-  // --- MOSTRAR EXPLICACIÓN (CON IMÁGENES) AL RESPONDER ---
+  // --- MOSTRAR EXPLICACIÓN (FORMATEADA) ---
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
           const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
           
+          // PARSEAMOS AL RESPONDER TAMBIÉN 👇
+          const explicacionFormateada = parsearTexto(q.explicacion);
+
           holder.innerHTML = `
             <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
-               <strong>💡 Explicación:</strong><br>${q.explicacion}
+               <div style="margin-bottom:8px;"><strong>💡 Explicación:</strong></div>
+               <div style="line-height:1.6;">${explicacionFormateada}</div>
                ${imgsExpl}
                <div style="margin-top:10px; text-align:right;">
                   <button class="btn-small btn-ghost" onclick="copiarExplicacionNota('${q.id}')">📋 Agregar a mis notas</button>
@@ -306,7 +320,7 @@ function salirResolucion() {
 }
 
 /* ==========================================================
-   🏁 FINALIZAR (CON LÓGICA DE FUSIÓN DE DATOS)
+   🏁 FINALIZAR
    ========================================================== */
 function renderFin() {
   stopTimer();
@@ -426,27 +440,27 @@ function renderDetailedResults() {
                 <div style="font-size:32px; font-weight:800; color:#ef4444;">${incorrectas}</div>
                 <div style="font-size:12px; color:#b91c1c; font-weight:700;">FALLADAS</div>
             </div>
-            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:15px; border-radius:10px; text-align:center;">
-                <div style="font-size:32px; font-weight:800; color:#64748b;">${omitidas}</div>
-                <div style="font-size:12px; color:#475569; font-weight:700;">OMITIDAS</div>
+            <div style="background:var(--bg-subtle); border:1px solid var(--border-color); padding:15px; border-radius:10px; text-align:center;">
+                <div style="font-size:32px; font-weight:800; color:var(--text-muted);">${omitidas}</div>
+                <div style="font-size:12px; color:var(--text-muted); font-weight:700;">OMITIDAS</div>
             </div>
             <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:15px; border-radius:10px; text-align:center;">
                 <div style="font-size:32px; font-weight:800; color:#3b82f6;">${nota}%</div>
                 <div style="font-size:12px; color:#1e40af; font-weight:700;">NOTA FINAL</div>
             </div>
         </div>
-        <div style="display:flex; justify-content:space-around; background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:15px; margin-bottom:30px;">
+        <div style="display:flex; justify-content:space-around; background:var(--bg-card); border:1px solid var(--border-color); border-radius:10px; padding:15px; margin-bottom:30px;">
              <div style="text-align:center;">
-                 <div style="font-size:18px; font-weight:700; color:#334155;">${fmtTime(tiempoTotalSeg)}</div>
-                 <div style="font-size:11px; color:#94a3b8;">TIEMPO TOTAL</div>
+                 <div style="font-size:18px; font-weight:700; color:var(--text-main);">${fmtTime(tiempoTotalSeg)}</div>
+                 <div style="font-size:11px; color:var(--text-muted);">TIEMPO TOTAL</div>
              </div>
-             <div style="text-align:center; border-left:1px solid #e2e8f0; padding-left:20px;">
-                 <div style="font-size:18px; font-weight:700; color:#334155;">${tiempoPromedio}s</div>
-                 <div style="font-size:11px; color:#94a3b8;">PROMEDIO / PREGUNTA</div>
+             <div style="text-align:center; border-left:1px solid var(--border-color); padding-left:20px;">
+                 <div style="font-size:18px; font-weight:700; color:var(--text-main);">${tiempoPromedio}s</div>
+                 <div style="font-size:11px; color:var(--text-muted);">PROMEDIO / PREGUNTA</div>
              </div>
         </div>
 
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
             <h3 style="margin:0;">🗺️ Mapa de calor</h3>
             <button onclick="reviewIncorrectOnly()" style="background:#fef2f2; color:#ef4444; border:1px solid #fecaca; border-radius:6px; padding:6px 12px; font-size:12px; font-weight:700; cursor:pointer;">
                👁️ Revisar Incorrectas
@@ -455,14 +469,14 @@ function renderDetailedResults() {
 
         <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap:8px; margin-bottom:30px;">
             ${gridData.map(item => {
-                let color = "#e2e8f0"; let text = "#64748b";
+                let color = "var(--bg-subtle)"; let text = "var(--text-muted)";
                 if(item.status === 'correcta') { color = "#4ade80"; text = "#064e3b"; }
                 if(item.status === 'incorrecta') { color = "#f87171"; text = "#7f1d1d"; }
                 return `<div onclick="reviewQuestion(${item.idx})" style="background:${color}; color:${text}; font-weight:700; height:40px; display:flex; align-items:center; justify-content:center; border-radius:6px; cursor:pointer; font-size:14px; transition:transform 0.1s;">${item.idx + 1}</div>`;
             }).join("")}
         </div>
 
-        <h3 style="margin-bottom:15px; border-bottom:1px solid #e2e8f0; padding-bottom:10px;">📊 Desglose por Materia</h3>
+        <h3 style="margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">📊 Desglose por Materia</h3>
         <div id="breakdown-container">${renderSubjectBreakdown(list, userAnswers)}</div>
         <div style="margin-top:40px; text-align:center;">
              <button class="btn-main" onclick="startReviewMode()" style="padding:15px 30px; font-size:18px;">👁️ REVISAR EXAMEN COMPLETO</button>
@@ -488,17 +502,17 @@ function renderSubjectBreakdown(list, userAnswers) {
         const name = getMateriaNombreForQuestion({materia:slug});
         const score = Math.round((d.ok / d.total) * 100);
         return `
-          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border-bottom:1px solid #f1f5f9;">
-              <div style="font-weight:600; color:#334155; flex:1;">${name}</div>
+          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border-bottom:1px solid var(--border-color);">
+              <div style="font-weight:600; color:var(--text-main); flex:1;">${name}</div>
               <div style="display:flex; gap:15px; text-align:center; font-size:13px;">
-                  <div style="width:40px;"><div style="color:#16a34a; font-weight:bold;">${d.ok}</div><div style="font-size:10px; color:#cbd5e1;">BIEN</div></div>
-                  <div style="width:40px;"><div style="color:#ef4444; font-weight:bold;">${d.bad}</div><div style="font-size:10px; color:#cbd5e1;">MAL</div></div>
-                  <div style="width:40px;"><div style="color:#64748b; font-weight:bold;">${d.omit}</div><div style="font-size:10px; color:#cbd5e1;">N/C</div></div>
+                  <div style="width:40px;"><div style="color:#16a34a; font-weight:bold;">${d.ok}</div><div style="font-size:10px; color:var(--text-muted);">BIEN</div></div>
+                  <div style="width:40px;"><div style="color:#ef4444; font-weight:bold;">${d.bad}</div><div style="font-size:10px; color:var(--text-muted);">MAL</div></div>
+                  <div style="width:40px;"><div style="color:var(--text-muted); font-weight:bold;">${d.omit}</div><div style="font-size:10px; color:var(--text-muted);">N/C</div></div>
                   <div style="width:50px; text-align:right;"><span style="font-size:16px; font-weight:800; color:#3b82f6;">${score}%</span></div>
               </div>
           </div>`;
     }).join("");
-    return `<div style="background:white; border:1px solid #e2e8f0; border-radius:8px;">${rows}</div>`;
+    return `<div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px;">${rows}</div>`;
 }
 
 function startReviewMode() { CURRENT.i = 0; CURRENT.modo = "revision"; renderPregunta(); }
@@ -624,4 +638,25 @@ function renderImagenesExplicacion(imgs) {
          `).join("")}
       </div>
     `;
+}
+
+/* ==========================================================
+   🪄 MAGIA DE FORMATO (Helper Global)
+   ========================================================== */
+function parsearTexto(texto) {
+    if (!texto) return "";
+    
+    // 1. Sanitizar básico (para no romper HTML real)
+    let safe = texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    // 2. Negritas: **texto** -> <b>texto</b>
+    safe = safe.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+
+    // 3. Saltos de línea: \n -> <br>
+    safe = safe.replace(/\n/g, '<br>');
+
+    // 4. Listas simples: Si empieza con "- " o "• ", le damos un toque visual
+    safe = safe.replace(/<br>- /g, '<br>• '); 
+
+    return safe;
 }
