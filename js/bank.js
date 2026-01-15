@@ -1,14 +1,18 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco Central (Harmonizado)
+   🌐 MEbank 3.0 — Banco Central (Compatible)
    ========================================================== */
 
-/* --- 1. HERRAMIENTA DE LIMPIEZA GLOBAL (La clave de todo) --- */
+/* --- 1. HERRAMIENTAS DE LIMPIEZA (Globales) --- */
+
+// Para Stats y Resolver (Nueva)
 window.cleanSlug = function(text) {
     if (!text) return "";
-    // Convierte a minúsculas y borra todo lo que no sea letra o número.
-    // Ejemplo: "Urologia_Cx" -> "urologiacx"
-    // Ejemplo: "Urologia-CX" -> "urologiacx"
     return String(text).toLowerCase().replace(/[^a-z0-9]/g, "");
+};
+
+// Para Choice y Home (Vieja - La que faltaba)
+window.normalize = function(s) {
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
 };
 
 /* --- 2. PROGRESO --- */
@@ -19,7 +23,7 @@ function loadProgress() {
   catch { return {}; }
 }
 
-window.saveProgress = function() { // Hacemos global la función
+window.saveProgress = function() {
   try { localStorage.setItem(STORAGE_KEY_PROG, JSON.stringify(PROG)); }
   catch (e) { console.warn("No se pudo guardar PROG", e); }
 };
@@ -34,7 +38,6 @@ let BANK = {
   loaded: false
 };
 
-// Cargar subtemas desde la config
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -51,7 +54,7 @@ async function loadAllBanks() {
 
   const urls = [];
 
-  // A) Materias (Busca archivos genéricos banco/materia/materia1.json)
+  // A) Materias
   const FILES_PER_SUBJECT = 25; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
@@ -59,12 +62,12 @@ async function loadAllBanks() {
     }
   });
 
-  // B) Exámenes (Definidos en config.js)
+  // B) Exámenes
   if (typeof EXAMENES_META !== 'undefined') {
     EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
   }
 
-  // C) Fetch Simultáneo
+  // C) Fetch
   const promises = urls.map(item => 
     fetch(item.url)
       .then(r => {
@@ -98,27 +101,26 @@ async function loadAllBanks() {
 
   if(appMsg) appMsg.textContent = "✔ Banco listo.";
   
-  // Renderizar Home si existe la función
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR DE PREGUNTAS --- */
+/* --- 5. PROCESADOR --- */
 function processQuestion(q, type, examMeta) {
     if(!q.id) q.id = `gen_${Math.random().toString(36).slice(2)}`;
     else q.id = String(q.id).trim();
     
-    // Normalización de materia (Array o String)
+    // Normalización de materia
     if (!Array.isArray(q.materia)) {
         q.materia = [q.materia || "otras"];
     }
-    // Aseguramos minúsculas básicas, pero cleanSlug hará el trabajo pesado al comparar
-    q.materia = q.materia.map(m => String(m).toLowerCase());
+    // Usamos cleanSlug aquí para estandarizar todo lo que entra
+    q.materia = q.materia.map(m => window.cleanSlug(m));
 
     // Submateria
     if(!q.submateria) q.submateria = "General";
     if(Array.isArray(q.submateria)) q.submateria = q.submateria[0];
 
-    // Metadatos de examen
+    // Meta
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
@@ -139,23 +141,22 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS DE BÚSQUEDA (Con lógica cleanSlug) --- */
+/* --- 7. APIS DE BÚSQUEDA --- */
 function getQuestionsByMateria(slugConfig, subtemasFilter) {
+    // Usamos cleanSlug para asegurar coincidencia
     const slugObjetivo = window.cleanSlug(slugConfig);
 
     return BANK.questions.filter(q => {
-        // 1. Chequear si la pregunta pertenece a la materia (Flexible)
         const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
+        // Buscamos coincidencia flexible
         const esDeLaMateria = materiasQ.some(m => window.cleanSlug(m) === slugObjetivo);
         
         if (!esDeLaMateria) return false;
 
-        // 2. Filtro de subtemas (si aplica)
         if (!subtemasFilter || subtemasFilter.length === 0) return true;
         
-        // Normalización simple para subtemas
-        const qSub = window.cleanSlug(q.submateria);
-        return subtemasFilter.some(s => window.cleanSlug(s) === qSub);
+        const qSub = window.normalize(q.submateria); // Aquí mantenemos normalize por compatibilidad
+        return subtemasFilter.some(s => window.normalize(s) === qSub);
     });
 }
 
