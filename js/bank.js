@@ -1,8 +1,17 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos.)
+   🌐 MEbank 3.0 — Banco Central (Harmonizado)
    ========================================================== */
 
-/* --- 1. PROGRESO --- */
+/* --- 1. HERRAMIENTA DE LIMPIEZA GLOBAL (La clave de todo) --- */
+window.cleanSlug = function(text) {
+    if (!text) return "";
+    // Convierte a minúsculas y borra todo lo que no sea letra o número.
+    // Ejemplo: "Urologia_Cx" -> "urologiacx"
+    // Ejemplo: "Urologia-CX" -> "urologiacx"
+    return String(text).toLowerCase().replace(/[^a-z0-9]/g, "");
+};
+
+/* --- 2. PROGRESO --- */
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
 function loadProgress() {
@@ -10,21 +19,12 @@ function loadProgress() {
   catch { return {}; }
 }
 
-function saveProgress() {
+window.saveProgress = function() { // Hacemos global la función
   try { localStorage.setItem(STORAGE_KEY_PROG, JSON.stringify(PROG)); }
   catch (e) { console.warn("No se pudo guardar PROG", e); }
-}
+};
 
 let PROG = loadProgress();
-
-/* --- 2. UTILIDADES --- */
-function normalize(s) {
-  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
-}
-
-function normalizeId(id) {
-  return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
-}
 
 /* --- 3. ESTRUCTURA --- */
 let BANK = {
@@ -34,6 +34,7 @@ let BANK = {
   loaded: false
 };
 
+// Cargar subtemas desde la config
 if(typeof SUBJECTS !== 'undefined') {
     SUBJECTS.forEach(s => {
         BANK.subsubjects[s.slug] = (typeof SUBTEMAS !== 'undefined' && SUBTEMAS[s.slug]) 
@@ -42,7 +43,7 @@ if(typeof SUBJECTS !== 'undefined') {
     });
 }
 
-/* --- 4. CARGA TURBO --- */
+/* --- 4. CARGA DE DATOS --- */
 async function loadAllBanks() {
   console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
@@ -50,7 +51,7 @@ async function loadAllBanks() {
 
   const urls = [];
 
-  // A) Materias
+  // A) Materias (Busca archivos genéricos banco/materia/materia1.json)
   const FILES_PER_SUBJECT = 25; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
@@ -58,12 +59,12 @@ async function loadAllBanks() {
     }
   });
 
-  // B) Exámenes
+  // B) Exámenes (Definidos en config.js)
   if (typeof EXAMENES_META !== 'undefined') {
     EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
   }
 
-  // C) Fetch
+  // C) Fetch Simultáneo
   const promises = urls.map(item => 
     fetch(item.url)
       .then(r => {
@@ -93,49 +94,36 @@ async function loadAllBanks() {
   BANK.loaded = true;
 
   console.timeEnd("⏱ Tiempo de carga");
-  console.log(`✅ Carga finalizada: ${successFiles} archivos leídos. ${BANK.questions.length} preguntas totales.`);
+  console.log(`✅ Carga finalizada: ${successFiles} archivos. ${BANK.questions.length} preguntas.`);
 
   if(appMsg) appMsg.textContent = "✔ Banco listo.";
+  
+  // Renderizar Home si existe la función
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR --- */
+/* --- 5. PROCESADOR DE PREGUNTAS --- */
 function processQuestion(q, type, examMeta) {
-    if(!q.id) q.id = normalizeId(null);
-    else q.id = normalizeId(q.id);
+    if(!q.id) q.id = `gen_${Math.random().toString(36).slice(2)}`;
+    else q.id = String(q.id).trim();
     
-    // 1. Materia (Normalización robusta)
-    if (Array.isArray(q.materia)) {
-        q.materia = q.materia.map(m => normalize(m));
-    } else {
-        let mat = normalize(q.materia || "otras");
-        // Si la materia no existe en SUBJECTS, mandarla a 'otras'
-        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
-        q.materia = mat;
+    // Normalización de materia (Array o String)
+    if (!Array.isArray(q.materia)) {
+        q.materia = [q.materia || "otras"];
     }
+    // Aseguramos minúsculas básicas, pero cleanSlug hará el trabajo pesado al comparar
+    q.materia = q.materia.map(m => String(m).toLowerCase());
 
-    // 2. Submateria
-    // Intentamos asignar una submateria válida basándonos en la PRIMERA materia de la lista
-    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
-    const listaOficial = BANK.subsubjects[mainMateria] || [];
-    
-    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
-    const subNorm = normalize(subRaw);
-    
-    const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
+    // Submateria
+    if(!q.submateria) q.submateria = "General";
+    if(Array.isArray(q.submateria)) q.submateria = q.submateria[0];
 
-    if (match) {
-        q.submateria = normalize(match);
-    } else {
-        // Si no machea, asignamos al ÚLTIMO ítem de la lista (Catch-All)
-        q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
-    }
-
-    // 3. Metadatos
+    // Metadatos de examen
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
         q.anio = examMeta.anio;
+        q.oficial = true;
     } else {
         q.examen = null;
     }
@@ -151,37 +139,23 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS HÍBRIDAS (LOGICA MATEMÁTICA CORREGIDA) --- */
-function getQuestionsByMateria(mSlug, selectedSubs) {
-    // Lista oficial de subtemas normalizados para esta materia
-    const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
-    // Identificamos cuál es el "Catch-All" (el último de la lista)
-    const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
+/* --- 7. APIS DE BÚSQUEDA (Con lógica cleanSlug) --- */
+function getQuestionsByMateria(slugConfig, subtemasFilter) {
+    const slugObjetivo = window.cleanSlug(slugConfig);
 
     return BANK.questions.filter(q => {
-        // 1. Chequear si es de la materia
-        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        // 1. Chequear si la pregunta pertenece a la materia (Flexible)
+        const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
+        const esDeLaMateria = materiasQ.some(m => window.cleanSlug(m) === slugObjetivo);
+        
         if (!esDeLaMateria) return false;
 
-        // 2. Si no hay filtro de subtemas, devolver todo
-        if (!selectedSubs || !selectedSubs.length) return true;
-
-        // 3. Chequear subtema
-        const qSub = q.submateria;
+        // 2. Filtro de subtemas (si aplica)
+        if (!subtemasFilter || subtemasFilter.length === 0) return true;
         
-        // A) Coincidencia directa
-        if (selectedSubs.includes(qSub)) return true;
-
-        // B) Lógica de Huérfanos:
-        // Si el usuario seleccionó el "Catch-All" (ej: "Otras preguntas..."),
-        // debemos incluir también las preguntas cuyo subtema NO esté en la lista oficial de esta materia.
-        // (Esto pasa cuando una pregunta es compartida entre materias y tiene el subtema de la otra).
-        if (selectedSubs.includes(catchAllSub)) {
-            const esHuerfano = !officialSubs.includes(qSub);
-            if (esHuerfano) return true;
-        }
-
-        return false;
+        // Normalización simple para subtemas
+        const qSub = window.cleanSlug(q.submateria);
+        return subtemasFilter.some(s => window.cleanSlug(s) === qSub);
     });
 }
 
