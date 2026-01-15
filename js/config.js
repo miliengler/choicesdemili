@@ -189,7 +189,7 @@ const SUBTEMAS = {
   medicinafamiliar: [
     "Adulto mayor",
     "Control de salud",
-    "Otrs preguntas de medicina familiar"
+    "Otras preguntas de medicina familiar"
   ],
    
   medicinalegal: [
