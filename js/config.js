@@ -1,5 +1,5 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Configuración central (CORREGIDA + URGENCIAS)
+   📚 MEbank 3.0 – Configuración central (CORREGIDA)
    - Materias oficiales
    - Subtemas por materia
    - Exámenes anteriores (meta)
@@ -20,9 +20,6 @@ const SUBJECTS = [
   
   // --- NUEVA MATERIA: UROLOGÍA (La real) ---
   { slug: "urologia_cx",        name: "🍆 Urología" },
-
-  // --- NUEVA MATERIA: URGENCIAS ---
-  { slug: "urgencias",          name: "🚨 Urgencias" },
 
   { slug: "gastroenterologia",  name: "💩 Gastroenterología" },
   { slug: "dermatologia",       name: "🧴 Dermatología" },
@@ -399,15 +396,6 @@ const SUBTEMAS = {
     "Cáncer de urotelio",
     "Trasplante renal",
     "Andrología, disfunción eréctil y cáncer de pene"
-  ],
-
-  /* --- URGENCIAS (Nueva) --- */
-  urgencias: [
-    "Síndromes torácicos",
-    "Síndromes abdominales",
-    "Paciente politraumatizado",
-    "Patología renal y urológica urgente",
-    "Otras preguntas de urgencias"
   ]
 };
 
