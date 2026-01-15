@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Con Fix de Nombres)
+   🎯 MEbank 3.0 – Motor de resolución (Reloj Sesión Actual)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -12,15 +12,15 @@ let CURRENT = {
   userAnswers: {} 
 };
 
-// --- CAMBIO: Timer maneja acumulado y sesión actual ---
+// --- TIMER: Maneja sesión actual y acumulado ---
 let TIMER = {
     interval: null,
-    sessionStart: 0, // Hora exacta inicio sesión actual
+    sessionStart: 0, // Hora de inicio de ESTA sesión
     accumulated: 0,  // Tiempo traído de sesiones anteriores
     el: null
 };
 
-// --- NUEVO: Helpers para guardar tiempo ---
+// --- HELPERS: Persistencia de tiempo ---
 const STORAGE_KEY_TIMES = "MEbank_ExamTimes_v1";
 
 function getExamTime(examId) {
@@ -55,7 +55,7 @@ function iniciarResolucion(config) {
   
   stopTimer();
   
-  // 1. Cargar tiempo previo si es un examen
+  // Cargar tiempo previo si es un examen
   let prevTime = 0;
   if (config.examenId) {
       prevTime = getExamTime(config.examenId);
@@ -78,7 +78,7 @@ function iniciarResolucion(config) {
   } else {
       const oldTimer = document.getElementById("exam-timer");
       if(oldTimer) oldTimer.remove();
-      // Si no usa timer, igual guardamos la referencia para el cálculo final
+      // Si no hay reloj visual, igual guardamos referencia para el cálculo final
       TIMER.accumulated = prevTime;
       TIMER.sessionStart = Date.now();
   }
@@ -99,7 +99,6 @@ function renderPregunta() {
 
   const total = CURRENT.list.length;
   const numero = CURRENT.i + 1;
-  
   const materiaNombre = getMateriaNombreForQuestion(q);
   
   const isReview = (CURRENT.modo === "revision");
@@ -120,6 +119,7 @@ function renderPregunta() {
   if (q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
       if (nombreExamen.includes("_")) nombreExamen = nombreExamen.replace(/_/g, " ").toUpperCase();
+      if (q.anio) nombreExamen = nombreExamen.replace(String(q.anio), "").trim();
       let detalle = q.anio ? `(${nombreExamen} ${q.anio})` : `(${nombreExamen})`;
       badgeHTML = `<div class="badge-oficial"><span style="font-size:1.1em; margin-right:4px;">⭐️</span> PREGUNTA TOMADA <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span></div>`;
   }
@@ -241,8 +241,7 @@ function answer(selectedIndex) {
 
   CURRENT.userAnswers[q.id] = selectedIndex;
 
-  // --- NUEVO: GUARDAR TIEMPO AL RESPONDER ---
-  // Guardamos el total (acumulado + actual) para no perderlo
+  // --- GUARDAR TIEMPO ---
   if (CURRENT.config.examenId) {
       const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
       const totalNow = TIMER.accumulated + sessionSeconds;
@@ -381,7 +380,7 @@ function renderFin() {
       });
       const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
       
-      // --- CALCULO FINAL DE TIEMPO REAL ---
+      // --- CALCULO FINAL DE TIEMPO (Acumulado + Sesión) ---
       let timeStr = "--:--";
       let totalSeconds = 0;
       if (TIMER.sessionStart > 0) {
@@ -392,7 +391,7 @@ function renderFin() {
           const m = Math.floor((totalSeconds % 3600) / 60);
           timeStr = h > 0 ? `${h}h ${m}m` : `${m} min`;
       } else {
-          // Fallback por si no hubo timer activo (solo accumulated)
+          // Fallback por si no hubo timer activo
           const h = Math.floor(TIMER.accumulated / 3600);
           const m = Math.floor((TIMER.accumulated % 3600) / 60);
           timeStr = h > 0 ? `${h}h ${m}m` : `${m} min`;
@@ -407,7 +406,10 @@ function renderFin() {
       window.guardarResultadoSimulacro(resultado);
   }
 
-  renderDetailedResults();
+  // IMPORTANTE: Results.js necesita leer estas variables
+  if (typeof renderDetailedResults === 'function') {
+      renderDetailedResults();
+  }
 }
 
 function procesarResultadosExamenFinal() {
@@ -434,151 +436,13 @@ function procesarResultadosExamenFinal() {
 }
 
 /* ==========================================================
-   📊 PANTALLA DE RESULTADOS
-   ========================================================== */
-function renderDetailedResults() {
-  const app = document.getElementById("app");
-  
-  const list = CURRENT.list; 
-  const userAnswers = CURRENT.userAnswers || {}; 
-  let correctas = 0; let incorrectas = 0; let omitidas = 0;
-  
-  const gridData = list.map((q, idx) => {
-      const userIdx = userAnswers[q.id];
-      const realIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-      let status = "omitida";
-      if (userIdx !== undefined && userIdx !== null) {
-          if (userIdx === realIdx) { status = "correcta"; correctas++; } 
-          else { status = "incorrecta"; incorrectas++; }
-      } else { omitidas++; }
-      return { idx, status, qId: q.id };
-  });
-
-  const total = list.length;
-  const nota = Math.round((correctas / total) * 100);
-  
-  // --- CALCULO TIEMPO FINAL PARA MOSTRAR ---
-  let tiempoTotalSeg = 0;
-  if (TIMER.sessionStart > 0) {
-      const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
-      tiempoTotalSeg = TIMER.accumulated + sessionSeconds;
-  } else {
-      tiempoTotalSeg = TIMER.accumulated;
-  }
-
-  const tiempoPromedio = total > 0 ? Math.round(tiempoTotalSeg / total) : 0;
-  const fmtTime = (s) => { const m = Math.floor(s / 60); const seg = s % 60; return `${m}m ${seg}s`; };
-
-  app.innerHTML = `
-    <div class="card fade" style="max-width:1000px; margin:auto;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-            <h2 style="margin:0;">🏁 Resultados del Simulacro</h2>
-            <button class="btn-small" onclick="renderHome()">🏠 Ir al Inicio</button>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap:15px; margin-bottom:30px;">
-            <div style="background:#f0fdf4; border:1px solid #bbf7d0; padding:15px; border-radius:10px; text-align:center;">
-                <div style="font-size:32px; font-weight:800; color:#16a34a;">${correctas}</div>
-                <div style="font-size:12px; color:#15803d; font-weight:700;">ACERTADAS</div>
-            </div>
-            <div style="background:#fef2f2; border:1px solid #fecaca; padding:15px; border-radius:10px; text-align:center;">
-                <div style="font-size:32px; font-weight:800; color:#ef4444;">${incorrectas}</div>
-                <div style="font-size:12px; color:#b91c1c; font-weight:700;">FALLADAS</div>
-            </div>
-            <div style="background:var(--bg-subtle); border:1px solid var(--border-color); padding:15px; border-radius:10px; text-align:center;">
-                <div style="font-size:32px; font-weight:800; color:var(--text-muted);">${omitidas}</div>
-                <div style="font-size:12px; color:var(--text-muted); font-weight:700;">OMITIDAS</div>
-            </div>
-            <div style="background:#eff6ff; border:1px solid #bfdbfe; padding:15px; border-radius:10px; text-align:center;">
-                <div style="font-size:32px; font-weight:800; color:#3b82f6;">${nota}%</div>
-                <div style="font-size:12px; color:#1e40af; font-weight:700;">NOTA FINAL</div>
-            </div>
-        </div>
-        <div style="display:flex; justify-content:space-around; background:var(--bg-card); border:1px solid var(--border-color); border-radius:10px; padding:15px; margin-bottom:30px;">
-             <div style="text-align:center;">
-                 <div style="font-size:18px; font-weight:700; color:var(--text-main);">${fmtTime(tiempoTotalSeg)}</div>
-                 <div style="font-size:11px; color:var(--text-muted);">TIEMPO TOTAL</div>
-             </div>
-             <div style="text-align:center; border-left:1px solid var(--border-color); padding-left:20px;">
-                 <div style="font-size:18px; font-weight:700; color:var(--text-main);">${tiempoPromedio}s</div>
-                 <div style="font-size:11px; color:var(--text-muted);">PROMEDIO / PREGUNTA</div>
-             </div>
-        </div>
-
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">
-            <h3 style="margin:0;">🗺️ Mapa de calor</h3>
-            <button onclick="reviewIncorrectOnly()" style="background:#fef2f2; color:#ef4444; border:1px solid #fecaca; border-radius:6px; padding:6px 12px; font-size:12px; font-weight:700; cursor:pointer;">
-               👁️ Revisar Incorrectas
-            </button>
-        </div>
-
-        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap:8px; margin-bottom:30px;">
-            ${gridData.map(item => {
-                let color = "var(--bg-subtle)"; let text = "var(--text-muted)";
-                if(item.status === 'correcta') { color = "#4ade80"; text = "#064e3b"; }
-                if(item.status === 'incorrecta') { color = "#f87171"; text = "#7f1d1d"; }
-                return `<div onclick="reviewQuestion(${item.idx})" style="background:${color}; color:${text}; font-weight:700; height:40px; display:flex; align-items:center; justify-content:center; border-radius:6px; cursor:pointer; font-size:14px; transition:transform 0.1s;">${item.idx + 1}</div>`;
-            }).join("")}
-        </div>
-
-        <h3 style="margin-bottom:15px; border-bottom:1px solid var(--border-color); padding-bottom:10px;">📊 Desglose por Materia</h3>
-        <div id="breakdown-container">${renderSubjectBreakdown(list, userAnswers)}</div>
-        <div style="margin-top:40px; text-align:center;">
-             <button class="btn-main" onclick="startReviewMode()" style="padding:15px 30px; font-size:18px;">👁️ REVISAR EXAMEN COMPLETO</button>
-        </div>
-    </div>
-  `;
-}
-
-function renderSubjectBreakdown(list, userAnswers) {
-    const stats = {};
-    list.forEach(q => {
-        const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
-        if(!stats[mat]) stats[mat] = { total:0, ok:0, bad:0, omit:0 };
-        stats[mat].total++;
-        const uIdx = userAnswers[q.id];
-        const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-        if(uIdx === undefined || uIdx === null) stats[mat].omit++;
-        else if (uIdx === rIdx) stats[mat].ok++;
-        else stats[mat].bad++;
-    });
-    const rows = Object.keys(stats).map(slug => {
-        const name = getMateriaNombreForQuestion({materia:slug});
-        const d = stats[slug]; // Corrección importante: faltaba definir d
-        const score = Math.round((d.ok / d.total) * 100);
-        return `
-          <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border-bottom:1px solid var(--border-color);">
-              <div style="font-weight:600; color:var(--text-main); flex:1;">${name}</div>
-              <div style="display:flex; gap:15px; text-align:center; font-size:13px;">
-                  <div style="width:40px;"><div style="color:#16a34a; font-weight:bold;">${d.ok}</div><div style="font-size:10px; color:var(--text-muted);">BIEN</div></div>
-                  <div style="width:40px;"><div style="color:#ef4444; font-weight:bold;">${d.bad}</div><div style="font-size:10px; color:var(--text-muted);">MAL</div></div>
-                  <div style="width:40px;"><div style="color:var(--text-muted); font-weight:bold;">${d.omit}</div><div style="font-size:10px; color:var(--text-muted);">N/C</div></div>
-                  <div style="width:50px; text-align:right;"><span style="font-size:16px; font-weight:800; color:#3b82f6;">${score}%</span></div>
-              </div>
-          </div>`;
-    }).join("");
-    return `<div style="background:var(--bg-card); border:1px solid var(--border-color); border-radius:8px;">${rows}</div>`;
-}
-
-function startReviewMode() { CURRENT.i = 0; CURRENT.modo = "revision"; renderPregunta(); }
-function reviewQuestion(idx) { CURRENT.i = idx; CURRENT.modo = "revision"; renderPregunta(); }
-function reviewIncorrectOnly() {
-    const wrongQuestions = CURRENT.list.filter(q => {
-        const uIdx = CURRENT.userAnswers[q.id];
-        const rIdx = getCorrectIndex(q, getOpcionesArray(q).length);
-        return (uIdx === undefined || uIdx === null || uIdx !== rIdx);
-    });
-    if (wrongQuestions.length === 0) { alert("¡No tenés respuestas incorrectas! 🎉"); return; }
-    CURRENT.list = wrongQuestions; CURRENT.i = 0; CURRENT.modo = "revision"; renderPregunta();
-}
-
-/* ==========================================================
    AUXILIARES & HELPERS VISUALES (SIDEBAR + IMÁGENES)
    ========================================================== */
 function initTimer(initialSeconds = 0) {
   stopTimer(); 
   
-  TIMER.accumulated = initialSeconds; // Guardo historial
-  TIMER.sessionStart = Date.now();    // Inicio contador fresco
+  TIMER.accumulated = initialSeconds; // Guardo historial para el total final
+  TIMER.sessionStart = Date.now();    // Inicio contador fresco para mostrar
   
   let el = document.getElementById("exam-timer");
   if (!el) { el = document.createElement("div"); el.id = "exam-timer"; el.className = "exam-timer"; document.body.appendChild(el); }
@@ -591,17 +455,17 @@ function initTimer(initialSeconds = 0) {
       return (h > 0 ? `${h}:` : "") + `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
   };
 
-  // Muestro 00:00 al inicio
+  // Muestro 00:00 al inicio (Limpio)
   el.textContent = "⏱ 00:00"; 
 
   TIMER.interval = setInterval(() => {
-    // Calculo tiempo de ESTA sesión
+    // Calculo tiempo de ESTA sesión solamente
     const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
     
     // Muestro SOLO tiempo de esta sesión
     el.textContent = "⏱ " + format(sessionSeconds);
     
-    // BACKUP: Guardo el total real (histórico + actual) en background
+    // EN BACKGROUND: Guardo el total real (histórico + actual)
     if (CURRENT.config.examenId && sessionSeconds % 5 === 0) {
         saveExamTime(CURRENT.config.examenId, TIMER.accumulated + sessionSeconds);
     }
