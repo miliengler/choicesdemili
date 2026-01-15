@@ -12,16 +12,9 @@ const SUBJECTS = [
   { slug: "psiquiatria",        name: "💭 Psiquiatría" },
   { slug: "cardiologia",        name: "🫀 Cardiología" },
   { slug: "nutricion",          name: "🍏 Nutrición" },
-  
-  // --- CAMBIO DE IDENTIDAD: NEFROLOGÍA (Era Urología) ---
   { slug: "urologia",           name: "🚽 Nefrología" }, 
-  
-  // --- UROLOGÍA (La real) ---
   { slug: "urologia_cx",        name: "🍆 Urología" },
-
-  // --- NUEVA MATERIA: URGENCIAS ---
   { slug: "urgencias",          name: "🚑 Urgencias" },
-
   { slug: "gastroenterologia",  name: "💩 Gastroenterología" },
   { slug: "dermatologia",       name: "🧴 Dermatología" },
   { slug: "infectologia",       name: "🦠 Infectología" },
@@ -55,10 +48,6 @@ const SUBTEMAS = {
   aps: [
      "Atención Primaria de la Salud"
  ],
-
-  // ... (Tus otros subtemas siguen igual, solo agrego el nuevo abajo) ...
-
-  /* --- URGENCIAS (Nueva) --- */
   urgencias: [
     "Síndromes torácicos",
     "Síndromes abdominales",
@@ -67,8 +56,6 @@ const SUBTEMAS = {
     "Otras preguntas de urgencias"
   ],
 
-  // ... (Aquí van el resto de tus materias: cardiologia, cirugia, etc.) ...
-  
   cardiologia: [
     "Cardiología básica",
     "Hipertensión arterial y factores de riesgo",
@@ -386,7 +373,7 @@ const SUBTEMAS = {
     "Otras preguntas de traumatología"
   ],
 
-  /* --- NEFROLOGÍA (Antes Urología) --- */
+ 
   urologia: [
     "Fisiología renal",
     "Síndromes clínicos",
@@ -400,7 +387,7 @@ const SUBTEMAS = {
     "Riñón y enfermedades sistémicas"
   ],
 
-  /* --- UROLOGÍA (La nueva y real) --- */
+
   urologia_cx: [
     "Próstata",
     "Cáncer de riñón y otros tumores renales",
