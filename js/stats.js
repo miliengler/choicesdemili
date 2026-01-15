@@ -1,5 +1,5 @@
 /* ==========================================================
-   📊 ESTADÍSTICAS GLOBALES – (Tu Diseño Original + Fix de Conteo)
+   📊 ESTADÍSTICAS GLOBALES – Final Pulido
    ========================================================== */
 
 let STATS_ORDER = "az";
@@ -10,43 +10,18 @@ let statsViewMode = "weekly"; // 'weekly' | 'monthly'
 let calYear = new Date().getFullYear();
 let calMonth = new Date().getMonth(); // 0-11
 
-// --- 🛠️ Helper Local para igualar nombres (ej: "urologia_cx" == "urologiacx") ---
-function cleanStr(str) {
-    if (!str) return "";
-    return String(str).toLowerCase().replace(/[^a-z0-9]/g, "");
-}
-
 function renderStats() {
   const app = document.getElementById("app");
 
-  // --- 1. CÁLCULOS GLOBALES (Mejorados para encontrar todo) ---
+  // --- 1. CÁLCULOS GLOBALES ---
   let totalPreguntas = BANK.questions.length; 
   let totalRespondidas = 0;
   let totalCorrectas = 0;
   let totalIncorrectas = 0;
 
   BANK.questions.forEach(q => {
-      // 1. Buscamos a qué materia pertenece realmente esta pregunta
-      // (Comparando de forma flexible con tu configuración)
-      let matKey = "otras";
-      const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
-      
-      // Intentamos matchear con alguna materia oficial de tu lista
-      if (typeof BANK.subjects !== 'undefined') {
-          for (let mRaw of materiasQ) {
-              const match = BANK.subjects.find(s => cleanStr(s.slug) === cleanStr(mRaw));
-              if (match) {
-                  matKey = match.slug; // Usamos el ID oficial (ej: urologia_cx)
-                  break;
-              }
-          }
-      } else {
-          matKey = cleanStr(materiasQ[0]);
-      }
-
-      // 2. Buscamos el progreso usando esa clave oficial
-      const prog = (PROG[matKey] && PROG[matKey][q.id]) ? PROG[matKey][q.id] : null;
-      
+      const mat = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+      const prog = PROG[mat] ? PROG[mat][q.id] : null;
       if (prog && (prog.status === "ok" || prog.status === "bad")) {
           totalRespondidas++;
           if (prog.status === "ok") totalCorrectas++;
@@ -275,24 +250,21 @@ function renderCalendarHTML() {
 }
 
 /* ==========================================================
-   📋 LISTA DE MATERIAS (FIXED: Usa cleanStr para contar)
+   📋 LISTA DE MATERIAS (Calculo corregido: "Learned %")
    ========================================================== */
 function renderMateriasList() {
   const container = document.getElementById("matsList");
   if (!container) return;
   
   let list = [...BANK.subjects];
-  // 3. Normalizamos el término de búsqueda
-  const term = cleanStr(statsSearchTerm);
+  const term = normalize(statsSearchTerm);
 
-  if (term) list = list.filter(m => cleanStr(m.name).includes(term));
+  if (term) list = list.filter(m => normalize(m.name).includes(term));
 
-  // 4. FIX CONTADOR POR MATERIA (Flexible)
-  const countMateria = (slugObj) => {
-      const slugLimpio = cleanStr(slugObj);
+  const countMateria = (slug) => {
       return BANK.questions.filter(q => {
-          const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
-          return misMaterias.some(m => cleanStr(m) === slugLimpio);
+          if (Array.isArray(q.materia)) return q.materia.includes(slug);
+          return q.materia === slug;
       }).length;
   };
 
@@ -334,7 +306,11 @@ function renderMateriasList() {
       if (p.status === "bad") bad++;
     });
     
+    // --- CAMBIO CLAVE: CÁLCULO DE % APRENDIDO ---
+    // Antes: (ok / (ok+bad)) * 100 -> Efectividad
+    // Ahora: (ok / totalM) * 100 -> Progreso Real
     const pctLearned = Math.round((ok / totalM) * 100);
+
     const noresp = totalM - (ok + bad);
     
     // Color basado en cuánto completaste de la materia
@@ -408,7 +384,7 @@ function renderMateriasList() {
 }
 
 /* ==========================================================
-   🧠 Lógica Inteligente (Insights)
+   🧠 Lógica Inteligente (Insights) - CORREGIDA
    ========================================================== */
 function getSubjectInsights(slug, name, datos) {
     let insights = [];
@@ -416,6 +392,7 @@ function getSubjectInsights(slug, name, datos) {
     
     let lastDate = null;
     Object.values(datos).forEach(p => {
+        // --- CORRECCIÓN BUG: p.fecha en vez de p.date ---
         const ts = p.fecha || p.date; 
         if (ts) {
             const d = new Date(ts);
@@ -432,10 +409,11 @@ function getSubjectInsights(slug, name, datos) {
         insights.push(`💡 Todavía no empezaste a practicar esta materia.`);
     }
 
+    // --- CORRECCIÓN: Pasar Slug para buscar nombre bonito ---
     const weakest = getWeakestSubtopic(slug, datos);
     if (weakest) {
-        // Usamos una limpieza simple para mostrar el nombre
-        const prettyName = weakest.name.charAt(0).toUpperCase() + weakest.name.slice(1);
+        // Usamos la nueva función formateadora que busca en BANK.subsubjects
+        const prettyName = formatSubtopicName(weakest.name, slug);
         insights.push(`📉 Tu subtema más flojo es <b>${prettyName}</b> (${weakest.pct}%).`);
     }
 
@@ -443,17 +421,32 @@ function getSubjectInsights(slug, name, datos) {
     return insights.map(i => `<div style="margin-bottom:4px;">${i}</div>`).join("");
 }
 
-function getWeakestSubtopic(mSlug, progData) {
-    const slugLimpio = cleanStr(mSlug);
+// --- NUEVA LÓGICA DE NOMBRES DE SUBTEMAS ---
+function formatSubtopicName(subSlug, materiaSlug) {
+    if(!subSlug) return "";
     
+    // Intentar buscar el nombre real en la configuración
+    if (typeof BANK !== 'undefined' && BANK.subsubjects && materiaSlug) {
+        const listaOficial = BANK.subsubjects[materiaSlug] || [];
+        // Normalizamos la lista oficial para comparar
+        const match = listaOficial.find(nombreReal => normalize(nombreReal) === subSlug);
+        if (match) return match; // Devolvemos "Atención Primaria..."
+    }
+    
+    // Fallback: Capitalizar si no se encuentra
+    let text = subSlug.replace(/[-_]/g, " ");
+    return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+function getWeakestSubtopic(mSlug, progData) {
     const questions = BANK.questions.filter(q => {
-        const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
-        return misMaterias.some(m => cleanStr(m) === slugLimpio);
+        const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        return esMateria && q.submateria; 
     });
 
     const groups = {};
     questions.forEach(q => {
-        const sub = q.submateria || "General";
+        const sub = q.submateria;
         if (!groups[sub]) groups[sub] = { total: 0, ok: 0, answered: 0 };
         groups[sub].total++;
         if (progData[q.id]) {
@@ -503,13 +496,12 @@ function goToPracticeFromStats(slug) {
     if (window.renderChoice) {
         renderChoice();
         setTimeout(() => {
-            if(typeof window.startMateria === 'function') {
-                window.startMateria(slug);
+            if(typeof toggleMateriaChoice === 'function') {
+                toggleMateriaChoice(slug);
             }
         }, 50);
     } else {
-        alert("Redirigiendo...");
-        if(typeof goChoice === 'function') goChoice();
+        alert("Error: No se encuentra la pantalla de práctica.");
     }
 }
 
@@ -517,8 +509,8 @@ function checkAndGoToNotes(slug, name) {
     const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
     const idsConNotas = Object.keys(savedNotes);
     const preguntasMateria = BANK.questions.filter(q => {
-        const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
-        return misMaterias.some(m => cleanStr(m) === cleanStr(slug));
+        if(Array.isArray(q.materia)) return q.materia.includes(slug);
+        return q.materia === slug;
     });
     const hasNotes = preguntasMateria.some(q => idsConNotas.includes(q.id));
     
