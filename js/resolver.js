@@ -1,5 +1,5 @@
 /* ==========================================================
-   🎯 MEbank 3.0 – Motor de resolución (Con Texto Formateado)
+   🎯 MEbank 3.0 – Motor de resolución (Con Fix de Nombres)
    ========================================================== */
 
 // 1. VARIABLES DE ESTADO
@@ -68,7 +68,10 @@ function renderPregunta() {
 
   const total = CURRENT.list.length;
   const numero = CURRENT.i + 1;
+  
+  // AQUI SE USA LA FUNCION CORREGIDA PARA EL TITULO
   const materiaNombre = getMateriaNombreForQuestion(q);
+  
   const isReview = (CURRENT.modo === "revision");
   const isExamMode = (CURRENT.config.correccionFinal === true) && !isReview;
   const userIdx = CURRENT.userAnswers[q.id] !== undefined ? CURRENT.userAnswers[q.id] : null; 
@@ -498,7 +501,7 @@ function renderSubjectBreakdown(list, userAnswers) {
         else stats[mat].bad++;
     });
     const rows = Object.keys(stats).map(slug => {
-        const d = stats[slug];
+        // CORRECCION APLICADA TAMBIEN AQUI
         const name = getMateriaNombreForQuestion({materia:slug});
         const score = Math.round((d.ok / d.total) * 100);
         return `
@@ -577,10 +580,30 @@ function getCorrectIndex(q, totalOpciones) {
   if (typeof raw === 'string') { const mapa = { "a": 0, "b": 1, "c": 2, "d": 3, "e": 4 }; let s = raw.trim().toLowerCase().replace(/[\.\)]/g, ""); return mapa[s] ?? null; }
   return null;
 }
+
+// ⬇️ AQUÍ ESTÁ LA MAGIA CORREGIDA ⬇️
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
+  
   const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
-  const nombres = materias.map(slug => { if (typeof BANK !== 'undefined' && BANK.subjects) { const mat = BANK.subjects.find(s => s.slug === slug); return mat ? mat.name : slug; } return slug; });
+  
+  const nombres = materias.map(slug => {
+      // 1. Buscar en BANK (Objeto global de la app)
+      if (typeof BANK !== 'undefined' && BANK.subjects) {
+          const mat = BANK.subjects.find(s => s.slug === slug);
+          if (mat) return mat.name;
+      }
+      
+      // 2. Buscar en SUBJECTS (Directamente desde config.js)
+      if (typeof SUBJECTS !== 'undefined') {
+          const mat = SUBJECTS.find(s => s.slug === slug);
+          if (mat) return mat.name;
+      }
+
+      // 3. Fallback: Devolver el slug formateado bonito
+      return slug.charAt(0).toUpperCase() + slug.slice(1).replace("_", " ");
+  });
+
   return nombres.join(" | ");
 }
 
