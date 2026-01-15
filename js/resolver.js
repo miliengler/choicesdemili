@@ -12,11 +12,33 @@ let CURRENT = {
   userAnswers: {} 
 };
 
+// --- CAMBIO: Timer maneja acumulado y sesión actual ---
 let TIMER = {
     interval: null,
-    start: 0,
+    sessionStart: 0, // Hora exacta inicio sesión actual
+    accumulated: 0,  // Tiempo traído de sesiones anteriores
     el: null
 };
+
+// --- NUEVO: Helpers para guardar tiempo ---
+const STORAGE_KEY_TIMES = "MEbank_ExamTimes_v1";
+
+function getExamTime(examId) {
+    if (!examId) return 0;
+    try {
+        const data = JSON.parse(localStorage.getItem(STORAGE_KEY_TIMES) || "{}");
+        return data[examId] || 0;
+    } catch { return 0; }
+}
+
+function saveExamTime(examId, seconds) {
+    if (!examId) return;
+    try {
+        const data = JSON.parse(localStorage.getItem(STORAGE_KEY_TIMES) || "{}");
+        data[examId] = seconds;
+        localStorage.setItem(STORAGE_KEY_TIMES, JSON.stringify(data));
+    } catch (e) { console.warn("Error guardando tiempo", e); }
+}
 
 // --- Configuración Paginado Sidebar ---
 const SB_PAGE_SIZE = 60;
@@ -33,6 +55,12 @@ function iniciarResolucion(config) {
   
   stopTimer();
   
+  // 1. Cargar tiempo previo si es un examen
+  let prevTime = 0;
+  if (config.examenId) {
+      prevTime = getExamTime(config.examenId);
+  }
+
   CURRENT = {
     list: config.preguntas.slice(),
     i: 0,
@@ -46,10 +74,13 @@ function iniciarResolucion(config) {
   ensureSidebarOnCurrent();
   
   if (config.usarTimer) {
-      initTimer();
+      initTimer(prevTime); // Pasamos lo acumulado
   } else {
       const oldTimer = document.getElementById("exam-timer");
       if(oldTimer) oldTimer.remove();
+      // Si no usa timer, igual guardamos la referencia para el cálculo final
+      TIMER.accumulated = prevTime;
+      TIMER.sessionStart = Date.now();
   }
 
   renderPregunta();
@@ -69,7 +100,6 @@ function renderPregunta() {
   const total = CURRENT.list.length;
   const numero = CURRENT.i + 1;
   
-  // AQUI SE USA LA FUNCION CORREGIDA PARA EL TITULO
   const materiaNombre = getMateriaNombreForQuestion(q);
   
   const isReview = (CURRENT.modo === "revision");
@@ -79,7 +109,6 @@ function renderPregunta() {
   const opciones = getOpcionesArray(q);
   const correctIndex = getCorrectIndex(q, opciones.length);
 
-  // Datos de notas y favoritos
   const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
   const currentNote = savedNotes[q.id]; 
   const noteText = currentNote ? currentNote.text : "";
@@ -87,7 +116,6 @@ function renderPregunta() {
   const favorites = JSON.parse(localStorage.getItem("mebank_favorites") || "[]");
   const isFav = favorites.includes(q.id);
 
-  // Badge Oficial
   let badgeHTML = "";
   if (q.oficial === true) {
       let nombreExamen = q.examen || "Examen Oficial";
@@ -96,13 +124,10 @@ function renderPregunta() {
       badgeHTML = `<div class="badge-oficial"><span style="font-size:1.1em; margin-right:4px;">⭐️</span> PREGUNTA TOMADA <span style="font-weight:400; opacity:0.8; margin-left:6px;">${detalle}</span></div>`;
   }
 
-  // Opciones
   const opcionesHTML = opciones.map((texto, idx) => {
     let claseCSS = "q-option";
     let letra = String.fromCharCode(97 + idx); 
     let eventHandler = `onclick="answer(${idx})"`;
-    
-    // Formateamos también el texto de las opciones por si tienen negritas
     let textoFormateado = parsearTexto(texto);
 
     if ((!isExamMode && yaRespondio) || isReview) {
@@ -116,12 +141,9 @@ function renderPregunta() {
     return `<label class="${claseCSS}" id="opt-${idx}" ${eventHandler}><span class="q-option-letter">${letra})</span><span class="q-option-text">${textoFormateado}</span></label>`;
   }).join("");
 
-  // --- LOGICA EXPLICACIÓN (FORMATEADA) ---
   let explicacionInicial = "";
   if (q.explicacion && ( (!isExamMode && yaRespondio) || isReview )) {
       const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
-      
-      // APLICAMOS EL PARSEO DE TEXTO AQUÍ 👇
       const explicacionFormateada = parsearTexto(q.explicacion);
 
       explicacionInicial = `
@@ -135,7 +157,6 @@ function renderPregunta() {
         </div>`;
   }
 
-  // Parseamos el enunciado principal
   const enunciadoFormateado = parsearTexto(q.enunciado);
 
   const localStyles = `
@@ -152,7 +173,6 @@ function renderPregunta() {
         .btn-action-user.is-fav { background: #1e293b; border-color: #0f172a; color: white; }
         [data-theme="dark"] .btn-action-user.is-fav { background: #3b82f6; border-color: #3b82f6; color: white; }
         [data-theme="dark"] .btn-action-user.has-note { background: #451a03; border-color: #d97706; color: #fbbf24; }
-
         .sb-pager-row { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; padding: 8px; background: var(--bg-subtle); border-radius: 8px; }
         .expl-img-container { margin-top:15px; text-align:center; }
         .expl-img-thumb { max-width: 100%; border-radius: 8px; border: 1px solid var(--border-color); cursor: zoom-in; transition: transform 0.2s; }
@@ -221,6 +241,14 @@ function answer(selectedIndex) {
 
   CURRENT.userAnswers[q.id] = selectedIndex;
 
+  // --- NUEVO: GUARDAR TIEMPO AL RESPONDER ---
+  // Guardamos el total (acumulado + actual) para no perderlo
+  if (CURRENT.config.examenId) {
+      const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
+      const totalNow = TIMER.accumulated + sessionSeconds;
+      saveExamTime(CURRENT.config.examenId, totalNow);
+  }
+
   if (isExamMode) {
       const options = document.querySelectorAll(".q-option");
       options.forEach((el, idx) => {
@@ -262,15 +290,11 @@ function answer(selectedIndex) {
       });
   }
 
-  // --- MOSTRAR EXPLICACIÓN (FORMATEADA) ---
   if (q.explicacion) {
       const holder = document.getElementById("explanation-holder");
       if (holder) {
           const imgsExpl = q.explicacion_img ? renderImagenesExplicacion(q.explicacion_img) : "";
-          
-          // PARSEAMOS AL RESPONDER TAMBIÉN 👇
           const explicacionFormateada = parsearTexto(q.explicacion);
-
           holder.innerHTML = `
             <div class="q-explanation fade" style="animation: fadeIn 0.5s ease;">
                <div style="margin-bottom:8px;"><strong>💡 Explicación:</strong></div>
@@ -332,7 +356,6 @@ function renderFin() {
       procesarResultadosExamenFinal();
   }
 
-  // Fusión de datos (Fix Reanudar)
   if (CURRENT.config.allQuestionsRef && CURRENT.config.allQuestionsRef.length > 0) {
       CURRENT.list = CURRENT.config.allQuestionsRef; 
       CURRENT.list.forEach(q => {
@@ -358,11 +381,20 @@ function renderFin() {
       });
       const score = total > 0 ? Math.round((correctas / total) * 100) : 0;
       
+      // --- CALCULO FINAL DE TIEMPO REAL ---
       let timeStr = "--:--";
-      if (TIMER.start > 0) {
-          const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
+      let totalSeconds = 0;
+      if (TIMER.sessionStart > 0) {
+          const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
+          totalSeconds = TIMER.accumulated + sessionSeconds;
+          
           const h = Math.floor(totalSeconds / 3600);
           const m = Math.floor((totalSeconds % 3600) / 60);
+          timeStr = h > 0 ? `${h}h ${m}m` : `${m} min`;
+      } else {
+          // Fallback por si no hubo timer activo (solo accumulated)
+          const h = Math.floor(TIMER.accumulated / 3600);
+          const m = Math.floor((TIMER.accumulated % 3600) / 60);
           timeStr = h > 0 ? `${h}h ${m}m` : `${m} min`;
       }
 
@@ -424,7 +456,16 @@ function renderDetailedResults() {
 
   const total = list.length;
   const nota = Math.round((correctas / total) * 100);
-  const tiempoTotalSeg = Math.floor((Date.now() - TIMER.start) / 1000);
+  
+  // --- CALCULO TIEMPO FINAL PARA MOSTRAR ---
+  let tiempoTotalSeg = 0;
+  if (TIMER.sessionStart > 0) {
+      const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
+      tiempoTotalSeg = TIMER.accumulated + sessionSeconds;
+  } else {
+      tiempoTotalSeg = TIMER.accumulated;
+  }
+
   const tiempoPromedio = total > 0 ? Math.round(tiempoTotalSeg / total) : 0;
   const fmtTime = (s) => { const m = Math.floor(s / 60); const seg = s % 60; return `${m}m ${seg}s`; };
 
@@ -501,8 +542,8 @@ function renderSubjectBreakdown(list, userAnswers) {
         else stats[mat].bad++;
     });
     const rows = Object.keys(stats).map(slug => {
-        // CORRECCION APLICADA TAMBIEN AQUI
         const name = getMateriaNombreForQuestion({materia:slug});
+        const d = stats[slug]; // Corrección importante: faltaba definir d
         const score = Math.round((d.ok / d.total) * 100);
         return `
           <div style="display:flex; justify-content:space-between; align-items:center; padding:12px; border-bottom:1px solid var(--border-color);">
@@ -533,16 +574,38 @@ function reviewIncorrectOnly() {
 /* ==========================================================
    AUXILIARES & HELPERS VISUALES (SIDEBAR + IMÁGENES)
    ========================================================== */
-function initTimer() {
-  stopTimer(); TIMER.start = Date.now();
+function initTimer(initialSeconds = 0) {
+  stopTimer(); 
+  
+  TIMER.accumulated = initialSeconds; // Guardo historial
+  TIMER.sessionStart = Date.now();    // Inicio contador fresco
+  
   let el = document.getElementById("exam-timer");
   if (!el) { el = document.createElement("div"); el.id = "exam-timer"; el.className = "exam-timer"; document.body.appendChild(el); }
-  el.style.display = "block"; el.textContent = "⏱ 00:00";
+  el.style.display = "block"; 
+  
+  const format = (totalSec) => {
+      const h = Math.floor(totalSec / 3600);
+      const m = Math.floor((totalSec % 3600) / 60);
+      const s = totalSec % 60;
+      return (h > 0 ? `${h}:` : "") + `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+  };
+
+  // Muestro 00:00 al inicio
+  el.textContent = "⏱ 00:00"; 
+
   TIMER.interval = setInterval(() => {
-    const totalSeconds = Math.floor((Date.now() - TIMER.start) / 1000);
-    const m = Math.floor((totalSeconds % 3600) / 60);
-    const s = totalSeconds % 60;
-    el.textContent = "⏱ " + (Math.floor(totalSeconds/3600)>0 ? `${Math.floor(totalSeconds/3600)}:` : "") + `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    // Calculo tiempo de ESTA sesión
+    const sessionSeconds = Math.floor((Date.now() - TIMER.sessionStart) / 1000);
+    
+    // Muestro SOLO tiempo de esta sesión
+    el.textContent = "⏱ " + format(sessionSeconds);
+    
+    // BACKUP: Guardo el total real (histórico + actual) en background
+    if (CURRENT.config.examenId && sessionSeconds % 5 === 0) {
+        saveExamTime(CURRENT.config.examenId, TIMER.accumulated + sessionSeconds);
+    }
+
   }, 1000);
 }
 function stopTimer() { if (TIMER.interval) clearInterval(TIMER.interval); TIMER.interval = null; const el = document.getElementById("exam-timer"); if (el) el.style.display = "none"; }
@@ -581,45 +644,26 @@ function getCorrectIndex(q, totalOpciones) {
   return null;
 }
 
-/* ==========================================================
-   FUNCION BLINDADA: Obtener Nombre de Materia (Flexible)
-   Reemplaza la función getMateriaNombreForQuestion anterior con esta.
-   ========================================================== */
-
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
-  
-  // Normalizamos a array
   const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
-  
-  // Helper para "limpiar" el código (quita guiones, espacios y pone minúsculas)
-  // Así 'urologia_cx' es igual a 'urologiacx' o 'urologia-cx'
   const limpiar = (txt) => txt ? txt.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
-
   const nombres = materias.map(slugRaw => {
       const slugLimpio = limpiar(slugRaw);
-
-      // 1. Buscamos en el objeto global BANK (si existe)
       if (typeof BANK !== 'undefined' && BANK.subjects) {
           const mat = BANK.subjects.find(s => limpiar(s.slug) === slugLimpio);
           if (mat) return mat.name;
       }
-      
-      // 2. Buscamos en la constante global SUBJECTS (config.js)
       if (typeof SUBJECTS !== 'undefined') {
           const mat = SUBJECTS.find(s => limpiar(s.slug) === slugLimpio);
           if (mat) return mat.name;
       }
-
-      // 3. Fallback: Si no lo encuentra, lo devuelve "prolijo"
       return slugRaw.charAt(0).toUpperCase() + slugRaw.slice(1).replace(/_/g, " ");
   });
-
   return nombres.join(" | ");
 }
 
 
-// HELPERS VISUALES (Imágenes y Sidebar)
 function renderImagenesPregunta(imgs) {
   if (!Array.isArray(imgs) || !imgs.length) return "";
   return `<div class="q-images-container">${imgs.map((src, idx) => `<div class="q-image-thumbnail" onclick="openImgModal('${src}', 'Imagen ${idx+1}')"><img src="${src}" alt="Imagen clínica" loading="lazy"><div class="q-image-zoom-hint">🔍 Ampliar</div></div>`).join("")}</div>`;
@@ -660,7 +704,6 @@ function renderSidebarCells() {
 }
 function irAPregunta(idx) { if (idx < 0 || idx >= CURRENT.list.length) return; CURRENT.i = idx; renderPregunta(); }
 
-/* --- HELPER PARA IMÁGENES DE EXPLICACIÓN (Sin texto abajo) --- */
 function renderImagenesExplicacion(imgs) {
     if (!Array.isArray(imgs) || !imgs.length) return "";
     return `
@@ -675,23 +718,11 @@ function renderImagenesExplicacion(imgs) {
     `;
 }
 
-/* ==========================================================
-   🪄 MAGIA DE FORMATO (Helper Global)
-   ========================================================== */
 function parsearTexto(texto) {
     if (!texto) return "";
-    
-    // 1. Sanitizar básico (para no romper HTML real)
     let safe = texto.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-
-    // 2. Negritas: **texto** -> <b>texto</b>
     safe = safe.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
-
-    // 3. Saltos de línea: \n -> <br>
     safe = safe.replace(/\n/g, '<br>');
-
-    // 4. Listas simples: Si empieza con "- " o "• ", le damos un toque visual
     safe = safe.replace(/<br>- /g, '<br>• '); 
-
     return safe;
 }
