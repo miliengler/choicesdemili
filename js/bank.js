@@ -1,21 +1,8 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco Central (Compatible)
+   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos.)
    ========================================================== */
 
-/* --- 1. HERRAMIENTAS DE LIMPIEZA (Globales) --- */
-
-// Para Stats y Resolver (Nueva)
-window.cleanSlug = function(text) {
-    if (!text) return "";
-    return String(text).toLowerCase().replace(/[^a-z0-9]/g, "");
-};
-
-// Para Choice y Home (Vieja - La que faltaba)
-window.normalize = function(s) {
-  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
-};
-
-/* --- 2. PROGRESO --- */
+/* --- 1. PROGRESO --- */
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
 function loadProgress() {
@@ -23,12 +10,21 @@ function loadProgress() {
   catch { return {}; }
 }
 
-window.saveProgress = function() {
+function saveProgress() {
   try { localStorage.setItem(STORAGE_KEY_PROG, JSON.stringify(PROG)); }
   catch (e) { console.warn("No se pudo guardar PROG", e); }
-};
+}
 
 let PROG = loadProgress();
+
+/* --- 2. UTILIDADES --- */
+function normalize(s) {
+  return s ? String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, "").toLowerCase() : "";
+}
+
+function normalizeId(id) {
+  return id ? String(id).trim() : `gen_${Math.random().toString(36).slice(2)}`;
+}
 
 /* --- 3. ESTRUCTURA --- */
 let BANK = {
@@ -46,7 +42,7 @@ if(typeof SUBJECTS !== 'undefined') {
     });
 }
 
-/* --- 4. CARGA DE DATOS --- */
+/* --- 4. CARGA TURBO --- */
 async function loadAllBanks() {
   console.time("⏱ Tiempo de carga");
   const appMsg = document.querySelector("#app div"); 
@@ -97,35 +93,49 @@ async function loadAllBanks() {
   BANK.loaded = true;
 
   console.timeEnd("⏱ Tiempo de carga");
-  console.log(`✅ Carga finalizada: ${successFiles} archivos. ${BANK.questions.length} preguntas.`);
+  console.log(`✅ Carga finalizada: ${successFiles} archivos leídos. ${BANK.questions.length} preguntas totales.`);
 
   if(appMsg) appMsg.textContent = "✔ Banco listo.";
-  
   if(typeof renderHome === "function") renderHome();
 }
 
 /* --- 5. PROCESADOR --- */
 function processQuestion(q, type, examMeta) {
-    if(!q.id) q.id = `gen_${Math.random().toString(36).slice(2)}`;
-    else q.id = String(q.id).trim();
+    if(!q.id) q.id = normalizeId(null);
+    else q.id = normalizeId(q.id);
     
-    // Normalización de materia
-    if (!Array.isArray(q.materia)) {
-        q.materia = [q.materia || "otras"];
+    // 1. Materia (Normalización robusta)
+    if (Array.isArray(q.materia)) {
+        q.materia = q.materia.map(m => normalize(m));
+    } else {
+        let mat = normalize(q.materia || "otras");
+        // Si la materia no existe en SUBJECTS, mandarla a 'otras'
+        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
+        q.materia = mat;
     }
-    // Usamos cleanSlug aquí para estandarizar todo lo que entra
-    q.materia = q.materia.map(m => window.cleanSlug(m));
 
-    // Submateria
-    if(!q.submateria) q.submateria = "General";
-    if(Array.isArray(q.submateria)) q.submateria = q.submateria[0];
+    // 2. Submateria
+    // Intentamos asignar una submateria válida basándonos en la PRIMERA materia de la lista
+    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
+    const subNorm = normalize(subRaw);
+    
+    const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
 
-    // Meta
+    if (match) {
+        q.submateria = normalize(match);
+    } else {
+        // Si no machea, asignamos al ÚLTIMO ítem de la lista (Catch-All)
+        q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
+    }
+
+    // 3. Metadatos
     q.tipo = type;
     if (type === "examen" && examMeta) {
         q.examen = examMeta.id;
         q.anio = examMeta.anio;
-        q.oficial = true;
     } else {
         q.examen = null;
     }
@@ -141,22 +151,37 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS DE BÚSQUEDA --- */
-function getQuestionsByMateria(slugConfig, subtemasFilter) {
-    // Usamos cleanSlug para asegurar coincidencia
-    const slugObjetivo = window.cleanSlug(slugConfig);
+/* --- 7. APIS HÍBRIDAS (LOGICA MATEMÁTICA CORREGIDA) --- */
+function getQuestionsByMateria(mSlug, selectedSubs) {
+    // Lista oficial de subtemas normalizados para esta materia
+    const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
+    // Identificamos cuál es el "Catch-All" (el último de la lista)
+    const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
 
     return BANK.questions.filter(q => {
-        const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
-        // Buscamos coincidencia flexible
-        const esDeLaMateria = materiasQ.some(m => window.cleanSlug(m) === slugObjetivo);
-        
+        // 1. Chequear si es de la materia
+        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         if (!esDeLaMateria) return false;
 
-        if (!subtemasFilter || subtemasFilter.length === 0) return true;
+        // 2. Si no hay filtro de subtemas, devolver todo
+        if (!selectedSubs || !selectedSubs.length) return true;
+
+        // 3. Chequear subtema
+        const qSub = q.submateria;
         
-        const qSub = window.normalize(q.submateria); // Aquí mantenemos normalize por compatibilidad
-        return subtemasFilter.some(s => window.normalize(s) === qSub);
+        // A) Coincidencia directa
+        if (selectedSubs.includes(qSub)) return true;
+
+        // B) Lógica de Huérfanos:
+        // Si el usuario seleccionó el "Catch-All" (ej: "Otras preguntas..."),
+        // debemos incluir también las preguntas cuyo subtema NO esté en la lista oficial de esta materia.
+        // (Esto pasa cuando una pregunta es compartida entre materias y tiene el subtema de la otra).
+        if (selectedSubs.includes(catchAllSub)) {
+            const esHuerfano = !officialSubs.includes(qSub);
+            if (esHuerfano) return true;
+        }
+
+        return false;
     });
 }
 
