@@ -1,8 +1,6 @@
+
 /* ==========================================================
-   📚 MEbank 3.0 – Configuración central (CORREGIDA)
-   - Materias oficiales
-   - Subtemas por materia
-   - Exámenes anteriores (meta)
+   📚 MEbank 3.0 – Configuración central
    ========================================================== */
 
 /* ----------------------------------------------------------
@@ -18,8 +16,11 @@ const SUBJECTS = [
   // --- CAMBIO DE IDENTIDAD: NEFROLOGÍA (Era Urología) ---
   { slug: "urologia",           name: "🚽 Nefrología" }, 
   
-  // --- NUEVA MATERIA: UROLOGÍA (La real) ---
+  // --- UROLOGÍA (La real) ---
   { slug: "urologia_cx",        name: "🍆 Urología" },
+
+  // --- NUEVA MATERIA: URGENCIAS ---
+  { slug: "urgencias",          name: "🚑 Urgencias" },
 
   { slug: "gastroenterologia",  name: "💩 Gastroenterología" },
   { slug: "dermatologia",       name: "🧴 Dermatología" },
@@ -42,7 +43,7 @@ const SUBJECTS = [
   { slug: "medicinalegal",      name: "⚖️ Medicina Legal" },
   { slug: "saludpublica",       name: "🏥 Salud Pública" },
   { slug: "imagenes",           name: "🩻 Diagnóstico por Imágenes" },
-  { slug: "aps",                name: "🚑 Atención Primaria de la Salud" },
+  { slug: "aps",                name: "🏥 Atención Primaria de la Salud" },
   { slug: "otras",              name: "📚 Otras" }
 ];
 
@@ -55,6 +56,19 @@ const SUBTEMAS = {
      "Atención Primaria de la Salud"
  ],
 
+  // ... (Tus otros subtemas siguen igual, solo agrego el nuevo abajo) ...
+
+  /* --- URGENCIAS (Nueva) --- */
+  urgencias: [
+    "Síndromes torácicos",
+    "Síndromes abdominales",
+    "Paciente politraumatizado",
+    "Patología renal y urológica urgente",
+    "Otras preguntas de urgencias"
+  ],
+
+  // ... (Aquí van el resto de tus materias: cardiologia, cirugia, etc.) ...
+  
   cardiologia: [
     "Cardiología básica",
     "Hipertensión arterial y factores de riesgo",
@@ -187,7 +201,8 @@ const SUBTEMAS = {
    
   medicinafamiliar: [
     "Adulto mayor",
-    "General"
+    "Control de salud",
+    "Otrs preguntas de medicina familiar"
   ],
    
   medicinalegal: [
@@ -279,7 +294,8 @@ const SUBTEMAS = {
   ],
 
   oncologia: [
-    "Oncología"
+    "Conceptos de Oncología",
+    "Otras preguntas de oncología"
   ],
 
   otorrinolaringologia: [
@@ -293,6 +309,8 @@ const SUBTEMAS = {
 
   otras: [
     "Fármacos",
+    "Cuidados Paliativos",
+    "Inmunologia",
     "Otras"
   ],
 
@@ -368,9 +386,7 @@ const SUBTEMAS = {
     "Otras preguntas de traumatología"
   ],
 
-  /* --- NEFROLOGÍA (Antes Urología) --- 
-     Mantenemos el ID 'urologia' para el legado.
-  */
+  /* --- NEFROLOGÍA (Antes Urología) --- */
   urologia: [
     "Fisiología renal",
     "Síndromes clínicos",
@@ -403,7 +419,7 @@ const SUBTEMAS = {
    🧪 Exámenes anteriores (meta)
    ---------------------------------------------------------- */
 const EXAMENES_META = [
-  /* ---------- EXAMEN ÚNICO (oficial) ---------- */
+  // ... (Aquí dejá todo lo que ya tenías de exámenes) ...
   ...[
     2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025
   ].map(y => ({
