@@ -1,1 +1,2284 @@
-[]
+[
+  {
+    "id": "neumo-002-001",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Ud. atiende a una persona de 35 años de edad, no tabaquista, que presenta diagnóstico de asma de hace 8 años. Se encuentra tratado con puff de Salbutamol a demanda. El paciente manifiesta que en el último trimestre requirió con más frecuencia el uso de puff porque aumentaron sus crisis nocturnas. En el último mes tuvo que asistir a la guardia del hospital en 3 ocasiones por falta de aire allí le indicaron distintos puffs de los que no recuerda su nombre. Ud. determina que no está habiendo un control clínico del asma. ¿Cuál es el tratamiento farmacológico escalonado del asma que deberá realizar?",
+    "opciones": {
+      "a": "Iniciar dosis bajas de corticoides via oral asociado a Salbutamol a demanda.",
+      "b": "Iniciar tratamiento con broncodilatadores y derivar al consultorio de Neumonologia para su seguimiento.",
+      "c": "Continuar con los puff de Salbutamol de base cada 8 hs.",
+      "d": "Iniciar tratamiento con broncodilatadores adrenérgicos de acción larga y dosis baja de corticoides inhalados"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento farmacológico escalonado del asma para un paciente que no está teniendo un control adecuado y que ha tenido un aumento en la frecuencia de sus crisis nocturnas y visitas a la guardia es: **Iniciar tratamiento con broncodilatadores adrenérgicos de acción larga y dosis baja de corticoides inhalados**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-002",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Ventilación y ventilación mecánica"
+    ],
+    "enunciado": "Dentro de las medidas de soporte de la insuficiencia respiratoria aguda contamos con la ventilación no invasiva (VNI), que pretende evitar o retrasar la intubación orotraqueal. ¿En cuál de las siguientes situaciones clínicas está contraindicada la ventilación no invasiva?",
+    "opciones": {
+      "a": "Paciente con Edema de pulmón cardiogénico grave",
+      "b": "Paciente con inestabilidad hemodinámica",
+      "c": "Paciente con insuficiencia respiratoria hipoxémica grave",
+      "d": "Paciente con enfermedad pulmonar crónica reagudizada"
+    },
+    "correcta": "b",
+    "explicacion": "La VNI o VMNI está contraindicada: **inestabilidad hemodinámica**, secreciones abundantes, traumatismo o cirugía reciente facial o parada cardiorrespiratoria.\n\nLa ventilación no invasiva (VNI o VMNI) evita la intubación, mejora la tolerancia del paciente, preserva los mecanismos de defensa del pulmón y permite el habla y la deglución.\n\nLos problemas más importantes que presenta son las fugas. Se puede utilizar en pacientes con insuficiencia respiratoria aguda, y hay evidencia científica de su eficacia en la exacerbación de la enfermedad pulmonar obstructiva crónica que cursa con acidosis respiratoria (pH < 7,35, PaCO2 > 45 mmHg), el edema agudo de pulmón, la insuficiencia respiratoria en pacientes inmunodeprimidos y como ayuda a la retirada de la ventilación mecánica invasiva (destete o weaning).\n\nEn pacientes con insuficiencia respiratoria crónica, se ha demostrado su eficacia en pacientes con enfermedades neuromusculares, alteraciones de la caja torácica y síndrome de hipoventilación-obesidad.\n\nLa ventilación estaria indicada en pacientes con enfermedad pulmonar obstructiva crónica grave con importantes alteraciones ventilatorias nocturnas y deterioro gasométrico hipercápnico diurno, que no mejoran con los tratamientos convencionales, incluyendo la oxigenoterapia domiciliaria, y que tienen frecuentes hospitalizaciones con fallo respiratorio hipercápnico.\n\nLa VMNI mejora la calidad de vida, reduce el número de ingresos y visitas a urgencias y aumenta la supervivencia de estos pacientes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-003",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Semiología"
+    ],
+    "enunciado": "¿Cuál es la variable de gases arteriales que define la hipoventilación?",
+    "opciones": {
+      "a": "PaCO2",
+      "b": "Bicarbonato.",
+      "c": "PaO2.",
+      "d": "pH."
+    },
+    "correcta": "a",
+    "explicacion": "La variable de gases arteriales que define la hipoventilación es la **presión arterial de dióxido de carbono (PaCO2)**.\n\nFundamentación:\nLa hipoventilación se caracteriza por una disminución del volumen minuto respiratorio. Esto significa que los pulmones no están recibiendo suficiente aire, lo que resulta en una acumulación de dióxido de carbono (CO2) en la sangre. La PaCO2 es una medida directa de la cantidad de CO2 en la sangre arterial. Por lo tanto, un aumento en la PaCO2 es un indicador claro de hipoventilación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-004",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "Usted recibe en la guardia a Guillermo de 72 años, quien consulta por presentar tos, disnea para hacer sus actividades cotidianas y dolor torácico de 48hs de evolución, con empeoramiento progresivo. Tiene hipertensión arterial en tratamiento con hidroclorotiazida. Al examen físico se encuentra lúcido, afebril, FC 100/min, FR 32/min, saturación de oxígeno del 97%, tensión arterial 100/70 mmHg, con signo del pliegue cutáneo positivo. Al examen físico presenta R1 y R2 en ambos focos, y crepitantes en base izquierda pulmonar. ¿Cuál es la indicación terapéutica más adecuada en este caso?",
+    "opciones": {
+      "a": "Amoxicilina clavulánico VO cada 8-12 horas, abundante hidratación, antitérmicos si fiebre, pautas de alarma y control en 48hs.",
+      "b": "Internación en sala de clínica médica, ampicilina sulbactam EV, hidratación parenteral, oseltamivir, oxigenoterapia según saturación.",
+      "c": "Internación en sala de cuidados intensivos, oxigenoterapia, ampicilina sulbactam EV, hidratación parenteral, oseltamivir según panel virológico.",
+      "d": "Internación en sala de cuidados intermedios, oxigenoterapia, ampicilina sulbactam EV, hidratación parenteral, oseltamivir."
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de tos, disnea para hacer sus actividades cotidianas y dolor torácico de 48hs de evolución, con empeoramiento progresivo puede hacernos pensar en un cuadro de neumonia en un anciano, que suele ser más solapado y puede estar ausente la fiebre.\n\nSegún los datos que nos aporta el caso clínico podemos utilizar el **CURB-65**: 2 puntos (edad y FR): se debe internar en sala de clínica médica.\n\nNAC en pacientes que requieren ingreso en sala general: En estos pacientes el agente etiológico más frecuente es nuevamente el neumococo, por lo cual el tratamiento de elección suele ser un betalactámico. Oseltamivir es indicado durante la fase epidémica hasta conocer el resultado de la PCR.\n\nRespuesta correcta: **Internación en sala de clínica médica, ampicilina sulbactam EV, hidratación parenteral, oseltamivir, oxigenoterapia según saturación**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-005",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Una mujer de 52 años consulta porque presenta tos en la mayoría de los días desde hace 3 meses aproximadamente. Refiere antecedentes de tabaquismo (40 paquetes/año). Solicita una espirometría que informa los siguientes valores Pre Broncodilatadores: CVF de 3,08 L que representa el 96% del valor teórico, VEF1 de 1,54 L que representa el 62% del valor teórico y la relación VEF1/CVF es del 50%. En los valores Post broncodilatador que informa la espirometría, el porcentaje de cambio del VEF1 es de apenas un 1%. ¿Cómo interpreta los resultados obtenidos?",
+    "opciones": {
+      "a": "Patrón obstructivo grave, no reversible a broncodilatadores.",
+      "b": "Patrón obstructivo moderado, no reversible a broncodilatadores",
+      "c": "Patrón obstructivo grave, reversible a broncodilatadores",
+      "d": "Patrón restrictivo moderado, no reversible a broncodilatadores"
+    },
+    "correcta": "b",
+    "explicacion": "La enfermedad pulmonar obstructiva crónica se presenta frecuentemente en pacientes tabaquistas, la sintomatologia se caracteriza por tos crónica, asociado a dificultad respiratoria.\n\nEl signo que determina la presencia de EPOC es la **obstrucción al flujo de aire**. Las pruebas funcionales respiratorias permiten evidenciar esta obstrucción mediante la disminución del FEV1 y la relación FEV1/FVC < 70% con una respuesta menor al 12% luego de los broncodilatadores.\n\nLa severidad de la obstrucción depende del porcentaje del VEF1 siendo leve cuando es mayor al 80%, **moderado cuando su valor se encuentra entre 80-50%**, grave cuando el rango es entre 50-30% y muy grave cuando el mismo se encuentra por debajo del 30%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-006",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "TRS"
+    ],
+    "enunciado": "Un varón de 58 años, tabaquista de 35 paquetes/año, trae a la consulta la siguiente espirometría: VEF1: 58%, VEF1/CVF: 60%, CVF: 90%, sin modificaciones con broncodilatadores; refiere poder caminar 10 cuadras sin presentar tos ni disnea. ¿Cuál de las siguientes conductas es la más adecuada?",
+    "opciones": {
+      "a": "Indicar agonistas B2 o antimuscarinicos inhalados de acción corta",
+      "b": "Solicitar radiografia de tórax para rastrear câncer de pulmón y vacuna antigripal.",
+      "c": "Indicar vacunación antigripal y antineumococica.",
+      "d": "Indicar cigarrillo electrónico para cese tabáquico."
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEn todo paciente con EPOC se recomienda **vacuna antigripal anual y antineumocócica** (PCV20 = 1 dosis) para reducir riesgo de exacerbaciones e infecciones respiratorias.\n\nAdemás, debe indicarse cese tabáquico como intervención clave.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-007",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "Varón de 72 años, fumador, que es diagnosticado de carcinoma epidermoide de pulmón por biopsia de un nódulo pulmonar de 1 cm. Se realiza estudio de extensión con PET-TC tras la administración de 18F-FDG: se observa una lesión pulmonar de 1 cm y no se ven datos de diseminación locorregional ni a distancia. ¿Cuál es la estadificación más probable?",
+    "opciones": {
+      "a": "T2N0M0",
+      "b": "T1N0M1",
+      "c": "T1N0M0",
+      "d": "T1N1M0"
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos.\n\nSe trata de una lesión pulmonar de 1 cm = **T1**; y en las imágenes no se ven datos de diseminación locorregional ni a distancia por tanto **N0** y **M0**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-008",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En un paciente con un carcinoma de pulmón Estadio I, ¿cuál es la intervención quirúrgica de elección?",
+    "opciones": {
+      "a": "Bilobectomía",
+      "b": "Lobectomia",
+      "c": "Pleuroneumonectomia",
+      "d": "Neumonectomia"
+    },
+    "correcta": "b",
+    "explicacion": "La **lobectomia** es la intervención quirúrgica estándar para los pacientes con cáncer de pulmón localizado que se encuentran en unas condiciones médicas aceptables. Si no se puede practicar una resección anatómica mediante lobectomia, puede que haya que realizar una bilobectomía o una neumonectomía.\n\nLa resección en manguito consiste en extirpar el tumor junto con el bronquio y anastomosar los extremos que quedan del árbol bronquial.\n\nPara realizar la resección quirúrgica, se puede practicar una toracotomía abierta o recurrir a la cirugía torácica asistida por video (VATS).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-009",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Una paciente de 22 años con diagnóstico de asma bronquial hace 6 meses concurre al consultorio para control. Se encuentra en tratamiento con agonistas b2 a demanda. Refiere síntomas asmáticos frecuentes, 4 veces en el último mes y sin episodios de exacerbaciones. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Budesonide",
+      "b": "Combinación formoterol/ tiotropio",
+      "c": "Formoterol",
+      "d": "Combinación budesonide/formoterol"
+    },
+    "correcta": "a",
+    "explicacion": "El asma es una entidad frecuente que se caracterisa clinicamente por la presencia de episodios recurrentes de tos, disnea y sibilancias.\n\nEl tratamiento se realiza en forma escalonada comenzando por el uso de broncodilatadores de accion corta a demanda. En caso de presentar requerimiento de los mismos mas de tres veces por semana evidencia la necesidad de agregar otro farmaco.\n\nEl segundo escalón luego de los BD de accion corta son los **corticoides inhalados** en este caso \"**budesonide**\" (correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-010",
+    "materia": [
+      "neumonologia",
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Neurocirugía"
+    ],
+    "enunciado": "Varón de 45 años se encuentra internado por TEC grave y HSA secundaria. El cuarto día de su estadia presenta episodio de disnea súbita y dolor torácico. En la angioTC de tórax se confirma el diagnóstico de tromboembolismo de pulmón. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Filtro de vena cava inferior.",
+      "b": "Acenocumarol",
+      "c": "Rivaroxaban",
+      "d": "Heparina de bajo peso molecular"
+    },
+    "correcta": "a",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos.\n\nHemorragia cerebral + TEP (sintomático para mejorar las cosas). Nuestro dilema entre la trombosis y la hemorragia. Lo que prima es que el paciente no se muera. Ninguna opción de anticoagulación es buena en estos momentos si no podemos controlar ni la acción del anticoagulante ni el sangrado.\n\nPor lo tanto, no nos queda otra que colocar un **filtro de vena cava**, a la espera de poder iniciar anticoagulación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-011",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "La espirometría es un estudio de referencia para el diagnóstico y valoración de severidad de EPOC. ¿En qué personas se recomienda realizarla para detección de esta enfermedad?",
+    "opciones": {
+      "a": "Tabaquismo pasivo por al menos 5 años",
+      "b": "Carga tabáquica =40 paquete/año tanto en fumadores como exfumadores",
+      "c": "Carga tabáquica <40 paquete/año en fumadores con tos persistente",
+      "d": "Se recomienda rastreo masivo en la población"
+    },
+    "correcta": "b",
+    "explicacion": "Para la detección de casos de EPOC se recomienda realizar espirometria pre y post broncodilatadores (es decir, tanto antes como al menos 15 minutos después de un broncodilatador) en los siguientes casos:\n\n- Ante la presencia de algún síntoma respiratorio crónico como tos o expectoración de 3 meses, disnea o sibilancias (auscultadas o autoreportadas) tanto en fumadores como en exfumadores.\n- Ante **carga tabáquica igual o mayor a 40 paquetes/año** (aún en quienes no presentan sintomas respiratorios) tanto en fumadores como en exfumadores. (paquetes/año: cigarrillos fumados por día x años de consumo/20) -respuesta CORRECTA-.\n- También en personas con síntomas respiratorios crónicos (tos o expectoración de 3 meses, disnea o sibilancias) asociados a exposición ambiental crónica o antecedentes como: Exposición al humo de biomasa o exposición laboral a polvo y particulas (ej. minería de carbón y de materiales duros, construcción de túneles, fabricación de materiales de la construcción, cemento, hierro, acero y otras; gases diésel, otros gases y vapores irritantes, reparación de automóviles; trabajadores en planta de cereales, cuidado de animales de granja, industria textil, plásticos, caucho y fabricación de cuero; peluqueria y cosmetologia).\n- Fumador pasivo de más de 20 hs semanales. Antecedentes personales de tuberculosis, infecciones respiratorias bajas a repetición en la infancia, historia de asma no controlado.\n- Antecedentes familiares de EPOC severa o déficit de alfa 1 antitripsina.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-012",
+    "materia": [
+      "neumonologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Fibrosis quística",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "Una madre lleva a la consulta a su hijo de 8 meses. Refiere que el lactante ha padecido diarrea durante 2 meses y el cuadro ha empeorado en el último día. La madre relata que la materia fecal es grasosa, pero sin sangre. Al examen físico el niño se ve pálido, adelgazado y con deshidratación leve pero alerta. La auscultación pulmonar y el examen del abdomen son normales. En el pañal se encuentra materia fecal maloliente y grasosa. ¿Cuál de los siguientes estudios complementarios tiene mayor probabilidad de revelar el diagnóstico?",
+    "opciones": {
+      "a": "Urocultivo",
+      "b": "Parasitológico fresco y seriado",
+      "c": "Prueba serológica para investigar anticuerpos antigliadina",
+      "d": "Test del sudor"
+    },
+    "correcta": "d",
+    "explicacion": "La **fibrosis quística** es una enfermedad hereditaria autosómica recesiva que afecta pulmones, páncreas, higado e intestino. Se produce por una mutación de un aminoácido (AF508) en la proteína reguladora de la conductancia transmembrana CFRT, cromosoma 7. La presentación varia según la edad.\n\nEl recién nacido puede presentar poca ganancia de peso, ileo meconial o ictericia prolongada. Los menores de 2 años también pueden presentar poca ganancia de peso, sindromes broncos obstructivos a repetición, con atelectasias. También heces esteatorreas y prolapso rectal por lo cual ante estos cuadros se sugiere realizar un **test del sudor**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-013",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Lucía, una paciente de 28 años, fumadora desde hace 6 años de 10 cigarrillos diarios, consulta por presentar tos seca, disnea, sensación de opresión precordial y sibilancias audibles. Tiene crisis similares casi todos los días que ceden con salbutamol en su domicilio. Utilizó un tiempo budesonida en aerosol, pero lo abandonó por temor a los efectos adversos. Se hizo análisis donde destaca una leve eosinofilia y una prueba de función respiratoria que muestra CVF 3600 ml (95% de la esperada) VEF 1 2400 ml; relación VEF1/CVF 66%. Luego de la administración de un beta 2 el VEF 1 es 2900 ml. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Se plantea diagnóstico de Asma, pero por la frecuencia de los sintomas semanales le indicaría una droga controladora, preferiblemente Corticoides inhalados dosis bajas y abandono del tabaco",
+      "b": "Se plantea que es Asma severo e indicaría dosis altas de corticoides inhalados sumado a beta 2 de acción prolongada y eventualmente montelukast. Además, indica abandono del tabaco",
+      "c": "Usted asevera diagnóstico de Asma leve e indica salbutamol según necesidad y abandono del tabaco",
+      "d": "Por los valores del estudio espirométrico se plantea la posibilidad de EPOC leve, por lo que indica abandono del tabaco y broncodilatadores para tratamiento sintomático, preferiblemente anticolinérgicos"
+    },
+    "correcta": "a",
+    "explicacion": "El asma es una entidad frecuente que se caracteriza clinicamente por la presencia de episodios recurrentes de tos, disnea y sibilancias. Espirometricamente se comprueba obstrucción variable de las vías respiratorias con respuesta post broncodilatadores mayor al 12%.\n\nComo regla general todos los pacientes deben ser tratados con agonistas adrenérgicos beta2 de rápida acción a demanda para tratar los síntomas.\n\nComenzaría por el Paso 2. **Agregar dosis bajas de Corticoides Inhalados (CI)** y continúa con el BD b2 a demanda. (resp correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-014",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Tomografía"
+    ],
+    "enunciado": "Una paciente de 60 años es traída a la guarda por disnea de reposo de 12hs de evolución asociada a un episodio de hemoptisis leve. Refiere que se encuentra realizando reposo en su domicilio porque hace 1 mes se operó de la columna dorsolumbar. Al examen físico se encuentra lúcida, TA 120-70 mmHg, FC 110 lxm, FR 30 rpm, Saturación del 92% e IMC 36 kg/m2. Presenta el miembro inferior derecho aumentado de tamaño, caliente y doloroso ¿Qué estudios le solicitaría a esta paciente?",
+    "opciones": {
+      "a": "Angiotomografia computada de tórax",
+      "b": "Dimero D y, en caso de estar aumentado, angiotomografia computada de tórax",
+      "c": "Dímero D y, en caso de ser negativo, angiotomografía computada de tórax",
+      "d": "Angiomografía de tórax y, en caso de ser positivo, pedir centellograma V/Q"
+    },
+    "correcta": "a",
+    "explicacion": "El tromboembolismo pulmonar se manifiesta con disnea, hipoxemia y hemopsisis entre otros sintomas de inicio súbito.\n\nCuando se sospecha el diagnostico se debe valorar la probabilidad que el paciente tiene de tener embolia pulmonar mediante la regla de Wells que considera:\n- FACTORES PREDISPONENTES (enfermedad tromboembólica previa 1,5/Cirugía reciente o inmovilización 1,5/Cancer 1)\n- SÍNTOMAS (Hemoptisis 1)\n- SIGNOS (Frecuencia cardiaca mayor a 100 lpm 1,5/Signos clinicos de TVP 3)\n- JUICIO CLINICO (Diagnostico alternativo menos probable 3).\n\nSe considera que la probabilidad es baja si el paciente suma menos de 2 puntos, moderada entre 2 y 6 puntos y elevada 6 o mas.\n\nEn un paciente con riesgo bajo a moderado se debe realizar determinación de dimero D, si este es negativo (menor a 500 ng/dl) se descarta la enfermedad tromboembólica y si es positivo se realiza una tomografia computada con protocolo para tromboembolismo pulmonar (angiotomografia).\n\nEn paciente con probabilidad alta se realiza directamente una **angiotomografia de tórax**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-015",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "¿Cuál de las siguientes patologías se asocia con enfermedad intersticial difusa en la radiografía de tórax?",
+    "opciones": {
+      "a": "Malformación vascular",
+      "b": "Infarto pulmonar",
+      "c": "Fibrosis pulmonar idiopática",
+      "d": "Absceso bacteriano"
+    },
+    "correcta": "c",
+    "explicacion": "Las enfermedades intersticiales comprenden un grupo muy heterogéneos de enfermedades respiratorias que afectan el intersticio pulmonar además de otras estructuras como ácinos bronquiolos etc. Se manifiestas fundamentalmente con disnea y un patrón restrictivo en las pruebas funcionales habitualmente con un descenso de la DLCO.\n\nEn las fases tempranas de estas enfermedades se observa en la radiografia de tórax un aumentado de la densidad en vidrio esmerilado en forma difusa que luego progresa con un patrón lineal (reticular) a ves asociado con pequeños nódulos (reticulonodulillar).\n\nLa **fibrosis pulmonar idiopática** es una de las mas frecuentes en esta categoria junto a muchas otras como la neumonia intersticial inespecífica, neumonia organizativa criptogénica, asociadas a enfermedades del colágeno, neumonitis por hipersensibilidad, etc.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-016",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "Una mujer de 27 años consulta por tos no productiva de años de evolución. Refiere disnea CF II desde hace varios meses. Tiene antecedentes de neumotórax espontáneo hace 2 años por lo que requirió internación y colocación de tubo de toracostomía. El año pasado se realizó una espirometría que reveló CVF 96 % y VEF1 69 % y le indicaron tratamiento con glucocorticoides inhalados con respuesta escasa. En la radiografía de tórax presenta: tenue patrón intersticial reticular en los campos pulmonares medios. Se realiza TC de tórax de alta resolución que informa múltiples quistes de menos de 2 cm de paredes finas con distribución uniforme en ambos pulmones, a predominio basal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Linfangioleiomiomatosis.",
+      "b": "Neumonitis por hipersensibilidad.",
+      "c": "Hidatidosis pulmonar.",
+      "d": "Histiocitosis X."
+    },
+    "correcta": "a",
+    "explicacion": "La **LAM** es una enfermedad multisistémica, casi exclusiva de mujeres en edad fértil.\n\nAparte de los síntomas propios de las EPID, otras características de la enfermedad son: neumotórax recidivante (69%), quilotórax (23%) y hemoptisis (20%).\n\nLa radiografía de tórax y la TACAR muestran opacidades micronodulares pseudomiliares basales y líneas B de Kerley en las fases iniciales.\n\nEn las fases más evolucionadas de la enfermedad, aparecen imágenes quísticas de pared fina, principalmente en las zonas basales. En un contexto clínico apropiado, las imágenes de la TACAR con volúmenes pulmonares aumentados son sugestivas del diagnóstico de LAM.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-017",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Ignacio tiene 59 años, tabaquista de 20 paquetes/año. Presenta tos productiva durante más de 3 meses por año en los últimos dos años y disnea ante esfuerzos intensos (subir 4 pisos de escalera y trabajar podando árboles). Luego de descartar cualquier patología infecciosa, le solicita una espirometría, la cual muestra los siguientes resultados: Previo al uso de broncodilatador Capacidad vital forzada 103% del valor teórico Índice de Tiffeneau 65% Volumen espiratorio forzado del primer segundo 81 % Posterior al uso de broncodilatador: Capacidad vital forzada 102% del valor teórico Índice de Tiffeneau 64% Volumen espiratorio forzado del primer segundo 80%. Ante esta evaluación clínica, indique ¿cual es el tratamiento farmacológico adecuado?",
+    "opciones": {
+      "a": "Aerosolterapia reglada con budesonide en dosis baja y salbutamol a demanda.",
+      "b": "Aerosolterapia a demanda con bromuro de ipratropio.",
+      "c": "Aerosolterapia reglada con budesonide en dosis bajas e ipratropio a demanda.",
+      "d": "Aerosolterapia reglada con tiotropio y salbutamol a demanda."
+    },
+    "correcta": "b",
+    "explicacion": "En la EPOC la decisión de iniciar tratamiento inhalatorio inicial se toma en función de la severidad de la obstrucción en la espirometria (% del VEF1 post BD), la presencia de exacerbaciones (ej. consultas a guardias) y la presencia de síntomas respiratorios crónicos (disnea, tos y/o expectoración).\n\nRecordar valores de espirometría que se considera normal: VEF1/CVF mayor o igual ( ) al 70% postbroncodilatadores - CVF mayor o igual ( ) al 80% del predicho - VEF1 mayor o igual ( ) al 80% del predicho.\n\nPara manejo de los síntomas y mejora de la tolerancia al ejercicio: se puede comenzar tratamiento de acción corta. No usar corticoides inhalados en obstrucción leve y con precaución en obstrucción moderada (sólo en casos VEF1 menor al 60%) orientando su uso especialmente ante la coexistencia de asma.\n\nAnte sintomas tos, expectoración, disnea (mMRC igual o mayor a 2) y obstrucción no severa (VEF1 igual o mayor a 50%) = Esquema de inicio: BD de acción corta reglados o a demanda (B2 adrenérgicos y/o antimuscarinicos): **Aerosolterapia a demanda con bromuro de ipratropio** (respuesta correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-018",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿En un empiema torácico agudo, cuál de las siguientes medidas terapéuticas seleccionaría como tratamiento inicial?",
+    "opciones": {
+      "a": "Punción-aspiración pleural con aguja",
+      "b": "Decorticación pulmonar temprana",
+      "c": "Antibioterapia de amplio espectro, a la espera del cultivo del derrame pleural",
+      "d": "Drenaje pleural con tubos"
+    },
+    "correcta": "d",
+    "explicacion": "El derrame pleural paraneumonico debe sospecharse siempre ante la presencia de neumonia y derrame pleural. Un débito francamente purulento al realizar la toracocentesis es diagnostico de **empiema** e implica la necesidad de drenar la cavidad pleural a travez de un **tubo de toracostomia**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-019",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Paciente masculino de 56 años con antecedentes de tabaquismo de 20 cigarrillos/día por 20 años, consulta por disnea de esfuerzo y tos con expectoración mucosa ¿Qué estudio solicitaría para realizar el diagnóstico?",
+    "opciones": {
+      "a": "Tomografia de tórax con contraste EV.",
+      "b": "Examen directo para BAAR",
+      "c": "Ecocardiograma doppler color.",
+      "d": "Espirometría con prueba post broncodilatador."
+    },
+    "correcta": "d",
+    "explicacion": "En este caso ante una persona con antecedentes de TBQ con síntomas respiratorios debemos sospechar en primer lugar dx de EPOC por lo que debemos realizar **espirometría pre y post broncodilatadores**",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-020",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "El principal origen de los empiemas pleurales es:",
+    "opciones": {
+      "a": "Paraneumónico.",
+      "b": "Posoperatorio de cirugía torácica.",
+      "c": "Postraumático.",
+      "d": "Tuberculosis."
+    },
+    "correcta": "a",
+    "explicacion": "El derrame paraneumónico es la acumulación de liquido pleural asociado a infección homolateral (neumonia).\n\nEs la causa más frecuente de exudado en nuestro medio y suele cursar con fiebre, dolor torácico, tos con expectoración y alteraciones analiticas sugerentes de infección.\n\nEl derrame pleural paraneumónico puede clasificarse en varios tipos (según su gravedad), y su manejo depende de los hallazgos en el liquido pleural.\n\n**Empiema**: es un tipo de derrame paraneumónico complicado que se caracteriza por la presencia de pus en el espacio pleural.\n\nEl tratamiento es antibiótico, colocación de tubo de drenaje y administración de fibrinoliticos.\n\nCuando éstos no funcionan, el siguiente paso es efectuar una toracoscopia para liberar las adherencias; si el proceso resulta ineficaz, se debe realizar una decorticación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-021",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "TRS"
+    ],
+    "enunciado": "Concurre a la Central de Emergencias una paciente de 53 años de edad por fiebre y disnea. Antecedentes de tabaquista severa con diagnóstico de enfermedad pulmonar obstructiva crónica hace 2 años. Una espirometría reciente muestra un FEV1 de 60%. La paciente refiere disnea habitual al subir dos pisos por escalera. En el examen físico presenta una TA 140/80 mmHg, pulso regular a 90 x min, temperatura de 38 grados axilar, frecuencia respiratoria de 30 x minuto, saturación aire ambiente 94%. Se observa utilización de músculos accesorios y palabra entrecortada. Se auscultan roncus bilaterales con espiración prolongada. ¿Cuál es a conducta terapéutica adecuada?",
+    "opciones": {
+      "a": "Indicar Ceftriaxona y esperar la radiografia de tórax para definir internación o manejo ambulatorio",
+      "b": "Indicar Levofloxacina y realizar seguimiento ambulatorio",
+      "c": "Indicar Amoxicilina/Clavulánico e internar a la paciente",
+      "d": "Indicar Amoxicilina y realizar seguimiento ambulatorio"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico de la viñeta nos hace pensar en una reagudización de su EPOC.\n\nComo criterios de gravedad presenta: FR mayor a 25 rpm, mala mecánica ventilatoria, disnea que impide la ventilación.\n\nSe debe indicar **internación** y el antibiótico de elección será una aminopenicilina (**amoxicilina/clavulánico** 500/125 c/8 hs u 875/125 c/12 hs), un macrólido o una tetraciclina y en casos seleccionados considerar quinolonas, según los patrones de resistencia local.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-022",
+    "materia": [
+      "neumonologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Fibrosis quística",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "¿Cómo será la descendencia de una mujer afectada de enfermedad fibroquística del páncreas (autosómica recesiva) con un varón sano no portador?",
+    "opciones": {
+      "a": "El 100% de sus nietas serán portadoras",
+      "b": "El 25% de su descendencia será homocigota dominante",
+      "c": "El 100% de sus hijas mujeres serán portadoras",
+      "d": "El 25% de su descendencia estará afectada"
+    },
+    "correcta": "c",
+    "explicacion": "En las enfermedades autosómicas recesivas la enfermedad se manifiesta solo en los homocigotos.\n\nSi una paciente presenta la enfermedad (considerando que cada uno de los descendientes presentará para cada gen un alelo materno y uno paterno) los descendientes tendrán un alelo mutado.\n\nSiendo el padre sano y ademas no portador ninguno tendrá la enfermedad porque no podrá ser homocigoto.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-023",
+    "materia": [
+      "neumonologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Coagulación"
+    ],
+    "enunciado": "¿Cuál de los siguientes tratamientos le indicaría a una mujer de 65 años que en el 6° día postoperatorio de una neoplasia de colon presenta edema en miembro inferior izquierdo y episodio de disnea paroxística nocturna? En el examen físico presenta edema blando e indoloro grado 3 en pie y tercio inferior de pierna izquierda, y signo de Homans negativo.",
+    "opciones": {
+      "a": "Clopidogrel",
+      "b": "Estreptoquinasa",
+      "c": "Aspirina",
+      "d": "Heparina"
+    },
+    "correcta": "d",
+    "explicacion": "La trombosis venosa profunda es una complicación frecuente en pacientes con neoplasias y en pacientes operados. Se expresa clinicamente con edema asimétrico en miembros inferiores. El signo de Homas consiste en la aparición de dolor en la pantorrilla durante la dorsiflexión del pie.\n\nEste al igual que los signos en general de trombosis profunda carecen de sensibilidad para el diagnóstico por lo cual ante la sospecha diagnóstica se debe proceder con la determinación de dimero D y/o realización de una ecografía por compresión.\n\nEl tratamiento de elección es la **anticoagulación con heparina** durante los primeros dias (en general heparina de bajo peso molecular) para luego continuar con anticoagulación por via oral.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-024",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Tomografía"
+    ],
+    "enunciado": "Usted se encuentra a cargo de una paciente de 83 años cursando el quinto día postoperatorio de un reemplazo de cadera derecha por fractura. Ella le refiere que comenzó súbitamente con disnea y ortopnea hace una hora. Al examen físico presenta taquipnea, taquicardia e ingurgitación yugular 2/3 con colapso inspiratorio que no presentaba previamente. El miembro Inferior derecho se encuentra con edema 3/6 Godet positivo desde el segundo día después de la cirugía. ¿Cuál considera usted que es el estudio inicial más apropiado?",
+    "opciones": {
+      "a": "Dimero D.",
+      "b": "Angiotomografia pulmonar.",
+      "c": "Pro BNP (péptido natriurético atrial).",
+      "d": "Angiografia pulmonar."
+    },
+    "correcta": "b",
+    "explicacion": "Tromboembolismo pulmonar: las cirugías (particularmente traumatológicas y oncológicas) y los antecedentes de tromboembolia de pulmón (TEP) o trombosis venosa profunda son los factores de riesgo más relevantes.\n\nTambién aumentan el riesgo, el cáncer y sus tratamientos, la inmovilización, el embarazo y puerperio, y los tratamientos hormonales. La disnea es el síntoma más frecuente y la taquipnea el signo más habitual.\n\nLa **angio-TC multidetector** es la prueba de imagen de elección para el diagnóstico de la TEP. Se debe realizar en pacientes con probabilidad clínica alta, o en aquellos con probabilidad no alta y un resultado positivo de dímero D. El diagnóstico definitivo depende de la visualización de un defecto de llenado intraluminal en más de un corte.\n\nAunque la angio-TC multidetector, también es la prueba diagnóstica de elección en los pacientes críticos con sospecha de TEP, la ecocardiografía realizada a pie de cama puede aportar información diagnóstica muy valiosa en los centros en los que la angio-TC multidetector no esté disponible, o en los casos en los que la inestabilidad del paciente impida su traslado a la sala de Radiologia.\n\nEn pacientes criticos, la ausencia de signos ecocardiográficos de disfunción o sobrecarga de cavidades derechas, descarta la TEP como causa de compromiso hemodinámico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-025",
+    "materia": [
+      "neumonologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Semiología",
+      "Cardiología básica"
+    ],
+    "enunciado": "Se interna en la sala de clínica médica un varón con alta sospecha de Hipertensión Pulmonar severa, ya que es EPOC, tuvo antecedentes de 2 episodios de TEP, consulta por disnea progresiva y presenta al examen físico ingurgitación yugular, ascitis y edemas en miembros inferiores. ¿Qué espera encontrar en la semiología cardiovascular?",
+    "opciones": {
+      "a": "Refuerzo y/o desdoblamiento del primer tono cardiaco en el foco pulmonar, frémito palpable en el borde esternal izquierdo, soplo diastólico de insuficiencia tricuspidea y soplo sistólico de insuficiencia pulmonar que se percibe en el borde esternal izquierdo",
+      "b": "Refuerzo y/o desdoblamiento del segundo tono cardiaco en el foco pulmonar, frémito palpable en el borde esternal izquierdo, soplo sistólico de insuficiencia tricuspidea y soplo diastólico de insuficiencia pulmonar que se percibe en el borde esternal izquierdo",
+      "c": "Refuerzo y/o desdoblamiento del segundo tono cardiaco en el foco aórtico, frémito palpable en el borde esternal derecho, soplo sistólico de insuficiencia mitral y soplo diastólico de insuficiencia aórtica que se percibe en el borde esternal derecho",
+      "d": "Refuerzo y/o desdoblamiento del primer tono cardiaco en el foco pulmonar, frémito palpable en el borde esternal izquierdo, soplo sistólico de insuficiencia pulmonar y soplo diastólico de insuficiencia tricuspidea que se percibe en el borde esternal izquierdo"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines educativos.\n\nNos encontramos ante un paciente con HTPulmonar severa.\n\nLos signos físicos más frecuentes son: refuerzo y/o desdoblamiento del segundo tono cardíaco en el foco pulmonar, frémito palpable en el borde esternal izquierdo, soplo sistólico de insuficiencia tricuspidea y soplo diastólico de insuficiencia pulmonar que se percibe en el borde esternal izquierdo (soplo de Graham-Steel).\n\nDe acuerdo a lo descripto, las opciones que dicen refuerzo y/o desdoblamiento del primer tono las descartamos.\n\nNos quedan 2 opciones con refuerzo y/o desdoblamiento del 2do tono cardiaco, la opción que se percibe esta alteración del 2do tono en el foco aórtico no es correcto.\n\nResp correcta: \"**refuerzo y/o desdoblamiento del segundo tono cardíaco en el foco pulmonar, frémito palpable en el borde esternal izquierdo, soplo sistólico de insuficiencia tricuspidea y soplo diastólico de insuficiencia pulmonar que se percibe en el borde esternal izquierdo**\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-026",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "Un varón de 55 años, fumador, con diagnóstico de Enfermedad Pulmonar Obstructiva Crónica, consulta por disnea progresiva, tos irritativa y espaciados esputos hemoptoicos. Se realiza una radiografía simple de tórax que muestra una imagen radioopaca en el lóbulo superior derecho de 2 cm de diámetro, ¿qué estudio inicial solicita para seguir estudiándolo?",
+    "opciones": {
+      "a": "Punción biopsia del tumor para establecer la histologia.",
+      "b": "Tomografia computarizada de tórax con contraste.",
+      "c": "Citología de esputo en muestras seriadas.",
+      "d": "Broncoscopia con biopsia transbronquial."
+    },
+    "correcta": "b",
+    "explicacion": "Si se detecta un NPS por radiografia de tórax, el primer paso es obtener radiografias antiguas, para evaluar la estabilidad del mismo en >=2 años o para ver si existe algún patrón benigno de calcificación.\n\nSi no se cuenta con radiografia previas se debe realizar una **TC de tórax de cortes finos y con contraste** a través del nódulo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-027",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un varón de 60 años de edad, con antecedentes de tabaquismo (30 paquetes/año), consulta por tos con expectoración matutina de más de tres meses de evolución y disnea CF III. En su evaluación inicial, ¿cuál es el examen complementario más adecuado?",
+    "opciones": {
+      "a": "Test de caminata de seis minutos",
+      "b": "TC tórax de alta resolución",
+      "c": "Prueba de difusión de monóxido de carbono (DLCO)",
+      "d": "Espirometría forzada"
+    },
+    "correcta": "d",
+    "explicacion": "El diagnóstico de EPOC ha de considerarse en todos los pacientes que presentan tos crónica, producción de esputo crónica, disnea y exposición a factores de riesgo, básicamente el hábito tabáquico, y debe confirmarse por medio de una **espirometria posbroncodilatación**, compatible con obstrucción bronquial crónica (relación FEV1/FVC < 0,7) no totalmente reversible con tratamiento broncodilatador, imprescindible para establecer el diagnóstico de EPOC y valorar la gravedad de la limitación al flujo aéreo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-028",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "TRS"
+    ],
+    "enunciado": "Una mujer de 70 años, ex tabaquista con diagnóstico de EPOC, presenta desde hace 48 hs. progresión de la disnea habitual de CF II a CF III, desorientación espacial, fiebre, tos productiva y aumento del diámetro en miembros inferiores. Tiene como antecedentes recientes VEF1 de 30%, tratamiento antibiótico hace un mes por una bronquitis y presentó tres exacerbaciones en el último año. Al examen físico TA 130-90 mm Hg, FR 24, Sat O2 de 87% (con FI de 21%). Utiliza músculos accesorios y se auscultan roncus y sibilancias en ambos campos pulmonares. La Rx de Tórax muestra aumento de la radiolucidez en ambas playas pulmonares sin signos radiológicos de condensación pulmonar. De acuerdo a la presunción diagnóstica. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Internación hospitalaria, amoxicilina clavulanico, ciprofloxacina, broncodilatadores, corticoides y oxigenoterapia",
+      "b": "Internación hospitalaria, claritromicina, broncodilatadores, corticoides y oxigenoterapia",
+      "c": "Internación domiciliaria, ventilación no invasiva (VNI), amoxicilina clavulánico, broncodilatadores y corticoides via oral",
+      "d": "Tratamiento ambulatorio, amoxicilina, broncodilatadores corticoides y diuréticos"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nSituación clínica: Mujer 70 años, EPOC muy severo (VEF1 30%). Desorientación (signo de hipoxemia/hipercapnia). Exacerbación con fiebre, tos productiva y aumento de la disnea. Saturación 87% en aire ambiente. Uso de músculos accesorios, roncus y sibilancias. Antecedente de 3 exacerbaciones en el último año (riesgo resistencia bacteriana).\n\nRx tórax: solo hiperinsuflación, sin consolidación. = Todo apunta a una exacerbación grave de EPOC.\n\nConducta general en exacerbación grave: Internación hospitalaria (criterios: VEF1 < 50%, hipoxemia, desorientación, uso de músculos accesorios, exacerbaciones repetidas). Oxigenoterapia controlada (para Sat O2 88-92%). Broncodilatadores de acción corta (SABA/SAMA). Corticoides sistémicos (ej. prednisona oral o metilprednisolona IV).\n\nAntibióticos: indicados por aumento de volumen y purulencia del esputo + fiebre. En pacientes graves/frecuentadores se recomiendan betalactámicos + quinolonas o macrólidos para cubrir gérmenes resistentes.\n\nOpciones:\n\n- **Internación hospitalaria, amoxicilina clavulánico + ciprofloxacina, broncodilatadores, corticoides y oxigenoterapia**. Internación: necesaria por gravedad. Antibióticos: doble esquema (amoxi-clav + quinolona) justificado en paciente grave y con exacerbaciones repetidas. Broncodilatadores, corticoides y oxigenoterapia: correctos. Esta es la respuesta más adecuada.\n\n- Internación hospitalaria, claritromicina, broncodilatadores, corticoides y oxigenoterapia. Correcto el sitio (internación), pero claritromicina en monoterapia es insuficiente en una paciente grave y frecuente.\n\n- Tratamiento ambulatorio, amoxicilina, broncodilatadores, corticoides y diuréticos. Incorrecto: necesita internación hospitalaria, no ambulatorio. Diuréticos no indicados salvo insuficiencia cardíaca descompensada, que no está descrita aquí.\n\n- Internación domiciliaria, VNI, amoxicilina-clavulánico, broncodilatadores y corticoides via oral. VNI domiciliaria no corresponde en el contexto de exacerbación aguda con alteración del sensorio (desorientación). Requiere monitorización hospitalaria.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-029",
+    "materia": [
+      "neumonologia",
+      "pediatria",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Anatomía y malformaciones",
+      "Patología del aparato respiratorio",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente de 3 años de edad con antecedentes de neumonías, y que en la radiología de tórax presenta en el lóbulo superior derecho múltiples imágenes quísticas es intervenido quirúrgicamente efectuándose una lobectomía. En el estudio de anatomía patológica presenta quistes de 3 a 10 cm de diámetro que histológicamente están tapizados por epitelio cilíndrico pseudoestratificado con células mucíparas sobre una pared fibromuscular. ¿Cuál sería el diagnóstico más probable?",
+    "opciones": {
+      "a": "Linfangiectasias pulmonares congénitas",
+      "b": "Enfisema pulmonar intersticial",
+      "c": "Blastoma pleuropulmonar quístico",
+      "d": "Malformación de la via aérea congénita tipo 1"
+    },
+    "correcta": "d",
+    "explicacion": "Las malformaciones broncopulmonares congénitas (o malformación adenomatosa quística, MAC) reúnen un grupo heterogéneo de alteraciones del desarrollo pulmonar.\n\nLa malformación congénita de la vía aérea pulmonar es la malformación pulmonar más frecuente. Se caracteriza por un desarrollo exagerado de las estructuras bronquiales a expensas de los alveolos, junto a una vía aérea de aspecto anormal por falta de cartílago.\n\nDe acuerdo al nivel en que se produce la lesión en época prenatal las MAC se clasifican en: tipo 0: traqueobronquial (disgenesia acinar); **tipo I**: bronquial/bronquiolar con quistes grandes tapizados por epitelio cilíndrico pseudoestratificado con células mucíparas sobre una pared fibromuscular, Tipo II o bronquiolar con quistes pequeños.\n\nTipo III o bronquiolar/ductoalveolar (adenomatoidea). Tipo IV distal acinar (periférica). La posibilidad de malignización de las lesiones quisticas congénitas pulmonares explica la tendencia de muchos pediatras y cirujanos pediátricos a tomar una actitud quirúrgica activa incluso en ausencia de sintomas.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-030",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Recibe en la guardia a Oscar de 45 años que consulta por dificultad para respirar. Le cuesta responder a sus preguntas de forma fluida, únicamente responde frases cortas. Su acompañante le cuenta que tiene hipertensión, diabetes y asma, y que se encuentran de vacaciones por el fin de semana largo y en el apuro por salir olvidó toda su medicación de base en casa. Al examen físico, se encuentra agitado, con disnea en reposo, frecuencia cardíaca 115 1/min, frecuencia respiratoria 28 r/min, tensión arterial 140/90 mmHg, saturación de oxígeno del 91% a aire ambiente, e identifica tiraje intercostal y sibilancias. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Oxigenoterapia + nebulizaciones con salbutamol 5mg + ipratropio 0,25mg cada 20 minutos + hidrocortisona 200mg EV y reevaluación en una hora en guardia.",
+      "b": "Internación en sala general + oxigenoterapia + nebulizaciones con salbutamol 5mg + ipratropio 0,25mg cada 20 minutos + hidrocortisona 200mg EV + solicita EAB y radiografia de tórax.",
+      "c": "Oxigenoterapia + salbutamol 200 mcg inhalados cada 20 minutos + meprednisona 40mg VO y reevaluación en una hora en la guardia.",
+      "d": "Internación en cuidados intensivos + oxigenoterapia + nebulizaciones continuas con salbutamol + ipratropio + sulfato de magnesio + solicita EAB y radiografia de tórax."
+    },
+    "correcta": "a",
+    "explicacion": "La persona del caso clínico de la viñeta presenta una exacerbación de tipo \"moderado\" de su ASMA (sibilancias y disnea; FR entre 20 y 30 rpm: FC mayor a 100 Ipm; SatO2 91%).\n\nTratamiento más adecuado: **Oxigenoterapia + nbz con salbutamol y bromuro de ipratropio + corticoides sistémicos**.\n\nReevaluar respuesta al tratamiento en 1 hora en la guardia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-031",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "En el examen físico del tórax de un paciente se constata: ausencia de las vibraciones vocales, timpanismo y abolición del murmullo vesicular en campo medio y base derecha, ¿cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Derrame pleural derecho",
+      "b": "Atelectasia de lóbulo inferior derecho",
+      "c": "Neumonía de base derecha",
+      "d": "Neumotórax derecho"
+    },
+    "correcta": "d",
+    "explicacion": "**Neumotórax**\n\nEs la presencia de aire en el espacio pleural. Suele manifestarse con disnea brusca, dolor pleuritico y tos. El neumotórax es una patología de alta incidencia con dos picos etarios de presentación: primer pico alrededor de los 20 años y segundo pico alrededor de los 60 años.\n\nLa triada sintomática incluye: dolor, disnea y tos. A la exploración física se evidencia abolición del murmullo vesicular, ausencia de vibraciones vocales y **timpanismo** a la percusión.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-032",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "Una mujer de 33 años, residente en un pueblo del interior de la provincia de Buenos Aires, consulta por tos no productiva de años de evolución. Al interrogatorio dirigido refiere la presencia de disnea CF II desde hace varios meses. Como antecedentes de relevancia refiere neumotórax espontáneo hace 5 años por lo que requirió internación y colocación de tubo de toracostomía. En una consulta previa por estos síntomas, un año atrás, se le efectuó una espirometría que reveló CVF 95% y VEF1 68% y se le indicó tratamiento con glucocorticoides inhalados con escasa respuesta. La radiografía de tórax muestra un tenue patrón intersticial reticular que se destaca en los campos pulmonares medios. Se realiza TC de tórax de alta resolución que revela múltiples quistes de menos de 2 cm de paredes finas con distribución uniforme en ambos pulmones, a predominio basal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Linfangialeiomiomatosis",
+      "b": "Histiocitosis X",
+      "c": "Neumonitis por hipersensibilidad",
+      "d": "Hidatidosis pulmonar"
+    },
+    "correcta": "a",
+    "explicacion": "**Linfangioleiomiomatosis (LAM)**: es una enfermedad multisistémica rara y de causa desconocida, casi exclusiva de mujeres en edad fértil.\n\nAparte de los sintomas propios de las EPID (enfermedades pulmonares intersticiales difusas), otras características de la enfermedad son: neumotórax recidivante (69%), quilotórax (23%), hemoptisis (20 %) y, con menos frecuencia, ascitis, derrame pleuropericárdico, quiloptisis y quiluria.\n\nExiste una frecuente asociación (60% de los casos) con angiolipomas renales.\n\nEn el 25% de los casos, la LAM se asocia con esclerosis tuberosa, enfermedad hereditaria caracterizada por hamartomatosis multiorgánica.\n\nLa radiografía de tórax y la TCAR muestran opacidades micronodulares seudomiliares basales y lineas B de Kerley en las fases iniciales.\n\nEn las fases más evolucionadas de la enfermedad, aparecen imágenes quisticas de pared fina, principalmente en las zonas basales.\n\nEn un contexto clínico apropiado, las imágenes de la TCAR con volúmenes pulmonares aumentados son sugestivas del diagnóstico de LAM.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-033",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Tomografía"
+    ],
+    "enunciado": "¿Cuál es el método diagnóstico que solicita en un varón de 58 años que cursa internación por fractura de pierna derecha y presenta sudoración y disnea de reposo?",
+    "opciones": {
+      "a": "Radiografia de tórax y de miembro inferior derecho (tibia y peroné).",
+      "b": "Gammagrafia pulmonar con ventilación-perfusión.",
+      "c": "Arteriografia pulmonar por punción arterial.",
+      "d": "Angiografia pulmonar por tomografía computarizada."
+    },
+    "correcta": "d",
+    "explicacion": "Sospecha clinica de TEP: La disnea sintoma más frecuente. Cirugía o fractura < 1 mes. TEP es el diagnóstico más probable\n\nLa **angio-TC multidetector** es la prueba de imagen de elección para el diagnóstico de la TEP. Se debe realizar en pacientes con probabilidad clínica alta, o en aquellos con probabilidad no alta y un resultado positivo de dímero D. El diagnóstico definitivo depende de la visualización de un defecto de llenado intraluminal en más de un corte.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-034",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "Un varón de 20 años concurre a la guardia con dolor torácico, disnea y tos. Se efectúa radiografía simple de tórax donde se evidencia neumotórax grado II ¿Cuál es el diagnostico etiológico más probable?",
+    "opciones": {
+      "a": "Bulla subpleural",
+      "b": "Tuberculosis",
+      "c": "Enfisema pulmonar",
+      "d": "Neumonia"
+    },
+    "correcta": "a",
+    "explicacion": "Neumotórax espontáneo primario: Habitualmente se produce en varones jóvenes, de 20-40 años, altos y delgados (fenotipo leptosómico) y es secundario a la **rotura de bullas pleurales apicales**.\n\nTambién es frecuente en fumadores. El 50% de los pacientes presentan recurrencia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-035",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "¿Qué esquema de tratamiento se recomienda inicialmente en un paciente con enfermedad pulmonar obstructiva crónica con Volumen Espiratorio Forzado en el primer segundo (VEF1) del 65%?",
+    "opciones": {
+      "a": "Corticoides orales reglados a baja dosis",
+      "b": "Tiotropio más Vilanterol",
+      "c": "Ipratropio a demanda",
+      "d": "Teofilina reglada"
+    },
+    "correcta": "c",
+    "explicacion": "Pregunta controversial.\n\nEstamos ante un paciente EPOC con obstrucción moderada: FEV1 50-79 % del teórico.\n\nAsumimos que se decide tratar porque entre los distractores no se da la opción de no indicar tratamiento o que el paciente tiene síntomas aunque no lo dice en el enunciado.\n\nLa opción correcta seria: **BD de acción corta a demanda o reglados = ipratropio** (antimuscarinico)\n\nRecordar que se recomienda NO tratar con medicamentos inhalados a pacientes asintomáticos con VEF1 mayor al 50% ya que no obtienen beneficios.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-036",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Bronquiectasias"
+    ],
+    "enunciado": "¿Qué otra complicación típica de las bronquiectasias se debe tener en cuenta además de las infecciones recurrentes?",
+    "opciones": {
+      "a": "Broncoespasmo refractarios al tratamiento",
+      "b": "Neumotorax espontáneo",
+      "c": "Cavitación gigante",
+      "d": "Hemoptisis recidivantes"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nLas bronquiectasias deben sospecharse en pacientes con tos y expectoración persistente, infecciones respiratorias recurrentes o **hemoptisis recidivantes**.\n\nEl diagnóstico, en todos los casos, se confirmará mediante la realización de una TCAR.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-037",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Radiografía"
+    ],
+    "enunciado": "Con diagnóstico presuntivo de supuración pleuropulmonar. Ha sido inadecuada y tardíamente tratado con antibióticos a dosis insuficientes por una eventual neumonía de la comunidad. En lo que se refiere al proceso diagnóstico, ¿cuál de las siguientes premisas se debe jerarquizar para una adecuada y oportuna intervención?",
+    "opciones": {
+      "a": "Los reactantes de fase aguda (glóbulos blancos, neutrófilos, proteina C reactiva, ERS) tienen gran valor predicitivo",
+      "b": "La ecografia no permite diferenciar componente sólido del liquido, por lo que es mejor indicar una tomografia computada",
+      "c": "El análisis macroscópico y microscópico del liquido pleural es el primer gesto diagnóstico antes de la derivación",
+      "d": "La radiografia de tórax sigue siendo la herramienta inicial para el diagnóstico de derrame pleural"
+    },
+    "correcta": "d",
+    "explicacion": "El primer estudio a solicitar ante la sospecha de un derrame pleural es la **radiografía de tórax de frente y de perfil**.\n\nSe puede observar velamiento del hemitorax con derrame o borramiento de los senos costo y cardiofrénicos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-038",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "Jorge tiene 60 años consulta porque presenta tos, expectoración, sensación de falta de aire y fiebre. Luego de realizar el examen físico y una radiografía de tórax el diagnóstico es neumonía aguda de la comunidad. Jorge no presenta comorbilidades y es alérgico a la penicilina ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Eritromicina 500 mg cada 8 horas VO.",
+      "b": "Claritromicina 500 mg cada 12 horas VO.",
+      "c": "Amoxicilina clavulánico 1 gr cada 12 horas VO.",
+      "d": "Claritromicina 500 mg cada 6 horas VO."
+    },
+    "correcta": "b",
+    "explicacion": "NAC en menores de 65 años sin comorbilidades: Tratamiento alternativo (alergia mayor a betalactámicos): **Claritromicina 500 mg cada 12 horas vía oral**.\n\nLevofloxacina1 750 mg cada 24 horas vía oral. Moxifloxacina 400 mg cada 24 horas via oral",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-039",
+    "materia": [
+      "neumonologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Neumonía",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "De acuerdo a la Guía de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018. Señale la definición correcta para la neumonía.",
+    "opciones": {
+      "a": "Definición de caso: Enfermedad respiratoria aguda febril (>38°) con tos, dificultad respiratoria, taquipnea y radiologia que muestra un infiltrado lobar o segmentario o derrame pleural.",
+      "b": "Definición de caso: Dificultad respiratoria, tos con expectoración mucopurulenta, sindrome febril, (>38°).",
+      "c": "Definición de caso: Paciente febril, tos con expectoración mucopurulenta, examen fisico: vibraciones vocales aumentadas y matidez a la percusión de toráx.",
+      "d": "Definición de caso: Enfermedad respiratoria febril con expectoración, taquicardia, taquipnea, semiologia de condensación o derrame pleural al examen fisico."
+    },
+    "correcta": "a",
+    "explicacion": "Guía de Vigilancia epidemiológica y recomendaciones para la prevención y diagnóstico de las infecciones respiratorias agudas en Argentina año 2018:\n\nNeumonia: Definición de caso: **Enfermedad respiratoria aguda febril (> 38°) con tos, dificultad respiratoria, taquipnea y radiologia que muestra un infiltrado lobar o segmentario o derrame pleural**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-040",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el tratamiento más adecuado de un paciente de 32 años que cursa una neumonía aguda de la comunidad en el lóbulo inferior derecho y que luego de cuatro días de tratamiento con ampicilina sulbactam continúa con fiebre y presenta toracodinia? En la radiografía de tórax se observa infiltrado en lóbulo inferior y derrame pleural. Al realizar una punción pleural se obtiene líquido turbio, abundantes leucocitos, pH: 7,05, LDH 1234 mU/mL y glucosa 34 mg/dL.",
+    "opciones": {
+      "a": "Colocar drenaje pleural",
+      "b": "Realizar fibrobroncoscopia",
+      "c": "Realizar toracotomia",
+      "d": "Mantener conducta expectante"
+    },
+    "correcta": "a",
+    "explicacion": "El derrame pleural puede ser clasificado como trasudado o exudado en función de los criterios de Light. El derrame paraneumónico es la forma mas frecuente de exudado pleural.\n\nLos exudados complicados definidos como aquellos con un pH < 7.20, Glucosa < 60 mg/dl, y los empiemas (liquido con tinción de gram positivo para bacterias, o aspecto francamente purulento) requieren la **colocación de un tubo de toracostomía**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-041",
+    "materia": [
+      "neumonologia",
+      "infectologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías",
+      "General"
+    ],
+    "enunciado": "Un hombre de 69 años consulta a guardia por tos mucopurulenta de 3 días de evolución. No refiere antecedentes respiratorios de relevancia. Al examen físico se encuentra normotenso, con temp. ax. de 37,8 °C, FR de 18/min, FC 88/min. Al examen físico del tórax no presenta semiología de condensación. De acuerdo al Consenso Intersociedades para el Manejo de Infecciones Respiratorias, Bronquitis Aguda y EPOC, ¿qué conducta debe adoptarse?",
+    "opciones": {
+      "a": "Iniciar tratamiento con macrólidos y control ambulatorio en 48 hs",
+      "b": "Indicar tratamiento sintomático para bronquitis aguda y pautas de alarma para consulta posterior",
+      "c": "Solicitar Rx de Tórax para definir tratamiento de acuerdo al resultado",
+      "d": "Indicar internación e iniciar tratamiento con amoxicilina/clavulánico"
+    },
+    "correcta": "b",
+    "explicacion": "Se define Bronquitis Aguda como la inflamación aguda del árbol bronquial. La causa es viral en la mayoría de los casos. El diagnostico es clinico y se centra en descartar la presencia de neumonia.\n\nEl cuadro clinico se caracteriza por tos aguda (que persiste menos de tres semanas) aunque a veces se prolonga más allá de las tres semanas. En el 50% de los pacientes la tos es productiva y puede asociarse fiebre. En el examen físico están ausentes los signos de condensación pulmonar. Los estudios complementarios no están indicados en pacientes previamente sanos.\n\nSe debe realizar una radiografia de tórax en aquellos pacientes que presenten alguna de la siguientes características: Mayor de 60 años, frecuencia cardíaca > 100 lpm, frecuencia respiratoria mayor a 24 rpm, temperatura mayor a 38 grados o semiologia de condensación pulmonar.\n\nEl tratamiento es fundamentalmente sintomático.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-042",
+    "materia": [
+      "neumonologia",
+      "oncologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál sería el tratamiento más adecuado para un paciente de 64 años, tabaquista, que presenta tos, pérdida de peso y hemoptisis y que en una tomografía de tórax presenta un nódulo sólido en campo superior derecho de 6 cm, adenomegalias parahiliares e ipsilaterales? Se le realizó una punción aspirativa y el estudio patológico establece el diagnóstico de cáncer de pulmón en células no pequeñas.",
+    "opciones": {
+      "a": "Quimioterapia más radioterapia y control en 3 meses",
+      "b": "Cirugia resectiva, con quimioterapia adyuvante",
+      "c": "Radioterapia adyuvante",
+      "d": "Quimioterapia y control en 6 meses"
+    },
+    "correcta": "b",
+    "explicacion": "T: nódulo sólido 6 cm = T3; N: adenomegalias parahiliares e ipsilaterales = N1; **Estadio IIIA: cirugia inicial seguida de quimioterapia posoperatoria (con o sin radioterapia)**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-043",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Paciente de 60 años de edad que consulta por fiebre, dolor torácico, tos y expectoración. En la radiografía de tórax se observa infiltrado de aspecto consolidativo en la base derecha. Se comienza esquema antibiótico empírico con Amoxicilina/ ácido clavulánico y Claritromicina. Evoluciona con empeoramiento de síntomas y en el control radiográfico se observa derrame pleural que se punza y se objetiva pH de 6,95, con consumo de glucosa y LDH de 2000. La tinción de Gram es negativa. ¿Qué conducta tomaría?",
+    "opciones": {
+      "a": "Cambiar antibiótico",
+      "b": "Colocación tubo de drenaje pleural",
+      "c": "Es un trasudado y se inicia tratamiento depletorio con diuréticos por insuficiencia cardiaca",
+      "d": "Conducta expectante"
+    },
+    "correcta": "b",
+    "explicacion": "Estamos ante un DP paraneumónico con las siguientes caracteristicas: pH de 6,95, con consumo de glucosa y LDH de 2000. Es un DP complicado = la conducta es antibioterapia, tubo de drenaje y fibrinoliticos.\n\nRespuesta correcta es: **colocación tubo de drenaje pleural**",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-044",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Oncología"
+    ],
+    "enunciado": "Una mujer de 76 años de edad con antecedentes de tabaquismo e hipertensión arterial consulta por disnea progresiva de 2 meses de evolución, hasta llegar a clase funcional IV. Al examen físico presenta matidez e hipoventilación del hemitórax izquierdo. La radiografía de tórax evidenció la presencia de un derrame pleural de vértice a base en el pulmón izquierdo. Se efectuó una toracocentesis que evidenció la presencia de un líquido serohemático de cuyo examen se obtuvieron los siguientes datos: 450 células a predominio de linfocitos, relación LDH líquido/plasma: 0,7 y relación proteínas líquido/plasma: 0,5. Teniendo en cuenta estos datos, ¿cuál de los siguientes es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Quilotórax.",
+      "b": "Sindrome nefrótico.",
+      "c": "Insuficiencia cardiaca congestiva.",
+      "d": "Compromiso neoplásico pleural."
+    },
+    "correcta": "d",
+    "explicacion": "Estamos ante una persona que presenta derrame pleural y se toma muestra para su análisis.\n\nEl liquido pleural corresponde a un exudado: relación LDH liquido/plasma: 0,7 y relación proteínas liquido/plasma: 0,5.\n\nUn **recuento linfocitario > 50% sugiere origen tuberculoso** (con más frecuencia en jóvenes) **o neoplásico** (más habitual en ancianos).\n\nEl aspecto del líquido es serohemático. De acuerdo a los antecedentes de la persona y la edad, el diagnóstico más probable es: **Compromiso neoplásico pleural**.\n\nTrasudado = insuficiencia cardíaca y síndrome nefrótico.\n\nQuilotórax: en la toracocentesis se evidencia liquido de aspecto lechoso con niveles de triglicéridos >110 mg/dL, quilomicrones elevados y niveles bajos de colesterol en el espacio pleural.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-045",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un varón de 58 años con antecedentes de tabaquismo y diagnóstico de EPOC, trae una espirometría que informa VEF1 del 60% del valor predicho post broncodilatadores. Se encuentra en tratamiento continuo con broncodilatadores inhalados beta 2 adrenérgicos y antimuscarínicos de acción corta. Refiere que no se controlan los síntomas a pesar del tratamiento. Según la \"Guía de práctica clínica nacional de diagnóstico y tratamiento de la enfermedad pulmonar obstructiva crónica\", ¿cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Indicar conjuntamente ultra-LABA LABA (broncodilatadores B2 adrenérgico de acción larga)",
+      "b": "Indicar conjuntamente LAMA Y CI",
+      "c": "Indicar conjuntamente LABA CI (corticoide inhalado)",
+      "d": "Indicar el uso reglado de un broncodilatador antimuscarinico de acción larga (LAMA)"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento de realiza con cesación tabáquica, educación, vacunación, actividad fisica, y tratamiento BD de acción corta reglados o a demanda en aquellos pacientes con sintomas y obstrucción no severa (VEF1 > 50%), tratamiento con **LAMA** en aquellos que presentan 2 exacerbaciones por año, presentan mal control de sintomas con broncodilatadores de acción corta o VEF <50%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-046",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "¿Cuál de los siguientes enunciados lo considera correcto?",
+    "opciones": {
+      "a": "Los pacientes EPOC pueden tener una obstrucción bronquial parcialmente reversible.",
+      "b": "La única causa de EPOC es el enfisema pulmonar",
+      "c": "Un paciente con tos productiva por dos meses en los últimos dos años tiene una enfermedad obstructiva crónica.",
+      "d": "Los pacientes asmáticos tienen enfermedad pulmonar obstructiva crónica (EPOC) porque la obstrucción bronquial no es reversible."
+    },
+    "correcta": "a",
+    "explicacion": "La EPOC es una enfermedad respiratoria crónica, prevenible y tratable caracterizada por una persistente limitación al flujo aéreo (obstrucción), la cual puede presentar algún grado de reversibilidad pero nunca normalizarse.\n\nEsta obstrucción tiene como causas subyacentes dos enfermedades que pueden presentarse solas o combinadas: La **bronquitis crónica obstructiva**: tos productiva la mayor parte de los dias durante al menos tres meses por dos años consecutivos (descartadas otras causas de tos crónica).\n\nEl **enfisema**: agrandamiento anormal de los espacios aéreos distales al bronquiolo terminal acompañado de destrucción de las paredes y sin fibrosis evidente.\n\nAsma: se caracteriza por una obstrucción al flujo aéreo habitualmente reversible y variable en el tiempo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-047",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 45 años atendido en una emergencia, que sufrió una caída de altura de aproximadamente 4 metros y que presenta importante dificultad respiratoria, lateralización de la tráquea, ingurgitación yugular, abolición del murmullo vesicular e hipersonoridad del hemitórax derecho?",
+    "opciones": {
+      "a": "Neumotorax hipertensivo",
+      "b": "Neumotorax simple",
+      "c": "Fractura costal múltiple",
+      "d": "Ruptura diafragmática"
+    },
+    "correcta": "a",
+    "explicacion": "El neumotórax se define como la presencia de aire en la cavidad pleural donde se pierde la presión negativa lo que produce el colapso pulmonar.\n\nEl neumotórax se presenta con una triada clásica: disminución a ausencia de vibraciones vocales + timpanismo + ausencia o disminución del murmullo vesicular.\n\nEn el caso del **neumotórax hipertensivo** se agregan: signos de insuficiencia circulatoria (cianosis, taquicardia, e hipotensión) además ingurgitación yugular y desviación contralateral de tráquea y laringe.\n\nEste constituye un cuadro grave con riesgo para el paciente. La primer indicación es el drenaje con catéter grueso a nivel del 2do espacio intercostal linea hemiclavivular, para disminuir la presión positiva en la pleura y mejorar los sintomas circulatorios hasta el avenamiento del tórax.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-048",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "De los siguientes resultados del examen por punción de un derrame pleural, indique cuál es orientador para el drenaje quirúrgico:",
+    "opciones": {
+      "a": "Glucosa aumentada.",
+      "b": "Presencia de hematies.",
+      "c": "LDH elevada",
+      "d": "pH mayor de 7,2."
+    },
+    "correcta": "c",
+    "explicacion": "Drenaje pleural complicado: definido cuando la glucosa es < 60 mg/dL y/o el pH < 7,20 y/o la **LDH > 1.000 UI/L** y o hay presencia de gérmenes en el Gram y/o cultivo positivo y/o tabiques (loculaciones) en el espacio pleural.\n\nEl tratamiento es antibiótico y la administración de fibrinoliticos intrapleurales a través de un tubo de drenaje torácico.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-049",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un criterio para internar a un paciente con neumonía aguda adquirida en la comunidad?",
+    "opciones": {
+      "a": "Bajo nivel socioeconómico",
+      "b": "Edad mayor a 60 años sin comorbilidades",
+      "c": "Afectación de un lóbulo pulmonar en la radiografia de tórax",
+      "d": "PO2: 70 mmHG"
+    },
+    "correcta": "a",
+    "explicacion": "Ante un paciente neumonía adquirida en la comunidad se debe tomar la decisión de internar al paciente o realizar tratamiento ambulatorio.\n\nLa regla **CURB-65** establece que se debe internar a todo paciente que presente dos o mas de los siguientes datos de la regla.\n\n1) Confusión 2) Uremia (mas de 43 mg/dl) 3) Frecuencia respiratoria mayor a 30 rmp 4) Presión arterial sistólica menor a 90 mmHg o diastolica menor a 60 mmHg 5) Edad mayor a 65 años.\n\nTambién se deberán considerar otros factores como la **contención social** del pacientes, posibilidad de adherencia, inmunosupresión, oximetria etc.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-050",
+    "materia": [
+      "neumonologia",
+      "oncologia",
+      "endocrinologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología",
+      "Hipotálamo / Hipófisis"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un señor de 70 años que es llevado por un familiar al servicio de urgencias, por haberlo encontrado confundido e incapaz de de responder preguntas y tiene una convulsión tónico clónica generalizada en el ingreso al hospital? En el examen físico presenta temperatura axilar de 37.6°C, frecuencia cardíaca: 110 lpm, frecuencia respiratoria: 20 rpm y presión arterial: 130/92 mm Hg y tiene los siguientes estudios complementarios: nivel sérico de sodio de 115 mEq/l potasio de 3.8 mEq/l, glucosa de 100 mg/dL y osmolalidad de 250 mOsm/kg. Las pruebas de electrolitos en orina muestran una osmolalidad urinaria de 500 mOsm/kg. En la radiografía de tórax se observa una masa en el pulmón izquierdo.",
+    "opciones": {
+      "a": "Tuberculosis.",
+      "b": "Cancer cerebral metastásico",
+      "c": "Cáncer de próstata.",
+      "d": "Carcinoma de células pequeñas."
+    },
+    "correcta": "d",
+    "explicacion": "Formas de presentación del **carcinoma de células pequeñas**:\n\nSindromes paraneoplásicos:\n\n**Hiponatremia** por secreción inadecuada de vasopresina o por secreción del péptido natriurético auricular.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-051",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "TRS"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un paciente de 35 años, sin antecedentes patológicos, que fue tratado por una bronquitis aguda con amoxicilina 500 mg cada 8 horas durante 10 días y consulta por la persistencia de tos no productiva una semana después de haber finalizado el tratamiento?",
+    "opciones": {
+      "a": "Explicar que la tos se resolverá espontáneamente",
+      "b": "Solicitar radiografia de tórax",
+      "c": "Indicar levofloxacina 750 mg día por 5 dias",
+      "d": "Indicar loratadina 10 mg dia por 3 días"
+    },
+    "correcta": "a",
+    "explicacion": "Se define bronquitis aguda como la inflamación aguda del árbol bronquial. La causa es viral en la mayoria de los casos. El diagnóstico es clínico y se centra en descartar la presencia de neumonia.\n\nEl cuadro clinico se caracteriza por tos aguda (que persiste menos de tres semanas) aunque a veces se prolonga mas allá de las tres semanas. En el 50% de los pacientes la tos es productiva y puede asociarse fiebre.\n\nEn el examen fisico están ausentes los signos de condensación pulmonar. Los estudios complementarios no están indicados en pacientes previamente sanos.\n\nSe debe realizar una radiografia de tórax en aquellos pacientes que presenten alguna de la siguientes caracteristicas: Mayor de 60 años, frecuencia cardiaca > 100 Ipm, frecuencia respiratoria mayor a 24 rpm, temperatura mayor a 38 grados o semiologia de condensación pulmonar.\n\nEl tratamiento es fundamentalmente sintomático.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-052",
+    "materia": [
+      "neumonologia",
+      "oncologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "La biopsia por aspiración con aguja fina (PAAF) transtorácica guiada por imágenes (ecografía o tomografía) diagnostica con precisión del 95% lesiones malignas de pulmón. ¿En qué caso usted utilizaría este procedimiento?",
+    "opciones": {
+      "a": "Para el diagnostico de lesiones pulmonares periféricas, que se encuentran en contacto con la pared torácica",
+      "b": "Para el diagnostico de lesiones pulmonares centrales que no poseen contacto con el árbol bronquial.",
+      "c": "Para el diagnostico de lesiones pulmonares centrales que poseen contacto con el árbol bronquial.",
+      "d": "Para el diagnostico de lesiones pulmonares intraparenquimatosas centrales."
+    },
+    "correcta": "a",
+    "explicacion": "El diagnóstico especifico de los tumores malignos en la mayoría de los casos se obtiene a partir de la fibrobroncoscopia. Para que la rentabilidad diagnóstica sea la adecuada, se deben realizar tres o cuatro biopsias y combinarlas con el correspondiente estudio citológico del broncoaspirado.\n\nEn el caso de los tumores centrales, bastará con la realización de una biopsia bronquial, mientras que en los **periféricos** y de tamaño < 3 cm, la rentabilidad diagnóstica será menor, por lo que deberá practicarse una biopsia transbronquial o, incluso, una punción transtorácica con aguja fina o con aguja gruesa (TC con punción aspirativa con aguja fina PAAF o biopsia con aguja gruesa BAG).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-053",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Lo consulta un varón de 21 años con diagnóstico de asma para control. Refiere que se encuentra en tratamiento con CI (corticoides inhalados) a bajas dosis y Broncodilatadores (BD) β2 adrenérgicos de acción corta a demanda. En el interrogatorio refiere que presenta síntomas diurnos 3 veces por semana y que tuvo algún despertar nocturno debido al asma en los últimos 7 días. Según el \"Protocolo de orientación para el diagnóstico y manejo del asma en adultos\", ¿cuál es el estado del asma en este paciente?",
+    "opciones": {
+      "a": "Parcialmente controlado",
+      "b": "Mal controlado",
+      "c": "Crisis asmática",
+      "d": "Controlado"
+    },
+    "correcta": "a",
+    "explicacion": "Para evaluar el control del asma existe un cuestionario para evaluar los sintomas en las ultimas 4 semanas (se evalúan sintomas diurnos, despertar nocturno, necesidad de medicación de rescate mas de 2 veces por semana y alguna limitación en la actividad secundaria al asma).\n\nEn este caso presentar 2 de estos sintomas: el asma se encuentra \"**parcialmente controlado**\" (presenta sintomas diurnos 3 veces por semana y que tuvo algún despertar nocturno debido al asma en los últimos 7 dias).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-054",
+    "materia": [
+      "neumonologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Anatomía y malformaciones",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "¿Qué es un secuestro pulmonar?",
+    "opciones": {
+      "a": "Tejido pulmonar embrionario y de estructura anárquica",
+      "b": "Tejido pulmonar enquistado como secuela de una neumonia abscedada",
+      "c": "Malformación que compromete el lóbulo inferior del pulmón con formación de múltiples quistes",
+      "d": "Malformación caracterizada por tejido pulmonar no comunicado con la via aérea e irrigado por la circulación sistémica"
+    },
+    "correcta": "d",
+    "explicacion": "Tejido pulmonar no funcionante separado del parénquima, cuyo aporte sanguíneo proviene de la circulación sistémica.\n\nExisten dos tipos de secuestro: intralobular (es el más frecuente, no tiene pleura visceral propia y predomina en los lóbulos inferiores) y extralobular (tiene pleura propia y se suele localizar en el lóbulo inferior izquierdo).\n\nSuelen ser asintomáticos, siendo los hallazgos radiológicos casuales. La infección es la complicación más frecuente.\n\nLos secuestros, aunque sean asintomáticos, deben extirparse, precisando previamente estudio con arteriografia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-055",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Inés de 35 años es asmática desde la infancia con varias internaciones en su etapa adulta incluso una en terapia intensiva. Consulta por un cuadro progresivo de disnea de intensidad creciente, sin respuesta a broncodilatadores de rescate que usa habitualmente. ¿En qué situación realiza una radiografía de tórax y un EAB e ionograma?",
+    "opciones": {
+      "a": "Si habla con frases por la disnea",
+      "b": "Si la oximetria de pulso es menor a 95%",
+      "c": "Si en alguna internación requirió ventilación mecánica",
+      "d": "Si el FPE (pico flujo espiratorio) es menor a 40%"
+    },
+    "correcta": "d",
+    "explicacion": "En las crisis de asma es fundamental determinar su gravedad. Se debe realizar una valoración inicial de la clínica y el grado objetivo de obstrucción al flujo aéreo usando el PEF.\n\nPosteriormente, se deben reevaluar dichos parámetros tras el tratamiento, para comprobar si existe mejoria o no.\n\nUn **PEF < 40% = crisis severa = solicitar EAB e ionograma** para evaluar hipoxemia hipercapnia.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-056",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "Un varón fumador de 62 años consulta por disnea progresiva de meses de evolución. Trae una radiografía de tórax reciente que revela patrón intersticial a predominio basal. Se solicita una TC de tórax de alta resolución que muestra patrón reticular con localización predominante en regiones subpleurales, panalización con presencia de bronquiectasias por tracción y algunas áreas limitadas de cambios en vidrio esmerilado. Ante estos hallazgos clínicos y radiológicos, ¿cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Esclerosis Sistémica Progresiva (Esclerodermia) con compromiso pulmonar",
+      "b": "Carcinoma bronquioloalveoalar",
+      "c": "Fibrosis Pulmonar Idiopática",
+      "d": "Sarcoidosis"
+    },
+    "correcta": "c",
+    "explicacion": "La **fibrosis pulmonar idiopatica** contituye un 50 a 60% de todas la neumonias intersticiales idiopátocas.\n\nGeneralmente afecta a adultos mayores de 50 años y es mas frecuente en hombres fumadores.\n\nEl diagnóstico requiere la confirmación histologica en un paciente sin datos clinicos ni histologicos de otra enfermedad intesticial o un patron tomografico tipico con alteración reticular, con predominio basal y subpleural, panalización y bronquiectasias por tracción con ausencia de predominio peribroncovascular, opacidades en vidrio esmerilado estensas, micronódulos, mosaico o consolidación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-057",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál de los siguientes factores considera más prevalente en la aparición de un cáncer pulmonar?",
+    "opciones": {
+      "a": "Antecedente de EPOC.",
+      "b": "Tabaquismo.",
+      "c": "Antecedentes heredofamiliares.",
+      "d": "Trabajar con materiales que contienen asbesto."
+    },
+    "correcta": "b",
+    "explicacion": "El factor de riesgo más importante para la aparición del cáncer de pulmón es el tabaco.\n\nEl **tabaquismo** representa el factor etiológico más importante en el 80%, si bien solo el 15% de los fumadores adquiere la enfermedad. La exposición a humo de tabaco incrementa el riesgo de enfermedad en un 30%.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-058",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Una mujer de 52 años con antecedentes de tabaquismo de 60 paq/año consulta por disnea CF II-III y tos matinal con expectoración abundante. ¿Cuál de los siguientes hallazgos en las pruebas de función pulmonar es el más probable?",
+    "opciones": {
+      "a": "Disminución de Volumen Espirado Forzado en el primer segundo (VEF1) y Capacidad Vital Forzada (CVF) con conservación de relación VEF1/CVF",
+      "b": "Disminución del Volumen Residual (VR)",
+      "c": "Disminución de la relación Volumen Espirado Forzado en el primer segundo sobre Capacidad Vital Forzada (VEF1/CVF)",
+      "d": "Capacidad de Difusión de Monóxido de Carbono (DLCO) normal"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nCaso clínico: Mujer, 52 años + Fumadora de 60 paquetes/año + Síntomas: disnea CF II-III + tos matinal productiva crónica + Cuadro muy sugestivo de EPOC (enfermedad pulmonar obstructiva crónica).\n\nOpción correcta: - **Disminución de la relación VEF1/CVF**. En la EPOC, el hallazgo cardinal es un patrón obstructivo, definido como VEF1/CVF < 0,7 post-broncodilatador. Es la primera alteración esperada en una paciente con su perfil clínico y antecedentes.\n\nAnálisis de las opciones:\n\n- Disminución del Volumen Residual (VR). En la obstrucción crónica por atrapamiento aéreo ocurre lo contrario: el VR suele aumentar (hiperinsuflación). Un VR bajo es característico de patrones restrictivos (ej. fibrosis pulmonar), no de EPOC.\n\n- Capacidad de Difusión de Monóxido de Carbono (DLCO) normal. La DLCO se afecta en muchos pacientes con enfisema, ya que se destruye la membrana alveolo-capilar. En la bronquitis crónica pura la DLCO puede ser casi normal, pero en un fumador tan intenso y sintomático, lo más probable es que ya esté reducida. Por tanto, no es el hallazgo típico esperado en este caso.\n\n- Disminución de VEF 1 y CVF con conservación de VEF1/CVF. Esto corresponde a un patrón restrictivo (ambos volúmenes reducidos, pero la relación conservada o aumentada). Ejemplo: fibrosis pulmonar, enfermedades neuromusculares, pleurales. No corresponde al cuadro obstructivo de la paciente.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-059",
+    "materia": [
+      "neumonologia",
+      "saludpublica"
+    ],
+    "submateria": [
+      "EPOC",
+      "Datos de nuestro país"
+    ],
+    "enunciado": "¿Cuál es la prevalencia de la Enfermedad Pulmonar Obstructiva Crónica en Argentina?",
+    "opciones": {
+      "a": "20,5%",
+      "b": "10,5%",
+      "c": "14,5%",
+      "d": "24,5%"
+    },
+    "correcta": "c",
+    "explicacion": "El estudio EPOC.AR (2016) realizado en cinco grandes ciudades de nuestro país concluye que: - la prevalencia de EPOC es del **14,5%** en adultos de 40 o más años de edad.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-060",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Un paciente de 32 años consulta por tos, fiebre y dolor en puntada de costado de 3 días de evolución. Tiene como antecedentes de importancia tabaquismo 10 paq/años. En la radiografía de tórax se observa derrame pleural derecho hasta campo medio. Se obtiene líquido pleural por toracocentesis cuyas características citoquímicas son las siguientes: pH: 7,12, Leucocitos 45 000/mm3 a predominio de polimorfonucleares, LDH: 1750 UI/L, glucosa 20 mg/dL. ¿Cuál es la conducta quirúrgica más adecuada?",
+    "opciones": {
+      "a": "Avenamiento pleural derecho",
+      "b": "Videotoracoscopia (VATS) y decorticación temprana",
+      "c": "Toracotomia y decorticación",
+      "d": "Toracocentesis evacuadora"
+    },
+    "correcta": "b",
+    "explicacion": "En un paciente con clinica de neumonía aguda que se presenta con derrame pleural complicado según los criterios de Light la indicación es: Antibioterapia, tubo de drenaje y considerar fibrinoliticos si hay escasa respuesta",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-061",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Bacterias"
+    ],
+    "enunciado": "Las neumonías son causa frecuente de hospitalización. Además, diferentes factores influyen en la decisión de la antibioticoterapia empírica según cada caso. ¿Cuál de los siguientes haría pensar en bacterias anaeróbicas como causa de una neumonía?",
+    "opciones": {
+      "a": "Broncoaspiración",
+      "b": "Uso previo de antibióticos",
+      "c": "Diabetes mellitus",
+      "d": "EPOC"
+    },
+    "correcta": "a",
+    "explicacion": "Etiologías de la neumonía adquirida en la comunidad según los antecedentes del paciente: **Aspiración masiva**: Anaerobios, neumonitis quimica",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-062",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral",
+      "hematologia"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Evaluación prequirúrgica",
+      "Coagulación"
+    ],
+    "enunciado": "¿Cuál de las siguientes medidas es útil para la prevención del tromboembolismo Pulmonar posquirúrgico?",
+    "opciones": {
+      "a": "Antibiótico preoperatorio.",
+      "b": "No movilizar al paciente en las primeras 48 horas.",
+      "c": "Movilización precoz y heparino profilaxis.",
+      "d": "Kinesioterapia preoperatoria."
+    },
+    "correcta": "c",
+    "explicacion": "La incidencia de eventos trombóticos durante la cirugia ortopédica ha sido claramente documentada. La trombosis venosa profunda (TVP) se produce en el 40 a 50% de los reemplazos totales de cadera, en el 45 a 50% de las fracturas de cadera y en el 72% de los reemplazos totales de rodilla. Del 1 al 5% de estos pacientes presentan tromboembolismo pulmonar (TEP) fatal.\n\nLa TVP es una entidad frecuente en pacientes operados, especialmente en las cirugias ortopédicas de miembros inferiores. La realización de profilaxis de TVP ha demostrado prevenir su aparición y la del TEP y, de esta manera, reducir el riesgo de muerte comparada con la realización de tratamiento; una vez aparecida la entidad.\n\nHabitualmente, para la mayoría de las cirugias, la profilaxis de TVP comienza antes de que el paciente sea intervenido y continúa hasta que el paciente comience a deambular. Sin embargo, en los casos de cirugía de cadera, la profilaxis posterior con heparina o con warfarina; debe continuarse por lo menos por siete a diez dias luego de la cirugía y por más tiempo, si se utiliza heparina de bajo peso molecular.\n\nLa heparina sódica se comienza dos horas antes de la cirugía y se utilizan 5000 Ul cada 8 a 12 horas, hasta que el paciente comience a deambular. La utilización de heparinas de bajo peso molecular (HBPM) tiene la ventaja, comparada con la heparina sódica, de presentar mayor eficacia, en cuanto a la reducción del riesgo relativo de TVP/TEP y menor incidencia de trombocitopenia, y poder ser administrada una o dos veces al dia; sin que se requieran controles de laboratorio.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-063",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Semiología"
+    ],
+    "enunciado": "Los valores espirométricos del patrón restrictivo en una enfermedad pulmonar son:",
+    "opciones": {
+      "a": "Disminución de la FVC, con VEF1 disminuido notablemente y VEF 1% alterado.",
+      "b": "Disminución de la FVC, con VEF1 aumentado o normal y VEF 1% normal.",
+      "c": "Aumento de la FVC, con VEF1 ligeramente disminuido y VEF1% normal.",
+      "d": "Disminución de la FVC, con VEF1 normal o ligeramente disminuido y VEF1% normal."
+    },
+    "correcta": "d",
+    "explicacion": "**Patrón restrictivo**:\n\n• FVC disminuido.\n\n• FEV1 disminuido.\n\n• **FEV1/FVC normal**.\n\nLa relación existente entre el Volumen Espiratorio forzado el primer segundo (FEV1 o VEMS) y la Capacidad Vital Forzada (FVC), puede expresarse en valor absoluto o porcentual (FEV1%). Este tipo de resultados no debe confundirse con el indice de tiffeneau, considerando que existen situaciones patológicas que pueden reflejar que la FVC sea inferior a la VC debido al colapso dinámico de la via aérea, ya que en escenarios normales el FEV1 representa alrededor del 80% de la FVC.\n\nConforme a esto, se logra comprender que durante el primer segundo de la espiración forzada de la FVC, el volumen de aire espirado corresponde al 80% del total que existía en los pulmones. Los valores menores a ese porcentaje, indican una posible enfermedad obstructiva, como pueden ser el EPOC, asma o la enfermedad de limitación crónica del flujo aéreo",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-064",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "TRI – Neumonías",
+      "Antibacterianos"
+    ],
+    "enunciado": "Jorge tiene 37 años y consulta por presentar un cuadro de fiebre, irritación faríngea, tos seca no productiva, escasas sibilancias y una radiografía de tórax en la que se observa un infiltrado intersticial bilateral. No presenta antecedentes patológicos significativos salvo el antecedente de reacciones alérgicas severas ante la ingesta de macrólidos. Tu sospecha diagnóstica es la de una Neumonía por Mycoplasma Pneumoniae, frente al antecedente de Jorge: ¿Cuál es la opción terapéutica mas adecuada?",
+    "opciones": {
+      "a": "Vancomicina",
+      "b": "Levofloxacina",
+      "c": "Clindamicina",
+      "d": "Ciprofloxacina"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEstamos ante un paciente que se sospecha NAC por Mycoplasma y tiene antecedentes de reacción adversa a macrólidos. De manera que se debe indicar tto alternativo: tetraciclinas o quinolonas/fluorquinolonas.\n\nRespuesta correcta **Levofloxacina**, se prefiere por sobre la ciprofloxacina ya que es más eficaz.\n\nM. pneumoniae suele ser sensible a los macrólidos, las tetraciclinas y las quinolonas. Aunque en ocasiones se ha considerado innecesaria la terapia antibiótica de las infecciones respiratorias por M. pneumoniae al tratarse la mayoría de las veces de una infección autolimitada, la administración de antibióticos reduce la duración de los signos y sintomas respiratorios.\n\nEl tratamiento de elección de las infecciones por M. pneumoniae es, por la menor duración del tratamiento, la azitromicina (500 mg/24 h durante 3 días).\n\nEn el caso de otros antibióticos, el tratamiento debe continuarse durante 7-10 días (excepcionalmente hasta 14-21 días), y se prefieren los nuevos macrólidos a la eritromicina (500 mg/6 h), por su mejor tolerancia y comodidad de administración, como es el caso de la claritromicina (500 mg/12 h) También son útiles las tetraciclinas (doxiciclina 100 mg/12 h) y las fluoroquinolonas, como el levofloxacino (500 mg/dia) y el moxifloxacino (400 mg/dia), durante 7-10 días, que son más eficaces que el ciprofloxacino.\n\nLas tetraciclinas y las quinolonas están contraindicadas en niños, pero son útiles en pacientes adultos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-065",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "¿En cuál de las siguientes patologías pulmonares se observan granulomas de células epitelioides semejantes a sarcoides no caseificantes?",
+    "opciones": {
+      "a": "asbestosis",
+      "b": "silicosis",
+      "c": "neumoconiosis de los trabajadores de las minas de carbón",
+      "d": "beriliosis crónica"
+    },
+    "correcta": "d",
+    "explicacion": "La **Beriliosis** es un tipo de neumonitis toxica crónica asociada a la exposición al berilio en la fabricación de bombillas fluorescentes.\n\nLa intoxicación por berilio se produce por hipersensibilidad y las manifestaciones clinicas pueden variar desde hallazgos en la radiografía de tórax hasta una neuropatia restrictiva granulomatosa severa (similares a los sintomas por sarcoidosis) y puede aparecer hasta 20 años luego de la exposición.\n\nEn la radiografía de tórax se constatan cambios idénticos a la sarcoidosis con nódulos pulmonares y aumento del tamaño de los ganglios linfáticos.\n\nEl diagnóstico puede realizarse a través de una prueba de sensibilización de los linfocitos al berilio y el tratamiento se realiza con corticoides orales al igual que en la sarcoidosis.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-066",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es típica del asma?",
+    "opciones": {
+      "a": "Los sintomas empeoran por la noche y en las primeras horas de la mañana",
+      "b": "Al menos 1 vez durante el proceso diagnóstico, es necesario contar con una espirometría que demuestre un valor de VEF1 normal, y una relación VEF1/CVF disminuida.",
+      "c": "Es necesario contar con una espirometría que demuestre un valor de VEF1 bajo, y una relación VEF1/CVF aumentada.",
+      "d": "Los LABA se utilizan como monoterapia en asma"
+    },
+    "correcta": "a",
+    "explicacion": "El diagnóstico de asma se basa en la presencia de un patrón de sintomas caracteristico y una limitación variable al flujo aéreo espiratorio, puesta en evidencia a través de pruebas de función pulmonar.\n\nPatrón de sintomas caracteristico: 1. Episodios recurrentes de falta de aire, sensación de pecho cerrado u oprimido, sibilancias o tos. 2. **Los síntomas: Empeoran por la noche y en las primeras horas de la mañana** Se desencadenan por infecciones virales del tracto respiratorio, por la práctica de actividad física o por la exposición a alérgenos o irritantes. Mejoran con broncodilatadores o corticoides.\n\nLimitación variable al flujo aéreo espiratorio documentada:\n\nEl diagnóstico de asma requiere documentar limitación al flujo aéreo y variabilidad de la función pulmonar.\n\n- Limitación al flujo aéreo documentada por espirometría: Al menos 1 vez durante el proceso diagnóstico, es necesario contar con una espirometria que demuestre un valor de VEF1 bajo, y una relación VEF1/CVF disminuida.\n\n- Para valorar la variabilidad de la función pulmonar pueden utilizarse 2 métodos: . Espirometría. Pico flujo espiratorio (PFE)\n\nLa presencia de alguno de los siguientes criterios permite documentarla:\n\n- Prueba de reversibilidad con broncodilatador: mejoria del VEF1 mayor o igual al 12% y mayor 200 ml, respecto del basal, tras una dosis de broncodilatador reglada (4 dosis por separado a intervalos de 30 segundos dosis total de 400 mcg de salbutamol o 160 mcg de ipratropio) y luego de 10 a 15 minutos para broncodilatadores b2 agonistas y 30 minutos para anticolinérgicos.\n\n- Mejoria significativa de la función pulmonar después de 4 semanas de tratamiento:\n\n- Aumento mayor o igual al 20% de los valores del PFE o\n\n- Aumento mayor o igual al 12% y 200 ml del VEF1 en la espirometria\n\n- Prueba de provocación bronquial positiva: disminución mayor o igual al 20% del VEF1 tras la administración de metacolina, manitol o ejercicio. No se utiliza en la práctica habitual. No se aconseja su uso en atención primaria.\n\nLos corticoides inhalados (ci) son los fármacos de primera línea en la terapia de control en todos los grupos etarios.\n\nTener en cuenta:\n\n- Los LABA (broncodilatadores B2 adrenérgicos de acción larga) no se utilizan como monoterapia en asma.\n\n- Los LABA se utilizan como tratamiento combinado con un Cl (idealmente en el mismo inhalador) cuando el asma no puede ser controlada con Cl a dosis bajas o antagonistas del receptor de leucotrieno, como alternativa.\n\n- Altas dosis de Cl pueden asociarse con efectos adversos significativos.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-067",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general",
+      "Hígado"
+    ],
+    "enunciado": "Un paciente de 71 años con antecedentes de hipertensión portal secundaria a cirrosis hepática de reciente diagnóstico, consulta por cuadro de disnea clase funcional III y fiebre (38,5 * C). Se solicita radiografía de tórax que evidencia opacidad en base pulmonar derecha y derrame pleural homolateral. Se realiza toracocentesis la cual evidencia salida de líquido turbio con un análisis físico químico con PH; 6.8, LDH: 900 U/L, Glucosa: 20 mg/dL, Proteínas líquido pleural: 3,1 mg/dL, Proteínas plasmáticas 4.9 mg/dL. ¿Cuál es el diagnóstico más probable y tratamiento adecuado?",
+    "opciones": {
+      "a": "Trasudado secundario a su patologia de base que requiere control.",
+      "b": "Exudado no complicado por lo que puede otorgar el alta con pautas de alarma.",
+      "c": "Exudado complicado/empiema que requiere antibioticoterapia",
+      "d": "Exudado complicado/empiema que requiere de drenaje pleural y antibioticoterapia."
+    },
+    "correcta": "d",
+    "explicacion": "Estamos ante un empiema (pH < 7,20, glucosa < 60 mg/dL, LDH > 1.000 UI/L gram/cultivo +, pus).\n\nEl **empiema** es un tipo de derrame paraneumónico complicado que se caracteriza por la presencia de pus en el espacio pleural.\n\nEl tratamiento es antibiótico, colocación de tubo de drenaje y administración de fibrinoliticos. Cuando éstos no funcionan, el siguiente paso es efectuar una toracoscopia para liberar las adherencias; si el proceso resulta ineficaz, se debe realizar una decorticación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-068",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "Consulta un varón de 59 años con antecedentes de artritis reumatoidea y diagnóstico reciente de cáncer de pulmón de células pequeñas. Le trae un resultado de laboratorio que informa: Hto 28%, leucocitos 2800/mm3 y plaquetas 160.000/mm3. Al interrogatorio refiere sentirse cansado y presentar cefalea hemicraneana derecha constante en las últimas 3 semanas. ¿Qué estudios diagnósticos solicita para estadificar el cuadro de este paciente?",
+    "opciones": {
+      "a": "PET scan, RNM de cerebro y punción aspirativa de médula ósea (PAMO)",
+      "b": "TC de tórax, abdomen y pelvis, RNM de cerebro y PAMO",
+      "c": "TC de tórax, abdomen y pelvis, centellograma óseo corporal total y PET scan",
+      "d": "TC de tórax, abdomen y pelvis, centellograma oseo, PET scan y PAΜΟ"
+    },
+    "correcta": "b",
+    "explicacion": "Las metástasis del cáncer de pulmón pueden presentarse en cualquier órgano y de ello dependerá la presentación clinica. Aquellos que presenten metástasis en cerebro presentaran cefalea, déficit neurológicos o convulsiones; los que presenten metástasis en hueso podrán tener fracturas patológicas o dolor y los que presenten metástasis en médula ósea presentarán citopenias.\n\nA partir de la sospecha clínica de los sitios de metástasis se realizará los estudios pertinentes para su búsqueda.\n\nLas recomendaciones para la estadificación en el cáncer de pulmón microcitico o de células pequeñas incluye a la **tomografia computada de tórax, abdomen y pelvis, RMN de cerebro y gamagrafía ósea** si es que los pacientes presentan sintomas. Para el cáncer de células pequeñas solo se recomienda el CT-PET en aquellos pacientes en etapa clinica 1 cuando se considere la resección quirúrgica curativa.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-069",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Julián de 21 años consulta a la guardia por cuadro de disnea de 12 horas de evolución asociado a dolor en hemitórax derecho en puntada de costado. En el interrogatorio el paciente refiere que tuvo dos veces neumotórax, por lo que fue tratado con drenajes pleurales sucesivos. Se realiza radiografía de tórax que evidencia neumotórax derecho de grado II. Se solicita tomografía de tórax que evidencia neumotórax mencionado asociado a bullas en ambos vértices pulmonares. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Conducta expectante con control ambulatorio",
+      "b": "Internar para bullectomia pulmonar más pleurodesis",
+      "c": "Realizar drenaje pleural",
+      "d": "Internar al paciente para observación del cuadro"
+    },
+    "correcta": "b",
+    "explicacion": "Conducta terapéutica en este caso: toracotomia o videotoracoscopia (**bullectomía más pleurodesis mecánica**) cuando el neumotorax es bilateral, hay recurrencias, fuga aérea excesiva o ausencia de expansión pulmonar después de tres dias de drenaje con aspiración.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-070",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Semiología"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una causa de cianosis central?",
+    "opciones": {
+      "a": "Menor gasto cardiaco sin fallo retrógrado",
+      "b": "Fenómeno de Raynaud secundario",
+      "c": "Exposición al frío con vasoconstricción en dermis",
+      "d": "Hipoventilación alveolar con bradipnea"
+    },
+    "correcta": "d",
+    "explicacion": "La cianosis es la coloración azul que toma la piel y las mucosas cuando aumenta la concentración de hemoglobina reducida en sangre. Se clasifica en central y periférica.\n\nEn la **cianosis central** existe desaturación de la sangre arterial (insuficiencia respiratoria, cortocircuitos intra o extra cardiacos) en tanto que en la cianosis periférica hay una disminución del flujo sanguíneo con una extracción de oxigeno aumentada por ejemplo en estados de shock.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-071",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Bronquiectasias"
+    ],
+    "enunciado": "Paciente de 50 años con neumonías a repetición. Sospechamos que presenta bronquiectasias. ¿Cuál es el método por imágenes a elección para su diagnóstico?",
+    "opciones": {
+      "a": "Fibrobroncoscopia",
+      "b": "TC de tórax",
+      "c": "Centellograma V/Q",
+      "d": "Rx de tórax"
+    },
+    "correcta": "b",
+    "explicacion": "Las bronquiectasias son dilataciones anómalas en los bronquios que pueden producirse por causas infecciosas o no infecciosas (fibrosis quistica), pueden ser o no focales y pueden generarse por causas intrínsecas o extrinsecas. La clinica se caracteriza por un cuadro respiratorio compuesto por tos y expectoración.\n\nPara su diagnostico el método complementario de elección es la **tomografia de tórax**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-072",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "Marcelo es un paciente con derrame pleural a quien se le efectuó una paracentesis diagnóstica basado en los criterios de Light. ¿cuándo considera que es un exudado?",
+    "opciones": {
+      "a": "La concentración de LDH en pleura es más de 2/3 de la LDH plasmática.",
+      "b": "El cociente LDH pleural/plasmática es >0,7.",
+      "c": "El nivel de proteinas es superior a 2,5 g/dL.",
+      "d": "El cociente proteinas pleurales/plasmáticas es <0,5."
+    },
+    "correcta": "a",
+    "explicacion": "Un derrame pleural se clasifica como exudado si cumple al menos uno de los siguientes 3 criterios:\n\nRelación proteínas pleura/plasma > 0,5 Entonces un cociente proteínas pleurales/plasmáticas < 0,5 sugiere un trasudado, no un exudado.\n\nRelación LDH pleura/plasma > 0,6. El punto de corte NO es > 0,7.\n\n**LDH pleural > 2/3 del limite superior normal de LDH sérica**, esta opción corresponde exactamente al tercer criterio de Light.\n\nUn valor absoluto de proteinas > 2,5 g/dL puede orientar, pero no es parte de los criterios de Light.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-073",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el tratamiento quirúrgico apropiado de un empiema pleural crónico?",
+    "opciones": {
+      "a": "Toracocentesis",
+      "b": "VATS (Toracoscopia video asistida)",
+      "c": "Toracotomía y decorticación",
+      "d": "Avenamiento pleural"
+    },
+    "correcta": "c",
+    "explicacion": "Los empiemas pleurales crónicos tienen indicación de **decorticación** ya que debido al tiempo de evolución, la pleura se presenta engrosada (peel pleural).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-074",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un varón de 58 años con diagnóstico de EPOC concurre a una consulta de control. Se encuentra estable en los últimos meses con buena adherencia al tratamiento con glucocorticoides inhalados y broncodilatadores de acción prolongada. Abandonó el hábito tabáquico. Al examen físico se encuentra hemodinámicamente estable y no presenta signos de insuficiencia cardíaca. Se realiza laboratorio y en el EAB tiene una PaO2 de 58 mmHg, un Hto 59% y en el ecocardiograma presenta hipertensión pulmonar. ¿Cual es la conducta más adecuada?",
+    "opciones": {
+      "a": "Tratamiento ambulatorio con diuréticos de asa y carvedilol",
+      "b": "Indicar inhibidores de la fosfodiesterasa-5",
+      "c": "Aumentar la dosis de corticoides y de broncodilatadores de acción prolongada",
+      "d": "Indicar oxigenoterapia crónica domiciliaria"
+    },
+    "correcta": "d",
+    "explicacion": "Recomendaciones de **oxigenoterapia crónica domiciliaria**:\n\nPaO2 55 mmHg en situación basal\n\n• PaO2 entre 55-60 mmHg y alguna de las siguientes situaciones:\n\n* Policitemia (hematocrito > 55%)\n\n* Datos de insuficiencia cardiaca congestiva\n\nHipertensión pulmonar o cor pulmonale",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-075",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En un paciente al que se le realiza el drenaje de un neumotórax espontáneo, usted constata que el pulmón no reexpande. Evalúa el sistema de avenamiento bajo agua y no presenta pérdidas aéreas. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Toracotomía exploradora",
+      "b": "Fibrobroncoaspiración",
+      "c": "Videotoracoscopia",
+      "d": "Recolocación del tubo de drenaje pleural"
+    },
+    "correcta": "b",
+    "explicacion": "En un paciente cursando internación por neumotórax con avenamiento pleural refractario al tratamiento, la indicación es la realización de una **fibrobroncoscopia con aspiración** para evaluar la posibilidad de tapones mucosos que impidan la expansión pulmonar correcta.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-076",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Semiología"
+    ],
+    "enunciado": "¿Cuál es el principal rédito diagnóstico de la espirometría en la evaluación de afecciones respiratorias?",
+    "opciones": {
+      "a": "Alto valor predictivo negativo para patologia obstructiva de la vía aérea",
+      "b": "Alta sensibilidad y especificidad para infecciones respiratorias con ocupación del espacio alveolar",
+      "c": "Alto valor predictivo positivo para compromiso respiratorio secundario a enfermedades del tejido conectivo",
+      "d": "Confirma asma en cualquiera de sus formas clinicas"
+    },
+    "correcta": "a",
+    "explicacion": "La espirometria es el estudio de referencia y permite tanto diagnosticar obstrucción al flujo aéreo cuando la relación VEF1/CVF es menor de 0,70 postbroncodilatadores, como evaluar su severidad y establecer diagnósticos diferenciales al identificar probable restricción (ej. enfermedades intersticiales del pulmón) o amplia variabilidad de la obstrucción (asma).\n\nEn los procesos obstructivos, existe una limitación a la salida del aire, por lo que se observa una reducción desproporcionada del VEF1 respecto de la CVF. Por lo tanto, la relación VEF1/CVF está disminuida. A medida que el proceso obstructivo avanza, se evidenciará una reducción progresiva del VEF1.\n\nEntonces: Valor Predictivo Negativo: corresponde a la probabilidad condicional de que el paciente no tenga la enfermedad, dado que la prueba diagnóstica resultó negativa. En otras palabras, es la probabilidad de que el individuo no tenga la condición en estudio luego de que el test es negativo.\n\nCorrecta: **Alto valor predictivo negativo para patologia obstructiva de la via aérea**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-077",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "EPOC",
+      "Bacterias"
+    ],
+    "enunciado": "Ignacio tiene 62 años, y ud. le acaba de diagnosticar Enfermedad Pulmonar Obstructiva Crónica. No tiene otro tipo de patologías. En cuanto a la inmunización antineumocóccica, ¿cuál es el esquema indicado para Ignacio?",
+    "opciones": {
+      "a": "Vacuna conjugada de 20 valencias a los 62 años, y único refuerzo con vacuna polisacárida de 23 valencias a los 65 años.",
+      "b": "Vacuna conjugada de 13 valencias a los 62 años, refuerzo al año con vacuna polisacárida de 23 valencias a los 63 años y segundo refuerzo con vacuna polisacarida de 23 valencias a los 65 años.",
+      "c": "Vacuna conjugada de 13 valencias a los 65 años, y único refuerzo con vacuna con polisacárida de 23 valencias a los 63 años.",
+      "d": "Se debe indica una dosis única de VCN-20 en el momento del diagnóstico de EPOC."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nEn Ignacio, con EPOC y 62 años, se indica una **dosis única de VCN-20**.\n\nLa EPOC es una enfermedad crónica que aumenta el riesgo de enfermedad neumocócica invasiva, por lo que la vacunación está indicada en adultos de 18 años o más con esta condición, sin necesidad de esperar a los 65 años.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-078",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "Un paciente de 68 años consulta por presentar tos y disnea. Es hipertenso medicado con enalapril y ex tabaquista. Suele hacer caminatas de 20 cuadras sin disnea y no refiere otros antecedentes. Usted lo encuentra con buen estado general y ausculta crepitantes en base derecha. El cuadro es compatible con neumonía y presenta hisopado negativo para COVID19. La escala de CURB-65 le da un puntaje de 1. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indica Amoxicilina/Clavulánico por 7 días. Mantiene control ambulatorio.",
+      "b": "Deriva a internación para realizar tratamiento antibiótico y de sostén.",
+      "c": "Deriva a un centro de guardia para realizar radiografia de tórax y confirmar su diagnóstico presuntivo.",
+      "d": "Indica Levofloxacina por 14 dias. Mantiene control ambulatorio."
+    },
+    "correcta": "a",
+    "explicacion": "NAC una vez realizado el diagnóstico.\n\n¿Según el CURB-65 los pacientes donde deben realizar el tratamiento?\n\n**0-1: ambulatorio.** (respuesta correcta)\n\n2: internación en sala general.\n\n3-5: UCI.\n\nEl tratamiento de elección en pacientes > 65 años o con comorbilidades: **Amoxicilina clavulánico o sulbactam** 875-1000 mg cada 12 horas via oral (correcta)",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-079",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Bronquiectasias",
+      "Tomografía"
+    ],
+    "enunciado": "Mujer de 63 años presenta tos y expectoración diaria de años de evolución, ocasionalmente hemoptoica. En los últimos meses se añade disnea progresiva. Refiere tabaquismo activo. Presenta acropaquia y en la auscultación pulmonar roncus y sibilantes teleinspiratorios en pulmón izquierdo. Se realiza TACA pulmonar (imagen adjunta) ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Bronquiectasias.",
+      "b": "Enfisema pulmonar.",
+      "c": "Tuberculosis cavitada.",
+      "d": "Carcinoma quistico."
+    },
+    "correcta": "a",
+    "explicacion": "Pregunta actualizada de un examen real a los fines didácticos.\n\nLa imagen muestra un corte de TACAR de tórax a nivel de ambos lóbulos pulmonares inferiores, donde se objetivan dilataciones del árbol bronquial (flecha blanca) sobre todo, en el lado izquierdo, presentando una pared fina y un calibre superior a la del vaso arterial que discurre a su lado (flecha roja). Esto se debe a la destrucción de la pared del bronquio y es caracteristico de las **bronquiectasias** (respuesta correcta).\n\nLa tuberculosis cavitada en el adulto, se suele presentar en sus forma post-primaria pulmonar y afecta con mayor frecuencias a lóbulos superiores y suelen tener una pared más gruesa (respuesta incorrecta).\n\nEl carcinoma quístico es una entidad extremadamente rara, suele ser multiquístico y asociar en mayor o menor grado componente sólido de consolidación del espacio aéreo (respuesta incorrecta).\n\nEl enfisema pulmonar afecta a la via aérea distal por definición y suele verse como área focales de radiolucencia inferiores a 1 cm, además de que su forma más clásica, la centroacinar, afecta con mayor frecuencia a lóbulos superiores (respuesta incorrecta).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-080",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Francisco consulta por episodios reiterados de \"bronquitis\", en la entrevista refiere que comenzaron aproximadamente hace dos años, se caracterizan por mucha tos y a veces, silbidos en el pecho. Refiere uno o dos episodios por año. Fuera de estos, nota que le falta el aire cuando camina rápido en llano o sube una pendiente ligera. Tiene 52 años y es tabaquista de 40/paquetes año desde los 20 años. Usted le indica una espirometría, donde se evidencia que el CVF es normal, el VEF1 está disminuido (70%) y la relación VEF1/CVF disminuida. La respuesta a los broncodilatadores muestra cambios menores al 12% con una relación VEF1/CVF menor al 70% post broncodilatadores. Teniendo en cuenta el diagnostico de Francisco y que su enfermedad se encuentra estable: ¿Qué tratamiento inicial le indica?",
+    "opciones": {
+      "a": "Broncodilatadores de acción corta reglados o a demanda.",
+      "b": "B2 adrenérgico de acción larga.",
+      "c": "Broncodilatadores antimuscarinicos de acción larga.",
+      "d": "Corticoides inhalados."
+    },
+    "correcta": "a",
+    "explicacion": "Recordar que el paciente con EPOC es o ha sido fumador durante un tiempo prolongado y refiere el comienzo de sus síntomas a partir de los 40 años.\n\nPresenta una espirometría con un patrón obstructivo típico que se caracteriza por: - CVF normal. -VEF1 disminuido. - VEF1/CVF disminuida.\n\nLa obstrucción en la EPOC no es (completamente) reversible como muestra este caso menor al 12% y se caracteriza por presentar, relación VEF1/CVF menor al 70% post BD.\n\nEl esquema de inicio de tratamiento en este caso es: paciente con síntomas tos, expectoración, disnea (mMRC igual o mayor a 2) y obstrucción no severa (VEF1 igual o mayor a 50%) = 1er escalón con **BD de acción corta reglados o a demanda**",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-081",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Un varón de 22 años concurre a la consulta por presentar episodios de disnea y sibilancias diurnas casi todos los días de la semana desde hace 1 mes. Refiere que aproximadamente entre dos o tres veces por semana, estos episodios lo despiertan por la noche y ceden al nebulizarse con salbutamol. La radiografía de tórax es normal y la espirometría presenta CVF 102% del teórico y VEF1 78% del teórico con un aumento en la prueba postbroncodilatadores de 15%. ¿Cuál es el tratamiento de elección inicial?",
+    "opciones": {
+      "a": "B2 acción corta a demanda + corticoides inhalados a dosis bajas.",
+      "b": "ẞ2 acción corta a demanda + corticoides inhalados a dosis medias + ẞ2 de acción larga.",
+      "c": "ẞ2 acción corta a demanda + corticoides orales + ẞ2 de acción larga",
+      "d": "ẞ2 acción corta a demanda + ẞ2 de acción larga."
+    },
+    "correcta": "a",
+    "explicacion": "El caso nos presenta un varón con diagnóstico de ASMA. Utiliza Broncodilatadores (BD) B2 adrenérgicos de acción corta a demanda.\n\nPresenta episodios de disnea y sibilancias diurnas casi todos los días de la semana - entre dos o tres veces por semana, estos episodios lo despiertan por la noche y ceden al nebulizarse con salbutamol = Asma mal controlado.\n\nTratamiento opción preferencial: Paso 2: **Agregar dosis bajas de Corticoides Inhalados (CI)**",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-082",
+    "materia": [
+      "neumonologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Asma",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "Paciente femenina de 15 años con antecedentes de cuadros de rinorrea y estornudos frecuentes durante la infancia. Refiere episodios de disnea nocturna acompañada de sibilancias en el último año que mejoran espontáneamente o con salbutamol inhalatorio. Tuvo síntomas en las últimas 4 semanas más de 2 veces por semana con necesidad de tratamiento broncodilatador. De la siguiente medicación inhalada, ¿Cuál recomendaría para iniciar la terapia de mantenimiento?",
+    "opciones": {
+      "a": "Cromoglicato de sodio",
+      "b": "Budesonida",
+      "c": "Bromuro de Ipratropio",
+      "d": "Salmeterol"
+    },
+    "correcta": "b",
+    "explicacion": "Nos sugieren en el enunciado un mujer que tiene dx de asma y que utiliza broncodilatadores (BD) b2 adrenérgicos de acción corta (salbutamol) a demanda.\n\nTeniendo en cuenta el cuestionario de evaluación del control del asma: - presenta necesidad de uso de medicación de rescate más de 2 veces por semana en los últimos 4 semanas, de manera que estamos ante un asma parcialmente controlado, por lo que debemos pasar al Paso 2 según el tratamiento escalonado = agregar dosis bajas de corticoides inhalados (CI) \"**budesonida**\".\n\nBroncodilatadores B2 adrenérgicos: la mayoría de los receptores adrenérgicos de las vias aéreas son B2, a predominio de las vias aéreas más pequeñas (en los alvéolos también hay receptores B1). Los broncodilatadores B2 estimulan los receptores adrenérgicos y asi relajan la musculatura lisa, inhiben la liberación de mediadores de las células cebadas (mastocitos) e incrementa la depuración mucociliar. La familia de BD B2 adrenérgicos comprende los de acción corta (rápida acción y vida corta) y los de acción larga (LABA: 12 hs, ej. salmeterol, formoterol) y ultra-LABA de acción ultra larga (24 hs, ej. indacaterol, vilanterol).\n\nCI: corticoides inhalados (ej, budesonida, fluticasona (propionato y furoato), mometasona, beclometasona).\n\nBroncodilatadores antimuscarinicos: inhiben los receptores muscarinicos de la via aérea. Los nervios colinérgicos (nervio vago; acetilcolina como neurotransmisor) constituyen la via broncoconstrictora dominante en las vías aéreas y normalmente generan un pequeño aumento del tono del músculo para mantener las vías aéreas permeables, evitando su colapso durante la espiración. No obstante, un tono vagal excesivo puede ser responsable de al menos parte de la obstrucción de la via aérea que se observa en algunos pacientes. Los fármacos anticolinergicos bloquean de forma competitiva el efecto de la acetilcolina sobre los receptores de la musculatura lisa del árbol bronquial (de distribución predominantemente central-bronquios grandes y medianos-). El tono colinergico es mayor en EPOC que en asma por lo que son más útiles para el tratamiento de la primera enfermedad. Esta familia comprende de acción corta (ej. ipratropio) y de acción larga (LAMA: tiotropio, glicopirronio).\n\nEn general la profilaxis con cromoglicato de sodio en el asma es menos efectiva que con corticosteroides inhalados. Los niños pueden responder mejor que los adultos, pero existen menos evidencia de eficacia especialmente en niños menores de 4 años. El cromoglicato de sodio no tiene valor para su uso en el tratamiento del ataque agudo de asma y solamente tiene cierto valor en la prevención del asma inducido por ejercicio cuando el mismo es inhalado media a una hora antes del ejercicio. El cromoglicato de sodio su modo de acción no es completamente conocido y puede tener cierto valor cuando el proceso asmático tiene claras evidencias de base alérgica.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-083",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "¿Cuál de los siguientes exámenes directos de esputo constituye una muestra representativa de la vía aérea inferior?",
+    "opciones": {
+      "a": "Menos de 10 células escamosas, más de 15 leucocitos en campo de 10X, flora polimicrobiana",
+      "b": "Menos de 10 células escamosas, más de 25 leucocitos en campo de 10X, germen predominante",
+      "c": "Menos de 10 células escamosas, menos de 25 leucocitos en campo de 10X y flora polimicrobiana",
+      "d": "Más de 25 células escamosas, menos de 10 leucocitos en campo de 100X, germen predominante"
+    },
+    "correcta": "b",
+    "explicacion": "Dentro de la evaluación microbiológica de los pacientes con probable neumonia se encuentra el cultivo del esputo. El mismo debería ser indicado ante la sospecha de un germen que pueda presentar resistencia a tratamientos antimicrobianos habituales.\n\nPara que un esputo sea representativo debe presentar **menos de 10 células escamosas y más de 25 leucocitos** por campo de bajo aumento (X10). La tinción Gram si está bien realizada debería mostrar un microorganismo predominante.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-084",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Un paciente de 32 años con diagnóstico de asma y mala adherencia al tratamiento desde hace meses, consulta por primera vez al neumonólogo. Al interrogatorio refiere tos, sibilancias y disnea diarias. Por la noche presenta sibilancias y tos tres veces por semana. Utiliza salbutamol cuatro días en la semana y no refiere limitación para la actividad física habitual. Requirió atención en la guardia en dos ocasiones por episodios de broncoespasmo en el último año y la última espirometría efectuada pocos días atrás revela un VEF1 68%. ¿Cuál es el tratamiento farmacológico más adecuado?",
+    "opciones": {
+      "a": "Agonistas beta 2 de acción prolongada en forma regular y agonistas beta 2 de acción corta a demanda",
+      "b": "Glucocoticoides por via IM, antileucotrienos en forma regular y agonistas beta 2 de acción corta a demanda",
+      "c": "Glucocorticoides orales y beta 2 de acción corta en forma regular",
+      "d": "Agonista beta 2 de acción corta a demanda, glucocorticoides inhalatorios y agonistas beta 2 de acción larga en forma regular"
+    },
+    "correcta": "d",
+    "explicacion": "Es un asma mal controlado que solo recibe medicación de rescate con BD beta 2, de entre las opciones la más adecuada es comenzar con el **Paso 3: LABA/CI** (broncodilatadores B2 adrenérgicos de acción larga (LABA)/ dosis baja de CI) con BD Beta2 ó BUD/FORM a demanda.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-085",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma"
+    ],
+    "enunciado": "En un paciente con derrame pleural en tratamiento con diuréticos, ¿Qué criterios diagnósticos debemos utilizar para evaluar el líquido?",
+    "opciones": {
+      "a": "Relación colesterol en el líquido pleural/sérico mayor de 0.3mg/dl",
+      "b": "Relación proteinas totales en liquido pleural/séricas mayor de 0,5 mg/dl",
+      "c": "Albúmina sérica - albúmina en el líquido pleural menor o igual a 1.2 y relación ácido láctico en liquido pleural/sérico mayor a 2",
+      "d": "Relación LDH en líquido pleural/sérico mayor de 0.6 UI"
+    },
+    "correcta": "c",
+    "explicacion": "Los criterios más útiles para evaluar el liquido pleural en un paciente en tratamiento con diuréticos son:\n\nRelación colesterol en el líquido pleural/sérico mayor de 0.3.\n\n**Albúmina sérica - albúmina en el liquido pleural menor o igual a 1.2 g/dL.**\n\nRelación ácido láctico en liquido pleural/sérico mayor a 2: Este no es un criterio estándar para diferenciar trasudados de exudados.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-086",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Acude a su consultorio una paciente de 65 años quien está intentando realizar caminatas diarias, pero refiere presentar disnea a las 5 cuadras, síntoma que sin caminar presenta esporádicamente. Es tabaquista de 5 cigarrillos diarios desde los 20 años, dejando por períodos de un año aproximadamente en sus dos embarazos. Se encuentra medicada con antimuscarínicos inhalados de acción corta, según síntomas, que no le han dado resultado con la caminata. La radiografía de tórax es normal y la espirometría muestra: volumen espiratorio forzado (VEF1) 45%, capacidad vital forzada (CVF) normal, VEF1/CV disminuido, sin modificaciones con broncodilatadores. Además de sugerir el cese del tabaquismo, ¿cuál de las siguientes conductas es la más apropiada?",
+    "opciones": {
+      "a": "Solicitar una angiotomografía de tórax y suspender el ejercicio hasta ver su resultado",
+      "b": "Indicar un antimuscarinico de larga duración (LAMA) en dosis fijas y mantener rescates según sintomas con el antimuscarinico de acción corta que ya utiliza",
+      "c": "Solicitar un electrocardiograma y ecocardiograma doppler para estudiar causas alternativas de disnea",
+      "d": "Indicar dosis fijas del antimuscarinico de acción corta que ya utiliza y mantener rescates según sintomas"
+    },
+    "correcta": "b",
+    "explicacion": "Estamos ante una paciente con EPOC sintomática, con VEF 45% (grave) en tto con antimuscarinicos de acción corta.\n\nTTO: BD de de acción larga de 12 hs de duración (LAMA: tiotropio, glicopirronio, umeclidinio; LABA: salmeterol, formoterol); y de acción ultra-larga de 24 hs de duración (ultra-LABA: indacaterol, vilanterol, olodaterol) son de primera elección ante EPOC estable con obstrucción severa, por mejor manejo de los síntomas, mejora de la calidad de vida y reducción de las exacerbaciones, y en reducción de exacerbaciones tanto como monocomponente (preferencial LAMA) o asociado (doble broncodilatación: ultra-LABA-LAMA; LABA/CI, ultra-LABA/CI).\n\nResp correcta: **Indicar un antimuscarinico de larga duración (LAMA) en dosis fijas y mantener rescates según sintomas con el antimuscarinico de acción corta que ya utiliza**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-087",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un varón de 55 años con diagnóstico de EPOC concurre a la guardia por disnea clase funcional II, tos y cambios en el volumen y coloración del esputo habitual. Trae consigo el resultado de la última espirometría que muestra un VEF1 postbroncodilatadores de 56%. Se encuentra bajo tratamiento con combinación de Fluticasona/Salmeterol y Tiotropio. Al examen físico se presenta lúcido, afebril, FR 20 rpm, FC 90 lpm, TA 140-90 mm Hg, distensión yugular 1/3 con colapso inspiratorio y no presenta edemas periféricos. La gasometría arterial: PO2: 79 mm de Hg y PCO2 41 mm de Hg ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar tratamiento ambulatorio, mantenimiento de tratamiento habitual, optimizar el tratamiento por vía inhalatoria con broncodilatadores de acción corta, antibioticoterapia con aminopenicilinas, corticoides sistémicos. Valorar la evolución a las 72 hs",
+      "b": "Indicar tratamiento ambulatorio, mantenimiento de tratamiento habitual, optimizar el tratamiento por via inhalatoria con broncodilatadores de acción corta, antibioticoterapia con claritromicina, oxigenoterapia domiciliaria. Valorar la evolución en 48 hs",
+      "c": "Indicar internación en clinica médica, mantenimiento de tratamiento habitual, optimizar el tratamiento por via inhalatoria con broncodilatadores de acción corta, antibioticoterapia con amoxicilina clavulánico via IV, oxigenoterapia, corticoides sistémicos",
+      "d": "Indicar internación en terapia intensiva, mantenimiento de tratamiento habitual, optimizar el tratamiento por vía inhalatoria con broncodilatadores de acción corta, antibioticoterapia con imipenem via IV, oxigenoterapia, corticoides sistémicos"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nPaciente con EPOC moderado-grave (VEF1 post-BD = 56%). Consulta por disnea, tos y cambio en el esputo (volumen y color): criterios de exacerbación aguda de EPOC (criterios de Anthonisen).\n\nSignos vitales estables: TA normal, FC 90, FR 20, afebril. Gasometria: PO2 = 79 mmHg (sin hipoxemia grave), PCO2 = 41 mmHg (sin retención de CO2). No hay signos de insuficiencia respiratoria aguda ni de cor pulmonale descompensado. Por lo tanto, exacerbación leve-moderada, sin criterios de internación inmediata.\n\nConducta recomendada en exacerbación leve-moderada de EPOC = Manejo ambulatorio. Mantener el tratamiento de base. Añadir broncodilatadores de acción corta (SABA/SAMA). Antibioticoterapia: indicada porque hay aumento de volumen y purulencia del esputo (cambio de color). Opción válida: macrólido (ej. claritromicina) o amoxicilina-clavulánico oral. Corticoides sistémicos no siempre son necesarios en exacerbaciones leves si no hay compromiso funcional importante. Oxigenoterapia domiciliaria: solo si hay hipoxemia crónica (PO2 <= 55 mmHg o <= 60 con cor pulmonale o policitemia), lo cual aqui no se cumple.\n\nOpción más adecuada: - **Tratamiento ambulatorio + BD corta + antibióticos orales (aminopenicilinas) + corticoides sistémicos + reevaluación en 72 h** = Ambulatorio + Optimizar BD de rescate + Antibióticos orales, justificado por cambio en el esputo + Corticoides sistémicos, se usan en la mayoría de exacerbaciones moderadas para acortar la duración y mejorar el VEF1. Reevaluación a las 48-72 h.\n\nAnálisis de las opciones\n\n• Tratamiento ambulatorio + BD corta + antibióticos (claritromicina) + oxigeno domiciliario. Correcto lo del manejo ambulatorio, broncodilatadores y antibióticos. Pero oxigenoterapia domiciliaria no corresponde, ya que el paciente no cumple criterios (PaO2 > 60 mmHg).\n\n• Internación en clinica médica + antibiótico IV + corticoides sistémicos. El paciente está estable, no tiene insuficiencia respiratoria ni criterios de internación. El manejo con antibiótico IV y corticoides sistémicos está indicado en exacerbaciones moderadas-graves con compromiso clinico mayor.\n\n• Internación en UTI + antibióticos de amplio espectro (imipenem) + corticoides. Demasiado agresivo para un paciente clínicamente estable y con gases arteriales normales. Solo se justificaria si hubiera insuficiencia respiratoria aguda, shock séptico o exacerbación muy grave.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-088",
+    "materia": [
+      "neumonologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Neumonía",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "¿Para qué sirve el score CURB-65?",
+    "opciones": {
+      "a": "Valorar los criterios de ingreso a UTI en sepsis de la comunidad",
+      "b": "Valorar los criterios de gravedad en pancreatitis aguda",
+      "c": "Valorar el grado de severidad en neumonia",
+      "d": "Valorar los riesgos de enfermedad tromboembólica pretest"
+    },
+    "correcta": "c",
+    "explicacion": "La evaluación de la gravedad de la neumonía es prioritaria y permite decidir si el paciente debe ser ingresado en el hospital o tratado ambulatoriamente. Debemos conocer y utilizar fundamentalmente dos escalas pronósticas: el **CURB-65** y el PSI.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-089",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuándo está indicada una punción pleural frente a la sospecha de un tumor maligno de pulmón?",
+    "opciones": {
+      "a": "Cuando el tumor se asocia con derrame pleural",
+      "b": "En tumores pulmonares con invasión de una cisura bilobar",
+      "c": "Cuando se sospecha un \"out-cell\" de pulmón",
+      "d": "En pacientes con un nódulo periférico y gran riesgo quirúrgico"
+    },
+    "correcta": "a",
+    "explicacion": "El derrame pleural secundario a neoplasia es la segunda causa de exudado. De los tumores que producen derrame pleural el carcinoma pulmonar junto con el cancer de mama y el linfoma son los mas frecuentes.\n\nEn el caso de evidenciarse derrame pleural se procede a realizar **toracocentesis diganostica** esperando encontrar un liquido con glucosa disminuida si la carga tumoral en el liquido pleural es elevada.\n\nEn los pacientes con cancer de pulmón y derrame pleural la patologia se encuentra en un estadio avanzado y el tratamiento esta dirigido a paliar los sintomas secundarios al derrame pleura (disnea).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-090",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Romualdo, un paciente de 72 años, consulta por tos y expectoración persistente, matinal desde hace varios años. Refiere disnea de esfuerzo cuando camina un poco apurado. Agravado hace dos meses por dolor en pantorrilla izquierda que lo obliga a detenerse a las 3 cuadras. Una o dos veces cada año suele tener episodios de bronquitis agudas que han requerido asistencia médica, aunque nunca estuvo internado. Recibió tratamiento con salbutamol en algunas de las oportunidades por \"broncoespasmo\". Tabaco 20 cigarrillos diarios desde los 20 años. Alcohol 1 o 2 vasos de vino por día. Al Examen físico: Tensión arterial 170 -95 mm Hg, Peso 84 kg, Talla 1,80 m. Tórax de hábito enfisematoso, reducción del murmullo vesicular en ambos campos. Aparato cardiovascular normal. Pulsos ausentes en miembro inferior izquierdo. Su VEF 1 es de 2190 ml (Esperado 3190 ml). Ante la administración de un beta 2, el VEF 1 es de 2350 ml. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Usted hace diagnóstico de EPOC leve. Indicaria abandono del tabaco y anticolinérgicos inhalados",
+      "b": "Se plantea bronquitis crónica no obstructiva",
+      "c": "Indicaria abandono del tabaco, pero por tener exacerbaciones frecuentes indicaría corticoides inhalados",
+      "d": "Usted hace diagnóstico de EPOC moderado. Indicaria abandono del tabaco y broncodilatadores"
+    },
+    "correcta": "d",
+    "explicacion": "Es una caso clínico incompleto, pregunta confusa, porque nos falta el dato de la CVF, de manera que se asume como dx de EPOC. Lo que podemos calcular es la severidad de la EPOC con los datos del VEF y su respuesta a los BD.\n\nEntonces el nivel de severidad de la obstrucción según el % del VEF1 post BD: Leve: VEF1 igual o mayor al 80%. Moderada: VEF1 entre el 50 y el 79%. Severa: VEF1 menor al 50% (muy severa menor al 30%).\n\nRespuesta correcta **obstrucción moderada y el tto correspondiente**. El tratamiento se basa principalmente en el uso de broncodilatadores de acción corta reglados o a demanda y el cese del tabaquismo.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-091",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "Lo consulta un paciente con diagnóstico reciente de carcinoma escamoso de pulmón. El tumor está localizado en el lóbulo superior izquierdo y tiene un diámetro de 2 cm. En la tomografía de tórax se informan adenopatías subcarínicas ipsilaterales y los demás estudios de extensión no muestran metástasis a distancia. ¿En qué estadio de la enfermedad se encuentra el paciente?",
+    "opciones": {
+      "a": "Estadio IIIA",
+      "b": "Estadio I",
+      "c": "Estadio IIA",
+      "d": "Estadio IIB"
+    },
+    "correcta": "a",
+    "explicacion": "Para la estadificación del cancer de pulmón no microcítico se utiliza la clasificación TNM.\n\nDentro de esta clasificación tenemos un T1 (T1c) es un tumor que mide menos de 3 cm.\n\nEl compromiso ganglionar: N2 afectación de ganglios mediastinicos ipsilaterales y/o subcarinales.\n\nEl estadio es **IIIA** se puede dar por las siguientes combinaciones: T1 N2",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-092",
+    "materia": [
+      "neumonologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Semiología",
+      "Cardiología básica"
+    ],
+    "enunciado": "¿Cuál de las siguientes es causa de cianosis periférica?",
+    "opciones": {
+      "a": "Exposición al frio",
+      "b": "Hemoglobina con poca afinidad al oxigeno",
+      "c": "Metahemoglobinemia hereditaria",
+      "d": "Desigualdad entre la ventilación y perfusión pulmonar"
+    },
+    "correcta": "a",
+    "explicacion": "La cianosis verdadera desaparece al presionar la piel. Causas: aumento de la concentración de hemoglobina desoxigenada en la sangre capilar (> 5 g/dl) o presencia de hemoglobina patológica (más frecuentemente metahemoglobina > 0,5 g/dl).\n\nCianosis periférica: visible solo en la piel de las partes distales del cuerpo, que generalmente está fría. Si se presenta en el lóbulo de la oreja, desaparece después de su masaje. Es el signo de desoxigenación excesiva de hemoglobina en los tejidos periféricos. Causas:\n\na) **hipotermia significativa (vasoconstricción fisiológica)**\n\nb) disminución del volumen de eyección (p. ej. shock cardiogénico, insuficiencia cardíaca avanzada, estenosis de la válvula mitral o aórtica)\n\nc) alteraciones locales del sistema arterial (p. ej. ateroesclerosis, émbolos arteriales, enfermedad de Buerger, angiopatia diabética)\n\nd) alteraciones vasomotoras (neurosis, fenómeno de Raynaud, acrocianosis)\n\ne) empeoramiento del retorno venoso (trombosis, sindrome postrombótico, flebitis superficial)\n\nf) aumento de la viscosidad de la sangre (policitemia, crioglobulinemia, gammapatías).",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-093",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "NPS y cáncer de pulmón",
+      "Oncología"
+    ],
+    "enunciado": "¿Cuál de los siguientes trabajadores tiene mayor probabilidad por su actividad laboral de desarrollar cáncer de pulmón?",
+    "opciones": {
+      "a": "Trabajador que realiza aislamientos industriales con amianto",
+      "b": "Responsable de la recolección y traslado de residuos domiciliarios",
+      "c": "Trabajador que se desempeña en un puesto de peaje",
+      "d": "Técnico de diagnóstico por imágenes que utiliza delantal plomado"
+    },
+    "correcta": "a",
+    "explicacion": "El humo del tabaco contiene mas de 40 carcinógenos y se vincula con el 85 a 90% de los casos de cáncer de pulmón. Sin embargo existen otras exposiciones que incrementan el riesgo de padecer la enfermedad entre ellas el radón, un producto de la degradación del uranio y el radio al que pueden estar expuestos los trabajadores de las minas, el **amianto** que se utiliza en la industria de la construcción y que en fumadores eleva el riesgo de cáncer de pulmón unas 50 veces. Otras exposiciones asociadas son el arsénico, cobre, plomo, zinc, hojalata, berilio entre otros.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-094",
+    "materia": [
+      "neumonologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Tromboembolia de pulmón",
+      "Diagnóstico por Imágenes"
+    ],
+    "enunciado": "Una mujer de 41 años consulta a guardia por disnea de comienzo súbito CF III-IV de algunas horas de duración. Los síntomas comenzaron en su lugar de trabajo. Registra como único antecedente de relevancia la ingesta de anticonceptivos orales. Al ingreso se presenta lúcida, taquipneica, taquicárdica (FC: 110 lpm), TA: 110/70 mm Hg con examen físico normal. La Rx de tórax es normal y el ECG muestra taquicardia sinusal y bloqueo incompleto de rama derecha. Entre los diversos diagnósticos diferenciales que presenta el caso se plantea la posibilidad de tromboembolismo de pulmón (TEP). En base a sus antecedentes y los datos del examen físico, ¿en qué categoría de riesgo de TEP ubica a la paciente y cuál de los estudios diagnósticos habitualmente empleados considera en primera instancia en este caso?",
+    "opciones": {
+      "a": "Alta probabilidad, ecocardiograma transesofágico",
+      "b": "Baja probabilidad, medición de Dimero D por método ELISA",
+      "c": "Baja probabilidad, centellograma V/Q",
+      "d": "Alta probabilidad, angiotomografia helicoidal"
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico del TEP debe combinar la sospecha clínica, los resultados del dímero D y las pruebas de imagen. El dimero D es una prueba de alta sensibilidad, pero de baja especificidad, porque su elevación también se asocia a otras situaciones clínicas como edad avanzada, infección, infarto agudo de miocardio, cáncer, embarazo o ingreso hospitalario, y también está elevado tras una cirugía.\n\nEn pacientes con **probabilidad de TEP baja o intermedia, un dímero D negativo (< 500 ng/mL), excluye el diagnóstico de TEP**.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-095",
+    "materia": [
+      "neumonologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Ventilación y ventilación mecánica",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente que estuvo internado hace dos meses en terapia intensiva, en asistencia respiratoria mecánica por traumatismo encefalocraneano, y que actualmente presenta disnea inspiratoria?",
+    "opciones": {
+      "a": "Neumotórax espontáneo",
+      "b": "Estenosis subglótica traqueal",
+      "c": "Luxación aritenoidea",
+      "d": "Parálisis recurrencial"
+    },
+    "correcta": "b",
+    "explicacion": "La intubación orotraqueal resulta una maniobra necesaria en un amplio grupo de pacientes criticos. La **estenosis traqueal** es una de las complicaciones asociadas a la asistencia respiratoria mecánica que se produce como resultado de la presión que el balón del tubo orotraqueal ejerce sobre las paredes de la tráquea. Cuando la presión del globo supera la presión capilar se produce isquemia, inflamación y posteriormente fibrosis que conduce a la estenosis traqueal con el consecuente aumento del trabajo respiratorio por aumento de la resistencia de la via aérea.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-096",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un paciente de 66 años lo consulta por presentar tos productiva matinal desde hace 3 meses aproximadamente y que se agita luego de caminar 15 minutos a paso ligero. Tiene antecedentes de tabaquismo (35 paq/año). Al examen físico se encuentra hemodinámicamente estable y la auscultación pulmonar es normal. Ante su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar tratamiento con formoterol/budesonida",
+      "b": "Iniciar tratamiento con formoterol",
+      "c": "Realizar radiografia de tórax frente y perfil y ecocardiograma",
+      "d": "Solicitar espirometria pre y posterior al broncodilatador"
+    },
+    "correcta": "d",
+    "explicacion": "Ante la presencia de algún sintoma respiratorio crónico como tos o expectoración de 3 meses, disnea o sibilancias (auscultadas o autoreportadas) tanto en fumadores como en exfumadores se recomienda realizar **espirometría pre y post broncodilatadores**.\n\nLa enfermedad pulmonar obstructiva crónica se presenta frecuentemente en pacientes tabaquistas, la exposición al humo del tabaco afecta las vías respiratorias. Cuando hay afectación de la gran via aérea se manifiestan la tos y el esputo como primeros sintomas",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-097",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "Asma"
+    ],
+    "enunciado": "Raquel de 40 años y tiene un reciente diagnóstico de asma. Hace un mes inició tratamiento con budesonida + formoterol inhalado 1 puff cada 12 hs, con buena adherencia al tratamiento. Consulta a la guardia en el día de la fecha por una disfonía de igual tiempo evolutivo (un mes). ¿Cuál es su conducta terapéutica?",
+    "opciones": {
+      "a": "Realiza interconsulta con otorrinolaringologia para eventual laringoscopia",
+      "b": "Indica realizarse los puff con cámara espaciadora y realizar buches luego de la realización de los puff de budesonide y formoterol",
+      "c": "Interpreta el cuadro como sindrome gripal e indica tratamiento sintomático",
+      "d": "Indica corticoides via oral"
+    },
+    "correcta": "b",
+    "explicacion": "Los corticoides inhalados (CI) son los fármacos de primera linea en la terapia de control en todos los grupos etarios. Altas dosis de Cl pueden asociarse con efectos adversos significativos.\n\nLos efectos adversos de los Cl pueden ser locales y/o sistémicos. Entre los locales podemos enunciar la candidiasis orofaringea, la disfonía y la tos por irritación de la vía aérea.\n\nEstos efectos secundarios pueden ser prevenidos mediante el **uso de aerocámaras y el hábito de enjuagar la boca** luego de la inhalación.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  },
+  {
+    "id": "neumo-002-098",
+    "materia": [
+      "neumonologia"
+    ],
+    "submateria": [
+      "EPOC"
+    ],
+    "enunciado": "Un médico solicita una espirometría con prueba de broncodilatadores a un paciente tabaquista de 69 años con los siguientes resultados: CVF 2,73 L (86%), VEF1 1,79 (71%), VEF1/CVF 65,6. En la prueba post broncodilatadores se observa un aumento del 12% de la CVF y un incremento del 15% del VEF1. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Defecto ventilatorio obstructivo leve con respuesta significativa a broncodilatadores.",
+      "b": "Defecto ventilatorio NO obstructivo leve (posible restricción) con respuesta NO significativa a broncodilatadores",
+      "c": "Espirometría normal con respuesta significativa a broncodilatadores",
+      "d": "Defecto ventilatorio obstructivo moderado con respuesta NO significativa a broncodilatadores"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nAsma y EPOC son dos enfermedades respiratorias obstructivas prevalentes.\n\nLa clasificación de la obstrucción (GOLD en EPOC) se hace con el VEF1 postbroncodilatador, no con el valor basal. Esto es para evitar sobrediagnóstico de severidad en pacientes que si tienen respuesta a broncodilatadores.\n\nDatos del caso clínico: VEF1 basal = 71% (esto cae en moderado). VEF1 post-BD = 15% ↑, alrededor de 82% del teórico (esto sube a leve).\n\nEntonces, el diagnóstico final se clasifica como leve, porque se toma el valor post-BD. Respuesta broncodilatadora: es significativa (>= 12% y >= 200 ml). Esto sugiere que el componente reversible es importante (lo cual orienta más a asma o EPOC con reversibilidad).\n\nRespuesta correcta \"**Defecto ventilatorio obstructivo leve con respuesta significativa a broncodilatadores**\".",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
+  }
+]
