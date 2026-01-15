@@ -1,12 +1,12 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Configuración central.
+   📚 MEbank 3.0 – Configuración central (CORREGIDA)
    - Materias oficiales
    - Subtemas por materia
    - Exámenes anteriores (meta)
    ========================================================== */
 
 /* ----------------------------------------------------------
-   📘 Materias oficiales (las que ya definiste)
+   📘 Materias oficiales
    ---------------------------------------------------------- */
 
 const SUBJECTS = [
@@ -14,7 +14,13 @@ const SUBJECTS = [
   { slug: "psiquiatria",        name: "💭 Psiquiatría" },
   { slug: "cardiologia",        name: "🫀 Cardiología" },
   { slug: "nutricion",          name: "🍏 Nutrición" },
-  { slug: "urologia",           name: "🚽 Urología" },
+  
+  // --- CAMBIO DE IDENTIDAD: NEFROLOGÍA (Era Urología) ---
+  { slug: "urologia",           name: "🚽 Nefrología" }, 
+  
+  // --- NUEVA MATERIA: UROLOGÍA (La real) ---
+  { slug: "urologia_cx",        name: "🍆 Urología" },
+
   { slug: "gastroenterologia",  name: "💩 Gastroenterología" },
   { slug: "dermatologia",       name: "🧴 Dermatología" },
   { slug: "infectologia",       name: "🦠 Infectología" },
@@ -41,10 +47,7 @@ const SUBJECTS = [
 ];
 
 /* ----------------------------------------------------------
-   🧩 Subtemas por materia (tal cual los escribiste)
-   - Los usamos para mostrar texto en la UI.
-   - Si alguna materia no está acá, después le ponemos
-     "Otras preguntas de <Materia>" como fallback.
+   🧩 Subtemas por materia
    ---------------------------------------------------------- */
 
 const SUBTEMAS = {
@@ -365,30 +368,40 @@ const SUBTEMAS = {
     "Otras preguntas de traumatología"
   ],
 
+  /* --- NEFROLOGÍA (Antes Urología) --- 
+     Mantenemos el ID 'urologia' para el legado.
+  */
   urologia: [
     "Fisiología renal",
     "Síndromes clínicos",
     "Fracaso renal agudo",
     "Insuficiencia renal crónica",
-    "Glomerulonefritis primaria",
-    "Nefritis intersticial",
+    "Glomerulonefritis primarias",
+    "Nefropatías intersticiales",
     "Tubulopatías",
-    "Riesgo cardiovascular y riñón",
-    "Infecciones urinarias",
-    "Riñón y enfermedades sistémicas",
-    "Otras preguntas de urología"
+    "Riesgo cardiovascular y enfermedad renal",
+    "Infecciones del tracto urinario",
+    "Riñón y enfermedades sistémicas"
+  ],
+
+  /* --- UROLOGÍA (La nueva y real) --- */
+  urologia_cx: [
+    "Próstata",
+    "Cáncer de riñón y otros tumores renales",
+    "Patología testicular",
+    "Urgencias urológicas y traumatismos",
+    "Urología funcional e incontinencia",
+    "Infecciones del tracto urinario",
+    "Urolitiasis",
+    "Cáncer de urotelio",
+    "Trasplante renal",
+    "Andrología, disfunción eréctil y cáncer de pene"
   ]
 };
 
 /* ----------------------------------------------------------
    🧪 Exámenes anteriores (meta)
-   - Usamos tus carpetas reales en /bancos/anteriores
-   - Si después agregás alguno más, lo sumamos acá
    ---------------------------------------------------------- */
-/* ==========================================================
-   📘 EXÁMENES ANTERIORES – Rutas exactas según tu proyecto
-   ========================================================== */
-
 const EXAMENES_META = [
   /* ---------- EXAMEN ÚNICO (oficial) ---------- */
   ...[
@@ -430,75 +443,15 @@ const EXAMENES_META = [
     file: `bancos/anteriores/uba/uba_${y}.json`,
   })),
 
-  /* ---------- Privados / Austral ---------- */
-  // 1. OFICIALES (Incluye el 2021 real)
-  ...[
-    2021,2022,2023,2024
-  ].map(y => ({
-    id: `austral_${y}`,
-    grupo: "Austral",
-    anio: y,
-    file: `bancos/anteriores/privados/austral/austral_${y}.json`,
-  })),
+  /* ---------- Privados ---------- */
+  ...[2021,2022,2023,2024].map(y => ({ id: `austral_${y}`, grupo: "Austral", anio: y, file: `bancos/anteriores/privados/austral/austral_${y}.json` })),
+  { id: "austral_2021_simulacro", grupo: "Austral", anio: "Simulacro 2021", file: "bancos/anteriores/privados/austral/austral_2021_simulacro.json" },
+  
+  ...[2015,2021].map(y => ({ id: `britanico_${y}`, grupo: "Británico", anio: y, file: `bancos/anteriores/privados/britanico/britanico_${y}.json` })),
+  { id: "britanico_2021_simulacro", grupo: "Británico", anio: "Simulacro 2021", file: "bancos/anteriores/privados/britanico/britanico_2021_simulacro.json" },
 
-  // 2. SIMULACRO (Diferenciado por el texto en 'anio')
-  {
-    id: "austral_2021_simulacro",
-    grupo: "Austral",
-    anio: "Simulacro 2021", 
-    file: "bancos/anteriores/privados/austral/austral_2021_simulacro.json",
-  },
-
-
-  /* ---------- Privados / Británico ---------- */
-  // 1. OFICIALES (Incluye el 2021 real)
-  ...[
-    2015,2021
-  ].map(y => ({
-    id: `britanico_${y}`,
-    grupo: "Británico",
-    anio: y,
-    file: `bancos/anteriores/privados/britanico/britanico_${y}.json`,
-  })),
-
-  // 2. SIMULACRO (Diferenciado por el texto en 'anio')
-  {
-    id: "britanico_2021_simulacro",
-    grupo: "Británico",
-    anio: "Simulacro 2021",
-    file: "bancos/anteriores/privados/britanico/britanico_2021_simulacro.json",
-  },
-
-  /* ---------- Privados / CEMIC ---------- */
-  {
-    id: "cemic_2015",
-    grupo: "CEMIC",
-    anio: 2015,
-    file: "bancos/anteriores/privados/cemic/cemic_2015.json",
-  },
-
-  /* ---------- Privados / Favaloro ---------- */
-  {
-    id: "favaloro_2015",
-    grupo: "Favaloro",
-    anio: 2015,
-    file: "bancos/anteriores/privados/favaloro/favaloro_2015.json",
-  },
-
-  /* ---------- Privados / FLENI ---------- */
-  {
-    id: "fleni_2015",
-    grupo: "FLENI",
-    anio: 2015,
-    file: "bancos/anteriores/privados/fleni/fleni_2015.json",
-  },
-
-  /* ---------- Privados / Italiano ---------- */
-  {
-    id: "italiano_2015",
-    grupo: "Italiano",
-    anio: 2015,
-    file: "bancos/anteriores/privados/italiano/italiano_2015.json",
-  },
+  { id: "cemic_2015", grupo: "CEMIC", anio: 2015, file: "bancos/anteriores/privados/cemic/cemic_2015.json" },
+  { id: "favaloro_2015", grupo: "Favaloro", anio: 2015, file: "bancos/anteriores/privados/favaloro/favaloro_2015.json" },
+  { id: "fleni_2015", grupo: "FLENI", anio: 2015, file: "bancos/anteriores/privados/fleni/fleni_2015.json" },
+  { id: "italiano_2015", grupo: "Italiano", anio: 2015, file: "bancos/anteriores/privados/italiano/italiano_2015.json" },
 ];
-
