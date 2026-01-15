@@ -99,24 +99,32 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR --- */
-function processQuestion(q, type, examMeta) {
+/* --- 5. PROCESADOR (Versión Inteligente) --- */
+function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. Materia (Normalización robusta)
-    if (Array.isArray(q.materia)) {
-        q.materia = q.materia.map(m => normalize(m));
+    // 1. MATERIA: Match Inteligente
+    // Tomamos lo que viene en el JSON
+    let rawMat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
+    
+    // Lo "limpiamos" (urologia_cx -> urologiacx)
+    let matNorm = normalize(rawMat);
+
+    // Buscamos en la lista de SUBJECTS oficial quién tiene ese mismo nombre limpio
+    // Esto conecta "urologiacx" (JSON) con "urologia_cx" (Config)
+    const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
+
+    if (foundSubject) {
+        // ¡Bingo! Asignamos el slug OFICIAL (con el guion bajo si lo tiene)
+        q.materia = foundSubject.slug;
     } else {
-        let mat = normalize(q.materia || "otras");
-        // Si la materia no existe en SUBJECTS, mandarla a 'otras'
-        if (!BANK.subjects.some(s => s.slug === mat)) mat = "otras";
-        q.materia = mat;
+        // Si no existe, va a otras
+        q.materia = "otras";
     }
 
-    // 2. Submateria
-    // Intentamos asignar una submateria válida basándonos en la PRIMERA materia de la lista
-    const mainMateria = Array.isArray(q.materia) ? q.materia[0] : q.materia;
+    // 2. Submateria (Misma lógica de antes)
+    const mainMateria = q.materia; // Ya tenemos la materia oficial asignada arriba
     const listaOficial = BANK.subsubjects[mainMateria] || [];
     
     let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
@@ -127,19 +135,19 @@ function processQuestion(q, type, examMeta) {
     if (match) {
         q.submateria = normalize(match);
     } else {
-        // Si no machea, asignamos al ÚLTIMO ítem de la lista (Catch-All)
         q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
     }
 
     // 3. Metadatos
     q.tipo = type;
-    if (type === "examen" && examMeta) {
-        q.examen = examMeta.id;
-        q.anio = examMeta.anio;
+    if (type === "examen" && meta) {
+        q.examen = meta.id;
+        q.anio = meta.anio;
     } else {
         q.examen = null;
     }
 }
+
 
 /* --- 6. HELPERS --- */
 function dedupeQuestionsById(list) {
