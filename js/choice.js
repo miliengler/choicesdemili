@@ -1,11 +1,17 @@
 /* ==========================================================
-   📚 MEbank 3.0 – Práctica por materia (Con Modal Stats 📊 + Reset + Nombres Lindos)
+   📚 MEbank 3.0 – Práctica por materia (FIXED: Contadores Flexibles)
    ========================================================== */
 
 let CHOICE_ORDER = localStorage.getItem("MEbank_ChoiceOrder_v1") || "az";
 let choiceOpenSlug = null; 
 let choiceSearchTerm = ""; 
 let choiceOnlyOfficial = false; 
+
+// --- 🛠️ Helper Local para igualar nombres (ej: "urologia_cx" == "urologiacx") ---
+function cleanStr(str) {
+    if (!str) return "";
+    return String(str).toLowerCase().replace(/[^a-z0-9]/g, "");
+}
 
 /* --- CÍRCULO DE PROGRESO (Lista principal) --- */
 function renderProgressCircle(percent) {
@@ -239,7 +245,7 @@ function getActionButtonsHTML(slug, stats) {
     const commonStyle = "flex:1; background:white; border:1px solid #3b82f6; color:#1d4ed8; font-weight:600;";
 
     if (stats.total === 0) {
-        return `<div style="width:100%; text-align:center; color:#94a3b8; font-size:13px; padding:10px;">⚠️ No hay preguntas oficiales en esta selección.</div>`;
+        return `<div style="width:100%; text-align:center; color:#94a3b8; font-size:13px; padding:10px;">⚠️ No hay preguntas disponibles con este filtro.</div>`;
     }
 
     let html = `
@@ -378,7 +384,6 @@ function renderMateriaExpanded(m, term, stats) {
     `;
   }).join("");
 
-  const cleanName = m.name.replace(/[^\p{L}\p{N}\s]/gu, "").trim();
   const controlsHTML = items.length ? getControlsHTML(slug, visibleSubtemas.length, 0) : '';
 
   let filaTools = `
@@ -410,10 +415,14 @@ function renderMateriaExpanded(m, term, stats) {
   `;
 }
 
-/* --- UTILS --- */
+/* --- UTILS CORREGIDOS (Para contar bien) --- */
 function getMateriaStats(slug) {
+  const slugClean = cleanStr(slug);
+
   const total = BANK.questions.filter(q => {
-      const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+      const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+      const esMat = misMaterias.some(m => cleanStr(m) === slugClean);
+      
       if (!esMat) return false;
       if (choiceOnlyOfficial && q.oficial !== true) return false;
       return true;
@@ -423,9 +432,12 @@ function getMateriaStats(slug) {
   let ok = 0, bad = 0;
   
   BANK.questions.forEach(q => {
-      const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+      const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+      const esMat = misMaterias.some(m => cleanStr(m) === slugClean);
+      
       if (!esMat) return;
       if (choiceOnlyOfficial && q.oficial !== true) return;
+      
       const reg = progMat[q.id];
       if (reg) {
           if (reg.status === "ok") ok++;
@@ -438,12 +450,35 @@ function getMateriaStats(slug) {
 }
 
 function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
+  const mClean = cleanStr(mSlug);
+  const subClean = cleanStr(subSlug);
+
   return BANK.questions.filter(q => {
-    const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+    const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+    const esMateria = misMaterias.some(m => cleanStr(m) === mClean);
+    
     if (!esMateria) return false;
     if (choiceOnlyOfficial && q.oficial !== true) return false;
-    return q.submateria === subSlug;
+    
+    // Comparación flexible también para subtemas
+    return cleanStr(q.submateria) === subClean;
   }).length;
+}
+
+function getQuestionsByMateria(mSlug, selectedSubs) {
+    const mClean = cleanStr(mSlug);
+
+    return BANK.questions.filter(q => {
+        const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+        const esMateria = misMaterias.some(m => cleanStr(m) === mClean);
+        if(!esMateria) return false;
+
+        if(!selectedSubs || selectedSubs.length === 0) return true;
+
+        // Comparamos subtemas seleccionados de forma flexible
+        const qSubClean = cleanStr(q.submateria);
+        return selectedSubs.some(sel => cleanStr(sel) === qSubClean);
+    });
 }
 
 function getMateriaNombre(slug) {
@@ -454,6 +489,7 @@ function getMateriaNombre(slug) {
 function iniciarPracticaMateria(mSlug, modo) {
   const checks = document.querySelectorAll(`input[name="subtema-${mSlug}"]:checked`);
   const seleccionados = Array.from(checks).map(ch => ch.value);
+  
   let preguntas = getQuestionsByMateria(mSlug, seleccionados.length ? seleccionados : null);
 
   if (choiceOnlyOfficial) preguntas = preguntas.filter(q => q.oficial === true);
@@ -478,20 +514,20 @@ function iniciarPracticaMateria(mSlug, modo) {
 }
 
 /* ==========================================================
-   📊 MODAL DE ESTADÍSTICAS (Actualizado con Barras)
+   📊 MODAL DE ESTADÍSTICAS (Restaurado)
    ========================================================== */
 
-// Variable temporal para guardar el slug abierto en el modal
 let currentModalSlug = null;
-let currentSubtopicSort = "original"; // original | error | acierto
+let currentSubtopicSort = "original"; 
 
 function openStatsModal(slug) {
     currentModalSlug = slug;
-    currentSubtopicSort = "original"; // Resetear orden al abrir
+    currentSubtopicSort = "original"; 
 
-    // 1. Calcular Stats Globales (Igual que antes)
+    const slugClean = cleanStr(slug);
     const questions = BANK.questions.filter(q => {
-        return Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
+        const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+        return misMaterias.some(m => cleanStr(m) === slugClean);
     });
 
     const total = questions.length;
@@ -505,7 +541,6 @@ function openStatsModal(slug) {
 
     const noResp = total - (ok + bad);
     
-    // Gráfico de Torta Global
     let pieStyle = `background: #e2e8f0;`;
     if (total > 0) {
         const degOk = (ok / total) * 360;
@@ -517,7 +552,6 @@ function openStatsModal(slug) {
         );`;
     }
 
-    // HTML Cabecera (Resumen)
     let htmlHeader = `
         <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; margin-bottom:20px;">
             <div style="width:120px; height:120px; border-radius:50%; ${pieStyle} border:4px solid white; box-shadow:0 4px 10px rgba(0,0,0,0.1);"></div>
@@ -530,14 +564,12 @@ function openStatsModal(slug) {
         </div>
     `;
 
-    // HTML Cuerpo (Botón expandible para subtemas)
     let htmlBody = `
         <div style="border-top:1px dashed #e2e8f0; padding-top:15px; margin-bottom:15px;">
             <button class="btn-small" onclick="toggleSubtopicStats()" style="width:100%; background:#f8fafc; color:#334155; display:flex; justify-content:space-between; align-items:center;">
                 <span>📊 Ver detalle por subtemas</span>
                 <span id="subtopic-arrow">▼</span>
             </button>
-            
             <div id="subtopic-container" style="display:none; margin-top:15px; animation:fadeIn 0.3s ease;">
                 <div style="display:flex; justify-content:flex-end; margin-bottom:10px;">
                     <select onchange="updateSubtopicSort(this.value)" style="font-size:12px; padding:4px; border-radius:6px; border:1px solid #cbd5e1;">
@@ -549,7 +581,6 @@ function openStatsModal(slug) {
                 <div id="subtopic-bars-list"></div>
             </div>
         </div>
-        
         <div style="margin-top:20px; text-align:center; border-top:1px dashed #e2e8f0; padding-top:15px;">
              <button class="btn-small" onclick="resetSubjectStatsFromModal('${slug}')" 
                      style="background:white; border:1px solid #fca5a5; color:#ef4444; width:100%;">
@@ -558,7 +589,6 @@ function openStatsModal(slug) {
         </div>
     `;
 
-    // Inyectar y Abrir Modal
     const modal = document.getElementById("statsModal");
     const title = document.getElementById("statsModalTitle");
     const body = document.getElementById("statsModalBody");
@@ -567,13 +597,9 @@ function openStatsModal(slug) {
         title.textContent = `Estadísticas: ${getMateriaNombre(slug)}`;
         body.innerHTML = htmlHeader + htmlBody;
         modal.style.display = "flex";
-        
-        // Pre-renderizamos la lista (aunque esté oculta) para que esté lista
         renderSubtopicBars();
     }
 }
-
-/* --- NUEVAS FUNCIONES PARA EL DESGLOSE --- */
 
 function toggleSubtopicStats() {
     const container = document.getElementById("subtopic-container");
@@ -596,19 +622,18 @@ function renderSubtopicBars() {
     const slug = currentModalSlug;
     if (!slug) return;
 
-    // 1. Obtener lista base
     const subtemasOficiales = BANK.subsubjects[slug] || ["General"];
     const progMat = PROG[slug] || {};
+    const slugClean = cleanStr(slug);
 
-    // 2. Mapear datos
     let data = subtemasOficiales.map(subName => {
-        const subSlug = normalize(subName);
+        const subClean = cleanStr(subName);
         
-        // Contar preguntas de este subtema
-        // Nota: Usamos la función existente o lógica in-line
         const questions = BANK.questions.filter(q => {
-            const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
-            return esMat && q.submateria === subSlug;
+            const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+            const esMat = misMaterias.some(m => cleanStr(m) === slugClean);
+            // Comparación flexible de subtema
+            return esMat && cleanStr(q.submateria) === subClean;
         });
 
         let ok = 0, bad = 0;
@@ -622,35 +647,20 @@ function renderSubtopicBars() {
 
         const total = questions.length;
         const respondidas = ok + bad;
-        // Evitamos división por cero
         const pctOk = respondidas > 0 ? Math.round((ok/respondidas)*100) : 0;
         const pctBad = respondidas > 0 ? Math.round((bad/respondidas)*100) : 0;
 
-        return { 
-            name: subName, 
-            total, 
-            ok, 
-            bad, 
-            respondidas, 
-            pctOk,
-            pctBad 
-        };
+        return { name: subName, total, ok, bad, respondidas, pctOk, pctBad };
     });
 
-    // 3. Filtrar subtemas vacíos (opcional, pero queda más limpio)
     data = data.filter(d => d.total > 0);
 
-    // 4. Ordenar
     if (currentSubtopicSort === "error") {
-        // Mayor porcentaje de error arriba. Si empate, más cantidad de errores.
         data.sort((a, b) => b.pctBad - a.pctBad || b.bad - a.bad);
     } else if (currentSubtopicSort === "acierto") {
-        // Mayor porcentaje de acierto arriba.
         data.sort((a, b) => b.pctOk - a.pctOk);
-    } 
-    // "original" no hace nada, mantiene el orden del map
+    }
 
-    // 5. Renderizar HTML
     const listEl = document.getElementById("subtopic-bars-list");
     if (!listEl) return;
 
@@ -660,13 +670,8 @@ function renderSubtopicBars() {
     }
 
     listEl.innerHTML = data.map(d => {
-        // Ancho de las barras (relativo al total de preguntas del subtema)
-        // O mejor: relativo al 100% de la barra visual
-        
-        // Barra compuesta: [Verde (OK)][Rojo (Bad)][Gris (Pendiente)]
         const wOk = (d.total > 0) ? (d.ok / d.total) * 100 : 0;
         const wBad = (d.total > 0) ? (d.bad / d.total) * 100 : 0;
-        
         return `
             <div style="margin-bottom:12px;">
                 <div style="display:flex; justify-content:space-between; font-size:13px; margin-bottom:4px; color:#334155;">
@@ -686,61 +691,31 @@ function renderSubtopicBars() {
     }).join("");
 }
 
-/* ==========================================================
-   🔗 VINCULACIÓN CON NOTAS (Validación Previa)
-   ========================================================== */
 function verNotasMateria(slug) {
     const savedNotes = JSON.parse(localStorage.getItem("mebank_notes") || "{}");
     const noteIds = Object.keys(savedNotes);
+    const slugClean = cleanStr(slug);
     
     const tieneNotas = BANK.questions.some(q => {
         if (!noteIds.includes(q.id)) return false;
-        const esMateria = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
-        return esMateria;
+        const misMaterias = Array.isArray(q.materia) ? q.materia : [q.materia];
+        return misMaterias.some(m => cleanStr(m) === slugClean);
     });
 
     if (!tieneNotas) {
-        const nombreMateria = getMateriaNombre(slug);
-        return alert(`Todavía no tenés notas de ${nombreMateria}.`);
+        return alert(`Todavía no tenés notas de ${getMateriaNombre(slug)}.`);
     }
 
     if (typeof renderNotasMain !== 'function') return alert("Error: Módulo de Notas no cargado.");
-
     renderNotasMain();
-
-    setTimeout(() => {
-        if (typeof openGroups !== 'undefined') {
-            openGroups[slug] = true; 
-            if (typeof updateNotasList === 'function') updateNotasList(); 
-        } else if (typeof toggleGroup === 'function') {
-            toggleGroup(slug);
-        }
-
-        const content = document.getElementById(`content-${slug}`);
-        if (content) {
-            const header = content.previousElementSibling;
-            if(header) header.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-    }, 100);
-}
-
-/* ==========================================================
-   🛠 HELPERS ADICIONALES
-   ========================================================== */
-function getPrettySubtopicName(materiaSlug, subSlug) {
-    const originales = BANK.subsubjects[materiaSlug] || [];
-    const match = originales.find(s => normalize(s) === subSlug);
-    return match || subSlug;
 }
 
 function resetSubjectStatsFromModal(slug) {
     if (!confirm("⚠️ ¿Estás seguro? Se borrará todo el progreso de esta materia.")) return;
-
     if (PROG[slug]) {
         delete PROG[slug];
         if (typeof saveProgress === 'function') saveProgress();
     }
-
     document.getElementById('statsModal').style.display = 'none';
     renderChoiceList();
 }
