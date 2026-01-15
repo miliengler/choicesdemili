@@ -581,31 +581,43 @@ function getCorrectIndex(q, totalOpciones) {
   return null;
 }
 
-// ⬇️ AQUÍ ESTÁ LA MAGIA CORREGIDA ⬇️
+/* ==========================================================
+   FUNCION BLINDADA: Obtener Nombre de Materia (Flexible)
+   Reemplaza la función getMateriaNombreForQuestion anterior con esta.
+   ========================================================== */
+
 function getMateriaNombreForQuestion(q) {
   if (!q || !q.materia) return "";
   
+  // Normalizamos a array
   const materias = Array.isArray(q.materia) ? q.materia : [q.materia];
   
-  const nombres = materias.map(slug => {
-      // 1. Buscar en BANK (Objeto global de la app)
+  // Helper para "limpiar" el código (quita guiones, espacios y pone minúsculas)
+  // Así 'urologia_cx' es igual a 'urologiacx' o 'urologia-cx'
+  const limpiar = (txt) => txt ? txt.toLowerCase().replace(/[^a-z0-9]/g, "") : "";
+
+  const nombres = materias.map(slugRaw => {
+      const slugLimpio = limpiar(slugRaw);
+
+      // 1. Buscamos en el objeto global BANK (si existe)
       if (typeof BANK !== 'undefined' && BANK.subjects) {
-          const mat = BANK.subjects.find(s => s.slug === slug);
+          const mat = BANK.subjects.find(s => limpiar(s.slug) === slugLimpio);
           if (mat) return mat.name;
       }
       
-      // 2. Buscar en SUBJECTS (Directamente desde config.js)
+      // 2. Buscamos en la constante global SUBJECTS (config.js)
       if (typeof SUBJECTS !== 'undefined') {
-          const mat = SUBJECTS.find(s => s.slug === slug);
+          const mat = SUBJECTS.find(s => limpiar(s.slug) === slugLimpio);
           if (mat) return mat.name;
       }
 
-      // 3. Fallback: Devolver el slug formateado bonito
-      return slug.charAt(0).toUpperCase() + slug.slice(1).replace("_", " ");
+      // 3. Fallback: Si no lo encuentra, lo devuelve "prolijo"
+      return slugRaw.charAt(0).toUpperCase() + slugRaw.slice(1).replace(/_/g, " ");
   });
 
   return nombres.join(" | ");
 }
+
 
 // HELPERS VISUALES (Imágenes y Sidebar)
 function renderImagenesPregunta(imgs) {
