@@ -1,5 +1,5 @@
 /* ==========================================================
-   🏠 MEbank 3.0 – Pantalla Home y Arranque
+   🏠 MEbank 3.0 – Pantalla Home, Arranque y Selección (FIXED)
    ========================================================== */
 
 // 🌙 1. LÓGICA DE MODO OSCURO
@@ -16,13 +16,19 @@ window.toggleDarkMode = function() {
     if(btn) btn.textContent = isDark ? "☀️" : "🌙";
 };
 
+// 🛠️ HELPER: Limpiador de Slugs (Para que "urologia_cx" coincida con "urologiacx")
+function cleanSlug(text) {
+    if (!text) return "";
+    return text.toLowerCase().replace(/[^a-z0-9]/g, ""); // Borra guiones, espacios y símbolos
+}
+
 // ✅ ARRANQUE DE LA APP
 async function initApp() {
   const app = document.getElementById("app");
   app.innerHTML = `
     <div style="text-align:center;margin-top:100px;">
       <div style="font-size:40px;margin-bottom:20px;">🚀</div>
-      <p style="color:#64748b;">Iniciando MEbank...</p>
+      <p style="color:var(--text-muted);">Iniciando MEbank...</p>
     </div>
   `;
 
@@ -54,27 +60,26 @@ function renderHome() {
       </button>
 
       <h1 style="margin-bottom:6px;">MEbank</h1>
-      <p style="color:#64748b; margin-bottom:25px;">
+      <p style="color:var(--text-muted); margin-bottom:25px;">
         Banco de Preguntas para Residencias
       </p>
 
       ${hechasHoy > 0 
-        ? `<div class="daily-banner" style="margin-bottom:20px; padding:8px; background:#f0fdf4; color:#166534; border-radius:8px; font-size:14px;">
+        ? `<div class="daily-banner" style="margin-bottom:20px; padding:8px; background:var(--bg-subtle); color:#166534; border:1px solid #bbf7d0; border-radius:8px; font-size:14px;">
              🔥 Hoy respondiste <b>${hechasHoy}</b> preguntas correctamente.
            </div>`
         : ''
       }
 
       <div class="menu-buttons">
-        <button class="btn-main menu-btn" onclick="goChoice()">📚 Práctica por materia</button>
+        <button class="btn-main menu-btn" onclick="goChoice()">📚 Práctica por tema</button>
         <button class="btn-main menu-btn" onclick="goExamenes()">📝 Exámenes anteriores</button>
         <button class="btn-main menu-btn" onclick="goCrearExamen()">🎯 Simulacro de examen</button>
         <button class="btn-main menu-btn" onclick="goStats()">📊 Estadísticas</button>
-        
         <button class="btn-main menu-btn" onclick="goNotas()">📚 Mi Repaso</button>
       </div>
 
-      <div style="margin-top:25px; font-size:13px; color:#94a3b8;">
+      <div style="margin-top:25px; font-size:13px; color:var(--text-muted);">
         ${cargado ? `✔ Sistema listo (${preguntas} preguntas)` : `⚠ Error de carga`}
       </div>
 
@@ -102,8 +107,6 @@ function goChoice() { if(checkLoaded()) renderChoice(); }
 function goExamenes() { if(checkLoaded()) renderExamenesMain(); }
 function goCrearExamen() { if(checkLoaded()) renderCrearExamen(); }
 function goStats() { if(checkLoaded()) renderStats(); }
-
-// Redirecciona a la nueva pantalla de repaso (definida en repaso.js)
 function goNotas() { if(checkLoaded()) renderRepasoMain(); }
 
 async function recargarBancoDesdeHome() {
@@ -111,3 +114,76 @@ async function recargarBancoDesdeHome() {
   document.getElementById("app").innerHTML = "<div style='text-align:center;margin-top:50px;'>Recargando...</div>";
   await loadAllBanks();
 }
+
+/* ==========================================================
+   📚 SELECCIÓN DE MATERIA (Agregada y Corregida)
+   ========================================================== */
+function renderChoice() {
+  const app = document.getElementById("app");
+  
+  // Usamos el helper cleanSlug para comparar
+  // Comparamos el slug del config (ej: urologia_cx) con lo que hay en el banco (ej: urologia-cx)
+  const cards = SUBJECTS.map(subj => {
+    const cantidad = BANK.questions.filter(q => {
+        const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
+        // Aquí está la magia:
+        return materiasQ.some(m => cleanSlug(m) === cleanSlug(subj.slug));
+    }).length;
+
+    return `
+      <div class="choice-card" onclick="startMateria('${subj.slug}')">
+        <div class="choice-title">${subj.name}</div>
+        <div class="choice-count">${cantidad} preguntas</div>
+      </div>
+    `;
+  }).join("");
+
+  app.innerHTML = `
+    <div class="fade">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding:0 10px;">
+        <h2 style="margin:0;">📚 Por Materia</h2>
+        <button class="btn-small" onclick="renderHome()">🏠 Volver</button>
+      </div>
+      <div class="choice-grid">
+        ${cards}
+      </div>
+    </div>
+    <style>
+      .choice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; padding-bottom: 40px; }
+      .choice-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+      .choice-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #cbd5e1; }
+      .choice-title { font-weight: 700; font-size: 15px; color: var(--text-main); margin-bottom: 5px; }
+      .choice-count { font-size: 12px; color: var(--text-muted); }
+    </style>
+  `;
+}
+
+// Función auxiliar para iniciar la materia seleccionada
+window.startMateria = function(slug) {
+    // Filtramos usando la misma lógica flexible
+    const preguntas = BANK.questions.filter(q => {
+        const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
+        return materiasQ.some(m => cleanSlug(m) === cleanSlug(slug));
+    });
+
+    if (preguntas.length === 0) {
+        alert("No hay preguntas disponibles para esta materia.");
+        return;
+    }
+
+    // Mezclar (Shuffle)
+    preguntas.sort(() => Math.random() - 0.5);
+
+    // Buscar título bonito
+    const subjObj = SUBJECTS.find(s => s.slug === slug);
+    const titulo = subjObj ? subjObj.name : slug;
+
+    // Iniciar
+    iniciarResolucion({
+        preguntas: preguntas,
+        modo: "materia",
+        titulo: titulo,
+        usarTimer: false,
+        correccionFinal: false
+    });
+};
