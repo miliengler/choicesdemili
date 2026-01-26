@@ -2128,7 +2128,7 @@
     },
     "correcta": "b",
     "explicacion": "Nota: El enunciado original parece tener un error tipográfico o de contexto, ya que pregunta por tratamiento de aneurisma pero las opciones son scores de riesgo cardiovascular. Se mantiene la respuesta marcada como correcta en el original (TIMI).",
-    "imagen": [],
+    "imagen": ["img/cardio/cardio1_96.jpg"],
     "examen": null,
     "anio": null,
     "oficial": false
@@ -2194,7 +2194,7 @@
     },
     "correcta": "d",
     "explicacion": "",
-    "imagen": [],
+    "imagen": ["img/cardio/cardio1_99.jpg"],
     "examen": null,
     "anio": null,
     "oficial": false
@@ -4434,7 +4434,7 @@
     "d": "Disminuir la mortalidad."
   },
   "correcta": "b",
-  [span_6](start_span)[span_7](start_span)[span_8](start_span)"explicacion": "En el infarto agudo de miocardio con elevación del ST, los nitratos (nitroglicerina) son útiles para el alivio sintomático del dolor y el control de la hipertensión o congestión, pero no han demostrado reducir la mortalidad ni el tamaño del infarto.[span_6](end_span)[span_7](end_span)[span_8](end_span)",
+  "explicacion": "En el infarto agudo de miocardio con elevación del ST, los nitratos (nitroglicerina) son útiles para el alivio sintomático del dolor y el control de la hipertensión o congestión, pero no han demostrado reducir la mortalidad ni el tamaño del infarto.[span_6](end_span)[span_7](end_span)[span_8](end_span)",
   "imagen": [],
   "explicacion_img": [],
   "examen": null,
@@ -4574,7 +4574,7 @@
     "d": "Infarto inferior agudo"
   },
   "correcta": "a",
-  [span_24](start_span)[span_25](start_span)"explicacion": "En la gammagrafía de perfusión, un defecto de captación ('zona fría') que aparece durante el esfuerzo y se normaliza en reposo (redistribución) indica isquemia reversible (tejido viable pero hipoperfundido).[span_24](end_span)[span_25](end_span)",
+  "explicacion": "En la gammagrafía de perfusión, un defecto de captación ('zona fría') que aparece durante el esfuerzo y se normaliza en reposo (redistribución) indica isquemia reversible (tejido viable pero hipoperfundido).[span_24](end_span)[span_25](end_span)",
   "imagen": [],
   "explicacion_img": [],
   "examen": null,
@@ -4699,7 +4699,7 @@
   "correcta": "d",
   "explicacion": "La elevación del segmento ST de forma convexa hacia arriba (en 'lomo de delfín') es la imagen de lesión subepicárdica característica del Infarto Agudo de Miocardio en etapa aguda. La pericarditis suele dar una elevación cóncava.",
   "imagen": [
-    "img/explicaciones/cardio_null_p_102.jpg"
+    "img/cardio/cardio_null_p_102.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -4748,7 +4748,7 @@
   "correcta": "d",
   "explicacion": "El ECG muestra supradesnivel del segmento ST en derivaciones precordiales de V1 a V6, y en las laterales altas DI y aVL. Esto corresponde a un IAM con elevación del ST de localización anterior extensa.",
   "imagen": [
-    "img/explicaciones/cardio_null_p_104.jpg"
+    "img/cardio/cardio_null_p_104.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -5356,7 +5356,7 @@
   "correcta": "d",
   "explicacion": "El trazado muestra una Fibrilación Ventricular (ritmo caótico, ondulante). En un paciente sin pulso presenciado en el ámbito hospitalario/monitorizado, el tratamiento de elección es la desfibrilación inmediata.",
   "imagen": [
-    "img/explicaciones/cardio_null_p_129.jpg"
+    "img/cardio/cardio_null_p_129.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -5655,7 +5655,7 @@
   "correcta": "d",
   "explicacion": "El trazado muestra una alternancia regular de un latido sinusal normal seguido de una extrasístole ventricular (QRS ancho y prematuro). Esta secuencia 1:1 se denomina bigeminismo ventricular.",
   "imagen": [
-    "img/preguntas/cardio_null_p_141.jpg"
+    "img/cardio/cardio_null_p_141.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -5753,7 +5753,7 @@
   "correcta": "d",
   "explicacion": "Calculando la frecuencia cardíaca mediante el intervalo RR: 1200 mseg (o 30 cuadraditos pequeños de 0.04s). FC = 60000 / 1200 = 50 lpm. O 1500 / 30 = 50 lpm.",
   "imagen": [
-    "img/preguntas/cardio_null_p_145.jpg"
+    "img/cardio/cardio_null_p_145.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -5805,7 +5805,7 @@
   "correcta": "d",
   "explicacion": "El paciente tiene un IAM con elevación del ST (SCACEST). Dado que el centro de hemodinamia está a 200 km (tiempo de traslado > 120 min), la estrategia de reperfusión indicada es la fibrinólisis (trombólisis) inmediata en el lugar de origen, seguida de traslado.",
   "imagen": [
-    "img/preguntas/cardio_null_p_147.jpg"
+    "img/cardio/cardio_null_p_147.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -5997,7 +5997,7 @@
   "correcta": "d",
   "explicacion": "La pericarditis causa dolor torácico de tipo pleurítico (aumenta con la inspiración) y puede irradiar al cuello o trapecio. La duración de 5 días aleja el diagnóstico de IAM. El laboratorio muestra signos de inflamación (leucocitosis, PCR elevada, VSG elevada). El ECG (aunque no lo vemos, la descripción del caso y la opción correcta apuntan a ello) suele mostrar elevación difusa y cóncava del ST (en guirnalda) y descenso del PR.",
   "imagen": [
-    "img/preguntas/cardio_null_p_155.jpg"
+    "img/cardio/cardio_null_p_155.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
@@ -6164,7 +6164,7 @@
   "correcta": "b",
   "explicacion": "El cuadro clínico es típico de pericarditis aguda: dolor pleurítico que mejora al inclinarse hacia adelante, antecedente viral reciente (gastroenteritis). El ECG (mencionado en el enunciado) en pericarditis muestra elevación difusa y cóncava del ST. El término 'Miopericarditis' se usa cuando hay cierta afectación miocárdica (que podría explicar palidez/sudoración o cambios ECG), pero la clínica de dolor pericárdico es dominante.",
   "imagen": [
-    "img/preguntas/cardio_null_p_162.jpg"
+    "img/cardio/cardio_null_p_162.jpg"
   ],
   "explicacion_img": [],
   "examen": null,
