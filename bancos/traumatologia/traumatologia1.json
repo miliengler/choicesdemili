@@ -1,479 +1,596 @@
 [
-{
-  "id": "traumatologia_001_001",
-  "materia": ["traumatologia"],
-  "submateria": ["Fracturas"],
-  "enunciado": "Paciente de 80 años es traído a la guardia con dolor, rotación externa y acortamiento del miembro inferior. ¿Cuál es el diagnóstico?",
+  {
+  "id": "traumatologia_001",
+  "materia": [
+    "traumatologia"
+  ],
+  "submateria": [
+    "Fracturas",
+    "Miembro inferior"
+  ],
+  "enunciado": "Paciente de 80 años es traído a la guardia con dolor, rotación externa y acortamiento del miembro inferior\n ¿Cuál es el diagnóstico?",
   "opciones": {
-    "1": "Luxación de cadera",
-    "2": "Fractura de cadera",
-    "3": "Luxación de rodilla",
-    "4": "Fractura de fémur"
+    "a": "Luxación de cadera",
+    "b": "Fractura de cadera",
+    "c": "Luxación de rodilla",
+    "d": "Fractura de fémur"
   },
-  "correcta": "2",
-  "explicacion": "En la fractura de cadera (fracturas intracapsulares de fémur proximal) se presenta dolor inguinal, la pierna acortada, en aducción y rotación externa, sufriendo dolor a la movilización de la cadera.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "b",
+  "explicacion": "**Fractura de cadera** (fracturas intracapsulares de fémur proximal).\n\nLos signos clínicos clásicos son:\n- Dolor inguinal.\n- Pierna acortada.\n- Miembro en aducción y rotación externa.\n- Dolor a la movilización de la cadera.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_002",
-  "materia": ["traumatologia"],
-  "submateria": ["Tumores"],
+  "id": "traumatologia_002",
+  "materia": [
+    "traumatologia"
+  ],
+  "submateria": [
+    "Tumores músculo-esqueléticos"
+  ],
   "enunciado": "El tumor óseo de Células Gigantes es más frecuente en:",
   "opciones": {
-    "1": "Mujeres entre 20-40 años",
-    "2": "Hombres entre 40-60 años",
-    "3": "Hombres entre 20-40 años",
-    "4": "Mujeres entre 40-60 años"
+    "a": "Mujeres entre 20-40 años",
+    "b": "Hombres entre 40-60 años",
+    "c": "Hombres entre 20-40 años",
+    "d": "Mujeres entre 40-60 años"
   },
-  "correcta": "1",
-  "explicacion": "El Osteoclastoma o tumor de células gigantes es un tumor agresivo. Se presenta más en mujeres, entre 20-40 años, en epífisis cerradas, sobre todo en la rodilla. Puede crecer durante el embarazo. Radiológicamente produce una zona radiolucente expansiva, multicavitada, que adelgaza la cortical, como «un charco en la arena».",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "El **Osteoclastoma o Tumor de Células Gigantes** es un tumor agresivo con presencia de tejido muy vascular.\n\nCaracterísticas:\n- Se presenta más en **mujeres**, entre 20-40 años.\n- Localización en epífisis cerradas, sobre todo en la rodilla.\n- Radiológicamente produce una zona radiolucente expansiva, multicavitada ('un charco en la arena').",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_003",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
+  "id": "traumatologia_003",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Neonatología"
+  ],
   "enunciado": "¿Cuál es la sospecha en un paciente con maniobras de Barlow y Ortolani positivas?",
   "opciones": {
-    "1": "Displasia congenita de cadera",
-    "2": "Coxa vara",
-    "3": "Necrosis ósea avascular",
-    "4": "Epifisiolisis de cadera"
+    "a": "Displasia congenita de cadera",
+    "b": "Coxa vara",
+    "c": "Necrosis ósea avascular",
+    "d": "Epifisiolisis de cadera"
   },
-  "correcta": "1",
-  "explicacion": "Para el diagnóstico clínico de la luxación congénita de caderas se realizan las maniobras de Ortolani y Barlow, estas son positivas hasta los 3 meses. Al disminuir la laxitud capsular son difíciles de realizar. A partir del 4to mes los signos clínicos a pesquisar son la limitación en la abducción, la asimetría de pliegues y la discrepancia de miembros.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "Para el diagnóstico clínico de la **Luxación Congénita de Caderas** (Displasia) se realizan las maniobras de Ortolani y Barlow.\n\n- Son positivas hasta los 3 meses.\n- **Ortolani**: abducción y elevación para reducir la cadera.\n- **Barlow**: aducción y presión posterior para luxar la cadera.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_004",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
+  "id": "traumatologia_004",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
   "enunciado": "Un paciente de 2 años es traído a la consulta por \"caminar chueco hacia adentro con una pierna\". Al examen físico se observan pies morfológicamente normales, con desviación interna del pie derecho. El pediatra sospecha una rotación tibial interna. ¿Cuál es el parámetro clínico más adecuado para el diagnóstico?",
   "opciones": {
-    "1": "Ángulo muslo-pie",
-    "2": "Ángulo de rotación femoral",
-    "3": "Distancia intermaleolar",
-    "4": "Línea bisectriz del talón"
+    "a": "Ángulo muslo-pie",
+    "b": "Ángulo de rotación femoral",
+    "c": "Distancia intermaleolar",
+    "d": "Línea bisectriz del talón"
   },
-  "correcta": "1",
-  "explicacion": "La torsión tibial interna se presenta como una marcha con las rótulas hacia el frente y los pies hacia adentro. Más frecuentemente unilateral. En decúbito prono con flexión de 90 grados de la rodilla y el tobillo se establece el ángulo entre los ejes del muslo y el pie \"Angulo muslo pie\", que normalmente es entre 10 a 30 grados, si es menor hay rotación interna de la tibia.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "La **torsión tibial interna** se presenta como una marcha con las rótulas hacia el frente y los pies hacia adentro.\n\nDiagnóstico:\n- Se establece mediante el **Ángulo muslo-pie**.\n- En decúbito prono con rodilla a 90 grados, el ángulo normal es entre 10 a 30 grados (externo).\n- Si es menor, indica rotación interna de la tibia.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_005",
-  "materia": ["traumatologia"],
-  "submateria": ["Pie y tobillo"],
+  "id": "traumatologia_005",
+  "materia": [
+    "traumatologia"
+  ],
+  "submateria": [
+    "Miembro inferior"
+  ],
   "enunciado": "Un paciente concurre a consulta por guardia luego de realizar una práctica deportiva refiriendo dolor en la región de la pantorrilla. Lo describe como una patada o puntapié. Sospecha lesión de:",
   "opciones": {
-    "1": "Tendon Rotuliano",
-    "2": "Ligamento deltoideo del tobillo",
-    "3": "Tendon de Aquiles",
-    "4": "Ligamento cruzado anterior"
+    "a": "Tendon Rotuliano",
+    "b": "Ligamento deltoideo del tobillo",
+    "c": "Tendon de Aquiles",
+    "d": "Ligamento cruzado anterior"
   },
-  "correcta": "3",
-  "explicacion": "La rotura del tendón de Aquiles se suele producir durante la actividad deportiva por una arrancada súbita. Es típico en deportes como pádel y tenis, en varones que practican deporte los fines de semana (entre 30 y 50 años). El paciente suele referir la sensación de «una pedrada» en el gemelo. A la palpación presentará un signo del hachazo donde está la interrupción del tendón. El signo de Thompson indica la existencia de rotura.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "La **Rotura del Tendón de Aquiles** es típica en deportes de arranque súbito (pádel, tenis).\n\nClínica:\n- Sensación de **\"una pedrada\"** o patada en el gemelo.\n- Signo del hachazo a la palpación.\n- Signo de Thompson positivo (falta de flexión plantar al comprimir el gemelo).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_006",
-  "materia": ["traumatologia"],
-  "submateria": ["Infecciones"],
+  "id": "traumatologia_006",
+  "materia": [
+    "traumatologia",
+    "pediatria",
+    "reumatologia"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Patología infecciosa infantil",
+    "Artritis infecciosa"
+  ],
   "enunciado": "Recibe en guardia a una niña de 4 años traída por sus padres porque presenta claudicación de la marcha y registros febriles de 39°C cada 6 hs desde hace 24 hs. Al examen físico presenta impotencia funcional de cadera derecha con dolor a la movilización activa y pasiva. Solicita ecografía de la región donde se visualiza derrame articular con ecos internos en dicha articulación. ¿Cuál es la conducta inicial?",
   "opciones": {
-    "1": "Indica antibióticoterapia via oral",
-    "2": "Observa evolución según control ecográfico",
-    "3": "Indica antibioticoterapia endovenosa",
-    "4": "Indica exploración quirúrgica"
+    "a": "Indica antibióticoterapia via oral",
+    "b": "Observa evolución según control ecográfico",
+    "c": "Indica antibioticoterapia endovenosa",
+    "d": "Indica exploración quirúrgica"
   },
-  "correcta": "4",
-  "explicacion": "Se llama artritis séptica de cadera a la infección bacteriana de la articulación de la cadera. El tratamiento es urgente. Es necesario el drenaje de la cadera: descomprimir el espacio articular, diagnóstico, instaurar el tratamiento antibiótico y evitar la lesión articular secundaria al compromiso vascular. En caso de artritis séptica de cadera y hombro no es suficiente la aspiración articular, es necesario el tratamiento quirúrgico (artrotomía).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "d",
+  "explicacion": "Se trata de una **Artritis Séptica de Cadera** (urgencia médica).\n\nTratamiento:\n- Es necesario el **drenaje quirúrgico** (artrotomía) para descomprimir el espacio articular.\n- Permite diagnóstico microbiológico y previene lesión articular y vascular (necrosis).\n- Tras la punción/drenaje se inicia antibiótico empírico (habitualmente cubre S. aureus).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_007",
-  "materia": ["traumatologia"],
-  "submateria": ["Tumores"],
+  "id": "traumatologia_007",
+  "materia": [
+    "traumatologia",
+    "oncologia"
+  ],
+  "submateria": [
+    "Tumores músculo-esqueléticos",
+    "Otras preguntas de oncología"
+  ],
   "enunciado": "Paciente de catorce años que comienza con dolor en rodilla derecha. Refiere antecedente de traumatismo. La madre le administró analgésicos pero el dolor persistió y se intensificó, despertándolo por la noche. Al mes aparece tumefacción en rodilla derecha, sin signos de flogosis, persistiendo el dolor con limitación de movilidad. Se realiza radiografía de miembro inferior que revela imagen conocida como \"en sol naciente\". ¿Cuál es la sospecha clínica?",
   "opciones": {
-    "1": "Hematoma",
-    "2": "Osteomielitis",
-    "3": "Esguince",
-    "4": "Osteosarcoma"
+    "a": "Hematoma",
+    "b": "Osteomielitis",
+    "c": "Esguince",
+    "d": "Osteosarcoma"
   },
-  "correcta": "4",
-  "explicacion": "El osteosarcoma es el tumor óseo primario maligno más frecuente, con un pico en la adolescencia. Se presenta con dolor localizado y progresivo, muchas veces asociado a traumatismo previo. La localización más frecuente es fémur distal, seguida de tibia proximal. En la radiografía se observa una lesión lítica con reacción perióstica en \"sol naciente\".",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "d",
+  "explicacion": "El **Osteosarcoma** es el tumor óseo primario maligno más frecuente (pico en adolescencia).\n\nCaracterísticas:\n- Dolor progresivo, localizado, a menudo nocturno.\n- Localización metafisaria (fémur distal/tibia proximal).\n- Imagen radiológica lítica con reacción perióstica en **\"sol naciente\"** o Triángulo de Codman.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_008",
-  "materia": ["traumatologia"],
-  "submateria": ["Fracturas"],
+  "id": "traumatologia_008",
+  "materia": [
+    "traumatologia",
+    "urgencias"
+  ],
+  "submateria": [
+    "Fracturas",
+    "Paciente politraumatizado"
+  ],
   "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 50 años que mientras estaba trabajando en una obra sufrió una lesión de miembro inferior por aplastamiento de una viga? En el examen físico presenta gran hematoma e intenso dolor y usted diagnostica síndrome compartimental.",
   "opciones": {
-    "1": "Administrar manitol para reducir edema",
-    "2": "Realizar drenaje del hematoma y vendaje compresivo",
-    "3": "Adoptar conducta expectante y administrar analgésicos",
-    "4": "Realizar fasciotomia de urgencia"
+    "a": "Administrar manitol para reducir edema",
+    "b": "Realizar drenaje del hematoma y vendaje compresivo",
+    "c": "Adoptar conducta expectante y administrar analgésicos",
+    "d": "Realizar fasciotomia de urgencia"
   },
-  "correcta": "4",
-  "explicacion": "El síndrome compartimental de miembros se produce por la acumulación de sangre dentro de las fascias musculares, generalmente secundario a un traumatismo por aplastamiento. Se presenta con dolor, palidez, ausencia de pulsos, induración e impotencia funcional. Su resolución es quirúrgica debiendo realizarse fasciotomía buscando conservar la vascularización del miembro afectado.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "d",
+  "explicacion": "El **Síndrome Compartimental** se produce por aumento de presión en las fascias musculares (común en aplastamientos).\n\nTratamiento:\n- Resolución **quirúrgica urgente**.\n- Se debe realizar **fasciotomía** para descomprimir y conservar la vascularización del miembro.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_009",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
+  "id": "traumatologia_009",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Patología infecciosa infantil"
+  ],
   "enunciado": "Un niño de 5 años de edad es llevado por sus padres a la consulta por presentar dolor en cadera izquierda. Como antecedente, padeció catarro de vías aéreas superiores una semana atrás. Está afebril y en buen estado general. Se realiza radiografía de ambas caderas sin encontrar alteraciones. La ecografía revela un ensanchamiento articular. El diagnóstico más probable es:",
   "opciones": {
-    "1": "Enfermedad de Legg Calvė Perthes",
-    "2": "Artritis Reumatoidea Juvenil",
-    "3": "Sinovitis transitoria",
-    "4": "Artritis Séptica"
+    "a": "Enfermedad de Legg Calvė Perthes",
+    "b": "Artritis Reumatoidea Juvenil",
+    "c": "Sinovitis transitoria",
+    "d": "Artritis Séptica"
   },
-  "correcta": "3",
-  "explicacion": "La sinovitis transitoria de cadera (STC) es un cuadro inflamatorio inespecífico autolimitado en la cadera infantil, causa más frecuente de dolor de cadera en menores de 10 años. Es más frecuente en varones (4-10 años). La etiología es desconocida, postulándose causas infecciosas como enfermedades víricas respiratorias previas.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "La **Sinovitis Transitoria de Cadera** es la causa más frecuente de dolor de cadera en niños (3-10 años).\n\nCaracterísticas:\n- Cuadro inflamatorio inespecífico autolimitado.\n- Frecuente antecedente de **infección viral** (catarro) previa.\n- Buen estado general y ausencia de fiebre alta (diferencia con artritis séptica).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_010",
-  "materia": ["traumatologia"],
-  "submateria": ["Tumores"],
+  "id": "traumatologia_010",
+  "materia": [
+    "traumatologia"
+  ],
+  "submateria": [
+    "Tumores músculo-esqueléticos"
+  ],
   "enunciado": "Una niña de 10 años presenta dolor de comienzo repentino en el extremo proximal de la tibia derecha. El dolor es intenso y aumenta en reposo, no se alivia con el sueño y si con ibuprofeno. En la radiografía simple se observa una imagen radiotransparente oval de 1,5 cm en la metáfisis tibial, rodeada por hueso esclerótico. ¿Cuál de los siguientes es el diagnóstico más probable?",
   "opciones": {
-    "1": "Sarcoma de Ewing",
-    "2": "Osteosarcoma",
-    "3": "Osteoma osteoide",
-    "4": "Osteomielitis"
+    "a": "Sarcoma de Ewing",
+    "b": "Osteosarcoma",
+    "c": "Osteoma osteoide",
+    "d": "Osteomielitis"
   },
-  "correcta": "3",
-  "explicacion": "El osteoma osteoide es una lesión osteoblástica benigna que afecta el fémur proximal o la tibia. Causa dolor de tipo inflamatorio, nocturno y cede con AINES. La imagen típica en la radiografía es la de \"nidus\", imagen radiotransparente con bordes escleróticos como zona reactiva.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "El **Osteoma Osteoide** es una lesión osteoblástica benigna.\n\nClínica:\n- **Dolor nocturno** característico.\n- Cede espectacularmente con **AINEs** (ibuprofeno/aspirina).\n- Radiografía: imagen de **\"nidus\"** (radiolúcida con bordes escleróticos).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_011",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Un niño de 7 años, sin antecedentes patológicos ni traumatológicos, es traído a la consulta por cojera y dolor en el muslo izquierdo de dos semanas de evolución, sin fiebre ni cuadro catarral previo. En el examen físico se encuentra afebril, con buen aspecto general, sin exantemas ni lesiones cutáneas y en la exploración de la extremidad inferior izquierda presenta marcada limitación a la abducción de la cadera izquierda secundaria al dolor, sin signos inflamatorios ni deformidad. Se realizó radiografía de caderas (ver imagen). ¿Cuál es el diagnóstico más probable?",
+  "id": "traumatologia_011",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Un niño de 7 años, sin antecedentes patológicos ni traumatológicos, es traído a la consulta por cojera y dolor en el muslo izquierdo de dos semanas de evolución, sin fiebre ni cuadro catarral previo. En el examen físico se encuentra afebril, con buen aspecto general, sin exantemas ni lesiones cutáneas y en la exploración de la extremidad inferior izquierda presenta marcada limitación a la abducción de la cadera izquierda secundaria al dolor, sin signos inflamatorios ni deformidad. Se realizó radiografía de caderas. ¿Cuál es el diagnóstico más probable? VER IMAGEN",
   "opciones": {
-    "1": "Artritis séptica",
-    "2": "Epifisiolisis de la cabeza femoral",
-    "3": "Sinovitis transitoria de cadera",
-    "4": "Enfermedad de Legg-Perthes-Calvé"
+    "a": "Artritis séptica.",
+    "b": "Epifisiolisis de la cabeza femoral.",
+    "c": "Sinovitis transitoria de cadera.",
+    "d": "Enfermedad de Legg-Perthes-Calvé."
   },
-  "correcta": "4",
-  "explicacion": "La enfermedad de Legg-Calvé-Perthes consiste en una necrosis aséptica de la cabeza del fémur. Se denomina coxa plana por la pérdida de esfericidad de la cabeza. Los signos son claudicación y dolor (inconstante, puede referirse a rodilla). El estado general es excelente, sin fiebre. En la radiología se aprecia osteopenia, esclerosis, fragmentación o fractura subcondral (signo de la uña de Waldenström).",
-  "imagenes": ["img/traumatologia/traumatologia_001_011.jpg"],
-  "explicacion_img": [],
+  "correcta": "d",
+  "explicacion": "La **Enfermedad de Legg-Calvé-Perthes** (necrosis aséptica de la cabeza femoral).\n\nCaracterísticas:\n- Edad típica 4-8 años.\n- Cojera discreta (claudicación) y dolor referido (muslo/rodilla).\n- Limitación de la abducción y rotación interna.\n- Radiología: Osteopenia, esclerosis, **fragmentación** o signo de la uña de Waldenström.",
+  "imagen": [
+    "img/traumatologia/traumato_011.jpg"
+  ],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_012",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
+  "id": "traumatologia_012",
+  "materia": [
+    "pediatria",
+    "traumatologia"
+  ],
+  "submateria": [
+    "Neonatología",
+    "Miembro inferior"
+  ],
   "enunciado": "Raúl es un recién nacido de término, de peso adecuado, parto vaginal cefálico. Durante el embarazo su madre presentó oligoamnios. El examen físico es normal, las maniobras de Ortolani y Barlow son negativas. No existen antecedentes familiares de patología de cadera. ¿Cuál es la conducta adecuada, con respecto al screening de cadera?",
   "opciones": {
-    "1": "Ecografia a las 6 semanas de vida",
-    "2": "Interconsulta con ortopedia pediátrica",
-    "3": "Control clinico",
-    "4": "Ecografia dentro de las 2 semanas del nacimiento"
+    "a": "Ecografia a las 6 semanas de vida",
+    "b": "Interconsulta con ortopedia pediátrica",
+    "c": "Control clinico",
+    "d": "Ecografia dentro de las 2 semanas del nacimiento"
   },
-  "correcta": "1",
-  "explicacion": "La luxación congénita de cadera debe evaluarse con maniobras de Barlow y Ortolani. Si son positivas, se hace ecografía. Además, en niños con factores de riesgo como presentación podálica, antecedentes familiares, pie bot, torticolis, metatarso aducto u **oligoamnios**, se debe solicitar ecografía de caderas (habitualmente a partir de la 4ª-6ª semana).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "Screening de **Luxación Congénita de Cadera**:\n\n- Se realiza ecografía ante maniobras positivas o presencia de **factores de riesgo** (como el **oligoamnios**).\n- El momento ideal es alrededor de las **6 semanas** (mes y medio), para evitar falsos positivos por laxitud neonatal.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_013",
-  "materia": ["traumatologia"],
-  "submateria": ["Fracturas"],
-  "enunciado": "Un varón de 56 años es traído a la guardia por fractura en la pierna derecha por caída. Al examen físico se encuentra hemodinámicamente estable y el miembro presenta herida de 14 cm aproximadamente con exposición de partes blandas y de la tibia (Gustilo III). Es posible realizar la cobertura del hueso expuesto con los tejidos locales (Gustilo IIIA). Los pulsos periféricos y sensibilidad están conservados. ¿Cuál es la conducta más adecuada?",
+  "id": "traumatologia_013",
+  "materia": [
+    "traumatologia",
+    "urgencias"
+  ],
+  "submateria": [
+    "Fracturas",
+    "Paciente politraumatizado"
+  ],
+  "enunciado": "Un varón de 56 años es traído a la guardia por fractura en la pierna derecha. Refiere que se cayó por la escalera de su casa. Al examen físico se encuentra hemodinámicamente estable y el miembro inferior derecho presenta herida de 14 cm aproximadamente con exposición de partes blandas y de la tibia. Es posible realizar la cobertura del hueso expuesto con los tejidos locales. Los pulsos periféricos se encuentran conservados hasta pedios así como la sensibilidad distal. ¿Cuál es la conducta más adecuada?",
   "opciones": {
-    "1": "Indicar profilaxis antibiótica y vacunación antitetánica y estabilizar la fractura con tutores externos.",
-    "2": "Indicar profilaxis antibiótica y vacunación antitetánica, realizar limpieza quirúrgica y estabilizar la fractura con tutores externos.",
-    "3": "Realizar reducción y estabilización de la fractura con tutores externos y clavos endomedulares",
-    "4": "Realizar la amputación infrapatelar"
+    "a": "Indicar profilaxis antibiótica y vacunación antitetánica y estabilizar la fractura con tutores externos.",
+    "b": "Indicar profilaxis antibiótica y vacunación antitetánica, realizar limpieza quirúrgica y estabilizar la fractura con tutores externos.",
+    "c": "Realizar reducción y estabilización de la fractura con tutores externos y clavos endomedulares",
+    "d": "Realizar la amputación infrapatelar"
   },
-  "correcta": "2",
-  "explicacion": "En la fractura expuesta Gustilo IIIA, el tratamiento incluye profilaxis antibiótica inmediata, antitetánica y limpieza mecánica y quirúrgica (Friedrich) consistente en escindir tejidos contaminados/desvitalizados. En las tipo III se utilizan fijadores externos para estabilizar la fractura.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "b",
+  "explicacion": "Fractura expuesta **Gustilo IIIA** (Herida > 10cm, cobertura posible, gran contaminación).\n\nTratamiento:\n- Profilaxis antibiótica y antitetánica inmediata.\n- **Limpieza quirúrgica (Friedrich)**: escisión de tejidos desvitalizados (fundamental).\n- Estabilización con **fijadores externos** en fracturas grado III.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_014",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Consultan los padres de Carlos de 4 años porque desde hace 24 horas renguea y le duele el miembro inferior derecho. No ha tenido fiebre. Examen físico: T 36.5°C, limitación a la movilidad de la cadera derecha sin flogosis. Radiografía normal, ecografía demuestra escasa cantidad de líquido. ¿Cuál es la conducta más adecuada?",
+  "id": "traumatologia_014",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Consultan los padres de Carlos de 4 años de edad porque desde hace 24 horas notan que renguea al caminar, y le duele el miembro inferior derecho al caminar. Refieren que el dolor parece haber aumentado en las últimas horas. No ha tenido fiebre, ni otros síntomas. No refieren antecedentes patológicos de importancia y ha recibido todas las vacunas del calendario oficial. Examen físico: niña eutrófica, peso y talla en percentilo 50 para edad y sexo. Temperatura axilar 36,5 grados. No se observan lesiones en la piel. Se evidencia limitación a la movilidad de la cadera derecha, con resistencia a los movimientos pasivos. No hay signos de flogosis. Resto del examen sin particularidades. Usted solicita: radiografía de caderas que fue normal y ecografía que demuestra escasa cantidad de líquido en la articulación de la cadera derecha. ¿Cuáles de las siguientes conductas son las más adecuadas?",
   "opciones": {
-    "1": "Indicar analgesia y reposo",
-    "2": "Solicitar punción de cadera para cultivo y fisicoquimico",
-    "3": "Solicitar hemocultivos, hemograma y PCR",
-    "4": "Solicitar resonancia magnética de caderas"
+    "a": "Indicar analgesia y reposo",
+    "b": "Solicitar punción de cadera para cultivo y fisicoquimico",
+    "c": "Solicitar hemocultivos, hemograma y PCR",
+    "d": "Solicitar resonancia magnética de caderas"
   },
-  "correcta": "1",
-  "explicacion": "El niño presenta una sinovitis transitoria de cadera (STC), causa más frecuente de artritis inflamatoria en pediatría (3-10 años). Se presenta sin fiebre ni afectación del estado general, con cojera de aparición brusca. Es autolimitada; el dolor mejora con el reposo y AINEs.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "**Sinovitis Transitoria de Cadera** (causa más frecuente de artritis inflamatoria en pediatría).\n\n- Etiología desconocida, autolimitada.\n- Clínica: cojera brusca, dolor inguinal, limitación de rotación interna.\n- Ausencia de fiebre y buen estado general.\n- Tratamiento: **Reposo** y analgesia. Mejora en 48-72 hs.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_015",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Usted está de guardia y concurre un padre con su hija de dos años porque no puede movilizar su brazo derecho y lo mantiene en flexión con su antebrazo en pronación. El episodio se produjo cuando al cruzar la calle lo hizo corriendo y tironeado de dicho brazo (prono doloroso). ¿Cuál es el mejor tratamiento?",
+  "id": "traumatologia_015",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro superior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Usted está de guardia y concurre un padre con su hija de dos años porque se no puede movilizar su brazo derecho y lo mantiene en flexión con su antebrazo en pronación. El padre niega traumatismos y que lo único llamativo es que el episodio se produjo cuando al cruzar la calle lo hizo corriendo y tironeado de dicho brazo. Al examen físico presenta una leve flexión en codo derecho con pronación del antebrazo. No presenta inflamación ni puntos dolorosos. Señale cuál de los siguientes es el mejor tratamiento para esta niña",
   "opciones": {
-    "1": "Derivación al cirujano ortopédico",
-    "2": "Colocación de una férula posterior",
-    "3": "Reducción con presión de la cabeza del radio",
-    "4": "Tratamiento conservador"
+    "a": "Derivación al cirujano ortopédico",
+    "b": "Colocación de una férula posterior",
+    "c": "Reducción con presión de la cabeza del radio",
+    "d": "Tratamiento conservador"
   },
-  "correcta": "3",
-  "explicacion": "El prono doloroso es una subluxación del radio que se desplaza de su posición por tracción axial. El tratamiento consiste en la reducción (supinación y flexión, o pronación forzada) con presión en la cabeza del radio.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "**Prono doloroso** (subluxación de la cabeza del radio).\n\n- Producido por tracción longitudinal.\n- El niño mantiene el brazo pegado al cuerpo en pronación.\n- Tratamiento: **Reducción** (presión en cabeza del radio + supinación/flexión).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_016",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Consulta José de 16 años, quién juega al fútbol, por dolor exquisito sobre la tuberosidad anterior de la tibia. Al examen físico presenta leve aumento de la tuberosidad. Sospechando Enfermedad de Osgood Schlatter, solicita radiografía. ¿Qué hallazgo radiológico esperaría encontrar?",
+  "id": "traumatologia_016",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Consulta José de 16 años, quién juega al fútbol en un club del barrio, por dolor exquisito sobre la tuberosidad anterior de la tibia. Al examen físico presenta leve aumento de la tuberosidad. Sospechando Enfermedad de Osgood Schlatter, solicita radiografía ¿Qué hallazgo radiológico esperaría encontrar?",
   "opciones": {
-    "1": "Fractura rotuliana",
-    "2": "Radiografia normal",
-    "3": "Calcificación del tendón rotuliano",
-    "4": "Fractura del platillo tibial anterior"
+    "a": "Fractura rotuliana",
+    "b": "Radiografia normal",
+    "c": "Calcificación del tendón rotuliano",
+    "d": "Fractura del platillo tibial anterior"
   },
-  "correcta": "3",
-  "explicacion": "La enfermedad de Osgood Schlatter es una osteocondrosis de la tuberosidad tibial anterior. La radiografía puede ser normal o mostrar fragmentación/irregularidad (descrita a veces como calcificación intratendinosa) o daño de la espina/tuberosidad tibial.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "**Enfermedad de Osgood-Schlatter** (apofisitis tibial anterior).\n\n- Típica en adolescentes deportistas.\n- Dolor y tumefacción en la tuberosidad tibial anterior.\n- Radiografía: Puede ser normal o mostrar daño/fragmentación de la espina tibial o **calcificación** (osículos) en el tendón.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_017",
-  "materia": ["traumatologia"],
-  "submateria": ["Rodilla"],
-  "enunciado": "Concurre un paciente de 48 años con dolor de rodilla izquierda de dos semanas. Al examen físico se palpa una tumoración dolorosa y caliente, de consistencia duroelástica en la región posterior de la rodilla izquierda. ¿Cuál es el diagnóstico correcto?",
+  "id": "traumatologia_017",
+  "materia": [
+    "traumatologia"
+  ],
+  "submateria": [
+    "Miembro inferior"
+  ],
+  "enunciado": "Concurre al consultorio un paciente de 48 años que comenzó con dolor de la rodilla izquierda hace dos semanas. Si bien siempre realizó actividad física, durante la cuarentena estuvo bastante sedentario y retomó entrenamiento funcional hace 1 mes. No tomó ningún analgésico porque prefirió venir a visitarlo a usted para ver qué piensa. Al examen físico se palpa una tumoración dolorosa y caliente, de consistencia duroelástica en la región posterior de la rodilla izquierda. ¿Cuál es el diagnóstico correcto?",
   "opciones": {
-    "1": "Trombosis venosa profunda",
-    "2": "Enfermedad de Osgood-Schlatter",
-    "3": "Quiste de Baker complicado",
-    "4": "Sindrome miofascial del gemelo"
+    "a": "Trombosis venosa profunda",
+    "b": "Enfermedad de Osgood-Schlatter",
+    "c": "Quiste de Baker complicado",
+    "d": "Sindrome miofascial del gemelo"
   },
-  "correcta": "3",
-  "explicacion": "En la cara posterior de la rodilla destaca el quiste de Baker. Se trata de un quiste que suele aparecer entre el gemelo medial y el semimembranoso. En ocasiones se rompe espontáneamente o se complica, simulando una trombosis venosa profunda (pseudotrombosis).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "**Quiste de Baker** (poplíteo).\n\n- Se localiza en la cara posterior de la rodilla (entre gemelo medial y semimembranoso).\n- Si se rompe, simula una trombosis venosa profunda (pseudotromboflebitis) con dolor e inflamación.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_018",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Una paciente de 15 meses es traída porque tiene \"las piernas chuecas\". Al examen físico se observa una incurvación simétrica de los miembros inferiores con convexidad externa (genu varo). Su punto más extremo se encuentra a nivel de las rodillas. La marcha es simétrica y el crecimiento normal. ¿Cuál es la conducta más adecuada?",
+  "id": "traumatologia_018",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Una paciente de 15 meses es traída a la consulta por sus padres quienes se encuentran preocupados porque la niña tiene \"las piernas chuecas\". No refieren antecedentes familiares. Al examen físico se observa una incurvación simétrica de los miembros inferiores con convexidad externa. Su punto más extremo se encuentra a nivel de las rodillas. El resto del examen físico es normal. La marcha es simétrica. El crecimiento en peso y talla de la niña es normal. ¿Cuál es la conducta más adecuada?",
   "opciones": {
-    "1": "Interconsulta con traumatologia",
-    "2": "Interconsulta con kinesiologia",
-    "3": "Conducta expectante y tranquilizar a la familia",
-    "4": "Radiografia de miembros inferiores frente y perfil"
+    "a": "Interconsulta con traumatologia",
+    "b": "Interconsulta con kinesiologia",
+    "c": "Conducta expectante y tranquilizar a la familia.",
+    "d": "Radiografia de miembros inferiores frente y perfil"
   },
-  "correcta": "3",
-  "explicacion": "El niño, cuando empieza a andar, tiene fisiológicamente las rodillas en varo, bilateral y leve. Sobre los 2 años las tiene rectas y luego valgo. Ante este tipo de situaciones (genu varo fisiológico en niño de 15 meses) se debe explicar, tranquilizar a los padres y tomar una conducta inicial expectante.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "**Genu Varo Fisiológico**.\n\n- Los niños presentan varo fisiológico de rodillas al empezar a andar.\n- Se corrige espontáneamente hacia los 2 años.\n- Conducta: **Explicar, tranquilizar y expectante**.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_019",
-  "materia": ["traumatologia"],
-  "submateria": ["Infecciones"],
-  "enunciado": "Recibe en guardia a Belina de 4 años con claudicación y fiebre de 39°C. Ecografía muestra derrame articular con ecos internos en cadera derecha. ¿Cuál es la conducta inicial?",
+  "id": "traumatologia_019",
+  "materia": [
+    "traumatologia",
+    "pediatria",
+    "reumatologia"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Patología infecciosa infantil",
+    "Artritis infecciosa"
+  ],
+  "enunciado": "Recibe en guardia a Belina de 4 años acompañada por sus padres que consulta porque presenta claudicación de la marcha y registros febriles de 39°C cada 6 hs desde hace 24 hs. Al examen físico presenta impotencia funcional de cadera derecha con dolor a la movilización activa y pasiva. Solicita ecografía de la región donde se visualiza derrame articular con ecos internos en dicha articulación. ¿Cuál es la conducta inicial?",
   "opciones": {
-    "1": "Indica antibiótico intraarticular",
-    "2": "Indica exploración quirúrgica",
-    "3": "Indica artrocentesis",
-    "4": "Indica RMN para valorar extensión"
+    "a": "Indica antibiótico intraarticular.",
+    "b": "Indica exploración quirúrgica.",
+    "c": "Indica artrocentesis.",
+    "d": "Indica RMN para valorar extensión."
   },
-  "correcta": "2",
-  "explicacion": "El tratamiento de la artritis séptica de cadera es siempre urgente. Es necesario el drenaje de la cadera para descomprimir el espacio articular. En cadera y hombro no es suficiente la aspiración, es necesario el tratamiento quirúrgico (artrotomía).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "b",
+  "explicacion": "**Artritis Séptica**.\n\n- Infección bacteriana del espacio articular.\n- Diagnóstico precoz y tratamiento urgente para evitar daño articular.\n- Ecografía con derrame confirma sospecha.\n- Tratamiento: **Drenaje quirúrgico** (artrotomía) + Antibióticos sistémicos.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_020",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
+  "id": "traumatologia_020",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Neonatología"
+  ],
   "enunciado": "¿A qué niños solicitaría ecografía para rastreo de la displasia evolutiva de cadera (DEC)?",
   "opciones": {
-    "1": "Todos los niños que tienen maniobra de Ortolani positiva hasta el año de edad",
-    "2": "Todos los niños hasta los seis meses de edad",
-    "3": "Niños que tienen alguna sospecha clinica luego de los 3 meses",
-    "4": "Niños con factores de riesgo hasta los 2 meses de edad"
+    "a": "Todos los niños que tienen maniobra de Ortolani positiva hasta el año de edad",
+    "b": "Todos los niños hasta los seis meses de edad",
+    "c": "Niños que tienen alguna sospecha clinica luego de los 3 meses",
+    "d": "Niños con factores de riesgo hasta los 2 meses de edad"
   },
-  "correcta": "2",
-  "explicacion": "La ecografía es el método de elección para evaluar la cadera en los primeros meses de vida (generalmente hasta los 4-6 meses, antes de la osificación del núcleo femoral). Se indica ante maniobras positivas o presencia de factores de riesgo. La opción seleccionada en el examen sugiere el uso del método en el rango de edad donde es útil (hasta los 6 meses), aunque las guías recomiendan su uso selectivo (riesgo/clínica positiva).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "d",
+  "explicacion": "El rastreo con Ecografía de Cadera se indica en:\n\n- **Factores de riesgo** (podálica, antecedentes, etc.).\n- **Maniobras positivas** (Ortolani/Barlow).\n- La ventana es hasta los 4-6 meses (cuando osifica el núcleo), siendo ideal alrededor del **segundo mes** (6 semanas).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_021",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Una madre trae a su hija de 2 meses (primogénita, cesárea por embarazo prolongado). ¿Sobre qué otros factores de riesgo para displasia de cadera debería indagar?",
+  "id": "traumatologia_021",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Neonatología"
+  ],
+  "enunciado": "Una madre trae a su hija de 2 meses a la consulta de control del niño sano. Refiere que es su primogénita y que nación por cesárea debido a un embarazo prolongado. Con estos antecedentes. Ud piensa que debería descartar una displasia de cadera. ¿Sobre qué otros factores de riesgo debería indagar?",
   "opciones": {
-    "1": "Presentación cefálica, pie bot, historia familiar de displasia de cadera",
-    "2": "Historia familiar de displasia de cadera, deformidades en la columna y torticolis",
-    "3": "Presentación podálica, deformidades en los pies, historia familiar de displasia de cadera",
-    "4": "Presentación cefálica, deformidades en la columna, torticolis muscular congénito"
+    "a": "Presentación cefálica, pie bot, historia familiar de displasia de cadera.",
+    "b": "Historia familiar de displasia de cadera, deformidades en la columna y torticolis.",
+    "c": "Presentación podálica, deformidades en los pies, historia familiar de displasia de cadera.",
+    "d": "Presentación cefálica, deformidades en la columna, torticolis muscular congénito."
   },
-  "correcta": "3",
-  "explicacion": "Entre los factores de riesgo de la Displasia del Desarrollo de la Cadera (DDC) están: presentación de nalgas (podálica), ser primogénito, ser mujer, la historia familiar (genética) y el oligohidramnios (asociado a deformidades de los pies como metatarso aducto).",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "c",
+  "explicacion": "Factores de riesgo principales para **DDC**:\n- **Presentación podálica** (de nalgas).\n- **Historia familiar**.\n- Sexo femenino.\n- Primogénito.\n- Oligoamnios.\n- Asociaciones: Tortícolis, **deformidades de los pies**.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_022",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Una niña de 5 días de vida presenta pie en dorsiflexión, eversión del retropié y antepie en abducción. ¿Cuál es su diagnóstico presuntivo?",
+  "id": "traumatologia_022",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Una niña de 5 días de vida es traída a la consulta por su madre preocupada porque le nota un pie deforme. Al examen físico evidencia pie en dorsiflexión, eversión del retropié, antepie en abducción. ¿Cuál es su diagnóstico presuntivo?",
   "opciones": {
-    "1": "Calcaneo Valgo",
-    "2": "Pie equinovaro",
-    "3": "Metatarso Aducto",
-    "4": "Pie plano"
+    "a": "Calcaneo Valgo",
+    "b": "Pie equinovaro",
+    "c": "Metatarso Aducto",
+    "d": "Pie plano"
   },
-  "correcta": "1",
-  "explicacion": "El pie calcáneo valgo es una deformación congénita frecuente (pie 'toca la espinilla'). Se caracteriza por dorsiflexión y eversión. Suele corregirse espontáneamente.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "**Pie Calcáneo Valgo**.\n\n- Deformidad congénita frecuente.\n- El pie está en **dorsiflexión** y **eversión** (valgo).\n- Suele corregirse espontáneamente al pararse.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_023",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "La maniobra de Ortolani para diagnosticar la inestabilidad de cadera consiste en:",
+  "id": "traumatologia_023",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Neonatología"
+  ],
+  "enunciado": "La maniobra de Ortolani para diagnosticar la epifisiolisis de cadera, consiste en:",
   "opciones": {
-    "1": "Aducción y abducción suavemente con la cadera flexionada para detectar luxación o reducción",
-    "2": "Presión directa sobre el eje longitudinal del fémur mientras se mantiene la cadera en abducción",
-    "3": "Flexión de caderas y rodillas, y aducción de caderas se empuja hacia atrás intentando luxar la cadera",
-    "4": "Presión directa sobre el eje longitudinal del fémur mientras se mantiene la cadera en aducción"
+    "a": "Aducción y abducción suavemente con la cadera flexionada para detectar luxación o reducción de la cadera",
+    "b": "Presión directa sobre el eje longitudinal del fémur mientras se mantiene la cadera en abducción",
+    "c": "Flexión de caderas y rodillas, y aducción de caderas se empuja hacia atrás intentando luxar la cadera; si se observa desplazamiento posterior, la cadera es luxable",
+    "d": "Presión directa sobre el eje longitudinal del fémur mientras se mantiene la cadera en aducción"
   },
-  "correcta": "1",
-  "explicacion": "En la prueba de Ortolani, se abduce la cadera (se separa) mientras se empuja la cabeza femoral hacia delante (trocánter mayor) intentando reducir una posible luxación. Si se nota un 'clunk', la cadera se ha reducido.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "a",
+  "explicacion": "**Maniobra de Ortolani**.\n\n- Objetivo: Reducir una cadera luxada.\n- Técnica: Flexión de cadera y **abducción** suave empujando el trocánter mayor hacia delante.\n- Signo positivo: Sensación de \"clunk\" (reducción).",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
 },
 {
-  "id": "traumatologia_001_024",
-  "materia": ["traumatologia"],
-  "submateria": ["Ortopedia infantil"],
-  "enunciado": "Un niño de 15 meses tiene las piernas arqueadas (genu varo). En la radiografía se observa ángulo metafisodiafisiario de 9º y fisis proximal de tibia normal. ¿Cuál es el diagnóstico presuntivo?",
+  "id": "traumatologia_024",
+  "materia": [
+    "traumatologia",
+    "pediatria"
+  ],
+  "submateria": [
+    "Miembro inferior",
+    "Otras preguntas de pediatría"
+  ],
+  "enunciado": "Un niño de 15 meses concurre al centro de salud con su madre. La mujer refiere que el niño tiene las piernas arqueadas. Al examen físico se observa genu varo. En la radiografía de miembros inferiores se observa ángulo metafisodiafisiario de 9º y fisis proximal de tibia normal. ¿Cuál es el diagnóstico presuntivo?",
   "opciones": {
-    "1": "Enfermedad de Blount",
-    "2": "Genu varo fisiológico",
-    "3": "Torsión femoral externa",
-    "4": "Torsión tibial interna"
+    "a": "Enfermedad de Blount",
+    "b": "Genu varo fisiológico",
+    "c": "Torsión femoral externa",
+    "d": "Torsión tibial interna"
   },
-  "correcta": "2",
-  "explicacion": "Los niños entre 1 y 2 años pasan por una etapa de varo fisiológico que se corrige espontáneamente. Se sospecha patología (como Blount) si el ángulo es mayor a 15 grados o persiste después de los 2 años. Con 9 grados y fisis normal, es fisiológico.",
-  "imagenes": [],
-  "explicacion_img": [],
+  "correcta": "b",
+  "explicacion": "**Genu Varo Fisiológico**.\n\n- Común entre 1 y 2 años.\n- Ángulo metafisodiafisario < 11° (aquí 9°).\n- Fisis normal.\n- Se corrige espontáneamente.",
+  "imagen": [],
   "examen": null,
   "anio": null,
   "oficial": false,
