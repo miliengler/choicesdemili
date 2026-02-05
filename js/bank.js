@@ -58,9 +58,12 @@ async function loadAllBanks() {
   });
 
   // B) Exámenes
+  /* TEMPORALMENTE PAUSADO PARA TESTEAR MATERIAS
   if (typeof EXAMENES_META !== 'undefined') {
     EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
   }
+  */
+
 
   // C) Fetch
   const promises = urls.map(item => 
