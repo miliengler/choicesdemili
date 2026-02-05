@@ -115,48 +115,7 @@ async function recargarBancoDesdeHome() {
   await loadAllBanks();
 }
 
-/* ==========================================================
-   📚 SELECCIÓN DE MATERIA (Agregada y Corregida)
-   ========================================================== */
-function renderChoice() {
-  const app = document.getElementById("app");
-  
-  // Usamos el helper cleanSlug para comparar
-  // Comparamos el slug del config (ej: urologia_cx) con lo que hay en el banco (ej: urologia-cx)
-  const cards = SUBJECTS.map(subj => {
-    const cantidad = BANK.questions.filter(q => {
-        const materiasQ = Array.isArray(q.materia) ? q.materia : [q.materia];
-        // Aquí está la magia:
-        return materiasQ.some(m => cleanSlug(m) === cleanSlug(subj.slug));
-    }).length;
 
-    return `
-      <div class="choice-card" onclick="startMateria('${subj.slug}')">
-        <div class="choice-title">${subj.name}</div>
-        <div class="choice-count">${cantidad} preguntas</div>
-      </div>
-    `;
-  }).join("");
-
-  app.innerHTML = `
-    <div class="fade">
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; padding:0 10px;">
-        <h2 style="margin:0;">📚 Por Materia</h2>
-        <button class="btn-small" onclick="renderHome()">🏠 Volver</button>
-      </div>
-      <div class="choice-grid">
-        ${cards}
-      </div>
-    </div>
-    <style>
-      .choice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; padding-bottom: 40px; }
-      .choice-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; text-align: center; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-      .choice-card:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-color: #cbd5e1; }
-      .choice-title { font-weight: 700; font-size: 15px; color: var(--text-main); margin-bottom: 5px; }
-      .choice-count { font-size: 12px; color: var(--text-muted); }
-    </style>
-  `;
-}
 
 // Función auxiliar para iniciar la materia seleccionada
 window.startMateria = function(slug) {
