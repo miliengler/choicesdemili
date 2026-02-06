@@ -1,1 +1,1610 @@
-[]
+[
+  {
+  "id": "urgencias_001_001",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "Varón de dieciséis años, sin antecedentes de traumatismos previos. Comienza súbitamente con disnea y dolor torácico. Al examen físico se detecta tiraje y disminución de los ruidos respiratorios. Solicita Radiografía de Tórax. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Hernia diafragmática",
+    "b": "Atelectasia",
+    "c": "Neumotórax espontáneo",
+    "d": "Neumonía adquirida de la comunidad"
+  },
+  "correcta": "c",
+  "explicacion": "El **neumotórax espontáneo primario** se presenta en el adolescentes, sin patología pulmonar de base y generalmente resulta de la rotura de una bulla subpleural.\n\nEs un cuadro súbito de dolor torácico, disnea, insuficiencia respiratoria e incluso hipotensión arterial.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_002",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "Graciela de 57 años es traída a la guardia por haber sufrido una caída desde una escalera. Al examen físico se encuentra hemodinámicamente estable y presenta dolor abdominal localizado en el hipocondrio izquierdo sin signos de irritación peritoneal. Se realiza ecografía abdominal hallándose un hematoma esplénico subcapsular con parénquima y vasos hiliares indemnes. ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Realizar tomografía computada con contraste endovenoso",
+    "b": "Realizar control hemodinámico y seguimiento por tomografía y/o ecografía.",
+    "c": "Realizar esplenectomía de urgencia.",
+    "d": "Realizar drenaje percutáneo del hematoma esplénico."
+  },
+  "correcta": "b",
+  "explicacion": "El **bazo** es el órgano intraabdominal que con mayor frecuencia se lesiona en los traumatismos abdominales cerrados.\n\nSe pueden ver desde contusiones hasta estallido con rotura de los vasos del hilio.\n\nEn las contusiones se puede realizar tratamiento conservador (control hemodinámico y seguimiento por tomografía y/o ecografía), y cuando hay sangrado activo o lesiones de más entidad, se realizará una laparotomía con esplenectomía.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_003",
+  "materia": [
+    "urgencias",
+    "neumonologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Neumonía",
+    "Radiografía"
+  ],
+  "enunciado": "¿Cómo describiría la siguiente imagen radiológica?",
+  "opciones": {
+    "a": "Condensación del lóbulo medio derecho",
+    "b": "Condensación del lóbulo superior derecho",
+    "c": "Derrame pleural derecho tabicado",
+    "d": "Atelectasia del lóbulo superior derecho"
+  },
+  "correcta": "b",
+  "explicacion": "Se observa en la imagen una opacidad localizada en campo pulmonar superior delimitada por la cisura menor con broncograma aéreo, hallazgos compatibles con **consolidación**.\n\nLa consolidación se debe a la ocupación del espacio aéreo con un material denso como un exudado inflamatorio en el caso de las neumonías, un trasudado en el caso de la insuficiencia cardíaca, sangre en el caso de la hemorragia alveolar, células neoplásicas en algunas formas de carcinoma pulmonar, etc",
+  "imagenes": [
+    "img/urgencias/urgencias1_003.jpg"
+  ],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_004",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "En un herido de bala cuyo trayecto perforó el mediastino de lado a lado, y la Rx. presenta neumotórax y neumomediastino leve: ¿Qué estudio diagnóstico indica como imprescindible?",
+  "opciones": {
+    "a": "Esofagograma",
+    "b": "TC de tórax",
+    "c": "Broncofibroscopia para confirmar perforación de tráquea y/o grandes bronquios",
+    "d": "Punción pleural"
+  },
+  "correcta": "c",
+  "explicacion": "La indicación de **broncofibroscopia** en este caso para descartar lesión de bronquios o tráquea está fundamentada en la presencia de neumotórax y neumomediastino en la radiografía de ingreso de este paciente.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_005",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "EPOC"
+  ],
+  "enunciado": "Un varón de 73 años con antecedentes de enfermedad pulmonar obstructiva crónica severa es traído a la guardia por deterioro del estado general. Se encuentra obnubilado, con 40 respiraciones por minuto y signos de hipoperfusión. Los gases en sangre muestran pH de 7,30, pC02 de 45, PaO2 de 50, bicarbonato de 21 y saturación de 77% respirando con máscara al 35%. ¿Cuál es la conducta más adecuada en este caso?",
+  "opciones": {
+    "a": "Disminuir la fracción inspirada de oxígeno.",
+    "b": "Repetir la muestra de gases",
+    "c": "Indicar bicarbonato de sodio en bajas dosis.",
+    "d": "Indicar ventilación mecánica."
+  },
+  "correcta": "d",
+  "explicacion": "La reagudización de la **Enfermedad Pulmonar Obstructiva Crónica (EPOC)** debe sospecharse ante un paciente fumador de más de 40 años que acude a urgencias por empeoramiento de su disnea basal.\n\nEn la exploración física encontraremos taquipnea, cianosis, auscultación variable en la que suelen predominar los estertores y sibilancias difusas en ambos campos pulmonares y disminución del murmullo vesicular, y aumento de sus síntomas, particularmente de la tos, la disnea y la cantidad y purulencia del esputo.\n\nLas **infecciones** son la causa más frecuente de las agudizaciones.\n\nEn cuanto al tratamiento ten en cuenta que debes ocuparte de los siguientes aspectos: **Oxigenación del paciente**: debemos mantener la saturación por encima del 88-92%, evitando flujos de oxigeno demasiado altos que favorezcan la retención de CO2.\n\nLa administración se realiza habitualmente con mascarilla tipo Venturi o cánula nasal.\n\nLos pacientes con acidosis respiratoria moderada (pH 7,20- 7,34) se beneficiarán de la **VMNI**.\n\nCuando el pH se sitúa por debajo de 7,20, los pacientes habitualmente tienen bajo nivel de consciencia y pueden precisar **IOT y ventilación mecánica invasiva**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_006",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "¿Cuál de los siguientes signos pueden hacer sospechar una lesión traumática de esófago?",
+  "opciones": {
+    "a": "Neumotórax laminar y fractura costal derecha",
+    "b": "Desviación contralateral del mediastino",
+    "c": "Ensanchamiento de mediastino",
+    "d": "Neumotórax sin fracturas costales"
+  },
+  "correcta": "d",
+  "explicacion": "Las **perforaciones torácicas traumáticas o no de esófago** se presentan con dolor que puede ser dorsal o retroperitoneal, disfagia u odinofagia, enfisema subcutáneo, en la radiografía puede evidenciarse neumomediastino y/o neumotórax, **no se evidencian fracturas costales asociadas**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_007",
+  "materia": [
+    "urgencias",
+    "cirugiageneral",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general",
+    "Ecografía"
+  ],
+  "enunciado": "En la evaluación inicial de un paciente con trauma abdominal, ¿qué permite diagnosticar la ecografía?",
+  "opciones": {
+    "a": "Líquido libre en cavidad peritoneal",
+    "b": "Lesión de víscera hueca",
+    "c": "Lesión de órgano sólido",
+    "d": "Aire libre en la cavidad peritoneal"
+  },
+  "correcta": "a",
+  "explicacion": "**C (Circulation)**. Control de hemorragias y estado circulatorio.\n\nEl **shock** es una alteración del sistema circulatorio que produce una inadecuada perfusión de órganos y oxigenación de tejidos.\n\nEl shock en un paciente politraumatizado es hipovolémico hasta que se demuestre lo contrario.\n\nEl primer paso en su manejo es reconocer su presencia.\n\nPara ello, realizaremos una exploración precisa del estado hemodinámico del paciente buscando signos de shock.\n\nEl segundo paso es identificar la causa probable del estado de shock.\n\nEn el paciente traumatizado el shock se clasificará en hipovolémico-hemorrágico (el más frecuente) y no hemorrágico.\n\nEn el shock hemorrágico debemos fijarnos los siguientes objetivos para contener el sangrado sin olvidarnos de que la primera medida será la reposición de líquidos (cristaloides hemoderivados) para la recuperación circulatoria:\n- Buscar sangrado externo.\n- Explorar las cuatro cavidades: tórax, abdomen, pelvis y músculo esquelético: para localizar el punto de sangrado se realiza, especialmente en pacientes hemodinámicamente inestables, el **eco-FAST**, que permite valorar la presencia de **líquido libre**, en el espacio pericárdico (taponamiento) y en el abdomen (se evalúa espacio de Morrison, espacio espleno renal y pelvis) lo que orienta el diagnóstico y la actitud a seguir.\n\nTambién se solicita una radiografía de tórax portátil (a pie de cama) para descartar neumotórax o derrame pleural.\n\nSe puede realizar tomografía, pero solo en aquellos pacientes que al momento del ingreso se encuentren hemodinámicamente estables.\n\nUna vez descartado el sangrado en las localizaciones anteriores, hay que buscar la fractura de pelvis como la causa del shock mediante inspección externa, exploración física y radiografía de pelvis.\n\nEn el caso de una herida abierta en el abdomen se debe realizar una laparotomía de urgencia, ya que las hemorragias abdominales son una urgencia absoluta.\n\nSi existen heridas en la pared abdominal se debe realizar con urgencia una TC abdominal y una exploración quirúrgica.\n\nSi existen datos de compromiso vital, como inestabilidad hemodinámica, se debe realizar un eco-fast para buscar líquido libre (sangre); no se debe esperar al resultado de la TC para realizar laparotomía exploradora de urgencia.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_008",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "Un paciente ingresa a la guardia luego de un accidente en la vía pública. Presenta disnea clase funcional IV y se encuentra taquicárdico, hipotenso, con cianosis periférica. Al examen físico se observa ingurgitación yugular con abombamiento del hemitórax izquierdo, auscultación con disminución de las vibraciones vocales y timpanismo a la percusión del mismo hemitórax. ¿Cuál es la conducta inicial más adecuada?",
+  "opciones": {
+    "a": "Colocación de vía central yugular o subclavia",
+    "b": "Avenamiento pleural de urgencia",
+    "c": "Radiografía de tórax con portátil en la guardia",
+    "d": "Punción de hemitórax izquierdo con catéter de grueso calibre (p. ej., abocath 14) en segundo espacio intercostal linea hemiclavicular"
+  },
+  "correcta": "d",
+  "explicacion": "El **neumotórax** se define como la presencia de aire en la cavidad pleural donde se pierde la presión negativa, lo que produce el colapso pulmonar.\n\nEl neumotórax se presenta con una triada clásica: disminución o ausencia de vibraciones vocales + timpanismo + ausencia o disminución del murmullo vesicular.\n\nEn el caso del **neumotórax hipertensivo** se agregan: signos de insuficiencia circulatoria (cianosis, taquicardia, e hipotensión) además ingurgitación yugular y desviación contralateral de tráquea y laringe.\n\nEste constituye un cuadro grave con riesgo para el paciente.\n\nLa primer indicación en el drenaje con **catéter grueso** a nivel del segundo espacio intercostal línea hemiclavicular, para disminuir la presión positiva en la pleura y mejorar los síntomas circulatorios hasta el avenamiento del tórax.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_009",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "Un joven de 28 años es traído a la guardia por el servicio de urgencias por sufrir un accidente de moto y presentar trauma cerrado de tórax. Al examen físico se encuentra lúcido, tensión arterial 80-50 mmHg, frecuencia cardíaca de 125 latidos por minuto, frecuencia respiratoria de 38 rpm y se constata ausencia de ruidos respiratorios, ingurgitación yugular y timpanismo en el hemitórax derecho. ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Indicar una radiografía de tórax de urgencia.",
+    "b": "Realizar una videotoracoscopia.",
+    "c": "Solicitar ecografía pleural.",
+    "d": "Realizar punción torácica de urgencia."
+  },
+  "correcta": "d",
+  "explicacion": "Estamos ante un **neumotórax hipertensivo**: la persona presenta signos de insuficiencia circulatoria (taquicardia, e hipotensión), ausencia de ruidos respiratorios, ingurgitación yugular y timpanismo del hemitórax derecho.\n\nEste constituye un cuadro grave con riesgo para el paciente.\n\nPara su tratamiento administraremos oxígeno suplementario, drenaje con catéter grueso a nivel del segundo espacio intercostal línea hemiclavicular, para disminuir la presión positiva en la pleura y mejorar los síntomas circulatorios hasta el avenamiento del tórax, que se realiza con tubo de tórax cuando el neumotórax ocupa más del 30% del hemitórax.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_010",
+  "materia": [
+    "urgencias",
+    "hematologia"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Terapia transfusional"
+  ],
+  "enunciado": "Un paciente de 32 años ingresa a la guardia a causa de un accidente automovilístico. Al ingreso presenta TA: 70/40 mm de Hg y sangrado activo secundario a fractura de fémur. La esposa asegura que el grupo y factor RH del paciente es A+. Ante la necesidad de indicar una transfusión, ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Transfundir de inmediato sangre grupo A, factor RH +",
+    "b": "Transfundir de inmediato sangre grupo AB, factor RH +",
+    "c": "Confirmar grupo y factor mediante determinación y luego transfundir",
+    "d": "Transfundir de inmediato sangre Grupo O, factor RH"
+  },
+  "correcta": "d",
+  "explicacion": "El **shock hemorrágico** es una situación crítica que amenaza la vida del paciente y debe ser tratada en forma inmediata.\n\nLa administración de concentrados de hematíes y en casos seleccionados concentrado de plaquetas y plasma fresco congelado pueden salvar la vida del paciente.\n\nCuando en emergencias se dice 'transfundir sangre grupo O Rh-', se refiere a: **concentrado de glóbulos rojos (CGR) del grupo O Rh**, que no incluye plasma completo ni sangre total.\n\nEl plasma ha sido removido o minimizado para evitar que sus anticuerpos circulantes (anti-A y anti-B) causen hemólisis en el receptor.\n\nLa sangre tipo **O, Rh negativo** es la única opción segura universal para transfusión de glóbulos rojos en situaciones de emergencia sin tipificación confirmada.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_011",
+  "materia": [
+    "urgencias",
+    "neurologia"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Otras preguntas de neurología"
+  ],
+  "enunciado": "Sofía, de 32 años, es trasladada a la sala de urgencias luego de una caída desde 6 metros de altura. Ingresa inconsciente con salida de líquido sanguinolento por el conducto auditivo izquierdo. Retira los miembros cuando se le aplican estímulos dolorosos y presenta apertura ocular ante estímulos dolorosos. Genera sonidos ininteligibles, con pupilas reactivas y simétricas. ¿Cuál es la clasificación de la escala de Glasgow?",
+  "opciones": {
+    "a": "14",
+    "b": "8",
+    "c": "10",
+    "d": "5"
+  },
+  "correcta": "b",
+  "explicacion": "La lesión traumática de encéfalo es una lesión frecuente y prevenible.\n\nLos signos y síntomas varían según la gravedad del traumatismo.\n\nPara poder evaluar la gravedad se utiliza la **escala de coma de Glasgow** en la que se evalúa la apertura ocular, la respuesta verbal y la respuesta motora.\n\nEsta escala se encuentra puntuada del 3 al 15 (siendo 15 un examen neurológico normal).\n\nPuntuación GCS = 8 (O:2, V:2, M:4)",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_012",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Síndromes abdominales"
+  ],
+  "enunciado": "José ingresa a la sala de emergencias luego de haber padecido un accidente automovilístico. El paciente se desplazaba como conductor utilizando cinturón de seguridad. Ingresa pálido, sudoroso, con marca cutánea en bandolera por el cinturón de seguridad. Tensión arterial sistólica de 80 mm Hg, frecuencia cardíaca de 130 latidos por minuto y excitación psicomotriz. Luego de una correcta resucitación hídrica, el paciente continúa con tendencia a la hipotensión. ¿Cuál es la conducta a seguir?",
+  "opciones": {
+    "a": "Realizar TAC de tórax y abdomen y laparotomía",
+    "b": "Indicar ringer, expansores y sangre",
+    "c": "Realizar ECO FAST y si es positivo = laparotomía",
+    "d": "Iniciar drogas vasoactivas, realizar angioTC."
+  },
+  "correcta": "c",
+  "explicacion": "**Trauma abdominal cerrado + inestabilidad hemodinámica + eco-fast positivo = Laparotomía urgente.**",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_013",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "En la valoración inicial del paciente politraumatizado es prioritario asegurar la permeabilidad de la vía respiratoria. ¿Cuál es la principal indicación de la cricotiroideotomía?",
+  "opciones": {
+    "a": "Shock hemorrágico.",
+    "b": "Edema agudo de pulmón.",
+    "c": "Obstrucción de la vía aérea.",
+    "d": "Enfisema pulmonar."
+  },
+  "correcta": "c",
+  "explicacion": "ABCD en el paciente politraumatizado:\n\nA: Vía aérea permeable y control de la columna cervical.\n\nLa causa más frecuente de obstrucción de la vía aérea es la disminución del nivel de consciencia: en todo paciente con una puntuación en la escala de coma de Glasgow igual o inferior a 8 habrá que proteger la vía aérea mediante intubación orotraqueal (IOT).\n\nLa **cricotiroidotomía de emergencia** es la realización urgente de una abertura en la membrana cricotiroidea para establecer una vía aérea.\n\nLa indicación principal es la **imposibilidad de mantener la vía aérea permeable/controlada**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_014",
+  "materia": [
+    "urgencias",
+    "gastroenterologia"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Colon"
+  ],
+  "enunciado": "¿En un paciente de 70 años de edad, ¿cuál de las siguientes causas es la más frecuente de isquemia colónica aguda?",
+  "opciones": {
+    "a": "Episodio de disminución del gasto cardiaco (volumen minuto)",
+    "b": "Vólvulo sigmoide",
+    "c": "Embolia arterial",
+    "d": "Trombosis arterial"
+  },
+  "correcta": "a",
+  "explicacion": "La **IMA no oclusiva** se produce en pacientes con daño vascular crónico (arteriosclerosis) que sufren un proceso agudo que condiciona hipotensión y bajo gasto intestinal por deterioro hemodinámico (grandes cirugías cardíacas, sepsis, insuficiencia cardíaca).\n\nLa clínica es similar, mientras que en la angio-TC se observa una disminución de la perfusión intestinal sin cese brusco del flujo.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_015",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "¿Cuál es la conducta diagnóstica-terapéutica más adecuada en la atención de un paciente de 30 años que es traído al hospital por presentar una herida de arma de fuego en abdomen, con orificio de entrada en la región periumbilical y sin orificio de salida? Luego de haber recibido reposición con expansores parenterales se encuentra con la piel pálida y fría, excitado, taquipneico e hipotenso. En la ecografía abdominal se observa escaso líquido en el Douglas.",
+  "opciones": {
+    "a": "Estabilización hemodinámica en terapia intensiva y luego laparotomía exploradora",
+    "b": "Laparotomía de urgencia",
+    "c": "Estabilización hemodinámica en terapia intensiva y luego laparoscopia exploradora",
+    "d": "Laparoscopia de urgencia"
+  },
+  "correcta": "b",
+  "explicacion": "Ante un paciente hemodinámicamente inestable que ingresa a urgencias con herida de arma blanca centro abdominal la conducta es la **laparotomía exploradora de urgencia**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_016",
+  "materia": [
+    "urgencias",
+    "cardiologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pericardio"
+  ],
+  "enunciado": "¿En un paciente con shock y sospecha de un taponamiento cardíaco, ¿Cuál de los siguientes procedimientos indicaría en primer término?",
+  "opciones": {
+    "a": "Electrocardiograma",
+    "b": "Pericardiocentesis",
+    "c": "Toracotomía exploradora",
+    "d": "Radiografía simple de tórax de frente y perfil"
+  },
+  "correcta": "b",
+  "explicacion": "El **taponamiento cardíaco** es un derrame pericárdico que se caracteriza por: hipotensión arterial, taquicardia, aumento de la presión venosa yugular y pulso paradójico.\n\nEs el paradigma de shock obstructivo.\n\nEl tratamiento inicial del taponamiento es la **pericardiocentesis de urgencia**.\n\nLuego se indicará el de la causa de este.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_017",
+  "materia": [
+    "urgencias",
+    "gastroenterologia"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Intestino delgado"
+  ],
+  "enunciado": "¿Cuál es el diagnóstico más probable y la conducta más adecuada en un paciente de 65 años, tabaquista, que presenta intenso dolor abdominal de comienzo súbito hace 3 horas, un episodio de enterorragia en la última hora y en el examen físico presenta abdomen blando, sin reacción peritoneal?",
+  "opciones": {
+    "a": "Isquemia mesenterica aguda e indicar laparotomía exploradora",
+    "b": "Isquemia mesenterica crónica y solicitar una angiografía",
+    "c": "Isquemia mesenterica aguda y solicitar tomografía computarizada",
+    "d": "Isquemia mesenterica aguda y solicitar una angiografía"
+  },
+  "correcta": "c",
+  "explicacion": "La **isquemia mesentérica** es la reducción del flujo a causa de trombosis en el territorio de irrigación de intestino delgado y colon.\n\nSu signo más frecuente es el dolor, difuso, grave y persistente; también puede presentar náuseas, vómitos, diarrea, hematoquecia, anorexia o estreñimiento.\n\nSe recomienda para su diagnóstico la **tomografía** ya que esta presenta una sensibilidad diagnóstica cercana a la arteriografía y permite descartar otras causas como perforación abdominal.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_018",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "Un paciente que cursa el 6° día posoperatorio por trauma abdominal penetrante que requirió resección y anastomosis intestinal, comienza con hipertermia y leucocitosis. La tomografía informa aire subdiafragmático y líquido interasas en el espacio de Morrison. Ante la sospecha de peritonitis por dehiscencia anastomótica. ¿Cuál de las siguientes condiciones indica necesidad de intervención quirúrgica?",
+  "opciones": {
+    "a": "Presencia de íleo paralítico prolongado",
+    "b": "Presencia de dolor abdominal",
+    "c": "Aspiración ecoguiada positiva para gérmenes",
+    "d": "Presencia de neumoperitoneo"
+  },
+  "correcta": "d",
+  "explicacion": "Un paciente cursando sexto día posoperatorio que presenta signos clínicos como taquicardia y fiebre, asociado a leucocitosis y estudios por imágenes que indiquen **neumoperitoneo** (aire en región subdiafragmática) tiene indicación quirúrgica.\n\nLa presencia de neumoperitoneo se considera normal en postoperatorio hasta 48 a 72 horas posteriores al acto quirúrgico.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_019",
+  "materia": [
+    "urgencias",
+    "cardiologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Insuficiencia cardíaca",
+    "Radiografía"
+  ],
+  "enunciado": "¿Qué representan las líneas B de Kerley?",
+  "opciones": {
+    "a": "Septos interlobulilares visibles",
+    "b": "Linfáticos distendidos",
+    "c": "Capilares distendidos",
+    "d": "Venas pulmonares periféricas dilatadas"
+  },
+  "correcta": "a",
+  "explicacion": "Las neumopatías difusas engloban varios patrones radiológicos.\n\nLas mismas se dividen en opacidades grandes (homogéneas, parcheadas, lobulares, perihiliares o periféricas) y pequeñas (nodulillares, lineales, reticulares).\n\nLas **líneas de Kerley** son opacidades lineales que se producen por **engrosamiento de los tabiques interlobulillares**.\n\nLas líneas A irradian desde el hilo hacia la periferia pulmonar y pueden deberse a insuficiencia ventricular izquierda y reacciones alérgicas y las líneas B son subpleurales, en la periferia de los lóbulos inferiores y son características de insuficiencia ventricular izquierda subaguda y crónica.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_020",
+  "materia": [
+    "urgencias",
+    "neumonologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Radiografía"
+  ],
+  "enunciado": "¿Qué diagnóstico puede inferir a partir de la siguiente radiografía de tórax?",
+  "opciones": {
+    "a": "Atelectasia del lóbulo superior derecho.",
+    "b": "Atelectasia del lóbulo medio.",
+    "c": "Neumonía del lóbulo superior derecho.",
+    "d": "Neumonía del lóbulo medio."
+  },
+  "correcta": "a",
+  "explicacion": "En la **atelectasia del LSD**, el lóbulo colapsado tiende a desplazarse cefálica y medialmente produciendo una opacidad apical triangular visible en la Rx de tórax de frente.\n\nLa opacidad puede ser sutil cuando el LSD está totalmente colapsado, especialmente si se trata de una lesión crónica, formando solamente un engrosamiento apical derecho.\n\nEstas imágenes se acompañan de elevación del hilio derecho y la cisura menor con contorno convexo craneal.",
+  "imagenes": [
+    "img/urgencias/urgencias1_020.jpg"
+  ],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_021",
+  "materia": [
+    "urgencias",
+    "gastroenterologia"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Esófago"
+  ],
+  "enunciado": "Un paciente de 55 años concurre a la guardia por haber presentado 2 episodios de hematemesis. Al examen físico se encuentra pálido y sudoroso, TA: 90-60 mmHg y FC: 120/min. ¿Cuál es la conducta en la atención inicial?",
+  "opciones": {
+    "a": "Solicitar hematocrito y agrupar al paciente",
+    "b": "Colocar dos vías periféricas de grueso calibre",
+    "c": "Colocar sonda nasogástrica.",
+    "d": "Colocar acceso venoso central y transfundir con hemoderivados."
+  },
+  "correcta": "b",
+  "explicacion": "La **hemorragia digestiva alta** es una condición frecuente que se expresa típicamente con hematemesis y melena.\n\nCuando existen signos de compromiso hemodinámico (Taquicardia, hipotensión, hipotensión ortostática, disminución de relleno capital, frialdad de extremidades, livideces etc) se debe asegurar un **acceso vascular periférico idealmente corto y grueso** y corregir la hipovolemia con cristaloides, luego se iniciará transfusión de hemoderivados.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_022",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "Germán, un paciente joven, llega a la sala de emergencias luego de sufrir un trauma cerrado por caída de altura. Al ingreso se encuentra sudoroso, disneico, cianótico y con ingurgitación yugular. ¿Cuál de los siguientes síndromes define mejor el cuadro descripto?",
+  "opciones": {
+    "a": "Síndrome doloroso",
+    "b": "Síndrome de respiración paradojal",
+    "c": "Síndrome Funcional",
+    "d": "Síndrome de depresión endotorácica"
+  },
+  "correcta": "d",
+  "explicacion": "**Sindrome de depresión endotorácica**\n\nSe manifiesta cuando la presión endotorácica, por lo menos en algún momento del ciclo respiratorio, particularmente en la inspiración, es más negativa que lo habitual.\n\nEsto sucede cuando se obstruyen las vías aéreas y se producen atelectasias parciales y múltiples o masivas.\n\nEsta situación es bastante frecuente en los traumatismos contusos, obstruyéndose las vías aéreas con sangre o secreción.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_023",
+  "materia": [
+    "urgencias",
+    "neumonologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Radiografía"
+  ],
+  "enunciado": "¿A cuál de los siguientes cuadros respiratorios corresponde una radiografía de tórax en la que se observa opacidad del hemitórax izquierdo, con elevación del diafragma ipsolateral, desviación del hilio y mediastino hacia la izquierda?",
+  "opciones": {
+    "a": "Atelectasia pulmonar total",
+    "b": "Neumonía con compromiso de ambos lóbulos",
+    "c": "Neumotórax completo",
+    "d": "Derrame pleural izquierdo"
+  },
+  "correcta": "a",
+  "explicacion": "La **atelectasia** es el colapso e hipoventilación de un segmento pulmonar.\n\nLa radiografía de tórax muestra pérdida de volumen y desplazamiento del mediastino, tráquea cisuras y diafragma hacia el parénquima pulmonar afectado.\n\nEn la neumonía y el derrame pleural (que también producen aumento de la densidad del parénquima) no se observan estas desviaciones.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_024",
+  "materia": [
+    "reumatologia",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Otras enfermedades reumatológicas",
+    "Enfermedades intersticiales"
+  ],
+  "enunciado": "De las siguientes patologías ¿cuál es más probable que se manifieste en la radiografía simple de tórax con un patrón de enfermedad intersticial difusa?",
+  "opciones": {
+    "a": "Bronquiolitis obliterante con neumonía organizada",
+    "b": "Infarto pulmonar",
+    "c": "Malformación vascular",
+    "d": "Fibrosis pulmonar asociada a enfermedad reumática diseminada"
+  },
+  "correcta": "d",
+  "explicacion": "Las enfermedades reumáticas diseminadas como la esclerosis sistémica progresiva, la artritis reumatoide, el LES, el síndrome de sjogren, la enfermedad mixta del tejido conectivo pueden manifestarse como **fibrosis pulmonar** inicialmente sin presentar ningún otro síntoma extrapulmonar.\n\nPor lo tanto deben descartarse las enfermedades reumáticas diseminadas en aquellos pacientes con fibrosis pulmonar (con patrón radiográfico intersticial) y viceversa.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_001_025",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "Frente a un paciente que presenta un neumotórax hipertensivo, ¿Cuál de los siguientes tratamientos indicaría inicialmente?",
+  "opciones": {
+    "a": "Esternotomía",
+    "b": "Punción-drenaje pleural",
+    "c": "Toracotomía amplia posterolateral",
+    "d": "Intubación orotraqueal y ventilación a presión positiva"
+  },
+  "correcta": "b",
+  "explicacion": "Se produce por la entrada continua de aire en el espacio pleural, que genera un aumento de la presión intratorácica con desviación del mediastino y que pone en situación de gravedad al paciente.\n\nSu diagnóstico es clínico (dolor torácico, disnea, taquipnea, hipotensión, desviación de la tráquea hacia el lado contralateral y disminución del murmullo vesicular en el hemitórax afectado) y su tratamiento no debe posponerse a la confirmación radiológica.\n\nDebe tratarse con tubo de drenaje urgente para descomprimir la cavidad pleural.\n\nSe coloca un **catéter grueso** a nivel del segundo espacio intercostal línea hemiclavicular, para disminuir la presión positiva en la pleura y mejorar los síntomas circulatorios hasta el avenamiento del tórax",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+  {
+  "id": "urgencias_002_001",
+  "materia": [
+    "urgencias",
+    "otorrinolaringologia",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Nariz",
+    "Patología maxilofacial"
+  ],
+  "enunciado": "Una mujer de 35 años ingresa a la guardia por traumatismo encefálico y maxilofacial secundario a colisión vehicular. Al examen inicial presenta: Glasgow: 15/15, ΤΑ: 105/70 mm de Hg, FR: 22/min. El examen secundario revela fractura de huesos propios de la nariz de la rama horizontal derecha del maxilar inferior y rinorrea. ¿Cuál es el tratamiento más adecuado para la rinorrea?",
+  "opciones": {
+    "a": "Tratamiento quirúrgico independientemente del tiempo de evolución de la rinorrea",
+    "b": "Tratamiento quirúrgico después del 7mo dia, si persiste la rinorrea",
+    "c": "Tratamiento quirúrgico antes de las 72 hs",
+    "d": "Antibiótico profilaxis y analgesia"
+  },
+  "correcta": "b",
+  "explicacion": "Esta paciente está estable, de modo que no tiene indicación de tratamiento quirúrgico urgente, si de reducción urgente de las fracturas, pero se pregunta por el manejo de la rinorrea, no de la fractura, por lo cual en este caso sería la **conducta expectante** para esperar que resuelva sola y en caso de no hacerlo, explorar a partir del 7mo día.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_002",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Patología de pared abdominal"
+  ],
+  "enunciado": "Paciente mujer de 30 años consulta por dolor abdominal de iniciación brusca, en hemiabdomen inferior, fiebre y dos episodios de vómitos alimentarios. Es la primera vez que presenta este cuadro. ¿Qué hallazgo del examen físico le hace sospechar un abdomen agudo quirúrgico?",
+  "opciones": {
+    "a": "Disminución de los ruidos hidroaéreos",
+    "b": "Signo de Cullen o cabeza de medusa",
+    "c": "Puño percusión positiva",
+    "d": "Signo de rebote o Bloomberg"
+  },
+  "correcta": "d",
+  "explicacion": "Algunos signos típicos del **abdomen agudo** son:\n- 1) **Signo de Blumberg** o defensa abdominal en la fosa iliaca derecha (FID) (suele estar presente en la apendicitis aguda)\n- 2) **Signo de Murphy**, cuando se produce la interrupción en la respiración del paciente a la palpación profunda en el hipocondrio derecho por dolor debido a la distensión vesicular (característico de la colecistitis aguda)\n- **Signo de Cullen** o equimosis en el abdomen (que sugiere pancreatitis aguda necrohemorrágica)\n- **Signo de Grey Turner**, en el flanco, que sugieren hemorragia intraabdominal o en el retroperitoneo (rotura de aneurisma abdominal, pancreatitis hemorrágica).",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_003",
+  "materia": [
+    "gastroenterologia",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Cáncer colorrectal",
+    "Colon"
+  ],
+  "enunciado": "¿Cuál es la metodología diagnóstica más adecuada en un paciente de 62 años, que consulta por haber presentado proctorragia en dos o tres oportunidades durante la última semana? En el examen físico se encuentra compensado hemodinámicamente, no presenta ortostatismo, se observa palpación abdominal normal y en el examen anal se observan pequeñas hemorroides prolapsadas.",
+  "opciones": {
+    "a": "Rectosigmoidoscopia",
+    "b": "Fibrocolonoscopia",
+    "c": "Rectoscopia",
+    "d": "Colon por enema"
+  },
+  "correcta": "b",
+  "explicacion": "El **screening de cáncer colorrectal** debe iniciarse en pacientes que no presentan antecedentes familiares a partir de los 50 años, el estudio de elección para tal fin es la **fibrocolonoscopia**.\n\nEn el caso clínico que se presenta, se debe tener en cuenta, además, que el paciente presenta proctorragia.\n\nSi bien en el examen físico presenta hemorroides prolapsadas, por edad la indicación sería fibrocolonoscopia para screening de cáncer colorrectal.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_004",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "Frente al diagnóstico de un neumotórax abierto, ¿Cuál es la terapéutica inicial más apropiada?",
+  "opciones": {
+    "a": "Drenaje de la cavidad pleural por la herida torácica",
+    "b": "Drenaje pleural e intubación orotraqueal",
+    "c": "Oclusión de la herida torácica y drenaje pleural",
+    "d": "Toracotomía axilar vertical y drenaje"
+  },
+  "correcta": "c",
+  "explicacion": "**Traumatismo torácico abierto**: lesión de la pleura parietal, por lo que la cavidad pleural entra en contacto con la atmósfera (neumotórax abierto).\n\nEl tratamiento consistirá en **ocluir la solución de continuidad** en la pared torácica con vendaje estéril asegurando tres lados: en espiración, el margen abierto permitirá la salida de aire impidiendo que actúe con un mecanismo valvular (evitando la aparición de neumotórax a tensión).\n\nAdministrar oxigenoterapia, valorando la necesidad de intubación y conexión a ventilación mecánica, y analgesia.\n\nColocar **drenaje torácico** lo antes posible.\n\nTratamiento definitivo: cierre quirúrgico del defecto de la pared torácica.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_005",
+  "materia": [
+    "urgencias",
+    "cirugiageneral",
+    "otorrinolaringologia"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica",
+    "Nariz"
+  ],
+  "enunciado": "¿En un traumatismo cráneo facial, cuándo está contraindicado la colocación de una sonda nasogástrica?",
+  "opciones": {
+    "a": "Fractura de órbita y de la rama ascendente del maxilar inferior",
+    "b": "Fractura del piso de órbita",
+    "c": "Fractura de base de cráneo",
+    "d": "Hemorragia nasal"
+  },
+  "correcta": "c",
+  "explicacion": "Ante la sospecha de **fractura de base de cráneo** está contraindicada la colocación de sonda nasogástrica por peligro de colocar la sonda en regiones del encéfalo.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_006",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "Un paciente de 32 años que sufrió un traumatismo cerrado de abdomen, presenta en la TC un Hematoma Retroperitoneal en ZONA 1. Se encuentra lúcido, eupneico, con una TA de 90/50 mm Hg y un Hematocrito de 32%. ¿Cuál de las siguientes conductas adoptaría?",
+  "opciones": {
+    "a": "Observación y control del estado hemodinámico",
+    "b": "Exploración quirúrgica",
+    "c": "Observación y realización de una Ecografía de control en 3 horas",
+    "d": "Observación y control del estado hemodinámico y del Hematocrito"
+  },
+  "correcta": "b",
+  "explicacion": "Los hematomas retroperitoneales se dividen en cuatro zonas.\n\nEn la **ZONA 1** se ubican el 15% de los hematomas retroperitoneales.\n\nLa zona 1 **SIEMPRE se explora quirúrgicamente** ya que puede haber lesión de grandes vasos, duodeno o páncreas.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_007",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Páncreas"
+  ],
+  "enunciado": "¿Cuál de las siguientes intervenciones NO aplicaría en un traumatismo de duodeno?",
+  "opciones": {
+    "a": "Duodenopancreatectomía cefálica",
+    "b": "Duodenostomía y gastrostomía",
+    "c": "Diverticulización duodenal",
+    "d": "Exclusión pilórica"
+  },
+  "correcta": "a",
+  "explicacion": "Se pregunta por la cirugía que NO se realiza rutinariamente en un traumatismo de duodeno.\n\nEntonces: La **duodenopancreatectomía cefálica** no es una intervención de primera línea en el manejo del trauma duodenal y solo se considera en casos excepcionales donde hay destrucción masiva e irreversible del páncreas y duodeno, y no es parte del abordaje estándar inicial.\n\nEl resto de las técnicas quirúrgica:\n- **Diverticulización duodenal**: técnica que sí puede usarse en lesiones graves del duodeno. Incluye cierre de la lesión, piloroplastia, gastrostomía, yeyunostomía y tubo en el duodeno distal.\n- **Duodenostomía y gastrostomía**: son medidas que pueden utilizarse como drenajes o descompresión en el manejo del trauma duodenal.\n- **Exclusión pilórica**: es una técnica frecuentemente empleada en traumas graves para desviar el contenido gástrico y permitir la cicatrización del duodeno.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_008",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "Es traída a la guardia por una ambulancia Graciela de 28 años, sin antecedentes de relevancia, que sufrió colisión vehicular (auto-auto). Ingresa con collar cervical y tabla larga. ¿Cuál es la primera acción que realiza en la atención inicial?",
+  "opciones": {
+    "a": "Reponer 1 litro de ringer lactato medida preventiva de shock.",
+    "b": "Evaluar el deterioro cognitivo del paciente.",
+    "c": "Ventilación y oxigenación del paciente.",
+    "d": "Verificar que la vía aérea se encuentre permeable, con protección de la columna cervical."
+  },
+  "correcta": "d",
+  "explicacion": "La evaluación inicial del paciente politraumatizado pretende la rápida identificación de las lesiones graves y su tratamiento, incluyendo:\n\n1) Triage para identificar al accidentado grave o potencialmente grave.\n2) Evaluación primaria sistemática para diagnosticar las lesiones que pueden causar la muerte y corregirlas de forma simultánea a su diagnóstico.\n\nPara ello seguimos el **ABCDE**:\n\n**A (Airway)**. Vía aérea permeable y control de la columna cervical. La causa más frecuente de obstrucción de la vía aérea es la disminución del nivel de consciencia: en todo paciente con una puntuación en la escala de coma de Glasgow igual o inferior a 8 habrá que proteger la vía aérea mediante intubación orotraqueal (IOT).\n\nLa cricotiroidotomía de emergencia es la realización urgente de una abertura en la membrana cricotiroidea para establecer una vía aérea. La indicación principal es la imposibilidad de mantener la vía aérea permeable/controlada.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_009",
+  "materia": [
+    "imagenes",
+    "neumonologia",
+    "urgencias"
+  ],
+  "submateria": [
+    "Radiografía",
+    "Neumonía",
+    "Síndromes torácicos"
+  ],
+  "enunciado": "¿Qué observa en las radiografías de tórax?",
+  "opciones": {
+    "a": "Condensación pulmonar en base izquierda de localización posterior",
+    "b": "Atelectasia de segmento posterior de lóbulo inferior izquierdo",
+    "c": "Atelectasia de la língula.",
+    "d": "Condensación pulmonar en base izquierda de localización anterior."
+  },
+  "correcta": "d",
+  "explicacion": "La radiografía del tórax suele realizarse para examinar el parénquima pulmonar.\n\n**Bloque de consolidación** que borra el borde cardiaco, parcial o totalmente.\n\nPor **borrar este borde**, se encuentra en contacto con el corazón, por lo tanto, su **localización es anterior**.\n\nEn proyección lateral, en individuos normales, el corazón borra el tercio anterior del hemidiafragma izquierdo, por tanto el hemidiafragma izquierdo sólo es visible en los dos tercios posteriores y puede obliterarse con una opacidad del lóbulo inferior ipsilateral.",
+  "imagenes": [
+    "img/urgencias/urgencias2_009.jpg"
+  ],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_010",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Paciente politraumatizado"
+  ],
+  "enunciado": "Un paciente de 48 años es traído a la guardia por haber sufrido un incidente de tránsito. Al examen físico se encuentra hemodinámicamente estable y presenta dolor abdominal localizado en el hipocondrio izquierdo sin signos de irritación peritoneal. Se realiza ecografía abdominal hallándose un hematoma esplénico subcapsular con parénquima y vasos hiliares indemnes. ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Control hemodinámico y seguimiento por tomografía y/o ecografía",
+    "b": "Realizar tomografía computada con contraste endovenoso y luego laparotomía para drenaje del hematoma",
+    "c": "Drenaje percutáneo del hematoma esplénico",
+    "d": "Esplenectomía de urgencia"
+  },
+  "correcta": "a",
+  "explicacion": "El paciente descripto presenta un hematoma esplénico grado I (subcapsular no expansivo, menor al 10% de la superficie), en este caso y teniendo la disponibilidad en la institución de ingreso de acceso a tomografía computada, laboratorio y unidad cerrada para el seguimiento; puede indicarse **tratamiento no operatorio** y reevaluación acorde la evolución del paciente.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_011",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Patología de pared abdominal"
+  ],
+  "enunciado": "Durante la cirugía de un paciente politraumatizado se encuentra un hematoma retroperitoneal en zona 1. ¿Cuál es la conducta adecuada?",
+  "opciones": {
+    "a": "Dejar un packing abdominal con gasas y reexplorar en 24 horas",
+    "b": "Explorar el hematoma",
+    "c": "Realizar radioscopia intraoperatoria",
+    "d": "Cerrar la laparotomía"
+  },
+  "correcta": "b",
+  "explicacion": "El hematoma retroperitoneal se debe con mayor frecuencia a traumatismos abdominales cerrados o abiertos.\n\n**Clasificación**:\n\n- **Zona 1**: Central, que incluye la vena cava, la aorta, el páncreas y el duodeno (20%).\n- **Zona 2**: Lateral, que incluye el riñón y los tejidos perirrenales (70%).\n- **Zona 3**: Pélvica, que incluye los vasos iliacos (10%).\n- **Zona 4**: Hiliar retrohepático.\n- **Zona 5**: Combinados.\n\n**Clínica**: dolor abdominal de intensidad variable referido a espalda o flancos o referido a miembro inferior. Puede haber inestabilidad hemodinámica si hay pérdida de sangre rápida. En el examen físico la persona puede presentar: dolor a la palpación, contractura muscular, masa pulsátil, equimosis en flancos, íleo paralítico y signos de compresión de estructuras vecinas.\n\n**Estudios diagnósticos**: radiografía simple de abdomen, ecografía, TC de abdomen y pelvis y laparotomía cuando el paciente se encuentra inestable hemodinámicamente o no responde al tratamiento.\n\n**Tratamiento**: Si el traumatismo es abierto: Cirugía siempre.\n\nSi el traumatismo es cerrado:\n- **Zona 1: explorar siempre independientemente de la causa o del tamaño**.\n- Zona 2: si no se expande, observar.\n- Zona 3: suele deberse a fractura de pelvis, en ese caso la conducta es quirúrgica (estabilizar la fractura y realizar embolización).\n- Zona 4: siempre cirugía.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_012",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "¿Cuál es el diagnóstico más probable en un paciente con un traumatismo cerrado de tórax derecho que presenta disnea, taquicardia e hipotensión? En el examen físico presenta hemitórax derecho con hipersonoridad percutoria y ausencia del murmullo vesicular y en la radiografía de tórax se observa desviación de la tráquea hacia la izquierda.",
+  "opciones": {
+    "a": "Neumotórax espontáneo",
+    "b": "Hemotórax masivo",
+    "c": "Neumotórax hipertensivo",
+    "d": "Taponamiento cardiaco"
+  },
+  "correcta": "c",
+  "explicacion": "El neumotórax se define como la presencia de aire en la cavidad pleural donde se pierde la presión negativa lo que produce el colapso pulmonar.\n\nEl neumotórax se presenta con una triada clásica: disminución o ausencia de vibraciones vocales + timpanismo + ausencia o disminución del murmullo vesicular.\n\nEn el caso del **neumotórax hipertensivo** se agregan: signos de insuficiencia circulatoria (cianosis, **taquicardia**, e **hipotensión**) además ingurgitación yugular y **desviación contralateral de tráquea** y laringe.\n\nEste constituye un cuadro grave con riesgo para el paciente.\n\nLa primer indicación en el drenaje con catéter grueso a nivel del 2do espacio intercostal línea hemiclavicular, para disminuir la presión positiva en la pleura y mejorar los síntomas circulatorios hasta el avenamiento del tórax.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_013",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "Paciente con trauma torácico penetrante en cara lateral del hemitórax derecho. Signos clínicos de derrame pleural masivo y radiografía de tórax con velamiento completo y descompensación hemodinámica. ¿Qué conducta adoptaría?",
+  "opciones": {
+    "a": "Tomografía computada",
+    "b": "Toracotomía exploradora inmediata",
+    "c": "Toracocentesis",
+    "d": "Arteriografía de vasos centrales"
+  },
+  "correcta": "b",
+  "explicacion": "Ante un paciente con lesión penetrante en hemitórax con velamiento en la radiografía de tórax y descompensación hemodinámica tiene indicación de cirugía de urgencia (**toracotomía exploratoria**), la indicación de la misma se realiza por la descompensación hemodinámica del paciente.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_014",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "De los siguientes, ¿cuál se considera en la actualidad el aspecto más importante en la evaluación del abdomen agudo?",
+  "opciones": {
+    "a": "Valoración de los resultados obtenidos en la TC abdominal.",
+    "b": "Realización de una ananmesis completa y exploración física minuciosa.",
+    "c": "Valoración del hemograma, especialmente el recuento y fórmula leucocitarios.",
+    "d": "Valoración de los resultados obtenidos en la ecografía de abdomen."
+  },
+  "correcta": "b",
+  "explicacion": "Ante la sospecha de un abdomen agudo antes de realizar un estudio complementario lo primordial es la **realización de una correcta anamnesis y exploración física del paciente**, lo que nos va a permitir orientar los posibles diagnósticos y nos permite orientar la necesidad de solicitar exámenes complementarios.\n\nLa evaluación del paciente debe seguir la cronología clásica: anamnesis, examen físico, exámenes complementarios e imágenes.\n\nLa anamnesis debe identificar tipo de dolor, características, localización, progresión, duración y factores que los modifiquen, los síntomas asociados (ej. fiebre, vómitos, ictericia) y los antecedentes.\n\nEl examen físico debe ser completo: inspección, palpación, percusión y auscultación con especial atención a la palpación abdominal superficial y profunda.\n\nLa anamnesis y el examen físico minucioso orientan el diagnóstico y la solicitud de exámenes complementarios.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_015",
+  "materia": [
+    "urgencias",
+    "traumatologia"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Columna vertebral"
+  ],
+  "enunciado": "¿Cuál es la conducta más adecuada con un joven de 30 años que consulta por dolor intenso cervical con irradiación a ambos hombros y dificultad para girar la cabeza, y relata que hace dos horas fue embestido de atrás por una bicicleta? En el examen físico presenta leve rigidez para mover la cabeza, sin signos neurológicos.",
+  "opciones": {
+    "a": "Indicar ibuprofeno 600 mg cada 8 horas, colocar collar cervical y citar a control por consultorio externo",
+    "b": "Indicar paracetamol 500 mg cada 8 horas y control ambulatorio con el traumatólogo",
+    "c": "Solicitar radiografía de columna cervical frente y perfil y evaluar conducta según imágenes",
+    "d": "Solicitar resonancia nuclear magnética de columna cervical y evaluar conducta según imágenes"
+  },
+  "correcta": "c",
+  "explicacion": "Un paciente que presenta traumatismo reciente, que ingresa a la institución donde se encuentra atendido en forma espontánea (sin contención cervical) que intercurre con rigidez cervical asociada a alteración de la sensibilidad en hombros, hay que descartar **lesión de columna cervical** secundaria al traumatismo.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_016",
+  "materia": [
+    "pediatria",
+    "urgencias"
+  ],
+  "submateria": [
+    "Otras preguntas de pediatría",
+    "Paciente politraumatizado"
+  ],
+  "enunciado": "Un niño de 10 años, de 30kg de peso, fue embestido por un auto. Se encuentra obnubilado, con vía aérea sostenible, tensión arterial sistólica de 80 mm Hg, fracturas múltiples cerradas en extremidades y tres heridas menores. ¿Cuál es el Índice de Trauma Pediátrico?",
+  "opciones": {
+    "a": "5",
+    "b": "7",
+    "c": "3",
+    "d": "46"
+  },
+  "correcta": "a",
+  "explicacion": "El Índice de Trauma Pediátrico toma en cuenta el peso del paciente, si la vía aérea es sostenible o no; la tensión arterial, el tipo de heridas o fracturas que se presenten y el estado de conciencia.\n\nDe acuerdo a esto se otorga un puntaje cuyo rango oscila entre la mínima (-6) y la máxima puntuación posible (+12) que sirve para valorar la gravedad del paciente politraumatizado.\n\nEn este ejemplo el paciente suma **2 puntos por el peso, 1 punto por estar obnubilado, 1 punto por la TA, 1 por vía aérea sostenible, 1 por heridas menores y -1 por fracturas múltiples**, lo que suma un **ITP de 5**.\n\nLos niños con puntaje ITP > 8 deberían tener 0% de mortalidad.\n\nTodos los heridos con ITI < 8 deben ser evaluados en centros adecuados para tratar niños con traumatismos graves.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_017",
+  "materia": [
+    "gastroenterologia",
+    "hematologia"
+  ],
+  "submateria": [
+    "Intestino delgado",
+    "Anemias carenciales"
+  ],
+  "enunciado": "Un paciente de 53 años es derivado a gastroenterología para el estudio de anemia detectada semanas atrás en consultorio externo de clínica médica. Al interrogatorio refiere astenia y al examen físico se presenta hemodinámicamente compensado con signos vitales normales. El laboratorio actual muestra Hto 30%, Hb 9 g/dL, VCM 69 fL con el resto de las series normales, Ferremia 20 ng/mL, Ferritina 22 ng/mlL, Ac Antitransglutaminasa y Ac antigliadina negativos. La ecografía abdominal, el tránsito intestinal, la fibroendoscopia digestiva alta (FEDA) y la videocolonoscopia (VCC) no presentan alteraciones. ¿Qué estudio debe solicitarse a continuación?",
+  "opciones": {
+    "a": "Gammagrafía con glóbulos rojos marcados con Tc99",
+    "b": "Biopsia duodenal",
+    "c": "Cápsula endoscópica",
+    "d": "Angiografía mesentérica"
+  },
+  "correcta": "c",
+  "explicacion": "La hemorragia digestiva de origen desconocido es aquella que persiste sin que pueda evidenciarse la causa luego de los estudios endoscópicos iniciales.\n\nEn los paciente con sangrado oculto (que se expresó solo con anemia ferropénica) se prefiere la **cápsula endoscópica** que permite evaluar el intestino delgado.\n\nEn estos casos tiene indicación la angiografía de vasos mesentéricos en el paciente con sangrado manifiesto.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_018",
+  "materia": [
+    "urgencias",
+    "urologia_cx",
+    "pediatria"
+  ],
+  "submateria": [
+    "Patología renal y urológica urgente",
+    "Urgencias urológicas y traumatismos",
+    "Patología nefrourológica infantil"
+  ],
+  "enunciado": "Un niño de seis años, víctima de un accidente motovehicular, es trasladado a la guardia. Al realizarse el examen físico secundario se constata hematoma perineal con globo vesical. ¿Cuál es su conducta inicial?",
+  "opciones": {
+    "a": "Determinar micro/macrohematuria ante la primera micción espontánea",
+    "b": "Realizar uretrocistografía retrograda",
+    "c": "Realizar tomografía de abdomen con contraste",
+    "d": "Colocar sonda vesical Foley 6 con técnica estéril"
+  },
+  "correcta": "b",
+  "explicacion": "El traumatismo de uretra debe sospecharse en paciente politraumatizado con fractura de pelvis inestable o con antecedente de caída a horcajada que presenten signos tales como uretrorragia, hematuria, equimosis o hematoma perineal o peneano, retención de orina o dolor perineal, disuria, sangre en el meato urinario, sangre en el introito vaginal.\n\nEstos indicadores clínicos de traumatismo uretral agudo justifican una evaluación uretral completa por medio de la **uretrocistografía**.\n\nRecordar que ante la sospecha de este tipo de traumatismo **no debemos sondar al paciente**.\n\nEl tratamiento definitivo es de resorte del especialista.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_019",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Hígado"
+  ],
+  "enunciado": "Un peatón de 24 años de edad es arrollado por un auto y se lo traslada al hospital. Glasgow: 12/15 tensión arterial 90/60, frec. respiratoria: 26/min. Ecografía: líquido libre en cavidad. Se decide laparotomía; encontrándose desgarro mesentérico y lesión del segmento V y VIII del hígado derecho, con áreas que impresionan desvitalizadas. El nuevo control tensional evidenció 90/60. ¿Cuál es la conducta más adecuada para la lesión hepática?",
+  "opciones": {
+    "a": "Resección de segmentos hepáticos",
+    "b": "Hemostasia del lecho",
+    "c": "Embolización selectiva",
+    "d": "Empaquetamiento"
+  },
+  "correcta": "a",
+  "explicacion": "En caso de diagnóstico intraoperatorio de laceración hepática, no pudiendo controlarse la hemostasia, la indicación es la **hepatectomía atípica** de los segmentos afectados.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_020",
+  "materia": [
+    "urgencias",
+    "neumonologia",
+    "cardiologia"
+  ],
+  "submateria": [
+    "Tromboembolia de pulmón",
+    "Síndromes torácicos",
+    "Cardiología básica"
+  ],
+  "enunciado": "Una mujer de 41 años consulta a guardia por disnea de comienzo súbito CF III-IV de algunas horas de duración. Los síntomas comenzaron en su lugar de trabajo. Registra como único antecedente de relevancia la ingesta de anticonceptivos orales. Al ingreso se presenta lúcida, taquipneica, taquicárdica (FC: 110 lpm), TA: 110/70 mm Hg con examen físico normal. La Rx de tórax es normal y el ECG muestra taquicardia sinusal y bloqueo incompleto de rama derecha. Entre los diversos diagnósticos diferenciales que presenta el caso se plantea la posibilidad de tromboembolismo de pulmón (TEP). En base a sus antecedentes y los datos del examen físico, ¿en qué categoría de riesgo de TEP ubica a la paciente y cuál de los estudios diagnósticos habitualmente empleados considera en primera instancia en este caso?",
+  "opciones": {
+    "a": "Alta probabilidad, angiotomografia helicoidal",
+    "b": "Baja probabilidad, centellograma V/Q",
+    "c": "Baja probabilidad, medición de Dímero D por método ELISA",
+    "d": "Alta probabilidad, ecocardiograma transesofágico"
+  },
+  "correcta": "a",
+  "explicacion": "El diagnóstico del TEP debe combinar la sospecha clínica, los resultados del dímero D y las pruebas de imagen.\n\nEl dímero D es una prueba de alta sensibilidad, pero de baja especificidad, porque su elevación también se asocia a otras situaciones clínicas como edad avanzada, infección, infarto agudo de miocardio, cáncer, embarazo o ingreso hospitalario, y también está elevado tras una cirugía.\n\nEn pacientes con probabilidad de TEP baja o intermedia, un dímero D negativo (<500 ng/mL) excluye el diagnóstico de TEP.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_021",
+  "materia": [
+    "urgencias",
+    "otorrinolaringologia",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Patología maxilofacial",
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "Un paciente de 17 años concurre a la guardia del hospital por traumatismo maxilofacial. Presenta Glasgow: 15/15, TA: 120/80 mmHg y FR: 22/min. Al examinar al paciente se diagnostica fractura mandibular abierta sin otras lesiones asociadas. ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Internación hospitalaria, colocación de sonda nasogástrica de alimentación, antibióticos endovenosos y analgésicos",
+    "b": "Tratamiento con antibióticos endovenosos, analgésicos, antitetánica e internación hospitalaria",
+    "c": "Irrigación quirúrgica, desbridamiento y antibióticos endovenosos",
+    "d": "Tratamiento con antibióticos vía oral, analgésicos, antitetánica y seguimiento ambulatorio"
+  },
+  "correcta": "c",
+  "explicacion": "Los traumatismos maxilofaciales deben resolverse dentro de las 72 a 96 horas de ocurridos ya que a medida que transcurre el tiempo su resolución se vuelve mas compleja.\n\nEn el caso de una **fractura expuesta** la primer medida es la **profilaxis antibiótica y debridamiento** para evitar complicaciones futuras hasta la resolución quirúrgica definitiva.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_022",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "Un varón de 28 años sufre incidente en vía pública (moto contra auto) presentando TEC grave y politraumatismos varios. ¿Qué conducta es la más adecuada a su llegada a la guardia del Hospital?",
+  "opciones": {
+    "a": "Estabilizar hemodinámicamente al paciente, realizar TAC corporal total y de cerebro e interconsultar con el servicio de neurocirugía y cirugía general",
+    "b": "Evaluar y realizar control de la vía aérea y de la columna cervical, de la ventilación y del estado hemodinámico, neurológico y corporal total",
+    "c": "Evaluar el Glasgow e interconsultar con el servicio de neurocirugía urgentemente",
+    "d": "Estabilizar hemodinámicamente al paciente, realizar TAC de cerebro y luego trasladar a unidad de cuidados críticos"
+  },
+  "correcta": "b",
+  "explicacion": "En un paciente con politraumatismo la primer medida es:\n- **A** (mantener la vía aérea con control de la columna cervical)\n- **B** (asegurar una adecuada ventilación)\n- **C** (control de hemorragias y shock)\n- **D** (breve examen neurológico)\n- **E** (exponer al paciente, desvestirlo y evitar la hipotermia).",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_002_023",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Hígado"
+  ],
+  "enunciado": "Ricardo, de 25 años, sufre una coz de caballo en hipocondrio derecho. Al ingreso el paciente se encuentra dolorido e hipotenso. No se hallan otras lesiones salvo fracturas costales derechas no desplazadas. El ECO FAST muestra la presencia de hematoma perihepático con una lesión subcapsular del 30% y una laceración de 2 cm. Luego de una adecuada analgesia e hidratación, el paciente mantiene parámetros hemodinámicos estables. ¿Cuál es la conducta más apropiada?",
+  "opciones": {
+    "a": "Laparotomía exploratoria, hemostasia hepática y drenaje",
+    "b": "Observación en sala de emergencias con monitoreo continuo",
+    "c": "Laparoscopia y exploración concéntrica del abdomen",
+    "d": "Pasa a sala de internación general con hidratación parenteral y analgesia"
+  },
+  "correcta": "b",
+  "explicacion": "Ricardo presenta una lesión subcapsular menor al 50% de la superficie y una laceración de 1 a 3 cm, en este caso clínico la conducta es **monitoreo clínico** y ante inestabilidad hemodinámica o aumento de la lesión laparotomía exploradora.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+  {
+  "id": "urgencias_003_001",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "De acuerdo al orden establecido basado en el riesgo de muerte del paciente, ¿Cuál es la correcta valoración inicial de un paciente traumatizado?",
+  "opciones": {
+    "a": "Respiración, circulación, control de vía aérea y columna cervical, neurológico, exposición y control ambiental.",
+    "b": "Protección de la vía aérea y columna cervical, respiración, circulación, daño neurológico, exposición y control ambiental.",
+    "c": "Respiración, exposición y control ambiental, circulación, protección de la vía área y columna cervical, daño neurológico.",
+    "d": "Protección de la vía aérea y columna cervical, circulación, daño neurológico, respiración y exposición y control ambiental"
+  },
+  "correcta": "b",
+  "explicacion": "Evaluación primaria sistemática para diagnosticar las lesiones que pueden causar la muerte y corregirlas de forma simultánea a su diagnóstico.\n\nPara ello seguimos el **ABCDE**:\n\n**A (Airway)**. Vía aérea permeable y control de la columna cervical.\n\n**B (Breathing)**. Mantenimiento de la ventilación.\n\n**C (Circulation)**. Control de hemorragias y estado circulatorio.\n\n**D (Disability)**. Valoración neurológica\n\n**E**. Exposición y protección térmica.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_002",
+  "materia": [
+    "urgencias",
+    "neumonologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Neumonía",
+    "Radiografía"
+  ],
+  "enunciado": "¿Qué imagen observa en la siguiente radiografía de tórax?",
+  "opciones": {
+    "a": "Atelectasia sin signos de derrame pleural",
+    "b": "Atelectasia con signos de derrame pleural.",
+    "c": "Consolidación que muestra broncograma aéreo, con signos de derrame pleural.",
+    "d": "Consolidación que muestra broncograma aéreo, sin signos de derrame pleural."
+  },
+  "correcta": "d",
+  "explicacion": "Densidad agua.\n\nImagen gris pálida-blanca: músculos, vasos y corazón, vísceras sólidas, consolidaciones patológicas pulmonares y lesiones en general.\n\nEl **patrón alveolar** traduce la enfermedad del espacio aéreo (del alvéolo) y se produce por un reemplazamiento del aire por una sustancia de mayor densidad: líquido (agua, sangre), células (tumorales, bacterianas) o proteínas.\n\nSignos radiológicos: aumento de la densidad pulmonar con opacidades de bordes mal definidos y tendencia a la coalescencia que impide la visualización de la trama vascular normal subyacente.\n\nPuede existir alveolograma aéreo (cuando unos alvéolos están ocupados y otros aireados) y **broncograma aéreo** (cuando un bronquio aireado atraviesa una zona de alvéolos ocupados y genera una imagen arborescente).",
+  "imagenes": [
+    "img/urgencias/urgencias3_002.jpg"
+  ],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_003",
+  "materia": [
+    "cirugiageneral",
+    "gastroenterologia"
+  ],
+  "submateria": [
+    "Otras preguntas de cirugía general",
+    "Colon"
+  ],
+  "enunciado": "En una cirugía colónica de urgencia con resección amplia del intestino grueso (colon derecho e izquierdo) se decide no realizar una anastomosis ileorrectal primaria. ¿Cuál es el sitio ideal para emplazar la ileostomía?",
+  "opciones": {
+    "a": "Cercano a la incisión abdominal",
+    "b": "A través del músculo oblicuo mayor, sobre la prolongación de la línea axilar anterior",
+    "c": "En una posición que el paciente pueda observar y atender con facilidad",
+    "d": "Cercano a la cresta iliaca"
+  },
+  "correcta": "c",
+  "explicacion": "La **colostomía** debe abocarse en una región del abdomen donde el paciente pueda tener un manejo confortable de la misma, donde sea fácil la adherencia de la bolsa de colostomía, evitando regiones anatómicas que lo dificulten como la cresta iliaca o la incisión quirúrgica.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_004",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "Ingresa Walter a la sala de emergencia con herida de arma de fuego con ingreso por el 6to espacio intercostal izquierdo por delante y salida a la misma altura en la región posterior del mismo hemitórax. No presenta hipotensión arterial ni signos de irritación peritoneal. ¿Cuál es la conducta de elección?",
+  "opciones": {
+    "a": "Avenamiento pleural y laparotomía exploratoria",
+    "b": "FAST y si es positiva laparotomía exploratoria",
+    "c": "Avenamiento pleural y control clínico",
+    "d": "Exploración de ambas heridas e internación para estrecha observación"
+  },
+  "correcta": "c",
+  "explicacion": "En caso de una herida de arma de fuego a nivel del sexto espacio intercostal izquierdo la indicación es de **avenamiento pleural** debido a la lesión penetrante.\n\nEn pacientes descompensados y con signos de irritación peritoneal la conducta mas adecuada es la realización de imagen como el FAST para evidenciar líquido libre y expectar la conducta quirúrgica con control clínico estricto.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_005",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "En la evaluación inicial de un paciente politraumatizado en el cual se sospecha lesión en columna cervical ¿Cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Realizar traqueostomía de urgencia",
+    "b": "Realizar intubación orotraqueal inmediata",
+    "c": "Inmovilizar la columna cervical",
+    "d": "Determinar si el paciente presenta necesidad inmediata de vía aérea y decidir en base a dicha evaluación"
+  },
+  "correcta": "d",
+  "explicacion": "La evaluación inicial del paciente politraumatizado pretende la rápida identificación de las lesiones graves y su tratamiento, incluyendo: 1) Triage para identificar al accidentado grave o potencialmente grave. 2) Evaluación primaria sistemática para diagnosticar las lesiones que pueden causar la muerte y corregirlas de forma simultánea a su diagnóstico.\n\nPara ello seguimos el **ABCDE** del ATLS, lo primero siempre es evaluar la vía aérea con control simultáneo de la columna cervical.\n\nSi el paciente no necesita intervención inmediata de vía aérea, se inmoviliza la columna.\n\nSi necesita intervención, se protege la columna mientras se maneja la vía aérea.\n\nEntonces la conducta más adecuada es: determinar si el paciente presenta necesidad inmediata de vía aérea y decidir en base a dicha evaluación, siempre con protección cervical si hay sospecha de lesión.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_006",
+  "materia": [
+    "cirugiageneral",
+    "gastroenterologia",
+    "imagenes"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Colon",
+    "Ecografía"
+  ],
+  "enunciado": "Ante la sospecha de apendicitis aguda; ¿Cómo iniciaría los exámenes complementarios?",
+  "opciones": {
+    "a": "Resonancia magnética.",
+    "b": "Radiología simple",
+    "c": "Transito digestivo",
+    "d": "Ecografía"
+  },
+  "correcta": "d",
+  "explicacion": "**Ecografía abdominal**: Se utiliza con mucha frecuencia en la sospecha de apendicitis aguda (sobre todo en mujeres, para el diagnóstico diferencial con la patología anexial).\n\nPuede detectar aneurismas abdominales y la existencia de líquido libre.\n\nEstá presente en todos los servicios de urgencias y puede realizarse a la cabecera del paciente cuando se encuentra hemodinámicamente inestable (eco-fast).",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_007",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Síndromes abdominales",
+    "Otras preguntas de cirugía general"
+  ],
+  "enunciado": "¿Cuál de los siguientes hematomas retroperitoneales tiene siempre indicación de exploración quirúrgica?",
+  "opciones": {
+    "a": "Zona 4 (hiliar retrohepático)",
+    "b": "Zona 5 (combinado, más de una zona)",
+    "c": "Zona 2 (lateral)",
+    "d": "Zona 3 (pélvica)"
+  },
+  "correcta": "a",
+  "explicacion": "La causa más frecuente de los hematomas retroperitoneales es secundaria a traumatismos abdominales cerrados o abiertos.\n\n**Se clasifican en 5 zonas**:\n- **Zona 1**: Central, que incluye la vena cava, la aorta, el páncreas y el duodeno (20%).\n- **Zona 2**: Lateral, que incluye el riñón y los tejidos perirrenales (70%).\n- **Zona 3**: Pélvica, que incluye los vasos ilíacos (10%).\n- **Zona 4**: Hiliar retrohepático.\n- **Zona 5**: Combinados.\n\nProducen dolor abdominal de intensidad variable que irradia a espalda, a flancos o a miembros inferiores. Puede haber inestabilidad hemodinámica si se produce una pérdida de sangre rápida. En el examen físico la persona puede presentar dolor a la palpación, contractura muscular, masa pulsátil, equimosis en flancos, íleo paralítico y signos de compresión de estructuras vecinas.\n\nLos estudios diagnósticos que se utilizan son radiografía simple de abdomen, ecografía, TC de abdomen y pelvis y laparotomía cuando el paciente se encuentra inestable hemodinámicamente o no responde al tratamiento.\n\n**Tratamiento**:\n- Si el traumatismo es abierto, requiere siempre cirugía.\n- Si el traumatismo es cerrado, depende de su zona:\n    - **Zona 1**: explorar siempre independientemente de la causa o del tamaño.\n    - **Zona 2**: si no se expande, observar.\n    - **Zona 3**: suele deberse a fractura de pelvis, en ese caso la conducta es quirúrgica (estabilizar la fractura y realizar embolización).\n    - **Zona 4: siempre cirugía**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_008",
+  "materia": [
+    "cirugiageneral",
+    "infectologia"
+  ],
+  "submateria": [
+    "Otras preguntas de cirugía general",
+    "Sepsis y nosocomiales"
+  ],
+  "enunciado": "Un paciente de 35 años que se encuentra internado en el séptimo día del posoperatorio de esplenectomía por traumatismo cerrado de abdomen, comienza con taquipnea, desaturación y fiebre. Al examen físico presenta hipoventilación en la base del pulmón izquierdo. En el laboratorio se constata leucocitosis y en la radiografía de tórax se evidencia una radiopacidad homogénea en la base del pulmón izquierdo. Se realiza radioscopia y se observa parálisis del hemidiafragma izquierdo. Según su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+  "opciones": {
+    "a": "Laparotomía exploradora",
+    "b": "Drenaje percutáneo guiado por imágenes",
+    "c": "Colocación de tubo de drenaje pleural y tratamiento antibiótico",
+    "d": "Tratamiento antibiótico empírico de amplio espectro"
+  },
+  "correcta": "b",
+  "explicacion": "Una de las principales consecuencias del posoperatorio de esplenectomía es la presencia de **abscesos subfrénicos**.\n\nEl paciente se presenta con signos de infección (fiebre, dolor, alteraciones en la ventilación por dolor, taquicardia, taquipnea).\n\nLa indicación en primera instancia es el **drenaje percutáneo** de la colección guiado por imágenes.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_009",
+  "materia": [
+    "urologia",
+    "urologia_cx"
+  ],
+  "submateria": [
+    "Síndromes clínicos",
+    "Próstata"
+  ],
+  "enunciado": "Un varón de 70 años con antecedentes de prostatismo, consulta a la guardia por presentar dolor intenso en el hipogastrio e imposibilidad para la micción de 12 hs de evolución. Al examen físico se encuentra inquieto, sudoroso, taquicárdico e hipertenso. Se palpa el abdomen tenso, doloroso y con matidez en la región del hipogastrio hasta periumbilical. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Vejiga hipercontráctil.",
+    "b": "Estenosis uretral",
+    "c": "Hipertrofia de la próstata.",
+    "d": "Infección urinaria complicada."
+  },
+  "correcta": "c",
+  "explicacion": "La obstrucción infravesical puede debutar con dificultad miccional progresiva, pero los pacientes acuden a urgencias fundamentalmente con **retención aguda de orina**, que consiste en la imposibilidad miccional, a veces acompañada de micción escasa incontinente por rebosamiento, con dolor en el hipogastrio y evidencia en la exploración de globo vesical.\n\nLa causa más frecuente es la **HBP (Hiperplasia Benigna de Próstata)**, seguida de la estenosis uretral y de la vejiga hipocontráctil.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_010",
+  "materia": [
+    "urgencias",
+    "neurologia",
+    "cardiologia"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Otras preguntas de neurología",
+    "Síncope"
+  ],
+  "enunciado": "Un varón de 65 años, con antecedentes de cardiopatía isquémica y consumo de tabaco, acaba de sufrir un accidente de tránsito (chocó en solitario contra un árbol y se activó el airbag); se encuentra lúcido, bien perfundido y tiene una presión arterial sistólica de 68 mmHg, una frecuencia respiratoria de 24 respiraciones/minuto y una frecuencia cardíaca de 48 latidos/minuto. ¿Cuál es la causa más probable de shock?",
+  "opciones": {
+    "a": "Distributivo.",
+    "b": "Hipovolémico.",
+    "c": "Cardiogénico",
+    "d": "Neurogénico."
+  },
+  "correcta": "d",
+  "explicacion": "El **shock neurogénico** es del tipo distributivo, se lo define como una PAS < 100 mmHg y una **FC < 80 latidos por minuto** en el contexto de una lesión medular después de descartar otros diagnósticos.\n\nLa zona más afectada es la región cervical. El shock neurogénico describe la pérdida súbita del tono autonómico debido a lesión de la médula espinal.\n\nLa alteración de las vías descendentes simpáticas resulta en alteración del tono vagal en el músculo liso vascular, ocasionando disminución de la resistencia vascular sistémica y vasodilatación.\n\nUsualmente los pacientes presentan **hipotensión y bradicardia**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_011",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "¿Cuál es la conducta más adecuada con un paciente politraumatizado que ingresó a la guardia y se encuentra excitado, hipotenso, con dificultad respiratoria y contusiones en hemitórax derecho? En el examen físico presenta enfisema subcutáneo, ingurgitación yugular y disminución de la entrada de aire en hemitórax derecho.",
+  "opciones": {
+    "a": "Planificar drenaje pleural bajo anestesia en quirófano",
+    "b": "Drenar la cavidad pleural con una aguja en el 2º espacio intercostal derecho.",
+    "c": "Esperar al cirujano para que evalúe necesidad de drenar la cavidad pleural",
+    "d": "Realizar entubación endotraqueal"
+  },
+  "correcta": "b",
+  "explicacion": "El neumotórax se define como la presencia de aire en la cavidad pleural donde se pierde la presión negativa, lo que produce el colapso pulmonar.\n\nSe presenta con una triada clásica: disminución o ausencia de vibraciones vocales + timpanismo + ausencia o disminución del murmullo vesicular.\n\nEn el caso del **neumotórax hipertensivo** se agregan: signos de insuficiencia circulatoria (cianosis, taquicardia, e hipotensión) además ingurgitación yugular y desviación contralateral de tráquea y laringe.\n\nEste constituye un cuadro grave con riesgo para el paciente.\n\nLa primer indicación en el drenaje con **catéter grueso a nivel del 2do espacio intercostal** línea hemiclavicular, para disminuir la presión positiva en la pleura y mejorar los síntomas circulatorios hasta el avenamiento del tórax.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_012",
+  "materia": [
+    "urgencias",
+    "cirugiageneral"
+  ],
+  "submateria": [
+    "Paciente politraumatizado",
+    "Evaluación prequirúrgica"
+  ],
+  "enunciado": "Frente a un paciente politraumatizado, ¿cuál es la primera conducta que debe tomarse?",
+  "opciones": {
+    "a": "Colocación de accesos venosos con catéteres sobre agujas de grueso calibre",
+    "b": "Colocar férulas de tracción en caso de fracturas desalineadas",
+    "c": "Permeabilizar la vía aérea con control de la columna cervical",
+    "d": "Aplicación de torniquetes ante sangrado activo de miembros"
+  },
+  "correcta": "c",
+  "explicacion": "En un paciente con politraumatismo la primer medida es **A (mantener la vía aérea con control de la columna cervical)** B (asegurar una adecuada ventilación) C (control de hemorragias y shock) D (breve examen neurológico) y E (exponer al paciente, desvestirlo y evitar la hipotermia).",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_013",
+  "materia": [
+    "urgencias",
+    "cardiologia"
+  ],
+  "submateria": [
+    "Insuficiencia cardíaca",
+    "Cardiología básica"
+  ],
+  "enunciado": "En un paciente adulto con shock hipovolémico; ¿qué parámetros esperaría encontrar en el monitoreo hemodinámico? (referencias: VM: volumen minuto; RVS: resistencia vascular sistémica; PVC: presión venosa central).",
+  "opciones": {
+    "a": "PVC baja, VM bajo, RVS baja",
+    "b": "PVC alta, VM bajo, RVS alta",
+    "c": "PVC alta, VM alto, RVS baja",
+    "d": "PVC baja, VM bajo, RVS alta"
+  },
+  "correcta": "d",
+  "explicacion": "El **shock hipovolémico** es el tipo de shock mas frecuente.\n\nSe caracteriza por una disminución del volumen sanguíneo que no logra suplir las demandas metabólicas del organismo por lo que se producen mecanismos compensatorios (aumento del tono simpático, liberación de hormonas de estrés, colapso de vasos de capacitancia, disminución de la diuresis).\n\nEl diagnóstico puede realizarse fácilmente si se conoce la fuente de pérdida de volumen (ejemplo: hemorragia visible), pero puede ser mas dificultoso en caso de hemorragias ocultas.\n\nEs indispensable distinguir el shock hipovolémico del shock cardiogénico debido a que su tratamiento es diferente.\n\nEn el caso del shock hipovolémico los parámetros hemodinámicos que se pueden observar son: **gasto cardiaco disminuido (VM bajo)**, **presión capilar wedge y presión venosa central disminuidos (PVC baja)** y **resistencias vasculares sistémicas aumentadas (RVS alta)**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_014",
+  "materia": [
+    "cirugiageneral",
+    "infectologia"
+  ],
+  "submateria": [
+    "Otras preguntas de cirugía general",
+    "Sepsis y nosocomiales"
+  ],
+  "enunciado": "Un paciente de 20 años, que cursa el quinto día de posoperatorio de esplenectomía por traumatismo cerrado de abdomen, comienza con fiebre, leucocitosis, astenia y taquipnea. Al examen físico presenta disminución del murmullo vesicular en la base pulmonar izquierda; en la radiografía de tórax se observa imagen compatible con derrame pleural y en la radioscopia parálisis diafragmática izquierda. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Empiema pleural izquierdo",
+    "b": "Absceso subfrénico",
+    "c": "Neumonía izquierda",
+    "d": "Parálisis diafragmática postoperatoria"
+  },
+  "correcta": "b",
+  "explicacion": "Complicaciones de una esplenectomía:\n- Hemorragia postoperatoria.\n- Perforación gástrica (poco frecuente).\n- Trombosis vascular: se produce en aproximadamente el 5% de los pacientes después de la esplenectomía.\n- **Fístula pancreática - colección subfrénica**: se desarrolla en aproximadamente el 1,5 % de los pacientes después de la esplenectomía, debido a una lesión de la cola del páncreas, ya sea desde el trauma inicial o debido a la disección hiliar esplénica.\n\nSe debe pensar ante cualquier paciente que desarrolle dolor en el cuadrante superior izquierdo, fiebre y leucocitosis después de la esplenectomía debe realizarse una imagen con ecografía o tomografía computarizada para identificar cualquier acumulación de líquido en el cuadrante superior izquierdo.\n\nEl diagnóstico de la fístula pancreática se puede realizar mediante muestreo guiado percutáneo de líquido, lo que demuestra que el líquido rico en amilasa es indicativo de una fuga pancreática.\n\nLos cultivos del líquido también deben enviarse para descartar un absceso, que es más común que una fuga pancreática.\n- Infección perioperatoria: después de la esplenectomía, el paciente tiene un riesgo pequeño pero mayor de infección posoperatoria.\n- El absceso intraabdominal complica la esplenectomía en 3 a 13% de los pacientes y se asocia con lesiones concomitantes del tracto intestinal y la presencia de drenajes del lecho esplénico.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+},
+{
+  "id": "urgencias_003_015",
+  "materia": [
+    "urgencias",
+    "neumonologia"
+  ],
+  "submateria": [
+    "Síndromes torácicos",
+    "Pleura, mediastino y diafragma"
+  ],
+  "enunciado": "¿Cuál es el mecanismo que provoca en un trauma torácico el síndrome de respiración paradojal?",
+  "opciones": {
+    "a": "La ruptura simultánea de dos o más costillas y fractura esternal",
+    "b": "La ruptura de varias costillas en doble arco",
+    "c": "La asociación entre fractura esternal y neumotórax",
+    "d": "La asociación entre fracturas costales y hemotórax"
+  },
+  "correcta": "b",
+  "explicacion": "El síndrome de respiración paradojal se produce por la **fracturas de múltiples costillas consecutivas en doble arco** en un hemitórax dando lo que se denomina volet costal o tórax inestable, las costillas fracturadas se movilizan en forma independiente en la ventilación (se deprimen ante la inspiración).",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "Fuente": "prorem"
+}
+]
