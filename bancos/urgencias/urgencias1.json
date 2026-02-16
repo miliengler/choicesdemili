@@ -1,5 +1,5 @@
 [
-{
+    {
     "id": "urgencias001_001",
     "materia": ["urgencias", "neumonologia"],
     "submateria": ["Síndromes torácicos", "Pleura, mediastino y diafragma"],
@@ -30,7 +30,7 @@
       "d": "Realizar drenaje percutáneo del hematoma esplénico."
     },
     "correcta": "b",
-    "explicacion": "El **bazo** es el órgano intraabdominal que con mayor frecuencia se lesiona en los traumatismos abdominales cerrados.\n\nSe pueden ver desde contusiones hasta estallido con rotura de los vasos del hilio.\n\nEn las contusiones se puede realizar **tratamiento conservador** (control hemodinámico y seguimiento por tomografia y/o ecografia), y cuando hay sangrado activo o lesiones de más entidad, se realizará una laparotomia con esplenectomía.",
+    "explicacion": "El **bazo** es el órgano intraabdominal que con mayor frecuencia se lesiona en los traumatismos abdominales cerrados.\n\nSe pueden ver desde contusiones hasta estallido con rotura de los vasos del hilio.\n\nEn las contusiones se puede realizar **tratamiento conservador** (control hemodinámico y seguimiento por tomografía y/o ecografia), y cuando hay sangrado activo o lesiones de más entidad, se realizará una laparotomia con esplenectomía.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -39,8 +39,8 @@
   },
   {
     "id": "urgencias001_003",
-    "materia": ["imagenes", "neumonologia"],
-    "submateria": ["Radiografía", "Neumonía"],
+    "materia": ["urgencias", "imagenes", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Radiografía", "Neumonía"],
     "enunciado": "¿Cómo describiría la siguiente imagen radiológica?",
     "opciones": {
       "a": "Condensación del lóbulo medio derecho",
@@ -248,8 +248,8 @@
   },
   {
     "id": "urgencias001_014",
-    "materia": ["gastroenterologia"],
-    "submateria": ["Colon"],
+    "materia": ["urgencias", "gastroenterologia"],
+    "submateria": ["Otras preguntas de urgencias", "Colon"],
     "enunciado": "¿En un paciente de 70 años de edad, ¿cuál de las siguientes causas es la más frecuente de isquemia colónica aguda?",
     "opciones": {
       "a": "Episodio de disminución del gasto cardiaco (voumen minuto)",
@@ -305,8 +305,8 @@
   },
   {
     "id": "urgencias001_017",
-    "materia": ["gastroenterologia", "urgencias"],
-    "submateria": ["Intestino delgado", "Síndromes abdominales"],
+    "materia": ["urgencias", "gastroenterologia"],
+    "submateria": ["Síndromes abdominales", "Intestino delgado"],
     "enunciado": "¿Cuál es el diagnóstico más probable y la conducta más adecuada en un paciente de 65 años, tabaquista, que presenta intenso dolor abdominal de comienzo súbito hace 3 horas, un episodio de enterorragia en la última hora y en el examen físico presenta abdomen blando, sin reacción peritoneal?",
     "opciones": {
       "a": "Isquemia mesenterica aguda e indicar laparotomia exploradora",
@@ -324,8 +324,8 @@
   },
   {
     "id": "urgencias001_018",
-    "materia": ["cirugiageneral"],
-    "submateria": ["Otras preguntas de cirugía general"],
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de cirugía general"],
     "enunciado": "Un paciente que cursa el 6° día posoperatorio por trauma abdominal penetrante que requirió resección y anastomosis intestinal, comienza con hipertermia y leucocitosis. La tomografía informa aire subdiafragmático y líquido interasas en el espacio de Morrison. Ante la sospecha de peritonitis por dehiscencia anastomótica. ¿Cuál de las siguientes condiciones indica necesidad de intervención quirúrgica?",
     "opciones": {
       "a": "Presencia de ileo paralitico prolongado",
@@ -343,8 +343,8 @@
   },
   {
     "id": "urgencias001_019",
-    "materia": ["neumonologia", "cardiologia"],
-    "submateria": ["Semiología", "Insuficiencia cardíaca"],
+    "materia": ["urgencias", "neumonologia", "cardiologia"],
+    "submateria": ["Otras preguntas de urgencias", "Semiología", "Insuficiencia cardíaca"],
     "enunciado": "¿Qué representan las líneas B de Kerley?",
     "opciones": {
       "a": "Septos interlobulilares visibles",
@@ -362,8 +362,8 @@
   },
   {
     "id": "urgencias001_020",
-    "materia": ["imagenes", "neumonologia"],
-    "submateria": ["Radiografía", "Otras preguntas de neumonología"],
+    "materia": ["urgencias", "imagenes", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Radiografía", "Otras preguntas de neumonología"],
     "enunciado": "¿Qué diagnóstico puede inferir a partir de la siguiente radiografía de tórax?",
     "opciones": {
       "a": "Atelectasia del lóbulo superior derecho.",
@@ -419,8 +419,8 @@
   },
   {
     "id": "urgencias001_023",
-    "materia": ["imagenes", "neumonologia"],
-    "submateria": ["Radiografía", "Otras preguntas de neumonología"],
+    "materia": ["urgencias", "imagenes", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Radiografía", "Otras preguntas de neumonología"],
     "enunciado": "¿A cuál de los siguientes cuadros respiratorios corresponde una radiografía de tórax en la que se observa opacidad del hemitórax izquierdo, con elevación del diafragma ipsolateral, desviación del hilio y mediastino hacia la izquierda?",
     "opciones": {
       "a": "Atelectasia pulmonar total",
@@ -438,8 +438,8 @@
   },
   {
     "id": "urgencias001_024",
-    "materia": ["neumonologia", "reumatologia"],
-    "submateria": ["Enfermedades intersticiales", "Otras enfermedades reumatológicas"],
+    "materia": ["urgencias", "neumonologia", "reumatologia"],
+    "submateria": ["Otras preguntas de urgencias", "Enfermedades intersticiales", "Otras enfermedades reumatológicas"],
     "enunciado": "De las siguientes patologías ¿cuál es más probable que se manifieste en la radiografía simple de tórax con un patrón de enfermedad intersticial difusa?",
     "opciones": {
       "a": "Bronquiolitis obliterante con neumonia organizada",
@@ -476,8 +476,8 @@
   },
   {
     "id": "urgencias001_026",
-    "materia": ["neurocirugia", "otorrinolaringologia"],
-    "submateria": ["Neurocirugía", "Nariz"],
+    "materia": ["urgencias", "neurocirugia", "otorrinolaringologia"],
+    "submateria": ["Otras preguntas de urgencias", "Neurocirugía", "Nariz"],
     "enunciado": "Una mujer de 35 años ingresa a la guardia por traumatismo encefálico y maxilofacial secundario a colisión vehicular. Al examen inicial presenta: Glasgow: 15/15, ΤΑ: 105/70 mm de Hg, FR: 22/min. El examen secundario revela fractura de huesos propios de la nariz de la rama horizontal derecha del maxilar inferior y rinorrea. ¿Cuál es el tratamiento más adecuado para la rinorrea?",
     "opciones": {
       "a": "Tratamiento quirúrgico independientemente del tiempo de evolución de la rinorrea",
@@ -495,8 +495,8 @@
   },
   {
     "id": "urgencias001_027",
-    "materia": ["cirugiageneral", "urgencias"],
-    "submateria": ["Otras preguntas de cirugía general", "Síndromes abdominales"],
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Síndromes abdominales", "Otras preguntas de cirugía general"],
     "enunciado": "Paciente mujer de 30 años consulta por dolor abdominal de iniciación brusca, en hemiabdomen inferior, fiebre y dos episodios de vómitos alimentarios. Es la primera vez que presenta este cuadro. ¿Qué hallazgo del examen físico le hace sospechar un abdomen agudo quirúrgico?",
     "opciones": {
       "a": "Disminución de los ruidos hidroaéreos",
@@ -514,8 +514,8 @@
   },
   {
     "id": "urgencias001_028",
-    "materia": ["gastroenterologia"],
-    "submateria": ["Cáncer colorrectal"],
+    "materia": ["urgencias", "gastroenterologia"],
+    "submateria": ["Otras preguntas de urgencias", "Cáncer colorrectal"],
     "enunciado": "¿Cuál es la metodología diagnóstica más adecuada en un paciente de 62 años, que consulta por haber presentado proctorragia en dos o tres oportunidades durante la última semana? En el examen físico se encuentra compensado hemodinámicamente, no presenta ortostatismo, se observa palpación abdominal normal y en el examen anal se observan pequeñas hemorroides prolapsadas.",
     "opciones": {
       "a": "Rectosigmoidoscopia",
@@ -628,8 +628,8 @@
   },
   {
     "id": "urgencias001_034",
-    "materia": ["imagenes", "neumonologia"],
-    "submateria": ["Radiografía", "Otras preguntas de neumonología"],
+    "materia": ["urgencias", "imagenes", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Radiografía", "Otras preguntas de neumonología"],
     "enunciado": "¿Qué observa en las radiografías de tórax?",
     "opciones": {
       "a": "Condensación pulmonar en base izquierda de localización posterior",
@@ -687,7 +687,7 @@
     "id": "urgencias001_037",
     "materia": ["urgencias", "neumonologia"],
     "submateria": ["Síndromes torácicos", "Pleura, mediastino y diafragma"],
-    "enunciado": "¿Cuál es el diagnóstico más probable en un paciente con un traumatismo cerrado de tórax derecho que presenta disnea, taquicardia e hipotensión? En el examen físico presenta hemitórax derecho con hipersonoridad percutoria y ausencia del murmullo vesicular y en la radiografía de tórax se observa desviación de la tráquea hacia la izquierda.",
+    "enunciado": "¿Cuál es el diagnóstico más probable en un paciente con un traumatismo cerrado de tórax derecho que presenta con disnea, taquicardia e hipotensión? En el examen físico presenta hemitórax derecho con hipersonoridad percutoria y ausencia del murmullo vesicular y en la radiografía de tórax se observa desviación de la tráquea hacia la izquierda.",
     "opciones": {
       "a": "Neumotorax espontáneo",
       "b": "Hemotórax masivo",
@@ -742,8 +742,8 @@
   },
   {
     "id": "urgencias001_040",
-    "materia": ["traumatologia"],
-    "submateria": ["Columna vertebral"],
+    "materia": ["urgencias", "traumatologia"],
+    "submateria": ["Otras preguntas de urgencias", "Columna vertebral"],
     "enunciado": "¿Cuál es la conducta más adecuada con un joven de 30 años que consulta por dolor intenso cervical con irradiación a ambos hombros y dificultad para girar la cabeza, y relata que hace dos horas fue embestido de atrás por una bicicleta? En el examen físico presenta leve rigidez para mover la cabeza, sin signos neurológicos.",
     "opciones": {
       "a": "Indicar ibuprofeno 600 mg cada 8 horas, colocar collar cervical y citar a control por consultorio externo",
@@ -761,8 +761,8 @@
   },
   {
     "id": "urgencias001_041",
-    "materia": ["pediatria", "urgencias"],
-    "submateria": ["Otras preguntas de pediatría", "Paciente politraumatizado"],
+    "materia": ["urgencias", "pediatria"],
+    "submateria": ["Paciente politraumatizado", "Otras preguntas de pediatría"],
     "enunciado": "Un niño de 10 años, de 30kg de peso, fue embestido por un auto. Se encuentra obnubilado, con vía aérea sostenible, tensión arterial sistólica de 80 mm Hg, fracturas múltiples cerradas en extremidades y tres heridas menores. ¿Cuál es el Índice de Trauma Pediátrico?",
     "opciones": {
       "a": "5",
@@ -780,8 +780,8 @@
   },
   {
     "id": "urgencias001_042",
-    "materia": ["gastroenterologia"],
-    "submateria": ["Otras preguntas de gastroenterología"],
+    "materia": ["urgencias", "gastroenterologia"],
+    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de gastroenterología"],
     "enunciado": "Un paciente de 53 años es derivado a gastroenterología para el estudio de anemia detectada semanas atrás en consultorio externo de clínica médica. Al interrogatorio refiere astenia y al examen físico se presenta hemodinámicamente compensado con signos vitales normales. El laboratorio actual muestra Hto 30%, Hb 9 g/dL, VCM 69 fL con el resto de las series normales, Ferremia 20 ng/mL, Ferritina 22 ng/mlL, Ac Antitransglutaminasa y Ac antigliadina negativos. La ecografía abdominal, el tránsito intestinal, la FEDA y la videocolonoscopia (VCC) no presentan alteraciones. ¿Qué estudio debe solicitarse a continuación?",
     "opciones": {
       "a": "Gammagrafia con glóbulos rojos marcados con Tc99",
@@ -799,8 +799,8 @@
   },
   {
     "id": "urgencias001_043",
-    "materia": ["pediatria", "urologia_cx"],
-    "submateria": ["Otras preguntas de pediatría", "Urgencias urológicas y traumatismos"],
+    "materia": ["urgencias", "pediatria", "urologia_cx"],
+    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de pediatría", "Urgencias urológicas y traumatismos"],
     "enunciado": "Un niño de seis años, víctima de un accidente motovehicular, es trasladado a la guardia. Al realizarse el examen físico secundario se constata hematoma perineal con globo vesical. ¿Cuál es su conducta inicial?",
     "opciones": {
       "a": "Determinar micro/macrohematuria ante la primera micción espontánea",
@@ -837,8 +837,8 @@
   },
   {
     "id": "urgencias001_045",
-    "materia": ["neumonologia"],
-    "submateria": ["Tromboembolia de pulmón"],
+    "materia": ["urgencias", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Tromboembolia de pulmón"],
     "enunciado": "Una mujer de 41 años consulta a guardia por disnea de comienzo súbito CF III-IV de algunas horas de duración. Los síntomas comenzaron en su lugar de trabajo. Registra como único antecedente de relevancia la ingesta de anticonceptivos orales. Al ingreso se presenta lúcida, taquipneica, taquicárdica (FC: 110 lpm), TA: 110/70 mm Hg con examen físico normal. La Rx de tórax es normal y el ECG muestra taquicardia sinusal y bloqueo incompleto de rama derecha. ¿En qué categoría de riesgo de TEP ubica a la paciente y cuál de los estudios diagnósticos habitualmente empleados considera en primera instancia en este caso?",
     "opciones": {
       "a": "Alta probabilidad, angiotomografia helicoidal",
@@ -932,8 +932,8 @@
   },
   {
     "id": "urgencias001_050",
-    "materia": ["imagenes", "neumonologia"],
-    "submateria": ["Radiografía", "Otras preguntas de neumonología"],
+    "materia": ["urgencias", "imagenes", "neumonologia"],
+    "submateria": ["Otras preguntas de urgencias", "Radiografía", "Otras preguntas de neumonología"],
     "enunciado": "¿Qué imagen observa en la siguiente radiografía de tórax?",
     "opciones": {
       "a": "Atelectasia sin signos de derrame pleural",
@@ -951,8 +951,8 @@
   },
   {
     "id": "urgencias001_051",
-    "materia": ["cirugiageneral"],
-    "submateria": ["Otras preguntas de cirugía general"],
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de cirugía general"],
     "enunciado": "En una cirugía colónica de urgencia con resección amplia del intestino grueso (colon derecho e izquierdo) se decide no realizar una anastomosis ileorrectal primaria. ¿Cuál es el sitio ideal para emplazar la ileostomía?",
     "opciones": {
       "a": "Cercano a la incisión abdominal",
@@ -1046,8 +1046,8 @@
   },
   {
     "id": "urgencias001_056",
-    "materia": ["cirugiageneral", "urgencias"],
-    "submateria": ["Otras preguntas de cirugía general", "Síndromes abdominales"],
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Síndromes abdominales", "Otras preguntas de cirugía general"],
     "enunciado": "Un paciente de 35 años que se encuentra internado en el séptimo día del posoperatorio de esplenectomía por traumatismo cerrado de abdomen, comienza con taquipnea, desaturación y fiebre. Al examen físico presenta hipoventilación en la base del pulmón izquierdo. En el laboratorio se constata leucocitosis y en la radiografía de tórax se evidencia una radiopacidad homogénea en la base del pulmón izquierdo. Se realiza radioscopia y se observa parálisis del hemidiafragma izquierdo. Según su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Laparotomia exploradora",
@@ -1065,8 +1065,8 @@
   },
   {
     "id": "urgencias001_057",
-    "materia": ["urologia_cx"],
-    "submateria": ["Próstata"],
+    "materia": ["urgencias", "urologia_cx"],
+    "submateria": ["Otras preguntas de urgencias", "Próstata"],
     "enunciado": "Un varón de 70 años con antecedentes de prostatismo, consulta a la guardia por presentar dolor intenso en el hipogastrio e imposibilidad para la micción de 12 hs de evolución. Al examen físico se encuentra inquieto, sudoroso, taquicárdico e hipertenso. Se palpa el abdomen tenso, doloroso y con matidez en la región del hipogastrio hasta periumbilical. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Vejiga hipercontráctil.",
@@ -1160,8 +1160,8 @@
   },
   {
     "id": "urgencias001_062",
-    "materia": ["cirugiageneral", "urgencias"],
-    "submateria": ["Otras preguntas de cirugía general", "Síndromes abdominales"],
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Síndromes abdominales", "Otras preguntas de cirugía general"],
     "enunciado": "Un paciente de 20 años, que cursa el quinto día de posoperatorio de esplenectomía por traumatismo cerrado de abdomen, comienza con fiebre, leucocitosis, astenia y taquipnea. Al examen físico presenta disminución del murmullo vesicular en la base pulmonar izquierda; en la radiografía de tórax se observa imagen compatible con derrame pleural y en la radioscopia parálisis diafragmática izquierda. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Empiema pleural izquierdo",
