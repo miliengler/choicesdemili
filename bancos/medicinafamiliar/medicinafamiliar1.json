@@ -1,5 +1,5 @@
 [  
-  {
+ {
     "id": "medfliar001_001",
     "materia": ["medicinafamiliar", "infectologia"],
     "submateria": ["Adulto mayor", "Otras preguntas de infectología"],
@@ -11,7 +11,7 @@
       "d": "Esperar al menos dos semanas tras la gammaglobulina y luego administrar una única dosis de vacuna VCN 20 como refuerzo."
     },
     "correcta": "d",
-    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nLa conducta más adecuada es esperar al menos **dos semanas** tras la gammaglobulina y luego administrar una única dosis de vacuna conjugada **VCN 20** como refuerzo.\n\nLa administración de inmunoglobulinas (como la **gammaglobulina antitetánica**) puede interferir con la respuesta a vacunas inactivadas y conjugadas. Se recomienda esperar al menos **2 semanas** para asegurar una respuesta inmune adecuada.\n\n- **Vacunarlo ahora**: incorrecto porque no han pasado 2 semanas desde la gammaglobulina.\n- **Esperar 10 años**: no hay recomendación de esperar 10 años, este intervalo aplica solo para repetir PPSV23 si fue aplicada antes de los 65.\n- **Esperar 1 mes**: no es necesario esperar tanto; el intervalo recomendado tras inmunoglobulina es de 2 semanas.",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\n\nLa conducta más adecuada es esperar al menos **dos semanas** tras la gammaglobulina y luego administrar una única dosis de vacuna conjugada **VCN 20** como refuerzo.\n\nLa administración de inmunoglobulinas (como la **gammaglobulina antitetánica**) puede interferir con la respuesta a vacunas inactivadas y conjugadas. Se recomienda esperar al menos **2 semanas** para asegurar una respuesta inmune adecuada.\n\n- **Vacunarlo ahora**: incorrecto porque no han pasado 2 semanas desde la gammaglobulina.\n- **Esperar 10 años**: no hay recomendación de esperar 10 años, este intervalo aplica solo para repetir PPSV23 si fue aplicada antes de los 65.\n- **Esperar un mes**: no es necesario esperar tanto; el intervalo recomendado tras inmunoglobulina es de 2 semanas.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -58,8 +58,8 @@
   },
   {
     "id": "medfliar001_004",
-    "materia": ["neurologia", "psiquiatria"],
-    "submateria": ["Otras preguntas de neurología", "Otras preguntas de psiquiatría"],
+    "materia": ["medicinafamiliar", "neurologia", "psiquiatria"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología", "Otras preguntas de psiquiatría"],
     "enunciado": "Paciente de 78 años, con antecedentes de hipertensión arterial, fue evaluada en el consultorio de neurología por presentar trastornos en la memoria anterógrada y fallas en la atención asociado a alucinaciones visuales de al menos 6 meses de evolución, que empeoraron en las últimas semanas, asociadas a bradicinesia y temblor en reposo. Fue evaluada ambulatoriamente indicándose L-dopa. A las 24 horas presentó un síndrome confusional alucinatorio. ¿Qué diagnóstico explica este cuadro?",
     "opciones": {
       "a": "Demencia con cuerpos de Lewy",
@@ -77,8 +77,8 @@
   },
   {
     "id": "medfliar001_005",
-    "materia": ["urologia_cx", "saludpublica"],
-    "submateria": ["Próstata", "Evaluación de pruebas diagnósticas"],
+    "materia": ["medicinafamiliar", "urologia_cx", "saludpublica"],
+    "submateria": ["Adulto mayor", "Próstata", "Evaluación de pruebas diagnósticas"],
     "enunciado": "Los estudios no han podido demostrar que la utilización del screening de cáncer de próstata permite:",
     "opciones": {
       "a": "El aumento del diagnóstico del cáncer de próstata localizado",
@@ -115,8 +115,8 @@
   },
   {
     "id": "medfliar001_007",
-    "materia": ["neurologia", "psiquiatria"],
-    "submateria": ["Otras preguntas de neurología", "Trastornos psicóticos"],
+    "materia": ["medicinafamiliar", "neurologia", "psiquiatria"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología", "Trastornos psicóticos"],
     "enunciado": "Un paciente de 73 años presenta deterioro cognitivo, lentitud y torpeza en los movimientos de ocho meses de evolución. La familia refiere que alterna periodos de lucidez y confusión y que presenta alucinaciones visuales, lo que motivó que su médico indicara haloperidol con aparición de marcado deterioro de la función motora. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Enfermedad de Parkinson",
@@ -134,8 +134,8 @@
   },
   {
     "id": "medfliar001_008",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Una mujer de 70 años acude a la consulta porque hace unos meses se ha vuelto retraída, apática e irritable. Presenta dificultad para acordarse de cosas del día anterior y problemas para calcular dinero. A la evaluación está desorientada en tiempo y espacio, desprolija, lúcida pero ansiosa. TC muestra marcada atrofia cortical y Mini Mental Test (MMSE) de 19. ¿Cuál es el diagnóstico más probable y conducta?",
     "opciones": {
       "a": "Sindrome confusional agudo, tratamiento de su causa",
@@ -267,8 +267,8 @@
   },
   {
     "id": "medfliar001_015",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Matilde de 77 años, retraída, se perdió en el barrio recientemente. Antecedentes de HTA (Enalapril e Hidroclorotiazida) y dos accidentes isquémicos transitorios. Luce triste, tarda en responder y MMSE de 17/30. Examen neurológico sin déficit motor. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Demencia",
@@ -286,8 +286,8 @@
   },
   {
     "id": "medfliar001_016",
-    "materia": ["neurologia", "urologia_cx"],
-    "submateria": ["Otras preguntas de neurología", "Urología funcional e incontinencia"],
+    "materia": ["medicinafamiliar", "neurologia", "urologia_cx"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología", "Urología funcional e incontinencia"],
     "enunciado": "La tríada clínica de la enfermedad de Hakim Adams consiste en:",
     "opciones": {
       "a": "Trastornos de la marcha, demencia e incontinencia urinaria",
@@ -305,8 +305,8 @@
   },
   {
     "id": "medfliar001_017",
-    "materia": ["reumatologia"],
-    "submateria": ["Metabólica ósea"],
+    "materia": ["medicinafamiliar", "reumatologia"],
+    "submateria": ["Adulto mayor", "Metabólica ósea"],
     "enunciado": "¿Cuál de los siguientes es el mejor predictor de riesgo de fractura vertebral osteoporótica en personas sin fracturas?",
     "opciones": {
       "a": "Baja densidad mineral ósea en raquis lumbar",
@@ -400,8 +400,8 @@
   },
   {
     "id": "medfliar001_022",
-    "materia": ["neurologia", "psiquiatria"],
-    "submateria": ["Otras preguntas de neurología", "Trastornos psicóticos"],
+    "materia": ["medicinafamiliar", "neurologia", "psiquiatria"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología", "Trastornos psicóticos"],
     "enunciado": "Respecto a la demencia por cuerpos de Lewy, ¿cuál de los siguientes enunciados es correcto?",
     "opciones": {
       "a": "Es una entidad clínico-patológica caracterizada por la asociación de deterioro mental fluctuante, parkinsonismo y síntomas psicóticos",
@@ -439,7 +439,7 @@
   {
     "id": "medfliar001_024",
     "materia": ["medicinafamiliar", "oftalmologia"],
-    "submateria": ["Control de salud", "Refracción"],
+    "submateria": ["Adulto mayor", "Refracción"],
     "enunciado": "Un paciente de 67 años sin antecedentes de relevancia concurre a la consulta. ¿Qué práctica preventiva recomendada debe efectuarse?",
     "opciones": {
       "a": "Palpación abdominal",
@@ -457,8 +457,8 @@
   },
   {
     "id": "medfliar001_025",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Según su etiología, la demencia degenerativa más frecuente es la demencia tipo:",
     "opciones": {
       "a": "Vascular",
@@ -476,8 +476,8 @@
   },
   {
     "id": "medfliar001_026",
-    "materia": ["ginecologia", "urologia_cx"],
-    "submateria": ["Prolapso e IU", "Urología funcional e incontinencia"],
+    "materia": ["medicinafamiliar", "ginecologia", "urologia_cx"],
+    "submateria": ["Adulto mayor", "Prolapso e IU", "Urología funcional e incontinencia"],
     "enunciado": "Mujer de 73 años con antecedentes de HTA, EPOC e IMC 41 kg/m2 refiere: \"cuando siente ganas de hacer pis y está en camino al baño se le escapa un poco\". ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Ejercicios de suelo pélvico, plan nutricional e inyección de toxina botulínica",
@@ -496,7 +496,7 @@
   {
     "id": "medfliar001_027",
     "materia": ["medicinafamiliar"],
-    "submateria": ["Control de salud"],
+    "submateria": ["Adulto mayor"],
     "enunciado": "Un paciente de 66 años sin antecedentes consulta para control de salud. Además del registro anual de TA, ¿qué recomendaciones le haría?",
     "opciones": {
       "a": "Medición de peso y altura cada 3 años; vacunas antineumocóccica e influenza anualmente",
@@ -571,8 +571,8 @@
   },
   {
     "id": "medfliar001_031",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Consulta una mujer de 72 años con antecedentes cardiovasculares por amnesia anterógrada, dificultad en fluidez verbal y para realizar actividades como cocinar o bañarse. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Queja cognitiva",
@@ -600,7 +600,7 @@
       "d": "Solicitar tomografía computada de cerebro"
     },
     "correcta": "a",
-    "explicacion": "Para la valoración del estado cognitivo es útil la utilización de escalas neurológicas validadas como el **Mini Mental State Examination** [cite: 602][cite_start].\n\nEntre los diagnósticos diferenciales del trastorno cognitivo se deben incluir enfermedades psiquiátricas como la **depresión mayor**[cite: 603]. La depresión en el anciano puede manifestarse con fallas de atención y concentración que simulan una demencia (pseudodemencia depresiva).",
+    "explicacion": "Para la valoración del estado cognitivo es útil la utilización de escalas neurológicas validadas como el **Mini Mental State Examination**.\n\nEntre los diagnósticos diferenciales del trastorno cognitivo se deben incluir enfermedades psiquiátricas como la **depresión mayor**. La depresión en el anciano puede manifestarse con fallas de atención y concentración que simulan una demencia (pseudodemencia depresiva).",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -619,7 +619,7 @@
       "d": "Radiografía de tórax"
     },
     "correcta": "c",
-    "explicacion": "Se recomienda realizar una **ecografía abdominal** por única vez en varones de entre **65-75 años** que alguna vez fumaron para el rastreo de **aneurisma de aorta abdominal**[cite: 615].",
+    "explicacion": "Se recomienda realizar una **ecografía abdominal** por única vez en varones de entre **65-75 años** que alguna vez fumaron para el rastreo de **aneurisma de aorta abdominal**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -628,8 +628,8 @@
   },
   {
     "id": "medfliar001_034",
-    "materia": ["otras"],
-    "submateria": ["Otras"],
+    "materia": ["medicinafamiliar"],
+    "submateria": ["Adulto mayor"],
     "enunciado": "¿Qué estudia la Geriatría?",
     "opciones": {
       "a": "Es la rama de la medicina que se ocupa de los problemas de salud de los adultos mayores",
@@ -638,7 +638,7 @@
       "d": "Es la rama de la medicina que se ocupa del estudio del envejecimiento"
     },
     "correcta": "a",
-    "explicacion": "La **Geriatría** es la rama de la medicina que se ocupa de los problemas de salud de los **adultos mayores**[cite: 629].",
+    "explicacion": "La **Geriatría** es la rama de la medicina que se ocupa de los problemas de salud de los **adultos mayores**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -647,8 +647,8 @@
   },
   {
     "id": "medfliar001_035",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Una mujer de 67 años es traída a urgencias por cuadro de tres semanas de evolución consistente en sensación rotacional externa, bradilalia, bradipsiquia, desorientación e insomnio. Al examen presenta compromiso cerebeloso, de memoria y lenguaje. La RMN evidencia hiperintensidad en putamen y cabeza de caudado en T2 y el EEG informa ondas trifásicas. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Encefalitis de Hashimoto",
@@ -657,7 +657,7 @@
       "d": "Encefalitis mediada inmunológicamente"
     },
     "correcta": "b",
-    "explicacion": "La **enfermedad de Creutzfeldt-Jakob** se caracteriza por una **demencia rápidamente progresiva** asociada a trastornos del movimiento como ataxia y mioclonías [cite: 645][cite_start].\n\nHallazgos típicos:\n- **RM**: hiperintensidad en putamen y cabeza de caudado en T2 [cite: 646][cite_start].\n- **EEG**: ondas trifásicas [cite: 647][cite_start].\n- **Punción lumbar**: proteína 14.3.3 elevada[cite: 647].",
+    "explicacion": "La **enfermedad de Creutzfeldt-Jakob** se caracteriza por una **demencia rápidamente progresiva** asociada a trastornos del movimiento como ataxia y mioclonías.\n\nHallazgos típicos:\n- **RM**: hiperintensidad en putamen y cabeza de caudado en T2.\n- **EEG**: ondas trifásicas.\n- **Punción lumbar**: proteína 14.3.3 elevada.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -666,8 +666,8 @@
   },
   {
     "id": "medfliar001_036",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "¿Cuál es la causa más frecuente de demencia en las personas mayores de 65 años?",
     "opciones": {
       "a": "Demencia por Parkinson",
@@ -676,7 +676,7 @@
       "d": "Enfermedad de Alzheimer"
     },
     "correcta": "d",
-    "explicacion": "La **Enfermedad de Alzheimer** es la demencia más frecuente y su incidencia aumenta con la edad[cite: 658].",
+    "explicacion": "La **Enfermedad de Alzheimer** es la demencia más frecuente y su incidencia aumenta con la edad.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -695,7 +695,7 @@
       "d": "Vacuna contra el neumococo, influenza y refuerzo de doble adulto (DT)"
     },
     "correcta": "d",
-    "explicacion": "Deben indicarse vacunas contra el **neumococo**, **influenza** (anual) y el refuerzo de la **doble adultos** cada diez años[cite: 672].",
+    "explicacion": "Deben indicarse vacunas contra el **neumococo**, **influenza** (anual) y el refuerzo de la **doble adultos** cada diez años.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -704,8 +704,8 @@
   },
   {
     "id": "medfliar001_038",
-    "materia": ["urgencias", "neurologia"],
-    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "urgencias", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de urgencias", "Otras preguntas de neurología"],
     "enunciado": "Jaime de 76 años está en el segundo día postoperatorio de reemplazo de cadera. Durante la noche presentó síndrome confusional sin excitación psicomotriz. Tiene sonda vesical con orina clara. Señale la conducta a seguir:",
     "opciones": {
       "a": "Evalúa la posibilidad de administrar flumazenil",
@@ -714,7 +714,7 @@
       "d": "Solicita una TAC de cerebro"
     },
     "correcta": "b",
-    "explicacion": "El **delirium o síndrome confusional** es una alteración del nivel de conciencia de inicio brusco y curso fluctuante [cite: 686][cite_start].\n\nSe debe evaluar la **medicación** que está tomando, ya que fármacos como las benzodiacepinas pueden desencadenarlo o empeorarlo[cite: 686, 692].",
+    "explicacion": "El **delirium o síndrome confusional** es una alteración del nivel de conciencia de inicio brusco y curso fluctuante.\n\nSe debe evaluar la **medicación** que está tomando, ya que fármacos como las benzodiacepinas pueden desencadenarlo o empeorarlo.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -723,8 +723,8 @@
   },
   {
     "id": "medfliar001_039",
-    "materia": ["urologia_cx"],
-    "submateria": ["Próstata"],
+    "materia": ["medicinafamiliar", "urologia_cx"],
+    "submateria": ["Adulto mayor", "Próstata"],
     "enunciado": "Varón de 70 años refiere retraso en el inicio de la micción, disminución de la fuerza y del calibre miccional y goteo posmiccional. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Cálculos vesicales",
@@ -733,7 +733,7 @@
       "d": "Síntomas irritativos de HBP"
     },
     "correcta": "c",
-    "explicacion": "Los **síntomas obstructivos** (de vaciado) de la **Hiperplasia Benigna de Próstata (HBP)** incluyen:\n- Retraso en el inicio de la micción [cite: 705][cite_start].\n- Disminución de la fuerza y calibre miccional [cite: 706][cite_start].\n- **Goteo posmiccional** [cite: 706][cite_start].\n- Sensación de vaciado incompleto[cite: 706].",
+    "explicacion": "Los **síntomas obstructivos** (de vaciado) de la **Hiperplasia Benigna de Próstata (HBP)** incluyen:\n- Retraso en el inicio de la micción.\n- Disminución de la fuerza y calibre miccional.\n- **Goteo posmiccional**.\n- Sensación de vaciado incompleto.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -742,8 +742,8 @@
   },
   {
     "id": "medfliar001_040",
-    "materia": ["urologia_cx", "saludpublica"],
-    "submateria": ["Próstata", "Evaluación de pruebas diagnósticas"],
+    "materia": ["medicinafamiliar", "urologia_cx", "saludpublica"],
+    "submateria": ["Adulto mayor", "Próstata", "Evaluación de pruebas diagnósticas"],
     "enunciado": "Un varón de 67 años quiere asesorarse sobre el rastreo de cáncer de próstata. ¿Cuál es la conducta más adecuada?",
     "opciones": {
       "a": "Solicitar PSA, realizar tacto rectal y repetirlo cada 2 años hasta cumplir 75 años",
@@ -752,7 +752,7 @@
       "d": "Solicitar PSA específico y PSA total de manera anual hasta cumplir los 70 años"
     },
     "correcta": "b",
-    "explicacion": "Se recomienda **discutir con el paciente** las ventajas y desventajas del cribado [cite: 722][cite_start].\n\nOrganizaciones como la AAFP y USPSTF se encuentran en contra del cribado sistemático porque su tratamiento en estadios tempranos no altera la historia natural de la enfermedad y puede asociarse a complicaciones como **impotencia** o **incontinencia**[cite: 719, 721].",
+    "explicacion": "Se recomienda **discutir con el paciente** las ventajas y desventajas del cribado.\n\nOrganizaciones como la AAFP y USPSTF se encuentran en contra del cribado sistemático porque su tratamiento en estadios tempranos no altera la historia natural de la enfermedad y puede asociarse a complicaciones como **impotencia** o **incontinencia**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -762,7 +762,7 @@
   {
     "id": "medfliar001_041",
     "materia": ["medicinafamiliar", "ginecologia"],
-    "submateria": ["Control de salud", "Cáncer de mama"],
+    "submateria": ["Adulto mayor", "Cáncer de mama"],
     "enunciado": "¿Qué prácticas preventivas corresponden a una paciente mujer de 70 años no fumadora sin antecedentes de importancia con controles de salud al día?",
     "opciones": {
       "a": "Rastreo de cáncer de mama; rastreo de cáncer de colon y rastreo de osteoporosis",
@@ -771,7 +771,7 @@
       "d": "Rastreo de cáncer de mama y rastreo de aneurisma de aorta"
     },
     "correcta": "a",
-    "explicacion": "Prácticas recomendadas a los 70 años:\n- **Cáncer de mama**: hasta los 75 años [cite: 740, 742][cite_start].\n- **Cáncer colorrectal**: rastreo hasta los 75 años [cite: 749][cite_start].\n- **Osteoporosis**: en mujeres mayores de 65 años [cite: 752][cite_start].\n\n*Nota*: El rastreo de aneurisma de aorta abdominal en mujeres solo se recomienda si alguna vez fumaron[cite: 615].",
+    "explicacion": "Prácticas recomendadas a los 70 años:\n- **Cáncer de mama**: hasta los 75 años.\n- **Cáncer colorrectal**: rastreo hasta los 75 años.\n- **Osteoporosis**: en mujeres mayores de 65 años.\n\n*Nota*: El rastreo de aneurisma de aorta abdominal en mujeres solo se recomienda si alguna vez fumaron.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -790,7 +790,7 @@
       "d": "Deterioro cognitivo muy severo"
     },
     "correcta": "b",
-    "explicacion": "Un puntaje de **27 puntos o más** se considera **Normal**, indicando una adecuada capacidad cognoscitiva[cite: 774]. [cite_start]El punto de corte para sospecha patológica suele ser **23 o menos**[cite: 772, 775].",
+    "explicacion": "Un puntaje de **27 puntos o más** se considera **Normal**, indicando una adecuada capacidad cognoscitiva. El punto de corte para sospecha patológica suele ser **23 o menos**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -799,8 +799,8 @@
   },
   {
     "id": "medfliar001_043",
-    "materia": ["urologia_cx", "oncologia"],
-    "submateria": ["Cáncer de riñón y otros tumores renales", "Otras preguntas de oncología"],
+    "materia": ["medicinafamiliar", "urologia_cx", "oncologia"],
+    "submateria": ["Adulto mayor", "Cáncer de riñón y otros tumores renales", "Otras preguntas de oncología"],
     "enunciado": "Varón de 73 años con cáncer de próstata. El informe dice: \"tumor confinado a la próstata que afecta la mitad de un lóbulo, sin extensión extraprostática, sin afectación ganglionar ni a distancia\". Según el TNM, ¿en qué estadio se encuentra?",
     "opciones": {
       "a": "T1c N0 M0",
@@ -809,7 +809,7 @@
       "d": "T3a N0 M0"
     },
     "correcta": "c",
-    "explicacion": "Según la clasificación TNM para cáncer de próstata:\n- **T2**: Tumor confinado a la próstata [cite: 790][cite_start].\n- **T2a**: Afecta menos de la mitad de un lóbulo [cite: 791][cite_start].\n- **T2b**: Afecta **la mitad de un lóbulo** [cite: 792][cite_start].\n- **N0/M0**: Sin afectación ganglionar ni metástasis[cite: 780].",
+    "explicacion": "Según la clasificación TNM para cáncer de próstata:\n- **T2**: Tumor confinado a la próstata.\n- **T2a**: Afecta menos de la mitad de un lóbulo.\n- **T2b**: Afecta **la mitad de un lóbulo**.\n- **N0/M0**: Sin afectación ganglionar ni metástasis.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -818,8 +818,8 @@
   },
   {
     "id": "medfliar001_044",
-    "materia": ["urgencias", "neurologia"],
-    "submateria": ["Otras preguntas de urgencias", "Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "urgencias", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de urgencias", "Otras preguntas de neurología"],
     "enunciado": "¿Cuáles son características propias del Síndrome Confusional Agudo?",
     "opciones": {
       "a": "Alteración crónica del estado mental, con conservación de funciones cognitivas e ideación delirante megalómana",
@@ -828,7 +828,7 @@
       "d": "Alteración transitoria del estado mental, de inicio agudo y curso fluctuante, con alteraciones en el nivel de atención, de origen orgánico"
     },
     "correcta": "d",
-    "explicacion": "El **Síndrome Confusional Agudo (delirium)** se define como una alteración **transitoria** de origen **orgánico** que presenta un **inicio agudo** (horas o días) y un **curso fluctuante**[cite: 810, 811, 812]. [cite_start]Su característica principal es la alteración de la **atención**[cite: 814].",
+    "explicacion": "El **Síndrome Confusional Agudo (delirium)** se define como una alteración **transitoria** de origen **orgánico** que presenta un **inicio agudo** (horas o días) y un **curso fluctuante**. Su característica principal es la alteración de la **atención**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -838,7 +838,7 @@
   {
     "id": "medfliar001_045",
     "materia": ["medicinafamiliar"],
-    "submateria": ["Control de salud"],
+    "submateria": ["Adulto mayor"],
     "enunciado": "Un paciente de 84 años concurre para su control de salud habitual en el mes de marzo. ¿Qué conducta corresponde tomar en relación a las prácticas preventivas?",
     "opciones": {
       "a": "Solicitar densitometría ósea, indicar vacuna antigripal, evaluación de la audición y de la visión, interrogar sobre red social",
@@ -847,7 +847,7 @@
       "d": "Solicitar ECG, indicar vacuna antigripal, evaluación de la audición y de la visión, interrogar sobre red social"
     },
     "correcta": "c",
-    "explicacion": "En mayores de 65 años se recomienda:\n- **Vacunación antigripal anual** [cite: 833][cite_start].\n- Evaluación de agudeza **auditiva y visual** [cite: 834][cite_start].\n- Evaluación de la **red social** y el **riesgo de caídas**[cite: 837, 838].",
+    "explicacion": "En mayores de 65 años se recomienda:\n- **Vacunación antigripal anual**.\n- Evaluación de agudeza **auditiva y visual**.\n- Evaluación de la **red social** y el **riesgo de caídas**.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -866,7 +866,7 @@
       "d": "Quejas subjetivas de memoria"
     },
     "correcta": "c",
-    "explicacion": "Las **quejas subjetivas de memoria** deben ser tomadas en serio, especialmente si están asociadas a **síntomas psiquiátricos**, ya que esto aumenta el riesgo de declinación cognitiva[cite: 856]. [cite_start]Los estudios longitudinales muestran una asociación robusta entre quejas de memoria y desarrollo posterior de demencia[cite: 853].",
+    "explicacion": "Las **quejas subjetivas de memoria** deben ser tomadas en serio, especialmente si están asociadas a **síntomas psiquiátricos**, ya que esto aumenta el riesgo de declinación cognitiva. Los estudios longitudinales muestran una asociación robusta entre quejas de memoria y desarrollo posterior de demencia.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -875,8 +875,8 @@
   },
   {
     "id": "medfliar001_047",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Mujer de 62 años presenta conductas sociales inadecuadas e irritabilidad desde hace un año. Al examen: hostil, reflejo glabelar positivo, MMSE 20/30, sin rigidez y locomoción normal. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Demencia por cuerpos de Lewy",
@@ -885,7 +885,7 @@
       "d": "Enfermedad de Alzheimer"
     },
     "correcta": "c",
-    "explicacion": "La **demencia frontotemporal** suele aparecer entre los 50-70 años[cite: 872]. [cite_start]Sus síntomas predominantes son la **irritabilidad**, **desinhibición**, conductas sociales inadecuadas y pérdida de empatía[cite: 873]. [cite_start]A diferencia del Alzheimer, la memoria puede estar relativamente conservada al inicio[cite: 930].",
+    "explicacion": "La **demencia frontotemporal** suele aparecer entre los 50-70 años. Sus síntomas predominantes son la **irritabilidad**, **desinhibición**, conductas sociales inadecuadas y pérdida de empatía. A diferencia del Alzheimer, la memoria puede estar relativamente conservada al inicio.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -904,7 +904,7 @@
       "d": "1ª dosis: VCN13; 2ª dosis: VPN23 con intervalo mínimo de 8 semanas"
     },
     "correcta": "b",
-    "explicacion": "En personas de 5 a 64 años con **diabetes mellitus** (no inmunocomprometidos) el esquema es:\n- **1ª dosis**: VCN13 [cite: 891][cite_start].\n- **2ª dosis**: VPN23 **al año** de la primera dosis [cite: 892][cite_start].\n- Refuerzo: VPN23 a los 65 años (con intervalo mínimo de 5 años)[cite: 893].",
+    "explicacion": "En personas de 5 a 64 años con **diabetes mellitus** (no inmunocomprometidos) el esquema es:\n- **1ª dosis**: VCN13.\n- **2ª dosis**: VPN23 **al año** de la primera dosis.\n- Refuerzo: VPN23 a los 65 años (con intervalo mínimo de 5 años).",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -923,7 +923,7 @@
       "d": "Mini Mental State Examination"
     },
     "correcta": "a",
-    "explicacion": "El **Memory Impairment Screen (MIS)** emplea el recuerdo libre y facilitado de cuatro palabras utilizando categorías o pistas semánticas tras 5 minutos de distracción[cite: 905, 908, 909].",
+    "explicacion": "El **Memory Impairment Screen (MIS)** emplea el recuerdo libre y facilitado de cuatro palabras utilizando categorías o pistas semánticas tras 5 minutos de distracción.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
@@ -932,8 +932,8 @@
   },
   {
     "id": "medfliar001_050",
-    "materia": ["neurologia"],
-    "submateria": ["Otras preguntas de neurología"],
+    "materia": ["medicinafamiliar", "neurologia"],
+    "submateria": ["Adulto mayor", "Otras preguntas de neurología"],
     "enunciado": "Alberto de 78 años presenta irritabilidad, olvidos y pérdida de objetos. Ha necesitado asistencia en AVDi desde hace un par de años (inicio insidioso). MMSE con fallas generalizadas y conservación motora. Se muestra pasivo (anosognosia). ¿Qué tipo de demencia sospecha?",
     "opciones": {
       "a": "Vascular",
@@ -942,12 +942,11 @@
       "d": "Alzheimer"
     },
     "correcta": "d",
-    "explicacion": "La **enfermedad de Alzheimer** se caracteriza por una **pérdida de memoria episódica gradual** con alteraciones del lenguaje y visuoespaciales[cite: 927]. [cite_start]La relativa indemnidad motora inicial ayuda a diferenciarla de causas vasculares o enfermedad de Parkinson[cite: 928].",
+    "explicacion": "La **enfermedad de Alzheimer** se caracteriza por una **pérdida de memoria episódica gradual** con alteraciones del lenguaje y visuoespaciales. La relativa indemnidad motora inicial ayuda a diferenciarla de causas vasculares o enfermedad de Parkinson.",
     "imagenes": [],
     "examen": "null",
     "anio": null,
     "oficial": false,
     "fuente": "Prorem"
   }
-  
 ]
