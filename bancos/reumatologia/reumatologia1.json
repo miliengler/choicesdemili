@@ -1288,6 +1288,120 @@
     "examen": null,
     "anio": null,
     "oficial": false
-  }
+  },
+  {
+  "id": "reumato_001_055",
+  "materia": ["reumatologia", "urologia"],
+  "submateria": ["Vasculitis", "Riñón y enfermedades sistémicas"],
+  "enunciado": "Una paciente de 42 años consulta por congestión nasal y expectoración, en ocasiones hemoptoica, de varios meses de evolución. En la radiografía de tórax presenta nódulos pulmonares múltiples, hematuria microscópica en el sedimento urinario y c-ANCA (anticuerpos anticitoplasma de neutrófilos) positivos. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Síndrome de Goodpasture",
+    "b": "Granulomatosis de Wegener",
+    "c": "Enfermedad de Churg-Strauss",
+    "d": "Esclerodermia"
+  },
+  "correcta": "b",
+  "explicacion": "El cuadro clínico es característico de la **Granulomatosis de Wegener** (actualmente llamada Granulomatosis con Poliangeítis).\n\nLos puntos clave para el diagnóstico son:\n- Compromiso de vía aérea superior (congestión y expectoración).\n- Compromiso pulmonar (nódulos y hemoptisis).\n- Compromiso renal (hematuria).\n- El marcador **c-ANCA** es altamente específico para esta patología.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+},
+{
+  "id": "reumato_001_056",
+  "materia": ["reumatologia"],
+  "submateria": ["Vasculitis"],
+  "enunciado": "¿Cuál de las siguientes afirmaciones es CORRECTA con respecto a la arteritis de células gigantes o de la temporal?",
+  "opciones": {
+    "a": "Afecta a personas en la edad media de la vida",
+    "b": "La respuesta al tratamiento con corticoides es variable",
+    "c": "Se suele asociar con polimialgia reumática",
+    "d": "Los signos y síntomas oculares no implican un riesgo mayor"
+  },
+  "correcta": "c",
+  "explicacion": "La **Arteritis de Células Gigantes** (ACG) tiene una asociación muy frecuente con la **Polimialgia Reumática** (PMR).\n\n- Aproximadamente el 50% de los pacientes con ACG tienen PMR.\n- Afecta casi exclusivamente a mayores de 50 años (no edad media).\n- La respuesta a **corticoides** suele ser espectacular y rápida.\n- Los síntomas oculares son una emergencia por riesgo de ceguera.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+},
+{
+  "id": "reumato_001_057",
+  "materia": ["reumatologia"],
+  "submateria": ["Vasculitis"],
+  "enunciado": "Una mujer de 70 años se presenta a la consulta por un cuadro de 2 semanas de evolución consistente en dolor abdominal intermitente, sudoración nocturna, cefalea no pulsátil generalizada y dolor maxilar izquierdo. Presenta pérdida de peso de 5 kg en los últimos 2 meses. Como antecedente de relevancia refiere diagnóstico de polimialgia reumática hace 2 años. El laboratorio muestra GB: 10800, Hto: 27%, Rto plaquetas: 892000, VSG: 140 mm/h, TGP: 117 U/L, TGO: 105 U/L, FAL: 567 U/L, BT: 0,3 mg % y Anticuerpos Antinucleares + (1/160 moteado difuso). Serología para hepatitis A, B y C negativa y hemocultivos negativos (2/2). La Rx de tórax es normal. Una TAC abdominal revela engrosamiento y refuerzo de la pared de la aorta abdominal. En base a la sospecha diagnóstica aportada por la historia clínica, el laboratorio y las imágenes en esta instancia ¿Cuál de los siguientes métodos es el más apropiado para establecer el diagnóstico?",
+  "opciones": {
+    "a": "Biopsia y cultivo de médula ósea para bacterias, hongos y micobacterias",
+    "b": "Biopsia de la arteria temporal",
+    "c": "Determinación de anticuerpos anticitoplasma de neutrófilo (ANCA)",
+    "d": "Biopsia hepática"
+  },
+  "correcta": "b",
+  "explicacion": "La paciente presenta síntomas típicos de **Arteritis de la Temporal** (cefalea, claudicación mandibular/dolor maxilar y antecedente de PMR) con una VSG muy elevada.\n\nEl método de elección para confirmar el diagnóstico sigue siendo la **Biopsia de la arteria temporal**.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+},
+{
+  "id": "reumato_001_058",
+  "materia": ["pediatria", "reumatologia"],
+  "submateria": ["Otras preguntas de pediatría", "Vasculitis"],
+  "enunciado": "Un niño de 5 años es llevado a la consulta por presentar lesiones purpúricas en ambos miembros inferiores y dolor abdominal. Presenta un hemograma con: hematocrito 29%, hemoglobina 9,8g/dl, glóbulos blancos 11.500 mm3, plaquetas 162.000 mm3. ¿Cuál es el diagnóstico más probable?",
+  "opciones": {
+    "a": "Púrpura trombocitopénica idiopática",
+    "b": "Síndrome de Kawasaki",
+    "c": "Púrpura de Schoenlein-Henoch",
+    "d": "Síndrome de Evans"
+  },
+  "correcta": "c",
+  "explicacion": "La **Púrpura de Schoenlein-Henoch** es la vasculitis más común en pediatría.\n\nSe manifiesta con:\n- Púrpura palpable en miembros inferiores.\n- Dolor abdominal.\n- Recuento de plaquetas normal (en este caso 162.000), lo que la distingue de las púrpuras trombocitopénicas.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+},
+{
+  "id": "reumato_001_059",
+  "materia": ["reumatologia"],
+  "submateria": ["Otras enfermedades reumatológicas"],
+  "enunciado": "Una mujer de 50 años con antecedentes de colon irritable consulta por dolor musculoesquelético lacerante que se inicia en cuello y hombros y se extiende hasta hacerse generalizado. Se acompaña de rigidez que es mayor por la mañana y mejora con el transcurso de las horas. Al interrogatorio dirigido refiere alteraciones del sueño y signos y síntomas compatible con fenómeno de Raynaud. ¿Qué hallazgo en el examen físico permite el diagnóstico?",
+  "opciones": {
+    "a": "La presencia de nódulos subcutáneos",
+    "b": "Irritación en las conjuntivas secundaria a sequedad ocular",
+    "c": "Dolor a la palpación de puntos dolorosos",
+    "d": "Lesiones ampollares en tronco y extremidades"
+  },
+  "correcta": "c",
+  "explicacion": "El cuadro de dolor generalizado, colon irritable y trastornos del sueño orienta a **Fibromialgia**.\n\nEl diagnóstico es clínico y se basa en el **Dolor a la palpación de puntos dolorosos** (tender points) específicos.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+},
+{
+  "id": "reumato_001_060",
+  "materia": ["reumatologia"],
+  "submateria": ["Artritis reumatoide"],
+  "enunciado": "Una mujer de 36 años, con diagnóstico de Artritis Reumatoide, consulta al médico por dolor y tumefacción en manos, muñecas y rodillas. ¿Cuál de los siguientes tratamientos retardará la progresión de la enfermedad?",
+  "opciones": {
+    "a": "Metrotexato",
+    "b": "Glucocorticoides sistémicos",
+    "c": "Antiinflamatorios no esteroideos",
+    "d": "Glucocorticoides intraarticulares"
+  },
+  "correcta": "a",
+  "explicacion": "En la **Artritis Reumatoide**, los únicos fármacos que logran modificar el curso de la enfermedad y retrasar el daño articular son los FAME (Fármacos Modificadores de la Enfermedad).\n\nEl **Metotrexato** es el estándar de oro en este grupo.",
+  "imagenes": [],
+  "examen": null,
+  "anio": null,
+  "oficial": false,
+  "fuente": "curso de resi"
+}
 ]
 
