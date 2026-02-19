@@ -101,29 +101,53 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Versión Multimateria Real) --- */
+/* --- 5. PROCESADOR (Versión Inteligente) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. MATERIAS: Mantenemos todas las materias en un array
-    let rawMaterias = Array.isArray(q.materia) ? q.materia : [q.materia || "otras"];
+    // 1. MATERIA: Match Inteligente
+    // Tomamos lo que viene en el JSON
+    let rawMat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
     
-    // Validamos cada materia contra la lista SUBJECTS de config.js
-    q.materia = rawMaterias.map(m => {
-        let matNorm = normalize(m);
-        const found = SUBJECTS.find(s => normalize(s.slug) === matNorm);
-        return found ? found.slug : "otras";
-    });
+    // Lo "limpiamos" (urologia_cx -> urologiacx)
+    let matNorm = normalize(rawMat);
 
-    // 2. SUBMATERIAS: Mantenemos todas las submaterias enviadas en el JSON
-    let rawSubmaterias = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
-    q.submateria = rawSubmaterias.map(sub => normalize(sub));
+    // Buscamos en la lista de SUBJECTS oficial quién tiene ese mismo nombre limpio
+    // Esto conecta "urologiacx" (JSON) con "urologia_cx" (Config)
+    const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
+
+    if (foundSubject) {
+        // ¡Bingo! Asignamos el slug OFICIAL (con el guion bajo si lo tiene)
+        q.materia = foundSubject.slug;
+    } else {
+        // Si no existe, va a otras
+        q.materia = "otras";
+    }
+
+    // 2. Submateria (Misma lógica de antes)
+    const mainMateria = q.materia; // Ya tenemos la materia oficial asignada arriba
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
+    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
+    const subNorm = normalize(subRaw);
+    
+    const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
+
+    if (match) {
+        q.submateria = normalize(match);
+    } else {
+        q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
+    }
 
     // 3. Metadatos
     q.tipo = type;
-    q.examen = (type === "examen" && meta) ? meta.id : null;
-    q.anio = (type === "examen" && meta) ? meta.anio : q.anio || null;
+    if (type === "examen" && meta) {
+        q.examen = meta.id;
+        q.anio = meta.anio;
+    } else {
+        q.examen = null;
+    }
 }
 
 
@@ -137,20 +161,23 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS HÍBRIDAS (Lógica Multimateria) --- */
+/* --- 7. APIS HÍBRIDAS (LOGICA MATEMÁTICA CORREGIDA) --- */
 function getQuestionsByMateria(mSlug, selectedSubs) {
+    // Lista oficial de subtemas normalizados para esta materia
+    const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
+    // Identificamos cuál es el "Catch-All" (el último de la lista)
+    const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
+
     return BANK.questions.filter(q => {
-        // 1. Verificamos si la materia elegida está en el array de la pregunta
-        const esDeLaMateria = q.materia.includes(mSlug);
+        // 1. Chequear si es de la materia
+        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         if (!esDeLaMateria) return false;
 
-        // 2. Si no hay filtros de subtema, se muestran todas las de la materia
+        // 2. Si no hay filtro de subtemas, devolver todo
         if (!selectedSubs || !selectedSubs.length) return true;
 
-        // 3. Verificamos si alguno de los subtemas de la pregunta coincide con la selección
-        return q.submateria.some(sub => selectedSubs.includes(sub));
-    });
-}
+        // 3. Chequear subtema
+        const qSub = q.submateria;
         
         // A) Coincidencia directa
         if (selectedSubs.includes(qSub)) return true;
