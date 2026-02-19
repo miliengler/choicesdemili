@@ -1,22 +1,21 @@
 [
-  {
+{
   "id": "inmuno_001_001",
-  "materia": "pediatria",
-  "submateria": "Síndromes asociados a anomalías cromosómicas / Inmunologia",
-  "enunciado": "Recién nacido que a las pocas horas comienza con convulsiones. En el laboratorio se observa hipocalcemia severa. En el niño llama la atención la presencia de micrognatia e hipertelorismo, ¿cuál sería el diagnóstico más probable?:",
+  "materia": ["pediatria", "otras"],
+  "submateria": ["Sindromes asociados a anomalias cromosomicas", "Inmunologia"],
+  "enunciado": "Recien nacido que a las pocas horas comienza con convulsiones. En el laboratorio se observa hipocalcemia severa. En el niño llama la atencion la presencia de micrognatia e hipertelorismo, cual seria el diagnostico mas probable?",
   "opciones": {
-    "a": "Enfermedad granulomatosa crónica.",
+    "a": "Enfermedad granulomatosa cronica.",
     "b": "Sindrome de Di George.",
-    "c": "Epilepsia por deshidratación.",
+    "c": "Epilepsia por deshidratacion.",
     "d": "Enfermedad de Kawasaki."
   },
   "correcta": "b",
-  "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es por tanto es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. En ocasiones a unos linfocitos B normales en la periferia se asocian una discreta hipogammaglobulemia y una respuesta deficitaria de anticuerpos post-inmunizacion. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
+  "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. En ocasiones a unos linfocitos B normales en la periferia se asocian una discreta hipogammaglobulemia y una respuesta deficitaria de anticuerpos post-inmunizacion. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
   "imagenes": [],
   "examen": null,
   "anio": null,
-  "oficial": false,
-  "fuente": "Prorem"
+  "oficial": false
 },
   {
     "id": "inmuno_001_002",
