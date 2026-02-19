@@ -1,84 +1,81 @@
 [
-{
-  "id": "inmuno_001_001",
-  "materia": ["pediatria", "otras"],
-  "submateria": ["Sindromes asociados a anomalias cromosomicas", "Inmunologia"],
-  "enunciado": "Recien nacido que a las pocas horas comienza con convulsiones. En el laboratorio se observa hipocalcemia severa. En el niño llama la atencion la presencia de micrognatia e hipertelorismo, cual seria el diagnostico mas probable?",
-  "opciones": {
-    "a": "Enfermedad granulomatosa cronica.",
-    "b": "Sindrome de Di George.",
-    "c": "Epilepsia por deshidratacion.",
-    "d": "Enfermedad de Kawasaki."
+  {
+    "id": "inmuno_001_001",
+    "materia": ["pediatria", "otras"],
+    "submateria": ["Sindromes asociados a anomalias cromosomicas", "Inmunologia"],
+    "enunciado": "Recien nacido que a las pocas horas comienza con convulsiones. En el laboratorio se observa hipocalcemia severa. En el niño llama la atencion la presencia de micrognatia e hipertelorismo, cual seria el diagnostico mas probable?",
+    "opciones": {
+      "a": "Enfermedad granulomatosa cronica.",
+      "b": "Sindrome de Di George.",
+      "c": "Epilepsia por deshidratacion.",
+      "d": "Enfermedad de Kawasaki."
+    },
+    "correcta": "b",
+    "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. En ocasiones a unos linfocitos B normales en la periferia se asocian una discreta hipogammaglobulemia y una respuesta deficitaria de anticuerpos post-inmunizacion. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
+    "imagen": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false
   },
-  "correcta": "b",
-  "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. En ocasiones a unos linfocitos B normales en la periferia se asocian una discreta hipogammaglobulemia y una respuesta deficitaria de anticuerpos post-inmunizacion. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
-  "imagenes": [],
-  "examen": null,
-  "anio": null,
-  "oficial": false
-},
   {
     "id": "inmuno_001_002",
     "materia": ["pediatria", "otras"],
-    "submateria": ["Patología infecciosa infantil", "Inmunologia"],
-    "enunciado": "Un niño de ocho meses presenta neumonías recurrentes e infecciones herpéticas a repeticion; En el estudio inmunológico destacan valores muy bajos de linfocitos T con un número normal de linfocitos B. ¿Cuál es el diagnóstico más probable?:",
+    "submateria": ["Patologia infecciosa infantil", "Inmunologia"],
+    "enunciado": "Un niño de ocho meses presenta neumonias recurrentes e infecciones herpeticas a repeticion. En el estudio inmunologico destacan valores muy bajos de linfocitos T con un numero normal de linfocitos B. Cual es el diagnostico mas probable?",
     "opciones": {
       "a": "Inmunodeficiencia combinada grave.",
       "b": "Sindrome ataxia-teleangiectasia.",
       "c": "Sindrome de Bruton.",
-      "d": "Síndrome de Wiskott-Aldrich."
+      "d": "Sindrome de Wiskott-Aldrich."
     },
     "correcta": "a",
-    "explicacion": "Las **Inmunodeficiencias combinadas severas (IDCS)** se definen por la alteración de **LT** acompañada, o no, de la alteración en otra célula de la serie linfoide, de ahí que se las clasifique por su fenotipo.\n\nEsta alteración puede ser cuantitativa (disminución del valor absoluto de linfocitos, tal como exponen en el enunciado) o cualitativa (valor normal pero alteración en la función).",
-    "imagenes": [],
+    "explicacion": "Las Inmunodeficiencias combinadas severas (IDCS) se definen por la alteracion de LT acompañada, o no, de la alteracion en otra celula de la serie linfoide. Esta alteracion puede ser cuantitativa (disminucion del valor absoluto de linfocitos) o cualitativa.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_003",
     "materia": ["pediatria", "otras"],
-    "submateria": ["Hematología infantil", "Inmunologia"],
-    "enunciado": "Es traído a la consulta un niño de 3 años, que tras un golpe en el colegio presenta una lesión hemorrágica. Al examen fisico se observa que el niño presenta lesiones eccematosas en cara y brazos y la madre comenta que con frecuencia sufre infecciones en mayor número que sus compañeros de clase. El hemograma indica leucocitos y eritrocitos normales, pero plaquetas escasas y pequeñas. ¿Cuál es el diagnóstico más probable?:",
+    "submateria": ["Hematologia infantil", "Inmunologia"],
+    "enunciado": "Niño de 3 años que presenta una lesion hemorragica tras un golpe. Presenta lesiones eccematosas en cara y brazos e infecciones frecuentes. El hemograma indica plaquetas escasas y pequeñas. Cual es el diagnostico mas probable?",
     "opciones": {
       "a": "Sindrome de Wiskott-Aldrich.",
       "b": "Hemofilia A.",
-      "c": "Dermatitis atópica.",
-      "d": "Púrpura trombopénica inmune."
+      "c": "Dermatitis atopica.",
+      "d": "Purpura trombopenica inmune."
     },
     "correcta": "a",
-    "explicacion": "**POCAS Y PEQUEÑAS PLAQUETAS** = **SÍNDROME DE WISKOTT-ALDRICH**.\n\nEs una patología englobada dentro de los sindromes que asocian inmunodeficiencia. Se presentan con sangrados de repetición incluso en el recién nacido, junto con **eccema**, infecciones múltiples y por distintos gérmenes.",
-    "imagenes": [],
+    "explicacion": "POCAS Y PEQUENAS PLAQUETAS = SINDROME DE WISKOTT-ALDRICH. Es una patologia que asocia inmunodeficiencia. Se presenta con sangrados de repeticion, eccema e infecciones multiples por distintos germenes.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_004",
     "materia": ["urgencias", "otras"],
     "submateria": ["Otras preguntas de urgencias", "Inmunologia"],
-    "enunciado": "Acompañás a Jorge de 54 años, que es un paciente hipertenso y diabético que se encuentra internado por una infección de parte blandas en raíz del muslo derecho a realizarse una TAC con contraste de la zona afectada. Inmediatamente al iniciar la administración del contraste, Jorge refiere dolor abdominal, prurito, calor y disnea. Interpretas que cursa una reacción anafiláctica, tras interrumpir la infusión del contraste ¿Cuál es la medida inicial más eficaz que se debe instaurar para evitar que evolucione desfavorablemente?",
+    "enunciado": "Paciente de 54 años refiere dolor abdominal, prurito, calor y disnea inmediatamente al iniciar contraste para TAC. Tras interrumpir la infusion, cual es la medida inicial mas eficaz?",
     "opciones": {
       "a": "Hidrocortisona EV + Difenhidramina EV",
-      "b": "Adrenalina IM o en infusión EV",
-      "c": "Intubación orotraqueal temprana",
-      "d": "Metilprednisolona en infusión EV"
+      "b": "Adrenalina IM o en infusion EV",
+      "c": "Intubacion orotraqueal temprana",
+      "d": "Metilprednisolona en infusion EV"
     },
     "correcta": "b",
-    "explicacion": "El tratamiento agudo de la **anafilaxia sistémica** exige abordar la permeabilidad de la via respiratoria y la estabilidad hemodinámica.\n\nLos pilares del tratamiento son la **adrenalina**, la intubación orotraqueal, la traqueotomía, los expansores del volumen y los vasopresores.\n\nLa **adrenalina** inyectada por vía intramuscular es el fármaco más importante. La adrenalina relaja el músculo liso bronquial y mejora el tono vasomotor y la permeabilidad vascular.",
-    "imagenes": [],
+    "explicacion": "La adrenalina inyectada por via intramuscular es el farmaco mas importante que debe administrarse cuanto antes en el curso de la anafilaxia. Relaja el musculo liso bronquial y mejora el tono vasomotor.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_005",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "La reacción de Mantoux es un típico ejemplo de reacción de hipersensibilidad de:",
+    "enunciado": "La reaccion de Mantoux es un tipico ejemplo de reaccion de hipersensibilidad de:",
     "opciones": {
       "a": "Tipo IV.",
       "b": "Tipo I.",
@@ -86,56 +83,53 @@
       "d": "Tipo II."
     },
     "correcta": "a",
-    "explicacion": "La **celular o retardada** mediada por **LT**, por eso hay que esperar 48-72 horas para poder valorarla.",
-    "imagenes": [],
+    "explicacion": "Es una hipersensibilidad celular o retardada mediada por LT, por eso hay que esperar 48-72 horas para poder valorarla.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_006",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "Las células T dirigen las respuestas del sistema inmune a través de mediadores químicos (interleukinas) adaptando la señal al tipo de antígeno encontrado. En el caso de la secreción de IgE y la activación de eosinófilos. ¿Qué tipo celular y qué linfoquinas están implicados?:",
+    "enunciado": "En el caso de la secrecion de IgE y la activacion de eosinofilos, que tipo celular y linfoquinas estan implicados?",
     "opciones": {
-      "a": "TH17, a través de IL-17.",
-      "b": "TH2, a través de IL-4 e IL-5.",
-      "c": "TH1, a través de IL-2 e IFN gamma.",
-      "d": "TH3, a través de IL-10."
+      "a": "TH17, a traves de IL-17.",
+      "b": "TH2, a traves de IL-4 e IL-5.",
+      "c": "TH1, a traves de IL-2 e IFN gamma.",
+      "d": "TH3, a traves de IL-10."
     },
     "correcta": "b",
-    "explicacion": "La respuesta **TH2** o humoral se produce cuando la célula presentadora de antígenos secreta sobre todo **IL-4** y tras la activación el linfocito T secreta **IL-4**, **IL-5** e **IL-6** para estimular a los linfocitos a fabricar Igs.",
-    "imagenes": [],
+    "explicacion": "La respuesta humoral o TH2 se produce cuando el linfocito T secreta IL-4 e IL-5 para estimular a los linfocitos B a fabricar IgE y activar eosinofilos.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_007",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "Dentro de las indicaciones de la Inmunoglobulina inespecífica (policlonal) intravenosa (IGIV) podemos encontrar las siguientes EXCEPTO:",
+    "enunciado": "Dentro de las indicaciones de la Inmunoglobulina intravenosa (IGIV), cual esta CONTRAINDICADA?",
     "opciones": {
       "a": "Sepsis",
       "b": "Enfermedad de Kawasaki.",
-      "c": "Púrpura trombopénica idiopatica.",
-      "d": "Déficit de IgA."
+      "c": "Purpura trombopenica idiopatica.",
+      "d": "Deficit de IgA."
     },
     "correcta": "d",
-    "explicacion": "Tradicionalmente se considera **CONTRAINDICADA** la IGIV en el **Déficit selectivo de IgA**. Puede desencadenar una reacción semejante al shock anafiláctico.",
-    "imagenes": [],
+    "explicacion": "En el deficit selectivo de IgA, la administracion de IGIV puede desencadenar una reaccion semejante al shock anafilactico ya que el sistema inmune puede atacar la pequeña cantidad de IgA que contiene el preparado.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_008",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿Cuál de los siguientes clusters de identificación (CD) se relaciona principalmente con los linfocitos B?:",
+    "enunciado": "Cual de los siguientes clusters de identificacion (CD) se relaciona principalmente con los linfocitos B?",
     "opciones": {
       "a": "CD25.",
       "b": "CD2.",
@@ -143,75 +137,71 @@
       "d": "CD11."
     },
     "correcta": "c",
-    "explicacion": "**CD19** es una de las moléculas que actúa como co-receptor para el **LB** ayudando a su activación. Otros marcadores son CD20 y CD21.",
-    "imagenes": [],
+    "explicacion": "CD19 es una de las moleculas que actua como co-receptor para el LB ayudando a su activacion. Otros marcadores del LB son CD20 y CD21.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_009",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿Cuándo se considera a un antígeno como tolerogénico?",
+    "enunciado": "Cuando se considera a un antigeno como tolerogenico?",
     "opciones": {
-      "a": "Cuando la respuesta inmunológica que induce no es inflamatoria.",
-      "b": "Cuando la respuesta inmunológica que induce la activación de linfocitos B (LB) y la producción de inmunoglobulinas.",
-      "c": "Cuando la respuesta inmunológica que induce provoca la activación de los linfocitos T (LT) cooperadores.",
-      "d": "Cuando la respuesta inmunológica que induce provoca la activación del sistema inmune (SI) innato."
+      "a": "Cuando la respuesta inmunologica que induce no es inflamatoria.",
+      "b": "Cuando induce activacion de linfocitos B.",
+      "c": "Cuando provoca activacion de LT cooperadores.",
+      "d": "Cuando provoca activacion del sistema inmune innato."
     },
     "correcta": "a",
-    "explicacion": "Los antígenos **tolerógenos** son aquellos que el sistema inmune decide no atacar (tolerar), induciendo una respuesta no inflamatoria.",
-    "imagenes": [],
+    "explicacion": "Los antigenos tolerogenos son aquellos que inducen una respuesta de tolerancia (no ataque), generalmente mediada por interleucinas inhibidoras y LT reguladores.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_010",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿Cuál es la molécula que activa la respuesta inmunológica frente a un microorganismo que no lo ha infectado previamente?:",
+    "enunciado": "Cual es la molecula que activa la respuesta inmunologica frente a un microorganismo que no lo ha infectado previamente?",
     "opciones": {
-      "a": "Los anticuerpos IgG de alta afinidad para ese antígeno.",
-      "b": "Los linfocitos TH2 de los ganglios linfáticos.",
-      "c": "Los linfocitos T citotóxicos (CD3+CD8+).",
-      "d": "Los receptores de tipo 'toll' (TLR) de los fagocitos."
+      "a": "Anticuerpos IgG.",
+      "b": "Linfocitos TH2.",
+      "c": "Linfocitos T citotoxicos.",
+      "d": "Receptores de tipo toll (TLR) de los fagocitos."
     },
     "correcta": "d",
-    "explicacion": "En la **primo-infección**, los receptores del **sistema inmune innato** (como los TLR) son los encargados del primer reconocimiento.",
-    "imagenes": [],
+    "explicacion": "En una primo-infeccion, los receptores del sistema inmune innato (TLR) son los primeros en reconocer patrones moleculares del patogeno e iniciar la respuesta.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_011",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "En la consulta atiende a un varón de 35 años que refiere sintomatología coincidente con una infección de vías respiratorias altas. ¿Qué dato le haría sospechar origen bacteriano?:",
+    "enunciado": "En un hemograma, que dato haria sospechar una infeccion de origen bacteriano?",
     "opciones": {
-      "a": "Leucocitosis con valores por encima de 10.000.",
-      "b": "Desviación 'a la izquierda': Aumento de Neutrófilos.",
-      "c": "Desviación 'a la derecha': Aumento de Linfocitos.",
-      "d": "Desviación 'a la derecha': aumento de Eosinófilos."
+      "a": "Leucocitosis simple.",
+      "b": "Desviacion a la izquierda: Aumento de Neutrofilos.",
+      "c": "Aumento de Linfocitos.",
+      "d": "Aumento de Eosinofilos."
     },
     "correcta": "b",
-    "explicacion": "Los **Neutrófilos** se elevan característicamente en infecciones **bacterianas**, mientras que los linfocitos lo hacen en las víricas.",
-    "imagenes": [],
+    "explicacion": "Los neutrofilos se elevan caracteristicamente en infecciones bacterianas, mientras que los linfocitos lo hacen con mayor frecuencia en las viricas.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_012",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "El agente inmunológico implicado en la reacción de hipersensibilidad tipo III de Gell y Coombs es:",
+    "enunciado": "El agente inmunologico implicado en la reaccion de hipersensibilidad tipo III es:",
     "opciones": {
       "a": "Inmunocomplejo.",
       "b": "Inmunoglobulina E.",
@@ -219,37 +209,35 @@
       "d": "Linfocito T."
     },
     "correcta": "a",
-    "explicacion": "La **tipo III** es la mediada por **inmunocomplejos** (agregados de antígeno, anticuerpo y complemento).",
-    "imagenes": [],
+    "explicacion": "La hipersensibilidad tipo III es mediada por inmunocomplejos (agregados de antigeno, anticuerpo y complemento) que se depositan en tejidos.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_013",
     "materia": ["pediatria", "otras"],
-    "submateria": ["Patología del aparato digestivo", "Inmunologia"],
-    "enunciado": "¿Cuál es el diagnóstico más probable de un niño de 4 años, eutrófico, con diarrea intermitente y déficit de IgA?:",
+    "submateria": ["Patologia del aparato digestivo", "Inmunologia"],
+    "enunciado": "Niño de 4 años, eutrofico, con episodios intermitentes de diarrea y dolor abdominal. Tiene antecedente de deficit de IgA. Diagnostico mas probable:",
     "opciones": {
       "a": "Giardiasis.",
-      "b": "Diarrea crónica inespecifica.",
+      "b": "Diarrea cronica inespecifica.",
       "c": "Enfermedad de Crohn.",
-      "d": "Enfermedad celíaca"
+      "d": "Enfermedad celiaca"
     },
     "correcta": "a",
-    "explicacion": "El **déficit de IgA** predispone a infecciones por **Giardia lamblia**. El hecho de estar eutrófico aleja el diagnóstico de Celiaquía severa.",
-    "imagenes": [],
+    "explicacion": "El deficit de IgA predispone a infecciones gastrointestinales. La Giardia lamblia puede adherirse y proliferar mas facilmente ante la falta de esta barrera protectora.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_014",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿Cuál es la inmunoglobulina predominante en la sangre de un individuo sano?",
+    "enunciado": "Cual es la inmunoglobulina predominante en la sangre de un individuo sano?",
     "opciones": {
       "a": "IgG.",
       "b": "IgA.",
@@ -257,87 +245,82 @@
       "d": "IgE."
     },
     "correcta": "a",
-    "explicacion": "La **IgG** es la más abundante en sangre y secreciones internas; es la única que atraviesa la placenta.",
-    "imagenes": [],
+    "explicacion": "La IgG es la inmunoglobulina mas abundante en el suero y secreciones internas tanto en niños como en adultos.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_015",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "Dentro de las reacciones de Gell y Coombs en cual clasificaría al rechazo agudo de órganos:",
+    "enunciado": "En que tipo de reaccion clasificaria al rechazo agudo de organos?",
     "opciones": {
-      "a": "Anafiláctica o tipo I.",
-      "b": "Por inmunocomplejos o Tipo III.",
+      "a": "Tipo I.",
+      "b": "Tipo III.",
       "c": "Celular o Tipo IV.",
-      "d": "Citotóxica o Tipo II."
+      "d": "Tipo II."
     },
     "correcta": "c",
-    "explicacion": "El **rechazo agudo** es mediado por **Linfocitos T**, por lo que es una hipersensibilidad tipo IV.",
-    "imagenes": [],
+    "explicacion": "El rechazo agudo es mediado por linfocitos T citotoxicos, por lo que se clasifica como una reaccion tipo IV o retardada.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_016",
     "materia": ["hematologia", "otras"],
-    "submateria": ["Trasplante hematopoyético", "Inmunologia"],
-    "enunciado": "¿Qué población celular hay que seleccionar en un donante para un trasplante de médula ósea?:",
+    "submateria": ["Trasplante hematopoyetico", "Inmunologia"],
+    "enunciado": "Que poblacion celular hay que seleccionar en un donante para realizar un trasplante de progenitores hematopoyeticos?",
     "opciones": {
-      "a": "Células CD3+.",
-      "b": "Células CD20+",
-      "c": "Células CD34+.",
-      "d": "Células CD45+."
+      "a": "Celulas CD3+.",
+      "b": "Celulas CD20+",
+      "c": "Celulas CD34+.",
+      "d": "Celulas CD45+."
     },
     "correcta": "c",
-    "explicacion": "Las células **CD34+** son las células madre pluripotenciales responsables de la regeneración hematopoyética.",
-    "imagenes": [],
+    "explicacion": "Las celulas CD34+ se corresponden con las celulas madre pluripotenciales responsables de regenerar la medula osea tras el trasplante.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_017",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿En qué órgano tiene lugar la maduración de los linfocitos B?:",
+    "enunciado": "En que organo linfoide tiene lugar la maduracion de los linfocitos B?",
     "opciones": {
       "a": "Bazo.",
-      "b": "Médula ósea.",
+      "b": "Medula osea.",
       "c": "Timo.",
-      "d": "Ganglios linfáticos."
+      "d": "Ganglios linfaticos."
     },
     "correcta": "b",
-    "explicacion": "Los **Linfocitos B** maduran en la **Médula ósea**. Los Linfocitos T maduran en el Timo.",
-    "imagenes": [],
+    "explicacion": "Los linfocitos B maduran en la medula osea. Los linfocitos T lo hacen en el Timo.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   },
   {
     "id": "inmuno_001_018",
     "materia": ["otras"],
     "submateria": ["Inmunologia"],
-    "enunciado": "¿Cuál de los siguientes es un órgano linfoide primario?",
+    "enunciado": "Cual de los siguientes es un organo linfoide primario?",
     "opciones": {
-      "a": "Médula ósea.",
+      "a": "Medula osea.",
       "b": "Bazo.",
-      "c": "Ganglios linfáticos.",
+      "c": "Ganglios linfaticos.",
       "d": "GALT."
     },
     "correcta": "a",
-    "explicacion": "Los órganos linfoides primarios son la **Médula ósea** y el **Timo**.",
-    "imagenes": [],
+    "explicacion": "Los organos linfoides primarios, donde se producen o maduran las celulas inmunes, son la medula osea y el timo.",
+    "imagen": [],
     "examen": null,
     "anio": null,
-    "oficial": false,
-    "Fuente": "Prorem"
+    "oficial": false
   }
 ]
