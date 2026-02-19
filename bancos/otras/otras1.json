@@ -11,7 +11,7 @@
       "d": "Enfermedad de Kawasaki."
     },
     "correcta": "b",
-    "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. En ocasiones a unos linfocitos B normales en la periferia se asocian una discreta hipogammaglobulemia y una respuesta deficitaria de anticuerpos post-inmunizacion. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
+    "explicacion": "DI GEORGE = HIPOCALCEMIA POR HIPOPARATIROIDISMO FENOTIPO FACIAL MAS-MENOS MALFORMACION CARDIACA + HIPOPLASIA-APLASIA DEL TIMO. Es una malformacion congenita multiple que afecta a los organos que provienen del tercer y cuatro arcos branquiales, es decir al timo y a las glandulas paratiroides. En un elevado porcentaje de los casos se observan delecciones en el cromosoma 22q11. Otras manifestaciones dismorficas son hipertelorismo, micrognatia y baja implantacion de los pabellones auriculares. Como consecuencia de la hipoplasia del timo se observa en casi todos los casos linfopenia T o si existen estos son inmaduros. Las manifestaciones clinicas del sindrome de DiGeorge son las de una inmunodeficiencia y de un hipoparatiroidismo. La tetania hipocalcemica suele ser la responsable de la primera hospitalizacion de estos pacientes.",
     "imagen": [],
     "oficial": false
   },
@@ -28,6 +28,262 @@
     },
     "correcta": "a",
     "explicacion": "Las Inmunodeficiencias combinadas severas (IDCS) se definen por la alteracion de LT acompañada, o no, de la alteracion en otra celula de la serie linfoide. Esta alteracion puede ser cuantitativa (disminucion del valor absoluto de linfocitos) o cualitativa.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_003",
+    "materia": ["otras", "pediatria"],
+    "submateria": ["Inmunologia", "Hematologia infantil"],
+    "enunciado": "Niño de 3 años que tras un golpe presenta una lesion hemorragica. Presenta lesiones eccematosas en cara y brazos e infecciones frecuentes. El hemograma indica plaquetas escasas y pequeñas. Cual es el diagnostico mas probable?",
+    "opciones": {
+      "a": "Sindrome de Wiskott-Aldrich.",
+      "b": "Hemofilia A.",
+      "c": "Dermatitis atopica.",
+      "d": "Purpura trombopenica inmune."
+    },
+    "correcta": "a",
+    "explicacion": "POCAS Y PEQUENAS PLAQUETAS = SINDROME DE WISKOTT-ALDRICH. Asocia inmunodeficiencia, sangrados de repeticion, eccema e infecciones multiples por distintos germenes.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_004",
+    "materia": ["otras", "urgencias"],
+    "submateria": ["Inmunologia", "Otras preguntas de urgencias"],
+    "enunciado": "Paciente de 54 años refiere dolor abdominal, prurito, calor y disnea tras iniciar contraste para TAC. Interpretas reaccion anafilactica. Tras interrumpir la infusion, cual es la medida inicial mas eficaz?",
+    "opciones": {
+      "a": "Hidrocortisona EV + Difenhidramina EV",
+      "b": "Adrenalina IM o en infusion EV",
+      "c": "Intubacion orotraqueal temprana",
+      "d": "Metilprednisolona en infusion EV"
+    },
+    "correcta": "b",
+    "explicacion": "La adrenalina IM es el farmaco mas importante en la anafilaxia. Mejora el tono vasomotor y la permeabilidad vascular, combatiendo broncoespasmo, hipotension y edema.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_005",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "La reaccion de Mantoux es un tipico ejemplo de reaccion de hipersensibilidad de:",
+    "opciones": {
+      "a": "Tipo IV.",
+      "b": "Tipo I.",
+      "c": "Tipo III.",
+      "d": "Tipo II."
+    },
+    "correcta": "a",
+    "explicacion": "Es hipersensibilidad celular o retardada mediada por LT, por eso requiere 48-72 horas para su valoracion.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_006",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "En el caso de secrecion de IgE y activacion de eosinofilos, que tipo celular y linfoquinas estan implicados?",
+    "opciones": {
+      "a": "TH17, a traves de IL-17.",
+      "b": "TH2, a traves de IL-4 e IL-5.",
+      "c": "TH1, a traves de IL-2 e IFN gamma.",
+      "d": "TH3, a traves de IL-10."
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta TH2 coordina la produccion de Ig por el LB. La secrecion de IL-4 e IL-5 estimula la fabricacion de IgE y activacion de eosinofilos.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_007",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Dentro de las indicaciones de la Inmunoglobulina intravenosa (IGIV), cual de las siguientes es una CONTRAINDICACION?",
+    "opciones": {
+      "a": "Sepsis",
+      "b": "Enfermedad de Kawasaki.",
+      "c": "Purpura trombopenica idiopatica.",
+      "d": "Deficit de IgA."
+    },
+    "correcta": "d",
+    "explicacion": "En el deficit selectivo de IgA, la IGIV puede desencadenar shock anafilactico porque el sistema inmune reconoce la minima cantidad de IgA del preparado como extraña.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_008",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Cual de los siguientes clusters de identificacion (CD) se relaciona principalmente con los linfocitos B?",
+    "opciones": {
+      "a": "CD25.",
+      "b": "CD2.",
+      "c": "CD19.",
+      "d": "CD11."
+    },
+    "correcta": "c",
+    "explicacion": "CD19 es el co-receptor caracteristico del LB. Otros marcadores clave son CD20, CD21 y la Ig de superficie.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_009",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Cuando se considera a un antigeno como tolerogenico?",
+    "opciones": {
+      "a": "Cuando la respuesta inmunologica que induce no es inflamatoria.",
+      "b": "Cuando induce activacion de linfocitos B.",
+      "c": "Cuando activa linfocitos T cooperadores.",
+      "d": "Cuando activa el sistema inmune innato."
+    },
+    "correcta": "a",
+    "explicacion": "Los antigenos tolerogenos inducen una respuesta inmunologica activa de no agresion (tolerancia), mediada por LT reguladores.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_010",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Cual es la molecula que activa la respuesta inmunologica frente a un microorganismo en una primo-infeccion?",
+    "opciones": {
+      "a": "Anticuerpos IgG de alta afinidad.",
+      "b": "Linfocitos TH2.",
+      "c": "Linfocitos T citotoxicos.",
+      "d": "Receptores de tipo toll (TLR) de los fagocitos."
+    },
+    "correcta": "d",
+    "explicacion": "Los receptores del sistema inmune innato (como los TLR) son los encargados del primer reconocimiento en una infeccion inicial.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_011",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "En un hemograma, que dato haria sospechar una infeccion de origen bacteriano?",
+    "opciones": {
+      "a": "Leucocitosis aislada.",
+      "b": "Desviacion a la izquierda: Aumento de Neutrofilos.",
+      "c": "Aumento de Linfocitos.",
+      "d": "Aumento de Eosinofilos."
+    },
+    "correcta": "b",
+    "explicacion": "Los neutrofilos se elevan tipicamente en infecciones bacterianas, mientras que las viricas suelen cursar con linfocitosis.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_012",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "El agente inmunologico implicado en la reaccion de hipersensibilidad tipo III es:",
+    "opciones": {
+      "a": "Inmunocomplejo.",
+      "b": "Inmunoglobulina E.",
+      "c": "Inmunoglobulina M.",
+      "d": "Linfocito T."
+    },
+    "correcta": "a",
+    "explicacion": "La tipo III es mediada por inmunocomplejos (agregados de antigeno-anticuerpo-complemento) depositados en los tejidos.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_013",
+    "materia": ["otras", "pediatria"],
+    "submateria": ["Inmunologia", "Patologia del aparato digestivo"],
+    "enunciado": "Niño de 4 años, eutrofico, con diarrea intermitente y dolor abdominal. Tiene antecedente de deficit de IgA. Diagnostico mas probable:",
+    "opciones": {
+      "a": "Giardiasis.",
+      "b": "Diarrea cronica inespecifica.",
+      "c": "Enfermedad de Crohn.",
+      "d": "Enfermedad celiaca"
+    },
+    "correcta": "a",
+    "explicacion": "El deficit de IgA facilita la adherencia y proliferacion de Giardia lamblia en el epitelio intestinal por falta de proteccion mucosa.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_014",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Cual es la inmunoglobulina predominante en la sangre de un individuo sano?",
+    "opciones": {
+      "a": "IgG.",
+      "b": "IgA.",
+      "c": "IgM.",
+      "d": "IgE."
+    },
+    "correcta": "a",
+    "explicacion": "La IgG es la mas abundante en suero y secreciones internas; posee 4 subclases y atraviesa la placenta.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_015",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "En que tipo de reaccion de hipersensibilidad clasificaria al rechazo agudo de organos?",
+    "opciones": {
+      "a": "Tipo I.",
+      "b": "Tipo III.",
+      "c": "Celular o Tipo IV.",
+      "d": "Tipo II."
+    },
+    "correcta": "c",
+    "explicacion": "El rechazo agudo es un proceso mediado por Linfocitos T, por lo tanto se clasifica como hipersensibilidad tipo IV.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_016",
+    "materia": ["otras", "hematologia"],
+    "submateria": ["Inmunologia", "Trasplante hematopoyetico"],
+    "enunciado": "Que poblacion celular hay que seleccionar en un donante para un trasplante de progenitores hematopoyeticos?",
+    "opciones": {
+      "a": "Celulas CD3+.",
+      "b": "Celulas CD20+",
+      "c": "Celulas CD34+.",
+      "d": "Celulas CD45+."
+    },
+    "correcta": "c",
+    "explicacion": "Las celulas CD34+ son las celulas madre pluripotenciales que regeneran la medula osea en el receptor.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_017",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "En cual de los siguientes organos linfoides tiene lugar la maduracion de los linfocitos B?",
+    "opciones": {
+      "a": "Bazo.",
+      "b": "Medula osea.",
+      "c": "Timo.",
+      "d": "Ganglios linfaticos."
+    },
+    "correcta": "b",
+    "explicacion": "Los LB maduran en la medula osea. Los LT se forman en la medula osea pero maduran en el Timo.",
+    "imagen": [],
+    "oficial": false
+  },
+  {
+    "id": "inmuno_001_018",
+    "materia": ["otras"],
+    "submateria": ["Inmunologia"],
+    "enunciado": "Cual de los siguientes es un organo linfoide primario?",
+    "opciones": {
+      "a": "Medula osea.",
+      "b": "Bazo.",
+      "c": "Ganglios linfaticos.",
+      "d": "GALT."
+    },
+    "correcta": "a",
+    "explicacion": "Los organos linfoides primarios (produccion y maduracion) son la medula osea y el Timo. El bazo y ganglios son secundarios.",
     "imagen": [],
     "oficial": false
   }
