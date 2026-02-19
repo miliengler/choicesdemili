@@ -1,8 +1,8 @@
 [
-{
+  {
   "id": "inmuno_001_001",
-  "materia": ["pediatria", "otras"],
-  "submateria": ["Síndromes asociados a anomalías cromosómicas", "Inmunologia"],
+  "materia": "pediatria",
+  "submateria": "Síndromes asociados a anomalías cromosómicas / Inmunologia",
   "enunciado": "Recién nacido que a las pocas horas comienza con convulsiones. En el laboratorio se observa hipocalcemia severa. En el niño llama la atención la presencia de micrognatia e hipertelorismo, ¿cuál sería el diagnóstico más probable?:",
   "opciones": {
     "a": "Enfermedad granulomatosa crónica.",
@@ -16,7 +16,7 @@
   "examen": null,
   "anio": null,
   "oficial": false,
-  "Fuente": "Prorem"
+  "fuente": "Prorem"
 },
   {
     "id": "inmuno_001_002",
