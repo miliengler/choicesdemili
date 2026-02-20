@@ -1,6 +1,7 @@
 /* ==========================================================
-   🌐 MEbank 3.0 — Banco TURBO (Con lógica Anti-Huérfanos.)
+   🌐 MEbank 3.0 — Banco TURBO (Versión Multimateria Real)
    ========================================================== */
+
 /* --- 1. PROGRESO --- */
 const STORAGE_KEY_PROG = "MEbank_PROG_v3";
 
@@ -49,21 +50,13 @@ async function loadAllBanks() {
 
   const urls = [];
 
-  // A) Materias
+  // A) Materias - Busca hasta 3 archivos por carpeta (ej: otras1.json, otras2.json)
   const FILES_PER_SUBJECT = 3; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
       urls.push({ url: `bancos/${subj.slug}/${subj.slug}${i}.json`, type: "materia", meta: subj });
     }
   });
-
-  // B) Exámenes
-  /* TEMPORALMENTE PAUSADO PARA TESTEAR MATERIAS
-  if (typeof EXAMENES_META !== 'undefined') {
-    EXAMENES_META.forEach(ex => urls.push({ url: ex.file, type: "examen", meta: ex }));
-  }
-  */
-
 
   // C) Fetch
   const promises = urls.map(item => 
@@ -101,44 +94,22 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Versión Inteligente) --- */
+/* --- 5. PROCESADOR (Lógica Multimateria) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. MATERIA: Match Inteligente
-    // Tomamos lo que viene en el JSON
-    let rawMat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
-    
-    // Lo "limpiamos" (urologia_cx -> urologiacx)
-    let matNorm = normalize(rawMat);
+    // 1. MATERIAS: Procesa todas las materias del array
+    let rawMaterias = Array.isArray(q.materia) ? q.materia : [q.materia || "otras"];
+    q.materia = rawMaterias.map(m => {
+        let matNorm = normalize(m);
+        const found = BANK.subjects.find(s => normalize(s.slug) === matNorm);
+        return found ? found.slug : "otras";
+    });
 
-    // Buscamos en la lista de SUBJECTS oficial quién tiene ese mismo nombre limpio
-    // Esto conecta "urologiacx" (JSON) con "urologia_cx" (Config)
-    const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
-
-    if (foundSubject) {
-        // ¡Bingo! Asignamos el slug OFICIAL (con el guion bajo si lo tiene)
-        q.materia = foundSubject.slug;
-    } else {
-        // Si no existe, va a otras
-        q.materia = "otras";
-    }
-
-    // 2. Submateria (Misma lógica de antes)
-    const mainMateria = q.materia; // Ya tenemos la materia oficial asignada arriba
-    const listaOficial = BANK.subsubjects[mainMateria] || [];
-    
-    let subRaw = Array.isArray(q.submateria) ? q.submateria[0] : (q.submateria || "");
-    const subNorm = normalize(subRaw);
-    
-    const match = listaOficial.find(oficial => normalize(oficial) === subNorm);
-
-    if (match) {
-        q.submateria = normalize(match);
-    } else {
-        q.submateria = listaOficial.length > 0 ? normalize(listaOficial[listaOficial.length - 1]) : "general";
-    }
+    // 2. SUBMATERIAS: Normaliza y guarda todas las submaterias para permitir búsqueda múltiple
+    let rawSubmaterias = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
+    q.submateria = rawSubmaterias.map(sub => normalize(sub));
 
     // 3. Metadatos
     q.tipo = type;
@@ -150,7 +121,6 @@ function processQuestion(q, type, meta) {
     }
 }
 
-
 /* --- 6. HELPERS --- */
 function dedupeQuestionsById(list) {
   const map = new Map();
@@ -161,37 +131,19 @@ function dedupeQuestionsById(list) {
   return Array.from(map.values());
 }
 
-/* --- 7. APIS HÍBRIDAS (LOGICA MATEMÁTICA CORREGIDA) --- */
+/* --- 7. FILTRADO (Búsqueda en Arrays) --- */
 function getQuestionsByMateria(mSlug, selectedSubs) {
-    // Lista oficial de subtemas normalizados para esta materia
-    const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
-    // Identificamos cuál es el "Catch-All" (el último de la lista)
-    const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
-
     return BANK.questions.filter(q => {
-        // 1. Chequear si es de la materia
-        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
+        // 1. Chequear si el slug de la materia elegida está incluido en la pregunta
+        const esDeLaMateria = q.materia.includes(mSlug);
         if (!esDeLaMateria) return false;
 
-        // 2. Si no hay filtro de subtemas, devolver todo
+        // 2. Si no hay filtro de subtemas, devolver todas las de esta materia
         if (!selectedSubs || !selectedSubs.length) return true;
 
-        // 3. Chequear subtema
-        const qSub = q.submateria;
-        
-        // A) Coincidencia directa
-        if (selectedSubs.includes(qSub)) return true;
-
-        // B) Lógica de Huérfanos:
-        // Si el usuario seleccionó el "Catch-All" (ej: "Otras preguntas..."),
-        // debemos incluir también las preguntas cuyo subtema NO esté en la lista oficial de esta materia.
-        // (Esto pasa cuando una pregunta es compartida entre materias y tiene el subtema de la otra).
-        if (selectedSubs.includes(catchAllSub)) {
-            const esHuerfano = !officialSubs.includes(qSub);
-            if (esHuerfano) return true;
-        }
-
-        return false;
+        // 3. Chequear si alguno de los subtemas de la pregunta coincide con los seleccionados
+        // Usamos .some() para que si la pregunta tiene varios subtemas, entre por cualquiera de ellos
+        return q.submateria.some(sub => selectedSubs.includes(sub));
     });
 }
 
