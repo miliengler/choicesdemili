@@ -1,1 +1,1164 @@
-[]
+[
+  {
+    "id": "cardio_002_001",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "En un paciente adulto con shock hipovolémico; ¿qué parámetros esperaría encontrar en el monitoreo hemodinámico? (referencias: VM: volumen minuto; RVS: resistencia vascular sistémica; PVC: presión venosa central).",
+    "opciones": {
+      "a": "PVC baja, VM bajo, RVS baja",
+      "b": "PVC alta, VM alto, RVS baja",
+      "c": "PVC alta, VM bajo, RVS alta",
+      "d": "PVC baja, VM bajo, RVS alta"
+    },
+    "correcta": "d",
+    "explicacion": "El **shock hipovolémico** es el tipo de shock mas frecuente.\nSe caracteriza por una disminución del volumen sanguineo que no logra suplir las demandas metabólicas del organismo por lo que se producen mecanismos compensatorios (aumento del tono simpático, liberación de hormonas de estres, colapso de vasos de capacitancia, disminución de la diuresis).\nEl diagnóstico puede realizarse fácilmente si se conoce la fuente de pérdida de volumen (ejemplo: hemorragia visible), pero puede ser mas dificultoso en caso de hemorragias ocultas.\nEs indispensable distinguir el **shock hipovolémico** del **shock cardiogénico** debido a que su tratamiento es diferente.\nEn el caso del **shock hipovolémico** los parámetros hemodinámicos que se pueden observar son: gasto cardiaco disminuido, presión capilar wedge y presión venosa central disminuidos y resistencias vasculares sistémicas aumentadas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_002",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "La exploración física de Juana, de 22 años quien consulta por palpitaciones arroja únicamente los siguientes datos semiológicos: R1 desdoblado, soplo mesosistólico en el área pulmonar, R2 con desdoblamiento fijo en relación a la respiración. Juana se halla compensada hemodinámicamente y no presenta antecedentes personales significativos. En relación a los hallazgos semiológicos: ¿Cuál es la presunción diagnóstica inicial?",
+    "opciones": {
+      "a": "Comunicación interventricular leve",
+      "b": "Comunicación Interauricular",
+      "c": "Coartación de aorta",
+      "d": "Estenosis pulmonar"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nTeniendo el cuenta el caso clínico analizamos las distintas opciones que nos ofrecen:\nEl segundo ruido está producido por el cierre de las válvulas aórtica y pulmonar.\nExiste un desdoblamiento fisiológico del segundo ruido, sobre todo en inspiración.\nUna exageración del desdoblamiento fisiológico con persistencia durante la espiración se observa en cardiopatias que retrasan o prolongan la duración de la sistole ventricular derecha, como en pacientes con bloqueo de la rama derecha, estenosis pulmonar e hipertensión arterial pulmonar, así como en cardiopatías que adelantan el cierre aórtico, como la insuficiencia mitral y la comunicación interventricular.\nLa **CIV**: su diagnóstico se basa en la auscultación de un soplo pansistólico rudo, intenso, con frémito en el tercer y el cuarto espacio intercostal, que se irradia horizontalmente.\nEl desdoblamiento fijo del 2º ruido, es decir, que no se modifica durante el ciclo respiratorio, puede verse en sujetos con **comunicación interauricular**; la falta de integridad del tabique interauricular hace que se pierda la independencia hemodinámica de las cámaras izquierdas y derechas, manteniéndose unos flujos de llenado ventriculares constantes durante el ciclo respiratorio. (respuesta correcta)\nLa **estenosis pulmonar** en la exploración física, destaca un clic protosistólico (coincidiendo con el momento en que se tiene que abrir la válvula), un soplo sistólico eyectivo, frémito en el borde esternal izquierdo alto y un componente pulmonar del segundo ruido disminuido.\n**Coartación de aórta**: en general, el adulto se presenta muy frecuentemente con hipertensión arterial en las extremidades superiores, refractaria al tratamiento médico. La sospecha clínica inicial basada en la existencia de pulsos femorales débiles y retrasados, diferencia tensional de los miembros superiores e inferiores mayor de 20 mm Hg y soplo, junto con grados variables de hipertrofia ventricular izquierda en el ECG y la radiología torácica, puede confirmarse mediante ecocardiografia",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_003",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "Margarita, de 10 años de edad, es traída a la consulta para control de salud. En el examen físico, detecta que presenta soplo sistólico eyectivo a predominio en foco aórtico, que no irradia. Se atenúa al pasar de decúbito dorsal a la posición sentada. Frente a este cuadro, ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Insuficiencia aórtica.",
+      "b": "Estenosis aórtica.",
+      "c": "Soplo funcional.",
+      "d": "Insuficiencia mitral."
+    },
+    "correcta": "c",
+    "explicacion": "Los soplos cardiacos son un hallazgo frecuente durante el examen físico en pediatria. Se reporta que hasta 50% de los niños fuera del periodo neonatal cursan con algún soplo; sin embargo, menos de 1% de estos soplos se asocia con cardiopatia estructural.\nEs muy importante diferenciar las características clínicas de un soplo inocente de uno patológico para referirlo de forma adecuada.\nLa mayoría de los soplos en niños se originan a través de flujos sanguíneos normales en ausencia de patologia anatómica cardiaca o de los grandes vasos.\nAnte la sospecha de un **soplo inocente** no se requieren de estudios de extensión, sólo seguimiento.\nSe ha demostrado que solicitar un electrocardiograma o una radiografia de tórax, a todos los niños con soplos en la exploración física, no tiene algún beneficio y en ocasiones confunde más al médico, provocando errores en el diagnóstico.\nLos soplos inocentes comparten ciertas característica que permite su sospecha:\n- Sensible a los cambios de posición o la respiración\n- No holosistólico\n- No asociado a clic o galopes\n- Limitado a una pequeña área y no irradiados\n- Baja amplitud\n- No suena áspero\n- Ocurre durante y limitado sólo a la sístole.\nEsta pregunta se ha repetido en los dos últimos exámenes",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_004",
+    "materia": [
+      "cardiologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Sepsis y nosocomiales"
+    ],
+    "enunciado": "¿Cuál de los siguientes cuadros es compatible con un shock séptico? (VMC = Volumen minuto cardiaco; RAP = resistencia arterial periférica)",
+    "opciones": {
+      "a": "Hipotensión arterial; VMC disminuido; RAP elevada; Taquicardia",
+      "b": "Hipotensión arterial; VMC normal; RAP elevada; Bradicardia",
+      "c": "Hipotensión arterial; VMC disminuido en un 20%; RAP normal; Taquicardia",
+      "d": "Hipotensión arterial; VMC elevado; RAP baja; Taquicardia"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl **shock séptico** se caracteriza por presentar sepsis e hipotensión arterial que no responde a la expansión con cristaloides.\nPara evaluar el estado hemodinámico del shock es de utilidad el catéter en la arteria pulmonar.\nEl **shock séptico** presenta un patrón hemodinámico caracterizado por gasto cardiaco elevado, resistencias vasculares sistémicas disminuidas y taquicardia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_005",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Cardiología básica",
+      "Cardiopatías congénitas"
+    ],
+    "enunciado": "Margarita, de 10 años de edad, concurre a control de salud. Al examen físico, usted detecta que presenta soplo sistólico eyectivo a predominio en foco aórtico, que no irradia. Se atenúa al pasar de decúbito dorsal a la posición sentada. Frente a esto ¿Cuál es su sospecha?",
+    "opciones": {
+      "a": "Soplo funcional",
+      "b": "Insuficiencia mitral",
+      "c": "Insuficiencia aórtica",
+      "d": "Estenosis aórtica"
+    },
+    "correcta": "a",
+    "explicacion": "Los soplos cardiacos son un hallazgo frecuente durante el examen físico en pediatria. Se reporta que hasta 50% de los niños fuera del periodo neonatal cursan con algún soplo; sin embargo, menos de 1% de estos soplos se asocia con cardiopatia estructural.\nEs muy importante diferenciar las características clínicas de un soplo inocente de uno patológico para referirlo de forma adecuada.\nLa mayoría de los soplos en niños se originan a través de flujos sanguineos normales en ausencia de patología anatómica cardiaca o de los grandes vasos.\nAnte la sospecha de un **soplo inocente** no se requieren de estudios de extensión, sólo seguimiento.\nSe ha demostrado que solicitar un electrocardiograma o una radiografía de tórax, a todos los niños con soplos en la exploración física, no tiene algún beneficio y en ocasiones confunde más al médico, provocando errores en el diagnóstico.\nLos soplos inocentes comparten ciertas caracteristica que permite su sospecha:\n- Sensible a los cambios de posición o la respiración\n- No holosistólico\n- No asociado a clic o galopes\n- Limitado a una pequeña área y no irradiados\n- Baja amplitud\n- No suena áspero\n- Ocurre durante y limitado sólo a la sístole.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_006",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiología básica"
+    ],
+    "enunciado": "¿En qué momento del ciclo cardíaco se produce la apertura de las válvulas sigmoideas?",
+    "opciones": {
+      "a": "Comienzo de la contracción isovolumétrica sistólica",
+      "b": "Final de la sistole",
+      "c": "Final de la fase isovolumétrica sistólica",
+      "d": "Inicio del llenado ventricular"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nFase de contracción isovolumétrica (sístole isovolumétrica): comienza cuando los ventriculos inician la contracción, lo que provoca el cierre de las válvulas auriculoventriculares (mitral y tricúspide).\nDurante esta fase, las válvulas sigmoideas (aórtica y pulmonar) todavia permanecen cerradas porque la presión intraventricular aún no supera la presión en la aorta y en la arteria pulmonar.\nCuando la presión intraventricular supera la presión en la aorta y pulmonar: se produce la apertura de las válvulas sigmoideas (aórtica y pulmonar).\nEsto marca el final de la fase isovolumétrica y el inicio de la fase de eyección ventricular.\nAnálisis de opciones:\n- **Final de la fase isovolumétrica sistólica** = CORRECTA. Justo en ese momento se abren las válvulas sigmoideas para permitir la eyección de sangre hacia la circulación sistémica y pulmonar.\n- **Final de la sístole** = INCORRECTA. En el final de la sistole, la presión intraventricular cae, lo que provoca el cierre de las sigmoideas, no su apertura.\n- **Comienzo de la contracción isovolumétrica sistólica** = INCORRECTA. Aquí se cierran las válvulas auriculoventriculares, pero las sigmoideas siguen cerradas.\n- **Inicio del llenado ventricular** = INCORRECTA. Eso ocurre en la diástole temprana, tras el cierre de las válvulas sigmoideas y la apertura de las auriculoventriculares.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_007",
+    "materia": [
+      "urgencias",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Paciente politraumatizado",
+      "Cardiología básica"
+    ],
+    "enunciado": "Un paciente de 34 años cursa internación en UTI por accidente con traumatismo múltiple en la vía pública. Al cuarto día de internación muestra los siguientes parámetros hemodinámicos: presión venosa central (PVC): 4 mm Hg, presión de enclavamiento pulmonar (PCP): 3 mm Hg, índice cardíaco: 1,8 l/min/m2. ¿Cuál es el diagnóstico más probable? Nota: El Índice Cardíaco normal es 2,8-4,2 l/min/m2. La resistencia vascular sistémica: RVS=(PAM-PVC)/GC, donde PAM es la presión arterial media, GC es el gasto cardíaco y PVC es la presión venosa central. RVS: 1600- 2400 dinas.seg.m2/cm5. Los valores de la PVC oscilan entre 2-10 cm H2O ó entre 6-12 mmHg, aproximadamente. La presión de enclavamiento capilar pulmonar es de 5 a 15 mmHg.",
+    "opciones": {
+      "a": "Shock Hipovolémico",
+      "b": "Valores hemodinámicos normales",
+      "c": "Shock cardiogénico",
+      "d": "Shock Séptico"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nDatos positivos del caso clínico: PVC: 4 mmHg: bajo (normal-6-12 mmHg).\nPCP: 3 mmHg: bajo (normal ~5-15 mmHg). Índice cardíaco: 1,8 l/min/m2 disminuido (normal 2,8-4,2).\nAnálisis de opciones:\n- **Shock hipovolémico**: CORRECTA. En el shock hipovolémico, se caracteriza por bajas presiones de llenado (PVC y PCP bajas) por disminución del volumen intravascular. Disminución del índice cardíaco por menor retorno venoso. Esto concuerda con el paciente politraumatizado, donde la causa más probable es pérdida de volumen (sangrado).\n- **Shock séptico**: INCORRECTA. En el shock séptico, el indice cardíaco suele estar normal o elevado en fases iniciales (hiperdinámico), aunque en fases tardias puede caer, pero tipicamente las presiones de llenado no están tan bajas, y el contexto clinico es distinto (infección).\n- **Shock cardiogénico**: INCORRECTA. Se caracteriza por indice cardíaco bajo, pero con PVC y PCP elevadas (por congestión retrógrada debido a falla de bomba). Aquí ocurre lo contrario: PVC y PCP muy bajas.\n- **Valores hemodinámicos normales**: INCORRECTA. Claramente no son normales: PVC y PCP están por debajo de lo fisiológico, e indice cardíaco muy reducido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_008",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿De qué patología es característico un primer ruido de intensidad variable en la auscultación cardiaca?",
+    "opciones": {
+      "a": "Estenosis mitral.",
+      "b": "Insuficiencia cardíaca.",
+      "c": "Bloqueo completo de la rama derecha.",
+      "d": "Fibrilación auricular."
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes con **fibrilación auricular** la intensidad del 1er ruido variará en función de la duración de la diástole, siendo el 1er ruido más intenso cuando está precedido por diástoles cortas, donde la contracción ventricular sobreviene con las valvas en su máxima apertura, y siendo menos intenso cuando la diástole precedente es larga.\nEn pacientes con **bloqueo de la rama derecha** se aprecia un desdoblamiento marcado del 1er ruido cardiaco.\nEn la **estenosis mitral** se asocia a primer ruido intenso, no variable.\nEn la **insuficiencia cardiaca** puede causar tercer ruido (S3), pero no caracteriza variabilidad del primer ruido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_009",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Un paciente de 58 años lo consulta porque en un ecocardiograma solicitado para un apto deportivo se detecta dilatación ventricular izquierda con hipocinesia global y fracción de eyección de 38%, sin regionalidad ni valvulopatías significativas. Al interrogatorio refiere hipertensión arterial de larga data sin tratamiento. Al examen físico presenta Tensión Arterial 160/100 mmHg y frecuencia cardíaca de 90 latidos por minuto regular. El Electrocardiograma mostró ritmo sinusal con signos de hipertrofia ventricular izquierda. ¿Cuál de los siguientes es el tratamiento recomendado en esta etapa?",
+    "opciones": {
+      "a": "Anticoagulantes orales, bloqueantes cálcicos y antagonistas de la angiotensina.",
+      "b": "Betabloqueantes e inhibidores de la enzima convertidora de angiotensina.",
+      "c": "Aspirina, estatinas y betabloqueantes.",
+      "d": "Diuréticos de asa, aspirina e inhibidores de la enzima convertidora de angiotensina."
+    },
+    "correcta": "b",
+    "explicacion": "El paciente del caso clinico presenta como datos positivos:\n- FEVI por debajo del 40% = IC con fracción de eyección (FE) reducida. En este caso el déficit de la contractilidad del miocardio es el resultado de la afección directa del músculo cardíaco, como sucede en la miocardiopatia dilatada o después de un infarto de miocardio, o puede ser secundario a una sobrecarga impuesta al corazón como consecuencia de una lesión valvular o de una hipertensión arterial de larga evolución.\n- Antecedente de HTA de larga data.\n- HVI en el ECG.\nCuando la IC se debe a disfunción sistólica del ventriculo izquierdo, el tratamiento debe iniciarse cuando la fracción de eyección sea inferior al 45%-50%, aunque el paciente se halle asintomático (fases B y C de IC), los fármacos de elección son un **IECA** o un antagonista de los receptores de la angiotensina (**ARA**) en caso de contraindicación al IECA, acompañado de un bloqueante **β-adrenérgico** y un diurético.\nEn este caso el tto más adecuado en esta etapa es: **IECA + Betabloqueante**.\nRecordar que: los **Betabloqueantes**: junto a los **IECA**, son fármacos de primera linea en el tratamiento de la IC con FE reducida, independientemente de la causa y de la clase funcional NYHA, por cuanto han demostrado una reducción adicional de la mortalidad de un 30%, disminución de los reingresos hospitalarios, mejoria de los síntomas y de la FEVI.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_010",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un paciente de 56 años concurre a la consulta para control de salud. Tiene antecedentes de HTA en tratamiento. Presenta índice de masa corporal (IMC) de 25, Colesterol total 320 mg/dl, LDL 232 md/dl, es fumador y presenta un registro de TA 130/80 mmHg. ¿Cuál es el riesgo cardiovascular y la intervención más apropiada?",
+    "opciones": {
+      "a": "Muy alto riesgo cardiovascular. Se indica AAS y fármacos hipolipemiantes, actividad fisica y dieta hipograsa",
+      "b": "Riesgo cardiovascular medio. Se indica alimentación baja en grasas y actividad fisica en forma diaria y un nuevo control en 3 meses",
+      "c": "Riesgo cardiovascular bajo. Se indica AAS y cambios de hábitos de vida y nuevo control en 6 meses",
+      "d": "Alto riesgo cardiovascular. Se indica derivación al cardiólogo"
+    },
+    "correcta": "a",
+    "explicacion": "Su riesgo cardiovascular es **MUY ALTO** y se debe indicar AAS y fármacos hipolipemiantes, actividad fisica y dieta hipograsa.\n- Personas sin enfermedad cardiovascular establecida, pero con al menos una de las siguientes condiciones: valor de colesterol total (CT) >= 310 mg/dl, colesterol LDL >= 230 mg/dl o una relación CT/CHDL > 8. En estos casos no es necesario utilizar la tabla de estratificación, y la persona debe incluirse en la máxima categoria de riesgo cardiovascular (\"muy alto riesgo\").",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_011",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Control de salud"
+    ],
+    "enunciado": "Acude a su consultorio un paciente masculino de 48 años que refiere que, en el último control, hace más de dos años, le diagnosticaron hipercolesterolemia, no tomó medicación ni modificó hábitos de vida. Además, es tabaquista de aproximadamente 20 cigarrillos diarios, etilista, y niega otros antecedentes. Al examen físico presenta IMC 32, TA 140/90 mmHg. FC 86 Ipm, FR 20 rpm, acantosis nigricans en región posterior del cuello, xantelasmas palpebrales. Resto del examen sin particularidades. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Sospecha Hipertensión arterial, inicia evaluación del paciente y cita para una 2da toma de presión arterial",
+      "b": "Sospecha Hipertensión de guardapolvo blanco e indica monitoreo domiciliario",
+      "c": "Establece el diagnóstico de Hipertensión arterial secundaria y solicitar estudios complementarios",
+      "d": "Establece el diagnóstico de Hipertensión arterial esencial e inicia tratamiento medicamentoso"
+    },
+    "correcta": "a",
+    "explicacion": "Nos encontramos ante un caso clínico en que tenemos que elegir conducta de acuerdo a las opciones que nos proponen.\nDatos positivos del caso clínico: TBQ, TA 140-90, IMC 32, acantosis nigricans en región posterior del cuello, xantelasmas palpebrales.\nAnte nuestro paciente en el que sospechamos **HTA** tenemos que confirmar el diagnóstico de HTA.\nRecordar que \"en personas de 18 años o más, se adopta como punto de corte para diagnosticar HTA en consultorio valores promediados (de al menos 2 tomas) de: - presión arterial sistólica iguales o mayores a 140 mmHg y/o - presión arterial diastólica iguales o mayores a 90 mmHg. En al menos dos consultas realizadas en diferentes dias.\"\nConducta más adecuada: \"Sospecha Hipertensión arterial, inicia evaluación del paciente y cita para una 2da toma de presión arterial\".",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_012",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Según el Riesgo Cardiovascular Global (RCVG) ¿Cuál es la recomendación de simvastatina para un paciente con un riesgo mayor a 30%?",
+    "opciones": {
+      "a": "Simvastatina 40 mg/dia en personas de 40 a 75 años",
+      "b": "Simvastatina 20 mg/dia en personas de 40 a 75 años",
+      "c": "Simvastatina 40 mg/did en personas mayores de 35 años",
+      "d": "Individualizar la indicación según los niveles de colesterol"
+    },
+    "correcta": "a",
+    "explicacion": "Riesgo CV >= 30%: Los individuos de esta categoría tienen un **MUY ALTO RIESGO** de sufrir episodios cardiovasculares.\nEn lo referente a indicación de **simvastatina**: 40 mg/día en personas de 40 a 75 años y de 20 mg en personas > 75 años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_013",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Eugenia de 52 años, consulta para control de la presión arterial. Hace meses que está en tratamiento por dislipemia, con colesterol total, HDL y LDL elevados. En la consulta anterior presento controles de tensión arterial (TA) elevados. En esta oportunidad continua con registros de TA elevados y trae registros domiciliarios de hipertensión. Usted le diagnostica hipertensión arterial. Eugenia nunca realizó actividad física, dejo de fumar hace un año y tuvo su menopausia hace 2 años. Con el objetivo de promover hábitos saludables y estimar pronostico, usted decide calcular riesgo cardiovascular utilizando las tablas de predicción de riesgo de la OMS/IHS. ¿En cuál de las siguientes situaciones el riesgo cardio vascular puede ser mayor a lo estimado por las mismas en el caso de Eugenia?",
+    "opciones": {
+      "a": "Concentración alta de colesterol HDL (> 50 mg/dl en las mujeres).",
+      "b": "Menopausia.",
+      "c": "Cese tabáquico dentro de los dos años previos a la estimación del riesgo CV.",
+      "d": "Sedentarismo."
+    },
+    "correcta": "d",
+    "explicacion": "Riesgo cardiovascular: hay ciertos casos en los cuales el riesgo CV puede ser mayor a lo estimado por la tabla de estratificación de riesgo:\n- **sedentarismo** (respuesta correcta).\nLa menopausia debe ser prematura para que se la considere.\nConcentración baja de colesterol HDL (< 40 mg/dl en los hombres, < 50 mg/dl en las mujeres) NO como alta como dice en la opción.\nEl cese del tabaco se traduce en beneficios rápidos y sostenidos en el tiempo: hay una reducción de eventos coronarios del 50% al año y una reducción de la mortalidad después de un infarto de un 25-50%.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_014",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada en el seguimiento de un niño de 3 años y 3 meses que durante el control periódico de salud se le registra una tensión arterial (TA) por debajo del percentilo 90 para la edad, según peso e índice de masa corporal?",
+    "opciones": {
+      "a": "Es un hallazgo no significativo ya que no es necesario el control de TA",
+      "b": "Controlar la TA cada seis meses",
+      "c": "Continuar con el control de TA anualmente",
+      "d": "Indicar dieta hiposódica y control de la TA cada dos años"
+    },
+    "correcta": "c",
+    "explicacion": "El control de tensión arterial deberá hacerse anualmente en todo niño sano a partir de los 3 años de edad con el manguito adecuado.\nSe considera tensión arterial normal a la TA < percentilo 90 para edad y sexo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_015",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un varón de 57 años, con antecedentes de tabaquismo, refiere que presenta episodios aislados de HTA en tomas aisladas en la farmacia del barrio, vive en una vivienda precaria sin sus necesidades básicas satisfechas. Al examen físico presenta TA 148-88 mm Hg y obesidad abdominal con perímetro de 100 cm. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Internar al paciente para comenzar con tratamiento farmacológico",
+      "b": "Citar a nuevo control en día no consecutivo.",
+      "c": "Indicar cambios en el estilo de vida y tratamiento farmacológico",
+      "d": "Indicar cambios en el estilo de vida y control a los 12 meses"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEstamos ante una persona que debemos realizar el diagnóstico de **HTA**.\nPor lo que la conducta es recitar al mismo en un día no consecutivo y realizar un nueva toma de TA.\n\"En personas de 18 años o más, se adopta como punto de corte para diagnosticar HTA en consultorio valores promediados (de al menos 2 tomas) de: - presión arterial sistólica iguales o mayores a 140 mmHg y/o - presión arterial diastólica iguales o mayores a 90 mmHg. En al menos dos consultas realizadas en diferentes días.\"\nEl tratamiento farmacológico no se indica sin diagnóstico confirmado, salvo HTA severa o crisis hipertensiva.\nNo hay emergencia ni urgencia hipertensiva, ni daño agudo de órgano blanco por lo que no se debe internar nuestro paciente.\nIndicar cambios en el estilo de vida y control a los 12 meses el intervalo es demasiado largo; debe controlarse en días o semanas, no esperar un año.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_016",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "Marisa se realiza un control de salud, tiene sobrepeso, el resto de la evaluación del examen físico se encuentra dentro de parámetros esperables. Ud. le informa que para prevenir enfermedades cardiovasculares una de la manera de hacerlo es controlando el uso de sal en las comidas, ¿Qué cantidad de sal le recomienda usar a Marisa?",
+    "opciones": {
+      "a": "Debe consumir menos de 10 gramos de sal por dia",
+      "b": "Debe consumir menos de 5 gramos de sal por dia",
+      "c": "Debe consumir menos de 2 gramos de sal por día",
+      "d": "Debe consumir menos de 15 gramos de sal por dia"
+    },
+    "correcta": "b",
+    "explicacion": "La disminución de la ingesta de sodio causa una disminución progresiva de los valores de PA en normotensos e hipertensos.\nLa Organización Mundial de la Salud (OMS) recomienda la reducción de la ingesta de sodio para reducir la PA y el riesgo de ECV.\nSugiere una ingesta diaria aproximada de 2 g/día de sodio en adultos (equivalente a **5 g/día de sal común**, considerando una concentración de 400 mg de sodio/g de sal) (Clase I, Nivel de evidencia A).\nUna reducción de este calibre se asocia a descensos de la PAS de hasta 5 mmHg",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_017",
+    "materia": [
+      "cardiologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Adulto mayor"
+    ],
+    "enunciado": "Estanislao Mendez de 85 años asiste a su consulta luego de haberse tomado la presión en un stand de salud en una fiesta patronal. Refiere que la enfermera encontró que tenía una TA de 150/80 mmHg, por lo que le dijo que acuda rápidamente a ver un profesional. Al reiterar la toma en consultorio se encuentra la misma TA indicada en el stand. ¿Cuál es la medida terapéutica a realizar?",
+    "opciones": {
+      "a": "Se indica tratamiento higiénico dietético.",
+      "b": "Iniciar tratamiento antihipertensivo con monoterapia",
+      "c": "Iniciar tratamiento antihipertensivo con terapia combinada doble.",
+      "d": "Iniciar tratamiento antihipertensivo con terapia combinada triple"
+    },
+    "correcta": "a",
+    "explicacion": "Estamos ante una persona anciana mayor de 80 años que se sugiere ser más tolerante con los objetivos de PA, permitiéndose como aceptables cifras de PAS de hasta 150 mm Hg, incluso 160 mm Hg.\nPor lo que se sugiere ser conservador con el tratamiento, comenzando con **medidas higiénico dietéticas**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_018",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Metabolismo lipídico"
+    ],
+    "enunciado": "Gabriel de 59 años de edad trae resultados de laboratorio solicitados por usted. Tiene antecedentes de hipertensión arterial medicada con amlodipina 10 mg día, tabaquismo (dejó de fumar hace 6 meses), sedentarismo. Su examen físico revela peso 113 kg, talla: 1,75 mts; tensión arterial 150/90 mmHg, auscultación cardiaca normal. El análisis del colesterol muestra: colesterol total: 295 mg/dL; colesterol HDL 34 mg/dL; colesterol LDL 220 mg/dL; triglicéridos 350 mg/dL. Además de indicar dieta hipograsa e hiposódica y actividad física ¿Cuáles de las siguientes opciones de tratamiento farmacológico es correcta?",
+    "opciones": {
+      "a": "Ácido fenofibrico.",
+      "b": "Ácido Nicotinico.",
+      "c": "Aspirina.",
+      "d": "Estatinas"
+    },
+    "correcta": "d",
+    "explicacion": "El paciente tiene un índice cardiovascular alto:\n- El objetivo de PA es de 140/90 mmHg en todas las personas si comorbilidades y presión arterial sistólica <130 mmHg en las personas con alto riego riesgo cardiovascular.\n- **Estatinas**: Indicar una estatina en todas las personas con riesgo cardiovascular > 20% independientemente de sus niveles de colesterol total.\n- La toma del MEDICAMENTO ASPIRINA, es una decisión que debe consensuarse con el médico de cabecera, para aprovechar los potenciales beneficios en PREVENCIÓN PRIMARIA. Controversial su indicación. Si está indicada en \"personas de ambos sexos mayores de 40 años y menores de 70 años, con ALTO MUY ALTO RIESGO cardiovascular por Framingham u otros scores de riesgo\".\nPregunta controversial (2 respuestas correctas)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_019",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Un paciente de 48 años, hipertenso y sin otros antecedentes patológicos de relevancia, decide tomarse la presión por presentar cefalea de intensidad 3/10 constatando un registro de 220-110 mm de Hg. Por dicho motivo consulta a guardia. El examen físico no presenta particularidades y el fondo de ojo, el electrocardiograma y el laboratorio (hemograma, función renal y proteinuria) son normales. ¿Cuál es el diagnóstico y la conducta más adecuada?",
+    "opciones": {
+      "a": "Urgencia hipertensiva, indicar reposo por 30 minutos y evaluar el tratamiento de acuerdo a la respuesta al mismo",
+      "b": "Emergencia Hipertensiva, tratamiento inmediato con antihipertensivos endovenosos",
+      "c": "Emergencia Hipertensiva, tratamiento inmediato con antihipertensivos via oral",
+      "d": "Urgencia hipertensiva, tratamiento inmediato con antihipertensivos via oral"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEstamos ante una crisis hipertensiva tipo **urgencia hipertensiva**.\nUrgencias hipertensivas: se caracterizan por una elevación brusca de la presión arterial (PA), en relación a las cifras tensionales habituales de la persona HTA o cuando la PAS >= 180 mmHg o PAD >= 120 mmHg, SIN síntomas ni signos que evidencian lesión aguda en curso en órganos blanco, generalmente en personas con HTA conocida.\nEn estos casos el objetivo es la reducción de la PA en forma gradual y no excesiva, a través del tratamiento antihipertensivo por vía oral de manejo ambulatorio.\nEl objetivo terapéutico sería reducir gradualmente la presión arterial media (PAM) en un 20% en un periodo de 24-48 horas o disminuir la PAD a valores < 120 mm Hg la PA, con medicación oral ya que si se baja muy rápidamente puede favorecerse la hipoperfusión de órganos diana (corazón, cerebro).\nAnte la toma de TA y estos valores:\n- Mantener en reposo al paciente 5-10 minutos en lugar tranquilo y acostado boca arriba.\n- Indicar un ansiolítico suave (benzodiacepina) si se presenta con ansiedad/nerviosismo.\n- Comprobar el nivel de PA.\nEs importante saber si el paciente estaba recibiendo tratamiento antihipertensivo previo o no.\nSi estaba en tratamiento y lo ha abandonado, hay que reiniciarlo, pero si continua con la medicación antihipertensiva hay que aumentar la dosis del que toma o asociar nuevos fármacos.\nSi no está en tratamiento y es necesaria medicación antihipertensiva, debe emplearse un fármaco de acción lenta (por ejemplo) evitando los de acción rápida (nifedipina sublingual) porque pueden inducir isquemia en los órganos diana.\nCualquiera de las familias de fármacos antihipertensivos pueden utilizarse en sus dosis habituales en el tratamiento de esta situación clínica.\nSi a pesar del tratamiento la PA >= 210/120 mm Hg se puede repetir la dosis 2-3 veces a intervalos de 30 minutos.\nSi no hay respuesta, valorar otros fármacos, pero si en 2-3 horas no hay reducción de la PA derivar a urgencias dado que puede requerir tratamiento por vía parenteral.\nSi la PA < 210/120 mm Hg, enviar al paciente a su domicilio, citando a un nuevo control en 24 horas.\nLa normalización de la presión arterial puede conseguirse en días o semanas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_020",
+    "materia": [
+      "cardiologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Insuficiencia renal crónica"
+    ],
+    "enunciado": "Concurre a su consultorio Alejandro, de 55 años con diagnóstico de hipertensión arterial, y en tratamiento con enalapril 20mg/d y amlodipina 10mg/d. Trae estudios complementarios entre los que valora un clearence de creatinina de 55 ml/min y una proteinuria de 1,5 gr/24 hs. ¿Cuáles serían las metas de tensión arterial a lograr en este paciente?",
+    "opciones": {
+      "a": "Menos de 150/90",
+      "b": "Menos de 140/90",
+      "c": "Menos de 125/75",
+      "d": "Menos de 120/80"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes con **ERC + proteinuria >= 300 mg/d** (en este caso 1.5 g/d), la meta de presión arterial debe ser más estricta que la habitual.\nLas guías recomiendan < 130/80 mmHg como objetivo general para la mayoría de hipertensos con ERC, y algunas proponen < 125/75 mmHg en casos con proteinuria masiva (> 1 g/d), siempre que el paciente tolere la reducción y sin riesgo de hipotensión.\nLos pacientes que presentan proteinuria > 1 g/día deben tener niveles estables de presión arterial < 125/75 mmHg -libro de medicina familiar y práctica ambulatoria-",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_021",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un varón de 61 años acude a la consulta para control clínico. Tiene antecedentes de hipertensión arterial y angina crónica estable y presenta un índice de masa corporal (IMC) de 27,3. Se encuentra en tratamiento con aspirina, atenolol y enalapril. Los resultados de laboratorio son: colesterol: total: 273 mg %; colesterol: LDL: 151 mg%. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar dieta, ejercicio y tratamiento con un inhibidor de la HMG CoA reductasa",
+      "b": "Indicar dieta, ejercicio y tratamiento con ezetimibe",
+      "c": "Indicar dieta, ejercicio y control en 6 semanas",
+      "d": "Indicar dieta, ejercicio y tratamiento con fibratos"
+    },
+    "correcta": "a",
+    "explicacion": "El paciente tiene la siguiente característica:\nTiene enfermedad cardiovascular establecida (enfermedad coronaria-antecedente de angina).\nEn estos casos no es necesario utilizar la tabla de estratificación, y al paciente se lo debe incluir en la máxima categoría de riesgo cardiovascular (\"muy alto riesgo\").\nLos individuos de esta categoría tienen un **MUY ALTO RIESGO** de sufrir episodios cardiovasculares.\nSe sugiere un manejo centrado en cambios del modelo de vida:\n- Consumir diariamente frutas y verduras en variedad de tipos y colores.\n- Evitar el uso de la sal y el consumo de alimentos con alto contenido de sodio.\n- Limitar el consumo de alimentos con elevado contenido de grasas y/o azúcar.\n- Indicar estatinas:\n40 mg/día en personas de 40 a 75 años.\n20 mg en personas > 75 años.\n- Consejo antitabaco a fumadores y no fumadores / Intervención breve según estatus / considerar uso de fármacos.\n- Sumar actividad física moderada al menos 30 minutos por día.\n- Si la persona presenta sobrepeso u obesidad acordar con la persona un plan de alimentación orientado a disminuir el consumo de calorías y aumentar progresivamente los niveles de actividad física.\n- Indicar antiagregación con aspirina en todos los casos. Si el paciente presenta HTA, antes de iniciar la aspirina la TA debe estar controlada.\n- Limitar el consumo de alcohol, como máximo al día dos medidas en el hombre y una en la mujer.\n- Manejo de HTA: iniciar tratamiento farmacológico en población general de:\nentre 30 y 59 años con PAS > 140 y/o PAD > 90 mmHg, y\nen > 60 años con PAS > 150 y/o PAD > 90 mmHg.\nSeguimiento cada 3 a 6 meses.",
+    "explicacion_img": [
+      "img/explicaciones/cardio_riesgo_cv.jpg"
+    ],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_022",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Un varón de 65 años concurre a la consulta por control de salud. Refiere antecedentes de tabaquismo de 30 paq/año e internación por IAM 4 años atrás. Refiere no cumplir tratamientos farmacológicos en la actualidad salvo la ingestión de 1 aspirina diaria de 100 mg. Al examen físico: TA 150-80 mmHg, FC 76 lpm, pulso regular y examen físico normal. En el ECG presenta ritmo sinusal con pequeña onda Q en DII, DIII y AVF y el ecocardiograma informa: fracción de eyección de 40 %. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Inhibidores de la ECA + beta bloqueantes + diuréticos",
+      "b": "Antagonistas de los receptores de angiotensina II (ARA II) + digital",
+      "c": "Inhibidores de la ECA + beta bloqueantes",
+      "d": "Inhibidores de la ECA"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nDatos positivos del caso clínico: Varón de 65 años. FRCV: tabaquismo, hipertensión arterial. Antecedente de IAM hace 4 años.\nSolo toma aspirina.\nTA: 150/80 mmHg. ECG: ondas Q inferiores (secuela de IAM).\nEcocardiograma: FEVI 40%, insuficiencia cardíaca con fracción de eyección reducida (IC-FEr). Clínicamente: asintomático (no hay datos de congestión).\nEn todo paciente post-IAM con FEVI <= 40%, aunque esté asintomático, se debe indicar IECA (o ARA II si intolerancia) + beta bloqueante para mejorar la supervivencia y prevenir progresión a IC clínica.\n- **IECA solos**: insuficientes según guías actuales: falta BB.\n- **IECA + beta bloqueantes**: es la combinación recomendada en todo paciente con IC-FEr o FEVI <= 40% post-IAM, incluso si está asintomático. Ambos mejoran pronóstico y reducen mortalidad. (respuesta correcta)\n- **ARA II + digital**: no corresponde. Digital no mejora sobrevida y ARA II se reservan para intolerancia a IECA.\n- **IECA + beta bloqueantes + diuréticos**: Los diuréticos se usan solo si hay sobrecarga de volumen (edema, congestión). En este caso no hay signos de congestión -> no indicados de rutina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_023",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "¿Cuál de las siguientes drogas endovenosas es la más indicada para el tratamiento inmediato de un paciente de 65 años con antecedentes de hipertensión arterial e insuficiencia cardíaca, que ingresa en la guardia con disnea clase funcional IV, sudoración y ansiedad? En el examen físico presenta: frecuencia cardíaca: 90 latidos /minuto, tensión arterial: 170/85 mmHg, frecuencia respiratoria: 24/minuto, rales crepitantes bilaterales de bases hasta campos medios pulmonares y edemas en miembros inferiores.",
+    "opciones": {
+      "a": "Beta bloqueantes",
+      "b": "Nitroglicerina",
+      "c": "Digoxina",
+      "d": "Propafenona"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl paciente tiene un cuadro típico de edema agudo de pulmón secundario a insuficiencia cardíaca descompensada con hipertensión arterial severa (170/85 mmHg).\nEn este contexto, lo fundamental es disminuir la presión de llenado ventricular y la poscarga para mejorar los síntomas de congestión y disnea.\nAnálisis de las opciones:\n- **Nitroglicerina (EV)**: vasodilatador venoso y arterial a dosis altas, reduce precarga y poscarga, mejora rápidamente la congestión pulmonar y es de elección en edema agudo de pulmón hipertensivo. (opción correcta)\n- **Beta bloqueantes**: no se indican en fase aguda de IC descompensada; pueden empeorar el cuadro.\n- **Digoxina**: útil en IC crónica con FA rápida, pero su efecto es lento, no sirve en urgencia hipertensiva con edema agudo.\n- **Propafenona**: antiarrítmico, contraindicado en pacientes con IC por riesgo de arritmias graves.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_024",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "En pacientes de 50 años con muy alto riesgo cardiovascular, ¿qué estrategia es la mejor para la prescripción de aspirina?",
+    "opciones": {
+      "a": "Indicaria aspirina 75-100 mg/dia por tiempo indefinido salvo que surja contraindicación",
+      "b": "Indicaria aspirina 20 mg/dia por 4 semanas",
+      "c": "No indicaria aspirina",
+      "d": "Indicaría aspirina hasta obtener un valor de RIN (International normalized ratio) >a2"
+    },
+    "correcta": "a",
+    "explicacion": "En personas de entre 40 y 79 años indicar **aspirina 75-100 mg/día** cuando el riesgo cardiovascular es MUY ALTO, no indicarla en los sujetos en riesgo cardiovascular bajo e intermedio, e individualizar la indicación en los sujetos en riesgo cardiovascular alto.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_025",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Un varón de 70 años con antecedentes de hipertensión arterial y diabetes mellitus, en tratamiento con enalapril 10 mg/12 h, furosemida 40 mg/dia, metformina 850 mg/d y simvastatina 20 mg/dia. Consulta a la guardia por empeoramiento de su disnea hasta hacerse de reposo. El examen físico presenta TA: 170-90 mmHg, FC 103 lpm, FR 22 rpm y saturación de oxígeno 88% (FiO2 21%). Se auscultan un tercer tono cardíaco, crepitantes bilaterales hasta campos medios y edemas infrapatelares. ECG: BCRD y Q profundas en cara inferior. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar angioplastia percutánea",
+      "b": "Internación, administrar diuréticos de asa y nitroglicerina por via endovenosa, oxigenoterapia",
+      "c": "Ambulatorio, aumentar al doble la dosis de diuréticos de asa, agregar betabloqueantes y control a las 24 hs",
+      "d": "Internación, administrar dobutamina endovenosa y oxigenoterapia"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl caso clínico nos plantea a un paciente que tiene antec de HTA y DBT y se presenta con disnea CF IV, edemas periféricos, crepitantes pulmonares, hipertensión, taquicardia, 3er tono.\nEstamos ante una **insuficiencia cardíaca aguda**. Se debe internar al paciente, indicar oxigenoterapia, diuréticos de asa, vasodilatadores (NTG) y prevención de la enfermedad tromboembólica con heparinas.\nResp correcta: Internación, administrar diuréticos de asa y nitroglicerina por via endovenosa, oxigenoterapia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_026",
+    "materia": [
+      "cardiologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Insuficiencia renal crónica"
+    ],
+    "enunciado": "Javier, tiene 62 años, acude a consulta con su médico de familia para control de su presión arterial. Tiene antecedentes de diabetes mellitus tipo 2, dislipidemia y obesidad. No ha tenido eventos cardiovasculares previos. En el examen físico, su presión arterial es de 150/95 mmHg, confirmada en dos consultas consecutivas con mediciones estandarizadas. Se le realiza un monitoreo ambulatorio de presión arterial (MAPA), que muestra una presión arterial promedio de 148/92 mmHg durante el día y 130/85 mmHg durante la noche. Su análisis de laboratorio muestra una tasa de filtración glomerular de 55 mL/min/1.73 m2 y una microalbuminuria de 35 mg/dL. ¿Cuál es la conducta más adecuada en este caso?",
+    "opciones": {
+      "a": "Iniciar tratamiento farmacológico con IECA o ARA II como primera linea, debido a la presencia de diabetes y daño renal incipiente.",
+      "b": "No iniciar tratamiento antihipertensivo por el momento, ya que su presión arterial no supera los 160/100 mmHg y no ha tenido eventos cardiovasculares.",
+      "c": "Indicar betabloqueantes como primera línea, dado que tiene diabetes y dislipidemia.",
+      "d": "Indicar cambios en el estilo de vida y reevaluar en tres meses, ya que la presión nocturna está dentro de valores normales."
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es \"iniciar tratamiento farmacológico con IECA o ARA II como primera linea, debido a la presencia de diabetes y daño renal incipiente\".\nJavier presenta una combinación de factores de alto riesgo cardiovascular y evidencia de daño a órgano blanco: **Diabetes tipo 2** + **Dislipidemia** y **obesidad** + Presión arterial persistentemente elevada (>= 140/90 mmHg en consultas y MAPA) + Tasa de filtración glomerular (TFG) de 55 mL/min/1.73 m2: **insuficiencia renal** + Microalbuminuria (35 mg/dL): **daño renal incipiente**.\nLos **IECA** (inhibidores de la enzima convertidora de angiotensina) o los **ARA II** (antagonistas del receptor de angiotensina) son de primera elección porque:\n- reducen la proteinuria, protegen la función renal y reducen el riesgo cardiovascular en pacientes diabéticos.\nAnalizamos las otras opciones:\n- Solo cambios de estilo de vida: insuficiente. Ya hay daño renal + presión persistentemente elevada se debe iniciar tratamiento farmacológico.\n- Betabloqueantes como primera línea: no son de primera elección en hipertensión con diabetes y nefropatia, se usan en casos con enfermedad cardiaca isquémica o arritmias.\n- No iniciar tratamiento porque no supera 160-100 mmHg: esta cifra aplica en pacientes sin comorbilidades ni daño a órgano blanco, lo cual no es el caso aqui.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_027",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "¿Cuál de los siguientes fármacos elige para el tratamiento de una mujer de 82 años con hipertensión arterial sistólica aislada e hipercalciuria?",
+    "opciones": {
+      "a": "Dihidropiridinicos.",
+      "b": "Tiazidas.",
+      "c": "Betabloqueantes.",
+      "d": "Antagonistas de los receptores de angiotensina."
+    },
+    "correcta": "b",
+    "explicacion": "**Tiazidas**: eficaces en las siguientes condiciones clinicas: **Hipertensión Sistólica Aislada** (Ancianos) e hipercalciuria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_028",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Metabolismo lipídico"
+    ],
+    "enunciado": "Un paciente de 45 años consulta a control de salud. Tiene como antecedentes HTA y colocación de stent coronario en 2 vasos hace 1 mes. Se encuentra en tratamiento con atorvastatina 80 mg/d y enalapril 10mg/dia, es sedentario y no cumple con la dieta. ¿Cuáles son las metas de colesterol LDL y colesterol no HDL en este paciente?",
+    "opciones": {
+      "a": "C-LDL menor a 70 mg/dl y C-no HDL menor a 130 mg/dl",
+      "b": "C-LDL menor a 50 mg/dl y C-no HDL menor a 80 mg/dl",
+      "c": "C-LDL menor a 100 mg/dl y C-no HDL menor a 100 mg/dl",
+      "d": "C-LDL menor a 100 mg/dl y C-no HDL menor a 130 mg/dl"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEn un paciente de 45 años con antecedentes de hipertensión arterial y enfermedad cardiovascular aterosclerótica reciente (colocación de stents coronarios hace 1 mes), se considera que tiene un riesgo cardiovascular muy alto.\nPara pacientes de riesgo muy alto, las metas lipídicas son:\nEn la actualidad, el objetivo de **LDL** en personas con algún tipo de enfermedad cardiovascular de origen ateroesclerótico es inferior a 70 o 55 mg/dL (según la bibliografia y van apareciendo evidencias que sugieren valores más bajos).\nColesterol no-HDL < 85 mg/dl",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_029",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en un paciente de 32 años sin antecedentes familiares, sin sobrepeso, ni diabetes, que tiene en el consultorio cifras de tensión arterial (TA) sistólica de 150 mmHg con TA diastólica normal? El ECG, el ionograma y la función renal son normales. Se ha realizado controles domiciliarios con registros normales.",
+    "opciones": {
+      "a": "Hipertensión arterial estadio 2",
+      "b": "Pseudohipertensión",
+      "c": "Hipertensión arterial secundaria",
+      "d": "Hipertensión arterial \"de guardapolvo blanco\""
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nLa **hipertensión arterial del guardapolvo blanco** se refiere al registro de valores de presión arterial altos en el consultorio en personas que en su vida habitual tienen valores normales.\nEntonces ante una persona joven sin antecedentes, con PA elevada en el consultorio y con un monitoreo ambulatorio sin valores elevados se debe considerar esta entidad en primera instancia.\nLa **HTA nivel 2** requiere una PAS 160-179 y/o PAD 100-109.\n**Pseudohipertensión** es falsa porque la elevación por arterias rígidas y no compresibles; más común en adultos mayores con calcificación arterial, no en jóvenes.\n**Hipertensión arterial secundaria**: suele sospecharse ante hipertensión grave, refractaria, con daño de órgano blanco o inicio precoz (<30 años) pero con cifras persistentes fuera del consultorio, cosa que aqui no ocurre.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_030",
+    "materia": [
+      "cardiologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "Usted evalúa a Axel, de 8 años, previamente sano, sin antecedentes familiares relevantes, con peso y talla en percentilo 50. Durante el control de salud registra una presión arterial de 118/79 mmHg (percentilo 95-99, según su edad y talla) con tensiómetro adecuado en tamaño. En el examen físico no se auscultan soplos, los pulsos son simétricos y no hay visceromegalias. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar laboratorio (hemograma, función renal, ionograma)",
+      "b": "Repetir medición en 1 semana",
+      "c": "Indicar dieta hipo sódica y evaluación por servicio de hipertensión",
+      "d": "Solicitar monitoreo ambulatorio de presión arterial"
+    },
+    "correcta": "b",
+    "explicacion": "Ante un paciente con un registro de hipertensión arterial en el control de salud, debemos confirmar la hipertensión repitiendo las tomas.\nSi el paciente presenta una tensión arterial (TA) mayor o igual al centilo 90 se repetirá la toma; si nuevamente presenta presión superior a dicho percentilo se tomará nuevamente.\nSi luego de esta tercera medición el paciente presenta TA mayor o igual al percentilo 95 se indicará un monitoreo continuo ambulatorio (**MAPA**).\nEl **MAPA** es de suma utilidad en pediatria porque nos permite confirmar si el niño está hipertenso y evitar estudiar innecesariamente a los pacientes.\nTambién permite diagnosticar la HTA del guardapolvo blanco. Es un procedimiento que consiste en la colocación un aparato portátil que registra la TA del niño durante las 24 horas; las mediciones de la TA se programan cada 20 minutos de día y cada 30 minutos de noche, obteniéndose gran cantidad de mediciones mientras el niño desarrolla sus actividades habituales.\nSi el **MAPA** es patológico y/o el niño tiene antecedentes de riesgo como diabetes, insuficiencia renal crónica, miocardiopatia; o antecedentes familiares solicitaremos también un laboratorio control, incluyendo hemograma, función renal, ionograma, perfil lipidico, glucemia y además ecografia renal, ECG y ecocardiograma.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_031",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un paciente de 45 años concurre a la consulta para un examen periódico de salud. Refiere como antecedente hipertensión arterial, ¿de cuál de los siguientes estudios se puede prescindir?",
+    "opciones": {
+      "a": "Creatinina Plasmática",
+      "b": "Rx de Tórax",
+      "c": "Lipidograma",
+      "d": "ECG"
+    },
+    "correcta": "b",
+    "explicacion": "Todo paciente hipertenso debe ser sometido a los siguientes estudios de laboratorio iniciales:\n- Hemograma completo - Glucemia en ayunas - Colesterol total (Col-t) - HDL-c - LDL-c - Triglicéridos (TG) - Uricemia\n- Creatinina plasmática - Cálculo de filtrado glomerular (CKD/EPI MDRD) - lonograma plasmático - Orina completa con sedimento urinario.\nTodo paciente HTA debe tener un **ECG**: detección de hipertrofia ventricular izquierda, fibrilación auricular (FA), signos de cardiopatía isquémica previa.\nSi bien en el diagnóstico de hipertrofia ventricular izquierda (HVI) el electrocardiograma es menos sensible que el ecocardiograma, su especificidad es elevada.\nAsimismo, el diagnóstico de HVI es un fuerte predictor de ECV y muerte y su reducción con tratamiento antihipertensivo reduce el RCV.\nA pesar de que la ecocardiografía en el diagnóstico de la HVI tiene mayor sensibilidad, el **ECG** es complementario de la ecocardiografía y se ha demostrado que cuando ambos métodos diagnostican HVI, el pronóstico empeora.\nEn el **ECG** también se evidencian la presencia de trastornos de la conducción cardiaca, en particular el bloqueo completo de la rama izquierda, y de arritmias como la FA que también agravan el pronóstico.\nLa **radiografía de tórax** es un estudio que se puede prescindir a la hora de la evaluación de un paciente con HTA.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_032",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    "enunciado": "Martin es un paciente de 71 años con antecedentes de tabaquismo, obesidad Grado 1, HTA, e insuficiencia cardíaca. Consulta por aumento de disnea habitual, intolerancia a caminar 100 mts, edema discreto en miembros inferiores, y ha comenzado a dormir con dos almohadas desde hace 3 noches. ¿A qué proceso fisiopatológico se le pueden atribuir estos síntomas?",
+    "opciones": {
+      "a": "Mala perfusión de tejido periférico",
+      "b": "Aumento de las presiones de llenado intracardiaco",
+      "c": "Disminución de resistencias vasculares",
+      "d": "Arritmia ventricular compleja"
+    },
+    "correcta": "b",
+    "explicacion": "La **Disnea en la insuficiencia cardíaca**: es la sensación subjetiva de falta de aire.\nTraduce el aumento del esfuerzo requerido para la respiración y es el síntoma más frecuente del fallo ventricular izquierdo.\nAl principio se observa sólo durante el ejercicio importante. A medida que la IC progresa, esfuerzos cada vez menores ocasionan disnea que, en fases más avanzadas, puede darse incluso en reposo.\nLa disnea es secundaria a la elevación de la presión de llenado ventricular izquierdo, que determina un aumento de la presión media de la aurícula y de las presiones venosa y capilar pulmonares.\nAl elevarse la presión venosa pulmonar por encima del limite máximo de la normalidad (12 mm Hg), las venas pulmonares se distienden y, cuando se alcanza la presión oncótica del plasma (25-30 mm Hg), hay trasudación del líquido capilar al espacio intersticial.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_033",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Usted atiende por primera vez a un varón de 54 años que lo consulta para realizar un control de salud. En la historia clínica figura como antecedente hipertensión arterial, constan dos consultas con registros de 150-90 hace 2 años. En ese momento le indicaron enalapril 5 mg por día y dieta hiposódica que aún sigue cumpliendo. Fuma 10 cigarrillos por día. Como antecedentes familiares, su padre tuvo un infarto de miocardio a los 68 años y su madre tiene diabetes tipo 2. En la consulta usted le detecta presión arterial de 150-95 mm Hg. ¿Cuáles de las siguientes prácticas realiza en el examen físico para completar la evaluación en esta primera consulta?",
+    "opciones": {
+      "a": "Auscultación cardiaca y respiratoria, palpación abdominal y fondo de ojo",
+      "b": "Peso, talla, índice de masa corporal, auscultación cardiaca y respiratoria, palpación abdominal, tacto rectal y evaluación de la sensibilidad de los pies",
+      "c": "Auscultación cardíaca y respiratoria, palpación abdominal y tacto rectal",
+      "d": "Peso, talla, índice de masa corporal, perimetro abdominal y auscultación cardiaca"
+    },
+    "correcta": "d",
+    "explicacion": "Durante el seguimiento clínico de los pacientes hipertensos siempre será recomendada determinar la talla y el peso para calcular el IMC, junto con los valores de tensión arterial.\nEl examen fisico cardiológico evaluará la presencia de soplos cardíacos y del pulsos periféricos, el examen abdominal determinará si hay dilatación aórtica, soplos o aumento del tamaño renal.\nEsto permite evaluar el estado nutricional (IMC), distribución de grasa (perímetro abdominal), y detectar signos de daño órgano blanco (auscultación cardiaca).\nEs lo esperable en una primera consulta de control cardiovascular.\nEl fondo de ojo no es una práctica de rutina en personas HTA.\nLa palpación abdominal puede ser útil, pero no reemplaza las medidas antropométricas que son básicas en esta evaluación.\nEl tacto rectal no es parte del examen inicial de rutina, salvo sintomas urológicos o screening prostático en mayores de 50, pero no en este contexto general.\nEl examen de sensibilidad de pies es una práctica innecesaria para la consulta inicial y que es más relevante en seguimiento de diabetes establecida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_034",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "Un paciente de 52 años con antecedentes de diabetes tipo 2, dislipidemia e HTA que se encuentra en tratamiento con metformina y enalapril concurre a la consulta. Trae resultados de estudios solicitados previamente para control: Glucemia en ayunas 190 mg/dl, Hb glicosilada 7,5%, Col total 220 mg/dl, HDL 35 mg/dl y Triglicéridos 180 mg/dl. Al examen físico: peso 70 kg, talla 178 cm y registra una TA de 142/80 mm/Hg. De acuerdo con esta información, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": {
+      "a": "No cumple con ninguna meta de tratamiento",
+      "b": "Cumple con metas de tratamiento de LDL",
+      "c": "Cumple con metas de tratamiento de Hb glicosilada y TA",
+      "d": "Cumple con metas de tratamiento de IMC"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nObjetivos del control de otros factores de riesgo:\nFactores de Riesgo = Objetivos del control\n- Colesterol total = < 185 mg/dl\n- LDL = < 100 mg/dl (LDL de 149 mg/dl, el paciente no cumple con la meta de LDL)\n- HDL = > 40 mg/dl Hombre; > 50 mg/dl Mujer\n- Triglicéridos = < 150 mg/dl\n- Presión arterial = < 140/90 mm Hg\n- Peso (IMC = Kg/m2) = IMC < 25\n- Cintura = < 102 cm Hombre; < 88 cm Mujer\n- HbA1c = < 7%\nNuestro paciente presenta IMC = 70 / (1.78)^2 ≈ 22.1 kg/m2\nCumple con metas de tratamiento de IMC.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_035",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Carlos tiene 58 años, consulta con su médica de familia para control de salud. Tiene antecedentes de hipertensión arterial mal controlada y dislipidemia. Es fumador activo y su padre tuvo un infarto agudo de miocardio (IAM) a los 56 años. En la consulta, pregunta si debería comenzar a tomar aspirina para prevenir enfermedades cardiovasculares. Tras realizar la estratificación de riesgo cardiovascular (RCV), se determina que Carlos tiene alto riesgo cardiovascular. No presenta antecedentes de úlceras gástricas ni síntomas gastrointestinales, aunque menciona que toma ibuprofeno en forma regular para dolores musculares. ¿Cuál es la conducta más adecuada en este caso?",
+    "opciones": {
+      "a": "Individualizar la indicación de aspirina 75-100 mg/dia considerando el riesgo-beneficio, ya que tiene alto RCV, pero usa antiinflamatorios no esteroides, lo que aumenta el riesgo de hemorragia digestiva.",
+      "b": "Indicar aspirina 75-100 mg/dia de manera rutinaria, ya que el beneficio siempre supera el riesgo en personas con alto RCV.",
+      "c": "No indicar aspirina porque se encuentra en una categoría de riesgo cardiovascular no definida y el riesgo de sangrado puede superar el beneficio.",
+      "d": "Indicar aspirina sólo si presenta sintomas de angina de pecho o dolor torácico, debido a que presenta alto riesgo de hemorragia digestiva porque usa antiinflamatorios no esteroides."
+    },
+    "correcta": "a",
+    "explicacion": "En personas de entre 40 y 79 años indicar **aspirina** 75-100 mg/dia cuando el riesgo cardiovascular es MUY ALTO, no indicarla en los sujetos en riesgo cardiovascular bajo e intermedio, e individualizar la indicación en los sujetos en riesgo cardiovascular alto.\nCarlos tiene varios factores de riesgo cardiovascular importantes: Hipertensión arterial no controlada + Dislipidemia + Tabaquismo activo + Antecedente familiar de enfermedad cardiovascular precoz.\nEstratificación de riesgo: alto riesgo cardiovascular.\nSin embargo, no ha tenido un evento cardiovascular previo, por lo tanto estamos ante un escenario de prevención primaria.\nEl uso de **aspirina** en prevención primaria debe ser individualizado, incluso en personas con alto riesgo cardiovascular, debido a que: el beneficio en reducción de eventos cardiovasculares puede ser contrarrestado por el aumento del riesgo de hemorragias, especialmente digestivas.\nEl uso crónico de **AINES** (como ibuprofeno, en este caso) incrementa ese riesgo hemorrágico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_036",
+    "materia": [
+      "cardiologia",
+      "psiquiatria"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Trastornos neuróticos y de la personalidad"
+    ],
+    "enunciado": "Un varón de 45 años presentó registros de TA que oscilaban entre 145-96 mm de Hg en la primera consulta y 150-98 mm de Hg en las subsiguientes, en el lapso de 2 meses. Los controles que se realiza, en forma aislada en la casa o en la farmacia oscilan alrededor de 130/70 mm de Hg. Como antecedente refiere consultar desde algunos meses atrás al servicio de salud mental por trastorno por ansiedad habiéndosele indicado oportunamente tratamiento con benzodiazepinas. ¿Cómo se define esta situación y como se confirma el diagnóstico?",
+    "opciones": {
+      "a": "El paciente presenta probablemente HTA secundaria y deben solicitarse catecolaminas urinarias y plasmáticas, ácido vainillinmandėlico, metanefrinas urinarias y plasmáticas, TAC o RMN de abdomen y Centellografia para confirmar el diagnóstico",
+      "b": "El paciente presenta respuesta presora secundaria al trastorno por ansiedad que padece y debe realizar automonitorización domiciliaria para confirmar el diagnóstico.",
+      "c": "El paciente presenta HTA nivel I. No se requieren más estudios complementarios para confirmar del diagnóstico",
+      "d": "El paciente presenta respuesta presora durante la medición en el consultorio y debe realizar automonitorización domiciliaria de la PA y MAPA (Monitoreo Ambulatorio de Presión Arterial) de 24 hs para confirmar el diagnóstico."
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nLa respuesta correcta es la que refiere que el paciente presenta \"respuesta presora durante la toma de presión en el consultorio\" (guardapolvo blanco) ya que los controles fuera del consultorio son normales.\nSe descarta \"respuesta presora secundaria al trastorno por ansiedad\" ya que en este caso debería de tener valores de TA más elevados fuera del consultorio.\nLa presión arterial obtenida en la consulta ha sido tradicionalmente el método de referencia para el cribado, para confirmar el diagnóstico, para la toma de decisiones y para el seguimiento.\nTiene las limitaciones del fenómeno del guardapolvo blanco, situación en la cual al paciente le sube la PA cuando está delante del médico, aspecto que es muy común en ancianos, jóvenes y embarazadas.\nEste fenómeno del guardapolvo blanco podria llevar a un sobrediagnóstico, estimar una mayor gravedad de la HTA y todo ello conducir a un sobretratamiento.\nEl monitoreo domiciliario de la PA puede ser de utilidad en algunos casos de dificultad diagnóstica o ante la sospecha de hipertensión de guardapolvo blanco, así como para ayudar a la adherencia al tratamiento.\nPara ello, se aconseja instruir al paciente que deben hacerse dos tomas, estando sentado, con al menos 5 minutos de reposo.\nIdealmente deberian realizarse 2 tomas diarias, a la mañana y a la tarde.\nSi se usa para confirmar el diagnóstico de HTA, deben obtenerse tomas al menos durante 4 dias, descartar las tomas del primer dia y promediar las restantes.\nLas dos formas habituales de realizarlo son mediante la monitorización ambulatoria de la PA con Holter (**MAPA**) y mediante la automedición domiciliaria de la PA (**AMPA**).\nAmbas técnicas suelen presentar valores inferiores de PA que los obtenidos en consulta, por lo que los valores que definen la HTA varían en función de la técnica utilizada.\n- HTA nivel I sin más estudios: No se debe confirmar hipertensión sin mediciones fuera del consultorio, dado que podria ser bata blanca.\n- HTA secundaria con estudios de catecolaminas: No hay signos que sugieran feocromocitoma ni otra causa secundaria (cifras muy altas, crisis, hipopotasemia, daño de órgano blanco precoz).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_037",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "En personas con HTA mayores de 18 años que requieren terapia con 3 fármacos para alcanzar metas de control de la TA y reducir los riesgos de enfermedad cardiovascular ¿Cuál es la combinación recomendada?",
+    "opciones": {
+      "a": "Carvedilol + enalapril + furosemida",
+      "b": "Amlodipina + atenolol + losartán",
+      "c": "Losartan + amlodipina + hidroclorotiazida.",
+      "d": "Losartan + enalapril + hidroclorotiazida"
+    },
+    "correcta": "c",
+    "explicacion": "En personas mayores de 18 años con hipertensión arterial (HTA) que requieren terapia con 3 fármacos para alcanzar el control de la presión arterial y reducir el riesgo cardiovascular, la combinación recomendada incluye: un inhibidor del sistema renina-angiotensina (**IECA** o **ARA II**) + un calcioantagonista (bloqueante de canales de calcio) + un diurético tiazidico.\nRespuesta correcta: Losartan + amlodipina + hidroclorotiazida.\nEsta triple combinación ha demostrado eficacia y seguridad para alcanzar las metas de presión arterial y reducir eventos cardiovasculares.\n- **Losartan**: ARA II, bloquea el sistema renina-angiotensina.\n- **Amlodipina**: calcioantagonista, reduce la resistencia vascular periférica.\n- **Hidroclorotiazida**: diurético tiazidico, ayuda a controlar el volumen intravascular y mejora la eficacia antihipertensiva del ARA II.\nLas otras opciones:\n- Losartan + enalapril + hidroclorotiazida: la combinación de ARA II + IECA no es recomendable debido a riesgo elevado de efectos adversos como hiperpotasemia y daño renal.\n- Carvedilol + enalapril + furosemida: es más apropiado para pacientes con insuficiencia cardiaca; no es ideal como combinación antihipertensiva estándar.\n- Amlodipina + atenolol + losartán: los betabloqueantes (atenolol) no son de primera linea para HTA sin comorbilidades específicas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_038",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de urgencias"
+    ],
+    [cite_start]"enunciado": "¿Qué estudio complementario solicita a una paciente de 60 años que consulta por cefalea intensa, visión borrosa y mareos de 6 horas de evolución y en el examen físico se encuentra lúcida, sin signo de foco motor, sensitivo o meníngeo y tiene presión arterial 220/110 mmHg? [cite: 801]",
+    "opciones": {
+      [cite_start]"a": "Electrocardiograma. [cite: 802]",
+      [cite_start]"b": "Tomografía de encéfalo sin contraste [cite: 803]",
+      [cite_start]"c": "Ecocardiograma. [cite: 804]",
+      [cite_start]"d": "Punción lumbar y examen fisicoquímico de LCR [cite: 805]"
+    },
+    "correcta": "b",
+    [cite_start]"explicacion": "Nos encontramos con una mujer con **emergencia hipertensiva** definida por la presencia de una PA muy elevada (PAS > 180-190 mm Hg y/o PAD > 120-130 mm Hg) asociada a cefalea intensa, visión borrosa y mareos. [cite: 809][cite_start]\nPor lo que se debe solicitar inmediatamente una **tomografia computada (TC) de cráneo sin contraste** y, en paralelo, realizar evaluación rápida de daño a órganos diana (analítica básica, ECG, fondo de ojo y ECG). [cite: 810][cite_start]\nSi la TC es normal y persiste sospecha de encefalopatia hipertensiva / PRES, pedir resonancia magnética cerebral con secuencias FLAIR/DWI lo antes posible. [cite: 811][cite_start]\nEl objetivo es excluir hemorragia intracraneal u otras lesiones estructurales que contraindiquen una reducción agresiva de TA o requieran manejo neuroquirúrgico inmediato. [cite: 812][cite_start]\nLa TC se realiza de urgencia porque es rápida y más disponible en el servicio de urgencias [cite: 813]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_039",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    [cite_start]"enunciado": "Recibe en la consulta a Julián de 48 años derivado de un puesto sanitario en donde se le constató una tensión arterial de 150/90 mmHg la semana pasada. [cite: 815] [cite_start]Usted lo revisa y constata una tensión arterial de 140/90 mmHg. [cite: 816] [cite_start]Al examen físico presenta un índice de masa corporal de 26, y resto del examen sin particularidades. [cite: 817] [cite_start]¿Qué estudios complementarios iniciales solicitaría? [cite: 818]",
+    "opciones": {
+      [cite_start]"a": "Hemograma, orina, creatinina, perfil lipidico, prueba de esfuerzo. [cite: 819]",
+      [cite_start]"b": "Hemograma, orina-, ionograma, perfil lipidico, calcemia, creatinina, ecocardiograma. [cite: 821]",
+      [cite_start]"c": "Orina, hemograma, ionograma, creatinina, glucemia en ayunas, perfil lipidico, ECG. [cite: 823]",
+      [cite_start]"d": "Orina, ionograma, calcemia, glucemia en ayunas, perfil lipídico. [cite: 824]"
+    },
+    "correcta": "c",
+    [cite_start]"explicacion": "Las pruebas complementarias sirven para descartar causas secundarias, afinar en la estimación del riesgo cardiovascular global y evaluar la posible repercusión de la HΤΑ en los órganos diana. [cite: 830][cite_start]\nLas pruebas complementarias que hay que solicitar a las personas hipertensas son:\n- Respuesta correcta: **orina, hemograma, ionograma, creatinina, glucemia en ayunas, perfil lipídico, ECG**. [cite: 832][cite_start]\n- Orina (sedimento y proteinuria): para descartar daño renal. [cite: 833][cite_start]\n- Hemograma: descartar anemia u otras alteraciones generales. [cite: 834][cite_start]\n- lonograma (Na+,K+,Cl-): valorar estado electrolitico. [cite: 835][cite_start]\n- Creatinina sérica + estimación de filtrado glomerular: descartar daño renal. [cite: 836][cite_start]\n- Glucemia en ayunas: diagnóstico de diabetes. [cite: 837][cite_start]\n- Perfil lipídico (CT, LDL, HDL, TG): valorar riesgo cardiovascular. [cite: 838]\n- Electrocardiograma: detectar hipertrofia ventricular izquierda o isquemia silente. [cite_start]No se pide de rutina inicialmente: [cite: 839][cite_start]\n- Prueba de esfuerzo: solo si hay síntomas o alto riesgo coronario. [cite: 840][cite_start]\n- Ecocardiograma: si hay sospecha clínica o cambios en ECG. [cite: 841][cite_start]\n- Calcemia: se reserva para sospecha de hiperparatiroidismo u otra causa específica de HTA secundaria. [cite: 842]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_040",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    [cite_start]"enunciado": "Una mujer de 52 años concurre a consulta de control de primera vez a medicina general. [cite: 844] [cite_start]La medición de la Presión Arterial muestra registros de 140/92 mm Hg. [cite: 845] [cite_start]El examen físico no presenta particularidades y el fondo de ojo, el electrocardiograma y el laboratorio son normales. [cite: 846] [cite_start]¿Cuál de las siguientes alternativas es la más apropiada? [cite: 847]",
+    "opciones": {
+      [cite_start]"a": "Se diagnostica HTA grado 2 y se inicia tratamiento farmacológico [cite: 849]",
+      [cite_start]"b": "Se indica Monitoreo Domiciliario de Presión Arterial (MDPA) para confirmar diagnóstico de HTA y se cita a segunda consulta en 2 semanas [cite: 850]",
+      [cite_start]"c": "Se indica Monitoreo Ambulatorio de Presión Arterial (MAPA) para confirmar diagnóstico de HTA Grado 2 [cite: 852]",
+      [cite_start]"d": "Se diagnostica HTA grado 1 y se indica dieta hiposódica no requiriendo confirmación en consulta posterior [cite: 854]"
+    },
+    "correcta": "b",
+    [cite_start]"explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. [cite: 860][cite_start]\nLa presión arterial presenta variación durante el día y tambien con situaciones de estres, consumo de tabaco, café, por la presencia del medico (**Hipertension del guardapolvo blanco**) y actividad fisica por lo que una unica medición de la misma puede no ser fidedigna. [cite: 861][cite_start]\nEl monitoreo domiciliario de la PA puede ser de utilidad en algunos casos de dificultad diagnóstica o ante la sospecha de hipertensión de guardapolvo blanco, así como para ayudar a la adherencia al tratamiento. [cite: 862][cite_start]\nPara ello, se aconseja instruir al paciente que deben hacerse dos tomas, estando sentado, con al menos 5 minutos de reposo. [cite: 863][cite_start]\nIdealmente deberian realizarse 2 tomas diarias, a la mañana y a la tarde. [cite: 864][cite_start]\nSi se usa para confirmar el diagnóstico de **HTA**, deben obtenerse tomas al menos durante 4 dias, descartar las tomas del primer día y promediar las restantes. [cite: 865][cite_start]\n- Diagnosticar HTA grado 2 y tratar NO ES CORRECTA: Los valores no alcanzan el umbral de grado 2(>= 160/100 mmHg) y no se ha confirmado el diagnóstico. [cite: 866][cite_start]\n- Solicitar MAPA para confirmar HTA grado 2: No es grado 2 y el MAPA no es obligatorio en este contexto; [cite: 867] [cite_start]el MDPA es suficiente para confirmación. [cite: 868][cite_start]\n- Diagnosticar HTA grado 1 y solo indicar dieta hiposódica: Falta confirmación del diagnóstico; [cite: 869] [cite_start]además, las guias indican que la dieta hiposódica se combina con otras modificaciones y posible farmacoterapia según riesgo global. [cite: 870]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_041",
+    "materia": [
+      "cardiologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de neumonología"
+    ],
+    [cite_start]"enunciado": "Un varón de 38 años consulta por cefaleas matutinas, astenia y somnolencia diurna. [cite: 872] [cite_start]Es un hipertenso medicado con 3 drogas a dosis máximas incluyendo un diurético. [cite: 873] [cite_start]A pesar del tratamiento persiste con valores promedios de TA de 150/95 mm/Hg. [cite: 874] [cite_start]Al examen físico presenta, como dato de relevancia, índice de masa corporal (IMC) de 33. De acuerdo a la presunción diagnóstica. [cite: 875] [cite_start]¿Cuál es el estudio más adecuado para confirmarla? [cite: 876]",
+    "opciones": {
+      [cite_start]"a": "Ecodoppler de arterias renales [cite: 877]",
+      [cite_start]"b": "Polisomnografía [cite: 878]",
+      [cite_start]"c": "RMN de cerebro [cite: 880]",
+      [cite_start]"d": "Dosaje de Aldosterona/Actividad de la renina plasmática [cite: 881]"
+    },
+    "correcta": "b",
+    [cite_start]"explicacion": "Los trastornos respiratorios vinculados al sueño se asocian en forma independiente con la enfermedad hipertensiva y [cite: 887] [cite_start]con el riesgo de eventos, en particular con el de ACV; [cite: 888] [cite_start]es más evidente esta asociación en sujetos de mediana edad que [cite: 889] en añosos. [cite_start]Datos bibliográficos recientes ubican a la **apnea obstructiva del sueño (AOS)** como la causa de HTA secundaria más frecuentemente asociada a la HΤΑ resistente. [cite: 890][cite_start]\nPensar en **SAHOS** como un cuadro de somnolencia excesiva, sintomas inespecificos (astenia/mareos/cefaleas), trastornos cognitivo-conductuales, respiratorios, cardiacos, metabólicos o inflamatorios secundarios a episodios repetidos de obstrucción de la vía aérea superior durante el sueño. [cite: 891][cite_start]\nLa **polisomnografia convencional (PSG)** vigilada por un técnico en el laboratorio de sueño es el método de referencia para el diagnóstico de los pacientes con sospecha de SAHS y otros trastornos no respiratorios del sueño (recomendación consistente, calidad de evidencia alta) [cite: 892][cite_start]\nLa obesidad es el principal factor predisponente para el desarrollo de AOS. [cite: 893][cite_start]\nLa prevalencia de esta entidad aumenta en forma lineal con el aumento del IMC (40 α 70% de los pacientes diagnosticados son obesos). [cite: 894][cite_start]\nLos cambios ciclicos en la frecuencia cardiaca y en la presión arterial sistémica (PA) que acompañan a las apneas-hipopneas son mediados, probablemente, por fluctuaciones en la actividad del sistema nervioso autónomo. [cite: 895][cite_start]\nEn sujetos sanos se observa un descenso nocturno en las cifras de PA (\"dippers\"), que no se presenta en la mayoría de pacientes con sindrome apnea hipopnea del sueño (\"non-dippers\"). [cite: 896][cite_start]\nEl mantenimiento de un nivel elevado de PA nocturna puede ser causa del inicio y/o mantenimiento de la HTA y del resto de complicaciones vasculares. [cite: 897][cite_start]\nExiste aceptación creciente en la bibliografia de que a todo paciente con fuerte sospecha clínica de AOS se le deberia realizar un MAPA. [cite: 898]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_042",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de urgencias"
+    ],
+    [cite_start]"enunciado": "¿Cuál es la definición de urgencia hipertensiva? [cite: 900]",
+    "opciones": {
+      [cite_start]"a": "La urgencia hipertensiva hace referencia a la situación clinica con valores de PA menores a 180/120 mmHg con síntomas ni signos que evidencian lesión aguda en curso en órganos blanco. [cite: 902]",
+      [cite_start]"b": "La urgencia hipertensiva hace referencia a la situación clinica con valores de PA mayores a 140/80 mmHg y presentan además cefalea o epistaxis en ese momento. [cite: 903]",
+      [cite_start]"c": "La urgencia hipertensiva hace referencia a la situación clinica con valores de presión arterial mayores a 180/120 mmHg sin sintomas ni signos que evidencian lesión aguda en curso en órganos blanco, dándose generalmente en personas con HTA conocida. [cite: 905]",
+      [cite_start]"d": "La urgencia hipertensiva hace referencia a la situación clinica con valores de PA mayores a 160/110 mmHg sin sintomas ni signos que evidencian lesión aguda en curso en órganos blanco, generalmente en personas con HΤΑ conocida. [cite: 907]"
+    },
+    "correcta": "c",
+    [cite_start]"explicacion": "La **urgencia hipertensiva** hace referencia a la situación clínica con valores de presión arterial mayores a 180/120 mmHg sin sintomas ni signos que evidencien lesión aguda en curso en órganos blanco, dándose generalmente en personas con HTA conocida. [cite: 911][cite_start]\nSe diferencian de las **emergencias hipertensivas**, que sí tienen daño agudo (por ejemplo, encefalopatia hipertensiva, sindrome coronario agudo, disección aórtica) [cite: 912]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_043",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Insuficiencia cardíaca"
+    ],
+    [cite_start]"enunciado": "¿Qué valoración funcional corresponde, según la Escala NYHA (New York Heart Association), a un paciente de 45 años que refiere que la actividad física menor (higienizarse, comer, etc.) le causa palpitaciones y disnea, y se manifiesta confortable en situaciones de reposo? [cite: 914]",
+    "opciones": {
+      [cite_start]"a": "Clase funcional IV [cite: 915]",
+      [cite_start]"b": "Clase funcional II [cite: 916]",
+      [cite_start]"c": "Clase funcional I [cite: 917]",
+      [cite_start]"d": "Clase funcional III [cite: 918]"
+    },
+    "correcta": "d",
+    [cite_start]"explicacion": "La **insuficiencia cardiaca** es la incapacidad del musculo cardiaco para suplir las demandas metabólicas de oxigeno al máximo secundario alteraciones estructurales o funcionales que impiden o el correcto llenado o eyección de sangre ventricular que dependiendo de su gravedad ocasiona diversa cantidad de sintomas. [cite: 922][cite_start]\nPara estadificar el grado de insuficiencia cardiaca se utiliza la clasificación de la **New York Heart Association** que divide los sintomas en clases funcionales. [cite: 923][cite_start]\nLa **clase funcional I** se caracteriza por no presentar limitación en la actividad física, la **clase funcional II** presenta ligera dificultad en la actividad fisica ordinaria (palpitaciones, disnea, dolor de pecho), en la **clase funcional III** hay una marcada limitación en la actividad fisica con actividades menores y por último la **clase funcional IV** en la que los sintomas pueden estar presentes incluso en reposo. [cite: 924]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_044",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    [cite_start]"enunciado": "Un varón de 55 años concurre a la consulta para control de salud. [cite: 926] [cite_start]Al examen físico presenta TA 150-90 mm Hg y obesidad abdominal de 88 cm. [cite: 927] [cite_start]Teniendo en cuenta el registro de TA elevado, ¿cuál es la conducta más adecuada? [cite: 928]",
+    "opciones": {
+      [cite_start]"a": "Obtener 2 o 3 registros de TA mayor o igual a 140-90 en por lo menos 2 oportunidades no consecutivas para confirmar diagnóstico [cite: 931]",
+      [cite_start]"b": "Solicitar Monitoreo Domiciliario de Presión Arterial (MDPA) para confirmar diagnóstico [cite: 932]",
+      [cite_start]"c": "Confirmar diagnóstico de Hipertensión Arterial sin indicar otros estudios [cite: 933]",
+      "d": "Confirmar diagnóstico de Hipertensión Arterial. [cite_start]Solicitar Monitoreo Ambulatorio de Presión Arterial (MAPA) para evaluar estadio [cite: 935]"
+    },
+    "correcta": "a",
+    [cite_start]"explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. [cite: 941][cite_start]\nSegún las guías actuales, el diagnóstico de HTA nunca debe hacerse con una sola medición. [cite: 942][cite_start]\nSe requiere confirmación con mediciones repetidas o monitoreo ambulatorio/domiciliario. [cite: 943][cite_start]\nEn personas de 18 años o más, se adopta como punto de corte para diagnosticar HTA en consultorio valores promediados (de al menos 2 tomas) de: - presión arterial sistólica iguales o mayores a 140 mmHg y/o - presión arterial diastólica iguales o mayores a 90 mmHg. [cite: 944][cite_start]\nEn al menos dos consultas realizadas en diferentes días y utilizándose una técnica correcta. [cite: 945][cite_start]\nLa conducta más adecuada en este caso es = obtener 2 o 3 registros de TA >= 140/90 mmHg en por lo menos 2 oportunidades no consecutivas para confirmar diagnóstico. [cite: 946][cite_start]\nPuede confirmarse con Monitoreo Ambulatorio (**MAPA**) o Monitoreo Domiciliario (**MDPA**), pero la primera conducta recomendada tras un hallazgo aislado en control de salud es repetir la medición en diferentes días. [cite: 947][cite_start]\n- Confirmar diagnóstico de Hipertensión Arterial sin indicar otros estudios es incorrecto, falta confirmación con nuevas mediciones o MAPA/MDPA. [cite: 948][cite_start]\n- Solicitar Monitoreo Domiciliario de Presión Arterial (MDPA) es una opción válida para confirmar, pero no es obligatoria de entrada si se puede seguir protocolo de mediciones seriadas en consultorio. [cite: 949][cite_start]\n- Confirmar diagnóstico de Hipertensión Arterial y pedir MAPA: el MAPA se usa en casos de duda (bata blanca, enmascarada, hipertensión resistente), no para diagnosticar en la primera consulta. [cite: 950]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_045",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Otras preguntas de urgencias"
+    ],
+    [cite_start]"enunciado": "Una paciente de 65 años es traída a la guardia por encontrarse confusa. [cite: 952] [cite_start]Tiene antecedentes de HTA en tratamiento con hidroclorotiazida y ha sufrido caídas frecuentes en la última semana. [cite: 953] [cite_start]Al examen físico se encuentra desorientada, con las mucosas secas, TA: 140-83 mmHg y en el examen neurológico tiene aumentado los reflejos osteotendinosos y temblores. [cite: 954] El laboratorio informa: Na plasmático 112 mEql/litro, Na urinario de 12 mEq/litro. [cite_start]¿Cuál es la conducta más adecuada? [cite: 955]",
+    "opciones": {
+      [cite_start]"a": "Discontinuar diuréticos e iniciar infusión de solución salina al 3% [cite: 956]",
+      [cite_start]"b": "Indicar infusión de solución salina al 3% y desmopresina [cite: 957]",
+      [cite_start]"c": "Indicar solución salina al 3% y furosemida [cite: 958]",
+      [cite_start]"d": "Discontinuar el uso de diuréticos e iniciar infusión de solución salina al 0.9% [cite: 959]"
+    },
+    "correcta": "a",
+    [cite_start]"explicacion": "Respuesta correcta: **discontinuar diuréticos e iniciar infusión de solución salina al 3%**: trata la causa (suspender diurético) y la urgencia (corregir con hipertónica). [cite: 965]\nDatos positivos del caso: Mujer de 65 años. [cite_start]HTA tratada con hidroclorotiazida (diurético tiazídico). [cite: 966]\nCaídas recientes, confusión, mucosas secas, probable hipovolemia. [cite_start]Examen neurológico: hiperreflexia y temblores: signos neurológicos por hiponatremia severa. [cite: 967]\nLaboratorio: Na plasmático: 112 mEq/L (hiponatremia grave, sintomática). [cite_start]Na urinario: 12 mEq/L (sugiere hiponatremia hipovolémica, probable por pérdida renal de sodio por diurético). [cite: 968][cite_start]\nLa interpretación del caso: **Hiponatremia grave y sintomática** que requiere corrección urgente. [cite: 969]\nLa causa más probable: hiponatremia hipovolémica por diurético tiazídico. [cite_start]Tratamiento de elección: suspender el diurético y restaurar volumen. [cite: 970][cite_start]\nEn hiponatremia grave sintomática, el manejo incluye solución salina hipertónica al 3%, [cite: 971] [cite_start]independientemente de la causa, para revertir síntomas neurológicos y prevenir herniación cerebral. [cite: 972][cite_start]\nLa corrección debe ser lenta (no más de 8-10 mEq/L en 24 h) para evitar mielinólisis pontina. [cite: 973][cite_start]\n- Hipertónica + desmopresina: se usa en casos de hiponatremia por SIADH para evitar sobrecorrección, no es el caso principal aqui. [cite: 974][cite_start]\n- Suspender diuréticos + solución salina 0,9%: seria insuficiente para corregir rápidamente una hiponatremia grave y sintomática. [cite: 975][cite_start]\n- Hipertónica + furosemida: útil en hiponatremia hipervolémica (IC, cirrosis), no en hipovolémica. [cite: 976]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_046",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    "enunciado": "Un paciente de 65 años consulta para control de salud. [cite_start]Refiere antecedentes de hipertensión arterial sin tratamiento. [cite: 978] [cite_start]Trae los siguientes estudios [cite: 979] [cite_start]complementarios; orina de 24 hs microalbuminuria 600 mg/24 hs y un ecocardiograma que informa hipertrofia del ventrículo izquierdo. [cite: 980] Al examen físico: ΤΑ 160-90 mmHg e IMC 28 kg/m2. [cite_start]¿Cuál es el fármaco más adecuado para este paciente? [cite: 981]",
+    "opciones": {
+      [cite_start]"a": "Beta Bloqueantes [cite: 982]",
+      [cite_start]"b": "Bloqueantes de los receptores de angiotensina II [cite: 983]",
+      [cite_start]"c": "Diureticos Tiazidicos [cite: 984]",
+      [cite_start]"d": "Bloqueantes cálcicos [cite: 985]"
+    },
+    "correcta": "b",
+    [cite_start]"explicacion": "El tratamiento adecuado de la hipertensión arterial tiene por finalidad disminuir el riesgo de eventos cardiovasculares. [cite: 989][cite_start]\nDatos positivos: adulto mayor con HTA + HTA sin tratamiento + TA: 160/90 mmHg Hipertensión grado 2 + Microalbuminuria: 600 mg/24 h, nefropatia hipertensiva (daño renal subclínico) + Ecocardiograma: hipertrofia ventricular izquierda (HVI), daño cardíaco por HTA + IMC 28 kg/m2, sobrepeso. [cite: 990][cite_start]\nTenemos: Hipertensión arterial esencial con daño de órgano blanco (renal y cardíaco). [cite: 991][cite_start]\nFármaco de elección: **Bloqueantes de los receptores de angiotensina II (ARA II)** (o IECA). [cite: 992][cite_start]\nLos **ARA II** o los **IECA** son los fármacos de primera elección en pacientes con: Proteinuria o microalbuminuria: efecto antiproteinúrico. [cite: 993]\nHipertrofia ventricular izquierda: regresan parcialmente la HVI. Riesgo cardiovascular elevado: mejoran pronóstico. [cite_start]Tienen efecto nefroprotector al disminuir la presión intraglomerular. [cite: 994][cite_start]\n- Diuréticos tiazídicos = útiles como segunda línea o combinados, pero no protegen el riñón; pueden aumentar glucosa y ácido úrico. [cite: 995][cite_start]\n- Bloqueantes cálcicos = reducen TA, pero sin efecto antiproteinúrico ni regresión de HVI comparable. [cite: 996][cite_start]\n- Beta bloqueantes = no son primera elección salvo comorbilidades específicas (IAM previo, IC, taquiarritmias). [cite: 997]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_047",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo"
+    ],
+    [cite_start]"enunciado": "¿Cuál de los siguientes fármacos agregaría en el tratamiento de una paciente de 53 años hipertensa desde hace más de 5 años, que está medicada desde hace 45 días con amlodipina más enalapril y que no logra reducir su tensión arterial a menos de 155-102 mm Hg? [cite: 999] No hay evidencias de tensión arterial (HTA) secundaria. Los exámenes de laboratorio son normales. [cite_start]En el [cite: 1000] [cite_start]ecocardiograma se observa hipertrofia concéntrica del ventrículo izquierdo. [cite: 1001]",
+    "opciones": {
+      [cite_start]"a": "Hidroclortiazida [cite: 1002]",
+      [cite_start]"b": "Prazosina [cite: 1003]",
+      [cite_start]"c": "Losartan [cite: 1004]",
+      [cite_start]"d": "Nifedipina [cite: 1005]"
+    },
+    "correcta": "a",
+    [cite_start]"explicacion": "La reducción promedio de la presión arterial con un solo fármaco es del 10 al 15% de los valores iniciales y la monoterapia sera efectiva en no mas de 50% de los [cite: 1011] pacientes. [cite_start]Al menos la mitad de los pacientes necesitara dos o mas antihipertensivos. [cite: 1012][cite_start]\nAnte un paciente tratado con un fármaco antihipertensivo que no logra los valores objetivos de presión arterial se puede decidir reemplazar el fármaco por otro o añadir otro fármaco. [cite: 1013][cite_start]\nCualquiera de estas decisiones parece ser mas apropiada que utilizar un solo fármaco en dosis mas altas por el riesgo de efectos adversos dependientes de la dosis y una reducción marginal de la presion arterial con esta estrategia. [cite: 1014][cite_start]\nUna estrategia basada en el mecanismo de acción de los fármacos se suele utilizar para elegir los farmacos a combinar. [cite: 1015][cite_start]\nSe puede combinar un fármaco que actúa sobre el sistema renina angiotensina (IECA, ARAII o betabloqueantes) con un fármaco que NO actué sobre el sistema renina angiotensina (Tiazidas o bloqueantes calcicos). [cite: 1016][cite_start]\nCuando no se logra control con dos fármacos como IECA y bloqueantes cálcicos a dosis adecuadas, el tercer fármaco recomendado es un diurético tiazídico (**hidroclorotiazida** o indapamida). [cite: 1017][cite_start]\n- Prazosina: no es de primera línea, se usa en casos especiales (hiperplasia prostática, HTA resistente especifica). [cite: 1018][cite_start]\n- Losartan: es un ARA II, alternativa al IECA, no se combina de rutina con otro bloqueador del sistema renina-angiotensina (IECA + ARA II no se recomienda). [cite: 1019][cite_start]\n- Nifedipina: otro calcioantagonista dihidropiridinico, seria duplicar mecanismo con amlodipina, sin beneficio adicional relevante. [cite: 1020]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_048",
+    "materia": [
+      "cardiologia",
+      "nutricion",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Hipertensión arterial y factores de riesgo",
+      "Diabetes mellitus",
+      "Asma"
+    ],
+    [cite_start]"enunciado": "¿Cuál de las siguientes drogas o combinación de drogas antihipertensivas elegiría para comenzar a tratar a Juana de 56 años, con sobrepeso, asma intermitente moderado, hipercolesterolemia, y diabetes tipo 2, que aporta registros tensionales tomados en domicilio de 160/90mm Hg? [cite: 1022]",
+    "opciones": {
+      [cite_start]"a": "Losartan + atenolol [cite: 1024]",
+      [cite_start]"b": "Amlodipina [cite: 1025]",
+      [cite_start]"c": "Hidroclorotiazida [cite: 1026]",
+      [cite_start]"d": "Enalapril [cite: 1027]"
+    },
+    "correcta": "d",
+    "explicacion": "Datos positivos del caso: Mujer de 56 años. - [cite_start]Sobrepeso. [cite: 1033]\n- Asma intermitente moderado contraindica betabloqueantes no selectivos (y se evita incluso los cardioselectivos si hay alternativas). - [cite_start]Hipercolesterolemia. [cite: 1034][cite_start]\n- Diabetes tipo 2. - Registros domiciliarios de PA: 160/90 mmHg: hipertensión grado 2. [cite: 1035][cite_start]\nEn diabetes tipo 2, las guías recomiendan como primera elección un **IECA** (ej. enalapril) o un **ARA II** (ej. losartán) por su protección renal y cardiovascular. [cite: 1036][cite_start]\nBetabloqueantes (atenolol) no son de elección en pacientes con asma, ya que pueden desencadenar broncoespasmo. [cite: 1037][cite_start]\nTiazidas (hidroclorotiazida) pueden usarse, pero en diabetes y alto riesgo cardiovascular se prefiere iniciar con un fármaco que proteja el riñón (IECA/ARA II). [cite: 1038][cite_start]\nCalcioantagonistas (amlodipina) son una opción, pero en este caso no ofrecen la protección renal/metabólica de un IECA. [cite: 1039][cite_start]\nAnalizando las opciones:\n- Losartan + atenolol: NO por el atenolol (asma). [cite: 1041][cite_start]\n- Hidroclorotiazida: no es la mejor primera elección en diabética sin otros fármacos protectores. [cite: 1042]\n- Enalapril: es la mejor opción ya que protege riñón y corazón, primera elección en diabética hipertensa. (correcta) [cite_start][cite: 1043][cite_start]\n- Amlodipina: útil, pero no tan prioritaria como IECA en este contexto. [cite: 1044]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  }
+]
+  
+  
