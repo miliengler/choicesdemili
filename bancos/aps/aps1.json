@@ -1,2246 +1,1902 @@
 [
   {
-    "id": "aps_null_u_001",
-    "materia": [
-        "aps",
-        "otras"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Cuidados Paliativos"
-    ],
+    "id": "aps_001_001",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Cuidados Paliativos"],
     "enunciado": "Los cuidados paliativos para la atención primaria de la salud, ¿Cuál es la estrategia inicial apropiada de abordaje?",
     "opciones": {
-        "a": "Prescribir tratamiento farmacológico antidepresivo",
-        "b": "Solicitar intervención psicoterapéutica",
-        "c": "Sugerirle evitar emociones negativas",
-        "d": "Legitimar sus emociones difíciles"
+      "a": "Prescribir tratamiento farmacológico antidepresivo",
+      "b": "Solicitar intervención psicoterapéutica",
+      "c": "Sugerirle evitar emociones negativas",
+      "d": "Legitimar sus emociones difíciles"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Legitimar sus emociones difíciles**. En el abordaje inicial de cuidados paliativos en APS, el reconocimiento y la validación del sufrimiento emocional del paciente es el primer paso esencial para establecer una alianza terapéutica y brindar contención integral.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_002",
-    "materia": [
-        "aps",
-        "otras"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Cuidados Paliativos"
-    ],
-    "enunciado": "En Atención Primaria de la Salud\", ¿Cuál de las siguientes NO es considerada una práctica esencial en cuidados paliativos?",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_002",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Cuidados Paliativos"],
+    "enunciado": "En Atención Primaria de la Salud, ¿Cuál de las siguientes NO es considerada una práctica esencial en cuidados paliativos?",
     "opciones": {
-        "a": "Propiciar una comunicación apropiada con la unidad de tratamiento",
-        "b": "Proveer cuidados de confort en el final de la vida",
-        "c": "Implementar un impecable control de sintomas",
-        "d": "Proporcionar tratamientos de quimio-radioterapia"
+      "a": "Propiciar una comunicación apropiada con la unidad de tratamiento",
+      "b": "Proveer cuidados de confort en el final de la vida",
+      "c": "Implementar un impecable control de sintomas",
+      "d": "Proporcionar tratamientos de quimio-radioterapia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Proporcionar tratamientos de quimio-radioterapia**. Los tratamientos de quimioterapia y radioterapia son intervenciones de alta complejidad propias del segundo o tercer nivel de atención (Oncología), mientras que la APS se centra en la comunicación, el control de síntomas y el confort.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_003",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_003",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es la piedra angular del modelo de atención?",
     "opciones": {
-        "a": "Los centros de alta complejidad",
-        "b": "Las redes interdisciplinarias de atención",
-        "c": "Los centros hospitalarios",
-        "d": "Los centros de atención primaria"
+      "a": "Los centros de alta complejidad",
+      "b": "Las redes interdisciplinarias de atención",
+      "c": "Los centros hospitalarios",
+      "d": "Los centros de atención primaria"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Los centros de atención primaria**. En la estrategia de APS, los centros de salud constituyen la base y el primer contacto del sistema, siendo la piedra angular sobre la cual se organiza el resto de la red sanitaria.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_004",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_004",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cómo se denomina el modelo de atención orientado a la atención primaria que tiene como característica el continuó manejo poblacional e interdisciplinario integral?",
     "opciones": {
-        "a": "Modelo preventivo",
-        "b": "Modelo medicina radar",
-        "c": "Modelo integral.",
-        "d": "Modelo proactivo."
+      "a": "Modelo preventivo",
+      "b": "Modelo medicina radar",
+      "c": "Modelo integral",
+      "d": "Modelo proactivo"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Modelo proactivo**. Este modelo se caracteriza por no esperar pasivamente la demanda, sino por realizar un manejo poblacional continuo, anticipatorio e interdisciplinario.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_005",
-    "materia": [
-        "aps",
-        "medicinalegal"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_005",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "En la Atención Primaria de la Salud, se requiere integración de los distintos actores y sectores de la salud para asistir a pacientes con patología crónica avanzada. ¿Qué motivo prioritario produce la fragmentación que afecta la calidad y el costo de la atención?",
     "opciones": {
-        "a": "Progresivo incremento de la complejidad de la asistencia, con reducción de los recursos económicos disponibles",
-        "b": "Insuficiente formación profesional especializada para la atención de estos enfermos",
-        "c": "Excesiva inversión de la industria farmacéutica para brindar tratamientos curativos",
-        "d": "Insuficiente comunicación efectiva entre el equipo de salud, paciente y familiares"
+      "a": "Progresivo incremento de la complejidad de la asistencia, con reducción de los recursos económicos disponibles",
+      "b": "Insuficiente formación profesional especializada para la atención de estos enfermos",
+      "c": "Excesiva inversión de la industria farmacéutica para brindar tratamientos curativos",
+      "d": "Insuficiente comunicación efectiva entre el equipo de salud, paciente y familiares"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Insuficiente comunicación efectiva entre el equipo de salud, paciente y familiares**. La falta de comunicación fluida y clara es el principal factor de fragmentación en el cuidado, lo que deriva en duplicación de estudios, errores en la medicación y disminución de la calidad asistencial.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_006",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_006",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "En un centro de salud se estudia el conjunto de servicios ofrecidos, cuan conocidos son éstos por la población y cuál es la capacidad de los profesionales para identificar en la población un amplio espectro de necesidades y problemas. Considerando la medición de la consecución de la atención primaria, ¿Cuál es el atributo de atención primaria que se estudia en este caso?",
     "opciones": {
-        "a": "Integralidad",
-        "b": "Primer contacto",
-        "c": "Variedad de servicios",
-        "d": "Coordinación"
+      "a": "Integralidad",
+      "b": "Primer contacto",
+      "c": "Variedad de servicios",
+      "d": "Coordinación"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Integralidad**. La integralidad (o globalidad) implica que el centro de salud debe ser capaz de identificar y responder a la mayoría de las necesidades de salud de la población, ofreciendo una amplia gama de servicios preventivos, curativos y sociales.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_007",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_007",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es la estrategia principal de la atención primaria de la salud orientada a la comunidad?",
     "opciones": {
-        "a": "La formación continua del recurso médico",
-        "b": "La información epidemiológica",
-        "c": "Las intervenciones médicas preventivas",
-        "d": "La accesibilidad a servicios de salud"
+      "a": "La formación continua del recurso médico",
+      "b": "La información epidemiológica",
+      "c": "Las intervenciones médicas preventivas",
+      "d": "La accesibilidad a servicios de salud"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **La accesibilidad a servicios de salud**. La accesibilidad es el componente crítico que permite que la comunidad efectivamente utilice los servicios de salud, eliminando barreras geográficas, económicas, culturales y organizativas.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_008",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_008",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cómo se definen los Centros de Salud?",
     "opciones": {
-        "a": "Como la estructura funcional y fisica en la que se desarrollan todas las actividades propias de la Atención Primaria, de la gestión económica sanitaria, de la gestión de alta complejidad y de las actividades de urgencia y emergentologia.",
-        "b": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de los programas Materno-Infantil, Programas de Cirugía Ambulatoria y los programas centrales de diagnóstico y tratamiento",
-        "c": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de la Atención Primaria en los terrenos de la promoción, prevención, asistencia curativa y de rehabilitación y reinserción social",
-        "d": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de la administración de programas sanitarios de largo plazo, programas de distribución de medicamentos y la atención programada en los consultorios externos."
+      "a": "Como la estructura funcional y fisica en la que se desarrollan todas las actividades propias de la Atención Primaria, de la gestión económica sanitaria, de la gestión de alta complejidad y de las actividades de urgencia y emergentologia.",
+      "b": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de los programas Materno-Infantil, Programas de Cirugía Ambulatoria y los programas centrales de diagnóstico y tratamiento",
+      "c": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de la Atención Primaria en los terrenos de la promoción, prevención, asistencia curativa y de rehabilitación y reinserción social",
+      "d": "Como la estructura funcional y física en la que se desarrollan todas las actividades propias de la administración de programas sanitarios de largo plazo, programas de distribución de medicamentos y la atención programada en los consultorios externos."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Como la estructura funcional y física en la que se desarrollan todas las actividades propias de la Atención Primaria en los terrenos de la promoción, prevención, asistencia curativa y de rehabilitación y reinserción social**. Esta definición abarca todas las dimensiones de la atención integral que debe brindar el primer nivel.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_009",
-    "materia": [
-        "aps",
-        "medicinalegal"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_009",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuáles son las características necesarias para la instalación y el funcionamiento de una Atención Primaria que sirva a las necesidades de la población?",
     "opciones": {
-        "a": "Un sistema regionalizado y con adecuado sistema de referencia",
-        "b": "Profesionales altamente calificados y con adecuado soporte tecnológico",
-        "c": "Atención organizada por grupos de riesgo y patologías prevalentes",
-        "d": "Atención organizada por especialidades médicas y criterios de referencia estandarizados"
+      "a": "Un sistema regionalizado y con adecuado sistema de referencia",
+      "b": "Profesionales altamente calificados y con adecuado soporte tecnológico",
+      "c": "Atención organizada por grupos de riesgo y patologías prevalentes",
+      "d": "Atención organizada por especialidades médicas y criterios de referencia estandarizados"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Un sistema regionalizado y con adecuado sistema de referencia**. Para que la APS funcione eficazmente, debe estar inserta en un sistema de salud que distribuya los recursos territorialmente (regionalización) y que permita el flujo de pacientes entre niveles (referencia y contrarreferencia).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_010",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_010",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "De acuerdo con la estrategia de Atención Primaria Ambiental se espera que las políticas de salud ambiental vayan más allá:",
     "opciones": {
-        "a": "Del enfoque naturalista y mantenimiento de la calidad ambiental",
-        "b": "La vigilancia epidemiológica ambiental y programas de mitigación",
-        "c": "Del saneamiento ambiental y procedimientos técnicos",
-        "d": "De las mediciones en el ambiente y control de riesgo"
+      "a": "Del enfoque naturalista y mantenimiento de la calidad ambiental",
+      "b": "La vigilancia epidemiológica ambiental y programas de mitigación",
+      "c": "Del saneamiento ambiental y procedimientos técnicos",
+      "d": "De las mediciones en el ambiente y control de riesgo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Del saneamiento ambiental y procedimientos técnicos**. La Atención Primaria Ambiental propone superar la visión meramente técnica del saneamiento (cloacas, agua) para integrar la participación social y la intersectorialidad en la protección de la salud.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_011",
-    "materia": [
-        "aps",
-        "medicinalegal"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_011",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué tipo de reforma en pro de la Atención Primaria de la Salud están haciendo estos funcionarios?",
     "opciones": {
-        "a": "Reformas en pro de la cobertura universal",
-        "b": "Reforma de las políticas públicas",
-        "c": "Reformas de la prestación de servicios",
-        "d": "Reformas del liderazgo"
+      "a": "Reformas en pro de la cobertura universal",
+      "b": "Reforma de las políticas públicas",
+      "c": "Reformas de la prestación de servicios",
+      "d": "Reformas del liderazgo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Reformas de la prestación de servicios**. Estas reformas buscan reorganizar el sistema de salud para que la atención sea más centrada en la persona, integrada y brindada en el entorno más apropiado (comunidad).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_012",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_012",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es la demanda a los sistemas de salud de acuerdo con los valores de la Atención Primaria de la Salud en pro de la salud para todos?",
     "opciones": {
-        "a": "Que pongan a las personas en el Centro de la Atención Sanitaria",
-        "b": "Que prioricen la planificación estratégica",
-        "c": "Que coloquen al personal de salud en el centro de la Planificación Sanitaria",
-        "d": "Que identifiquen las necesidades de salud de la población"
+      "a": "Que pongan a las personas en el Centro de la Atención Sanitaria",
+      "b": "Que prioricen la planificación estratégica",
+      "c": "Que coloquen al personal de salud en el centro de la Planificación Sanitaria",
+      "d": "Que identifiquen las necesidades de salud de la población"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Que pongan a las personas en el Centro de la Atención Sanitaria**. Uno de los valores fundamentales de la APS renovada es la orientación hacia las personas, familias y comunidades, priorizando sus necesidades sobre los intereses institucionales.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_013",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_013",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Otras"],
     "enunciado": "Para la atención primaria de la salud, ¿Qué tipo de problemas morales resuelve la bioética?",
     "opciones": {
-        "a": "Los deseos del paciente autónomo",
-        "b": "Los conflictos de intereses profesionales contrapuestos",
-        "c": "Las necesidades en el cuidado de la vida",
-        "d": "La mala praxis profesional"
+      "a": "Los deseos del paciente autónomo",
+      "b": "Los conflictos de intereses profesionales contrapuestos",
+      "c": "Las necesidades en el cuidado de la vida",
+      "d": "La mala praxis profesional"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Las necesidades en el cuidado de la vida**. La bioética en el marco de la APS no se limita a dilemas hospitalarios de alta tecnología, sino que se ocupa de las dimensiones éticas cotidianas relacionadas con el cuidado integral de la vida y la salud.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_014",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_014",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es el tipo de articulación que se propone como uno de los componentes centrales en la definición de la estrategia de atención primaria de la Salud?",
     "opciones": {
-        "a": "Del nivel individual y familiar",
-        "b": "De demandas y recursos",
-        "c": "De recursos y necesidades",
-        "d": "De necesidades y demandas"
+      "a": "Del nivel individual y familiar",
+      "b": "De demandas y recursos",
+      "c": "De recursos y necesidades",
+      "d": "De necesidades y demandas"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **De necesidades y demandas**. La APS debe ser capaz de identificar las necesidades reales de salud de la población (no siempre sentidas) y armonizarlas con la demanda espontánea que llega al sistema.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_015",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_015",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué tipo de estrategia de atención es llevada a cabo?",
     "opciones": {
-        "a": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, jerarquizando el segundo nivel",
-        "b": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, jerarquizando el tercer nivel de atención.",
-        "c": "Estrategia de Atención en los tres niveles, con el mismo nivel de jerarquía.",
-        "d": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, Constitución de Redes, jerarquizando el Primer Nivel."
+      "a": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, jerarquizando el segundo nivel",
+      "b": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, jerarquizando el tercer nivel de atención.",
+      "c": "Estrategia de Atención en los tres niveles, con el mismo nivel de jerarquía.",
+      "d": "Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, Constitución de Redes, jerarquizando el Primer Nivel."
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Estrategia de Atención en los tres niveles, a partir de estrategia de Atención Primaria, Constitución de Redes, jerarquizando el Primer Nivel**. Este es el esquema organizacional moderno que busca resolver la mayoría de los problemas en el nivel más cercano a la gente.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_016",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_016",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "De acuerdo con la estrategia de ATENCIÓN PRIMARIA AMBIENTAL, ¿Qué enfoque se requiere de parte de las autoridades sanitarias y ambientales?",
     "opciones": {
-        "a": "enfoque sistémico",
-        "b": "enfoque intersectorial",
-        "c": "enfoque ambiental",
-        "d": "enfoque relacional"
+      "a": "enfoque sistémico",
+      "b": "enfoque intersectorial",
+      "c": "enfoque ambiental",
+      "d": "enfoque relacional"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **enfoque sistémico**. La Atención Primaria Ambiental requiere entender la salud y el ambiente como componentes de un sistema complejo e interdependiente, no como compartimentos estancos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_017",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_017",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuáles de los siguientes componentes no se tuvieron en cuenta en la estrategia de Atención Primaria de la salud a principio de los años 70?",
     "opciones": {
-        "a": "La articulación de necesidades y demanda.",
-        "b": "La propuesta de cobertura total.",
-        "c": "La generación de los modelos de gestión participativos.",
-        "d": "La lógica de los actores sociales"
+      "a": "La articulación de necesidades y demanda.",
+      "b": "La propuesta de cobertura total.",
+      "c": "La generación de los modelos de gestión participativos.",
+      "d": "La lógica de los actores sociales"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **La lógica de los actores sociales**. En los modelos iniciales de los 70 (como Alma-Ata en sus inicios), el enfoque era más normativo y centralizado, omitiendo a menudo la importancia de los diferentes actores sociales y sus dinámicas de poder.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_018",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_018",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es el pilar organizativo de la Atención Primaria de la Salud?",
     "opciones": {
-        "a": "El sistema de referencia/contrarreferencia",
-        "b": "El equipo de salud multidisciplinario",
-        "c": "Los centros de salud y sus áreas de influencia",
-        "d": "Los usuarios del sistema de salud"
+      "a": "El sistema de referencia/contrarreferencia",
+      "b": "El equipo de salud multidisciplinario",
+      "c": "Los centros de salud y sus áreas de influencia",
+      "d": "Los usuarios del sistema de salud"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **El equipo de salud multidisciplinario**. El trabajo en equipo interdisciplinario es fundamental para abordar la complejidad de los procesos salud-enfermedad en el territorio.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_019",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_019",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "Cuatro son los elementos estructurales del sistema sanitario que definen el potencial de la Atención Primaria. Elija la opción correcta",
     "opciones": {
-        "a": "Participación de la población, provisión de los recursos materiales, del recurso humano e infraestructura",
-        "b": "Trabajo en equipo, formación del recurso humano, equipamiento de los efectores y servicios básicos",
-        "c": "Accesibilidad, variedad de los servicios, continuidad y definición de la población",
-        "d": "Equipamiento de las instalaciones, gestión de los recursos materiales, profesionales y de los servicios"
+      "a": "Participación de la población, provisión de los recursos materiales, del recurso humano e infraestructura",
+      "b": "Trabajo en equipo, formación del recurso humano, equipamiento de los efectores y servicios básicos",
+      "c": "Accesibilidad, variedad de los servicios, continuidad y definición de la población",
+      "d": "Equipamiento de las instalaciones, gestión de los recursos materiales, profesionales y de los servicios"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Accesibilidad, variedad de los servicios, continuidad y definición de la población**. Según Starfield, estos atributos definen la capacidad resolutiva y la calidad de la Atención Primaria.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_020",
-    "materia": [
-        "aps",
-        "medicinalegal"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_020",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿En base a qué estrategia se debe organizar el subsector estatal de salud?",
     "opciones": {
-        "a": "Conforme a la estrategia de Sistemas Locales de Salud",
-        "b": "Conforme a la estrategia de Coparticipación de Atención",
-        "c": "Conforme a la estrategia de Atención Primaria",
-        "d": "Conforme a la estrategia de Consejo Federal de Salud"
+      "a": "Conforme a la estrategia de Sistemas Locales de Salud",
+      "b": "Conforme a la estrategia de Coparticipación de Atención",
+      "c": "Conforme a la estrategia de Atención Primaria",
+      "d": "Conforme a la estrategia de Consejo Federal de Salud"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Conforme a la estrategia de Atención Primaria**. La mayoría de las legislaciones sanitarias (incluida la de CABA) establecen que la APS es el eje rector de la organización del subsector estatal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_021",
-    "materia": [
-        "aps",
-        "medicinalegal"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Normativa nacional y jurisdiccional"
-    ],
-    "enunciado": "El subsector estatal de salud se organiza y desarrolla de acuerdo con la estrategia de Atención Primaria de la Salud con la constitución de redes y tres niveles de atención. Las prestaciones y los servicios se articulan entre estos tres niveles. Según la Ley Básica de Salud nro. 153/99 del GCBA, ¿Cuál es la característica esencial para categorizar a estos tres niveles de atención?",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_021",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Las prestaciones y los servicios se articulan entre estos tres niveles. Según la Ley Básica de Salud nro. 153/99 del GCBA, ¿Cuál es la característica esencial para categorizar a estos tres niveles de atención?",
     "opciones": {
-        "a": "La capacitación del recurso humano.",
-        "b": "El grado de participación de la población",
-        "c": "Las capacidades de resolución.",
-        "d": "La atención integrada de todas las personas."
+      "a": "La capacitación del recurso humano.",
+      "b": "El grado de participación de la población",
+      "c": "Las capacidades de resolución.",
+      "d": "La atención integrada de todas las personas."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Las capacidades de resolución**. La ley define los niveles basándose en la complejidad de los problemas que cada uno está preparado para resolver (siendo el tercer nivel el de mayor complejidad tecnológica).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_022",
-    "materia": [
-        "aps",
-        "gastroenterologia",
-        "otras"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Colon",
-        "Cuidados Paliativos"
-    ],
-    "enunciado": "en Atención Primaria\" se hace referencia a los criterios de derivación en pacientes con constipación, entre los cuales se incluye (indique la opción correcta):",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_022",
+    "materia": ["aps", "gastroenterologia"],
+    "submateria": ["Atención Primaria de la Salud", "Colon"],
+    "enunciado": "En Atención Primaria se hace referencia a los criterios de derivación en pacientes con constipación, entre los cuales se incluye (indique la opción correcta):",
     "opciones": {
-        "a": "Ser la alternativa excluyente en pacientes con enfermedades avanzadas con riesgo de vida",
-        "b": "Implementarlo luego de haber intentado y fallado todos los tratamientos específicos de patología",
-        "c": "Responder con exclusividad a las necesidades del paciente y su familia en los últimos días de vida",
-        "d": "Complementarlo considerando el uso de todas las oportunidades posibles para mejorar la calidad de vida"
+      "a": "Ser la alternativa excluyente en pacientes con enfermedades avanzadas con riesgo de vida",
+      "b": "Implementarlo luego de haber intentado y fallado todos los tratamientos específicos de patología",
+      "c": "Responder con exclusividad a las necesidades del paciente y su familia en los últimos días de vida",
+      "d": "Complementarlo considerando el uso de todas las oportunidades posibles para mejorar la calidad de vida"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Implementarlo luego de haber intentado y fallado todos los tratamientos específicos de patología**. En el manejo escalonado de la constipación en APS, la derivación a especialistas o tratamientos de mayor complejidad se reserva para casos refractarios al manejo inicial.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_023",
-    "materia": [
-        "aps",
-        "otras"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Fármacos"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_023",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Fármacos"],
     "enunciado": "De acuerdo con las guías para el manejo clínico de O.P.S., la prescripción de metadona para lograr analgesia es recomendable que esté en manos de:",
     "opciones": {
-        "a": "Los médicos que poseen experiencia con el uso de esta droga.",
-        "b": "Los médicos especialistas en enfermedades neoplásicas.",
-        "c": "Los médicos generalistas o de atención primaria, como prescripción básica.",
-        "d": "Los médicos generalistas o de atención primaria y los enfermeros profesionales adecuadamente entrenados."
+      "a": "Los médicos que poseen experiencia con el uso de esta droga.",
+      "b": "Los médicos especialistas en enfermedades neoplásicas.",
+      "c": "Los médicos generalistas o de atención primaria, como prescripción básica.",
+      "d": "Los médicos generalistas o de atención primaria y los enfermeros profesionales adecuadamente entrenados."
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Los médicos que poseen experiencia con el uso de esta droga**. Debido a la farmacocinética compleja de la metadona (vida media larga e impredecible), su prescripción requiere entrenamiento específico y experiencia para evitar la acumulación y toxicidad.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_024",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_024",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuáles son las características del sistema de salud que hacen que la atención primaria de la salud no se transforme en una atención primitiva?",
     "opciones": {
-        "a": "Que establezca sistemas de vigilancia epidemiológica",
-        "b": "Que se organice en diferentes niveles y con sistemas de contrarreferencia",
-        "c": "Que sea regionalizado y con sistema de referencia",
-        "d": "Que priorice la participación comunitaria"
+      "a": "Que establezca sistemas de vigilancia epidemiológica",
+      "b": "Que se organice en diferentes niveles y con sistemas de contrarreferencia",
+      "c": "Que sea regionalizado y con sistema de referencia",
+      "d": "Que priorice la participación comunitaria"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Que sea regionalizado y con sistema de referencia**. La APS deja de ser 'atención para pobres' o 'primitiva' cuando está conectada con el resto del sistema de salud, garantizando que el paciente acceda a la complejidad que necesite mediante la referencia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_025",
-    "materia": [
-        "aps",
-        "gastroenterologia"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Colon"
-    ],
-    "enunciado": "en Atención Primaria\" se hace referencia a los criterios de derivación en pacientes con constipación, entre los cuales se incluye (indique la opción correcta):",
-    "opciones": {
-        "a": "Signos de edema por decúbito",
-        "b": "Pacientes con antecedentes de deterioro cognitivo",
-        "c": "Signos y síntomas de oclusión intestinal",
-        "d": "Pacientes con antecedentes de incontinencia urinaria"
-    },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
   {
-    "id": "aps_null_u_026",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "id": "aps_001_025",
+    "materia": ["aps", "gastroenterologia"],
+    "submateria": ["Atención Primaria de la Salud", "Colon"],
+    "enunciado": "En Atención Primaria se hace referencia a los criterios de derivación en pacientes con constipación, entre los cuales se incluye (indique la opción correcta):",
+    "opciones": {
+      "a": "Signos de edema por decúbito",
+      "b": "Pacientes con antecedentes de deterioro cognitivo",
+      "c": "Signos y síntomas de oclusión intestinal",
+      "d": "Pacientes con antecedentes de incontinencia urinaria"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Signos y síntomas de oclusión intestinal**. Ante la sospecha de una complicación mecánica aguda (como la oclusión), la derivación al servicio de urgencias o cirugía (segundo nivel) es obligatoria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_026",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál de las siguientes afirmaciones se presenta como una de las razones que justifica la renovación de la APS?",
     "opciones": {
-        "a": "El desconocimiento de la APS como estrategia para fortalecer la capacidad de la sociedad para reducir las desigualdades sociales",
-        "b": "La falta de consenso con respecto a que la APS es un enfoque sólido para abordar las causas de falta de salud y las desigualdades",
-        "c": "La vasta experiencia documentada acerca de la ineficiencia de la APS como estrategia que permita resolver los problemas de salud existentes en los países en desarrollo o subdesarrollo",
-        "d": "El desarrollo de nuevos conocimientos e instrumentos sobre buenas prácticas que pueden incorporarse para incrementar la efectividad de la APS"
+      "a": "El desconocimiento de la APS como estrategia para fortalecer la capacidad de la sociedad para reducir las desigualdades sociales",
+      "b": "La falta de consenso con respecto a que la APS es un enfoque sólido para abordar las causas de falta de salud y las desigualdades",
+      "c": "La vasta experiencia documentada acerca de la ineficiencia de la APS como estrategia que permita resolver los problemas de salud existentes en los países en desarrollo o subdesarrollo",
+      "d": "El desarrollo de nuevos conocimientos e instrumentos sobre buenas prácticas que pueden incorporarse para incrementar la efectividad de la APS"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **El desarrollo de nuevos conocimientos e instrumentos sobre buenas prácticas que pueden incorporarse para incrementar la efectividad de la APS**[cite: 399]. La renovación de la APS se justifica por la necesidad de integrar avances científicos, tecnológicos y de gestión que han demostrado mejorar el impacto de esta estrategia en la salud poblacional.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_027",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_027",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿A qué sectores del sistema de salud está orientada la propuesta renovadora de la APS?",
     "opciones": {
-        "a": "Al sistema de salud en su conjunto, integrando a todos los sectores",
-        "b": "Al sector público de atención a la salud, en tanto orientador del sistema de salud",
-        "c": "Al sector privado y de la sociedad civil, por su función dinamizadora del sistema",
-        "d": "Al sector de desarrollo de recursos humanos en salud, en instituciones públicas y privadas"
+      "a": "Al sistema de salud en su conjunto, integrando a todos los sectores",
+      "b": "Al sector público de atención a la salud, en tanto orientador del sistema de salud",
+      "c": "Al sector privado y de la sociedad civil, por su función dinamizadora del sistema",
+      "d": "Al sector de desarrollo de recursos humanos en salud, en instituciones públicas y privadas"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Al sistema de salud en su conjunto, integrando a todos los sectores**[cite: 412]. La APS renovada no se limita al sector público o al primer nivel de atención; es una estrategia que debe permear todo el sistema de salud, incluyendo el sector privado y la seguridad social, para garantizar la equidad.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_028",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_028",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "El mejoramiento de la salud de los individuos desde una perspectiva política implica considerar:",
     "opciones": {
-        "a": "La estrategia de empoderamiento de las comunidades, la priorización de grupos poblacionales y la reorientación de los servicios de salud.",
-        "b": "Los factores socioeconómicos determinantes de la salud, las políticas sociales y económicas que afectan la distribución del ingreso y los aspectos de los servicios de salud que fortalecen la atención primaria.",
-        "c": "Medidas para mejorar la equidad, la prestación de servicios diferenciales para distintos grupos poblacionales y la calidad de las prestaciones médicas.",
-        "d": "Las politicas redistributivas, la regulación de las prestaciones médicas y la medición sistemática de indicadores de salud estandarizados."
+      "a": "La estrategia de empoderamiento de las comunidades, la priorización de grupos poblacionales y la reorientación de los servicios de salud.",
+      "b": "Los factores socioeconómicos determinantes de la salud, las políticas sociales y económicas que afectan la distribución del ingreso y los aspectos de los servicios de salud que fortalecen la atención primaria.",
+      "c": "Medidas para mejorar la equidad, la prestación de servicios diferenciales para distintos grupos poblacionales y la calidad de las prestaciones médicas.",
+      "d": "Las politicas redistributivas, la regulación de las prestaciones médicas y la medición sistemática de indicadores de salud estandarizados."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Los factores socioeconómicos determinantes de la salud, las políticas sociales y económicas que afectan la distribución del ingreso y los aspectos de los servicios de salud que fortalecen la atención primaria.**[cite: 426]. Mejorar la salud desde lo político requiere abordar las causas de las causas (determinantes sociales) y asegurar que el sistema de salud esté estructurado sobre la base de la APS.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_029",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_029",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿En qué se diferencia el cuidado y la atención?",
     "opciones": {
-        "a": "APS renovada",
-        "b": "APS transformadora",
-        "c": "APS ampliada",
-        "d": "APS selectiva"
+      "a": "APS renovada",
+      "b": "APS transformadora",
+      "c": "APS ampliada",
+      "d": "APS selectiva"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+   "explicacion": "La respuesta correcta es **APS transformadora**[cite: 439]. En este contexto, la diferenciación entre cuidado y atención suele enmarcarse en la evolución hacia una APS que no solo asiste la enfermedad sino que transforma las realidades sociales de salud.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_030",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_030",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cómo puede la atención médica contribuir a mejorar la equidad en salud?",
     "opciones": {
-        "a": "Mediante un sistema de salud fundamentado en una sólida atención primaria",
-        "b": "Mediante el aumento en el número de médicos generales y de familia",
-        "c": "Mediante la disponibilidad de servicios de salud especializados",
-        "d": "Mediante la implementación de políticas públicas"
+      "a": "Mediante un sistema de salud fundamentado en una sólida atención primaria",
+      "b": "Mediante el aumento en el número de médicos generales y de familia",
+      "c": "Mediante la disponibilidad de servicios de salud especializados",
+      "d": "Mediante la implementación de políticas públicas"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+   "explicacion": "La respuesta correcta es **Mediante un sistema de salud fundamentado en una sólida atención primaria**[cite: 453]. La evidencia internacional indica que los sistemas basados en APS logran mejores resultados de salud con mayor equidad y menores costos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_031",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_031",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué ocurrió con el sentido original de la Atención Primaria de la Salud?",
     "opciones": {
-        "a": "Fue distorsionado y mal interpretado",
-        "b": "Fue ignorado y desestimado sólo por algunos países europeos y asiáticos",
-        "c": "Fue distorsionado y confundido con el de promoción de salud integral",
-        "d": "Fue comprendido y aplicado sólo por algunos países europeos y asiáticos"
+      "a": "Fue distorsionado y mal interpretado",
+      "b": "Fue ignorado y desestimado sólo por algunos países europeos y asiáticos",
+      "c": "Fue distorsionado y confundido con el de promoción de salud integral",
+      "d": "Fue comprendido y aplicado sólo por algunos países europeos y asiáticos"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Fue distorsionado y mal interpretado**[cite: 466]. Con el tiempo, el concepto amplio de Alma-Ata fue reducido en muchos lugares a una 'APS selectiva' (paquete básico de servicios para pobres), perdiendo su carácter de estrategia de transformación del sistema.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_032",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_032",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué diferencia a la atención primaria de la atención primitiva?",
     "opciones": {
-        "a": "La existencia de un primer nivel de atención sólido y eficiente",
-        "b": "La existencia de una red regionalizada",
-        "c": "La existencia de legislación que garantice el derecho a la salud",
-        "d": "El derecho real del usuario a acceder a toda la red asistencial"
+      "a": "La existencia de un primer nivel de atención sólido y eficiente",
+      "b": "La existencia de una red regionalizada",
+      "c": "La existencia de legislación que garantice el derecho a la salud",
+      "d": "El derecho real del usuario a acceder a toda la red asistencial"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **El derecho real del usuario a acceder a toda la red asistencial**[cite: 479]. La APS no es un compartimento estanco de baja tecnología; es la puerta de entrada a un sistema que garantiza el acceso a niveles de mayor complejidad cuando es necesario.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_033",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Introducción a la epidemiología"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_033",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es el punto en común respecto a las nuevas formas de definir la atención primaria orientada a la comunidad?",
     "opciones": {
-        "a": "Utilización de conocimientos clínicos y epidemiológicos para la elaboración de programas",
-        "b": "Utilización de los recursos existentes de los programas de salud",
-        "c": "Utilización de la medicina basada en evidencias para la toma de decisiones",
-        "d": "Utilización de saberes populares para readecuar las intervenciones"
+      "a": "Utilización de conocimientos clínicos y epidemiológicos para la elaboración de programas",
+      "b": "Utilización de los recursos existentes de los programas de salud",
+      "c": "Utilización de la medicina basada en evidencias para la toma de decisiones",
+      "d": "Utilización de saberes populares para readecuar las intervenciones"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Utilización de conocimientos clínicos y epidemiológicos para la elaboración de programas**[cite: 496]. La orientación comunitaria moderna integra la clínica individual con el análisis epidemiológico del territorio para diseñar intervenciones pertinentes.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_034",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_034",
+    "materia": ["aps", "saludpublica"],
+    "submateria": ["Atención Primaria de la Salud", "Otras preguntas de salud pública"],
     "enunciado": "¿Bajo qué perspectiva de salud surgieron las iniciativas sanitarias que podrían considerarse antecedentes de la Atención Primaria de la Salud?",
     "opciones": {
-        "a": "Salud comunitaria",
-        "b": "Salud integral",
-        "c": "Salud colectiva",
-        "d": "Salud pública"
+      "a": "Salud comunitaria",
+      "b": "Salud integral",
+      "c": "Salud colectiva",
+      "d": "Salud pública"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+   "explicacion": "La respuesta correcta es **Salud pública**[cite: 509]. Históricamente, las acciones de saneamiento, vacunación y control de enfermedades infecciosas de la salud pública clásica sentaron las bases para lo que luego se consolidaría como la estrategia de APS.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_035",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_035",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué resultados arrojaron las investigaciones realizadas en países con deficiente infraestructura de atención primaria?",
     "opciones": {
-        "a": "Mayores costos y resultados de salud más pobres",
-        "b": "Gasto en salud per cápita más alto y baja inversión en tecnologia",
-        "c": "Mayor número de médicos especialistas y mayor número de población a cargo",
-        "d": "Accesibilidad menor y mejores indicadores de mortalidad"
+      "a": "Mayores costos y resultados de salud más pobres",
+      "b": "Gasto en salud per cápita más alto y baja inversión en tecnologia",
+      "c": "Mayor número de médicos especialistas y mayor número de población a cargo",
+      "d": "Accesibilidad menor y mejores indicadores de mortalidad"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Mayores costos y resultados de salud más pobres**[cite: 524]. La falta de un primer nivel resolutivo genera una dependencia excesiva de las guardias hospitalarias y la atención especializada, lo que encarece el sistema y empeora los indicadores de salud.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_036",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_036",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál es el objetivo último de la renovación de la APS?",
     "opciones": {
-        "a": "Alcanzar resultados eficaces de salud para todos",
-        "b": "Obtener resultados solventes de salud para todos",
-        "c": "Obtener resultados sostenibles de salud para todos",
-        "d": "Alcanzar resultados eficientes de salud para todos"
+      "a": "Alcanzar resultados eficaces de salud para todos",
+      "b": "Obtener resultados solventes de salud para todos",
+      "c": "Obtener resultados sostenibles de salud para todos",
+      "d": "Alcanzar resultados eficientes de salud para todos"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Obtener resultados sostenibles de salud para todos**[cite: 538]. La sostenibilidad implica que las mejoras en salud puedan mantenerse en el tiempo mediante sistemas fortalecidos y equitativos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_037",
-    "materia": [
-        "aps",
-        "medicinafamiliar"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Control de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_037",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuáles son las características de la atención primaria que se están considerando en el desarrollo de las actividades?",
     "opciones": {
-        "a": "Atención de la salud centrada en la comunidad, relación población-equipo de salud, habilidades",
-        "b": "Atención de la salud centrada en la familia, primer contacto, aptitud cultural",
-        "c": "Aptitud cultural, experiencias vividas por el equipo de salud, organización sanitaria",
-        "d": "Planificación del equipo de salud, necesidades de la población, recursos existentes"
+      "a": "Atención de la salud centrada en la comunidad, relación población-equipo de salud, habilidades",
+      "b": "Atención de la salud centrada en la familia, primer contacto, aptitud cultural",
+      "c": "Aptitud cultural, experiencias vividas por el equipo de salud, organización sanitaria",
+      "d": "Planificación del equipo de salud, necesidades de la población, recursos existentes"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+   "explicacion": "La respuesta correcta es **Atención de la salud centrada en la familia, primer contacto, aptitud cultural**[cite: 553]. Estos elementos son pilares de la APS: la familia como unidad de cuidado, la accesibilidad inicial y el respeto por la diversidad cultural de la población atendida.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_038",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_038",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿En qué se diferencia el cuidado y la atención?",
     "opciones": {
-        "a": "En que la atención es más integral e intersectorial",
-        "b": "En que la atención es más simétrica y participativa",
-        "c": "En que el cuidado es más integral e intersectorial",
-        "d": "En que el cuidado es más individual que social"
+      "a": "En que la atención es más integral e intersectorial",
+      "b": "En que la atención es más simétrica y participativa",
+      "c": "En que el cuidado es más integral e intersectorial",
+      "d": "En que el cuidado es más individual que social"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **En que el cuidado es más integral e intersectorial**[cite: 568]. Mientras la 'atención' suele asociarse al acto médico puntual, el 'cuidado' abarca una mirada integral del sujeto y requiere la colaboración de otros sectores fuera del sanitario.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_039",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_039",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál de los siguientes proyectos correspondería a la atención primaria de salud?",
     "opciones": {
-        "a": "Tienen un número mayor de médicos especialistas y mayor número de población a cargo.",
-        "b": "Tienen un gasto en salud per cápita más alto y con baja inversión en tecnología.",
-        "c": "Tienen mayores costos y resultados de salud más pobres.",
-        "d": "Tienen una accesibilidad menor y mejores indicadores de mortalidad."
+      "a": "Tienen un número mayor de médicos especialistas y mayor número de población a cargo.",
+      "b": "Tienen un gasto en salud per cápita más alto y con baja inversión en tecnología.",
+      "c": "Tienen mayores costos y resultados de salud más pobres.",
+      "d": "Tienen una accesibilidad menor y mejores indicadores de mortalidad."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Tienen mayores costos y resultados de salud más pobres.**[cite: 586]. Esta pregunta parece indagar sobre las consecuencias de un sistema que NO se organiza por APS, resaltando por oposición la necesidad de dicha estrategia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_040",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Sistema de salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_040",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿En qué nivel del concepto de Atención Primaria de la Salud enfatiza el enfoque de Atención Primaria de Salud Integral de Alma Ata?",
     "opciones": {
-        "a": "Nivel de atención de un sistema de servicios de salud orientado a brindar cobertura integral en salud",
-        "b": "Conjunto de actividades de los servicios de salud dirigidas a poblaciones vulnerables en contextos comunitarios",
-        "c": "Estrategia de organización de los sistemas de atención a la salud y de la sociedad para promover la salud",
-        "d": "Filosofía rectora del sistema de salud basada en la noción de salud integral como derecho"
+      "a": "Nivel de atención de un sistema de servicios de salud orientado a brindar cobertura integral en salud",
+      "b": "Conjunto de actividades de los servicios de salud dirigidas a poblaciones vulnerables en contextos comunitarios",
+      "c": "Estrategia de organización de los sistemas de atención a la salud y de la sociedad para promover la salud",
+      "d": "Filosofía rectora del sistema de salud basada en la noción de salud integral como derecho"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Estrategia de organización de los sistemas de atención a la salud y de la sociedad para promover la salud**[cite: 600]. Alma-Ata definió la APS como una estrategia global que va más allá de un nivel asistencial, involucrando a la sociedad y al desarrollo socioeconómico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_041",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Medidas epidemiológicas de frecuencia"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_041",
+    "materia": ["aps", "saludpublica"],
+    "submateria": ["Atención Primaria de la Salud", "Otras preguntas de salud pública"],
     "enunciado": "La atención primaria genera equidad en salud, por lo menos para aquellos indicadores particularmente sensibles a la atención primaria\" ¿Cuáles son esos indicadores?",
     "opciones": {
-        "a": "Mortalidad postneonatal, mortalidad por derrame cerebral y la autopercepción sobre la salud",
-        "b": "Peso al nacer, invalidez, accesibilidad al sistema de salud",
-        "c": "Tasa de natalidad, muerte materna, gasto en salud",
-        "d": "Mortalidad hospitalaria, esperanza de vida, morbilidad"
+      "a": "Mortalidad postneonatal, mortalidad por derrame cerebral y la autopercepción sobre la salud",
+      "b": "Peso al nacer, invalidez, accesibilidad al sistema de salud",
+      "c": "Tasa de natalidad, muerte materna, gasto en salud",
+      "d": "Mortalidad hospitalaria, esperanza de vida, morbilidad"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Mortalidad postneonatal, mortalidad por derrame cerebral y la autopercepción sobre la salud**[cite: 616]. Estos indicadores reflejan la capacidad de la APS para el seguimiento del niño sano, el control de la hipertensión y el abordaje de la salud desde la perspectiva del paciente.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_042",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_042",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "La Atención Primaria de la salud es una tarea imprescindible en estos tiempos para perfilarla como herramienta de transformación. ¿A qué tipo de transformación alude?",
     "opciones": {
-        "a": "Política",
-        "b": "Sectorial",
-        "c": "Cultural",
-        "d": "Social"
+      "a": "Política",
+      "b": "Sectorial",
+      "c": "Cultural",
+      "d": "Social"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Social**[cite: 630]. La APS busca impactar en las condiciones de vida y reducir las desigualdades, siendo un motor de cambio para la justicia social en salud.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_043",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_043",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál de los siguientes conceptos está asociado a la atención primaria de la salud en la Declaración de Alma-Ata?",
     "opciones": {
-        "a": "es la atención de enfermedades prevalentes",
-        "b": "está dirigida a la atención de patologías de alto riesgo",
-        "c": "es la atención materno-infantil a bajo costo",
-        "d": "es el cuidado integral de la salud para todos y por todos"
+      "a": "es la atención de enfermedades prevalentes",
+      "b": "está dirigida a la atención de patologías de alto riesgo",
+      "c": "es la atención materno-infantil a bajo costo",
+      "d": "es el cuidado integral de la salud para todos y por todos"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **es el cuidado integral de la salud para todos y por todos**[cite: 646]. Este es el lema y concepto central de Alma-Ata (1978), subrayando la universalidad y la participación comunitaria.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_044",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_044",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Quiénes fueron los actores que sustentaron con su esfuerzo el movimiento de la Atención Primaria de Salud?",
     "opciones": {
-        "a": "Trabajadores y organizaciones de base",
-        "b": "Movimientos de iglesia y organismos internacionales",
-        "c": "Partidos y obreros",
-        "d": "Organizaciones de base y organismos internacionales"
+      "a": "Trabajadores y organizaciones de base",
+      "b": "Movimientos de iglesia y organismos internacionales",
+      "c": "Partidos y obreros",
+      "d": "Organizaciones de base y organismos internacionales"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Trabajadores y organizaciones de base**[cite: 658]. El impulso real de la APS provino de la movilización de comunidades organizadas y de los trabajadores que operan directamente en el territorio.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_045",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_045",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Cuál de los siguientes proyectos correspondería a la atención primaria de salud?",
     "opciones": {
-        "a": "Atención gratuita de patologías en adultos mayores de la capital de una provincia",
-        "b": "Detección y tratamiento de niños desnutridos en un poblado del conurbano",
-        "c": "Promoción de la salud, diagnóstico y tratamiento de problemas en un barrio con participación de la comunidad",
-        "d": "Detección precoz de personas hipertensas en un barrio de Buenos Aires"
+      "a": "Atención gratuita de patologías en adultos mayores de la capital de una provincia",
+      "b": "Detección y tratamiento de niños desnutridos en un poblado del conurbano",
+      "c": "Promoción de la salud, diagnóstico y tratamiento de problemas en un barrio con participación de la comunidad",
+      "d": "Detección precoz de personas hipertensas en un barrio de Buenos Aires"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Promoción de la salud, diagnóstico y tratamiento de problemas en un barrio con participación de la comunidad**[cite: 673]. Este proyecto cumple con los criterios de integralidad, territorialidad y participación comunitaria propios de la APS.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_046",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_046",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Quiénes deberían trabajar en el primer nivel de atención si se considera a la Atención Primaria como puerta de entrada a toda la red del sistema?",
     "opciones": {
-        "a": "Los generalistas de mediana experiencia",
-        "b": "Los pediatras y clinicos con mayor experiencia en enfermedades prevalentes",
-        "c": "Un equipo básico de profesionales en formación que pueda realizar los procedimientos de asistencia esencial",
-        "d": "Personal muy bien calificado que pueda responder a las exigencias de orientación que ubica a los usuarios en un cierto rumbo dentro del sistema"
+      "a": "Los generalistas de mediana experiencia",
+      "b": "Los pediatras y clinicos con mayor experiencia en enfermedades prevalentes",
+      "c": "Un equipo básico de profesionales en formación que pueda realizar los procedimientos de asistencia esencial",
+      "d": "Personal muy bien calificado que pueda responder a las exigencias de orientación que ubica a los usuarios en un cierto rumbo dentro del sistema"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Personal muy bien calificado que pueda responder a las exigencias de orientación que ubica a los usuarios en un cierto rumbo dentro del sistema**[cite: 686]. Lejos de ser un lugar para principiantes, el primer nivel requiere alta competencia para gestionar la incertidumbre y coordinar el recorrido del paciente en la red.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_047",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_047",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "La existencia de qué caracterizaria/definiría a la Atención Primaria de la salud",
     "opciones": {
-        "a": "De una red asistencial tal que cumpla el derecho real del usuario a acceder a toda la red de salud",
-        "b": "De un primer nivel de atención sólido y eficiente",
-        "c": "De efectores de distinto nivel de complejidad que dispensen a su población la asistencia básica requerida",
-        "d": "De un departamento de Atención Primaria de la Salud"
+      "a": "De una red asistencial tal que cumpla el derecho real del usuario a acceder a toda la red de salud",
+      "b": "De un primer nivel de atención sólido y eficiente",
+      "c": "De efectores de distinto nivel de complejidad que dispensen a su población la asistencia básica requerida",
+      "d": "De un departamento de Atención Primaria de la Salud"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **De una red asistencial tal que cumpla el derecho real del usuario a acceder a toda la red de salud**[cite: 699]. La APS se define por su capacidad de ser el nodo ordenador de una red que garantice el acceso universal a todos los recursos sanitarios.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_048",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_048",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Qué origen tienen varios de los conceptos utilizados en los programas de salud?",
     "opciones": {
-        "a": "Religioso",
-        "b": "Filosófico",
-        "c": "Económico",
-        "d": "Militar"
+      "a": "Religioso",
+      "b": "Filosófico",
+      "c": "Económico",
+      "d": "Militar"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Militar**[cite: 713]. Muchos términos de la salud pública y la planificación sanitaria (como 'campaña', 'estrategia', 'táctica', 'logística' o 'vigilancia') tienen raíces en la terminología militar.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_049",
-    "materia": [
-        "aps",
-        "saludpublica"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud",
-        "Normativa nacional y jurisdiccional"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_049",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "La definición renovada de la APS, según el texto de la OPS, distingue alguno de los siguientes valores:",
     "opciones": {
-        "a": "Intersectorialidad",
-        "b": "Cuidados apropiados",
-        "c": "Participación",
-        "d": "Derecho al mayor nivel de salud posible"
+      "a": "Intersectorialidad",
+      "b": "Cuidados apropiados",
+      "c": "Participación",
+      "d": "Derecho al mayor nivel de salud posible"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Derecho al mayor nivel de salud posible**[cite: 731]. Este es el valor fundamental ético sobre el cual se construye la propuesta de la APS renovada de la OPS/OMS.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_050",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_050",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
     "enunciado": "¿Por qué la atención primaria es más flexible que la medicina por especialidades?",
     "opciones": {
-        "a": "Porque la atención primaria requiere menos capital, es más accesible y tiene una organización menos jerárquica",
-        "b": "Porque la atención primaria requiere menos trabajo y capital y es más accesible",
-        "c": "Porque la atención primaria requiere menos trabajo, se adecua mejor a las necesidades de la población y es más accesible",
-        "d": "Porque la atención primaria requiere menos trabajo y capital y tiene una organización menos jerárquica"
+      "a": "Porque la atención primaria requiere menos capital, es más accesible y tiene una organización menos jerárquica",
+      "b": "Porque la atención primaria requiere menos trabajo y capital y es más accesible",
+      "c": "Porque la atención primaria requiere menos trabajo, se adecua mejor a las necesidades de la población y es más accesible",
+      "d": "Porque la atención primaria requiere menos trabajo y capital y tiene una organización menos jerárquica"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Porque la atención primaria requiere menos trabajo y capital y tiene una organización menos jerárquica**[cite: 744]. Su estructura liviana y descentralizada le permite adaptarse con mayor rapidez a los cambios en el perfil epidemiológico o a las crisis sanitarias locales.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
   {
-    "id": "aps_null_u_051",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La participación de la comunidad en los procesos de diagnóstico, programación y ejecución de proyectos de salud es:",
+    "id": "aps_001_051",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuáles son las caracteristicas de una atención primaria de la salud que sirva a las necesidades de la población?",
     "opciones": {
-        "a": "Un principio de la APS",
-        "b": "Un derecho de la comunidad",
-        "c": "Un deber del equipo de salud",
-        "d": "Una estrategia de APS"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_052",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la integralidad en la APS?",
-    "opciones": {
-        "a": "La atención de todos los problemas de salud",
-        "b": "La atención de todas las personas",
-        "c": "La atención que incluye promoción, prevención, curación y rehabilitación",
-        "d": "La atención que se brinda en todos los niveles de complejidad"
-    },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_053",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La equidad en salud implica:",
-    "opciones": {
-        "a": "Dar a todos lo mismo",
-        "b": "Dar a cada uno lo que necesita",
-        "c": "Dar prioridad a los que más tienen",
-        "d": "Dar prioridad a los que menos tienen"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_054",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es el rol del equipo de salud en la APS?",
-    "opciones": {
-        "a": "Brindar atención médica",
-        "b": "Promover la salud y prevenir enfermedades",
-        "c": "Trabajar con la comunidad para resolver sus problemas de salud",
-        "d": "Todas las anteriores"
+      "a": "La multiplicidad organizativa y la acción intersectorial",
+      "b": "La articulación entre niveles y la sustentabilidad de los programas",
+      "c": "La accesibilidad y la participación de la población",
+      "d": "La regionalización y un adecuado sistema de referencia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    [cite_start]"explicacion": "La respuesta correcta es **La regionalización y un adecuado sistema de referencia**. Para responder eficazmente a las necesidades poblacionales, la APS debe estar integrada en un sistema regionalizado que garantice la continuidad del cuidado a través de mecanismos formales de referencia y contrarreferencia[cite: 759, 772].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_055",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La intersectorialidad en la APS se refiere a:",
-    "opciones": {
-        "a": "La coordinación entre diferentes sectores del sistema de salud",
-        "b": "La coordinación entre el sector salud y otros sectores sociales y económicos",
-        "c": "La coordinación entre diferentes niveles de atención",
-        "d": "La coordinación entre diferentes disciplinas del equipo de salud"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_056",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la accesibilidad en la APS?",
-    "opciones": {
-        "a": "La posibilidad de llegar al centro de salud",
-        "b": "La posibilidad de recibir atención oportuna y de calidad",
-        "c": "La posibilidad de pagar por los servicios de salud",
-        "d": "La posibilidad de elegir al médico tratante"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_057",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS se basa en:",
-    "opciones": {
-        "a": "Tecnología de alta complejidad",
-        "b": "Tecnología apropiada",
-        "c": "Medicamentos costosos",
-        "d": "Infraestructura hospitalaria"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_058",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es la relación entre APS y promoción de la salud?",
-    "opciones": {
-        "a": "Son lo mismo",
-        "b": "La APS incluye la promoción de la salud",
-        "c": "La promoción de la salud es una estrategia de la APS",
-        "d": "La APS es una estrategia de promoción de la salud"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_059",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS busca:",
-    "opciones": {
-        "a": "Curar enfermedades",
-        "b": "Prevenir enfermedades",
-        "c": "Mejorar la calidad de vida",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_060",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la continuidad en la APS?",
-    "opciones": {
-        "a": "La atención permanente",
-        "b": "La atención a lo largo del tiempo",
-        "c": "La atención en el mismo lugar",
-        "d": "La atención por el mismo profesional"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_061",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS se centra en:",
-    "opciones": {
-        "a": "La enfermedad",
-        "b": "El paciente",
-        "c": "La comunidad",
-        "d": "La persona, la familia y la comunidad"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_062",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es el objetivo de la educación para la salud en la APS?",
-    "opciones": {
-        "a": "Informar sobre enfermedades",
-        "b": "Promover hábitos saludables",
-        "c": "Empoderar a la comunidad para el cuidado de su salud",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_063",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La participación comunitaria en salud significa:",
-    "opciones": {
-        "a": "Que la comunidad obedezca las indicaciones médicas",
-        "b": "Que la comunidad opine sobre los servicios de salud",
-        "c": "Que la comunidad participe activamente en la toma de decisiones sobre su salud",
-        "d": "Que la comunidad financie los servicios de salud"
-    },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_064",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es el enfoque de riesgo en la APS?",
-    "opciones": {
-        "a": "Identificar a las personas con mayor probabilidad de enfermar",
-        "b": "Tratar a las personas enfermas",
-        "c": "Prevenir complicaciones",
-        "d": "Rehabilitar a las personas con discapacidad"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_065",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS es una estrategia para alcanzar:",
-    "opciones": {
-        "a": "La cobertura universal de salud",
-        "b": "La salud para todos",
-        "c": "Los Objetivos de Desarrollo Sostenible",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_066",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es la importancia de la atención primaria en el sistema de salud?",
-    "opciones": {
-        "a": "Es la puerta de entrada al sistema",
-        "b": "Resuelve la mayoría de los problemas de salud",
-        "c": "Coordina la atención en los diferentes niveles",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_067",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La descentralización en salud busca:",
-    "opciones": {
-        "a": "Transferir poder y recursos a los niveles locales",
-        "b": "Concentrar el poder en el nivel central",
-        "c": "Privatizar los servicios de salud",
-        "d": "Reducir el gasto en salud"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_068",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la regionalización en salud?",
-    "opciones": {
-        "a": "Organizar los servicios de salud por regiones geográficas",
-        "b": "Organizar los servicios de salud por niveles de complejidad",
-        "c": "Organizar los servicios de salud por especialidades",
-        "d": "Organizar los servicios de salud por grupos de edad"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_069",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La referencia y contrarreferencia son mecanismos para:",
-    "opciones": {
-        "a": "Derivar pacientes a especialistas",
-        "b": "Coordinar la atención entre niveles",
-        "c": "Asegurar la continuidad de la atención",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_070",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es el primer nivel de atención?",
-    "opciones": {
-        "a": "El nivel más complejo del sistema de salud",
-        "b": "El nivel más cercano a la población",
-        "c": "El nivel donde se realizan cirugías complejas",
-        "d": "El nivel donde se atienden urgencias graves"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_071",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La atención primaria selectiva se enfoca en:",
-    "opciones": {
-        "a": "Problemas de salud específicos",
-        "b": "Toda la población",
-        "c": "Todos los problemas de salud",
-        "d": "La promoción de la salud"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_072",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es la diferencia entre APS y medicina familiar?",
-    "opciones": {
-        "a": "Son lo mismo",
-        "b": "La APS es una estrategia y la medicina familiar una especialidad",
-        "c": "La APS se enfoca en la comunidad y la medicina familiar en la familia",
-        "d": "La APS es pública y la medicina familiar es privada"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_073",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La visita domiciliaria es una herramienta para:",
-    "opciones": {
-        "a": "Conocer el entorno del paciente",
-        "b": "Identificar factores de riesgo",
-        "c": "Brindar educación sanitaria",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_074",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es el diagnóstico de salud comunitario?",
-    "opciones": {
-        "a": "Un estudio epidemiológico",
-        "b": "Un análisis de la situación de salud de una comunidad",
-        "c": "Una encuesta de salud",
-        "d": "Un censo poblacional"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_075",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La planificación local participativa permite:",
-    "opciones": {
-        "a": "Involucrar a la comunidad en la toma de decisiones",
-        "b": "Identificar prioridades locales",
-        "c": "Diseñar soluciones adecuadas al contexto",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
   {
-    "id": "aps_null_u_076",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS se orienta a:",
+    "id": "aps_001_052",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "La participación social es uno de los componentes estratégicos de la Atención Primaria. ¿Cómo propiciar este concepto desde los servicios de salud, promoviendo la participación social?",
     "opciones": {
-        "a": "La atención individual",
-        "b": "La atención colectiva",
-        "c": "La atención individual y colectiva",
-        "d": "La atención hospitalaria"
+      "a": "Favoreciendo la universalización de las prestaciones en todos los efectores del subsector estatal.",
+      "b": "Construyendo una perspectiva centrada en la demanda de asistencia a los servicios, representada por las estadísticas.",
+      "c": "Generando una capacidad de respuesta técnica basada en riesgos posibles.",
+      "d": "Profundizando en la heterogeneidad de las necesidades de la población y de las respuestas de los servicios"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Profundizando en la heterogeneidad de las necesidades de la población y de las respuestas de los servicios**. [cite_start]La participación social se fomenta cuando los servicios reconocen que la población no es un bloque uniforme y adaptan sus respuestas a las diversas realidades y necesidades locales[cite: 776, 788].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_053",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Qué implica pensar a la atención primaria de la salud como puerta de entrada al sistema de salud?",
+    "opciones": {
+      "a": "Que es una estrategia diseñada como forma de disminuir el gasto social en salud",
+      "b": "Que es el primer contacto del paciente con el complejo de servicios y debe estar a cargo de personal muy bien calificado",
+      "c": "Que está orientada a facilitar el acceso a la atención para la población en situación menos favorecida",
+      "d": "Que es el único servicio disponible para la población a la que está destinada"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Que es el primer contacto del paciente con el complejo de servicios y debe estar a cargo de personal muy bien calificado**. [cite_start]La APS como 'puerta de entrada' define el contacto inicial con el sistema, requiriendo profesionales altamente capacitados para resolver la mayoría de los problemas y orientar adecuadamente al paciente en la red[cite: 792, 802].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_054",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cómo debería trabajarse a nivel de los sujetos, grupos y personal de salud que desarrollan su actividad en atención primaria e inclusive en el segundo nivel de atención para detectar cuáles son los aspectos que más se oponen al reconocimiento de la diversidad del otro?",
+    "opciones": {
+      "a": "A partir de la aceptación de que las malas condiciones de comunicación cultural impiden una buena interrelación.",
+      "b": "A partir de actividades educativas que los informen y sensibilicen respecto a diversos procesos socioculturales.",
+      "c": "A partir del reconocimiento de las matrices del saber profesional y cultural biomédico.",
+      "d": "A partir del reconocimiento de que sujetos pertenecientes a culturas diferentes reducen la posibilidad de una relación complementaria."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **A partir del reconocimiento de las matrices del saber profesional y cultural biomédico**. [cite_start]Para superar las barreras en el reconocimiento de la diversidad, el personal de salud debe identificar primero sus propios sesgos y las estructuras del modelo biomédico tradicional que pueden dificultar la comprensión de otras culturas[cite: 806, 816].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_077",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la programación en salud?",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_055",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Conforme a qué criterio debe establecerse la organización del área estatal de salud, a fin de garantizar el derecho a la salud integral",
     "opciones": {
-        "a": "Definir objetivos y actividades para resolver problemas de salud",
-        "b": "Asignar turnos a los pacientes",
-        "c": "Construir nuevos centros de salud",
-        "d": "Comprar equipamiento médico"
+      "a": "Estrategia de atención primaria",
+      "b": "Implementación de un sistema único de salud",
+      "c": "Integración del sector público y privado",
+      "d": "Centralización de la gestión estatal en salud"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Estrategia de atención primaria**. [cite_start]La organización del subsector estatal basada en la APS es el mecanismo fundamental para operativizar el derecho a la salud de forma integral y equitativa[cite: 820, 832].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_078",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La evaluación en salud permite:",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_056",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "En el 2005 la Organización Panamericana de la Salud (OPS) Redefinió a la Atención Primaria de la Salud (APS). ¿Qué enfatizó en su conceptualización?",
     "opciones": {
-        "a": "Medir el impacto de las acciones de salud",
-        "b": "Sancionar al personal de salud",
-        "c": "Reducir el presupuesto de salud",
-        "d": "Aumentar la burocracia"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_079",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué son los determinantes sociales de la salud?",
-    "opciones": {
-        "a": "Factores genéticos que influyen en la salud",
-        "b": "Condiciones en las que las personas nacen, crecen, viven, trabajan y envejecen",
-        "c": "Enfermedades infecciosas",
-        "d": "Tratamientos médicos"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_080",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS promueve la equidad de género en salud, lo que significa:",
-    "opciones": {
-        "a": "Que hombres y mujeres reciban la misma atención médica",
-        "b": "Que se atiendan las necesidades específicas de salud de hombres y mujeres",
-        "c": "Que solo se atienda a las mujeres",
-        "d": "Que solo se atienda a los hombres"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_081",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la interculturalidad en salud?",
-    "opciones": {
-        "a": "Imponer la medicina occidental a todas las culturas",
-        "b": "Respetar y valorar los saberes y prácticas de salud de diferentes culturas",
-        "c": "Ignorar las creencias culturales de los pacientes",
-        "d": "Prohibir la medicina tradicional"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_082",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS renovada enfatiza:",
-    "opciones": {
-        "a": "El derecho a la salud",
-        "b": "La equidad",
-        "c": "La solidaridad",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_083",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Cuál es el papel de la enfermería en la APS?",
-    "opciones": {
-        "a": "Solo aplicar inyecciones",
-        "b": "Liderar equipos de salud, realizar cuidados y promoción de la salud",
-        "c": "Ayudar al médico",
-        "d": "Administrar medicamentos"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_084",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "Los agentes sanitarios son:",
-    "opciones": {
-        "a": "Médicos especialistas",
-        "b": "Miembros de la comunidad capacitados para promover la salud",
-        "c": "Enfermeros universitarios",
-        "d": "Administrativos de salud"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_085",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la red de servicios de salud?",
-    "opciones": {
-        "a": "Un conjunto de hospitales aislados",
-        "b": "Un conjunto de establecimientos de salud articulados para brindar atención integral",
-        "c": "Una red de computadoras en los hospitales",
-        "d": "Una red social para pacientes"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_086",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La gestión en APS implica:",
-    "opciones": {
-        "a": "Administrar recursos eficientemente",
-        "b": "Liderar equipos de trabajo",
-        "c": "Planificar y evaluar acciones de salud",
-        "d": "Todas las anteriores"
-    },
-    "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_087",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la vigilancia epidemiológica?",
-    "opciones": {
-        "a": "Espiar a los pacientes",
-        "b": "Recolección, análisis e interpretación sistemática de datos de salud",
-        "c": "Controlar el horario de los médicos",
-        "d": "Vigilar la limpieza de los hospitales"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_088",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La historia clínica orientada a problemas (HCOP) facilita:",
-    "opciones": {
-        "a": "La facturación de servicios",
-        "b": "La atención integral y continua del paciente",
-        "c": "La investigación biomédica",
-        "d": "La auditoría médica"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_089",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es el familiograma o genograma?",
-    "opciones": {
-        "a": "Un análisis de sangre",
-        "b": "Una radiografía familiar",
-        "c": "Una representación gráfica de la estructura y relaciones familiares",
-        "d": "Un test psicológico"
+      "a": "A la APS como un nivel de salud.",
+      "b": "A la APS como prestación de los servicios básicos en salud.",
+      "c": "A la APS como base del sistema de salud.",
+      "d": "A la APS como un programa dentro del sistema de salud."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **A la APS como base del sistema de salud**. [cite_start]La renovación de la APS por parte de la OPS en 2005 la posicionó no como un nivel aislado o un paquete simple, sino como el eje central sobre el cual debe estructurarse todo el sistema sanitario[cite: 836, 846].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_090",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "El trabajo en equipo interdisciplinario en APS permite:",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_057",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "En el 2005 la Organización Panamericana de la Salud (OPS) Redefinió a la Atención Primaria de la Salud (APS). ¿Qué enfatizó en su conceptualización?",
     "opciones": {
-        "a": "Abordar los problemas de salud desde diferentes perspectivas",
-        "b": "Ahorrar recursos",
-        "c": "Trabajar menos",
-        "d": "Competir entre profesionales"
+      "a": "La interpretación de lo primario como primitivo, poco civilizado",
+      "b": "La interpretación de lo primario como raíz de la participación social.",
+      "c": "La interpretación de lo primario como origen de la Intersectorialidad",
+      "d": "La interpretación de lo primario como lo primero y lo principal en orden de grado."
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **La interpretación de lo primario como primitivo, poco civilizado**. [cite_start]En el análisis de la evolución conceptual, se destaca que una de las barreras para la implementación de la APS fue la interpretación errónea de 'primario' como algo básico o rudimentario, en lugar de esencial o fundamental[cite: 849, 860].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_091",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la atención domiciliaria?",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_058",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "La atención primaria sanitaria se desarrolla a niveles locales y niveles de apoyo para ejercer con un equipo correctamente formado social y técnicamente, a fin de responder a las necesidades sanitarias expresadas por la comunidad. De acuerdo con la Declaración de Alma Ata ¿Cómo debe componerse el equipo sanitario?",
     "opciones": {
-        "a": "Atención médica en el consultorio",
-        "b": "Atención de salud brindada en el hogar del paciente",
-        "c": "Atención telefónica",
-        "d": "Atención por internet"
+      "a": "Por profesionales sanitarios incluidos médicos generalistas, pediatras, toco ginecólogos.",
+      "b": "Por los integrantes de las disciplinas sanitarias incluidas en el primer nivel de atención.",
+      "c": "Por profesionales sanitarios incluyendo a los médicos, enfermeras, comadronas, auxiliares y asistentes sociales.",
+      "d": "Por profesionales sanitarios incluidos médicos, enfermeras, asistentes sociales."
     },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Por profesionales sanitarios incluyendo a los médicos, enfermeras, comadronas, auxiliares y asistentes sociales**. [cite_start]La Declaración de Alma-Ata define un equipo multidisciplinario amplio que integra diversos saberes técnicos y sociales para el cuidado integral[cite: 865, 875].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_092",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La rehabilitación basada en la comunidad (RBC) busca:",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_059",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuál es el modelo de atención en el que se basa la Declaración de la Conferencia de Alma Ata?",
     "opciones": {
-        "a": "Institucionalizar a las personas con discapacidad",
-        "b": "Integrar socialmente a las personas con discapacidad con participación de la comunidad",
-        "c": "Curar la discapacidad",
-        "d": "Aislar a las personas con discapacidad"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_093",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué son los consejos locales de salud?",
-    "opciones": {
-        "a": "Reuniones de médicos",
-        "b": "Espacios de participación comunitaria en la gestión de salud",
-        "c": "Organismos gubernamentales de control",
-        "d": "Sindicatos de trabajadores de salud"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_094",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La salud ambiental en APS se ocupa de:",
-    "opciones": {
-        "a": "Proteger la flora y fauna",
-        "b": "Identificar y controlar factores ambientales que afectan la salud humana",
-        "c": "Reciclar basura",
-        "d": "Plantar árboles"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_095",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la seguridad alimentaria y nutricional?",
-    "opciones": {
-        "a": "Comer mucho",
-        "b": "Acceso físico y económico a alimentos suficientes, seguros y nutritivos",
-        "c": "Producir alimentos transgénicos",
-        "d": "Hacer dieta"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_096",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La salud mental comunitaria promueve:",
-    "opciones": {
-        "a": "El encierro en manicomios",
-        "b": "La atención en la comunidad y la reinserción social",
-        "c": "El uso exclusivo de psicofármacos",
-        "d": "La segregación de los pacientes mentales"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_097",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la salud sexual y reproductiva en APS?",
-    "opciones": {
-        "a": "Solo control de natalidad",
-        "b": "Derecho a una vida sexual satisfactoria y sin riesgos, y a decidir sobre la reproducción",
-        "c": "Tratamiento de enfermedades de transmisión sexual",
-        "d": "Atención del parto"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_098",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La atención a la salud del adulto mayor en APS busca:",
-    "opciones": {
-        "a": "Curar la vejez",
-        "b": "Mantener la funcionalidad y autonomía",
-        "c": "Internar a los ancianos en geriátricos",
-        "d": "Ignorar sus problemas de salud"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_099",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "¿Qué es la prevención cuaternaria?",
-    "opciones": {
-        "a": "Evitar el daño provocado por la intervención médica excesiva",
-        "b": "Prevenir enfermedades en la cuarta edad",
-        "c": "Prevenir epidemias",
-        "d": "Prevenir accidentes"
+      "a": "Atención Primaria de la Salud",
+      "b": "Atención Higienista y Salubrista",
+      "c": "Atención Profiláctica y Epidemiológica",
+      "d": "Atención Preventiva y Paliativa"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Atención Primaria de la Salud**. [cite_start]Alma-Ata (1978) es el documento fundacional que establece la APS como el modelo de atención primordial para alcanzar la meta de salud para todos[cite: 879, 888].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-},
-{
-    "id": "aps_null_u_100",
-    "materia": [
-        "aps"
-    ],
-    "submateria": [
-        "Atención Primaria de la Salud"
-    ],
-    "enunciado": "La APS es fundamental para:",
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_060",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuál es la vinculación entre la atención primaria de la salud (APS) Y el derecho a la salud?",
     "opciones": {
-        "a": "Reducir las desigualdades en salud",
-        "b": "Mejorar la eficiencia del sistema de salud",
-        "c": "Garantizar el derecho a la salud",
-        "d": "Todas las anteriores"
+      "a": "La APS acciona fortaleciendo el primer nivel de atención y con ello el cumplimiento del derecho a la salud.",
+      "b": "La APS propone una herramienta estratégica que efectiviza el cumplimiento del derecho a la salud.",
+      "c": "La APS provee una puerta de acceso a la salud que asegura el cumplimiento del derecho a la salud.",
+      "d": "La APS funciona como un programa integral indispensable que asegura el cumplimiento del derecho a la salud."
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **La APS propone una herramienta estratégica que efectiviza el cumplimiento del derecho a la salud**. [cite_start]La APS no es solo un nivel asistencial, sino la estrategia política y técnica diseñada para hacer real el ejercicio del derecho a la salud en la población[cite: 892, 905].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_061",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cómo se considera a la Atención Primaria de la Salud en la Declaración de Alma Ata?",
+    "opciones": {
+      "a": "Es la función central y núcleo del sistema sanitario",
+      "b": "Es una estructura enfocada a la atención de enfermedades de bajo costo",
+      "c": "Es el programa rector del sistema sanitario",
+      "d": "Es la meta a alcanzar en el año 2000 para todos los países"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Es la función central y núcleo del sistema sanitario**. [cite_start]En la declaración original, la APS se define como la parte integrante tanto del sistema de salud del país como del desarrollo socioeconómico global de la comunidad[cite: 909, 919].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_062",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuáles de los siguientes son principios de un sistema de salud basado en la APS, según OPS/OMS en el documento 'La renovación de la Atención Primaria de Salud en las Américas'?",
+    "opciones": {
+      "a": "Intersectorialidad, recursos humanos adecuados, cobertura y acceso universales, y equidad",
+      "b": "Dar respuesta a las necesidades de salud de la población, justicia social, participación y orientación hacia la calidad",
+      "c": "Participación, solidaridad, cuidados apropiados y sostenibilidad",
+      "d": "Equidad, solidaridad, accesibilidad y derecho al mayor nivel de salud posible"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Dar respuesta a las necesidades de salud de la población, justicia social, participación y orientación hacia la calidad**. [cite_start]El documento de renovación de la OPS establece estos principios como pilares para guiar la transformación de los sistemas de salud[cite: 922, 934].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_063",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuál es el motivo principal por el cual se considera la participación social como una dimensión fundamental de la APS?",
+    "opciones": {
+      "a": "Permite modificar progresivamente la distribución de recursos de poder",
+      "b": "Garantiza la eficacia y sustentabilidad de las acciones en salud",
+      "c": "Posibilita conocer demandas de la población y actuar en consecuencia",
+      "d": "Es un derecho inalienable y es deber del sector salud promoverla"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La respuesta correcta es **Es un derecho inalienable y es deber del sector salud promoverla**. [cite_start]Más allá de sus beneficios funcionales, la participación es un derecho humano fundamental que el sistema de salud tiene la obligación de facilitar y respetar[cite: 938, 950].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-}
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_064",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿para qué es considerada esencial una estrategia renovada de APS?",
+    "opciones": {
+      "a": "Para reducir las desigualdades, aumentar las inversiones y focalizar los recursos en objetivos específicos de salud",
+      "b": "Para lograr objetivos de desarrollo a nivel internacional, abordar las causas fundamentales de la salud, y codificar la salud como derecho humano",
+      "c": "Para abordar las enfermedades infecciosas y no transmisibles junto a problemáticas de salud como violencias y desastres, mejorar los indicadores generales de salud a nivel mundial y desarrollar nuevas tecnologías en salud",
+      "d": "Para identificar los grupos más vulnerables en salud a nivel mundial y local, fortalecer la articulación intersectorial y ampliar las fuentes de financiamiento"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Para lograr objetivos de desarrollo a nivel internacional, abordar las causas fundamentales de la salud, y codificar la salud como derecho humano**. [cite_start]La renovación de la APS busca conectar la salud con el desarrollo global y los determinantes sociales bajo un enfoque de derechos[cite: 954, 967].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_065",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "La Atención Primaria puede ser interpretada de tres maneras, dos de ellas son: como estrategia y como programa. ¿Cuál es la tercera interpretación?",
+    "opciones": {
+      "a": "Nivel de atención",
+      "b": "Plan de salud",
+      "c": "Política pública",
+      "d": "Proyecto de salud"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Nivel de atención**. [cite_start]Históricamente, la APS se ha conceptualizado como un nivel asistencial (el primero), como una serie de programas dirigidos y como una estrategia global de salud[cite: 971, 983].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_066",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Atención Primaria de Salud en Argentina expresa que, a partir de un relevamiento de datos, se ha podido cotejar en los últimos 30 años la proliferación de centros de salud en zonas urbanas y periurbanas. ¿Cómo se definen los roles, funciones y desempeños de los centros de salud en el primer nivel de atención?",
+    "opciones": {
+      "a": "En orden de complejidad.",
+      "b": "Articulados con el sistema de salud.",
+      "c": "Integrándose con el hospital del área",
+      "d": "Por su cuenta en forma individual"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Por su cuenta en forma individual**. [cite_start]El texto señala críticamente que, a pesar del crecimiento en número, muchos centros de salud operan de forma aislada, sin una integración real o coordinación sistémica efectiva[cite: 987, 998].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_067",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "El informe de la Organización Mundial de la Salud del año 2008 refiere que las reformas de la Atención Primaria de la Salud se estructuran en cuatro grupos, uno de ellos es el de las reformas a la prestación de servicios. ¿A qué modificaciones alude dicho grupo de reformas?",
+    "opciones": {
+      "a": "A aquellas que reorganicen los servicios de salud en torno a las necesidades y expectativas de las personas.",
+      "b": "A aquellas que reorganicen los servicios de salud en función de la demanda de la atención.",
+      "c": "A aquellas que reorganicen los servicios de salud en torno a la prevalencia e incidencia de enfermedad.",
+      "d": "A aquellas que reorganicen los servicios de salud en función de la atención a grupos vulnerables"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **A aquellas que reorganicen los servicios de salud en torno a las necesidades y expectativas de las personas**. [cite_start]Este grupo de reformas busca superar el enfoque biomédico fragmentado para centrar la atención en la persona de manera integral[cite: 1002, 1012].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_068",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Qué expresa el criterio de equidad desde la atención primaria de salud?",
+    "opciones": {
+      "a": "Orientar los recursos de salud a la población con mayores necesidades",
+      "b": "Garantizar que todos tengan acceso al primer nivel de atención",
+      "c": "Brindar atención de acuerdo con la demanda de servicios de salud",
+      "d": "Brindar acceso igualitario a los recursos de salud a toda la población"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Orientar los recursos de salud a la población con mayores necesidades**. [cite_start]La equidad implica dar más a quien más lo necesita para compensar las desigualdades injustas y evitables en salud[cite: 1016, 1027].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_069",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuáles son los tres valores de un sistema de salud basado en la APS propuestos por OPS/OMS en el documento 'La renovación de la Atención Primaria de Salud en las Américas'?",
+    "opciones": {
+      "a": "Equidad, solidaridad y derecho al mayor nivel de salud posible",
+      "b": "Solidaridad, participación y derecho al mayor nivel de salud posible",
+      "c": "Solidaridad, equidad y orientación hacia la calidad",
+      "d": "Equidad, justicia social e intersectorialidad"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Equidad, solidaridad y derecho al mayor nivel de salud posible**. [cite_start]Estos tres valores constituyen la base ética de la propuesta de renovación de la APS en la región[cite: 1031, 1042].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_070",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Los países subdesarrollados han copiado soluciones organizativas, implementadas en otros países, relativas al sistema de salud. ¿Qué propuesta se ha copiado a nivel de la atención primaria de la salud?",
+    "opciones": {
+      "a": "La secundarización de las especialidades médicas",
+      "b": "La jerarquización del médico clínico",
+      "c": "La reactivación del médico de familia",
+      "d": "La revalorización del personal idóneo"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **La reactivación del médico de familia**. [cite_start]El texto indica que muchos países han buscado fortalecer el primer nivel mediante la implementación de modelos de medicina familiar importados de otros contextos[cite: 1045, 1057].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_071",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Según la Ley Básica de Salud de la Ciudad de Buenos Aires (Ley Nº 153), conforme ¿A qué estrategia el subsector estatal de salud se organiza?",
+    "opciones": {
+      "a": "Atención Primaria de la Salud (APS).",
+      "b": "Sistemas Locales de Salud (SILOS).",
+      "c": "Salud colectiva.",
+      "d": "Hospitales seguros"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Atención Primaria de la Salud (APS)**. [cite_start]La ley 153 de CABA establece taxativamente que la APS es la estrategia central para la organización del subsector estatal[cite: 1061, 1073].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_072",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Qué significado adquiere la atención primaria de salud en los documentos de organismos internacionales como la OMS?",
+    "opciones": {
+      "a": "Concreto",
+      "b": "Diagnóstico",
+      "c": "Técnico",
+      "d": "Abstracto"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Abstracto**. [cite_start]Se señala que en los documentos de alto nivel, la APS suele definirse con conceptos amplios y abstractos que a menudo presentan dificultades para su operativización concreta en los territorios[cite: 1077, 1086].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_073",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Cerca de un 12% de la fuerza laboral del sector salud, dentro del subsector público, se desempeña en el primer nivel de atención. Los profesionales de este grupo trabajan con las más diversas y flexibles formas de contratación, con poca responsabilidad territorial, con un modelo hospital céntrico y extendiendo las fronteras de acceso a medicamentos. De acuerdo con la Atención Primaria de Salud en Argentina, ¿Qué implicancias tiene esta situación para el desarrollo de la Atención Primaria de la Salud (APS)?",
+    "opciones": {
+      "a": "Transformarse en uno de los países que más genuinamente ha desarrollado la estrategia de APS.",
+      "b": "Integrarse a la propuesta regional de la estrategia de APS a partir de la medicamentalizacion.",
+      "c": "Convertirse en uno de los países que más ha medicalizado y medicamentalizado la APS.",
+      "d": "Adecuarse a las instancias internacionales en cuanto a la medicalización de la salud."
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Convertirse en uno de los países que más ha medicalizado y medicamentalizado la APS**. [cite_start]El texto advierte que la precariedad laboral y el modelo hospital-céntrico han desviado la APS hacia una práctica centrada excesivamente en la prescripción de fármacos[cite: 1090, 1102].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_074",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Para realizar un trabajo ligado a un proyecto de prevención, de promoción de la salud y de atención primaria se debe pertenecer a una institución. ¿Qué debe tener esta institución?",
+    "opciones": {
+      "a": "Una estrategia política",
+      "b": "Un proyecto en una población",
+      "c": "Una comunicación clara",
+      "d": "Un buen trabajo en equipo"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Un proyecto en una población**. [cite_start]La pertenencia institucional en APS cobra sentido cuando la institución tiene un compromiso y un plan de acción concreto definido para una población y territorio específicos[cite: 1106, 1121].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_075",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Uno de los objetivos centrales de la declaración de Alma Ata fue la implementación de la estrategia de APS. Pasados 35 años se han realizado muchas reuniones para analizar las causas que impidieron los objetivos alli planteados. Un elemento en el fracaso de la implementación de la estrategia fue la ausencia de la participación social cooptada por el pensamiento hegemónico. De acuerdo con la Atención Primaria de la Salud, ¿Cómo se define el problema de la falta de la participación social?",
+    "opciones": {
+      "a": "Como productos de las formas mercantilizadas de las prácticas de salud",
+      "b": "Como producto de la fragmentación del sistema.",
+      "c": "Como producto de la escasa motivación en temas de salud.",
+      "d": "Como producto del poder y de capacidad real para decidir."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Como producto del poder y de capacidad real para decidir**. [cite_start]La falta de participación social se entiende como una cuestión de poder; sin la capacidad real de las comunidades para influir en las decisiones, la participación queda reducida a una formalidad sin impacto[cite: 1125, 1138].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_076",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "En atención Primaria de la Salud ¿A qué se denomina eficiencia?",
+    "opciones": {
+      "a": "Es la medida para obtener un resultado esperado, a cualquier costo.",
+      "b": "Es la medida en que se cumplen las metas propuestas con resultados óptimos.",
+      "c": "El resultado de las acciones positivas de salud sobre la población.",
+      "d": "El aprovechamiento óptimo de los recursos, para obtener el mejor resultado al menor costo posible."
+    },
+    "correcta": "d",
+    [cite_start]"explicacion": "La respuesta correcta es **El aprovechamiento óptimo de los recursos, para obtener el mejor resultado al menor costo posible**. En salud pública, la eficiencia vincula los resultados obtenidos con los recursos empleados, buscando maximizar el beneficio sanitario minimizando el gasto[cite: 1162].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_077",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Cuidados Paliativos"],
+    "enunciado": "Un paciente de 80 años, con severo deterioro de su estado funcional, familia contenedora y competente para el cuidado, es asistido desde hace años por su médico de familia. Hace cuatro meses se le diagnosticó cáncer del páncreas, conociendo el diagnóstico y pronóstico de su enfermedad y deseando permanecer en la casa bajo el cuidado de su médico, quien estableció contacto con una enfermera y una psicóloga capacitadas en cuidados paliativos acordando disponibilidad para intervenir en función de las necesidades del paciente y su familia. De acuerdo con las normas de organización y funcionamiento elaboradas por el Ministerio de Salud de la Nación, ¿Cómo se denomina el equipo que conforman estos profesionales?",
+    "opciones": {
+      "a": "Funcional.",
+      "b": "Básico.",
+      "c": "Informal.",
+      "d": "Completo."
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Funcional**. [cite_start]Según las normativas de Cuidados Paliativos, cuando profesionales de distintas áreas se articulan específicamente para el seguimiento de un caso en domicilio basándose en las necesidades del paciente, constituyen un equipo funcional[cite: 1178].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_078",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿A qué se denomina la Atención Primaria de la Salud (según el contexto de la pregunta 3 del archivo 4)?",
+    "opciones": {
+      "a": "Es la asistencia médica, basada en la alta tecnología.",
+      "b": "Es la aplicación exclusiva de programas para atender a los grupos vulnerables.",
+      "c": "Es la asistencia médica, orientada a enfermedades específicas, utilizando tecnología adecuada.",
+      "d": "Es el primer contacto de los individuos, la familia y la comunidad con el sistema nacional de salud."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Es el primer contacto de los individuos, la familia y la comunidad con el sistema nacional de salud**. [cite_start]Esta definición técnica subraya la accesibilidad y la territorialidad de la APS como puerta de entrada al sistema sanitario[cite: 1193].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_079",
+    "materia": ["aps", "otras"],
+    "submateria": ["Atención Primaria de la Salud", "Otras"],
+    "enunciado": "Ante una persona que padece una enfermedad que pone en riesgo su vida, ¿Cuál es el criterio más significativo que tendría en cuenta en la planificación de los cuidados?",
+    "opciones": {
+      "a": "Lograr que el paciente reciba una atención integral.",
+      "b": "Responder a los temores de la familia y los cuidadores.",
+      "c": "Aplicar los tratamientos que puedan controlar la enfermedad.",
+      "d": "Ayudar al paciente a lograr todos sus objetivos."
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Lograr que el paciente reciba una atención integral**. [cite_start]La atención integral en enfermedades amenazantes para la vida implica abordar no solo lo biológico, sino también lo psicológico, social y espiritual[cite: 1208].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_080",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Qué características de la región constituyen una amenaza para los logros obtenidos y ponen en peligro el progreso hacia un mayor nivel de salud?",
+    "opciones": {
+      "a": "La sobrecarga de los sistemas de salud y las desigualdades en salud.",
+      "b": "La estructura deficiente de los sistemas de salud y la disminución de prestaciones.",
+      "c": "El aumento demográfico y la falta de cobertura en salud.",
+      "d": "La escasa multiplicación de efectores en salud y los contextos poco inclusivos."
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **La sobrecarga de los sistemas de salud y las desigualdades en salud**. [cite_start]Estos dos factores son identificados por organismos regionales como los principales obstáculos para la sostenibilidad de las reformas sanitarias[cite: 1226].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_081",
+    "materia": ["medicinafamiliar"],
+    "submateria": ["Otras preguntas de medicina familiar"],
+    "enunciado": "¿Cuál de los siguientes enunciados corresponde a los fundamentos de la práctica de la medicina general y familiar?",
+    "opciones": {
+      "a": "La práctica del médico general y familiar se especializa en el paciente, pero se encuentra limitada por el tipo de problema de salud",
+      "b": "No existe un médico de familia o general con características únicas, sino que ellas deben adaptarse en función de las necesidades existentes en cada comunidad",
+      "c": "La atención médica primaria debe ser brindada únicamente por los médicos generalistas",
+      "d": "El médico general y familiar es el responsable por los cuidados continuos del paciente inclusive en derivaciones a cuidados de alta complejidad"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **La práctica del médico general y familiar se especializa en el paciente, pero se encuentra limitada por el tipo de problema de salud**. [cite_start]El fundamento es la especialización en la persona de forma integral, independientemente del órgano afectado, aunque su resolución técnica tiene límites definidos por el nivel de complejidad[cite: 1240].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_082",
+    "materia": ["medicinafamiliar"],
+    "submateria": ["Adulto mayor"],
+    "enunciado": "¿A quién considera anciano de riesgo en Atención Primaria?",
+    "opciones": {
+      "a": "A un anciano autónomo e independiente",
+      "b": "A un anciano con deterioro cognitivo moderado",
+      "c": "A un anciano dependiente",
+      "d": "A un anciano independiente que falla en alguna AIVD"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **A un anciano independiente que falla en alguna AIVD**. [cite_start]La falla en Actividades Instrumentales de la Vida Diaria (AIVD) es un marcador precoz de fragilidad y riesgo de pérdida de autonomía en el adulto mayor[cite: 1256].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_083",
+    "materia": ["saludpublica"],
+    "submateria": ["Análisis de asociación"],
+    "enunciado": "¿Cómo se denomina a la estrategia de prevención de individuos susceptibles?",
+    "opciones": {
+      "a": "Estrategia individual",
+      "b": "Estrategia de alto riesgo",
+      "c": "Estrategia de las subpoblaciones",
+      "d": "Estrategia de los factores de riesgo"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Estrategia de alto riesgo**. [cite_start]Este enfoque se centra en identificar y proteger a aquellos individuos que tienen una probabilidad significativamente mayor de desarrollar una enfermedad en comparación con la población general[cite: 1272].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_084",
+    "materia": ["saludpublica"],
+    "submateria": ["Estadística descriptiva"],
+    "enunciado": "¿Cuál de las siguientes es la definición correcta para la tasa bruta de mortalidad de la Ciudad de Bs.As.?",
+    "opciones": {
+      "a": "El numerador tiene el número de muertes ocurridas en la Ciudad de Buenos Aires en un año determinado y el denominador tiene la población de la Ciudad de Buenos Aires en la mitad de ese periodo",
+      "b": "El numerador tiene el número de muertes ocurridas en la Ciudad de Buenos Aires y el denominador tiene el total de la población del país",
+      "c": "El numerador tiene el número de muertes ocurridas en varones en la Ciudad de Buenos Aires y el denominador tiene el total de varones que la habitan",
+      "d": "El numerador tiene el número de muertes ocurridas en la Ciudad de Buenos Aires en un año determinado y el denominador tiene el total de defunciones del país en ese período"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **El numerador tiene el número de muertes ocurridas en la Ciudad de Buenos Aires en un año determinado y el denominador tiene la población de la Ciudad de Buenos Aires en la mitad de ese periodo**. [cite_start]Por convención estadística, el denominador de las tasas anuales utiliza la población estimada a mitad de año (30 de junio)[cite: 1287].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_085",
+    "materia": ["saludpublica"],
+    "submateria": ["Estadística descriptiva"],
+    "enunciado": "El área de responsabilidad de un Centro de salud de la Ciudad de Bs.As. tiene 31555 habitantes de los cuales el 19% son menores de 15 años y 16% tienen 65 años o más; ¿Qué modelo de pirámide de población representan?",
+    "opciones": {
+      "a": "Modelo de población de transición",
+      "b": "Modelo de población joven",
+      "c": "Modelo de población envejecida",
+      "d": "Modelo de población intermedia"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Modelo de población envejecida**. [cite_start]Una estructura con un porcentaje de mayores de 65 años superior al 7-10% y una base de menores de 15 años reducida (inferior al 20-25%) caracteriza a las poblaciones en etapas avanzadas de transición demográfica[cite: 1302].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_086",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "La participación social es uno de los componentes estratégicos de la atención primaria, ¿Cómo propone promover dicha estrategia desde los servicios de salud?",
+    "opciones": {
+      "a": "Generando una capacidad de respuesta que considere los factores de riesgo de la población.",
+      "b": "Favoreciendo la universalización de las respuestas.",
+      "c": "Profundizando en la heterogeneidad de la necesidad de la población y aumentando la variabilidad de las respuestas de los servicios de salud.",
+      "d": "Construyendo acciones de salud centradas en la demanda efectuadas a los servicios de salud."
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Profundizando en la heterogeneidad de la necesidad de la población y aumentando la variabilidad de las respuestas de los servicios de salud**. [cite_start]La participación real requiere que el sistema sea flexible para responder a las particularidades de cada comunidad[cite: 1317].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_087",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "En Atencion Primaria de la Salud (APS) ¿Cuáles son los 'puestos periféricos'?",
+    "opciones": {
+      "a": "Los de tercer nivel de complejidad.",
+      "b": "Los de segundo nivel de complejidad.",
+      "c": "Los que realizan el tratamiento de enfermedades comunes",
+      "d": "Los que realizan el tratamiento de enfermedades raras."
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Los que realizan el tratamiento de enfermedades comunes**. [cite_start]Los puestos periféricos o centros de salud de primer nivel están diseñados para resolver patologías prevalentes y de baja complejidad técnica[cite: 1333].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_088",
+    "materia": ["pediatria"],
+    "submateria": ["Desarrollo y nutrición"],
+    "enunciado": "¿Cuáles son los dos aspectos que sustenta el Enfoque del Ciclo Vital?",
+    "opciones": {
+      "a": "Los roles y los diferentes estatus alcanzados a lo largo de la vida.",
+      "b": "Los roles y el estatus alcanzado al final de la vida",
+      "c": "Los roles y los eventos que suponen una transición para el individuo",
+      "d": "El estatus y los eventos memorables para el individuo"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Los roles y los eventos que suponen una transición para el individuo**. [cite_start]Este enfoque analiza cómo las experiencias y transiciones a lo largo de la vida impactan en la salud presente y futura[cite: 1347].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_089",
+    "materia": ["aps", "pediatria"],
+    "submateria": ["Atención Primaria de la Salud", "Otras preguntas de pediatría"],
+    "enunciado": "¿Cuál fue la especialidad médica de mayor utilización en los Centros de Salud y Acción Comunitaria durante en los últimos años?",
+    "opciones": {
+      "a": "Clínica Médica",
+      "b": "Pediatría",
+      "c": "Tocoginecología",
+      "d": "Medicina Familiar"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Pediatría**. [cite_start]Estadísticamente, la consulta pediátrica sigue siendo la prestación con mayor volumen de demanda en el primer nivel de atención de los CeSAC[cite: 1362].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_090",
+    "materia": ["saludpublica", "pediatria"],
+    "submateria": ["Análisis de situación de salud", "Neonatología"],
+    "enunciado": "¿Con cuál de las siguientes premisas se relacionan las tasas más bajas de mortalidad infantil?",
+    "opciones": {
+      "a": "El componente neonatal es más bajo que el postneonatal en los países con tasas muy bajas",
+      "b": "El componente postneonatal es casi excluyente en los paises con tasas más bajas",
+      "c": "El componente postneonatal aumenta más que el neonatal en los paises con tasas muy bajas",
+      "d": "El componente neonatal es el preponderante en los países con tasas más bajas"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **El componente neonatal es el preponderante en los países con tasas más bajas**. [cite_start]A medida que disminuye la mortalidad infantil, se reducen primero las causas evitables postneonatales (infecciones, nutrición), quedando el núcleo duro de causas neonatales (genéticas, perinatales) como el mayor componente[cite: 1380].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_091",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿De qué manera funcionan los niveles de complejidad en un programa de atención de la Salud?",
+    "opciones": {
+      "a": "Aislada",
+      "b": "Descendente",
+      "c": "Transversal",
+      "d": "Ascendente."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Ascendente**. [cite_start]El sistema de salud se organiza para que el paciente progrese hacia niveles de mayor complejidad técnica solo cuando el nivel previo no puede resolver el problema[cite: 1393].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_092",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Por qué estaría dada en primera instancia la contextualizad de la atención primaria de la salud?",
+    "opciones": {
+      "a": "Por la definición de sus metas.",
+      "b": "Por la política de salud en la que se implementa.",
+      "c": "Por el nivel de atención en el que se ubica.",
+      "d": "Por el sistema de salud en el que se inserta."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Por el sistema de salud en el que se inserta**. [cite_start]La APS no es una entidad aislada, su impacto y forma dependen directamente de la estructura sistémica sanitaria mayor que la contiene[cite: 1407].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_093",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuál es una acción prioritaria en la orientación familiar y comunitaria?",
+    "opciones": {
+      "a": "Identificar las organizaciones sociales y desarrollar planificación estratégica para el acceso a los recursos de salud",
+      "b": "Establecer el primer contacto y facilitar la consulta en los servicios del sistema de salud",
+      "c": "Promover la participación social en la evaluación, gestión y regulación de las acciones de salud",
+      "d": "Identificar situación de salud, determinantes y necesidades de salud de la comunidad, establecer prioridades de intervención y planificación estratégica con participación comunitaria"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Identificar las organizaciones sociales y desarrollar planificación estratégica para el acceso a los recursos de salud**. [cite_start]La vinculación con las fuerzas vivas del territorio es esencial para operativizar la APS en la comunidad[cite: 1421].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_094",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿A qué alude el concepto de atención integral, integrada y continua?",
+    "opciones": {
+      "a": "A la atención rápida y efectiva de situaciones de enfermedad a través de estrategias preventivas y curativas.",
+      "b": "A la provisión de atención segura y de calidad en todos los niveles de atención.",
+      "c": "A la reducción de los efectos de las desigualdades en salud.",
+      "d": "A la garantía de atención y satisfacción de necesidades de salud durante todo el ciclo vital y en los diferentes niveles de atención en forma coordinada."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **A la garantía de atención y satisfacción de necesidades de salud durante todo el ciclo vital y en los diferentes niveles de atención en forma coordinada**. [cite_start]Este concepto resume los atributos de longitudinalidad, coordinación e integralidad de la APS[cite: 1439].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_095",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Los países subdesarrollados han copiado soluciones organizativas, implementadas en otros países, relativas al sistema de salud. ¿Qué propuesta se ha copiado a nivel de la atención primaria de la salud?",
+    "opciones": {
+      "a": "La revalorización del personal idóneo",
+      "b": "La secundarización de las especialidades médicas",
+      "c": "La reactivación del médico de familia",
+      "d": "La jerarquización del médico clínico"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **La reactivación del médico de familia**. [cite_start]Es una tendencia global el retorno a la figura del médico de cabecera como ordenador del cuidado, a menudo importando modelos de países centrales[cite: 1454].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_096",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Cuál es un valor fundamental de un sistema de salud basado en la atención primaria de la salud?",
+    "opciones": {
+      "a": "Equidad en el acceso a la atención de salud.",
+      "b": "Normativas legales que orienten las acciones de los servicios hospitalarios hacia la comunidad.",
+      "c": "Diversidad de servicios orientados a la prevención de enfermedades.",
+      "d": "Atención focalizada en las familias."
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es **Equidad en el acceso a la atención de salud**. [cite_start]La equidad es el pilar ético que justifica la distribución de recursos según necesidad para garantizar el derecho a la salud[cite: 1467].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_097",
+    "materia": ["nutricion"],
+    "submateria": ["Nutrición y obesidad"],
+    "enunciado": "En el centro de salud X en la atención de personas adultas con sobrepeso y obesidad, luego de un exhaustivo examen clínico del paciente, los profesionales relevan el nivel de ejercicio físico, el tipo de comida y su frecuencia y el nivel de consumo de alcohol que ingiere. ¿Cuáles serían los factores causantes de la enfermedad para los profesionales que atienden esta problemática?",
+    "opciones": {
+      "a": "El entorno familiar",
+      "b": "La inserción grupal",
+      "c": "La carga genética",
+      "d": "El estilo de vida"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **El estilo de vida**. [cite_start]El enfoque centrado en hábitos individuales (dieta, ejercicio, consumo) prioriza el 'estilo de vida' como determinante principal de la enfermedad metabólica[cite: 1482].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_098",
+    "materia": ["medicinafamiliar"],
+    "submateria": ["Adulto mayor"],
+    "enunciado": "Hacia una atención primaria de la salud adaptada a las personas de edad. ¿Qué riesgo se incrementa con el envejecimiento?",
+    "opciones": {
+      "a": "El riesgo de incrementar enfermedades agudas",
+      "b": "El riesgo de caídas en la vía pública",
+      "c": "El riesgo de caídas en el hogar",
+      "d": "El riesgo de padecer enfermedades crónicas y discapacidades"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **El riesgo de padecer enfermedades crónicas y discapacidades**. [cite_start]La transición epidemiológica hacia el envejecimiento conlleva un aumento de la carga de enfermedades no transmisibles y limitaciones funcionales[cite: 1498].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_099",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Qué es necesario para operacionalizar la estrategia de Atención Primaria de la Salud en el nivel de redes comunitarias?",
+    "opciones": {
+      "a": "Generar espacios de resolución de la demanda espontánea y derivar lo complejo.",
+      "b": "Priorizar la actividad comunitaria y la visita domiciliaria.",
+      "c": "Incorporar más agentes sanitarios, médicos y enfermeras.",
+      "d": "Atender en los centros de salud e implementar campañas de prevención."
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es **Priorizar la actividad comunitaria y la visita domiciliaria**. [cite_start]La APS efectiva requiere salir del consultorio para entender y actuar sobre el contexto real de los pacientes[cite: 1515].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  {
+    "id": "aps_001_100",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "¿Cuál es un factor identificado como barrera en la implementación efectiva de la atención primaria de la salud?",
+    "opciones": {
+      "a": "El escaso compromiso de los profesionales.",
+      "b": "La ausencia de rendición de cuentas por parte del estado",
+      "c": "La escasa cooperación intersectorial.",
+      "d": "La escasa especialización de las prácticas comunitarias."
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **La escasa cooperación intersectorial**. [cite_start]Debido a que la salud depende de factores externos (vivienda, educación, trabajo), la falta de articulación con otros sectores limita el impacto de la APS[cite: 1530].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "Curso IAR"
+  }
 ]
