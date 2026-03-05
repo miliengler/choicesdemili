@@ -892,44 +892,44 @@
   "oficial": false,
   "fuente": "curso iar"
 },
-{
-  "id": "cardio_001_048",
-  "materia": ["cardiologia", "infectologia"],
-  "submateria": ["Pericardio", "Tracto digestivo"],
-  "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retro esternal irradiado a la escapula izquierda, que apareció 10 horas antes estando en reposo y que empeora con la inspiración? El dia anterior había presentado un episodio similar que cedió espontáneamente al reclinarse hacia adelante en la cama. No tiene factores de riesgo cardiovascular ni consume sustancias. Hace una semana refiere un cuadro de gastroenteritis aguda. En el examen físico se encuentra pálido y sudoroso, eupneico en reposo, con presión arterial 140/90 mmHg, frecuencia cardiaca 80 latidos por minuto. Auscultación cardiaca y pulmonar normal. En el electrocardiograma observar el siguiente registro (Ver Imagen)",
-  "opciones": {
-    "a": "Hiperpotasemia",
-    "b": "Isquemia miocárdica aguda",
-    "c": "Hipopotasemia",
-    "d": "Miopericarditis aguda"
+    {
+    "id": "cardio_001_048",
+    "materia": ["cardiologia"],
+    "submateria": ["Pericardio"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente varón de 35 años que consulta por dolor retro esternal irradiado a la escapula izquierda, que apareció 10 horas antes estando en reposo y que empeora con la inspiración? El día anterior había presentado un episodio similar que cedió espontáneamente al reclinarse hacia adelante en la cama. No tiene factores de riesgo cardiovascular ni consume sustancias. Hace una semana refiere un cuadro de gastroenteritis aguda. En el examen físico se encuentra pálido y sudoroso, eupneico en reposo, con presión arterial 140/90 mmHg, frecuencia cardíaca 80 latidos por minuto. Auscultación cardíaca y pulmonar normal. En el electrocardiograma observar el siguiente registro (Ver Imagen)",
+    "opciones": {
+      "a": "Hiperpotasemia",
+      "b": "Isquemia miocárdica aguda",
+      "c": "Hipopotasemia",
+      "d": "Miopericarditis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "El cuadro clínico es altamente sugerente de **Miopericarditis aguda**.\n\nLos puntos clave son:\n- Paciente joven sin factores de riesgo cardiovascular.\n- Antecedente de infección viral (gastroenteritis) hace una semana.\n- Dolor de características pleuríticas (empeora con la inspiración) y posicional (mejora al inclinarse hacia adelante).\n- El ECG muestra una elevación difusa del segmento ST de concavidad superior (en 'guirnalda'), típico de la afectación pericárdica.",
+    "imagenes": ["img/cardiologia/ecg_pericarditis_23.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
   },
-  "correcta": "d",
-  "explicacion": "La respuesta correcta es **Miopericarditis aguda**.",
-  "imagenes": [],
-  "examen": null,
-  "anio": null,
-  "oficial": false,
-  "fuente": "curso iar"
-},
-{
-  "id": "cardio_001_049",
-  "materia": ["cardiologia"],
-  "submateria": ["Insuficiencia cardíaca"],
-  "enunciado": "Un varón de 68 años con antecedentes de hipertensión, diabetes y retención urinaria se despertó por la noche con náuseas y aturdimiento. No respondió a las preguntas de su esposa. Cuando llegó el personal médico de urgencias, la TAS era de 60 mm Hg por palpación. Se administraron líquidos E.V. y oxígeno. En el departamento de urgencias se registraron estas constantes vitales: tas de 60 mm Hg, frecuencia cardiaca de 120 lpm y regular, temp de 36.9 °c y frecuencia respiratoria de 30 rpm. En la exploración física abreviada se apreciaron estertores de burbuja gruesa. Se colocó una sonda vesical permanente, por la que drenaron 10 a 20 ml de orina oscura. La radiografía de tórax mostró infiltrados intersticiales bilaterales y el ECG no presentó ninguna anomalía aguda, excepto taquicardia sinusal. Se trasladó al enfermo a la UTI, donde se procedió a un cateterismo de las cavidades derechas. La presión de enclavamiento pulmonar alcanzaba 28 mm Hg; el gasto cardíaco, 1.9 l/minuto, y la presión media en la aurícula derecha, 10 mm Hg. En este caso, la causa más probable de la hipotensión es:",
-  "opciones": {
-    "a": "Infarto del ventrículo derecho",
-    "b": "Insuficiencia ventricular izquierda",
-    "c": "Hemorragia digestiva",
-    "d": "Embolia pulmonar"
+  {
+    "id": "cardio_001_049",
+    "materia": ["cardiologia", "urgencias"],
+    "submateria": ["Insuficiencia cardíaca", "Otras preguntas de urgencias"],
+    "enunciado": "Un varón de 68 años con antecedentes de hipertensión, diabetes y retención urinaria se despertó por la noche con náuseas y aturdimiento. No respondió a las preguntas de su esposa. Cuando llegó el personal médico de urgencias, la TAS era de 60 mm Hg por palpación. Se administraron líquidos E.V. y oxígeno. En el departamento de urgencias se registraron estas constantes vitales: tas de 60 mm Hg, frecuencia cardíaca de 120 lpm y regular, temp de 36.9º C y frecuencia respiratoria de 30 rpm. En la exploración física abreviada se apreciaron estertores de burbuja gruesa. Se colocó una sonda vesical permanente, por la que drenaron 10 a 20 ml de orina oscura. La radiografía de tórax mostró infiltrados intersticiales bilaterales y el ECG no presentó ninguna anomalía aguda, excepto taquicardia sinusal. Se trasladó al enfermo a la UTI, donde se procedió a un cateterismo de las cavidades derechas. La presión de enclavamiento pulmonar alcanzaba 28 mm Hg; el gasto cardíaco, 1.9 l/minuto, y la presión media en la aurícula derecha, 10 mm Hg. En este caso, la causa más probable de la hipotensión es:",
+    "opciones": {
+      "a": "Infarto del ventrículo derecho",
+      "b": "Insuficiencia ventricular izquierda",
+      "c": "Hemorragia digestiva",
+      "d": "Embolia pulmonar"
+    },
+    "correcta": "b",
+    "explicacion": "El paciente presenta un cuadro de **Shock Cardiogénico** secundario a **Insuficiencia ventricular izquierda**.\n\nLos datos hemodinámicos del cateterismo de Swan-Ganz son confirmatorios:\n- Presión de enclavamiento pulmonar (PCP) elevada (28 mm Hg, valor normal < 15), lo que indica congestión retrógrada por falla izquierda.\n- Gasto cardíaco marcadamente disminuido (1.9 l/min).\n- La presencia de estertores de burbuja gruesa e infiltrados bilaterales en la radiografía refuerzan el diagnóstico de edema agudo de pulmón de origen cardiogénico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
   },
-  "correcta": "b",
-  "explicacion": "La respuesta correcta es **Insuficiencia ventricular izquierda**.",
-  "imagenes": [],
-  "examen": null,
-  "anio": null,
-  "oficial": false,
-  "fuente": "curso iar"
-},
 {
   "id": "cardio_001_050",
   "materia": ["cardiologia", "pediatria"],
