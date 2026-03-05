@@ -2679,4 +2679,544 @@
   "oficial": false,
   "Fuente": "prorem"
 },
+  {
+    "id": "cardio_002_135",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "Un paciente de 72 años consulta a la guardia por dolor torácico que comenzó hace 30 minutos mientras realizaba ejercicio en su domicilio, irradia hacia la espalda a nivel interescapular y se acompaña de sudoración profusa y mareos. Tiene antecedentes de HTA en tratamiento con enalapril y amlodipina. Al examen físico se presenta lúcido, TA 130-80 mm Hg, FC 40 l/min, FR 16/min y afebril, bien perfundido, sin soplos, con murmullo vesicular conservado sin ruidos agregados. ECG: FC 37 l/min, ondas p que no conducen, elevación del ST 8 mv de DII, DIII y AVF, infradesnivel del ST en V1, V2 y AVL, QRS 0,07 seg. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome Coronario Agudo Killip 4, de cara anterior y Bloqueo AV de 3 er grado",
+      "b": "Sindrome Coronario Agudo Killip 1, de cara inferior y Bloqueo AV de 3 er grado",
+      "c": "Síndrome Coronario Agudo Killip 3, de cara inferior y Bloqueo AV de 2 do grado",
+      "d": "Síndrome Coronario Agudo Killip 1, de cara anterior y Bloqueo AV de 3 er grado"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl paciente presenta dolor torácico típico con irradiación a la espalda, sudoración profusa y mareos, compatible con un **sindrome coronario agudo (SCA)**.\nEl ECG muestra elevación del ST en las derivaciones DII, DIII y aVF, que corresponde a un **infarto agudo de miocardio (IAM) de la pared inferior**.\nEl infradesnivel del ST en V1, V2 y aVL es un hallazgo recíproco típico del IAM inferior.\nLa frecuencia cardíaca muy baja (37-40 l/min) y la presencia de ondas P que no conducen indican un **bloqueo auriculoventricular (BAV) de tercer grado**, que es frecuente en IAM inferior debido a la afectación del nodo AV irrigado por la arteria coronaria derecha.\nLa clasificación Killip 1 indica que el paciente está hemodinámicamente estable, sin signos de insuficiencia cardiaca (el examen físico muestra buena perfusión, sin soplos ni ruidos agregados pulmonares).\nNo hay signos clínicos de insuficiencia cardiaca o shock (Killip 3 o 4), por lo que se descartan esas opciones.\nEl IAM inferior con bloqueo AV de alto grado es una complicación reconocida y se asocia con elevación del ST en derivaciones inferiores y bradicardia marcada.\nLa clasificación Killip evalúa la gravedad clínica del SCA, y Killip 1 corresponde a ausencia de insuficiencia cardíaca.\nEn resumen, el cuadro clínico y el ECG son compatibles con un **Sindrome Coronario Agudo Killip 1**, de cara inferior, con **bloqueo auriculoventricular de tercer grado**.\nSe requiere manejo urgente en unidad coronaria con monitorización y posible intervención coronaria percutánea.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_136",
+    "materia": [
+      "cardiologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Trastornos del ritmo",
+      "Metabolismo calcio – PTH"
+    ],
+    "enunciado": "¿Cuál de las siguientes opciones es causa de acortamiento del intervalo QT en el electrocardiograma?",
+    "opciones": {
+      "a": "Hipocalcemia",
+      "b": "Hiponatremia",
+      "c": "Hipopotasemia",
+      "d": "Hipercalcemia"
+    },
+    "correcta": "d",
+    "explicacion": "El intervalo QT se extiende desde el inicio del complejo QRS hasta el final de la onda T. Así pues, suma la duración total de la activación y la recuperación ventriculares y, en un sentido general, se corresponde con la duración del potencial de acción ventricular.\nLos trastornos metabólicos pueden modificar la repolarización cardíaca. La **hipocalcemia** prolonga el intervalo QT y la **hipercalcemia** lo acorta. La **hiperpotasemia** genera estrechamiento de la onda T, disminución en la amplitud de la onda P y aumento del intervalo QRS.\nLa **hipopotasemia** prolonga la repolarización ventricular y se acompaña de ondas U prominentes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_137",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 68 años consulta a la guardia por presentar mareos repentinos y frecuentes, sin pródromos, de corta duración, que ceden espontáneamente. Niega haber presentado síncope. El ECG muestra un bloqueo AV de 2do grado con frecuencia de escape de 40/min. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Tratar con isoproterenol IV hasta reversión a ritmo sinusal y amiodarona VO al alta",
+      "b": "Colocar cardiodesfibrilador implantable (CDI)",
+      "c": "Indicar ablación de haz aberrante con catéter de radiofrecuencia",
+      "d": "Implantar marcapasos"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nDatos positivos del caso: Varón de 68 años + Mareos repentinos, breves, frecuentes, sin pródromos, síntomas de hipoperfusión cerebral + ECG: **bloqueo AV de 2º grado** con ritmo de escape a 40 lpm.\nEn un paciente sintomático con bloqueo AV de segundo grado (especialmente Mobitz II o con frecuencia de escape baja), la indicación es **implante de marcapasos definitivo**.\nAnálisis de opciones:\n- Implantar marcapasos. Paciente con bloqueo AV de 2º grado, frecuencia ventricular baja y síntomas (mareos). Las guías recomiendan marcapasos definitivo en todo bloqueo AV sintomático de segundo grado tipo II o con riesgo de progresión. Con 40 lpm ya hay compromiso clínico. (opción correcta).\n- Tratar con isoproterenol IV hasta reversión a ritmo sinusal y amiodarona VO al alta = INCORRECTA. El **isoproterenol** puede usarse como medida transitoria en bradicardias, pero nunca es solución definitiva en un bloqueo AV crónico. La **amiodarona** está contraindicada en bradicardias y bloqueos AV, pues puede empeorar la conducción.\n- Colocar cardiodesfibrilador implantable (CDI) = INCORRECTA. El CDI está indicado en riesgo de arritmias ventriculares malignas o muerte súbita (p. ej. miocardiopatía dilatada, TV sostenida, fibrilación ventricular). No es la indicación en un bloqueo AV.\n- Indicar ablación de haz aberrante con catéter de radiofrecuencia = INCORRECTA. La ablación está indicada en taquiarritmias por vías accesorias (síndrome de Wolff-Parkinson-White, etc.). Aquí no hay vía accesoria, sino un bloqueo en la conducción AV.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_138",
+    "materia": [
+      "cardiologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo",
+      "Enfermedades intersticiales"
+    ],
+    "enunciado": "Un hombre de 57 años consultó por disnea progresiva de 1 año de evolución asociada a tos no productiva. En el interrogatorio dirigido, negó fiebre, equivalentes febriles o pérdida de peso. No había realizado viajes y no convive con mascotas ni otras personas con síntomas similares. Como antecedentes de relevancia el paciente tenía hipertensión arterial, fibrilación auricular y artrosis por lo que recibía tratamiento con rivaroxabán, amiodarona, bisoprolol, enalapril y meloxicam. El único hallazgo positivo en el examen físico fue crepitantes finos bibasales a la auscultación pulmonar. ¿Qué medicamento es la causa más probable de lo que le sucede al paciente?",
+    "opciones": {
+      "a": "Enalapril",
+      "b": "Meloxicam",
+      "c": "Bisoprolol",
+      "d": "Amiodarona"
+    },
+    "correcta": "d",
+    "explicacion": "La causa más probable de los síntomas pulmonares del paciente es la toxicidad pulmonar inducida por **amiodarona**.\nEl cuadro clínico es típico de una **neumonitis intersticial** inducida por amiodarona:\n- Disnea progresiva y tos seca, sin fiebre ni síntomas constitucionales.\n- Crepitantes bibasales: sugestivos de compromiso intersticial pulmonar.\nLa amiodarona es bien conocida por producir toxicidad pulmonar, especialmente en personas mayores y tras uso prolongado (incluso a dosis bajas).\nPuede causar neumonitis intersticial, fibrosis pulmonar, e incluso formas agudas de neumonía organizada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_139",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Qué observa en el siguiente ECG?",
+    "opciones": {
+      "a": "Un trigeminismo",
+      "b": "Una extrasístole supraventricular aislada",
+      "c": "Una extrasístole ventricular aislada",
+      "d": "Un ritmo ventricular bigeminado"
+    },
+    "correcta": "d",
+    "explicacion": "Las **extrasístoles ventriculares** son latidos prematuros originados en el miocardio ventricular.\nSe expresan en el ECG como un latido anticipado con un QRS ancho y morfología de bloqueo de rama y con una pausa compensatoria completa.\nLa sucesión de dos extrasístoles ventriculares se denomina **dupla**. La alternancia entre un latido sinusal y una extrasístole ventricular en relación 1:1 se denomina **bigeminia**.",
+    "imagenes": [
+      "img/cardiologia/cardio_002_139.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_140",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "Un varón de 72 años ingresa a la guardia de un Instituto Cardiovascular por presentar dolor precordial opresivo intenso irradiado a la mandíbula que comenzó a la madrugada mientras dormía de aproximadamente 4 horas de evolución. Refiere como antecedentes tabaquismo de larga data y sedentarismo. No realiza controles de salud desde hace varios años. Presenta al examen físico FC: 85 lxm, TA: 150-100 mm Hg, FR: 18 rpm y Sat 02: 95%. La auscultación de los campos pulmonares revela murmullo vesicular conservado, sin ruidos asociados y no se observa presencia de ingurgitación yugular. El ECG muestra supradesnivel de ST de 2 mm de V1 a V4. Se toma muestra de sangre para dosaje de CPK MB y Troponina T y se indica oxígeno suplementario, acceso intravenoso, sulfato de morfina, AAS oral, y goteo de nitroglicerina. A continuación de estas medidas, ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar angioplastia transluminal percutánea (PTCA) con colocación de stent",
+      "b": "Esperar resultados de laboratorio (niveles de CPK-MB y Troponina T) para confirmar diagnóstico de IAM. Con niveles elevados indicar angioplastia transluminal percutánea (PTCA) con colocación de stent con drogas",
+      "c": "Indicar angioplastia transluminal percutánea (PTCA) con balón",
+      "d": "Indicar trombolisis con Activador Tisular del Plasminógeno (t-PA)"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nDatos positivos del caso clínico: Varón 72 años, factores de riesgo: tabaquismo, sedentarismo, sin controles.\nDolor típico, opresivo, irradiado a mandíbula, >4 horas de evolución. ECG: supradesnivel de ST en V1-V4: **SCACEST anterior** (descendente anterior).\nEstable hemodinámicamente, sin signos de insuficiencia cardíaca.\nPuntos clave para la conducta: En SCACEST, el diagnóstico es clínico + ECG.\nNO es necesario esperar biomarcadores (troponinas, CPK-MB) para decidir reperfusión.\nLa estrategia de elección es **angioplastia primaria con colocación de stent** (idealmente con stent farmacológico si está disponible).\nLa trombólisis se indica solo si no hay acceso a hemodinamia en tiempo útil (<120 min desde primer contacto médico).\nSolo balón (sin stent) quedó obsoleto por alta tasa de reestenosis de manera que hoy siempre stent si es posible.\nAnálisis de opciones:\n- Trombólisis con t-PA: no es la primera opción en un centro cardiovascular con disponibilidad de angioplastia.\n- Esperar resultados de laboratorio: incorrecto, en SCACEST no se espera troponina para definir reperfusión.\n- Angioplastia con stent: es la opción correcta, es el tratamiento de elección en SCACEST.\n- Angioplastia solo con balón: no se usa de rutina, quedó en desuso por el advenimiento del stent.\nRespuesta correcta: Indicar **angioplastia transluminal percutánea (PTCA) con colocación de stent**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_141",
+    "materia": [
+      "cardiologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo",
+      "ECV"
+    ],
+    "enunciado": "Paciente de 75 años, con antecedentes de HTA en tratamiento con IECA, presenta Accidente Isquémico Transitorio (AIT). Ecografía doppler de vasos de cuello: ateromatosis carotídea con estenosis menor al 70%. ECG: fibrilación auricular con moderada respuesta ventricular. TAC de cerebro es normal. ¿Cuál es el tratamiento de prevención para reducir el riesgo de nuevos episodios tromboembólicos cerebrales?",
+    "opciones": {
+      "a": "Acenocumarol con RIN 2-3.",
+      "b": "Endarterectomía carotidea.",
+      "c": "Ácido acetilsalicílico (aspirina) 300 mg/d.",
+      "d": "Aspirina y clopidogrel."
+    },
+    "correcta": "a",
+    "explicacion": "La mayoría de pacientes en fibrilación auricular tienen indicación de anticoagulación.\nEl tratamiento anticoagulante ha demostrado de forma consistente una reducción significativa de los eventos embólicos, así como una reducción de la mortalidad.\nEl riesgo trombótico no depende del tipo de fibrilación auricular, sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación **CHA2DS2VASC**.\nNuestro paciente tiene:\n- H: Hipertensión arterial 1 punto\n- Age entre 65-75 años 2 punto\n- S2: Stroke. El antecedente previo de un ictus isquémico o AIT o embolia sistémica 2 puntos\n- Enfermedad vascular (ateromatosis carotidea): 1 punto.\nTotal = 6 puntos (si el paciente es hombre) o 7 puntos (si es mujer).\nUna puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones.\nLa dosis individual de **acenocumarol** es muy variable y su actividad debe monitorizarse periódicamente mediante la determinación del cociente internacional normalizado (RIN), que debe estar entre 2 y 3.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_142",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Consulta un varón de 74 años con antecedentes de insuficiencia cardíaca, tabaquismo e hipertensión arterial. Constata pulso irregular y desigual. Se le realiza un electrocardiograma que presenta ritmo de fibrilación auricular de 84 latidos por minuto sin otra particularidad. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Amiodarona 200 mg/día para cardioversión farmacológica.",
+      "b": "Anticoagulación por moderado-alto riesgo de embolia.",
+      "c": "Digoxina y antiagregación con ácido acetil salicílico 325 mg/día",
+      "d": "Atenolol para control de frecuencia debido al bajo riesgo de embolia."
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl tratamiento antitrombótico es la piedra angular del tratamiento. La **fibrilación auricular**, al impedir una contracción auricular efectiva, provoca estasis venosa en la aurícula izquierda, especialmente en la orejuela auricular izquierda.\nEsto puede provocar la formación de trombos con embolización sistémica, normalmente hacia la vasculatura cerebral, dando lugar a ictus isquémicos.\nPor eso, la mayoría de pacientes en fibrilación auricular tienen indicación de anticoagulación.\nEl riesgo trombótico no depende del tipo de fibrilación auricular (paroxística, persistente o permanente), sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación **CHA2DS2VASC**.\n- C: Cardiac Failure. Se refiere a la presencia de insuficiencia cardíaca y/o disfunción sistólica (FEVI<40%).\n- H: Hypertension\n- A2: Age > 75 años puntúa doble (2 puntos)\n- D: Diabetes mellitus\n- S2: Stroke. El antecedente previo de un ictus isquémico o embolia sistémica puntúa doble (2 puntos)\n- V: enfermedad Vascular de origen aterosclerótico (enfermedad coronaria, enfermedad carotidea, enfermedad aórtica)\n- A: Age entre 65-75 años (1 punto)\n- S: Sexo femenino.\nLas letras que no tienen subíndice numérico puntúan como 1. Las letras con subíndice 2 puntúan doble.\nEn todo paciente con fibrilación auricular (FA), independientemente del tipo de FA que tenga, hay que aplicarle esta escala para conocer el riesgo embólico anual.\nSe hace un sumatorio de todos los factores que tiene.\nA mayor puntuación mayor riesgo anual de tener una embolia sistémica y/o ictus.\nUna puntuación de cero se considera bajo riesgo y no estaría indicado pautar tratamiento antitrombótico a largo plazo.\nUna puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones.\nCon una puntuación de 1, aunque el riesgo tromboembólico no es muy alto, lo que se recomienda es anticoagular frente a no hacer nada.\nNuestro paciente tiene un CHA2DS2VASC >= 2 lo que indica un riesgo considerable y habría que **anticoagular de forma crónica**, si no hay contraindicaciones.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_143",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "¿Cuál es la frecuencia cardíaca registrada en el siguiente trazado ECG?",
+    "opciones": {
+      "a": "85 latidos por minuto",
+      "b": "100 latidos por minuto",
+      "c": "32 latidos por minuto",
+      "d": "50 latidos por minuto"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nEl intervalo RR en el electrocardiograma es la distancia entre el nadir de una onda R y la siguiente.\nComo en un minuto hay 60000 milisegundos se puede obtener la frecuencia cardíaca en latidos por minuto dividiendo 60000 por el intervalo RR en milisegundos.\nEn el ejemplo el intervalo RR es de 30 x 0,04 seg = (30 cuadraditos chicos multiplicado por 0,04 seg que es el tiempo que representa cada uno) = 1,2 seg = 1200 mseg.\nEntonces 60000 mseg / 1200 mseg = **50 latidos por minuto**.",
+    "imagenes": [
+      "img/cardiologia/cardio_002_143.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_144",
+    "materia": [
+      "cardiologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo",
+      "ECV"
+    ],
+    "enunciado": "Un paciente de 76 años, con antecedentes de HTA en tratamiento con IECA, presenta un Accidente Isquémico Transitorio (AIT). El Doppler de vasos de cuello muestra ateromatosis carotídea con estenosis menor a 70%, el ECG revela Fibrilación Auricular con moderada respuesta ventricular y la TAC de cerebro es normal. ¿Cuál es el tratamiento de prevención adecuado para reducir el riesgo de nuevos episodios tromboembólicos cerebrales en este paciente?",
+    "opciones": {
+      "a": "Endarterectomía carotidea",
+      "b": "Aspirina y clopidogrel",
+      "c": "Aspirina 300 mg/d",
+      "d": "Acenocumarol con RIN 2-3"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nUn objetivo fundamental del tratamiento en los pacientes con FA es prevenir complicaciones tromboembólicas como el accidente cerebrovascular.\nLa **warfarina** y otros anticoagulantes orales son más eficaces que el ácido acetilsalicílico para la prevención de complicaciones tromboembólicas.\nLa fibrilación auricular, al impedir una contracción auricular efectiva, provoca estasis venosa en la aurícula izquierda, especialmente en la orejuela auricular izquierda.\nEsto puede provocar la formación de trombos con embolización sistémica, normalmente hacia la vasculatura cerebral, dando lugar a ictus isquémicos.\nPor eso, la mayoría de pacientes en fibrilación auricular tienen indicación de anticoagulación.\nEl tratamiento anticoagulante ha demostrado de forma consistente una reducción significativa de los eventos embólicos, así como una reducción de la mortalidad.\nEl riesgo trombótico no depende del tipo de fibrilación auricular, sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación **CHA2DS2VASc**.\nUna puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones (el paciente del caso clínico).\nLos anticoagulantes de elección son los dicumarínicos como la warfarina y el **acenocumarol** con el objetivo de conseguir un RIN de 2-3 y los inhibidores directos de la trombina y el factor X como el dabigatran, edoxaban, apixaban y rivaroxaban.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_145",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "Ingresa a la guardia de emergencias de una pequeña ciudad un paciente de 57 años con dolor precordial de dos horas de evolución. Se encuentra lúcido, sudoroso, con TA: 150-110 mmHg. Se realiza electrocardiograma de 12 derivaciones. El servicio de hemodinamia más cercano se encuentra a 200 kilómetros. Ante estos hallazgos, ¿cuál considera que es el tratamiento inicial indicado?",
+    "opciones": {
+      "a": "Colocación de vía intravenosa, nitratos sublinguales, aspirina más clopidogrel, derivación inmediata a centro de mayor complejidad para realizar angioplastia.",
+      "b": "Colocación de vía intravenosa, nitratos sublinguales, aspirina más clopidogrel, internación en Unidad de Terapia Intensiva, derivación a centro de mayor complejidad cuando se estabilice el cuadro.",
+      "c": "Colocación de vía intravenosa, nitratos sublinguales, aspirina más clopidogrel, permanencia en guardia hasta normalizar el cuadro clínico.",
+      "d": "Colocación de vía intravenosa, nitratos sublinguales, aspirina más clopidogrel, internación en Unidad de Terapia Intensiva, y trombólisis farmacológica."
+    },
+    "correcta": "d",
+    "explicacion": "RECORDAR: Dolor torácico + elevación del segmento ST = **SCACEST** = tratamiento de reperfusión urgente.\nTratamiento médico inicial: Debe administrarse **ácido acetilsalicílico** (de 162 a 325 mg) a todos los pacientes en el momento de su presentación, salvo que esté contraindicado.\nA los pacientes con dolor torácico debe administrárseles **nitroglicerina** sublingual (0,4 mg cada 5 min hasta 3 dosis), tras lo cual deberá valorarse la necesidad de nitroglicerina intravenosa.\nEl dolor isquémico persistente debe tratarse con dosis intravenosas ajustadas de **morfina** (es decir, 2-4 mg i.v., repetida cada 5-15 min hasta aliviar el dolor).\nAdministrar una dosis de carga de un inhibidor del receptor de difosfato de adenosina (P2Y12) (**clopidogrel**, 600 mg; prasugrel, 60 mg, o ticagrelor, 180 mg) tan pronto como sea posible.\nExisten dos formas de conseguir la reperfusión en el SCACEST: la fibrinolisis y la angioplastia coronaria percutánea primaria.\nRegla de las dos horas desde el momento del diagnóstico:\n- Si el tiempo de traslado hasta el centro para realizar el cateterismo se estima inferior a dos horas, traslado y cateterismo (angioplastía primaria).\n- Si el tiempo de traslado desde el sitio donde se diagnostica el infarto hasta el centro más cercano con capacidad de angioplastia se estima que es mayor de dos horas: **fibrinolisis**. (respuesta correcta)",
+    "imagenes": [
+      "img/cardiologia/cardio_002_145.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_146",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Andrés de 77 años hipertenso y diabético, es derivado a la consulta por pulso irregular. [cite: 263] Presenta electrocardiograma con fibrilación auricular con frecuencia cardíaca promedio de 88 latidos/minuto. [cite: 264] El ecocardiograma muestra fracción de eyección de 42% y volumen auricular de 74 m/m2. ¿Cuál es la intervención terapéutica correcta? [cite: 265]",
+    "opciones": {
+      "a": "Indicar ácido acetil salicílico 325 mg/dia. [cite: 266]",
+      "b": "Indicar warfarina. [cite: 267]",
+      "c": "Indicar clopidogrel. [cite: 268]",
+      "d": "Indicar ácido acetil salicilico 100 mg/dia. [cite: 269]"
+    },
+    "correcta": "b",
+    "explicacion": "Los dos aspectos fundamentales del tratamiento de la fibrilación auricular son la anticoagulación (necesaria en la gran mayoría de los pacientes, se indica en función del riesgo tromboembólico individual) y el control de la frecuencia ventricular. [cite: 274]\nTratamiento antitrombótico: es la piedra angular del tratamiento. [cite: 275] La **fibrilación auricular**, al impedir una contracción auricular efectiva, provoca estasis venosa en la aurícula izquierda, especialmente en la orejuela auricular izquierda. [cite: 275]\nEsto puede provocar la formación de trombos con embolización sistémica, normalmente hacia la vasculatura cerebral, dando lugar a ictus isquémicos. [cite: 276]\nPor eso, la mayoría de pacientes en fibrilación auricular tienen indicación de anticoagulación. [cite: 277]\nEl tratamiento anticoagulante ha demostrado de forma consistente una reducción significativa de los eventos embólicos, así como una reducción de la mortalidad. [cite: 278]\nLa anticoagulación además ha demostrado ser superior al ácido acetilsalicílico, así como al placebo. [cite: 279]\nEl riesgo trombótico no depende del tipo de fibrilación auricular (paroxística, persistente o permanente), sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación **CHA2DS2VASC**. [cite: 280] \nLas letras que no tienen subíndice numérico puntúan como 1. [cite: 281] Las letras con subíndice 2 puntúan doble. [cite: 281]\nEn todo paciente con fibrilación auricular (FA), independientemente del tipo de FA que tenga, hay que aplicarle esta escala para conocer el riesgo embólico anual. [cite: 282]\nSe hace un sumatorio de todos los factores que tiene. [cite: 283]\nA mayor puntuación mayor riesgo anual de tener una embolia sistémica y/o ictus. [cite: 284]\nUna puntuación de cero se considera bajo riesgo y no estaría indicado pautar tratamiento antitrombótico a largo plazo. [cite: 285]\nUna puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones. [cite: 286]\nSi bien se recomienda tratamiento anticoagulante o antiagregante en pacientes con puntuación CHA2DS2-VASc = 1, debe excluirse de esta recomendación a las mujeres < 65 años que no presentan otro factor de riesgo embólico (es decir, que alcanzan la puntuación = 1 por el género femenino). [cite: 287]\nEl riesgo embólico de estas pacientes es similar al de pacientes con CHA2DS2-VASc = 0, por lo que no requieren tratamiento antitrombótico. [cite: 288]\nA efectos prácticos, más que aprenderse a quién hay que anticoagular, es más práctico conocer a quién no haría falta anticoagular: pacientes menores de 65 años sin ningún factor de riesgo, sin cardiopatía y sin antecedentes de ictus previo. [cite: 289]\nEl riesgo trombótico no depende del tipo de fibrilación auricular (paroxística, persistente o permanente), sino de los factores de riesgo trombótico del paciente, que se estima mediante la clasificación CHA2DS2VASC.Una puntuación >= 2 indica un riesgo considerable y habría que anticoagular de forma crónica, si no hay contraindicaciones. [cite: 290]\nEs decir, el único caso para no anticoagular sería un paciente \"en edad laboral\", sin cardiopatía estructural ni comorbilidades -diabetes, hipertensión arterial, enfermedad arterial, ictus previo-. [cite: 291]\nTipos de anticoagulantes: Antivitamina K: son los clásicos **acenocumarol** y **warfarina**. [cite: 292, 293]\nInhiben la síntesis hepática de vitamina K, fundamental para la síntesis de los factores II, VII, IX y X, que participan en la cascada de la coagulación, tanto en la vía intrínseca como extrínseca. [cite: 294]\nTardan 2-3 días en hacer efecto y su vida media es de 24 horas (acenocumarol) y 36 horas (warfarina). [cite: 295]\nVentajas: pueden administrarse a pacientes con prótesis mecánicas, valvulopatía mitral reumática y enfermedad renal avanzada; [cite: 296] además, su efecto puede ser revertido en pocas horas mediante vitamina K intravenosa. [cite: 297]\nDesventajas: múltiples interacciones con alimentos y otros fármacos. [cite: 298] La dosis individual es muy variable y su actividad debe monitorizarse periódicamente mediante la determinación del cociente internacional normalizado (RIN), que debe estar entre 2 y 3. [cite: 298]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_147",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Un varón de 67 años consulta en forma ambulatoria, refiriendo que la semana pasada fue atendido en una guardia hospitalaria por un episodio de fibrilación auricular de 2 horas de evolución con buena tolerancia hemodinámica. [cite: 300] Refiere tener antecedentes de HTA y Cardiopatía Isquémica con FEY: 35%. Se encuentra en tratamiento con enalapril. [cite: 301] ¿Qué medicación agregaría a su tratamiento? [cite: 302]",
+    "opciones": {
+      "a": "Anticoagulación [cite: 303]",
+      "b": "Beta bloqueantes y antiagregación [cite: 304]",
+      "c": "Beta bloqueantes y anticoagulación [cite: 305]",
+      "d": "Digoxina y aspirineta [cite: 306]"
+    },
+    "correcta": "c",
+    "explicacion": "En este paciente tenemos una FA registrada hace 7 días, que fue atendida en una guardia hospitalaria. [cite: 312]\nTiene un **CHA2DS2VASC >= 2**, que indica un riesgo considerable y habría que anticoagular de forma crónica. [cite: 313]\nRespecto a control del ritmo: en determinadas situaciones (pacientes jóvenes con fibrilación auricular sintomática y corazón estructuralmente normal) se intenta recuperar y mantener el ritmo sinusal, con el objetivo de reducir los síntomas que genera la fibrilación auricular. [cite: 314]\nNo es nuestro paciente. [cite: 315]\nLa estrategia de control de la frecuencia es preferible a la de control del ritmo en pacientes asintomáticos o mínimamente sintomáticos de 65 años o más. [cite: 316]\nEn el paciente que tiene antec de HTA y cardiopatía isquémica con FA se beneficiaría con la indicación para control de la frecuencia ventricular. [cite: 317]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_148",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Cardiopatía isquémica",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "José de 58 años, hipertenso y fumador, es atendido en un servicio de emergencia de un hospital de alta complejidad por dolor precordial opresivo de más de 30 minutos, acompañado de sudoración. [cite: 319, 320] Su tensión arterial es 130-80 mm Hg y su frecuencia cardíaca es de 60 por minuto. [cite: 321] El ECG muestra sobrelevación del ST en la cara inferior. ¿Cuál es la conducta más adecuada? [cite: 322]",
+    "opciones": {
+      "a": "Indicar tratamiento médico y realizar CCG diagnóstica dentro de las primeras 24 hs. [cite: 324]",
+      "b": "Internación en UCO y solicita troponinas para definir la conducta. [cite: 325]",
+      "c": "Realizar trombolisis urgente dentro de los 120 minutos. [cite: 326]",
+      "d": "Realizar angioplastia primaria dentro de los 120 minutos. [cite: 327]"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. [cite: 333]\nDatos positivos del caso clínico: Varón 58 años, HTA y fumador. [cite: 334]\nDolor precordial típico, opresivo, prolongado (>30 min), con síntomas vegetativos. [cite: 335]\nECG: supradesnivel del ST en cara inferior (DII, DIII, aVF) = **SCACEST inferior**. Hemodinámicamente estable (TA 130/80, FC 60). [cite: 336]\nConducta en **SCACEST**: [cite: 337]\nEs un síndrome coronario agudo con elevación del ST: diagnóstico clínico + ECG, NO se esperan enzimas. [cite: 338]\nEl objetivo es lograr reperfusión inmediata lo más rápido posible. [cite: 339] \nEn un hospital de alta complejidad (con sala de hemodinamia disponible), la estrategia de elección es: - Angioplastia primaria (ATC con stent). [cite: 340]\nSi no hubiera hemodinamia en menos de 120 minutos = fibrinólisis. [cite: 341]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_149",
+    "materia": [
+      "cardiologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Valvulopatías",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Ana de 73 años consulta por disnea de esfuerzo. Hace 6 meses comenzó a sentir falta de aire al subir las escaleras en su casa; [cite: 343] esto se fue acentuando a lo largo del tiempo obligándola en ocasiones a detener la marcha. No refiere otro antecedente. [cite: 344] Al examen físico presenta un soplo sistólico en foco aórtico con irradiación al cuello. [cite: 345] El ecocardiograma doppler color informa: gradiente transvalvular aórtico medio de 50 mmHg con un área calculada de 0,7 cm2 y una Fracción de Eyección (FE) del 65% ¿Cuál es tratamiento más adecuado? [cite: 346]",
+    "opciones": {
+      "a": "Sustitución de la válvula por una bioprótesis. [cite: 347]",
+      "b": "Administración de diuréticos y vasodilatadores. [cite: 348]",
+      "c": "Dilatación percutánea de la válvula aortica con catéter de balón. [cite: 349]",
+      "d": "Administración de beta bloqueantes, estatinas e IECAS. [cite: 350]"
+    },
+    "correcta": "a",
+    "explicacion": "La paciente presenta: disnea de esfuerzo + soplo sistólico en foco aórtico que irradia a cuello. Dx de **estenosis aórtica**. [cite: 354]\nEcocardiograma: Área valvular aórtica < 1 cm2 y gradiente medio > 40 mm Hg -> **Estenosis aórtica grave/severa**. [cite: 355]\nLa principal indicación de cirugía de sustitución valvular aórtica es la presencia de una estenosis aórtica severa sintomática. [cite: 356]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_150",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Pericardio",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "Una paciente de 83 años ingresa a unidad coronaria en post operatorio inmediato de colocación de marcapasos definitivo tipo VVI en contexto de BAV de 3er grado. [cite: 357] Al ingreso presenta TA de 90/70 mm de Hg con disminución de la amplitud del pulso en inspiración, ruidos cardíacos hipofonéticos y marcada ingurgitación yugular sin otros hallazgos clínicos de relevancia. [cite: 358] El ECG de control muestra imagen de bloqueo completo de rama izquierda con espiga de marcapaso precediendo al complejo QRS. [cite: 359] ¿Cuál es el diagnóstico más probable? [cite: 360]",
+    "opciones": {
+      "a": "Sindrome Coronario Agudo [cite: 361]",
+      "b": "Neumotórax hipertensivo [cite: 362]",
+      "c": "Taponamiento cardíaco [cite: 363]",
+      "d": "Cuadro secundario al uso de anestésicos en este tipo de postoperatorios [cite: 364]"
+    },
+    "correcta": "c",
+    "explicacion": "Complicaciones inmediatas de la implantación transvenosa de un marcapasos son infección, hematoma, neumotórax, perforación cardíaca, estimulación diafragmática/nervio frénico y desalojamiento del electrodo. [cite: 368]\nLa tríada clínica del taponamiento (**tríada de Beck**) son hipotensión arterial, ruidos cardíacos hipofonéticos o ausentes y distensión de las venas yugulares con descenso prominente de la onda x sin descenso de la onda y. [cite: 369] \nPuede llegar a haber limitación del llenado ventricular y reducción del gasto cardíaco. [cite: 370]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_151",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Valvulopatías"
+    ],
+    "enunciado": "La auscultación cardíaca de un varón de 50 años detecta un soplo con las siguientes características: mesosistólico, creciente decreciente, comienza poco después del primer ruido, aumenta de intensidad hasta alcanzar un máximo hacia la mitad del periodo expulsivo y finaliza antes del 2º ruido. [cite: 371] Es de baja frecuencia, rudo y áspero. La mayor intensidad es en la base del corazón y en el segundo espacio intercostal derecho. [cite: 372] Se transmite en dirección ascendente hacia el cuello. ¿A qué valvulopatía puede corresponder un soplo con estas características? [cite: 373]",
+    "opciones": {
+      "a": "Insuficiencia pulmonar [cite: 374]",
+      "b": "Estenosis tricuspidea [cite: 375]",
+      "c": "Estenosis aórtica [cite: 376]",
+      "d": "Estenosis mitral [cite: 378]"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. [cite: 384]\nBasándonos en las características del soplo descrito: Mesosistólico (en eyección): Ocurre durante la sístole, pero no ocupa toda la sístole. [cite: 385]\nCreciente-decreciente (en diamante o en \"pico\"): Aumenta de intensidad hasta un máximo y luego disminuye. [cite: 386]\nComienza poco después del primer ruido (S1): Típico de soplos de eyección, ya que se inicia después del cierre de las válvulas AV (válvulas mitral y tricuspídea). [cite: 387]\nFinaliza antes del segundo ruido (S2): No se extiende hasta el cierre de las válvulas semilunares (aórtica y pulmonar). [cite: 388]\nBaja frecuencia, rudo y áspero: Característico de soplos por estenosis valvular. [cite: 389]\nMayor intensidad en la base del corazón y segundo espacio intercostal derecho: Este es el foco de auscultación de la válvula aórtica (el foco pulmonar está en el segundo espacio intercostal izquierdo). [cite: 390]\nSe transmite en dirección ascendente hacia el cuello: La transmisión hacia las arterias carótidas es típica de la estenosis aórtica. [cite: 391]\nTodas estas características son clásicas de la **estenosis aórtica**. [cite: 392] El soplo en estenosis aórtica es un soplo sistólico en eyección, con forma creciente-decreciente, áspero, que se ausculta mejor en el foco aórtico (segundo espacio intercostal derecho) y se irradia hacia el cuello. [cite: 392]\nLas otras opciones:\n- Insuficiencia pulmonar: Es un soplo diastólico (no sistólico como el descrito). [cite: 394]\n- Estenosis mitral: típicamente produce un soplo diastólico, de baja frecuencia, con un \"retumbo diastólico\" que se ausculta mejor en el ápice del corazón, y que puede tener un componente presistólico. [cite: 395] No es un soplo sistólico ni holosistólico. [cite: 396] Además, el soplo de estenosis mitral se localiza en el ápice. [cite: 396]\n- Estenosis tricuspídea: Es un soplo diastólico (no sistólico). [cite: 397]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_152",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Miocardiopatías",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "Consulta un varón de 20 años por haber sufrido 3 episodios de precordialgia y palpitaciones cuando realizaba actividad física en la última semana. [cite: 399] Refiere haber sufrido un episodio de síncope el año pasado en un partido de futbol. [cite: 400] Tiene antecedentes familiares de muerte súbita en padre. En el examen físico se ausculta un soplo mesosistólico en el borde paraesternal izquierdo que aumenta con la maniobra de Valsalva. El electrocardiograma (ECG) muestra aumento de voltajes en varias derivaciones, supradesnivelación del segmento ST en I, aVL, y V4-V6 con inversión de la onda T. ¿Cuál es el diagnóstico más probable? [cite: 401]",
+    "opciones": {
+      "a": "Miocardiopatia restrictiva [cite: 402]",
+      "b": "Miocardiopatia hipertrófica [cite: 403]",
+      "c": "Miocardiopatia no compactada [cite: 404]",
+      "d": "Miocardiopatia dilatada [cite: 405]"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos. [cite: 409]\nPersona joven con angina o síncope con el esfuerzo con soplo mesosistólico en el borde esternal izquierdo que aumenta con maniobras de valsalva con ecg anormal característico y antecedentes familiares de muerte súbita = sospechar en primer lugar **miocardiopatía hipertrófica**. [cite: 410] ",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_153",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Valvulopatías"
+    ],
+    "enunciado": "Una paciente de 60 años con antecedentes de HTA en tratamiento con IECA consulta en forma ambulatoria por presentar disnea que aparece luego de caminar 5 cuadras aproximadamente y episodios de disnea paroxística nocturna. [cite: 411] Al examen físico se encuentra hemodinámicamente estable y en la auscultación cardíaca presenta refuerzo del 1er ruido, desdoblamiento del 2do ruido, chasquido de apertura y soplo mesodiastólico de tono bajo, que se ausculta mejor en el vértice del corazón con el paciente en decúbito lateral izquierdo. [cite: 412] ¿Cuál es el diagnóstico más probable? [cite: 413]",
+    "opciones": {
+      "a": "Estenosis de válvula tricúspide [cite: 414]",
+      "b": "Estenosis de válvula mitral [cite: 415]",
+      "c": "Insuficiencia de válvula aortica [cite: 416]",
+      "d": "Insuficiencia de válvula mitral [cite: 417]"
+    },
+    "correcta": "b",
+    "explicacion": "La paciente presenta: disnea de esfuerzo DPN + Primer ruido: frecuentemente es fuerte + Chasquido de apertura + Soplo mesodiastólico que se aprecia mejor en el ápex. [cite: 421]\nSospecha **estenosis mitral**. [cite: 422]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_154",
+    "materia": [
+      "cardiologia"
+    ],
+    "submateria": [
+      "Miocardiopatías"
+    ],
+    "enunciado": "¿A qué entidad nosológica corresponde un soplo que se ausculta en mesocardio e incrementa su intensidad, con la maniobra de valsalva? [cite: 424]",
+    "opciones": {
+      "a": "Estenosis aòrtica [cite: 425]",
+      "b": "Miocardiopatia hipertrófica obstructiva [cite: 426]",
+      "c": "Insuficiencia mitral [cite: 427]",
+      "d": "Comunicación interventricular [cite: 428]"
+    },
+    "correcta": "b",
+    "explicacion": "La **miocardiopatía hipertrófica** es una forma de miocardiopatía en la cual la hipertrofia suele ser de gran magnitud y no se asocia a las condiciones de carga (hipertensión, enfermedad valvular, etc.). [cite: 432]\nSe puede manifestar con dolor precordial de esfuerzo, disnea y síncope. [cite: 433]\nPuede asociarse a diversas arritmias y en algunos casos se asocia a muerte súbita. [cite: 434]\nAl examen físico se destaca la presencia de un soplo mesosistólico que se ausculta mejor en borde esternal izquierdo que resulta de la obstrucción subvalvular dinámica que se produce como resultado de la hipertrofia septal asimétrica y el movimiento septal anterior de la válvula mitral. [cite: 435]\nLas maniobras que reducen la precarga, como la maniobra de valsalva incrementan la intensidad del soplo. [cite: 436]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_155",
+    "materia": [
+      "cardiologia",
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Miocardiopatías",
+      "Cardiopatías congénitas",
+      "Virus varios"
+    ],
+    "enunciado": "Juan Francisco de 13 años es traído a la guardia por un cuadro de fatiga progresiva, disnea y dificultad para subir las escaleras de su casa. [cite: 438] Refiere que se sentía bien hasta hace una semana cuando comenzó con rinorrea, tos y odinofagia. [cite: 439] Estos síntomas cedieron hace 48hs espontáneamente. No tiene antecedentes de relevancia ni toma medicación diaria. [cite: 440] Al examen físico manifiesta un cuadro de distrés respiratorio moderado. [cite: 441] Presenta FC 120 1/min, FR 25 r/min, TA 85/40 mmHg y saturación de oxígeno a aire ambiente de 92%. [cite: 442] A la auscultación pulmonar presenta crepitantes bilaterales. Se ausculta también un ritmo de galope y un soplo holosistólico en el ápex cardíaco. [cite: 443] ¿Cuál es el diagnóstico más probable? [cite: 444]",
+    "opciones": {
+      "a": "Lupus eritematoso sistémico. [cite: 445]",
+      "b": "Neumonía aguda. [cite: 446]",
+      "c": "Fiebre reumática. [cite: 447]",
+      "d": "Miocarditis. [cite: 448]"
+    },
+    "correcta": "d",
+    "explicacion": "La **miocarditis** se define como una inflamación del miocardio. [cite: 454] Se han descrito muchos agentes implicados en su etiología, [cite: 455] pero son los virus, fundamentalmente los enterovirus, y dentro de estos los Coxsackie son los agentes causales principales. [cite: 456]\nSe presenta clínicamente como una insuficiencia cardíaca congestiva moderada o severa de aparición progresiva, o incluso como un shock cardiogénico de instauración rápida. [cite: 457] Los signos clínicos iniciales son similares a los de las infecciones respiratorias. [cite: 458] En la auscultación cardíaca se puede encontrar ritmo de galope en algunos casos. [cite: 459]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "cardio_002_156",
+    "materia": [
+      "cardiologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Pericardio",
+      "Síndromes torácicos"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 35 años de edad, fumador, sin otros antecedentes, que refiere dolor torácico anterior, que afecta al borde superior del trapecio y que varía con la respiración? [cite: 461] En el ECG presenta elevación ST, T positivas en todas las derivaciones excepto en aVR y V1 y depresión del segmento PR de V2 a V5. [cite: 462]",
+    "opciones": {
+      "a": "Pericarditis aguda [cite: 463]",
+      "b": "Injuria subendocárdica de cara anteroseptal [cite: 464]",
+      "c": "Embolismo pulmonar [cite: 465]",
+      "d": "Infarto de miocardio anterolateral extenso [cite: 466]"
+    },
+    "correcta": "a",
+    "explicacion": "Para llegar al diagnóstico de **pericarditis aguda** se deben cumplir, al menos, dos de los siguientes criterios: [cite: 472]\n- Dolor centrotorácico de características pleuríticas: es un dolor que empeora con la inspiración y el decúbito, y por el contrario, se alivia al no respirar y con la sedestación inclinando el tórax hacia delante. [cite: 473] De irradiarse, lo suele hacer hacia la cintura escapular. [cite: 474] El dolor torácico de la pericarditis aguda debe distinguirse de la embolia pulmonar y de la isquemia o el infarto de miocardio. [cite: 474]\n- Roce pericárdico en la auscultación: no siempre está presente y, cuando lo está, puede ser evanescente (solo presente en un tercio de los pacientes). [cite: 475] Se escucha mejor con la membrana del fonendoscopio en el borde esternal izquierdo y con el paciente sentado (inclinado hacia delante), en espiración. [cite: 476]\n- Cambios electrocardiográficos: se pueden observar hasta en el 60% de los pacientes, la elevación cóncava del segmento ST en muchas derivaciones es lo más frecuente. [cite: 477] También se puede registrar descenso del segmento PR. [cite: 478] \n- Presencia de derrame pericárdico en el ecocardiograma (en un 60% de los pacientes), pero un ecocardiograma normal no descarta el diagnóstico de pericarditis aguda. [cite: 479]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
   
