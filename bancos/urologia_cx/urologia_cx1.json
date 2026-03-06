@@ -1,1 +1,382 @@
-[]
+[
+  {
+    "id": "urocx_001_001",
+    "materia": ["urologia_cx"],
+    "submateria": ["Cáncer de riñón y otros tumores renales"],
+    "enunciado": "¿Cuál de las siguientes asociaciones de situaciones clínicas lo inducen a pensar en la posibilidad de que su paciente sea portador de un Síndrome Paraneoplásico de un cáncer de riñón?",
+    "opciones": {
+      "a": "Anemia crónica e Hipercalcemia",
+      "b": "Anemia crónica e Hipocalcemia",
+      "c": "Eritrocitosis e Hipercalcemia",
+      "d": "Eritrocitosis e Hipocalcemia"
+    },
+    "correcta": "c",
+    "explicacion": "Más del 50% de las masas renales son diagnosticadas incidentalmente, debido a la realización de pruebas diagnósticas abdominales por otro motivo.\n\nLa **triada clásica** de la hematuria, el dolor en el flanco y la masa palpable es hoy en día muy infrecuente y sugestiva de enfermedad localmente avanzada.\n\nEn los tumores sintomáticos, el síntoma más frecuente es la **hematuria** (60%).\n\nDe aquellos pacientes que debutan con síntomas, hasta el 30% pueden presentar **síndromes paraneoplásicos** asociados.\n\nDe ellos, el más frecuente es el **síndrome de Stauffer**, hipertransaminasemia no metastásica (efecto hepatotóxico del tumor);\n\notro síndrome paraneoplásico que puede generar es **eritrocitosis** e **hipercalcemia** y se asocia a la generación de eritropoyetina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_002",
+    "materia": ["urologia_cx", "ginecologia"],
+    "submateria": ["Urología funcional e incontinencia", "Vulva / Vagina / Cáncer de vulva"],
+    "enunciado": "En el diagnóstico diferencial clínico de una fístula urinaria baja, ¿cómo diferencia cuando la localización es vesical de la uretral?",
+    "opciones": {
+      "a": "Se acompaña de disuria",
+      "b": "Se acompaña de hematuria",
+      "c": "La incontinencia es total",
+      "d": "En la fístula urinaria vesical la incontinencia es continua"
+    },
+    "correcta": "d",
+    "explicacion": "Las **fístulas** entre el tracto urinario y la vagina generalmente producen una fuga de orina indolora de la vagina.\n\nLa fuga intermitente, particularmente cuando es posicional, puede ser un signo de **fístula ureterovaginal**, mientras que la **pérdida continua** de orina es más característica de las **fístulas vesicovaginales**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_003",
+    "materia": ["urologia_cx"],
+    "submateria": ["Urología funcional e incontinencia"],
+    "enunciado": "Un paciente de 73 años consulta por incontinencia urinaria. En el examen físico presenta globo vesical sin otros datos de relevancia. En la ecografía transrectal se observa agrandamiento prostático y residuo postmiccional aumentado. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Incontinencia por rebosamiento obstructiva",
+      "b": "Incontinencia de urgencia",
+      "c": "Incontinencia por rebosamiento no obstructiva",
+      "d": "Incontinencia de esfuerzo"
+    },
+    "correcta": "a",
+    "explicacion": "- **Incontinencia de esfuerzo (IUE)**: es la más frecuente y se debe a un mal soporte anatómico de la uretra, a un esfínter incompetente o a ambos.\n- **Incontinencia de urgencia (IUU)**: precedida por un deseo urgente de orinar y debida a una contracción espontánea del detrusor (hiperactividad).\n- **Incontinencia mixta (IUM)**: es una combinación de las dos anteriores.\n- **Incontinencia por rebosamiento**: se produce por **obstrucción crónica** e incapacidad de acomodar más orina en la vejiga.\n\nEn la **incontinencia por rebosamiento** el paciente tiene escapes de orina sin motivo aparente y se puede palpar la vejiga en el hipogastrio (**globo vesical**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_004",
+    "materia": ["urologia_cx"],
+    "submateria": ["Patología testicular"],
+    "enunciado": "Luego de completar el tratamiento antibiótico por una epididimitis aguda en tiempo y forma, tu paciente persiste con la sintomatología. Presenta una masa sólida testicular indolora. ¿Qué posibilidad diagnóstica te sugiere la persistencia de los síntomas a pesar de la culminación de un ciclo de tratamiento para una epididimitis aguda?",
+    "opciones": {
+      "a": "Eyaculación retrógrada",
+      "b": "Anomalía congénita",
+      "c": "Presencia de cáncer testicular",
+      "d": "Resistencia microbiana"
+    },
+    "correcta": "c",
+    "explicacion": "Siempre ante la presencia de una **masa testicular sólida indolora**, pensar en **cáncer testicular**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_005",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta con respecto a la hipertrofia prostática benigna (HPB)?",
+    "opciones": {
+      "a": "La polaquiuria, en mayores de 50 años, es siempre provocada por la HPB",
+      "b": "El diagnóstico se hace por tacto rectal",
+      "c": "Es una enfermedad que progresa lentamente en la mayoría de los pacientes",
+      "d": "Se deben solicitar siempre sedimento urinario y creatinina sérica para hacer diagnóstico"
+    },
+    "correcta": "c",
+    "explicacion": "La **HBP** es la causa más frecuente de uropatía obstructiva en el varón.\n\nNo existe relación entre el tamaño prostático y la sintomatología, se manifiesta como:\n\nSintomas obstructivos (de vaciado):\n- Retraso en el inicio de la micción.\n- Disminución de la fuerza y el calibre miccional.\n- Goteo posmiccional.\n- Sensación de vaciado incompleto (tenesmo) y necesidad de prensa abdominal.\n\nSintomas irritativos (de llenado):\n- **Polaquiuria** (sobre todo por la noche: nicturia) (luego de descartar una infección urinaria se debe considerar la HPB).\n- Urgencia miccional e incontinencia.\n\nEn el diagnóstico es esencial realizar una correcta anamnesis.\n\nExploración física:\n- **Tacto rectal**: ayuda a delimitar el tamaño prostático y permite hacer un cribado del cáncer de próstata.\n- **Palpación abdominal**: para diagnosticar un posible globo vesical.\n\nPruebas complementarias:\n- **Laboratorio**: creatinina para valorar la función renal y antígeno específico prostático (PSA) para descartar cáncer de próstata.\n- **Cultivo de orina**: para descartar infecciones asociadas.\n- **Ecografía**: medición del volumen prostático y diagnóstico de complicaciones.\n- **Flujometría**: valora el calibre miccional.\n\nEl tratamiento se instaura en función de la sintomatología y la aparición de complicaciones. Se puede mantener una **actitud expectante** en pacientes asintomáticos o mínimamente sintomáticos, dada la **progresión lenta** de la enfermedad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_006",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "En la prostatitis aguda bacteriana es recomendable:",
+    "opciones": {
+      "a": "Realizar un cultivo de tejido prostático mediante biopsia por vía perineal",
+      "b": "Obtener una muestra de líquido seminal mediante masaje prostático",
+      "c": "No efectuar masaje prostático por riesgo de diseminación hematógena",
+      "d": "Realizar un cultivo de tejido prostático mediante biopsia por vía transrectal"
+    },
+    "correcta": "c",
+    "explicacion": "La **prostatitis bacteriana aguda** se asocia con infección de las vías urinarias bajas y sepsis generalizada.\n\nEn la prostatitis bacteriana aguda el **urocultivo** es la única prueba de laboratorio necesaria.\n\nA comienzos del siglo XX se utilizaba como principal tratamiento el masaje prostático. Si bien existen controversias en relación con sus beneficios, que en el mejor de los casos serían menores para la prostatitis crónica, se **desaconseja** su uso en la **prostatitis aguda** dado el riesgo de **diseminación hematógena** de la infección.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_007",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "¿Cuál es la recomendación del Consenso Nacional Intersociedades para el diagnóstico y tratamiento del cáncer de próstata?",
+    "opciones": {
+      "a": "screening oportunista e individualizado",
+      "b": "eliminar el screening de cáncer de próstata",
+      "c": "aumentar la detección de más pacientes con cáncer",
+      "d": "screening poblacional y masivo"
+    },
+    "correcta": "a",
+    "explicacion": "No se recomienda el examen de detección temprana del cáncer de próstata (**screening**) poblacional organizado mediante PSA en los pacientes asintomáticos, por la posibilidad de sobrediagnóstico y sobretratamiento consecuente.\n\nLa intención de limitar el screening, de poblacional y masivo a **oportunista e individualizado**, no es eliminarlo, sino disminuir los riesgos de su uso.\n\nEl objetivo del screening debe ser reducir las complicaciones derivadas de la progresión del cáncer (calidad de vida) y reducir la mortalidad por cáncer. **No aumentar la detección** de más pacientes con cáncer.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_008",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "¿Cuál de las siguientes es una característica de la infección urinaria?",
+    "opciones": {
+      "a": "Fiebre mayor a 39°",
+      "b": "Dolor lumbar.",
+      "c": "Frecuencia mayor en mujeres",
+      "d": "Cilindros leucocitarios en orina."
+    },
+    "correcta": "c",
+    "explicacion": "La incidencia de las **ITU** es **mayor en mujeres** en todas las edades, salvo en el primer año de vida, que es mayor en hombres, debido principalmente a la mayor incidencia en ellos de malformaciones de la vía urinaria.\n\nEn general, las ITU no parenquimatosas (**cistitis**) cursan con disuria, polaquiuria, tenesmo y urgencia, el llamado síndrome miccional.\n\nLas ITU parenquimatosas (**pielonefritis**, **prostatitis**, etc.), además de lo anterior, suelen presentar fiebre y dolor en la región afectada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_009",
+    "materia": ["pediatria", "urologia_cx"],
+    "submateria": ["Oncohematología infantil", "Cáncer de riñón y otros tumores renales"],
+    "enunciado": "La madre de un niño de tres años y medio nota, cuando lo está bañando, una masa en su abdomen que atraviesa la línea media. El niño ha referido en algún momento dolor abdominal y presenta como antecedente aniridia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Neuroblastoma",
+      "b": "Tumor de Wilms",
+      "c": "Hodking",
+      "d": "Hepatoma"
+    },
+    "correcta": "b",
+    "explicacion": "El **tumor de Wilms** o **nefroblastoma**, es una neoplasia maligna del riñón.\n\nEn aproximadamente 2% de los casos puede asociarse a otras anormalidades del desarrollo como **aniridia** (ausencia del iris), hemihipertrofia y malformaciones del tracto urinario.\n\nEn el 95% de los casos puede palparse una **masa abdominal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_010",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "Un varón de 73 años le trae a la consulta una nota realizada por el oncólogo en el que informa la estadificación del cáncer que presenta en la próstata. En el informe dice 'tumor confinado a la próstata que afecta la mitad de un lóbulo, no hay extensión extraprostática, ni de estructuras vecina, no hay afectación ganglionar ni a distancia'. Según el TNM, ¿en qué estadio se encuentra la enfermedad del paciente?",
+    "opciones": {
+      "a": "T2a N0 M0",
+      "b": "T2b N0 M0",
+      "c": "T3a N0 M0",
+      "d": "T1c N0 M0"
+    },
+    "correcta": "b",
+    "explicacion": "**TNM de cáncer de próstata**:\n- **T2**: Tumor confinado a la próstata.\n- **T2a**: Menos de la mitad de un lóbulo.\n- **T2b**: La mitad de un lóbulo.\n- **T2c**: Bilateral.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_011",
+    "materia": ["pediatria", "urologia_cx"],
+    "submateria": ["Oncohematología infantil", "Cáncer de riñón y otros tumores renales"],
+    "enunciado": "La presencia de distensión y masa abdominal en Pediatría pueden sugerir el diagnóstico de cáncer. ¿Cuáles de los siguientes tumores abdominales con mayor frecuencia tienen esta forma de presentación clínica en menores de 5 años?",
+    "opciones": {
+      "a": "Neuroblastoma y sarcomas",
+      "b": "Neuroblastoma y nefroblastomas",
+      "c": "Nefroblastoma y leucemia",
+      "d": "Rabdomiosarcoma y teratomas"
+    },
+    "correcta": "b",
+    "explicacion": "El **neuroblastoma** y el **nefroblastoma** son los tumores que se presentan más frecuentemente con masa abdominal palpable en menores de 5 años.\n\nEl 65% de los neuroblastomas se originan en la cavidad abdominal (glándula suprarrenal o cadena simpática paravertebral).\n\nEl nefroblastoma o **tumor de Wilms** es el tumor renal maligno primitivo más común y deriva del blastema renal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_012",
+    "materia": ["urologia_cx"],
+    "submateria": ["Cáncer de urotelio"],
+    "enunciado": "Un varón de 63 años, tabaquista de 40 paquetes/año consulta por un episodio aislado de hematuria macroscópica con coágulos sin otros síntomas acompañantes. Tiene exámenes de laboratorio normales realizados antes de este cuadro clínico y examen físico normal. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Conducta expectante e indicar abundante hidratación.",
+      "b": "Solicitar ecografía renal y vésico-prostática.",
+      "c": "Solicitar un análisis de orina para confirmar la hematuria.",
+      "d": "Solicitar cistouretroscopia e indicar tratamiento antibiótico"
+    },
+    "correcta": "b",
+    "explicacion": "Varón fumador de más de 60 años con **hematuria** = **cáncer de vejiga** hasta que se demuestre lo contrario.\n\nAunque la **ecografía** es un buen método para la evaluación inicial de la hematuria, los hallazgos sospechosos de tumor vesical deben ser confirmados mediante **cistoscopia** y biopsia o resección.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_013",
+    "materia": ["urologia_cx", "infectologia"],
+    "submateria": ["Patología testicular", "ITS"],
+    "enunciado": "¿Cuál de los siguientes grupos de organismos incluye los patógenos identificados con mayor frecuencia como causantes de epididimitis aguda en varones que tienen relaciones sexuales anales?",
+    "opciones": {
+      "a": "Neisseria gonorrhoeae, Treponema pallidum y Mycoplasma genitalium",
+      "b": "Mycoplasma genitalium, Trichomonas vaginalis y Ureaplasma urealyticum",
+      "c": "Chlamydia trachomatis, Proteus sp y Staphylococcus aureus",
+      "d": "Neisseria gonorrhoeae, Chlamydia trachomatis y Escherichia coli"
+    },
+    "correcta": "d",
+    "explicacion": "La **orquiepididimitis** es una infección del epidídimo y/o del testículo. Habitualmente se adquiere de forma ascendente desde la uretra.\n\nEn varones menores de 35 años la causa más frecuente son las **ETS** por **gonococo** o **Chlamydia**;\n\nen niños y en edad más avanzada suelen causarla los uropatógenos habituales (especialmente **E. coli**).\n\nCursa con dolor e inflamación testicular y escrotal que se irradia hacia la ingle. Puede asociarse fiebre y síndrome miccional.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_014",
+    "materia": ["urologia_cx", "oncologia"],
+    "submateria": ["Patología testicular", "Conceptos de Oncología"],
+    "enunciado": "¿Cuáles son los Marcadores que se utilizan con fines Diagnostico, Pronostico y seguimiento en el Cáncer de Testículo?",
+    "opciones": {
+      "a": "Alfa fetoproteína, sub unidad B de GCH y LDH",
+      "b": "Fosfatasa acida y subunidad B de GCH",
+      "c": "CEA y alfa fetoproteína",
+      "d": "LDH y fosfatasa ácida"
+    },
+    "correcta": "a",
+    "explicacion": "Los marcadores que se utilizan con fines diagnóstico, pronóstico y de seguimiento en cáncer de testículo son **alfa feto proteína**, **subunidad beta de GCH** y **LDH**.\n\nLa **subunidad beta** se eleva característicamente en el coriocarcinoma y en el seminoma, la **alfa fetoproteína** se eleva en el carcinoma embrionario y en el tumor de seno endodérmico.\n\nLa **LDH** es un marcador menos específico y su concentración es proporcional al volumen tumoral.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_015",
+    "materia": ["urologia_cx", "oncologia"],
+    "submateria": ["Patología testicular", "Conceptos de Oncología"],
+    "enunciado": "Concurre a la consulta un paciente de 35 años portador de un tumor de células germinales de tipo no seminomatoso diseminado, se le realizó el tratamiento quirúrgico y quimioterápico. ¿Qué marcador/es tumoral/es solicita para su seguimiento, evolución y valoración pronóstica?",
+    "opciones": {
+      "a": "Alfa Feto Proteína y Antigeno carcino embrionario",
+      "b": "Gonadotrofina Coriónica Humana y Alfa Feto Proteína",
+      "c": "Gonadotrofina Coriónica Humana",
+      "d": "CA 19-9"
+    },
+    "correcta": "b",
+    "explicacion": "Los **tumores no seminomatosos** pueden secretar **HCG** y **AFP**, aplicables en el diagnóstico y el control de la evolución.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_016",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "¿Cómo interpreta un resultado elevado de antígeno prostático específico (APE o 'PSA')?",
+    "opciones": {
+      "a": "Que el paciente puede tener hipertrofia prostática benigna, cáncer de próstata, prostatitis o manipulaciones urológicas",
+      "b": "La determinación de APE sirve para descartar o confirmar el diagnóstico de hipertrofia prostática benigna",
+      "c": "El resultado alterado es siempre por patología prostática no aumenta como consecuencia del masaje prostático",
+      "d": "Un resultado elevado siempre significa que el paciente probablemente tenga cáncer de próstata"
+    },
+    "correcta": "a",
+    "explicacion": "El **PSA** es una proteína secretada por la próstata que se eleva en múltiples circunstancias (**HBP**, **infecciones**, **manipulaciones urológicas**, entre otras) y por tanto **no es específica** de cáncer.\n\nValores por encima de **10 ng/mL** deben hacer sospechar de cáncer de próstata.\n\nEntre 4-10 ng/dL la indicación de biopsia se hace en función de la edad, velocidad de incremento y volumen prostático.\n\nEl ratio **PSA libre/PSA total < 0,2** discrimina en este grupo de pacientes aquellos con mayor riesgo de cáncer prostático.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_017",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "Una mujer de 29 años consulta por presentar disuria de 8 días de evolución. Refiere antecedentes de litiasis renal e infecciones urinarias recurrentes. El sedimento urinario muestra piuria, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Tratamiento antibiótico empírico por 14 días",
+      "b": "Tratamiento antibiótico empírico por 5 días",
+      "c": "Tomar urocultivo y tratamiento antibiótico empírico por 14 días",
+      "d": "Tomar urocultivo y tratamiento antibiótico empírico por 5 días"
+    },
+    "correcta": "c",
+    "explicacion": "La **IU complicada** afecta a pacientes con anomalías funcionales o estructurales de las vías urinarias (como la **litiasis renal**).\n\nEl riesgo de IU complicada es definido por la anomalía subyacente. Las alteraciones genitourinarias favorecen la infección por persistencia de organismos o evacuación incompleta.\n\nTratamiento: debe individualizarse y ser orientado por los resultados de los **cultivos de orina**.\n\nEn pacientes con factores de complicación o síntomas prolongados, se indica la toma de **urocultivo** y ciclos de tratamiento más extendidos (habitualmente **14 días**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_018",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Infecciones del tracto urinario", "Patología renal y urológica urgente"],
+    "enunciado": "Una mujer de 35 años consulta a la guardia por presentar fiebre, disuria y dolor lumbar de 24 hs de evolución. Refiere antecedentes cólicos renales y diagnóstico de litiasis renal. Al examen físico se encuentra vigil, sudorosa, TA: 90-60 mmHg, FC 120 lpm y T° 40 °C, puño percusión lumbar derecha positiva y oligoanúrica. Laboratorio: GB 18000/mm3, creatinina 1,5 mg/dl y transaminasas levemente aumentadas. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar hemocultivos e internar en unidad de cuidados intensivos con antibioticoterapia endovenosa de amplio espectro",
+      "b": "Solicitar urocultivo e iniciar tratamiento ambulatorio con quinolonas por 7-14 días",
+      "c": "Internar en UTI, solicitar urocultivo, hemocultivo e indicar antibióticos por vía endovenosa de amplio espectro",
+      "d": "Solicitar urocultivo e iniciar tratamiento ambulatorio con quinolonas por 3 días"
+    },
+    "correcta": "c",
+    "explicacion": "Diagnóstico presuntivo de **Pielonefritis aguda**. Cursa con fiebre, escalofríos y dolor en la fosa lumbar.\n\nEn este caso, la paciente presenta datos de **sepsis** (hipotensión, taquicardia, fiebre alta, oliguria).\n\nTratamiento: En caso de infecciones graves el tratamiento debe ser **intravenoso** con antibióticos de amplio espectro como cefalosporinas de tercera generación, aminoglucósidos o carbapenémicos.\n\nSe requiere internación (preferentemente en **UTI/UCI** dado el compromiso hemodinámico) y toma de muestras para **urocultivo** y **hemocultivos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_019",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "Un paciente de 58 años concurre a la consulta con exámenes recientes de laboratorio en los que presenta valores de Antígeno Prostático Específico (PSA) de 19 ng/mL. Se le practica tacto rectal que revela próstata discretamente aumentada de tamaño con borramiento del surco medio. ¿Cuál es la conducta más adecuada a seguir en este caso?",
+    "opciones": {
+      "a": "Indicar prostatectomía",
+      "b": "Solicitar biopsia prostática guiada por ecografía transrectal",
+      "c": "Solicitar ecografía transrectal",
+      "d": "Solicitar PSA libre"
+    },
+    "correcta": "b",
+    "explicacion": "Ante un paciente con un **PSA > 10 ng/mL** y un **tacto rectal sospechoso** (borramiento del surco medio), la conducta indicada es la confirmación histológica.\n\nSe debe realizar **biopsia transrectal ecoguiada** para descartar o confirmar cáncer de próstata.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_020",
+    "materia": ["urologia_cx"],
+    "submateria": ["Patología testicular"],
+    "enunciado": "Un adolescente, en apariencia sano, consulta para control. El examen de los genitales revela estadio 5 de desarrollo puberal y un tumor no doloroso en el escroto izquierdo que se extiende desde el canal inguinal hasta el polo superior del testículo. El tumor disminuye de tamaño cuando el joven se acuesta. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Quiste de Morgagni",
+      "b": "Varicocele",
+      "c": "Hidrocele",
+      "d": "Tumor testicular"
+    },
+    "correcta": "b",
+    "explicacion": "El **varicocele** es una dilatación de las venas del plexo pampiniforme que impresiona como 'saco de gusanos' a la palpación.\n\nSe presenta característicamente en el adolescente y es más frecuente del **lado izquierdo**.\n\nUn dato clínico clave es que **disminuye de tamaño** con el decúbito (cuando el paciente se acuesta).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  
