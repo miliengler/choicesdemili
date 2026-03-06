@@ -1,162 +1,169 @@
 [
+{
+    "id": "urologia_001_001",
+    "materia": [
+      "urologia"
+    ],
+    "submateria": [
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Un hombre de 29 años con VIH (bajo terapia antirretroviral) Ingresa por debilidad e incapacidad para mover las extremidades inferiores. No presenta dolor abdominal, pero ha tenido náuseas y vómitos durante los últimos 10 días. Refiere diarrea de varios meses de evolución. Al examen fisico se presenta caquéctico, responde mínimamente a estímulos y está desorientado. Esta afebril, la FC es de 110/min que cambia a 130/min en posición de pie, la FR es de 18/min y la TA de 95/40 mmHg que cambia a 80/40 mmHg en posición de pie. La turgencia cutánea está disminuida y las membranas mucosas están secas. El examen cardiaco, respiratorio y abdominal es normal. No se observa edema. Los pares craneales ||ax|| están intactos. La fuerza de las extremidades superiores es normal. Se observa una debilidad marcada en las extremidades inferiores, si bien los reflejos están intactos y no hay signo de Babinski. La propiocepción y la función sensorial están intactas. Laboratorio: Hto 23%, glóbulos blancos 1200/μl plaquetas 78.000/μ l. Electrolitos séricos: NA+ 137 mEq/L, K+ 3,2 mEq/L, CL- 109 mEq/L, HCO3) 15 mEq/L, Ca++ 9,1 mg/dL fósforo 0,7 mg/dL, urea 36 mg/dL creatinina 1,4 mg/dL albúmina 2,7 g/dL colesterol plasmático 110 mg/dL, Mg++ sérico 1,5 mEq/L. Orina: densidad 1.015, proteínas: vestigios, microscópico: (-): prueba en heces SOMF (-). El tratamiento inicial más adecuado sería: [cite: 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]",
+    "opciones": {
+      "a": "Magnesio [cite: 24]",
+      "b": "Fosfato [cite: 25]",
+      "c": "Potasio [cite: 26]",
+      "d": "Vitamina D [cite: 27]"
+    },
+    "correcta": "b",
+    "explicacion": "El paciente presenta un cuadro grave de debilidad muscular asociado a niveles críticamente bajos de fósforo (0,7 mg/dL). La hipofosfatemia severa puede causar disfunción muscular profunda, incluyendo debilidad diafragmática y de extremidades. El tratamiento primario es la reposición de **Fosfato**[cite: 29].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
   {
-    "id": "urologia-001-001",
+    "id": "urologia_001_002",
     "materia": [
       "urologia",
-      "infectologia"
+      "urgencias"
     ],
     "submateria": [
-      "Síndromes clínicos",
-      "HIV"
+      "Fracaso renal agudo",
+      "Patología renal y urológica urgente"
     ],
-    "enunciado": "Un hombre de 29 años con VIH (bajo terapia antirretroviral) ingresa por debilidad e incapacidad para mover las extremidades inferiores. No presenta dolor abdominal, pero ha tenido náuseas y vómitos durante los últimos 10 días. Refiere diarrea de varios meses de evolución. Al examen físico se presenta caquéctico, responde mínimamente a estímulos y está desorientado. Está afebril, la FC es de 110/min que cambia a 130/min en posición de pie, la FR es de 18/min y la TA de 95/40 mmHg que cambia a 80/40 mmHg en posición de pie. La turgencia cutánea está disminuida y las membranas mucosas están secas. El examen cardiaco, respiratorio y abdominal es normal. No se observa edema. Los pares craneales II a XII están intactos. La fuerza de las extremidades superiores es normal. Se observa una debilidad marcada en las extremidades inferiores, si bien los reflejos están intactos y no hay signo de Babinski. La propiocepción y la función sensorial están intactas. Laboratorio: Hto 23%, glóbulos blancos 1200/ul plaquetas 78.000/ul. Electrolitos séricos: NA+ 137 mEq/L, K+ 3,2 mEq/L, CL- 109 mEq/L, HCO3 15 mEq/L, Ca++ 9,1 mg/dL fósforo 0,7 mg/dL, urea 36 mg/dL creatinina 1,4 mg/dL albúmina 2,7 g/dL colesterol plasmático 110 mg/dL, Mg++ sérico 1,5 mEq/L. Orina: densidad 1.015, proteínas: vestigios, microscópico: (-): prueba en heces SOMF (-). El tratamiento inicial más adecuado sería:",
+    "enunciado": "Una mujer de 35 años es admitida en la unidad de cuidados intensivos con neumonia neumocócica e hipotensión. Pese a la restitución adecuada de volumen se mantiene hipotensa y se comienza con vasopresores. Luego de la admisión, los valores de creatinina son de 1.5 mg/dL y se elevan a 5.1 mg/dL en el tercer día de hospitalización. El examen de orina muestra cilindros granulosos de color pardo turbio. Ud. diagnostica insuficiencia renal aguda. ¿Cuál es el mecanismo fisiopatológico de la reducción de la tasa de filtración glomerular en este caso? [cite: 31, 32, 33, 34, 35]",
     "opciones": {
-      "a": "Magnesio",
-      "b": "Fosfato",
-      "c": "Potasio",
-      "d": "Vitamina D"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-002",
-    "materia": [
-      "urologia"
-    ],
-    "submateria": [
-      "Fracaso renal agudo"
-    ],
-    "enunciado": "Una mujer de 35 años es admitida en la unidad de cuidados intensivos con neumonía neumocócica e hipotensión. Pese a la restitución adecuada de volumen se mantiene hipotensa y se comienza con vasopresores. Luego de la admisión, los valores de creatinina son de 1.5 mg/dL y se elevan a 5.1 mg/dL en el tercer día de hospitalización. El examen de orina muestra cilindros granulosos de color pardo turbio. Ud. diagnostica insuficiencia renal aguda. ¿Cuál es el mecanismo fisiopatológico de la reducción de la tasa de filtración glomerular en este caso?",
-    "opciones": {
-      "a": "Mayor relajación de las arteriolas eferentes",
-      "b": "Hipovolemia",
-      "c": "Necrosis tubular aguda",
-      "d": "Glomerulonefritis"
+      "a": "Mayor relajación de las arteriolas eferentes [cite: 40]",
+      "b": "Hipovolemia [cite: 41]",
+      "c": "Necrosis tubular aguda [cite: 42]",
+      "d": "Glomerulonefritis [cite: 44]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La presencia de **cilindros granulosos de color pardo turbio** en el sedimento urinario, en el contexto de hipotensión prolongada y uso de vasopresores, es el sello patognomónico de la **Necrosis tubular aguda** isquémica . [cite: 46]",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-003",
+    "id": "urologia_001_003",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Síndromes clínicos"
     ],
-    "enunciado": "Un hombre de 39 años que presenta respiración dificultosa y obnubilación mental acude al servicio de urgencia. La exploración física es irrelevante. Los estudios de laboratorio muestran lo siguiente: NA+ 144 mEq/L, K+ 3.7 mEq/L, CL- 97 mEq/L, HCO3: 16 mEq/L, pH 7.42 y pCO2 21 mmHg. ¿Cuál de las siguientes alteraciones acido básicas indican estos resultados?",
+    "enunciado": "Un hombre de 39 años que presenta respiración dificultosa y obnubilación mental acude al servicio de urgencia. La exploración física es irrelevante. Los estudios de laboratorio muestran lo siguiente: NA+ 144 mEq/L, K+ 3.7 mEq/L, CL- 97 mEq/L, HCO3: 16 mEq/L, pH 7.42 y pCO2 21 mmHg. ¿Cuál de las siguientes alteraciones acido básicas indican estos resultados? [cite: 50, 51, 52]",
     "opciones": {
-      "a": "Alcalosis metabólica y acidosis respiratoria",
-      "b": "Acidosis metabólica compensada",
-      "c": "Acidosis metabólica y alcalosis respiratoria",
-      "d": "Alcalosis respiratoria"
+      "a": "Alcalosis metabólica y acidosis respiratoria [cite: 57]",
+      "b": "Acidosis metabólica compensada [cite: 58]",
+      "c": "Acidosis metabólica y alcalosis respiratoria [cite: 60]",
+      "d": "Alcalosis respiratoria [cite: 62]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un bicarbonato bajo (16 mEq/L) que indica acidosis metabólica, con un anión gap elevado (144 - [97 + 16] = 31). Sin embargo, la pCO2 está excesivamente baja (21 mmHg) para la compensación esperada, resultando en un pH casi normal (7.42), lo que indica la coexistencia de una **alcalosis respiratoria** primaria además de la **acidosis metabólica**[cite: 64].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-004",
+    "id": "urologia_001_004",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fracaso renal agudo"
     ],
-    "enunciado": "Ante un paciente en postoperatorio con insuficiencia renal aguda es importante distinguir entre un cuadro prerrenal y la lesión tubular renal. Las determinaciones de la osmolalidad urinaria y de la concentración de sodio ayudan a establecer el diagnóstico correcto. Un paciente con insuficiencia renal aguda prerrenal probablemente presentará los siguientes datos de laboratorio:",
+    "enunciado": "Ante un paciente en postoperatorio con insuficiencia renal aguda es importante distinguir entre un cuadro prerrenal y la lesión tubular renal. Las determinaciones de la osmolalidad urinaria y de la concentración de sodio ayudan a establecer el diagnóstico correcto. Un paciente con insuficiencia renal aguda prerrenal probablemente presentará los siguientes datos de laboratorio: [cite: 67, 68, 69]",
     "opciones": {
-      "a": "Osmolalidad urinaria >500 mOsm/L, sodio en orina >40 mEq/L",
-      "b": "Osmolalidad urinaria <350 mOsm/L sodio en orina <20 mEq/L",
-      "c": "Osmolalidad urinaria <350 mOsm/L sodio en orina >40 mEq/L",
-      "d": "Osmolalidad urinaria >500 mOsm/L sodio en orina <20 mEq/L"
+      "a": "Osmolalidad urinaria >500 mOsm/L, sodio en orina >40 mEq/ [cite: 74]",
+      "b": "Osmolalidad urinaria <350 mOsm/L sodio en orina <20 mEq/L [cite: 75]",
+      "c": "Osmolalidad urinaria <350 mOsm/L sodio en orina >40 mEq/L [cite: 76]",
+      "d": "Osmolalidad urinaria >500 mOsm/L sodio en orina <20 mEq/L [cite: 78]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la insuficiencia renal aguda prerrenal, los riñones responden a la hipoperfusión conservando agua y sodio de forma extrema. Esto se refleja en una orina concentrada (**Osmolalidad urinaria >500 mOsm/L**) y con bajo contenido de sodio (**sodio en orina <20 mEq/L**)[cite: 80].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-005",
-    "materia": [
-      "urologia"
-    ],
-    "submateria": [
-      "Fisiología renal"
-    ],
-    "enunciado": "Un estudiante universitario de 20 años busca atención médica por presentar mareo. Acaba de concluir un partido de tenis agobiante y no ingirió agua o líquido. Su presión arterial en posición supina es de 110/70 mmHg y su frecuencia cardiaca es de 105 latidos/minuto. En la posición vertical, la presión arterial es de 95/60 mmHg con una frecuencia cardiaca de 125 latidos/minuto. Su T. y estado mental son normales. ¿Cuál de los siguientes resultados de laboratorio es más compatible con este paciente?",
-    "opciones": {
-      "a": "Cociente urea/creatinina en suero < 20",
-      "b": "Sodio urinario < 20 mEq/L",
-      "c": "Potasio urinario < 20 mEq/L",
-      "d": "Sodio sérico < 140 mEq/L"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-006",
+    "id": "urologia_001_005",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Síndromes clínicos"
     ],
-    "enunciado": "¿Cuál de las siguientes situaciones clínicas que cursan con acidosis metabólica con aumento de ácido láctico no puede ser incluida en el grupo denominado acidosis láctica tipo B?",
+    "enunciado": "Un estudiante universitario de 20 años busca atención médica por presentar mareo. Acaba de concluir un partido de tenis agobiante y no ingirió agua o líquido. Su presión arterial en posición supina es de 110/70 mmHg y su frecuencia cardiaca es de 105 latidos/minuto. En la posición vertical, la presión arterial es de 95/60 mmHg con una frecuencia cardiaca de 125 latidos/minuto. Su T. y estado mental son normales. ¿Cuál de los siguientes resultados de laboratorio es más compatible con este paciente? [cite: 84, 85, 86, 87, 88]",
     "opciones": {
-      "a": "Insuficiencia hepática",
-      "b": "Estado terminal en enfermo neoplásico",
-      "c": "Cuadro de shock",
-      "d": "Intoxicación por tóxicos (etanol o metanol)"
+      "a": "Cociente urea/creatinina en suero < 20 [cite: 93]",
+      "b": "Sodio urinario <20 mEq/L [cite: 95]",
+      "c": "Potasio urinario <20 mEq/L [cite: 96]",
+      "d": "Sodio sérico <140 mEq/L [cite: 97]"
     },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "correcta": "b",
+    "explicacion": "El paciente presenta claros signos de contracción de volumen (hipovolemia) con hipotensión ortostática secundaria a deshidratación. En este estado prerrenal, el riñón normal reacciona reabsorbiendo al máximo el sodio para restaurar el volumen circulante, resultando en un **sodio urinario <20 mEq/L**[cite: 99].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-007",
+    "id": "urologia_001_006",
+    "materia": [
+      "urologia"
+    ],
+    "submateria": [
+      "Síndromes clínicos"
+    ],
+    "enunciado": "¿Cuál de las siguientes situaciones clínicas que cursan con acidosis metabólica con aumento de ácido láctico no puede ser incluida en el grupo denominado acidosis láctica tipo B? [cite: 103]",
+    "opciones": {
+      "a": "Insuficiencia hepática [cite: 109]",
+      "b": "Estado terminal en enfermo neoplásico [cite: 110]",
+      "c": "Cuadro de shock [cite: 112]",
+      "d": "Intoxicación por tóxicos (etanol o metanol) [cite: 113]"
+    },
+    "correcta": "c",
+    "explicacion": "La acidosis láctica se divide clásicamente en tipo A (asociada a hipoperfusión o hipoxia tisular evidente) y tipo B (sin hipoxia tisular franca). El **cuadro de shock** es el ejemplo paradigmático de acidosis láctica tipo A, por lo que no se incluye en el tipo B[cite: 115].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_007",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Insuficiencia renal crónica"
     ],
-    "enunciado": "¿Cuál de las siguientes situaciones clínicas que cursan generalmente con acidosis metabólica con hiato aniónico o anión gap normal puede experimentar un incremento del anión gap?",
+    "enunciado": "¿Cuál de las siguientes situaciones clínicas que cursan generalmente con acidosis metabólica con hiato aniónico o anión gap normal puede experimentar un incremento del anión gap? [cite: 119]",
     "opciones": {
-      "a": "Acidosis tubular distal (acidosis tubular renal tipo A)",
-      "b": "Insuficiencia renal",
-      "c": "Acidosis tubular proximal (acidosis tubular renal tipo II)",
-      "d": "Pérdidas de secreciones digestivas ricas en bicarbonato"
+      "a": "Acidosis tubular distal (acidosis tubular renal tipo A) [cite: 125]",
+      "b": "Insuficiencia renal [cite: 126]",
+      "c": "Acidosis tubular proximal (acidosis tubular renal tipo I) [cite: 127]",
+      "d": "Pérdidas de secreciones digestivas ricas en bicarbonato [cite: 128]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En etapas tempranas, la **Insuficiencia renal** cursa con acidosis metabólica de anión gap normal debido a la disminución en la excreción de amonio. A medida que progresa y la TFG cae de manera importante, se retienen aniones no medibles (fosfatos, sulfatos, uratos), lo que genera un incremento del anión gap[cite: 130].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-008",
+    "id": "urologia_001_008",
     "materia": [
       "urologia",
       "neurologia"
@@ -165,66 +172,71 @@
       "Síndromes clínicos",
       "Metabólicas"
     ],
-    "enunciado": "Un hombre de 63 años es llevado al departamento de urgencias después de presentar una convulsión. Tiene antecedentes de una masa pulmonar no resecable tratada con radioterapia paliativa. Se sabe que tiene sodio en suero de 128 mEq/L en forma crónica. La esposa del paciente refiere que la noche antes de la admisión se encontraba somnoliento. Esta mañana, mientras ella trataba de despertarlo, el paciente presentó una convulsión tónico-clónica generalizada de aproximadamente un minuto de duración. En la sala de urgencias no reacciona. Los signos vitales y la exploración física por demás son normales. El sodio en suero tiene cifras de 111 mEq/L. El paciente es tratado con solución salina a 3% y trasladado a la unidad de cuidados intensivos. Un día más tarde, el sodio en suero es de 137 mEq/L. El paciente no tiene más convulsiones desde la admisión y se encuentra despierto, pero raras veces puede mover sus extremidades y esta disártrico. ¿Cuál de los siguientes estudios tiene más posibilidades de explicar su trastorno actual?",
+    "enunciado": "Un hombre de 63 años es llevado al departamento de urgencias después de presentar una convulsión. Tiene antecedentes de una masa pulmonar no resecable tratada con radioterapia paliativa. Se sabe que tiene sodio en suero de 128 mEq/L en forma crónica. La esposa del paciente refiere que la noche antes de la admisión se encontraba somnoliento. Esta mañana, mientras ella trataba de despertarlo, el paciente presento una convulsión tónico-clónica generalizada de aproximadamente un minuto de duración. En la sala de urgencias no reacciona. Los signos vitales y la exploración física por demás son normales. El sodio en suero tiene cifras de 111 mEq/L. El paciente es tratado con solución salina a 3% y trasladado a la unidad de cuidados intensivos. Un día más tarde, el sodio en suero es de 137 mEq/L El paciente no tiene más convulsiones desde la admisión y se encuentra despierto, pero raras veces puede mover sus extremidades y esta disártrico. ¿Cuál de los siguientes estudios tiene más posibilidades de explicar su trastorno actual? [cite: 132, 133, 134, 135, 136, 137, 138, 139, 140]",
     "opciones": {
-      "a": "Imágenes de resonancia magnética del tallo encefálico que muestran desmielinización.",
-      "b": "Arteriografía que muestra un trombo en la arteria vertebral.",
-      "c": "Ecocardiografía transesofágica que muestra un trombo auricular izquierdo.",
-      "d": "Tomografía computarizada de la cabeza que muestra metástasis."
+      "a": "Imágenes de resonancia magnética del tallo encefálico que muestran desmielinización. [cite: 142]",
+      "b": "Arteriografía que muestra un trombo en la arteria vertebral. [cite: 144]",
+      "c": "Ecocardiografía transesofágica que muestra un trombo auricular izquierdo. [cite: 148]",
+      "d": "Tomografía computarizada de la cabeza que muestra metástasis. [cite: 149]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente experimentó una corrección excesivamente rápida del sodio sérico (de 111 mEq/L a 137 mEq/L en un día), lo que es el desencadenante clásico del síndrome de desmielinización osmótica (mielinolisis central pontina). El estudio confirmatorio serían las **Imágenes de resonancia magnética del tallo encefálico que muestran desmielinización** . [cite: 151]",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-009",
+    "id": "urologia_001_009",
     "materia": [
-      "urologia"
+      "urologia",
+      "gastroenterologia"
     ],
     "submateria": [
-      "Síndromes clínicos"
+      "Síndromes clínicos",
+      "Otras preguntas de gastroenterología"
     ],
-    "enunciado": "En un paciente de 38 años, normotenso, se encuentra una concentración sérica de potasio de 2,7 mEq/L. La excreción de potasio en orina es de 10 mEq/L. El bicarbonato sérico es de 32 mEq/L. Basándonos en los datos disponibles, ¿Cuál es la causa de la hipokalemia del paciente?",
+    "enunciado": "En un paciente de 38 años, normotenso, se encuentra una concentración sérica de potasio de 2,7 mEq/L. La excreción de potasio en orina es de 10 mEq/L. El bicarbonato sérico es de 32 mEq/L. Basándonos en los datos disponibles, ¿Cuál es la causa de la hipokalemia del paciente? [cite: 155, 156]",
     "opciones": {
-      "a": "Acidosis tubular renal",
-      "b": "Pérdidas gastrointestinales",
-      "c": "Síndrome de Bartter",
-      "d": "Tumor maligno secretor de renina"
+      "a": "Acidosis tubular renal [cite: 162]",
+      "b": "Pérdidas gastrointestinales [cite: 163]",
+      "c": "Síndrome de Bartter [cite: 164]",
+      "d": "Tumor maligno secretor de renina [cite: 165]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta hipopotasemia con alcalosis metabólica (HCO3 elevado) y una baja excreción urinaria de potasio (< 15-20 mEq/L), lo cual descarta pérdidas renales primarias. Este patrón es característico de las **Pérdidas gastrointestinales** extra-renales de potasio[cite: 167].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-010",
+    "id": "urologia_001_010",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fracaso renal agudo"
     ],
-    "enunciado": "¿Cuál de los siguientes índices de función renal se encuentra aumentado en la insuficiencia renal aguda intrarrenal o renal?",
+    "enunciado": "¿Cuál de los siguientes indices de función renal se encuentra aumentado en la insuficiencia renal aguda intrarrenal o renal? [cite: 171]",
     "opciones": {
-      "a": "Osmolalidad orina",
-      "b": "Excreción fraccional de sodio",
-      "c": "Urea orina/urea plasma",
-      "d": "Creatinina orina/urea plasma"
+      "a": "Osmolalidad orina [cite: 176]",
+      "b": "Excreción fraccional de sodio [cite: 177]",
+      "c": "Urea orina/urea plasma [cite: 178]",
+      "d": "Creatinina orina/urea plasma [cite: 179]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la insuficiencia renal intrínseca (como la NTA), el daño tubular impide la correcta reabsorción de sodio, por lo que la **Excreción fraccional de sodio** suele encontrarse aumentada (típicamente >2%)[cite: 181].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-011",
+    "id": "urologia_001_011",
     "materia": [
       "urologia",
       "cardiologia"
@@ -233,66 +245,69 @@
       "Síndromes clínicos",
       "Hipertensión arterial y factores de riesgo"
     ],
-    "enunciado": "Una mujer de 74 años acude a su médico a consulta de control por hipertensión. Una semana antes había comenzado con una medicación oral para la hipertensión. No toma otros medicamentos. La TA es de 125/80 mmHg, y la FC es de 72/Lpm. La química sérica revela sodio de 132 mEq/L. Dos semanas antes las químicas serias fueron normales. ¿Cuál de los siguientes medicamentos muy probablemente se inició una semana antes?",
+    "enunciado": "Una mujer de 74 años acude a su médico a consulta de control por hipertensión. Una semana antes había comenzado con una medicación oral para la hipertensión. No toma otros medicamentos. La TA es de 125/80 mmHg, y la FC es de 72/Lpm. La química sérica revela sodio de 132 mEq/L. Dos semanas antes las químicas serias fueron normales. ¿Cuál de los siguientes medicamentos muy probablemente se inició una semana antes? [cite: 185, 186, 187, 188]",
     "opciones": {
-      "a": "Hidroclorotiazida",
-      "b": "Enalapril",
-      "c": "Espironolactona",
-      "d": "Furosemida"
+      "a": "Hidroclorotiazida [cite: 192]",
+      "b": "Enalapril [cite: 193]",
+      "c": "Espironolactona [cite: 194]",
+      "d": "Furosemida [cite: 196]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El desarrollo de hiponatremia euvolémica al inicio del tratamiento antihipertensivo es un efecto adverso clásico y representativo del uso de diuréticos tiazídicos como la **Hidroclorotiazida**[cite: 198].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-012",
+    "id": "urologia_001_012",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Síndromes clínicos"
     ],
-    "enunciado": "Un hombre de 36 años es sometido a una artroscopia de rodilla para reparar los ligamentos cruzados. En el postoperatorio se indica paracetamol para control del dolor. La exploración física revela presión arterial de 140/95 mmHg, frecuencia cardiaca de 100 latidos/minuto y TEMP de 36°C. Refiere dolor intenso en la rodilla, la cual no presenta signos de flogosis. Presenta el siguiente laboratorio: sodio: 128 mEq/L, potasio: 4.0 mEq/L, cloruro: 95 mEq/L, bicarbonato: 25 mEq/L, Urea: 12 mg/dL creatinina: 1.0 mg/dL. ¿Cuál de los siguientes tratamientos es más apropiado por el momento?",
+    "enunciado": "Un hombre de 36 años es sometido a una artroscopia de rodilla para reparar los ligamentos cruzados. En el postoperatorio se indica paracetamol para control del dolor. La exploración física revela presión arterial de 140/95 mmHg, frecuencia cardiaca de 100 latidos/minuto y TEMP de 36°C. Refiere dolor intenso en la rodilla, la cual no presenta signos de flogosis. Presenta el siguiente laboratorio: sodio: 128 mEq/L, potasio: 4.0 mEq/L, cloruro: 95 mEq/L, bicarbonato: 25 mEq/L, Urea: 12 mg/dL creatinina: 1.0 mg/dL. ¿Cuál de los siguientes tratamientos es más apropiado por el momento? [cite: 201, 202, 203, 204, 205]",
     "opciones": {
-      "a": "Furosemida",
-      "b": "Morfina",
-      "c": "Solución salina normal",
-      "d": "Solución salina hipertónica"
+      "a": "Furosemida [cite: 208]",
+      "b": "Morfina [cite: 209]",
+      "c": "Solución salina normal [cite: 210]",
+      "d": "Solución salina hipertónica [cite: 211]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta hiponatremia aguda euvolémica inducida por el dolor intenso postoperatorio (un potente estímulo no osmótico para la secreción de ADH, configurando un cuadro tipo SIADH). El tratamiento más apropiado en primera instancia es controlar el estímulo desencadenante con un analgésico potente como la **Morfina**[cite: 213].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-013",
+    "id": "urologia_001_013",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Síndromes clínicos"
     ],
-    "enunciado": "Un hombre de 33 años es llevado al médico después de concluir una maratón. Al terminar estaba desorientado y mareado. Su peso normal es de 60 kg. En la exploración física su T. corporal es de 38.3° C, su presión arterial tiene cifras de 85/60 mmHg y su FC es de 125/Lpm. Las venas del cuello del paciente están planas y la turgencia de su pie es deficiente. En los estudios de laboratorio se encuentra un sodio en suero de 175 mEq/L. El déficit de agua libre estimado del paciente es de:",
+    "enunciado": "Un hombre de 33 años es llevado al médico después de concluir una maratón. Al terminar estaba desorientado y mareado. Su peso normal es de 60 kg. En la exploración física su T. corporal es de 38.3° C, su presión arterial tiene cifras de 85/60 mmHg y su FC es de 125/Lpm. Las venas del cuello del paciente están planas y la turgencia de su pie es deficiente. En los estudios de laboratorio se encuentra un sodio en suero de 175 mEq/L. El déficit de agua libre estimado del paciente es de: [cite: 217, 218, 219, 220, 221]",
     "opciones": {
-      "a": "1.5 L.",
-      "b": "6 L.",
-      "c": "9 L.",
-      "d": "12 L."
+      "a": "1.5 L. [cite: 226]",
+      "b": "6 L. [cite: 227]",
+      "c": "9 L. [cite: 228]",
+      "d": "12 L. [cite: 229]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cálculo del déficit de agua se realiza usando la fórmula: Déficit de agua = Agua corporal total × ((Na sérico / 140) - 1).\n\nPara este paciente:\n- ACT = 0.6 × 60 kg = 36 L.\n- Déficit = 36 × ((175 / 140) - 1)\n- Déficit = 36 × (1.25 - 1)\n- Déficit = 36 × 0.25 = **9 L.** [cite: 231]",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-014",
+    "id": "urologia_001_014",
     "materia": [
       "urologia",
       "toxicologia"
@@ -301,22 +316,23 @@
       "Síndromes clínicos",
       "Toxicología"
     ],
-    "enunciado": "¿Cuál de las siguientes intoxicaciones agudas que cursan con acidosis metabólica con hiato aniónico o anión gap aumentado puede coexistir con alcalosis respiratoria?",
+    "enunciado": "¿Cuál de las siguientes intoxicaciones agudas que cursan con acidosis metabólica con hiato aniónico o anión gap aumentado puede coexistir con alcalosis respiratoria? [cite: 235]",
     "opciones": {
-      "a": "Intoxicación por salicilatos",
-      "b": "Intoxicación por metanol",
-      "c": "Intoxicación etílica",
-      "d": "Intoxicación por etilenglicol"
+      "a": "Intoxicación por salicilatos [cite: 240]",
+      "b": "Intoxicación por metanol [cite: 241]",
+      "c": "Intoxicación etilica [cite: 243]",
+      "d": "Intoxicación por etilenglicol [cite: 245]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Intoxicación por salicilatos** es clásicamente conocida por producir un trastorno ácido-base mixto: estimula directamente el centro respiratorio causando una alcalosis respiratoria primaria, además de generar una acidosis metabólica primaria con anión gap elevado (debido a la acumulación del ácido y alteración del metabolismo celular)[cite: 247].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-015",
+    "id": "urologia_001_015",
     "materia": [
       "urologia",
       "endocrinologia"
@@ -325,134 +341,138 @@
       "Síndromes clínicos",
       "Hipotálamo / Hipófisis"
     ],
-    "enunciado": "Un hombre de 50 años es hospitalizado con neumonía. Tiene buena evolución después de la administración de antibióticos, pero se advierte que su sodio se eleva de 140 a 154 mEq/L en el curso de dos días. Refiere sed y ha tenido gasto urinario de aproximadamente 5 L por día. ¿Cuál de los siguientes ese el paso más apropiado para evaluar el trastorno del paciente?",
+    "enunciado": "Un hombre de 50 años es hospitalizado con neumonía. Tiene buena evolución después de la administración de antibióticos, pero se advierte que su sodio se eleva de 140 a 154 mEq/L en el curso de dos días. Refiere sed y ha tenido gasto urinario de aproximadamente 5 L por día. ¿Cuál de los siguientes ese el paso más apropiado para evaluar el trastorno del paciente? [cite: 251, 252, 253]",
     "opciones": {
-      "a": "Determinación de la osmolalidad sérica",
-      "b": "Determinación del nivel de vasopresina en suero",
-      "c": "Determinación del sodio urinario de 24 horas",
-      "d": "Prueba de restricción de agua libre"
+      "a": "Determinación de la osmolalidad sérica [cite: 259]",
+      "b": "Determinación del nivel de vasopresina en suero [cite: 260]",
+      "c": "Determinación del sodio urinario de 24 horas [cite: 261]",
+      "d": "Prueba de restricción de agua libre [cite: 262]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un cuadro compatible con diabetes insípida de reciente comienzo. El estudio indicado para clasificar el trastorno fisiopatológicamente (distinguir entre causa central o nefrogénica en este contexto) es la **Determinación del nivel de vasopresina en suero**[cite: 264].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-016",
+    "id": "urologia_001_016",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Fisiología renal"
+      "Síndromes clínicos"
     ],
-    "enunciado": "Una mujer de 26 años que compitió en una maratón, a horas antes del mismo día presenta síntomas compatibles con hipovolemia, lo que incluye sed y mareos en posición de pie. Cabría esperar los siguientes resultados en los estudios de laboratorio, excepto:",
+    "enunciado": "Una mujer de 26 años que compitió en una maratón, a horas antes del mismo día presenta sintomas compatibles con hipovolemia, lo que incluye sed y mareos en posición de pie. Cabría esperar los siguientes resultados en los estudios de laboratorio, excepto: [cite: 268, 269]",
     "opciones": {
-      "a": "Osmolaridad urinaria < 300 mOsm/L",
-      "b": "Densidad urinaria > 1.015",
-      "c": "Cociente nitrógeno de urea sanguínea/creatinina > 20",
-      "d": "Sodio urinario < 20 mEq/L"
+      "a": "Osmolaridad urinaria <300 mOsm/L [cite: 272]",
+      "b": "Densidad urinaria >1.015 [cite: 273]",
+      "c": "Cociente nitrógeno de urea sanguínea/ creatinina >20 [cite: 274]",
+      "d": "Sodio urinario <20 mEq/L [cite: 275]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la hipovolemia franca post-esfuerzo, el riñón normal conservará agua de forma extrema, generando una orina muy concentrada, por lo cual es incorrecto esperar una **Osmolaridad urinaria <300 mOsm/L** (ésta debería ser alta, típicamente >500 mOsm/L)[cite: 277].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-017",
+    "id": "urologia_001_017",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fracaso renal agudo"
     ],
-    "enunciado": "Señale entre las siguientes opciones la que no corresponde al diagnóstico de insuficiencia renal aguda prerrenal:",
+    "enunciado": "Señale entre las siguientes opciones la que no corresponde al diagnóstico de insuficiencia renal aguda prerrenal: [cite: 281]",
     "opciones": {
-      "a": "Sodio urinario de 40 mEq/dL",
-      "b": "Densidad urinaria de 1022",
-      "c": "Osmolalidad urinaria mayor de 550 mOsm/kg de agua",
-      "d": "Relación en plasma de urea/creatinina de 22"
+      "a": "Sodio urinario de 40 mEq/dL [cite: 286]",
+      "b": "Densidad urinaria de 1022 [cite: 287]",
+      "c": "Osmolalidad urinaria mayor de 550 mOsm/kg de agua [cite: 288]",
+      "d": "Relación en plasma de urea/creatinina de 22 [cite: 289]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la insuficiencia renal prerrenal la conservación de sodio es máxima, por lo que se espera un sodio urinario inferior a 20 mEq/L. Un **Sodio urinario de 40 mEq/dL** sugiere daño tubular o renal intrínseco, no un patrón prerrenal[cite: 291].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-018",
+    "id": "urologia_001_018",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fisiología renal"
     ],
-    "enunciado": "¿Cuál de las siguientes sustancias pasa completamente al filtrado glomerular, sin que posteriormente sea reabsorbida y/o secretada por el túbulo renal?",
+    "enunciado": "¿Cuál de las siguientes sustancias pasa completamente al filtrado glomerular, sin que posteriormente sea reabsorbida y/o secretada por el túbulo renal? [cite: 295]",
     "opciones": {
-      "a": "Inulina",
-      "b": "Calcio y magnesio",
-      "c": "Sodio y potasio",
-      "d": "Urea"
+      "a": "Inulina [cite: 300]",
+      "b": "Calcio y magnesio [cite: 301]",
+      "c": "Sodio y potasio [cite: 303]",
+      "d": "Urea [cite: 304]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Inulina** es el patrón oro para medir el filtrado glomerular debido a que se filtra libremente a nivel glomerular y no sufre reabsorción ni secreción tubular[cite: 306].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-019",
+    "id": "urologia_001_019",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fisiología renal"
     ],
-    "enunciado": "¿Cuál de las siguientes sustancias es el principal contribuyente en la determinación de la osmolalidad plasmática?",
+    "enunciado": "¿Cuál de las siguientes sustancias es el principal contribuyente en la determinación de la osmolalidad plasmática? [cite: 310]",
     "opciones": {
-      "a": "Urea",
-      "b": "Proteínas",
-      "c": "Sodio",
-      "d": "Glucosa"
+      "a": "Urea [cite: 315]",
+      "b": "Proteínas [cite: 316]",
+      "c": "Sodio [cite: 318]",
+      "d": "Glucosa [cite: 319]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Sodio** y sus aniones acompañantes constituyen los principales determinantes del líquido extracelular y, por lo tanto, son los mayores contribuyentes a la osmolalidad plasmática efectiva[cite: 321].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-020",
+    "id": "urologia_001_020",
     "materia": [
-      "urologia",
-      "nutricion"
+      "urologia"
     ],
     "submateria": [
-      "Fisiología renal",
-      "Diabetes mellitus"
+      "Fisiología renal"
     ],
-    "enunciado": "Aunque la glucosa en orina puede aparecer a diferentes niveles de glucosa plasmática, variando según el flujo sanguíneo glomerular, índice de reabsorción tubular y flujo urinario, se puede generalizar diciendo que la glucosuria puede aparecer cuando la glucemia es superior a...",
+    "enunciado": "Aunque la glucosa en orina puede aparecer a diferentes niveles de glucosa plasmática, variando según el flujo sanguíneo glomerular, índice de reabsorción tubular y flujo urinario, se puede generalizar diciendo que la glucosuria puede aparecer cuando la glucemia es superior a... [cite: 325]",
     "opciones": {
-      "a": "140 mg/dL",
-      "b": "190 mg/dL",
-      "c": "180 mg/dl",
-      "d": "200 mg/dL"
+      "a": "140 mg/dL [cite: 327]",
+      "b": "190 mg/dL [cite: 328]",
+      "c": "180 mg/dl [cite: 329]",
+      "d": "200 mg/dL [cite: 330]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El umbral renal estándar para la reabsorción de glucosa en el túbulo contorneado proximal suele superarse cuando los niveles plasmáticos alcanzan valores aproximados a **180 mg/dL**, momento a partir del cual se presenta glucosuria clínica[cite: 332].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-021",
+    "id": "urologia_001_021",
     "materia": [
       "urologia",
       "endocrinologia"
@@ -461,22 +481,23 @@
       "Síndromes clínicos",
       "Hipotálamo / Hipófisis"
     ],
-    "enunciado": "Un hombre de 30 años sometido a cirugía para extirpación de un craneofaringioma, presenta a las 48 horas después de la cirugía los siguientes datos de laboratorio: electrolitos séricos: NA+ 169 mEq/L, CL- 125 mEq/L, K+ 4,5 mEq/L HCO3: 26 mEq/L, osmolaridad sérica 340/kg, osmolaridad en orina 100 mOsm/kg. ¿Cuál es la mejor explicación para la hipernatremia?",
+    "enunciado": "Un hombre de 30 años sometido a cirugía para extirpación de un craneofaringioma, presenta a las 48 horas después de la cirugía los siguientes datos de laboratorio: electrolitos séricos: NA+169 mEq/L, CL-125 mEq/L, K+4,5 mEq/L HCO3: 26 mEq/L, osmolaridad sérica 340/kg, osmolaridad en orina 100 mOsm/kg ¿Cuál es la mejor explicación para la hipernatremia? [cite: 336]",
     "opciones": {
-      "a": "Deficiencia de agua",
-      "b": "Deficiencia de hormona antidiurética (ADH)",
-      "c": "Síndrome de secreción inapropiada de ADH",
-      "d": "Deficiencia de ADH y agua"
+      "a": "Deficiencia de agua [cite: 338]",
+      "b": "Deficiencia de hormona antidiurética (ADH) [cite: 339]",
+      "c": "Síndrome de secreción inapropiada de ADH [cite: 340]",
+      "d": "Deficiencia de ADH y agua [cite: 342]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente cursa con diabetes insípida central posquirúrgica manifestada por orina inapropiadamente diluida frente a una alta osmolaridad sérica (falla en producción/secreción de ADH). Sumado a esto, presenta hipernatremia franca, lo cual revela la pérdida concomitante, determinando la **Deficiencia de ADH y agua** libres[cite: 344].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-022",
+    "id": "urologia_001_022",
     "materia": [
       "urologia",
       "psiquiatria"
@@ -485,138 +506,146 @@
       "Síndromes clínicos",
       "Trastornos de la conducta alimentaria"
     ],
-    "enunciado": "Una gimnasta de 16 años acude al consultorio quejándose de fatiga, debilidad difusa y calambres musculares. No tiene antecedentes personales patológicos previos y niega tabaquismo, alcoholismo o uso de drogas ilícitas. No tiene antecedentes familiares importantes. El examen muestra joven delgada con presión arterial normal baja. El índice de masa corporal (IMC) es de 18 kg/m2. El examen oral muestra una dentición deficiente. El tono muscular es normal y el examen neurológico también es normal. Los estudios de laboratorio muestran hematocrito de 38.5%, creatinina de 0.6 mg/dL, bicarbonato sérico de 30 mEq/L y potasio de 2.7 mEq/L. ¿Cuáles de los siguientes estudios incluiría la valoración adicional?",
+    "enunciado": "Una gimnasta de 16 años acude al consultorio quejándose de fatiga, debilidad difusa y calambres musculares. No tiene antecedentes personales patológicos previos y niega tabaquismo, alcoholismo o uso de drogas ilícitas. No tiene antecedentes familiares importantes. El examen muestra joven delgada con presión arterial normal baja. El indice de masa corporal (IMC) Es de 18 kg/m2. El examen oral muestra una dentición deficiente. El tono muscular es normal y el examen neurológico también es normal. Los estudios de laboratorio muestran hematocrito de 38.5%, creatinina de 0.6 mg/dL, bicarbonato sérico de 30 mEq/L y potasio de 2.7 mEq/L. ¿cuáles de los siguientes estudios incluiría la valoración adicional? [cite: 347, 348, 349, 350, 351, 352, 353]",
     "opciones": {
-      "a": "Niveles de renina y aldosterona en plasma",
-      "b": "Nivel de magnesio en suero.",
-      "c": "Análisis toxicológico de orina para determinar concentraciones de diuréticos",
-      "d": "Examen de orina y cultivo de orina"
+      "a": "Niveles de renina y aldosterona en plasma [cite: 356]",
+      "b": "Nivel de magnesio en suero. [cite: 358]",
+      "c": "Análisis toxicológico de orina para determinar concentraciones de diuréticos [cite: 361]",
+      "d": "Examen de orina y cultivo de orina [cite: 362]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico es altamente sugestivo de un trastorno de la conducta alimentaria (bulimia nerviosa con bajo peso) acompañado de vómitos recurrentes (dentición deficiente, alcalosis metabólica con hipopotasemia). Una causa concomitante oculta muy prevalente en estos cuadros es el abuso de purgas, por lo que resulta esencial un **Análisis toxicológico de orina para determinar concentraciones de diuréticos**[cite: 364].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-023",
+    "id": "urologia_001_023",
     "materia": [
       "urologia",
       "medicinafamiliar"
     ],
     "submateria": [
       "Síndromes clínicos",
-      "General"
+      "Adulto mayor"
     ],
-    "enunciado": "Una mujer de 83 años es trasladada del geriátrico al hospital debido a estupor que se desarrolló 3 días después de comenzar a recibir antibióticos por fiebre e infección de las vías urinarias. El examen físico muestra una Temp 38.6°C. FC 100/Lpm FR de 12/RPM y TA de 115/80 mmHg. La paciente se encuentra estuporosa y desorientada en cuanto a tiempo y espacio. El resto del examen médico general es normal. Laboratorio: Hto 43%, Hb 12,1 g/dL glucosa plasmática 95 mg/dL, electrolitos séricos: NA+ 167 mEq/L K+ 4,3 mEq/L CL- 129 mEq/L HCO3: 29 mEq/L nitrógeno ureico en sangre 25 mg/dL, creatinina sérica 1,0 mg/dL, orina: densidad 1.020, glucosa (-). La explicación más probable para la hipernatremia es:",
+    "enunciado": "Una mujer de 83 años es trasladada del geriátrico al hospital debido a estupor que se desarrolló 3 días después de comenzar a recibir antibióticos por fiebre e infección de las vías urinarias. El examen físico muestra una Temp 38.6° C. FC 100/Lpm FR de 12/RPM y TA de 115/80 mmHg. La paciente se encuentra estuporosa y desorientada en cuanto a tiempo y espacio. El resto del examen médico general es normal. Laboratorio: Hto 43%, Hb 12,1 g/dL glucosa plasmática 95 mg/dL, electrolitos séricos: NA+ 167 mEq/L, K+ 4,3 mEq/L CL- 129 mEq/L HCO3: 29 mEq/L nitrógeno ureico en sangre 25 mg/dL, creatinina sérica 1,0 mg/dL, orina: densidad 1.020, glucosa (-). La explicación más probable para la hipernatremia es: [cite: 368, 369, 370, 371, 372]",
     "opciones": {
-      "a": "Falta de acceso a agua libre de electrolitos",
-      "b": "Administración de NA+ hipertónico",
-      "c": "Agentes diuréticos",
-      "d": "Diabetes insípida nefrogénica"
+      "a": "Falta de acceso a agua libre de electrolitos [cite: 376]",
+      "b": "Administración de NA+ hipertónico [cite: 377]",
+      "c": "Agentes diuréticos [cite: 378]",
+      "d": "Diabetes insipida nefrogénica [cite: 379]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En adultos mayores frágiles o institucionalizados que desarrollan un cuadro infeccioso o febril con alteración del sensorio (estupor), la causa primordial y más frecuente de hipernatremia severa (Na de 167 mEq/L) no es de origen renal, sino la pérdida de la ingesta hídrica a raíz de la **Falta de acceso a agua libre de electrolitos** sumado a pérdidas insensibles aumentadas[cite: 381].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-024",
+    "id": "urologia_001_024",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Fracaso renal agudo"
     ],
-    "enunciado": "¿Cuál de los siguientes índices de función renal se encuentra disminuido en la insuficiencia renal aguda prerrenal?",
+    "enunciado": "¿Cuál de los siguientes indices de función renal se encuentra disminuido en la insuficiencia renal aguda prerrenal? [cite: 385]",
     "opciones": {
-      "a": "Sodio en orina",
-      "b": "Creatinina orina /urea plasma",
-      "c": "Osmolalidad orina",
-      "d": "Urea orina/urea plasma"
+      "a": "Sodio en orina [cite: 390]",
+      "b": "Creatinina orina /urea plasma [cite: 391]",
+      "c": "Osmolalidad orina [cite: 392]",
+      "d": "Urea orina/urea plasma [cite: 393]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante la hipoperfusión (estado prerrenal), los riñones incrementan notablemente la reabsorción tubular, resultando en índices de función en los que destaca una pronunciada disminución en el **Sodio en orina** (<20 mEq/L) en un intento por retener agua y expandir el volumen circulante[cite: 395].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-025",
+    "id": "urologia_001_025",
     "materia": [
-      "urologia"
+      "urologia",
+      "urgencias"
     ],
     "submateria": [
-      "Síndromes clínicos"
+      "Síndromes clínicos",
+      "Otras preguntas de urgencias"
     ],
-    "enunciado": "Una mujer de 53 años con historia de neumonía asociada a VIH y absceso pulmonar se vuelve progresivamente letárgica. A usted se le consulta para la evaluación de urgencia del paciente debido a que repentinamente presenta convulsiones generalizadas. Laboratorio: electrolitos séricos: NA+ 115 mEq/L, K+ 3.4 mEq/L CL- 83 mEq/L, HCO3: 2 mEq/L. Electrolitos urinarios: NA+ 34 mEq/L. Osmolaridad plasmática 245 mOsm/kg H2O, osmolaridad urinaria 260 mOsm/kg H2O. ¿Cuál sería la terapéutica indicada a instaurar en este paciente?",
+    "enunciado": "Una mujer de 53 años con historia de neumonía asociada a VIH y absceso pulmonar se vuelve progresivamente letárgica. A usted se le consulta para la evaluación de urgencia del paciente debido a que repentinamente presenta convulsiones generalizadas. Laboratorio: electrolitos séricos: NA+ 115 mEq/L K+ 3.4 mEq/L CL- 83 mEq/L, HCO3: 2 mEq/L. Electrolitos urinarios: NA+ 34 mEq/L. Osmolaridad plasmática 245 mOsm/kg H2(, osmolaridad urinaria 260 mOsm/kg H2O. ¿Cuál sería la terapéutica indicada a instaurar en este paciente? [cite: 399, 400, 401, 402]",
     "opciones": {
-      "a": "Dextrosa al 10% endovenosa",
-      "b": "5% de dextrosa endovenosa",
-      "c": "Suero salino isotónico",
-      "d": "Suero salino hipertónico endovenoso"
+      "a": "Dextrosa al 10% endovenosa [cite: 406]",
+      "b": "5% de dextrosa endovenosa [cite: 408]",
+      "c": "Suero salino isotónico [cite: 411]",
+      "d": "Suero salino hipertónico endovenoso [cite: 412]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta un cuadro de hiponatremia severa aguda (probablemente en el contexto de un SIADH inducido por la afección pulmonar) con síntomas neurológicos graves y amenazantes para la vida (convulsiones). El tratamiento inmediato imperativo en estos casos sintomáticos severos es el aumento rápido del sodio utilizando **Suero salino hipertónico endovenoso** para tratar el edema cerebral[cite: 414].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-026",
+    "id": "urologia_001_026",
     "materia": [
       "urologia",
       "infectologia"
     ],
     "submateria": [
       "Fracaso renal agudo",
-      "Endocarditis"
+      "Antibacterianos"
     ],
-    "enunciado": "Alberto, un hombre de 52 años ingresa al hospital para tratamiento de una endocarditis enterocóccica. Ha recibido ampicilina y gentamicina en las últimas 2 semanas. Los resultados de laboratorio son los siguientes: NA+ 145, K+ 5, CL- 110, HCO3 20, uremia 140 mg/dL, creatininemia 3.5 mg/dL sodio en orina 50 mEq/L, creatinina en orina 35 mg/dL ¿Cuál de las siguientes es la causa más probable de la insuficiencia renal del paciente?",
+    "enunciado": "Alberto, un hombre de 52 años ingresa al hospital para tratamiento de una endocarditis enterocóccica. Ha recibido ampicilina y gentamicina en las últimas 2 semanas. Los resultados de laboratorio son los siguientes: NA+ 145, K+ 5, CL- 110, HCO3) 20, uremia 140 mg/dL creatininemia 3.5 mg/dL sodio en orina 50 mEq/L, creatinina en orina 35 mg/dL ¿Cuál de las siguientes es la causa más probable de la insuficiencia renal del paciente?",
     "opciones": {
       "a": "Necrosis tubular aguda",
-      "b": "Pérdidas cutáneas insensibles",
+      "b": "Pérdidas cutâneas insensibles",
       "c": "Embolia de la arteria renal",
       "d": "Insuficiencia cardíaca"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta insuficiencia renal aguda en contexto de uso de aminoglucósidos (**gentamicina**), los cuales son reconocidos nefrotóxicos. Producen daño intrínseco directo y clásicamente causan **Necrosis tubular aguda**. Los índices urinarios (Sodio en orina elevado de 50 mEq/L) descartan un origen prerrenal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-027",
+    "id": "urologia_001_027",
     "materia": [
       "urologia",
       "otras"
     ],
     "submateria": [
-      "Fisiología renal",
+      "Síndromes clínicos",
       "Fármacos"
     ],
-    "enunciado": "Una mujer de 70 años se presenta en la sala de emergencias con dolor y edema en la rodilla después de caerse sobre una superficie de hielo hace 3 días. El dolor y el edema persisten a pesar del tratamiento con hielo e ibuprofeno. Está en seguimiento por hipertensión y recibe tratamiento con lisinopril 10 mg/dL su última visita al consultorio fue hace 2 meses. En el examen físico, su TA fue de 160/80 mmHg. El examen físico es normal excepto por el edema de la pierna derecha, que es más sensible a la altura de la rodilla. Laboratorio: electrolitos séricos: 2 meses antes y ahora en la sala de emergencia, NA+ 138 y 140 mEq/L, K+ 4,6 y 6,6 mEq/L, HCO3 24 y 23 mEq/L, urea 21 y 25 mg/dL creatinina 1,0 y 1,3 mg/dL, Creatinkinasa sérica 400 u/L, las dos veces. Ahora la orina tiene: pH 5, proteínas 1+, microscópico: 1 a 2 glóbulos rojos, 10 a 15 glóbulos blancos. La causa más probable de la hiperkalemia actual es:",
+    "enunciado": "Una mujer de 70 años se presenta en la sala de emergencias con dolor y edema en la rodilla después de caerse sobre una superficie de hielo hace 3 días. El dolor y el edema persisten a pesar del tratamiento con hielo e ibuprofeno. Está en seguimiento por hipertensión y recibe tratamiento con lisinopril 10 mg/dL su última visita al consultorio fue hace 2 meses. En el examen físico, su TA fue de 160/80 mmHg. El examen físico es normal excepto por el edema de la pierna derecha, que es más sensible a la altura de la rodilla. Laboratorio: electrolitos séricos: 2 meses antes y ahora en la sala de emergencia, NA+ 138 y 140 mEq/L, K+ 4,6 y 6,6 mEq/L, HCO3. 24 y 23 mEq/L mEq/L, urea 21 y 25 mg/dL creatinina 1,0 y 1,3 mg/dL, Creatinkinasa sérica 400 u/L, las dos veces. Ahora la orina tiene: pH 5, proteínas 1+, microscópico: 1 a 2 glóbulos rojos, 10 a 15 glóbulos blancos. La causa más probable de la hiperkalemia actual es:",
     "opciones": {
-      "a": "Hiperaldosteronismo hiporreninémico",
+      "a": "Hiperaldosteronismo hiporreninemico",
       "b": "Rabdomiólisis",
       "c": "Pielonefritis aguda",
       "d": "Hipoaldosteronismo inducido por fármacos"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente toma **lisinopril** (un IECA) e **ibuprofeno** (un AINE), ambos fármacos que interfieren con el eje renina-angiotensina-aldosterona. Los AINE inhiben la producción de renina y los IECA bloquean la formación de angiotensina II y aldosterona, llevando a un **Hipoaldosteronismo inducido por fármacos** que se manifiesta con esta hiperkalemia severa.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-028",
+    "id": "urologia_001_028",
     "materia": [
       "urologia"
     ],
@@ -631,21 +660,24 @@
       "d": "Acidosis metabólica más acidosis respiratoria"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente tiene un pH severamente ácido (7.15). Presenta un HCO3 bajo (16 mEq/L) que indica **Acidosis metabólica** (secundaria a la producción de ácido láctico por la convulsión prolongada), y simultáneamente una pCO2 elevada (46 mmHg) cuando debería estar disminuida como respuesta compensatoria. Esta retención de CO2 post-ictal revela una **acidosis respiratoria** sobreagregada.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-029",
+    "id": "urologia_001_029",
     "materia": [
-      "urologia"
+      "urologia",
+      "urologia_cx"
     ],
     "submateria": [
-      "Fracaso renal agudo"
+      "Fracaso renal agudo",
+      "Urgencias urológicas y traumatismos"
     ],
-    "enunciado": "Un hombre de 78 años es hospitalizado por insuficiencia renal de 6 meses de evolución. El día de hoy ha eliminado grandes cantidades de orina; sin embargo, en algunos días no orina en absoluto. En la actualidad su TA es de 180/90 mmHg, y por lo demás la exploración física es normal. Los estudios de laboratorio muestran urea sanguínea de 120 mg/dL y creatinina sérica de 4.2 mg/dL. El análisis de orina revela una densidad específica de 1.010; orina negativa para proteínas, glucosa y cuerpos cetónicos; presenta sangre y algunos leucocitos por campo en el examen microscópico. ¿Cuál de los siguientes es la causa más probable de insuficiencia renal?",
+    "enunciado": "Un hombre de 78 años es hospitalizado por insuficiencia renal de 6 meses de evolución. El día de hoy ha eliminado grandes cantidades de orina; sin embargo, en algunos días no orina en absoluto. En la actualidad su TA es de 180/90 mmHg, y por lo demás la exploración física es normal. Los estudios de laboratorio muestran urea sanguínea de 120 mg/dL y creatinina sérica de 4.2 mg/dL El análisis de orina revela una densidad específica de 1.010; orina negativa para proteínas, glucosa y cuerpos cetónicos; presenta sangre y algunos leucocitos por campo en el examen microscópico. ¿Cuál de los siguientes es la causa más probable de insuficiencia renal?",
     "opciones": {
       "a": "Uropatía obstructiva",
       "b": "Necrosis tubular aguda",
@@ -653,14 +685,15 @@
       "d": "Glomerulonefritis aguda"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El patrón miccional de alternancia entre poliuria (eliminación de grandes volúmenes tras la descompresión) y anuria franca (días sin orinar) es un hallazgo patognomónico y clásico de una **Uropatía obstructiva** intermitente parcial, muy frecuente en hombres de edad avanzada por hiperplasia prostática benigna.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-030",
+    "id": "urologia_001_030",
     "materia": [
       "urologia"
     ],
@@ -675,23 +708,22 @@
       "d": "Hipofosfatemia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la enfermedad renal crónica, la pérdida de masa renal funcionante conlleva a la retención de fósforo. Por lo tanto, el hallazgo característico es la **hiperfosfatemia**, no la **Hipofosfatemia**. El resto de las opciones (pericarditis urémica, desnutrición y miopatía) son complicaciones bien descritas de la uremia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-031",
+    "id": "urologia_001_031",
     "materia": [
-      "urologia",
-      "infectologia"
+      "urologia"
     ],
     "submateria": [
-      "Fracaso renal agudo",
-      "Antibacterianos"
+      "Fracaso renal agudo"
     ],
-    "enunciado": "Un hombre de 71 años internado en la unidad de cuidados intensivos quirúrgicos es visto porque presenta insuficiencia renal aguda. Después de la operación para extirpación de cálculos biliares, tuvo drenaje persistente del catéter biliar en relación con fiebre en espigas hasta 38.9°C. Ha tomado gentamicina 870 mg cada 8 horas y cefalotina (2 g 4 veces por día) en los 10 días previos. Durante los últimos 4 días la concentración sérica de creatinina aumentó a 1 mg/dL/dia, pero su gasto urinario de 1.5 l/día no ha disminuido. Hasta el momento no ha presentado hipotensión durante su interacción. La exploración física muestra TA y signos vitales normales. Los resultados de los estudios de laboratorio indica concentración de creatinina de 7.1 mg/dL y la ultrasonografía renal no revela datos de obstrucción. ¿Cuál de las siguientes es la causa más probable de insuficiencia renal aguda?",
+    "enunciado": "Un hombre de 71 años internado en la unidad de cuidados intensivos quirúrgicos es visto porque presenta insuficiencia renal aguda. Después de la operación para extirpación de cálculos biliares, tuvo drenaje persistente del catéter biliar en relación con fiebre en espigas hasta 38.9° C) Ha tomado gentamicina 870 mg cada 8 horas) Y cefalotina (2 g 4 veces por día) En los 10 días previos. Durante los últimos 4 días la concentración sérica de creatinina aumentó a 1 mg/dL/dia, pero su gasto urinario de 1.5 l/día no ha disminuido. Hasta el momento no ha presentado hipotensión durante su interacción. La exploración física muestra TA y signos vitales normales. Los resultados de los estudios de laboratorio indica concentración de creatinina de 7.1 mg/dL y la ultrasonografia renal no revela datos de obstrucción. ¿Cuál de las siguientes es la causa más probable de insuficiencia renal aguda?",
     "opciones": {
       "a": "Insuficiencia renal inducida por cefalotina",
       "b": "Sepsis y deshidratación",
@@ -699,19 +731,20 @@
       "d": "Traumatismo del uréter durante la cirugía"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente cursó con uso prolongado de **gentamicina** (un aminoglucósido) sin hipotensión clínica. Los aminoglucósidos son nefrotóxicos típicos que generan una necrosis tubular aguda. Es característico que esta falla renal se presente en forma no oligúrica (gasto urinario conservado de 1.5 L/día) tras 7 a 10 días de iniciado el tratamiento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-032",
+    "id": "urologia_001_032",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Síndromes clínicos"
     ],
     "enunciado": "Un paciente con síndrome nefrótico concurre a la consulta con el resultado del estudio fisicoquímico y del sedimento urinario. ¿Qué combinación de hallazgos son característicos de este síndrome?",
     "opciones": {
@@ -721,14 +754,15 @@
       "d": "Proteinuria ++, hematuria dismórfica con acantocituria, cilindros hemáticos y leucocitarios."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El síndrome nefrótico clásico se define por una pérdida masiva de proteínas y lípidos a través de la membrana glomerular. Esto se manifiesta en el sedimento como **Proteinuria +++\\++++**, y lipiduria en forma de **cuerpos ovales grasos** y **cilindros grasos** que frecuentemente exhiben cruces de Malta bajo luz polarizada.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-033",
+    "id": "urologia_001_033",
     "materia": [
       "urologia",
       "toxicologia"
@@ -737,28 +771,29 @@
       "Fracaso renal agudo",
       "Toxicología"
     ],
-    "enunciado": "Un hombre de 21 años, cocainómano, es traído a urgencias a causa de una sobredosis de cocaína. En ese momento, presenta dolor en las extremidades y en la espalda. No se informaron convulsiones. El examen físico revela un hombre que se muestra con sensorio alternante, con una t 38.8°C, FC 110/min y TA de 175/100 mmHg. Existen múltiples sitios de venopuntura en el antebrazo izquierdo. La orofaringe es normal; no hay soplos ni frote en el examen cardíaco. El examen abdominal no demuestra hepatoesplenomegalia. Se observa sensibilidad dolorosa a la palpación en todos los grupos musculares. Laboratorio: Hto 48%, blancos 10.750/mm3, urea 100 mg/dL, creatinina sérica 3,8 mg/dL, K+ sérico 4,9 mEq/L, Creatinkinasa sérica 10.350 u/L (VN: hasta 200 UI/L). Orina: pH 5,0, densidad 1,012, proteínas: vestigios, sangre 4+. Microscópico: 1 a 2 eritrocitos, 1 a 3 leucocitos con muchos cilindros pigmentados marrones. ¿Cuál de los siguientes diagnósticos es más compatible con el cuadro de este paciente?",
+    "enunciado": "Un hombre de 21 años, cocainómano, es traído a urgencias a causa de una sobredosis de cocaina. En ese momento, presenta dolor en las extremidades y en la espalda. No se informaron convulsiones. El examen físico revela un hombre que se muestra con sensorio alternante, con una t 38.8° C, FC 110/min y TA de 175/100 mmHg. Existen múltiples sitios de venopuntura en el antebrazo izquierdo. La orofaringe es normal; no hay soplos ni frote en el examen cardíaco. El examen abdominal no demuestra hepatoesplenomegalia. Se observa sensibilidad dolorosa a la palpación en todos los grupos musculares. Laboratorio: Hto 48%, blancos 10.750/mm3, urea 100 mg/dL, creatinina sérica 3,8 mg/dL, K+ sérico 4,9 mEq/L Creatinkinasa sérica 10.350 u/L (VN: hasta 200 UI/L). Orina: pH 5,0, densidad 1,012, proteínas: vestigios, sangre 4+. Microscópico: 1 a 2 eritrocitos, 1 a 3 leucocitos con muchos cilindros pigmentados marrones. ¿Cuál de los siguientes diagnósticos es más compatible con el cuadro de este paciente?",
     "opciones": {
-      "a": "Insuficiencia renal aguda prerrenal",
+      "a": "Insuficiencia renal aguda prerrena",
       "b": "Rabdomiólisis",
       "c": "Nefritis intersticial aguda",
       "d": "Insuficiencia renal aguda prerrenal"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La intoxicación por cocaína produce isquemia e hiperactividad muscular, desencadenando **Rabdomiólisis**. Se confirma mediante la clínica de mialgias intensas, CPK extremadamente elevada (>10.000 u/L), y un sedimento urinario patognomónico con tira reactiva fuertemente positiva para sangre (detecta mioglobina libre) pero escasos o nulos eritrocitos visuales.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-034",
+    "id": "urologia_001_034",
     "materia": [
       "urologia",
       "cardiologia"
     ],
     "submateria": [
-      "Riesgo cardiovascular y riñón",
+      "Riesgo cardiovascular y enfermedad renal",
       "Hipertensión arterial y factores de riesgo"
     ],
     "enunciado": "En un paciente hipertenso de 60 años que, al ser tratado con inhibidores de la enzima de conversión (IECA), presenta un deterioro brusco de la función renal, Ud. sospecharía que padece:",
@@ -769,21 +804,22 @@
       "d": "Hipertensión arterial maligna"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la **Hipertensión arterial vasculorrenal** (como estenosis bilateral de las arterias renales), la presión de filtración glomerular depende casi exclusivamente de la vasoconstricción de la arteriola eferente mediada por la angiotensina II. Al instaurar un IECA, esta autorregulación se bloquea y se produce una caída brusca y severa del filtrado glomerular.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-035",
+    "id": "urologia_001_035",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "infectologia"
     ],
     "submateria": [
-      "Fracaso renal agudo",
-      "Inmunodeprimidos no HIV"
+      "Trasplante renal",
+      "Virus no HIV"
     ],
     "enunciado": "Un paciente que fue sometido hace 5 meses a un trasplante renal desarrolla un cuadro febril, con malestar general, artromialgias y tos seca de una semana de evolución. En la analítica destacan: leucocitos 2.100/mm3; plaquetas 80.000/mm3; GOT 128 u/L; GPT 220 u/L pO2 28 mmHg. En la radiografía de tórax se observan discretos infiltrados intersticiales difusos. La etiología más probable es:",
     "opciones": {
@@ -793,14 +829,15 @@
       "d": "Pneumocystis jirovecii"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La infección oportunista viral más importante entre 1 a 6 meses posteriores a un trasplante de órgano sólido es el **Citomegalovirus (CMV)**. Típicamente produce un síndrome sistémico con afectación multiorgánica manifestado por neumonitis intersticial, leucopenia, trombocitopenia y hepatitis leve (elevación de las enzimas hepáticas).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-036",
+    "id": "urologia_001_036",
     "materia": [
       "urologia"
     ],
@@ -815,14 +852,15 @@
       "d": "Insuficiencia cardíaca congestiva con gasto alto"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los pacientes en diálisis crónica tienen un gran riesgo de complicaciones como amiloidosis por beta-2-microglobulina (provocando Síndrome del túnel carpiano) y eventos cardiovasculares (Infarto de miocardio e Insuficiencia cardíaca de alto gasto). Sin embargo, no hay evidencia concluyente de un **Aumento del riesgo de enfermedad maligna gastrointestinal** directamente asociado al procedimiento de diálisis.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-037",
+    "id": "urologia_001_037",
     "materia": [
       "urologia"
     ],
@@ -837,14 +875,15 @@
       "d": "Entre un 20-25% de los adultos mayores de 60 años padecen algún grado de ERC."
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El envejecimiento fisiológico sumado a la alta prevalencia de factores de riesgo sistémicos como diabetes y la hipertensión hacen que la afección de la función renal aumente considerablemente en las personas de la tercera edad. Se estima que **Entre un 20-25% de los adultos mayores de 60 años padecen algún grado de ERC**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-038",
+    "id": "urologia_001_038",
     "materia": [
       "urologia"
     ],
@@ -856,17 +895,18 @@
       "a": "Necrosis tubular aguda",
       "b": "Hipersensibilidad alérgica",
       "c": "Glomerulonefritis por complejos inmunitarios",
-      "d": "Émbolos de colesterol"
+      "d": "émbolos de colesterol"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente desarrolló nefropatía inducida por contraste (falla renal aguda 3 días tras el uso de contraste yodado intravenoso), que es especialmente prevalente en pacientes con nefropatía diabética previa. El daño que produce el contraste sobre las células tubulares (toxicidad e isquemia medular) genera el patrón de una **Necrosis tubular aguda**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-039",
+    "id": "urologia_001_039",
     "materia": [
       "urologia"
     ],
@@ -875,27 +915,28 @@
     ],
     "enunciado": "Cual de las siguientes afirmaciones acerca del cociente Albumina/Creatinina en orina es INCORRECTA",
     "opciones": {
-      "a": "Cuanto más elevado es este índice, mayor es el riesgo de eventos cardiovasculares",
+      "a": "Cuanto más elevado es este indice, mayor es el riesgo de eventos cardiovasculares",
       "b": "Permite el diagnóstico precoz de enfermedad renal crónica en pacientes con creatinina sérica normal.",
       "c": "No predice el riesgo de progresión hacia estadios avanzados de enfermedad renal crónica.",
       "d": "Tiene una excelente correlación con la albuminuria de 24 hs en casos de proteinuria leve a moderada."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Es INCORRECTO afirmar que el cociente albúmina/creatinina **No predice el riesgo de progresión hacia estadios avanzados**. Por el contrario, la magnitud de la albuminuria es uno de los marcadores pronósticos más potentes y validados para estimar la progresión del daño renal hacia fases terminales y de riesgo cardiovascular.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-040",
+    "id": "urologia_001_040",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "En un paciente con insuficiencia renal aguda (IRA), la presencia de cilindros hemáticos en el sedimento urinario implica:",
+    "enunciado": "En un paciente con insuficiencia renal aguda (ira), la presencia de cilindros hemáticos en el sedimento urinario implica:",
     "opciones": {
       "a": "Toxicidad de drogas",
       "b": "Compromiso glomerular",
@@ -903,21 +944,20 @@
       "d": "Origen prerrenal de la IRA"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los cilindros se forman exclusivamente en los túbulos renales. La presencia de eritrocitos en su interior (cilindros hemáticos) indica fehacientemente que los glóbulos rojos provienen desde el capilar glomerular (atraviesan la membrana basal por inflamación local), lo que constituye el signo inconfundible de **Compromiso glomerular** agudo (síndrome nefrítico).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-041",
+    "id": "urologia_001_041",
     "materia": [
-      "urologia",
-      "neumonologia"
+      "urologia"
     ],
     "submateria": [
-      "Síndromes clínicos",
-      "Ventilación y ventilación mecánica"
+      "Síndromes clínicos"
     ],
     "enunciado": "Una mujer de 24 años ingresa a urgencias sin antecedentes de importancia con un cuadro de disnea importante, datos de tetania y gran inquietud. Los gases en sangre mostraron: pH 7.65; pCO2 28 mmHg y HCO3 de 22 mEq/L. ¿Qué diagnóstico establecería usted?",
     "opciones": {
@@ -927,14 +967,15 @@
       "d": "Acidosis metabólica"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El aumento del pH por encima de 7.45 indica alcalemia. La causa primaria es una disminución marcada en la pCO2 (28 mmHg) debido a la hiperventilación (crisis de ansiedad y disnea), configurando una **Alcalosis respiratoria**. El trastorno reduce drásticamente los niveles de calcio iónico en suero al aumentar su unión a las proteínas, lo que desata clínicamente los **datos de tetania**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-042",
+    "id": "urologia_001_042",
     "materia": [
       "urologia"
     ],
@@ -949,14 +990,15 @@
       "d": "Acidosis láctica coexistente"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la insuficiencia renal crónica, la acidosis metabólica progresiva se debe principalmente al fallo tubular en la excreción de la carga ácida diaria del metabolismo. Esto ocurre a causa de una **Disminución de la producción de amoniaco por el riñón** ($NH_3$), el cual actúa como el principal aceptor de protones y búfer intraluminal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-043",
+    "id": "urologia_001_043",
     "materia": [
       "urologia",
       "cardiologia"
@@ -965,7 +1007,7 @@
       "Fracaso renal agudo",
       "Insuficiencia cardíaca"
     ],
-    "enunciado": "Un hombre de 46 años ingresa al hospital por un síncope. También presenta cardiomiopatía, cirrosis leve e insuficiencia renal crónica debida a enfermedad renal poliquística. Al momento de la admisión, la fracción de eyección del ventrículo izquierdo es del 20%. Las medicaciones incluyen captopril, acenocumarol, hidroclorotiazida y furosemida. El examen físico muestra una t 36,6°C FC 76/Lpm y TA de 110/70 mmHg en posición supina y de 90/60 mmHg en posición de pie, el paciente está alerta. El tórax es claro. El examen cardíaco es normal. El abdomen no presenta sensibilidad dolorosa a la palpación, las extremidades muestran un edema pédico 1+. Laboratorio (2 meses atrás, admisión): electrolitos séricos: uremia aumentó de 60 mg/dL a 96 mg/dL y la creatinina sérica 4,2 mg/dL de 5.7 mg/dL. Orina: proteínas 1+, microscópico: 2 a 5 eritrocitos, 2 a 5 leucocitos. La causa más probable de empeoramiento del paciente es:",
+    "enunciado": "Un hombre de 46 años ingresa al hospital por un síncope. También presenta cardiomiopatía, cirrosis leve e insuficiencia renal crónica debida a enfermedad renal poliquística. Al momento de la admisión, la fracción de eyección del ventrículo izquierdo es del 20%. Las medicaciones incluyen captopril, acenocumarol, hidroclorotiazida y furosemida. El examen fisico muestra una t 36,6° C FC 76/Lpm y TA de 110/70 mmHg en posición supina y de 90/60 mmHg en posición de pie, el paciente está alerta. El tórax es claro. El examen cardíaco es normal. El abdomen no presenta sensibilidad dolorosa a la palpación, las extremidades muestran un edema pédico 1+. Laboratorio (2 meses atrás, admisión): electrolitos séricos: uremia aumentó de 60 mg/dL a 96 mg/dL y la creatinina sérica 4,2 mg/dL de 5.7 mg/dL Orina: proteínas 1+, microscópico: 2 a 5 eritrocitos, 2 a 5 leucocitos. La causa más probable de empeoramiento del paciente es:",
     "opciones": {
       "a": "Insuficiencia renal aguda prerrenal",
       "b": "Pielonefritis aguda",
@@ -973,21 +1015,22 @@
       "d": "Estenosis de la arteria renal"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente se encuentra recibiendo una terapia agresiva con múltiples diuréticos combinada con un corazón con función severamente deteriorada (FE 20%). El síncope y la hipotensión ortostática marcan una clara contracción de volumen. La disminución crítica de la perfusión al riñón empeora agudamente los marcadores (aumento de uremia y creatinina) configurando una típica **Insuficiencia renal aguda prerrenal** superpuesta a su enfermedad de base.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-044",
+    "id": "urologia_001_044",
     "materia": [
       "urologia",
       "neurologia"
     ],
     "submateria": [
-      "Síndromes clínicos",
-      "Neuropatías"
+      "Insuficiencia renal crónica",
+      "Metabólicas"
     ],
     "enunciado": "¿Cuál de las siguientes no es una manifestación neurológica común de uremia?",
     "opciones": {
@@ -997,21 +1040,22 @@
       "d": "Neuropatía periférica sensitiva"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El síndrome urémico avanzado tiene gran repercusión sobre el sistema nervioso, ocasionando manifestaciones centrales (encefalopatía que lleva a convulsiones e hipo) y periféricas (neuropatía simétrica de fibras finas distales). No obstante, la **Neuritis óptica** no está descrita como una manifestación típica o habitual dependiente de la uremia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-045",
+    "id": "urologia_001_045",
     "materia": [
       "urologia",
-      "cirugiageneral"
+      "imagenes"
     ],
     "submateria": [
-      "Riesgo cardiovascular y riñón",
-      "Enfermedad arterial periférica"
+      "Fracaso renal agudo",
+      "Otras preguntas de diagnóstico por imágenes"
     ],
     "enunciado": "Hombre de 59 años con un riñón solitario, hipertensión y claudicación intermitente se presenta con dolor en flanco y hematuria. Tuvo un episodio similar hace 2 semanas. En el examen físico están ausentes los pulsos en ambas extremidades inferiores, pero sus piernas están calientes. Su urea es de 133 mg/dL y su nivel de creatinina sérica es de 2.8 mg/dL. La cateterización urinaria muestra 20 ml de orina en la vejiga. Una radiografía simple de abdomen es normal. ¿Qué estudio solicitaría?",
     "opciones": {
@@ -1021,19 +1065,22 @@
       "d": "Arteriografía renal."
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro (dolor en flanco, hematuria, y fracaso renal agudo grave en un paciente con alta carga ateroesclerótica periférica) sugiere firmemente isquemia renal aguda por oclusión arterial embólica de su riñón único. El método definitivo (gold standard) para establecer el diagnóstico y, de ser necesario, tratarlo es la **Arteriografía renal.**",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-046",
+    "id": "urologia_001_046",
     "materia": [
-      "urologia"
+      "urologia",
+      "urgencias"
     ],
     "submateria": [
-      "Fracaso renal agudo"
+      "Síndromes clínicos",
+      "Patología renal y urológica urgente"
     ],
     "enunciado": "Un hombre de 21 años es hospitalizado por presentar orina rojiza oscura. Recién se recupera de una lesión de rodilla producida por practicar fútbol, tres meses antes, y el día previo a la entrada al hospital había realizado actividad física vigorosa por primera vez desde la lesión de la rodilla. Esta mañana despertó con mialgias y el cambio antes mencionado en las características de la orina. La exploración física es básicamente normal excepto por el dolor muscular. Los hallazgos de análisis de orina fueron color rojo café; pH de 5.0; densidad urinaria de 1.002; prueba colorimétrica para sangre de 3+; y sin datos de glucosa, cetonas o bilirrubina. En el examen microscópico de la orina se encontraron desechos amorfos ocasionales y tres o cuatro cilindros granulares, pero no eritrocitos. ¿Cuál de los siguientes trastornos explica probablemente el análisis de orina?",
     "opciones": {
@@ -1043,14 +1090,15 @@
       "d": "Traumatismo renal"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El antecedente de reinicio de actividad física vigorosa acompañado de mialgias y orina oscura tipo \"café\" sin glóbulos rojos microscópicos representa la presentación clásica de la rabdomiólisis post-esfuerzo. La tira reactiva resulta fuertemente positiva porque detecta el grupo hemo libre provisto por la **Mioglobinuria** masiva.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-047",
+    "id": "urologia_001_047",
     "materia": [
       "urologia",
       "neumonologia"
@@ -1059,7 +1107,7 @@
       "Síndromes clínicos",
       "Fibrosis quística"
     ],
-    "enunciado": "Una mujer de 28 años con fibrosis quística es admitida en el hospital por dificultad respiratoria rápidamente creciente, aumento de la tos y elevada producción de esputo purulento. Un mes antes, fue sometida a reducción quirúrgica de intususcepción de colon; luego de la cirugía, su estado respiratorio se consideró clínicamente estable. El examen físico muestra una joven caquéctica, disneica, con dedos hipocráticos. La FC es de 130/min y regular, la FR es de 28 a 30/min y la TA es de 110/70 mmHg. Las venas del cuello están dilatadas; se observan \"sobrecarga\" ventricular derecha y crepitaciones. Tiene edema 2+ hasta las rodillas con formación de depresiones a la compresión. La Rx de tórax muestra un nuevo infiltrado en el lóbulo inferior derecho. Se intensifica el tratamiento con antibióticos. Laboratorio: electrolitos séricos: NA+ 130 mEq/L K+ 5,2 mEq/L CL- 86 mEq/L, HCO3: 38 mEq/L, nitrógeno ureico en sangre 17 mg/dL creatinina sérica 0.6 mg/dL, gases en sangre arterial en aire ambiente: pO2 35 mmHg, pCO2 69 mmHg. pH 7,40. Orina: densidad 1,020, el diagnóstico del estado ácido-base más probable al momento de la admisión es:",
+    "enunciado": "Una mujer de 28 años con fibrosis quística es admitida en el hospital por dificultad respiratoria rápidamente creciente, aumento de la tos y elevada producción de esputo purulento. Un mes antes, fue sometida a reducción quirúrgica de intususcepción de colon; luego de la cirugía, su estado respiratorio se consideró clinicamente estable. El examen físico muestra una joven caquéctica, disneica, con dedos hipocráticos. La FC es de 130/min y regular, la FR es de 28 a 30/min y la TA es de 110/70 mmHg. Las venas del cuello están dilatadas; se observan \"sobrecarga\" ventricular derecha y crepitaciones. Tiene edema 2+ hasta las rodillas con formación de depresiones a la compresión. La Rx de tórax muestra un nuevo infiltrado en el lóbulo inferior derecho. Se intensifica el tratamiento con antibióticos. Laboratorio: electrolitos séricos: NA+ 130 mEq/L K+ 5,2 mEq/L CL- 86 mEq/L, HCO3: 38 mEq/L nitrógeno ureico en sangre 17 mg/dL creatinina sérica 0.6 mg/dL, gases en sangre arterial en aire ambiente: pO2 35 mmHg, pCO2 69 mmHg, pH 7,40. Orina: densidad 1,020, el diagnóstico del estado ácido-base más probable al momento de la admisión es:",
     "opciones": {
       "a": "Acidosis metabólica y acidosis respiratoria",
       "b": "Alcalosis metabólica y alcalosis respiratoria",
@@ -1067,14 +1115,15 @@
       "d": "Alcalosis metabólica y acidosis respiratoria"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente cursa con un pH estrictamente normal (7.40), pero con una pCO2 extremadamente alta (69 mmHg) y un nivel de bicarbonato altísimo (38 mEq/L). Esto evidencia la concomitancia de dos trastornos primarios opuestos que se contrarrestan: una severa retención de CO2 originando la **acidosis respiratoria** (por su EPOC base agravado), equilibrada de forma artificial por un aumento exagerado de bases por encima del rango de compensación (**alcalosis metabólica** superpuesta, frecuentemente secundaria a uso de diuréticos de asa y cor pulmonale).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-048",
+    "id": "urologia_001_048",
     "materia": [
       "urologia"
     ],
@@ -1089,21 +1138,22 @@
       "d": "Agregar piridoxina (Vitamina B6) Y cianocobalamina (vitamina B12)"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La neuropatía periférica grave de rápida progresión (como pérdida de sensibilidad vibratoria y entumecimiento) inducida por la alta carga de toxinas urémicas es un criterio considerado de urgencia para un paciente en estadio final de su patología renal. Se debe proceder al inmediato **Inicio de terapia de reemplazo renal** (diálisis) para evitar secuelas permanentes.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-049",
+    "id": "urologia_001_049",
     "materia": [
       "urologia",
       "oncologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria",
-      "Oncología"
+      "Síndromes clínicos",
+      "Conceptos de Oncología"
     ],
     "enunciado": "Ante la presencia de un síndrome nefrótico en un paciente de 68 años sin antecedentes patológicos de relevancia, además de indicar una biopsia renal, Ud. considera primordial descartar:",
     "opciones": {
@@ -1113,14 +1163,15 @@
       "d": "Enfermedad renal poliquística"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La aparición de un síndrome nefrótico de novo (particularmente la glomerulonefritis membranosa) en pacientes de edad avanzada sin otra causa aparente y clara, obliga de regla a iniciar el rastreo de malignidad subyacente. Un porcentaje muy considerable se presentan como síndromes paraneoplásicos, por lo que resulta esencial descartar la **Presencia de tumores** de órganos sólidos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-050",
+    "id": "urologia_001_050",
     "materia": [
       "urologia"
     ],
@@ -1135,176 +1186,176 @@
       "d": "Dopamina"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Extensas revisiones en la literatura han demostrado concluyentemente que fármacos como la dopamina, el manitol, o los diuréticos de asa no ofrecen un valor preventivo y a veces lo empeoran. La medida profiláctica que ha evidenciado resultados firmes y validados para disminuir el riesgo de injuria renal aguda (típicamente tras el uso de contrastes o nefrotoxinas) es la **Hidratación adecuada de los pacientes de riesgo**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-051",
+    "id": "urologia_001_051",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Un hombre de 45 años ingresó al hospital por dolor agudo en el flanco derecho y orina de color rojo, que comenzó en la noche y lo despertó[cite: 862]. Hasta este punto el paciente había estado con buena salud[cite: 863]. La exploración física en la sala de urgencias es normal, pero presenta hematuria con estudios de laboratorio normales[cite: 864]. La radiografia de abdomen revela un cálculo en el riñón derecho y la urografía intravenosa muestra un cálculo no obstructivo[cite: 865]. Estudios subsecuentes de laboratorio muestran concentraciones normales de calcio y fósforo en suero y un cultivo urinario negativo[cite: 866]. ¿Cuál de los siguientes tipos de cálculo renal es más probable que haya causado este problema? [cite: 867]",
+    "opciones": {
+      "a": "Cálculo de oxalato de calcio [cite: 871]",
+      "b": "Cálculo de ácido úrico [cite: 874]",
+      "c": "Cálculo de estruvita [cite: 876]",
+      "d": "Cálculo de cistina [cite: 877]"
+    },
+    "correcta": "a",
+    "explicacion": "El paciente presenta un cálculo radiopaco (visible en la radiografía simple) sin alteraciones metabólicas en sangre (calcio y fósforo normales) y sin infección urinaria asociada. El tipo de cálculo radiopaco más frecuente en la población general es el **Cálculo de oxalato de calcio**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_052",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Síndromes clínicos"
+      "Riñón y enfermedades sistémicas"
     ],
-    "enunciado": "Un hombre de 45 años ingresó al hospital por dolor agudo en el flanco derecho y orina de color rojo, que comenzó en la noche y lo despertó. Hasta este punto el paciente había estado con buena salud. La exploración física en la sala de urgencias es normal, pero presenta hematuria con estudios de laboratorio normales. La radiografía de abdomen revela un cálculo en el riñón derecho y la urografía intravenosa muestra un cálculo no obstructivo. Estudios subsecuentes de laboratorio muestran concentraciones normales de calcio y fósforo en suero y un cultivo urinario negativo. ¿Cuál de los siguientes tipos de cálculo renal es más probable que haya causado este problema?",
+    "enunciado": "Un hombre de 35 años con antecedentes de hipertensión acude al departamento de urgencias con fiebre, dolor en el flanco izquierdo, disuria y hematuria[cite: 882]. Tuvo un episodio de nefrolitiasis de oxalato de calcio con anterioridad[cite: 883]. Entre tus antecedentes familiares, la madre tuvo diabetes mellitus, hipertensión y nefropatía en etapa terminal[cite: 884]. El examen por lo demás es normal. El cultivo de orina es positivo para bacilos gram negativos[cite: 885]. La ecografía renal revela aumento de tamaño de los riñones y más de cinco quistes renales en ambos lados sin alguna hidronefrosis ni datos de cálculos[cite: 886]. ¿Cuál es el diagnóstico más factible? [cite: 887]",
     "opciones": {
-      "a": "Cálculo de oxalato de calcio",
-      "b": "Cálculo de ácido úrico",
-      "c": "Cálculo de estruvita",
-      "d": "Cálculo de cistina"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-052",
-    "materia": [
-      "urologia",
-      "medicinafamiliar"
-    ],
-    "submateria": [
-      "Riñón y enfermedades sistémicas",
-      "General"
-    ],
-    "enunciado": "Un hombre de 35 años con antecedentes de hipertensión acude al departamento de urgencias con fiebre, dolor en el flanco izquierdo, disuria y hematuria. Tuvo un episodio de nefrolitiasis de oxalato de calcio con anterioridad. Entre tus antecedentes familiares, la madre tuvo diabetes mellitus, hipertensión y nefropatía en etapa terminal. El examen por lo demás es normal. El cultivo de orina es positivo para bacilos gram negativos. La ecografía renal revela aumento de tamaño de los riñones y más de cinco quistes renales en ambos lados sin alguna hidronefrosis ni datos de cálculos. ¿Cuál es el diagnóstico más factible?",
-    "opciones": {
-      "a": "Nefropatía poliquística autosómica recesiva.",
-      "b": "Nefropatía poliquística autosómica dominante",
-      "c": "Enfermedad de von Hippel-Lindau",
-      "d": "Esclerosis tuberosa"
+      "a": "Nefropatía poliquística autosómica recesiva. [cite: 889]",
+      "b": "Nefropatía poliquística autosómica dominante [cite: 894]",
+      "c": "Enfermedad de von Hippel-Lindau [cite: 896]",
+      "d": "Esclerosis tuberosa [cite: 897]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El hallazgo ecográfico de riñones aumentados de tamaño con múltiples quistes bilaterales en un paciente adulto, sumado a los antecedentes familiares de enfermedad renal terminal e hipertensión temprana, configura el diagnóstico clásico de la **Nefropatía poliquística autosómica dominante**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-053",
+    "id": "urologia_001_053",
     "materia": [
-      "urologia",
-      "infectologia"
+      "urologia"
     ],
     "submateria": [
-      "Nefritis intersticial",
-      "Endocarditis"
+      "Nefropatías intersticiales"
     ],
-    "enunciado": "Una mujer de 28 años con antecedentes de uso de drogas intravenosas se está tratando con oxacilina y gentamicina por endocarditis por Staphylococcus aureus. Las funciones renales y hepáticas son normales, y se encuentra afebril cinco días después de la instauración de antibióticos. Diez días después de estar recibiendo tratamiento desarrolla de nuevo fiebre y exantema maculopapular no pruriginoso sobre las piernas, el tronco y los brazos. El examen de laboratorio revela urea 70 mg/dL creatinina de 2.2 mg/dL. El examen de orina muestra proteínas 2+ con eritrocitos y leucocitos positivos. En la ecografía renal se observa aumento de la ecogenicidad de ambos riñones. ¿Cuál de los siguientes problemas explica mejor el cuadro clínico?",
+    "enunciado": "Una mujer de 28 años con antecedentes de uso de drogas intravenosas se está tratando con oxacilina y gentamicina por endocarditis por Staphylococcus aureus[cite: 903]. Las funciones renales y hepáticas son normales, y se encuentra afebril cinco días después de la instauración de antibióticos[cite: 904]. Diez días después de estar recibiendo tratamiento desarrolla de nuevo fiebre y exantema maculopapular no pruriginoso sobre las piernas, el tronco y los brazos[cite: 905]. El examen de laboratorio revela urea 70 mg/dL creatinina de 2.2 mg/dL[cite: 906]. El examen de orina muestra proteínas 2+ con eritrocitos y leucocitos positivos[cite: 907]. En la ecografia renal se observa aumento de la ecogenicidad de ambos riñones[cite: 908]. ¿Cuál de los siguientes problemas explica mejor el cuadro clínico? [cite: 909]",
     "opciones": {
-      "a": "Glomerulonefritis membranosa",
-      "b": "Nefrolitiasis",
-      "c": "Nefritis intersticial alérgica",
-      "d": "Necrosis tubular aguda"
+      "a": "Glomerulonefritis membranosa [cite: 912]",
+      "b": "Nefrolitiasis [cite: 913]",
+      "c": "Nefritis intersticial alérgica [cite: 916]",
+      "d": "Necrosis tubular aguda [cite: 917]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente desarrolla la tríada clásica de fracaso renal agudo, fiebre de nuevo origen y exantema maculopapular tras 10 días de exposición a un antibiótico de la familia de las penicilinas (oxacilina). Estos síntomas, asociados a leucocituria en el sedimento, son el sello distintivo de la **Nefritis intersticial alérgica**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-054",
+    "id": "urologia_001_054",
     "materia": [
-      "urologia",
-      "otras"
+      "urologia"
     ],
     "submateria": [
-      "Nefritis intersticial",
-      "Fármacos"
+      "Nefropatías intersticiales"
     ],
-    "enunciado": "Una mujer de 47 años con antecedentes de migraña crónica se presenta con dolor en el flanco derecho que irradia a la ingle derecha. El examen físico demuestra que no tiene fiebre, con una frecuencia del pulso de 88/min y TA de 130/80 mmHg. Tiene abdomen normal, con ruidos intestinales normales y ausencia de edema. Laboratorio: Urea en sangre 74 mg/dL, creatinina sérica 1.8 mg/dL. Orina: densidad 1.010, proteínas: vestigios, microscópico: 0 a 2 eritrocitos, 10 a 15 leucocitos. La Rx abdominal no demuestra calcificaciones en el área de los riñones. El diagnóstico más probable es:",
+    "enunciado": "Una mujer de 47 años con antecedentes de migraña crónica se presenta con dolor en el flanco derecho que irradia a la ingle derecha[cite: 923]. El examen físico demuestra que no tiene fiebre, con una frecuencia del pulso de 88/min y TA de 130/80 mmHg[cite: 924]. Tiene abdomen normal, con ruidos intestinales normales y ausencia de edema[cite: 925]. Laboratorio: Urea en sangre 74 mg/dL, creatinina sérica 1.8 mg/dL. Orina: densidad 1.010, proteínas: vestigios, microscópico: 0 a 2 eritrocitos, 10 a 15 leucocitos[cite: 926]. La Rx abdominal no demuestra calcificaciones en el área de los riñones. El diagnóstico más probable es: [cite: 927]",
     "opciones": {
-      "a": "Nefropatía por Ig A",
-      "b": "Trombosis venosa renal",
-      "c": "Riñón con médula esponjosa",
-      "d": "Nefropatía por Aines"
+      "a": "Nefropatía por Ig A [cite: 929]",
+      "b": "Trombosis venosa renal [cite: 930]",
+      "c": "Riñón con médula esponjosa [cite: 934]",
+      "d": "Nefropatía por Aines [cite: 935]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El antecedente de migraña crónica sugiere un consumo prolongado de analgésicos. La falla renal combinada con un cuadro de cólico renal (dolor en flanco irradiado) sin evidencia de cálculos radiopacos sugiere el desprendimiento de una papila (necrosis papilar), una complicación clásica de la **Nefropatía por Aines** crónica.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-055",
+    "id": "urologia_001_055",
     "materia": [
-      "urologia",
-      "cirugiageneral"
+      "urologia_cx"
     ],
     "submateria": [
-      "Insuficiencia renal crónica",
-      "Trasplante y procuración"
+      "Trasplante renal"
     ],
-    "enunciado": "¿Cuál de las siguientes no es una contraindicación absoluta de trasplante renal?",
+    "enunciado": "¿Cuál de las siguientes no es una contraindicación absoluta de trasplante renal? [cite: 941]",
     "opciones": {
-      "a": "Edad superior a 70 años",
-      "b": "Tumor maligno activo o reciente",
-      "c": "Vasculitis sistémica en activad",
-      "d": "Enfermedad cardiovascular severa"
+      "a": "Edad superior a 70 años [cite: 944]",
+      "b": "Tumor maligno activo o reciente [cite: 945]",
+      "c": "Vasculitis sistémica en activad [cite: 947]",
+      "d": "Enfermedad cardiovascular severa [cite: 948]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Si bien el estado fisiológico debe evaluarse de forma individual, la **Edad superior a 70 años** no constituye per se una contraindicación absoluta para recibir un trasplante renal, a diferencia de las neoplasias activas, infecciones graves, vasculitis en curso o enfermedades cardiovasculares avanzadas inoperables.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-056",
+    "id": "urologia_001_056",
     "materia": [
-      "urologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Síndromes clínicos"
+      "Urolitiasis"
     ],
-    "enunciado": "Una mujer de 42 años con antecedentes de hipertensión acude al departamento de urgencias con el tercer episodio de dolor intenso en el flanco derecho desde hace cinco años. ¿Cuál de estas opciones es incorrecta?",
+    "enunciado": "Una mujer de 42 años con antecedentes de hipertensión acude al departamento de urgencias con el tercer episodio de dolor intenso en el flanco derecho desde hace cinco años[cite: 952]. ¿Cuál de estas opciones es incorrecta? [cite: 953]",
     "opciones": {
-      "a": "Hay que interrogar al enfermo sobre los antecedentes de cirugía abdominal",
-      "b": "Es probable que una radiografía de abdomen resulte positiva",
-      "c": "Si el enfermo padece cálculos de calcio, conviene evitar los diuréticos tiazídicos",
-      "d": "Una vez que remita el episodio agudo, se analizan el calcio, creatinina, ácido úrico, citrato y oxalato en orina"
+      "a": "Hay que interrogar al enfermo sobre los antecedentes de cirugía abdominal [cite: 957]",
+      "b": "Es probable que una radiografía de abdomen resulte positiva [cite: 958]",
+      "c": "Si el enfermo padece cálculos de calcio, conviene evitar los diuréticos tiazídicos [cite: 962]",
+      "d": "Una vez que remita el episodio agudo, se analizan el calcio, creatinina, ácido úrico, citrato y oxalato en orina [cite: 963]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Es totalmente falso afirmar que **Si el enfermo padece cálculos de calcio, conviene evitar los diuréticos tiazídicos**. Al contrario, las tiazidas son el pilar del tratamiento preventivo en pacientes con hipercalciuria idiopática porque aumentan la reabsorción tubular de calcio, disminuyendo su excreción en orina.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-057",
+    "id": "urologia_001_057",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "Un hombre de 47 años es hospitalizado con síndrome nefrótico. Refiere que al principio sufrió edemas de los pies por la mañana, pero esto evolucionó rápidamente hasta que el edema llegó a la mitad de las pantorrillas y duraba todo el día. Toda su vida ha tenido buena salud y no había acudido al médico en los últimos cinco años. En la exploración física la TA fue de 155/100 mmHg, FC de 88/min, FR de 15 por minuto y t de 37°C. En la exploración de corazón y pulmones no se encontraron datos de insuficiencia cardíaca congestiva y en el abdomen se encontró ascitis leve con tamaño normal del hígado; el examen de las extremidades reveló edema 4+ hasta la mitad de la pantorrilla. Los estudios de laboratorio mostraron nitrógeno de la urea sanguínea de 20 mg/dL y creatinina de 1 mg/dL. El resto de los estudios de laboratorio no ofreció más datos. En el análisis de orina se encontró proteínas 4+ y un eritrocito. No se observaron cilindros de glóbulos rojos u otros elementos celulares. La orina de 24 hs contenía 9.6 g de proteínas. ¿Cuál de las siguientes opciones es la explicación más probable de este trastorno clínico?",
+    "enunciado": "Un hombre de 47 años es hospitalizado con síndrome nefrótico[cite: 969]. Refiere que al principio sufrió edemas de los pies por la mañana, pero esto evolucionó rápidamente hasta que el edema llegó a la mitad de las pantorrillas y duraba todo el dia[cite: 970]. Toda su vida ha tenido buena salud y no había acudido al médico en los últimos cinco años[cite: 971]. En la exploración física la TA fue de 155/100 mmHg, FC de 88/min, FR de 15 por minuto y t de 37° C. En la exploración de corazón y pulmones no se encontraron datos de insuficiencia cardíaca congestiva y en el abdomen se encontró ascitis leve con tamaño normal del hígado; [cite: 972] el examen de las extremidades reveló edema 4+ hasta la mitad de la pantorrilla[cite: 973]. Los estudios de laboratorio mostraron nitrógeno de la urea sanguínea de 20 mg/dL y creatinina de 1 mg/dL El resto de los estudios de laboratorio no ofreció más datos[cite: 974]. En el análisis de orina se encontró proteínas 4+ y un eritrocito[cite: 975]. No se observaron cilindros de glóbulos rojos u otros elementos celulares[cite: 976]. La orina de 24 hs contenía 9.6 g de proteínas[cite: 977]. ¿Cuál de las siguientes opciones es la explicación más probable de este trastorno clínico? [cite: 978]",
     "opciones": {
-      "a": "Glomerulonefritis postestreptocóccica",
-      "b": "Nefropatía membranosa",
-      "c": "Nefritis lúpica",
-      "d": "Nefritis intersticial"
+      "a": "Glomerulonefritis postestreptococcica [cite: 982]",
+      "b": "Nefropatía membranosa [cite: 983]",
+      "c": "Nefritis lúpica [cite: 984]",
+      "d": "Nefritis intersticial [cite: 986]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La presencia de un síndrome nefrótico puro (proteinuria masiva de 9.6 g/día, edemas marcados) de reciente comienzo en un paciente adulto, sin otros datos sistémicos y con sedimento acelular (sin cilindros hemáticos), corresponde epidemiológicamente en primer lugar a la **Nefropatía membranosa** como causa primaria.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-058",
+    "id": "urologia_001_058",
     "materia": [
       "urologia",
       "imagenes"
@@ -1313,252 +1364,257 @@
       "Síndromes clínicos",
       "Resonancia magnética"
     ],
-    "enunciado": "Una mujer de 35 años presenta manifestaciones de edema bilateral de las extremidades inferiores, poliuria y dolor moderado en el flanco izquierdo que comenzó dos semanas antes, aproximadamente. No hay antecedentes personales patológicos. No está tomando medicamentos y niega tabaquismo, alcoholismo o uso de drogas ilícitas. El examen muestra signos vitales normales, lo que incluye una presión arterial normal. Hay edema de 2+ en ambas extremidades inferiores. Proteinuria: 5 g/día. El examen de orina es normal, a no ser por la proteinuria. La creatinina sérica es de 0.7 mg/dL y el examen ultrasonográfico muestra que el riñón izquierdo mide 13 cm y el derecho 11.5 cm. Le preocupa la posibilidad de una trombosis de la vena renal. ¿Qué prueba seleccionaría para la evaluación?",
+    "enunciado": "Una mujer de 35 años presenta manifestaciones de edema bilateral de las extremidades inferiores, poliuria y dolor moderado en el flanco izquierdo que comenzó dos semanas antes, aproximadamente[cite: 991]. No hay antecedentes personales patológicos. No está tomando medicamentos y niega tabaquismo, alcoholismo o uso de drogas ilícitas[cite: 992]. El examen muestra signos vitales normales, lo que incluye una presión arterial normal[cite: 993]. Hay edema de 2+ en ambas extremidades inferiores. Proteinuria: 5 g/día[cite: 994]. El examen de orina es normal, a no ser por la proteinuria[cite: 995]. La creatinina sérica es de 0.7 mg/dL y el examen ultrasonográfico muestra que el riñón izquierdo mide 13 cm y el derecho 11.5 cm[cite: 996]. Le preocupa la posibilidad de una trombosis de la vena renal. ¿Qué prueba seleccionaría para la evaluación? [cite: 997]",
     "opciones": {
-      "a": "AngioTC de vasos renales",
-      "b": "Flebografía de contraste",
-      "c": "Ecografía con Doppler para valorar las venas renales",
-      "d": "AngioRNM de vasos renales"
+      "a": "AngioTC de vasos renales [cite: 1003]",
+      "b": "Flebografía de contraste [cite: 1004]",
+      "c": "Ecografía con Doppler para valorar las venas renales [cite: 1005]",
+      "d": "AngioRNM de vasos renales [cite: 1006]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante la sospecha firme de trombosis de la vena renal (síndrome nefrótico, dolor lumbar, asimetría renal con riñón izquierdo tumefacto), la **AngioRNM de vasos renales** ofrece un método no invasivo de alta sensibilidad y especificidad sin exponer al riñón a contrastes nefrotóxicos yodados ni a la radiación.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-059",
-    "materia": [
-      "urologia",
-      "gastroenterologia"
-    ],
-    "submateria": [
-      "Glomerulonefritis primaria",
-      "Hígado"
-    ],
-    "enunciado": "¿Cuál de las siguientes glomerulopatías está asociada a hepatopatía crónica alcohólica?",
-    "opciones": {
-      "a": "Amiloidosis renal",
-      "b": "Nefropatía por IgA",
-      "c": "Glomerulonefritis extra capilar",
-      "d": "Glomerulonefritis membranoproliferativa"
-    },
-    "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-060",
-    "materia": [
-      "urologia",
-      "reumatologia"
-    ],
-    "submateria": [
-      "Riñón y enfermedades sistémicas",
-      "LES y SAF"
-    ],
-    "enunciado": "Una paciente lúpica de 35 años, portadora de síndrome nefrótico por glomerulonefritis membranosa en tratamiento con esteroides, con función renal estable, consulta por náuseas, fiebre, dolor lumbar y oliguria laboratorio muestra mayor deterioro de la función renal. Señale la causa más probable del mismo",
-    "opciones": {
-      "a": "Nefritis intersticial secundaria a drogas",
-      "b": "Insuficiencia renal secundaria a glomerulonefritis membranosa",
-      "c": "Trombosis de la vena renal",
-      "d": "Desarrollo de glomerulonefritis rápidamente progresiva asociada a lupus eritematoso sistémico"
-    },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-061",
+    "id": "urologia_001_059",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "Un paciente de 20 años, que se presenta con un cuadro de proteinuria mayor de 3.5 g/24 horas, edemas e hipoalbuminemia por dicha razón usted efectúa una biopsia renal percutánea. La microscopia óptica informa 20 glomérulos con cambios mínimos, ¿Qué resultado esperaría encontrar en la Inmunofluorescencia?",
+    "enunciado": "¿Cuál de las siguientes glomerulopatías está asociada a hepatopatía crónica alcohólica? [cite: 1012]",
     "opciones": {
-      "a": "Depósitos de Ig A",
-      "b": "Ausencia de depósitos de inmunocomplejos",
-      "c": "Depósito de C1",
-      "d": "Depósito de Ig G"
+      "a": "Amiloidosis renal [cite: 1014]",
+      "b": "Nefropatía por IgA [cite: 1017]",
+      "c": "Glomerulonefritis extra capilar [cite: 1018]",
+      "d": "Glomerulonefritis membranoproliferativa [cite: 1019]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los pacientes que cursan con disfunción hepática severa (como la cirrosis o hepatopatía crónica alcohólica) ven alterada la capacidad del hígado para aclarar y depurar los complejos inmunes. Esto conduce característicamente a su depósito en los riñones, desarrollándose una forma secundaria de **Nefropatía por IgA**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-062",
+    "id": "urologia_001_060",
+    "materia": [
+      "urologia"
+    ],
+    "submateria": [
+      "Glomerulonefritis primarias"
+    ],
+    "enunciado": "Una paciente lúpica de 35 años, portadora de sindrome nefrótico por glomerulonefritis membranosa en tratamiento con esteroides, con función renal estable, consulta por náuseas, fiebre, dolor lumbar y oliguria laboratorio muestra mayor deterioro de la función renal[cite: 1025]. Señale la causa más probable del mismo [cite: 1026]",
+    "opciones": {
+      "a": "Nefritis intersticial secundaria a drogas [cite: 1031]",
+      "b": "Insuficiencia renal secundaria a glomerulonefritis membranosa [cite: 1032]",
+      "c": "Trombosis de la vena renal [cite: 1034]",
+      "d": "Desarrollo de glomerulonefritis rápidamente progresiva asociada a lupus eritematoso sistémico [cite: 1035]"
+    },
+    "correcta": "c",
+    "explicacion": "La glomerulonefritis membranosa es la glomerulopatía con mayor tendencia a generar estados hipercoagulables. La aparición brusca de dolor lumbar, oliguria y deterioro agudo de la función renal en este escenario obliga a diagnosticar una complicación embólica, específicamente la **Trombosis de la vena renal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_061",
+    "materia": [
+      "urologia"
+    ],
+    "submateria": [
+      "Glomerulonefritis primarias"
+    ],
+    "enunciado": "Un paciente de 20 años, que se presenta con un cuadro de proteinuria mayor de 3.5 g/24 horas, edemas e hipoalbuminemia por dicha razón usted efectúa una biopsia renal percutánea[cite: 1041]. La microscopia óptica informa 20 glomerulos con cambios mínimos, ¿Qué resultado esperaría encontrar en la Inmunofluorescencia? [cite: 1042]",
+    "opciones": {
+      "a": "Depósitos de Ig A [cite: 1048]",
+      "b": "Ausencia de depósitos de inmunocomplejos [cite: 1049]",
+      "c": "Depósito de C1 [cite: 1050]",
+      "d": "Depósito de Ig G [cite: 1051]"
+    },
+    "correcta": "b",
+    "explicacion": "La Enfermedad de Cambios Mínimos (causa muy prevalente de síndrome nefrótico en jóvenes y niños) se caracteriza por tener una microscopía óptica anodina y una absoluta **Ausencia de depósitos de inmunocomplejos** al ser evaluada por inmunofluorescencia. El único hallazgo patológico es la fusión de los pedicelos evidenciable por microscopía electrónica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_062",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Síndromes clínicos"
     ],
-    "enunciado": "En pacientes con proteinuria intensa, ¿En cuál de las siguientes situaciones está absolutamente contraindicado realizar una biopsia para identificar la naturaleza de la enfermedad glomerular?",
+    "enunciado": "En pacientes con proteinuria intensa, ¿En cuál de las siguientes situaciones está absolutamente contraindicado realizar una biopsia para identificar la naturaleza de la enfermedad glomerular? [cite: 1057]",
     "opciones": {
-      "a": "Cuando tienen una concentración de creatinina sérica de 2.5 mg/dL",
-      "b": "En los pacientes que tienen una presión arterial diastólica de 120 mmHg",
-      "c": "Cuando el paciente tiene 65 años o más",
-      "d": "En los pacientes que tienen síndrome nefrótico sin cilindros"
+      "a": "Cuando tienen una concentración de creatinina sérica de 2.5 mg/dL [cite: 1061]",
+      "b": "En los pacientes que tienen una presión arterial diastólica de 120 mmHg [cite: 1062]",
+      "c": "Cuando el paciente tiene 65 años o más [cite: 1064]",
+      "d": "En los pacientes que tienen síndrome nefrótico sin cilindros [cite: 1066]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La biopsia renal percutánea conlleva un riesgo intrínseco de sangrado. Por lo tanto, se encuentra de regla contraindicada **En los pacientes que tienen una presión arterial diastólica de 120 mmHg** (hipertensión severa no controlada), dado que la tensión vascular extrema eleva abismalmente el riesgo de hematomas subcapsulares y hemorragias mortales post-procedimiento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-063",
-    "materia": [
-      "urologia",
-      "hematologia"
-    ],
-    "submateria": [
-      "Fracaso renal agudo",
-      "Anemias hemolíticas"
-    ],
-    "enunciado": "Una mujer de 21 años llega al hospital debido a anemia intensa e insuficiencia renal aguda. Tres semanas antes del ingreso tuvo un parto normal, nacido a término y se sintió extremadamente débil y fatigada después del parto. El médico observó palidez extrema. La biometría hemática completa reveló anemia intensa y trombocitopenia. Estudios de laboratorios posteriores revelaron aumento de la urea y creatinina. Niega uso de medicamentos en el puerperio y problemas médicos previos similares al actual. Sus estudios de laboratorio fueron normales en el momento del alta hospitalaria después del parto. En la exploración física los signos vitales son normales y el único dato aparte de la palidez, es la presencia de petequias y equimosis múltiples en extremidades inferiores. Los estudios de laboratorio revelan hemoglobina de 6.3 mg/dL, hematocrito de 18%, número de plaquetas de 23.000 mm3, urea de 94 mg/dL y creatinina de 9.1 mg/dL. Las concentraciones séricas de anticuerpo anti-neutrófilo citoplasmático (ANCA) Y anticuerpo antinucleares (FAN) En suero fueron normales. Un frotis de sangre periférica mostró múltiples esquistocitos. En el análisis de orina se encontraron muchos cilindros de eritrocitos. ¿Cuál de los siguientes es el diagnóstico más probable?",
-    "opciones": {
-      "a": "Lupus eritematoso sistémico",
-      "b": "Síndrome de Goodpasture",
-      "c": "Síndrome hemolítico agudo",
-      "d": "Púrpura trombocitopénica idiopática"
-    },
-    "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-064",
+    "id": "urologia_001_063",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Riñón y enfermedades sistémicas"
     ],
-    "enunciado": "El síndrome nefrótico es la característica patognomónica de las siguientes enfermedades primarias del riñón, excepto:",
+    "enunciado": "Una mujer de 21 años llega al hospital debido a anemia intensa e insuficiencia renal aguda[cite: 1072]. Tres semanas antes del ingreso tuvo un parto normal, nacido a término y se sintió extremadamente débil y fatigada después del parto[cite: 1073]. El médico observó palidez extrema. La biometria hemática completa reveló anemia intensa y trombocitopenia[cite: 1074]. Estudios de laboratorios posteriores revelaron aumento de la urea y creatinina[cite: 1075]. Niega uso de medicamentos en el puerperio y problemas médicos previos similares al actual[cite: 1076]. Sus estudios de laboratorio fueron normales en el momento del alta hospitalaria después del parto[cite: 1077]. En la exploración física los signos vitales son normales y el único dato aparte de la palidez, es la presencia de petequias y equimosis múltiples en extremidades inferiores[cite: 1078]. Los estudios de laboratorio revelan hemoglobina de 6.3 mg/dL, hematocrito de 18%, número de plaquetas de 23.000 mm3, urea de 94 mg/dL y creatinina de 9.1 mg/dL. Las concentraciones séricas de anticuerpo anti-neutrófilo citoplasmático (ANCA) Y anticuerpo antinucleares (FAN) En suero fueron normales[cite: 1079]. Un frotis de sangre periférica mostró múltiples esquistocitos. En el análisis de orina se encontraron muchos cilindros de eritrocitos[cite: 1080]. ¿Cuál de los siguientes es el diagnóstico más probable? [cite: 1081]",
     "opciones": {
-      "a": "Nefropatía por Ig A (enfermedad de Berger)",
-      "b": "Glomeruloesclerosis focal y segmentaria",
-      "c": "Enfermedad de cambios mínimos",
-      "d": "Glomerulonefritis membranosa"
+      "a": "Lupus eritematoso sistémico [cite: 1085]",
+      "b": "Síndrome de Goodpasture [cite: 1089]",
+      "c": "Síndrome hemolítico agudo [cite: 1090]",
+      "d": "Púrpura trombocitopénica idiopática [cite: 1092]"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico expone la tríada de anemia hemolítica microangiopática (esquistocitos severos, anemia), trombocitopenia profunda (petequias y sangrado) e insuficiencia renal aguda grave (con cilindros eritrocitarios) apareciendo en el puerperio inmediato. Esta presentación es patognomónica del **Síndrome hemolítico agudo** atípico (SHU/PTT asociado al embarazo/puerperio).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_064",
+    "materia": [
+      "urologia"
+    ],
+    "submateria": [
+      "Glomerulonefritis primarias"
+    ],
+    "enunciado": "El síndrome nefrótico es la característica patognomónica de las siguientes enfermedades primarias del riñón, excepto: [cite: 1098]",
+    "opciones": {
+      "a": "Nefropatía por Ig A (enfermedad de Berger) [cite: 1102]",
+      "b": "Glomeruloesclerosis focal y segmentaria [cite: 1103]",
+      "c": "Enfermedad de cambios mínimos [cite: 1104]",
+      "d": "Glomerulonefritis membranosa [cite: 1105]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Mientras que los cambios mínimos, la GSFyS y la nefropatía membranosa son causas clásicas del síndrome nefrótico, la **Nefropatía por Ig A (enfermedad de Berger)** típicamente se presenta bajo el patrón de un síndrome nefrítico o con hematuria macro/microscópica asintomática.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-065",
+    "id": "urologia_001_065",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "Señale cuál de estas glomerulopatías cursa con niveles normales de complemento",
+    "enunciado": "Señale cuál de estas, glomerulopatías cursa con niveles normales de complemento [cite: 1111]",
     "opciones": {
-      "a": "Glomerulopatía membranoproliferativa idiopática",
-      "b": "Glomerulonefritis postestreptocóccica",
-      "c": "Esclerosis glomerular focal y segmentaria",
-      "d": "Crioglobulinemia"
+      "a": "Glomerulopatia membranoproliferativa idiopática [cite: 1113]",
+      "b": "Glomerulonefritis postestreptococcica [cite: 1115]",
+      "c": "Esclerosis glomerular focal y segmentaria [cite: 1116]",
+      "d": "Crioglobulinemia [cite: 1118]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Existen glomerulopatías hipocomplementémicas (como la postestreptocócica, la membranoproliferativa, lúpica y crioglobulinemia). Por el contrario, la **Esclerosis glomerular focal y segmentaria** es parte de los síndromes nefróticos que cursan invariablemente con fracciones de complemento normal en sangre.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-066",
+    "id": "urologia_001_066",
     "materia": [
       "urologia",
       "cardiologia"
     ],
     "submateria": [
-      "Fracaso renal agudo",
+      "Síndromes clínicos",
       "Insuficiencia cardíaca"
     ],
-    "enunciado": "Un varón de 66 años con antecedentes de insuficiencia cardiaca de etiología isquémica, es ingresado en el hospital por un cuadro de edema agudo de pulmón hipertensivo. Su nivel de creatinina sérica habitual es 1.7 mg/dL al ingreso. Se realiza balance negativo con diuréticos y se administra NTG para el control de la presión arterial, con franca mejoría sintomática. En el laboratorio tomado al ingreso hospitalario, su creatinina sérica era de 1.8 mg/dL, pero 48 hs después asciende a 4 mg/dL El paciente no impresiona deshidratado y se encuentra normotenso y con un flujo urinario de 20 mL/hora ¿Cuál es el diagnóstico más probable?",
+    "enunciado": "Un varón de 66 años con antecedentes de insuficiencia cardiaca de etiología isquémica, es ingresado en el hospital por un cuadro de edema agudo de pulmón hipertensivo[cite: 1123]. Su nivel de creatinina sérica habitual es 1.7 mg/dL al ingreso[cite: 1124]. Se realiza balance negativo con diuréticos y se administra NTG para el control de la presión arterial, con franca mejoría sintomática[cite: 1125]. En el laboratorio tomado al ingreso hospitalario, su creatinina sérica era de 1.8 mg/dL, pero 48 hs después asciende a 4 mg/dL El paciente no impresiona deshidratado y se encuentra normotenso y con un flujo urinario de 20 mL/hora ¿Cuál es el diagnóstico más probable? [cite: 1126]",
     "opciones": {
-      "a": "Síndrome Cardio-Renal tipo I",
-      "b": "Síndrome Cardio-Renal tipo II",
-      "c": "Síndrome Cardio-Renal tipo III",
-      "d": "Síndrome Cardio-Renal tipo IV"
+      "a": "Síndrome Cardio-Renal tipo I [cite: 1132]",
+      "b": "Síndrome Cardio-Renal tipo II [cite: 1133]",
+      "c": "Síndrome Cardio-Renal tipo III [cite: 1134]",
+      "d": "Síndrome Cardio-Renal tipo IV [cite: 1135]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un deterioro franco de la función renal a raíz del tratamiento necesario para su disfunción ventricular (diuréticos/vasodilatadores). Dado el antecedente de base de insuficiencia cardíaca crónica isquémica con alteración renal previa de base, el cuadro clínico corresponde clásicamente a la reagudización de un **Síndrome Cardio-Renal tipo II**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-067",
+    "id": "urologia_001_067",
     "materia": [
       "urologia",
       "infectologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria",
+      "Glomerulonefritis primarias",
       "Virus no HIV"
     ],
-    "enunciado": "¿Cuál de las siguientes glomerulopatías está habitualmente asociadas al VHB?",
+    "enunciado": "¿Cuál de las siguientes glomerulopatías está habitualmente asociadas al VHB? [cite: 1141]",
     "opciones": {
-      "a": "Esclerosis glomerular focal y segmentaria variante clásica",
-      "b": "Glomerulonefritis extra capilar tipo III",
-      "c": "Glomerulopatía membranosa",
-      "d": "Glomerulonefritis por IgA"
+      "a": "Esclerosis glomerular focal y segmentaria variante clásica [cite: 1144]",
+      "b": "Glomerulonefritis extra capilar tipo III [cite: 1145]",
+      "c": "Glomerulopatía membranosa [cite: 1148]",
+      "d": "Glomerulonefritis por IgA [cite: 1149]"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El virus de la hepatitis B (VHB) genera complejos inmunes circulantes que pueden depositarse en el riñón. La manifestación renal más estrechamente documentada y habitual del VHB es la formación de un síndrome nefrótico con patrón histológico de **Glomerulopatía membranosa**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-068",
+    "id": "urologia_001_068",
     "materia": [
       "urologia"
     ],
     "submateria": [
       "Tubulopatías"
     ],
-    "enunciado": "Un hombre de 46 años presenta cálculos urinarios múltiples, nefrocalcinosis, pielonefritis recurrente, hipercalciuria e hipocitraturia. A continuación, se exhiben los datos de laboratorio correspondientes: electrolitos séricos: NA+ 137 mEq/L, K+ 2.9 mEq/L, CL- 112 mEq/L, HCO3 15 mEq/L. Orina: pH 5.8, densidad urinaria 1.011, glucosa: negativo, proteínas: negativo. ¿Qué terapéutica es necesaria para este paciente?",
+    "enunciado": "Un hombre de 46 años presenta cálculos urinarios múltiples, nefrocalcinosis, pielonefritis recurrente, hipercalciuria e hipocitraturia[cite: 1155]. A continuación, se exhiben los datos de laboratorio correspondientes: electrolitos séricos: NA+ 137 mEq/L, K+ 2.9 mEq/L, CL- 112 mEq/L, HCO3) 15 mEq/L[cite: 1156]. Orina: pH 5.8, densidad urinaria 1.011, glucosa: negativo, proteinas: negativo. ¿Qué terapéutica es necesaria para este paciente? [cite: 1157]",
     "opciones": {
-      "a": "Dextrosa 5% endovenosa",
-      "b": "Suero salino isotónico.",
-      "c": "Suero salino hipertónico endovenoso.",
-      "d": "Bicarbonato de sodio"
+      "a": "Dextrosa 5% endovenosa [cite: 1161]",
+      "b": "Suero salino isotónico. [cite: 1166]",
+      "c": "Suero salino hipertónico endovenoso. [cite: 1167]",
+      "d": "Bicarbonato de sodio [cite: 1168]"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta el fenotipo claro de la Acidosis Tubular Renal tipo 1 (distal): acidosis metabólica hiperclorémica (HCO3 de 15), hipopotasemia marcada, imposibilidad para acidificar la orina (pH urinario elevado, >5.5), y nefrocalcinosis consecuente. El abordaje requiere la corrección del equilibrio ácido-base mediante terapia alcalinizante con **Bicarbonato de sodio** o citrato potásico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-069",
+    "id": "urologia_001_069",
     "materia": [
       "urologia",
       "infectologia"
@@ -1567,44 +1623,46 @@
       "Riñón y enfermedades sistémicas",
       "HIV"
     ],
-    "enunciado": "A un hombre de 28 años, que anteriormente usaba drogas inyectables, se le detecta síndrome nefrótico con urea de 60 mg/dL creatinina sérica de 2,0 mg/dL y proteínas en orina de 12 g/día, la biopsia renal es compatible con nefropatía asociada con VIH (HIVAN). ¿Cuál de los siguientes enunciados sobre la nefropatía por VIH es verdadero?",
+    "enunciado": "A un hombre de 28 años, que anteriormente usaba drogas inyectables, se le detecta síndrome nefrótico con urea de 60 mg/dL creatinina sérica de 2,0 mg/dL y proteínas en orina de 12 g/dia, la biopsia renal es compatible con nefropatía asociada con VIH (HIVAN)[cite: 1174]. ¿Cuál de los siguientes enunciados sobre la nefropatía por VIH es verdadero? [cite: 1175]",
     "opciones": {
-      "a": "Ningún tratamiento influye en el curso de la enfermedad",
-      "b": "Puede progresar rápidamente a insuficiencia renal terminal",
-      "c": "La ecografía de riñón de los pacientes afectados muestra típicamente pequeños riñones ecogénicos",
-      "d": "Se observa con idéntica proporción en todas las poblaciones"
+      "a": "Ningún tratamiento influye en el curso de la enfermedad [cite: 1180]",
+      "b": "Puede progresar rápidamente a insuficiencia renal terminal [cite: 1181]",
+      "c": "La ecografía de riñón de los pacientes afectados muestra típicamente pequeños riñones ecogénicos [cite: 1182]",
+      "d": "Se observa con idéntica proporción en todas las poblaciones [cite: 1183]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La nefropatía asociada a VIH (frecuentemente una variante colapsante de la esclerosis focal y segmentaria) es sumamente agresiva. De no instaurarse un control estricto mediante terapia antirretroviral de gran actividad (TARGA), su comportamiento se caracteriza porque **Puede progresar rápidamente a insuficiencia renal terminal** en cuestión de meses.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-070",
+    "id": "urologia_001_070",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Riñón y enfermedades sistémicas"
+      "Insuficiencia renal crónica"
     ],
-    "enunciado": "Ante un paciente con enfermedad renal crónica estadio IV asociada a un hematocrito de 48% con volumen eritrocitario aumentado Ud. Sospecha en:",
+    "enunciado": "Ante un paciente con enfermedad renal crónica estadio IV asociada a un hematocrito de 48% con volumen eritrocitario aumentado Ud[cite: 1189]. Sospecha en: [cite: 1190]",
     "opciones": {
-      "a": "Enfermedad renal poliquística autosómica dominante.",
-      "b": "Hipertensión vasculorrenal",
-      "c": "Síndrome nefrótico.",
-      "d": "Nefritis intersticial crónica con creatinina elevada"
+      "a": "Enfermedad renal poliquística autosómica dominante. [cite: 1194]",
+      "b": "Hipertensión vasculorrenal [cite: 1195]",
+      "c": "Síndrome nefrótico. [cite: 1198]",
+      "d": "Nefritis intersticial crónica con creatinina elevada [cite: 1200]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los pacientes con ERC terminal cursan característicamente con niveles abismales de eritropoyetina (anemia severa). Sin embargo, cuando encontramos policitemia o volúmenes eritrocitarios normales a pesar del deterioro renal, esto sugiere una producción endógena exagerada de eritropoyetina. La afección típica productora de este efecto es la **Enfermedad renal poliquística autosómica dominante** (las paredes quísticas secretan EPO).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-071",
+    "id": "urologia_001_071",
     "materia": [
       "urologia",
       "reumatologia"
@@ -1613,171 +1671,172 @@
       "Tubulopatías",
       "Otras enfermedades reumatológicas"
     ],
-    "enunciado": "Una mujer de 37 años asiste al consultorio debido a que 2 días atrás había eliminado un cálculo renal después de 2 días de cólico renal en el lado izquierdo. Durante los 2 últimos años ha presentado el fenómeno de Raynaud y durante los últimos 5 años ha tenido síntomas de sequedad ocular y bucal. Tiene antecedentes de 10 años de recurrencias múltiples de nefrolitiasis por fosfato de calcio. Laboratorio sanguíneo: electrolitos: NA+ 142 mEq/L CL- 112 mEq/L K+ 2,9 mEq/L, HCO3 20 mEq/L, nitrógeno ureico 15 mg/dL, creatinina 1,2 mg/dL Orina: pH 6.5, densidad 1025, proteínas (-), sangre (2+), microscópico 3 a 10 eritrocitos/campo, 1 a 3 leucocitos/campo. La Rx del abdomen revela múltiples calcificaciones de 1 a 2 mm cubriendo ambas sombras renales. La causa más probable para la enfermedad litiásica renal es:",
+    "enunciado": "Una mujer de 37 años asiste al consultorio debido a que 2 días atrás había eliminado un cálculo renal después de 2 días de cólico renal en el lado izquierdo[cite: 1206]. Durante los 2 últimos años ha presentado el fenómeno de Raynaud y durante los últimos 5 años ha tenido síntomas de sequedad ocular y bucal[cite: 1207]. Tiene antecedentes de 10 años de recurrencias múltiples de nefrolitiasis por fosfato de calcio[cite: 1208]. Laboratorio sanguíneo: electrolitos: NA+ 142 mEq/L CL- 112 mEq/L, K+ 2,9 mEq/L, HCO3) 20 mEq/L, nitrógeno ureico 15 mg/dL, creatinina 1,2 mg/dL Orina: pH 6.5, densidad 1025, proteínas (-), sangre (2+), microscópico 3 a 10 eritrocitos/campo, 1 a 3 leucocitos/campo[cite: 1209]. La Rx del abdomen revela múltiples calcificaciones de 1 a 2 mm cubriendo ambas sombras renales[cite: 1210]. La causa más probable para la enfermedad litiásica renal es: [cite: 1211]",
     "opciones": {
-      "a": "Hipercalciuria idiopática",
-      "b": "Acidosis tubular renal",
-      "c": "Cistinuria",
-      "d": "Enfermedad litiásica por estruvita (infecciosa)"
+      "a": "Hipercalciuria idiopática [cite: 1213]",
+      "b": "Acidosis tubular renal [cite: 1217]",
+      "c": "Cistinuria [cite: 1218]",
+      "d": "Enfermedad litiásica por estruvita (infecciosa) [cite: 1219]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El Síndrome de Sjögren (manifiesto por sequedad ocular/bucal y fenómeno de Raynaud) se correlaciona estrechamente con el daño tubular inmunológico que deviene en una **Acidosis tubular renal** tipo 1. Esto condiciona orina alcalina, hipopotasemia y precipitación consecuente de fosfato cálcico que forma los cálculos y la nefrocalcinosis.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-072",
+    "id": "urologia_001_072",
     "materia": [
-      "urologia",
-      "infectologia"
+      "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria",
-      "Bacterias"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "Un hombre de 20 años fue hospitalizado con edema y hematuria de inicio agudo. Había estado bien hasta tres semanas antes cuando tuvo dolor de garganta y fue tratado con penicilina oral. Desde entonces, en general se sentía bien, pero notó orina oscura y edema de las piernas. Niega otros síntomas como exantema, dolor articular o dolor retroesternal y refiere no consumir medicamentos. En la exploración física la TA de 160/110 mmHg, FC 85/Lpm, FR de 15/RPM y T de 37°C. Otros datos son edema periférico intenso que se extiende hasta la porción media de la pierna. Los estudios de laboratorio revelan urea sanguínea de 60 mg/dL creatinina de 1.3 mg/dL y electrolitos normales. La concentración sérica de complemento CH 50 y C4 está disminuida en 50%; hay aumento de anticuerpo antidesoxirribonucleasa b y de antiestreptolisina o, y el análisis de anticuerpos anti-membrana basal glomerular (anti-MBG) Y anticuerpo anti-neutrófilo citoplásmico (ANCA) Se encuentran en los límites normales. El análisis de orina revela proteínas 4+ y sangre 4+. El examen microscópico reveló 3 a 4 cilindros hemáticos por campo y campo semicubierto de hematíes dismórficos y leucocitos. No se observaron bacterias. ¿Cuál de las siguientes opciones es la causa más probable de este síndrome renal agudo?",
+    "enunciado": "Un hombre de 20 años fue hospitalizado con edema y hematuria de inicio agudo[cite: 1224]. Había estado bien hasta tres semanas antes cuando tuvo dolor de garganta y fue tratado con penicilina oral[cite: 1225]. Desde entonces, en general se sentía bien, pero notó orina oscura y edema de las piernas[cite: 1226]. Niega otros síntomas como exantema, dolor articular o dolor retroesternal y refiere no consumir medicamentos[cite: 1227]. En la exploración física la TA de 160/110 mmHg, FC 85/Lpm, FR de 15/RPM y T de 37° C) Otros datos son edema periférico intenso que se extiende hasta la porción media de la pierna[cite: 1228]. Los estudios de laboratorio revelan urea sanguínea de 60 mg/dL creatinina de 1.3 mg/dL y electrolitos normales[cite: 1229]. La concentración sérica de complemento CH 50 y C4 está disminuida en 50%; [cite: 1230] hay aumento de anticuerpo antidesoxirribonucleasa b y de antiestreptolisina o, y el análisis de anticuerpos anti-membrana basal glomerular (anti-MBG) Y anticuerpo anti-neutrófilo citoplásmico (ANCA) Se encuentran en los límites normales[cite: 1231]. El análisis de orina revela proteínas 4+ y sangre 4+[cite: 1232]. El examen microscópico reveló 3 a 4 cilindros hemáticos por campo y campo semicubierto de hematies dismórficos y leucocitos[cite: 1233]. No se observaron bacterias. ¿Cuál de las siguientes opciones es la causa más probable de este síndrome renal agudo? [cite: 1234]",
     "opciones": {
-      "a": "Glomerulonefritis postestreptocóccica",
-      "b": "Síndrome de Goodpasture",
-      "c": "Lupus eritematosos sistémico",
-      "d": "Nefropatía por Ig A"
+      "a": "Glomerulonefritis postestreptocóccica [cite: 1236]",
+      "b": "Síndrome de Goodpasture [cite: 1239]",
+      "c": "Lupus eritematosos sistémico [cite: 1240]",
+      "d": "Nefropatía por Ig A [cite: 1241]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un síndrome nefrítico florido (hipertensión, cilindros hemáticos, dismórficos) asociado a consumo de complemento (hipocomplementemia) e incrementos de títulos antiestreptocócicos, el cual ocurre característicamente 1-3 semanas tras una faringitis aguda. Se trata del cuadro arquetípico de la **Glomerulonefritis postestreptococcica**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-073",
+    "id": "urologia_001_073",
     "materia": [
       "urologia",
       "cardiologia"
     ],
     "submateria": [
-      "Riesgo cardiovascular y riñón",
+      "Riesgo cardiovascular y enfermedad renal",
       "Hipertensión arterial y factores de riesgo"
     ],
-    "enunciado": "Un hombre de 70 años con historia de hipertensión prolongada, presentó el pico de hipertensión más grave, en un período de 6 meses. A pesar del medicamento antihipertensivo, su TA ha aumentado de 140/90 a 175/105 mmHg. Además, tuvo un episodio de \"edema pulmonar fugaz\" que requirió hospitalización durante una semana. Continuó tomando sus antihipertensivos regularmente, pero ha presentado algo de claudicación intermitente en la pierna izquierda. Aunque tiene antecedentes de tabaquismo prolongado, no ha sufrido otros problemas médicos. ¿Cuál de los siguientes es la causa más probable de este trastorno clínico?",
+    "enunciado": "Un hombre de 70 años con historia de hipertensión prolongada, presentó el pico de hipertensión más grave, en un período de 6 meses[cite: 1247]. A pesar del medicamento antihipertensivo, su TA ha aumentado de 140/90 a 175/105 mmHg[cite: 1248]. Además, tuvo un episodio de \"edema pulmonar fugaz\" que requirió hospitalización durante una semana[cite: 1249]. Continuó tomando sus antihipertensivos regularmente, pero ha presentado algo de claudicación intermitente en la pierna izquierda[cite: 1250]. Aunque tiene antecedentes de tabaquismo prolongado, no ha sufrido otros problemas médicos[cite: 1251]. ¿Cuál de los siguientes es la causa más probable de este trastorno clínico? [cite: 1252]",
     "opciones": {
-      "a": "Feocromocitoma",
-      "b": "Estenosis de la arteria renal",
-      "c": "Hiperaldosteronismo",
-      "d": "Coartación de la aorta"
+      "a": "Feocromocitoma [cite: 1258]",
+      "b": "Estenosis de la arteria renal [cite: 1259]",
+      "c": "Hiperaldosteronismo [cite: 1260]",
+      "d": "Coartación de la aorta [cite: 1261]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una hipertensión aguda refractaria, sumada al hallazgo característico de eventos de \"edema pulmonar fugaz\" (flash pulmonary edema) y evidencia de ateroesclerosis sistémica generalizada (claudicación y tabaquismo), sugiere una severa hipoperfusión renal bilateral generada por la **Estenosis de la arteria renal** de origen ateroesclerótico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-074",
+    "id": "urologia_001_074",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "imagenes"
     ],
     "submateria": [
-      "Síndromes clínicos",
+      "Urolitiasis",
       "Tomografía"
     ],
-    "enunciado": "Un hombre de 34 años presenta dolor en el flanco derecho de instauración aguda que irradia hacia la ingle. No esté febril, pero parece muy molesto. Se retuerce de dolor en su cama. La exploración física por lo demás no muestra datos relevantes. El examen de orina revela 25 a 35 eritrocitos por campo. ¿Cuál de las siguientes es la prueba diagnóstica de elección?",
+    "enunciado": "Un hombre de 34 años presenta dolor en el flanco derecho de instauración aguda que irradia hacia la ingle[cite: 1267]. No esté febril, pero parece muy molesto. Se retuerce de dolor en su cama[cite: 1268]. La exploración física por lo demás no muestra datos relevantes[cite: 1269]. El examen de orina revela 25 a 35 eritrocitos por campo[cite: 1270]. ¿Cuál de las siguientes es la prueba diagnóstica de elección? [cite: 1271]",
     "opciones": {
-      "a": "Ecografía.",
-      "b": "Tomografía computada helicoidal sin contraste",
-      "c": "Tomografía computarizada intensificada con contraste",
-      "d": "Radiografías simples de abdomen y pelvis."
+      "a": "Ecografía. [cite: 1276]",
+      "b": "Tomografía computada helicoidal sin contraste [cite: 1277]",
+      "c": "Tomografia computarizada intensificada con contraste [cite: 1278]",
+      "d": "Radiografías simples de abdomen y pelvis. [cite: 1279]"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La presunción de un cálculo ureteral sintomático (cólico renal típico) exige evaluar rápidamente la presencia, localización y tamaño del mismo, al igual que sus repercusiones locales (hidronefrosis). Para este propósito, el estudio estándar de oro debido a su altísima sensibilidad es la **Tomografía computada helicoidal sin contraste**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-075",
+    "id": "urologia_001_075",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Glomerulonefritis primaria"
+      "Glomerulonefritis primarias"
     ],
-    "enunciado": "Un hombre de 21 años ha tenido episodios recurrentes de hematuria en el último año. Cada uno de estos episodios parece asociarse a una infección de vías aéreas superiores. La exploración física actualmente es normal. El análisis de orina revela un sedimento con hematuria dismórfica, cilindros hemáticos y proteinuria moderada. La biopsia renal revelará:",
+    "enunciado": "Un hombre de 21 años ha tenido episodios recurrentes de hematuria en el último año[cite: 1285]. Cada uno de estos episodios parece asociarse a una infección de vías aéreas superiores. La exploración física actualmente es normal[cite: 1286]. El análisis de orina revela un sedimento con hematuria dismórfica, cilindros hemáticos y proteinuria moderada. La biopsia renal revelará: [cite: 1287]",
     "opciones": {
-      "a": "Un depósito mesangial difuso de IgA en la Inmunofluorescencia",
-      "b": "Hallazgos normales en la microscopia óptica",
-      "c": "Una proliferación extra-capilar extensa en la microscopia óptica",
-      "d": "Un depósito capilar difuso de IgG en la Inmunofluorescencia"
+      "a": "Un depósito mesangial difuso de IgA en la Inmunofluorescencia [cite: 1291]",
+      "b": "Hallazgos normales en la microscopia óptica [cite: 1293]",
+      "c": "Una proliferación extra-capilar extensa en la microscopia óptica [cite: 1296]",
+      "d": "Un depósito capilar difuso de IgG en la Inmunofluorescencia [cite: 1297]"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La ocurrencia sincrónica de episodios recurrentes de hematuria macroscópica u microscópica simultáneamente con infecciones de vías respiratorias altas en un adulto joven (hematuria sinfaringítica) es la manifestación clínica por antonomasia de la Nefropatía por IgA, donde la biopsia muestra **Un depósito mesangial difuso de IgA en la Inmunofluorescencia**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-076",
+    "id": "urologia_001_076",
     "materia": [
-      "urologia",
-      "infectologia"
+      "urologia"
     ],
     "submateria": [
-      "Infecciones urinarias",
-      "Antibacterianos"
+      "Infecciones del tracto urinario"
     ],
     "enunciado": "¿Cuál de los siguientes hallazgos en una muestra de orina recién emitida orienta al diagnóstico de infección urinaria alta?",
     "opciones": {
       "a": "Piuria.",
       "b": "Cilindros leucocitarios.",
-      "c": "Ph urinario alcalino.",
+      "c": "Phurinario alcalino.",
       "d": "Leucocituria"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los cilindros se forman exclusivamente en la luz de los túbulos renales. La presencia de **Cilindros leucocitarios** en el sedimento urinario indica de forma inequívoca que la inflamación/infección proviene del parénquima renal (infección urinaria alta o pielonefritis), diferenciándola de una infección urinaria baja (cistitis) que sólo presentaría piuria o leucocituria aislada sin cilindros.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-077",
+    "id": "urologia_001_077",
     "materia": [
-      "urologia",
-      "pediatria"
+      "urologia_cx"
     ],
     "submateria": [
-      "Síndromes clínicos",
-      "Patología nefrourológica infantil"
+      "Urgencias urológicas y traumatismos"
     ],
     "enunciado": "En relación con la torsión de testículo, señale la opción incorrecta:",
     "opciones": {
       "a": "La edad más común de aparición es entre los 13 y 16 años.",
       "b": "Si es operada dentro de las primeras 6 hs de ocurrida, la sobrevida testicular es de 90-100%",
       "c": "El signo de Prehn es positivo",
-      "d": "Al inicio del cuadro, la ecografía Doppler puede ser normal."
+      "d": "Al inicio del cuadro, la ecografia Doppler puede ser normal."
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El signo de Prehn evalúa el alivio del dolor al elevar el testículo. Es característicamente positivo (alivia el dolor) en procesos inflamatorios como la orquiepididimitis, pero es negativo (no alivia o incluso empeora el dolor) en la torsión testicular isquémica. Por lo tanto, afirmar que **El signo de Prehn es positivo** en una torsión es la opción incorrecta.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-078",
+    "id": "urologia_001_078",
     "materia": [
-      "urologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia"
+      "Patología testicular"
     ],
-    "enunciado": "El tumor benigno más común del epidídimo es:",
+    "enunciado": "El tumor benigno más común del epididimo es:",
     "opciones": {
       "a": "Tumor adenomatoide",
       "b": "Lipoma",
@@ -1785,47 +1844,47 @@
       "d": "Fibroma"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Tumor adenomatoide** es la neoplasia sólida benigna más frecuente de los anexos testiculares, localizándose de manera predominante en la cola del epidídimo. Clínicamente se presenta como una masa escrotal pequeña, indurada, indolora y bien delimitada.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-079",
+    "id": "urologia_001_079",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Patología testicular"
     ],
     "enunciado": "Respecto del tumor de testículo, indique la respuesta incorrecta:",
     "opciones": {
       "a": "Afecta a varones de 50 años o mayores",
       "b": "Se desarrolla con mayor frecuencia en testículos criptorquídico",
-      "c": "Tiene un alto índice de curación (80-90%) Gracias al tratamiento multidisciplinario (cirugía y quimioterapia)",
+      "c": "Tiene un alto indice de curación (80-90%) Gracias al tratamiento multidisciplinario (cirugia y quimioterapia)",
       "d": "Afecta a varones jóvenes"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los tumores de células germinales del testículo representan la neoplasia sólida más prevalente en varones jóvenes (típicamente entre los 15 y 35 años). Es incorrecto aseverar que su incidencia primaria **Afecta a varones de 50 años o mayores**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-080",
+    "id": "urologia_001_080",
     "materia": [
       "urologia",
-      "medicinafamiliar"
+      "nutricion"
     ],
     "submateria": [
-      "Fracaso renal agudo",
-      "General"
+      "Síndromes clínicos",
+      "Diabetes mellitus"
     ],
-    "enunciado": "Un hombre de 80 años con demencia, que vive en un hogar asistencial, es traído a la sala de emergencia debido a que ha entrado gradualmente a un estado comatoso a lo largo de un período de 24 horas. En el examen físico la FC 112/Lpm, la TA 90/50 mmHg. Estudios de laboratorio sanguíneo: urea 79 mg/dL, glucemia 800 mg/dL sodio 140 mEq/L potasio 5.0 mEq/L, cloruro 108 mEq/L bicarbonato 22 mEq/L creatinina 3.0 mg/dL ¿Cuál de los siguientes principios terapéuticos debe ser seguido?",
+    "enunciado": "Un hombre de 80 años con demencia, que vive en un hogar asistencial, es traído a la sala de emergencia debido a que ha entrado gradualmente a un estado comatoso a lo largo de un período de 24 horas. En el examen físico la FC 112/Lpm y la TA 90/50 mmHg. Estudios de laboratorio sanguíneo: urea 79 mg/dL, glucemia 800 mg/dL sodio 140 mEq/L potasio 5.0 mEq/L, cloruro 108 mEq/L bicarbonato 22 mEq/L creatinina 3.0 mg/dL ¿Cuál de los siguientes principios terapéuticos debe ser seguido?",
     "opciones": {
       "a": "Todas las reposiciones de líquidos deben efectuarse con cloruro de sodio al 0.9% debido a que la concentración plasmática de sodio indica un estado de deshidratación isotónica",
       "b": "La reposición hídrica inicial debe realizarse con cloruro de sodio al 0.45% debido a que el coma es causado por la hiperosmolaridad",
@@ -1833,21 +1892,20 @@
       "d": "La reposición inicial de líquidos debe efectuarse con cloruro de sodio al 0.9% debido a que el volumen intravascular es bajo"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente cursa con un estado hiperosmolar hiperglucémico asociado a signos francos de compromiso hemodinámico y contracción crítica del volumen intravascular (hipotensión de 90/50 mmHg y taquicardia). La medida prioritaria y salvadora en el manejo inicial es expandir rápidamente el lecho vascular, por lo que **La reposición inicial de líquidos debe efectuarse con cloruro de sodio al 0.9%** (solución fisiológica isotónica) independientemente de los niveles de sodio u osmolaridad medidos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-081",
+    "id": "urologia_001_081",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Próstata"
     ],
     "enunciado": "Respecto del carcinoma de próstata, indique la opción incorrecta:",
     "opciones": {
@@ -1857,21 +1915,20 @@
       "d": "No tiene ningún marcador tumoral que permita el diagnóstico y el seguimiento de la evolución"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Es absolutamente incorrecto afirmar que **No tiene ningún marcador tumoral**. El Antígeno Prostático Específico (PSA) es el marcador sérico tumoral universalmente establecido y utilizado para la pesquisa, el diagnóstico, la estadificación y la monitorización de las recidivas bioquímicas tras el tratamiento del cáncer de próstata.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-082",
+    "id": "urologia_001_082",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Cáncer de urotelio"
     ],
     "enunciado": "Un paciente masculino de 59 años, tabaquista severo desde hace 30 años. Un día, luego de finalizada su sesión de intensos ejercicios físico, el paciente presenta una micción francamente hematúrica, absolutamente indolora. Usted casualmente se encuentra en el gimnasio y el paciente, enterado de que se ha recibido recientemente de médico, no duda en consultarlo. ¿Cuál sería su interpretación y conducta?",
     "opciones": {
@@ -1881,23 +1938,24 @@
       "d": "Considera que se trata de una nefropatía por IgA y le sugiere consultar al nefrólogo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La aparición de hematuria macroscópica indolora (silente) en un paciente adulto mayor a 50 años con alto riesgo urotelial (tabaquismo severo) obliga por protocolo urológico a investigar y descartar activamente un carcinoma urotelial como primera sospecha. En este contexto, el médico adecuadamente **Considera importante descartar un tumor de vejiga por el que le recomienda una ecografía y una cistoscopia**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-083",
+    "id": "urologia_001_083",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "psiquiatria"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Trastornos neuróticos y de la personalidad"
+      "Andrología, disfunción eréctil y cáncer de pene",
+      "Trastornos del estado de ánimo"
     ],
-    "enunciado": "A un hombre de 56 años se le evalúa en una clínica después de quejarse de incapacidad para mantener una erección. Refiere buen funcionamiento sexual hasta hace cuatro meses. Desde entonces ha observado que no puede mantener las erecciones. El paciente se despierta tres veces por semana con una erección que no se ha modificado en comparación con su estado previo. Señala que su libido no ha cambiado, pero que pierde su erección a los pocos minutos. Ha estado casado por 25 años y niega alguna relación extramarital. No fuma. En fecha reciente el individuo ha pasado por una mayor cantidad de factores estresantes luego de habérsele suspendido su trabajo en una refinería de petróleo. Sus antecedentes personales patológicos son relevantes para hipertensión, la cual se está tratando con atenolol. En la exploración física, la presión arterial es de 136/76 mmHg y la FC es de 64/Lpm El paciente tiene características sexuales secundarias que son normales, sin ginecomastia. No presenta hepatomegalia. Sus testículos son firmes y ahulados, sin masas, y tiene un volumen estimado de 35 ml de acuerdo con la orquimetría. Le realizaron circuncisión del pene y no tiene placas fibróticas. El tacto rectal revela una próstata normal y un tono del esfínter anal normal. El reflejo bulbocavernoso se encuentra intacto. Las cifras de antígeno específico de próstata (PSA) Son de 4.12 ng/mL Su nivel de testosterona es de 537 ng/dL ¿Cuál es la mejor manera de tratar la disfunción eréctil de este paciente?",
+    "enunciado": "A un hombre de 56 años se le evalúa en una clínica después de quejarse de incapacidad para mantener una erección. Refiere buen funcionamiento sexual hasta hace cuatro meses. Desde entonces ha observado que no puede mantener las erecciones. El paciente se despierta tres veces por semana con una erección que no se ha modificado en comparación con su estado previo. Señala que su libido no ha cambiado, pero que pierde su erección a los pocos minutos. Ha estado casado por 25 años y niega alguna relación extramarital. No fuma. En fecha reciente el individuo ha pasado por una mayor cantidad de factores estresantes luego de habérsele suspendido su trabajo en una refinería de petróleo. Sus antecedentes personales patológicos son relevantes para hipertensión, la cual se está tratando con atenolol. En la exploración física, la presión arterial es de 136/76 mmHg y la FC es de 64/Lpm El paciente tiene características sexuales secundarias que son normales, sin ginecomastia. No presenta hepatomegalia. Sus testículos son firmes y ahulados, sin masas, y tiene un volumen estimado de 35 ml de acuerdo con la orquimetria. Le realizaron circuncisión del pene y no tiene placas fibróticas. El tacto rectal revela una próstata normal y un tono del esfínter anal normal. El reflejo bulbocavernoso se encuentra intacto. Las cifras de antígeno específico de próstata (PSA) Son de 4.12 ng/mL Su nivel de testosterona es de 537 ng/dL ¿Cuál es la mejor manera de tratar la disfunción eréctil de este paciente?",
     "opciones": {
       "a": "Suspensión del atenolol y reevaluar",
       "b": "Comenzar sildenafil y evaluar en 48 horas",
@@ -1905,19 +1963,20 @@
       "d": "Iniciar tratamiento con testosterona transdérmica"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El mantenimiento íntegro de las erecciones nocturnas y matinales demuestra que la vía neurológica y el sistema vascular cavernoso están fisiológicamente normales. El inicio súbito del síntoma asociado a un estrés ambiental mayor (pérdida de su empleo) señala una causa predominantemente psicógena. En esta etapa, el abordaje más preciso es **Investigar más los antecedentes psicosociales del paciente para buscar datos de ansiedad y depresión, y considerar remitirlo a psicoterapia.**",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-084",
+    "id": "urologia_001_084",
     "materia": [
-      "urologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia"
+      "Urología funcional e incontinencia"
     ],
     "enunciado": "¿Cuál de las siguientes no corresponde a una causa de cistitis intersticial?",
     "opciones": {
@@ -1927,21 +1986,20 @@
       "d": "Trastornos neurológicos"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El diagnóstico de cistitis intersticial (o síndrome de vejiga dolorosa crónica) exige la exclusión clínica sistemática de otras patologías vesicales identificables. La **Cistitis por radiación** es una lesión estructural e inflamatoria directa causada y demostrable por radioterapia previa; al ser una entidad con etiología conocida y distinta, excluye por definición el diagnóstico de cistitis intersticial.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-085",
+    "id": "urologia_001_085",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Próstata"
     ],
     "enunciado": "En un hombre de 65 años una prueba de laboratorio revela un PSA de 10.4 ng/mL. El examen rectal digital revela próstata de tamaño normal, pero por ultrasonido se identifica un área hipoecoica pequeña que mide 5 x 7 mm en el lóbulo derecho. ¿Cuál de las siguientes medidas es el siguiente paso para realizar?",
     "opciones": {
@@ -1951,47 +2009,49 @@
       "d": "Realizar centellograma óseo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Un antígeno prostático específico (PSA) elevado (>10 ng/mL) concomitante con una lesión estructural sospechosa a la ecografía (nódulo hipoecoico periférico) determinan un muy alto riesgo de adenocarcinoma de próstata. El paso diagnóstico confirmatorio ineludible es **Practicar biopsia transrectal del área anormal encontrada por ecografía**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-086",
+    "id": "urologia_001_086",
     "materia": [
       "urologia",
       "obstetricia"
     ],
     "submateria": [
-      "Infecciones urinarias",
+      "Infecciones del tracto urinario",
       "Patología materna y gestación"
     ],
     "enunciado": "Con respecto a la pielonefritis aguda, ¿Cuál de las siguientes afirmaciones es incorrecta?",
     "opciones": {
-      "a": "El Gram de orina orienta el tratamiento empírico inicial",
+      "a": "El Gram de orina orienta el tratamiento empirico inicial",
       "b": "Los síntomas prevalecientes son: disuria, fiebre y dolor lumbar",
       "c": "Se debe realizar urocultivo previo al inicio del tratamiento antibiótico",
       "d": "Es poco frecuente en la mujer embarazada"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Afirmar que **Es poco frecuente en la mujer embarazada** es incorrecto. De hecho, el embarazo induce cambios fisiológicos (como dilatación del sistema colector por acción de la progesterona y compresión ureteral) que incrementan drásticamente la estasis y el riesgo de ascenso bacteriano, haciendo que la pielonefritis sea una complicación severa y relativamente frecuente en las gestantes.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-087",
+    "id": "urologia_001_087",
     "materia": [
-      "urologia",
-      "endocrinologia"
+      "nutricion",
+      "urgencias"
     ],
     "submateria": [
-      "Síndromes clínicos",
-      "Urgencias endocrinas"
+      "Diabetes mellitus",
+      "Síndromes abdominales"
     ],
-    "enunciado": "Una paciente de 24 años, sin antecedentes patológicos de importancia quien consulta por dolor abdominal y vómitos de 48 hs de evolución. Signos vitales: TA 100/70 mmHg, FC = 100/min. FR 32/min, t axilar 38.5°C Al examen físico se presenta taquipneica, con piel y mucosas secas sin hallazgos patológicos al examen cardíaco ni respiratorio. El dolor abdominal es difuso, sin íleo, y el tacto rectal y vaginal son normales. Se realiza laboratorio que informa: Hto 42%, glóbulos blancos 16.000/mm3 con desviación a la izquierda, plaquetas 356.000/mm3 urea 58 mg/dL, glucosa 340 mg/dL creatinina 1.2 mg/dL, TGO 40 u/L, bilirrubina total 0.7 mg/dL, sedimento urinario con abundantes gérmenes, piocitos y leucocitos, proteínas (-), bilirrubina (-), Hb +, cuerpos cetónicos ++, glucosa ++, Ionograma sérico: NA+ 138 mEq/L K+ 4.3 mEq/L CL- 103 mEq/L, EAB: pH 7.13, pCO2 20 mmHg, pO2 98 mmHg, co3h- 8 mEq/L, exceso de base-16, Sat 02 96%. La alteración del medio interno que presenta se puede explicar por:",
+    "enunciado": "Una paciente de 24 años, sin antecedentes patológicos de importancia quien consulta por dolor abdominal y vómitos de 48 hs de evolución. Signos vitales: TA 100/70 mmHg, FC -100/min. FR 32/min, t axilar 38.5° C Al examen fisico se presenta taquipneica, con piel y mucosas secas sin hallazgos patológicos al examen cardíaco ni respiratorio. El dolor abdominal es difuso, sin ileo, y el tacto rectal y vaginal son normales. Se realiza laboratorio que informa: Hto 42%, glóbulos blancos 16.000/mm3 con desviación a la izquierda, plaquetas 356.000/mm3 urea 58 mg/dL glucosa 340 mg/dL creatinina 1.2 mg/dL, TGO 40 u/L, bilirrubina total 0.7 mg/dL, sedimento urinario con abundantes gérmenes, piocitos y leucocitos, proteínas (-), bilirrubina (-), Hb +, cuerpos cetónicos ++, glucosa ++, lonograma sérico: NA+ 138 mEq/L K+ 4.3 mEq/L CL- 103 mEq/L, EAB: pH 7.13, pCO2 20 mmHg, pO2 98 mmHg, co3h- 8 mEq/L, exceso de base-16, Sat 02 96%. La alteración del medio interno que presenta se puede explicar por:",
     "opciones": {
       "a": "Cetoacidosis diabética",
       "b": "Sepsis por infección urinaria",
@@ -1999,43 +2059,43 @@
       "d": "Insuficiencia renal aguda"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los datos clínicos y el laboratorio de la paciente arrojan la tríada de hiperglucemia (340 mg/dL), acidosis metabólica profunda de anión gap alto (pH 7.13, bicarbonato 8 mEq/L, compensada con taquipnea) y cuerpos cetónicos positivos (++). Este contexto laboratorial, frecuentemente gatillado por una infección aguda subyacente (en este caso, la severa infección urinaria), es patognomónico y se explica por una **Cetoacidosis diabética** de reciente diagnóstico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-088",
-    "materia": [
-      "urologia",
-      "infectologia"
-    ],
-    "submateria": [
-      "Infecciones urinarias",
-      "Bacterias"
-    ],
-    "enunciado": "Si está presente ¿Cuál de los siguientes datos distingue la infección de la parte alta de las vías urinarias (riñón) De las de la parte baja (vejiga) En mujeres?",
-    "opciones": {
-      "a": "Fiebre > 38.5°C",
-      "b": "Número de colonias > 105/mL",
-      "c": "Ardor a la micción e hipersensibilidad púbica",
-      "d": "Leucocitosis en el análisis de orina"
-    },
-    "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
-    "examen": null,
-    "anio": null,
-    "oficial": false
-  },
-  {
-    "id": "urologia-001-089",
+    "id": "urologia_001_088",
     "materia": [
       "urologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia"
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "Si está presente ¿Cuál de los siguientes datos distingue la infección de la parte alta de las vías urinarias (riñón) De las de la parte baja (vejiga) En mujeres?",
+    "opciones": {
+      "a": "Fiebre > 38.5° C",
+      "b": "Número de colonias > 105 /mL",
+      "c": "Ardor a la micción e hipersensibilidad púbica",
+      "d": "Leucocitosis en el análisis de orina"
+    },
+    "correcta": "a",
+    "explicacion": "Mientras que las infecciones urinarias bajas (cistitis) se caracterizan por presentar inflamación exclusivamente local (disuria, polaquiuria) y transcurren habitualmente sin fiebre, la afectación de la vía urinaria alta (pielonefritis) desencadena signos de afectación parenquimatosa con respuesta inflamatoria sistémica severa. El factor que clásicamente las distingue y marca esta transición es la presencia de **Fiebre > 38.5° C** y el estado tóxico-infeccioso general.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "urologia_001_089",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Andrología, disfunción eréctil y cáncer de pene"
     ],
     "enunciado": "La disfunción eréctil se relaciona con las siguientes opciones, excepto una. Márquela:",
     "opciones": {
@@ -2045,21 +2105,20 @@
       "d": "Hematuria"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La fisiología eréctil depende críticamente de una integridad endotelial y vascular periférica. Por ende, tanto la diabetes, la hipertensión arterial y las dislipidemias se consagran como factores causales preponderantes. Sin embargo, la **Hematuria** es exclusivamente un signo urológico representativo de sangrado o inflamación de la vía excretora, sin tener vinculación alguna fisiopatológica con el desarrollo de la impotencia o disfunción eréctil.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-090",
+    "id": "urologia_001_090",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Patología testicular"
     ],
     "enunciado": "Se presenta a consulta un varón de 26 años, que en el último tiempo ha notado la presencia de una masa en su testículo derecho, dura e indolora. En cirugía, el corte congelado pone de manifiesto cáncer testicular. ¿Cuál de los siguientes considera como un factor de riesgo?",
     "opciones": {
@@ -2069,45 +2128,47 @@
       "d": "Dietilestilbestrol materno durante la gestación"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El factor etiológico predisponente más claramente establecido y de mayor trascendencia clínica para la posterior aparición de los tumores de células germinales es la **Criptorquidia** (ausencia de descenso de uno o ambos testículos hacia el escroto).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-091",
+    "id": "urologia_001_091",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Patología testicular",
+      "Conceptos de Oncología"
     ],
     "enunciado": "Un paciente de 35 años, con diagnóstico de cáncer testicular no seminomatoso en estadio I, es sometido a una orquiectomía. Con respecto al seguimiento de este, ¿Qué marcadores, en suero, suelen ser empleados para este fin?",
     "opciones": {
       "a": "Antígeno prostático específico (PSA), exclusivamente",
-      "b": "Gonadotropina coriónica humana (hCG) Y a-fetoproteína (AFP)",
+      "b": "Gonadotropina coriónica humana (hCG) Y a-fetoproteina (AFP)",
       "c": "Deshidrogenasa láctica (LDH) Y antígeno prostático específico (PSA)",
       "d": "Antígeno carcinoembrionario (CEA) Y deshidrogenasa láctica (LDH)"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los tumores de origen germinal no seminomatoso poseen la particularidad patológica de secretar al torrente sanguíneo distintos biomarcadores séricos onco-fetales. Para el diagnóstico preciso, estadificación post-quirúrgica y detección temprana de recurrencias en estos pacientes, resulta fundamental la monitorización periódica de la **Gonadotropina coriónica humana (hCG) Y a-fetoproteina (AFP)**, junto con la enzima LDH.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-092",
+    "id": "urologia_001_092",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Cáncer de riñón y otros tumores renales",
+      "Conceptos de Oncología"
     ],
     "enunciado": "¿Cuál de las siguientes opciones, corresponde a un paciente con un carcinoma renal en un estadio II?",
     "opciones": {
@@ -2117,45 +2178,47 @@
       "d": "Afecta los ganglios linfáticos hiliares"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Según la clasificación de extensión local TNM para el carcinoma de células renales, la diferencia fundamental entre el estadio I (T1) y el estadio II (T2) radica de forma exclusiva en su tamaño (menor o mayor de 7 centímetros respectivamente). En ambos estadios tempranos, la regla de oro anatómica se mantiene constante en que el tumor **Está circunscripto al riñón**, sin perforar la cápsula de Gerota ni presentar afección vascular o ganglionar.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-093",
+    "id": "urologia_001_093",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Próstata",
+      "Conceptos de Oncología"
     ],
     "enunciado": "Juan de 68 años, tiene desde hace 2 años un nódulo prostático, cuya biopsia informó un adenocarcinoma prostático poco diferenciado, pero sin extensión fuera de la próstata. Como el paciente deseaba conservar la potencia sexual, optó por la radioterapia como tratamiento primario, aparte de precisar una revascularización de los miembros inferiores por una arteriopatía periférica severa. El paciente evolucionó bien hasta que, hace poco, comenzó con dolor en la cadera derecha. El PSA está elevado (y en ascenso) Y el centellograma óseo revela zonas de captación positiva en la pelvis y las costillas (ausentes en el estudio original de estadificación). El paciente rechaza la propuesta de someterse a una orquiectomía bilateral. En este momento, la acción más adecuada sería:",
     "opciones": {
       "a": "Administrar cisplatino y 5-fluorouracilo",
       "b": "Biopsiar una de las lesiones óseas",
       "c": "Administrar leuprolide y flutamida",
-      "d": "Practicar la orquiectomía"
+      "d": "Practicar la orquiectomia"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente ha evolucionado clínica y radiológicamente hacia un cáncer de próstata metastásico avanzado (compromiso óseo en cadera y costillas con alza de PSA). El manejo paliativo de primera línea es la castración, para suprimir la estimulación androgénica del tumor. Al rechazar la extirpación quirúrgica (orquiectomía), la alternativa mandatoria equivalente es la castración química u hormonal, debiéndose **Administrar leuprolide** (análogo LHRH para supresión central) **y flutamida** (antiandrógeno periférico para prevenir el pico inicial nocivo o efecto 'flare').",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-094",
+    "id": "urologia_001_094",
     "materia": [
-      "urologia",
+      "urologia_cx",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Patología testicular",
+      "Conceptos de Oncología"
     ],
     "enunciado": "El resultado de la estadificación de un carcinoma embrionario testicular de un paciente de 27 años, informa: tumor de células germinales no seminomatoso en estadio II. Luego de la orquiectomía y la disección de los ganglios linfáticos retroperitoneales (DGLRP), ¿Cuál es la conducta que debería adoptarse, de acuerdo con la extensión tumoral?",
     "opciones": {
@@ -2165,21 +2228,24 @@
       "d": "Sólo vigilancia tanto en las metástasis \"grandes\" como en las \"pequeñas\""
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el abordaje post-operatorio del cáncer testicular no seminomatoso que ya presenta compromiso ganglionar regional (estadio II), la estrategia de tratamiento es altamente estratificada según la cuantía tumoral remanente. Así, la pauta oncológica establece taxativamente que **Si las metástasis son \"grandes\" (más de 6 ganglios afectados o uno mayor de 2 cm de diámetro máximo o presencia de extensión extraganglionar) Se deberá hacer quimioterapia porque las recidivas son altas**, indicándose esquema curativo (frecuentemente BEP) para erradicar la enfermedad micrometastásica oculta residual.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-095",
+    "id": "urologia_001_095",
     "materia": [
+      "urologia_cx",
       "urologia"
     ],
     "submateria": [
-      "Otras preguntas de urologia"
+      "Urología funcional e incontinencia",
+      "Síndromes clínicos"
     ],
-    "enunciado": "Un varón de 35 años se presenta al servicio de urgencias quejándose de dolor en el flanco derecho no irradiado y poliuria que se alterna con oliguria. El paciente niega disuria, hematuria o fiebre, al igual que algún otro antecedente patológico importante y la revisión de los demás síntomas es negativa. El examen muestra signos vitales normales y el estudio del abdomen es normal, excepto por dolor leve en el ángulo costofrénico del lado derecho. El tacto rectal no muestra hipersensibilidad y el examen prostático es normal. No se encuentran edemas en las extremidades inferiores. El examen general de la orina no muestra piuria, bacterias ni cilindros. Los valores urea y creatinina en suero son de 50 mg/dL y 2.0 mg/dl respectivamente. La ecografía renal muestra dilatación ureteropielocalical severa bilateral. ¿Cuál es el diagnóstico más probable?",
+    "enunciado": "Un varón de 35 años se presenta al servicio de urgencias quejándose de dolor en el flanco derecho no irradiado y poliuria que se alterna con oliguria. El paciente niega disuria, hematuria o fiebre, al igual que algún otro antecedente patológico importante y la revisión de los demás síntomas es negativa. El examen muestra signos vitales normales y el estudio del abdomen es normal, excepto por dolor leve en el ángulo costofrénico del lado derecho. El tacto rectal no muestra hipersensibilidad y el examen prostático es normal. No se encuentran edemas en las extremidades inferiores. El examen general de la orina no muestra piuria, bacterias ni cilindros. Los valores urea y creatinina en suero son de 50 mg/dL y 2.0 mg/dL respectivamente. La ecografía renal muestra dilatación ureteropielocalical severa bilateral. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Cistitis aguda",
       "b": "Enfermedad por reflujo vesicoureteral",
@@ -2187,19 +2253,20 @@
       "d": "Nefrolitiasis"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La alternancia paradójica en los volúmenes de eliminación (poliuria vs oliguria) es un marcador clínico sugestivo de obstrucciones parciales o de flujo retrógrado urológico. El hallazgo ecográfico concomitante de una severa dilatación y afectación bilateral del sistema colector en un paciente adulto, asintomático previamente, en ausencia de litiasis visible ni masa prostática obstructiva inferior, dirige el cuadro diagnóstico inequívocamente hacia una insuficiencia funcional e incompetencia valvular constituyendo una **Enfermedad por reflujo vesicoureteral**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-096",
+    "id": "urologia_001_096",
     "materia": [
-      "urologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Riesgo cardiovascular y riñón"
+      "Andrología, disfunción eréctil y cáncer de pene"
     ],
     "enunciado": "La disfunción eréctil se relaciona con las siguientes opciones, excepto una. Márquela:",
     "opciones": {
@@ -2209,91 +2276,95 @@
       "d": "Niveles altos de LDL"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Tanto la hipertensión arterial como las dislipidemias (LDL alto y HDL bajo) conforman fuertes bases de injuria aterosclerótica y endotelial relacionadas firmemente con la alteración eréctil. Aunque fisiopatológicamente la diabetes es un desencadenante mayor de impotencia de origen mixto orgánico, por un error intrínseco en la clave del banco de origen de esta pregunta se indica seleccionar **Diabetes mellitus** como la excepción dentro de la lista de factores meramente vasculares primarios.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-097",
+    "id": "urologia_001_097",
     "materia": [
       "urologia",
       "infectologia"
     ],
     "submateria": [
-      "Infecciones urinarias",
-      "Bacterias"
+      "Infecciones del tracto urinario",
+      "Antibacterianos"
     ],
     "enunciado": "Ante una paciente de 30 años, sexualmente activa, con cistitis a repetición, ¿Cuál de las siguientes manifestaciones permite acercarnos al diagnóstico de la pielonefritis aguda?",
     "opciones": {
       "a": "Polaquiuria, disuria e incontinencia urinaria",
       "b": "Fiebre, escalofríos, dolor lumbar, debilidad y malestar. En ocasiones se asocia con molestias miccionales",
-      "c": "Es un síndrome miccional agudo que cursa con fiebre y hematuria y en ocasiones se asocia con molestias renales",
+      "c": "Es un sindrome miccional agudo que cursa con fiebre y hematuria y en ocasiones se asocia con molestias renales",
       "d": "Infección urinaria baja, pero con febrícula, tenesmo, dolorimiento abdominal y molestias gastrointestinales asociadas a las renales"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La evolución de una infección del tracto urinario inferior simple hacia una injuria parenquimatosa alta severa (pielonefritis aguda) se instaura por signos claros de toxicidad inflamatoria y repercusión sistémica profunda, tales como **Fiebre, escalofríos, dolor lumbar, debilidad y malestar. En ocasiones se asocia con molestias miccionales** preexistentes.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-098",
+    "id": "urologia_001_098",
     "materia": [
-      "urologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia"
+      "Próstata"
     ],
-    "enunciado": "Uno de los siguientes síntomas y/o hallazgos clínicos no es típico del prostatismo; señálelo:",
+    "enunciado": "Uno de los siguientes sintomas y/o hallazgos clínicos no es típico del prostatismo; señálelo:",
     "opciones": {
       "a": "Chorro débil y entrecortado",
-      "b": "Polaquiuria y episodios de retención urinaria",
+      "b": "Polaquiuria y episodios de retención urinaría",
       "c": "Pérdidas de orina involuntarias, sobre todo nocturnas",
       "d": "Urgencia miccional, escozor y tenesmo vesical"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El término general clínico 'prostatismo' se conforma netamente por síntomas vesicales obstructivos o de vaciado pobre (chorro débil, goteo intermitente) combinados con síntomas irritativos (urgencia, polaquiuria diurna y nocturna). Sin embargo, las genuinas **Pérdidas de orina involuntarias, sobre todo nocturnas** corresponden a episodios de enuresis o incontinencia profunda, los cuales escapan del cuadro de presentación habitual o típico y orientan más hacia una neuropatía o rebosamiento vesical extremo y terminal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-099",
+    "id": "urologia_001_099",
     "materia": [
-      "urologia",
-      "oncologia"
+      "urologia_cx"
     ],
     "submateria": [
-      "Otras preguntas de urologia",
-      "Oncología"
+      "Próstata"
     ],
     "enunciado": "Un hombre de 65 años sin antecedentes personales de interés acude al médico para un chequeo general. La exploración física y los análisis de laboratorio son normales, pero la concentración sérica del antígeno prostático específico (PSA) Alcanza 8 ng/mL ¿Cuál de las siguientes opciones es correcta en cuanto al cuadro clínico de este paciente?",
     "opciones": {
-      "a": "Suponiendo que no existan metástasis, estaría indicada la prostatectomía radical",
+      "a": "Suponiendo que no existan metástasis, estaría indicada la prostatectomia radical",
       "b": "Suponiendo que no esté diseminado, el paciente debería recibir radioterapia prostática",
       "c": "El riesgo de cáncer prostático para este paciente es del 75%",
       "d": "Si el paciente sufre un cáncer prostático la enfermedad posiblemente esté limitada a la glándula"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El nivel circulante detectado de PSA proporciona a su vez una estimación pronóstica de la agresividad biológica y el volumen tumoral estimado. En valores moderados u oscilantes entre 4 y 10 ng/mL, el hallazgo más plausible y fundamentado indica que, **Si el paciente sufre un cáncer prostático la enfermedad posiblemente esté limitada a la glándula** u órgano-confinada, sin invasión macroscópica a tejidos circundantes ni extensión diseminada a distancia al momento del hallazgo.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "urologia-001-100",
+    "id": "urologia_001_100",
     "materia": [
-      "urologia"
+      "urologia",
+      "urologia_cx"
     ],
     "submateria": [
-      "Fracaso renal agudo"
+      "Fracaso renal agudo",
+      "Próstata"
     ],
-    "enunciado": "Varón 79 años con antecedente de demencia es llevado al departamento de urgencias debido a historia de letargia de ocho horas de evolución. En los últimos dos días se ha quejado de dolor abdominal bajo. Su ingesta oral era normal hasta las últimas ocho horas. El paciente no toma medicamentos. La T. es normal, la presión arterial tiene cifras de 150/90 mmHg, la FC es de 105/Lpm y la FR de 20/rpm. En la exploración física se encuentra prominencia de las venas del cuello y dolor difuso en la parte baja del abdomen con ruidos intestinales normales. Se percute la vejiga hasta el ombligo y se advierte una próstata crecida. El paciente se encuentra letárgico pero activo. La química sanguínea revela sodio de 128 mEq/L urea 270 mg/dL y creatinina de 16 mg/dL Dos meses antes sus estudios de laboratorio eran normales. Se le coloca una sonda de Foley, la cual drena 3100 ml de orina. ¿Cuál de las siguientes aseveraciones acerca de su estado clínico es correcta?",
+    "enunciado": "Varón 79 años con antecedente de demencia es llevado al departamento de urgencias debido a historia de letargia de ocho horas de evolución. En los últimos dos días se ha quejado de dolor abdominal bajo. Su ingesta oral era normal hasta las últimas ocho horas. El paciente no toma medicamentos. La T. es normal, la presión arterial tiene cifras de 150/90 mmHg, la FC es de 105/Lpm y la FR de 20/rpm. En la exploración física se encuentra prominencia de las venas del cuello y dolor difuso en la parte baja del abdomen con ruidos intestinales normales. Se percute la vejiga hasta el ombligo y se advierte una próstata crecida. El paciente se encuentra letárgico pero activo. La química sanguinea revela sodio de 128 mEq/L urea 270 mg/dL y creatinina de 16 mg/dL Dos meses antes sus estudios de laboratorio eran normales. Se le coloca una sonda de Foley, la cual drena 3100 ml de orina. ¿Cuál de las siguientes aseveraciones acerca de su estado clínico es correcta?",
     "opciones": {
       "a": "Requerirá restitución radical de volumen en las siguientes 24 horas.",
       "b": "Su funcionamiento renal probablemente se normalizará en la siguiente semana.",
@@ -2301,10 +2372,11 @@
       "d": "Está indicada la diálisis de inmediato."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente cursa con un estado obstructivo agudo urinario bajo franco (globo vesical evidenciado por el abultamiento del vientre hasta nivel umbilical) que decantó en una falla renal retrograda u obstructiva severa, lo que alteró las concentraciones nitrogenadas e indujo la clínica urémica. Al haberse implementado satisfactoriamente un drenaje mecánico evacuador completo e inmediato de 3 litros con sonda vesical, la descompresión temprana y oportuna de los riñones hace prever que **Su funcionamiento renal probablemente se normalizará en la siguiente semana** tras ceder la compresión tubular intraluminal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   }
 ]
