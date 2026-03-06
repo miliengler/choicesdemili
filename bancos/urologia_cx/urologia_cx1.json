@@ -379,4 +379,517 @@
     "oficial": false,
     "fuente": "prorem"
   },
-  
+  {
+    "id": "urocx_001_021",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "Gladys de 28 años consulta a la guardia refiriendo disuria, polaquiuria, tenesmo y urgencia miccional. Niega tener flujo vaginal. Hace tres días ha regresado de su luna de miel. Al examen físico está con buen estado general y afebril. Se realiza prueba de orina mediante una tira reactiva que muestra nitritos positivos y test de embarazo: negativo. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar urocultivo y esperar resultado para decidir tratamiento antibiótico.",
+      "b": "Indicar tratamiento empírico a la mujer y a su pareja.",
+      "c": "Iniciar tratamiento antibiótico empirico ambulatorio.",
+      "d": "Solicitar urocultivo, e iniciar tratamiento antibiótico empirico hasta tener el resultado."
+    },
+    "correcta": "c",
+    "explicacion": "En esta paciente pensamos en una **cistitis no complicada**, ya que cursa con síndrome miccional.\n\nPara su diagnóstico basta con la clínica y el análisis básico de orina o las pruebas rápidas de orina (tiras reactivas).\n\nEl **urocultivo** debe solicitarse si existe sospecha de pielonefritis, los síntomas no se resuelven en 2-4 semanas, hay presencia de síntomas atípicos como fiebre, si se trata de mujeres embarazadas y en los hombres.\n\nTratamiento: Se proponen ciclos cortos de antibioticoterapia durante 3-5 días con **nitrofurantoína** MC y **cefalexina**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_022",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "Viene a la consulta una mujer de 22 años, que consultó en una guardia hace 2 días por dolor abdominal irradiado a región lumbar, asociada a fiebre y náuseas. Trae un análisis de orina completa con: HB++++, LEUCOCITOS ++++ y PIOCITOS ++++ ¿Cuál es su diagnóstico presuntivo y qué conducta terapéutica tomaría?",
+    "opciones": {
+      "a": "Diagnóstico de pielonefritis. Indica ceftriaxona 500 mg IM previo interrogatorio sobre FUM y pedido de urocultivo.",
+      "b": "Diagnóstico de cistitis, indica cefalexina oral 500 mg cada 6 horas por 5 días.",
+      "c": "Diagnóstico de pielonefritis. Solicita urocultivo. Evalúa la tolerancia oral e indica ciprofloxacina VO 500 MG cada 12 hs por 7 dias.",
+      "d": "Diagnóstico de pielonefritis. Solicita urocultivo y deriva a guardia para internación de urgencia."
+    },
+    "correcta": "c",
+    "explicacion": "Mujer con dolor abdominal irradiado a región lumbar, asociada a fiebre y náuseas con sedimento patológico = diagnóstico presuntivo de **pielonefritis**.\n\nEl diagnóstico de sospecha es clínico y se complementa con el análisis básico de orina que muestra piuria y bacteriuria.\n\nEn ausencia de datos de sepsis grave el tratamiento de la pielonefritis puede ser **ambulatorio** con quinolonas, cotrimoxazol, cefalosporinas o amoxicilina-clavulánico durante 10 a 14 días.\n\nLa respuesta adecuada es: Diagnóstico de pielonefritis. Solicita urocultivo. Evalúa la tolerancia oral e indica **ciprofloxacina** VO 500 MG cada 12 hs por 7 días.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_023",
+    "materia": ["urologia_cx", "oncologia"],
+    "submateria": ["Cáncer de riñón y otros tumores renales", "Conceptos de Oncología"],
+    "enunciado": "¿Cuál de los siguientes tumores se asocia a eritrocitosis como síndrome paraneoplásico?",
+    "opciones": {
+      "a": "Cáncer de mama",
+      "b": "Cáncer de próstata",
+      "c": "Cáncer de pulmón",
+      "d": "Hepatocarcinoma"
+    },
+    "correcta": "d",
+    "explicacion": "Los **síndromes paraneoplásicos** son aquellos signos o síntomas que acompañan al cáncer y que no se vinculan directamente con la diseminación de la neoplasia.\n\nLa **eritrocitosis** se asocia a tumores que generan eritropoyetina como el **carcinoma renal**, el **hepatocarcinoma** y los tumores de fosa posterior.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_024",
+    "materia": ["pediatria", "urologia_cx"],
+    "submateria": ["Oncohematología infantil", "Cáncer de riñón y otros tumores renales"],
+    "enunciado": "Un niño de tres años presenta una masa abdominal palpable y microhematuria. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Tumor de Wilms",
+      "b": "Neuroblastoma de glándula suprarrenal",
+      "c": "Carcinoma renal de células claras",
+      "d": "Sarcoma de Ewing extraóseo (localización renal)"
+    },
+    "correcta": "a",
+    "explicacion": "El tumor renal maligno primario más frecuente de la infancia es el **tumor de Wilms**, con un pico de incidencia entre los 2 y 3 años.\n\nSe presenta como **masa abdominal palpable** y en un 10 a 20% de los casos la hematuria macroscópica es la manifestación inicial.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_025",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "Un paciente de 60 años se somete a biopsia prostática por presentar en laboratorio control PSA de 9 ng/mL. El informe de la biopsia establece diagnóstico de adenocarcinoma prostático que compromete ambos lóbulos y contacta con la cápsula, Gleason 6. ¿Cuál de los siguientes tratamientos es el más adecuado en esta instancia?",
+    "opciones": {
+      "a": "Radioterapia externa",
+      "b": "Bicalutamida + Leuprolide",
+      "c": "Prostatectomía radical + braquiterapia + Leuprolide",
+      "d": "Prostatectomía radical + Leuprolide"
+    },
+    "correcta": "a",
+    "explicacion": "El grado histológico del tumor se clasifica por la escala de **Gleason**. El tratamiento de la enfermedad localmente avanzada (estadios T3-T4) consiste en:\n\n- **Radioterapia externa**: tratamiento estándar en el cáncer de próstata localmente avanzado, acompañada de bloqueo hormonal durante 2-3 años.\n- **Cirugía**: en casos muy seleccionados y dentro de un enfoque multimodal con posibilidad de requerir tratamientos adicionales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_026",
+    "materia": ["urologia_cx"],
+    "submateria": ["Urolitiasis"],
+    "enunciado": "¿Cuál es el componente que da origen al 75% de los cálculos renales?",
+    "opciones": {
+      "a": "Oxalato de calcio",
+      "b": "Ácido úrico",
+      "c": "Cisteína",
+      "d": "Estruvita"
+    },
+    "correcta": "a",
+    "explicacion": "Las litiasis de la vía urinaria se originan por un desequilibrio entre la saturación de metabolitos formadores de litiasis y los protectores.\n\nEl componente más frecuente es el **oxalato de calcio** (60-80%).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_027",
+    "materia": ["urologia_cx"],
+    "submateria": ["Cáncer de riñón y otros tumores renales"],
+    "enunciado": "¿Cuál es el principal tipo de adenocarcinoma renal?",
+    "opciones": {
+      "a": "Carcinoma de células claras",
+      "b": "Tumor Sarcomatoide",
+      "c": "De Bellini",
+      "d": "Carcinoma de células cromófobas"
+    },
+    "correcta": "a",
+    "explicacion": "El **adenocarcinoma de células claras renal** es el tipo histológico más frecuente de cáncer de riñón.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_028",
+    "materia": ["urologia_cx", "medicinafamiliar"],
+    "submateria": ["Próstata", "Control de salud"],
+    "enunciado": "Un paciente de 65 años, sin antecedentes patológicos relevantes, consulta por control de salud. En el examen físico se constata tacto rectal con próstata de características normales. Se solicita PSA que informa un valor de 13 ng/ml. ¿Cuál es la conducta indicada?",
+    "opciones": {
+      "a": "Tacto rectal y dosaje PSA anuales.",
+      "b": "Evaluar ratio PSA libre/PSA especifico a los 6 meses.",
+      "c": "Evaluar prostatectomia transuretral.",
+      "d": "Biopsia guiada por ecografia."
+    },
+    "correcta": "d",
+    "explicacion": "Valores de **PSA** por encima de **10 ng/mL** deben hacer sospechar de cáncer de próstata.\n\nEn estos casos, la **biopsia** es la prueba de confirmación indicada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_029",
+    "materia": ["medicinafamiliar", "urologia_cx"],
+    "submateria": ["Adulto mayor", "Próstata"],
+    "enunciado": "Persona de 81 años de edad sufre una caída en el baño a las 2 de la mañana. Relata que permaneció confuso por un minuto aproximadamente, recuperando luego la lucidez habitual. Tiene antecedentes de Hipertensión Arterial, Diabetes Mellitus tipo 2 e Hiperplasia prostática benigna. Toma Bisoprolol, Enalapril, Hidroclorotiazida, Amlodipina, Metformina, Aspirina y Doxazosina. ¿Cuál es su diagnóstico presuntivo más probable?",
+    "opciones": {
+      "a": "Hipoglucemia dada por la escasa ingesta",
+      "b": "Hipotensión Ortostática",
+      "c": "Fibrilación Auricular Paroxistica",
+      "d": "Crisis Hipertensiva"
+    },
+    "correcta": "b",
+    "explicacion": "En este paciente existen diversos factores de riesgo para caídas, incluyendo la edad y la polimedicación.\n\nLos **bloqueantes alfa-adrenérgicos** (como la **doxazosina**, utilizada para la HPB) relajan el músculo liso prostático, pero su principal efecto adverso es la **hipotensión**.\n\nSe debe tener especial precaución con su uso en pacientes adultos con diabetes o polimedicados por el riesgo de **hipotensión ortostática**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_030",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "¿En cuál de las siguientes situaciones clínicas es recomendable solicitar un urocultivo?",
+    "opciones": {
+      "a": "Vanesa de 20 años, sin antecedentes patológicos, no embarazada y con disuria de 24 horas de evolución.",
+      "b": "Ana de 30 años con disuria y cuya pareja fue tratada por uretritis",
+      "c": "Violeta de 25 años con disuria y flujo vaginal",
+      "d": "Marta de 25 años con disuria y varias recaídas de infecciones urinarias documentadas."
+    },
+    "correcta": "d",
+    "explicacion": "No debe obtenerse un urocultivo a menos que se hayan presentado **más de dos infecciones urinarias** en el último año, o en casos de sospecha de pielonefritis, falta de respuesta al tratamiento, embarazo u hombres.\n\nEn el caso de Marta, al tener **recaídas documentadas**, es imprescindible solicitarlo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_031",
+    "materia": ["urologia_cx"],
+    "submateria": ["Patología testicular"],
+    "enunciado": "¿Cuál es el diagnóstico histopatológico más probable en un hombre de 24 años que presenta un nódulo testicular de 2.5 cm, duro y heterogéneo, con nódulos pulmonares en la radiografía y gonadotrofina coriónica humana superior a 19000 UI/L?",
+    "opciones": {
+      "a": "Seminoma",
+      "b": "Coriocarcinoma",
+      "c": "Seminomaespermatocítico",
+      "d": "Teratoma"
+    },
+    "correcta": "b",
+    "explicacion": "Los tumores testiculares germinales suelen asociarse a metástasis pulmonares.\n\nEl **coriocarcinoma** eleva característicamente la subunidad beta de la **gonadotrofina coriónica humana** (HCG) por presentar un origen asociado a tejido placentario.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_032",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Patología testicular", "Patología renal y urológica urgente"],
+    "enunciado": "Consulta por guardia Esteban de 16 años de edad por presentar un dolor repentino testicular e hinchazón del escroto, pérdida del reflejo cremastérico y náuseas que comenzaron hace 4 hs. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Sedimento urinario, antiinflamatorios y antibiótico.",
+      "b": "Ecografía doppler testicular, sedimento urinario y estudio de exudado uretral, antiinflamatorios y antibióticos.",
+      "c": "Ecografía doppler testicular y cirugia de urgencia.",
+      "d": "Ecografía testicular, hielo local y antiinflamatorios."
+    },
+    "correcta": "c",
+    "explicacion": "Se trata de una **torsión testicular**, la cual es una **urgencia urológica**.\n\nCursa con dolor intensísimo súbito y el **reflejo cremastérico está ausente**.\n\nEn la ecografía se objetiva la ausencia de flujo Doppler. El tratamiento consiste en **cirugía emergente**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_033",
+    "materia": ["urologia_cx", "ginecologia"],
+    "submateria": ["Urología funcional e incontinencia", "Prolapso e IU"],
+    "enunciado": "¿Cuál es la causa más frecuente de incontinencia de orina en las mujeres antes de los 75 años?",
+    "opciones": {
+      "a": "Incontinencia funcional.",
+      "b": "Incontinencia de esfuerzo.",
+      "c": "Incontinencia por rebosamiento.",
+      "d": "Incontinencia de urgencia"
+    },
+    "correcta": "b",
+    "explicacion": "La **incontinencia de esfuerzo (IUE)** es la más frecuente en mujeres y se debe a un mal soporte anatómico de la uretra o a un esfínter incompetente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_034",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "El adenocarcinoma de próstata es una enfermedad frecuente en el sexo masculino. ¿Cuál de los siguientes es el tratamiento de elección para la enfermedad localizada (estadios T1-T2)?",
+    "opciones": {
+      "a": "Quimioterapia.",
+      "b": "Prostatectomia radical.",
+      "c": "Resección transuretral.",
+      "d": "Hormonoterapia."
+    },
+    "correcta": "b",
+    "explicacion": "Para la **enfermedad localizada** (T1-T2), las opciones de tratamiento curativo con similares resultados son:\n- **Prostatectomía radical** (extirpación de la próstata y vesículas seminales).\n- **Radioterapia** (externa o braquiterapia).\n\nEn pacientes con baja expectativa de vida puede optarse por observación o vigilancia activa.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_035",
+    "materia": ["urologia_cx"],
+    "submateria": ["Próstata"],
+    "enunciado": "Un hombre de 65 años consulta por control de salud. Trae estudios con un valor de PSA de 4 ng/ml. Al tacto rectal se palpa próstata aumentada de tamaño e irregular. ¿Cuál es la conducta diagnostica más adecuada?",
+    "opciones": {
+      "a": "Solicitar RMN pélvica",
+      "b": "Realizar PSA y tacto rectal a los 3 y 6 meses",
+      "c": "Repetir PSA al año",
+      "d": "Realizar biopsia guiada por Ecografía transrectal"
+    },
+    "correcta": "d",
+    "explicacion": "Ante un paciente donde el **tacto rectal resulta sospechoso** (irregular), **sin importar el valor de PSA**, se debe realizar una **biopsia transrectal ecoguiada** para descartar malignidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_036",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Patología testicular", "Patología renal y urológica urgente"],
+    "enunciado": "Niño de doce años de edad que consulta por tumefacción y dolor escrotal de tres horas de evolución. Comenzó luego de jugar a la pelota. Al examen físico se constata leve eritema y edema escrotal derecho, con dolor a la palpación que no se modifica con el ascenso testicular y reflejo cremasteriano ausente. ¿Cuál sería su conducta inicial?",
+    "opciones": {
+      "a": "Indicar reposo, hielo y antiinflamatorios y control en 24 horas",
+      "b": "Solicitar orina completa, urocultivo e indica tratamiento antibiótico con cefalexina e ibuprofeno",
+      "c": "Interconsulta urgente con cirugia para evaluación del paciente",
+      "d": "Indicar reposo y analgésicos y reevaluar a las 12 horas"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico es altamente sugestivo de una **torsión testicular**. Debido a que se trata de una emergencia quirúrgica donde el tiempo es crítico para la viabilidad del órgano, la conducta inicial debe ser la **interconsulta urgente con cirugía**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_037",
+    "materia": ["urologia_cx"],
+    "submateria": ["Patología testicular"],
+    "enunciado": "El principal componente de la barrera hematotesticular está constituido por:",
+    "opciones": {
+      "a": "Células mioides",
+      "b": "Endotelio capilar peritubular",
+      "c": "Membrana basal del tubo seminifero",
+      "d": "Células de Sertoli"
+    },
+    "correcta": "d",
+    "explicacion": "Las paredes de los túbulos seminíferos están formadas por las **células de Sertoli**, cuyas uniones estrechas celulares forman la **barrera hemato-testicular**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_038",
+    "materia": ["urologia_cx"],
+    "submateria": ["Urología funcional e incontinencia"],
+    "enunciado": "El denominado síndrome uretral en general se presenta en mujeres de mediana edad. ¿Cuál sería la causa más frecuente de su origen?",
+    "opciones": {
+      "a": "Cistitis intersticial",
+      "b": "Hiperactividad vesical",
+      "c": "Hipoactividad vesical",
+      "d": "Espasticidad uretral"
+    },
+    "correcta": "b",
+    "explicacion": "Dentro de las cistopatías crónicas, el **síndrome uretral** se caracteriza por síntomas irritativos parecidos a la cistitis aguda clásica pero persistente.\n\nExiste disuria, polaquiuria, dolor hipogástrico, dispareunia, etc. Este cuadro clínico es muy variable y se presenta especialmente en mujeres de la tercera y cuarta década de vida.\n\nGeneralmente se presenta sin infección urinaria. Este síndrome se debe a una reacción inflamatoria de la vejiga que afecta desde la submucosa hacia la capa muscular generando una **hiperactividad vesical**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_039",
+    "materia": ["urologia_cx", "infectologia"],
+    "submateria": ["Patología testicular", "ITS"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 16 años que consulta por padecer dolor escrotal de 12 horas de evolución? Refiere que el dolor comenzó de manera gradual y moderada en el lado izquierdo. Es sexualmente activo y utiliza preservativos. Manifiesta ardor al orinar, sin secreción uretral. Se encuentra afebril, y no refiere vómitos ni diarrea. En el examen físico se observa tumefacción moderada de la porción escrotal izquierda, sin eritema, con intenso dolor a la palpación, y en posición más baja que el derecho. El cordón espermático izquierdo es muy doloroso. Tiene un sedimento urinario con más de 10 glóbulos blancos por campo.",
+    "opciones": {
+      "a": "Varicocele",
+      "b": "Epididimitis",
+      "c": "Torsión testicular",
+      "d": "Infección del tracto urinario"
+    },
+    "correcta": "b",
+    "explicacion": "La **epididimitis** ocurre con más frecuencia en adolescentes, los signos y síntomas son unilaterales con dolor, enrojecimiento y aumento del tamaño escrotal.\n\nSe puede llegar a palpar la cabeza del epidídimo y, el conducto deferente o cordón también se pueden palpar agrandados y sensibles a la palpación. El **sedimento patológico** (piuria) apoya el diagnóstico infeccioso.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_040",
+    "materia": ["urologia_cx"],
+    "submateria": ["Cáncer de riñón y otros tumores renales"],
+    "enunciado": "¿Cuál es la manifestación clínica más frecuente de los tumores renales?",
+    "opciones": {
+      "a": "Hipercalcemia",
+      "b": "Hipertensión arterial.",
+      "c": "Hematuria.",
+      "d": "Dolor lumbar."
+    },
+    "correcta": "c",
+    "explicacion": "Más del 50% de las masas renales son diagnosticadas incidentalmente.\n\nLa tríada clásica (hematuria, dolor y masa) es infrecuente hoy día. Sin embargo, de los tumores que se presentan con síntomas, el más frecuente es la **hematuria** (60%).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_041",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Patología testicular", "Patología renal y urológica urgente"],
+    "enunciado": "Un paciente de 18 años consulta a la guardia porque presenta dolor intenso en el testículo derecho que irradia al hipogastrio y a la ingle. Refiere que comenzó en forma aguda luego de despertarse. En el examen físico se constata el testículo derecho aumentado de tamaño, doloroso al tacto y el signo de Prehn es negativo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Torsión de hidátide",
+      "b": "Orquiepididimitis aguda",
+      "c": "Torsión testicular",
+      "d": "Varicocele trombosado"
+    },
+    "correcta": "c",
+    "explicacion": "La **torsión testicular** es la oclusión del cordón espermático con compromiso de la irrigación sanguínea del testículo.\n\nSe presenta generalmente en menores de 25 años. El paciente consulta por **dolor testicular agudo** de gran intensidad, el testículo a la exploración se encuentra doloroso, aumentado de tamaño y con **signo de Prehn negativo** (el dolor no alivia al elevar el testículo).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_042",
+    "materia": ["urologia_cx", "ginecologia"],
+    "submateria": ["Urología funcional e incontinencia", "Prolapso e IU"],
+    "enunciado": "Consulta una mujer de 73 años por control periódico de salud. Refiere antecedentes de HTA y DLP, EPOC y G3 P3. Nos comenta que habitualmente \"cuando siente ganas de hacer pis y está en camino al baño se le escapa un poco de pis\". Está en tratamiento con losartán 100 mg/día, rosuvastatina 20 mg/día, fluticasona-vilanterol 1 puff/día. Al examen físico presenta como dato positivo un IMC de 41 kg/m2. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar ejercicios de suelo pélvico, plan nutricional para bajar de peso e inyección de toxina botulínica en el músculo detrusor de la vejiga",
+      "b": "Indicar ejercicios de suelo pélvico, modificar la medicación e indicar plan nutricional para bajar de peso.",
+      "c": "Indicar medicación con antimuscarínicos, ejercicios de suelo pélvico y plan nutricional para bajar de peso",
+      "d": "Indicar ejercicios de suelo pélvico, plan nutricional para bajar de peso y realizar sling suburetral"
+    },
+    "correcta": "c",
+    "explicacion": "La paciente presenta una **Incontinencia de Urgencia (IUU)** clínica.\n\nTratamiento conservador:\n- Ejercicios de suelo pélvico.\n- Corrección de factores agravantes (adelgazar en caso de obesidad, como este caso con IMC 41).\n\nTratamiento farmacológico:\n- Para la IUU, el tratamiento de elección son los **antimuscarínicos** (oxibutinina, tolterodina, etc.).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_043",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Patología renal y urológica urgente", "Síndromes abdominales"],
+    "enunciado": "Un varón de 73 años consulta a la guardia por disminución del ritmo diurético hace 72 hs. En el laboratorio se constata insuficiencia renal. Se introduce una sonda vesical y se obtiene diuresis. Se realiza ecografía que informa hidronefrosis ¿Qué estudio diagnóstico solicita en primer lugar?",
+    "opciones": {
+      "a": "Tomografía axial computada para identificar sitio y causa de obstrucción.",
+      "b": "Radiografía de abdomen de pie.",
+      "c": "Urografía anterógrada",
+      "d": "Urografía retrógrada"
+    },
+    "correcta": "a",
+    "explicacion": "Ante una **uropatía obstructiva** con hidronefrosis y fracaso renal, en caso de dudas diagnósticas se debe realizar una **TC sin contraste** urgente para valorar el tamaño y localización de la obstrucción (litiasis o no).\n\nEl uso de contraste yodado intravenoso puede estar contraindicado ante la presencia de insuficiencia renal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_044",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Urolitiasis", "Patología renal y urológica urgente"],
+    "enunciado": "Ingresa a la guardia médica un paciente de 39 años con dolor lumbar, intensidad 9/10, y vómitos incoercibles, de varias horas de evolución. Se encuentra pálido y sudoroso, temperatura 37.2° C. Ud solicita sedimento urinario que presenta 10 leucocitos por campo, y campo cubierto de eritrocitos. La ecografía renal no muestra dilatación pielocalicial ni litos ecogénicos. En análisis de sangre presenta un hemograma normal, sin leucocitosis, eritrosedimentación 8 mm/hora, creatinina en rango normal. Ante estos hallazgos, ¿Cuál considera la conducta terapéutica inicial más adecuada?",
+    "opciones": {
+      "a": "Coloca acceso venoso periférico, analgésicos, antiespasmódicos y antiheméticos parenterales. Sobrehidratación para forzar diuresis, no toma muestra de orina para urocultivo ni indica antibioterapia empírica.",
+      "b": "Coloca acceso venoso periférico, analgésicos, antiespasmódicos y antiheméticos parenterales. Sobrehidratación para forzar diuresis, toma muestra de orina para urocultivo e indica antibioticoterapia empírica.",
+      "c": "Coloca acceso venoso periférico, analgésicos, antiespasmódicos y antiheméticos parenterales., No realiza sobrehidratación para forzar diuresis y no toma muestra de orina para urocultivo ni indica antibioterapia empírica..",
+      "d": "Indica diclofenac 150 mg intramuscular, toma muestra de orina para urocultivo e indica antibioticoterapia empírica. Antiheméticos y antiespasmódicos orales y posterior manejo ambulatorio."
+    },
+    "correcta": "c",
+    "explicacion": "La primera aproximación diagnóstica es un **cólico renal**.\n\nTratamiento en la guardia:\n- Colocar acceso venoso periférico.\n- Analgésicos, antiespasmódicos y antieméticos parenterales.\n- Hidratación endovenosa. **No forzar diuresis** (esto puede aumentar la presión en la vía urinaria y el dolor).\n- No es necesaria la toma de urocultivo ni antibioticoterapia empírica si no hay signos de infección (afebril, hemograma normal).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_045",
+    "materia": ["urologia_cx"],
+    "submateria": ["Infecciones del tracto urinario"],
+    "enunciado": "Camila de 20 años, consulta a la guardia refiriendo disuria, polaquiuria, tenesmo y urgencia miccional. Niega tener flujo vaginal. Al examen físico se encuentra en buen estado general y afebril. Se realiza prueba de orina mediante una tira reactiva que muestra nitritos positivos y test de embarazo: negativo. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar tratamiento empírico a la mujer y a su pareja.",
+      "b": "Iniciar tratamiento antibiótico empírico ambulatorio a la paciente",
+      "c": "Solicitar urocultivo e iniciar a continuación el tratamiento antibiótico empírico ambulatorio hasta tener el resultado definitivo.",
+      "d": "Solicitar urocultivo y diferir el inicio del tratamiento antibiótico hasta tener el resultado definitivo."
+    },
+    "correcta": "b",
+    "explicacion": "**Cistitis no complicada**: cursa con síndrome miccional.\n\nPara el diagnóstico basta con la clínica y el análisis básico de orina (tiras reactivas). No se requiere urocultivo en el primer episodio de una mujer joven sin factores de riesgo.\n\nTratamiento: Se proponen ciclos cortos de antibioticoterapia durante 3-5 días. La conducta adecuada es iniciar **tratamiento antibiótico empírico ambulatorio**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_046",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Urolitiasis", "Síndromes abdominales"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un señor de 40 años, sin antecedentes patológicos, que concurre a guardia por un intenso dolor de comienzo brusco en flanco izquierdo que irradia a la zona testicular, acompañado de estado nauseoso? El dolor es de intensidad moderada y el paciente no encuentra una posición antálgica.",
+    "opciones": {
+      "a": "Infarto mesenterico",
+      "b": "Pancreatitis aguda.",
+      "c": "Cólico renal",
+      "d": "Úlcera gástrica"
+    },
+    "correcta": "c",
+    "explicacion": "El **cólico renal** por urolitiasis ureteral u obstructiva produce dolor en la fosa renal de carácter cólico, con **irradiación a genitales** (testículo o labios mayores), náuseas, vómitos y agitación psicomotriz (el paciente no encuentra posición de alivio).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "urocx_001_047",
+    "materia": ["urologia_cx", "urgencias"],
+    "submateria": ["Patología testicular", "Patología renal y urológica urgente"],
+    "enunciado": "Un varón de 18 años es traído a la consulta por tumefacción y dolor escrotal de tres horas de evolución, luego de jugar a la pelota. Se constata leve eritema y edema escrotal derecho, con dolor a la palpación que no se modifica con el ascenso testicular y reflejo cremasteriano ausente. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar ecografía testicular y según resultados realizar interconsulta con urología",
+      "b": "Indicar cirugía de forma inmediata",
+      "c": "Indicar reposo, hielo y antiinflamatorios con control ecográfico en 12hs",
+      "d": "Solicitar orina completa, ecografía doppler testicular y aguardar resultados para decidir conducta"
+    },
+    "correcta": "b",
+    "explicacion": "La **torsión testicular** es una emergencia quirúrgica por compromiso vascular.\n\nAnte un cuadro clínico clásico (dolor agudo, reflejo cremastérico ausente, adolescente), la conducta es la **exploración quirúrgica inmediata** para intentar salvar la viabilidad del testículo. Aunque se puede realizar un ecodoppler, no se debe retrasar la cirugía si la sospecha es alta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  }
+]
