@@ -286,5 +286,62 @@
     "explicacion": "Los organos linfoides primarios (produccion y maduracion) son la medula osea y el Timo. El bazo y ganglios son secundarios.",
     "imagen": [],
     "oficial": false
+  },
+  {
+    "id": "paliativos_001_001",
+    "materia": ["otras"],
+    "submateria": ["Cuidados Paliativos"],
+    "enunciado": "Varón de 91 años, institucionalizado en geriátrico desde hace 9 años por demencia tipo Alzheimer de 15 años de evolución. Es dependiente para todas las actividades básicas de la vida diaria y presenta deterioro cognitivo grave. No reconoce a sus familiares ni es capaz de emitir lenguaje. Ingresa por un cuadro de infección respiratoria de mecanismo aspirativo. Tras completar un ciclo antibiótico evoluciona favorablemente, pero al intentar reintroducir la ingesta oral persiste disfagia con riesgo alto de aspiración. El médico responsable propone a los hijos no iniciar estrategias de alimentación enteral por sondas, sino dejar la enfermedad a su evolución natural, realizando un tratamiento sintomático de eventuales complicaciones. ¿Qué concepto ético subyace a esta decisión clínica?",
+    "opciones": {
+      "a": "Obstinación terapéutica.",
+      "b": "Rechazo al tratamiento.",
+      "c": "Eutanasia activa.",
+      "d": "Adecuación del esfuerzo terapéutico."
+    },
+    "correcta": "d",
+    "explicacion": "La **adecuación del esfuerzo terapéutico** (AET) es la adaptación de las medidas diagnóstico-terapéuticas que se indican a un paciente, de acuerdo a su situación clínica y pronóstico [cite: 872].\n\nSupone:\n- Aceptar la irreversibilidad de una enfermedad o situación clínica [cite: 873].\n- La conveniencia de suspender o no iniciar tratamientos que tengan escasa posibilidad de éxito [cite: 873].\n- Evitar medidas cuya finalidad única sea prolongar la vida biológica, sin posibilidad de recuperación funcional o de mantener una calidad de vida mínima[cite: 873].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "paliativos_001_002",
+    "materia": ["otras"],
+    "submateria": ["Cuidados Paliativos"],
+    "enunciado": "El diagnóstico de delirio es clínico y se hace a la cabecera del paciente realizando una entrevista y exploración física dirigida a dicho diagnóstico. Existen distintos tipos de enfoques diagnósticos, el Confusion Assessment Method (CAM) o Método de valoración de la Confusión, ha aportado un score clínico de gran utilidad práctica para categorizar a un paciente como portador de un cuadro de delirio. ¿El hallazgo de cual de las siguientes asociaciones de características clínicas diagnostica un cuadro de delirio según el algoritmo diagnóstico citado?",
+    "opciones": {
+      "a": "Falta de atención, agitación motora y alteración de la conciencia.",
+      "b": "Inicio agudo, evolución fluctuante y pensamiento desorganizado.",
+      "c": "Inicio agudo, evolución fluctuante, falta de atención y pensamiento desorganizado",
+      "d": "Falta de atención, pensamiento desorganizado y nivel alterado de conciencia"
+    },
+    "correcta": "c",
+    "explicacion": "Para el diagnóstico de **delirium** mediante la escala **CAM** son necesarios los dos primeros criterios y por lo menos uno de los dos últimos[cite: 889, 902, 903]:\n\n1. Comienzo agudo y curso fluctuante[cite: 890].\n2. Alteración de la atención (falta de atención)[cite: 893].\n3. Pensamiento desorganizado[cite: 896].\n4. Alteración del nivel de conciencia [cite: 899].\n\nLa asociación de inicio agudo, evolución fluctuante, falta de atención y pensamiento desorganizado es la respuesta correcta ya que presenta los 2 primeros criterios obligatorios y el de pensamiento desorganizado[cite: 904].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "paliativos_001_003",
+    "materia": ["otras"],
+    "submateria": ["Cuidados Paliativos"],
+    "enunciado": "¿Cuál es el efecto adverso más frecuente de la morfina administrada en forma crónica?",
+    "opciones": {
+      "a": "Mucositis",
+      "b": "Depresión respiratoria",
+      "c": "Alucinaciones",
+      "d": "Estreñimiento"
+    },
+    "correcta": "d",
+    "explicacion": "El **estreñimiento** es un efecto secundario muy frecuente (afecta casi al 100%) y no crea tolerancia [cite: 914].\n\nDebido a esto, se debe prescribir un **laxante** como norma general cuando se inicia el tratamiento con opioides [cite: 914].\n\nOtros efectos mencionados:\n- **Delirium**: puede producir alucinaciones y confusión, pero requiere descartar otras causas concurrentes e hidratar al paciente [cite: 915].\n- **Depresión respiratoria**: es infrecuente si se sigue la guía clínica, ya que se produce tolerancia rápidamente[cite: 916, 917].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
   }
 ]
