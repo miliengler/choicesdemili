@@ -2419,6 +2419,554 @@
     "oficial": false,
     "fuente": "Curso IAR"
   },
-  
-  
-  
+  {
+    "id": "neurologia_001_101",
+    "materia": ["neurologia"],
+    "submateria": ["Otras preguntas de neurología"],
+    "enunciado": "¿Cuál es la causa más frecuente de hipertensión endocraneana?",
+    "opciones": {
+      "a": "traumatismo de cráneo",
+      "b": "hidrocefalia",
+      "c": "pseudotumor cerebri",
+      "d": "tumores"
+    },
+    "correcta": "a",
+    "explicacion": "La **hipertensión endocraneana** aparece cuando aumenta alguno de los componentes dentro del cráneo (líquido cefalorraquídeo, flujo sanguíneo o tejido encefálico) el aumento en el tejido encefálico puede producir un aumento brusco de la presión endocraneana y el mismo puede causarse por **traumatismo encefalocraneano**, hemorragias intracerebrales, hemorragia subaracnoidea con hidrocefalia e insuficiencia hepática fulminante.\nEl tratamiento se dirige a disminuir la presión endocraneana.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_102",
+    "materia": ["neurologia"],
+    "submateria": ["Convulsiones y epilepsia"],
+    "enunciado": "Un varón de 35 años tuvo una pérdida de conocimiento mientras estaba trabajando, sin relajación de esfínteres y en el momento de la consulta está algo somnoliento y no recuerda lo sucedido. Sus compañeros dicen que no tuvo ningún traumatismo, que se puso algo azul y permaneció un poco atontado los diez minutos posteriores al cuadro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Convulsión.",
+      "b": "Accidente cerebro vascular.",
+      "c": "Vértigo.",
+      "d": "Ataque de caida (Drop attacks)"
+    },
+    "correcta": "a",
+    "explicacion": "En las **convulsión generalizada** (respuesta correcta) hay siempre pérdida de conciencia.\nSe interrumpe la respiración, se produce cianosis y puede haber incontinencia urinaria. Es importante en este caso de la viñeta el periodo poscrítico con somnolencia, agitación, desorientación y amnesia de lo ocurrido.\nEl síncope: la recuperación de la pérdida de la conciencia es rápida, sin confusión poscrítica, recuerdan lo ocurrido previamente a la pérdida de consciencia.\nLos \"drop attacks\" a la repentina caída al suelo por pérdida de la fuerza muscular, sin alteración de la conciencia. En la etiología se han implicado diversos mecanismos entre los que destacan la insuficiencia vertebrobasilar transitoria, la epilepsia o la inestabilidad vestibular.\nVértigo: no hay pérdida de la conciencia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_103",
+    "materia": ["neurologia"],
+    "submateria": ["Neuropatías"],
+    "enunciado": "¿Cuáles son las características de la mononeuropatía múltiple?",
+    "opciones": {
+      "a": "Ser simétrica en su presentación",
+      "b": "Ser siempre dolorosa",
+      "c": "Presentar hiperreflexia aislada",
+      "d": "Presentar hiporreflexia aislada"
+    },
+    "correcta": "d",
+    "explicacion": "Las neuropatías periféricas pueden ser clasificadas en tres grandes grupos:\n- Mononeuropatías que comprometen solamente a un tronco nervioso;\n- **Mononeuropatías múltiples** con compromiso sucesivo de varios troncos nerviosos;\n- Polineuropatías distales con compromiso difuso y simétrico de los cuatro miembros.\nExiste pérdida de fuerza muscular distal de las extremidades. La parálisis es flácida con afectación de los reflejos (**hiporreflexia** o arreflexia).\nTrastornos tróficos en la piel y mucosas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_104",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Patología infecciosa infantil", "Convulsiones y epilepsia"],
+    "enunciado": "Ud. atiende en su consultorio a Pedro de 2 años quien presenta un cuadro de catarro de vías aéreas y fiebre de 12 hs de evolución. Al momento del examen físico presenta una convulsión tónico clónico generalizado ¿Cuál es el tratamiento más indicado para este paciente?",
+    "opciones": {
+      "a": "Fenitoina 18 mg/Kg Endovenoso",
+      "b": "Diazepan 5 mg/Kg. Intramuscular",
+      "c": "Diazepan 0.3 mg/Kg Intrarectal",
+      "d": "Lorazepan 0.1 mg/Kg Intramuscular"
+    },
+    "correcta": "c",
+    "explicacion": "El niño presenta una **convulsión febril**, la droga de elección para el tratamiento de las convulsiones febriles es el **lorazepam** por inicio de acción rápido y semivida prolongadas. Se puede administrar en forma endovenosa o intraósea.\nLa droga de segunda elección es el **diazepam** que también tiene un inicio de acción rápido pero menos semivida y se puede administrar en forma endovenosa o intrarrectal. En este caso, el paciente no cuenta con acceso venoso, se elige **diazepam intrarrectal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_105",
+    "materia": ["neurologia"],
+    "submateria": ["SNP"],
+    "enunciado": "La parálisis facial bilateral (displejía facial), es una alteración que se observa frecuentemente en:",
+    "opciones": {
+      "a": "Miopatía centronuclear",
+      "b": "Esclerosis múltiple",
+      "c": "Síndrome de Guillain Barré",
+      "d": "Tumores de fosa posterior"
+    },
+    "correcta": "c",
+    "explicacion": "El **Guillain Barre** es un síndrome desmielinizante inflamatorio agudo que se caracteriza por una polineuropatía motora y sensitiva. La enfermedad suele presentarse luego de una infección respiratoria o una diarrea (Campylobacter jejuni).\nLa sintomatología se compone por debilidad que puede variar de una dificultad para caminar hasta una insuficiencia respiratoria. La paresia facial bilateral o displejía facial se presenta en el 50% de los casos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_106",
+    "materia": ["neurologia"],
+    "submateria": ["Trastornos del movimiento"],
+    "enunciado": "Un varón de 70 años de edad con antecedentes de HTA medicado con enalapril, e hipertiroidismo a sus 30 años. Consultó por notar en los últimos meses la presencia de un temblor en la mano derecha. Al examen físico se constató bradicinesia y la presencia del temblor en reposo sólo en la mano derecha. Ante estos hallazgos usted interpreta que el paciente puede padecer:",
+    "opciones": {
+      "a": "Enfermedad de Parkinson.",
+      "b": "Temblor esencial.",
+      "c": "Parkinsonismo farmacológico.",
+      "d": "Temblor por hipertiroidismo."
+    },
+    "correcta": "a",
+    "explicacion": "Estamos ante un paciente añoso que presenta trastornos del movimiento:\nLos síntomas motores son los que predominan en el **enfermedad de parkinson** y definen esta entidad. Los cuatro síntomas cardinales son:\n- Bradicinesia (indispensable para el diagnóstico)\n- Rigidez\n- Temblor\n- Inestabilidad postural\nLa bradicinesia, la rigidez y el temblor aparecen de forma asimétrica en un hemicuerpo, extendiéndose posteriormente al hemicuerpo contralateral.\nEl «temblor de reposo» del parkinsoniano suele desaparecer con los movimientos y reemerger con la postura. Aparece en las extremidades, aunque es típico también el temblor mandibular. Un porcentaje importante de pacientes presentan también temblor postural acompañante. El temblor de reposo habitualmente se exacerba con el estrés.\nDe acuerdo a lo descripto anteriormente el diagnóstico más probable es **Enfermedad de Parkinson**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_107",
+    "materia": ["neurologia"],
+    "submateria": ["Cefaleas"],
+    "enunciado": "La neuralgia esencial del trigémino:",
+    "opciones": {
+      "a": "Presenta afectación bilateral",
+      "b": "Presenta dolor paroxistico",
+      "c": "Se acompaña de sintomas que involucran otros nervios craneanos",
+      "d": "Presenta síntomas motores masticatorios"
+    },
+    "correcta": "b",
+    "explicacion": "La **neuralgia del trigémino** se caracteriza por el dolor en zonas enervadas por cualquiera de las ramas del nervio trigémino, es más frecuente en mujeres entre 50-70 años de edad.\nLa sintomatología es dolor en una o más de las ramas del trigémino (V1 oftálmica: dolor periocular, V2 maxilar: dolor en la mejilla y V3 mandibular: dolor en barbilla o dientes inferiores). La característica del dolor es intensa, de tipo eléctrica, dura entre un segundo y dos minutos y es **paroxístico**.\nEl dolor se desencadena ante estímulos leves como cepillarse los dientes o tocarse la mejilla.\nEl diagnostico se realiza mediante el dolor característico, el paroxismo de los episodios y la ausencia de otros trastornos neurológicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_108",
+    "materia": ["neurologia"],
+    "submateria": ["Placa motora"],
+    "enunciado": "Consulta una paciente de 60 años refiriendo debilidad muscular que empeora hacia el anochecer y mejora con el reposo, diplopía, disartria, voz nasal y disfonía. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Miositis",
+      "b": "Miastenia gravis",
+      "c": "Meningitis.",
+      "d": "Mielitis transversa"
+    },
+    "correcta": "b",
+    "explicacion": "La **miastenia grave** es una enfermedad autoinmune causada por anticuerpos dirigidos contra el receptor de la acetilcolina, que se encuentra a nivel postsináptico en la placa motora.\nAfecta mayoritariamente a mujeres. Produce debilidad muscular indolora y fatigabilidad proximal. La debilidad característicamente fluctúa a lo largo del día, empeora con el ejercicio (fatigabilidad) y mejora con el reposo.\nMiastenia ocular: permanece limitada a la musculatura extraocular, provocando una limitación en los movimientos oculares con diplopía y ptosis sin afectación pupilar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_109",
+    "materia": ["neurologia"],
+    "submateria": ["Trastornos del movimiento"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 52 años que consulta por temblor distal asimétrico de miembros superiores que comenzó en los dedos y aparece en reposo, de seis meses de evolución? El paciente refiere que se encuentra con ánimo depresivo y que se ha caído en varias oportunidades sin causa aparente.",
+    "opciones": {
+      "a": "Enfermedad desmielinizante",
+      "b": "Enfermedad de Parkinson",
+      "c": "Temblor esencial",
+      "d": "Sindrome cerebeloso"
+    },
+    "correcta": "b",
+    "explicacion": "El **parkinsonismo** es un síndrome clínico que se caracteriza por la presencia de temblor, rigidez, aquinesia y alteraciones posturales.\nLa **enfermedad de Parkinson** es la causa más frecuente. El temblor suele ser asimétrico sobre todo al inicio de la enfermedad, aparece en reposo y remite con el movimiento.\nLa rigidez es una forma de hipertonía que característicamente presenta el fenómeno de la rueda dentada.\nLa bradiquinesia se expresa como lentitud, hipomimia, micrografía y bloqueo motor.\nLa postura en flexión y la inestabilidad predisponen a caídas frecuentes. La inestabilidad postural precoz y grave debe hacer pensar en una causa distinta de parkinsonismo.\nExisten otras manifestaciones no motoras de la enfermedad como trastornos del olfato, disautonomía, alteración del sueño REM, depresión entre otras.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_110",
+    "materia": ["neurologia"],
+    "submateria": ["ECV"],
+    "enunciado": "¿Cuál de los siguientes, es considerado Criterio de Exclusión de infusión de fibrinolíticos en pacientes con enfermedad cerebrovascular isquémica?",
+    "opciones": {
+      "a": "Glucemia de 130 mg%",
+      "b": "Plaquetas < 130.000/mm3",
+      "c": "Cirugia Mayor en el último año",
+      "d": "Tensión arterial diastólica > 110 mmHg"
+    },
+    "correcta": "d",
+    "explicacion": "El accidente cerebrovascular isquémico se produce secundaria a la obstrucción de un vaso sanguíneo cerebral produciendo la disminución del flujo sanguíneo del área cerebral irrigada por dicho vaso.\nEl tratamiento el accidente cerebrovascular isquémico es la trombolisis en las primeras 4,5 horas con activador titular de plasminógeno (t-PA) endovenoso que posee contraindicaciones específicas (presencia de hemorragia intracraneana actual, antecedentes de hemorragia intracraneal previa, sangrado interno activo, neoplasia intracraneal activa, MAV, diátesis hemorrágica con presencia de un tiempo de protrombina <15 segundos, una plaquetopenia <100000 y la hipertensión arterial sistólica > 185 y **diastólica > 110** que no pueda reducirse con tratamiento médico agudo).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_111",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Patología infecciosa infantil", "Placa motora"],
+    "enunciado": "Juan, de 6 meses, previamente sano y alimentado con lactancia materna exclusiva, es traído a la guardia por su madre, quien refiere que desde hace 48 horas lo nota decaído, con succión débil, constipación persistente y menor respuesta a los estímulos. En el examen físico se constata hipotonía generalizada, ptosis palpebral bilateral y llanto débil. La madre comenta que hace una semana comenzaron a ofrecerle pequeñas cantidades de puré de zapallo endulzado con miel. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Miastenia gravis congénita.",
+      "b": "Hipotiroidismo congénito.",
+      "c": "Sindrome de Guillain-Barré.",
+      "d": "Botulismo infantil."
+    },
+    "correcta": "d",
+    "explicacion": "**Botulismo del lactante**\nEs una toxiinfección que afecta a menores de un año, caracterizada por parálisis muscular fláccida.\nEs causada por la colonización del intestino por Clostridium botulinum, cuyas esporas germinan y liberan toxina botulínica, favorecidas por la inmadurez gastrointestinal del lactante (baja acidez y flora insuficiente). La transmisión no está completamente definida, pero se cree que ocurre por inhalación o ingestión de esporas presentes en el polvo ambiental, alimentos contaminados o fómites del entorno del niño y su madre.\nEl cuadro clínico suele iniciar con constipación (95% de los casos), seguida de parálisis fláccida descendente, simétrica, con afectación de pares craneales. Se observa:\n- Hipotonía generalizada, hipo/arreflexia\n- Llanto y succión débil\n- Trastornos en la deglución, salivación disminuida\n- Oftalmoplejía, ptosis palpebral bilateral\n- Reflejos pupilares lentos\n- Debilidad facial, pérdida del sostén cefálico",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_112",
+    "materia": ["neurologia"],
+    "submateria": ["Cefaleas"],
+    "enunciado": "Una mujer de 24 años concurre a la guardia por presentar cefalea, nauseas y vómitos. Refiere que se inicio hace 2 horas de manera súbita y que nunca había tenido un dolor de esas características e intensidad. Tomó ibuprofeno y paracetamol y no calmo. No presenta antecedentes de importancia. En el examen físico se encuentra lúcida, afebril y no presenta signos de foco neurológico ni signos meníngeos. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar analgésicos endovenosos y reliveran y realizar control clínico horario.",
+      "b": "Indicar triptanos intramuscular y corticoides endovenosos y evaluar a los 45 minutos.",
+      "c": "Realizar punción lumbar.",
+      "d": "Realizar TC de cerebro."
+    },
+    "correcta": "d",
+    "explicacion": "El primer paso ante un paciente con cefalea es determinar si se trata de una cefalea secundaria (a una lesión estructural generalmente) o primaria (sin causa conocida). Para ello nos guiaremos por la clínica y las pruebas complementarias.\nLos síntomas, que van a hacernos sospechar un origen secundario son:\n- a. Cefalea intensa de inicio súbito: siempre hay que descartar una hemorragia subaracnoidea.\n- b. Cefalea de reciente comienzo o con características diferentes a las habituales.\n- c. Alteraciones en la exploración neurológica: focalidad neurológica, alteración del nivel de conciencia, entre otras.\n- d. Crisis epilépticas.\n- e. Nos harán sospechar lesión intracraneal con efecto masa: edema de papila, vómitos «en escopetazo», cefalea que despierta al paciente, que aumenta con las maniobras de Valsalva o se modifica con los cambios posturales.\n- f. Nos harán sospechar causa infecciosa (meningitis, encefalitis, entre otras.): fiebre, signos meníngeos.\n- g. Cefalea de inicio en el anciano: tener siempre presente la arteritis de la temporal y pedir analítica con velocidad de sedimentación globular.\nCuando aparece cualquiera de estos síntomas o signos está indicado realizar una **prueba de imagen (TC o RM)**. Si sospechamos una causa infecciosa habrá que realizar además una punción lumbar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_113",
+    "materia": ["neurologia", "cardiologia"],
+    "submateria": ["ECV", "Trastornos del ritmo"],
+    "enunciado": "Carlos de 75 años, con antecedentes de HTA en tratamiento con IECA, presenta Accidente Isquémico Transitorio (AIT). Ecografía doppler de vasos de cuello: ateromatosis carotídea con estenosis menor al 70%. ECG: fibrilación auricular con moderada respuesta ventricular. TAC de cerebro normal. ¿Cuál es el tratamiento de prevención adecuado para reducir el riesgo de nuevos episodios tromboembólicos cerebrales?",
+    "opciones": {
+      "a": "Ácido acetilsalicílico (aspirina) 300mg/d.",
+      "b": "Ácido acetilsalicílico (aspirina) y clopidogrel.",
+      "c": "Endarterectomia carotidea.",
+      "d": "Acenocumarol con RIN 2-3."
+    },
+    "correcta": "d",
+    "explicacion": "En este caso clínico tenemos que relacionar ACV + FA.\nLos **anticoagulantes orales** (acenocumarol, warfarina) reducen en un 68% el riesgo de AVC en pacientes con fibrilación auricular, pero se acompañan de un riesgo anual de complicaciones hemorrágicas del 1,3%. Este riesgo hemorrágico es inferior si se mantiene el INR entre 2 y 3. Recientemente se ha demostrado en estos pacientes la eficacia y seguridad en la prevención primaria de eventos cardioembólicos de los nuevos fármacos anticoagulantes, tales como dabigatrán, rivaroxabán, apixabán y enoxabán.\nEl AAS en la fibrilación auricular debe restringirse a los pacientes con un riesgo embolígeno muy bajo (menores de 60 años y sin otros factores de riesgo).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_114",
+    "materia": ["neurologia"],
+    "submateria": ["Cefaleas"],
+    "enunciado": "Un varón de 33 años consulta por presentar desde hace 4 días cefaleas periocular unilateral que progresa rápidamente hasta hacerse muy intensa. Las crisis de dolor duran entre 30-60 minutos, ocurren 2-3 veces al día y se acompañan de lagrimeo en el ojo que le duele y rinorrea unilateral. ¿Cuál es el tratamiento preventivo más adecuado?",
+    "opciones": {
+      "a": "Prednisona oral con retirada en 2-3 meses e indometacina durante 1 mes.",
+      "b": "Carbamazepina y carbonato de litio duran 3 meses.",
+      "c": "Prednisona oral con retirada en un mes, asociada a verapamilo oral durante 2 o 3 meses.",
+      "d": "Estimulación suboccipital, del ganglio esfenopalatino o hipotalámica."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento preventivo debe instaurarse desde el inicio del racimo.\nEn las formas episódicas puede emplearse prednisona por vía oral (con una dosis inicial de 1 mg/kg al día para ir retirando el fármaco lentamente en 3 o 4 semanas) asociada a **verapamilo** (80-180 mg/8 h) que ha de mantenerse durante los 2 o 3 meses que teóricamente vendría a durar el racimo (correcto).\nEn los casos con mala respuesta o en la forma crónica, el tratamiento de elección es el carbonato de litio (300 mg/8-12 h, para mantener una litemia de 0,5-1 mEq/L aproximadamente). La ausencia de respuesta a estas terapias farmacológicas hace necesaria la valoración de opciones quirúrgicas, como la termocoagulación del ganglio de Gasser o las técnicas de estimulación suboccipital, del ganglio esfenopalatino o hipotalámica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_115",
+    "materia": ["neurologia"],
+    "submateria": ["ECV"],
+    "enunciado": "¿Cuál es la causa más frecuente de hemorragia subaracnoidea?",
+    "opciones": {
+      "a": "Rotura aneurismática",
+      "b": "Traumatismo de cráneo",
+      "c": "Malformación arterio-venosa",
+      "d": "Rotura de aneurismas de Charcot-Bouchard"
+    },
+    "correcta": "b",
+    "explicacion": "Causas más frecuentes de HSA:\n- **Traumática**: es la causa más frecuente.\n- **Atraumática**: la causa más habitual es la rotura de aneurismas saculares (más frecuentemente de la arteria comunicante anterior, seguida de la arteria comunicante posterior, la arteria carótida interna distal y otras causas). Las causas aneurismáticas suponen el 20% de las HSA atraumáticas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_116",
+    "materia": ["neurologia", "oftalmologia"],
+    "submateria": ["Otras preguntas de neurología", "Neurooftalmología"],
+    "enunciado": "Un paciente de 30 años consulta a guardia por presentar diplopía de 5 días de evolución. Al examen físico presenta limitación de la aducción del ojo derecho cuando el paciente mira hacia la izquierda y un nistagmo en el ojo izquierdo. No presenta problemas en la mirada conjugada al mirar hacia la derecha ni durante la convergencia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Lesión vestibular",
+      "b": "Lesión del fasciculo longitudinal medial derecho",
+      "c": "Lesión de la via córtico ponto cerebelosa",
+      "d": "Lesión del 3º par derecho y 6º par izquierdo"
+    },
+    "correcta": "b",
+    "explicacion": "La **oftalmoplejía internuclear** se produce como resultado de una lesión del fascículo longitudinal medial que conecta los núcleos del nervio motor ocular externo (VI par) a nivel de la protuberancia con los núcleos del motor ocular común (III par) en el mesencéfalo. De esta manera se altera la conjugación de la mirada horizontal.\nProduce una paresia del ojo aductor junto con nistagmo del ojo abductor, es decir cuando un ojo mira hacia afuera, el otro ojo no le acompaña en su desplazamiento nasal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_117",
+    "materia": ["neurologia", "oftalmologia"],
+    "submateria": ["Otras preguntas de neurología", "Neurooftalmología"],
+    "enunciado": "El síndrome de Horner se caracteriza por la presencia de:",
+    "opciones": {
+      "a": "Miosis, ptosis palpebral, anhidrosis facial e inyección conjuntival",
+      "b": "Miosis, proptosis ocular, anhidrosis facial e inyección conjuntival",
+      "c": "Miosis, ptosis palpebral, nistagmus y anhidrosis facial",
+      "d": "Miosis, ptosis palpebral, anhidrosis facial y exoftalmos"
+    },
+    "correcta": "a",
+    "explicacion": "Los músculos que controlan el diámetro pupilar poseen inervación autonómica. La inervación simpática depende de neuronas hipotalámicas del área ventrolateral que emiten proyecciones que se dirigen al asta intermediolateral de la médula espinal pasando por el tronco encefálico.\nLas proyecciones del asta intermediolateral salen por las raíces ventrales de C8 T1 y T2 y se dirigen hacia el ganglio cervical superior. Las fibras que emergen del ganglio cervical superior ascienden por las carótidas hasta llegar a la órbita siguiendo el trayecto de la rama oftálmica del nervio trigémino y finalmente llegar hasta el músculo dilatador de la pupila.\nLa lesión de esta vía en cualquier parte de su trayecto se asocia a la aparición del **síndrome de Horner** se caracteriza por enoftalmos, **ptosis palpebral** y **miosis unilateral**, con **anhidrosis** de la hemicara y la extremidad superior e **inyección conjuntival**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_118",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Convulsiones y epilepsia"],
+    "enunciado": "¿Cuál es la conducta más adecuada con un niño de 3 años, previamente sano, que ingresa a guardia es estado post convulsivo y se encuentra febril? Presentó un episodio de convulsión febril simple.",
+    "opciones": {
+      "a": "Tratar la fiebre e interconsultar con neurologia.",
+      "b": "Tratar la fiebre, completar examen fisico y observar.",
+      "c": "Solicitar estudios por imágenes",
+      "d": "Internar para diagnóstico y tratamiento."
+    },
+    "correcta": "b",
+    "explicacion": "Las **convulsiones febriles simples** se dan en niños de 6 meses a 5 años de edad, asociado a fiebre dentro de las 24 horas; son crisis convulsivas tónico clónicas generalizadas; duran menos de 15 minutos de duración y no se vuelven a repetir en el mismo día.\nSon benignas y no requieren la realización de pruebas complementarias ni tratamiento. Se debe buscar el foco que desencadenó la fiebre y tratarlo según corresponda.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_119",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Convulsiones y epilepsia"],
+    "enunciado": "Concurre a su consultorio Juana de 8 años de edad en compañía de sus padres. Refieren que desde hace un tiempo la niña de repente deja de hablar o de hacer lo que estaba haciendo, permanece como perdida por unos segundos y luego retoma la actividad sin problema. Usted le solicita un electroencefalograma que muestra descargas de punta-onda generalizada de 3 ciclos/segundo. ¿Cuál es el tratamiento inicial indicado?",
+    "opciones": {
+      "a": "Vigabatrin.",
+      "b": "Etosuximida.",
+      "c": "Fenobarbital.",
+      "d": "Topiramato."
+    },
+    "correcta": "b",
+    "explicacion": "Las **crisis de ausencia típicas** aparecen antes de los 10 años. Duran pocos segundos, durante los cuales el paciente permanece en la posición en la que se encuentra y, al final, recupera su actividad previa sin periodo poscrítico y sin ser consciente de que ha tenido una crisis. Por eso pueden pasar desapercibidas y ser atribuidas a que el niño es despistado.\nEs característico que se desencadene con la hiperventilación. Durante la crisis, no hay respuesta, ni se muestran parpadeos, automatismos bucales ni manuales. En el electroencefalograma (EEG) aparece un patrón generalizado de punta-onda a 3 Hz.\nLa **etosuximida** es el fármaco de elección en estos casos, debido a que tiene menores efectos adversos en la infancia (comparado con el valproato) y los pacientes se mantienen más tiempo sin crisis (comparado con la lamotrigina).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_120",
+    "materia": ["neurologia"],
+    "submateria": ["ECV"],
+    "enunciado": "Un varón de 58 años acude a la guardia acompañado por sus familiares por presentar trastornos en la marcha y debilidad en miembro superior derecho de aparición súbita de 90 minutos de evolución. Tiene como antecedentes hipercolesterolemia tratada con estatinas y tabaquismo de 40 paquetes/año. Al examen físico presenta hemiparesia derecha, afasia de expresión y TA: 160-100 mm de Hg. Se solicita una TAC de cráneo que no muestra alteraciones. ¿Cuál es el tratamiento inicial más adecuado?",
+    "opciones": {
+      "a": "Tombectomia mecánica",
+      "b": "Antiagregación con aspirina",
+      "c": "Fibrinolisis con activador tisular del plasminógeno (t-PA)",
+      "d": "Anticoagulación con heparina de bajo peso molecular"
+    },
+    "correcta": "c",
+    "explicacion": "Tratamiento del **ictus isquémico agudo**:\nEl tratamiento del ictus agudo incluye tanto medidas generales (estabilización respiratoria y hemodinámica inicial) como las terapias de reperfusión (trombólisis o fibrinólisis intravenosa y trombectomía mecánica).\nTrombólisis o fibrinólisis intravenosa: se realiza con rtPA (activador tisular del plasminógeno recombinante). El rt-PA intravenoso administrado en las primeras 4,5 hs desde el inicio de los síntomas no reduce la mortalidad, pero produce una probabilidad más alta de mejores resultados neurológicos a los 3 meses en comparación con el placebo.\nCriterios de inclusión: ictus isquémico con menos de 4 horas y media, desde el inicio de los síntomas con TC craneal sin evidencia de hemorragia intracraneal o infarto establecido y ausencia de otros criterios de exclusión.\nCriterios de exclusión: ver texto Neurología \"enfermedades cerebrovasculares\".",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_121",
+    "materia": ["neurologia"],
+    "submateria": ["Placa motora"],
+    "enunciado": "Una mujer de 35 años consulta a la guardia por presentar debilidad y fatiga muscular. Refiere que la debilidad aumenta con la actividad repetitiva y mejora con el reposo o el sueño. No presenta antecedentes personales de relevancia. Al examen físico presenta diplopía, leve ptosis palpebral, con debilidad de miembros proximales y reflejos tendinosos profundos conservados, no hay alteración de la sensibilidad ni de otras funciones neurológicas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Sindrome de Guillain Barre",
+      "b": "Sindrome miasteniforme de Eaton Lambert",
+      "c": "Botulismo",
+      "d": "Miastenia Gravis"
+    },
+    "correcta": "d",
+    "explicacion": "La **Miastenia Gravis** es un trastorno neuromuscular caracterizado por debilidad y fatiga que se produce por una disminución en la densidad de receptores de acetilcolina en la placa neuromuscular.\nSu incidencia es máxima en mujeres entre los 21 y 39 años y hombres entre 50 y 69 años.\nEl dato más característico es la debilidad que se acentúa con el esfuerzo (fatiga), curso fluctuante con empeoramiento hacia horas de la noche y mejoría con el sueño. La diplopía y ptosis palpebral son manifestaciones típicas y precoces. En el 85% de los casos la debilidad se generaliza hacia los miembros.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_122",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Oncohematología infantil", "Cefaleas"],
+    "enunciado": "La cefalea en niños puede ser un signo de sospecha de tumor intracraneal. ¿Qué característica de la cefalea está más relacionada con la etiología oncológica?",
+    "opciones": {
+      "a": "Cefalea retro-ocular acompañada de fotofobia",
+      "b": "Cefalea intermitente frontal",
+      "c": "Cefalea con cambios en el rendimiento escolar y ataxia",
+      "d": "Cefalea aguda acompañada de vómitos"
+    },
+    "correcta": "c",
+    "explicacion": "Las **cefaleas secundarias**, habitualmente a partir de una lesión estructural presentarán signos clínicos, que nos orientarán a solicitar pruebas complementarias para su diagnóstico. Nos harán sospechar, lesión tumoral, las alteraciones en la exploración neurológica como focalidad neurológica, **ataxia**, crisis epilépticas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_123",
+    "materia": ["pediatria", "neurologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Cefaleas"],
+    "enunciado": "¿Cuál es la causa más frecuente de cefalea aguda recurrente en la edad pediátrica?",
+    "opciones": {
+      "a": "Secuela de traumatismo encefalocraneano (TEC)",
+      "b": "Cefalea tensional",
+      "c": "Sinusitis crónica",
+      "d": "Migraña"
+    },
+    "correcta": "d",
+    "explicacion": "La **migraña** es la causa más frecuente de cefalea aguda recurrente en la infancia. La forma más frecuente es la de migraña sin aura. Las crisis dura entre 4 a 72 horas y luego hay períodos libres de síntomas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_124",
+    "materia": ["neurologia"],
+    "submateria": ["ECV"],
+    "enunciado": "Una mujer de 67 años ingresa a la guardia por cefalea y hemiparesia izquierda de algunas horas de evolución. Tiene antecedentes personales de tabaquismo, hipertensión y cirugía por cáncer de colon hace 1 mes. Al examen físico presenta TA: 170-110 mm Hg, FC 90 lpm FR 18 rpm. Se encuentra lúcida con paresia moderada faciobraquiocrural izquierda. La TAC de cerebro es normal. ¿Cuál es la conducta más adecuada en referencia al manejo de la Tensión Arterial (TA)?",
+    "opciones": {
+      "a": "No reducir la TA los primeros 4 dias",
+      "b": "Reducir la Presión Arterial Media (PAM) con drogas via oral en las primeras 24 hs",
+      "c": "Elevar la PAM con drogas endovenosas en las primeras 24 hs",
+      "d": "Reducir la PAM con drogas endovenosas en la primera hora"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta fue actualizada de un examen real a los fines didácticos.\nDatos positivos: Mujer de 67 años + Síntomas: cefalea + hemiparesia izquierda de horas de evolución + Antecedentes: HTA, tabaquismo, cirugía reciente por cáncer (riesgo de trombosis) + TA: 170/110 mmHg + TAC: sin lesiones hemorrágicas: sugiere ACV isquémico agudo (fase inicial).\nRecordar que en el ACV isquémico, la hipertensión inicial es una respuesta compensadora para mantener la perfusión cerebral en zonas isquémicas (\"penumbra\"). Una reducción brusca puede empeorar el déficit neurológico. Solo se debe reducir la TA si supera ciertos valores o antes de trombólisis. En este caso, TA 170/110 mmHg, sin trombólisis, por lo que no se debe reducir agresivamente.\nAnálisis de las opciones:\n- **No reducir la TA los primeros 4 días**: correcta. La conducta más adecuada en un ACV isquémico agudo sin trombólisis y TA < 220/120 es no bajar la TA durante las primeras 24-48 h (algunos textos extienden hasta 4 días). Permite mantener la perfusión cerebral. Solo se trata si TA > 220/120, insuficiencia cardíaca, disección aórtica o insuficiencia renal aguda. De manera que esta es la opción correcta para este caso.\n- **Reducir la PAM con drogas vía oral en las primeras 24 h**: Incorrecta porque no se debe bajar la TA en fase aguda sin indicación estricta. Además, drogas orales tienen absorción impredecible y pueden causar descensos bruscos. Si se requiere tratamiento, se usan fármacos endovenosos de acción corta y titulables (labetalol, nicardipina).\n- **Reducir la PAM con drogas endovenosas en la primera hora**: incorrecta y peligrosa: la reducción rápida de la TA puede agravar la isquemia cerebral al disminuir la presión de perfusión. Solo se justifica si hay crisis hipertensiva con daño de órgano blanco distinto al cerebro (p. ej. edema pulmonar agudo, disección aórtica).\n- **Elevar la PAM con drogas endovenosas en las primeras 24 hs**: No corresponde. La TA ya está elevada, y elevarla más aumentaría el riesgo de transformación hemorrágica o complicaciones cardiovasculares.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_125",
+    "materia": ["neurologia"],
+    "submateria": ["Trastornos del movimiento"],
+    "enunciado": "Se encuentra evaluando a un paciente con un síndrome parkinsoniano de 20 meses de evolución, ¿cuál de las siguientes manifestaciones clínicas le hacen dudar de un diagnóstico de enfermedad de Parkinson?",
+    "opciones": {
+      "a": "Presencia de vocalizaciones del sueño REM.",
+      "b": "Disartria grave.",
+      "c": "Estreñimiento.",
+      "d": "Temblor que se exacerba con el stress."
+    },
+    "correcta": "b",
+    "explicacion": "El trastorno de conducta de sueño REM y el estreñimiento se ven incluso antes del inicio de los síntomas motores.\nEl «temblor de reposo» del parkinsoniano suele desaparecer con los movimientos y reemerger con la postura y habitualmente se exacerba con el estrés.\nUna **disartria severa precoz** nos haría plantearnos que se tratara de un parkinsonismo atípico (es una \"red flag\").",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_126",
+    "materia": ["neurologia"],
+    "submateria": ["Placa motora"],
+    "enunciado": "Usted está atendiendo a una mujer de 52 años que manifiesta una debilidad generalizada, predominantemente en la porción proximal de las extremidades superiores a predominio nocturno y que mejora con el reposo. Inicia la exploración física con la sospecha diagnóstica de Miastenia Grave. ¿Qué elemento semiológico de la exploración física espera encontrar en esta paciente?",
+    "opciones": {
+      "a": "Disminución de los reflejos tendinosos profundos",
+      "b": "Ausencia de alteraciones en las pruebas oculares",
+      "c": "Fuerza muscular conservada luego de la actividad física",
+      "d": "Los reflejos tendinosos y la sensibilidad son normales."
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta modificada con fines educativos.\nEl caso clínico nos presenta una mujer con sospecha de **Miastenia Gravis (MG)**, entonces vamos a explicar cada opción:\n- Disminución de los reflejos tendinosos profundos: Los reflejos están conservados.\n- **Los reflejos tendinosos y la sensibilidad son normales** (respuesta correcta).\n- Ausencia de signos/síntomas oculares: se afecta la musculatura extrínseca del ojo, con diplopía y ptosis palpebral, generalmente asimétricas y cambiantes. Hasta el 90% de los pacientes presentan a lo largo de la enfermedad síntomas oculares.\n- Fuerza muscular conservada luego de la actividad física: Los pacientes presentan debilidad muscular variable de los músculos voluntarios craneales o de las extremidades, con variación diaria y horaria, siempre en relación con el ejercicio efectuado. Es característico que empeore hacia el anochecer y con la contracción mantenida o repetida (fatigabilidad anormal). Tras el reposo, se recupera total o parcialmente la fuerza muscular, al igual que tras dosis adecuadas de anticolinesterásicos.\nLa miastenia grave es una enfermedad autoinmune causada por anticuerpos dirigidos contra el receptor de la acetilcolina, que se encuentra a nivel postsináptico en la placa motora. Afecta mayoritariamente a mujeres. Se caracteriza por la aparición de debilidad muscular tras una actividad prolongada, con tendencia a la recuperación después de un periodo de inactividad o después de la administración de fármacos anticolinesterásicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_127",
+    "materia": ["neurologia"],
+    "submateria": ["Placa motora"],
+    "enunciado": "Estás valorando a un paciente de 65 años que manifiesta una debilidad generalizada, predominantemente en la porción proximal de las extremidades superiores a predominio nocturno y que mejora con el reposo. Inicia la exploración física con la sospecha diagnóstica de Miastenia Grave. ¿Qué anticuerpos son útiles para el diagnóstico de Miastenia Grave?",
+    "opciones": {
+      "a": "Anticuerpos anti acetilcolina",
+      "b": "Anticuerpos anti colinesterasa",
+      "c": "Anticuerpos anti sintetasas",
+      "d": "Anticuerpos anti receptor de acetilcolina"
+    },
+    "correcta": "d",
+    "explicacion": "La **miastenia grave** es una enfermedad autoinmune causada por anticuerpos dirigidos contra el **receptor de la acetilcolina**, que se encuentra a nivel postsináptico en la placa motora.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "neurologia_001_128",
+    "materia": ["neurologia", "toxicologia"],
+    "submateria": ["Metabólicas", "Toxicología"],
+    "enunciado": "Ante un paciente con enfermedad de Wernicke, ¿Qué opción terapéutica elige?",
+    "opciones": {
+      "a": "Infusión de glucosa más vitamina B12 y ácido fólico",
+      "b": "Administración inmediata de glucosa",
+      "c": "Administración inmediata de 100 mg de tiamina (EV o IM)",
+      "d": "Administración inmediata de vitamina B12 más glucosa"
+    },
+    "correcta": "c",
+    "explicacion": "El consumo excesivo de alcohol genera déficit vitamínico asociado a desnutrición. El déficit de vitamina B1 (**tiamina**) que actúa como cofactor en reacciones enzimáticas para la síntesis de neurotransmisores produce déficit neurológicos según si su déficit es agudo o crónico.\nLa **encefalopatía de Wernicke** es un déficit de tiamina a corto plazo. Se caracteriza por ataxia, trastornos oculares (nistagmo, desconjugación y parálisis de la mirada) y alteración en el estado mental.\nEsta patología también puede acompañarse de trastornos neurovegetativos e hipotalámicos (bradicardia e hipotermia) y de convulsiones. La resonancia magnética muestra alteraciones a nivel del tálamo.\nEl tratamiento se realiza con **tiamina EV de 100-500 mg/día** durante 4 días y luego 100 mg VO durante los días restantes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+     {
+    "id": "neurologia_001_129",
+    "materia": ["neurologia"],
+    "submateria": ["Neuropatías"],
+    "enunciado": "¿Cuál es la causa más frecuente de neuropatía periférica en países desarrollados?",
+    "opciones": {
+      "a": "Neuropatía hipotiroidea",
+      "b": "Neuropatía autoinmune",
+      "c": "Neuropatía alcohólica",
+      "d": "Neuropatía diabética"
+    },
+    "correcta": "d",
+    "explicacion": "Neuropatía periféricas: Causa Metabólicas/tóxicas. Son las más frecuentes. Generalmente se trata de polineuropatías sensitivas o sensitivomotoras axonales de aparición subaguda o crónica.\nLa más frecuente es la **diabética**. También ocurren en la insuficiencia renal crónica o en los déficits vitamínicos (B1, B12).\nDentro de los fármacos que pueden producirla destacan los quimioterápicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
