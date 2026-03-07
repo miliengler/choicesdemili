@@ -94,30 +94,51 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Versión Inteligente con soporte Multitema) --- */
+/* --- 5. PROCESADOR (Versión Definitiva Anti-Pérdidas) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. MATERIA: Conservamos TODAS las materias en un array
+    // 1. MATERIA: Array seguro
     let rawMatArray = Array.isArray(q.materia) ? q.materia : [q.materia || "otras"];
-    let validMatArray = [];
-    
-    for (let rawMat of rawMatArray) {
-        let matNorm = normalize(rawMat);
-        const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
-        if (foundSubject) validMatArray.push(foundSubject.slug);
-    }
-    
+    let validMatArray = rawMatArray.map(m => m.trim().toLowerCase()).filter(m => m !== "");
     if (validMatArray.length === 0) validMatArray.push("otras");
     q.materia = [...new Set(validMatArray)];
 
-    // 2. SUBMATERIA: Conservamos todo el array original
+    // 2. SUBMATERIA: Limpieza básica
     let rawSubArray = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
-    q.submateria = rawSubArray.filter(s => s.trim() !== "");
-    if (q.submateria.length === 0) q.submateria.push("general");
+    let cleanSubs = rawSubArray.filter(s => s && typeof s === 'string' && s.trim() !== "");
+    if (cleanSubs.length === 0) cleanSubs.push("general");
+    
+    // 3. INYECCIÓN DE CATEGORÍA "CATCH-ALL" (Magia Anti-pérdidas)
+    let subtemasFinales = [...cleanSubs];
+    const normQSubs = cleanSubs.map(s => normalize(s));
 
-    // 3. Metadatos
+    // Nos aseguramos de acceder a las listas oficiales
+    const subsubjectsMap = (typeof BANK !== 'undefined' && BANK.subsubjects) ? BANK.subsubjects : (typeof SUBTEMAS !== 'undefined' ? SUBTEMAS : {});
+
+    // Revisamos cada materia a la que pertenece esta pregunta
+    q.materia.forEach(mSlug => {
+        const officialSubs = subsubjectsMap[mSlug] || [];
+        if (officialSubs.length > 0) {
+            const normOfficial = officialSubs.map(s => normalize(s));
+            // ¿Tiene algún subtema que coincida con la lista oficial de esta materia?
+            const hasMatch = normQSubs.some(qs => normOfficial.includes(qs));
+            
+            if (!hasMatch) {
+                // Si no tiene NINGÚN subtema oficial, la pregunta estaba "huérfana".
+                // Le inyectamos el último subtema oficial (ej: "Otras preguntas..." o "Atención Primaria")
+                const catchAll = officialSubs[officialSubs.length - 1];
+                if (!subtemasFinales.includes(catchAll)) {
+                    subtemasFinales.push(catchAll);
+                }
+            }
+        }
+    });
+
+    q.submateria = subtemasFinales;
+
+    // 4. Metadatos
     q.tipo = type;
     if (type === "examen" && meta) {
         q.examen = meta.id;
