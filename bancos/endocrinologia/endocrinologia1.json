@@ -1,6 +1,6 @@
 [
-  {
-    "id": "endocrino-001-001",
+{
+    "id": "endocrino_001_001",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Señale la opción CORRECTA en cuanto a los principales síntomas del hipotiroidismo",
@@ -11,16 +11,17 @@
       "d": "Bradicardia, sequedad de piel y ronquera"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los síntomas clásicos del **hipotiroidismo** reflejan un enlentecimiento del metabolismo general.\n\nSe caracteriza por:\n- **Bradicardia** (disminución de la frecuencia cardíaca).\n- **Sequedad de piel** y aspereza.\n- **Ronquera** o voz ronca debido al edema de las cuerdas vocales.\n- Otros síntomas comunes incluyen intolerancia al frío, estreñimiento y fatiga.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-002",
-    "materia": ["endocrinologia", "neurocirugia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Neurocirugía"],
+    "id": "endocrino_001_002",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "Ante un paciente con patología hipotalámica, ¿En qué tumor pensaría por ser el más frecuentemente implicado?",
     "opciones": {
       "a": "Glioma",
@@ -29,14 +30,15 @@
       "d": "Craneofaringioma"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **craneofaringioma** es el tumor sólido más frecuente en la región hipotalámica-hipofisaria en niños y adolescentes, y sigue siendo una causa muy importante de patología hipotalámica en adultos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-003",
+    "id": "endocrino_001_003",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "Señale cuál de estas NO es una manifestación clínica de la acromegalia",
@@ -47,14 +49,15 @@
       "d": "Piel seca y alopecia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la **acromegalia**, la piel suele estar engrosada y presentar **hiperhidrosis** (exceso de sudoración) debido al exceso de hormona de crecimiento (GH). La **piel seca y alopecia** son manifestaciones típicas del hipotiroidismo, no de la acromegalia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-004",
+    "id": "endocrino_001_004",
     "materia": ["endocrinologia", "cirugiageneral"],
     "submateria": ["Tiroides", "Glándulas salivales y masas cervicales"],
     "enunciado": "Se presenta a la consulta un paciente masculino de 58 años con una masa cervical indolora de 5 cm. por 3 cm. aproximadamente, adherida a planos profundos. ¿Cuál es su conducta diagnóstica inicial?",
@@ -65,16 +68,17 @@
       "d": "Biopsia quirúrgica."
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante el hallazgo de un nódulo o masa cervical sospechosa de patología tiroidea o tumoral, la **Punción aspiración con aguja fina (PAAF)** es el procedimiento de elección inicial por su alta rentabilidad diagnóstica y bajo costo.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-005",
-    "materia": ["endocrinologia", "neurocirugia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Neurocirugía"],
+    "id": "endocrino_001_005",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
     "enunciado": "Si en un paciente con síndrome de Cushing dependiente de ACTH la resonancia magnética craneal muestra un adenoma hipofisario, ¿Cuál de las siguientes opciones es correcta?",
     "opciones": {
       "a": "El tratamiento de elección es la resección transesfenoidal del adenoma",
@@ -83,14 +87,15 @@
       "d": "No requiere ningún tratamiento"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la **Enfermedad de Cushing** (adenoma hipofisario productor de ACTH), el tratamiento definitivo y de primera línea es la **resección transesfenoidal** del tumor.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-006",
+    "id": "endocrino_001_006",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "La manifestación clínica más frecuente en el síndrome de Cushing es",
@@ -101,16 +106,17 @@
       "d": "La intolerancia a la glucosa"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Aunque el **síndrome de Cushing** tiene múltiples manifestaciones, la **obesidad centrípeta** (con extremidades delgadas y acumulación de grasa en abdomen, cara de luna llena y cuello) es el signo más frecuente y característico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-007",
+    "id": "endocrino_001_007",
     "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Síndromes clínicos"],
+    "submateria": ["Hipotálamo / Hipófisis", "Fisiología renal"],
     "enunciado": "¿Qué dato analítico no esperaría encontrar en un sindrome inadecuado de ADH?",
     "opciones": {
       "a": "Hiponatremia",
@@ -119,14 +125,15 @@
       "d": "Sodio urinario mayor de 20 mEq/L"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el **SIADH**, el exceso de hormona antidiurética retiene agua libre, lo que produce una **hipoosmolaridad plasmática** dilucional. Por lo tanto, es imposible encontrar **hiperosmolaridad plasmática** en este contexto.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-008",
+    "id": "endocrino_001_008",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "Un hombre de 40 años refiere astenia e impotencia. En la analitica presenta una concentración de prolactina sanguínea diez veces por encima de los límites normales superiores. En la RM se evidencia un tumor hipofisiario. Los niveles de LH, FSH y testosterona que encontraremos, probablemente serán",
@@ -137,14 +144,15 @@
       "d": "Niveles altos de LH, FSH y testosterona"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **hiperprolactinemia** severa inhibe la secreción pulsátil de GnRH en el hipotálamo, lo que lleva a una disminución de las gonadotrofinas (**LH y FSH**) y, consecuentemente, niveles bajos de **testosterona** (hipogonadismo hipogonadotrópico).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-009",
+    "id": "endocrino_001_009",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "Recibe en su consultorio un paciente en el que usted sospecha que el mismo padece de acromegalia. ¿Cuál de las siguientes opciones considera como correcta en relación con el diagnóstico de esta patología?",
@@ -155,16 +163,17 @@
       "d": "Sobrecarga oral con glucosa y determinación simultánea de hormona de crecimiento"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El diagnóstico confirmatorio de **acromegalia** se realiza demostrando la falta de supresión de la **hormona de crecimiento (GH)** por debajo de 1 ng/ml tras una **sobrecarga oral con glucosa** (SOG).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-010",
+    "id": "endocrino_001_010",
     "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Síndromes clínicos"],
+    "submateria": ["Hipotálamo / Hipófisis", "Fisiología renal"],
     "enunciado": "Un varón de 92 años es transferido desde su asilo, para estudio de letargo. La exploración no pone de manifiesto datos significativos, aunque los resultados de laboratorio muestran: sodio en suero, 118 mEq/L; osmolalidad en suero, 260 mOsm/kg; osmolalidad en orina de 24 horas, 450 mOsm/kg y el sodio en orina de 80 mEq/L. ¿Cuál es la causa más probable de este letargo?",
     "opciones": {
       "a": "Hiperglucemia",
@@ -173,14 +182,15 @@
       "d": "Hiperlipidemia"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El laboratorio muestra una **hiponatremia hipotónica** con orina inapropiadamente concentrada (osmolalidad urinaria > 100 mOsm/kg) y sodio urinario elevado (> 40 mEq/L), lo cual es el cuadro típico del **SIADH**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-011",
+    "id": "endocrino_001_011",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "¿Cuál de las siguientes situaciones patológicas no es causa de hiperprolactinemia?",
@@ -191,14 +201,15 @@
       "d": "Hipotiroidismo primario"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **hipertiroidismo** no se asocia a hiperprolactinemia. En cambio:\n- El **hipotiroidismo primario** puede causarla por el aumento de TRH (que estimula a la prolactina).\n- La **insuficiencia renal** y la **cirrosis** disminuyen el aclaramiento de la hormona.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-012",
+    "id": "endocrino_001_012",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "¿Cuál de los siguientes fármacos se emplea en el tratamiento de la diabetes insípida central?",
@@ -209,16 +220,17 @@
       "d": "Hidroclorotiazida"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **desmopresina** es un análogo sintético de la vasopresina (ADH) y es el tratamiento de elección para la **diabetes insípida central**, donde existe una deficiencia en la producción o secreción de ADH.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-013",
+    "id": "endocrino_001_013",
     "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Tiroides", "Metabolismo calcio – PTH"],
+    "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "En un paciente con diagnóstico de hiperparatiroidismo primario sintomático se realiza una intervención quirúrgica en la que se observa una glándula paratiroides aumentada de tamaño, de consistencia blanda y superficie lisa. Esta capta sestamibi al centellograma paratiroideo. La conducta terapéutica es:",
     "opciones": {
       "a": "Paratiroidectomía subtotal.",
@@ -227,16 +239,17 @@
       "d": "Paratiroidectomía radical."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el **hiperparatiroidismo primario**, el hallazgo de una sola glándula aumentada (que capta sestamibi) sugiere un adenoma único. El tratamiento consiste en la **resección de la glándula hipercaptante** (adenomectomía).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-014",
-    "materia": ["endocrinologia", "oftalmologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Retina", "Diabetes mellitus"],
+    "id": "endocrino_001_014",
+    "materia": ["nutricion", "oftalmologia"],
+    "submateria": ["Diabetes mellitus", "Retina"],
     "enunciado": "Un paciente de 52 años diagnosticado de Diabetes tipo 2 hace 8 años, con mal control de su glucemia, acude a la guardia por disminución grave de la agudeza visual en ojo izquierdo de 3 días de evolución. ¿Cuál sería el mecanismo fisiopatológico involucrado más probable?",
     "opciones": {
       "a": "Aparición de queratitis estromal secundaria a los niveles de glucemia.",
@@ -245,14 +258,15 @@
       "d": "Desarrollo de edema macular secundario a su patología de base."
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **edema macular diabético** es la causa más frecuente de pérdida visual central en pacientes con retinopatía diabética y puede presentarse incluso en estadios no proliferativos con mal control metabólico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-015",
+    "id": "endocrino_001_015",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "En la exploración física de un panhipopituitarismo no encontrará",
@@ -263,14 +277,15 @@
       "d": "Disminución de vello axilar y pubiano"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **panhipopituitarismo** causa deficiencias de múltiples hormonas, lo que lleva a bradicardia e hipotensión (por falta de cortisol y hormona tiroidea) y pérdida de vello (por falta de gonadotrofinas). La **hipertermia** no es parte del cuadro; de hecho, suele haber tendencia a la hipotermia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-016",
+    "id": "endocrino_001_016",
     "materia": ["endocrinologia", "cardiologia"],
     "submateria": ["Suprarrenales", "Hipertensión arterial y factores de riesgo"],
     "enunciado": "Señale ¿en qué situaciones es obligado descartar la presencia de un feocromocitoma?",
@@ -281,14 +296,15 @@
       "d": "Hipotensión arterial, cefalea persistente"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **feocromocitoma** debe sospecharse ante una **hipertensión arterial (HTA)** que sea refractaria al tratamiento convencional, que sea paroxística o muy lábil, o que se asocie a la tríada de cefalea, sudoración y palpitaciones.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-017",
+    "id": "endocrino_001_017",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una paciente de 60 años consulta por presentar taquicardia e hipertensión arterial. El centellograma informa múltiples nódulos hipercaptantes. Al examen físico se observa bocio en el que se palpan varios nódulos. Usted sospecha:",
@@ -299,17 +315,18 @@
       "d": "Enfermedad de Graves."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Enfermedad de Plummer** o bocio multinodular tóxico se caracteriza por la presencia de múltiples nódulos tiroideos que funcionan de forma autónoma (hipercaptantes en el centellograma), causando hipertiroidismo.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-018",
-    "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Síndromes clínicos"],
-    "enunciado": "Un joven de 25 años fue ingresado a la unidad de cuidados intensivos con lesión grave de la cabeza y fractura de la base de cráneo. Aproximadamente 18 horas después de la lesión manifiesta poliuria. La osmolalidad de la orina de 24 horas es de 150 mOsm/kg y la osmolalidad en suero de 350 mosm/kg La administración de líquidos intravenosos fue detenida y tres horas más tarde la producción de orina y la osmolalidad urinaria permanecieron sin cambio. Se administraron 0.3 u/kg de desmopresina por vía intravenosa, incrementándose la osmolalidad de la orina de 24 horas, a 300 mOsm/kg ¿Cuál es el diagnóstico más probable?",
+    "id": "endocrino_001_018",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
+    "enunciado": "Un joven de 25 años fue ingresado a la unidad de cuidados intensivos con lesión grave de la cabeza y fractura de la base de cráneo. Aproximadamente 18 horas después de la lesión manifiesta poliuria. La osmolalidad de la orina de 24 horas es de 150 mOsm/kg y la osmolalidad en suero de 350 mOsm/kg. La administración de líquidos intravenosos fue detenida y tres horas más tarde la producción de orina y la osmolalidad urinaria permanecieron sin cambio. Se administraron 0.3 u/kg de desmopresina por vía intravenosa, incrementándose la osmolalidad de la orina de 24 horas a 300 mOsm/kg ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Intoxicación acuosa",
       "b": "Síndrome de secreción inapropiada de hormona antidiurética (SIADH)",
@@ -317,14 +334,15 @@
       "d": "Diabetes insipida central"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta poliuria con orina diluida y plasma concentrado tras un traumatismo de cráneo. Al administrar **desmopresina**, la orina se concentra (aumenta la osmolalidad), lo que confirma que el riñón responde a la ADH pero el cuerpo no la produce: **Diabetes insípida central**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-019",
+    "id": "endocrino_001_019",
     "materia": ["endocrinologia"],
     "submateria": ["Urgencias endocrinas"],
     "enunciado": "Usted recibe en la guardia a una paciente de 36 años que presenta Temp axilar 40°C, sudoración, taquicardia con FA, temblor, agitación psicomotriz, diarrea y deshidratación. Al interrogar al acompañante se revela antecedente familiar de hipertiroidismo ¿Cuál es el diagnóstico del cuadro clínico descripto?",
@@ -335,16 +353,17 @@
       "d": "Tiroiditis."
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro de fiebre alta, taquiarritmia (FA), síntomas gastrointestinales y alteración del estado mental en un paciente con sospecha de hipertiroidismo es una emergencia médica denominada **Crisis tirotóxica** o tormenta tiroidea.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-020",
-    "materia": ["endocrinologia", "cardiologia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Miocardiopatías"],
+    "id": "endocrino_001_020",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "La mayor causa de mortalidad de la acromegalia está determinada por:",
     "opciones": {
       "a": "Insuficiencia respiratoria",
@@ -353,16 +372,17 @@
       "d": "Insuficiencia hepática"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los pacientes con **acromegalia** tienen un riesgo significativamente elevado de muerte debido a **patología cardiovascular**, incluyendo miocardiopatía, insuficiencia cardíaca e hipertensión arterial.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-021",
-    "materia": ["endocrinologia", "neurologia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Cefaleas"],
+    "id": "endocrino_001_021",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "La manifestación clínica más frecuente en el síndrome de la silla turca vacía es:",
     "opciones": {
       "a": "Cefalea",
@@ -371,14 +391,15 @@
       "d": "Obesidad"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Aunque muchas veces es un hallazgo incidental, cuando el **síndrome de silla turca vacía** presenta síntomas, la **cefalea** es el motivo de consulta más frecuente.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-022",
+    "id": "endocrino_001_022",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "En la sección del tallo hipotalámico-hipofisario, ¿Qué hormona hipofisaria estará elevada?",
@@ -389,16 +410,17 @@
       "d": "ACTH"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **prolactina** es la única hormona hipofisaria cuya regulación hipotalámica principal es inhibitoria (mediada por la dopamina). Al seccionarse el tallo, se pierde esta inhibición y los niveles de prolactina aumentan.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-023",
-    "materia": ["endocrinologia", "neurologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Neuropatías", "Diabetes mellitus"],
+    "id": "endocrino_001_023",
+    "materia": ["neurologia", "nutricion"],
+    "submateria": ["Neuropatías", "Diabetes mellitus"],
     "enunciado": "¿Cuál es la afectación más frecuente en la polineuropatía diabética?",
     "opciones": {
       "a": "Proximal, bilateral, sensitiva y motora",
@@ -407,14 +429,15 @@
       "d": "Distal, unilateral y motora"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La forma más común de neuropatía en la diabetes es la **polineuropatía distal simétrica**, que afecta típicamente de forma bilateral y predominantemente sensitiva (distribución en guante y calcetín).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-024",
+    "id": "endocrino_001_024",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "En relación con el cortisol libre excretado en orina de 24 horas:",
@@ -425,16 +448,17 @@
       "d": "Es una medida de la capacidad de respuesta suprarrenal al estrés"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **cortisol libre urinario** refleja la fracción libre (activa) del cortisol plasmático que ha sido filtrada por el riñón durante todo el día, proporcionando una **medida integrada** de su secreción.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-025",
+    "id": "endocrino_001_025",
     "materia": ["endocrinologia", "imagenes"],
-    "submateria": ["Hipotálamo / Hipófisis", "Resonancia magnética"],
+    "submateria": ["Suprarrenales", "Resonancia magnética"],
     "enunciado": "En una paciente con sospecha de hipercorticismo de probable origen hipofisario, ¿Cuál será la primera prueba de imagen indicada",
     "opciones": {
       "a": "No está indicado practicar una prueba de imagen",
@@ -443,17 +467,18 @@
       "d": "Estudio isotópico con yodo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Si las pruebas bioquímicas sugieren un origen central (hipofisario) del exceso de cortisol, la **Resonancia Magnética (RM) de silla turca** es la técnica de elección para intentar localizar el adenoma.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-026",
+    "id": "endocrino_001_026",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
-    "enunciado": "Una mujer de 41 años presenta proptosis, palpitaciones, amenorrea y una pérdida de peso de 9 kg. La evaluación lleva al diagnóstico de enfermedad de graves con una captación de yodo radiactivo de 89% en 24 hs que se distribuia difusamente en la glándula con agrandamiento leve. Laboratorio: T4 sérica: 18.8 µg/dL (normal 5 a 12 µg/dL); hormona estimulante de tiroides sérica: <0,01 µg/mL (normal: 0,5 a 5.0 µg/mL). La paciente inició tratamiento con un betabloqueante y metimazol 10 mg, 3 veces al día. Después de 6 semanas de tratamiento se siente considerablemente mejor. ¿Cuál de las siguientes es la mejor prueba para hacer un seguimiento clínico y ajustar la dosis de metimazol?",
+    "enunciado": "Una mujer de 41 años presenta proptosis, palpitaciones, amenorrea y una pérdida de peso de 9 kg. La evaluación lleva al diagnóstico de enfermedad de graves con una captación de yodo radiactivo de 89% en 24 hs que se distribuia difusamente en la glándula con agrandamiento leve. Laboratorio: T4 sérica: 18.8 μg/dL (normal 5 a 12 μg/dL); hormona estimulante de tiroides sérica: <0,01 μg/mL (normal: 0,5 a 5.0 μg/mL). La paciente inició tratamiento con un betabloqueante y metimazol 10 mg, 3 veces al día. Después de 6 semanas de tratamiento se siente considerablemente mejor. ¿Cuál de las siguientes es la mejor prueba para hacer un seguimiento clínico y ajustar la dosis de metimazol?",
     "opciones": {
       "a": "Frecuencia del pulso",
       "b": "Nivel de T4 sérica",
@@ -461,14 +486,15 @@
       "d": "Nivel sérico de inmunoglobulina estimulante de tiroides"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el seguimiento inicial del hipertiroidismo por **Enfermedad de Graves** tras comenzar tionamidas (metimazol), la **T4 libre (o sérica)** es el mejor parámetro para ajustar la dosis [cite: 419, 429].\n\nEsto se debe a que:\n- La **TSH** puede permanecer suprimida durante semanas o meses incluso después de que el paciente alcance el eutiroidismo bioquímico [cite: 419].\n- La **T4 sérica** refleja de manera más inmediata la inhibición de la síntesis hormonal por el fármaco[cite: 425].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-027",
+    "id": "endocrino_001_027",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una mujer de 31 años se queja de baja de peso no intencional de 6.8 kg, ansiedad y \"sensación de inquietud\", de dos meses de evolución. La exploración del cuello no revela ningún dato de importancia. La exploración física muestra taquicardia e hiperreflexia de tendones profundos. Los valores de hormona estimulante de tiroides (TSH) Se encuentran por debajo de 0.01 mu/L. La T4 total está elevada. La gammagrafía con yodo radioactivo muestra baja captación en la región del tiroides. Los niveles de tiroglobulina en suero se encuentran dentro del rango normal. ¿Cuál es el diagnóstico más probable?",
@@ -479,16 +505,17 @@
       "d": "Estruma ovárico"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro de hipertiroidismo con **baja captación de yodo radiactivo** y niveles de **tiroglobulina normales** (inapropiadamente bajos para un exceso endógeno) es característico de la **Tirotoxicosis facticia** por ingesta exógena de levotiroxina [cite: 436, 444].\n\nEn las tiroiditis la captación también es baja, pero la tiroglobulina suele estar elevada por la destrucción del tejido glandular[cite: 444].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-028",
-    "materia": ["endocrinologia", "neurocirugia"],
-    "submateria": ["Hipotálamo / Hipófisis", "Neurocirugía"],
+    "id": "endocrino_001_028",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "El tratamiento de elección de la enfermedad de Cushing por exceso de ACTH hipofisiaria es actualmente",
     "opciones": {
       "a": "Adrenalectomía total bilateral",
@@ -497,14 +524,15 @@
       "d": "Ketoconazol"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Cirugía transesfenoidal** es el tratamiento de primera línea para la **Enfermedad de Cushing** (adenoma hipofisario productor de ACTH) [cite: 448, 457].\n\nPermite la resección selectiva del adenoma preservando el resto de la función hipofisaria en la mayoría de los casos[cite: 452].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-029",
+    "id": "endocrino_001_029",
     "materia": ["endocrinologia", "imagenes"],
     "submateria": ["Tiroides", "Ecografía"],
     "enunciado": "En una paciente de 21 años con un nódulo tiroideo gammagráficamente frío, ¿Cuál de las siguientes exploraciones sería más útil para el diagnóstico?",
@@ -515,14 +543,15 @@
       "d": "TC cervical"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante un **nódulo frío** (no funcionante), el riesgo de malignidad es mayor, por lo que la conducta indicada es realizar una **Ecografía tiroidea** para caracterizar el nódulo y una **Punción-aspiración con aguja fina (PAAF)** para estudio citológico[cite: 468, 473].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-030",
+    "id": "endocrino_001_030",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una mujer de 42 años consulta por bocio asintomático. Tras los estudios se le diagnostica enfermedad de Hashimoto ¿Cuál de las siguientes opciones no es cierta?",
@@ -533,16 +562,17 @@
       "d": "El tratamiento será quirúrgico con tiroidectomía subtotal"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Enfermedad de Hashimoto** es una tiroiditis autoinmune crónica cuyo tratamiento suele ser la sustitución hormonal con levotiroxina si existe hipotiroidismo [cite: 488].\n\nLa **tiroidectomía subtotal** NO es el tratamiento estándar, reservándose la cirugía solo para casos con síntomas de compresión local o sospecha de malignidad asociada[cite: 486, 488].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-031",
-    "materia": ["endocrinologia"],
-    "submateria": ["Tiroides"],
+    "id": "endocrino_001_031",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Tiroides", "Conceptos de Oncología"],
     "enunciado": "Ante una paciente de 34 años con un nódulo tiroideo, ¿Qué de lo que sigue incrementa la sospecha de carcinoma?",
     "opciones": {
       "a": "Antecedente familiar de enfermedad de graves",
@@ -551,14 +581,15 @@
       "d": "Antecedentes familiares de irradiación al cuello en la infancia"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **antecedente de irradiación cervical** durante la infancia es uno de los factores de riesgo más importantes para el desarrollo de carcinoma papilar de tiroides [cite: 501, 504].\n\nLos nódulos hiperfuncionantes (calientes), por el contrario, tienen un riesgo de malignidad muy bajo[cite: 499].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-032",
+    "id": "endocrino_001_032",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "Una paciente de 38 años consulta por hipertensión arterial y obesidad. Ante la presencia de estrías y hematomas cutáneos se sospecha un síndrome de Cushing. Como primera exploración se solicita una determinación de cortisol libre en orina de 24 horas. Si este no es dosificable, ¿Cuál será la orientación diagnóstica correcta?",
@@ -569,16 +600,17 @@
       "d": "Se trata de un carcinoma suprarrenal"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Si un paciente presenta estigmas claros de hipercortisolismo pero el cortisol urinario endógeno es indetectable o muy bajo, debe sospecharse un **hipercorticismo exógeno** (uso de corticoides farmacéuticos), ya que estos suprimen el eje hipotálamo-hipófisis-suprarrenal[cite: 517, 520].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-033",
-    "materia": ["endocrinologia", "oftalmologia"],
-    "submateria": ["Tiroides", "Órbita"],
+    "id": "endocrino_001_033",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
     "enunciado": "En un paciente con oftalmopatía de graves con neuropatía óptica compresiva, está indicada como primera opción terapéutica:",
     "opciones": {
       "a": "Corticoides en dosis altas",
@@ -587,14 +619,15 @@
       "d": "Radioterapia"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La neuropatía óptica compresiva es una emergencia en la **oftalmopatía de Graves**. El tratamiento inicial de elección son los **corticoides en dosis altas** (generalmente pulsos de metilprednisolona) para reducir la inflamación y el edema retroorbitario[cite: 531, 536].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-034",
+    "id": "endocrino_001_034",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "¿En cuál de las siguientes formas de hipertiroidismo no existirá hipocaptación del trazador en la gammagrafía?",
@@ -605,14 +638,15 @@
       "d": "Tirotoxicosis facticia"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Enfermedad de Graves** es una patología hiperfuncionante donde hay una estimulación difusa de la glándula por anticuerpos, lo que resulta en una **hipercaptación** del trazador [cite: 548, 551].\n\nEn las tiroiditis (linfocitaria o Hashimoto) y en la tirotoxicosis facticia, la captación es típicamente baja[cite: 540, 549].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-035",
+    "id": "endocrino_001_035",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una mujer de 40 años con enfermedad de graves comenzó a tomar metimazol. Un mes más tarde acudió a la clínica para valoración sistemática. La paciente advierte abscesos de febricula, artralgias y malestar general. En los datos de laboratorio se encuentra aumento leve de las transaminasas y una glucemia de 150 mg/dL Los siguientes son efectos secundarios reconocidos del metimazol, excepto",
@@ -623,14 +657,15 @@
       "d": "Resistencia a la insulina"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El metimazol puede causar exantema, artralgias y toxicidad hepática (hepatitis colestásica) [cite: 565, 566, 567].\n\nSin embargo, la **resistencia a la insulina** NO es un efecto secundario reconocido de las tionamidas; de hecho, el propio hipertiroidismo puede alterar el metabolismo de la glucosa[cite: 568, 570].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-036",
+    "id": "endocrino_001_036",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "En relación con el síndrome de Cushing, indique la opción falsa",
@@ -641,14 +676,15 @@
       "d": "Un resultado normal de la prueba de supresión nocturna con dexametasona excluye prácticamente el síndrome de Cushing"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La opción falsa es la B. Si el síndrome de Cushing es **ACTH-independiente**, la causa reside en las glándulas suprarrenales (adenoma, carcinoma o hiperplasia), por lo que lo indicado es una **TC abdominal** [cite: 580].\n\nLa TC torácica para buscar un tumor ectópico (como cáncer de pulmón) se solicita cuando el Cushing es **ACTH-dependiente** y se ha descartado el origen hipofisario[cite: 580, 584].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-037",
+    "id": "endocrino_001_037",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "En un paciente con dolor en la parte anterior del cuello irradiado a mandibula, fiebre, con bocio difuso, TSH inhibida, hipocaptación de gammagrafía y ácido antiperoxidasa negativos, usted pensaría en",
@@ -659,16 +695,17 @@
       "d": "Tiroiditis crónica fibrosa de Riedel"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La tríada de **dolor cervical anterior**, **fiebre** e hipertiroidismo transitorio con **baja captación** en la gammagrafía es la presentación clásica de la **Tiroiditis de De Quervain** (subaguda granulomatosa)[cite: 587, 595].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-038",
-    "materia": ["endocrinologia", "cardiologia"],
-    "submateria": ["Tiroides", "Cardiología básica"],
+    "id": "endocrino_001_038",
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Tiroides", "Adulto mayor"],
     "enunciado": "En un paciente anciano con hipotiroidismo subclínico, el tratamiento sustitutivo con tiroxina:",
     "opciones": {
       "a": "Puede requerir dosis elevadas, porque un anciano es más resistente a la T4",
@@ -677,14 +714,15 @@
       "d": "Puede desencadenar angor, por lo que es mejor no tratar o empezar con dosis bajas"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En adultos mayores, especialmente con antecedentes cardiovasculares, la levotiroxina debe iniciarse con **dosis bajas** y aumentarse muy lentamente, ya que un aumento brusco del metabolismo basal puede desencadenar **angina de pecho (angor)** o arritmias[cite: 607, 609].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-039",
+    "id": "endocrino_001_039",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Un paciente sin antecedentes de patología tiroidea, ingresa en la unidad de cuidados intensivos del hospital en situación clínica de sepsis severa. Presenta una determinación sanguínea de TSH y T4 normales, pero T3 baja. El diagnóstico más probable es...",
@@ -695,14 +733,15 @@
       "d": "Síndrome del enfermo eutiroideo"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Síndrome del enfermo eutiroideo** se observa en pacientes con enfermedades sistémicas graves (como sepsis). La alteración más precoz y frecuente es la **T3 baja** por inhibición de la conversión periférica de T4 a T3, manteniendo TSH y T4 normales inicialmente[cite: 613, 623].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-040",
+    "id": "endocrino_001_040",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una paciente de 42 años, con bocio desde la edad de 16 años, consulta por presentar desde hace 5 meses aumento de peso, sensibilidad al frío, estreñimiento y astenia. En la exploración se comprueba bocio difuso indoloro de consistencia aumentada, piel seca y fría y pulso de 62 LPM. La analítica revela TSH de 40 u/mL (VN: 0,4-5) Y título elevado de anticuerpos antimicrosomales. ¿Cuál sería la orientación diagnóstica en esta paciente?",
@@ -713,16 +752,17 @@
       "d": "Tiroiditis autoinmune crónica"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La presencia de hipotiroidismo primario manifiesto (TSH elevada), bocio de consistencia aumentada y **anticuerpos antimicrosomales** (anti-TPO) positivos confirma el diagnóstico de **Tiroiditis autoinmune crónica** o de Hashimoto[cite: 629, 641].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-041",
-    "materia": ["endocrinologia"],
-    "submateria": ["Tiroides"],
+    "id": "endocrino_001_041",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Tiroides", "Conceptos de Oncología"],
     "enunciado": "Lo visita en su consultorio una paciente suya debido a que el resultado de la aspiración con aguja fina de la glándula tiroides que usted le había pedido ha resultado positivo para cáncer. ¿Qué tipo celular histológico es el más frecuente?",
     "opciones": {
       "a": "Anaplásico",
@@ -731,14 +771,15 @@
       "d": "Medular"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Carcinoma Papilar** es el tipo más frecuente de cáncer de tiroides, representando aproximadamente el 80% de los tumores malignos de esta glándula[cite: 650, 655].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-042",
+    "id": "endocrino_001_042",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una muchacha de 17 años nota un bulto que ha crecido en su cuello. En la exploración física la glándula tiroides tiene el doble del tamaño normal, es de consistencia firme, multinodular, no dolorosa y móvil. A la palpación no presenta adenopatías. La historia familiar es positiva para hipotiroidismo e hipertiroidismo. Los valores de triyodotironina (T3) Y de tiroxina (T4) En suero son normales bajos y el valor de hormona estimulante de tiroides (TSH) Es normal alto. La gammagrafía con tecnecio muestra captación no uniforme. El título en suero de anticuerpos frente a la peroxidasa tiroidea es intensamente positivo. La biopsia tiroidea de esta paciente probablemente pondrá de manifiesto",
@@ -749,14 +790,15 @@
       "d": "Células parafoliculares"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico de bocio firme con anticuerpos antiperoxidasa (anti-TPO) positivos es diagnóstico de tiroiditis de Hashimoto. El hallazgo histológico característico de esta patología es la **infiltración linfocítica** extensa del parénquima tiroideo[cite: 664, 673].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-043",
+    "id": "endocrino_001_043",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Señale cuál es la indicación del propranolol en el tratamiento del hipertiroidismo",
@@ -767,14 +809,15 @@
       "d": "Gestación asociada"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **propranolol** se utiliza en el hipertiroidismo para el control rápido de los síntomas adrenérgicos. Sus indicaciones principales incluyen el manejo de la **crisis tirotóxica** y la **preparación prequirúrgica** para la tiroidectomía, ayudando a prevenir complicaciones cardíacas durante el procedimiento[cite: 684, 688].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-044",
+    "id": "endocrino_001_044",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "Una enferma de 47 años consulta por bocio difuso sin presentar ninguna otra manifestación clínica. ¿Cuál de las siguientes determinaciones será más importante para orientar el diagnóstico?",
@@ -785,17 +828,18 @@
       "d": "Lípidos en sangre"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante un bocio difuso, la primera prioridad es evaluar el estado funcional de la glándula. La determinación de **T4 libre** (junto con la TSH) es fundamental para determinar si el paciente se encuentra en eutiroidismo, hipotiroidismo o hipertiroidismo[cite: 700, 706].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-045",
+    "id": "endocrino_001_045",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
-    "enunciado": "En una mujer de 42 años se nota en la exploración la presencia de múltiples nódulos en la zona de la glándula tiroides. En la exploración se constata bocio multinodular. No tiene síntomas y clínicamente es eutiroidea. ¿Cuál de las siguientes opciones sobre la tiroiditis de Hashimoto es verdadera?",
+    "enunciado": "¿Cuál de las siguientes opciones sobre la tiroiditis de Hashimoto es verdadera?",
     "opciones": {
       "a": "Los corticosteroides son útiles para controlar la progresión de la enfermedad",
       "b": "La tiroiditis de Hashimoto es una enfermedad autoinmunitaria",
@@ -803,32 +847,34 @@
       "d": "Los pacientes diagnosticados con este trastorno tienen mayor incidencia de cáncer tiroideo"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **tiroiditis de Hashimoto** es, por definición, una **enfermedad autoinmunitaria** mediada por una respuesta celular y humoral contra antígenos tiroideos (peroxidasa y tiroglobulina)[cite: 712, 725].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-046",
-    "materia": ["endocrinologia", "cardiologia"],
-    "submateria": ["Tiroides", "Cardiología básica"],
-    "enunciado": "Un hombre de 76 años, se presenta a consulta con bradicardia. Tiene arteriopatía coronaria y fue sometido a angioplastia y colocación de un Stent hace dos meses, con restablecimiento exitoso del flujo sanguíneo. Ya no tiene angina, pero está preocupado porque su pulso está lento; la dosis de atenolol ha sido reducida de 50 mg/dia a 25 mg/dia pero persiste una bradicardia significativa. En otros aspectos, la revisión de los sistemas es irrelevante. En el examen físico, la frecuencia del pulso es 42 Ipm, regular y la presión arterial es de 144/82 mmHg. El examen realizado en la cabeza, los ojos, los oídos, la nariz y la garganta es normal para su edad y en el examen de cuello no presenta bocio, soplos ni adenopatías. El tórax es normal y el examen cardíaco no muestra murmullos ni frotes. Pruebas de laboratorio: hormona estimulante de tiroides, 38,6 µu/mL (normal 0.5 a 5 µu/mL). ¿Cuál de los siguientes tratamientos con hormona tiroidea deberá iniciarse en este paciente?",
+    "id": "endocrino_001_046",
+    "materia": ["endocrinologia", "medicinafamiliar"],
+    "submateria": ["Tiroides", "Adulto mayor"],
+    "enunciado": "Un hombre de 76 años, se presenta a consulta con bradicardia. Tiene arteriopatía coronaria y fue sometido a angioplastia y colocación de un Stent hace dos meses. En el examen físico, la frecuencia del pulso es 42 lpm. Pruebas de laboratorio: TSH, 38,6 μu/mL. ¿Cuál de los siguientes tratamientos con hormona tiroidea deberá iniciarse en este paciente?",
     "opciones": {
-      "a": "Levotiroxina, 25 µg/dia durante 2 semanas, aumentar la dosis a 12.5 µg/dia cada 2 semanas hasta alcanzar una dosis de 150 µg",
-      "b": "Levotiroxina, 100 µg/dia; determinar la TSH sérica a las 6 semanas y suspender el atenolol",
-      "c": "Levotiroxina 25 µg/dia durante 2 semanas, aumentar la dosis a 37,5 µg durante otras 2 semanas, luego aumentar 50 µg/dia; volver a determinar la TSH sérica después de 6 semanas con esa dosis.",
+      "a": "Levotiroxina, 25 μg/dia durante 2 semanas, aumentar la dosis a 12.5 μg/dia cada 2 semanas hasta alcanzar una dosis de 150 µg",
+      "b": "Levotiroxina, 100 μg/dia; determinar la TSH sérica a las 6 semanas y suspender el atenolol",
+      "c": "Levotiroxina 25 μg/dia durante 2 semanas, aumentar la dosis a 37,5 µg durante otras 2 semanas, luego aumentar 50 μg/dia; volver a determinar la TSH sérica después de 6 semanas con esa dosis.",
       "d": "Hormona tiroidea deshidratada, 130 mg/dia; volver a determinar la TSH sérica en 6 a 8 semanas"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En un paciente anciano con patología coronaria activa, el reemplazo con levotiroxina debe ser muy cauteloso. Se inicia con **25 μg/día** y se realizan aumentos graduales y pequeños (en este caso a 37,5 y luego a 50 μg) cada 2 semanas, con control de TSH a las 6 semanas de haber alcanzado la dosis estable[cite: 745, 748].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-047",
+    "id": "endocrino_001_047",
     "materia": ["endocrinologia"],
     "submateria": ["Tiroides"],
     "enunciado": "¿Cuál de las siguientes exploraciones sería útil para completar el estudio de hipotiroidismo primario, en una paciente de 35 años a la cual se le ha establecido el diagnóstico mediante las alteraciones bioquímicas hormonales?",
@@ -839,16 +885,17 @@
       "d": "Anticuerpos antitiroideos"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una vez confirmado el hipotiroidismo primario bioquímicamente, el siguiente paso es determinar la etiología. La determinación de **anticuerpos antitiroideos** (anti-TPO) es la prueba más útil para confirmar la causa más frecuente: la tiroiditis autoinmune de Hashimoto[cite: 762, 764].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-048",
+    "id": "endocrino_001_048",
     "materia": ["endocrinologia"],
-    "submateria": ["Urgencias endocrinas"],
+    "submateria": ["Tiroides"],
     "enunciado": "¿Cuál de los siguientes medicamentos no se suele utilizar en el tratamiento de una crisis tirotóxica?",
     "opciones": {
       "a": "Propiltiouracilo",
@@ -857,14 +904,15 @@
       "d": "Atenolol"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la crisis tirotóxica se prefiere el **propranolol** sobre otros betabloqueantes como el **atenolol** porque el propranolol tiene el beneficio adicional de inhibir parcialmente la conversión periférica de T4 a T3 en dosis altas[cite: 775, 777].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-049",
+    "id": "endocrino_001_049",
     "materia": ["endocrinologia"],
     "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "En un paciente con sospecha clínica de hipofunción tiroidea, TSH normal/baja y T4 libre baja, está indicado:",
@@ -875,17 +923,18 @@
       "d": "Gammagrafia tiroidea como primera prueba diagnóstica"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La combinación de T4 libre baja con una TSH que no está adecuadamente elevada (normal o baja) indica un **hipotiroidismo secundario o central**. Por lo tanto, el siguiente paso es la **evaluación de la región hipotálamo-hipofisaria** mediante RM y pruebas de función del resto de las hormonas adenohipofisarias[cite: 788, 793].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-050",
+    "id": "endocrino_001_050",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
-    "enunciado": "Una mujer de 52 años se queja de ganancia de peso y de equimosis fáciles. En la exploración física se halla obesidad del tronco, facies redondeada, hirsutismo y estrías abdominales. Tiene debilidad de músculos proximales y atrofia. El valor de cortisol plasmático a las 8:00 a.m. Es de 49 µg/dL (normal < 25 µg/dL). ¿Cuál es el siguiente paso en el estudio de la paciente?",
+    "enunciado": "Una mujer de 52 años se queja de ganancia de peso y de equimosis fáciles. En la exploración fisica se halla obesidad del tronco, facies redondeada, hirsutismo y estrías abdominales. Tiene debilidad de músculos proximales y atrofia. El valor de cortisol plasmático a las 8:00 a.m. Es de 49 μg/dL (normal < 25 μg/dL). ¿Cuál es el siguiente paso en el estudio de la paciente?",
     "opciones": {
       "a": "Cuantificación en plasma de hormona adrenocorticotrópica (ACTH)",
       "b": "TC de la silla turca",
@@ -893,17 +942,18 @@
       "d": "Prueba de supresión con dexametasona"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante la sospecha clínica de síndrome de Cushing, el primer paso es **confirmar el hipercortisolismo patológico** y la pérdida de la regulación del eje. La **prueba de supresión con dexametasona** (prueba de Nugent o dosis baja) es una de las herramientas de tamizaje inicial indicadas para este fin[cite: 808, 810].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-051",
+    "id": "endocrino_001_051",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
-    "enunciado": "Una mujer de 21 años con antecedentes de diabetes tipo I es llevada al apartamento de urgencias con náuseas, vómito, letargia y deshidratación. Su madre advierte que dejó de utilizar insulina un día antes de presentar estos síntomas. A la exploración física se encuentra letárgica, tiene mucosas secas, la PA es de 80/40 mmHg y la frecuencia cardiaca es de 112/Lpm. Los ruidos cardíacos son normales y los pulmones están despejados. El abdomen está blando y no hay organomegalia. La paciente se encuentra reactiva y orientada, pero con debilidad difusa. Los valores de laboratorio son los siguientes: pH, 7.20; sodio, 126 mEq/L; potasio, 4.3 mEq/L; magnesio, 1.2 mEq/L nitrógeno de la urea sanguinea, 76 mg/dL creatinina, 2.2 mg/dL bicarbonato, 10 mEq/L cloruros, 88 mEq/L. La glucosa en suero muestra cifras de 520 mg/dL Los siguientes son pasos para el tratamiento adecuado, excepto",
+    "enunciado": "Una mujer de 21 años con antecedentes de diabetes tipo I es llevada al apartamento de urgencias con náuseas, vómito, letargia y deshidratación. Su madre advierte que dejó de utilizar insulina un día antes de presentar estos síntomas. A la exploración física se encuentra letárgica, tiene mucosas secas, la PA es de 80/40 mmHg y la frecuencia cardiaca es de 112/Lpm. Los ruidos cardíacos son normales y los pulmones están despejados. El abdomen está blando y no hay organomegalia. La paciente se encuentra reactiva y orientada, pero con debilidad difusa. Los valores de laboratorio son los siguientes: pH, 7.20; sodio, 126 mEa/L; potasio, 4.3 mEq/L; magnesio, 1.2 mEq/L nitrógeno de la urea sanguinea, 76 mg/dL creatinina, 2.2 mg/dL bicarbonato, 10 mEq/L cloruros, 88 mEq/L. La glucosa en suero muestra cifras de 520 mg/dL Los siguientes son pasos para el tratamiento adecuado, excepto",
     "opciones": {
       "a": "Medir glucosa capilar cada 1-2 horas",
       "b": "Reponer líquidos mediante solución de cloruro de sodio al 3%",
@@ -911,14 +961,15 @@
       "d": "Insulina endovenosa"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta una **Cetoacidosis Diabética (CAD)** [cite: 826, 832].\n\nEl manejo inicial incluye:\n- **Insulina endovenosa** para revertir la cetosis [cite: 838].\n- **Reposición de potasio** (ya que la insulina lo introduce en la célula) [cite: 837].\n- **Control glucémico frecuente** [cite: 835].\n\nLa reposición de líquidos con **solución de cloruro de sodio al 3%** (hipertónica) es **incorrecta** y peligrosa, ya que el déficit suele reponerse con solución fisiológica al 0.9%[cite: 836, 840].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-052",
+    "id": "endocrino_001_052",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "La causa más frecuente de insuficiencia suprarrenal primaria en la actualidad es",
@@ -929,16 +980,17 @@
       "d": "Adrenalitis autoinmune"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En países desarrollados y en la práctica clínica actual, la **Adrenalitis autoinmune** (Enfermedad de Addison) es la causa principal de insuficiencia suprarrenal primaria[cite: 844, 852, 854].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-053",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
+    "id": "endocrino_001_053",
+    "materia": ["nutricion", "urgencias"],
+    "submateria": ["Diabetes mellitus", "Otras preguntas de urgencias"],
     "enunciado": "Un hombre de 86 años es encontrado por la policía, desorientado y confundido. En la guardia le detectan hipoglucemia. Está afebril y el resto de la exploración física es normal. Se le aplica glucosa en bolo por via endovenosa y el enfermo se recupera de inmediato. La glucemia ahora es de 122 mg/dL y los hallazgos neurológicos se normalizan. La historia clínica posterior revela que el enfermo padece una diabetes tipo II tratada con sulfonilurea. Asimismo, refiere antecedentes de insuficiencia cardíaca congestiva, motivo por el que ingresó en el hospital en 3 ocasiones durante el último año. ¿Cuál sería la indicación más apropiada para este paciente?",
     "opciones": {
       "a": "Deberá ingresarlo al hospital y comenzar los análisis y tratamientos pertinentes",
@@ -947,14 +999,15 @@
       "d": "El paciente puede ser dado de alta sin más intervenciones, fue solamente una hipoglucemia"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Las hipoglucemias por **sulfonilureas** (especialmente en ancianos y pacientes con comorbilidades como insuficiencia cardíaca) tienen un alto riesgo de recurrencia debido a la vida media prolongada del fármaco[cite: 862, 863]. Por lo tanto, el paciente **debe ser ingresado** para observación y monitoreo[cite: 870, 875].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-054",
+    "id": "endocrino_001_054",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
     "enunciado": "En el tratamiento del coma hiperosmolar no cetósico es falso que:",
@@ -965,16 +1018,17 @@
       "d": "La forma de administración de insulina más empleada actualmente es la endovenosa"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el **Estado Hiperosmolar Hiperglucémico**, aunque la hidratación es fundamental y reduce la glucemia, generalmente **no es suficiente** por sí sola para lograr un control adecuado, requiriendo el uso de insulina[cite: 879, 889, 891].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-055",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Tiroides", "Diabetes mellitus"],
+    "id": "endocrino_001_055",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "¿Cuál de las siguientes enfermedades no produce diabetes secundaria?",
     "opciones": {
       "a": "Hemocromatosis",
@@ -983,50 +1037,53 @@
       "d": "Hipotiroidismo"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **hipotiroidismo** no es una causa de diabetes secundaria [cite: 895, 903, 905].\n\nOtras patologías mencionadas sí pueden causarla:\n- **Hemocromatosis**: depósito de hierro en el páncreas [cite: 897].\n- **Síndrome de Cushing**: exceso de cortisol (hormona contrainsular) [cite: 901].\n- **Feocromocitoma**: exceso de catecolaminas[cite: 902].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-056",
+    "id": "endocrino_001_056",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Suprarrenales", "Diabetes mellitus"],
     "enunciado": "La insuficiencia crónica suprarrenal autoinmune puede asociarse a",
     "opciones": {
-      "a": "Diabetes tipo I",
+      "a": "Diabetes tipo l",
       "b": "Diabetes tipo II",
       "c": "Ulcera gástrica",
       "d": "Pancreatitis crónica"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La insuficiencia suprarrenal autoinmune suele formar parte de los **Síndromes Poliglandulares Autoinmunes**, asociándose frecuentemente con la **Diabetes Mellitus tipo I**[cite: 909, 913, 921].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-057",
+    "id": "endocrino_001_057",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
     "enunciado": "Un paciente diabético presenta un cuadro de cetoacidosis diabética. ¿Cuál de las siguientes medidas terapéuticas carece de sentido?",
     "opciones": {
       "a": "Debe administrarle insulina corriente por vía intramuscular",
       "b": "Si su pH sanguíneo es de 7,3 y el bicarbonato plasmático de 16 mEq/L administrar 500 ml de bicarbonato 1/6 molar en 2 horas",
-      "c": "En ausencia de hipotensión, si el sodio es superior a 150 mEq/L administrar solución salina hipotónica",
+      "c": "En ausencia de hipotensión, si el sodio es superior a 1150 mEq/L administrar solución salina hipotónica",
       "d": "Iniciar sueroterapia con suero salino isotónico al 0,9%"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En la cetoacidosis diabética, el uso de **bicarbonato** solo se reserva para casos de acidosis severa (habitualmente **pH < 6.9-7.0**). Administrarlo con un pH de 7.3 carece de sentido y puede ser perjudicial[cite: 925, 932, 936].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-058",
+    "id": "endocrino_001_058",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "¿Cuál de los siguientes hallazgos no es característico del hiperaldoteronismo primario?",
@@ -1037,16 +1094,17 @@
       "d": "Hipomagnesemia"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **hiperaldosteronismo primario** se caracteriza por HTA y tendencia a la hipopotasemia[cite: 940, 944, 949]. Sin embargo, **no presenta edemas** debido al fenómeno de \"escape de la aldosterona\" (natriuresis por presión)[cite: 946, 952].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-059",
-    "materia": ["endocrinologia", "nutricion", "urologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus", "Riesgo cardiovascular y riñón"],
+    "id": "endocrino_001_059",
+    "materia": ["nutricion", "urologia"],
+    "submateria": ["Diabetes mellitus", "Riñón y enfermedades sistémicas"],
     "enunciado": "Una mujer de 36 años con antecedentes de 12 años de diabetes tipo i, atendida en forma ambulatoria, presenta un incremento de la excreción de microalbuminuria. El nivel actual es de 118 mg/24 hs; el nivel 3 meses atrás era de 64 mg/24 hs. En el examen físico su PA 132/86 mmHg y presenta antecedentes de retinopatía diabética. La hemoglobina glicosilada (HbA1c) Es de 7,2% y la concentración de lipoproteinas de baja densidad es de 134 mg/dL. ¿Cuál es la elección más apropiada para el tratamiento de esta paciente?",
     "opciones": {
       "a": "Verapamilo acción prolongada, 120 mg/dia",
@@ -1055,16 +1113,17 @@
       "d": "Lisinopril 5 mg/dia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante la presencia de **microalbuminuria** persistente en un paciente diabético, el tratamiento de elección para retrasar la progresión de la nefropatía son los **IECA** (como el **Lisinopril**) por su efecto nefroprotector[cite: 956, 966, 969].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-060",
-    "materia": ["endocrinologia", "oftalmologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Retina", "Diabetes mellitus"],
+    "id": "endocrino_001_060",
+    "materia": ["nutricion", "oftalmologia"],
+    "submateria": ["Diabetes mellitus", "Retina"],
     "enunciado": "Un paciente presenta una diabetes insulinodependiente (DMID) Y retinopatía diabética. Señale la opción que le parezca incorrecta",
     "opciones": {
       "a": "La retinopatía debió aparecer 10 años después del diagnóstico de la diabetes",
@@ -1073,17 +1132,18 @@
       "d": "Si se consigue un buen control metabólico de la diabetes, muy probablemente se evitará la progresión de la retinopatía"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **maculopatía** no es necesariamente la forma más frecuente de lesión en la DMID, ya que la retinopatía proliferativa es una complicación mayor muy común en este grupo[cite: 972, 979, 984].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-061",
+    "id": "endocrino_001_061",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
-    "enunciado": "Un hombre de 75 años ingresa al hospital con una debilidad severa y tos. No se encuentra tomando ningún medicamento y no ha tenido síntomas gastrointestinales. A la exploración física se encuentra caquéctico y con una PA de 100/60 mmHg. Presenta una hiperpigmentación difusa y dedos en palillo de tambor en forma significativa, tanto en las manos como en los pies. Su concentración de glucosa plasmática en ayunas es de 384 mg/dL el sodio sérico es de 140 mEq/L y la concentración de potasio en suero de 2,9 mEq/L. Además de iniciar la repleción del potasio, ¿Qué haría usted de inmediato?",
+    "enunciado": "Un hombre de 75 años ingresa al hospital con una debilidad severa y tos. No se encuentra tomando ningún medicamento y no ha tenido síntomas gastrointestinales. A la exploración física se encuentra caquéctico y con una PA de 100/60 mmHg. Presenta una hiperpigmentación difusa y dedos en palillo de tambor en forma significativa, tanto en las manos como en los pies. Su concentración de glucosa plasmática en ayunas es de 384 mg/dL el sodio sérico es de 140 mEq/Ly la concentración de potasio en suero de 2,9 mEq/L. Además de iniciar la repleción del potasio, ¿Qué haría usted de inmediato?",
     "opciones": {
       "a": "Ordenar una prueba de estimulación, prueba de una hora con 250 µg de ACTH",
       "b": "Ordenar una cuantificación en ayunas, a las 8 de la mañana, de su actividad de renina plasmática en posición supina",
@@ -1091,16 +1151,17 @@
       "d": "Ordenar la determinación de cortisol matutino y niveles de ACTH"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La tríada de **hiperpigmentación**, hipopotasemia marcada e hiperglucemia en un paciente caquéctico sugiere un **síndrome de ACTH ectópica** (posiblemente por cáncer de pulmón, dado el antecedente de tos y dedos en palillo de tambor). Se debe medir **cortisol y ACTH** para confirmar el exceso de glucocorticoides dependiente de ACTH[cite: 988, 991, 992, 1000, 1002].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-062",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus"],
+    "id": "endocrino_001_062",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "La prueba de tolerancia a la glucosa proporciona un valor de glucemia que permite establecer el diagnóstico de diabetes. Este valor es",
     "opciones": {
       "a": "Glucosa plasmática a las 2 horas mayor o igual a 120 mg/dL",
@@ -1109,17 +1170,18 @@
       "d": "Glucosa plasmática en ayunas mayor o igual a 122 mg/dL"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El diagnóstico de diabetes mediante la **Prueba de Tolerancia Oral a la Glucosa (PTOG)** se establece con un valor de glucemia a las **2 horas ≥ 200 mg/dL**[cite: 1006, 1010, 1016].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-063",
+    "id": "endocrino_001_063",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
-    "enunciado": "Una mujer de 23 años ingresa al hospital por dolor abdominal difuso de 24 hs de evolución. No tiene antecedentes personales patológicos y no toma ningún medicamento. La exploración física muestra taquicardia, hipotensión leve, olor afrutado en su aliento y abdomen levemente doloroso a la palpación. Los estudios de química sanguínea muestran: sodio, 136 mEq/L potasio, 5.6 mEq/L; cloruro 101 mEq/L y bicarbonato no detectable; la concentración sérica de glucosa es de 551 mg/dL y las cetonas en sangre son positivas a una dilución de 1:8. Tres horas después del inicio de insulina y solución salina normal por vía intravenosa, los estudios de laboratorio muestran los siguientes valores: sodio, 140 mEq/L potasio, 4.1 mEq/L cloruro, 106 mEq/L bicarbonato, 14 mEq/L y glucemia de 190 mg/dL. El siguiente paso más apropiado en el tratamiento es:",
+    "enunciado": "Una mujer de 23 años ingresa al hospital por dolor abdominal difuso de 24 hs de evolución. No tiene antecedentes personales patológicos y no toma ningún medicamento. La exploración física muestra taquicardia, hipotensión leve, olor afrutado en su aliento y abdomen levemente doloroso a la palpación. Los estudios de química sanguínea muestran: sodio, 136 mEq/L; potasio, 5.6 mEq/L; cloruro 101 mEq/Ly bicarbonato no detectable; la concentración sérica de glucosa es de 551 mg/dL y las cetonas en sangre son positivas a una dilución de 1: 8. Tres horas después del inicio de insulina y solución salina normal por vía intravenosa, los estudios de laboratorio muestran los siguientes valores: sodio, 140 mEq/L potasio, 4.1 mEq/L cloruro, 106 mEq/L bicarbonato, 14 mEq/Ly glucemia de 190 mg/dL. El siguiente paso más apropiado en el tratamiento es:",
     "opciones": {
       "a": "Suspender los líquidos intravenosos",
       "b": "Suspender la solución salina y comenzar con una infusión de dextrosa al 5% y solución salina al 0.45%",
@@ -1127,16 +1189,17 @@
       "d": "Suspender la infusión de insulina y comenzar una infusión de dextrosa al 5% y solución salina normal."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Cuando la glucemia en una CAD desciende por debajo de **200-250 mg/dL**, se debe agregar **dextrosa** a la infusión (habitualmente dextrosa al 5% con solución salina al 0.45%) para evitar la hipoglucemia mientras se continúa la insulina para cerrar la brecha aniónica (acidosis)[cite: 1024, 1030, 1034].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-064",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus"],
+    "id": "endocrino_001_064",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "¿Cuál de las siguientes opciones indica las condiciones adecuadas para practicar correctamente una curva de glucemia?",
     "opciones": {
       "a": "Dieta hipocalórica durante 3 días y curva de glucemia con 100 g de glucosa oral",
@@ -1145,34 +1208,36 @@
       "d": "Dieta normocalórica durante 3 días y curva de glucemia con 75 g de glucosa oral"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Para realizar una PTOG estándar, el paciente debe llevar una **dieta normocalórica** (con al menos 150g de carbohidratos) los 3 días previos y realizar la carga con **75 g de glucosa** anhidra disuelta en agua[cite: 1038, 1046, 1048].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-065",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
+    "id": "endocrino_001_065",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "En relación con la hipoglucemia en el paciente diabético es cierto que:",
     "opciones": {
       "a": "Es más frecuente en diabetes tipo II que tipo I",
-      "b": "Los síntomas sólo aparecen si la glucemia es < 50 mg/dL",
+      "b": "Los síntomas sólo aparecen si la glucemia es <50 mg/dL",
       "c": "Es más frecuente con antidiabéticos orales que con insulina",
       "d": "La glibenclamida es la sulfonilurea que más frecuentemente induce hipoglucemia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Dentro de las sulfonilureas, la **glibenclamida** es conocida por inducir hipoglucemias graves y prolongadas con mayor frecuencia que otras del mismo grupo[cite: 1052, 1061, 1063].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-066",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus"],
+    "id": "endocrino_001_066",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "¿Qué tratamiento inicial aconsejaría a un paciente joven con diabetes tipo I de corta evolución una vez establecido el diagnóstico?",
     "opciones": {
       "a": "Dieta e hipoglucemiantes orales, también educación diabetológica",
@@ -1181,16 +1246,17 @@
       "d": "Administrar de inmediato insulina y citar a la semana para instaurar dieta"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El pilar del tratamiento en la **DM tipo I** es la **insulinoterapia intensificada** (múltiples dosis) junto con dieta y educación diabetológica desde el diagnóstico[cite: 1066, 1071, 1078].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-067",
-    "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Suprarrenales", "Tubulopatías"],
+    "id": "endocrino_001_067",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
     "enunciado": "¿Cuál de los siguientes datos no orienta al diagnóstico de hipoaldosterismo primario?",
     "opciones": {
       "a": "Acidosis metabólica normoclorémica",
@@ -1199,16 +1265,17 @@
       "d": "Hiperpotasemia"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El hipoaldosteronismo suele cursar con **acidosis metabólica hiperclorémica** (Tipo 4), por lo que una acidosis normoclorémica no es un dato orientativo de esta patología[cite: 1082, 1084, 1092].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-068",
-    "materia": ["endocrinologia", "nutricion", "urologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus", "Insuficiencia renal crónica"],
+    "id": "endocrino_001_068",
+    "materia": ["nutricion", "urologia"],
+    "submateria": ["Diabetes mellitus", "Riñón y enfermedades sistémicas"],
     "enunciado": "¿Cuál de los siguientes enunciados sobre la microalbuminuria en la atención clínica de los pacientes diabéticos, es correcto?",
     "opciones": {
       "a": "La microalbuminuria se considera anormal cuando la excreción urinaria de albúmina supera los 30 µg/dia en orina de 24 hs, o los 30 µg/mg de creatinina en una muestra, en dos mediciones consecutivas",
@@ -1217,14 +1284,15 @@
       "d": "No se halla microalbuminuria, si la orina de rutina da negativa para proteínas."
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **microalbuminuria** (o albuminuria moderadamente incrementada) se define por una excreción de albúmina de **30-300 mg/día** o un cociente albúmina/creatinina de **30-300 mg/g** (o µg/mg) en muestras repetidas[cite: 1102, 1108].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-069",
+    "id": "endocrino_001_069",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
     "enunciado": "Un paciente consulta por guardia en situación de coma diabético hiperosmolar no cetósico. ¿Cuál de las siguientes medidas no aplicaria en el tratamiento de esta patología?",
@@ -1235,16 +1303,17 @@
       "d": "Si es anciano, aportar fluidos bajo control de la presión venosa central"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el tratamiento inicial del estado hiperosmolar, se prefiere la **solución salina isotónica (0.9%)**. La solución hipotónica solo se considera si el sodio corregido es normal o alto después de la rehidratación inicial, pero **no como medida general inicial**[cite: 1113, 1117, 1123].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-070",
-    "materia": ["endocrinologia", "oftalmologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Retina", "Diabetes mellitus"],
+    "id": "endocrino_001_070",
+    "materia": ["nutricion", "oftalmologia"],
+    "submateria": ["Diabetes mellitus", "Retina"],
     "enunciado": "En la primera consulta médica de un paciente diabético, recientemente diagnosticado, deberá hacer usted un fondo de ojo entre otras indicaciones, pero la retinopatía diabética se inicia cuando",
     "opciones": {
       "a": "Se producen las primeras parálisis oculares",
@@ -1253,16 +1322,17 @@
       "d": "Se presenta el primer glaucoma neovascular"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **microaneurisma** es la lesión clínica más temprana detectable en el fondo de ojo de un paciente con retinopatía diabética[cite: 1127, 1135, 1139].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-071",
-    "materia": ["endocrinologia", "urologia", "cardiologia"],
-    "submateria": ["Suprarrenales", "Riesgo cardiovascular y riñón", "Hipertensión arterial y factores de riesgo"],
+    "id": "endocrino_001_071",
+    "materia": ["urologia", "cardiologia"],
+    "submateria": ["Riñón y enfermedades sistémicas", "Hipertensión arterial y factores de riesgo"],
     "enunciado": "Un paciente de 65 años con claudicación intermitente consulta porque en una revisión casual, se le han objetivado cifras tensionales elevadas. En sus antecedentes destaca una diabetes tipo II. Su PA es de 180/105 mmHg en el brazo derecho y 150/90 mmHg en el brazo izquierdo, se palpan mal los pulsos pedios y el resto de la exploración es poco importante. El hemograma es normal y los análisis de laboratorio nos muestran: glucemia basal: 188 mg/dL urea: 68 mg/dL y creatinina: 1.5 mg/dL. EI ECG y la radiografía de tórax son normales. Se le indicó inicialmente un tratamiento con enalapril 10 mg/dia. Una semana después el paciente presenta una TA de 120/72 mmHg y la analítica muestra una creatinina de 2.8 mg/dL. La causa más probable de esta situación es",
     "opciones": {
       "a": "Una nefropatía intersticial medicamentosa",
@@ -1271,14 +1341,15 @@
       "d": "La evolución rápida de una nefropatía diabética condicionada por el tratamiento hipotensor"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El deterioro brusco de la función renal tras iniciar un **IECA** (enalapril) en un paciente con vasculopatía periférica (claudicación) sugiere fuertemente una **estenosis de la arteria renal** bilateral o de riñón único (Hipertensión Renovascular)[cite: 1143, 1146, 1152, 1157].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-072",
+    "id": "endocrino_001_072",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "De las siguientes pruebas complementarias, ¿Cuál no es característica del hiperaldoteronismo primario?",
@@ -1289,14 +1360,15 @@
       "d": "Aldosterona elevada, que no se suprime tras las pruebas de sobrecarga de volumen o ingesta rica en sodio"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En el hiperaldosteronismo primario, la **actividad de renina plasmática (ARP)** está típicamente **suprimida** debido al exceso de volumen y la retroalimentación negativa[cite: 1161, 1168, 1172].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-073",
+    "id": "endocrino_001_073",
     "materia": ["endocrinologia"],
     "submateria": ["Suprarrenales"],
     "enunciado": "Señale la opción falsa, en relación con la insuficiencia suprarrenal primaria de instauración aguda",
@@ -1307,16 +1379,17 @@
       "d": "Puede ser debida a una necrosis hemorrágica suprarrenal"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **hiperpigmentación** es un signo de insuficiencia suprarrenal **crónica** (debido al aumento persistente de ACTH/MSH). En una crisis aguda o de instauración reciente, la piel no suele tener tiempo de pigmentarse[cite: 1176, 1183, 1188].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-074",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus"],
+    "id": "endocrino_001_074",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "La prueba de tolerancia a la glucosa no está indicada",
     "opciones": {
       "a": "En personas con glucemia limite, arteriosclerosis precoz y sospecha de nefropatia diabética",
@@ -1325,14 +1398,15 @@
       "d": "Para la detección de la diabetes en estudios epidemiológicos"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Si un paciente ya presenta dos o más mediciones de glucemia basal **≥ 126 mg/dL** (o 140 como figura en la opción), el diagnóstico de diabetes ya está establecido y realizar una PTOG es innecesario[cite: 1192, 1200, 1203].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-075",
+    "id": "endocrino_001_075",
     "materia": ["endocrinologia"],
     "submateria": ["Urgencias endocrinas"],
     "enunciado": "En el tratamiento de la crisis adrenal aguda es falso que",
@@ -1343,16 +1417,17 @@
       "d": "Ante la sospecha clínica no debe retrasar el inicio del tratamiento para realizar pruebas diagnósticas"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La reposición de fluidos en una crisis adrenal debe hacerse con **solución salina isotónica (0.9%)** para corregir la hipovolemia y la hipotensión. El uso de suero hipotónico inicialmente es **falso**[cite: 1207, 1213, 1218].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-076",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Urgencias endocrinas", "Hipoglucemias"],
+    "id": "endocrino_001_076",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
     "enunciado": "Una mujer de 42 años, manifiesta en la consulta, padecer confusión episódica, sudoración abundante y palpitaciones en las últimas 4 semanas. Refiere pesadillas, así como 4 episodios sincopales. En el hospital se detecta hipoglucemia de ayuno con niveles elevados inapropiados de insulina en el plasma. Al mismo tiempo el péptido-C está aumentado. El médico deberá:",
     "opciones": {
       "a": "Consultar con cirugía para operación de páncreas",
@@ -1361,17 +1436,18 @@
       "d": "Medir anticuerpos contra la insulina en el plasma"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante una tríada de **Whipple** positiva (síntomas de hipoglucemia, niveles bajos de glucosa y reversión tras administración de glucosa) con niveles elevados de **insulina** y **péptido-C**, se confirma una hipoglucemia endógena hiperinsulinémica[cite: 1235, 1236, 1237]. El siguiente paso para diferenciar un insulinoma de otras causas es la medición de la **proinsulina plasmática**, la cual suele estar elevada en tumores de células beta[cite: 1248].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-077",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Suprarrenales", "Artritis reumatoide"],
-    "enunciado": "¿Cuál de las siguientes es la complicación tardía más frecuente del tratamiento a largo plazo de la artritis reumatoide con prednisona a dosis bajas (< 10 mg/dia)?",
+    "id": "endocrino_001_077",
+    "materia": ["reumatologia", "endocrinologia"],
+    "submateria": ["Otras preguntas de reumatología", "Otras preguntas de endocrinología"],
+    "enunciado": "¿Cuál de las siguientes es la complicación tardía más frecuente del tratamiento a largo plazo de la artritis reumatoide con prednisona a dosis bajas (<10 mg/dia)?",
     "opciones": {
       "a": "Fracturas por osteoporosis",
       "b": "Osteonecrosis",
@@ -1379,16 +1455,17 @@
       "d": "Crisis Addisoniana"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El uso crónico de glucocorticoides, incluso a dosis bajas, es una causa principal de **osteoporosis secundaria**[cite: 1252]. La complicación tardía más prevalente en estos pacientes es la aparición de **fracturas por fragilidad** debido a la pérdida de masa ósea inducida por el fármaco[cite: 1261].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-078",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Urgencias endocrinas", "Metabolismo calcio – PTH"],
+    "id": "endocrino_001_078",
+    "materia": ["endocrinologia", "urgencias"],
+    "submateria": ["Otras preguntas de endocrinología", "Otras preguntas de urgencias"],
     "enunciado": "Un paciente de 53 años con historia de astenia, malestar general y poliuria, que muestra en un análisis una calcemia de 15 mg/dL, con cortisol, T4 y TSH y PTH normales. El paciente necesita tratamiento urgente mediante",
     "opciones": {
       "a": "Calcitonina y luego bifosfonatos",
@@ -1397,16 +1474,17 @@
       "d": "Bifosfonatos como primera elección"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una calcemia de **15 mg/dL** constituye una urgencia médica[cite: 1265]. El manejo inicial requiere:\n- **Rehidratación** agresiva con solución salina para restaurar el volumen [cite: 1276].\n- **Furosemida** para favorecer la calciuresis tras la expansión [cite: 1276].\n- **Calcitonina** para un descenso rápido de los niveles [cite: 1276].\n- **Bifosfonatos** para un control más prolongado y sostenido del calcio óseo[cite: 1276].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-079",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Suprarrenales", "Metabólica ósea"],
+    "id": "endocrino_001_079",
+    "materia": ["endocrinologia", "neumonologia"],
+    "submateria": ["Otras preguntas de endocrinología", "EPOC"],
     "enunciado": "Un varón de 64 años, ex tabaquista, padece enfermedad pulmonar obstructiva crónica y ha sido tratado frecuentemente con prednisona debido a las exacerbaciones. La densitometría ósea revela una puntuación Z de -3.0. ¿Cuál de los siguientes es el tratamiento más apropiado para reducir el riesgo de fracturas?",
     "opciones": {
       "a": "Calcitonina",
@@ -1415,32 +1493,34 @@
       "d": "Risedronato"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En pacientes con osteoporosis inducida por glucocorticoides (como el uso recurrente de prednisona en EPOC), los **bifosfonatos** son la terapia de elección[cite: 1280, 1281]. El **risedronato** ha demostrado eficacia significativa en la prevención de fracturas vertebrales y no vertebrales en esta población[cite: 1291].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-080",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabolismo lipídico"],
+    "id": "endocrino_001_080",
+    "materia": ["nutricion"],
+    "submateria": ["Metabolismo lipídico"],
     "enunciado": "Un abogado de 46 años tiene valores de colesterol normales, pero un valor de triglicéridos en ayunas muy elevado de 1600 mg/dL Por lo demás es saludable y no tiene factores de riesgo para arteriopatía coronaria. ¿Cuál de las siguientes afirmaciones es correcta?",
     "opciones": {
       "a": "El control de los valores de triglicéridos previene ataques de pancreatitis aguda en pacientes con hipertrigliceridemia extrema",
       "b": "La modificación dietética regularmente es suficiente",
-      "c": "Los valores altos de triglicéridos",
+      "c": "Los valores altos de triglicéridos no requieren tratamiento si el colesterol es normal",
       "d": "La hipertrigliceridemia se suele relacionar con lesiones cutáneas"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Valores de triglicéridos por encima de **1000 mg/dL** aumentan exponencialmente el riesgo de **pancreatitis aguda**[cite: 1294]. El objetivo primordial del tratamiento farmacológico y dietético en la hipertrigliceridemia extrema es la prevención de esta complicación inflamatoria pancreática[cite: 1307].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-081",
+    "id": "endocrino_001_081",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "¿Cuál de los siguientes datos en un paciente con osteoporosis establece el diagnóstico de hiperparatiroidismo primario?",
@@ -1451,16 +1531,17 @@
       "d": "Hipercalciuria"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **hiperparatiroidismo primario** se caracteriza bioquímicamente por la presencia de **hipercalcemia** acompañada de niveles de **parathormona (PTH)** inapropiadamente elevados o en el rango superior de la normalidad[cite: 1311, 1317]. Esta condición favorece la resorción ósea y puede conducir a la osteoporosis.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-082",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea"],
+    "id": "endocrino_001_082",
+    "materia": ["traumatologia"],
+    "submateria": ["Tumores músculo-esqueléticos"],
     "enunciado": "¿Cuál de los siguientes procesos patológicos óseos se asocia con mayor frecuencia a osteosarcoma?",
     "opciones": {
       "a": "Osteoma osteoide",
@@ -1469,16 +1550,17 @@
       "d": "Enfermedad de Paget ósea"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Enfermedad de Paget** ósea es un factor de riesgo para el desarrollo de neoplasias malignas del hueso en adultos mayores[cite: 1324]. La transformación sarcomatosa (**osteosarcoma**) es la complicación neoplásica más frecuente asociada a esta patología de remodelado óseo acelerado[cite: 1331, 1333].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-083",
+    "id": "endocrino_001_083",
     "materia": ["endocrinologia", "ginecologia"],
-    "submateria": ["Desarrollo sexual", "Climaterio y menopausia"],
+    "submateria": ["Otras preguntas de endocrinología", "Climaterio y menopausia"],
     "enunciado": "Una mujer asiática de 51 años acude a su clinica para un examen de salud sistemático. Por lo demás se encuentra sana y no toma medicamentos. Sus antecedentes familiares solo revelan osteoporosis en la madre. Una revisión por aparatos y sistemas muestra sofocos y cambios de carácter durante el último año. La última menstruación de la paciente fue tres meses antes. La exploración no revela ningún dato de importancia. Se indican estudios de detección de cáncer apropiados para la edad y se ordena densitometría ósea, la cual muestra múltiples sítios con puntuaciones T de -2.5 DS (desviaciones estándar) Por debajo de la media. Las siguientes son recomendaciones terapéuticas razonables, excepto:",
     "opciones": {
       "a": "Aporte complementario de calcio",
@@ -1487,14 +1569,15 @@
       "d": "Tamoxifeno"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El manejo inicial de la osteoporosis posmenopáusica incluye cambios en el estilo de vida como **ejercicio de impacto**, suplementación con **calcio** y **vitamina D**[cite: 1341, 1342]. El **tamoxifeno** es un modulador selectivo de los receptores de estrógenos indicado para el cáncer de mama, no es el tratamiento estándar para revertir la osteoporosis[cite: 1352].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-084",
+    "id": "endocrino_001_084",
     "materia": ["endocrinologia", "nutricion"],
     "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "Durante una revisión médica sistemática, se halla que un ejecutivo de 45 años tiene hipercalcemia. El estudio subsecuente pone de manifiesto elevación de parathormona (PTH), disminución de fósforo, elevación de cloruro y ciclos normales de nitrógeno ureico en sangre (BUN) Y creatinina en suero. El calcio urinario está por arriba de los valores normales. ¿Cuál es la etiología más probable?",
@@ -1505,16 +1588,17 @@
       "d": "Síndrome de leche y alcalinos"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La combinación de **hipercalcemia**, **PTH elevada**, hipofosfatemia e hipercalciuria es el perfil bioquímico clásico del **hiperparatiroidismo primario**[cite: 1356, 1357, 1358]. El aumento del cloruro sérico también es un hallazgo frecuente debido al efecto de la PTH en el túbulo renal[cite: 1368].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-085",
-    "materia": ["endocrinologia", "ginecologia"],
-    "submateria": ["Desarrollo sexual", "Alteraciones menstruales"],
+    "id": "endocrino_001_085",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Alteraciones menstruales", "Otras preguntas de endocrinología"],
     "enunciado": "A una mujer de 31 años se le evalúa por amenorrea de seis meses de evolución. Su estatura es de 1.70 m y pesa 50 kg. El examen pélvico no revela datos relevantes. Una prueba de embarazo es negativa. Los niveles séricos de LH y de hormona estimulante de los folículos (FSH) Están elevados. El estradiol se encuentra en cifras bajas. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
       "a": "Enfermedad ovárica poliquística",
@@ -1523,17 +1607,18 @@
       "d": "Panhipopituitarismo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una amenorrea con **gonadotrofinas elevadas** (LH y FSH) y **estradiol bajo** define un hipogonadismo hipergonadotrópico, característico de la **insuficiencia ovárica** primaria[cite: 1372, 1374, 1375, 1387]. En el panhipopituitarismo, las gonadotrofinas estarían bajas[cite: 1385].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-086",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea"],
-    "enunciado": "Recibe en su consultorio a una mujer de 55 años que le consulta por un control para saber si tiene osteoporosis, ya que su madre ha tenido muchos problemas con las fracturas por no haberse cuidado. Las siguientes aseveraciones sobre la osteoporosis y las fracturas óseas son correctas, excepto:",
+    "id": "endocrino_001_086",
+    "materia": ["endocrinologia"],
+    "submateria": ["Otras preguntas de endocrinología"],
+    "enunciado": "Las siguientes aseveraciones sobre la osteoporosis y las fracturas óseas son correctas, excepto:",
     "opciones": {
       "a": "La osteoporosis se define como una densidad ósea que es 1.5 DS (desviaciones estándar) Por debajo de la media para adultos sanos jóvenes de la misma edad y sexo.",
       "b": "La frecuencia de trombosis venosa profunda en pacientes con fracturas de la cadera es mayor de 20%",
@@ -1541,16 +1626,17 @@
       "d": "El riesgo de fractura de la cadera es mayor en personas mayores debido al tipo de caída que sufren, disminuyendo de este modo, el riesgo de fractura del radio distal"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "De acuerdo a los criterios de la OMS, la **osteoporosis** se define como una densidad mineral ósea (DMO) de **2.5 DS o más** por debajo de la media del joven sano (T-score ≤ -2.5)[cite: 1391, 1404]. Un valor de -1.5 DS se clasifica como osteopenia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-087",
-    "materia": ["endocrinologia"],
-    "submateria": ["Otras preguntas de endocrinología"],
+    "id": "endocrino_001_087",
+    "materia": ["endocrinologia", "gastroenterologia"],
+    "submateria": ["Otras preguntas de endocrinología", "Estómago"],
     "enunciado": "Un varón de 22 años es remitido al médico después que se le encuentra con calcio sérico elevado durante un examen de reconocimiento para seguro de vida. El paciente está asintomático y no tiene antecedentes personales patológicos. Los antecedentes familiares son positivos para un padre y dos hermanos con hipercalcemia. Las pruebas de laboratorio repetidas revelan calcio en suero de 11.2 mg/dL y una hormona paratiroidea muy aumentada. Ante la sospecha de una neoplasia endócrina múltiple tipo 1 (MEN 1), ¿Cuál de los siguientes trastornos clínicos tiene más posibilidades de desarrollar este paciente?",
     "opciones": {
       "a": "Síndrome de Zollinger-Ellison",
@@ -1559,16 +1645,17 @@
       "d": "Síndrome CREST"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El síndrome **MEN 1** se asocia clásicamente con las \"3 P\": tumores de **Paratiroides**, **Páncreas** y **Pituitaria**[cite: 1408, 1412]. El **síndrome de Zollinger-Ellison** (gastrinoma) es el tumor neuroendocrino pancreático más común en este contexto genético[cite: 1416, 1423].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-088",
+    "id": "endocrino_001_088",
     "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Desarrollo sexual", "Insuficiencia renal crónica"],
+    "submateria": ["Otras preguntas de endocrinología", "Insuficiencia renal crónica"],
     "enunciado": "Un varón de 33 años con insuficiencia renal crónica en etapa terminal que se encuentra en hemodiálisis se queja de disminución de la libido, incapacidad para mantener erecciones, fatiga progresiva y debilidad leve. Ha estado en régimen de hemodiálisis estable por ocho años y todos sus electrolitos están dentro de cifras normales. La valoración adicional revela disminución del nivel de testosterona en suero. De acuerdo con el cuadro que presenta este paciente todas las siguientes opciones son correctas, excepto",
     "opciones": {
       "a": "A pesar de que existe una elevada concentración de LH esta no alcanza para normalizar la testosterona",
@@ -1577,16 +1664,17 @@
       "d": "La disminución de la testosterona y el aumento en los niveles de estrógenos son los responsables de la ginecomastia y de los efectos negativos sobre la función sexual"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **insuficiencia renal crónica** afecta el eje gonadal de forma integral[cite: 1426, 1429]. Además de la caída de la testosterona, la **espermatogénesis** también se ve significativamente comprometida, resultando frecuentemente en infertilidad[cite: 1441].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-089",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Desarrollo sexual", "Metabólica ósea"],
+    "id": "endocrino_001_089",
+    "materia": ["endocrinologia"],
+    "submateria": ["Otras preguntas de endocrinología"],
     "enunciado": "Un hombre de 63 años ha perdido 5 cm de estatura desde que se graduó en la universidad. El examen físico es normal exceptuando el hallazgo de una leve cifosis. Refiere que no consume alcohol. Los estudios de laboratorio de rutina, incluyendo recuento sanguíneo completo, calcio sérico, hormona estimulante de la tiroides y electroforesis de proteínas plasmáticas, son normales. Una radiografía lateral de tórax muestra múltiples fracturas por compresión en la columna dorsal. ¿Cuál es el siguiente estudio de laboratorio que debe ser realizado?",
     "opciones": {
       "a": "Deoxipiridinolina y piridinolina en orina",
@@ -1595,16 +1683,17 @@
       "d": "Triyodotironina (T3) Total mediante radioinmunoensayo"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En hombres con osteoporosis idiopática o fracturas vertebrales sin causa evidente, el **hipogonadismo** es una de las etiologías secundarias más frecuentes[cite: 1445, 1448]. Se debe solicitar **testosterona plasmática** para evaluar la función testicular[cite: 1458].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-090",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Diabetes mellitus"],
+    "id": "endocrino_001_090",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "Una paciente a los 52 años comienza con una diabetes que no se puede controlar con medidas higiénico - dietéticas. ¿Cuál de las siguientes actitudes sería incorrecta?",
     "opciones": {
       "a": "Se puede utilizar tratamiento con acarbosa si la glucemia basal es normal",
@@ -1613,16 +1702,17 @@
       "d": "Se puede utilizar tratamiento con sulfonilurea si la paciente no es obesa"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Aunque históricamente se han combinado, la indicación de combinar **sulfonilureas y biguanidas** (como metformina) como paso inicial tras el fallo dietético no es la conducta incorrecta en sí misma, sino que el ejercicio plantea una duda sobre la secuencia terapéutica o la idoneidad según el fenotipo[cite: 1462, 1476].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-091",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea"],
+    "id": "endocrino_001_091",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "Un hombre de 62 años, acude a su consultorio por presentar dolor a nivel de los huesos de sus piernas y de la porción inferior de su columna vertebral. Menciona que a lo largo de varios años la talla de su sombrero se ha ido incrementando. A la exploración física se aprecia arqueo y deformidad de los huesos de sus miembros inferiores y un incremento de la T. de la piel que cubre las tibias. El laboratorio informa: calcio sérico: 10 mg/dL; fósforo sérico: 3,2 mg/dL ¿Cuál de los siguientes estudios se deberá realizar a continuación?",
     "opciones": {
       "a": "Determinación del nivel de fosfatasa alcalina",
@@ -1631,16 +1721,17 @@
       "d": "Determinación del nivel de hormona de crecimiento"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El aumento de la talla del sombrero y las deformidades óseas son signos patognomónicos de la **Enfermedad de Paget**[cite: 1480, 1481, 1482]. El marcador bioquímico clave para valorar la actividad de esta enfermedad y realizar el seguimiento es la **fosfatasa alcalina** sérica[cite: 1489, 1494].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-092",
-    "materia": ["endocrinologia", "urologia"],
-    "submateria": ["Desarrollo sexual", "Síndromes clínicos"],
+    "id": "endocrino_001_092",
+    "materia": ["endocrinologia"],
+    "submateria": ["Otras preguntas de endocrinología"],
     "enunciado": "Un varón de 63 años busca atención médica debido a sus antecedentes de falta de líbido y malestar general de seis meses de evolución. Tiene antecedentes de apnea obstructiva del sueño leve y está tratando de adelgazar. Después de una valoración completa, usted encuentra reducción de la testosterona sérica a un valor de 1.5 ng/mL y decide su sustitución. Este tratamiento quizás tenga los siguientes efectos, excepto",
     "opciones": {
       "a": "Recuperación del efecto androgénico sobre la hemoglobina, masa muscular y desarrollo óseo",
@@ -1649,16 +1740,17 @@
       "d": "Restablecimiento de la función sexual normal"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La terapia de reemplazo con **testosterona** exógena mejora la función sexual y la masa muscular[cite: 1500, 1507, 1511]. Sin embargo, la testosterona exógena suprime el eje hipotálamo-hipófisis, lo que resulta en una inhibición de la **espermatogénesis**[cite: 1509, 1513].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-093",
-    "materia": ["endocrinologia", "reumatologia", "imagenes"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea", "Radiografía"],
+    "id": "endocrino_001_093",
+    "materia": ["endocrinologia", "traumatologia"],
+    "submateria": ["Otras preguntas de endocrinología", "Otras preguntas de traumatología"],
     "enunciado": "La denominada osteoporosis circunscripta es, indique la opción correcta:",
     "opciones": {
       "a": "Lesión propia del Paget óseo",
@@ -1667,16 +1759,17 @@
       "d": "Una lesión ósea propia del hiperparatiroidismo"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **osteoporosis circunscrita** es una manifestación radiológica de la fase lítica temprana de la **Enfermedad de Paget** ósea, localizándose frecuentemente en el cráneo[cite: 1517, 1523, 1529].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-094",
-    "materia": ["endocrinologia"],
-    "submateria": ["Tiroides"],
+    "id": "endocrino_001_094",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Tiroides", "Otras preguntas de oncología"],
     "enunciado": "Durante un examen físico para un empleo, usted encuentra que un varón de 18 años tiene un nódulo de 1.5 cm en el vértice del lóbulo tiroideo izquierdo. Una aspiración con aguja fina revela células c malignas que se tiñen positivamente para la calcitonina. La concentración plasmática de TSH es normal. Las siguientes aseveraciones con relación al estado de este paciente son correctas, excepto:",
     "opciones": {
       "a": "Este tipo de carcinoma presenta 3 formas familiares: MEN 2A, MEN 2B y el familiar sin otras características de MEN",
@@ -1685,16 +1778,17 @@
       "d": "Corre el riesgo de desarrollar un feocromocitoma"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **carcinoma medular de tiroides** (derivado de células C) es característico del síndrome **MEN 2**[cite: 1533, 1534, 1540]. A diferencia del MEN 1, el MEN 2 se asocia con feocromocitoma e hiperparatiroidismo, pero **no con tumores pancreáticos**[cite: 1541, 1544, 1546].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-095",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea"],
+    "id": "endocrino_001_095",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "Una mujer de 60 años presenta lumbago. El estudio radiológico revela una falta de mineralización difusa, así como una fractura por compresión de la cuarta vértebra lumbar. La concentración sérica de calcio es de 11.5 mg/dL y el hemograma es normal. ¿Con cuál de los siguientes trastornos es compatible este cuadro?",
     "opciones": {
       "a": "Osteoporosis posmenopausica",
@@ -1703,16 +1797,17 @@
       "d": "Mieloma múltiple"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **hipercalcemia** (11.5 mg/dL) junto con desmineralización ósea y fracturas vertebrales en ausencia de anemia (hemograma normal) orienta hacia un **hiperparatiroidismo primario**[cite: 1550, 1551, 1557]. En la osteoporosis común, el calcio sérico suele ser normal[cite: 1554].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-096",
-    "materia": ["endocrinologia", "ginecologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Climaterio y menopausia"],
+    "id": "endocrino_001_096",
+    "materia": ["ginecologia", "traumatologia"],
+    "submateria": ["Climaterio y menopausia", "Fracturas"],
     "enunciado": "Lo visita una paciente de 55 años, menopausica, a la cual usted está siguiendo, debido a que le gustaría asesorarse sobre los posibles inconvenientes de la terapia con estrógenos. En cuanto a los efectos adversos que acarrea el uso de estrógenos, está demostrado que el tratamiento posmenopausico aumenta el riesgo de que una mujer tenga todo lo siguiente, excepto",
     "opciones": {
       "a": "Tromboembolia venosa",
@@ -1721,16 +1816,17 @@
       "d": "Cáncer de endometrio"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La terapia de reemplazo hormonal aumenta el riesgo de tromboembolismo, litiasis biliar y cáncer de endometrio[cite: 1566, 1568, 1573, 1574]. Por el contrario, los estrógenos tienen un efecto protector sobre el hueso, **disminuyendo** el riesgo de **fractura de cadera**[cite: 1569, 1576].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-097",
-    "materia": ["endocrinologia", "nutricion"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabolismo lipídico"],
+    "id": "endocrino_001_097",
+    "materia": ["nutricion"],
+    "submateria": ["Metabolismo lipídico"],
     "enunciado": "Usted sospecha que una paciente tiene hipertrigliceridemia, ¿Cuál de las siguientes manifestaciones no acompaña a las tasas elevadas de lipoproteínas ricas en triglicéridos de origen exógeno?",
     "opciones": {
       "a": "Crisis de dolor abdominal por pancreatitis",
@@ -1739,16 +1835,17 @@
       "d": "Xantomas eruptivos"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La elevación de triglicéridos de origen **exógeno** se asocia principalmente a quilomicrones[cite: 1580]. Las **VLDL** representan la producción endógena (hepática) de lipoproteínas ricas en triglicéridos, por lo que su elevación aislada no es propia de una causa exógena pura[cite: 1588, 1591].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-098",
-    "materia": ["endocrinologia", "cirugiageneral"],
-    "submateria": ["Tiroides", "Glándulas salivales y masas cervicales"],
+    "id": "endocrino_001_098",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
     "enunciado": "Una mujer de 58 años se presenta en la sala de emergencias con espasmos laríngeos, estridor y distrés respiratorio. Ocho semanas atrás se le efectuó una tiroidectomía casi total por un carcinoma papilar bien encapsulado de 3.5 cm de diámetro. Los ganglios linfáticos extirpados fueron negativos para infiltración tumoral. Fue dada de alta con triyodotironina (T3) Y suplemento de calcio, que discontinuó 3 semanas atrás. Hace 12 horas se le realizó un escaneo de todo el cuerpo con i131. El escaneo mostró una captación residual de 4% en el cuello y se planificó la ablación para un futuro cercano. La causa más probable de su estridor es",
     "opciones": {
       "a": "Parálisis bilateral del nervio laríngeo recurrente",
@@ -1757,16 +1854,17 @@
       "d": "Hipocalcemia"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Tras una tiroidectomía, el hipoparatiroidismo iatrogénico puede causar **hipocalcemia** grave[cite: 1594, 1595]. El abandono de los suplementos de calcio, sumado al estrés metabólico, puede desencadenar tetania y **laringoespasmo** (estridor), lo cual es una emergencia respiratoria[cite: 1596, 1609, 1611].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-099",
-    "materia": ["endocrinologia", "psiquiatria"],
-    "submateria": ["Urgencias endocrinas", "Trastornos del estado de ánimo"],
+    "id": "endocrino_001_099",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
     "enunciado": "Una mujer de 23 años, estudiante de enfermería, es llevada a la sala de urgencias por sus padres después de que la encontraron inconsciente en su hogar. En el examen de punción del dedo para determinar su glucemia con tira reactiva se encuentra una cifra de 29 mg/dL Luego de administrar dextrosa al 50% por vía intravenosa rápidamente recupera la conciencia. Sus padres aseveran que esta es la cuarta vez en un mes que le ha ocurrido esto. No está tomando ningún medicamento. Los antecedentes personales patológicos solo revelan un antecedente de depresión y una madre con diabetes mellitus. La exploración física no revela datos de importancia. Durante un período de observación en el hospital, se advierte que la paciente tiene un nivel de glucemia sintomática de 31 mg/dL Los niveles de insulina plasmática están elevados y los niveles de péptido c se encuentran bajos. ¿Cuál de las siguientes es la causa más factible de la hipoglucemia de esta paciente?",
     "opciones": {
       "a": "Insulinoma",
@@ -1775,16 +1873,17 @@
       "d": "Uso subrepticio de insulina"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La presencia de hipoglucemia hiperinsulinémica con **péptido-C bajo** indica una fuente exógena de insulina[cite: 1615, 1619, 1620]. En el insulinoma o el uso de sulfonilureas, tanto la insulina como el péptido-C estarían elevados[cite: 1626, 1630, 1632].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
   },
   {
-    "id": "endocrino-001-100",
-    "materia": ["endocrinologia", "reumatologia"],
-    "submateria": ["Otras preguntas de endocrinología", "Metabólica ósea"],
+    "id": "endocrino_001_100",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Otras preguntas de endocrinología", "Conceptos de Oncología"],
     "enunciado": "Ante la sospecha de osteoporosis secundaria y en la búsqueda de una posible causa tras la historia y la exploración, ¿Cuál de las siguientes determinaciones carece de interés?",
     "opciones": {
       "a": "Cortisol basal",
@@ -1793,10 +1892,1075 @@
       "d": "Antígeno carcinoembrionario"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Para el estudio de causas secundarias de osteoporosis se deben evaluar ejes hormonales (cortisol para Cushing, TSH para hipertiroidismo, LH/testosterona para hipogonadismo)[cite: 1636, 1641, 1642, 1644]. El **antígeno carcinoembrionario (CEA)** es un marcador tumoral inespecífico que no guarda relación con el metabolismo óseo o la osteoporosis[cite: 1647].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "curso iar"
+  },
+  {
+    "id": "endocrino_001_101",
+    "materia": ["endocrinologia", "cardiologia"],
+    "submateria": ["Suprarrenales", "Hipertensión arterial y factores de riesgo"],
+    "enunciado": "Consulta Andrea de 35 años, sin antecedentes de importancia, consulta por una tensión arterial de 190/100 mmHg, FC 90 lpm, asintomática. El examen físico es normal excepto un BMI de 29. En los estudios complementarios presenta: hematocrito 39%, leucocitos 8.300 mm3, urea 32 mg/dl, creatinina 1,1 mg/dl glucemia 92 mg/dl, natremia 142 mEq/L, kalemia 2,5 mEq/L, TSH 5 mU/L (levemente aumentada), con T3 y T4 normal. Radiografía de tórax, silueta cardíaca horizontalizada. Pensando en hipertensión secundaria. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hiperaldosteronismo primario",
+      "b": "Feocromocitoma.",
+      "c": "Sindrome de Cushing.",
+      "d": "Hiperaldosteronismo secundario"
+    },
+    "correcta": "a",
+    "explicacion": "Estamos ante una paciente con **HTA severa** e **hipopotasemia** (kalemia 2,5 mEq/L)[cite: 1651, 1652, 1663]. En este contexto, se debe pensar en **hiperaldosteronismo primario** [cite: 1663].\n\nLos grupos con alta prevalencia de esta patología incluyen:\n- Hipertensión >150/100 mm Hg [cite: 1665].\n- **Hipertensión e hipopotasemia** espontánea o inducida por diuréticos [cite: 1668].\n- Hipertensión refractaria o con hallazgo de incidentaloma adrenal[cite: 1666, 1670].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_102",
+    "materia": ["pediatria", "endocrinologia"],
+    "submateria": ["Patología infecciosa infantil", "Tiroides"],
+    "enunciado": "Josefina de 7 meses es un bebé oriundo de Bolivia que nació en un puesto de frontera y que aún no ha realizado ningún control de salud. Se alimenta con pecho y algunas papillas, ha recibido la BCG y una dosis de Sabin y Cuádruple. Se encuentra en percentil 25 de peso y talla. Josefina presenta constipación habitual, aun no se sienta, no rola ni tiene pinza radial. La mamá refiere que es un niño muy tranquilo que sólo llora cuando está constipado. Al examen físico se observa cierta protrusión lingual sin otros datos de relevancia. Acorde con su diagnóstico presuntivo ¿Qué estudio complementario se debe solicitar en primera instancia?",
+    "opciones": {
+      "a": "Ecografia cerebral",
+      "b": "Dosaje de hormonas tiroideas",
+      "c": "Cariotipo",
+      "d": "Test del sudor"
+    },
+    "correcta": "b",
+    "explicacion": "En este niño debe descartarse **hipotiroidismo** debido a la falta de controles y la clínica compatible (constipación, retraso madurativo, protrusión lingual) [cite: 1677, 1679, 1690].\n\nEl diagnóstico se realiza mediante:\n- Determinación de **TSH** y **T4** en sangre[cite: 1692].\n- Niveles de TSH < 10 μU/mL son normales; > 50 μU/mL son diagnósticos [cite: 1691].\n- Se recomienda además ecografía y gammagrafía de tiroides[cite: 1693].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_103",
+    "materia": ["pediatria", "endocrinologia"],
+    "submateria": ["Otras preguntas de pediatría", "Suprarrenales"],
+    "enunciado": "Un niño de 2 semanas de vida es ingresado por guardia por vómitos de tres días de evolución. Presenta signos de deshidratación, destacándose al examen físico hiperpigmentación escrotal con tamaño testicular normal para la edad. Los estudios de laboratorio revelan acidosis metabólica, hipocloremia, hiponatremia e hiperpotasemia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hiperplasia suprarrenal congénita",
+      "b": "Oclusión intestinal",
+      "c": "Hiperaldosteronismo primario",
+      "d": "Estenosis hipertrófica del piloro"
+    },
+    "correcta": "a",
+    "explicacion": "El cuadro de **hiperpigmentación escrotal**, deshidratación, **hiponatremia** e **hiperpotasemia** en la segunda semana de vida es típico de la **Hiperplasia Suprarrenal Congénita** (forma perdedora de sal) [cite: 1698, 1699, 1709].\n\n- El **déficit de 21 hidroxilasa** (21-OH) es la forma más frecuente (95%) [cite: 1708].\n- Los síntomas incluyen rechazo al alimento, vómitos y acidosis[cite: 1711, 1712].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_104",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 40 años consulta por examen periódico de salud. A la palpación del cuello el médico detecta un nódulo tiroideo. En el laboratorio se obtiene un valor de TSH bajo. Se realiza gammagrafía que muestra hipercaptación del nódulo. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Efectuar biopsia por aspiración con aguja fina",
+      "b": "Indicar tratamiento (médico o quirúrgico)",
+      "c": "Observar y controlar en 3 meses",
+      "d": "Efectuar biopsia guiada por ecografia"
+    },
+    "correcta": "b",
+    "explicacion": "Ante un nódulo tiroideo con **TSH suprimida**, se debe realizar una gammagrafía[cite: 1728, 1729]. Si se confirma que es un **nódulo caliente** (hipercaptante), la **PAAF no está indicada** debido al bajísimo riesgo de malignidad en nódulos funcionantes[cite: 1730]. La conducta adecuada es iniciar el **tratamiento** médico o quirúrgico[cite: 1731].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_105",
+    "materia": ["endocrinologia", "imagenes"],
+    "submateria": ["Tiroides", "Radiografía"],
+    "enunciado": "¿Cuál de los siguientes métodos complementarios considera adecuado para completar el diagnóstico de un paciente de 50 años que tiene TSH disminuida y T4 libre elevada?",
+    "opciones": {
+      "a": "Tomografia computada de cuello",
+      "b": "Gammagrafia tiroidea (I131)",
+      "c": "Resonancia nuclear de hipofisis",
+      "d": "Punción con aguja fina (PAAF)"
+    },
+    "correcta": "b",
+    "explicacion": "La **gammagrafía tiroidea** permite visualizar y cuantificar la captación de isótopos radioactivos, siendo fundamental para identificar la patología subyacente en el hipertiroidismo [cite: 1735, 1742].\n\n- **Enfermedad de Graves**: captación aumentada y homogénea [cite: 1743].\n- **Adenomas tóxicos**: hipercaptación focal [cite: 1743].\n- **Tiroiditis subaguda**: baja captación por destrucción folicular[cite: 1744].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_106",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
+    "enunciado": "Julieta de 15 años de edad concurre a la guardia por presentar náuseas, vómitos y dolor abdominal. Al examen físico se encuentra letárgica e hipotensa, con frecuencia cardíaca de 130 1/min, respiración de tipo forzada y profunda. El laboratorio mostró una glucemia de 500 mg/dl, Na+ 135 mEq/l, K 4,7 mEq/l, Osmolaridad 310 mosm/L, pH 6,8, HC03 14 mEq/L, GB de 20000, PCR 80 mg/l. ¿Cuál es la conducta terapéutica por seguir?",
+    "opciones": {
+      "a": "Se inicia PHP con 3 litros de SF 0,9%. Insulina corriente EV 0,1 UI/Kg en bolo y luego 0,1 UI/kg/hora.",
+      "b": "Se inicia PHP con 3 litros de SF 0,9%. Insulina corriente EV 0,1 UI/Kg en bolo y luego 0,1 UI/kg/hora. Reemplazo de potasio 20-30 mEq/L.",
+      "c": "Se inicia PHP con Dextrosa al 5% mas SF 0,45%. Insulina corriente EV 0,1 UI/Kg en bolo y luego 0,1 UI/kg/hora. Reemplazo de potasio 20-30 mEq/L Reposición de Bicarbonato 50 mm/l en 200 ml durante 2 horas",
+      "d": "Se inicia PHP con 3 litros de SF 0,9%. Insulina corriente EV 0,1 UI/Kg en bolo y luego 0,1 UI/kg/hora. Reemplazo de potasio 20-30 mEq/L. Reposición de Bicarbonato 50 mmol en 200 ml durante 2 horas"
+    },
+    "correcta": "d",
+    "explicacion": "El diagnóstico es **Cetoacidosis Diabética (CAD) grave** (pH 6,8) [cite: 1769].\n\nEl tratamiento incluye:\n- **Hidratación** con solución fisiológica 0,9% [cite: 1770].\n- **Insulina EV** continua [cite: 1770].\n- **Reposición de potasio** ya que el K+ descenderá al iniciar insulina [cite: 1771].\n- **Bicarbonato**: indicado en este caso porque el **pH < 6,9**[cite: 1772, 1782].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_107",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de cuarenta y tres años consulta por presentar una fibrilación auricular. Mide 158 cm, pesa 112 Kg y tiene una tensión arterial de 140/60 mmHg. La piel es húmeda y caliente. Se observa temblor al extender las manos. Los reflejos osteotendinosos son vivos. No hay adenopatías ni bocio. La T4 libre está alta y la TSH suprimida. La captación del yodo radiactivo es baja. La tiroglobulina es inferior a 1 ng/ml (normal 1-30 ng/ml). ¿Cuál es el diagnóstico más probable?:",
+    "opciones": {
+      "a": "Tiroiditis subaguda",
+      "b": "Ingesta de levotiroxina",
+      "c": "Enfermedad de Graves",
+      "d": "Bocio multinodular tóxico"
+    },
+    "correcta": "b",
+    "explicacion": "En el caso de consumo excesivo de **T4 exógena** (tirotoxicosis facticia), los niveles de T4 estarán elevados y la **TSH suprimida**[cite: 1805, 1809]. La captación en el centellograma estará disminuida porque no hay estímulo de TSH sobre la glándula, y la **tiroglobulina** será muy baja o indetectable al no haber producción endógena[cite: 1793, 1809].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_108",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Cuál es la conducta más adecuada con una paciente de 29 años, asintomática, que durante el control de salud usted palpó un pequeño nódulo de 0,5 cm en lóbulo derecho de la tiroides y las determinaciones de hormonas tiroideas son normales? El nódulo se visualizó en una ecografía tiroidea con un tamaño de 2 cm de diámetro y el resto de la glándula es normal.",
+    "opciones": {
+      "a": "Remoción quirúrgica del nódulo",
+      "b": "Tomografia computada de cuello",
+      "c": "Punción con aguja fina",
+      "d": "Centellograma corporal total con lodo radiactivo"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un nódulo tiroideo con **TSH normal** (no suprimida), se debe realizar una **punción con aguja fina (PAAF)** para evaluar la citología y descartar malignidad[cite: 1811, 1821, 1823].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_109",
+    "materia": ["pediatria", "endocrinologia"],
+    "submateria": ["Trastornos de la infancia y la adolescencia", "Otras preguntas de endocrinología"],
+    "enunciado": "Un paciente de 13 años, en el estadio 3 de Tanner, presenta una elevación a nivel de la tetilla derecha. En el examen físico se constata que corresponde a una ginecomastia de 3 cm sin otros hallazgos relevantes. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Solicitar estudios hormonales",
+      "b": "Solicitar edad ósea",
+      "c": "No realizar exámenes complementarios",
+      "d": "Solicitar ecografia mamaria"
+    },
+    "correcta": "c",
+    "explicacion": "La **ginecomastia** se considera **fisiológica** en tres momentos de la vida: recién nacido, **adolescente** (como en este caso) y anciano[cite: 1837, 1838]. Si no hay otros hallazgos relevantes, no se requieren exámenes complementarios iniciales[cite: 1832].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_110",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Qué conducta adoptaría en una paciente de 48 años de edad que es investigada por un soplo carotideo asintomático? El Doppler carotídeo sólo revela un nódulo de 1,6 cm de diámetro en el lóbulo derecho de la glándula tiroides. Está asintomática. El nódulo tiroideo no es palpable al examen. Los estudios de laboratorio revelan una TSH de 1,2 mU/l.",
+    "opciones": {
+      "a": "Comenzar terapia de levotiroxina y repetir el examen de cuello en 6 meses",
+      "b": "Indicar la exéresis del nódulo y visita de seguimiento antes del año",
+      "c": "Realizar una punción con aguja fina (PAAF) bajo ecografia del nodulo tiroideo",
+      "d": "Realizar una captación de I131"
+    },
+    "correcta": "c",
+    "explicacion": "Ante un hallazgo incidental de un nódulo tiroideo > 1-1,5 cm con **TSH normal**, la conducta indicada es la **PAAF guiada por ecografía**[cite: 1842, 1843, 1854, 1855].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_111",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "En un paciente joven, varón y sin comorbilidades, ¿Qué conducta indicaría frente al diagnóstico de adenoma tóxico de tiroides?",
+    "opciones": {
+      "a": "Punción-aspiración con aguja fina",
+      "b": "lodo radiactivo en dosis baja",
+      "c": "Tiroidectomia",
+      "d": "Observación y conducta expectante"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes **jóvenes** con nódulos grandes (adenoma tóxico) y sintomatología, la **cirugía** (hemitiroidectomía) suele ser el tratamiento más adecuado[cite: 1859, 1862, 1868]. Debe ir precedida de tratamiento con tioderivados y propranolol para normalizar las hormonas antes de operar[cite: 1868].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_112",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 38 años consulta por dolor cervical anterior, palpitaciones y febrícula de tres semanas de evolución. Al examen físico presenta temperatura axilar: 37,8 C°, FC: 120/min. con pulso regular, temblor fino distal y la palpación del cuello revela glándula tiroides aumentada de tamaño y dolorosa al tacto. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Tiroiditis de Hashimoto",
+      "b": "Enfermedad de Graves-Basedow",
+      "c": "Tiroiditis linfocitaria crónica",
+      "d": "Tiroiditis subaguda (de De Quervain)"
+    },
+    "correcta": "d",
+    "explicacion": "La **tiroiditis de De Quervain** es la causa más frecuente de **dolor tiroideo**[cite: 1886]. Se presenta habitualmente tras una infección respiratoria y cursa con tiroides aumentado, doloroso, fiebre y síntomas de tirotoxicosis inicial[cite: 1887, 1888].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_113",
+    "materia": ["otorrinolaringologia", "endocrinologia"],
+    "submateria": ["Laringe", "Tiroides"],
+    "enunciado": "Luego de someterse a una tiroidectomía total, un paciente sufre de disfonía. Conociendo la anatomía de la región, usted sospecha compromiso de:",
+    "opciones": {
+      "a": "Nervio laringeo inferior",
+      "b": "Nervio laringeo superior.",
+      "c": "Nervio tiroideo inferior.",
+      "d": "Nervio frénico"
+    },
+    "correcta": "a",
+    "explicacion": "La **disfonía** tras una cirugía de tiroides sugiere la lesión del **nervio laríngeo recurrente** (también llamado inferior)[cite: 1891, 1893, 1901].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_114",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
+    "enunciado": "Un paciente de 19 años consulta a la guardia por astenia y disnea. Refiere que hace 4 días tiene dolores abdominales difusos y náuseas y que toma mucha agua. Al examen físico se encuentra en regular estado general, lúcido, adelgazado, TA 100-60 mmHg, respiración rápida y profunda a 32 rpm, afebril y mucosas secas. A nivel abdominal presenta dolor difuso con defensa y sin reacción peritoneal. Se realiza laboratorio: Hto 46%, glucemia 450 mg/dl, Na 128 mEq/l, K 4,3 mEq/l, pH 7,10, Bicarbonato 9 mEq/ly cetonuria +++. ¿Cuál es el tratamiento inicial más adecuado?",
+    "opciones": {
+      "a": "Suero hidrosalino, bicarbonato endovenoso e insulina endovenosa",
+      "b": "Suero hidrosalino e insulina subcutánea",
+      "c": "Suero hidrosalino e insulina endovenosa",
+      "d": "Cloruro de potasio, bicarbonato e insulina endovenosa"
+    },
+    "correcta": "c",
+    "enunciado": "El cuadro es típico de **Cetoacidosis Diabética (CAD)**[cite: 1919]. El tratamiento inicial requiere administración de **líquidos EV** (cloruro de sodio 0,9%) e **insulinoterapia endovenosa** continua[cite: 1921, 1922]. El bicarbonato solo se usa si el pH < 7,0 (en este caso es 7,10, por lo que no es estrictamente necesario inicialmente según este protocolo)[cite: 1927].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_115",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Qué estudio solicitaría en primera instancia considerando la mejor relación costo beneficio, a una mujer de 50 años con valores hormonales normales, que consulta por nódulo tiroideo único, que ecográficamente se observa como sólido con circulación intranodal de 3 cm. de diámetro?",
+    "opciones": {
+      "a": "Centellograma con tecnecio 99",
+      "b": "Resonancia nuclear magnética",
+      "c": "Tomografia con contraste endovenoso",
+      "d": "Punción aspiración con aguja fina guiada por ecografia"
+    },
+    "correcta": "d",
+    "explicacion": "La **PAAF guiada por ecografía** es el estudio de elección para nódulos tiroideos no funcionantes (TSH normal) con características de sospecha[cite: 1934, 1940, 1942].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_116",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Guillermina de 33 años portadora de una Enfermedad de Graves Basedow de reciente diagnóstico. Tiene un bocio de 35 gr., palpitaciones, temblores y una orbitopatía tiroidea inflamatoria sin proptosis. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Metimazol + propiltiouracilo",
+      "b": "Radioyodo",
+      "c": "Metimazol + propranolol",
+      "d": "Metimazol + radioyodo"
+    },
+    "correcta": "c",
+    "explicacion": "En la **enfermedad de Graves** en pacientes jóvenes, el tratamiento de elección son los **fármacos antitiroideos** (metimazol)[cite: 1951, 1959]. El **propranolol** es coadyuvante para controlar síntomas adrenérgicos como palpitaciones y temblores[cite: 1960, 1962].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_117",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Qué estudio complementario solicita a una mujer de 50 años de edad que consulta por un nódulo tiroideo que tiene una ecografía tiroidea en la cual se observa nódulo sólido de 3 centímetros de diámetro con circulación intranodal y tiene determinaciones hormonales normales?",
+    "opciones": {
+      "a": "Tomografia con contraste endovenoso.",
+      "b": "Punción aspiración con aguja fina del nódulo.",
+      "c": "Centellografia con tecnecio 99.",
+      "d": "Resonancia nuclear magnética."
+    },
+    "correcta": "b",
+    "explicacion": "La **biopsia por PAAF** es la prueba más precisa para confirmar o excluir malignidad en pacientes con nódulo tiroideo y nivel **normal de TSH**[cite: 1965, 1971]. Se indica en nódulos sólidos > 1-1,5 cm[cite: 1972, 1973].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_118",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una paciente de 32 años consulta a la guardia por presentar cuadro de ansiedad, palpitaciones y mialgias generalizadas de 10 días de evolución. Refiere también dolor en región cervical anteriorque irradia a la mandíbula y equivalentes febriles. Al examen físico presenta TA de 140/88 mmHg, Fc 116/min. A la palpación presenta glándula tiroides aumentada de tamaño, duro elástica y levemente dolorosa. Se realiza perfil tiroideo que informa TSH 0,05 mUI/L (VN: 0,4-4 mUI/L), conT4 Libre 6 ng/dL (VN: 0,7 - 1,24 ng/dL) y T3 normal. Se realiza centellograma tiroideo que no muestra captación del radiotrazador. ¿Cuál es el tratamiento más adecuado en primera instancia?",
+    "opciones": {
+      "a": " lodo radiactivo 8mCi",
+      "b": "Metimazol 60mg/dia",
+      "c": "Propiltiouracilo (PTU) 50mg c/8hs",
+      "d": "Propanolol 20mg c/8hs"
+    },
+    "correcta": "d",
+    "explicacion": "La **tiroiditis de De Quervain** cursa con dolor cervical, fiebre e hipertiroidismo inicial con **TSH suprimida** y **ausencia de captación** en el centellograma[cite: 1990, 1991]. El tratamiento de los síntomas de hipertiroidismo en este caso se realiza con **betabloqueantes** (propranolol)[cite: 1984, 1995].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_119",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
+    "enunciado": "Paciente de 25 años de edad, que 15 días antes presentó una infección respiratoria alta, continuando en la actualidad con tos seca. Es llevada a la guardia con cuadro de desorientación y fiebre. Se interna para optimizar diagnóstico y terapéutica. Se constata que en 24 hs tiene una diuresis de 7 l/d. acompañada de polidipsia. Osmolaridad urinaria de 200 mosmol/l. Restringiendo la vía oral, la paciente continúa poliúrica. ¿Cuál de los siguientes diagnósticos es el más probable?",
+    "opciones": {
+      "a": "Diabetes insipida central",
+      "b": "Diabetes insipida nefrogénica secundaria a necrosis tubular",
+      "c": "Polidipsia primaria",
+      "d": "Diabetes insipida central secundaria a encefalitis viral"
+    },
+    "correcta": "d",
+    "explicacion": "La **diabetes insípida** se caracteriza por grandes volúmenes de orina hipotónica y polidipsia[cite: 2008]. Si la restricción hídrica no mejora la poliuria, se descarta polidipsia primaria[cite: 2011]. El cuadro febril y de desorientación sugiere una causa central como **encefalitis viral**[cite: 2012].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_120",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Otras preguntas de endocrinología", "Metabolismo calcio – PTH"],
+    "enunciado": "Una paciente de 60 años consulta en repetidas ocasiones a la guardia por cólicos renales. Trae a la consulta laboratorio con valores de calcemia de 12 mg/dl y PTH de 90 pg/ml (10-55 pg/ml). ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Hipercalcemia maligna",
+      "b": "Hiperparatiroidismo secundario (hipovitaminosis D)",
+      "c": "Hipotiroidismo",
+      "d": "Hiperparatiroidismo primario"
+    },
+    "correcta": "d",
+    "explicacion": "El **hiperparatiroidismo primario** es la causa más frecuente de hipercalcemia en adultos[cite: 2023]. El diagnóstico se basa en hallar valores elevados de **PTH** (90 pg/ml) junto con **hipercalcemia** (12 mg/dl)[cite: 2014, 2026]. Clínicamente suele presentarse con **nefrolitiasis** (cólicos renales)[cite: 2013, 2024].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_121",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Un paciente de 37 años de edad con antecedente de diabetes mellitus y dislipemia concurre a su consulta por el hallazgo de un nódulo tiroideo. Trae el informe ecográfico que describe la presencia de un nódulo hipoecoico de 18 mm en el lóbulo izquierdo. Los valores de TSH y T4 libre se encuentran dentro valores normales. ¿Cuál es la conducta a tomar?",
+    "opciones": {
+      "a": "Centellograma tiroideo.",
+      "b": "Control clinico e imagenológico en 6 a 12 meses.",
+      "c": "Punción aspirativa con aguja fina.",
+      "d": "Lobectomia tiroidea."
+    },
+    "correcta": "c",
+    "explicacion": "Ante un nódulo tiroideo hipoecoico de 18 mm con **TSH normal**, la conducta más adecuada es realizar una **punción aspirativa con aguja fina (PAAF)**[cite: 2029, 2030, 2038].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_122",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿En cuál de las siguientes enfermedades tiroideas se puede indicar tratamiento farmacológico con drogas antitiroideas?",
+    "opciones": {
+      "a": "Bocio con sintomas de compresión.",
+      "b": "Bocio multinodular tóxico.",
+      "c": "Enfermedad de Graves.",
+      "d": "Adenoma tóxico."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento de **primera elección** con fármacos **antitiroideos** es para la **Enfermedad de Graves**[cite: 2043, 2049]. En el bocio multinodular tóxico y el adenoma tóxico se prefiere el radioyodo[cite: 2050, 2051].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_123",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Cuál de las siguientes es causa de hipertiroidismo secundario?",
+    "opciones": {
+      "a": "Enfermedad de Graves",
+      "b": "Ingesta excesiva de hormona tiroidea",
+      "c": "Adenoma hipofisario secretor de TSH",
+      "d": "Adenoma tóxico"
+    },
+    "correcta": "c",
+    "explicacion": "El **hipertiroidismo secundario** se produce por un aumento excesivo de **TSH** a nivel hipofisario[cite: 2065]. Los **adenomas hipofisarios secretores de TSH** son una causa infrecuente de este cuadro[cite: 2058, 2066].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_124",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una paciente de 38 años consulta por disfagia progresiva de 6 meses de evolución y preocupación estética por tumoración en cara anterior de cuello. Se realiza ecografía tiroidea que informa nódulo de 5cm en lóbulo derecho de glándula tiroides. Presenta función tiroidea normal. Se realiza punción aspiración con aguja fina que informa tejido tiroideo benigno. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Controlar en 6 meses",
+      "b": "Efectuar resección quirúrgica",
+      "c": "Indicar lodo radiactivo",
+      "d": "Indicar tratamiento con levotiroxina por 6 meses y control"
+    },
+    "correcta": "b",
+    "explicacion": "Aunque la PAAF informe tejido benigno [cite: 2072], aquellos nódulos que provocan **síntomas por compresión** (disfagia) o generan preocupación estética deben ser tratados mediante **cirugía** (resección quirúrgica)[cite: 2086].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_125",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Tiroides", "Conceptos de Oncología"],
+    "enunciado": "¿Cuál es el cáncer de tiroides más frecuente?",
+    "opciones": {
+      "a": "Anaplásico",
+      "b": "Papilar",
+      "c": "Medular",
+      "d": "Folicular"
+    },
+    "correcta": "b",
+    "explicacion": "El **carcinoma papilar** es la neoplasia tiroidea más frecuente (70% de los casos) y posee el mejor pronóstico[cite: 2090, 2096].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_126",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 50 años se presenta a la consulta por taquicardia y palpitaciones de al menos 6 meses de duración, astenia, intolerancia al calor y pérdida de peso de 12 kg con apetito conservado. Al examen físico presenta pulso regular con FC: 99 Lpm, Ta: 120/70 mm Hg sin otros hallazgos de relevancia. El laboratorio revela TSH no detectable, T4 de 14,2 ug % (N: 4,5-10,9 ug %), T3 197 ng % (N: 60-181 ng%). Los anticuerpos antiperoxidasa, antitiroglobulina y estimulantes del tiroides fueron negativos. La ecografía tiroidea reveló una glándula ligeramente aumentada de tamaño y difusamente hipoecoica. El centellograma tiroideo demostró marcada disminución de la captación de iodo radiactivo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Ingestión de suplementos dietéticos que contengan hormona tiroidea",
+      "b": "Tiroiditis linfocitica silente",
+      "c": "Bocio tóxico multinodular",
+      "d": "Enfermedad de Graves"
+    },
+    "correcta": "a",
+    "explicacion": "La **ausencia de captación** en la gammagrafía tiroidea puede deberse a tiroiditis o a la ingesta de **T4 exógena**[cite: 2113, 2114]. El cuadro asintomático cervical con hormonas elevadas y captación nula es muy sugerente de ingesta subrepticia de suplementos con hormona tiroidea[cite: 2104].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_127",
+    "materia": ["endocrinologia", "urologia"],
+    "submateria": ["Suprarrenales", "Riñón y enfermedades sistémicas"],
+    "enunciado": "Un hombre de 58 años consulta a la guardia por astenia y pérdida de peso de semanas de duración. Como antecedente de relevancia refiere tabaquismo de 40 paq/año. Es un indigente que vive en situación de calle y lleva a cabo trabajos ocasionales para sobrevivir. Al examen físico presenta TA: 90/60 mm de Hg, hiperpigmentación cutánea e hipocratismo digital. Se solicita laboratorio que informa Na: 126 meq/L, K: 6,7 meq/L, Creatinina: 0,9 mg %. Los niveles de bicarbonato y cloro son bajos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hipotiroidismo",
+      "b": "Sindrome de Secreción Inadecuada de Antidiurética (SIADH)",
+      "c": "Insuficiencia Suprarrenal",
+      "d": "Insuficiencia Renal Crónica"
+    },
+    "correcta": "c",
+    "explicacion": "La **insuficiencia suprarrenal** se manifiesta con astenia, hipotensión, **hiperpigmentación** (forma primaria), hiponatremia e **hipercalemia**[cite: 2124, 2131]. La enfermedad metastásica por **cáncer de pulmón** (antecedente de tabaquismo e hipocratismo digital) es una causa frecuente de afección suprarrenal[cite: 2133].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_128",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 38 años de edad, técnica en radiología, consulta porque se palpó un nódulo paratraqueal derecho. Se realiza una ecografía que muestra un nódulo hipoecoico, de 12 mm en el lóbulo derecho tiroideo, el resto del examen cervical es normal. Los estudios funcionales tiroideos son normales y no tiene antecedentes familiares de cáncer de tiroides. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Control ecográfico en 6 meses.",
+      "b": "Lobectomia tiroidea.",
+      "c": "Tiroidectomia total.",
+      "d": "Punción aspiración con aguja fina."
+    },
+    "correcta": "d",
+    "explicacion": "La **PAAF** es la prueba diagnóstica más importante para evaluar nódulos tiroideos solitarios[cite: 2146, 2147]. Los nódulos sólidos hipoecoicos **≥ 1 cm** tienen indicación formal de realizarla[cite: 2149].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_129",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Susana, una paciente de 55 años, consulta por cansancio y fatiga desde hace años y sequedad de piel. El examen físico es normal. Su nivel de TSH es de 7,0 Mu/l, T4 L 1,2 ng/dl ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Usted hace diagnóstico de hipotiroidismo e indica levotiroxina en dosis inicial de 50 mcg, titulando hasta llegar a 1,6 mcg/kg",
+      "b": "Usted hace diagnóstico de hipotiroidismo e indica levotiroxina en dosis de 1,6 2 mcg/kg",
+      "c": "Se plantea Hipotiroidismo subclinico e indicaria tratamiento con T4 si el paciente tuviese algún sintoma, hiperlipidemia, infertilidad, hiperPRL, etc",
+      "d": "Se plantea hipotiroidismo subclinico e indicaria tratamiento con T4 de inmediato por la situación clínica de la paciente."
+    },
+    "correcta": "c",
+    "explicacion": "El laboratorio presenta **TSH elevada** (7,0 mU/L) con **T4 libre normal**, lo que define un **hipotiroidismo subclínico**[cite: 2152, 2167]. El tratamiento se indica solo ante TSH > 10, embarazo, síntomas claros, infertilidad o hiperlipidemia[cite: 2169, 2175].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_130",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Sofía de 45 años, sin antecedentes médicos relevantes, consulta por la presencia de un nódulo tiroideo detectado en un chequeo de rutina. Niega síntomas de hipotiroidismo o hipertiroidismo. En el examen físico, se palpa un nódulo de aproximadamente 2 cm en el lóbulo derecho de la glándula tiroides, no doloroso y sin adenopatías cervicales. Se realiza una ecografía tiroidea, que informa un nódulo isoecogénico, con bordes bien definidos y vascularización intranodular moderada. Para una mejor evaluación, se indica una punción aspiración con aguja fina (PAAF), cuyo informe citológico según el sistema Bethesda es categoría IV. ¿Cuál es el riesgo de malignidad de ese nódulo tiroideo?",
+    "opciones": {
+      "a": "35-45%",
+      "b": "50-60%",
+      "c": "20-30%",
+      "d": "5-15%"
+    },
+    "correcta": "a",
+    "explicacion": "Según el **Sistema Bethesda** para citología de tiroides (versión 2017), la **Categoría IV** corresponde a Neoplasia folicular o sospechosa de neoplasia folicular [cite: 2189].\n\nEl riesgo de malignidad para esta categoría se estima entre el **25-40%** [cite: 2189].\n\nLa conducta recomendada es:\n- Lobectomía diagnóstica.\n- Pruebas moleculares (si están disponibles) para afinar el riesgo antes de la cirugía[cite: 2189].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_131",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "Una mujer de 45 años, obesa, consulta por amenorrea e hirsutismo. En el examen físico constata hipertensión arterial, estrías rojo vinosas en abdomen y obesidad del tronco. ¿Cuál es el diagnóstico más probable y cómo espera encontrar el dosaje hormonal en sangre?",
+    "opciones": {
+      "a": "Hiperaldosteronismo; aldosterona aumentada, ACTH normal",
+      "b": "Sindrome de Cushing, ACTH y cortisol aumentados",
+      "c": "Sindrome de Cushing; ACTH aumentada y cortisol disminuido",
+      "d": "Sindrome de Cushing, ACTH y cortisol disminuidos"
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro clínico de obesidad troncal, **hipertensión arterial**, **estrías rojo vinosas** (mayores de 1 cm), hirsutismo y amenorrea es altamente sugestivo de **Síndrome de Cushing** [cite: 2193, 2205].\n\nEn cuanto al perfil hormonal:\n- El síndrome se debe a un exceso crónico de **glucocorticoides** (cortisol aumentado) [cite: 2204].\n- Si el origen es central (Enfermedad de Cushing) o ectópico, el cuadro es **ACTH dependiente**, por lo que se encontrarán cifras de ACTH superiores a 20 pg/mL (aumentadas)[cite: 2209, 2210].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_132",
+    "materia": ["endocrinologia", "pediatria"],
+    "submateria": ["Tiroides", "Trastornos de la infancia y la adolescencia"],
+    "enunciado": "Sonia tiene 14 años y hace un mes ha notado un incremento en el tamaño de su cuello, además ha subido 4 Kg y no está menstruando regularmente. Al examen físico Ud. palpa un bocio firme y no doloroso ¿Cuál es el diagnóstico MÁS probable?",
+    "opciones": {
+      "a": "Enfermedad de Graves",
+      "b": "Tiroiditis de Hashimoto",
+      "c": "Defecto hereditario en la sintesis de T4",
+      "d": "Disgenesia de glándula tiroides"
+    },
+    "correcta": "b",
+    "explicacion": "La **Tiroiditis de Hashimoto** es la causa más frecuente de hipotiroidismo en adolescentes [cite: 2227].\n\nSe caracteriza por:\n- **Bocio firme y no doloroso** a la palpación [cite: 2213, 2225].\n- Clínica de hipofunción: aumento de peso e irregularidades menstruales [cite: 2212, 2224].\n- Es mucho más común en el sexo femenino[cite: 2223].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_133",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Decide tratar a una paciente de 65 años con 132 mcg de levotiroxina por hipotiroidismo primario. Señale con cuál de los siguientes parámetros bioquímicos realizará ajuste de dosis de dicho fármaco.",
+    "opciones": {
+      "a": "T4 libre",
+      "b": "TSH",
+      "c": "ATPO y antitiroglubulina",
+      "d": "T4 total"
+    },
+    "correcta": "b",
+    "explicacion": "En el **hipotiroidismo primario**, el parámetro fundamental para el ajuste y seguimiento de la dosis de levotiroxina es la **TSH** [cite: 2239, 2245].\n\nConsideraciones del tratamiento:\n- Se debe medir la TSH entre 4 y 6 semanas después de iniciar o modificar la dosis [cite: 2245].\n- En pacientes mayores de 65 años, el objetivo terapéutico puede ser una TSH de hasta **5 mU/L** [cite: 2247].\n- Una vez alcanzada la dosis estable, el control debe ser anual[cite: 2248].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_134",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
+    "enunciado": "Una paciente de 32 años consulta por presentar desde hace 2 meses amenorrea, galactorrea bilateral y aumento de peso de 2 kg. Refiere estar en tratamiento con fenoterol/budesonida por asma bronquial y con metrotexato por psoriasis. Los valores de laboratorio solicitados revelan: resonancia magnética por imágenes (RMI) de cerebro normal, test de embarazo negativo, prolactina 42 ug/L, TSH: 6 mU/L, T4 Libre 0,7 ng/100ml. ¿Cuál de las siguientes es la conducta adecuada a seguir?",
+    "opciones": {
+      "a": "Iniciar tratamiento con levotiroxina",
+      "b": "Iniciar tratamiento con cabergolina",
+      "c": "Conducta expectante y repetir laboratorio en 6 meses",
+      "d": "Suspender tratamiento con metrotexato y fenoterol y reevaluar a la paciente en 3 meses"
+    },
+    "correcta": "a",
+    "explicacion": "La paciente presenta un **hipotiroidismo primario** (TSH elevada con T4 libre baja/límite inferior) que justifica la clínica de aumento de peso y, secundariamente, la **hiperprolactinemia** (que causa la galactorrea y amenorrea) [cite: 2250, 2252, 2264].\n\nLa conducta adecuada es **iniciar tratamiento con levotiroxina**[cite: 2254]. El tratamiento del hipotiroidismo suele normalizar los niveles de prolactina y resolver los síntomas reproductivos asociados[cite: 2371].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_135",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
+    "enunciado": "Martín de tres años de vida, está internado con diagnóstico de Meningitis bacteriana y se recibe un medio interno con un Na+ de 123 mEq/l y un K+ de 4 mEq/l. Usted sospecha una secreción inadecuada de Hormona Antidiurética. ¿Cuál de los siguientes hallazgos corrobora su diagnóstico?",
+    "opciones": {
+      "a": "Osmolaridad plasmática baja",
+      "b": "Sodio urinario menor a 10 mmol/l",
+      "c": "Acido úrico elevado",
+      "d": "Urea normal"
+    },
+    "correcta": "a",
+    "explicacion": "El diagnóstico de **SIADH** requiere el cumplimiento de criterios bioquímicos específicos ante una hiponatremia [cite: 2279, 2287]:\n- **Hipoosmolaridad plasmática** (< 275 mOsm/kg) [cite: 2280, 2288].\n- Orina inapropiadamente concentrada (> 100 mOsm/kg) [cite: 2288].\n- Sodio urinario elevado (> 40 mmol/l) [cite: 2288].\n- Ausencia de edemas o depleción de volumen[cite: 2288, 2289].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_136",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Un varón, de 70 años, con antecedentes de fibrilación auricular en tratamiento con amiodarona consulta por astenia y decaimiento, con aumento ponderal de 5 kg e intolerancia al frio. Al examen físico presenta discreta bradipsiquia, pulso de 60 latidos por minuto, presión arterial 130/80 mmhg. En función de su presunción diagnostica, ¿Qué signo semiológico podría aportarle información para confirmarla?",
+    "opciones": {
+      "a": "Rales crepitantes secos bilaterales",
+      "b": "Soplo sistólico",
+      "c": "Pulso irregular",
+      "d": "Rodete miotónico"
+    },
+    "correcta": "d",
+    "explicacion": "Los síntomas de astenia, aumento de peso, intolerancia al frío y bradipsiquia en un paciente tratado con amiodarona sugieren **hipotiroidismo** inducido por fármacos [cite: 2291, 2292].\n\nEl **rodete miotónico** es un signo semiológico característico del hipotiroidismo[cite: 2297, 2303]. Consiste en una contracción muscular transversal localizada y palpable (comúnmente en el bíceps braquial) tras la percusión o estiramiento de las fibras, con una duración de hasta 10 segundos[cite: 2301, 2302].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_137",
+    "materia": ["endocrinologia", "nutricion"],
+    "submateria": ["Urgencias endocrinas", "Diabetes mellitus"],
+    "enunciado": "¿Cuál es el diagnóstico más probable en una paciente de 55 años, diabética tipo 2, etilista social, que consulta por dolor abdominal, náuseas, poliuria y un cuadro confusional de 5 horas de evolución, y que en los exámenes de laboratorio presenta glucemia 520 mg/dL, Na 130 mEq/L K 3,8 mEq/L, creatinina 1,3 mg/dL, uremia 65 mg/dL, TGP 57 mU/mL (VN: 10-40 mU/mL) TGO 48 mU/mL (VN: 10-40 mU/mL, pH arterial 7,1 y cuerpos cetónicos en orina?",
+    "opciones": {
+      "a": "Encefalopatia urémica",
+      "b": "Coma hiperosmolar no cetósico",
+      "c": "Cetoacidosis diabética",
+      "d": "Encefalopatia alcohólica"
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico es **Cetoacidosis Diabética (CAD)** [cite: 2308, 2313].\n\nLos criterios presentes en el caso son:\n- **Hiperglucemia** > 250 mg/dL (520 mg/dL) [cite: 2305, 2314].\n- **Acidosis metabólica** severa (pH 7,1, inferior al corte de 7,30) [cite: 2305, 2315].\n- Presencia de **cuerpos cetónicos** en orina[cite: 2305, 2315].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_138",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Qué estructura anatómica es importante reconocer, para evitar su lesión, durante una tiroidectomía?",
+    "opciones": {
+      "a": "Vasos tiroideos inferiores",
+      "b": "Vasos tiroideos superiores",
+      "c": "Nervio laringeo inferior",
+      "d": "Lóbulo piramidal"
+    },
+    "correcta": "c",
+    "explicacion": "El **nervio laríngeo inferior** (o recurrente) es la estructura crítica que debe identificarse y preservarse durante una tiroidectomía[cite: 2317, 2320, 2325]. Su lesión o sección accidental provoca la parálisis de las cuerdas vocales, manifestándose clínicamente como disfonía[cite: 2325].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_139",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "Una mujer de 58 años consulta a la guardia por mareos, astenia, anorexia y boca seca de varios días de evolución. La TA sistólica es de 120 mm de Hg en el decúbito y de 84 mm de Hg al pasar a la bipedestación. El laboratorio revela Hematocrito: 37%, Glóbulos Blancos: 6700, Plaquetas:410.000, Na: 132 meq/L, K: 3,5 meq/L, Cloro: 92 meq/L, Creatinina plasmática: 0,9 mg %. Concentraciones de cortisol 12 μg/100 mL en muestras obtenidas 30 a 60 min después de la estimulación con ACTH. ACTH normal, renina normal y aldosterona normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Insuficiencia suprarrenal primaria (enfermedad de Addison)",
+      "b": "Insuficiencia suprarrenal secundaria",
+      "c": "Se descarta diagnóstico de insuficiencia suprarrenal",
+      "d": "Sindrome de Cushing"
+    },
+    "correcta": "c",
+    "explicacion": "Se **descarta el diagnóstico de insuficiencia suprarrenal** debido a los resultados de la prueba de estimulación [cite: 2331, 2334].\n\n- El **test de estímulo con ACTH** (250 µg) se considera normal si el cortisol sérico se eleva por encima de **18 μg/dL** a los 30 o 60 minutos [cite: 2342, 2343].\n- Aunque la paciente presenta síntomas inespecíficos y ortostatismo, el valor de 12 μg/dL en este contexto específico (según la resolución del caso) o la normalidad del resto del eje (ACTH, renina y aldosterona normales) permite descartar la patología suprarrenal[cite: 2331, 2334].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_140",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Susana tiene 45 años consulta por fragilidad en las uñas, caída del cabello e incremento de peso de 4 kg en los últimos dos meses. No tiene antecedentes patológicos personales ni familiares u otros síntomas concomitantes. Ud le solicita un laboratorio, el cual presenta TSH de 7 microgramos/mililitro y T4 libre dentro del valor normal de referencia, colesterol total 150 mg/dl y colesterol LDL 110 mg/dl. ¿Cuál de las siguientes decisiones considera la más adecuada?",
+    "opciones": {
+      "a": "No indicar tratamiento con levotiroxina, y reevaluar TSH en 6 meses.",
+      "b": "Indicar levotiroxina en dosis bajas y reevaluar valor de TSH en 6 semanas.",
+      "c": "No indicar tratamiento con levotiroxina, y reevaluar TSH cada 12 meses.",
+      "d": "Indicar nuevo laboratorio con anticuerpos antiperoxidasa para definir terapéutica."
+    },
+    "correcta": "a",
+    "explicacion": "La paciente presenta un **hipotiroidismo subclínico** (TSH elevada con T4 libre normal) [cite: 2352, 2365].\n\nEn pacientes con TSH entre 4,5 y 10 mU/L:\n- No se recomienda el tratamiento sistemático si no hay beneficios claros [cite: 2369].\n- Se sugiere repetir la determinación de TSH en **6 o 12 meses** [cite: 2354, 2370].\n- El tratamiento se consideraría si existieran síntomas marcados, infertilidad, hiperlipidemia o anticuerpos TPO positivos[cite: 2371].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_141",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 42 años asintomática y sin antecedentes personales de relevancia concurre a control periódico. El perfil tiroideo presenta los siguientes resultados: TSH: 6 mUI/L (0,4-4); T4 libre: 1,1 ng/dl (0,8-2,7) ¿Cuál es el diagnóstico y cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Hipertiroidismo, iniciar tratamiento con metimazol",
+      "b": "Hipotiroidismo subclinico, conducta expectante",
+      "c": "Hipotiroidismo subclinico, iniciar tratamiento con levotiroxina",
+      "d": "Eutiroidismo, conducta expectante"
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico es **hipotiroidismo subclínico** debido a la TSH elevada (6 mUI/L) con T4 libre normal (1,1 ng/dl) [cite: 2375, 2376, 2378].\n\nAl ser una paciente asintomática y con TSH < 10 mU/L, la conducta adecuada es **expectante**, repitiendo el control de TSH en 6 a 12 meses[cite: 2385, 2386].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_142",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "¿Cuál de la conducta más adecuada en una paciente de 34 años con artritis reumatoidea que debe ser operada de urgencia por un traumatismo facial grave? La paciente recibe desde hace 2 años 10 mg/dia de prednisona.",
+    "opciones": {
+      "a": "Realizar la cirugia e indicar prednisona cuando pueda tomar medicación oral",
+      "b": "Realizar la cirugia e indicar ACTH endovenosa",
+      "c": "Realizar la cirugía y administrar hidrocortisona endovenosa",
+      "d": "Realizar la cirugia y solicitar determinación de cortisol sérico para decidir la reposición de corticoides"
+    },
+    "correcta": "c",
+    "explicacion": "Los pacientes con tratamiento crónico con glucocorticoides (≥ 5 mg de prednisona por > 3 semanas) pueden presentar supresión del eje adrenal [cite: 2391, 2402].\n\nAnte el estrés de una cirugía, la conducta es administrar dosis de suplementación de estrés con **hidrocortisona endovenosa** para prevenir una crisis adrenal aguda[cite: 2394, 2401].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_143",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "Se interna en la sala de clínica médica un varón que consultó a la guardia por presentar diarrea severa, asociada a múltiples episodios de dolor abdominal recurrente en el contexto de una melanodermia. Una de las sospechas diagnósticas es la de una crisis addisoniana en el contexto de un hipocortisolismo primario. ¿Qué hallazgos en la semiología dermatológica espera encontrar que apoyen dicho diagnóstico?",
+    "opciones": {
+      "a": "Hiperpigmentación periorificial, palmas, plantas, encias y dorso de lengua",
+      "b": "Hiperpigmentación periorificial, pliegues faciales y pericervical. Mucosa indemne.",
+      "c": "Hiperpigmentación acentuada en pliegues palmares, zonas de roce, cicatrices y mucosa oral",
+      "d": "Hiperpigmentación acentuada en pliegues cutáneos, cuero cabelludo y mucosa genital"
+    },
+    "correcta": "c",
+    "explicacion": "En el **hipocortisolismo primario (Enfermedad de Addison)**, el aumento de ACTH/MSH provoca una hiperpigmentación característica [cite: 2409, 2424].\n\nLos sitios típicos incluyen:\n- **Pliegues palmares**, axilares e inguinales [cite: 2426, 2429].\n- **Zonas de roce** (codos, rodillas) [cite: 2426, 2429].\n- **Cicatrices** antiguas [cite: 2426, 2429].\n- **Mucosa oral** (encías, lengua)[cite: 2427, 2429].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_144",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "¿Cuál de las siguientes pruebas realizaría en primer lugar para confirmar la enfermedad de Addison?",
+    "opciones": {
+      "a": "Prueba de estimulación con ACTH 2-3 dias.",
+      "b": "Cortisol plasmático basal y a las 20 horas.",
+      "c": "Cortisol en orina 24 horas.",
+      "d": "Prueba de estimulación corta con ACTH."
+    },
+    "correcta": "d",
+    "explicacion": "La **prueba de estimulación corta con ACTH** (250 µg EV) es el estándar de oro para confirmar la insuficiencia suprarrenal[cite: 2449, 2453, 2457]. Se diagnostica la enfermedad si el cortisol sérico a los 30 o 60 minutos es inferior a **18 μg/dL**[cite: 2458, 2459].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_145",
+    "materia": ["endocrinologia", "cardiologia"],
+    "submateria": ["Suprarrenales", "Hipertensión arterial y factores de riesgo"],
+    "enunciado": "Un varón de 38 años consulta a control de salud. Tiene antecedentes de hipertensión arterial de 4 años de evolución, en tratamiento con un inhibidor de la enzima convertidora de angiotensina, un diurético y un calcioantagonista. En la consulta presenta cifras de TA 150/100 mmHg. Revisando su historia clínica observamos que no tiene buen control de la HTA y en el laboratorio (datos positivos): creatinina 1,2 mg/dl potasio 2,2 mEq/l y alcalosis metabólica compensada. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Suspender IECA y diuréticos e indicar ARA2 y betabloqueante",
+      "b": "Realizar TC abdominal con contraste endovenoso.",
+      "c": "Suspender diuréticos y calcioantagonistas y agregar cabergolina y aldosterona",
+      "d": "Realizar Ecodoppler de vasos renales."
+    },
+    "correcta": "b",
+    "explicacion": "El paciente presenta **HTA resistente** asociada a **hipopotasemia severa** y alcalosis metabólica, perfil altamente sugestivo de **hiperaldosteronismo primario** [cite: 2464, 2477, 2478].\n\nAunque el primer paso ideal es el cociente aldosterona/renina, en este caso la opción marcada como correcta es la realización de una **TC abdominal** para la localización del posible adenoma o hiperplasia[cite: 2467, 2481, 2482].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_146",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Qué estudios solicitaría a un paciente de 44 años sin antecedentes patológicos, que consulta por dolores y debilidad proximal de los cuatro miembros de 2 meses de evolución? También refiere leve aumento de peso y astenia. En el examen físico presenta: FC: 56 latidos/ minuto, TA 120/80 mmHg, leve abotagamiento facial, fuerza muscular conservada con dolor en movilidad de brazos y muslos, reflejos osteotendinosos lentos, sensibilidad superficial y profunda conservada. En los exámenes de laboratorio se destaca: hemograma, eritrosedimentación, función renal, ionograma y orina normales. Colesterol total: 300 mg/dL, GOT 120 mU/mL (VN: 10-40 mU/mL), GPT 30 mU/mL (VN: 10-40 mU/mL, FAL 180mU/mL (VN:30-110 mU/mL), BT 1 mg/dL, CPK 1700 U/l (VN: 32-240 U/l), LDH 640 U/I (VN: 115-221 U/l).",
+    "opciones": {
+      "a": "Ecodoppler cardiaco",
+      "b": "Biopsia muscular",
+      "c": "Electromiograma (EMG) con velocidad de conducción",
+      "d": "TSH y T4 libre"
+    },
+    "correcta": "d",
+    "explicacion": "La combinación de **astenia**, **bradicardia** (FC 56), abotagamiento facial, **reflejos lentos** y aumento de peso sugiere fuertemente **hipotiroidismo** [cite: 2495, 2496, 2508, 2509].\n\nLos hallazgos de laboratorio como **hipercolesterolemia** y elevación marcada de enzimas musculares (**CPK 1700**) son frecuentes en el hipotiroidismo primario[cite: 2498, 2511, 2512]. La conducta es solicitar **TSH y T4 libre** para confirmar el diagnóstico[cite: 2502, 2513].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_147",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Cuáles de las alteraciones morfológicas enunciadas se corresponde con el carcinoma folicular de la tiroides?",
+    "opciones": {
+      "a": "Presencia de focos de diferenciación folicular con células gigantes y fusiformes",
+      "b": "Pueden invadir vasos capsulares, atravesar la cápsula e infiltrar estructuras cervicales",
+      "c": "Presencia de papilas ramificadas y foliculos pequeños con coloide",
+      "d": "Núcleos con \"ojo de Annie la huerfanita\" y cuerpos de psamoma"
+    },
+    "correcta": "b",
+    "explicacion": "El **carcinoma folicular** de tiroides se caracteriza morfológicamente por la capacidad de **invadir la cápsula y los vasos sanguíneos**[cite: 2515, 2517]. Esta invasión es el criterio histológico fundamental para diferenciar el carcinoma del adenoma folicular benigno[cite: 2525].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_148",
+    "materia": ["endocrinologia", "oncologia"],
+    "submateria": ["Tiroides", "Conceptos de Oncología"],
+    "enunciado": "Mujer de 38 años que consulta por tumoración en región anterior de cuello y disfonía. Refiere cambios en la voz de hace aproximadamente 30 días, ocasión en que notó una tumoración que \"iba y venía\" en región anterior del cuello. En los últimos 4 días nota mayor disfonía, y el \"bulto que no le duele, pero no se le va\". Ha perdido unos 3 kg de peso en 6 meses. ¿Cuál es su principal presunción diagnóstica?",
+    "opciones": {
+      "a": "Hipertiroidismo",
+      "b": "Neuropatia endocrina múltiple",
+      "c": "Carcinoma de tiroides",
+      "d": "Bocio nodular tóxico"
+    },
+    "correcta": "c",
+    "explicacion": "La presencia de una tumoración cervical anterior asociada a **disfonía** y **pérdida de peso** involuntaria obliga a sospechar malignidad como primera posibilidad diagnóstica: **carcinoma de tiroides**[cite: 2528, 2531, 2535, 2541].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_149",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "Una mujer de 45 años lo consulta en forma ambulatoria porque refiere astenia y que el pelo se cae con facilidad. El examen físico es normal. En el laboratorio presenta: TSH 11 mlU/L, T4L 0,07 ng/dL.",
+    "opciones": {
+      "a": "Indicar levotiroxina (200 Ug) con liotironina (25 Ug)",
+      "b": "Medición de T4 libre, anticuerpo anti tiroglobulina y realizar ecografia tiroidea",
+      "c": "Indicar levotiroxina a razón de 1.6 Ug/kg",
+      "d": "Medición de T4 libre y anticuerpo anti TPO"
+    },
+    "correcta": "c",
+    "explicacion": "El laboratorio confirma un **hipotiroidismo primario clínico** (TSH elevada > 10 con T4 libre disminuida) [cite: 2544, 2555].\n\nLa conducta indicada es iniciar el reemplazo hormonal con **levotiroxina** a la dosis estándar de **1,6 μg/kg**[cite: 2548, 2559, 2563].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_150",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Cuál de las siguientes determinaciones solicitaría en el control de un paciente con hipotiroidismo primario en tratamiento?",
+    "opciones": {
+      "a": "T4 Libre",
+      "b": "TSH ultrasensible y T3",
+      "c": "Anticuerpos antiperoxidasa",
+      "d": "TSH ultrasensible"
+    },
+    "correcta": "d",
+    "explicacion": "Para el control del tratamiento en el **hipotiroidismo primario**, la determinación de **TSH ultrasensible** es la prueba de elección[cite: 2564, 2569, 2575]. El objetivo suele ser mantener los niveles en la mitad inferior del intervalo de referencia (0,5 a 2 mUI/L)[cite: 2576]. Una vez estabilizada la dosis, se recomienda un control anual[cite: 2578].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_151",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "Mujer de 70 años consulta por cuadro de poco tiempo de evolución de intensa astenia, dolor abdominal y vómitos a repetición. Muestra una intensa pigmentación melánica cutáneo mucosa y se encuentra con TA 80-60 mmHg. En el laboratorio presenta: Na+ 126 mEq/l K+ 5,7 mEq/l e glucemia 40 mg/dl. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Insulinoma.",
+      "b": "Coma mixedematoso.",
+      "c": "Crisis tirotoxica.",
+      "d": "Insuficiencia suprarrenal primaria crónica."
+    },
+    "correcta": "d",
+    "explicacion": "El diagnóstico es **Insuficiencia Suprarrenal Primaria (ISP) crónica** [cite: 2604, 2613].\n\nLos signos clásicos presentes son:\n- **Hiperpigmentación mucocutánea** (pigmentación melánica) [cite: 2599, 2609].\n- **Hipotensión arterial** severa (80/60 mmHg) [cite: 2599, 2608].\n- Alteraciones hidroelectrolíticas: **hiponatremia** e **hiperpotasemia** [cite: 2600, 2610].\n- Síntomas gastrointestinales y **hipoglucemia** (40 mg/dl)[cite: 2598, 2600, 2612].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_152",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "El tratamiento de elección del nódulo tiroideo solitario hiperfuncional en el paciente anciano es:",
+    "opciones": {
+      "a": "Tiroidectomía",
+      "b": "Tratamiento médico con antitiroideos y betabloqueantes",
+      "c": "Levotiroxina a dosis de 200 mcg/dia",
+      "d": "Ablación con yodo radioactivo"
+    },
+    "correcta": "d",
+    "explicacion": "Para un **nódulo solitario hiperfuncional** (adenoma tóxico), el tratamiento de elección es la **ablación con yodo radiactivo**[cite: 2616, 2620, 2627]. La cirugía se reserva generalmente para pacientes jóvenes o nódulos de gran tamaño[cite: 2627].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_153",
+    "materia": ["endocrinologia"],
+    "submateria": ["Hipotálamo / Hipófisis"],
+    "enunciado": "En una paciente con probable prolactinoma y elevación de la prolactina, ¿Cuál de los siguientes estudios debe solicitar?",
+    "opciones": {
+      "a": "Mamografia",
+      "b": "Tomografia computada con contraste de ambas carótidas",
+      "c": "Resonancia magnética nuclear de silla turca",
+      "d": "Angio TC de circulación vertebral"
+    },
+    "correcta": "c",
+    "explicacion": "Ante la sospecha de un **prolactinoma**, tras confirmar la elevación de prolactina en sangre y descartar causas secundarias, el diagnóstico definitivo se realiza mediante una **Resonancia Magnética (RMN) de silla turca**[cite: 2629, 2632, 2639].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_154",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "¿Cuál de los siguientes exámenes complementarios solicita a un paciente de 30 años de edad que comenzó recientemente con registros de tensión arterial de 170/90 y 160/90 mmHg, asociados a cefalea, palpitaciones y discreta pérdida de peso en los últimos dos meses?",
+    "opciones": {
+      "a": "Catecolaminas en orina 24horas.",
+      "b": "Cortisol en orina 24 horas.",
+      "c": "Actividad de la renina plasmática.",
+      "d": "Tomografia abdominal."
+    },
+    "correcta": "a",
+    "explicacion": "La tríada de **cefalea, palpitaciones e hipertensión** (asociada a pérdida de peso) orienta al diagnóstico de **feocromocitoma** [cite: 2642, 2650, 2651].\n\nEl primer paso es el diagnóstico bioquímico mediante la determinación de **catecolaminas y metanefrinas en orina de 24 horas**[cite: 2643, 2652, 2653]. La tomografía se reserva para la etapa de localización etiológica posterior[cite: 2657].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_155",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "Recibís en el consultorio una mujer de 57 años con diagnóstico reciente de diabetes tipo 2, hipertensión y dislipemia. Manifiesta un aumento de 10 kg de peso en el último año al igual que debilidad y astenia progresiva. A la observación clínica notás signos compatibles con Sme de Cushing. ¿Qué combinación de métodos de estudios sería mas sensible y específica para el diagnóstico de Sme de Cushing endógeno?",
+    "opciones": {
+      "a": "Cortisol basal + Test de supresión con 1 mg de dexametasona + Cortisol urinario o en saliva a medianoche",
+      "b": "Cortisol libre Urinario de 24 hs + Test de supresión con 1 mg. de dexametasona + Cortisol urinario o en saliva a medianoche.",
+      "c": "Cortisol libre Urinario de 24 horas + Test de supresión con 8 mg. de dexametasona + dosaje de ACTH plasmática.",
+      "d": "Cortisol basal + Test de supresión con 8 mg. de dexametasona + dosaje de ACTH plasmática."
+    },
+    "correcta": "b",
+    "explicacion": "Para el diagnóstico de **Síndrome de Cushing endógeno**, la primera etapa (cribado) requiere confirmar el hipercortisolismo patológico [cite: 2662, 2679].\n\nLa combinación más sensible y específica incluye [cite: 2691, 2692]:\n- **Cortisol libre urinario** de 24 horas [cite: 2681, 2690].\n- **Test de supresión con 1 mg** de dexametasona (overnight) [cite: 2682, 2690].\n- **Cortisol nocturno** (en saliva o urinario a medianoche)[cite: 2682, 2690].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "endocrino_001_156",
+    "materia": ["endocrinologia"],
+    "submateria": ["Suprarrenales"],
+    "enunciado": "José de 12 años, es traído a la guardia por un episodio de cefalea aguda que empeora con el ejercicio, asociada a dolor abdominal y palpitaciones. Se encuentra pálido, sudoroso. TA 200/140. Se lo observa adelgazado a pesar de tener buen apetito. Refiere polidipsia y poliuria. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Feocromocitoma",
+      "b": "Diabetes insipida",
+      "c": "Hipertiroidismo",
+      "d": "Hipertensión renovascular"
+    },
+    "correcta": "a",
+    "explicacion": "La presentación clínica de **hipertensión paroxística** (TA 200/140) desencadenada por el **ejercicio**, asociada a **cefalea, sudoración y palpitaciones**, es característica de un **feocromocitoma**[cite: 2694, 2697, 2705, 2706].",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
   }
 ]
