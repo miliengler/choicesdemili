@@ -133,29 +133,21 @@ function dedupeQuestionsById(list) {
 
 /* --- 7. FILTRADO (Búsqueda en Arrays) --- */
 function getQuestionsByMateria(mSlug, selectedSubs) {
-    // 1. Normalizamos lo que el usuario seleccionó en la UI para evitar problemas de tildes/espacios
     const normSelected = (selectedSubs || []).map(s => normalize(s));
-    
-    // Lista oficial de subtemas normalizados para esta materia
     const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
-    // Identificamos cuál es el "Catch-All" (el último de la lista)
     const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
 
     return BANK.questions.filter(q => {
-        // 1. Chequear si es de la materia
         const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
         if (!esDeLaMateria) return false;
 
-        // 2. Si no hay filtro de subtemas, devolver todo
         if (!normSelected.length) return true;
 
-        // 3. Chequear subtema (lo normalizamos por las dudas)
+        // Limpiamos el subtema de la pregunta para garantizar que coincida
         const qSub = normalize(q.submateria);
         
-        // A) Coincidencia directa
         if (normSelected.includes(qSub)) return true;
 
-        // B) Lógica de Huérfanos:
         if (normSelected.includes(catchAllSub)) {
             const esHuerfano = !officialSubs.includes(qSub);
             if (esHuerfano) return true;
@@ -164,7 +156,6 @@ function getQuestionsByMateria(mSlug, selectedSubs) {
         return false;
     });
 }
-
 function getQuestionsByExamen(id) {
     return BANK.questions.filter(q => q.examen === id);
 }
