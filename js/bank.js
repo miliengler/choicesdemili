@@ -94,7 +94,8 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Versión Definitiva Anti-Pérdidas) --- */
+
+/* --- 5. PROCESADOR (Versión Definitiva Anti-Pérdidas y Materias Únicas) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
@@ -110,27 +111,32 @@ function processQuestion(q, type, meta) {
     let cleanSubs = rawSubArray.filter(s => s && typeof s === 'string' && s.trim() !== "");
     if (cleanSubs.length === 0) cleanSubs.push("general");
     
-    // 3. INYECCIÓN DE CATEGORÍA "CATCH-ALL" (Magia Anti-pérdidas)
     let subtemasFinales = [...cleanSubs];
-    const normQSubs = cleanSubs.map(s => normalize(s));
 
-    // Nos aseguramos de acceder a las listas oficiales
+    // 3. INYECCIÓN INTELIGENTE
     const subsubjectsMap = (typeof BANK !== 'undefined' && BANK.subsubjects) ? BANK.subsubjects : (typeof SUBTEMAS !== 'undefined' ? SUBTEMAS : {});
 
-    // Revisamos cada materia a la que pertenece esta pregunta
     q.materia.forEach(mSlug => {
         const officialSubs = subsubjectsMap[mSlug] || [];
         if (officialSubs.length > 0) {
             const normOfficial = officialSubs.map(s => normalize(s));
-            // ¿Tiene algún subtema que coincida con la lista oficial de esta materia?
-            const hasMatch = normQSubs.some(qs => normOfficial.includes(qs));
+            const normActuales = subtemasFinales.map(s => normalize(s));
             
-            if (!hasMatch) {
-                // Si no tiene NINGÚN subtema oficial, la pregunta estaba "huérfana".
-                // Le inyectamos el último subtema oficial (ej: "Otras preguntas..." o "Atención Primaria")
-                const catchAll = officialSubs[officialSubs.length - 1];
-                if (!subtemasFinales.includes(catchAll)) {
-                    subtemasFinales.push(catchAll);
+            // 🌟 MAGIA PARA APS (Y otras materias con un solo subtema) 🌟
+            if (officialSubs.length === 1) {
+                const unicoSubtema = officialSubs[0];
+                if (!normActuales.includes(normalize(unicoSubtema))) {
+                    subtemasFinales.push(unicoSubtema); // Lo inyecta a la fuerza
+                }
+            } 
+            // 🌟 MAGIA PARA EL RESTO (Gastro, Cardio, etc. que tienen varios) 🌟
+            else {
+                const hasMatch = normActuales.some(qs => normOfficial.includes(qs));
+                if (!hasMatch) {
+                    const catchAll = officialSubs[officialSubs.length - 1];
+                    if (!normActuales.includes(normalize(catchAll))) {
+                        subtemasFinales.push(catchAll);
+                    }
                 }
             }
         }
@@ -147,7 +153,6 @@ function processQuestion(q, type, meta) {
         q.examen = null;
     }
 }
-
 
 /* --- 6. HELPERS --- */
 function dedupeQuestionsById(list) {
