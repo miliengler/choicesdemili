@@ -438,13 +438,15 @@ function getMateriaStats(slug) {
 }
 
 function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
+  const normSubSlug = normalize(subSlug);
   return BANK.questions.filter(q => {
-    const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-    if (!esMateria) return false;
+    // Buscamos dentro del array de materias
+    if (!q.materia.includes(mSlug)) return false;
     if (choiceOnlyOfficial && q.oficial !== true) return false;
     
-    // ACÁ ESTÁ LA MAGIA: Forzamos la normalización de ambos lados
-    return normalize(q.submateria) === normalize(subSlug);
+    // Buscamos dentro del array de subtemas
+    const normQSubs = q.submateria.map(s => normalize(s));
+    return normQSubs.includes(normSubSlug);
   }).length;
 }
 
@@ -604,9 +606,10 @@ function renderSubtopicBars() {
         const subSlug = normalize(subName);
         
         const questions = BANK.questions.filter(q => {
-            const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
-            // Forzamos la normalización también acá
-            return esMat && normalize(q.submateria) === subSlug;
+            // Evaluamos la compatibilidad con multitema
+            if (!q.materia.includes(slug)) return false;
+            const normQSubs = q.submateria.map(s => normalize(s));
+            return normQSubs.includes(subSlug);
         });
 
         let ok = 0, bad = 0;
