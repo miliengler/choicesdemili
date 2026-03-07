@@ -442,7 +442,9 @@ function contarPreguntasMateriaSubEstricto(mSlug, subSlug) {
     const esMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
     if (!esMateria) return false;
     if (choiceOnlyOfficial && q.oficial !== true) return false;
-    return q.submateria === subSlug;
+    
+    // ACÁ ESTÁ LA MAGIA: Forzamos la normalización de ambos lados
+    return normalize(q.submateria) === normalize(subSlug);
   }).length;
 }
 
@@ -591,24 +593,20 @@ function updateSubtopicSort(val) {
     currentSubtopicSort = val;
     renderSubtopicBars();
 }
-
 function renderSubtopicBars() {
     const slug = currentModalSlug;
     if (!slug) return;
 
-    // 1. Obtener lista base
     const subtemasOficiales = BANK.subsubjects[slug] || ["General"];
     const progMat = PROG[slug] || {};
 
-    // 2. Mapear datos
     let data = subtemasOficiales.map(subName => {
         const subSlug = normalize(subName);
         
-        // Contar preguntas de este subtema
-        // Nota: Usamos la función existente o lógica in-line
         const questions = BANK.questions.filter(q => {
             const esMat = Array.isArray(q.materia) ? q.materia.includes(slug) : q.materia === slug;
-            return esMat && q.submateria === subSlug;
+            // Forzamos la normalización también acá
+            return esMat && normalize(q.submateria) === subSlug;
         });
 
         let ok = 0, bad = 0;
@@ -622,35 +620,20 @@ function renderSubtopicBars() {
 
         const total = questions.length;
         const respondidas = ok + bad;
-        // Evitamos división por cero
         const pctOk = respondidas > 0 ? Math.round((ok/respondidas)*100) : 0;
         const pctBad = respondidas > 0 ? Math.round((bad/respondidas)*100) : 0;
 
-        return { 
-            name: subName, 
-            total, 
-            ok, 
-            bad, 
-            respondidas, 
-            pctOk,
-            pctBad 
-        };
+        return { name: subName, total, ok, bad, respondidas, pctOk, pctBad };
     });
 
-    // 3. Filtrar subtemas vacíos (opcional, pero queda más limpio)
     data = data.filter(d => d.total > 0);
 
-    // 4. Ordenar
     if (currentSubtopicSort === "error") {
-        // Mayor porcentaje de error arriba. Si empate, más cantidad de errores.
         data.sort((a, b) => b.pctBad - a.pctBad || b.bad - a.bad);
     } else if (currentSubtopicSort === "acierto") {
-        // Mayor porcentaje de acierto arriba.
         data.sort((a, b) => b.pctOk - a.pctOk);
     } 
-    // "original" no hace nada, mantiene el orden del map
 
-    // 5. Renderizar HTML
     const listEl = document.getElementById("subtopic-bars-list");
     if (!listEl) return;
 
@@ -660,10 +643,6 @@ function renderSubtopicBars() {
     }
 
     listEl.innerHTML = data.map(d => {
-        // Ancho de las barras (relativo al total de preguntas del subtema)
-        // O mejor: relativo al 100% de la barra visual
-        
-        // Barra compuesta: [Verde (OK)][Rojo (Bad)][Gris (Pendiente)]
         const wOk = (d.total > 0) ? (d.ok / d.total) * 100 : 0;
         const wBad = (d.total > 0) ? (d.bad / d.total) * 100 : 0;
         
@@ -685,7 +664,6 @@ function renderSubtopicBars() {
         `;
     }).join("");
 }
-
 /* ==========================================================
    🔗 VINCULACIÓN CON NOTAS (Validación Previa)
    ========================================================== */
