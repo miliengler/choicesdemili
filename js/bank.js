@@ -94,22 +94,52 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Lógica Multimateria) --- */
+/* --- 5. PROCESADOR (Versión Inteligente) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. MATERIAS: Procesa todas las materias del array
-    let rawMaterias = Array.isArray(q.materia) ? q.materia : [q.materia || "otras"];
-    q.materia = rawMaterias.map(m => {
-        let matNorm = normalize(m);
-        const found = BANK.subjects.find(s => normalize(s.slug) === matNorm);
-        return found ? found.slug : "otras";
-    });
+    // 1. MATERIA: Match Inteligente
+    let rawMat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
+    let matNorm = normalize(rawMat);
 
-    // 2. SUBMATERIAS: Normaliza y guarda todas las submaterias para permitir búsqueda múltiple
-    let rawSubmaterias = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
-    q.submateria = rawSubmaterias.map(sub => normalize(sub));
+    const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
+
+    if (foundSubject) {
+        q.materia = foundSubject.slug;
+    } else {
+        q.materia = "otras";
+    }
+
+    // 2. Submateria: Búsqueda en todo el array
+    const mainMateria = q.materia; 
+    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    
+    // Normalizamos la lista oficial para comparar más fácil
+    const listaOficialNorm = listaOficial.map(s => normalize(s));
+
+    // Obtenemos un array plano de todas las submaterias que vienen en el JSON
+    let subRawArray = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
+    
+    let matchEncontrado = null;
+
+    // Buscamos si alguna de las submaterias del JSON coincide con la lista oficial
+    for (let sub of subRawArray) {
+        let subNorm = normalize(sub);
+        let index = listaOficialNorm.indexOf(subNorm);
+        
+        if (index !== -1) {
+            // ¡Encontramos coincidencia! Guardamos el nombre tal cual está en la lista oficial
+            matchEncontrado = listaOficial[index];
+            break; // Salimos del loop, ya encontramos el subtema correcto
+        }
+    }
+
+    if (matchEncontrado) {
+        q.submateria = matchEncontrado; // O usa normalize(matchEncontrado) si prefieres
+    } else {
+        q.submateria = listaOficial.length > 0 ? listaOficial[listaOficial.length - 1] : "general";
+    }
 
     // 3. Metadatos
     q.tipo = type;
