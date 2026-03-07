@@ -94,52 +94,28 @@ async function loadAllBanks() {
   if(typeof renderHome === "function") renderHome();
 }
 
-/* --- 5. PROCESADOR (Versión Inteligente) --- */
+/* --- 5. PROCESADOR (Versión Inteligente con soporte Multitema) --- */
 function processQuestion(q, type, meta) {
     if(!q.id) q.id = normalizeId(null);
     else q.id = normalizeId(q.id);
     
-    // 1. MATERIA: Match Inteligente
-    let rawMat = Array.isArray(q.materia) ? q.materia[0] : (q.materia || "otras");
-    let matNorm = normalize(rawMat);
-
-    const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
-
-    if (foundSubject) {
-        q.materia = foundSubject.slug;
-    } else {
-        q.materia = "otras";
-    }
-
-    // 2. Submateria: Búsqueda en todo el array
-    const mainMateria = q.materia; 
-    const listaOficial = BANK.subsubjects[mainMateria] || [];
+    // 1. MATERIA: Conservamos TODAS las materias en un array
+    let rawMatArray = Array.isArray(q.materia) ? q.materia : [q.materia || "otras"];
+    let validMatArray = [];
     
-    // Normalizamos la lista oficial para comparar más fácil
-    const listaOficialNorm = listaOficial.map(s => normalize(s));
-
-    // Obtenemos un array plano de todas las submaterias que vienen en el JSON
-    let subRawArray = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
+    for (let rawMat of rawMatArray) {
+        let matNorm = normalize(rawMat);
+        const foundSubject = BANK.subjects.find(s => normalize(s.slug) === matNorm);
+        if (foundSubject) validMatArray.push(foundSubject.slug);
+    }
     
-    let matchEncontrado = null;
+    if (validMatArray.length === 0) validMatArray.push("otras");
+    q.materia = [...new Set(validMatArray)];
 
-    // Buscamos si alguna de las submaterias del JSON coincide con la lista oficial
-    for (let sub of subRawArray) {
-        let subNorm = normalize(sub);
-        let index = listaOficialNorm.indexOf(subNorm);
-        
-        if (index !== -1) {
-            // ¡Encontramos coincidencia! Guardamos el nombre tal cual está en la lista oficial
-            matchEncontrado = listaOficial[index];
-            break; // Salimos del loop, ya encontramos el subtema correcto
-        }
-    }
-
-    if (matchEncontrado) {
-        q.submateria = matchEncontrado; // O usa normalize(matchEncontrado) si prefieres
-    } else {
-        q.submateria = listaOficial.length > 0 ? listaOficial[listaOficial.length - 1] : "general";
-    }
+    // 2. SUBMATERIA: Conservamos todo el array original
+    let rawSubArray = Array.isArray(q.submateria) ? q.submateria : [q.submateria || ""];
+    q.submateria = rawSubArray.filter(s => s.trim() !== "");
+    if (q.submateria.length === 0) q.submateria.push("general");
 
     // 3. Metadatos
     q.tipo = type;
@@ -150,6 +126,7 @@ function processQuestion(q, type, meta) {
         q.examen = null;
     }
 }
+
 
 /* --- 6. HELPERS --- */
 function dedupeQuestionsById(list) {
@@ -162,30 +139,36 @@ function dedupeQuestionsById(list) {
 }
 
 /* --- 7. FILTRADO (Búsqueda en Arrays) --- */
+
 function getQuestionsByMateria(mSlug, selectedSubs) {
     const normSelected = (selectedSubs || []).map(s => normalize(s));
     const officialSubs = (BANK.subsubjects[mSlug] || []).map(s => normalize(s));
     const catchAllSub = officialSubs.length > 0 ? officialSubs[officialSubs.length - 1] : "general";
 
     return BANK.questions.filter(q => {
-        const esDeLaMateria = Array.isArray(q.materia) ? q.materia.includes(mSlug) : q.materia === mSlug;
-        if (!esDeLaMateria) return false;
+        // 1. Chequear si es de la materia (ahora q.materia es siempre array)
+        if (!q.materia.includes(mSlug)) return false;
 
+        // 2. Si no hay filtro de subtemas, devolver todo
         if (!normSelected.length) return true;
 
-        // Limpiamos el subtema de la pregunta para garantizar que coincida
-        const qSub = normalize(q.submateria);
+        // 3. Chequear subtemas (ahora q.submateria es siempre array)
+        const normQSubs = q.submateria.map(s => normalize(s));
         
-        if (normSelected.includes(qSub)) return true;
+        // A) Coincidencia directa
+        const hasDirectMatch = normQSubs.some(qs => normSelected.includes(qs));
+        if (hasDirectMatch) return true;
 
+        // B) Lógica de Huérfanos:
         if (normSelected.includes(catchAllSub)) {
-            const esHuerfano = !officialSubs.includes(qSub);
-            if (esHuerfano) return true;
+            const isOrphan = !normQSubs.some(qs => officialSubs.includes(qs));
+            if (isOrphan) return true;
         }
 
         return false;
     });
 }
+
 function getQuestionsByExamen(id) {
     return BANK.questions.filter(q => q.examen === id);
 }
