@@ -1,11 +1,11 @@
 [
-  {
-    "id": "neurologia-001-001",
+{
+    "id": "neurologia_001_001",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Un paciente con afasia no puede repetir correctamente las frases ni nombrar con acierto los objetos. Sin embargo, habla sin ningún esfuerzo y de forma melódica. Comete errores frecuentes al elegir las palabras y tiene claras dificultades para la comprensión. El resto de la exploración neurológica del enfermo es normal. ¿Qué zona del cerebro explicaría este tipo de afasia?",
     "opciones": {
@@ -15,19 +15,22 @@
       "d": "Regiones prefrontal y frontal del hemisferio dominante"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta una **Afasia de Wernicke** (sensitiva o fluida).\n\nSus características principales son:\n- Habla fluida y melódica sin esfuerzo\n- Alteración severa de la comprensión\n- Alteración de la repetición\n- Parafasias (errores al elegir palabras)\n\nEsta afasia se localiza característicamente en el **Lóbulo temporal posterior y parietal** del hemisferio dominante.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-002",
+    "id": "neurologia_001_002",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "¿Cuál de las siguientes opciones representa una contraindicación absoluta para la realización de una punción lumbar?",
     "opciones": {
@@ -37,14 +40,15 @@
       "d": "Hidrocefalia normotensiva"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Hipertensión intracraneal** es una contraindicación absoluta para la punción lumbar.\n\nEsto se debe al alto riesgo de provocar un enclavamiento encefálico (herniación) al disminuir bruscamente la presión en el compartimento espinal. Siempre debe realizarse neuroimagen previa si hay sospecha clínica de hipertensión endocraneana o foco motor.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-003",
+    "id": "neurologia_001_003",
     "materia": [
       "neurologia"
     ],
@@ -59,21 +63,22 @@
       "d": "Carbamazepina"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico es sugestivo de **Crisis de Ausencia**.\n\nSe caracteriza por:\n- Episodios breves de pérdida de conciencia (segundos)\n- Inicio y fin súbitos\n- Gran frecuencia diaria\n- Ausencia de confusión post-ictal\n\nEl tratamiento de elección para las ausencias típicas es la **Etosuximida** o el Ácido Valproico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-004",
+    "id": "neurologia_001_004",
     "materia": [
       "neurologia",
       "psiquiatria"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Trastornos neuróticos y de la personalidad"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de psiquiatria"
     ],
     "enunciado": "Un varón de 55 años que se quedó sin trabajo hace aproximadamente 5 meses refiere grandes dificultades para dormir por la noche. Hace poco encontró otro trabajo, pero continúa con los problemas para dormir. Ha notado que se queda dormido con facilidad mientras ve la televisión por la tarde y también que se duerme fuera de casa. Está preocupado porque no duerme por la noche. La exploración física general y el estudio de laboratorio son normales. El enfermo afirma que no toma alcohol, café ni otras sustancias. ¿Cuál sería la medida más acertada?",
     "opciones": {
@@ -83,14 +88,15 @@
       "d": "Administración de modofilino"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Ante un cuadro de **Insomnio** primario o psicofisiológico relacionado inicialmente con estrés, el primer escalón terapéutico siempre son las **Medidas higiénicas** del sueño.\n\nEstas incluyen:\n- Mantener horarios regulares para acostarse y levantarse\n- Evitar siestas prolongadas durante el día\n- Limitar el uso de pantallas antes de dormir\n- Usar la cama exclusivamente para dormir.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-005",
+    "id": "neurologia_001_005",
     "materia": [
       "neurologia"
     ],
@@ -105,14 +111,15 @@
       "d": "Fibrilación"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El fenómeno clínico descrito se conoce como **Miotonía**.\n\nSe define como la dificultad, lentitud o retardo en la relajación muscular tras una contracción voluntaria intensa (miotonía de acción) o tras percusión mecánica del músculo (miotonía de percusión). Es el signo patognomónico de la Distrofia Miotónica de Steinert.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-006",
+    "id": "neurologia_001_006",
     "materia": [
       "neurologia"
     ],
@@ -127,14 +134,15 @@
       "d": "Absceso o tumor en la circunvolución motora izquierda"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta una crisis focal motora que se propaga progresivamente, fenómeno conocido como **Marcha Jacksoniana**.\n\nPosterior a la generalización secundaria presenta debilidad focal post-ictal o **Parálisis de Todd**. Este patrón clínico es altamente sugestivo de una lesión estructural focal irritativa en la **Circunvolución motora** (área precentral) contralateral (en este caso, izquierda), siendo las causas más frecuentes los tumores, malformaciones o abscesos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-007",
+    "id": "neurologia_001_007",
     "materia": [
       "neurologia"
     ],
@@ -149,20 +157,21 @@
       "d": "Migraña"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico corresponde a una **Cefalea en racimos** (o Cluster headache).\n\nSus características distintivas son:\n- Dolor estrictamente unilateral, severo, periorbitario o temporal\n- Presencia de síntomas autonómicos ipsilaterales (lagrimeo, inyección conjuntival, congestión nasal)\n- Duración relativamente breve (15 a 180 minutos)\n- Patrón de presentación en racimos o acúmulos (crisis repetidas diarias durante semanas, a menudo nocturnas).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-008",
+    "id": "neurologia_001_008",
     "materia": [
       "neurologia",
       "oftalmologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "Neurooftalmología"
     ],
     "enunciado": "Se examina a un enfermo con anisocoria. La pupila derecha es pequeña y redonda, en comparación con la izquierda, con luz ambiental; esta diferencia se acentúa al oscurecer la habitación. La pupila derecha responde vivamente a la luz y se contrae cuando se instila pilocarpina, mientras que se dilata cuando se aplica atropina. La cocaína al 4% produce una dilatación mínima. Este enfermo sufre una lesión de:",
@@ -173,19 +182,22 @@
       "d": "Cadena simpática derecha"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un **Síndrome de Horner** derecho.\n\nLos hallazgos fisiopatológicos que lo confirman son:\n- Anisocoria que aumenta en la oscuridad: indica un déficit en la dilatación pupilar (midriasis).\n- Miosis derecha con respuesta a la luz conservada (el parasimpático funciona bien).\n- La prueba de la cocaína al 4% es positiva (no dilata la pupila afecta porque bloquea la recaptación de una noradrenalina que no está siendo liberada por la lesión de la vía simpática).\n\nEsto localiza la lesión en cualquier punto de la **Cadena simpática derecha**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-009",
+    "id": "neurologia_001_009",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "Convulsiones y epilepsia"
+      "Convulsiones y epilepsia",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Un varón de 32 años presenta convulsiones motoras generalizadas repetitivas que persisten por 35 minutos hasta que se administran 2 mg de Lorazepam por vía endovenosa. Si continúan las convulsiones, el siguiente curso de acción sería administrar ¿Cuál de los siguientes medicamentos?",
     "opciones": {
@@ -195,19 +207,22 @@
       "d": "Etosuximida oral"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente se encuentra en un **Status Epiléptico**.\n\nEl algoritmo de tratamiento establece:\n1. Primera línea: Benzodiacepinas intravenosas (Lorazepam o Diazepam).\n2. Segunda línea (si las crisis no ceden): Drogas antiepilépticas de acción prolongada por vía intravenosa, siendo la **Fenitoína endovenosa** (o fosfenitoína, valproato, levetiracetam) la droga de elección clásica para impregnación.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-010",
+    "id": "neurologia_001_010",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "¿Cómo definiría a un paciente que sólo se despierta con estímulos vigorosos y las respuestas motoras son lentas y buscan evitar el estímulo molesto?",
     "opciones": {
@@ -217,21 +232,20 @@
       "d": "Coma superficial"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El término correcto para definir este nivel de alteración de la conciencia es **Estuporoso**.\n\nEl estupor es un estado en el cual el paciente se encuentra profundamente dormido y sólo puede ser despertado de forma transitoria y parcial mediante estímulos nociceptivos o físicos vigorosos y repetidos. Cuando el estímulo cesa, el paciente vuelve a su estado de falta de respuesta.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-011",
+    "id": "neurologia_001_011",
     "materia": [
-      "neurologia",
-      "oftalmologia"
+      "neurologia"
     ],
     "submateria": [
-      "Desmielinizantes",
-      "Neurooftalmología"
+      "Desmielinizantes"
     ],
     "enunciado": "La causa más común de oftalmoplejía internuclear es:",
     "opciones": {
@@ -241,23 +255,24 @@
       "d": "Las vasculitis del tronco cerebral"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Esclerosis Múltiple** es la etiología más frecuente de la oftalmoplejía internuclear, particularmente cuando se presenta de forma bilateral en adultos jóvenes.\n\nEsta alteración se produce por una lesión desmielinizante en el fascículo longitudinal medial, impidiendo la aducción del ojo ipsilateral a la lesión con nistagmo del ojo abductor.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-012",
+    "id": "neurologia_001_012",
     "materia": [
       "neurologia",
-      "otorrinolaringologia"
+      "medicinafamiliar"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Oído"
+      "Otras preguntas de neurologia",
+      "Adulto mayor"
     ],
-    "enunciado": "Una mujer de 85 años refiere mareos y sensación de aturdimiento al caminar. Esta paciente padece una diabetes de larga duración y toma un antidiabético oral. No tiene ningún otro problema médico y vive sola. En la exploración física se observa una agudeza visual de 20/80 en ambos ojos y una neuropatía sensitiva con distribución en guante y calcetín. Durante la anamnesis niega cualquier sintoma de giro objetivo o subjetivo de objetos. Tampoco se aprecia ansiedad ni depresión. Los signos vitales son normales y no varían con el ortostatismo. Con la maniobra de inclinación de la cabeza no aparece nistagmo. El diagnóstico más probable en este caso es:",
+    "enunciado": "Una mujer de 85 años refiere mareos y sensación de aturdimiento al caminar. Esta paciente padece una diabetes de larga duración y toma un antidiabético oral. No tiene ningún otro problema médico y vive sola. En la exploración física se observa una agudeza visual de 20/80 en ambos ojos y una neuropatía sensitiva con distribución en guante y calcetín. Durante la anamnesis niega cualquier sintoma de \"giro objetivo o subjetivo de objetos\". Tampoco se aprecia ansiedad ni depresión. Los signos vitales son normales y no varían con el ortostatismo. Con la maniobra de inclinación de la cabeza no aparece nistagmo. El diagnóstico más probable en este caso es:",
     "opciones": {
       "a": "Enfermedad de Ménière",
       "b": "Neoplasia del sistema nervioso central",
@@ -265,14 +280,15 @@
       "d": "Desequilibrio propio de la edad"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico corresponde a un **Desequilibrio propio de la edad** o presbiastasia.\n\nEl equilibrio normal depende de la integración de información visual, propioceptiva y vestibular. Esta paciente tiene alteraciones en dos de estas vías:\n- Déficit visual significativo (20/80)\n- Déficit propioceptivo severo (neuropatía diabética sensitiva distal)\n\nAl negar sensación rotatoria (no es vértigo verdadero) y no haber alteraciones ortostáticas ni nistagmo posicional, el diagnóstico apunta al deterioro multisensorial senil.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-013",
+    "id": "neurologia_001_013",
     "materia": [
       "neurologia"
     ],
@@ -287,20 +303,21 @@
       "d": "Ausencias atípicas"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El hallazgo electroencefalográfico clásico y patognomónico de las **Ausencias típicas** (petit mal) son las descargas de **complejos punta-onda a 3 Hz**, generalizados, bilaterales y sincrónicos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-014",
+    "id": "neurologia_001_014",
     "materia": [
       "neurologia",
       "oftalmologia"
     ],
     "submateria": [
-      "Neuropatías",
+      "Otras preguntas de neurologia",
       "Neurooftalmología"
     ],
     "enunciado": "Un paciente hipertenso acude a urgencias por diplopía brusca. La exploración muestra ptosis, limitación de la supraelevación e infraversión del ojo izquierdo, con pupilas normales. El diagnóstico más probable es:",
@@ -311,20 +328,21 @@
       "d": "Aneurisma de la arteria cerebelosa anterosuperior"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro corresponde a una **Neuropatía isquémica del III par craneal**, complicación microvascular frecuente en pacientes diabéticos e hipertensos.\n\nEl dato clave es el **respeto de la motilidad pupilar**. Las fibras parasimpáticas responsables de la constricción pupilar discurren por la periferia del nervio, recibiendo irrigación pial, por lo que suelen preservarse en la isquemia central del nervio (vasa nervorum). Por el contrario, una lesión compresiva (como un aneurisma de la comunicante posterior) comprime desde el exterior, afectando característicamente la pupila de forma temprana.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-015",
+    "id": "neurologia_001_015",
     "materia": [
       "neurologia",
       "traumatologia"
     ],
     "submateria": [
-      "SNP",
+      "Otras preguntas de neurologia",
       "Columna vertebral"
     ],
     "enunciado": "Una mujer de 73 años presenta antecedentes de seis meses de deterioro de la marcha y molestia dorsal baja que se exacerba al caminar. La exploración no da datos, excepto que hay hipoactividad de los reflejos de estiramiento de las piernas. Las radiografías del área lumbosacra muestran los cambios degenerativos esperados relacionados con una mujer de su edad. ¿Cuál de los siguientes diagnósticos es más probable?",
@@ -335,21 +353,22 @@
       "d": "Hernia aguda del disco lumbar"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La historia clínica de dolor lumbar crónico que empeora con la deambulación en una paciente añosa es muy sugestiva de **Estenosis lumbar** (o canal estrecho lumbar).\n\nEste cuadro suele producir \"claudicación neurógena\", donde los síntomas empeoran al estar de pie o caminar (por extensión de la columna) y mejoran característicamente al sentarse o inclinarse hacia adelante (aumento del diámetro del canal).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-016",
+    "id": "neurologia_001_016",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
-    "enunciado": "Un varón de 69 años es llevado por su esposa al médico; esta comenta que habla de forma extraña. El paciente pronuncia las palabras de forma muy lenta y con dificultades; la melodía del habla no es normal. Construye las frases sin utilizar apenas preposiciones ni artículos. Sin embargo, cuando elige una palabra, suele ser apropiada y el enfermo comprende lo que se le dice. La lesión que probablemente justifica este problema reside en",
+    "enunciado": "Un varón de 69 años es llevado por su esposa al médico; esta comenta que \"habla de forma extraña\". El paciente pronuncia las palabras de forma muy lenta y con dificultades; la melodía del habla no es normal. Construye las frases sin utilizar apenas preposiciones ni artículos. Sin embargo, cuando elige una palabra, suele ser apropiada y el enfermo comprende lo que se le dice. La lesión que probablemente justifica este problema reside en",
     "opciones": {
       "a": "Lóbulo frontoparietal derecho",
       "b": "Lóbulo frontoparietal izquierdo",
@@ -357,20 +376,21 @@
       "d": "Lóbulo frontal derecho"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente describe clásicamente una **Afasia de Broca** (afasia motora o de expresión).\n\nLos signos característicos son:\n- Lenguaje no fluido, lento y laborioso\n- Disprosodia (melodía alterada)\n- Agramatismo (lenguaje telegráfico, omitiendo preposiciones y nexos)\n- Comprensión relativamente preservada\n\nLa lesión responsable asienta en el área de Broca, localizada en la porción opercular y triangular del giro frontal inferior del **Lóbulo frontal izquierdo** (hemisferio dominante).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-017",
+    "id": "neurologia_001_017",
     "materia": [
       "neurologia",
       "cardiologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "Síncope"
     ],
     "enunciado": "Una mujer de 20 años se presenta a su consultorio, debido a que ha perdido la conciencia mientras donaba sangre. Ella dice que comenzó a sentirse mareada y descompuesta y después se desmayó. La extraccionista comunicó que la paciente tuvo varios movimientos de sacudidas y un breve episodio de rigidez corporal total, pero en ningún momento hubo pérdida del control de esfínteres. La paciente se recuperó luego de haber sido colocada en posición con la cabeza para abajo, pero tuvo una cefalea leve. No tiene antecedentes de episodios de este tipo, pero tiende a sentirse mal si ve o huele sangre. En el examen físico su T. corporal es de 36.6 °C, la FC es de 82 Ipm, la FR es de 22 RPM y la PA es de 92/60 mmHg. El examen físico y neurológico son normales. ¿Cuál de los siguientes es el próximo paso más adecuado?",
@@ -381,19 +401,22 @@
       "d": "Comenzar con valproato de sodio"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico es compatible con un típico **Síncope Vasovagal** desencadenado por estrés emocional o visual (donación de sangre).\n\nLas mioclonías breves y rigidez que experimentó (\"síncope convulsivo\") son frecuentes debido a la hipoxia cerebral transitoria y no deben confundirse con una verdadera crisis epiléptica, dado el contexto, la rápida recuperación y la ausencia de estado post-ictal franco. La conducta correcta es **Tranquilizar a la paciente** ya que se trata de un fenómeno benigno.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-018",
+    "id": "neurologia_001_018",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Se realizan pruebas de estimulación calórica del aparato vestibular a un enfermo en coma. Con la instilación de agua fría en el conducto auditivo externo del lado derecho se produce una desviación de ambos ojos a la derecha durante 2 minutos, seguida de un retroceso lento hacia la línea media. Este hallazgo sugiere una lesión en",
     "opciones": {
@@ -403,14 +426,15 @@
       "d": "Hemisferios cerebrales"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "En un paciente comatoso, las pruebas oculovestibulares permiten evaluar la indemnidad del tronco encefálico.\n\nAl instilar agua fría, lo normal es que los ojos se desvíen lentamente hacia el lado estimulado (fase lenta mediada por el tronco encefálico) y luego retornen rápidamente mediante un nistagmo correctivo (fase rápida mediada por la corteza). Si los ojos se desvían de forma conjugada pero falta la fase rápida, indica que las vías del tronco encefálico están intactas pero hay una alteración profunda y bilateral de los **Hemisferios cerebrales**.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-019",
+    "id": "neurologia_001_019",
     "materia": [
       "neurologia"
     ],
@@ -425,14 +449,15 @@
       "d": "Codeína 60 mg por vía oral"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta un ataque agudo de **Migraña sin aura** (cefalea pulsátil unilateral intensa, náuseas, fotofobia, relación menstrual).\n\nAl no haber respondido satisfactoriamente a los AINEs (ibuprofeno), está indicado el uso de triptanes específicos para el ataque agudo. El **Sumatriptán subcutáneo** es la opción de rescate más rápida y eficaz en el contexto de urgencias.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-020",
+    "id": "neurologia_001_020",
     "materia": [
       "neurologia"
     ],
@@ -441,26 +466,27 @@
     ],
     "enunciado": "Un levantador de pesas de 25 años acude al departamento de urgencias atemorizado por sus cefaleas recientes. Hace poco leyó en un periódico un artículo sobre los aneurismas cerebrales. El enfermo refiere de 5 a 10 episodios de cefalea repentina e intensa, que siempre se presentan durante el coito y duran menos de 30 minutos. El médico deberá:",
     "opciones": {
-      "a": "Informar al paciente que la cefalea poscoital es un síndrome clínico benigno",
+      "a": "Informar al paciente que la cefalea poscoital es un sindrome clínico benigno",
       "b": "Solicitar al enfermo que regrese al departamento de urgencias para realizar un estudio del liquido cefalorraquídeo (LCR) Y una TC con contraste en busca de sangre en el espacio subaracnoideo",
       "c": "Efectuar una TC con contraste y programar una angiografía de los cuatro vasos cerebrales en busca de un aneurisma o una malformación arteriovenosa",
       "d": "Recomendar al enfermo que solicite consulta con el psiquiatra para tratar el inicio de una posible disfunción eréctil"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente padece una **Cefalea orgásmica** o primaria asociada a la actividad sexual.\n\nAunque ante el primer episodio agudo grave en trueno es preceptivo descartar una hemorragia subaracnoidea, la historia repetida de múltiples episodios idénticos, estrechamente vinculados a la actividad sexual y de corta duración en un paciente joven, es diagnóstica de este cuadro. Por tanto, la actitud inicial más adecuada es **Informar al paciente sobre la naturaleza benigna del síndrome**, pudiendo indicarse fármacos profilácticos pre-coito (como indometacina).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-021",
+    "id": "neurologia_001_021",
     "materia": [
       "neurologia",
       "otorrinolaringologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "Oído"
     ],
     "enunciado": "En las últimas 5 semanas una mujer de 35 años ha experimentado episodios de vértigo intenso durante varias horas. Cada episodio se acompaña de zumbidos y una sensación de ocupación en el oído derecho; durante las crisis, la paciente prefiere tumbarse sobre el lado izquierdo. El examen durante la crisis muestra un nistagmo rotatorio fino, que se acentúa con la mirada a la izquierda. No se aprecian parálisis oculares, signos de pares craneales ni signos de vías largas. La audiometría revela una pérdida para los tonos altos en el oido derecho, con reclutamiento, pero sin extinción de los tonos. El diagnóstico más probable en este caso es",
@@ -471,14 +497,15 @@
       "d": "Enfermedad de Ménière"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico define clásicamente a la **Enfermedad de Ménière** (hydrops endolinfático).\n\nSe caracteriza por la tríada clásica:\n- Crisis recurrentes de vértigo rotatorio que duran de minutos a horas\n- Hipoacusia neurosensorial fluctuante\n- Acúfenos o plenitud ótica ipsilateral\n\nLa presencia de \"reclutamiento\" en la audiometría sin \"fatiga o adaptación\" indica que la lesión es coclear (periférica), lo cual es característico del Ménière.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-022",
+    "id": "neurologia_001_022",
     "materia": [
       "neurologia"
     ],
@@ -493,19 +520,20 @@
       "d": "Migraña hemipléjica familiar"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Migraña Oftalmopléjica** actualmente no se clasifica como una subdivisión de la migraña con aura según la International Headache Society (IHS).\n\nActualmente se clasifica como una neuralgia craneal (Neuropatía craneal recurrente dolorosa), ya que se considera una neuropatía desmielinizante inflamatoria transitoria que afecta con mayor frecuencia al III par craneal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-023",
+    "id": "neurologia_001_023",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Un paciente que se queja de dificultad para mantener el equilibrio, camina abriendo mucho las piernas y se balancea hacia delante y hacia atrás al permanecer en bipedestación. Cuando junta los pies, ya sea con los ojos abiertos o cerrados, no logra mantener el equilibrio. No se observa ataxia apendicular ni tampoco nistagmo. Estos hallazgos sugieren una lesión o lesiones en:",
     "opciones": {
@@ -515,20 +543,21 @@
       "d": "Zona de la línea media cerebelosa"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta una ataxia de la marcha y del tronco severa sin compromiso apendicular (sin dismetría en las extremidades).\n\nEsta disociación es el signo distintivo de una lesión en la **Zona de la línea media cerebelosa** (vermis cerebeloso), área que controla fundamentalmente el equilibrio del eje axial y el tono muscular estático.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-024",
+    "id": "neurologia_001_024",
     "materia": [
       "neurologia",
       "traumatologia"
     ],
     "submateria": [
-      "SNP",
+      "Otras preguntas de neurologia",
       "Columna vertebral"
     ],
     "enunciado": "Una mujer de 25 años que conducía un vehículo sufrió un golpe trasero por otro vehículo mientras esperaba en un semáforo. Acude al departamento de urgencias con dolor cervical y molestias en la axila, el brazo, el codo, la cara dorsal del antebrazo y los dedos índice y medio. El dolor se exacerba con la tos. En la exploración neurológica se aprecia debilidad en los dedos indice y medio de la mano derecha, el antebrazo y la muñeca del mismo lado. El reflejo tricipital derecho esta disminuido. El diagnóstico más probable es:",
@@ -539,14 +568,15 @@
       "d": "Plexopatía braquial"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El antecedente de latigazo cervical brusco seguido de dolor radicular (que empeora con maniobras de Valsalva como la tos) y hallazgos deficitarios motores y reflejos segmentarios indican una **Herniación de un disco cervical** aguda.\n\nEl compromiso del reflejo tricipital, la debilidad extensora de la muñeca y la irradiación a los dedos índice y medio, son característicos de una radiculopatía C7 compresiva por hernia discal en ese nivel.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-025",
+    "id": "neurologia_001_025",
     "materia": [
       "neurologia",
       "imagenes"
@@ -563,14 +593,15 @@
       "d": "Esclerosis múltiple"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Tomografía Computarizada (TC)** de cráneo sin contraste es el estudio inicial gold-standard o de primera línea ante la sospecha de cualquier evento cerebrovascular hemorrágico, permitiendo visualizar rápida y claramente las **Hemorragias parenquimatosas y subaracnoideas** agudas.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-026",
+    "id": "neurologia_001_026",
     "materia": [
       "neurologia"
     ],
@@ -585,23 +616,24 @@
       "d": "Biopsia muscular"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un cuadro sugerente de **Esclerosis Lateral Amiotrófica (ELA)** [cite: 433, 434, 435].\n\nLa clave diagnóstica es la coexistencia de signos de motoneurona inferior (atrofia, emaciación, debilidad) y signos de motoneurona superior (reflejos osteotendinosos hiperactivos) sin afectación sensitiva[cite: 435, 436]. Para confirmar la afectación de la placa motora y la denervación generalizada, el estudio de elección es la **Electromiografía**[cite: 449]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-027",
+    "id": "neurologia_001_027",
     "materia": [
       "neurologia",
-      "cardiologia"
+      "urgencias"
     ],
     "submateria": [
       "ECV",
-      "Hipertensión arterial y factores de riesgo"
+      "Otras preguntas de urgencias"
     ],
-    "enunciado": "Una joven de 19 años ha tenido vómitos y desmayos. Los signos iniciales son marcha inestable y respuestas lentas e incoherentes en el interrogatorio. Presenta una crisis tónico-clónica mientras se le controlan los signos vitales. Posteriormente se observa T. 36°C, FC 140 lpm y TA 180/105 mmHg. ¿Cuál es la causa más probable de este cuadro?",
+    "enunciado": "Una joven de 19 años ha tenido vómitos y desmayos. Los signos iniciales son marcha inestable y respuestas lentas e incoherentes en el interrogatorio. Presenta una crisis tónico-clónica mientras se le controlan los signos vitales. Posteriormente se observa T. 36°c C, FC 140 lpm y TA 180/105 mmHg. ¿Cuál es la causa más probable de este cuadro?",
     "opciones": {
       "a": "Astrocitoma cerebeloso",
       "b": "Ataxia cerebelosa aguda",
@@ -609,14 +641,15 @@
       "d": "Epilepsia idiopática"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro descrito corresponde a una **Encefalopatía hipertensiva** [cite: 466].\n\nSe presenta clásicamente con una tríada de hipertensión severa (TA 180/105 mmHg en este caso) [cite: 455], alteración del estado mental (respuestas lentas e incoherentes) y síntomas de edema cerebral generalizado que pueden incluir vómitos, papiledema, ataxia y convulsiones tónico-clónicas[cite: 452, 453, 454].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-028",
+    "id": "neurologia_001_028",
     "materia": [
       "neurologia",
       "cirugiageneral"
@@ -633,14 +666,15 @@
       "d": "Ticlopidina"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un **Ataque Isquémico Transitorio (AIT)** en el territorio de la carótida interna izquierda (debilidad braquial derecha y afasia transitorias) [cite: 470, 471].\n\nAnte una estenosis carotídea sintomática severa (mayor al 70%) [cite: 472], el tratamiento de elección indicado para prevenir un infarto cerebral establecido es la revascularización mediante **Endarterectomía carotídea**[cite: 483].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-029",
+    "id": "neurologia_001_029",
     "materia": [
       "neurologia"
     ],
@@ -655,14 +689,15 @@
       "d": "Trombolíticos endovenosos"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Según la corrección oficial de este examen, la respuesta dada como correcta es **Trombolíticos endovenosos** [cite: 496].\n\nNota aclaratoria: Aunque el cuadro de hemorragia en ganglios basales (putamen/cápsula interna) [cite: 488] es el sitio más frecuente de una hemorragia hipertensiva espontánea (ver misma pregunta más adelante en el examen), dentro de las opciones farmacológicas presentadas en este ítem, el uso de trombolíticos es la causa iatrogénica capaz de desencadenar sangrados intracraneales. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-030",
+    "id": "neurologia_001_030",
     "materia": [
       "neurologia"
     ],
@@ -677,14 +712,15 @@
       "d": "Vasculitis del sistema nervioso central"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El hallazgo en RM de lesiones con \"apariencia jaspeada\" (popcorn-like) y un anillo de hemosiderina (borde de intensidad de señal disminuida en T2) [cite: 503] es patognomónico de los **Cavernomas** (o angiomas cavernosos) [cite: 514].\n\nEstas son malformaciones vasculares de bajo flujo que pueden presentar sangrados recurrentes silentes o agudos en pacientes jóvenes[cite: 500, 502], siendo frecuentemente múltiples. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-031",
+    "id": "neurologia_001_031",
     "materia": [
       "neurologia",
       "neurocirugia"
@@ -701,14 +737,15 @@
       "d": "Hiponatremia"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un deterioro neurológico focal (hemiparesia izquierda y letargia) [cite: 519] al cuarto día de una hemorragia subaracnoidea [cite: 518].\n\nLa causa más frecuente de morbimortalidad retardada y déficits isquémicos focales entre los días 3 y 14 post-HSA es el **Vasoespasmo cerebral**[cite: 532]. El resangrado es más frecuente en las primeras 24 horas y suele cursar con coma súbito, no letargia progresiva. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-032",
+    "id": "neurologia_001_032",
     "materia": [
       "neurologia"
     ],
@@ -723,21 +760,22 @@
       "d": "Una hemorragia en la corteza cerebral izquierda"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un síndrome clásico de \"Hemiparesia motora pura\" (afectación armónica de cara, brazo y pierna contralaterales sin déficits corticales como afasia ni defectos sensitivos) [cite: 536, 537].\n\nEste síndrome lacunar es secundario a la oclusión de arterias perforantes profundas por lipohialinosis debido a su hipertensión crónica[cite: 536]. La lesión responsable es típicamente **Un pequeño infarto en la cápsula interna izquierda** (brazo posterior)[cite: 551].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-033",
+    "id": "neurologia_001_033",
     "materia": [
       "neurologia",
-      "psiquiatria"
+      "toxicologia"
     ],
     "submateria": [
       "Convulsiones y epilepsia",
-      "Trastornos relacionados con sustancias"
+      "Toxicología"
     ],
     "enunciado": "Un alcohólico crónico de 59 años ha perdido el conocimiento y ha sufrido una convulsión generalizada durante unos 5 minutos. Después del episodio se encuentra algo confuso y es llevado al departamento de urgencias, donde se repite la crisis. Durante el episodio se observa incontinencia; el enfermo queda de nuevo confundido. La TC de cráneo y la punción lumbar dan un resultado negativo. En las pruebas analíticas no se aprecian anomalías metabólicas importantes. El tratamiento más adecuado en este caso consiste en:",
     "opciones": {
@@ -747,19 +785,22 @@
       "d": "Fenitoína, 1000 mg en embolo E.V. Lento"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta crisis convulsivas en el contexto probable de un síndrome de abstinencia alcohólica (rum fit) o toxicidad por alcohol, habiendo descartado causas estructurales (TC negativa) [cite: 557] y metabólicas graves[cite: 558].\n\nLas crisis por abstinencia alcohólica son autolimitadas. **No se requiere tratamiento anticomicial específico** (como fenitoína o carbamazepina a largo plazo)[cite: 567]; el pilar terapéutico es el manejo de soporte y las benzodiazepinas (como lorazepam o diazepam) tituladas según el score de abstinencia (CIWA) para prevenir la progresión a delirium tremens, pero no antiepilépticos de mantenimiento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-034",
+    "id": "neurologia_001_034",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "psiquiatria"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de psiquiatria"
     ],
     "enunciado": "Una mujer de 68 años previamente sana presenta progresivamente dificultad para realizar las tareas domésticas y en ocasiones no reconoce a su marido que lo confunde con un extraño. No puede proporcionar muchos detalles, pero cree que su madre le habla. Tiene dificultades para cooperar durante la anamnesis y la exploración física, que no dan datos relevantes. Toma aspirina y valeriana para dormir. ¿Cuál de los siguientes diagnósticos es más probable?",
     "opciones": {
@@ -769,14 +810,15 @@
       "d": "Enfermedad de Alzheimer"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El caso describe un cuadro de deterioro cognitivo progresivo en una mujer mayor, afectando las actividades de la vida diaria [cite: 571].\n\nLa presencia de apraxia/agnosia (no reconoce a su marido) y síntomas neuropsiquiátricos como alucinaciones (cree que su madre le habla) y delirios (síndrome de Capgras ocasional) son frecuentes en estadios moderados a avanzados de demencia[cite: 571, 572]. La causa más común de demencia degenerativa primaria es la **Enfermedad de Alzheimer**[cite: 584].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-035",
+    "id": "neurologia_001_035",
     "materia": [
       "neurologia",
       "neurocirugia"
@@ -790,17 +832,18 @@
       "a": "Extracción quirúrgica del coágulo",
       "b": "Manitol por vía endovenosa",
       "c": "Nitroprusiato por vía endovenosa",
-      "d": "Dexametasona en dosis altas por vía endovenosa"
+      "d": "Dexametasona en dosis altas por via endovenosa"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta clínica típica de un hematoma cerebeloso (cefalea occipital, vómitos, ataxia severa, compromiso de pares craneales como el facial y parálisis de la mirada conjugada)[cite: 588, 589, 590].\n\nLas hemorragias cerebelosas representan una urgencia neuroquirúrgica debido al alto riesgo de compresión aguda del tronco encefálico e hidrocefalia obstructiva. La **Extracción quirúrgica del coágulo** (evacuación) está formalmente indicada[cite: 601], particularmente si miden >3 cm o alteran el nivel de conciencia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-036",
+    "id": "neurologia_001_036",
     "materia": [
       "neurologia",
       "imagenes"
@@ -817,14 +860,15 @@
       "d": "Gammagrama cerebral"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Aclaración importante: Aunque el estándar de oro en la práctica médica actual para diferenciar un ACV isquémico de uno hemorrágico en agudo es la Tomografía Computarizada (TC) de cráneo sin contraste, la opción que la grilla del examen dio por válida es **Punción lumbar**[cite: 616].\n\nHistóricamente, antes de la disponibilidad universal de neuroimágenes, la punción lumbar se utilizaba para buscar sangre en el LCR, pero hoy en día está contraindicada sin una TC previa debido al riesgo de enclavamiento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-037",
+    "id": "neurologia_001_037",
     "materia": [
       "neurologia"
     ],
@@ -839,19 +883,20 @@
       "d": "La recuperación inmediata de la conciencia al despertar, aunque con una sensación de debilidad física"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una característica distintiva del síncope en comparación con las crisis convulsivas es **la recuperación inmediata y completa de la conciencia al despertar**[cite: 631].\n\nTras una convulsión generalizada, el paciente típicamente presenta un período post-ictal de confusión, somnolencia o desorientación que dura minutos a horas. Las mioclonías breves y la incontinencia (opciones b y c) pueden verse en síncopes vasovagales profundos (síncope convulsivo) y no son exclusivas de epilepsia[cite: 625, 627].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-038",
+    "id": "neurologia_001_038",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Un paciente de 60 años presenta en forma progresiva alteración de la marcha, deterioro cognitivo e incontinencia urinaria. Se realiza una TC donde se observa moderado agrandamiento ventricular con leve atrofia cortical. Con respecto a la patología que podría padecer ¿Cuál de estas opciones es correcta?",
     "opciones": {
@@ -861,14 +906,15 @@
       "d": "La mejoría en el deterioro cognitivo es mayor que en la marcha o en la incontinencia urinaria con el tratamiento."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta la clásica tríada de Hakim-Adams (apraxia de la marcha, demencia e incontinencia urinaria), característica de la Hidrocefalia Normotensiva [cite: 635].\n\nDe las opciones dadas, la afirmación correcta es que **Sólo un pequeño porcentaje de pacientes con demencia sufren esta patología** (representa menos del 5% de las demencias)[cite: 648]. El componente que más suele mejorar con el tratamiento de derivación es la alteración de la marcha, no el deterioro cognitivo.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-039",
+    "id": "neurologia_001_039",
     "materia": [
       "neurologia",
       "cirugiageneral"
@@ -885,14 +931,15 @@
       "d": "Realizar endarterectomía de carótida izquierda"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente ha sufrido un AIT hemisférico izquierdo (afasia transitoria y focalidad motora derecha) [cite: 652, 654, 655], asociado a una placa estenótica sintomática severa en la carótida interna izquierda (80%) [cite: 656].\n\nLas guías indican que la estenosis carotídea sintomática mayor al 70% debe tratarse quirúrgicamente para prevenir un ACV mayor, por lo que procede **Realizar endarterectomía de carótida izquierda**[cite: 667]. La carótida derecha (63%) es asintomática y no requiere cirugía profiláctica aguda.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-040",
+    "id": "neurologia_001_040",
     "materia": [
       "neurologia"
     ],
@@ -907,14 +954,15 @@
       "d": "Degeneración cerebral alcohólica"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico es altamente sugestivo de la **Corea de Huntington** [cite: 683].\n\nSus pilares diagnósticos presentes en este caso son:\n- Herencia autosómica dominante (madre, tío y hermana afectados) [cite: 672].\n- Inicio en la edad media de la vida (42 años) [cite: 671].\n- Trastornos del movimiento tipo corea (sacudidas irregulares en extremidades) [cite: 671].\n- Deterioro cognitivo y trastornos psiquiátricos/conductuales (problemas de concentración, familiares en centros psiquiátricos)[cite: 671, 672].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-041",
+    "id": "neurologia_001_041",
     "materia": [
       "neurologia",
       "cardiologia"
@@ -931,21 +979,20 @@
       "d": "Cardiopatía reumática"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Fibrilación auricular no reumática** [cite: 697] es la principal fuente cardioembólica y la causa más frecuente de embolia cerebral sistémica, especialmente en la población anciana.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-042",
+    "id": "neurologia_001_042",
     "materia": [
-      "neurologia",
-      "otras"
+      "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Fármacos"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Una mujer de 68 años refiere una pérdida progresiva de la memoria para hechos recientes y falta de atención desde hace 18 meses. En el momento actual, muestra una conducta paranoide ocasional y tiene dificultades para hablar y emitir juicios. Aparte de los ovillos neurofibrilares y proteína amiloide aß, el dato neuropatológico característico, ¿Cómo se trata actualmente esta enfermedad dificil y frustrante?",
     "opciones": {
@@ -955,14 +1002,15 @@
       "d": "Tratando la enfermedad de base, la hipertensión, la diabetes y la arteriosclerosis"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta la patología típica de la Enfermedad de Alzheimer (ovillos neurofibrilares de tau hiperfosforilada y placas de proteína amiloide beta) [cite: 703].\n\nEl tratamiento sintomático de primera línea validado para la demencia leve a moderada por Alzheimer se basa en los inhibidores de la acetilcolinesterasa centrales, como **tacrina o donepecilo** [cite: 715] (además de rivastigmina y galantamina). ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-043",
+    "id": "neurologia_001_043",
     "materia": [
       "neurologia"
     ],
@@ -977,21 +1025,20 @@
       "d": "Es de reposo y puede afectar, antes de generalizarse, una extremidad o las dos del mismo lado"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El temblor parkinsoniano se caracteriza típicamente porque **Es de reposo y puede afectar, antes de generalizarse, una extremidad o las dos del mismo lado** (es clásicamente asimétrico o unilateral al inicio, a diferencia del temblor esencial)[cite: 730, 732]. Tiene una frecuencia baja (4-6 Hz) y suele adquirir la forma clásica de \"cuenta de monedas\".",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-044",
+    "id": "neurologia_001_044",
     "materia": [
-      "neurologia",
-      "otras"
+      "neurologia"
     ],
     "submateria": [
-      "Convulsiones y epilepsia",
-      "Fármacos"
+      "Convulsiones y epilepsia"
     ],
     "enunciado": "Un paciente recibe tratamiento por epilepsia del lóbulo temporal (crisis parciales complejas) Y como presenta convulsiones recurrentes a pesar del tratamiento prolongado con carbamazepina, se añade fenobarbital como segundo medicamento. Sin embargo, la frecuencia de las crisis aumenta. ¿Cuál es la razón más probable del efecto aparentemente nocivo de la adición del fenobarbital?",
     "opciones": {
@@ -1001,19 +1048,20 @@
       "d": "Disminución de los niveles de carbamazepina"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Disminución de los niveles de carbamazepina** [cite: 748] explica este fenómeno farmacocinético.\n\nEl fenobarbital es un potente inductor de las enzimas del citocromo P450 en el hígado. Al añadirlo, acelera drásticamente el metabolismo de otros fármacos anticonvulsivantes como la carbamazepina, disminuyendo sus concentraciones plasmáticas a rangos subterapéuticos, lo que paradójicamente empeora el control de las crisis epilépticas.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-045",
+    "id": "neurologia_001_045",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Trastornos del movimiento"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Uno de los siguientes datos es incorrecto respecto a la demencia con cuerpos de Lewy difusos; señálelo:",
     "opciones": {
@@ -1023,14 +1071,15 @@
       "d": "El cuadro se caracteriza por una demencia progresiva y signos parkinsonianos"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El dato INCORRECTO es indicar que **En el contexto de una enfermedad de Parkinson, las caídas frecuentes sin causa aparente descartan este tipo de demencia**[cite: 759, 763].\n\nPor el contrario, la inestabilidad postural temprana, las caídas frecuentes e inexplicables, y el síncope son manifestaciones disautonómicas de soporte muy típicas de la Demencia por Cuerpos de Lewy.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-046",
+    "id": "neurologia_001_046",
     "materia": [
       "neurologia"
     ],
@@ -1045,14 +1094,15 @@
       "d": "Indicar selegilina"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente describe un clásico Síndrome Parkinsoniano (bradicinesia, rigidez, temblor de reposo, asimetría, marcha festinante) [cite: 767, 769, 770].\n\nDado que los síntomas ya causan una \"seria limitación en sus actividades\" [cite: 768] y tratándose de un paciente anciano (71 años) [cite: 767], el abordaje terapéutico de primera línea y más eficaz es **Indicar carbidopa/Levodopa**[cite: 784].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-047",
+    "id": "neurologia_001_047",
     "materia": [
       "neurologia"
     ],
@@ -1067,14 +1117,15 @@
       "d": "Trastorno de la coagulación"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La **Hemorragia hipertensiva** [cite: 800] espontánea es la causa abrumadoramente más frecuente de los sangrados profundos en los ganglios basales.\n\nEl sitio más frecuente de afectación por lipohialinosis y ruptura de las arterias lenticuloestriadas de Charcot-Bouchard es el putamen, propagándose a la cápsula interna y provocando hemiparesia motora pura contralateral[cite: 788, 789].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-048",
+    "id": "neurologia_001_048",
     "materia": [
       "neurologia"
     ],
@@ -1089,14 +1140,15 @@
       "d": "Enfermedad de Parkinson"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La combinación de un síndrome parkinsoniano rígido-acinético (rigidez, bradicinesia, inestabilidad postural temprana con caídas frecuentes) [cite: 804] junto con **apraxia de la mirada vertical** (limitación de los movimientos oculares verticales, particularmente hacia abajo) es patognomónica de la **Parálisis supranuclear progresiva** [cite: 814] (Síndrome de Steele-Richardson-Olszewski).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-049",
+    "id": "neurologia_001_049",
     "materia": [
       "neurologia"
     ],
@@ -1111,21 +1163,20 @@
       "d": "Enfermedad de Parkinson"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente describe el clásico \"calambre del escribiente\", que es una forma de **Distonía focal** específica para una tarea[cite: 818, 819, 831].\n\nConsiste en contracciones musculares involuntarias y espasmos sostenidos que generan posturas anómalas e interfieren con el movimiento, desencadenándose exclusivamente durante acciones aprendidas de precisión como escribir o tocar un instrumento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-050",
+    "id": "neurologia_001_050",
     "materia": [
-      "neurologia",
-      "imagenes"
+      "neurologia"
     ],
     "submateria": [
-      "ECV",
-      "Otras preguntas de diagnóstico por imágenes"
+      "ECV"
     ],
     "enunciado": "Un paciente con crisis previas de diplopía, ataxia, disartria y mareos, presenta un coma agudo. La causa más probable es:",
     "opciones": {
@@ -1135,21 +1186,22 @@
       "d": "Obstrucción carotidea"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los síntomas focales transitorios del paciente (diplopía, ataxia, disartria y mareos/vértigo) [cite: 835] indican AITs previos en el territorio vertebrobasilar (tronco encefálico y cerebelo). El deterioro agudo hacia el coma es la consecuencia catastrófica de una oclusión completa de ese territorio, apuntando como causa más probable a la **Trombosis de la arteria basilar**[cite: 845]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-051",
+    "id": "neurologia_001_051",
     "materia": [
       "neurologia",
-      "neurocirugia"
+      "urgencias"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Neurocirugía"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Un muchacho de 18 años sufre un accidente con la bicicleta y es trasladado al departamento de urgencias. Uno de los compañeros observó como la bicicleta del joven tropezaba con una piedra y se golpeaba la cabeza con el suelo. La pérdida de conocimiento duró unos 30 segundos. En este momento han pasado 6 horas desde el accidente y el paciente se encuentra despierto, aunque ha vomitado en una ocasión refiere dolor frontal. En la exploración física no se objetivan alteraciones. Además, sufre un intenso dolor frontal. En la exploración física destaca la ausencia de sangre en las membranas timpánicas y la apófisis mastoides, así como la ausencia de focalidad neurológica. La radiografía de cráneo y la TC son normales. La medida más adecuada en este momento consiste en:",
     "opciones": {
@@ -1159,20 +1211,21 @@
       "d": "Administrar fenitoina e ingresar al enfermo en el hospital para observación"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un Traumatismo Craneoencefálico (TEC) leve o conmoción cerebral [cite: 860, 861, 862, 863].\n\nDado que han pasado 6 horas del evento, la evaluación neurológica es normal, no hay signos de fractura de base de cráneo, y la neuroimagen (TC de cráneo) no muestra lesiones agudas, el paciente no requiere neurocirugía ni antiepilépticos profilácticos[cite: 864, 865, 875]. La conducta correcta es **Dar el alta al paciente para que lo cuiden sus amigos**, asegurándose de proveer pautas de alarma por escrito[cite: 873].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-052",
+    "id": "neurologia_001_052",
     "materia": [
       "neurologia",
       "neurocirugia"
     ],
     "submateria": [
-      "ECV",
+      "Otras preguntas de neurologia",
       "Neurocirugía"
     ],
     "enunciado": "Un varón de 70 años se encuentra cada vez más somnoliento y confuso en las últimas semanas y es llevado al médico por su esposa. Hace 6 semanas sufrió un pequeño accidente de tránsito, que no requirió atención médica y continuó con sus tareas habituales sin ningún problema. No se observan signos de focalidad ni lateralidades neurológicas. En la TC sin contraste se observa borramiento de los surcos corticales y la disminución del tamaño de los ventriculos. El diagnóstico más probable es:",
@@ -1183,14 +1236,15 @@
       "d": "Depresión"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La historia clínica describe un **Hematoma subdural** crónico o subagudo, patología muy frecuente en pacientes añosos o con atrofia cerebral subyacente [cite: 880, 881, 885].\n\nTípicamente se produce por la rotura de las venas puente tras un traumatismo craneal menor (a menudo olvidado o desestimado)[cite: 881]. Semanas después, la acumulación lenta de sangre causa efecto de masa, manifestándose como deterioro cognitivo, confusión o somnolencia, con borramiento de surcos y compresión ventricular en la tomografía[cite: 882]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-053",
+    "id": "neurologia_001_053",
     "materia": [
       "neurologia",
       "traumatologia"
@@ -1207,21 +1261,22 @@
       "d": "Luxación acromioclavicular"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro corresponde a una **Distrofia simpática refleja** (actualmente conocida como Síndrome de Dolor Regional Complejo tipo I) [cite: 895, 896, 906].\n\nEste síndrome se caracteriza por:\n- Dolor neuropático desproporcionado tras un evento traumático menor (sin lesión nerviosa evidente) [cite: 896, 897]\n- Cambios autonómicos y vasomotores (edema, alteraciones en la sudoración -más húmedo-, cambios de temperatura) [cite: 898, 899]\n- Cambios tróficos (piel fina o atrofiada, alteraciones en el crecimiento del vello y las uñas)[cite: 898, 899].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-054",
+    "id": "neurologia_001_054",
     "materia": [
       "neurologia",
       "infectologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "SNC y meningitis"
+      "SNC y meningitis",
+      "Bacterias"
     ],
     "enunciado": "¿En qué tipo de meningitis la ampicilina sigue siendo el antibiótico de elección?",
     "opciones": {
@@ -1231,14 +1286,15 @@
       "d": "Acinetobacter spp"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El antibiótico de elección frente a **Listeria monocytogenes** es la Ampicilina[cite: 915, 921].\n\nEste bacilo grampositivo intracelular es intrínsecamente resistente a todas las cefalosporinas (incluyendo ceftriaxona o cefotaxima, usadas empíricamente en meningitis). Por ello, en pacientes con factores de riesgo para Listeria (neonatos, mayores de 50 años, embarazadas, o inmunodeprimidos), el esquema antibiótico empírico para meningitis aguda siempre debe suplementarse con Ampicilina[cite: 915, 921].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-055",
+    "id": "neurologia_001_055",
     "materia": [
       "neurologia"
     ],
@@ -1253,23 +1309,22 @@
       "d": "Dichas alteraciones se detectan en más del 90% de los pacientes"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La afirmación falsa es que **La aparición de bandas oligoclonales suele preceder a la aparición de síntomas** [cite: 931, 942].\n\nSi bien las bandas oligoclonales (BOC) en el LCR indican síntesis intratecal de IgG y están presentes en >90-95% de los pacientes con Esclerosis Múltiple, no se utilizan como un marcador de tamizaje preclínico que \"preceda a los síntomas\" en la práctica clínica; se buscan y hallan una vez que el paciente desarrolla un Síndrome Clínico Aislado (CIS) o enfermedad franca para confirmar el componente inflamatorio/desmielinizante[cite: 940, 942, 943].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-056",
+    "id": "neurologia_001_056",
     "materia": [
       "neurologia",
-      "otorrinolaringologia",
-      "infectologia"
+      "otorrinolaringologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Oído",
-      "SNC y meningitis"
+      "SNC y meningitis",
+      "Oído"
     ],
     "enunciado": "Indique cuál es la localización más frecuente de absceso cerebral secundario a otomastoiditis:",
     "opciones": {
@@ -1279,21 +1334,24 @@
       "d": "Lóbulo temporal ipsilateral a la infección"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La localización más frecuente de un absceso cerebral otógeno es en el **Lóbulo temporal y cerebelo ipsilateral** a la infección[cite: 950, 959].\n\nLas infecciones supurativas del oído medio y la mastoides se extienden por contigüidad anatómica. El techo de la cavidad timpánica (tegmen tympani) limita directamente con el lóbulo temporal medio y la pared posterior de la mastoides se relaciona con la fosa craneal posterior (cerebelo)[cite: 950, 959]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-057",
+    "id": "neurologia_001_057",
     "materia": [
       "neurologia",
-      "oncologia"
+      "oncologia",
+      "dermatologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Oncología"
+      "Otras preguntas de neurologia",
+      "Conceptos de Oncología",
+      "Oncología cutánea"
     ],
     "enunciado": "Todos los tumores siguientes, excepto uno, producen metástasis cerebrales. Señálelo:",
     "opciones": {
@@ -1303,21 +1361,20 @@
       "d": "Tumores digestivos"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La excepción es el **Carcinoma basocelular**[cite: 966, 972].\n\nEl carcinoma basocelular de piel es un tumor maligno de crecimiento lento que puede ser muy invasivo y destructivo a nivel local, pero que excepcionalmente o casi nunca produce metástasis linfáticas o a distancia (incluyendo el sistema nervioso central). En contraste, el pulmón, mama, melanoma, riñón y colon son las fuentes más comunes de metástasis cerebrales[cite: 966, 972].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-058",
+    "id": "neurologia_001_058",
     "materia": [
-      "neurologia",
-      "oftalmologia"
+      "neurologia"
     ],
     "submateria": [
-      "Desmielinizantes",
-      "Neurooftalmología"
+      "Desmielinizantes"
     ],
     "enunciado": "Una mujer joven presenta un cuadro de diplopía en la mirada horizontal de instauración subaguda. En la exploración se observa únicamente un retraso en la aducción del ojo izquierdo y un nistagmo en la abducción del ojo derecho, aunque la convergencia es normal. El estudio complementario más adecuado sería:",
     "opciones": {
@@ -1327,14 +1384,15 @@
       "d": "EEG y TC craneal"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta una Oftalmoplejía Internuclear (OIN) unilateral (lesión en el fascículo longitudinal medial izquierdo)[cite: 981, 982].\n\nEn una mujer joven, la aparición de una OIN es altamente sugestiva de Enfermedad Desmielinizante (Esclerosis Múltiple). Como parte del estudio inicial para confirmar diseminación en tiempo y espacio en ausencia de la RM (o de forma complementaria), el abordaje clásico incluye **Punción lumbar y estudio de los potenciales evocados** (para buscar bandas oligoclonales y bloqueos de conducción subclínicos)[cite: 983, 988].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-059",
+    "id": "neurologia_001_059",
     "materia": [
       "neurologia"
     ],
@@ -1349,19 +1407,22 @@
       "d": "Indicar a la enferma que utilice un parche en el ojo derecho para dormir"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico corresponde a una Parálisis de Bell (parálisis facial periférica idiopática), afectando a los músculos faciales superiores e inferiores del lado derecho, acompañado de disgeusia e hiperacusia ipsilateral[cite: 997, 998, 999, 1000].\n\nUna de las complicaciones más temidas a corto plazo es la úlcera corneal por lagoftalmos (incapacidad para cerrar el ojo). Por lo tanto, la medida conservadora de primera línea imprescindible es **Indicar a la enferma que utilice un parche en el ojo derecho para dormir** junto con lágrimas artificiales o ungüentos lubricantes[cite: 1008]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-060",
+    "id": "neurologia_001_060",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "ECV"
+      "ECV",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Un clavadista del equipo escolar de 17 años presenta cefalalgia, vértigo, torpeza de pierna y brazo izquierdos y pérdida de la sensación de dolor y la T. en las áreas facial izquierda y corporal derecha después de la sesión de prácticas. ¿Cuál de los siguientes diagnósticos es más probable?",
     "opciones": {
@@ -1371,23 +1432,24 @@
       "d": "Esclerosis múltiple"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un Síndrome de Wallenberg (síndrome bulbar lateral), evidenciado por un déficit sensitivo cruzado o alterno característico: pérdida termoalgésica en la hemicara ipsilateral (izquierda) y hemicuerpo contralateral (derecho), asociado a ataxia ipsilateral y vértigo [cite: 1013].\n\nLa etiología más frecuente de un infarto vertebrobasilar en un joven sano, especialmente tras traumatismos cervicales o manipulación y torsión del cuello durante el deporte (como los clavadistas), es la **Disección de la arteria vertebral**[cite: 1013, 1019].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-061",
+    "id": "neurologia_001_061",
     "materia": [
       "neurologia",
-      "neurocirugia",
-      "traumatologia"
+      "traumatologia",
+      "urgencias"
     ],
     "submateria": [
-      "Neuropatías",
-      "Neurocirugía",
-      "Columna vertebral"
+      "Columna vertebral",
+      "Otras preguntas de traumatología",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Un obrero de la construcción de 24 años con antecedente de dos años de dorsalgia baja refiere inicio agudo de debilidad bilateral de las piernas e incontinencia. No padece gastritis ¿Cuál de los siguientes tratamientos sería la mejor táctica para su atención?",
     "opciones": {
@@ -1397,21 +1459,22 @@
       "d": "Antiinflamatorios no esteroides y cirugía programada"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La aparición abrupta de debilidad motora severa (paraparesia o paraplejía) en los miembros inferiores asociada a compromiso esfinteriano (incontinencia) en el contexto de patología lumbar constituye una de las principales urgencias de la columna: el **Síndrome de Cauda Equina** [cite: 1027].\n\nEl único manejo adecuado para evitar secuelas neurológicas irreversibles es la descompresión mediante **Cirugía de urgencia**[cite: 1036].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-062",
+    "id": "neurologia_001_062",
     "materia": [
       "neurologia",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Oncología"
+      "Otras preguntas de neurologia",
+      "Otras preguntas de oncología"
     ],
     "enunciado": "¿Cuál de los siguientes enunciados es incorrecto con respecto a las metástasis cerebrales?",
     "opciones": {
@@ -1421,20 +1484,21 @@
       "d": "Si el cáncer sistémico se halla bajo control, la cirugía puede ser efectiva, aunque el paciente muestre múltiples lesiones"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El enunciado incorrecto es: **Si el cáncer sistémico se halla bajo control, la cirugía puede ser efectiva, aunque el paciente muestre múltiples lesiones**[cite: 1043, 1053].\n\nEl abordaje neuroquirúrgico a cielo abierto (resección) se reserva principalmente para pacientes con buena expectativa de vida, enfermedad sistémica controlada, y una lesión cerebral metástasica **única** (o solitaria) y accesible. En presencia de lesiones metastásicas múltiples en el encéfalo, el tratamiento de elección suele ser la radioterapia holocraneal (WBRT) o radiocirugía estereotáctica, y no la cirugía resectiva múltiple[cite: 1052, 1053].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-063",
+    "id": "neurologia_001_063",
     "materia": [
       "neurologia",
       "neurocirugia"
     ],
     "submateria": [
-      "Convulsiones y epilepsia",
+      "Otras preguntas de neurologia",
       "Neurocirugía"
     ],
     "enunciado": "Una mujer de 45 años presenta una crisis tónico-clonica generalizada por primera vez en su vida. En el estudio de RM se observa una masa extra axial que se origina en la hoz del cerebro y refuerza con gadolinio en forma homogénea. El tratamiento óptimo consiste en:",
@@ -1445,21 +1509,22 @@
       "d": "Radioterapia + cirugía + quimioterapia"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El tumor descrito en la RM (lesión extraaxial adherida a la hoz del cerebro o la duramadre, con refuerzo homogéneo tras el contraste y comúnmente con el signo de la 'cola dural') es sumamente característico de un **Meningioma** benigno [cite: 1059, 1060].\n\nEl tratamiento óptimo y curativo de primera línea para los meningiomas sintomáticos y accesibles quirúrgicamente es la resección total mediante **Cirugía**[cite: 1061, 1066].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-064",
+    "id": "neurologia_001_064",
     "materia": [
       "neurologia",
-      "cirugiageneral"
+      "urgencias"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Evaluación prequirúrgica"
+      "Otras preguntas de neurologia",
+      "Paciente politraumatizado"
     ],
     "enunciado": "Un hombre de 25 años es examinado en el departamento de urgencias después de sufrir traumatismo craneoencefálico al golpearse la cabeza contra el parabrisas en un accidente automovilístico. Abre los ojos y retira el brazo durante un estímulo doloroso sobre la mano; responde verbalmente a las preguntas con palabras inapropiadas. La puntuación en la escala de Glasgow del coma es:",
     "opciones": {
@@ -1469,21 +1534,22 @@
       "d": "8"
     },
     "correcta": "c",
-    "explicacion": "Apertura ocular al dolor (2) + Respuesta motora de retirada (4) + Respuesta verbal inapropiada (3) = 9.",
-    "imagen": [],
+    "explicacion": "El puntaje de la Escala de Coma de Glasgow (GCS) se calcula de la siguiente manera:\n- Apertura ocular al dolor = 2 puntos [cite: 1075]\n- Respuesta verbal con palabras inapropiadas = 3 puntos [cite: 1076]\n- Respuesta motora retirando al estímulo doloroso (flexión de retirada) = 4 puntos [cite: 1075]\n\nSuma total: 2 + 3 + 4 = **9** puntos[cite: 1082]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-065",
+    "id": "neurologia_001_065",
     "materia": [
       "neurologia",
-      "cirugiageneral"
+      "traumatologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Otras preguntas de cirugía general"
+      "Otras preguntas de neurologia",
+      "Fracturas"
     ],
     "enunciado": "¿Cuál de los siguientes signos no es específico de las fracturas de la base del cráneo?",
     "opciones": {
@@ -1493,19 +1559,20 @@
       "d": "Equimosis periorbitaria o signo del mapache"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Signo de Bell** no guarda relación directa con las fracturas de la base del cráneo[cite: 1089, 1096].\n\nEl signo de Bell consiste en la desviación del globo ocular hacia arriba y afuera al intentar cerrar los párpados, y es el hallazgo patognomónico de una parálisis facial periférica (idiopática u otras causas). Por el contrario, el hemotímpano, el signo de Battle (equimosis mastoidea) y los ojos de mapache (equimosis periorbitaria bilateral) son los tres signos clínicos clásicos de fracturas en la fosa craneal media y anterior[cite: 1095, 1097, 1098].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-066",
+    "id": "neurologia_001_066",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Un paciente presenta pérdida sensitiva segmentaria distribuida en cuello, hombros y brazos, amiotrofia, escoliosis torácica y fasciculaciones en la lengua, ¿Cuál es el diagnóstico más probable?",
     "opciones": {
@@ -1515,21 +1582,22 @@
       "d": "Glioma de tallo cerebral"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro descrito incluye un déficit sensitivo \"en capa\" o en chalina (pérdida de la sensibilidad termoalgésica en miembros superiores y cuello, conservando el tacto fino) que es típico de la siringomielia (cavidad intramedular en región cervical). \n\nSin embargo, la presencia de atrofia y **fasciculaciones en la lengua** indica que la cavitación se ha extendido hacia arriba hasta el bulbo raquídeo (involucrando el núcleo del nervio hipogloso), condición que se define específicamente como **Siringobulbia**[cite: 1104, 1110].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-067",
+    "id": "neurologia_001_067",
     "materia": [
       "neurologia",
       "oncologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Oncología"
+      "Otras preguntas de neurologia",
+      "Conceptos de Oncología"
     ],
     "enunciado": "Una mujer de 78 años refiere cefalalgia y confusión progresiva en el mes pasado. Tiene hemianopsia izquierda y no puede vestirse por sí misma. Una tomografía computada demuestra una masa heterogénea, grande, con refuerzo irregular con el contraste endovenoso y moderado edema en el lóbulo parietal derecho. No hay enfermedad sistémica obvia. ¿Cuál de los siguientes diagnósticos es más probable?",
     "opciones": {
@@ -1539,19 +1607,20 @@
       "d": "Metástasis"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Una masa solitaria grande, intraaxial, heterogénea, con captación irregular de contraste en forma de anillo (debido a necrosis central) y extenso edema vasogénico periférico en una paciente anciana es el aspecto característico por neuroimagen del **Glioblastoma multiforme** (Astrocitoma de grado IV) [cite: 1120, 1121, 1127].\n\nEl déficit cortical (apraxia del vestido y hemianopsia) correlaciona topográficamente con el lóbulo parietal y radiaciones ópticas derechas[cite: 1119, 1120]. ",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-068",
+    "id": "neurologia_001_068",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Neuropatías"
+      "Cefaleas"
     ],
     "enunciado": "Una mujer de 55 años acude con un dolor punzante e intermitente, de corta duración, pero gran intensidad en labios y pómulo derecho. El dolor se desencadena con cualquier roce sobre la cara. Los resultados de la exploración de la cara y los pares craneales son completamente normales. El tratamiento inicial de esta lesión consiste en:",
     "opciones": {
@@ -1561,14 +1630,15 @@
       "d": "Amitriptilina"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La descripción clínica es típica de una Neuralgia Esencial del Trigémino (dolor lancinante recurrente e intenso en zonas inervadas por V2 o V3, gatillado por estímulos táctiles anodinos, con examen neurológico normal) [cite: 1136, 1137, 1138].\n\nEl tratamiento médico de primera línea que se debe prescribir inicialmente es la **Carbamazepina** u oxcarbazepina[cite: 1139, 1145].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-069",
+    "id": "neurologia_001_069",
     "materia": [
       "neurologia"
     ],
@@ -1583,41 +1653,43 @@
       "d": "Esclerosis múltiple"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La mielitis transversa aguda es un síndrome inflamatorio y desmielinizante de la médula espinal [cite: 1155].\n\nPuede ocurrir de forma idiopática (post-infecciosa), o bien, en un porcentaje considerable de los pacientes, ser la primera manifestación clínica focal de enfermedades desmielinizantes del sistema nervioso central, clásicamente la **Esclerosis Múltiple** (o la Neuromielitis Óptica de Devic)[cite: 1163].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-070",
+    "id": "neurologia_001_070",
     "materia": [
       "neurologia"
     ],
     "submateria": [
       "Desmielinizantes"
     ],
-    "enunciado": "Una mujer de 28 años acude a la consulta por visión borrosa y adormecimiento de la pierna izquierda. Afirma que tiene algunas molestias en el ojo izquierdo. En la exploración física se observa una disminución de la agudeza visual del ojo izquierdo. No obstante, los demás pares craneales se encuentran dentro de la normalidad. La exploración del sistema motor también es normal, aunque la paciente ha perdido sensibilidad en el territorio de 14-s1 de la pierna derecha. El reflejo rotuliano de la pierna derecha se encuentra ausente y el signo de Babinski es negativo. La RM de cráneo ponderada en t2 muestra múltiples anomalías de señal brillantes en la sustancia blanca. ¿Cuál de estos resultados cabe esperar del examen del LCR de esta paciente?",
+    "enunciado": "Una mujer de 28 años acude a la consulta por visión borrosa y adormecimiento de la pierna izquierda. Afirma que tiene algunas molestias en el ojo izquierdo. En la exploración física se observa una disminución de la agudeza visual del ojo izquierdo. No obstante, los demás pares craneales se encuentran dentro de la normalidad. La exploración del sistema motor también es normal, aunque la paciente ha perdido sensibilidad en el territorio de l4-s1 de la pierna derecha. El reflejo rotuliano de la pierna derecha se encuentra ausente y el signo de Babinski es negativo. La RM de cráneo ponderada en t2 muestra múltiples anomalías de señal brillantes en la sustancia blanca. ¿Cuál de estos resultados cabe esperar del examen del LCR de esta paciente?",
     "opciones": {
       "a": "Número de células en el LCR de 100/mL",
       "b": "Presencia de células polimorfonucleares.",
       "c": "Presencia de bandas oligoclonales",
-      "d": "Proteínas en LCR de 1 g/L(100 mg/dL)."
+      "d": "Proteínas en LCR de 1 g/L (100 mg/dL)"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta lesiones neurológicas separadas en espacio (neuritis óptica izquierda y lesión medular causante del déficit radicular/cordonal) y lesiones en sustancia blanca compatibles por RM, configurando un cuadro altamente sugestivo de Esclerosis Múltiple [cite: 1169, 1170, 1172, 1174].\n\nEl análisis del Líquido Cefalorraquídeo en la Esclerosis Múltiple se caracteriza inmunológicamente por la demostración de síntesis intratecal de inmunoglobulinas a través de la **Presencia de bandas oligoclonales** (positivas en >90% de los casos) y un índice de IgG elevado[cite: 1175, 1182]. El recuento de células suele ser normal o presentar una leve pleocitosis linfocítica inferior a 50 células.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-071",
+    "id": "neurologia_001_071",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Neuropatías"
+      "Cefaleas"
     ],
     "enunciado": "Una mujer de 72 años presenta episodios breves e intermitentes de dolor lancinante e intensísimo en los labios, las encías y los pómulos. Estos espasmos dolorosos se desencadenan al tocar los labios o mover la lengua. La exploración física es normal, al igual que la RM del cráneo. La causa más probable del dolor es:",
     "opciones": {
@@ -1627,21 +1699,22 @@
       "d": "Parálisis del nervio facial"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Las características del dolor (episodios breves, paroxísticos tipo choque eléctrico, en la segunda y tercera rama del V par craneal) con \"zonas gatillo\" (movimiento de la lengua o roce de labios), sumado a un examen neurológico normal, dan el diagnóstico clínico certero de **Neuralgia del trigémino** esencial o clásica[cite: 1189, 1190, 1191, 1197].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-072",
+    "id": "neurologia_001_072",
     "materia": [
       "neurologia",
       "infectologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "SNC y meningitis"
+      "Otras preguntas de neurologia",
+      "Bacterias"
     ],
     "enunciado": "¿Cuál es la causa más frecuente de abscesos epidurales espinales?",
     "opciones": {
@@ -1651,20 +1724,21 @@
       "d": "Staphylococcus aureus"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El **Staphylococcus aureus** es el microorganismo responsable en la gran mayoría (más del 60-70%) de los abscesos epidurales espinales en la población general[cite: 1205, 1213].\n\nHabitualmente se origina por diseminación hematógena desde focos cutáneos o de partes blandas, uso de drogas endovenosas o instrumentalización de la columna vertebral.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-073",
+    "id": "neurologia_001_073",
     "materia": [
       "neurologia",
       "otorrinolaringologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "Oído"
     ],
     "enunciado": "Una mujer de 63 años presenta vértigo intermitente. En la exploración se encuentra disminución del reflejo corneal derecho e hipoacusia leve del mismo lado. ¿Cuál de los siguientes diagnósticos es más probable?",
@@ -1675,14 +1749,15 @@
       "d": "Infarto pontino"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro muestra un déficit del VIII par craneal (hipoacusia y vértigo) asociado a una disfunción sensitiva de la rama oftálmica (V1) del nervio trigémino (disminución del reflejo corneal derecho) [cite: 1219].\n\nEl crecimiento de una lesión ocupante de espacio en el ángulo pontocerebeloso, como un schwannoma vestibular (neurinoma del acústico) o un meningioma, suele originarse en la vaina del VIII par y expandirse comprimiendo de forma secuencial los pares craneales adyacentes, clásicamente el V y el VII par, por lo que el diagnóstico más probable es un **Tumor del ángulo pontocerebeloso**[cite: 1223].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-074",
+    "id": "neurologia_001_074",
     "materia": [
       "neurologia"
     ],
@@ -1697,21 +1772,22 @@
       "d": "Oclusión de la arteria espinal anterior"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un inicio súbito e indoloro de paraplejía (debilidad bilateral, arreflexia aguda por shock medular), afectación de los tractos espinotalámicos (pérdida de sensibilidad al dolor y a la temperatura) y retención urinaria autonómica [cite: 1234, 1235].\n\nAl tener preservadas las sensaciones vehiculizadas por los cordones posteriores (tacto fino, propiocepción, vibración), este es un Síndrome Cordonal Anterior puro, cuya etiología en el adulto mayor es clásicamente vascular debido a la isquemia o **Oclusión de la arteria espinal anterior** (a menudo a nivel de la arteria de Adamkiewicz)[cite: 1245].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-075",
+    "id": "neurologia_001_075",
     "materia": [
       "neurologia",
       "oncologia"
     ],
     "submateria": [
-      "SNC y meningitis",
-      "Oncología"
+      "Otras preguntas de neurologia",
+      "Conceptos de Oncología"
     ],
     "enunciado": "Una mujer de 54 años con un cáncer metastásico de mama y una afectación ósea extensa sufre cefalea y diplopía. En la exploración neurológica se observa desorientación e incapacidad para la abducción del ojo derecho. En la RN con contraste no se observa alteraciones. En la punción lumbar se observa leve pleocitosis, discreta hiperproteinorraquia e hipoglucorraquia con citología negativa. ¿Cuál de estas pruebas ayudaría al diagnóstico?",
     "opciones": {
@@ -1721,14 +1797,15 @@
       "d": "TC de cráneo con contraste"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro de afectación neurológica difusa (desorientación) y de pares craneales (paresia del VI par que impide la abducción), con RNM de encéfalo normal e hipoglucorraquia en LCR, es altamente sugestivo de Meningitis Neoplásica o Carcinomatosis Leptomeníngea en el contexto de su cáncer de mama avanzado [cite: 1251, 1252, 1253].\n\nComo la sensibilidad diagnóstica de una sola citología de LCR para detectar células malignas es limitada (alrededor del 50%), la conducta clínica indicada frente a una fuerte sospecha es la **Repetición de la punción lumbar**, dado que múltiples tomas aumentan la sensibilidad citológica a más del 85-90%[cite: 1254, 1259].",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-076",
+    "id": "neurologia_001_076",
     "materia": [
       "neurologia"
     ],
@@ -1743,19 +1820,22 @@
       "d": "Hasta 30% de los casos guarda relación con infección por Escherichia coli"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El Síndrome de Guillain-Barré es una polirradiculoneuropatía desmielinizante inflamatoria aguda.\n\nLa aseveración incorrecta es su relación con E. coli, ya que el antecedente infeccioso gastrointestinal clásicamente asociado (hasta en un 30% de los casos) es por **Campylobacter jejuni**, o bien infecciones virales del tracto respiratorio superior.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-077",
+    "id": "neurologia_001_077",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "traumatologia"
     ],
     "submateria": [
-      "Neuropatías"
+      "Neuropatías",
+      "Miembro inferior"
     ],
     "enunciado": "Una mujer obesa de 60 años se queja de un dolor urente y muy molesto en la cara anterolateral del muslo derecho, que se extiende desde la ingle hasta casi la rodilla. En la exploración de la zona afectada se observa una disminución de la sensibilidad táctil y nociceptiva. La paciente no ha perdido fuerza muscular y los reflejos se conservan. El diagnóstico más probable es:",
     "opciones": {
@@ -1765,23 +1845,26 @@
       "d": "Rotura de un disco intervertebral"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta un cuadro clínico típico de **Meralgia parestésica**.\n\nSe produce por el atrapamiento o **Compresión del nervio femorocutáneo** lateral a nivel del ligamento inguinal, siendo muy frecuente en pacientes obesos o por el uso de ropa ajustada. Cursa con dolor neuropático (urente) y alteraciones sensitivas en la cara anterolateral del muslo, sin déficit motor ni alteración de los reflejos (ya que es un nervio puramente sensitivo).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-078",
+    "id": "neurologia_001_078",
     "materia": [
       "neurologia",
-      "dermatologia"
+      "dermatologia",
+      "reumatologia"
     ],
     "submateria": [
       "Miopatías",
-      "Dermatología y sistémicas"
+      "Dermatología y sistémicas",
+      "Otras enfermedades reumatológicas"
     ],
-    "enunciado": "Una mujer de 27 años consulta porque últimamente ha notado cierta dificultad para realizar tareas habituales como levantarse de la silla, subir escaleras, levantar objetos y peinarse sin alteración en la realización de movimientos finos. Al examen físico se constata un eritema azul- púrpura en los parpados superiores y descamación violácea en los nudillos. Refiere no tener ningún familiar con el mismo padecimiento. ¿Cuál sería su diagnóstico presuntivo?",
+    "enunciado": "Una mujer de 27 años consulta porque últimamente ha notado cierta dificultad para realizar tareas habituales como levantarse de la silla, subir escaleras, levantar objetos y peinarse sin alteración en la realización de movimientos finos. Al examen físico se constata un eritema azul-púrpura en los parpados superiores y descamación violácea en los nudillos. Refiere no tener ningún familiar con el mismo padecimiento. ¿Cuál sería su diagnóstico presuntivo?",
     "opciones": {
       "a": "Miositis con cuerpos de inclusión",
       "b": "Dermatomiositis",
@@ -1789,20 +1872,21 @@
       "d": "Miofascitis macrofágica"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico corresponde a una **Dermatomiositis**.\n\nSe presenta con debilidad muscular de predominio proximal (dificultad para subir escaleras, levantarse, peinarse) y manifestaciones cutáneas patognomónicas que la definen:\n- Eritema en heliotropo (eritema azul-púrpura en párpados superiores)\n- Pápulas de Gottron (descamación o placas violáceas sobre las prominencias óseas y nudillos).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-079",
+    "id": "neurologia_001_079",
     "materia": [
       "neurologia",
       "infectologia"
     ],
     "submateria": [
-      "Cefaleas",
+      "Otras preguntas de neurologia",
       "SNC y meningitis"
     ],
     "enunciado": "Indique cuál es el síntoma que aparece más frecuentemente en los pacientes con abscesos cerebrales:",
@@ -1813,14 +1897,15 @@
       "d": "Cefalea"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El síntoma de presentación más frecuente y precoz en los pacientes con abscesos cerebrales es la **Cefalea**.\n\nSe presenta en más del 70-75% de los casos y suele ser un dolor de cabeza sordo, constante, que a menudo no cede con analgésicos habituales y puede empeorar con maniobras de Valsalva debido a la hipertensión endocraneana focal subyacente.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-080",
+    "id": "neurologia_001_080",
     "materia": [
       "neurologia"
     ],
@@ -1835,14 +1920,15 @@
       "d": "Corticosteroides"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta un cuadro de instauración rápida de debilidad simétrica ascendente (piernas a brazos) y arreflexia, lo que es el diagnóstico clínico clásico del Síndrome de Guillain-Barré.\n\nEl tratamiento modificador de la enfermedad de primera línea, que debe instaurarse precozmente (en las primeras dos semanas) para acelerar la recuperación, es la plasmaféresis o la administración de **Inmunoglobulina** intravenosa (IGIV). Los corticosteroides no han demostrado beneficio en esta patología.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-081",
+    "id": "neurologia_001_081",
     "materia": [
       "neurologia"
     ],
@@ -1857,19 +1943,20 @@
       "d": "La aplicación de edrofonio endovenoso produce una respuesta en pocos segundos y se utiliza como test para confirmar el diagnóstico"
     },
     "correcta": "d",
-    "explicacion": "El test de edrofonio (Tensilon) es una prueba diagnóstica clásica para la miastenia gravis.",
-    "imagen": [],
+    "explicacion": "Para confirmar la sospecha clínica de Miastenia Gravis, tradicionalmente se utiliza el Test de Tensilon.\n\nEste test consiste en **La aplicación de edrofonio endovenoso** (un inhibidor de la acetilcolinesterasa de acción muy ultracorta). Su administración incrementa temporalmente la disponibilidad de acetilcolina en la hendidura sináptica, produciendo una mejoría dramática y visible de la fuerza muscular en cuestión de segundos.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-082",
+    "id": "neurologia_001_082",
     "materia": [
       "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología"
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "En el servicio de urgencias se recibe a un paciente con mal estado general, signos de malnutrición, ataxia grave, disminución del nivel de conciencia (obnubilación) Y paresia del recto superior derecho y del oblicuo inferior izquierdo ¿Cuál será la primera sospecha diagnóstica?",
     "opciones": {
@@ -1879,21 +1966,22 @@
       "d": "Que se deberá solicitar una TC de cráneo en busca de una masa ocupante de espacio en la circunvolución sensitivo motora derecha, que afecte al pie y a la pierna"
     },
     "correcta": "b",
-    "explicacion": "Nota: Existe una discrepancia en el archivo original entre el enunciado (sugestivo de Wernicke) y las opciones/respuesta (sugestivas de patología medular). Se transcribe tal cual la fuente.",
-    "imagen": [],
+    "explicacion": "Nota: Las opciones presentadas en esta pregunta de examen oficial son incorrectas y resultan de un error de transcripción o imprenta en la fuente original, ya que no guardan ninguna correlación con el cuadro clínico descrito en el enunciado (el cual sugiere claramente una **Encefalopatía de Wernicke**).\n\nSin embargo, se mantiene la respuesta validada por la grilla del examen original (**Que se deberá repetir la Mielografía...**) a fines estrictos de fidelidad con el documento.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-083",
+    "id": "neurologia_001_083",
     "materia": [
-      "neurologia",
-      "psiquiatria"
+      "psiquiatria",
+      "neurologia"
     ],
     "submateria": [
-      "Trastornos del movimiento",
-      "Trastornos psicóticos"
+      "Trastornos psicóticos",
+      "Trastornos del movimiento"
     ],
     "enunciado": "Un varón de 65 años con una esquizofrenia de larga evolución ingresa en un servicio de medicina general con una neumonía atípica. El enfermo sigue tratamiento con Clorpromazina desde hace por lo menos 10 años. Además de la neumonía y los trastornos del pensamiento, se observan movimientos repetidos de lameteo y sacudidas de la lengua, así como una postura encorvada y grotesca. ¿Cuál de estas medidas mejorar los síntomas neurológicos?",
     "opciones": {
@@ -1903,21 +1991,22 @@
       "d": "Administración de oxazepam."
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un cuadro de **Discinesia Tardía** inducida por el uso crónico de un antipsicótico o neuroléptico típico (Clorpromazina).\n\nAnte la aparición de estos movimientos anormales coreoatetósicos e involuntarios (lameteo, sacudidas de la lengua, muecas faciales), la medida inicial más importante es la **Reducción de la dosis de Clorpromazina** o, preferentemente, su sustitución progresiva por un antipsicótico atípico con menor riesgo de efectos extrapiramidales (como clozapina o quetiapina).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-084",
+    "id": "neurologia_001_084",
     "materia": [
-      "neurologia",
-      "infectologia"
+      "infectologia",
+      "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "SNC y meningitis"
+      "SNC y meningitis",
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Indique la respuesta correcta respecto a la microbiología de los abscesos cerebrales:",
     "opciones": {
@@ -1927,21 +2016,24 @@
       "d": "En los secundarios a traumatismos predominan S. aureus, Clostridium spp y enterobacterias"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La microbiología de los abscesos cerebrales está íntimamente ligada al mecanismo de entrada y al foco primario de infección.\n\nLa respuesta correcta es que **En los secundarios a traumatismos predominan S. aureus, Clostridium spp y enterobacterias**. Por otro lado, los de origen ótico o sinusal suelen ser polimicrobianos con predominio de estreptococos y anaerobios de la cavidad oral, mientras que en los pacientes inmunodeprimidos hay que sospechar patógenos oportunistas como Toxoplasma gondii, Nocardia o Aspergillus.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-085",
+    "id": "neurologia_001_085",
     "materia": [
-      "neurologia",
-      "psiquiatria"
+      "psiquiatria",
+      "endocrinologia",
+      "medicinafamiliar"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "Trastornos del estado de ánimo"
+      "Trastornos del estado de ánimo",
+      "Tiroides",
+      "Adulto mayor"
     ],
     "enunciado": "Una mujer de 72 años es llevada a su consulta por sus familiares que están preocupados porque se ha vuelto una \"ermitaña\" y no quiere salir de su casa. Anteriormente era una persona ágil y activa que trabajaba en su jardín, visitaba vecinos y conducía su coche para ir de compras. Hace 3 meses tuvo un pequeño accidente automovilístico en el camino al supermercado. Además, hace 2 meses mientras caminaba por un terreno desigual, tropezó y se cayó. Manifiesta que ya no disfruta haciendo crucigramas. Informa de disminución del apetito y que se despierta muy temprano por la mañana. La exploración física muestra agudeza visual disminuida, presencia de opacidades bilaterales del cristalino y cerumen impactado en ambos oídos. La exploración neurológica y el examen cardiovascular son normales, excepto el ECG que muestra extrasístoles ocasionales. Además, refiere un hipotiroidismo diagnosticado hace 25 años. Usted sospecha que esta mujer se encuentra deprimida. La causa más probable de sus síntomas es:",
     "opciones": {
@@ -1951,21 +2043,22 @@
       "d": "Enfermedad de Alzheimer"
     },
     "correcta": "a",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico describe un episodio depresivo mayor en una paciente anciana, caracterizado por anhedonia, apatía, aislamiento, insomnio de despertar precoz y pérdida de apetito.\n\nEn geriatría, la depresión suele ser multifactorial. Los factores orgánicos subyacentes, como un **hipotiroidismo** potencialmente descompensado y, muy especialmente, las barreras o **alteraciones visuales (cataratas) y auditivas (cerumen impactado)** actúan de forma sinérgica promoviendo el aislamiento social, la pérdida de confianza tras caídas o accidentes, y precipitando el cuadro depresivo.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-086",
+    "id": "neurologia_001_086",
     "materia": [
       "neurologia",
       "otorrinolaringologia",
       "infectologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "Nariz",
       "SNC y meningitis"
     ],
@@ -1977,14 +2070,15 @@
       "d": "Otitis media"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La causa subyacente más frecuente de un empiema subdural intracraneal es la extensión directa o propagación venosa retrógrada a partir de una infección bacteriana de los senos paranasales, fundamentalmente una **Sinusitis** frontal o etmoidal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-087",
+    "id": "neurologia_001_087",
     "materia": [
       "neurologia",
       "traumatologia"
@@ -2001,20 +2095,21 @@
       "d": "Distrofia simpática refleja"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente padece el clásico **Síndrome del túnel del carpo**.\n\nEs la neuropatía por atrapamiento más frecuente, secundaria a la compresión del nervio mediano a nivel de la muñeca. Se caracteriza clínicamente por:\n- Dolor nocturno que despierta al paciente.\n- Parestesias e hipoestesia en la región palmar de los primeros tres dedos (pulgar, índice, mayor).\n- En estadios más avanzados, afectación motora con debilidad y atrofia de los músculos inervados por el mediano (como el abductor corto del pulgar).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-088",
+    "id": "neurologia_001_088",
     "materia": [
       "neurologia",
       "infectologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
+      "Otras preguntas de neurologia",
       "SNC y meningitis"
     ],
     "enunciado": "Un paciente de 43 años sin antecedentes personales de interés acude al servicio de urgencias con ataxia. Aunque ha viajado mucho, ha pasado los últimos 15 años casi íntegramente en Europa, y alrededor de las tres cuartas partes del tiempo en el reino unido. La esposa del paciente acude con su marido al servicio de urgencias y afirma que en los últimos 1 ó 2 años ha sufrido varios episodios de disminución de las facultades intelectuales, y pérdida de memoria. Ahora mismo se observa temblor, que apareció hace unos meses. La esposa también señala que, además de mostrar deterioro mental, el enfermo se encuentra más irritable en las últimas semanas y ha tenido episodios violentos ocasionales; ahora tiene dificultad para caminar. En la exploración física el paciente se agita con facilidad y muestra hiperreflexia y espasticidad. El signo de Babinski resulta positivo. ¿Cuál de las siguientes patologias es la más compatible con este cuadro clínico?",
@@ -2025,14 +2120,15 @@
       "d": "Enfermedad de Creutzfeldt-Jakob"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico y epidemiológico apunta firmemente a la variante de la **Enfermedad de Creutzfeldt-Jakob** (vCJD o encefalopatía espongiforme).\n\nLos factores clave incluyen:\n- Epidemiología: Residencia prolongada en el Reino Unido (factor de riesgo fundamental de exposición a priones bovinos).\n- Clínica psiquiátrica inicial: Irritabilidad, cambios de personalidad, violencia.\n- Clínica neurológica progresiva: Ataxia, mioclonías/temblor, signos piramidales (Babinski, hiperreflexia) y demencia subaguda.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-089",
+    "id": "neurologia_001_089",
     "materia": [
       "neurologia"
     ],
@@ -2047,14 +2143,15 @@
       "d": "Síndrome de Guillain-barré"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta un cuadro de debilidad simétrica (distal y proximal), arreflexia, afectación sensitivomotora y un perfil neurofisiológico de desmielinización pura (velocidades de conducción disminuidas).\n\nAl ser de curso evolutivo crónico o progresivo superior a las 8 semanas (en los 2 meses previos), el diagnóstico más probable es la **Polineuropatía desmielinizante inflamatoria crónica (CIDP)**. Si la progresión hubiera sido aguda (menor a 4 semanas), el diagnóstico hubiese sido un Síndrome de Guillain-Barré.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-090",
+    "id": "neurologia_001_090",
     "materia": [
       "neurologia"
     ],
@@ -2069,14 +2166,15 @@
       "d": "Distrofia de Duchenne"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La Miastenia Gravis es una enfermedad de la placa motora de etiopatogenia autoinmune mediada por autoanticuerpos.\n\nPor ello, se asocia fuertemente con otras patologías de origen inmunológico o dependientes del timo (hasta en un 75% hay anomalías tímicas como timoma o hiperplasia) y con trastornos tiroideos (hipotiroidismo o enfermedad de Graves). La **Distrofia de Duchenne**, por el contrario, es un trastorno puramente genético recesivo ligado al cromosoma X que no guarda relación con la miastenia.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-091",
+    "id": "neurologia_001_091",
     "materia": [
       "neurologia",
       "reumatologia"
@@ -2093,21 +2191,22 @@
       "d": "Dificultad para caminar con el talón pegado a la punta"
     },
     "correcta": "c",
-    "explicacion": "La polimiositis típicamente afecta a la musculatura proximal, haciendo difíciles tareas como peinarse o subir escaleras.",
-    "imagen": [],
+    "explicacion": "La polimiositis es una miopatía inflamatoria idiopática que cursa clásicamente con debilidad muscular progresiva y simétrica, de predominio **proximal**.\n\nPor lo tanto, el paciente presenta gran dificultad para realizar actividades que requieran la fuerza de los músculos de la cintura escapular o pelviana, como levantar los brazos por encima del nivel de los hombros (**Dificultad para peinarse**), subir escaleras o levantarse de una silla.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-092",
+    "id": "neurologia_001_092",
     "materia": [
-      "neurologia",
-      "infectologia"
+      "infectologia",
+      "neurologia"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "SNC y meningitis"
+      "ITS",
+      "Otras preguntas de neurologia"
     ],
     "enunciado": "Ante la sospecha de neurosífilis, ¿Qué prueba es más útil en el estudio del LCR del paciente?",
     "opciones": {
@@ -2117,14 +2216,15 @@
       "d": "FTA-Abs"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Para el diagnóstico confirmatorio de neurosífilis, la prueba de referencia a realizar en el Líquido Cefalorraquídeo (LCR) es la **VDRL**.\n\nEs la prueba no treponémica estándar para el LCR porque posee una especificidad cercana al 100% (salvo contaminación hemática sustancial), por lo que una prueba VDRL reactiva en el LCR establece un diagnóstico indudable de neurosífilis.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-093",
+    "id": "neurologia_001_093",
     "materia": [
       "neurologia"
     ],
@@ -2139,20 +2239,19 @@
       "d": "Miastenia gravis"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico es la presentación patognomónica de la **Miastenia gravis**.\n\nSe caracteriza por una debilidad muscular de tipo fluctuante, que típicamente **aumenta con el correr del día** o con el esfuerzo sostenido (fatigabilidad), y mejora con el reposo. Los músculos más frecuentemente involucrados de forma inicial son los extraoculares (causando trastornos en la visión como ptosis y diplopía) y los músculos bulbares (produciendo ligera dificultad para tragar, masticar o hablar).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-094",
+    "id": "neurologia_001_094",
     "materia": [
-      "neurologia",
       "psiquiatria"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
       "Trastornos neuróticos y de la personalidad"
     ],
     "enunciado": "Una mujer de 50 años acude al médico de atención primaria por crisis espontáneas e intermitentes de disnea intensa, palpitaciones, agitación, acorchamiento difuso y un gran temor a morir o a enloquecer. Estos episodios no han sido precipitados por ningún estado de ansiedad. Además, la enferma se muestra reacia a salir de su casa sin compañía. La exploración física general y los estudios sistemáticos de laboratorio, que ofrecen valores electrolíticos, pruebas de función tiroidea, electrocardiografía y monitoreo del ritmo cardíaco son normales y en opinión del médico no indican una causa orgánica clara del problema. La paciente no toma ningún medicamento de forma habitual ni tampoco bebe alcohol en exceso. El tratamiento más adecuado de esta paciente será:",
@@ -2163,21 +2262,22 @@
       "d": "Diazepam y escitalopram"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta un Trastorno de Angustia (Ataques de Pánico) recurrente y de inicio espontáneo, complicado con Agorafobia (reacia a salir de su casa).\n\nHistóricamente y de acuerdo con la bibliografía de la cual procede este examen, el tratamiento de mantenimiento clásico más respaldado para bloquear las crisis de pánico fueron los antidepresivos tricíclicos, en particular la **Imipramina**. (Nota: Actualmente, los ISRS de inicio gradual también son la indicación farmacológica de primera línea de preferencia por su mejor perfil de seguridad).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-095",
+    "id": "neurologia_001_095",
     "materia": [
-      "neurologia",
-      "pediatria"
+      "pediatria",
+      "neurologia"
     ],
     "submateria": [
-      "Miopatías",
-      "Trastornos de la infancia y la adolescencia"
+      "Otras preguntas de pediatría",
+      "Miopatías"
     ],
     "enunciado": "La distrofia muscular de Duchenne se caracteriza por:",
     "opciones": {
@@ -2187,21 +2287,22 @@
       "d": "Comienzo en la segunda década de la vida"
     },
     "correcta": "b",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La Distrofia Muscular de Duchenne (DMD) es la miopatía infantil más grave y frecuente, de herencia ligada al cromosoma X recesiva (no autosómica dominante).\n\nDado el severo proceso de necrosis y degeneración del sarcolema muscular debido a la ausencia de distrofina, uno de los hallazgos de laboratorio más precoces y característicos es el marcado **Aumento de la creatinaquinasa (CPK) sérica**, que a menudo alcanza niveles hasta de 10 a 100 veces por encima del valor límite normal.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-096",
+    "id": "neurologia_001_096",
     "materia": [
-      "neurologia",
-      "pediatria"
+      "pediatria",
+      "neurologia"
     ],
     "submateria": [
-      "Convulsiones y epilepsia",
-      "Trastornos de la infancia y la adolescencia"
+      "Otras preguntas de pediatría",
+      "Convulsiones y epilepsia"
     ],
     "enunciado": "¿Cuál de las siguientes manifestaciones permite diferenciar un espasmo del sollozo de una crisis epiléptica generalizada tónico y/o clónico?",
     "opciones": {
@@ -2211,21 +2312,22 @@
       "d": "Normalidad del EEG intercrítico"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "Los espasmos del sollozo son eventos paroxísticos no epilépticos frecuentes en la infancia, desencadenados por desencadenantes emocionales o dolorosos.\n\nClínicamente, la **Duración del ataque** es de gran utilidad práctica para orientar el diagnóstico diferencial: mientras que el espasmo del sollozo es un episodio muy breve (comúnmente resolviéndose en menos de un minuto con recuperación rápida de la vigilia), las verdaderas crisis epilépticas tónico-clónicas suelen ser más prolongadas y están seguidas por un período postictal significativo de letargia o confusión.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-097",
+    "id": "neurologia_001_097",
     "materia": [
-      "neurologia",
-      "medicinafamiliar"
+      "medicinafamiliar",
+      "psiquiatria"
     ],
     "submateria": [
-      "Otras preguntas de neurología",
-      "General"
+      "Otras preguntas de medicina familiar",
+      "Trastornos neuróticos y de la personalidad"
     ],
     "enunciado": "Una mujer de 25 años, previamente activa, se encuentra terriblemente cansada. Hace 6 meses sufrió una infección respiratoria superior, de la que no se ha podido recuperar. En la actualidad presenta cefaleas, dolor de garganta, mialgias y artralgias, así como febrícula de forma intermitente. El cansancio es tan intenso que no puede trabajar y además se encuentra muy irritable, confusa e incapaz de concentrarse. El médico ha comprobado la presencia de fiebre, T. de 38.6°C y adenopatías cervicales anteriores. Todo el estudio completo, con hemograma y análisis bioquímico en el suero presenta resultados normales; la serología para el VIH, para el virus de Epstein-Barr y para el CMV no sugieren infección aguda; la TC de cráneo no presenta particularidades. La enferma no presenta alteraciones psiquiátricas ni médicas. El tratamiento más adecuado consistirá en:",
     "opciones": {
@@ -2235,19 +2337,22 @@
       "d": "Ibuprofeno"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "La paciente presenta criterios para el Síndrome de Fatiga Crónica (SFC) de probable gatillo post-infeccioso.\n\nAl ser un trastorno sin tratamiento etiológico curativo o antiviral de eficacia demostrada, el manejo se enfoca exclusivamente en el alivio sintomático de los componentes reumatológicos y álgicos. El uso de AINEs, como el **Ibuprofeno**, está indicado para mitigar las mialgias, artralgias, febrícula y cefaleas que aquejan a la paciente.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-098",
+    "id": "neurologia_001_098",
     "materia": [
-      "neurologia"
+      "neurologia",
+      "urgencias"
     ],
     "submateria": [
-      "Placa motora"
+      "Placa motora",
+      "Otras preguntas de urgencias"
     ],
     "enunciado": "Un paciente con diagnóstico de miastenia gravis presenta una exacerbación de la debilidad con dificultad respiratoria. ¿Cuáles son las medidas iniciales más adecuadas?",
     "opciones": {
@@ -2257,21 +2362,22 @@
       "d": "Internación en UTI, suspensión de los anticolinesterásicos."
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente se encuentra frente a una Crisis Miasténica (insuficiencia ventilatoria por debilidad de los músculos respiratorios).\n\nEl manejo inicial crítico e impostergable exige el control de la vía aérea en un ámbito de cuidados críticos (**Internación en UTI** y considerar intubación). Sumado a esto, es imperativa la **suspensión de los anticolinesterásicos** de forma temporal, ya que durante la crisis suelen ser ineficaces, aumentan peligrosamente las secreciones de la vía aérea y pueden enmascarar o exacerbar una crisis por exceso de medicación (crisis colinérgica).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-099",
+    "id": "neurologia_001_099",
     "materia": [
       "neurologia",
-      "psiquiatria"
+      "nutricion"
     ],
     "submateria": [
       "Metabólicas",
-      "Trastornos relacionados con sustancias"
+      "Otras preguntas de nutrición"
     ],
     "enunciado": "En el servicio de urgencias se recibe a un paciente con mal estado general, signos de malnutrición, ataxia grave, disminución del nivel de conciencia (obnubilación) Y paresia del recto superior derecho y del oblicuo inferior izquierdo ¿Cuál será la primera sospecha diagnóstica?",
     "opciones": {
@@ -2281,21 +2387,22 @@
       "d": "Enfermedad de Wernicke"
     },
     "correcta": "d",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El paciente presenta la tríada clínica clásica de la **Enfermedad de Wernicke** (encefalopatía de Wernicke):\n1. Encefalopatía global (disminución del nivel de conciencia, obnubilación, confusión).\n2. Ataxia de la marcha.\n3. Disfunción oculomotora (paresias de músculos rectos y oblicuos por afectación de pares craneales u oftalmoplejía).\n\nEsta patología constituye una urgencia neurológica secundaria al déficit severo de Tiamina (Vitamina B1), observado habitualmente en individuos con malnutrición o alcoholismo crónico.",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
+    "oficial": false,
+    "fuente": "Curso IAR"
   },
   {
-    "id": "neurologia-001-100",
+    "id": "neurologia_001_100",
     "materia": [
-      "neurologia",
-      "infectologia"
+      "infectologia",
+      "neurologia"
     ],
     "submateria": [
-      "Encefalitis viral",
-      "SNC y meningitis"
+      "Virus no HIV",
+      "Encefalitis viral"
     ],
     "enunciado": "Llega a la consulta un paciente adulto con infección de vías respiratorias altas de una semana de evolución, cefalalgia en aumento e infiltrado en la radiografía de tórax. El número de leucocitos en líquido cefalorraquideo es de 1.200/µl, casi todos linfocitos. Este cuadro clinico indica la sospecha diagnóstica de:",
     "opciones": {
@@ -2305,10 +2412,13 @@
       "d": "Encefalitis por parotiditis infecciosa"
     },
     "correcta": "c",
-    "explicacion": "",
-    "imagen": [],
+    "explicacion": "El cuadro clínico evoca clásicamente a la **Coriomeningitis linfocítica**.\n\nEs una infección viral (causada por el virus de la coriomeningitis linfocítica, un arenavirus transmitido frecuentemente por la orina o heces de roedores). Clínicamente se presenta de forma bifásica: una fase de pródromos inespecíficos seudogripales y respiratorios (infección de vías respiratorias e infiltrados pulmonares) seguida, en la segunda semana, de una fase de meningitis aséptica caracterizada por intensa pleocitosis predominantemente linfocitaria en el LCR (generalmente entre cientos y varios miles de células/µl).",
+    "imagenes": [],
     "examen": null,
     "anio": null,
-    "oficial": false
-  }
-]
+    "oficial": false,
+    "fuente": "Curso IAR"
+  },
+  
+  
+  
