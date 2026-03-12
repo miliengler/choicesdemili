@@ -4345,5 +4345,625 @@
     "oficial": false,
     "Fuente": "curso iar"
   },
-  
+  {
+    "id": "cirugia_001_176",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología de pared abdominal"
+    ],
+    "enunciado": "En un paciente con SIDA, ¿cuál de los siguientes factores no tiene implicancia directa sobre el resultado de la operación?",
+    "opciones": {
+      "a": "Contraindicar la cirugía",
+      "b": "Cirugía inmediata y reparación de la brecha con prótesis no absorbible.",
+      "c": "By pass gástrico inicial y reevaluar el defecto parietal.",
+      "d": "Neumoperitoneo inicial y reparación parietal acorde a las características tisulares"
+    },
+    "correcta": "d",
+    "explicacion": "Se debe realizar neumoperitoneo para que las visceras puedan ser reintroducidas sin causarle una insuficiencia respiratoria al paciente por elevación del diafragma",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_177",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Un paciente de 80 años con una hemorragia digestiva baja moderada, fue estudiado con una colonoscopia en la que se encontraron restos hemáticos en todo el colon y diverticulos en el sigmoides, pero no se detectó el origen del sangrado. Una segunda colonoscopia programada a las 48 horas no aportó otros datos. Durante la misma internación repite un sangrado con descompensación hemodinámica que persiste más de 24 horas. ¿Cuál de las siguientes es la conducta MÁS adecuada?",
+    "opciones": {
+      "a": "Centellograma con glóbulos rojos marcados",
+      "b": "Arteriografía selectiva y eventual embolización",
+      "c": "Laparotomía y sigmoidectomía",
+      "d": "Reposición de la volemia y conducta expectante"
+    },
+    "correcta": "b",
+    "explicacion": "Se intenta realizar arteriografía porque es diagnóstica y terapeútica",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_178",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es la localización más frecuente, dentro de las enunciadas, de una angiodisplasia?",
+    "opciones": {
+      "a": "Colon sigmoide",
+      "b": "Recto",
+      "c": "Colon ascendente",
+      "d": "Colon descendente"
+    },
+    "correcta": "c",
+    "explicacion": "Las angiodisplasias son más frecuentes en colon derecho",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_179",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "En un paciente al que debe realizarse un by pass femoropopliteo, ¿cuál es el elemento de elección para su confección?",
+    "opciones": {
+      "a": "Prótesis de Dacrón",
+      "b": "Prótesis de politetrafluoretileno expandida (Goterex).",
+      "c": "Vena safena autóloga",
+      "d": "Vena umbilical."
+    },
+    "correcta": "c",
+    "explicacion": "Se usa la safena del paciente y se pone el extremo proximal hacia distal y al revés para evitar la acción de las válvulas venosas",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_180",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "Usted asiste a un paciente con el antecedente de una resección endoscópica de un pólipo de colon a 40 cm del margen anal cuyo estudio histopatológico informó: pólipo adenomatoso con áreas de carcinoma con infiltración de la submucosa. ¿Cuál es la conducta terapéutica MÁS adecuada?",
+    "opciones": {
+      "a": "Colonoscopia de control en 3 meses y nueva biopsia de la zona de resección por vía endoscópica",
+      "b": "Iniciar tratamiento quimioterápico previo a la cirugía electiva oncológica",
+      "c": "Resección colónica de tipo oncológica en forma electiva",
+      "d": "Control en seis meses y nueva endoscopia para control de cambios en la mucosa"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_181",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿En cual de estas localizaciones se observa con mayor frecuencia el desarrollo de cánceres sincrónicos?",
+    "opciones": {
+      "a": "La preparación del intestino se logra mediante una combinación de limpieza mecánica y antibióticos absorbibles",
+      "b": "En el acto quirúrgico se agrega metronidazol y antibióticos de amplio espectro",
+      "c": "Las soluciones de electrólitos y polietilenglicol disponibles en el comercio proporcionan un lavado mecánico sin ocasionar desequilibrios electroliticos.",
+      "d": "Los antibióticos no absorbibles como la neomicina y la eritromicina base se administran el día previo a la operación en tres dosis."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_182",
+    "materia": [
+      "cirugiageneral",
+      "urgencias"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Síndromes abdominales"
+    ],
+    "enunciado": "¿Qué se entiende por Sindrome Compartimental Abdominal?",
+    "opciones": {
+      "a": "La disfunción orgánica progresiva por aumento de la presión abdominal",
+      "b": "El aumento brusco del retorno venoso que se produce al descomprimir un abdomen a tensión",
+      "c": "Conjunto de síntomas y signos desencadenados por la ruptura visceral que se limita a un solo cuadrante del abdomen",
+      "d": "Cuadro clinico similar a un abdomen agudo que se produce por un globo vesical"
+    },
+    "correcta": "a",
+    "explicacion": "Se da en pacientes hiperreanimados en UTI y la solución es realizarle una laparotomía para descomprimir los órganos abdominales y dejar al paciente con un abdomen abierto y contenido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_183",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Una mujer de 24 años con colitis ulcerativa ingresa al hospital con fiebre, diarrea sanguinolenta e hipersensibilidad abdominal, se comienza con tratamiento médico, que incluye esteroides por via parenteral. Su estado empeora de manera progresiva los días subsiguientes, y en la radiografía de abdomen se observa que el diámetro del colon transverso es de 12 cm, sin aire intraperitoneal libre. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Proctocolectomía total.",
+      "b": "Colostomía transversa.",
+      "c": "Cecostomía.",
+      "d": "Colectomía transversa."
+    },
+    "correcta": "a",
+    "explicacion": "Es un megacolon tóxico se debe efectuar una proctocolectomía total",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_184",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Marque la indicación menos común para el tratamiento quirúrgico de urgencia de la diverticulitis aguda:",
+    "opciones": {
+      "a": "Absceso",
+      "b": "Obstrucción colónica incompleta.",
+      "c": "Peritonitis difusa.",
+      "d": "Perforación"
+    },
+    "correcta": "b",
+    "explicacion": "Si la obstrucción es incompleta no es quirúrgica",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_185",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "¿En cual de estas localizaciones se observa con mayor frecuencia el desarrollo de cánceres sincrónicos?",
+    "opciones": {
+      "a": "Laringe",
+      "b": "Colon",
+      "c": "Estómago",
+      "d": "Páncreas"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_186",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "¿Cuál es el tipo de carcinoma anal más frecuente?",
+    "opciones": {
+      "a": "Basocelular",
+      "b": "Adenocarcinoma",
+      "c": "Epidermoide",
+      "d": "Melanocarcinoma"
+    },
+    "correcta": "c",
+    "explicacion": "Se asienta u origina en piel",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_187",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Una paciente de 76 años con antecedentes de enfermedad diverticular se presenta a la consulta con dolor en fosa ilíaca izquierda, fiebre, recuento de blancos 13.200/mm3. La tomografía axial computada de abdomen y pelvis muestra absceso pélvico de 4 cm de diámetro. ¿Cuál es la conducta para seguir?",
+    "opciones": {
+      "a": "Operación de Miles.",
+      "b": "Colectomía total e ileorrectoanastomosis.",
+      "c": "Colectomía subtotal y colorrectoanastomosis",
+      "d": "Drenaje percutáneo y cirugía diferida"
+    },
+    "correcta": "d",
+    "explicacion": "Se realiza el drenaje y tto atb para después resolverlo quirúrgibamente en forma programada",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_188",
+    "materia": [
+      "cirugiageneral",
+      "pediatria"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "Un paciente de 7 años es traído a la guardia por haber presentado una mordedura de perro en el miembro inferior derecho. No fue posible hallar al animal. El niño presenta vacunas completas para su edad según Calendario Nacional de Vacunación ¿Cuál considera usted es la conducta más adecuada?",
+    "opciones": {
+      "a": "Amoxicilina-clavulánico, vacuna antirrábica, vacuna antitetánica",
+      "b": "Cefalexina, vacuna antitetánica",
+      "c": "Cefalexina, vacuna antirrábica, vacuna antitetánica",
+      "d": "Amoxicilina-clavulánico y vacuna antirrábica."
+    },
+    "correcta": "d",
+    "explicacion": "Se da atb para gérmenes de la boca y vacuna antirrábica",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_189",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Colon"
+    ],
+    "enunciado": "Señale la indicación más frecuente para la operación electiva en la enfermedad de Crohn colónica:",
+    "opciones": {
+      "a": "Obstrucción",
+      "b": "Perforación",
+      "c": "Falla de tratamiento médico",
+      "d": "Hemorragia"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_190",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "En un cáncer de recto localizado a 9 cm del margen anal y que abarca 1/3 de su circunferencia, ¿cuál es la intervención quirúrgica de elección?",
+    "opciones": {
+      "a": "Resección local endoanal",
+      "b": "Proctocolectomía izquierda",
+      "c": "Amputación abdominoperineal u operación de Miles",
+      "d": "Resección anterior u operación de Dixon"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_191",
+    "materia": [
+      "cirugiageneral",
+      "urgencias"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de lesión no penetrante en la aorta torácica?",
+    "opciones": {
+      "a": "Fracturas múltiples costales",
+      "b": "Traumatismos por caída de altura",
+      "c": "Desaceleración",
+      "d": "Aplastamiento."
+    },
+    "correcta": "c",
+    "explicacion": "Ya sea vertical (caida de altura) como horizontal (colisión con vehículo a motor).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_192",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Enfermedad arterial periférica"
+    ],
+    "enunciado": "¿En qué circunstancia se encuentra indicada la simpatectomia lumbar como tratamiento en las arteriopatías periféricas?",
+    "opciones": {
+      "a": "Previamente a la realización de un bypass femoropopliteo para mejorar su salida",
+      "b": "Cuando no es posible la reconstrucción arterial directa por falta de lechos distales",
+      "c": "En el pie diabético con pulsos distales presentes.",
+      "d": "En la claudicación intermitente que se presenta a los 300 metros."
+    },
+    "correcta": "b",
+    "explicacion": "Se realiza en estos pacientes que no tienen lechos distales es para provocar una vasodilatación permanente y máxima en el paciente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_193",
+    "materia": [
+      "cirugiageneral",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Venas y linfáticos"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección de la tromboflebitis profunda?",
+    "opciones": {
+      "a": "Trombectomia",
+      "b": "Administrar anticoagulantes y/o fibrinolíticos",
+      "c": "Colocación de Stent",
+      "d": "Colocación de filtro de Greendfield"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_194",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "El sintoma más temprano en la apendicitis aguda es",
+    "opciones": {
+      "a": "Vómitos",
+      "b": "Leucocitosis",
+      "c": "Dolor epigástrico",
+      "d": "Náuseas"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_195",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Colon",
+      "Cáncer colorrectal"
+    ],
+    "enunciado": "Ante un paciente que presenta cáncer de ciego, ¿cuál es el tratamiento quirúrgico de elección?",
+    "opciones": {
+      "a": "Colectomia total.",
+      "b": "Cecostomía",
+      "c": "Hemicolectomia derecha.",
+      "d": "Resección del ileo terminal y del ciego, con ileoascendoanastomosis."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_196",
+    "materia": [
+      "cirugiageneral",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Otras preguntas de infectología"
+    ],
+    "enunciado": "En un paciente con SIDA, ¿cuál de los siguientes factores no tiene implicancia directa sobre el resultado de la operación?",
+    "opciones": {
+      "a": "Riesgo anestésico",
+      "b": "Resecciones extensas",
+      "c": "Estado nutricional previo",
+      "d": "Infección oportunista"
+    },
+    "correcta": "d",
+    "explicacion": "a.c y d están contemplados en ASA de anestesia en cambio seguramente un paciente con SIDA va a tener una infección oportunista",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_197",
+    "materia": [
+      "cirugiageneral",
+      "pediatria"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Patología del aparato digestivo"
+    ],
+    "enunciado": "La tríada de dolor abdominal, vómitos y fiebre leve en un niño, hasta que se demuestre lo contrario, se considera diagnóstico de",
+    "opciones": {
+      "a": "Intususcepción",
+      "b": "Enteritis viral aguda",
+      "c": "Hernia incarcenada",
+      "d": "Apendicitis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_198",
+    "materia": [
+      "cirugiageneral",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Intestino delgado"
+    ],
+    "enunciado": "Con respecto al divertículo de Meckel señale lo incorrecto",
+    "opciones": {
+      "a": "Es la principal causa de HDB en los niños",
+      "b": "El hallazgo intraoperatorio en adultos no constituye una indicación quirúrgica para su tratamiento",
+      "c": "La persistencia del conducto onfalomesenterico es lo que determina su aparición",
+      "d": "Se localiza en el borde mesentérico del ileon a 50 cm de la válvula ileocecal"
+    },
+    "correcta": "d",
+    "explicacion": "Se localiza en el borde antimesentérico del ileon distal",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_199",
+    "materia": [
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Quemaduras"
+    ],
+    "enunciado": "Una mujer de 55 años sufre una quemadura por contacto accidental con la plancha caliente en su brazo. Presenta lecho de 5x2 cm, color blanco y al realizar el signo del pelo sale fácilmente. ¿Cuál es la profundidad de la quemadura?",
+    "opciones": {
+      "a": "Intermedia",
+      "b": "Superficial flictenular.",
+      "c": "Profunda",
+      "d": "Superficial eritematosa."
+    },
+    "correcta": "c",
+    "explicacion": "Clasificación y cuantificación (regla de los 9) de quemaduras",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "cirugia_001_200",
+    "materia": [
+      "cirugiageneral",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Otras preguntas de cirugía general",
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "Señale la prueba diagnóstica que con mayor precisión detecta una fístula colovesical",
+    "opciones": {
+      "a": "Cistoscopia.",
+      "b": "Colon por enema con bario.",
+      "c": "Cistografía.",
+      "d": "Tomografia computada."
+    },
+    "correcta": "a",
+    "explicacion": "Lo ideal es cistoscopía y fibrocolonoscopía simultaneo porque se ve y se maraca donde está para después realizar la cirugía",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
   
