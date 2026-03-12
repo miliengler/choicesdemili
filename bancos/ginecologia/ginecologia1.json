@@ -7619,4 +7619,2776 @@
     "oficial": false,
     "Fuente": "prorem"
   },
+  {
+    "id": "gineco_001_312",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Paciente de 52 años consulta por presentar nódulo mamario no doloroso. Al examen clínico, mide 2 cm, móvil, duro, de bordes irregulares, sin alteraciones de la piel ubicado en cuadrante superior externo. En la mamografía se observa una imagen nodular de 1,5 cm de diámetro de bordes difusos con microcalcificaciones agrupadas heterogéneas. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Mastopatía escleroquistica",
+      "b": "Fibroadenoma calcificado",
+      "c": "Cáncer de mama",
+      "d": "Quiste displásico"
+    },
+    "correcta": "c",
+    "explicacion": "El **cáncer de mama** suele iniciarse de manera asintomática. En el 80% de los casos el primer sintoma es la presencia de una tumoración o induración mamaria y en el 20%, alteraciones en el complejo aréola-pezón. En etapas avanzadas de la enfermedad pueden observarse alteraciones cutáneas y adenopatías. Son signos que orientan a malignidad:\n- Nódulo sólido, de contornos irregulares, poco móvil o adherido a planos superficiales y/o profundos.\n- Afectación del complejo aréola-pezón: retracción del pezón, telorrea unilateral serososanguinolenta.\n- Afectación cutánea (retracción cutánea, piel de naranja, signos inflamatorios, ulceración).\n- Adenopatías fijas, duras y homolaterales (axilares y/o supraclaviculares).\nEn la mamografía, son signos sospechosos de malignidad:\n- Microcalcificaciones agrupadas, lineales o ramificadas, de tamaño simétrico, finas e irregulares, en número ≥5 Son el signo más precoz.\n- Desectructuración del tejido mamario con pérdida de su arquitectura.\n- Una imagen mamográfica de tamaño menor que el apreciado clinicamente y estrías radiales que convergen.\n- Nódulo denso, espiculado, de bordes irregulares con retracción o afectación cutánea.\n- Densidades focales asimétricas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_313",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 36 años presenta en cuadrante superoexterno de mama derecha un nódulo palpable de 2,5 cm de diámetro. Al examen físico se constata conglomerado de adenopatías axilares fijas homoterales. La punción histológica con aguja gruesa del nódulo informa carcinoma de mama ductal infiltrante. No se evidencian metástasis a distancia. ¿Cuál es la clasificación clínica según el sistema TNM?",
+    "opciones": {
+      "a": "T1 N2 M0",
+      "b": "T1 N3 M0",
+      "c": "T2 N2 M0",
+      "d": "T2 N3 M0"
+    },
+    "correcta": "c",
+    "explicacion": "**T2**: Tumor > de 2 cm y < 5 cm en su diámetro mayor.\n**N2**: metástasis axilares homolaterales fijas o metástasis en mamaria interna homolaterales detectables por estudios de diagnóstico por imágenes (menos linfogammagrafia) o detectables en el examen clinico.\n**M0**: sin metástasis a distancia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_314",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "¿Cuál es el cáncer de mama más frecuente?",
+    "opciones": {
+      "a": "Carcinoma lobulillar.",
+      "b": "Enfermedad de Paget.",
+      "c": "Carcinoma ductal.",
+      "d": "Carcinoma de células claras."
+    },
+    "correcta": "c",
+    "explicacion": "Se engloban dentro del cáncer de mama el carcinoma lobulillar infiltrante (CLI), el carcinoma ductal infiltrante (CDI) y otros tumores epiteliales.\n- **Carcinoma lobulillar infiltrante**: Supone el 10-15% de los carcinomas infiltrantes de mama. En muchas ocasiones es multicéntrico y bilateral (por lo que se recomienda realizar RM prequirúrgica siempre que se opte por tratamiento conservador). Con frecuencia el tamaño histológico es superior al esperado por la clinica y la radiologia. Se asocia frecuentemente a CLIS. No expresa E-cadherina.\n- **Carcinoma ductal infiltrante**: Es el tipo histológico más frecuente (80%). Suele acompañarse de mucha fibrosis, por lo que suele ser palpable y visible por mamografía. Es frecuente su asociación con carcinoma intraductal. Expresa E-cadherina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_315",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Mamografía"
+    ],
+    "enunciado": "Una paciente de 43 años, concurre al control adjuntando una mamografía que informa: parénquima mamario fibroglandular con leve transformación adiposa, calcificaciones vasculares dispersas y nódulo de bordes netos en cuadrante inferointerno izquierdo, compatible con ganglio intramamario. ¿A qué categoría de la clasificación BIRADS corresponden estas imágenes?",
+    "opciones": {
+      "a": "BIRADS 1",
+      "b": "BIRADS 3",
+      "c": "BIRADS 0",
+      "d": "BIRADS 2"
+    },
+    "correcta": "d",
+    "explicacion": "Se describe un hallazgo benigno correspondiente a **BIRADS 2**.\nImágenes de este tipo son el fibroadenoma calcificado, calcificaciones de tipo secretor, lesiones con contenido graso (quistes oleosos, lipomas, galactoceles), lesiones con contenido mixto como el hamartoma. Ganglio intramamario, calcificaciones vasculares, distorsión relacionada con cirugía previa. Se recomienda control rutinario anual.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_316",
+    "materia": [
+      "ginecologia",
+      "aps"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "Se presenta a la consulta Federico de 28 años, que desde hace 9 años transita su cambio de género como varón trans. Una amiga le comentó que debía realizar controles ginecológicos para prevención del cáncer de cuello uterino. Realiza androgenoterapia desde hace 5 años. Nunca tuvo relaciones con penetración vaginal. En este caso, ¿cuál es la recomendación más adecuada en relación con esta práctica preventiva?",
+    "opciones": {
+      "a": "Explicar que no es necesario realizar rastreo por su condición actual",
+      "b": "Solicitar ecografía transvaginal y control según resultado",
+      "c": "Indicar la realización de Papanicolau y colposcopia como método de rastreo",
+      "d": "Recomendar toma de muestra citológica a ciegas (sin colocación de espéculo)"
+    },
+    "correcta": "d",
+    "explicacion": "Si bien el paciente no ha tenido relaciones sexuales con penetración vaginal, en el enunciado no se descarta otro tipo de relaciones sexuales por lo que no es posible descartar las mismas.\nToda opción que indique la exploración por vía vaginal ya sea con la colocación de especulo o de transductor vaginal no son una opción en ningún paciente que no haya iniciado penetración por esta via.\nSe indica entonces realizar la **toma de pap al acecho** (sin especulo, con hisopo) o autotoma. La autotoma de la muestra, permite evitar el dolor, la incomodidad y/o la situación traumática que puede ocasionarle a la persona la colocación del espéculo. Esto puede ser especialmente importante en quienes no han tenido penetración vaginal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_317",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "¿Qué características tienen el PAP y el test de HPV como métodos de tamizaje?",
+    "opciones": {
+      "a": "PAP valor predictivo negativo alto y sensibilidad baja",
+      "b": "Test de HPV valor predictivo negativo alto y sensibilidad alta",
+      "c": "PAP valor predictivo negativo bajo y sensibilidad alta",
+      "d": "Test de HPV valor predictivo negativo bajo y sensibilidad alta"
+    },
+    "correcta": "b",
+    "explicacion": "Las pruebas de detección de VPH han demostrado ser más sensibles y efectivas en la detección precoz del CCU que el PAP.\nLos VPH 16 y 18 son los tipos más oncogénicos, y conjuntamente son responsables del 70% de los casos de CCU en todo el mundo. Desde el descubrimiento de la asociación de la infección como una causa necesaria para el cáncer de cervix se han desarrollado numerosas tecnologias que permiten detectar la presencia del VPH en las células, demostrando comparativamente una mayor efectividad en relación a la citologia (PAP), asi como una alta sensibilidad para la detección de lesiones precancerosas que va de 88.4 a 96% en numerosas poblaciones estudiadas.\nEl **test de HPV** presenta como ventaja: alta sensibilidad (90-97.5%) y alto valor predictivo negativo, mientras que las desventajas son su especificidad limitada (84%) y que puede presentar reacciones cruzadas con sondas de bajo riesgo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_318",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Según el \"Prevención del cáncer cervicouterino : recomendaciones para el tamizaje, seguimiento y tratamiento de mujeres en el marco de programas de tamizaje basados en el test de VPH\" (2015), en qué porcentaje retrogradan las lesiones intraepiteliales de bajo grado (LSIL) según el grupo etario?",
+    "opciones": {
+      "a": "40-50% en adultas y 91% en adolescentes",
+      "b": "60-70% en adultas y 9.1% en adolescentes",
+      "c": "60-70% en adultas y 100% en adolescentes",
+      "d": "40-50% en adultas y 61% en adolescentes"
+    },
+    "correcta": "b",
+    "explicacion": "La **lesión intraepitelial escamosa** representa la manifestación clínica y morfológica de la infección producida por el virus del papiloma humano (VPH). Estas lesiones tienen un bajo riesgo de progresión a carcinoma (OMS 2014). Esta categoria incluye a las lesiones virales puras - ya sean planas y/o acuminadas - y las neoplasias intraepiteliales de tipo 1 (CIN 1), también llamadas displasias leves.\nEl **60-70% en pacientes adultas retrograda** (el 91% en adolescentes) y el 13% progresa a SIL de alto grado. VPH 16 es el genotipo más frecuentemente asociado. En gestantes con SIL de bajo grado (26,3%) se aconseja control sin tratamiento.\nPor ello, la conducta ante un hallazgo de LSIL es en la mayoria de los casos expectante, y se trata solo ante persistencia, factores de riesgo de progresion (inmunocompromiso) o imposibilidad de seguimiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_319",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Una paciente de 57 años, con diagnóstico de carcinoma de mama, presenta en cuadrante superoexterno de mama izquierda nódulo de 2 cm de diámetro, consistencia duro pétrea, mama derecha sin particularidades, axilas libres. No se evidencian metástasis a distancia. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Tumorectomia con linfadenectomia axilar",
+      "b": "Quimioterapia neoadyuvante",
+      "c": "Mastectomia radical modificada",
+      "d": "Tumorectomia con ganglio centinela"
+    },
+    "correcta": "d",
+    "explicacion": "Criterios de inclusión de la **tumorectomía con ganglio centinela**:\n- Estadios 0, I, II.\n- Estadios III con neoadyuvancia si la respuesta lo permitiera.\n- Adecuada relación volumen mamario/tamaño tumoral.\n- Márgenes histológicamente negativos en pieza quirúrgica.\n- Posibilidad de estricto control.\nPara la exploración axilar con técnica de ganglio centinela: axila negativa (N0) a la palpación y/o por imágenes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_320",
+    "materia": [
+      "neumonologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Pleura, mediastino y diafragma",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 53 años operada por un cáncer de mama hace 6 años concurre a la consulta presentando disnea clase funcional III. En la radiografía de tórax se observa derrame pleural en la base del hemitórax derecho. Se realiza punción pleural guiada por ecografía y en el estudio no se logró demostrar infección activa ni presencia de células neoplásicas. ¿Qué estudio solicitaría para continuar evaluando a la paciente?",
+    "opciones": {
+      "a": "TC de tórax con contraste intravenoso",
+      "b": "Videotoracoscopía",
+      "c": "Punción biopsia pleural",
+      "d": "Toracotomía"
+    },
+    "correcta": "b",
+    "explicacion": "Una paciente con antecedentes de cáncer de mama que no se encuentra en fase curativa que intercurre con derrame pleural, una vez descartado proceso infeccioso, la indicación seria realizar una **videotoracoscopía** que permite la exploración pleural y toma de muestra para biopsia para obtener un diagnóstico anatomopatológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_321",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones respecto de la mamografía es correcta?",
+    "opciones": {
+      "a": "Una imagen mamográfica homogénea con calcificaciones gruesas y dispersas hace presumir malignidad",
+      "b": "Una imagen mamográfica de tamaño menor que el apreciado clinicamente y estrías radiales que convergen hacen presumir malignidad",
+      "c": "Casi siempre las lesiones radiográficamente sospechosas se confirman posteriormente como malignas",
+      "d": "La mamografia debe realizarse en todas las mujeres entre 55 y 75 años"
+    },
+    "correcta": "b",
+    "explicacion": "Las imágenes sospechosas por mamografía son:\n- MASAS O NÓDULOS irregulares. El concepto de \"masa\" según el BIRADS es definido como \"lesión ocupante de espacio vista en dos proyecciones diferentes\". Si se ve en una única proyección debería ser llamada densidad o asimetría hasta que su carácter tridimensional haya sido confirmado, lo que le resta sospecha. Se utilizará el término opacidad o imagen nodular asumiendo la definición utilizada para nódulo o masa, a los fines didácticos. Se considera sospechosa cuando tenga limites imprecisos, bordes irregulares, o aspecto estelar. El concepto de nódulo se aplica tanto para lesiones sólidas como quísticas, aunque en mamografía no debe asumirse a priori ninguna de las dos hasta que no sea confirmado en un estudio ecográfico.\n- CALCIFICACIONES. Se las divide en benignas, intermedias y con alta probabilidad de malignidad, estas últimas se presentan en grupos y pueden ser: a) Granulares o pleomórficas. b) Lineales o moldeadas.\n- Distorsión arquitectural. Representa la rotura en un sitio determinado de las líneas de fuerza de la trama glandular, una reorganización del tejido mamario hacia un punto excéntrico del pezón. Se consideran BIRADS 4, sospechosas, y requieren estudio histológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_322",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "¿Con cuál de las siguientes imágenes mamográficas le solicitaría una biopsia mamaria, a una paciente de 60 años que consulta por dolor en el cuadrante superior externo de la mama izquierda y que tiene una mamografía realizada hace un año con aumento de densidad en esa zona?",
+    "opciones": {
+      "a": "Calcificaciones de trayectos vasculares.",
+      "b": "Calcificaciones puntiformes dispersas.",
+      "c": "Calcificaciones gruesas y dispersas.",
+      "d": "Microcalcificaciones agrupadas."
+    },
+    "correcta": "d",
+    "explicacion": "Son signos sospechosos de malignidad en la mamografia:\n- **Microcalcificaciones agrupadas**, lineales o ramificadas, de tamaño simétrico, finas e irregulares, en número ≥5 Son el signo más precoz.\n- Desectructuración del tejido mamario con pérdida de su arquitectura.\n- Una imagen mamográfica de tamaño menor que el apreciado clinicamente y estrias radiales que convergen.\n- Nódulo denso, espiculado, de bordes irregulares con retracción o afectación cutánea.\n- Densidades focales asimétricas.\nMamografia en la que se muestra un nódulo mamario con criterios sospechosos de malignidad.",
+    "explicacion_img": [
+      "img/explicaciones/gineco_mamografia_criterios_malignidad.jpg"
+    ],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_323",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 32 años, G1P1, concurre a control ginecológico. En la colposcopia se observa una zona de leucoplasia y mosaico ligeramente sobreelevado, irregular, sobre la línea escamocolumnar. El estudio citológico informa HSIL. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Criocirugía",
+      "b": "Control con colposcopia y citología en 6 meses",
+      "c": "Conización cervical",
+      "d": "Biopsia dirigida"
+    },
+    "correcta": "d",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES ACADEMICOS\nCuando las imágenes sospechosas corresponden a lesiones intraepiteliales que se encuentran contactando con el orificio cervical externo (OCE) o se introducen en el conducto endocervical, es necesaria la utilización de una pinza de apertura endocervical (endoespéculo), muy especialmente como evaluación preterapéutica y consideración de la estrategia terapéutica.\nLa **biopsia dirigida** es el estudio que provee certeza diagnóstica, considerándose el \"patrón de referencia\" para encarar cualquier tipo de tratamiento. Ante una citologia anormal y una colposcopia grado 2 (con alteraciones mayores), se impone la realización de una biopsia para confirmar lesiones preinvasoras (CIN 2-3/H-SIL). La realización de más de una toma de biopsia mejora la certeza diagnóstica. En lesiones amplias, se debe considerar la realización del denominado \"mapeo biópsico\" (varias tomas pequeñas). Para los casos en que fuera necesario (lesiones glandulares, pavimentosas que se introducen en endocervix o mixtas) el curetaje del endocérvix provee material histológico (LEC).\nRecordar: el papanicolaou es un estudio CITOLOGICO. Antes de tomar una conducta, sea escisional, control o destructiva local, se debe tener una confrimacion HISTOLOGICA. Por eso, la respuesta correcta es Biopsia dirigida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_324",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Mamografía"
+    ],
+    "enunciado": "Una paciente de 43 años concurre al control adjuntando una mamografía que informa parénquima mamario fibroglandular con leve transformación adiposa, calicificaciones vasculares dispersas y nódulo de bordes netos en cuadrante inferointerno izquierdo, compatible con ganglio intramamario. ¿A qué categoría de la clasificación BIRADS corresponden estas imágenes?",
+    "opciones": {
+      "a": "BIRADS 0",
+      "b": "BIRADS 3",
+      "c": "BIRADS 1",
+      "d": "BIRADS 2"
+    },
+    "correcta": "d",
+    "explicacion": "Se describe un hallazgo benigno. Imágenes de este tipo son el fibroadenoma calcificado, calcificaciones de tipo secretor, lesiones con contenido graso (quistes oleosos, lipomas, galactoceles), lesiones con contenido mixto como el hamartoma. Ganglio intramamario, calcificaciones vasculares, distorsión relacionada con cirugia previa. Se recomienda control rutinario anual.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_325",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "El tratamiento del cáncer de mama estadios 1 y 2 incluye:",
+    "opciones": {
+      "a": "Tratamiento hormonal",
+      "b": "Radioterapia y linfadenectomía",
+      "c": "Cirugia, radioterapia y quimioterapia",
+      "d": "Mastectomía"
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento conservador en cáncer de mama incluye **cirugía + radioterapia**.\nCriterios de inclusión para cirugía conservadora:\n- Estadios 0, I, II.\n- Estadios III con neoadyuvancia si la respuesta lo permitiera.\n- Adecuada relación volumen mamario/tamaño tumoral.\n- Márgenes histológicamente negativos en pieza quirúrgica.\n- Posibilidad de estricto control.\nPara la exploración axilar con técnica de ganglio centinela: axila negativa (NO) a la palpación y/o por imágenes.\n- Radioterapia: Luego de la cirugía conservadora la radioterapia en volumen mamario se emplea siempre como tratamiento adyuvante dado el alto riesgo de recaída local aun en pacientes sin compromiso ganglionar axilar. El tratamiento radiante es utilizado como parte de una estrategia terapéutica curativa en los estadios 0, I; II y III., se ha constatado que la cirugía conservadora asociada a la radioterapia permite reducir la tasa de recidivas locales hasta niveles equiparables con la mastectomía radical.\n- Tratamiento adyuvante **quimioterápico y/o hormonoterápico** de acuerdo con el resultado de receptores hormonales, her 2 neu y estado axilar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_326",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 28 años, nuligesta, consulta por haber presentado sangrados ocasionales durante las relaciones sexuales (sinusorragia). En el examen colposcópico se observa: mosaico irregular en hora 5 que penetra en canal cervical. Papanicolaou clase III. La biopsia de la imagen informa: lesión intraepitelial cervical de alto grado. ¿Cuál es la conducta inicial a seguir?",
+    "opciones": {
+      "a": "Conización cervical",
+      "b": "Vaporización láser",
+      "c": "Legrado endocervical",
+      "d": "Escisión de la zona de transformación"
+    },
+    "correcta": "c",
+    "explicacion": "Aunque se asume que no todo hallazgo colposcópico anormal se asocia con una lesión precursora de cáncer, mediante esta categorización, la mayoría de las imágenes catalogadas como cambios menores suele correlacionarse con metaplasia o L-SIL-CIN 1 y las catalogadas como cambios mayores con H-SIL-CIN 2- 3 o invasoras. Está indicado realizar biopsia ante todo hallazgo colposcópico anormal o sospecha de invasión. Si la zona de transformación no es visible (parcial o completamente) mediante colposcopia, no se puede excluir lesión endocervical y está indicado realizar un **legrado o cepillado endocervical**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_327",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "¿En que región del cuello uterino pueden aparecer la mayoría de las lesiones de carácter maligno?",
+    "opciones": {
+      "a": "Ectopia",
+      "b": "Endocevix",
+      "c": "Exocervix",
+      "d": "Zona de transformación"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta modificada con fines didacticos.\nLa **zona de transformación** es el nombre asignado al área del cuello uterino compuesta de epitelio que ha sufrido cambio metaplásico y es la imagen colposcópica más frecuente, además del asiento de la mayoría de las lesiones.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_328",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "En una paciente de 20 años, nuligesta, la colposcopia reveló una lesión acetoblanca de límites netos (grado 1), que llega al orificio cervical externo. La anatomía patológica informa SIL de bajo grado (CIN1) el LEC es negativo. ¿Qué conducta terapéutica considera Ud más apropiada?",
+    "opciones": {
+      "a": "Topicaciones con podofilino",
+      "b": "Conización cervical a bisturi",
+      "c": "Escisión amplia tipo 3",
+      "d": "Control citocolposcópico semestral"
+    },
+    "correcta": "d",
+    "explicacion": "La neoplasia intraepitelial cervical (CIN) 1 se trata con **control cada 6 meses con citología y colposcopia**. Si la lesión no desaparece luego de 2 años se considera persistente. Se recomienda seguimiento y eventual tratamiento con conización. En casos seleccionados podría preferirse la conización directa.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_329",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 29 años, consulta para un examen ginecológico de rutina. En la colposcopia se detecta una zona de transformación atípica con anillos hiperqueratósicos. El estudio citológico informa Papanicolau clase IV. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Conización cervical",
+      "b": "Biopsia dirigida",
+      "c": "Tratamiento destructivo local",
+      "d": "Raspado endometrial"
+    },
+    "correcta": "b",
+    "explicacion": "El resultado anormal de una prueba de Papanicolaou implica que es necesario realizar otras pruebas. La cantidad de células anormales encontradas sugiere la presencia de cáncer. Se requieren pruebas posteriores, incluyendo **biopsia** (extracción de una pequeña porción de tejido para su estudio), para establecer y diagnosticar la enfermedad.\nEn la actualidad, se utiliza la clasificacion actualizada de Bethesda (que no es la de la pregunta original) para las anomalias citologicas, con los siguientes resultados:\nClasificación de las citologías en base a la clasificación de Bethesda y al proyecto LAST, luego aceptado por la OMS (2014 y 2020) y presentado en Ar-entina (2016):\n- 1-Negativa\n- 2-Cambios citológicos menores: ASC-US, L-SIL\n- 3-Cambios citológicos mayores: ASC-H, H-SIL, AGC, AIS\n- 4-Carcinoma invasor: escamoso, adenocarcinoma",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_330",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Mamografía"
+    ],
+    "enunciado": "¿Qué acción se aconseja realizar en el caso de una paciente cuya mamografía actualizada determina \"Birads 3\"?",
+    "opciones": {
+      "a": "Derivarla a un centro de mayor complejidad para eventual biopsia",
+      "b": "Solicitarle que regrese en 1 año para ser reevaluada",
+      "c": "Realizar una ecografía mamaria",
+      "d": "Solicitarle que retorne en 6 meses para ser reevaluada"
+    },
+    "correcta": "d",
+    "explicacion": "Clasificación radiológica BIRADS son hallazgos radiológicos obtenidos en las diferentes técnicas de diagnóstico por imágenes en función de su nivel de sospecha de malignidad.\nEl BR3 es un hallazgo nuevo con baja probabilidad de malignidad, pero que necesita un seguimiento mas cercano que el de la población normal para estudiar su evilución, por ejemplo si aumenta su tamaño. Como el seguimiento mamográfico en paciente sin hallazgos es anual, se propone que a estas paciente el **seguimiento sea en 6 meses**.\nPara repasar en el BIRADS se distinguen siete categorias:\n- BIRADS 0: necesita completarse (estudios previos, estudios de diagnóstico por imágenes adicionales).\n- BIRADS 1: normal; la paciente puede continuar el programa de cribado con normalidad. control anual\n- BIRADS 2: hallazgos claramente benignos; la paciente puede continuar el programa de cribado con normalidad. control anual\n- **BIRADS 3**: probablemente benigno; requiere un seguimiento a corto plazo, generalmente a los 6 meses (probabilidad de malignidad < 2%).\n- BIRADS 4: anormalidad sospechosa del 3 al 94% (probablemente maligno); requiere la realización de biopsia diagnóstica.\n- BIRADS 5: hallazgos altamente sugestivos de malignidad; requiere biopsia (probabilidad de malignidad > 95%).\n- BIRADS 6: cáncer confirmado por biopsia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_331",
+    "materia": [
+      "ginecologia",
+      "aps"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "¿Cuál sería la respuesta más adecuada para una mujer sana de 56 años, sin antecedentes familiares de cáncer mamario, que lo consulta sobre qué puede hacer para disminuir la posibilidad de enfermar de cáncer de mama?",
+    "opciones": {
+      "a": "Que debe realizar mamografia y ecografia mamaria anual.",
+      "b": "Que debe realizar ejercicio físico y tener una dieta rica en frutas, verduras y baja en grasas.",
+      "c": "Que debe realizar ejercicio físico y consumir menos pollo en la dieta y tomar 2 copas de vino por dia.",
+      "d": "Que el riesgo es muy bajo porque no tiene antecedentes familiares."
+    },
+    "correcta": "b",
+    "explicacion": "La paciente en el caso clínico no tiene antecedentes familiares ni factores de riesgo para cáncer de mama, el mejor modo de prevenir esta enfermedad en este caso es evitando los factores de riesgo, como la obesidad, la dislipidemia, el consumo de alcohol y tabaco, que se previenen con **ejercicio y un estilo de vida saludable**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_332",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada, durante la cirugía mamaria de un carcinoma ductal in situ que tiene márgenes libres de lesión a 1,5 cm?",
+    "opciones": {
+      "a": "Finalizar la cirugia por márgenes suficientes.",
+      "b": "Realizar mastectomía por márgenes insuficientes.",
+      "c": "Realizar una segunda resección por márgenes insuficientes.",
+      "d": "Finalizar la cirugía con el estudio de los ganglios centinela por márgenes suficientes."
+    },
+    "correcta": "a",
+    "explicacion": "El **carcinoma ductal in situ** es la proliferación de células epiteliales malignas en los ductos, confinadas por la membrana basal y sin invasión del estroma, y supone el 80% de los carcinomas de mama in situ. Se considera una lesión preinvasora, progresando más del 25% a carcinoma infiltrante a los 10 años. La forma de presentación clínica más frecuente (75-80%) es asintomática, aunque puede debutar como tumoración palpable. El signo radiológico típico son microcalcificaciones lineales que siguen un conducto. El diagnóstico es siempre histológico mediante biopsia (preferiblemente BAGV).\nDebido a su gran tendencia a la recidiva (el 50% de las recidivas son en forma de carcinoma infiltrante), el tratamiento de elección es quirúrgico con **márgenes de resección amplios (> 10 mm)**. El compromiso de los márgenes se relaciona con mayor riesgo de recidiva local. El indice de Van Nuys permite evaluar el riesgo de recidiva y el tratamiento recomendado. Solo se recomienda la realización de Biopsia del Ganglio Centinela en los casos en los que se realice una mastectomía o tumorectomia con alto riesgo de microinfiltración (patrón comedo o CDIS de alto grado, extensión >4 cm, edad ≤ 35 años). Se recomienda seguimiento con exploración clínica cada 6/12 meses los 2 primeros años y posteriormente anual.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_333",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna de mama"
+    ],
+    "enunciado": "Una paciente de 38 años consulta por presentar secreción a través del pezón. Al examen se constata salida espontánea de líquido serohemático, uniporo, sin masa palpable asociada en la mama izquierda. ¿Cuál es la causa más frecuente de este tipo de derrame?",
+    "opciones": {
+      "a": "Papiloma intraductal",
+      "b": "Enfermedad de Paget de la mama",
+      "c": "Carcinoma ductal in situ",
+      "d": "Carcinoma papilar"
+    },
+    "correcta": "a",
+    "explicacion": "La telorrea es la secreción por el pezón. Si es bilateral se asocia con una causa funcional o farmacológica. La telorrea unilateral o uniorificial es típica de la ectasia ductal, quistes solitarios, **papiloma intraductal**, carcinoma ductal o enfermedad fibroquistica. La telorrea multiporo suele ocurrir cuando la afectación es más extensa. La secreción puede tener un aspecto purulento, tipica de la mastitis; grumoso, tipica de la galactoforitis; o serososanguinolento o hemorrágico (telorragia), que puede asociarse con carcinoma.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_334",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "En una paciente de 45 años, premenopausica con cáncer de mama con receptores de estrógeno y progesterona positivos de 98 y 95% respectivamente, la terapéutica adyuvante endocrina de elección es:",
+    "opciones": {
+      "a": "Salpingooforectomia bilateral",
+      "b": "Castración actinica",
+      "c": "Inhibidores de la Aromatasa",
+      "d": "Tamoxifeno"
+    },
+    "correcta": "d",
+    "explicacion": "En el cáncer de mama las únicas intervenciones dirigidas a la prevención primaria que han sido evaluadas en estudios fase III son terapias hormonales que antagonizan el efecto del estrógeno endógeno, siendo el **tamoxifeno**, el raloxifeno, el exemestano y el anastrazol los agentes que han probado su utilidad en la quimioprevención del cáncer mamario. Se destaca que solo reducen el riesgo de cáncer de mama con receptor de estrógeno (RE) positivo, no previniendo el desarrollo de cáncer mamario con RE negativo, responsable de aproximadamente el 30% de los cánceres mamarios en nuestra población.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_335",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Ecografía"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en una paciente de 25 años que consulta por la aparición repentina de un nódulo mamario palpable? La ecografía mamaria revela una imagen única de 3 cm de diámetro, anecogénico, de límites circunscritos, morfología regular y refuerzo acustico posterior.",
+    "opciones": {
+      "a": "Quiste mamario",
+      "b": "Papiloma intraductal",
+      "c": "Displasia fibrosa",
+      "d": "Fibroadenoma"
+    },
+    "correcta": "a",
+    "explicacion": "Pregunta modificada con fines didacticos.\nLos **quistes simples** son las masas encontradas con mayor frecuencia y constituyen un 25% de las masas palpables. El uso de la ecografia mamaria ayudó a reducir en un 35% el número de biopsias, pues la mamografia no permite determinar su naturaleza quística o sólida y sí lo hace la ecografia. La precisión de la ecografia para la caracterización de los quistes alcanza un 100%, siempre y cuando se cumplan los siguientes parámetros:\n- Forma redondeada o ligeramente ovalada\n- Márgenes bien circunscritos\n- Refuerzo acústico posterior\n- Compresibilidad\n- anecoicos (contienen liquido)\nLos criterios arriba expuestos realizan el diagnóstico definitivo de quiste simple y clasifican la lesión como hallazgo benigno, BI-RADS 2 y su riesgo de malignidad es muy cercano al 0%.\nTanto la displasia fibrosa como el fibroadenoma se verán ecograficamente como tejido solido hipoecoico, y el papiloma intraductal se vera como un nodulo quistico con componente solido en su interior.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_336",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna de mama"
+    ],
+    "enunciado": "Paciente de 28 años de edad que acude a la consulta por tumoración en mama izquierda. Al examen físico mamas simétricas, péndulas, no se observan cicatrices ni retracciones. En mama izquierda se palpa lesión nodular de 2 por 2 cm móvil, no dolorosa, no adherida a planos superficiales ni profundos. Ambas axilas sin adenopatías. ¿Cuál es su presunción diagnostica?",
+    "opciones": {
+      "a": "Necrosis grasa",
+      "b": "Fibroadenoma",
+      "c": "Absceso de mama",
+      "d": "Cáncer de mama"
+    },
+    "correcta": "b",
+    "explicacion": "Es el tumor benigno de la mama más frecuente, se desarrolla predominantemente en mujeres entre los 15-25 años. Clinicamente se manifiesta como tumoración solida, bien delimitada, esférica, móvil, no adherida a planos profundos. El primer estudio diagnostico en este caso debe ser una ecografia mamaria para caracterizar la lesion.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_337",
+    "materia": [
+      "ginecologia",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Prolapso e IU",
+      "Urología funcional e incontinencia"
+    ],
+    "enunciado": "Una mujer de 56 años consulta por sensación de tumoración en la vagina, que se intensifica con los esfuerzos y mejora con el decúbito. En el interrogatorio surge que como único síntoma la paciente presenta incontinencia urinaria leve ante esfuerzos moderados, como al toser, caminar rápido o levantar peso. ¿Cual es su sospecha diagnóstica? [cite: 430, 431, 432]",
+    "opciones": {
+      "a": "Cistocele",
+      "b": "Cáncer de vulva",
+      "c": "Colpohisterocele",
+      "d": "Infección urinaria"
+    },
+    "correcta": "a",
+    "explicacion": "El **prolapso genital** es el descenso o desplazamiento de los órganos pélvicos a través de la vagina y en dirección a la vulva, producido como consecuencia del fallo de sus elementos de sustentación y/o de la inervación y musculatura de los aparatos urinario e intestinal. [cite: 443]\nLa sintomatologia dependerá de los órganos afectados, así como del grado de prolapso y las modificaciones funcionales asociadas. [cite: 444]\nCuando existen síntomas, lo más común es la sensación de tumoración en la vagina o la vulva, que se intensifica con los esfuerzos y mejora con el decúbito. [cite: 445]\nOtros sintomas que pueden aparecer son dolor en hemiabdomen inferior, alteraciones urinarias (incontinencia urinaria de esfuerzo, retención urinaria, polaquiuria, disuria), alteraciones en la defecación (estreñimiento y tenesmo) y dolor en las relaciones sexuales. [cite: 446]\nTambién puede cursar con hemorragia y leucorrea por úlceras en el órgano prolapsado. [cite: 447]\nEn los casos graves de descenso del compartimento anterior, los uréteres son arrastrados y acodados, pueden obstruirse y generar hidronefrosis e, incluso, insuficiencia renal. [cite: 448]\nEn el tratamiento conservador en pacientes con prolapsos leves o moderados, asintomáticos y sin afectación de la calidad de vida se tratará de minimizar factores de riesgo con tratamiento hormonal local, ejercicios de rehabilitación del suelo pélvico y/o colocación de pesarios vaginales. [cite: 449]\nEn las pacientes con prolapsos graves o cuyos síntomas afecten la calidad de vida, está indicado el tratamiento quirúrigico. [cite: 450]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_338",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 29 años, G1P1, concurre a la consulta. Presenta adecuada adherencia al control ginecológico y adjunta resultado de biopsia de cérvix tomada hace 1 mes bajo guía colposcópica que informa neoplasia Intraepitelial de alto grado HSIL. Según el Consenso de Ginecología \"Manejo de las Lesiones Intraepiteliales de Cuello Uterino\", ¿cuál es la conducta recomendada? [cite: 452, 453, 454]",
+    "opciones": {
+      "a": "Control cito-colposcópico semestral por dos años",
+      "b": "Tratamiento destructivo local",
+      "c": "Control cito-colposcópico anual",
+      "d": "Tratamiento escisional"
+    },
+    "correcta": "d",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES DIDACTICOS. [cite: 464]\nLos procedimientos escisionales son recomendables ante sospecha o riesgo de (micro)invasión. [cite: 465]\nEn mujeres jóvenes < 25 años, ante un HSIL con unión escamocolumnar visible (o LEC negativo) en función de su alta tasa de regresión, que es superior al 60% en dos años, el seguimiento citocolposcópico semestral por 2 años es una conducta recomendable, mientras que si la unión escamocolumnar no es visible completamente o el LEC es positivo, es recomendable el tratamiento escisional. [cite: 466, 467]\nLos **tratamientos escisionales** estan indicados en HSIL (lesiones intraepiteliales de alto grado), ya que permite la evaluación histológica de la pieza. [cite: 468]\nSiempre antes de un tratamiento esciscional se debe tener un estudio del canal endocervical. [cite: 469]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_339",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Consulta una mujer de 69 años que por autopalpación notó un nódulo en la mama izquierda. Al examen físico presenta mamas fibroadiposas y se constatan dos formaciones en la mama izquierda: una formación duro pétrea en cuadrante superoexterno de 3 cm de diámetro, sin retracción de piel y no adherida a planos profundos, y otra formación duro pétrea en cuadrante superointerno de 1 cm de diámetro, sin retracción de piel y no adherida a planos profundos. Ambos pezones sin secreción. En axila homolateral se palpan adenopatías móviles y la axila derecha impresiona libre. ¿Cuál es el tratamiento quirúrgico inicial más adecuado? [cite: 471, 472, 473, 474, 475]",
+    "opciones": {
+      "a": "Mastectomia con vaciamiento axilar",
+      "b": "Mastectomia con estudio de ganglio centinela",
+      "c": "Cuadrantectomía con vaciamiento axilar",
+      "d": "Cuadrantectomía con estudio de ganglio centinela"
+    },
+    "correcta": "a",
+    "explicacion": "En el caso que sea pasible la cirugía como tratamiento inicial y dado que la axila es positiva a la palpación, se plantea en pacientes con estas caracteristicas, **mastectomía y exploración axilar** (por vaciamiento). [cite: 483]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_340",
+    "materia": [
+      "ginecologia",
+      "aps"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "María, de 41 años, ha leído que el carcinoma de mama es el tumor maligno más frecuente en la mujer y que aparece cada vez a edades más tempranas. ¿Cada cuánto tiempo le recomienda realizar una mamografía entre los 40 y 50 años? [cite: 485, 486]",
+    "opciones": {
+      "a": "Cada 6 meses",
+      "b": "Cada 3 meses",
+      "c": "Cada 1 a 2 años",
+      "d": "Cada 3 años"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes asintomáticas sin antecedentes familiares de cáncer de mama se puede efectuar una mamografía de base a partir de los 35 años, y se debe realizar una **cada uno a dos años** a partir de los 40 años y hasta los 70 años. [cite: 497]\nEn caso de poseer antecedentes familiares, especialmente si presentaron esta enfermedad antes de los 50 años, los estudios mamográficos deberían comenzar 10 años antes de la edad de presentación del caso en cuestión. [cite: 498]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_341",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Mamografía"
+    ],
+    "enunciado": "¿Cuál es la conducta a tomar ante el resultado de una mamografía informada con un BIRADS-3? [cite: 500]",
+    "opciones": {
+      "a": "Se explica que la probabilidad de malignidad es mayor al 2% y sugiere realizar una biopsia de mama.",
+      "b": "Se explica que la probabilidad de malignidad es menor al 2% y cita a control en 6 meses.",
+      "c": "Se explica que la probabilidad de malignidad es mayor al 2% y sugiere confirmar con otro estudio de imagen.",
+      "d": "Se explica que la probabilidad de malignidad es menor al 2% y cita a control en 1 año."
+    },
+    "correcta": "b",
+    "explicacion": "Segun el American College of Radiology. Breast Imaging Reporting and Data System (BI-RADS) Atlas. 5th ed. Reston, VA: American College of Radiology; 2013. [cite: 514, 515]\n- **BI-RADS 0** corresponde a un estudio incompleto. Significa que no es posible emitir una categorización final sin realizar estudios adicionales o comparar con mamografias previas. [cite: 516] La conducta es solicitar imágenes adicionales o conseguir estudios previos antes de emitir un informe definitivo. [cite: 518]\n- **BI-RADS 1** indica que el estudio es negativo: no se observan hallazgos sospechosos ni lesiones. [cite: 519] La recomendación es continuar con el control habitual según la edad y el riesgo de la paciente. [cite: 520]\n- **BI-RADS 2** describe hallazgos benignos, como quistes simples, ganglios intramamarios o calcificaciones vasculares. [cite: 521] Al igual que en la categoria 1, se indica seguimiento rutinario según protocolo de cribado. [cite: 522]\n- **BI-RADS 3** corresponde a hallazgos probablemente benignos, con un riesgo de malignidad menor al 2%. [cite: 523] Ejemplos son un nódulo circunscrito bien delimitado, calcificaciones redondeadas o una asimetria focal estable en el tiempo. [cite: 524] La conducta no es realizar biopsia de inmediato, sino un **control imagenológico a los 6 meses** y luego seguimiento periódico (generalmente hasta completar 2 o 3 años de estabilidad). [cite: 525]\n- **BI-RADS 4** incluye hallazgos sospechosos de malignidad que justifican biopsia para diagnóstico histológico. [cite: 526] El riesgo de cáncer es muy variable y por eso se subdivide en 4A (2-10%), 4B (10-50%), 4C (50-95%). [cite: 527, 528, 529, 530] En todos los casos, la conducta es realizar biopsia percutánea. [cite: 531]\n- **BI-RADS 5** se asigna a hallazgos altamente sugestivos de malignidad, con un VPP mayor al 95%. [cite: 532] La recomendación es realizar biopsia y planificar tratamiento oncológico. [cite: 534]\n- **BI-RADS 6** se usa cuando ya existe diagnóstico histológico confirmado de malignidad antes del tratamiento definitivo. [cite: 535]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_342",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Concurre a su consultorio Ana de 36 años con el resultado de test de HPV (VPH-CH2) positivo que usted mismo le solicitó. ¿Cuál es la conducta a seguir con esta paciente? [cite: 537, 538]",
+    "opciones": {
+      "a": "Volver a realizar el test a los 3 años.",
+      "b": "Se realizará \"triage\" con la citologia, y si la misma es negativa se repetirá el Test de HPV en 1 año.",
+      "c": "Se realizará \"triage\" con la citología, y si la misma es negativa se tomará una biopsia de 4 cuadrantes para confirmar el diagnóstico.",
+      "d": "Se realizará \"triage\" con la citología, y si la misma es negativa se repetirá el Test de HPV en 3 años."
+    },
+    "correcta": "b",
+    "explicacion": "Dado que la mayoría de infecciones por VPH son transitorias y no se asocian con lesiones -aún en mujeres mayores de 30 años- el test de VPH presenta una relativa baja especificidad; de alrededor del 89%. [cite: 552, 553] Esto hace necesaria la aplicación de una segunda prueba de tamizaje (**triage**) para identificar, entre el grupo de mujeres que resulten VPH positivas, aquellas con lesiones precancerosas o cáncer que deberán ser luego confirmadas histológicamente. [cite: 553]\nLa introducción del esquema combinado del test de VPH seguido de citologia en aquellas mujeres con VPH positiva reducirá la proporción de citologias negativas y, por ende, incrementará el valor predictivo positivo de una citologia anormal. [cite: 554]\nEs por eso que la estrategia establece la doble toma del test de VPH y citología en el mismo momento. [cite: 556] La citología solo deberá leerse en los casos de mujeres positivas para el test de VPH. [cite: 557] No se leerán las citologias de mujeres negativas para el test de VPH. [cite: 558]\nLa edad seleccionada para el tamizaje con test de VPH es a partir de los 30 años (30 años y más). [cite: 559]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_343",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 29 años concurre a la consulta con resultado de Biopsia de Cérvix tomada hace 1 mes bajo guía colposcópica que informa Neoplasia Intraepitelial de Alto Grado HSIL. ¿Cuál es la conducta recomendada [cite: 569, 570]",
+    "opciones": {
+      "a": "Tratamiento destructivo local",
+      "b": "Control cito-colposcópico anual",
+      "c": "Control cito-colposcópico semestral",
+      "d": "Tratamiento escisional"
+    },
+    "correcta": "d",
+    "explicacion": "La recomendación ante un diagnostico de HSIL es realizar una biopsia ampliada (LLETZ o conización), excepto en embarazadas, es decir **tratamiento escisional**, ya que es la lesion precursora del CCU. [cite: 579]\nExcepción: En mujeres embarazadas, realizar control colpo-citológico durante el embarazo y reevaluación posparto a partir de las seis-ocho semanas en el puerperio. [cite: 580, 581]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_344",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna de mama"
+    ],
+    "enunciado": "¿Cuál es el signo más frecuente en un Carcinoma Papilar de Mama? [cite: 583]",
+    "opciones": {
+      "a": "Derrame sanguinolento por el pezón",
+      "b": "Adenopatia axilar y nódulo palpable",
+      "c": "Nódulo palpable subareolar",
+      "d": "Retracción del pezón"
+    },
+    "correcta": "a",
+    "explicacion": "EL CARCINOMA PAPILAR PRESENTA: Derrame por pezón HEMÁTICO, UNILATERAL Y UNIFORO. [cite: 591]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_345",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "Indique la opción correcta respecto de la mamografía: [cite: 593]",
+    "opciones": {
+      "a": "Es de gran utilidad en las pacientes más jóvenes",
+      "b": "El tamizaje en poblacion general comienza a los 40 años con periodicidad anual",
+      "c": "Sirve para diferenciar imágenes sólidas de quisticas",
+      "d": "Se debe realizar en el control del segundo trimestre del embarazo"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines didacticos [cite: 604]\nEl tamizaje para cancer de mama comienza a los **40 años con periodicidad anual** en poblacion general. [cite: 605]\nFuente: Consenso Nacional Inter-Sociedades sobre Tamizaje en Cáncer de Mama [cite: 606]\nEn caso de poseer antecedentes familiares, especialmente si presentaron esta enfermedad antes de los 50 años, los estudios mamográficos deberían comenzar 10 años antes de la edad de presentación del caso en cuestión. [cite: 607]\nGuias INC - instituto nacional del cancer: El tamizaje en poblacion general comienza a los 50 años con periodicidad bienal. [cite: 608]\nEs importante tener en cuenta el enunciado de la pregunta, para ver la fuente a partir de la cual se elabora la respuesta. [cite: 609]\nEn este caso puntual, no esta la opcion de comienzo a los 50 años y no especifica fuentes, por lo que la respuesta correcta es: \"El tamizaje en poblacion general comienza a los 40 años con periodicidad anual\" [cite: 610]\nLas otras opciones son incorrectas. [cite: 611]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_346",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 47 años, con diagnóstico de carcinoma de mama, presenta en cuadrante superoexterno de mama izquierda nódulo de 4 cm de diámetro, consistencia duro pétrea, que produce retracción y ulceración en piel. En axila homolateral se palpa un conglomerado ganglionar fijo. No se evidencian metástasis a distancia. ¿Cuál es la conducta inicial más adecuada? [cite: 613, 614, 615]",
+    "opciones": {
+      "a": "Tumorectomía con linfadenectomía axilar",
+      "b": "Mastectomía radical modificada",
+      "c": "Quimioterapia neoadyuvante",
+      "d": "Tumorectomia con ganglio centinela"
+    },
+    "correcta": "c",
+    "explicacion": "En los estadios IIIA y IIIB, se comienza con esquema de **quimioterapia** (neoadyuvante), es la terapia de elección para pacientes con enfermedad locorregional. [cite: 625]\nEs óptimo para todas las pacientes que son candidatas al tratamiento adyuvante posterior. [cite: 626]\nEl tratamiento neoadyuvante debe ser adaptado según el perfil biológico del tumor primario, por eso en todas la pacientes debe hacerse una punción histológica para obtener material suficiente para determinaciones diagnosticas, receptores hormonales, etc. [cite: 627]\nLa quimioterapia neoadyuvante permite cirugías menos invasivas, aumento de la resecabilidad tumoral, incremento del control local, permite conocer la quimiosensibilidad del tumor y mejora la cosmética al permitir cirugías conservadoras de existir buena respuesta tumoral. [cite: 628]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_347",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuáles son todos los componentes del tratamiento conservador en el cáncer de mama? [cite: 630]",
+    "opciones": {
+      "a": "Mastectomía simple y radioterapia",
+      "b": "Cuadrantectomia, linfadenectomia axilar y radioterapia",
+      "c": "Cuadrantectomia, linfadenectomia axilar y quimioterapia",
+      "d": "Cuadrantectomia y linfadenectomía axilar"
+    },
+    "correcta": "b",
+    "explicacion": "Tratamiento conservador: es el tratamiento de elección, siempre que sea posible. [cite: 640]\nLa tumorectomía consiste en la exéresis del tejido tumoral con márgenes libres de infiltración tumoral microscópica (2-5 mm en tumores infiltrantes y 10 mm en caso de CDIS). [cite: 641] Está indicado en tumores no multicéntricos (varios tumores en diferentes cuadrantes) de tamaño < 3 cm. [cite: 642]\nEn tumores multifocales (varios tumores en el mismo cuadrante) estaría indicada la **cuadrantectomía** como cirugía conservadora. [cite: 643]\nLos tumores con tamaño > 3-5 cm pueden beneficiarse con un tratamiento neoadyuvante con quimioterapia, hormonoterapia o ambas, que reduzcan el tamaño tumoral hasta alcanzar uno adecuado para la cirugia conservadora. [cite: 644]\nLa **linfadenectomía axilar** consiste en la extirpación del paquete linfoadiposo axilar. [cite: 645] Se recomienda la exéresis únicamente de los niveles I y II de Berg. [cite: 646]\nLuego de la cirugía conservadora siempre se indica **radioterapia** en el lecho quirúrgico. [cite: 654]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_348",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 18 años, nuligesta y que utiliza anticonceptivos orales como método anticonceptivo, concurre a la consulta para realizar control ginecológico. En la colposcopia se observa ectopia periorificial. El resultado del PAP informa L-SIL. De acuerdo con las Guías de Manejo de las Citologías Anormales, ¿cuál es la conducta inicial más adecuada? [cite: 656, 657, 658]",
+    "opciones": {
+      "a": "Legrado endocervical",
+      "b": "Biopsia dirigida",
+      "c": "Tratamiento destructivo local",
+      "d": "Repetir PAP en 6 meses"
+    },
+    "correcta": "d",
+    "explicacion": "La SIL de bajo grado es una lesión intraepitelial escamosa que representa la manifestación clínica y morfológica de la infección producida por el virus VPH. [cite: 670]\nEstas lesiones tienen un bajo riesgo de progresión a carcinoma. [cite: 671]\nCon correlación colpo-cito-histológica se recomienda control cada 6 meses con citología y colposcopia (Caso de la pregunta). [cite: 672]\nSi persiste la lesión luego de 2 años se considera persistente. [cite: 673]\nSin correlación cito-colpo-histológica y con sospecha de mayor lesión deberá efectuarse una revisión de todos los hallazgos y luego optar por un procedimiento escisional para asegurar el diagnóstico histológico, excepto en adolescentes o menores a 21 años en las que se prefiere el seguimiento estricto **cada 6 meses** por la alta tasa de regresión. [cite: 675]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_349",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "Persona de 46 años consulta por nódulo mamario. Al examen clínico se detecta nódulo de 2 cm, móvil, duro, indoloro, con bordes irregulares y sin alteraciones en la piel ubicado en CSE. En la mamografía se observa una imagen nodular de 1.5 cm de diámetro de bordes difusos con microcalcificaciones agrupadas heterogéneas. ¿Cuál es su diagnóstico presuntivo? [cite: 677, 678, 679]",
+    "opciones": {
+      "a": "Cáncer de mama",
+      "b": "Quiste displásico",
+      "c": "Mastopatia escleroquistica",
+      "d": "Fibroadenoma calcificado"
+    },
+    "correcta": "a",
+    "explicacion": "Un nodulo con las caracteristicas clinicas del enunciado + la mamografia que presenta nodulo asociado a microcalcificaciones (Birads 5) es altamente sugestivo de **cancer de mama**. [cite: 687]\nPor otro lado, el fibroadenoma calcificado se evidencia como un nódulo redondeado u ovalado de bordes circunscriptos o definidos. [cite: 688]\nLa calcificación tipica del fibroadenoma es microcalcificación en pop-corn y suelen ser macrocalcificaciones. [cite: 689]\nEl quiste displásico se evidencia como una imagen anecoica con contenido heterogéneo de bodes circunscriptos o definidos, sin nódulo. [cite: 690]\nEn el caso de la Mastopatia ecleroquistica o displasia quistica mamaria se evidencia como zonas densas, difusas y con quistes. [cite: 691]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_350",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora",
+      "HIV"
+    ],
+    "enunciado": "El control ginecológico de una paciente VIH positiva muestra en el PAP alteraciones citológicas ASCUS (células atípicas escamosas de significado incierto) y en el examen colposcópico no presenta imágenes. ¿Cuál es la conducta más adecuada? [cite: 693, 694]",
+    "opciones": {
+      "a": "Control anual y seguimiento del recuento de CD4",
+      "b": "Repetir colposcopia para diagnosticar lesión cervical",
+      "c": "Biopsia de cuello uterino y recuento CD4",
+      "d": "Control cada 6 meses y seguimiento del recuento de CD4"
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes con ASCU-US en Pap el tratamiento depende de la presencia de factores de riesgo:\n- Imposibilidad de seguimiento. [cite: 704]\n- Pacientes mayores de 35 años. [cite: 705]\n- Tabaquismo. [cite: 706]\n- Compromiso inmunológico: trasplantadas, VIH +, corticoterapia, etc [cite: 707]\nAnte la falta de correlación con la colposcopia, se prefiere el **control en 6 meses y control con recuento de CD4** dada la elevada tasa de regresión. [cite: 708]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_351",
+    "materia": [
+      "ginecologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "¿Qué factor aumenta el riesgo de padecer cáncer de mama en mujeres? [cite: 710]",
+    "opciones": {
+      "a": "La edad al primer embarazo a término antes de los 30 años.",
+      "b": "La aparición de menopausia en menores de 55 años.",
+      "c": "Sobrepeso u obesidad en la postmenopausia.",
+      "d": "La menarca tardia."
+    },
+    "correcta": "c",
+    "explicacion": "El cáncer de mama mas frecuente es el esporádico (no relacionado con la herencia familiar ni las mutaciones genéticas). [cite: 718]\nEl mayor factor de riesgo del cáncer de mama es la exposición aumentada a una ventana estrogénica (recibir por mas tiempo estimulo estrogénico). [cite: 719]\nEs por eso que tanto la menarca tardia y la menopausia precoz no son factores que aumenten el riesgo de cáncer de mama, ya que en ambas condiciones la ventana estrogénica se ve disminuida. [cite: 720]\nNo hay evidencia que la edad del primer embarazo influya en el riesgo aumentado del cáncer de mama, como tampoco en un reducción. [cite: 721]\nEl **sobrepeso en la menopausia** es un factor de riesgo importante a valorar en una paciente con un cáncer hormono-dependiente (cáncer de mama y endometrio), ya que el tejido adiposo es capaz de realizar conversión periférica de los andrógenos sintetizados a nivel suprarrenal a estrógenos, aumentado así el riego de estos canceres. [cite: 722]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_352",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "Una paciente de 41 años, trae a la consulta una mamografía que informa múltiples calcificaciones agrupadas, irregulares, menores de 2 mm en el cuadrante superoexterno de mama derecha. ¿Cuál es la conducta inicial más adecuada? [cite: 724, 725]",
+    "opciones": {
+      "a": "Punción biopsia citológica",
+      "b": "Control mamográfico en 6 meses",
+      "c": "Cuadrantectomia de mama derecha",
+      "d": "Punción biopsia histológica"
+    },
+    "correcta": "d",
+    "explicacion": "Ante un hallazgo en mamografia de control de microcalcificaciones agrupadas se debe solicitar mamografia magnificada con o sin focalización. [cite: 733]\nLos posibles resultados en la magnificación son:\n- Microcalcificaciones benignas BIRADS2: Control anual [cite: 736]\n- Microcalcificaciones probablemente benignas BIRADS3: control semestral. [cite: 737]\n- Microcalcificaciones sospechosas de malignidad BIRADS 4: punción histológica o biopsia radioquirúrgica. [cite: 737]\n- Microcalcificaciones con alta sospecha de malignidad BIRADS 5: Punción histológica o biopsia radioquirúrgica. [cite: 738]\nEn este caso de múltiples calcificaciones agrupadas, irregulares, menores de 2 mm en el cuadrante superoexterno de mama derecha se recomienda **punción histológica** o biopsia radioquirúrgica según algoritmo de microcalcificaciones. [cite: 739]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_353",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Patología benigna de mama",
+      "Resonancia magnética"
+    ],
+    "enunciado": "Paciente de 31 años con implantes mamarios retroglandulares que presenta induración generalizada de la mama derecha, leve eritema y ganglios axilares derechos palpables. ¿Cuál es el método de elección para valorar la indemnidad de las prótesis? [cite: 741, 742, 743]",
+    "opciones": {
+      "a": "Resonancia magnética",
+      "b": "Mamografia digital con tomosintesis",
+      "c": "Tomografia computarizada de tórax",
+      "d": "Punción con aguja fina para detectar silicona libre"
+    },
+    "correcta": "a",
+    "explicacion": "La **Resonancia magnética (RM)** mamaria está indicada en la evaluación de los implantes mamarios, para caracterizar anomalias mamográficas cuando el resto de los exámenes imagenológicos no han sido concluyentes. [cite: 751]\nLa RM es la técnica de elección, por su sensibilidad y especificidad, para el control de las prótesis mamarias, ya que pone en evidencia signos de rotura intracapsular y extracapsular y sus complicaciones, tanto en mujeres sintomáticas como asintomáticas. [cite: 752]\nPara evaluar indemnidad de las protesis, no hace falta el contraste, pero para evaluar parenquima mamario en pacientes con implantes (por ejemplo, en el caso de la pregunta) SI es necesario realizar RMN con gadolinio. [cite: 753]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_354",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 53 años, con diagnóstico de carcinoma de mama, presenta en cuadrante superointerno de mama derecha nódulo de 5 cm de diámetro de consistencia duro pétrea que produce retracción y ulceración en piel. En axila derecha se palpa un conglomerado ganglionar fijo. No se evidencian metástasis a distancia. ¿Cuál es la conducta inicial más adecuada? [cite: 755, 756, 757]",
+    "opciones": {
+      "a": "Mastectomia radical modificada",
+      "b": "Tumorectomia con linfadenectomia axilar",
+      "c": "Tumorectomia con ganglio centinela",
+      "d": "Quimioterapia neoadyuvante"
+    },
+    "correcta": "d",
+    "explicacion": "La administración de **quimioterapia** adyuvante sistémica ha demostrado una mejoria en la supervivencia global independientemente de la edad, afectación ganglionar y sensibilidad hormonal. [cite: 765]\nEsta conducta es adecuada para estadios avanzados, donde no se indica la cirugía de primer intento. [cite: 766]\n(Esta pregunta fue modificada con fines didácticos) [cite: 767]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_355",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Una paciente de 28 años, G2P2, consulta para realizar control ginecológico de rutina. La colposcopia revela una ZT tipo 1, sin lesion visible. El resultado de la citología informa ASC-US (células escamosas atípicas de significado incierto). Según la Guía para la Prevención del Cáncer cervicouterino, ¿cuál es la conducta inicial más adecuada? [cite: 769, 770, 771, 772]",
+    "opciones": {
+      "a": "Continuar con controles ginecológicos de rutina",
+      "b": "Realizar biopsia dirigida",
+      "c": "Repetir citología en 6 meses",
+      "d": "Realizar tratamiento destructivo local"
+    },
+    "correcta": "c",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES DIDACTICOS [cite: 782]\nLa conducta más apropiada para el manejo de las pacientes con ASC-US (células escamosas atipicas de significado incierto) es el control colposcópico expectante, dado que lo más frecuente en estas pacientes es la presencia de lesiones intraepiteliales escamosas (SIL) de bajo grado, que tienen una elevada tasa de regresión espontánea (90% a los 3 años en mujeres jóvenes y 60% en mujeres en edad reproductiva). [cite: 783]\nEl seguimiento es **cito-colposcópico semestral** por 1 año, y reevaluar la lesión cumplido ese plazo para determinar conducta. [cite: 784]\nRecordar que el TEST de HPV en este caso no es la estrategia de tamizaje dado que la paciente es menor de 30 años. [cite: 785]\nFuente: Guia TGI 2022 [cite: 786]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_356",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Qué estructuras anatómicas se conservan en la mastectomía radical modificada de Madden? [cite: 788]",
+    "opciones": {
+      "a": "Pectoral menor y surco submamario",
+      "b": "Pectoral menor y complejo aréola pezón",
+      "c": "Pectoral mayor y ganglios linfáticos axilares",
+      "d": "Pectoral menor y pectoral mayor"
+    },
+    "correcta": "d",
+    "explicacion": "Es un tipo de mastectomía practicada para el tratamiento del cáncer de mama. [cite: 796]\nIgual que la mastectomía radical clásica consiste en la ablación de la totalidad de la mama, incluyendo la piel, la aréola y la glándula, así como los ganglios linfáticos axilares homolaterales, previo análisis con ganglio centinela. [cite: 797]\nA diferencia de la mastectomía radical clásica, en la que se extirpan los músculos pectorales mayor y menor, en la mastectomia radical modificada **se preservan estos músculos (pectoral mayor y menor)**. [cite: 798]\nActualmente es el tipo de mastectomia más utilizada por su menor agresividad respecto de la mastectomia radical clásica y consecuentemente menor grado de secuela funcional. [cite: 799]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_357",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Felisa concurre a la consulta ginecológica con resultado de PAP que indica: Insatisfactorio. ¿Qué es lo que se debe hacer? [cite: 801]",
+    "opciones": {
+      "a": "Repetir citologia lo antes posible.",
+      "b": "Derivar para colposcopia.",
+      "c": "Repetir citologia en 6 meses.",
+      "d": "No repetir. Esperar al próximo control."
+    },
+    "correcta": "a",
+    "explicacion": "Citología cervicovaginal (PAP): técnica validada para el cribado de patologia cervical. Se deben obtener muestra de endocervix y exocérvix. [cite: 809]\nLa citologia en medio liquido facilita la lectura al eliminar sangre, grumos y otros artefactos, con el consiguiente aumento de muestras satisfactorias para su valoración. [cite: 810]\nAdemás permite realizar la prueba del VPH u otras técnicas auxiliares en la misma muestra de forma diferida. [cite: 811]\n**Si el resultado es indeterminado debe repetirse de inmediato**. [cite: 812] Puede clasificarse en los siguientes grados:\n- I: normal [cite: 813]\n- II: atipias celulares benignas por inflamación, infección viral, regeneración, procesos metaplásicos, infección por HPV leve. [cite: 814]\n- III: hallazgo fronterizo, leve sospecha de malignidad, células atipicas premalignas. [cite: 815]\n- IV: células con alta sospecha de malignidad, atipias de alto grado o carcinoma in situ. [cite: 816]\n- V: alta sospecha de cáncer. [cite: 817]",
+    "explicacion_img": [
+      "img/explicaciones/gineco_pap_grados.jpg"
+    ],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_358",
+    "materia": [
+      "ginecologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Control de salud"
+    ],
+    "enunciado": "Una mujer tiene antecedentes familiares de primer grado de cáncer de mama ¿en cuánto puede aumentar su probabilidad de desarrollar esta misma enfermedad? [cite: 819]",
+    "opciones": {
+      "a": "2 a 4 veces.",
+      "b": "4 a 6 veces.",
+      "c": "1 a 2 veces.",
+      "d": "3 a 5 veces."
+    },
+    "correcta": "a",
+    "explicacion": "Antecedentes familiares que aumentan el riesgo de cáncer de mama:\n- Un familiar de primer grado con cáncer de mama **aumenta el riesgo de padecer cáncer de mama entre 2 y 4 veces**. [cite: 832]\n- Cáncer de mama a edad temprana (premenopausico). [cite: 833]\n- Cáncer de mama bilateral o multicéntrico. [cite: 834]\n- Dos o más mujeres con cáncer de mama en una misma familia. [cite: 835]\n- Cáncer de mama en más de una generación familiar. [cite: 836]\n- Individuos con cáncer de mama y otro tumor primario (dos tumores primarios en el mismo individuo). [cite: 837]\n- Etnia de riesgo (judia asquenazi, islandeses, etc.). [cite: 838]\n- Cáncer de mama en hombres. [cite: 839]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_359",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Mamografía"
+    ],
+    "enunciado": "¿Cuál es la conducta por seguir en una mujer de 57 años que tiene una mamografía donde se visualizan microcalcificaciones isomorfas e isodensas con alguna tendencia a agruparse? [cite: 841]",
+    "opciones": {
+      "a": "Realizar control cada 6 meses durante 2 años",
+      "b": "Realizar control anual.",
+      "c": "Realizar biopsia diagnóstica.",
+      "d": "Realizar control a los 3 meses y al año."
+    },
+    "correcta": "a",
+    "explicacion": "La mamografia es el procedimiento de SCREENING MAMARIO más importante, es el primer estudio que se ha de realizar en pacientes de 35 años, independientemente de tener factores de riesgo. [cite: 851] Se deben tomar dos proyecciones de la mama: oblicua-mediolateral y craneocaudal. [cite: 852]\nLos hallazgos en la mamografia son los siguientes:\n- **Microcalcificaciones**:\n  - Distribución agrupada: al menos cinco calcificaciones en un área pequeña de tejido (menor o igual a 1 mL). [cite: 855] Estas calcificaciones pueden estar en las unidades ductolobulillares terminales, conductos, estroma, masas o en la piel. [cite: 856] Requieren evaluación complementaria con proyecciones magnificadas y deben estar agrupadas en ambas proyecciones para considerarlas sospechosas... [cite: 857] Se consideran benignas o malignas según la morfologia de cada grupo. [cite: 858] El valor predictivo positivo para malignidad descrito en la literatura es entre 22 y 28%. [cite: 859] Entran en la categoria diagnóstica **BIRADS 3 y requieren control en 6 meses**. [cite: 860]\n  - Distribución regional: Este patrón describe calcificaciones en un área extensa... [cite: 861] Generalmente son benignas, pero se debe considerar la morfologia. [cite: 862]\n  - Distribución difusa o dispersa: Son calcificaciones distribuidas aleatoriamente... [cite: 863] Pueden ser unilaterales o bilaterales y generalmente son benignas. [cite: 864]\n  - Distribución segmentaria: Este patrón de distribución sugiere el depósito de calcio en los ductos y sus ramas... [cite: 865] Si bien puede presentarse en patologia benigna, como las calcificaciones secretoras, su presentación sugiere la presencia de un cáncer extenso o multifocal. [cite: 866]\n  - Distribución lineal: Las calcificaciones se distribuyen en una linea que puede ramificarse... [cite: 868] Sugiere malignidad... [cite: 869]\nDe acuerdo al American College of Radiology ACR Appropriateness Criteria, existen determinados patrones de presentación que modifican el grado de sospecha y la categoria BI-RADS de las microcalcificaciones. [cite: 870]\n- Microcalcificaciones redondas:\n  - Aisladas o dispersas, son catalogadas como BI-RADS 2, benignas. [cite: 886]\n  - Agrupadas, son catalogadas como BI-RADS 3, sugiriéndose control en 6 meses. [cite: 887]",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_360",
+    "materia": [
+      "ginecologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "ITS"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de cáncer de cuello uterino?",
+    "opciones": {
+      "a": "Tabaquismo.",
+      "b": "Alcoholismo.",
+      "c": "Papilomavirus humano.",
+      "d": "Multiparidad"
+    },
+    "correcta": "c",
+    "explicacion": "Los VPH de alto riesgo oncogénico están implicados en la etiopatogenia del cáncer de cérvix, con una fracción atribuible (FA) cercana al 100%. Los subtipos 16 y 18 son los de mayor poder oncogénico.\nOtros cánceres con los que se ha visto relación son, por orden de frecuencia:\n- Ano (FA 90%)\n- Vagina (FA 70%)\n- Pene (FA 40%)\n- Vulva (FA 40 %)\n- Orofaringe (FA 10-35%)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_361",
+    "materia": [
+      "ginecologia",
+      "aps"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Atención Primaria de la Salud"
+    ],
+    "enunciado": "Acude a su consulta una mujer de 27 años, nuligesta, con ritmo menstrual regular, que le informa que es la primera vez que concurre a un control ginecológico. En relación con el cribado de la infección por VPH, ¿cuál de las siguientes es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar tres dosis de vacuna cuadrivalente contra VPH separadas por 6 meses si la paciente no fue vacunada.",
+      "b": "Indicar citologia cervicovaginal y de ser negativo, nueva citologia al año",
+      "c": "Indicar test de VPH para detectar DNA de VPH de tipo oncogénico.",
+      "d": "Indicar citologia cervicovaginal, que de ser negativo se repite en 3 años."
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta actualizada con fines didacticos.\nRecomendaciones de cribado en la población general:\n- Mujeres menores de 30 años y con mas de 3 años desde IRS: citología anual, repite anual si negativa y cada 3 años. Esquema 1-1-3.\n- Mujeres de entre 30 y 65 años: prueba de determinación de VPH, si negativa repite cada 5 años (opción preferida).\n- Mujeres mayores de 65 años: fin del cribado siempre que se cumpla cribado previo adecuado y negativo los 10 años previos (en caso contrario debe realizarse co-test, y si éste es negativo, no son necesarias más pruebas de cribado) y sin antecedente de CIN o cáncer de cérvix tratado en los 20 años previos.\nCribado en situaciones especiales:\n- Paciente inmunosuprimida: citología anual a partir de los 21 años. A partir de los 30 años, realizar co-test cada 3 años en mujeres con TARGA (tratamiento antirretroviral de gran actividad) y CD4 > 200 y anual en caso contrario.\n- Histerectomía total previa por patología benigna: no se realiza cribado.\n- Antecedente personal de CIN 2+ o adenocarcinoma in situ: seguimiento durante al menos 20 años tras el tratamiento.\nRecordar que la VACUNA no es una estrategia de TAMIZAJE.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_362",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Cáncer de mama",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "En una paciente de 48 años con el hallazgo imagenológico y clínico de un nódulo de 1,3 cm de diámetro en mama derecha, se realiza punción histológica que informa un carcinoma ductal invasor de la mama. ¿Cuál es la terapéutica locorregional de elección?",
+    "opciones": {
+      "a": "Resección amplia, identificación de ganglio centinela y radioterapia.",
+      "b": "Mastectomia con vaciamiento ganglionar",
+      "c": "Mastectomía con identificación de ganglio centinela.",
+      "d": "Resección amplia, linfadenectomia y radioterapia"
+    },
+    "correcta": "a",
+    "explicacion": "El tratamiento conservador es el tratamiento de elección, siempre que sea posible. La tumorectomía consiste en la exéresis del tejido tumoral con márgenes libres de infiltración tumoral microscópica (2-5 mm en tumores infiltrantes y 10 mm en caso de CDIS). Está indicado en tumores no multicéntricos (varios tumores en diferentes cuadrantes) de tamaño < 3 cm. En tumores multifocales (varios tumores en el mismo cuadrante) estaría indicada la cuadrantectomía como cirugía conservadora.\nLos tumores con tamaño > 3-5 cm pueden beneficiarse con un tratamiento neoadyuvante con quimioterapia, hormonoterapia o ambas, que reduzcan el tamaño tumoral hasta alcanzar uno adecuado para la cirugía conservadora.\nLa linfadenectomía axilar consiste en la extirpación del paquete linfoadiposo axilar. Se recomienda la exéresis únicamente de los niveles I y II de Berg. Se considera linfadenectomia negativa cuando se extraen un total de 7-10 ganglios, todos ellos negativos.\nEstá indicada cuando el resultado del ganglio centinela es positivo (que siempre debe efectuarse junto con la cirugía conservadora), en presencia de un carcinoma inflamatorio, con antecedentes de cirugía o irradiación previa de la axila o con diagnóstico anatomopatológico prequirúrgico de metástasis ganglionares.\nSiempre está indicada la irradiación del volumen mamario restante. La radioterapia posoperatoria disminuye el riesgo de recidiva locorregional en pacientes con factores de riesgo. Deberá aplicarse sobre la pared torácica y la cadena axilosupraclavicular en caso de lesiones T3-T4, si hay más de tres ganglios axilares positivos o si existe afectación del margen de resección.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_363",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "¿Cuál sería la conducta más adecuada en una mujer de 25 años sin controles ginecológicos periódicos, a quien se le realizó un PAP cuyo informe citológico es células escamosas atípicas (\"ASC -H\")?",
+    "opciones": {
+      "a": "Solicitar ecografia transvaginal",
+      "b": "Derivar para colposcopia y biopsia de haber lesiones de alto grado",
+      "c": "Repetir citologia lo antes posible",
+      "d": "Repetir citología en 6 meses o 1 año"
+    },
+    "correcta": "b",
+    "explicacion": "ASC-US son las siglas en inglés de \"anomalia de células escamosas de significado indeterminado\" que significa que hay leves cambios anormales en las células de cuello de útero.\nPor el contrario, **ASC-H** significa \"anomalias escamosas donde no se puede descartar lesion de alto grado\".\nToda paciente con pap ASC-H debe ser derivada para **colposcopia** y eventual biopsia en caso de hallar lesiones sospechosas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_364",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con una mujer de 36 años que trae a la consulta el siguiente resultado de Papanicolau (PAP) realizado hace un mes: muestra satisfactoria, trófico, ASC-H ausencia de células glandulares y endometriales?",
+    "opciones": {
+      "a": "Repetir la citologia en seis meses.",
+      "b": "Derivar para conización.",
+      "c": "Repetir la citologia en forma anual.",
+      "d": "Realizar colposcopia y biopsia de lesiones sospechosas."
+    },
+    "correcta": "d",
+    "explicacion": "La colposcopia es una técnica basada en la exploración magnificada de los epitelios del cuello uterino, vagina y vulva, cuyo objetivo fundamental es el diagnóstico y la orientación terapéutica de las lesiones invasoras o preinvasoras del tracto genital inferior. Se complementa con la tinción con ácido acético al 3% y con la prueba de Schiller (captación de Lugol). Es una técnica muy sensible pero poco especifica, pues las imágenes colposcópicas anormales no siempre corresponden a lesiones intraepiteliales.\nEn presencia de alteración de células escamosas en la que no puede excluirse lesión intraepitelial de alto grado (**ASC-H**) debe efectuarse una **colposcopia** para poder identificar lesiones en las que pueda tomarse una biopsia para excluir patologia cervical.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_365",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "¿Cuál de los siguientes se considera un factor de riesgo para desarrollo de cáncer de mama?",
+    "opciones": {
+      "a": "Multiparidad con lactancia prolongada.",
+      "b": "Menarca precoz.",
+      "c": "Menopausia precoz.",
+      "d": "Dieta hiperproteica."
+    },
+    "correcta": "b",
+    "explicacion": "En la Argentina el cáncer de mama implica 19 386 casos nuevos y 5645 muertes por año. Estas cifras lo ubican como la primera causa tumoral de muerte y enfermedad. Gracias al diagnóstico precoz y al avance en los tratamientos, la mortalidad por esta causa está en descenso.\nLos antecedentes personales de riesgo incluyen:\n- Edad de menarca y menopausia (ventana estrogénica). La menarca precoz y menopausia tardía aumentan la ventana de exposición.\n- Ritmo menstrual (antecedentes de anovulación).\n- Historia obstétrica: edad al primer embarazo, posibilidad de embarazo en curso. Lactancia.\n- Enfermedades mamarias previas.\n- Terapia hormonal de reemplazo.\n- Radioterapia torácica previa.\nLos antecedentes familiares que aumentan el riesgo de cáncer de mama son:\n- Cáncer de mama a edad temprana (premenopausico).\n- Cáncer de mama bilateral o multicéntrico.\n- Dos o más mujeres con cáncer de mama en una misma familia.\n- Cáncer de mama en más de una generación familiar.\n- Individuos con cáncer de mama y otro tumor primario (dos tumores primarios en el mismo individuo).\n- Etnia de riesgo (judia asquenazi, islandeses, etc.).\n- Cáncer de mama en hombres.\nNo hay evidencia que avalen una modificación de la indicación de uso de anticoncepción hormonal basándose en la prevención del cáncer de mama. Son múltiples los estudios que han descartado la asociación del uso de los mismos con un aumento del riesgo oncogénico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_366",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "Una paciente de 36 años presenta en el cuadrante superoexterno de mama derecha un nódulo palpable de 2,5 cm de diámetro. Al examen físico se constata conglomerado de adenopatías axilares fijas ipsilaterales. La punción histológica con aguja gruesa del nódulo informa carcinoma de mama ductal infiltrante. No se evidencian metástasis a distancia. ¿Cuál es la clasificación clínica según el sistema TNM?",
+    "opciones": {
+      "a": "T2 N2 M0",
+      "b": "T2 N3 M0",
+      "c": "T1 N3 M0",
+      "d": "T1 N2 M0"
+    },
+    "correcta": "a",
+    "explicacion": "Recordar que el N clinico se categoriza de la siguiente manera:\n- N0 sin adenomegalias sospechosas\n- N1 adenomegalia movil\n- **N2 conglomerado axilar (como en el enunciado)**\n- N3 supra o infraclavicular\nRepaso completo del TNM:\n- T1: tumor de 2 cm o menos.\n- **T2: el tumor mide más de 2 cm, pero no más de 5 cm.**\n- T3: el tumor mide más de 5 cm.\n- T4: el tumor es de cualquier tamaño y crece hacia la pared torácica o la piel, invadiéndolos. Esto incluye al cáncer de mama inflamatorio.\n- N0: el cáncer no se ha propagado a los ganglios linfáticos adyacentes.\n- N1: el cáncer se propagó a entre 1 y 3 ganglios linfáticos axilares (debajo del brazo).\n- N2: el cáncer se ha propagado a entre 4 y 9 ganglios linfáticos debajo del brazo (conglomerados fijos), o el cáncer ha agrandado los ganglios linfáticos mamarios internos.\n- N3: el cáncer se propagó a 10 o más ganglios linfáticos axilares, o ganglios infraclaviculares, o supraclaviculares.\n- **M0: no se encuentra propagación a distancia.**",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_367",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "Paciente de 70 años de edad con tumor palpable en cuadrante supero externo de mama derecha, asociado en la mamografía a imagen de bordes espiculados y microcalcificaciones. Ud. Debería pensar en:",
+    "opciones": {
+      "a": "Displasia mamaria severa.",
+      "b": "Cancer de mama.",
+      "c": "Enfermedad de Paget.",
+      "d": "Fibroadenoma de mama."
+    },
+    "correcta": "b",
+    "explicacion": "Todo nodulo palpable nuevo en una mujer postmenopausica, que ademas se asocia a una imagen mamografica de sospecha, debe hacer pensar en **cancer de mama**.\nEn este caso, la mamografia con nodulo de bordes espiculados + microcalcificaciones es categoria Birads 5.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_368",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "Paciente de 65 años sin antecedentes oncológicos familiares ni personales de relevancia, con una mamografía con microcalcificaciones agrupadas heterogéneas categorizadas como BIRADS 5. ¿Cuál es el tipo de cáncer de mama más probable en una paciente de esa edad?",
+    "opciones": {
+      "a": "Lobulillar",
+      "b": "Ductal infiltrante",
+      "c": "Metaplásico",
+      "d": "Medular"
+    },
+    "correcta": "b",
+    "explicacion": "En el cáncer de mama el pronóstico está estrechamente ligado al momento de la detección, sabiendo que el diagnóstico temprano evita y disminuye en gran medida los procedimientos quirúrgicos radicales. El **carcinoma ductal infiltrante** es el que se inicia en el conducto mamario pero logra atravesarlo y pasa al tejido adiposo de la mama para luego extenderse a otras partes del cuerpo.\nEs el más frecuente de los carcinomas de mama, se da en el 80% de los casos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_369",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Recibe en la consulta a Evangelina de 35 años quien trae un test de VPH positivo por modalidad autotoma. ¿Qué conducta debería tomar usted?",
+    "opciones": {
+      "a": "Repetir el test ya que no es segura la autotoma.",
+      "b": "Realizar una histerectomia.",
+      "c": "Realizar una conización cervical.",
+      "d": "Realizar una toma de citologia cervical"
+    },
+    "correcta": "d",
+    "explicacion": "Cuando la paciente tiene test de HPV + se debe tomar una **citologia-pap** para continuar la evaluacion de acuerdo a los resultados.\nSi el pap es patologico, debe realizarse la colposcopia.\nIndicaciones de colposcopia en tamizaje:\n- 1) Citología ASC-US/L-SIL\n- 2) Prueba de HPV(+) persistente\n- 3) ASC-US con prueba de HPV (+)\n- 4) Prueba de HPV(+) con ASC-US/L-SIL\n- 5) Prueba de HPV(+) 16 y/o 18",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_370",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "En una mamografía se identifican microcalcificaciones múltiples, agrupadas e irregulares. Las mismas son indicativas de:",
+    "opciones": {
+      "a": "Carcinoma de mama.",
+      "b": "Proceso inflamatorio.",
+      "c": "Inespecíficas",
+      "d": "Hallazgo benigno"
+    },
+    "correcta": "a",
+    "explicacion": "Son signos sospechosos de malignidad en el cribado mamario con mamografía, el hallazgo de **microcalcificaciones agrupadas**, lineales o ramificadas, de tamaño simétrico, finas e irregulares, en número ≥ 5, que son el signo más precoz; desectructuración del tejido mamario con pérdida de su arquitectura; una imagen mamográfica de tamaño menor que el apreciado clínicamente y estrías radiales que convergen; un nódulo denso, espiculado, de bordes irregulares con retracción o afectación cutánea; y densidades focales asimétricas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_371",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología cervical benigna y preinvasora"
+    ],
+    "enunciado": "Concurre a la consulta ginecológica una mujer de 34 años, G2P2, paridad cumplida, que adjunta un resultado de una biopsia de cérvix tomada bajo guía colposcópica. El protocolo anatomopatológico informa Adenocarcinoma in situ (AIS). ¿Cuál es el tratamiento recomendable?",
+    "opciones": {
+      "a": "Histerectomia total",
+      "b": "Tratamiento destructivo local",
+      "c": "Extirpación amplia con asa Leep de la Zona de Transformación (LLETZ)",
+      "d": "Control citocolposcópico anual"
+    },
+    "correcta": "a",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES DIDACTICOS\nMANEJO DEL AIS:\n- El procedimiento escisional indicado es la conización cervical (cilindro).\n- Es frecuentemente multifocal (\"skip lesions\"), por lo cual los márgenes negativos del cono no indican necesariamente la escisión completa de la lesión.\n- El tratamiento de elección es la **HISTERECTOMIA en pacientes con paridad cumplida**.\n- En pacientes con deseos de fertilidad se acepta la conización cervical con márgenes negativos.\nFuente: GUIA SAPTGIYC 2022/revisada 2025",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_372",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de mama"
+    ],
+    "enunciado": "Una paciente de 36 años presenta en cuadrante superoexterno de mama derecha nódulo palpable de 1,5 cm de diámetro. Al examen físico se constata conglomerado de adenopatías axilares fijas homolaterales. La punción histológica con aguja gruesa del nódulo informa carcinoma de mama ductal infiltrante. No se evidencian metástasis a distancia. ¿Cuál es la clasificación clínica según el sistema TNM?",
+    "opciones": {
+      "a": "T1 N3 M1",
+      "b": "T0 N3 M0",
+      "c": "T1 N2 M0",
+      "d": "T0 N2 M1"
+    },
+    "correcta": "c",
+    "explicacion": "La clasificacion clínica es la que se describe a continuación:\n- **T1**: Tumor menor de 2 cm en su diámetro mayor\n- **N2**: metástasis axilares homolaterales fijas o metástasis en mamaria interna homolaterales detectables por estudios de diagnóstico por imágenes (menos gammagrafia) o detectables por examen clinico.\n- **M0**: sin metástasis a distancia",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_373",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "Una mujer de 46 años que fue sometida a un raspado biópsico fraccionado por alteraciones en el ritmo menstrual viene a la consulta con el resultado de anatomía patológica que informa hiperplasia endometrial compleja sin atipia. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar una histeroscopia diagnóstica.",
+      "b": "Realizar una histerectomia terapéutica.",
+      "c": "Indicar tratamiento con progestágenos.",
+      "d": "Realizar seguimiento ecográfico semestral."
+    },
+    "correcta": "c",
+    "explicacion": "La elección del tratamiento de la hiperplasia endometrial está basada en dos factores: 1) presencia o ausencia de atipia y 2) deseo genėsico:\n- Hiperplasia con atipia: el tratamiento de elección es la histerectomia total, ya que esta situación es considerada una lesión premaligna. En aquellas pacientes con deseo genésico en las que se haya descartado la presencia de un adenocarcinoma de endometrio concomitante, podría instaurarse un tratamiento con acetato de megestrol durante 6-9 meses. Se controlará a la paciente con ecografia, histeroscopia y biopsia a los 3 y 6 meses. En caso de fracaso del tratamiento se practicaría una histerectomia.\n- **Hiperplasia sin atipia**: el objetivo es prevenir la progresión y controlar el sangrado uterino anormal. Mujer en edad reproductiva con deseo gestacional: inducir la ovulación. Mujer en edad reproductiva sin deseo gestacional: tratamiento con gestágenos en segunda fase del ciclo, DIU liberador de levonorgestrel, tratamiento combinado de estrógenos-gestágenos, análogos de la GnRH. **Mujer peri o posmenopausica**: en primer lugar, se debe excluir patología tumoral productora de estrógenos y/o investigar si recibió THS estrogénico sin oposición gestagénica. El tratamiento instaurado será con **progestágenos durante 6 meses**. En todos los casos el tratamiento se instaura durante 6 meses y se debe realizar seguimiento con ecografia, histeroscopia y biopsia a los 3 y 6 meses del inicio del tratamiento. En caso de persistencia de la hiperplasia tras 7-9 meses de tratamiento se recomienda realizar una histerectomia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_374",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Consulta una paciente de 43 años con diagnóstico histológico de carcinoma escamoso de cuello uterino. En el tacto vaginal y rectal bajo anestesia se constata formación tumoral de 8 cm en cuello uterino, con vagina y parametrios comprometidos en imagen de RMN. El resto de los estudios de estadificación son negativos, ¿cuál es el tratamiento indicado?",
+    "opciones": {
+      "a": "Radioterapia externa",
+      "b": "Colpoanexohisterectomia total ampliada",
+      "c": "Colpoanexohisterectomia total ampliada y linfadenectomia pelviana",
+      "d": "Quimiorradioterapia concurrente"
+    },
+    "correcta": "d",
+    "explicacion": "Por los datos del enunciado corresponde a un estadio al menos IIB (compromiso parametrio proximal). El tratamiento es este estadio no es quirurgico, sino con **quimioradioterapia concurrente**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_375",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Paciente de 52 años, con diagnóstico de carcinoma de cuello uterino. Se le realiza tacto vaginal y rectal bajo anestesia para estadificación clínica. Se constata formación tumoral de 5 cm en cuello uterino. Vagina y parametrios libres. Estudios complementarios de estadificación negativos. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Colpoanexohisterectomia total ampliada y linfadenectomia pelviana",
+      "b": "Radio-Quimioterapia concurrente",
+      "c": "Radioterapia externa y braquiterapia",
+      "d": "Colpoanexohisterectomia total ampliada"
+    },
+    "correcta": "b",
+    "explicacion": "Es un estadio IB3: tumor de mas de 4 cm sin compromiso parametrial ni vaginal. El tratamiento de elección es la **quimiorradiación concurrente**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_376",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una paciente de 28 años consulta por esterilidad primaria. Sus ritmos menstruales y perfil hormonal son normales. La ecografía transvaginal informa útero aumentado de tamaño a expensas de núcleo miomatoso intramural secundariamente subseroso de 6 cm de diámetro que compromete cuerno uterino derecho, ovarios foliculares sin particularidades. La histerosalpingografía muestra obstrucción tubaria derecha. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Miomectomia",
+      "b": "Histeroscopia terapéutica",
+      "c": "Tratamiento médico",
+      "d": "Estimulación hormonal con clomifeno"
+    },
+    "correcta": "a",
+    "explicacion": "Las indicaciones de tratamiento de los miomas se resumen en:\n- Miomas sintomáticos.\n- Pacientes con deseo de gestación y miomas submucosos.\n- En caso de esterilidad inexplicada con fecundación in vitro fallida o aborto recurrente y miomas intramurales de más de 5 cm.\n- En miomas intramurales mayores de 5 cm y deseo de gestación, la actitud es más controvertida y en general se debe consensuar con la paciente.\nDado el cuadro de obstrucción tubaria que genera esterilidad, se opta por la **miomectomía**. La histeroscopia se reserva para los miomas submucosos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_377",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "Una paciente de 47 años, G3C3, presenta una masa anexial bilateral por lo que se le realiza una laparotomía exploradora. Efectuada la estadificación quirúrgica completa, el estudio anatomopatológico en diferido de la pieza quirúrgica informa: cistoadenocarcinoma seroso bien diferenciado que compromete ambos ovarios, con cápsula intacta y ausencia de tumor en la superficie ovárica. Lavado peritoneal negativo para células neoplásicas. ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Radioterapia pelviana y lumboaórtica",
+      "b": "Quimioterapia 6 ciclos",
+      "c": "Seguimiento y control",
+      "d": "Laparotomía de revisión (second look)"
+    },
+    "correcta": "c",
+    "explicacion": "El objetivo del tratamiento quirúrgico del cáncer de ovario es doble: estadificación de la enfermedad y extirpación de la mayor masa tumoral posible (citorreducción). Además de los pasos necesarios para la estadificación quirúrgica, puede ser necesaria la realización de esplenectomia, resecciones intestinales, hepáticas, vesicales y/o stripping diafragmático.\nEl volumen residual tumoral tras la cirugía influye directamente en el pronóstico: a menor volumen tumoral mejor pronóstico, y viceversa.\nAl tratarse de un estadio temprano (compromiso limitado a ovarios sin rotura capsular y bien diferenciado o G1), es posible el **seguimiento y control** sin necesidad de tratamientos adyuvantes agresivos, a diferencia de tumores de mayor grado o en estadios más avanzados que requerirán quimioterapia de intervalo o adyuvante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_378",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "El CA 125 es un marcador tumoral que se encuentra generalmente elevado en:",
+    "opciones": {
+      "a": "Carcinoma de endometrio.",
+      "b": "Carcinoma seroso del ovario.",
+      "c": "El carcinoma de mama",
+      "d": "Tumores de las células germinales."
+    },
+    "correcta": "b",
+    "explicacion": "El CA-125 es una glucoproteina expresada fundamentalmente por los **tumores epiteliales de ovario**. Es el marcador tumoral más utilizado.\nSe pueden detectar niveles séricos elevados de CA-125 en el 50% de las pacientes con cáncer de ovario en estadio I y en el 80-90% de los estadios III-IV.\nSe consideran normales valores < 35 U/mL en pacientes posmenopausicas y < 70 U/mL en premenopausicas. En estadios iniciales, la sensibilidad es baja, al igual que la especificidad (75%), puesto que este valor puede estar elevado en otros cánceres, como de endometrio, cérvix o incluso pulmón.\nPuede estar elevado también en situaciones fisiológicas, como menstruación o gestación, y en aquellas alteraciones que afecten al peritoneo (enfermedad inflamatoria pélvica, endometriosis, miomas uterinos, insuficiencia hepática o procesos irritativos peritoneales).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_379",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "Atiende a una paciente 38 años, G2P2, que utiliza como método anticonceptivo preservativo. Trae una ecografía TV que informa útero en AVF de 68 x 34 x 40 mm (DL x DAP x DT) y a nivel de ovario derecho imagen quística, unilocular, de paredes lisas y contenido anecoico de 8 cm de diámetro mayor, con ovario izquierdo sin particularidades y FSD (fondo saco Douglas) libre. CA 125 12 U/mL ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Anexectomia derecha",
+      "b": "Anticonceptivos orales",
+      "c": "Laparoscopia diagnóstica y terapéutica",
+      "d": "Control ecográfico en 3 meses"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes premenopausicas y posmenopausicas, los quistes simples menores de 5 cm de diámetro, en presencia de valores normales de CA-125, son pasibles de seguimiento (grado de recomendación B, RCOG). El riesgo de cáncer de ovario para estas formaciones es de un 1%.\nEl resto de las formaciones ováricas son susceptibles de tratamiento quirúrgico. La vía de elección dependerá principalmente de las características de la formación (y el grado de sospecha de malignidad).\nLa **laparoscopia** es el método de elección para el tratamiento quirúrgico de masas que se presumen benignas, porque se asocia con recuperación más rápida, menores tasas de complicaciones posoperatorias, menor dolor posquirúrgico y egreso más rápido de la institución. El estudio anatomopatologico debe hacerse por diferido en masas de baja sospecha de malignidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_380",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "Paciente de 35 años de edad con deseo de fertilidad, presenta un mioma submucoso de 2 cm sintomático, ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Histerectomía total",
+      "b": "Miomectomia histeroscópica",
+      "c": "Miomectomia laparoscópica",
+      "d": "Miomectomia convencional laparotómica"
+    },
+    "correcta": "b",
+    "explicacion": "Al tratarse de una paciente en plan de fertilidad la preservación del utero es primordial a la hora de elegir la terapéutica, por lo que siempre se intenta un tratamiento conservador. Por ello, la histerectomia no es opción.\nEn este caso también es importante saber donde se ubica el mioma para optar por una via de abordaje:\n- Subseroso: puede no operarse y solo controlarse. En caso de cirugia se indicaría por laparoscopia o laparotomia según el tamaño.\n- Intramural: laparotomico.\n- **Submucoso**: histeroscopia/resectoscopia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_381",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "¿Cómo continuaría la evaluación de una paciente de 45 años con metrorragia intermitente y sangrado durante las relaciones sexuales de 6 meses de evolución? Trae a la consulta una biopsia de una úlcera del cuello uterino en la cual se informa carcinoma escamoso invasor.",
+    "opciones": {
+      "a": "RM (resonancia magnética) y laparoscopia ginecológica",
+      "b": "Ecografia abdominal y urografia excretora",
+      "c": "Tacto recto-vaginal, citoscopia y rectoscopia",
+      "d": "Tacto recto-vaginal, RMN y eventual linfografia/PET"
+    },
+    "correcta": "d",
+    "explicacion": "En un tumor clínicamente visible, una biopsia simple define el diagnóstico. En algunos casos, la colposcopia puede dirigir la biopsia a zonas de menor necrosis, para un mejor diagnóstico histológico, al igual, puede precisar otras zonas de invasión, como la vagina.\nEn lesiones no macroscópicas la biopsia ampliada (conizacion) proporcionará el diagnóstico definitivo.\nLa FIGO basa su estadificación en la clínica (inspección, tacto vaginal y rectal y eventualmente examen bajo anestesia). El TV bajo anestesia tiene como propósito obtener mayor relajación por la ausencia del dolor, permitiendo un examen más correcto.\nTambién se indican algunos estudios complementarios de disponibilidad universal, como son un laboratorio de rutina, radiografía de tórax y centellograma óseo.\nLa afectación ganglionar es el factor pronóstico más significativo para el tratamiento quirúrgico, de modo que es muy importante la valoración de los ganglios linfáticos mediante linfografia o resonancia magnética de la pelvis. Se indica urograma excretor, citoscopia y rectoscopia si se sospecha clinica o radiológicamente compromiso de vejiga, uretra o recto.\nLa RMN es el mejor metodo imagenologico para evaluar tamaño tumoral y compromiso parametrial. Fue incorporada a los metodos de estadificacion a partir del 2018 en la nueva clasificacion FIGO. Por lo tanto, la opcion correcta es aquella que solicita **tacto rectovaginal y RMN**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_382",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 62 años consulta por presentar distensión abdominal de 2 meses de evolución. Se realiza ecografía abdominal y ginecológica constatándose en región anexial izquierda formación sólido-quística de 70 x 40 mm y moderada cantidad de líquido libre. En base al diagnóstico más probable, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar punción de líquido ascitico para estudio citológico y definir conducta a seguir",
+      "b": "Solicitar CA125 y doppler color para definir conducta a seguir",
+      "c": "Realizar laparotomia exploradora con biopsia diferida de la formación",
+      "d": "Solicitar CA 125 y realizar laparotomia exploradora con biopsia por congelación de la formación"
+    },
+    "correcta": "d",
+    "explicacion": "Si se sospecha masa anexial maligna, el abordaje inicial deberia preferentemente ser por laparotomia o laparoscopia en manos de un cirujano entrenado en ginecologia oncológica laparoscópica, sabiendo que es más frecuente la rotura de la masa anexial cuando se emplea esta via de abordaje.\nCompletar estudio con marcador **CA 125** y **biopsia por congelación** en el acto operatorio.\nLa opción de \"Solicitar CA125 y doppler color para definir conducta a seguir\" en este caso no es correcta ya que la masa tiene alta sospecha y el doppler/marcador, dadas las caracteristicas del enunciado, va a modificar la conducta ulterior.\nRecordar que idealmente todas las masas anexiales sospechosas deben tener ecografia TV con doppler y marcadores tumorales previo al abordaje quirurgico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_383",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 62 años de edad, posmenopausica, consulta por una masa anexial de 5 x 5 cm de diámetro, que ecográficamente se muestra como una masa mixta, con papilas y tabiques gruesos y no presenta ascitis. El Doppler color informa flujo de baja resistencia. El laboratorio revela CA 125 de 150 U/mL. La paciente se encuentra en buen estado general y no refiere ningún síntoma. ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Laparotomia exploradora y biopsia por congelación",
+      "b": "Punción transparietal bajo control ecográfico",
+      "c": "Tratamiento hormonal",
+      "d": "Conducta expectante y seguimiento ecográfico"
+    },
+    "correcta": "a",
+    "explicacion": "El objetivo del tratamiento quirúrgico del cáncer de ovario es doble: estadificación de la enfermedad y extirpación de la mayor masa tumoral posible (citorreducción). Además de los pasos necesarios para la estadificación quirúrgica, puede ser necesaria la realización de esplenectomia, resecciones intestinales, hepáticas, vesicales y/o stripping diafragmático.\nEl volumen residual tumoral tras la cirugía influye directamente en el pronóstico: a menor volumen tumoral mejor pronóstico, y viceversa.\nDistinguimos diferentes tipos de cirugía en el cáncer de ovario en función del momento en que se realiza:\n- **Cirugia primaria de citorreducción**: siempre que sea posible es el tratamiento primario de elección. Se definen tres tipos de cirugia primaria de citorreducción en función de la enfermedad residual tras la misma:\n- Citorreducción completa: no hay enfermedad visible.\n- Citorreducción óptima: enfermedad residual menor o igual a 1 cm.\n- Citorreducción subóptima: enfermedad residual mayor a 1 cm.\n- **Cirugía de intervalo**: consiste en la administración de quimioterapia primaria sistémica (adyuvante, tres ciclos) seguida, en caso de respuesta, de cirugía completa de citorreducción. Posteriormente se completan los ciclos de quimioterapia. Está indicada en pacientes con diagnóstico histológico confirmado de malignidad en las que, bien por motivos médicos o bien por cumplir criterios de irresecabilidad, no es posible realizar una cirugia de citorreducción primaria.\nLos criterios de irresecabilidad son:\n- Metástasis viscerales extensas en higado y/o pulmón (en caso de lesiones únicas puede valorarse su exéresis).\n- Masas tumorales voluminosas en la raiz del mesenterio que afectan a la arteria mesenterica superior.\n- Gran afectación de serosa intestinal que obligue a una resección intestinal amplia.\n- Conglomerados adenopáticos voluminosos retroperitoneales por encima de los vasos renales.\n- Nódulos diafragmáticos voluminosos, con penetración en el tórax.\n- **Cirugía de citorreducción secundaria**: se trata del rescate quirúrgico de la enfermedad recidivada (su principal indicación es en pacientes con un intervalo entre la finalización del tratamiento quimioterápico y la recidiva de al menos 6 meses) o persistente (especialmente en pacientes sin citorreducción óptima inicial).\n- **Cirugia conservadora**: en aquellas pacientes jóvenes con deseos genésicos que presenten enfermedad histológicamente comprobada con un estadio IA GI prequirúrgico, se puede realizar una cirugia conservadora con anexectomia unilateral y completar la histerectomia y anexectomia contralateral al cumplir los deseos genésicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_384",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 64 años, sin antecedentes patológicos de importancia, consulta por presentar metrorragia de la posmenopausia. Se realiza biopsia endometrial y endocervical que informa: Adenocarcinoma de endometrio, moderadamente diferenciado con invasión del estroma cervical. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Anexohisterectomía total extrafascial y linfadenectomia pelviana",
+      "b": "Quimioterapia neoadyuvante",
+      "c": "Radioterapia externa y braquiterapia",
+      "d": "Operación de Wertheim Meigs"
+    },
+    "correcta": "a",
+    "explicacion": "El tratamiento quirúrgico es el tratamiento primario de elección en el cáncer de endometrio.\nEl abordaje puede realizarse por vía laparoscópica (de primera elección) o laparotómica.\nLa cirugia del carcinoma de endometrio completa debe incluir lavado peritoneal, revisión de la cavidad abdominopélvica con toma de biopsias de todas las zonas sospechosas, **histerectomia total extrafascial, doble anexectomía y linfadenectomia pélvica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_385",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio"
+    ],
+    "enunciado": "El síntoma más común del cáncer de endometrio es:",
+    "opciones": {
+      "a": "Dolor en hipogastrio.",
+      "b": "Secreción purulenta.",
+      "c": "Amenorrea.",
+      "d": "Metrorragia"
+    },
+    "correcta": "d",
+    "explicacion": "El sangrado genital anómalo es el signo principal de sospecha, en particular en pacientes posmenopausicas (**metrorragia** posmenopausica en «agua de lavar carne») o con factores de riesgo asociados.\nLa secreción purulenta por genitales en pacientes de edad avanzada (o la piometra) también nos debe hacer sospechar esta patología.\nEn estadios avanzados pueden aparecer dolor abdominal o pélvico, distensión abdominal, saciedad temprana o cambios en el ritmo intestinal o vesical.\nAnte un sangrado en «agua de lavar carne» en una paciente posmenopausica, se debe sospechar un cáncer de endometrio, pero en una paciente joven se debe descartar un carcinoma de cuello de útero.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_386",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 65 años concurre a control ginecológico adjuntando ecografía que informa: útero en anteversoflexión de 60 x 42 x 38 mm, endomentrio de 3 mm, homogéneo, ovario derecho de 15 x 16 mm, ovario izquierdo reemplazado por formación quística de 60 x 55 mm con presencia de una proyección papilar de 5 mm. En base a su diagnóstico más probable, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar nueva ecografia en 3 meses",
+      "b": "Solicitar CA125 y realizar tratamiento quirúrgico",
+      "c": "Solicitar CA125, CEA y Doppler color",
+      "d": "Solicitar tomografia computarizada"
+    },
+    "correcta": "b",
+    "explicacion": "Dado que la estirpe más frecuente del carcinoma de ovario es la serosa, el marcador tumoral por excelencia es el CA-125. Como valor de corte se suele utilizar 35 UI/mL.\nComo la paciente es postmenopausica y ya tiene criterios de sospecha, en este caso el doppler no modifica la conducta, por lo que respuesta correcta es **solicitar CA 125 y planificar cirugia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_387",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio"
+    ],
+    "enunciado": "Una paciente de 62 años, posmenopausica, consulta por metrorragia. Como antecedente relevante la paciente refiere cáncer de mama, por el que realizó tratamiento conservador hace 2 años y actualmente está tomando tamoxifeno. La paciente se encuentra libre de enfermedad. La ecografía transvaginal informa útero en AVF 45 x 40 x 38 mm (DL x DAP x DT), endometrio quístico de 18 mm espesor, anexos sin particularidades. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Histeroscopia",
+      "b": "Legrado endocervical",
+      "c": "Control habitual",
+      "d": "Anexohisterectomía total"
+    },
+    "correcta": "a",
+    "explicacion": "La **histeroscopia** en la actualidad es la herramienta más fiable para el diagnóstico de la patología de endometrio sola o asociada a la biopsia endometrial.\nSe ha convertido en una técnica habitual en la consulta debido a la buena tolerancia gracias a la disminución del calibre de los histeroscopios y a la anestesia local, y a que el rendimento obtenido es similar al de la histeroscopia practicada en quirófano bajo anestesia.\nDurante el procedimiento, se debe TOMAR UNA BIOPSIA del endometrio, para llegar al diagnóstico. En este caso, la paciente tiene como factor de riesgo para patologia endometrial el antecedente de haber tomado **tamoxifeno**.\nLas otras opciones son incorrectas ya que:\n- control anual: no corresponde ya que es una metrorragia de la postmenopausia y siempre deben estudiarse.\n- anexohisterectomia: no corresponde ya que no tiene diagnostico aun.\n- legrado endocervical: no corresponde ya que se debe estudiar el endometrio, no el endocervix.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_388",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "Una paciente de 35 años, GlAbl, es operada por presentar una masa anexial derecha de 10 cm de diámetro. Durante el acto quirúrgico se le realiza una salpingooforectomía derecha. La biopsia por congelación informa: cistoadenoma mucinoso. Luego concurre al control con el informe de la biopsia en diferido: cistoadenoma mucinoso con bajo potencial de malignidad. ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Completar estadificación",
+      "b": "Conducta expectante",
+      "c": "Salpingooforectomia izquierda",
+      "d": "Quimioterapia 6 ciclos"
+    },
+    "correcta": "a",
+    "explicacion": "El estudio intraoperatorio con cortes por congelación puede confirmar enfermedad maligna, pero no siempre permite definir proliferación borderline. El cirujano debe estar al tanto de estas limitaciones. No hay evidencia de que se pueda establecer el grado histológico de una lesión en cortes por congelación.\nEn los tumores borderline la cirugía es el principal tratamiento en cualquier estadio; se debe realizar una cirugía de estadificación quirúrgica igual que en los tumores invasores, excepto la linfadedectomia sistemática.\nEn este caso, la respuesta dice solamente **completar estadificacion**, lo que no implica necesariamente realizar la anexohisterectomia. Ver en el enunciado que la paciente tiene 35 años y al ser un tumor borderline, se puede plantear tratamiento conservador de la fertilidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_389",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "Juana de 61 años, con diagnóstico ecográfico, de masa ovárica, unilateral, heterogénea, doppler (+). ¿Qué estudio complementario solicitaría para complementar el diagnóstico?",
+    "opciones": {
+      "a": "Laparoscopia diagnostica.",
+      "b": "Rx directa de Abdomen de pie..",
+      "c": "Marcadores tumorales.",
+      "d": "Nada, con la Ecografía es suficiente"
+    },
+    "correcta": "c",
+    "explicacion": "El algoritmo del riesgo de malignidad ovárica ROMA (Risk of Ovarian Malignancy Algorithm), permite clasificar a las pacientes en la categoría de alto o bajo riesgo de detectar cáncer de ovario durante la cirugía de la masa ovárica. Es un cálculo matemático que utiliza:\n- Los valores séricos de CA-125 y HE4 (U/ml)\n- La edad de la mujer\n- El estatus menstrual (PRE/POSTMENOPAUSICO)\nDentro de los **marcadores tumorales** en paciente postmenopausicas se destacan:\n- El CA-125 se encuentra elevado en la mayoria (90%) de las mujeres con cáncer epitelial ovárico avanzado. Los niveles de CA125 correlacionan bien con el volumen tumoral y estadío. Sin embargo, este marcador no tiene alta sensibilidad en la detección precoz (estadios I y II). Su especificidad es baja porque se puede elevar en algunos otros desórdenes ginecológicos (endometriosis, la miomatosis y la enfermedad pélvica inflamatoria).\n- HE4 (Human Epididymis Protein 4) es un nuevo marcador, complementario al CA125 en el diagnóstico de tumores de ovario. HE4 es una glicoproteína que se sobreexpresa en el carcinoma epitelial de ovario pero no en condiciones benignas como embarazo, endometriosis, quistes benignos de ovario, entre otras. Utilizado como marcador único posee mayor sensibilidad y especificidad que el CA125, pero la mayor utilidad radica en la medición simultánea de ambos antigenos CA 125+HE4, ya que la sensibilidad y especificidad al momento del diagnóstico es superior cuando se los compara con cada uno de ellos por separado.\nLa rx de abdomen no tiene valor en estos casos.\nY la laparoscopia no debe indicarse sin tener previamente estudiado al paciente con imagenes y marcadores, ya que si la sospecha de malignidad es alta y la paciente tiene posibilidad de resecabilidad completa, la indicacion es el abordaje laparotomico en primera instancia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_390",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología benigna uterina",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Paciente de 43 años, G2P2, sin deseo de paridad futura, en seguimiento ginecológico por síndrome anémico secundario a metrorragia por miomatosis uterina. La paciente concurre a la consulta por metorragia de 25 días de evolución y lleva 7 meses de tratamiento hormonal. La biopsia de endometrio es negativa para células neoplásicas. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Miomectomia múltiple",
+      "b": "Completar tratamiento hormonal por 12 meses",
+      "c": "Histerectomia total",
+      "d": "Anexohisterectomia total"
+    },
+    "correcta": "c",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES DIDACTICOS\nLa **histerectomia total** se reserva para las mujeres con cualquiera de las siguientes características:\n- Una tumoración pelviana que crece rápidamente\n- Sangrado uterino recurrente refractario a los medicamentos que anemiza a la paciente.\n- Dolor severo o presión persistente (p. ej., que requiere de opioides para el control o que es intolerable para la paciente)\n- Un útero grande que tiene efecto de masa en el abdomen, por lo que causa sintomas urinarios o intestinales o comprime otros órganos y causa alteraciones funcionales como hidronefrosis, polaquiuria, dispareunia, etc.\nEn cambio, la miomectomía se reserva para:\n- Infertilidad (si se desea el embarazo)\n- Abortos espontáneos recurrentes (si se desea el embarazo)\nEn este caso, la cotrrecta es histerectomia total ya que es una paciente con paridad cumplida (descarta miomectomia) y premenopausica (descarta anexohisterectomia).\nComo ya van mas de 3 meses de tratamiento medico sin respuesta, tiene indicacion quirurgica (descarta opcion de control).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_391",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "Una paciente de 46 años, G3P3, realiza estudios de control ginecológico que informan: colposcopia y PAP normales; perfil hormonal FSH 15 mUI/ml, LH 9 mUI/ml, estradiol 32 pg/mL; ecografía ginecológica útero en AVF de 85 x 32 x 67 mm (DL x DAP x DT) con 3 núcleos miomatosos intramurales de 42, 36 y 32 mm, endometrio lineal de 3 mm, ovarios de características normales. Se encuentra asintomática ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Histerectomia total",
+      "b": "Tratamiento hormonal por 12 meses",
+      "c": "Control en 6 meses",
+      "d": "Miomectomia múltiple"
+    },
+    "correcta": "c",
+    "explicacion": "PREGUNTA MODIFICADA CON FINES DIDACTICOS\nEl examen ginecológico permite evaluar los miomas cuando el útero tiene el tamaño equivalente a una gestación de 12 semanas (peso uterino de 300 g o mayor).\nLa ecografia es útil para la evaluación de los anexos, si estos no pueden palparse de manera adecuada, durante el examen pelviano.\nLa ecografia transvaginal se reserva para distinguir entre miomas submucosos y pólipos.\nMientras que la histerosonografia involucra la inyección de solución fisiológica durante una ecografia transvaginal para permitir la evaluación de la cavidad uterina, la histeroscopia permite el diagnóstico de los miomas submucosos.\nSe mantendrá una conducta expectante o **control en 6-12 meses** en caso de miomas pequeños y asintomáticos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_392",
+    "materia": [
+      "obstetricia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Hemorragias del embarazo",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Los tumores trofoblásticos gestacionales son raros en el mundo occidental, pero altamente curables. Complete la oración con la opción correcta. El coriocarcinoma es la forma histológica...",
+    "opciones": {
+      "a": "maligna menos frecuente y quimiorresistente",
+      "b": "maligna más frecuente, muy quimiosensible",
+      "c": "Más rara",
+      "d": "maligna más frecuente y quimiorresistente"
+    },
+    "correcta": "b",
+    "explicacion": "Es el carcinoma del epitelio coriónico, una forma extremadamente maligna de tumor trofoblástico. Es un tumor anaplásico epitelial puro, que por su crecimiento y metástasis se comporta como un sarcoma.\nLas entidades malignas como el **coriocarcinoma** y la mola invasora se caracterizan por su potencial invasor o metastásico. Esto hace que el tratamiento sea habitualmente quimioterápico y eventualmente quirúrgico.\nEs **sensible a esquemas quimioterápicos**, los cuales se deben aplicar rápidamente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_393",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente 62 años presenta diagnóstico de cáncer de ovario con compromiso ovárico bilateral, cápsula rota y metástasis ganglionares. Según la clasificación de la FIGO ¿a qué estadio corresponde la patología?",
+    "opciones": {
+      "a": "IIB",
+      "b": "IC",
+      "c": "IIIC",
+      "d": "IB"
+    },
+    "correcta": "c",
+    "explicacion": "Según la estadificación FIGO, corresponde al **estadio IIIC**: La estadificación en ovario siempre es quirúrgica e incluye los siguientes estadios:\n- I: Tumor limitado a los ovarios\n  - Ia: Limitado a 1 ovario, cápsula intacta\n  - Ib: Limitado a ambos ovarios, cápsula intacta\n  - Ic: Idem anterior pero con cápsula comprometida o rota o ascitis o lavado peritoneal +\n- II: Tumor con extensión a pelvis\n  - Ila: Útero y trompas\n  - Ilb: Otros tejidos pelvianos\n  - IIc: Ídem anterior pero con cápsula comprometida o rota o ascitis o lavado peritoneal +\n- III: Implantes peritoneales o ganglios + (Incluye implantes en la superficie hepática)\n  - Illa: Implantes peritoneales extrapélvicos microscópicos\n  - Illb: Implantes peritoneales extrapélvicos macroscópicos menores de 2 cm\n  - **IIIc**: Implantes extrapélvicos mayores a 2 cm y/o **ganglios inguinales o retroperitoneales +**\n- IV: Metástasis a distancia (incluye derrame pleural +)\nLa pregunta ha sido modificada con fines pedagógicos",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_394",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "¿En qué rangos de edad se presentan la mayoría de los tumores malignos del ovario?",
+    "opciones": {
+      "a": "50 a 60 años",
+      "b": "35 a 49 años",
+      "c": "65 a 75 años",
+      "d": "15 a 30 años"
+    },
+    "correcta": "c",
+    "explicacion": "El cáncer de ovario ocupa el tercer lugar en orden de frecuencia dentro de los cánceres ginecológicos; después del cáncer de cuello y endometrio, siendo el que causa mayor mortalidad, dado que el 75% de los casos se detectan en estadios avanzados.\nLa incidencia del cancer de ovario es del 1,6% para la poblacion general.\nEl riesgo de padecer cáncer de ovario aumenta con la edad. El cáncer de ovario es poco común en las mujeres menores de 40 años, y la mayoria de los cánceres ováricos se origina después de la menopausia. La mitad de todos los cánceres de ovario se encuentra en mujeres de **63 años o más**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_395",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "El tumor de ovario más común que se presenta en la infancia es:",
+    "opciones": {
+      "a": "Arrenoblastoma.",
+      "b": "Teratoma.",
+      "c": "Disgerminoma.",
+      "d": "Tumor de células de la granulosa."
+    },
+    "correcta": "b",
+    "explicacion": "Tumores de las células germinales (15-20% del total) Afectan a mujeres jóvenes y son generalmente unilaterales y de gran tamaño. Más del 90% son quistes dermoides (teratoma quístico maduro) y la mayor parte de los restantes son malignos.\nLos tumores malignos son muy agresivos y responden bien a la quimioterapia.\n**Teratoma: son los más frecuentes de este grupo**. Se caracterizan por presentar elementos procedentes de las tres hojas blastodérmicas.\nSe distinguen:\n- Teratoma maduro (quiste dermoide): tumor germinal más frecuente que constituye el 30% de todas las neoplasias ováricas benignas. Benigno por definición, aunque excepcionalmente puede aparecer un carcinoma de células escamosas (especialmente en mujeres mayores de 50 años).\n- Teratoma inmaduro: tumor maligno, con rápido crecimiento y tendencia a la metástasis. El hallazgo de tejido neural inmaduro en el seno de un teratoma es un signo de mal pronóstico.\n- Estruma ovárico: es el más frecuente de los teratomas monodérmicos. Constituido caracteristicamente por tejido tiroideo. Se comporta generalmente como un tumor benigno, incluso en presencia de implantes peritoneales (estrumosis peritoneal).\n- Tumor carcinoide: segundo teratoma monodérmico en frecuencia. Menos del 2% son malignos y un tercio se asocia con síndrome carcinoide (producción de 5-hidroxitriptamina).\n- Disgerminoma: tumor maligno más frecuente de este grupo. El 80% ocurre en mujeres menores de 30 años. Frecuentemente unilateral (80-90%). El tratamiento de elección es quirúrgico, pero presenta elevada quimiosensibilidad. La supervivencia a los 5 años supera el 80%.\n- Tumor del saco vitelino (tumor del seno endodérmico): se caracteriza por una elevación muy significativa y especifica de alfa-fetoproteina. Desde el punto de vista anatomopatológico los senos de Schiller-Duval (imágenes glomeruloides) son caracteristicos de este tumor, pero solo aparecen en el 15% de ellos. Son especialmente agresivos y conllevan el peor pronóstico.\n- Carcinoma embrionario: tumor maligno. Puede producir alfa-fetoproteína. En casi la mitad de los casos se encuentra diseminación extraovárica en el momento del diagnóstico. El poliembrioma es una variedad que contiene cuerpos embrioides.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_396",
+    "materia": [
+      "ginecologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología benigna uterina",
+      "Cirugía mínimamente invasiva"
+    ],
+    "enunciado": "Una paciente de 35 años, nulípara, consulta por metrorragia intercíclica de 6 meses de evolución. La ecografía informa la presencia de 2 miomas, uno submucoso de 5 cm y otro subseroso pediculado de 3 cm. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Histeroscopia y laparoscopia",
+      "b": "Histeroscopia",
+      "c": "Tratamiento médico",
+      "d": "Histerectomía"
+    },
+    "correcta": "b",
+    "explicacion": "La exploración ginecológica de los miomas sirve para determinar su tamaño, consistencia, movilidad y forma uterina. Es especialmente útil en miomas subserosos.\nLa ecografía tiene alta sensibilidad para detectar miomas. El empleo del doppler color permite valorar la vascularización de los miomas. Los miomas avasculares no suelen crecer.\nLa ecografia con infusión salina intracavitaria (sonohisterografia) mejora la definición del contorno del mioma submucoso que protruye en la cavidad uterina. La resonancia magnética es la mejor técnica para visualizar todos los miomas y su localización. Permite distinguir entre miomas, adenomiosis y sarcomas. Solo se emplea en caso de duda diagnóstica o para complementar el estudio ecográfico.\nLa **histeroscopia** sirve para el diagnóstico y tratamiento de los miomas submucosos.\nEn miomas pequeños y asintomáticos puede realizarse un manejo expectante con revisiones periódicas cada 6-12 meses.\nLas indicaciones de tratamiento se resumen en:\n- Miomas sintomáticos.\n- Pacientes con deseo de gestación y miomas submucosos.\n- En caso de esterilidad inexplicada con fecundación in vitro fallida o aborto recurrente y miomas intramurales de más de 5 cm.\n- En miomas intramurales mayores de 5 cm y deseo de gestación la actitud es más controvertida y en general se debe consensuar con la paciente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_397",
+    "materia": [
+      "ginecologia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Resonancia magnética"
+    ],
+    "enunciado": "En una paciente de 45 años diagnostica un carcinoma de cuello uterino y quiere determinar la invasión a parametrios laterales, ¿Cuál es el metodo de diagnostico por imagenes de elección para evaluar el compromiso parametrial?",
+    "opciones": {
+      "a": "Ecografia transrectal",
+      "b": "Tomografia computarizada",
+      "c": "Ecografia transvaginal",
+      "d": "Resonancia magnética nuclear"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta actualizada con fines didacticos.\nLa **RMN de pelvis** de alta resolucion es el metodo de eleccion para evaluar tamaño tumoral y compromiso parametrial. En la ultima estadificacion FIGO 2018, se incorpora la RMN como elemento imagenologico que influye en la estadificacion y debe utilizarse si está disponible.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_398",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Concurre una mujer de 58 años con diagnóstico de cáncer de endometrio. Adjunta un informe anatomopatológico posquirúrgico que informa afectación de menos del 50% del miometrio, sin invasión del cuello uterino, y con compromiso metastásico de ganglios linfáticos pélvicos y paraaórticos. Según la clasificación FIGO, ¿En qué estadio se encuentra la enfermedad?",
+    "opciones": {
+      "a": "IC",
+      "b": "IVA",
+      "c": "III B",
+      "d": "IIB"
+    },
+    "correcta": "c",
+    "explicacion": "Repasando la Estadificación del Cáncer de Endometrio FIGO 2023, corresponde a un **estadio 3C** por el compromiso ganglionar:\n- IIIC Compromiso ganglionar pelviano o para-aórtico\n- IIIC1 Ganglios pelvianos positivos\n- IIIC2 Ganglios para-aórticos positivos con o sin ganglios pelvianos positivos",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_399",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario"
+    ],
+    "enunciado": "El CA 125 es un marcador tumoral que se encuentra generalmente elevado en el carcinoma:",
+    "opciones": {
+      "a": "Seroso del ovario",
+      "b": "De células germinales",
+      "c": "De mama",
+      "d": "De endometrio"
+    },
+    "correcta": "a",
+    "explicacion": "El 90% de los tumores primarios de ovario corresponde a la estirpe epitelial (CEO), el resto pertenece a tumores menos frecuentes como los derivados de las células germinales y los derivados del estroma y cordones sexuales. El CA 125 se encuentra elevado (> 35 UI/mL) en la mayoría de las mujeres con CEO avanzado.\nLa sensibilidad de este marcador es baja para estadios I (50%) siendo más elevada para estadios II o mayores (90%). La sensibilidad es alta para tumores epiteliales de **tipo seroso** y baja para los mucinosos.\nEs un marcador poco especifico ya que tambien puede elevarse en otras situaciones donde haya irritacion peritoneal, sobre todo en premenopausicas: pacientes en periodo periovulatorio, infecciones pelvianas, endometriosis, etc.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_400",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Paciente de 52 años, con diagnóstico de carcinoma de cuello uterino. Se le realiza tacto vaginal y rectal bajo anestesia para estadificación clínica. Se constata formación tumoral de 5 cm en cuello uterino. Vagina y parámetros libres. Estudios complementarios de estadificación negativos. ¿Cuál es el tratamiento inicial?",
+    "opciones": {
+      "a": "Colpo Anexo histerectomía total ampliada y linfadenectomía pelviana",
+      "b": "Colpo Anexohisterectomía total ampliada",
+      "c": "Colpo Anexo histerectomía total ampliada y linfadenectomia pelviana",
+      "d": "Quimio-radioterapia concurrente"
+    },
+    "correcta": "d",
+    "explicacion": "El tratamiento de elección es la asociación de radioterapia y quimioterapia (RT-QT) (con esquemas que contengan cisplatino) con finalidad radical. Incluye aquellos **tumores mayores de 4 cm** o que se extienden más allá del tercio superior de la vagina, a parametrios, anexos u órganos pélvicos o con afectación ganglionar.\nAnteriormente para dicha información era necesario realizar una linfadenectomia paraaórtica. Hoy en dia con el diagnostico por imágenes (RM, TC o PET-TC) que permiten evaluar indirectamente el estado ganglionar, sobre todo el PET-TC que detecta ganglios mayores a 10mm metabolicamente activos, ya no es necesaria la linfadenectomia. Esto se realiza para adecuar los campos de irradiación de forma más eficiente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_401",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino"
+    ],
+    "enunciado": "Paciente de 52 años, con diagnóstico de carcinoma de cuello uterino. Se le realiza tacto vaginal y rectal bajo anestesia para estadificación clínica. Se constata formación tumoral de 5 cm en cuello uterino. Vagina y parametrios libres. Estudios complementarios de estadificación negativos. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Colpoanexohisterectomía total ampliada y linfadenectomía pelviana",
+      "b": "Radioterapia externa y braquiterapia",
+      "c": "Quimiorradioterapia concurrente",
+      "d": "Colpoanexohisterectomía total ampliada"
+    },
+    "correcta": "c",
+    "explicacion": "Es un estadio clinico Ib3, tumor mayor a 5 cm sin compromiso de vagina ni parametrios, ni enfermedad ganglionar. Sin enfermedad a distancia. El tratamiento de eleccion para este estadio es **quimioradioterapia concurrente**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_402",
+    "materia": [
+      "obstetricia",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología materna y gestación",
+      "Cáncer de ovario"
+    ],
+    "enunciado": "De todas las masas anexiales diagnosticadas en el embarazo como malignas, la más frecuente es:",
+    "opciones": {
+      "a": "Cistoadenocarcinoma mucinoso.",
+      "b": "Tumor de células granulosas.",
+      "c": "Disgerminoma.",
+      "d": "Cistadenocarcinoma seroso."
+    },
+    "correcta": "c",
+    "explicacion": "Masa anexial y embarazo: Ocurren en 1 cada 500-800 embarazos.\nLas masas anexiales más frecuentemente diagnosticadas son los quistes dermoides (25-50%), seguidos de los cistoadenomas. Aproximadamente un 5% son malignos, siendo por orden de mayor a menor frecuencia: **tumores germinales (40%)**, tumores epiteliales borderline (27%), carcinomas epiteliales invasores (22%), tumores de los cordones sexuales (9%) y metastásicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_403",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en una mujer de 65 años, obesa, sin terapia hormonal de reemplazo, que presenta un episodio de metrorragia de una semana de duración? En el examen físico presenta útero levemente aumentado de tamaño y el resto de la evaluación clínica es normal.",
+    "opciones": {
+      "a": "Atrofia endometrial",
+      "b": "Atrofia genital avanzada sintomática",
+      "c": "Câncer de endometrio",
+      "d": "Cáncer de cuello uterino"
+    },
+    "correcta": "c",
+    "explicacion": "Los factores de riesgo más importantes para el cáncer de endometrio son el estado posmenopausico, un indice de masa corporal (IMC) de 25 mg/m2 o más, excesivo consumo de grasas, nuliparidad, anovulación y uso de estrógenos sin oposición progestacional.\nNo obstante, hasta un 50% de las pacientes portadoras de cáncer de endometrio se presentan sin estos factores.\nLa obesidad parece actuar mediante mecanismos múltiples que involucran alteraciones hormonales tanto en la mujer premenopausica (insulinorresistencia, exceso de andrógenos ováricos, anovulación y déficit crónico de progesterona) como en la mujer posmenopausica (conversión periférica de andrógenos a estrógenos). La inactividad física, la ingesta calórica, la presión arterial por encima de 140/90 y las altas concentraciones de glucosa son factores predictores independientes adicionales al IMC. Manteniendo un peso normal y siendo físicamente activas las mujeres pueden reducir sustancialmente su riesgo de cáncer de endometrio.\nLa causa mas FRECUENTE de metrorragia en la postmenopausia es la atrofia. Sin embargo, en esta pregunta se menciona el factor de riesgo (Obesidad) y el utero aumentado de tamaño al examen fisico, lo que hace sospechar que en este caso la atrofia no es la respuesta correcta y estamos obilgados a descartar **patologia endometrial**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_404",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 58 años con diagnóstico de cáncer de endometrio presenta compromiso metastásico de ganglios linfáticos pélvicos y paraaórticos. Según la clasificación FIGO, ¿en qué estadío se encuentra la enfermedad?",
+    "opciones": {
+      "a": "IVA",
+      "b": "IIB",
+      "c": "IIIC",
+      "d": "IIIB"
+    },
+    "correcta": "c",
+    "explicacion": "Según la estadificación del Cáncer de Endometrio, dentro del estadio III con extensión extrauterina, el **estadio IIIC** corresponde a un compromiso ganglionar pelviano (IIIC1) o paraaórtico (IIIC2).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_405",
+    "materia": [
+      "ginecologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "¿En qué magnitud aumenta el riesgo de padecer un carcinoma de endometrio en mujeres posmenopausicas con un sobrepeso de 24 kg?",
+    "opciones": {
+      "a": "10 veces mayor",
+      "b": "5 veces mayor",
+      "c": "20 veces mayor",
+      "d": "3 veces mayor"
+    },
+    "correcta": "a",
+    "explicacion": "El cáncer de cuerpo uterino tiene una incidencia variable, representando el primer cáncer del tracto genital femenino en los paises desarrollados, posición que es ocupada por el cáncer de cuello uterino en los países en vias de desarrollo.\nLas mujeres con mas de 20 kg de sobrepeso tienen **10 veces más probabilidades** de padecer cáncer de endometrio. Es importante tomar conciencia de que una gran pérdida de peso reduce el riesgo de tener cáncer.\nLa obesidad parece actuar mediante mecanismos múltiples que involucran alteraciones hormonales tanto en la mujer premenopausica (insulinorresistencia, exceso de andrógenos ováricos, anovulación y déficit crónico de progesterona) como en la mujer posmenopausica (conversión periférica de andrógenos a estrógenos).\nLa mayoria de los carcinomas de endometrio se asocian a obesidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_406",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 38 años, G3P3, consulta por sinusorragia. Utiliza anticonceptivos orales. A la colposcopia se visualiza un área de leucoplasia de bordes regulares y mosaico grueso con vasos atípicos. La biopsia de la lesión informa: carcinoma escamoso infiltrante de 2 mm de profundidad y 4 mm de extensión. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Anexohisterectomia total",
+      "b": "Histerectomia total con mango vaginal y linfadenectomia",
+      "c": "Histerectomia total con mango vaginal",
+      "d": "Conización cervical"
+    },
+    "correcta": "d",
+    "explicacion": "Se trata de un **cáncer de cuello uterino estadio IA** (< de 3 mm de profundidad y < de 7 mm de extensión horizontal).\nPor lo tanto, el tratamiento indicado es la **conización cervical** o la histerectomia total simple en caso de paridad cumplida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_407",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una mujer nulípara de 35 años que consulta por hipermenorrea de un año de evolución y en el último mes refiere la aparición de un dolor continuo en hipogastrio? En la ecografía transvaginal se observa: útero irregular en anteversoflexión, con diámetro anteroposterior de 60 mm, longitudinal de 95 mm (medida normal de útero en nulíparas: 8 cm de longitud, 5 cm de ancho y 4 cm de diámetro), endometrio de 15 mm; ovario derecho: diámetro longitudinal (desviación media: 25-35 mm) de 36 mm x transverso (desviación media: 12-25 mm) de 22 mm y ovario izquierdo de 30 mm x 18 mm.",
+    "opciones": {
+      "a": "Endometriosis.",
+      "b": "Útero miomatoso.",
+      "c": "Blastoma de ovario derecho.",
+      "d": "Cáncer de cuello uterino"
+    },
+    "correcta": "b",
+    "explicacion": "Aproximadamente el 50-80% de los **miomas** son asintomáticos. Cuando presentan sintomas, la clínica es variable en función del tamaño, la localización y el número de miomas:\n- **Sangrado uterino anormal**: es el sintoma más común. Las metrorragias o hipermenorreas son las formas más comunes. Las más intensas son debidas a miomas intramurales, aunque los miomas submucosos o serosos, también pueden producirlas. Puede ocurrir anemia ferropénica secundaria.\n- **Presión pélvica y dolor** por aumento del tamaño uterino: puede ser crónico y persistente o agudo originado por la torsión de miomas pediculados. En los miomas submucosos puede aparecer dolor asociado a dilatación cervical por contracciones uterinas (mioma nascens).\n- **Sintomas de compresión local**: a nivel urinario, aumento de la frecuencia urinaria, dificultad en el vaciamiento vesical, retención urinaria aguda; a nivel digestivo, estreñimiento y tenesmo; trombosis por compresión de estructuras vasculares.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_408",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "Una paciente de 63 años adjunta informe de anatomía patológica de pieza de anexohisterectomía total y omentectomía que informa carcinoma de ovario derecho, con presencia de células tumorales en la superficie ovárica y células malignas en líquido del lavado peritoneal. Según la clasificación FIGO, ¿a qué estadio corresponde la patología?",
+    "opciones": {
+      "a": "IIC",
+      "b": "IC",
+      "c": "IIB",
+      "d": "IB"
+    },
+    "correcta": "b",
+    "explicacion": "La estadificación del cáncer de ovario siempre es quirúrgica. Los estadios son los siguientes: I: Tumor limitado a los ovarios\n- Ia: Limitado a 1 ovario, cápsula intacta\n- Ib: Limitado a ambos ovarios, cápsula intacta\n- **Ic**: Idem anterior pero con cápsula comprometida o rota o ascitis o **lavado peritoneal +**. ESTA ES LA OPCION CORRECTA DE LA RESPUESTA.\n- II: Tumor con extensión a pelvis\n- Ila: Útero y trompas\n- Ilb: Otros tejidos pelvianos\n- Ilc: Ídem anterior pero con cápsula comprometida o rota o ascitis o lavado peritoneal +\n- III: Implantes peritoneales o ganglios + (Incluye implantes en la superficie hepática)\n- Illa: Implantes peritoneales extrapélvicos microscópicos\n- Illb: Implantes peritoneales extrapélvicos macroscópicos menores de 2 cm\n- IIIc: Implantes extrapélvicos mayores a 2 cm y/o ganglios inguinales o retroperitoneales +\n- IV: Metástasis a distancia (incluye derrame pleural +)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_409",
+    "materia": [
+      "ginecologia",
+      "medicinafamiliar"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Control de salud"
+    ],
+    "enunciado": "Ud. recibe en su consultorio a Cecilia de 58 años que consulta por un control ginecológico. Tiene antecedentes de diabetes tipo 2. En la anamnesis refiere que el mes pasado tuvo un sangrado vaginal escaso de 24 horas de duración, por el que decidió no consultar. Su última menstruación fue hace 18 meses. ¿Cuáles de los siguientes estudios complementarios corresponde realizar a esta paciente?",
+    "opciones": {
+      "a": "Ecografia ginecológica transvaginal.",
+      "b": "Histeroscopia.",
+      "c": "Laboratorio completo, colposcopia, test de VPH y ecografia transvaginal.",
+      "d": "PAP endo y exocervical, mamografia bilateral, colposcopia y ecografia transvaginal."
+    },
+    "correcta": "d",
+    "explicacion": "En la mujer posmenopausica, deben indicarse todas las pruebas de cribado necesarias según la edad: **mamografía, citología cervical (pap y colposcopia) y ecografía transvaginal**.\nLa hiperplasia endometrial sintomática se presenta con mayor frecuencia con sangrado uterino anormal (hipermenorrea, metrorragia, sangrado posmenopausico). El estudio se inicia con ecografia ginecológica transvaginal para identificar un engrosamiento endometrial. Se establece un punto de corte de normalidad para mujeres premenopausicas de 12-15 mm y de 5 mm para posmenopausicas. En los casos de mujeres posmenopausicas con tratamiento hormonal sustitutivo (THS) el punto de corte se establece en 8 mm y en las pacientes tratadas con tamoxifeno en 8-10 mm.Un cambio muy reciente establecido en las principales guías de manejo del carcinoma de endometrio ha decidido modificar el punto de corte a 3 mm en mujeres posmenopausicas.\nDe manera que, en una mujer posmenopausica SINTOMÁTICA con un grosor endometrial mayor o igual a 3 mm medido por ecografía se recomienda realizar BIOPSIA ENDOMETRIAL, ya que este punto de corte presenta mayor sensibilidad con una especificidad comparable.El diagnóstico de confirmación debe establecerse siempre con una toma de biopsia endometrial. Puede realizarse mediante una toma a ciegas o microlegrado aspirativo (cánula de Cornier), válido sólo ante resultados positivos, mediante un legrado uterino fraccionado o mediante histeroscopia diagnóstica con toma de biopsia dirigida (técnica de elección).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_410",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "Una paciente de 31 años, G1 Abl, que utiliza como método anticonceptivo preservativo, consulta por presentar metrorragia intercíclica de 3 meses de evolución. En la ecografía ginecológica se observa imagen compatible con pólipo endometrial. Se realiza la exéresis del mismo mediante histeroscopia y el estudio anatomopatológico informa: hiperplasia endometrial compleja con atipia. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Ablación endometrial",
+      "b": "Tratamiento hormonal combinado con etinilestradiol y dienogest",
+      "c": "Tratamiento hormonal con acetato de medroxiprogesterona",
+      "d": "Histerectomía total"
+    },
+    "correcta": "d",
+    "explicacion": "La elección del tratamiento de la hiperplasia endometrial está basada en dos factores: 1) presencia o ausencia de atipia y 2) deseo genésico:\n- **Hiperplasia con atipia**: el tratamiento de elección es la **histerectomia total**, ya que esta situación es considerada una lesión premaligna. En aquellas pacientes con deseo genésico en las que se haya descartado la presencia de un adenocarcinoma de endometrio concomitante, podría instaurarse un tratamiento con acetato de megestrol durante 6-9 meses. Se controlará a la paciente con ecografia, histeroscopia y biopsia a los 3 y 6 meses. En caso de fracaso del tratamiento se practicaría una histerectomía.\n- **Hiperplasia sin atipia**: el objetivo es prevenir la progresión y controlar el sangrado uterino anormal. Mujer en edad reproductiva con deseo gestacional: inducir la ovulación. Mujer en edad reproductiva sin deseo gestacional: tratamiento con gestágenos en segunda fase del ciclo, DIU liberador de levonorgestrel, tratamiento combinado de estrógenos-gestágenos, análogos de la GnRH.\nMujer perimenopausica o posmenopausica: en primer lugar, se debe excluir patología tumoral productora de estrógenos y/o investigar si recibió THS estrogénico sin oposición gestagénica. El tratamiento instaurado será con progestágenos durante 6 meses. En todos los casos el tratamiento se instaura durante 6 meses y se debe realizar seguimiento con ecografia, histeroscopia y biopsia a los 3 y 6 meses del inicio del tratamiento. En caso de persistencia de la hiperplasia tras 7-9 meses de tratamiento se recomienda realizar una histerectomia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_411",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "¿Cuál sería la conducta más adecuada para una paciente de 52 años, menopausica, que consultó por metrorragia de 3 meses de evolución? Se le realizó histeroscopia y en el estudio histológico se informa hiperplasia con atipia.",
+    "opciones": {
+      "a": "Control con histeroscopia en 3 a 6 meses",
+      "b": "Anexohisterectomia total",
+      "c": "Indicar 40 mg/día de acetato de medroxiprogesterona",
+      "d": "Anexectomia bilateral"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines didacticos\nSe define a la **hiperplasia endometrial** como un proceso complejo, de proliferación exagerada, que afecta tanto a las células epiteliales como a las del estroma endometrial. Es producto de la estimulación estrogénica prolongada (hiperestrogenismo absoluto o relativo), no contrarrestada por la progesterona.\nLa hiperplasia endometrial atipica es una lesión precancerosa, siendo el factor pronóstico más importante en la progresión a carcinoma la presencia y gravedad de las atipias citológicas. Existe una tasa de progresión de hiperplasia con atipia a carcinoma del 23%, mientras que la hiperplasia sin atipia presenta una progresión a carcinoma del 2% de los casos.\nEl tratamiento indicado es la **anexohisterectomía total** en el caso de las pacientes postmenopausicas.\nEl acetato de medroxiprogesterona puede utilizarse como tratamiento en pacientes jovenes con deseo de preservar fertilidad.\nLa anexectomia bilateral no esta indicada en ese caso (dejaria el utero con la patologia), y tampoco el control histeroscopico ya que no tiene indicacion de preservar el utero.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_412",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de ovario",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "¿Cuál es el primer paso para el tratamiento respecto del cáncer de ovario?",
+    "opciones": {
+      "a": "Cirugía de citorreducción óptima primaria.",
+      "b": "Radioterapia.",
+      "c": "Quimioterapia exclusivamente.",
+      "d": "Neoadyuvancia."
+    },
+    "correcta": "a",
+    "explicacion": "El volumen de enfermedad residual tras la cirugía citorreductora es el factor pronóstico más importante en el cáncer de ovario epitelial avanzado. El objetivo quirúrgico debe ser la **citorreducción óptima**, idealmente sin enfermedad macroscópica residual (RO).\nEn pacientes en condiciones clínicas adecuadas y con probabilidad de lograr citorreducción óptima, se recomienda laparotomia primaria con histerectomia total abdominal, salpingooforectomía bilateral, omentectomía infracólica y resección de toda lesión visible, lo que puede incluir resecciones intestinales u otros órganos comprometidos.\nEn pacientes con enfermedad irresecable o alto riesgo quirúrgico, se aconseja quimioterapia neoadyuvante seguida de citorreducción intervalar.\nSegún el ensayo LION (NEJM 2019), la linfadenectomía sistemática de ganglios pélvicos y paraaórticos clinicamente negativos no mejora la supervivencia libre de progresión ni la supervivencia global, y aumenta la morbilidad; por lo tanto, no debe realizarse de rutina. La resección ganglionar se limita a aquellos casos con compromiso sospechado por imagen o palpación intraoperatoria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_413",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de endometrio",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "¿Cuál es el standard de oro para realizar diagnóstico de cáncer de endometrio?",
+    "opciones": {
+      "a": "Dilatación cervical y legrado uterino biópsico fraccionado",
+      "b": "Dilatación cervical y legrado uterino biopsico fraccionado con histeroscopia",
+      "c": "Resonancia Magnética nuclear de pelvis",
+      "d": "Toma de biopsia con dispositivos de aspiración endometrial"
+    },
+    "correcta": "b",
+    "explicacion": "Diagnóstico presuntivo: se basa en la clínica y los hallazgos ecográficos. Mediante ecografía transvaginal podemos objetivar signos de sospecha:\n- Engrosamiento endometrial: se establece un punto de corte de normalidad para mujeres premenopausicas de 12-15 mm y de 5 mm para posmenopausicas.\n- Mala delimitación de la interfase endometrio-miometrio.\n- Aumento de la vascularización endometrial mediante aplicación de doppler color.\nLa ecografía en tres dimensiones puede ayudar a predecir el grado de infiltración tumoral.\nDiagnóstico de confirmación: SIEMPRE es HISTOLOGICO, a partir de material de una biopsia endometrial. La biopsia endometrial guiada por **histeroscopia** se constituye como la técnica de elección (GOLD STANDARD).\nLa imagen histeroscópica tipica es la de proliferación endometrial polipoidea con vascularización anómala.\nLa opcion de RMN es incorrecta ya que no proporciona histologia. Las otras opciones que no incluyen la histeroscopia son de segunda eleccion, es decir, pueden realizarse cuando la histeroscopia no esta disponible.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_414",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cáncer de cuello uterino",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "A una paciente de 61 años, multípara, con diagnóstico de carcinoma de cuello uterino, se le realiza tacto vaginal y rectal bajo anestesia para estadificación clínica. Se constata cuello uterino reemplazado por formación tumoral de 6 cm, pared vaginal infiltrada en sus 2/3 superiores y parametrio izquierdo comprometido hasta pared pelviana. ¿Cuál es el estadio clínico según la clasificación de la FIGO?",
+    "opciones": {
+      "a": "IIIA",
+      "b": "IIA",
+      "c": "IIIB",
+      "d": "IIB"
+    },
+    "correcta": "c",
+    "explicacion": "Estadificación del carcinoma invasor del cuello uterino (FIGO 2018)\n- 0 Carcinoma in situ o preinvasor (CIN 3)\nCarcinoma invasor confinado a útero\n- IA Tumor microscópico\n- IA1: invasión del estroma $\\le3$ mm en profundidad\n- IA2: invasión del estroma $>3$ mm y < 5 mm en profundidad\n- IB Tumor macroscópico (clinicamente visible) o microscópico $>IA$\n- IB1: invasión del estroma $\\ge5$ mm en profundidad y con diámetro $<2$ cm\n- IB2: lesión clínicamente visible con diámetro mayor entre $\\ge2$ cm y < 4 cm\n- IB3: lesión clínicamente visible con diámetro mayor $\\ge4$ cm\n- II Carcinoma invasor que invade más allá del útero sin llegar a la pared pélvica ni al tercio inferior de la vagina\n- IIA Afecta a vagina superior pero sin compromiso parametrial\n- IIA 1: lesión clinicamente visible $<4$ cm\n- IIA2: lesión clinicamente visible 4 cm\n- IIB Con afectación parametrial\n- III Carcinoma invasor extendido a la pared pélvica, al tercio inferior de la vagina o que causa hidronefrosis o anulación de la función renal\n- IIIA Se extiende al tercio inferior de la vagina sin afectación de la pared pélvica\n- **IIIB Se extiende a la pared pélvica** o causa hidronefrosis o anulación de la función renal\n- IIIC Afectación de los ganglios pélvicos y/o paraaórticos, en forma independiente del tamaño del tumor y/o su extensión*\n- IIIC1: Afectación exclusiva de ganglios pélvicos\n- IIIC2: Afectación de ganglios paraaórticos (con/sin afectación de ganglios pélvicos)\n- IV Tumor que se extiende más allá de la pelvis o afecta a la vejiga y/o al recto\n- IVA Invade la mucosa de la vejiga o del recto o se extiende más allá de la pelvis verdadera\n- IVB Metástasis a distancia\nLa estadificación del carcinoma invasor de cuello es clinica, mientras que la del carcinoma de ovario y de endometrio es posquirúrgica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_415",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología benigna uterina"
+    ],
+    "enunciado": "Clara, de 35 años, presenta hipermenorrea de un año de evolución a la que se ha agregado dolor sordo de ubicación pelviana. Dentro de los exámenes complementarios se realizó una ecografía de control que informa útero irregular en anteversoflexión con diámetro anteroposterior de 60 mm, longitudinal de 95 mm y transversal de 33 mm, endometrio de 10 mm; ovario derecho de 34 x 22 mm y ovario izquierdo de 30 x 18 mm. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Blastoma de ovario derecho",
+      "b": "Adenomiosis",
+      "c": "Endometritis",
+      "d": "Cáncer de endometrio"
+    },
+    "correcta": "b",
+    "explicacion": "Pregunta modificada con fines didacticos.\nLa **adenomiosis** es la presencia de tejido endometrial en el miometrio. Se manifiesta como sangrado uterino anormal con o sin dolor pelviano.\nEn esta pregunta, la clave esta en la hipermenorrea como sintoma, en que el utero se informa como irregular, y en la falta de hallazgos ecograficos a nivel endometrial y anexial, lo que descarta las opciones de cancer de endometrio y blastoma anexial.\nLa endometritis deberia ir acompañada de sintomas clinicos como dolor a la movilizacion uterina o flujo patologico, por lo que tambien se descarta como opcion.\nEl tratamiento para el sangrado uterino anormal por adenomiosis puede ser medico (estrogenos-gestagenos o SIU) o quirurgico, segun las caracteristicas del cuadro y el deseo de paridad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_416",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta respecto de las fístulas rectovaginales?",
+    "opciones": {
+      "a": "Su localización en general es alta en la vagina o en la cúpula vaginal",
+      "b": "Las de origen actinico en general son tardias y se deben a necrosis del tabique rectovaginal",
+      "c": "Las de causa obstétrica se deben a una lesión quirúrgica",
+      "d": "Son sumamente raras y son casi siempre de naturaleza traumática"
+    },
+    "correcta": "b",
+    "explicacion": "Las **fistulas rectovaginales** secundarias a radioterapia o actinicas se presentan tardiamente, más de 6 meses después del tratamiento radiante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_417",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "Atiende a una paciente 38 años, G2P2, que utiliza como método anticonceptivo preservativo. Trae una ecografía TV que informa útero en AVF de 68 x 34 x 40 mm (DL x DAP x DT) y a nivel de ovario derecho imagen quística, unilocular, de paredes lisas y contenido anecoico de 8 cm de diámetro mayor, con ovario izquierdo sin particularidades y FSD (fondo saco Douglas) libre. CA 12 U/mL . ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Laparoscopia diagnóstica y terapéutica",
+      "b": "Anticonceptivos orales",
+      "c": "Anexectomía derecha",
+      "d": "Control ecográfico en 3 meses"
+    },
+    "correcta": "a",
+    "explicacion": "En pacientes premenopausicas y posmenopausicas, los quistes simples menores de 5 cm de diámetro, en presencia de valores normales de CA-125, son pasibles de seguimiento (grado de recomendación B, RCOG). El riesgo de cáncer de ovario para estas formaciones es de un 1%.\nEl resto de las formaciones ováricas son susceptibles de tratamiento quirúrgico. La vía de elección dependerá principalmente de las características de la formación (y el grado de sospecha de malignidad).\nLa **laparoscopia** es el método de elección para el tratamiento quirúrgico de masas que se presumen benignas, porque se asocia con recuperación más rápida, menores tasas de complicaciones posoperatorias, menor dolor posquirúrgico y egreso más rápido de la institución. El estudio anatomopatologico debe hacerse por diferido en masas de baja sospecha de malignidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_418",
+    "materia": [
+      "ginecologia",
+      "oncologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva",
+      "Conceptos de Oncología"
+    ],
+    "enunciado": "El cáncer de vagina es un tumor poco frecuente, con una incidencia del 2% de los tumores ginecológicos. Señale la correcta:",
+    "opciones": {
+      "a": "Estadio I, carcinoma limitado a la pared vaginal",
+      "b": "Epidemiológicamente son tumores que afectan a una edad entre 25 y 55 años",
+      "c": "Estadio III, carcinoma que compromete el tejido subvaginal y no se extiende a la pared pelviana",
+      "d": "El más frecuente es el adenocarcinoma de células claras"
+    },
+    "correcta": "a",
+    "explicacion": "El cáncer de vagina es un crecimiento de células malignas poco frecuente que ocurre principalmente en mujeres mayores de 50 años. El subtipo mas frecuente es el carcinoma escamoso.\nEstadificación FIGO 2021:\n- **I. Solo en la pared de la vagina**\n- II. Invasión de los tejidos paravaginales, pero no a la pared pelviana\n- III. Se extiende a la pared pélvica y/o el tercio inferior de la vagina y/o causa hidronefrosis o riñón no funcionante; con o sin metástasis a los ganglios linfáticos inguinales\n- IV. Extensión más allá de la pelvis verdadera y/o que compromete la mucosa vesical o rectal y/o metástasis a distancia (pulmón o huesos); con o sin metástasis a los ganglios linfáticos adyacentes",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_419",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva"
+    ],
+    "enunciado": "La neoplasia intraepitelial vaginal (VAIN) se caracteriza por cambios progresivos intraepiteleales. ¿Cuál considera correcta?",
+    "opciones": {
+      "a": "El 40% se relaciona con el virus del papiloma humano (VPH)",
+      "b": "Presenta una incidencia de 0,2 al 0,3 por 100 000 mujeres",
+      "c": "Representa el 1% de las neoplasias intraepiteliales del tracto genital inferior",
+      "d": "El 30% se encuentra asociado con otras neoplasias intraepiteliales"
+    },
+    "correcta": "b",
+    "explicacion": "La **neoplasia intraepitelial vaginal** está definida como el espectro de cambios intraepiteliales que comienzan generalmente como una neoplasia bien diferenciada, tradicionalmente llamada displasia leve y que podría culminar en carcinoma invasor.\nEs la neoplasia intraepitelial ginecológica menos frecuente, con una **incidencia informada del 0,2 al 0,3 por 100 000 mujeres**.\nSe asocia con frecuencia con neoplasia intraepitelial cervical y puede presentarse en continuidad con la lesión cervical o como lesiones satélites independientes, en general en la parte superior de la vagina. Suele ser asintomática, pero puede presentarse como una lesión acetoblanca, sobre todo como puntillado.\nSe relaciona con la infección por VPH tipos 6 y 11 en los de bajo grado y 16 y 18 en los de alto grado.\nEl diagnóstico se realiza mediante biopsia bajo guia vaginoscópica. El tratamiento puede ser expectante en las lesiones de bajo grado, tópico con ácido tricloroacético en las lesiones bien circunscritas o escisional con vaporización con nitrógeno liquido en las lesiones de limites netos, láser o LEEP. Su pronóstico es favorable.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_420",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "Una paciente de 25 años nuligesta, que utiliza como método anticonceptivo preservativo, trae a la consulta una ecografía transvaginal que informa útero en AVF 60 x 36 x 55 mm (DL x DAP x DT), a nivel de ovario izquierdo imagen quística, unilocular, de paredes lisas y contenido anecoico de 3 cm de diámetro, ovario derecho sin particularidades y FSD (fondo saco Douglas) libre. El CA 125 es de 11 U/ml. ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Control ecográfico en 3 meses",
+      "b": "Quistectomia izquierda",
+      "c": "Anexectomía izquierda",
+      "d": "Ooforectomía izquierda"
+    },
+    "correcta": "a",
+    "explicacion": "El estudio inicial en caso de sospecha clinica de masa anexial y/o de su hallazgo en el examen fisico es la ecografia ginecológica transvaginal (TV), independientemente de que se sospeche patología benigna o maligna. Este método describe las características de la imagen que sugieren malignidad.\nSe realiza la medición del volumen ovárico (longitud x altura x ancho x 0,523). Un volumen de 20 cm3 o más en premenopaúsicas y 10 cm3 en posmenopausicas se considera fuera del rango normal. La ecografía TV realizada por operadores expertos constituye un método fiable, con una sensibilidad de 88 a 100% y una especificidad de 62 a 96% para malignidad.\nCabe destacar que los hallazgos encontrados en una sola ecografia no diferencian categóricamente masas benignas de malignas. Se prefiere la via TV por tener mayor definición en la imagen. En la ecografia se visualiza el tamaño y las caracteristicas de la masa anexial, con características de benignidad o malignidad según el caso.\nEl grupo International Ovarian Tumor Analysis (IOTA) propone \"reglas\" B (caracteristicas de benignidad) y \"reglas\" M (caracteristicas de malignidad) para la clasificación ecográfica de los tumores de ovario.\nLa utilización del Doppler no se recomienda en forma rutinaria. No ha demostrado una mejora significativa de la precisión diagnóstica. Es útil para identificar componentes vascularizados de la masa en estudio, como flujo vascular en proyecciones papilares.\nREGLAS B (Benignidad)\n- Uniloculares.\n- Presencia de componentes sólidos menores de 7 mm.\n- Quistes con sombra acústica.\n- Tumor multilocular menor de 10 cm avascular.\nREGLAS M (Malignidad)\n- Tumor sólido irregular.\n- Ascitis con cuatro o más estructuras papilares.\n- Tumor multilocular, sólido/irregular > 10 cm.\n- Aumento de la vascularización.\nLos quistes funcionales (foliculos o cuerpo lúteo) son frecuentemente asintomáticos y se resuelven espontáneamente en 8 a 12 semanas. Se observan como imágenes redondeadas, anecogénicas o hipoecogénicas, sin componentes adicionales como tabiques o papilas. Los foliculos hemorrágicos son ecogénicos, avasculares, homogéneos u heterogéneos, con ecos producidos por los restos de fibrina. Puede verse una imagen de un coágulo dentro del foliculo, que, a diferencia de una papila, se mueve con una leve presión hecha con el transductor.\nDado que la estirpe más frecuente del carcinoma de ovario es la serosa, el marcador tumoral por excelencia es el CA-125. Como valor de corte se suele utilizar 35 UI/mL.\nEn pacientes premenopausicas y posmenopausicas, los quistes simples menores de 5 cm de diámetro, en presencia de valores normales de CA-125, son pasibles de seguimiento (grado de recomendación B, RCOG). Asimismo, el 50% de estas masas se resolverá de modo espontáneo dentro de los 3 meses. Es razonable seguirlas con **control ecografico** cada 3-4 meses.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_421",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva"
+    ],
+    "enunciado": "¿Cuál de los siguientes enunciados es incorrecto respecto de la neoplasia intraepitelial vulvar (VIN)?",
+    "opciones": {
+      "a": "La VIN diferenciada se asocia al liquen escleroso y a la hiperplasia epitelial.",
+      "b": "La VIN diferenciada se diagnostica con mayor frecuencia en mujeres posmenopausicas y no estaria relacionada con la infección por VPH.",
+      "c": "La VIN diferenciada presenta menor probabilidad de progresión al carcinoma.",
+      "d": "La VIN usual se presenta en mujeres jóvenes y se relaciona con la infección por VPH de alto riesgo."
+    },
+    "correcta": "c",
+    "explicacion": "La VIN común o usual (95%) se asocia a la infección por el virus del papiloma humano (VPH), fundamentalmente los subtipos de alto riesgo (16, 18 y 31). Afecta a mujeres jóvenes. Se localiza con más frecuencia en áreas sin vello en el tercio inferior de la vulva.\nLa VIN diferenciada no se asocia al VPH pero si a dermatosis como el liquen escleroso y la hiperplasia de células escamosas. Más frecuente en mujeres posmenopausicas. Suele presentarse de forma unifocal en áreas pilosas.\nEn las pacientes con VIN diferenciada se prefiere la extirpación por su **mayor riesgo de desarrollar carcinoma**. Por tanto, la afirmación de que presenta menor probabilidad de progresión es la incorrecta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_422",
+    "materia": [
+      "obstetricia",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Patología materna y gestación",
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "Consulta una paciente de 35 años que cursa embarazo de 8 semanas. Antecedentes: gestas 3 partos 2. En la ecografía transvaginal presenta: embrión único de 13 mm de longitud embrionaria máxima, saco vitelino presente, líquido amniótico normal, latidos embrionarios de 160 por minuto, ovario izquierdo aumentado de tamaño a expensas de una formación anecoica de 5 por 4,5 centímetros. La paciente no presenta dolor pélvico ni abdominal. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar quistectomía por vía laparotómica",
+      "b": "Control con ecografías seriadas para evaluar el crecimiento del quiste",
+      "c": "Solicitar marcadores tumorales (Ca 125) y definir conducta de acuerdo a su valor",
+      "d": "Realizar quistectomia por vía laparoscópica"
+    },
+    "correcta": "b",
+    "explicacion": "Caracteristicas ecográficas de las masas anexiales no sospechosas de malignidad:\nLos **quistes funcionales** (foliculos o cuerpo lúteo) son frecuentemente asintomáticos y se resuelven espontáneamente en 8 a 12 semanas. Se observan como imágenes redondeadas, anecogénicas o hipoecogénicas, sin componentes adicionales como tabiques o papilas.\nLos foliculos hemorrágicos son ecogénicos, avasculares, homogéneos u heterogéneos, con ecos producidos por los restos de fibrina. Puede verse una imagen de un coágulo dentro del foliculo, que, a diferencia de una papila, se mueve con una leve presión hecha con el transductor.\nBiomarcadores: No se considera necesaria la medición de marcadores tumorales en el caso de mujeres premenopausicas con imágenes de quistes simples. En pacientes menores de 40 años con un tumor con componente sólido, se recomienda solicitar lactato deshidrogenasa (LDH), alfa fetoproteina (AFP) y gonadotrofina coriónica (hCG) por la posibilidad de tumores de células germinales. Dado que la estirpe más frecuente del carcinoma de ovario es serosa, el marcador tumoral por excelencia es el CA-125. Como valor de corte se suele utilizar 35 UI/mL La endometriosis y otras patologias benignas que aumentan el valor de este marcador rara vez lo hacen por encima de 200 UI/mL.\nEn pacientes premenopausicas y posmenopausicas, los quistes simples menores de 5 cm de diámetro, en presencia de valores normales de CA-125, son pasibles de seguimiento (grado de recomendación B, RCOG). El riesgo de cáncer de ovario para estas formaciones es de 1%. Asimismo, el 50% de estas masas se resolverá de modo espontáneo dentro de los 3 meses. Es razonable seguirlas con **ecografia cada 4 meses**, junto con la revaluación de la sintomatologia.\nEn caso de decidir la realización de un tratamiento de exéresis de la masa anexial, cabe destacar que en todos los casos con sospecha de malignidad o sin ella se encuentra contraindicada la punción aspiración de los quistes de ovario. El análisis citológico del líquido de un tumor de ovario quistico tiene baja sensibilidad, alrededor de un 25%.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_423",
+    "materia": [
+      "ginecologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva",
+      "Generalidades"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la causa más probable de prurito vulvar en la zona del clítoris y parte anterior de los labios mayores y menores que se extiende hacia el monte de Venus?",
+    "opciones": {
+      "a": "Oxiuriasis.",
+      "b": "Lesión dermatológica primaria.",
+      "c": "Tricomoniasis.",
+      "d": "Candidiasis vulvar."
+    },
+    "correcta": "b",
+    "explicacion": "Si bien las infecciones vulvares suelen ser la cuasa más frecuente del prurito vulvar, esta distribución anatómica en clitoris y la parte anterior de los labios mayores y menores, que respeta la parte posterior del periné y no compromete aparentemente la vagina, no impresiona ser infecciosa y lo más probable es que se deba a una **dermatosis primaria**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_424",
+    "materia": [
+      "ginecologia",
+      "dermatologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva",
+      "Generalidades"
+    ],
+    "enunciado": "La medicación local más eficaz indicada ante el prurito vulvar por liquen escleroso es:",
+    "opciones": {
+      "a": "Progesterona.",
+      "b": "Corticoides locales",
+      "c": "Estrógenos conjugados equinos.",
+      "d": "Estrógenos."
+    },
+    "correcta": "b",
+    "explicacion": "Liquen escleroso vulvar: es la dermopatía más frecuente. Es una entidad benigna de etiología desconocida, crónica y progresiva, caracterizada por inflamación, adelgazamiento del epitelio y cambios cutáneos típicos que cursa con prurito y dolor.\nAunque es más tipico de mujeres perimenopausicas y posmenopausicas, puede afectar a cualquier edad, incluso se han descrito casos en niñas menores de 13 años. Se observa piel pálida, fina, estriada y con cambios en su arquitectura, como borramiento de parte o todos los labios menores y el clitoris (aspecto de «cerradura»).\nCon menos frecuencia pueden verse lesiones purpúreas, hiperqueratósicas o erosivas. Estas pacientes tienen un riesgo mayor de desarrollar VIN diferenciado y carcinoma escamoso de vulva (<5%).\nLa primera linea de tratamiento está constituida por **corticoides tópicos** de alta potencia (clobetasol). En la segunda linea de tratamiento se encuentran los inhibidores de la calcineurina tópicos, como el tacrolimús y pimecrolimús.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_425",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Vulva / Vagina / Cáncer de vulva"
+    ],
+    "enunciado": "Señale la opción correcta respecto de la irrigación de la vagina. La vagina está irrigada por la arteria ...",
+    "opciones": {
+      "a": "vaginal inferior, rama de la femoral.",
+      "b": "Cervicovaginal, rama de la hemorroidal media.",
+      "c": "Cervicovaginal, rama de la lliaca externa.",
+      "d": "vesicovaginal rama de la hipogástrica."
+    },
+    "correcta": "d",
+    "explicacion": "La arteria uterina, rama de la arteria hipogástrica, emite en su porción transversal las ramas cervicovaginales, que irrigan la porción superior de la vagina.\nLa arteria vaginal larga, que también es rama de la **arteria hipogástrica**, irriga sus dos tercios inferiores.\nEl drenaje venoso se realiza a través del plexo uterino y vaginal, que desembocan en las venas uterovaginales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  },
+  {
+    "id": "gineco_001_426",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Tumores benignos de ovario"
+    ],
+    "enunciado": "Lidia, una mujer perimenopausica de 47 años, consultó por dolor continuo en fosa ilíaca derecha y ciclos oligomenorreicos de 10 meses de evolución. Se le practicó una ecografía en la cual se detectó un blastoma quístico simple de ovario de 8 cm. ¿Cuál es su complicación más frecuente?",
+    "opciones": {
+      "a": "Malignización",
+      "b": "Rotura",
+      "c": "Infección",
+      "d": "Torsión"
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta modificada con fines didacticos.\nEl diagnóstico de una masa anexial puede ser un hallazgo del examen fisico o de un estudio por imágenes solicitado por otra causa en pacientes asintomáticas. Sin embargo, existen signos y síntomas que deben hacer sospechar la existencia de una masa anexial. Cualquier blastoma de ovario, independientemente de si se trata de patología benigna o maligna, puede provocar, además de dolor, síntomas urinarios por compresión (tenesmo o urgencia miccional).\nEn el examen fisico puede hallarse la masa anexial y puede haber dolor a la movilización anexial y/o uterina. El estudio inicial en caso de sospecha clinica de masa anexial y/o de su hallazgo en el examen físico es la ecografía ginecológica transvaginal (TV), independientemente de que se sospeche patologia benigna o maligna.\nLas complicaciones que pueden experimentar los blastomas de ovario son las siguientes:\n- **Torsión ovárica**. Los quistes que se agrandan pueden hacer que el ovario se mueva, lo que aumenta la posibilidad de que se produzca una torsión dolorosa del ovario (torsión ovárica). Los sintomas comprenden la aparición súbita de dolor intenso en la pelvis, náuseas y vómitos. La torsión ovárica también puede disminuir o detener el flujo de sangre a los ovarios.\n- **Rotura**. Mucho menos frecuente en quistes simples. La rotura de un quiste puede provocar dolor intenso y sangrado interno. Cuanto más grande es el quiste, el riesgo de rotura es mayor. La actividad física intensa también aumenta el riesgo.\n- **Infeccion**. Menos frecuente en quistes simples. Puede ocurrir sobreinfeccion en endometriomas, o ante antecedentes de EPI o salpingitis previa.\nEl riesgo de malignidad es quistes simples es bajo, hay que evluar el comportamiento ante el estudio con doppler y los marcadores tumorales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "prorem"
+  }
+]
   
