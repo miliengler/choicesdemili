@@ -1,579 +1,480 @@
 [
   {
     "id": "gineco_001_001",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una paciente se presenta a la consulta por amenorrea y galactorrea. Su nivel de prolactina está sensiblemente elevado. No está y nunca ha estado embarazada. Además de una radiografía de cráneo, esta paciente necesitará evaluación de las siguientes sustancias, que son causas del aumento de liberación de prolactina, excepto [cite: 12, 13]",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Alteraciones menstruales", "Hipotálamo / Hipófisis"],
+    "enunciado": "Una paciente se presenta a la consulta por amenorrea y galactorrea. Su nivel de prolactina está sensiblemente elevado. No está y nunca ha estado embarazada. Además de una radiografía de cráneo, esta paciente necesitará evaluación de las siguientes sustancias, que son causas del aumento de liberación de prolactina, excepto",
     "opciones": {
-      "a": "TRH VIP [cite: 19]",
-      "b": "Estrógenos. [cite: 20]",
-      "c": "Dopamina y GABA [cite: 22]",
-      "d": "Histamina, serotonina y opiáceos. [cite: 24]"
+      "a": "TRH VIP",
+      "b": "Estrógenos.",
+      "c": "Dopamina y GABA",
+      "d": "Histamina, serotonina y opiáceos."
     },
     "correcta": "c",
-    "explicacion": "La respuesta correcta es: **Dopamina y GABA** [cite: 26]",
+    "explicacion": "La respuesta correcta es: **Dopamina** y **GABA**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_002",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Una paciente menopausica de 50 años desea mantenerse en tratamiento con sus anticonceptivos orales de siempre. Consulta a su médico, quien intenta explicarle que éstas poseen más estrógenos de lo que ella necesitará en la posmenopausia. ¿Cuál es la concentración plasmática normal de estrógenos en esta etapa? [cite: 30, 31, 32]",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una paciente menopausica de 50 años desea mantenerse en tratamiento con sus anticonceptivos orales de siempre. Consulta a su médico, quien intenta explicarle que éstas poseen más estrógenos de lo que ella necesitará en la posmenopausia. ¿Cuál es la concentración plasmática normal de estrógenos en esta etapa?",
     "opciones": {
-      "a": "10 pg/mL [cite: 35]",
-      "b": "30 ng/mL [cite: 37]",
-      "c": "10 ng/mL [cite: 39]",
-      "d": "30 ug/mL [cite: 41]"
+      "a": "10 pg/mL",
+      "b": "30 ng/mL",
+      "c": "10 ng/mL",
+      "d": "30 μg/mL"
     },
     "correcta": "a",
-    "explicacion": "Estar atentos a las UNIDADES DE MEDIDA. [cite: 43]",
+    "explicacion": "Estar atentos a las **UNIDADES DE MEDIDA**.\n\nLa respuesta correcta es: **10 pg/ml**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_003",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Infertilidad / Esterilidad / Reproducción asistida"
-    ],
-    "enunciado": "Una paciente se presenta a la consulta porque está buscando quedar embarazada desde hace 6 meses y una amiga le dijo que concurra al médico para saber si está ovulando todos los meses. Después de tranquilizar a la paciente diciéndole que no ovular un mes no la convierte en infértil, le pide un dosaje de progesterona en día 23. ¿Qué nivel espera encontrar en este día del ciclo? [cite: 48, 49]",
+    "materia": ["ginecologia"],
+    "submateria": ["Infertilidad / Esterilidad / Reproducción asistida"],
+    "enunciado": "Una paciente se presenta a la consulta porque está buscando quedar embarazada desde hace 6 meses y una amiga le dijo que concurra al médico para saber si está ovulando todos los meses. Después de tranquilizar a la paciente diciéndole que no ovular un mes no la convierte en infértil, le pide un dosaje de progesterona en día 23. ¿Qué nivel espera encontrar en este día del ciclo?",
     "opciones": {
-      "a": "3 a 5 mg/mL [cite: 52]",
-      "b": "20 a 30 mg/mL [cite: 54]",
-      "c": "5 a 20 ng/mL [cite: 57]",
-      "d": "< 2 ng/mL [cite: 58]"
+      "a": "3 a 5 mg/mL",
+      "b": "20 a 30 mg/mL",
+      "c": "5 a 20 ng/mL",
+      "d": "< 2 ng/mL"
     },
     "correcta": "c",
-    "explicacion": "¿Podés definir \"esterilidad\"? es lo mismo a cualquier edad?\n¿Podes elaborar una explicación? [cite: 60, 61]",
+    "explicacion": "¿Podés definir **esterilidad**? ¿es lo mismo a cualquier edad?\n\n¿Podes elaborar una explicación?\n\nLa respuesta correcta es: **5 a 20 ng/mL**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_004",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Una mujer menopausica de 56 años con fecha de última menstruación a los 54 años, consulta por dolor dorsolumbar crónico, pérdida de 3 cm, de altura en los últimos 5 años y limitación en los movimientos. La paciente está medicada desde hace 10 años con corticoides por un enfisema pulmonar. Ud. Sospecha: [cite: 66, 67]",
+    "materia": ["ginecologia", "reumatologia"],
+    "submateria": ["Climaterio y menopausia", "Metabólica ósea"],
+    "enunciado": "Una mujer menopausica de 56 años con fecha de última menstruación a los 54 años, consulta por dolor dorsolumbar crónico, pérdida de 3 cm de altura en los últimos 5 años y limitación en los movimientos. La paciente está medicada desde hace 10 años con corticoides por un enfisema pulmonar. Ud. Sospecha:",
     "opciones": {
-      "a": "Enfermedad de Paget ósea [cite: 73]",
-      "b": "Osteoporosis postmenopausica [cite: 76]",
-      "c": "Osteoporosis secundaria [cite: 78]",
-      "d": "Artrosis de la columna dorsolumbar [cite: 80]"
+      "a": "Enfermedad de Paget ósea",
+      "b": "Osteoporosis postmenopausica",
+      "c": "Osteoporosis secundaria",
+      "d": "Artrosis de la columna dorsolumbar"
     },
     "correcta": "c",
-    "explicacion": "Defina criterios para solicitar DMO.\nDescriba los factores de riesgo para esteopenia/osteoporosisi [cite: 82, 83]",
+    "explicacion": "Defina criterios para solicitar **DMO**.\n\nDescriba los factores de riesgo para **esteopenia**/**osteoporosisi**.\n\nLa respuesta correcta es: **Osteoporosis secundaria**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_005",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Una mujer de 58 años, quien ha estado menopausica desde hace 4 años, con sintomas vasomotores de importancia, acude a su consultorio, por que se encuentra indecisa con respecto a la posibilidad de iniciar terapia sustitutiva con estrógenos. Recientemente su madre sufrió una fractura de cadera al caer desde la posición de pie. Ella no relata antecedentes familiares de cáncer de mama, ni cardiovasculares. La exploración física no muestra cifosis. La columna vertebral no es dolorosa a la percusión ni a la palpación. Su mamografía es normal, sus exámenes de laboratorio muestran los siguientes valores: calcio 9.8 mg/dL; fósforo 3.5 mg/dL colesterol total 220 mg/dL; colesterol HDL 50 mg/dL. Usted ordena una densitometría ósea, la cual muestra los siguientes resultados: densidad mineral ósea de las vértebras L2 a L4 de 0,884 g/cm2 la que corresponde al 96% de los controles ajustados por edad y 84% con los controles de pacientes jóvenes normales. Calificación -T = -1,48; calificación-Z -0,31. ¿Qué le aconsejaría usted a esta paciente? [cite: 88, 89, 90, 91, 92, 93, 94]",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una mujer de 58 años, quien ha estado menopausica desde hace 4 años, con sintomas vasomotores de importancia, acude a su consultorio, por que se encuentra indecisa con respecto a la posibilidad de iniciar terapia sustitutiva con estrógenos. Recientemente su madre sufrió una fractura de cadera al caer desde la posición de pie. Ella no relata antecedentes familiares de cáncer de mama, ni cardiovasculares. La exploración física no muestra cifosis. La columna vertebral no es dolorosa a la percusión ni a la palpación. Su mamografía es normal, sus exámenes de laboratorio muestran los siguientes valores: calcio 9.8 mg/dL; fósforo 3.5 mg/dL colesterol total 220 mg/dL; colesterol HDL 50 mg/dL. Usted ordena una densitometría ósea, la cual muestra los siguientes resultados: densidad mineral ósea de las vértebras L2 a L4 de 0,884 g/cm2 la que corresponde al 96% de los controles ajustados por edad y 84% con los controles de pacientes jóvenes normales. Calificación -T = -1,48; calificación-Z -0,31. ¿Qué le aconsejaría usted a esta paciente?",
     "opciones": {
-      "a": "Que debería iniciar la terapia hormonal sustitutiva y continuar, solamente, hasta alcanzar los 5 años de tratamiento. [cite: 96]",
-      "b": "Que sería de utilidad, llevar a cabo una densitometría ósea de la porción proximal del fémur [cite: 99]",
-      "c": "Que la terapia hormonal sustitutiva con estrógenos, no es necesaria en su caso [cite: 101]",
-      "d": "Deberá considerar la terapia hormonal sustitutiva con estrógenos, a largo plazo, para prevenir una pérdida ósea mayor. [cite: 103]"
+      "a": "Que debería iniciar la terapia hormonal sustitutiva y continuar, solamente, hasta alcanzar los 5 años de tratamiento.",
+      "b": "Que sería de utilidad, llevar a cabo una densitometría ósea de la porción proximal del fémur",
+      "c": "Que la terapia hormonal sustitutiva con estrógenos, no es necesaria en su caso",
+      "d": "Deberá considerar la terapia hormonal sustitutiva con estrógenos, a largo plazo, para prevenir una pérdida ósea mayor."
     },
     "correcta": "a",
-    "explicacion": "Es por los sintomas vasomotores de importancia, y siempre el menor tiempo y dosis posibles, hasta 3 a 5 años de tratamiento con controles estrictos. [cite: 105]",
+    "explicacion": "Es por los **síntomas vasomotores** de importancia, y siempre el menor tiempo y dosis posibles, hasta 3 a 5 años de tratamiento con controles estrictos.\n\nLa respuesta correcta es: **Que debería iniciar la terapia hormonal sustitutiva y continuar, solamente, hasta alcanzar los 5 años de tratamiento.**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_006",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Consulta una paciente de 55 años, con exceso de peso corporal, con antecedente personal de hipertensión arterial leve, medicada, con última menstruación hace 11 meses, con colesterol total de 210 mg/dL y HDL de 40 mg/dL, sin antecedentes familiares de importancia, quien concurre a la consulta por sofocos, insomnio, fluctuaciones en el estado de ánimo y sequedad vaginal. ¿Cuál de las siguientes opciones sería una conducta correcta? [cite: 110, 111]",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Consulta una paciente de 55 años, con exceso de peso corporal, con antecedente personal de hipertensión arterial leve, medicada, con última menstruación hace 11 meses, con colesterol total de 210 mg/dL y HDL de 40 mg/dL, sin antecedentes familiares de importancia, quien concurre a la consulta por sofocos, insomnio, fluctuaciones en el estado de ánimo y sequedad vaginal. ¿Cuál de las siguientes opciones sería una conducta correcta?",
     "opciones": {
-      "a": "Indicar dieta, actividad física y medicación sintomática [cite: 115]",
-      "b": "Solicitar estudios complementarios [cite: 121]",
-      "c": "Realizar una prueba de progesterona, para evaluar respuesta endometrial [cite: 123]",
-      "d": "Indicar una terapia hormonal de reemplazo [cite: 125]"
+      "a": "Indicar dieta, actividad física y medicación sintomática",
+      "b": "Solicitar estudios complementarios",
+      "c": "Realizar una prueba de progesterona, para evaluar respuesta endometrial",
+      "d": "Indicar una terapia hormonal de reemplazo"
     },
     "correcta": "d",
-    "explicacion": "Tiene un **sindrome climatérico** instaurado, siendo una indicación de terapia de reemplazo hormonal.\nLa HTA esta controlada. [cite: 127, 128]",
+    "explicacion": "Tiene un **síndrome climatérico** instaurado, siendo una indicación de **terapia de reemplazo hormonal**.\n\nLa **HTA** esta controlada.\n\nLa respuesta correcta es: **Indicar una terapia hormonal de reemplazo**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_007",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Una mujer de 57 años, acude a su consultorio para evaluar los sofocos que han aumentado de frecuencia los últimos 3 meses. Ella fue sometida a una histerectomía sin ooforectomia como tratamiento de fibromas uterinos grandes que se acompañaban de sangrado excesivo. La paciente tiene tres hijos. Una mamografia reciente no muestra anormalidades. Su padre sufrió un infarto de miocardio a los 54 años de edad y su madre tiene osteoporosis y recientemente tuvo una fractura de la cadera a la edad de 88 años. No existen antecedentes familiares de cáncer de mama. La tensión arterial es de 128/78 mm Hg. La exploración física muestra a una mujer de 57 años, sana. La exploración de las mamas no revela tumoraciones ni linfadenopatías. Sus exámenes de laboratorio muestran los siguientes niveles: colesterol total 268 mg/dL; colesterol HDL 38 mg/dL; triglicéridos 100 mg/dL. ¿Cuál es la mejor terapia para esta paciente? [cite: 133, 134, 135, 136, 137, 138, 139, 140]",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una mujer de 57 años, acude a su consultorio para evaluar los sofocos que han aumentado de frecuencia los últimos 3 meses. Ella fue sometida a una histerectomía sin ooforectomia como tratamiento de fibromas uterinos grandes que se acompañaban de sangrado excesivo. La paciente tiene tres hijos. Una mamografia reciente no muestra anormalidades. Su padre sufrió un infarto de miocardio a los 54 años de edad y su madre tiene osteoporosis y recientemente tuvo una fractura de la cadera a la edad de 88 años. No existen antecedentes familiares de cáncer de mama. La tensión arterial es de 128/78 mm Hg. La exploración física muestra a una mujer de 57 años, sana. La exploración de las mamas no revela tumoraciones ni linfadenopatías. Sus exámenes de laboratorio muestran los siguientes niveles: colesterol total 268 mg/dL; colesterol HDL 38 mg/dL; triglicéridos 100 mg/dL. ¿Cuál es la mejor terapia para esta paciente?",
     "opciones": {
-      "a": "Terapia de estrógenos continua, transdérmica [cite: 145]",
-      "b": "Terapia continúa con estrógenos orales. [cite: 147]",
-      "c": "Estrógeno oral continúo diario y terapia de progesterona. [cite: 149]",
-      "d": "Terapia con estrógenos orales desde el día 1 al 25 de su ciclo, añadiendo progesterona desde el día 17 hasta el 25 de cada mes. [cite: 151]"
+      "a": "Terapia de estrógenos continua, transdérmica",
+      "b": "Terapia continúa con estrógenos orales.",
+      "c": "Estrógeno oral continúo diario y terapia de progesterona.",
+      "d": "Terapia con estrógenos orales desde el día 1 al 25 de su ciclo, añadiendo progesterona desde el día 17 hasta el 25 de cada mes."
     },
     "correcta": "b",
-    "explicacion": "**Estrógenos solos** porque al no tener útero no tiene indicación de progestágenos.\nY la via oral es más cómoda que la transdérmica pero no estaria mal. [cite: 154, 155]",
+    "explicacion": "**Estrógenos solos** porque al no tener útero no tiene indicación de **progestágenos**.\n\nY la vía oral es más cómoda que la transdérmica pero no estaría mal.\n\nLa respuesta correcta es: **Terapia continúa con estrógenos orales.**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_008",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Climaterio y menopausia"
-    ],
-    "enunciado": "Una paciente de 53 años, con FUM de hace un año, antecedentes de dislipidemia e hipertensión, trae un resultado de prueba de progesterona positiva. Como presenta sintomas menopausicos que no han respondido a la medicación sintomática, Ud decide instaurar un tratamiento hormonal sustitutivo. ¿Qué esquema elegiria? [cite: 159, 160, 161]",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una paciente de 53 años, con FUM de hace un año, antecedentes de dislipidemia e hipertensión, trae un resultado de prueba de progesterona positiva. Como presenta sintomas menopausicos que no han respondido a la medicación sintomática, Ud decide instaurar un tratamiento hormonal sustitutivo. ¿Qué esquema elegiria?",
     "opciones": {
-      "a": "Raloxifeno [cite: 167]",
-      "b": "Tibolona [cite: 169]",
-      "c": "Estrógeno transdérmico dosis mínima continuo + progesterona natural micronizada dosis mínima, 12 días por ciclo. [cite: 171]",
-      "d": "Estrógenos conjugados equinos + medroxiprogesterona via oral combinado continuo [cite: 173]"
+      "a": "Raloxifeno",
+      "b": "Tibolona",
+      "c": "Estrógeno transdérmico dosis mínima continuo + progesterona natural micronizada dosis mínima, 12 días por ciclo.",
+      "d": "Estrógenos conjugados equinos + medroxiprogesterona via oral combinado continuo"
     },
     "correcta": "c",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Estrógeno transdérmico** dosis mínima continuo + **progesterona natural micronizada** dosis mínima, 12 días por ciclo.",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_009",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Patología cervical benigna y preinvasora"
-    ],
-    "enunciado": "Una paciente de 27 años le trae el informe del extendido de Papanicolau para que le diga \"si está todo bien\". El indice de maduración es de 0/70/30, las células presentan plegamiento de sus bordes, se observan algunos leucocitos y discreta citólisis. Su aseveración respecto de esta paciente es: [cite: 179, 180, 181]",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "Una paciente de 27 años le trae el informe del extendido de Papanicolau para que le diga \"si está todo bien\". El indice de maduración es de 0/70/30, las células presentan plegamiento de sus bordes, se observan algunos leucocitos y discreta citólisis. Su aseveración respecto de esta paciente es:",
     "opciones": {
-      "a": "Que es una fase progestacional normal [cite: 187]",
-      "b": "Que es una fase estrogénica normal [cite: 189]",
-      "c": "Que es un extendido característico de embarazo [cite: 192]",
-      "d": "Que debería repetir el estudio [cite: 194]"
+      "a": "Que es una fase progestacional normal",
+      "b": "Que es una fase estrogénica normal",
+      "c": "Que es un extendido característico de embarazo",
+      "d": "Que debería repetir el estudio"
     },
     "correcta": "a",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Que es una fase progestacional normal**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_010",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una paciente consulta porque tiene menstruaciones cada 18 dias, y le resulta muy incómodo, además de estar preocupada por la posibilidad de volverse anémica. ¿Cuál de las siguientes opciones es la causa más probable de su problema? [cite: 200, 201]",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "Una paciente consulta porque tiene menstruaciones cada 18 dias, y le resulta muy incómodo, además de estar preocupada por la posibilidad de volverse anémica. ¿Cuál de las siguientes opciones es la causa más probable de su problema?",
     "opciones": {
-      "a": "Fase lútea inadecuada [cite: 206]",
-      "b": "Defectos nutricionales. [cite: 207]",
-      "c": "Alteración hormonal perimenopaúsica [cite: 208]",
-      "d": "Hiperprolactinemia. [cite: 209]"
+      "a": "Fase lútea inadecuada",
+      "b": "Defectos nutricionales.",
+      "c": "Alteración hormonal perimenopaúsica",
+      "d": "Hiperprolactinemia."
     },
     "correcta": "a",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Fase lútea inadecuada**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_011",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Infertilidad / Esterilidad / Reproducción asistida"
-    ],
-    "enunciado": "Una mujer nuligesta de 24 años de edad y su esposo han intentado el embarazo por tres años sin éxito. La paciente comenta que menstrúa sólo unas cuantas veces al año y que no tiene antecedentes personales patológicos o quirúrgicos de importancia. Nunca ha sufrido una enfermedad grave. La exploración pélvica muestra vagina de tamaño normal y útero pequeño y palpable; no se palpan masas en los anexos. Los exámenes de laboratorio muestran, en fase folicular, estradiol 30 pg/mL progesterona 2 ng/mL, prolactina de 27 ng/mL, TSH de 6 ug/mL. El ultrasonido transvaginal realizado en el consultorio muestra útero pequeño con anteflexión y anteversión normales. El mejor tratamiento para inducir la ovulación y lograr el embarazo de la paciente es: [cite: 215, 216, 217, 218, 219, 220]",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Infertilidad / Esterilidad / Reproducción asistida", "Tiroides"],
+    "enunciado": "Una mujer nuligesta de 24 años de edad y su esposo han intentado el embarazo por tres años sin éxito. La paciente comenta que menstrúa sólo unas cuantas veces al año y que no tiene antecedentes personales patológicos o quirúrgicos de importancia. Nunca ha sufrido una enfermedad grave. La exploración pélvica muestra vagina de tamaño normal y útero pequeño y palpable; no se palpan masas en los anexos. Los exámenes de laboratorio muestran, en fase folicular, estradiol 30 pg/mL progesterona 2 ng/mL, prolactina de 27 ng/mL, TSH de 6 μg/mL. El ultrasonido transvaginal realizado en el consultorio muestra útero pequeño con anteflexión y anteversión normales. El mejor tratamiento para inducir la ovulación y lograr el embarazo de la paciente es:",
     "opciones": {
-      "a": "Hormona foliculoestimulante y fertilización in vitro [cite: 222]",
-      "b": "Hormona tiroidea [cite: 228]",
-      "c": "Clomifeno [cite: 230]",
-      "d": "Clomifeno con inseminación intrauterina [cite: 232]"
+      "a": "Hormona foliculoestimulante y fertilización in vitro",
+      "b": "Hormona tiroidea",
+      "c": "Clomifeno",
+      "d": "Clomifeno con inseminación intrauterina"
     },
     "correcta": "b",
-    "explicacion": "Una TSH tan alta hace suponer que estamos de minima frente a un **hipotiroidismo subclínico**, con riesgo de aborto espontáneo.\n¿Qué es la consulta preconcepcional? ¿Para qué sirve? ¿Qué se solicita? [cite: 234, 235]",
+    "explicacion": "Una **TSH** tan alta hace suponer que estamos de mínima frente a un **hipotiroidismo subclínico**, con riesgo de aborto espontáneo.\n\n¿Qué es la consulta preconcepcional? ¿Para qué sirve? ¿Qué se solicita?\n\nLa respuesta correcta es: **Hormona tiroidea**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_012",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una joven nuligesta de 17 años de edad reporta ciclos cada 45 a 50 días con hemorragia moderada durante cuatro días. No tiene vida sexual activa. La exploración física es normal y la prueba de embarazo en suero es negativa. El siguiente paso en el tratamiento es: [cite: 240, 241, 242]",
+    "materia": ["ginecologia", "pediatria"],
+    "submateria": ["Anticoncepción", "Trastornos de la infancia y la adolescencia"],
+    "enunciado": "Una joven nuligesta de 17 años de edad reporta ciclos cada 45 a 50 días con hemorragia moderada durante cuatro días. No tiene vida sexual activa. La exploración física es normal y la prueba de embarazo en suero es negativa. El siguiente paso en el tratamiento es:",
     "opciones": {
-      "a": "Tranquilizar a la paciente [cite: 249]",
-      "b": "Fármacos antiinflamatorios no esteroideos (AINES) [cite: 250]",
-      "c": "Histeroscopia, dilatación y legrado [cite: 253]",
-      "d": "Pildoras anticonceptivas en dosis altas [cite: 254]"
+      "a": "Tranquilizar a la paciente",
+      "b": "Fármacos antiinflamatorios no esteroideos (AINES)",
+      "c": "Histeroscopia, dilatación y legrado",
+      "d": "Pildoras anticonceptivas en dosis altas"
     },
     "correcta": "d",
-    "explicacion": "SIEMPRE A ADOLESCENTES DOSIS HORMONALES ALTAS.\n¿poqué?\nSEGUNDO CONCEPTO: SIEMPRE DOBLE METODO [cite: 256, 257, 258]",
+    "explicacion": "**SIEMPRE A ADOLESCENTES DOSIS HORMONALES ALTAS**.\n\n¿poqué?\n\nSEGUNDO CONCEPTO: **SIEMPRE DOBLE METODO**\n\nLa respuesta correcta es: **Píldoras anticonceptivas en dosis altas**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_013",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Síndrome de ovario poliquístico"
-    ],
-    "enunciado": "Una mujer de 23 años, gesta 1, para 0, aborto 1, tiene periodos menstruales irregulares e impredecibles cada 30 a 90 días. La exploración física muestra acné en cara y espalda, varios pelos oscuros y gruesos en su barbilla y porción inferior del abdomen. El paso inicial en el diagnóstico de esta paciente es la medición de: [cite: 263, 264, 265]",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico"],
+    "enunciado": "Una mujer de 23 años, gesta 1, para 0, aborto 1, tiene periodos menstruales irregulares e impredecibles cada 30 a 90 días. La exploración física muestra acné en cara y espalda, varios pelos oscuros y gruesos en su barbilla y porción inferior del abdomen. El paso inicial en el diagnóstico de esta paciente es la medición de:",
     "opciones": {
-      "a": "Todas son correctas [cite: 269]",
-      "b": "Androstenediona [cite: 272]",
-      "c": "Testosterona libre [cite: 274]",
-      "d": "Sulfato de dihidroepiandrosterona [cite: 276]"
+      "a": "Todas son correctas",
+      "b": "Androstenediona",
+      "c": "Testosterona libre",
+      "d": "Sulfato de dihidroepiandrosterona"
     },
     "correcta": "a",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Todas son correctas**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_014",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Síndrome de ovario poliquístico"
-    ],
-    "enunciado": "Una mujer joven sin deseos de fertilidad acude a su consulta con amenorrea secundaria. La mujer es obesa y presenta un marcado aumento del vello con distribución masculina. Las determinaciones hormonales muestran un aumento de la relación LH/FSH (3/1) un aumento de andrógenos y un indice de cintura mayor de 88 cm. La ecografía detecta un aumento del tamaño del ovario con múltiples quistes menores de 1 cm. ¿Qué tratamiento utilizaría en esta paciente? [cite: 282, 283, 284, 285, 286]",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico", "Anticoncepción"],
+    "enunciado": "Una mujer joven sin deseos de fertilidad acude a su consulta con amenorrea secundaria. La mujer es obesa y presenta un marcado aumento del vello con distribución masculina. Las determinaciones hormonales muestran un aumento de la relación LH/FSH (3/1) un aumento de andrógenos y un indice de cintura mayor de 88 cm. La ecografía detecta un aumento del tamaño del ovario con múltiples quistes menores de 1 cm. ¿Qué tratamiento utilizaría en esta paciente?",
     "opciones": {
-      "a": "Citrato de clomifeno [cite: 292]",
-      "b": "Contraceptivos combinados con estrógenos asociados a ciproterona [cite: 294]",
-      "c": "Contraceptivos combinados con estrógenos asociados a progesterona [cite: 296]",
-      "d": "Ooforectomía [cite: 298]"
+      "a": "Citrato de clomifeno",
+      "b": "Contraceptivos combinados con estrógenos asociados a ciproterona",
+      "c": "Contraceptivos combinados con estrógenos asociados a progesterona",
+      "d": "Ooforectomía"
     },
     "correcta": "b",
-    "explicacion": "**Ciproterona**: Progestágeno con alto poder antiandrogénico [cite: 300]",
+    "explicacion": "**Ciproterona**: Progestágeno con alto poder antiandrogénico.\n\nLa respuesta correcta es: **Contraceptivos combinados con estrógenos asociados a ciproterona**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_015",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Síndrome de ovario poliquístico"
-    ],
-    "enunciado": "Una mujer de 21 años, nuligesta, consulta por aumento de la cantidad y velocidad de crecimiento del vello y refiere que la voz le ha cambiado (está más gruesa) en los últimos meses. Dice que esto nunca le había pasado anteriormente. Al examen físico presenta agrandamiento del clítoris. ¿Cuál sería la prueba hormonal sérica más útil? [cite: 305, 306, 307]",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico"],
+    "enunciado": "Una mujer de 21 años, nuligesta, consulta por aumento de la cantidad y velocidad de crecimiento del vello y refiere que la voz le ha cambiado (está más gruesa) en los últimos meses. Dice que esto nunca le había pasado anteriormente. Al examen físico presenta agrandamiento del clítoris. ¿Cuál sería la prueba hormonal sérica más útil?",
     "opciones": {
-      "a": "Testosterona y androstenodiona. [cite: 310]",
-      "b": "LH, FSH. [cite: 315]",
-      "c": "Dihidroepiandrostenodiona [cite: 317]",
-      "d": "17-hidroxiprogesterona [cite: 319]"
+      "a": "Testosterona y androstenodiona.",
+      "b": "LH, FSH.",
+      "c": "Dihidroepiandrostenodiona",
+      "d": "17-hidroxiprogesterona"
     },
     "correcta": "a",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Testosterona** y **androstenodiona**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_016",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Síndrome de ovario poliquístico"
-    ],
-    "enunciado": "Una mujer de 33 años, gesta 2, para 1, aborto 1, acude al consultorio reportando el crecimiento de pelo oscuro en la barbilla, labio superior y porción anterior del abdomen. El crecimiento ha ocurrido a lo largo de varios años y la ha obligado a utilizar cera y decoloración cada vez con mayor frecuencia. Niega cambios en el tono de la voz, tamaño del clítoris, reducción del tamaño mamario o acné. Durante los primeros años de la adolescencia tuvo períodos menstruales regulares que duraban cuatro a cinco días. No obstante, ella ha tomado píldoras anticonceptivas para regular sus ciclos. Entre sus antecedentes personales patológicos de importancia se encuentra hepatitis C, que adquirió después de una hemotransfusión por una hemorragia puerperal durante su primer embarazo. El siguiente paso en el tratamiento del hirsutismo de esta paciente es: [cite: 324, 325, 326, 327, 328, 329, 330]",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico"],
+    "enunciado": "Una mujer de 33 años, gesta 2, para 1, aborto 1, acude al consultorio reportando el crecimiento de pelo oscuro en la barbilla, labio superior y porción anterior del abdomen. El crecimiento ha ocurrido a lo largo de varios años y la ha obligado a utilizar cera y decoloración cada vez con mayor frecuencia. Niega cambios en el tono de la voz, tamaño del clítoris, reducción del tamaño mamario o acné. Durante los primeros años de la adolescencia tuvo períodos menstruales regulares que duraban cuatro a cinco días. No obstante, ella ha tomado píldoras anticonceptivas para regular sus ciclos. Entre sus antecedentes personales patológicos de importancia se encuentra hepatitis C, que adquirió después de una hemotransfusión por una hemorragia puerperal durante su primer embarazo. El siguiente paso en el tratamiento del hirsutismo de esta paciente es:",
     "opciones": {
-      "a": "Acetato de medroxiprogesterona de depósito [cite: 333]",
-      "b": "Espironolactona [cite: 339]",
-      "c": "Flutamida [cite: 341]",
-      "d": "Dexametasona [cite: 343]"
+      "a": "Acetato de medroxiprogesterona de depósito",
+      "b": "Espironolactona",
+      "c": "Flutamida",
+      "d": "Dexametasona"
     },
     "correcta": "b",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Espironolactona**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_017",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Síndrome de ovario poliquístico"
-    ],
-    "enunciado": "¿Cuál de las siguientes opciones es la manifestación más frecuente del síndrome de ovario poliquístico (SOP)? [cite: 349]",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico"],
+    "enunciado": "¿Cuál de las siguientes opciones es la manifestación más frecuente del síndrome de ovario poliquístico (SOP)?",
     "opciones": {
-      "a": "Hirsutismo [cite: 353]",
-      "b": "Acantosis nigricans [cite: 356]",
-      "c": "Obesidad [cite: 358]",
-      "d": "Oligoamenorrea-Amenorrea [cite: 359]"
+      "a": "Hirsutismo",
+      "b": "Acantosis nigricans",
+      "c": "Obesidad",
+      "d": "Oligoamenorrea-Amenorrea"
     },
     "correcta": "d",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Oligoamenorrea-Amenorrea**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_018",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una mujer de 25 años, nuligesta, acude a consulta porque no ha menstruado en el último año. Al inicio no le dio mucha importancia por sus múltiples actividades, pero en fechas recientes se preocupó porque inició una relación seria. La paciente comenta que no está lista para embarazarse, pero desea períodos menstruales regulares. No tiene antecedentes patológicos o quirúrgicos de importancia. Su menstruación inició a los 12 años de edad y se volvió regular hasta los 14. Nunca tuvo enfermedades graves y desconoce alergias a medicamentos, Es ejecutiva en un banco de importancia y viaja a Europa y Estados Unidos con frecuencia. Corre 7.5 km al día y utiliza el jacuzzi a menudo para relajarse. Sus signos vitales son: temperatura 37.1 C tensión arterial 135/86 mm Hg, frecuencia cardíaca 100/min. La exploración física es normal. ¿En qué estructura anatómica podría estar la anomalía que causa esta condición? [cite: 365, 366, 367, 368, 369, 370, 371]",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Alteraciones menstruales", "Hipotálamo / Hipófisis"],
+    "enunciado": "Una mujer de 25 años, nuligesta, acude a consulta porque no ha menstruado en el último año. Al inicio no le dio mucha importancia por sus múltiples actividades, pero en fechas recientes se preocupó porque inició una relación seria. La paciente comenta que no está lista para embarazarse, pero desea períodos menstruales regulares. No tiene antecedentes patológicos o quirúrgicos de importancia. Su menstruación inició a los 12 años de edad y se volvió regular hasta los 14. Nunca tuvo enfermedades graves y desconoce alergias a medicamentos, Es ejecutiva en un banco de importancia y viaja a Europa y Estados Unidos con frecuencia. Corre 7.5 km al día y utiliza el jacuzzi a menudo para relajarse. Sus signos vitales son: temperatura 37.1 °C tensión arterial 135/86 mm Hg, frecuencia cardíaca 100/min. La exploración física es normal. ¿En qué estructura anatómica podría estar la anomalía que causa esta condición?",
     "opciones": {
-      "a": "Hipotálamo [cite: 375]",
-      "b": "Ovarios [cite: 378]",
-      "c": "Hipófisis [cite: 380]",
-      "d": "Útero [cite: 381]"
+      "a": "Hipotalamo",
+      "b": "Ovarios",
+      "c": "Hipófisis",
+      "d": "Útero"
     },
     "correcta": "a",
-    "explicacion": "Stress, Alta actividad física. [cite: 384]",
+    "explicacion": "**Stress**, **Alta actividad física**.\n\nLa respuesta correcta es: **Hipotálamo**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_019",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una paciente de 17 años presenta una historia de secreción láctea espontánea bilateral de sus mamas desde hace 2 meses. La menarca tuvo lugar a los 12 años y sus períodos han sido regulares hasta 4 meses antes de que acuda a la consulta. Además, se queja de cefalea al despertarse durante las 2 últimas semanas. La prueba más útil para estudiar este caso es: [cite: 389, 390, 391, 392]",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Alteraciones menstruales", "Hipotálamo / Hipófisis"],
+    "enunciado": "Una paciente de 17 años presenta una historia de secreción láctea espontánea bilateral de sus mamas desde hace 2 meses. La menarca tuvo lugar a los 12 años y sus períodos han sido regulares hasta 4 meses antes de que acuda a la consulta. Además, se queja de cefalea al despertarse durante las 2 últimas semanas. La prueba más útil para estudiar este caso es:",
     "opciones": {
-      "a": "Test sérico de embarazo [cite: 398]",
-      "b": "Nivel de estrógenos séricos [cite: 400]",
-      "c": "Nivel de hormona luteinizante sérica [cite: 402]",
-      "d": "Nivel de prolactina sérica [cite: 404]"
+      "a": "Test sérico de embarazo",
+      "b": "Nivel de estrógenos séricos",
+      "c": "Nivel de hormona luteinizante sérica",
+      "d": "Nivel de prolactina sérica"
     },
     "correcta": "d",
-    "explicacion": "Siempre es importante descartar embarazo.\nPero DEBEN pensar que está preguntando. En La realidad se va a pedir al mismo tiempo ambos estudios.\nPero acá claramente apunta a PRL [cite: 406, 407, 408]",
+    "explicacion": "Siempre es importante descartar **embarazo**.\n\nPero DEBEN pensar que está preguntando. En la realidad se va a pedir al mismo tiempo ambos estudios. Pero acá claramente apunta a **PRL**.\n\nLa respuesta correcta es: **Nivel de prolactina sérica**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_020",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Anticoncepción"
-    ],
-    "enunciado": "Una paciente de 15 años consulta a su hospital solicitando cajas anticonceptivos orales que utiliza desde hace 3 meses y le indicó un colega en otro hospital. Tiene buena tolerancia y esta contenta con el método, según la guía de métodos anticonceptivos del Ministerio de Salud, 2014, ¿Cuál sería la conducta? [cite: 412, 413]",
+    "materia": ["ginecologia", "medicinalegal"],
+    "submateria": ["Anticoncepción", "Salud sexual y reproductiva"],
+    "enunciado": "Una paciente de 15 años consulta a su hospital solicitando cajas anticonceptivos orales que utiliza desde hace 3 meses y le indicó un colega en otro hospital. Tiene buena tolerancia y esta contenta con el método, según la guía de métodos anticonceptivos del Ministerio de Salud, 2014, ¿Cuál sería la conducta?",
     "opciones": {
-      "a": "Entrega los ACO, le explica que la próxima vez debe concurrir con un mayor [cite: 417]",
-      "b": "No entrega los ACO porque no tiene estudios en este centro, da orden de papanicolau y ecografía transvaginal [cite: 420]",
-      "c": "Entrega los ACO, ofrece rastreo para infecciones de transmisión sexual y recomienda el uso de preservativo [cite: 422]",
-      "d": "Entrega los ACO, toma papanicolau y recomienda el uso de preservativo [cite: 424]"
+      "a": "Entrega los ACO, le explica que la próxima vez debe concurrir con un mayor",
+      "b": "No entrega los ACO porque no tiene estudios en este centro, da orden de papanicolau y ecografía transvaginal",
+      "c": "Entrega los ACO, ofrece rastreo para infecciones de transmisión sexual y recomienda el uso de preservativo",
+      "d": "Entrega los ACO, toma papanicolau y recomienda el uso de preservativo"
     },
     "correcta": "c",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Entrega los ACO**, ofrece rastreo para **infecciones de transmisión sexual** y recomienda el uso de **preservativo**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_021",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una mujer de 17 años consulta por presentar una amenorrea de 3 meses de duración. Desde su menarca, a los 12 años, sus periodos menstruales sólo han sido regulares en forma ocasional, presentando varios episodios de amenorrea y algunos han durado hasta 3 meses. La medroxiprogesterona (10 mg/dia durante 5 días) siempre habia provocado un sangrado menstrual. La semana pasada terminó un régimen de este medicamento y hasta el momento no ha tenido menstruación. La exploración física muestra una adolescente que mide 1,68 m y pesa 80 Kg. presenta tumefacción mamaria y dolor; pero no se observa galactorrea. La exploración pélvica, aunque está limitada por su peso corporal, parece normal. Su madre trabaja en un laboratorio de química clínica y le muestra los siguientes estudios de laboratorio, tomados hace 5 días: prolactina sérica 38.2 ng/mL T4 sérica 12,4 ug/dL ¿Cuál de los siguientes constituye el primer paso más apropiado a tomar? [cite: 430, 431, 432, 433, 434, 435, 436]",
+    "materia": ["ginecologia", "obstetricia"],
+    "submateria": ["Alteraciones menstruales", "Fisiología de la gestación"],
+    "enunciado": "Una mujer de 17 años consulta por presentar una amenorrea de 3 meses de duración. Desde su menarca, a los 12 años, sus periodos menstruales sólo han sido regulares en forma ocasional, presentando varios episodios de amenorrea y algunos han durado hasta 3 meses. La medroxiprogesterona (10 mg/dia durante 5 días) siempre habia provocado un sangrado menstrual. La semana pasada terminó un régimen de este medicamento y hasta el momento no ha tenido menstruación. La exploración física muestra una adolescente que mide 1,68 m y pesa 80 Kg. presenta tumefacción mamaria y dolor; pero no se observa galactorrea. La exploración pélvica, aunque está limitada por su peso corporal, parece normal. Su madre trabaja en un laboratorio de química clínica y le muestra los siguientes estudios de laboratorio, tomados hace 5 días: prolactina sérica 38.2 ng/mL T4 sérica 12,4 μg/dL ¿Cuál de los siguientes constituye el primer paso más apropiado a tomar?",
     "opciones": {
-      "a": "Ordenar una determinación del nivel de TSH sérica. [cite: 438]",
-      "b": "Ordenar una determinación del nivel de HCG subunidad beta sérica [cite: 442]",
-      "c": "Recetar bromocriptina, 2,5 mg al acostarse. [cite: 444]",
-      "d": "Ordenar una determinación del nivel de FSH [cite: 446]"
+      "a": "Ordenar una determinación del nivel de TSH sérica.",
+      "b": "Ordenar una determinación del nivel de HCG subunidad beta sérica",
+      "c": "Recetar bromocriptina, 2,5 mg al acostarse.",
+      "d": "Ordenar una determinación del nivel de FSH"
     },
     "correcta": "b",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: Ordenar una determinación del nivel de **HCG subunidad beta sérica**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_022",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una paciente de 32 años consulta por amenorrea. Su FUM es de hace 13 semanas. Le indica dosaje de HCG, que es negativa. Luego, le realiza la prueba de progesterona, que da positiva. El laboratorio muestra un nivel de prolactina es de 20 ng/mL. El diagnóstico más probable es: [cite: 452, 453, 454]",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "Una paciente de 32 años consulta por amenorrea. Su FUM es de hace 13 semanas. Le indica dosaje de HCG, que es negativa. Luego, le realiza la prueba de progesterona, que da positiva. El laboratorio muestra un nivel de prolactina es de 20 ng/mL. El diagnóstico más probable es:",
     "opciones": {
-      "a": "Fallo de ovulación [cite: 458]",
-      "b": "Amenorrea de origen hipofisario [cite: 460]",
-      "c": "Menopausia precoz [cite: 462]",
-      "d": "Hipoplasia uterina [cite: 463]"
+      "a": "Fallo de ovulación",
+      "b": "Amenorrea de origen hipofisario",
+      "c": "Menopausia precoz",
+      "d": "Hipoplasia uterina"
     },
     "correcta": "a",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Fallo de ovulación**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_023",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Alteraciones menstruales"
-    ],
-    "enunciado": "Una mujer de 31 años acude a una evaluación por presentar una amenorrea de 6 meses de duración. Le informa que ha estado embarazada en tres ocasiones y que tiene dos hijos vivos. Una prueba de embarazo resulta negativa. Después de terapia con medroxiprogesterona: 10 mg/día durante 5 días no presenta sangrado por supresión. Su exploración física, incluyendo una exploración pelvica no muestra datos patológicos. ¿Cuál constituye el mejor paso siguiente en su evaluación? [cite: 468, 469, 470, 471]",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "Una mujer de 31 años acude a una evaluación por presentar una amenorrea de 6 meses de duración. Le informa que ha estado embarazada en tres ocasiones y que tiene dos hijos vivos. Una prueba de embarazo resulta negativa. Después de terapia con medroxiprogesterona: 10 mg/día durante 5 días no presenta sangrado por supresión. Su exploración física, incluyendo una exploración pelvica no muestra datos patológicos. ¿Cuál constituye el mejor paso siguiente en su evaluación?",
     "opciones": {
-      "a": "Ordenar una determinación del nivel de estradiol. [cite: 475]",
-      "b": "Indicar una prueba de estrógenos y progesterona [cite: 478]",
-      "c": "Ordenar una ultrasonografía pélvica. [cite: 480]",
-      "d": "Ordenar determinación de TSH, FSH, LH [cite: 482]"
+      "a": "Ordenar una determinación del nivel de estradiol.",
+      "b": "Indicar una prueba de estrógenos y progesterona",
+      "c": "Ordenar una ultrasonografía pélvica.",
+      "d": "Ordenar determinación de TSH, FSH, LH"
     },
     "correcta": "b",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: Indicar una **prueba de estrógenos y progesterona**",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_024",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Patología cervical benigna y preinvasora"
-    ],
-    "enunciado": "Durante el control ginecológico anual, una paciente de 22 años, nuligesta, con adecuada adherencia a los controles anuales, adjunta resultado de Biopsia de Cervix tomada bajo guía colposcópica que informa Neoplasia Intraepitelial de Bajo Grado (LSIL). Según el Consenso Nacional Intersociedades sobre Cáncer de Cuello Uterino, 2015, ¿cuál es la conducta más adecuada? [cite: 488, 489]",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Durante el control ginecológico anual, una paciente de 22 años, nuligesta, con adecuada adherencia a los controles anuales, adjunta resultado de Biopsia de Cervix tomada bajo guía colposcópica que informa Neoplasia Intraepitelial de Bajo Grado (LSIL). Según el Consenso Nacional Intersociedades sobre Cáncer de Cuello Uterino, 2015, ¿cuál es la conducta más adecuada?",
     "opciones": {
-      "a": "Tratamiento con laser (LEEP). [cite: 493]",
-      "b": "Control cito-colposcópico semestral por dos años [cite: 497]",
-      "c": "Tratamiento con acido tricloroacetico al 80% (ATA). [cite: 498]",
-      "d": "Control cito-colposcópico anual. [cite: 500]"
+      "a": "Tratamiento con laser (LEEP).",
+      "b": "Control cito-colposcópico semestral por dos años",
+      "c": "Tratamiento con acido tricloroacetico al 80% (ATA).",
+      "d": "Control cito-colposcópico anual."
     },
     "correcta": "b",
-    "explicacion": "",
+    "explicacion": "La respuesta correcta es: **Control cito-colposcópico** semestral por dos años",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
   {
     "id": "gineco_001_025",
-    "materia": [
-      "ginecologia"
-    ],
-    "submateria": [
-      "Sangrado uterino anormal"
-    ],
-    "enunciado": "Una adolescente de 15 años acude a la sala de urgencias en ambulancia porque se le encontró en el piso de su hogar en un charco de sangre. Se encuentra inconsciente y presenta hemorragia transvaginal importante. Su tensión arterial es de 88/48 mm Hg, frecuencia cardíaca 140/min, frecuencia respiratoria 16/min, temperatura 35 C La exploración con espéculo vaginal muestra salida de sangre a través del orificio cervicouterino, sin lesiones en vagina o cuello uterino. La exploración bimanual es normal. La HCG en suero es negativa y su concentración de hemoglobina es de 7 g/dL. Se le coloca un catéter intravenoso y se inicia la transfusión sanguínea. El siguiente paso en el tratamiento de esta paciente es: [cite: 506, 507, 508, 509, 510]",
+    "materia": ["ginecologia", "urgencias"],
+    "submateria": ["Sangrado uterino anormal", "Síndromes abdominales"],
+    "enunciado": "Una adolescente de 15 años acude a la sala de urgencias en ambulancia porque se le encontró en el piso de su hogar en un charco de sangre. Se encuentra inconsciente y presenta hemorragia transvaginal importante. Su tensión arterial es de 88/48 mm Hg, frecuencia cardíaca 140/min, frecuencia respiratoria 16/min, temperatura 35 °C La exploración con espéculo vaginal muestra salida de sangre a través del orificio cervicouterino, sin lesiones en vagina o cuello uterino. La exploración bimanual es normal. La HCG en suero es negativa y su concentración de hemoglobina es de 7 g/dL. Se le coloca un catéter intravenoso y se inicia la transfusión sanguínea. El siguiente paso en el tratamiento de esta paciente es:",
     "opciones": {
-      "a": "Transfusión de eritrocitos [cite: 513]",
-      "b": "Etinilestradiol vía oral [cite: 514]",
-      "c": "Caproato de hidroxiprogesterona más benzoato de estradiol inyectable [cite: 515]",
-      "d": "Anticonceptivos orales combinados en dosis bajas [cite: 516]"
+      "a": "Transfusión de eritrocitos",
+      "b": "Etinilestradiol vía oral",
+      "c": "Caproato de hidroxiprogesterona más benzoato de estradiol inyectable",
+      "d": "Anticonceptivos orales combinados en dosis bajas"
     },
     "correcta": "c",
-    "explicacion": "La paciente presenta un sangrado y el estado general compromete la posibilidad de realizar un legrado que sería lo ideal.\npero no esta en las opciones.\nLa estabilización hemodinámica inicial no alcanzó, por lo que deben tomarse otras acciones.\nLa aplicación de hormonas en dosis altas, corta el sangrado y la vida IM es más rápida. [cite: 518, 519, 520, 521]",
+    "explicacion": "La paciente presenta un sangrado y el estado general compromete la posibilidad de realizar un **legrado** que sería lo ideal, pero no esta en las opciones.\n\nLa estabilización hemodinámica inicial no alcanzó, por lo que deben tomarse otras acciones.\n\nLa aplicación de **hormonas en dosis altas**, corta el sangrado y la vía IM es más rápida.\n\nLa respuesta correcta es: **Caproato de hidroxiprogesterona** más **benzoato de estradiol** inyectable",
     "imagenes": [],
     "examen": null,
     "anio": null,
     "oficial": false,
-    "Fuente": "curso iar"
+    "fuente": "curso iar"
   },
+  
   {
     "id": "gineco_001_026",
     "materia": [
