@@ -5707,7 +5707,7 @@
     "oficial": false,
     "fuente": "Prorem"
   },
-  {
+{
     "id": "cirugia_001_232",
     "materia": [
       "cirugiageneral"
@@ -5715,15 +5715,15 @@
     "submateria": [
       "Evaluación prequirúrgica"
     ],
-    "enunciado": "¿Cómo considera la solicitud de hepatograma en la evaluación prequirúrgica? [cite: 448]",
+    "enunciado": "¿Cómo considera la solicitud de hepatograma en la evaluación prequirúrgica?",
     "opciones": {
-      "a": "Es necesario para evaluar el tipo de anestesia que recibirá el paciente [cite: 449]",
-      "b": "No es necesario solicitarlo como rastreo prequirúrgico de rutina [cite: 450]",
-      "c": "Imprescindible antes de cualquier cirugía [cite: 451]",
-      "d": "Es necesario para el manejo postoperatorio del paciente [cite: 453]"
+      "a": "Es necesario para evaluar el tipo de anestesia que recibirá el paciente",
+      "b": "No es necesario solicitarlo como rastreo prequirúrgico de rutina",
+      "c": "Imprescindible antes de cualquier cirugía",
+      "d": "Es necesario para el manejo postoperatorio del paciente"
     },
     "correcta": "b",
-    "explicacion": "El hepatograma **no es un estudio solicitado de rutina** como prequirúrgico. [cite: 457]\n\nSe sugiere la solicitud de coagulograma preoperatorio en pacientes mayores y estudios orientados acorde las comorbilidades que presente. [cite: 458]\n\nEn pacientes jóvenes no es necesario la solicitud de estudios prequirúrgicos excepto que presente comorbilidades asociadas. [cite: 459]",
+    "explicacion": "El hepatograma **no es un estudio solicitado de rutina** como prequirúrgico.\n\nSe sugiere la solicitud de coagulograma preoperatorio en pacientes mayores y estudios orientados acorde las comorbilidades que presente.\n\nEn pacientes jóvenes no es necesario la solicitud de estudios prequirúrgicos excepto que presente comorbilidades asociadas.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5740,15 +5740,15 @@
       "Otras preguntas de cirugía general",
       "Sepsis y nosocomiales"
     ],
-    "enunciado": "¿Qué se entiende por enfermedad de Fournier? [cite: 461]",
+    "enunciado": "¿Qué se entiende por enfermedad de Fournier?",
     "opciones": {
-      "a": "Infección de músculos esqueléticos con presencia de gas por gérmenes anaerobios [cite: 466]",
-      "b": "Infección por estafilococo y estreptococo del saco escrotal, con compromiso de la viabilidad testicular [cite: 467]",
-      "c": "Necrosis cutánea de los tegumentos genitales, que puede afectar estructuras más profundas [cite: 468]",
-      "d": "Celulitis necrosante difusa del celular subcutáneo, que suele afectar las piernas y extenderse al abdomen [cite: 469]"
+      "a": "Infección de músculos esqueléticos con presencia de gas por gérmenes anaerobios",
+      "b": "Infección por estafilococo y estreptococo del saco escrotal, con compromiso de la viabilidad testicular",
+      "c": "Necrosis cutánea de los tegumentos genitales, que puede afectar estructuras más profundas",
+      "d": "Celulitis necrosante difusa del celular subcutáneo, que suele afectar las piernas y extenderse al abdomen"
     },
     "correcta": "c",
-    "explicacion": "La infección de la herida quirúrgica es una complicación frecuente y puede afectar a planos superficiales (celulitis) o a planos más profundos de la herida (miofascitis). [cite: 473]\n\nEl germen que con más frecuencia causa infecciones de la herida quirúrgica es Staphylococcus, ya que lo habitual es que provengan de la flora del propio paciente. [cite: 474]\n\nCuanto más profunda es la infección, más grave es, ya que suele deberse a gérmenes más agresivos, entre los que se incluyen anaerobios (Bacteroides, Clostridium), enterobacterias (Escherichia coli, Enterobacter, Proteus, Klebsiella) y gérmenes del grupo estreptococo (Streptococcus pyogenes). [cite: 475]\n\nUna forma muy grave de infección de herida quirúrgica es la fascitis necrosante (en la que suele aislarse Clostridium perfringens). [cite: 476]\n\nUna variante de fascitis necrosante que afecta a la zona del periné y genital se denomina **gangrena de Fournier** (causada por S. pyogenes). [cite: 477]",
+    "explicacion": "La infección de la herida quirúrgica es una complicación frecuente y puede afectar a planos superficiales (celulitis) o a planos más profundos de la herida (miofascitis).\n\nEl germen que con más frecuencia causa infecciones de la herida quirúrgica es Staphylococcus, ya que lo habitual es que provengan de la flora del propio paciente.\n\nCuanto más profunda es la infección, más grave es, ya que suele deberse a gérmenes más agresivos, entre los que se incluyen anaerobios (Bacteroides, Clostridium), enterobacterias (Escherichia coli, Enterobacter, Proteus, Klebsiella) y gérmenes del grupo estreptococo (Streptococcus pyogenes).\n\nUna forma muy grave de infección de herida quirúrgica es la fascitis necrosante (en la que suele aislarse Clostridium perfringens).\n\nUna variante de fascitis necrosante que afecta a la zona del periné y genital se denomina **gangrena de Fournier** (causada por S. pyogenes).",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5765,15 +5765,15 @@
       "Otras preguntas de cirugía general",
       "Bacterias"
     ],
-    "enunciado": "Paciente de sesenta y siete años de edad que trabajando en su casa se corta con una chapa. La herida es lineal, sangrante, limpia. El paciente no recuerda cuando se aplicó la vacuna antitetánica. ¿Qué le recomienda a su paciente? [cite: 480, 481, 482]",
+    "enunciado": "Paciente de sesenta y siete años de edad que trabajando en su casa se corta con una chapa. La herida es lineal, sangrante, limpia. El paciente no recuerda cuando se aplicó la vacuna antitetánica. ¿Qué le recomienda a su paciente?",
     "opciones": {
-      "a": "Una dosis de Inmunoglobulina [cite: 483]",
-      "b": "Ninguna profilaxis complementaria [cite: 484]",
-      "c": "Una dosis de vacuna e inmunoglobulina y completar vacunación [cite: 486]",
-      "d": "Una dosis de vacuna antitetánica y completar vacunación [cite: 487]"
+      "a": "Una dosis de Inmunoglobulina",
+      "b": "Ninguna profilaxis complementaria",
+      "c": "Una dosis de vacuna e inmunoglobulina y completar vacunación",
+      "d": "Una dosis de vacuna antitetánica y completar vacunación"
     },
     "correcta": "d",
-    "explicacion": "Ante una herida debe evaluarse el estado inmunitario del paciente y el tipo de herida. [cite: 491]\n\nLas que presentan más riesgo de contaminación con Clostridium Tetani son las heridas contaminadas con suciedad, heces, tierra, saliva y las que contienen tejidos desvitalizados (heridas necróticas o gangrenosas), las heridas por congelamiento, aplastamiento, avulsión, quemaduras o explosión. [cite: 492]\n\nAnte un paciente con una herida cortante limpia se debe evaluar el antecedente de vacunación previa. [cite: 493]\n\nEn caso de no conocer su estado inmunitario o de presentar menos de tres dosis de vacuna doble bacteriana se debe administrar **una dosis de la vacuna**. [cite: 494]",
+    "explicacion": "Ante una herida debe evaluarse el estado inmunitario del paciente y el tipo de herida.\n\nLas que presentan más riesgo de contaminación con Clostridium Tetani son las heridas contaminadas con suciedad, heces, tierra, saliva y las que contienen tejidos desvitalizados (heridas necróticas o gangrenosas), las heridas por congelamiento, aplastamiento, avulsión, quemaduras o explosión.\n\nAnte un paciente con una herida cortante limpia se debe evaluar el antecedente de vacunación previa.\n\nEn caso de no conocer su estado inmunitario o de presentar menos de tres dosis de vacuna doble bacteriana se debe administrar **una dosis de la vacuna**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5790,15 +5790,15 @@
       "Evaluación prequirúrgica",
       "Coagulación"
     ],
-    "enunciado": "¿Cuáles de los siguientes estudios solicitaría para evaluar el riesgo de hemorragia en un paciente que será sometido a cirugía mayor? [cite: 496]",
+    "enunciado": "¿Cuáles de los siguientes estudios solicitaría para evaluar el riesgo de hemorragia en un paciente que será sometido a cirugía mayor?",
     "opciones": {
-      "a": "Tiempo de tromboplastina parcial activada, tiempo de protrombina, recuento de plaquetas y factor V [cite: 498]",
-      "b": "Tiempo de sangria y determinación de Factor VIII [cite: 499]",
-      "c": "Recuento de plaquetas y prueba del lazo [cite: 501]",
-      "d": "Tiempo de tromboplastina parcial activada, tiempo de protrombina y recuento de plaquetas [cite: 503]"
+      "a": "Tiempo de tromboplastina parcial activada, tiempo de protrombina, recuento de plaquetas y factor V",
+      "b": "Tiempo de sangria y determinación de Factor VIII",
+      "c": "Recuento de plaquetas y prueba del lazo",
+      "d": "Tiempo de tromboplastina parcial activada, tiempo de protrombina y recuento de plaquetas"
     },
     "correcta": "d",
-    "explicacion": "La solicitud de estudios complementarios **no se efectúa rutinariamente** sino de acuerdo con la condición clinica del paciente o los requerimientos de la cirugía; [cite: 507]\n\npor ejemplo, en una cirugia mayor (hepatectomia, neurocirugia) es usual el requerimiento de hemograma, **coagulograma**, ECG y función renal, ya que sirven como valores comparativos con los cambios que puedan surgir durante la cirugia. [cite: 508]",
+    "explicacion": "La solicitud de estudios complementarios **no se efectúa rutinariamente** sino de acuerdo con la condición clinica del paciente o los requerimientos de la cirugía;\n\npor ejemplo, en una cirugia mayor (hepatectomia, neurocirugia) es usual el requerimiento de hemograma, **coagulograma**, ECG y función renal, ya que sirven como valores comparativos con los cambios que puedan surgir durante la cirugia.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5813,15 +5813,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "En el examen físico de un paciente se constata debilidad de la región de la pared anterior del abdomen que se encuentra inmediatamente por debajo del arco de Douglas y por fuera del recto anterior del abdomen. ¿Cuál es el diagnóstico más probable? [cite: 510, 511]",
+    "enunciado": "En el examen físico de un paciente se constata debilidad de la región de la pared anterior del abdomen que se encuentra inmediatamente por debajo del arco de Douglas y por fuera del recto anterior del abdomen. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
-      "a": "Hernia de Petit [cite: 513]",
-      "b": "Hernia obturatriz [cite: 514]",
-      "c": "Hernia de Spiegel [cite: 515]",
-      "d": "Hernia crural [cite: 516]"
+      "a": "Hernia de Petit",
+      "b": "Hernia obturatriz",
+      "c": "Hernia de Spiegel",
+      "d": "Hernia crural"
     },
     "correcta": "c",
-    "explicacion": "La **hernia de Spiegel** se encuentra justo por debajo del ombligo. Es la hernia menos frecuente. [cite: 521]\n\nSe debe a la protrusión de parte del contenido de la cavidad abdominal con su saco peritoneal a través de la línea semilunar y el borde externo del músculo recto. [cite: 522]",
+    "explicacion": "La **hernia de Spiegel** se encuentra justo por debajo del ombligo. Es la hernia menos frecuente.\n\nSe debe a la protrusión de parte del contenido de la cavidad abdominal con su saco peritoneal a través de la línea semilunar y el borde externo del músculo recto.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5836,15 +5836,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Por qué se caracterizan las hernias intrainguinales? [cite: 524]",
+    "enunciado": "¿Por qué se caracterizan las hernias intrainguinales?",
     "opciones": {
-      "a": "Ingresan por el orificio inguinal profundo, por fuera de los vasos epigástricos [cite: 525]",
-      "b": "Ingresan por el orificio inguinal profundo, sin exteriorizarse por el orificio inguinal superficial [cite: 526]",
-      "c": "Protruyen en la pared abdominal anterior, por dentro de los vasos epigástricos [cite: 527]",
-      "d": "Protruyen la pared abdominal anterior, por dentro y fuera de los vasos epigástricos [cite: 529]"
+      "a": "Ingresan por el orificio inguinal profundo, por fuera de los vasos epigástricos",
+      "b": "Ingresan por el orificio inguinal profundo, sin exteriorizarse por el orificio inguinal superficial",
+      "c": "Protruyen en la pared abdominal anterior, por dentro de los vasos epigástricos",
+      "d": "Protruyen la pared abdominal anterior, por dentro y fuera de los vasos epigástricos"
     },
     "correcta": "a",
-    "explicacion": "Las hernias intrainguinales o indirectas son hernias inguinales que protruyen **por fuera de los vasos epigástricos** a través del orificio inguinal profundo. [cite: 533]",
+    "explicacion": "Las hernias intrainguinales o indirectas son hernias inguinales que protruyen **por fuera de los vasos epigástricos** a través del orificio inguinal profundo.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5861,15 +5861,15 @@
       "Patología de pared abdominal",
       "Otras preguntas de pediatría"
     ],
-    "enunciado": "¿Cuál es la conducta más adecuada en una niña de 2 años que presenta una hernia inguinal no complicada? [cite: 535]",
+    "enunciado": "¿Cuál es la conducta más adecuada en una niña de 2 años que presenta una hernia inguinal no complicada?",
     "opciones": {
-      "a": "Cirugía de urgencia [cite: 536]",
-      "b": "Sólo operar si se complica por atascamiento [cite: 537]",
-      "c": "Conducta expectante y programar cirugía para los 6 años de edad [cite: 538]",
-      "d": "Programar cirugía en un tiempo próximo [cite: 539]"
+      "a": "Cirugía de urgencia",
+      "b": "Sólo operar si se complica por atascamiento",
+      "c": "Conducta expectante y programar cirugía para los 6 años de edad",
+      "d": "Programar cirugía en un tiempo próximo"
     },
     "correcta": "d",
-    "explicacion": "La hernia inguinal es la persistencia del conducto peritoneo vaginal de modo que comunica la cavidad abdominal con el escroto. [cite: 544]\n\nUna vez diagnosticada la hernia se debe **programas la cirugía en un tiempo cercano**, cuanto menor es el niño y más pequeña la hernia, mayor es el riesgo de atascamiento. [cite: 545]",
+    "explicacion": "La hernia inguinal es la persistencia del conducto peritoneo vaginal de modo que comunica la cavidad abdominal con el escroto.\n\nUna vez diagnosticada la hernia se debe **programas la cirugía en un tiempo cercano**, cuanto menor es el niño y más pequeña la hernia, mayor es el riesgo de atascamiento.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5884,15 +5884,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Cuál de las siguientes posiciones es la ideal para colocar una prótesis (malla) en una eventroplastía? [cite: 547]",
+    "enunciado": "¿Cuál de las siguientes posiciones es la ideal para colocar una prótesis (malla) en una eventroplastía?",
     "opciones": {
-      "a": "Subaponeurótica [cite: 548]",
-      "b": "Intraperitoneal [cite: 549]",
-      "c": "Supraaponeurótica [cite: 550]",
-      "d": "Subcutánea [cite: 551]"
+      "a": "Subaponeurótica",
+      "b": "Intraperitoneal",
+      "c": "Supraaponeurótica",
+      "d": "Subcutánea"
     },
     "correcta": "a",
-    "explicacion": "En una eventración, la colocación de la malla es ideal en la posición **subaponeurótica** ya que genera menos efectos adversos evitando entre otros la generación de seroma en el postoperatorio. [cite: 556]",
+    "explicacion": "En una eventración, la colocación de la malla es ideal en la posición **subaponeurótica** ya que genera menos efectos adversos evitando entre otros la generación de seroma en el postoperatorio.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5907,15 +5907,15 @@
     "submateria": [
       "Quemaduras"
     ],
-    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta en relación a la atención inicial del paciente quemado? [cite: 559]",
+    "enunciado": "¿Cuál de las siguientes afirmaciones es correcta en relación a la atención inicial del paciente quemado?",
     "opciones": {
-      "a": "La reposición de líquidos y colocación de sonda vesical es independiente de la superficie quemada [cite: 560]",
-      "b": "La reposición de liquidos y colocación de sonda vesical está indicada cuando la superficie quemada es mayor al 20% [cite: 562]",
-      "c": "La reposición de liquidos es independiente del porcentaje de superficie corporal quemada [cite: 565]",
-      "d": "La reposición de liquidos se estima a partir del porcentaje de superficie corporal quemada [cite: 566]"
+      "a": "La reposición de líquidos y colocación de sonda vesical es independiente de la superficie quemada",
+      "b": "La reposición de liquidos y colocación de sonda vesical está indicada cuando la superficie quemada es mayor al 20%",
+      "c": "La reposición de liquidos es independiente del porcentaje de superficie corporal quemada",
+      "d": "La reposición de liquidos se estima a partir del porcentaje de superficie corporal quemada"
     },
     "correcta": "d",
-    "explicacion": "La primer indicación en pacientes que ingresan con quemaduras graves, es la **reposición de líquidos que se estima a partir del porcentaje de superficie corporal quemada**. [cite: 570]\n\nEsto se debe a la gran pérdida de electrolitos que se produce tras la alteración de la barrera cutánea. [cite: 571]",
+    "explicacion": "La primer indicación en pacientes que ingresan con quemaduras graves, es la **reposición de líquidos que se estima a partir del porcentaje de superficie corporal quemada**.\n\nEsto se debe a la gran pérdida de electrolitos que se produce tras la alteración de la barrera cutánea.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5930,15 +5930,15 @@
     "submateria": [
       "Otras preguntas de cirugía general"
     ],
-    "enunciado": "En un paciente que presenta una colección intrabdominal, ¿en qué circunstancia se indica drenaje percutáneo de la misma? [cite: 573, 574]",
+    "enunciado": "En un paciente que presenta una colección intrabdominal, ¿en qué circunstancia se indica drenaje percutáneo de la misma?",
     "opciones": {
-      "a": "La colección es adyacente a la pared corporal [cite: 575]",
-      "b": "La colección es viscosa [cite: 576]",
-      "c": "La colección se encuentra en la transcavidad de los epiplones [cite: 577]",
-      "d": "La colección es multilocular [cite: 578]"
+      "a": "La colección es adyacente a la pared corporal",
+      "b": "La colección es viscosa",
+      "c": "La colección se encuentra en la transcavidad de los epiplones",
+      "d": "La colección es multilocular"
     },
     "correcta": "a",
-    "explicacion": "Lar lesiones ocupantes de espacio intraabdominales, como hemoperitoneo, hematoma retroperitoneal, ascitis, abscesos o, incluso, aire libre, deben evacuarse. [cite: 582]\n\nEn un principio se debe intentar el drenaje por vía percutánea, como con paracentesis evacuadora, aspiración por punción o colocación de drenajes guiado por ecografia-TC. [cite: 583]\n\nLa extracción de pequeñas cantidades de liquido intraabdominal puede reducir en forma significativa la presión intraabdominal en pacientes con disminución de la distensibilidad de la pared abdominal. [cite: 584]\n\nEstas técnicas redujeron en gran medida la aplicación de descompresión quirúrgica y la morbimortalidad asociada. [cite: 585]",
+    "explicacion": "Lar lesiones ocupantes de espacio intraabdominales, como hemoperitoneo, hematoma retroperitoneal, ascitis, abscesos o, incluso, aire libre, deben evacuarse.\n\nEn un principio se debe intentar el drenaje por vía percutánea, como con paracentesis evacuadora, aspiración por punción o colocación de drenajes guiado por ecografia-TC.\n\nLa extracción de pequeñas cantidades de liquido intraabdominal puede reducir en forma significativa la presión intraabdominal en pacientes con disminución de la distensibilidad de la pared abdominal.\n\nEstas técnicas redujeron en gran medida la aplicación de descompresión quirúrgica y la morbimortalidad asociada.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5953,15 +5953,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Qué caracteriza la hernia de Spiegel? [cite: 587]",
+    "enunciado": "¿Qué caracteriza la hernia de Spiegel?",
     "opciones": {
-      "a": "Produce pellizcamiento parcial del intestino [cite: 588]",
-      "b": "Se presenta por debajo del orificio inguinal profundo [cite: 589]",
-      "c": "Se produce a través de la línea blanca [cite: 590]",
-      "d": "Se produce a través de la línea semilunar [cite: 591]"
+      "a": "Produce pellizcamiento parcial del intestino",
+      "b": "Se presenta por debajo del orificio inguinal profundo",
+      "c": "Se produce a través de la línea blanca",
+      "d": "Se produce a través de la línea semilunar"
     },
     "correcta": "d",
-    "explicacion": "Las hernia de la pared abdominal anterior se dividen en hernias umbilicales, hernias epigástricas y hernias de Spiegel. [cite: 595]\n\nLa hernia de Spiegel es la hernia menos frecuente (menor del 2%) de las paredes de la pared abdominal y la hernia umbilical la más frecuente. [cite: 596]\n\nLa **hernia de Spiegel** o semilunar, se debe a la protrusión de parte del contenido de la cavidad abdominal con su saco peritoneal **a través de la línea semilunar** (transición entre la porción carnosa y fibrosa del músculo transverso del abdomen) y el borde externo del músculo recto. [cite: 597]",
+    "explicacion": "Las hernia de la pared abdominal anterior se dividen en hernias umbilicales, hernias epigástricas y hernias de Spiegel.\n\nLa hernia de Spiegel es la hernia menos frecuente (menor del 2%) de las paredes de la pared abdominal y la hernia umbilical la más frecuente.\n\nLa **hernia de Spiegel** o semilunar, se debe a la protrusión de parte del contenido de la cavidad abdominal con su saco peritoneal **a través de la línea semilunar** (transición entre la porción carnosa y fibrosa del músculo transverso del abdomen) y el borde externo del músculo recto.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -5978,15 +5978,15 @@
       "Evaluación prequirúrgica",
       "Tromboembolia de pulmón"
     ],
-    "enunciado": "¿Cuál de las siguientes medidas es útil para la prevención del tromboembolismo Pulmonar posquirúrgico? [cite: 599]",
+    "enunciado": "¿Cuál de las siguientes medidas es útil para la prevención del tromboembolismo Pulmonar posquirúrgico?",
     "opciones": {
-      "a": "No movilizar al paciente en las primeras 48 horas. [cite: 600]",
-      "b": "Antibiótico preoperatorio. [cite: 601]",
-      "c": "Movilización precoz y heparino profilaxis. [cite: 602]",
-      "d": "Kinesioterapia preoperatoria. [cite: 603]"
+      "a": "No movilizar al paciente en las primeras 48 horas.",
+      "b": "Antibiótico preoperatorio.",
+      "c": "Movilización precoz y heparino profilaxis.",
+      "d": "Kinesioterapia preoperatoria."
     },
     "correcta": "c",
-    "explicacion": "La incidencia de eventos trombóticos durante la cirugia ortopédica ha sido claramente documentada. La trombosis venosa profunda (TVP) se produce en el 40 a 50% de los reemplazos totales de cadera, en el 45 a 50% de las fracturas de cadera y en el 72% de los reemplazos totales de rodilla. [cite: 607, 608]\n\nDel 1 al 5% de estos pacientes presentan tromboembolismo pulmonar (TEP) fatal. [cite: 609]\n\nLa TVP es una entidad frecuente en pacientes operados, especialmente en las cirugías ortopédicas de miembros inferiores. [cite: 610]\n\nLa realización de profilaxis de TVP ha demostrado prevenir su aparición y la del TEP y, de esta manera, reducir el riesgo de muerte comparada con la realización de tratamiento; [cite: 611]\n\nuna vez aparecida la entidad. Habitualmente, para la mayoría de las cirugías, la profilaxis de TVP comienza antes de que el paciente sea intervenido y continúa hasta que el paciente comience a deambular. [cite: 612]\n\nSin embargo, en los casos de cirugía de cadera, la profilaxis posterior con heparina o con warfarina; [cite: 613]\n\ndebe continuarse por lo menos por siete a diez dias luego de la cirugía y por más tiempo, si se utiliza heparina de bajo peso molecular. [cite: 614]\n\nLa heparina sódica se comienza dos horas antes de la cirugía y se utilizan 5000 Ul cada 8 a 12 horas, hasta que el paciente comience a deambular. [cite: 615]\n\nLa utilización de heparinas de bajo peso molecular (HBPM) tiene la ventaja, comparada con la heparina sódica, de presentar mayor eficacia, en cuanto a la reducción del riesgo relativo de TVP/TEP y menor incidencia de trombocitopenia, y poder ser administrada una o dos veces al día; [cite: 616]\n\nsin que se requieran controles de laboratorio. [cite: 617]",
+    "explicacion": "La incidencia de eventos trombóticos durante la cirugia ortopédica ha sido claramente documentada. La trombosis venosa profunda (TVP) se produce en el 40 a 50% de los reemplazos totales de cadera, en el 45 a 50% de las fracturas de cadera y en el 72% de los reemplazos totales de rodilla.\n\nDel 1 al 5% de estos pacientes presentan tromboembolismo pulmonar (TEP) fatal.\n\nLa TVP es una entidad frecuente en pacientes operados, especialmente en las cirugías ortopédicas de miembros inferiores.\n\nLa realización de profilaxis de TVP ha demostrado prevenir su aparición y la del TEP y, de esta manera, reducir el riesgo de muerte comparada con la realización de tratamiento;\n\nuna vez aparecida la entidad. Habitualmente, para la mayoría de las cirugías, la profilaxis de TVP comienza antes de que el paciente sea intervenido y continúa hasta que el paciente comience a deambular.\n\nSin embargo, en los casos de cirugía de cadera, la profilaxis posterior con heparina o con warfarina;\n\ndebe continuarse por lo menos por siete a diez dias luego de la cirugía y por más tiempo, si se utiliza heparina de bajo peso molecular.\n\nLa heparina sódica se comienza dos horas antes de la cirugía y se utilizan 5000 Ul cada 8 a 12 horas, hasta que el paciente comience a deambular.\n\nLa utilización de heparinas de bajo peso molecular (HBPM) tiene la ventaja, comparada con la heparina sódica, de presentar mayor eficacia, en cuanto a la reducción del riesgo relativo de TVP/TEP y menor incidencia de trombocitopenia, y poder ser administrada una o dos veces al día;\n\nsin que se requieran controles de laboratorio.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6001,15 +6001,15 @@
     "submateria": [
       "Quemaduras"
     ],
-    "enunciado": "Una mujer de 55 años sufre una quemadura por contacto accidental con la plancha caliente en su brazo. Presenta lecho de $5\\times2$ cm, color blanco y al realizar el signo del pelo sale fácilmente. ¿Cuál es la profundidad de la quemadura? [cite: 618, 619, 620]",
+    "enunciado": "Una mujer de 55 años sufre una quemadura por contacto accidental con la plancha caliente en su brazo. Presenta lecho de $5\\times2$ cm, color blanco y al realizar el signo del pelo sale fácilmente. ¿Cuál es la profundidad de la quemadura?",
     "opciones": {
-      "a": "Superficial eritematosa [cite: 621]",
-      "b": "Profunda [cite: 622]",
-      "c": "Intermedia [cite: 624]",
-      "d": "Superficial flictenular [cite: 625]"
+      "a": "Superficial eritematosa",
+      "b": "Profunda",
+      "c": "Intermedia",
+      "d": "Superficial flictenular"
     },
     "correcta": "b",
-    "explicacion": "Las quemaduras de tercer grado afectan todas las capas de la piel, no se presentan con dolor ya que las terminales nerviosas también se encuentran afectadas. [cite: 629]\n\nNo producen flictenas porque no hay exudado en la dermis, ya que esta capa también se encuentra afectada. [cite: 630]\n\nSe forma una escara gris blanquecina. [cite: 631]",
+    "explicacion": "Las quemaduras de tercer grado afectan todas las capas de la piel, no se presentan con dolor ya que las terminales nerviosas también se encuentran afectadas.\n\nNo producen flictenas porque no hay exudado en la dermis, ya que esta capa también se encuentra afectada.\n\nSe forma una escara gris blanquecina.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6024,15 +6024,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "Acude a su consultorio un paciente de 75 años de edad que presenta como antecedente reparación de hernia inguinal derecha con malla por vía convencional hace 25 años. Presenta hipertensión arterial, enfermedad pulmonar obstructiva crónica estadio GOLD 1 e hiperplasia prostática benigna por lo cual fue sometido hace 6 meses a una resección transuretral. Refiere aparición de tumoración inguinal hace dos meses con dolor durante la bipedestación. Al examen físico usted constata hernia inguinal derecha mediana, reductible e incoercible. Con sospecha diagnóstica de hernia inguinal derecha recidivada ¿Cuál es la estrategia más adecuada? [cite: 633, 634, 635, 636, 637]",
+    "enunciado": "Acude a su consultorio un paciente de 75 años de edad que presenta como antecedente reparación de hernia inguinal derecha con malla por vía convencional hace 25 años. Presenta hipertensión arterial, enfermedad pulmonar obstructiva crónica estadio GOLD 1 e hiperplasia prostática benigna por lo cual fue sometido hace 6 meses a una resección transuretral. Refiere aparición de tumoración inguinal hace dos meses con dolor durante la bipedestación. Al examen físico usted constata hernia inguinal derecha mediana, reductible e incoercible. Con sospecha diagnóstica de hernia inguinal derecha recidivada ¿Cuál es la estrategia más adecuada?",
     "opciones": {
-      "a": "Dar pautas de alarma y citar a control cada 6 meses [cite: 638]",
-      "b": "Recomendar uso de braguero y control periódico [cite: 639]",
-      "c": "Indicar cirugía por via convencional [cite: 640]",
-      "d": "Indicar cirugia por via laparoscópica [cite: 642]"
+      "a": "Dar pautas de alarma y citar a control cada 6 meses",
+      "b": "Recomendar uso de braguero y control periódico",
+      "c": "Indicar cirugía por via convencional",
+      "d": "Indicar cirugia por via laparoscópica"
     },
     "correcta": "d",
-    "explicacion": "Las indicaciones de la resolución quirúrgica laparoscópica de una hernia son: hernia inguinal bilateral y **hernia inguinal recidivada**. [cite: 789]\n\nLa respuesta correcta \"mejor abordaje para su reparación es el posterior\" porque permite la cirugia desde una región no abordada previamente. [cite: 790]",
+    "explicacion": "Las indicaciones de la resolución quirúrgica laparoscópica de una hernia son: hernia inguinal bilateral y **hernia inguinal recidivada**.\n\nLa respuesta correcta \"mejor abordaje para su reparación es el posterior\" porque permite la cirugia desde una región no abordada previamente.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6047,15 +6047,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Cuál es la característica de las hernias inguinales indirectas o intra inguinales? [cite: 646]",
+    "enunciado": "¿Cuál es la característica de las hernias inguinales indirectas o intra inguinales?",
     "opciones": {
-      "a": "Protruyen en la pared anterior del abdomen por dentro y fuera de los vasos epigástricos [cite: 647]",
-      "b": "El saco herniario no tiene relación con los vasos epigástricos [cite: 649]",
-      "c": "El saco herniario protruye en la pared abdominal anterior por dentro de los vasos epigástricos [cite: 652]",
-      "d": "Ingresan en el conducto inguinal a través del orificio inguinal profundo, por fuera de los vasos epigástricos [cite: 653]"
+      "a": "Protruyen en la pared anterior del abdomen por dentro y fuera de los vasos epigástricos",
+      "b": "El saco herniario no tiene relación con los vasos epigástricos",
+      "c": "El saco herniario protruye en la pared abdominal anterior por dentro de los vasos epigástricos",
+      "d": "Ingresan en el conducto inguinal a través del orificio inguinal profundo, por fuera de los vasos epigástricos"
     },
     "correcta": "d",
-    "explicacion": "En la hernia inguinal indirecta el saco sale de la cavidad abdominal por el anillo inguinal profundo, en la fosita inguinal externa, es decir, **por fuera de los vasos epigástricos**. [cite: 657]",
+    "explicacion": "En la hernia inguinal indirecta el saco sale de la cavidad abdominal por el anillo inguinal profundo, en la fosita inguinal externa, es decir, **por fuera de los vasos epigástricos**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6072,15 +6072,15 @@
       "Glándulas salivales y masas cervicales",
       "Patología maxilofacial"
     ],
-    "enunciado": "¿Cuál es el tratamiento quirúrgico de un adenoma pleomorfo de lóbulo superficial de parótida? [cite: 659]",
+    "enunciado": "¿Cuál es el tratamiento quirúrgico de un adenoma pleomorfo de lóbulo superficial de parótida?",
     "opciones": {
-      "a": "Parotidectomía superficial con conservación del nervio facial [cite: 660]",
-      "b": "Exéresis del tumor con margen de 2 cm sin lesionar el nervio facial [cite: 661]",
-      "c": "Parotidectomía total con conservación del nervio facial [cite: 662]",
-      "d": "Enucleación tumoral total [cite: 664]"
+      "a": "Parotidectomía superficial con conservación del nervio facial",
+      "b": "Exéresis del tumor con margen de 2 cm sin lesionar el nervio facial",
+      "c": "Parotidectomía total con conservación del nervio facial",
+      "d": "Enucleación tumoral total"
     },
     "correcta": "a",
-    "explicacion": "El tratamiento de prácticamente todos los tumores de glándulas salivales es quirúrgico. [cite: 669]\n\nCuando se localizan en la parótida se realiza **parotidectomia superficial** en los benignos y malignos de bajo grado; [cite: 670]\n\ny parotidectomia total en los malignos, intentando preservar el nervio facial, si es posible. [cite: 671]\n\nEn el resto de las glándulas se hace una extirpación completa de la glándula afecta. [cite: 672]\n\nLa radioterapia posoperatoria mejora el control locorregional de la enfermedad y, está indicada, cuando hay tumores malignos de alto grado, afectación de márgenes o del nervio facial, extensión perineural, metástasis ganglionares, entre otros. [cite: 673]",
+    "explicacion": "El tratamiento de prácticamente todos los tumores de glándulas salivales es quirúrgico.\n\nCuando se localizan en la parótida se realiza **parotidectomia superficial** en los benignos y malignos de bajo grado;\n\ny parotidectomia total en los malignos, intentando preservar el nervio facial, si es posible.\n\nEn el resto de las glándulas se hace una extirpación completa de la glándula afecta.\n\nLa radioterapia posoperatoria mejora el control locorregional de la enfermedad y, está indicada, cuando hay tumores malignos de alto grado, afectación de márgenes o del nervio facial, extensión perineural, metástasis ganglionares, entre otros.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6097,15 +6097,15 @@
       "Glándulas salivales y masas cervicales",
       "Patología maxilofacial"
     ],
-    "enunciado": "Un paciente de 45 años consulta a la guardia por presentar dolor intenso en la hemicara izquierda, que aumenta al probar alimentos salados y se acompaña de mal olor y mal sabor en la boca. El paciente refiere la aparición del cuadro en la última semana y niega haber tenido fiebre. Al examen físico presenta inflamación difusa de la hemicara izquierda con dolor a la palpación de la región geniana. ¿Cuál es el diagnóstico más probable? [cite: 675, 676, 677, 678]",
+    "enunciado": "Un paciente de 45 años consulta a la guardia por presentar dolor intenso en la hemicara izquierda, que aumenta al probar alimentos salados y se acompaña de mal olor y mal sabor en la boca. El paciente refiere la aparición del cuadro en la última semana y niega haber tenido fiebre. Al examen físico presenta inflamación difusa de la hemicara izquierda con dolor a la palpación de la región geniana. ¿Cuál es el diagnóstico más probable?",
     "opciones": {
-      "a": "Sialoadenitis aguda [cite: 679]",
-      "b": "Quiste preauricular [cite: 680]",
-      "c": "Sialolitiasis [cite: 681]",
-      "d": "Parotiditis aguda [cite: 682]"
+      "a": "Sialoadenitis aguda",
+      "b": "Quiste preauricular",
+      "c": "Sialolitiasis",
+      "d": "Parotiditis aguda"
     },
     "correcta": "c",
-    "explicacion": "La **sialolitiasis** es la obstrucción litiasica del conducto de Stensen en la glándula parótida o de Wharton en la glándula submaxilar, que se presenta con dolor de tipo cólico que se produce durante la masticación y deglución, puede asociarse a halitosis. [cite: 686]",
+    "explicacion": "La **sialolitiasis** es la obstrucción litiasica del conducto de Stensen en la glándula parótida o de Wharton en la glándula submaxilar, que se presenta con dolor de tipo cólico que se produce durante la masticación y deglución, puede asociarse a halitosis.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6120,15 +6120,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Cuál es la conducta más adecuada con un paciente con enfermedad pulmonar obstructiva crónica que en el segundo día de postoperatorio de colectomía por oclusión intestinal comienza con secreción serohemática a través de los puntos de piel? [cite: 688]",
+    "enunciado": "¿Cuál es la conducta más adecuada con un paciente con enfermedad pulmonar obstructiva crónica que en el segundo día de postoperatorio de colectomía por oclusión intestinal comienza con secreción serohemática a través de los puntos de piel?",
     "opciones": {
-      "a": "Recomendar uso de faja elástica o faja de Montgomery [cite: 689]",
-      "b": "Apertura de la herida y tratamiento antibiótico [cite: 690]",
-      "c": "Realizar nueva intervención quirúrgica y cierre con puntos capitonados [cite: 691]",
-      "d": "Aplicación de azúcar en la herida quirúrgica [cite: 692]"
+      "a": "Recomendar uso de faja elástica o faja de Montgomery",
+      "b": "Apertura de la herida y tratamiento antibiótico",
+      "c": "Realizar nueva intervención quirúrgica y cierre con puntos capitonados",
+      "d": "Aplicación de azúcar en la herida quirúrgica"
     },
     "correcta": "a",
-    "explicacion": "En un paciente con secreción serohemática por la herida quirúrgica en un postoperatorio inmediato se debe considerar la presencia de una evisceración cubierta, por lo que se sugiere la utilización de una **faja elástica o faja de Montgomery** para la contención abdominal. [cite: 696]\n\nEs muy frecuente este tipo de complicaciones en pacientes con enfermedad pulmonar previa que presentan dificultad respiratoria, tos o utilizan los músculos abdominales para la ventilación. [cite: 697]",
+    "explicacion": "En un paciente con secreción serohemática por la herida quirúrgica en un postoperatorio inmediato se debe considerar la presencia de una evisceración cubierta, por lo que se sugiere la utilización de una **faja elástica o faja de Montgomery** para la contención abdominal.\n\nEs muy frecuente este tipo de complicaciones en pacientes con enfermedad pulmonar previa que presentan dificultad respiratoria, tos o utilizan los músculos abdominales para la ventilación.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6143,15 +6143,15 @@
     "submateria": [
       "Quemaduras"
     ],
-    "enunciado": "¿Qué se entiende por una quemadura tipo AB? [cite: 698]",
+    "enunciado": "¿Qué se entiende por una quemadura tipo AB?",
     "opciones": {
-      "a": "Es la que lesiona la epidermis y parte de la dermis papilar [cite: 700]",
-      "b": "Es la que lesiona completamente la dermis y epidermis [cite: 701]",
-      "c": "Es la que produce la destrucción total de cuerpo papilar, con conservación total o parcial de la zona reticular dérmica y sus faneras [cite: 703]",
-      "d": "Es la que caracteriza por la aparición de una flictena o ampolla [cite: 705]"
+      "a": "Es la que lesiona la epidermis y parte de la dermis papilar",
+      "b": "Es la que lesiona completamente la dermis y epidermis",
+      "c": "Es la que produce la destrucción total de cuerpo papilar, con conservación total o parcial de la zona reticular dérmica y sus faneras",
+      "d": "Es la que caracteriza por la aparición de una flictena o ampolla"
     },
     "correcta": "c",
-    "explicacion": "Una quemadura tipo AB compromete epidermis y dermis, con conservación total o parcial de la zona reticular dérmica y sus faneras. [cite: 709]\n\nTiene ampollas sanas o rotas con lecho húmedo de color rojizo o blanquecino, y posee sensibilidad intermedia o hipoalgesia; [cite: 710]\n\nsuele curar en 10-21 dias pero, según su manejo o la aparición de complicación infecciosa, puede profundizarse y requerir injerto [cite: 711]",
+    "explicacion": "Una quemadura tipo AB compromete epidermis y dermis, con conservación total o parcial de la zona reticular dérmica y sus faneras.\n\nTiene ampollas sanas o rotas con lecho húmedo de color rojizo o blanquecino, y posee sensibilidad intermedia o hipoalgesia;\n\nsuele curar en 10-21 dias pero, según su manejo o la aparición de complicación infecciosa, puede profundizarse y requerir injerto",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6168,15 +6168,15 @@
       "Otras preguntas de cirugía general",
       "Síndromes abdominales"
     ],
-    "enunciado": "¿Qué se entiende por síndrome compartimental abdominal? [cite: 713]",
+    "enunciado": "¿Qué se entiende por síndrome compartimental abdominal?",
     "opciones": {
-      "a": "Cuadro clinico similar a un abdomen agudo que se produce por un globo vesical [cite: 715]",
-      "b": "El aumento brusco del retorno venoso que se produce al descomprimir un abdomen a tensión. [cite: 717]",
-      "c": "Conjunto de sintomas y signos desencadenados por la rotura visceral que se limita a un solo cuadrante del abdomen [cite: 719]",
-      "d": "La disfunción orgánica progresiva por aumento de la presión abdominal. [cite: 721]"
+      "a": "Cuadro clinico similar a un abdomen agudo que se produce por un globo vesical",
+      "b": "El aumento brusco del retorno venoso que se produce al descomprimir un abdomen a tensión.",
+      "c": "Conjunto de sintomas y signos desencadenados por la rotura visceral que se limita a un solo cuadrante del abdomen",
+      "d": "La disfunción orgánica progresiva por aumento de la presión abdominal."
     },
     "correcta": "d",
-    "explicacion": "La hipertensión intraabdominal y su eventual progresión al sindrome compartimental abdominal son complicaciones frecuentes que aparecen en pacientes graves sometidos a cirugía, durante la reanimación posquirúrgica y en unidades de cuidados intensivos (UCI). [cite: 725]\n\nAmbas entidades son fácilmente identificables, prevenibles, potencialmente tratables y, en ocasiones, no son diagnosticadas puesto que se confunden con otros procesos patológicos con los que comparten manifestaciones clinicas similares. [cite: 726]\n\nEl valor normal de la presión intraabdominal en pacientes críticos adultos es de aproximadamente 5-7 mm Hg, es mayor en pacientes obesos y en embarazadas (9-14 mm Hg) y menor en la población pediátrica. [cite: 727]\n\nEl **sindrome compartimental agudo** se define como la presencia de una presión intraabdominal > 20 mm Hg asociada a una nueva disfunción o fracaso de órganos. [cite: 728]\n\nSe clasifica en primario, secundario y recurrente. Aparecen en situaciones clinicas que reducen la distensibilidad de la pared abdominal, como en una insuficiencia respiratoria aguda, un hematoma de la pared abdominal, una cirugía abdominal con cierre primario o a tensión, que aumentan el volumen intraabdominal (gastroparesia, distensión gástrica, ileo, ascitis) o ambas situaciones (sepsis grave, shock séptico, pancreatitis aguda grave). [cite: 729]",
+    "explicacion": "La hipertensión intraabdominal y su eventual progresión al sindrome compartimental abdominal son complicaciones frecuentes que aparecen en pacientes graves sometidos a cirugía, durante la reanimación posquirúrgica y en unidades de cuidados intensivos (UCI).\n\nAmbas entidades son fácilmente identificables, prevenibles, potencialmente tratables y, en ocasiones, no son diagnosticadas puesto que se confunden con otros procesos patológicos con los que comparten manifestaciones clinicas similares.\n\nEl valor normal de la presión intraabdominal en pacientes críticos adultos es de aproximadamente 5-7 mm Hg, es mayor en pacientes obesos y en embarazadas (9-14 mm Hg) y menor en la población pediátrica.\n\nEl **sindrome compartimental agudo** se define como la presencia de una presión intraabdominal > 20 mm Hg asociada a una nueva disfunción o fracaso de órganos.\n\nSe clasifica en primario, secundario y recurrente. Aparecen en situaciones clinicas que reducen la distensibilidad de la pared abdominal, como en una insuficiencia respiratoria aguda, un hematoma de la pared abdominal, una cirugía abdominal con cierre primario o a tensión, que aumentan el volumen intraabdominal (gastroparesia, distensión gástrica, ileo, ascitis) o ambas situaciones (sepsis grave, shock séptico, pancreatitis aguda grave).",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6191,15 +6191,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "¿Por qué se presentan las hernias inguinales de tipo directas? [cite: 730]",
+    "enunciado": "¿Por qué se presentan las hernias inguinales de tipo directas?",
     "opciones": {
-      "a": "Persistencia del conducto peritoneo vaginal [cite: 731]",
-      "b": "Debilidad de la pared posterior [cite: 732]",
-      "c": "Dilatación del orificio inguinal profundo [cite: 733]",
-      "d": "Dilatación del orificio inguinal superficial [cite: 734]"
+      "a": "Persistencia del conducto peritoneo vaginal",
+      "b": "Debilidad de la pared posterior",
+      "c": "Dilatación del orificio inguinal profundo",
+      "d": "Dilatación del orificio inguinal superficial"
     },
     "correcta": "b",
-    "explicacion": "Las hernias inguinales directas protruyen a través de la pared posterior, ocurren por una debilidad de la **fascia transversalis**. [cite: 738]",
+    "explicacion": "Las hernias inguinales directas protruyen a través de la pared posterior, ocurren por una debilidad de la **fascia transversalis**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6214,15 +6214,15 @@
     "submateria": [
       "Quemaduras"
     ],
-    "enunciado": "Recibe en la guardia un paciente de sexo femenino de 26 años de edad quien presenta en su mano derecha una quemadura de aspecto blanquecino, edematoso y refiere hipoalgesia. Según la clasificación de Benaim es una quemadura tipo: [cite: 740, 741]",
+    "enunciado": "Recibe en la guardia un paciente de sexo femenino de 26 años de edad quien presenta en su mano derecha una quemadura de aspecto blanquecino, edematoso y refiere hipoalgesia. Según la clasificación de Benaim es una quemadura tipo:",
     "opciones": {
-      "a": "B [cite: 743]",
-      "b": "A flictenular [cite: 745]",
-      "c": "AB [cite: 746]",
-      "d": "A eritematosa [cite: 747]"
+      "a": "B",
+      "b": "A flictenular",
+      "c": "AB",
+      "d": "A eritematosa"
     },
     "correcta": "c",
-    "explicacion": "Las quemaduras son daños en el tejido secundarios a agentes térmicos, químicos, biológicos o eléctricos. [cite: 751]\n\nAl evaluar una quemadura se observa su extensión y su profundidad. [cite: 752]\n\nPara evaluar la profundidad se observan los signos clínicos que presenta la quemadura (dolor, color, presencia de flictenas, hiperestesia o anestesia). [cite: 753]\n\nLa quemadura **tipo AB** es aquella que presenta hipoalgesia y coloración blanquecina. Esta misma implica afectación de la dermis profunda. [cite: 754]",
+    "explicacion": "Las quemaduras son daños en el tejido secundarios a agentes térmicos, químicos, biológicos o eléctricos.\n\nAl evaluar una quemadura se observa su extensión y su profundidad.\n\nPara evaluar la profundidad se observan los signos clínicos que presenta la quemadura (dolor, color, presencia de flictenas, hiperestesia o anestesia).\n\nLa quemadura **tipo AB** es aquella que presenta hipoalgesia y coloración blanquecina. Esta misma implica afectación de la dermis profunda.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6237,15 +6237,15 @@
     "submateria": [
       "Quemaduras"
     ],
-    "enunciado": "Clara presenta una quemadura circunferencial de tercer grado en antebrazo y codo, con pérdida de la sensibilidad en los dedos, que no cede con maniobras de calentamiento, con función motora conservada. ¿Cuál es la conducta más apropiada? [cite: 755, 756]",
+    "enunciado": "Clara presenta una quemadura circunferencial de tercer grado en antebrazo y codo, con pérdida de la sensibilidad en los dedos, que no cede con maniobras de calentamiento, con función motora conservada. ¿Cuál es la conducta más apropiada?",
     "opciones": {
-      "a": "Palpación de pulsos, control de hidratación y seguimiento [cite: 757]",
-      "b": "Ultrasonografia con estudio Doppler [cite: 758]",
-      "c": "Palpación de pulsos distales, curas locales y antibióticos [cite: 759]",
-      "d": "Escarotomía en caras externa e interna del brazo hasta muñeca [cite: 760]"
+      "a": "Palpación de pulsos, control de hidratación y seguimiento",
+      "b": "Ultrasonografia con estudio Doppler",
+      "c": "Palpación de pulsos distales, curas locales y antibióticos",
+      "d": "Escarotomía en caras externa e interna del brazo hasta muñeca"
     },
     "correcta": "d",
-    "explicacion": "L as quemaduras profundas y circunferenciales que se encuentran en tronco o en extremidades pueden provocar dificultad para la respiración u originar un sindrome compartimental por aumento de la presión en forma local (por la presencia de escaras, edema y alteración de la vascularización). [cite: 764]\n\nLas escaras que se forman secundarias a las quemaduras tienen indicación de **escarotomía** con el objetivo de descomprimir la zona quemada; [cite: 765]\n\nesto permitirá disminuir la presión local, restaurar la circulación y favorecer la respiración. [cite: 766]",
+    "explicacion": "L as quemaduras profundas y circunferenciales que se encuentran en tronco o en extremidades pueden provocar dificultad para la respiración u originar un sindrome compartimental por aumento de la presión en forma local (por la presencia de escaras, edema y alteración de la vascularización).\n\nLas escaras que se forman secundarias a las quemaduras tienen indicación de **escarotomía** con el objetivo de descomprimir la zona quemada;\n\nesto permitirá disminuir la presión local, restaurar la circulación y favorecer la respiración.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6262,15 +6262,15 @@
       "Quemaduras",
       "Otras preguntas de urgencias"
     ],
-    "enunciado": "Durante un auxilio médico en una situación de incendio, ¿qué conducta adoptaría para asistir a una persona que es retirada en llamas del lugar? [cite: 768]",
+    "enunciado": "Durante un auxilio médico en una situación de incendio, ¿qué conducta adoptaría para asistir a una persona que es retirada en llamas del lugar?",
     "opciones": {
-      "a": "Hacerlo rodar por el piso y quitarle la ropa [cite: 769]",
-      "b": "Irrigar con agua y aplicar arena [cite: 770]",
-      "c": "Aplacar las llamas con un matafuego [cite: 771]",
-      "d": "Hacerlo rodar por el piso y aplicar mantas húmedas [cite: 772]"
+      "a": "Hacerlo rodar por el piso y quitarle la ropa",
+      "b": "Irrigar con agua y aplicar arena",
+      "c": "Aplacar las llamas con un matafuego",
+      "d": "Hacerlo rodar por el piso y aplicar mantas húmedas"
     },
     "correcta": "d",
-    "explicacion": "Ante un paciente en llamas la primer medida es cohibir las llamas mediante **rodamiento en el piso y aplicación de paños húmedos**. [cite: 776]",
+    "explicacion": "Ante un paciente en llamas la primer medida es cohibir las llamas mediante **rodamiento en el piso y aplicación de paños húmedos**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6285,15 +6285,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "Marque la afirmación correcta sobre hernia inguinal recidivante. [cite: 778]",
+    "enunciado": "Marque la afirmación correcta sobre hernia inguinal recidivante.",
     "opciones": {
-      "a": "Las mallas colocadas a tensión disminuyen el riesgo de recidivas [cite: 779]",
-      "b": "El mejor abordaje para su reparación es el posterior (acceso laparoscópico) [cite: 781]",
-      "c": "El uso de una incisión de relajación aumenta la posibilidad de recidiva [cite: 783]",
-      "d": "Es más común en hernias indirectas [cite: 785]"
+      "a": "Las mallas colocadas a tensión disminuyen el riesgo de recidivas",
+      "b": "El mejor abordaje para su reparación es el posterior (acceso laparoscópico)",
+      "c": "El uso de una incisión de relajación aumenta la posibilidad de recidiva",
+      "d": "Es más común en hernias indirectas"
     },
     "correcta": "b",
-    "explicacion": "Las indicaciones de la resolución quirúrgica laparoscópica de una hernia son: hernia inguinal bilateral y hernia inguinal recidivada. [cite: 789]\n\nLa respuesta correcta \"mejor abordaje para su reparación es el posterior\" porque permite la cirugia desde una región no abordada previamente. [cite: 790]",
+    "explicacion": "Las indicaciones de la resolución quirúrgica laparoscópica de una hernia son: hernia inguinal bilateral y hernia inguinal recidivada.\n\nLa respuesta correcta \"mejor abordaje para su reparación es el posterior\" porque permite la cirugia desde una región no abordada previamente.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6308,15 +6308,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "Un paciente de 68 años consulta por dolor y abultamiento a nivel de pliegue inguinal derecho, aparecidos tras la realización de esfuerzo físico. En la exploración en bipidestación, el pliegue inguinal ha quedado substituido por una tumoración oblicua, blanda, depresible, que aumenta con la tos, llegando a la base escrotal. En relación con este cuadro clínico, indique cuál de las afirmaciones siguientes es correcta. [cite: 792, 793, 794]",
+    "enunciado": "Un paciente de 68 años consulta por dolor y abultamiento a nivel de pliegue inguinal derecho, aparecidos tras la realización de esfuerzo físico. En la exploración en bipidestación, el pliegue inguinal ha quedado substituido por una tumoración oblicua, blanda, depresible, que aumenta con la tos, llegando a la base escrotal. En relación con este cuadro clínico, indique cuál de las afirmaciones siguientes es correcta.",
     "opciones": {
-      "a": "Se trata de una hernia crural (hernia femoral); debe ser intervenido mediante herniorrafia con el músculo pectineo. [cite: 796]",
-      "b": "El diagnóstico es varicocele, y por el momento no sugiere intervención quirúrgica. [cite: 800]",
-      "c": "El enfermo padece una hernia inguinal oblicua interna (directa) y debe ser tratado mediante herniorrafia de McVay. [cite: 801]",
-      "d": "El diagnóstico es hernia inguinal indirecta; debe ser intervenido mediante hernioplastia de Lichtenstein. [cite: 802]"
+      "a": "Se trata de una hernia crural (hernia femoral); debe ser intervenido mediante herniorrafia con el músculo pectineo.",
+      "b": "El diagnóstico es varicocele, y por el momento no sugiere intervención quirúrgica.",
+      "c": "El enfermo padece una hernia inguinal oblicua interna (directa) y debe ser tratado mediante herniorrafia de McVay.",
+      "d": "El diagnóstico es hernia inguinal indirecta; debe ser intervenido mediante hernioplastia de Lichtenstein."
     },
     "correcta": "d",
-    "explicacion": "Ante un paciente masculino con hernia inguinal, que no se explica la semiologia para poder diferenciar el tipo de hernia, se debe basar en frecuencia. [cite: 806]\n\nLa hernia inguinal mas frecuente es la **hernia inguinal indirecta** y su reparación quirúrgica se realiza mediante **técnica de Lichtenstein**. [cite: 807]",
+    "explicacion": "Ante un paciente masculino con hernia inguinal, que no se explica la semiologia para poder diferenciar el tipo de hernia, se debe basar en frecuencia.\n\nLa hernia inguinal mas frecuente es la **hernia inguinal indirecta** y su reparación quirúrgica se realiza mediante **técnica de Lichtenstein**.",
     "imagenes": [],
     "examen": null,
     "anio": null,
@@ -6331,15 +6331,15 @@
     "submateria": [
       "Patología de pared abdominal"
     ],
-    "enunciado": "Un hombre de 35 años acude a la consulta refiriendo la aparición de un bulto en la región inguinal derecha que no produce ninguna sintomatología. A la exploración clínica sugiere una hernia inguinal. Todas las siguientes afirmaciones son correctas EXCEРТО: [cite: 809, 810]",
+    "enunciado": "Un hombre de 35 años acude a la consulta refiriendo la aparición de un bulto en la región inguinal derecha que no produce ninguna sintomatología. A la exploración clínica sugiere una hernia inguinal. Todas las siguientes afirmaciones son correctas EXCEРТО:",
     "opciones": {
-      "a": "Debe realizarse una ecografia para confirmar el diagnóstico. [cite: 811]",
-      "b": "La exploración física debe realizarse tanto en decúbito supino como en bipedestación. [cite: 814]",
-      "c": "En caso de tratamiento quirúrgico la técnica de elección seria una reparación sin tensión con una malla protésica. [cite: 815]",
-      "d": "Es altamente probable que se trate de una hernia inguinal indirecta. [cite: 817]"
+      "a": "Debe realizarse una ecografia para confirmar el diagnóstico.",
+      "b": "La exploración física debe realizarse tanto en decúbito supino como en bipedestación.",
+      "c": "En caso de tratamiento quirúrgico la técnica de elección seria una reparación sin tensión con una malla protésica.",
+      "d": "Es altamente probable que se trate de una hernia inguinal indirecta."
     },
     "correcta": "a",
-    "explicacion": "El diagnóstico de una hernia inguinal es **clínico**, solo esta indicada la realización de un estudio complementario ante duda diagnóstica. [cite: 821]",
+    "explicacion": "El diagnóstico de una hernia inguinal es **clínico**, solo esta indicada la realización de un estudio complementario ante duda diagnóstica.",
     "imagenes": [],
     "examen": null,
     "anio": null,
