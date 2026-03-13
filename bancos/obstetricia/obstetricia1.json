@@ -2361,4 +2361,1178 @@
     "oficial": false,
     "Fuente": "curso iar"
   },
+  {
+    "id": "obste_001_101",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "Tropicales"
+    ],
+    "enunciado": "Una paciente de 24 años consulta por encontrarse embarazada de tres meses, con una IgG para toxoplasmosis de 1/64. Solicita entonces una IgM, la cual arroja resultado negativo. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Espera el tercer trimestre de embarazo e indica tratamiento",
+      "b": "Tranquiliza a la paciente y no realiza tratamiento",
+      "c": "Realiza tratamiento con espiramicina y sulfadiazina",
+      "d": "Realiza tratamiento con pirimetamina y sulfadiazina"
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de **IgG positiva** con **IgM negativa** al inicio del embarazo indica una infección antigua o inmunidad previa. Por lo tanto, no existe riesgo de transmisión vertical aguda en este momento y no se requiere tratamiento farmacológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_102",
+    "materia": [
+      "obstetricia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Screening gestacional",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "¿Cuál de los siguientes métodos de diagnóstico sirve para detección (tamizaje) de diabetes gestacional?",
+    "opciones": {
+      "a": "Detección de glucosa en orina",
+      "b": "Prueba de tolerancia oral a la glucosa",
+      "c": "Glucemia postprandial",
+      "d": "Glucemia en ayunas"
+    },
+    "correcta": "b",
+    "explicacion": "La **Prueba de Tolerancia Oral a la Glucosa (PTOG)** es el método estándar aceptado para el tamizaje y diagnóstico de la **Diabetes Gestacional**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_103",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Una paciente de 18 años cursando embarazo de término, no controlado, mientras aguardaba en la sala de espera de la guardia, comienza con convulsiones tónico clónicas. Se encuentra acompañada por su madre quien refiere que su hija comenzó con cefalea y epigastralgia 8 horas antes, motivo por el cual consultaban. ¿Cuál sería el tratamiento farmacológico empírico inicial?",
+    "opciones": {
+      "a": "Sulfato de magnesio.",
+      "b": "Diazepam",
+      "c": "Valproato de sodio",
+      "d": "Lorazepam"
+    },
+    "correcta": "a",
+    "explicacion": "Ante un cuadro compatible con **Eclampsia** (convulsiones en el contexto de un embarazo avanzado con pródromos de cefalea y epigastralgia), el fármaco de elección para el control y prevención de nuevas crisis es el **Sulfato de Magnesio**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_104",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hemorragias del embarazo"
+    ],
+    "enunciado": "Actualmente la causa más frecuente de coagulopatía por consumo es:",
+    "opciones": {
+      "a": "Embolia de liquido amniótico",
+      "b": "Septisemia post aborto",
+      "c": "Desprendimiento prematuro de placenta normoinserta",
+      "d": "Muerte fetal"
+    },
+    "correcta": "c",
+    "explicacion": "El **Desprendimiento Prematuro de Placenta Normoinserta (DPPNI)** es la complicación obstétrica que más frecuentemente se asocia con el desarrollo de **Coagulación Intravascular Diseminada (CID)** o coagulopatía por consumo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_105",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "Virus no HIV"
+    ],
+    "enunciado": "En relación al citomegalovirus y embarazo, no se considera apropiado afirmar que:",
+    "opciones": {
+      "a": "está recomendado realizar tamizaje serológico de rutina durante el embarazo",
+      "b": "tanto la infección primaria como las reactivaciones pueden dar como resultado la infección fetal",
+      "c": "la mayoría de las embarazadas en las que se realicen controles serológicos de rutina van a dar pruebas positivas (IgG positivo), como reflejo de una afección preexistente al embarazo",
+      "d": "puede afectar el desarrollo embrionario y fetal y dar como consecuencia muerte fetal, retardo de crecimiento intrauterino, Hydrops fetalis, sepsis neonatal, microcefalia, hidrocefalia y coriorretinitis"
+    },
+    "correcta": "a",
+    "explicacion": "A diferencia de otras infecciones del complejo TORCH, no existe consenso ni recomendación oficial para realizar el **tamizaje serológico de rutina** para **Citomegalovirus** en todas las embarazadas asintomáticas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_106",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Embarazo múltiple"
+    ],
+    "enunciado": "Señale cuál de las siguientes es la forma de presentación más frecuente en el embarazo gemelar:",
+    "opciones": {
+      "a": "Uno en situación transversa y otro en posición cefálica",
+      "b": "Los dos en cefálica",
+      "c": "Los dos en podálica",
+      "d": "Los dos en transversa"
+    },
+    "correcta": "b",
+    "explicacion": "En los embarazos gemelares, la combinación de presentaciones más habitual es que **ambos fetos se encuentren en presentación cefálica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_107",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Puerperio"
+    ],
+    "enunciado": "Ante la falta de respuesta al tratamiento farmacológico endovenoso de una atonía uterina, la conducta inmediata adecuada sería:",
+    "opciones": {
+      "a": "Colocar balón de Bakri",
+      "b": "Colocar taponaje vaginal",
+      "c": "Pasar a quirófano para histerectomía",
+      "d": "Compresión bimanual"
+    },
+    "correcta": "a",
+    "explicacion": "Cuando el manejo médico inicial de la **Hemorragia Postparto** por atonía falla, se recomienda el uso de métodos de taponamiento uterino mecánico, como el **Balón de Bakri**, antes de proceder a intervenciones quirúrgicas mayores.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_108",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "La altura uterina a las 40 semanas es aproximadamente:",
+    "opciones": {
+      "a": "30 centímetros",
+      "b": "27 centímetros",
+      "c": "36 centímetros",
+      "d": "33 centímetros"
+    },
+    "correcta": "d",
+    "explicacion": "Hacia el final del embarazo (semana 40), la **altura uterina** promedio suele situarse alrededor de los **33 centímetros**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_109",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "El parto normal (OMS 1996) se define como:",
+    "opciones": {
+      "a": "Aquel luego del cual, tanto la madre como el niño están en buenas condiciones",
+      "b": "Aquel de bajo riesgo en que el niño nace en forma espontánea, en presentación cefálica, entre las 37 y 41 semanas completas de edad gestacional",
+      "c": "Aquel de comienzo espontáneo, de bajo riesgo desde el comienzo del trabajo de parto, hasta la finalización del nacimiento. El niño nace en forma espontánea, en presentación cefálica, entre las 37 y 41 semanas completas de edad gestacional. Luego, tanto la madre como el niño están en buenas condiciones",
+      "d": "Aquel de comienzo espontáneo, de bajo riesgo desde el comienzo del trabajo de parto, hasta la finalización del nacimiento. El niño nace en forma espontánea, entre las 36 y 42 semanas completas de edad gestacional. Luego, tanto la madre como el niño están en buen estado"
+    },
+    "correcta": "c",
+    "explicacion": "La definición de la OMS para un **parto normal** contempla el inicio espontáneo, el bajo riesgo mantenido durante todo el proceso, la presentación cefálica, la edad gestacional de término (37-41 semanas) y el buen estado final de madre e hijo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_110",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "Mediante ecografía transvaginal se visualiza la actividad cardiaca:",
+    "opciones": {
+      "a": "en la 4ta semana",
+      "b": "en la 5ta semana",
+      "c": "en la 8va semana",
+      "d": "en la 6ta semana"
+    },
+    "correcta": "d",
+    "explicacion": "A través de la **ecografía transvaginal**, es posible detectar los latidos cardíacos embrionarios a partir de la **6ta semana** de gestación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_111",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una primigesta de 22 años, de término, se encuentra en trabajo de parto desde hace 16 horas, con dilatación cervical de 7 centímetros. La presentación fetal es occipito iliaca derecha posterior, en primer plano y con caput. Se han observado desaceleraciones tardías, durante los últimos 30 minutos. ¿Cuál sería la conducta a tomar?",
+    "opciones": {
+      "a": "Aplicación de fórceps",
+      "b": "Versión interna",
+      "c": "Operación cesárea",
+      "d": "Versión externa"
+    },
+    "correcta": "c",
+    "explicacion": "La presencia de **desaceleraciones tardías (Dips II)** persistentes sugiere compromiso del bienestar fetal (sufrimiento fetal agudo). Dado que la paciente no está en condiciones de un parto vaginal inmediato (dilatación incompleta y presentación alta), se debe realizar una **Operación Cesárea**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_112",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Amenazas de parto prematuro"
+    ],
+    "enunciado": "La inducción de la maduración pulmonar fetal con betametasona intramuscular se indica ante determinadas situaciones entre las:",
+    "opciones": {
+      "a": "22,0 y 32,0 semanas",
+      "b": "22,6 y 34,6 semanas",
+      "c": "24,0 y 34,0 semanas",
+      "d": "24,0 y 36,0 semanas"
+    },
+    "correcta": "c",
+    "explicacion": "La ventana terapéutica clásica para la administración de corticoides antenatales (como la **betametasona**) para inducir la **maduración pulmonar** se sitúa entre las **24,0 y 34,0 semanas** de gestación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_113",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Durante la cesárea, la histerotomía se realiza preferentemente:",
+    "opciones": {
+      "a": "Longitudinal segmento corporal",
+      "b": "Transversal segmentaria",
+      "c": "Transversal corporal",
+      "d": "Mediana corporal"
+    },
+    "correcta": "b",
+    "explicacion": "La técnica de elección en la mayoría de las cesáreas es la **histerotomía transversal segmentaria** (técnica de Kerr), debido a que presenta menor sangrado y mejor cicatrización.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_114",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "Virus no HIV"
+    ],
+    "enunciado": "El hallazgo aislado más frecuente en los lactantes con Sindrome de Rubeola Congénita es:",
+    "opciones": {
+      "a": "Hepatoesplenomegalia",
+      "b": "Retinopatía en sal y pimienta",
+      "c": "Calcificaciones cerebrales",
+      "d": "Hipoacusia neurosensorial"
+    },
+    "correcta": "d",
+    "explicacion": "La **hipoacusia neurosensorial** es la secuela más frecuente en los recién nacidos afectados por el **Síndrome de Rubéola Congénita**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_115",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Amenazas de parto prematuro"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una de las principales indicaciones para el uso de agonistas beta adrenérgicos en obstetricia?",
+    "opciones": {
+      "a": "Hiperemesis gravídica",
+      "b": "Crisis hipertensiva",
+      "c": "Postparto inmediato",
+      "d": "Amenaza de parto pretérmino"
+    },
+    "correcta": "d",
+    "explicacion": "Los **fármacos beta-adrenérgicos** (como la isoxuprina o ritodrina) se utilizan como tocolíticos para inhibir las contracciones uterinas en casos de **amenaza de parto pretérmino**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_116",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente primigesta cursando embarazo de 39 semanas se presenta a la consulta en trabajo de parto, con dinámica uterina de 2 contracciones en 10 minutos, de 45 seg. de duración. Al examen obstétrico, se constata cuello borrado con 7 cms. de dilatación, situación transversa, bolsa rota, liquido amniótico claro. El monitoreo fetal es aceptable, latidos fetales 140 Ipm. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Conduce el trabajo de parto",
+      "b": "Utiliza ocitocina para mejorar la dinámica y facilitar el descenso de la presentación",
+      "c": "Realiza operación cesárea",
+      "d": "Realiza fórceps"
+    },
+    "correcta": "c",
+    "explicacion": "La **situación transversa** durante el trabajo de parto es una indicación absoluta de **Operación Cesárea**, ya que el parto vaginal es imposible en esta posición.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_117",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Embarazo múltiple"
+    ],
+    "enunciado": "El siguiente esquema corresponde clásicamente a un embarazo gemelar con:",
+    "opciones": {
+      "a": "restricción del crecimiento selectivo",
+      "b": "sindrome biamniótico",
+      "c": "síndrome monoamniótico",
+      "d": "síndrome transfusor transfundido"
+    },
+    "correcta": "d",
+    "explicacion": "El esquema visual (frecuentemente mostrando asimetría en el tamaño fetal y el volumen de líquido amniótico) es característico del **síndrome de transfusión feto-fetal**.",
+    "imagenes": [
+      "img/obstetricia/stff_gemelar.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_118",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Rotura prematura de membranas"
+    ],
+    "enunciado": "Se define como rotura prematura de membranas corioamnióticas, cuando se produce:",
+    "opciones": {
+      "a": "al menos 2 horas antes del inicio del trabajo de parto",
+      "b": "al menos 1 hora antes del inicio del trabajo de parto",
+      "c": "antes del inicio del trabajo de parto",
+      "d": "antes de las 37,0 semanas"
+    },
+    "correcta": "a",
+    "explicacion": "Aunque la definición general es la rotura antes del inicio de las contracciones, tradicionalmente se ha especificado un periodo de **al menos 2 horas** previo al inicio del trabajo de parto para categorizarla como tal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_119",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "La razón de Mortalidad Materna Argentina del año 2015 fue de:",
+    "opciones": {
+      "a": "39 cada 10000 nacidos vivos",
+      "b": "3,9 cada 10000 nacidos vivos",
+      "c": "390 cada 10000 nacidos vivos",
+      "d": "39 cada 1000 nacidos vivos"
+    },
+    "correcta": "b",
+    "explicacion": "De acuerdo con las estadísticas de salud pública para ese periodo, la razón de mortalidad materna en Argentina fue de **3,9 por cada 10.000 nacidos vivos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_120",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Cuando le administra sulfato de magnesio a una embarazada ¿Qué signos debe controlar a fin de diagnosticar una toxicidad en forma temprana?",
+    "opciones": {
+      "a": "Reflejo patelar, diuresis y frecuencia respiratoria",
+      "b": "Proteinuria, frecuencia cardíaca y valores de Tarterial",
+      "c": "Frecuencia cardíaca, valores de T.arterial y reflejo corneano",
+      "d": "Diuresis, frecuencia cardíaca y reflejo corneano"
+    },
+    "correcta": "a",
+    "explicacion": "Para monitorizar la **toxicidad por magnesio**, es fundamental controlar la presencia del **reflejo patelar**, el ritmo de la **diuresis** (ya que se elimina por vía renal) y la **frecuencia respiratoria** (para detectar depresión respiratoria).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_121",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Puerperio"
+    ],
+    "enunciado": "Tradicionalmente se considera hemorragia post-parto vaginal, cuando el volumen de sangre perdido es mayor a:",
+    "opciones": {
+      "a": "1500ml",
+      "b": "300ml",
+      "c": "500ml",
+      "d": "1000ml"
+    },
+    "correcta": "c",
+    "explicacion": "La definición clásica de **hemorragia postparto vaginal** es la pérdida hemática superior a los **500 ml**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_122",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Otras preguntas de obstetricia"
+    ],
+    "enunciado": "Ante una paciente embarazada de 25,4 semanas con un quiste simple de ovario no complicado de 6 cms de diámetro. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "No intervenir, observación y eventual operación más allá del puerperio",
+      "b": "Intervención quirúrgica entre las 32 y 34 semanas",
+      "c": "Intervención quirúrgica inmediata",
+      "d": "Punción diagnóstica transabdominal"
+    },
+    "correcta": "a",
+    "explicacion": "Si el **quiste de ovario** es simple y no presenta complicaciones (como torsión), se prefiere una **conducta expectante** durante el embarazo, posponiendo cualquier intervención quirúrgica para después del puerperio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_123",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente de 24 años, G1P0, cursando embarazo de 36 semanas en tratamiento con alfametildopa por hipertensión gestacional, consulta por contracciones uterinas y pérdidas hemáticas escasas. Al examen, lúcida, afebril, TA 140/90 mmHg, dinámica uterina 3/10'/35', tono uterino normal, FCF 140 por minuto. Monitoreo fetal reactivo. Tacto vaginal: cuello centralizado, borrado en su totalidad, 8 cm de dilatación, bolsa integra, presentación cefálica móvil. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "a": "Control del trabajo de parto con monitoreo fetal continuo",
+      "b": "Uteroinhibición para maduración pulmonar fetal y nifedipina vía oral",
+      "c": "Rotura artificial de membranas para completar las condiciones de toma forcipal",
+      "d": "Cesárea abdominal por preeclampsia"
+    },
+    "correcta": "a",
+    "explicacion": "Dado que la paciente se encuentra en un trabajo de parto avanzado (8 cm) con estabilidad materna y fetal (monitoreo reactivo, TA controlada), la conducta adecuada es permitir la progresión del mismo bajo **estricta vigilancia con monitoreo fetal continuo**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_124",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Puerperio"
+    ],
+    "enunciado": "La técnica de sutura compresiva del útero de B-Lynch se utiliza en el tratamiento de:",
+    "opciones": {
+      "a": "Percretismo placentario",
+      "b": "Atonía uterina",
+      "c": "Rotura uterina",
+      "d": "Inversión uterina"
+    },
+    "correcta": "b",
+    "explicacion": "La **sutura de B-Lynch** es una técnica quirúrgica conservadora diseñada para controlar la hemorragia postparto masiva causada por la **atonía uterina** persistente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_125",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hemorragias del embarazo"
+    ],
+    "enunciado": "Dentro de las opciones para el diagnóstico diferencial de una metrorragia del primer trimestre del embarazo, encontramos a:",
+    "opciones": {
+      "a": "Inversión del útero",
+      "b": "Placenta previa",
+      "c": "Embarazo ectópico Amenaza de aborto",
+      "d": "Inercia uterina"
+    },
+    "correcta": "c",
+    "explicacion": "Las causas principales de sangrado en la primera mitad del embarazo incluyen el **embarazo ectópico** y la **amenaza de aborto**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_126",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "HIV"
+    ],
+    "enunciado": "Una paciente de 22 años, primigesta, cursando un embarazo de 37 semanas consulta a guardia por contracciones. La paciente presenta diagnóstico de VIH desde la semana 20 de embarazo, por lo cual comenzó tratamiento antirretroviral. Adjunta carga viral, realizada a las 35 semanas, menor a 50 copias y CD4 mayor a 250. Al examen se constata dinámica uterina 3/10; tono uterino normal, latidos cardíacos fetales 145 por minuto. Tacto vaginal: cuello centralizado, 5 cm dilatación, bolsa integra, cefálica móvil. ¿cuál sería la conducta adecuada?",
+    "opciones": {
+      "a": "Indicar 3TC más nevirapina y realizar cesárea",
+      "b": "Indicar AZT y realizar cesárea",
+      "c": "Indicar 3TC más nevirapina y realizar parto vaginal",
+      "d": "Indicar AZT y proponer parto vaginal"
+    },
+    "correcta": "d",
+    "explicacion": "En pacientes con **VIH** que reciben tratamiento antirretroviral y presentan una **carga viral indetectable** (menor a 50 copias) cerca del término, se puede proponer el **parto vaginal**. Se debe administrar **AZT** (zidovudina) endovenosa durante el trabajo de parto como profilaxis intraparto.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_127",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "El siguiente esquema hace referencia al efecto:",
+    "opciones": {
+      "a": "Tarnier (hipertonía uterina)",
+      "b": "Poseiro (supino hipotensivo)",
+      "c": "Pose (aorto cava)",
+      "d": "Potter (oligoamnios severo)"
+    },
+    "correcta": "b",
+    "explicacion": "El **efecto Poseiro** se refiere a la compresión de la aorta y la vena cava inferior por el útero grávido cuando la paciente se encuentra en decúbito dorsal (posición supina). Esto produce el **síndrome hipotensivo supino** por disminución del retorno venoso y del gasto cardíaco.",
+    "imagenes": [
+      "img/obstetricia/efecto_poseiro.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_128",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Ante una embarazada que está siendo tratada con sulfato de magnesio y que presenta signos de intoxicación ¿Qué antídoto utilizaría?",
+    "opciones": {
+      "a": "Gluconato de calcio",
+      "b": "Permanganato de potasio",
+      "c": "Hidróxido de calcio",
+      "d": "Sulfato de sodio"
+    },
+    "correcta": "a",
+    "explicacion": "El **Gluconato de Calcio** es el antídoto específico para la intoxicación por **Sulfato de Magnesio**. Debe administrarse ante la ausencia de reflejos rotulianos o depresión respiratoria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_129",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "El segundo periodo del trabajo de parto comienza con:",
+    "opciones": {
+      "a": "la ligadura del cordón",
+      "b": "la expulsión de la placenta",
+      "c": "la dilatación completa del cuello uterino",
+      "d": "la dilatación del cuello uterino en 4 cms"
+    },
+    "correcta": "c",
+    "explicacion": "El **segundo periodo** del parto o periodo expulsivo se inicia en el momento en que se alcanza la **dilatación completa** (10 cm) y finaliza con la expulsión total del feto.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_130",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Ante el trabajo de parto de una primigesta, con dinámica uterina de 3/10'/40\", 5 cm. de dilatación, membranas rotas, presentación cefálica de bregma en primer plano, ¿cuál es su conducta?",
+    "opciones": {
+      "a": "Espera la dilatación completa y realiza forceps en tercer plano",
+      "b": "Indica ocitócicos para regularizar la dinámica y aumentar la dilatación rápidamente",
+      "c": "Indica operación cesárea",
+      "d": "Controla la dinámica y espera la evolución"
+    },
+    "correcta": "d",
+    "explicacion": "La **presentación de bregma** (deflexión de primer grado) no es una indicación absoluta de cesárea de entrada. Si la dinámica es adecuada y el bienestar fetal está conservado, se debe **controlar la evolución**, ya que en muchos casos puede producirse el parto vaginal espontáneo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_131",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Puerperio"
+    ],
+    "enunciado": "Luego de un parto normal, generalmente se otorga el alta hospitalaria a las:",
+    "opciones": {
+      "a": "48hs",
+      "b": "72hs",
+      "c": "96hs",
+      "d": "24hs"
+    },
+    "correcta": "a",
+    "explicacion": "En un **puerperio fisiológico** tras un parto vaginal sin complicaciones, el alta hospitalaria estándar se recomienda a las **48 horas**, permitiendo la vigilancia de hemorragias precoces y el inicio de la lactancia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_132",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "No se considera un factor de riesgo para la preeclampsia:",
+    "opciones": {
+      "a": "IMC >30",
+      "b": "Historia familiar de preeclampsia",
+      "c": "Acs antifosfolipidicos",
+      "d": "Nuliparidad"
+    },
+    "correcta": "a",
+    "explicacion": "Aunque la obesidad es un factor predisponente, en el contexto de esta pregunta específica, factores como la **nuliparidad**, anticuerpos **antifosfolipídicos** y la **historia familiar** son riesgos clásicos de mayor peso relativo para el desarrollo de **preeclampsia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_133",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Embarazo prolongado e inducción"
+    ],
+    "enunciado": "Ante una paciente con un embarazo de 42.4 semanas, confirmado por ecografía precoz y con monitoreo fetales (NST) reactivo. ¿Cuál es la conducta por adoptar?",
+    "opciones": {
+      "a": "Repetir monitoreos fetales hasta que de no reactivo",
+      "b": "Conducta expectante hasta el inicio del trabajo de parto",
+      "c": "Cesárea abdominal luego de realizar maduración pulmonar",
+      "d": "Inducir el trabajo de parto"
+    },
+    "correcta": "d",
+    "explicacion": "En un **embarazo postérmino** (más de 42 semanas), el riesgo de insuficiencia placentaria y muerte fetal aumenta significativamente. La conducta indicada es la **inducción del trabajo de parto**, independientemente de que el monitoreo sea reactivo en ese momento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_134",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente de 20 años, G1P0, cursando embarazo no controlado de 39 semanas, sin antecedentes de relevancia, consulta a guardia por presentar contracciones. Al examen se constata afebril, latidos cardíacos fetales 155/min, dinámica uterina 3/10'/30\", tono uterino normal. Tacto vaginal: cuello centralizado, 6 cm de dilatación, bolsa integra, cefálica móvil, sin pérdidas por genitales externos. ¿cuál es el manejo adecuado?",
+    "opciones": {
+      "a": "Control del trabajo de parto sin medicalizar",
+      "b": "Manejo activo del trabajo de parto con ocitocina",
+      "c": "Conducción con misoprostol",
+      "d": "Penicilina o Ampicilina E.V."
+    },
+    "correcta": "a",
+    "explicacion": "En una paciente de bajo riesgo con un trabajo de parto progresivo y bienestar fetal conservado, se recomienda el **control del trabajo de parto sin medicalizar**, respetando la fisiología y evitando intervenciones innecesarias como la ocitocina de rutina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_135",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Parto",
+      "HIV"
+    ],
+    "enunciado": "La conducta en relación con la lactancia en una madre con HIV es:",
+    "opciones": {
+      "a": "Si la carga viral al momento del parto es menor a 1000 copias/ml y mantiene el tratamiento antirretroviral efectivo, se puede ofrecer la lactancia materna",
+      "b": "Si no mantiene el tratamiento antirretroviral efectivo, se puede ofrecer la lactancia materna",
+      "c": "Cualquiera fuera el esquema de tratamiento que se utilice, la lactancia materna está contraindicada",
+      "d": "En pacientes sin tratamiento antirretroviral la lactancia materna está contraindicada"
+    },
+    "correcta": "c",
+    "explicacion": "En Argentina y según las recomendaciones actuales para entornos con acceso a sucedáneos seguros, la **lactancia materna está contraindicada** en mujeres con **VIH**, independientemente de su carga viral o tratamiento, para eliminar el riesgo de transmisión postnatal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_136",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "El siguiente dibujo corresponde a la nomenclatura obstétrica:",
+    "opciones": {
+      "a": "OIDP",
+      "b": "OllA",
+      "c": "OIDA",
+      "d": "OlIP"
+    },
+    "correcta": "b",
+    "explicacion": "La imagen representa una **OIIA (Occipito Ilíaca Izquierda Anterior)**, donde el occipucio fetal se orienta hacia la parte anterior y el lado izquierdo de la pelvis materna.",
+    "imagenes": [
+      "img/obstetricia/nomenclatura_oiia.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_137",
+    "materia": [
+      "obstetricia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Screening gestacional",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "Si una mujer inicia el embarazo con sobrepeso:",
+    "opciones": {
+      "a": "la ganancia total esperable es de entre 5 y 9 kilogramos, que representa la ganancia para el feto, la placenta y los anexos",
+      "b": "la ganancia total esperable es de entre 5 y 9 kilogramos, que representa la ganancia materna mínima",
+      "c": "la ganancia total esperable es de entre 4 y 12 kilogramos, que representa la ganancia para el feto, la placenta y los anexos",
+      "d": "la ganancia total esperable es de entre 4 y 12 kilogramos, que representa la ganancia materna mínima"
+    },
+    "correcta": "a",
+    "explicacion": "Para mujeres que inician la gestación con **sobrepeso**, se recomienda una ganancia de peso total limitada, aproximadamente entre **7 y 11 kg** (aunque algunas guías citan el rango 5-9 kg), lo cual cubre esencialmente los requerimientos del feto y los tejidos gestacionales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_138",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "La modalidad de presentación fetal, está determinada principalmente por la:",
+    "opciones": {
+      "a": "Actitud",
+      "b": "Rotación",
+      "c": "Situación",
+      "d": "Posición"
+    },
+    "correcta": "a",
+    "explicacion": "La **modalidad de presentación** (vértice, bregma, frente o cara en el caso de la cefálica) depende del grado de flexión o deflexión de la cabeza, es decir, de la **actitud fetal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_139",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una embarazada que está en trabajo de parto, manifiesta deseos de pujar. Mediante tacto se constata dilatación completa, bolsa rota y que la presentación llega a las espinas ciáticas. ¿En qué plano de Hodge se encuentra la presentación?",
+    "opciones": {
+      "a": "3er plano",
+      "b": "2do plano",
+      "c": "4to plano",
+      "d": "1er plano"
+    },
+    "correcta": "a",
+    "explicacion": "El **tercer plano de Hodge** se define como la línea imaginaria que pasa por las **espinas ciáticas**. Cuando la parte más prominente de la presentación llega a este nivel, se dice que está encajada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_140",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente de 30 años, G3P2, cursando un embarazo de 39 semanas consulta a la guardia por contracciones. Se constatan latidos cardíacos fetales de 140/min, dinámica uterina 3/10'/35\" tono uterino normal. Tacto vaginal: cuello borrado, dilatación completa, bolsa rota, presentación cefálica (MIDP) en primer plano de Hodge. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Conducta expectante y vacuum extractor en III plano",
+      "b": "Evolución espontánea del trabajo de parto",
+      "c": "Cesárea abdominal",
+      "d": "Conducta expectante y forceps en III plano"
+    },
+    "correcta": "c",
+    "explicacion": "En una multípara con dilatación completa pero la presentación aún en **primer plano** y en una variedad de posición posterior (MIDP), la falta de descenso progresivo puede indicar una desproporción o falla en el mecanismo de parto, indicándose la **cesárea**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_141",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "No se considera como parte de la reanimación intrauterina a:",
+    "opciones": {
+      "a": "Colocación de la paciente en decúbito lateral izquierdo",
+      "b": "Suspensión de la ocitocina",
+      "c": "Administración de oxigeno",
+      "d": "Rotura de membranas"
+    },
+    "correcta": "d",
+    "explicacion": "La **rotura de membranas** no es una medida de reanimación intrauterina; de hecho, puede empeorar la compresión del cordón. Las medidas correctas incluyen el **decúbito lateral izquierdo**, oxigenoterapia y la suspensión de útero-estimulantes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_142",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente de 32 años G3P2, que se presenta a la consulta con un embarazo de término en trabajo de parto, presenta al examen obstétrico cuello borrado, con 8 cm. de dilatación, membranas integras y presentación pelviana completa. La dinámica uterina es de una contracción cada 10 minutos de 30 segundos de duración. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Romper la bolsa para facilitar el descenso",
+      "b": "Rompe la bolsa y efectúa la maniobra de Brach",
+      "c": "Aumenta la dinámica uterina con ocitocina, para evitar la hipodinamia",
+      "d": "Indica pujar a la paciente a fin de aumentar la dilatación"
+    },
+    "correcta": "c",
+    "explicacion": "En un parto en **presentación pelviana** (nalgas), es crucial mantener una excelente dinámica uterina para asegurar un descenso rápido y evitar la deflexión de la cabeza última. Si hay hipodinamia, se debe usar **ocitocina**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_143",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Enfermedad hemolítica fetal"
+    ],
+    "enunciado": "¿En que casos debe aplicarse gammaglobulina anti-D antes de transcurridas 72 hs. del parto?",
+    "opciones": {
+      "a": "Madre Rh negativa con prueba de Coombs positiva y recién nacido Rh positivo",
+      "b": "Madre Rh negativa con prueba de Coombs negativa y recién nacido Rh positivo",
+      "c": "Madre Rh negativa con prueba de Coombs negativa y recién nacido Rh negativo",
+      "d": "Madre Rh positiva con prueba de Coombs negativa y recién nacido Rh negativo"
+    },
+    "correcta": "b",
+    "explicacion": "La profilaxis con **gammaglobulina anti-D** se indica en madres **Rh negativas no sensibilizadas** (Coombs indirecta negativa) que han tenido un hijo **Rh positivo**, para prevenir la isoinmunización en futuros embarazos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_144",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "El sulfato de magnesio endovenoso durante el embarazo se administra preferentemente:",
+    "opciones": {
+      "a": "con dosis de carga lenta y de mantenimiento",
+      "b": "intramuscular",
+      "c": "en bolo rápido",
+      "d": "en infusión continua rápida"
+    },
+    "correcta": "a",
+    "explicacion": "El protocolo de administración de **Sulfato de Magnesio** requiere una **dosis de carga** (generalmente 4-6 g en 15-20 min) seguida de una **infusión de mantenimiento** para mantener niveles terapéuticos estables y evitar la toxicidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_145",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "Tropicales"
+    ],
+    "enunciado": "Ante una embarazada con: tos, fiebre, dolor retro ocular y osteoarticular de 2 días de evolución, además de pérdida de líquido por genitales externos y rash cutáneo desde hace 4 horas; con FCF y tono uterino normales, sin dinámica uterina. Como diagnóstico presuntivo Ud piensa en:",
+    "opciones": {
+      "a": "Gripe A",
+      "b": "Dengue",
+      "c": "Corioamnionitis",
+      "d": "Rubeola"
+    },
+    "correcta": "b",
+    "explicacion": "La tríada de **fiebre, dolor retroocular y rash cutáneo** es altamente sugestiva de **Dengue**. Es vital el diagnóstico diferencial en zonas endémicas, especialmente durante el embarazo por el riesgo de complicaciones hemorrágicas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_146",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "En una embarazada de término, sin patología, el hematocrito promedio se considera normal cuando se encuentra alrededor del:",
+    "opciones": {
+      "a": "35%",
+      "b": "31%",
+      "c": "28%",
+      "d": "40%"
+    },
+    "correcta": "a",
+    "explicacion": "Debido a la **hemodilución fisiológica** del embarazo (aumento del volumen plasmático mayor al de la masa eritrocitaria), un **hematocrito del 33-35%** se considera normal en el tercer trimestre.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_147",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "El valor normal de fibrinógeno durante el embarazo se mantiene entre:",
+    "opciones": {
+      "a": "200-500 mg/dl",
+      "b": "100-400 mg/dl",
+      "c": "300-600 mg/dl",
+      "d": "150-450 mg/dl"
+    },
+    "correcta": "c",
+    "explicacion": "El embarazo es un estado de hipercoagulabilidad; los niveles de **fibrinógeno** aumentan fisiológicamente, situándose normalmente entre **300 y 600 mg/dl**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_148",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "La parte del ovoide fetal capaz de ocupar el estrecho superior de la pelvis y desencadenar un mecanismo de parto, es:",
+    "opciones": {
+      "a": "el punto de referencia",
+      "b": "el punto de reparo",
+      "c": "la presentación",
+      "d": "la situación"
+    },
+    "correcta": "c",
+    "explicacion": "La **presentación** es la parte del feto que se ofrece al estrecho superior, lo ocupa totalmente y es capaz de realizar un mecanismo de parto (cefálica o pelviana).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_149",
+    "materia": [
+      "obstetricia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Infecciones congénitas y perinatales",
+      "ITS"
+    ],
+    "enunciado": "Durante el primer trimestre una paciente consulta por una VDRL 1/16, ella refiere que por cuestiones familiares debe viajar y continuar el control prenatal en el exterior, motivo por el cual Ud:",
+    "opciones": {
+      "a": "Le explica que, debido a ser títulos bajos, no hay riesgo de contraer sifilis congénita, de todos modos, le solicita una prueba treponémica",
+      "b": "Le solicita FTA-Abs ambulatoria y control en un mes",
+      "c": "Le administra penicilina IM para asegurarse en tratamiento",
+      "d": "Acuerda con la paciente y le aplica la primera dosis de penicilina IM, le solicita una prueba treponémica y le explica que debe continuar con la segunda y tercera dosis según los resultados"
+    },
+    "correcta": "d",
+    "explicacion": "Ante la sospecha de **sífilis** y la posibilidad de pérdida de seguimiento, se debe iniciar el tratamiento preventivo de inmediato con la **primera dosis de penicilina** mientras se esperan los resultados de las pruebas treponémicas confirmatorias.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
+  {
+    "id": "obste_001_150",
+    "materia": [
+      "obstetricia"
+    ],
+    "submateria": [
+      "Parto"
+    ],
+    "enunciado": "Una paciente embarazada de 40 semanas G2 PO C1, se encuentra en trabajo de parto. Refiere dolor intenso en hipogastrio, acompañado de náuseas y gran ansiedad. Presenta polisistolia con un leve aumento del tono y pérdida hemática por genitales. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Rotura de vasa previa",
+      "b": "Rotura de seno marginal",
+      "c": "Rotura uterina incompleta",
+      "d": "Placenta previa sangrante"
+    },
+    "correcta": "c",
+    "explicacion": "El antecedente de **cesárea previa** (C1), junto con el dolor intenso en hipogastrio (sobre la cicatriz), la polisistolia y el sangrado, orientan fuertemente a una **amenaza o rotura uterina incompleta**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso iar"
+  },
   
