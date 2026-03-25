@@ -986,5 +986,670 @@
     "anio": null,
     "oficial": false,
     "Fuente": "prerem"
+  },
+{
+    "id": "psiquiatria_001_053",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "Una paciente de 35 años consulta por presentar episodios recientes de disnea, dolor torácico y sudoración acompañados de sensación de muerte inminente. Estos episodios son de aparición brusca, tienen una duración de 10 a 30 minutos y se han presentado en al menos cuatro oportunidades en el último mes. Al indagar sobre aspectos de su vida de relación, refiere sentir excesiva presión en su trabajo con temor al despido en los últimos meses, lo que ha generado a su vez conflictos con su pareja. No tiene otros antecedentes de importancia y su examen físico y electrocardiograma son normales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hipocondriasis",
+      "b": "Angina de pecho de reciente comienzo",
+      "c": "Trastorno de ansiedad generalizada",
+      "d": "Crisis de angustia (de pánico)"
+    },
+    "correcta": "d",
+    "explicacion": "En esta pregunta repasamos las características principales de las **crisis de pánico** y los criterios diagnósticos del **trastorno de pánico**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_054",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "Una paciente de 25 años, con diagnóstico de Trastorno Obsesivo Compulsivo hace 3 años, actualmente sin seguimiento ni medicación, consulta porque sus ideas obsesivas y comportamientos compulsivos (por ejemplo: revisar en varias oportunidades si cerró el gas) han profundizado el deterioro de su calidad de vida. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Explicar la benignidad del cuadro e indicar terapia psicológica",
+      "b": "Indicar fluoxetina 40 mg/dia y terapia psicológica",
+      "c": "Indicar amitriptilina 25 mg y terapia psicológica",
+      "d": "Indicar clonazepam 3 mg/dia y terapia psicológica"
+    },
+    "correcta": "b",
+    "explicacion": "En este video repasamos los criterios diagnósticos del **trastorno obsesivo compulsivo** y su tratamiento farmacológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_055",
+    "materia": ["psiquiatria"],
+    "submateria": ["Otras preguntas de psiquiatría"],
+    "enunciado": "Romina, de 15 años presenta un cuadro clínico de tristeza, aislamiento social, pérdida de interés por sus actividades habituales, inapetencia desde hace 1 mes aproximadamente y no presenta dificultades en el sueño. Los padres lo relacionan con el fallecimiento de su abuela ocurrido poco tiempo antes. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Depresión mayor",
+      "b": "Distimia",
+      "c": "Depresión atípica",
+      "d": "Trastorno adaptativo con estado de ánimo deprimido"
+    },
+    "correcta": "d",
+    "explicacion": "En esta pregunta repasamos los criterios diagnósticos del **trastorno adaptativo** y recordamos sus principales diferencias con las alteraciones del estado de ánimo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_056",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "Durante el control periódico de salud, una paciente sana de 45 años, sin antecedentes patológicos refiere que desde hace un mes se encuentra desanimada y con poca energía para realizar las actividades cotidianas, a pesar de lo cual no las ha abandonado. También tiene dificultades para concentrarse en sus tareas laborales y después de realizar esfuerzos mínimos tiene un cansancio considerable que la lleva a dormir durante muchas horas. Todos estos síntomas le generan importante carga de angustia. ¿Cómo interpreta este cuadro?",
+    "opciones": {
+      "a": "Episodio depresivo leve",
+      "b": "Episodio depresivo moderado",
+      "c": "Síndrome de fatiga crónica",
+      "d": "Depresión perimenopáusica"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta repasamos los criterios diagnósticos del **episodio depresivo mayor** y como clasificarlo según su gravedad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_057",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "Una paciente de 43 años consulta por angustia, agitación y despertares nocturnos. Refiere que llora por cualquier motivo, permanece largo tiempo en cama y ha perdido el interés por sus actividades habituales. Además se encuentra retraída, no desea salir de su casa, le cuesta concentrarse y se olvida de las cosas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Distimia",
+      "b": "Trastorno adaptativo a predominio depresivo",
+      "c": "Deterioro cognitivo leve",
+      "d": "Depresión mayor"
+    },
+    "correcta": "d",
+    "explicacion": "En esta pregunta ahondamos en el diagnóstico del **trastorno depresivo mayor** y sus diferencias con el **trastorno bipolar**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_058",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "¿Cuál de los siguientes grupos de fármacos, son opciones para el tratamiento de mantenimiento del trastorno bipolar (maníacodepresivo)?",
+    "opciones": {
+      "a": "Litio, diazepam, maprotilina",
+      "b": "Litio, ácido valproico, carbamazepina",
+      "c": "Litio, amitriptilina, fenobarbital",
+      "d": "Litio, fenitoína, clozapina"
+    },
+    "correcta": "b",
+    "explicacion": "En este video recordamos los criterios principales del **trastorno bipolar** y los fármacos utilizados en el tratamiento de mantenimiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_059",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos relacionados con sustancias"],
+    "enunciado": "¿Cuál de las siguientes opciones es correcta con respecto al cuestionario CAGE para rastreo del alcoholismo?",
+    "opciones": {
+      "a": "Es útil para identificar los niveles de riesgo del paciente alcohólico",
+      "b": "Si es negativo descarta la enfermedad",
+      "c": "Su rendimiento es similar al de las pruebas sanguíneas",
+      "d": "Identifica bebedores problemáticos"
+    },
+    "correcta": "c",
+    "explicacion": "En esta pregunta estudiamos el cuertionario **CAGE** y como interpretarlo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_060",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Un hombre de 52 años fue internado por un síndrome de abstinencia alcohólica. Presenta temblor, está diaforético y su frecuencia cardíaca es de 110 por minuto. ¿Cuál de los siguientes fármacos utiliza como tratamiento inicial?",
+    "opciones": {
+      "a": "Naltrexona.",
+      "b": "Lorazepam.",
+      "c": "Difenilhidantoína.",
+      "d": "Gabapentina."
+    },
+    "correcta": "b",
+    "explicacion": "En este video repasamos el tratamiento agudo de la **abstinencia alcoholica** y recordamos el diagnóstico de sus posibles complicaciones.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_061",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos relacionados con sustancias"],
+    "enunciado": "Lo consulta un paciente de 38 años quien refiere que en los últimos meses, a raíz de presentar problemas en su trabajo, comenzó a tomar alcohol para poder conciliar el sueño y muchas veces para mejorar su rendimiento sexual. ¿Qué tipo de bebedor es?",
+    "opciones": {
+      "a": "Usador normal",
+      "b": "Usador pesado",
+      "c": "Mal usador",
+      "d": "Abusador"
+    },
+    "correcta": "c",
+    "explicacion": "En esta pregunta recordaremos como clasificar los grupos de riesgo en atención primaria y las intervenciones indicadas en cada uno de ellos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_062",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Un paciente de 17 años es llevado a la consulta por presentar un cuadro de perturbación del pensamiento y de la capacidad de concentración y sensación de ingravidez. En el examen físico presenta taquicardia e inyección conjuntival. ¿Cuál de las siguientes sustancias es más probable que haya consumido?",
+    "opciones": {
+      "a": "Éxtasis",
+      "b": "Cocaína",
+      "c": "Marihuana",
+      "d": "Alcohol"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es **Marihuana**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_063",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Un paciente de 28 años presenta ginecomastia sin otros signos físicos de interés. Como antecedente de importancia el paciente refiere consumo de sustancias de abuso. Luego de solicitar laboratorio específico encuentra niveles de testosterona disminuidos y presencia de espermatozoides anormales con disminución de la motilidad en el espermograma. ¿Qué droga de abuso puede producir este cuadro?",
+    "opciones": {
+      "a": "Cocaína",
+      "b": "Éxtasis",
+      "c": "Opiáceos",
+      "d": "Marihuana"
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es **Marihuana**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_064",
+    "materia": ["psiquiatria"],
+    "submateria": ["Otras preguntas de psiquiatría"],
+    "enunciado": "Un paciente de 83 años con antecedentes de hipertensión arterial e hipoacusia se interna con diagnóstico de neumonía aguda de la comunidad. Antes del ingreso era independiente para todas las actividades de la vida diaria, vivía solo y los familiares no detectaban ningún déficit cognitivo. Durante el primer día de internación el paciente desarrolla desorientación temporoespacial, irritabilidad y trastornos del ritmo sueño-vigilia. En el examen físico se encuentra febril, taquicárdico y somnoliento. Se despierta sólo si lo estimulan para luego dormirse nuevamente. El examen de laboratorio muestra leucocitosis con neutrofilia. La tomografía axial computada de cerebro muestra ligera atrofia cortical; el electroencefalograma registra un patrón de ondas lentas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Cuadro demencial compatible con enfermedad de Alzheimer",
+      "b": "Síndrome confusional agudo (delirio)",
+      "c": "Episodio psicótico agudo",
+      "d": "Síndrome depresivo"
+    },
+    "correcta": "b",
+    "explicacion": "En esta pregunta desarrollamos un caso clínico en el que se nos presenta un paciente añoso con desorientación. En base a la bibliografia oficial, desarrollamos los 4 diagnósticos diferenciales más importantes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_065",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Un paciente de 50 años ingresa a la guardia del Hospital por presentar un cuadro confusional. En el examen físico presenta una frecuencia cardíaca de 120 por minuto, frecuencia respiratoria de 28 por minuto, sudoración profusa en cara y tronco, y temblores, sin signos neurológicos focales. Se encuentra desorientado, verborrágico y con alucinaciones visuales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Delirium tremens",
+      "b": "Delirio por intoxicación por opiáceos",
+      "c": "Intoxicación por barbitúricos",
+      "d": "Síndrome de Wernicke-Korsakoff"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta desarrollamos un caso clinico referido a consecuncias del alcoholismo, con el desarrollo de los manejos clinicos y tratamientos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_066",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos de la conducta alimentaria"],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es CORRECTA con respecto a la anorexia nerviosa?",
+    "opciones": {
+      "a": "La mortalidad es cercana al 5% y es debida fundamentalmente a arritmias cardíacas (muerte súbita), hipoglucemias y suicidios; las pacientes de mayor riesgo son las que han perdido entre el 30 y el 40% de su peso teórico",
+      "b": "La mortalidad es cercana al 15% y es debida fundamentalmente a complicaciones infectológicas, por hipoproteinemia o por sobredosis de drogas; las pacientes de mayor riesgo son las que comienzan con la sintomatología a más temprana edad",
+      "c": "La mortalidad es cercana al 1% y es debida fundamentalmente a hemorragias digestivas o insuficiencia renal aguda; las pacientes de mayor riesgo son las pertenecientes a las clases sociales más bajas",
+      "d": "La mortalidad es extremadamente baja y en general es debida a complicaciones de entidades intercurrentes; las pacientes de mayor riesgo son las que han perdido entre el 10 y el 15% del peso teórico"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta desarrollamos **anorexia nerviosa** como parte de las patologias incluidas dentro de los trastornos de alimentacion.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_067",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos de la conducta alimentaria"],
+    "enunciado": "Al considerar la evaluación de un posible trastorno de la alimentación, ¿cuál de los siguientes es uno de los criterios diagnósticos del DSM IV para bulimia nerviosa?",
+    "opciones": {
+      "a": "Masticar y expulsar, pero sin tragar, cantidades importantes de comida",
+      "b": "En mujeres pospúberes, ausencia de por lo menos tres ciclos menstruales consecutivos",
+      "c": "Episodios recurrentes de ingesta en un corto período de una cantidad de alimentos inhabitual con sensación de pérdida de control sobre la ingesta alimentaria",
+      "d": "Preocupación excesiva por el aspecto físico y adherencia a dietas estrictas con un peso y silueta corporales dentro de límites normales"
+    },
+    "correcta": "c",
+    "explicacion": "Presentacion de criterio diagnosticos de trastornos de alimentacion.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_068",
+    "materia": ["psiquiatria"],
+    "submateria": ["Otras preguntas de psiquiatría"],
+    "enunciado": "¿Cuál es el fármaco más utilizado para el tratamiento del trastorno de déficit de atención con hiperactividad?",
+    "opciones": {
+      "a": "Pemolina",
+      "b": "Imipramina",
+      "c": "Metilfenidato",
+      "d": "Clonidina"
+    },
+    "correcta": "c",
+    "explicacion": "En esta pregunta repasamos cuales son los fármacos de elección en el tratamiento del **trastorno del déficit de atención con hiperactividad** y aprovechamos para repasar como se realiza el diagnóstico de esta entidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_069",
+    "materia": ["psiquiatria"],
+    "submateria": ["Otras preguntas de psiquiatría"],
+    "enunciado": "Lo consulta una familia porque su hijo dejó la escuela secundaria mientras cursaba el primer año. Desde entonces no logra organizarse y perdió recientemente una oportunidad laboral por llegadas tarde. Completó su escolaridad primaria en tiempo adecuado pero durante la misma nunca completaba las tareas y era frecuente que llamaran a los padres por su conducta, desde su inquietud en el aula hasta episodios tales como lanzarse jugando sobre un compañero y lastimarlo con un compás en la espalda sin que mediara pelea previa y sin poder explicar posteriormente los motivos de tal acto. ¿Cuál es el diagnóstico más probable y la conducta más adecuada ante este paciente?",
+    "opciones": {
+      "a": "Trastorno depresivo, tratamiento con inhibidores selectivos de la recaptación de serotonina y derivación para inicio de psicoterapia",
+      "b": "Trastorno por consumo de sustancias y recomendación a los padres de una consulta con un centro de atención especializado en adicciones",
+      "c": "Trastorno por déficit de atención e hiperactividad y derivación a psiquiatría infantil para confirmación diagnóstica y tratamiento",
+      "d": "Fracaso escolar y derivación a psicopedagogía para diagnóstico con evaluación del coeficiente intelectual"
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es: **Trastorno por déficit de atención e hiperactividad** y derivación a psiquiatría infantil para confirmación diagnóstica y tratamiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_070",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "Durante un control de salud un paciente presenta síntomas compatibles con una Depresión Mayor. Al profundizar el interrogatorio, puede obtenerse que no presentó episodios de manía pero al consultarle en forma directa, expresa tener ideas de muerte y manifiesta que por momentos ha pensado en tirarse a las vías del tren. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Derivar de inmediato a servicio de Salud Mental",
+      "b": "Descartar cuadro secundario a otras enfermedades orgánicas o abuso de sustancias y consulta inmediata a Salud Mental",
+      "c": "Indicar su internación e iniciar tratamiento con un antidepresivo",
+      "d": "Indicar tratamiento con un antidepresivo y realizar controles frecuentes"
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta correcta es: Descartar cuadro secundario a otras enfermedades orgánicas o abuso de sustancias y consulta inmediata a Salud Mental.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_071",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos psicóticos"],
+    "enunciado": "Las ideas patológicas, caracterizadas por convicción irreductible y movilización conductual y afectiva, se denominan ideas:",
+    "opciones": {
+      "a": "Obsesivas.",
+      "b": "Fóbicas.",
+      "c": "Sobrevaloradas.",
+      "d": "Delirantes."
+    },
+    "correcta": "d",
+    "explicacion": "La respuesta correcta es: **Delirantes**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_072",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Señale las alucinaciones más frecuentes en la urgencia psiquiátrica Delirium Tremens:",
+    "opciones": {
+      "a": "Auditivas.",
+      "b": "Cenestésicas.",
+      "c": "Visuales.",
+      "d": "Olfativas."
+    },
+    "correcta": "c",
+    "explicacion": "Tipo de alucinaciones en el delirium. (Nota: la bibliografía clásica indica predominio de alucinaciones **visuales**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_073",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una mujer de 40 años que consulta por astenia, alteraciones del sueño, aumento de 15 kilos de peso en los últimos 2 años, luego de la separación de su esposo? No trabaja ni quiere hacerlo y tiene una hija de 2 años con la cual le gusta salir a pasear.",
+    "opciones": {
+      "a": "Trastorno de ansiedad.",
+      "b": "Depresión mayor.",
+      "c": "Trastorno ciclotímico.",
+      "d": "Trastorno distímico."
+    },
+    "correcta": "d",
+    "explicacion": "En esta presetanción se revisará el diagnóstico diferencial entre los trastornos de ansiedad, el trastorno ciclotímico, depresión mayor y **distimia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_074",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "¿Cuál de los siguientes fármacos utilizaría, en primera instancia para el control sintomático de las crisis de angustia?",
+    "opciones": {
+      "a": "Amitriptilina.",
+      "b": "Clonazepam.",
+      "c": "Fluoxetina.",
+      "d": "Hidroxicina."
+    },
+    "correcta": "b",
+    "explicacion": "En esta clase se abordará el tratamiento agudo y a largo plazo del **trastorno de angustia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_075",
+    "materia": ["psiquiatria", "medicinafamiliar"],
+    "submateria": ["Otras preguntas de psiquiatría", "Adulto mayor"],
+    "enunciado": "¿Cuál de las siguientes conductas son apropiadas cuando usted debe prescribir psicofármacos en un adulto mayor?",
+    "opciones": {
+      "a": "Comenzar con un 25-50% de la dosis estándar, elegir el fármaco con menor potencial tóxico.",
+      "b": "Utilizar los fármacos \"según sea necesario\" para el manejo de los trastornos del sueño.",
+      "c": "Comenzar con la dosis estándar del fármaco y elegir el que tiene menor potencial tóxico.",
+      "d": "Utilizar los fármacos \"según sea necesario\" con menor potencial tóxico."
+    },
+    "correcta": "a",
+    "explicacion": "En esta presentación se revisará las consideraciones específicas del tratamiento psicofarmacológico en el adulto mayor.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_076",
+    "materia": ["psiquiatria", "otras"],
+    "submateria": ["Otras preguntas de psiquiatría", "Fármacos"],
+    "enunciado": "Una benzodiazepina que tiene duración de acción prolongada con vida media mayor de 24 horas es:",
+    "opciones": {
+      "a": "La zopiclona",
+      "b": "El midazolam",
+      "c": "El diazepam",
+      "d": "El triazolam"
+    },
+    "correcta": "c",
+    "explicacion": "En esta clase se revisará la farmacología de las **benzodiacepinas** e inductores del sueño.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_077",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos psicóticos"],
+    "enunciado": "Entre los fármacos antipsicóticos, la realización de hemogramas seriados es exigida en el protocolo terapéutico cuando se utiliza:",
+    "opciones": {
+      "a": "Clozapina.",
+      "b": "Haloperidol.",
+      "c": "Trifluperazina.",
+      "d": "Clorpromazina."
+    },
+    "correcta": "a",
+    "explicacion": "En esta presentación se describen las generalidades de los antipsicóticos y las particularidades más tomadas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_078",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "Una mujer de 40 años acude a la consulta presentando síntomas de irritabilidad, dificultad para dormir, sensación de cansancio casi constante, preocupación excesiva desencadenada por situaciones insignificantes de su vida cotidiana, problemas de memoria y ansiedad. El examen físico es normal y no tiene antecedente de patología psiquiátrica. De acuerdo al cuadro descripto, ¿Cuál es el diagnóstico y estrategia terapéutica más adecuada?. (ISRS = inhibidores selectivos recaptación de serotonina)",
+    "opciones": {
+      "a": "Trastorno depresivo. Se indicará antidepresivos ISRS, benzodiacepinas y psicoterapia",
+      "b": "Trastorno de ansiedad generalizada. Se indicará antidepresivos ISRS, benzodiacepinas y psicoterapia",
+      "c": "Fobia social. Se indicará antidepresivos tricíclicos y benzodiacepinas",
+      "d": "Trastorno por estrés. Se indicará benzodiazepinas e intervención psicoterapéutica temprana"
+    },
+    "correcta": "b",
+    "explicacion": "En esta clase se estudiará los aspectos más evaluados sobre el **trastorno de ansiedad generalizada**, ansiedad social y trastornos por estrés.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_079",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "Un joven de 22 años es llevado a la guardia. Sus padres informan que desde hace varios meses se ha ido aislando de su entorno social, y hace unas semanas tuvo un enfrentamiento en su trabajo. En la entrevista se muestra poco colaborador pero orientado en tiempo y espacio. Durante el interrogatorio confiesa que sus compañeros están conspirando con su jefe para expulsarlo de su puesto laboral. No se infiere riesgo inminente para sí o para terceros. Antecedentes de importancia: los padres refieren que de chico era solitario, y su rendimiento escolar fue bajo. Tuvo algunas novias con las que se peleaba por celos. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Trastorno Bipolar. Interconsulta con psiquiatra de guardia para iniciar tratamiento",
+      "b": "Trastorno de personalidad paranoide. Derivación a psiquiatría para seguimiento por consultorios externos.",
+      "c": "Esquizofrenia paranoide. Interconsulta con psiquiatra de guardia para iniciar tratamiento",
+      "d": "Trastorno delirante de tipo persecutorio. Derivación a psiquiatría para seguimiento por consultorios externos"
+    },
+    "correcta": "b",
+    "explicacion": "En esta oportunidad se presentará una introducción a los trastornos de personalidad con profundización en el **trastorno paranoide de personalidad** por ser uno de los más evaluados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_080",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "Un paciente de 41 años sin antecedentes psiquiátricos, casado con 3 hijos, empresario, concurre a la consulta quejándose de padecer desde hace 3 meses insomnio todas las noches. Refiere falta de interés en su trabajo y en la gente y poco deseo sexual. Presenta un aumento de peso del 15% y expresa algunas ideas de sin sentido de la vida, aunque sin plan suicida. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Desorden esquizoafectivo.",
+      "b": "Episodio depresivo mayor.",
+      "c": "Esquizofrenia tipo residual.",
+      "d": "Trastorno bipolar tipo II."
+    },
+    "correcta": "b",
+    "explicacion": "En esta clase se profundizará en **depresión mayor** por ser el temas más preguntado de psiquiatría y los diagnósticos diferenciales con trastorno esquizoafectivo y esquizofrenia residual.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_081",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos del estado de ánimo"],
+    "enunciado": "Una paciente de 54 años es traída a la consulta por su marido, quien nos refiere que hace un mes ha comenzado a hablar incesantemente perdiendo a veces la idea directriz. Duerme 4 horas en total al día, muestra una intolerancia importante a las críticas y tiene conductas de riesgo físico que antes no tenía. Usted hace salir al marido y ella le manifiesta no haberse sentido mejor en su vida y que piensa en separarse de él. Planea construir una casa de fin de semana en un terreno aunque no posee el dinero suficiente para esto, ni los medios para procurárselo. Su examen clínico es normal y no consume sustancias estimulantes. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Trastorno de ansiedad generalizada.",
+      "b": "Trastorno histriónico de la personalidad.",
+      "c": "Esquizofrenia tipo desorganizado.",
+      "d": "Episodio maníaco."
+    },
+    "correcta": "d",
+    "explicacion": "En esta presentación se revisará el diagnóstico de **Trastorno Bipolar** y los criterios para identificar **episodios maníacos e hipomaníacos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_082",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos psicóticos"],
+    "enunciado": "Un joven de 21 años es traído a la guardia por su madre, quien refiere que desde hace un mes no quiere salir de su casa y permanece insomne en su habitación con las persianas bajas. En la entrevista se muestra poco comunicativo pero orientado témporo-espacialmente. Confiesa que lo persigue una organización de la cual prefiere no hablar, pero que está relacionada con los servicios de inteligencia de varios países. No está en riesgo su vida ni pone en riesgo la de otras personas. Como antecedentes de importancia, la familia dice que abandonó los estudios en el último año de colegio secundario sin causa aparente y que en aquella ocasión también se recluyó varias semanas en su habitación. Nunca tuvo pareja y no trabajó más de una semana en 2 ocasiones. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Paranoia. Interconsultar con psiquiatra de guardia para iniciar tratamiento.",
+      "b": "Episodio depresivo mayor. Derivación a psiquiatría para seguimiento por consultorios externos",
+      "c": "Esquizofrenia paranoide. Interconsultar con psiquiatra de guardia para iniciar tratamiento",
+      "d": "Trastorno obsesivo compulsivo. Derivación a psiquiatría para seguimiento por consultorios externos"
+    },
+    "correcta": "c",
+    "explicacion": "En esta clase se abordará la presentación clínica y claves para el diagnóstico de la **Esquizofrenia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_083",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "¿Cuál fue el cambio fundamental realizado del DSM IV al V con respecto a la Agorafobia?",
+    "opciones": {
+      "a": "La agorafobia es contemplada dentro de los trastornos del espectro obsesivo-compulsivo en el DSM-V",
+      "b": "La agorafobia fue eliminada como trastorno independiente",
+      "c": "El diagnóstico de agorafobia es independiente de la presencia de un trastorno de pánico en el DSM-V",
+      "d": "La agorafobia se comprende dentro del espectro esquizofrénico y de otros trastornos psicóticos en el DSM-V"
+    },
+    "correcta": "c",
+    "explicacion": "En este video recordamos las diferencias entre la clasificación de la **agorafobia** entre el DSM V y su versión anterior.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_084",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Marcos de 32 años refiere que el último fin de semana consumió 3 latas de cerveza y 3 vasos de vino. Menciona que solo consume esa cantidad en situaciones sociales, con una frecuencia aproximada de una vez al mes. Según la \"Guía de Pautas y Herramientas para la Atención Integral Frente al Consumo Excesivo de Sustancias\". ¿Cómo clasificaría el consumo de alcohol del paciente?",
+    "opciones": {
+      "a": "Consumo episódico excesivo de alcohol",
+      "b": "Consumo sin riesgo",
+      "c": "Consumo dependencia",
+      "d": "Consumo social"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta repasamos los criterios de **consumo episódico excesivo de alcohol**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_085",
+    "materia": ["psiquiatria", "toxicologia"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología"],
+    "enunciado": "Franco de 28 años refiere que consume diariamente una botella de vino, alcanzando en algunas ocasiones hasta 3 botellas en un mismo día. Al preguntarle sobre sus actividades refiere que no pudo terminar el colegio secundario y que hace 2 meses perdió su empleo por reiteradas inasistencias luego de episodios de consumo de alcohol. Según la \"Guía de Pautas y Herramientas para la Atención Integral Frente al Consumo Excesivo de Sustancias\". ¿Qué tipo de intervenciones serían las mas adecuadas para este paciente?",
+    "opciones": {
+      "a": "Consejería",
+      "b": "Consejería y psicoterapia",
+      "c": "Consejería, psicoterapia, consulta psiquiátrica y grupos de alcoholismo",
+      "d": "Internación prolongada en hospital monovalente"
+    },
+    "correcta": "c",
+    "explicacion": "En este video clasificamos las distintas intervenciones posibles frente al **consumo de alcohol** según su gravedad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_086",
+    "materia": ["psiquiatria", "toxicologia", "urgencias"],
+    "submateria": ["Trastornos relacionados con sustancias", "Toxicología", "Otras preguntas de urgencias"],
+    "enunciado": "Es traído a la guardia un paciente masculino, joven adulto, con tendencia a la desinhibición, eufórico, con rubicundez facial e inyección conjuntival. Durante el examen físico se torna irritable y agresivo, con marcada ataxia e inestabilidad en la marcha. Luego de este episodio el paciente cae súbitamente y exhibe convulsiones tónico-clónicas. Según la \"Guía de Pautas y Herramientas para la Atención Integral Frente al Consumo Excesivo de Sustancias\". ¿Cuál sería el diagnóstico presuntivo de este paciente?",
+    "opciones": {
+      "a": "Intoxicación alcohólica leve",
+      "b": "Intoxicación alcohólica grave",
+      "c": "Intoxicación por cannabis",
+      "d": "Síndrome de abstinencia alcohólica"
+    },
+    "correcta": "b",
+    "explicacion": "En este video recordamos las intervenciones de urgencia frente a pacientes con **intoxicación alcoholica** según gravedad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "psiquiatria_001_087",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "¿Cuál de los siguientes trastornos no se encuentra codificado en la última versión del DSM (DSM-V)?",
+    "opciones": {
+      "a": "Trastorno de estrés postraumático",
+      "b": "Trastorno de pánico",
+      "c": "Anorexia nerviosa",
+      "d": "Hipocondría"
+    },
+    "correcta": "d",
+    "explicacion": "En esta pregunta historizamos sobre el concepto de **hipocondría** y las clasificaciónes modernas de trastornos de síntomas somáticos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
   }
 ]
