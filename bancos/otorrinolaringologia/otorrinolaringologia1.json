@@ -435,5 +435,109 @@
     "anio": null,
     "oficial": false,
     "Fuente": "Prorem"
+  },
+  {
+    "id": "otorrino_001_024",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Oído",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Lo consultan por Manuel, de 6 años, quien comenzó hace 48 horas con dolor intenso en el oído derecho, que aumenta al tocarse la oreja. Previamente presentó prurito y ahora se agregó secreción blanquecina. Además de la indicación de ibuprofeno por vía oral como analgésico, ¿cuál es el tratamiento más adecuado en primera instancia?",
+    "opciones": {
+      "a": "Amoxicilina por vía oral durante 10 días",
+      "b": "Gotas óticas de antibiótico y corticoides",
+      "c": "Aplicación tópica de nistatina",
+      "d": "Cefalexina por vía oral durante 10 días"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "otorrino_001_025",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Patología infecciosa infantil",
+      "TRS"
+    ],
+    "enunciado": "Un niño de 12 meses presenta fiebre e irritabilidad. El examen otoscópico muestra tímpano bombé, despulido y contenido amarillento dentro de la cavidad. ¿Cuál es el esquema antibiótico adecuado?",
+    "opciones": {
+      "a": "Amoxicilina 80 mg/kg/dia vía oral cada 12 horas",
+      "b": "Amoxicilina 40 mg/kg/dia vía oral cada 12 horas",
+      "c": "Amoxicilina y ácido clavulánico 40 mg/kg/dia vía oral cada 12 horas",
+      "d": "Azitromicina 10 mg/kg/dia vía oral cada 24 horas"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "otorrino_001_026",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Faringe",
+      "Patología infecciosa infantil",
+      "TRS"
+    ],
+    "enunciado": "Un niño de 7 años tiene confirmación por test rápido de faringitis por estreptococo beta-hemolítico del Grupo A. Ha iniciado tratamiento con penicilina y refiere mejoría clínica. ¿Cuál es el período mínimo que debe pasar, desde el inicio del tratamiento, para que pueda regresar a la escuela?",
+    "opciones": {
+      "a": "24 horas",
+      "b": "48 horas",
+      "c": "72 horas",
+      "d": "Cuando un nuevo test rápido sea negativo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "otorrino_001_027",
+    "materia": [
+      "otorrinolaringologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Laringe",
+      "Patología del aparato respiratorio"
+    ],
+    "enunciado": "Un paciente de 2 meses de vida, varón, presenta desde el nacimiento estridor inspiratorio que empeora al acostarlo. No le causa alteraciones en la alimentación y el resto del examen físico es normal. ¿Cuál es el diagnóstico MÁS probable?",
+    "opciones": {
+      "a": "Traqueomalacia",
+      "b": "Angioma subglótico",
+      "c": "Hipertrofia adenoidea severa",
+      "d": "Laringomalacia"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
   }
 ]
