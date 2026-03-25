@@ -1,1 +1,667 @@
-[]
+[
+  {
+    "id": "toxico_001_001",
+    "materia": ["toxicologia", "pediatria", "infectologia"],
+    "submateria": ["Toxicología", "Patología infecciosa infantil", "HIV"],
+    "enunciado": "¿Cuál de los siguientes es el efecto tóxico más frecuente en un niño HIV positivo que recibe zidovudina?",
+    "opciones": {
+      "a": "Intolerancia gastrointestinal",
+      "b": "Exantema",
+      "c": "Anemia",
+      "d": "Aumento de las transaminasas"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_002",
+    "materia": ["toxicologia", "urgencias"],
+    "submateria": ["Toxicología", "Otras preguntas de urgencias"],
+    "enunciado": En un paciente en coma, con sospecha de intoxicación con benzodiazepinas ¿Cuál de las siguientes sustancias usaría como antídoto?",
+    "opciones": {
+      "a": "Flumazenil",
+      "b": "Clorpromazina",
+      "c": "Naloxona",
+      "d": "Anticolinérgicos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_003",
+    "materia": ["toxicologia", "psiquiatria"],
+    "submateria": ["Toxicología", "Trastornos del estado de ánimo"],
+    "enunciado": "Un paciente de 22 años con antecedentes de enfermedad bipolar ingresa a guardia con deterioro del sensorio, vómitos, inestabilidad hemodinámica, hipertermia y rigidez. ¿Qué síndrome presenta y que sustancia puede estar involucrada?",
+    "opciones": {
+      "a": "Síndrome anticolinérgico secundario a intoxicación por biperideno",
+      "b": "Síndrome neuroléptico maligno secundario a intoxicación por litio",
+      "c": "Síndrome sedativo hipnótico secundario a intoxicación por benzodiacepinas",
+      "d": "Síndrome simpaticomimético secundario a intoxicación por cocaína"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_004",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un niño de 3 años que es traído a la guardia porque ingirió paracetamol a escondidas de su madre, hace alrededor de 4 horas. Usted realiza el cálculo de dosis ingerida que resulta de 150 mg/kg. Realiza la determinación del nivel plasmático del fármaco y encuentra valores tóxicos teniendo en cuenta el nomograma habitualmente utilizado. ¿Cuál es la droga adecuada para contrarrestar sus efectos tóxicos?",
+    "opciones": {
+      "a": "N-acetilcisteína",
+      "b": "Bicarbonato disódico",
+      "c": "Atropina",
+      "d": "Glucagón"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_005",
+    "materia": ["toxicologia", "gastroenterologia"],
+    "submateria": ["Toxicología", "Hígado"],
+    "enunciado": "Una paciente de 18 años, sin antecedentes patológicos previos, es traída a la consulta por deterioro del sensorio, ictericia y coluria de 24 horas de evolución. La madre, que la acompaña, refiere que hace 4 días, la paciente intentó suicidarse ingiriendo 40 comprimidos de paracetamol de 500 mg y adjunta epicrisis de otro centro asistencial que informa que durante las 24 horas en que estuvo internada, se le realizó lavaje de estómago, expansión con cristaloides, exámenes de laboratorio que resultaron dentro de límites normales e interconsulta con psiquiatría y luego fue dada de alta. Al ingreso, en el examen físico la paciente presenta signos de encefalopatía, ictericia, y trastornos hemorragíparos. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Insuficiencia hepática inducida por agentes tóxicos, estabilización inicial, interconsulta con toxicología y se comunica con centro de trasplante hepático",
+      "b": "Hepatitis inducida por agentes tóxicos, estabilización inicial, plasmaféresis",
+      "c": "Hepatitis inducida por agentes tóxicos, administración de n-acetilcisteína y plan de alimentación enteral y parenteral",
+      "d": "Insuficiencia hepática inducida por agentes tóxicos, estabilización inicial, interconsulta con toxicología y plan de diálisis"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_006",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un niño de 1 año, es traído a la guardia del hospital por ingesta accidental de ibuprofeno. El paciente, cuyo peso es de 10 kg, tomó 30 minutos previos a la consulta el contenido entero de un frasco de 90 ml de ibuprofeno al 4%. Presenta examen físico normal y se encuentra en buen estado general. ¿Cuál es la indicación más adecuada en este caso?:",
+    "opciones": {
+      "a": "Jarabe de ipecacuana",
+      "b": "Carbón activado",
+      "c": "N-acetil cisteína",
+      "d": "Hiperhidratación y furosemida"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_007",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Martín de 4 años es llevado a la guardia por presentar somnolencia, miosis, confusión y vómitos. La madre trae un jarabe que había utilizado para la tos, que sospecha que el niño ingirió cuando estaba jugando. Usted presume un cuadro de intoxicación. Después de realizar las medidas descontaminantes, ¿cuál es el tratamiento específico de acuerdo al fármaco más probablemente involucrado?",
+    "opciones": {
+      "a": "Biperideno IM",
+      "b": "Naloxona EV",
+      "c": "Atropina IM",
+      "d": "Flumazenil EV"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_008",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 19 años ingresa a la sala de emergencias, acompañado de sus padres, y refiere haber ingerido alcohol en un local bailable varias horas antes pero no recuerda si usó alguna otra sustancia. En el examen físico presenta euforia, inquietud y agitación acompañada de alucinaciones, TA: 125/80 mmHg, taquicardia y midriasis. ¿Qué sustancia probablemente haya ingerido?",
+    "opciones": {
+      "a": "Clonazepam",
+      "b": "Éxtasis",
+      "c": "Gamahidroxibutirato",
+      "d": "Popper"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_009",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 50 años ingresa a guardia con un cuadro de alucinaciones, excitación psicomotriz, aumento de la libido y clonus ocular espontáneo. En el examen físico presenta frecuencia cardiaca de 140 latidos por minuto y presión arterial sistólica de 160 mm Hg. En los exámenes de laboratorio se observa aumento de los valores de CPK por 8 veces su valor normal. ¿Qué sustancia de abuso puede haber consumido?",
+    "opciones": {
+      "a": "Cocaína",
+      "b": "Ácido lisérgico (LSD)",
+      "c": "Pegamentos",
+      "d": "Éxtasis"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_010",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Concurre a la consulta de guardia del hospital un joven de 17 años acompañado por sus padres quienes relatan que su hijo probablemente esté bajo los efectos de alguna sustancia aunque éste lo niega. Al examen físico se destaca la presencia de hiperemia conjuntival y taquicardia (FC de 110 por minuto). De haberse producido efectivamente el consumo de alguna sustancia, ¿cuál es la más probable?",
+    "opciones": {
+      "a": "Ketamina",
+      "b": "Marihuana",
+      "c": "Clonazepam",
+      "d": "Cocaína"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_011",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 35 años ingresa a la guardia acompañado por un familiar con un cuadro de aumento universal de las secreciones, miosis puntiforme y bradicardia. El familiar refiere que estuvo realizando tareas de jardinería hasta unos momentos antes de comenzar con las náuseas y vómitos que motivaron la consulta. ¿Cuál es la etiología más probable de esta intoxicación aguda?",
+    "opciones": {
+      "a": "Organofosforados",
+      "b": "Organoclorados",
+      "c": "Paraquat",
+      "d": "Arsénico"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_012",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 22 años concurre a la guardia de un hospital acompañado de un familiar, por presentar un cuadro de alteración del sensorio y excitación. Presenta las mucosas secas, la piel roja y caliente, midriasis y globo vesical. ¿A qué síndrome corresponde este cuadro clínico?",
+    "opciones": {
+      "a": "Simpaticomimético",
+      "b": "Colinérgico",
+      "c": "Anticolinérgico",
+      "d": "Serotoninérgico"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_013",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un paciente de 3 años es llevado a la guardia por un cuadro de náuseas, vómitos, diarrea y depresión del SNC. Tiene polipnea, alteraciones visuales con edema de papila, midriasis paralítica, acidosis con anion restante aumentado y disminución del bicarbonato, e hipoglucemia. ¿Cuál es el tratamiento más adecuado para este paciente?",
+    "opciones": {
+      "a": "Descontaminación digestiva, reponer bicarbonato y etilterapia",
+      "b": "Descontaminación digestiva más corticoides",
+      "c": "Descontaminación digestiva más vitamina C y azul de metileno",
+      "d": "Descontaminación digestiva más carbón activado y purgante"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_014",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un niño de 3 años, es llevado a la guardia por depresión del sensorio. La madre le comenta que esa tarde encontró al niño jugando con una botella de líquido anticongelante que contenía etilenglicol. En los estudios complementarios realizados se diagnostica una acidosis metabólica con anión gap aumentado. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Etanol",
+      "b": "Carbón activado y purgante salino",
+      "c": "Dimercaprol",
+      "d": "Vitamina C"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_015",
+    "materia": ["toxicologia", "urgencias"],
+    "submateria": ["Toxicología", "Otras preguntas de urgencias"],
+    "enunciado": "Un paciente de 16 años de edad es traído por la ambulancia desde su domicilio por intento de suicidio. Según refiere el médico que lo asiste inicialmente, el paciente fue hallado con deterioro del sensorio, en una habitación de 10 metros cuadrados, sin ventilación y con las hornallas de la cocina abiertas, liberando gas. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Control clínico evolutivo",
+      "b": "Indicar tratamiento con cámara hiperbárica",
+      "c": "Administrar oxigenoterapia",
+      "d": "Administración inhalatoria de nitrito de amilo"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_016",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Una paciente de 50 años ingresa a guardia luego de haber ingerido 12000 mg de carbamazepina 3 horas antes. En el examen físico se encuentra lúcida con leve tendencia al sueño, disártrica, con pupilas midriáticas reactivas y nistagmus, frecuencia cardíaca de 98 latidos por minuto y presión arterial de 120/70 mm Hg. ¿Cuál es la maniobra de decontaminación de elección?",
+    "opciones": {
+      "a": "Lavado gástrico y carbón activado seriado",
+      "b": "Lavado gástrico y carbón activado en única dosis",
+      "c": "Lavado gástrico",
+      "d": "Carbón activado seriado"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_017",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 56 años con antecedentes de alcoholismo ingresa a guardia por deterioro del sensorio, visión borrosa, disartria y ataxia. En el laboratorio se observa un patrón de acidosis metabólica con anión GAP aumentado persistente que no corrige con el tratamiento. ¿Qué estudios deben solicitarse y cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Dosaje de etanol y tratamiento con tiamina",
+      "b": "Dosaje de metanol y tratamiento con etilterapia",
+      "c": "Dosaje de metanol y tratamiento con tiamina",
+      "d": "Dosaje de etilenglicol y tratamiento con etilterapia"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_018",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un varón de 35 años ingresa a la guardia con un cuadro de miosis puntiforme, aumento universal de las secreciones y bradicardia. Un familiar refiere que estuvo realizando tareas de jardinería, hasta unos momentos antes de comenzar con náuseas y vómitos, los que motivaron la consulta. ¿Cuál es la etiología más probable de esta intoxicación aguda?",
+    "opciones": {
+      "a": "Organofosforados",
+      "b": "Dicumarínicos",
+      "c": "Organoclorados",
+      "d": "Talio"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_019",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un niño de 4 años es traído a la guardia por presentar somnolencia, miosis, confusión y vómitos. La madre trae un jarabe que había utilizado para la tos y sospecha que el niño lo ingirió cuando estaba jugando. Ante la sospecha de intoxicación con la droga que suelen contener este tipo de jarabes, ¿cuál es el tratamiento específico después de realizar las medidas descontaminantes?:",
+    "opciones": {
+      "a": "Biperideno vía IM",
+      "b": "Naloxona vía EV",
+      "c": "Atropina vía IM",
+      "d": "Flumazenil vía EV"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_020",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Matías, de 18 meses, llega a la guardia con un cuadro de gastroenteritis aguda. La madre comenzó a hacerle tratamiento casero dándole un té cada 3 horas. En el momento de la consulta se lo ve excitado, con llanto persistente, irritación digestiva y respiratoria. ¿En cuál de las medicaciones caseras se debe pensar?",
+    "opciones": {
+      "a": "Borraja",
+      "b": "Payco",
+      "c": "Menta",
+      "d": "Anís estrellado"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_021",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Un paciente de 48 años consulta a la guardia por presentar irritación ocular, parestesias, vómitos y mareos. Refiere haber dormido la noche anterior en una habitación que había sido fumigada previamente. ¿A qué sustancia estuvo expuesto?",
+    "opciones": {
+      "a": "Compuestos órgano fosforados",
+      "b": "Piretroides",
+      "c": "Carbamatos",
+      "d": "Compuestos bipiridilos"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_022",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "¿Cual es el antídoto de elección ante a una intoxicación por cianuro?",
+    "opciones": {
+      "a": "Oxigeno hiperbárico",
+      "b": "Vitamina C",
+      "c": "Azul de metileno",
+      "d": "Nitrito de amilo"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_023",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Un paciente de 18 meses es traído a la guardia por su madre que refiere que ingirió una cantidad desconocida de lavandina y luego presentó tres vómitos de contenido gástrico. El examen físico es normal. ¿Cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Lavado gástrico",
+      "b": "Carbón activado",
+      "c": "Líquidos fríos fraccionados y protector de la mucosa gástrica",
+      "d": "Conducta expectante"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_024",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "¿Cuál de los siguientes síndromes corresponde a la picadura de un escorpión Tityus trivittatus?",
+    "opciones": {
+      "a": "Neurotóxico",
+      "b": "Hemolítico",
+      "c": "Dermonecrótico",
+      "d": "Hemorragíparo"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_025",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "¿Cuál de las siguientes drogas produce arritmias, hipertermia y convulsiones?",
+    "opciones": {
+      "a": "Cocaína",
+      "b": "Marihuana",
+      "c": "Éxtasis",
+      "d": "Pegamentos"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_026",
+    "materia": ["toxicologia", "obstetricia"],
+    "submateria": ["Toxicología", "Complicaciones maternas en el embarazo"],
+    "enunciado": "Ingresa a la guardia una paciente embarazada de 26 semanas traída desde su domicilio por presentar episodio de desmayo y náuseas mientras se bañaba, aproximadamente 2 horas antes de la consulta. Al interrogatorio refiere tener el calefón dentro del baño sin tiraje y su pareja también se encuentra mareada y nauseosa. Se interpreta como intoxicación con monóxido de carbono y se realiza carboxihemoglobina que se informa de 8,6%. Ud., como el médico a cargo de la paciente, ¿qué tratamiento le indica?",
+    "opciones": {
+      "a": "Oxígeno al 100% con máscara Venturi por 12 horas",
+      "b": "Internación en obstetricia y monitoreo fetal",
+      "c": "Sedoanalgesia e intubación orotraqueal según protocolo",
+      "d": "Tratamiento en cámara hiperbárica"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_027",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "¿Cuál es el fundamento farmacodinámico de la etilterapia en la intoxicación por alcoholes tóxicos?",
+    "opciones": {
+      "a": "Modulación alostérica de la enzima alcohol deshidrogenasa",
+      "b": "Inhibición competitiva de la enzima alcohol deshidrogenasa",
+      "c": "Inducción del sistema microsomal hepático",
+      "d": "Estimulación de la enzima alcohol deshidrogenasa"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_028",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Usted se encuentra de guardia en un hospital del GCABA al cual ingresa un paciente de 2 años de edad que según refiere su madre fue picado por un \"bicho\" en el pie izquierdo. Por los datos recabados del interrogatorio usted sospecha que se trata de una picadura por escorpión del género Tityus. ¿Qué manifestaciones clínicas esperaría encontrar?",
+    "opciones": {
+      "a": "Cuadro local con dolor, eritema y tetania",
+      "b": "Ninguna manifestación clínica ya que las especies que se encuentran en dicha región geográfica no producen cuadros de envenenamiento",
+      "c": "Miosis, broncorrea, parálisis muscular progresiva descendente",
+      "d": "Cuadro local con dolor, eritema, parestesias y manifestaciones sistémicas con cuadro neurotóxico de intensidad variable"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_029",
+    "materia": ["toxicologia", "pediatria", "gastroenterologia"],
+    "submateria": ["Toxicología", "Intoxicaciones", "Intestino delgado"],
+    "enunciado": "Un lactante de 8 meses de edad comienza con dolores abdominales tipo cólico y vómitos. La madre lo lleva a una curandera que lo cura del \"empacho\" y le indica una infusión, de la cual la madre le da 100cc 4 veces en un día. Desmejora y tiene deposiciones líquidas con sangre, y luego dolor abdominal intenso que se manifiesta con llanto intenso. En la Rx de abdomen, además de niveles líquidos se observa una imagen en intestino compatible con invaginación intestinal. Teniendo en cuenta los síntomas y los antecedentes, ¿que xenobiótico podría ser el responsable de dicho cuadro clínico?",
+    "opciones": {
+      "a": "Yerba de pollo",
+      "b": "Payco",
+      "c": "Poleo riojano/burrito",
+      "d": "Manzanilla"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_030",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Concurre a la consulta un niño de 14 meses luego de 1/2 hora de haber ingerido una cantidad no determinada de kerosene que se encontraba en una botella de gaseosa. Se encuentra lúcido, afebril, con ligera tos irritativa, con olor a hidrocarburo en la ropa. Los padres intentaron provocarle el vómito sin éxito. ¿Cuál es su conducta inicial?",
+    "opciones": {
+      "a": "Le administra jarabe de Ipeca 10 ml",
+      "b": "Le coloca una sonda nasogástrica y aspira el contenido gástrico",
+      "c": "Le realiza lavado gástrico y le administra carbón activado",
+      "d": "Le quita las ropas y le realiza un baño de arrastre"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_031",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "Una niña de 2 años ingresa a la guardia con un cuadro de hipotonía, mioclonías, broncorrea, bradicardia y miosis. Estaba jugando en el patio de su casa con un frasco de contenido desconocido y la madre decidió consultar cuando notó que su hija presentaba marcha tambaleante y sialorrea. ¿Cuál es el agente tóxico etiológico más probable?",
+    "opciones": {
+      "a": "Paracetamol",
+      "b": "Insecticida organofosforado",
+      "c": "Piretroides",
+      "d": "Codeína"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_032",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Mujer de 35 años que ingresa a la guardia traída por familiar luego de haber ingerido 4000 mg de isoniacida con fines autolíticos hace aproximadamente 1 hora. El familiar refiere que la paciente presentó náuseas, vómitos y dificultad en el habla. Al ingreso se constata paciente con deterioro del sensorio, responde al llamado. En el laboratorio se observa acidosis láctica. Luego del ABC inicial ¿Cuál es la medida apropiada?",
+    "opciones": {
+      "a": "Vómito inducido por ipecacuana",
+      "b": "Lavado gástrico",
+      "c": "Administración de carbón activado",
+      "d": "Acidificación de la orina para facilitar la eliminación"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_033",
+    "materia": ["toxicologia"],
+    "submateria": ["Toxicología"],
+    "enunciado": "Una mujer de 45 años ingresa al servicio de emergencias por haber consumido antidepresivos tricíclicos con fines autolíticos hace aproximadamente 4 horas. Ingresa hipotensa, con deterioro del sensorio y convulsiones. El ECG muestra prolongación del QRS. Se procede a realizar intubación orotraqueal, se realiza expansión con cristaloides y se administran benzodiacepinas para controlar las convulsiones con buena respuesta ¿Qué otra medida debe adoptarse?",
+    "opciones": {
+      "a": "Carga con fenitoína para manejo de las convulsiones a largo plazo",
+      "b": "Administración de bicarbonato de sodio hasta lograr pH de 7.45 a 7.50",
+      "c": "Indicación de lavado gástrico",
+      "d": "Administración de fisostigmina como agente anticolinérgico"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_034",
+    "materia": ["toxicologia", "psiquiatria"],
+    "submateria": ["Toxicología", "Trastornos relacionados con sustancias"],
+    "enunciado": "Un paciente de 38 años ingresa a la guardia trasladado por ambulancia de emergencias. No se encuentra acompañado por familiares o allegados y no está en condiciones de responder al interrogatorio. Presenta malas condiciones de higiene personal, FC de 120 lpm, TA de 180/110 mm de Hg con herida contuso cortante en región frontal. Espontáneamente relata la visión de insectos a su alrededor. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Intoxicación alcohólica aguda",
+      "b": "Abstinencia a cocaína",
+      "c": "Intoxicación aguda por cocaína",
+      "d": "Abstinencia alcohólica"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "toxico_001_035",
+    "materia": ["toxicologia", "pediatria"],
+    "submateria": ["Toxicología", "Intoxicaciones"],
+    "enunciado": "¿Qué conducta adoptaría con un niño de 4 años que es traído a la consulta en época invernal por haber presentado en su domicilio un episodio sincopal precedido de 4-5 horas de cefalea? Usted sospecha intoxicación por monóxido de carbono.",
+    "opciones": {
+      "a": "Indicar oxígeno suplementario",
+      "b": "Indicar tratamiento con oxigeno hiperbárico",
+      "c": "Solicitar carboxihemoglobina",
+      "d": "Solicitar tomografía axial computada de cerebro"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  }
+]
