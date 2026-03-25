@@ -595,5 +595,347 @@
   "anio": null,
   "oficial": false,
   "Fuente": "prorem"
-}
+},
+  {
+    "id": "traumato_001_025",
+    "materia": ["traumatologia", "reumatologia"],
+    "submateria": ["Otras preguntas de traumatología", "Metabólica ósea"],
+    "enunciado": "¿Cuáles de las siguientes condiciones y entidades se consideran factores de riesgo para el desarrollo de osteoporosis?",
+    "opciones": {
+      "a": "Embarazos múltiples, antecedentes de fracturas, obesidad, hipercolesterolemia",
+      "b": "Delgadez, tabaquismo, sedentarismo/inmovilidad prolongada, hiperprolactinemia",
+      "c": "Diabetes mellitus, tratamiento prolongado con salicilatos, tabaquismo, falta de exposición solar",
+      "d": "Menarca tardía, tabaquismo, obesidad, hipertiroidismo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_026",
+    "materia": ["traumatologia", "reumatologia", "imagenes"],
+    "submateria": ["Columna vertebral", "Metabólica ósea", "Radiografía"],
+    "enunciado": "Una paciente de 65 años consulta por dolor lumbar de 4 meses de evolución. De la anamnesis surgen como antecedentes tabaquismo de 20 cigarrillos/día y fractura de muñeca un año atrás. El examen físico es normal y su índice de masa corporal es de 22. De acuerdo al diagnóstico presuntivo ¿Cuál de los siguientes estudios deben solicitarse en primera instancia?",
+    "opciones": {
+      "a": "Radiografía de tórax y determinación de calcemia",
+      "b": "Radiografía de columna lumbar frente y perfil y estudio de la densidad mineral ósea (DMO)",
+      "c": "Centellograma óseo corporal total y determinación en sangre de marcadores tumorales",
+      "d": "Tomografía axial computada de columna sin contraste y determinación de hidroxiprolina urinaria"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_027",
+    "materia": ["traumatologia", "pediatria"],
+    "submateria": ["Miembro inferior", "Otras preguntas de pediatría"],
+    "enunciado": "Un niño de 4 años previamente sano llega a la Guardia porque desde que se levantó presenta marcha claudicante y dolor en la rodilla derecha. No registra antecedentes significativos. En el examen se encuentra afebril y en buen estado general. Se detecta limitación de la movilidad activa y pasiva de la cadera derecha con dolor en la región inguinal y actitud en flexo-abducción de esa cadera. La radiografía no muestra lesión ósea. ¿Cuál es el diagnóstico más probable de este caso?",
+    "opciones": {
+      "a": "Deslizamiento de epífisis femoral proximal",
+      "b": "Artritis séptica de cadera",
+      "c": "Sinovitis transitoria de cadera",
+      "d": "Enfermedad de Legg-Calvé-Perthes"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_028",
+    "materia": ["traumatologia", "pediatria", "imagenes"],
+    "submateria": ["Miembro inferior", "Otras preguntas de pediatría", "Radiografía"],
+    "enunciado": "Un paciente de 13 años se presenta con dolor en región media de muslo derecho que se irradia a la rodilla de 3 semanas de evolución que aumenta ante el ejercicio. No refiere traumatismo previo ni otros datos destacables como fiebre, o pérdida de peso. Presenta peso en talla en percentilos 90 para edad. Al examen físico presenta limitación a la rotación interna de las caderas y camina con los pies rotados hacia afuera. ¿Qué incidencia radiológica aportaría más datos para el diagnóstico de este paciente?",
+    "opciones": {
+      "a": "Radiografía de rodilla frente y perfil",
+      "b": "Radiografía anteroposterior y lateral de pelvis en posición de rana",
+      "c": "Radiografía de columna lumbosacra",
+      "d": "Radiografía posterioanterior de pelvis con crestas ilíacas y columna lumbosacra"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_029",
+    "materia": ["traumatologia", "pediatria"],
+    "submateria": ["Miembro inferior", "Otras preguntas de pediatría"],
+    "enunciado": "En el control de salud de un lactante de 4 meses y medio se detecta una maniobra de Barlow positiva. Se solicita un estudio radiológico que corrobora el diagnóstico presuntivo. ¿Cuál es el tratamiento de elección frente a este caso?",
+    "opciones": {
+      "a": "Ortesis en flexión y abeducción",
+      "b": "Osteotomía pélvica",
+      "c": "Artrografía y yeso pelvipédico",
+      "d": "Reducción quirúrgica cerrada"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_030",
+    "materia": ["traumatologia", "reumatologia", "ginecologia"],
+    "submateria": ["Columna vertebral", "Metabólica ósea", "Climaterio y menopausia"],
+    "enunciado": "¿Cuál de las siguientes afirmaciones en relación a la osteoporosis postmenopausica es correcta?",
+    "opciones": {
+      "a": "En su desarrollo influye la menor producción de vitamina D",
+      "b": "Compromete sobre todo el hueso cortical",
+      "c": "Existe un recambio óseo reducido",
+      "d": "Afecta preferentemente la columna vertebral"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_031",
+    "materia": ["traumatologia", "urgencias"],
+    "submateria": ["Miembro superior", "Otras preguntas de urgencias"],
+    "enunciado": "La luxación de hombro es una urgencia que debe reducirse. Entre las maniobras más utilizadas se encuentra la de Kocher, que consta de 4 pasos. Al respecto, indique la secuencia correcta para su realización.",
+    "opciones": {
+      "a": "Tracción / Rotación Externa / Aducción / Rotación Interna.",
+      "b": "Aducción / Rotación Externa / Tracción / Rotación Interna.",
+      "c": "Rotación Externa / Tracción / Aducción / Rotación Interna.",
+      "d": "Rotación Interna / Tracción / Rotación Externa / Aducción."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_032",
+    "materia": ["traumatologia", "urgencias"],
+    "submateria": ["Miembro inferior", "Otras preguntas de urgencias"],
+    "enunciado": "En un Síndrome Compartimental de miembros inferiores, una de las siguientes causas se considera de origen externo:",
+    "opciones": {
+      "a": "Yeso demasiado apretado.",
+      "b": "Fracturas graves.",
+      "c": "Lesiones arteriales con vasoespasmo de colaterales.",
+      "d": "Ejercicios violentos."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_033",
+    "materia": ["traumatologia", "urgencias"],
+    "submateria": ["Otras preguntas de traumatología", "Paciente politraumatizado"],
+    "enunciado": "Frente a un paciente politraumatizado, la primera conducta que debe tomarse es:",
+    "opciones": {
+      "a": "Aplicación de torniquetes ante sangrado activo de miembros.",
+      "b": "Colocar férulas de tracción en caso de fracturas desalineadas.",
+      "c": "Colocación de accesos venosos con catéteres sobre agujas de grueso calibre.",
+      "d": "Permeabilizar la vía aérea con control de la columna cervical."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_034",
+    "materia": ["traumatologia", "neurologia"],
+    "submateria": ["Miembro superior", "SNP"],
+    "enunciado": "El nervio mediano inerva en la región tenar a los músculos:",
+    "opciones": {
+      "a": "Abductor corto, oponente y fascículo profundo del flexor corto del pulgar.",
+      "b": "Aductor, oponente y fascículo superficial del flexor corto del pulgar.",
+      "c": "Abductor corto, oponente y ambos fascículos del flexor corto del pulgar.",
+      "d": "Abductor corto, oponente y fascículo superficial del flexor corto del pulgar."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_035",
+    "materia": ["traumatologia", "pediatria", "urgencias"],
+    "submateria": ["Miembro superior", "Otras preguntas de pediatría", "Otras preguntas de urgencias"],
+    "enunciado": "Usted está de guardia y concurre un padre con su hija de dos años porque no puede movilizar su brazo derecho y lo mantiene en flexión con su antebrazo en pronación. El padre niega traumatismos y que lo único llamativo es que el episodio se produjo cuando al cruzar la calle lo hizo corriendo y tironeado de dicho brazo. Al examen físico presenta una leve flexión en codo derecho con pronación del antebrazo. No presenta inflamación ni puntos dolorosos. Señale cuál de los siguientes es el mejor tratamiento para esta niña",
+    "opciones": {
+      "a": "Colocación de una férula posterior.",
+      "b": "Reducción con presión de la cabeza del radio",
+      "c": "Tratamiento conservador",
+      "d": "Derivación al cirujano ortopédico"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_036",
+    "materia": ["traumatologia", "pediatria", "imagenes"],
+    "submateria": ["Miembro inferior", "Otras preguntas de pediatría", "Radiografía"],
+    "enunciado": "Consulta José de 16 años, quién juega al fútbol en un club del barrio, por dolor exquisito sobre la tuberosidad anterior de la tibia. Al examen físico presenta leve aumento de la tuberosidad. Sospechando Enfermedad de Osgood Schlatter, solicita radiografía ¿Qué hallazgo radiológico esperaría encontrar?",
+    "opciones": {
+      "a": "Radiografía normal.",
+      "b": "Fractura del platillo tibial anterior.",
+      "c": "Fractura rotuliana.",
+      "d": "Calcificación del tendón rotuliano."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_037",
+    "materia": ["traumatologia", "neurologia"],
+    "submateria": ["Fracturas", "SNP"],
+    "enunciado": "¿Cuál de los siguientes nervios se ve afectado con mayor frecuencia en las fracturas diafisarias de humero?",
+    "opciones": {
+      "a": "Nervio mediano.",
+      "b": "Nervio cubital.",
+      "c": "Nervio musculocutaneo.",
+      "d": "Nervio radial"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_038",
+    "materia": ["traumatologia"],
+    "submateria": ["Fracturas"],
+    "enunciado": "Al producirse una fractura intracapsular de cadera, ¿la lesión de cuál de las siguientes estructuras puede comprometer la viabilidad de la cabeza femoral?",
+    "opciones": {
+      "a": "Vasos retinaculares",
+      "b": "Vasos epifisarios.",
+      "c": "Arteria del ligamento redondo.",
+      "d": "Arteria circunfleja femoral lateral."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_039",
+    "materia": ["traumatologia", "reumatologia"],
+    "submateria": ["Miembro inferior", "Artrosis"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 65 años, obesa que consulta por presentar dolor de rodilla izquierda de varios meses de evolución a predominio vespertino? En el examen físico presenta deformidad articular, temperatura y piel del área normales, crepitación y leve hipotrofia del cuádriceps.",
+    "opciones": {
+      "a": "Osteoartritis.",
+      "b": "Artritis séptica.",
+      "c": "Artritis gotosa.",
+      "d": "Rotura de meniscos."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_040",
+    "materia": ["traumatologia", "pediatria"],
+    "submateria": ["Miembro inferior", "Otras preguntas de pediatría"],
+    "enunciado": "En un paciente con maniobras de Barlow y Ortolani positivas Ud. sospecha:",
+    "opciones": {
+      "a": "Epifisiolisis de cadera.",
+      "b": "Necrosis ósea avascular.",
+      "c": "Coxa vara.",
+      "d": "Displasia congénita de cadera."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_041",
+    "materia": ["traumatologia", "urgencias"],
+    "submateria": ["Otras preguntas de traumatología", "Paciente politraumatizado"],
+    "enunciado": "¿Cuál es la conducta más adecuada en un paciente de 50 años que mientras estaba trabajando en una obra sufrió una lesión de miembro inferior por aplastamiento de una viga? En el examen físico presenta gran hematoma e intenso dolor y usted diagnostica síndrome compartimental.",
+    "opciones": {
+      "a": "Adoptar conducta expectante y administrar analgésicos.",
+      "b": "Realizar fasciotomía de urgencia.",
+      "c": "Administrar manitol para reducir el edema.",
+      "d": "Realizar drenaje del hematoma y vendaje compresivo."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  },
+  {
+    "id": "traumato_001_042",
+    "materia": ["traumatologia", "neurologia"],
+    "submateria": ["Miembro inferior", "SNP"],
+    "enunciado": "¿De qué segmentos medulares se originan las raíces nerviosas motoras del nervio femoral?",
+    "opciones": {
+      "a": "L1, L2 Y L3.",
+      "b": "L2, L3 Y L4.",
+      "c": "L3, L4 Y S1.",
+      "d": "L4, S1 Y S2."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso resi"
+  }
 ]
