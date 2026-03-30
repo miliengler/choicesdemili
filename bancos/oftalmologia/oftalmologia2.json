@@ -2083,4 +2083,353 @@
     "oficial": false,
     "fuente": "inventadas"
   },
+  {
+    "id": "oftalmo_002_091",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "¿Cuál de las siguientes afirmaciones define mejor al glaucoma según el texto proporcionado?",
+    "opciones": {
+      "a": "Un aumento aislado de la presión intraocular por encima de 21 mm Hg.",
+      "b": "Una inflamación aguda de la malla trabecular que bloquea el drenaje acuoso.",
+      "c": "Una neuropatía óptica progresiva con pérdida de células ganglionares y alteración del campo visual.",
+      "d": "Una opacificación del cristalino que empuja el iris hacia adelante."
+    },
+    "correcta": "c",
+    "explicacion": "El glaucoma se define como una **neuropatía óptica progresiva**, en la que se produce una pérdida de las células ganglionares y fibras nerviosas de la retina con un aumento de la excavación papilar y alteración del campo visual.\nSi no hay daño del nervio óptico, no es glaucoma, tratándose únicamente de una hipertensión ocular aislada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_092",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "En la fisiología de la dinámica ocular, ¿dónde se produce el humor acuoso?",
+    "opciones": {
+      "a": "En el endotelio de la córnea.",
+      "b": "En la malla trabecular.",
+      "c": "En el canal de Schlemm.",
+      "d": "En el epitelio no pigmentado de los procesos ciliares."
+    },
+    "correcta": "d",
+    "explicacion": "El humor acuoso se produce en el **epitelio no pigmentado de los procesos ciliares**, luego drena a la cámara posterior y pasa a la cámara anterior a través de la pupila.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_093",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Paciente mujer de 62 años, hipermétrope, acude a urgencias por dolor ocular muy intenso asociado a náuseas y vómitos. Refiere haber visto \"halos luminosos\" previamente. A la exploración presenta ojo rojo y la pupila en midriasis media arreactiva. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Uveítis anterior aguda.",
+      "b": "Glaucoma de ángulo cerrado (agudo).",
+      "c": "Glaucoma neovascular.",
+      "d": "Queratitis herpética."
+    },
+    "correcta": "b",
+    "explicacion": "El cuadro típico de ataque **agudo de glaucoma** ocurre en mujeres mayores de 50 años, hipermétropes, y cursa con ojo rojo doloroso, síntomas vagales (náuseas/vómitos), visión de halos y una pupila en midriasis media arreactiva.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_094",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Ante el diagnóstico de un ataque agudo de glaucoma, ¿qué grupo de fármacos hipotensores tópicos está CONTRAINDICADO en el manejo médico inicial?",
+    "opciones": {
+      "a": "Betabloqueantes.",
+      "b": "Prostaglandinas.",
+      "c": "Inhibidores de la anhidrasa carbónica.",
+      "d": "Parasimpaticomiméticos (Pilocarpina)."
+    },
+    "correcta": "b",
+    "explicacion": "En el tratamiento del glaucoma agudo se utilizan hipotensores tópicos, exceptuando las **prostaglandinas**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_095",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Una vez resuelto farmacológicamente un episodio de glaucoma agudo, ¿cuál es el tratamiento profiláctico definitivo de elección para evitar nuevos bloqueos?",
+    "opciones": {
+      "a": "Trabeculectomía en el ojo afectado.",
+      "b": "Iridotomía con láser YAG en ambos ojos.",
+      "c": "Uso de pilocarpina tópica de por vida.",
+      "d": "Fotocoagulación panretiniana."
+    },
+    "correcta": "b",
+    "explicacion": "Una vez resuelto el episodio agudo, la situación predisponente debe resolverse mediante una **iridotomía con láser YAG**, la cual también se realiza en el ojo contralateral de forma profiláctica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_096",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un factor de riesgo reconocido para el desarrollo de glaucoma crónico simple o primario de ángulo abierto?",
+    "opciones": {
+      "a": "Hipermetropía.",
+      "b": "Miopía.",
+      "c": "Raza blanca.",
+      "d": "Edad menor de 40 años."
+    },
+    "correcta": "b",
+    "explicacion": "La **miopía** es un factor de riesgo para el glaucoma crónico simple, mientras que la hipermetropía predispone al glaucoma de ángulo cerrado.\nLa raza negra y la edad avanzada también son factores de riesgo del glaucoma crónico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_097",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "¿En qué momento de la evolución del glaucoma crónico simple (GPAA) el paciente suele notar una afectación de la agudeza visual central?",
+    "opciones": {
+      "a": "En las fases iniciales, con la aparición de escotomas paracentrales.",
+      "b": "Simultáneamente con el aumento de la presión intraocular.",
+      "c": "Solo en fases muy tardías, avanzadas y graves de la enfermedad.",
+      "d": "Tras un esfuerzo visual prolongado."
+    },
+    "correcta": "c",
+    "explicacion": "El glaucoma crónico simple es asintomático hasta **fases avanzadas** de la enfermedad, conservándose una buena agudeza visual central hasta los estadios finales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_098",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "En la evolución de la alteración campimétrica del glaucoma crónico, ¿cuál es la porción del campo visual que se pierde más tardíamente?",
+    "opciones": {
+      "a": "El área central (macular).",
+      "b": "El escalón nasal de Roenne.",
+      "c": "El escotoma de Bjerrum.",
+      "d": "El islote de visión temporal."
+    },
+    "correcta": "d",
+    "explicacion": "En estadios finales se produce una reducción concéntrica del campo visual y el **islote de visión temporal** es el que se pierde más tardíamente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_099",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Al medir la Presión Intraocular (PIO) mediante tonometría, ¿qué factor anatómico corneal puede dar valores artificialmente más altos de los reales?",
+    "opciones": {
+      "a": "Una disminución del recuento endotelial.",
+      "b": "Una mayor paquimetría (grosor corneal).",
+      "c": "La presencia de neovasos corneales.",
+      "d": "Un diámetro corneal reducido."
+    },
+    "correcta": "b",
+    "explicacion": "Se debe tener en cuenta que la medición de la PIO se relaciona con el grosor corneal o **paquimetría**; se obtienen valores más altos cuanto mayor es la paquimetría.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_100",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "¿Cuál es el grupo farmacológico considerado de primera elección para el tratamiento médico del glaucoma crónico simple por ser los más potentes y carecer de efectos secundarios sistémicos?",
+    "opciones": {
+      "a": "Betabloqueantes (Timolol).",
+      "b": "Análogos de prostaglandinas (Latanoprost).",
+      "c": "Agonistas adrenérgicos alfa-2 (Brimonidina).",
+      "d": "Inhibidores de la anhidrasa carbónica (Dorzolamida)."
+    },
+    "correcta": "b",
+    "explicacion": "Los **análogos de prostaglandinas** y prostamidas son el grupo de primera elección al ser los más potentes y no presentar efectos secundarios sistémicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_101",
+    "materia": [
+      "oftalmologia",
+      "neumonologia"
+    ],
+    "submateria": [
+      "Glaucoma",
+      "Asma"
+    ],
+    "enunciado": "Un paciente con glaucoma crónico simple requiere iniciar tratamiento con colirios hipotensores. Entre sus antecedentes personales destaca padecer asma bronquial severa. ¿Qué fármaco está CONTRAINDICADO en este paciente?",
+    "opciones": {
+      "a": "Betaxolol.",
+      "b": "Travoprost.",
+      "c": "Timolol.",
+      "d": "Latanoprost."
+    },
+    "correcta": "c",
+    "explicacion": "El **timolol** pertenece al grupo de los betabloqueantes tópicos.\nEstos pueden absorberse sistémicamente y están contraindicados en pacientes con broncoespasmo (como el asma o EPOC).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_102",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Existen dos teorías principales que explican la patogenia de la apoptosis de las células ganglionares en el glaucoma. ¿Qué postula la \"teoría isquémica\"?",
+    "opciones": {
+      "a": "Que el aumento de PIO comprime las venas epiesclerales.",
+      "b": "Que el daño se produce por un aplastamiento físico de las fibras nerviosas en la lámina cribosa.",
+      "c": "Que la alteración se debe a una afectación de la microvascularización, causando isquemia en el nervio óptico.",
+      "d": "Que se produce una trombosis de la vena central de la retina."
+    },
+    "correcta": "c",
+    "explicacion": "La patogenia del daño glaucomatoso se fundamenta en dos teorías: la teoría mecánica (daño directo en la lámina cribosa) y la **teoría isquémica**, que postula una afectación de la microvascularización con aparición de isquemia en el nervio óptico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_103",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Un paciente diabético mal controlado desarrolla neovascularización en el iris (rubeosis iridis) y en el ángulo iridocorneal, sufriendo un importante aumento de la PIO. ¿Cuál es el tratamiento principal dirigido a controlar la causa base de este glaucoma secundario?",
+    "opciones": {
+      "a": "Trabeculectomía de urgencia.",
+      "b": "Fotocoagulación o crioterapia retiniana.",
+      "c": "Corticoides sistémicos a altas dosis.",
+      "d": "Pilocarpina tópica frecuente."
+    },
+    "correcta": "b",
+    "explicacion": "Este cuadro corresponde a un glaucoma neovascular secundario a isquemia retiniana.\nSu tratamiento consiste en la **fotocoagulación o crioterapia retiniana** para disminuir el estímulo angiogénico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_104",
+    "materia": [
+      "oftalmologia"
+    ],
+    "submateria": [
+      "Glaucoma"
+    ],
+    "enunciado": "Respecto al glaucoma secundario por el uso de medicamentos, indique la afirmación correcta:",
+    "opciones": {
+      "a": "Solo los corticoides administrados en forma de colirio tópico pueden desencadenar glaucoma.",
+      "b": "Los análogos de prostaglandinas causan frecuentemente cataratas hipermaduras.",
+      "c": "Los corticoides, por cualquier vía de administración (tópicos, inhalados u orales), pueden producir cataratas y glaucoma.",
+      "d": "El glaucoma corticoideo se caracteriza por un mecanismo de bloqueo angular pretrabecular."
+    },
+    "correcta": "c",
+    "explicacion": "El manual especifica explícitamente que los **corticoides por cualquier vía de administración** (tópicos, inhalados, orales, entre otras) pueden producir cataratas y glaucoma.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "oftalmo_002_105",
+    "materia": [
+      "oftalmologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Glaucoma",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "Un lactante de 2 meses presenta lagrimeo excesivo, fotofobia severa y blefaroespasmo. Al examen se evidencia un diámetro corneal aumentado (megalocórnea) con opacidad por edema. ¿Cuál es la actitud terapéutica indicada?",
+    "opciones": {
+      "a": "Iniciar tratamiento tópico con betabloqueantes de por vida.",
+      "b": "Realizar masajes en el saco lagrimal por sospecha de dacriocistitis.",
+      "c": "El tratamiento es quirúrgico de elección, mediante goniotomía o trabeculectomía.",
+      "d": "Administrar antibióticos tópicos y corticoides."
+    },
+    "correcta": "c",
+    "explicacion": "La clínica de la tríada clásica (lagrimeo, fotofobia, blefaroespasmo) junto con la megalocórnea indican un glaucoma congénito.\nSu tratamiento es siempre **quirúrgico**, siendo de elección la goniotomía o trabeculectomía.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
   
