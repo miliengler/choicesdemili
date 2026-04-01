@@ -1,1 +1,287 @@
-[]
+[
+  {
+    "id": "otorrino_002_001",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "En relación a la embriología del oído, ¿cuál de las siguientes estructuras deriva del ectodermo?",
+    "opciones": {
+      "a": "La capa intermedia de la membrana timpánica.",
+      "b": "La cadena de huesecillos.",
+      "c": "El laberinto membranoso.",
+      "d": "El laberinto óseo."
+    },
+    "correcta": "c",
+    "explicacion": "El **laberinto membranoso** deriva del ectodermo, mientras que el laberinto óseo y la cadena de huesecillos derivan del mesodermo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_002",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Cuál es el nervio encargado de la inervación del músculo del martillo (tensor del tímpano)?",
+    "opciones": {
+      "a": "VII par craneal (Facial).",
+      "b": "V par craneal (Trigémino).",
+      "c": "VIII par craneal (Vestibulococlear).",
+      "d": "IX par craneal (Glosofaríngeo)."
+    },
+    "correcta": "b",
+    "explicacion": "El **músculo del martillo** deriva del primer arco branquial y está inervado por el **V par craneal (trigémino)**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_003",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "Un paciente presenta una lesión herpética en la concha auricular y la pared posterosuperior del CAE. ¿Qué área nerviosa se encuentra afectada?",
+    "opciones": {
+      "a": "Área de Ramsay Hunt (VII par).",
+      "b": "Territorio del nervio auriculotemporal (V3).",
+      "c": "Área del plexo cervical (C2-C3).",
+      "d": "Territorio del nervio vago (X par)."
+    },
+    "correcta": "a",
+    "explicacion": "El **área de Ramsay Hunt** corresponde a la concha y pared posterosuperior del CAE, inervada por el nervio intermediario de Wrisberg (rama del **VII par**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_004",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿En qué región de la caja timpánica se asienta generalmente el colesteatoma?",
+    "opciones": {
+      "a": "Mesotímpano.",
+      "b": "Hipotímpano.",
+      "c": "Epitímpano o ático.",
+      "d": "Promontorio."
+    },
+    "correcta": "c",
+    "explicacion": "La caja timpánica se divide en tres alturas, siendo el **epitímpano o ático** el lugar donde generalmente se asienta el **colesteatoma**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_005",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Cuál es el principal músculo encargado de la apertura de la trompa de Eustaquio?",
+    "opciones": {
+      "a": "Periestafilino interno.",
+      "b": "Periestafilino externo.",
+      "c": "Músculo del estribo.",
+      "d": "Músculo del martillo."
+    },
+    "correcta": "b",
+    "explicacion": "El **músculo periestafilino externo**, inervado por el **V par craneal**, es el principal encargado de la apertura tubárica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_006",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Qué líquido, rico en potasio, se encuentra en el interior del laberinto membranoso?",
+    "opciones": {
+      "a": "Perilinfa.",
+      "b": "Endolinfa.",
+      "c": "Cortilinfa.",
+      "d": "Líquido cefalorraquídeo."
+    },
+    "correcta": "b",
+    "explicacion": "El laberinto membranoso contiene **endolinfa**, la cual es rica en potasio, similar a los líquidos intracelulares.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_007",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Cuál es la estructura del oído interno encargada de percibir las aceleraciones angulares?",
+    "opciones": {
+      "a": "Utrículo.",
+      "b": "Sáculo.",
+      "c": "Canales semicirculares.",
+      "d": "Órgano de Corti."
+    },
+    "correcta": "c",
+    "explicacion": "Los **canales semicirculares** se sitúan en los tres planos del espacio y se encargan de percibir las aceleraciones angulares.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_008",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "En la vía vestibular, ¿dónde se localiza la primera neurona?",
+    "opciones": {
+      "a": "Ganglio espiral.",
+      "b": "Ganglio de Scarpa.",
+      "c": "Núcleos vestibulares del IV ventrículo.",
+      "d": "Corteza temporal."
+    },
+    "correcta": "b",
+    "explicacion": "Las fibras nerviosas vestibulares viajan al **ganglio de Scarpa**, que supone la primera neurona de la vía vestibular.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_009",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Qué característica clínica permite distinguir una parálisis facial periférica de una central?",
+    "opciones": {
+      "a": "La afectación de los dos tercios anteriores de la lengua.",
+      "b": "La conservación de la motilidad de la frente y el ojo en la central.",
+      "c": "La presencia de otalgia en la periférica.",
+      "d": "La desviación de la comisura labial solo en la periférica."
+    },
+    "correcta": "b",
+    "explicacion": "En la **parálisis facial central** se conserva la motilidad de la frente y el ojo, mientras que en la **periférica** está implicada toda la hemicara.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_010",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "La transformación de energía mecánica en eléctrica durante la audición ocurre en:",
+    "opciones": {
+      "a": "La cadena de huesecillos.",
+      "b": "La ventana oval.",
+      "c": "El órgano de Corti.",
+      "d": "El helicotrema."
+    },
+    "correcta": "c",
+    "explicacion": "La transformación de energía mecánica a eléctrica se produce a nivel del **órgano de Corti coclear**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_011",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "Un paciente presenta una prueba de Rinne negativo en el oído derecho y un Weber que lateraliza al oído derecho. ¿Qué diagnóstico sugiere?",
+    "opciones": {
+      "a": "Hipoacusia neurosensorial derecha.",
+      "b": "Hipoacusia de conducción derecha.",
+      "c": "Hipoacusia neurosensorial izquierda.",
+      "d": "Normoacusia."
+    },
+    "correcta": "b",
+    "explicacion": "El Rinne negativo indica **hipoacusia de conducción**; en esta, el Weber lateraliza hacia el oído patológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_012",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Cuál es la prueba de elección para valorar el conducto auditivo interno (CAI) y el ángulo pontocerebeloso?",
+    "opciones": {
+      "a": "Tomografía Computarizada (TC).",
+      "b": "Radiografía simple.",
+      "c": "Resonancia Magnética (RM).",
+      "d": "Audiometría verbal."
+    },
+    "correcta": "c",
+    "explicacion": "La **Resonancia Magnética (RM)** es la prueba de elección para valorar el CAI y el ángulo pontocerebeloso, mientras que la TC se usa para el oído medio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_013",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "En una audiometría tonal, se observa una vía ósea conservada y una vía aérea disminuida. ¿Cómo se denomina a la diferencia entre ambas vías?",
+    "opciones": {
+      "a": "Reclutamiento.",
+      "b": "Gap.",
+      "c": "Inteligibilidad.",
+      "d": "Compliancia."
+    },
+    "correcta": "b",
+    "explicacion": "En la **hipoacusia de transmisión**, la diferencia entre la vía ósea (conservada) y la vía aérea (disminuida) se denomina **gap**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_014",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Qué tipo de timpanometría esperaría encontrar en un paciente con otitis media serosa?",
+    "opciones": {
+      "a": "Curva normal centrada en 0.",
+      "b": "Curva aplanada.",
+      "c": "Curva desplazada a la izquierda (presiones negativas).",
+      "d": "Timpanograma elevado."
+    },
+    "correcta": "b",
+    "explicacion": "Los procesos que disminuyen la movilidad timpanosicular, como la **otitis serosa**, presentan una curva aplanada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  {
+    "id": "otorrino_002_015",
+    "materia": ["otorrinolaringologia"],
+    "submateria": ["Oído"],
+    "enunciado": "¿Qué evalúa el test de Metz en el contexto de una hipoacusia neurosensorial coclear?",
+    "opciones": {
+      "a": "La fatiga auditiva.",
+      "b": "La discriminación verbal.",
+      "c": "El reflejo del estribo desencadenado con estímulos menos intensos (reclutamiento).",
+      "d": "La permeabilidad de la trompa de Eustaquio."
+    },
+    "correcta": "c",
+    "explicacion": "En la **hipoacusia neurosensorial coclear** con reclutamiento, el reflejo estapedial se desencadena con estímulos menos intensos, lo que se denomina **test de Metz**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "inventadas"
+  },
+  
