@@ -1,1 +1,1276 @@
-[]
+[
+  {
+    "id": "saludpublica_003_001",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Si definimos el punto de corte para diagnosticar insuficiencia renal a través del Índice de Filtrado Glomerular (IFG) como 15ml/min en vez de 60 ml/min está aumentando:",
+    "opciones": {
+      "a": "La sensibilidad del IFG.",
+      "b": "La especificidad del IFG.",
+      "c": "La tasa de verdaderos positivos",
+      "d": "La tasa de falsos positivos"
+    },
+    "correcta": "b",
+    "explicacion": "En esta pregunta se evalúa que pasa cuando se cambia el punto de corte del índice de filtrado glomerular.\nEsta prueba es positiva para insuficiencia renal si el resultado es MENOR que un punto de corte\nsi bajo el punto de corte de 60 a 15, algunos pacientes que tenían la enfermedad y daban positivo, con el cambio del punto de corte, darán negativo.\nPor otro lado, algunas personas sanas que daban positivo, ahora darán negativo.\nEs decir, aumenta la especificidad y baja la sensibilidad. Lo opuesto ocurre si subo el punto de corte en este ejemplo.\nLa respuesta correcta es: La especificidad del IFG.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_002",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Si una prueba diagnóstica tiene una sensibilidad del 98% y una especificidad del 99%. ¿Cuál será su tasa de falsos positivos?",
+    "opciones": {
+      "a": "98%",
+      "b": "2%",
+      "c": "1%",
+      "d": "99%"
+    },
+    "correcta": "c",
+    "explicacion": "Para entender por qué esta es la respuesta correcta, primero debemos entender los conceptos de sensibilidad y especificidad en una prueba diagnóstica.\nLa sensibilidad de una prueba se refiere a la capacidad de la prueba para identificar correctamente a aquellos que tienen la enfermedad.\nEn este caso, una sensibilidad del 98% significa que la prueba detectará correctamente la enfermedad en el 98% de los individuos que realmente la tienen.\nPor lo tanto, la tasa de falsos negativos (personas que tienen la enfermedad pero la prueba dice que no) será del 2% (100% - 98%).\nLa especificidad de una prueba, por otro lado, se refiere a la capacidad de la prueba para identificar correctamente a aquellos que no tienen la enfermedad.\nEn este caso, una especificidad del 99% significa que la prueba identificará correctamente a los individuos sanos el 99% de las veces.\nPor lo tanto, la tasa de falsos positivos (personas que no tienen la enfermedad pero la prueba dice que sí) será del 1% (100%-99%).\nPor lo tanto, podemos descartar las opciones a. 98%, b. 2% y d. 99% ya que no corresponden a la tasa de falsos positivos dada una especificidad del 99%. La opción c. 1% es la correcta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_003",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "La evaluación de la calidad de una prueba diagnóstica se mide en términos de validez a través de su sensibilidad y especificidad. ¿Qué es la especificidad de una prueba?",
+    "opciones": {
+      "a": "La probabilidad de que un sujeto sano tenga un resultado positivo en la prueba.",
+      "b": "La probabilidad de que un sujeto enfermo tenga un resultado positivo en la prueba.",
+      "c": "La probabilidad de que un sujeto sano tenga un resultado negativo en la prueba.",
+      "d": "La probabilidad de que un sujeto enfermo tenga un resultado negativo en la prueba."
+    },
+    "correcta": "c",
+    "explicacion": "Para desarrollar esta respuesta, es esencial comprender los conceptos de sensibilidad y especificidad en el contexto de las pruebas diagnósticas.\nLa sensibilidad se refiere a la capacidad de una prueba para identificar correctamente a aquellos individuos que tienen una enfermedad específica, es decir, su capacidad para dar un resultado positivo en presencia de la enfermedad.\nPor otro lado, la especificidad se refiere a la capacidad de una prueba para identificar correctamente a aquellos individuos que no tienen la enfermedad, es decir, su capacidad para dar un resultado negativo en ausencia de la enfermedad.\nDe las opciones proporcionadas, la opción a. La probabilidad de que un sujeto sano tenga un resultado positivo en la prueba, se refiere a un falso positivo.\nLa opción b. La probabilidad de que un sujeto enfermo tenga un resultado positivo en la prueba, se refiere a la sensibilidad, no a la especificidad.\nLa opción d. La probabilidad de que un sujeto enfermo tenga un resultado negativo en la prueba, se refiere a un falso negativo.\nPor lo tanto, la única opción correcta es la c. La probabilidad de que un sujeto sano tenga un resultado negativo en la prueba.\nEsta opción describe correctamente la especificidad, ya que habla de la capacidad de la prueba para dar un resultado negativo en aquellos individuos que no tienen la enfermedad, es decir, su capacidad para evitar falsos positivos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_004",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "La proporción de pacientes hipertensos correctamente identificados por una nueva prueba es del 85%. Este valor representa:",
+    "opciones": {
+      "a": "La especificidad.",
+      "b": "El valor predictivo positivo.",
+      "c": "La sensibilidad.",
+      "d": "Los falsos negativos."
+    },
+    "correcta": "c",
+    "explicacion": "Repasamos los conceptos de sensibilidad, especificidad, valor predictivo positivo y falsos negativos.\nLa sensibilidad de una prueba se refiere a su capacidad para identificar correctamente a los individuos que tienen una determinada condición o enfermedad.\nEn este caso, la sensibilidad de la prueba es del 85%, lo que significa que la prueba es capaz de identificar correctamente a los pacientes hipertensos en un 85% de los casos.\nLa especificidad, por otro lado, se refiere a la capacidad de una prueba para identificar correctamente a los individuos que no tienen la enfermedad. En este caso, el enunciado de la pregunta no proporciona información sobre la especificidad de la prueba, por lo que no podemos seleccionar la opción a.\nEl valor predictivo positivo se refiere a la probabilidad de que un individuo que ha obtenido un resultado positivo en la prueba realmente tenga la enfermedad.\nNuevamente, el enunciado de la pregunta no nos proporciona información sobre el valor predictivo positivo de la prueba, por lo que no podemos seleccionar la opción b.\nLos falsos negativos se producen cuando una prueba indica incorrectamente que un individuo no tiene una enfermedad o condición cuando realmente la tiene.\nEn este caso, el enunciado de la pregunta nos dice que la prueba es capaz de identificar correctamente a los pacientes hipertensos en un 85% de los casos, pero no nos proporciona información sobre la tasa de falsos negativos.\nPor lo tanto, no podemos seleccionar la opción d.\nEn resumen, basándonos en la información proporcionada en el enunciado de la pregunta, podemos concluir que el valor del 85% representa la sensibilidad de la prueba, ya que se refiere a la proporción de pacientes hipertensos que la prueba es capaz de identificar",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_005",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "En cuanto a las pruebas diagnósticas secuenciales que se aplican para el screening de una enfermedad, se requieren las siguientes características, EXCEPTO:",
+    "opciones": {
+      "a": "Alta prevalencia de la enfermedad.",
+      "b": "La primera prueba debe tener alta especificidad.",
+      "c": "La primera prueba debe tener alta sensibilidad.",
+      "d": "Existencia de recursos de diagnóstico y tratamiento de los sujetos positivos en la prueba."
+    },
+    "correcta": "b",
+    "explicacion": "En cuanto a las pruebas diagnósticas secuenciales que se aplican para el screening de una enfermedad, las características que se requieren son varias, pero hay una opción que no es necesaria.\na. Alta prevalencia de la enfermedad: Para que un screening sea eficaz y coste-efectivo, generalmente se aplica a enfermedades que tienen una prevalencia alta en la población.\nSi la prevalencia es baja, el número de falsos positivos puede superar al de verdaderos positivos, lo que puede llevar a un sobre-diagnóstico y sobre-tratamiento.\nb. La primera prueba debe tener alta especificidad: La especificidad de una prueba se refiere a su capacidad para identificar correctamente a los individuos que no tienen la enfermedad (verdaderos negativos).\nEn el caso de las pruebas de screening, se prefiere que tengan alta sensibilidad en lugar de alta especificidad.\nHay que marcar esta opción como la que no corresponde\nc. La primera prueba debe tener alta sensibilidad: esta es una característica esencial para las pruebas de screening.\nLa sensibilidad se refiere a la capacidad de la prueba para identificar correctamente a los individuos que tienen la enfermedad (verdaderos positivos).\nUna prueba de screening con alta sensibilidad puede detectar la enfermedad en sus etapas tempranas, lo que puede permitir un tratamiento más efectivo y temprano.\nd. Existencia de recursos de diagnóstico y tratamiento de los sujetos positivos en la prueba: Para que un programa de screening sea efectivo, es esencial que existan recursos adecuados para diagnosticar y tratar a los individuos que den positivo en la prueba de screening.\nPor lo tanto, la opción a marcar es la b. \"La primera prueba debe tener alta especificidad\".\nAunque es importante que una prueba tenga una especificidad razonable para minimizar los falsos positivos, no es necesariamente requerido que la primera prueba en un screening tenga alta especificidad.\nEs más importante que tenga alta sensibilidad para detectar la mayor cantidad posible de casos verdaderos positivos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_006",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "En una población de 2.000 personas existe una enfermedad con una prevalencia del 5%. Para su detección, usted dispone de una prueba con una sensibilidad del 70% y una especificidad del 80%. ¿Cuál será el número de personas enfermas con un resultado negativo de la prueba (falsos negativos)?",
+    "opciones": {
+      "a": "20",
+      "b": "30",
+      "c": "70",
+      "d": "80"
+    },
+    "correcta": "b",
+    "explicacion": "La prevalencia se refiere a la proporción de individuos en una población que tienen una enfermedad en un momento específico.\nEn este caso, la prevalencia de la enfermedad es del 5%.\nCon una población de 2000 personas, esto implica que 100 personas (5% de 2000) tienen la enfermedad.\nLa sensibilidad de una prueba se refiere a su capacidad para identificar correctamente a aquellos con la enfermedad.\nEn este caso, la sensibilidad es del 70%, lo que significa que la prueba identificará correctamente a 70 de cada 100 personas con la enfermedad.\nLa especificidad de una prueba se refiere a su capacidad para identificar correctamente a aquellos sin la enfermedad.\nEn este caso, la especificidad es del 80%, pero no es relevante para esta pregunta ya que estamos interesados en los falsos negativos, es decir, personas que realmente tienen la enfermedad pero la prueba indica que no la tienen.\nAhora, si aplicamos la prueba a las 100 personas con la enfermedad, la sensibilidad del 70% nos dice que la prueba identificará correctamente a 70 personas como enfermas.\nEsto deja a 30 personas (100-70) con la enfermedad que la prueba no identificará correctamente, es decir, habrá 30 falsos negativos.\nPor lo tanto, la respuesta correcta a esta pregunta es b. 30.\nLas otras opciones se pueden descartar porque no coinciden con el número de falsos negativos calculado utilizando la sensibilidad de la prueba y la prevalencia de la enfermedad en la población.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_007",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Se realizó un prueba que dio como resultados un 15% de falsos positivos y un 20% de falsos negativos. ¿Cuál es la especificidad de la prueba?",
+    "opciones": {
+      "a": "5%",
+      "b": "15%",
+      "c": "80%",
+      "d": "85%"
+    },
+    "correcta": "d",
+    "explicacion": "Para responder a esta pregunta, primero es necesario comprender los términos clave que se presentan: falsos positivos, falsos negativos y especificidad.\nLos falsos positivos se refieren a los resultados de la prueba que indican incorrectamente que una persona tiene una enfermedad o condición específica.\nLos falsos negativos, por otro lado, son resultados de pruebas que incorrectamente indican que una persona no tiene una enfermedad o condición específica.\nLa especificidad de una prueba se refiere a su capacidad para identificar correctamente a los individuos que no tienen la enfermedad.\nEspecíficamente, se calcula utilizando la fórmula: Especificidad = Verdaderos Negativos / (Verdaderos Negativos + Falsos Positivos).\nEn este caso, sabemos que la prueba tiene un 15% de falsos positivos.\nPodemos deducir que la especificidad es del 85% (100% - 15% de falsos positivos).\nLas opciones a. 5% y b. 15% se pueden descartar porque no coinciden con la fórmula para calcular la especificidad, que se basa en la proporción de verdaderos negativos en relación con la suma de verdaderos negativos y falsos positivos.\nAdemás, la opción d. 80% también puede descartarse.\nSe pregunta un cálculo simple: la especificidad que puede calcularse conociendo el porcentaje de falsos positivos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_008",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "En una población de 1.000 personas hay una enfermedad que tiene una prevalencia del 10%. Se dispone de una prueba cuya sensibilidad es del 80% y su especificidad del 90%. Si se aplica la prueba a toda la población, ¿cuál será el número de personas sanas con una prueba con resultado positivo (falsos positivos)?",
+    "opciones": {
+      "a": "810",
+      "b": "90",
+      "c": "20",
+      "d": "80"
+    },
+    "correcta": "b",
+    "explicacion": "Para responder correctamente a esta pregunta, necesitamos comprender algunos conceptos clave como prevalencia, sensibilidad y especificidad.\nLa prevalencia se refiere a la proporción de personas en una población que tienen una enfermedad específica.\nEn este caso, se nos dice que la prevalencia de la enfermedad es del 10% en una población de 1.000 personas.\nPor lo tanto, 100 personas (10% de 1.000) tienen la enfermedad.\nLa especificidad, por otro lado, es la capacidad de la prueba para identificar correctamente a aquellos sin la enfermedad.\nEn este caso, la especificidad es del 90%. Esto significa que de las 900 personas sin la enfermedad (1.000-100), la prueba identificará correctamente a 810 de ellas como sanas (90% de 900).\nPor lo tanto, el número de personas sanas que la prueba identificará incorrectamente como enfermas (falsos positivos) será el 10% restante de las 900 personas sin la enfermedad, es decir, 90 personas.\nEn esta pregunta se integran nuevamente 2 conceptos: prevalencia y validez.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_009",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Al realizar una serología frente a Trypanosoma cruzi en una comunidad A con una prevalencia estimada del 20% de enfermedad de Chagas, respecto a otra comunidad de B con una prevalencia estimada de enfermedad de Chagas del 3%:",
+    "opciones": {
+      "a": "Aumenta la sensibilidad.",
+      "b": "Disminuye la especificidad.",
+      "c": "Aumenta el valor predictivo positivo.",
+      "d": "Aumenta en valor absoluto los falsos positivos."
+    },
+    "correcta": "c",
+    "explicacion": "La sensibilidad de una prueba es su capacidad para identificar correctamente a aquellos individuos que tienen la enfermedad, mientras que la especificidad es su capacidad para identificar correctamente a aquellos que no la tienen.\nEl valor predictivo positivo (VPP) se refiere a la probabilidad de que una persona con un resultado positivo en la prueba realmente tenga la enfermedad.\nEn el caso de las comunidades A y B, se nos da información sobre la prevalencia de la enfermedad de Chagas, que es el porcentaje de la población que tiene la enfermedad.\nEn la comunidad A, la prevalencia es del 20%, mientras que en la comunidad B es del 3%.\nCon esta información, podemos evaluar las opciones:\na. Aumenta la sensibilidad: Incorrecta. La prevalencia de una enfermedad en una comunidad no afecta la sensibilidad de una prueba, ya que la sensibilidad es una característica intrínseca de la prueba.\nb. Disminuye la especificidad: Incorrecta. Similar a la sensibilidad, la especificidad de una prueba es una característica de la prueba en sí y no está influenciada por la prevalencia de la enfermedad en la comunidad.\nc. Aumenta el valor predictivo positivo: Correcta. Cuando aumenta la prevalencia de una enfermedad, también aumenta el VPP de la prueba.\nEsto se debe a que hay más personas con la enfermedad en la población, por lo que la probabilidad de que una persona con un resultado positivo realmente tenga la enfermedad es mayor.\nd. Aumenta en valor absoluto los falsos positivos: Incorrecta. Si bien un aumento en la prevalencia de una enfermedad puede llevar a un mayor número de falsos positivos en términos absolutos, esto no es necesariamente cierto.\nLa cantidad de falsos positivos también dependerá de la sensibilidad y especificidad de la prueba.\nEn esta pregunta desarrollamos como influye la prevalencia sobre una medida de validez\nLa respuesta correcta es: Aumenta el valor predictivo positivo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_010",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Lo habitual en la práctica clínica es constatar que existe cierto grado de solapamiento entre los resultados de las pruebas diagnósticas de la población enferma y sana, y rara vez contamos con un punto de corte que discrimine totalmente a ambos grupos. ¿Cómo se denomina a la representación gráfica de la relación existente entre sensibilidad y especificidad para cada punto de corte posible?",
+    "opciones": {
+      "a": "Curva ROC.",
+      "b": "Curva de Lorenz",
+      "c": "Curva de sensibilidad",
+      "d": "Curva de valor predictivo positivo"
+    },
+    "correcta": "a",
+    "explicacion": "La respuesta correcta es a. Curva ROC.\nLa sensibilidad y la especificidad son dos parámetros fundamentales en la evaluación de las pruebas diagnósticas.\nLa sensibilidad se refiere a la capacidad de la prueba para identificar correctamente a las personas que tienen la enfermedad, mientras que la especificidad se refiere a la capacidad de la prueba para identificar correctamente a las personas que no la tienen.\nLa Curva ROC (Receiver Operating Characteristic) es una representación gráfica que muestra la relación entre la sensibilidad y la especificidad para cada punto de corte posible de una prueba diagnóstica.\nEl \"punto de corte\" se refiere al valor que se elige para distinguir entre los que se consideran positivos y los que se consideran negativos en la prueba.\nLa Curva ROC se utiliza para elegir el punto de corte que proporciona el mejor equilibrio entre la sensibilidad y la especificidad y para comparar la utilidad diagnóstica de diferentes pruebas.\nLas opciones b, c y d son incorrectas. La Curva de Lorenz es una representación gráfica utilizada en economía para medir la desigualdad de distribución.\nNo tiene relación con las pruebas diagnósticas en medicina. La \"Curva de sensibilidad\" no es un término estándar en medicina y no representa la relación entre sensibilidad y especificidad.\nFinalmente, la \"Curva de valor predictivo positivo\" tampoco es un término estándar en medicina.\nEl valor predictivo positivo se refiere a la probabilidad de que una persona tenga la enfermedad dado un resultado positivo en la prueba, pero no se representa gráficamente en relación con la sensibilidad y la especificidad.\nPor lo tanto, los elementos del enunciado que permiten elegir la opción correcta y descartar las incorrectas son la referencia a la representación gráfica de la relación entre sensibilidad y especificidad para cada punto de corte posible, que es una descripción precisa de la Curva ROC.\nEn esta pregunta hablamos del gráfico con relaciona sensibilidad, especificidad y puntos de corte de un test diagnóstico\nLa respuesta correcta es: Curva ROC.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_011",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística descriptiva"
+    ],
+    "enunciado": "La curva de Lorenz y de concentración y los coeficientes de Gini y de concentración son aplicados a la distribución de la mortalidad infantil y materna. ¿Cuál de las siguientes afirmaciones es correcta en relación a ellos?",
+    "opciones": {
+      "a": "Relacionan la mortalidad con la distribución geográfica",
+      "b": "Relacionan la mortalidad con la esperanza de vida",
+      "c": "Miden el grado de inequidad en la distribución de estos indicadores",
+      "d": "Miden el grado de correspondencia con la tasa de fecundidad"
+    },
+    "correcta": "c",
+    "explicacion": "La curva de Lorenz y el coeficiente de Gini son herramientas estadísticas que se utilizan para medir la desigualdad en la distribución de una variable.\nEn este caso, se aplican a la distribución de la mortalidad infantil y materna.\nEstos instrumentos no relacionan la mortalidad con la distribución geográfica (opción a) o con la esperanza de vida (opción b).\nSu propósito es medir el grado de inequidad en la distribución de estos indicadores de salud.\nLa opción d también es incorrecta. Aunque la tasa de fecundidad puede influir en la mortalidad infantil y materna, la curva de Lorenz y el coeficiente de Gini no se utilizan para medir el grado de correspondencia entre estas dos variables.\nEstas herramientas se centran en la desigualdad de la distribución, no en la correlación entre diferentes indicadores.\nPor lo tanto, la única afirmación correcta es que la curva de Lorenz y el coeficiente de Gini se utilizan para medir el grado de inequidad en la distribución de la mortalidad infantil y materna.\nOtra pregunta de diseños de estudios: es muy importante que conozcas cómo se diferencian los diseños entre sí, cuáles son observacionales o experimentales, cuáles se usan para enfermedades poco frecuentes o exposiciones poco frecuentes, etc.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_012",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "¿Cuál de los siguientes tipos de estudio sería el de elección para estudiar la asociación entre la aparición de una reacción adversa grave muy poco frecuente y tardía, y el consumo de un determinado medicamento?",
+    "opciones": {
+      "a": "Ensayo clínico con el medicamento sospechoso.",
+      "b": "Estudio de prevalencia.",
+      "c": "Estudio de casos y controles.",
+      "d": "Estudio ecológico."
+    },
+    "correcta": "c",
+    "explicacion": "El estudio de casos y controles es una herramienta epidemiológica que se utiliza para investigar factores que pueden contribuir a una enfermedad en particular.\nEn este tipo de estudio, un grupo de individuos con la enfermedad (los \"casos\") se compara con un grupo de individuos sin la enfermedad (los \"controles\").\nEl objetivo es determinar si la exposición a un factor de riesgo particular es más común entre los casos que entre los controles, lo que puede sugerir una asociación entre esa exposición y la enfermedad.\nEn este caso, los \"casos\" serían individuos que han experimentado la reacción adversa grave, y los \"controles\" serían individuos que han tomado el medicamento pero no han experimentado la reacción.\nSi la reacción adversa es más común entre los casos que entre los controles, esto sugeriría una asociación entre el medicamento y la reacción.\nUn punto clave para resolver esta prgunta es que la reacción adversa es \"poco frecuente y tardía\".\nLos estudios de casos y controles suelen usarse para estudiar enfermedades poco frecuentes, ya que se parte de los casos con la enfermedad y los controles sanos.\nLas otras opciones son menos adecuadas por varias razones. Un ensayo clínico (opción a) podría no ser ético o factible si se sospecha que el medicamento puede causar una reacción adversa grave.\nUn estudio de prevalencia (opción b) se utiliza para determinar la proporción de individuos en una población que tienen una enfermedad o condición en un momento dado, y no es la mejor opción para estudiar la asociación entre una exposición y un resultado.\nUn estudio ecológico (opción d) examina las tasas de enfermedad y exposiciones en poblaciones.\nEn esta pregunta, a partir de la descripción de un estudio epidemiológico, tenemos que identificar de qué diseño se trata",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_013",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "Respecto a los estudios de cohortes, señale la opción correcta:",
+    "opciones": {
+      "a": "Los sujetos son seleccionados en virtud de padecer o no la enfermedad sometida a estudio",
+      "b": "Se obtiene la prevalencia como medida de la frecuencia de la enfermedad.",
+      "c": "El azar decide la distribución de la exposición en los sujetos del estudio.",
+      "d": "Pueden ser retrospectivos."
+    },
+    "correcta": "d",
+    "explicacion": "La opción \"Pueden ser retrospectivos\", es la correcta. Los estudios de cohortes pueden ser tanto prospectivos como retrospectivos.\nEn los estudios de cohortes retrospectivos, los investigadores utilizan datos existentes para examinar la exposición a un factor de riesgo o intervención en el pasado y su relación con los resultados de salud en el presente.\nPor lo tanto, esta es la única opción que describe correctamente un aspecto de los estudios de cohortes.\nEn los estudios de cohortes, los sujetos son seleccionados en base a su exposición a un factor de riesgo o a una intervención, no en virtud de padecer o no la enfermedad sometida a estudio (esto sí ocurre en los estudios de casos y controles).\nPor lo tanto, la opción a es incorrecta.\nLa opción b, que sugiere que se obtiene la prevalencia como medida de la frecuencia de la enfermedad, también es incorrecta.\nEn los estudios de cohortes, se mide la incidencia, no la prevalencia.\nLa incidencia se refiere al número de nuevos casos de una enfermedad en un período de tiempo específico, mientras que la prevalencia se refiere al número total de casos en un momento dado, incluyendo tanto los nuevos como los existentes.\nEn cuanto a la opción c, que afirma que el azar decide la distribución de la exposición en los sujetos del estudio, esta es una característica de los ensayos controlados aleatorios, no de los estudios de cohortes.\nEn los estudios de cohortes, los investigadores seleccionan a los sujetos en función de su exposición, la cual no se asigna al azar.\nEn esta pregunta desarrollamos las características de los estudios de cohortes y cómo se diferencian de otros estudios epidemiológicos",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_014",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "Los estudios epidemiológicos de tipo corte transversal son los más apropiados para:",
+    "opciones": {
+      "a": "Realizar inferencias causales sobre la relación entre la exposición a un factor y la enfermedad.",
+      "b": "Estimar la incidencia de una enfermedad en la población.",
+      "c": "Estimar la prevalencia de una enfermedad crónica.",
+      "d": "Diferenciar entre casos incidentes y casos prevalentes de la enfermedad."
+    },
+    "correcta": "c",
+    "explicacion": "Los estudios de corte transversal, también conocidos como estudios de prevalencia, son observacionales y descriptivos.\nEstos estudios proporcionan una 'foto' de la población en un punto específico en el tiempo, y son particularmente útiles para determinar la prevalencia de condiciones crónicas, que son enfermedades de larga duración.\nAnalicemos las opciones:\na. Realizar inferencias causales sobre la relación entre la exposición a un factor y la enfermedad.\nEsta opción es incorrecta porque los estudios de corte transversal no son ideales para inferir relaciones causales.\nEsto se debe a que la exposición y el resultado se miden simultáneamente, por lo que no se puede determinar la secuencia temporal y, por lo tanto, la causalidad.\nLos estudios de cohortes o los ensayos controlados aleatorios son más apropiados para determinar la causalidad.\nb. Estimar la incidencia de una enfermedad en la población.\nEsta opción también es incorrecta porque los estudios de corte transversal no son la mejor opción para estimar la incidencia, que se refiere al número de nuevos casos de una enfermedad en un período de tiempo específico.\nLos estudios de corte transversal proporcionan datos en un punto específico en el tiempo y no pueden medir los nuevos casos a lo largo del tiempo.\nLos estudios de cohortes son más útiles para este propósito.\nd. Diferenciar entre casos incidentes y casos prevalentes de la enfermedad.\nEsta opción es incorrecta porque, como se mencionó anteriormente, los estudios de corte transversal no son capaces de diferenciar entre casos incidentes (nuevos) y prevalentes (existentes) debido a su diseño de \"foto\".\nPor lo tanto, la opción c. Estimar la prevalencia de una enfermedad crónica es la respuesta correcta, ya que los estudios de corte transversal son ideales para medir la proporción de individuos en una población que tiene una condición en un punto específico en el tiempo.\nEn esta pregunta desarrollamos las características de los estudios de corte transversal (estudios de encuesta o cross-sectional)\nLa respuesta correcta es: Estimar la prevalencia de una enfermedad crónica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_015",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "En un estudio se observó una buena correlación entre el uso poblacional de antibióticos y la tasa de resistencia a antimicrobianos. En dicho estudio la unidad de análisis fue cada uno de los países que participaron, ¿a qué tipo de diseño correspondería este estudio?",
+    "opciones": {
+      "a": "Ensayo clínico.",
+      "b": "Estudio de cohorte.",
+      "c": "Estudio ecológico.",
+      "d": "Estudio transversal."
+    },
+    "correcta": "c",
+    "explicacion": "La respuesta correcta es c) Estudio ecológico. Este tipo de estudio se caracteriza por analizar datos a nivel de grupo o población, en lugar de a nivel individual.\nEn este caso, cada país representa una unidad de análisis, lo cual es una característica fundamental de los estudios ecológicos.\nEstos estudios son útiles para establecer correlaciones a nivel poblacional y para identificar posibles factores de riesgo o tendencias en grandes grupos.\nEn cuanto a las otras opciones:\na) Ensayo clínico: Este tipo de estudio se realiza generalmente para probar la eficacia y seguridad de una intervención, como un medicamento.\nEn los ensayos clínicos, los participantes son asignados al azar a diferentes grupos de tratamiento.\nEn este caso, no se está evaluando una intervención, por lo que no se trata de un ensayo clínico.\nb) Estudio de cohorte: Este tipo de estudio sigue a grupos de individuos (cohortes) a lo largo del tiempo para determinar la incidencia de un resultado o enfermedad.\nEn este caso, no se menciona el seguimiento de un grupo específico a lo largo del tiempo, por lo que no se trata de un estudio de cohorte.\nd) Estudio transversal: este tipo de estudio examina la relación entre una enfermedad y otras variables de interés en individuos en un momento específico (es una \"foto\").\nLos estudios transversales tienen información de nivel individual. El estudio planteado en la pregunta utiliza información de nivel poblacional.\nPor lo tanto, basándonos en las características del estudio descritas en la pregunta, el diseño que mejor se ajusta es el estudio ecológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_016",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Se quiere realizar un estudio para valorar el efecto de la exposición al consumo de alcohol sobre el cáncer de páncreas. Es posible que la relación pueda estar afectada por el efecto de la exposición al consumo de tabaco. Si sólo se quiere analizar el efecto del consumo de alcohol, ¿qué tipo de sesgo se puede producir?",
+    "opciones": {
+      "a": "Sesgo de información.",
+      "b": "Sesgo de selección.",
+      "c": "Error aleatorio",
+      "d": "Sesgo de confusión."
+    },
+    "correcta": "d",
+    "explicacion": "Si solo se quiere analizar el efecto del consumo de alcohol, se puede producir un sesgo de confusión.\nEl sesgo de confusión en epidemiología se refiere a una situación en la cual la relación medida entre una exposición o variable independiente (por ejemplo, el consumo de alcohol) y un evento o variable dependiente (por ejemplo, el cáncer de páncreas) se distorsiona debido a la presencia de un tercer factor (en este caso, el consumo de tabaco, que se comporta como factor de confusión).\nEl factor de confusión, que es el consumo de tabaco en este ejemplo, es una variable que está asociada tanto con la exposición como con el evento.\nEl consumo de tabaco está vinculado al consumo de alcohol (las personas que consumen alcohol tienen más tendencia a consumir tabaco), y es un factor de riesgo de cáncer de páncreas (el evento).\nCuando no se toma en cuenta el factor de confusión, se puede confundir la relación entre la exposición y el resultado, y erróneamente concluir que el consumo de alcohol es un factor de riesgo más fuerte para el cáncer de páncreas de lo que realmente es.\nLas otras opciones pueden ser descartadas. El sesgo de información se refiere a errores en la recopilación o interpretación de los datos, que no es el caso en este enunciado.\nEl sesgo de selección se refiere a una distorsión que puede ocurrir cuando los participantes seleccionados para el estudio no son representativos de la población total, lo cual tampoco se aplica en esta situación.\nEl error aleatorio se refiere a las variaciones que ocurren en las mediciones o en los resultados de un estudio debido al azar o inherente en el proceso de recopilación de datos.\nNo está relacionado con factores de confusión.\nEn esta pregunta, a partir de la descripción de un estudio epidemiológico, nos piden identificar el sesgo que puede incidir en los resultados.\nAprovechamos para repasar las distintas fuentes de error en estudios epidemiológicos\nLa respuesta correcta es: Sesgo de confusión.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_017",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Queremos conocer si el consumo de café puede estar asociado a la malformación neonatal, por lo que se diseña un estudio casos control. Se entrevista a un grupo de mujeres que han tenido niños con malformaciones y lo mismo en un grupo de madres sin hijos con malformaciones. Las entrevistas las realizarán dos entrevistadores entrenados mediante un cuestionario previamente validado. Además, los entrevistadores ignoran si la entrevistada es un caso o un control. ¿Qué tipo de sesgo podemos introducir?",
+    "opciones": {
+      "a": "Sesgo de información.",
+      "b": "Sesgo del entrevistador.",
+      "c": "Sesgo de selección.",
+      "d": "Falacia ecológica."
+    },
+    "correcta": "a",
+    "explicacion": "La pregunta se refiere al tipo de sesgo que puede introducirse en un estudio casos-control en el que se investiga la asociación entre el consumo de café y la malformación neonatal.\nEn este contexto, se entrevista a dos grupos de mujeres: aquellas que han tenido niños con malformaciones y aquellas que no.\nAntes de analizar cada opción de respuesta, es importante entender que un sesgo es una desviación sistemática de los resultados.\na) Sesgo de información: Este sesgo se produce cuando la recopilación de información o datos es errónea.\nEn este caso, el sesgo de información puede ocurrir porque las mujeres que tuvieron un hijo con malformaciones tienden a recordar más las exposiciones durante el embarazo, en comparación con las mujeres que tuvieron un hijo sano.\nEste tipo de sesgo de información se conoce también como sesgo de memoria.\nb) Sesgo del entrevistador: Este tipo de sesgo ocurre cuando los entrevistadores influyen en las respuestas de los participantes.\nEn este estudio, se menciona que los entrevistadores no saben si la persona entrevistada es un caso o un control, lo que reduce la posibilidad de introducir este sesgo.\nc) Sesgo de selección: Este ocurre cuando los participantes seleccionados para el estudio no son representativos de la población general.\nNo hay suficiente información en el enunciado de la pregunta para determinar si se podría introducir este sesgo.\nd) Falacia ecológica: esto ocurre cuando realizan inferencias sobre los individuos basadas en los hallazgos del grupo.\nEs poco probable en este estudio, ya que se están comparando individuos (madres) y no grupos.\nEn base a la información disponible en la pregunta, la respuesta más probable sería \"a) Sesgo de información\", ya que se basa en la información proporcionada por las madres y hay una posibilidad de que la información proporcionada no sea exacta.\nEn esta pregunta, a partir de la descripción de un estudio epidemiológico, nos piden identificar el sesgo que puede incidir en los resultados\nLa respuesta correcta es: Sesgo de información.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_018",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "En el área programática de su Centro de salud deciden que la mejor fuente de información serían los registros continuos. Señale entre los siguientes un registro de este tipo:",
+    "opciones": {
+      "a": "Grupos focales en la población cada 60 días.",
+      "b": "Encuestas realizadas una vez al año.",
+      "c": "Planilla de rondas de agentes sanitarios.",
+      "d": "Observación participante de los procesos."
+    },
+    "correcta": "c",
+    "explicacion": "Para entender por qué esta es la opción correcta, es importante primero definir qué son los registros continuos.\nEn medicina y salud pública, un registro continuo es una recopilación sistemática y continua de datos relacionados con la salud de una población específica.\nEste tipo de registros es esencial para el monitoreo de la salud de la población y para la planificación y evaluación de los programas de salud.\nLa opción a, \"Grupos focales en la población cada 60 días\", no es un registro continuo ya que se realiza a intervalos de tiempo específicos y no de manera continua.\nLos grupos focales son una herramienta de investigación cualitativa que se utiliza para recopilar información sobre las percepciones, opiniones y actitudes de un grupo de personas sobre un tema específico.\nAunque proporcionan información valiosa, no son una fuente de datos continua.\nLa opción b, \"Encuestas realizadas una vez al año\", tampoco es un registro continuo.\nAl igual que los grupos focales, las encuestas se realizan a intervalos de tiempo específicos y no proporcionan una recopilación continua de datos.\nLa opción d, \"Observación participante de los procesos\", aunque puede ser continua, no se considera un registro.\nLa observación participante es una metodología de investigación cualitativa en la que el investigador se involucra en la vida de las personas que está estudiando.\nPor otro lado, la opción c, \"Planilla de rondas de agentes sanitarios\", se refiere a los registros que los agentes sanitarios hacen de sus visitas regulares a los hogares en su área de cobertura.\nEstos registros se actualizan de forma continua y sistemática, proporcionando una fuente constante de información sobre la salud de la población.\nPor lo tanto, este es un ejemplo de un registro continuo y es la respuesta correcta a esta pregunta.\nLa respuesta correcta es: Planilla de rondas de agentes sanitarios.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_019",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "¿Cuál es la utilidad del método de investigación doble ciego?",
+    "opciones": {
+      "a": "Evitar el sesgo del observador.",
+      "b": "Evitar errores aleatorios.",
+      "c": "Permitir que dos investigadores analicen el mismo fenómeno.",
+      "d": "Controlar factores de confusión"
+    },
+    "correcta": "a",
+    "explicacion": "En un estudio doble ciego, ni los participantes ni los investigadores saben qué participantes están en el grupo de control y cuáles están en el grupo experimental.\nEsto se hace para evitar el sesgo del observador, que es una tendencia de los investigadores a interpretar los resultados de una manera que se ajuste a sus expectativas.\nEl sesgo del observador puede introducir errores en los resultados de la investigación, por lo que el método doble ciego es una forma de controlar esto.\nLas otras opciones son incorrectas.\nLos errores aleatorios no se pueden evitar con el método doble ciego.\nLos errores aleatorios se deben a la variabilidad inherente al tomar una muestra de una población y no se pueden prevenir por completo, aunque se pueden minimizar con un diseño experimental adecuado y un tamaño de muestra suficiente.\nLa opción c, permitir que dos investigadores analicen el mismo fenómeno, no es la utilidad principal del método doble ciego.\nAunque el método doble ciego puede permitir que más de un investigador analice los resultados, su propósito principal es evitar el sesgo del observador, no facilitar la colaboración.\nLa opción d, controlar factores de confusión, es incorrecta porque los factores de confusión se controlan a través de la aleatorización y del análisis estadístico, no a través del método doble ciego.\nUn factor de confusión es una variable que está asociada tanto con la variable dependiente como con la independiente y que, si no se controla, puede dar lugar a una asociación espuria.\nEn esta pregunta repasamos qué es el enmascaramiento doble ciego y en qué consiste\nLa respuesta correcta es: Evitar el sesgo del observador.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_020",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "La tasa de incidencia es definida operacionalmente como:",
+    "opciones": {
+      "a": "La razón entre el número de casos nuevos de una enfermedad, que ocurre en un intervalo de tiempo determinado, en una población delimitada, sobre la población expuesta al riesgo de adquirir la referida enfermedad en el mismo período",
+      "b": "La razón entre el número de casos nuevos y casos existentes de una enfermedad, que ocurre en un intervalo de tiempo determinado, en una población delimitada, sobre la población expuesta al riesgo de adquirir la referida enfermedad en el mismo período",
+      "c": "La razón entre el número de casos nuevos surgido a partir del contacto con el caso- índice de una enfermedad, en una población delimitada, sobre el total de contactos con el caso-índice de la referida enfermedad en el mismo período",
+      "d": "La carga de una enfermedad, que ocurre en un intervalo de tiempo determinado, en una población delimitada, sobre el total de personas enfermas a causa de la referida enfermedad en el mismo período"
+    },
+    "correcta": "a",
+    "explicacion": "Para entender por qué esta es la opción correcta, es importante entender primero qué es la tasa de incidencia.\nLa tasa de incidencia es una medida epidemiológica que se usa para estimar el riesgo de desarrollar una enfermedad en un período de tiempo específico.\nSe calcula dividiendo el número de casos nuevos de una enfermedad (en un período de tiempo específico y en una población específica) entre el número de personas en riesgo de desarrollar la enfermedad en ese mismo período de tiempo.\nLas opciones b, c y d son incorrectas por las siguientes razones:\nb. Esta opción confunde la tasa de incidencia con la prevalencia.\nLa prevalencia es la proporción de individuos en una población que tienen una enfermedad (casos nuevos y existentes) en un momento dado, no en un intervalo de tiempo.\nc. Esta opción se refiere a una medida de transmisibilidad o contagiosidad, no a la tasa de incidencia.\nLa tasa de incidencia no tiene en cuenta el contacto con un caso índice.\nd. Esta opción parece referirse a la carga de la enfermedad, que es una medida de impacto que considera tanto la prevalencia como el efecto de la enfermedad en la calidad de vida.\nNo es lo mismo que la tasa de incidencia.\nPor lo tanto, la opción a es la correcta, ya que captura con precisión la definición operativa de la tasa de incidencia.\nEn esta pregunta desarrollamos la definición de incidencia y su comparación con prevalencia\nLa respuesta correcta es: La razón entre el número de casos nuevos de una enfermedad, que ocurre en un intervalo de tiempo determinado, en una población delimitada, sobre la población expuesta al riesgo de adquirir la referida enfermedad en el mismo período",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_021",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística descriptiva"
+    ],
+    "enunciado": "Un estudio informa que la mediana de supervivencia de los pacientes después del diagnóstico de cierto tipo de cáncer es de 6 años. Esta información implica que:",
+    "opciones": {
+      "a": "No hay ningún paciente que sobreviva menos de 6 años.",
+      "b": "La mitad de los pacientes sobreviven aproximadamente 6 años.",
+      "c": "No hay ningún paciente que sobreviva más de 6 años.",
+      "d": "La mitad de los pacientes sobreviven más de 6 años."
+    },
+    "correcta": "d",
+    "explicacion": "Para entender por qué esta es la opción correcta, es importante entender qué es la mediana en estadística.\nLa mediana es un tipo de medida de tendencia central que divide una distribución en dos partes iguales.\nEs decir, el 50% de los valores son menores que la mediana y el 50% de los valores son mayores.\nPor lo tanto, si la mediana de supervivencia es de 6 años, eso significa que el 50% de los pacientes sobreviven más de 6 años y el 50% de los pacientes sobreviven menos de 6 años.\nVeamos las otras opciones:\na. No hay ningún paciente que sobreviva menos de 6 años.\nEsta opción es incorrecta porque la mediana no indica el mínimo valor de la distribución.\nPuede haber pacientes que sobrevivan menos de 6 años.\nb. La mitad de los pacientes sobreviven aproximadamente 6 años. Esta opción también es incorrecta.\nAunque la mediana divide la distribución en dos partes iguales, no significa necesariamente que la mitad de los pacientes sobrevivan exactamente 6 años.\nPuede haber una variabilidad considerable en los tiempos de supervivencia de los pacientes.\nc. No hay ningún paciente que sobreviva más de 6 años. Esta opción es igualmente incorrecta.\nLa mediana no indica el valor máximo de la distribución. Puede haber pacientes que sobrevivan más de 6 años.\nAquí repasamos el concepto de mediana, una importante medida de resumen de tendencia central\nLa respuesta correcta es: La mitad de los pacientes sobreviven más de 6 años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_022",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "Un trabajo de investigación tiene validez externa si:",
+    "opciones": {
+      "a": "Sus resultados y su interpretación son coherentes con los métodos utilizados y estos métodos fueron los adecuados para responder el problema formulado",
+      "b": "Las conclusiones pueden generalizarse a otras poblaciones",
+      "c": "Encuentra una relación causa efecto tras la investigación",
+      "d": "Fue aprobado previamente por un comité de ética"
+    },
+    "correcta": "b",
+    "explicacion": "La validez externa de un estudio de investigación se refiere a qué grado los resultados de un estudio pueden ser generalizados o aplicables a otros contextos, situaciones, individuos o poblaciones.\nEn otras palabras, se refiere a la capacidad de un estudio para ser replicado y sus resultados para mantenerse consistentes en diferentes contextos y poblaciones.\nPor lo tanto, la opción b es la correcta ya que alude directamente a la definición de validez externa.\nLa opción a, \"Sus resultados y su interpretación son coherentes con los métodos utilizados y estos métodos fueron los adecuados para responder el problema formulado\" se refiere más a la validez interna de un estudio, que trata sobre si los resultados obtenidos son consistentes con el diseño y ejecución del estudio.\nLa opción c, \"Encuentra una relación causa efecto tras la investigación\" puede ser un aspecto de un estudio de investigación válido, pero no necesariamente se relaciona con la validez externa.\nEsta opción se refiere más a la relación entre las variables en un estudio, pero no indica si los resultados pueden ser aplicados a otras poblaciones o contextos.\nLa opción d, \"Fue aprobado previamente por un comité de ética\" es importante para la ética de la investigación, pero no tiene relación directa con la validez externa.\nLa aprobación ética asegura que el estudio se llevó a cabo de manera ética, pero no garantiza que los resultados sean generalizables.\nA partir de esta prequnta repasamos los conceptos de validez externa e interna.\nLa respuesta correcta es: Las conclusiones pueden generalizarse a otras poblaciones",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_023",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística inferencial"
+    ],
+    "enunciado": "¿Qué ocurre con el error aleatorio al aumentar el tamaño de la muestra?",
+    "opciones": {
+      "a": "No se modifica.",
+      "b": "Aumenta.",
+      "c": "Disminuye.",
+      "d": "Desaparece."
+    },
+    "correcta": "c",
+    "explicacion": "Para entender esta afirmación, es importante entender primero qué es el error aleatorio.\nEn la investigación, los errores aleatorios son aquellos que ocurren debido a la variabilidad inherente en los datos recolectados en una muestra.\nEn cuanto al tamaño de la muestra, se refiere al número de observaciones o individuos en un conjunto de datos o estudio.\nCuando se aumenta el tamaño de la muestra, se está incrementando la cantidad de datos que se están recopilando y analizando.\nEntonces, ¿qué ocurre con el error aleatorio cuando aumentamos el tamaño de la muestra? La respuesta es que disminuye.\nLa razón de esto es que a medida que se recopilan más datos, la influencia del error aleatorio en los resultados generales se diluye.\nEn otras palabras, con más datos, los efectos de las variaciones aleatorias individuales se equilibran, reduciendo el impacto del error aleatorio en los resultados finales.\nLas otras opciones pueden ser descartadas por las siguientes razones:\na. No se modifica. Esto es incorrecto porque, como se mencionó anteriormente, el error aleatorio se reduce con un tamaño de muestra más grande.\nb. Aumenta. Esta también es incorrecta. El error aleatorio no aumenta con un tamaño de muestra más grande; de hecho, sucede lo contrario.\nd. Desaparece. Si bien el error aleatorio se reduce con un tamaño de muestra más grande, no desaparece completamente.\nSiempre habrá alguna variabilidad inherente en los datos recopilados, por lo que siempre habrá algún grado de error aleatorio presente.\nEsta es una pregunta sobre el error por azar en epidemiología y su relación con el tamaño muestral.\nLa respuesta correcta es: Disminuye.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_024",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Qué ocurre con el error sistemático al aumentar el tamaño de la muestra?",
+    "opciones": {
+      "a": "No se modifica.",
+      "b": "Aumenta",
+      "c": "Disminuye",
+      "d": "Desaparece"
+    },
+    "correcta": "a",
+    "explicacion": " La respuesta correcta a la pregunta \"¿Qué ocurre con el error sistemático al aumentar el tamaño de la muestra?\" es: a) No se modifica.\nPara entender por qué esta es la respuesta correcta, primero debemos definir qué es el error sistemático.\nEl error sistemático o sesgo es un tipo de error que se genera por el diseño de la investigación.\nEste tipo de error puede ser causado por un sesgo en la recolección de datos, en el instrumento de medición, o cualquier otro factor que pueda influir en los resultados de una manera predecible y consistente.\nAhora, el tamaño de la muestra se refiere al número de observaciones o individuos que se incluyen en un estudio.\nAumentar el tamaño de la muestra puede ayudar a reducir el error aleatorio, que es un tipo de error que se produce debido a la variabilidad inherente en cualquier población.\nSin embargo, aumentar el tamaño de la muestra no tiene efecto sobre el error sistemático.\nEsto se debe a que el error sistemático es una función de la metodología del estudio, no del número de observaciones.\nPor lo tanto, incluso si aumentamos el tamaño de la muestra, el error sistemático permanecerá constante, a menos que se hagan cambios en la metodología del estudio para corregir el sesgo o el defecto que está causando el error sistemático.\nLas opciones b) Aumenta, c) Disminuye y d) Desaparece están incorrectas.\nEl error sistemático no aumenta, disminuye ni desaparece simplemente aumentando el tamaño de la muestra.\nEstas afirmaciones son incorrectas porque no reflejan la naturaleza del error sistemático y la forma en que este tipo de error se relaciona con el tamaño de la muestra.\nEn esta pregunta se evalúa el concepto de error sistemático o sesgo.\nLa respuesta correcta es: No se modifica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_025",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cómo se denomina a una revisión sistemática que combina estadísticamente resultados de dos o más estudios?",
+    "opciones": {
+      "a": "Reporte de casos",
+      "b": "Ensayos clínicos",
+      "c": "Metaanálisis",
+      "d": "Estudio de cohortes"
+    },
+    "correcta": "c",
+    "explicacion": "Un metaanálisis es el análisis estadístico que combina los resultados de múltiples estudios científicos abordando la misma pregunta. Esta es la característica principal que lo distingue de una revisión sistemática cualitativa.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_026",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "¿Cuál es la causa de mortalidad más importante en la Argentina?",
+    "opciones": {
+      "a": "Enfermedades infecciosas",
+      "b": "Cáncer.",
+      "c": "Accidentes de tránsito",
+      "d": "Enfermedades cardiovasculares"
+    },
+    "correcta": "d",
+    "explicacion": "Para entender la respuesta correcta, es importante comprender cada una de las opciones y cómo se relacionan con la mortalidad en Argentina.\na. Enfermedades infecciosas: Aunque las enfermedades infecciosas pueden ser mortales y son una causa significativa de muerte en muchas partes del mundo, no son la principal causa de muerte en Argentina.\nEsto se debe a las mejoras en las medidas de salud pública, como las vacunas y los antibióticos, que han reducido la incidencia de muchas enfermedades infecciosas.\nb. Cáncer: El cáncer es una causa importante de mortalidad en Argentina y en todo el mundo.\nSin embargo, no supera a las enfermedades cardiovasculares como la principal causa de muerte en Argentina.\nc. Accidentes de tránsito: Aunque los accidentes de tránsito pueden ser mortales y son una causa significativa de muerte entre ciertos grupos de edad, particularmente los jóvenes, no son la principal causa de muerte en Argentina.\nd. Enfermedades cardiovasculares: Las **enfermedades cardiovasculares**, que incluyen afecciones como la enfermedad coronaria, la insuficiencia cardíaca y el accidente cerebrovascular, son la principal causa de muerte en Argentina.\nEsto se debe a una combinación de factores, incluyendo la prevalencia de factores de riesgo de enfermedades cardiovasculares, como la hipertensión, el tabaquismo, la diabetes y la obesidad, y el envejecimiento de la población.\nPor lo tanto, basándonos en los datos epidemiológicos actuales, la respuesta correcta es d. Enfermedades cardiovasculares.\nEn esta pregunta repasamos las principales caudad de muerte en Argentina",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_027",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "¿Cómo se estima la esperanza de vida al nacer?",
+    "opciones": {
+      "a": "El porcentaje de personas que alcanzan los 70 años",
+      "b": "El número de años de vida perdidos por muerte prematura",
+      "c": "El número de personas fallecidas cada 1.000 habitantes",
+      "d": "El número de años que en promedio puede esperar vivir un nacido vivo, en una población y año determinado."
+    },
+    "correcta": "d",
+    "explicacion": "La **esperanza de vida al nacer** es un indicador demográfico que estima el promedio de años que un recién nacido podría vivir si las tasas de mortalidad específicas por edad permanecen constantes a lo largo de su vida.\nEste cálculo se realiza utilizando las tasas de mortalidad actuales para diferentes grupos de edad en una población específica, y es un indicador clave del estado de salud de una población.\nLas otras opciones proporcionadas no son correctas:\na. \"El porcentaje de personas que alcanzan los 70 años\" es un parámetro que no refleja la esperanza de vida al nacer ya que solo considera a las personas que han alcanzado una cierta edad, y no incluye las tasas de mortalidad para todos los grupos de edad.\nb. \"El número de años de vida perdidos por muerte prematura\" es un indicador de la carga de enfermedad y no un indicador de la esperanza de vida.\nEste parámetro mide el impacto de la mortalidad prematura en una población.\nc. \"El número de personas fallecidas cada 1.000 habitantes\" es una tasa de mortalidad general, no proporciona una estimación de la esperanza de vida al nacer.\nEsta medida simplemente indica la proporción de muertes en una población en un período de tiempo determinado, pero no refleja la distribución de las muertes por edad.\nPor lo tanto, la única opción que describe correctamente cómo se estima la esperanza de vida al nacer es \"El número de años que en promedio puede esperar vivir un nacido vivo, en una población y año determinado\".\nEn acts pronunta romacamne la definición de acnaranas da vida",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_028",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública"
+    ],
+    "enunciado": "El Índice de Desarrollo Humano (IDH) resulta de la siguiente ecuación:",
+    "opciones": {
+      "a": "Promedio del índice de esperanza de vida, el índice de nivel educacional y el índice de PBI ajustado",
+      "b": "Promedio del índice de esperanza de vida y necesidades básicas insatisfechas",
+      "c": "Promedio del índice de nivel educacional y el índice de PBI ajustado",
+      "d": "Promedio de Condiciones sanitarias, Hacinamiento, Asistencia escolar y Capacidad de subsistencia"
+    },
+    "correcta": "a",
+    "explicacion": "La opción correcta es **Índice de Desarrollo Humano (IDH)**, una medida compuesta que evalúa tres dimensiones básicas del desarrollo humano.\nEstas son: una vida larga y saludable, medida por la esperanza de vida al nacer;\nla educación, medida por la tasa de alfabetización de adultos y la tasa bruta de matrícula combinada en primaria, secundaria y terciaria;\ny un nivel de vida digno, medido por el producto bruto interno (PBI) per cápita ajustado por la paridad del poder adquisitivo.\nLa opción b se descarta porque el IDH no se calcula simplemente a partir de la esperanza de vida y las necesidades básicas insatisfechas.\nAunque estas son importantes para el desarrollo humano, no brindan una imagen completa sin la inclusión de la educación y el PBI per cápita.\nLa opción c se descarta porque, aunque incluye la educación y el PBI per cápita, omite la esperanza de vida, que es un indicador esencial de la salud y el bienestar de una población.\nLa opción d se descarta porque, si bien las condiciones sanitarias, el hacinamiento, la asistencia escolar y la capacidad de subsistencia son factores importantes para el desarrollo humano, no son los indicadores utilizados para calcular el IDH.\nEstos pueden ser indicadores más relevantes para otras medidas de desarrollo o bienestar, como las necesidades básicas insatisfechas (NBI), pero no para el IDH.\nEn esta pregunta repasamos los componentes del Índice de Desarrollo Humano",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_029",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "¿Que expresa la Tasa de Letalidad?",
+    "opciones": {
+      "a": "El número de muertes de todas las causas ocurridas en un año sobre la población estimada en la mitad del período.",
+      "b": "El número de muertes por causas determinadas sobre el número de enfermos por la misma causa.",
+      "c": "El número de muertes en determinado grupo de edad sobre la población estimada en ese mismo grupo de edad al centro del período.",
+      "d": "El número de muertes en menores de un año sobre el número de nacidos vivos"
+    },
+    "correcta": "b",
+    "explicacion": "La **Tasa de Letalidad** es una medida que se utiliza para evaluar la gravedad de una enfermedad específica.\nEspecíficamente, se refiere a la proporción de personas que mueren a causa de una enfermedad en particular entre las que la padecen en un periodo de tiempo determinado.\nEste indicador se utiliza para tener una idea de cuán peligrosa o letal puede ser una enfermedad.\nLa opción a. se refiere a la tasa de mortalidad general, que incluye todas las muertes, independientemente de la causa, en relación con la población total.\nEsta medida no se centra en una enfermedad específica, por lo que no puede ser la Tasa de Letalidad.\nLa opción c. describe la tasa de mortalidad específica por edad, que es el número de muertes en un grupo de edad específico en relación con la población total de ese grupo de edad.\nEsto tampoco es la Tasa de Letalidad ya que no se centra en una enfermedad específica.\nFinalmente, la opción d. describe la tasa de mortalidad infantil, que es el número de muertes en niños menores de un año en relación con el número total de nacidos vivos.\nAunque esta es una medida de mortalidad, no es la Tasa de Letalidad ya que no se refiere a una enfermedad específica.\nPor lo tanto, la opción correcta es b. El número de muertes por causas determinadas sobre el número de enfermos por la misma causa, que es la definición exacta de la Tasa de Letalidad.\nEn esta pregunta erpasamos la definición de letalidad, mortalidad general, mortalidad específica y mortalidad infentil",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_030",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "Dentro del indicador de mortalidad infantil, ¿qué mide la tasa de mortalidad posneonatal?",
+    "opciones": {
+      "a": "El riesgo de morir en el primer mes de vida",
+      "b": "El riesgo de morir en la primera semana de vida.",
+      "c": "El riesgo de morir en el primer año de vida.",
+      "d": "El riesgo de morir desde el fin del período neonatal hasta la edad de un año."
+    },
+    "correcta": "d",
+    "explicacion": "La pregunta se refiere al indicador de mortalidad infantil, específicamente a lo que mide la tasa de mortalidad posneonatal.\nPara poder analizar las opciones de respuesta, es crucial entender primero qué es la **tasa de mortalidad posneonatal**.\nLa tasa de mortalidad posneonatal se refiere al número de muertes de niños entre el final del período neonatal (28 días después del nacimiento) y el final del primer año de vida, por cada 1.000 nacidos vivos en un año determinado.\nAhora, examinemos las opciones de respuesta:\na. El riesgo de morir en el primer mes de vida.\nEsta opción es incorrecta porque se refiere a la tasa de mortalidad neonatal, no a la posneonatal.\nLa mortalidad neonatal cubre el período desde el nacimiento hasta los 28 días de vida.\nb. El riesgo de morir en la primera semana de vida.\nEsta opción también es incorrecta, ya que se refiere a la tasa de mortalidad neonatal temprana, que incluye las muertes en la primera semana de vida.\nc. El riesgo de morir en el primer año de vida.\nEsta opción incluye tanto la mortalidad neonatal como la posneonatal.\nLa tasa de mortalidad infantil es la que cubre el primer año completo de vida, incluyendo ambos períodos.\nd. El riesgo de morir desde el fin del período neonatal hasta la edad de un año.\nEsta es la opción correcta. Como mencionamos anteriormente, la tasa de mortalidad posneonatal mide el riesgo de muerte después del período neonatal (28 días después del nacimiento) hasta el final del primer año de vida.\nAquí nos preguntan sobre la finalidad del Informe Estadístico de Defunción.\nCertificación de muerte es un tema importante para el examen\nLa respuesta correcta es: El riesgo de morir desde el fin del período neonatal hasta la edad de un año.",
+    "explicacion_img": [
+      "img/explicaciones/saludpublica_mortalidad_posneonatal.jpg"
+    ],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_031",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública"
+    ],
+    "enunciado": "Un varón de 58 años con cirrosis hepática alcohólica diagnosticada hace 10 años, consulta al establecimiento de salud para diagnóstico y tratamiento de un cuadro de dolor abdominal, ascitis, desorientación y temblores en sus manos desde hace 10 días. Es internado por insuficiencia hepática, el cuadro clínico empeora, desarrolla encefalopatía hepática y fallece. ¿Cómo hace el Informe Estadístico de Defunción en el que debe registrar todas las causas que intervinieron en la muerte, desde la causa final (línea a), la causa intermedia (línea b) y la causa básica de muerte (línea с).",
+    "opciones": {
+      "a": "Causa final (línea a): encefalopatía hepática; causa intermedia (línea b): insuficiencia hepática; causa básica (línea c): cirrosis hepática alcohólica.",
+      "b": "Causa final (línea a): cirrosis hepática alcohólica; causa intermedia (línea b): encefalopatía hepática; causa básica (línea c): insuficiencia hepática.",
+      "c": "Causa final (línea a): cirrosis hepática alcohólica; causa intermedia (línea b) insuficiencia hepática; causa básica (línea c): coma.",
+      "d": "Causa final (línea a): encefalopatía hepática; causa intermedia (línea b): cirrosis hepática alcohólica; causa básica (línea c): insuficiencia hepática."
+    },
+    "correcta": "a",
+    "explicacion": "La **encefalopatía hepática** es la causa final de muerte en este caso.\nEl paciente presentaba síntomas como desorientación y temblores en sus manos, que son indicativos de esta condición.\nLa encefalopatía hepática generalmente se desarrolla como resultado de una enfermedad hepática grave, en este caso, insuficiencia hepática (causa intermedia).\nEn este caso, la insuficiencia hepática es el resultado de la cirrosis hepática alcohólica de larga data del paciente.\nLa **cirrosis hepática alcohólica** es la causa básica de la muerte.\nEsta es la enfermedad subyacente que llevó a la insuficiencia hepática y, en última instancia, a la encefalopatía hepática.\nLas opciones b, c y d son incorrectas porque no siguen la secuencia correcta de eventos que llevaron a la muerte del paciente.\nEn la opción b, por ejemplo, la cirrosis hepática alcohólica se menciona como la causa final, lo cual es incorrecto ya que la encefalopatía hepática es la que causó la muerte.\nEn la opción c, la insuficiencia hepática se menciona como la causa básica, lo cual es incorrecto ya que la causa básica es la cirrosis hepática alcohólica.\nEn la opción d, la cirrosis hepática alcohólica se menciona como la causa intermedia, lo cual también es incorrecto.\nEn esta pregunta nos piden, a partir de una caso clínico de una defunción, identificar causa básica, intermedia y directa de muerte.\nCertificación de muerte es un tema importante para el examen",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_032",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "En Argentina existen dos secciones de un mismo formulario para registrar una defunción: el certificado de defunción y el informe estadístico de defunción. El Modelo Internacional de Certificado Médico de Causas de Defunción, diseñado y recomendado por la OMS para el registro de las causas de muerte, forma parte del Informe Estadístico de Defunción ¿Cuál es la finalidad de registrar las causas de muerte bajo el diseño especial de este modelo?",
+    "opciones": {
+      "a": "Facilitar la identificación de la causa básica de la defunción.",
+      "b": "Dar valor legal a la defunción.",
+      "c": "Atestiguar que la persona falleció y dar inicio al trámite funerario correspondiente.",
+      "d": "Describir en detalle la historia clínica del paciente"
+    },
+    "correcta": "a",
+    "explicacion": "El enunciado nos habla de dos secciones de un formulario para registrar una defunción en Argentina: 1) el certificado de defunción y 2) el informe estadístico de defunción.\nLa opción correcta, a) \"Facilitar la identificación de la causa básica de la defunción\", es la que está en línea con la finalidad de la sección correspondiente al Informe estadístico de defunción.\nEsto se debe a que el objetivo principal de este certificado es proporcionar un registro estandarizado y sistemático de las causas de muerte, lo que facilita la identificación de patrones y tendencias que pueden ser utilizados para guiar las politicas de salud pública.\nLas otras opciones pueden ser descartadas por lo siguiente:\nb) \"Dar valor legal a la defunción\". El Informe estadístico de defunción no tiene un valor legal.\nLa sección correspondiente al Certificado de defunción sí es la que tiene ese objetivo legal.\nc) \"Atestiguar que la persona falleció y dar inicio al trámite funerario correspondiente\".\nEste es el propósito de la sección correspondiente al certificado de defunción.\nd) \"Describir en detalle la historia clínica del paciente\". Aunque la historia clínica puede ser relevante para determinar la causa de la muerte, la información detallada tipo historia clínica no se registra en el Informe estadístico de defunción.\nEn esta pregunta repasamos el principal objetivo del Informe estadístico de defunción.\nCertificación de muerte es un tema importante para el examen",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_033",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medidas epidemiológicas de frecuencia"
+    ],
+    "enunciado": "Los años de vida ajustados por discapacidad (DALYs) se calculan como:",
+    "opciones": {
+      "a": "La diferencia entre la edad de la muerte prematura y un punto de corte arbitrario",
+      "b": "La suma de los Años de vida potenciales perdidos y los Años perdidos por discapacidad",
+      "c": "La multiplicación de los años de vida con discapacidad y un factor de severidad",
+      "d": "La cantidad de años que viviría un recién nacido si los patrones de mortalidad vigentes al nacimiento no cambiaran a lo largo de la vida del infante."
+    },
+    "correcta": "b",
+    "explicacion": "Para desarrollar nuestra respuesta, primero debemos entender qué son los años de vida ajustados por discapacidad (DALYs).\nLos **DALYs** son una medida de la carga global de enfermedad y representan la pérdida de salud en términos de años de vida debido a la enfermedad, discapacidad o muerte prematura.\nLa opción a, \"La diferencia entre la edad de la muerte prematura y un punto de corte arbitrario\", no es correcta porque esta es la forma de calcular los años de vida pérdidos por muerte prematura (YLL), que son solo un componente de los DALYS\nLa opción b, \"La suma de los Años de vida potenciales perdidos y los Años perdidos por discapacidad\", es la correcta.\nLos DALYs se calculan sumando dos componentes: los años de vida potencialmente perdidos debido a la muerte prematura (YLL) y los años vividos con discapacidad (YLD).\nEI YLD se calcula a partir del número de casos de una enfermedad o lesión específica, la duración de la enfermedad o lesión y un factor de ponderación de la incapacidad.\nLa opción c, \"La multiplicación de los años de vida con discapacidad y un factor de severidad\", es incorrecta porque los DALYs no son el resultado de esta multiplicación, sino de una suma de dos componentes: YLL y YLD.\nLa opción d, \"La cantidad de años que viviría un recién nacido si los patrones de mortalidad vigentes al nacimiento no cambiaran a lo largo de la vida del infante\", es incorrecta porque esta definición corresponde a la esperanza de vida al nacer, no a los DALYS.\nPara resolver esta pregunta tenemos que conocer cómo se calculan los indicadores de carga de enfermedad: años de vida perdidos, años de vida perdidos por discapacidad (YLD) y años de vida ajustados por discapacidad (DALYS)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_034",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "Usted está diseñando un estudio sobre colestasis gravídica y utiliza una escala de medición del prurito donde \"0\" equivale a ausencia de este, \"1\" a prurito moderado y \"2\", a prurito severo. ¿Qué tipo de escala está utilizando?",
+    "opciones": {
+      "a": "Ordinal",
+      "b": "Discreta",
+      "c": "Nominal",
+      "d": "Continua"
+    },
+    "correcta": "a",
+    "explicacion": "En el enunciado de la pregunta, se nos presenta una escala de medición del prurito en la que se asignan números a distintos niveles de severidad del prurito, desde la ausencia de este hasta el prurito severo.\nEste tipo de escala es una escala **ordinal**.\nLas escalas ordinales se utilizan para clasificar y ordenar los datos en categorías que pueden ser jerarquizadas.\nEs decir, se pueden establecer relaciones de mayor a menor o viceversa.\nEn este caso, el \"2\" (prurito severo) representa un grado de prurito mayor que el \"1\" (prurito moderado), y este a su vez mayor que el \"0\" (ausencia de prurito).\nPor otro lado, las escalas nominales también clasifican los datos en categorías, pero estas no pueden ser ordenadas jerárquicamente.\nLas escalas discretas, en cambio, se refieren a variables que pueden tomar valores contados, es decir, números enteros.\nAunque en nuestro caso los valores de la escala son números enteros, no estamos ante una escala discreta porque los números representan categorías ordenadas, no valores contados.\nFinalmente, las escalas continuas se refieren a variables que pueden tomar cualquier valor dentro de un rango continuo.\nEstas escalas se utilizan para medir variables como el peso o la altura, que pueden tomar cualquier valor dentro de un rango y no sólo números enteros.\nEn nuestro caso, la escala de medición del prurito no es una escala continua porque sólo puede tomar tres valores posibles: 0, 1 y 2.\nPor tanto, la elección correcta es la opción a. Ordinal, ya que la escala que se utiliza en el estudio sobre colestasis gravídica para medir el prurito es una escala que clasifica y ordena los datos en categorías jerarquizadas.\nPara resolver esta pregunta tenemos que conocer las escalas en las que se miden las variables: cualitativas (nominales y ordinales) y cuantitativas (discretas o continuas)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_035",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "¿Cuándo se produce una epidemia?",
+    "opciones": {
+      "a": "Cuando se describe el fenómeno de salud enfermedad en una población específica, en un lugar y en un período de tiempo",
+      "b": "Cuando una enfermedad o evento relacionado con la salud supera o excede la frecuencia usual en una población específica, en un lugar y período de tiempo determinado",
+      "c": "Cuando una enfermedad o evento supera o excede la frecuencia usual en la población mundial y en un período de tiempo",
+      "d": "Cuando una enfermedad o evento posee una presencia usual, histórica en una comunidad o población determinada en un período de tiempo"
+    },
+    "correcta": "b",
+    "explicacion": "La definición de **epidemia**, según la Organización Mundial de la Salud (OMS), es el aumento, a menudo súbito, en el número de casos de una enfermedad por encima de lo que se esperaría normalmente en la población en esa área.\nEsta definición coincide con la opción b y es el motivo por el cual esta es la opción correcta.\nAnalizando las demás opciones, podemos descartarlas por las siguientes razones:\nLa opción a: \"Cuando se describe el fenómeno de salud enfermedad en una población específica, en un lugar y en un período de tiempo\" es incorrecta porque la simple descripción de un fenómeno de salud- enfermedad no constituye una epidemia.\nUna epidemia implica un aumento notable en la frecuencia de la enfermedad, no solo su descripción.\nLa opción c: \"Cuando una enfermedad o evento supera o excede la frecuencia usual en la población mundial y en un período de tiempo\" hace referencia a una pandemia, no a una epidemia.\nUna pandemia es una epidemia que afecta a muchos países o continentes, o incluso a todo el mundo, no solo a una población específica.\nLa opción d: \"Cuando una enfermedad o evento posee una presencia usual, histórica en una comunidad o población determinada en un período de tiempo\" es incorrecta porque se refiere a una endemia, no a una epidemia.\nUna endemia es una enfermedad que está constantemente presente en una población o área geográfica específica.\nEn esta pregunta repasamos las definiciones de epidemia, brote, pandemia y endemia",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_036",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "De acuerdo al documento \"El Sistema de Salud Argentino y su trayectoria de Largo Plazo: Logros Alcanzados y desafíos futuros \"(OPS/CEPAL, 2011) el Sistema de Salud en la Argentina se caracteriza por su fragmentación. ¿Qué tipos de fragmentación señala el documento?",
+    "opciones": {
+      "a": "De derechos, regulatoria y territorial",
+      "b": "De acceso, equidad y financiamiento",
+      "c": "De atención, igualdad y género",
+      "d": "De políticas sanitarias, gasto y efectividad"
+    },
+    "correcta": "a",
+    "explicacion": "En el contexto de la salud, la **fragmentación** se refiere a la falta de integración y coordinación en la prestación de servicios de salud.\nEn el documento de la OPS/CEPAL, se señalan tres tipos de fragmentación en el sistema de salud argentino: de derechos, regulatoria y territorial.\nLa fragmentación de derechos se refiere a las diferencias en el acceso a los servicios de salud y en la calidad de estos, dependiendo de los derechos de salud que se tengan.\nEsto puede estar determinado por factores como el tipo de seguro de salud que se tenga o la región en la que se viva.\nLa fragmentación regulatoria se refiere a la falta de una regulación uniforme en todo el sistema de salud.\nEsto puede llevar a variaciones en la calidad y el acceso a los servicios de salud.\nLa fragmentación territorial se refiere a las diferencias en el acceso y la calidad de los servicios de salud dependiendo de la región en la que se viva.\nLas demás opciones (b,c,y d) pueden ser aspectos de la salud que se ven afectados por la fragmentación, pero no son tipos de fragmentación en sí mismos.\nPor ejemplo, la equidad (opción b) puede verse afectada por la fragmentación de derechos, pero no es un tipo de fragmentación en si misma.\nLo mismo ocurre con la igualdad y el género (opción c) y con las políticas sanitarias, el gasto y la efectividad (opción d).\nEstos son aspectos de la salud que pueden ser influenciados por la fragmentación, pero no son tipos de fragmentación.\nEsta es una pregunta sobre la fragmentación, una característica del sistema de salud.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_037",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "Una prueba diagnóstica tiene una especificidad del 90% para la detección de un patógeno en sangre. ¿Cuál de los siguientes enunciados es correcto en referencia a este estudio?",
+    "opciones": {
+      "a": "Será positiva en 90 de cada 100 individuos enfermos",
+      "b": "Un individuo con la prueba negativa tiene un 90% de probabilidades de NO tener la enfermedad",
+      "c": "Será negativa en 90 de cada 100 individuos sanos",
+      "d": "Un individuo con la prueba positiva tiene un 90% de probabilidades de tener la Enfermedad"
+    },
+    "correcta": "c",
+    "explicacion": "Para analizar correctamente el enunciado, es importante comprender el concepto de **especificidad** de una prueba diagnóstica.\nLa especificidad es la probabilidad de que una prueba diagnóstica sea negativa en personas que no tienen la enfermedad.\nEn otras palabras, es la habilidad de la prueba para identificar correctamente a los individuos sanos.\nPor lo tanto, si una prueba tiene una especificidad del 90%, significa que será negativa en 90 de cada 100 individuos sanos, es decir, la prueba tiene un 90% de probabilidad de identificar correctamente a los individuos que NO tienen la enfermedad.\nAhora, analicemos las opciones incorrectas:\na. Será positiva en 90 de cada 100 individuos enfermos.\nEste enunciado describe la sensibilidad de la prueba, no su especificidad.\nLa sensibilidad es la probabilidad de que una prueba sea positiva en personas que tienen la enfermedad.\nb. Un individuo con la prueba negativa tiene un 90% de probabilidades de NO tener la enfermedad.\nEste enunciado describe el valor predictivo negativo de la prueba, no su especificidad.\nEl valor predictivo negativo es la probabilidad de que un individuo no tenga la enfermedad, dado que la prueba es negativa.\nd. Un individuo con la prueba positiva tiene un 90% de probabilidades de tener la enfermedad.\nEste enunciado describe el valor predictivo positivo de la prueba, no su especificidad.\nEl valor predictivo positivo es la probabilidad de que un individuo tenga la enfermedad, dado que la prueba es positiva.\nEsta pregunta evalúa el concepto de especificidad, dentro del tema validez de estudios diagnósticos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_038",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Un ensayo clínico controlado, diseñado para evaluar riesgo de ACV en pacientes hipertensos, reportó un riesgo absoluto de 12% en pacientes tratados y de 20% de pacientes no tratados. La reducción de riesgo relativo (RRR) es una medida usada habitualmente para expresar el porcentaje de reducción del evento en el grupo tratado relativo al basal. En el estudio citado la RRR reportada fue de:",
+    "opciones": {
+      "a": "16%",
+      "b": "8%",
+      "c": "60%",
+      "d": "40%"
+    },
+    "correcta": "d",
+    "explicacion": "El riesgo absoluto es la probabilidad de que un evento ocurra en un grupo específico de personas en un período de tiempo determinado.\nEn este caso, el ensayo clínico reportó un riesgo absoluto del 12% en pacientes tratados y del 20% en pacientes no tratados para el accidente cerebrovascular (ACV).\nLa **reducción del riesgo relativo (RRR)** se calcula utilizando la fórmula: RRR = (Riesgo en el grupo control - Riesgo en el grupo de tratamiento) / Riesgo en el grupo control.\nEsta fórmula nos permite cuantificar la reducción del riesgo de un evento en el grupo tratado en comparación con el grupo control.\nAplicando la fórmula a los datos proporcionados, obtenemos: $RRR = (20\\% - 12\\%) / 20\\% = 0.4$ lo que se traduce en un 40% de reducción de riesgo relativo. Por tanto, la respuesta correcta es 40%.\nEn esta pregunta repasamos el concepto de Reducción de Riesgo Relativo, medida utilizada en los ensayos clínicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_039",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Análisis de asociación"
+    ],
+    "enunciado": "Si en un grupo tratado con la droga A la probabilidad de tromboembolismo pulmonar es 6% y en el grupo no tratado del 12%, ¿Cuál es el significado de la relación de estos datos?",
+    "opciones": {
+      "a": "La RRR (reducción de riesgo relativo) = 50% y el RRA (reducción del riesgo absoluto) = 6%",
+      "b": "El RR (riesgo relativo) para el grupo tratado con la droga A es = 2 y la RRR (reducción de riesgo relativo) = 50%.",
+      "c": "El RR (riesgo relativo) = 0.5% y la RRR (reducción de riesgo relativo) = 6%.",
+      "d": "El RR (riesgo relativo) = 0.5% y el RRA (reducción del riesgo absoluto) = 50%."
+    },
+    "correcta": "a",
+    "explicacion": "El **Riesgo Relativo (RR)** es una medida de la asociación que compara el riesgo de un evento particular (en este caso, tromboembolismo pulmonar) en dos grupos.\nSe calcula como el riesgo en el grupo tratado dividido por el riesgo en el grupo no tratado.\nEn este caso, el RR sería 0.5 (6% / 12%).\nLa **Reducción del Riesgo Relativo (RRR)** es la disminución porcentual en el riesgo de un evento en el grupo tratado en comparación con el grupo no tratado.\nSe calcula como (1 - RR) * 100%.\nEn este caso, la RRR sería del 50% ((1 - 0.5) * 100%).\nLa **Reducción del Riesgo Absoluto (RRA)** es la diferencia absoluta en las tasas de riesgo entre el grupo control y el grupo tratado.\nEn este caso, la RRA sería del 6% (12% - 6%).\nEn esta pregunta nos dan los resultados de un ensayo clínico y nos piden calcular algunas medidas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_040",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Estadística descriptiva"
+    ],
+    "enunciado": "Como parte de un estudio nutricional, en un centro de salud se está realizando una investigación sobre la evolución de la obesidad de los niños y adolescentes atendidos en los últimos 10 años. Se trabaja con tablas anuales que registran el peso y la altura de todos los pacientes atendidos. ¿Cuál de las siguientes medidas de tendencia central le permitirá analizar la distribución de peso y altura de los niños y adolescentes evaluados?",
+    "opciones": {
+      "a": "Media",
+      "b": "Coeficiente de variación.",
+      "c": "Modo.",
+      "d": "Desvío estándar."
+    },
+    "correcta": "a",
+    "explicacion": "La **media**, también conocida como el promedio, es una medida de tendencia central que se calcula sumando todos los valores en un conjunto de datos y luego dividiéndolos por la cantidad de valores en ese conjunto.\nEn el contexto de este estudio, calcular la media del peso y la altura de los niños y adolescentes permitiría obtener un valor promedio que refleje la tendencia general en la distribución de estos datos.\nEsta medida es útil para entender la tendencia general en un grupo grande de datos.\nEl coeficiente de variación (b) es una medida de dispersión relativa que se utiliza para comparar la variabilidad de dos o más conjuntos de datos.\nNo es útil para analizar la tendencia central de un conjunto de datos, por lo que no sería la mejor opción en este caso.\nEl modo (c) es la medida de tendencia central que refleja el valor que aparece con mayor frecuencia en un conjunto de datos.\nEn un estudio de esta naturaleza, donde se registran las medidas de peso y altura de los niños y adolescentes, es poco probable que haya un peso o altura que se repita con tanta frecuencia como para ser considerado el modo.\nEl desvío estándar (d) es una medida de la cantidad de variación o dispersión en un conjunto de valores.\nAl igual que el coeficiente de variación, el desvío estándar no es una medida de tendencia central y por lo tanto no sería la mejor opción para analizar la distribución de peso y altura en este estudio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_041",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Evaluación de pruebas diagnósticas"
+    ],
+    "enunciado": "La PPD es tomada como positiva a partir de 10 mm de eritema e induración. El Jefe del Departamento de Infecciosas decide que la prueba resultará positiva a partir de 12 mm. Con esta nueva estrategia, ¿cuál de los siguientes enunciados es verdadero?:",
+    "opciones": {
+      "a": "Aumenta la incidencia",
+      "b": "Aumenta la prevalencia",
+      "c": "Disminuye la especificidad",
+      "d": "Aumenta la especificidad",
+      "e": "Aumenta la sensibilidad"
+    },
+    "correcta": "d",
+    "explicacion": "Para la opción correcta, primero necesitamos entender algunos conceptos clave: la especificidad y la sensibilidad de una prueba.\nLa **especificidad** de una prueba se refiere a su capacidad para identificar correctamente a los individuos que no tienen la enfermedad.\nEn otras palabras, una prueba con alta especificidad tendrá menos falsos positivos.\nPor otro lado, la **sensibilidad** de una prueba se refiere a su capacidad para identificar correctamente a los individuos que tienen la enfermedad, es decir, una prueba con alta sensibilidad tendrá menos falsos negativos.\nSi aumentamos el umbral para que una prueba de PPD sea considerada positiva de 10 mm a 12 mm, estamos esencialmente haciendo que la prueba sea menos sensible, ya que será menos capaz de identificar a las personas que tienen la enfermedad pero cuyo eritema e induración son menores de 12 mm.\nSin embargo, al mismo tiempo, estamos aumentando la especificidad de la prueba, ya que será más capaz de identificar correctamente a los individuos que no tienen la enfermedad (menos falsos positivos).\nPor lo tanto, en este caso, la afirmación correcta es que aumenta la especificidad de la prueba.\nLas otras opciones son incorrectas ya que no reflejan los cambios en la sensibilidad y especificidad que resultan de aumentar el umbral de positividad de la prueba.\nEn esta pregunta se evalúa la relación entre el punto de corte de una prueba diagnóstica y la sensibilidad/especificidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_042",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Medicina basada en la evidencia"
+    ],
+    "enunciado": "¿Cuál de los siguientes trabajos de investigación es el que aporta mayor grado de evidencia?:",
+    "opciones": {
+      "a": "Estudio de caso control",
+      "b": "Reporte de casos",
+      "c": "Estudio randomizado, controlado",
+      "d": "Opinión de Comité de expertos",
+      "e": "Estudio de cohortes"
+    },
+    "correcta": "c",
+    "explicacion": "Analicemos las opciones:\na. El estudio de caso control es un tipo de estudio observacional.\nLos investigadores eligen a personas con una condición (los casos) y a personas similares sin la condición (los controles) y luego miran hacia atrás en el tiempo para ver cómo las tasas de exposición a un factor de riesgo difieren entre los dos grupos.\nAunque este tipo de estudio puede proporcionar información valiosa, no proporciona un alto nivel de evidencia debido a su diseño retrospectivo y a la posibilidad de sesgos y factores de confusión.\nb. El reporte de casos es una descripción detallada de los síntomas, signos, diagnóstico, tratamiento y seguimiento de un paciente individual.\nEste tipo de estudio puede ser útil para generar nuevas hipótesis para futuras investigaciones, pero no proporciona un alto nivel de evidencia porque no incluye un grupo de control y no permite evaluar asociaciones.\nc. El **estudio randomizado controlado (RCT)** es un tipo de estudio experimental en el que los participantes son asignados al azar a uno de dos o más grupos: un grupo de intervención que recibe el tratamiento en estudio y un grupo de control que recibe un placebo o el tratamiento estándar.\nLos RCTs son considerados el estándar de oro en la investigación médica porque su diseño reduce el sesgo y permite hacer inferencias causales.\nPor lo tanto, este es el tipo de estudio que proporciona el mayor grado de evidencia.\nd. La opinión de un Comité de expertos es una declaración basada en la experiencia y el juicio de un grupo de expertos en el campo.\nAunque puede ser útil para guiar la práctica clínica en áreas donde la evidencia es limitada, no proporciona un alto nivel de evidencia porque no se basa en la investigación sistemática y puede estar influenciada por las opiniones y los prejuicios individuales.\ne. El estudio de cohortes es un tipo de estudio observacional en el que los investigadores siguen a grupos de personas (cohortes) a lo largo del tiempo para ver cómo las exposiciones afectan a los resultados de salud.\nEste tipo de estudio puede proporcionar un alto nivel de evidencia, especialmente si es prospectivo y bien diseñado, pero todavía está sujeto a ciertos sesgos y no permite hacer inferencias causales de la misma forma que un RCT.\nEn esta pregunta repasamos el nivel de evidencia generado por distintos diseños de estudios epidemiológicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_043",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública"
+    ],
+    "enunciado": "La demografía estudia las poblaciones y sus variaciones en el tiempo ¿Qué se considera como crecimiento vegetativo de una población?",
+    "opciones": {
+      "a": "El cociente entre la natalidad y la mortalidad.",
+      "b": "La diferencia entre la natalidad, la mortalidad y las migraciones.",
+      "c": "La diferencia entre la natalidad y la mortalidad.",
+      "d": "La relación entre la inmigración y la emigración externa."
+    },
+    "correcta": "c",
+    "explicacion": "El **crecimiento vegetativo** es un concepto clave que se refiere específicamente a la diferencia entre la tasa de natalidad y la tasa de mortalidad de una población en un período de tiempo determinado.\nPor lo tanto, la opción c, que define el crecimiento vegetativo como la \"diferencia entre la natalidad y la mortalidad\", es la correcta.\nEste concepto no incluye las migraciones, ya que se refiere únicamente al crecimiento natural de la población, sin tener en cuenta los movimientos migratorios.\nPor tanto, podemos descartar la opción b que incluye las migraciones en su definición.\nLa opción a, por otro lado, habla del \"cociente entre la natalidad y la mortalidad\".\nEsto no es correcto ya que el crecimiento vegetativo no se calcula como un cociente o ratio, sino que se trata de una resta entre las tasas de natalidad y mortalidad.\nFinalmente, la opción d, \"la relación entre la inmigración y la emigración externa\", tampoco es correcta.\nEste concepto se refiere a la migración neta o saldo migratorio, no al crecimiento vegetativo.\nLa migración neta es el balance entre las personas que entran a una población (inmigración) y las que salen (emigración).\nEn resumen, el crecimiento vegetativo de una población se considera como la diferencia entre la natalidad y la mortalidad.\nEste concepto es esencial para entender cómo una población cambia a lo largo del tiempo, independientemente de la migración.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_044",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "¿A qué tipo de estudio corresponde aquel que evalúa el efecto del uso de diclofenac durante 10 años en una población inicialmente sana?",
+    "opciones": {
+      "a": "Casos y controles",
+      "b": "Cohorte",
+      "c": "Transversal",
+      "d": "Ensayo controlado"
+    },
+    "correcta": "b",
+    "explicacion": "Es una pregunta tramposa, ya que se estudió un fármaco y estamos acostumbrados a que si hay fármacos involucrados, se trate de un ensayo clínico.\nSin embargo, no menciona un grupo control y dice que se utilizó en \"población inicialmente sana\".\nEsto no es lo típico de un ensayo clínico, donde se suele evaluar la eficacia de un fármaco para tratar personas enfermas.\nLa clave de la respuesta está en que es un estudio con seguimiento que inicia sobre población sana.\nLa única opción que coincide con esas características es \"**cohortes**\".\nEs cierto que los estudios de cohorte son costosos y más aún si son de larga duración, pero esto no quiere decir que no puedan realizarse por muchos años.\nEl estudio de cohortes Framingham empezó en 1948 y aún continúa.\nLos estudios transversales y de casos y controles, que están entre las opciones, no tienen seguimiento, por lo cual son opciones incorrectas.\nEn esta pregunta nos describen un estudio y tenemos que indicar a que diseño corresponde.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_045",
+    "materia": [
+      "saludpublica",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública",
+      "Vigilancia epidemiológica"
+    ],
+    "enunciado": "¿Cuál de las siguientes enfermedades es de notificación inmediata al sistema nacional de vigilancia en salud (SNVS2.0)?",
+    "opciones": {
+      "a": "Arbovirosis.",
+      "b": "Parotiditis.",
+      "c": "Brucelosis.",
+      "d": "Hidatidosis."
+    },
+    "correcta": "a",
+    "explicacion": "La **Arbovirosis** es una enfermedad transmitida por artrópodos, como los mosquitos, que incluye afecciones como el dengue, el zika y el chikungunya.\nEstas enfermedades son de notificación inmediata debido a su rápida propagación y potencial para causar brotes epidémicos.\nLos sistemas de salud pública necesitan información inmediata sobre estos casos para poder responder de manera efectiva y rápida, implementando medidas de control y prevención para minimizar su impacto en la población.\nPor otro lado, las otras opciones presentadas, aunque son enfermedades que requieren atención médica y seguimiento, no son de notificación inmediata al SNVS2.0.\nLa b. Parotiditis, también conocida como paperas, es una enfermedad viral que afecta principalmente a los niños y causa inflamación de las glándulas salivales.\nAunque puede ser grave, su propagación es más lenta y predecible que la de las arbovirosis.\nLa c. Brucelosis es una enfermedad zoonótica causada por varias especies de bacterias del género Brucella.\nSe transmite a los humanos a través del contacto con animales infectados o productos animales contaminados.\nAunque es una enfermedad grave, su transmisión no es tan rápida ni tan amplia como la de las arbovirosis.\nFinalmente, la d. Hidatidosis es una enfermedad parasitaria causada por un tipo de tenia.\nSe transmite a los humanos a través del contacto con heces de perros infectados o la ingestión de alimentos contaminados.\nAunque es una enfermedad grave, su transmisión es mucho más lenta y menos probable que la de las arbovirosis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_046",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la epidemiología"
+    ],
+    "enunciado": "Un paciente de 55 años concurre a control de salud. Presenta como antecedentes hipertensión arterial e hipercolesterolemia. En relación a la enfermedad cardiovascular, la edad del paciente puede definirse como:",
+    "opciones": {
+      "a": "Factor de riesgo.",
+      "b": "Marcador de riesgo.",
+      "c": "Tendencia de exposición.",
+      "d": "Riesgo absoluto."
+    },
+    "correcta": "b",
+    "explicacion": "Analicemos las opciones:\na. Factor de riesgo: un factor de riesgo se refiere a cualquier exposición modificable de un individuo que aumenta la probabilidad de desarrollar una enfermedad o lesión.\nDado que la edad no puede ser modificada por individuo, la edad no se clasifica como factor de riesgo.\nb. **Marcador de riesgo**: Un marcador de riesgo es un rasgo no modificable por el individuo, que aumenta de la probabilidad de una enfermedad.\nLa edad no puede modificarse, por ejemplo, a través de cambios del estilo de vida, por lo cual se considera como un marcador de riesgo.\nc. Tendencia de exposición: Este término generalmente se refiere a la longitud o frecuencia de la exposición a un factor de riesgo particular.\nEn este contexto, la edad no es una \"tendencia de exposición\", ya que no es algo a lo que una persona está expuesta, sino una característica inherente.\nPor lo tanto, esta opción es incorrecta.\nd. Riesgo absoluto: El riesgo absoluto se refiere a la probabilidad de que una persona desarrolle una enfermedad específica durante un período de tiempo determinado.\nAunque la edad puede afectar el riesgo absoluto de enfermedad cardiovascular, la edad en sí misma no es un \"riesgo absoluto\".\nPor lo tanto, esta opción es incorrecta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_047",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Validez y fiabilidad"
+    ],
+    "enunciado": "¿Cuál de los siguientes diseños de estudio es particularmente susceptible de presentar sesgos de selección?",
+    "opciones": {
+      "a": "Cohorte.",
+      "b": "Ensayo randomizado.",
+      "c": "Transversal.",
+      "d": "Casos y controles."
+    },
+    "correcta": "d",
+    "explicacion": "Primero debemos entender qué es un **sesgo de selección** y cómo puede afectar los diferentes tipos de diseños de estudio.\nEl sesgo de selección es una distorsión sistemática en la estimación del efecto de una exposición sobre un evento, debido a la forma en que los sujetos son seleccionados para el estudio.\nUn estudio puede ser susceptible a diferentes tipos de sesgos, incluyendo el sesgo de selección.\na. Cohorte: En un estudio de cohorte, los participantes son seleccionados basándose en su estado de exposición y luego se les sigue en el tiempo para determinar si desarrollan el resultado de interés.\nAunque este diseño puede ser susceptible a sesgos de selección, generalmente es menos susceptible que otros diseños porque los participantes son seleccionados antes de que se conozcan los resultados.\nb. Ensayo randomizado: Este es el diseño menos susceptible a sesgos de selección porque los participantes son asignados al azar a los grupos de exposición y control.\nEsto asegura que cualquier factor que pueda influir en el resultado está igualmente distribuido entre los grupos, lo que reduce la probabilidad de sesgo de selección.\nc. Transversal: En un estudio transversal, la exposición y el resultado se miden al mismo tiempo, por lo que no puede haber sesgo de selección basado en la enfermedad.\nd. **Casos y controles**: Este diseño es particularmente susceptible a sesgos de selección porque los participantes son seleccionados basándose en su enfermedad.\nSi hay factores que influyen tanto en la exposición como en la probabilidad de ser seleccionado como caso o control, puede introducirse un sesgo de selección.\nAdemás, si los controles no son representativos de la población de la que se seleccionaron los casos, puede introducirse un sesgo de selección.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_048",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "¿Cuál es el valor de la Tasa Global de Fecundidad promedio en Argentina (2015)?",
+    "opciones": {
+      "a": "1,5",
+      "b": "2",
+      "c": "2,3",
+      "d": "3,1"
+    },
+    "correcta": "c",
+    "explicacion": "La **Tasa Global de Fecundidad (TGF)** es un indicador demográfico que mide el número promedio de hijos que tendría una mujer durante su vida reproductiva (entre los 15 y 49 años) si experimentara las tasas de fecundidad por edad específicas de un período determinado.\nLa elección de la opción correcta se basa en datos estadísticos.\nLa Tasa Global de Fecundidad en Argentina en 2015 fue de 2,3 hijos por mujer.\nEs importante mencionar que la TGF es un indicador clave para entender las tendencias demográficas y de salud reproductiva de un país.\nUn valor de 2,1 se considera el nivel de reemplazo de la población, es decir, el nivel de fecundidad necesario para que una población se reemplace a sí misma de generación en generación, sin migración.\nUn valor superior a 2,1 indica un crecimiento poblacional, mientras que un valor inferior señala un decrecimiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_049",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "De acuerdo a los \"Indicadores Básicos 2017 del Ministerio de Salud de la Nación\" ¿qué representa la tasa de crecimiento anual medio?",
+    "opciones": {
+      "a": "El número de años que en promedio puede esperar vivir un nacido vivo en una población y año determinado.",
+      "b": "El número medio de personas que anualmente se incorpora a la población por cada mil habitantes.",
+      "c": "La acumulación de nacimientos y defunciones en una población y año determinado.",
+      "d": "El número medio de hijos por mujer que en un período dado habría nacido por cada mil mujeres sometidas a las tasas de fecundidad observadas para ese período."
+    },
+    "correcta": "b",
+    "explicacion": "\"El número medio de personas que anualmente se incorpora a la población por cada mil habitantes\" coincide con el concepto de **tasa de crecimiento anual medio**, que es una medida demográfica que indica el incremento medio anual de la población en relación a la población total, expresado por cada mil habitantes.\nLas demás opciones pueden ser descartadas por las siguientes razones:\na. \"El número de años que en promedio puede esperar vivir un nacido vivo en una población y año determinado.\"\nEsto describe la esperanza de vida al nacer, no la tasa de crecimiento anual medio.\nc. \"La acumulación de nacimientos y defunciones en una población y año determinado.\"\nEsto parece referirse al crecimiento natural de la población, que es la diferencia entre la tasa de natalidad y la tasa de mortalidad, pero no refleja la tasa de crecimiento anual medio.\nd. \"El número medio de hijos por mujer que en un período dado habría nacido por cada mil mujeres sometidas a las tasas de fecundidad observadas para ese período.\"\nEsta opción describe la tasa de fecundidad total, que es el número promedio de hijos que tendría una mujer a lo largo de su vida si experimentara las tasas de fecundidad por edad observadas en un año dado, pero no es la tasa de crecimiento anual medio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_050",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Datos de nuestro país"
+    ],
+    "enunciado": "¿Qué estrato socioeconómico presenta un crecimiento vegetativo superior en Argentina?",
+    "opciones": {
+      "a": "Alto",
+      "b": "Medio",
+      "c": "Bajo",
+      "d": "Es igual para todos los estratos"
+    },
+    "correcta": "c",
+    "explicacion": "Algunos estudios han sugerido que las tasas de natalidad y las tasas de crecimiento vegetativo son más altas en los estratos socioeconómicos más **bajos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_051",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "El muestreo por clusters o racimos es una técnica de muestreo:",
+    "opciones": {
+      "a": "No probabilística aplicable a los diseños cualitativos",
+      "b": "No probabilística específica de los diseños cuantitativos",
+      "c": "Probabilística específica de los diseños cuantitativos",
+      "d": "Probabilística aplicable a diseños cualitativos"
+    },
+    "correcta": "c",
+    "explicacion": "El **muestreo por clusters o racimos** es una estrategia de muestreo probabilístico, lo que significa que cada miembro de la población tiene una probabilidad conocida y distinta de cero de ser seleccionado en la muestra.\nEsta característica descarta las opciones a y b, que sugieren que este tipo de muestreo es no probabilístico.\nAdemás, el muestreo por clusters es comúnmente utilizado en investigaciones cuantitativas, lo que descarta la opción d.\nEsta técnica se utiliza cuando es difícil o costoso acceder a todos los miembros de una población, por lo que se seleccionan grupos o \"clusters\" de la población en lugar de individuos.\nPor ejemplo, si un investigador está interesado en encuestar a estudiantes de secundaria en un país, puede ser más factible seleccionar algunas escuelas (clusters) al azar y luego encuestar a todos los estudiantes dentro de esas escuelas, en lugar de intentar encuestar a todos los estudiantes de secundaria en el país.\nEn un diseño cuantitativo, el muestreo probabilístico es esencial para poder hacer inferencias estadísticas válidas sobre la población a partir de la muestra.\nEn resumen, las características del enunciado que permiten elegir la opción correcta y descartar las incorrectas son: 1) la naturaleza probabilística del muestreo por clusters, y 2) su aplicación específica en diseños cuantitativos.\nEn esta pregunta basada en el Curso en Salud Social y Comunitaria, desarrollamos los conceptos de muestreo probabilístico у по probabilístico y explicamos el muestreo aleatorio simple, sistemático, estratificado y por aglomerados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_052",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Tipos de estudios epidemiológicos"
+    ],
+    "enunciado": "Un estudio de casos y controles anidado es:",
+    "opciones": {
+      "a": "La elaboración de un estudio de casos y controles extraído de una muestra que conforma una cohorte",
+      "b": "La elaboración de un estudio de casos y controles a partir de estudios de menor nivel de evidencia",
+      "c": "La elaboración de un estudio de casos y controles que permite por su diseño estimar prevalencia",
+      "d": "La elaboración de un estudio de casos y controles extraído de una muestra que conforma un ensayo clínico"
+    },
+    "correcta": "a",
+    "explicacion": "Un **estudio de casos y controles anidado** es un tipo de estudio epidemiológico observacional que se realiza dentro de una cohorte ya establecida.\nEste tipo de estudio es útil cuando el evento de interés es raro y el período de tiempo requerido para que ocurra la enfermedad o condición es largo.\nEn un estudio de casos y controles anidado, los casos de interés son aquellos individuos dentro de la cohorte que desarrollan la enfermedad o condición de interés.\nLos controles son seleccionados de la misma cohorte, pero son individuos que no desarrollan el evento durante el período de seguimiento.\nPasando ahora a las opciones incorrectas:\nb. La elaboración de un estudio de casos y controles a partir de estudios de menor nivel de evidencia: Un estudio de casos y controles anidado es un tipo de estudio de alto nivel de evidencia, ya que se basa en una cohorte.\nc. La elaboración de un estudio de casos y controles que permite por su diseño estimar prevalencia: Los estudios de casos y controles, incluyendo los anidados, son estudios retrospectivos que son buenos para determinar la asociación entre factores de riesgo y enfermedad, pero no son útiles para estimar la prevalencia de una enfermedad.\nd. La elaboración de un estudio de casos y controles extraído de una muestra que conforma un ensayo clínico: Los ensayos clínicos son estudios experimentales, no observacionales.\nUn estudio de casos y controles anidado se realiza dentro de una cohorte observacional, no dentro de un ensayo clínico.\nEn esta pregunta basada en el Curso en Salud Social y Comunitaria, desarrollamos el diseño de casos y controles anidado, explicando sus principales características y ventajas",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_053",
+    "materia": [
+      "saludpublica",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública",
+      "Análisis de situación de salud"
+    ],
+    "enunciado": "Con respecto a los Análisis de Situación de Salud (ASIS):",
+    "opciones": {
+      "a": "Utilizan una sola fuente primaria de datos",
+      "b": "Se trata de estudios de cohortes",
+      "c": "Incluyen análisis demográfico y socioeconómico, análisis de morbimortalidad y de la respuesta por parte de los servicios de salud",
+      "d": "Utilizan como medida de riesgo el odds ratio"
+    },
+    "correcta": "c",
+    "explicacion": "Los **Análisis de Situación de Salud (ASIS)** son un proceso que permite identificar y priorizar los problemas de salud de una población y los factores que contribuyen a ellos.\nEsto se hace a través de la recopilación, análisis y presentación de información sobre la salud de la población, los factores que la afectan y los recursos y servicios de salud disponibles.\nLa opción a, que sugiere que los ASIS utilizan una sola fuente primaria de datos, es incorrecta porque los ASIS, por definición, requieren de múltiples fuentes de datos para obtener una imagen completa de la situación de salud.\nEsto incluye datos demográficos, socioeconómicos, de morbimortalidad y de los servicios de salud disponibles.\nLa opción b, que sugiere que los ASIS son estudios de cohortes, también es incorrecta.\nLos estudios de cohortes son un tipo de diseño de investigación observacional donde se sigue a grupos de individuos (cohortes) durante un período de tiempo para determinar asociación de exposiciones con eventos de salud.\nLos ASIS, por otro lado, son un análisis de la situación de salud a nivel poblacional, no un estudio de cohorte.\nFinalmente, la opción d, que sugiere que los ASIS utilizan el odds ratio como medida de riesgo, también es incorrecta.\nEl odds ratio es una medida de asociación utilizada en estudios de casos y controles, no en análisis de situación de salud.\nEn los ASIS, se utilizan medidas de frecuencia de enfermedad y muerte (como tasas de incidencia y prevalencia), así como medidas de acceso, utilización y calidad de los servicios de salud.\nEn esta pregunta basada en el Curso en Salud Social y Comunitaria, definimos los Análisis de Situación de Salud (ASIS), sus objetivos y componentes",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_054",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Otras preguntas de salud pública"
+    ],
+    "enunciado": "Los cuatro componentes del Campo de la Salud son:",
+    "opciones": {
+      "a": "Estilo de Vida, Factores Nutricionales, Sistema de Servicios de Salud. Medio Ambiente",
+      "b": "Factores Ambientales. Factores Culturales. Factores Sociales. Factores Biológicos",
+      "c": "Sistema de Servicios de Salud. Biología Humana. Estilo de Vida. Medio Ambiente",
+      "d": "Promoción, Prevención primaria, secundaria y terciaria"
+    },
+    "correcta": "c",
+    "explicacion": "Estos elementos se basan en el modelo de Lalonde, un marco conceptual que fue propuesto en 1974 en Canadá para entender la salud de la población.\nEste modelo sostiene que la salud es influenciada por cuatro componentes principales: **Biología Humana, Sistema de Servicios de Salud, Estilo de Vida y Medio Ambiente**.\nAnalizando las demás opciones, podemos ver que:\na. Estilo de Vida, Factores Nutricionales, Sistema de Servicios de Salud. Medio Ambiente.\nAquí se incluyen los \"Factores Nutricionales\" que si bien son importantes para la salud, no constituyen un componente independiente en el modelo de Lalonde, sino que se contemplan dentro del componente \"Estilo de Vida\".\nb. Factores Ambientales. Factores Culturales. Factores Sociales. Factores Biológicos. En esta opción se introducen \"Factores Culturales\" y \"Factores Sociales\", los cuales no se consideran componentes independientes en el modelo de Lalonde, sino que se engloban dentro del componente \"Medio Ambiente\".\nd. Promoción, Prevención primaria, secundaria y terciaria. Aunque estos son aspectos fundamentales en la salud pública, no son componentes del campo de la salud según el modelo de Lalonde, ya que estos se refieren a las intervenciones y estrategias de salud, no a los factores que influyen en la salud de la población.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  },
+  {
+    "id": "saludpublica_003_055",
+    "materia": [
+      "saludpublica"
+    ],
+    "submateria": [
+      "Introducción a la estadística"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la definición de indicador?",
+    "opciones": {
+      "a": "Cualquier cualidad del organismo, grupo o situación capaz de adoptar valores diferentes en un mismo individuo o entre individuos.",
+      "b": "Valor que adopta la variable en las unidades de estudio.",
+      "c": "Expresión que busca presentar en forma resumida, oportuna, sensible y específica las características de un factor de riesgo, de un factor de protección o de un problema de salud específico en la población.",
+      "d": "Expresión matemática resumen elaborado en base a dos o más indicadores."
+    },
+    "correcta": "c",
+    "explicacion": "Para analizar las otras opciones, podemos ver que la opción a.\n\"Cualquier cualidad del organismo, grupo o situación capaz de adoptar valores diferentes en un mismo individuo o entre individuos\" se refiere a una variable, no a un indicador.\nUna variable es cualquier característica o atributo que puede medirse y que puede variar entre individuos o en el tiempo para un mismo individuo.\nLa opción b. \"Valor que adopta la variable en las unidades de estudio\" se refiere a un valor de variable o \"dato\", que es una medición o valor específico que puede tomar una variable.\nEste concepto es diferente al de un indicador, que es una medida agregada y resumida que refleja un aspecto específico de la salud.\nLa opción d. \"Expresión matemática resumen elaborado en base a dos o más indicadores\" se refiere a un índice, no a un indicador.\nUn índice en medicina es una medida compuesta que combina varios indicadores en una sola cifra.\nPor lo tanto, la opción c es la única que proporciona una definición precisa de lo que es un **indicador** en medicina.\nLos indicadores son herramientas esenciales para el seguimiento y la evaluación de la salud de la población y la efectividad de las intervenciones de salud.\nEn esta pregunta basada en el Curso en Salud Social y Comunitaria, definimos indicador, variable, dato e indice.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "Fuente": "curso de resi"
+  }
+]
