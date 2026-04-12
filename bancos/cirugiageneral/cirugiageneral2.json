@@ -1,1 +1,1565 @@
 [
+{
+    "id": "cirugia_002_001",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Estómago", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 82 años presenta dolor epigástrico, astenia, anorexia, pérdida de peso y un abdomen semiológicamente normal. La endoscopia digestiva alta muestra un tumor subcardial cuya biopsia informó adenocarcinoma de tipo difuso. En la tomografía computada de abdomen se observa una moderada cantidad de ascitis. ¿Qué estudio indicaría para completar la estadificación?",
+    "opciones": {
+      "a": "Ecoendoscopia",
+      "b": "Resonancia magnética con gadolinio",
+      "c": "Laparoscopia",
+      "d": "Laparotomía"
+    },
+    "correcta": "c",
+    "explicacion": "Los carcinomas de la union esofago-gastrica son una entidad poco frecuente en nuestra poblacion pero una causa de muerte importante en el mundo.\nSu caracteristica presentacion tardia la hace una patologia muy agresiva y que la correcta interpretacion de los factores de riesgo y los sintomas es fundamental para su diagnostico.\nEs un tema complejo no muy frecuente en los examenes, pero comparte algunos topicos respecto a su diagnostico y estadificacion similar a otras patologias de la economia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_002",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Estómago", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 53 años consulta por dolor y malestar en la zona epigástrica de varios meses de evolución. Refiere haber disminuido 5 kg de peso en los últimos meses. Tiene antecedentes de tabaquismo. ¿Cuál de las siguientes es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar tratamiento empírico con un inhibidor de la bomba de protones",
+      "b": "Solicitar test del aire espirado para Helicobacter pylori",
+      "c": "Solicitar fibroendoscopia digestiva alta",
+      "d": "Solicitar ecografía abdominal"
+    },
+    "correcta": "c",
+    "explicacion": "La patologia esofago gastrica es muy frecuente en nuestro medio, el carcinoma gastrico es uno de las 5 neoplasias mas frecuentes, y correctamente diagnosticado tiene un abanico de tratamientos muy diversos.\nCon esta pregunta desarrollaremos los puntos claves en la sospecha y el diagnostico de esta patologia, y que conducta tomar ante esa sospecha.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_003",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "Ante un paciente de 70 años con dolor abdominal a nivel de flanco y fosa ilíaca izquierda acompañado de proctorragia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Neoplasia de colon izquierdo",
+      "b": "Colitis ulcerosa",
+      "c": "Pólipo colónico",
+      "d": "Enfermedad diverticular complicada"
+    },
+    "correcta": "d",
+    "explicacion": "En la siguiente pregunta vamos a analizar un caso clinico que pone a prueba la capacidad de discernir entre diagnosticos diferenciales de hemorragia digestica baja de acuerdo a su incidencia y prevalencia, ante un paciente con sintomas comunes a varias patologias.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_004",
+    "materia": ["gastroenterologia", "infectologia"],
+    "submateria": ["Hígado", "Tracto digestivo"],
+    "enunciado": "Un varón de 52 años ingresa al servicio de Urgencias con trastornos del sensorio y ascitis. Sus familiares relatan que tiene antecedentes de alcoholismo y dos internaciones previas por ascitis. Se efectúa paracentesis y el análisis del líquido revela gradiente de albúmina de 1,5 g/dl y recuento de polimorfonucleares de 450 cel/mm3. La tinción de Gram del material no revela gérmenes. Aún no se dispone de los resultados del cultivo del material. ¿Cuál es el diagnóstico más probable y la conducta apropiada frente a este caso?",
+    "opciones": {
+      "a": "Peritonitis bacteriana espontánea e inicio de antibioticoterapia empírica",
+      "b": "Ascitis neutrocítica y espera de los resultados del cultivo para iniciar antibioticoterapia específica",
+      "c": "Síndrome ascítico edematoso y administración de diuréticos y restricción hidrosalina",
+      "d": "Peritonitis bacteriana espontánea y espera de los resultados del cultivo para iniciar antibioticoterapia específica"
+    },
+    "correcta": "a",
+    "explicacion": "Las infecciones intrabadominales son un gran capitulo dentro de la cirugia general, ya sea por sus diferentes etiologia y tratamientos.\nEn la siguiente pregunta analizaremos un caso clinico de un paciente con un abdomen agudo que de acuerdo a sus antecedentes y estudios complementarios, nos orientaremos hacia un diagnostico adecuado.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_005",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Cirugía mínimamente invasiva", "Vía biliar"],
+    "enunciado": "Un paciente, en el décimo día post-quirúrgico de colecistectomía laparoscópica, presenta dolor en hipocondrio derecho y fiebre. Se realiza ecografía y tomografía computada, en las cuales se observa una imagen de 15x9 cm compatible con colección subhepática. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Laparotomía exploradora",
+      "b": "Drenaje percutáneo guiado por imágenes",
+      "c": "Colangiopancreatografía retrógrada endoscópica (CPRE)",
+      "d": "Tratamiento médico con antibióticos y nuevo control con imágenes en 48 hs"
+    },
+    "correcta": "b",
+    "explicacion": "Las complicaciones posoperatorias son un gran capitulo dentro de la cirugia general, y es fundamental conocerlas al igual que las propias tecnicas quirurgicas, y principalmente diagnosticarlas y tratarlas.\nEn la pregunta siguiente nos encontramos con una complicacion frecuente de uno de los procedimientos mas realizados en todos los servicios de cirugia del mundo.\nEl biloma es dentro de las lesiones quierurgicas de la via biliar el menos agresivo y su tratamiento incluye a la cirugia mini-invasiva.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_006",
+    "materia": ["cirugiageneral", "pediatria"],
+    "submateria": ["Otras preguntas de cirugía general", "Patología del aparato digestivo"],
+    "enunciado": "Juan de 12 años es llevado a la guardia por presentar febrícula, dolor abdominal y polaquiuria. En el examen físico usted constata palidez, dolor a la compresión en la fosa ilíaca derecha y cojera. Solicita exámenes complementarios cuyos resultados son: Orina completa: 10-15 leucocitos por campo, pH 6, proteinuria negativa, glucosuria negativa, 5 hematíes por campo. Hemograma: hemoglobina 12 g/dl glóbulos blancos 10.000 mm3 con fórmula de predominio neutrófilo, plaquetas 300.000 mm3. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Pielonefritis",
+      "b": "Cistitis",
+      "c": "Peritonitis",
+      "d": "Apendicitis"
+    },
+    "correcta": "d",
+    "explicacion": "El sindrome de FID es el mas frecuente en todos los servicios de cirugia del mundo, pero hay que prestar mucha atencion y conocer bien sus diagnosticos difenciales.\nLa edad, el sexo y los sintomas asociados, pueden hacer confundir facilmente hasta al cirujano mas experimentado.\nDesarrollaremos las pautas a tener en cuenta para llegar a un correcto diagnostico y no caer en distractores que aparecen frecuentemente en preguntas sobre temas prevalentes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_007",
+    "materia": ["cirugiageneral", "imagenes"],
+    "submateria": ["Otras preguntas de cirugía general", "Ecografía"],
+    "enunciado": "Un paciente de 25 años consulta por dolor abdominal y náuseas de 18 horas de evolución. El dolor comenzó en el epigastrio y luego se localizó en área peri umbilical. Refiere automedicación con antiespasmódicos y antibióticos. En el examen físico presenta temperatura axilar: 37,2°C dolor a la palpación de punto de Mc Burney y Blumberg negativo. Laboratorio: recuento de blancos: 11500/mm3. Usted solicita una ecografía abdominal y de acuerdo a su presunción diagnóstica ¿qué criterio ultrasonográfico esperaría encontrar?",
+    "opciones": {
+      "a": "Apéndice compresible al transductor",
+      "b": "Apéndice con diámetro anteroposterior mayor de 6 mm",
+      "c": "Peristaltismo apendicular",
+      "d": "Ausencia de fecalito"
+    },
+    "correcta": "b",
+    "explicacion": "En la siguiente pregunta analizaremos un caso de SFID de origen apendicular, especificamente que criterios ecograficos esperamos encontrar en un paciente con apendicitis aguda.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_008",
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Tiroides", "Otras preguntas de cirugía general"],
+    "enunciado": "Paciente mujer de 38 años de edad, técnica en radiología, concurre a su consulta por palparse un nódulo paratraqueal derecho. Se realizó ecografía que muestra un nódulo hipoecoico, de 12 mm en el lóbulo derecho tiroideo, el resto del examen cervical es normal. Los estudios funcionales tiroideos son normales y no tiene antecedentes familiares de cáncer de tiroides. ¿Cuál considera usted que es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Control ecográfico en 6 meses.",
+      "b": "Punción aspiración con aguja fina.",
+      "c": "Tiroidectomía total.",
+      "d": "Lobectomía tiroidea."
+    },
+    "correcta": "b",
+    "explicacion": "Los nodulos tiroideos son la patologia mas frecuente dentro de la cirugia de cabeza y cuello, en esta pregunta analizaremos el algoritmo diagnostico ante una lesion en region cervical y la conducta a seguir.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_009",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Cáncer colorrectal", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 60 años presenta un tumor del ángulo hepático del colon. ¿Cuál es la conducta quirúrgica indicada?",
+    "opciones": {
+      "a": "Colectomía",
+      "b": "Hemicolectomía derecha",
+      "c": "Hemicolectomía derecha ampliada",
+      "d": "Hemicolectomía izquierda ampliada"
+    },
+    "correcta": "c",
+    "explicacion": "Los carcinomas de colon un un tema muy frecuente dentro de los examenes de residencia y durante las residencias de cirugia, el adecuado conocimiento de la anatomia y las tecnicas quirurgicas son indispensables a la hora de tomar desiciones sobre el tratamiendo de las lesiones colonicas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_010",
+    "materia": ["gastroenterologia", "cirugiageneral", "oncologia"],
+    "submateria": ["Hígado", "Otras preguntas de cirugía general", "Conceptos de Oncología"],
+    "enunciado": "Al año de una resección radical por un adenocarcinoma de colon (Dukes C), un enfermo de 65 años presenta una metástasis hepática de 3 cm de diámetro, en el segmento VI. En ausencia de otra metástasis conocida, ¿Cuál es el tratamiento MÁS adecuado?",
+    "opciones": {
+      "a": "Quimioterapia sistémica",
+      "b": "Radioterapia",
+      "c": "Resección quirúrgica",
+      "d": "Quimioembolización"
+    },
+    "correcta": "c",
+    "explicacion": "Las lesiones hepaticas son un gran capitulo de la cirugía hepato-bilio-pancreatica, las lesiones metastasicas en el higado constituyen la primera causa de lesiones en el higado, en su mayoria secundario a neoplasias colonicas.\nLas conductas son discutidas, en esta pregunta analizaremos como tomar desiciones respecto al tratamiento de un caso clinico especifico de acuerdo a los concensos internacionales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_011",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Cáncer colorrectal", "Otras preguntas de cirugía general"],
+    "enunciado": "Usted asiste a un paciente con el antecedente de una resección endoscópica de un pólipo de colon a 40 cm del margen anal cuyo estudio histopatológico informó: pólipo adenomatoso con áreas de carcinoma con infiltración de la submucosa. ¿Cuál es la conducta terapéutica MÁS adecuada?",
+    "opciones": {
+      "a": "Colonoscopia de control en 3 meses y nueva biopsia de la zona de resección por vía endoscópica",
+      "b": "Control en seis meses y nueva endoscopia para control de cambios en la mucosa",
+      "c": "Reseccción colónica de tipo oncológica en forma electiva",
+      "d": "Iniciar tratamiento quimioterápico previo a la cirugía electiva oncológica"
+    },
+    "correcta": "c",
+    "explicacion": "Más preguntas de carcinoma de colon. Sin dudas, uno de los temas más tomados de cirugía.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_012",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Cáncer colorrectal", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es el mejor tratamiento para un paciente de 75 años que presenta obstrucción intestinal por un tumor de colon descendente y que en la TAC de abdomen se identifican múltiples metástasis hepáticas?",
+    "opciones": {
+      "a": "Resección y anastomosis primaria más quimioterapia",
+      "b": "Colocación de sonda nasogástrica y tratamiento paliativo",
+      "c": "Resección del tumor primario y metastasectomías hepáticas",
+      "d": "Recanalización de la luz intestinal por vía endoscópica"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_013",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál de las siguientes afirmaciones es CORRECTA en relación a las hemorroides?",
+    "opciones": {
+      "a": "El tratamiento quirúrgico sólo está indicado en los grados I y II.",
+      "b": "La proctorragia es la principal manifestación de las hemorroides externas.",
+      "c": "Las ligaduras elásticas tienen excelentes resultados en las hemorroides internas grados I y II.",
+      "d": "Las hemorroides externas siempre deben ser extirpadas."
+    },
+    "correcta": "c",
+    "explicacion": "Dentro de lo que es enfermedad perianal, hemorroides es el tema más tomado.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_014",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Hígado", "Otras preguntas de cirugía general"],
+    "enunciado": "En un paciente joven, asintomático, una tomografía computada solicitada por otro motivo, muestra un tumor de 3 cm en el lóbulo derecho del hígado. Con el contraste endovenoso se observa hipervascularizado, con distribución vascular en estrella y una cicatriz central. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Adenoma hapatocelular",
+      "b": "Hamartoma",
+      "c": "Hiperplasia nodular focal",
+      "d": "Hemangioma"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_015",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Hígado", "Otras preguntas de cirugía general"],
+    "enunciado": "Ante una paciente que presenta un adenoma hepatocelular que no retrograda luego de interrumpir los anovulatorios. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Punción biopsia hepática",
+      "b": "Laparoscopía diagnóstica y biopsia hepática",
+      "c": "Resección quirúrgica del tumor",
+      "d": "Quimioembolización arterial hepática"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_016",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Hígado", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es el tumor hepático benigno más frecuente?",
+    "opciones": {
+      "a": "Leiomioma",
+      "b": "Hemangioma",
+      "c": "Hamartoma mesenquimático",
+      "d": "Teratoma benigno"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_017",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Vía biliar", "Síndromes abdominales"],
+    "enunciado": "Un paciente con una internación prolongada en UTI por una quemadura grave desarrolla una colecistitis aguda alitiásica. ¿Cuál es el tratamaiento de elección frente a este caso?",
+    "opciones": {
+      "a": "Tratamiento médico (hidratación y antibióticos).",
+      "b": "Colecistostomía percutánea.",
+      "c": "Colecistectomía laparoscópica.",
+      "d": "Colecistectomía a cielo abierto."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_018",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Vía biliar", "Síndromes abdominales"],
+    "enunciado": "Un enfermo crítico, en el 10° día de asistencia respiratoria mecánica por un traumatismo encefálico, presenta una sepsis de origen desconocido. Tiene dolor y aumento de tensión en el hipocondrio derecho, fiebre, leucocitosis y una amilasemia de 450 UI. El resto del laboratorio, el sedimento urinario y la radiografía de tórax son normales. La ecografía muestra una cavidad abdominal normal, con la vesícula biliar aumentada de tamaño, paredes de 8 mm y barro biliar. La vía biliar es normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colangitis aguda",
+      "b": "Colecistitis alitiásica",
+      "c": "Absceso hepático",
+      "d": "Pancreatitis aguda"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_019",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "Una paciente de 42 años consulta por dolor en hipocondrio derecho de 48 horas de evolución que no cede con antiespasmódicos. En el último año ha tenido tres episodios similares. En el examen físico presenta punto de Murphy doloroso. Laboratorio: recuento de glóbulos blancos: 19.000/mm3 bilirrubinemia total: 3 mg %. Ecografía: litiasis vesicular con cálculo en bacinete, pared vesicular: 8 mm. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Colecistectomía laparotómica",
+      "b": "Colecistectomía laparoscópica",
+      "c": "Colecistostomía percutánea",
+      "d": "Antibióticos, analgésicos y cirugía diferida"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_020",
+    "materia": ["cirugiageneral", "ginecologia"],
+    "submateria": ["Otras preguntas de cirugía general", "EPI"],
+    "enunciado": "El porcentaje más alto de apendicetomías negativas ocurre en mujeres jóvenes, con cifras que oscilan entre 32 y 45%. En este contexto, ¿cuáles son los diagnósticos diferenciales más frecuentes?",
+    "opciones": {
+      "a": "Enfermedad inflamatoria intestinal, enfermedad inflamatoria pelviana, cáncer de ciego.",
+      "b": "Embarazo ectópico, enfermedad inflamatoria pelviana y patología anexial.",
+      "c": "Patología pleuropulmonar, enfermedad inflamatoria pelviana y pielonefritis.",
+      "d": "Embarazo ectópico, tiflitis y úlcera duodenal perforada."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_021",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Intestino delgado"],
+    "enunciado": "Un paciente concurre a guardia por presentar distensión abdominal y vómitos. En la radiografía simple de abdomen se observan niveles hidroaéreos del intestino delgado y aerobilia. ¿Cuál es la conducta terapéutica más adecuada?",
+    "opciones": {
+      "a": "Enterotomía debajo de la obstrucción y extracción del cálculo",
+      "b": "Enterotomía por encima de la obstrucción y extracción del cálculo",
+      "c": "Resección intestinal y entero-entero anastomosis",
+      "d": "Colecistectomía, resección intestinal y reconstrucción del tránsito"
+    },
+    "correcta": "a",
+    "explicacion": "Aerobilia es la palabra clave!.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_022",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "Un paciente de 78 años presentó una colecistitis aguda y fue tratado con una colecistectomía laparoscópica. Dos meses después consulta por un cuadro de colestasis con dolor en el hipocondrio derecho y fiebre en picos con bacteriemia. La ecografía muestra una vía biliar de 12 mm. ¿Cuál de los siguientes es el diagnóstico MÁS probable?",
+    "opciones": {
+      "a": "Absceso hepático",
+      "b": "Absceso subfrénico",
+      "c": "Lesión quirúrgica de la vía biliar",
+      "d": "Colangitis aguda por litiasis residual"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_023",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "Un paciente de 56 años, cursa una colangitis aguda grave, con signos de shock y trastornos del sensorio. ¿Cuál es la conducta terapéutica más importante en este paciente?",
+    "opciones": {
+      "a": "Administración de antibióticos de acuerdo a los hemocultivos",
+      "b": "Internación en terapia intensiva y soporte con drogas vasoactivas",
+      "c": "Colecistectomía y coledocotomía laparoscópicas",
+      "d": "Drenaje biliar endoscópico"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_024",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "Un paciente de 68 años que ingresó a guardia por dolor en hipocondrio derecho y epigastrio que irradiaba a dorso, fiebre con escalofríos e ictericia de 24 hs de evolución, deteriora progresivamente su estado general por lo cual es internado en terapia intensiva. Laboratorio: leucocitosis, aumento de fosfatasa alcalina y bilirrubina. En la ecografía se encuentra vesícula litiásica, no distendida, con vía biliar de 13 mm y páncreas normal. De acuerdo a su sospecha diagnóstica, ¿cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Antibióticos de amplio espectro por vía parenteral y control evolutivo",
+      "b": "Colecistectomía laparoscópica con colocación de tubo de Kehr",
+      "c": "Tratamiento antibiótico y drenaje endoscópico de la vía biliar",
+      "d": "Colecistectomía abierta con exploración de la vía biliar"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_025",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "¿Cuál es la causa más reconocida en la etiología del cáncer de la vesícula biliar?",
+    "opciones": {
+      "a": "Antecedentes familiares, alimenticios y ambientales",
+      "b": "Pólipos adenomatosos",
+      "c": "Microlitiasis múltiple y colecistitis crónica",
+      "d": "Macrolitiasis (cálculos mayores de 3 cm)"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_026",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Vía biliar"],
+    "enunciado": "¿Cuál de las siguientes es la causa MÁS frecuente de bilirragias en el postoperatorio de una colecistectomía laparoscópica?",
+    "opciones": {
+      "a": "Lesiones quirúrgicas de la vía biliar",
+      "b": "Lesiones intestinales no advertidas",
+      "c": "Filtración de la coledocorrafia",
+      "d": "Sección de canalículos aberrantes"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_027",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Vía biliar"],
+    "enunciado": "La colerragia por falla en la ligadura del conducto cístico es una complicación de la colecistectomía laparoscópica. Si la fuga de bilis persiste, ¿cuál es el primer procedimiento terapéutico?",
+    "opciones": {
+      "a": "Un drenaje biliar externo por vía percutánea",
+      "b": "Una papilotomía endoscópica",
+      "c": "Una laparotomía",
+      "d": "Una nueva laparoscopia"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_028",
+    "materia": ["gastroenterologia", "imagenes"],
+    "submateria": ["Vía biliar", "Ecografía"],
+    "enunciado": "¿Cuál es la sensibilidad de la ecografía para la detección de litiasis vesicular?",
+    "opciones": {
+      "a": "70-79%",
+      "b": "80-85%",
+      "c": "86-90%",
+      "d": "95-97%"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_029",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Colon"],
+    "enunciado": "Paciente mujer de 80 años con antecedentes de enfermedad diverticular de larga data. Concurre a guardia por dolor abdominal localizado en hemiabdomen izquierdo y síndrome febril. Se efectúa laboratorio donde se observa leucocitosis y tomografía computarizada evidenciando colección de 5x4 cm localizada en la fosa ilíaca izquierda Hinchey II. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "Drenaje percutáneo y antibioticoterapia.",
+      "b": "Tratamiento antibiótico por vía parental.",
+      "c": "Cirugía de urgencia para drenaje.",
+      "d": "Laparotomía exploradora y operación de Hartmann."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_030",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "La patología tumoral maligna más frecuente de las vías biliares es:",
+    "opciones": {
+      "a": "Tumor de Klatskin",
+      "b": "Tumor de papila",
+      "c": "Tumor del tercio medio del colédoco",
+      "d": "Tumor de vesícula biliar"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_031",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Intestino delgado", "Otras preguntas de cirugía general"],
+    "enunciado": "Los divertículos verdaderos están constituidos por todas las capas de la pared intestinal. ¿Cuál es el divertículo más frecuente del tubo digestivo?",
+    "opciones": {
+      "a": "El de duodeno",
+      "b": "El de sigmoides",
+      "c": "El de esófago",
+      "d": "El de Meckel"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_032",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Intestino delgado", "Otras preguntas de cirugía general"],
+    "enunciado": "Un hombre de 37 años es traído al hospital por presentar una herida de arma de fuego en el abdomen. En la laparotomía, se observan 2 perforaciones en ileon terminal y otra en el colon ascendente. El cirujano decide realizar una hemicolectomía derecha con resección ileal amplia. La evolución es favorable. En el futuro, ¿cuál de las siguientes sustancias puede presentar dificultades en la absorción?",
+    "opciones": {
+      "a": "Calcio",
+      "b": "Grasas",
+      "c": "Folato",
+      "d": "Vitamina B 12"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_033",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Intestino delgado", "Otras preguntas de cirugía general"],
+    "enunciado": "Una mujer de 42 años de edad ingresa a la guardia presentando dolor abdominal de 48 hs de evolución. Al interrogatorio refiere episodios similares desde hace más de 8 meses. Al examen físico presenta dolor periumbilical con defensa, FC: 100/min. Rx simple de abdomen: niveles del delgado aislados. Ecografía abdominal: líquido libre en espacios hepato y esplenorenal. La laparotomía evidencia hemoperitoneo y un gran tumor yeyunal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Lipoma",
+      "b": "Adenoma",
+      "c": "Hamartoma",
+      "d": "Leiomioma"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_034",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Otras preguntas de gastroenterología"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una paciente de 25 años de edad que presenta dolor abdominal y fiebre de 24 horas de evolución? En el examen físico se encuentra febril, a la palpación abdominal presenta un punto doloroso en fosa ilíaca derecha, signo de Blumberg negativo y la palpación profunda en fosa ilíaca izquierda le provoca dolor en el lado opuesto.",
+    "opciones": {
+      "a": "Peritonitis",
+      "b": "Colecistitis aguda",
+      "c": "Apendicitis aguda",
+      "d": "Absceso perirrenal derecho"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_035",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es el sitio de sangrado más frecuente en las hemorragias digestivas bajas de origen diverticular?",
+    "opciones": {
+      "a": "Colon derecho.",
+      "b": "Colon transverso.",
+      "c": "Colon izquierdo.",
+      "d": "Colon sigmoide."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_036",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente consulta por episodios reiterados de proctorragia y dolor defecatorio. El estudio anoscópico informa hemorroides que prolapsan a bajos esfuerzos y requieren reducción manual. ¿Qué grado de hemorroides presenta el paciente y cuál es el tratamiento apropiado?",
+    "opciones": {
+      "a": "Grado IV, Ligaduras elásticas",
+      "b": "Grado II, Fotocoagulación infrarroja",
+      "c": "Grado III, Hemorroidectomia",
+      "d": "Grado II, inyección esclerosante submucosa"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_037",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Otras preguntas de cirugía general", "Paciente politraumatizado"],
+    "enunciado": "Recibe en la guardia un paciente adulto politraumatizado. Luego de la atención primaria y una vez estabilizado, decide realizarle una ecografía abdominal que informa hematoma esplénico roto y sangrante de 1,6 cm. ¿A qué grado de la clasificación de trauma esplénico corresponde?",
+    "opciones": {
+      "a": "I.",
+      "b": "II.",
+      "c": "III.",
+      "d": "IV."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_038",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Esófago", "Otras preguntas de cirugía general"],
+    "enunciado": "Un varón de 70 años consulta por presentar disfagia para sólidos, ligera regurgitación y reflujo gastroesofágico de 1 año de evolución que se ha acentuado en los últimos meses, presentando episodios previos de atragantamiento. El examen físico y el laboratorio son normales. Se solicita un tránsito esofágico que informa: esófago marcadamente dilatado con una estenosis filiforme inferior («cola de ratón»). Ante este cuadro, ¿cuál es el tratamiento más eficaz?",
+    "opciones": {
+      "a": "Antagonistas del calcio (nifedipino o verapamilo) por vía sublingual.",
+      "b": "Esofagocardiotomía de Heller por vía endoscópica con procedimiento valvular antirreflujo",
+      "c": "Dilatación forzada del esfínter por técnica endoscópica",
+      "d": "Inyección endoscópica repetida de toxina botulínica"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_039",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es la localización más frecuente, dentro de las enunciadas, de una angiodisplasia?",
+    "opciones": {
+      "a": "Colon descendente",
+      "b": "Colon ascendente",
+      "c": "Colon sigmoide",
+      "d": "Recto"
+    },
+    "correcta": "b",
+    "explicacion": "Recordar que la angiodísplasia es la causa más común de hemorragia digestiva baja en ancianos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_040",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Patología de pared abdominal"],
+    "enunciado": "¿Las hernias inguinales de tipo directas, se presentan por?",
+    "opciones": {
+      "a": "Dilatación del orificio inguinal profundo.",
+      "b": "Persistencia del conducto peritoneo vaginal.",
+      "c": "Debilidad de la pared posterior.",
+      "d": "Dilatación del orificio del orificio inguinal superficial."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_041",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Colon"],
+    "enunciado": "Un cirujano realiza una apendicectomía en un paciente masculino de 42 años con una apendicitis aguda. El informe de anatomía patológica reporta el hallazgo de un tumor carcinoide de 1.5 cm de diámetro en la porción media del apéndice, sin observarse invasión vascular o del meso del apéndice. ¿Cuál sería en este caso la conducta a seguir?:",
+    "opciones": {
+      "a": "Radioterapia a nivel de fosa ilíaca derecha",
+      "b": "Hemicolectomía derecha",
+      "c": "Análogos de la somatostatina (octreótide)",
+      "d": "No en necesario ningún tratamiento adicional"
+    },
+    "correcta": "b",
+    "explicacion": "Suelen aparecer preguntas de tumor carconiode. La mayoría de ellas se refiere a la conducta a tomar ante su hallazgo.\nPor esto debemos conocer que esta depende del tamaño del tumor, MTS e invasión local\nEn referencia a los carcinoides de apendice Schwartz (pág 1258) indica: \"El tratamiento de los tumores $\\le1$ cm de diámetro es la apendicectomía. Para los tumores > 1 a 2 cm ubicados en la base, que afectan al mesenterio, o con metástasis a ganglios linfáticos, está indicada la hemicolectomía derecha.\"",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_042",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 72 años lo consulta por haber presentado un episodio de proctorragia hace 5 días. No tiene antecedentes patológicos relevantes. Se realiza una videocolonoscopía que informa: presencia de un pólipo único pediculado en el sigma, de unos 25 mm de diámetro, que tiene una ulceración en su cúspide. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Videocolonoscopía a los 3 meses e intervención quirúrgica si aumenta de tamaño.",
+      "b": "Fotocoagulación con láser del pólipo.",
+      "c": "Sigmoidectomia.",
+      "d": "Polipectomia endoscópica y estudio anatomopatológico."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_043",
+    "materia": ["gastroenterologia", "hematologia", "cirugiageneral"],
+    "submateria": ["Estómago", "Anemias carenciales", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál de las siguientes es la causa más probable de anemia a un paciente de 45 años que fue sometido a la gastrectomía por carcinoma de estómago?",
+    "opciones": {
+      "a": "Deficiencia de hierro.",
+      "b": "Aplasia medular.",
+      "c": "Anemia sideroblástica.",
+      "d": "Deficiencia de vitamina B12."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_044",
+    "materia": ["gastroenterologia"],
+    "submateria": ["Estómago"],
+    "enunciado": "¿Cuál de las siguientes es una medida que favorece la curación de la úlcera gastroduodenal?",
+    "opciones": {
+      "a": "Evitar comidas ácidas.",
+      "b": "Evitar el tabaquismo.",
+      "c": "Realizar dieta blanda.",
+      "d": "Evitar el consumo de café o té."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_045",
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Tiroides", "Glándulas salivales y masas cervicales"],
+    "enunciado": "¿Cuál es la conducta más adecuada con una paciente de 29 años, asintomática, que durante el control de salud usted palpó un pequeño nódulo de 0.5 cm el lóbulo derecho de la tiroides y las determinaciones de hormonas tiroideas son normales? El nódulo se visualizó por una ecografía tiroidea y el resto de la glándula es normal.",
+    "opciones": {
+      "a": "Tomografía computada del cuello.",
+      "b": "Centellograma corporal total con Iodo radioactivo.",
+      "c": "Remoción quirúrgica del nódulo.",
+      "d": "Punción con aguja fina."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_046",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Quemaduras"],
+    "enunciado": "¿Qué se entiende por una quemadura tipo AB?",
+    "opciones": {
+      "a": "Es la que produce la destrucción total de cuerpo papilar, con conservación total o parcial de la zona reticular dérmica y sus faneras",
+      "b": "Es la que lesiona completamente la dermis y epidermis",
+      "c": "Es la que lesiona la epidermis y parte de la dermis papilar",
+      "d": "Es la que caracteriza por la aparición de una flictena o ampolla."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_047",
+    "materia": ["urgencias", "traumatologia"],
+    "submateria": ["Síndromes torácicos", "Fracturas"],
+    "enunciado": "¿Cuál es el mecanismo que provoca en un trauma torácico el síndrome de respiración paradojal?",
+    "opciones": {
+      "a": "La ruptura simultánea de dos o más costillas y fractura esternal",
+      "b": "La ruptura de varias costillas en doble arco",
+      "c": "La asociación entre fracturas costales y hemotorax",
+      "d": "La asociación entre fractura esternal y neumotoax"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_048",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Patología de pared abdominal"],
+    "enunciado": "Las hernias intrainguinales se caracterizan porque:",
+    "opciones": {
+      "a": "Protruyen en la pared abdominal anterior, por dentro de los vasos epigástricos",
+      "b": "Ingresan por el orificio inguinal profundo, por fuera de los vasos epigástricos",
+      "c": "Protruyen la pared abdominal anterior, por dentro y fuera de los vasos epigástricos",
+      "d": "Ingresan por el orificio inguinal profundo, sin exteriorizarse por el orificio inguinal superficial"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_049",
+    "materia": ["cirugiageneral", "infectologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Sepsis y nosocomiales"],
+    "enunciado": "¿Cuál de las siguientes opciones se conoce como herida quirúrgica limpia contaminada?",
+    "opciones": {
+      "a": "Heridas por diversas patologías en contacto con mucosas contaminadas",
+      "b": "Herida por cirugía no traumática, en contacto con mucosas con mínima contaminación",
+      "c": "Heridas de cirugía electiva en la que se han colocado drenajes",
+      "d": "Heridas de cirugía electiva en la que no se han colocado drenajes"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_050",
+    "materia": ["urgencias", "neumonologia"],
+    "submateria": ["Síndromes torácicos", "Pleura, mediastino y diafragma"],
+    "enunciado": "Frente al diagnóstico de un neumotórax abierto, ¿Cuál es la terapéutica inicial más apropiada?",
+    "opciones": {
+      "a": "Toracotomía axilar vertical y drenaje",
+      "b": "Drenaje de la cavidad pleural por la herida torácica",
+      "c": "Oclusión de la herida torácica y drenaje pleural",
+      "d": "Drenaje pleural e intubación orotraqueal"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_051",
+    "materia": ["gastroenterologia", "urgencias"],
+    "submateria": ["Páncreas", "Síndromes abdominales"],
+    "enunciado": "Un paciente de 40 años consulta por dolor epigástrico intenso, irradiado al dorso y vómitos de comienzo brusco después de una ingesta copiosa. No presenta fiebre ni colestasis, su abdomen está distendido, con defensa generalizada y sin contractura y el par de radiografías de abdomen es normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Úlcera duodenal perforada",
+      "b": "Colecistitis aguda.",
+      "c": "Colangitis aguda.",
+      "d": "Pancreatitis aguda."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_052",
+    "materia": ["gastroenterologia", "urgencias"],
+    "submateria": ["Páncreas", "Síndromes abdominales"],
+    "enunciado": "Un paciente joven presenta dolor epigástrico, de comienzo brusco irradiado al dorso, vómitos, sin fiebre ni colestasis. En el examen físico el abdomen se encuentra distendido y presenta defensa generalizada. El par radiológico de abdomen es normal y una ecografía muestra microlitiasis vesicular. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Ulcera duodenal perforada",
+      "b": "Colecistitis aguda",
+      "c": "Colangitis aguda",
+      "d": "Pancreatitis aguda"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_053",
+    "materia": ["gastroenterologia", "imagenes"],
+    "submateria": ["Páncreas", "Tomografía"],
+    "enunciado": "¿Cuál es el método diagnóstico de elección para evaluar la gravedad de una pancreatitis aguda?",
+    "opciones": {
+      "a": "Ecografía",
+      "b": "Tomografía axial computada sin contraste",
+      "c": "Tomografía axial computada dinámica con contraste",
+      "d": "Resonancia magnética nuclear con Gadolinio"
+    },
+    "correcta": "c",
+    "explicacion": "Acorde con el libro Cirugía, Michans 5ta Edición: \"En realidad, el valor actual de la tomografía no reside en su utilidad diagnóstica sino en su capacidad para identificar la forma anatomopatológica (edematosa o necrótica) del ataque, y además para evaluar adecuadamente la gravedad de las lesiones peripancreáticas. La inyección en bolo de sustancia de contraste durante el estudio (tomografía dinámica) permite separar a las formas edematosas de las necróticas.\"\nPágina 656.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_054",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Otras preguntas de cirugía general", "Páncreas"],
+    "enunciado": "Ingresa al servicio de Cirugía un paciente de 40 años que cursó una pancreatitis aguda hace 20 días. Presenta dolor en el hemiabdomen superior, náuseas y vómitos. En la ecografía abdominal se observa una image quística de 12 cm de diámetro que se prolonga por debajo de la curvatura mayor gástrica. De acuerdo con su diagnóstico presuntivo, ¿cuál es la cirugía aconsejada?",
+    "opciones": {
+      "a": "Laparotomía, aspiración del quiste y drenaje externo",
+      "b": "Laparotomía y aspiración del quiste sin drenaje",
+      "c": "Laparotomía y realización de cistogastroanastomosis",
+      "d": "Laparotomía y realización de cistoyeyunoanastomosis en Y de Roux"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_055",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 42 años pasa de Terapia Intensiva a la sala de internación de clínica médica por mejoría luego de un síndrome de respuesta inflamatoria sistémica (SIRS) secundario a un cuadro de pancreatitis aguda inicialmente grave. A los dos días de estar en la sala, presenta una reactivación inflamatoria. La tomografía axial computada de abdomen muestra una lesión local pancreática (gas retroperitoneal). ¿Cuál es su sospecha diagnóstica y la conducta más adecuada frente a este caso?",
+    "opciones": {
+      "a": "Absceso pancreático y realizar drenaje externo por medio de uno o más tubos multiperforados",
+      "b": "Infección pancreática (necrosis infectada) e indicar cirugía (necrosectomía y drenaje del lecho quirúrgico)",
+      "c": "Seudoquiste pancreático agudo y realizar drenaje percutáneo",
+      "d": "Absceso pancreático, administrar antibióticos y analgésicos y continuar con controles clínicos estrictos en sala de clínica médica"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_056",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 65 años internado en UTI con diagnóstico de pancreatitis aguda grave presenta inicialmente buena evolución clínica. A partir de la $5^{\\circ}$ semana comienza con rápido deterioro clínico, fiebre, leucocitosis e íleo. ¿Cuál es el diagnóstico más probable y la conducta terapéutica más adecuada?:",
+    "opciones": {
+      "a": "Absceso pancreático y drenaje percutáneo por guía topográfica",
+      "b": "Necrosis pancreática y debridamiento quirúrgico",
+      "c": "Absceso pancreático y debridamiento quirúrgico",
+      "d": "Necrosis pancreática y evacuación percutánea con guía topográfica"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_057",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
+    "enunciado": "Un paciente de 52 años, portador de un adenocarcinoma de cabeza de páncreas recientemente diagnosticado, que no compromete las estructuras vasculares vecinas, no presenta ascitis y no presenta metástasis alejadas, ingresa al servicio de cirugía con un cuadro de ictericia, coluria y dolor epigástrico. ¿Cuál es el procedimiento quirúrgico de elección?",
+    "opciones": {
+      "a": "Derivación biliodigestiva",
+      "b": "Derivación biliodigestiva y gastroenteroanastomosis",
+      "c": "Duodenopancreatectomía cefálica",
+      "d": "Hepaticoyeyunoanastomosis en Y de Roux"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_058",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es el tratamiento quirúrgico paliativo de elección en tumores de páncreas irresecables diagnosticados en el intraoperatorio?",
+    "opciones": {
+      "a": "Hepaticoyeyunoanastomosis y gastroenteroanastomosis",
+      "b": "Coledocoduodenoanastomosis y drenaje percutáneo de la via biliar",
+      "c": "Duodenopancreatectomia cefálica y derivación biliodigestiva",
+      "d": "Duodenopancreatectomia total"
+    },
+    "correcta": "a",
+    "explicacion": "En pacientes irresecables el tratamiento estará dirigido a la paliación sintomática.\nLas estenosis tumorales irresecables de la via biliar distal con ictericia deben ser tratadas desde el inicio mediante drenaje endoscópico con colocación de un stent transtumoral.\nSi ello no resulta factible, se intentará el drenaje percutáneo de la via biliar (trans-parieto-hepático).\nY si eso tampoco fuera viable, siempre existe el recurso de la derivación biliodigestiva quirúrgica, que se deja como última opción para no agregarle morbilidad a un paciente irresecable.\nEl tratamiento de la obstrucción duodenal es otro factor que se debe tener en cuenta, y se puede resolver con la colocación de stents autoexpandibles duodenales, la realización de una gastroenteroanastomosis con imanes por via endoscópica, o bien la anastomosis gastroyeyunal en forma quirúrgica, pensando siempre en las consideraciones precedentes.\nGimenez, Cirugía, página 525.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_059",
+    "materia": ["neumonologia", "urgencias"],
+    "submateria": ["Pleura, mediastino y diafragma", "Síndromes torácicos"],
+    "enunciado": "A un paciente de sexo masculino de 22 años de edad, con diagnóstico de neumotórax, se le realiza una radiografía que evidencia el borde pulmonar en la línea medio clavicular. ¿A qué grado de neumotórax corresponde y cuál sería el tratamiento más adecuado?",
+    "opciones": {
+      "a": "Grado I, tratamiento expectante.",
+      "b": "Grado I, tratamiento con avenamiento pleural.",
+      "c": "Grado II, tratamiento expectante.",
+      "d": "Grado II, tratamiento con avenamiento pleural."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_060",
+    "materia": ["gastroenterologia", "urgencias"],
+    "submateria": ["Vía biliar", "Síndromes abdominales"],
+    "enunciado": "Una mujer de 50 años, con antecedentes de dispepsia, consulta a la guardia por fiebre, vómitos y dolor epigástrico de 48 horas de evolución. Al examen fisico presenta TA: 140-90 mm/Hg, FC: 100/min, T°Ax. $38.6^{\\circ}C$, hipersensibilidad a la palpación en el cuadrante superior derecho del abdomen y signo de Murphy positivo. El laboratorio indica: Hto 36%, Leucocitos 21.000/mm3, Glucemia 200 mg/dl, Urea 100 mg/dl, Creatininemia 1,7 mg/dl, Bilirrubina Total 2 mg/dl, GOT 100 UI/L, GPT 120 UI/L, FAL 320 UI/L. Se realiza ecografía abdominal que informa: grosor parietal de 6 mm, halo parietal, diámetro transverso máximo de 6 mm y presencia de colecciones líquidas paravesiculares. ¿Cual es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Colecistitis aguda",
+      "b": "Absceso subhepático",
+      "c": "Perforación vesicular",
+      "d": "Coledocolitiasis"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_061",
+    "materia": ["pediatria", "neurocirugia"],
+    "submateria": ["Otras preguntas de pediatría", "Neurocirugía"],
+    "enunciado": "¿Cuál es la conducta más adecuada, luego de las medidas de estabilización iniciales, como una niña de 7 años que ingresa la guardia luego de un accidente automovilístico en la ruta y que se encuentra irritable con trastornos del sensorio, y ha presentado durante el traslado episodio compulsivo y vómitos?",
+    "opciones": {
+      "a": "Realizar radiografía de cráneo y dejar en observación por 12 horas.",
+      "b": "Realizar tomografía axial computada (TAC) del cerebro y deja de observación 24 horas.",
+      "c": "Realizar radiografía de cráneo y si es normal dar de alta con cita en una semana.",
+      "d": "Realizar TAC de cerebro de referir al neurocirujano infantil."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_062",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Vía biliar"],
+    "enunciado": "¿Cuál considera puede ser la causa más probable por la que un paciente de 25 años que fue sometido a una colescistectomía laparoscópica hace 10 horas, comienza con débito bilioso por el drenaje abdominal? Se encuentra afebril y son dolor abdominal.",
+    "opciones": {
+      "a": "Lesión intestinal.",
+      "b": "Deslizamiento de la ligadura del conducto cístico o bilirragia de los conductos aberrantes.",
+      "c": "Ligadura inadvertida de arteria hepática.",
+      "d": "Estenosis de vía billar por lesión térmica de la misma."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_063",
+    "materia": ["imagenes", "neumonologia"],
+    "submateria": ["Radiografía", "Pleura, mediastino y diafragma"],
+    "enunciado": "¿Qué observa en la radiografía de tórax?",
+    "opciones": {
+      "a": "Derrame pleural izquierdo.",
+      "b": "Atelectasia del lóbulo inferior izquierdo.",
+      "c": "Consolidación lóbulo inferior izquierdo.",
+      "d": "Hidroneumotóraz izquierdo."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [
+      "img/cirugiageneral/cirugia_002_063.jpg"
+    ],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_064",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Otras preguntas de cirugía general", "Paciente politraumatizado"],
+    "enunciado": "¿Cuál de los siguientes hematomas retroperitoneales tiene siempre indicación de exploración quirúrgica?",
+    "opciones": {
+      "a": "Zona 2 (lateral)",
+      "b": "Zona 3 (pélvica)",
+      "c": "Zona 4 (hiliar retrohepática)",
+      "d": "Zona 5 (combinada, más de una zona)"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_065",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Otras preguntas de cirugía general", "Síndromes abdominales"],
+    "enunciado": "¿Qué se entiende por Síndrome Compartimental Abdominal?",
+    "opciones": {
+      "a": "La disfunción orgánica progresiva por aumento de la presión abdominal",
+      "b": "El aumento brusco del retorno venoso que se produce al descomprimir un abdomen a tensión.",
+      "c": "Conjunto de síntomas y signos desencadenados por la ruptura visceral que se limita a un solo cuadrante del abdomen",
+      "d": "Cuadro clínico similar a un abdomen agudo que se produce por un globo vesical"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_066",
+    "materia": ["urgencias", "neumonologia"],
+    "submateria": ["Síndromes torácicos", "Pleura, mediastino y diafragma"],
+    "enunciado": "Frente a un paciente que presenta un neumotórax hipertensivo, ¿Cuál de los siguientes tratamientos indicaría inicialmente?",
+    "opciones": {
+      "a": "Toracotomía amplia posterolateral",
+      "b": "Esternotomía",
+      "c": "Punción-drenaje pleural",
+      "d": "Intubación orotraqueal y ventilación a presión positiva"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_067",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Otras preguntas de cirugía general", "Síndromes abdominales"],
+    "enunciado": "Paciente mujer de 30 años consulta por dolor abdominal de iniciación brusca, en hemiabdomen, inferior, fiebre y dos episodios de vómitos alimentarios. Es la primera vez que presenta este cuadro. ¿Qué hallazgo del examen físico le hace sospechar un abdomen agudo quirúrgico?",
+    "opciones": {
+      "a": "Disminución de los ruidos hidroaéreos.",
+      "b": "Puño percusión positiva.",
+      "c": "Signo de Cullen o cabeza de medusa.",
+      "d": "Signo de rebote o Bloomberg."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_068",
+    "materia": ["neumonologia", "urgencias"],
+    "submateria": ["Pleura, mediastino y diafragma", "Síndromes torácicos"],
+    "enunciado": "Paciente varón 22 años que concurre a la guardia con dolor, disnea y tos. Se efectúa radiografía simple de tórax dónde se evidencia neumotórax grado II ¿Cuál considera Ud. es el diagnóstico etiológico más probable?",
+    "opciones": {
+      "a": "Neumonía.",
+      "b": "Tuberculosis.",
+      "c": "Bulla subpleural..",
+      "d": "Enfisema pulmonar."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_069",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Quemaduras"],
+    "enunciado": "¿Cuál de los siguientes métodos es el más adecuado para evaluar la profundidad de una quemadura?",
+    "opciones": {
+      "a": "El aspecto de la lesión",
+      "b": "La sensibilidad de la lesión",
+      "c": "La biopsia",
+      "d": "El estado de los folículos pilosos o \"signo del pelo\"."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_070",
+    "materia": ["urgencias", "cardiologia"],
+    "submateria": ["Síndromes torácicos", "Pericardio"],
+    "enunciado": "¿En un paciente con shock y sospecha de un taponamiento cardíaco, ¿Cuál de los siguientes procedimientos indicaría en primer término?",
+    "opciones": {
+      "a": "Pericardiocentesis",
+      "b": "Electrocardiograma",
+      "c": "Radiografía simple de tórax de frente y perfil",
+      "d": "Toracotomía exploradora"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_071",
+    "materia": ["cirugiageneral", "gastroenterologia"],
+    "submateria": ["Vía biliar", "Vía biliar"],
+    "enunciado": "Paciente femenino de 40 años de edad, sin antecedentes de relevancia, ingresa a la guardia por presentar dolor abdominal localizado en epigastrio e hipocondrio derecho, asociado a náuseas, vómitos y registro febril de $38.1^{\\circ}C$, de 48 horas de evolución. Al examen físico, se encuentra somnoliento, con TA=80/60 mmHg, con ictericia y dolor abdominal localizado en epigastrio e hipocondrio derecho. Signo de Murphy negativo. El laboratorio de ingreso presenta 17000 glóbulos blancos/mm3, bilirrubina total de 7.2 mg/dL, bilirrubina directa de 6.9 mg/dL, FAL: 205 UI/L, GOT: 429 UI/L, GPT: 502 UI/L, acidosis metabólica. Ecografía abdominal muestra litiasis vesicular con dilatación de la vía biliar intrahepática con vía extrahepática no visible. Ante sospecha de colangitis. ¿Qué procedimiento debe realizarse?",
+    "opciones": {
+      "a": "Colecistectomía convencional y colangiografía intraoperatoria.",
+      "b": "Colangiopancreatografía retrógrada endoscópica y colecistectomía laparoscópica posterior.",
+      "c": "Colecistectomía laparoscópica con colangiografía intraoperatoria.",
+      "d": "Colecistectomía laparoscópica con colangiopancreatigrafía retrógrada endoscópica"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_072",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "Paciente femenino de 40 años de edad, sin antecedentes de relevancia, ingresa a la guardia por presentar dolor abdominal localizado en fosa iliaca izquierda de 72 horas de evolución, sin otros síntomas asociados. Al examen físico, presenta dolor abdominal en fosa iliaca izquierda, sin reacción peritoneal. En el laboratorio presenta 11500 glóbulos blancos/mm3 y PCR de 30 mg/L. Se realiza una TC de abdomen y pelvis que muestra engrosamiento del colon sigmoides con imágenes diverticulares y leve rarefacción de la grasa pericolónica. ¿Cuál es la conducta a seguir?",
+    "opciones": {
+      "a": "Internación, antibioticoterapia endovenosa y control evolutivo.",
+      "b": "Internación, antibioticoterapia endovenosa y colectomía.",
+      "c": "Antibioticoterapia vía oral, pautas de alarma y control ambulatorio al mes.",
+      "d": "Antibioticoterapia vía oral, pautas de alarma y control ambulatorio en 48 horas."
+    },
+    "correcta": "d",
+    "explicacion": "Hinchey modificada",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_073",
+    "materia": ["infectologia", "neumonologia"],
+    "submateria": ["TRI – Neumonías", "Pleura, mediastino y diafragma"],
+    "enunciado": "Paciente de 60 años de edad que consulta por fiebre, dolor torácico, tos y expectoración. En la radiografía de tórax se observa infiltrado de aspecto consolidativo en la base derecha. Se comienza esquema antibiótico empírico con Amoxicilina/ ácido clavulánico y Claritromicina. Evoluciona con empeoramiento de síntomas y en el control radiográfico se observa derrame pleural que se punza y se objetiva pH de 6,95 con consumo de glucosa y LDH de 2000. La tinción de Gram es negativa. ¿Qué conducta tomaría?",
+    "opciones": {
+      "a": "Colocación tubo de drenaje pleural",
+      "b": "Cambiar antibiótico",
+      "c": "Conducta expectante",
+      "d": "Es un trasudado y se inicia tratamiento depletorio con diuréticos por insuficiencia cardíaca"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_074",
+    "materia": ["cirugiageneral", "urgencias"],
+    "submateria": ["Patología de pared abdominal", "Síndromes abdominales"],
+    "enunciado": "Paciente masculino, de 75 años de edad, es traído a la guardia por presentar dolor inguinal de 24 horas de evolución, asociado a náuseas y vómitos, distensión abdominal y falta de eliminación de heces y gases. En el laboratorio de ingreso presenta 1500 glóbulos blancos/mm3 y acidosis metabólica con hiperlactacidemia. Al examen físico, se encuentra somnoliento y se constata hernia inguinoescrotal izquierda dolorosa e irreductible. ¿Cuál es la conducta adecuada a seguir?",
+    "opciones": {
+      "a": "Colocación de sonda nasogástrica y radiografía de abdomen.",
+      "b": "Colocación de sonda nasogástrica y solicitar TC de abdomen y pelvis.",
+      "c": "Colocación de sonda nasogástrica y cirugía de urgencia.",
+      "d": "Colocación de sonda nasogástrica e internación en unidad de cuidados intensivos."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_075",
+    "materia": ["gastroenterologia", "oncologia"],
+    "submateria": ["Cáncer colorrectal", "Conceptos de Oncología"],
+    "enunciado": "¿Cuál se considera un factor de riesgo para el cáncer colorrectal (CCR)?",
+    "opciones": {
+      "a": "La dieta rica en fibras",
+      "b": "La enfermedad diverticular",
+      "c": "El antecedente de CCR en familiar directo",
+      "d": "El síndrome de colon irritable con constipación"
+    },
+    "correcta": "c",
+    "explicacion": "La edad es el factor de riesgo más importante en las personas sin antecedentes personales ni familiares.\nLa curva de incidencia se eleva a partir de los 40 años y el 90% de los casos se diagnostican en mayores de 50 años.\nLos antecedentes familiares elevan el riesgo, por lo que es muy importante la cercanía del vínculo, la cantidad de familiares afectados y su edad de aparición.\nLa ingesta de grasas y carnes rojas incrementaría el riesgo, así como el consumo de fibras lo reduciría.\nEl sedentarismo y la obesidad podrían ser factores que aumentan el riesgo.\nGimenez, Cirugía, página 596.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_076",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Patología de pared abdominal"],
+    "enunciado": "¿Cuál es la característica de las hernias inguinales indirectas o intra inguinales?",
+    "opciones": {
+      "a": "Ingresan en el conducto inguinal a través del orificio inguinal profundo, por fuera de los vasos epigástricos",
+      "b": "Protruyen en la pared anterior del abdomen por dentro y fuera de los vasos epigástricos",
+      "c": "El saco herniario protruye en la pared abdominal anterior por dentro de los vasos epigástricos",
+      "d": "El saco herniario no tiene relación con los vasos epigástricos"
+    },
+    "correcta": "a",
+    "explicacion": "La hernia indirecta es el tipo más frecuente. Se origina a través de una dilatación progresiva del orificio inguinal profundo y se extiende por dentro del cordón hasta la espina del pubis.\nEl saco herniado que contiene el asa herniada atraviesa por el anillo inguinal superficial y así puede llegar fácilmente hasta el escroto.\nLa diferenciación entre hernia directa e indirecta se efectúa en el momento de la cirugía, cuando el cirujano comprueba el lugar de emergencia del saco en relación con la arteria epigástrica.\nLas hernias directas pasan por dentro de ella, las indirectas por delante y por afuera.\nAún así, el procedimiento quirúrgico que se realiza es el mismo, la distinción entre ambas será puramente académica o descriptiva desde el punto de vista anatómico.\nGimenez, Cirugía, página 92.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_077",
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Tiroides", "Glándulas salivales y masas cervicales"],
+    "enunciado": "Un paciente de 37 años de edad con antecedente de diabetes mellitus y dislipemia concurre a su consulta por el hallazgo de un nódulo tiroideo. Trae el informe ecográfico que describe la presencia de un nódulo hipoecoico de 18 mm en el lóbulo izquierdo. Los valores de TSH y T4 libre se encuentran dentro valores normales. ¿Cuál es la conducta a tomar?",
+    "opciones": {
+      "a": "Punción aspirativa con aguja fina.",
+      "b": "Lobectomía tiroidea.",
+      "c": "Centellograma tiroideo.",
+      "d": "Control clínico e imagenológico en 6 a 12 meses."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_078",
+    "materia": ["endocrinologia", "cirugiageneral"],
+    "submateria": ["Tiroides", "Otras preguntas de cirugía general"],
+    "enunciado": "Paciente femenino de 42 años de edad, consulta por presentar aumento de tamaño de la glándula tiroides asociado a disnea. Se realizó ecografía que mostró bocio multinodular con nódulo dominante en lóbulo derecho de 4.5 cm. Se realiza punción con aguja fina cuya anatomía patológica informa lesión benigna [Bethesda II]. Se decide la conducta quirúrgica realizando tiroidectomía total. En el postoperatorio presenta signos de Chvostek y Trousseau positivos. ¿Cuál es la complicación postoperatoria más probable?",
+    "opciones": {
+      "a": "Hipocalcemia.",
+      "b": "Lesión del nervio laríngeo superior.",
+      "c": "Lesión del nervio laríngeo recurrente.",
+      "d": "Hematoma sofocante."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_079",
+    "materia": ["cardiologia", "traumatologia"],
+    "submateria": ["Venas y linfáticos", "Miembro inferior"],
+    "enunciado": "Consulta un paciente varón de 76 años con antecedente reciente de cirugía de osteosíntesis de cadera izquierda. Refiere aumento indoloro del diámetro de su miembro inferior izquierdo de 48 horas de evolución. Al examen físico presenta pulsos conservados en ambos miembros inferiores, color y temperatura local normales. Edema distal del miembro inferior izquierdo. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Infección de partes blandas",
+      "b": "Trombosis arterial",
+      "c": "Linfedema",
+      "d": "Trombosis venosa profunda"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_080",
+    "materia": ["gastroenterologia", "hematologia"],
+    "submateria": ["Colon", "Anemias carenciales"],
+    "enunciado": "Paciente de 55 años, postmenopáusica, consulta por astenia y disnea de esfuerzo. En la anamnesis refería ligera epigastralgia y pirosis ocasional. No metrorragias. Laboratorio: Hb 6 g/dl, VCM 69 fl, Ferremia 13 microgramos/dl, ferritina 4 ng/ml. Endoscopia digestiva alta: pequeña hernia hiatal por deslizamiento sin signos de esofagitis. ¿Qué se le sugiere a la paciente?",
+    "opciones": {
+      "a": "Realización de una videocolonoscopía",
+      "b": "Tratamiento médico con hierro vía oral",
+      "c": "Tratamiento con inhibidores de la bomba de protones",
+      "d": "Interconsulta con ginecóloga"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_081",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Páncreas", "Otras preguntas de cirugía general"],
+    "enunciado": "¿Cuál es el tratamiento quirúrgico paliativo de elección en tumores de páncreas irresecables diagnosticados en el intraoperatorio?",
+    "opciones": {
+      "a": "Coledocoduodenoanastomosis y drenaje percutáneo de la vía biliar",
+      "b": "Duodenopancreatectomía cefálica y gastroenteroanastomosis",
+      "c": "Hepaticoyeyunoanastomosis y gastroenteroanastomosis",
+      "d": "Pancreatectomia total"
+    },
+    "correcta": "c",
+    "explicacion": "En pacientes irresecables el tratamiento estará dirigido a la paliación sintomática.\nLas estenosis tumorales irresecables de la via biliar distal con ictericia deben ser tratadas desde el inicio mediante drenaje endoscópico con colocación de un stent transtumoral.\nSi ello no resulta factible, se intentará el drenaje percutáneo de la via biliar (trans-parieto-hepático).\nY si eso tampoco fuera viable, siempre existe el recurso de la derivación biliodigestiva quirúrgica, que se deja como última opción para no agregarle morbilidad a un paciente irresecable.\nEl tratamiento de la obstrucción duodenal es otro factor que se debe tener en cuenta, y se puede resolver con la colocación de stents autoexpandibles duodenales, la realización de una gastroenteroanastomosis con imanes por via endoscópica, o bien la anastomosis gastroyeyunal en forma quirúrgica, pensando siempre en las consideraciones precedentes.\nGimenez, Cirugía, página 525.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "cirugia_002_082",
+    "materia": ["dermatologia", "cirugiageneral"],
+    "submateria": ["Generalidades", "Otras preguntas de cirugía general"],
+    "enunciado": "¿A qué estadio de úlceras por presión corresponde \"la pérdida completa del espesor de la piel, con afectación del tejido celular subcutáneo que puede extenderse a la fascia subyacente, pero no atravesarla\"?",
+    "opciones": {
+      "a": "Estadio 1",
+      "b": "Estadio 2",
+      "c": "Estadio 3",
+      "d": "Estadio 4"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "explicacion_img": [
+      "img/explicaciones/dermatologia_ulceras_presion.jpg"
+    ],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  }
+]
