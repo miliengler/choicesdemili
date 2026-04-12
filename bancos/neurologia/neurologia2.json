@@ -1,1 +1,1661 @@
-[]
+[
+  {
+    "id": "neurologia_002_001",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Metabólicas",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Ud. recibe en la guardia un adulto en coma. Fue hallado en su domicilio, desconociéndose otros datos. Está hemodinámicamente compensado con leve taquipnea. Tiene pupilas isocóricas, reactivas, con adecuada aunque lenta respuesta al dolor y reflejos oculocefálicos conservados. ¿Cuál es la causa más probable del coma y su primera conducta?",
+    "opciones": {
+      "a": "Coma metabólico. Solución glucosada al 50%, 50 mL por vía intravenosa",
+      "b": "Coma estructural (masa hemisférica). Tomografía computada de cerebro con contraste",
+      "c": "Coma metabólico (encefalopatía hipertensiva). Nitroprusiato de sodio",
+      "d": "Coma estructural (lesión vascular del tronco cerebral). Resonancia magnética de cerebro"
+    },
+    "correcta": "a",
+    "explicacion": "Se describe la aproximación inicial al paciente en coma y su manejo en el sistema de emergencias.\n\nSe destaca la importancia de administrar **tiamina y glucosa** en el **coma metabolico**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_002",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "ECV",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Usted recibe en el servicio de urgencias a un paciente de 62 años, con antecedentes de hipertensión arterial, que hace dos horas comenzó con hemiparesia izquierda y deterioro del sensorio que fue in crescendo rápidamente. Al ingreso se encuentra en coma, con respuesta motora de descerebración bilateral, anisocoria con midriasis derecha arreactiva y sin respuesta verbal ni ocular a estímulos. ¿Cuál es su sospecha diagnóstica y la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Coma de origen estructural; realiza intubación orotraqueal, estabiliza la ventilación y la circulación y solicita tomografía axial computada de cerebro de urgencia",
+      "b": "Coma de origen metabólico-tóxico; permeabiliza la vía aérea, estabiliza la ventilación y la circulación, y administra inicialmente flumazenil y naloxona por vía endovenosa",
+      "c": "Coma de origen metabólico-tóxico; permeabiliza la vía aérea, estabiliza la ventilación y la circulación, y administra tiamina y solución glucosada hipertónica al 20% por vía endovenosa",
+      "d": "Coma de origen estructural; realiza intubación orotraqueal, estabiliza la ventilación y la circulación, y realiza punción lumbar de urgencia"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta destaca la importancia de la **neuroimagen** dentro de la conducta inicial en el paciente con sospecha en coma de causa estructural.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_003",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Un paciente de 64 años presenta alteraciones significativas de la memoria y de la conducta, pérdida cognitiva y signos incipientes de demencia de dos años de evolución. No ha tenido alteraciones de la marcha, convulsiones ni déficit neurológico focal. Usted solicita una resonancia magnética. De acuerdo a su presunción diagnóstica, ¿cuál es el hallazgo más probable?",
+    "opciones": {
+      "a": "Atrofia a predominio de los lóbulos frontal y temporal",
+      "b": "Dilatación ventricular",
+      "c": "Atrofia cortical y del hipocampo",
+      "d": "Lesiones secuelares múltiples en los ganglios de la base"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta destaca las causas más frecuentes de **demencia** y sus hallazgos imagenológicos sobretodo en resonancia magnética.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_004",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la principal utilidad del Mini Mental Test de Folstein?",
+    "opciones": {
+      "a": "Diagnóstico de demencia y/o enfermedad de Alzheimer",
+      "b": "Evaluación de la capacidad de autonomía del paciente anciano",
+      "c": "Diagnóstico de deterioro cognitivo",
+      "d": "Evaluación de la funcionalidad física para el autocuidado en el paciente anciano"
+    },
+    "correcta": "c",
+    "explicacion": "Aquí, se muestra una temática recurrente: el uso de **Minimental test de Folstein** y su aplicación ante la sospecha clínica de demencia degenerativa.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_005",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Lo consultan por una paciente de 85 años, quien según sus familiares presenta pérdida de la memoria y marcada declinación de la capacidad funcional de un año de evolución. No tiene antecedentes patológicos, su examen físico es normal y presenta un test de Folstein (minimental test de Folstein) de 18 en el que las fallas máximas fueron en la memoria y en el lenguaje. La tomografía computada de cerebro muestra atrofia cortical y tiene una VDRL negativa y ácido fólico, hemograma, vitamina B12, calcemia y TSH dentro de valores normales. ¿Cuál es el diagnóstico presuntivo y la conducta más adecuada?",
+    "opciones": {
+      "a": "Síndrome confusional (delirio), identificación y tratamiento de su causa. Procura generar un ambiente familiar para el paciente y lo protege de provocarse daños a sí mismo o a terceros",
+      "b": "Cuadro de depresión e inicio de tratamiento con fármacos antidepresivos",
+      "c": "Síndrome demencial (compatible con enfermedad de Alzheimer), inicio de tratamiento con inhibidores de la acetilcolinesterasa, abordaje terapéutico familiar y manejo de síntomas no cognitivos",
+      "d": "Cuadro de deterioro cognitivo normal para la edad, seguimiento y reevaluación periódica para monitorear la aparición de algún síntoma de enfermedad"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta destaca en uso del **Minimental test de Folstein** en el estudio del paciente con demencia así como el abordaje farmacológico y no farmacológico de las demencias degenerativas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_006",
+    "materia": [
+      "neurologia",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "ECV",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección frente a una estenosis carotídea mayor del 70%, sintomática?",
+    "opciones": {
+      "a": "Bypass carotídeo con vena.",
+      "b": "Tromboendarterectomía carotídea.",
+      "c": "Ligadura de la carótida primitiva para evitar una embolia distal.",
+      "d": "Anticoagulación de por vida."
+    },
+    "correcta": "b",
+    "explicacion": "En esta pregunta nos muestra el tratamiento específico de la **enfermedad carotídea sintomática**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_007",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "ECV"
+    ],
+    "enunciado": "Un paciente de 58 años acude a la guardia acompañado por sus familiares por presentar trastornos en la marcha y debilidad en miembro superior derecho de aparición súbita de 90 minutos de evolución. Tiene como antecedentes hipercolesterolemia tratada con estatinas y tabaquismo de 40 paquetes/año. Al examen físico presenta hemiparesia derecha, afasia de expresión y TA: 160-100 mm de Hg. Se solicita una TAC de cráneo que no muestra alteraciones. ¿Cuál es el tratamiento inicial más adecuado?",
+    "opciones": {
+      "a": "Fibrinolisis con activador tisular del plasminógeno (t-PA)",
+      "b": "Anticoagulación con heparina de bajo peso molecular",
+      "c": "Antiagregación con aspirina",
+      "d": "Antiagregación con clopidogrel"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_008",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "ECV"
+    ],
+    "enunciado": "Un paciente de 70 años con antecedentes de FA crónica en tratamiento con beta bloqueantes y anticoagulantes orales es trasladado a la guardia por presentar de manera súbita pérdida de la fuerza del brazo y la pierna izquierda. Al ingreso se presenta vigil, TA 180-90 mm Hg. El examen físico revela presencia de hemiplejía fasciobraquiocrural, hemianestesia y hemianopsia izquierda, desviación de la mirada de preferencia hacia el lado ipsolateral, anosognosia, apraxia constructiva e indiferencia por la mitad contralateral del cuerpo. De acuerdo a los hallazgos clínicos, ¿qué territorio arterial se encuentra comprometido?",
+    "opciones": {
+      "a": "Arteria cerebral media hemisferio dominante",
+      "b": "Arteria cerebral anterior hemisferio no dominante",
+      "c": "Arteria cerebral anterior hemisferio dominante",
+      "d": "Arteria cerebral media hemisferio no dominante"
+    },
+    "correcta": "d",
+    "explicacion": "Los sindromes lobares son un tema preguntado frecuentemente, por lo general se describe el déficit de un paciente con ACV como punto de partida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_009",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "Un paciente de 60 años consulta por un cuadro de larga data de temblor cefálico, de ambas manos y de la voz. Un tío, su padre y dos hermanas tienen un cuadro similar. El examen físico es normal excepto por el temblor. ¿Cuál es la conducta más adecuada a seguir?",
+    "opciones": {
+      "a": "Solicitar un estudio de la función tiroidea.",
+      "b": "Indicar propranolol 80 mg/dia.",
+      "c": "Indicar una combinación de levodopa y carbidopa",
+      "d": "Solicitar una resonancia magnética de cerebro"
+    },
+    "correcta": "b",
+    "explicacion": "El **temblor esencial**, sus criterios diagnósticos y tratamiento, son preguntados frecuentemente. Se deben conocer la diferencias con Enfermedad de Parkinson.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_010",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "Un paciente de 62 años consulta por temblor distal simétrico de miembros superiores que se incrementa con cafeína o por estrés y suele calmar con la ingesta de alcohol. El temblor le dificulta tareas cotidianas como escribir o tomar un vaso. No tiene otras manifestaciones neurológicas. ¿Qué tipo de temblor es?",
+    "opciones": {
+      "a": "Temblor esencial",
+      "b": "Temblor fisiológico",
+      "c": "Temblor parkinsoniano",
+      "d": "Temblor cerebeloso"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta se describe el **temblor esencial** y sus características clinicas, es un tema compartido en varias preguntas a lo largo de los años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_011",
+    "materia": [
+      "neurologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Trastornos del movimiento",
+      "Trastornos de la infancia y la adolescencia"
+    ],
+    "enunciado": "Lo consultan por un niño de 9 años, que presenta tics, grita involuntariamente y tiene problemas de conducta. ¿Cuál es el diagnóstico MÁS probable?",
+    "opciones": {
+      "a": "Trastorno de estrés postraumático",
+      "b": "Síndrome de Gilles de la Tourette",
+      "c": "Trastorno de ansiedad generalizada",
+      "d": "Síndrome de Asperger"
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta resalta la asociación entre trastornos de conducta y movimientos anormales dentro de la neuropsiquiatría.\n\nSe destacan los criterios diagnósticos de **Gilles de la Tourette**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_012",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Desmielinizantes"
+    ],
+    "enunciado": "Una mujer de 35 años se presenta a la consulta por episodios recurrentes de trastornos de la marcha con recuperación parcial al cabo de unos días. Una resonancia magnética de cerebro reveló lesiones multifocales en la sustancia blanca periventricular, el tronco cerebral y la médula espinal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Esclerosis lateral amiotrófica",
+      "b": "Esclerosis múltiple",
+      "c": "Leucoencefalopatía multifocal progresiva",
+      "d": "Secundarismo en el sistema nervioso central de neoplasia de origen desconocido"
+    },
+    "correcta": "b",
+    "explicacion": "Sobre este tema en particular es importante conocer la definición de brote clínico y los hallazgos esperados en RM de cerebro y médula.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_013",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Desmielinizantes"
+    ],
+    "enunciado": "Una paciente de 38 años consulta por inestabilidad para la marcha de días de evolución. Presenta paresia de miembro inferior izquierdo asociada hiperreflexia difusa de ambos miembros y signo de Babinsky bilateral. Refiere como antecedente consulta a oftalmología por pérdida de la visión del ojo derecho 6 meses atrás con resolución espontánea del cuadro en 4 semanas. La Resonancia Magnética por Imágenes (RMI) de cráneo revela imágenes ovoides, algunas de 6 mm de diámetro, que se observan isointensas y algunas hipointensas en T1 y que en T2 y Flair se muestran hiperintensas, localizadas en la sustancia blanca periventricular y a nivel de la protuberancia y bulbo. En la RMI de columna cervical se visualizan a nivel de médula imágenes de características similares a las del encéfalo. En base al diagnóstico establecido a partir de los datos aportados por la clínica y las imágenes, ¿cuál de los siguientes tratamientos tiene mayor probabilidad de modificar el curso de la enfermedad a largo plazo?",
+    "opciones": {
+      "a": "Interferón gamma 1 b SC",
+      "b": "Metilprednisolona IV",
+      "c": "Interferón beta 1 a SC",
+      "d": "Inmunoglobulina"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_014",
+    "materia": [
+      "neurologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología",
+      "SNC y meningitis"
+    ],
+    "enunciado": "Los priones son agentes infecciosos causantes, entre otras, de la enfermedad de Creutzfeldt Jacob y de la encefalopatía espongiforme bovina (\"enfermedad de la vaca loca\"). ¿Cuál de los siguientes enunciados es correcto con respecto a ellos?",
+    "opciones": {
+      "a": "Son agentes infecciosos que no poseen ácido nucleico",
+      "b": "Producen enfermedades de muy larga evolución clínica",
+      "c": "Su transmisión es exclusivamente por ingestión de alimentos contaminados",
+      "d": "En su mecanismo fisiopatológico intervien la transformación de la proteína priónica Sc (PrPSc) en proteina priónica C (PrPC)"
+    },
+    "correcta": "a",
+    "explicacion": "Esta pregunta (muy fina) resume las características principales de esta enfermedad infecciosa, la evolución clínica, forma de contagio y fisiopatología.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_015",
+    "materia": [
+      "neurologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neuropatías",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Es llevado a la guardia de su hospital un niño de 9 años que presenta debilidad en los miembros inferiores e irritabilidad. En el examen físico usted constata dolor muscular en las piernas, reflejos tendinosos abolidos e hipotensión postural. Se realiza una punción lumbar que informa los siguientes resultados: glucorraquia: 60 mg/dl (glucemia 100 mg/dl); Células: 5 leucocitos/mm3 y proteinorraquia: 60 mg/dl. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Síndrome de médula anclada",
+      "b": "Síndrome de Guillain Barré",
+      "c": "Meningitis tuberculosa",
+      "d": "Meningitis por enterovirus"
+    },
+    "correcta": "b",
+    "explicacion": "Las características del LCR son valoradas en muchas preguntas, en esta oportunidad se describen las características licuorales en **Guillain Barré**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_016",
+    "materia": [
+      "neurologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neuropatías",
+      "Patología infecciosa infantil"
+    ],
+    "enunciado": "Una niña de 14 años presenta debilidad de miembros inferiores de 24 horas de evolución En el examen neurológico se constata sensibilidad conservada y arreflexia patelar y aquileana Se decide realizar una punción lumbar. ¿Cuáles son los hallazgos más probables de encontrar en el líquido cefalorraquídeo?",
+    "opciones": {
+      "a": "Glucosa baja, proteínas normales, presión normal",
+      "b": "Glucosa alta, proteínas altas, presión normal",
+      "c": "Glucosa normal, proteínas bajas, presión alta",
+      "d": "Glucosa normal, proteínas altas, presión normal"
+    },
+    "correcta": "d",
+    "explicacion": "En esta oportunidad se describe una caso sospechoso de **Guillain Barré**, para luego preguntar sobre las características licuorales en esta enfermedad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_017",
+    "materia": [
+      "neurologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología",
+      "SNC y meningitis"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una mujer de 24 años, tabaquista, que ingresa al Servicio de Urgencias con trastornos del sensorio, parálisis del VI par craneal, y signos meníngeos. Sus familiares refieren que tres semanas antes había presentado cefalea frontal y discreta torpeza. Se realizó una tomografía computarizada (TC) craneal donde se observan imágenes hipodensas múltiples. Se realizó una punción lumbar con los siguientes resultados en el LCR: líquido claro, 50% Polimorfonucleares, 15% mononucleares, glucosa 9 mg/dl, proteínas 77 mg/dl",
+    "opciones": {
+      "a": "Tuberculosis meningea.",
+      "b": "Meningitis herpética.",
+      "c": "Hemorragia subaracnoidea.",
+      "d": "Meningitis bacteriana."
+    },
+    "correcta": "a",
+    "explicacion": "En este video repasamos como acercarnos al diagnóstico etiológico de **meningitis** por clínica y características del LCR",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_018",
+    "materia": [
+      "neurologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología",
+      "Síncope"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una joven de 25 años que ha presentado una brusca pérdida de conocimiento de pocos minutos de duración, estando en bipedestación en un colectivo lleno de gente, con una rápida recuperación posterior? Los pasajeros que viajaban con ella refieren que estaba pálida antes de caerse y ella refiere que en un momento empezó a sudar profusamente?",
+    "opciones": {
+      "a": "Convulsión.",
+      "b": "Síncope.",
+      "c": "Vértigo.",
+      "d": "Ataque de caída (drop attack)."
+    },
+    "correcta": "b",
+    "explicacion": "Aprovechamos este choice para repasar los diagnósticos diferenciales de un paciente que se presenta con pérdida de conocimiento",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_019",
+    "materia": [
+      "neurologia",
+      "nutricion"
+    ],
+    "submateria": [
+      "Neuropatías",
+      "Diabetes mellitus"
+    ],
+    "enunciado": "Un paciente de 58 años, diabético tipo 2 en tratamiento con dieta y glibenclamida 15 mg/dia, consulta por presentar desde hace seis a ocho semanas dolor y parestesias a predominio nocturno en ambos tobillos y pies. Refiere haber tenido entre sus controles de glucemia en ayunas dos registros de 61 y 57 mg/dl. En el examen físico presenta una pérdida de peso de cuatro kilos, hiporreflexia rotuliana bilateral y sensibilidad vibratoria disminuida bilateralmente y distal en ambos miembros inferiores. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Neuropatía hipoglucémica",
+      "b": "Neuropatía periférica diabética",
+      "c": "Plexopatía diabética (amiotrofia diabética)",
+      "d": "Neuropatía autonómica diabética"
+    },
+    "correcta": "b",
+    "explicacion": "En esta pregunta se realiza una descripción clínica y semiológica de la **polineuropatía diabética**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_020",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Placa motora"
+    ],
+    "enunciado": "Una joven de 27 años ha presentado en los últimos 3 meses diplopía en forma intermitente. El examen físico revela debilidad de los músculos faciales y de los rectos externos del ojo. El resto del examen neurológico es normal. ¿Cuál de los siguientes es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Isquemia protuberancial",
+      "b": "Esclerosis lateral amiotrófica",
+      "c": "Esclerosis en placas",
+      "d": "Miastenia gravis"
+    },
+    "correcta": "d",
+    "explicacion": "Esta pregunta nos describe la clínica de la **miastenia gravis**, se realiza un resúmen práctico sobre los criterios diagnósticos",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_021",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Usted asiste a un paciente de 27 años con dolor paroxístico en las zonas correspondientes a las ramas maxilar y mandibular del nervio trigémino de 2 días de evolución, sin alteraciones de la sensibilidad superficial. ¿Cuál es la indicación más adecuada?",
+    "opciones": {
+      "a": "Carbamazepina 100 mg dos veces por día y aumento progresivo de la dosis hasta calmar el dolor",
+      "b": "Solicitud de resonancia magnética de cerebro con indicación expresa de evaluación del seno cavernoso",
+      "c": "Solicitud de resonancia magnética de cerebro con gadolinio para evaluar zonas de desmielinización",
+      "d": "Analgésicos, valaciclovir 1 gramo cada 8 horas y reevaluación en 48 horas en búsqueda de la aparición de eritema y vesículas en la zona afectada"
+    },
+    "correcta": "a",
+    "explicacion": "Aquí se describe el tratamiento de primera elección de la **neuralgia del trigemino**, y se realiza una descripción sobre diagnósticos diferenciales y la necesidad de neuroimágen.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_022",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "ECV",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Una paciente de 34 años concurre a la guardia por presentar cefalea. Refiere que apareció en las últimas horas de manera súbita y que nunca había tenido un dolor de esas características e intensidad. No presenta antecedentes de importancia. En el examen físico se encuentra lúcida, orientada en tiempo y espacio, sin signos de foco ni meníngeos. Tensión arterial: 130/85 mm Hg; Tº: 36,5ºC. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar tomografía computada de cerebro",
+      "b": "Realizar punción lumbar",
+      "c": "Indicar un antiinflamatorio no esteroide y control en 24 horas",
+      "d": "Realizar radiografía de senos paranasales"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_023",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Cefaleas"
+    ],
+    "enunciado": "Una mujer de 68 años, que presenta cefalea holocraneana de más de 4 meses de evolución, consulta a la guardia porque desde hace 10 días no mejora con los analgésicos que habitualmente consumía. El dolor aumenta de intensidad durante las actividades diarias y suele despertarla por la noche. Al examen físico se presenta lúcida, sin signos de déficit motor con leve envaramiento de la nuca y contractura de la musculatura cervical. El examen de los pares craneanos no presenta alteraciones. ¿Cuál es la conducta más apropiada ante este cuadro?",
+    "opciones": {
+      "a": "Combinar el tratamiento analgésico con miorrelajantes",
+      "b": "Indicar estudio de neuroimagen",
+      "c": "Indicar radiografía de columna cervical con posterior derivación para kinesioterapia",
+      "d": "Tranquilizar a la paciente haciendo referencia a la naturaleza benigna del proceso y derivar a neurología para tratamiento del dolor"
+    },
+    "correcta": "b",
+    "explicacion": "En esta oportunidad, se resalta la importancia de realizar una neuroimágen a un pacientes con **cefalea de reciente comienzo y con parámetros de \"luz roja\"**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_024",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Cefaleas"
+    ],
+    "enunciado": "¿Cuál de las siguientes características corresponde a la cefalea tensional?",
+    "opciones": {
+      "a": "Ataques periódicos de cefalea muy intensa, unilateral y asociada con síntomas autonómicos",
+      "b": "Instalación gradual de dolor opresivo, bilateral, intensidad leve a moderada, con ausencia de náuseas y vómitos",
+      "c": "Cefalea pulsátil, unilateral, de intensidad moderada a severa, asociada con náuseas, vómitos y fotofobia. Más frecuente en mujeres",
+      "d": "Ataques periódicos de cefalea bilateral, de intensidad leve a moderada, asociada con fotofobia, rinorrea y lagrimeo"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_025",
+    "materia": [
+      "neurocirugia",
+      "urgencias",
+      "pediatria"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Paciente politraumatizado",
+      "Otras preguntas de pediatría"
+    ],
+    "enunciado": "Se encuentra en la Guardia un niño de 7 años, que padeció un traumatismo de cráneo. Usted lo valora y encuentra: Apertura de los ojos ante el estímulo doloroso; Respuesta verbal confusa; Respuesta motora: retirada ante el dolor. ¿Cuál es el puntaje que le corresponde de acuerdo a la escala de coma de Glasgow?",
+    "opciones": {
+      "a": "6 puntos",
+      "b": "8 puntos",
+      "c": "10 puntos",
+      "d": "12 puntos"
+    },
+    "correcta": "c",
+    "explicacion": "Para resolver esta pregunta es necesario conocer y aplicar la **Escala de Glasgow**, disponible en forma gratuita en diferentes formatos, se recomienda saber aplicarla para resolver preguntas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_026",
+    "materia": [
+      "neurocirugia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "Un paciente traumatizado víctima de una colisión por vehículo a motor es llevado al departamento de urgencias. En el examen de ingreso se encuentra lúcido, sin signos de foco neurológico, con una frecuencia respiratoria de 24/minuto y una tensión arterial de 95/70 mm Hg. Horas más tarde, lo requieren con urgencia para una nueva evaluación del paciente quien presenta ahora anisocoria y hemiparesia progresiva. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Hematoma intracerebral.",
+      "b": "Hematoma subdural.",
+      "c": "Hematoma extradural.",
+      "d": "Lesión axonal difusa."
+    },
+    "correcta": "c",
+    "explicacion": "Aquí se describe al **hematoma extradural** como emergencia neuroquirúrgica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_027",
+    "materia": [
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Neurocirugía"
+    ],
+    "enunciado": "¿Cuál es el mecanismo de producción MÁS frecuente del hematoma extradural?",
+    "opciones": {
+      "a": "Lesión por cizallamiento de la arteria meníngea media",
+      "b": "Ruptura de un aneurisma de la arteria Siviana",
+      "c": "Efracción de vasos corticales",
+      "d": "Laceración de la corteza cerebral"
+    },
+    "correcta": "a",
+    "explicacion": "En esta oportunidad se describe la relación de la **arteria meníngea media** con los hematomas extradurales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_028",
+    "materia": [
+      "neurocirugia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "Un paciente de 18 años, que participó en una pelea callejera, es trasladado al hospital por el sistema de emergencias. Durante el traslado permaneció lúcido y hemodinámicamente compensado. Al ingreso a la guardia presenta desorientación temporoespacial, herida cortante a nivel parietal izquierdo y midriasis homolateral. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hematoma subdural",
+      "b": "Hematoma extradural",
+      "c": "Hematoma intracerebral",
+      "d": "Hemorragia subaracnoidea"
+    },
+    "correcta": "b",
+    "explicacion": "Aquí se describe al **hematoma extradural** como emergencia y se destacan los tiempos en que la colección se desarrolla como clave para la sospecha diagnóstica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_029",
+    "materia": [
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Neurocirugía"
+    ],
+    "enunciado": "Un paciente de 76 años, con antecentes de etilismo, es traído a la consulta por deterioro del sensorio, cefalea y disminución de la fuerza en hemicuerpo izquierdo. Los familiares que lo acompañan refieren que el cuadro comenzó hace 6 semanas cuando sufrió varias caídas, luego de las cuales presentó en forma progresiva lentitud en las ideas y dificultad para concentrarse con empeoramiento de los síntomas en las últimas 48 hs. En el examen físico se encuentra confuso, con mínima tendencia al sueño y hemiparesia izquierda leve. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Hematoma subdural crónico y solicita una tomografía computada de cerebro y evaluación por neurocirugía",
+      "b": "Tumor cerebral y solicita una tomografía computada de cerebro y evaluación por neurocirugía",
+      "c": "Absceso tuberculoso y solicita una tomografía computada de cerebro, radiografía de tórax y evaluación por infectología",
+      "d": "Accidente cerebrovascular isquémico y solicita una tomografía computada de cerebro e inicia tratamiento antiagregante plaquetario"
+    },
+    "correcta": "a",
+    "explicacion": "Aquí se describe un caso de un **hematoma subdural crónico** donde se destacan los cambios neuroconductuales y se describe la conducta a seguir.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_030",
+    "materia": [
+      "neurocirugia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "Un paciente que sufrió un traumatismo craneoencefálico hace 16 hs se encuentra en coma con un puntaje de Glasgow de 5 y sin lesión objetivable en la tomografía de cerebro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Contusión cortical",
+      "b": "Edema cerebral difuso",
+      "c": "Injuria axonal difusa",
+      "d": "Lesión cerebral isquémica"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_031",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Placa motora"
+    ],
+    "enunciado": "Una mujer de 35 años consulta a la guardia por presentar debilidad y fatiga muscular. Refiere que la debilidad aumenta con la actividad repetitiva y mejora con el reposo o el sueño. No presenta antecedentes personales de relevancia. Al examen físico presenta diplopía, leve ptosis palpebral, con debilidad de miembros proximales y reflejos tendinosos profundos conservados, no hay alteración de la sensibilidad ni de otras funciones neurológicas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Síndrome miasteniforme de Eaton Lambert",
+      "b": "Síndrome de Guillain Barre",
+      "c": "Miastenia Gravis",
+      "d": "Botulismo"
+    },
+    "correcta": "c",
+    "explicacion": "Esta pregunta nos describe la clínica de la **miastenia gravis**, se realiza un resúmen práctico sobre los criterios diagnósticos a fin de poder resolver preguntas similares de presentación de caso clínico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_032",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 75 años, con antecedentes de hipertensión arterial controlada con enalapril 10 mg/dia, autónomo e independiente, que según sus familiares presentó en los últimos meses dificultad para andar, torpeza, inestabilidad con caídas frecuentes, falta de concentración, olvidos y pérdidas de orina? En el examen físico se encuentra normotenso con leve desorientación témporo espacial y examen neurológico normal.",
+    "opciones": {
+      "a": "Síndrome de Guillain Barré",
+      "b": "Enfermedad de Alzheimer",
+      "c": "Enfermedad de Parkinson",
+      "d": "Hidrocefalia normotensiva"
+    },
+    "correcta": "d",
+    "explicacion": "Aquí se describe un caso de **hidrocefalia normotensiva del adulto** (Hakim Adams), una causa relevante de demencia reversible con una triada clínica característica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_033",
+    "materia": [
+      "neurocirugia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en un adolescente de 18 años que luego de una pelea callejera, ingresa al hospital por traumatismo parietal izquierdo? Inicialmente se encontraba lúcido pero luego de 20 minutos se encuentra confuso y con midriasis izquierda.",
+    "opciones": {
+      "a": "Hematoma subdural",
+      "b": "Hematoma intracerebral",
+      "c": "Hemorragia subaracnoidea",
+      "d": "Hematoma extradural"
+    },
+    "correcta": "d",
+    "explicacion": "Aquí se describe al **hematoma extradural** como emergencia neuroquirúrgica y se destacan los tiempos en que la colección se desarrolla.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_034",
+    "materia": [
+      "neurologia",
+      "pediatria",
+      "oncologia"
+    ],
+    "submateria": [
+      "Cefaleas",
+      "Oncohematología infantil",
+      "Otras preguntas de oncología"
+    ],
+    "enunciado": "La cefalea en niños puede ser un signo de sospecha de tumor intracraneal. ¿Qué característica de la cefalea está más relacionada con la etiología oncológica?",
+    "opciones": {
+      "a": "Cefalea con cambios en el rendimiento escolar y ataxia.",
+      "b": "Cefalea intermitente frontal.",
+      "c": "Cefalea aguda acompañada de vómitos.",
+      "d": "Cefalea retro-ocular acompañada de fotofobia."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_035",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Desmielinizantes"
+    ],
+    "enunciado": "La Esclerosis Múltiple se clasifica en 4 tipos diferentes según su evolución. Indique la forma más frecuente:",
+    "opciones": {
+      "a": "Progresiva recidivante.",
+      "b": "Progresiva primaria.",
+      "c": "Progresiva secundaria.",
+      "d": "Recidivante remitente."
+    },
+    "correcta": "d",
+    "explicacion": "Aquí se describen en forma sucinta las formas clínicas de la **esclerosis múltiple**, según los criterios actuales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_036",
+    "materia": [
+      "cardiologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Síncope",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un señor de 40 años que presentó una brusca pérdida de conocimiento con caída que mejoró a los pocos minutos de estar en decúbito dorsal en el piso? Los familiares refieren que no presentó relajación de esfínteres ni tuvo movimientos corporales. El examen físico es normal.",
+    "opciones": {
+      "a": "Accidente isquémico transitorio.",
+      "b": "Síncope.",
+      "c": "Accidente cerebrovascular.",
+      "d": "Convulsión."
+    },
+    "correcta": "b",
+    "explicacion": "Repasamos los principales diagnósticos diferenciales de un paciente que se presenta con pérdida de conocimiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_037",
+    "materia": [
+      "traumatologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Columna vertebral",
+      "Paciente politraumatizado"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un joven de 30 años que consulta por dolor intenso cervical con irradiación a ambos hombros y dificultad para girar la cabeza, y relata que hace dos horas fue embestido de atrás por una bicicleta? En el examen físico presenta leve rigidez para mover la cabeza, sin signos neurológicos.",
+    "opciones": {
+      "a": "Indicar paracetamol 500 mg cada 8 horas y control ambulatorio con el traumatólogo.",
+      "b": "Indicar ibuprofeno 600 mg cada 8 horas, colocar collar cervical y citar a control por consultorio externo.",
+      "c": "Solicitar radiografía de columna cervical frente y perfil y evaluar conducta según imágenes.",
+      "d": "Solicitar resonancia nuclear magnética de columna cervical y evaluar conducta según imágenes."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_038",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Consulta a la guardia un varón de 68 años por presentar un cuadro vertiginoso intenso de 2 horas de evolución. Refiere antecedentes de hipertensión arterial, tabaquismo y dislipemia. En el examen físico presenta ataxia, adiadococinesia y nistagmo evocado por la mirada de dirección cambiante. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Realizar pruebas posicionales y del impulso cefálico.",
+      "b": "Realizar una nistagmografia y una audiometría.",
+      "c": "Realizar una neuroimagen.",
+      "d": "Realizar un EEG y un ecodoppler de vasos de cuello."
+    },
+    "correcta": "c",
+    "explicacion": "Aprovechamos esta pregunta para repasar diferencias entre **vértigo central y periférico**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_039",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Neuropatías"
+    ],
+    "enunciado": "Un varón de 42 años consulta a la guardia porque hace dos días percibió que sentía molestias en la cara. Cuando se vio en el espejo notó que la hemicara izquierda tenía un aspecto diferente de lo normal. Refiere que se le escapa líquido por la comisura bucal cuando toma agua y que tiene un sabor raro en la boca. No presenta síntomas respiratorios ni otros signos neurológicos. Según su presunción diagnóstica, ¿cuál es el par craneal que está afectado?",
+    "opciones": {
+      "a": "IV par.",
+      "b": "V par.",
+      "c": "VI par.",
+      "d": "VII par."
+    },
+    "correcta": "d",
+    "explicacion": "Debemos conocer la clínica que da la lesión de cada uno de los **pares craneales**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_040",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Convulsiones y epilepsia"
+    ],
+    "enunciado": "¿Cuál es el factor desencadenante que sospecha como más probable en un paciente con antecedentes de Epilepsia que recibe tratamiento con fenitoina y presenta cuadro convulsivo? Extraído por su esposa a la guardia luego de presentar convulsiones hace aproximadamente una hora. En el examen físico el paciente se encuentra sin recuperación completa de la conciencia, afebril; TA: 100/60 mmHG; FC: 110 latidos/minuto; FR: 20/minuto. Durante el examen presenta nuevo episodio de convulsión tónica clónica.",
+    "opciones": {
+      "a": "Consumo de alcohol.",
+      "b": "Traumatismo de cráneo.",
+      "c": "Hipoxia.",
+      "d": "Incumplimiento con el tratamiento."
+    },
+    "correcta": "d",
+    "explicacion": "Pregunta que suele reiterarse. Debemos saber cuál es la primera causa de convulsiones en un paciente en tratamiento por **epilepsia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_041",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "ECV",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Un varón de 52 años es traído a la guardia por su esposa porque lo encontró en estado de estupor en la casa. Refiere que hace 30 minutos estaba bien y que comenzó a dolerle la cabeza y que tenía debilidad en la mitad derecha del cuerpo. Tiene antecedentes de hipertensión arterial en tratamiento con 25 mg/dia de hidroclorotiazida. Al examen físico está somnoliento y casi no responde a las preguntas, la TA: 242-148 mm Hg, FC: 124 lpm, FR: 24 rpm, SatO2 es de 98% con aire ambiental y su temperatura es de 37.0ºC. No mueve el brazo, ni la pierna derecha. Se realiza TC cerebral sin contraste que evidencia imagen hiperdensa que compromete el putamen izquierdo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Tumoración encefálica.",
+      "b": "Hemorragia intracraneal.",
+      "c": "Accidente cerebrovascular isquémico en el territorio de la arteria cerebral media izquierda.",
+      "d": "Hematoma subdural."
+    },
+    "correcta": "b",
+    "explicacion": "Analizamos los distintos diagnósticos que pueden dar un foco neurológico en un paciente con **HTA**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_042",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Una mujer de 62 años es llevada a la guardia por alteraciones de la memoria y del comportamiento. Hace un año que presenta conductas sociales inadecuadas e irritabilidad. Al examen físico se muestra hostil, la TA es de 150-90 mmHg. Tiene un reflejo glabelar positivo. La calificación del Miniexamen del Estado Mental es de 20/30 No tiene rigidez. Su locomoción es normal. Los reflejos tendinosos profundos son 3+ y simétricos. Su fuerza muscular es de 5/5 en todo el cuerpo y no hay déficit sensitivo. La función cerebelosa es normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad de Alzheimer.",
+      "b": "Demencia por cuerpos de Lewy.",
+      "c": "Demencia frontotemporal.",
+      "d": "Demencia vascular."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_043",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la conducta inicial más adecuada con una paciente de 80 años que es traída a la consulta por su hija quien le refiere que su madre se olvida de las cosas, se ha perdido en el barrio en una oportunidad y pasa la mayor parte del día mirando televisión?",
+    "opciones": {
+      "a": "solicitar interconsulta con psiquiatría.",
+      "b": "Valorar pruebas de deterioro cognitivo.",
+      "c": "Solicitar tomografía de cerebro con contraste.",
+      "d": "Realizar control evolutivo ya que tiene síntomas del envejecimiento normal."
+    },
+    "correcta": "b",
+    "explicacion": "Mencionamos las diferencias entre olvido benigno y olvido patológico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_044",
+    "materia": [
+      "traumatologia",
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Fracturas",
+      "Neurocirugía"
+    ],
+    "enunciado": "Un varón de 26 años es traído a la guardia porque sufrió un trauma encefalocraneano por colisión vehicular. Al examen físico se constata otorragia, rinorragia y \"ojos de mapache\". ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Fractura de calota craneana.",
+      "b": "Fractura hundimiento del hueso parietal.",
+      "c": "Fractura de Le Fort.",
+      "d": "Fractura de la base del cráneo."
+    },
+    "correcta": "d",
+    "explicacion": "Dato clave de choice a recordar: **Ojos de mapache**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_045",
+    "materia": [
+      "neurologia",
+      "infectologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Tuberculosis"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un paciente de 35 años que consulta en guardia por cefalea y fiebre de cuatro semanas de evolución y en el examen físico tiene rigidez de nuca y presencia de signos meníngeos? Se le realiza punción lumbar y el LCR es claro con el siguiente estudio físico químico: Glucosa: 22 mg/dl; proteínas 3.4 g/l; 300 leucocitos/mm3 a predominio mononuclear.",
+    "opciones": {
+      "a": "Meningitis tuberculosa.",
+      "b": "Criptococosis meníngea.",
+      "c": "Meningoencefalitis por virus Herpes.",
+      "d": "Meningoencefalitis por Listeria Monocytogenes."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_046",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de demencia en las personas mayores de 65 años?",
+    "opciones": {
+      "a": "Demencia vascular.",
+      "b": "Demencia por Parkinson.",
+      "c": "Demencia frontotemporal.",
+      "d": "Enfermedad de Alzheimer."
+    },
+    "correcta": "d",
+    "explicacion": "Se valora en este choice la etiología de la demencia según rango etario.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_047",
+    "materia": [
+      "oncologia",
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Otras preguntas de oncología",
+      "Neurocirugía"
+    ],
+    "enunciado": "¿Cuál es el tumor intracraneano más frecuente de la edad adulta?",
+    "opciones": {
+      "a": "Astrocitoma pilocítico",
+      "b": "Meduloblastoma",
+      "c": "Schwannoma vestibular",
+      "d": "Metástasis"
+    },
+    "correcta": "d",
+    "explicacion": "Repasamos en este choice la epidemiología de los tumores cerebrales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_048",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Durante las últimas 2 semanas un paciente varón de 63 años se despertó varias veces con vértigo y náuseas. No hay otros síntomas y el vértigo desaparece cuando se sienta o se da vuelta. En el examen físico se presenta normotenso y se observa la aparición de nistagmus en posición supina con su cabeza hacia la izquierda. El mismo aparece luego de una latencia de 30 segundos y el componente rápido se encuentra hacia la derecha. El resto del examen neurológico, auditivo y la otoscopia son normales. ¿Cuál es su diagnóstico presuntivo más probable?",
+    "opciones": {
+      "a": "Neurinoma del acústico.",
+      "b": "Accidente isquémico transitorio vertebrobasilar.",
+      "c": "Vértigo paroxístico posicional benigno.",
+      "d": "Hipotensión ortostática."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_049",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Neuropatías",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Una paciente mujer de 26 años ingresa a la guardia con debilidad progresiva en los miembros inferiores y dificultad respiratoria desde el día de ayer. Tuvo un catarro de vías aéreas superiores hace 15 días. La paciente se encuentra lúcida, orientada, con apertura ocular espontánea, marcada debilidad de los miembros y reflejos abolidos. Se realiza una Radiografía simple de tórax que resulta normal. Gases en sangre: PaO2=65 mmHg; PaCO2=50 50mmHg. ¿Cuál es su diagnóstico presuntivo más probable?",
+    "opciones": {
+      "a": "Miastenia Gravis.",
+      "b": "Síndrome de Guillain Barré.",
+      "c": "Poliomielitis.",
+      "d": "Síndrome de distress respiratorio del adulto."
+    },
+    "correcta": "b",
+    "explicacion": "Este choice deberíamos poder contestarlo con facilidad ya que es uno de los temas más tomados en neuro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_050",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "ECV"
+    ],
+    "enunciado": "Como consecuencia de un ACV, un paciente queda imposibilitado de mover el miembro inferior derecho. Usted piensa que la arteria afectada fue: La arteria cerebral ...",
+    "opciones": {
+      "a": "media izquierda.",
+      "b": "media derecha.",
+      "c": "anterior izquierda.",
+      "d": "posterior izquierda."
+    },
+    "correcta": "c",
+    "explicacion": "Otro tema que debemos conocer bien. A lo largo del video se desarrollan varios tips para poder definir la arteria afectada en **ACV**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_051",
+    "materia": [
+      "infectologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "SNC y meningitis",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuál es el tratamiento antibiótico empírico de elección, entre los siguientes, en un paciente de 30 años con meningitis bacteriana?:",
+    "opciones": {
+      "a": "Cefotaxima",
+      "b": "Vancomicina",
+      "c": "Penicilina",
+      "d": "Gentamicina"
+    },
+    "correcta": "a",
+    "explicacion": "En esta pregunta destaca la importancia del tratamiento empírico de la **meningitis bacteriana** en un adulto sin antecedentes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_052",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Convulsiones y epilepsia"
+    ],
+    "enunciado": "Un varón de 35 años sufre una pérdida de conocimiento mientras estaba trabajando, sin relajación de esfínteres. En el momento de la consulta está algo somnoliento y no recuerda lo sucedido. Sus compañeros dicen que no tuvo ningún traumatismo, que se puso algo azul y permaneció un poco atontado los diez minutos posteriores al cuadro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Ataque de caída (Drop attacks)",
+      "b": "Convulsión.",
+      "c": "Vértigo.",
+      "d": "Síncope"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_053",
+    "materia": [
+      "neurocirugia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Tomografía"
+    ],
+    "enunciado": "Un varón de 32 años sufre una caída hacia atrás desde una altura de 3 metros, con pérdida del conocimiento durante unos minutos. Se recupera y manifiesta cefalea y dolor occipital. A las dos horas del traumatismo presenta tendencia al sueño, agitación, alteración de la conciencia y se observa la siguiente imagen en la tomografía de cerebro. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Hematoma subdural en fosa posterior y occipital, línea de fractura en ventana ósea.",
+      "b": "Hematoma subdural en fosa posterior y occipital.",
+      "c": "Hematoma epidural en fosa posterior y occipital, línea de fractura en ventana ósea.",
+      "d": "Infarto en fosa posterior y línea de fractura en ventana ósea."
+    },
+    "correcta": "c",
+    "explicacion": "En esta pregunta se repasan las características clínicas e imagenológicas de los **hematomas epidurales**.\n\nLos hematomas subdurales y extradurales están incluidos en varias preguntas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_054",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Neuropatías"
+    ],
+    "enunciado": "Una mujer de 25 años tiene un cuadro de debilidad de 3 días de evolución, que comenzó en ambos miembros inferiores y que luego comprometió los miembros superiores. En el examen físico se encuentra lúcida, con paresia moderada simétrica de 4 miembros asociada a hiporreflexia e hipoestesia generalizada. ¿Cuál de los siguientes resultados son esperables en el examen fisicoquímico del líquido cefalorraquídeo?",
+    "opciones": {
+      "a": "Proteinorraquia normal, células aumentadas, presión de apertura aumentada.",
+      "b": "Proteinorraquia normal, células normales, presión de apertura aumentada.",
+      "c": "Proteinorraquia alta, células normales, presión de apertura normal.",
+      "d": "Proteinorraquia baja, células aumentadas, presión de apertura normal."
+    },
+    "correcta": "c",
+    "explicacion": "En esta oportunidad se resumen los criterios diagnósticos del **Síndrome de Guillain Barré** y se hace incapié sobre las características licuorales, ambos muy tomados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_055",
+    "materia": [
+      "neurologia",
+      "pediatria"
+    ],
+    "submateria": [
+      "Convulsiones y epilepsia",
+      "Trastornos de la infancia y la adolescencia"
+    ],
+    "enunciado": "Concurre a su consultorio Juana de 8 años de edad en compañía de sus padres. Refieren que desde hace un tiempo la niña de repente deja de hablar o de hacer lo que estaba haciendo, permanece como perdida por unos segundos y luego retoma la actividad sin problema. Usted le solicita un electroencefalograma que muestra descargas de punta-onda generalizada de 3 ciclos/segundo. ¿Cuál es el tratamiento inicial indicado?",
+    "opciones": {
+      "a": "Etosuximida.",
+      "b": "Difenilhidantoina",
+      "c": "Ácido valproico",
+      "d": "Rufinamida"
+    },
+    "correcta": "a",
+    "explicacion": "Se menciona el tratamiento de primera elección de las **crisis de ausencia** en la infancia y se resume sucintamente la patologia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_056",
+    "materia": [
+      "neurocirugia",
+      "imagenes"
+    ],
+    "submateria": [
+      "Neurocirugía",
+      "Tomografía"
+    ],
+    "enunciado": "Ante la siguiente tomografía computarizada cerebral realizada con carácter de urgencia ante traumatismo craneoencefálico. ¿Cuál es su diagnóstico?",
+    "opciones": {
+      "a": "Hematoma subdural agudo.",
+      "b": "Hematoma epidural.",
+      "c": "Lesión cortical (contusión cerebral).",
+      "d": "Hemorragia intraventricular."
+    },
+    "correcta": "a",
+    "explicacion": "Un tema importante a saber es el **hematoma subdural**, su orígen y sus características imagenológica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_057",
+    "materia": [
+      "oncologia",
+      "neurocirugia"
+    ],
+    "submateria": [
+      "Otras preguntas de oncología",
+      "Neurocirugía"
+    ],
+    "enunciado": "Paciente de 60 años con antecedentes personales de carcinoma de pulmón, presenta dorsalgia de dos semanas de evolución y dolor irradiado al brazo y mano derechos desde hace tres días. Se realiza RM de columna que se muestra en la imagen. Ante estos hallazgos clínicos y radiológicos indique la respuesta correcta:",
+    "opciones": {
+      "a": "Metástasis en el cordón medular con signos de expansión.",
+      "b": "Metástasis vertebrales con fractura patológica que condiciona una compresión medular.",
+      "c": "Vértebra en diábolo en el contexto de una osteoporosis.",
+      "d": "La tomografía computarizada es la prueba de imagen \"de elección\" en esta patología."
+    },
+    "correcta": "b",
+    "explicacion": "Esta pregunta describe complicaciones neurológicas del paciente con **cáncer sistémico**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_058",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Cefaleas"
+    ],
+    "enunciado": "Paciente de 45 años en estudio por posible meningitis, con fiebre, cefalea y vómitos de 2 días de evolución. Le realizan una RM cerebral y una punción lumbar. Veinte horas después, al levantarse para ir al baño, se queja de cefalea intensa, muy marcada al incorporarse pero que desaparece al acostarse. Ya no presenta fiebre ni vómitos. No puede caminar. ¿Cuál es con más probabilidad el origen de esta cefalea?",
+    "opciones": {
+      "a": "La meningitis sigue siendo la causa fundamental de su cefalea, pues es el mismo tipo de cefalea que al inicio de los síntomas.",
+      "b": "Es una cefalea post-punción lumbar.",
+      "c": "Hay que buscar una causa diferente a esta cefalea, pues no es típica del síndrome postpunción lumbar ni de la meningitis.",
+      "d": "Lo más probable es que no fuera una meningitis viral, sino una hemorragia subaracnoidea. Por este motivo, la cefalea inicial desaparece casi completamente al acostarse."
+    },
+    "correcta": "b",
+    "explicacion": "Aquí se describe la importancia de la **cefalea post punción lumbar** y se destaca la importancia de la sospecha clínica para no realizar una nueva PL.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_059",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Desmielinizantes"
+    ],
+    "enunciado": "Acude a la consulta un enfermo diagnosticado de esclerosis múltiple hace 6 meses. ¿Qué sintomatologia NO esperaría encontrar?",
+    "opciones": {
+      "a": "Diplopia.",
+      "b": "Alteraciones auditivas.",
+      "c": "Alteraciones urinarias.",
+      "d": "Depresión."
+    },
+    "correcta": "b",
+    "explicacion": "En esta oportunidad se describen los síntomas más frecuentes en pacientes con **esclerosis múltiple**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_060",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Trastornos del movimiento"
+    ],
+    "enunciado": "Una paciente de 65 años debutó dos años antes con una apraxia del habla y evolutivamente ha desarrollado un parkinsonismo rígido-acinético de predominio en hemicuerpo derecho con míoclonías sobreimpuestas y fenómeno de mano alienígena o miembro extraño. ¿Qué diagnóstico considera más probable?",
+    "opciones": {
+      "a": "Enfermedad de Parkinson.",
+      "b": "Degeneración corticobasal.",
+      "c": "Enfermedad de Alzheimer.",
+      "d": "Enfermedad de Huntington."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_061",
+    "materia": [
+      "neurologia",
+      "hematologia"
+    ],
+    "submateria": [
+      "Neuropatías",
+      "Anemias carenciales"
+    ],
+    "enunciado": "Un varón de 75 años consulta por astenia, adinamia y parestesias en miembros inferiores de 2 meses de evolución. Su familia refiere además fallas mnésicas anterógradas y trastornos en la atención. Al examen físico presenta signos vitales normales, arreflexia aquiliana, hipopalestesia bilateral y un mini mental test alterado. En el laboratorio se constató: Hto 30%, Hb 9.1 gr%, VCM 83 fL, Gb 3900/mm3, plaquetas 96000/mm3, LDH 690 UI/L, hepatograma normal. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Déficit de vitamina C",
+      "b": "Déficit de vitamina B12",
+      "c": "Déficit de tiamina",
+      "d": "Déficit de vitamina D"
+    },
+    "correcta": "b",
+    "explicacion": "Los síntomas de astenia, adinamia, parestesias, fallas mnésicas, trastornos de la atención y los hallazgos de arreflexia aquiliana, hipopalestesia bilateral y un mini mental test alterado son consistentes con un cuadro de neuropatía periférica y deterioro cognitivo, los cuales pueden ser causados por una **deficiencia de vitamina B12**.\n\nHARRISON 643: \"La deficiencia de cobalamina causa neuropatía periférica bilateral o degeneración (desmielinización) de las vías piramidales y posteriores de la médula espinal y, con menos frecuencia, atrofia óptica o síntomas cerebrales. El paciente, por lo general varones, manifiesta parestesias, debilidad muscular o dificultad para caminar y algunas veces demencia, trastornos psicóticos o visión defectuosa. (...) Un problema clínico importante es el paciente no anémico con anomalías neurológicas o psiquiátricas y una concentración sérica de cobalamina reducida o en límites normales. En ellos se debe establecer si la deficiencia de cobalamina es significativa, por ejemplo con un frotis de sangre, un análisis para medir la gastrina sérica y anticuerpos contra IF o células parietales, además de medir el ácido metilmalónico (MMA, methylmalonicacid) sérico cuando es posible.\"",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_062",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Paciente de 78 años, con antecedentes de hipertensión arterial, fue evaluada en el consultorio de neurología por presentar trastornos en la memoria anterógrada y fallas en la atención asociado a alucinaciones visuales de al menos 6 meses de evolución, que empeoraron en las últimas semanas, asociadas a bradicinesia y temblor en reposo. Fue evaluada ambulatoriamente indicándose L- dopa. A las 24 horas presentó un síndrome confusional alucinatorio. ¿Qué diagnóstico explica este cuadro?",
+    "opciones": {
+      "a": "Demencia de tipo Alzheimer",
+      "b": "Demencia asociada a Parkinson",
+      "c": "Demencia con cuerpos de Lewy",
+      "d": "Demencia vascular"
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro clínico de la paciente de 78 años con antecedentes de hipertensión arterial, que presenta trastornos en la memoria anterógrada, fallas en la atención, alucinaciones visuales, bradicinesia y temblor en reposo, y que experimenta un síndrome confusional alucinatorio tras el tratamiento con L-dopa, sugiere un diagnóstico de **Demencia con cuerpos de Lewy (DLB)**.\n\nHARRISON 2605: \"El sindrome clínico de DLB se caracteriza por alucinaciones visuales, parkinsonismo, estado de alerta fluctuante, caídas y, a menudo, trastornos conductuales durante el sueño de movimientos oculares rápidos (REM, rapid eye movement) (RBD, REM behaviour disorder). La demencia puede preceder o seguir a la aparición del parkinsonismo. Por tanto, existe una vía en pacientes con PD de larga evolución sin daño cognitivo, que padecen poco a poco una demencia relacionada con alucinaciones visuales y variación en el estado de alerta.\"",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_063",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "Matilde de 77 años de edad, es traída por su familia que relata que en los últimos meses la notan más retraída, ya no sale de la casa desde que en una salida se perdió en el barrio. Tiene antecedentes de Hipertensión Arterial desde hace 8 años controlada con Enalapril e Hidroclorotiazida. Toma aspirina 100 mg. desde hace 2 años, en que tuvo el primero de dos accidentes isquémicos transitorios. En la evaluación, tarda en responder, luce triste. Se le realiza un Mini Mental Test que da 17/30. El examen neurológico no revela déficit motor. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Depresión",
+      "b": "Síndrome Confusional",
+      "c": "Demencia",
+      "d": "ACV en área no motora"
+    },
+    "correcta": "c",
+    "explicacion": "Los instrumentos de detección rápida como el **Mini Examen del Estado Mental (MMSE)**, el Montreal Cognitive Assessment (MOCA) y el Cognistat sirven para detectar y vigilar la progresión de la demencia.\n\nNinguna de estas pruebas es muy sensible para la detección temprana de la demencia ni discrimina entre los síndromes de demencia. El MMSE es una prueba de función cognitiva de 30 puntos, cada uno con una respuesta correcta que se califica con 1. Harrison, Medicina Interna, página 155\n\nSe valora de 0 a 30 puntos y se consideran normales las puntuaciones iguales o superiores a 27. Por debajo de 27 se considera que existe una alteración cognitiva; determinar si se trata de una demencia o de un deterioro cognitivo leve dependerá de si existe o no repercusión en la funcionalidad del paciente más que de la puntuación en el test.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_068",
+    "materia": [
+      "otorrinolaringologia",
+      "neurologia"
+    ],
+    "submateria": [
+      "Oído",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Qué observamos con relación al nistagmo si hacemos fijar la vista en un punto en un paciente con vértigo y nistagmo de origen periférico?",
+    "opciones": {
+      "a": "Disminuye o desaparece",
+      "b": "No se modifica",
+      "c": "Aumenta",
+      "d": "Cambia de dirección"
+    },
+    "correcta": "a",
+    "explicacion": "El nistagmo de origen periférico es típicamente horizontal-rotatorio y está relacionado con afecciones del oido interno, como la neuritis vestibular o el vértigo posicional paroxístico benigno (VPPB).\n\nEn pacientes con nistagmo de origen periférico, la fijación visual en un punto tiende a **disminuir o suprimir el nistagmo**. Esto se debe a que la fijación visual ayuda a estabilizar la imagen en la retina mediante un reflejo ocular compensatorio que puede reducir el nistagmo. Este efecto es debido a la retroalimentación visual que actúa sobre el sistema vestibular, ayudando a estabilizar la visión y reducir el movimiento involuntario de los ojos.\n\nHARRISON 149:\n- El nistagmo por una lesión periférica aguda es unidireccional, las fases rápidas se dirigen al lado contrario del oído con la lesión. El nistagmo que cambia de dirección con la mirada se debe a una lesión central\n- El nístagmo vertical-torsional mixto transitorio ocurre con BPPV, pero el nistagmo vertical puro o torsional puro es un signo central\n- El nistagmo de una lesión periférica puede inhibirse con la fijación visual, lo que no ocurre con el nistagmo central\n- La ausencia de un signo de impulso cefálico en un paciente con vértigo prolongado agudo sugiere una causa central\n- La pérdida auditiva unilateral sugiere vértigo periférico.\n- Los signos como la diplopía, disartria y ataxia de extremidades sugieren un trastorno central",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_069",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Neuropatías"
+    ],
+    "enunciado": "Concurre a la guardia un paciente de 32 años que presenta sensación de hormigueo en ambos miembros inferiores, entumecimiento y dificultad para caminar de 48hs de evolución. Al interrogatorio refiere que hace 2 semanas tuvo un episodio de diarrea que se autolimitó. ¿En qué diagnóstico pensaría?",
+    "opciones": {
+      "a": "Síndrome gloso-entero-neuro-anémico",
+      "b": "Esclerosis múltiple",
+      "c": "Síndrome de Guillan Barre",
+      "d": "Intoxicación por plomo"
+    },
+    "correcta": "c",
+    "explicacion": "HARRISON 2694: \"EI GBS se manifiesta como un cuadro de parálisis motora arrefléxica de evolución rápida, con o sin alteraciones sensitivas. El modelo habitual es una parálisis ascendente que al principio se percibe como si las piernas fueran de goma. Lo habitual es que la debilidad evolucione en un lapso de horas a pocos días, y a menudo se acompaña de disestesias con hormigueos en las extremidades. Las piernas son afectadas con mayor intensidad que los brazos y en 50% de los pacientes se observa paresia facial. Los pares craneales inferiores también se afectan a menudo, con debilidad bulbar que causa dificultad para el manejo de secreciones y mantenimiento de la vía respiratoria; a veces, en estos pacientes, el diagnóstico se confunde al principio con isquemia del tronco del encéfalo. También es habitual el dolor en el cuello, hombro, espalda o difuso en toda la columna en las etapas iniciales del GBS y ocurre en cerca de 50% de los casos. (...) Alrededor de 70% de los casos de GBS son precedidos en una a tres semanas por un proceso infeccioso agudo, generalmente respiratorio o gastrointestinal.\"\n\nEl resto de las opciones tiene una evolución más insidiosa, no tan aguda.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_070",
+    "materia": [
+      "neurologia"
+    ],
+    "submateria": [
+      "Neuropatías"
+    ],
+    "enunciado": "Concurre a la guardia un paciente de 40 años derivado de otro nosocomio para estudio por presentar debilidad e impotencia funcional de ambos miembros inferiores de varios meses de evolución. Al examen físico usted constata: atrofia muscular marcada, fasciculaciones, hipotonía muscular e hiporreflexia. ¿Cuál es su diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Síndrome motoneurona superior",
+      "b": "Síndrome de polineuropatía desmielinizante inflamatoria crónica (CIDP)",
+      "c": "Síndrome de motoneurona inferior",
+      "d": "Esclerosis múltiple"
+    },
+    "correcta": "c",
+    "explicacion": "La combinación de atrofia muscular, fasciculaciones (contracciones musculares involuntarias visibles), hipotonia (disminución del tono muscular) e hiporreflexia (reflejos disminuidos) es característica de la afectación de las **motoneuronas inferiores**.\n\nEl síndrome de motoneurona superior se caracteriza por espasticidad, hiperreflexia, y signos de Babinski positivo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_071",
+    "materia": [
+      "neurologia",
+      "urgencias"
+    ],
+    "submateria": [
+      "Encefalitis viral",
+      "Otras preguntas de urgencias"
+    ],
+    "enunciado": "Paciente de 40 años de edad, sin antecedentes de consideración. Ingresa en ambulancia a guardia de emergencias por cuadro de 4 días de evolución que comienza con rinitis, reiterados registros de fiebre, cefalea, vómitos, dolor abdominal, conducta errática. Durante la evaluación se constata afasia mixta. Fuerza y sensibilidad conservada en 4 miembros, sin signos meníngeos. Se solicita laboratorio con natremia 129 meq/l, leucocitosis, test HIV negativo. Tomografía axial computada de cerebro sin contraste con resultado normal. Ud. es el médico a cargo de la guardia. ¿Cuál es la conducta adecuada a seguir?",
+    "opciones": {
+      "a": "Comenzar reposición endovenosa de cloruro de sodio hipertónico e interconsultar a cirujano general.",
+      "b": "Comenzar reposición endovenosa de cloruro de sodio hipertónico con control de ionograma y evaluación en 2 horas.",
+      "c": "Realizar de urgencia punción lumbar diagnóstica y considerar inicio empírico con antibióticos y antivirales de acuerdo a resultado.",
+      "d": "Solicitar por externo resonancia magnética nuclear de encéfalo con gadolinio y aguardar hasta resultado de la misma para toma de conducta."
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_072",
+    "materia": [
+      "neurologia",
+      "cardiologia"
+    ],
+    "submateria": [
+      "ECV",
+      "Trastornos del ritmo"
+    ],
+    "enunciado": "Paciente de 75 años, con antecedentes de HTA en tratamiento con IECA, presenta Accidente Isquémico Transitorio [AIT]. Ecografía doppler de vasos de cuello: ateromatosis carotídea con estenosis menor al 70%. ECG: fibrilación auricular con moderada respuesta ventricular. TAC de cerebro es normal. ¿Cuál es el tratamiento de prevención para reducir el riesgo de nuevos episodios tromboembólicos cerebrales?",
+    "opciones": {
+      "a": "Acenocumarol con RIN 2-3.",
+      "b": "Aspirina y clopidogrel.",
+      "c": "Endarterectomía carotídea.",
+      "d": "Ácido acetilsalicílico [aspirina] 300 mg/d."
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "neurologia_002_073",
+    "materia": [
+      "psiquiatria",
+      "neurologia"
+    ],
+    "submateria": [
+      "Otras preguntas de psiquiatría",
+      "Otras preguntas de neurología"
+    ],
+    "enunciado": "¿Cuáles son características propias del Síndrome Confusional Agudo?",
+    "opciones": {
+      "a": "Alteración transitoria del estado mental, de origen psicógeno, con perturbación en el ritmo",
+      "b": "Alteración transitoria del estado mental, de inicio agudo y curso fluctuante, con alteraciones en el nivel de atención, de origen orgánico.",
+      "c": "Alteración crónica del estado mental, con conservación de funciones cognitivas e ideación delirante megalómana.",
+      "d": "Alteración transitoria del estado mental, de inicio insidioso, con alteraciones en el nivel de atención sin fluctuaciones."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  }
+]
