@@ -5525,4 +5525,729 @@
     "oficial": false,
     "fuente": "prorem"
   },
+  {
+    "id": "pediatria_002_248",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Estómago"
+    ],
+    "enunciado": "Pedro es un recién nacido de 16 días de vida que nació sano y de término, con peso de nacimiento de 3.400 gramos. Comienza hace 72hs con vómitos explosivos, abundantes, \"post lactada\", con contenido blanco, no asociados con náuseas. Peso al examen: 3.500 gramos. Clara, su madre, refiere que presenta pocas deposiciones y escasa diuresis, que está excitado por hambre, con llanto por aparente dolor y con el abdomen superior distendido. ¿Cuál es la conducta apropiada?",
+    "opciones": {
+      "a": "Solicitar consulta al gastroenterólogo pediátrico en la próxima semana e indicar un parasitológico de materia fecal previo",
+      "b": "Solicitar ecografia abdominal en un centro de referencia en diagnóstico por imágenes pediatrico a la brevedad",
+      "c": "Tranquilizar a la madre, indicar posición semisentada y suplementación con leche maternizada cada 2hs, con control en una semana",
+      "d": "Solicitar un colon por enema en un centro de referencia en diagnóstico por imágenes pediátricos a la brevedad"
+    },
+    "correcta": "b",
+    "explicacion": "En este caso el paciente presenta una **estenosis hipertrófica de píloro**. Cuadro que presenta su pico entre lactantes de 3 a 5 semanas.\nSe caracteriza por vómitos alimentarios que progresan hasta ser vómitos \"en proyectil\" con deshidratación del paciente y el signo patognomónico es la masa palpable en el cuadrante superior derecho del abdomen en forma de aceituna (oliva pilórica).\nEl método utilizado para confirmar el diagnóstico es la **ecografía abdominal** donde se observa el engrosamiento de la capa muscular del píloro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_249",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Estómago"
+    ],
+    "enunciado": "Ante un bebé de 1 mes, que súbitamente comienza con vómitos no biliosos, justo luego de ingerir leche, con ictericia leve, cuya madre le relata que después de vomitar el niño se muestra hambriento, usted sospecha:",
+    "opciones": {
+      "a": "Gastroenteritis aguda.",
+      "b": "Invaginación intestinal.",
+      "c": "Oclusión intestinal.",
+      "d": "Estenosis hipertrófica del piloro."
+    },
+    "correcta": "d",
+    "explicacion": "La presentación típica de la **estenosis hipertrófica de píloro (EHP)** es la de un recién nacido, previamente sano, que comienza en su segunda quincena de vida con vómitos alimenticios posprandiales, cada vez más abundantes y violentos, seguidos de irritabilidad consolable, solo con la ingesta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_250",
+    "materia": [
+      "pediatria",
+      "otras"
+    ],
+    "submateria": [
+      "Otras preguntas de pediatría",
+      "Inmunologia"
+    ],
+    "enunciado": "¿Cuál es el tratamiento más adecuado para un niño de 4 años, alérgico a la proteína de la leche, que ingiere por error una cucharada de yogur y luego de 5 minutos presenta edema en cara, irritación ocular, congestión nasal y ronquera? En el examen físico se encuentra pálido, sudoroso, con leve hipotensión arterial, frecuencia cardíaca de 110 latidos por minuto, tiene sibilancias diseminadas en ambos campos pulmonares y saturación de O2 93%.",
+    "opciones": {
+      "a": "Dexametasona Intramuscular",
+      "b": "Adrenalina 1/1000 endovenosa",
+      "c": "Adrenalina 1/1000 intramuscular",
+      "d": "Difenhidramina endovenosa"
+    },
+    "correcta": "c",
+    "explicacion": "Se define como alergia alimentaria a las reacciones de hipersensibilidad iniciadas por el mecanismo inmunitario específico ante la presencia de un antígeno alimentario.\nLa **alergia a la proteína de la leche de vaca** constituye la forma de alergia alimentaria más frecuente en los primeros meses de la vida; y puede ser mediada por anticuerpos IgE, mecanismos mixtos o de tipo no IgE.\nLa máxima expresión de una alergia mediada por IgE es la **anafilaxia**.\nAnte un paciente alérgico que ha entrado en contacto con el alérgeno que está sensibilizado y, además, presenta síntomas en varios sistemas como piel (angioedema)/tubo digestivo/aparato respiratorio (sibilancias) y/o está en shock; hay que tratar inmediatamente con **adrenalina intramuscular no diluida (1/1.000)**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_251",
+    "materia": [
+      "pediatria",
+      "urgencias"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Síndromes abdominales"
+    ],
+    "enunciado": "¿Cuál es el estado ácido base y la alteración electrolítica que espera encontrar en un niño de 1 año que presenta diarrea acuosa de 48 horas de evolución, que fue hidratado con bebidas gaseosas y la madre refiere incremento de las deposiciones luego de cada toma? En el examen físico se encuentra reactivo, afebril, con mucosas secas, retracción del pliegue abdominal lento, pulsos periféricos palpables, relleno capilar menor a 2 segundos y frecuencia cardíaca: 180 latidos/min.",
+    "opciones": {
+      "a": "Acidosis metabólica, hiponatremia.",
+      "b": "Acidosis metabólica, hiperpotasemia.",
+      "c": "Alcalosis metabólica, hipopotasemia.",
+      "d": "Alcalosis metabólica, hiponatremia"
+    },
+    "correcta": "a",
+    "explicacion": "En los niños con diarrea aguda el examen clínico y la anamnesis deben ser completos.\nLos datos de mayor relevancia son: el estado de hidratación, que depende del tiempo de evolución, de la magnitud de las pérdidas y de la calidad, y cantidad de líquidos administrados.\nLa mayoría de los niños con diarrea aguda presentan como trastorno metabólico acompañante, una **acidosis metabólica isonatrémica o hiponatremica**.\nLa acidosis es causada por la pérdida de bicarbonato de sodio del cuerpo.\nLas gaseosas y \"bebidas energéticas\" no están indicadas en el tratamiento de la deshidratación debido a que tienen poco contenido de sodio y de potasio, excesiva concentración de glucosa, inadecuada proporción sodio/glucosa y una elevada osmolaridad, lo que perpetúa la diarrea y la acidosis metabólica e hiponatrémica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_252",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Estómago"
+    ],
+    "enunciado": "Un niño de 3 semanas de edad vomita después de cada toma desde hace una semana. Los vómitos, de contenido gástrico, son proyectivos y abundantes. El paciente está muy inquieto, y toma biberones con buen apetito. Ud. sospecha una estenosis hipertrófica del píloro. ¿Cuál de los siguientes resultados de laboratorio le parece más verosímil en este caso?:",
+    "opciones": {
+      "a": "pH 7,5; Na 130 mEq/l; Cl 85 mEq/l; K 3,5 mEq/l",
+      "b": "pH 7,3; Na 130 mEq/l; Cl 115 mEq/l; K 5 mEq/l",
+      "c": "pH 7,4; Na 140 mEq/l; CI 103 mEq/l; K 5 mEq/l",
+      "d": "pH 7,3; Na 130 mEq/l; Cl 85 mEq/l; K 3,5 mEq/l"
+    },
+    "correcta": "a",
+    "explicacion": "La presentación típica de la **estenosis hipertrófica de píloro** es la de un recién nacido, previamente sano; que comienza en su segunda quincena de vida con vómitos alimenticios posprandiales, cada vez más abundantes y violentos, seguidos de irritabilidad consolable, solo con la ingesta.\nSi el cuadro no se resuelve a tiempo, el acúmulo de episodios eméticos lleva a una pérdida de ácido y se puede manifestar en el medio interno, como una **alcalosis metabólica hipoclorémica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_253",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "¿Qué conducta adoptaría con un niño de 4 años que es traído a la consulta en época invernal por haber presentado en su domicilio un episodio sincopal precedido de 4-5 horas de cefalea? Usted sospecha intoxicación por monóxido de carbono.",
+    "opciones": {
+      "a": "Indicar tratamiento con oxigeno hiperbarico",
+      "b": "Indicar oxígeno suplementario",
+      "c": "Solicitar tomografia axial computada de cerebro",
+      "d": "Solicitar carboxihemoglobina"
+    },
+    "correcta": "b",
+    "explicacion": "Las primeras manifestaciones observables de la intoxicación por monóxido de carbono consisten en síntomas neurológicos como cefaleas, fatiga, confusión, ataxia.\nLos lactantes suelen estar irritables, con llanto continuo y rechazo al alimento y, más tardíamente, puede aparecer; al igual que en niños más grandes, alteración de la conciencia y convulsiones.\nAnte la sospecha clínica se debe realizar un dosaje de carboxihemoglobina al paciente y a todos los expuestos, aunque se encuentren asintomáticos.\nComo primera medida se debe retirar al paciente del ambiente contaminado, aplicar medidas de soporte vital básico y administrar **oxígeno suplementario con FIO2 100%**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_254",
+    "materia": [
+      "pediatria",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en un lactante de 6 meses que bruscamente comienza con vómitos asociados a episodios de llanto intenso, palidez y heces en \"jarabe de grosella\"?",
+    "opciones": {
+      "a": "Cólicos del lactante",
+      "b": "Gastroenterocolitis por E. colienterotoxigénica",
+      "c": "Invaginación intestinal",
+      "d": "Infección por rotavirus"
+    },
+    "correcta": "c",
+    "explicacion": "La **invaginación intestinal** es la causa más común de obstrucción intestinal, en niños entre los 3 meses y los 3 años.\nSe presenta con dolor abdominal tipo cólico repentino que el paciente puede manifestar como llanto intermitente y vómitos; y si el cuadro progresa, se pueden observar heces sanguinolentas en \"jalea de grosellas\" y letargo.\nEn los casos más leves se puede resolver espontáneamente, luego del enema con bario o luego de la administración de un enema de aire.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_255",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Neonatología",
+      "Colon"
+    ],
+    "enunciado": "Un lactante de cuarenta y ocho horas de vida presenta retardo en la eliminación de meconio y vómitos biliosos. La radiografía simple de abdomen en posición de pie muestra niveles hidroaéreos de intestino delgado y marco colónico dilatado. Sospecha enfermedad de Hirschprung. ¿Qué datos clínicos relevantes espera encontrar?",
+    "opciones": {
+      "a": "El recto se halla vacio al efectuar el tacto rectal",
+      "b": "Deposiciones caprinas",
+      "c": "Abdomen plano y doloroso",
+      "d": "Escurrimiento involuntario de materia fecal"
+    },
+    "correcta": "a",
+    "explicacion": "La **enfermedad de Hirschprung** es una afección que afecta el colon debido a la ausencia congénita de neuronas en los músculos lisos del intestino.\nClínicamente se manifiesta con el trastorno evacuatorio durante las 48 hs posteriores al nacimiento.\nEl tratamiento es quirúrgico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_256",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "Un matrimonio es traído a la guardia por sus vecinos en la madrugada, por cefalea muy intensa, vómitos, decaimiento, inestabilidad, debilidad muscular, dificultad para concentrarse, dolor abdominal y palpitaciones. No tienen antecedentes patológicos. En el examen físico están hipotensos con taquicardia y leve midriasis. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Botulismo.",
+      "b": "Intoxicación por monóxido de carbono.",
+      "c": "Intoxicación por organofosforados.",
+      "d": "Intoxicación por piretroides."
+    },
+    "correcta": "b",
+    "explicacion": "Se debe sospechar una **intoxicación con monóxido de carbono** cuando una o varias personas al mismo tiempo, que estuvieron en ambiente cerrado, presentan:\n- Dolor de cabeza\n- Mareos\n- Somnolencia\n- Debilidad\n- Cansancio\n- Náuseas/vómitos\n- Pérdida del conocimiento y/o convulsiones\n- Palpitaciones\nInicialmente es común encontrar taquicardia, asociada a hipertensión (en la intoxicación severa es más frecuente la hipotensión). Dolor de pecho y Paro cardiorrespiratorio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_257",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Bruno, 10 meses, es traído a la consulta por diarrea de 5 días de duración. Sin signos de alarma, normohidratado. Desde hace 4 meses, ha tenido episodios similares. Ud sospecha síndrome de malabsorción. ¿Cuál sería su conducta inicial?",
+    "opciones": {
+      "a": "Continuar su dieta habitual y solicitar hemograma, sangre oculta en materia fecal y coprocultivo.",
+      "b": "Eliminar gluten de la dieta y seguimiento en 15 dias, con adecuado control de signos de alarma",
+      "c": "Eliminar gluten de la dieta y solicitar glucemia, creatinina y coproparasitologico",
+      "d": "Continuar su dieta habitual y solicitar hemograma, coproparasitológico en fresco y seriado, IgA total e IgA anti-transglutaminasa."
+    },
+    "correcta": "d",
+    "explicacion": "El niño presenta diarrea crónica que debe ser estudiada. La presencia de episodios de diarrea de muchos meses de evolución nos orienta a descarta **Enfermedad Celíaca** y también causas parasitarias (giardia lamblia, strongyloides).\nAnte la sospecha clínica, se recomienda realizar el rastreo de EC a través del marcador sérico **IgA Anticuerpos antitransglutaminasa** tisular humana (a-tTG-IgA).\nSe debe evaluar el déficit de IgA (con **IgA total**) ya que su déficit dará resultados falsos negativos.\nMientras se realizan los estudios etiológicos de la diarrea crónica, se debe **continuar su dieta habitual**.\nEl hemograma en el estudio de diarrea crónica nos permite evaluar la presencia o no de un cuadro malabsortivo (metabolismo del hierro).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_258",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "Ud. se encuentra en el hospital de niños central y recibe a Macarena de 10 años traída de Alta Gracia. En la pierna derecha presenta una lesión con dos improntas paralelas de 2 mm de diámetro cada una. La lesión está eritematosa, la zona edematizada y de coloración rojo oscuro con dolor de tipo urente, regular estado general y a los 30 minutos de producida la lesión presenta lesiones hemolíticas. Recibe el resultado de laboratorio que informa leucocitosis con neutrofilia, anemia y plaquetopenia, con disminución progresiva del tiempo de protrombina. Ante este cuadro clínico y laboratorio Ud. sospecha emponzoñamiento por víbora yarará. ¿Cuál es el tratamiento indicado?",
+    "opciones": {
+      "a": "Lavar la herida, prevenir tétanos, analgesia, elevar el miembro, aplicar ATB EV y suero antiofidico 3 ampollas en 200ml de dextrosa al 5%",
+      "b": "Lavar la herida, elevar el miembro prevenir tétanos y analgesia, control de signos vitales y colocar suero antiofidico 3 ampollas en 200 ml de solución fisiológica",
+      "c": "Lavar la herida, analgesia con elevación del miembro, control de signos vitales, en caso de shock agregar suero antiofídico 3 ampollas en suero fisiológico",
+      "d": "Lavar la herida, aplicar torniquete, colocar ATB profilácticos y suero antiofídico 3 ampollas en 200ml de dextrosa al 5%"
+    },
+    "correcta": "b",
+    "explicacion": "El envenenamiento por mordedura de serpiente es potencialmente grave y letal, causando un síndrome histotóxico, hemorrágico e hipotensivo.\nAnte una mordedura de serpiente se debe, en primer lugar realizar maniobras de RCP básica si se requieren, **no realizar torniquete**, disponer un plan de contingencia para traslado, retirar anillos pulseras, zapatos o cualquier elemento que dificulte la vascularización y **mantener elevada la zona afectada**.\nRealizar limpieza del área comprometida, evaluar necesidad de vacuna antitetánica y no demorar el tratamiento con el suero antiofídico específico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_259",
+    "materia": [
+      "pediatria",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Vasculitis"
+    ],
+    "enunciado": "Natalia de 7 años de edad, es traída a la guardia por presentar lesiones en la piel de reciente comienzo. Las mismas son de color rojo violáceo, palpables, de aproximadamente 3 a 5 mm y se distribuyen en miembros inferiores hasta alcanzar el abdomen. Hace 2 semanas tuvo odinofagia que resolvió con analgésicos. Usted decide realizar un laboratorio con coagulograma, hemograma y función renal, cuyos resultados son normales. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Enfermedad oncohematológica",
+      "b": "Púrpura de Schoenlein Henoch",
+      "c": "Edema agudo hemorrágico",
+      "d": "Púrpura Trombocitopénica Idiopática"
+    },
+    "correcta": "b",
+    "explicacion": "La **púrpura de Schönlein-Henoch (PSH)** es la vasculitis leucocitoclástica de pequeños vasos más común en la infancia.\nSe caracteriza por púrpura palpable (condición que debe estar siempre presente) y compromiso articular, abdominal o renal.\nEl exantema palpable eritematoso violáceo es de tipo urticarial. Es simétrico, en miembros inferiores y nalgas preferentemente, puede afectar cara, tronco y extremidades superiores.\nSi bien la etiología es desconocida, con frecuencia se encuentra el antecedente de afección del tracto respiratorio superior por el estreptococo betahemolítico grupo A, Yersinia o Mycoplasma (más raramente) o por virus (EB, varicela, parvovirus B-19, etc.).\nOtros desencadenantes pueden ser fármacos (penicilina, ampicilina, eritromicina, quinina), alimentos, exposición al frío o picaduras de insectos. No hay ninguna prueba diagnóstica selectiva.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_260",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Marcos de 6 meses, presenta deposiciones líquidas y más frecuentes, de 2 días de evolución. Al examen físico el niño se encuentra vigil y reactivo, con mucosas húmedas, frecuencia cardíaca de 120 x min, frecuencia respiratoria de 30 x min, pulsos periféricos positivos y relleno capilar de 1 segundo. La madre refiere haber cambiado un pañal con orina hace una hora. ¿Cuál es la recomendación con respecto a la alimentación?",
+    "opciones": {
+      "a": "Continuar con la lactancia materna con más frecuencia",
+      "b": "Reemplazar la lactancia materna por leche deslactosada",
+      "c": "Reemplazar leche materna por leche de vaca diluida",
+      "d": "Suspender la lactancia e hidratar con sales de la OMS"
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de un paciente con un cuadro de diarrea aguda pero que se encuentra normohidratado.\nEn este caso se darán pautas para prevenir la deshidratación ofreciendo al niño **lactancia materna con más frecuencia** y mencionando a la madre las pautas de alarma para control de la hidratación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_261",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "Ud recibe en la guardia a Javier de 5 años que presenta vómitos desde hace una hora. Se encuentra pálido, hipotérmico y taquicárdico con depresión del sensorio taquipneico y con broncorrea. Como antecedentes de enfermedad actual la madre refiere que el niño sintió un pinchazo al colocarse el calzado, luego de lo cual comenzó con los síntomas. Refiere que en el jardín y las rejillas de la casa han encontrado escorpiones. Ante la sospecha de escorpionismo ¿Qué estudios solicitaría?",
+    "opciones": {
+      "a": "Hemograma, kalemia, glucemia, amilasemia, CPK, ECG, Eco cardiograma",
+      "b": "Hemograma, urea creatininemia, kalemia, ECG, hepatograma, lonograma",
+      "c": "Hemograma, ECG, glucemia, amilasemia, urea, creatinina, Eco cardiograma",
+      "d": "Hemograma, glucemia, CPK, amilasemia, ECG, eco cardiograma"
+    },
+    "correcta": "a",
+    "explicacion": "El **escorpionismo** se presenta como un síndrome neurotóxico con manifestaciones locales (dolor agudo, punzante e intenso) y manifestaciones sistémicas con compromiso del sistema nerviosos autónomo (taquicardia seguida de bradicardia, distress respiratorio, sialorrea, cefaleas y palidez) y, según la gravedad; trastornos del sensorio y convulsiones.\nSe puede observar neutrofilia, hipokalemia, glucemia elevada, también elevación de amilasa y CPK en los cuadros más graves. En el ECG podemos encontrar trastornos del ritmo; y el ecocardiograma es el estudio de elección para valorar la función miocárdica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_262",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "¿Cuál es la causa de muerte en un cuadro de picadura por escorpión?",
+    "opciones": {
+      "a": "Deshidratación severa",
+      "b": "Insuficiencia hepática",
+      "c": "Insuficiencia renal",
+      "d": "Shock cardiogénico"
+    },
+    "correcta": "d",
+    "explicacion": "El **escorpionismo** o alacranismo es el cuadro clínico, potencialmente grave y letal, que se produce por la picadura e inoculación de veneno de diferentes especies de escorpiones (o alacranes) del género Tityus.\nEn Argentina el envenenamiento, de causa accidental, ocurre preferentemente en áreas urbanas, en los ámbitos domiciliario, peridomiciliario y/o laboral, siendo tratable y prevenible.\nEn Argentina, hasta la actualidad, los accidentes graves y muertes en seres humanos se han asociado a las especies Tityus trivittatus y Tityus confluens (Familia Buthidae).\nEl veneno de escorpión actúa principalmente sobre los canales de sodio modificando el potencial de membrana de tejidos excitables. De esta manera produce inestabilidad autonómica que puede llevar al colapso (**shock cardiogénico**) y la muerte.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_263",
+    "materia": [
+      "pediatria",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Vasculitis"
+    ],
+    "enunciado": "En la guardia del hospital se evalúa al paciente de 5 años que hace 7 días presenta catarro de vías aéreas superiores y febrícula. A las 48 hs de iniciado el cuadro, se suma dolor abdominal tipo cólico y vómitos, para lo que se le indica dieta. En el día de hoy evoluciona con un exantema palpable que no se blanquea a la vitropresión en miembros inferiores y glúteos. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Enfermedad de Kawasaki",
+      "b": "Artritis idiopática juvenil",
+      "c": "Meningococcemia",
+      "d": "Pürpura de Schonlein Henoch"
+    },
+    "correcta": "d",
+    "explicacion": "La **púrpura de Schoenlein-Henoch** es una vasculitis que presenta un síndrome clínico con exantema purpúrico palpable. Esta púrpura no es hemorrágica sino que es una vasculitis palpable.\nSe manifiesta a una edad media de 5 años (0,5-15) con predominio en los varones (3:2).\nEn el 50% de los niños, la púrpura tiene una distribución en la parte posterior de las extremidades inferiores y los glúteos. El otro 50% presenta un exantema más diseminado.\nLa mayoría de los pacientes tienen dolores articulares, el 40% tiene compromiso renal y dos tercios de ellos, presentan dolor abdominal con hematemesis y melena.\nUn 4% presenta intususcepción intestinal. La sintomatología desaparece de manera espontánea en 1 a 6 semanas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_264",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Una niña de 20 meses de edad, presenta diarrea crónica, palidez, mal progreso ponderal, deposiciones voluminosas y malolientes, sin moco ni sangre, distensión abdominal e inapetencia. ¿Cuál es la etiología más probable para la diarrea crónica de esta niña?",
+    "opciones": {
+      "a": "Alergia a la proteina de leche de vaca.",
+      "b": "Enfermedad celiaca.",
+      "c": "Diarrea crónica inespecifica.",
+      "d": "Intolerancia a la lactosa"
+    },
+    "correcta": "b",
+    "explicacion": "La **enfermedad celíaca** es una causa frecuente de diarrea crónica orgánica.\nLa alergia a la proteína de la leche de vaca (APLV) y la intolerancia a la lactosa también son causas de diarrea crónica orgánica.\nTodas ellas se diferencian de la diarrea crónica inespecífica o funcional en que en esta última, a diferencia de las anteriores, no hay alteración del peso ni de la talla y el niño no presenta episodios de diarrea durante la noche. En general la diarrea crónica inespecífica se autolimita con el control de esfínteres.\nLa enfermedad celíaca puede presentar además de la pérdida pondoestatural y las heces malolientes, anemia, distensión abdominal, y mal carácter entre otras.\nLa APLV se presentará con heces con estrías de sangre mientras que en la intolerancia a la lactosa las heces son acuosas, ácidas, explosivas y generan irritación perianal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_265",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un niño de año y medio de vida ha presentado en el último mes de cinco a seis deposiciones diarreicas diarias con restos alimentarios. El progreso ponderal es adecuado y su estado de ánimo es bueno. ¿Cuál es la conducta más apropiada para el problema descripto?",
+    "opciones": {
+      "a": "Indicar una dieta con sobrecarga grasa",
+      "b": "Indicar reposición de pérdidas con sales de hidratación oral",
+      "c": "Restringir los alimentos cuyos restos se observan en las deposiciones",
+      "d": "Indicar dieta con mayor aporte de proteínas"
+    },
+    "correcta": "a",
+    "explicacion": "La **diarrea crónica inespecífica** se caracteriza por presentar heces líquidas con otras normales y restos alimentarios. Las heces no suelen presentarse durante el sueño.\nEl cuadro clínico no se acompaña de alteración del crecimiento como tampoco de vómito ni anorexia.\nEl tránsito acelerado es la base de este cuadro y en general son niños que realizan dietas con exceso de hidratos de carbono y pobres en grasas.\nAumentar el aporte de grasa enlentece el tránsito intestinal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_266",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Estómago"
+    ],
+    "enunciado": "Ud recibe en la guardia a Tobías, de 24 días de vida. Presenta vómitos hace 1 semana que se intensificaron en las últimas 48 horas. Al examen físico, se encuentra irritable, con abdomen blando, depresible, sin dolor. Catarsis negativa hace 48 horas. Presenta vómitos \"en proyectil\" cada vez que se alimenta. ¿Qué estudio complementario solicita según su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Ecografia abdominal.",
+      "b": "Video endoscopia digestiva alta",
+      "c": "Phmetria de 24 hs.",
+      "d": "Radiografia abdominal"
+    },
+    "correcta": "a",
+    "explicacion": "La **estenosis hipertrófica de píloro (EHP)** es una entidad propia de la época del lactante, siendo su máxima incidencia entre los 15 días y los 4 meses de la vida.\nLa presentación típica de la EHP es la de un recién nacido, previamente sano, que comienza en su segunda quincena de vida con vómitos alimenticios posprandiales, cada vez más abundantes y violentos, seguidos de irritabilidad consolable, solo con la ingesta.\nSi el cuadro no se resuelve a tiempo, el acúmulo de episodios eméticos lleva a una pérdida de ácido y se puede manifestar en el medio interno, como una alcalosis metabólica hipoclorémica.\nEl diagnóstico se basa en la sospecha clínica y las pruebas complementarias de imagen, siendo de elección la **ecografía abdominal**, dada su mejor sensibilidad.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_267",
+    "materia": [
+      "pediatria",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "Consultan los padres de Javier, de cinco meses de edad, por llanto de ocho horas de evolución. No presenta antecedentes de relevancia, estando afebril con diuresis conservada. Su madre refiere que por momentos se duerme y al rato vuelve a llorar desconsoladamente. ¿Cuál es su principal sospecha diagnóstica?",
+    "opciones": {
+      "a": "Invaginación intestinal",
+      "b": "Encefalitis",
+      "c": "Erupción dentaria",
+      "d": "Meningitis viral"
+    },
+    "correcta": "a",
+    "explicacion": "La **invaginación intestinal** es la causa más común de obstrucción intestinal, en niños entre los 3 meses y los 3 años.\nSe presenta con dolor abdominal tipo cólico repentino que el paciente puede manifestar como llanto intermitente y vómitos; y si el cuadro progresa, se pueden observar heces sanguinolentas en \"jalea de grosellas\" y letargo.\nEn los casos más leves se puede resolver espontáneamente, luego del enema con bario o luego de la administración de un enema de aire.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_268",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Una paciente de 4 años es evaluada por diarrea de tres meses de evolución. La madre refiere heces, desligadas, pálidas, y de olor fétido. También relata que la niña se encuentra irritable, con menos apetito y presenta distensión abdominal frecuentemente. No presenta antecedentes patológicos personales ni familiares. El examen físico es normal. Presenta peso y talla en percentilo 10. ¿Qué estudio de laboratorio es el más adecuado en esta instancia?",
+    "opciones": {
+      "a": "HLA DQ2 y DQ8",
+      "b": "Anticuerpos IgA antitransglutaminasa e IgA total.",
+      "c": "Anticuerpos IgG antiendomisio e IgG antigliadina.",
+      "d": "Anticuerpos IgG antigliadina e IgA antirreticulina"
+    },
+    "correcta": "b",
+    "explicacion": "Ante la sospecha de **enfermedad celíaca**, realizaremos un estudio de **anticuerpos antitransglutaminasa** por su alta sensibilidad.\nLos autoanticuerpos de clase IgA se analizan en una muestra de sangre periférica, son la traducción de la activación inmunológica producida en esta enfermedad y son útiles para el diagnóstico y el seguimiento. Siempre deben pedirse junto con la **IgA total** para descartar un déficit selectivo de IgA.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_269",
+    "materia": [
+      "pediatria",
+      "cirugiageneral"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Otras preguntas de cirugía general"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable de una niña de 9 años que consulta por dolor abdominal periumbilical y vómitos de 12 hs de evolución? Llega a la guardia con fiebre y dolor en hipogastrio. En el examen físico se observa posición en flexión, respiración superficial, palidez cutáneo mucosa y dolor con defensa muscular en fosa ilíaca derecha e hipogástrico. Se realizó un hemograma que muestra leucocitosis con neutrofilia, y una radiografía de abdomen donde se observa un asa parética de intestino delgado y niveles hidroaéreos.",
+    "opciones": {
+      "a": "Estreñimiento agudo.",
+      "b": "Cólico renal agudo.",
+      "c": "Diverticulitis de Meckel.",
+      "d": "Foliculo ovárico roto."
+    },
+    "correcta": "c",
+    "explicacion": "El **divertículo de Meckel** es un divertículo verdadero, ya que posee todas las láminas de la pared intestinal.\nSe debe a la inadecuada involución del conducto onfalomesentérico, que es la vía a través de la cual el intestino es reincorporado a la cavidad abdominal, desde el saco vitelino alrededor de la décima semana de gestación.\nEn un escaso número de pacientes estos divertículos se pueden infectar (**diverticulitis**) causando una obstrucción o sangrado en el intestino.\nCon frecuencia, la diverticulitis de Meckel se diagnostica equivocadamente como apendicitis debido a la similitud clínica (dolor en fosa ilíaca derecha, fiebre, vómitos).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_270",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Intestino delgado"
+    ],
+    "enunciado": "Ámbar de 10 años concurre a control de salud. Se encuentra en tratamiento con hierro por anemia ferropénica con regular respuesta al mismo. Presenta aftas orales recurrentes y episodios ocasionales de distensión abdominal. ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Enfermedad de Crohn.",
+      "b": "Enfermedad celiaca.",
+      "c": "Inmunodeficiencia primaria.",
+      "d": "Enfermedad de Behcet."
+    },
+    "correcta": "b",
+    "explicacion": "La **enfermedad celíaca** se puede manifestar en su forma clásica o típica, que es la más frecuente.\nEn cambio en la presentación atípica predominan los síntomas extraintestinales: pubertad retrasada, amenorrea, **anemia ferropénica**, fallo de medro, pérdida ponderal, **estomatitis aftosa recidivante**, astenia, dermatitis herpetiforme, irritabilidad, osteopenia, entre otras.\nEsta forma de presentación es más frecuente en la población juvenil o adulta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_271",
+    "materia": [
+      "pediatria",
+      "toxicologia"
+    ],
+    "submateria": [
+      "Intoxicaciones",
+      "Toxicología"
+    ],
+    "enunciado": "¿Qué conducta se encuentra contraindicada ante una lesión cáustica del esófago?",
+    "opciones": {
+      "a": "Indicar eméticos y provocar el vómito",
+      "b": "Indicar corticoides para disminuir la inflamación",
+      "c": "Realizar fibroendoscopia",
+      "d": "Realizar seriada esofagogastroduodenal"
+    },
+    "correcta": "a",
+    "explicacion": "Si se ingiere un producto químico muy cáustico o corrosivo pueden producirse quemaduras graves en la boca, la garganta, el esófago y el intestino.\nMás tarde, las cicatrices pueden producir una estrechez del esófago que impedirá al paciente tragar alimentos sólidos.\nPor lo cual **no se provocará el vómito**, pues puede producir o agravar las quemaduras en la garganta, tampoco se utilizará sonda ni lavado gástrico o carbón activado.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_272",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Estómago"
+    ],
+    "enunciado": "Un recién nacido de 3 semanas es llevado a la consulta por vómitos reiterados. La madre explica que, al comienzo, los vómitos eran leves, pero últimamente se transformaron en violentos, no tolerando más los líquidos. Al examen físico, el lactante aparece deshidratado, presentando distensión abdominal en el cuadrante superior derecho. Se decide internar al niño y se le solicitan estudios de laboratorio (rutina completa con ionograma y gases en sangre). ¿Cuál es el primer estudio por imágenes que debe solicitar?",
+    "opciones": {
+      "a": "Seriada esofagogastroduodenal",
+      "b": "Rx simple de abdomen",
+      "c": "Tomografia contrastada de abdomen",
+      "d": "Ecografia abdominal"
+    },
+    "correcta": "d",
+    "explicacion": "En este caso el paciente presenta una **estenosis hipertrófica de píloro**. Cuadro que presenta su pico entre lactantes de 3 a 5 semanas.\nSe caracteriza por vómitos alimentarios que progresan hasta ser vómitos \"en proyectil\" con deshidratación del pacientes y el signo patognomónico es la masa palpable en el cuadrante superior derecho del abdomen en forma de aceituna (oliva pilórica).\nEl método utilizado para confirmar el diagnóstico es la **ecografía abdominal** donde se observa el engrosamiento de la capa muscular del píloro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_273",
+    "materia": [
+      "pediatria",
+      "hematologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Otras preguntas de hematología"
+    ],
+    "enunciado": "Romeo de 2 años es llevado a la guardia por su madre por presentar \"moretones en el cuerpo\". Al examen físico, se observa la presencia de equimosis en las cuatro extremidades, así como una erupción petequial difusa en el tronco. Presenta buen estado general y sus signos vitales están dentro de límites normales. Su madre describe que Romeo presenta congestión nasal desde hace 10 días aproximadamente, sin otro síntoma asociado. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Púrpura de Schonlein Henoch.",
+      "b": "Exantema súbito.",
+      "c": "Púrpura trombocitopénica inmune.",
+      "d": "Edema hemorrágico del lactante."
+    },
+    "correcta": "c",
+    "explicacion": "La **púrpura trombocitopénica idiopática** o inmunitaria (PTI), es un trastorno hemorrágico benigno, caracterizado por trombocitopenia, hematomas espontáneos, petequias y sangrado de mucosas.\nPuede aparecer después de una infección viral, la cual genera la formación de autoanticuerpos antiplaquetarios.\nA diferencia de la PTI, en la Púrpura de Schonlein Henoch el recuento plaquetario es normal, y la distribución de las lesiones purpúricas o petequiales se observa en ambos miembros inferiores de forma simétrica, \"en pantalón\"; además puede haber artralgias y compromiso abdominal y renal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_274",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Hígado"
+    ],
+    "enunciado": "Un niño de 8 años es atendido en la guardia por un cuadro de hemorragia digestiva alta que requiere transfusión de sangre. En el examen físico se destaca la presencia de esplenomegalia. Tiene como antecedente de importancia haber presentado onfalitis siendo recién nacido por lo que fue internado en esa oportunidad. Hace 2 meses tuvo una hemorragia digestiva alta que no requirió transfusión y no se controló con posterioridad al cuadro. El laboratorio presenta hepatograma con transaminasas normales y tiempo de protrombina ligeramente prolongado. En base a la evolución descripta, ¿cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad de Wilson",
+      "b": "Sindrome ulceroso",
+      "c": "Cirrosis hepática post hepatitis",
+      "d": "Trombosis de la vena porta"
+    },
+    "correcta": "d",
+    "explicacion": "La **obstrucción (o trombosis) de la vena porta** con un hígado sano es una causa frecuente de hipertensión portal en los niños.\nEl curso natural de la enfermedad se caracteriza por hemorragias recurrentes durante los primeros años de vida y el desarrollo de esplenomegalia e hiperesplenismo. El antecedente de **onfalitis neonatal** es un factor de riesgo clásico para la trombosis de la vena porta.\nDebido a que el riesgo de hemorragia puede disminuir con la edad se intenta mantener un tratamiento conservador mientras sea posible.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_275",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Patología del aparato digestivo",
+      "Colon"
+    ],
+    "enunciado": "La madre de un varón de 9 años consulta porque observó unas gotas de sangre roja en el inodoro luego de una deposición normal del niño. El examen físico es normal y no se observa fisura anal ni hemorroides. El paciente no tiene antecedentes de diarreas ni estreñimiento. ¿Cuál es en este caso el estudio diagnóstico de elección?",
+    "opciones": {
+      "a": "Colon por enema",
+      "b": "Radiografía de abdomen de pie",
+      "c": "Colonoscopia",
+      "d": "Ecografia abdominal"
+    },
+    "correcta": "c",
+    "explicacion": "La **colonoscopia** es una técnica que permite el estudio de las lesiones mucosas y de la hemorragia gastrointestinal.\nEn los últimos años se ha convertido en una prueba diagnóstica de primera línea en pediatría y también como tratamiento de algunas patologías, como por ejemplo los pólipos (causa común de rectorragia indolora en la infancia).\nLas indicaciones de endoscopia digestiva baja son las siguientes: sangrado digestivo, enfermedad inflamatoria intestinal, diarrea de causa desconocida y colitis alérgica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_276",
+    "materia": [
+      "pediatria",
+      "reumatologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Vasculitis"
+    ],
+    "enunciado": "En la púrpura de Schönlein-Henoch, ¿cuál de las siguientes aseveraciones es la respuesta correcta?",
+    "opciones": {
+      "a": "Se debe a depósitos de IgM",
+      "b": "Afecta vasos medianos y grandes",
+      "c": "Afecta los pulmones y el aparato cardiovascular",
+      "d": "Afecta la piel, articulaciones, tubo digestivo y riñones"
+    },
+    "correcta": "d",
+    "explicacion": "La **púrpura de Schonlein Henoch** se presenta habitualmente antes de los 7 años de edad, siendo los síntomas más característicos la púrpura palpable en las extremidades inferiores (distribución en pantalón), inflamación articular, dolor abdominal y hematuria.\nAfecta a los vasos sanguíneos pequeños de la **piel, articulaciones, riñones e intestino**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
   
