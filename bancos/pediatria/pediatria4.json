@@ -1816,3 +1816,2008 @@
     "oficial": false,
     "fuente": "curso de residencia"
   },
+{
+    "id": "pediatria_004_078",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Según la definición estándar, ¿cuándo se considera que un niño presenta anemia?",
+    "opciones": {
+      "a": "Cuando la hemoglobina es inferior a 12 g/dL independientemente de la edad.",
+      "b": "Cuando la concentración de hemoglobina está por debajo del segundo desvío estándar respecto de la media para edad y sexo.",
+      "c": "Cuando el hematocrito es menor al 35%.",
+      "d": "Solo cuando la ferritina es menor a 15 ng/mL."
+    },
+    "correcta": "b",
+    "explicacion": "La guía define la **anemia** como la disminución de la masa de glóbulos rojos o de la concentración de hemoglobina por debajo del segundo desvío estándar de la media para edad y sexo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_079",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Para un paciente pediátrico que reside en una zona de altura, ¿cómo debe ajustarse el valor de hemoglobina normal?",
+    "opciones": {
+      "a": "No requiere ajuste.",
+      "b": "Disminuye 0,5 g/dL por cada 500 metros sobre el nivel del mar.",
+      "c": "Aumenta 1,52 g/dL por cada 1000 metros de ascenso sobre el nivel del mar.",
+      "d": "Aumenta 2 g/dL por cada 1000 metros."
+    },
+    "correcta": "c",
+    "explicacion": "En poblaciones que viven en la altura, se calcula que la concentración normal de hemoglobina aumenta en **1,52 g/dL** por cada 1000 m que se ascienden.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_080",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el factor dietético que más favorece la absorción del hierro no-hemo?",
+    "opciones": {
+      "a": "Calcio.",
+      "b": "Ácido ascórbico (Vitamina C).",
+      "c": "Fitatos.",
+      "d": "Tanatos presentes en el té."
+    },
+    "correcta": "b",
+    "explicacion": "El **ácido ascórbico** es un facilitador clave de la absorción del hierro no-hemo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_081",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un recién nacido normal de término tiene reservas de hierro suficientes para cubrir sus requerimientos hasta:",
+    "opciones": {
+      "a": "Los 2 meses de edad.",
+      "b": "Los 4-6 meses de edad.",
+      "c": "El año de vida.",
+      "d": "Los 15 días de vida."
+    },
+    "correcta": "b",
+    "explicacion": "El recién nacido de término tiene reservas adecuadas para cubrir sus requerimientos hasta los **4-6 meses**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_082",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué porcentaje aproximado de absorción de hierro presenta la leche materna?",
+    "opciones": {
+      "a": "10%.",
+      "b": "20%.",
+      "c": "50%.",
+      "d": "75%."
+    },
+    "correcta": "c",
+    "explicacion": "Aunque tiene bajo contenido de hierro, la leche materna presenta una biodisponibilidad máxima de alrededor del **50%**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_083",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "¿Cuál es la dosis de suplementación de hierro elemental recomendada para una mujer embarazada?",
+    "opciones": {
+      "a": "30 mg/día.",
+      "b": "60 mg/día.",
+      "c": "120 mg/día.",
+      "d": "300 mg/día."
+    },
+    "correcta": "b",
+    "explicacion": "La dosis de suplementación de **hierro elemental** recomendada durante el embarazo es de **60 mg/día**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_084",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un lactante de 10 meses presenta un cuadro de irritabilidad, palidez y heces con sangre tras la incorporación temprana de leche de vaca. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Enfermedad celíaca.",
+      "b": "Invaginación intestinal.",
+      "c": "Anemia ferropénica por dieta insuficiente y microhemorragias intestinales.",
+      "d": "Gastroenteritis bacteriana."
+    },
+    "correcta": "c",
+    "explicacion": "La incorporación temprana de leche de vaca antes de los 6 meses es una causa frecuente de **Anemia ferropénica** por deficiencia de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_085",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "En Argentina, según la Encuesta Nacional de Nutrición y Salud (2005), ¿cuál es el grupo etario con mayor prevalencia de anemia?",
+    "opciones": {
+      "a": "Niños de 6 a 24 meses.",
+      "b": "Varones adolescentes.",
+      "c": "Adultos mayores de 60 años.",
+      "d": "Mujeres menopáusicas."
+    },
+    "correcta": "a",
+    "explicacion": "La prevalencia de **anemia** alcanza un 35% en niños de **6 a 24 meses** de edad en Argentina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_086",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál de los siguientes alimentos inhibe la absorción del hierro?",
+    "opciones": {
+      "a": "Carne roja.",
+      "b": "Pescado.",
+      "c": "Té y café.",
+      "d": "Naranja."
+    },
+    "correcta": "c",
+    "explicacion": "Los tanatos presentes en el té y los polifenoles en el café son inhibidores de la absorción de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_087",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el estudio de laboratorio que mejor refleja los depósitos de hierro en el organismo?",
+    "opciones": {
+      "a": "Hemoglobina.",
+      "b": "Ferremia.",
+      "c": "Ferritina sérica.",
+      "d": "Protoporfirina eritrocitaria."
+    },
+    "correcta": "c",
+    "explicacion": "La **ferritina sérica** es el indicador más sensible y específico para evaluar los depósitos de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_088",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿A partir de qué mes se recomienda iniciar la suplementación profiláctica con hierro en lactantes nacidos a término con lactancia materna exclusiva?",
+    "opciones": {
+      "a": "Al nacer.",
+      "b": "Al primer mes.",
+      "c": "A partir del 4º mes.",
+      "d": "Luego del año de vida."
+    },
+    "correcta": "c",
+    "explicacion": "Las reservas del recién nacido de término cubren los requerimientos hasta los 4-6 meses, momento en el cual se debe asegurar el aporte.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_089",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Parto"
+    ],
+    "enunciado": "¿Cuál es la conducta recomendada respecto a la ligadura del cordón umbilical para prevenir la anemia?",
+    "opciones": {
+      "a": "Ligadura inmediata (antes de 30 segundos).",
+      "b": "Ligadura tardía (cuando el cordón deja de latir).",
+      "c": "Ligadura a los 10 minutos postparto.",
+      "d": "No influye en el estado de hierro."
+    },
+    "correcta": "b",
+    "explicacion": "La ligadura tardía del cordón umbilical es una medida de salud pública eficaz para aumentar las reservas de hierro al nacer.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_090",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "Los requerimientos de hierro en el tercer trimestre del embarazo son aproximadamente de:",
+    "opciones": {
+      "a": "1 mg/kg/día.",
+      "b": "3 mg/kg/día.",
+      "c": "6 mg/kg/día.",
+      "d": "10 mg/kg/día."
+    },
+    "correcta": "c",
+    "explicacion": "Los requerimientos en el tercer trimestre se elevan hasta **6 mg/kg/día**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_091",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué característica laboratorial es típica de una anemia ferropénica establecida?",
+    "opciones": {
+      "a": "VCM elevado y RDW normal.",
+      "b": "VCM disminuido y RDW aumentado (anisotocis).",
+      "c": "VCM normal y Ferritina alta.",
+      "d": "Hemoglobina normal y reticulocitos altos."
+    },
+    "correcta": "b",
+    "explicacion": "La **Anemia ferropénica** es microcítica (VCM bajo) e hipocrómica, con aumento de la variación del tamaño celular (RDW).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_092",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿En qué momento se observa la respuesta reticulocitaria máxima tras iniciar tratamiento oral con hierro?",
+    "opciones": {
+      "a": "A las 24 horas.",
+      "b": "Entre los 5 y 10 días de tratamiento.",
+      "c": "Al mes de tratamiento.",
+      "d": "A los 3 meses."
+    },
+    "correcta": "b",
+    "explicacion": "La respuesta reticulocitaria (crisis reticulocitaria) ocurre típicamente entre el día 5 y 10 tras iniciar la ferroterapia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_093",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la dosis terapéutica habitual de hierro elemental para el tratamiento de la anemia ferropénica en niños?",
+    "opciones": {
+      "a": "1 mg/kg/día.",
+      "b": "3 a 6 mg/kg/día.",
+      "c": "10 a 15 mg/kg/día.",
+      "d": "60 mg totales por día."
+    },
+    "correcta": "b",
+    "explicacion": "La dosis terapéutica recomendada es de **3 a 6 mg/kg/día** de **hierro elemental**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_094",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la conducta frente a un recién nacido pretérmino respecto a la suplementación con hierro?",
+    "opciones": {
+      "a": "Esperar hasta los 6 meses de vida.",
+      "b": "Iniciar suplementación al mes de vida (30 días).",
+      "c": "No requiere suplementación si toma leche de fórmula.",
+      "d": "Iniciar a los 4 meses como el niño de término."
+    },
+    "correcta": "b",
+    "explicacion": "Debido a que el hierro se incorpora en el tercer trimestre, el pretérmino nace con reservas bajas y requiere suplementación temprana al mes de vida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_095",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué alimento de origen animal aporta hierro con mayor porcentaje de absorción?",
+    "opciones": {
+      "a": "Hígado y carnes rojas.",
+      "b": "Pescado.",
+      "c": "Pollo.",
+      "d": "Huevo."
+    },
+    "correcta": "a",
+    "explicacion": "Las carnes rojas y el hígado presentan los mayores porcentajes de absorción de hierro hemo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_096",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál de estos síntomas es un signo de pica relacionado con la deficiencia de hierro?",
+    "opciones": {
+      "a": "Glositis.",
+      "b": "Coiloniquia.",
+      "c": "Geofagia (comer tierra).",
+      "d": "Escleras azules."
+    },
+    "correcta": "c",
+    "explicacion": "La pica, especialmente la geofagia o pagofagia (hielo), es un síntoma clínico característico de la deficiencia de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_097",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "El índice de Mentzer (VCM/Rcto de GR) se utiliza para diferenciar la anemia ferropénica de:",
+    "opciones": {
+      "a": "Anemia perniciosa.",
+      "b": "Rasgo de Beta-Talasemia.",
+      "c": "Anemia de enfermedades crónicas.",
+      "d": "Anemia aplásica."
+    },
+    "correcta": "b",
+    "explicacion": "Un índice de Mentzer < 13 sugiere talasemia, mientras que > 13 sugiere deficiencia de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_098",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la recomendación de alimentación complementaria oportuna para evitar la anemia?",
+    "opciones": {
+      "a": "A partir de los 4 meses.",
+      "b": "A partir de los 6 meses, incorporando carnes.",
+      "c": "Al año de vida con cereales integrales.",
+      "d": "Solo frutas hasta los 9 meses."
+    },
+    "correcta": "b",
+    "explicacion": "La alimentación complementaria oportuna a partir de los 6 meses es un factor protector fundamental.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_099",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de anemia en el niño en edad preescolar en Argentina?",
+    "opciones": {
+      "a": "Deficiencia de Vitamina B12.",
+      "b": "Deficiencia de Ácido Fólico.",
+      "c": "Deficiencia de hierro.",
+      "d": "Intoxicación con plomo."
+    },
+    "correcta": "c",
+    "explicacion": "La deficiencia de hierro es la causa más frecuente de **anemia** en el niño, especialmente en edad preescolar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_100",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué valor de saturación de transferrina se considera indicativo de ferropenia?",
+    "opciones": {
+      "a": "< 16%.",
+      "b": "> 30%.",
+      "c": "< 40%.",
+      "d": "Normal entre 20-50%."
+    },
+    "correcta": "a",
+    "explicacion": "Un porcentaje de saturación de transferrina inferior al 16% es un marcador de transporte de hierro disminuido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_101",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuánto tiempo debe mantenerse el tratamiento con hierro una vez alcanzados valores normales de hemoglobina?",
+    "opciones": {
+      "a": "Debe suspenderse de inmediato.",
+      "b": "Por el mismo tiempo que se tardó en normalizar la Hb (aprox. 3-4 meses) para llenar depósitos.",
+      "c": "15 días adicionales.",
+      "d": "De forma indefinida."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento debe continuar tras normalizar la Hb para asegurar la reposición de los depósitos de ferritina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_102",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "En adolescentes mujeres, ¿qué factor se agrega a los requerimientos de crecimiento para aumentar el riesgo de anemia?",
+    "opciones": {
+      "a": "Pérdidas menstruales.",
+      "b": "Actividad física intensa.",
+      "c": "Uso de anticonceptivos.",
+      "d": "Aumento de la ingesta de vitamina C."
+    },
+    "correcta": "a",
+    "explicacion": "A los elevados requerimientos por crecimiento se agregan las pérdidas menstruales en la mujer adolescente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_103",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el efecto de la cocción de los alimentos en el hierro no-hemo?",
+    "opciones": {
+      "a": "Lo destruye por completo.",
+      "b": "Favorece su solubilidad y absorción si se acompaña de facilitadores.",
+      "c": "Lo convierte en hierro hemo.",
+      "d": "No tiene efecto."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro no-hemo de vegetales y cereales requiere condiciones ácidas o facilitadores para su correcta absorción.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_104",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué valor de hemoglobina define anemia en un niño de 6 a 23 meses?",
+    "opciones": {
+      "a": "< 10 g/dL.",
+      "b": "< 11 g/dL.",
+      "c": "< 12 g/dL.",
+      "d": "< 12,5 g/dL."
+    },
+    "correcta": "b",
+    "explicacion": "El límite inferior normal (media - 2 DE) para niños de 6 a 23 meses es de 11,0 g/dL.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_105",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un paciente con anemia ferropénica y sobrepeso puede explicarse por:",
+    "opciones": {
+      "a": "Dieta hipercalórica pero pobre en hierro (exceso de carbohidratos y leche).",
+      "b": "Malabsorción de grasas.",
+      "c": "Retención de líquidos por la anemia.",
+      "d": "Error de diagnóstico."
+    },
+    "correcta": "a",
+    "explicacion": "Una dieta adecuada en calorías pero pobre en hierro da como resultado un niño con ferropenia pero con peso normal o sobrepeso.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_106",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Fisiología de la gestación"
+    ],
+    "enunciado": "La mayor parte del hierro materno es incorporado por el feto durante:",
+    "opciones": {
+      "a": "El primer trimestre.",
+      "b": "El segundo trimestre.",
+      "c": "El tercer trimestre.",
+      "d": "El momento del parto."
+    },
+    "correcta": "c",
+    "explicacion": "El hierro materno es incorporado por el feto fundamentalmente durante el tercer trimestre.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_107",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la prevalencia de anemia en niños de 6 a 24 meses en el Noreste Argentino (NEA)?",
+    "opciones": {
+      "a": "16%.",
+      "b": "20%.",
+      "c": "Casi 46%.",
+      "d": "60%."
+    },
+    "correcta": "c",
+    "explicacion": "En la región del Noreste, la prevalencia de anemia en menores de 2 años llega a casi el 46%.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_108",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el síntoma cutáneo-mucoso que sugiere cronicidad en la deficiencia de hierro?",
+    "opciones": {
+      "a": "Ictericia.",
+      "b": "Exantema macular.",
+      "c": "Estomatitis angular y lengua depapilada.",
+      "d": "Edemas generalizados."
+    },
+    "correcta": "c",
+    "explicacion": "Las alteraciones en las mucosas como la glositis y estomatitis son signos de deficiencia prolongada de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_109",
+    "materia": [
+      "pediatria",
+      "medicinalegal"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Normativa nacional y jurisdiccional"
+    ],
+    "enunciado": "¿Qué medida de salud pública en Argentina obliga a la fortificación de alimentos con hierro?",
+    "opciones": {
+      "a": "Leyes 25459 y 25630.",
+      "b": "Programa REMEDIAR exclusivamente.",
+      "c": "Recomendación de la OMS.",
+      "d": "Código Alimentario Argentino sin ley específica."
+    },
+    "correcta": "a",
+    "explicacion": "En Argentina existen leyes específicas (25459/01 y 25630/02) para la fortificación de alimentos con hierro, zinc y vitaminas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_110",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué cantidad de hierro se absorbe de una dieta promedio normal?",
+    "opciones": {
+      "a": "100%.",
+      "b": "50%.",
+      "c": "10% (aproximadamente 1 mg por cada 10-20 mg ingeridos).",
+      "d": "1%."
+    },
+    "correcta": "c",
+    "explicacion": "El balance de hierro es estrecho, absorbiéndose habitualmente solo un 10% del ingerido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_111",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cómo se denomina el estado en el que la ferritina está baja pero la hemoglobina es normal?",
+    "opciones": {
+      "a": "Anemia ferropénica.",
+      "b": "Deficiencia de hierro sin anemia (ferropenia latente).",
+      "c": "Talasemia menor.",
+      "d": "Estado normal."
+    },
+    "correcta": "b",
+    "explicacion": "Es la primera etapa de la deficiencia de hierro, donde se agotan los depósitos (ferritina) antes de afectar la eritropoyesis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_112",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿A qué edad se recomienda realizar el primer screening universal de hemoglobina en lactantes de término?",
+    "opciones": {
+      "a": "Al mes de vida.",
+      "b": "Entre los 6 y 12 meses de edad.",
+      "c": "A los 2 años.",
+      "d": "Al ingreso escolar únicamente."
+    },
+    "correcta": "b",
+    "explicacion": "Es el período de mayor riesgo por agotamiento de reservas y cambios dietéticos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_113",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué proteína es la encargada del transporte de hierro en el plasma?",
+    "opciones": {
+      "a": "Ferritina.",
+      "b": "Hemosiderina.",
+      "c": "Transferrina.",
+      "d": "Albúmina."
+    },
+    "correcta": "c",
+    "explicacion": "La **transferrina** es la proteína de transporte que moviliza el hierro hacia la médula ósea.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_114",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un lactante de 2 meses nacido con 900g de peso. ¿Cuál es su valor normal de Hb para esta edad?",
+    "opciones": {
+      "a": "11,2 g/dL.",
+      "b": "8,0 g/dL (Límite inferior 7,1).",
+      "c": "13,5 g/dL.",
+      "d": "16,5 g/dL."
+    },
+    "correcta": "b",
+    "explicacion": "Según la tabla de valores por peso de nacimiento, un niño de <1000g a los 2 meses tiene un promedio de 8,0 g/dL.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_115",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la forma química del hierro presente en vegetales y legumbres?",
+    "opciones": {
+      "a": "Hierro Hemo.",
+      "b": "Hierro No-Hemo (Férrico).",
+      "c": "Hierro elemental puro.",
+      "d": "Ferritina vegetal."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro en vegetales se encuentra en forma no-hemo, cuya absorción es más compleja e influenciable.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_116",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué efecto tiene la vitamina A en el metabolismo del hierro?",
+    "opciones": {
+      "a": "Bloquea la absorción.",
+      "b": "Ayuda a la movilización de hierro desde los depósitos.",
+      "c": "Aumenta la pérdida renal.",
+      "d": "No tiene relación."
+    },
+    "correcta": "b",
+    "explicacion": "La vitamina A es necesaria para la movilización del hierro desde los depósitos hacia la eritropoyesis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_117",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "La deficiencia de hierro en la infancia temprana se ha asociado con:",
+    "opciones": {
+      "a": "Solo cambios en el color de la piel.",
+      "b": "Alteraciones en el desarrollo madurativo y neurocognitivo.",
+      "c": "Aumento de la talla.",
+      "d": "Ninguna consecuencia a largo plazo."
+    },
+    "correcta": "b",
+    "explicacion": "La deficiencia de hierro tiene graves consecuencias sobre la salud de los individuos y aspectos sociales/económicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_118",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un lactante de 2 meses, nacido a las 32 semanas de gestación con un peso de 1.500 g, se encuentra con lactancia materna exclusiva. ¿Cuál es la conducta recomendada respecto a la suplementación con hierro?",
+    "opciones": {
+      "a": "Iniciar a los 4 meses 1 mg/kg/día.",
+      "b": "Iniciar a los 30 días de vida 2 mg/kg/día.",
+      "c": "Iniciar a los 6 meses junto con la alimentación complementaria.",
+      "d": "No requiere suplementación por recibir lactancia materna."
+    },
+    "correcta": "b",
+    "explicacion": "Los prematuros con peso entre 1.500 y 2.500 g deben iniciar suplementación a los **30 días** con una dosis de **2 mg/kg/día**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_119",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "Un niño de 18 meses consume 1 litro de leche de vaca entera al día y poca carne. El laboratorio muestra: Hb 9,2 g/dL, VCM 68 fl, RDW 17%. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "a": "Realizar una transfusión de glóbulos rojos sedimentados.",
+      "b": "Iniciar hierro oral (3-6 mg/kg/día) y limitar el consumo de leche de vaca a un máximo de 500 ml/día.",
+      "c": "Solicitar una biopsia intestinal para descartar enfermedad celíaca antes de tratar.",
+      "d": "Indicar solo dieta rica en carnes sin medicación."
+    },
+    "correcta": "b",
+    "explicacion": "El consumo excesivo de leche de vaca es un factor de riesgo mayor. Se debe iniciar tratamiento y corregir el error dietético.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_120",
+    "materia": [
+      "pediatria",
+      "ginecologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una adolescente de 15 años consulta por astenia. Refiere ciclos menstruales abundantes (8 días de duración). El laboratorio informa: Hb 12,5 g/dL (normal para edad), Ferritina 8 ng/mL, Ferremia 40 ug/dL. ¿Cómo interpreta este cuadro?",
+    "opciones": {
+      "a": "Anemia ferropénica establecida.",
+      "b": "Estado normal para una mujer adolescente.",
+      "c": "Deficiencia de hierro sin anemia (ferropenia latente).",
+      "d": "Rasgo talasémico."
+    },
+    "correcta": "c",
+    "explicacion": "La hemoglobina es normal, pero los depósitos (ferritina) están agotados, lo que define la deficiencia de hierro pre-clínica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_121",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un lactante de 12 meses en tratamiento por anemia ferropénica desde hace 30 días (hierro 5 mg/kg/día) concurre a control. Su Hb inicial era de 8,5 g/dL. ¿Qué valor de Hb esperaría encontrar hoy para considerar que la respuesta al tratamiento es adecuada?",
+    "opciones": {
+      "a": "Mayor a 9,5 g/dL (incremento > 1 g/dL).",
+      "b": "Igual a 8,5 g/dL, ya que el hierro tarda 3 meses en actuar.",
+      "c": "Mayor a 13 g/dL.",
+      "d": "El tratamiento solo se evalúa con ferritina al mes."
+    },
+    "correcta": "a",
+    "explicacion": "Una respuesta terapéutica adecuada se define por un incremento de la Hb mayor a **1 g/dL** luego de 30 días de tratamiento.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_122",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Niño de 4 años con sospecha de anemia. El laboratorio muestra: Hb 10,5 g/dL, VCM 62 fl, RDW 12,1% (Normal: 11,5-14,5%) y Recuento de Glóbulos Rojos: 5.500.000/mm³. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Anemia ferropénica.",
+      "b": "Rasgo de Beta-Talasemia.",
+      "c": "Anemia por inflamación crónica.",
+      "d": "Deficiencia de Vitamina B12."
+    },
+    "correcta": "b",
+    "explicacion": "El VCM muy bajo con un número elevado de glóbulos rojos y un RDW normal (sin anisocitosis) es característico del rasgo talasémico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_123",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Un recién nacido de término, de peso adecuado, cuya madre presentó anemia grave durante el tercer trimestre. ¿Qué conducta se recomienda?",
+    "opciones": {
+      "a": "Suplementar con hierro 1 mg/kg/día desde el nacimiento.",
+      "b": "Suplementar con hierro 1 mg/kg/día a partir de los 2 meses de vida.",
+      "c": "Esperar hasta los 6 meses para suplementar.",
+      "d": "No requiere hierro si el niño nació con buen peso."
+    },
+    "correcta": "b",
+    "explicacion": "Los niños nacidos de madres anémicas o con patologías que afecten el transporte de hierro deben recibir suplementación a partir de los **2 meses**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_124",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Lactante de 9 meses que presenta palidez cutáneo-mucosa. Madre refiere que el niño \"come mucha tierra de las macetas\". ¿Cómo se denomina este síntoma y con qué se asocia?",
+    "opciones": {
+      "a": "Pica (geofagia), asociada a deficiencia de hierro.",
+      "b": "Malabsorción, asociada a enfermedad celíaca.",
+      "c": "Trastorno obsesivo, asociado a autismo.",
+      "d": "Es un comportamiento normal a esta edad."
+    },
+    "correcta": "a",
+    "explicacion": "La **pica** es un síntoma clínico clásico de la deficiencia de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_125",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Intestino delgado"
+    ],
+    "enunciado": "Un niño de 2 años con anemia ferropénica no responde al tratamiento con sulfato ferroso bien administrado durante 2 meses. El pediatra sospecha malabsorción. ¿Cuál es la causa más frecuente a descartar en nuestro medio?",
+    "opciones": {
+      "a": "Fibrosis quística.",
+      "b": "Enfermedad celíaca.",
+      "c": "Linfoma intestinal.",
+      "d": "Divertículo de Meckel."
+    },
+    "correcta": "b",
+    "explicacion": "Ante una anemia ferropénica refractaria al tratamiento oral, la **enfermedad celíaca** es la principal causa de malabsorción a descartar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_126",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Recién nacido prematuro con peso de 950 g. Según la guía SAP, ¿cuál es la dosis de hierro recomendada para la suplementación?",
+    "opciones": {
+      "a": "1 mg/kg/día.",
+      "b": "2 mg/kg/día.",
+      "c": "3 a 4 mg/kg/día.",
+      "d": "10 mg/kg/día."
+    },
+    "correcta": "c",
+    "explicacion": "Los niños con peso al nacer inferior a 1.000 g requieren dosis mayores (**3-4 mg/kg/día**) debido a sus escasos depósitos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_127",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Paciente de 10 meses con anemia ferropénica moderada. Se indica tratamiento oral. La madre pregunta en qué momento del día es mejor darle las gotas. Usted indica:",
+    "opciones": {
+      "a": "Junto con la mamadera de leche.",
+      "b": "Entre las comidas, lejos de la leche, idealmente con jugo de naranja.",
+      "c": "Mezclado con el puré de zapallo.",
+      "d": "Inmediatamente antes de dormir junto con el yogur."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro se absorbe mejor en **ayuno** y con **vitamina C**; la leche y los alimentos interfieren en su absorción.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_128",
+    "materia": [
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "TRI – Neumonías"
+    ],
+    "enunciado": "Un niño de 6 años presenta Hb 10,8 g/dL, ferritina normal y PCR elevada. Se encuentra cursando una neumonía. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Iniciar hierro a dosis terapéuticas.",
+      "b": "Realizar punción de médula ósea.",
+      "c": "Repetir el laboratorio una vez resuelto el cuadro infeccioso.",
+      "d": "Indicar transfusión."
+    },
+    "correcta": "c",
+    "explicacion": "En cuadros inflamatorios/infecciosos agudos, la ferritina sube (reactante de fase aguda) y la Hb baja, pudiendo dar falsos diagnósticos. Se debe reevaluar en salud.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_129",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "Durante un control de salud de un niño de 6 meses, la madre comenta que es vegetariana y que desea que su hijo también lo sea. ¿Qué recomendación es correcta según la guía?",
+    "opciones": {
+      "a": "No hay riesgo de anemia si consume muchas espinacas crudas.",
+      "b": "Debe asegurar el aporte de hierro hemo a través de carnes; si no, el riesgo de anemia es muy alto por la baja biodisponibilidad del hierro vegetal.",
+      "c": "La leche materna es suficiente hasta el año.",
+      "d": "Solo debe tomar suplementos de calcio."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro no-hemo (vegetal) tiene muy baja absorción (1-5%). Se recomienda la incorporación de carnes desde los 6 meses.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_130",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Paciente con diagnóstico de anemia ferropénica que presenta intolerancia gástrica grave al sulfato ferroso (vómitos persistentes). ¿Cuál sería el siguiente paso en el manejo?",
+    "opciones": {
+      "a": "Suspender el tratamiento y observar.",
+      "b": "Probar con otras sales de hierro (ej: complejo polimaltosado) o fraccionar más la dosis.",
+      "c": "Indicar transfusión de sangre inmediatamente.",
+      "d": "Forzar la ingesta aunque vomite."
+    },
+    "correcta": "b",
+    "explicacion": "Ante la intolerancia, se recomienda cambiar la sal, disminuir la dosis o aumentar su fraccionamiento antes de considerar la vía parenteral.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_131",
+    "materia": [
+      "pediatria",
+      "infectologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Tracto digestivo"
+    ],
+    "enunciado": "Un niño de 5 años vive en una zona rural con saneamiento deficiente. Presenta anemia microcítica que no mejora con hierro. En el examen físico se palpa leve hepatomegalia. ¿Qué estudio solicitaría para buscar causas de pérdida crónica?",
+    "opciones": {
+      "a": "Examen parasitológico de materia fecal (búsqueda de uncinarias).",
+      "b": "Dosaje de plomo en sangre.",
+      "c": "Ecografía cerebral.",
+      "d": "Radiografía de tórax."
+    },
+    "correcta": "a",
+    "explicacion": "Las parasitosis intestinales (como Uncinariasis o Trichuris) son causas frecuentes de pérdida crónica de sangre y anemia en zonas vulnerables.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_132",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Complicaciones maternas en el embarazo"
+    ],
+    "enunciado": "Una embarazada de 20 semanas presenta Hb 10,2 g/dL. ¿Cuál es la conducta terapéutica indicada?",
+    "opciones": {
+      "a": "Mantener dosis de profilaxis (60 mg/día).",
+      "b": "Aumentar a dosis de tratamiento (120-200 mg/día de hierro elemental).",
+      "c": "Solicitar una interrupción del embarazo.",
+      "d": "Indicar solo reposo."
+    },
+    "correcta": "b",
+    "explicacion": "Si se diagnostica anemia durante el embarazo, se debe pasar de la dosis profiláctica a la dosis terapéutica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_133",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "Un lactante de 7 meses, nacido de término, con peso adecuado, recibe lactancia materna y ya incorporó papillas de carne y verduras. ¿Cuál es su dosis de suplementación profiláctica?",
+    "opciones": {
+      "a": "1 mg/kg/día.",
+      "b": "3 mg/kg/día.",
+      "c": "5 mg/kg/día.",
+      "d": "No requiere suplemento."
+    },
+    "correcta": "a",
+    "explicacion": "Los niños de término requieren **1 mg/kg/día** de hierro profiláctico a partir del 4º mes (o antes si hay factores de riesgo).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_134",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un paciente de 3 años presenta Hb 11 g/dL y VCM 72 fl. Se sospecha ferropenia. ¿Qué parámetro de laboratorio confirma la ferropenia en etapa temprana (antes de la anemia)?",
+    "opciones": {
+      "a": "Hemoglobina glicosilada.",
+      "b": "Ferritina sérica disminuida.",
+      "c": "Aumento de la bilirrubina.",
+      "d": "Disminución de los reticulocitos."
+    },
+    "correcta": "b",
+    "explicacion": "La **ferritina sérica** es el primer parámetro que desciende al agotarse los depósitos de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_135",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "Lactante de 4 meses recibe fórmula de inicio fortificada con hierro (12 mg/L) en cantidad adecuada (800 ml/día). ¿Requiere suplementación con gotas de hierro?",
+    "opciones": {
+      "a": "Sí, 1 mg/kg/día siempre.",
+      "b": "No, las fórmulas fortificadas cubren el requerimiento profiláctico si el volumen es adecuado.",
+      "c": "Sí, pero a dosis de 3 mg/kg.",
+      "d": "No, el hierro de la fórmula no se absorbe."
+    },
+    "correcta": "b",
+    "explicacion": "Los lactantes que reciben leche de fórmula fortificada en cantidades normales **no requieren suplementación** adicional.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_136",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "Adolescente varón, deportista de alto rendimiento, consulta por cansancio. Hb 13 g/dL, Ferritina 10 ng/mL. ¿Cuál es la causa más probable de su ferropenia?",
+    "opciones": {
+      "a": "Sangrado menstrual.",
+      "b": "Aumento de requerimientos por expansión de masa muscular y posibles microhemorragias digestivas por esfuerzo.",
+      "c": "Exceso de consumo de carnes.",
+      "d": "Es normal por la edad."
+    },
+    "correcta": "b",
+    "explicacion": "En varones adolescentes, el crecimiento rápido y la actividad física intensa aumentan drásticamente los requerimientos de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_137",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Paciente de 2 años con diagnóstico de anemia ferropénica. Tras 4 meses de tratamiento, la Hb es normal. ¿Qué estudio solicitaría para decidir la suspensión del hierro?",
+    "opciones": {
+      "a": "Hemograma completo.",
+      "b": "Ferritina sérica (para verificar depósitos llenos).",
+      "c": "Ferremia únicamente.",
+      "d": "No se piden estudios, se suspende por tiempo."
+    },
+    "correcta": "b",
+    "explicacion": "El objetivo final del tratamiento es normalizar los depósitos, lo cual se verifica con la **ferritina sérica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_138",
+    "materia": [
+      "pediatria",
+      "gastroenterologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Intestino delgado"
+    ],
+    "enunciado": "¿Cuál es el principal sitio anatómico de absorción del hierro en el tubo digestivo?",
+    "opciones": {
+      "a": "Estómago.",
+      "b": "Duodeno y yeyuno proximal.",
+      "c": "Colon descendente.",
+      "d": "Íleon terminal."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro se absorbe principalmente en el **duodeno** y la parte superior del **yeyuno**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_139",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué marcador de laboratorio es útil para evaluar la disponibilidad de hierro para la eritropoyesis en tiempo real (pocas horas/días)?",
+    "opciones": {
+      "a": "Ferritina.",
+      "b": "Contenido de hemoglobina de los reticulocitos (CHr).",
+      "c": "Hemoglobina total.",
+      "d": "Protoporfirina eritrocitaria."
+    },
+    "correcta": "b",
+    "explicacion": "El **CHr** refleja la disponibilidad de hierro para las células producidas en las últimas 48-72 horas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_140",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "La \"anemia fisiológica del lactante\" alcanza su nivel más bajo de hemoglobina aproximadamente a los:",
+    "opciones": {
+      "a": "15 días de vida.",
+      "b": "2 a 3 meses de vida.",
+      "c": "6 meses de vida.",
+      "d": "12 meses de vida."
+    },
+    "correcta": "b",
+    "explicacion": "El nadir de la hemoglobina fisiológica ocurre entre las **8 y 12 semanas** de vida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_141",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la función de la hepcidina en el metabolismo del hierro?",
+    "opciones": {
+      "a": "Aumentar la absorción intestinal.",
+      "b": "Bloquear la salida de hierro desde los macrófagos y enterocitos (regulador negativo).",
+      "c": "Transportar hierro en el plasma.",
+      "d": "Sintetizar hemoglobina."
+    },
+    "correcta": "b",
+    "explicacion": "La **hepcidina** es la principal hormona reguladora; niveles altos inhiben la absorción y liberación de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_142",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "¿Qué compuesto del té inhibe la absorción del hierro no-hemo?",
+    "opciones": {
+      "a": "Vitamina C.",
+      "b": "Ácido cítrico.",
+      "c": "Taninos.",
+      "d": "Lactosa."
+    },
+    "correcta": "c",
+    "explicacion": "Los **taninos** forman complejos insolubles con el hierro férrico, impidiendo su absorción.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_143",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es la recomendación de la SAP para el screening de anemia en niños sin factores de riesgo?",
+    "opciones": {
+      "a": "Realizar hemograma anual desde el nacimiento.",
+      "b": "Un control entre los 6 y 12 meses de edad.",
+      "c": "No realizar screening si el niño luce sano.",
+      "d": "Solo realizarlo en la adolescencia."
+    },
+    "correcta": "b",
+    "explicacion": "Se recomienda un screening universal de Hb/Hto en todos los niños entre los **6 y 12 meses**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_144",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "En un paciente con anemia de enfermedades crónicas, ¿cómo suele encontrarse la ferritina?",
+    "opciones": {
+      "a": "Baja.",
+      "b": "Normal o elevada (reactante de fase aguda).",
+      "c": "Siempre ausente.",
+      "d": "No se puede medir."
+    },
+    "correcta": "b",
+    "explicacion": "A diferencia de la ferropenia, en la anemia por inflamación el hierro está \"atrapado\" y la **ferritina está normal o alta**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_145",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Qué cantidad de hierro elemental aporta 1 ml de jarabe de Sulfato Ferroso al 25% (concentración habitual)?",
+    "opciones": {
+      "a": "1 mg.",
+      "b": "25 mg.",
+      "c": "125 mg.",
+      "d": "5 mg."
+    },
+    "correcta": "b",
+    "explicacion": "El sulfato ferroso al 25% aporta **25 mg** de hierro elemental por cada ml (o 125 mg de la sal).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_146",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el requerimiento diario de hierro de un niño de 1 a 3 años?",
+    "opciones": {
+      "a": "1 mg/día.",
+      "b": "7 mg/día.",
+      "c": "15 mg/día.",
+      "d": "30 mg/día."
+    },
+    "correcta": "b",
+    "explicacion": "Según las tablas de requerimientos, los niños de 1 a 3 años necesitan aproximadamente **7 mg/día**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_147",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Desarrollo y nutrición"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un facilitador de la absorción de hierro?",
+    "opciones": {
+      "a": "Fitatos (cereales).",
+      "b": "Fosfatos (gaseosas).",
+      "c": "Ácido cítrico.",
+      "d": "Calcio."
+    },
+    "correcta": "c",
+    "explicacion": "El **ácido cítrico** y el ascórbico son potentes facilitadores de la absorción de hierro no-hemo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "pediatria_004_148",
+    "materia": [
+      "pediatria",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Datos de nuestro país"
+    ],
+    "enunciado": "Según la OMS (2011), la prevalencia estimada de anemia por deficiencia de hierro en niños menores de 5 años es aproximadamente:",
+    "opciones": {
+      "a": "75 %",
+      "b": "10 %",
+      "c": "50 %",
+      "d": "25 %"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_149",
+    "materia": [
+      "pediatria",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Datos de nuestro país"
+    ],
+    "enunciado": "En Argentina, según la Encuesta Nacional de Nutrición y Salud (2005), la prevalencia de anemia en niños de 6–24 meses es:",
+    "opciones": {
+      "a": "20 %",
+      "b": "16 %",
+      "c": "35 %",
+      "d": "46 %"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_150",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "En el recién nacido de término, las reservas de hierro son suficientes hasta aproximadamente:",
+    "opciones": {
+      "a": "9 meses",
+      "b": "12 meses",
+      "c": "2 meses",
+      "d": "4–6 meses"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_151",
+    "materia": [
+      "pediatria",
+      "nutricion"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Nutrición y obesidad"
+    ],
+    "enunciado": "La principal causa de anemia ferropénica a partir de los 4–6 meses de vida es:",
+    "opciones": {
+      "a": "Malabsorción intestinal",
+      "b": "Dieta insuficiente o mal balanceada",
+      "c": "Pérdidas digestivas ocultas",
+      "d": "Déficit congénito de transferrina"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_152",
+    "materia": [
+      "pediatria",
+      "obstetricia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Lactancia"
+    ],
+    "enunciado": "En relación con la leche materna, es correcto afirmar que:",
+    "opciones": {
+      "a": "No aporta hierro significativo",
+      "b": "Tiene alto contenido de hierro y alta absorción",
+      "c": "Tiene bajo contenido de hierro pero alta absorción",
+      "d": "Tiene alto contenido de hierro y baja absorción"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_153",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "El principal signo clínico en el examen físico de la anemia ferropénica es:",
+    "opciones": {
+      "a": "Esplenomegalia",
+      "b": "Palidez cutáneo-mucosa",
+      "c": "Telangectasias",
+      "d": "Retraso pondoestatural"
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_154",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "¿Cuál es el perfil típico del hierro funcional en la anemia ferropénica?",
+    "opciones": {
+      "a": "Ferremia normal, TIBC alta, saturación normal",
+      "b": "Ferremia alta, TIBC baja, saturación alta",
+      "c": "Ferremia normal, TIBC normal, ferritina baja",
+      "d": "Ferremia baja, TIBC alta, saturación baja"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_155",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "La prueba terapéutica con hierro se considera positiva si:",
+    "opciones": {
+      "a": "Normaliza la ferritina a los 7 días",
+      "b": "Aumenta la Hb 0,5 g/dL a la semana",
+      "c": "Desaparece la palidez en 72 horas",
+      "d": "Reticulocitos ≥ 2 % a los 5–10 días"
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_156",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "La dosis correcta de sulfato ferroso por vía oral para tratamiento de la anemia ferropénica en pediatría es:",
+    "opciones": {
+      "a": "3–6 mg/kg/día",
+      "b": "2-3 mg/kg/día",
+      "c": "1-2 mg/kg/día",
+      "d": "10 mg/kg/día"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_157",
+    "materia": [
+      "pediatria",
+      "hematologia"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Terapia transfusional"
+    ],
+    "enunciado": "En relación con la transfusión, es correcto que:",
+    "opciones": {
+      "a": "Hb < 5 g/dL nunca se transfunde",
+      "b": "Hb ≥ 7 g/dL se transfunde siempre",
+      "c": "Hb ≥ 7 g/dL no se transfunde salvo hipoxemia",
+      "d": "Hb < 7 g/dL se transfunde en todos los casos"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_158",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "A María de 13 meses, se le efectuó un hemograma, que evidenció anemia microcítica, hipocrómica (hemoglobina 9,6 g/dl). Inicia tratamiento para anemia ferropénica con hierro en una dosis de 3mg/k/día. Si cumple el tratamiento adecuadamente, ¿cuánto es el tiempo máximo que debe esperarse para evidenciar la respuesta al tratamiento antes de pensar en otra patología",
+    "opciones": {
+      "a": "30 días",
+      "b": "60 días",
+      "c": "90 días",
+      "d": "120 días"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "Examen Muni",
+    "anio": 2008,
+    "oficial": true,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_159",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un paciente de 6 años padece anemia ferropénica motivo por el cual se le indicó tratamiento con hierro oral. ¿En cuánto debe evaluarse la respuesta eritropoyética si cumplió correctamente el tratamiento y en base a qué parámetro de laboratorio?",
+    "opciones": {
+      "a": "Aumento de reticulocitos a los 2 días",
+      "b": "Aumento de la hemoglobina mayor o igual a 1 g/dl a los 7 días",
+      "c": "Aumento de la hemoglobina mayor o igual a 1 g/dl a los 30 días",
+      "d": "Aumento de reticulocitos a los 30 días"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "Examen Muni",
+    "anio": 2013,
+    "oficial": true,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_160",
+    "materia": [
+      "pediatria",
+      "saludpublica"
+    ],
+    "submateria": [
+      "Hematología infantil",
+      "Datos de nuestro país"
+    ],
+    "enunciado": "Se decide realizar un programa de pesquisa y prevención de la anemia ferropénica. Teniendo en cuenta su prevalencia en la Argentina. ¿Cuál es el rango de edad en el se debe implementar el programa?",
+    "opciones": {
+      "a": "5 a 7 años",
+      "b": "2 a 4 años",
+      "c": "6 a 24 meses",
+      "d": "14 a 21 años"
+    },
+    "correcta": "c",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "Examen Muni",
+    "anio": 2007,
+    "oficial": true,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_161",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Ana de 2 años tiene diagnóstico de anemia ferropénica. Usted inició tratamiento hace 2 meses con hierro en una dosis de 3 mg/kg/día. Actualmente tiene un hemograma con:\n- Hemoglobina: 12 g/dl\n- Hematocrito: 36%\n- VCM: 80 fL\n- HbCM: 27.\n¿Cuál es la indicación más adecuada?",
+    "opciones": {
+      "a": "Continuar tratamiento con 3 mg/kg/día de hierro por 2 meses más para reponer los depósitos corporales de hierro",
+      "b": "Continuar la profilaxis con 1 mg/kg/día de hierro por un año para evitar una recaída",
+      "c": "Suspender el tratamiento con hierro ya que la paciente normalizó el hemograma",
+      "d": "Indicar 6 mg/kg/día de hierro para valorar la respuesta reticulocitaria"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "Examen Muni",
+    "anio": 2006,
+    "oficial": true,
+    "fuente": "curso de residencia"
+  },
+  {
+    "id": "pediatria_004_162",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Hematología infantil"
+    ],
+    "enunciado": "Un paciente de 2 años presenta una hemoglobina de 8,5 g/dL, un hematocrito de 28%, reticulocitos bajos, plaquetas de 350.000 por mm3, leucocitos de 8.300 por mm3, con formula normal, VCM de 69 fL, CHbCM 23%, sideremia disminuida, capacidad total de saturación de hierro aumentada, hemoglobina A2 levemente disminuida, hemoglobina F normal. ¿Con cuál de las siguientes anemias se correlacionan mejor estos datos de laboratorio?",
+    "opciones": {
+      "a": "Anemia ferropénica",
+      "b": "Anemia crónica",
+      "c": "Talasemia menor",
+      "d": "Anemia sideroblástica"
+    },
+    "correcta": "a",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "Examen Muni",
+    "anio": 2004,
+    "oficial": true,
+    "fuente": "curso de residencia"
+  }
