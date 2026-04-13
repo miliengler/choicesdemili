@@ -3671,5 +3671,814 @@
     "anio": null,
     "oficial": false,
     "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_173",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "Octavio de 4 meses, fue asistido ayer por guardia donde, luego de ver el resultado de laboratorio de orina completa, le indicaron cefalexina 100 mg/kg/día vía oral ambulatorio, en espera del urocultivo. Hoy tiene resultado de urocultivo que informa: Germen único, 100.000 colonias/c de Klebsiella. Octavio presenta fiebre y decaimiento marcado. Ante esta situación ¿cuál es la conducta adecuada?",
+    "opciones": {
+      "a": "Continuar el esquema antibiótico vía oral y solicitar ecografía renovesical y gammagrafía renal de urgencia.",
+      "b": "Continuar el esquema antibiótico vía oral, solicitar ecografía renovesical y, según el resultado, valorar necesidad de otros métodos complementarios.",
+      "c": "Iniciar tratamiento parenteral, solicitar ecografía renovesical y de acuerdo al resultado evaluar indicación de CUGM.",
+      "d": "Indicar tratamiento parenteral, realizar control con urocultivo post tratamiento y si es patológico solicitar ecografía renovesical."
+    },
+    "correcta": "c",
+    "explicacion": "En este caso, el paciente continúa febril a pesar del tratamiento y ha aislado en el urocultivo un germen atípico.\nPor la evolución del paciente es pertinente pasar el antibiótico a **vía endovenosa** y estudiar al niño.\nEn todos los niños, tras su primera ITU, hay que solicitar una **ecografía renal** para descartar anomalías de la vía urinaria, malformaciones renales e hidronefrosis.\nEn los niños con un primer episodio de ITU febril, se aconseja solicitar **CUGM** si la ecografía muestra:\n- Signos de daño renal congénito.\n- Dilatación de pelvis y cálices con dilatación del uréter.\n- Dilatación de uréter con o sin dilatación de pelvis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_174",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Un niño de 6 años es traído a la consulta por presentar edema palpebral bilateral y orina de color oscuro. En el examen físico tiene tensión arterial de 130/85 mmHg (por arriba del percentilo para su edad) y sedimento urinario con proteinuria (+++). ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Infección del tracto urinario.",
+      "b": "Síndrome nefrótico.",
+      "c": "Síndrome urémico hemolítico.",
+      "d": "Síndrome nefrítico."
+    },
+    "correcta": "d",
+    "explicacion": "El **síndrome nefrítico** se define por la presencia de hematuria (con cilindros hemáticos y/o hematíes dismórficos), proteinuria en grado variable y generalmente en rango no nefrótico (< 3,5 g/24 horas), edema, hipertensión arterial y fracaso renal agudo.\nLa **glomerulonefritis postinfecciosa** (y entre ellas la postestreptocócica) puede causar un síndrome nefrítico, y la edad de presentación más común es entre los 4 y los 14 años. Es la causa más común de síndrome nefrítico en niños.\nEl período de latencia, luego de un cuadro de faringitis, es entre 7 a 15 días.\nEl edema es más frecuente en niños que en adultos y se produce en zona facial y palpebral.\nEl aumento del volumen plasmático produce hipertensión arterial en el 60-80% de los casos. La insuficiencia renal ocurre en el 25% de los casos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_175",
+    "materia": [
+      "pediatria",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Urgencias urológicas y traumatismos"
+    ],
+    "enunciado": "Santiago es un adolescente de 14 años que consulta por dolor testicular intenso de inicio súbito. A la exploración, el testículo derecho está elevado y doloroso al tacto, sin reflejo cremastérico. ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Epididimitis.",
+      "b": "Torsión testicular.",
+      "c": "Hernia inguinal atascada.",
+      "d": "Orquitis viral."
+    },
+    "correcta": "b",
+    "explicacion": "La **torsión testicular** es una urgencia quirúrgica. Es la torsión del testículo o cordón espermático sobre su propio eje, lo que compromete la irrigación testicular.\nLa presentación clásica es dolor de inicio brusco, grave y unilateral, en general, acompañado de náuseas, vómitos y palidez.\nAl examen físico el **reflejo cremasteriano está ausente**. Al tacto, el cordón inguinal se percibe engrosado y doloroso. El testículo está **ascendido y en posición transversal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_176",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Paciente de 7 años, consulta a la guardia por oliguria de 48 hs de evolución, hematuria macroscópica, ligero edema bipalpebral y al examen físico se constata hipertensión arterial. La madre refiere que hace una semana le diagnosticaron faringitis para lo cual se encuentra recibiendo antibiótico. Con respecto al diagnóstico, ¿Qué estudio complementario orienta hacia la etiología del cuadro?",
+    "opciones": {
+      "a": "Urea y Creatinina en sangre.",
+      "b": "Ecografía renovesical.",
+      "c": "Dosaje de complemento sérico.",
+      "d": "Proteinuria en orina de 24 hs."
+    },
+    "correcta": "c",
+    "explicacion": "El caso clínico se trata de un **síndrome nefrítico**, luego de un cuadro de faringitis aguda.\nLa **glomerulonefritis postinfecciosa** puede causar un síndrome nefrítico, siendo la causa más común en niños. El período de latencia luego de un cuadro de faringitis es de 7 a 15 días.\nEl antecedente de infección estreptocócica, la **hipocomplementemia** y los títulos elevados de anticuerpos antiestreptolisina establecen usualmente el diagnóstico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_177",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Ud. recibe en la consulta a una madre con su hijo Oliver de 11 meses de edad. Trae un Urocultivo positivo a Escherichia Coli. Luego de indicar tratamiento antibiótico le solicita Urocultivo de control, ecografía renal y por presentar signos de daño renal congénito por ecografía se solicita uretrocistografía miccional. Para la realización del estudio miccional, ¿Cuál es la indicación antibiótico profiláctica que recomienda?",
+    "opciones": {
+      "a": "Cobertura antibiótica 24 hs antes y durante 3 días posteriores al estudio.",
+      "b": "Cobertura antibiótica 3 días antes y durante 3 días posteriores al estudio.",
+      "c": "Cobertura antibiótica 48 hs antes y durante 2 días posteriores al estudio.",
+      "d": "Cobertura antibiótica 24 hs antes y durante 5 días posteriores al estudio."
+    },
+    "correcta": "a",
+    "explicacion": "De acuerdo a las guías prácticas (AAP y SAP), no están indicados los antibióticos profilácticos después de la primera ITU febril en niños de 2 a 24 meses. Sin embargo, en ITU recurrentes y si la CUGM demuestra RVU grado IV o superior, se sugiere profilaxis.\nEn caso de realizar **CUGM** se recomienda indicar profilaxis antibiótica **24 hs antes y durante 3 días posteriores al estudio**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_178",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Traen a su consultorio una niña de 7 meses consulta por fiebre de 39° C de 3 días de evolución; ha presentado dos episodios de vómitos y pérdida del apetito. No tiene antecedentes patológicos y sus vacunas están completas. Al examen físico está bien nutrida, hidratada y no muestra ningún foco evidente. ¿Qué es lo que se debe hacer primero con esta niña?",
+    "opciones": {
+      "a": "Solicitar radiología de tórax y de abdomen.",
+      "b": "Solicitar un análisis de orina completa.",
+      "c": "Dar tratamiento y alimentación blanda.",
+      "d": "Pedir hemograma y hepatograma."
+    },
+    "correcta": "b",
+    "explicacion": "La **ITU en lactantes** es relativamente frecuente y puede cursar prácticamente sin síntomas, o con sintomatología muy inespecífica como irritabilidad, rechazo de las tomas o vómitos.\nPor ello, siempre hay que pensar en la posibilidad de ITU en el estudio del lactante con fiebre sin foco.\nEn todos los niños **menores de 2 años con fiebre sin foco ≥ 39°C es obligado realizar un estudio de orina**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_179",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "¿Cuál es la conducta más adecuada con un niño de 2 años que es traído a la consulta por diarrea sanguinolenta y vómitos de 24 horas de evolución? En el examen físico se encuentra normohidratado, con distensión abdominal y en los exámenes de laboratorio presenta: Hematocrito 18%, recuento de plaquetas: 90000/mm3, urea 120 mg/100ml, creatinina 1,5 mg/100ml, Na 135 mEq/l y K 4 mEq/l.",
+    "opciones": {
+      "a": "Hidratación por vía oral, (pérdidas insensibles más diuresis, libre de potasio), transfusión de glóbulos rojos a 10ml/kg y dieta hiposódica. Control de peso y diuresis.",
+      "b": "Hidratación parenteral, transfusión de glóbulos rojos a 10ml/kg y dieta hiposódica. Control de peso y diuresis.",
+      "c": "Hidratación por vía oral, (pérdidas insensibles más diuresis, libre de potasio) y dieta hiposódica. Control de peso y diuresis.",
+      "d": "Hidratación parenteral y suspender aporte oral. Control de peso y diuresis."
+    },
+    "correcta": "a",
+    "explicacion": "En este caso debido a la diarrea sanguinolenta, anemia (Hto 18%) y plaquetopenia debemos sospechar **Síndrome Urémico Hemolítico (SHU)**.\nPara calcular el aporte hídrico hay que evaluar el estado de hidratación: en el normohidratado con tolerancia a la vía oral se debe comenzar aporte enteral con pérdidas insensibles más pérdidas concurrentes y diuresis.\nCon valores de **Hb < 7 g/dl o Hto < 21%**, se debe indicar **transfusión de glóbulos rojos** (aquí el Hto es 18%).\nAdemás se debe restringir el aporte de sodio, potasio y fósforo en la dieta.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_180",
+    "materia": [
+      "pediatria",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Patología testicular"
+    ],
+    "enunciado": "Niño de 12 meses de edad, que en los exámenes de salud practicados desde el nacimiento presenta testículo derecho en conducto inguinal que no es posible descender hasta el escroto. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Se ha de esperar hasta los dos años de edad a que ocurra descenso espontáneo del mismo.",
+      "b": "El diagnóstico más probable es el de testículo retráctil.",
+      "c": "La indicación de orquidopexia no debe diferirse.",
+      "d": "Tratamiento inicial hCG."
+    },
+    "correcta": "c",
+    "explicacion": "Los recién nacidos con **criptorquidia** deben ser examinados periódicamente en los primeros 6 meses. Si a los 6 meses no ha descendido el testículo, se consulta a cirugía pediátrica.\nEl momento ideal para realizar la cirugía es **entre los 12 y 18 meses de edad**, no debiéndose diferir en ningún caso más allá de los 2 años.\nHabitualmente se realiza el descenso testicular mediante **orquidopexia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_181",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Un paciente de 16 años de edad con antecedente reciente de infección gastrointestinal por E. coli, consulta por fiebre, cefalea intensa, y en el laboratorio se constatan: anemia, trombocitopenia y aumento de LDH. En el frotis de sangre periférica esquistocitos. Los estudios de orina revelan hematuria y leve proteinuria. ¿Cuál es el diagnóstico presuntivo más probable?",
+    "opciones": {
+      "a": "Nefritis intersticial alérgica y enfermedad tubular con bicitopenia.",
+      "b": "Necrosis tubular aguda isquémica secundaria a las enterotoxinas.",
+      "c": "Pielonefritis bilateral aguda con bicitopenia autoinmune.",
+      "d": "Síndrome urémico hemolítico/trombótico trombocitopénico."
+    },
+    "correcta": "d",
+    "explicacion": "El **síndrome urémico hemolítico** se caracteriza por la presencia de anemia, trombocitopenia, hematuria y esquistocitos en sangre periférica.\nAfecta principalmente a niños entre los 6 meses y los 5 años, y se contrae con mayor frecuencia por el consumo de carne mal cocida portadora de **Escherichia Coli productora de toxina Shiga**.\nEsta toxina provoca la destrucción de los glóbulos rojos, los cuales producen el bloqueo del sistema de filtración glomerular, provocando insuficiencia renal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_182",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Concurre al consultorio para control de salud Catalina de 2 años. Ante la pregunta sobre intercurrencias, la mamá menciona que recibió antibiótico vía oral por presentar este mes, una ITU (primer episodio) con rescate en urocultivo de E. Coli con >100000 UFC. Trae ya realizada una ecografía renal que es normal. ¿Cuál es la conducta adecuada en este caso?",
+    "opciones": {
+      "a": "Solicitar cistouretrografía retrógrada miccional.",
+      "b": "Solicitar nuevo urocultivo control.",
+      "c": "Solicitar centellograma renal con DMSA.",
+      "d": "Dar pautas de alarma y no solicitar otro estudio complementario."
+    },
+    "correcta": "d",
+    "explicacion": "Ante el primer episodio de ITU alta se sugiere realizar una **ecografía renal y de vías urinarias** (premiccional y posmiccional), sin distinción de sexo ni edad.\nEn este caso la niña ya tiene una ecografía normal, por lo que **solo se dan pautas de alarma** para que la persona responsable del cuidado esté atenta ante un nuevo episodio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_183",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "¿Cuál de las siguientes es la conducta más adecuada con una niña de 8 meses de edad que es traída a la consulta por fiebre de 39° C de tres días de evolución y ha presentado dos episodios de vómitos y pérdida de apetito? No tiene antecedentes patológicos y tiene el calendario de vacunación al día. En el examen físico se encuentra bien nutrida e hidratada sin signos de foco evidente.",
+    "opciones": {
+      "a": "Indicar tratamiento antitérmico y alimentación blanda.",
+      "b": "Solicitar radiografías de tórax y abdomen.",
+      "c": "Solicitar análisis completo de orina.",
+      "d": "Solicitar hemograma, PCR y eritrosedimentación."
+    },
+    "correcta": "c",
+    "explicacion": "En niños entre 3 y 36 meses con **fiebre sin foco**, está recomendado realizar un estudio de orina para descartar infección del tracto urinario (ITU).\nEn todos los niños menores de 2 años, con fiebre sin foco ≥ 39°C, es **obligado realizar un estudio de orina**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_184",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Un adolescente de 12 años con síndrome nefrótico en recaída, con proteinuria de 3 gramos/día, comienza con dolor agudo en fosa lumbar izquierda y hematuria macroscópica. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Absceso renal.",
+      "b": "Litiasis renal.",
+      "c": "Pielonefritis.",
+      "d": "Trombosis de la vena renal."
+    },
+    "correcta": "d",
+    "explicacion": "La **trombosis de la vena renal** es una complicación secundaria del síndrome nefrótico (dado el estado de hipercoagulabilidad por pérdida de proteínas anticoagulantes en orina).\nLos síntomas se desarrollan en forma súbita con dolor en fosa lumbar, macro hematuria, fiebre, náuseas y vómitos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_185",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Un lactante de 13 meses de edad es traído para control por cuadro febril de 4 días de evolución, sin foco clínico. Por sospecha de infección urinaria, se solicitó sedimento urinario que mostró 10 leucocitos por campo, 3-5 hematíes, nitritos negativos, estearasa leucocitaria negativa. Se medicó empíricamente con cefalexia. Posteriormente trae resultado de urocultivo (tomado por cateterismo vesical) que presenta 50.000 unidades formadoras de colonias de Escherichia coli multisensible. ¿Cuál considera usted que es la conducta más adecuada?",
+    "opciones": {
+      "a": "Suspender el tratamiento antibiótico y no solicitar nuevos estudios.",
+      "b": "Cumplir el tratamiento antibiótico y solicitar cistouretrografía miccional.",
+      "c": "Cumplir el tratamiento antibiótico y solicitar urocultivo de control.",
+      "d": "Cumplir el tratamiento antibiótico y solicitar ecografía vesical y de vías urinarias."
+    },
+    "correcta": "d",
+    "explicacion": "Todos los niños no continentes (menores de 2 años) se manejan como ITU alta.\nEl urocultivo tomado por cateterismo con 50.000 UFC confirma la infección, por lo que se debe completar el tratamiento con el antibiótico oral (al no presentar criterios de internación o sepsis).\nEn todos los niños, tras su **primera ITU**, hay que solicitar una **ecografía renal y de vías urinarias** para descartar anomalías de la vía urinaria, malformaciones renales e hidronefrosis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_186",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Síndrome de muerte súbita del lactante"
+    ],
+    "enunciado": "¿Cuál de los siguientes aspectos enfatizaría en la consulta con una madre adolescente que se encuentra inquieta porque su bebé de 25 días alimentado a pecho está durmiendo mucho y cree que se alimenta poco? En un día primaveral trae al niño envuelto en una manta de lana, con un enterito tejido, gorra y mitones en las manos. En el examen físico el bebé se encuentra en buen estado general, con peso adecuado para la edad.",
+    "opciones": {
+      "a": "Pautas horarias de amamantamiento nocturno.",
+      "b": "Restricción en el uso de chupete.",
+      "c": "Brindar medidas de higiene.",
+      "d": "Prevención de la muerte súbita."
+    },
+    "correcta": "d",
+    "explicacion": "Para prevenir el síndrome de **muerte súbita del lactante (SMSL)**, se debe **evitar sobreabrigar** al recién nacido.\nA veces por miedo a que pase frío la madre sobre abriga al niño y este puede llegar a respirar de manera más profunda y agotarse por el esfuerzo.\nOtras pautas incluyen: que el bebé duerma boca arriba o de costado, sin almohadas ni peluches alrededor, y no fumar cerca del bebé.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_187",
+    "materia": [
+      "pediatria",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Patología testicular"
+    ],
+    "enunciado": "Un paciente de 8 meses es evaluado en control de salud. Al examen físico, no se palpa el testículo derecho en escroto ni en la región inguinal. Los padres refieren que ya les habían dicho que el testículo derecho no había descendido. ¿cuál según usted es la conducta más adecuada?",
+    "opciones": {
+      "a": "Indicar tratamiento con Gonadotrofina Corionica Humana.",
+      "b": "Derivar a cirugía.",
+      "c": "Solicitar tomografía de la región inguinal.",
+      "d": "Conducta expectante."
+    },
+    "correcta": "b",
+    "explicacion": "En el caso de criptorquidia, **si a los 6 meses no ha descendido el testículo, se debe consultar a cirugía pediátrica**.\nEl momento ideal para realizar la cirugía es entre los 12 y 18 meses de edad, no debiéndose diferir en ningún caso más allá de los 2 años. Habitualmente se realiza el descenso testicular mediante orquidopexia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_188",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "Una paciente de 10 años presenta disuria, hipertermia y dolor lumbar. El sedimento de orina muestra 20-30 leucocitos y 10 eritrocitos por campo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Uretritis.",
+      "b": "Glomerulonefritis.",
+      "c": "Cistitis.",
+      "d": "Pielonefritis."
+    },
+    "correcta": "d",
+    "explicacion": "Se considera infección del tracto urinario baja (cistitis) cuando el paciente se presenta afebril o con febrícula y sintomatología miccional local (disuria, tenesmo, polaquiuria).\nEn cambio, la ITU alta (**pielonefritis**) presenta afectación del parénquima renal con **síntomas sistémicos** (fiebre alta en picos, decaimiento, dolor lumbar o abdominal, vómitos, etc.).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_189",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "¿Cuál es el primer estudio de diagnóstico por imágenes que debe indicarse en un niño de 7 meses, con infección urinaria febril?",
+    "opciones": {
+      "a": "Resonancia Magnética Nuclear.",
+      "b": "Centellograma renal.",
+      "c": "Ecografía renal y de vías urinarias.",
+      "d": "Cistouretrografía con placa miccional y postmiccional."
+    },
+    "correcta": "c",
+    "explicacion": "Ante el **primer episodio de ITU alta** se sugiere realizar una **ecografía renal y de vías urinarias** (premiccional y posmiccional, en caso de que controle esfínteres), cualesquiera sean el sexo y la edad.\nEs un método no invasivo que debe brindar información sobre el parénquima renal y la vía urinaria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_190",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Manuel de 5 años, previamente sano, es traído a la guardia por consultar por edema de miembros inferiores y bipalpebral de 72 hs de evolución. Niega fiebre. Presenta tensión arterial normal. Se realiza sedimento urinario donde presenta densidad urinaria de 1.020, pH 6, proteinuria ++++, leucocitos 0 a 5 por campo, sin hematuria. ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Celulitis preseptal.",
+      "b": "Síndrome nefrótico.",
+      "c": "Infección urinaria.",
+      "d": "Síndrome nefrítico."
+    },
+    "correcta": "b",
+    "explicacion": "Se define como **síndrome nefrótico** el cuadro clínico que presenta pérdida masiva de proteínas en orina (proteinuria ++++ o ≥ 50 mg/kg/d) con hipoalbuminemia, frecuentemente asociada a edema e hipercolesterolemia.\nEl **edema** es el signo clínico más frecuente que sugiere el diagnóstico en el primer episodio, y a diferencia del síndrome nefrítico, cursa típicamente **sin hematuria** y con **presión arterial normal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_191",
+    "materia": [
+      "pediatria",
+      "cardiologia",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Trastornos del ritmo",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Rocío de 4 años está internada con un cuadro de diarrea sanguinolenta y hematuria. El cuadro evolucionó desfavorablemente con oligoanuria, edemas periféricos e hipertensión. Usted solicita un laboratorio donde observa anemia, plaquetopenia, disminución de la función renal, y acidosis metabólica con hiponatremia e hiperkalemia. Solicita un electrocardiograma ¿Qué hallazgo espera encontrar?",
+    "opciones": {
+      "a": "Ondas T picudas.",
+      "b": "Ondas T planas.",
+      "c": "Habitualmente depresión del ST.",
+      "d": "Onda U."
+    },
+    "correcta": "a",
+    "explicacion": "La paciente presenta un cuadro clásico de Síndrome Urémico Hemolítico (SHU) con fracaso renal agudo, lo que le ha generado **hiperkalemia**.\nEn el electrocardiograma, la hiperpotasemia se manifiesta precozmente con **ondas T positivas, altas y picudas** (de mayor voltaje cuanto mayor sea el nivel de potasio).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_192",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Consultan los padres de Ignacio de 10 años de edad porque comienza con hematuria de 12 hs de evolución. Ud. le solicita una orina donde observa proteinuria leve. Tiene antecedente de infección faríngea de hace 15 días medicado con amoxicilina. ¿Cuál de las siguientes preguntas les realizaría a los padres para confirmar su sospecha diagnóstica de síndrome nefrítico y realizar tratamiento oportuno?",
+    "opciones": {
+      "a": "Si orina poco.",
+      "b": "Si le duele al orinar.",
+      "c": "Si cumplió el tratamiento con amoxicilina.",
+      "d": "Si orina mucho."
+    },
+    "correcta": "a",
+    "explicacion": "El **síndrome nefrítico** (en este caso probablemente una glomerulonefritis aguda postestreptocócica) se caracteriza por inflamación glomerular que ocasiona **fracaso renal agudo**, manifestándose clínicamente con **oliguria** (orinar poco).\nLa insuficiencia renal ocurre en aproximadamente el 25% de los casos, por lo que interrogar sobre el volumen urinario es fundamental.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_193",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Un niño de 15 días de vida es traído a la consulta por presentar fiebre de 39° C de 24 horas de evolución sin otros signos clínicos ni antecedentes personales significativos. Ante el diagnóstico presuntivo de infección urinaria se indica urocultivo. ¿Cuál es el método más adecuado para obtener la muestra de orina?",
+    "opciones": {
+      "a": "Punción vesical.",
+      "b": "Bolsita colectora de orina.",
+      "c": "Sondaje vesical intermitente.",
+      "d": "Urocultivo al acecho."
+    },
+    "correcta": "a",
+    "explicacion": "La **punción vesical** (suprapúbica) es la técnica de obtención de orina de menor posibilidad de contaminación, se efectúa a 1-2 cm por encima del pubis.\nEs el método **usado preferentemente en el recién nacido** (como este paciente de 15 días de vida). Se aconseja hacerla bajo guía ecográfica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_194",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un factor de riesgo para desarrollar infección del tracto urinario en niños?",
+    "opciones": {
+      "a": "Antecedentes recientes de antibioticoterapia de amplio espectro.",
+      "b": "Ropa de interior sintética.",
+      "c": "Dermatitis del pañal.",
+      "d": "Anormalidades que generen obstrucción en la vía urinaria."
+    },
+    "correcta": "d",
+    "explicacion": "Las infecciones del tracto urinario (ITU) en pediatría suelen ser ascendentes.\nLos **factores de riesgo** incluyen:\n- **Anomalías anatómicas como obstrucción del tracto urinario**, reflujo vesicoureteral (RVU), dilatación pielocalicial.\n- Fimosis.\n- ITU previa.\n- Estreñimiento, masa abdominal, globo vesical.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_195",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Otto, de 2 años, previamente sano, es traído por diarrea sanguinolenta de 3 días de evolución. En las últimas 24 horas presenta disminución del volumen urinario y palidez marcada. Al examen físico: TA 110/70 mmHg, palidez cutánea, edemas en miembros inferiores. En el laboratorio se observa: Hb 7,5 g/dL, plaquetas 80.000/mm3, creatinina 2,1 mg/dL, esquistocitos en frotis. ¿Cuál es el diagnóstico presuntivo?",
+    "opciones": {
+      "a": "Sepsis con coagulación intravascular diseminada (CID).",
+      "b": "Síndrome urémico hemolítico típico.",
+      "c": "Glomerulonefritis postestreptocócica.",
+      "d": "Púrpura trombocitopénica idiopática."
+    },
+    "correcta": "b",
+    "explicacion": "El **Síndrome Urémico Hemolítico (SUH)** típico (o posdiarreico) se presenta luego de un episodio de diarrea, habitualmente con sangre.\nSe caracteriza por la tríada de:\n- **Anemia hemolítica microangiopática** (Hb baja, presencia de esquistocitos)\n- **Trombocitopenia** (< 150.000/mm3)\n- **Daño renal agudo** (oliguria, edemas, creatinina elevada)",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_196",
+    "materia": [
+      "pediatria",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Urgencias urológicas y traumatismos"
+    ],
+    "enunciado": "Señale la causa más frecuente de escroto agudo en niños menores de 10 años",
+    "opciones": {
+      "a": "Torsión testicular.",
+      "b": "Orquiepididimitis.",
+      "c": "Hemorragia testicular.",
+      "d": "Teratoma quístico."
+    },
+    "correcta": "a",
+    "explicacion": "Ante un niño o adolescente que acude a urgencias por dolor testicular intenso, de inicio brusco, siempre se debe descartar como principal urgencia (y causa de suma gravedad) la **torsión testicular**.\n(Nota médica: Aunque estadísticamente la torsión de los apéndices testiculares puede ser más común en prepúberes, la torsión del cordón espermático/testicular es la principal patología aguda que define la conducta en estos cuadros y se considera la etiología principal a descartar entre las opciones presentadas).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_197",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Jorge de 5 años, sano, es traído a la consulta por presentar edema de miembros inferiores, escrotal y bipalpebral de 48 hs de evolución. Sin fiebre. Tensión arterial normal. Trae resultado de un sedimento urinario realizado horas previas que informa densidad 1020, pH 5, proteinuria ++++, leucocitos 5 por campo, sin hematuria y sin cilindros. Con estos datos, ¿cuál es la sospecha diagnóstica?",
+    "opciones": {
+      "a": "Proteinuria ortostática.",
+      "b": "Síndrome nefrótico.",
+      "c": "Infección urinaria.",
+      "d": "Síndrome nefrítico."
+    },
+    "correcta": "b",
+    "explicacion": "Se define como **síndrome nefrótico** el cuadro clínico que presenta **pérdida de proteínas en orina** (proteinuria ++++ o ≥ 50 mg/kg/d) con hipoalbuminemia, generalmente asociada a **edema** (bipalpebral, escrotal, miembros inferiores) e hipercolesterolemia.\nA diferencia del síndrome nefrítico, típicamente cursa con **presión arterial normal** y el sedimento no muestra hematuria macroscópica ni cilindros eritrocitarios.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_198",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Riesgo cardiovascular y enfermedad renal"
+    ],
+    "enunciado": "Un niño de 2 años en seguimiento por antecedentes de Síndrome Urémico Hemolítico hace 8 meses, presenta proteinuria significativa sin hipertensión arterial y con función renal normal. ¿Cuál es la indicación terapéutica adecuada? IECA: inhibidores de la enzima convertidora de angiotensina",
+    "opciones": {
+      "a": "Dieta hiposódica y normoproteica.",
+      "b": "Dieta normosódica y normoproteica.",
+      "c": "Dieta normosódica, hipoproteica e IECA.",
+      "d": "Dieta hiposódica, normoproteica e IECA."
+    },
+    "correcta": "d",
+    "explicacion": "En los niños con antecedente de síndrome urémico hemolítico se indicará **dieta normoproteica e hiposódica**.\nSi durante la evolución se detectaran marcadores de Enfermedad Renal Crónica (HTA, microalbuminuria/proteinuria, caída del filtrado glomerular), se instrumentarán medidas para enlentecer la progresión, como la indicación de **IECA**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_199",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Leonel de 6 meses que es traído a la guardia por su madre de 22 años por presentar 2 picos de fiebre en las últimas 12 horas, buen ánimo salvo cuando le sube la temperatura que se encuentra algo decaído. Cuando revisa al bebe se encuentra en buen estado general sin foco infeccioso claro, solicita una orina completa con sedimento con técnica estéril. Se obtiene como datos positivos: PH:6, Densidad 1020; Nitritos ++; Esterasa leucocitaria ++ Leucocitos 25 x campo. Con estos resultados ¿qué decisiones adopta?",
+    "opciones": {
+      "a": "Repetir la muestra ya que la asume como contaminada.",
+      "b": "Internar al bebe, realizar urocultivo y comenzar con antibiótico endovenoso.",
+      "c": "Realizar urocultivo y comenzar con antibiótico vía oral.",
+      "d": "Aguardar resultados de urocultivo para comenzar con antibiótico terapia."
+    },
+    "correcta": "c",
+    "explicacion": "En los niños menores de 1 año las ITU se asumen como pielonefritis. El sedimento francamente patológico (nitritos y esterasa +, 25 leucocitos/campo) indica infección.\nEl tratamiento empírico inicial debe iniciarse inmediatamente (previa toma de urocultivo).\nDado que el paciente se encuentra en **buen estado general** y no impresiona séptico (no tiene criterios de internación), se sugiere **iniciar tratamiento ambulatorio con cefalosporinas de primera generación por vía oral**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_200",
+    "materia": [
+      "pediatria",
+      "urgencias",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Patología renal y urológica urgente",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Una niña de 3 años se encuentra internada con diagnóstico de Síndrome Urémico Hemolítico, presentando palidez y anuria de 24 horas. Los exámenes complementarios revelan Hematocrito: 16%; Na 112 mEq/l; K 5,9 mEq/l; Urea: 105 mg %. Una muestra de gases en sangre presenta pH: 7,31 y bicarbonato 18 mEq/l. Se indica transfusión con glóbulos rojos: desplasmatizados. ¿Cuál es la conducta inmediata posterior más adecuada en este caso?",
+    "opciones": {
+      "a": "Indicar corrección rápida con cloruro de sodio hipertónico.",
+      "b": "Indicar corrección con bicarbonato de sodio 1/6 molar.",
+      "c": "Indicar diálisis peritoneal.",
+      "d": "Mantener conducta expectante por 24 horas."
+    },
+    "correcta": "c",
+    "explicacion": "En el síndrome urémico hemolítico son indicaciones de **terapia de reemplazo renal (diálisis peritoneal o hemodiálisis)** las siguientes:\n- Signos de uremia.\n- Sobrecarga de volumen o anuria.\n- Anomalías hidroelectrolíticas como hiperkalemia (el paciente tiene K de 5.9 y va a recibir glóbulos rojos, lo que puede aumentar el potasio).\n- Aumento progresivo de los niveles de urea.\nAnte un paciente anúrico que requiere transfusión, la diálisis peritoneal es la medida posterior obligada para manejar el volumen y los electrolitos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_201",
+    "materia": [
+      "pediatria"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil"
+    ],
+    "enunciado": "Paciente de 5 años presenta disuria, dolor abdominal y 2 registros febriles. Al examen físico se encuentra afebril y en buen estado general. Se Decide realizar urocultivo iniciar tratamiento antibiótico. ¿Qué droga debe administrársele?",
+    "opciones": {
+      "a": "Claritromicina.",
+      "b": "Trimetoprim sulfametoxazol.",
+      "c": "Penicilina.",
+      "d": "Ciprofloxacina."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento oral de la infección urinaria baja o no complicada en niños que no impresionan sépticos incluye las cefalosporinas de 1era generación, amoxicilina-clavulánico o **trimetoprima-sulfametoxazol (TMS)**, cubriendo a E. coli como el germen más frecuente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_202",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Fracaso renal agudo"
+    ],
+    "enunciado": "Infante de 3 años de edad, es traído a la consulta con un cuadro de 48hs de evolución caracterizado por dolor abdominal, vómitos y diarrea sanguinolenta. Los progenitores están preocupados porque no hace pis. Al examen físico se encuentra levemente deshidratado y con palidez cutánea generalizada. Laboratorio: Hto 28% Hb 9 Plaquetas 50000/mm3. ¿Cuál es su sospecha diagnóstica?",
+    "opciones": {
+      "a": "Gastroenteritis aguda.",
+      "b": "Invaginación intestinal.",
+      "c": "Apendicitis aguda.",
+      "d": "Síndrome urémico hemolítico."
+    },
+    "correcta": "d",
+    "explicacion": "El niño presenta clínica compatible con **síndrome urémico hemolítico (SUH)** que se define por la aparición simultánea de anemia hemolítica microangiopática (palidez, Hb 9), trombocitopenia (plaquetas 50000) e insuficiencia renal aguda (anuria: \"no hace pis\").\nEl antecedente de diarrea sanguinolenta lo define como SUH típico (mediado por toxina Shiga de E. coli).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_203",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Infecciones del tracto urinario"
+    ],
+    "enunciado": "Martin es un niño de 12 meses que es traído al consultorio por sus progenitores luego de 2 días de fiebre de 38,5°C que no cede con antitérmicos, a lo que se le agregó vómitos y diarrea. Cuando se lo pesa se nota un estancamiento en el progreso de peso. ¿Cuál es su conducta?",
+    "opciones": {
+      "a": "Sospecha infección del tracto urinario. Solicita urocultivo de chorro medio y si encuentra más de 100.000 UFC/mm indica tratamiento y plantea estudio de malformaciones del tracto urinario para después de finalizado el mismo.",
+      "b": "Sospecha gastroenteritis bacteriana, solicita coprocultivo y examen directo de materia fecal y observación en la guardia.",
+      "c": "Sospecha infección del tracto urinario. Solicita urocultivo de orina obtenida por punción suprapúbica y si encuentra más de 5000 UFC/mm indica tratamiento y plantea estudio de malformaciones del tracto urinario al finalizar, y urocultivos de control por 6 meses.",
+      "d": "Sospecha sepsis. Lo interna en UTI para estudio y tratamiento."
+    },
+    "correcta": "a",
+    "explicacion": "En lactantes, los síntomas de ITU suelen ser inespecíficos: fiebre sin foco, vómitos, diarrea o **retraso en la ganancia ponderal** (estancamiento en el peso).\nLa recolección mediante **\"chorro medio al acecho\"** es la más usada en la práctica en nuestro medio. Se considera positiva con un recuento **> a 100.000 UFC**.\nEn todos los niños, tras su primera ITU, hay que solicitar posteriormente estudios por imágenes para descartar anomalías urológicas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_204",
+    "materia": [
+      "pediatria",
+      "urologia"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Síndromes clínicos"
+    ],
+    "enunciado": "Matías de 16 años consultó por edemas periorbitario y de miembros inferiores, de 10 días de evolución. Se realiza el laboratorio donde se destaca la presencia de: creatininemia: 1.0 mg/dl, albuminemia: 2.5 g/dl, colesterolemia: 300mg/dl; en el examen de orina: 3 cruces de proteínas, 1 glóbulo rojo/campo y una densidad de 1025 y el sedimento con cuerpos ovales; con una proteinuria en orina de 24hs de 6 gr. ¿Cuál es la etiología más probable que padece Matias?",
+    "opciones": {
+      "a": "Nefropatía por cambios mínimos.",
+      "b": "Glomerulonefritis pos estreptocócica.",
+      "c": "Amiloidosis renal.",
+      "d": "Glomerulopatía membranosa."
+    },
+    "correcta": "a",
+    "explicacion": "El paciente presenta un claro Síndrome Nefrótico: proteinuria masiva (6 g/24h), hipoalbuminemia (2.5 g/dl), edemas e hipercolesterolemia (300 mg/dl).\nEl síndrome nefrótico primario o idiopático es la causa principal en pediatría, siendo la **nefropatía por cambios mínimos** la etiología más frecuente (representando el 80% de los casos).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
+  },
+  {
+    "id": "pediatria_002_205",
+    "materia": [
+      "pediatria",
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Patología nefrourológica infantil",
+      "Urgencias urológicas y traumatismos"
+    ],
+    "enunciado": "¿Cuál es la principal causa que debe desestimarse en un niño pequeño que cursa síndrome de escroto agudo?",
+    "opciones": {
+      "a": "Orquiepididimitis.",
+      "b": "Hernia inguino escrotal complicada.",
+      "c": "Torsión testicular.",
+      "d": "Hidrocele."
+    },
+    "correcta": "c",
+    "explicacion": "Ante un niño con dolor escrotal agudo es necesario descartar en primer lugar una **torsión testicular**, ya que es una **urgencia quirúrgica**.\nLuego de 6 horas de evolución, la isquemia produce daño irreversible y pérdida de células germinales, por lo que su exclusión rápida es prioritaria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "prorem"
   }
 ]
