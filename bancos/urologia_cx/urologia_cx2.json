@@ -3479,4 +3479,484 @@
     "oficial": false,
     "fuente": "inventados"
   },
+  {
+    "id": "urologiacx_002_146",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál es la composición más frecuente de las litiasis urinarias (75-80% de los casos)?",
+    "opciones": {
+      "a": "Ácido úrico.",
+      "b": "Estruvita.",
+      "c": "Oxalato de calcio.",
+      "d": "Cistina."
+    },
+    "correcta": "c",
+    "explicacion": "El texto menciona que las litiasis de **oxalato cálcico** son las más frecuentes, suponiendo el 75-80% del total.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_147",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Qué factor metabólico aumenta el riesgo de formación de litiasis de oxalato cálcico en pacientes con enfermedad de Crohn o bypass yeyunoileal?",
+    "opciones": {
+      "a": "Hiperuricosuria.",
+      "b": "Malabsorción intestinal de grasas (hiperoxaluria entérica).",
+      "c": "Infección por Proteus.",
+      "d": "Orina persistentemente alcalina."
+    },
+    "correcta": "b",
+    "explicacion": "La malabsorción de grasas aumenta la absorción de oxalato, lo que incrementa el riesgo de litiasis de oxalato cálcico (**hiperoxaluria entérica**).",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_148",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Las litiasis de estruvita (infectivas) se asocian característicamente a:",
+    "opciones": {
+      "a": "Ph urinario ácido (< 5.5).",
+      "b": "Gérmenes desdobladores de la urea como Proteus mirabilis.",
+      "c": "Pacientes con gota primaria.",
+      "d": "Tratamiento con antirretrovirales como Indinavir."
+    },
+    "correcta": "b",
+    "explicacion": "Las litiasis de estruvita son infectivas y se asocian a **gérmenes desdobladores de la urea** como Proteus mirabilis.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_149",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál de los siguientes tipos de litiasis es característicamente \"radiotransparente\" (no se ve en la radiografía simple)?",
+    "opciones": {
+      "a": "Oxalato de calcio monohidrato.",
+      "b": "Fosfato de calcio.",
+      "c": "Ácido úrico e Indinavir.",
+      "d": "Estruvita."
+    },
+    "correcta": "c",
+    "explicacion": "El texto especifica que las litiasis radiotransparentes son las de **ácido úrico** e **Indinavir**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_150",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "El cólico renoureteral se caracteriza clínicamente por:",
+    "opciones": {
+      "a": "Dolor lumbar constante que empeora con la deambulación.",
+      "b": "Dolor lumbar intermitente, irradiado a genitales, asociado a náuseas y hematuria.",
+      "c": "Fiebre alta y dolor suprapúbico únicamente.",
+      "d": "Dolor abdominal difuso que cede con la ingesta de líquidos."
+    },
+    "correcta": "b",
+    "explicacion": "El cólico renoureteral produce **dolor lumbar intermitente**, **irradiado a genitales**, frecuentemente asociado a **náuseas o vómitos** y **hematuria**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_151",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál es el estudio de imagen considerado el \"Gold Standard\" para el diagnóstico de urolitiasis en urgencias?",
+    "opciones": {
+      "a": "Ecografía renal y vesical.",
+      "b": "Radiografía simple de abdomen.",
+      "c": "Tomografía Computarizada (TC) sin contraste (Uro-TC).",
+      "d": "Resonancia Magnética nuclear."
+    },
+    "correcta": "c",
+    "explicacion": "La **TC sin contraste** es la prueba diagnóstica de elección por su alta sensibilidad y especificidad.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_152",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "En el tratamiento del dolor agudo del cólico renal, ¿qué fármacos han demostrado ser los más efectivos según el texto?",
+    "opciones": {
+      "a": "Opioides (Morfina).",
+      "b": "Antiespasmódicos solos.",
+      "c": "Antiinflamatorios no esteroides (AINES) como el Diclofenac.",
+      "d": "Corticoides sistémicos."
+    },
+    "correcta": "c",
+    "explicacion": "Los **AINES** (específicamente el Diclofenac) son el tratamiento de elección para el control del dolor en el cólico renal.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_153",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Hasta qué tamaño de litiasis ureteral se puede considerar inicialmente el tratamiento conservador (expulsión espontánea)?",
+    "opciones": {
+      "a": "Menores de 7 mm.",
+      "b": "Entre 10 y 15 mm.",
+      "c": "Mayores de 20 mm.",
+      "d": "Cualquier tamaño siempre que no haya fiebre."
+    },
+    "correcta": "a",
+    "explicacion": "Las indicaciones de tratamiento conservador incluyen litiasis **menores de 7 mm** con buen control del dolor y sin complicaciones.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_154",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una contraindicación absoluta para el tratamiento con Litotricia Extracorpórea por Ondas de Choque (LEOC)?",
+    "opciones": {
+      "a": "Litiasis de ácido úrico.",
+      "b": "Embarazo.",
+      "c": "Paciente pediátrico.",
+      "d": "Litiasis de 10 mm en el cáliz superior."
+    },
+    "correcta": "b",
+    "explicacion": "El **embarazo** es una contraindicación absoluta para la LEOC, junto con alteraciones de la coagulación, sepsis o aneurismas cercanos.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_155",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Las litiasis coraliformes (aquellas que ocupan gran parte del sistema colector renal) suelen estar compuestas por:",
+    "opciones": {
+      "a": "Ácido úrico o estruvita.",
+      "b": "Oxalato de calcio puro.",
+      "c": "Indinavir exclusivamente.",
+      "d": "Cistina únicamente."
+    },
+    "correcta": "a",
+    "explicacion": "Pueden originar litiasis coraliformes las de **estruvita** y las de **ácido úrico**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_156",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Qué forma característica tienen los cristales de cistina al microscopio?",
+    "opciones": {
+      "a": "Forma de sobre.",
+      "b": "Forma de ataúd.",
+      "c": "Forma de hexágono.",
+      "d": "Forma de aguja."
+    },
+    "correcta": "c",
+    "explicacion": "Las litiasis de cistina presentan cristales con forma **hexagonal** característica.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_157",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "En el tratamiento médico expulsivo (TME) de litiasis ureterales distales, ¿qué tipo de fármacos se utilizan frecuentemente para facilitar el paso del cálculo?",
+    "opciones": {
+      "a": "Diuréticos de asa.",
+      "b": "Bloqueantes alfa-adrenérgicos (ej. Tamsulosina).",
+      "c": "Antibióticos profilácticos.",
+      "d": "Inhibidores de la 5-alfa reductasa."
+    },
+    "correcta": "b",
+    "explicacion": "Los **bloqueantes alfa-adrenérgicos** relajan el músculo liso del uréter distal facilitando la expulsión.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_158",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál es el pH urinario típico en un paciente con formación de litiasis de ácido úrico?",
+    "opciones": {
+      "a": "Ácido (pH < 5.5).",
+      "b": "Alcalino (pH > 7.5).",
+      "c": "Neutro (pH 7.0).",
+      "d": "Oscilante según la dieta."
+    },
+    "correcta": "a",
+    "explicacion": "Las litiasis de ácido úrico se forman en medios con pH urinario **ácido**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_159",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál es la limitación principal de la ecografía en el diagnóstico de litiasis ureterales?",
+    "opciones": {
+      "a": "No detecta el grado de hidronefrosis.",
+      "b": "Es incapaz de detectar litiasis de oxalato.",
+      "c": "Raramente detecta las litiasis localizadas en el uréter medio.",
+      "d": "No puede realizarse en mujeres embarazadas."
+    },
+    "correcta": "c",
+    "explicacion": "La ecografía detecta bien litiasis proximales y distales, pero muy raramente las del **uréter medio**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_160",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "El tratamiento médico preventivo de elección para la hipercalciuria idiopática es el uso de:",
+    "opciones": {
+      "a": "Bicarbonato sódico.",
+      "b": "Alopurinol.",
+      "c": "Tiazidas.",
+      "d": "Vitamina C."
+    },
+    "correcta": "c",
+    "explicacion": "Las **tiazidas** son el tratamiento de elección para la hipercalciuria idiopática al reducir la excreción urinaria de calcio.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_161",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Qué técnica quirúrgica se indica preferentemente para litiasis renales de gran tamaño (> 20 mm) o coraliformes complejas?",
+    "opciones": {
+      "a": "Litotricia extracorpórea (LEOC).",
+      "b": "Nefrolitotomía percutánea (NLP).",
+      "c": "Ureteroscopia semirrígida.",
+      "d": "Cirugía abierta (Lumbotomía)."
+    },
+    "correcta": "b",
+    "explicacion": "Para cálculos grandes (> 2 cm) o complejos se prefiere la **nefrolitotomía percutánea**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_162",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Las litiasis \"poco radioopacas\" (densidad intermedia) incluyen a:",
+    "opciones": {
+      "a": "Oxalato de calcio.",
+      "b": "Ácido úrico.",
+      "c": "Cistina y estruvita.",
+      "d": "Fosfato cálcico."
+    },
+    "correcta": "c",
+    "explicacion": "El texto clasifica a la **cistina y estruvita** como \"poco radioopacas\".",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_163",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un metabolito \"protector\" contra la formación de litiasis en la orina?",
+    "opciones": {
+      "a": "Oxalato.",
+      "b": "Citrato.",
+      "c": "Sodio.",
+      "d": "Urato."
+    },
+    "correcta": "b",
+    "explicacion": "El **citrato** es uno de los principales protectores contra la cristalización en la vía urinaria.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_164",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Respecto a la epidemiología de la urolitiasis, el pico de incidencia ocurre entre los:",
+    "opciones": {
+      "a": "5 y 15 años.",
+      "b": "30 y 50 años.",
+      "c": "70 y 85 años.",
+      "d": "Es igual en todas las edades."
+    },
+    "correcta": "b",
+    "explicacion": "El pico de incidencia se encuentra entre los **30 y 50 años**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
+  {
+    "id": "urologiacx_002_165",
+    "materia": [
+      "urologia_cx"
+    ],
+    "submateria": [
+      "Urolitiasis"
+    ],
+    "enunciado": "Ante un paciente con cólico renal, fiebre de 39°C y signos de sepsis, la conducta inmediata debe ser:",
+    "opciones": {
+      "a": "Litotricia extracorpórea de urgencia.",
+      "b": "Derivación urinaria urgente (catéter doble J o nefrostomía).",
+      "c": "Tratamiento conservador con AINES y esperar 48 horas.",
+      "d": "Ureteroscopia para extracción del cálculo en el momento."
+    },
+    "correcta": "b",
+    "explicacion": "La obstrucción de la vía urinaria asociada a infección o sepsis es una indicación absoluta de **derivación urinaria urgente**.",
+    "explicacion_img": [],
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventados"
+  },
   
