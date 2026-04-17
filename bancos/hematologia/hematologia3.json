@@ -1,1 +1,762 @@
-[]
+[
+  {
+    "id": "hemato_003_001",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es la causa más frecuente de síndrome anémico en la población general?",
+    "opciones": {
+      "a": "Anemia de trastornos crónicos.",
+      "b": "Anemia ferropénica.",
+      "c": "Anemia megaloblástica por déficit de B12.",
+      "d": "Anemia hemolítica autoinmune."
+    },
+    "correcta": "b",
+    "explicacion": "Las **anemias carenciales** son la causa más frecuente de síndrome anémico, y dentro de ellas, la producida por **deficiencia de hierro** es la principal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_002",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿En qué compartimento del organismo se localiza aproximadamente el 65% del hierro total?",
+    "opciones": {
+      "a": "Depósitos en forma de ferritina en macrófagos.",
+      "b": "Hierro circulante unido a transferrina.",
+      "c": "Hemoglobina de los hematíes circulantes.",
+      "d": "Mioglobina y enzimas tisulares."
+    },
+    "correcta": "c",
+    "explicacion": "La mayor parte del hierro en el ser humano (1,5-2 g) se encuentra en la **hemoglobina**, constituyendo el 65% del hierro total.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_003",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el lugar principal de absorción del hierro procedente de la dieta (duodeno y yeyuno)?",
+    "opciones": {
+      "a": "Estómago.",
+      "b": "Duodeno y yeyuno.",
+      "c": "Íleon terminal.",
+      "d": "Colon ascendente."
+    },
+    "correcta": "b",
+    "explicacion": "El hierro se absorbe fundamentalmente en el **duodeno** y en el tramo inicial del **yeyuno**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_004",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál de los siguientes mecanismos explica el papel de la hepcidina en la anemia de trastornos crónicos?",
+    "opciones": {
+      "a": "Estimula la absorción de hierro no hemínico.",
+      "b": "Inhibe la ferroportina, bloqueando la liberación de hierro desde los depósitos.",
+      "c": "Aumenta la síntesis de transferrina.",
+      "d": "Facilita la liberación de hierro vegetal hacia la circulación."
+    },
+    "correcta": "b",
+    "explicacion": "La **hepcidina** actúa inhibiendo la **ferroportina** (transportador de hierro), provocando un atrapamiento del hierro en sus depósitos y disminuyendo su paso a la circulación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_005",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Paciente mujer de 28 años que consulta por astenia intensa. En el laboratorio presenta Hemoglobina: 10 g/dL, VCM: 72 fL y ADE (Amplitud de Distribución Eritrocitaria): 18% (alto). ¿Qué diagnóstico debe sospechar en primer lugar?",
+    "opciones": {
+      "a": "Beta-talasemia minor.",
+      "b": "Anemia ferropénica.",
+      "c": "Anemia de trastornos crónicos.",
+      "d": "Anemia sideroblástica."
+    },
+    "correcta": "b",
+    "explicacion": "La anemia microcítica con ADE elevado (anisocitosis) es característica de la **Anemia ferropénica**, a diferencia de las talasemias donde el ADE suele ser normal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_006",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué parámetro analítico se considera el mejor reflejo de los depósitos de hierro en el organismo y es el primero en descender en la ferropenia?",
+    "opciones": {
+      "a": "Sideremia.",
+      "b": "Índice de saturación de transferrina (IST).",
+      "c": "Capacidad de fijación de la transferrina (CFT).",
+      "d": "Ferritina sérica."
+    },
+    "correcta": "d",
+    "explicacion": "La **ferritina sérica** es el parámetro que mejor se correlaciona con los depósitos y es la primera alteración detectable en las fases evolutivas del déficit de hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_007",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Varón de 65 años consulta por astenia y palidez. El laboratorio confirma una anemia microcítica e hipocrómica. ¿Cuál es la conducta inicial obligatoria en este paciente?",
+    "opciones": {
+      "a": "Indicar suplementos de hierro por 6 meses.",
+      "b": "Realizar estudios para descartar sangrado digestivo.",
+      "c": "Solicitar estudio de hemoglobinas por electroforesis.",
+      "d": "Prescribir dieta rica en carnes rojas y vitamina C."
+    },
+    "correcta": "b",
+    "explicacion": "En varones y mujeres menopáusicas, la causa principal de ferropenia es el **sangrado digestivo**, por lo que debe investigarse siempre.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_008",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Paciente con antecedentes de pica (pagofagia) y uñas frágiles en forma de cuchara (coiloniquia). ¿Qué hallazgo espera encontrar en el perfil de hierro?",
+    "opciones": {
+      "a": "Ferritina alta y CFT baja.",
+      "b": "Ferritina baja y CFT alta.",
+      "c": "Ferritina baja e IST aumentado.",
+      "d": "Ferritina alta e IST bajo."
+    },
+    "correcta": "b",
+    "explicacion": "La ferropenia cursa con **ferritina baja** y aumento de la capacidad de fijación de hierro (**CFT alta**) como mecanismo compensatorio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_009",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es la causa más probable de anemia macrocítica (VCM 115 fL) con neutrófilos hipersegmentados en sangre periférica?",
+    "opciones": {
+      "a": "Hipotiroidismo.",
+      "b": "Alcoholismo crónico.",
+      "c": "Anemia megaloblástica.",
+      "d": "Hepatopatía crónica."
+    },
+    "correcta": "c",
+    "explicacion": "Los neutrófilos hipersegmentados junto con la macrocitosis son signos patognomónicos de asincronía madurativa por déficit de B12 o ácido fólico, indicativo de una **Anemia megaloblástica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_010",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué síntoma o signo clínico permite orientar el diagnóstico hacia un déficit de vitamina B12 en lugar de ácido fólico?",
+    "opciones": {
+      "a": "Glositis de Hunter.",
+      "b": "Palidez cutánea.",
+      "c": "Alteraciones neurológicas (parestesias, ataxia).",
+      "d": "Astenia y palpitaciones."
+    },
+    "correcta": "c",
+    "explicacion": "A diferencia del ácido fólico, el déficit de **vitamina B12** produce **alteraciones neurológicas** por defecto en la mielinización.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_011",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Un paciente gastrectomizado hace 5 años acude a control. ¿Qué tipo de anemia es más probable que desarrolle si no recibe profilaxis?",
+    "opciones": {
+      "a": "Anemia hemolítica.",
+      "b": "Anemia de trastornos crónicos.",
+      "c": "Anemia megaloblástica por déficit de B12.",
+      "d": "Anemia sideroblástica."
+    },
+    "correcta": "c",
+    "explicacion": "La gastrectomía elimina las células parietales productoras de **Factor Intrínseco**, indispensable para la absorción de B12 en el íleon.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_012",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál de los siguientes fármacos puede causar una anemia megaloblástica por interferir con la folato reductasa?",
+    "opciones": {
+      "a": "Omeprazol.",
+      "b": "Metotrexato.",
+      "c": "Sulfato ferroso.",
+      "d": "Aspirina."
+    },
+    "correcta": "b",
+    "explicacion": "El **Metotrexato** actúa como un antagonista del ácido fólico al inhibir la enzima folato reductasa.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_013",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el tratamiento de elección para reponer los depósitos de hierro en una anemia ferropénica sin malabsorción?",
+    "opciones": {
+      "a": "Hierro parenteral (IV) en dosis única.",
+      "b": "Sales ferrosas por vía oral (ej: sulfato ferroso).",
+      "c": "Transfusión de glóbulos rojos.",
+      "d": "Vitamina B12 IM y ácido fólico oral."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento de elección es el hierro oral, preferentemente en forma de **sales ferrosas** por su mejor absorción.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_014",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el objetivo principal de mantener el tratamiento con hierro durante 3 a 6 meses después de normalizar la hemoglobina?",
+    "opciones": {
+      "a": "Prevenir la toxicidad por hierro.",
+      "b": "Llenar los depósitos de hierro (ferritina).",
+      "c": "Evitar la transformación a anemia megaloblástica.",
+      "d": "Estimular la síntesis de hepcidina."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento debe prolongarse para asegurar que los **depósitos de hierro** se recuperen totalmente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_015",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué hallazgo analítico es típico de la hematopoyesis ineficaz en la anemia megaloblástica?",
+    "opciones": {
+      "a": "Descenso de LDH y bilirrubina indirecta.",
+      "b": "Elevación marcada de LDH y bilirrubina indirecta.",
+      "c": "Recuento de reticulocitos muy elevado (>10%).",
+      "d": "Trombocitosis marcada."
+    },
+    "correcta": "b",
+    "explicacion": "La destrucción de precursores en la médula ósea libera **LDH** y aumenta la **bilirrubina indirecta** (hemólisis intramedular).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_016",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es la tríada característica del síndrome de Plummer-Vinson?",
+    "opciones": {
+      "a": "Anemia ferropénica, glositis y membranas esofágicas.",
+      "b": "Anemia macrocítica, ictericia y esplenomegalia.",
+      "c": "Anemia ferropénica, pica y piernas inquietas.",
+      "d": "Anemia perniciosa, gastritis y ataxia."
+    },
+    "correcta": "a",
+    "explicacion": "El **síndrome de Plummer-Vinson** asocia **Anemia ferropénica**, glositis y membranas hipofaríngeas o esofágicas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_017",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "En un paciente con anemia microcítica, sideremia baja y ferritina aumentada (350 ng/mL), ¿cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Anemia ferropénica.",
+      "b": "Anemia por enfermedad crónica (trastornos crónicos).",
+      "c": "Rasgo talasémico.",
+      "d": "Anemia sideroblástica hereditaria."
+    },
+    "correcta": "b",
+    "explicacion": "La **Anemia de trastornos crónicos** se caracteriza por hierro sérico bajo pero depósitos (ferritina) normales o aumentados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_018",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué conducta es la más recomendada para optimizar la absorción de hierro oral?",
+    "opciones": {
+      "a": "Tomarlo junto con leche o lácteos.",
+      "b": "Ingerirlo con antiácidos para evitar la gastritis.",
+      "c": "Tomarlo en ayunas acompañado de jugo de cítricos (vitamina C).",
+      "d": "Tomarlo siempre junto con las comidas principales."
+    },
+    "correcta": "c",
+    "explicacion": "El medio ácido (jugos cítricos con **Vitamina C**) favorece el paso de hierro férrico a ferroso, mejorando su absorción intestinal.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_019",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué cambio se observa en la cifra de plaquetas con frecuencia en la ferropenia?",
+    "opciones": {
+      "a": "Trombopenia grave.",
+      "b": "Incremento en la cifra de plaquetas (trombocitosis reactiva).",
+      "c": "Descenso leve por debajo de 150.000/mm3.",
+      "d": "No se altera nunca."
+    },
+    "correcta": "b",
+    "explicacion": "Es frecuente observar un incremento reactivo de las plaquetas (**trombocitosis reactiva**) en pacientes con ferropenia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_020",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Dónde se localiza el receptor del Factor Intrínseco necesario para la absorción de vitamina B12?",
+    "opciones": {
+      "a": "Duodeno.",
+      "b": "Yeyuno proximal.",
+      "c": "Íleon distal.",
+      "d": "Antro gástrico."
+    },
+    "correcta": "c",
+    "explicacion": "El complejo B12-Factor Intrínseco se absorbe específicamente en los receptores del **íleon terminal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_021",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿En qué paciente está indicada la profilaxis con ácido fólico según el texto?",
+    "opciones": {
+      "a": "Pacientes con hipertensión arterial.",
+      "b": "Embarazadas y pacientes en hemodiálisis.",
+      "c": "Varones con anemia ferropénica.",
+      "d": "Personas con dieta rica en carnes."
+    },
+    "correcta": "b",
+    "explicacion": "Se recomienda profilaxis en embarazos, hemodiálisis y anemias hemolíticas crónicas por el alto recambio celular.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_022",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el diagnóstico más probable de un lactante de 8 meses que presenta edemas, anemia ferropénica e hipoproteinemia tras la introducción de cereales (fideos y sémola)?",
+    "opciones": {
+      "a": "Enteropatía infecciosa.",
+      "b": "Enteropatía por sensibilidad al gluten (Enfermedad Celíaca).",
+      "c": "Síndrome nefrótico idiopático.",
+      "d": "Oxiuriasis masiva."
+    },
+    "correcta": "b",
+    "explicacion": "Es un caso clínico típico de malabsorción por celiaquía desencadenada por el gluten (**Enfermedad Celíaca**), que causa ferropenia y pérdida de proteínas.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_023",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué alteración se produce en los receptores de la transferrina en caso de déficit de hierro?",
+    "opciones": {
+      "a": "Disminuyen drásticamente.",
+      "b": "Permanecen sin cambios.",
+      "c": "Se encuentran aumentados.",
+      "d": "Se inactivan por la hepcidina."
+    },
+    "correcta": "c",
+    "explicacion": "Cuando hay déficit de hierro, la célula sintetiza más **receptores de transferrina** para intentar captar más hierro circulante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_024",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es la causa más frecuente de ferropenia en mujeres en edad reproductiva?",
+    "opciones": {
+      "a": "Malabsorción intestinal.",
+      "b": "Dieta vegetariana.",
+      "c": "Pérdidas ginecológicas.",
+      "d": "Parasitosis."
+    },
+    "correcta": "c",
+    "explicacion": "Las **pérdidas ginecológicas** por la menstruación son la causa principal en este grupo poblacional.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_025",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Un paciente presenta anemia, glositis, diarrea y elevación de homocisteína sin elevación de ácido metilmalónico (MMA). ¿Qué déficit sospecha?",
+    "opciones": {
+      "a": "Hierro.",
+      "b": "Vitamina B12.",
+      "c": "Ácido fólico.",
+      "d": "Vitamina C."
+    },
+    "correcta": "c",
+    "explicacion": "El aumento de homocisteína sin aumento de MMA es característico del **déficit de ácido fólico**; en el déficit de B12 ambos están elevados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_026",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál de los siguientes es un ejemplo de anemia sideroblástica adquirida mencionada en el texto?",
+    "opciones": {
+      "a": "Anemia perniciosa.",
+      "b": "Saturnismo (intoxicación por plomo).",
+      "c": "Síndrome de Plummer-Vinson.",
+      "d": "Esferocitosis hereditaria."
+    },
+    "correcta": "b",
+    "explicacion": "El **saturnismo** es una causa clásica de anemia sideroblástica adquirida por bloqueo de la síntesis del grupo hemo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_027",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "En la anemia por enfermedad crónica, ¿cómo se encuentra habitualmente el índice de saturación de la transferrina (IST)?",
+    "opciones": {
+      "a": "Aumentado (>50%).",
+      "b": "Normal.",
+      "c": "Disminuido.",
+      "d": "Muy elevado con saturación total."
+    },
+    "correcta": "c",
+    "explicacion": "Al igual que en la ferropenia, el hierro circulante (sideremia) es bajo, por lo que el IST suele estar descendido.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_028",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Qué hallazgo es característico en la médula ósea de un paciente con anemia de trastornos crónicos?",
+    "opciones": {
+      "a": "Ausencia total de hierro en macrófagos.",
+      "b": "Elevación de los depósitos de hierro en macrófagos.",
+      "c": "Presencia de sideroblastos en anillo.",
+      "d": "Megaloblastosis franca."
+    },
+    "correcta": "b",
+    "explicacion": "El bloqueo por hepcidina hace que el hierro esté \"atrapado\" en los depósitos de los macrófagos de la médula ósea.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_029",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el tratamiento indicado para la anemia de trastornos crónicos?",
+    "opciones": {
+      "a": "Suplementación intensiva con hierro oral.",
+      "b": "Hierro parenteral y vitamina B12.",
+      "c": "Tratamiento de la enfermedad de base.",
+      "d": "Ácido fólico y eritropoyetina en todos los casos."
+    },
+    "correcta": "c",
+    "explicacion": "El pilar del tratamiento es corregir la **enfermedad crónica subyacente**; la suplementación con hierro no suele estar indicada a menos que coexista ferropenia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_030",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cómo se definen las anemias carenciales en cuanto a su capacidad regenerativa?",
+    "opciones": {
+      "a": "Regenerativas con reticulocitos altos.",
+      "b": "Arregenerativas con reticulocitos bajos.",
+      "c": "Hemolíticas con reticulocitos normales.",
+      "d": "Regenerativas por exceso de eritropoyetina."
+    },
+    "correcta": "b",
+    "explicacion": "Todas las anemias carenciales cursan con reticulocitos bajos (<2%) debido al déficit de producción.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_031",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Mujer de 34 años con antecedentes de hipotiroidismo y anemia ferropénica de larga data. Refiere cumplimiento estricto del tratamiento con sulfato ferroso (200 mg/día) desde hace 4 meses, pero en el control actual presenta: Hb 10.2 g/dL, VCM 74 fL, Ferritina 8 ng/mL. No refiere pérdidas ginecológicas ni digestivas evidentes. ¿Cuál es el siguiente paso diagnóstico más adecuado?",
+    "opciones": {
+      "a": "Cambiar a hierro parenteral por sospecha de falta de adherencia.",
+      "b": "Solicitar anticuerpos antitransglutaminasa e IgA total.",
+      "c": "Realizar una videocolonoscopía de urgencia.",
+      "d": "Duplicar la dosis de hierro oral y añadir vitamina C."
+    },
+    "correcta": "b",
+    "explicacion": "Ante una anemia ferropénica que no responde al tratamiento oral (\"anemia refractaria\") en una mujer joven sin pérdidas evidentes, debe sospecharse síndrome de malabsorción, siendo la **Enfermedad Celíaca** una causa frecuente, a menudo asociada a otras patologías autoinmunes como el **hipotiroidismo**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_032",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Varón de 72 años con antecedentes de insuficiencia cardíaca y artrosis (consumidor crónico de AINEs). Presenta Hb 9.5 g/dL, VCM 82 fL, Sideremia 30 ug/dL (Baja), Ferritina 120 ng/mL y Saturación de Transferrina (IST) 15%. ¿Cuál es la interpretación más probable de este perfil de hierro?",
+    "opciones": {
+      "a": "Anemia ferropénica pura por sangrado digestivo.",
+      "b": "Anemia de trastornos crónicos pura.",
+      "c": "Anemia mixta (ferropenia coexistente con un proceso inflamatorio).",
+      "d": "Anemia sideroblástica secundaria a fármacos."
+    },
+    "correcta": "c",
+    "explicacion": "La ferritina es un reactante de fase aguda. En pacientes con inflamación, una ferritina en \"rango normal\" (pero no alta) junto con un IST bajo sugiere que el hierro está secuestrado, pero también que los depósitos reales pueden estar bajos debido al consumo de **AINEs** (sangrado crónico).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_033",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Paciente de 55 años, vegano desde hace 10 años, consulta por parestesias en miembros inferiores y dificultad para la marcha. El laboratorio muestra Hb 8.8 g/dL, VCM 118 fL y plaquetas 120.000/mm3. Se sospecha déficit de Vitamina B12. ¿Qué hallazgo en el frotis de sangre periférica confirmaría la sospecha de asincronía madurativa?",
+    "opciones": {
+      "a": "Presencia de dacriocitos y punteado basófilo.",
+      "b": "Pleocariocitos (neutrófilos hipersegmentados).",
+      "c": "Cuerpos de Heinz y esquistocitos.",
+      "d": "Dianocitos y microcitosis marcada."
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de neutrófilos con más de 5 lóbulos (hipersegmentación) es uno de los signos más precoces y característicos de la hematopoyesis ineficaz por déficit de **Vitamina B12** o **ácido fólico**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_034",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Una paciente embarazada de 28 semanas presenta Hb 10.5 g/dL y VCM 105 fL. Refiere que por error estuvo tomando solo suplementos de hierro sin ácido fólico. ¿Cuál es la causa más probable de la macrocitosis en este contexto fisiológico?",
+    "opciones": {
+      "a": "Incremento de la demanda de folatos por la unidad fetoplacentaria.",
+      "b": "Hemodilución fisiológica del embarazo.",
+      "c": "Déficit congénito de factor intrínseco.",
+      "d": "Mielodisplasia gestacional."
+    },
+    "correcta": "a",
+    "explicacion": "Durante el tercer trimestre del embarazo, las necesidades de **ácido fólico** aumentan significativamente para el crecimiento fetal, siendo la causa más común de **anemia megaloblástica** si no hay suplementación adecuada.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_035",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Varón de 68 años con diagnóstico reciente de anemia perniciosa y anticuerpos antifactor intrínseco positivos. Tras iniciar tratamiento con B12 intramuscular, ¿qué riesgo a largo plazo debe monitorizarse en este paciente mediante endoscopía periódica?",
+    "opciones": {
+      "a": "Linfoma de MALT gástrico.",
+      "b": "Adenocarcinoma gástrico y tumores carcinoides.",
+      "c": "Várices esofágicas por hipertensión portal.",
+      "d": "Pólipos colónicos juveniles."
+    },
+    "correcta": "b",
+    "explicacion": "La gastritis atrófica autoinmune asociada a la **Anemia perniciosa** es una lesión precancerosa que aumenta el riesgo de **adenocarcinoma gástrico** y de tumores carcinoides por hipergastrinemia secundaria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_036",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Paciente con anemia grave (Hb 6 g/dL) de origen carencial y síntomas de insuficiencia cardíaca descompensada. Se decide iniciar tratamiento. ¿Cuál es el riesgo de administrar ácido fólico en un paciente con déficit de vitamina B12 no diagnosticado previamente?",
+    "opciones": {
+      "a": "Riesgo de hemólisis aguda intravascular.",
+      "b": "Precipitación o agravamiento de la degeneración combinada subaguda de la médula espinal.",
+      "c": "Insuficiencia renal aguda por depósito de cristales.",
+      "d": "Bloqueo de la absorción de hierro a nivel del duodeno."
+    },
+    "correcta": "b",
+    "explicacion": "El **ácido fólico** puede corregir la anemia (hematopoyesis) pero no detiene el daño neurológico del déficit de **Vitamina B12**; por el contrario, lo agrava al consumir los restos de B12 disponibles en la síntesis de ADN, empeorando la clínica neurológica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_037",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "En un paciente con sospecha de anemia ferropénica, usted solicita un perfil de hierro completo. ¿Cuál de los siguientes resultados es más compatible con una ferropenia en estadio temprano (antes de que baje la hemoglobina)?",
+    "opciones": {
+      "a": "Hb normal, VCM normal, Ferritina baja, Sideremia normal.",
+      "b": "Hb baja, VCM bajo, Ferritina baja, IST bajo.",
+      "c": "Hb normal, VCM bajo, Ferritina normal, IST alto.",
+      "d": "Hb baja, VCM normal, Ferritina alta, IST bajo."
+    },
+    "correcta": "a",
+    "explicacion": "La primera fase del déficit de hierro es la pre-latente (depletion de depósitos), donde solo baja la **ferritina** mientras que la sideremia y los parámetros hematimétricos (Hb, VCM) permanecen normales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_038",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Mujer de 45 años con antecedentes de bypass gástrico hace 2 años por obesidad mórbida. Acude por astenia y glositis. El laboratorio informa: Hb 9 g/dL, VCM 110 fL, Ferritina 10 ng/mL y Vitamina B12 150 pg/mL. ¿Cuál es el tratamiento inicial más completo?",
+    "opciones": {
+      "a": "Solo Vitamina B12 oral a dosis altas.",
+      "b": "Hierro parenteral y Vitamina B12 parenteral.",
+      "c": "Hierro oral y ácido fólico únicamente.",
+      "d": "Transfusión de 2 unidades de glóbulos rojos."
+    },
+    "correcta": "b",
+    "explicacion": "El bypass gástrico altera la absorción de hierro (por exclusión del duodeno) y de B12 (por falta de ácido clorhídrico y factor intrínseco). En este caso de anemia mixta y malabsorción anatómica, la vía parenteral es la más efectiva para ambos nutrientes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_039",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "Se evalúa a un paciente con anemia macrocítica. Se detecta una cifra de reticulocitos del 0.5% e LDH muy elevada (2000 U/L). ¿Qué mecanismo fisiopatológico explica mejor la elevación de LDH en este caso?",
+    "opciones": {
+      "a": "Hemólisis autoinmune asociada.",
+      "b": "Hematopoyesis ineficaz (aborto intramedular de precursores).",
+      "c": "Necrosis hepatocitaria por hipoxia.",
+      "d": "Déficit de glucosa-6-fosfato deshidrogenasa."
+    },
+    "correcta": "b",
+    "explicacion": "En la **Anemia megaloblástica**, los precursores mueren en la médula ósea antes de salir a la circulación, liberando grandes cantidades de LDH y bilirrubina indirecta, lo que se conoce como **hematopoyesis ineficaz**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_040",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias carenciales"],
+    "enunciado": "¿Cuál es el parámetro más útil para diferenciar una anemia ferropénica de una Beta-talasemia minor en un paciente con microcitosis marcada?",
+    "opciones": {
+      "a": "El recuento total de hematíes (Eritrocitosis en talasemia vs. Hematíes bajos en ferropenia).",
+      "b": "La presencia de ferritina mayor a 100 ng/mL.",
+      "c": "El índice de saturación de transferrina (IST) mayor al 50%.",
+      "d": "La presencia de leucopenia asociada."
+    },
+    "correcta": "a",
+    "explicacion": "La **talasemia minor** suele cursar con un número elevado de hematíes (pseudopoliglobulia microcítica), mientras que en la **ferropenia** el número de hematíes suele estar disminuido o normal-bajo. También se utiliza el Índice de Mentzer (VCM/Hematíes <13 sugiere talasemia).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  
