@@ -949,4 +949,479 @@
     "oficial": false,
     "fuente": "inventadas"
   },
+  {
+    "id": "hemato_003_051",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Paciente de 19 años consulta por ictericia y coluria intermitente tras periodos de estrés. El laboratorio muestra: Hb 11.5 g/dL, Reticulocitos 8%, Bilirrubina indirecta 3.2 mg/dL y LDH 600 U/L. ¿Cuál es la tríada clínica clásica que presenta este paciente?",
+    "opciones": {
+      "a": "Anemia, fiebre y esplenomegalia.",
+      "b": "Anemia regenerativa, ictericia y esplenomegalia.",
+      "c": "Anemia arregenerativa, palidez y hepatomegalia.",
+      "d": "Microcitosis, ferropenia y glositis."
+    },
+    "correcta": "b",
+    "explicacion": "La tríada clásica del síndrome hemolítico está compuesta por **anemia regenerativa** (reticulocitos altos), **ictericia** por hiperbilirrubinemia indirecta y **esplenomegalia**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_052",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Un varón de 24 años presenta un cuadro de orinas oscuras (\"como Coca-Cola\") en la primera micción de la mañana, asociado a astenia y dolor abdominal. Se sospecha Hemoglobinuria Paroxística Nocturna (HPN). ¿Cuál es el estudio confirmatorio de elección?",
+    "opciones": {
+      "a": "Test de Coombs directo.",
+      "b": "Citometría de flujo para detectar ausencia de CD55 y CD59.",
+      "c": "Prueba de fragilidad osmótica.",
+      "d": "Electroforesis de hemoglobina."
+    },
+    "correcta": "b",
+    "explicacion": "La **Hemoglobinuria Paroxística Nocturna (HPN)** se confirma mediante citometría de flujo, demostrando la ausencia de proteínas ancladas al glucosilfosfatidilinositol (GPI) como **CD55** y **CD59** en la membrana de los hematíes.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_053",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Niño de 6 años con antecedentes familiares de litiasis biliar a edades tempranas. Presenta esplenomegalia y el frotis muestra abundantes hematíes pequeños, esféricos y sin halo de palidez central. El VCM es 78 fL y la CHCM (Conc. Hb Corpuscular Media) es de 37 g/dL (elevada). ¿Qué diagnóstico sospecha?",
+    "opciones": {
+      "a": "Déficit de glucosa-6-fosfato deshidrogenasa (G6PD).",
+      "b": "Esferocitosis hereditaria (Enfermedad de Minkowski-Chauffard).",
+      "c": "Anemia de células falciformes.",
+      "d": "Beta-talasemia mayor."
+    },
+    "correcta": "b",
+    "explicacion": "La **Esferocitosis hereditaria** es la membranopatía más frecuente, caracterizada por la presencia de esferocitos, CHCM elevada y antecedentes familiares de hemólisis y litiasis biliar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_054",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Un paciente con esferocitosis hereditaria presenta un descenso brusco de la hemoglobina (de 11 a 5 g/dL) y reticulocitopenia del 0.1% tras un cuadro febril. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "a": "Crisis megaloblástica por déficit de folatos.",
+      "b": "Crisis aplásica por infección por Parvovirus B19.",
+      "c": "Crisis hemolítica por estrés oxidativo.",
+      "d": "Secuestro esplénico agudo."
+    },
+    "correcta": "b",
+    "explicacion": "El **Parvovirus B19** infecta los precursores eritroides, causando una interrupción transitoria de la eritropoyesis que se manifiesta como **crisis aplásica** (anemia con reticulocitos bajos) en pacientes con hemólisis crónica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_055",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Varón de 30 años de origen mediterráneo que presenta un episodio de hemólisis aguda intravascular tras la ingesta de habas. En el frotis se observan \"cuerpos de Heinz\". ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Deficiencia de Piruvato Cinasa.",
+      "b": "Deficiencia de Glucosa-6-Fosfato Deshidrogenasa (G6PD).",
+      "c": "Rasgo talasémico.",
+      "d": "Hemoglobinuria paroxística a frigore."
+    },
+    "correcta": "b",
+    "explicacion": "El **déficit de G6PD** es una enzimopatía ligada al X donde el estrés oxidativo (habas, sulfas) causa la precipitación de la hemoglobina (**cuerpos de Heinz**) y hemólisis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_056",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Mujer de 45 años con Lupus Eritematoso Sistémico (LES) presenta anemia grave, ictericia y test de Coombs directo positivo para IgG. ¿Cuál es el mecanismo de la hemólisis en este caso?",
+    "opciones": {
+      "a": "Hemólisis intravascular mediada por complemento.",
+      "b": "Hemólisis extravascular en el bazo mediada por macrófagos.",
+      "c": "Destrucción mecánica por microangiopatía.",
+      "d": "Defecto en la cadena beta de la globina."
+    },
+    "correcta": "b",
+    "explicacion": "La **Anemia Hemolítica Autoinmune (AHAI)** por anticuerpos calientes (IgG) suele ser secundaria a enfermedades como LES y la destrucción ocurre principalmente en el bazo (extravascular).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_057",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Varón de 60 años consulta por cianosis en áreas acras (orejas, nariz, dedos) que empeora con el frío. El laboratorio muestra aglutininas frías positivas y Coombs directo positivo para complemento (C3d). ¿Qué patología infecciosa reciente suele asociarse a este cuadro?",
+    "opciones": {
+      "a": "Infección por Mycoplasma pneumoniae.",
+      "b": "Hepatitis B crónica.",
+      "c": "Infección por Parvovirus B19.",
+      "d": "Mononucleosis infecciosa."
+    },
+    "correcta": "a",
+    "explicacion": "La enfermedad por crioaglutininas (IgM) puede ser idiopática o secundaria a infecciones por **Mycoplasma pneumoniae** o virus de Epstein-Barr (Mononucleosis).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_058",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Paciente con microcitosis marcada (VCM 62 fL) pero con un recuento de hematíes muy elevado (6.5 millones/mm³). El perfil de hierro es normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Anemia ferropénica grave.",
+      "b": "Beta-talasemia minor (Rasgo talasémico).",
+      "c": "Anemia sideroblástica.",
+      "d": "Anemia por enfermedad crónica."
+    },
+    "correcta": "b",
+    "explicacion": "La **Beta-talasemia minor** se caracteriza por una \"pseudopoliglobulia microcítica\": muchos hematíes pero muy pequeños, a diferencia de la ferropenia donde el número de hematíes suele estar bajo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_059",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "En un paciente con sospecha de hemólisis intravascular (ej. por prótesis valvular mecánica), ¿cuál de los siguientes hallazgos analíticos sería MENOS probable encontrar?",
+    "opciones": {
+      "a": "Descenso marcado de haptoglobina.",
+      "b": "Hemoglobinuria.",
+      "c": "Esquistocitos en frotis.",
+      "d": "Esplenomegalia masiva."
+    },
+    "correcta": "d",
+    "explicacion": "La **esplenomegalia** es característica de la hemólisis extravascular (donde el bazo retira los hematíes). En la intravascular, la destrucción ocurre en el torrente circulatorio, liberando hemoglobina directamente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_060",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Paciente de raza negra presenta dolores óseos intensos y síndrome torácico agudo. En el frotis se observan hematíes en forma de hoz (drepanocitos). ¿Cuál es la sustitución aminoacídica responsable de esta enfermedad?",
+    "opciones": {
+      "a": "Valina por ácido glutámico en la cadena beta.",
+      "b": "Lisina por ácido glutámico en la cadena alfa.",
+      "c": "Ausencia total de cadenas alfa.",
+      "d": "Defecto en la síntesis de protoporfirina."
+    },
+    "correcta": "a",
+    "explicacion": "La **Anemia de células falciformes** se debe a una mutación puntual donde la valina sustituye al ácido glutámico en la posición 6 de la cadena beta de la globina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_061",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Mujer con anemia hemolítica microangiopática, trombocitopenia, fiebre, insuficiencia renal y alteraciones neurológicas fluctuantes (pentalogía clásica). ¿Cuál es el hallazgo fundamental en el frotis de sangre periférica?",
+    "opciones": {
+      "a": "Dacriocitos.",
+      "b": "Esquistocitos.",
+      "c": "Dianocitos.",
+      "d": "Acantocitos."
+    },
+    "correcta": "b",
+    "explicacion": "Los **esquistocitos** (hematíes fragmentados) son el sello distintivo de las anemias hemolíticas microangiopáticas como la PTT o el SHU.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_062",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Cuál es el tratamiento de elección inicial en una paciente con Anemia Hemolítica Autoinmune (AHAI) por anticuerpos calientes (IgG) idiopática?",
+    "opciones": {
+      "a": "Esplenectomía inmediata.",
+      "b": "Glucocorticoides (Prednisona).",
+      "c": "Plasmaféresis.",
+      "d": "Rituximab como primera línea obligatoria."
+    },
+    "correcta": "b",
+    "explicacion": "Los **Glucocorticoides** son el tratamiento de primera línea para la AHAI por anticuerpos calientes. La esplenectomía se reserva para casos refractarios.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_063",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Un niño de 4 años presenta retraso en el crecimiento, facies \"de ardilla\" (hipertrofia maxilar) y requiere transfusiones constantes desde los 6 meses de vida. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Beta-talasemia mayor (Anemia de Cooley).",
+      "b": "Esferocitosis hereditaria leve.",
+      "c": "Anemia ferropénica por dieta.",
+      "d": "Déficit de piruvato cinasa."
+    },
+    "correcta": "a",
+    "explicacion": "La **Beta-talasemia mayor** presenta anemia grave desde la lactancia y malformaciones óseas por la expansión de la médula ósea eritroide para compensar la hemólisis.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_064",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Qué prueba realizaría para evaluar la eficacia de la respuesta terapéutica (eritropoyesis) tras iniciar tratamiento en cualquier anemia hemolítica?",
+    "opciones": {
+      "a": "Dosaje de ferritina.",
+      "b": "Recuento de reticulocitos.",
+      "c": "Medición de haptoglobina.",
+      "d": "Aspirado de médula ósea."
+    },
+    "correcta": "b",
+    "explicacion": "Los **reticulocitos** indican la capacidad regenerativa de la médula. En la hemólisis, su elevación confirma que la médula está respondiendo a la destrucción periférica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_065",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Cuál es la complicación infecciosa más grave a largo plazo en pacientes con anemia falciforme debido a la autoesplenectomía?",
+    "opciones": {
+      "a": "Infecciones por virus de la hepatitis C.",
+      "b": "Sepsis por gérmenes encapsulados (S. pneumoniae, H. influenzae).",
+      "c": "Tuberculosis pulmonar.",
+      "d": "Candidiasis sistémica."
+    },
+    "correcta": "b",
+    "explicacion": "El infarto esplénico repetido lleva a la atrofia del bazo (autoesplenectomía), lo que predispone a infecciones graves por bacterias encapsuladas como **S. pneumoniae**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_066",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "En la Anemia Hemolítica Autoinmune por anticuerpos fríos (IgM), ¿cuál es el tratamiento que suele ser INEFICAZ y por tanto no se recomienda como primera opción?",
+    "opciones": {
+      "a": "Evitar el frío.",
+      "b": "Esplenectomía.",
+      "c": "Rituximab.",
+      "d": "Tratamiento de la enfermedad linfoproliferativa subyacente."
+    },
+    "correcta": "b",
+    "explicacion": "A diferencia de la AHAI por IgG, en la de tipo IgM la destrucción es intravascular o hepática, por lo que la **esplenectomía** no es efectiva.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_067",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Un paciente con válvula cardíaca metálica acude por anemia. Se observan esquistocitos en sangre periférica y sideruria (hierro en orina). ¿Cómo se clasifica esta hemólisis?",
+    "opciones": {
+      "a": "Intravascular mecánica.",
+      "b": "Extravascular autoinmune.",
+      "c": "Intracorpuscular hereditaria.",
+      "d": "Inmune por fármacos."
+    },
+    "correcta": "a",
+    "explicacion": "La fragmentación de hematíes por una válvula metálica es un ejemplo clásico de hemólisis **intravascular traumática o mecánica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_068",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Qué alteración se espera encontrar en el metabolismo del hierro en un paciente con talasemia mayor que recibe múltiples transfusiones?",
+    "opciones": {
+      "a": "Ferropenia funcional.",
+      "b": "Hemosiderosis secundaria (sobrecarga de hierro).",
+      "c": "Aumento de la capacidad de fijación de la transferrina.",
+      "d": "Ferritina indetectable."
+    },
+    "correcta": "b",
+    "explicacion": "Las transfusiones repetidas junto con el aumento de la absorción intestinal de hierro en las talasemias conducen inevitablemente a la **sobrecarga de hierro** en órganos (corazón, hígado).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_069",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Paciente con hemólisis crónica presenta dolor brusco en hipocondrio derecho e ictericia obstructiva. ¿Cuál es la causa más probable?",
+    "opciones": {
+      "a": "Crisis aplásica.",
+      "b": "Colelitiasis por cálculos de bilirrubinato cálcico (pigmentarios).",
+      "c": "Hepatitis medicamentosa.",
+      "d": "Pielonefritis aguda."
+    },
+    "correcta": "b",
+    "explicacion": "La eliminación constante de bilirrubina indirecta en pacientes hemolíticos favorece la formación de **cálculos biliares de pigmento**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_070",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Cuál es la conducta diagnóstica más adecuada ante un paciente con sospecha de déficit de G6PD durante una crisis hemolítica aguda?",
+    "opciones": {
+      "a": "Realizar el dosaje enzimático inmediatamente.",
+      "b": "Esperar a que pase la crisis para medir la enzima, ya que durante la crisis puede dar un falso normal.",
+      "c": "Realizar un test de Coombs directo.",
+      "d": "Solicitar electroforesis de hemoglobina."
+    },
+    "correcta": "b",
+    "explicacion": "Durante la crisis, los hematíes con déficit ya han muerto y los reticulocitos nuevos tienen niveles enzimáticos normales, lo que puede enmascarar el déficit.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_071",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "Paciente con antecedentes de anemia hemolítica y trombocitopenia autoinmune simultánea. ¿Cómo se denomina este cuadro?",
+    "opciones": {
+      "a": "Síndrome de Plummer-Vinson.",
+      "b": "Síndrome de Evans.",
+      "c": "Síndrome de Zieve.",
+      "d": "Síndrome de Wiskott-Aldrich."
+    },
+    "correcta": "b",
+    "explicacion": "El **Síndrome de Evans** es la asociación de anemia hemolítica autoinmune y púrpura trombocitopénica inmunológica (PTI).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_072",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Cuál es el parámetro bioquímico más sensible para detectar hemólisis intravascular mínima?",
+    "opciones": {
+      "a": "Bilirrubina total.",
+      "b": "Descenso de haptoglobina.",
+      "c": "Elevación de LDH.",
+      "d": "Recuento de plaquetas."
+    },
+    "correcta": "b",
+    "explicacion": "La **haptoglobina** se une a la hemoglobina libre; su descenso es el indicador más sensible de que hay hemoglobina liberada en el plasma.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_073",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Qué hallazgo es típico en el frotis de un paciente con Anemia de células falciformes que ya ha sufrido múltiples infartos esplénicos?",
+    "opciones": {
+      "a": "Cuerpos de Howell-Jolly.",
+      "b": "Esquistocitos abundantes.",
+      "c": "Neutrófilos hipersegmentados.",
+      "d": "Parásitos intracelulares."
+    },
+    "correcta": "a",
+    "explicacion": "Los **cuerpos de Howell-Jolly** (restos nucleares en los hematíes) aparecen cuando el bazo no funciona (asplenia funcional o anatómica).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_074",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "En un paciente con esferocitosis hereditaria grave que va a ser sometido a esplenectomía, ¿cuál es la medida preventiva más importante?",
+    "opciones": {
+      "a": "Vacunación previa contra neumococo, meningococo y Haemophilus.",
+      "b": "Tratamiento con hierro parenteral antes de la cirugía.",
+      "c": "Administración de vitamina B12 de por vida.",
+      "d": "Realizar flebotomías profilácticas."
+    },
+    "correcta": "a",
+    "explicacion": "Para prevenir la sepsis post-esplenectomía, es imperativo vacunar contra gérmenes encapsulados al menos 2 semanas antes de la cirugía.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_075",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemoliticas"],
+    "enunciado": "¿Cuál es el único tratamiento curativo definitivo para la talasemia mayor y la anemia falciforme grave?",
+    "opciones": {
+      "a": "Transfusiones crónicas y quelantes de hierro.",
+      "b": "Esplenectomía y colecistectomía.",
+      "c": "Trasplante de progenitores hematopoyéticos (médula ósea).",
+      "d": "Suplementación con ácido fólico a altas dosis."
+    },
+    "correcta": "c",
+    "explicacion": "El **trasplante alogénico de médula ósea** es la única opción curativa para estas hemoglobinopatías graves.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
   
