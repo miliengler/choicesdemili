@@ -759,4 +759,194 @@
     "oficial": false,
     "fuente": "inventadas"
   },
+  {
+    "id": "hemato_003_041",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Mujer de 62 años con Artritis Reumatoidea de larga evolución y mal control clínico. Presenta Hb 9.2 g/dL, VCM 81 fL, Sideremia 35 ug/dL (Baja) y Ferritina 450 ng/mL. ¿Cuál es el mecanismo fisiopatológico principal de su anemia?",
+    "opciones": {
+      "a": "Pérdida crónica de sangre por consumo de AINEs.",
+      "b": "Acortamiento de la vida media del hematíe por anticuerpos IgG.",
+      "c": "Bloqueo del hierro en los macrófagos mediado por hepcidina.",
+      "d": "Defecto genético en la síntesis de la protoporfirina IX."
+    },
+    "correcta": "c",
+    "explicacion": "La **Anemia de trastornos crónicos** se debe al \"mal uso\" del hierro. Las citocinas inflamatorias (IL-6) estimulan la síntesis de hepcidina, la cual degrada la ferroportina, atrapando el hierro dentro de los macrófagos y bloqueando su entrega a los precursores eritroides.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_042",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "En el diagnóstico diferencial entre anemia ferropénica y anemia de trastornos crónicos, ¿qué hallazgo analítico es el más rentable para confirmar esta última?",
+    "opciones": {
+      "a": "Descenso de la sideremia.",
+      "b": "Aumento de la capacidad de fijación de la transferrina (TIBC).",
+      "c": "Ferritina normal o aumentada.",
+      "d": "Presencia de dacriocitos en el frotis."
+    },
+    "correcta": "c",
+    "explicacion": "La **ferritina** es la prueba de mayor rentabilidad diagnóstica diferencial: se encuentra disminuida en la ferropenia y normal o aumentada en la **Anemia de trastornos crónicos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_043",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Varón de 58 años con diagnóstico de cáncer de próstata metastásico en huesos. El frotis de sangre periférica informa presencia de dacriocitos (hematíes en lágrima) y reacción leucoeritroblástica (presencia de precursores de ambas series). ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Anemia de trastornos crónicos microcítica.",
+      "b": "Anemia mieloptísica.",
+      "c": "Anemia sideroblástica adquirida.",
+      "d": "Anemia perniciosa."
+    },
+    "correcta": "b",
+    "explicacion": "La **Anemia mieloptísica** se produce por la ocupación de la médula ósea (por tumores, fibrosis o enfermedades de depósito), lo que genera la salida de células inmaduras a sangre periférica y la deformación de los hematíes (dacriocitos).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_044",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Un trabajador de una fábrica de baterías presenta dolor abdominal cólico, anemia con punteado basófilo grosero en los hematíes y una línea oscura en las encías (ribete de Burton). ¿Cuál es el defecto bioquímico subyacente?",
+    "opciones": {
+      "a": "Déficit de Vitamina B12.",
+      "b": "Inhibición de enzimas en la síntesis del grupo hemo por plomo.",
+      "c": "Mutación en el gen de la hemojuvelina.",
+      "d": "Resistencia a la acción de la eritropoyetina."
+    },
+    "correcta": "b",
+    "explicacion": "El **saturnismo** (intoxicación por plomo) es una causa de **Anemia sideroblástica adquirida**, ya que el plomo interfiere en la síntesis del grupo hemo (bloqueo de la ALA-deshidratasa y la ferroquelatasa).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_045",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "En un paciente con anemia de trastornos crónicos y enfermedad renal crónica, ¿cuál es el tratamiento más adecuado tras descartar ferropenia asociada?",
+    "opciones": {
+      "a": "Sulfato ferroso 200 mg/día por tiempo indefinido.",
+      "b": "Tratamiento de la patología de base y considerar eritropoyetina (EPO).",
+      "c": "Transfusión de glóbulos rojos si la Hb es menor a 12 g/dL.",
+      "d": "Quelantes de hierro para movilizar los depósitos."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento fundamental es el de la enfermedad de base. En casos específicos como la enfermedad renal crónica o procesos neoplásicos, se puede añadir **Eritropoyetina**. El hierro no está indicado si no hay déficit real del mismo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_046",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "¿Cuál es el diagnóstico de certeza (Gold Standard) para la anemia de trastornos crónicos, aunque raramente se realiza en la práctica clínica?",
+    "opciones": {
+      "a": "Dosaje de hepcidina sérica.",
+      "b": "Determinación del receptor soluble de transferrina.",
+      "c": "Observar aumento de depósitos de hierro en macrófagos en la médula ósea.",
+      "d": "Respuesta terapéutica a la administración de hierro endovenoso."
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico de certeza es la comprobación mediante biopsia o aspirado de médula ósea de que los depósitos de hierro están elevados en el sistema mononuclear fagocítico, a pesar de la hiposideremia circulante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_047",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Paciente de 30 años con esplenomegalia masiva. El frotis muestra dacriocitos pero NO se observa reacción leucoeritroblástica. La biopsia ósea muestra células con aspecto de \"papel celofán arrugado\". ¿Qué entidad sospecharía como causa de esta mieloptisis?",
+    "opciones": {
+      "a": "Metástasis de carcinoma de mama.",
+      "b": "Mielofibrosis primaria.",
+      "c": "Enfermedad de Gaucher.",
+      "d": "Tuberculosis ganglionar."
+    },
+    "correcta": "c",
+    "explicacion": "La **Enfermedad de Gaucher** es una enfermedad de depósito que puede infiltrar la médula ósea causando **Anemia mieloptísica**. En estos casos de depósito, a diferencia de las neoplasias, a veces no se observa la reacción leucoeritroblástica típica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_048",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Las anemias sideroblásticas se caracterizan por una utilización defectuosa del hierro. ¿Dónde se localiza histológicamente el hierro en los \"sideroblastos en anillo\"?",
+    "opciones": {
+      "a": "En el interior de los lisosomas.",
+      "b": "En el núcleo del proeritroblasto.",
+      "c": "En las mitocondrias perinucleares.",
+      "d": "Unidos a la membrana citoplasmática."
+    },
+    "correcta": "c",
+    "explicacion": "Al no poder integrarse en el grupo hemo, el hierro se acumula en las mitocondrias, que se disponen alrededor del núcleo del precursor eritroide, formando el anillo característico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_049",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "Un paciente presenta anemia normocítica con Sideremia baja, Ferritina 150 ng/mL y Transferrina baja. ¿Cómo esperaría encontrar el Receptor Soluble de la Transferrina (RsT)?",
+    "opciones": {
+      "a": "Elevado, igual que en la ferropenia.",
+      "b": "Normal, lo que ayuda a diferenciarla de la ferropenia.",
+      "c": "Muy disminuido por toxicidad medular.",
+      "d": "Ausente."
+    },
+    "correcta": "b",
+    "explicacion": "El RsT no se eleva en la **Anemia de trastornos crónicos** (ya que no hay déficit real de hierro intracelular), a diferencia de la ferropenia donde aumenta significativamente para intentar captar más hierro.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "hemato_003_050",
+    "materia": ["hematologia"],
+    "submateria": ["Otras anemias"],
+    "enunciado": "¿Cuál de las siguientes es una característica diferencial de la anemia sideroblástica en comparación con la anemia ferropénica y la de trastornos crónicos?",
+    "opciones": {
+      "a": "Presenta sideremia y ferritina elevadas (sobrecarga de hierro).",
+      "b": "Es la única que presenta microcitosis.",
+      "c": "No presenta reticulocitopenia.",
+      "d": "El tratamiento siempre es la flebotomía."
+    },
+    "correcta": "a",
+    "explicacion": "En la **Anemia sideroblástica** el hierro no se puede usar para la síntesis del hemo, por lo que acaba acumulándose, elevando la sideremia y la ferritina, a diferencia de las otras dos donde la sideremia siempre es baja.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
   
