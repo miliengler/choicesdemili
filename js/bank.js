@@ -57,7 +57,12 @@ async function loadAllBanks() {
       urls.push({ url: `bancos/${subj.slug}/${subj.slug}${i}.json`, type: "materia", meta: subj });
     }
   });
-
+// B) Exámenes
+  if (typeof EXAMENES_META !== 'undefined') {
+    EXAMENES_META.forEach(ex => {
+      urls.push({ url: ex.file, type: "examen", meta: ex });
+    });
+  }
   // C) Fetch
   const promises = urls.map(item => 
     fetch(item.url)
