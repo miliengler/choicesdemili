@@ -50,8 +50,8 @@ async function loadAllBanks() {
 
   const urls = [];
 
-  // A) Materias - Busca hasta 3 archivos por carpeta (ej: otras1.json, otras2.json)
-  const FILES_PER_SUBJECT = 3; 
+  // A) Materias - Busca hasta 4 archivos por carpeta (ej: otras1.json, otras2.json)
+  const FILES_PER_SUBJECT = 4; 
   BANK.subjects.forEach(subj => {
     for (let i = 1; i <= FILES_PER_SUBJECT; i++) { 
       urls.push({ url: `bancos/${subj.slug}/${subj.slug}${i}.json`, type: "materia", meta: subj });
