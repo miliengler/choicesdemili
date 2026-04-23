@@ -1,1 +1,1923 @@
-[]
+[ {
+    "id": "uba_2017_001",
+    "materia": ["neumonologia"],
+    "submateria": ["Semiología"],
+    "enunciado": "¿Cuál de las siguientes es una causa de cianosis central?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Menor gasto cardiaco sin fallo retrógrado.",
+      "b": "Hipoventilación alveolar con bradipnea.",
+      "c": "Exposición al frío con vasoconstricción en dermis.",
+      "d": "Fenómeno de Raynaud secundario"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 236",
+    "explicacion_img": ["img/explicaciones/uba2017_001.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_002",
+    "materia": ["infectologia", "cardiologia"],
+    "submateria": ["Endocarditis", "Valvulopatías"],
+    "enunciado": "¿Cuál de los siguientes es un criterio mayor en la endocarditis infecciosa?",
+    "opciones": {
+      "a": "Fiebre mayor a 38°",
+      "b": "Nueva insuficiencia valvular",
+      "c": "Embolia arterial recidivante",
+      "d": "Cardiopatía predisponente"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 819",
+    "explicacion_img": ["img/explicaciones/uba2017_002.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_003",
+    "materia": ["obstetricia", "infectologia"],
+    "submateria": ["Infecciones congénitas y perinatales", "Bacterias"],
+    "enunciado": "¿Cuál de los siguientes patógenos puede atravesar la placenta y causar infección en el feto?",
+    "opciones": {
+      "a": "Listeria monocytogenes.",
+      "b": "Streptococcus pneumoniae.",
+      "c": "Bacillus cereus.",
+      "d": "Bordetella parapertussis."
+    },
+    "correcta": "a",
+    "explicacion": "La **listeriosis** es una antropozoonosis causada por una bacteria gram positiva: **Listeria monocytogenes**, que algunos autores agrupan junto a las infecciones TORCH por la similitud con las lesiones fetales originadas por toxoplasmosis, rubeola, citomegalovirus y herpes.\nEl reservorio natural son los roedores y animales domésticos. El hombre se infecta en forma directa o por ingestión de alimentos contaminados. El feto puede contagiarse por vía transplacentaria o a través del canal del parto.\nSchwarcz, Obstetricia, página 386.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_004",
+    "materia": ["infectologia", "otras"],
+    "submateria": ["Bacterias", "Fármacos"],
+    "enunciado": "¿Cuál es el tratamiento para una gangrena gaseosa?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Nafcilina u oxacilina 2gr ev cada 4 a 6 hs",
+      "b": "Clindamicina 660 a 900mg ev cada 6 a 8/hs más penicilina G 4 millones de U ev cada 4-6hs",
+      "c": "Aciclovir 800 mg PO 5 veces al día durante siete a diez días más eritromicina 500 mg PO cada 6 hs.",
+      "d": "Vancomicina 1 gr ev cada 12hs"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 1110",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_005",
+    "materia": ["otorrinolaringologia", "neurologia"],
+    "submateria": ["Oído", "Otras preguntas de neurología"],
+    "enunciado": "¿Cuál de las siguientes es una característica del vértigo laberíntico?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Nistagmo horizontal",
+      "b": "Acúfenos o hipoacusia",
+      "c": "Romberg negativo",
+      "d": "Nistagmo vertical"
+    },
+    "correcta": "b",
+    "explicacion": "El vértigo de origen laberíntico suele acompañarse de sintomatología auditiva como **acúfenos o hipoacusia**.",
+    "explicacion_img": ["img/explicaciones/uba2017_005.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_006",
+    "materia": ["neumonologia"],
+    "submateria": ["Enfermedades intersticiales"],
+    "enunciado": "¿Cuál de las siguientes patologías se asocia con enfermedad intersticial difusa en la radiografía de tórax?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Absceso bacteriano",
+      "b": "Infarto pulmonar",
+      "c": "Fibrosis pulmonar idiopática",
+      "d": "Malformación vascular"
+    },
+    "correcta": "c",
+    "explicacion": "Harrison, Medicina Interna, página 2000",
+    "explicacion_img": ["img/explicaciones/uba2017_006.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_007",
+    "materia": ["oncologia", "urologia"],
+    "submateria": ["Conceptos de Oncología", "Fracaso renal agudo"],
+    "enunciado": "En un paciente con riesgo alto de síndrome de lisis tumoral, ¿Cuándo tiene indicación de comenzar la hemodiálisis?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Potasio sérico mayor a 4,8 meq/l",
+      "b": "Ácido úrico sérico mayor a 10 mg/100 ml",
+      "c": "Creatinina sérica de 5 mg/dl",
+      "d": "Fosfato sérico mayor a 6 mg/100 m"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 520",
+    "explicacion_img": ["img/explicaciones/uba2017_007.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_008",
+    "materia": ["pediatria", "urologia"],
+    "submateria": ["Patología nefrourológica infantil", "Fracaso renal agudo"],
+    "enunciado": "Un paciente de 16 años de edad con antecedente reciente de infección gastrointestinal por E.coli, consulta por fiebre, cefalea intensa, y en el laboratorio se constatan: anemia, trombocitopenia y aumento de LDH. En el frotis de sangre periférica hay esquistocitos. Los estudios de orina revelan hematuria y leve proteinuria. ¿Cuál es el diagnóstico presuntivo más probable?",
+    "opciones": {
+      "a": "Necrosis tubular aguda isquémica secundaria a las enterotoxinas.",
+      "b": "Síndrome urémico hemolítico/trombótico trombocitopénico",
+      "c": "Pielonefritis bilateral aguda con bicitopenia autoinmune.",
+      "d": "Nefritis intersticial alérgica y enfermedad tubular con bicitopenia"
+    },
+    "correcta": "b",
+    "explicacion": "El **síndrome hemolítico-urémico (SHU)** es una de las causas más frecuentes de insuficiencia renal aguda extrahospitalaria en los niños pequeños. Es la forma más frecuente de microangiopatía trombótica (MAT) en niños. Como el resto de MAT, el SHU se caracteriza por la tríada de anemia hemolítica microangiopática, trombocitopenia e insuficiencia renal. El SHU tiene síntomas en común con la púrpura trombocitopénica trombótica (PTT). La etiología y la fisiopatología de las formas de SHU más frecuentes definen con claridad el SHU típico de la infancia como una entidad independiente de la PTT idiopática.\nLa forma más frecuente de SHU se debe a **Escherichia coli productor de toxina Shiga (STEC)**, causante de una enteritis aguda prodrómica habitualmente denominada SHU-STEC o SHU asociado a diarrea.\nEl diagnóstico se basa en la presencia de anemia hemolítica microangiopática con esquistocitos, trombocitopenia y algún grado de afectación renal.\nEl análisis de orina muestra típicamente hematuria microscópica y escasa proteinuria.\nNelson, Pediatría, página 2732",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_009",
+    "materia": ["urologia", "infectologia"],
+    "submateria": ["Nefropatías intersticiales", "Virus no HIV"],
+    "enunciado": "¿Cuál de las siguientes es causa de enfermedad tubulointersticial aguda?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Nefropatía por células de mieloma.",
+      "b": "Nefritis por radiación",
+      "c": "Nefritis por citomegalovirus",
+      "d": "Reflujo vesicoureteral"
+    },
+    "correcta": "c",
+    "explicacion": "La **Nefritis por citomegalovirus** es una de las causas infecciosas de enfermedad tubulointersticial aguda.",
+    "explicacion_img": ["img/explicaciones/uba2017_009.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_010",
+    "materia": ["reumatologia"],
+    "submateria": ["Vasculitis"],
+    "enunciado": "¿Cuál de los siguientes síndromes vasculíticos es producido por depósito de complejos inmunitarios patógenos?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Poliangeítis microscópica",
+      "b": "Arteritis de células gigantes",
+      "c": "Crioglobulinemia mixta, secundaria a hepatitis",
+      "d": "Síndrome de Churg Strauss"
+    },
+    "correcta": "c",
+    "explicacion": "Las crioglobulinas son inmunoglobulinas monoclonales o policlonales precipitables con el frío. La **crioglobulinemia** puede acompañar a la vasculitis sistémica caracterizada por púrpura palpable, artralgias, debilidad, neuropatía y glomerulonefritis. El cuadro anterior se observa junto con diversos trastornos primarios que incluyen mieloma múltiple, trastornos linfoproliferativos, colagenopatías, infecciones y hepatopatías, pero en muchos casos al parecer es idiopático. Ante la ausencia de una enfermedad primaria y la presencia de un crioprecipitado que contiene inmunoglobulinas oligoclonales/policlonales, se ha conocido a esta enfermedad como crioglobulinemia mixta esencial. Desde la identificación de la **hepatitis C** se pudo constatar que la mayor parte de los pacientes que según consideraciones tenían crioglobulinemia mixta esencial, en realidad tenía vasculitis crioglobulinémica vinculada con infección por hepatitis C.\nHarrison, Medicina Interna, página 2586",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_011",
+    "materia": ["urologia", "nutricion"],
+    "submateria": ["Fisiología renal", "Otras preguntas de nutrición"],
+    "enunciado": "¿Cuál de las siguientes es una característica de la hiponatremia hipervolémica?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Deficiencia de ACTH",
+      "b": "Edema generalizado y ascitis",
+      "c": "Sodio urinario alto",
+      "d": "Ácido úrico bajo"
+    },
+    "correcta": "b",
+    "explicacion": "La disminución de la osmolaridad y sodio séricos por debajo de límites normales (hiponatremia hipotónica) proviene de tres tipos de desequilibrio de sodio y agua: 1) aumento del agua corporal total que rebasa el aumento del sodio corporal total (**hiponatremia hipervolémica**); 2) disminución del sodio corporal en grado mayor que la disminución del agua corporal (hiponatremia hipovolémica), o 3) aumento del agua corporal con cambios mínimos o nulos en el sodio orgánico (hiponatremia euvolémica)\nHarrison, Medicina Interna, página 2689",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_012",
+    "materia": ["endocrinologia"],
+    "submateria": ["Tiroides"],
+    "enunciado": "¿Cuál de las siguientes es causa de hipertiroidismo secundario?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Enfermedad de Graves",
+      "b": "Adenoma tóxico",
+      "c": "Adenoma hipofisario secretor de TSH",
+      "d": "Ingesta excesiva de hormona tiroidea"
+    },
+    "correcta": "c",
+    "explicacion": "**Adenomas secretores de TSH**: Es poco común detectar macroadenomas productores de TSH, pero suelen ser grandes y con invasión local cuando se les identifica. El cuadro inicial consiste en bocio e hipertiroidismo, lo cual refleja la producción excesiva de TSH. El diagnóstico se basa en las concentraciones séricas más altas de T4 libre, secreción inapropiadamente normal o alta de TSH y evidencia de adenoma hipofisario en MRI.\nHarrison, Medicina Interna, 20° Ed., página 2683 Imagen de Harrison, Medicina Interna, 20° Ed., página 2703",
+    "explicacion_img": ["img/explicaciones/uba2017_012.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_013",
+    "materia": ["otras", "oncologia"],
+    "submateria": ["Fármacos", "Conceptos de Oncología"],
+    "enunciado": "¿Cuál de los siguientes medicamentos es el de mayor efectividad en vómitos y náuseas inducidas por quimioterapia, siendo su mecanismo de acción el antagonismo de los receptores 5-HT3?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Dimenhidrinato.",
+      "b": "Escopolamina.",
+      "c": "Ondansetrón",
+      "d": "Domperidona."
+    },
+    "correcta": "c",
+    "explicacion": "Goodman y Gilman, Farmacología, página 864",
+    "explicacion_img": ["img/explicaciones/uba2017_013.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_014",
+    "materia": ["neumonologia"],
+    "submateria": ["Enfermedades intersticiales"],
+    "enunciado": "¿En cuál de las siguientes patologías pulmonares se observan granulomas de células epitelioides semejantes a sarcoides no caseificantes?",
+    "opciones": {
+      "a": "La silicosis",
+      "b": "La asbestosis",
+      "c": "La neumoconiosis de los trabajadores de las minas de carbón",
+      "d": "La beriliosis crónica"
+    },
+    "correcta": "d",
+    "explicacion": "En un individuo sensibilizado al berilio, la observación de granulomas no caseificantes o infiltración monocítica en el tejido pulmonar permite documentar el diagnóstico. La acumulación de linfocitos T CD4+ específicos para berilio se presenta en la inflamación granulomatosa que se observa en la biopsia pulmonar.\nHarrison, Medicina Interna, página 1980",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_015",
+    "materia": ["reumatologia"],
+    "submateria": ["Cristales"],
+    "enunciado": "Dentro de las manifestaciones musculoesqueléticas de la artritis inducida por depósito de cristales, ¿Cuál de las siguientes afecciones considera la correcta?.",
+    "opciones": {
+      "a": "Síndrome del túnel carpiano",
+      "b": "Epicondilitis",
+      "c": "Epitrocleitis",
+      "d": "Fascitis"
+    },
+    "correcta": "a",
+    "explicacion": "Harrison, Medicina Interna, página 2619",
+    "explicacion_img": ["img/explicaciones/uba2017_015.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_016",
+    "materia": ["endocrinologia", "imagenes"],
+    "submateria": ["Hipotálamo / Hipófisis", "Resonancia magnética"],
+    "enunciado": "En una paciente con probable prolactinoma y elevación de la prolactina, ¿Cuál de los siguientes estudios solicita?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Mamografía",
+      "b": "Resonancia magnética nuclear de silla turca",
+      "c": "Tomografía computada con contraste de ambas carótidas",
+      "d": "Angio TC de circulación vertebral"
+    },
+    "correcta": "b",
+    "explicacion": "En el supuesto de que se descarten las causas fisiológicas de hiperprolactinemia, o que sea inducida por fármacos, es factible el diagnóstico de prolactinoma con una concentración de PRL > 200 µg/L. Los niveles de PRL < 100 µg/L pueden originarse por microadenomas, otras lesiones de la silla turca que disminuyen la inhibición de dopamina o causas no neoplásicas de hiperprolactinemia. Por tal razón, hay que practicar **MRI** en todas las personas con hiperprolactinemia.\nHarrison, Medicina Interna, página 2676.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_017",
+    "materia": ["endocrinologia", "infectologia"],
+    "submateria": ["Hipotálamo / Hipófisis", "SNC y meningitis"],
+    "enunciado": "Paciente de 25 años de edad, que 15 días antes presentó una infección respiratoria alta, continuando en la actualidad con tos seca. Es llevada a la guardia con cuadro de desorientación y fiebre. Se interna para optimizar diagnóstico y terapéutica. Se constata que en 24 hs tiene una diuresis de 7 l/d. acompañada de polidipsia. Osmolaridad urinaria de 200 mosmol/l. Restringiendo la vía oral, la paciente continúa poliúrica.n¿Cuál de los siguientes diagnósticos es el más probable?:",
+    "opciones": {
+      "a": "Polidipsia primaria",
+      "b": "Diabetes insípida central",
+      "c": "Diabetes insipida central secundaria a encefalitis viral",
+      "d": "Diabetes insípida nefrogénica secundaria a necrosis tubular."
+    },
+    "correcta": "c",
+    "explicacion": "**Encefalitis viral**: Además de la enfermedad febril aguda con signos de afección meningea, caracteristica de la meningitis, el paciente con encefalitis a menudo presenta confusión, trastornos conductuales o alteración del nivel de conciencia (confusión o alteraciones de la conducta) que va de letargo ligero a coma, e indicios de signos y síntomas neurológicos focales o difusos.\nLa afección del eje hipotálamo-hipófisis puede producir trastornos en la regulación de la temperatura, diabetes insípida o síndrome de secreción inapropiada de hormona antidiurética (SIADH, syndrome of inappropriate secretion of antidiuretic hormone). Harrison, Medicina Interna, página 893.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_018",
+    "materia": ["cardiologia"],
+    "submateria": ["Valvulopatías"],
+    "enunciado": "¿Cuál es la deformidad valvular observada más frecuentemente en la cardiopatía reumática crónica?",
+    "opciones": {
+      "a": "La estenosis mitral",
+      "b": "La estenosis tricuspídea aislada",
+      "c": "La insuficiencia mitral aislada",
+      "d": "La asociación de estenosis mitral con estenosis aórtica"
+    },
+    "correcta": "a",
+    "explicacion": "La **enfermedad mitral reumática** es la causa más común de estenosis mitral, aunque ésta puede ser consecuencia de calcificaciones graves de las valvas mitrales; tiene un aspecto distinto caracterizado por fijación de la punta de las valvas y la flexibilidad relativa de las mismas, lo que ocasiona una deformación similar a un palo de hockey, en particular de la valva anterior.\nHarrison, Medicina Interna, página 1699.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_019",
+    "materia": ["cardiologia", "nutricion"],
+    "submateria": ["Trastornos del ritmo", "Metabolismo calcio – PTH"],
+    "enunciado": "¿Cuál de las siguientes es causa de acortamiento del intervalo QT en el electrocardiograma?",
+    "opciones": {
+      "a": "Hipocalcemia",
+      "b": "Hipopotasemia",
+      "c": "Hipercalcemia",
+      "d": "Hiponatremia"
+    },
+    "correcta": "c",
+    "explicacion": "La **hipercalcemia** puede ocasionar cambios electrocardiográficos importantes, como bradicardia, bloqueo auriculoventricular (AV) e intervalos QT cortos; para vigilar los cambios en la calcemia se mide el intervalo QT en forma seriada.\nHarrison, Medicina Interna, página 313",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_020",
+    "materia": ["cardiologia"],
+    "submateria": ["Insuficiencia cardíaca", "Miocardiopatías"],
+    "enunciado": "¿Cuál de las siguientes es causa de insuficiencia cardiaca con fracción de eyección mayor a 50%?.nSeñale la respuesta correcta:",
+    "opciones": {
+      "a": "Obstrucción moderada de la descendente posterior",
+      "b": "Miocardiopatía hipertrófica",
+      "c": "Miocardiopatía dilatada no isquémica",
+      "d": "Bradiarritmias crónicas"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 1763",
+    "explicacion_img": ["img/explicaciones/uba2017_020.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_021",
+    "materia": ["otorrinolaringologia", "neurologia"],
+    "submateria": ["Oído", "Otras preguntas de neurología"],
+    "enunciado": "La causa más frecuente de vértigo es:",
+    "opciones": {
+      "a": "Síndrome de Menière.",
+      "b": "Síndrome de Wallenberg.",
+      "c": "Neuronitis vestibular.",
+      "d": "Vértigo posicional benigno."
+    },
+    "correcta": "d",
+    "explicacion": "El **vértigo posicional paroxístico benigno (VPPB)** es la causa más frecuente de vértigo en general y de causa periférica.\nSe produce por canalitiasis (porciones de las otoconias del utrículo que flotan en la endolinfa de un conducto semicircular originan un movimiento de la endolinfa que estimula anormalmente la cresta ampular) y, menos frecuentemente, por cupulolitiasis (otolitos de la mácula del utrículo que se adhieren a la cresta ampular del conducto semicircular).\nEl conducto semicircular posterior es el más afectado.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_022",
+    "materia": ["neurologia"],
+    "submateria": ["ECV"],
+    "enunciado": "¿Cuál de los siguientes, es considerado Criterio de Exclusión de infusión de fibrinolíticos en pacientes con enfermedad cerebrovascular isquémica?:",
+    "opciones": {
+      "a": "Glucemia de 130 mg%.",
+      "b": "Tensión arterial diastólica > 110 mmHg.",
+      "c": "Plaquetas < 130.000/mm3,",
+      "d": "Cirugía Mayor en el último año."
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 3081",
+    "explicacion_img": ["img/explicaciones/uba2017_022.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_023",
+    "materia": ["nutricion"],
+    "submateria": ["Diabetes mellitus"],
+    "enunciado": "¿Cuál de las siguientes es indicación de tratamiento con insulina en un paciente diabético tipo 2?:",
+    "opciones": {
+      "a": "Aquellos pacientes con normopeso",
+      "b": "Pacientes con glucemia en ayunas de 200 mg%",
+      "c": "Diabético tipo 2 que fracasa al tratamiento con dosis máximas de drogas orales y se mantiene hiperglucémico.",
+      "d": "Paciente con infección urinaria."
+    },
+    "correcta": "c",
+    "explicacion": "La insulina puede ser utilizada en el tratamiento de la DM2, ya sea desde el diagnóstico, particularmente ante hiperglucemia muy elevada, cetosis o pérdida de peso no intencional; o bien, incorporada en las distintas etapas del tratamiento y/o situaciones clínicas.\nNICE, SIGN, Honduras, Canadá, Colombia, recomiendan agregar insulina basal cuando los antidiabéticos orales no proveen adecuado control glucémico, manteniendo metformina para mejorar el control glucémico (pero en general, suspendiendo sulfonilureas (SU) para evitar aumento de hipoglucemias).\nOMS prioriza insulina como primera intensificación (metformina-insulina) al mismo nivel que metformina-SU por sobre otras opciones (IDPP4, ISGLT2, TZD) que según su análisis no han demostrado ser más eficaces y que son mucho más costosas.\nSIGN recomienda pasar a inyectable cuando el tratamiento con ADO no es suficiente, considerando aGLP1 o insulina según los casos.\nGuía de Práctica Clínica Nacional sobre Prevención, Diagnóstico y Tratamiento de la Diabetes Mellitus Tipo 2 (DM2) 2019, página 120",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_024",
+    "materia": ["dermatologia"],
+    "submateria": ["Infecciosas"],
+    "enunciado": "¿Cuál de las siguientes es causa de hipopigmentación?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Pelagra.",
+      "b": "Tiña versicolor",
+      "c": "Deficiencia de vitamina B12.",
+      "d": "Queratosis seborreica"
+    },
+    "correcta": "b",
+    "explicacion": "Este trastorno es causado por el hongo dimórfico no dermatofítico, **Malassezia furfur**, localizado por lo regular en la piel. En la expresión de la infección, intervienen factores desencadenantes como calor y humedad. Las lesiones típicas comprenden máculas descamativas ovales, pápulas y placas en el tórax, los hombros y el dorso, pero rara vez en la cara o zona distal de extremidades. En personas de piel oscura, adoptan el aspecto de zonas hipopigmentadas, en tanto que en las de piel clara son un poco eritematosas o hiperpigmentadas.\nHarrison, Medicina Interna, página 336.",
+    "explicacion_img": ["img/explicaciones/uba2017_024.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_025",
+    "materia": ["pediatria", "cirugiageneral"],
+    "submateria": ["Patología del aparato digestivo", "Otras preguntas de cirugía general"],
+    "enunciado": "Ante la sospecha de estenosis hipertrófica de píloro, ¿cómo iniciaría los exámenes complementarios?",
+    "opciones": {
+      "a": "Transito digestivo",
+      "b": "Radiología simple",
+      "c": "Ecografía.",
+      "d": "pHmetría gástrica."
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico de estenosis pílórica casi siempre puede establecerse en la exploración física, con la palpación de la tipica \"oliva\" en el cuadrante superior derecho del abdomen y la presencia de ondas gástricas visibles en el abdomen. Cuando la oliva no puede palparse, la **ecografía** permite establecer el diagnóstico con exactitud en 95% de los casos. Los criterios para el diagnóstico ecográfico incluyen longitud del conducto >16 mm y espesor pilórico >4 mm.\nSchwartz, Cirugía, página 1426.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_026",
+    "materia": ["infectologia", "otras"],
+    "submateria": ["Antibacterianos", "Fármacos"],
+    "enunciado": "¿Cuál de las siguientes cefalosporinas no requiere ajuste de dosis con Filtrado Glomerular entre 25-10 ml/min?",
+    "opciones": {
+      "a": "Ceftazidima",
+      "b": "Cefepime",
+      "c": "Ceftriaxona",
+      "d": "Cefuroxima"
+    },
+    "correcta": "c",
+    "explicacion": "Las cefalosporinas son excretadas principalmente por el riñón y por tanto se ha de reducir la dosis en pacientes con insuficiencia renal. Probenecid lentifica la secreción tubular de casi todas las cefalosporinas. Las excepciones son cefpiramida y cefoperazona, que son excretadas predominantemente en la bilis. La cefotaxima es desacetilada a un metabolito con menos actividad antimicrobiana del compuesto original que es excretado por los riñones. Las otras cefalosporinas no experimentan metabolismo considerable.\nLa **ceftriaxona** tiene una actividad muy similar a la de la ceftizoxima y a la de la cefotaxima pero una vida media más prolongada (aproximadamente 8 h). La administración del fármaco una o dos veces al día ha sido eficaz en pacientes con meningitis.\nAproximadamente la mitad del fármaco puede obtenerse de la orina; la restante es eliminada por secreción biliar.\nUna sola dosis de ceftriaxona (125 a 250 mg) es eficaz en el tratamiento de la gonorrea uretral, cervicouterina, rectal o faringea, incluida la enfermedad causada por microorganismos productores de penicilinasa.\nGoodman y Gilman, Farmacología, página 964",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_027",
+    "materia": ["infectologia", "otras"],
+    "submateria": ["HIV", "Fármacos"],
+    "enunciado": "¿Cuál de los siguientes fármacos antirretrovirales produce depresión de la Médula Ósea (mielotóxico)?",
+    "opciones": {
+      "a": "Efavirenz",
+      "b": "Raltegravir",
+      "c": "Atazanavir",
+      "d": "Zidovudina"
+    },
+    "correcta": "d",
+    "explicacion": "La **AZT (Zidovudina)** puede causar supresión de la médula ósea y debe utilizarse con precaución en pacientes con anemia o granulocitopenia preexistentes y en aquellos que toman otros fármacos que pueden suprimir la médula ósea.\nGoodman y Gilman, Farmacología, página 1059",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_028",
+    "materia": ["infectologia", "medicinafamiliar"],
+    "submateria": ["TRI – Neumonías", "Control de salud"],
+    "enunciado": "¿Cuál de los siguientes no se incluye como un grupo de riesgo para recibir la vacuna antineumocócica?",
+    "opciones": {
+      "a": "EPOC",
+      "b": "Fisura etmoidal con fístula de LCR y rinorraquia",
+      "c": "Enfermedad de Whipple",
+      "d": "Asplenia funcional o anatómica"
+    },
+    "correcta": "c",
+    "explicacion": "Población objetivo destinatarios:\n- Personas mayores de 65 años\n- Personas hasta 64 años que presenten factores de riesgo para el desarrollo de enfermedad neumocócica invasiva.\n- Inmunocomprometidos: Inmunodeficiencias congénitas o adquiridas, Infección por VIH, Insuficiencia renal crónica, Síndrome nefrótico, Leucemia, Linfoma y enfermedad de Hodgkin, Enfermedades neoplásicas, Inmunodepresión farmacológica, Trasplante de órgano sólido, Mieloma múltiple, Asplenia funcional o anatómica, Anemia de células falciformes Implante coclear, Fistula de LCR\n- No inmunocomprometidos: Cardiopatía crónica, Enfermedad pulmonar crónica, Diabetes mellitus, Enfermedad hepática crónica, Tabaquismo Trasplante de células hematopoyéticas\nTRAPS, Vacunas, página 42",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_029",
+    "materia": ["infectologia", "cardiologia"],
+    "submateria": ["Endocarditis", "Valvulopatías"],
+    "enunciado": "Paciente de 53 años con antecedente de reemplazo de válvula aórtica hace 3 años. Consulta por síndrome febril de dos semanas de evolución asociado a astenia. Refiere un episodio de hematuria hace 5 días que cedió espontáneamente. Al examen físico presenta buen estado general, febrícula (T° axilar: 37.4°), hemorragias en astilla en pulgar derecho. Señale la conducta más adecuada:",
+    "opciones": {
+      "a": "Descarta diagnóstico de endocarditis por ser un paciente de bajo riesgo.",
+      "b": "Realiza hemocultivos, de ser negativos descarta el diagnóstico de endocarditis.",
+      "c": "Realiza hemocultivos y ecocardiograma transtorácico. De ser negativo realiza ecocardiograma transesofágico.",
+      "d": "Realiza hemocultivos y ecocardiograma transtorácico. De ser negativo descarta el diagnóstico de endocarditis."
+    },
+    "correcta": "c",
+    "explicacion": "Farreras, página 558: \"Si en el ecocardiograma transtorácico se observan imágenes claras de vegetaciones, no es imprescindible proceder a la técnica transesofágica para establecer el diagnóstico. Sin embargo, si los datos del ecocardiograma transtorácico no son concluyentes o son negativos y la sospecha clínica es fuerte, debe procederse a la práctica de un ecocardiograma transesofágico, ya que esta técnica tiene una mayor sensibilidad diagnóstica (...) El ecocardiograma transesofágico debe practicarse en todos los casos de sospecha de endocarditis sobre prótesis, ya que la técnica transtorácica es muy poco útil en este contexto\".",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_030",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología benigna de mama", "Cáncer de mama"],
+    "enunciado": "¿Cuál es el signo o síntoma más frecuente en un carcinoma papilar de mama?",
+    "opciones": {
+      "a": "Nódulo palpable subareolar",
+      "b": "Derrame sanguinolento por el pezón",
+      "c": "Adenopatia axilar y nódulo mamario reconocido semiológicamente",
+      "d": "Retracción del pezón"
+    },
+    "correcta": "b",
+    "explicacion": "El derrame por pezón puede ser espontáneo (lactescente, seroso, serohemático, hemático) o provocado (principalmente por expresión bimanual).\nEntre las causas más frecuentes de derrame hemático por pezón, se encuentran los carcinomas.\nProvenzano, Ginecología, página 364",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_031",
+    "materia": ["neumonologia"],
+    "submateria": ["Pleura, mediastino y diafragma"],
+    "enunciado": "¿En qué casos está indicada una biopsia pleural con aguja?",
+    "opciones": {
+      "a": "Paciente con caverna tuberculosa que desarrolla un derrame pleural",
+      "b": "Paciente con un nódulo pulmonar hiliar y atelectasia segmentaria del lóbulo superior",
+      "c": "Paciente que desarrolla un derrame pleural de origen desconocido",
+      "d": "Recidiva de un derrame pleural en un paciente tratado por cáncer de pulmón."
+    },
+    "correcta": "c",
+    "explicacion": "Biopsia pleural: se indica en los pacientes con derrame pleural exudado de etiología desconocida. Puede obtenerse por medio de diferentes procedimientos, de menor a mayor complejidad; biopsia percutánea con aguja de Cope, toracoscopia, videotoracoscopía y toracotomía.\nGimenez, Cirugía, página 117.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_032",
+    "materia": ["gastroenterologia"],
+    "submateria": ["Colon"],
+    "enunciado": "¿Cuál es la localización más frecuente, dentro de las enunciadas, de una angiodisplasia?",
+    "opciones": {
+      "a": "Colon descendente",
+      "b": "Colon ascendente",
+      "c": "Colon sigmoide",
+      "d": "Recto"
+    },
+    "correcta": "b",
+    "explicacion": "Angiodisplasia intestinal: Esta entidad se presenta en general en pacientes de edad superior a 60 años con enfermedades asociadas, más frecuentemente cardiovasculares o insuficiencia renal. Histológicamente consiste en acúmulos de vasos dilatados en la mucosa y la submucosa de la pared intestinal que se identifican más frecuentemente en el ciego y **colon ascendente**.\nFarreras, Medicina Interna, página 227",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_033",
+    "materia": ["gastroenterologia", "imagenes"],
+    "submateria": ["Otras preguntas de gastroenterología", "Otras preguntas de diagnóstico por imágenes"],
+    "enunciado": "En una hemorragia digestiva baja, intermitente, con pérdida de sangre a razón de 0.1 ml/min. ¿cuál de los siguientes métodos diagnósticos tiene mayor sensibilidad?",
+    "opciones": {
+      "a": "Arteriografía selectiva",
+      "b": "Colonoscopía",
+      "c": "Glóbulos rojos marcados con 99mTc",
+      "d": "Centellografía con sulfuro de tecnecio coloidal, marcado con 99mTC"
+    },
+    "correcta": "c",
+    "explicacion": "La estimación del volumen de pérdida activa en el momento del estudio determina la elección del estudio por emplear para ubicarlo. El centellograma con Tc 99 detecta pérdidas de alrededor de 0,1 cm3/minuto (144 cm3 por día). Se registran imágenes seriadas por medio de cámara gamma y entre 2 y 36 horas después de infundir al paciente sus propios hematíes marcados con tecnecio, La extravasación se expresa como opacidad con patente colónica o intestinal con progresión hacia distal en imágenes más tardías. El estudio es más sensible y menos específico que la angiografía.\nGimenez, Cirugía, página 728.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_034",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Cáncer colorrectal", "Otras preguntas de cirugía general"],
+    "enunciado": "En un cáncer de recto localizado a 9 cm del margen anal y que abarca 1/3 de su circunferencia, ¿cuál es la intervención quirúrgica de elección?",
+    "opciones": {
+      "a": "Proctocolectomía izquierda",
+      "b": "Amputación abdominoperineal u operación de Miles",
+      "c": "Resección local endoanal",
+      "d": "Resección anterior u operación de Dixon"
+    },
+    "correcta": "d",
+    "explicacion": "La técnica más frecuentemente utilizada es la **resección anterior con anastomosis (Operación de Dixon)**. Esta operación implica la resección de la lesión con la resección total del mesorrecto. En lo posible, el margen distal debe ser al menos de 5 cm, pero en los tumores de recto inferior, éste puede reducirse a 1 cm si la finalidad es la conservación esfinteriana.\nEl factor de mayor importancia para definir la conducta es la distancia desde el borde inferior del tumor hasta el margen anal.\nSi dicha distancia supera los 5 cm, la probabilidad de una conservación esfinteriana es mayor.\nGimenez, Cirugía, página 601.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_035",
+    "materia": ["infectologia", "neumonologia"],
+    "submateria": ["TRI – Neumonías", "Neumonía"],
+    "enunciado": "En un paciente de 30 años con diagnóstico de neumonía extrahospitalaria, que se encontraba sano previamente y no había recibido antibioticoterapia en los últimos 90 días. ¿Qué antibiótico indica inicialmente ?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Trimetroprima sulfametoxazol EV",
+      "b": "Ceftriaxona endovenoso (EV)",
+      "c": "Claritromicina vía oral.",
+      "d": "Piperacilina tazobactam (EV)"
+    },
+    "correcta": "c",
+    "explicacion": "(CAP, community acquired pneumonia) Harrison, Medicina Interna, 20e, página 913",
+    "explicacion_img": ["img/explicaciones/uba2017_035.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_036",
+    "materia": ["gastroenterologia", "cirugiageneral"],
+    "submateria": ["Colon", "Otras preguntas de cirugía general"],
+    "enunciado": "En un paciente de 70 años de edad, ¿cuál de las siguientes causas es la más frecuente de isquemia colónica aguda?",
+    "opciones": {
+      "a": "Embolia arterial",
+      "b": "Trombosis arterial",
+      "c": "Vólvulo sigmoide",
+      "d": "Episodio de bajo volumen minuto cardíaco"
+    },
+    "correcta": "d",
+    "explicacion": "La isquemia intestinal aparece sobre todo en el colon y, a diferencia de la isquemia del intestino delgado, rara vez se vincula con oclusión arterial o venosa mayores. Por el contrario, en buena medida la isquemia del colon al parecer resulta de un flujo bajo, oclusión de vasos pequeños, o ambos.\nSchwartz, Cirugía, página 1057.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_037",
+    "materia": ["neumonologia"],
+    "submateria": ["Pleura, mediastino y diafragma"],
+    "enunciado": "¿Cuál es el tumor más frecuente del mediastino anterior?",
+    "opciones": {
+      "a": "Timoma.",
+      "b": "Quiste broncogénico.",
+      "c": "Quiste esofágico.",
+      "d": "Tumor neurogénico."
+    },
+    "correcta": "a",
+    "explicacion": "Schwartz, Cirugía, página 570",
+    "explicacion_img": ["img/explicaciones/uba2017_037.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_038",
+    "materia": ["urgencias", "cirugiageneral"],
+    "submateria": ["Paciente politraumatizado", "Otras preguntas de cirugía general"],
+    "enunciado": "Paciente con trauma torácico penetrante en cara lateral del hemitórax derecho. Signos clínicos de derrame pleural masivo y radiografía de tórax con velamiento completo y descompensación hemodinámica. ¿Qué conducta adoptaría?",
+    "opciones": {
+      "a": "Arteriografía de vasos centrales",
+      "b": "Tomografía computada",
+      "c": "Toracocentesis",
+      "d": "Toracotomía exploradora inmediata"
+    },
+    "correcta": "d",
+    "explicacion": "La toracotomía inmediata de emergencia o de resucitación es aquella que se efectúa sin preparación previa del paciente y se lleva a cabo en el departamento de emergencia o en el quirófano. Debe limitarse a pacientes que llegan al departamento de emergencia con signos vitales presentes o paro cardiorrespiratorio, presenciado inmediatamente antes del arribo al hospital.\nGimenez, Cirugia, página 676.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_039",
+    "materia": ["urgencias", "neumonologia"],
+    "submateria": ["Paciente politraumatizado", "Pleura, mediastino y diafragma"],
+    "enunciado": "En un herido de bala cuyo trayecto perforó el mediastino de lado a lado, y la Rx. presenta neumotórax y neumomediastino leve: ¿Qué estudio diagnóstico indica como imprescindible?",
+    "opciones": {
+      "a": "Broncofibroscopia para confirmar perforación de tráquea y/o grandes bronquios.",
+      "b": "TAC de tórax.",
+      "c": "Punción pleural.",
+      "d": "Esofagograma."
+    },
+    "correcta": "a",
+    "explicacion": "Las lesiones bronquiales son poco frecuentes y generalmente están asociadas a otras lesiones producto de la gravedad del traumatismo. Se presentan con hemoptisis, enfisema subcutáneo o neumotórax hipertensivo. La **fibrobroncoscopia** confirma el diagnóstico. El tratamiento consiste en la inmediata reparación quirúrgica.\nGimenez, Cirugía, página 674.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_040",
+    "materia": ["cirugiageneral"],
+    "submateria": ["Patología de pared abdominal"],
+    "enunciado": "¿Las hernias inguinales de tipo directas, se presentan por?",
+    "opciones": {
+      "a": "Dilatación del orificio inguinal profundo.",
+      "b": "Persistencia del conducto peritoneo vaginal.",
+      "c": "Debilidad de la pared posterior.",
+      "d": "Dilatación del orificio del orificio inguinal superficial."
+    },
+    "correcta": "c",
+    "explicacion": "La hernia inguinal directa representa el 35 a 45% de los casos. Se produce por un debilitamiento de la pared posterior del trayecto inguinal constituido por la fascia transversalis, proyectándose por el triángulo de Hesselbach.\nGimenez, Cirugía, página 92",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_041",
+    "materia": ["neurologia", "neurocirugia"],
+    "submateria": ["Otras preguntas de neurología", "Neurocirugía"],
+    "enunciado": "Un paciente con cefaleas, náuseas, diplopía y edema de papila se encuentra en:",
+    "opciones": {
+      "a": "La etapa descompensada del síndrome de hipertensión intracraneano",
+      "b": "La etapa final del síndrome de hipertensión intracraneano",
+      "c": "La etapa compensada del síndrome de hipertensión intracraneano",
+      "d": "La etapa de las hernias encefálicas"
+    },
+    "correcta": "c",
+    "explicacion": "La clínica característica del síndrome de hipertensión intracraneal (HTIC) se expone a continuación:\n- Cefalea. Más grave durante la noche. Puede despertar al paciente y empeora por la mañana y con maniobras de Valsalva.\n- Vómitos. De predominio matutino, muy típicos en \"escopetazo\".\n- Edema de papila. Se realiza un fondo de ojo para ver papiledema, que es el signo exploratorio que traduce la existencia de HTIC.\n- También aparece frecuentemente diplopía, por lo general secundaria a afectación del VI par craneal.\n- Disminución progresiva del nivel de consciencia hasta el coma, por herniación cerebral.\nEn fases de HTIC moderada o avanzada, puede observarse la triada de Cushing: hipertensión arterial (lo más constante), bradicardia y alteraciones del ritmo respiratorio, aunque sólo en un 30% de los pacientes se observa la tríada completa.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_042",
+    "materia": ["neurologia", "oncologia"],
+    "submateria": ["Otras preguntas de neurología", "Conceptos de Oncología"],
+    "enunciado": "Los tumores intracraneales intraxiales:",
+    "opciones": {
+      "a": "Son extracerebrales",
+      "b": "Se separan fácilmente del parénquima cerebral",
+      "c": "Suelen ser gliomas",
+      "d": "Suelen ser meningiomas"
+    },
+    "correcta": "c",
+    "explicacion": "Los **gliomas** aparecen en cualquier parte del cerebro, pero tienen predilección por el nervio óptico y, en segundo lugar, por el tronco cerebral.\nFarreras, Medicina Interna, página 1454",
+    "explicacion_img": ["img/explicaciones/uba2017_042.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_043",
+    "materia": ["neurologia", "neurocirugia"],
+    "submateria": ["Otras preguntas de neurología", "Neurocirugía"],
+    "enunciado": "¿En qué tipo de hidrocefalia está contraindicada la punción lumbar?",
+    "opciones": {
+      "a": "En el pseudotumor cerebral",
+      "b": "En la hidrocefalia comunicante",
+      "c": "En la hidrocefalia no comunicante",
+      "d": "En la hidrocefalia normotensiva"
+    },
+    "correcta": "c",
+    "explicacion": "Clásicamente, se han distinguido dos tipos:\n- Hidrocefalia no comunicante u obstructiva: Existencia de un obstáculo a nivel del sistema ventricular.\n- Hidrocefalia comunicante o no obstructiva: El LCR alcanza el espacio subaracnoideo, pero a este nivel encuentra dificultades para su circulación o reabsorción.\nAntes de realizar una punción lumbar, se debe descartar mediante una TC cerebral que el paciente no tiene una causa que provoque una elevación de la presión dentro del cráneo y genere un gradiente entre el cráneo y la región lumbar.\nSi la ICP (intracranial pressure) se ha elevado por un tumor o tumefacción patológica, edema cerebral o bloqueo de la salida del LCR a través de los ventrículos (hidrocefalia obstructiva), la punción lumbar puede provocar una hernía encefálica. En la hidrocefalia obstructiva por lo general es necesario drenar directamente el LCR de los ventrículos. En los pacientes con vías despejadas para la circulación del LCR, la ICP se eleva cuando disminuye la resorción del líquido en las vellosidades aracnoideas. En estos pacientes la punción lumbar suele ser inocua e incluso puede ser terapéutica; sin embargo, algunas veces es necesario repetirla o drenar el líquido de manera continua para evitar la muerte relativamente repentina por hipertensión intracraneal.\nHarrison, Medicina Interna, página 1011\nDebe realizarse un estudio por imágenes antes de la punción lumbar para excluir una lesión intracraneal ocupante de espacio que podría conducir a herniación con la punción lumbar.\nHarrison, Medicina Interna, página 2073",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_044",
+    "materia": ["nutricion", "endocrinologia"],
+    "submateria": ["Metabolismo lipídico", "Otras preguntas de endocrinología"],
+    "enunciado": "Durante el ayuno, el acetil-CoA producido en la oxidación de ácidos grasos es utilizado para la síntesis de:",
+    "opciones": {
+      "a": "Glucosa y glucógeno en hígado",
+      "b": "Acetoacetato e hidroxibutirato en tejido hepático",
+      "c": "Piruvato y glucosa en hígado",
+      "d": "Hidroximetilglutaril CoA y colesterol en tejidos extrahepáticos"
+    },
+    "correcta": "b",
+    "explicacion": "La cetogénesis o formación de cuerpos cetónicos es una via catabólica alternativa para acetatos activos, cuya magnitud es reducida en condiciones normales, pero adquiere importancia en determinadas condiciones metabólicas.\nSe denominan cuerpos cetónicos al **acetoacetato, 3-hidroxibutirato y acetona**. La síntesis de estos compuestos se realiza en mitocondrias del hígado a partir de acetil-CoA.\nBlanco, Bioquímica, página 263",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_045",
+    "materia": ["pediatria", "traumatologia"],
+    "submateria": ["Desarrollo y nutrición", "Otras preguntas de traumatología"],
+    "enunciado": "En un paciente con maniobras de Barlow y Ortolani positivas Ud. sospecha:",
+    "opciones": {
+      "a": "Epifisiolisis de cadera.",
+      "b": "Necrosis ósea avascular.",
+      "c": "Coxa vara.",
+      "d": "Displasia congénita de cadera."
+    },
+    "correcta": "d",
+    "explicacion": "El término **displasia del desarrollo de la cadera (DDC)** hace referencia a un espectro de patologías de la articulación de la cadera inmadura. La DDC, anteriormente conocida como luxación congénita de la cadera, describe con más precisión la presentación variable del trastorno, que abarca displasia leve, así como luxación franca. La DDC en neonatos es asintomática y debe detectarse mediante maniobras específicas. La maniobra de provocación de Barlow explora la inestabilidad potencial de una cadera previamente no luxada. El examinador aduce la cadera flexionada y empuja suavemente el muslo hacia atrás con intención de luxar la cabeza femoral. Cuando la maniobra es positiva, se puede sentir cómo la cadera se desliza fuera del acetábulo. Conforme el examinador relaja la presión, se puede notar cómo la cabeza se reduce de nuevo dentro del acetábulo.\nLa maniobra de Ortolani es la opuesta a la de Barlow: el examinador trata de reducir la cadera luxada en reposo. El examinador agarra el muslo del niño entre el pulgar y el indice yi con el cuarto y quinto dedo, levanta el trocánter mayor mientras abduce simultáneamente la cadera. Cuando la maniobra es positiva, la cabeza femoral se reducirá en el acetábulo con un suave «clank>> que es palpable pero habitualmente no audible. Debe ser una maniobra suave, no forzada.\nNelson, Pediatría, página 3625",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_046",
+    "materia": ["gastroenterologia"],
+    "submateria": ["Colon"],
+    "enunciado": "¿Cuál de los siguientes es un criterio diagnóstico del colon irritable?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "El dolor abdominal mejora con la defecación",
+      "b": "La presencia de dolor abdominal sin relación con la frecuencia de evacuaciones",
+      "c": "Presencia de dolor abdominal sin relación con la frecuencia de las evacuaciones y con los cambios en la forma de las heces",
+      "d": "Presencia de dolor abdominal, dos veces por día en los últimos seis meses."
+    },
+    "correcta": "a",
+    "explicacion": "El dolor se exacerba con las comidas o la tensión emocional y se resuelve con la expulsión de gases o excremento.\nHarrison, Medicina Interna, página 2276",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+   {
+    "id": "uba_2017_047",
+    "materia": ["reumatologia"],
+    "submateria": ["Artritis reumatoide"],
+    "enunciado": "En una paciente de 45 años de edad que presenta sinovitis en ambas muñecas, evidenciándose en las radiografías disminución del espacio articular y osteopenia subcondral, ¿Qué patología sospecha?",
+    "opciones": {
+      "a": "Artritis Reumatoidea.",
+      "b": "Artritis Séptica bilateral.",
+      "c": "Esclerodermia.",
+      "d": "Lupus Eritematoso Sistémico."
+    },
+    "correcta": "a",
+    "explicacion": "La **artritis reumatoide** (RA, rheumatoid arthritis) es una enfermedad inflamatoria crónica de origen desconocido que se caracteriza por poliartritis simétrica y periférica y es la forma más común de artritis inflamatoria crónica. Como la artritis reumatoide activa persistente ocasiona a menudo destrucción ósea y del cartílago articular con incapacidad funcional, es vital el diagnóstico y tratamiento temprano e intensivo de la enfermedad antes de que sobrevenga el daño.\nLa incidencia de RA aumenta entre los 25 y los 55 años de vida, periodo después del cual llega a un nivel de equilibrio hasta los 75 años de edad, para luego disminuir.\nLas manifestaciones iniciales típicamente son consecuencia de la inflamación de articulaciones, tendones y bolsas sinoviales.\nHarrison, Medicina Interna, página 2528.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_048",
+    "materia": ["traumatologia", "medicinafamiliar"],
+    "submateria": ["Miembro inferior", "Adulto mayor"],
+    "enunciado": "En una paciente de 80 años que se presenta en la guardia con dolor, rotación externa y acortamiento del miembro inferior, Ud. sospecha una:",
+    "opciones": {
+      "a": "Fractura de cadera.",
+      "b": "Luxación de cadera.",
+      "c": "Fractura de fémur.",
+      "d": "Luxación de rodilla."
+    },
+    "correcta": "a",
+    "explicacion": "Las **fracturas de cadera** son muy frecuentes en pacientes de edad avanzada, que desarrollan con facilidad complicaciones derivadas de un encamamiento prolongado (escaras por presión, trombosis venosa profunda, neumonía, entre otras). Por esta razón, el objetivo principal del tratamiento es conseguir que el paciente pueda salir de la cama y comenzar a caminar cuanto antes.\nEstas fracturas se producen habitualmente como consecuencia de una caida.\nEl paciente refiere, salvo en determinadas fracturas no desplazadas del cuello femoral, impotencia funcional absoluta (no puede caminar).\nEn la exploración, la extremidad inferior se encuentra acortada, y en rotación externa marcada, contactando el borde externo del pie con la cama.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_049",
+    "materia": ["psiquiatria"],
+    "submateria": ["Trastornos neuróticos y de la personalidad"],
+    "enunciado": "Un joven de 22 años es llevado a la guardia. Sus padres informan que desde hace varios meses se ha ido aislando de su entorno social, y hace unas semanas tuvo un enfrentamiento en su trabajo. En la entrevista se muestra poco colaborador pero orientado en tiempo y espacio. Durante el interrogatorio confiesa que sus compañeros están conspirando con su jefe para expulsarlo de su puesto laboral. No se infiere riesgo inminente para sí o para terceros. Antecedentes de importancia: los padres refieren que de chico era solitario, y su rendimiento escolar fue bajo. Tuvo algunas novias con las que se peleaba por celos. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Trastorno Bipolar. Interconsulta con psiquiatra de guardia para iniciar tratamiento",
+      "b": "Trastorno de personalidad paranoide. Derivación a psiquiatría para seguimiento por consultorios externos.",
+      "c": "Esquizofrenia paranoide. Interconsulta con psiquiatra de guardia para iniciar tratamiento",
+      "d": "Trastorno delirante de tipo persecutorio. Derivación a psiquiatría para seguimiento por consultorios externos"
+    },
+    "correcta": "b",
+    "explicacion": "Los trastornos de la personalidad son modelos característicos del pensamiento, de los sentimientos y de la relación interpersonal que son relativamente inflexibles y que producen graves alteraciones funcionales o sufrimiento subjetivo en la persona. Los comportamientos observados no son secundarios a otros trastornos mentales ni desencadenados por el consumo de sustancias tóxicas o por una enfermedad orgánica general.\nLos trastornos de la personalidad se han clasificado en tres grupos que se superponen.\nEl grupo A comprende los trastornos paranoide, esquizoide y esquizotípico de la personalidad, e incluye a personas peculiares y excéntricas que se mantienen emocionalmente distantes de los demás estas personas tienen un abanico emocional restringido y permanecen aisladas socialmente.\nLos rasgos esenciales de la personalidad paranoide son desconfianza y sospecha constantes, no justificadas por la evidencia.\nHarrison, Medicina Interna, página 3275",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_050",
+    "materia": ["neurologia", "psiquiatria"],
+    "submateria": ["Otras preguntas de neurología", "Otras preguntas de psiquiatría"],
+    "enunciado": "Una mujer de 70 años, ama de casa, acude a la consulta acompañada por su esposo que informa que hace unos meses se ha vuelto retraída, apática e irritable. Presenta dificultad para acordarse de cosas que habían sucedido el día anterior y problemas para calcular el dinero al ir de compras. A la evaluación está desorientada en tiempo y espacio, desprolija en su vestimenta, lúcida pero notoriamente ansiosa y con dificultad para encontrar las palabras para expresarse. No se detectaron alteraciones en el examen físico. Todos los análisis de laboratorio dieron negativos, pero una tomografía computada mostró una marcada atrofia cortical y un Mini Mental Test de Folstein arrojó un puntaje de 19. ¿Cuál es el diagnóstico más probable y la conducta más adecuada?",
+    "opciones": {
+      "a": "Deterioro cognitivo normal para la edad, seguimiento y reevaluación periódica para monitorear la aparición de algún síntoma de enfermedad",
+      "b": "Síndrome confusional agudo, tratamiento de su causa. Generar un ambiente familiar para el paciente.",
+      "c": "Síndrome demencial (compatible con enfermedad de Alzheimer), inicio de tratamiento de los síntomas cognitivos y no cognitivos.",
+      "d": "Cuadro depresivo, inicio de tratamiento con fármacos antidepresivos."
+    },
+    "correcta": "c",
+    "explicacion": "Los cambios cognitivos de la AD (**Enfermedad de Alzheimer**) tienden a seguir un patrón caracteristico, comienza con la alteración de la memoria y progresa a deficiencias del lenguaje y visuoespaciales, seguidas por disfunción ejecutiva.\nAl final, con la AD los problemas cognitivos empiezan a interferir en las actividades diarias, como manejar las finanzas personales, seguir instrucciones en el trabajo, conducir un vehículo, hacer compras y realizar las labores domésticas.\nHarrison, Medicina Interna, página 3108\nUna pregunta muy similar se tomó en el examen único 2022, por lo que demencias es un tema a tener en cuenta.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_051",
+    "materia": ["infectologia", "gastroenterologia"],
+    "submateria": ["Virus no HIV", "Hígado"],
+    "enunciado": "¿Cuál de las siguientes opciones es una complicación posible ante una infección por virus de la hepatitis A?",
+    "opciones": {
+      "a": "Evolución a la cronicidad.",
+      "b": "Evolución a la cirrosis.",
+      "c": "Falla hepática fulminante.",
+      "d": "Hepatocarcinoma."
+    },
+    "correcta": "c",
+    "explicacion": "La **Falla hepática fulminante** es la principal complicación potencial, aunque infrecuente, de la infección aguda por el virus de la hepatitis A. A diferencia de las hepatitis B y C, no evoluciona a la cronicidad ni a cirrosis/hepatocarcinoma.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_052",
+    "materia": ["pediatria", "reumatologia"],
+    "submateria": ["Patología nefrourológica infantil", "Vasculitis"],
+    "enunciado": "¿Qué diagnóstico hace en un niño de tres años de edad que comienza con dolor en sus tobillos al cual se agrega dolor abdominal y un exantema purpúrico en cintura y miembros inferiores?. En los exámenes complementarios se observa proteinuria, hematuria, y en la biopsia renal se muestra proliferación mesangial y depósitos de Ig A por inmunofluorescencia.",
+    "opciones": {
+      "a": "Púrpura de Schonlein Henoch.",
+      "b": "Granulomatosis de Wegener.",
+      "c": "Displasia renal.",
+      "d": "Síndrome de Alport."
+    },
+    "correcta": "a",
+    "explicacion": "La **púrpura de Henoch-Schönlein (PHS)** es la vasculitis más frecuente en la infancia y se caracteríza por una vasculitis leucocitoclástica y el depósito de inmunoglobulina A en los vasos pequeños en la piel, las articulaciones, el tubo digestivo y el riñón.\nAproximadamente el 90% de los casos de PHS se produce en niños, generalmente entre los 3 y los 10 años de edad.\nEl estudio histopatológico renal suele mostrar una glomerulonefritis endocapilar proliferativa, que varía de un proceso segmentario focal a una afectación extensa en medias lunas.\nEn todos los tejidos, la inmunofluorescencia identifica el depósito de IgA en las paredes de los vasos pequeños, acompañada en menor extensión por el depósito de C3, fibrina e IgM.\nLa característica distintiva de la PHS es su exantema: la púrpura palpable empieza con máculas rosadas o habones y evoluciona a petequias, púrpura palpable o equimosis extensa.\nA veces se producen ampollas y úlceras. Las lesiones cutáneas suelen ser simétricas y aparecen en zonas en declive (en las extremidades inferiores), zonas de extensión de las extremidades superiores o en puntos de presión (en las nalgas).\nLa afectación osteomuscular, que abarca la artritis y las artralgias, es frecuente y ocurre en más del 75% de los niños con PHS.\nLas manifestaciones digestivas aparecen en más del 80% de los niños afectados y son dolor abdominal, vómitos, diarrea, ileo paralítico y melena.\nNelson, Pediatria.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_053",
+    "materia": ["pediatria", "reumatologia"],
+    "submateria": ["Patología infecciosa infantil", "Vasculitis"],
+    "enunciado": "En un niño de tres años con síndrome febril de etiología desconocida, linfadenopatía cervical, rash cutáneo eritematoso e inyección conjuntival, cuya biopsia ganglionar evidenció infartos en parches asociados a trombos de fibrina en pequeños vasos ¿Qué diagnóstico sospecha?",
+    "opciones": {
+      "a": "Lupus eritematoso diseminado.",
+      "b": "Enfermedad de Kawasaki.",
+      "c": "Mononucleosis infecciosa.",
+      "d": "Toxoplasmosis."
+    },
+    "correcta": "b",
+    "explicacion": "La **enfermedad de Kawasaki** (EK), conocida formalmente como síndrome linfático mucocutáneo y poliarteritis nodosa infantil, es una enfermedad febril aguda de la infancia que se da en todo el mundo, aunque la mayor incidencia tiene lugar en los niños asiáticos. La EK es una enfermedad sistémica inflamatoria que se manifiesta en forma de vasculitis que afecta principalmente a las arterias coronarias.\nLa fiebre es característicamente alta y aguda (≥38,3°C), remite y no responde a los antipiréticos.\nAdemás de la fiebre, los cinco criterios clinicos principales de la EK son 1) la inyección conjuntival bilateral sin exudado y con respeto límbico;\n2) el eritema de las mucosas faringea y oral con lengua en fresa y labios rojos y agrietados;\n3) el edema (indurado) y eritema de las manos y los pies;\n4) el exantema polimorfo (maculopapular, eritema multiforme, escarlatiniforme o menos frecuentemente similar a la psoriasis, urticariforme o micro pustular), y 5) la linfadenopatía cervical no supurativa, generalmente unilateral, con un ganglio de >1,5 cm.\nNelson, Pediatria, página 1310",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_054",
+    "materia": ["pediatria", "urologia_cx"],
+    "submateria": ["Oncohematología infantil", "Cáncer de riñón y otros tumores renales"],
+    "enunciado": "En un lactante de 6 meses con una tumoración intrarrenal macroscópicamente sólida y amarillenta, constituida histológicamente por células fusiformes, acompañadas por islotes de cartílago y focos de hemopoyesis. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Tumor rabdoide.",
+      "b": "Sarcoma de células claras.",
+      "c": "Tumor de Wilms.",
+      "d": "Nefroma mesoblástico"
+    },
+    "correcta": "d",
+    "explicacion": "El **nefroma mesoblástico** es el tumor renal sólido más frecuente en el período neonatal y el tumor renal benigno más frecuente en la infancia. Representa aproximadamente el 5% de todos los tumores renales pediátricos. Muchos casos se diagnostican con ecografía prenatal y pueden manifestarse por polihidramnios, edema y parto prematuro. La mayoría de los pacientes son diagnosticados antes de los 3 meses de edad, mientras que el tumor de Wilms se diagnostica rara vez antes de los 6 meses de edad.\nNelson, Pediatría, página 2953",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_055",
+    "materia": ["pediatria", "otorrinolaringologia"],
+    "submateria": ["Patología infecciosa infantil", "Laringe"],
+    "enunciado": "¿Qué virus se encuentra involucrado en etiología de la papilomatosis laríngea juvenil?",
+    "opciones": {
+      "a": "HPV 11 y 6.",
+      "b": "Virus de Epstein Barr.",
+      "c": "Herpes Virus 11.",
+      "d": "Virus Sincicial Respiratorio."
+    },
+    "correcta": "a",
+    "explicacion": "Algunos lactantes pueden adquirir el VPH durante el paso a través del canal del parto infectado, lo que produce papilomatosis laringea juvenil recidivante (también denominada papilomatosis respiratoria). También se han descrito casos después del parto por cesárea. Se desconoce cuál es el periodo de incubación máximo para la aparición de lesiones clínicas apreciables (verrugas genitales o papilomas laringeos) después de la infección perinatal, pero parece ser de 3-6 meses. Las infecciones pueden aparecer también al realizar la higiene de uno de los progenitores infectados.\nNelson, Pediatria, página 1748",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_056",
+    "materia": ["dermatologia", "pediatria"],
+    "submateria": ["Otras preguntas de dermatología", "Otras preguntas de pediatría"],
+    "enunciado": "En un niño de diez años que presenta a nivel de miembro superior derecho pápulas de hasta 3 mm planas de color carne agrupadas e histológicamente constituidas por infiltrado compuesto por histiocitos y células gigantes aisladas, circunscripto a una papila dérmica. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "a": "Liquen nítido.",
+      "b": "Liquen plano.",
+      "c": "Xantogranuloma juvenil.",
+      "d": "Pitiriasis liquenoide aguda"
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de una erupción papulosa poco frecuente, crónica y benigna que se caracteriza por la aparición de diminutas pápulas (1-2 mm) firmes, brillantes, de superficie plana y tamaño uniforme. Con frecuencia las pápulas son del color de la piel normal, aunque pueden ser rosadas o rojizas.\nEntre las localizaciones predilectas figuran los genitales, el abdomen, el tórax, los antebrazos, las muñecas y las zonas internas de los musios.\nLas lesiones pueden ser escasas o numerosas y formar placas extensas;\nsi se examinan cuidadosamente se pueden ver pápulas de distribución lineal en un trayecto de rascado (fenómeno de Koebner), lo que constituye un dato útil para el diagnóstico dado que aparece únicamente en algunas enfermedades.\nEl liquen nítido se presenta en todos los grupos de edad, pero es más prevalente en niños en edad escolar y adultos jóvenes.\nLos pacientes suelen estar asintomáticos y no hay manifestaciones constitucionales, aunque el prurito puede ser grave.\nLas lesiones se pueden confundir con las del liquen plano, y ambos procesos pueden coexistir\nAunque el diagnóstico es clínico, a veces está indicado realizar una biopsia.\nLas papulas del liquen nítido constan de nidos bien delimitados de linfocitos e histiocitos en la zona superior de la dermis, abrazados por unas crestas interpapilares epidérmicas con forma de garra.\nNelson, Pediatría, página 3507.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_057",
+    "materia": ["infectologia", "gastroenterologia"],
+    "submateria": ["Virus no HIV", "Hígado"],
+    "enunciado": "Un paciente que presenta HBsAg +, Anti HBs negativo, Anti HBc IgM, HBeAg + y Anti HBe negativo. ¿Cuál es la interpretación?. Señale la respuesta correcta: Hepatitis B...",
+    "opciones": {
+      "a": "crónica de alta infectividad",
+      "b": "aguda de alta infectividad",
+      "c": "crónica de baja infectividad",
+      "d": "aguda de baja infectividad"
+    },
+    "correcta": "b",
+    "explicacion": "Harrison, Medicina Interna, página 2360",
+    "explicacion_img": ["img/explicaciones/uba2017_057.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_058",
+    "materia": ["dermatologia", "pediatria"],
+    "submateria": ["Infecciosas", "Patología infecciosa infantil"],
+    "enunciado": "En una biopsia de piel que muestra una lesión vesiculoampollar intracórnea o subcórnea con escasas células inflamatorias, ¿qué diagnóstico realizaría?",
+    "opciones": {
+      "a": "Impétigo.",
+      "b": "Eritema tóxico neonatal.",
+      "c": "Sindrome de la piel escaldada estafilocóccica.",
+      "d": "Enfermedad de Hailey."
+    },
+    "correcta": "c",
+    "explicacion": "EI **Sindrome de la Piel Escaldada (SPE)** está causado por la acción sistémica de una exotoxina estafilocócica exfoliativa. Afecta fundamentalmente a niños y comienza súbitamente con fiebre y un exantema escarlatiniforme. Más tarde aparecen grandes ampollas flácidas y transparentes que se rompen con facilidad a la mínima fricción (signo de Nikolsky), dando lugar a amplias láminas de piel despegadas que dejan expuestas extensas áreas de color rojo brillante. S. aureus puede ser recuperado de un foco infeccioso distante. Se presta a diagnóstico diferencial con la necrólisis epidérmica tóxica (NET). La biopsia tomada de un área de descamación permite hacerlo; en el SPE, la separación es intraepidérmica, en la capa granulosa de la epidermis, mientras que en la NET es subepidérmica.\nFarreras, Medicina Interna, página 2438",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_059",
+    "materia": ["dermatologia", "nutricion"],
+    "submateria": ["Dermatología y sistémicas", "Nutrición y obesidad"],
+    "enunciado": "¿Cuál de las siguientes dermatosis nutricionales se caracteriza por la malabsorción de Zinc?",
+    "opciones": {
+      "a": "Acrodermatitis enteropática.",
+      "b": "Pelagra.",
+      "c": "Enfermedad de Hartnup.",
+      "d": "Frinodermia."
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de una enfermedad caracterizada por lesiones cutáneas de tipo flictenular en zonas periorificiales y acras asociadas a alopecia, diarrea, sintomatología neurológica compleja e inmunodeficiencia variable combinada. La enfermedad se produce por un trastorno congéníto de la absorción de cinc, pero también puede aparecer de forma secundaria en cirrosis hepática, pancreatitis crónica, cortocircuito yeyunoileal, enfermedad de Crohn y nutrición parenteral no adecuadamente suplementada. El tratamiento con cinc mejora las lesiones cutáneas y la diarrea.\nFarreras, Medicina Interna, página 169.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_060",
+    "materia": ["pediatria"],
+    "submateria": ["Neonatología"],
+    "enunciado": "¿Cuál es la complicación digestiva más frecuente en un Recién Nacido pretérmino de bajo peso al nacer, que presenta letargia y manifestaciones de acidosis metabólica?",
+    "opciones": {
+      "a": "Atrofia vellositaria.",
+      "b": "Vólvulo intestinal.",
+      "c": "Enterocolitis necrotizante.",
+      "d": "Reflujo gastroesofágico."
+    },
+    "correcta": "c",
+    "explicacion": "La **enterocolitis necrotizante (ECN)** es la urgencia vital digestiva más frecuente en el periodo neonatal. Se caracteriza por diversos grados de necrosis de la mucosa o de la pared intestinal. Su causa se desconoce, pero lo más probable es que sea multifactorial. La ECN se desarrolla sobre todo en neonatos prematuros con exposición al sustrato metabólico en el contexto de una inmunidad intestinal inmadura, disbiosis microbiana e isquemia de la mucosa. El mayor factor de riesgo de ECN es la prematuridad.\nNelson, Pediatría, página 951",
+    "explicacion_img": ["img/explicaciones/uba2017_060.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_061",
+    "materia": ["pediatria", "hematologia"],
+    "submateria": ["Hematología infantil", "Otras anemias"],
+    "enunciado": "Un niño de 2 años, quien es portador de anemia falciforme presenta tumefacción simétrica de las manos. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Osteomielitis",
+      "b": "Artritis reumatoide pauciarticular",
+      "c": "Síndrome mano pie (Dactilitis)",
+      "d": "Artritis juvenil"
+    },
+    "correcta": "c",
+    "explicacion": "La **dactilitis** o síndrome mano-pie es, con frecuencia, la primera manifestación dolorosa en los lactantes y niños con anemia drepanocítica, y al final del segundo año de vida se ha presentado en el 50% de los pacientes. La dactilitis a menudo se manifiesta como una tumefacción unilateral o simétrica de las manos y/o los pies. La dactilitis unilateral puede confundirse con una osteomielitis y es importante realizar una valoración cuidadosa para diferenciar las dos entidades, ya que el tratamiento de ambas difiere significativamente.\nNelson, Pediatria, página 2543.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_062",
+    "materia": ["pediatria", "cirugiageneral"],
+    "submateria": ["Patología del aparato digestivo", "Otras preguntas de cirugía general"],
+    "enunciado": "Usted asiste a un niño de 6 años por presentar desde hace 24 horas un cuadro caracterizado por dolor periumbilical. Posteriormente se agregan náuseas y anorexia y el dolor, que se ha reagudizado, se localiza ahora en el cuadrante inferior derecho. Al examen físico el abdomen se halla blando, depresible y doloroso en dicho cuadrante, con dolor a la descompresión y ruidos hidroaéreos presentes. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Apendicitis aguda",
+      "b": "Estreñimiento",
+      "c": "Gastroenteritis vírica",
+      "d": "Infección urinaria"
+    },
+    "correcta": "a",
+    "explicacion": "La secuencia típica de una **apendicitis aguda** incluye: dolor periumbilical, habitualmente vago, visceral y pobremente localizado; anorexia, náuseas o vómitos; dolor en fosa ilíaca derecha con defensa localizada y fiebre.\nGimenez, Cirugía, página 586.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_063",
+    "materia": ["pediatria", "nutricion"],
+    "submateria": ["Neonatología", "Otras preguntas de nutrición"],
+    "enunciado": "Usted recibe un neonato con ictericia, dificultad para alimentarse, hipoglucemia y cataratas. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Deficit de galactosinasa",
+      "b": "Galactosemia",
+      "c": "Deficit de piruvato dehidrogenasa",
+      "d": "Enfermedad de Hurler"
+    },
+    "correcta": "b",
+    "explicacion": "La **galactosemia** clásica es una enfermedad grave cuyos primeros síntomas aparecen tipicamente en la segunda mitad de la primera sernana de vida. Su incidencia estimada es de 1/60.000 nacidos vivos. El recién nacido recibe elevadas cantidades de lactosa (hasta el 40% en la leche materna y en ciertas leches preparadas), que está formada por glucosa y galactosa a partes iguales. Sin la enzima de transferencia, el lactante es incapaz de metabolizar la galactosa-1-fosfato, cuya acumulación causa lesiones en los riñones, el higado y el cerebro.\nEl diagnóstico del déficit de uridil transferasa se debe tener en cuenta en los recién nacidos o lactantes con cualquiera de los síntomas siguientes en los pocos días o semanas después de nacer: ictericia, hepatomegalia, vómitos, hipoglucemia, convulsiones, letargo, irritabilidad, dificultades para alimentarse, escasa ganancia de peso o dificultad para recuperar el peso al nacimiento y aminoaciduria. Los niños no tratados pueden manifestar cataratas nucleares, hemorragia vitrea, insuficiencia hepática, cirrosis, ascitis, esplenomegalia o discapacidad intelectual.\nNelson, Pediatría, página 789",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_064",
+    "materia": ["toxicologia", "nutricion"],
+    "submateria": ["Toxicología", "Metabolismo calcio – PTH"],
+    "enunciado": "Un joven de 16 años llega a la consulta porque presenta vómitos, anorexia, astenia, constipación y poliuria de instalación progresiva en las últimas semanas. En los exámenes de laboratorio solicitados se destacan: calcio sérico 13 mg/dl concentraciones elevadas de 25-D < a 150 ng/ml) e hiperfosfatemia. Una ecografía renal muestra signos de hipercalcinosis. Surge del interrogatorio que ha estado consumiendo suplementos vitamínicos diariamente durante los últimos siete meses, como parte de un programa de entrenamiento físico intensivo. ¿Al exceso de qué vitaminas se pueden atribuir estos hallazgos?",
+    "opciones": {
+      "a": "A",
+      "b": "C",
+      "c": "D",
+      "d": "B1"
+    },
+    "correcta": "c",
+    "explicacion": "Los signos y síntomas de la intoxicación por vitamina D se deben a la hipercalcemia, Las manifestaciones digestivas incluyen náuseas, vómitos, mala ingesta, estreñimiento, dolor abdominal y pancreatitis. A nivel cardíaco se pueden encontrar arritmias, hipertensión y acortamiento del intervalo QT. Los efectos a nivel del sistema nervioso central de la hipercalcemia incluyen obnubilación, hipotonia, confusión, desorientación, depresión, psicosis, alucinaciones y coma. La hipercalcemia altera los mecanismos de concentración renales, lo que se asocia a poliuria, deshidratación e hipernatremia. La hipercalcemia puede ocasionar una insuficiencia renal aguda, nefrolitiasis y nefrocalcinosis, que se asocian a insuficiencia renal crónica. Las muertes se deben a arritmias o deshidratación.\nLos hallazgos clásicos en la intoxicación por vitamina D incluyen hipercalcemia y concentraciones elevadas de 25-D (>100 ng/ml), hipercalciuria y PTH suprimida.\nTambién es frecuente encontrar hiperfosfatemia.\nNelson, Pediatría, página 384.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_065",
+    "materia": ["obstetricia"],
+    "submateria": ["Infecciones congénitas y perinatales"],
+    "enunciado": "El Screening para Streptococo beta agalactiae",
+    "opciones": {
+      "a": "Se realiza en forma universal entre las 35-36 semanas mediante un hisopado vaginal y perianal.",
+      "b": "Se realiza en forma universal entre las 35-36 semanas mediante un hisopado de la cavidad oral",
+      "c": "Se utiliza para prevenir una infección en la madre.",
+      "d": "Se efectúa mediante un hisopado de la cavidad oral, para iniciar antibiótico terapia antes del trabajo de parto."
+    },
+    "correcta": "a",
+    "explicacion": "La colonización genital por el estreptococo del grupo b (**S. agalactiae**) en cuello uterino y/o vagina produce flujo purulento armarillo-verdoso, sin prurito ni ardor. Está asociado con un aumento del riesgo de rotura prematura de membranas, corioamnionitis, parto prematuro e infección neonatal y puerperal. La transmisión de la madre colonizada al feto durante el parto puede resultar en una infección del recién nacido, en algunos casos grave.\nUna de las pautas de prevención es el enfoque basado en cultivos, que consiste en detectar colonización por EGB en todas las embarazadas entre las 32 y 35 semanas y a las que resultan portadoras, administrarles antibióticos intraparto.\nSchwarcz, Obstetricia, página 366",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_066",
+    "materia": ["obstetricia"],
+    "submateria": ["Amenazas de parto prematuro"],
+    "enunciado": "La maduración pulmonar se realiza:",
+    "opciones": {
+      "a": "Entre la semana 24 y 34",
+      "b": "Después de las 34 semanas",
+      "c": "Antes de las 24 semanas",
+      "d": "Entre las 22 y 24 semanas"
+    },
+    "correcta": "a",
+    "explicacion": "El sistema respiratorio se desarrolla a partir de la faringe a las 6 semanas de la amenorrea. Se forman sucesivamente la laringe, tráquea, bronquios y alvéolos. Éstos últimos comienzan a completar su formación alrededor de la semana 28 y la finalizan después del nacimiento. Esta edad es la que marca la división entre feto inmaduro y prematuro, pues aumentan considerablemente las posibilidades de supervivencia extrauterina.\nLos componentes tensioactivos (**surfactante**) son sintetizados en las células de las paredes alveolares y secretados hacia el alvéolo alrededor de las semanas 24 a 26.\nLa incorporación de la colina, otro hito fundamental en la supervivencia de los neonatos, se desarrolla normalmente a las 35 semanas.\nSchwarcz, Obstetricia, página 47",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_067",
+    "materia": ["infectologia"],
+    "submateria": ["Tropicales"],
+    "enunciado": "El diagnóstico de enfermedad de Chagas",
+    "opciones": {
+      "a": "Se realiza mediante la dupla serológica a saber HAI/IFI O HAI/ELISA",
+      "b": "Se realiza mediante la serología por el ELISA",
+      "c": "Se realiza por la presencia del signo de romaña",
+      "d": "Se realiza por la presencia de manifestaciones cardiacas en pacientes infectados."
+    },
+    "correcta": "a",
+    "explicacion": "La demostración de la presencia del parásito mediante técnicas directas, constituye el diagnóstico de certeza de la infección. Sin embargo, esto es posible durante la fase aguda de la infección.\nEn etapas posteriores, el diagnóstico de laboratorio se basa en la detección de anticuerpos específicos.\nLas pruebas serológicas se utilizan para detectar anticuerpos circulantes (Inmunoglobulinas G-lg() contra el parásito. Las IgGs pueden detectarse antes de los 30 días de ocurrida la infección aguda, alcanzando su nivel máximo al tercer mes. Con el fin de detectar IgG se pueden emplear los siguientes métodos diagnósticos: ensayo inmuno-enzimático (ELISA), inmunofluorescencia indirecta (IFI), hemaglutinación indirecta (HAI) y aglutinación con partículas de gelatina.\nSe deben utilizar dos técnicas con antígenos diferentes y distintos principios que permitan alcanzar un rango de sensibilidad entre 98 y 99.5%.\nLas duplas serológicas que garantizan este rango de sensibilidad podrían ser: HAI-IFI, ELISA IFI, HAI - ELISA ELISA - APG.\nTRAPS, Chagas y Lepra, página 27",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_068",
+    "materia": ["gastroenterologia"],
+    "submateria": ["Vía biliar"],
+    "enunciado": "¿Cuál de los siguientes son factores predisponentes para los cálculos de colesterol?:",
+    "opciones": {
+      "a": "Fibrosis quística",
+      "b": "Ayuno",
+      "c": "Hemólisis crónica",
+      "d": "Cirrosis alcohólica"
+    },
+    "correcta": "b",
+    "explicacion": "Cálculos de colesterol: El papel de la vesícula biliar en la formación de este tipo de cálculos es fundamental, ya que las alteraciones de su motilidad debido a causas endogenas o exógenas derivarán en estasis biliar, favoreciendo la etapa de nucleación.\nGimenez, Cirugía, página 432.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_069",
+    "materia": ["obstetricia", "hematologia"],
+    "submateria": ["Enfermedad hemolítica fetal", "Terapia transfusional"],
+    "enunciado": "En la Enfermedad hemolítica perinatal, la inmuno profilaxis se realiza en puérperas:",
+    "opciones": {
+      "a": "RH negativa que han tenido un recién nacido RH positivo",
+      "b": "RH negativa que han tenido un recién nacido RH negativo",
+      "c": "RH negativa que han tenido un recién nacido RH positivo con prueba de Coombs directa positiva.",
+      "d": "RH negativa con recién nacido RH positivo y prueba de Coombs directa negativa."
+    },
+    "correcta": "d",
+    "explicacion": "La EHP (Enfermedad Hemolítica Perinatal) Rh, considerada como un modelo ideal en la medicina perinatal, muestra la integración del mecanismo patológico, etiología, modificaciones fisiopatológicas, medidas de tratamiento y sobre todo, acciones de prevención. La sensibilización por anti-D es la causa del 80-90% de las enfermedades hemolíticas clínicamente significativas del feto y recién nacido. En una madre Rh negativo si el feto es Rh positivo y ABO incompatible el riesgo de inmunización por Rh es de un 1,5% a 2%; si tiene un aborto espontáneo es del 2% y entre el 4% y el 5% si tiene una interrupción provocada. Toda mujer D negativo no sensibilizada al Ag D deberá recibir gammaglobulina hiperinmune Anti-D, por lo tanto recomendamos hacerlo en cualquiera de las siguientes circunstancias: Puerperio dentro de las 72 horas (parto espontáneo o quirúrgico): si el bebé es grupo y factor positivo, con **coombs directa negativa**. Hemorragias del embarazo: Amenaza de aborto Post aborto completo o incompleto, seguido o no de evacuación uterina Embarazo ectópico..\nEnfermedad trofoblástica gestacional.\nPlacenta previa sangrante. Manipulaciones durante intentos de versión externa. Trauma abdominal.\n- Procedimientos invasivos: punción de vellosidades coriales, amniocentesis.\nGuía de Control preconcepcional, prenatal y puerperal, página 85",
+    "explicacion_img": ["img/explicaciones/uba2017_069.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_070",
+    "materia": ["obstetricia", "endocrinologia"],
+    "submateria": ["Patología materna y gestación", "Tiroides"],
+    "enunciado": "Señale la opción correcta en el manejo del hipertiroidismo durante el embarazo:",
+    "opciones": {
+      "a": "Seguimiento de concentración de T4 cada 2 a 4 semanas.",
+      "b": "Realización de ecografía durante el primer trimestre del embarazo para evaluar respuesta del tratamiento.",
+      "c": "Se considera rango normal de T4 tres veces por encima del valor de T4 de la no embarazada.",
+      "d": "Dosaje de TSH cada 2 semanas."
+    },
+    "correcta": "a",
+    "explicacion": "Las determinaciones seriadas de T4 una vez por mes serían útiles para controlar el tratamiento.\nSchwarcz, Obstetricia, página 406.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_071",
+    "materia": ["obstetricia", "infectologia"],
+    "submateria": ["Infecciones congénitas y perinatales", "ITS"],
+    "enunciado": "Si se confirma sífilis en una embarazada por las pruebas serológicas pero nunca se evidenció la clínica de la enfermedad y es de evolución desconocidan¿Cuántas dosis Ud. Le indicaría de Penicilina Benzatínica?",
+    "opciones": {
+      "a": "Una dosis",
+      "b": "Dos dosis",
+      "c": "Tres dosis",
+      "d": "Ninguna pues debe ser un falso positivo."
+    },
+    "correcta": "c",
+    "explicacion": "Guía de prevención de la transmisión perinatal de sífilis, hepatitis B y VIH, página 3",
+    "explicacion_img": ["img/explicaciones/uba2017_071.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_072",
+    "materia": ["obstetricia"],
+    "submateria": ["Complicaciones maternas en el embarazo"],
+    "enunciado": "¿Cuál es el tratamiento de elección para la prevención de recurrencia de convulsiones para una paciente que presenta Eclampsia?",
+    "opciones": {
+      "a": "Fenitoina",
+      "b": "Cóctel lítico",
+      "c": "Sulfato de Magnesio",
+      "d": "Diazepam"
+    },
+    "correcta": "c",
+    "explicacion": "Existe suficiente evidencia de que el **Sulfato de Magnesio** debe ser utilizado como droga de primera línea para la prevención de las convulsiones eclámpticas en mujeres durante el embarazo, parto o puerperio con preeclampsia grave.\nGUÍA PARA EL DIAGNÓSTICO Y TRATAMIENTO DE LA HIPERTENSIÓN EN EL EMBARAZO, página 20",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_073",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "El sangrado masivo en Obstetricia se define como:",
+    "opciones": {
+      "a": "Descenso del hematocrito más de 10 puntos.",
+      "b": "Descenso de la hemoglobina mayor a 8 gramos/dl.",
+      "c": "Pérdida brusca de 500 ml.",
+      "d": "Pérdida de más del 30% de la volemia"
+    },
+    "correcta": "a",
+    "explicacion": "Diferentes definiciones de sangrado masivo en obstetricia (consenso Fasgo):\n- Pérdida (brusca) mayor a 1500 mL\n- Pérdida > 150 ml/min por más de 20 minutos\n- Pérdida de más del 50% de la volemia en < 3 horas\n- Descenso del hematocrito > 10 puntos\n- Descenso de la hemoglobina > 4 g/dL\n- Requerimiento transfusional agudo mayor a cuatro unidades\n- Sangrado activo y continuado que amenace la estabilidad hemodinámica de la paciente (usualmente mayor, pero no excluyente, a 1000-1500 mL)",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_074",
+    "materia": ["ginecologia", "otras"],
+    "submateria": ["Anticoncepción", "Fármacos"],
+    "enunciado": "¿Cuál de los siguientes gestágenos, usados en anticonceptivos orales, tiene menor efecto sobre el metabolismo lipídico?",
+    "opciones": {
+      "a": "Medroxiprogesterona",
+      "b": "Desogestrel",
+      "c": "Clomifeno",
+      "d": "Noretisterona"
+    },
+    "correcta": "b",
+    "explicacion": "Criterios de elegibilidad: Una de las ventajas de estos métodos es que existen situaciones específicas en las que puede optarse por AOPS (categorías 1 y 2 de los Criterios de elegibilidad de la OMS) mientras que los anticonceptivos combinados con estrógenos no podrían utilizarse (categorías 3 y 4):\n- Desde el postparto inmediato, con o sin lactancia. Fumadora mayor a 35 años.\n- Múltiples factores de riesgo para la enfermedad cardiovascular arterial. Hipertensión.\n- Antecedentes de Trombosis Venosa Profunda y Embolismo Pulmonar, o actual con tratamiento anticoagulante. Cirugía mayor con inmovilización prolongada.\n- Enfermedad valvular cardíaca complicada. Enfermedad cardíaca isquémica activa o pasada, o antecedente de ACV si inicia el método.\n- Mutaciones trombogénicas conocidas. Migraña sin aura. Migraña con aura si inicia el método.\n- Diabetes con neuropatías, retinopatía, neuropatía, o con otra enfermedad vascular o DBT de más de 20 años de evolución..\n- Patología de vesícula biliar sintomática con tratamiento médico o en curso.\n- Antecedentes de colestasis asociada a uso de ACO.\nMétodos Anticonceptivos: Guía práctica para profesionales de la salud, página 137",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_075",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Como nuevas tecnologías se encuentra el anillo vaginal en anticoncepción. Considere la correcta: Este anillo se coloca:",
+    "opciones": {
+      "a": "Durante 21 días y se retira una semana.",
+      "b": "Antes de la relación sexual y luego se lo retira",
+      "c": "Durante 12 días, debiéndose reinsertar luego un nuevo anillo.",
+      "d": "Durante 7 días, debiéndose reinsertar luego un nuevo anillo."
+    },
+    "correcta": "a",
+    "explicacion": "Cada anillo tiene un ciclo de uso. Una vez inserto en la vagina, se mantiene colocado tres semanas. En la cuarta semana se lo retira, y se producirá el sangrado. Ese anillo se descarta. Al término de 7 días libres de anillo debe insertarse otro nuevo.\nMétodos Anticonceptivos: Guía práctica para profesionales de la salud, página 129",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_076",
+    "materia": ["ginecologia", "imagenes"],
+    "submateria": ["Patología benigna de mama", "Otras preguntas de diagnóstico por imágenes"],
+    "enunciado": "Indique la opción correcta respecto de la mamografía:",
+    "opciones": {
+      "a": "Se debe realizar en el control del segundo trimestre del embarazo.",
+      "b": "Sirve para diferenciar imágenes sólidas de quísticas.",
+      "c": "Es de gran utilidad en las pacientes más jóvenes.",
+      "d": "Se debe realizar entre los 35 y 40 años de edad una mamografía de base."
+    },
+    "correcta": "d",
+    "explicacion": "Como mamografía de base, las recomendaciones para la población asintomática son:\n- Entre los 35 y 40 años de edad, una mamografía de base.\n- Entre los 40 y 50 años de edad, una mamografia cada 1 o 2 años, de acuerdo con los antecedentes.\n- A partir de los 50 años una mamografía anual.\nGori, Ginecología, página 913\nSi bien es controvertido en otras guías la mamografía de base, las otras opciones son francamente incorrectas.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_077",
+    "materia": ["ginecologia"],
+    "submateria": ["Vulva / Vagina / Cáncer de vulva"],
+    "enunciado": "Las fístulas rectovaginales, son las más frecuentes de este tipo de fístulas e intervienen varios factores. ¿Cuál es la correcta?",
+    "opciones": {
+      "a": "Las de origen actínico en general son tardías por necrosis del tabique rectovaginal.",
+      "b": "Las de causa obstétrica se deben a una lesión quirúrgica.",
+      "c": "Son sumamente raras y son casi siempre de naturaleza traumática.",
+      "d": "Su localización en general es alta en la vagina o en la cúpula vaginal."
+    },
+    "correcta": "a",
+    "explicacion": "Las fistulas actinogenéticas se observan de preferencia después de la aplicación de braquiterapia en caso de lesiones genitales malignas; se instalan tempranamente si el tejido neoplásico se funde por la acción de las radiaciones o, por el contrario, pueden establecerse largo tiempo después de su empleo cuando una dosis excesiva ha provocado serias lesiones vasculares (radionecrosis).\nGori, Ginecologia, página 894",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_078",
+    "materia": ["ginecologia", "oncologia"],
+    "submateria": ["Cáncer de mama", "Conceptos de Oncología"],
+    "enunciado": "Se considera que el tratamiento inicial de una paciente con diagnóstico de cáncer de mama es quirúrgico cuando:",
+    "opciones": {
+      "a": "No tiene metástasis a distancia",
+      "b": "Tiene compromiso de piel",
+      "c": "Tiene úlcera y eritema",
+      "d": "Posee infiltración cutánea"
+    },
+    "correcta": "a",
+    "explicacion": "Se considera que el tratamiento inicial es quirúrgco si:\n- no tiene metástasis a distancia\n- no tiene compromiso de piel: nódulos dérmicos, úlcera, eritema, infiltración cutánea (la retracción de la piel no se considera contraindicación)",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_079",
+    "materia": ["hematologia"],
+    "submateria": ["Anemias hemolíticas"],
+    "enunciado": "¿Cuál de las siguientes es causa de anemia con un índice de producción de reticulocitos mayor o igual a 2,5?",
+    "opciones": {
+      "a": "Talasemia",
+      "b": "Nefropatía",
+      "c": "Efectos tóxicos de fármacos",
+      "d": "Hemólisis intravascular"
+    },
+    "correcta": "d",
+    "explicacion": "La enfermedad hemolítica, a pesar de ser impresionante, constituye una de las formas menos frecuentes de anemia. La posibilidad de que se conserve el indice elevado de producción de reticulocitos representa la capacidad de la médula eritroide para compensar la hemólisis y, en caso de hemólisis extravascular, el reciclado eficiente de hierro obtenido de eritrocitos destruidos, que sirve de apoyo para la producción de estas células. En el caso de **hemólisis intravascular**, como en la hemoglobinuria paroxística nocturna, la pérdida de hierro puede limitar la respuesta medular. El grado de respuesta depende de la intensidad de la anemia y la naturaleza del cuadro patológico primario.\nHarrison, Medicina Interna, página 392",
+    "explicacion_img": ["img/explicaciones/uba2017_079.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_080",
+    "materia": ["ginecologia"],
+    "submateria": ["Vulva / Vagina / Cáncer de vulva"],
+    "enunciado": "La Neoplasia intraepitelial vaginal (VAIN) se caracteriza por cambios progresivos intraepiteleales. ¿Cuál considera correcta?.",
+    "opciones": {
+      "a": "Presenta una incidencia de 0.2 al 0.3 por 100000 mujeres",
+      "b": "Representa el 1% de las neoplasias intraepiteliales del tracto genital inferior",
+      "c": "El 30% se encuentra asociado con otras neoplasias intraepiteliales",
+      "d": "El 40% se relaciona con el papiloma virus humano (HPV)"
+    },
+    "correcta": "a",
+    "explicacion": "La VAIN, al igual que el cuello uterino, se relaciona con distintos tipos de HPV; en las lesiones de bajo grado predominan los tipos 6 y 11 y en los de alto grado, 16 y 18.\nNo se conoce con precisión la verdadera incidencia de la VAIN, pero se calcula una frecuencia de **0,2 a 0,3 casos cada 100000 mujeres**.\nGori, Ginecologia, página 816",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_081",
+    "materia": ["infectologia"],
+    "submateria": ["ITS"],
+    "enunciado": "Señale la opción correcta con respecto a la sífilis:",
+    "opciones": {
+      "a": "El periodo de incubación es de 9 a 120 días (promedio 31 días)",
+      "b": "El periodo de incubación es de 9 a 60 días (promedio 21 días)",
+      "c": "La vía de contagio es exclusivamente sexual",
+      "d": "La sífilis latente es aquella que se manifiesta por reacciones serológicas y por la prueba de campo oscuro"
+    },
+    "correcta": "b",
+    "explicacion": "La sífilis es una infección crónica generalizada causada por Treponema pallidum, subespecie pallidum, la cual suele transmitirse por via sexual y se caracteriza por episodios de actividad separados por periodos de latencia. Después de un periodo de incubación de 2 a 6 semanas aparece una lesión primaria, a menudo acompañada de linfadenopatia regional, que desaparece sin tratamiento.\nHarrison, Medicina Interna, página 1279.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_082",
+    "materia": ["gastroenterologia", "oncologia"],
+    "submateria": ["Hígado", "Conceptos de Oncología"],
+    "enunciado": "El CA 19.9 es un marcador tumoral que se encuentra generalmente elevado en:",
+    "opciones": {
+      "a": "Carcinoma seroso del ovario.",
+      "b": "Carcinoma de endometrio.",
+      "c": "En cáncer digestivo y en menor medida en mama",
+      "d": "Tumores de las células germinales."
+    },
+    "correcta": "c",
+    "explicacion": "El antígeno canceroso 19-9 (CA 19-9) es un antigeno relacionado con tumores que al principio se definió como un anticuerpo monoclonal producido por un hibridoma preparado a partir de células de bazo murino inmunizadas con una linea celular de cáncer colorrectal.\nEl marcador tumoral utilizado con mayor frecuencia como auxiliar en el diagnóstico de colangiocarcinoma es CA 19-9, que tiene una sensibilidad de 79% y especificidad de 98%, si el valor sérico es >129 U/ml. Sin embargo, los incrementos ligeros de CA 19-9 pueden encontrarse en colangitis, en otras neoplasias Gl y ginecológicas, y en pacientes que carecen del antígeno del tipo sanguíneo Lewis.\nSchwartz, Cirugía, página 1162,",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_083",
+    "materia": ["ginecologia"],
+    "submateria": ["Vulva / Vagina / Cáncer de vulva"],
+    "enunciado": "El cáncer de vagina es un tumor poco frecuente, con una incidencia del 2% de los tumores ginecológicos. Señale la correcta:",
+    "opciones": {
+      "a": "Epidemiológicamente son tumores que afectan a una edad entre 25 y 55 años.",
+      "b": "Estadio I, carcinoma limitado a la pared vaginal.",
+      "c": "Estadio III, carcinoma que compromete el tejido subvaginal y no se extiende a la pared pelviana.",
+      "d": "El más frecuente es el adenocarcinoma de células claras."
+    },
+    "correcta": "b",
+    "explicacion": "El adenocarcinoma, en especial el tumor de células claras, presenta una posible relación con la exposición intrauterina al dietilestilbestrol, pero sin embargo existe un número importante de casos que no presentan este tipo de relación.\nSe desarrolla en mujeres muy jóvenes, con un promedio de edad de 19 años.\nEl melanoma es muy raro y, a diferencia del anterior, se presenta en mujeres de más de 55 años, en estadios generalmente avanzados.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_084",
+    "materia": ["obstetricia", "oncologia"],
+    "submateria": ["Hemorragias del embarazo", "Conceptos de Oncología"],
+    "enunciado": "Los tumores trofoblásticos gestacionales son raros en el mundo occidental, pero altamente curables. Elija la opción correcta. El Coriocarcinoma es la forma histológica:",
+    "opciones": {
+      "a": "Maligna más frecuente, es muy quimiosensible.",
+      "b": "Maligna menos frecuente y quimio-resistente.",
+      "c": "Maligna más frecuente y es quimio-resistente.",
+      "d": "Más rara."
+    },
+    "correcta": "a",
+    "explicacion": "El coriocarcinoma es una neoformación maligna del útero originada en el corion y emigrada a las deciduas, es el resultado alejado de una mola vesicular después de su expulsión. Corresponde al 10% de las molas en mujeres jóvenes.\nEl tratamiento curativo se realiza con quimioterapia con metotrexato (ametopterina).\nSchwarcz, Obstetricia, página 255.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_085",
+    "materia": ["ginecologia", "endocrinologia"],
+    "submateria": ["Infertilidad / Esterilidad / Reproducción asistida", "Desarrollo sexual"],
+    "enunciado": "La falla Ovárica Oculta afecta a un grupo de pacientes con insuficiente dotación folicular ovárica, en presencia de ciclos menstruales regulares. ¿Cuál es la correcta?:",
+    "opciones": {
+      "a": "Se caracteriza por presentar FSH basales elevadas (mayor a 20 UI/ML) o estradiol superior a 75 pg/ml.",
+      "b": "Se caracteriza por presentar FSH basales elevadas (mayor a 10 UI/ML) o estradiol de 30 pg/ml.",
+      "c": "Se caracteriza por presentar FSH basales elevadas (mayor a 15 Ul/ML) o estradiol superior a 75 pg/ml.",
+      "d": "Hay una producción inadecuada de progesterona por parte del cuerpo amarillo, posiblemente como consecuencia directa de una génesis folicular anormal"
+    },
+    "correcta": "a",
+    "explicacion": "La reserva ovárica se evalúa mediante:\n- Perfil hormonal de día 2-3 del ciclo: FSH, relación FSH/LH y estradiol.\n- Ecografía ginecológica transvaginal del día 2-3 del ciclo para recuento de folículos antrales y volumen ovárico.\nActualmente el recuento de folículos antrales es considerado el mejor test para predecir la respuesta ovárica y la reserva ovárica.\n- Conteo de folículos antrales por ecografía > 8 satisfactoria.\n- Conteo de folículos antrales por ecografia < 4 baja reserva.\n- Hormona antimulleriana: se utiliza en aquellas usuarias con valores de FSH alterado y recuento de foliculos antrales bajo.\nSu utilización debe ser considerada por el especialista en fertilidad.\nGUÍA SOBRE FERTILIDAD PARA EQUIPOS DE ATENCIÓN PRIMARIA DE LA SALUD, página 54\nDosaje hormonal en el día 3 del ciclo: permite conocer la reserva ovárica de las pacientes a través de la determinación de las hormonas foliculoestimulante (FSH) y luteinizante (LH), el estradiol (E2), la prolactina (PRL) y la tirotropina (TSH).\nPrueba del clomifeno: se trata de una prueba funcional que consiste en estimular a la mujer con 100 mg/dia de citrato de clomifeno desde el quinto al noveno día del ciclo, evaluando los niveles de FSH el cuarto y el séptimo día.\nSe considera patológico cuando la suma de ambas FSH es superior a 24 mUl/mL.\nGori, Ginecología, página 424",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_086",
+    "materia": ["endocrinologia", "ginecologia"],
+    "submateria": ["Otras preguntas de endocrinología", "Climaterio y menopausia"],
+    "enunciado": "Los estrógenos son hormonas capaces de producir y mantener las características femeninas en la mujer. Su administración produce:",
+    "opciones": {
+      "a": "Aumento de HDL y LDL colesterol",
+      "b": "Aumento de HDL y disminución del LDL colesterol",
+      "c": "Disminución del HDL y aumento del LDL colesterol",
+      "d": "Disminución de los triglicéridos y del HDL colesterol"
+    },
+    "correcta": "b",
+    "explicacion": "Los estrógenos elevan un poco los triglicéridos séricos y reducen levemente el colesterol sérico total. Incrementan la concentración de lipoproteína de alta densidad (HDL, high-density lipoprotein) y reducen la de la lipoproteína de baja densidad (LDL, low-density lipoprotein) y de la lipoproteína A (LPA).\nGoodman y Gilman, Farmacología, página 746",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_087",
+    "materia": ["ginecologia", "pediatria"],
+    "submateria": ["Otras preguntas de ginecología", "Neonatología"],
+    "enunciado": "Las vías genitales se forman en la mujer a partir de los conductos de Muller. Considere la más correcta:",
+    "opciones": {
+      "a": "Entre la 6º y 9º semana transcurre la etapa de la formación tubárica exclusivamente.",
+      "b": "Entre la 6º y 9º semana transcurre la etapa de la formación tubárica, uterina y cérvico vaginal.",
+      "c": "En la 8º semana se unen los conductos de Muller",
+      "d": "En la 5º semana transcurre la etapa de la formación tubárica."
+    },
+    "correcta": "b",
+    "explicacion": "Las vias genitales primitivas tienen la misma conformación en ambos sexos hasta la sexta semana. Los conductos de Müller se desarrollan independientemente a lo largo del conducto de Wolff. A partir de la primera semana, la gónada, hasta ese momento indiferente, comienza a evolucionar para transformarse en ovario. En la octava semana, los conductos de Müller, que se hallan adosados por debajo del cruzamiento con el ligamento inguinal, sufren un proceso de fusión que comienza en su parte inferior, para proseguir ascendiendo y transformarse en el conducto uterovaginal. El conducto de Müller, ingresa en el seno urogenital y forma, para algunos autores, la totalidad de la vagina, y para otros, parte de ella. Al finalizar el tercer mes, la porción superior del conducto uterovaginal se destaca por el grosor de sus paredes y la formación de los fondos de saco vaginales; dará origen al epitelio del endometrio.\nGori, Ginecología, página 25",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_088",
+    "materia": ["ginecologia"],
+    "submateria": ["Endometriosis"],
+    "enunciado": "Se define a la endometriosis (EDT) como la presencia de glándulas endometriales y estroma funcionante. Considere la correcta:",
+    "opciones": {
+      "a": "Las células T citotóxicas y las natural killer (NK, asesinas) actúan como segunda línea de defensa del sistema inmune.",
+      "b": "Las mujeres con EDT tienen una alteración en la actividad de los linfocitos B y anticuerpos anormales.",
+      "c": "Las células T citotóxicas no están involucradas en la histólisis directa de las células foráneas.",
+      "d": "La reabsorción del tejido endometrial deportado por el flujo retrógrado no está a cargo del sistema inmune."
+    },
+    "correcta": "b",
+    "explicacion": "El desequilibrio entre linfocitos By Ty la respuesta inmunitaria alterada llevaría a la aparición de autoanticuerpos, lo cual hace probable que los diferentes grados de reacción plástica peritoneal revelen respuestas autoinmunitarias variadas.\nGori, Ginecología, página 548",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_089",
+    "materia": ["oftalmologia"],
+    "submateria": ["Glaucoma"],
+    "enunciado": "¿Cuál es el tipo de defecto atribuible a glaucoma que se encuentra en el campo visual?",
+    "opciones": {
+      "a": "Cuadrantanopsia.",
+      "b": "Escotoma arcuato.",
+      "c": "Escotoma central.",
+      "d": "Cuadrantopsia."
+    },
+    "correcta": "b",
+    "explicacion": "La consecuencia funcional de esta destrucción progresiva de fibras nerviosas es la aparición de defectos glaucomatosos en el campo visual.\nAl principio, se producen alteraciones en la zona periférica y en el área perimacular.\nDespués aparecen el escotoma de Bjerrum (**escotoma arcuato**) y el escalón nasal de Ronne, la reducción del campo a un islote central y a otro temporal inferior, y finalmente queda un īslote temporal.\nSi se pierde este islote, el resultado final es la amaurosis.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_090",
+    "materia": ["hematologia", "oncologia"],
+    "submateria": ["Mieloproliferativas crónicas", "Conceptos de Oncología"],
+    "enunciado": "¿Cuál de los siguientes tumores se asocia a eritrocitosis como síndrome paraneoplásico?",
+    "opciones": {
+      "a": "Cáncer de pulmón",
+      "b": "Hepatocarcinoma",
+      "c": "Cáncer de próstata",
+      "d": "Cáncer de mama"
+    },
+    "correcta": "b",
+    "explicacion": "La mayor parte de las eritrocitosis paraneoplásicas se deben a la producción ectópica de eritropoyetina por las células cancerosas. Esa eritropoyetina ectópica estimula la producción de eritrocitos en la médula ósea y hace que el hematocrito aumente. Cerca de 3% de los individuos con carcinoma de células renales padece eritrocitosis, 10% de los afectados con hepatomas y 15% de los casos de hemangioblastomas cerebelosos.\nHarrison, Medicina Interna, página 612",
+    "explicacion_img": ["img/explicaciones/uba2017_090.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_091",
+    "materia": ["toxicologia", "cardiologia"],
+    "submateria": ["Toxicología", "Insuficiencia cardíaca"],
+    "enunciado": "¿Cuál es la causa de muerte en un cuadro de picadura por escorpión?",
+    "opciones": {
+      "a": "Deshidratación severa",
+      "b": "Insuficiencia hepática",
+      "c": "Insuficiencia renal",
+      "d": "Shock cardiogénico"
+    },
+    "correcta": "d",
+    "explicacion": "Si el cuadro progresa, aparecen crisis de hipotensión, bradicardia, hipotermia y leucocitosis, hiperglucemia, aumento de CPK, aumento de amilasa, hiponatremia, hipokalemia, edema agudo de pulmón, distrés respiratorio, falla de bomba, alteraciones cardíacas como ST negativo, falla en la fracción de eyección y prolapso de válvulas, convulsiones, paro cardiorrespiratorio y coma.\nDamin, Toxicología, Capítulo 6.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_092",
+    "materia": ["cardiologia"],
+    "submateria": ["Cardiología básica"],
+    "enunciado": "Si en el electrocardiograma de un paciente se observa un QRS isodifásico en D1, el eje cardiaco en el plano frontal se encuentra en:",
+    "opciones": {
+      "a": "0°",
+      "b": "30°",
+      "c": "60°",
+      "d": "90°"
+    },
+    "correcta": "d",
+    "explicacion": "CALCULO RAPIDO DEL EJE ELECTRICO\n- SI QRS EN DI Y AVF ES POSITIVO, EL EJE ES NORMAL\n- SI EN AMBAS ES NEGATIVO, EL EJE TIENE DESVIACION EXTREMA\n- SI ES NEGATIVA EN DI Y POSITIVA EN AVF, EL EJE ESTA DESVIADO A LA DERECHA\n- SI ES POSITIVO EN DI Y NEGATIVO EN AVF, EL EJE ESTA DESVIADO A LA IZQUIERDA",
+    "explicacion_img": ["img/explicaciones/uba2017_092.jpg"],
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_093",
+    "materia": ["hematologia"],
+    "submateria": ["Coagulación"],
+    "enunciado": "Si un enfermo presenta una deficiencia de los factores de la coagulación dependientes de la vitamina K presentará:",
+    "opciones": {
+      "a": "Tiempo de sangría prolongado",
+      "b": "Tiempo de sangría y tiempo de trombina prolongados",
+      "c": "Tiempo de tromboplastina parcial activada (APTT o KPTT) y tiempo de protrombina (de Quick) prolongados",
+      "d": "Tiempo de sangría, KPTT y tiempo de Quick prolongados"
+    },
+    "correcta": "c",
+    "explicacion": "En los pacientes con sangrado por deficiencia de vitamina K, el tiempo de protrombina (TP) está prolongado. Este TP se debe interpretar en función de la edad del paciente porque está prolongado en los neonatos normales. El tiempo parcial de tromboplastina (TPT) suele estar prolongado, pero puede ser normal en las deficiencias precoces; el factor VII tiene la semivida más corta de todos los factores de la coagulación y es el primero en verse afectado por la deficiencia de vitamina K, pero la deficiencia aislada de este factor no afecta al TPT.\nNelson, Pediatría, página 386.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_094",
+    "materia": ["neurologia"],
+    "submateria": ["Otras preguntas de neurología"],
+    "enunciado": "Las lesiones talámicas se caracterizan por:",
+    "opciones": {
+      "a": "Afectación de la artería estriada lateral.",
+      "b": "Producen un impacto importante en el hemicuerpo contralateral principalmente por afectación de vías sensitivas",
+      "c": "No afectar los sistemas motores ni circuitos cognitivos.",
+      "d": "No comprometer las vías nociceptivas."
+    },
+    "correcta": "b",
+    "explicacion": "Los trastornos sensitivos en las lesiones talámicas ocurren por lesión del núcleo ventral-posterolateral, donde hacen sinapsis todas las aferencias somestésicas. El defecto sensitivo depende de la extensión de la lesión y puede limitarse a cara y mano (queiro-oral), a cara, mano y pie (queiro-oro-podal) o extenderse al hemicuerpo. Las lesiones en el tálamo son las que, característicamente, se acompañan de dolor neuropático de tipo central. La semiología de las lesiones subcorticales en las radiaciones de la cápsula es similar a la de las talámicas.\nFarreras, Medicina Interna, página 1308",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_095",
+    "materia": ["traumatologia", "neurologia"],
+    "submateria": ["Otras preguntas de traumatología", "SNP"],
+    "enunciado": "¿De qué segmentos medulares se originan las raíces nerviosas motoras del nervio femoral?",
+    "opciones": {
+      "a": "L1, L2 Y L3.",
+      "b": "L2, L3 Y L4",
+      "c": "L3, L4 Y S1.",
+      "d": "L4, S1 Y S2."
+    },
+    "correcta": "b",
+    "explicacion": "El nervio femoral por lo general se origina de tres raíces: L2, L3 y L4, que se reúnen en el espesor del psoas mayor, algo por debajo del proceso [apófisis] transverso de la 5.ª vértebra lumbar.\nLatarjet, Anatomía, página 802",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_096",
+    "materia": ["pediatria", "cardiologia"],
+    "submateria": ["Cardiopatías congénitas", "Cardiología básica"],
+    "enunciado": "Indique cuál es el origen de los tejidos embrionarios que forman parte del corazón:",
+    "opciones": {
+      "a": "Del mesodermo lateral de la placa cardiogénica y endodermo.",
+      "b": "Únicamente del mesodermo lateral somático.",
+      "c": "Del mesodermo lateral somático y septum transverso.",
+      "d": "Del mesodermo lateral, crestas neurales y mesénquima extracardiaco del septum transverso."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_097",
+    "materia": ["pediatria", "neumonologia"],
+    "submateria": ["Fibrosis quística", "Fibrosis quística"],
+    "enunciado": "¿Cómo será la descendencia de una mujer afectada de enfermedad fibroquística del páncreas (autosómica recesiva) con un varón sano no portador?:",
+    "opciones": {
+      "a": "El 100% de sus hijas mujeres serán portadoras",
+      "b": "El 100% de sus nietas serán portadoras",
+      "c": "El 25% de su descendencia estará afectada",
+      "d": "El 25% de su descendencia será homocigota dominante"
+    },
+    "correcta": "a",
+    "explicacion": "Existe herencia ligada al cromosoma X dominante y recesiva. Como los individuos masculinos sólo portan un cromosoma X (XY) en el caso de heredar el alelo enfermo, siempre serán fenotípicamente enfermos.\nX recesiva. Todas las hijas de un varón enfermo serán portadoras sanas.\nNo se transmite nunca de padre enfermo a hijo varón enfermo (ya que el padre sólo transmite su cromosoma Y a los hijos varones).\nX dominante. Pueden existir mujeres afectadas, aunque la gravedad de la afectación suele ser menor que en los varones afectados.\nEsto se explica debido al fenómeno de Lyon o inactivación de un cromosoma X en las mujeres.\nEn cada célula XX uno de los dos cromosomas X está inactivado, esta inactivación es independiente para cada célula y clásicamente se ha definido como aleatoria.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_098",
+    "materia": ["urologia_cx"],
+    "submateria": ["Andrología, disfunción eréctil y cáncer de pene"],
+    "enunciado": "El principal componente de la barrera hemato-testicular está constituido por:",
+    "opciones": {
+      "a": "Endotelio capilar peritubular",
+      "b": "Células de Sertoli",
+      "c": "Membrana basal del tubo seminífero",
+      "d": "Células mioides"
+    },
+    "correcta": "b",
+    "explicacion": "El complejo de unión célula de Sertoli-célula de Sertoli crea una barrera de permeabilidad llamada barrera hematotesticular. Esta barrera es esencial para establecer una compartimentalización fisiológica dentro del epitelio seminífero en lo que se refiere a la composición de iones, aminoácidos, hidratos de carbono y proteínas.\nRoss, Histología, página 848",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_099",
+    "materia": ["otras"],
+    "submateria": ["Otras"],
+    "enunciado": "El nucleosoma está compuesto por:",
+    "opciones": {
+      "a": "Una parte fibrilar densa y una parte granular periférica.",
+      "b": "Ribonucleoproteínas ricas en uridina.",
+      "c": "Por un octámero de histonas (H2A, H2B, H3 y H4) más ADN.",
+      "d": "Un octámero de proteínas ácidas más ADN"
+    },
+    "correcta": "c",
+    "explicacion": "Las partículas centrales o cores del nucleosoma corresponden a las cuentas visibles por microscopía electrónica. Un análisis detallado de estas partículas demostró que contienen 147 pares de bases de ADN enrolladas 1,67 veces alrededor del centro de histonas formado por dos moléculas de H2A, H2B, H3 y H4 (las histonas del centro). Una molécula de la quinta histona, H1, se encuentra unida al ADN cuando entra en una particula central o core del nucleosoma. Esto forma una subunidad de cromatina llamada cromatosoma, compuesto por 166 pares de bases de ADN envuelto alrededor del centro de histonas y sujeto en su lugar por H1 (una histona de enlace).\nLa Célula, Cooper, página 173.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  },
+  {
+    "id": "uba_2017_100",
+    "materia": ["infectologia"],
+    "submateria": ["Brucella / Nocardia / Actinomicosis"],
+    "enunciado": "La muestra más apropiada para el diagnóstico de la brucelosis es:",
+    "opciones": {
+      "a": "Orina para cultivo.",
+      "b": "Sangre para hemocultivos y pruebas serológicas.",
+      "c": "Materia fecal para cultivo y detección de toxinas.",
+      "d": "Orina para detección de antígenos por aglutinación."
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico definitivo requiere el aislamiento de Brucella, habitualmente en los hemocultivos. Los sistemas automatizados de tipo Bacted 9200 son muy eficaces y suelen recuperar el microorganismo en la primera semana. En la infección por B. melitensis, los hemocultivos son positivos en más del 75% en la enfermedad inicial y en el 60% de recaídas.\nFarreras, Medicina Interna, 19a Edición, página 2138.",
+    "imagenes": [],
+    "examen": "UBA",
+    "anio": 2017,
+    "oficial": true,
+    "fuente": "oficial"
+  }
+]
