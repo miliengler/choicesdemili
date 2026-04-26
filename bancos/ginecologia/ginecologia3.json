@@ -1,1 +1,2417 @@
-[]
+[
+  {
+    "id": "gineco_003_001",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una paciente de 15 años consulta por ausencia de menarca. Al examen físico presenta un desarrollo mamario estadio IV de Tanner, pero ausencia de vello axilar y púbico. Se palpan masas en ambas regiones inguinales. ¿Cuál es el cariotipo más probable?",
+    "opciones": {
+      "a": "46, XX.",
+      "b": "45, X0.",
+      "c": "46, XY.",
+      "d": "47, XXY."
+    },
+    "correcta": "c",
+    "explicacion": "El cuadro sugiere un **Síndrome de Morris** (insensibilidad a los andrógenos), donde hay fenotipo femenino pero vello ausente y testículos (masas inguinales) con cariotipo 46, XY.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_002",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "En el estudio de una amenorrea primaria, se constata ausencia de útero y de los dos tercios superiores de la vagina, con función ovárica normal y cariotipo 46, XX. ¿Qué estudio complementario es prioritario solicitar por su asociación frecuente?",
+    "opciones": {
+      "a": "Ecografía renal.",
+      "b": "Resonancia de silla turca.",
+      "c": "Dosaje de testosterona total.",
+      "d": "Laparoscopia diagnóstica."
+    },
+    "correcta": "a",
+    "explicacion": "El **Síndrome de Rokitansky-Kuster-Hauser** asocia malformaciones renales en el 30% de los casos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_003",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es el primer paso diagnóstico ante una paciente con amenorrea secundaria de 4 meses de evolución?",
+    "opciones": {
+      "a": "Dosaje de FSH y LH.",
+      "b": "Prueba de progesterona.",
+      "c": "Subunidad Beta-HCG.",
+      "d": "Ecografía transvaginal."
+    },
+    "correcta": "c",
+    "explicacion": "Ante cualquier amenorrea (primaria o secundaria), lo primero es descartar **embarazo**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_004",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una paciente de 18 años presenta amenorrea primaria, talla normal, ausencia de desarrollo mamario y anosmia. ¿Cuál es el diagnóstico de sospecha?",
+    "opciones": {
+      "a": "Síndrome de Turner.",
+      "b": "Síndrome de Kallmann.",
+      "c": "Síndrome de Rokitansky.",
+      "d": "Hiperplasia suprarrenal congénita."
+    },
+    "correcta": "b",
+    "explicacion": "El **Síndrome de Kallmann** asocia hipogonadismo hipogonadotrófico (infantilismo sexual) con atrofia del bulbo olfatorio (anosmia).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_005",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Tras descartar embarazo en una paciente con amenorrea secundaria, se realiza una prueba de progesterona (medroxiprogesterona 10mg/día por 5 días) resultando negativa (no hay sangrado). ¿Cuál es la interpretación correcta?",
+    "opciones": {
+      "a": "La paciente es anovuladora.",
+      "b": "El tracto de salida está obstruido.",
+      "c": "Hay una falla ovárica o un defecto central (falta de estrógenos).",
+      "d": "El eje hipotálamo-hipófisis-gonadal está intacto."
+    },
+    "correcta": "c",
+    "explicacion": "Una prueba de progesterona negativa indica que no hubo una preparación estrogénica previa del endometrio, sugiriendo **hipoestrogenismo** (central o gonadal).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_006",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Si una paciente con amenorrea presenta una prueba de estrógenos-progestágenos negativa, ¿dónde se localiza la alteración?",
+    "opciones": {
+      "a": "Hipotálamo.",
+      "b": "Hipófisis.",
+      "c": "Ovario.",
+      "d": "Útero / Vía de salida."
+    },
+    "correcta": "d",
+    "explicacion": "Si tras administrar hormonas de forma exógena no hay sangrado, el defecto es anatómico (ej. **Síndrome de Asherman** o agenesia).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_007",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es la causa más probable de amenorrea secundaria en una paciente con antecedentes de legrados uterinos repetidos por abortos?",
+    "opciones": {
+      "a": "Falla ovárica precoz.",
+      "b": "Síndrome de Asherman.",
+      "c": "Adenoma hipofisario.",
+      "d": "Síndrome de Sheehan."
+    },
+    "correcta": "b",
+    "explicacion": "El **Síndrome de Asherman** consiste en sinequias uterinas post-legrado, impidiendo la descamación endometrial.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_008",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "En una paciente de 22 años con dismenorrea primaria intensa que no cede con analgésicos comunes, ¿cuál es el tratamiento farmacológico de elección?",
+    "opciones": {
+      "a": "Antibióticos de amplio espectro.",
+      "b": "Anticonceptivos orales combinados.",
+      "c": "Danazol.",
+      "d": "Análogos de GnRH."
+    },
+    "correcta": "b",
+    "explicacion": "Los **anticonceptivos orales combinados** son el tratamiento de segunda línea o elección cuando los analgésicos fallan, al inhibir la ovulación y reducir el grosor endometrial.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_009",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál de las siguientes es una característica del Síndrome de Swyer (disgenesia gonadal pura 46, XY)?",
+    "opciones": {
+      "a": "Presenta fenotipo masculino.",
+      "b": "Los ovarios son normofuncionantes.",
+      "c": "Requiere gonadectomía por riesgo de malignidad.",
+      "d": "No presenta útero."
+    },
+    "correcta": "c",
+    "explicacion": "Al tener gónadas disgenéticas con presencia de material del cromosoma Y, existe un alto riesgo de **gonadoblastoma** y **disgerminoma**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_010",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una paciente refiere irritabilidad, tensión mamaria y distensión abdominal que comienza 7 días antes de la regla y desaparece inmediatamente con el flujo. ¿Cuál es el diagnóstico?",
+    "opciones": {
+      "a": "Dismenorrea secundaria.",
+      "b": "Síndrome premenstrual.",
+      "c": "Mittelschmerz (dolor intermenstrual).",
+      "d": "Endometriosis."
+    },
+    "correcta": "b",
+    "explicacion": "Los síntomas cíclicos en fase lútea que desaparecen con la menstruación definen al **Síndrome Premenstrual**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_011",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cómo se denomina al intervalo entre menstruaciones que dura 45 días?",
+    "opciones": {
+      "a": "Proiomenorrea.",
+      "b": "Opsomenorrea / Oligomenorrea.",
+      "c": "Polimenorrea.",
+      "d": "Metrorragia."
+    },
+    "correcta": "b",
+    "explicacion": "La **oligomenorrea** (u opsomenorrea) se define por ciclos con intervalos mayores a 35 días pero menores a 3 meses.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_012",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "En una paciente con amenorrea secundaria y prueba de progesterona positiva, ¿cuál es el diagnóstico fisiopatológico más frecuente?",
+    "opciones": {
+      "a": "Menopausia precoz.",
+      "b": "Anovulación crónica.",
+      "c": "Estenosis cervical.",
+      "d": "Tumor hipofisario productor de prolactina."
+    },
+    "correcta": "b",
+    "explicacion": "La prueba positiva confirma que hay estrógenos y útero funcional, pero falta la fase progestacional cíclica, típica de la **anovulación**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_013",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una adolescente consulta por dolor pelviano cíclico y amenorrea primaria. Al examen se observa una tumoración azulada que protruye por el introito. ¿Cuál es la conducta?",
+    "opciones": {
+      "a": "Himenotomía.",
+      "b": "Laparoscopia.",
+      "c": "Cariotipo.",
+      "d": "Antibióticos."
+    },
+    "correcta": "a",
+    "explicacion": "Se trata de un **himen imperforado** (causa de criptomenorrea), cuyo tratamiento es la incisión del himen.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_014",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "El síndrome de Sheehan es una causa de amenorrea secundaria debida a:",
+    "opciones": {
+      "a": "Destrucción autoinmune del ovario.",
+      "b": "Necrosis hipofisaria post-hemorragia postparto.",
+      "c": "Producción excesiva de andrógenos suprarrenales.",
+      "d": "Sinequias uterinas."
+    },
+    "correcta": "b",
+    "explicacion": "Es un panhipopituitarismo causado por un infarto de la glándula hipófisis tras un shock hipovolémico en el parto, típico del **Síndrome de Sheehan**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_015",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Qué niveles hormonales esperaría encontrar en una paciente con falla ovárica prematura?",
+    "opciones": {
+      "a": "FSH baja y Estradiol bajo.",
+      "b": "FSH alta y Estradiol bajo.",
+      "c": "FSH alta y Estradiol alto.",
+      "d": "FSH baja y Estradiol alto."
+    },
+    "correcta": "b",
+    "explicacion": "Al fallar el ovario (**hipogonadismo hipergonadotrópico**), desaparece el feedback negativo, elevando la FSH y manteniendo el estradiol bajo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_016",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es el síntoma patognomónico del Síndrome de Kallmann además de la amenorrea?",
+    "opciones": {
+      "a": "Ceguera nocturna.",
+      "b": "Hirsutismo.",
+      "c": "Anosmia o hiposmia.",
+      "d": "Galactorrea."
+    },
+    "correcta": "c",
+    "explicacion": "Es la característica distintiva por la falta de migración de las neuronas productoras de GnRH junto con las del bulbo olfatorio (**anosmia**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_017",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "En el algoritmo diagnóstico de amenorrea, si la FSH es alta y la paciente tiene amenorrea primaria, el siguiente paso suele ser:",
+    "opciones": {
+      "a": "Solicitar Cariotipo.",
+      "b": "RMN de silla turca.",
+      "c": "Prueba de estrógenos.",
+      "d": "Biopsia de endometrio."
+    },
+    "correcta": "a",
+    "explicacion": "Una FSH alta en amenorrea primaria sugiere una disgenesia gonadal (ej. **Síndrome de Turner**), por lo que el **cariotipo** es esencial.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_018",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "La hipomenorrea suele asociarse frecuentemente con:",
+    "opciones": {
+      "a": "Miomatosis uterina.",
+      "b": "Uso de anticonceptivos orales o causas psicógenas.",
+      "c": "Pólipos endometriales.",
+      "d": "Hiperplasia endometrial."
+    },
+    "correcta": "b",
+    "explicacion": "El uso de **anticonceptivos orales** suele atrofiar ligeramente el endometrio provocando sangrados escasos (**hipomenorrea**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_019",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es el diagnóstico más probable en una paciente de 35 años con dismenorrea de reciente aparición (secundaria) y dolor pélvico crónico?",
+    "opciones": {
+      "a": "Inmadurez del eje.",
+      "b": "Endometriosis.",
+      "c": "Síndrome de Morris.",
+      "d": "Hiperprolactinemia."
+    },
+    "correcta": "b",
+    "explicacion": "La dismenorrea secundaria (que aparece años después de la menarca) debe hacer sospechar siempre patología orgánica, siendo la **endometriosis** la más común.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_020",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "El tratamiento quirúrgico con gonadectomía en el Síndrome de Morris se recomienda realizar:",
+    "opciones": {
+      "a": "Inmediatamente al diagnóstico en la infancia.",
+      "b": "Nunca, ya que son benignos.",
+      "c": "Después de completar el desarrollo puberal.",
+      "d": "Solo si hay dolor abdominal."
+    },
+    "correcta": "c",
+    "explicacion": "Se prefiere esperar a que finalice la pubertad (para aprovechar la conversión de testosterona en estrógenos y lograr el desarrollo óseo/mamario) antes de la extracción por riesgo de tumor.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_021",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Qué estructura NO está presente en el Síndrome de Rokitansky?",
+    "opciones": {
+      "a": "Ovarios.",
+      "b": "Trompas de falopio.",
+      "c": "Útero.",
+      "d": "Mamas."
+    },
+    "correcta": "c",
+    "explicacion": "Hay agenesia mulleriana (**útero** y parte de vagina ausentes), pero los ovarios y caracteres sexuales son normales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_022",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cómo se denomina al sangrado uterino de cantidad normal pero con intervalos irregulares?",
+    "opciones": {
+      "a": "Menorragia.",
+      "b": "Metrorragia.",
+      "c": "Polimenorrea.",
+      "d": "Hipermenorrea."
+    },
+    "correcta": "b",
+    "explicacion": "La **metrorragia** es el sangrado que ocurre fuera del ciclo o de manera irregular.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_023",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es la principal diferencia clínica entre el Síndrome de Morris y el de Rokitansky?",
+    "opciones": {
+      "a": "La presencia de útero.",
+      "b": "El desarrollo mamario.",
+      "c": "La presencia de vello puberal y axilar.",
+      "d": "La estatura."
+    },
+    "correcta": "c",
+    "explicacion": "En Rokitansky el vello es normal (46XX), en Morris el vello está ausente o es mínimo (insensibilidad a andrógenos).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_024",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una paciente con amenorrea secundaria presenta niveles de FSH y LH bajos, y una RMN de silla turca normal. ¿En qué diagnóstico pensaría?",
+    "opciones": {
+      "a": "Menopausia.",
+      "b": "Amenorrea hipotalámica (ej. por estrés o ejercicio).",
+      "c": "Síndrome de Savage (ovario resistente).",
+      "d": "Síndrome de Asherman."
+    },
+    "correcta": "b",
+    "explicacion": "Gonadotrofinas bajas con anatomía normal sugieren un fallo en el pulsador hipotalámico de GnRH, típico de la **amenorrea hipotalámica**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_025",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Ante una sospecha de Síndrome Premenstrual, ¿cuál es la mejor herramienta diagnóstica?",
+    "opciones": {
+      "a": "Dosaje de progesterona en día 21.",
+      "b": "Diario de síntomas durante 2-3 meses.",
+      "c": "Ecografía pélvica Doppler.",
+      "d": "Laparoscopia."
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico es clínico y requiere demostrar la ciclicidad de los síntomas mediante un **diario de síntomas**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_026",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "La \"prueba de estrógenos y progestágenos\" consiste en administrar:",
+    "opciones": {
+      "a": "Anticonceptivos combinados durante 21 días.",
+      "b": "Estrógenos seguidos de progesterona para simular un ciclo.",
+      "c": "Solo estrógenos por 5 días.",
+      "d": "GnRH en pulsos."
+    },
+    "correcta": "b",
+    "explicacion": "Se busca ver si el endometrio responde al estímulo secuencial de **estrógenos seguidos de progesterona** para descartar causa uterina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_027",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "En la dismenorrea primaria, el exceso de qué sustancia provoca las contracciones uterinas dolorosas:",
+    "opciones": {
+      "a": "Serotonina.",
+      "b": "Prostaglandina F2 alfa.",
+      "c": "Estradiol.",
+      "d": "Prolactina."
+    },
+    "correcta": "b",
+    "explicacion": "La liberación de **Prostaglandina F2 alfa** al desintegrarse el endometrio causa contracciones miometriales e isquemia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_028",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "¿Cuál es el cariotipo del Síndrome de Swyer?",
+    "opciones": {
+      "a": "45, X.",
+      "b": "46, XX.",
+      "c": "46, XY.",
+      "d": "47, XXY."
+    },
+    "correcta": "c",
+    "explicacion": "Es una disgenesia gonadal pura en un individuo cromosómicamente varón que desarrolla fenotipo femenino por falta de hormonas testiculares, su cariotipo es **46, XY**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_029",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "Una paciente de 14 años sin vello y sin mamas tiene amenorrea. El diagnóstico es:",
+    "opciones": {
+      "a": "Amenorrea primaria.",
+      "b": "Amenorrea secundaria.",
+      "c": "Oligomenorrea.",
+      "d": "Pubertad precoz."
+    },
+    "correcta": "a",
+    "explicacion": "Por definición, la falta de menarca a los 14 años sin caracteres sexuales es **amenorrea primaria**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_030",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Alteraciones menstruales"
+    ],
+    "enunciado": "La mayoría de las pacientes con Síndrome de Morris tienen una vagina:",
+    "opciones": {
+      "a": "De longitud normal.",
+      "b": "Ausente por completo.",
+      "c": "Corta y terminada en fondo de saco ciego.",
+      "d": "Comunicada con la cavidad abdominal."
+    },
+    "correcta": "c",
+    "explicacion": "La parte superior de la vagina es de origen mulleriano (ausente en Morris), por lo que solo existe el tercio inferior derivado del seno urogenital, resultando en una vagina **corta y en fondo de saco ciego**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_031",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente de 28 años, con ciclos regulares, consulta por un cuadro de sangrado vaginal abundante de 48 horas de evolución, fuera de su fecha probable de menstruación. No utiliza anticonceptivos. ¿Cuál es la primera conducta diagnóstica que debe realizar?",
+    "opciones": {
+      "a": "Ecografía transvaginal para evaluar el grosor endometrial.",
+      "b": "Determinación de subunidad Beta-HCG en sangre u orina.",
+      "c": "Realizar un examen ginecológico con espéculo para ver el origen del sangrado.",
+      "d": "Iniciar tratamiento con ácido tranexámico de inmediato."
+    },
+    "correcta": "b",
+    "explicacion": "La mayoría de las hemorragias uterinas en mujeres en edad fértil se relacionan con la gestación, por lo que la determinación de la **subunidad Beta-HCG** es el primer diagnóstico a descartar.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_032",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una adolescente de 14 años consulta por sangrados menstruales muy abundantes desde su menarca hace 6 meses. Presenta palidez cutáneo-mucosa y un hemograma con Hb de 9 g/dL. ¿Cuál es la sospecha etiológica más probable según la clasificación ÍNDICE?",
+    "opciones": {
+      "a": "Alteración ovulatoria por inmadurez del eje.",
+      "b": "Coagulopatía (ej. Enfermedad de Von Willebrand).",
+      "c": "Pólipo endometrial.",
+      "d": "Adenomiosis juvenil."
+    },
+    "correcta": "b",
+    "explicacion": "Los sangrados menstruales abundantes (SMA) que se presentan desde la menarca deben hacer sospechar **alteraciones de la hemostasia** (como la **Enfermedad de Von Willebrand**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_033",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente de 55 años, con 3 años de amenorrea (menopausia), consulta por un episodio de sangrado vaginal escaso. En la ecografía transvaginal se informa un endometrio de 6 mm, heterogéneo. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "a": "Repetir la ecografía en 3 meses para control.",
+      "b": "Iniciar terapia de reemplazo hormonal.",
+      "c": "Realizar una histeroscopia con biopsia dirigida.",
+      "d": "Indicar progestágenos durante 10 días."
+    },
+    "correcta": "c",
+    "explicacion": "En la posmenopausia, una metrorragia con grosor endometrial > 5 mm (o > 3 mm según guías recientes citadas) requiere **estudio histológico** para descartar hiperplasia o cáncer.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_034",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Según la clasificación FIGO (PALMA-ÍNDICE), ¿cuál de las siguientes opciones corresponde a una causa de sangrado uterino de origen \"Estructural\"?",
+    "opciones": {
+      "a": "Disovulación.",
+      "b": "Iatrogenia.",
+      "c": "Adenomiosis.",
+      "d": "Coagulopatía."
+    },
+    "correcta": "c",
+    "explicacion": "La mnemotecnia PALMA incluye causas estructurales:\n- **Pólipo**\n- **Adenomiosis**\n- **Leiomioma**\n- **Malignidad/Hiperplasia**",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_035",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente de 35 años con diagnóstico de miomatosis uterina y sangrado menstrual abundante consulta por deseo de tratamiento médico. No desea embarazo actualmente. ¿Cuál es el tratamiento hormonal de primera elección para reducir el volumen de sangrado?",
+    "opciones": {
+      "a": "Dispositivo intrauterino liberador de levonorgestrel (DIU-LNG).",
+      "b": "Ácido tranexámico solo durante los días de sangrado.",
+      "c": "Anticonceptivos orales combinados de baja dosis.",
+      "d": "Gestágenos en la segunda fase del ciclo (días 16 a 25)."
+    },
+    "correcta": "a",
+    "explicacion": "El **DIU-LNG** es el tratamiento de primera elección en pacientes con SMA que no desean gestación, reduciendo el sangrado en más del 95%.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_036",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Se presenta una paciente de 42 años con sangrado intermenstrual persistente. La ecografía transvaginal muestra una imagen compatible con un pólipo endometrial de 12 mm. ¿Cuál es el estándar de oro para el diagnóstico y tratamiento definitivo de esta lesión?",
+    "opciones": {
+      "a": "Legrado uterino evacuador ciego.",
+      "b": "Polipectomía por histeroscopia.",
+      "c": "Ablación endometrial térmica.",
+      "d": "Histerectomía total."
+    },
+    "correcta": "b",
+    "explicacion": "La **histeroscopia** permite la visualización directa y la resección quirúrgica (**polipectomía**) enviando el material a anatomía patológica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_037",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "¿Cuál es el mecanismo de acción del ácido tranexámico en el tratamiento del SUA?",
+    "opciones": {
+      "a": "Inhibe la síntesis de prostaglandinas vasodilatadoras.",
+      "b": "Bloquea el eje hipotálamo-hipófiso-ovárico.",
+      "c": "Provoca un bloqueo enzimático sobre los activadores del plasminógeno (antifibrinolítico).",
+      "d": "Induce la atrofia del endometrio de forma irreversible."
+    },
+    "correcta": "c",
+    "explicacion": "Es un **antifibrinolítico** que reduce la pérdida sanguínea en un 50% al impedir la degradación de la fibrina.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_038",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente de 32 años usuaria de DIU de cobre consulta por sangrados muy abundantes y dolor tipo cólico durante la menstruación (dismenorrea). ¿Qué fármaco no hormonal es especialmente útil en este caso?",
+    "opciones": {
+      "a": "Ácido tranexámico.",
+      "b": "Antiinflamatorios no esteroideos (AINE).",
+      "c": "Vitamina K.",
+      "d": "Etamsilato."
+    },
+    "correcta": "b",
+    "explicacion": "Los **AINE** disminuyen las prostaglandinas vasodilatadoras y son especialmente eficaces en usuarias de DIU de cobre con dismenorrea.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_039",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una mujer de 45 años con paridad cumplida presenta SMA que no responde al tratamiento médico. Tiene un útero de tamaño normal (< 10 semanas) y no desea una cirugía mayor (histerectomía). ¿Qué opción quirúrgica conservadora le ofrecería?",
+    "opciones": {
+      "a": "Embolización de arterias uterinas.",
+      "b": "Ablación endometrial.",
+      "c": "Miomectomía laparoscópica.",
+      "d": "Legrado uterino fraccionado."
+    },
+    "correcta": "b",
+    "explicacion": "La **ablación endometrial** está indicada en mujeres con paridad cumplida que desean conservar el útero tras el fracaso del tratamiento médico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_040",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Ante una paciente inestable hemodinámicamente por una hemorragia uterina aguda, ¿cuál es la medida quirúrgica de emergencia indicada para el control inmediato del sangrado?",
+    "opciones": {
+      "a": "Histerectomía de urgencia.",
+      "b": "Colocación de un DIU-LNG.",
+      "c": "Legrado endometrial hemostático.",
+      "d": "Administración de análogos de la GnRH."
+    },
+    "correcta": "c",
+    "explicacion": "El **legrado endometrial hemostático** es la medida de emergencia para pacientes inestables, aunque debe evitarse en jóvenes si es posible por el riesgo de sinequias.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_041",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente de 19 años presenta ciclos muy irregulares, con baches de amenorrea seguidos de sangrados prolongados. No se evidencia patología orgánica en la ecografía. ¿Cuál es la causa más probable (ÍNDICE)?",
+    "opciones": {
+      "a": "Disfunción endometrial.",
+      "b": "Iatrogenia.",
+      "c": "No ovulatoria (disovulación por inmadurez del eje).",
+      "d": "Coagulopatía latente."
+    },
+    "correcta": "c",
+    "explicacion": "En los extremos de la vida reproductiva, la causa más frecuente de SUA es la anovulación por inmadurez o fallo del eje (**disovulación**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_042",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "En la evaluación de una paciente con SUA, ¿cuál es la utilidad principal de la Sonohisterografía (SHG)?",
+    "opciones": {
+      "a": "Evaluar la reserva ovárica.",
+      "b": "Mejorar la imagen del contorno de la cavidad para detectar pólipos o miomas submucosos.",
+      "c": "Medir la velocidad de flujo en las arterias uterinas.",
+      "d": "Confirmar la presencia de un embarazo ectópico."
+    },
+    "correcta": "b",
+    "explicacion": "La instilación de solución salina permite distender la cavidad y diferenciar mejor las lesiones intracavitarias como **pólipos** o **miomas submucosos**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_043",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "¿Cuál es la causa más frecuente de sangrado uterino en la posmenopausia, a pesar de que siempre se debe descartar malignidad?",
+    "opciones": {
+      "a": "Carcinoma de endometrio.",
+      "b": "Hiperplasia endometrial.",
+      "c": "Atrofia endometrial.",
+      "d": "Pólipos endocervicales."
+    },
+    "correcta": "c",
+    "explicacion": "Aunque el cáncer es la mayor preocupación, la causa más frecuente de sangrado posmenopáusico es la **atrofia endometrial**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_044",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente con SUA y sospecha de pólipo endometrial está siendo tratada con Tamoxifeno por cáncer de mama previo. ¿Cuál es la técnica diagnóstica recomendada para el seguimiento de su endometrio?",
+    "opciones": {
+      "a": "Ecografía transvaginal anual únicamente.",
+      "b": "Histeroscopia diagnóstica ante cualquier hallazgo o sangrado.",
+      "c": "Biopsia de endometrio por aspiración (Cánula de Cornier) trimestral.",
+      "d": "No requiere seguimiento endometrial especial."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento con **Tamoxifeno** es una indicación específica de **histeroscopia diagnóstica** si el patrón endometrial se altera.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_045",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente presenta un cuadro de \"metrorragia\". Por definición, esto significa que el sangrado:",
+    "opciones": {
+      "a": "Es muy abundante durante la regla.",
+      "b": "Ocurre fuera del ciclo menstrual (no relacionado con el ciclo).",
+      "c": "Dura más de 8 días.",
+      "d": "Ocurre con una frecuencia menor a 21 días."
+    },
+    "correcta": "b",
+    "explicacion": "La **metrorragia** se define como el sangrado uterino que no guarda relación con el ciclo menstrual.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_046",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Para el tratamiento de una hemorragia moderada-grave (Hb < 10 g/dL), el esquema hormonal de choque suele incluir:",
+    "opciones": {
+      "a": "DIU-LNG únicamente.",
+      "b": "Estrógenos y progestágenos en dosis altas y pauta decreciente.",
+      "c": "Solo ácido mefenámico.",
+      "d": "Análogos de GnRH cada 12 horas."
+    },
+    "correcta": "b",
+    "explicacion": "El tratamiento de urgencia requiere dosis altas de **estrógenos y progesterona** para estabilizar el endometrio (pauta de 1 comp. cada 6h, luego cada 8h, etc.).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_047",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "En la mnemotecnia PALMA, la letra \"M\" hace referencia a:",
+    "opciones": {
+      "a": "Miomatosis uterina.",
+      "b": "Malignidad e hiperplasia.",
+      "c": "Metrorragia disfuncional.",
+      "d": "Malformaciones arteriovenosas."
+    },
+    "correcta": "b",
+    "explicacion": "La M representa el cáncer de endometrio y sus lesiones precursoras (**Malignidad e hiperplasia**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_048",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una mujer de 40 años consulta por sangrado menstrual abundante. Se realiza ecografía que informa útero aumentado de tamaño con miometrio heterogéneo y quistes miometriales. No se ven nódulos definidos. ¿Qué patología estructural sospecha?",
+    "opciones": {
+      "a": "Miomatosis intramural.",
+      "b": "Adenomiosis.",
+      "c": "Endometritis crónica.",
+      "d": "Sarcoma uterino."
+    },
+    "correcta": "b",
+    "explicacion": "La presencia de glándulas endometriales en el miometrio (**adenomiosis**) se manifiesta ecográficamente con heterogeneidad y quistes miometriales.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_049",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "¿Cuál de los siguientes es un objetivo fundamental del tratamiento del SUA según el material?",
+    "opciones": {
+      "a": "Realizar siempre una histerectomía preventiva.",
+      "b": "Corrección de la anemia y prevención de recurrencias.",
+      "c": "Evitar la ovulación en todas las pacientes, incluso las que desean embarazo.",
+      "d": "Tratar únicamente si el sangrado supera los 100 mL."
+    },
+    "correcta": "b",
+    "explicacion": "Los objetivos son la **corrección de la anemia**, disminuir el sangrado y la **prevención de recurrencias** y consecuencias de la anovulación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_050",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Sangrado uterino anormal"
+    ],
+    "enunciado": "Una paciente presenta SUA clasificado como \"Iatrogénico\" (ÍNDICE). ¿Cuál de los siguientes factores podría ser la causa?",
+    "opciones": {
+      "a": "Uso de anticonceptivos hormonales o dispositivos intrauterinos.",
+      "b": "Presencia de un pólipo sésil.",
+      "c": "Hipotiroidismo no tratado.",
+      "d": "Síndrome de ovario poliquístico."
+    },
+    "correcta": "a",
+    "explicacion": "La **iatrogenia** se refiere a sangrados causados por intervenciones médicas, incluyendo el uso de fármacos como los **anticonceptivos** o dispositivos intrauterinos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_051",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una paciente de 51 años consulta por presentar amenorrea de 14 meses de evolución. Refiere calores súbitos nocturnos y sequedad vaginal. ¿Cuál es el diagnóstico clínico correcto?",
+    "opciones": {
+      "a": "Perimenopausia.",
+      "b": "Menopausia.",
+      "c": "Senectud.",
+      "d": "Transición menopáusica."
+    },
+    "correcta": "b",
+    "explicacion": "La **menopausia** es un diagnóstico retrospectivo que requiere 12 meses consecutivos de amenorrea sin otra causa que lo justifique.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_052",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "En el perfil hormonal de una paciente que inicia el climaterio, ¿cuál es la modificación endocrina más precoz?",
+    "opciones": {
+      "a": "Disminución de la progesterona.",
+      "b": "Elevación de la FSH.",
+      "c": "Aumento de la estrona.",
+      "d": "Caída brusca del estradiol."
+    },
+    "correcta": "b",
+    "explicacion": "La **elevación de la FSH** es la modificación endocrina más precoz del climaterio (premenopausia).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_053",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Para confirmar el diagnóstico bioquímico definitivo de menopausia, ¿qué valor de corte de FSH se considera diagnóstico según el material?",
+    "opciones": {
+      "a": "> 10 mU/mL.",
+      "b": "> 20 mU/mL.",
+      "c": "> 35 mU/mL.",
+      "d": "> 100 mU/mL."
+    },
+    "correcta": "c",
+    "explicacion": "El punto de corte para el diagnóstico definitivo de menopausia es una **FSH > 35 mU/mL**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_054",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es el estrógeno más importante y la principal fuente de estrógenos en la mujer posmenopáusica?",
+    "opciones": {
+      "a": "Estradiol producido por los folículos remanentes.",
+      "b": "Estriol de origen hepático.",
+      "c": "Estrona producida por conversión periférica de andrógenos.",
+      "d": "Etinilestradiol de origen ovárico."
+    },
+    "correcta": "c",
+    "explicacion": "En la posmenopausia, la fuente principal es la conversión periférica de andrógenos suprarrenales en estrógenos, siendo la **estrona** el más importante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_055",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una paciente de 48 años con útero presente consulta por sofocos intensos que alteran su calidad de vida. No tiene antecedentes patológicos. ¿Cuál es la composición adecuada de la Terapia Hormonal Sustitutiva (THS) en este caso?",
+    "opciones": {
+      "a": "Estrógenos solos de forma continua.",
+      "b": "Estrógenos combinados con progestágenos.",
+      "c": "Progestágenos solos en dosis altas.",
+      "d": "Raloxifeno 60 mg/día."
+    },
+    "correcta": "b",
+    "explicacion": "El **progestágeno** se agrega siempre en mujeres con útero para proteger al endometrio del efecto proliferativo estrogénico (prevención de hiperplasia/cáncer).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_056",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es la indicación primordial para el inicio de la THS según las guías actuales?",
+    "opciones": {
+      "a": "Prevención primaria de enfermedad cardiovascular.",
+      "b": "Tratamiento de la osteoporosis asintomática.",
+      "c": "Tratamiento de síntomas vasomotores (sofocos) en mujeres sintomáticas.",
+      "d": "Prevención sistemática del Alzheimer."
+    },
+    "correcta": "c",
+    "explicacion": "La **THS** solo está indicada en mujeres sintomáticas, utilizando la mínima dosis eficaz y durante el menor tiempo posible.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_057",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una mujer de 52 años en tratamiento con Raloxifeno para la osteoporosis consulta por un aumento en la intensidad de sus sofocos. ¿Cuál es la explicación más probable?",
+    "opciones": {
+      "a": "El Raloxifeno es un estrógeno puro y debería mejorarlos.",
+      "b": "Los sofocos empeoran con la utilización de Raloxifeno.",
+      "c": "El fármaco no tiene relación con los síntomas vasomotores.",
+      "d": "La paciente ha desarrollado una resistencia al fármaco."
+    },
+    "correcta": "b",
+    "explicacion": "El **Raloxifeno** (SERM) disminuye el riesgo de fracturas vertebrales pero, como efecto adverso, empeora los sofocos y la atrofia urogenital.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_058",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál de los siguientes antecedentes se considera una contraindicación ABSOLUTA para la prescripción de THS?",
+    "opciones": {
+      "a": "Antecedente de cáncer de mama.",
+      "b": "Hipertensión arterial controlada.",
+      "c": "Tabaquismo activo.",
+      "d": "Miomatosis uterina pequeña."
+    },
+    "correcta": "a",
+    "explicacion": "El **cáncer de mama** (actual o pasado) es una contraindicación absoluta debido a la sensibilidad hormonal del tumor.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_059",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Antes de instaurar una THS, ¿cuál de los siguientes estudios es IMPRESCINDIBLE realizar según el protocolo?",
+    "opciones": {
+      "a": "Resonancia Magnética de pelvis.",
+      "b": "Densitometría ósea de cuerpo entero.",
+      "c": "Mamografía basal y citología cervicovaginal.",
+      "d": "Laparoscopia diagnóstica."
+    },
+    "correcta": "c",
+    "explicacion": "Antes de iniciar THS es obligatorio realizar **mamografía, citología**, ecografía ginecológica y analítica (hígado, lípidos, glucemia).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_060",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una paciente de 38 años presenta amenorrea de 1 año, sofocos y FSH de 40 mU/mL. ¿Cómo se define este cuadro?",
+    "opciones": {
+      "a": "Menopausia fisiológica.",
+      "b": "Menopausia tardía.",
+      "c": "Insuficiencia ovárica precoz (Menopausia precoz).",
+      "d": "Transición menopáusica normal."
+    },
+    "correcta": "c",
+    "explicacion": "Se considera **menopausia precoz** o insuficiencia ovárica precoz aquella que ocurre antes de los 40 años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_061",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Qué beneficio ha demostrado el Raloxifeno en relación al endometrio?",
+    "opciones": {
+      "a": "Aumenta el riesgo de pólipos.",
+      "b": "Requiere el agregado de progesterona para protección.",
+      "c": "No aumenta el riesgo de cáncer de endometrio.",
+      "d": "Provoca hiperplasia endometrial quística."
+    },
+    "correcta": "c",
+    "explicacion": "A diferencia del Tamoxifeno, el **Raloxifeno** no estimula el endometrio y no aumenta el riesgo de cáncer de endometrio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_062",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "En una paciente histerectomizada (sin útero) que presenta síndrome climatérico severo, ¿cuál es la conducta terapéutica hormonal?",
+    "opciones": {
+      "a": "Estrógenos combinados con progestágenos.",
+      "b": "Estrógenos solos.",
+      "c": "Solo progestágenos para evitar sangrados.",
+      "d": "Contraindicar cualquier terapia hormonal."
+    },
+    "correcta": "b",
+    "explicacion": "Si la paciente no tiene útero, no hay riesgo de cáncer de endometrio, por lo que puede recibir **estrógenos solos** sin necesidad de progestágenos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_063",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es el síntoma más frecuente y característico del síndrome climatérico que motiva la consulta?",
+    "opciones": {
+      "a": "Osteoporosis.",
+      "b": "Sofocos.",
+      "c": "Depresión mayor.",
+      "d": "Incontinencia urinaria de esfuerzo."
+    },
+    "correcta": "b",
+    "explicacion": "El síntoma más frecuente son los **sofocos**, que son de aparición temprana y temporaria.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_064",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una paciente posmenopáusica presenta dispareunia (dolor al coito) y sequedad vaginal intensa, sin sofocos. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "a": "THS vía oral en altas dosis.",
+      "b": "Estrógenos tópicos locales (cremas u óvulos).",
+      "c": "Raloxifeno.",
+      "d": "Antidepresivos ISRS."
+    },
+    "correcta": "b",
+    "explicacion": "Para la atrofia urogenital aislada, los **estrógenos tópicos locales** son la vía de elección por su eficacia y menor absorción sistémica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_065",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Qué cambio se observa en los niveles de Estradiol durante la menopausia?",
+    "opciones": {
+      "a": "Aumento progresivo por falta de consumo folicular.",
+      "b": "Disminución progresiva, siendo el signo más característico.",
+      "c": "Se mantiene igual pero con picos de LH más altos.",
+      "d": "Desaparece totalmente de la sangre en menos de 24 horas."
+    },
+    "correcta": "b",
+    "explicacion": "La **disminución progresiva del estradiol** es el signo más característico de la menopausia y posmenopausia.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_066",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es el efecto del tabaquismo sobre la aparición de la menopausia?",
+    "opciones": {
+      "a": "Retrasa la menopausia 5 años.",
+      "b": "No tiene ninguna influencia.",
+      "c": "Adelanta la edad de la menopausia.",
+      "d": "Solo afecta si la paciente consume más de 40 cigarrillos diarios."
+    },
+    "correcta": "c",
+    "explicacion": "El **tabaco** se asocia a un adelanto de la menopausia por su efecto antiestrogénico y tóxico sobre los folículos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_067",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "En una paciente con THS, ¿para qué se utiliza la dosis \"mínima eficaz\"?",
+    "opciones": {
+      "a": "Para ahorrar medicación.",
+      "b": "Para evitar el sangrado por deprivación.",
+      "c": "Para reducir al máximo los riesgos (tromboembolismo, cáncer de mama).",
+      "d": "Para permitir que la paciente ovule ocasionalmente."
+    },
+    "correcta": "c",
+    "explicacion": "El consenso médico indica la **dosis mínima** para controlar síntomas y mitigar riesgos sistémicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_068",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "Una paciente con antecedente de trombosis venosa profunda (TVP) activa consulta por sofocos. ¿Es candidata a THS sistémica?",
+    "opciones": {
+      "a": "Sí, pero vía transdérmica obligatoriamente.",
+      "b": "No, la TVP activa es una contraindicación absoluta.",
+      "c": "Sí, siempre que se asocie con aspirina.",
+      "d": "Solo si la trombosis fue hace más de 1 mes."
+    },
+    "correcta": "b",
+    "explicacion": "La **enfermedad tromboembólica activa** es una contraindicación absoluta para la THS.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_069",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿Cuál es el marcador de laboratorio más precoz de la declinación de la reserva ovárica en el climaterio?",
+    "opciones": {
+      "a": "FSH.",
+      "b": "Prolactina.",
+      "c": "TSH.",
+      "d": "Testosterona libre."
+    },
+    "correcta": "a",
+    "explicacion": "La elevación de la **FSH** es la modificación endocrina más precoz registrada en el climaterio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_070",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Climaterio y menopausia"
+    ],
+    "enunciado": "¿A qué edad se considera \"menopausia tardía\"?",
+    "opciones": {
+      "a": "Después de los 50 años.",
+      "b": "Después de los 52 años.",
+      "c": "Después de los 55 años.",
+      "d": "Después de los 60 años."
+    },
+    "correcta": "c",
+    "explicacion": "Se considera **menopausia tardía** la que sucede después de los 55 años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_071",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "Una paciente de 22 años consulta por ciclos de 45 a 60 días y aumento de vello en bozo, mentón y línea alba. Para realizar el diagnóstico de SOP según los criterios de Rotterdam, además de la oligo-anovulación y el hiperandrogenismo, ¿cuál es el tercer criterio posible?",
+    "opciones": {
+      "a": "Elevación de la relación LH/FSH > 2.5.",
+      "b": "Imagen ecográfica de ovarios poliquísticos.",
+      "c": "Presencia de resistencia a la insulina documentada.",
+      "d": "Obesidad con índice cintura/cadera elevado."
+    },
+    "correcta": "b",
+    "explicacion": "El diagnóstico de SOP según los criterios de **Rotterdam** requiere 2 de 3 criterios: **oligo-anovulación**, signos clínicos o bioquímicos de **hiperandrogenismo** y morfología de **ovarios poliquísticos** en la ecografía.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_072",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál es el criterio ecográfico actual para definir un ovario como poliquístico según el material de estudio?",
+    "opciones": {
+      "a": "Presencia de 8 o más folículos de 15 mm de diámetro.",
+      "b": "Presencia de 12 o más folículos de 2 a 9 mm de diámetro o volumen ovárico > 10 mL.",
+      "c": "Presencia de un quiste simple de al menos 30 mm.",
+      "d": "Estroma ovárico hipoecogénico con folículos centrales."
+    },
+    "correcta": "b",
+    "explicacion": "Se define por la presencia de **12 o más folículos** que miden entre **2 y 9 mm** de diámetro y/o un **volumen ovárico mayor a 10 mL**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_073",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "Una paciente presenta un aumento del vello terminal en zonas de implantación no habituales para la mujer. ¿A partir de qué puntuación en la escala de Ferriman-Gallwey se considera este hirsutismo como anormal?",
+    "opciones": {
+      "a": "> 3.",
+      "b": "> 8.",
+      "c": "> 15.",
+      "d": "> 20."
+    },
+    "correcta": "b",
+    "explicacion": "La cuantificación objetiva del hirsutismo se realiza mediante la **escala de Ferriman-Gallwey**, considerándose anormal una puntuación superior a 8.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_074",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál de las siguientes alteraciones hormonales es la más característica y frecuentemente preguntada en el SOP?",
+    "opciones": {
+      "a": "Elevación de la FSH con LH disminuida.",
+      "b": "Elevación de la relación LH/FSH (> 2 o 2.5).",
+      "c": "Disminución de la Prolactina.",
+      "d": "Elevación de la Progesterona en la primera fase del ciclo."
+    },
+    "correcta": "b",
+    "explicacion": "Una de las alteraciones hormonales típicas es el aumento de la **relación LH/FSH por encima de 2 o 2.5** debido al aumento de los pulsos de LH.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_075",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "En una paciente con SOP, obesidad y resistencia a la insulina que NO desea embarazo, ¿cuál es el primer paso terapéutico fundamental?",
+    "opciones": {
+      "a": "Metformina 850 mg/día.",
+      "b": "Anticonceptivos orales combinados (ACO).",
+      "c": "Dieta y ejercicio físico (cambio de estilo de vida).",
+      "d": "Citrato de Clomifeno."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento de primera línea para todas las pacientes con SOP, especialmente si tienen sobrepeso, es la **modificación del estilo de vida** (dieta y ejercicio).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_076",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál es el tratamiento de elección para controlar las alteraciones menstruales y el hirsutismo en una paciente con SOP que no desea gestación?",
+    "opciones": {
+      "a": "Citrato de clomifeno.",
+      "b": "Anticonceptivos orales combinados (ACO).",
+      "c": "Progesterona sola en la segunda fase del ciclo.",
+      "d": "Análogos de la GnRH."
+    },
+    "correcta": "b",
+    "explicacion": "Los **Anticonceptivos orales combinados (ACO)** son el tratamiento de elección para regular los ciclos y disminuir los niveles de andrógenos, mejorando el hirsutismo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_077",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Qué componente de ciertos anticonceptivos orales es especialmente útil en el SOP por su potente acción antiandrogénica?",
+    "opciones": {
+      "a": "Levonorgestrel.",
+      "b": "Acetato de Ciproterona.",
+      "c": "Desogestrel.",
+      "d": "Gestodeno."
+    },
+    "correcta": "b",
+    "explicacion": "El **acetato de ciproterona** es un gestágeno con marcada acción antiandrogénica, muy utilizado en el tratamiento del hirsutismo asociado al SOP.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_078",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "Una paciente de 31 años con SOP consulta por infertilidad de 2 años de evolución. Tras 6 meses de dieta y ejercicio no ha logrado ovular. ¿Cuál es el fármaco de primera elección para la inducción de la ovulación?",
+    "opciones": {
+      "a": "Gonadotropinas (FSH recombinante).",
+      "b": "Metformina.",
+      "c": "Citrato de Clomifeno.",
+      "d": "Bromocriptina."
+    },
+    "correcta": "c",
+    "explicacion": "El **citrato de clomifeno** es el fármaco de primera elección para la inducción de la ovulación en pacientes con SOP.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_079",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál es la tasa de ovulación aproximada que se logra con el uso de Citrato de Clomifeno?",
+    "opciones": {
+      "a": "20%.",
+      "b": "50%.",
+      "c": "80%.",
+      "d": "95%."
+    },
+    "correcta": "c",
+    "explicacion": "El material indica que las tasas de ovulación con citrato de clomifeno se sitúan en torno al **80%**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_080",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "Si una paciente con SOP no responde al Citrato de Clomifeno para lograr el embarazo, ¿cuál es el tratamiento de segunda línea recomendado?",
+    "opciones": {
+      "a": "Fertilización In Vitro (FIV).",
+      "b": "Gonadotropinas (FSH).",
+      "c": "Drilling ovárico por laparoscopia.",
+      "d": "Aumento de la dosis de ACO."
+    },
+    "correcta": "b",
+    "explicacion": "Las **gonadotropinas (FSH)** se consideran la segunda línea de tratamiento médico para la esterilidad en el SOP.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_081",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál es el principal riesgo asociado al uso de gonadotropinas para la inducción de la ovulación en pacientes con SOP?",
+    "opciones": {
+      "a": "Cáncer de ovario a largo plazo.",
+      "b": "Síndrome de hiperestimulación ovárica y embarazo múltiple.",
+      "c": "Insuficiencia renal aguda.",
+      "d": "Atrofia endometrial irreversible."
+    },
+    "correcta": "b",
+    "explicacion": "El uso de FSH conlleva riesgo de respuesta excesiva, resultando en **embarazos múltiples e hiperestimulación**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_082",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "En relación a la Metformina y el embarazo en pacientes con SOP, ¿qué beneficio se ha demostrado recientemente?",
+    "opciones": {
+      "a": "Es teratogénica y debe suspenderse 3 meses antes.",
+      "b": "Parece mejorar las tasas de aborto y de diabetes gestacional.",
+      "c": "Solo sirve para tratar la hipertensión del embarazo.",
+      "d": "Aumenta el riesgo de macrosomía fetal."
+    },
+    "correcta": "b",
+    "explicacion": "Estudios recientes mencionados en el texto indican que su uso en el embarazo **mejora las tasas de aborto y diabetes gestacional** sin efectos teratogénicos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_083",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Qué hallazgo cutáneo, caracterizado por placas hiperpigmentadas en cuello y axilas, sugiere resistencia a la insulina en una paciente con SOP?",
+    "opciones": {
+      "a": "Hipertritosis.",
+      "b": "Acantosis nigricans.",
+      "c": "Liquen escleroso.",
+      "d": "Telangiectasias."
+    },
+    "correcta": "b",
+    "explicacion": "La **acantosis nigricans** es un signo clínico cutáneo de resistencia a la insulina, frecuente en pacientes con SOP y síndrome metabólico.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_084",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "El SOP también es conocido históricamente como:",
+    "opciones": {
+      "a": "Síndrome de Savage.",
+      "b": "Síndrome de Stein-Leventhal.",
+      "c": "Síndrome de Rokitansky.",
+      "d": "Síndrome de Asherman."
+    },
+    "correcta": "b",
+    "explicacion": "El nombre histórico del SOP es **Síndrome de Stein-Leventhal**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_085",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Qué sucede con los niveles de SHBG (Globulina fijadora de hormonas sexuales) en las pacientes con SOP?",
+    "opciones": {
+      "a": "Aumentan significativamente.",
+      "b": "Disminuyen, lo que aumenta la fracción libre de andrógenos.",
+      "c": "No se alteran.",
+      "d": "Solo cambian durante la menstruación."
+    },
+    "correcta": "b",
+    "explicacion": "En el SOP hay una **disminución de la SHBG** (especialmente por la hiperinsulinemia), lo que deja más testosterona libre circulante.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_086",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "Ante una paciente con SOP que presenta baches amenorreicos prolongados, ¿cuál es el riesgo oncológico a largo plazo si no se trata la anovulación?",
+    "opciones": {
+      "a": "Cáncer de cérvix.",
+      "b": "Cáncer de endometrio.",
+      "c": "Teratoma ovárico.",
+      "d": "Sarcoma uterino."
+    },
+    "correcta": "b",
+    "explicacion": "(Basado en el contexto de anovulación crónica) El estímulo estrogénico persistente sin oposición de progesterona aumenta el riesgo de **hiperplasia y adenocarcinoma de endometrio**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_087",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "En la analítica hormonal del SOP, la estrona (E1) suele estar:",
+    "opciones": {
+      "a": "Ausente.",
+      "b": "Elevada por conversión periférica de androstenediona.",
+      "c": "Muy baja debido a la falla folicular.",
+      "d": "Solo se eleva en la posmenopausia."
+    },
+    "correcta": "b",
+    "explicacion": "En el SOP existe una **hiperestronemia** (estrona elevada) derivada de la conversión periférica en el tejido adiposo de los andrógenos elevados.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_088",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "La \"hipertricosis\" se diferencia del \"hirsutismo\" porque la primera:",
+    "opciones": {
+      "a": "Es sensible a andrógenos.",
+      "b": "Es el aumento del vello en zonas no sensibles a andrógenos.",
+      "c": "Solo ocurre en la cara.",
+      "d": "Es un signo de cáncer de ovario siempre."
+    },
+    "correcta": "b",
+    "explicacion": "El texto aclara que la hipertricosis es el aumento de vello en zonas **NO sensibles a andrógenos**, a diferencia del hirsutismo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_089",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿Cuál es la tercera línea de tratamiento para la esterilidad en el SOP si fallan el clomifeno y las gonadotropinas?",
+    "opciones": {
+      "a": "Osetomía pélvica.",
+      "b": "Fertilización in Vitro (FIV).",
+      "c": "Uso de progesterona sola.",
+      "d": "Reposo absoluto."
+    },
+    "correcta": "b",
+    "explicacion": "El algoritmo terapéutico sitúa a la **FIV** como la tercera línea de tratamiento si hay deseos de paridad y fallaron las anteriores.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_090",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Síndrome de ovario poliquístico"
+    ],
+    "enunciado": "¿En qué consiste el \"drilling\" ovárico?",
+    "opciones": {
+      "a": "Una biopsia de endometrio por aspiración.",
+      "b": "Una técnica quirúrgica laparoscópica que realiza múltiples perforaciones en la superficie ovárica.",
+      "c": "Una forma de radioterapia pélvica localizada.",
+      "d": "La aspiración de folículos mediante guía ecográfica."
+    },
+    "correcta": "b",
+    "explicacion": "El drilling ovárico es una **opción quirúrgica (diatérmica)** para inducir la ovulación en pacientes con SOP resistentes a fármacos.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_091",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una pareja conformada por una mujer de 32 años y un varón de 34 años, sin antecedentes de importancia, consulta porque no logran el embarazo tras 8 meses de relaciones sexuales regulares sin protección. ¿Cuál es la conducta más adecuada en este momento?",
+    "opciones": {
+      "a": "Iniciar el estudio básico de infertilidad de forma inmediata.",
+      "b": "Indicar citrato de clomifeno para asegurar la ovulación.",
+      "c": "Tranquilizar a la pareja y recomendar continuar la búsqueda hasta completar los 12 meses.",
+      "d": "Realizar una fertilización in vitro (FIV) por el tiempo de búsqueda."
+    },
+    "correcta": "c",
+    "explicacion": "En mujeres menores de 35 años, se define infertilidad tras **12 meses de exposición regular al coito sin éxito**. Al llevar solo 8 meses, no cumple aún el criterio para iniciar estudios, salvo que existiera una causa evidente.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_092",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una mujer de 37 años consulta con su pareja por incapacidad de lograr un embarazo tras 7 meses de búsqueda. No tiene antecedentes ginecológicos de relevancia. ¿Cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Esperar a que cumpla un año de búsqueda.",
+      "b": "Iniciar el estudio básico de la pareja de forma inmediata.",
+      "c": "Realizar solo un seminograma al varón.",
+      "d": "Indicar reposo y dieta rica en antioxidantes por 6 meses más."
+    },
+    "correcta": "b",
+    "explicacion": "En mujeres mayores de 35 años, el plazo para definir infertilidad y comenzar los estudios se reduce a **6 meses** debido a la disminución de la reserva ovárica.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_093",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿Cuál de los siguientes componentes forma parte del \"estudio básico\" de la pareja infértil según el material proporcionado?",
+    "opciones": {
+      "a": "Cariotipo de ambos miembros de la pareja.",
+      "b": "Laparoscopia diagnóstica obligatoria.",
+      "c": "Determinación de FSH, LH y estradiol en la primera fase del ciclo y seminograma.",
+      "d": "Test poscoital de Sims-Huhner."
+    },
+    "correcta": "c",
+    "explicacion": "El estudio básico incluye anamnesis, exploración, **laboratorio hormonal (FSH, LH, estradiol en fase folicular y progesterona en fase lútea), ecografía y seminograma**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_094",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿Qué parámetro laboratorial permite confirmar que una paciente ha tenido una ovulación efectiva durante el ciclo en estudio?",
+    "opciones": {
+      "a": "FSH > 10 mU/mL en el día 3 del ciclo.",
+      "b": "Estradiol elevado en el día 14 del ciclo.",
+      "c": "Progesterona en la segunda fase del ciclo (fase lútea).",
+      "d": "LH elevada en el día 21 del ciclo."
+    },
+    "correcta": "c",
+    "explicacion": "La determinación de **progesterona en la segunda fase del ciclo** es el marcador utilizado para confirmar que se produjo la ovulación.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_095",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "En una pareja con infertilidad primaria, ¿cuál es el estudio de elección para evaluar de forma inicial la permeabilidad tubárica?",
+    "opciones": {
+      "a": "Ecografía transvaginal simple.",
+      "b": "Histerosalpingografía (HSG).",
+      "c": "Histeroscopia diagnóstica.",
+      "d": "Resonancia Magnética nuclear de pelvis."
+    },
+    "correcta": "b",
+    "explicacion": "La **histerosalpingografía** es la prueba complementaria de primera línea para valorar la anatomía uterina y, fundamentalmente, la permeabilidad de las trompas de Falopio.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_096",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Se recibe el resultado de un seminograma que informa una concentración de espermatozoides de 5 millones/mL (valor de referencia > 15 millones/mL). ¿Cómo se denomina esta alteración?",
+    "opciones": {
+      "a": "Azoospermia.",
+      "b": "Teratozoospermia.",
+      "c": "Oligozoospermia.",
+      "d": "Astenozoospermia."
+    },
+    "correcta": "c",
+    "explicacion": "La **oligozoospermia** es la disminución en el número de espermatozoides por mililitro de eyaculado.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_097",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una pareja consulta por infertilidad de 2 años. La mujer presenta permeabilidad tubárica bilateral y ovulación confirmada. El varón presenta un seminograma con parámetros normales. ¿Cuál es el diagnóstico de esta pareja?",
+    "opciones": {
+      "a": "Esterilidad de origen tubárico.",
+      "b": "Esterilidad de origen desconocido (EOD) o sin causa aparente (ESCA).",
+      "c": "Fallo de implantación primario.",
+      "d": "Incompatibilidad inmunológica."
+    },
+    "correcta": "b",
+    "explicacion": "Cuando el estudio básico (hormonal, anatómico y seminograma) es normal, se categoriza como **esterilidad de origen desconocido**.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_098",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿A partir de qué edad de la mujer se observa una caída notable y crítica de la fecundidad, según el capítulo estudiado?",
+    "opciones": {
+      "a": "Después de los 25 años.",
+      "b": "Después de los 30 años.",
+      "c": "Después de los 40 años.",
+      "d": "Únicamente tras la menopausia."
+    },
+    "correcta": "c",
+    "explicacion": "La fertilidad cae notablemente **después de los 40 años**, aunque el descenso marcado comienza a los 37-38 años.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_099",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿Cuál es la complicación más grave y específica de las técnicas de reproducción asistida que utilizan estimulación ovárica controlada?",
+    "opciones": {
+      "a": "Embarazo ectópico.",
+      "b": "Síndrome de hiperestimulación ovárica (SHEO).",
+      "c": "Infección pélvica post-punción.",
+      "d": "Torsión ovárica."
+    },
+    "correcta": "b",
+    "explicacion": "El **SHEO (Síndrome de hiperestimulación ovárica)** es una complicación iatrogénica debida a una respuesta excesiva de los ovarios a la medicación hormonal, que puede poner en riesgo la vida.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_100",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una pareja con infertilidad de 18 meses, donde se detecta una obstrucción tubárica bilateral, es candidata a:",
+    "opciones": {
+      "a": "Inseminación intrauterina (IIU).",
+      "b": "Inducción de la ovulación con coito programado.",
+      "c": "Fertilización in vitro (FIV).",
+      "d": "Tratamiento con antibióticos por 3 meses."
+    },
+    "correcta": "c",
+    "explicacion": "La obstrucción tubárica bilateral impide el encuentro del óvulo y el espermatozoide de forma natural, siendo una indicación absoluta de técnica de alta complejidad (**FIV**).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_101",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "La inseminación intrauterina (IIU) se considera una técnica de:",
+    "opciones": {
+      "a": "Alta complejidad.",
+      "b": "Baja complejidad.",
+      "c": "Diagnóstico preimplantacional.",
+      "d": "Microcirugía tubárica."
+    },
+    "correcta": "b",
+    "explicacion": "La IIU consiste en depositar espermatozoides capacitados en el útero; es de **baja complejidad** porque la fecundación ocurre dentro del cuerpo de la mujer.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_102",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿En qué consiste la técnica de ICSI (Inyección Intracitoplasmática de Espermatozoides)?",
+    "opciones": {
+      "a": "Colocar los espermatozoides en el fondo de saco de Douglas.",
+      "b": "Introducir un solo espermatozoide directamente dentro del citoplasma del ovocito.",
+      "c": "Lavar los espermatozoides con antibióticos antes de la inseminación.",
+      "d": "Realizar una biopsia de las trompas de Falopio."
+    },
+    "correcta": "b",
+    "explicacion": "La **ICSI** es una variante de la FIV de alta complejidad donde el embriólogo introduce mecánicamente un solo espermatozoide en el óvulo, indicada principalmente en factor masculino severo.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_103",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "¿Cuál es el principal factor de riesgo para el desarrollo de un embarazo múltiple en reproducción asistida?",
+    "opciones": {
+      "a": "La edad del varón.",
+      "b": "El número de embriones transferidos o el número de folículos reclutados en baja complejidad.",
+      "c": "El uso de progesterona en la fase lútea.",
+      "d": "El antecedente de legrados uterinos."
+    },
+    "correcta": "b",
+    "explicacion": "El embarazo múltiple es la complicación más frecuente, derivada de transferir **más de un embrión** en FIV o de una **respuesta multifolicular** en inseminaciones.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_104",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Según la definición del material, ¿qué diferencia a la \"infertilidad primaria\" de la \"secundaria\"?",
+    "opciones": {
+      "a": "La primaria es por causa femenina y la secundaria por causa masculina.",
+      "b": "En la primaria nunca se ha conseguido un embarazo y en la secundaria se ha conseguido al menos uno previamente sin tratamiento.",
+      "c": "La primaria dura 1 año y la secundaria 2 años.",
+      "d": "La primaria no tiene tratamiento y la secundaria sí."
+    },
+    "correcta": "b",
+    "explicacion": "La **infertilidad primaria** es cuando la pareja nunca logró una gestación; la **secundaria** es cuando el problema aparece tras haber logrado al menos un embarazo previo de forma natural.",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  {
+    "id": "gineco_003_105",
+    "materia": [
+      "ginecologia"
+    ],
+    "submateria": [
+      "Infertilidad / Esterilidad / Reproducción asistida"
+    ],
+    "enunciado": "Una pareja donde el varón presenta azoospermia (ausencia total de espermatozoides) de causa obstructiva, ¿qué técnica requiere para intentar el embarazo con gametos propios?",
+    "opciones": {
+      "a": "Inseminación con semen de donante directamente.",
+      "b": "Recuperación espermática (biopsia testicular) seguida de FIV-ICSI.",
+      "c": "Citrato de clomifeno para el varón.",
+      "d": "Histerosalpingografía de urgencia."
+    },
+    "correcta": "b",
+    "explicacion": "En azoospermias obstructivas, los espermatozoides se producen pero no salen; se deben recuperar del testículo (**biopsia testicular**) y, al ser pocos, requieren **ICSI** (alta complejidad).",
+    "imagenes": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "inventadas"
+  },
+  
