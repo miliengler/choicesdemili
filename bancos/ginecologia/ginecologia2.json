@@ -1578,5 +1578,1005 @@
     "anio": null,
     "oficial": false,
     "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_080",
+    "materia": ["obstetricia"],
+    "submateria": ["Fisiología de la gestación"],
+    "enunciado": "Una de las siguientes alteraciones NO aparece dentro de los cambios maternos a nivel cardiocirculatorio. ¿De cuál se trata?:",
+    "opciones": {
+      "a": "Aumento del volumen sanguíneo.",
+      "b": "Aumento de la presión venosa en pelvis y en piernas.",
+      "c": "Aumento de la frecuencia cardíaca.",
+      "d": "Aumento de las resistencias periféricas."
+    },
+    "correcta": "d",
+    "explicacion": "Respecto a las modificaciones más importantes del aparato cardiocirculatorio durante la gestación, son las siguientes:\n- Hay una hipertrofia con un desplazamiento del corazón hacia arriba y hacia la izquierda debido a la elevación progresiva del diafragma. En la Rx se observa cardiomegalia y en el ECG se observa una desviación del eje a la izquierda.\n- Se puede auscultar un soplo sistólico de eyección debido a la circulación hiperdinámica y un desdoblamiento del primer y segundo ruido.\n- Existe un aumento progresivo del gasto cardiaco debido al aumento de la frecuencia cardíaca y al ligero aumento del volumen sistólico.\n- La presión arterial no sufre grandes modificaciones, aunque existe un ligero descenso en los dos primeros trimestres que se compensa con un aumento durante el tercer trimestre.\n- La resistencia vascular periférica disminuye por una vasodilatación continuada, efecto de la progesterona.\n- Existe un aumento de la presión venosa en las extremidades inferiores debido a la compresión del útero grávido sobre la vena cava inferior.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_081",
+    "materia": ["obstetricia"],
+    "submateria": ["Fisiología de la gestación"],
+    "enunciado": "Indique lo INCORRECTO en relación a las modificaciones hematológicas en el embarazo:",
+    "opciones": {
+      "a": "Leucocitosis.",
+      "b": "Disminución de actividad fibrinolítica.",
+      "c": "Trombopenia.",
+      "d": "Aumento de factores de coagulación I, III, VII, VIII, IX y X."
+    },
+    "correcta": "c",
+    "explicacion": "Las modificaciones hematológicas durante la gestación son las siguientes:\n- **Serie roja:** aumento de la masa eritrocitaria, aunque este aumento es insuficiente, por lo que aparece anemia por dilución. Existe un segundo mecanismo, sobre todo presente al final del embarazo, que es el aumento de las necesidades de hierro.\n- **Serie blanca:** se produce leucocitosis leve (hasta 12.000) que se acentúa en el parto-puerperio inmediato (hasta 25.000). No se acompaña de desviación izquierda.\n- **Coagulación:** aumenta la síntesis de los factores I, III, VII, VIII, IX y X, aumento del fibrinógeno, trombocitosis y disminución de la actividad fibrinolítica. Por todas estas modificaciones, el embarazo es un estado de hipercoagulabilidad. Es importante recordar que si hay que tratar a una gestante por procesos trombóticos, lo haremos con heparina, ya que esta no pasa la barrera placentaria, a diferencia de los anticoagulantes orales, que sí lo hacen y son teratogénicos.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_082",
+    "materia": ["obstetricia"],
+    "submateria": ["Fisiología de la gestación"],
+    "enunciado": "Señale lo correcto acerca de la progesterona:",
+    "opciones": {
+      "a": "Los acetatos son transformados por la placenta en la producción de progesterona.",
+      "b": "El cuerpo lúteo es el encargado de la producción de la progesterona durante todo el embarazo.",
+      "c": "La placenta sintetiza los progestágenos a partir de la segunda mitad del embarazo.",
+      "d": "El cuerpo lúteo, en caso de fecundación, la produce aproximadamente los primeros tres meses de gestación."
+    },
+    "correcta": "d",
+    "explicacion": "La **progesterona** es una hormona esteroidea sintetizada a partir del colesterol materno. Durante el primer trimestre se sintetiza en el cuerpo lúteo, razón por la que éste es fundamental en este momento del embarazo. A partir del segundo trimestre se sintetiza en la placenta. No hay correlación entre el estado de bienestar fetal y el nivel de progesterona, ya que ante estados de anencefalia e incluso muerte fetal, los niveles de progesterona pueden persistir altos durante semanas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_083",
+    "materia": ["obstetricia"],
+    "submateria": ["Fisiología de la gestación"],
+    "enunciado": "Indique cuál de estas afirmaciones es INCORRECTA:",
+    "opciones": {
+      "a": "El método más precoz del que disponemos en la actualidad para diagnosticar gestación es la detección de HCG en sangre.",
+      "b": "La ecografía abdominal permite un diagnóstico de gestación menos preciso y menos precoz que por vía transvaginal.",
+      "c": "El método precoz de gestación que nos da mayor certeza es la detección de HCG en sangre.",
+      "d": "El aumento de HCG en orina se detecta a partir de la 5ª semana de gestación."
+    },
+    "correcta": "c",
+    "explicacion": "El diagnóstico de gestación se puede hacer determinando la HCG o a través de la ecografía. El método más precoz del que disponemos en la actualidad es la determinación de la HCG en sangre (a partir de la 3ª semana). Si la determinamos en orina, la podremos detectar positiva a partir de la 5ª semana. Sin embargo, para tener la certeza en el diagnóstico, es necesaria la ecografía. A través de la ecografía vaginal podemos visualizar la vesícula gestacional entre la 4-5ª semana, mientras que con la ecografía abdominal lo visualizaremos una semana más tarde.",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_diagnostico_gestacion.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_084",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "Indique la afirmación FALSA:",
+    "opciones": {
+      "a": "La determinación de alfafetoproteína (AFP) debe llevarse a cabo entre la semana 14 y 17.",
+      "b": "Los niveles elevados de AFP se asocian a un riesgo incrementado de Sd. de Down.",
+      "c": "Los valores incrementados de HCG se relacionan con cromosomopatías.",
+      "d": "Pueden obtenerse valores falsamente elevados de HCG en gestaciones gemelares."
+    },
+    "correcta": "b",
+    "explicacion": "Los marcadores bioquímicos de diagnóstico prenatal que forman el triple test suelen realizarse en todas las gestantes alrededor de la semana 14-16.\n- **Alfafetoproteína (AFP).** Sus niveles aumentados se asocian a defectos abiertos del tubo neural, atresia duodenal, onfalocele y riñón poliquístico. Sus niveles disminuidos se asocian a un riesgo incrementado de que el feto presente un síndrome de Down.\n- **Gonadotropina coriónica (HCG).** Valores incrementados se asocian a cromosomopatías.\n- **Estriol.** La detección de valores disminuidos puede indicar cromosomopatía.\n\nOtros marcadores:\n- Glucoproteína 1b específica del embarazo, que se encuentra elevada en caso de sd. de Down.\n- Proteína Placentaria A asociada al embarazo (PAPP-A), que se encuentra disminuida en el sd. de Down.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_085",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "Indique cuál de los siguientes hallazgos ecográficos NO es sugestivo de cromosomopatía:",
+    "opciones": {
+      "a": "Translucencia nucal > 3mm.",
+      "b": "Dilatación pielocalicial bilateral.",
+      "c": "Higroma quístico.",
+      "d": "Vena umbilical única."
+    },
+    "correcta": "d",
+    "explicacion": "La ecografía supone una técnica complementaria muy útil durante el embarazo. Entre los hallazgos ecográficos que son marcadores de cromosomopatías encontramos:\n- Translucencia nucal se asocia a sd. de Down.\n- Higroma quístico se asocia a síndrome de Turner y a algunas cardiopatías.\n- Anomalías del saco vitelino: morfología anormal o persistencia en el segundo trimestre.\n- Acortamiento de huesos largos.\n- Ectasia pielocalicial bilateral.\n- Quistes plexos coroideos.\n- Arteria umbilical única (lo fisiológico es que exista una vena umbilical).",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_086",
+    "materia": ["obstetricia", "pediatria"],
+    "submateria": ["Screening gestacional", "Síndromes asociados a anomalías cromosómicas"],
+    "enunciado": "En un control ecográfico a las 20 semanas de gestación, en que hallamos una malformación cardíaca tipo canal atrioventricular común, CIR simétrico, macroglosia y acortamiento de las extremidades, con genitales externos masculinos, ¿cuál es la alteración cromosómica más probable?:",
+    "opciones": {
+      "a": "Síndrome de Edwards.",
+      "b": "Síndrome de Patau.",
+      "c": "Síndrome de Klinefelter.",
+      "d": "Síndrome de Down."
+    },
+    "correcta": "d",
+    "explicacion": "El caso clínico nos presenta un feto con CIR simétrico. La causa más frecuente de este tipo de CIR son las cromosomopatías. De las respuestas que nos ofrecen, la que más se acerca al caso clínico es el sd. de Down. Además, recordá que la malformación cardíaca tipo canal atrioventricular común es la que con mayor frecuencia se asocia a este síndrome.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_087",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "En una embarazada de 18 semanas hemos detectado una elevación de la alfa fetoproteína sérica. ¿Qué malformación encontraremos en el feto con más probabilidad?",
+    "opciones": {
+      "a": "Síndrome de Down",
+      "b": "Turricefalia",
+      "c": "Anencefalia",
+      "d": "Mielomeningocele"
+    },
+    "correcta": "d",
+    "explicacion": "Los niveles elevados de AFP en el suero materno o en el líquido amniótico implican que los tejidos fetales están lesionados, por lo que se relacionan con defectos del tubo neural y otras anomalías fetales (atresia duodenal, mielomeningocele, riñón poliquístico...). En el S. Down los niveles de AFP estarían disminuidos.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_088",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "Señale la FALSA, respecto al diagnóstico prenatal:",
+    "opciones": {
+      "a": "La biopsia corial es el método invasivo más precoz.",
+      "b": "La amniocentesis es el método invasivo de elección en la mayoría de los casos.",
+      "c": "La funiculocentesis es el método de elección en casos de gestaciones mayores de 18 semanas.",
+      "d": "La biopsia corial se realiza únicamente a través de la vía abdominal."
+    },
+    "correcta": "d",
+    "explicacion": "Las técnicas de diagnóstico prenatal tienen principalmente tres indicaciones: edad materna > 35 años, antecedentes familiares y personales de cromosomopatías y pruebas no invasivas alteradas (ecografía y screening bioquímico).\n\nEn la actualidad, disponemos de tres técnicas. En la tabla recordamos los aspectos más importantes de las mismas.",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_diagnostico_prenatal.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_089",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "Indique cuál de las siguientes afirmaciones es FALSA con respecto a la ecografía obstétrica:",
+    "opciones": {
+      "a": "Realizada en el primer trimestre, nos permite hacer un diagnóstico de certeza de gestación.",
+      "b": "Entre las semanas 18-20, se considera el mejor momento para hacer un diagnóstico morfológico por el tamaño fetal y la abundancia de líquido amniótico.",
+      "c": "En el tercer trimestre de gestación valora el crecimiento fetal y permite detectar las alteraciones del crecimiento fetal.",
+      "d": "Se consideran signos indirectos de CIR, la presencia de polihidramnios y una placenta envejecida."
+    },
+    "correcta": "d",
+    "explicacion": "Actualmente se considera que en un embarazo normal deben realizarse entre 2 y 3 ecografías a lo largo de la gestación (el libro de Schwarcz de obstetricia que es bibliografía oficial nos marca una primera eco antes de la semana 20 y una segunda entre las semanas 33 y 35). La primera nos confirma el embarazo, su localización intrauterina y sobre todo nos data la edad gestacional. El parámetro utilizado para ello es el CRL (longitud craneocaudal del embrión). Puede hacerse una ecografía en el segundo trimestre, alrededor de la semana 20, que principalmente se realiza con el fin de un estudio morfológico del feto. La del tercer trimestre nos evalúa el adecuado crecimiento fetal. Los parámetros utilizados son la medición del DBP y LF como parámetros de crecimiento óseo y los perímetros abdominales como parámetros de crecimiento de partes blandas. A través de la ecografía podemos diagnosticar un CIR cuando el crecimiento se sitúa por debajo del percentil 3. Otros datos que apoyan el diagnóstico de CIR son el oligoamnios (no polihidramnios como dice la pregunta) y placenta envejecida. Existen otros controles prenatales que debemos conocer para el examen y se resumen en el siguiente cuadro extraído del Schwarcz (bibliografía oficial para el examen de ciudad de Bs As):",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_controles_prenatales.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_090",
+    "materia": ["obstetricia"],
+    "submateria": ["Screening gestacional"],
+    "enunciado": "¿Cuál de las siguientes NO debe encontrarse en un trazado reactivo en la monitorización fetal no estresante?:",
+    "opciones": {
+      "a": "FCF basal entre 120 y 160 lpm.",
+      "b": "Variabilidad superior a 15 lpm.",
+      "c": "Dos o más ascensos transitorios.",
+      "d": "Aparición de un ritmo sinusoidal."
+    },
+    "correcta": "d",
+    "explicacion": "En el registro fetal, tanto externo como intraparto, tenemos que fijarnos en distintas cosas:\n- **Frecuencia cardíaca fetal.** Oscila entre 120-160 lpm. La taquicardia (>160) tiene mejor pronóstico que la bradicardia (<120). La causa más frecuente de taquicardia fetal es que la madre también la tenga, muchas veces por fiebre o fármacos taquicardizantes. A veces puede ser el primer paso de sufrimiento fetal.\n- **Ondulatoria:** variación de la FCF latido a latido por acción simpática-parasimpática. De mejor a peor pronóstico, las ondulatorias son: normal (entre 10-25), baja (entre 5-10), saltatoria (>25), silente (<5) y sinusoidal. Estas dos últimas tienen muy mal pronóstico y son indicación de finalización inmediata del embarazo.\n- **Ascensos:** tienen que estar presentes en un feto maduro. Son indicación de reacción fetal. Deben estar presentes de forma espontánea y al estímulo externo.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_091",
+    "materia": ["obstetricia"],
+    "submateria": ["Parto"],
+    "enunciado": "Durante la monitorización intraparto aparecen DIPS variables acompañados de taquicardia. La dilatación vaginal es de 4 cm. Se realiza microtoma de sangre fetal con resultado de 7,24. ¿Qué actitud de las siguientes NO debemos tomar?:",
+    "opciones": {
+      "a": "Repetir la microtoma entre 15 y 30 minutos.",
+      "b": "Colocar a la paciente en decúbito lateral izquierdo.",
+      "c": "Control adecuado de las contracciones.",
+      "d": "Aumentar el goteo de oxitócicos."
+    },
+    "correcta": "d",
+    "explicacion": "El caso clínico nos presenta una gestante de parto y en la que tenemos la sospecha clínica de sufrimiento fetal por la aparición de taquicardia y DIPS variables. Siempre que se pueda, se debe hacer confirmación bioquímica a través de la microtoma fetal (toma de sangre del cuero cabelludo fetal). Recordá que el pH normal durante el periodo de dilatación y expulsivo del parto oscila entre 7,25 y 7,45. Por debajo de 7,20 hacemos el diagnóstico de sufrimiento fetal, y hay que extraer inmediatamente al feto. Sin embargo, entre 7,20 y 7,25 es un valor prepatológico, y en estos casos hay que esperar 15-20 minutos y repetir la microtoma. Durante este tiempo, habrá que intentar que el feto se recupere con medidas que consigan una mejor oxigenación fetal, por lo que la respuesta 4 no es correcta, ya que así se aumentaría la dinámica uterina y empeoraría el estado fetal (recordá que el paso de oxígeno es máximo en estado de relajación uterina).",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_092",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Gestante de 12 semanas que acude a urgencias por metrorragia y dolor abdominal de varias horas de evolución. A la exploración, se observa que el cuello uterino está cerrado y en la ecografía se visualiza un embrión con latido cardíaco. La actitud terapéutica más correcta será:",
+    "opciones": {
+      "a": "Reposo relativo.",
+      "b": "Legrado uterino.",
+      "c": "Oxitócicos.",
+      "d": "Prostaglandinas."
+    },
+    "correcta": "a",
+    "explicacion": "Ante cualquier hemorragia del primer trimestre, siempre debemos pensar en la posibilidad de que se trate de una **amenaza de aborto**, pues el aborto es la causa más frecuente de hemorragia en este periodo. La clínica de la amenaza es la que nos expone la Pregunta: sangrado y dolor abdominal con cérvix cerrado y ecografía normal. En cuanto al tratamiento, es fundamental el reposo físico y psíquico con disminución de la actividad sexual. No está demostrada la utilidad de uteroinhibidores ni los progestágenos, por lo que no deben utilizarse. En los casos de insuficiencia luteínica, demostrada previamente, sí está justificada la utilización de los gestágenos.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_093",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Paciente de 25 años, que acude por metrorragias y contracciones importantes en la semana 20 de embarazo. A la exploración ginecológica se observa una dilatación del cuello uterino sin expulsión del huevo. ¿Qué sospecharía?:",
+    "opciones": {
+      "a": "Aborto diferido.",
+      "b": "Aborto consumado.",
+      "c": "Aborto habitual.",
+      "d": "Aborto en curso."
+    },
+    "correcta": "d",
+    "explicacion": "Entre las respuestas, las dos únicas opciones que tienen el cuello uterino dilatado son el aborto consumado y el aborto en curso. Para que hablemos de aborto en curso deben existir contracciones uterinas, mientras que en el consumado ya han cesado. En cuanto al tratamiento, este dependerá de si es una forma completa o incompleta. En general, en la forma completa no hay que hacer nada, mientras que en la forma incompleta es necesario realizar un legrado para eliminar los restos ovulares y la decidua que pueden aumentar el riesgo de padecer una endometritis.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_094",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Paciente de 22 años, a la que se diagnosticó aborto diferido de 9 semanas de gestación. A las 48 horas de realizar legrado terapéutico, la paciente comienza con un cuadro de fiebre de hasta 39º y dolor abdominal con signos de irritación peritoneal. ¿Qué actitud debemos tomar en ese momento?:",
+    "opciones": {
+      "a": "Repetir el legrado.",
+      "b": "Es normal este cuadro después de un legrado.",
+      "c": "Realizar una histerectomía.",
+      "d": "Pautar tratamiento antibiótico, oxitócicos y vigilar la evolución del cuadro."
+    },
+    "correcta": "d",
+    "explicacion": "Es frecuente que las complicaciones infecciosas graves en los abortos se asocien a intentos de manipulación con finalidad abortiva o tras la realización de un legrado terapéutico, como es el caso de la Pregunta, en la que se contamina el contenido uterino o la decidua con gérmenes presentes en la vagina u otros de origen exógeno. El cuadro presentado es el típico de una infección grave. El tratamiento se puede resumir en la hospitalización con control de constantes vitales y diuresis con sonda vesical permanente con perfusión intravenosa de fluidos, cultivos para identificación bacteriológica, instauración de cobertura antibiótica de amplio espectro y extracción de restos ovulares mediante legrado.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_095",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Paciente de 40 años que consulta por hemorragia en la semana 20 de embarazo. En la anamnesis, destaca un parto previo gemelar. A la exploración, destaca un útero de tamaño mayor a lo que correspondería. Le practica una ecografía que demuestra una imagen en \"tormenta de nieve\". ¿Cuál sería su actitud?:",
+    "opciones": {
+      "a": "Reposo relativo.",
+      "b": "Legrado por aspiración.",
+      "c": "Laparoscopia.",
+      "d": "Metotrexate."
+    },
+    "correcta": "b",
+    "explicacion": "Los datos ecográficos que nos aporta la Pregunta nos ayudan a diagnosticar una enfermedad trofoblástica, aunque no son específicos. La imagen ecográfica en \"tormenta de nieve\" es típica de la mola. Otro dato que puede aparecer en 30% de los casos es la presencia de quistes tecaluteínicos bilaterales ováricos. Están producidos por el efecto FSH y LH que tiene la HCG. Recordá que no requieren tratamiento específico y desaparecen tras tratar la enfermedad trofoblástica en cuanto descienda la producción de HCG. El manejo inicial es la realización de legrado por aspiración.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_096",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Una de las siguientes sustancias es de gran utilidad para el diagnóstico y seguimiento de la enfermedad molar. Señale cuál:",
+    "opciones": {
+      "a": "FSH.",
+      "b": "Curva de estriol en orina.",
+      "c": "Niveles de pregnandiol urinario.",
+      "d": "HCG."
+    },
+    "correcta": "d",
+    "explicacion": "Para el diagnóstico y seguimiento de la enfermedad molar se usa la HCG ya que la producción de la misma es mucho mayor que en una gestación normal, debido al desarrollo trofoblástico excesivo, incluso llegando al millón de unidades.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_097",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "De los siguientes factores de riesgo, ¿cuál NO se relaciona con el embarazo ectópico?:",
+    "opciones": {
+      "a": "Utilización de diafragma.",
+      "b": "Malformación uterina.",
+      "c": "Cirugía abdominal previa.",
+      "d": "DIU."
+    },
+    "correcta": "a",
+    "explicacion": "La fecundación del óvulo se produce normalmente en la trompa del útero. Como consecuencia de ello, cualquier proceso que impida o retarde el pasaje del huevo a la cavidad uterina será capaz de constituirse en factor etiológico de un embarazo tubario.\nLos factores favorecedores de embarazo ectópico son:\n- Antecedentes de gestación ectópica.\n- Cirugía tubárica previa.\n- Enfermedad inflamatoria pélvica.\n- Portadoras de DIU.\n- Esterilidad previa.\nRecordá que lo más frecuente es que el embarazo ectópico sea tubárico (95%). Otras localizaciones más raras son la cavidad abdominal, el ovario o el cérvix.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_098",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Mujer de 35 años, nuligesta, que acude por pérdidas hemáticas de escasa cuantía de 5 días de evolución tras un período de 6 semanas de amenorrea, acompañadas de dolor hipogástrico difuso. Exploración: tacto bimanual doloroso, se palpa anexo derecho aumentado de tamaño. ¿Qué prueba realizaría en primer lugar?:",
+    "opciones": {
+      "a": "Ecografía.",
+      "b": "Laparoscopia.",
+      "c": "Culdocentesis.",
+      "d": "Test de embarazo."
+    },
+    "correcta": "d",
+    "explicacion": "Debemos sospechar un embarazo ectópico ante la presencia de amenorrea de pocos días o semanas, pérdida parduzca de poca intensidad (en borra de café), y sobre todo, dolor abdominal, que suele ser vivo, persistente, lateral, que se irradia hacia la pelvis, región lumbar o epigastrio. A veces se acompaña de pérdida de conciencia en los ectópicos complicados. La exploración ginecológica aporta poca información, salvo anexo engrosado y doloroso. En este caso como nuestra sospecha es ésta, la primera medida es realizar una prueba de embarazo para confirmar que se trata de una patología relacionada con la gestación.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_099",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "¿Qué técnica nos da el diagnóstico definitivo en la gestación ectópica?:",
+    "opciones": {
+      "a": "Determinación seriada de HCG.",
+      "b": "Laparoscopia.",
+      "c": "Punción del saco de Douglas.",
+      "d": "Paracentesis."
+    },
+    "correcta": "b",
+    "explicacion": "Para confirmar una sospecha clínica de gestación ectópica lo primero que realizaremos es una ecografía. Podemos tener tres posibilidades:\n- Excluir con seguridad el embarazo ectópico, si confirmamos la presencia de una gestación intrauterina.\n- Confirmar el diagnóstico de ectópico, sí visualizamos en una localización extrauterina el saco gestacional con el embrión provisto de latido cardíaco.\n- Diagnóstico dudoso o sospechoso al visualizarse masa anexial compleja y/o útero vacío.\nSi con la ecografía no hemos llegado al diagnóstico, debemos realizar una determinación de HCG en sangre. En el embarazo ectópico suele tener niveles más bajos, y lo que es más importante, con ritmo de crecimiento menor que en la gestación normal. Si aún hay dudas, tendremos que recurrir al diagnóstico de certeza mediante la laparoscopia y anatomía patológica.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_100",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Gestante de 37 semanas, con 3 partos eutócicos anteriores, presenta sangrado vaginal indoloro escaso. La exploración ecográfica nos demuestra una placenta que ocluye de una manera total el orificio cervical interno. La monitorización fetal es normal. La conducta obstétrica sería:",
+    "opciones": {
+      "a": "Cesárea.",
+      "b": "Rotura de membranas, para que el polo cefálico comprima el punto sangrante al descender la presentación.",
+      "c": "Rotura de membranas, para que el polo cefálico comprima el punto sangrante al descender la presentación, y administración.",
+      "d": "Inducción del parto con prostaglandinas."
+    },
+    "correcta": "a",
+    "explicacion": "La multiparidad, las cicatrices uterinas anteriores, el embarazo múltiple, el tabaquismo y los antecedentes de una placenta previa son los factores predisponentes de este cuadro. Recorda que, ante toda hemorragia del tercer trimestre, hay que pensar fundamentalmente en 3 patologías: placenta previa, abruptio (o desprendimiento prematuro de placenta) y la rotura de vasa previa. El diagnóstico más frecuente es el de placenta previa. La clínica es un sangrado intermitente, indoloro, que no asocia alteraciones en el tono uterino y buen estado tanto materno como fetal. En cuanto a la conducta obstétrica, ésta dependerá del tipo de placenta previa que sea. Así en el ejemplo de la placenta previa oclusiva total (como es el caso de la Pregunta), hay que hacer una cesárea. En el resto de casos (placenta previa parcial, de inserción baja y marginal), hay que valorar la cuantía del sangrado. En hemorragias leves hay que intentar un parto vaginal, que suele ser posible, ya que al dilatarse el cuello y descender la presentación, puede ceder el sangrado al comprimirse la placenta contra la pared uterina. Si existiera una hemorragia severa, sería necesaria una cesárea. El Schwarcz resume diferencias entre placenta previa y abruptio placentae en el siguiente cuadro:",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_hemorragias_tercer_trimestre.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_101",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "¿Cuál de estas afirmaciones es cierta respecto al abruptio placentae?:",
+    "opciones": {
+      "a": "La hemorragia suele ser escasa o moderada, con sangre oscura.",
+      "b": "La hemorragia coincide con la rotura de la bolsa.",
+      "c": "No hay repercusión materna, pero sí repercusión fetal.",
+      "d": "El útero está relajado."
+    },
+    "correcta": "a",
+    "explicacion": "En el abruptio, la hemorragia suele ser escasa y de color oscuro, ya que procede de un hematoma retroplacentario que se ha formado en la zona de desprendimiento. Esta hemorragia puede o no coincidir con la rotura de la bolsa. En principio, no suele ocurrir, salvo que se produzca un desgarro accidental. La repercusión materna es importante y puede presentar shock hipovolémico, que puede parecer desproporcionado a la hemorragia visible. Es típica la hipertonía uterina (útero de consistencia leñosa) con tetania uterina que provoca dolor importante y que dificulta la exploración, impidiendo, en ocasiones, la palpación de partes fetales. La etiología del abruptio es oscura. Sin embargo, existen varios factores etiológicos implicados:\n- Es más frecuente en grandes multiparas.\n- Es más frecuente en mayores de 35 años.\n- La preeclampsia, diabetes, nefropatías e hipertensión predisponen a esta patología a través de las alteraciones vasculares de estos cuadros.\n- Los traumatismos y algunas maniobras obstétricas.\n- La hipofibrinogenemia congénita se ha asociado al abruptio de repetición.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_102",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "¿Cuál de estas complicaciones NO esperaría Ud. encontrar en un abruptio placentae?:",
+    "opciones": {
+      "a": "Coagulación intravascular diseminada.",
+      "b": "Insuficiencia renal aguda.",
+      "c": "Necrosis hipofisaria (Sd. de Sheehan).",
+      "d": "Necrosis de la corteza suprarrenal."
+    },
+    "correcta": "d",
+    "explicacion": "Los trastornos de coagulación aparecen en el 10% de todos los casos de DPPNI y constituyen la causa más frecuente de trastornos de la coagulación durante el embarazo, y es debida a la liberación de tromboplastina placentaria. La insuficiencia renal aguda se produce por el depósito de fibrina en los capilares renales con necrosis de la corteza renal, pero no con necrosis de la corteza suprarrenal. No se produce frecuentemente aunque algunos autores lo consideran como la causa obstétrica más frecuente de insuficiencia renal aguda. La atonía uterina se produce por una falta de retracción uterina debido a la infiltración hemorrágica de la pared uterina. Esta infiltración altera la estructura muscular uterina y puede dificultar la retracción uterina postparto. El síndrome de Sheehan es la necrosis hipofisaria producida por una hemorragia postparto. Las hemorragias tienen que ser de suficiente entidad para producir la necrosis isquémica de la hipófisis.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_103",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Paciente de 34 años, tercípara. La gestación actual ha cursado con normalidad. Inicia dinámica de parto y después de dos horas alcanza 3 cm de dilatación con bolsa íntegra. La dinámica es espontánea. Tras dos horas con muy buena dinámica no se modifica la exploración y la dinámica empieza a ser menor, y de forma brusca refiere dolor intenso en hipogastrio. Monitorización fetal normal hasta dicho momento. ¿Cuál sería su diagnóstico?:",
+    "opciones": {
+      "a": "Rotura de vasos previos.",
+      "b": "Placenta previa.",
+      "c": "Rotura uterina.",
+      "d": "Desprendimiento de placenta."
+    },
+    "correcta": "c",
+    "explicacion": "La rotura uterina es una grave complicación materna con altas tasas de mortalidad, tanto materna como fetal. Se suele presentar durante el parto, pero la presentación clínica es muy variable. Existen unos síntomas de amenaza de rotura uterina, como el dolor a nivel del segmento inferior del útero, que persevera entre las pausas intercontráctiles, y aumento creciente de la actividad contráctil del útero, pudiendo llegar al tétanos uterino. Cuando se ha producido la rotura, existe un shock. Es principalmente hipovolémico por la hemorragia, pero también tiene un componente neurogénico producido por el dolor que se suele iniciar de manera brusca y puede llegar a ser de gran intensidad. Las contracciones uterinas cesan y es típico que se palpen muy claramente las partes fetales debajo de las paredes abdominales, correspondiéndose a signos de sufrimiento fetal en la monitorización. La causa más frecuente es en aquellas gestantes con una cesárea anterior. Otros factores predisponentes podrán ser: feto grande, pelvis estrecha, gestación gemelar, parto prolongado, grandes multiparas y cualquier cirugía uterina, aunque no sea cesárea. El tratamiento más seguro es una laparotomía urgente con histerectomía total. Algunos autores utilizan la sutura uterina vía abdominal, aunque se acompaña de un peligro de infección relativamente grande y, por supuesto, un importante riesgo de rotura en embarazos ulteriores. En el siguiente cuadro podemos ver las principales diferencias entre las distintas causas de hemorragias del tercer trimestre:",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_cuadro_hemorragias.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_104",
+    "materia": ["obstetricia"],
+    "submateria": ["Hemorragias del embarazo"],
+    "enunciado": "Gestante a término y con trabajo de parto, a la que se practica amniorrexis con obtención de líquido hemorrágico, al tiempo que en la monitorización aparece un ritmo sinusoidal. ¿Cuál sería su sospecha diagnóstica?:",
+    "opciones": {
+      "a": "Desprendimiento de placenta.",
+      "b": "Rotura uterina.",
+      "c": "Desgarro del cérvix.",
+      "d": "Rotura de vasos previos."
+    },
+    "correcta": "d",
+    "explicacion": "Un dato fundamental en el diagnóstico de la rotura de vasos previos es la grave repercusión fetal, pues los vasos previos aportan la sangre al feto. Si se produce su rotura, se compromete la nutrición y oxigenación fetal. La actuación debe ser inmediata, y consiste en realizar una cesárea urgente. No existe otra clínica asociada, ya que no aparece dolor ni alteraciones en el tono uterino ni en el estado general materno.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_105",
+    "materia": ["obstetricia"],
+    "submateria": ["Complicaciones maternas en el embarazo"],
+    "enunciado": "En relación con la preeclampsia, ¿cuál de las siguientes respuestas es FALSA?:",
+    "opciones": {
+      "a": "Es más frecuente en primigestas.",
+      "b": "Aparece, casi siempre en el tercer trimestre.",
+      "c": "Es más frecuente en los embarazos múltiples.",
+      "d": "Puede darse sin proteinuria."
+    },
+    "correcta": "d",
+    "explicacion": "Las guías de hipertensión del embarazo del Ministerio de Salud de la Nación (bibliografía oficial) definen a la preclampsia como un desorden multisistémico que se manifiesta, en general, a partir de las 20 semanas de gestación, ante la detección de valores de TA iguales o mayores de 140/90 mm Hg asociado a la presencia de proteinuria.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_106",
+    "materia": ["obstetricia"],
+    "submateria": ["Complicaciones maternas en el embarazo"],
+    "enunciado": "¿Cuál es la conducta obstétrica a seguir en una gestante a término que presenta TA 170/110 de forma mantenida, edemas +++ y proteinuria de 5 g/l?:",
+    "opciones": {
+      "a": "Tratamiento médico y esperar al parto.",
+      "b": "Inducción del parto y control de la TA.",
+      "c": "Normalización de la TA y cesárea.",
+      "d": "Cesárea urgente."
+    },
+    "correcta": "b",
+    "explicacion": "",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/obstetricia_preeclampsia_algoritmo.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_107",
+    "materia": ["obstetricia"],
+    "submateria": ["Complicaciones maternas en el embarazo"],
+    "enunciado": "Primigesta de 18 años de edad, que ingresa en trabajo de parto en la semana 37 de la gestación, presentando una TA de 180/110 mmHg, proteinuria y edema pretibial. Se queja de cefalea intensa y epigastralgia, con náuseas y vómitos. Mientras se prepara venoclisis, la paciente presenta una crisis tonicoclónica. ¿Cuál sería el tratamiento inicial?:",
+    "opciones": {
+      "a": "Hidralacina.",
+      "b": "Alfametildopa.",
+      "c": "Sulfato de magnesio.",
+      "d": "Diacepam."
+    },
+    "correcta": "c",
+    "explicacion": "El tratamiento de elección, tanto para el tratamiento como para la profilaxis, de la eclampsia es el **sulfato de magnesio**. Su mecanismo de acción es bloquear la unión neuromuscular periférica. Es un fármaco muy tóxico, en el que los niveles terapéuticos están muy próximos a los niveles tóxicos, pudiendo inducir depresión respiratoria. Si esto ocurriera, hay que suspender inmediatamente su infusión y comenzar a administrar su antídoto, que es el gluconato de calcio. Recuerda que su eliminación es renal, por lo que en casos de insuficiencia renal hay que ajustar la dosis para no provocar intoxicación.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_108",
+    "materia": ["obstetricia"],
+    "submateria": ["Fisiología de la gestación"],
+    "enunciado": "¿Cuál de las siguientes vacunas está CONTRAINDICADA durante el embarazo?:",
+    "opciones": {
+      "a": "Tétanos.",
+      "b": "Difteria.",
+      "c": "Gripe.",
+      "d": "Rubéola."
+    },
+    "correcta": "d",
+    "explicacion": "Las únicas vacunas totalmente seguras durante el embarazo son los toxoides, como el tétanos o la difteria. El resto están contraindicadas. La vacunación contra la gripe y la hepatitis B se puede realizar siempre que sea absolutamente necesaria.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_109",
+    "materia": ["ginecologia"],
+    "submateria": ["Otras preguntas de ginecología"],
+    "enunciado": "Una de las siguientes acciones NO es propia de la progesterona:",
+    "opciones": {
+      "a": "Es producida por el cuerpo lúteo.",
+      "b": "Relaja la musculatura lisa.",
+      "c": "Disminuye la temperatura corporal un grado centígrado tras la ovulación.",
+      "d": "Disminuye la cantidad de moco cervical y su contenido en ácido siálico."
+    },
+    "correcta": "c",
+    "explicacion": "La progesterona tiene una curva unimodal en la segunda fase del ciclo. Se libera en el cuerpo lúteo, por lo que sólo existirá en los ciclos ovulatorios. Las principales funciones de la progesterona son:\n- Preparación de mamas para la lactancia.\n- Relajación de fibra muscular lisa.\n- Aumento del metabolismo basal, lo que provoca un aumento en la temperatura corporal.\n- Disminuyen la cantidad de moco cervical y su contenido en ácido siálico, aumentando su viscosidad.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_110",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "¿Cuál de las siguientes patologías NO cursa con amenorrea primaria?:",
+    "opciones": {
+      "a": "Sd. de Asherman.",
+      "b": "Sd. de Rokitansky.",
+      "c": "Sd. de Swyer.",
+      "d": "Sd. de Turner."
+    },
+    "correcta": "a",
+    "explicacion": "Recordemos brevemente en qué consisten los síndromes que nos ofrecen en las respuestas:\n- **Sd. de Asherman:** aparición de sinequias uterinas postlegrado que causan amenorrea secundaria, no primaria.\n- **Sd. de Rokitansky:** alteración en el desarrollo embrionario de los conductos de Müller, por lo que no existe útero. El cariotipo es normal (46XX) y el fenotipo es femenino, con un adecuado desarrollo de caracteres sexuales secundarios.\n- **Sd. de Swyer:** disgenesia gonadal que no asocia otras malformaciones. Cariotipo 46XY. Es más frecuente la aparición de tumores ováricos, en concreto el gonadoblastoma.\n- **Sd. de Turner:** es la disgenesia gonadal más frecuente. El cariotipo característico es 45X0. Sus características son talla baja, pliegue cervical, cubitus valgus, alteraciones renales y cardíacas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_111",
+    "materia": ["ginecologia"],
+    "submateria": ["Alteraciones menstruales"],
+    "enunciado": "Paciente de 28 años consulta por amenorrea secundaria. PRL normal y hemorragia a la administración de los progestágenos. El diagnóstico más probable es:",
+    "opciones": {
+      "a": "Adenoma de hipófisis.",
+      "b": "Insuficiencia hipofisaria.",
+      "c": "Útero hipotrófico.",
+      "d": "Anovulación."
+    },
+    "correcta": "d",
+    "explicacion": "En la fase proliferativa se produce un crecimiento glandular en el endometrio provocado por acción estrogénica, mientras que en la fase secretora se produce la maduración de las glándulas y el estroma endometrial por acción de la progesterona. Para que la progesterona sea eficaz es necesario que haya existido proliferación previa, por lo que en el diagnóstico de las amenorreas sólo conseguiremos inducir menstruación con la administración de progestágenos en una paciente con producción estrogénica. Por eso, la respuesta correcta es la anovulación. Recordá que la causa, no fisiológica, de amenorrea secundaria más frecuente es la anovulación, y dentro de ésta el ovario poliquístico. A continuación se resume en el esquema:",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/ginecologia_amenorrea_algoritmo.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_112",
+    "materia": ["ginecologia"],
+    "submateria": ["Síndrome de ovario poliquístico"],
+    "enunciado": "Señale la afirmación INCORRECTA acerca del SOP:",
+    "opciones": {
+      "a": "Existe una elevación de LH por pulsos demasiado rápidos en la secreción hipotalámica de GnRH.",
+      "b": "Lo característico al microscopio óptico es la hiperplasia de la granulosa, con una capa de la teca poco desarrollada.",
+      "c": "El síntoma más frecuente es la esterilidad, y se debe a la anovulación.",
+      "d": "En el laboratorio encontraremos un aumento de LH y disminución de FSH con un cociente >2,5."
+    },
+    "correcta": "b",
+    "explicacion": "El síndrome de ovario poliquístico se caracteriza clínicamente por esterilidad secundaria a la anovulación con menstruaciones escasas e irregulares. Suelen presentar obesidad e hirsutismo. Hormonalmente se caracteriza por un aumento de la LH en respuesta a una GnRH que se libera en pulsos de mayor frecuencia. Esta LH elevada estimula intensamente a la teca, produciendo hiperplasia tecal con aumento de los andrógenos locales. Microscópicamente, se observa un aumento de la zona medular ovárica y una hiperplasia de la teca interna, que es la alteración más característica. Los ovarios son grandes, lisos, grisáceos, con formaciones poliquísticas de tamaño entre 0,5 y 1cm en diferentes estados de maduración que producen una mayor cantidad de andrógenos locales. Los datos analíticos son aumento de LH con FSH normal o ligeramente disminuida, lo que da lugar a ese cociente >2,5 característico del síndrome de ovario poliquistico. Asocia cifras de progesterona ausente y testosterona y androstendiona elevadas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_113",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "¿Cuál de las siguientes no es una contraindicación absoluta de la anticoncepción hormonal?",
+    "opciones": {
+      "a": "Antecedentes de ictericia colestásica.",
+      "b": "Sangrado vaginal no filiado.",
+      "c": "Porfiria aguda intermitente.",
+      "d": "Diabetes mellitus sin afectación vascular."
+    },
+    "correcta": "d",
+    "explicacion": "**Contraindicaciones absolutas**\n- Pacientes con riesgo cardiovascular: fumadoras mayores de 35 años (o no fumadoras mayores de 40).\n- Antecedentes de trombosis venosa profunda o embolismo pulmonar.\n- Cirugía mayor con previsibles períodos prolongados de inmovilización.\n- Mutaciones de genes con carácter trombogénico (factor V, protrombina, proteínas C y S y antitrombina).\n- HTA mal controlada.\n- Diabetes con afectación vascular (vasculopatía, nefropatía, retinopatía o neuropatía).\n- Vasculopatía inflamatoria.\n- Cardiopatías graves.\n- Pacientes con afectación hepática importante: adenoma hepático, hepatopatías activas como cirrosis activa (la hepatitis A no se considera contraindicación absoluta).\n- Porfiria aguda intermitente.\n- Antecedentes de ictericia durante la gestación, colestasis intrahepática.\n- Embarazo, confirmado o sospechado.\n- Cáncer de mama y otros tumores hormono-dependientes.\n- Discrasia sanguínea, anemia de células falciformes.\n- Sangrado genital anormal no filiado.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_114",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Señale cuál de los siguientes NO es un efecto de los anticonceptivos orales:",
+    "opciones": {
+      "a": "Aumentan la incidencia de colelitiasis.",
+      "b": "Disminuyen la incidencia de ca. epitelial de ovario.",
+      "c": "Aumentan la incidencia de adenocarcinoma de endometrio.",
+      "d": "Pueden inducir o exacerbar una hipertensión."
+    },
+    "correcta": "c",
+    "explicacion": "Con respecto a los efectos colaterales de los anticonceptivos hormonales, son los siguientes:\n- **Ginecológicos:** disminuyen la incidencia de la mastopatía fibroquística y adenomas mamarios, el Ca. epitelial de ovario y el Ca. de endometrio. Aumentan la presentación clínica del cáncer de mama, pero no su incidencia real.\n- **Tumores hepáticos:** se han relacionado con la aparición de adenomas hepáticos.\n- **Tensión arterial:** pueden inducir o exacerbar una HTA preexistente. Estas cifras suelen normalizarse a los 3-6 meses de la supresión.\n- **Enfermedad tromboembólica:** se correlaciona con los estrógenos y sus dosis al estimular un estado procoagulante por aumento de los factores I, II, VII, IX, X y del plasminógeno y disminución de la antitrombina III.\n- **Perfil lipídico:** disminuye porcentualmente el LDL-colesterol y aumenta el HDL-colesterol, por lo que se acepta que son antiaterogénicos y cardioprotectores.\n- **Otros:** mejoran la dismenorrea y la hemorragia anovulatoria. Aumentan la incidencia de colelitiasis. Alteran el moco cervical y reducen la penetración del esperma al reducir la movilidad y las secreciones de las trompas de Falopio y el útero.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_115",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "La modificación endocrina que aparece de modo más precoz en la menopausia es:",
+    "opciones": {
+      "a": "Aumento de FSH.",
+      "b": "Disminución de FSH.",
+      "c": "Aumento de LH.",
+      "d": "Disminución de LH."
+    },
+    "correcta": "a",
+    "explicacion": "La premenopausia abarca un período de 3-5 años previos a la menopausia y en él comienzan a advertirse los síntomas derivados del déficit de estrógenos. La premenopausia se caracteriza por un acortamiento de la fase folicular, con una fase lútea no alterada, consecuencia de la mayor liberación de FSH, consecuencia de la disminución de la inhibina (por descenso en el número de folículos). Clínicamente la premenopausia se caracteriza por la irregularidad de los ciclos, en forma de patrones muy variados, que dependen de las transformaciones que sufre el endometrio en respuesta a la débil acción estrogénica. En la postmenopausia, la sintomatología es más acusada y aparece la amenorrea. En el laboratorio encontraremos un incremento de ambas gonadotropinas (FSH y LH). El estradiol desciende a niveles muy bajos y el estrógeno predominante pasa a ser la estrona, que deriva de la conversión periférica de andrógenos suprarrenales.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_116",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "NO es factor de riesgo de osteoporosis:",
+    "opciones": {
+      "a": "Menopausia precoz.",
+      "b": "Delgadez.",
+      "c": "Tabaco, café, alcohol.",
+      "d": "Raza negra."
+    },
+    "correcta": "d",
+    "explicacion": "Existen muchas patologías que condicionan osteoporosis, llamada en estos casos osteoporosis secundaria:\n- Enfermedades del eje endocrino: hipertiroidismo, hipogonadismo, síndrome de Cushing de cualquier origen, hiperparatiroidismo e hipocalcemia.\n- Trastornos hereditarios del sistema conectivo: osteogénesis imperfecta, homocistinuria, síndrome de Marfan, síndrome de Ehlers-Danlos.\n- Otros: malabsorción, escorbuto, desnutrición, administración prolongada de heparina, mastocitosis sistémica, artritis reumatoide, alcoholismo, epilepsia, diabetes mellitus, cirrosis biliar primaria, EPOC.\nSin embargo, la osteoporosis más frecuente es la llamada primaria o idiopática, en la que son factores de riesgo: raza blanca (respecto a la raza negra, que tiene un promedio mayor de masa ósea), valores bajos de peso corporal y de masa muscular, la inmovilización, la disminución de los estrógenos plasmáticos (menopausia), tabaco, alcohol, la escasa ingesta de calcio durante las tres primeras décadas de la vida y las dietas ricas en proteínas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_117",
+    "materia": ["ginecologia"],
+    "submateria": ["Endometriosis"],
+    "enunciado": "La mejor actitud ante el diagnóstico ecográfico de un endometrioma ovárico es:",
+    "opciones": {
+      "a": "Tratamiento con análogos de GnRH 6 meses.",
+      "b": "Laparotomía exploradora.",
+      "c": "Laparoscopia quirúrgica.",
+      "d": "Observación y repetir en 3 meses."
+    },
+    "correcta": "c",
+    "explicacion": "La localización más frecuente de la endometriosis es el ovario, en donde con frecuencia se forman quistes que se llenan de sangre con contenido marrón oscuro que les da el nombre de \"quistes de chocolate\". La endometriosis en una enfermedad cuyo diagnóstico y tratamiento de elección es quirúrgico. La cirugía permite resolver gran parte de las lesiones, pero debe ser conservadora, intentando extirpar todas las lesiones y restaurando la anatomía del aparato genital interno. El tratamiento médico suele utilizarse para consolidar los resultados obtenidos con la cirugía.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_118",
+    "materia": ["ginecologia"],
+    "submateria": ["Infecciones del tracto genital inferior"],
+    "enunciado": "En las vulvovaginitis, ¿qué asociación es INCORRECTA?:",
+    "opciones": {
+      "a": "Candidiasis -- leucorrea caseosa.",
+      "b": "Tricomoniasis -- disuria.",
+      "c": "Tricomoniasis -- metronidazol oral.",
+      "d": "Gardnerella -- clindamicina oral."
+    },
+    "correcta": "d",
+    "explicacion": "",
+    "imagenes": [],
+    "explicacion_img": ["img/explicaciones/ginecologia_vulvovaginitis_cuadro.jpg"],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_119",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "¿Cuál de los siguientes factores puede considerarse protector frente al cáncer de mama?:",
+    "opciones": {
+      "a": "Menarquia precoz.",
+      "b": "Menopausia tardía.",
+      "c": "Multiparidad",
+      "d": "Uso de anticonceptivos orales."
+    },
+    "correcta": "c",
+    "explicacion": "**FACTORES DE RIESGO NO MODIFICABLES:**\n- EDAD, AUMENTA SU INCIDENCIA SIGNIFICATIVAMENTE\n- MENARCA PRECOZ\n- MENOPAUSIA TARDIA\n- NULIPARIDAD\n- PRIMER HIJO LUEGO DE LOS 35 AÑOS\n- HERENCIA\n\n**MODIFICABLES:**\n- DIETAS RICAS EN GRASAS - OBESIDAD\n- SEDENTARISMO\n- TABAQUISMO\n- TERAPIA HORMONAL DE REEMPLAZO\n- ALCOHOLISMO",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_120",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología benigna de mama"],
+    "enunciado": "¿Cuál es el tumor mamario más frecuente?:",
+    "opciones": {
+      "a": "Adenoma.",
+      "b": "Papiloma intracanalicular.",
+      "c": "Fibroadenoma.",
+      "d": "Fibroma."
+    },
+    "correcta": "c",
+    "explicacion": "El **fibroadenoma mamario** es un tumor redondeado y sólido de la mama que suele aparecer antes de los 40 años. Es un tumor compuesto de formaciones epiteliales benignas. A la palpación suele encontrarse un nódulo redondeado, bien delimitado, no adherente y que no produce adenopatías axilares. En la mamografía se observa una zona de condensación con límites bien precisos. En la ecografía, nódulo hipoecoico de bordes netos. Es un proceso benigno y no degenera casi nunca. El tratamiento será la escisión quirúrgica siempre en las mujeres mayores, mientras que en las mujeres jóvenes se puede observar y extirpar si la paciente así lo desea o crece en los controles realizados.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_121",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Todas las siguientes imágenes aparecidas en una mamografía realizada dentro de un programa de screening le harían sospechar malignidad, EXCEPTO:",
+    "opciones": {
+      "a": "Presencia de un nódulo denso, espiculado, de bordes imprecisos.",
+      "b": "Edema alrededor de la areola mamaria.",
+      "c": "Presencia de 5 microcalcificaciones diseminadas asimétricas.",
+      "d": "Retracción de la piel en la mama."
+    },
+    "correcta": "c",
+    "explicacion": "El dato más precoz que podemos encontrar en la mamografía sugestivo de malignidad son las microcalcificaciones asimétricas y agrupadas. Datos más tardíos que también sugieren malignidad son la presencia de nódulos, irregulares, de bordes espiculados, desestructuración del parénquima y retracción de la piel o pezón.\n\nGori, página 913: \"Imágenes características del cáncer de la mama. Muestran habitualmente bordes muy irregulares, no bien definidos, aumento de la densidad localizada; en alguna ocasión pueden tener formas redondeadas, parcialmente uniformes como en los tumores benignos. Como signos radiológicos de importancia para la presunción de carcinoma se pueden observar:\n- Estrías radiales que convergen hacia el tumor (estrías de alarma de Leborgne).\n- Microcalcificaciones numerosas, anárquicas, agrupadas.\n- Imagen mamográfica de tamaño menor que el apreciado clínicamente.\nLa retracción de la piel y del pezón como el engrosamiento (edema) de la piel y la vascularización aumentada son signos de malignidad\".",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_122",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "¿Cuál es el factor pronóstico más importante en un cáncer de mama?:",
+    "opciones": {
+      "a": "Tamaño tumoral.",
+      "b": "Localización tumoral.",
+      "c": "Afectación ganglionar.",
+      "d": "Multicentricidad."
+    },
+    "correcta": "c",
+    "explicacion": "El principal factor pronóstico en el cáncer de mama es la afectación ganglionar. Existen también otros factores que empeoran el pronóstico y que debes conocer, porque pueden ser indicación de quimioterapia en ausencia del principal factor pronóstico.\n- Tamaño tumoral > 2 cm.\n- Grado histológico G2-G3.\n- Ausencia de receptores estrogénicos.\n- Edad < 35 años.\n- Infiltración cutánea, muscular u ósea.\n- Multicentricidad.\n- Gestación.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_123",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de ovario"],
+    "enunciado": "¿Cuál de los siguientes factores protege frente al carcinoma de ovario?:",
+    "opciones": {
+      "a": "Anticonceptivos orales.",
+      "b": "Nuliparidad.",
+      "c": "Ausencia de lactancia",
+      "d": "Obesidad"
+    },
+    "correcta": "a",
+    "explicacion": "**FACTORES DE RIESGO**\n- NULIPARIDAD\n- AUSENCIA DE LACTANCIA\n- SME. POLIQUISTOSIS OVARICA\n- INDUCTORES DE LA OVULACION: Clomifeno\n- TERAPIA HORMONAL DE REEMPLAZO\n- FACTORES GENETICOS (PATRON HEREDITARIO) 2 O MAS FAMILIARES DE PRIMER GRADO\n- OBESIDAD\n- ALCOHOLISMO",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_124",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "En una paciente a la que en la citología vaginal se le ha diagnosticado una displasia intraepitelial grave, y en cuya colposcopia no se observa ninguna lesión atípica ni la zona de transición, ¿qué debemos hacer?:",
+    "opciones": {
+      "a": "Nuevo control de citología y colposcopia en 3 meses.",
+      "b": "Crioterapia.",
+      "c": "Legrado intracervical.",
+      "d": "Histerectomía total."
+    },
+    "correcta": "c",
+    "explicacion": "Ante el hallazgo de una citología cervical positiva está indicada la realización de una colposcopia. Al realizar ésta tenemos tres posibilidades:\n- **Colposcopia positiva:** se debe biopsiar cualquier zona sospechosa y el tratamiento dependerá de la AP de dicha biopsia.\n- **Colposcopia satisfactoria negativa:** se debe repetir la citología, ya que puede ser un falso positivo. Si la segunda citología vuelve a resultar positiva, debe realizarse una conización diagnóstica.\n- **Colposcopia insatisfactoria negativa** (es el caso de la Pregunta): realizaremos un legrado intracervical para descartar esta localización como origen de las células displásicas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_125",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "El tratamiento de elección para CIN III es:",
+    "opciones": {
+      "a": "Histerectomía total.",
+      "b": "Radioterapia.",
+      "c": "Crioterapia.",
+      "d": "Conización."
+    },
+    "correcta": "d",
+    "explicacion": "Las displasias cervicales son una alteración en la maduración y desarrollo del epitelio. Pueden evolucionar hacia un cáncer de cérvix, por lo que requieren tratamiento.\n- CIN I y II: se debe realizar una destrucción local, con frío, láser o coagulación. Si se produce curación, no precisa más tratamientos; sin embargo, si recidiva, habrá que realizar una conización.\n- CIN III: se debe hacer conización.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_126",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de cuello uterino"],
+    "enunciado": "NO parece aumentar el riesgo de padecer ca. de cérvix:",
+    "opciones": {
+      "a": "Obesidad.",
+      "b": "Promiscuidad.",
+      "c": "Tabaquismo.",
+      "d": "Promiscuidad del compañero sexual."
+    },
+    "correcta": "a",
+    "explicacion": "Los principales factores de riesgo del cáncer de cérvix:\n- Promiscuidad sexual de la paciente o de su pareja.\n- Infección por HPV (sobre todo serotipos 16 y 18).\n- Inmunosupresión.\n- Tabaco.\n- Displasia cervical.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_127",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de endometrio"],
+    "enunciado": "NO es cierto, en la epidemiología del cáncer de endometrio:",
+    "opciones": {
+      "a": "El consumo de tabaco aumenta el riesgo.",
+      "b": "El riesgo es mayor en estériles.",
+      "c": "Los gestágenos tienen efecto benefi cioso.",
+      "d": "Diabetes y HTA predisponen."
+    },
+    "correcta": "a",
+    "explicacion": "**Factores de riesgo**\n- Nuliparidad.\n- Anovulación (SOP).\n- Obesidad.\n- Tamoxifeno.\n- HTA.\n- Diabetes.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_128",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología benigna uterina"],
+    "enunciado": "Paciente de 67 años que acude a urgencias por episodios de metrorragia abundante, el último de 3 días de evolución. Se le practica legrado fraccionado y se le diagnostica de hiperplasia simple con atipias de endometrio. ¿Qué tratamiento aplicaría?:",
+    "opciones": {
+      "a": "Clomifeno.",
+      "b": "Estrógenos.",
+      "c": "Gestágenos.",
+      "d": "Histerectomía y doble anexectomía."
+    },
+    "correcta": "d",
+    "explicacion": "Ante una metrorragia, sobre todo en mujeres mayores, es importante hacer un diagnóstico por la posibilidad de ser una patología maligna la causante de esta metrorragia. El diagnóstico de elección será la histeroscopia con toma de biopsia, y si no se dispone de la misma, el legrado fraccionado, como es el caso de la Pregunta. Las hiperplasias de endometrio se clasifican en: simples (sin y con atipias) y complejas (sin y con atipias). Las hiperplasias sin atipias tienen buen pronóstico y la actitud ante cualquiera de ellas es tras el legrado (diagnóstico y terapéutico) la administración de progestágenos. Sin embargo, las hiperplasias con atipias tienen crecimiento autónomo y riesgo de progresar a carcinoma, por lo que su tratamiento debe ser histerectomía con doble anexectomía.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_129",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de endometrio"],
+    "enunciado": "Un adenocarcinoma de endometrio que invade trompa y ovario derecho, con citología peritoneal positiva, sin metástasis vaginales ni ganglionares, se encuentra en un estadio:",
+    "opciones": {
+      "a": "IC.",
+      "b": "IIA.",
+      "c": "IIB.",
+      "d": "III."
+    },
+    "correcta": "d",
+    "explicacion": "Recordá los estadios más importantes del cáncer de endometrio:\n- I: afecta únicamente al útero.\n  - A: sólo endometrio.\n  - B: menos 50% miometrio.\n  - C: más 50% miometrio.\n- II: afectación cérvix.\n  - A: glándulas cervicales.\n  - B: estroma cervical.\n- III: metástasis a órganos pelvis o citología peritoneal +\n- IV: metástasis a distancia.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
   }
 ]
