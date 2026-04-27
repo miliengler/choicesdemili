@@ -2578,5 +2578,1065 @@
     "anio": null,
     "oficial": false,
     "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_130",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una mujer de 38 años, asintomática y sin antecedentes patológicos, concurre a su ginecólogo para su consulta anual. En ese contexto, el profesional decide solicitar un estudio de densidad mineral ósea de rutina. Según el consenso FASGO 2024, ¿es esta conducta adecuada?",
+    "opciones": {
+      "a": "Sí, porque toda mujer mayor de 35 años debe realizarse una DXA anual como parte del control preventivo.",
+      "b": "No, porque el screening de osteoporosis con DXA en mujeres menores de 65 años sin factores de riesgo no está recomendado.",
+      "c": "Sí, porque la DXA es costo-efectiva en cualquier mujer en edad fértil con vida sedentaria.",
+      "d": "No, porque en mujeres menores de 50 años no existe ningún método válido para medir densidad ósea."
+    },
+    "correcta": "b",
+    "explicacion": "La DXA se recomienda en mujeres ≥65 años o en posmenopausicas <65 años con factores de riesgo (fracturas por fragilidad, bajo IMC, tabaquismo, glucocorticoides, etc.).\nEn mujeres sanas y jóvenes sin factores de riesgo, el screening sistemático no está justificado por el consenso.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_131",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de ovario"],
+    "enunciado": "Una mujer de 52 años, posmenopausica, concurre a la consulta ginecológica de rutina sin síntomas. Solicita un estudio de marcadores tumorales (CA-125) y ecografía transvaginal para \"prevenir\" un posible cáncer de ovario. Según el consenso FASGO 2024, la respuesta más correcta es:",
+    "opciones": {
+      "a": "Están indicados solo si la paciente tiene antecedentes familiares de cáncer de mama.",
+      "b": "No están indicados en pacientes asintomáticas de riesgo habitual, ya que no han demostrado ser costo-efectivos como screening.",
+      "c": "Se recomienda realizar ecografía transvaginal anual en toda mujer posmenopáusica asintomática.",
+      "d": "Están indicados porque el CA-125 tiene alta sensibilidad para detectar lesiones ováricas precoces en posmenopausicas."
+    },
+    "correcta": "b",
+    "explicacion": "El consenso FASGO 2024 establece que los estudios disponibles no avalan el screening de cáncer de ovario ni endometrio en pacientes sanas o asintomáticas.\nNi la ecografía transvaginal ni los marcadores tumorales han demostrado ser costo-efectivos en este contexto, incluso en mujeres de riesgo aumentado.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_132",
+    "materia": ["ginecologia", "medicinafamiliar"],
+    "submateria": ["Otras preguntas de ginecología", "Control de salud"],
+    "enunciado": "Una mujer de 28 años refiere que no se realizó ningún control ginecológico desde hace 3 años y desea ponerse al día. No tiene síntomas, es sexualmente activa. ¿Con qué frecuencia debe realizarse una consulta ginecológica según el consenso FASGO 2024?",
+    "opciones": {
+      "a": "Solo cuando presenta síntomas o requiere método anticonceptivo.",
+      "b": "Cada 2 años a partir de los 25 años en mujeres sin antecedentes familiares de cáncer.",
+      "c": "Al menos una vez al año, aunque no todos los estudios deben realizarse en la misma consulta.",
+      "d": "Cada 3 años, si los resultados previos de citología fueron normales y no tiene factores de riesgo."
+    },
+    "correcta": "c",
+    "explicacion": "El consenso FASGO considera que la consulta debe seguir siendo anual, al menos, independientemente de la evidencia que cuestiona su utilidad.\nEsta visita permite evaluar situaciones de violencia, ITS, factores de riesgo cardiovascular y hábitos de vida.\nNo todos los estudios deben realizarse en cada visita.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_133",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 43 años concurre a su control anual. El médico considera solicitar mamografía de screening. Según el consenso FASGO 2024, ¿es correcta esta indicación y cuál es la frecuencia recomendada?",
+    "opciones": {
+      "a": "Sí, pero solo en mujeres con antecedentes familiares de cáncer de mama; en pacientes de riesgo habitual se inicia a los 50 años.",
+      "b": "No, la mamografía de screening debe iniciarse recién a los 50 años según FASGO 2024.",
+      "c": "Sí, pero la periodicidad debe ser bianual obligatoriamente para evitar sobreexposición a radiación.",
+      "d": "Sí, el consensus FASGO 2024 recomienda iniciar el screening mamográfico a los 40 años, con periodicidad anual o bianual."
+    },
+    "correcta": "d",
+    "explicacion": "FASGO 2024, luego de analizar estudios internacionales, recomienda iniciar el screening de cáncer de mama con mamografía a los 40 años, con una frecuencia anual o bianual.\nLa mamografía es el único método de imágenes que ha demostrado reducir la mortalidad por cáncer de mama en aproximadamente 20-30%.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_134",
+    "materia": ["ginecologia", "infectologia"],
+    "submateria": ["Infecciones del tracto genital inferior", "ITS"],
+    "enunciado": "Respecto al screening de infecciones de transmisión sexual (ITS) en la consulta ginecológica preventiva de una mujer de 27 años sexualmente activa con múltiples parejas en el último año, ¿cuál es la recomendación del consenso FASGO 2024?",
+    "opciones": {
+      "a": "El screening de ITS no es competencia del ginecólogo y debe derivarse al infectólogo.",
+      "b": "Se recomienda cada 3 años si la paciente refiere uso consistente de preservativo.",
+      "c": "Solo se recomienda en embarazadas o mujeres con síntomas de ITS activa.",
+      "d": "Se recomienda al menos una vez al año, incluyendo detección de sífilis, hepatitis, VIH y Chlamydia."
+    },
+    "correcta": "d",
+    "explicacion": "La consulta ginecológica periódica debe incluir screening de ITS (sífilis, hepatitis, VIH, Chlamydia) al menos una vez al año en situaciones de riesgo, como múltiples parejas sexuales.\nEl FASGO 2024 posiciona al tocoginecólogo como médico de cabecera de la mujer y enfatiza la detección de factores de riesgo en cada visita.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_135",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "Una paciente de 47 años pregunta si debe realizarse un estudio de vitamina D de rutina en su próxima consulta ginecológica, ya que su vecina se lo sugirió. Según FASGO 2024, la conducta correcta es:",
+    "opciones": {
+      "a": "Sí, porque la deficiencia de vitamina D es tan frecuente que justifica el screening universal a partir de los 35 años.",
+      "b": "Sí, solicitar vitamina D anualmente en todas las mujeres $\\ge40$ años como parte del perfil preventivo.",
+      "c": "No solicitar vitamina D en ninguna circunstancia ya que no existe tratamiento efectivo para su déficit.",
+      "d": "No solicitar vitamina D de rutina; el dosaje solo está justificado en presencia de factores de riesgo específicos."
+    },
+    "correcta": "d",
+    "explicacion": "FASGO 2024 establece que la detección universal de déficit de vitamina D no está justificada.\nEl dosaje solo debe realizarse ante factores de riesgo específicos (malabsorción, uso de anticonvulsivos, insuficiencia renal crónica, etc.).\nNo se recomienda solicitarla de rutina en pacientes sanas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_136",
+    "materia": ["ginecologia"],
+    "submateria": ["Climaterio y menopausia"],
+    "enunciado": "¿Cuál de las siguientes condiciones es considerada una causa secundaria de osteoporosis que justificaría el screening antes de los 65 años según FASGO 2024?",
+    "opciones": {
+      "a": "Dieta hipercalórica con alto contenido de calcio.",
+      "b": "Índice de masa corporal elevado $(IMC>30)$.",
+      "c": "Historia de embarazos múltiples con lactancia prolongada.",
+      "d": "Uso crónico de glucocorticoides."
+    },
+    "correcta": "d",
+    "explicacion": "Entre las causas secundarias de osteoporosis reconocidas por el consenso se incluyen: glucocorticoides, hipertiroidismo, hipogonadismo, enfermedad renal crónica, diabetes, anticonvulsivos, artritis reumatoidea, malabsorción y anorexia nerviosa.\nLa AHE, el embarazo y el IMC elevado no son factores de riesgo en este contexto.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_137",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una paciente de 68 años, posmenopáusica, asintomática, sin antecedente de H-SIL, con dos pruebas de HPV negativas en los últimos 10 años, consulta para continuar su screening cervical. Según FASGO 2024, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Debe continuar con citología anual indefinidamente por ser posmenopausica.",
+      "b": "Debe realizarse colposcopía antes de suspender el tamizaje para descartar lesiones ocultas.",
+      "c": "Continuar con co-test cada 3 años hasta los 75 años.",
+      "d": "Puede discontinuarse el tamizaje, dado que cumple todos los criterios para suspenderlo a los 65 años con HPV como método primario."
+    },
+    "correcta": "d",
+    "explicacion": "Según FASGO/OMS, el tamizaje se suspende a los 65 años si se usa prueba de HPV (70 años si solo citología), siempre que la paciente no tenga inmunocompromiso, no haya tenido H-SIL en los últimos 25 años y tenga 2 HPV negativas (o 3 citologías negativas) en los últimos 10 años.\nEsta paciente cumple todos los criterios.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_138",
+    "materia": ["gastroenterologia", "medicinafamiliar"],
+    "submateria": ["Cáncer colorrectal", "Control de salud"],
+    "enunciado": "Una mujer de 55 años asintomática pregunta al ginecólogo si debe realizarse algún estudio de screening de cáncer de colon. El médico, siguiendo el consenso FASGO 2024, ¿cuál debería ser su conducta?",
+    "opciones": {
+      "a": "Derivar al gastroenterólogo para evaluar la pertinencia y frecuencia del estudio más adecuado, dado que existen múltiples métodos con diversas recomendaciones.",
+      "b": "Solicitar sangre oculta en materia fecal anualmente a toda mujer mayor de 50 años sin derivación.",
+      "c": "Indicar colonoscopía cada 10 años de forma rutinaria, sin necesidad de especialista.",
+      "d": "No realizar ningún screening de colon ya que no es parte de la consulta ginecológica."
+    },
+    "correcta": "a",
+    "explicacion": "Ante la diversidad de métodos y recomendaciones para el screening de cáncer colorrectal (sangre oculta, colonoscopía, tomografía), el consenso FASGO 2024 considera adecuado derivar al especialista en gastroenterología para evaluar la pertinencia y frecuencia en cada caso individual.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_139",
+    "materia": ["aps", "medicinafamiliar"],
+    "submateria": ["Atención Primaria de la Salud", "Control de salud"],
+    "enunciado": "Entre los beneficios reconocidos del screening en pacientes sanas que se mencionan en el consenso FASGO 2024, ¿cuál de los siguientes es correcto?",
+    "opciones": {
+      "a": "Permite reducir la morbimortalidad asociada a enfermedades detectadas en etapas tempranas.",
+      "b": "Evita la necesidad de tratamientos médicos al identificar patologías leves.",
+      "c": "Garantiza el diagnóstico de enfermedades antes de que sean sintomáticas en el 100% de los casos.",
+      "d": "Elimina por completo la ansiedad de las pacientes al tener resultados negativos."
+    },
+    "correcta": "a",
+    "explicacion": "El consenso reconoce múltiples beneficios del screening: mejor pronóstico, tratamientos menos agresivos, tranquilidad en resultados negativos, ahorro de recursos y reducción de morbilidad y mortalidad.\nSin embargo, también señala sus aspectos negativos: falsos positivos, sobrediagnóstico, ansiedad y complicaciones de estudios innecesarios.\nEl screening no garantiza diagnóstico en el 100%.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_140",
+    "materia": ["aps"],
+    "submateria": ["Atención Primaria de la Salud"],
+    "enunciado": "Para que un programa de screening ginecológico esté justificado, el consenso FASGO 2024 establece requisitos específicos. ¿Cuál de las siguientes opciones NO es un requisito para implementar un screening?",
+    "opciones": {
+      "a": "Que tenga buena relación costo-efectividad, con beneficios mayores que los riesgos.",
+      "b": "Que la detección precoz disminuya la morbilidad o mortalidad de la enfermedad.",
+      "c": "Que la prueba sea sencilla, reproducible, segura y aceptada por pacientes y profesionales.",
+      "d": "Que el tratamiento de la enfermedad detectada sea experimental o esté disponible solo en centros terciarios."
+    },
+    "correcta": "d",
+    "explicacion": "Los requisitos para implementar un screening según FASGO 2024 son: que sea un problema de salud importante, que la detección precoz reduzca morbilidad/mortalidad, que los resultados sean extrapolables, que la prueba sea sencilla/reproducible/segura/aceptada, que tenga alta sensibilidad y especificidad, y que sea costo-efectiva.\nNo existe el requisito de disponibilidad exclusiva en centros terciarios; todo lo contrario, el tratamiento debe estar ampliamente disponible.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_141",
+    "materia": ["nutricion", "medicinafamiliar"],
+    "submateria": ["Otras preguntas de nutrición", "Control de salud"],
+    "enunciado": "Una paciente de 33 años concurre al control anual. El médico evalúa el riesgo cardiovascular. Según el consenso FASGO 2024, ¿con qué frecuencia se recomienda controlar glucemia en ayunas o HbA1c en una mujer de riesgo habitual?",
+    "opciones": {
+      "a": "Anualmente, a partir de los 30 años en toda mujer en edad fértil.",
+      "b": "Una sola vez en la vida si el primer resultado es normal.",
+      "c": "Cada 10 años, solo a partir de los 45 años.",
+      "d": "Cada 3-5 años, si los valores previos son normales."
+    },
+    "correcta": "d",
+    "explicacion": "El consenso recomienda: tensión arterial en cada consulta, glucemia en ayunas o HbA1c cada 3-5 años (si normales) y colesterol/triglicéridos cada 3-5 años si normales.\nEsto refleja la visión del tocoginecólogo como médico de cabecera integral de la mujer.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_142",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una paciente de 40 años pregunta si la citología cervical o PAP sigue siendo el método recomendado para el tamizaje del cáncer de cuello uterino. Según las guías avaladas por FASGO (SAPTGIyC-SOGIBA 2022), ¿cuál es la estrategia preferida a partir de los 30 años?",
+    "opciones": {
+      "a": "El co-test (citología + HPV) es el único método aceptado a partir de los 30 años en Argentina.",
+      "b": "La citología cervical sola, con una frecuencia anual, como método principal independientemente de la edad.",
+      "c": "La prueba de HPV como tamizaje primario, a partir de los 30 años, con repetición cada 5 años si es negativa.",
+      "d": "La colposcopía directa anual a partir de los 30 años, sin necesidad de test previo."
+    },
+    "correcta": "c",
+    "explicacion": "Las guias SAPTGlYC-SOGIBA avaladas por FASGO (2022), en concordancia con OMS 2021, recomiendan el test de HPV como parte del tamizaje, con implementación a partir de los 30 años.\nSi el resultado es negativo, se repite cada 5 años.\nAnte HPV positivo, se realiza triage con citología.\nLa citología sola sin HPV se acepta solo hasta los 29 años.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_143",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 22 años, sexualmente activa desde los 17, concurre a la primera consulta ginecológica. La médica planea iniciar el tamizaje cervical. Según las guías SAPTGIyC-SOGIBA/FASGO, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Co-test anual $(citologia+HPV)$ durante toda la etapa fértil como estrategia más sensible.",
+      "b": "Realizar citología cervical anual; la prueba de HPV está contraindicada antes de los 30 años por la alta frecuencia de infecciones transitorias.",
+      "c": "No iniciar ningún tamizaje hasta los 25 años, independientemente del inicio de vida sexual.",
+      "d": "Iniciar directamente con prueba de HPV primaria ya que tiene más de 5 años de vida sexual activa."
+    },
+    "correcta": "b",
+    "explicacion": "La guía establece que el tamizaje se inicia a los 3 años del inicio de relaciones sexuales.\nEn menores de 30 años, se utiliza citología cervical (NO prueba de HPV) por la alta frecuencia de infecciones transitorias que regresarán espontáneamente.\nIniciar HPV antes de los 30 años implicaría falsos positivos y sobrediagnóstico, en contra del principio de prevención cuaternaria.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_144",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 26 años con citología ASC-US aislada, sin antecedentes de inmunodepresión, inicia seguimiento. ¿Cuál de las siguientes afirmaciones sobre las lesiones L-SIL en menores de 25 años es CORRECTA según la guía?",
+    "opciones": {
+      "a": "El 90% de los casos de L-SIL en menores de 25 años progresa a H-SIL si no se trata.",
+      "b": "En menores de 25 años, la L-SIL siempre requiere tratamiento escisional inmediato por alto riesgo de progresión.",
+      "c": "El 90% de las lesiones L-SIL en menores de 25 años presenta regresión espontánea.",
+      "d": "La regresión de L-SIL en menores de 25 años es similar a la de mujeres mayores, aproximadamente 50%."
+    },
+    "correcta": "c",
+    "explicacion": "La guía señala que en menores de 25 años, el 90% de las lesiones L-SIL presentan regresión espontánea (vs. 75% en mayores de 25 años).\nEsto refuerza el principio de prevención cuaternaria: evitar procedimientos innecesarios en jóvenes, donde la evolución natural es favorable en la mayoría de los casos.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_145",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 34 años con prueba de HPV positiva y citología de triage negativa es derivada para colposcopía. El informe colposcópico describe \"Imagen grado 2\". Según la clasificación IFCPC 2011, ¿qué implica este hallazgo?",
+    "opciones": {
+      "a": "Imagen normal con variante fisiológica sin requerimiento de biopsia.",
+      "b": "Baja sospecha de H-SIL, compatible con metaplasia escamosa activa.",
+      "c": "Sospecha de invasión con indicación de conización diagnóstica inmediata.",
+      "d": "Alta sospecha de H-SIL, que requiere biopsia dirigida."
+    },
+    "correcta": "d",
+    "explicacion": "La clasificación IFCPC 2011 divide las imágenes colposcópicas anormales en Grado 1 (baja sospecha de H-SIL) y Grado 2 (alta sospecha de H-SIL).\nLa Imagen Grado 2 requiere biopsia dirigida de las áreas sospechosas para obtener diagnóstico histológico que oriente el tratamiento.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_146",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 28 años, HIV positiva, inicia relaciones sexuales. ¿Cuándo debe iniciarse el tamizaje cervical según la guía SAPTGIyC- SOGIBA/FASGO?",
+    "opciones": {
+      "a": "A los 25 años, con co-test cada 3 años si los resultados son negativos.",
+      "b": "Al año del inicio de relaciones sexuales, con citología anual independientemente del resultado previo.",
+      "c": "Directamente con prueba de HPV primaria al momento del diagnóstico de HIV.",
+      "d": "A los 3 años del inicio de relaciones sexuales, igual que en inmunocompetentes."
+    },
+    "correcta": "b",
+    "explicacion": "Las inmunosuprimidas e HIV positivas son una excepción a la regla general: inician el tamizaje al año del inicio de relaciones sexuales (no a los 3 años), y el seguimiento siempre es con citología anual, independientemente de los resultados previos.\nTampoco se aplica el cese de tamizaje a los 65 años en pacientes inmunocomprometidas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_147",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 27 años presenta en la biopsia diagnóstico de CIN 2 con inmunohistoquímica p16 NEGATIVA. ¿Cuál es la conducta más adecuada según la guía?",
+    "opciones": {
+      "a": "Histerectomía dado que el CIN 2 sin p16 tiene mayor riesgo de recurrencia.",
+      "b": "Ninguna conducta, ya que se espera regresión espontánea en todos los CIN 2.",
+      "c": "Manejar como L-SIL, con seguimiento cito-colposcópico cada 6 meses por 2 años, ya que la negatividad de p16 clasifica la lesión como L-SIL histológico.",
+      "d": "Tratamiento escisional inmediato independientemente del resultado de p16."
+    },
+    "correcta": "c",
+    "explicacion": "La clasificación histológica (LAST) establece que CIN 2 p16 negativa se clasifica como L-SIL histológico y se maneja como tal (seguimiento).\nSolo CIN 2 p16 positiva se clasifica como H-SIL histológico y requiere un manejo más activo.\nSi no está disponible p16, se debe manejar como CIN 2 p16 positiva (conducta más conservadora).",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_148",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 22 años, nulípara, con diagnóstico histológico de CIN 2 p16 positiva, ZT tipo 1, desea preservar su fertilidad. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "a": "Histerectomía total como primera elección dado que la ZT tipo 1 implica mayor riesgo de márgenes positivos.",
+      "b": "Tratamiento escisional tipo 3 (15-25 mm) para asegurar márgenes libres en todos los casos.",
+      "c": "Seguimiento cito-colposcópico cada 6 meses por 2 años, siendo el tratamiento escisional una alternativa aceptable.",
+      "d": "Conización con margen libre mínimo de 1 cm, sin opción de seguimiento dado que tiene p16 positiva."
+    },
+    "correcta": "c",
+    "explicacion": "En menores de 25 años con CIN 2 p16 positiva y ZT tipo 1 o 2, se prefiere el seguimiento cito-colposcópico cada 6 meses por 2 años (por la alta tasa de regresión espontánea: 64% en <25 años para CIN 2).\nΕΙ tratamiento escisional es una opción aceptable, pero no la única.\nLa histerectomía NO es primera elección en ningún caso de CIN 2.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_149",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 38 años es diagnosticada con H-SIL (CIN 3) por biopsia colposcópica. ¿Cuál de las siguientes situaciones haría INACEPTABLE el tratamiento con termoablación (TDL)?",
+    "opciones": {
+      "a": "Zona de transformación tipo 3 (canal endocervical no visible completamente).",
+      "b": "Zona de transformación tipo 1 completamente visible con lesión de tamaño reducido.",
+      "c": "Lesión de aspecto no sospechoso de invasión en todos los cuadrantes estudiados.",
+      "d": "Paciente que acepta el tratamiento y comprende sus limitaciones."
+    },
+    "correcta": "a",
+    "explicacion": "La guía establece que la TDL (termoablación, crioablación, etc.) es inaceptable en H-SIL cuando: la lesión penetra el conducto endocervical, no puede abarcarse completamente, es ZT tipo 3, existe discordancia cito-colpo-histológica, hay sospecha de invasión, ECE positivo con CIN 2+, o se usan sustancias químicas como el ATCA.\nLa ZT tipo 3, por definición irrecusable, impide la ablación.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_150",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 40 años con antecedente de H-SIL treated mediante conización hace 8 meses se presenta al primer control post tratamiento. El informe muestra HPV positivo con citología y colposcopía negativas. ¿Cuál es la conducta correcta según la guía?",
+    "opciones": {
+      "a": "Retratamiento escisional inmediato por HPV positivo, que indica enfermedad persistente.",
+      "b": "Citología sola cada 6 meses; la colposcopía solo si hay lesión visible macroscópicamente.",
+      "c": "Seguimiento cito-colposcópico cada 6 meses por 2 años, sin indicación de retratamiento por HPV positivo aislado.",
+      "d": "Histerectomía por recurrencia confirmada ante HPV positivo post tratamiento."
+    },
+    "correcta": "c",
+    "explicacion": "La guía es explicita: \"HPV positiva aislada no implica retratamiento.\"\nAnte HPV positivo con citología y colposcopía negativas, se realiza seguimiento cito-colposcópico cada 6 meses por 2 años, con control anual posterior si los resultados son negativos.\nSolo si la citología o colposcopía son positivas se indica colposcopía con biopsia.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_151",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 30 años, embarazada de 20 semanas, es diagnosticada con H-SIL (CIN 3) por biopsia. ¿Cuál es el manejo adecuado durante el embarazo?",
+    "opciones": {
+      "a": "Realizar conización diagnóstica a las 24 semanas para obtener muestra definitiva.",
+      "b": "Tratamiento escisional inmediato para evitar progresión a carcinoma invasor durante el embarazo.",
+      "c": "No realizar tratamiento durante la gestación; control con citología y colposcopía cada 3 meses, con biopsia solo si se sospecha invasión.",
+      "d": "Indicar cesárea planificada a las 34 semanas para iniciar tratamiento del H-SIL en el puerperio inmediato."
+    },
+    "correcta": "c",
+    "explicacion": "Durante el embarazo, el manejo del H-SIL es NO realizar tratamiento.\nSe realiza citología + colposcopía cada 3 meses y biopsia solo ante sospecha de invasión.\nEl tratamiento definitivo se difiere hasta la reevaluación $>6$ semanas post parto, cuando la involución uterina y la accesibilidad cervical permiten una mejor evaluación y tratamiento.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_152",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 44 años con diagnóstico histológico de AIS (adenocarcinoma in situ) desea preservar su fertilidad. La conización mostró márgenes negativos. ¿Cuál es la conducta recomendada?",
+    "opciones": {
+      "a": "Reconización inmediata independientemente del resultado de márgenes.",
+      "b": "Seguimiento estricto con citología + ECE + prueba de HPV cada 6 meses por 3 años, con histerectomía diferida hasta cumplir el deseo reproductivo.",
+      "c": "Alta definitiva ya que márgenes negativos confirman resección completa.",
+      "d": "Histerectomía obligatoria inmediata dado que el AIS siempre es multifocal y los márgenes negativos no garantizan resección completa."
+    },
+    "correcta": "b",
+    "explicacion": "Para AIS con deseo de fertilidad conservada, la guía recomienda conización con márgenes negativos (A II) seguida de seguimiento con citología + ECE + HPV cada 6 meses por 3 años;\nsi todo negativo, anual hasta histerectomía; si 5 años negativos, cada 3 años indefinido.\nSe advierte explícitamente que márgenes negativos NO garantizan resección completa (por la frecuencia de \"skip lesions\" en AIS).\nLa histerectomía es la conducta ante paridad cumplida.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_153",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 36 años presenta ASC-H en la citología. ¿Cuál de las siguientes afirmaciones sobre la diferencia entre ASC-US y ASC-H es correcta según la clasificación de Bethesda/LAST?",
+    "opciones": {
+      "a": "ASC-US indica siempre colposcopía inmediata, mientras que ASC-H puede resolverse con seguimiento.",
+      "b": "ASC-US y ASC-H tienen el mismo valor predictivo positivo para H-SIL y se manejan de igual manera.",
+      "c": "ASC-H se asocia con \"cambios mayores\" y mayor sospecha de H-SIL, mientras que ASC-US corresponde a los \"cambios menores\".",
+      "d": "ASC-H implica carcinoma invasor confirmado y requiere derivación oncológica inmediata."
+    },
+    "correcta": "c",
+    "explicacion": "Según la clasificación citológica de Bethesda/LAST: los \"cambios menores\" incluyen ASC-US y L-SIL, mientras que los \"cambios mayores\" incluyen ASC-H, H-SIL, AGC y AIS.\nEI ASC-H (\"células escamosas atípicas, no puede excluirse H-SIL\") tiene mayor asociación con H-SIL subyacente y requiere un manejo más activo que el ASC-US.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_154",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Según la guía SAPTGIyC-SOGIBA/FASGO,  hasta qué edad se puede suspender el tamizaje cervical si se utilizó solo citología como método primario en una mujer sin inmunocompromiso y sin antecedente de H- SIL?",
+    "opciones": {
+      "a": "A los 65 años, igual que con la prueba de HPV.",
+      "b": "A los 70 años, si tiene al menos 3 citologías negativas en los últimos 10 años.",
+      "c": "A los 65 años solo si tiene 5 citologías negativas en los últimos 5 años.",
+      "d": "No existe edad de cese; la citología debe continuar indefinidamente."
+    },
+    "correcta": "b",
+    "explicacion": "La guía establece dos edades de finalización: 65 años si se usa prueba de HPV (con 2 HPV negativas en 10 años) y 70 años si se usa solo citología (con 3 citologías negativas en 10 años).\nEn ambos casos se requiere ausencia de inmunocompromiso y sin H-SIL o lesión glandular en los últimos 25 años.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_155",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Una mujer de 33 años vacunada con la vacuna cuadrivalente contra HPV a los 11 años consulta sobre si debe seguir realizando tamizaje cervical. La respuesta correcta es:",
+    "opciones": {
+      "a": "Sí, debe realizarse tamizaje solo con colposcopía anual ya que la citología no detecta los serotipos cubiertos por la vacuna.",
+      "b": "No, dado que fue vacunada antes de iniciar su vida sexual, puede prescindir del tamizaje cervical completamente.",
+      "c": "Sí, debe continuar el tamizaje habitual; la vacunación no elimina la necesidad de screening ya que no cubre todos los serotipos oncogénicos.",
+      "d": "No, la vacuna cuadrivalente cubre el 100% de los cánceres cervicouterinos."
+    },
+    "correcta": "c",
+    "explicacion": "HPV 16 y 18 son responsables del 70% de los cánceres cervicales, no del 100%.\nLa vacuna cuadrivalente (y nonavalente) no cubre todos los serotipos oncogénicos, por lo que el tamizaje cervical debe continuar independientemente del estado vacunal.\nLa vacunación y el tamizaje son estrategias complementarias de prevención primaria y secundaria, respectivamente.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_156",
+    "materia": ["ginecologia"],
+    "submateria": ["Patología cervical benigna y preinvasora"],
+    "enunciado": "Un equipo de salud en un centro de atención primaria evalúa el manejo de una paciente de 31 años cuya prueba de HPV resultó positiva. Para el triage de esta paciente, ¿cuál es el estudio de segunda línea indicado según la guía?",
+    "opciones": {
+      "a": "Colposcopía directa sin otros estudios previos.",
+      "b": "Repetir la prueba de HPV en 6 meses para confirmar infección persistente.",
+      "c": "Genotipificación extendida de todos los serotipos de HPV para estratificar el riesgo.",
+      "d": "Citología cervical como triage del HPV positivo."
+    },
+    "correcta": "d",
+    "explicacion": "Ante HPV positivo en mujeres $\\ge30$ años, la conducta es realizar triage con citología.\nSi el co-test (HPV + citología) es negativo, se repite en 5 años.\nLa colposcopía se indica ante resultados positivos en el triage (citología anormal) o ante HPV 16/18 positivo en algunos algoritmos.\nLa guía no indica colposcopía directa ante HPV positivo sin triage citológico previo.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_157",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 17 años concurre a la consulta para solicitar un método anticonceptivo. Es nulípara, sin antecedentes patológicos relevantes, y prefiere un método de larga duración. Según la Guía de MAC, ¿cuál de los siguientes métodos puede indicarse de forma segura?",
+    "opciones": {
+      "a": "Solo preservativo, ya que los métodos hormonales están contraindicados antes de los 18 años.",
+      "b": "Anticoncepción quirúrgica, que puede indicarse con consentimiento materno desde los 14 años.",
+      "c": "DIU de cobre o DIU-LNG, ya que pueden utilizarse con seguridad incluso en adolescentes nulíparas.",
+      "d": "Solo métodos de barrera y MBCF, dado que los hormonales interfieren en el crecimiento en adolescentes."
+    },
+    "correcta": "c",
+    "explicacion": "La guía es explícita: se puede utilizar cualquier MAC de manera segura; la edad no constituye un impedimento.\nLos DIU pueden usarse en forma segura incluso en nulíparas.\nEn adolescentes se recomiendan especialmente los métodos de larga duración (LARC). Los métodos hormonales no interfieren en el crecimiento.\nLa anticoncepción quirúrgica requiere 16 años y capacidad de decisión autónoma.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_158",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una paciente de 28 años que usa anticonceptivos combinados orales (ACO) olvida tomar 2 comprimidos activos consecutivos en la segunda semana del blíster. ¿Cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Discontinuar el blíster actual e iniciar uno nuevo desde el primer día del siguiente sangrado.",
+      "b": "La eficacia puede estar disminuida; debe considerarse el uso de preservativo y evaluar el riesgo según la semana del olvido.",
+      "c": "Tomar los 2 comprimidos juntos al recordarlos y continuar sin restricciones; la eficacia no se altera.",
+      "d": "Tomar la anticoncepción hormonal de emergencia de forma preventiva ante cualquier olvido de 2 comprimidos."
+    },
+    "correcta": "b",
+    "explicacion": "Con el olvido de 2 o más comprimidos activos, la eficacia anticonceptiva puede estar disminuida según la semana del ciclo.\nSe debe tomar la pastilla olvidada lo antes posible, continuar con el horario habitual y usar preservativo como respaldo.\nEl riesgo aumenta con el número de comprimidos olvidados y varía según la semana del blíster activo.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_159",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 39 años, fumadora de 20 cigarrillos diarios, hipertensa con PA de $165/105$ mmHg, solicita continuar con su anticonceptivo combinado oral. Según los criterios de elegibilidad OMS, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Continuar el ACO y agregar antihipertensivos para controlar la hipertensión.",
+      "b": "Contraindicar el ACO; presenta dos criterios absolutos de contraindicación: tabaquismo $>15$ cigarrillos en $>35$ años e hipertensión $>160/100$.",
+      "c": "Desaconsejar el ACO pero permitir su uso si la paciente firma consentimiento informado.",
+      "d": "Indicar ACO de baja dosis con control de PA cada 3 meses como medida de vigilancia."
+    },
+    "correcta": "b",
+    "explicacion": "La guía contraindica los ACO combinados ante tabaquismo en $>35$ años con $>15$ cigarrillos/día Y ante $PA>160/100$ mmHg.\nEsta paciente tiene ambas contraindicaciones absolutas simultáneas. Debe cambiarse a un método alternativo sin estrógenos (progestágeno solo, DIU, etc.).",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_160",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 32 años que usa minipíldora de levonorgestrel se retrasa 4 horas en la toma. Tuvo relaciones sexuales con penetración vaginal 2 horas antes de recordar el olvido. ¿Cuál es la conducta correcta?",
+    "opciones": {
+      "a": "No requiere acción adicional; el margen de seguridad de la minipíldora es de 12 horas, igual que el desogestrel.",
+      "b": "Solo usar preservativo durante 7 días sin necesidad de AНЕ.",
+      "c": "Discontinuar la minipíldora y pasar inmediatamente a un método más eficaz.",
+      "d": "Tomar la pastilla olvidada, continuar con el horario habitual, usar preservativo por 48 horas y considerar AHE por haber tenido relaciones durante el período de baja eficacia."
+    },
+    "correcta": "d",
+    "explicacion": "La minipildora de levonorgestrel tiene un margen de seguridad de solo 3 horas (no 12 como el desogestrel).\nCon olvido de más de 3 horas, se debe tomar la pastilla lo antes posible, continuar el horario habitual, usar preservativo durante 48 horas y evaluar AHE si hubo relaciones durante el período de baja eficacia.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_161",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 26 años solicita anticoncepción hormonal de emergencia (AHE) 48 horas después de una relación sexual sin protección. ¿Cuál de las siguientes afirmaciones sobre la eficacia es CORRECTA?",
+    "opciones": {
+      "a": "A las 48 horas no está indicada; debe usarse directamente el DIU de cobre como única alternativa válida.",
+      "b": "La AHE tiene la misma eficacia independientemente del momento de toma dentro de las 72 horas.",
+      "c": "La AHE puede utilizarse hasta las 120 horas, aunque su eficacia disminuye progresivamente; a las 48 horas sigue siendo efectiva aunque menor que en las primeras 12 horas.",
+      "d": "La AHE es eficaz solo dentro de las primeras 24 horas; después de 48 horas no tiene beneficio."
+    },
+    "correcta": "c",
+    "explicacion": "La AHE con levonorgestrel puede usarse hasta las 120 horas post coito, aunque la eficacia disminuye progresivamente.\nA las primeras 12 horas es del 95%, decayendo con el tiempo.\nSigue siendo una opción válida a las 48 horas. El DIU de cobre también es efectivo hasta las 120 horas y es más eficaz, pero requiere procedimiento médico.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_162",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 24 años con IMC $31~kg/m^{2}$ solicita AHE tras una relación sin protección ocurrida 8 horas antes. ¿Qué modificación en la prescripción habitual debe considerarse?",
+    "opciones": {
+      "a": "Contraindicar el levonorgestrel en obesas; usar únicamente DIU de cobre.",
+      "b": "No se requiere ninguna modificación; la dosis es estándar para todas las pacientes independientemente del peso.",
+      "c": "Indicar doble dosis de levonorgestrel (3 mg total), ya que en IMC ≥30 puede reducirse la eficacia de la dosis estándar.",
+      "d": "Indicar el método Yuzpe ya que es más eficaz en pacientes con obesidad."
+    },
+    "correcta": "c",
+    "explicacion": "La guía especifica: \"Se debe usar una doble dosis en pacientes con IMC $\\ge30~kg/m^{2}$ La menor eficacia en obesidad se relaciona con el mayor volumen de distribución, que reduce la concentración sanguínea del fármaco.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_163",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 35 años en puerperio de 10 días, con lactancia exclusiva y sin menstruación, solicita orientación sobre anticoncepción. ¿Cuál de los siguientes está CONTRAINDICADO en este momento?",
+    "opciones": {
+      "a": "MELA, si se cumplen las tres condiciones: lactancia exclusiva, amenorrea y menos de 6 meses post parto.",
+      "b": "Anticonceptivos orales combinados (ACO), contraindicados en lactancia exclusiva con menos de 6 semanas post parto.",
+      "c": "DIU de cobre colocado en el post parto inmediato (dentro de las 48 horas).",
+      "d": "Minipíldora de levonorgestrel, que puede iniciarse inmediatamente post parto."
+    },
+    "correcta": "b",
+    "explicacion": "Los ACO combinados con estrógenos están contraindicados en lactancia exclusiva con menos de 6 semanas post parto (riesgo de TEV y posible efecto sobre la leche).\nMinipildora, DIU y MELA son alternativas seguras en este período.\nLos estrógenos pueden usarse en lactancia solo después de los 6 meses.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_164",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Respecto a los requisitos previos a la colocación de un DIU de cobre en una mujer de riesgo habitual, ¿cuál de los siguientes NO es necesario según la guía?",
+    "opciones": {
+      "a": "Profilaxis antibiótica preventiva antes de la inserción.",
+      "b": "Examinar la vagina colocando un espéculo.",
+      "c": "Descartar embarazo con razonable certeza clínica.",
+      "d": "Conversar con la usuaria y brindar información sobre el método."
+    },
+    "correcta": "a",
+    "explicacion": "La guía es explicita: NO es necesario profilaxis antibiótica, firma de consentimiento informado en historia clínica, ni estudios de laboratorio o imágenes previos para colocar el DIU de cobre en pacientes sanas.\nLos únicos requisitos son: conversar con la usuaria, descartar embarazo y examinar con espéculo.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_165",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 23 años con VIH en tratamiento con Efavirenz solicita AНЕ. ¿Qué consideración especial aplica según la guía de MAC?",
+    "opciones": {
+      "a": "Contraindicar toda AHE hormonal; el DIU de cobre es la única opción.",
+      "b": "Contraindicar el levonorgestrel y usar solo el método Yuzpe como alternativa en pacientes con VIH.",
+      "c": "Indicar dosis estándar (1,5 mg); las interacciones con Efavirenz son clínicamente irrelevantes.",
+      "d": "Indicar una dosis única de 3 mg de levonorgestrel en lugar de la dosis estándar, ya que Efavirenz reduce las concentraciones de progestágenos."
+    },
+    "correcta": "d",
+    "explicacion": "La guía especifica: \"Se debe usar una dosis única de 3 mg en pacientes que utilizan concomitantemente Efavirenz, porque puede disminuir la concentración de progestágenos y por lo tanto la eficacia anticonceptiva.\" Dato de alta rentabilidad para el examen.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_166",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer tiene DIU de cobre colocado hace 6 meses y presenta diagnóstico de cervicitis por gonococo. ¿Cuál es la conducta más adecuada respecto al DIU?",
+    "opciones": {
+      "a": "No es necesario retirar el DIU de inmediato; iniciar tratamiento antibiótico. Si desea mantener el DIU, retirarlo solo si no hay mejoría a las 48 horas.",
+      "b": "El DIU debe retirarse porque impide la eficacia de los antibióticos.",
+      "c": "El DIU debe retirarse inmediatamente antes de iniciar el tratamiento antibiótico.",
+      "d": "No requiere cambio en el manejo; el DIU y la infección se tratan de forma independiente sin interacción."
+    },
+    "correcta": "a",
+    "explicacion": "Ante EPI o ITS cervical con DIU colocado, la guía establece que si la paciente desea mantener el DIU, la remoción se realiza LUEGO de iniciado el tratamiento antibiótico (no antes).\nSolo si no hay mejoría a las 48 horas se retira.\nLa infección en período agudo contraindica colocar un NUEVO DIU, pero no es indicación de retirar uno ya colocado.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_167",
+    "materia": ["infectologia", "ginecologia"],
+    "submateria": ["HIV", "Anticoncepción"],
+    "enunciado": "Una mujer de 31 años con VIH en TARV efectivo y carga viral indetectable desde hace 8 meses mantiene relación estable con compañero VIH negativo. ¿Cuál es la afirmación correcta según la guía de MAC?",
+    "opciones": {
+      "a": "Debe usarse siempre preservativo junto con otro MAC porque el riesgo de transmisión existe aunque la carga viral sea indetectable.",
+      "b": "Con carga viral indetectable sostenida $\\ge6$ meses no hay riesgo efectivo de transmisión sexual del VIH a la pareja.",
+      "c": "La pareja VIH negativa requiere PrEP independientemente de la carga viral de la PcVIH.",
+      "d": "El principio $l=1$ aplica a todos los tipos de transmisión del VIH, incluida la vertical y sanguínea."
+    },
+    "correcta": "b",
+    "explicacion": "\"Indetectable = Intransmisible\" $(1=1)$: las PcVIH en TARV efectivo con carga viral indetectable $\\ge6$ meses no transmiten el VIH por vía sexual.\nLa guía aclara que $1=1$ aplica SOLO a la transmisión sexual (no a otras vías) y que el tamizaje en embarazadas debe hacerse igualmente aunque la pareja tenga carga indetectable.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_168",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "¿Cuál de las siguientes afirmaciones sobre la vasectomía es INCORRECTА según la guía de MAC?",
+    "opciones": {
+      "a": "La vasectomía protege contra las ITS y el VIH al eliminar los espermatozoides del eyaculado.",
+      "b": "La vasectomía puede realizarse en cualquier momento en que se la solicite, con anestesia local y de forma ambulatoria.",
+      "c": "Tras la vasectomía debe usarse otro MAC durante los 3 meses posteriores al procedimiento.",
+      "d": "La vasectomía no afecta el deseo sexual, la erección ni la cantidad de líquido seminal eyaculado."
+    },
+    "correcta": "a",
+    "explicacion": "La guía es explícita: \"NO PROTEGE CONTRA LAS ITS NI VIH.\"\nLa vasectomía impide el pasaje de espermatozoides al semen pero el eyaculado continúa existiendo.\nNo afecta la erección, el deseo ni la cantidad de líquido seminal.\nLa eficacia es del 99,5% pero solo si se usa anticoncepción adicional los primeros 3 meses.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_169",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una adolescente de 15 años concurre sola a la consulta solicitando método anticonceptivo. El profesional no puede contactar a sus padres. Según el marco legal de la guía de MAC, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Brindar el método anticonceptivo; desde los 13 años los adolescentes pueden solicitar y consentir prácticas que no impliquen riesgo para su salud o vida.",
+      "b": "Negarse a entregar MAC sin consentimiento paterno ya que la paciente es menor de 16 años.",
+      "c": "Entregar solo preservativos mientras se espera el consentimiento de un familiar adulto.",
+      "d": "Derivar a servicio social ya que menores de 16 años no pueden tomar decisiones autónomas sobre su salud sexual."
+    },
+    "correcta": "a",
+    "explicacion": "Según el marco legal argentino referido en la guía, desde los 13 años los adolescentes pueden solicitar y consentir prácticas que no impliquen riesgo para su salud.\nA partir de los 16 pueden tomar cualquier decisión de salud como adultos.\nLa consulta por MAC debe considerarse de urgencia y el adolescente debe irse con una respuesta anticonceptiva.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_170",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "Una mujer de 40 años con diagnóstico de migraña con aura solicita continuar su ACO combinado que usa hace 2 años. Según los criterios de elegibilidad, ¿cuál es la conducta correcta?",
+    "opciones": {
+      "a": "Desaconsejar pero no contraindicar; puede continuar con control neurológico cada 3 meses.",
+      "b": "Permir la continuación ya que la migraña con aura solo contraindica el inicio del método, no la continuación.",
+      "c": "Contraindicar el ACO combinado; la migraña con aura es contraindicación absoluta en cualquier edad y tanto para inicio como para continuación del método.",
+      "d": "Contraindicar solo si la migraña con aura dura más de 72 horas en cada episodio."
+    },
+    "correcta": "c",
+    "explicacion": "La migraña con aura es CONTRAINDICACIÓN ABSOLUTA para ACO combinados, independientemente de la edad y del tiempo de uso previo.\nEl riesgo de ACV isquémico aumenta significativamente. A diferencia de la migraña sin aura (donde la contraindicación es relativa según la edad), la migraña con aura no tiene excepciones.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_171",
+    "materia": ["ginecologia"],
+    "submateria": ["Anticoncepción"],
+    "enunciado": "El implante subdérmico de etonogestrel en una mujer de 29 años no es palpable en el examen post colocación. Según la guía, ¿cuál es la conducta apropiada?",
+    "opciones": {
+      "a": "Realizar radiografía de control a los 6 meses; el implante no es efectivo mientras tanto.",
+      "b": "Localizar con radiografía; si no se visualiza, medir etonogestrel sérico para confirmar que está in situ. La extracción debe ser quirúrgica, realizada por profesional con manejo anatómico del miembro superior.",
+      "c": "Indicar extracción quirúrgica de urgencia por posible migración vascular.",
+      "d": "Recolocar otro implante inmediatamente en la misma incisión."
+    },
+    "correcta": "b",
+    "explicacion": "Ante implante no palpable: 1) localizar con radiografía; 2) si no es suficiente, medir etonogestrel sérico para confirmar que está in situ;\n3) la extracción debe ser quirúrgica por profesional con manejo anatómico del miembro superior (para evitar daño al paquete neurovascular).\nLas migraciones requieren experiencia por la anatomía regional.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_172",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 43 años, asintomática, sin antecedentes familiares de cáncer de mama, sin lesiones atípicas ni mutaciones genéticas, consulta cuándo debe iniciar el tamizaje mamográfico. Según el consenso 2021, ¿cuál es la recomendación?",
+    "opciones": {
+      "a": "Iniciar cuando la paciente lo solicite, sin una edad fija.",
+      "b": "Iniciar a los 35 años dado que la incidencia comienza a aumentar desde esa edad.",
+      "c": "Iniciar a los 50 años, ya que la mayoría de los cánceres se diagnostican en mujeres $\\ge50$",
+      "d": "Iniciar a los 40 años con mamografía anual."
+    },
+    "correcta": "d",
+    "explicacion": "El consenso 2021 enfatiza el inicio a los 40 años con periodicidad anual.\nEl riesgo a 10 años a los 40 años es de $1/69$ vs. $1/229$ a los 30 años;\nel 16% de los cánceres y el 17% de las muertes ocurren en el grupo 40-49 años.\nEstos datos justifican el inicio anticipado del tamizaje.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_173",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 52 años con mamas heterogéneamente densas (ACR C) en su última mamografía, sin otros factores de riesgo, consulta qué estudio adicional puede solicitar. Según el consenso 2021, ¿cuál es la conducta recomendada?",
+    "opciones": {
+      "a": "No solicitar ningún estudio adicional; la mamografía sola es suficiente independientemente de la densidad.",
+      "b": "Mamografía contrastada como complemento estándar en mamas densas.",
+      "c": "Resonancia magnética con contraste porque en mamas densas ACR C es el único método sensiblemente superior.",
+      "d": "Ecografía complementaria realizada por especialistas con entrenamiento en correlación mamográfica-ecográfica, dado que la densidad mamaria es factor de riesgo independiente y disminuye la sensibilidad de la mamografía."
+    },
+    "correcta": "d",
+    "explicacion": "En mamas densas ACR C-D, la densidad confiere 1.5-2 veces más riesgo y disminuye la sensibilidad mamográfica.\nEl consenso recomienda ecografía complementaria. La RM se recomienda solo en alto riesgo (>20%), no en riesgo promedio por densidad aislada.\nLa mamografía contrastada tiene evidencia insuficiente para riesgo promedio.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_174",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 38 años con antecedente de hiperplasia ductal atípica (HDA) detectada en biopsia hace 2 años, ¿a qué categoría de riesgo pertenece según el consenso 2021 y qué estudios son apropiados?",
+    "opciones": {
+      "a": "Riesgo intermedio; solo mamografía convencional ya que los métodos adicionales aumentan falsos positivos.",
+      "b": "Alto riesgo (>20%); debe realizarse solo resonancia magnética con contraste como método primario.",
+      "c": "Riesgo intermedio (15-20%); puede solicitar mamografía, tomosíntesis, y \"podría considerarse\" ecografía y resonancia con contraste.",
+      "d": "Riesgo promedio (<15%); mamografía anual sola es suficiente."
+    },
+    "correcta": "c",
+    "explicacion": "La HDA es criterio de riesgo intermedio (15-20%), junto con historia personal de cáncer de mama, neoplasia lobular y mama densa.\nPara riesgo intermedio: mamografía y tomosíntesis son \"apropiadas\"; ecografía y RM con contraste son \"podría ser apropiadas\" (condicionales).\nLa RM es \"apropiada\" sin condiciones solo en alto riesgo.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_175",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 55 años con mamografía en equipo CR (Computed Radiography) consulta si el estudio fue adecuado. Según el consenso 2021, ¿cuál es la limitación de este equipo?",
+    "opciones": {
+      "a": "La mamografía CR es superior a la DR en mamas densas por su capacidad de post-procesado digital.",
+      "b": "La mamografía CR es equivalente a la DR en todos los parámetros clínicamente relevantes.",
+      "c": "La mamografía CR está contraindicada en tamizaje y solo tiene indicación diagnóstica.",
+      "d": "La mamografía CR tiene peor desempeño que la DR (digital directa): mayor tasa de recitación, menor especificidad, y puede implicar mayor radiación que la analógica."
+    },
+    "correcta": "d",
+    "explicacion": "El consenso 2021 describe que la CR (imagen obtenida con equipo analógico y luego digitalizada) tiene peor desempeño que la DR: mayor tasa de recitación, puede implicar más radiación que la analógica, y menor especificidad (80.3% vs. 90-92% de la DR).\nLa DR es la recomendada; CR y analógica han sido desplazadas.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_176",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Según el consenso 2021, ¿cuál de las siguientes afirmaciones sobre la tomosíntesis (mamografía 3D) es CORRECTА?",
+    "opciones": {
+      "a": "La tomosíntesis tiene menor sensibilidad que la mamografía DR en mujeres con mamas densas.",
+      "b": "La tomosíntesis detecta hasta un 40% más de cánceres invasores que la mamografía DR sola y disminuye los falsos positivos y BI-RADS 0.",
+      "c": "La tomosíntesis estándar implica siempre el doble de radiación que la mamografía DR.",
+      "d": "La tomosíntesis solo está indicada en mujeres de alto riesgo (>20%) como estudio de segunda línea."
+    },
+    "correcta": "b",
+    "explicacion": "El consenso 2021: la TS detecta hasta 40% más cánceres invasores, tiene mayor sensibilidad (DR+TS 89% vs. DR 87%) y especificidad (DR+TS 70% vs. DR 57%), y disminuye falsos positivos y BI-RADS 0. En mamas densas: DR 86% vs. DR+TS 93%.\nLa mamografía sintetizada (2D generada a partir de datos de TS) permite no aumentar la dosis de radiación.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_177",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 55 años de riesgo promedio con mamas no densas consulta si la ecografía mamaria puede reemplazar a la mamografía como único método de tamizaje. Según el consenso 2021, ¿cuál es la respuesta correcta?",
+    "opciones": {
+      "a": "Sí, pero solo en mujeres que rechazan la mamografía por el miedo a la radiación.",
+      "b": "No; no hay evidencia para usar ecografía como tamizaje único en riesgo promedio con mama no densa.",
+      "c": "Sí, la ecografía tiene mayor sensibilidad que la mamografía y puede usarse como método único.",
+      "d": "No, pero puede reemplazar la mamografía en mujeres con mamas densas de cualquier categoría de riesgo."
+    },
+    "correcta": "b",
+    "explicacion": "El consenso es claro: no hay evidencia para usar ecografía en riesgo promedio con mama no densa.\nLa ecografía agrega falsos positivos (mamografía+US: 10.4% vs. mamografía sola: 4.4%) sin beneficio demostrado en este grupo.\nSolo se recomienda como complemento en mamas densas o en riesgo intermedio/alto. No reemplaza a la mamografía.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_178",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Con respecto a la finalización del tamizaje mamográfico en mujeres de riesgo promedio, ¿cuál es la posición del consenso 2021?",
+    "opciones": {
+      "a": "El tamizaje finaliza a los 75 años en mujeres de riesgo promedio sin comorbilidades.",
+      "b": "El tamizaje puede discontinuarse a los 65 años si los últimos 5 años fueron normales.",
+      "c": "No hay una edad de finalización definida; se recomienda continuar mientras la expectativa de vida supere 5-7 años y se consideren las comorbilidades.",
+      "d": "El tamizaje finaliza a los 70 años de forma obligatoria en todas las mujeres."
+    },
+    "correcta": "c",
+    "explicacion": "El consenso 2021 establece que la edad de finalización no está definida.\nSe recomienda continuar mientras la expectativa de vida exceda 5-7 años y se consideren las comorbilidades individuales. Es una decisión individualizada, a diferencia de otras guías que fijan un límite etario específico.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_179",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 30 años presenta cáncer de mama bilateral en su madre a los 38 años y cáncer de ovario en su abuela materna. ¿Cuál es la conducta recomendada por el consenso 2021?",
+    "opciones": {
+      "a": "Iniciar tamizaje solo con resonancia magnética anual dado que la historia familiar la clasifica automáticamente en alto riesgo.",
+      "b": "Derivar a asesoramiento genético oncológico para evaluar predisposición familiar; no solicitar directamente estudio de BRCA.",
+      "c": "No realizar ninguna derivación; mamografía anual desde los 40 años es suficiente.",
+      "d": "Indicar directamente estudio de BRCA1/BRCA2 sin asesoramiento previo, dada la historia altamente sugestiva."
+    },
+    "correcta": "b",
+    "explicacion": "El consenso establece que ante antecedentes de cáncer de mama/ovario hereditario, la indicación NO es el estudio genético directo sino la derivación a asesoramiento genético oncológico.\nEl counseling previo permite clasificar el riesgo, decidir estudios y explicar las implicancias del resultado para la paciente y su familia.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_180",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "Una mujer de 35 años recibió irradiación torácica por linfoma de Hodgkin a los 22 años. Según el consenso 2021, ¿cuál es su categoría de riesgo y qué estudios son apropiados?",
+    "opciones": {
+      "a": "Riesgo intermedio (15-20%); solo mamografía y tomosíntesis.",
+      "b": "Alto riesgo (>20%) por irradiación torácica entre los 10-30 años; son apropiados mamografía, tomosíntesis y resonancia magnética con contraste.",
+      "c": "Riesgo promedio (<15%); la irradiación antigua no modifica la clasificación si fue hace más de 10 años.",
+      "d": "Alto riesgo; pero solo resonancia magnética como único método efectivo."
+    },
+    "correcta": "b",
+    "explicacion": "La irradiación torácica entre los 10-30 años es uno de los criterios explícitos de alto riesgo (>20%) en el consenso 2021, junto con variantes patogénicas BRCA y síndromes heredo-familiares.\nPara alto riesgo: mamografía, tomosíntesis y RM con contraste son \"apropiados\". La ecografía \"podría ser apropiada\".",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_181",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "¿Cuál es el único método de imágenes que ha demostrado reducir la mortalidad por cáncer de mama según el consenso 2021, y en qué porcentaje?",
+    "opciones": {
+      "a": "La ecografía mamaria; reduce la mortalidad en un 20-25% en mujeres con mamas densas.",
+      "b": "La tomosíntesis; ha demostrado mayor reducción de mortalidad que la mamografía convencional (45-50%).",
+      "c": "La mamografía; ha demostrado reducir la mortalidad en un 30-40% y la incidencia de cáncer avanzado en un 25%.",
+      "d": "La resonancia magnética; es el método con mayor reducción de mortalidad (50-60%) en riesgo promedio."
+    },
+    "correcta": "c",
+    "explicacion": "El consenso 2021 establece que \"la mamografía es el único método de imágenes que ha demostrado reducir la mortalidad por cáncer de mama\", con una reducción estimada de 30-40% y 25% de reducción de cáncer avanzado.\nLa tomosíntesis mejora la detección pero no tiene datos de mortalidad independientes.\nLa ecografía y la RM no tienen evidencia de reducción de mortalidad en riesgo promedio.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
+  },
+  {
+    "id": "gineco_002_182",
+    "materia": ["ginecologia"],
+    "submateria": ["Cáncer de mama"],
+    "enunciado": "¿Cuál de los siguientes criterios excluye a una mujer de la categoría \"riesgo promedio\" según la definición estricta del consenso 2021?",
+    "opciones": {
+      "a": "Un familiar de segundo grado con cáncer de mama diagnosticado a los 65 años.",
+      "b": "Historia de tabaquismo activo de más de 10 paquetes/año.",
+      "c": "Radioterapia torácica recibida antes de los 30 años, independientemente del tiempo transcurrido.",
+      "d": "Antecedente de biopsia de mama con resultado benigno (adenoma fibroide simple)."
+    },
+    "correcta": "c",
+    "explicacion": "Para ser \"riesgo promedio\" (<15%), no debe presentarse: antecedente personal de cáncer de mama, lesiones atípicas (HDA, neoplasia lobular), antecedentes familiares importantes (cáncer de mama a edad temprana o varones con cáncer de mama), mutaciones genéticas, o radioterapia torácica antes de los 30 años.\nEl tabaquismo, la biopsia benigna simple y un familiar de segundo grado con cáncer tardío no son criterios de exclusión del riesgo promedio.",
+    "imagenes": [],
+    "explicacion_img": [],
+    "examen": null,
+    "anio": null,
+    "oficial": false,
+    "fuente": "curso de resi"
   }
 ]
